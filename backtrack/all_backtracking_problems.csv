@@ -1,0 +1,326 @@
+Platform,Category,Problem Name,URL,Difficulty,Key Concept
+LeetCode,Subsets,78. Subsets,https://leetcode.com/problems/subsets/,Medium,Power set generation
+LeetCode,Subsets,90. Subsets II,https://leetcode.com/problems/subsets-ii/,Medium,Subsets with duplicates
+LeetCode,Subsets,1863. Sum of All Subset XOR Totals,https://leetcode.com/problems/sum-of-all-subset-xor-totals/,Easy,Subset XOR enumeration
+LeetCode,Subsets,2044. Count Number of Maximum Bitwise-OR Subsets,https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/,Medium,Subset OR enumeration
+LeetCode,Subsets,2597. The Number of Beautiful Subsets,https://leetcode.com/problems/the-number-of-beautiful-subsets/,Medium,Subset with constraints
+LeetCode,Subsets,698. Partition to K Equal Sum Subsets,https://leetcode.com/problems/partition-to-k-equal-sum-subsets/,Medium,K-partition backtracking
+LeetCode,Subsets,1255. Maximum Score Words Formed by Letters,https://leetcode.com/problems/maximum-score-words-formed-by-letters/,Hard,Subset with score
+LeetCode,Subsets,1655. Distribute Repeating Integers,https://leetcode.com/problems/distribute-repeating-integers/,Hard,Subset distribution
+LeetCode,Subsets,491. Non-decreasing Subsequences,https://leetcode.com/problems/non-decreasing-subsequences/,Medium,Subsequence enumeration
+LeetCode,Permutations,46. Permutations,https://leetcode.com/problems/permutations/,Medium,All permutations of distinct ints
+LeetCode,Permutations,47. Permutations II,https://leetcode.com/problems/permutations-ii/,Medium,Permutations with duplicates
+LeetCode,Permutations,60. Permutation Sequence,https://leetcode.com/problems/permutation-sequence/,Hard,K-th permutation
+LeetCode,Permutations,267. Palindrome Permutation II,https://leetcode.com/problems/palindrome-permutation-ii/,Medium,Palindrome permutations
+LeetCode,Permutations,526. Beautiful Arrangement,https://leetcode.com/problems/beautiful-arrangement/,Medium,Permutation constraint
+LeetCode,Permutations,996. Number of Squareful Arrays,https://leetcode.com/problems/number-of-squareful-arrays/,Hard,Adjacent sum square permutation
+LeetCode,Combinations,77. Combinations,https://leetcode.com/problems/combinations/,Medium,All C(n,k) combinations
+LeetCode,Combinations,39. Combination Sum,https://leetcode.com/problems/combination-sum/,Medium,Unbounded combo sum
+LeetCode,Combinations,40. Combination Sum II,https://leetcode.com/problems/combination-sum-ii/,Medium,Bounded combo sum
+LeetCode,Combinations,216. Combination Sum III,https://leetcode.com/problems/combination-sum-iii/,Medium,K-size combo sum
+LeetCode,Combinations,254. Factor Combinations,https://leetcode.com/problems/factor-combinations/,Medium,Factor enumeration
+LeetCode,Combinations,1286. Iterator for Combination,https://leetcode.com/problems/iterator-for-combination/,Medium,Combination iterator
+LeetCode,Combinations,2178. Maximum Split of Positive Even Integers,https://leetcode.com/problems/maximum-split-of-positive-even-integers/,Medium,Combo split
+LeetCode,N-Queens,51. N-Queens,https://leetcode.com/problems/n-queens/,Hard,Classic N-Queens
+LeetCode,N-Queens,52. N-Queens II,https://leetcode.com/problems/n-queens-ii/,Hard,Count N-Queens solutions
+LeetCode,Sudoku,37. Sudoku Solver,https://leetcode.com/problems/sudoku-solver/,Hard,Solve Sudoku
+LeetCode,Graph Coloring,2151. Maximum Good People Based on Statements,https://leetcode.com/problems/maximum-good-people-based-on-statements/,Hard,Constraint with bitmask
+LeetCode,Graph Paths,797. All Paths From Source to Target,https://leetcode.com/problems/all-paths-from-source-to-target/,Medium,DAG path enumeration
+LeetCode,Graph Paths,980. Unique Paths III,https://leetcode.com/problems/unique-paths-iii/,Hard,Grid path with obstacles
+LeetCode,Graph Paths,2065. Maximum Path Quality of a Graph,https://leetcode.com/problems/maximum-path-quality-of-a-graph/,Hard,Path with time constraint
+LeetCode,Word Search,79. Word Search,https://leetcode.com/problems/word-search/,Medium,Grid word search
+LeetCode,Word Search,212. Word Search II,https://leetcode.com/problems/word-search-ii/,Hard,Trie + backtracking
+LeetCode,Maze,"489. Robot Room Cleaner",https://leetcode.com/problems/robot-room-cleaner/,Hard,Robot vacuum backtracking
+LeetCode,Maze,1219. Path with Maximum Gold,https://leetcode.com/problems/path-with-maximum-gold/,Medium,Grid gold collection
+LeetCode,Maze,1593. Split a String Into the Max Number of Unique Substrings,https://leetcode.com/problems/split-a-string-into-the-max-number-of-unique-substrings/,Medium,Unique split backtracking
+LeetCode,Parentheses,22. Generate Parentheses,https://leetcode.com/problems/generate-parentheses/,Medium,Valid parentheses generation
+LeetCode,Parentheses,301. Remove Invalid Parentheses,https://leetcode.com/problems/remove-invalid-parentheses/,Hard,Remove min parentheses
+LeetCode,Letter Phone,17. Letter Combinations of a Phone Number,https://leetcode.com/problems/letter-combinations-of-a-phone-number/,Medium,Phone digit mapping
+LeetCode,Palindrome Partitioning,131. Palindrome Partitioning,https://leetcode.com/problems/palindrome-partitioning/,Medium,All palindrome partitions
+LeetCode,Word Break,140. Word Break II,https://leetcode.com/problems/word-break-ii/,Hard,All word break sentences
+LeetCode,Word Break,126. Word Ladder II,https://leetcode.com/problems/word-ladder-ii/,Hard,All shortest transformation
+LeetCode,IP Address,93. Restore IP Addresses,https://leetcode.com/problems/restore-ip-addresses/,Medium,Valid IP generation
+LeetCode,Expression,282. Expression Add Operators,https://leetcode.com/problems/expression-add-operators/,Hard,Expression evaluation
+LeetCode,Expression,679. 24 Game,https://leetcode.com/problems/24-game/,Hard,24 game card calculation
+LeetCode,Target Sum,494. Target Sum,https://leetcode.com/problems/target-sum/,Medium,Add signs to reach target
+LeetCode,Target Sum,1774. Closest Dessert Cost,https://leetcode.com/problems/closest-dessert-cost/,Medium,Closest target combos
+LeetCode,Target Sum,1849. Splitting a String Into Descending Consecutive Values,https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/,Medium,Descending split
+LeetCode,Gray Code,89. Gray Code,https://leetcode.com/problems/gray-code/,Medium,Binary gray code
+LeetCode,Gray Code,1238. Circular Permutation in Binary Representation,https://leetcode.com/problems/circular-permutation-in-binary-representation/,Medium,Gray code variant
+LeetCode,Tree Paths,257. Binary Tree Paths,https://leetcode.com/problems/binary-tree-paths/,Easy,All root-leaf paths
+LeetCode,Tree Paths,113. Path Sum II,https://leetcode.com/problems/path-sum-ii/,Medium,Path sum to target
+LeetCode,Tree Paths,988. Smallest String Starting From Leaf,https://leetcode.com/problems/smallest-string-starting-from-leaf/,Medium,Leaf string backtracking
+LeetCode,Matchsticks,473. Matchsticks to Square,https://leetcode.com/problems/matchsticks-to-square/,Medium,Partition into 4 equal sums
+LeetCode,Matching,1718. Construct the Lexicographically Largest Valid Sequence,https://leetcode.com/problems/construct-the-lexicographically-largest-valid-sequence/,Medium,Sequence construction
+LeetCode,Matching,1723. Find Minimum Time to Finish All Jobs,https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs/,Hard,Job assignment backtracking
+LeetCode,Matching,1947. Maximum Compatibility Score Sum,https://leetcode.com/problems/maximum-compatibility-score-sum/,Medium,Student-mentor matching
+LeetCode,Matching,1601. Maximum Number of Achievable Transfer Requests,https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/,Hard,Request max matching
+LeetCode,Optimal,465. Optimal Account Balancing,https://leetcode.com/problems/optimal-account-balancing/,Hard,Debt settlement min transactions
+LeetCode,Optimal,638. Shopping Offers,https://leetcode.com/problems/shopping-offers/,Medium,Best price combos
+LeetCode,Optimal,1066. Campus Bikes II,https://leetcode.com/problems/campus-bikes-ii/,Medium,Min assignment cost
+LeetCode,Optimal,1467. Probability of a Two Boxes Having The Same Number of Distinct Balls,https://leetcode.com/problems/probability-of-a-two-boxes-having-the-same-number-of-distinct-balls/,Hard,Ball distribution probability
+LeetCode,Permutation Sequence,60. Permutation Sequence,https://leetcode.com/problems/permutation-sequence/,Hard,Factorial number system
+LeetCode,Brace Expansion,1087. Brace Expansion,https://leetcode.com/problems/brace-expansion/,Medium,Brace expansion strings
+LeetCode,Brace Expansion,1096. Brace Expansion II,https://leetcode.com/problems/brace-expansion-ii/,Hard,Nested brace expansion
+LeetCode,Confusing Number,1088. Confusing Number II,https://leetcode.com/problems/confusing-number-ii/,Hard,Rotatable digits enumeration
+LeetCode,Stepping Numbers,1215. Stepping Numbers,https://leetcode.com/problems/stepping-numbers/,Medium,Adjacent digit diff 1
+LeetCode,Verbal Arithmetic,1307. Verbal Arithmetic Puzzle,https://leetcode.com/problems/verbal-arithmetic-puzzle/,Hard,Cryptarithmetic solver
+LeetCode,Splitting,842. Split Array into Fibonacci Sequence,https://leetcode.com/problems/split-array-into-fibonacci-sequence/,Medium,Fibo-like split
+LeetCode,Splitting,306. Additive Number,https://leetcode.com/problems/additive-number/,Medium,Additive sequence check
+LeetCode,Sliding Puzzle,773. Sliding Puzzle,https://leetcode.com/problems/sliding-puzzle/,Hard,BFS + backtracking
+LeetCode,Tiling,1240. Tiling a Rectangle with the Fewest Squares,https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/,Hard,Min squares tiling
+LeetCode,Tiling,2014. Longest Subsequence Repeated k Times,https://leetcode.com/problems/longest-subsequence-repeated-k-times/,Hard,Repeated subsequence
+LeetCode,Stickers,691. Stickers to Spell Word,https://leetcode.com/problems/stickers-to-spell-word/,Hard,Sticker combination
+LeetCode,Numbers,357. Count Numbers with Unique Digits,https://leetcode.com/problems/count-numbers-with-unique-digits/,Medium,Digit permutation count
+LeetCode,Numbers,967. Numbers With Same Consecutive Differences,https://leetcode.com/problems/numbers-with-same-consecutive-differences/,Medium,Adjacent diff constraint
+LeetCode,Numbers,949. Largest Time for Given Digits,https://leetcode.com/problems/largest-time-for-given-digits/,Medium,Max time permutation
+LeetCode,Numbers,1980. Find Unique Binary String,https://leetcode.com/problems/find-unique-binary-string/,Medium,Missing binary string
+LeetCode,Numbers,2048. Next Greater Numerically Balanced Number,https://leetcode.com/problems/next-greater-numerically-balanced-number/,Medium,Balanced digit search
+LeetCode,Numbers,681. Next Closest Time,https://leetcode.com/problems/next-closest-time/,Medium,Next valid time
+LeetCode,Numbers,2375. Construct Smallest Number From DI String,https://leetcode.com/problems/construct-smallest-number-from-di-string/,Medium,Pattern matching permutation
+LeetCode,Numbers,1079. Letter Tile Possibilities,https://leetcode.com/problems/letter-tile-possibilities/,Medium,Tile permutation count
+LeetCode,Numbers,1415. The k-th Lexicographical String of All Happy Strings of Length n,https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/,Medium,K-th happy string
+LeetCode,Knight's Tour,2664. The Knight's Tour,https://leetcode.com/problems/the-knights-tour/,Medium,Knight's tour on board
+LeetCode,Binary Watch,401. Binary Watch,https://leetcode.com/problems/binary-watch/,Easy,Led time combinations
+LeetCode,Synonymous,1258. Synonymous Sentences,https://leetcode.com/problems/synonymous-sentences/,Medium,Synonym replacement
+LeetCode,Game,294. Flip Game II,https://leetcode.com/problems/flip-game-ii/,Medium,Win guarantee backtracking
+LeetCode,Android,351. Android Unlock Patterns,https://leetcode.com/problems/android-unlock-patterns/,Medium,Key pattern constraint
+LeetCode,Subsequence,2002. Maximum Product of the Length of Two Palindromic Subsequences,https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/,Medium,Palindromic subsequence
+LeetCode,Chess,2056. Number of Valid Move Combinations On Chessboard,https://leetcode.com/problems/number-of-valid-move-combinations-on-chessboard/,Hard,Chess piece moves
+LeetCode,Archery,2212. Maximum Points in an Archery Competition,https://leetcode.com/problems/maximum-points-in-an-archery-competition/,Medium,Bob arrow assignment
+LeetCode,Cookies,2305. Fair Distribution of Cookies,https://leetcode.com/problems/fair-distribution-of-cookies/,Medium,K-child cookie distribution
+LeetCode,Columns,2397. Maximum Rows Covered by Columns,https://leetcode.com/problems/maximum-rows-covered-by-columns/,Medium,Column selection backtracking
+LeetCode,Work Schedules,1986. Minimum Number of Work Sessions to Finish the Tasks,https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/,Medium,Session scheduling
+LeetCode,Word Abbreviation,411. Minimum Unique Word Abbreviation,https://leetcode.com/problems/minimum-unique-word-abbreviation/,Hard,Min length abbreviation
+LeetCode,Word Abbreviation,320. Generalized Abbreviation,https://leetcode.com/problems/generalized-abbreviation/,Medium,All abbreviation forms
+LeetCode,Word Squares,425. Word Squares,https://leetcode.com/problems/word-squares/,Hard,Word square construction
+LeetCode,Ambiguous Coordinates,816. Ambiguous Coordinates,https://leetcode.com/problems/ambiguous-coordinates/,Medium,Decimal point placement
+LeetCode,Chessboard,2152. Minimum Number of Lines to Cover Points,https://leetcode.com/problems/minimum-number-of-lines-to-cover-points/,Hard,Line cover with backtracking
+LeetCode,Work Sessions,1986. Minimum Number of Work Sessions to Finish the Tasks,https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/,Medium,Task scheduling
+LeetCode,Sentence Split,1593. Split a String Into the Max Number of Unique Substrings,https://leetcode.com/problems/split-a-string-into-the-max-number-of-unique-substrings/,Medium,Max unique split
+LeetCode,Unique Binary Search Trees,95. Unique Binary Search Trees II,https://leetcode.com/problems/unique-binary-search-trees-ii/,Medium,Generate all BSTs
+LeetCode,Schedule,1799. Maximize Score After N Operations,https://leetcode.com/problems/maximize-score-after-n-operations/,Hard,GCD pairing backtracking
+CSES,Introductory,Creationg Strings,https://cses.fi/problemset/task/1622,Normal,All permutations of string
+CSES,Introductory,Apple Division,https://cses.fi/problemset/task/1623,Normal,Subset sum minimization
+CSES,Introductory,Chessboard and Queens,https://cses.fi/problemset/task/1624,Normal,N-Queens with blocked cells
+CSES,Introductory,Grid Paths,https://cses.fi/problemset/task/1625,Hard,Path counting with pruning
+CSES,Permutations,Permutations,https://cses.fi/problemset/task/1070,Normal,Beautiful permutation construction
+CSES,Counting,Creating Strings II,https://cses.fi/problemset/task/1715,Normal,Permutation count with repetitions
+CSES,Counting,Counting Bishops,https://cses.fi/problemset/task/TBA,Hard,Bishop placement counting
+CSES,Generating,Generating Combinations,https://cses.fi/problemset/task/1710,Normal,Combinatorial generation
+CSES,Generating,Generating Permutations,https://cses.fi/problemset/task/1710,Normal,Permutation generation
+CSES,Sets,Dice Combinations,https://cses.fi/problemset/task/1633,Medium,DP with backtracking
+Codeforces,Complete Search,Dreamoon and WiFi,https://codeforces.com/problemset/problem/476/B,Normal 1500,Probability via backtracking
+Codeforces,Complete Search,Robbers Watch,https://codeforces.com/problemset/problem/686/C,Hard 2000,Base representation backtracking
+Codeforces,Bishops,Gargari and Bishops,https://codeforces.com/problemset/problem/463/C,Hard 1900,Diagonal backtracking
+Codeforces,Bishops,Gargari and Permutations,https://codeforces.com/problemset/problem/463/D,Hard 1900,LCS with permutations
+Codeforces,Graphs,Ice Skating,https://codeforces.com/problemset/problem/217/A,Normal 1200,Component union backtracking
+Codeforces,Brute Force,Good Sequences,https://codeforces.com/problemset/problem/264/B,Hard 1500,Subset with conditions
+Codeforces,Graph,Graph Coloring,https://codeforces.com/problemset/problem/663/B,Normal 1500,Coloring backtracking
+Codeforces,Brute Force,1545C - AquaMoon and Permutations,https://codeforces.com/problemset/problem/1545/C,Hard 2400,Permutation selection backtracking
+Codeforces,Complete Search,Football Kit,https://codeforces.com/problemset/problem/432/C,Easy,N/A
+Codeforces,Permutations,Beautiful Permutation II,https://cses.fi/problemset/task/1070,Normal,Adjacent diff constraint
+UVa,Classic,Passwords,https://onlinejudge.org/external/6/628.pdf,Level 1,Password generation
+UVa,Classic,Tree Summing,https://onlinejudge.org/external/1/112.pdf,Level 1,Tree parsing + backtracking
+UVa,Classic,"Don't Get Rooked",https://onlinejudge.org/external/6/639.pdf,Level 1,Rook placement constraint
+UVa,Classic,Expert Enough,https://onlinejudge.org/external/12/1237.pdf,Level 1,Simple search
+UVa,Classic,23 out of 5,https://onlinejudge.org/external/103/10344.pdf,Level 1,Expression from digits
+UVa,Classic,The Hamming Distance Problem,https://onlinejudge.org/external/7/729.pdf,Level 1,Bit permutation generation
+UVa,Classic,8 Queens Chess Problem,https://onlinejudge.org/external/7/750.pdf,Level 1,N-Queens variant
+UVa,Classic,Prime Ring Problem,https://onlinejudge.org/external/5/524.pdf,Level 1,Prime sum ring permutation
+UVa,Classic,The House Of Santa Claus,https://onlinejudge.org/external/2/291.pdf,Level 1,Path drawing backtracking
+UVa,Classic,Sum It Up,https://onlinejudge.org/external/5/574.pdf,Level 1,Target sum subset
+UVa,Classic,Back to the 8-Queens,https://onlinejudge.org/external/110/11085.pdf,Level 1,Min moves N-Queens
+UVa,Classic,Lotto,https://onlinejudge.org/external/4/441.pdf,Level 1,Combination generation
+UVa,Classic,The Sultan's Successors,https://onlinejudge.org/external/1/167.pdf,Level 1,N-Queens with scores
+UVa,Classic,CD,https://onlinejudge.org/external/6/624.pdf,Level 1,Subset sum with tracks
+UVa,Classic,Hanoi Tower Troubles Again,https://onlinejudge.org/external/102/10276.pdf,Level 1,Simulation backtracking
+UVa,Classic,Division,https://onlinejudge.org/external/7/725.pdf,Level 1,Digit permutation division
+UVa,Classic,Another n-Queen Problem,https://onlinejudge.org/external/111/11195.pdf,Level 2,N-Queens variant
+UVa,Classic,Knights in FEN,https://onlinejudge.org/external/104/10422.pdf,Level 2,Knight move BFS/backtracking
+UVa,Classic,A-Sequence,https://onlinejudge.org/external/104/10482.pdf,Level 2,Sequence property check
+UVa,Classic,Winterim Backpacking Trip,https://onlinejudge.org/external/106/10664.pdf,Level 3,Partition backtracking
+UVa,Classic,Meta-Loopless Sorts,https://onlinejudge.org/external/1/110.pdf,Easy,Sorting via backtracking
+UVa,Classic,Following Orders,https://onlinejudge.org/external/1/124.pdf,Medium,Topological order generation
+UVa,Classic,Longest Run on a Snowboard,https://onlinejudge.org/external/102/10285.pdf,Medium,DFS with backtracking
+UVa,Classic,Budget Travel,https://onlinejudge.org/external/2/222.pdf,Medium,Route constraint backtracking
+UVa,Classic,Collecting Beepers,https://onlinejudge.org/external/104/10496.pdf,Medium,Knight collection path
+UVa,Classic,The Wedding,https://onlinejudge.org/external/106/10662.pdf,N/A,Constraint satisfaction
+UVa,Classic,Argentina,https://onlinejudge.org/external/118/11804.pdf,N/A,Backtracking search
+UVa,Classic,Anagram Checker,https://onlinejudge.org/external/1/148.pdf,N/A,Anagram via backtracking
+UVa,Classic,Stamps,https://onlinejudge.org/external/1/165.pdf,Hard,Bounded stamp combos
+UVa,Classic,Ouroboros,https://onlinejudge.org/external/105/10506.pdf,Hard,De Bruijn sequence
+UVa,Graph,Fire Station,https://onlinejudge.org/external/108/10807.pdf,Hard,MST backtracking
+UVa,Graph,Max Independent Set,https://onlinejudge.org/external/110/11065.pdf,Hard,Branch and bound
+UVa,Graph,Fire,https://onlinejudge.org/external/2/208.pdf,Hard,Dijkstra + backtracking
+UVa,Graph,Hamiltonian Path,https://onlinejudge.org/external/7/775.pdf,Easy,Hamiltonian backtracking
+UVa,Graph,Longest Path,https://onlinejudge.org/external/5/539.pdf,Medium,Longest path backtracking
+UVa,Graph,Max Independent Set,https://onlinejudge.org/external/1/193.pdf,Medium,NP-hard backtracking
+UVa,Classic,Roman Numerals,https://onlinejudge.org/external/1/185.pdf,N/A,Roman numeral backtracking
+UVa,Classic,All Walks of Length n,https://onlinejudge.org/external/6/677.pdf,N/A,Path enumeration
+SPOJ,Classic,MKJUMPS - Making Jumps,https://www.spoj.com/problems/MKJUMPS/,Level 1,Knight path cover
+SPOJ,Classic,ALL IZZ WELL,https://www.spoj.com/problems/ALLIZWEL/,Level 1,String search in grid
+SPOJ,Classic,ABC Path,https://www.spoj.com/problems/ABCPATH/,Level 1,Alphabetic path
+SPOJ,Classic,BTCK - Backtracking Problem,https://www.spoj.com/problems/BTCK/,Basics,Permutation linear combo
+SPOJ,Classic,VONNY - Vonny and Her Dominos,https://www.spoj.com/problems/VONNY/,Level 2,2D domino permutation
+SPOJ,Classic,SPIKES - Spiky Mazes,https://www.spoj.com/problems/SPIKES/,N/A,Maze with spikes
+SPOJ,Classic,DIGGER OCTAVES,https://www.spoj.com/problems/OCTAVES/,Level 3,Octave path backtracking
+SPOJ,Classic,SUDOKU,https://www.spoj.com/problems/SUDOKU/,N/A,Sudoku solver
+SPOJ,Classic,Laboratory,https://www.spoj.com/problems/LAB/,N/A,Lab path backtracking
+AtCoder,Puzzles,ABC322 D - Polyomino,https://atcoder.jp/contests/abc322/tasks/abc322_d,1310,Polyomino fitting
+AtCoder,Puzzles,ABC233 C - Product,https://atcoder.jp/contests/abc233/tasks/abc233_c,1100,Product from lists
+AtCoder,Combinatorics,ABC161 D - Lunlun Number,https://atcoder.jp/contests/abc161/tasks/abc161_d,991,Lunlun number generation
+AtCoder,Combinatorics,ABC085 D - Multiplication,https://atcoder.jp/contests/abc085/tasks/abc085_d,N/A,Divisor factorization backtracking
+AtCoder,Combinatorics,ABC204 D - Cooking,https://atcoder.jp/contests/abc204/tasks/abc204_d,N/A,Subset sum partitioning
+AtCoder,Classic,ABC 378 A-F,https://atcoder.jp/contests/abc378/tasks,N/A,Various partial backtracking
+AtCoder,Game,AWC0003 - Bin Packing,https://atcoder.jp/contests/awc0003/editorial/15762,N/A,Backtracking with pruning
+HackerRank,Recursion,Fibonacci Numbers,https://www.hackerrank.com/challenges/ctci-fibonacci-numbers,Easy,Recursive Fibonacci
+HackerRank,Recursion,Davis Staircase,https://www.hackerrank.com/challenges/ctci-recursive-staircase,Medium,1-2-3 step recursion
+HackerEarth,Backtracking,N-Queens,https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/practice-problems/,Easy,N-Queens solver
+HackerEarth,Backtracking,Nearby Squares,https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/practice-problems/,Easy,Proximity backtracking
+HackerEarth,Backtracking,Count the Array,https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/practice-problems/,Medium,Array counting
+HackerEarth,Backtracking,Special Series,https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/practice-problems/,Hard,Series generation
+HackerEarth,Backtracking,A Binary Palindrome,https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/practice-problems/,Medium,Binary palindrome backtrack
+HackerEarth,Backtracking,Three Arrays,https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/practice-problems/,Medium,Array permutation
+HackerEarth,Backtracking,Number of Divisors,https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/practice-problems/,Medium,Divisor counting backtrack
+HackerEarth,Backtracking,Divide Number,https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/practice-problems/,Medium,Number partitioning
+HackerEarth,Backtracking,Movement in Arrays,https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/practice-problems/,Hard,Array movement
+HackerEarth,Backtracking,GCD Strings,https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/practice-problems/,Easy,GCD string backtracking
+CodeChef,Practice,Subsets,https://www.codechef.com/practice/course/interview-dsa/DSAPREP_16/problems/PREP42,N/A,Generate all subsets
+CodeChef,Practice,Palindrome Partitioning,https://www.codechef.com/practice/course/interview-dsa/DSAPREP_16/problems/PREP43,N/A,Palindrome partitioning
+CodeChef,Practice,Valid Parenthesis,https://www.codechef.com/practice/course/interview-dsa/DSAPREP_16/problems/PREP41,N/A,Balanced parentheses gen
+CodeChef,Practice,Unique Combinations Sum,https://www.codechef.com/practice/course/interview-dsa/DSAPREP_16/problems/PREP40,N/A,Combination sum
+CodeChef,Practice,Unique Permutations,https://www.codechef.com/practice/course/interview-dsa/DSAPREP_16/problems/PREP24,N/A,All permutations
+LightOJ,Backtracking,1023 - Discovering Permutations,https://lightoj.com/problem/discovering-permutations,N/A,Next K permutations
+LightOJ,Backtracking,1037 - Agent 47,https://lightoj.com/problem/agent-47,N/A,Enemy elimination backtracking
+LightOJ,Backtracking,1025 - The Specials Menu,https://lightoj.com/problem/the-specials-menu,N/A,Dp + backtracking
+LightOJ,Backtracking,1044 - Palindrome Partitioning,https://lightoj.com/problem/palindrome-partitioning,N/A,Min palindrome partition
+LightOJ,Backtracking,1057 - Collecting Gold,https://lightoj.com/problem/collecting-gold,N/A,Gold collection backtrack
+LightOJ,Backtracking,Sudoku Solver,https://lightoj.com/problem/sudoku-solver,N/A,Sudoku solver
+LightOJ,Backtracking,1125 - Divisible Group Sums,https://lightoj.com/problem/divisible-group-sums,N/A,Subset sum modulo
+LightOJ,Backtracking,1326 - Race,https://lightoj.com/problem/race,N/A,Race backtracking
+TopCoder,Search,BridgeCrossing,https://community.topcoder.com/stat?c=problem_statement&pm=1575,SRM 146 Div 2,Min bridge crossing time
+TopCoder,Search,MNS,https://community.topcoder.com/stat?c=problem_statement&pm=1623,SRM 148 Div 1,Magic square permutation
+TopCoder,Search,Cafeteria,https://community.topcoder.com/stat?c=problem_statement&pm=2279,SRM 229 Div 1,Cafeteria backtracking
+TopCoder,Search,WordFind,https://community.topcoder.com/stat?c=problem_statement&pm=2329,SRM 232 Div 1,Word find in grid
+TopCoder,Search,EllysAndXor,https://community.topcoder.com/stat?c=problem_statement&pm=15765,TCO 2019,Max XOR expression
+TopCoder,Search,EllysCodeConstants,https://community.topcoder.com/stat?c=problem_statement&pm=15766,TCO 2019,Hex literal encoding
+TopCoder,Search,CollectingPostmarks,https://community.topcoder.com/stat?c=problem_statement&pm=11566,N/A,Subset sum backtracking
+TopCoder,Search,PerfectMemory,https://community.topcoder.com/stat?c=problem_statement&pm=11619,N/A,Memory game backtracking
+Toph,Backtracking,Lets Play Pipeline,https://toph.co/p/lets-play-pipeline,N/A,Pipe connection paths
+Toph,Backtracking,Three Friends,https://toph.co/p/three-friends,N/A,Friend grouping
+Toph,Backtracking,Bracket Sequences,https://toph.co/p/bracket-sequences,N/A,Bracket generation
+Toph,Backtracking,Many Paths Many Costs,https://toph.co/p/many-paths-many-costs,N/A,Path counting backtrack
+Toph,Backtracking,Kingdom of Dreams,https://toph.co/p/kingdom-of-dreams,N/A,Permutation search
+Timus,DP/Backtracking,1005 - Stone Pile,https://acm.timus.ru/problem.aspx?space=1&num=1005,78,Subset sum partitioning
+Timus,Backtracking,1007 - Code Words,https://acm.timus.ru/problem.aspx?space=1&num=1007,404,Code word construction
+Timus,Backtracking,1014 - Product of Digits,https://acm.timus.ru/problem.aspx?space=1&num=1014,94,Digit factorization
+Timus,Combinatorics,1017 - Staircases,https://acm.timus.ru/problem.aspx?space=1&num=1017,157,Partition enumeration
+Timus,Backtracking,1024 - Permutations,https://acm.timus.ru/problem.aspx?space=1&num=1024,N/A,Permutation cycles
+Project Euler,Combinatorics,24 - Lexicographic Permutations,https://projecteuler.net/problem=24,5%,Millionth permutation
+Project Euler,Combinatorics,49 - Prime Permutations,https://projecteuler.net/problem=49,10%,Prime permutation sequence
+Project Euler,Combinatorics,68 - Magic 5-gon Ring,https://projecteuler.net/problem=68,10%,Ring arrangement
+Project Euler,Combinatorics,85 - Counting Rectangles,https://projecteuler.net/problem=85,15%,Grid rectangle search
+Project Euler,Combinatorics,90 - Cube Digit Pairs,https://projecteuler.net/problem=90,15%,Digit arrangement
+Project Euler,Combinatorics,91 - Right Triangles Grid,https://projecteuler.net/problem=91,15%,Coordinate triangles
+Project Euler,Combinatorics,92 - Square Digit Chains,https://projecteuler.net/problem=92,10%,Chain exploration
+Project Euler,Combinatorics,93 - Arithmetic Expressions,https://projecteuler.net/problem=93,15%,Expression from digits
+Project Euler,Combinatorics,94 - Almost Equilateral Triangles,https://projecteuler.net/problem=94,15%,Triangle search
+Project Euler,Combinatorics,98 - Anagramic Squares,https://projecteuler.net/problem=98,15%,Anagram number search
+Project Euler,Combinatorics,100 - Arranged Probability,https://projecteuler.net/problem=100,15%,Probability search
+Project Euler,Combinatorics,164 - Lucky Triple,https://projecteuler.net/problem=164,15%,Digit constraint counting
+Project Euler,Combinatorics,165 - Intersections,https://projecteuler.net/problem=165,20%,Line intersection search
+Project Euler,Combinatorics,201 - Subsets with Unique Sum,https://projecteuler.net/problem=201,25%,Unique subset sums
+Project Euler,Combinatorics,205 - Dice Game,https://projecteuler.net/problem=205,15%,Dice distribution
+Project Euler,Combinatorics,206 - Concealed Square,https://projecteuler.net/problem=206,10%,Pattern search
+Project Euler,Combinatorics,208 - Robot Walks,https://projecteuler.net/problem=208,25%,Robot path backtracking
+Project Euler,Combinatorics,215 - Crack-free Walls,https://projecteuler.net/problem=215,25%,Wall tiling backtracking
+Project Euler,Combinatorics,220 - Heighway Dragon,https://projecteuler.net/problem=220,30%,Dragon curve
+Project Euler,Combinatorics,237 - Tours on Board,https://projecteuler.net/problem=237,40%,Grid tour backtracking
+Project Euler,Combinatorics,265 - Binary Circles,https://projecteuler.net/problem=265,30%,Binary De Bruijn
+Project Euler,Combinatorics,268 - Distinct Divisors,https://projecteuler.net/problem=268,40%,Factor enumeration
+Project Euler,Combinatorics,301 - Nim,https://projecteuler.net/problem=301,10%,Nim combinatorial backtracking
+Project Euler,Combinatorics,377 - Digit Sums,https://projecteuler.net/problem=377,45%,Digit sum enumeration
+Project Euler,Combinatorics,443 - GCD Sequence,https://projecteuler.net/problem=443,35%,Sequence backtracking
+GeeksforGeeks,Classic,Rat in a Maze,https://www.geeksforgeeks.org/rat-in-a-maze/,Easy,Maze pathfinding
+GeeksforGeeks,Classic,N-Queens,https://www.geeksforgeeks.org/n-queen-problem-backtracking-3/,Medium,Place N queens
+GeeksforGeeks,Classic,Sudoku Solver,https://www.geeksforgeeks.org/sudoku-backtracking-7/,Medium,Solve 9x9 Sudoku
+GeeksforGeeks,Classic,Permutations of Given String,https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/,Easy,String permutations
+GeeksforGeeks,Classic,Subset Sum,https://www.geeksforgeeks.org/subset-sum-backtracking-4/,Easy,Subset sum to target
+GeeksforGeeks,Classic,Knight's Tour,https://www.geeksforgeeks.org/the-knights-tour-problem-backtracking-1/,Hard,Knight visits all squares
+GeeksforGeeks,Classic,Hamiltonian Cycle,https://www.geeksforgeeks.org/hamiltonian-cycle-backtracking-6/,Medium,Graph cycle backtracking
+GeeksforGeeks,Classic,M-Coloring Problem,https://www.geeksforgeeks.org/m-coloring-problem-backtracking-5/,Medium,Graph vertex coloring
+GeeksforGeeks,Classic,Tug of War,https://www.geeksforgeeks.org/tug-of-war/,Medium,Partition min diff
+GeeksforGeeks,Classic,Word Break,https://www.geeksforgeeks.org/word-break-problem-using-backtracking/,Hard,Sentence segmentation
+GeeksforGeeks,Classic,Palindromic Partitions,https://www.geeksforgeeks.org/print-palindromic-partitions-string/,Medium,All palindrome partitions
+GeeksforGeeks,Classic,Combinational Sum,https://www.geeksforgeeks.org/combinational-sum/,Medium,Sum combination from array
+GeeksforGeeks,Classic,Remove Invalid Parentheses,https://www.geeksforgeeks.org/remove-invalid-parentheses/,Hard,Min removal parentheses
+GeeksforGeeks,Graph,Magnet Puzzle,https://www.geeksforgeeks.org/magnet-puzzle-backtracking-9/,Hard,Magnet placement
+GeeksforGeeks,Classic,Path from source to destination,https://www.geeksforgeeks.org/find-if-there-is-a-path-of-more-than-k-length-from-a-source/,Medium,Path length constraint
+GeeksforGeeks,Classic,Longest route in matrix with hurdles,https://www.geeksforgeeks.org/longest-possible-route-in-a-matrix-with-hurdles/,Hard,Longest path in grid
+GeeksforGeeks,Classic,Shortest safe route in landmines,https://www.geeksforgeeks.org/find-shortest-safe-route-in-a-path-with-landmines/,Hard,Shortest safe path
+GeeksforGeeks,Classic,Max number by K swaps,https://www.geeksforgeeks.org/find-maximum-number-possible-by-doing-at-most-k-swaps/,Medium,Swap permutation
+GeeksforGeeks,Classic,Paths to middle cell in maze,https://www.geeksforgeeks.org/find-paths-from-corner-cell-to-middle-cell-in-maze/,Medium,Maze path to center
+GeeksforGeeks,Classic,K-Partition problem,https://www.geeksforgeeks.org/partition-set-k-subsets-equal-sum/,Hard,K equal sum subsets
+GeeksforGeeks,Classic,Warnsdorff's Knight Tour,https://www.geeksforgeeks.org/warnsdorffs-algorithm-knights-tour-problem/,Hard,Optimized knight tour
+GeeksforGeeks,Classic,Rat with multiple jumps,https://www.geeksforgeeks.org/rat-in-a-maze-with-multiple-steps-jump-allowed/,Medium,Jump allowed path
+GeeksforGeeks,Classic,All distinct subsets,https://www.geeksforgeeks.org/print-all-distinct-subsets-of-a-given-set/,Easy,Unique subsets
+GeeksforGeeks,Classic,Sum-string,https://www.geeksforgeeks.org/check-given-string-sum-string/,Hard,Sum property check
+GeeksforGeeks,Classic,Boggle,https://www.geeksforgeeks.org/boggle-find-possible-words-board-characters/,Hard,Word search in grid
+GeeksforGeeks,Classic,Word Ladder,https://www.geeksforgeeks.org/word-ladder-length-of-shortest-chain-to-reach-a-target-word/,Medium,Shortest transformation
+GeeksforGeeks,Classic,Friends Pairing,https://www.geeksforgeeks.org/friends-pairing-problem/,Medium,Grouping backtracking
+GeeksforGeeks,Classic,Matrix path all directions,https://www.geeksforgeeks.org/print-all-possible-paths-from-top-left-to-bottom-right-of-a-mxn-matrix/,Medium,Grid path enumeration
+GeeksforGeeks,Classic,Arrange rods to make K side polygon,https://www.geeksforgeeks.org/arrange-rods-to-make-k-side-polygon/,Medium,Polygon construction
+GeeksforGeeks,Classic,Phone digits,https://www.geeksforgeeks.org/print-all-possible-words-from-phone-digits/,Easy,Letter combinations
+GeeksforGeeks,Classic,Spaces in string,https://www.geeksforgeeks.org/print-possible-strings-can-made-placing-spaces/,Easy,String with spaces
+GeeksforGeeks,Classic,K-th permutation sequence,https://www.geeksforgeeks.org/find-the-k-th-permutation-sequence-of-first-n-natural-numbers/,Medium,Factorial number system
+GeeksforGeeks,Classic,Consecutive perfect square sum,https://www.geeksforgeeks.org/permutation-numbers-sum-two-consecutive-numbers-perfect-square/,Medium,Circular arrangement
+GeeksforGeeks,Classic,Power set lexicographic,https://www.geeksforgeeks.org/powet-set-lexicographic-order/,Medium,Sorted subset generation
+GeeksforGeeks,Classic,IP Address generation,https://www.geeksforgeeks.org/program-generate-possible-valid-ip-addresses-given-string/,Medium,Valid IP enumeration
+USACO,Search,Chessboard & Queens,https://usaco.guide/bronze/complete-rec,Normal,N-Queens backtracking
+USACO,Search,Apple Division,https://usaco.guide/bronze/complete-rec,Normal,Subset sum minimization
+USACO,Search,Creating Strings I,https://usaco.guide/bronze/complete-rec,Normal,String permutation generation
+USACO,Search,Mothers Milk,https://jvonk.github.io/usaco/2018/10/03/milk3.html,Normal,Pouring state search
+USACO,Search,The Cow Run,https://usaco.guide/bronze/complete-rec,Hard,Permutation search
+USACO,Search,Name That Number,https://usaco.guide/bronze/complete-rec,Normal,Digit name mapping
+CCC,Search,Permutation,https://usaco.guide/bronze/complete-rec,Normal,Permutation generation
+LeetCode,Pattern Matching,291. Word Pattern II,https://leetcode.com/problems/word-pattern-ii/,Hard,Pattern matching backtracking
+LeetCode,Graph,332. Reconstruct Itinerary,https://leetcode.com/problems/reconstruct-itinerary/,Hard,Eulerian path backtracking
+LeetCode,Permutations,784. Letter Case Permutation,https://leetcode.com/problems/letter-case-permutation/,Medium,Case permutation enumeration
+LeetCode,Combinations,1239. Maximum Length of a Concatenated String with Unique Characters,https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/,Medium,String combination unique chars
+LeetCode,Strings,3211. Generate Binary Strings Without Adjacent Zeros,https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/,Medium,Binary string generation
+UVa,Classic,331 - Mapping the Swaps,https://onlinejudge.org/external/3/331.pdf,Level 1,Swap sorting enumeration
+UVa,Classic,487 - Boggle Blitz,https://onlinejudge.org/external/4/487.pdf,Level 1,Boggle word search
+UVa,Classic,571 - Jugs,https://onlinejudge.org/external/5/571.pdf,Level 1,Water jug state search
+UVa,Classic,598 - Bundling Newspapers,https://onlinejudge.org/external/5/598.pdf,Level 1,Newspaper combination
+UVa,Classic,10001 - Garden of Eden,https://onlinejudge.org/external/100/10001.pdf,Level 2,Cellular automata backtracking
+UVa,Classic,10063 - Knuth's Permutation,https://onlinejudge.org/external/100/10063.pdf,Level 2,Permutation generation
+UVa,Classic,10460 - Find the Permuted String,https://onlinejudge.org/external/104/10460.pdf,Level 2,String permutation search
+UVa,Classic,10475 - Help the Leaders,https://onlinejudge.org/external/104/10475.pdf,Level 2,String selection constraint
+UVa,Classic,10503 - The dominoes solitaire,https://onlinejudge.org/external/105/10503.pdf,Level 2,Domino placement puzzle
+UVa,Classic,10950 - Bad Code,https://onlinejudge.org/external/109/10950.pdf,Level 2,Code decoding backtracking
+UVa,Classic,11201 - The problem of the crazy linguist,https://onlinejudge.org/external/112/11201.pdf,Level 2,String generation probability
+UVa,Classic,11961 - DNA,https://onlinejudge.org/external/119/11961.pdf,Level 2,DNA string generation
+LightOJ,Backtracking,1091 - The Fastest Sorting Ever!,https://lightoj.com/problem/the-fastest-sorting-ever,Hard,Sorting network backtracking
+LightOJ,Backtracking,1121 - 15 Puzzle,https://lightoj.com/problem/15-puzzle,Medium,15 puzzle solver
+LightOJ,Backtracking,1139 - 8 Puzzle,https://lightoj.com/problem/8-puzzle,Medium,8 puzzle solver
+LightOJ,Backtracking,1324 - Equivalent Boolean Expressions,https://lightoj.com/problem/equivalent-boolean-expressions,Hard,Boolean expression equivalence
+TopCoder,Search,RecursiveGraph,https://archive.topcoder.com/ProblemStatement/pm/540,SRM 188 Div I L3,Recursive shortest path
+TopCoder,Search,RecursiveTournament,https://archive.topcoder.com/ProblemStatement/pm/14810,SRM 783 Div I L3,Recursive tournament counting
+TopCoder,Search,CaterpillarTree,https://archive.topcoder.com/ProblemStatement/pm/1041,TCO05 Wildcard Div I L1,Tree caterpillar recursion
+TopCoder,Search,TreeTraversals,https://archive.topcoder.com/ProblemStatement/pm/216,TCCC 03 Semifinals Div I L3,Tree reconstruction
+TopCoder,Search,BinaryTreeAutomaton,https://archive.topcoder.com/ProblemStatement,SRM 819 Div 2,Recursion on trees
+TopCoder,Search,GameOfInterval,https://archive.topcoder.com/ProblemStatement,SRM 716 Div I L3,Recursive game
+Toph,Backtracking,Alice in Candyland,https://toph.co/p/alice-in-candyland,Normal,Row/col selection backtracking
+Toph,Backtracking,Brain Fold (Easy),https://toph.co/p/brain-fold-easy,Easy,Puzzle backtracking
+Toph,Backtracking,Brain Fold (Hard),https://toph.co/p/brain-fold-hard,Hard,Puzzle backtracking
+Project Euler,Combinatorics,96 - Su Doku,https://projecteuler.net/problem=96,10%,Sudoku solver backtracking
+SPOJ,Classic,CLEANRBT - Cleaning Robot,https://www.spoj.com/problems/CLEANRBT/,Hard,TSP with BFS backtracking
+USACO,Search,Checker Challenge,http://train.usaco.org/usacoprob2?a=S3zlegK3l3k&S=checker,Normal,N-Queens variant
+USACO,Search,Prime Cryptarithm,http://train.usaco.org/usacoprob2?a=S3zlegK3l3k&S=crypt1,Normal,Digit puzzle complete search
+USACO,Search,Healthy Holsteins,http://train.usaco.org/usacoprob2?a=S3zlegK3l3k&S=holstein,Normal,Subset search backtracking
+USACO,Search,Hamming Codes,http://train.usaco.org/usacoprob2?a=S3zlegK3l3k&S=hamming,Normal,Code construction backtracking
+USACO,Search,Zero Sum,http://train.usaco.org/usacoprob2?a=S3zlegK3l3k&S=zerosum,Normal,Expression enumeration
+AtCoder,Recursion,ABC382 D - Keep Distance,https://atcoder.jp/contests/abc382/tasks/abc382_d,685,Recursive sequence enumeration
+AtCoder,Puzzles,ABC326 D - ABC Puzzle,https://atcoder.jp/contests/abc326/tasks/abc326_d,1371,Backtracking grid placement
+AtCoder,Game,ABC349 E - Weighted Tic-Tac-Toe,https://atcoder.jp/contests/abc349/tasks/abc349_e,1686,Game recursion backtracking

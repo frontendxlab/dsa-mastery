@@ -1,0 +1,1291 @@
+Platform,Category,Problem Name,URL,Difficulty,Key Concept
+LeetCode,Graph Traversal - BFS/DFS,200. Number of Islands,https://leetcode.com/problems/number-of-islands/,Medium,2D Grid BFS/DFS / Connected Components
+LeetCode,Graph Traversal - BFS/DFS,695. Max Area of Island,https://leetcode.com/problems/max-area-of-island/,Medium,2D Grid DFS/BFS
+LeetCode,Graph Traversal - BFS/DFS,733. Flood Fill,https://leetcode.com/problems/flood-fill/,Easy,2D Grid DFS/BFS
+LeetCode,Graph Traversal - BFS/DFS,463. Island Perimeter,https://leetcode.com/problems/island-perimeter/,Easy,2D Grid BFS/DFS
+LeetCode,Graph Traversal - BFS/DFS,130. Surrounded Regions,https://leetcode.com/problems/surrounded-regions/,Medium,BFS/DFS Boundary Traversal
+LeetCode,Graph Traversal - BFS/DFS,417. Pacific Atlantic Water Flow,https://leetcode.com/problems/pacific-atlantic-water-flow/,Medium,BFS/DFS from Boundaries
+LeetCode,Graph Traversal - BFS/DFS,79. Word Search,https://leetcode.com/problems/word-search/,Medium,DFS with Backtracking
+LeetCode,Graph Traversal - BFS/DFS,212. Word Search II,https://leetcode.com/problems/word-search-ii/,Hard,Trie + DFS + Backtracking
+LeetCode,Graph Traversal - BFS/DFS,994. Rotting Oranges,https://leetcode.com/problems/rotting-oranges/,Medium,Multi-source BFS
+LeetCode,Graph Traversal - BFS/DFS,542. 01 Matrix,https://leetcode.com/problems/01-matrix/,Medium,Multi-source BFS
+LeetCode,Graph Traversal - BFS/DFS,286. Walls and Gates,https://leetcode.com/problems/walls-and-gates/,Medium,Multi-source BFS
+LeetCode,Graph Traversal - BFS/DFS,490. The Maze,https://leetcode.com/problems/the-maze/,Medium,BFS/DFS
+LeetCode,Graph Traversal - BFS/DFS,505. The Maze II,https://leetcode.com/problems/the-maze-ii/,Medium,BFS/Dijkstra
+LeetCode,Graph Traversal - BFS/DFS,499. The Maze III,https://leetcode.com/problems/the-maze-iii/,Hard,BFS/Dijkstra
+LeetCode,Graph Traversal - BFS/DFS,547. Number of Provinces,https://leetcode.com/problems/number-of-provinces/,Medium,DFS/BFS/Union-Find
+LeetCode,Graph Traversal - BFS/DFS,1971. Find if Path Exists in Graph,https://leetcode.com/problems/find-if-path-exists-in-graph/,Easy,DFS/BFS
+LeetCode,Graph Traversal - BFS/DFS,323. Number of Connected Components in an Undirected Graph,https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/,Medium,DFS/BFS/Union-Find
+LeetCode,Graph Traversal - BFS/DFS,841. Keys and Rooms,https://leetcode.com/problems/keys-and-rooms/,Medium,DFS/BFS
+LeetCode,Graph Traversal - BFS/DFS,690. Employee Importance,https://leetcode.com/problems/employee-importance/,Medium,BFS/DFS
+LeetCode,Graph Traversal - BFS/DFS,1376. Time Needed to Inform All Employees,https://leetcode.com/problems/time-needed-to-inform-all-employees/,Medium,BFS/DFS
+LeetCode,Graph Traversal - BFS/DFS,1091. Shortest Path in Binary Matrix,https://leetcode.com/problems/shortest-path-in-binary-matrix/,Medium,BFS (Shortest Path Unweighted)
+LeetCode,Graph Traversal - BFS/DFS,752. Open the Lock,https://leetcode.com/problems/open-the-lock/,Medium,BFS
+LeetCode,Graph Traversal - BFS/DFS,909. Snakes and Ladders,https://leetcode.com/problems/snakes-and-ladders/,Medium,BFS
+LeetCode,Graph Traversal - BFS/DFS,1293. Shortest Path in a Grid with Obstacles Elimination,https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/,Hard,BFS with State
+LeetCode,Graph Traversal - BFS/DFS,864. Shortest Path to Get All Keys,https://leetcode.com/problems/shortest-path-to-get-all-keys/,Hard,BFS with Bitmask
+LeetCode,Graph Traversal - BFS/DFS,317. Shortest Distance from All Buildings,https://leetcode.com/problems/shortest-distance-from-all-buildings/,Hard,BFS from each building
+LeetCode,Graph Traversal - BFS/DFS,1254. Number of Closed Islands,https://leetcode.com/problems/number-of-closed-islands/,Medium,DFS/BFS
+LeetCode,Graph Traversal - BFS/DFS,1905. Count Sub Islands,https://leetcode.com/problems/count-sub-islands/,Medium,DFS/BFS
+LeetCode,Graph Traversal - BFS/DFS,1020. Number of Enclaves,https://leetcode.com/problems/number-of-enclaves/,Medium,DFS/BFS
+LeetCode,Graph Traversal - BFS/DFS,934. Shortest Bridge,https://leetcode.com/problems/shortest-bridge/,Medium,DFS + BFS
+LeetCode,Graph Traversal - BFS/DFS,1730. Shortest Path to Get Food,https://leetcode.com/problems/shortest-path-to-get-food/,Medium,BFS
+LeetCode,Clone Graph,133. Clone Graph,https://leetcode.com/problems/clone-graph/,Medium,BFS/DFS + HashMap Deep Copy
+LeetCode,Clone Graph,138. Copy List with Random Pointer,https://leetcode.com/problems/copy-list-with-random-pointer/,Medium,Graph Clone with HashMap
+LeetCode,Clone Graph,1485. Clone Binary Tree With Random Pointer,https://leetcode.com/problems/clone-binary-tree-with-random-pointer/,Medium,DFS Clone
+LeetCode,Clone Graph,1490. Clone N-ary Tree,https://leetcode.com/problems/clone-n-ary-tree/,Medium,DFS/BFS Clone
+LeetCode,Topological Sort,207. Course Schedule,https://leetcode.com/problems/course-schedule/,Medium,Topological Sort / Cycle Detection
+LeetCode,Topological Sort,210. Course Schedule II,https://leetcode.com/problems/course-schedule-ii/,Medium,Topological Sort Ordering
+LeetCode,Topological Sort,630. Course Schedule III,https://leetcode.com/problems/course-schedule-iii/,Hard,Greedy + Heap
+LeetCode,Topological Sort,269. Alien Dictionary,https://leetcode.com/problems/alien-dictionary/,Hard,Topological Sort
+LeetCode,Topological Sort,444. Sequence Reconstruction,https://leetcode.com/problems/sequence-reconstruction/,Medium,Topological Sort
+LeetCode,Topological Sort,310. Minimum Height Trees,https://leetcode.com/problems/minimum-height-trees/,Medium,Topological Sort (Kahn's from leaves)
+LeetCode,Topological Sort,1203. Sort Items by Groups Respecting Dependencies,https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/,Hard,Topological Sort (2-level)
+LeetCode,Topological Sort,329. Longest Increasing Path in a Matrix,https://leetcode.com/problems/longest-increasing-path-in-a-matrix/,Hard,DFS + Memo / Topological Sort
+LeetCode,Topological Sort,2050. Parallel Courses III,https://leetcode.com/problems/parallel-courses-iii/,Hard,Topological Sort + DP
+LeetCode,Topological Sort,1136. Parallel Courses,https://leetcode.com/problems/parallel-courses/,Medium,Topological Sort
+LeetCode,Topological Sort,1857. Largest Color Value in a Directed Graph,https://leetcode.com/problems/largest-color-value-in-a-directed-graph/,Hard,Topological Sort + DP
+LeetCode,Topological Sort,802. Find Eventual Safe States,https://leetcode.com/problems/find-eventual-safe-states/,Medium,Topological Sort (Reverse Graph)
+LeetCode,Topological Sort,851. Loud and Rich,https://leetcode.com/problems/loud-and-rich/,Medium,Topological Sort / DFS
+LeetCode,Topological Sort,2392. Build a Matrix With Conditions,https://leetcode.com/problems/build-a-matrix-with-conditions/,Hard,Topological Sort
+LeetCode,Shortest Path - Dijkstra,743. Network Delay Time,https://leetcode.com/problems/network-delay-time/,Medium,Dijkstra
+LeetCode,Shortest Path - Dijkstra,1514. Path with Maximum Probability,https://leetcode.com/problems/path-with-maximum-probability/,Medium,Dijkstra (Max Probability)
+LeetCode,Shortest Path - Bellman-Ford,787. Cheapest Flights Within K Stops,https://leetcode.com/problems/cheapest-flights-within-k-stops/,Medium,Bellman-Ford / Dijkstra with State
+LeetCode,Shortest Path - Dijkstra,1631. Path With Minimum Effort,https://leetcode.com/problems/path-with-minimum-effort/,Medium,Dijkstra / Binary Search + BFS
+LeetCode,Shortest Path - Dijkstra,1368. Minimum Cost to Make at Least One Valid Path in a Grid,https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/,Hard,0-1 BFS / Dijkstra
+LeetCode,Shortest Path - Dijkstra,1786. Number of Restricted Paths From First to Last Node,https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/,Medium,Dijkstra + DP
+LeetCode,Shortest Path - Dijkstra,2290. Minimum Obstacle Removal to Reach Corner,https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/,Hard,0-1 BFS / Dijkstra
+LeetCode,Shortest Path - Dijkstra,3342. Find Minimum Time to Reach Last Room II,https://leetcode.com/problems/find-minimum-time-to-reach-last-room-ii/,Medium,Dijkstra
+LeetCode,Shortest Path - Dijkstra,2662. Minimum Cost of a Path With Special Roads,https://leetcode.com/problems/minimum-cost-of-a-path-with-special-roads/,Medium,Dijkstra
+LeetCode,Shortest Path - Dijkstra,2093. Minimum Cost to Reach City With Discounts,https://leetcode.com/problems/minimum-cost-to-reach-city-with-discounts/,Medium,Dijkstra with State
+LeetCode,Shortest Path - Dijkstra,1976. Number of Ways to Arrive at Destination,https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/,Medium,Dijkstra + DP
+LeetCode,Shortest Path - Dijkstra,1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance,https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/,Medium,Floyd-Warshall / Dijkstra from each
+LeetCode,Shortest Path - Dijkstra,3112. Minimum Time to Visit Disappearing Points,https://leetcode.com/problems/minimum-time-to-visit-disappearing-points/,Medium,Dijkstra
+LeetCode,Shortest Path - Dijkstra,3123. Find Edges in Shortest Paths,https://leetcode.com/problems/find-edges-in-shortest-paths/,Hard,Dijkstra + BFS
+LeetCode,Shortest Path - Dijkstra,3341. Find Minimum Time to Reach Last Room I,https://leetcode.com/problems/find-minimum-time-to-reach-last-room-i/,Medium,Dijkstra
+LeetCode,Shortest Path - Dijkstra,3377. Minimum Operations to Minimize Path Sum,https://leetcode.com/problems/minimum-operations-to-minimize-path-sum/,Hard,Dijkstra
+LeetCode,Shortest Path - Floyd-Warshall,1462. Course Schedule IV,https://leetcode.com/problems/course-schedule-iv/,Medium,Floyd-Warshall / DFS
+LeetCode,Shortest Path - Floyd-Warshall,399. Evaluate Division,https://leetcode.com/problems/evaluate-division/,Medium,Floyd-Warshall / BFS / Union-Find
+LeetCode,Shortest Path - Floyd-Warshall,2642. Design Graph With Shortest Path Calculator,https://leetcode.com/problems/design-graph-with-shortest-path-calculator/,Hard,Floyd-Warshall / Dijkstra
+LeetCode,Shortest Path - Floyd-Warshall,2976. Minimum Cost to Convert String I,https://leetcode.com/problems/minimum-cost-to-convert-string-i/,Medium,Floyd-Warshall
+LeetCode,Shortest Path - Floyd-Warshall,2977. Minimum Cost to Convert String II,https://leetcode.com/problems/minimum-cost-to-convert-string-ii/,Hard,Floyd-Warshall + DP
+LeetCode,MST,1584. Min Cost to Connect All Points,https://leetcode.com/problems/min-cost-to-connect-all-points/,Medium,Kruskal / Prim (MST)
+LeetCode,MST,1135. Connecting Cities With Minimum Cost,https://leetcode.com/problems/connecting-cities-with-minimum-cost/,Medium,Kruskal / Prim (MST)
+LeetCode,MST,1168. Optimize Water Distribution in a Village,https://leetcode.com/problems/optimize-water-distribution-in-a-village/,Hard,Kruskal / Prim (MST with virtual node)
+LeetCode,MST,1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree,https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/,Hard,Kruskal + Edge Classification
+LeetCode,Union Find / DSU,684. Redundant Connection,https://leetcode.com/problems/redundant-connection/,Medium,Union-Find (Cycle Detection)
+LeetCode,Union Find / DSU,685. Redundant Connection II,https://leetcode.com/problems/redundant-connection-ii/,Hard,Union-Find (Directed)
+LeetCode,Union Find / DSU,261. Graph Valid Tree,https://leetcode.com/problems/graph-valid-tree/,Medium,Union-Find
+LeetCode,Union Find / DSU,721. Accounts Merge,https://leetcode.com/problems/accounts-merge/,Medium,Union-Find + HashMap
+LeetCode,Union Find / DSU,305. Number of Islands II,https://leetcode.com/problems/number-of-islands-ii/,Hard,Union-Find (Dynamic)
+LeetCode,Union Find / DSU,990. Satisfiability of Equality Equations,https://leetcode.com/problems/satisfiability-of-equality-equations/,Medium,Union-Find
+LeetCode,Union Find / DSU,1202. Smallest String With Swaps,https://leetcode.com/problems/smallest-string-with-swaps/,Medium,Union-Find + Sorting
+LeetCode,Union Find / DSU,947. Most Stones Removed with Same Row or Column,https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/,Medium,Union-Find
+LeetCode,Union Find / DSU,1061. Lexicographically Smallest Equivalent String,https://leetcode.com/problems/lexicographically-smallest-equivalent-string/,Medium,Union-Find
+LeetCode,Union Find / DSU,1319. Number of Operations to Make Network Connected,https://leetcode.com/problems/number-of-operations-to-make-network-connected/,Medium,Union-Find
+LeetCode,Union Find / DSU,2421. Number of Good Paths,https://leetcode.com/problems/number-of-good-paths/,Hard,Union-Find + Sorting
+LeetCode,Union Find / DSU,1722. Minimize Hamming Distance After Swap Operations,https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/,Medium,Union-Find
+LeetCode,Union Find / DSU,1992. Find All Groups of Farmland,https://leetcode.com/problems/find-all-groups-of-farmland/,Medium,DFS / Union-Find
+LeetCode,Union Find / DSU,2685. Count the Number of Complete Components,https://leetcode.com/problems/count-the-number-of-complete-components/,Medium,Union-Find + Degree Check
+LeetCode,Union Find / DSU,1101. The Earliest Moment When Everyone Become Friends,https://leetcode.com/problems/the-earliest-moment-when-everyone-become-friends/,Medium,Union-Find + Sorting
+LeetCode,Union Find / DSU,128. Longest Consecutive Sequence,https://leetcode.com/problems/longest-consecutive-sequence/,Medium,Union-Find / Hash Set
+LeetCode,Union Find / DSU,778. Swim in Rising Water,https://leetcode.com/problems/swim-in-rising-water/,Hard,Union-Find / Dijkstra
+LeetCode,Union Find / DSU,839. Similar String Groups,https://leetcode.com/problems/similar-string-groups/,Hard,Union-Find
+LeetCode,Union Find / DSU,924. Minimize Malware Spread,https://leetcode.com/problems/minimize-malware-spread/,Hard,Union-Find + Component Size
+LeetCode,Union Find / DSU,928. Minimize Malware Spread II,https://leetcode.com/problems/minimize-malware-spread-ii/,Hard,Union-Find / DFS
+LeetCode,Union Find / DSU,2709. Greatest Common Divisor Traversal,https://leetcode.com/problems/greatest-common-divisor-traversal/,Hard,Union-Find + Prime Factorization
+LeetCode,Cycle Detection,207. Course Schedule,https://leetcode.com/problems/course-schedule/,Medium,Cycle Detection Directed (DFS/Kahn)
+LeetCode,Cycle Detection,684. Redundant Connection,https://leetcode.com/problems/redundant-connection/,Medium,Cycle Detection Undirected (Union-Find)
+LeetCode,Cycle Detection,685. Redundant Connection II,https://leetcode.com/problems/redundant-connection-ii/,Hard,Cycle Detection Directed
+LeetCode,Cycle Detection,261. Graph Valid Tree,https://leetcode.com/problems/graph-valid-tree/,Medium,Cycle Detection + Connectivity
+LeetCode,Cycle Detection,802. Find Eventual Safe States,https://leetcode.com/problems/find-eventual-safe-states/,Medium,Cycle Detection (DFS Colors)
+LeetCode,Cycle Detection,1192. Critical Connections in a Network,https://leetcode.com/problems/critical-connections-in-a-network/,Hard,Tarjan (Bridges)
+LeetCode,Cycle Detection,1559. Detect Cycles in 2D Grid,https://leetcode.com/problems/detect-cycles-in-2d-grid/,Medium,Cycle Detection in Grid
+LeetCode,Cycle Detection,1059. All Paths from Source Lead to Destination,https://leetcode.com/problems/all-paths-from-source-lead-to-destination/,Medium,DFS Cycle Detection
+LeetCode,Bipartite Graph,785. Is Graph Bipartite?,https://leetcode.com/problems/is-graph-bipartite/,Medium,BFS/DFS 2-Coloring
+LeetCode,Bipartite Graph,886. Possible Bipartition,https://leetcode.com/problems/possible-bipartition/,Medium,BFS/DFS 2-Coloring
+LeetCode,Bipartite Graph,1042. Flower Planting With No Adjacent,https://leetcode.com/problems/flower-planting-with-no-adjacent/,Medium,Greedy Graph Coloring
+LeetCode,Bipartite Graph,1129. Shortest Path with Alternating Colors,https://leetcode.com/problems/shortest-path-with-alternating-colors/,Medium,BFS with State (Color)
+LeetCode,Bridges/Articulation,1192. Critical Connections in a Network,https://leetcode.com/problems/critical-connections-in-a-network/,Hard,Tarjan (Bridges)
+LeetCode,Bridges/Articulation,1568. Minimum Number of Days to Disconnect Island,https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/,Hard,Articulation Points / Tarjan
+LeetCode,Eulerian Path,332. Reconstruct Itinerary,https://leetcode.com/problems/reconstruct-itinerary/,Hard,Hierholzer (Eulerian Path)
+LeetCode,Eulerian Path,753. Cracking the Safe,https://leetcode.com/problems/cracking-the-safe/,Hard,De Bruijn / Eulerian Path
+LeetCode,Eulerian Path,2097. Valid Arrangement of Pairs,https://leetcode.com/problems/valid-arrangement-of-pairs/,Hard,Hierholzer (Eulerian Path)
+LeetCode,Graph - Special,797. All Paths From Source to Target,https://leetcode.com/problems/all-paths-from-source-to-target/,Medium,DFS in DAG
+LeetCode,Graph - Special,997. Find the Town Judge,https://leetcode.com/problems/find-the-town-judge/,Easy,In-degree / Out-degree
+LeetCode,Graph - Special,1263. Minimum Moves to Move a Box to Their Target Location,https://leetcode.com/problems/minimum-moves-to-move-a-box-to-their-target-location/,Hard,BFS + Push State
+LeetCode,Graph - Special,1306. Jump Game III,https://leetcode.com/problems/jump-game-iii/,Medium,BFS/DFS on Array Graph
+LeetCode,Graph - Special,1345. Jump Game IV,https://leetcode.com/problems/jump-game-iv/,Hard,BFS with Graph Grouping
+LeetCode,Graph - Special,1654. Minimum Jumps to Reach Home,https://leetcode.com/problems/minimum-jumps-to-reach-home/,Medium,BFS with State
+LeetCode,Graph - Special,1765. Map of Highest Peak,https://leetcode.com/problems/map-of-highest-peak/,Medium,Multi-source BFS
+LeetCode,Graph - Special,1820. Maximum Number of Accepted Invitations,https://leetcode.com/problems/maximum-number-of-accepted-invitations/,Medium,Bipartite Matching / DFS
+LeetCode,Graph - Special,1926. Nearest Exit from Entrance in Maze,https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/,Medium,BFS
+LeetCode,Graph - Special,2039. The Time When the Network Becomes Idle,https://leetcode.com/problems/the-time-when-the-network-becomes-idle/,Medium,BFS + Math
+LeetCode,Graph - Special,2049. Count Nodes With the Highest Score,https://leetcode.com/problems/count-nodes-with-the-highest-score/,Medium,DFS Tree
+LeetCode,Graph - Special,2101. Detonate the Maximum Bombs,https://leetcode.com/problems/detonate-the-maximum-bombs/,Medium,BFS/DFS + Geometry
+LeetCode,Graph - Special,2192. All Ancestors of a Node in a Directed Acyclic Graph,https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/,Medium,DFS / Topological Sort
+LeetCode,Graph - Special,2246. Longest Path With Different Adjacent Characters,https://leetcode.com/problems/longest-path-with-different-adjacent-characters/,Hard,DFS Tree Diameter
+LeetCode,Graph - Special,2368. Reachable Nodes With Restrictions,https://leetcode.com/problems/reachable-nodes-with-restrictions/,Medium,BFS/DFS
+LeetCode,Graph - Special,2385. Amount of Time for Binary Tree to Be Infected,https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/,Medium,BFS/DFS on Tree Graph
+LeetCode,Graph - Special,2492. Minimum Score of a Path Between Two Cities,https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/,Medium,BFS/DFS/Union-Find
+LeetCode,Graph - Special,2493. Divide Nodes Into the Maximum Number of Groups,https://leetcode.com/problems/divide-nodes-into-the-maximum-number-of-groups/,Hard,BFS + Bipartite Check
+LeetCode,Graph - Special,2503. Maximum Number of Points From Grid Queries,https://leetcode.com/problems/maximum-number-of-points-from-grid-queries/,Hard,BFS + Sorting / Union-Find
+LeetCode,Graph - Special,2603. Collect Coins in a Tree,https://leetcode.com/problems/collect-coins-in-a-tree/,Hard,Topological Sort on Tree
+LeetCode,Graph - Special,2770. Maximum Number of Jumps to Reach the Last Index,https://leetcode.com/problems/maximum-number-of-jumps-to-reach-the-last-index/,Medium,DFS/DP on Graph
+LeetCode,Graph - Special,3243. Shortest Distance After Road Addition Queries I,https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/,Medium,BFS
+LeetCode,Graph - Special,3244. Shortest Distance After Road Addition Queries II,https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/,Hard,BFS
+LeetCode,Graph - Special,3310. Remove Methods From Project,https://leetcode.com/problems/remove-methods-from-project/,Medium,DFS/BFS Check
+GeeksforGeeks,Graph Traversal - BFS/DFS,BFS of Graph,https://www.geeksforgeeks.org/problems/bfs-traversal-of-graph/1,Easy,BFS
+GeeksforGeeks,Graph Traversal - BFS/DFS,DFS of Graph,https://www.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1,Easy,DFS
+GeeksforGeeks,Graph Traversal - BFS/DFS,Number of Islands,https://www.geeksforgeeks.org/problems/find-the-number-of-islands/1,Medium,DFS/BFS in Grid
+GeeksforGeeks,Graph Traversal - BFS/DFS,Flood Fill Algorithm,https://www.geeksforgeeks.org/problems/flood-fill-algorithm/1,Medium,DFS/BFS
+GeeksforGeeks,Graph Traversal - BFS/DFS,Replace O's with X's,https://www.geeksforgeeks.org/problems/replace-os-with-xs/1,Medium,BFS/DFS Boundaries
+GeeksforGeeks,Graph Traversal - BFS/DFS,Snake and Ladder Problem,https://www.geeksforgeeks.org/problems/snake-and-ladder-problem/1,Medium,BFS
+GeeksforGeeks,Topological Sort,Topological Sort,https://www.geeksforgeeks.org/problems/topological-sort/1,Medium,Kahn's Algorithm / DFS
+GeeksforGeeks,Topological Sort,Course Schedule,https://www.geeksforgeeks.org/problems/course-schedule/1,Medium,Topological Sort
+GeeksforGeeks,Topological Sort,Prerequisite Tasks,https://www.geeksforgeeks.org/problems/prerequisite-tasks/1,Medium,Topological Sort / Cycle Detection
+GeeksforGeeks,Cycle Detection,Detect Cycle in Undirected Graph,https://www.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1,Medium,BFS/DFS / Union-Find
+GeeksforGeeks,Cycle Detection,Detect Cycle in Directed Graph,https://www.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1,Medium,DFS Colors / Kahn
+GeeksforGeeks,Shortest Path,Dijkstra's Algorithm,https://www.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1,Medium,Dijkstra
+GeeksforGeeks,Shortest Path,Bellman-Ford Algorithm,https://www.geeksforgeeks.org/problems/distance-from-the-source-bellman-ford-algorithm/1,Medium,Bellman-Ford
+GeeksforGeeks,Shortest Path,Floyd-Warshall Algorithm,https://www.geeksforgeeks.org/problems/implementing-floyd-warshall/1,Medium,Floyd-Warshall
+GeeksforGeeks,Shortest Path,Shortest Path in DAG,https://www.geeksforgeeks.org/problems/shortest-path-in-undirected-graph/1,Medium,Topological Sort + Relaxation
+GeeksforGeeks,Shortest Path,Shortest Path in Unweighted Graph,https://www.geeksforgeeks.org/problems/shortest-path-in-undirected-graph-having-unit-distance/1,Medium,BFS
+GeeksforGeeks,MST,Minimum Spanning Tree,https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1,Medium,Kruskal / Prim
+GeeksforGeeks,Union Find / DSU,Union-Find,https://www.geeksforgeeks.org/problems/union-find/1,Medium,DSU
+GeeksforGeeks,SCC,Strongly Connected Components (Kosaraju),https://www.geeksforgeeks.org/problems/strongly-connected-components-kosarajus-algo/1,Medium,Kosaraju
+GeeksforGeeks,Bridges/Articulation,Articulation Point - I,https://www.geeksforgeeks.org/problems/articulation-point-1/1,Medium,Tarjan
+GeeksforGeeks,Bridges/Articulation,Articulation Point - II,https://www.geeksforgeeks.org/problems/articulation-point2616/1,Hard,Tarjan
+GeeksforGeeks,Bipartite Graph,Bipartite Graph,https://www.geeksforgeeks.org/problems/bipartite-graph/1,Medium,BFS 2-Coloring
+GeeksforGeeks,Matching,Maximum Bipartite Matching,https://www.geeksforgeeks.org/problems/maximum-bipartite-matching/1,Medium,Ford-Fulkerson / DFS
+GeeksforGeeks,Network Flow,Find the Maximum Flow,https://www.geeksforgeeks.org/problems/find-the-maximum-flow/1,Hard,Ford-Fulkerson
+GeeksforGeeks,Graph - Special,Minimum Cost to Connect Cities,https://www.geeksforgeeks.org/problems/minimum-cost-to-connect-cities/1,Medium,MST
+GeeksforGeeks,Graph - Special,Total Number of Spanning Trees,https://www.geeksforgeeks.org/problems/total-number-of-spanning-trees/1,Hard,Matrix Tree Theorem
+GeeksforGeeks,Graph - Special,Rotten Oranges,https://www.geeksforgeeks.org/problems/minimum-time-required-so-that-all-oranges-become-rotten/1,Medium,Multi-source BFS
+GeeksforGeeks,Graph - Special,Word Ladder,https://www.geeksforgeeks.org/problems/word-ladder/1,Hard,BFS
+GeeksforGeeks,Graph - Special,Alien Dictionary,https://www.geeksforgeeks.org/problems/alien-dictionary/1,Hard,Topological Sort
+GeeksforGeeks,Graph - Special,Steps by Knight,https://www.geeksforgeeks.org/problems/steps-by-knight/1,Medium,BFS on Chessboard
+GeeksforGeeks,Graph - Special,Clone Graph,https://www.geeksforgeeks.org/problems/clone-graph/1,Medium,BFS/DFS + HashMap
+Codeforces,BFS/DFS,Kefa and Park,https://codeforces.com/problemset/problem/580/C,1500,DFS on Tree
+Codeforces,BFS/DFS,Cyclic Components,https://codeforces.com/problemset/problem/977/E,1500,Cycle Detection in Components
+Codeforces,BFS/DFS,Igor In the Museum,https://codeforces.com/problemset/problem/598/D,1700,BFS/DFS on Grid
+Codeforces,BFS/DFS,Solve The Maze,https://codeforces.com/problemset/problem/1365/D,1700,BFS/DFS with Obstacles
+Codeforces,BFS/DFS,Lunar New Year and a Wander,https://codeforces.com/problemset/problem/1106/D,1500,DFS Lexicographically
+Codeforces,BFS/DFS,Valid BFS?,https://codeforces.com/problemset/problem/1037/D,1700,BFS Validation
+Codeforces,BFS/DFS,Books Exchange,https://codeforces.com/problemset/problem/1249/B2,1400,Cycle Detection in Functional Graph
+Codeforces,BFS/DFS,Mouse Hunt,https://codeforces.com/problemset/problem/1027/C,1700,Functional Graph Cycles
+Codeforces,BFS/DFS,The Two Routes,https://codeforces.com/problemset/problem/601/A,1600,BFS on Complement Graph
+Codeforces,BFS/DFS,Shortest Path of the King,https://codeforces.com/problemset/problem/3/A,1000,BFS on Grid
+Codeforces,BFS/DFS,King's Path,https://codeforces.com/problemset/problem/242/C,1800,BFS on Infinite Grid
+Codeforces,BFS/DFS,Number of Simple Paths,https://codeforces.com/problemset/problem/1454/E,2000,Cycles + Combinatorics
+Codeforces,BFS/DFS,Linova and Kingdom,https://codeforces.com/problemset/problem/1336/A,1600,DFS + Greedy
+Codeforces,BFS/DFS,01-MST,https://codeforces.com/problemset/problem/1242/B,1800,0-1 BFS / DSU
+Codeforces,BFS/DFS,Make It Connected,https://codeforces.com/problemset/problem/1095/F,1700,MST / BFS
+Codeforces,BFS/DFS,Nene and the Passing Game,https://codeforces.com/problemset/problem/1985/H1,1800,BFS on Grid Components
+Codeforces,BFS/DFS,Maximize the Largest Component,https://codeforces.com/problemset/problem/1985/H2,2000,BFS/DFS on Grid
+Codeforces,BFS/DFS,Vlad and the Mountains,https://codeforces.com/problemset/problem/1926/F,2000,BFS with Constraints
+Codeforces,BFS/DFS,Shuffling Songs,https://codeforces.com/problemset/problem/1950/G,1700,Bitmask BFS/DFS
+Codeforces,BFS/DFS,Arrow Path,https://codeforces.com/problemset/problem/1948/C,1300,BFS on Grid
+Codeforces,BFS/DFS,Rudolf and Subway,https://codeforces.com/problemset/problem/1948/D,1600,BFS on Line Graph
+Codeforces,BFS/DFS,Prison Break,https://codeforces.com/problemset/problem/1415/C,1300,BFS / Graph
+Codeforces,Shortest Path,Dijkstra?,https://codeforces.com/problemset/problem/20/C,1900,Dijkstra
+Codeforces,Shortest Path,Roads in Berland,https://codeforces.com/problemset/problem/25/C,1800,Floyd-Warshall
+Codeforces,Shortest Path,Shortest Path,https://codeforces.com/problemset/problem/59/E,2100,BFS with State
+Codeforces,Shortest Path,Planets,https://codeforces.com/problemset/problem/229/B,1900,Dijkstra with Custom Wait
+Codeforces,Shortest Path,Complete The Graph,https://codeforces.com/problemset/problem/715/B,2200,Binary Search + Dijkstra
+Codeforces,Shortest Path,Cow and Fields,https://codeforces.com/problemset/problem/1307/D,1900,BFS + Sorting
+Codeforces,Shortest Path,Edge Deletion,https://codeforces.com/problemset/problem/1076/D,1700,Dijkstra Tree
+Codeforces,Shortest Path,Shortest Cycle,https://codeforces.com/problemset/problem/1205/B,1800,Floyd-Warshall / Cycle Detection
+Codeforces,Shortest Path,Weights Distributing,https://codeforces.com/problemset/problem/1343/E,1700,BFS + Greedy
+Codeforces,Shortest Path,Fair,https://codeforces.com/problemset/problem/986/A,1600,Multi-source BFS
+Codeforces,Shortest Path,Jzzhu and Cities,https://codeforces.com/problemset/problem/449/B,2000,Dijkstra + Greedy
+Codeforces,Shortest Path,Great Graphs,https://codeforces.com/problemset/problem/1541/C,1400,Shortest Path / Constructive
+Codeforces,Shortest Path,Greg and Graph,https://codeforces.com/problemset/problem/295/B,1700,Floyd-Warshall Reverse
+Codeforces,Shortest Path,Minimum Path,https://codeforces.com/problemset/problem/1473/E,2400,Modified Dijkstra
+Codeforces,Shortest Path,Graph and Graph,https://codeforces.com/problemset/problem/2059/D,2000,Shortest Path
+Codeforces,Shortest Path,Another Exercise on Graphs,https://codeforces.com/problemset/problem/2057/E1,2000,Binary Search + Shortest Path
+Codeforces,Shortest Path,Graph Transpositions,https://codeforces.com/problemset/problem/1442/C,2300,0-1 BFS / Dijkstra
+Codeforces,Shortest Path,Ela and the Wiring Wizard,https://codeforces.com/problemset/problem/1737/D,2000,Graph / Shortest Path
+Codeforces,Shortest Path,The Beach,https://codeforces.com/problemset/problem/1753/D,2400,Shortest Path / Construction
+Codeforces,Shortest Path,1-Trees and Queries,https://codeforces.com/problemset/problem/1304/E,1900,LCA / Shortest Path
+Codeforces,Shortest Path,Design Tutorial: Inverse the Problem,https://codeforces.com/problemset/problem/472/D,1900,MST / Tree Verification
+Codeforces,MST,Minimum spanning tree for each edge,https://codeforces.com/problemset/problem/609/E,2100,MST + LCA
+Codeforces,MST,Shichikuji and Power Grid,https://codeforces.com/problemset/problem/1245/D,1900,MST on Complete Graph
+Codeforces,MST,Legacy,https://codeforces.com/problemset/problem/786/B,2200,Segment Tree + Dijkstra
+Codeforces,MST,Fools and Foolproof Roads,https://codeforces.com/problemset/problem/362/D,2100,MST + DSU
+Codeforces,MST,MST and Rectangles,https://codeforces.com/problemset/problem/160/D,2100,MST + Bridges
+Codeforces,SCC,Coprocessor,https://codeforces.com/problemset/problem/909/E,1900,SCC / Topological Sort
+Codeforces,SCC,Leha and another game about graph,https://codeforces.com/problemset/problem/840/B,2100,SCC / DFS
+Codeforces,SCC,Graph and Queries,https://codeforces.com/problemset/problem/1416/D,2400,DSU + SCC Reverse
+Codeforces,Topological Sort,Book,https://codeforces.com/problemset/problem/1572/A,1800,Topological Sort + DP
+Codeforces,Topological Sort,Fox And Names,https://codeforces.com/problemset/problem/510/C,1600,Topological Sort on Alphabet
+Codeforces,Topological Sort,Topological Sorting,https://codeforces.com/problemset/problem/919/D,1700,Topological Sort + DP
+Codeforces,Bipartite,Graph Without Long Directed Paths,https://codeforces.com/problemset/problem/1144/F,1700,2-Coloring
+Codeforces,Bipartite,Beautiful Graph,https://codeforces.com/problemset/problem/1093/D,1700,2-Coloring + Counting
+Codeforces,Bipartite,Mahmoud and Ehab and the bipartiteness,https://codeforces.com/problemset/problem/862/B,1300,Bipartite Check
+Codeforces,Bipartite,Vitaly and Cycle,https://codeforces.com/problemset/problem/557/D,1900,Bipartite / Counting
+Codeforces,Bipartite,The Number of Imposters,https://codeforces.com/problemset/problem/1594/D,1700,Bipartite + DSU
+Codeforces,Bipartite,Split Into Two Sets,https://codeforces.com/problemset/problem/1702/E,1600,Bipartite Check
+Codeforces,Bipartite,Bear and Friendship Condition,https://codeforces.com/problemset/problem/791/B,1500,DSU / Graph Condition
+Codeforces,Bipartite,NP-Hard Problem,https://codeforces.com/problemset/problem/687/A,1500,Bipartite Check
+Codeforces,Cycle Detection,Shortest Cycle,https://codeforces.com/problemset/problem/1205/B,1800,Cycle Detection in Graph
+Codeforces,Cycle Detection,Cthulhu,https://codeforces.com/problemset/problem/103/B,1500,Cycle Detection / Components
+Codeforces,DSU,Roads not only in Berland,https://codeforces.com/problemset/problem/25/D,1900,DSU
+Codeforces,DSU,Secret Passwords,https://codeforces.com/problemset/problem/1263/D,1500,DSU
+Codeforces,DSU,Mr. Kitayuta's Colorful Graph,https://codeforces.com/problemset/problem/505/B,1500,DSU / Color Specific
+Codeforces,DSU,Connectivity,https://codeforces.com/problemset/problem/1130/C,1300,DSU / BFS
+Codeforces,DSU,Mocha and Diana (Easy Version),https://codeforces.com/problemset/problem/1559/D1,1400,DSU
+Codeforces,DSU,Mocha and Diana (Hard Version),https://codeforces.com/problemset/problem/1559/D2,2100,DSU / Constructive
+Codeforces,DSU,Harmonious Graph,https://codeforces.com/problemset/problem/1253/D,1700,DSU
+Codeforces,DSU,Spanning Tree with Maximum Degree,https://codeforces.com/problemset/problem/1133/F1,1600,DSU / MST
+Codeforces,DSU,The Third Letter,https://codeforces.com/problemset/problem/1850/H,1700,DSU with Weights
+Codeforces,Network Flow,Downloading,https://codeforces.com/problemset/problem/498/C,2400,Flow / Bipartite
+Codeforces,Bridges/Articulation,Berland and the Shortest Paths,https://codeforces.com/problemset/problem/1005/F,2400,BFS Tree / Bridges
+Codeforces,Bridges/Articulation,Two Paths,https://codeforces.com/problemset/problem/14/D,2100,Tree Diameter / Bridges
+Codeforces,Graph Coloring,Coloring Edges,https://codeforces.com/problemset/problem/1217/D,1800,Graph Coloring / Cycle
+Codeforces,Graph Coloring,Graph Coloring,https://codeforces.com/problemset/problem/662/B,1900,Graph Coloring / Components
+Codeforces,Graph Coloring,Paint the Tree,https://codeforces.com/problemset/problem/1244/D,1800,Graph Coloring / Tree
+Codeforces,Eulerian Path,Eulerian Path,https://codeforces.com/problemset/problem/508/D,2200,Eulerian Path / Hierholzer
+Codeforces,Eulerian Path,Weird journey,https://codeforces.com/problemset/problem/788/B,2100,Eulerian Path / Cycle
+Codeforces,Eulerian Path,Minimum Euler Cycle,https://codeforces.com/problemset/problem/1334/D,1800,Constructive Eulerian Cycle
+Codeforces,Tree DP,Choosing Capital for Treeland,https://codeforces.com/problemset/problem/219/D,1700,Tree DP / Reroot
+Codeforces,Tree DP,Maximum White Subtree,https://codeforces.com/problemset/problem/1324/F,1800,Tree DP / Reroot
+Codeforces,Tree DP,Distance in Tree,https://codeforces.com/problemset/problem/161/D,1800,Tree DP
+Codeforces,Tree DP,Tree with Maximum Cost,https://codeforces.com/problemset/problem/1092/F,1900,Tree DP / Reroot
+Codeforces,Tree DP,Lomsat gelral,https://codeforces.com/problemset/problem/600/E,2300,Sack / DSU on Tree
+Codeforces,Tree DP,Cut 'em all!,https://codeforces.com/problemset/problem/982/C,1500,Tree DP / DFS
+Codeforces,Tree DP,Infected Tree,https://codeforces.com/problemset/problem/1689/C,1700,Tree DP
+Codeforces,Tree DP,Edge Weight Assignment,https://codeforces.com/problemset/problem/1338/B,1800,Tree / XOR / Parity
+Codeforces,Tree DP,Xenia and Tree,https://codeforces.com/problemset/problem/342/E,2400,Centroid Decomposition
+Codeforces,Tree DP,PolandBall and Forest,https://codeforces.com/problemset/problem/755/C,1200,Tree / DSU
+Codeforces,Tree DP,Tree Constructing,https://codeforces.com/problemset/problem/1003/E,2100,Tree Construction / Diameter
+Codeforces,Tree DP,K-tree,https://codeforces.com/problemset/problem/431/C,1500,Tree DP / Combinatorics
+Codeforces,2-SAT,2-SAT,https://codeforces.com/problemset/problem/776/D,2000,2-SAT / Bipartite
+Codeforces,2-SAT,2-SAT Problem,https://codeforces.com/problemset/problem/468/B,2000,2-SAT
+Codeforces,2-SAT,SAT,https://codeforces.com/problemset/problem/568/C,2500,2-SAT
+Codeforces,2-SAT,Data Center Maintenance,https://codeforces.com/problemset/problem/949/C,1900,2-SAT / SCC
+Codeforces,Graph Matchings,Valuable Paper,https://codeforces.com/problemset/problem/1562/D2,2100,Bipartite Matching
+Codeforces,Graph Matchings,BPM,https://codeforces.com/problemset/problem/1139/E,2100,Bipartite Matching / Hall
+Codeforces,LCA,LCA Queries,https://codeforces.com/problemset/problem/1328/E,1900,LCA / Tree
+Codeforces,LCA,Distance Queries,https://codeforces.com/problemset/problem/609/E,2100,LCA / MST
+Codeforces,LCA,Nearest Opposite Parity,https://codeforces.com/problemset/problem/1272/E,1700,Multi-source BFS / LCA
+AtCoder,BFS/DFS,ABC 284 C - Count Connected Components,https://atcoder.jp/contests/abc284/tasks/abc284_c,300,BFS/DFS / Connected Components
+AtCoder,BFS/DFS,ABC 007 C - BFS,https://atcoder.jp/contests/abc007/tasks/abc007_3,300,BFS on Grid
+AtCoder,BFS/DFS,ABC 276 B - Adjacency List,https://atcoder.jp/contests/abc276/tasks/abc276_b,200,Graph Representation
+AtCoder,BFS/DFS,ABC 325 C - Sensors,https://atcoder.jp/contests/abc325/tasks/abc325_c,300,DFS / Connected Components on Grid
+AtCoder,BFS/DFS,ABC 277 C - Ladder Takahashi,https://atcoder.jp/contests/abc277/tasks/abc277_c,300,BFS / DFS
+AtCoder,BFS/DFS,ABC 213 D - Takahashi Tour,https://atcoder.jp/contests/abc213/tasks/abc213_d,400,DFS / Euler Tour
+AtCoder,BFS/DFS,ABC 333 D - Erase Leaves,https://atcoder.jp/contests/abc333/tasks/abc333_d,400,DFS / Tree DP
+AtCoder,BFS/DFS,ABC 229 E - Graph Destruction,https://atcoder.jp/contests/abc229/tasks/abc229_e,500,DSU Reverse / BFS
+AtCoder,BFS/DFS,ABC 211 D - Number of Shortest paths,https://atcoder.jp/contests/abc211/tasks/abc211_d,400,BFS / Counting Paths
+AtCoder,BFS/DFS,ABC 232 C - Graph Isomorphism,https://atcoder.jp/contests/abc232/tasks/abc232_c,300,DFS / Permutation
+AtCoder,BFS/DFS,ABC 224 D - 8 Puzzle on Graph,https://atcoder.jp/contests/abc224/tasks/abc224_d,500,BFS + State Space
+AtCoder,BFS/DFS,ABC 300 C - Cross,https://atcoder.jp/contests/abc300/tasks/abc300_c,300,DFS / Grid Components
+AtCoder,BFS/DFS,ABC 304 C - Virus,https://atcoder.jp/contests/abc304/tasks/abc304_c,300,BFS / DFS
+AtCoder,BFS/DFS,ABC 302 E - Isolation,https://atcoder.jp/contests/abc302/tasks/abc302_e,500,Degree Tracking / BFS
+AtCoder,BFS/DFS,ABC 305 E - Art Gallery on Graph,https://atcoder.jp/contests/abc305/tasks/abc305_e,500,Multi-source BFS
+AtCoder,BFS/DFS,ABC 305 F - Dungeon Explore,https://atcoder.jp/contests/abc305/tasks/abc305_f,500,Interactive DFS
+AtCoder,BFS/DFS,ABC 309 D - Add One Edge,https://atcoder.jp/contests/abc309/tasks/abc309_d,400,BFS / Tree Diameter
+AtCoder,BFS/DFS,ABC 311 C - Find it!,https://atcoder.jp/contests/abc311/tasks/abc311_c,400,Cycle Detection in Functional Graph
+AtCoder,BFS/DFS,ABC 334 E - Christmas Color Grid 1,https://atcoder.jp/contests/abc334/tasks/abc334_e,500,DFS / Connected Components Expected Value
+AtCoder,BFS/DFS,ABC 368 D - Minimum Steiner Tree,https://atcoder.jp/contests/abc368/tasks/abc368_d,500,DFS on Tree
+AtCoder,BFS/DFS,ABC 177 D - Friends,https://atcoder.jp/contests/abc177/tasks/abc177_d,400,DSU / Connected Components
+AtCoder,Shortest Path,ABC 035 D - Treasure Hunt,https://atcoder.jp/contests/abc035/tasks/abc035_d,500,Dijkstra
+AtCoder,Shortest Path,ABC 051 D - Candidates of No Shortest Paths,https://atcoder.jp/contests/abc051/tasks/abc051_d,500,Dijkstra / Floyd-Warshall
+AtCoder,Shortest Path,ABC 061 D - Score Attack,https://atcoder.jp/contests/abc061/tasks/abc061_d,500,Bellman-Ford / Negative Cycle
+AtCoder,Shortest Path,ABC 143 E - Travel by Car,https://atcoder.jp/contests/abc143/tasks/abc143_e,500,Floyd-Warshall / BFS
+AtCoder,Shortest Path,ABC 319 G - Counting Shortest Paths,https://atcoder.jp/contests/abc319/tasks/abc319_g,575,BFS + Complement Graph
+AtCoder,Shortest Path,ABC 324 F - Beautiful Path,https://atcoder.jp/contests/abc324/tasks/abc324_f,600,DP / DAG Shortest Path
+AtCoder,Shortest Path,ABC 338 F - Negative Traveling Salesman,https://atcoder.jp/contests/abc338/tasks/abc338_f,600,Floyd-Warshall / DP
+AtCoder,Shortest Path,ABC 400 D - Takahashi the Wall Breaker,https://atcoder.jp/contests/abc400/tasks/abc400_d,400,0-1 BFS
+AtCoder,Shortest Path,ABC 232 G - Modulo Shortest Path,https://atcoder.jp/contests/abc232/tasks/abc232_g,600,Dijkstra on Implicit Graph
+AtCoder,Shortest Path,ABC 374 G - Only One Product Name,https://atcoder.jp/contests/abc374/tasks/abc374_g,600,DAG / Shortest Path / SCC
+AtCoder,MST,ABC 328 E - Modulo MST,https://atcoder.jp/contests/abc328/tasks/abc328_e,500,MST with Modulo
+AtCoder,MST,ABC 270 F - Transportation,https://atcoder.jp/contests/abc270/tasks/abc270_f,550,MST with Extra Options
+AtCoder,MST,ABC 210 D - National Railway,https://atcoder.jp/contests/abc210/tasks/abc210_d,400,MST-like / DP
+AtCoder,SCC,ABC 256 E - Takahashi's Anguish,https://atcoder.jp/contests/abc256/tasks/abc256_e,500,SCC / Functional Graph
+AtCoder,SCC,ABC 296 E - Transition Game,https://atcoder.jp/contests/abc296/tasks/abc296_e,500,SCC / Game Theory
+AtCoder,SCC,ABC 357 E - Reachability in Functional Graph,https://atcoder.jp/contests/abc357/tasks/abc357_e,500,SCC / Functional Graph
+AtCoder,SCC,ABC 245 F - Endless Walk,https://atcoder.jp/contests/abc245/tasks/abc245_f,500,SCC / Cycle Detection
+AtCoder,SCC,typical90 021 - Come Back in One Piece,https://atcoder.jp/contests/typical90/tasks/typical90_u,500,SCC
+AtCoder,Topological Sort,ABC 223 D - Restricted Permutation,https://atcoder.jp/contests/abc223/tasks/abc223_d,400,Topological Sort
+AtCoder,Topological Sort,ABC 291 E - Find Permutation,https://atcoder.jp/contests/abc291/tasks/abc291_e,500,Topological Sort / Uniqueness
+AtCoder,Topological Sort,ABC 139 E - League,https://atcoder.jp/contests/abc139/tasks/abc139_e,500,Topological Sort / Scheduling
+AtCoder,Bipartite,ABC 282 D - Make Bipartite,https://atcoder.jp/contests/abc282/tasks/abc282_d,400,Bipartite Check / Counting
+AtCoder,Bipartite,ABC 229 F - Make Bipartite,https://atcoder.jp/contests/abc229/tasks/abc229_f,500,Bipartite / DP
+AtCoder,Bipartite,ABC 302 F - Merge Set,https://atcoder.jp/contests/abc302/tasks/abc302_f,500,Bipartite / BFS
+AtCoder,Bipartite,ABC 350 D - New Friends,https://atcoder.jp/contests/abc350/tasks/abc350_d,400,Bipartite / DSU
+AtCoder,Bipartite,ABC 126 D - Even Relation,https://atcoder.jp/contests/abc126/tasks/abc126_d,400,Bipartite Coloring / Tree
+AtCoder,Bipartite,ABC 373 D - Hidden Weights,https://atcoder.jp/contests/abc373/tasks/abc373_d,400,DFS / Bipartite-like
+AtCoder,Cycle Detection,ABC 292 E - Transitivity,https://atcoder.jp/contests/abc292/tasks/abc292_e,500,Cycle Detection / BFS
+AtCoder,Cycle Detection,ABC 303 E - A Gift From the Stars,https://atcoder.jp/contests/abc303/tasks/abc303_e,500,Cycle Detection / Tree
+AtCoder,Cycle Detection,ABC 267 E - Erasing Vertices 2,https://atcoder.jp/contests/abc267/tasks/abc267_e,500,Cycle / Greedy
+AtCoder,DSU,ABC 284 C - Count Connected Components,https://atcoder.jp/contests/abc284/tasks/abc284_c,300,DSU
+AtCoder,DSU,ABC 264 F - Monochromatic Path,https://atcoder.jp/contests/abc264/tasks/abc264_f,500,DSU on Grid
+AtCoder,DSU,ABC 304 E - Good Graph,https://atcoder.jp/contests/abc304/tasks/abc304_e,500,DSU / Bridge-like
+AtCoder,DSU,ABC 350 G - Mediator,https://atcoder.jp/contests/abc350/tasks/abc350_g,600,DSU / Queries
+AtCoder,DSU,ARC 106 B - Values,https://atcoder.jp/contests/arc106/tasks/arc106_b,500,DSU with Sum
+AtCoder,DSU,ABC 293 D - Tying Ropes,https://atcoder.jp/contests/abc293/tasks/abc293_d,400,DSU / Cycle Detection
+AtCoder,DSU,ABC 292 D - Unicyclic Components,https://atcoder.jp/contests/abc292/tasks/abc292_d,400,DSU / Components
+AtCoder,DSU,ABC 269 D - Do use hexagon grid,https://atcoder.jp/contests/abc269/tasks/abc269_d,400,DSU on Grid
+AtCoder,DSU,typical90 012 - Red Painting,https://atcoder.jp/contests/typical90/tasks/typical90_l,400,DSU
+AtCoder,DSU,ABC 279 F - BOX,https://atcoder.jp/contests/abc279/tasks/abc279_f,600,DSU / Dynamic
+AtCoder,Tree DP,ABC 036 D - Painting,https://atcoder.jp/contests/abc036/tasks/abc036_d,500,Tree DP
+AtCoder,Tree DP,ABC 148 F - Playing Tag on Tree,https://atcoder.jp/contests/abc148/tasks/abc148_f,500,Tree DP / BFS
+AtCoder,Tree DP,ABC 165 F - LIS on Tree,https://atcoder.jp/contests/abc165/tasks/abc165_f,500,Tree DP / LIS
+AtCoder,Tree DP,ABC 202 E - Count Descendants,https://atcoder.jp/contests/abc202/tasks/abc202_e,500,Tree DP / Euler Tour
+AtCoder,Tree DP,ABC 133 F - Colorful Tree,https://atcoder.jp/contests/abc133/tasks/abc133_f,600,Tree DP / MO on Tree
+AtCoder,Tree DP,ABC 163 F - path pass i,https://atcoder.jp/contests/abc163/tasks/abc163_f,600,Tree DP / Counting
+AtCoder,Tree DP,ABC 261 F - Sorting Color Balls,https://atcoder.jp/contests/abc261/tasks/abc261_f,500,Tree DP / Inversions
+AtCoder,Tree DP,ABC 335 E - Non-Decreasing Colorful Path,https://atcoder.jp/contests/abc335/tasks/abc335_e,500,Tree DP / DP with Ordering
+AtCoder,Tree DP,ABC 359 F - Tree Degree Optimization,https://atcoder.jp/contests/abc359/tasks/abc359_f,550,Tree DP / Greedy
+AtCoder,Tree DP,ABC 359 G - Sum of Tree Distance,https://atcoder.jp/contests/abc359/tasks/abc359_g,600,Tree DP / Centroid
+AtCoder,Tree DP,ABC 361 E - Tree and Hamilton Path 2,https://atcoder.jp/contests/abc361/tasks/abc361_e,500,Tree DP / Diameter
+AtCoder,Tree DP,ABC 369 G - As far as possible,https://atcoder.jp/contests/abc369/tasks/abc369_g,600,Tree DP / Greedy
+AtCoder,Tree DP,ABC 385 E - Snowflake Tree,https://atcoder.jp/contests/abc385/tasks/abc385_e,450,Tree DP / Greedy
+AtCoder,Tree DP,typical90 039 - Tree Distance,https://atcoder.jp/contests/typical90/tasks/typical90_am,500,Tree DP
+AtCoder,Tree DP,typical90 026 - Independent Set on a Tree,https://atcoder.jp/contests/typical90/tasks/typical90_z,400,Tree DP / Bipartite
+AtCoder,LCA,ABC 270 C - Simple path,https://atcoder.jp/contests/abc270/tasks/abc270_c,400,LCA
+AtCoder,LCA,ABC 209 D - Collision,https://atcoder.jp/contests/abc209/tasks/abc209_d,400,LCA / Parity
+AtCoder,LCA,ABC 309 E - Family and Insurance,https://atcoder.jp/contests/abc309/tasks/abc309_e,400,LCA / DP
+AtCoder,LCA,ABC 014 D - Circuit,https://atcoder.jp/contests/abc014/tasks/abc014_4,500,LCA / Closure
+AtCoder,LCA,ABC 267 F - Exactly K Steps,https://atcoder.jp/contests/abc267/tasks/abc267_f,500,LCA / Doubling
+AtCoder,LCA,ABC 294 G - Distance Queries on a Tree,https://atcoder.jp/contests/abc294/tasks/abc294_g,550,LCA / BIT
+AtCoder,Network Flow,typical90 040 - Get More Money,https://atcoder.jp/contests/typical90/tasks/typical90_an,700,Max Flow / Min Cut
+AtCoder,Network Flow,ABC 341 F - Breakdown,https://atcoder.jp/contests/abc341/tasks/abc341_f,500,Flow / DP
+AtCoder,Graph Matchings,ABC 318 D - General Weighted Max Matching,https://atcoder.jp/contests/abc318/tasks/abc318_d,475,Bitmask DP / Max Matching
+AtCoder,Graph Matchings,ABC 354 E - Remove Pairs,https://atcoder.jp/contests/abc354/tasks/abc354_e,475,Game / Matching
+AtCoder,Graph - Special,typical90 003 - Longest Circular Road,https://atcoder.jp/contests/typical90/tasks/typical90_c,400,Tree Diameter / BFS
+AtCoder,Graph - Special,typical90 043 - Maze Challenge,https://atcoder.jp/contests/typical90/tasks/typical90_aq,600,BFS / Dijkstra-like
+AtCoder,Graph - Special,typical90 078 - Easy Graph Problem,https://atcoder.jp/contests/typical90/tasks/typical90_bz,200,Graph Degree / Counting
+AtCoder,Graph - Special,ABC 054 C - One-stroke Path,https://atcoder.jp/contests/abc054/tasks/abc054_c,400,DFS / Hamilton Path
+AtCoder,Graph - Special,ABC 073 D - joisino's travel,https://atcoder.jp/contests/abc073/tasks/abc073_d,400,Floyd-Warshall / Permutation
+AtCoder,Graph - Special,ABC 318 D - General Weighted Max Matching,https://atcoder.jp/contests/abc318/tasks/abc318_d,475,Bitmask DP on Graph
+CSES,Graph Algorithms,Counting Rooms,https://cses.fi/problemset/task/1192,Easy,BFS/Flood Fill
+CSES,Graph Algorithms,Labyrinth,https://cses.fi/problemset/task/1193,Easy,BFS Shortest Path
+CSES,Graph Algorithms,Building Roads,https://cses.fi/problemset/task/1666,Easy,Connected Components/DFS
+CSES,Graph Algorithms,Message Route,https://cses.fi/problemset/task/1667,Easy,BFS Shortest Path
+CSES,Graph Algorithms,Building Teams,https://cses.fi/problemset/task/1668,Easy,Bipartite Graph/BFS
+CSES,Graph Algorithms,Round Trip,https://cses.fi/problemset/task/1669,Easy,Cycle Detection (Undirected)
+CSES,Graph Algorithms,Monsters,https://cses.fi/problemset/task/1194,Easy,BFS Multi-source
+CSES,Graph Algorithms,Shortest Routes I,https://cses.fi/problemset/task/1671,Easy,Dijkstra
+CSES,Graph Algorithms,Shortest Routes II,https://cses.fi/problemset/task/1672,Easy,Floyd-Warshall
+CSES,Graph Algorithms,High Score,https://cses.fi/problemset/task/1673,Normal,Bellman-Ford/Negative Cycles
+CSES,Graph Algorithms,Flight Discount,https://cses.fi/problemset/task/1195,Easy,Shortest Path with Discount
+CSES,Graph Algorithms,Cycle Finding,https://cses.fi/problemset/task/1197,Normal,Bellman-Ford/Negative Cycle
+CSES,Graph Algorithms,Flight Routes,https://cses.fi/problemset/task/1196,Normal,K Shortest Paths
+CSES,Graph Algorithms,Round Trip II,https://cses.fi/problemset/task/1678,Normal,Cycle Detection (Directed)
+CSES,Graph Algorithms,Course Schedule,https://cses.fi/problemset/task/1679,Easy,Topological Sort
+CSES,Graph Algorithms,Longest Flight Route,https://cses.fi/problemset/task/1680,Normal,Topological Sort DP
+CSES,Graph Algorithms,Game Routes,https://cses.fi/problemset/task/1681,Normal,Topological Sort DP
+CSES,Graph Algorithms,Investigation,https://cses.fi/problemset/task/1202,Normal,Dijkstra + DP
+CSES,Graph Algorithms,Planets Queries I,https://cses.fi/problemset/task/1750,Normal,Binary Lifting
+CSES,Graph Algorithms,Planets Queries II,https://cses.fi/problemset/task/1160,Normal,Binary Lifting
+CSES,Graph Algorithms,Planets Cycles,https://cses.fi/problemset/task/1751,Normal,Cycle Detection/DFS
+CSES,Graph Algorithms,Road Reparation,https://cses.fi/problemset/task/1675,Easy,Minimum Spanning Tree
+CSES,Graph Algorithms,Road Construction,https://cses.fi/problemset/task/1676,Easy,Disjoint Set Union
+CSES,Graph Algorithms,Flight Routes Check,https://cses.fi/problemset/task/1682,Normal,Strongly Connected Components
+CSES,Graph Algorithms,Planets and Kingdoms,https://cses.fi/problemset/task/1683,Normal,Strongly Connected Components
+CSES,Graph Algorithms,Giant Pizza,https://cses.fi/problemset/task/1684,Normal,2-SAT
+CSES,Graph Algorithms,Coin Collector,https://cses.fi/problemset/task/1686,Normal,SCC + DP
+CSES,Graph Algorithms,Mail Delivery,https://cses.fi/problemset/task/1691,Normal,Eulerian Circuit
+CSES,Graph Algorithms,De Bruijn Sequence,https://cses.fi/problemset/task/1692,Normal,De Bruijn Graph/Eulerian
+CSES,Graph Algorithms,Teleporters Path,https://cses.fi/problemset/task/1693,Normal,Eulerian Path
+CSES,Graph Algorithms,Hamiltonian Flights,https://cses.fi/problemset/task/1690,Normal,Hamiltonian Path DP
+CSES,Graph Algorithms,Knight's Tour,https://cses.fi/problemset/task/1689,Normal,Backtracking
+CSES,Graph Algorithms,Download Speed,https://cses.fi/problemset/task/1694,Normal,Max Flow
+CSES,Graph Algorithms,Police Chase,https://cses.fi/problemset/task/1695,Normal,Min Cut/Max Flow
+CSES,Graph Algorithms,School Dance,https://cses.fi/problemset/task/1696,Normal,Max Bipartite Matching
+CSES,Graph Algorithms,Distinct Routes,https://cses.fi/problemset/task/1711,Normal,Max Flow/Edge-Disjoint Paths
+CSES,Tree Algorithms,Subordinates,https://cses.fi/problemset/task/1674,Easy,DFS/Tree DP
+CSES,Tree Algorithms,Tree Matching,https://cses.fi/problemset/task/1130,Normal,Tree DP
+CSES,Tree Algorithms,Tree Diameter,https://cses.fi/problemset/task/1131,Easy,DFS/BFS Two Pass
+CSES,Tree Algorithms,Tree Distances I,https://cses.fi/problemset/task/1132,Normal,Rerooting DP
+CSES,Tree Algorithms,Tree Distances II,https://cses.fi/problemset/task/1133,Normal,Rerooting DP
+CSES,Tree Algorithms,Company Queries I,https://cses.fi/problemset/task/1687,Easy,Binary Lifting
+CSES,Tree Algorithms,Company Queries II,https://cses.fi/problemset/task/1688,Easy,LCA Binary Lifting
+CSES,Tree Algorithms,Distance Queries,https://cses.fi/problemset/task/1135,Normal,LCA
+CSES,Tree Algorithms,Counting Paths,https://cses.fi/problemset/task/1136,Normal,Difference Array + LCA
+CSES,Tree Algorithms,Subtree Queries,https://cses.fi/problemset/task/1137,Normal,Euler Tour + BIT
+CSES,Tree Algorithms,Path Queries,https://cses.fi/problemset/task/1138,Normal,Euler Tour + BIT
+CSES,Tree Algorithms,Path Queries II,https://cses.fi/problemset/task/2134,Normal,HLD
+CSES,Tree Algorithms,Distinct Colors,https://cses.fi/problemset/task/1139,Normal,Small-to-Large Merging
+CSES,Tree Algorithms,Finding a Centroid,https://cses.fi/problemset/task/2079,Normal,Centroid Decomposition
+CSES,Tree Algorithms,Fixed-Length Paths I,https://cses.fi/problemset/task/2080,Normal,Centroid Decomposition
+CSES,Tree Algorithms,Fixed-Length Paths II,https://cses.fi/problemset/task/2081,Normal,Centroid Decomposition
+CSES,Advanced Graph,Nearest Shops,https://cses.fi/problemset/task/2081,Normal,Dijkstra/Multi-source
+CSES,Advanced Graph,Prüfer Code,https://cses.fi/problemset/task/1755,Easy,Tree Construction
+CSES,Advanced Graph,Course Schedule II,https://cses.fi/problemset/task/1757,Normal,Topological Sort
+CSES,Advanced Graph,Acyclic Graph Edges,https://cses.fi/problemset/task/1758,Normal,Graph Orientation
+CSES,Advanced Graph,Strongly Connected Edges,https://cses.fi/problemset/task/2177,Normal,Bridge Finding
+CSES,Advanced Graph,Even Outdegree Edges,https://cses.fi/problemset/task/2179,Normal,Graph Orientation
+CSES,Advanced Graph,Graph Girth,https://cses.fi/problemset/task/1707,Normal,BFS Cycle Finding
+CSES,Advanced Graph,Network Breakdown,https://cses.fi/problemset/task/1698,Hard,DSU/Reverse Time
+CSES,Advanced Graph,Tree Isomorphism I,https://cses.fi/problemset/task/1701,Normal,Tree Hashing
+CSES,Advanced Graph,Tree Isomorphism II,https://cses.fi/problemset/task/1702,Normal,Tree Hashing/Centroid
+CSES,Advanced Graph,Critical Cities,https://cses.fi/problemset/task/1703,Hard,Articulation Points
+CSES,Advanced Graph,Visiting Cities,https://cses.fi/problemset/task/1704,Hard,Shortest Path DAG
+CSES,Advanced Graph,Graph Coloring,https://cses.fi/problemset/task/1705,Hard,Graph Coloring
+CSES,Advanced Graph,Forbidden Cities,https://cses.fi/problemset/task/1709,Hard,Articulation Points
+CSES,Advanced Graph,New Flight Routes,https://cses.fi/problemset/task/1711,Normal,Strongly Connected Components
+UVa,Graph Traversal,10004 - Bicoloring,https://onlinejudge.org/external/100/10004.pdf,Easy,Bipartite Graph Check (BFS/DFS)
+UVa,Graph Traversal,10009 - All Roads Lead Where?,https://onlinejudge.org/external/100/10009.pdf,Medium,BFS/Shortest Path
+UVa,Graph Traversal,10000 - Longest Paths,https://onlinejudge.org/external/100/10000.pdf,Medium,Longest Path in DAG (DFS/DP)
+UVa,Graph Traversal,10044 - Erdos Numbers,https://onlinejudge.org/external/100/10044.pdf,Medium,BFS
+UVa,Shortest Path,10048 - Audiophobia,https://onlinejudge.org/external/100/10048.pdf,Medium,MST + Path (Kruskal/DFS)
+UVa,Shortest Path,10067 - Playing with Wheels,https://onlinejudge.org/external/100/10067.pdf,Medium,BFS (Implicit Graph)
+UVa,MST,10099 - The Tourist Guide,https://onlinejudge.org/external/100/10099.pdf,Medium,Maximin Path (MST/Floyd)
+UVa,Graph Traversal,10116 - Robot Motion,https://onlinejudge.org/external/101/10116.pdf,Easy,DFS Simulation
+UVa,Graph Traversal,10171 - Meeting Prof. Miguel,https://onlinejudge.org/external/101/10171.pdf,Medium,BFS/Floyd-Warshall
+UVa,Graph Traversal,10102 - The path in the colored field,https://onlinejudge.org/external/101/10102.pdf,Easy,BFS (Multi-source)
+UVa,Graph Traversal,10129 - Play on Words,https://onlinejudge.org/external/101/10129.pdf,Medium,Eulerian Path
+UVa,Shortest Path,10187 - From Dusk Till Dawn,https://onlinejudge.org/external/101/10187.pdf,Medium,Dijkstra
+UVa,Graph Traversal,10285 - Longest Snowboard,https://onlinejudge.org/external/102/10285.pdf,Medium,DP on DAG/DFS
+UVa,Topological Sort,10305 - Ordering Tasks,https://onlinejudge.org/external/103/10305.pdf,Easy,Topological Sort
+UVa,MST,10307 - Killing Aliens in Borg Maze,https://onlinejudge.org/external/103/10307.pdf,Medium,MST + BFS
+UVa,Tree,10308 - Roads in the North,https://onlinejudge.org/external/103/10308.pdf,Medium,Tree Diameter (DFS)
+UVa,MST,10369 - Arctic Network,https://onlinejudge.org/external/103/10369.pdf,Medium,MST (Kruskal)
+UVa,MST,10397 - Connect the Campus,https://onlinejudge.org/external/103/10397.pdf,Medium,MST
+UVa,Graph Theory,104 - Arbitrage,https://onlinejudge.org/external/100/104.pdf,Medium,Floyd-Warshall/DP
+UVa,MST,10462 - Is There A Second Way Left?,https://onlinejudge.org/external/104/10462.pdf,Medium,Second Best MST
+UVa,MST,10600 - ACM Contest and Blackout,https://onlinejudge.org/external/106/10600.pdf,Medium,MST + Second Best MST
+UVa,Shortest Path,10610 - Gopher and Hawks,https://onlinejudge.org/external/106/10610.pdf,Medium,BFS/Dijkstra
+UVa,Graph Traversal,10653 - Bombs! NO they are not!!,https://onlinejudge.org/external/106/10653.pdf,Medium,BFS
+UVa,Graph Traversal,10959 - The Party,https://onlinejudge.org/external/109/10959.pdf,Medium,BFS
+UVa,Bipartite,11080 - Place the Guards,https://onlinejudge.org/external/110/11080.pdf,Medium,Bipartite Graph (BFS)
+UVa,Graph Traversal,11094 - Continents,https://onlinejudge.org/external/110/11094.pdf,Medium,DFS Flood Fill
+UVa,Graph Traversal,11101 - Mall Mania,https://onlinejudge.org/external/111/11101.pdf,Medium,BFS (Multi-source)
+UVa,MST,11228 - Transportation System,https://onlinejudge.org/external/112/11228.pdf,Medium,MST
+UVa,Bipartite,11396 - Claw Decomposition,https://onlinejudge.org/external/113/11396.pdf,Medium,Bipartite Graph Check
+UVa,SCC,11504 - Dominos,https://onlinejudge.org/external/115/11504.pdf,Medium,SCC (Kosaraju/Tarjan)
+UVa,Max Flow,11506 - Angry Programmer,https://onlinejudge.org/external/115/11506.pdf,Hard,Min Cut / Max Flow
+UVa,Graph Traversal,11518 - Dominos 2,https://onlinejudge.org/external/115/11518.pdf,Easy,DFS
+UVa,Graph Traversal,11561 - Getting Gold,https://onlinejudge.org/external/115/11561.pdf,Easy,DFS/BFS
+UVa,MST,11631 - Dark roads,https://onlinejudge.org/external/116/11631.pdf,Medium,MST
+UVa,Topological Sort,11686 - Pick Up Sticks,https://onlinejudge.org/external/116/11686.pdf,Medium,Topological Sort
+UVa,MST,11733 - Airports,https://onlinejudge.org/external/117/11733.pdf,Medium,MST
+UVa,SCC,11709 - Trust Groups,https://onlinejudge.org/external/117/11709.pdf,Medium,SCC
+UVa,MST,11710 - Expensive Subway,https://onlinejudge.org/external/117/11710.pdf,Medium,MST
+UVa,SCC,11770 - Lighting Away,https://onlinejudge.org/external/117/11770.pdf,Medium,SCC (Kosaraju)
+UVa,Graph Traversal,11902 - Dominator,https://onlinejudge.org/external/119/11902.pdf,Hard,DFS/Dominators
+UVa,Graph Traversal,11953 - Battleships,https://onlinejudge.org/external/119/11953.pdf,Easy,DFS Flood Fill
+UVa,Graph Theory,115 - Climbing Trees,https://onlinejudge.org/external/100/115.pdf,Medium,LCA / Tree
+UVa,Eulerian,117 - The Postal Worker Rings Once,https://onlinejudge.org/external/100/117.pdf,Medium,Eulerian Circuit
+UVa,Topological Sort,124 - Following Orders,https://onlinejudge.org/external/100/124.pdf,Medium,Topological Sort
+UVa,Graph Theory,125 - Numbering Paths,https://onlinejudge.org/external/100/125.pdf,Medium,Floyd-Warshall/DP
+UVa,Graph Theory,193 - Graph Coloring,https://onlinejudge.org/external/100/193.pdf,Hard,Graph Coloring (Backtracking)
+UVa,Topological Sort,196 - Spreadsheet,https://onlinejudge.org/external/100/196.pdf,Medium,Topological Sort
+UVa,Graph Traversal,280 - Vertex,https://onlinejudge.org/external/100/280.pdf,Easy,DFS
+UVa,Graph Traversal,336 - A Node Too Far,https://onlinejudge.org/external/100/336.pdf,Medium,BFS
+UVa,Graph Traversal,352 - The Seasonal War,https://onlinejudge.org/external/100/352.pdf,Easy,DFS Flood Fill
+UVa,Graph Traversal,383 - Shipping Routes,https://onlinejudge.org/external/100/383.pdf,Medium,BFS
+UVa,Graph Traversal,429 - Word Transformation,https://onlinejudge.org/external/100/429.pdf,Medium,BFS
+UVa,Graph Traversal,439 - Knight Moves,https://onlinejudge.org/external/100/439.pdf,Easy,BFS
+UVa,Graph Connectivity,459 - Graph Connectivity,https://onlinejudge.org/external/100/459.pdf,Easy,DFS/Union-Find
+UVa,Graph Traversal,469 - Wetlands of Florida,https://onlinejudge.org/external/100/469.pdf,Medium,DFS Flood Fill
+UVa,Shortest Path,532 - Dungeon Master,https://onlinejudge.org/external/100/532.pdf,Medium,BFS (3D)
+UVa,MST,534 - Frogger,https://onlinejudge.org/external/100/534.pdf,Medium,Minimax Path (MST)
+UVa,MST,544 - Heavy Cargo,https://onlinejudge.org/external/100/544.pdf,Medium,Maximin Path (MST)
+UVa,Shortest Path,558 - Wormholes,https://onlinejudge.org/external/100/558.pdf,Medium,Bellman-Ford (Negative Cycle)
+UVa,Shortest Path,567 - Risk,https://onlinejudge.org/external/100/567.pdf,Medium,BFS/Floyd-Warshall
+UVa,Graph Traversal,571 - Jugs,https://onlinejudge.org/external/100/571.pdf,Medium,BFS (State Space)
+UVa,Graph Traversal,599 - The Forrest for the Trees,https://onlinejudge.org/external/100/599.pdf,Easy,DFS
+UVa,Graph Traversal,657 - The die is cast,https://onlinejudge.org/external/100/657.pdf,Medium,DFS Flood Fill
+UVa,Shortest Path,762 - We Ship Cheap,https://onlinejudge.org/external/100/762.pdf,Medium,BFS
+UVa,Graph Traversal,784 - Maze Exploration,https://onlinejudge.org/external/100/784.pdf,Easy,DFS Flood Fill
+UVa,Graph Traversal,785 - Grid Colouring,https://onlinejudge.org/external/100/785.pdf,Easy,DFS Flood Fill
+UVa,Max Flow,820 - Internet Bandwidth,https://onlinejudge.org/external/100/820.pdf,Medium,Max Flow (Edmonds-Karp)
+UVa,MST,908 - Re-connecting Computer Sites,https://onlinejudge.org/external/100/908.pdf,Medium,MST
+UVa,Graph Traversal,924 - Spreading The News,https://onlinejudge.org/external/100/924.pdf,Medium,BFS
+UVa,Shortest Path,10150 - Doublets,https://onlinejudge.org/external/101/10150.pdf,Medium,BFS
+UVa,Bipartite,10505 - Montesco vs Capuleto,https://onlinejudge.org/external/105/10505.pdf,Medium,Bipartite Graph
+UVa,Max Flow,10330 - Power Transmission,https://onlinejudge.org/external/103/10330.pdf,Medium,Max Flow
+UVa,Graph Traversal,10336 - Rank the Languages,https://onlinejudge.org/external/103/10336.pdf,Easy,DFS Flood Fill
+UVa,Shortest Path,10342 - Always Late,https://onlinejudge.org/external/103/10342.pdf,Medium,Second Best Shortest Path
+UVa,Max Flow,10349 - Antenna Placement,https://onlinejudge.org/external/103/10349.pdf,Medium,Bipartite Matching
+UVa,Shortest Path,10354 - Avoiding Your Boss,https://onlinejudge.org/external/103/10354.pdf,Hard,Dijkstra
+UVa,Shortest Path,10356 - Rough Roads,https://onlinejudge.org/external/103/10356.pdf,Medium,Dijkstra (State Graph)
+UVa,Shortest Path,10480 - Sabotage,https://onlinejudge.org/external/104/10480.pdf,Medium,Min Cut / Max Flow
+UVa,Shortest Path,10801 - Lift Hopping,https://onlinejudge.org/external/108/10801.pdf,Medium,Dijkstra
+UVa,Shortest Path,1112 - Mice and Maze,https://onlinejudge.org/external/100/1112.pdf,Medium,Dijkstra
+UVa,Shortest Path,12101 - Prime Path,https://onlinejudge.org/external/121/12101.pdf,Medium,BFS + Sieve
+SPOJ,Tree,PT07Y - Is it a tree,https://www.spoj.com/problems/PT07Y/,Easy,Tree Detection (DFS/Union-Find)
+SPOJ,Tree,PT07Z - Longest path in a tree,https://www.spoj.com/problems/PT07Z/,Medium,Tree Diameter (Double DFS/BFS)
+SPOJ,Tree,BENEFACT - The Benefactor,https://www.spoj.com/problems/BENEFACT/,Medium,Tree Diameter (Double DFS)
+SPOJ,Tree,LABYR1 - Labyrinth,https://www.spoj.com/problems/LABYR1/,Medium,Tree Diameter (Double BFS)
+SPOJ,Graph Traversal,BUGLIFE - A Bug's Life,https://www.spoj.com/problems/BUGLIFE/,Easy,Bipartite Graph Check (BFS/DFS)
+SPOJ,Graph Traversal,AKBAR - Akbar The Great,https://www.spoj.com/problems/AKBAR/,Medium,BFS (Multi-source)
+SPOJ,Graph Traversal,HERDING - Herding,https://www.spoj.com/problems/HERDING/,Easy,DFS/BFS (Flood Fill)
+SPOJ,Graph Traversal,MAKETREE - Hierarchy,https://www.spoj.com/problems/MAKETREE/,Easy,Tree Building (DFS)
+SPOJ,Shortest Path,BITMAP - Bitmap,https://www.spoj.com/problems/BITMAP/,Medium,Multi-source BFS
+SPOJ,Shortest Path,CCHESS - Costly Chess,https://www.spoj.com/problems/CCHESS/,Medium,Dijkstra (Knight Moves)
+SPOJ,Shortest Path,EZDIJKST - Easy Dijkstra,https://www.spoj.com/problems/EZDIJKST/,Easy,Dijkstra
+SPOJ,Shortest Path,MICEMAZE - Mice and Maze,https://www.spoj.com/problems/MICEMAZE/,Medium,Dijkstra
+SPOJ,Shortest Path,MLASERP - Laser Phones,https://www.spoj.com/problems/MLASERP/,Medium,BFS (0-1 BFS)
+SPOJ,Shortest Path,NAKANJ - Minimum Knight Moves,https://www.spoj.com/problems/NAKANJ/,Easy,BFS (Knight Moves)
+SPOJ,Shortest Path,ONEZERO - One Zero,https://www.spoj.com/problems/ONEZERO/,Medium,BFS
+SPOJ,Shortest Path,PPATH - Prime Path,https://www.spoj.com/problems/PPATH/,Medium,BFS + Sieve
+SPOJ,Shortest Path,SHPATH - The Shortest Path,https://www.spoj.com/problems/SHPATH/,Medium,Dijkstra
+SPOJ,Shortest Path,SAMER08A - Almost Shortest Path,https://www.spoj.com/problems/SAMER08A/,Hard,Dijkstra (Edge Removal)
+SPOJ,Shortest Path,KATHTHI - KATHTHI,https://www.spoj.com/problems/KATHTHI/,Medium,0-1 BFS
+SPOJ,MST,CSTREET - Cobbled streets,https://www.spoj.com/problems/CSTREET/,Easy,MST (Kruskal/Prim)
+SPOJ,DSU,IAPCR2F - Army,https://www.spoj.com/problems/IAPCR2F/,Medium,DSU
+SPOJ,Max Flow,WATER - Water among Cubes,https://www.spoj.com/problems/WATER/,Hard,Max Flow / BFS
+LightOJ,BFS/DFS,1009 - Back to Underworld,https://lightoj.com/problem/back-to-underworld,Easy,BFS/Bipartite
+LightOJ,BFS/DFS,1012 - Guilty Prince,https://lightoj.com/problem/guilty-prince,Easy,DFS Flood Fill
+LightOJ,BFS/DFS,1039 - A Toy Company,https://lightoj.com/problem/a-toy-company,Medium,BFS (State Space)
+LightOJ,BFS/DFS,1046 - Rider,https://lightoj.com/problem/rider,Medium,BFS (Multi-source)
+LightOJ,BFS/DFS,1049 - One Way Roads,https://lightoj.com/problem/one-way-roads,Medium,DFS / Graph Orientation
+LightOJ,BFS/DFS,1055 - Going Together,https://lightoj.com/problem/going-together,Medium Hard,BFS (Multi-agent)
+LightOJ,BFS/DFS,1066 - Gathering Food,https://lightoj.com/problem/gathering-food,Medium,BFS
+LightOJ,BFS/DFS,1094 - Farthest Nodes in a Tree,https://lightoj.com/problem/farthest-nodes-in-a-tree,Easy,Tree Diameter (DFS)
+LightOJ,BFS/DFS,1111 - Best Picnic Ever,https://lightoj.com/problem/best-picnic-ever,Medium,BFS (Multi-source)
+LightOJ,BFS/DFS,1141 - Number Transformation,https://lightoj.com/problem/number-transformation,Medium,BFS
+LightOJ,BFS/DFS,1174 - Commandos,https://lightoj.com/problem/commandos,Medium,BFS (Double pass)
+LightOJ,BFS/DFS,1175 - Jane and the Frost Giants,https://lightoj.com/problem/jane-and-the-frost-giants,Medium,BFS (Multi-source)
+LightOJ,BFS/DFS,1238 - Power Puff Girls,https://lightoj.com/problem/power-puff-girls,Medium,BFS (Multi-source)
+LightOJ,BFS/DFS,1257 - Farthest Nodes in a Tree (II),https://lightoj.com/problem/farthest-nodes-in-a-tree-ii,Medium,Tree DP / Diameter
+LightOJ,BFS/DFS,1263 - Equalizing Money,https://lightoj.com/problem/equalizing-money,Medium,DFS
+LightOJ,BFS/DFS,1337 - The Crystal Maze,https://lightoj.com/problem/the-crystal-maze,Medium,DFS/BFS
+LightOJ,BFS/DFS,1357 - Corrupted Friendship,https://lightoj.com/problem/corrupted-friendship,Medium Hard,DFS / Tree
+LightOJ,BFS/DFS,1377 - Blade and Sword,https://lightoj.com/problem/blade-and-sword,Medium Hard,BFS
+LightOJ,BFS/DFS,1412 - Visiting Islands,https://lightoj.com/problem/visiting-islands,Medium Hard,DFS/BFS
+LightOJ,BFS/DFS,1437 - Beehives,https://lightoj.com/problem/beehives,Medium,BFS/DFS
+LightOJ,SCC/Topo,1003 - Drunk,https://lightoj.com/problem/drunk,Medium,Cycle Detection (DFS/Topo)
+LightOJ,SCC/Topo,1034 - Hit the Light Switches,https://lightoj.com/problem/hit-the-light-switches,Medium,SCC (Kosaraju)
+LightOJ,SCC/Topo,1168 - Wishing Snake,https://lightoj.com/problem/wishing-snake,Medium Hard,SCC
+LightOJ,SCC/Topo,1210 - Efficient Traffic System,https://lightoj.com/problem/efficient-traffic-system,Medium Hard,SCC
+LightOJ,SCC/Topo,1390 - Weight Comparison,https://lightoj.com/problem/weight-comparison,Hard,SCC
+LightOJ,SCC/Topo,1406 - Assassin's Creed,https://lightoj.com/problem/assassins-creed,Medium Hard,SCC + Bitmask DP
+LightOJ,SCC/Topo,1417 - Forwarding Emails,https://lightoj.com/problem/forwarding-emails,Medium Hard,SCC / DFS
+LightOJ,SCC/Topo,1429 - Assassin's Creed (II),https://lightoj.com/problem/assassins-creed-ii,Hard,SCC
+LightOJ,Bridge/AP,1026 - Critical Links,https://lightoj.com/problem/critical-links,Medium,Bridge (Tarjan DFS)
+LightOJ,Bridge/AP,1063 - Ant Hills,https://lightoj.com/problem/ant-hills,Medium Hard,Articulation Point
+LightOJ,Bridge/AP,1108 - Instant View of Big Bang,https://lightoj.com/problem/instant-view-of-big-bang,Hard,Negative Cycle (Bellman-Ford)
+LightOJ,Shortest Path,1002 - Country Roads,https://lightoj.com/problem/country-roads,Easy,Dijkstra Variant (Minimax)
+LightOJ,Shortest Path,1019 - Brush (V),https://lightoj.com/problem/brush-5,Easy,Dijkstra
+LightOJ,Shortest Path,1099 - Not the Best,https://lightoj.com/problem/not-the-best,Medium Hard,Second Best Shortest Path
+LightOJ,MST,1029 - Civil and Evil Engineer,https://lightoj.com/problem/civil-and-evil-engineer,Medium,MST
+LightOJ,MST,1040 - Donation,https://lightoj.com/problem/donation,Medium,MST
+LightOJ,MST,1041 - Road Construction,https://lightoj.com/problem/road-construction,Medium,MST
+LightOJ,MST,1059 - Air Ports,https://lightoj.com/problem/air-ports,Medium,MST
+LightOJ,MST,1123 - Trail Maintenance,https://lightoj.com/problem/trail-maintenance,Medium,MST (Dynamic)
+Timus,Graph Traversal,1004 - Sightseeing Trip,https://acm.timus.ru/problem.aspx?num=1004,Medium,Min Cycle (Floyd-Warshall)
+Timus,Topological Sort,1022 - Genealogical Tree,https://acm.timus.ru/problem.aspx?num=1022,Easy,Topological Sort
+Timus,Graph Traversal,1033 - Labyrinth,https://acm.timus.ru/problem.aspx?num=1033,Medium,DFS/BFS
+Timus,Tree,1056 - Centers of the Net,https://acm.timus.ru/problem.aspx?num=1056,Medium,Tree Centers
+Timus,Tree,1069 - Prufer Code,https://acm.timus.ru/problem.aspx?num=1069,Medium,Prufer Code / Tree
+Timus,Shortest Path,1072 - Routing,https://acm.timus.ru/problem.aspx?num=1072,Medium,Shortest Path
+Timus,Graph Theory,1076 - Trash,https://acm.timus.ru/problem.aspx?num=1076,Medium,Assignment Problem (Hungarian)
+Timus,Graph Traversal,1077 - Travelling Tours,https://acm.timus.ru/problem.aspx?num=1077,Medium,DFS / Components
+Timus,Bipartite,1080 - Map Coloring,https://acm.timus.ru/problem.aspx?num=1080,Medium,Bipartite Check
+Timus,Shortest Path,1085 - Meeting,https://acm.timus.ru/problem.aspx?num=1085,Medium,Multi-source BFS
+Timus,Matching,1099 - Work Scheduling,https://acm.timus.ru/problem.aspx?num=1099,Hard,General Matching (Edmonds)
+Timus,Bipartite,1106 - Two Teams,https://acm.timus.ru/problem.aspx?num=1106,Easy,Bipartite Graph
+Timus,Matching,1109 - Conference,https://acm.timus.ru/problem.aspx?num=1109,Medium,Bipartite Matching
+Timus,Shortest Path,1119 - Metro,https://acm.timus.ru/problem.aspx?num=1119,Medium,DP/Shortest Path
+Timus,Bipartite,1128 - Partition into Groups,https://acm.timus.ru/problem.aspx?num=1128,Medium,Bipartite Graph
+Timus,Eulerian,1137 - Bus Routes,https://acm.timus.ru/problem.aspx?num=1137,Hard,Eulerian Circuit
+Timus,Tree,1145 - Rope in the Labyrinth,https://acm.timus.ru/problem.aspx?num=1145,Medium,Tree Diameter
+Timus,Bipartite,1156 - Two Rounds,https://acm.timus.ru/problem.aspx?num=1156,Medium,Bipartite Graph
+Timus,MST,1160 - Network,https://acm.timus.ru/problem.aspx?num=1160,Medium,MST
+Timus,Shortest Path,1162 - Currency Exchange,https://acm.timus.ru/problem.aspx?num=1162,Medium,Bellman-Ford
+Timus,MST,1272 - Non-Yekaterinburg Subway,https://acm.timus.ru/problem.aspx?num=1272,Medium,MST
+Timus,Max Flow,1277 - Cops and Thieves,https://acm.timus.ru/problem.aspx?num=1277,Hard,Max Flow / Min Cut
+Timus,Topological Sort,1280 - Topological Sorting,https://acm.timus.ru/problem.aspx?num=1280,Easy,Topological Sort
+Timus,Shortest Path,1450 - Russian Pipelines,https://acm.timus.ru/problem.aspx?num=1450,Medium,Shortest Path (DAG)
+Timus,MST,1709 - Penguin-Avia,https://acm.timus.ru/problem.aspx?num=1709,Medium,MST
+Timus,Shortest Path,1806 - Mobile Telegraphs,https://acm.timus.ru/problem.aspx?num=1806,Hard,Shortest Path (Optimization)
+Timus,Graph Traversal,1837 - Isenbaev's Number,https://acm.timus.ru/problem.aspx?num=1837,Easy,BFS
+Timus,MST,1982 - Electrification Plan,https://acm.timus.ru/problem.aspx?num=1982,Easy,MST
+USACO,Silver Graph Traversal,Closing the Farm (Silver),http://www.usaco.org/index.php?page=viewproblem2&cpid=644,Easy,Connected Components/DFS
+USACO,Silver Graph Traversal,Moocast (Silver),http://www.usaco.org/index.php?page=viewproblem2&cpid=668,Easy,BFS/DFS/Connected Components
+USACO,Silver Graph Traversal,Fence Planning,http://www.usaco.org/index.php?page=viewproblem2&cpid=944,Easy,Connected Components
+USACO,Silver Graph Traversal,Wormhole Sort,http://www.usaco.org/index.php?page=viewproblem2&cpid=992,Normal,Binary Search + Connected Components
+USACO,Silver Graph Traversal,Moo Route II,http://www.usaco.org/index.php?page=viewproblem2&cpid=1304,Normal,BFS
+USACO,Silver Graph Traversal,Connecting Two Barns,http://www.usaco.org/index.php?page=viewproblem2&cpid=1159,Normal,Connected Components
+USACO,Silver Graph Traversal,Redistributing Gifts,http://usaco.org/index.php?page=viewproblem2&cpid=1206,Normal,DFS
+USACO,Silver Graph Traversal,The Great Revegetation,http://www.usaco.org/index.php?page=viewproblem2&cpid=920,Easy,Bipartite Graph
+USACO,Gold Shortest Paths,Piggyback,http://www.usaco.org/index.php?page=viewproblem2&cpid=491,Easy,BFS
+USACO,Gold Shortest Paths,Lasers and Mirrors,http://www.usaco.org/index.php?page=viewproblem2&cpid=671,Normal,BFS
+USACO,Gold Shortest Paths,Cow At Large,http://www.usaco.org/index.php?page=viewproblem2&cpid=790,Normal,BFS
+USACO,Gold Shortest Paths,Replication,http://www.usaco.org/index.php?page=viewproblem2&cpid=1065,Hard,BFS
+USACO,Gold Shortest Paths,A Pie for a Pie,http://www.usaco.org/index.php?page=viewproblem2&cpid=765,Hard,BFS
+USACO,Gold DSU,Closing the Farm (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=646,Easy,DSU
+USACO,Gold DSU,Mootube,http://www.usaco.org/index.php?page=viewproblem2&cpid=789,Easy,DSU
+USACO,Gold DSU,Moocast (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=669,Easy,DSU/Binary Search
+USACO,Gold DSU,Strongest Friendship Group,http://www.usaco.org/index.php?page=viewproblem2&cpid=1259,Hard,DSU/Merging
+USACO,Gold DSU,Ski Course Rating,http://www.usaco.org/index.php?page=viewproblem2&cpid=384,Hard,DSU
+USACO,Gold Shortest Paths,Milk Pumping,http://www.usaco.org/index.php?page=viewproblem2&cpid=969,Easy,Shortest Path
+USACO,Gold Shortest Paths,Why Did the Cow Cross the Road,http://www.usaco.org/index.php?page=viewproblem2&cpid=717,Easy,Shortest Path
+USACO,Gold Shortest Paths,Fine Dining,http://www.usaco.org/index.php?page=viewproblem2&cpid=861,Easy,Shortest Path
+USACO,Gold Shortest Paths,Shortcut,http://www.usaco.org/index.php?page=viewproblem2&cpid=899,Normal,Shortest Path Tree
+USACO,Gold Shortest Paths,Moortal Cowmbat,http://www.usaco.org/index.php?page=viewproblem2&cpid=971,Hard,APSP + DP
+USACO,Gold MST,Superbull,http://www.usaco.org/index.php?page=viewproblem2&cpid=531,Easy,MST
+USACO,Gold MST,Fenced In,http://www.usaco.org/index.php?page=viewproblem2&cpid=623,Easy,MST
+USACO,Gold MST,I Would Walk 500 Miles,http://www.usaco.org/index.php?page=viewproblem2&cpid=946,Normal,MST
+USACO,Gold MST,Moo Network,http://usaco.org/index.php?page=viewproblem2&cpid=1211,Normal,MST
+USACO,Gold MST,Portals,http://www.usaco.org/index.php?page=viewproblem2&cpid=1138,Normal,MST
+USACO,Gold SCC,Grass Cownoisseur,http://www.usaco.org/index.php?page=viewproblem2&cpid=516,Normal,SCC + DAG DP
+HackerRank,Graph Theory,Breadth First Search: Shortest Reach,https://www.hackerrank.com/challenges/bfsshortreach,Medium,BFS
+HackerRank,Graph Theory,Roads and Libraries,https://www.hackerrank.com/challenges/roads-and-libraries,Medium,DFS/Connected Components
+HackerRank,Graph Theory,Journey to the Moon,https://www.hackerrank.com/challenges/journey-to-the-moon,Medium,DFS/Connected Components
+HackerRank,Graph Theory,Synchronous Shopping,https://www.hackerrank.com/challenges/synchronous-shopping,Medium,BFS/Bitmask
+HackerRank,Graph Theory,Subset Component,https://www.hackerrank.com/challenges/subset-component,Hard,Bitmask/Graph
+HackerRank,Graph Theory,Frog in Maze,https://www.hackerrank.com/challenges/frog-in-maze,Hard,BFS/Probability
+HackerRank,Graph Theory,Kruskal (MST): Really Special Subtree,https://www.hackerrank.com/challenges/kruskalmstrsub,Medium,MST/Kruskal
+HackerRank,Graph Theory,Prim's (MST): Special Subtree,https://www.hackerrank.com/challenges/primsmstsub,Medium,MST/Prim
+HackerRank,Graph Theory,Even Tree,https://www.hackerrank.com/challenges/even-tree,Medium,DFS/Tree DP
+HackerRank,Graph Theory,Snakes and Ladders: The Quickest Way Up,https://www.hackerrank.com/challenges/the-quickest-way-up,Medium,BFS/Shortest Path
+HackerRank,Graph Theory,Dijkstra: Shortest Reach 2,https://www.hackerrank.com/challenges/dijkstrashortreach,Hard,Dijkstra
+HackerRank,Graph Theory,The Story of a Tree,https://www.hackerrank.com/challenges/the-story-of-a-tree,Medium,DFS/Probability
+HackerRank,Graph Theory,Matrix,https://www.hackerrank.com/challenges/matrix,Hard,DSU/MST
+HackerRank,Graph Theory,Components in a graph,https://www.hackerrank.com/challenges/components-in-graph,Medium,DSU
+HackerRank,Graph Theory,Rust & Murderer,https://www.hackerrank.com/challenges/rust-murderer,Hard,BFS
+HackerRank,Graph Theory,Kingdom Division,https://www.hackerrank.com/challenges/kingdom-division,Hard,Tree DP
+HackerRank,Graph Theory,Flood Fill,https://www.hackerrank.com/challenges/flood-fill,Medium,DFS/BFS
+HackerRank,Graph Theory,Roads in HackerLand,https://www.hackerrank.com/challenges/roads-in-hackerland,Hard,MST/LCA
+HackerRank,Graph Theory,Jack goes to Rapture,https://www.hackerrank.com/challenges/jack-goes-to-rapture,Medium,Dijkstra
+HackerRank,Graph Theory,Minimum Penalty Path,https://www.hackerrank.com/challenges/minimum-penalty-path,Medium,BFS/Bitmask
+HackerRank,Graph Theory,Coprime Paths,https://www.hackerrank.com/challenges/coprime-paths,Hard,LCA/Number Theory
+HackerRank,Graph Theory,Beautiful Graph,https://www.hackerrank.com/challenges/beautiful-graph,Medium,Bipartite/DFS
+HackerRank,Graph Theory,The Value of Friendship,https://www.hackerrank.com/challenges/value-of-friendship,Medium,DSU
+HackerRank,Graph Theory,Torque and Development,https://www.hackerrank.com/challenges/torque-and-development,Medium,DFS/Components
+CodeChef,Graph Theory,Capture Regions,https://www.codechef.com/problems/PREP35,Medium,BFS/DFS
+CodeChef,Graph Theory,Chef Calculates Network Delay,https://www.codechef.com/problems/KXTUW01,Medium,Shortest Path/Dijkstra
+CodeChef,Graph Theory,Line Mixing,https://www.codechef.com/problems/LINEMIX,Hard,Graphs/Expected Value
+CodeChef,Graph Theory,Social Network,https://www.codechef.com/problems/SOCIALNET,Medium,DSU
+CodeChef,Graph Theory,BIPOLLY,https://www.codechef.com/problems/BIPOLLY,Medium,Bipartite Graph
+CodeChef,Graph Theory,Magic Trick,https://www.codechef.com/problems/MAGICTRICK,Medium,Graph/DFS
+CodeChef,Graph Theory,Way Out,https://www.codechef.com/problems/WAYOUT,Medium,BFS
+CodeChef,Graph Theory,Tree of Tree,https://www.codechef.com/problems/TREETREE,Hard,Tree DP
+CodeChef,Graph Theory,Delhi Metro,https://www.codechef.com/problems/DELHI,Medium,Shortest Path
+CodeChef,Graph Theory,Chef and Roads,https://www.codechef.com/problems/CHEFROAD,Hard,Graph/MST
+CodeChef,Graph Theory,Reachability,https://www.codechef.com/problems/REACH,Medium,BFS
+CodeChef,Graph Theory,Kingdom of Dreams,https://www.codechef.com/problems/KINGDOM,Medium,Graph/BFS
+HackerEarth,Graph Theory,Monk and the Islands,https://www.hackerearth.com/practice/algorithms/graphs/breadth-first-search/practice-problems/algorithm/monk-and-the-islands/,Easy,BFS
+HackerEarth,Graph Theory,Permutation Swaps,https://www.hackerearth.com/practice/algorithms/graphs/breadth-first-search/practice-problems/algorithm/permutation-swaps/,Medium,BFS/DSU
+HackerEarth,Graph Theory,Connected Horses,https://www.hackerearth.com/practice/algorithms/graphs/breadth-first-search/practice-problems/algorithm/connected-horses/,Medium,BFS/Combinatorics
+HackerEarth,Graph Theory,The Flight Plan,https://www.hackerearth.com/practice/algorithms/graphs/breadth-first-search/practice-problems/algorithm/the-flight-plan/,Easy,BFS
+HackerEarth,Graph Theory,Great Graphs,https://www.hackerearth.com/practice/algorithms/graphs/breadth-first-search/practice-problems/algorithm/great-graphs-afc1a343/,Medium,BFS/Graph
+HackerEarth,Graph Theory,DFS Traversal,https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/practice-problems/algorithm/dfs-traversal/,Easy,DFS
+HackerEarth,Graph Theory,Graph Representation,https://www.hackerearth.com/practice/algorithms/graphs/graph-representation/practice-problems/algorithm/graph-representation/,Easy,Graph Representation
+HackerEarth,Graph Theory,Minimum Spanning Tree,https://www.hackerearth.com/practice/algorithms/graphs/minimum-spanning-tree/practice-problems/algorithm/minimum-spanning-tree/,Medium,MST
+HackerEarth,Graph Theory,Shortest Path Problem,https://www.hackerearth.com/practice/algorithms/graphs/shortest-path-algorithms/practice-problems/algorithm/shortest-path-problem/,Medium,Shortest Path
+HackerEarth,Graph Theory,Flood Fill Algorithm,https://www.hackerearth.com/practice/algorithms/graphs/flood-fill-algorithm/practice-problems/algorithm/flood-fill/,Easy,Flood Fill
+HackerEarth,Graph Theory,Articulation Points,https://www.hackerearth.com/practice/algorithms/graphs/articulation-points-and-bridges/practice-problems/algorithm/articulation-points/,Hard,Articulation Points
+HackerEarth,Graph Theory,Strongly Connected Components,https://www.hackerearth.com/practice/algorithms/graphs/strongly-connected-components/practice-problems/algorithm/strongly-connected-components/,Hard,SCC/Kosaraju
+HackerEarth,Graph Theory,Topological Sort,https://www.hackerearth.com/practice/algorithms/graphs/topological-sort/practice-problems/algorithm/topological-sort/,Medium,Topological Sort
+HackerEarth,Graph Theory,Hamiltonian Path,https://www.hackerearth.com/practice/algorithms/graphs/hamiltonian-path/practice-problems/algorithm/hamiltonian-path/,Hard,Hamiltonian Path
+HackerEarth,Graph Theory,Maximum Flow,https://www.hackerearth.com/practice/algorithms/graphs/maximum-flow/practice-problems/algorithm/maximum-flow/,Hard,Max Flow
+Kattis,Graph Theory,Single Source Shortest Path Non-Negative,https://open.kattis.com/problems/shortestpath1,Medium,Dijkstra
+Kattis,Graph Theory,Single Source Shortest Path Timetable,https://open.kattis.com/problems/shortestpath2,Medium,Dijkstra
+Kattis,Graph Theory,Single Source Shortest Path Negative,https://open.kattis.com/problems/shortestpath3,Medium,Bellman-Ford
+Kattis,Graph Theory,All Pairs Shortest Path,https://open.kattis.com/problems/allpairspath,Hard,Floyd-Warshall
+Kattis,Graph Theory,Minimum Spanning Tree,https://open.kattis.com/problems/minspantree,Medium,Kruskal/Prim
+Kattis,Graph Theory,A Walk Through The Forest,https://open.kattis.com/problems/awalkthroughtheforest,Medium,Dijkstra/DFS
+Kattis,Graph Theory,10 Kinds of People,https://open.kattis.com/problems/10kindsofpeople,Medium,BFS/Connected Components
+Kattis,Graph Theory,A Mazing,https://open.kattis.com/problems/amazing,Hard,BFS/Maze
+Kattis,Graph Theory,Get Shorty,https://open.kattis.com/problems/getshorty,Medium,Shortest Path
+Kattis,Graph Theory,Full Tank,https://open.kattis.com/problems/fulltank,Hard,Dijkstra/DP
+Kattis,Graph Theory,Transportation Planning,https://open.kattis.com/problems/transportationplanning,Hard,MST
+Kattis,Graph Theory,Islands,https://open.kattis.com/problems/islands,Medium,BFS/DFS
+Kattis,Graph Theory,Reachable Roads,https://open.kattis.com/problems/reachableroads,Easy,DFS/Connected Components
+Kattis,Graph Theory,Conquest Campaign,https://open.kattis.com/problems/conquestcampaign,Medium,BFS
+Kattis,Graph Theory,Maze Movement,https://open.kattis.com/problems/mazemovement,Medium,BFS/Shortest Path
+Kattis,Graph Theory,Bank Queue,https://open.kattis.com/problems/bankqueue,Medium,Greedy/Graph
+Kattis,Graph Theory,Cat and Mouse,https://open.kattis.com/problems/catandmouse,Hard,BFS/Game Theory
+TopCoder,Graph Theory,TreeUnion,https://community.topcoder.com/stat?c=problem_statement&pm=14312,Medium,Graph Theory/Trees
+TopCoder,Graph Theory,RookAttack,https://community.topcoder.com/stat?c=problem_statement&pm=1931,Hard,Max Flow
+TopCoder,Graph Theory,Graduation,https://community.topcoder.com/stat?c=problem_statement&pm=2852,Hard,Max Flow
+TopCoder,Graph Theory,Parking,https://community.topcoder.com/stat?c=problem_statement&pm=3530,Hard,Max Flow/Bipartite
+TopCoder,Graph Theory,KingdomXCitiesandVillages,https://community.topcoder.com/stat?c=problem_statement&pm=KingdomXCitiesandVillages,Medium,MST
+TopCoder,Graph Theory,RandomGraph,https://community.topcoder.com/stat?c=problem_statement&pm=RandomGraph,Hard,Graph/Probability
+TopCoder,Graph Theory,ShortestPathWithMagic,https://community.topcoder.com/stat?c=problem_statement&pm=ShortestPathWithMagic,Medium,Shortest Path
+TopCoder,Graph Theory,Steeplechase,https://community.topcoder.com/stat?c=problem_statement&pm=Steeplechase,Hard,Max Flow/Min Cut
+Toph,Graph Theory,Counting Friends,https://toph.co/p/counting-friends,Moderate,Graph/DataStructure
+Toph,Graph Theory,City of Atlantis,https://toph.co/p/city-of-atlantis,Moderate,Graph/DataStructure
+Toph,Graph Theory,Tasks,https://toph.co/p/tasks,Moderate,DFS
+Toph,Graph Theory,Zer VS EEE,https://toph.co/p/zer-vs-eee,Moderate,Flow
+Toph,Graph Theory,Unbelievable Array,https://toph.co/p/unbelievable-array,Very Easy,DisjointSets
+Toph,Graph Theory,War in the Wizarding World,https://toph.co/p/war-in-the-wizarding-world,Moderate,DFS/Flow/Graph
+Toph,Graph Theory,Sofdor Ali's Black and White Tree,https://toph.co/p/sofdor-alis-black-and-white-tree,Moderate,DFS/Graph
+Toph,Graph Theory,Prime Avoider,https://toph.co/p/prime-avoider,Moderate,Graph/ShortestPath
+Toph,Graph Theory,Plant Trees Save Life,https://toph.co/p/plant-trees-save-life,Easy,BFS/DFS/DisjointSets
+Toph,Graph Theory,The Archipelago of Mirpur,https://toph.co/p/the-archipelago-of-mirpur,Easy,DisjointSets/MST
+Toph,Graph Theory,Convincing Customers,https://toph.co/p/convincing-customers,Moderate,BipartiteMatching
+Toph,Graph Theory,Poltu and Graph,https://toph.co/p/poltu-and-graph,Moderate,DisjointSets/Graph
+Toph,Graph Theory,Road Minister Techboy,https://toph.co/p/road-minister-techboy,Hard,DFS/Graph/Greedy
+Toph,Graph Theory,I Hate Long Description,https://toph.co/p/i-hate-long-description,Moderate,SCC/Graph
+Toph,Graph Theory,The Selection,https://toph.co/p/the-selection,Moderate,Graph
+Toph,Graph Theory,Spanning Tree,https://toph.co/p/spanning-tree,Easy,Graph
+Toph,Graph Theory,The Spy Cats,https://toph.co/p/the-spy-cats,Moderate,DFS/Graph
+Toph,Graph Theory,Hidden Graph,https://toph.co/p/hidden-graph,Very Easy,Graph/NumberTheory
+Toph,Graph Theory,Imagine a Graph 1,https://toph.co/p/imagine-a-graph-1,Moderate,Graph/NumberTheory
+Toph,Graph Theory,Playing On A Directed Graph,https://toph.co/p/playing-on-a-directed-graph,Moderate,Graph/ShortestPath
+Toph,Graph Theory,Set the Meeting,https://toph.co/p/set-the-meeting,Moderate,BFS
+Toph,Graph Theory,Scarlet Speedster,https://toph.co/p/scarlet-speedster,Moderate,BFS/ShortestPath
+Toph,Graph Theory,Multiverse Of Courier Service,https://toph.co/p/multiverse-of-courier-service,Moderate,BFS/DisjointSets/Graph
+Toph,Graph Theory,Identify the Level,https://toph.co/p/identify-the-level,Very Easy,BFS/DFS
+Toph,Graph Theory,Best Place to Arrange Contest,https://toph.co/p/best-place-to-arrange-contest,Moderate,BFS/DFS/Graph
+Toph,Graph Theory,Shortest Path?,https://toph.co/p/shortest-path,Moderate,BFS
+Toph,Graph Theory,Taofiq the House Prefect,https://toph.co/p/taofiq-the-house-prefect,Very Hard,BFS
+Toph,Graph Theory,Hide and Seek,https://toph.co/p/hide-and-seek,Moderate,BFS/DFS/Tree
+Toph,Graph Theory,COVID-19 Outbreak,https://toph.co/p/covid-19-outbreak,Moderate,BFS/DFS/DP
+Toph,Graph Theory,Haunting of Herobrine,https://toph.co/p/haunting-of-herobrine,Moderate,BFS/DFS
+Toph,Graph Theory,Stephen Bob and Tomato Canvas,https://toph.co/p/stephen-bob-and-tomato-canvas,Very Easy,BFS/DFS
+Toph,Graph Theory,Preparing for War,https://toph.co/p/preparing-for-war,Moderate,CutVertex/DFS
+Toph,Graph Theory,Life Saving Algorithm,https://toph.co/p/life-saving-algorithm,Moderate,DFS
+Toph,Graph Theory,Kingdom of Code,https://toph.co/p/kingdom-of-code,Moderate,DFS/Graph/ShortestPath
+Toph,Graph Theory,Tree Queries,https://toph.co/p/tree-queries,Very Easy,DFS/FenwickTree
+Toph,Graph Theory,Flyover in Twinland,https://toph.co/p/flyover-in-twinland,Very Easy,MST/DisjointSets/Graph/Greedy
+Toph,Graph Theory,Reverse The Magic,https://toph.co/p/reverse-the-magic,Moderate,Graph
+Toph,Graph Theory,Poltu and Minimum Spanning Tree,https://toph.co/p/poltu-and-minimum-spanning-tree,Easy,MST/BinarySearch
+Toph,Graph Theory,Wakanda Forever,https://toph.co/p/wakanda-forever,Moderate,MST/DisjointSets/Graph
+Project Euler,Graph Theory,Minimal Network,https://projecteuler.net/problem=107,50%,MST/Kruskal
+Project Euler,Graph Theory,Connectedness of a Network,https://projecteuler.net/problem=186,45%,DSU/Graph
+Project Euler,Graph Theory,Coloured Graphs,https://projecteuler.net/problem=194,60%,Graph Theory/Combinatorics
+Project Euler,Graph Theory,Robot Walk,https://projecteuler.net/problem=208,65%,Graph/Simulation
+Project Euler,Graph Theory,Ant and Seeds,https://projecteuler.net/problem=280,65%,BFS/Shortest Path
+Project Euler,Graph Theory,Eulerian Cycles,https://projecteuler.net/problem=289,75%,Eulerian Path/Graph
+Project Euler,Graph Theory,Protein Folding,https://projecteuler.net/problem=300,70%,Graph/HP Model
+Project Euler,Graph Theory,Nim,https://projecteuler.net/problem=301,10%,Graph/Game Theory
+Project Euler,Graph Theory,A Maze of Twisty Little Passages,https://projecteuler.net/problem=308,75%,Graph/Maze/BFS
+Project Euler,Graph Theory,Cyclic Paths on Sierpinski Gasket,https://projecteuler.net/problem=312,60%,Graph/Recursion
+Project Euler,Graph Theory,Sliding Game,https://projecteuler.net/problem=313,55%,BFS/Shortest Path
+Project Euler,Graph Theory,Swapping Counters,https://projecteuler.net/problem=321,55%,Graph/Permutations
+Project Euler,Graph Theory,Pythagorean Polygons,https://projecteuler.net/problem=292,60%,Graph/Geometry
+Project Euler,Graph Theory,Lattice Paths,https://projecteuler.net/problem=15,5%,Graph/Combinatorics
+Project Euler,Graph Theory,Maximum Path Sum I,https://projecteuler.net/problem=18,5%,Graph/Tree DP
+Project Euler,Graph Theory,Maximum Path Sum II,https://projecteuler.net/problem=67,10%,Graph/Tree DP
+Project Euler,Graph Theory,Path Sum Two Ways,https://projecteuler.net/problem=81,20%,Graph/Shortest Path
+Project Euler,Graph Theory,Path Sum Three Ways,https://projecteuler.net/problem=82,25%,Graph/Shortest Path
+Project Euler,Graph Theory,Path Sum Four Ways,https://projecteuler.net/problem=83,25%,Graph/Shortest Path
+Project Euler,Graph Theory,Tours on a 4xN Grid,https://projecteuler.net/problem=237,60%,Graph/DP
+Project Euler,Graph Theory,Binary Circles,https://projecteuler.net/problem=265,40%,Graph/Hamiltonian
+Project Euler,Graph Theory,Mountain Range,https://projecteuler.net/problem=262,65%,Graph/Path Finding
+Project Euler,Graph Theory,Totient Chains,https://projecteuler.net/problem=214,40%,Graph/Number Theory
+Project Euler,Graph Theory,Balanced Sculptures,https://projecteuler.net/problem=275,65%,Graph/Combinatorics
+Codeforces,Network Flow,1082G - Petya and Graph,https://codeforces.com/problemset/problem/1082/G,2400,Max Flow / Min Cut
+Codeforces,Network Flow,1214D - Treasure Island,https://codeforces.com/problemset/problem/1214/D,1900,Max Flow / Grid
+Codeforces,Network Flow,1288F - Red-Blue Graph,https://codeforces.com/problemset/problem/1288/F,2900,Min Cost Flow
+Codeforces,Network Flow,1264E - Beautiful League,https://codeforces.com/problemset/problem/1264/E,2700,Flows / Graph Construction
+Codeforces,Network Flow,1263F - Economic Difficulties,https://codeforces.com/problemset/problem/1263/F,2400,Min Cut / DP
+Codeforces,Network Flow,1252L - Road Construction,https://codeforces.com/problemset/problem/1252/L,2300,Flows / Trees
+Codeforces,Network Flow,1198E - Rectangle Painting 2,https://codeforces.com/problemset/problem/1198/E,2500,Min Cut / Grid
+Codeforces,Network Flow,1045A - Last Chance,https://codeforces.com/problemset/problem/1045/A,2500,Max Flow / Matching
+Codeforces,Network Flow,1034B - Little C Loves 3 II,https://codeforces.com/problemset/problem/1034/B,2200,Max Flow / Matching
+Codeforces,Network Flow,1913E - Matrix Problem,https://codeforces.com/problemset/problem/1913/E,2400,Min Cost Flow
+Codeforces,Network Flow,1926G - Vlad and Trouble at MIT,https://codeforces.com/problemset/problem/1926/G,1900,Min Cut / Trees
+Codeforces,Network Flow,1955H - The Most Reckless Defense,https://codeforces.com/problemset/problem/1955/H,2300,Min Cut / Bitmask
+Codeforces,Network Flow,2026E - Best Subsequence,https://codeforces.com/problemset/problem/2026/E,2500,Max Flow / Bipartite
+Codeforces,Network Flow,1404E - Bricks,https://codeforces.com/problemset/problem/1404/E,2800,Bipartite Matching / Flow
+Codeforces,Network Flow,1354F - Summoning Minions,https://codeforces.com/problemset/problem/1354/F,2500,Min Cost Max Flow
+Codeforces,Network Flow,1307G - Cow and Exercise,https://codeforces.com/problemset/problem/1307/G,3100,Flows / Shortest Paths
+Codeforces,Network Flow,1146G - Zoning Restrictions,https://codeforces.com/problemset/problem/1146/G,2700,Min Cut / DP
+Codeforces,Network Flow,2089B1 - Canteen (Easy Version),https://codeforces.com/problemset/problem/2089/B1,1900,Flows / Greedy
+Codeforces,Network Flow,2089B2 - Canteen (Hard Version),https://codeforces.com/problemset/problem/2089/B2,2300,Flows / Binary Search
+Codeforces,Network Flow,2009F - Firefly's Queries,https://codeforces.com/problemset/problem/2009/F,1700,Flows / Math
+Codeforces,Network Flow,2043D - Problem about GCD,https://codeforces.com/problemset/problem/2043/D,1800,Flows / Number Theory
+Codeforces,Network Flow,1783F - Double Sort II,https://codeforces.com/problemset/problem/1783/F,2500,Max Flow / Graph
+Codeforces,Network Flow,1383F - Special Edges,https://codeforces.com/problemset/problem/1383/F,3200,Max Flow / Graphs
+Codeforces,Network Flow,1368H1 - Breadboard Capacity (easy),https://codeforces.com/problemset/problem/1368/H1,3300,Flows / DP
+Codeforces,Network Flow,1178H - Stock Exchange,https://codeforces.com/problemset/problem/1178/H,3500,Flows / Binary Search
+Codeforces,2-SAT,1715D - 2+ doors,https://codeforces.com/problemset/problem/1715/D,1900,2-SAT / Bitmask
+Codeforces,2-SAT,1635E - Cars,https://codeforces.com/problemset/problem/1635/E,2200,2-SAT / Topological Sort
+Codeforces,2-SAT,1657F - Words on Tree,https://codeforces.com/problemset/problem/1657/F,2600,2-SAT / Trees / DFS
+Codeforces,2-SAT,1697F - Too Many Constraints,https://codeforces.com/problemset/problem/1697/F,2800,2-SAT / Implementation
+Codeforces,2-SAT,1844E - Great Grids,https://codeforces.com/problemset/problem/1844/E,2400,2-SAT / DSU
+Codeforces,2-SAT,1903F - Babysitting,https://codeforces.com/problemset/problem/1903/F,2500,2-SAT / Binary Search
+Codeforces,2-SAT,1971H - +/-1,https://codeforces.com/problemset/problem/1971/H,2100,2-SAT / DFS
+Codeforces,2-SAT,1239D - Catowice City,https://codeforces.com/problemset/problem/1239/D,2400,2-SAT / SCC
+Codeforces,2-SAT,1475F - Unusual Matrix,https://codeforces.com/problemset/problem/1475/F,1900,2-SAT / Constructive
+Codeforces,2-SAT,1385G - Columns Swaps,https://codeforces.com/problemset/problem/1385/G,2300,2-SAT / DSU
+Codeforces,2-SAT,1503D - Flip the Cards,https://codeforces.com/problemset/problem/1503/D,2600,2-SAT / Greedy
+Codeforces,2-SAT,1567F - One-Four Overload,https://codeforces.com/problemset/problem/1567/F,2700,2-SAT / Constructive
+Codeforces,2-SAT,1713E - Cross Swapping,https://codeforces.com/problemset/problem/1713/E,2400,2-SAT / DSU
+Codeforces,2-SAT,1215F - Radio Stations,https://codeforces.com/problemset/problem/1215/F,2700,2-SAT / Data Structures
+Codeforces,2-SAT,1438C - Engineer Artem,https://codeforces.com/problemset/problem/1438/C,2000,2-SAT / Constructive
+Codeforces,2-SAT,1545C - AquaMoon and Permutations,https://codeforces.com/problemset/problem/1545/C,2800,2-SAT / Matching
+Codeforces,2-SAT,2061C - Kevin and Puzzle,https://codeforces.com/problemset/problem/2061/C,1600,2-SAT / Combinatorics
+Codeforces,2-SAT,2072F - Goodbye Banker Life,https://codeforces.com/problemset/problem/2072/F,1700,2-SAT / Bitmask
+Codeforces,2-SAT,2181K - Knit the Grid,https://codeforces.com/problemset/problem/2181/K,3500,2-SAT / Matrices
+Codeforces,2-SAT,2120F - Superb Graphs,https://codeforces.com/problemset/problem/2120/F,2600,2-SAT / Graphs
+Codeforces,2-SAT,2022E1 - Billetes MX (Easy),https://codeforces.com/problemset/problem/2022/E1,2500,2-SAT / DSU
+Codeforces,Graph Matchings,1948G - MST with Matching,https://codeforces.com/problemset/problem/1948/G,3100,Bipartite Matching / MST
+Codeforces,Graph Matchings,1914F - Programming Competition,https://codeforces.com/problemset/problem/1914/F,1900,Tree Matching / DP
+Codeforces,Graph Matchings,1835F - Good Graph,https://codeforces.com/problemset/problem/1835/F,3500,Bipartite Matching
+Codeforces,Graph Matchings,1949I - Disks,https://codeforces.com/problemset/problem/1949/I,1800,Graph Matching / Geometry
+Codeforces,Graph Matchings,1922F - Replace on Segment,https://codeforces.com/problemset/problem/1922/F,2500,Graph Matching / DP
+Codeforces,Graph Matchings,2204D - Alternating Path,https://codeforces.com/problemset/problem/2204/D,1400,Graph Matchings / DFS
+Codeforces,Graph Matchings,2165D - Path Split,https://codeforces.com/problemset/problem/2165/D,2500,Graph Matchings / Greedy
+Codeforces,Graph Matchings,2085D - Serval and Kaitenzushi Buffet,https://codeforces.com/problemset/problem/2085/D,2000,Graph Matchings / Data Structures
+Codeforces,Graph Matchings,2044G1 - Medium Demon (easy),https://codeforces.com/problemset/problem/2044/G1,1700,Graph Matchings / Trees
+Codeforces,Graph Matchings,1906I - Contingency Plan 2,https://codeforces.com/problemset/problem/1906/I,2900,Graph Matchings
+Codeforces,Graph Matchings,2159C - Twin Polynomials,https://codeforces.com/problemset/problem/2159/C,2300,Graph Matchings / Combinatorics
+Codeforces,Graph Matchings,2155D - Batteries,https://codeforces.com/problemset/problem/2155/D,1800,Graph Matchings / Constructive
+Codeforces,Eulerian Path,2092F - The Strongest Path,https://codeforces.com/problemset/problem/2092/F,2500,Eulerian Path / Graphs
+Codeforces,Eulerian Path,1439C - Eating Together,https://codeforces.com/problemset/problem/1439/C,2400,Eulerian Path / Math
+Codeforces,Bridges / AP,1787F - Good Graph,https://codeforces.com/problemset/problem/1787/F,2500,Bridges / DFS
+Codeforces,Bridges / AP,1184E2 - Daleks Invasion (medium),https://codeforces.com/problemset/problem/1184/E2,2100,Bridges / MST
+Codeforces,Bridges / AP,1184E3 - Daleks Invasion (hard),https://codeforces.com/problemset/problem/1184/E3,2500,Bridges / Trees
+Codeforces,Bridges / AP,1184E1 - Daleks Invasion (easy),https://codeforces.com/problemset/problem/1184/E1,1900,Bridges / DSU
+Codeforces,Bridges / AP,768B - Code For 1,https://codeforces.com/problemset/problem/768/B,1600,Bridges / DFS
+Codeforces,Bridges / AP,2055F - The Art of Dealing,https://codeforces.com/problemset/problem/2055/F,2000,Bridges / Graphs
+Codeforces,Graph Coloring,1442B - Identify the Operations,https://codeforces.com/problemset/problem/1442/B,1600,Graph Coloring
+Codeforces,Graph Coloring,1334B - Middle Class,https://codeforces.com/problemset/problem/1334/B,1200,Graph Coloring
+Codeforces,Graph Coloring,1462C - Unique Number,https://codeforces.com/problemset/problem/1462/C,1100,Graph Coloring
+Codeforces,Graph Coloring,1848A - Vika and Her Friends,https://codeforces.com/problemset/problem/1848/A,1200,Graph Coloring / Bipartite
+Codeforces,LCA / Tree DP,1059E - Split the Tree,https://codeforces.com/problemset/problem/1059/E,2400,LCA / Binary Lifting
+Codeforces,LCA / Tree DP,1185G2 - Matchings (hard),https://codeforces.com/problemset/problem/1185/G2,2500,LCA / DP
+Codeforces,LCA / Tree DP,1611E1 - Escape The Maze (easy),https://codeforces.com/problemset/problem/1611/E1,1700,Tree DP / BFS
+Codeforces,LCA / Tree DP,1611E2 - Escape The Maze (hard),https://codeforces.com/problemset/problem/1611/E2,1900,Tree DP / BFS
+Codeforces,LCA / Tree DP,1790F - Timofey and Black-White Tree,https://codeforces.com/problemset/problem/1790/F,2100,Tree DP / BFS
+Codeforces,LCA / Tree DP,1881F - Minimum Maximum Distance,https://codeforces.com/problemset/problem/1881/F,1700,Tree DP / Multisource
+Codeforces,LCA / Tree DP,1975D - Paint the Tree,https://codeforces.com/problemset/problem/1975/D,1700,Tree DP / Greedy
+Codeforces,LCA / Tree DP,1051F - The Shortest Statement,https://codeforces.com/problemset/problem/1051/F,2400,LCA / Shortest Path
+Codeforces,LCA / Tree DP,796D - Police Stations,https://codeforces.com/problemset/problem/796/D,2100,Tree DP / Multisource BFS
+Codeforces,LCA / Tree DP,2085C - Paint the Array,https://codeforces.com/problemset/problem/2085/C,1600,Tree DP / DFS
+Codeforces,LCA / Tree DP,61D - Eternal Victory,https://codeforces.com/problemset/problem/61/D,1800,Tree DP / Euler Tour
+Codeforces,LCA / Tree DP,1437D - Minimal Height Tree,https://codeforces.com/problemset/problem/1437/D,1600,Tree Construction / BFS
+Codeforces,SCC,1131C - Birthday,https://codeforces.com/problemset/problem/1131/C,1200,SCC / Graphs
+Codeforces,SCC,1139C - Edgy Trees,https://codeforces.com/problemset/problem/1139/C,1500,SCC / Combinatorics
+Codeforces,SCC,2098D - Delightful Circles,https://codeforces.com/problemset/problem/2098/D,2000,SCC / Graphs
+Codeforces,SCC,2129A - Double Perspective,https://codeforces.com/problemset/problem/2129/A,1300,DSU / SCC
+Codeforces,SCC,1167C - News Distribution,https://codeforces.com/problemset/problem/1167/C,1400,DSU / SCC
+Codeforces,SCC,1534C - Little Alawn's Puzzle,https://codeforces.com/problemset/problem/1534/C,1300,SCC / Combinatorics
+Codeforces,SCC,277A - Learning Languages,https://codeforces.com/problemset/problem/277/A,1400,DSU / SCC
+Codeforces,SCC,1726C - Jatayu's Balanced Bracket,https://codeforces.com/problemset/problem/1726/C,1300,SCC / Data Structures
+Codeforces,SCC,1638C - Inversion Graph,https://codeforces.com/problemset/problem/1638/C,1300,DSU / SCC
+Codeforces,SCC,2127H - 23 Rises Again,https://codeforces.com/problemset/problem/2127/H,3100,SCC / DP / Flows
+Codeforces,SCC,1055A - Metro,https://codeforces.com/problemset/problem/1055/A,900,SCC / Graphs
+Codeforces,SCC,217A - Ice Skating,https://codeforces.com/problemset/problem/217/A,1200,DSU / SCC
+Codeforces,SCC,1428B - Belted Rooms,https://codeforces.com/problemset/problem/1428/B,1200,SCC / Graphs
+Codeforces,SCC,129B - Students and Shoelaces,https://codeforces.com/problemset/problem/129/B,1200,SCC / Simulation
+Codeforces,Shortest Paths,954D - Fight Against Traffic,https://codeforces.com/problemset/problem/954/D,1600,BFS / Shortest Path
+Codeforces,Shortest Paths,1737C - Minimizing the Thickness,https://codeforces.com/problemset/problem/1737/C,1700,Shortest Path / Graph
+Codeforces,Shortest Paths,1873H - Mad City,https://codeforces.com/problemset/problem/1873/H,1700,BFS / Graph Cycle
+Codeforces,MST,1108F - MST Unification,https://codeforces.com/problemset/problem/1108/F,2100,MST / DSU
+Codeforces,MST,893C - Rum Inquiry,https://codeforces.com/problemset/problem/893/C,1300,MST / DSU
+Codeforces,MST,1213G - Path Queries,https://codeforces.com/problemset/problem/1213/G,1800,DSU / MST
+Codeforces,MST,1462F - The Treasure of The Segments,https://codeforces.com/problemset/problem/1462/F,1700,MST / Greedy
+Codeforces,MST,1675G - Sorting Pancakes,https://codeforces.com/problemset/problem/1675/G,2100,MST / DP
+Codeforces,MST,888G - Xor-MST,https://codeforces.com/problemset/problem/888/G,2400,MST / Trie / DSU
+Codeforces,DSU (General),1800E1 - Unforgivable Curse (easy),https://codeforces.com/problemset/problem/1800/E1,1400,DSU / Graphs
+Codeforces,DSU (General),1800E2 - Unforgivable Curse (hard),https://codeforces.com/problemset/problem/1800/E2,1500,DSU / Graphs
+Codeforces,DSU (General),1632C - Strange Test,https://codeforces.com/problemset/problem/1632/C,1600,DSU / Graphs
+Codeforces,DSU (General),1592B - Hemose Shopping,https://codeforces.com/problemset/problem/1592/B,1200,DSU / Math
+Codeforces,DSU (General),1659D - Reverse Sort Sum,https://codeforces.com/problemset/problem/1659/D,1800,DSU / Math
+Codeforces,Graphs General,144A - Arrival of the General,https://codeforces.com/problemset/problem/144/A,800,Graphs
+Codeforces,Graphs General,939A - Love Triangle,https://codeforces.com/problemset/problem/939/A,800,Graphs / Cycle Detection
+Codeforces,Graphs General,500A - New Year Transportation,https://codeforces.com/problemset/problem/500/A,1000,Graphs / Simulation
+Codeforces,Graphs General,1829E - The Lakes,https://codeforces.com/problemset/problem/1829/E,1100,DFS / Grid
+Codeforces,Graphs General,2008D - Sakurako's Hobby,https://codeforces.com/problemset/problem/2008/D,1100,DFS / DSU
+Codeforces,Graphs General,1033A - King Escape,https://codeforces.com/problemset/problem/1033/A,1000,BFS / Grid
+Codeforces,Graphs General,115A - Party,https://codeforces.com/problemset/problem/115/A,900,DFS / Tree Height
+Codeforces,Graphs General,1327B - Princesses and Princes,https://codeforces.com/problemset/problem/1327/B,1200,Bipartite / Greedy
+Codeforces,Graphs General,1559C - Mocha and Hiking,https://codeforces.com/problemset/problem/1559/C,1200,Graph Construction
+Codeforces,Graphs General,370A - Rook Bishop and King,https://codeforces.com/problemset/problem/370/A,1100,Shortest Path / Graph
+Codeforces,Graphs General,522A - Reposts,https://codeforces.com/problemset/problem/522/A,1200,DFS / Tree
+Codeforces,Graphs General,1020B - Badge,https://codeforces.com/problemset/problem/1020/B,1000,Graph / Cycle
+AtCoder,ABC,ABC075 C - Bridge,https://atcoder.jp/contests/abc075/tasks/abc075_c,800,Bridges / Lowlink
+AtCoder,ABC,ABC170 F - Pond Skater,https://atcoder.jp/contests/abc170/tasks/abc170_f,1770,Grid BFS / 0-1 BFS
+AtCoder,ABC,ABC190 E - Magical Gems,https://atcoder.jp/contests/abc190/tasks/abc190_e,1839,Shortest Hamiltonian Path DP
+AtCoder,ABC,ABC205 F - Grid and Tokens,https://atcoder.jp/contests/abc205/tasks/abc205_f,2088,Max Flow / Bipartite Matching
+AtCoder,ABC,ABC218 F - Blocked Roads,https://atcoder.jp/contests/abc218/tasks/abc218_f,1543,Shortest Path / BFS / Edge Removal
+AtCoder,ABC,ABC221 F - Diameter Set,https://atcoder.jp/contests/abc221/tasks/abc221_f,2101,Tree Diameter / Tree DP / Counting
+AtCoder,ABC,ABC222 F - Expensive Expense,https://atcoder.jp/contests/abc222/tasks/abc222_f,1973,Rerooting DP / Tree Diameter
+AtCoder,ABC,ABC231 H - Minimum Coloring,https://atcoder.jp/contests/abc231/tasks/abc231_h,2804,Min Cost Flow / Edge Cover
+AtCoder,ABC,ABC233 F - Swap and Sort,https://atcoder.jp/contests/abc233/tasks/abc233_f,1372,DSU / Graph / Permutation
+AtCoder,ABC,ABC239 F - Construct Graph,https://atcoder.jp/contests/abc239/tasks/abc239_f,1516,DSU / Tree Construction
+AtCoder,ABC,ABC246 G - Game on Tree 3,https://atcoder.jp/contests/abc246/tasks/abc246_g,2064,Tree Game / Binary Search / DP
+AtCoder,ABC,ABC247 F - Cards,https://atcoder.jp/contests/abc247/tasks/abc247_f,1820,Graph Cycle DP / Edge Cover
+AtCoder,ABC,ABC251 F - Two Spanning Trees,https://atcoder.jp/contests/abc251/tasks/abc251_f,1433,DFS Tree / BFS Tree
+AtCoder,ABC,ABC257 F - Teleporter Setting,https://atcoder.jp/contests/abc257/tasks/abc257_f,1678,BFS / Graph with Unknown Edges
+AtCoder,ABC,ABC259 F - Select Edges,https://atcoder.jp/contests/abc259/tasks/abc259_f,1964,Tree DP / Greedy
+AtCoder,ABC,ABC260 F - Find 4-cycle,https://atcoder.jp/contests/abc260/tasks/abc260_f,1653,Graph / Cycle Detection
+AtCoder,ABC,ABC278 F - Shiritori,https://atcoder.jp/contests/abc278/tasks/abc278_f,1616,Game on Graph / Bit DP
+AtCoder,ABC,ABC280 F - Pay or Receive,https://atcoder.jp/contests/abc280/tasks/abc280_f,1768,Graph with Potentials / DSU
+AtCoder,ABC,ABC287 C - Path Graph?,https://atcoder.jp/contests/abc287/tasks/abc287_c,655,Graph Recognition / Path Graph
+AtCoder,ABC,ABC345 F - Many Lamps,https://atcoder.jp/contests/abc345/tasks/abc345_f,1918,Graph Parity / Spanning Tree
+AtCoder,ABC,ABC348 E - Minimize Sum of Distances,https://atcoder.jp/contests/abc348/tasks/abc348_e,1376,Rerooting DP / Tree
+AtCoder,ABC,ABC362 F - Perfect Matching on a Tree,https://atcoder.jp/contests/abc362/tasks/abc362_f,2016,Tree Matching / Centroid
+AtCoder,ABC,ABC383 E - Sum of Max Matching,https://atcoder.jp/contests/abc383/tasks/abc383_e,1987,MST / Kruskal / Matching
+AtCoder,ABC,ABC389 G - Odd Even Graph,https://atcoder.jp/contests/abc389/tasks/abc389_g,2300,Graph / Counting
+AtCoder,ABC,ABC393 C - Make it Simple,https://atcoder.jp/contests/abc393/tasks/abc393_c,598,Graph Simplification / Self-loop Check
+AtCoder,ABC,ABC394 E - Palindromic Shortest Path,https://atcoder.jp/contests/abc394/tasks/abc394_e,2107,BFS on Graph / Palindrome
+AtCoder,ABC,ABC401 F - Add One Edge 3,https://atcoder.jp/contests/abc401/tasks/abc401_f,2037,Tree Diameter / Rerooting
+AtCoder,ABC,ABC404 C - Cycle Graph?,https://atcoder.jp/contests/abc404/tasks/abc404_c,613,Graph Recognition / Cycle Graph
+AtCoder,ABC,ABC407 G - Domino Covering SUM,https://atcoder.jp/contests/abc407/tasks/abc407_g,2800,Min Cost Flow / Bipartite Matching
+AtCoder,ABC,ABC445 G - Knight Placement,https://atcoder.jp/contests/abc445/tasks/abc445_g,2700,Max Flow / Max Independent Set / Bipartite
+AtCoder,ABC,ABC447 F - Centipede Graph,https://atcoder.jp/contests/abc447/tasks/abc447_f,1850,Tree DP / Subgraph
+AtCoder,ABC,ABC450 F - Strongly Connected 2,https://atcoder.jp/contests/abc450/tasks/abc450_f,1825,SCC / DP / Counting
+AtCoder,ABC,ABC451 F - Make Bipartite 3,https://atcoder.jp/contests/abc451/tasks/abc451_f,1700,Dynamic Bipartite / DSU with Potentials
+AtCoder,ABC,ABC451 G - Minimum XOR Walk,https://atcoder.jp/contests/abc451/tasks/abc451_g,2400,Graph XOR / Linear Basis / Binary Trie
+AtCoder,ABC,ABC453 F - Avoid Division,https://atcoder.jp/contests/abc453/tasks/abc453_f,2200,Tree Coloring / DP
+AtCoder,ARC,ARC031 B - 埋め立て,https://atcoder.jp/contests/arc031/tasks/arc031_b,1000,DFS / BFS / Grid
+AtCoder,ARC,ARC045 D - みんな仲良し高橋君,https://atcoder.jp/contests/arc045/tasks/arc045_d,2800,Biconnected Components / Block-Cut Tree
+AtCoder,ARC,ARC085 E - MUL,https://atcoder.jp/contests/arc085/tasks/arc085_e,2300,Minimum Cut / Project Selection
+AtCoder,ARC,ARC092 A - 2D Plane 2N Points,https://atcoder.jp/contests/arc092/tasks/arc092_a,1268,Bipartite Matching
+AtCoder,ARC,ARC092 D - Two Faced Edges,https://atcoder.jp/contests/arc092/tasks/arc092_d,2350,SCC / Graph Reversal
+AtCoder,ARC,ARC125 E - Snack,https://atcoder.jp/contests/arc125/tasks/arc125_e,2600,Max Flow / Min Cut
+AtCoder,ARC,ARC142 E - Pairing Wizards,https://atcoder.jp/contests/arc142/tasks/arc142_e,2800,Minimum Cut / Bipartite
+AtCoder,ARC,ARC143 D - Bridges,https://atcoder.jp/contests/arc143/tasks/arc143_d,2600,Bridges / Graph Orientation
+AtCoder,ARC,ARC159 A - Copy and Paste Graph,https://atcoder.jp/contests/arc159/tasks/arc159_a,1200,BFS / Graph Copy
+AtCoder,ARC,ARC163 D - Sum of SCC,https://atcoder.jp/contests/arc163/tasks/arc163_d,2800,SCC / Tournament / DP
+AtCoder,ARC,ARC165 C - Social Distance on Graph,https://atcoder.jp/contests/arc165/tasks/arc165_c,2186,Binary Search / Graph / 2-Coloring
+AtCoder,ARC,ARC193 A - Complement Interval Graph,https://atcoder.jp/contests/arc193/tasks/arc193_a,2100,Graph / Connectivity / Ranges
+AtCoder,ARC,ARC196 C - Strongly Connected,https://atcoder.jp/contests/arc196/tasks/arc196_c,2400,SCC / Counting / Pairing
+AtCoder,ARC,ARC213 C - Double X,https://atcoder.jp/contests/arc213/tasks/arc213_c,2700,Bipartite Matching / Min Cost Flow
+AtCoder,ARC,ARC214 B - Missing Number in Graph,https://atcoder.jp/contests/arc214/tasks/arc214_b,1800,XOR / Graph / Potentials
+AtCoder,AGC,AGC004 D - Teleporter,https://atcoder.jp/contests/agc004/tasks/agc004_d,1900,Functional Graph / Greedy
+AtCoder,AGC,AGC018 D - Tree and Hamilton Path,https://atcoder.jp/contests/agc018/tasks/agc018_d,2900,Hamiltonian Path / Tree / Centroid
+AtCoder,AGC,AGC077 E - Hamiltonian Path Inversion,https://atcoder.jp/contests/agc077/tasks/agc077_e,3200,Hamiltonian Path / Grid / Interactive
+AtCoder,ACL Practice,practice2 D - Maxflow,https://atcoder.jp/contests/practice2/tasks/practice2_d,1500,Max Flow / Bipartite Matching
+AtCoder,ACL Practice,practice2 E - MinCostFlow,https://atcoder.jp/contests/practice2/tasks/practice2_e,1800,Min Cost Flow
+AtCoder,ACL Practice,practice2 G - SCC,https://atcoder.jp/contests/practice2/tasks/practice2_g,800,Strongly Connected Components
+AtCoder,ACL Practice,practice2 H - Two SAT,https://atcoder.jp/contests/practice2/tasks/practice2_h,1500,2-SAT
+AtCoder,Tessoku,A67 - MST (Minimum Spanning Tree),https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_bo,800,Minimum Spanning Tree / Kruskal
+AtCoder,ABC,ABC218 E - Destruction,https://atcoder.jp/contests/abc218/tasks/abc218_e,1310,MST / Kruskal / Greedy
+AtCoder,ABC,ABC244 E - King Bombee,https://atcoder.jp/contests/abc244/tasks/abc244_e,1418,Graph DP / Counting Paths
+AtCoder,ABC,ABC248 F - Keep Connect,https://atcoder.jp/contests/abc248/tasks/abc248_f,2147,Graph DP / Bridge / 2-Edge-Connected
+AtCoder,ABC,ABC252 F - Bread,https://atcoder.jp/contests/abc252/tasks/abc252_f,1492,Tree / Huffman / Merge
+AtCoder,ABC,ABC266 F - Exactly K Steps,https://atcoder.jp/contests/abc266/tasks/abc266_f,1700,Tree / Diameter / Binary Lifting
+AtCoder,ABC,ABC273 E - Notebook,https://atcoder.jp/contests/abc273/tasks/abc273_e,1709,Trie / Persistent Data
+AtCoder,ABC,ABC286 F - Guess The Number 2,https://atcoder.jp/contests/abc286/tasks/abc286_f,1700,Graph / Permutation Cycle
+AtCoder,ABC,ABC288 E - Wish List,https://atcoder.jp/contests/abc288/tasks/abc288_e,1573,Graph / DP / Greedy
+AtCoder,ABC,ABC289 F - Teleporter and Closed off,https://atcoder.jp/contests/abc289/tasks/abc289_f,2000,Graph / BFS / Grid
+AtCoder,ABC,ABC290 F - Maximum Diameter,https://atcoder.jp/contests/abc290/tasks/abc290_f,2100,Tree / Combinatorics
+AtCoder,ABC,ABC295 F - substr = K,https://atcoder.jp/contests/abc295/tasks/abc295_f,2100,String / Graph / Digit DP
+AtCoder,ABC,ABC297 F - Minimum Bounding Box 2,https://atcoder.jp/contests/abc297/tasks/abc297_f,2000,Grid / Combinatorics
+AtCoder,ABC,ABC298 F - Rook Score,https://atcoder.jp/contests/abc298/tasks/abc298_f,1700,Graph / Hashing
+AtCoder,ABC,ABC299 F - Substring of Sorted String,https://atcoder.jp/contests/abc299/tasks/abc299_f,2200,String / Graph / Subsequence
+AtCoder,ABC,ABC300 E - Dice Product 3,https://atcoder.jp/contests/abc300/tasks/abc300_e,1600,Graph / DP / Probability
+AtCoder,ABC,ABC301 F - Anti-Distance,https://atcoder.jp/contests/abc301/tasks/abc301_f,2600,Graph / DP / Counting
+AtCoder,ABC,ABC307 F - Virus 2,https://atcoder.jp/contests/abc307/tasks/abc307_f,2200,Graph / BFS / Dijkstra / Multi-source
+AtCoder,ABC,ABC308 F - Vouchers,https://atcoder.jp/contests/abc308/tasks/abc308_f,1400,Graph / Greedy
+AtCoder,ABC,ABC310 F - Make 10 Again,https://atcoder.jp/contests/abc310/tasks/abc310_f,2150,Graph / DP / Probability
+AtCoder,ABC,ABC313 F - Flip Machines,https://atcoder.jp/contests/abc313/tasks/abc313_f,2700,Graph / Expected Value / DP
+AtCoder,ABC,ABC314 F - A Certain Game,https://atcoder.jp/contests/abc314/tasks/abc314_f,1800,DSU / Tree / Expected Value
+AtCoder,ABC,ABC317 F - Nim,https://atcoder.jp/contests/abc317/tasks/abc317_f,2432,Graph / Digit DP / Nim
+AtCoder,ABC,ABC322 F - Vacation Query,https://atcoder.jp/contests/abc322/tasks/abc322_f,2100,Segment Tree / Graph
+AtCoder,ABC,ABC327 F - Apples,https://atcoder.jp/contests/abc327/tasks/abc327_f,1800,Graph / Sweep Line
+AtCoder,ABC,ABC329 F - Colored Ball,https://atcoder.jp/contests/abc329/tasks/abc329_f,1100,DSU / Small-to-Large / Graph
+AtCoder,ABC,ABC332 F - Random Shuffle,https://atcoder.jp/contests/abc332/tasks/abc332_f,1900,Graph / Expected Value
+AtCoder,ARC,ARC111 B - Reversible Cards,https://atcoder.jp/contests/arc111/tasks/arc111_b,1500,Graph / Bipartite / DSU
+AtCoder,ARC,ARC120 C - Swaps 2,https://atcoder.jp/contests/arc120/tasks/arc120_c,1500,Graph / Permutation
+AtCoder,ARC,ARC153 B - Grid Rotations,https://atcoder.jp/contests/arc153/tasks/arc153_b,1500,Graph / Permutation / Ranges
+AtCoder,ARC,ARC155 A - Exact Price,https://atcoder.jp/contests/arc155/tasks/arc155_a,1500,Graph / Number Theory
+AtCoder,ABC,ABC399 G - Approximate Equalization,https://atcoder.jp/contests/abc399/tasks/abc399_g,2300,Graph / DP
+AtCoder,ABC,ABC398 F - ABCBA,https://atcoder.jp/contests/abc398/tasks/abc398_f,1400,String / Graph / Z-algorithm
+LeetCode,Graph Traversal - BFS/DFS,127. Word Ladder,https://leetcode.com/problems/word-ladder/,Hard,BFS
+LeetCode,Graph Traversal - BFS/DFS,365. Water and Jug Problem,https://leetcode.com/problems/water-and-jug-problem/,Medium,BFS / Math
+LeetCode,Graph Traversal - BFS/DFS,433. Minimum Genetic Mutation,https://leetcode.com/problems/minimum-genetic-mutation/,Medium,BFS
+LeetCode,Graph Traversal - BFS/DFS,847. Shortest Path Visiting All Nodes,https://leetcode.com/problems/shortest-path-visiting-all-nodes/,Hard,BFS+Bitmask+DP (Hamiltonian)
+LeetCode,Graph Traversal - BFS/DFS,980. Unique Paths III,https://leetcode.com/problems/unique-paths-iii/,Hard,DFS+Backtracking (Hamiltonian)
+LeetCode,Graph Traversal - BFS/DFS,1162. As Far from Land as Possible,https://leetcode.com/problems/as-far-from-land-as-possible/,Medium,Multi-source BFS
+LeetCode,Graph Traversal - BFS/DFS,1466. Reorder Routes to Make All Cities Lead to the City Zero,https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/,Medium,DFS/BFS
+LeetCode,Union Find / DSU,1579. Remove Max Number of Edges to Keep Graph Fully Traversable,https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/,Hard,Union-Find
+LeetCode,Topological Sort,1591. Strange Printer II,https://leetcode.com/problems/strange-printer-ii/,Hard,Topological Sort
+LeetCode,Union Find / DSU,1697. Checking Existence of Edge Length Limited Paths,https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/,Hard,Union-Find + Sorting
+LeetCode,Graph Traversal - BFS/DFS,2092. Find All People With Secret,https://leetcode.com/problems/find-all-people-with-secret/,Hard,BFS/Union-Find
+LeetCode,Topological Sort,2115. Find All Possible Recipes from Given Ingredients,https://leetcode.com/problems/find-all-possible-recipes-from-given-ingredients/,Medium,Topological Sort
+LeetCode,Graph Traversal - BFS/DFS,2204. Distance to a Cycle in Undirected Graph,https://leetcode.com/problems/distance-to-a-cycle-in-undirected-graph/,Hard,BFS/DFS
+LeetCode,Union Find / DSU,2316. Count Unreachable Pairs of Nodes in an Undirected Graph,https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/,Medium,DFS/Union-Find
+LeetCode,Shortest Path - Dijkstra,2473. Minimum Cost to Buy Apples,https://leetcode.com/problems/minimum-cost-to-buy-apples/,Medium,Dijkstra
+LeetCode,Shortest Path - Dijkstra,2577. Minimum Time to Visit a Cell In a Grid,https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/,Hard,Dijkstra
+LeetCode,Graph Traversal - BFS/DFS,2608. Shortest Cycle in a Graph,https://leetcode.com/problems/shortest-cycle-in-a-graph/,Hard,BFS
+LeetCode,Shortest Path - Dijkstra,2714. Find Shortest Path with K Hops,https://leetcode.com/problems/find-shortest-path-with-k-hops/,Hard,Dijkstra
+LeetCode,Graph Traversal - BFS/DFS,2812. Find the Safest Path in a Grid,https://leetcode.com/problems/find-the-safest-path-in-a-grid/,Medium,BFS + Binary Search
+LeetCode,Graph Traversal - BFS/DFS,2858. Minimum Edge Reversals So Every Node Is Reachable,https://leetcode.com/problems/minimum-edge-reversals-so-every-node-is-reachable/,Hard,DFS/BFS
+LeetCode,Graph Traversal - DFS/Tree,3067. Count Pairs of Connectable Servers in a Weighted Tree Network,https://leetcode.com/problems/count-pairs-of-connectable-servers-in-a-weighted-tree-network/,Medium,DFS/Tree
+GeeksforGeeks,Graph Traversal,128. Hamiltonian Path,https://www.geeksforgeeks.org/problems/hamiltonian-path2522/1,Medium,Backtracking/Hamiltonian Path
+GeeksforGeeks,Graph Traversal,129. Strongly connected component (Tarjan's Algo),https://www.geeksforgeeks.org/problems/strongly-connected-component-tarjanss-algo-1587115621/1,Medium,Tarjan SCC
+GeeksforGeeks,Graph Traversal,130. Find minimum s-t cut in a flow network,https://www.geeksforgeeks.org/problems/find-minimum-s-t-cut-in-a-flow-network2902/1,Hard,Max Flow / Min Cut
+GeeksforGeeks,Graph Traversal,131. M-Coloring Problem,https://www.geeksforgeeks.org/problems/m-coloring-problem/1,Medium,Backtracking/Graph Coloring
+GeeksforGeeks,Graph Traversal,132. Negative weight cycle,https://www.geeksforgeeks.org/problems/negative-weight-cycle/1,Medium,Bellman-Ford
+GeeksforGeeks,Graph Traversal,133. Bridge edge in a graph,https://www.geeksforgeeks.org/problems/bridge-edge-in-graph/1,Medium,Bridges/Tarjan
+GeeksforGeeks,Graph Traversal,134. Eulerian Path in an Undirected Graph,https://www.geeksforgeeks.org/problems/eulerian-path-in-an-undirected-graph/1,Medium,Eulerian Path
+GeeksforGeeks,Graph Traversal,135. Possible paths between 2 vertices,https://www.geeksforgeeks.org/problems/possible-paths-between-2-vertices/1,Medium,DFS/Count Paths
+GeeksforGeeks,Graph Traversal,136. Mother Vertex,https://www.geeksforgeeks.org/problems/mother-vertex/1,Easy,DFS
+GeeksforGeeks,Graph Traversal,137. Water Connection Problem,https://www.geeksforgeeks.org/problems/water-connection-problem/1,Medium,Graph/DFS
+UVa,Articulation Points,315 - Network,https://onlinejudge.org/external/100/315.pdf,Medium,Tarjan / Articulation Points
+UVa,Shortest Path,318 - Domino Effect,https://onlinejudge.org/external/100/318.pdf,Medium,BFS / Shortest Path
+UVa,Topological Sort,200 - Rare Order,https://onlinejudge.org/external/100/200.pdf,Medium,Topological Sort / DFS
+UVa,Graph Traversal - BFS/DFS,298 - Race Tracks,https://onlinejudge.org/external/100/298.pdf,Medium,BFS with Velocity State
+UVa,Graph Traversal - BFS/DFS,314 - Robot,https://onlinejudge.org/external/100/314.pdf,Medium,BFS with Direction State
+UVa,Shortest Path,423 - MPI Maelstrom,https://onlinejudge.org/external/100/423.pdf,Easy,Dijkstra / Floyd-Warshall
+UVa,Bridges,610 - Street Directions,https://onlinejudge.org/external/100/610.pdf,Medium,Bridge Finding / Tarjan
+UVa,Shortest Path,627 - The Net,https://onlinejudge.org/external/100/627.pdf,Medium,Floyd-Warshall / BFS
+UVa,Shortest Path,658 - It's not a Bug, it's a Feature!,https://onlinejudge.org/external/100/658.pdf,Hard,Dijkstra / Bitmask
+UVa,Shortest Path,821 - Page Hopping,https://onlinejudge.org/external/100/821.pdf,Easy,Floyd-Warshall
+UVa,Graph Traversal - BFS/DFS,852 - Deciding victory in Go,https://onlinejudge.org/external/100/852.pdf,Medium,DFS Flood Fill
+UVa,MST,10034 - Freckles,https://onlinejudge.org/external/100/10034.pdf,Medium,MST / Kruskal
+UVa,Graph Traversal - BFS/DFS,10047 - The Monocle,https://onlinejudge.org/external/100/10047.pdf,Medium,BFS with State
+UVa,Graph Coloring,10052 - The 4-Colour Problem,https://onlinejudge.org/external/100/10052.pdf,Hard,Graph Coloring / Backtracking
+UVa,Shortest Path,10075 - Airlines,https://onlinejudge.org/external/100/10075.pdf,Medium,Floyd-Warshall / Geometry
+UVa,Union Find / DSU,10301 - Runaway,https://onlinejudge.org/external/103/10301.pdf,Medium,Union-Find / Geometry
+UVa,Shortest Path,10389 - Subway,https://onlinejudge.org/external/103/10389.pdf,Hard,Dijkstra / Geometry
+UVa,Shortest Path,10507 - Waking up brain,https://onlinejudge.org/external/105/10507.pdf,Medium,Dijkstra / BFS
+UVa,Eulerian,10596 - Morning Walk,https://onlinejudge.org/external/105/10596.pdf,Easy,Eulerian Circuit / Degree Check
+UVa,Graph Traversal - BFS/DFS,10603 - Fill,https://onlinejudge.org/external/106/10603.pdf,Medium,BFS / State Space
+UVa,Shortest Path,10702 - Travelling Salesman,https://onlinejudge.org/external/107/10702.pdf,Medium,DP on DAG / Shortest Path
+UVa,Eulerian,10735 - Euler Circuit,https://onlinejudge.org/external/107/10735.pdf,Hard,Eulerian Circuit / Bipartite Matching
+UVa,Shortest Path,10793 - The Orc Attack,https://onlinejudge.org/external/107/10793.pdf,Medium,Floyd-Warshall
+UVa,Shortest Path,10816 - Travel in Desert,https://onlinejudge.org/external/108/10816.pdf,Hard,Dijkstra / MST / Binary Search
+UVa,Shortest Path,10947 - Bear with me,https://onlinejudge.org/external/109/10947.pdf,Medium,Dijkstra / Geometry
+UVa,Shortest Path,11049 - Basic Wall Maze,https://onlinejudge.org/external/110/11049.pdf,Medium,BFS / Shortest Path
+UVa,Shortest Path,11280 - Flying to Fredericton,https://onlinejudge.org/external/112/11280.pdf,Medium,Dijkstra with Hop Constraint
+UVa,Graph Traversal - BFS/DFS,1148 - The Mysterious X Network,https://onlinejudge.org/external/100/1148.pdf,Medium,BFS
+UVa,Max Flow,11603 - Its All About The...,https://onlinejudge.org/external/116/11603.pdf,Hard,Max Flow / Gomory-Hu Tree
+UVa,Graph Traversal - BFS/DFS,11906 - Knight in a War Grid,https://onlinejudge.org/external/119/11906.pdf,Medium,DFS / BFS on Grid
+SPOJ,Shortest Path,HIGHWAYS - Highways,https://www.spoj.com/problems/HIGHWAYS/,Medium,Dijkstra
+SPOJ,Topological Sort,TOPOSORT - Topological Sorting,https://www.spoj.com/problems/TOPOSORT/,Medium,Kahn's Algorithm
+SPOJ,SCC,CAPCITY - Capital City,https://www.spoj.com/problems/CAPCITY/,Medium,SCC / Kosaraju
+SPOJ,Max Flow,FASTFLOW - Fast Maximum Flow,https://www.spoj.com/problems/FASTFLOW/,Hard,Dinic / Push-Relabel
+SPOJ,Bipartite,MATCHING - Fast Maximum Matching,https://www.spoj.com/problems/MATCHING/,Medium,Max Bipartite Matching / Flow
+SPOJ,MST,MST - Minimum Spanning Tree,https://www.spoj.com/problems/MST/,Easy,MST / Kruskal
+SPOJ,MST,MDST - Minimum Diameter Spanning Tree,https://www.spoj.com/problems/MDST/,Hard,Minimum Diameter Spanning Tree
+SPOJ,MST,MSTS - Count Minimum Spanning Trees,https://www.spoj.com/problems/MSTS/,Hard,MST Counting / Kirchhoff
+SPOJ,Shortest Path,ARBITRAG - Arbitrage,https://www.spoj.com/problems/ARBITRAG/,Medium,Floyd-Warshall
+SPOJ,Shortest Path,CHICAGO - 106 miles to Chicago,https://www.spoj.com/problems/CHICAGO/,Medium,Dijkstra / Max Probability Path
+SPOJ,Tree,DISQUERY - Distance Query,https://www.spoj.com/problems/DISQUERY/,Medium,LCA / Binary Lifting
+SPOJ,Shortest Path,TRAFFICN - Traffic Network,https://www.spoj.com/problems/TRAFFICN/,Hard,Dijkstra / Bidirectional
+SPOJ,Shortest Path,ROADNET - Road Net,https://www.spoj.com/problems/ROADNET/,Medium,Floyd-Warshall / Shortest Path Graph
+SPOJ,Graph - Special,PT07X - Vertex Cover,https://www.spoj.com/problems/PT07X/,Medium,Bipartite Matching / MVC
+SPOJ,Cycle Detection,PARADOX - Paradox,https://www.spoj.com/problems/PARADOX/,Easy,Graph / Cycle Detection
+SPOJ,Graph Traversal - BFS/DFS,ABCPATH - ABC Path,https://www.spoj.com/problems/ABCPATH/,Medium,DFS / Longest Path in Grid
+Timus,Tree,1471 - Distance in the Tree,https://acm.timus.ru/problem.aspx?num=1471,Medium,LCA / Tree
+Timus,Graph Traversal - BFS/DFS,1008 - Image Encoding,https://acm.timus.ru/problem.aspx?num=1008,Easy,BFS / DFS
+Timus,Graph Traversal - BFS/DFS,1016 - Cube on the Walk,https://acm.timus.ru/problem.aspx?num=1016,Hard,BFS with State Space
+Timus,Eulerian,1040 - Airline Company,https://acm.timus.ru/problem.aspx?num=1040,Hard,Eulerian Path / DFS
+Timus,Shortest Path,1096 - Get the Right Route Plate!,https://acm.timus.ru/problem.aspx?num=1096,Medium,Shortest Path / BFS
+Timus,Eulerian,1124 - Mosaic,https://acm.timus.ru/problem.aspx?num=1124,Medium,Eulerian Circuit
+Timus,Graph Traversal - BFS/DFS,1301 - Cube in Labyrinth,https://acm.timus.ru/problem.aspx?num=1301,Hard,BFS / 3D Maze
+Timus,Graph - Special,1320 - Graph Decomposition,https://acm.timus.ru/problem.aspx?num=1320,Medium,Graph Matching / Decomposition
+Timus,Shortest Path,1379 - Cups Transportation,https://acm.timus.ru/problem.aspx?num=1379,Hard,Dijkstra / Binary Search / Weight Limits
+Timus,MST,1416 - Confidential,https://acm.timus.ru/problem.aspx?num=1416,Medium,Second Best MST
+Timus,Max Flow,1505 - Oil Transfer,https://acm.timus.ru/problem.aspx?num=1505,Hard,Max Flow / Min Cost
+Timus,Shortest Path,1651 - Shortest Subchain,https://acm.timus.ru/problem.aspx?num=1651,Medium,BFS / Shortest Path
+Timus,Tree,1752 - Tree 2,https://acm.timus.ru/problem.aspx?num=1752,Medium,Tree / Diameter Queries
+Timus,Tree,2119 - Tree Hull,https://acm.timus.ru/problem.aspx?num=2119,Hard,Tree / Dynamic / LCA
+Timus,Graph - Special,2127 - Determinant of a Graph,https://acm.timus.ru/problem.aspx?num=2127,Hard,Graph Theory / Matrix Determinant
+Timus,Tree,2195 - Binary Trees,https://acm.timus.ru/problem.aspx?num=2195,Hard,Tree / Counting / DP
+Timus,Graph - Special,2226 - County of Squirrels,https://acm.timus.ru/problem.aspx?num=2226,Hard,Tree / Greedy / Strategy
+Timus,Graph - Special,2132 - Graph Decomposition Version 2,https://acm.timus.ru/problem.aspx?num=2132,Hard,Graph Decomposition
+Timus,Shortest Path,1525 - Path,https://acm.timus.ru/problem.aspx?num=1525,Medium,Shortest Path / Combinatorics
+HackerRank,Shortest Path - Floyd-Warshall,Floyd: City of Blinding Lights,https://www.hackerrank.com/challenges/floyd-city-of-blinding-lights/problem,Hard,Floyd-Warshall All-Pairs Shortest Path
+HackerRank,Graph Traversal - BFS,BFS: Shortest Reach in a Graph,https://www.hackerrank.com/challenges/ctci-bfs-shortest-reach,Medium,BFS (Cracking the Coding Interview)
+HackerRank,Bipartite Matching,Tripartite Matching,https://www.hackerrank.com/challenges/tripartite-matching/problem,Hard,Bipartite Matching / Counting
+HackerRank,Network Flow - Min Cut,Road Network,https://www.hackerrank.com/challenges/road-network/problem,Hard,Min Cut / Global Min Cut
+HackerRank,MST - Construction,Minimum MST Graph,https://www.hackerrank.com/challenges/minimum-mst-graph/problem,Medium,MST Construction / Greedy
+HackerRank,Network Flow - Max Flow,Tree Flow,https://www.hackerrank.com/challenges/tree-flow/problem,Hard,Max Flow on Tree
+HackerRank,Tree DP,Cut the Tree,https://www.hackerrank.com/challenges/cut-the-tree/problem,Medium,Tree DP / Subtree Sum
+HackerRank,Bipartite Matching,Crab Graphs,https://www.hackerrank.com/challenges/crab-graphs/problem,Hard,Bipartite Matching / Vertex-Disjoint Subgraphs
+HackerRank,Tree - DFS,Coloring Tree,https://www.hackerrank.com/challenges/coloring-tree,Medium,Tree / DFS / Distinct Colors in Subtree
+HackerRank,DSU,Merging Communities,https://www.hackerrank.com/challenges/merging-communities,Medium,Disjoint Set Union / Dynamic Connectivity
+HackerEarth,BFS - Grid,Cloudy Days,https://www.hackerearth.com/practice/algorithms/graphs/breadth-first-search/practice-problems/algorithm/cloudy-days/,Easy,BFS
+HackerEarth,BFS - Grid,Flip Grid,https://www.hackerearth.com/practice/algorithms/graphs/breadth-first-search/practice-problems/algorithm/flip-grid/,Medium,BFS
+HackerEarth,BFS,Two Gold Mines,https://www.hackerearth.com/practice/algorithms/graphs/breadth-first-search/practice-problems/algorithm/two-gold-mines/,Medium,BFS / Multi-source
+HackerEarth,DFS - Tree,Tree Subtree Divisibility,https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/practice-problems/algorithm/tree-subtree-divisibility/,Hard,DFS / Subtree Queries
+HackerEarth,DFS,Another Problem,https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/practice-problems/algorithm/another-problem/,Medium,DFS
+HackerEarth,DFS,Surveillance,https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/practice-problems/algorithm/surveillance/,Medium,DFS / Graph
+HackerEarth,Topological Sort,Lonely Island,https://www.hackerearth.com/practice/algorithms/graphs/topological-sort/practice-problems/algorithm/lonely-island/,Easy,Topological Sort
+HackerEarth,Topological Sort,Oliver and the Game,https://www.hackerearth.com/practice/algorithms/graphs/topological-sort/practice-problems/algorithm/oliver-and-the-game/,Medium,Topological Sort / DFS
+HackerEarth,Topological Sort,Reach the Queen,https://www.hackerearth.com/practice/algorithms/graphs/topological-sort/practice-problems/algorithm/reach-the-queen/,Medium,Topological Sort
+HackerEarth,MST,Travelling Tom,https://www.hackerearth.com/practice/algorithms/graphs/minimum-spanning-tree/practice-problems/algorithm/travelling-tom/,Medium,MST
+HackerEarth,MST,Mr. President,https://www.hackerearth.com/practice/algorithms/graphs/minimum-spanning-tree/practice-problems/algorithm/mr-president/,Medium,MST
+HackerEarth,MST,3 types,https://www.hackerearth.com/practice/algorithms/graphs/minimum-spanning-tree/practice-problems/algorithm/3-types/,Medium,MST
+HackerEarth,MST,Rebuild,https://www.hackerearth.com/practice/algorithms/graphs/minimum-spanning-tree/practice-problems/algorithm/rebuild/,Medium,MST
+HackerEarth,Max Flow,Find the Flow,https://www.hackerearth.com/practice/algorithms/graphs/maximum-flow/practice-problems/algorithm/find-the-flow/,Medium,Max Flow
+HackerEarth,Max Flow,Shil and Lab Assignment,https://www.hackerearth.com/practice/algorithms/graphs/maximum-flow/practice-problems/algorithm/shil-and-lab-assignment/,Medium,Max Flow / Bipartite
+HackerEarth,Max Flow,Decaying Roads,https://www.hackerearth.com/practice/algorithms/graphs/maximum-flow/practice-problems/algorithm/decaying-roads/,Hard,Max Flow / Dynamic
+CodeChef,Tree - Heavy Light,Chef and Tree,https://www.codechef.com/problems/CHEFTREE,Hard,Heavy Light Decomposition / Tree
+CodeChef,Shortest Path,Yet Another Shortest Path Problem,https://www.codechef.com/problems/YASPP,Medium,Shortest Path / Dijkstra
+CodeChef,MST,Spanning Tree,https://www.codechef.com/problems/SPANTREE,Medium,Minimum Spanning Tree
+CodeChef,Graph Theory,A Tale of Three Cities,https://www.codechef.com/problems/TALCA,Medium,LCA / Shortest Path
+CodeChef,Graph Theory,Two Closest,https://www.codechef.com/problems/CLOSEST,Medium,Shortest Path
+CodeChef,Graph Theory,Chef and the Fenced In,https://www.codechef.com/problems/TREDIFF,Hard,MST / Number Theory
+Kattis,Max Flow,Maximum Flow,https://open.kattis.com/problems/maxflow,Medium,Max Flow / Ford-Fulkerson
+Kattis,Min Cost Max Flow,Minimum Cost Maximum Flow,https://open.kattis.com/problems/mincostmaxflow,Hard,Min Cost Max Flow
+Kattis,Eulerian Path,Eulerian Graphs,https://open.kattis.com/problems/eulerian,Medium,Eulerian Path / Cycle
+Kattis,Topological Sort,The Wrath of Kahn,https://open.kattis.com/problems/thewrathofkahn,Medium,Topological Sort / Kahn's Algorithm
+Kattis,Tree - Flow,Flow Finder,https://open.kattis.com/problems/flowfinder,Medium,Tree Flow / Reconstruction
+Kattis,Bipartite Graph,Bipartite Battle,https://open.kattis.com/problems/bipartitebattle,Hard,Bipartite Graph / Game Theory
+Kattis,MST - Manhattan,Grid MST,https://open.kattis.com/problems/gridmst,Medium,Minimum Spanning Tree / Manhattan
+Kattis,Graph Coloring,Coloring Graphs,https://open.kattis.com/problems/coloring,Medium,Graph Coloring / Backtracking
+Kattis,DFS Validation,Maarten's DFS,https://open.kattis.com/problems/martensdfs,Medium,DFS / Order Validation
+Kattis,Graph Counting,A Tree and Two Edges,https://open.kattis.com/problems/atreeandtwoedges,Medium,Graph / Cycle Counting
+Kattis,MST - Uniqueness,Edge Removal,https://open.kattis.com/problems/edgeremoval,Hard,MST / Edge Classification
+Kattis,Shortest Path - Dijkstra,Flowery Trails,https://open.kattis.com/problems/flowerytrails,Medium,Shortest Path / Dijkstra
+Kattis,BFS - Grid,Coast Length,https://open.kattis.com/problems/coastlength,Easy,BFS / Flood Fill
+Kattis,Shortest Path - Dijkstra,Big Truck,https://open.kattis.com/problems/bigtruck,Medium,Shortest Path / Dijkstra
+Kattis,BFS - Connectivity,Where's My Internet??,https://open.kattis.com/problems/whereismyinternet,Easy,BFS / Connected Components
+Kattis,Shortest Path - Dijkstra,Millionaire Madness,https://open.kattis.com/problems/millionairemadness,Medium,Dijkstra / Minimax Path
+Kattis,MST - Kruskal,Lost Map,https://open.kattis.com/problems/lostmap,Easy,Minimum Spanning Tree
+Kattis,MST - Prim,Island Hopping,https://open.kattis.com/problems/islandhopping,Medium,Minimum Spanning Tree
+Kattis,Shortest Path - Alternatives,Detour,https://open.kattis.com/problems/detour,Medium,Shortest Path / Alternative Routes
+Kattis,SCC - Strong Connectivity,Cantina of Babel,https://open.kattis.com/problems/cantinaofbabel,Medium,Strongly Connected Components
+Kattis,Topological Sort - BFS,Brexit,https://open.kattis.com/problems/brexit,Medium,Topological Sort / BFS
+Kattis,Shortest Path - Bellman-Ford,Haunted Graveyard,https://open.kattis.com/problems/hauntedgraveyard,Medium,Bellman-Ford / Negative Cycles
+Kattis,Shortest Path - Dijkstra,Shopping Malls,https://open.kattis.com/problems/shoppingmalls,Medium,Dijkstra / Pathfinding
+Kattis,DFS - Connectivity,Birthday Party,https://open.kattis.com/problems/birthdayparty,Medium,DFS / Graph Connectivity
+TopCoder,Graph Connectivity - Floyd-Warshall,TeamBuilder,https://community.topcoder.com/stat?c=problem_statement&pm=2356,Medium,Floyd-Warshall / Transitive Closure
+TopCoder,Shortest Path - Dijkstra,KiloManX,https://community.topcoder.com/stat?c=problem_statement&pm=1992,Hard,Dijkstra / Bitmask DP
+TopCoder,Shortest Path - Second Best,Paths,https://community.topcoder.com/stat?c=problem_statement&pm=2868,Medium,Second Shortest Path
+TopCoder,MST - Spanning,Kingdom Reorganization,https://community.topcoder.com/stat?c=problem_statement&pm=6066,Medium,Minimum Spanning Tree
+TopCoder,Max Flow - Bipartite,PeopleYouMayKnow,https://community.topcoder.com/stat?c=problem_statement&pm=10580,Hard,Max Flow / Min Cut / Bipartite
+TopCoder,Graph Coloring - Bipartite,VotingBloc,https://community.topcoder.com/stat?c=problem_statement&pm=10692,Hard,Bipartite Matching / Independent Set
+TopCoder,Graph Counting,MergingGraph,https://community.topcoder.com/stat?c=problem_statement&pm=6775,Hard,Graph Compression / Cycle Counting
+Toph,Tree/BFS,Darth Vader and 3PO on a Tree!,https://toph.co/p/darth-vader-and-3po-on-a-tree,Moderate,Tree BFS/DFS / Greedy
+Toph,Tree/DFS,Milad's Lost Tree,https://toph.co/p/milad-s-lost-tree,Moderate,Tree DFS / Reconstruction
+Toph,Grid/DFS,Gold Mines,https://toph.co/p/gold-mines,Moderate,Grid BFS/DFS / Connected Components
+Toph,Tree/DFS,Tahsin and Tree,https://toph.co/p/tahsin-and-tree,Moderate,Tree DFS / Subtree Toggle
+Toph,Tree/MST,Alice in Borderland,https://toph.co/p/alice-in-borderland,Moderate,Tree Path / MST / DSU
+Toph,Graph/Traversal,Tic Toc Toe,https://toph.co/p/tic-toc-toe,Moderate,Graph Traversal / Range Updates
+Toph,Shortest Path,Shortest Path Recovery,https://toph.co/p/shortest-path-recovery,Hard,Bellman-Ford / Graph Reconstruction
+Toph,LCA/HLD,Tree Path Price Queries,https://toph.co/p/tree-path-price-queries,Hard,LCA / HLD / Segment Tree
+Toph,Flow/Tree,Flow on Tree,https://toph.co/p/flow-on-tree,Moderate,Flow / Tree DP
+Toph,Max Flow,MaxFlow (II),https://toph.co/p/maxflow-ii,Moderate,Max Flow / Graph Connectivity
+Toph,Tree/Flow,Flow Finder,https://toph.co/p/flow-finder,Moderate,Tree / Flow Reconstruction
+Toph,Graph Coloring,Color The Graph,https://toph.co/p/color-the-graph,Moderate,Graph Coloring / Combinatorics
+Toph,Shortest Path,Many Paths Many Costs,https://toph.co/p/many-paths-many-costs,Hard,Shortest Path / DP
+Toph,MST,Efficient Construction on Mars,https://toph.co/p/efficient-construction-on-mars,Moderate,MST / Graph
+Toph,Graph,Kingdom of Equality,https://toph.co/p/kingdom-of-equality,Moderate,Graph / DFS
+Toph,DFS/Tree,Help to Be Happy,https://toph.co/p/help-to-be-happy,Moderate,DFS / Tree
+Toph,DSU/Graph,Act of Random Kindness (Hard),https://toph.co/p/act-of-random-kindness-hard,Hard,DSU / Graph
+Toph,Tree/Diameter,Minimum Tree Diameter,https://toph.co/p/minimum-tree-diameter,Moderate,Tree Diameter / Construction
+Toph,Graph,Nilkhet,https://toph.co/p/nilkhet,Moderate,Graph / BFS
+Toph,Graph/DFS,Meena Meets The Marauders,https://toph.co/p/meena-meets-the-marauders,Moderate,DFS / Graph
+Toph,Graph/Flow,Let's Play Pipeline,https://toph.co/p/lets-play-pipeline,Moderate,Flow / Graph
+Toph,Shortest Path,Kingdom - Great Roads of Destiny,https://toph.co/p/kingdom-great-roads-of-destiny,Moderate,BFS / Shortest Path
+Toph,Shortest Path,Traveling Policy of Ajobdesh,https://toph.co/p/traveling-policy-of-ajobdesh,Moderate,BFS / Shortest Path
+Toph,DFS/Graph,Big Bang Theory,https://toph.co/p/big-bang-theory,Moderate,DFS / Graph
+Toph,LCA/Tree,Stark Tree,https://toph.co/p/stark-tree,Hard,LCA / Tree Queries
+LightOJ,Shortest Path,1074 - Extended Traffic,https://lightoj.com/problem/extended-traffic,Medium,Bellman-Ford / Negative Cycle
+LightOJ,MST/LCA,1162 - Min Max Roads,https://lightoj.com/problem/min-max-roads,Medium,MST / LCA
+LightOJ,Max Flow,1167 - Dangerous Tunnels,https://lightoj.com/problem/dangerous-tunnels,Hard,Max Flow / Dinic
+LightOJ,Bipartite Matching,1171 - Knights in Chessboard (II),https://lightoj.com/problem/knights-in-chessboard-ii,Medium,Bipartite Matching
+LightOJ,Bipartite Matching,1184 - Marriage Media,https://lightoj.com/problem/marriage-media,Medium,Bipartite Matching
+LightOJ,Shortest Path,1221 - Travel Company,https://lightoj.com/problem/travel-company,Medium,Negative Cycle / Bellman-Ford
+LightOJ,Tree DP,1230 - Placing Lampposts,https://lightoj.com/problem/placing-lampposts,Medium,Tree DP / Vertex Cover
+LightOJ,Shortest Path,1281 - New Traffic System,https://lightoj.com/problem/new-traffic-system,Hard,Shortest Path / Dijkstra
+LightOJ,Bridge,1291 - Real Life Traffic,https://lightoj.com/problem/real-life-traffic,Hard,Bridge / Tarjan
+LightOJ,Graph Coloring,Graph Coloring,https://lightoj.com/problem/graph-coloring,Medium,Graph Coloring / Matrix Algebra
+LightOJ,SCC,1196 - Inhabitants,https://lightoj.com/problem/inhabitants,Hard,Graph / SCC
+Project Euler,Tree/Game,400 - Fibonacci Tree Game,https://projecteuler.net/problem=400,50%,Tree / Game Theory / Sprague-Grundy
+Project Euler,Grid Path,408 - Admissible Paths Through a Grid,https://projecteuler.net/problem=408,65%,Grid Path / DP / Inclusion-Exclusion
+Project Euler,Graph Path,411 - Uphill Paths,https://projecteuler.net/problem=411,60%,Graph / Longest Path / Modular Coordinates
+Project Euler,Grid/Graph,502 - Counting Castles,https://projecteuler.net/problem=502,55%,Grid / Combinatorics / DP
+Project Euler,Shortest Path,607 - Marsh Crossing,https://projecteuler.net/problem=607,50%,Shortest Path / Fermat's Principle
+Project Euler,Grid Path,638 - Weighted Lattice Paths,https://projecteuler.net/problem=638,50%,Grid Paths / Combinatorics
+Project Euler,Graph Enumeration,677 - Coloured Graphs,https://projecteuler.net/problem=677,60%,Graph Enumeration / Tree Counting
+Project Euler,Graph/Game,690 - Tom and Jerry,https://projecteuler.net/problem=690,50%,Graph / Game Theory / Cops and Robbers
+Project Euler,Grid/SCC,716 - Grid Graphs,https://projecteuler.net/problem=716,70%,Directed Grid / SCC / Combinatorics
+Project Euler,Graph Counting,857 - Beautiful Graphs,https://projecteuler.net/problem=857,65%,Graph Enumeration / Coloring
+Project Euler,Tree/Path,872 - Recursive Tree,https://projecteuler.net/problem=872,50%,Tree / Path Sum / Recursion
+Project Euler,Graph Theory,881 - Divisor Graph Width,https://projecteuler.net/problem=881,50%,Divisor Graph / BFS Levels
+Project Euler,Tree,927 - Prime-ary Tree,https://projecteuler.net/problem=927,50%,Full k-ary Tree / Combinatorics / Number Theory
+Codeforces,Network Flow,546E - Soldier and Traveling,https://codeforces.com/problemset/problem/546/E,2100,Max Flow
+Codeforces,Network Flow,653D - Delivery Bears,https://codeforces.com/problemset/problem/653/D,2200,Max Flow + Binary Search
+Codeforces,Network Flow,510E - Fox And Dinner,https://codeforces.com/problemset/problem/510/E,2300,Max Flow / Bipartite
+Codeforces,Network Flow,727D - T-shirts Distribution,https://codeforces.com/problemset/problem/727/D,1800,Max Flow
+Codeforces,Network Flow,730I - Olympiad in Programming and Sports,https://codeforces.com/problemset/problem/730/I,2000,Min Cost Max Flow
+Codeforces,Network Flow,813D - Two Melodies,https://codeforces.com/problemset/problem/813/D,2600,Max Flow / Min Cut
+Codeforces,Network Flow,818G - Four Melodies,https://codeforces.com/problemset/problem/818/G,2600,Min Cost Max Flow
+Codeforces,Network Flow,843E - Maximum Flow,https://codeforces.com/problemset/problem/843/E,3000,Max Flow / Min Cut (Constructive)
+Codeforces,Network Flow,847J - Students Initiation,https://codeforces.com/problemset/problem/847/J,2400,Max Flow
+Codeforces,Network Flow,863F - Almost Permutation,https://codeforces.com/problemset/problem/863/F,2200,Min Cost Max Flow
+Codeforces,Network Flow,884F - Anti-Palindromize,https://codeforces.com/problemset/problem/884/F,2500,Min Cost Max Flow
+Codeforces,Network Flow,903G - Yet Another Maxflow Problem,https://codeforces.com/problemset/problem/903/G,2700,Max Flow + Segment Tree
+Codeforces,Network Flow,965D - Single-use Stones,https://codeforces.com/problemset/problem/965/D,1900,Max Flow / Greedy
+Codeforces,Network Flow,976F - Minimal k-covering,https://codeforces.com/problemset/problem/976/F,2500,Max Flow
+Codeforces,Network Flow,1009G - Allowed Letters,https://codeforces.com/problemset/problem/1009/G,2400,Max Flow / Bipartite
+Codeforces,Network Flow,1107F - Vasya and Endless Credits,https://codeforces.com/problemset/problem/1107/F,2600,Hungarian / Min Cost Flow
+Codeforces,Network Flow,1187G - Gang Up,https://codeforces.com/problemset/problem/1187/G,2500,Min Cost Max Flow
+Codeforces,Network Flow,1423B - Valuable Paper,https://codeforces.com/problemset/problem/1423/B,1900,Bipartite Matching / Max Flow
+Codeforces,Network Flow,1525D - Armchairs,https://codeforces.com/problemset/problem/1525/D,1800,Min Cost Max Flow / DP
+Codeforces,Network Flow,1530D - Secret Santa,https://codeforces.com/problemset/problem/1530/D,1600,Max Flow / Constructive
+Codeforces,Network Flow,1592F2 - Alice and Recoloring 2,https://codeforces.com/problemset/problem/1592/F2,2800,Min Cut / Max Flow
+Codeforces,Network Flow,1684G - Euclid Guess,https://codeforces.com/problemset/problem/1684/G,2800,Max Flow / Constructive
+Codeforces,Network Flow,1717F - Madoka and The First Session,https://codeforces.com/problemset/problem/1717/F,2500,Max Flow / Constructive
+Codeforces,Network Flow,1766F - MCF,https://codeforces.com/problemset/problem/1766/F,2800,Min Cost Max Flow
+Codeforces,Network Flow,1866G - Grouped Carriages,https://codeforces.com/problemset/problem/1866/G,2100,Max Flow / Binary Search
+Codeforces,Network Flow,704D - Captain America,https://codeforces.com/problemset/problem/704/D,3100,Max Flow / Min Cut
+Codeforces,Network Flow,708D - Incorrect Flow,https://codeforces.com/problemset/problem/708/D,2900,Min Cost Max Flow
+Codeforces,Network Flow,724E - Goods transportation,https://codeforces.com/problemset/problem/724/E,2900,Max Flow / DP
+Codeforces,Network Flow,925F - Parametric Circulation,https://codeforces.com/problemset/problem/925/F,3100,Circulation / Flow
+Codeforces,Network Flow,1054F - Electric Scheme,https://codeforces.com/problemset/problem/1054/F,2700,Max Flow / Bipartite
+Codeforces,Network Flow,1510B - Button Lock,https://codeforces.com/problemset/problem/1510/B,2600,Min Cost Max Flow
+Codeforces,Network Flow,1572D - Bridge Club,https://codeforces.com/problemset/problem/1572/D,2800,Max Flow / Matching
+Codeforces,Network Flow,1630F - Making It Bipartite,https://codeforces.com/problemset/problem/1630/F,3400,Max Flow / Matching
+Codeforces,Network Flow,1721F - Matching Reduction,https://codeforces.com/problemset/problem/1721/F,2800,Max Flow / Matching
+Codeforces,2-SAT,27D - Ring Road 2,https://codeforces.com/problemset/problem/27/D,2200,2-SAT
+Codeforces,2-SAT,228E - The Road to Berland is Paved With Good Intentions,https://codeforces.com/problemset/problem/228/E,1900,2-SAT / DFS
+Codeforces,2-SAT,780D - Innokenty and a Football League,https://codeforces.com/problemset/problem/780/D,1900,2-SAT / Strings
+Codeforces,2-SAT,875C - National Property,https://codeforces.com/problemset/problem/875/C,2100,2-SAT
+Codeforces,2-SAT,1218I - The Light Square,https://codeforces.com/problemset/problem/1218/I,2100,2-SAT
+Codeforces,Graph Matchings,21D - Traveling Graph,https://codeforces.com/problemset/problem/21/D,2400,Matching / TSP
+Codeforces,Graph Matchings,120H - Brevity is Soul of Wit,https://codeforces.com/problemset/problem/120/H,1800,Bipartite Matching
+Codeforces,Graph Matchings,387D - George and Interesting Graph,https://codeforces.com/problemset/problem/387/D,2200,Matching / Flow
+Codeforces,Graph Matchings,489B - BerSU Ball,https://codeforces.com/problemset/problem/489/B,1200,Bipartite Matching
+Codeforces,Graph Matchings,618D - Hamiltonian Spanning Tree,https://codeforces.com/problemset/problem/618/D,2200,Matching / Tree DP
+Codeforces,Graph Matchings,852D - Exploration plan,https://codeforces.com/problemset/problem/852/D,2100,Matching / Flow / Shortest Paths
+Codeforces,Graph Matchings,1027F - Session in BSU,https://codeforces.com/problemset/problem/1027/F,2400,Bipartite Matching / DSU
+Codeforces,Graph Matchings,1360C - Similar Pairs,https://codeforces.com/problemset/problem/1360/C,1100,Bipartite Matching
+Codeforces,Graph Matchings,1381C - Mastermind,https://codeforces.com/problemset/problem/1381/C,2500,Matching / Constructive
+Codeforces,Graph Matchings,1389F - Bicolored Segments,https://codeforces.com/problemset/problem/1389/F,2600,Matching / DP
+Codeforces,Graph Matchings,1470D - Strange Housing,https://codeforces.com/problemset/problem/1470D,2200,Matching / Constructive
+Codeforces,Graph Matchings,1472F - New Year's Puzzle,https://codeforces.com/problemset/problem/1472/F,2100,Matching / DP
+Codeforces,Graph Matchings,1583E - Moment of Bloom,https://codeforces.com/problemset/problem/1583/E,2200,Matching / LCA
+Codeforces,Graph Matchings,1634E - Fair Share,https://codeforces.com/problemset/problem/1634/E,2400,Matching / Eulerian Cycle
+Codeforces,Graph Matchings,1651E - Sum of Matchings,https://codeforces.com/problemset/problem/1651/E,2600,Matching / Combinatorics
+Codeforces,Graph Matchings,1735E - House Planning,https://codeforces.com/problemset/problem/1735/E,2400,Matching / Constructive
+Codeforces,Graph Matchings,1773A - Amazing Trick,https://codeforces.com/problemset/problem/1773/A,1900,Matching / Permutation
+Codeforces,Graph Matchings,981F - Round Marriage,https://codeforces.com/problemset/problem/981/F,2500,Matching / Binary Search
+Codeforces,Graph Matchings,590E - Birthday,https://codeforces.com/problemset/problem/590/E,3200,Matching / Strings
+Codeforces,Graph Matchings,891D - Sloth,https://codeforces.com/problemset/problem/891/D,3100,Matching / Tree DP
+Codeforces,Graph Matchings,575C - Party,https://codeforces.com/problemset/problem/575/C,2700,Matching / Bitmask
+Codeforces,Graph Matchings,468D - Tree,https://codeforces.com/problemset/problem/468/D,3100,Matching / Tree
+Codeforces,Eulerian Path,429E - Points and Segments,https://codeforces.com/problemset/problem/429/E,2400,Eulerian Cycle / 2-SAT
+Codeforces,Eulerian Path,527E - Data Center Drama,https://codeforces.com/problemset/problem/527/E,2200,Eulerian Path / Constructive
+Codeforces,Eulerian Path,723E - One-Way Reform,https://codeforces.com/problemset/problem/723/E,2200,Eulerian Circuit / Flow
+Codeforces,Hamiltonian Path,1367C - Social Distance,https://codeforces.com/problemset/problem/1367/C,1300,Hamiltonian / Constructive
+UVa,Network Flow,10779 - Collectors Problem,https://onlinejudge.org/external/107/10779.pdf,Medium,Max Flow
+UVa,Network Flow,11045 - My T-shirt suits me,https://onlinejudge.org/external/110/11045.pdf,Medium,Max Flow / Bipartite Matching
+UVa,Network Flow,10804 - Gopher Strategy,https://onlinejudge.org/external/108/10804.pdf,Hard,Max Flow / Binary Search
+UVa,Network Flow,11167 - Monkeys in a Tree,https://onlinejudge.org/external/111/11167.pdf,Hard,Max Flow
+UVa,Network Flow,10594 - Data Flow,https://onlinejudge.org/external/105/10594.pdf,Medium,Min Cost Max Flow
+UVa,Network Flow,10746 - Crime Wave - The Sequel,https://onlinejudge.org/external/107/10746.pdf,Medium,Min Cost Max Flow / Assignment
+UVa,Network Flow,10806 - Dijkstra, Dijkstra,https://onlinejudge.org/external/108/10806.pdf,Medium,Min Cost Flow / Shortest Path
+UVa,Graph Matchings,11183 - Teen Girl Squad,https://onlinejudge.org/external/111/11183.pdf,Hard,Minimum Arborescence / Matching
+UVa,Hamiltonian Path,10802 - Lex Smallest Drive,https://onlinejudge.org/external/108/10802.pdf,Hard,Hamiltonian Path / DP
+SPOJ,Network Flow,MFLOU - Maximum Flow,https://www.spoj.com/problems/MFLOU/,Medium,Max Flow
+SPOJ,Network Flow,MCHEF - Chef and Minimum Flow,https://www.spoj.com/problems/MCHEF/,Hard,Min Cost Max Flow
+SPOJ,Graph Matchings,ADAPLANT - Ada and Plants,https://www.spoj.com/problems/ADAPLANT/,Hard,Bipartite Matching / Flow
+SPOJ,2-SAT,2SAT - 2-Satisfiability,https://www.spoj.com/problems/2SAT/,Hard,2-SAT
+SPOJ,2-SAT,SUDOKU - Sudoku,https://www.spoj.com/problems/SUDOKU/,Hard,2-SAT / Backtracking
+SPOJ,Eulerian Path,EULER - Eulerian Path,https://www.spoj.com/problems/EULER/,Medium,Eulerian Path / Circuit
+SPOJ,Eulerian Path,TOURS - Tourist,https://www.spoj.com/problems/TOURS/,Hard,Eulerian Path / Min Cost Flow
+SPOJ,Hamiltonian Path,HAMIL - Hamiltonian Path,https://www.spoj.com/problems/HAMIL/,Hard,Hamiltonian Path
+SPOJ,Hamiltonian Path,HAMILTON - Hamiltonian Cycle,https://www.spoj.com/problems/HAMILTON/,Hard,Hamiltonian Cycle
+LightOJ,Network Flow,1076 - Get the Containers,https://lightoj.com/problem/get-the-containers,Medium,Max Flow / Binary Search
+LightOJ,Network Flow,1155 - Power Transmission,https://lightoj.com/problem/power-transmission,Medium,Max Flow
+LightOJ,Graph Matchings,1198 - Job Assignment,https://lightoj.com/problem/job-assignment,Medium,Bipartite Matching / Hungarian
+LightOJ,Graph Matchings,1232 - Coin Change (II),https://lightoj.com/problem/coin-change-ii,Medium,Matching / DP
+Timus,Network Flow,1250 - Sea Burial,https://acm.timus.ru/problem.aspx?num=1250,Hard,Max Flow / Min Cut
+Timus,Network Flow,1517 - Freedom of Speech,https://acm.timus.ru/problem.aspx?num=1517,Hard,Max Flow / Suffix Array
+Timus,Graph Matchings,1111 - Squares,https://acm.timus.ru/problem.aspx?num=1111,Hard,General Matching / Geometry
+Timus,2-SAT,1515 - Cashmaster,https://acm.timus.ru/problem.aspx?num=1515,Hard,2-SAT
+Timus,2-SAT,1577 - E-mail,https://acm.timus.ru/problem.aspx?num=1577,Hard,2-SAT / DP
+Kattis,Network Flow,mincut - Minimum Cut,https://open.kattis.com/problems/mincut,Easy,Min Cut / Max Flow
+Kattis,Graph Matchings,bipartitematching - Bipartite Matching,https://open.kattis.com/problems/bipartitematching,Medium,Bipartite Matching
+Kattis,Graph Matchings,assign - Assignment Problem,https://open.kattis.com/problems/assign,Hard,Hungarian / Assignment
+AtCoder,Network Flow,ARC 074 F - Lotus Leaves,https://atcoder.jp/contests/arc074/tasks/arc074_f,1819,Min Cut / Max Flow
+AtCoder,Network Flow,ARC 098 F - Donation,https://atcoder.jp/contests/arc098/tasks/arc098_f,2575,Max Flow / Min Cut
+AtCoder,Network Flow,ARC 116 F - Deque Game,https://atcoder.jp/contests/arc116/tasks/arc116_f,2529,Max Flow / Game
+AtCoder,Graph Matchings,ARC 092 F - Two Faced Edges,https://atcoder.jp/contests/arc092/tasks/arc092_f,2310,Bipartite Matching / SCC
+AtCoder,Graph Matchings,ARC 111 D - Orientation,https://atcoder.jp/contests/arc111/tasks/arc111_d,1908,Matching / Orientation
+AtCoder,2-SAT,AGC 007 C - Pushing Balls,https://atcoder.jp/contests/agc007/tasks/agc007_c,2822,2-SAT / DP
+AtCoder,Hamiltonian Path,ABC 180 F - Bounded Subarrays,https://atcoder.jp/contests/abc180/tasks/abc180_f,1500,Hamiltonian / DP
+TopCoder,Graph Matchings,TPP,https://community.topcoder.com/stat?c=problem_statement&pm=13836,Hard,Matching / Flow

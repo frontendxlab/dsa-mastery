@@ -1,0 +1,332 @@
+Platform,Category,Problem Name,URL,Difficulty/Rating,Key Concept
+LeetCode,Triangles,Type of Triangle,https://leetcode.com/problems/type-of-triangle/,Easy,Triangle classification (equilateral/isosceles/scalene)
+LeetCode,Triangles,Largest Perimeter Triangle,https://leetcode.com/problems/largest-perimeter-triangle/,Easy,Triangle inequality - max perimeter
+LeetCode,Triangles,Largest Triangle Area,https://leetcode.com/problems/largest-triangle-area/,Easy,Shoelace formula - max area from points
+LeetCode,Triangles,Valid Triangle Number,https://leetcode.com/problems/valid-triangle-number/,Medium,Counting triangles from side lengths
+LeetCode,Triangles,Minimum Score Triangulation of Polygon,https://leetcode.com/problems/minimum-score-triangulation-of-polygon/,Medium,DP + polygon triangulation
+LeetCode,Triangles,Find Maximum Area of a Triangle,https://leetcode.com/problems/find-maximum-area-of-a-triangle/,Medium,Area from coordinates
+LeetCode,Triangles,Valid Boomerang,https://leetcode.com/problems/valid-boomerang/,Easy,Collinearity check
+LeetCode,Right-Angled Triangles,Detonate the Maximum Bombs,https://leetcode.com/problems/detonate-the-maximum-bombs/,Medium,Circle intersection chain (BFS/DFS)
+LeetCode,Right-Angled Triangles,Minimum Time Visiting All Points,https://leetcode.com/problems/minimum-time-visiting-all-points/,Easy,Chebyshev distance on grid
+LeetCode,Rectangles & Squares,Rectangle Area,https://leetcode.com/problems/rectangle-area/,Medium,Union area of 2 rectangles
+LeetCode,Rectangles & Squares,Rectangle Overlap,https://leetcode.com/problems/rectangle-overlap/,Easy,Overlap detection
+LeetCode,Rectangles & Squares,Valid Square,https://leetcode.com/problems/valid-square/,Medium,Square from 4 points
+LeetCode,Rectangles & Squares,Detect Squares,https://leetcode.com/problems/detect-squares/,Medium,Count axis-aligned squares
+LeetCode,Rectangles & Squares,Minimum Area Rectangle,https://leetcode.com/problems/minimum-area-rectangle/,Medium,Min area from points (axis-aligned)
+LeetCode,Rectangles & Squares,Minimum Area Rectangle II,https://leetcode.com/problems/minimum-area-rectangle-ii/,Medium,Min area from points (any orientation)
+LeetCode,Rectangles & Squares,Perfect Rectangle,https://leetcode.com/problems/perfect-rectangle/,Hard,Exact cover check
+LeetCode,Rectangles & Squares,Rectangle Area II,https://leetcode.com/problems/rectangle-area-ii/,Hard,Union area with sweep line
+LeetCode,Rectangles & Squares,Circle and Rectangle Overlapping,https://leetcode.com/problems/circle-and-rectangle-overlapping/,Medium,Circle-rect intersection
+LeetCode,Rectangles & Squares,Number of Rectangles That Can Form Largest Square,https://leetcode.com/problems/number-of-rectangles-that-can-form-the-largest-square/,Easy,Min side heuristic
+LeetCode,Rectangles & Squares,Find the Largest Area of Square Inside Two Rectangles,https://leetcode.com/problems/find-the-largest-area-of-square-inside-two-rectangles/,Medium,Intersection square
+LeetCode,Rectangles & Squares,Maximum Area Rectangle With Point Constraints I,https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/,Medium,Constraint-based rectangle
+LeetCode,Rectangles & Squares,Maximum Area Rectangle With Point Constraints II,https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-ii/,Hard,Constraint-based rectangle (advanced)
+LeetCode,Rectangles & Squares,Max Points on a Line,https://leetcode.com/problems/max-points-on-a-line/,Hard,Collinearity via slope hash
+LeetCode,Circles,Generate Random Point in a Circle,https://leetcode.com/problems/generate-random-point-in-a-circle/,Medium,Rejection / polar sampling
+LeetCode,Circles,Minimum Cuts to Divide a Circle,https://leetcode.com/problems/minimum-cuts-to-divide-a-circle/,Easy,Circle division symmetry
+LeetCode,Circles,Count Lattice Points Inside a Circle,https://leetcode.com/problems/count-lattice-points-inside-a-circle/,Medium,Lattice point counting
+LeetCode,Circles,Queries on Number of Points Inside a Circle,https://leetcode.com/problems/queries-on-number-of-points-inside-a-circle/,Medium,Distance <= radius
+LeetCode,Circles,Maximum Number of Darts Inside a Circular Dartboard,https://leetcode.com/problems/maximum-number-of-darts-inside-of-a-circular-dartboard/,Hard,Angular sweep
+LeetCode,Circles,Maximum Number of Visible Points,https://leetcode.com/problems/maximum-number-of-visible-points/,Hard,Polar angle + sliding window
+LeetCode,Polygons,Erect the Fence,https://leetcode.com/problems/erect-the-fence/,Hard,Convex hull (Monotone Chain)
+LeetCode,Polygons,Self Crossing,https://leetcode.com/problems/self-crossing/,Hard,Self-intersecting polygon
+LeetCode,Polygons,Check If It Is a Straight Line,https://leetcode.com/problems/check-if-it-is-a-straight-line/,Easy,Collinearity
+LeetCode,Polygons,Convex Polygon,https://leetcode.com/problems/convex-polygon/,Medium,Convexity check
+LeetCode,Polygons,Minimum Lines to Represent a Line Chart,https://leetcode.com/problems/minimum-lines-to-represent-a-line-chart/,Medium,Collinear segments
+LeetCode,Polygons,K Closest Points to Origin,https://leetcode.com/problems/k-closest-points-to-origin/,Medium,Euclidean distance sorting
+LeetCode,Polygons,Minimum Area Rectangle II,https://leetcode.com/problems/minimum-area-rectangle-ii/,Medium,Any orientation rectangle
+LeetCode,Polygons,Best Position for a Service Centre,https://leetcode.com/problems/best-position-for-a-service-centre/,Hard,Geometric median
+LeetCode,Polygons,Minimize Manhattan Distances,https://leetcode.com/problems/minimize-manhattan-distances/,Hard,Manhattan geometry
+LeetCode,Polygons,Projection Area of 3D Shapes,https://leetcode.com/problems/projection-area-of-3d-shapes/,Easy,3D shape projections
+LeetCode,Polygons,Surface Area of 3D Shapes,https://leetcode.com/problems/surface-area-of-3d-shapes/,Easy,3D surface area
+LeetCode,Polygons,Matrix Cells in Distance Order,https://leetcode.com/problems/matrix-cells-in-distance-order/,Easy,Manhattan distance ordering
+LeetCode,Polygons,Mirror Reflection,https://leetcode.com/problems/mirror-reflection/,Medium,Reflection geometry
+LeetCode,Polygons,Check if the Rectangle Corner Is Reachable,https://leetcode.com/problems/check-if-the-rectangle-corner-is-reachable/,Hard,Circle barriers in rectangle
+LeetCode,Trapezoids,Count Number of Trapezoids I,https://leetcode.com/problems/count-number-of-trapezoids-i/,Medium,Counting horizontal trapezoids
+LeetCode,Trapezoids,Count Number of Trapezoids II,https://leetcode.com/problems/count-number-of-trapezoids-ii/,Hard,Counting trapezoids (advanced)
+Codeforces,Triangles,Bad Triangle,https://codeforces.com/contest/1398/problem/A,800,Triangle inequality
+Codeforces,Triangles,Mahmoud and a Triangle,https://codeforces.com/problemset/problem/766/B,900,Triangle inequality on sorted array
+Codeforces,Triangles,Make a Triangle!,https://codeforces.com/problemset/problem/1064/A,800,Minimum perimeter increase
+Codeforces,Triangles,Triangles on a Rectangle,https://codeforces.com/problemset/problem/1620/B,1000,Max area using rectangle boundary
+Codeforces,Triangles,Bovine Dilemma,https://codeforces.com/problemset/problem/1462/A,800,Triangle area - distinct area values
+Codeforces,Triangles,Gerald's Hexagon,https://codeforces.com/problemset/problem/559/A,1600,Decompose hexagon into triangles
+Codeforces,Triangles,Number of Parallelograms,https://codeforces.com/problemset/problem/660/D,1900,Counting via midpoint
+Codeforces,Triangles,Four Segments,https://codeforces.com/problemset/problem/1462/E1,1700,Combinatorics + triangle inequality
+Codeforces,Triangles,Game With Triangles: Season 2,https://codeforces.com/contest/2074/problem/G,—,Non-overlapping triangles in polygon DP
+Codeforces,Triangles,XOR and Triangle,https://codeforces.com/problemset/problem/1730/B,1300,Binary XOR triangle inequality
+Codeforces,Triangles,Cut the Triangle,https://codeforces.com/problemset/problem/1767/A,800,Axis-aligned triangle classification
+Codeforces,Triangles,The Third Side,https://codeforces.com/problemset/problem/1660/A,800,Triangle inequality
+Codeforces,Triangles,Representative Edges,https://codeforces.com/problemset/problem/1797/B,1500,Edge geometry
+Codeforces,Triangles,Manhattan Triangle,https://codeforces.com/problemset/problem/1971/F,2400,Manhattan distance triangle
+Codeforces,Right-Angled Triangles,Cover Points,https://codeforces.com/contest/1047/problem/B,900,Isosceles right triangle covering
+Codeforces,Right-Angled Triangles,Perpendicular Segments,https://codeforces.com/problemset/problem/1741/B,900,Perpendicular line construction
+Codeforces,Right-Angled Triangles,Arpa and an exam about geometry,https://codeforces.com/problemset/problem/851/B,1200,Angle detection
+Codeforces,Rectangles & Squares,Construct a Rectangle,https://codeforces.com/problemset/problem/1872/A,800,Rectangle from 3 lengths
+Codeforces,Rectangles & Squares,Rectangles,https://codeforces.com/contest/1028/problem/C,1600,Intersection of many rectangles
+Codeforces,Rectangles & Squares,Square of Rectangles,https://codeforces.com/problemset/problem/1772/D,1200,Rectangles union
+Codeforces,Rectangles & Squares,Wilbur and Swimming Pool,https://codeforces.com/problemset/problem/1680/B,900,Rectangle from min/max coords
+Codeforces,Rectangles & Squares,Jumbo Extra Cheese 2,https://codeforces.com/problemset/problem/1730/A,1000,Rectangle placement optimization
+Codeforces,Rectangles & Squares,Not a Geometry Problem,https://codeforces.com/contest/2074/problem/D,1200,Rectangle/circle intersection
+Codeforces,Rectangles & Squares,Rectangle Arrangement,https://codeforces.com/problemset/problem/2027/A,500,Rearranging rectangles
+Codeforces,Rectangles & Squares,Weird Sum,https://codeforces.com/problemset/problem/1648/A,1400,Sum of Manhattan distances
+Codeforces,Circles,Circle Perimeter,https://codeforces.com/problemset/problem/1971/F,1600,Lattice points on circle
+Codeforces,Circles,Amr and Pins,https://codeforces.com/problemset/problem/507/B,1000,Circle rolling distance
+Codeforces,Circles,NN and the Optical Illusion,https://codeforces.com/problemset/problem/1100/C,1300,Tangent circles
+Codeforces,Circles,Grand Finale: Circles,https://codeforces.com/problemset/problem/1936/F,3300,Circle geometry
+Codeforces,Circles,Place for a Selfie,https://codeforces.com/problemset/problem/1797/B,1800,Circle-curve tangent
+Codeforces,Circles,Very Suspicious,https://codeforces.com/problemset/problem/1670/D,1700,Intersecting lines triangular regions
+Codeforces,Circles,Inscribed Figures,https://codeforces.com/problemset/problem/1156/A,700,Inscribed shapes hierarchy
+Codeforces,Circles,Cardboard for Pictures,https://codeforces.com/problemset/problem/1850/E,1000,Circle area from photo frames
+Codeforces,Polygons,Polygon for the Angle,https://codeforces.com/problemset/problem/1096/C,1600,Regular polygon interior angles
+Codeforces,Polygons,Simple Polygon Embedding,https://codeforces.com/problemset/problem/1572/A,2000,Polygon in polygon
+Codeforces,Polygons,Not So Simple Polygon Embedding,https://codeforces.com/problemset/problem/1610/C,2200,Polygon containment
+Codeforces,Polygons,Bicycle Race,https://codeforces.com/problemset/problem/659/D,1500,Direction changes on polygon
+Codeforces,Polygons,Aerodynamic,https://codeforces.com/contest/1299/problem/B,1900,Minkowski sum polygon similarity
+Codeforces,Polygons,Geometry Hacking,https://codeforces.com/gym/105388/problem/I,—,Point-in-polygon edge case
+Codeforces,Polygons,Mainak and the Bleeding Polygon,https://codeforces.com/problemset/problem/1726/H,3500,Polygon dissection
+Codeforces,Polygons,Vlad and Shapes,https://codeforces.com/problemset/problem/1925/A,800,Grid shape recognition
+Codeforces,Polygons,Connect the Points,https://codeforces.com/problemset/problem/1797/D,1300,Connecting points with segments
+Codeforces,Polygons,Phoenix and Puzzle,https://codeforces.com/problemset/problem/1515/B,1000,Squares from right isosceles triangles
+Codeforces,Polygons,Travelling Salesman Problem,https://codeforces.com/problemset/problem/1504/B,1200,Manhattan tour
+Codeforces,Polygons,Draw Polygon Lines,https://codeforces.com/problemset/problem/1939/A,—,Interactive polygon construction
+Codeforces,Polygons,Tower Capturing,https://codeforces.com/problemset/problem/1971/E,3300,Combinatorial geometry + DP
+Codeforces,Polygons,Fractal Origami,https://codeforces.com/problemset/problem/1942/E,2700,Fractal geometry
+Codeforces,Polygons,Kevin and Geometry,https://codeforces.com/problemset/problem/2048/E,2100,Geometric construction
+Codeforces,Polygons,Manhattan Subarrays,https://codeforces.com/problemset/problem/1550/C,1600,Manhattan geometry subarrays
+Codeforces,Polygons,The Check of the Point,https://codeforces.com/problemset/problem/1791/C,800,Point verification
+Codeforces,Polygons,Parallelogram is Back,https://codeforces.com/problemset/problem/749/B,1200,Find 4th vertex of parallelogram
+Codeforces,Polygons,Mister B and Angle in Polygon,https://codeforces.com/problemset/problem/1096/C,1600,Angle in regular polygon
+Codeforces,Polygons,New Year and North Pole,https://codeforces.com/problemset/problem/750/A,800,Direction on Earth (spherical)
+Codeforces,Polygons,Two Regular Polygons,https://codeforces.com/problemset/problem/1317/A,900,Regular polygon vertices
+Codeforces,Polygons,Draw a Square,https://codeforces.com/problemset/problem/1918/A,800,Square construction
+Codeforces,Polygons,2D Traveling,https://codeforces.com/problemset/problem/1869/A,800,2D plane travel
+Codeforces,Polygons,Line Segments,https://codeforces.com/problemset/problem/1741/D,1500,Segment geometry
+Codeforces,Polygons,Meeting on the Line,https://codeforces.com/problemset/problem/1730/B,1400,Meeting point minimization
+Codeforces,Polygons,The Morning Star,https://codeforces.com/problemset/problem/1850/F,1200,Slope counting
+Codeforces,Polygons,Finding a Mine,https://codeforces.com/problemset/problem/1934/C,1400,Interactive mine detection
+Codeforces,Polygons,Tenzing and Triangle,https://codeforces.com/problemset/problem/1942/C,2300,Triangle DP
+Codeforces,Polygons,Definitely a Geometry Problem,https://codeforces.com/problemset/problem/1942/E,—,Special geometry problem
+Codeforces,Polygons,Rudolph and Christmas Tree,https://codeforces.com/problemset/problem/1846/B,800,Tree geometry
+Codeforces,Polygons,Maximize the Intersections,https://codeforces.com/problemset/problem/1788/C,1600,Intersection maximizing
+Codeforces,Polygons,Not Splitting,https://codeforces.com/problemset/problem/1620/D,1700,Partition geometry
+Codeforces,Polygons,Symmetrical Polygons,https://codeforces.com/problemset/problem/1660/C,1200,Polygon symmetry
+Codeforces,Polygons,Series of Crimes,https://codeforces.com/problemset/problem/1810/B,900,Crime pattern geometry
+CodeChef,Triangles,Valid Triangles,https://www.codechef.com/problems/FLOW013,—,Triangle validity check
+CodeChef,Triangles,Fit Squares in Triangle,https://www.codechef.com/problems/TRISQ,—,Fitting squares in right triangle
+CodeChef,Triangles,Chef and Triangles,https://www.codechef.com/problems/TRICHEF,—,Triangle properties
+CodeChef,Triangles,Triangle Classification,https://www.codechef.com/problems/TRIANGCL,—,Acute/obtuse/right classification
+CodeChef,Triangles,Find Area of Triangles,https://www.codechef.com/problems/AREA,—,Triangle area via coordinates
+CodeChef,Rectangles & Squares,Rectangle,https://www.codechef.com/problems/RECTANGL,—,Check if 4 sides form rectangle
+CodeChef,Rectangles & Squares,Farmer and His Plot,https://www.codechef.com/problems/RECTSQ,—,Largest square in rectangle (GCD)
+CodeChef,Rectangles & Squares,Square in Rectangles,https://www.codechef.com/problems/SQRECT,—,Square fitting
+CodeChef,Polygons,Area OR Perimeter,https://www.codechef.com/problems/AREAPERI,—,Area vs perimeter comparison
+CodeChef,Polygons,Square Root,https://www.codechef.com/problems/SQRT,—,Finding square roots (geometry related)
+HackerRank,Triangles,Small Triangles Large Triangles,https://www.hackerrank.com/challenges/small-triangles-large-triangles,—,Heron's formula sorting by area
+HackerRank,Triangles,Minimum Height Triangle,https://www.hackerrank.com/challenges/lowest-triangle,—,Area = 1/2 * base * height
+HackerRank,Triangles,Maximum Perimeter Triangle,https://www.hackerrank.com/challenges/maximum-perimeter-triangle,—,Greedy triangle inequality
+HackerRank,Triangles,Isosceles Triangles,https://www.hackerrank.com/challenges/isosceles-triangles,—,Counting isosceles in regular polygon
+HackerRank,Triangles,Sherlock and Geometry,https://www.hackerrank.com/challenges/sherlock-and-geometry,—,Circle-triangle intersection
+HackerRank,Right-Angled Triangles,Project Euler #91: Right Triangles with Integer Coordinates,https://www.hackerrank.com/contests/projecteuler/challenges/euler091,—,Count right triangles on grid
+HackerRank,Rectangles & Squares,Points on a Rectangle,https://www.hackerrank.com/challenges/points-on-rectangle,—,Check all points on rectangle edges
+HackerRank,Polygons,Compute the Area of a Polygon,https://www.hackerrank.com/challenges/lambda-march-compute-the-area-of-a-polygon,—,Shoelace formula
+HackerRank,Polygons,Geometry Queries,https://www.hackerrank.com/challenges/geometry-queries,—,Point-line containment
+HackerRank,Polygons,Polygon,https://www.hackerrank.com/challenges/polygon,—,Axis-aligned polygon point counting
+CSES,Triangles,Point Location Test,https://cses.fi/problemset/task/2189,—,Cross product orientation
+CSES,Triangles,Line Segment Intersection,https://cses.fi/problemset/task/2190,—,Segment intersection via orientation
+CSES,Polygons,Polygon Area,https://cses.fi/problemset/task/2191,—,Shoelace formula
+CSES,Polygons,Point in Polygon,https://cses.fi/problemset/task/2192,—,Ray casting / winding number
+CSES,Polygons,Polygon Lattice Points,https://cses.fi/problemset/task/2193,—,Pick's theorem
+CSES,Polygons,Convex Hull,https://cses.fi/problemset/task/2195,—,Graham Scan / Monotone Chain
+CSES,Polygons,Minimum Euclidean Distance,https://cses.fi/problemset/task/2194,—,Closest pair of points
+CSES,Polygons,Maximum Manhattan Distances,https://cses.fi/problemset/task/2274,—,Manhattan distance optimization
+CSES,Polygons,All Manhattan Distances,https://cses.fi/problemset/task/2275,—,Sum of Manhattan distances
+CSES,Polygons,Intersection Points,https://cses.fi/problemset/task/2275,—,Line segment intersection count
+CSES,Polygons,Line Segments Trace I,https://cses.fi/problemset/task/2281,—,Segment tracing
+CSES,Polygons,Line Segments Trace II,https://cses.fi/problemset/task/2281,—,Segment tracing advanced
+CSES,Polygons,Lines and Queries I,https://cses.fi/problemset/task/2259,—,Li Chao tree
+CSES,Polygons,Lines and Queries II,https://cses.fi/problemset/task/2260,—,Li Chao tree advanced
+CSES,Rectangles,Area of Rectangles,https://cses.fi/problemset/task/1741,—,Union area with sweep line
+CSES,Rectangles,Rectangle Cutting,https://cses.fi/problemset/task/1744,—,Cut rectangle into squares DP
+CSES,Polygons,Robot Path,https://cses.fi/problemset/task/2282,—,Robot path geometry
+AtCoder,Triangles,ABC362B - Right Triangle,https://atcoder.jp/contests/abc362/tasks/abc362_b,-320,Right angle via Pythagoras
+AtCoder,Triangles,ARC173B - Make Many Triangles,https://atcoder.jp/contests/arc173/tasks/arc173_b,500,Max non-degenerate triangles from points
+AtCoder,Triangles,AGC036A - Triangle,https://atcoder.jp/contests/agc036/tasks/agc036_a,400,Construct triangle of given area
+AtCoder,Triangles,ABC292F - Regular Triangle Inside a Rectangle,https://atcoder.jp/contests/abc292/tasks/abc292_f,1600,Max equilateral in rectangle
+AtCoder,Triangles,TokioMarine2020F - Triangles,https://atcoder.jp/contests/tokiomarine2020/tasks/tokiomarine2020_f,2300,Lattice triangle with interior point constraint
+AtCoder,Triangles,ABC033D - Triangle Classification,https://atcoder.jp/contests/abc033/tasks/abc033_d,2248,Acute/right/obtuse from 3 points
+AtCoder,Triangles,ABC181C - Collinearity,https://atcoder.jp/contests/abc181/tasks/abc181_c,248,3-point collinearity
+AtCoder,Triangles,ABC248E - K-colinear Line,https://atcoder.jp/contests/abc248/tasks/abc248_e,1292,Points on same line
+AtCoder,Rectangles & Squares,ABC130C - Rectangle Cutting,https://atcoder.jp/contests/abc130/tasks/abc130_c,626,Rectangle division point
+AtCoder,Rectangles & Squares,ABC223E - Placing Rectangles,https://atcoder.jp/contests/abc223/tasks/abc223_e,1510,Rectangle placement
+AtCoder,Rectangles & Squares,ABC266C - Convex Quadrilateral,https://atcoder.jp/contests/abc266/tasks/abc266_c,516,Convexity via cross product
+AtCoder,Polygons,ABC117B - Polygon,https://atcoder.jp/contests/abc117/tasks/abc117_b,258,Polygon existence theorem
+AtCoder,Polygons,ABC296G - Polygon and Points,https://atcoder.jp/contests/abc296/tasks/abc296_g,2300,Point in convex polygon
+AtCoder,Polygons,ABC251G - Intersection of Polygons,https://atcoder.jp/contests/abc251/tasks/abc251_g,2600,Minkowski sum point containment
+AtCoder,Polygons,ABC218C - Shapes,https://atcoder.jp/contests/abc218/tasks/abc218_c,300,90 rotation + translation matching
+AtCoder,Polygons,ABC016D - One Cut,https://atcoder.jp/contests/abc016/tasks/abc016_d,1305,Segment-polygon intersection
+AtCoder,Polygons,ABC220G - Isosceles Trapezium,https://atcoder.jp/contests/abc220/tasks/abc220_g,2439,Trapezium from 4 points
+AtCoder,Polygons,ABC207D - Congruence Points,https://atcoder.jp/contests/abc207/tasks/abc207_d,2074,Point set congruence
+AtCoder,Polygons,ABC022D - Big Bang,https://atcoder.jp/contests/abc022/tasks/abc022_d,1857,Convex hull expansion
+AtCoder,Polygons,ABC139F - Engines,https://atcoder.jp/contests/abc139/tasks/abc139_f,2034,Vector sum maximization
+AtCoder,Polygons,ABC286H - Don't Swim,https://atcoder.jp/contests/abc286/tasks/abc286_h,2526,Shortest path avoiding convex polygon
+AtCoder,Circles,ABC151F - Enclose All,https://atcoder.jp/contests/abc151/tasks/abc151_f,1671,Minimum enclosing circle
+AtCoder,Circles,ABC191D - Circle Lattice Points,https://atcoder.jp/contests/abc191/tasks/abc191_d,1953,Lattice points in circle
+AtCoder,Circles,ABC157F - Yakiniku Optimization Problem,https://atcoder.jp/contests/abc157/tasks/abc157_f,2525,Min covering radius
+AtCoder,Circles,AGC021B - Holes,https://atcoder.jp/contests/agc021/tasks/agc021_b,2130,Voronoi on circle
+AtCoder,Polygons,ABC385F - Visible Buildings,https://atcoder.jp/contests/abc385/tasks/abc385_f,1905,Line of sight geometry
+TopCoder,Right-Angled Triangles,RightTriangle,https://community.topcoder.com/stat?c=problem_statement&pm=11775,—,Right triangles on circle points
+TopCoder,Polygons,ConvexPolygon,https://community.topcoder.com/stat?c=problem_statement&pm=11776,—,Convex polygon area
+Olympiad,Triangles,IMO 2018/1,https://artofproblemsolving.com/community/c5h1629530,—,Acute triangle circumcircle concurrency
+Olympiad,Triangles,IMO 2011/6,https://artofproblemsolving.com/community/c5h1494295,—,Acute triangle Simson line
+Olympiad,Triangles,IMO 2000/6,https://artofproblemsolving.com/community/c5h1485755,—,Acute triangle orthic triangle
+Olympiad,Triangles,IMO 2008/6,https://artofproblemsolving.com/community/c5h1065469,—,Convex quadrilateral incircle
+Olympiad,Triangles,USAMO 2010/1,https://artofproblemsolving.com/community/c5h1439746,—,Cyclic pentagon
+Olympiad,Triangles,USAMO 2016/3,https://artofproblemsolving.com/community/c5h1494295,—,Acute triangle incenter excenter
+Olympiad,Triangles,EGMO 2020/3,https://artofproblemsolving.com/community/c6h1982453,—,Convex hexagon equal angles
+Olympiad,Triangles,APMO 2019/3,https://artofproblemsolving.com/community/c6h1797731,—,Scalene triangle Miquel point
+Olympiad,Right-Angled Triangles,Sharygin 2012/8,—,—,Right triangle angle B = 90 midpoint M
+Olympiad,Right-Angled Triangles,PAMO Shortlist 2018 G1,—,—,Right angle at G in triangle AGC
+Olympiad,Right-Angled Triangles,IMO Shortlist 2014 G1,—,—,Right triangle with angle BAC = 90 AB = half BC
+Olympiad,Polygons,CEOI 2020 - Roads,https://codeforces.com/contest/1402/problem/B,—,Connect disjoint triangles convex hull
+Olympiad,Polygons,IOI 2006 - Joining Points,—,—,Triangulation geometry
+Olympiad,Polygons,Balkan OI 2011 - Time Is Money,—,—,Parametric geometry
+Olympiad,Polygons,NCPC 2023 - Interwined,—,—,Decremental convex hulls
+Olympiad,Polygons,Sharygin 2024 Grade 8/9/10,—,https://cheenta.com/sharygin-geometry-olympiad-2024/,—,Medians orthocenters incircles cyclic quads
+Olympiad,Polygons,BAPC 2016 - Airport Logistics,—,—,Geometric shortest path
+Olympiad,Polygons,NEERC Southern Subregional 1070M - Algoland and Berland,—,—,Geometry matching problem
+Olympiad,Polygons,Yokohama Regional 2019 - Fun Regions,—,—,Region decomposition
+Olympiad,Polygons,Project Euler - Convex Holes,—,—,Minimum area convex holes
+GeeksforGeeks,Triangles,Check if triangle is valid (sides),https://www.geeksforgeeks.org/dsa/check-whether-triangle-is-valid-or-not-if-sides-are-given/,--,Triangle inequality theorem
+GeeksforGeeks,Triangles,Check if right triangle possible from given area and hypotenuse,https://www.geeksforgeeks.org/dsa/check-if-right-triangle-possible-from-given-area-and-hypotenuse/,--,Pythagorean relation
+GeeksforGeeks,Triangles,Count integral points inside a triangle,https://www.geeksforgeeks.org/dsa/count-integral-points-inside-a-triangle/,--,Pick's theorem
+GeeksforGeeks,Triangles,Circumcenter of a triangle,https://www.geeksforgeeks.org/dsa/circumcenter-of-a-triangle/,--,Perpendicular bisector intersection
+GeeksforGeeks,Triangles,Area of Circumcircle of an Equilateral Triangle,https://www.geeksforgeeks.org/dsa/area-of-circumcircle-of-an-equilateral-triangle/,--,Circumradius formula
+GeeksforGeeks,Triangles,Third side of triangle using law of cosines,https://www.geeksforgeeks.org/dsa/third-side-of-triangle-using-law-of-cosines/,--,Law of cosines
+GeeksforGeeks,Triangles,Triangles formed from a set of lines in Euclidean Plane,https://www.geeksforgeeks.org/dsa/number-of-triangles-formed-from-a-set-of-lines-in-euclidean-plane/,--,Line combinatorics
+GeeksforGeeks,Triangles,Maximum area of rectangle inscribed in an equilateral triangle,https://www.geeksforgeeks.org/dsa/maximum-area-of-rectangle-inscribed-in-an-equilateral-triangle/,--,Inscribed rectangle optimization
+GeeksforGeeks,Triangles,Area of largest triangle that can be inscribed within a rectangle,https://www.geeksforgeeks.org/dsa/area-of-largest-triangle-that-can-be-inscribed-within-a-rectangle/,--,Max triangle in rectangle
+GeeksforGeeks,Triangles,Altitude of largest triangle that can be inscribed in a rectangle,https://www.geeksforgeeks.org/dsa/altitude-of-largest-triangle-that-can-be-inscribed-in-a-rectangle/,--,Binary search / geometry optimization
+GeeksforGeeks,Triangles,Maximize area of triangle formed by points on sides of given rectangle,https://www.geeksforgeeks.org/dsa/maximize-area-of-triangle-formed-by-points-on-sides-of-given-rectangle/,--,Coordinate geometry on perimeter
+GeeksforGeeks,Triangles,Max triangle area (Medians given),https://www.geeksforgeeks.org/dsa/area-of-a-triangle-from-the-given-lengths-of-medians/,--,Median-area formula
+GeeksforGeeks,Right-Angled Triangles,Check if right angled triangle from coordinates,https://www.geeksforgeeks.org/dsa/check-if-a-right-angled-triangle-can-be-formed-by-the-given-coordinates/,--,Pythagoras theorem on coordinates
+GeeksforGeeks,Right-Angled Triangles,Area of largest square in a right angle triangle,https://www.geeksforgeeks.org/dsa/area-of-a-largest-square-fit-in-a-right-angle-triangle/,--,Inscribed square optimization
+GeeksforGeeks,Right-Angled Triangles,Max squares that fit in a right angle isosceles triangle,https://www.geeksforgeeks.org/dsa/maximum-number-of-squares-that-can-be-fit-in-a-right-angle-isosceles-triangle/,--,Arithmetic series formula
+GeeksforGeeks,Rectangles & Squares,Check if given point lies inside a rectangle,https://www.geeksforgeeks.org/dsa/check-if-a-point-lies-inside-a-rectangle/,--,Point-in-rectangle test
+GeeksforGeeks,Rectangles & Squares,Find if two rectangles overlap,https://www.geeksforgeeks.org/dsa/find-if-two-rectangles-overlap/,--,Overlap detection
+GeeksforGeeks,Rectangles & Squares,Check if four points form a square,https://www.geeksforgeeks.org/dsa/how-to-check-if-given-four-points-form-a-square/,--,Distance-based square check
+GeeksforGeeks,Rectangles & Squares,Number of rectangles in NxM grid,https://www.geeksforgeeks.org/dsa/number-of-rectangles-in-nm-grid/,--,Combinatorics
+GeeksforGeeks,Rectangles & Squares,Cutting Rectangles (min squares),https://www.geeksforgeeks.org/dsa/cutting-rectangles/,--,GCD-based cutting
+GeeksforGeeks,Rectangles & Squares,Biggest square inscribed in equilateral triangle,https://www.geeksforgeeks.org/dsa/biggest-square-that-can-be-inscribed-within-an-equilateral-triangle/,--,Inscribed square geometry
+GeeksforGeeks,Circles,Check if a point exists in circle sector,https://www.geeksforgeeks.org/dsa/check-whether-a-point-exists-in-circle-sector-or-not/,--,Angle and radius check
+GeeksforGeeks,Circles,Check if two given circles touch or intersect,https://www.geeksforgeeks.org/dsa/check-if-two-given-circles-touch-or-intersect-each-other/,--,Distance vs radii sum/diff
+GeeksforGeeks,Circles,Area of a Circular Segment,https://www.geeksforgeeks.org/dsa/program-to-find-area-of-a-circular-segment/,--,Segment area formula
+GeeksforGeeks,Circles,Check if a line touches or intersects a circle,https://www.geeksforgeeks.org/dsa/check-if-a-line-touches-or-intersects-a-circle/,--,Distance from center to line
+GeeksforGeeks,Circles,Area of Circumscribed Circle of a Square,https://www.geeksforgeeks.org/dsa/area-of-a-circumscribed-circle-of-a-square/,--,Circumcircle radius formula
+GeeksforGeeks,Circles,Find min radius such that at least k points lie inside the circle,https://www.geeksforgeeks.org/dsa/find-minimum-radius-such-that-atleast-k-points-lie-inside-the-circle/,--,Angular sweep / binary search
+GeeksforGeeks,Circles,Angular Sweep (max points in circle of given radius),https://www.geeksforgeeks.org/dsa/angular-sweep-maximum-points-that-can-be-enclosed-in-a-circle-of-given-radius/,--,Angular sweep algorithm
+GeeksforGeeks,Polygons,Check if point lies inside a triangle,https://www.geeksforgeeks.org/dsa/check-if-a-given-point-lies-inside-a-triangle/,--,Barycentric / area method
+GeeksforGeeks,Polygons,Find Simple Closed Path for a given set of points,https://www.geeksforgeeks.org/dsa/find-simple-closed-path-for-a-given-set-of-points/,--,Polar angle sorting
+GeeksforGeeks,Polygons,Number of Integral Points between Two Points,https://www.geeksforgeeks.org/dsa/number-of-integral-points-between-two-points/,--,GCD-based lattice count
+GeeksforGeeks,Polygons,Optimum location of point to minimize total distance,https://www.geeksforgeeks.org/dsa/optimum-location-point-minimize-total-distance/,--,Geometric median
+GeeksforGeeks,Polygons,Find perimeter of shapes formed with 1s in binary matrix,https://www.geeksforgeeks.org/dsa/find-perimeter-of-shapes-formed-with-1s-in-binary-matrix/,--,Grid geometry
+GeeksforGeeks,Polygons,Maximum number of squares that can fit in a right angle isosceles triangle,https://www.geeksforgeeks.org/dsa/maximum-number-of-squares-that-can-be-fit-in-a-right-angle-isosceles-triangle/,--,Square packing in triangle
+SPOJ,Triangles,TRICOUNT - Counting Triangles,https://www.spoj.com/problems/TRICOUNT/,--,Count all triangles in level N triangle fractal
+SPOJ,Triangles,TRIPART - Triangle Partitioning,https://www.spoj.com/problems/TRIPART/,--,Similar triangles from median splitting
+SPOJ,Triangles,TRICENTR - Triangle From Centroid,https://www.spoj.com/problems/TRICENTR/,--,Centroid distances to area calculation
+SPOJ,Triangles,CEOI09TR - Tri,https://www.spoj.com/problems/CEOI09TR/,--,Point containment in origin-based triangles
+SPOJ,Triangles,GPINTRI - Grid Points in a Triangle,https://www.spoj.com/problems/GPINTRI/,--,Integer point counting in right triangle
+SPOJ,Triangles,HIDTRI - Hidden Triangle,https://www.spoj.com/problems/HIDTRI/,--,Largest right isosceles triangle in binary grid
+SPOJ,Triangles,MTRIAREA - Maximum Triangle Area,https://www.spoj.com/problems/MTRIAREA/,--,Max area triangle from N points
+SPOJ,Triangles,VTRI - Triangles,https://www.spoj.com/problems/VTRI/,--,Count triangles with integer area in grid
+SPOJ,Right-Angled Triangles,IITKWPCC - Count right angle triangles,https://www.spoj.com/problems/IITKWPCC/,--,Axis-aligned right triangles with equal legs
+SPOJ,Polygons,BACKTPOL - Back To The Polygon,https://www.spoj.com/problems/BACKTPOL/,--,Triangulation to polygon reconstruction
+Timus,Triangles,1659 - Regular Triangles,https://acm.timus.ru/problem.aspx?space=1&num=1659,652,Regular triangle construction
+Timus,Triangles,1482 - Triangle Game,https://acm.timus.ru/problem.aspx?space=1&num=1482,3056,Triangle game strategy
+Timus,Triangles,1566 - Triangular Postcards,https://acm.timus.ru/problem.aspx?space=1&num=1566,3117,Check if one triangle fits inside another
+Timus,Triangles,1637 - Triangle Game 2,https://acm.timus.ru/problem.aspx?space=1&num=1637,3302,Triangle game advanced
+Timus,Triangles,1938 - Caribbean Triangle,https://acm.timus.ru/problem.aspx?space=1&num=1938,4938,Triangle area optimization
+Timus,Triangles,1046 - Geometrical Dreams,https://acm.timus.ru/problem.aspx?space=1&num=1046,1890,Triangle-circle geometry
+Timus,Triangles,1710 - Boris You Are Wrong!,https://acm.timus.ru/problem.aspx?space=1&num=1710,--,Triangle congruence understanding
+Timus,Rectangles & Squares,1111 - Squares,https://acm.timus.ru/problem.aspx?space=1&num=1111,386,Distance from point to square
+Timus,Rectangles & Squares,1616 - Square Country 4,https://acm.timus.ru/problem.aspx?space=1&num=1616,3989,Square tiling
+Timus,Rectangles & Squares,1426 - Rectangles,https://acm.timus.ru/problem.aspx?space=1&num=1426,--,Construct rectangle with 4 points on sides
+Timus,Circles,1020 - Rope,https://acm.timus.ru/problem.aspx?space=1&num=1020,100,Rope length around circles
+Timus,Circles,1103 - Pencils and Circles,https://acm.timus.ru/problem.aspx?space=1&num=1103,503,Circle construction from pencils
+Timus,Circles,1640 - Circle of Winter,https://acm.timus.ru/problem.aspx?space=1&num=1640,177,Circle covering
+Timus,Polygons,1052 - Rabbit Hunt,https://acm.timus.ru/problem.aspx?space=1&num=1052,238,Maximum collinear points
+Timus,Polygons,1591 - Abstract Thinking,https://acm.timus.ru/problem.aspx?space=1&num=1591,--,Interesting triangles from circle chords
+Timus,Polygons,1953 - Biggest Inscribed Ellipse,https://acm.timus.ru/problem.aspx?space=1&num=1953,--,Max area ellipse inscribed in triangle
+Timus,Polygons,1572 - Yekaterinozavodsk Great Well,https://acm.timus.ru/problem.aspx?space=1&num=1572,--,Fit shapes (circle/square/triangle) into well
+Timus,Polygons,2227 - Geometry Contest,https://acm.timus.ru/problem.aspx?space=1&num=2227,2091,Convex hull treap
+Timus,Polygons,1030 - Titanic,https://acm.timus.ru/problem.aspx?space=1&num=1030,898,Great circle distance on sphere
+Timus,Polygons,1043 - Cover an Arc,https://acm.timus.ru/problem.aspx?space=1&num=1043,1635,Arc covering geometry
+UVa,Triangles,190 - Circumcenter,https://onlinejudge.org/external/1/190.html,3,Circumcenter of triangle
+UVa,Triangles,191 - Line Segment and Rectangle Intersection,https://onlinejudge.org/external/1/191.html,3,Segment-rectangle intersection
+UVa,Triangles,194 - Triangle,https://onlinejudge.org/external/1/194.html,--,Triangle solver from partial parameters
+UVa,Triangles,378 - Line-Line Intersection,https://onlinejudge.org/external/3/378.html,2,Line intersection
+UVa,Triangles,10112 - Myacm Triangles,https://onlinejudge.org/external/101/10112.html,--,Largest triangle area from points
+UVa,Triangles,10209 - Is This Integration?,https://onlinejudge.org/external/102/10209.html,2,Circle-triangle area formulas
+UVa,Triangles,10347 - Medians,https://onlinejudge.org/external/103/10347.html,--,Triangle area from medians
+UVa,Triangles,10522 - Height to Area,https://onlinejudge.org/external/105/10522.html,2,Triangle area from three heights
+UVa,Triangles,10979 - How Many Triangles?,https://onlinejudge.org/external/109/10979.html,5,Triangles from line segments
+UVa,Right-Angled Triangles,10573 - Geometry Paradox,https://onlinejudge.org/external/105/10573.html,1,Circle/triangle ad-hoc calculation
+UVa,Rectangles & Squares,478 - Points in Rectangles Circles Triangles,https://onlinejudge.org/external/4/478.html,1,Point in shape detection
+UVa,Rectangles & Squares,10286 - Square in a Regular Pentagon,https://onlinejudge.org/external/102/10286.html,1,Inscribed square
+UVa,Rectangles & Squares,10289 - Equilateral Triangles in a Square,https://onlinejudge.org/external/102/10289.html,4,Triangle packing in square
+UVa,Rectangles & Squares,10402 - Covering Equilateral Triangle with Squares,https://onlinejudge.org/external/104/10402.html,5,Square covering problem
+UVa,Circles,453 - Intersecting Circles,https://onlinejudge.org/external/4/453.html,3,Circle-circle intersection
+UVa,Circles,10283 - The Kissing Circles,https://onlinejudge.org/external/102/10283.html,2,Circles in a circle
+UVa,Circles,10287 - Circles in a Regular Hexagon,https://onlinejudge.org/external/102/10287.html,3,Circle packing in hexagon
+UVa,Circles,10386 - Circles in an Equilateral Triangle,https://onlinejudge.org/external/103/10386.html,3,Circle packing in triangle
+UVa,Circles,10674 - Tangents of Two Circles,https://onlinejudge.org/external/106/10674.html,4,Common tangents (5 cases)
+UVa,Circles,10481 - The Gift of the King,https://onlinejudge.org/external/104/10481.html,4,Triangles inscribed in circle
+UVa,Polygons,10002 - Center of Masses,https://onlinejudge.org/external/100/10002.html,--,Centroid of polygon
+UVa,Polygons,10034 - Freckles,https://onlinejudge.org/external/100/10034.html,--,MST on points (Euclidean)
+UVa,Polygons,10065 - Useless Tile Packers,https://onlinejudge.org/external/100/10065.html,--,Convex hull area ratio
+UVa,Polygons,10078 - The Art Gallery,https://onlinejudge.org/external/100/10078.html,--,Convex polygon check
+UVa,Polygons,105 - The Skyline Problem,https://onlinejudge.org/external/1/105.html,--,Sweep line silhouette
+UVa,Polygons,109 - SCUD Busters,https://onlinejudge.org/external/1/109.html,--,Convex hull + point in polygon
+UVa,Polygons,218 - Moth Eradication,https://onlinejudge.org/external/2/218.html,--,Convex hull perimeter
+UVa,Polygons,270 - Lining Up,https://onlinejudge.org/external/2/270.html,--,Maximum collinear points
+UVa,Polygons,361 - Cops and Robbers,https://onlinejudge.org/external/3/361.html,--,Point in convex polygon
+UVa,Polygons,688 - Mobile Phone Coverage,https://onlinejudge.org/external/6/688.html,--,Rectangle union area
+UVa,Polygons,10709 - Line and Line Segment Distance,https://onlinejudge.org/external/107/10709.html,3,Distance between line/segment
+UVa,Polygons,10725 - Largest Square in a Triangle,https://onlinejudge.org/external/107/10725.html,3,Max inscribed square in triangle
+UVa,Polygons,11123 - Counting Trapezoids,https://onlinejudge.org/external/111/11123.html,--,Trapezoid count from N points
+UVa,Polygons,121 - Pipe Fitters,https://onlinejudge.org/external/1/121.html,--,Circle packing in rectangle
+UVa,Polygons,132 - Bumpy Objects,https://onlinejudge.org/external/1/132.html,--,Minimum area convex polygon covering
+UVa,Polygons,143 - Orchard Trees,https://onlinejudge.org/external/1/143.html,--,Lattice points in triangle
+UVa,Polygons,152 - Tree's a Crowd,https://onlinejudge.org/external/1/152.html,--,Closest pair 3D
+AtCoder,Triangles,ABC183B - Billiards,https://atcoder.jp/contests/abc183/tasks/abc183_b,--,Point reflection / angle bounce
+AtCoder,Triangles,ABC259B - Counterclockwise Rotation,https://atcoder.jp/contests/abc259/tasks/abc259_b,81,Rotation matrix
+AtCoder,Triangles,ABC010C - Cheating Investigation,https://atcoder.jp/contests/abc010/tasks/abc010_3,615,Point-line distance
+AtCoder,Triangles,ABC002C - Direct Appeal,https://atcoder.jp/contests/abc002/tasks/abc002_3,623,Triangle area from coordinates
+AtCoder,Triangles,ABC442E - Laser Takahashi,https://atcoder.jp/contests/abc442/tasks/abc442_e,1355,Laser intersection geometry
+AtCoder,Triangles,MSOLUTIONS2019A - Sum of Interior Angles,https://atcoder.jp/contests/m-solutions2019/tasks/m_solutions2019_a,--,Sum of angles in polygon
+Project Euler,Triangles,#143 - Torricelli Triangles,https://projecteuler.net/problem=143,--,Fermat/Torricelli point minimization
+Project Euler,Triangles,#195 - 60-degree Triangle Inscribed Circles,https://projecteuler.net/problem=195,--,"Integer sided 60-degree triangles, incircle radius"
+Project Euler,Triangles,#373 - Circumscribed Circles,https://projecteuler.net/problem=373,--,Integer sided triangles with integral circumradius
+Project Euler,Triangles,#587 - Concave Triangle,https://projecteuler.net/problem=587,--,"L-section area, circle packing, concave triangle ratio"
+Project Euler,Triangles,#727 - Triangle of Circular Arcs,https://projecteuler.net/problem=727,--,"Mutually tangent circles, triangle of arcs"
+Project Euler,Triangles,#914 - Triangles inside Circles,https://projecteuler.net/problem=914,--,Primitive Pythagorean triangles inside circle
+Project Euler,Triangles,#966 - Triangle Circle Intersection,https://projecteuler.net/problem=966,--,Max intersection area of triangle and equal-area circle
+Project Euler,Polygons,#292 - Pythagorean Polygons,https://projecteuler.net/problem=292,--,Convex polygons with integer edges and coordinates
+Project Euler,Polygons,#382 - Generating Polygons,https://projecteuler.net/problem=382,--,Polygon generation from set of side lengths
+Project Euler,Polygons,#564 - Maximal Polygons,https://projecteuler.net/problem=564,--,Max area polygon from random split segment
+Codeforces,Triangles,1422A - Fence,https://codeforces.com/contest/1422/problem/A,800,Quadrilateral existence from 3 sides
+Codeforces,Triangles,1642A - Hard Way,https://codeforces.com/contest/1642/problem/A,800,Unsafe points on triangle border
+Codeforces,Rectangles & Squares,2061B - Kevin and Geometry,https://codeforces.com/problemset/problem/2061/B,1200,Isosceles trapezoid from 4 sticks
+Codeforces,Rectangles & Squares,713B - Searching Rectangles,https://codeforces.com/problemset/problem/713/B,1900,Interactive rectangle finding
+Codeforces,Polygons,166B - Polygons,https://codeforces.com/problemset/problem/166/B,2300,Convex polygon strictly contains another polygon
+Codeforces,Polygons,270A - Fancy Fence,https://codeforces.com/contest/270/problem/A,800,Regular polygon from interior angle
+Codeforces,Polygons,1312A - Two Regular Polygons,https://codeforces.com/contest/1312/problem/A,800,Regular polygon inscribed in regular polygon
+Codeforces,Polygons,1369A - Beautiful Polygon,https://codeforces.com/contest/1369/problem/A,800,Regular polygon edge parallel to axes
+Codeforces,Polygons,1354C1 - Simple Polygon Embedding,https://codeforces.com/contest/1354/problem/C1,1400,Embed regular 2n-gon in square
+LeetCode,Triangles,120 - Triangle,https://leetcode.com/problems/triangle/,Medium,Minimum path sum in triangular array
+LeetCode,Triangles,3588 - Find Maximum Area of a Triangle,https://leetcode.com/problems/find-maximum-area-of-a-triangle/,Medium,Triangle with side parallel to axes
+LeetCode,Rectangles & Squares,3380 - Maximum Area Rectangle With Point Constraints I,https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/,Medium,Rectangle from points with no interior points
+LeetCode,Rectangles & Squares,2250 - Count Number of Rectangles Containing Each Point,https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/,Medium,Count rectangles containing each query point
+LeetCode,Rectangles & Squares,3381 - Maximum Area Rectangle With Point Constraints II,https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-ii/,Hard,Rectangle from points with constraints
+LeetCode,Polygons,883 - Projection Area of 3D Shapes,https://leetcode.com/problems/projection-area-of-3d-shapes/,Easy,3D shape projections on planes
+Toph,Triangles,Circles in a Rectangle,https://toph.co/p/circles-in-a-rectangle,--,Circle packing inside rectangle
+Toph,Triangles,Geometry Problem Set,https://toph.co/problems/geometry,--,Misc geometry problems on Toph platform

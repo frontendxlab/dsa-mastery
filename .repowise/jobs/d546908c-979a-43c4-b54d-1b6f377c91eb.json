@@ -1,0 +1,43 @@
+{
+  "job_id": "d546908c-979a-43c4-b54d-1b6f377c91eb",
+  "status": "completed",
+  "created_at": "2026-05-13T08:59:55.192972+00:00",
+  "updated_at": "2026-05-13T09:00:17.703277+00:00",
+  "repo_path": "/home/rashid/Project/dsa-mastery",
+  "config_snapshot": {
+    "max_tokens": 16000,
+    "temperature": 0.3,
+    "token_budget": 48000,
+    "max_concurrency": 5,
+    "cache_enabled": true,
+    "staleness_threshold_days": 7,
+    "expiry_threshold_days": 30,
+    "top_symbol_percentile": 0.1,
+    "file_page_top_percentile": 0.1,
+    "file_page_min_symbols": 1,
+    "max_pages_pct": 0.1,
+    "jobs_dir": ".repowise/jobs",
+    "large_file_source_pct": 0.4,
+    "language": "en"
+  },
+  "total_pages": 10,
+  "completed_pages": 10,
+  "failed_pages": 0,
+  "completed_page_ids": [
+    "symbol_spotlight:dp/merge_dp.py::process_csv_text",
+    "file_page:tree/merge_tree.py",
+    "file_page:linked_list/merge_ll.py",
+    "file_page:dp/merge_dp.py",
+    "file_page:dp/normalize_categories.py",
+    "module_page:tree",
+    "module_page:linked_list",
+    "module_page:dp",
+    "repo_overview:repo",
+    "architecture_diagram:dsa-mastery"
+  ],
+  "failed_page_ids": [],
+  "error_message": null,
+  "provider_name": "gemini",
+  "model_name": "gemini-3.1-flash-lite-preview",
+  "current_level": 7
+}
