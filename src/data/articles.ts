@@ -54,6 +54,11 @@ import { advancedTreesArticle } from './content/advanced-trees'
 import { combinatoricsArticle } from './content/combinatorics'
 import { gameTheoryArticle } from './content/game-theory'
 import { geometryArticle } from './content/geometry'
+import { linearAlgebraArticle } from './content/linear-algebra'
+import { schedulingArticle } from './content/scheduling'
+import { shapesArticle } from './content/shapes'
+import { miscellaneousArticle } from './content/miscellaneous'
+import { numericalMethodsArticle } from './content/numerical-methods'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -77,6 +82,11 @@ export const articles: Article[] = [
   combinatoricsArticle,
   gameTheoryArticle,
   geometryArticle,
+  linearAlgebraArticle,
+  schedulingArticle,
+  shapesArticle,
+  miscellaneousArticle,
+  numericalMethodsArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
