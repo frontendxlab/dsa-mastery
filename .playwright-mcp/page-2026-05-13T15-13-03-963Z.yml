@@ -1,0 +1,267 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic:
+        - link "Zur Navigation springen" [ref=e5] [cursor=pointer]:
+          - /url: "#navigation"
+        - link "Zum Content springen" [ref=e6] [cursor=pointer]:
+          - /url: "#content"
+      - img "Online Judge" [ref=e7]
+      - generic [ref=e8]:
+        - insertion [ref=e9]:
+          - generic [ref=e11]:
+            - generic "These are topics related to the article that might interest you" [ref=e12]: Discover more
+            - link "Technical Interview Prep" [ref=e13] [cursor=pointer]:
+              - img [ref=e15]
+              - text: Technical Interview Prep
+            - link "Advanced Algorithm Training" [ref=e17] [cursor=pointer]:
+              - img [ref=e19]
+              - text: Advanced Algorithm Training
+            - link "Programming Community Forum" [ref=e21] [cursor=pointer]:
+              - img [ref=e23]
+              - text: Programming Community Forum
+            - link "Competitive Programming 4" [ref=e25] [cursor=pointer]:
+              - img [ref=e27]
+              - text: Competitive Programming 4
+        - text: "-->"
+    - generic [ref=e31]:
+      - link "Home" [ref=e32] [cursor=pointer]:
+        - /url: https://onlinejudge.org/index.php
+      - img "arrow" [ref=e33]
+      - text: Browse Problems
+    - generic [ref=e34]:
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - heading "Login" [level=3] [ref=e38]
+            - table [ref=e40]:
+              - rowgroup [ref=e41]:
+                - row "Username Password Remember me Login" [ref=e42]:
+                  - cell "Username Password Remember me Login" [ref=e43]:
+                    - generic [ref=e44]: Username
+                    - textbox "Username" [ref=e45]
+                    - generic [ref=e46]: Password
+                    - textbox "Password" [ref=e48]
+                    - checkbox "Remember me" [ref=e49]
+                    - generic [ref=e50]: Remember me
+                    - button "Login" [ref=e51]
+                - row "Forgot login?" [ref=e52]:
+                  - cell "Forgot login?" [ref=e53]:
+                    - link "Forgot login?" [ref=e54] [cursor=pointer]:
+                      - /url: https://onlinejudge.org/index.php?option=com_comprofiler&task=lostPassword
+                - row "No account yet? Register" [ref=e55]:
+                  - cell "No account yet? Register" [ref=e56]:
+                    - text: No account yet?
+                    - link "Register" [ref=e57] [cursor=pointer]:
+                      - /url: https://onlinejudge.org/index.php?option=com_comprofiler&task=registers
+          - generic [ref=e60]:
+            - textbox [ref=e61]
+            - button "Search" [ref=e62]
+          - generic [ref=e63]:
+            - heading "Main Menu" [level=3] [ref=e64]
+            - table [ref=e65]:
+              - rowgroup [ref=e66]:
+                - row "Home" [ref=e67]:
+                  - cell "Home" [ref=e68]:
+                    - link "Home" [ref=e69] [cursor=pointer]:
+                      - /url: https://onlinejudge.org/index.php?option=com_frontpage&Itemid=1
+                - row "Contact Us" [ref=e70]:
+                  - cell "Contact Us" [ref=e71]:
+                    - link "Contact Us" [ref=e72] [cursor=pointer]:
+                      - /url: https://onlinejudge.org/index.php?option=com_contact&Itemid=4
+                - row "ICPC Live Archive" [ref=e73]:
+                  - cell "ICPC Live Archive" [ref=e74]:
+                    - link "ICPC Live Archive" [ref=e75] [cursor=pointer]:
+                      - /url: http://livearchive.onlinejudge.org
+          - generic [ref=e76]:
+            - heading "Online Judge" [level=3] [ref=e77]
+            - table [ref=e78]:
+              - rowgroup [ref=e79]:
+                - row "My uHunt with Virtual Contest Service" [ref=e80]:
+                  - cell "My uHunt with Virtual Contest Service" [ref=e81]:
+                    - link "My uHunt with Virtual Contest Service" [ref=e82] [cursor=pointer]:
+                      - /url: http://uhunt.felix-halim.net/id/0
+                - row "Browse Problems" [ref=e83]:
+                  - cell "Browse Problems" [ref=e84]:
+                    - link "Browse Problems" [ref=e85] [cursor=pointer]:
+                      - /url: https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8
+                - row "Quick access, info and search" [ref=e86]:
+                  - cell "Quick access, info and search" [ref=e87]:
+                    - link "Quick access, info and search" [ref=e88] [cursor=pointer]:
+                      - /url: https://onlinejudge.org/local/online_judge/search_uva.html
+                - row "Problemsetters' Credits" [ref=e89]:
+                  - cell "Problemsetters' Credits" [ref=e90]:
+                    - link "Problemsetters' Credits" [ref=e91] [cursor=pointer]:
+                      - /url: https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=44
+                - row "Live Rankings" [ref=e92]:
+                  - cell "Live Rankings" [ref=e93]:
+                    - link "Live Rankings" [ref=e94] [cursor=pointer]:
+                      - /url: https://onlinejudge.org/local/online_judge/public_uva.html
+                - row "Site Statistics" [ref=e95]:
+                  - cell "Site Statistics" [ref=e96]:
+                    - link "Site Statistics" [ref=e97] [cursor=pointer]:
+                      - /url: https://onlinejudge.org/index.php?option=com_content&task=view&id=5&Itemid=18
+                - row "Contests" [ref=e98]:
+                  - cell "Contests" [ref=e99]:
+                    - link "Contests" [ref=e100] [cursor=pointer]:
+                      - /url: https://onlinejudge.org/index.php?option=com_content&task=view&id=2&Itemid=10
+                - row "Electronic Board" [ref=e101]:
+                  - cell "Electronic Board" [ref=e102]:
+                    - link "Electronic Board" [ref=e103] [cursor=pointer]:
+                      - /url: https://uva.onlinejudge.org/board/
+                - row "Additional Information" [ref=e104]:
+                  - cell "Additional Information" [ref=e105]:
+                    - link "Additional Information" [ref=e106] [cursor=pointer]:
+                      - /url: https://onlinejudge.org/index.php?option=com_content&task=view&id=14&Itemid=29
+                - row "Other Links" [ref=e107]:
+                  - cell "Other Links" [ref=e108]:
+                    - link "Other Links" [ref=e109] [cursor=pointer]:
+                      - /url: https://onlinejudge.org/index.php?option=com_content&task=view&id=17&Itemid=32
+          - generic [ref=e110]:
+            - link "uHunt" [ref=e111] [cursor=pointer]:
+              - /url: http://uhunt.felix-halim.net/
+              - img "uHunt" [ref=e112]
+            - link "uDebug" [ref=e113] [cursor=pointer]:
+              - /url: https://www.udebug.com/UVa
+              - img "uDebug" [ref=e114]
+        - insertion [ref=e116]:
+          - generic [ref=e119]:
+            - heading "These are topics related to the article that might interest you" [level=2] [ref=e121]: Discover more
+            - link "Online Judge Platform" [ref=e122] [cursor=pointer]:
+              - generic "Online Judge Platform" [ref=e123]
+              - img [ref=e125]
+            - link "Software Development Tools" [ref=e127] [cursor=pointer]:
+              - generic "Software Development Tools" [ref=e128]
+              - img [ref=e130]
+            - link "Live Coding Events" [ref=e132] [cursor=pointer]:
+              - generic "Live Coding Events" [ref=e133]
+              - img [ref=e135]
+            - link "Educational Programming Resources" [ref=e137] [cursor=pointer]:
+              - generic "Educational Programming Resources" [ref=e138]
+              - img [ref=e140]
+            - link "Programming Contest Rankings" [ref=e142] [cursor=pointer]:
+              - generic "Programming Contest Rankings" [ref=e143]
+              - img [ref=e145]
+            - link "Online Programming Tutorials" [ref=e147] [cursor=pointer]:
+              - generic "Online Programming Tutorials" [ref=e148]
+              - img [ref=e150]
+            - link "Statistics" [ref=e152] [cursor=pointer]:
+              - generic "Statistics" [ref=e153]
+              - img [ref=e155]
+            - link "Coding Challenge Subscriptions" [ref=e157] [cursor=pointer]:
+              - generic "Coding Challenge Subscriptions" [ref=e158]
+              - img [ref=e160]
+      - generic [ref=e163]:
+        - generic [ref=e164]:
+          - heading "Our Patreons" [level=3] [ref=e165]
+          - heading "Diamond Sponsors" [level=2] [ref=e166]:
+            - strong [ref=e167]: Diamond Sponsors
+          - paragraph [ref=e168]: Steven & Felix Halim
+          - paragraph [ref=e169]: Reinardus Pradhitya
+          - heading "Gold Sponsors" [level=2] [ref=e170]:
+            - strong [ref=e171]: Gold Sponsors
+          - paragraph [ref=e172]: "--- YOUR NAME HERE ----"
+          - heading "Silver Sponsors" [level=2] [ref=e173]:
+            - strong [ref=e174]: Silver Sponsors
+          - paragraph [ref=e175]: "--- YOUR NAME HERE ----"
+          - heading "Bronze Sponsors" [level=2] [ref=e176]:
+            - strong [ref=e177]: Bronze Sponsors
+          - paragraph [ref=e178]: Christianto Handojo
+          - paragraph [ref=e179]: Krzysztof Adamek
+          - paragraph [ref=e180]: Fatima Broom
+          - paragraph [ref=e181]:
+            - link "Amal AugustineTechBuy" [ref=e182] [cursor=pointer]:
+              - /url: https://techbuy.in/upgrad-referral-code
+              - text: Amal Augustine
+              - img "TechBuy" [ref=e183]
+        - generic [ref=e184]:
+          - heading "Contribute" [level=3] [ref=e185]
+          - paragraph [ref=e186]:
+            - link "Become a patron" [ref=e187] [cursor=pointer]:
+              - /url: https://www.patreon.com/onlinejudge
+              - img "Become a patron" [ref=e188]
+          - paragraph [ref=e189]:
+            - link "PayPal" [ref=e190] [cursor=pointer]:
+              - /url: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=D7XA3E822BTP8&source=url
+              - img "PayPal" [ref=e191]
+          - insertion [ref=e193]:
+            - generic [ref=e196]:
+              - heading "These are topics related to the article that might interest you" [level=2] [ref=e198]: Discover more
+              - link "Computer Science Courses" [ref=e199] [cursor=pointer]:
+                - generic "Computer Science Courses" [ref=e200]
+                - img [ref=e202]
+              - link "Data Structures Workshops" [ref=e204] [cursor=pointer]:
+                - generic "Data Structures Workshops" [ref=e205]
+                - img [ref=e207]
+              - link "Competitive Programming Guides" [ref=e209] [cursor=pointer]:
+                - generic "Competitive Programming Guides" [ref=e210]
+                - img [ref=e212]
+              - link "Algorithms Illuminated Series" [ref=e214] [cursor=pointer]:
+                - generic "Algorithms Illuminated Series" [ref=e215]
+                - img [ref=e217]
+              - link "Computer programming tutorials" [ref=e219] [cursor=pointer]:
+                - generic "Computer programming tutorials" [ref=e220]
+                - img [ref=e222]
+              - link "Programming contest sponsorships" [ref=e224] [cursor=pointer]:
+                - generic "Programming contest sponsorships" [ref=e225]
+                - img [ref=e227]
+              - link "Online Judge platform" [ref=e229] [cursor=pointer]:
+                - generic "Online Judge platform" [ref=e230]
+                - img [ref=e232]
+              - link "uDebug tools" [ref=e234] [cursor=pointer]:
+                - generic "uDebug tools" [ref=e235]
+                - img [ref=e237]
+          - paragraph [ref=e239]:
+            - img "1ojudgeapLUjJcnUmze67a4w3TJ6WnPxo" [ref=e240]
+          - generic:
+            - insertion:
+              - iframe [ref=e242]:
+                
+          - paragraph [ref=e243]: "Bitcoin:"
+          - paragraph [ref=e244]: 1ojudgeapLUjJcnUm
+          - paragraph [ref=e245]: ze67a4w3TJ6WnPxo
+      - generic [ref=e248]:
+        - table [ref=e249]:
+          - rowgroup [ref=e250]:
+            - row "Root Submit Problem Stats Download as PDF" [ref=e251]:
+              - cell "Root" [ref=e252]:
+                - link "Root" [ref=e253] [cursor=pointer]:
+                  - /url: index.php?option=com_onlinejudge&Itemid=8&category=0
+              - cell "Submit Problem Stats Download as PDF" [ref=e254]:
+                - link "Submit" [ref=e255] [cursor=pointer]:
+                  - /url: index.php?option=com_onlinejudge&Itemid=8&page=submit_problem&problemid=3562&category=0
+                  - img "Submit" [ref=e256]
+                - link "Problem Stats" [ref=e257] [cursor=pointer]:
+                  - /url: index.php?option=com_onlinejudge&Itemid=8&page=problem_stats&problemid=3562&category=0
+                  - img "Problem Stats" [ref=e258]
+                - link "Download as PDF" [ref=e259] [cursor=pointer]:
+                  - /url: external/11/1121.pdf
+                  - img "Download as PDF" [ref=e260]
+            - 'row "1121 - Subsequence Time limit: 3.000 seconds" [ref=e261]':
+              - 'cell "1121 - Subsequence Time limit: 3.000 seconds" [ref=e262]':
+                - heading "1121 - Subsequence" [level=3] [ref=e263]
+                - text: "Time limit: 3.000 seconds"
+        - iframe [ref=e264]: You should be using firefox.:
+          
+    - insertion [ref=e266]:
+      - generic [ref=e268]:
+        - generic "These are topics related to the article that might interest you" [ref=e269]: Discover more
+        - link "Problem Solving Books" [ref=e270] [cursor=pointer]:
+          - img [ref=e272]
+          - text: Problem Solving Books
+        - link "Programming Contest Service" [ref=e274] [cursor=pointer]:
+          - img [ref=e276]
+          - text: Programming Contest Service
+        - link "uHunt Virtual Contest" [ref=e278] [cursor=pointer]:
+          - img [ref=e280]
+          - text: uHunt Virtual Contest
+        - link "Bitcoin Donations" [ref=e282] [cursor=pointer]:
+          - img [ref=e284]
+          - text: Bitcoin Donations
+        - link "Sponsorship Opportunities" [ref=e286] [cursor=pointer]:
+          - img [ref=e288]
+          - text: Sponsorship Opportunities
+  - generic:
+    - insertion:
+      - iframe [ref=e291]:
+        

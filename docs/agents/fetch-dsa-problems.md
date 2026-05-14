@@ -1,5 +1,3 @@
-@RTK.md
-
 # Fetch DSA Problems Agent Spec
 
 Collect every problem for a given DSA topic from across the web into a deduplicated CSV,
@@ -253,7 +251,7 @@ Agent C: GeeksforGeeks + Educative + AlgoExpert + Scaler + PrepBytes + Coding Ni
 Agent D: Baekjoon + POJ + AOJ + DMOJ + E-Olymp + Library Checker
 Agent E: SPOJ + UVa + Timus + Kattis + Toph + USACO + LightOJ
 Agent F: Project Euler + Codewars + CodeAbbey + CodeSignal + HackerEarth + Pramp + Interview Cake
-Agent G: Curated lists (NeetCode, Blind 75, Striver, Grokking, GitHub awesome)
+Agent G: Curated lists (NeetCode, Blin 75, Striver, Grokking, GitHub awesome)
 ```
 
 Each agent receives:
@@ -423,7 +421,7 @@ cut -d',' -f1 "$DIR/all_${TOPIC}_problems.csv" | sort | uniq -c | sort -rn
 | sliding_window | `sliding-window`, `two-pointers` | `two-pointers` | Subarray, Substring, Window, Consecutive | 슬라이딩 윈도우 |
 | dp | `dynamic-programming` | `dp` | DP, Knapsack, Edit | 다이나믹 프로그래밍 |
 | binary_search | `binary-search` | `binary-search` | Binary, Search | 이분 탐색 |
-| graph | `graph`, `bfs`, `dfs` | `graphs` | Graph, Shortest, MST | 그래프 |
+| graph | `graph` | `graphs` | Graph, Shortest, MST | 그래프 |
 | tree | `tree` | `trees` | Tree, BST, Segment | 트리 |
 | linked_list | `linked-list` | N/A | List, Linked | 연결 리스트 |
 | backtracking | `backtracking` | `brute-force` | Backtrack, Permutation | 백트래킹 |

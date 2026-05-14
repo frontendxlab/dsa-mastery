@@ -1,0 +1,218 @@
+- generic [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - text: We use cookies to ensure you have the best browsing experience on our website. Please read our
+        - link "cookie policy" [ref=e9] [cursor=pointer]:
+          - /url: /privacy#cookies
+        - text: for more information about how we use cookies.
+      - button "Ok" [ref=e11] [cursor=pointer]:
+        - generic [ref=e13]: Ok
+    - status [ref=e14]
+    - alert [ref=e15]
+    - generic [ref=e16]:
+      - navigation [ref=e18]:
+        - generic [ref=e19]:
+          - list [ref=e21]:
+            - listitem [ref=e22] [cursor=pointer]:
+              - link "HackerRank Home" [ref=e23]:
+                - /url: /
+                - img "HackerRank Home" [ref=e24]
+            - generic [ref=e25]: "|"
+            - listitem [ref=e26] [cursor=pointer]:
+              - link "Prepare" [ref=e27]:
+                - /url: /dashboard
+            - listitem [ref=e28] [cursor=pointer]:
+              - link "Certify" [ref=e29]:
+                - /url: /skills-verification
+            - listitem [ref=e30] [cursor=pointer]:
+              - link "Compete" [ref=e31]:
+                - /url: /contests
+          - generic [ref=e32]:
+            - list [ref=e33]:
+              - listitem [ref=e34]:
+                - generic [ref=e36]:
+                  - textbox "Search" [ref=e39]
+                  - generic [ref=e40]: 
+            - list [ref=e41]:
+              - listitem
+              - listitem [ref=e42]:
+                - button "Log In" [ref=e43] [cursor=pointer]
+              - listitem [ref=e44]:
+                - button "Sign Up" [ref=e45] [cursor=pointer]
+      - banner [ref=e46]:
+        - generic [ref=e49]:
+          - list [ref=e50]:
+            - listitem [ref=e51]:
+              - link "Prepare" [ref=e52] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=e53]:
+              - generic [ref=e54]: 
+              - text: Algorithms
+          - heading "Algorithms" [level=1] [ref=e56]
+      - generic [ref=e59]:
+        - banner
+        - generic [ref=e60]:
+          - generic [ref=e63]:
+            - 'link "The Full Counting Sort Medium, Problem Solving (Basic), Max Score: 40, Success Rate: 85.25% Solve Challenge" [ref=e64] [cursor=pointer]':
+              - /url: /challenges/countingsort4/problem?isFullScreen=true
+              - generic [ref=e68]:
+                - 'heading "The Full Counting Sort Medium, Problem Solving (Basic), Max Score: 40, Success Rate: 85.25%" [level=4] [ref=e71]':
+                  - text: The Full Counting Sort
+                  - generic [ref=e72]: "Medium, Problem Solving (Basic), Max Score: 40, Success Rate: 85.25%"
+                - button "Solve Challenge" [ref=e76]:
+                  - generic [ref=e78]: Solve Challenge
+            - 'link "Fraudulent Activity Notifications Medium, Problem Solving (Intermediate), Max Score: 40, Success Rate: 47.40% Solve Challenge" [ref=e79] [cursor=pointer]':
+              - /url: /challenges/fraudulent-activity-notifications/problem?isFullScreen=true
+              - generic [ref=e83]:
+                - 'heading "Fraudulent Activity Notifications Medium, Problem Solving (Intermediate), Max Score: 40, Success Rate: 47.40%" [level=4] [ref=e86]':
+                  - text: Fraudulent Activity Notifications
+                  - generic [ref=e87]: "Medium, Problem Solving (Intermediate), Max Score: 40, Success Rate: 47.40%"
+                - button "Solve Challenge" [ref=e91]:
+                  - generic [ref=e93]: Solve Challenge
+            - 'link "Lily''s Homework Medium, Problem Solving (Intermediate), Max Score: 40, Success Rate: 61.20% Solve Challenge" [ref=e94] [cursor=pointer]':
+              - /url: /challenges/lilys-homework/problem?isFullScreen=true
+              - generic [ref=e98]:
+                - 'heading "Lily''s Homework Medium, Problem Solving (Intermediate), Max Score: 40, Success Rate: 61.20%" [level=4] [ref=e101]':
+                  - text: Lily's Homework
+                  - generic [ref=e102]: "Medium, Problem Solving (Intermediate), Max Score: 40, Success Rate: 61.20%"
+                - button "Solve Challenge" [ref=e106]:
+                  - generic [ref=e108]: Solve Challenge
+          - generic [ref=e113]:
+            - generic [ref=e114]:
+              - generic [ref=e115]: Status
+              - group [ref=e117]:
+                - generic [ref=e118]:
+                  - generic [ref=e122] [cursor=pointer]:
+                    - checkbox "Solved" [ref=e124]
+                    - generic [ref=e126]: Solved
+                  - generic [ref=e130] [cursor=pointer]:
+                    - checkbox "Unsolved" [ref=e132]
+                    - generic [ref=e134]: Unsolved
+            - generic [ref=e135]:
+              - generic [ref=e136]: Skills
+              - group [ref=e138]:
+                - generic [ref=e139]:
+                  - generic [ref=e143] [cursor=pointer]:
+                    - checkbox "Problem Solving (Intermediate)" [ref=e145]
+                    - generic [ref=e147]: Problem Solving (Intermediate)
+                  - generic [ref=e151] [cursor=pointer]:
+                    - checkbox "Problem Solving (Advanced)" [ref=e153]
+                    - generic [ref=e155]: Problem Solving (Advanced)
+                  - generic [ref=e159] [cursor=pointer]:
+                    - checkbox "Problem Solving (Basic)" [ref=e161]
+                    - generic [ref=e163]: Problem Solving (Basic)
+            - generic [ref=e164]:
+              - generic [ref=e165]: Difficulty
+              - group [ref=e167]:
+                - generic [ref=e168]:
+                  - generic [ref=e172] [cursor=pointer]:
+                    - checkbox "Easy" [ref=e174]
+                    - generic [ref=e176]: Easy
+                  - generic [ref=e180] [cursor=pointer]:
+                    - generic [ref=e181]:
+                      - checkbox "Medium" [checked] [ref=e182]
+                      - img [ref=e184]
+                    - generic [ref=e186]: Medium
+                  - generic [ref=e190] [cursor=pointer]:
+                    - checkbox "Hard" [ref=e192]
+                    - generic [ref=e194]: Hard
+            - generic [ref=e195]:
+              - generic [ref=e196]: Subdomains
+              - group [ref=e198]:
+                - generic [ref=e199]:
+                  - generic [ref=e203] [cursor=pointer]:
+                    - checkbox "Warmup" [ref=e205]
+                    - generic [ref=e207]: Warmup
+                  - generic [ref=e211] [cursor=pointer]:
+                    - checkbox "Implementation" [ref=e213]
+                    - generic [ref=e215]: Implementation
+                  - generic [ref=e219] [cursor=pointer]:
+                    - checkbox "Strings" [ref=e221]
+                    - generic [ref=e223]: Strings
+                  - generic [ref=e227] [cursor=pointer]:
+                    - generic [ref=e228]:
+                      - checkbox "Sorting" [checked] [ref=e229]
+                      - img [ref=e231]
+                    - generic [ref=e233]: Sorting
+                  - generic [ref=e237] [cursor=pointer]:
+                    - checkbox "Search" [ref=e239]
+                    - generic [ref=e241]: Search
+                  - generic [ref=e245] [cursor=pointer]:
+                    - checkbox "Graph Theory" [ref=e247]
+                    - generic [ref=e249]: Graph Theory
+                  - generic [ref=e253] [cursor=pointer]:
+                    - checkbox "Greedy" [ref=e255]
+                    - generic [ref=e257]: Greedy
+                  - generic [ref=e261] [cursor=pointer]:
+                    - checkbox "Dynamic Programming" [ref=e263]
+                    - generic [ref=e265]: Dynamic Programming
+                  - generic [ref=e269] [cursor=pointer]:
+                    - checkbox "Constructive Algorithms" [ref=e271]
+                    - generic [ref=e273]: Constructive Algorithms
+                  - generic [ref=e277] [cursor=pointer]:
+                    - checkbox "Bit Manipulation" [ref=e279]
+                    - generic [ref=e281]: Bit Manipulation
+                  - generic [ref=e285] [cursor=pointer]:
+                    - checkbox "Recursion" [ref=e287]
+                    - generic [ref=e289]: Recursion
+                  - generic [ref=e293] [cursor=pointer]:
+                    - checkbox "Game Theory" [ref=e295]
+                    - generic [ref=e297]: Game Theory
+                  - generic [ref=e301] [cursor=pointer]:
+                    - checkbox "NP Complete" [ref=e303]
+                    - generic [ref=e305]: NP Complete
+                  - generic [ref=e309] [cursor=pointer]:
+                    - checkbox "Debugging" [ref=e311]
+                    - generic [ref=e313]: Debugging
+      - contentinfo [ref=e314]:
+        - list [ref=e315]:
+          - listitem [ref=e316]:
+            - link "Blog" [ref=e317] [cursor=pointer]:
+              - /url: /blog
+            - text: "|"
+          - listitem [ref=e318]:
+            - link "Scoring" [ref=e319] [cursor=pointer]:
+              - /url: /scoring
+            - text: "|"
+          - listitem [ref=e320]:
+            - link "Environment" [ref=e321] [cursor=pointer]:
+              - /url: /environment
+            - text: "|"
+          - listitem [ref=e322]:
+            - link "FAQ" [ref=e323] [cursor=pointer]:
+              - /url: /faq
+            - text: "|"
+          - listitem [ref=e324]:
+            - link "About Us" [ref=e325] [cursor=pointer]:
+              - /url: /about-us
+            - text: "|"
+          - listitem [ref=e326]:
+            - link "Helpdesk" [ref=e327] [cursor=pointer]:
+              - /url: //help.hackerrank.com
+            - text: "|"
+          - listitem [ref=e328]:
+            - link "Careers" [ref=e329] [cursor=pointer]:
+              - /url: //www.hackerrank.com/careers
+            - text: "|"
+          - listitem [ref=e330]:
+            - link "Terms Of Service" [ref=e331] [cursor=pointer]:
+              - /url: /terms-of-service
+            - text: "|"
+          - listitem [ref=e332]:
+            - link "Privacy Policy" [ref=e333] [cursor=pointer]:
+              - /url: /privacy
+  - region "Cookie banner" [active] [ref=e334]:
+    - dialog "Privacy" [ref=e335]:
+      - generic [ref=e337]:
+        - generic [ref=e340]:
+          - text: By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+          - link "More information about your privacy, opens in a new tab" [ref=e341] [cursor=pointer]:
+            - /url: https://www.hackerrank.com/about-us/privacy
+            - text: Privacy Policy.
+        - generic [ref=e343]:
+          - button "Cookies Settings" [ref=e344] [cursor=pointer]
+          - button "Accept All Cookies" [ref=e345] [cursor=pointer]
+      - button "Close" [ref=e347] [cursor=pointer]
+  - generic [ref=e348]:
+    - iframe

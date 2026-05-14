@@ -1,0 +1,832 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - link "interviewbit" [ref=e8] [cursor=pointer]:
+            - /url: /
+            - img "interviewbit" [ref=e9]
+          - generic [ref=e10]:
+            - link "Practice" [ref=e11] [cursor=pointer]:
+              - /url: /practice/
+              - generic [ref=e13]: Practice
+            - generic [ref=e16] [cursor=pointer]:
+              - generic [ref=e17]: Resources
+              - img [ref=e18]
+            - link "Contests" [ref=e21] [cursor=pointer]:
+              - /url: /contests/
+              - generic [ref=e23]: Contests
+            - generic [ref=e26] [cursor=pointer]:
+              - generic [ref=e27]: Online IDE
+              - img [ref=e28]
+            - generic [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: Free Mock
+              - img [ref=e35]
+            - link "Events" [ref=e38] [cursor=pointer]:
+              - /url: /events/
+              - generic [ref=e40]: Events
+            - link "Scaler" [ref=e41] [cursor=pointer]:
+              - /url: https://www.scaler.com/?utm_source=ib&utm_campaign=ib_menu&utm_medium=nav_menu
+              - generic [ref=e43]: Scaler
+          - generic [ref=e47] [cursor=pointer]:
+            - textbox "Search Interviewbit.com" [ref=e48]
+            - img [ref=e49]
+        - generic [ref=e53]:
+          - generic [ref=e55] [cursor=pointer]: Sign In
+          - generic [ref=e56] [cursor=pointer]:
+            - img [ref=e57]
+            - generic [ref=e60]: Experience Scaler
+      - generic [ref=e340]:
+        - generic [ref=e341]:
+          - heading "Learn and Practice Coding Online" [level=1] [ref=e342]
+          - generic [ref=e344]:
+            - link "Find the right career for you in tech Find your personalised career roadmap for FREE in 4 simple steps Interview Process | CTC & Designation | Referral System | Projects on the Job Generate My Roadmap" [ref=e345] [cursor=pointer]:
+              - /url: https://www.interviewbit.com/api/v3/redirect/scaler_auth/?redirect_url=aHR0cHM6Ly93d3cuc2NhbGVyLmNvbS9jYXJlZXItcGxhbj91dG1fc291cmNlPWliJnV0bV9tZWRpdW09dG9wX251ZGdlJnV0bV9jYW1wYWlnbj1DYXJlZXJQbGFu#
+              - generic [ref=e346]:
+                - generic [ref=e348]:
+                  - generic [ref=e349]: Find the right career for you in tech
+                  - generic [ref=e350]: Find your personalised career roadmap for FREE in 4 simple steps
+                - generic [ref=e351]:
+                  - generic [ref=e352]:
+                    - img [ref=e353]
+                    - generic [ref=e359]: Interview Process
+                  - generic [ref=e360]: "|"
+                  - generic [ref=e361]:
+                    - img [ref=e362]
+                    - generic [ref=e370]: CTC & Designation
+                  - generic [ref=e371]: "|"
+                  - generic [ref=e372]:
+                    - img [ref=e373]
+                    - generic [ref=e379]: Referral System
+                  - generic [ref=e380]: "|"
+                  - generic [ref=e381]:
+                    - img [ref=e382]
+                    - generic [ref=e387]: Projects on the Job
+              - generic [ref=e388]: Generate My Roadmap
+            - generic [ref=e389] [cursor=pointer]:
+              - generic [ref=e390]:
+                - generic [ref=e392]:
+                  - generic [ref=e393]: Build an E-Commerce platform using React
+                  - generic [ref=e394]: By Sabeel Khan | Software Engineer
+                - generic [ref=e395]:
+                  - generic [ref=e396]:
+                    - img [ref=e397]
+                    - generic [ref=e400]: 19 May '26
+                  - generic [ref=e401]: "|"
+                  - generic [ref=e402]:
+                    - img [ref=e403]
+                    - generic [ref=e407]: 7:30 PM
+                  - generic [ref=e408]: "|"
+                  - generic [ref=e409]:
+                    - img [ref=e410]
+                    - generic [ref=e415]: Certificate Included
+              - generic [ref=e416]: Register Now!
+            - link "Be Interview Ready with Our Curated Study Plan Prepare with a systematic preparation kit made by industry experts Day/Week Wise Questions | MCQs and Coding Problems | Self-Assessment Tests Get My Preparation Kit" [ref=e417] [cursor=pointer]:
+              - /url: https://interviewbit.com/interview-preparation-kit?utm_content=/practice/
+              - generic [ref=e418]:
+                - generic [ref=e420]:
+                  - generic [ref=e421]: Be Interview Ready with Our Curated Study Plan
+                  - generic [ref=e422]: Prepare with a systematic preparation kit made by industry experts
+                - generic [ref=e423]:
+                  - generic [ref=e424]:
+                    - img [ref=e425]
+                    - generic [ref=e429]: Day/Week Wise Questions
+                  - generic [ref=e430]: "|"
+                  - generic [ref=e431]:
+                    - img [ref=e432]
+                    - generic [ref=e437]: MCQs and Coding Problems
+                  - generic [ref=e438]: "|"
+                  - generic [ref=e439]:
+                    - img [ref=e440]
+                    - generic [ref=e446]: Self-Assessment Tests
+              - generic [ref=e447]: Get My Preparation Kit
+          - generic [ref=e451]:
+            - heading "Popular Tracks" [level=2] [ref=e453]
+            - generic [ref=e454]:
+              - generic [ref=e456]:
+                - link "Programming 615 Problems" [ref=e457] [cursor=pointer]:
+                  - /url: /courses/programming/
+                  - generic [ref=e464]:
+                    - generic [ref=e465]: Programming
+                    - generic [ref=e467]:
+                      - img [ref=e468]
+                      - text: 615 Problems
+                - link "Data Science 77 Problems" [ref=e473] [cursor=pointer]:
+                  - /url: /courses/data-science-and-machine-learning/
+                  - generic [ref=e480]:
+                    - generic [ref=e481]: Data Science
+                    - generic [ref=e483]:
+                      - img [ref=e484]
+                      - text: 77 Problems
+                - link "System Design 8 Problems" [ref=e489] [cursor=pointer]:
+                  - /url: /courses/system-design/
+                  - generic [ref=e496]:
+                    - generic [ref=e497]: System Design
+                    - generic [ref=e499]:
+                      - img [ref=e500]
+                      - text: 8 Problems
+                - link "Databases 45 Problems" [ref=e505] [cursor=pointer]:
+                  - /url: /courses/databases/
+                  - generic [ref=e512]:
+                    - generic [ref=e513]: Databases
+                    - generic [ref=e515]:
+                      - img [ref=e516]
+                      - text: 45 Problems
+                - link "Puzzle 54 Problems" [ref=e521] [cursor=pointer]:
+                  - /url: /courses/programming/topics/puzzles/
+                  - generic [ref=e528]:
+                    - generic [ref=e529]: Puzzle
+                    - generic [ref=e531]:
+                      - img [ref=e532]
+                      - text: 54 Problems
+                - link "Scripting 12 Problems" [ref=e537] [cursor=pointer]:
+                  - /url: /courses/shell/
+                  - generic [ref=e544]:
+                    - generic [ref=e545]: Scripting
+                    - generic [ref=e547]:
+                      - img [ref=e548]
+                      - text: 12 Problems
+              - text: 
+          - generic [ref=e553]:
+            - heading "Fast Track Courses" [level=2] [ref=e555]
+            - generic [ref=e556]:
+              - generic [ref=e558]:
+                - link "Java 35 Problems" [ref=e559] [cursor=pointer]:
+                  - /url: /courses/fast-track-java/
+                  - generic [ref=e563]:
+                    - generic [ref=e564]: Java
+                    - generic [ref=e565]: 35 Problems
+                - link "Javascript 28 Problems" [ref=e566] [cursor=pointer]:
+                  - /url: /courses/fast-track-js/
+                  - generic [ref=e570]:
+                    - generic [ref=e571]: Javascript
+                    - generic [ref=e572]: 28 Problems
+                - link "Python 31 Problems" [ref=e573] [cursor=pointer]:
+                  - /url: /courses/fast-track-python/
+                  - generic [ref=e577]:
+                    - generic [ref=e578]: Python
+                    - generic [ref=e579]: 31 Problems
+                - link "C++ 35 Problems" [ref=e580] [cursor=pointer]:
+                  - /url: /courses/fast-track-cpp/
+                  - generic [ref=e584]:
+                    - generic [ref=e585]: C++
+                    - generic [ref=e586]: 35 Problems
+                - link "C# 35 Problems" [ref=e587] [cursor=pointer]:
+                  - /url: /courses/fast-track-csharp/
+                  - generic [ref=e591]:
+                    - generic [ref=e592]: C#
+                    - generic [ref=e593]: 35 Problems
+              - text: 
+          - generic [ref=e594]:
+            - heading "Top Coding Interview Questions" [level=2] [ref=e595]
+            - generic [ref=e596]:
+              - generic [ref=e597]:
+                - generic [ref=e599]:
+                  - generic [ref=e601]:
+                    - textbox "Search for problems or keywords" [ref=e602]
+                    - img [ref=e603] [cursor=pointer]
+                  - generic [ref=e607]:
+                    - generic [ref=e609] [cursor=pointer]:
+                      - text: Difficulty
+                      - generic [ref=e610]: 
+                    - generic [ref=e612] [cursor=pointer]:
+                      - text: Status
+                      - generic [ref=e613]: 
+                    - generic [ref=e615] [cursor=pointer]:
+                      - text: Topics
+                      - generic [ref=e616]: 
+                    - generic [ref=e618] [cursor=pointer]:
+                      - text: Companies
+                      - generic [ref=e619]: 
+                    - generic [ref=e621] [cursor=pointer]:
+                      - text: Sort By
+                      - generic [ref=e622]: 
+                    - generic [ref=e623] [cursor=pointer]:
+                      - img [ref=e624]
+                      - generic [ref=e629]: Pick Random
+                - generic [ref=e634]:
+                  - generic [ref=e636]: Gas Station
+                  - generic [ref=e638] [cursor=pointer]: Greedy Algorithm
+                  - generic [ref=e639]: medium
+                  - generic [ref=e640]: 56 Mins
+                  - generic [ref=e646] [cursor=pointer]: "+4"
+                  - generic [ref=e647] [cursor=pointer]:
+                    - text: Solve
+                    - img [ref=e648]
+                  - generic [ref=e652]: Majority Element
+                  - generic [ref=e654] [cursor=pointer]: Greedy Algorithm
+                  - generic [ref=e655]: easy
+                  - generic [ref=e656]: 19 Mins
+                  - generic [ref=e666] [cursor=pointer]: "+1"
+                  - generic [ref=e667] [cursor=pointer]:
+                    - text: Solve
+                    - img [ref=e668]
+                  - generic [ref=e672]: Distribute Candy
+                  - generic [ref=e674] [cursor=pointer]: Greedy Algorithm
+                  - generic [ref=e675]: medium
+                  - generic [ref=e676]: 65 Mins
+                  - generic [ref=e686] [cursor=pointer]:
+                    - text: Solve
+                    - img [ref=e687]
+                  - generic [ref=e691]: Longest Increasing Subsequence
+                  - generic [ref=e693] [cursor=pointer]: Dynamic Programming
+                  - generic [ref=e694]: medium
+                  - generic [ref=e695]: 30 Mins
+                  - generic [ref=e703] [cursor=pointer]: "+3"
+                  - generic [ref=e704] [cursor=pointer]:
+                    - text: Solve
+                    - img [ref=e705]
+                  - generic [ref=e709]: Unique Binary Search Trees
+                  - generic [ref=e711] [cursor=pointer]: Dynamic Programming
+                  - generic [ref=e712]: easy
+                  - generic [ref=e713]: 62 Mins
+                  - generic [ref=e719] [cursor=pointer]: "+2"
+                  - generic [ref=e720] [cursor=pointer]:
+                    - text: Solve
+                    - img [ref=e721]
+              - link "View All Problems" [ref=e725] [cursor=pointer]:
+                - /url: /coding-interview-questions/
+          - generic [ref=e726]:
+            - heading "Video Courses By Scaler View all courses" [level=2] [ref=e728]:
+              - text: Video Courses
+              - generic [ref=e729]:
+                - text: By
+                - img "Scaler" [ref=e730]
+              - link "View all courses" [ref=e731] [cursor=pointer]:
+                - /url: https://www.interviewbit.com/api/v3/redirect/scaler_auth/?redirect_url=aHR0cHM6Ly9zY2FsZXIuY29tL3RvcGljcy9jb3Vyc2VzP3V0bV9zb3VyY2U9aWI=
+                - text: View all courses
+                - img [ref=e732]
+            - generic [ref=e735]: 
+          - generic [ref=e762]:
+            - heading "Crack your next interview" [level=2] [ref=e763]
+            - generic [ref=e764]:
+              - generic [ref=e767]:
+                - generic [ref=e768]:
+                  - generic [ref=e769]:
+                    - generic [ref=e770]: Interview Guides
+                    - generic [ref=e771]: Interview process & real life questions from
+                    - img "guides" [ref=e772]
+                  - img "guides" [ref=e773]
+                - link "View 250+ Guides" [ref=e774] [cursor=pointer]:
+                  - /url: /technical-interview-questions/
+                  - text: View 250+ Guides
+                  - img [ref=e775]
+              - generic [ref=e782]:
+                - link "Mock Assessment Assess your coding skills" [ref=e783] [cursor=pointer]:
+                  - /url: /mock-interview/
+                  - generic [ref=e786]:
+                    - generic [ref=e787]: Mock Assessment
+                    - generic [ref=e788]:
+                      - text: Assess your coding skills
+                      - img [ref=e789]
+                - link "Peer Mock Interview Live interview practice" [ref=e792] [cursor=pointer]:
+                  - /url: /peer-mock-interview/
+                  - generic [ref=e795]:
+                    - generic [ref=e796]: Peer Mock Interview
+                    - generic [ref=e797]:
+                      - text: Live interview practice
+                      - img [ref=e798]
+          - generic [ref=e802]:
+            - generic [ref=e803]:
+              - generic [ref=e804]: Free Events
+              - generic [ref=e805]:
+                - text: Powered by
+                - img [ref=e806]
+              - link "View All Events" [ref=e807] [cursor=pointer]:
+                - /url: /events
+                - text: View All Events
+                - img [ref=e808]
+            - generic [ref=e809]:
+              - tabpanel [ref=e812]:
+                - generic [ref=e813]:
+                  - text:    
+                  - tabpanel [ref=e814]:
+                    - generic [ref=e832]:
+                      - button "prev-slide" [ref=e833] [cursor=pointer]:
+                        - generic [ref=e834]: 
+                      - button "next-slide" [ref=e835] [cursor=pointer]:
+                        - generic [ref=e836]: 
+                  - text:  
+              - generic:
+                - generic: 
+          - generic [ref=e837]:
+            - heading "Articles View all Articles" [level=2] [ref=e839]:
+              - text: Articles
+              - link "View all Articles" [ref=e840] [cursor=pointer]:
+                - /url: /blog
+                - text: View all Articles
+                - img [ref=e841]
+            - generic [ref=e844]:
+              - generic [ref=e846]:
+                - link "logo Difference Between Testing and Debugging 21 Nov 2023" [ref=e847] [cursor=pointer]:
+                  - /url: /blog/difference-between-testing-and-debugging/
+                  - generic [ref=e848]:
+                    - img "logo" [ref=e850]
+                    - generic [ref=e851]: Difference Between Testing and Debugging
+                    - generic [ref=e852]: 21 Nov 2023
+                - link "logo Top Automation Testing Tools To Know 21 Nov 2023" [ref=e853] [cursor=pointer]:
+                  - /url: /blog/automation-testing-tools/
+                  - generic [ref=e854]:
+                    - img "logo" [ref=e856]
+                    - generic [ref=e857]: Top Automation Testing Tools To Know
+                    - generic [ref=e858]: 21 Nov 2023
+                - 'link "logo Smoke vs Sanity Testing: Difference Between Smoke and Sanity Testing 21 Nov 2023" [ref=e859] [cursor=pointer]':
+                  - /url: /blog/smoke-vs-sanity-testing/
+                  - generic [ref=e860]:
+                    - img "logo" [ref=e862]
+                    - generic [ref=e863]: "Smoke vs Sanity Testing: Difference Between Smoke and Sanity Testing"
+                    - generic [ref=e864]: 21 Nov 2023
+                - link "logo Front End Developer Skills You Must Have 21 Nov 2023" [ref=e865] [cursor=pointer]:
+                  - /url: /blog/front-end-developer-skills/
+                  - generic [ref=e866]:
+                    - img "logo" [ref=e868]
+                    - generic [ref=e869]: Front End Developer Skills You Must Have
+                    - generic [ref=e870]: 21 Nov 2023
+                - link "logo JavaScript Applications 21 Nov 2023" [ref=e871] [cursor=pointer]:
+                  - /url: /blog/javascript-applications/
+                  - generic [ref=e872]:
+                    - img "logo" [ref=e874]
+                    - generic [ref=e875]: JavaScript Applications
+                    - generic [ref=e876]: 21 Nov 2023
+                - 'link "logo Typescript vs Javascript: What’s The Difference? 21 Nov 2023" [ref=e877] [cursor=pointer]':
+                  - /url: /blog/typescript-vs-javascript/
+                  - generic [ref=e878]:
+                    - img "logo" [ref=e880]
+                    - generic [ref=e881]: "Typescript vs Javascript: What’s The Difference?"
+                    - generic [ref=e882]: 21 Nov 2023
+                - 'link "logo Test Plan vs Test Strategy: What’s The Difference? 20 Nov 2023" [ref=e883] [cursor=pointer]':
+                  - /url: /blog/test-plan-vs-test-strategy/
+                  - generic [ref=e884]:
+                    - img "logo" [ref=e886]
+                    - generic [ref=e887]: "Test Plan vs Test Strategy: What’s The Difference?"
+                    - generic [ref=e888]: 20 Nov 2023
+                - link "logo Types of Machine Learning 16 Nov 2023" [ref=e889] [cursor=pointer]:
+                  - /url: /blog/types-of-machine-learning/
+                  - generic [ref=e890]:
+                    - img "logo" [ref=e892]
+                    - generic [ref=e893]: Types of Machine Learning
+                    - generic [ref=e894]: 16 Nov 2023
+                - 'link "logo Deep Learning Vs Machine Learning: What’s The Difference? 15 Nov 2023" [ref=e895] [cursor=pointer]':
+                  - /url: /blog/deep-learning-vs-machine-learning/
+                  - generic [ref=e896]:
+                    - img "logo" [ref=e898]
+                    - generic [ref=e899]: "Deep Learning Vs Machine Learning: What’s The Difference?"
+                    - generic [ref=e900]: 15 Nov 2023
+                - link "logo Best Front End Frameworks 10 Nov 2023" [ref=e901] [cursor=pointer]:
+                  - /url: /blog/best-front-end-frameworks/
+                  - generic [ref=e902]:
+                    - img "logo" [ref=e904]
+                    - generic [ref=e905]: Best Front End Frameworks
+                    - generic [ref=e906]: 10 Nov 2023
+              - text: 
+        - generic [ref=e907]:
+          - generic [ref=e908]:
+            - generic [ref=e909]: Your Progress
+            - generic [ref=e910]:
+              - img [ref=e912]
+              - generic [ref=e917]:
+                - generic [ref=e918]:
+                  - generic [ref=e919]: Solved
+                  - generic [ref=e920]: "--"
+                - generic [ref=e921]:
+                  - generic [ref=e922]: Attempted
+                  - generic [ref=e923]: "--"
+                - generic [ref=e924]:
+                  - generic [ref=e925]: Accuracy
+                  - generic [ref=e926]: "--"
+            - generic [ref=e927] [cursor=pointer]:
+              - img [ref=e928]
+              - text: Sign In to View Progress
+          - generic [ref=e933]:
+            - generic [ref=e934]:
+              - generic [ref=e935]:
+                - text: Leaderboard
+                - img [ref=e937]
+              - table [ref=e942]:
+                - rowgroup [ref=e943]:
+                  - row "#1 AS Abhishek Sharma 181039" [ref=e944]:
+                    - cell "#1" [ref=e945]
+                    - cell "AS Abhishek Sharma" [ref=e946]:
+                      - generic [ref=e948]: AS
+                      - generic [ref=e949]: Abhishek Sharma
+                    - cell "181039" [ref=e950]
+                  - row "#2 NS Nikunj Shah 149479" [ref=e951]:
+                    - cell "#2" [ref=e952]
+                    - cell "NS Nikunj Shah" [ref=e953]:
+                      - generic [ref=e955]: NS
+                      - generic [ref=e956]: Nikunj Shah
+                    - cell "149479" [ref=e957]
+                  - row "#3 RK Rohan Kumar 147520" [ref=e958]:
+                    - cell "#3" [ref=e959]
+                    - cell "RK Rohan Kumar" [ref=e960]:
+                      - generic [ref=e962]: RK
+                      - generic [ref=e963]: Rohan Kumar
+                    - cell "147520" [ref=e964]
+                  - row "#99999 A Anonymous 10000" [ref=e965]:
+                    - cell "#99999" [ref=e966]
+                    - cell "A Anonymous" [ref=e967]:
+                      - generic [ref=e969]: A
+                      - generic [ref=e970]: Anonymous
+                    - cell "10000" [ref=e971]
+            - generic [ref=e972] [cursor=pointer]:
+              - img [ref=e973]
+              - text: Sign In to View Leaderboard
+          - generic [ref=e978]: See What's New
+          - generic [ref=e979]:
+            - img "Personalisd Study Plan" [ref=e980]
+            - generic [ref=e981]: Personalised Study Plans
+            - generic [ref=e982]: Answer 3 simple question and get a plan tailored to your needs
+            - link "Create My Plan" [ref=e983] [cursor=pointer]:
+              - /url: /interview-preparation-kit/
+              - text: Create My Plan
+              - img [ref=e984]
+    - generic [ref=e63]:
+      - link [ref=e64] [cursor=pointer]:
+        - /url: /
+        - img
+      - generic [ref=e65]:
+        - generic [ref=e66]:
+          - link "Download the icon App logo 4.5 Rating 100K+ Downloads logo":
+            - /url: https://app.scaler.com/N4wL
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - text: Download the
+                        - img "icon"
+                        - text: App
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img "logo"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: "4.5"
+                              - generic: Rating
+                            - generic:
+                              - generic: 100K+
+                              - generic: Downloads
+                          - img "logo"
+          - list [ref=e67]:
+            - listitem [ref=e68] [cursor=pointer]:
+              - link "Blog" [ref=e69]:
+                - /url: https://www.interviewbit.com/blog/
+            - link:
+              - /url: https://www.interviewbit.com/blog/
+            - listitem [ref=e70] [cursor=pointer]:
+              - link:
+                - /url: https://www.interviewbit.com/blog/
+              - link "Community" [ref=e71]:
+                - /url: /discussion/
+            - link:
+              - /url: /discussion/
+            - listitem [ref=e72] [cursor=pointer]:
+              - link:
+                - /url: /discussion/
+              - link "About Us" [ref=e73]:
+                - /url: /pages/about_us/
+            - link:
+              - /url: /pages/about_us/
+            - listitem [ref=e74] [cursor=pointer]:
+              - link:
+                - /url: /pages/about_us/
+              - link "FAQ" [ref=e75]:
+                - /url: /pages/faq/
+            - link:
+              - /url: /pages/faq/
+            - listitem [ref=e76] [cursor=pointer]:
+              - link:
+                - /url: /pages/faq/
+              - link "Contact Us" [ref=e77]:
+                - /url: /pages/contact_us/
+            - link:
+              - /url: /pages/contact_us/
+            - listitem [ref=e78] [cursor=pointer]:
+              - link:
+                - /url: /pages/contact_us/
+              - link "Terms" [ref=e79]:
+                - /url: /pages/terms/
+            - link:
+              - /url: /pages/terms/
+            - listitem [ref=e80] [cursor=pointer]:
+              - link:
+                - /url: /pages/terms/
+              - link "Privacy Policy" [ref=e81]:
+                - /url: /pages/privacy/
+            - link:
+              - /url: /pages/privacy/
+          - link:
+            - /url: /pages/privacy/
+          - list [ref=e82]:
+            - link:
+              - /url: /pages/privacy/
+            - listitem [ref=e83]:
+              - link:
+                - /url: /pages/privacy/
+              - link "instagram-icon" [ref=e84] [cursor=pointer]:
+                - /url: https://www.instagram.com/interview_bit/
+                - img "instagram-icon" [ref=e85]
+            - listitem [ref=e86]:
+              - link "instagram-icon" [ref=e87] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/interviewbit/
+                - img "instagram-icon" [ref=e88]
+            - listitem [ref=e89]:
+              - link "instagram-icon" [ref=e90] [cursor=pointer]:
+                - /url: https://twitter.com/interview_bit/
+                - img "instagram-icon" [ref=e91]
+            - listitem [ref=e92]:
+              - link "instagram-icon" [ref=e93] [cursor=pointer]:
+                - /url: https://www.facebook.com/interviewbit/
+                - img "instagram-icon" [ref=e94]
+          - list [ref=e95]:
+            - listitem [ref=e96]:
+              - list [ref=e97]:
+                - listitem [ref=e98] [cursor=pointer]:
+                  - link "Practice Questions" [ref=e99]:
+                    - /url: /practice/
+                    - generic [ref=e100]: Practice Questions
+                - listitem [ref=e101] [cursor=pointer]:
+                  - link "Programming" [ref=e102]:
+                    - /url: /courses/programming/
+                - listitem [ref=e103] [cursor=pointer]:
+                  - link "Scripting" [ref=e104]:
+                    - /url: /courses/shell/
+                - listitem [ref=e105] [cursor=pointer]:
+                  - link "System Design" [ref=e106]:
+                    - /url: /courses/system-design/
+                - listitem [ref=e107] [cursor=pointer]:
+                  - link "Databases" [ref=e108]:
+                    - /url: /courses/databases/
+                - listitem [ref=e109] [cursor=pointer]:
+                  - link "Puzzle" [ref=e110]:
+                    - /url: /puzzles/
+            - listitem [ref=e111]:
+              - list [ref=e112]:
+                - listitem [ref=e113] [cursor=pointer]:
+                  - link "Fast Track Courses" [ref=e114]:
+                    - /url: /courses/fast-track/
+                    - generic [ref=e115]: Fast Track Courses
+                - listitem [ref=e116] [cursor=pointer]:
+                  - link "Python" [ref=e117]:
+                    - /url: /courses/fast-track-python/
+                - listitem [ref=e118] [cursor=pointer]:
+                  - link "Java" [ref=e119]:
+                    - /url: /courses/fast-track-java/
+                - listitem [ref=e120] [cursor=pointer]:
+                  - link "C++" [ref=e121]:
+                    - /url: /courses/fast-track-cpp/
+                - listitem [ref=e122] [cursor=pointer]:
+                  - link "Javascript" [ref=e123]:
+                    - /url: /courses/fast-track-js/
+        - generic [ref=e124]:
+          - list [ref=e125]:
+            - listitem [ref=e126] [cursor=pointer]:
+              - generic [ref=e127]: Online Interviewbit Compilers
+          - list [ref=e128]:
+            - listitem [ref=e129] [cursor=pointer]:
+              - link "Online C Compiler" [ref=e130]:
+                - /url: /online-c-compiler/
+            - listitem [ref=e131] [cursor=pointer]:
+              - link "Online C++ Compiler" [ref=e132]:
+                - /url: /online-cpp-compiler/
+            - listitem [ref=e133] [cursor=pointer]:
+              - link "Online Java Compiler" [ref=e134]:
+                - /url: /online-java-compiler/
+            - listitem [ref=e135] [cursor=pointer]:
+              - link "Online Javascript Compiler" [ref=e136]:
+                - /url: /online-javascript-compiler/
+            - listitem [ref=e137] [cursor=pointer]:
+              - link "Online Python Compiler" [ref=e138]:
+                - /url: /online-python-compiler/
+          - list [ref=e139]:
+            - listitem [ref=e140] [cursor=pointer]:
+              - generic [ref=e141]: Interview Preparation
+          - generic [ref=e142]:
+            - generic [ref=e143]:
+              - generic [ref=e144]: Top Interview Questions
+              - generic [ref=e145]: Language, Tools & Technologies
+              - list [ref=e146]:
+                - listitem [ref=e147] [cursor=pointer]:
+                  - link "Java Interview Questions" [ref=e148]:
+                    - /url: /java-interview-questions/
+                - listitem [ref=e149] [cursor=pointer]:
+                  - link "Sql Interview Questions" [ref=e150]:
+                    - /url: /sql-interview-questions/
+                - listitem [ref=e151] [cursor=pointer]:
+                  - link "Python Interview Questions" [ref=e152]:
+                    - /url: /python-interview-questions/
+                - listitem [ref=e153] [cursor=pointer]:
+                  - link "Javascript Interview Questions" [ref=e154]:
+                    - /url: /javascript-interview-questions/
+                - listitem [ref=e155] [cursor=pointer]:
+                  - link "Angular Interview Questions" [ref=e156]:
+                    - /url: /angular-interview-questions/
+                - listitem [ref=e157] [cursor=pointer]:
+                  - link "Networking Interview Questions" [ref=e158]:
+                    - /url: /networking-interview-questions/
+                - listitem [ref=e159] [cursor=pointer]:
+                  - link "Selenium Interview Questions" [ref=e160]:
+                    - /url: /selenium-interview-questions/
+                - listitem [ref=e161] [cursor=pointer]:
+                  - link "Data Structure Interview Questions" [ref=e162]:
+                    - /url: /data-structure-interview-questions/
+                - listitem [ref=e163] [cursor=pointer]:
+                  - link "Data Science Interview Questions" [ref=e164]:
+                    - /url: /data-science-interview-questions/
+                - listitem [ref=e165] [cursor=pointer]:
+                  - link "System Design Interview Questions" [ref=e166]:
+                    - /url: /system-design-interview-questions/
+                - listitem [ref=e167] [cursor=pointer]:
+                  - link "Hr Interview Questions" [ref=e168]:
+                    - /url: /hr-interview-questions/
+                - listitem [ref=e169] [cursor=pointer]:
+                  - link "Html Interview Questions" [ref=e170]:
+                    - /url: /html-interview-questions/
+                - listitem [ref=e171] [cursor=pointer]:
+                  - link "C Interview Questions" [ref=e172]:
+                    - /url: /c-interview-questions/
+                - listitem [ref=e173] [cursor=pointer]:
+                  - link "View All" [ref=e174]:
+                    - /url: /technical-interview-questions/
+              - generic [ref=e175]: Companies
+              - list [ref=e176]:
+                - listitem [ref=e177] [cursor=pointer]:
+                  - link "Amazon Interview Questions" [ref=e178]:
+                    - /url: /amazon-interview-questions/
+                - listitem [ref=e179] [cursor=pointer]:
+                  - link "Facebook Interview Questions" [ref=e180]:
+                    - /url: /facebook-interview-questions/
+                - listitem [ref=e181] [cursor=pointer]:
+                  - link "Google Interview Questions" [ref=e182]:
+                    - /url: /google-interview-questions/
+                - listitem [ref=e183] [cursor=pointer]:
+                  - link "Tcs Interview Questions" [ref=e184]:
+                    - /url: /tcs-interview-questions/
+                - listitem [ref=e185] [cursor=pointer]:
+                  - link "Accenture Interview Questions" [ref=e186]:
+                    - /url: /accenture-interview-questions/
+                - listitem [ref=e187] [cursor=pointer]:
+                  - link "Infosys Interview Questions" [ref=e188]:
+                    - /url: /infosys-interview-questions/
+                - listitem [ref=e189] [cursor=pointer]:
+                  - link "Capgemini Interview Questions" [ref=e190]:
+                    - /url: /capgemini-interview-questions/
+                - listitem [ref=e191] [cursor=pointer]:
+                  - link "Wipro Interview Questions" [ref=e192]:
+                    - /url: /wipro-interview-questions/
+                - listitem [ref=e193] [cursor=pointer]:
+                  - link "Cognizant Interview Questions" [ref=e194]:
+                    - /url: /cognizant-interview-questions/
+                - listitem [ref=e195] [cursor=pointer]:
+                  - link "Deloitte Interview Questions" [ref=e196]:
+                    - /url: /deloitte-interview-questions/
+                - listitem [ref=e197] [cursor=pointer]:
+                  - link "Zoho Interview Questions" [ref=e198]:
+                    - /url: /zoho-interview-questions/
+                - listitem [ref=e199] [cursor=pointer]:
+                  - link "Hcl Interview Questions" [ref=e200]:
+                    - /url: /hcl-interview-questions/
+                - listitem [ref=e201] [cursor=pointer]:
+                  - link "View All" [ref=e202]:
+                    - /url: /technical-interview-questions/
+              - list
+            - generic [ref=e203]:
+              - generic [ref=e204]: Top Articles
+              - list [ref=e205]:
+                - listitem [ref=e206] [cursor=pointer]:
+                  - link "Highest Paying Jobs In India" [ref=e207]:
+                    - /url: /blog/highest-paying-jobs-in-india/
+                - listitem [ref=e208] [cursor=pointer]:
+                  - link "Exciting C Projects Ideas With Source Code" [ref=e209]:
+                    - /url: /blog/c-projects/
+                - listitem [ref=e210] [cursor=pointer]:
+                  - link "Top Java 8 Features" [ref=e211]:
+                    - /url: /blog/java-8-features/
+                - listitem [ref=e212] [cursor=pointer]:
+                  - link "Angular Vs React" [ref=e213]:
+                    - /url: /blog/angular-vs-react/
+                - listitem [ref=e214] [cursor=pointer]:
+                  - link "10 Best Data Structures And Algorithms Books" [ref=e215]:
+                    - /url: /blog/data-structures-and-algorithms-books/
+                - listitem [ref=e216] [cursor=pointer]:
+                  - link "Exciting C Projects Ideas With Source Code" [ref=e217]:
+                    - /url: /blog/c-projects/
+                - listitem [ref=e218] [cursor=pointer]:
+                  - link "Best Full Stack Developer Courses" [ref=e219]:
+                    - /url: /blog/best-full-stack-developer-courses/
+                - listitem [ref=e220] [cursor=pointer]:
+                  - link "Best Data Science Courses" [ref=e221]:
+                    - /url: /blog/best-data-science-courses/
+                - listitem [ref=e222] [cursor=pointer]:
+                  - link "Python Commands List" [ref=e223]:
+                    - /url: /blog/python-commands/
+                - listitem [ref=e224] [cursor=pointer]:
+                  - link "Data Scientist Salary" [ref=e225]:
+                    - /url: /blog/data-scientist-salary/
+                - listitem [ref=e226] [cursor=pointer]:
+                  - link "Maximum Subarray Sum Kadane’s Algorithm" [ref=e227]:
+                    - /url: /blog/maximum-subarray-sum/
+                - listitem [ref=e228] [cursor=pointer]:
+                  - link "View All" [ref=e229]:
+                    - /url: /blog/
+            - generic [ref=e230]:
+              - generic [ref=e231]: Top Cheat Sheet
+              - list [ref=e232]:
+                - listitem [ref=e233] [cursor=pointer]:
+                  - link "Python Cheat Sheet" [ref=e234]:
+                    - /url: /python-cheat-sheet/
+                - listitem [ref=e235] [cursor=pointer]:
+                  - link "C++ Cheat Sheet" [ref=e236]:
+                    - /url: /cpp-cheat-sheet/
+                - listitem [ref=e237] [cursor=pointer]:
+                  - link "Javascript Cheat Sheet" [ref=e238]:
+                    - /url: /javascript-cheat-sheet/
+                - listitem [ref=e239] [cursor=pointer]:
+                  - link "Git Cheat Sheet" [ref=e240]:
+                    - /url: /git-cheat-sheet/
+                - listitem [ref=e241] [cursor=pointer]:
+                  - link "Java Cheat Sheet" [ref=e242]:
+                    - /url: /java-cheat-sheet/
+                - listitem [ref=e243] [cursor=pointer]:
+                  - link "View All" [ref=e244]:
+                    - /url: /technical-interview-questions/
+            - generic [ref=e245]:
+              - generic [ref=e246]: Top MCQ
+              - list [ref=e247]:
+                - listitem [ref=e248] [cursor=pointer]:
+                  - link "Java Mcq" [ref=e249]:
+                    - /url: /java-mcq/
+                - listitem [ref=e250] [cursor=pointer]:
+                  - link "Data Structure Mcq" [ref=e251]:
+                    - /url: /data-structure-mcq/
+                - listitem [ref=e252] [cursor=pointer]:
+                  - link "Dbms Mcq" [ref=e253]:
+                    - /url: /dbms-mcq/
+                - listitem [ref=e254] [cursor=pointer]:
+                  - link "C Programming Mcq" [ref=e255]:
+                    - /url: /c-programming-mcq/
+                - listitem [ref=e256] [cursor=pointer]:
+                  - link "C++ Mcq" [ref=e257]:
+                    - /url: /cpp-mcq/
+                - listitem [ref=e258] [cursor=pointer]:
+                  - link "Python Mcq" [ref=e259]:
+                    - /url: /python-mcq/
+                - listitem [ref=e260] [cursor=pointer]:
+                  - link "Javascript Mcq" [ref=e261]:
+                    - /url: /javascript-mcq/
+                - listitem [ref=e262] [cursor=pointer]:
+                  - link "View All" [ref=e263]:
+                    - /url: /technical-interview-questions/
+  - text: 
+  - generic [ref=e268]:
+    - generic [ref=e269] [cursor=pointer]: 
+    - generic [ref=e270]:
+      - generic [ref=e273]:
+        - img [ref=e274]
+        - generic [ref=e275]:
+          - generic [ref=e276]: Free Mock Assessment
+          - generic [ref=e278]:
+            - text: Powered By
+            - img [ref=e279]
+      - generic [ref=e282]: Fill up the details for personalised experience.
+      - generic [ref=e285]:
+        - generic [ref=e286]:
+          - generic [ref=e291]:
+            - generic [ref=e294] [cursor=pointer]:
+              - textbox "select phone_country_code" [ref=e295]
+              - textbox "phone_country_code" [ref=e296]: "+91"
+              - generic [ref=e297]:
+                - generic [ref=e298]: +91 *
+                - generic [ref=e300]: 
+            - generic [ref=e301]:
+              - textbox "Phone Number" [ref=e302]
+              - generic [ref=e303]: Phone Number
+          - generic [ref=e308] [cursor=pointer]:
+            - textbox "select orgyear" [ref=e309]
+            - textbox "orgyear" [ref=e310]
+            - generic [ref=e311]:
+              - generic [ref=e312]: Graduation Year *
+              - generic [ref=e314]: 
+        - generic [ref=e316]:
+          - superscript [ref=e317]: "*"
+          - text: Enter the expected year of graduation if you're student
+        - generic: 
+        - generic: 
+        - generic: 
+      - button [ref=e319] [cursor=pointer]
+      - generic [ref=e320]: By clicking on Start Test, I agree to be contacted by Scaler in the future.
+      - generic [ref=e321]: Already have an account? Log in
+    - generic [ref=e326]:
+      - img [ref=e327]
+      - generic [ref=e328]:
+        - generic [ref=e329]: Free Mock Assessment
+        - generic [ref=e331]:
+          - text: Powered By
+          - img [ref=e332]
+  - generic [ref=e333]:
+    - img [ref=e335]
+    - generic [ref=e336]: Instructions from Interviewbit
+    - generic [ref=e337] [cursor=pointer]: Start Test

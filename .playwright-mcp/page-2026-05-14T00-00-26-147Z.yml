@@ -1,0 +1,360 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "CodeChef Logo" [ref=e8] [cursor=pointer]:
+        - /url: https://www.codechef.com
+        - img "CodeChef Logo" [ref=e9]
+      - generic [ref=e10]:
+        - generic "Switch to Light Mode" [ref=e12] [cursor=pointer]:
+          - img [ref=e13]
+        - generic [ref=e17]:
+          - link "Upgrade to Pro" [ref=e18] [cursor=pointer]:
+            - /url: /pro#practice-path-header
+            - generic [ref=e20]: Upgrade to Pro
+          - separator [ref=e21]
+          - generic [ref=e22]:
+            - button "Login" [ref=e23] [cursor=pointer]
+            - button "Sign Up" [ref=e24] [cursor=pointer]
+  - generic [ref=e27]:
+    - button "Courses" [ref=e28] [cursor=pointer]:
+      - generic [ref=e29]: Courses
+    - link "Practice" [ref=e32] [cursor=pointer]:
+      - /url: /practice
+      - generic [ref=e33]: Practice
+    - link "Compete" [ref=e34] [cursor=pointer]:
+      - /url: /contests
+      - generic [ref=e35]: Compete
+    - link "Compiler" [ref=e36] [cursor=pointer]:
+      - /url: /ide
+      - generic [ref=e37]: Compiler
+  - generic [ref=e40]:
+    - generic [ref=e43]:
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - img "language-logo" [ref=e48]
+          - generic [ref=e49]:
+            - heading "Heaps" [level=1] [ref=e50]
+            - paragraph [ref=e51]: Practice problems on Heap data structure from the CodeChef repository of problems. Start with basics of Heaps and then solve harder questions which require Heap.
+            - generic [ref=e52]:
+              - generic [ref=e53]:
+                - img [ref=e55]
+                - generic [ref=e57]: 2 Lessons
+              - generic [ref=e58]:
+                - img [ref=e60]
+                - generic [ref=e62]: 10 Hours
+              - generic [ref=e63]:
+                - img [ref=e65]
+                - generic [ref=e67]: 25 Problems
+              - generic [ref=e68]:
+                - img [ref=e70]
+                - generic [ref=e72]: 9.1k Learners
+              - generic [ref=e73]:
+                - img [ref=e75]
+                - generic [ref=e77]: Beginner Level
+            - generic [ref=e78]:
+              - generic [ref=e79]:
+                - generic [ref=e81]:
+                  - img [ref=e82]
+                  - generic [ref=e84]: "Your Progress :"
+                  - generic [ref=e85]: 0% Completed
+                - img [ref=e89]
+              - button "Start Learning" [ref=e92]
+        - generic [ref=e93]:
+          - generic [ref=e95]:
+            - img [ref=e96]
+            - text: Prerequisite course
+          - generic [ref=e98]: We recommend you complete this course first before you jump into Heaps, this will help you understand this even better.
+          - generic [ref=e100] [cursor=pointer]:
+            - generic [ref=e101]:
+              - img [ref=e102]
+              - generic [ref=e104]: Learn
+            - img "heaps" [ref=e107]
+            - generic [ref=e108]:
+              - heading "Heaps" [level=3] [ref=e109]
+              - generic [ref=e110]:
+                - generic [ref=e111]:
+                  - img [ref=e112]
+                  - generic [ref=e114]: 4.7 (103)
+                - generic [ref=e115]: Beginner
+              - paragraph [ref=e116]: Learn about how Heaps are implement and solve coding problems related to heaps. This course covers Heap from a practical perspective giving you the ability to solve any Heap related questions in future.
+            - generic [ref=e118]:
+              - img [ref=e119]
+              - generic [ref=e121]: 2 courses
+              - img [ref=e122]
+              - generic [ref=e124]: 3.7k learners
+      - generic [ref=e126]:
+        - generic [ref=e127] [cursor=pointer]:
+          - generic [ref=e129]: "1"
+          - generic [ref=e130]:
+            - heading "Heap" [level=3] [ref=e131]
+            - paragraph [ref=e132]: Practice educational problems using Heaps
+          - img [ref=e134]
+        - generic [ref=e136]:
+          - generic [ref=e138]: PROBLEM NAME
+          - generic [ref=e140]: STATUS
+          - generic [ref=e142]: DIFFICULTY
+        - generic [ref=e143]:
+          - generic [ref=e144]:
+            - generic [ref=e145]:
+              - link "Representation of a Heap" [ref=e146] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/heaps/HEAPF/problems/HEAPEDU0
+              - generic [ref=e147]: Pro
+            - img [ref=e151]
+            - generic [ref=e155]: "100"
+          - generic [ref=e156]:
+            - generic [ref=e157]:
+              - link "Insertion in a Heap" [ref=e158] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/heaps/HEAPF/problems/HEAPEDU1
+              - generic [ref=e159]: Pro
+            - img [ref=e163]
+            - generic [ref=e167]: "400"
+          - generic [ref=e168]:
+            - generic [ref=e169]:
+              - link "Deletion in a Heap" [ref=e170] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/heaps/HEAPF/problems/HEAPEDU2
+              - generic [ref=e171]: Pro
+            - img [ref=e175]
+            - generic [ref=e179]: "400"
+          - generic [ref=e180]:
+            - generic [ref=e181]:
+              - link "Insertion and deletion together in a Heap" [ref=e182] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/heaps/HEAPF/problems/HEAPEDU3
+              - generic [ref=e183]: Pro
+            - img [ref=e187]
+            - generic [ref=e191]: "400"
+          - generic [ref=e192]:
+            - generic [ref=e193]:
+              - link "Heap sort" [ref=e194] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/heaps/HEAPF/problems/HEAPEDU4
+              - generic [ref=e195]: Pro
+            - img [ref=e199]
+            - generic [ref=e203]: "400"
+          - generic [ref=e204]:
+            - generic [ref=e205]:
+              - link "Simple Sorting" [ref=e206] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/heaps/HEAPF/problems/TSORT
+              - generic [ref=e207]: Pro
+            - img [ref=e211]
+            - generic [ref=e215]: "667"
+          - generic [ref=e216]:
+            - generic [ref=e217]:
+              - link "Testing Robot" [ref=e218] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/heaps/HEAPF/problems/TSTROBOT
+              - generic [ref=e219]: Pro
+            - img [ref=e223]
+            - generic [ref=e227]: "1124"
+          - generic [ref=e228]:
+            - generic [ref=e229]:
+              - link "Copy-Paste" [ref=e230] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/heaps/HEAPF/problems/RRCOPY
+              - generic [ref=e231]: Pro
+            - img [ref=e235]
+            - generic [ref=e239]: "1280"
+          - generic [ref=e240]:
+            - generic [ref=e241]:
+              - link "Chef and Apple Trees" [ref=e242] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/heaps/HEAPF/problems/CAPPLE
+              - generic [ref=e243]: Pro
+            - img [ref=e247]
+            - generic [ref=e251]: "1301"
+          - generic [ref=e252]:
+            - generic [ref=e253]:
+              - link "Cleaning Up" [ref=e254] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/heaps/HEAPF/problems/CLEANUP
+              - generic [ref=e255]: Pro
+            - img [ref=e259]
+            - generic [ref=e263]: "1309"
+          - generic [ref=e264]:
+            - generic [ref=e265]:
+              - link "Convert min Heap to max Heap" [ref=e266] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/heaps/HEAPF/problems/MINTOMAXHEAP
+              - generic [ref=e267]: Pro
+            - img [ref=e271]
+            - generic [ref=e275]: Medium
+          - generic [ref=e276]:
+            - generic [ref=e277]:
+              - link "Merge K sorted lists" [ref=e278] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/heaps/HEAPF/problems/MERGEKSORTED
+              - generic [ref=e279]: Pro
+            - img [ref=e283]
+            - generic [ref=e287]: Hard
+          - generic [ref=e288]:
+            - generic [ref=e289]:
+              - link "Distinct Characters Subsequence" [ref=e290] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/heaps/HEAPP/problems/DISCHAR
+              - generic [ref=e291]: Pro
+            - img [ref=e295]
+            - generic [ref=e299]: "1314"
+          - generic [ref=e300]:
+            - generic [ref=e301]:
+              - link "Alt-Tab" [ref=e302] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/heaps/HEAPP/problems/ALTTAB
+              - generic [ref=e303]: Pro
+            - img [ref=e307]
+            - generic [ref=e311]: "1396"
+          - generic [ref=e312]:
+            - generic [ref=e313]:
+              - link "IPC Trainers" [ref=e314] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/heaps/HEAPP/problems/IPCTRAIN
+              - generic [ref=e315]: Pro
+            - img [ref=e319]
+            - generic [ref=e323]: "1500"
+          - generic [ref=e324]:
+            - generic [ref=e325]:
+              - link "Chef Finds KthLargest Element" [ref=e326] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/heaps/HEAPP/problems/WTYDU01
+              - generic [ref=e327]: Pro
+            - img [ref=e331]
+            - generic [ref=e335]: Medium
+          - generic [ref=e336]:
+            - generic [ref=e337]:
+              - link "Chef Airlines" [ref=e338] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/heaps/HEAPP/problems/AIRTRAV
+              - generic [ref=e339]: Pro
+            - img [ref=e343]
+            - generic [ref=e347]: "1500"
+          - generic [ref=e348]:
+            - generic [ref=e349]:
+              - link "Chef Teams" [ref=e350] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/heaps/HEAPP/problems/CTEAMS
+              - generic [ref=e351]: Pro
+            - img [ref=e355]
+            - generic [ref=e359]: "1577"
+          - generic [ref=e360]:
+            - generic [ref=e361]:
+              - link "Consecutive Card Grouping" [ref=e362] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/heaps/HEAPP/problems/CONSECARDS
+              - generic [ref=e363]: Pro
+            - img [ref=e367]
+            - generic [ref=e371]: Hard
+          - generic [ref=e372]:
+            - generic [ref=e373]:
+              - link "Positive array" [ref=e374] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/heaps/HEAPP/problems/CIREQ
+              - generic [ref=e375]: Pro
+            - img [ref=e379]
+            - generic [ref=e383]: "1620"
+          - generic [ref=e384]:
+            - generic [ref=e385]:
+              - link "Rooks" [ref=e386] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/heaps/HEAPP/problems/RKS
+              - generic [ref=e387]: Pro
+            - img [ref=e391]
+            - generic [ref=e395]: "1624"
+          - generic [ref=e396]:
+            - generic [ref=e397]:
+              - link "Sridhar Likes Travelling" [ref=e398] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/heaps/HEAPP/problems/TOURMAP
+              - generic [ref=e399]: Pro
+            - img [ref=e403]
+            - generic [ref=e407]: "1656"
+          - generic [ref=e408]:
+            - generic [ref=e409]:
+              - link "Parallel World" [ref=e410] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/heaps/HEAPP/problems/INC_HEIGHTS
+              - generic [ref=e411]: Pro
+            - img [ref=e415]
+            - generic [ref=e419]: "1700"
+          - generic [ref=e420]:
+            - generic [ref=e421]:
+              - link "Chef and Time Machine" [ref=e422] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/heaps/HEAPP/problems/CHEFTMA
+              - generic [ref=e423]: Pro
+            - img [ref=e427]
+            - generic [ref=e431]: "1717"
+          - generic [ref=e432]:
+            - generic [ref=e433]:
+              - link "Chef Builds Twitter" [ref=e434] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/heaps/HEAPP/problems/HRYQX01
+              - generic [ref=e435]: Pro
+            - img [ref=e439]
+            - generic [ref=e443]: Hard
+    - generic [ref=e445]:
+      - paragraph [ref=e446]: What our learners are saying?
+      - generic [ref=e447]:
+        - generic [ref=e448]:
+          - paragraph [ref=e452]: This platform helps me a lot to solve code and identify errors when writing incorrect code. Thank you.
+          - generic [ref=e453]:
+            - img "user profile" [ref=e454]
+            - generic [ref=e455]:
+              - paragraph [ref=e456]:
+                - text: Md Sahwaz Raza
+                - img "in" [ref=e457]
+              - generic [ref=e458]: Student
+        - generic [ref=e459]:
+          - paragraph [ref=e463]: This website is extremely useful. The courses are easy to learn and very comprehensible. The language used on this website is simple, making it easy to understand.
+          - generic [ref=e464]:
+            - img "user profile" [ref=e465]
+            - generic [ref=e466]:
+              - paragraph [ref=e467]:
+                - text: Shaifa Urooj
+                - img "in" [ref=e468]
+              - generic [ref=e469]: Student
+        - generic [ref=e470]:
+          - paragraph [ref=e474]: A nice initiative to give learners the confidence that they can do anything and learn anything they want. Really nice work, Team CodeChef.
+          - generic [ref=e475]:
+            - img "user profile" [ref=e476]
+            - generic [ref=e477]:
+              - paragraph [ref=e478]:
+                - text: Tejas Kolhe
+                - img "in" [ref=e479]
+              - generic [ref=e480]: Student
+    - generic [ref=e482]:
+      - generic [ref=e483]: Frequently asked questions
+      - generic [ref=e484]:
+        - generic [ref=e485]:
+          - button "What is a heap in data structures?" [ref=e486] [cursor=pointer]:
+            - img [ref=e488]
+            - generic [ref=e490]: What is a heap in data structures?
+          - generic [ref=e491]: A heap is a specialized tree-based data structure that satisfies the heap property. In a max heap, for any given node I, the value of I is greater than or equal to the values of its children. In a min heap, the value of I is less than or equal to the values of its children. Heaps are commonly used to implement priority queues and for efficient sorting algorithms like heap sort.
+        - generic [ref=e492]:
+          - button "What are the basic operations performed on a heap?" [ref=e493] [cursor=pointer]:
+            - img [ref=e495]
+            - generic [ref=e497]: What are the basic operations performed on a heap?
+          - generic [ref=e498]:
+            - text: "The fundamental operations on a heap include:"
+            - list [ref=e499]:
+              - listitem [ref=e500]: "Insertion: Adding a new element to the heap (O(log n))"
+              - listitem [ref=e501]: "Deletion: Removing the root element (O(log n))"
+              - listitem [ref=e502]: "Peek: Viewing the root element without removing it (O(1))"
+              - listitem [ref=e503]: "Heapify: Converting an array into a heap structure (O(n))"
+              - listitem [ref=e504]: These operations maintain the heap property and are essential for utilizing heaps effectively in various algorithms.
+        - generic [ref=e505]:
+          - button "How does heap sort work?" [ref=e506] [cursor=pointer]:
+            - img [ref=e508]
+            - generic [ref=e510]: How does heap sort work?
+          - generic [ref=e511]: Heap sort is an efficient comparison-based sorting algorithm that uses a binary heap data structure. It works by first building a max heap from the input array, then repeatedly extracting the maximum element (root) and placing it at the end of the array. After each extraction, the heap is reconstructed. This process continues until the entire array is sorted, resulting in a time complexity of O(n log n) for sorting n elements.
+        - generic [ref=e512]:
+          - button "How is a heap different from a binary search tree (BST)?" [ref=e513] [cursor=pointer]:
+            - img [ref=e515]
+            - generic [ref=e517]: How is a heap different from a binary search tree (BST)?
+          - generic [ref=e518]:
+            - text: "While both heaps and BSTs are tree-based data structures, they have key differences:"
+            - list [ref=e519]:
+              - listitem [ref=e520]: "Ordering: Heaps maintain a partial ordering (heap property) while BSTs have a specific left-right ordering."
+              - listitem [ref=e521]: "Balance: Heaps are always complete binary trees, whereas BSTs can be unbalanced."
+              - listitem [ref=e522]: "Operations: Heaps excel at finding min/max elements, while BSTs are optimized for searching, insertion, and deletion across all elements."
+              - listitem [ref=e523]: "Use cases: Heaps are ideal for priority queues and sorting, while BSTs are better for maintaining sorted data and range queries."
+        - generic [ref=e524]:
+          - button "Why should I learn about heaps?" [ref=e525] [cursor=pointer]:
+            - img [ref=e527]
+            - generic [ref=e529]: Why should I learn about heaps?
+          - generic [ref=e530]:
+            - text: "Learning about heaps is crucial for several reasons:"
+            - list [ref=e531]:
+              - listitem [ref=e532]: "Efficient algorithms: Heaps are the foundation for efficient sorting (heap sort) and graph algorithms (Dijkstra's algorithm)."
+              - listitem [ref=e533]: "Priority queues: Heaps are optimal for implementing priority queues, which are used in task scheduling and data compression."
+              - listitem [ref=e534]: "Interview preparation: Heap-related questions are common in coding interviews for software engineering positions."
+              - listitem [ref=e535]: "Problem-solving skills: Understanding heaps enhances your ability to solve complex computational problems efficiently."
+        - generic [ref=e536]:
+          - button "How can I practice implementing heaps?" [ref=e537] [cursor=pointer]:
+            - img [ref=e539]
+            - generic [ref=e541]: How can I practice implementing heaps?
+          - generic [ref=e542]:
+            - text: "To practice implementing heaps:"
+            - list [ref=e543]:
+              - listitem [ref=e544]: Start with CodeChef's "Learn Heaps" course, which offers interactive lessons and coding problems.
+              - listitem [ref=e545]: Implement basic heap operations (insert, delete, heapify) in your preferred programming language.
+              - listitem [ref=e546]: Solve heap-related coding challenges on platforms like CodeChef
+              - listitem [ref=e547]: Visualize heap operations using online tools to better understand the concept.
+              - listitem [ref=e548]: Attempt to implement a priority queue using a heap data structure.

@@ -1,0 +1,611 @@
+Platform,Category,Problem Name,URL,Difficulty,Key Concept
+LeetCode,Fixed-Size Window,643. Maximum Average Subarray I,https://leetcode.com/problems/maximum-average-subarray-i/,Easy,Fixed-size window average
+LeetCode,Fixed-Size Window,1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold,https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/,Medium,Fixed-size window average threshold
+LeetCode,Fixed-Size Window,1987. Substrings of Size Three with Distinct Characters,https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/,Easy,Fixed-size distinct check
+LeetCode,Fixed-Size Window,219. Contains Duplicate II,https://leetcode.com/problems/contains-duplicate-ii/,Easy,Fixed-size hashset sliding
+LeetCode,Fixed-Size Window,187. Repeated DNA Sequences,https://leetcode.com/problems/repeated-dna-sequences/,Medium,Fixed-size rolling hash
+LeetCode,Fixed-Size Window,239. Sliding Window Maximum,https://leetcode.com/problems/sliding-window-maximum/,Hard,Monotonic deque fixed-size max
+LeetCode,Fixed-Size Window,480. Sliding Window Median,https://leetcode.com/problems/sliding-window-median/,Hard,Two-heap sliding median
+LeetCode,Fixed-Size Window,567. Permutation in String,https://leetcode.com/problems/permutation-in-string/,Medium,Fixed-size frequency permutation
+LeetCode,Fixed-Size Window,438. Find All Anagrams in a String,https://leetcode.com/problems/find-all-anagrams-in-a-string/,Medium,Fixed-size anagram indices
+LeetCode,Fixed-Size Window,1456. Maximum Number of Vowels in a Substring of Given Length,https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/,Medium,Fixed-size vowel count
+LeetCode,Fixed-Size Window,1052. Grumpy Bookstore Owner,https://leetcode.com/problems/grumpy-bookstore-owner/,Medium,Fixed-size max satisfaction
+LeetCode,Fixed-Size Window,1652. Defuse the Bomb,https://leetcode.com/problems/defuse-the-bomb/,Easy,Fixed-size circular sliding sum
+LeetCode,Fixed-Size Window,2090. K Radius Subarray Averages,https://leetcode.com/problems/k-radius-subarray-averages/,Medium,Fixed-size prefix-sum window average
+LeetCode,Fixed-Size Window,2269. Find the K-Beauty of a Number,https://leetcode.com/problems/find-the-k-beauty-of-a-number/,Easy,Fixed-size digit window divisor
+LeetCode,Fixed-Size Window,2379. Minimum Recolors to Get K Consecutive Black Blocks,https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/,Easy,Fixed-size min recolor
+LeetCode,Fixed-Size Window,2461. Maximum Sum of Distinct Subarrays With Length K,https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/,Medium,Fixed-size distinct sum hashmap
+LeetCode,Fixed-Size Window,2841. Maximum Sum of Almost Unique Subarray,https://leetcode.com/problems/maximum-sum-of-almost-unique-subarray/,Medium,Fixed-size almost-unique sum
+LeetCode,Fixed-Size Window,2958. Length of Longest Subarray With at Most K Frequency,https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/,Medium,Variable-size frequency cap
+LeetCode,Fixed-Size Window,3090. Maximum Length Substring With Two Occurrences,https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/,Easy,Variable-size at most 2 occurrences
+LeetCode,Fixed-Size Window,3206. Alternating Groups I,https://leetcode.com/problems/alternating-groups-i/,Easy,Fixed-size circular alternating
+LeetCode,Fixed-Size Window,3208. Alternating Groups II,https://leetcode.com/problems/alternating-groups-ii/,Medium,Fixed-size circular alternating
+LeetCode,Fixed-Size Window,1096. Maximum Sum of Two Non-Overlapping Subarrays,https://leetcode.com/problems/maximum-sum-of-two-non-overlapping-subarrays/,Medium,DP + fixed-size windows
+LeetCode,Fixed-Size Window,1151. Minimum Swaps to Group All 1's Together,https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/,Medium,Fixed-size min swaps ones
+LeetCode,Fixed-Size Window,2134. Minimum Swaps to Group All 1's Together II,https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/,Medium,Fixed-size circular min swaps
+LeetCode,Fixed-Size Window,1176. Diet Plan Performance,https://leetcode.com/problems/diet-plan-performance/,Easy,Fixed-size sliding sum
+LeetCode,Fixed-Size Window,1100. Find K-Length Substrings With No Repeated Characters,https://leetcode.com/problems/find-k-length-substrings-with-no-repeated-characters/,Medium,Fixed-size no repeat substring
+LeetCode,Fixed-Size Window,1852. Distinct Numbers in Each Subarray,https://leetcode.com/problems/distinct-numbers-in-each-subarray/,Medium,Fixed-size distinct count
+LeetCode,Fixed-Size Window,2001. Number of Pairs of Interchangeable Rectangles,https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/,Medium,Sliding window + ratio hashmap
+LeetCode,Fixed-Size Window,2211. Count Collisions on a Road,https://leetcode.com/problems/count-collisions-on-a-road/,Medium,Sliding window + simulation
+LeetCode,Fixed-Size Window,2209. Number of Equal Count Substrings,https://leetcode.com/problems/number-of-equal-count-substrings/,Medium,Fixed-size + frequency
+LeetCode,Variable-Size Window,3. Longest Substring Without Repeating Characters,https://leetcode.com/problems/longest-substring-without-repeating-characters/,Medium,Variable-size distinct chars hashmap
+LeetCode,Variable-Size Window,30. Substring with Concatenation of All Words,https://leetcode.com/problems/substring-with-concatenation-of-all-words/,Hard,Fixed-size word concatenation hashmap
+LeetCode,Variable-Size Window,76. Minimum Window Substring,https://leetcode.com/problems/minimum-window-substring/,Hard,Variable-size min covering substring
+LeetCode,Variable-Size Window,159. Longest Substring with At Most Two Distinct Characters,https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/,Medium,Variable-size at most 2 distinct
+LeetCode,Variable-Size Window,209. Minimum Size Subarray Sum,https://leetcode.com/problems/minimum-size-subarray-sum/,Medium,Variable-size min length target sum
+LeetCode,Variable-Size Window,220. Contains Duplicate III,https://leetcode.com/problems/contains-duplicate-iii/,Hard,Bucket sort + sliding window
+LeetCode,Variable-Size Window,340. Longest Substring with At Most K Distinct Characters,https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/,Medium,Variable-size at most k distinct
+LeetCode,Variable-Size Window,395. Longest Substring with At Least K Repeating Characters,https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/,Medium,Divide-and-conquer sliding window
+LeetCode,Variable-Size Window,413. Arithmetic Slices,https://leetcode.com/problems/arithmetic-slices/,Medium,Variable-size consecutive diff
+LeetCode,Variable-Size Window,424. Longest Repeating Character Replacement,https://leetcode.com/problems/longest-repeating-character-replacement/,Medium,Variable-size max freq replacement
+LeetCode,Variable-Size Window,487. Max Consecutive Ones II,https://leetcode.com/problems/max-consecutive-ones-ii/,Medium,Variable-size max ones 1 flip
+LeetCode,Variable-Size Window,594. Longest Harmonious Subsequence,https://leetcode.com/problems/longest-harmonious-subsequence/,Easy,Sorting + sliding window
+LeetCode,Variable-Size Window,632. Smallest Range Covering Elements from K Lists,https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/,Hard,Heap sliding k-list range
+LeetCode,Variable-Size Window,658. Find K Closest Elements,https://leetcode.com/problems/find-k-closest-elements/,Medium,Binary search + sliding window
+LeetCode,Variable-Size Window,683. K Empty Slots,https://leetcode.com/problems/k-empty-slots/,Hard,Ordered set + sliding window
+LeetCode,Variable-Size Window,689. Maximum Sum of 3 Non-Overlapping Subarrays,https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/,Hard,DP + sliding window
+LeetCode,Variable-Size Window,713. Subarray Product Less Than K,https://leetcode.com/problems/subarray-product-less-than-k/,Medium,Variable-size product under k
+LeetCode,Variable-Size Window,718. Maximum Length of Repeated Subarray,https://leetcode.com/problems/maximum-length-of-repeated-subarray/,Medium,DP / rolling hash sliding window
+LeetCode,Variable-Size Window,727. Minimum Window Subsequence,https://leetcode.com/problems/minimum-window-subsequence/,Hard,DP + sliding window
+LeetCode,Variable-Size Window,837. New 21 Game,https://leetcode.com/problems/new-21-game/,Medium,Variable-size probability window
+LeetCode,Variable-Size Window,862. Shortest Subarray with Sum at Least K,https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/,Hard,Monotonic deque + prefix sum
+LeetCode,Variable-Size Window,904. Fruit Into Baskets,https://leetcode.com/problems/fruit-into-baskets/,Medium,Variable-size at most 2 distinct
+LeetCode,Variable-Size Window,930. Binary Subarrays With Sum,https://leetcode.com/problems/binary-subarrays-with-sum/,Medium,Prefix sum / sliding window exact sum
+LeetCode,Variable-Size Window,978. Longest Turbulent Subarray,https://leetcode.com/problems/longest-turbulent-subarray/,Medium,Variable-size alternating comparison
+LeetCode,Variable-Size Window,992. Subarrays with K Different Integers,https://leetcode.com/problems/subarrays-with-k-different-integers/,Hard,Variable-size atMost-K trick
+LeetCode,Variable-Size Window,995. Minimum Number of K Consecutive Bit Flips,https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/,Hard,Fixed-size queue-gated flip
+LeetCode,Variable-Size Window,1004. Max Consecutive Ones III,https://leetcode.com/problems/max-consecutive-ones-iii/,Medium,Variable-size max ones K flips
+LeetCode,Variable-Size Window,1016. Binary String With Substrings Representing 1 To N,https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/,Medium,Fixed-size binary representation
+LeetCode,Variable-Size Window,1040. Moving Stones Until Consecutive II,https://leetcode.com/problems/moving-stones-until-consecutive-ii/,Medium,Sorting + sliding window + math
+LeetCode,Variable-Size Window,1044. Longest Duplicate Substring,https://leetcode.com/problems/longest-duplicate-substring/,Hard,Rolling hash + binary search
+LeetCode,Variable-Size Window,1208. Get Equal Substrings Within Budget,https://leetcode.com/problems/get-equal-substrings-within-budget/,Medium,Variable-size cost-limited substring
+LeetCode,Variable-Size Window,1234. Replace the Substring for Balanced String,https://leetcode.com/problems/replace-the-substring-for-balanced-string/,Medium,Variable-size balancing window
+LeetCode,Variable-Size Window,1248. Count Number of Nice Subarrays,https://leetcode.com/problems/count-number-of-nice-subarrays/,Medium,Variable-size odd count prefix sum
+LeetCode,Variable-Size Window,1297. Maximum Number of Occurrences of a Substring,https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/,Medium,Fixed-size substring + constraints
+LeetCode,Variable-Size Window,1358. Number of Substrings Containing All Three Characters,https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/,Medium,Variable-size abc-containing count
+LeetCode,Variable-Size Window,1423. Maximum Points You Can Obtain from Cards,https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/,Medium,Variable-size prefix-suffix sliding
+LeetCode,Variable-Size Window,1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit,https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/,Medium,Deque min/max variable window
+LeetCode,Variable-Size Window,1446. Consecutive Characters,https://leetcode.com/problems/consecutive-characters/,Easy,Variable-size consecutive same char
+LeetCode,Variable-Size Window,1461. Check If a String Contains All Binary Codes of Size K,https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/,Medium,Fixed-size binary code hashset
+LeetCode,Variable-Size Window,1493. Longest Subarray of 1's After Deleting One Element,https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/,Medium,Variable-size max ones with deletion
+LeetCode,Variable-Size Window,1499. Max Value of Equation,https://leetcode.com/problems/max-value-of-equation/,Hard,Monotonic deque sliding
+LeetCode,Variable-Size Window,1610. Maximum Number of Visible Points,https://leetcode.com/problems/maximum-number-of-visible-points/,Hard,Sorting + sliding window + geometry
+LeetCode,Variable-Size Window,1658. Minimum Operations to Reduce X to Zero,https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/,Medium,Variable-size sliding on complement
+LeetCode,Variable-Size Window,1695. Maximum Erasure Value,https://leetcode.com/problems/maximum-erasure-value/,Medium,Variable-size unique subarray sum
+LeetCode,Variable-Size Window,1703. Minimum Adjacent Swaps for K Consecutive Ones,https://leetcode.com/problems/minimum-adjacent-swaps-for-k-consecutive-ones/,Hard,Sliding window + prefix sum + median
+LeetCode,Variable-Size Window,1763. Longest Nice Substring,https://leetcode.com/problems/longest-nice-substring/,Easy,Divide-and-conquer sliding window
+LeetCode,Variable-Size Window,1838. Frequency of the Most Frequent Element,https://leetcode.com/problems/frequency-of-the-most-frequent-element/,Medium,Sorting + sliding window + prefix sum
+LeetCode,Variable-Size Window,1839. Longest Substring Of All Vowels in Order,https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/,Medium,Variable-size vowel order check
+LeetCode,Variable-Size Window,1888. Minimum Number of Flips to Make the Binary String Alternating,https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/,Medium,Sliding window + pattern matching
+LeetCode,Variable-Size Window,2024. Maximize the Confusion of an Exam,https://leetcode.com/problems/maximize-the-confusion-of-an-exam/,Medium,Variable-size char replacement
+LeetCode,Variable-Size Window,2107. Number of Unique Flavors After Sharing K Candies,https://leetcode.com/problems/number-of-unique-flavors-after-sharing-k-candies/,Medium,Sliding window + hashmap
+LeetCode,Variable-Size Window,2156. Find Substring With Given Hash Value,https://leetcode.com/problems/find-substring-with-given-hash-value/,Hard,Rolling hash sliding window
+LeetCode,Variable-Size Window,2260. Minimum Consecutive Cards to Pick Up,https://leetcode.com/problems/minimum-consecutive-cards-to-pick-up/,Medium,Variable-size min gap duplicates
+LeetCode,Variable-Size Window,2271. Maximum White Tiles Covered by a Carpet,https://leetcode.com/problems/maximum-white-tiles-covered-by-a-carpet/,Medium,Sorting + sliding window + prefix sum
+LeetCode,Variable-Size Window,2302. Count Subarrays With Score Less Than K,https://leetcode.com/problems/count-subarrays-with-score-less-than-k/,Hard,Binary search + sliding window
+LeetCode,Variable-Size Window,2398. Maximum Number of Robots Within Budget,https://leetcode.com/problems/maximum-number-of-robots-within-budget/,Hard,Monotonic deque + sliding window
+LeetCode,Variable-Size Window,2401. Longest Nice Subarray,https://leetcode.com/problems/longest-nice-subarray/,Medium,Variable-size bitwise AND constraint
+LeetCode,Variable-Size Window,2444. Count Subarrays With Fixed Bounds,https://leetcode.com/problems/count-subarrays-with-fixed-bounds/,Hard,Sliding window + boundary tracking
+LeetCode,Variable-Size Window,2498. Smallest Subarrays With Maximum Bitwise OR,https://leetcode.com/problems/smallest-subarrays-with-maximum-bitwise-or/,Medium,Sliding window + bitwise OR
+LeetCode,Variable-Size Window,2516. Take K of Each Character From Left and Right,https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/,Medium,Variable-size inverse sliding
+LeetCode,Variable-Size Window,2537. Count the Number of Good Subarrays,https://leetcode.com/problems/count-the-number-of-good-subarrays/,Medium,Variable-size pair-count window
+LeetCode,Variable-Size Window,2555. Maximize Win From Two Segments,https://leetcode.com/problems/maximize-win-from-two-segments/,Medium,DP + binary search + sliding window
+LeetCode,Variable-Size Window,2653. Sliding Subarray Beauty,https://leetcode.com/problems/sliding-subarray-beauty/,Medium,Sliding window + sorted frequency
+LeetCode,Variable-Size Window,2667. Maximum Frequency Score of a Subarray,https://leetcode.com/problems/maximum-frequency-score-of-a-subarray/,Hard,Sliding window + hashmap + math
+LeetCode,Variable-Size Window,2730. Find the Longest Semi-Repetitive Substring,https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/,Medium,Variable-size at most 1 adjacent duplicate
+LeetCode,Variable-Size Window,2747. Count Zero Request Servers,https://leetcode.com/problems/count-zero-request-servers/,Medium,Sorting + sliding window
+LeetCode,Variable-Size Window,2760. Longest Even Odd Subarray With Threshold,https://leetcode.com/problems/longest-even-odd-subarray-with-threshold/,Easy,Variable-size alternating parity
+LeetCode,Variable-Size Window,2762. Continuous Subarrays,https://leetcode.com/problems/continuous-subarrays/,Medium,Variable-size abs-diff <= 2
+LeetCode,Variable-Size Window,2831. Find the Longest Equal Subarray,https://leetcode.com/problems/find-the-longest-equal-subarray/,Medium,Variable-size max freq element
+LeetCode,Variable-Size Window,2875. Minimum Size Subarray in Infinite Array,https://leetcode.com/problems/minimum-size-subarray-in-infinite-array/,Medium,Variable-size infinite array
+LeetCode,Variable-Size Window,2890. Count Substrings Without Repeating Character,https://leetcode.com/problems/count-substrings-without-repeating-character/,Medium,Variable-size distinct chars
+LeetCode,Variable-Size Window,2962. Count Subarrays Where Max Element Appears at Least K Times,https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/,Medium,Variable-size max freq threshold
+LeetCode,Variable-Size Window,2968. Apply Operations to Maximize Frequency Score,https://leetcode.com/problems/apply-operations-to-maximize-frequency-score/,Hard,Sorting + sliding + prefix sum + median
+LeetCode,Variable-Size Window,2981. Find Longest Special Substring That Occurs Thrice I,https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-i/,Medium,Binary search + sliding window
+LeetCode,Variable-Size Window,2982. Find Longest Special Substring That Occurs Thrice II,https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-ii/,Medium,Binary search + sliding window
+LeetCode,Variable-Size Window,3013. Divide an Array Into Subarrays With Minimum Cost II,https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-ii/,Hard,Sliding window + heap + hashmap
+LeetCode,Variable-Size Window,3023. Find Pattern in Infinite Stream I,https://leetcode.com/problems/find-pattern-in-infinite-stream-i/,Medium,Rolling hash sliding window
+LeetCode,Variable-Size Window,3068. Find the Maximum Sum of Node Values,https://leetcode.com/problems/find-the-maximum-sum-of-node-values/,Hard,Tree DP + sliding window
+LeetCode,Variable-Size Window,3092. Most Frequent ID,https://leetcode.com/problems/most-frequent-id/,Medium,Sliding window + hashmap
+LeetCode,Variable-Size Window,3107. Minimum Operations to Make Subarray Elements Equal,https://leetcode.com/problems/minimum-operations-to-make-subarray-elements-equal/,Medium,Sliding window + median
+LeetCode,Variable-Size Window,3113. Find the Number of Subarrays Where Boundary Elements Are Maximum,https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/,Hard,Monotonic stack + sliding window
+LeetCode,Variable-Size Window,3130. Find All Possible Stable Binary Arrays I,https://leetcode.com/problems/find-all-possible-stable-binary-arrays-i/,Medium,DP + sliding window
+LeetCode,Variable-Size Window,3134. Find the Median of the Uniqueness Array,https://leetcode.com/problems/find-the-median-of-the-uniqueness-array/,Hard,Binary search + sliding window
+LeetCode,Variable-Size Window,3152. Special Array II,https://leetcode.com/problems/special-array-ii/,Medium,Sliding window + parity groups
+LeetCode,Variable-Size Window,3192. Minimum Operations to Make Binary Array Elements Equal to One I,https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/,Medium,Queue-gated flip sliding window
+LeetCode,Variable-Size Window,3193. Maximum Strong Pair XOR I,https://leetcode.com/problems/maximum-strong-pair-xor-i/,Easy,Trie + sliding window
+LeetCode,Variable-Size Window,3197. Maximum Strong Pair XOR II,https://leetcode.com/problems/maximum-strong-pair-xor-ii/,Hard,Trie + sliding window
+LeetCode,Variable-Size Window,3223. Count Complete Substrings,https://leetcode.com/problems/count-complete-substrings/,Hard,Sliding window + frequency
+LeetCode,Variable-Size Window,3224. Minimum Increment to Make Array Unique,https://leetcode.com/problems/minimum-increment-to-make-array-unique/,Medium,Sorting + sliding window
+LeetCode,Variable-Size Window,3261. Count Substrings That Satisfy K-Constraint I,https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/,Easy,Variable-size binary constraint
+LeetCode,Variable-Size Window,3262. Count Substrings That Satisfy K-Constraint II,https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/,Hard,Sliding window + prefix sum
+LeetCode,Variable-Size Window,3323. Minimum Moves to Make Array Continuous,https://leetcode.com/problems/minimum-moves-to-make-array-continuous/,Hard,Sorting + sliding window
+LeetCode,Variable-Size Window,3325. Count Substrings With K-Frequency Characters I,https://leetcode.com/problems/count-substrings-with-k-frequency-characters-i/,Medium,Sliding window + frequency
+LeetCode,Variable-Size Window,3326. Count Substrings With K-Frequency Characters II,https://leetcode.com/problems/count-substrings-with-k-frequency-characters-ii/,Hard,Sliding window + frequency
+LeetCode,Variable-Size Window,3370. Smallest Subarray With OR at Least K,https://leetcode.com/problems/smallest-subarray-with-or-at-least-k/,Medium,Sliding window + bitwise OR
+LeetCode,Variable-Size Window,3380. Shortest Subarray With OR at Least K II,https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/,Medium,Sliding window + bitwise OR
+LeetCode,Variable-Size Window,3381. Shortest Subarray With OR at Least K I,https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/,Easy,Sliding window + bitwise OR
+LeetCode,Variable-Size Window,3411. Maximum Subarray With Equal Products,https://leetcode.com/problems/maximum-subarray-with-equal-products/,Easy,Sliding window + GCD/LCM
+LeetCode,Variable-Size Window,3462. Maximum Sum With at Most K Elements,https://leetcode.com/problems/maximum-sum-with-at-most-k-elements/,Medium,Sliding window + heap
+LeetCode,Variable-Size Window,3522. Find the Power of K-Size Subarrays I,https://leetcode.com/problems/find-the-power-of-k-size-subarrays-i/,Medium,Fixed-size consecutive sorted check
+LeetCode,Variable-Size Window,3523. Find the Power of K-Size Subarrays II,https://leetcode.com/problems/find-the-power-of-k-size-subarrays-ii/,Medium,Fixed-size consecutive sorted check
+LeetCode,Variable-Size Window,3555. Find X-Sum of All K-Long Subarrays I,https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/,Easy,Sliding window + heap
+LeetCode,Variable-Size Window,3556. Find X-Sum of All K-Long Subarrays II,https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/,Hard,Sliding window + heap
+LeetCode,Variable-Size Window,3570. Count of Substrings Containing Every Vowel and K Consonants I,https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/,Medium,Sliding window + vowel/consonant
+LeetCode,Variable-Size Window,3571. Count of Substrings Containing Every Vowel and K Consonants II,https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/,Medium,Sliding window + vowel/consonant
+LeetCode,Variable-Size Window,3573. Count Substrings That Can Be Rearranged to Contain a String I,https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/,Medium,Sliding window + frequency
+LeetCode,Variable-Size Window,3574. Count Substrings That Can Be Rearranged to Contain a String II,https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/,Hard,Sliding window + frequency
+LeetCode,Variable-Size Window,3644. Minimum Positive Sum Subarray,https://leetcode.com/problems/minimum-positive-sum-subarray/,Easy,Sliding window + prefix sum
+LeetCode,Variable-Size Window,3675. Maximum Number of K-Divisible Components,https://leetcode.com/problems/maximum-number-of-k-divisible-components/,Hard,Tree DP + sliding window
+LeetCode,Variable-Size Window,3715. Maximum Coins From K Consecutive Bags,https://leetcode.com/problems/maximum-coins-from-k-consecutive-bags/,Medium,Sorting + sliding window + prefix sum
+LeetCode,Variable-Size Window,3743. Reschedule Meetings for Maximum Free Time I,https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-i/,Medium,Sliding window + greedy
+LeetCode,Variable-Size Window,3761. Maximum Difference Between Even and Odd Frequency II,https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-ii/,Hard,Sliding window + DP + frequency
+LeetCode,Variable-Size Window,3835. Count Partitions With Max-Min Difference at Most K,https://leetcode.com/problems/count-partitions-with-max-min-difference-at-most-k/,Medium,DP + deque + sliding window
+LeetCode,Variable-Size Window,3907. Count Prime-Gap Balanced Subarrays,https://leetcode.com/problems/count-prime-gap-balanced-subarrays/,Medium,Sliding window + number theory
+LeetCode,Variable-Size Window,3958. Minimum Removals to Balance Array,https://leetcode.com/problems/minimum-removals-to-balance-array/,Medium,Sorting + sliding window
+LeetCode,Variable-Size Window,3980. Best Time to Buy and Sell Stock using Strategy,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-using-strategy/,Medium,Sliding window + prefix sum
+LeetCode,Variable-Size Window,3992. Longest Semi-Repeating Subarray,https://leetcode.com/problems/longest-semi-repeating-subarray/,Medium,Sliding window + frequency
+LeetCode,Variable-Size Window,4002. Count Subarrays With K Distinct Integers,https://leetcode.com/problems/count-subarrays-with-k-distinct-integers/,Hard,Sliding window + atMost-K trick
+LeetCode,Variable-Size Window,4021. Distinct Points Reachable After Substring Removal,https://leetcode.com/problems/distinct-points-reachable-after-substring-removal/,Medium,Sliding window + prefix sum
+LeetCode,Variable-Size Window,4036. Sum of Weighted Modes in Subarrays,https://leetcode.com/problems/sum-of-weighted-modes-in-subarrays/,Medium,Sliding window + frequency + ordered set
+LeetCode,Variable-Size Window,4145. Minimum Inversion Count in Subarrays of Fixed Length,https://leetcode.com/problems/minimum-inversion-count-in-subarrays-of-fixed-length/,Hard,Sliding window + segment tree
+LeetCode,Variable-Size Window,4152. Minimum Subarray Length With Distinct Sum At Least K,https://leetcode.com/problems/minimum-subarray-length-with-distinct-sum-at-least-k/,Medium,Sliding window + hashmap
+LeetCode,Variable-Size Window,4204. Maximum Subarray XOR with Bounded Range,https://leetcode.com/problems/maximum-subarray-xor-with-bounded-range/,Hard,Sliding window + trie + deque
+CSES,Fixed-Size Window,Sliding Window Sum,https://cses.fi/problemset/task/3220,Medium,Fixed-size sliding sum
+CSES,Fixed-Size Window,Sliding Window Minimum,https://cses.fi/problemset/task/3221,Medium,Monotonic deque min
+CSES,Fixed-Size Window,Sliding Window XOR,https://cses.fi/problemset/task/3426,Medium,Fixed-size sliding XOR
+CSES,Fixed-Size Window,Sliding Window OR,https://cses.fi/problemset/task/3405,Medium,Fixed-size sliding OR
+CSES,Fixed-Size Window,Sliding Window Distinct Values,https://cses.fi/problemset/task/3222,Medium,Fixed-size distinct count
+CSES,Fixed-Size Window,Sliding Window Mode,https://cses.fi/problemset/task/3224,Hard,Fixed-size frequency mode
+CSES,Fixed-Size Window,Sliding Window MEX,https://cses.fi/problemset/task/3219,Hard,Fixed-size MEX tracking
+CSES,Fixed-Size Window,Sliding Window Median,https://cses.fi/problemset/task/1076,Hard,Two-heap sliding median
+CSES,Fixed-Size Window,Sliding Window Cost,https://cses.fi/problemset/task/1077,Hard,Multiset median cost
+CSES,Fixed-Size Window,Sliding Window Inversions,https://cses.fi/problemset/task/3223,Hard,BIT inversion count sliding
+CSES,Fixed-Size Window,Sliding Window Advertisement,https://cses.fi/problemset/task/3227,Hard,Largest rectangle variant
+CSES,Variable-Size Window,Maximum Subarray Sum II,https://cses.fi/problemset/task/1644,Medium,Sum with length constraints
+CSES,Variable-Size Window,Subarray Distinct Values,https://cses.fi/problemset/task/2428,Medium,Variable-size distinct count
+CSES,Variable-Size Window,Subarray Sums I,https://cses.fi/problemset/task/1660,Medium,Variable-size target sum
+CSES,Variable-Size Window,Subarray Sums II,https://cses.fi/problemset/task/1661,Medium,Prefix sum + hashmap
+GeeksforGeeks,Fixed-Size Window,Maximum sum of a subarray of size k,https://www.geeksforgeeks.org/problems/max-sum-subarray-of-size-k5313/1,Easy,Fixed-size max sum
+GeeksforGeeks,Fixed-Size Window,Count distinct elements in every window,https://www.geeksforgeeks.org/problems/count-distinct-elements-in-every-window/0,Easy,Fixed-size distinct count
+GeeksforGeeks,Fixed-Size Window,First negative integer in every window of size k,https://www.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k/0,Easy,Fixed-size first negative deque
+GeeksforGeeks,Fixed-Size Window,Sliding Window Maximum,https://www.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k/0,Hard,Deque fixed-size max
+GeeksforGeeks,Fixed-Size Window,Anagram Substring Search,https://www.geeksforgeeks.org/anagram-substring-search-search-permutations/,Medium,Fixed-size frequency match
+GeeksforGeeks,Fixed-Size Window,Count occurrences of anagrams,https://www.geeksforgeeks.org/count-occurrences-of-anagrams/,Medium,Fixed-size anagram count
+GeeksforGeeks,Fixed-Size Window,Sum of all subarrays of size K,https://www.geeksforgeeks.org/sum-of-all-subarrays-of-size-k/,Easy,Fixed-size sliding sum
+GeeksforGeeks,Fixed-Size Window,Subarray of size k with given sum,https://www.geeksforgeeks.org/subarray-of-size-k-with-given-sum/,Easy,Fixed-size target sum
+GeeksforGeeks,Fixed-Size Window,Lexicographically smallest and largest substring of size k,https://www.geeksforgeeks.org/lexicographically-smallest-and-largest-substring-of-size-k/,Medium,Fixed-size substring comparison
+GeeksforGeeks,Fixed-Size Window,Maximum of minimum for every window size,https://www.geeksforgeeks.org/find-the-maximum-of-minimums-for-every-window-size-in-a-given-array/,Hard,Stack sliding window
+GeeksforGeeks,Fixed-Size Window,Maximum sum square sub-matrix of given size,https://www.geeksforgeeks.org/print-maximum-sum-square-sub-matrix-of-given-size/,Medium,2D fixed-size prefix sum
+GeeksforGeeks,Fixed-Size Window,Sliding Window Maximum : Set 2,https://www.geeksforgeeks.org/sliding-window-maximum-set-2/,Hard,Fixed-size max with deque
+GeeksforGeeks,Fixed-Size Window,Median of sliding window in an array,https://www.geeksforgeeks.org/median-of-sliding-window-in-an-array/,Hard,Two heaps sliding median
+GeeksforGeeks,Fixed-Size Window,Count Distinct Elements in Every Window,https://www.geeksforgeeks.org/count-distinct-elements-in-every-window-of-size-k/,Easy,Fixed-size distinct count
+GeeksforGeeks,Fixed-Size Window,Check if a subarray of size K exists whose elements form a number divisible by 3,https://www.geeksforgeeks.org/check-if-a-subarray-of-size-k-exists-whose-elements-form-a-number-divisible-by-3/,Easy,Fixed-size modulo
+GeeksforGeeks,Fixed-Size Window,Chocolate Distribution Problem,https://www.geeksforgeeks.org/chocolate-distribution-problem/,Easy,Sorting + sliding window
+GeeksforGeeks,Fixed-Size Window,Minimum Swaps to group all 1s,https://www.geeksforgeeks.org/minimum-swaps-required-group-1s-together/,Medium,Fixed-size min swaps ones
+GeeksforGeeks,Fixed-Size Window,Maximum number of set bits in K-size substring,https://www.geeksforgeeks.org/maximum-number-of-set-bits-count-in-a-k-size-substring-of-a-binary-string/,Medium,Fixed-size set bit count
+GeeksforGeeks,Fixed-Size Window,Maximum sum of K consecutive nodes in Linked List,https://www.geeksforgeeks.org/maximum-sum-of-k-consecutive-nodes-in-the-given-linked-list/,Medium,Fixed-size linked list window
+GeeksforGeeks,Fixed-Size Window,Submatrix of given size with maximum 1s,https://www.geeksforgeeks.org/submatrix-of-given-size-with-maximum-1s/,Medium,2D fixed-size prefix sum
+GeeksforGeeks,Fixed-Size Window,Number of subarrays of size K with even Bitwise OR,https://www.geeksforgeeks.org/number-of-subarrays-of-k-size-with-even-bitwise-or/,Easy,Fixed-size bitwise OR
+GeeksforGeeks,Fixed-Size Window,Minimum flips required such that all K-size substring contains 1,https://www.geeksforgeeks.org/minimum-flips-required-in-a-binary-string-such-that-all-k-size-substring-contains-1/,Hard,Sliding window + greedy
+GeeksforGeeks,Variable-Size Window,Smallest subarray with sum greater than a given value,https://www.geeksforgeeks.org/minimum-length-subarray-sum-greater-given-value/,Medium,Variable-size min length sum
+GeeksforGeeks,Variable-Size Window,Longest substring without repeating characters,https://www.geeksforgeeks.org/problems/longest-substring-without-repeating-characters/0,Medium,Variable-size distinct chars
+GeeksforGeeks,Variable-Size Window,Longest K unique characters substring,https://www.geeksforgeeks.org/problems/longest-k-unique-characters-substring/0,Medium,Variable-size K distinct
+GeeksforGeeks,Variable-Size Window,Smallest window in string containing all characters,https://www.geeksforgeeks.org/problems/smallest-window-in-string-containing-all-characters/0,Hard,Variable-size min cover
+GeeksforGeeks,Variable-Size Window,Count number of substrings with exactly K distinct characters,https://www.geeksforgeeks.org/count-number-of-substrings-with-exactly-k-distinct-characters/,Medium,Variable-size exactly K distinct
+GeeksforGeeks,Variable-Size Window,Subarrays with product less than K,https://www.geeksforgeeks.org/number-subarrays-product-less-k/,Medium,Variable-size product
+GeeksforGeeks,Variable-Size Window,Count subarrays with sum less than K,https://www.geeksforgeeks.org/number-subarrays-sum-less-k/,Medium,Variable-size sum bound
+GeeksforGeeks,Variable-Size Window,Longest subarray with atmost two distinct integers,https://www.geeksforgeeks.org/find-length-of-the-longest-subarray-containing-atmost-two-distinct-integers/,Medium,Variable-size at most 2
+GeeksforGeeks,Variable-Size Window,Maximum consecutive ones after K flips,https://www.geeksforgeeks.org/maximum-consecutive-ones-after-k-flips/,Medium,Variable-size K flips
+GeeksforGeeks,Variable-Size Window,Count subarrays with at most K distinct elements,https://www.geeksforgeeks.org/count-subarrays-with-at-most-k-distinct-elements/,Medium,Variable-size distinct
+GeeksforGeeks,Variable-Size Window,Subarrays with exactly K distinct elements,https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-distinct-elements/,Hard,Variable-size exactly K distinct
+GeeksforGeeks,Variable-Size Window,Longest subarray with all same characters after K changes,https://www.geeksforgeeks.org/maximum-length-substring-having-all-same-characters-after-k-changes/,Medium,Variable-size char replacement
+GeeksforGeeks,Variable-Size Window,Longest subarray with sum at most K,https://www.geeksforgeeks.org/longest-subarray-sum-elements-atmost-k/,Medium,Variable-size bounded sum
+GeeksforGeeks,Variable-Size Window,Smallest subarray with k distinct numbers,https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/,Medium,Variable-size min distinct
+GeeksforGeeks,Variable-Size Window,Max sum subarray with sum less than or equal to K,https://www.geeksforgeeks.org/maximum-sum-subarray-sum-less-equal-given-sum/,Medium,Variable-size bounded max sum
+GeeksforGeeks,Variable-Size Window,Find longest sub-array with exactly K odd numbers,https://www.geeksforgeeks.org/find-longest-sub-array-exactly-k-odd-numbers/,Medium,Variable-size odd count
+GeeksforGeeks,Variable-Size Window,Longest subarray of only 0s or 1s with atmost K flips,https://www.geeksforgeeks.org/longest-subarray-of-only-0s-or-1s-with-atmost-k-flips/,Medium,Variable-size K flips binary
+GeeksforGeeks,Variable-Size Window,Minimum length substring with exactly K distinct characters,https://www.geeksforgeeks.org/minimum-length-substring-with-exactly-k-distinct-characters/,Medium,Variable-size exact K distinct
+GeeksforGeeks,Variable-Size Window,Count subarrays with sum equal to its XOR value,https://www.geeksforgeeks.org/count-subarrays-with-sum-equal-to-its-xor-value/,Medium,Sliding window + XOR
+GeeksforGeeks,Variable-Size Window,Longest subarray with absolute difference between any pair at most X,https://www.geeksforgeeks.org/longest-subarray-in-which-absolute-difference-between-any-two-element-is-not-greater-than-x/,Hard,Deque min/max sliding window
+SPOJ,Fixed-Size Window,ARRAYSUB - subarrays,https://www.spoj.com/problems/ARRAYSUB/,Hard,Sliding window maximum deque
+SPOJ,Fixed-Size Window,MSC - Minimum of subarrays,https://www.spoj.com/problems/MINSUB/,Medium,Sliding window minimum deque
+SPOJ,Fixed-Size Window,MAXSUB - Maximum of subarrays,https://www.spoj.com/problems/MAXSUB/,Medium,Sliding window maximum
+SPOJ,Fixed-Size Window,ADAZOO - Ada and Zoo,https://www.spoj.com/problems/ADAZOO/,Medium,Sliding window + DS
+SPOJ,Variable-Size Window,SUBSUM - Subarray with given sum,https://www.spoj.com/problems/SUBSUM/,Medium,Variable-size target sum
+UVa,Variable-Size Window,11536 - Smallest Sub-Array,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2531,Medium,Variable-size min covering
+UVa,Variable-Size Window,108 - Maximum Sum,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=44,Medium,2D Kadane sliding window
+CodeChef,Sliding Window,KJSW - KJ and the Sliding Window,https://www.codechef.com/problems/KJSW,Medium,Sliding window
+CodeChef,Sliding Window,MAXSUBARRAY - Maximum Subarray,https://www.codechef.com/problems/MAXSUBARRAY,Medium,Fixed-size window sum
+CodeChef,Sliding Window,SUBGCD - Subarray GCD,https://www.codechef.com/problems/SUBGCD,Medium,Sliding window + GCD
+CodeChef,Sliding Window,KISUB - K-Interesting Subarrays,https://www.codechef.com/problems/KISUB,Hard,Sliding window + property
+CodeChef,Sliding Window,CHEFSUB - Chef and Subarray,https://www.codechef.com/problems/CHEFSUB,Medium,Sliding window + hashmap
+CodeChef,Sliding Window,DISTSUB - Distinct Substrings,https://www.codechef.com/problems/DISTSUB,Medium,Sliding window + hashing
+InterviewBit,Two Pointers / Window,Maximum Ones After Modification,https://www.interviewbit.com/problems/maximum-ones-after-modification/,Medium,Variable-size K flips
+InterviewBit,Two Pointers / Window,Counting Subarrays,https://www.interviewbit.com/problems/counting-subarrays/,Medium,Variable-size sum bound
+InterviewBit,Two Pointers / Window,Subarrays with distinct integers,https://www.interviewbit.com/problems/subarrays-with-distinct-integers/,Hard,Variable-size distinct count
+InterviewBit,Two Pointers / Window,Max Continuous Series of 1s,https://www.interviewbit.com/problems/max-continuous-series-of-1s/,Medium,Variable-size K flips
+InterviewBit,Two Pointers / Window,Minimum Swaps,https://www.interviewbit.com/problems/minimum-swaps/,Medium,Fixed-size min swaps
+HackerRank,Sliding Window,Maximum Subarray Sum,https://www.hackerrank.com/challenges/maximum-subarray-sum/problem,Hard,Prefix sum + BST sliding
+HackerRank,Sliding Window,Almost Sorted,https://www.hackerrank.com/challenges/almost-sorted/problem,Medium,Sliding window + array manipulation
+HackerRank,Sliding Window,The Maximum Subarray,https://www.hackerrank.com/challenges/maxsubarray/problem,Medium,Kadane sliding window
+HackerEarth,Fixed-Size Window,Maximum of K-size subarrays,https://www.hackerearth.com/practice/data-structures/trees/heapspriority-queues/practice-problems/algorithm/maximum-of-k-size-subarrays-deque/,Hard,Deque fixed-size max
+HackerEarth,Variable-Size Window,Longest Subarray with sum divisible by K,https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/practice-problems/algorithm/longest-subarray-with-sum-divisible-by-k/,Medium,Prefix sum modulo sliding window
+HackerEarth,Variable-Size Window,Subarray with given sum,https://www.hackerearth.com/practice/algorithms/searching/linear-search/practice-problems/algorithm/subarray-with-given-sum/,Medium,Variable-size target sum
+Educative,Fixed-Size Window,Maximum Sum Subarray of Size K,https://www.educative.io/courses/grokking-the-coding-interview/JPKr0kqLGp8,Easy,Fixed-size max sum
+Educative,Variable-Size Window,Smallest Subarray with a Given Sum,https://www.educative.io/courses/grokking-the-coding-interview/7XMlMEQPnnQ,Medium,Variable-size min length
+Educative,Variable-Size Window,Longest Substring with K Distinct Characters,https://www.educative.io/courses/grokking-the-coding-interview/YQQwQMWLx80,Medium,Variable-size K distinct
+Educative,Variable-Size Window,Fruits into Baskets,https://www.educative.io/courses/grokking-the-coding-interview/Bn2KLlOR0BQ,Medium,Variable-size at most 2
+Educative,Variable-Size Window,Longest Substring with Distinct Characters,https://www.educative.io/courses/grokking-the-coding-interview/YMzBx1g3B9E,Medium,Variable-size distinct
+Educative,Variable-Size Window,Longest Substring with Same Letters after Replacement,https://www.educative.io/courses/grokking-the-coding-interview/R8DVgjq78yR,Medium,Variable-size char replacement
+Educative,Variable-Size Window,Longest Subarray with Ones after Replacement,https://www.educative.io/courses/grokking-the-coding-interview/B6VypRxPolJ,Medium,Variable-size K flips
+Educative,Fixed-Size Window,Permutation in a String,https://www.educative.io/courses/grokking-the-coding-interview/N0wBnxwKKMq,Medium,Fixed-size permutation match
+Educative,Fixed-Size Window,String Anagrams,https://www.educative.io/courses/grokking-the-coding-interview/xoyL4q6ApLE,Medium,Fixed-size anagram indices
+Educative,Variable-Size Window,Smallest Window containing Substring,https://www.educative.io/courses/grokking-the-coding-interview/3wDJAYG2pAR,Hard,Variable-size min cover
+Educative,Fixed-Size Window,Words Concatenation,https://www.educative.io/courses/grokking-the-coding-interview/Y5YDWzqPn1O,Hard,Sliding window + hashmap word match
+AlgoExpert,Sliding Window,Smallest Substring of All Characters,https://www.algoexpert.io/questions/smallest-substring-containing-all-characters,Hard,Variable-size min cover
+AlgoExpert,Sliding Window,Longest Substring Without Duplication,https://www.algoexpert.io/questions/longest-substring-without-duplication,Medium,Variable-size distinct
+AlgoExpert,Sliding Window,Longest Peak,https://www.algoexpert.io/questions/longest-peak,Medium,Sliding window + mountain pattern
+AlgoExpert,Sliding Window,Zero Sum Subarray,https://www.algoexpert.io/questions/zero-sum-subarray,Medium,Prefix sum + hashmap sliding
+AlgoExpert,Sliding Window,Apartment Hunting,https://www.algoexpert.io/questions/apartment-hunting,Hard,Sliding window + distance min
+Codeforces,Two Pointers / Window,1690D - Black and White Stripe,https://codeforces.com/problemset/problem/1690/D,1000,Fixed-size min repaint
+Codeforces,Two Pointers / Window,1692E - Binary Deque,https://codeforces.com/problemset/problem/1692/E,1200,Variable-size target sum
+Codeforces,Two Pointers / Window,1354B - Ternary String,https://codeforces.com/problemset/problem/1354/B,1200,"Variable-size containing 1,2,3"
+Codeforces,Two Pointers / Window,1692G - 2^Sort,https://codeforces.com/problemset/problem/1692/G,1400,Fixed-size sorted check
+Codeforces,Two Pointers / Window,1794C - Scoring Subsequences,https://codeforces.com/problemset/problem/1794/C,1300,Variable-size product bound
+Codeforces,Two Pointers / Window,1873F - Money Trees,https://codeforces.com/problemset/problem/1873/F,1300,Variable-size height-divisible subarray
+Codeforces,Two Pointers / Window,1982C - Boring Day,https://codeforces.com/problemset/problem/1982/C,1200,Variable-size sum in range
+Codeforces,Two Pointers / Window,1736C1 - Good Subarrays (Easy),https://codeforces.com/problemset/problem/1736/C1,1300,Variable-size index constraint
+Codeforces,Two Pointers / Window,1358D - The Best Vacation,https://codeforces.com/problemset/problem/1358/D,1900,Sliding window on cyclic array
+Codeforces,Two Pointers / Window,1548B - Integers Have Friends,https://codeforces.com/problemset/problem/1548/B,1800,Sliding window + GCD
+Codeforces,Two Pointers / Window,1955D - Inaccurate Subsequence Search,https://codeforces.com/problemset/problem/1955/D,1400,Fixed-size frequency match
+Codeforces,Two Pointers / Window,1928B - Equalize,https://codeforces.com/problemset/problem/1928/B,1200,Sorting + sliding window
+Codeforces,Two Pointers / Window,1927D - Find the Different Ones,https://codeforces.com/problemset/problem/1927/D,1300,Sliding window range query
+Codeforces,Two Pointers / Window,1927E - Klever Permutation,https://codeforces.com/problemset/problem/1927/E,1400,Sliding window construction
+Codeforces,Two Pointers / Window,1973B - Cat Fox and the Lonely Array,https://codeforces.com/problemset/problem/1973/B,1300,Sliding window + OR
+Codeforces,Two Pointers / Window,1840C - Ski Resort,https://codeforces.com/problemset/problem/1840/C,1000,Variable-size consecutive days
+Codeforces,Two Pointers / Window,1899C - Yarik and Array,https://codeforces.com/problemset/problem/1899/C,1100,Variable-size alternating parity
+Codeforces,Two Pointers / Window,1409E - Two Platforms,https://codeforces.com/problemset/problem/1409/E,1800,Two sliding windows + sorting
+Codeforces,Two Pointers / Window,1731D - Valiant's New Map,https://codeforces.com/problemset/problem/1731/D,1700,Binary search + sliding window 2D
+Codeforces,Two Pointers / Window,1416A - k-Amazing Numbers,https://codeforces.com/problemset/problem/1416/A,1500,Sliding window + gaps
+Codeforces,Two Pointers / Window,1676F - Longest Strike,https://codeforces.com/problemset/problem/1676/F,1300,Sliding window + frequency
+Codeforces,Two Pointers / Window,1535C - Unstable String,https://codeforces.com/problemset/problem/1535/C,1400,Variable-size alternating
+Codeforces,Two Pointers / Window,1771B - Hossam and Friends,https://codeforces.com/problemset/problem/1771/B,1400,Sliding window + friend constraint
+Codeforces,Two Pointers / Window,2000D - Right Left Wrong,https://codeforces.com/problemset/problem/2000/D,1200,Sliding window + prefix sum
+Codeforces,Two Pointers / Window,2025C - New Game,https://codeforces.com/problemset/problem/2025/C,1300,Sliding window + frequency
+Codeforces,Two Pointers / Window,1994C - Hungry Games,https://codeforces.com/problemset/problem/1994/C,1600,Sliding window + DP
+Codeforces,Two Pointers / Window,1995B1 - Bouquet (Easy),https://codeforces.com/problemset/problem/1995/B1,1100,Sorting + sliding window
+Codeforces,Two Pointers / Window,1921D - Very Different Array,https://codeforces.com/problemset/problem/1921/D,1100,Greedy + sliding window
+Codeforces,Two Pointers / Window,1986D - Mathematical Problem,https://codeforces.com/problemset/problem/1986/D,1400,Sliding window + bitmask
+Codeforces,Two Pointers / Window,2032C - Trinity,https://codeforces.com/problemset/problem/2032/C,1400,Sorting + sliding window triangle
+Codeforces,Two Pointers / Window,2051D - Counting Pairs,https://codeforces.com/problemset/problem/2051/D,1200,Sorting + sliding window
+Codeforces,Two Pointers / Window,2060C - Game of Mathletes,https://codeforces.com/problemset/problem/2060/C,900,Sliding window + pairing
+Codeforces,Two Pointers / Window,2064B - Variety is Discouraged,https://codeforces.com/problemset/problem/2064/B,1100,Sliding window + uniqueness
+Codeforces,Two Pointers / Window,1905D - Cyclic MEX,https://codeforces.com/problemset/problem/1905/D,2000,Sliding window + MEX
+Codeforces,Two Pointers / Window,1833F - Ira and Flamenco,https://codeforces.com/problemset/problem/1833/F,1700,Sliding window + combinatorics
+Codeforces,Two Pointers / Window,1811G2 - Vlad and Nice Paths (Hard),https://codeforces.com/problemset/problem/1811/G2,2200,DP + sliding window
+Codeforces,Two Pointers / Window,1796D - Maximum Subarray,https://codeforces.com/problemset/problem/1796/D,2000,Sliding window + DP
+AtCoder,Sliding Window,ABC 157 F - Yakiniku Optimization Problem,https://atcoder.jp/contests/abc157/tasks/abc157_f,Hard,Binary search + sliding window
+AtCoder,Sliding Window,ABC 240 F - Sum Sum Max,https://atcoder.jp/contests/abc240/tasks/abc240_f,Hard,Prefix sum + sliding window
+AtCoder,Sliding Window,ABC 216 F - Max Sum Counting,https://atcoder.jp/contests/abc216/tasks/abc216_f,Hard,DP + sliding window + sorting
+Toph,Sliding Window,Doom of Mosquitoes,https://toph.co/p/doom-of-mosquitoes,Easy,Co-prime sliding window
+Toph,Sliding Window,Biswa and Restaurant Business,https://toph.co/p/biswa-and-restaurant-business,Hard,Optimization sliding window
+Kattis,Sliding Window,Maximum Sum,https://open.kattis.com/problems/maximumsum,Easy,Fixed-size or variable sum
+Kattis,Sliding Window,Continuous Median,https://open.kattis.com/problems/continuousmedian,Medium,Sliding window median
+LightOJ,Sliding Window,Array Queries,https://lightoj.com/problem/array-queries,Medium,RMQ sliding window
+LightOJ,Sliding Window,Maximum Sum,https://lightoj.com/problem/maximum-sum,Easy,Fixed-size max sum
+LightOJ,Sliding Window,Substring Frequency,https://lightoj.com/problem/substring-frequency,Medium,Pattern matching window
+USACO,Sliding Window,Sliding Window (max sum),https://train.usaco.org/usacoprob2?,Medium,Fixed-size sum
+BinarySearch,Fixed-Size Window,Sliding Window Maximum,https://binarysearch.com/problems/Sliding-Window-Maximum,Hard,Deque fixed-size max
+BinarySearch,Variable-Size Window,Longest Substring Without Repeating Characters,https://binarysearch.com/problems/Longest-Substring-without-Repeating-Characters,Medium,Variable-size distinct
+BinarySearch,Variable-Size Window,Subarray Sum,https://binarysearch.com/problems/Subarray-Sum,Medium,Variable-size target sum
+BinarySearch,Variable-Size Window,Minimum Window Substring,https://binarysearch.com/problems/Minimum-Window-Substring,Hard,Variable-size min cover
+CodeSignal,Sliding Window,firstDuplicate,https://app.codesignal.com/interview-practice/task/pMvymcahZ8dY4gCq4,Easy,Sliding duplicate detection
+CodeSignal,Sliding Window,firstNotRepeatingCharacter,https://app.codesignal.com/interview-practice/task/5A8BJGqMYAuBfWMMP,Easy,Frequency sliding scan
+CodeSignal,Sliding Window,sumOfTwo,https://app.codesignal.com/interview-practice/task/TG4tD2fSwPjQrKLKr,Medium,Variable-size lookup window
+Project Euler,Math,Problem 50 - Consecutive prime sum,https://projecteuler.net/problem=50,Medium,Sliding window on primes
+Project Euler,Math,Problem 112 - Bouncy numbers,https://projecteuler.net/problem=112,Medium,Digit-wise sliding
+Coding Ninjas,Sliding Window,Maximum Subarray Sum,https://www.codingninjas.com/codestudio/problems/maximum-subarray-sum_630526,Medium,Kadane sliding window
+Coding Ninjas,Sliding Window,Longest Substring Without Repeating Characters,https://www.codingninjas.com/codestudio/problems/longest-substring-without-repeating-characters_630418,Medium,Variable-size distinct
+Coding Ninjas,Sliding Window,Count Distinct Elements in Every Window,https://www.codingninjas.com/codestudio/problems/count-distinct-elements-in-every-window_625129,Easy,Fixed-size distinct count
+Coding Ninjas,Sliding Window,Minimum Window Substring,https://www.codingninjas.com/codestudio/problems/smallest-window-containing-all-characters_1262270,Hard,Variable-size min cover
+Coding Ninjas,Sliding Window,Maximum of all subarrays of size K,https://www.codingninjas.com/codestudio/problems/maximum-of-all-subarrays-of-size-k_1170790,Hard,Deque fixed-size max
+PrepBytes,Sliding Window,Maximum Sum Subarray of Size K,https://www.prepbytes.com/blog/sliding-window/maximum-sum-subarray-of-size-k/,Easy,Fixed-size max sum
+PrepBytes,Sliding Window,Longest Substring With K Unique Characters,https://www.prepbytes.com/blog/sliding-window/longest-substring-with-k-unique-characters/,Medium,Variable-size K distinct
+PrepBytes,Sliding Window,Sliding Window Maximum,https://www.prepbytes.com/blog/sliding-window/sliding-window-maximum/,Hard,Deque fixed-size max
+PrepBytes,Sliding Window,Count Distinct Elements in Every Window,https://www.prepbytes.com/blog/sliding-window/count-distinct-elements-in-every-window/,Easy,Fixed-size distinct count
+PrepBytes,Sliding Window,First Negative Integer in Every Window,https://www.prepbytes.com/blog/sliding-window/first-negative-integer-in-every-window-of-size-k/,Easy,Fixed-size first negative
+Scaler,Sliding Window,Maximum Subarray Sum,https://www.scaler.com/topics/maximum-subarray-sum/,Medium,Kadane sliding window
+Scaler,Sliding Window,Sliding Window Maximum,https://www.scaler.com/topics/sliding-window-maximum/,Hard,Deque fixed-size max
+Scaler,Sliding Window,Longest Substring Without Repeating Characters,https://www.scaler.com/topics/longest-substring-without-repeating-characters/,Medium,Variable-size distinct
+Techie Delight,Fixed-Size Window,Find maximum sum of a subarray of size k,https://www.techiedelight.com/maximum-sum-subarray-size-k/,Easy,Fixed-size max sum
+Techie Delight,Fixed-Size Window,Find maximum product of a subarray of size k,https://www.techiedelight.com/maximum-product-subarray-size-k/,Medium,Fixed-size max product
+Techie Delight,Variable-Size Window,Smallest subarray with sum greater than given value,https://www.techiedelight.com/smallest-subarray-sum-greater-given-value/,Medium,Variable-size min length
+Techie Delight,Variable-Size Window,Longest substring without repeating characters,https://www.techiedelight.com/longest-substring-without-repeating-characters/,Medium,Variable-size distinct
+Techie Delight,Fixed-Size Window,Count distinct elements in every window of size k,https://www.techiedelight.com/count-distinct-elements-every-subarray-size-k/,Easy,Fixed-size distinct count
+Techie Delight,Variable-Size Window,Find subarray with given sum,https://www.techiedelight.com/find-subarray-given-sum/,Medium,Variable-size target sum
+Techie Delight,Variable-Size Window,Print all subarrays with distinct elements,https://www.techiedelight.com/print-all-subarrays-array-with-distinct-elements/,Medium,Variable-size distinct subarrays
+Techie Delight,Variable-Size Window,Smallest window containing all characters,https://www.techiedelight.com/smallest-window-string-containing-all-characters-another-string/,Hard,Variable-size min cover
+Techie Delight,Variable-Size Window,Max length subarray with sum S,https://www.techiedelight.com/find-maximum-length-subarray-sum-s/,Medium,Variable-size target sum
+Techie Delight,Variable-Size Window,Max sequence of 1s after replacing K zeros,https://www.techiedelight.com/find-maximum-sequence-continuous-1s-replacing-k-zeros/,Medium,Variable-size K flips
+Techie Delight,Variable-Size Window,Longest substring with at most K distinct,https://www.techiedelight.com/longest-substring-at-most-k-distinct-characters/,Medium,Variable-size at most K
+Pramp,Sliding Window,Smallest Substring of All Characters,https://www.pramp.com/challenge/wqNo9wGZ5AqY5K5E2L5X,Hard,Variable-size min cover
+Interview Cake,Sliding Window,Apple Stocks,https://www.interviewcake.com/question/stock-price,Medium,Sliding min/max
+LintCode,Fixed-Size Window,362. Sliding Window Maximum,https://www.lintcode.com/problem/362/,Hard,Deque fixed-size max
+LintCode,Variable-Size Window,384. Longest Substring Without Repeating Characters,https://www.lintcode.com/problem/384/,Medium,Variable-size distinct
+LintCode,Variable-Size Window,32. Minimum Window Substring,https://www.lintcode.com/problem/32/,Hard,Variable-size min cover
+LintCode,Variable-Size Window,386. Longest Substring with At Most K Distinct Characters,https://www.lintcode.com/problem/386/,Medium,Variable-size at most K
+LintCode,Fixed-Size Window,868. Maximum Average Subarray I,https://www.lintcode.com/problem/868/,Easy,Fixed-size max average
+LintCode,Variable-Size Window,838. Subarray Sum Equals K,https://www.lintcode.com/problem/838/,Medium,Prefix sum + hashmap sliding
+TopCoder,Sliding Window,SlidingWindow,https://community.topcoder.com/stat?c=problem_statement&pm=11188,Medium,Sliding window counting
+TopCoder,Sliding Window,ConsecutiveOnes,https://community.topcoder.com/stat?c=problem_statement&pm=11512,Medium,Sliding window ones
+TopCoder,Sliding Window,TandemXOR,https://community.topcoder.com/stat?c=problem_statement&pm=11098,Hard,Sliding window XOR
+Timus,Sliding Window,1404. Team.GOV,https://acm.timus.ru/problem.aspx?space=1&num=1404,Medium,Sliding window + string
+UVa,Category,Problem Name,URL,Difficulty,Key Concept
+AtCoder,Sliding Window,C. Consecutive,https://atcoder.jp/contests/abc328/tasks/abc328_c,Easy,Sliding Window
+AtCoder,Sliding Window,C. Count Arithmetic Subarrays,https://atcoder.jp/contests/abc369/tasks/abc369_c,Easy,Sliding Window
+AtCoder,Sliding Window,C. Shortest Duplicate Subarray,https://atcoder.jp/contests/abc395/tasks/abc395_c,Easy,Sliding Window
+AtCoder,Sliding Window,C. 11/22 Substring,https://atcoder.jp/contests/abc381/tasks/abc381_c,Easy,Sliding Window
+AtCoder,Sliding Window,B. Substring,https://atcoder.jp/contests/abc177/tasks/abc177_b,Easy,Sliding Window
+AtCoder,Sliding Window,B. Substring,https://atcoder.jp/contests/abc347/tasks/abc347_b,Easy,Sliding Window
+AtCoder,Sliding Window,A. A Substring,https://atcoder.jp/contests/abc417/tasks/abc417_a,Easy,Sliding Window
+AtCoder,Sliding Window,C. 1122 Substring 2,https://atcoder.jp/contests/abc433/tasks/abc433_c,Easy,Sliding Window
+AtCoder,Sliding Window,C. Subarray Sum,https://atcoder.jp/contests/keyence2020/tasks/keyence2020_c,Easy-Mid,Sliding Window
+AtCoder,Sliding Window,D. 1122 Substring,https://atcoder.jp/contests/abc381/tasks/abc381_d,Easy-Mid,Sliding Window
+AtCoder,Sliding Window,E. Subarray Sum Divisibility,https://atcoder.jp/contests/abc419/tasks/abc419_e,Medium,Sliding Window
+AtCoder,Sliding Window,E. Sum of Subarrays,https://atcoder.jp/contests/abc423/tasks/abc423_e,Medium,Sliding Window
+AtCoder,Sliding Window,B. Sliding Window Sort 2,https://atcoder.jp/contests/arc165/tasks/arc165_b,Medium,Sliding Window
+AtCoder,Sliding Window,F. Sums of Sliding Window Maximum,https://atcoder.jp/contests/abc407/tasks/abc407_f,Medium,Sliding Window
+AtCoder,Sliding Window,E. Divisible Substring,https://atcoder.jp/contests/abc158/tasks/abc158_e,Medium-Hard,Sliding Window
+AtCoder,Sliding Window,F. Substrings,https://atcoder.jp/contests/abc214/tasks/abc214_f,Medium-Hard,Sliding Window
+AtCoder,Sliding Window,G. Another Shuffle Window,https://atcoder.jp/contests/abc380/tasks/abc380_g,Medium-Hard,Sliding Window
+AtCoder,Sliding Window,F. Erase Subarrays,https://atcoder.jp/contests/abc275/tasks/abc275_f,Medium,Sliding Window
+AtCoder,Sliding Window,E. Unbalanced ABC Substrings,https://atcoder.jp/contests/abc455/tasks/abc455_e,Medium,Sliding Window
+AtCoder,Sliding Window,F. Substring 2,https://atcoder.jp/contests/abc196/tasks/abc196_f,Hard,Sliding Window
+AtCoder,Sliding Window,E. Shuffle Window,https://atcoder.jp/contests/acl1/tasks/acl1_e,Hard,Sliding Window
+AtCoder,Sliding Window,A. Window,https://atcoder.jp/contests/jag2017autumn/tasks/jag2017autumn_a,Medium,Sliding Window
+AtCoder,Sliding Window,E. Sliding Window Sort,https://atcoder.jp/contests/arc149/tasks/arc149_e,Very Hard,Sliding Window
+AtCoder,Sliding Window,G. Balanced Subarrays,https://atcoder.jp/contests/abc455/tasks/abc455_g,Very Hard,Sliding Window
+AtCoder,Sliding Window,F. Counting of Subarrays,https://atcoder.jp/contests/agc037/tasks/agc037_f,Very Hard,Sliding Window
+Baekjoon,Sliding Window,2559 - 수열 (Sequence),https://www.acmicpc.net/problem/2559,Silver,Sliding Window
+Baekjoon,Sliding Window,12847 - 꿀 아르바이트,https://www.acmicpc.net/problem/12847,Silver,Sliding Window
+Baekjoon,Sliding Window,21921 - 블로그 (Blog),https://www.acmicpc.net/problem/21921,Silver,Sliding Window
+Baekjoon,Sliding Window,10025 - 게으른 백곰,https://www.acmicpc.net/problem/10025,Silver,Sliding Window
+Baekjoon,Sliding Window,27496 - 발머의 피크 이론,https://www.acmicpc.net/problem/27496,Silver,Sliding Window
+Baekjoon,Sliding Window,29718 - 줄줄이 박수,https://www.acmicpc.net/problem/29718,Silver,Sliding Window
+Baekjoon,Sliding Window,8795 - Karaoke,https://www.acmicpc.net/problem/8795,Silver,Sliding Window
+Baekjoon,Sliding Window,8933 - MCS,https://www.acmicpc.net/problem/8933,Silver,Sliding Window
+Baekjoon,Sliding Window,12891 - DNA 비밀번호,https://www.acmicpc.net/problem/12891,Silver,Sliding Window
+Baekjoon,Sliding Window,14465 - 소가 길을 건너간 이유 5,https://www.acmicpc.net/problem/14465,Silver,Sliding Window
+Baekjoon,Sliding Window,28807 - Игра в строки,https://www.acmicpc.net/problem/28807,Silver,Sliding Window
+Baekjoon,Sliding Window,29526 - Экскурсии,https://www.acmicpc.net/problem/29526,Silver,Sliding Window
+Baekjoon,Sliding Window,35485 - Ahead Subarrays,https://www.acmicpc.net/problem/35485,Silver,Sliding Window
+Baekjoon,Sliding Window,2531 - 회전 초밥 (Sushi),https://www.acmicpc.net/problem/2531,Silver,Sliding Window
+Baekjoon,Sliding Window,15565 - 귀여운 라이언,https://www.acmicpc.net/problem/15565,Silver,Sliding Window
+Baekjoon,Sliding Window,1522 - 문자열 교환,https://www.acmicpc.net/problem/1522,Silver,Sliding Window
+Baekjoon,Sliding Window,21014 - Special Substring,https://www.acmicpc.net/problem/21014,Silver,Sliding Window
+Baekjoon,Sliding Window,24759 - Slide Count,https://www.acmicpc.net/problem/24759,Silver,Sliding Window
+Baekjoon,Sliding Window,27527 - 배너 걸기,https://www.acmicpc.net/problem/27527,Silver,Sliding Window
+Baekjoon,Sliding Window,33901 - OR이 아니면? XOR,https://www.acmicpc.net/problem/33901,Silver,Sliding Window
+Baekjoon,Sliding Window,26050 - Patio,https://www.acmicpc.net/problem/26050,Silver,Sliding Window
+Baekjoon,Sliding Window,1593 - 문자 해독,https://www.acmicpc.net/problem/1593,Gold,Sliding Window
+Baekjoon,Sliding Window,20437 - 문자열 게임 2,https://www.acmicpc.net/problem/20437,Gold,Sliding Window
+Baekjoon,Sliding Window,25603 - 짱해커 이동식,https://www.acmicpc.net/problem/25603,Gold,Sliding Window
+Baekjoon,Sliding Window,25979 - 시간 구간 다중 업데이트 최대 합,https://www.acmicpc.net/problem/25979,Gold,Sliding Window
+Baekjoon,Sliding Window,2096 - 내려가기,https://www.acmicpc.net/problem/2096,Gold,Sliding Window
+Baekjoon,Sliding Window,3078 - 좋은 친구,https://www.acmicpc.net/problem/3078,Gold,Sliding Window
+Baekjoon,Sliding Window,13422 - 도둑,https://www.acmicpc.net/problem/13422,Gold,Sliding Window
+Baekjoon,Sliding Window,15961 - 회전 초밥 (Sushi 2),https://www.acmicpc.net/problem/15961,Gold,Sliding Window
+Baekjoon,Sliding Window,24453 - 디버깅,https://www.acmicpc.net/problem/24453,Gold,Sliding Window
+Baekjoon,Sliding Window,26364 - KVADRATI,https://www.acmicpc.net/problem/26364,Gold,Sliding Window
+Baekjoon,Sliding Window,31044 - Substring Switcheroo,https://www.acmicpc.net/problem/31044,Gold,Sliding Window
+Baekjoon,Sliding Window,34707 - 세미-연속 수열,https://www.acmicpc.net/problem/34707,Gold,Sliding Window
+Baekjoon,Sliding Window,7512 - 연속하는 소수의 합,https://www.acmicpc.net/problem/7512,Gold,Sliding Window
+Baekjoon,Sliding Window,13922 - Suspicious Samples,https://www.acmicpc.net/problem/13922,Gold,Sliding Window
+Baekjoon,Sliding Window,23295 - 스터디 시간 정하기 1,https://www.acmicpc.net/problem/23295,Gold,Sliding Window
+Baekjoon,Sliding Window,28339 - 이상한 드래프트,https://www.acmicpc.net/problem/28339,Gold,Sliding Window
+Baekjoon,Sliding Window,28833 - Атакующие пары,https://www.acmicpc.net/problem/28833,Gold,Sliding Window
+Baekjoon,Sliding Window,31806 - 구조대,https://www.acmicpc.net/problem/31806,Gold,Sliding Window
+Baekjoon,Sliding Window,34640 - Figure Skating Judging,https://www.acmicpc.net/problem/34640,Gold,Sliding Window
+Baekjoon,Sliding Window,3689 - 셔플 (Shuffle),https://www.acmicpc.net/problem/3689,Gold,Sliding Window
+Baekjoon,Sliding Window,15571 - 블록 3,https://www.acmicpc.net/problem/15571,Gold,Sliding Window
+Baekjoon,Sliding Window,16310 - Game Night,https://www.acmicpc.net/problem/16310,Gold,Sliding Window
+Baekjoon,Sliding Window,30613 - Weather Trends,https://www.acmicpc.net/problem/30613,Gold,Sliding Window
+Baekjoon,Sliding Window,33156 - 구간이 이븐하지 않아요,https://www.acmicpc.net/problem/33156,Gold,Sliding Window
+Baekjoon,Sliding Window,2433 - The Sound of Silence,https://www.acmicpc.net/problem/2433,Gold,Sliding Window
+Baekjoon,Sliding Window,5444 - 시리얼 넘버,https://www.acmicpc.net/problem/5444,Gold,Sliding Window
+Baekjoon,Sliding Window,6233 - Face The Right Way,https://www.acmicpc.net/problem/6233,Gold,Sliding Window
+Baekjoon,Sliding Window,10006 - Colorful Chain,https://www.acmicpc.net/problem/10006,Gold,Sliding Window
+Baekjoon,Sliding Window,23923 - Combination Lock,https://www.acmicpc.net/problem/23923,Gold,Sliding Window
+Baekjoon,Sliding Window,24244 - 100 meter dash,https://www.acmicpc.net/problem/24244,Gold,Sliding Window
+Baekjoon,Sliding Window,27232 - 청소,https://www.acmicpc.net/problem/27232,Gold,Sliding Window
+Baekjoon,Sliding Window,33773 - Zid,https://www.acmicpc.net/problem/33773,Gold,Sliding Window
+Baekjoon,Sliding Window,35310 - 문자열 조작의 달인 2,https://www.acmicpc.net/problem/35310,Gold,Sliding Window
+Baekjoon,Sliding Window,1306 - 달려라 홍준,https://www.acmicpc.net/problem/1306,Platinum,Sliding Window
+Baekjoon,Sliding Window,5891 - Flowerpot,https://www.acmicpc.net/problem/5891,Platinum,Sliding Window
+Baekjoon,Sliding Window,12131 - Smoothing Window (Small),https://www.acmicpc.net/problem/12131,Platinum,Sliding Window
+Baekjoon,Sliding Window,12132 - Smoothing Window (Large),https://www.acmicpc.net/problem/12132,Platinum,Sliding Window
+Baekjoon,Sliding Window,16440 - 제이크와 케이크,https://www.acmicpc.net/problem/16440,Platinum,Sliding Window
+Baekjoon,Sliding Window,18602 - Welcome Party,https://www.acmicpc.net/problem/18602,Platinum,Sliding Window
+Baekjoon,Sliding Window,27454 - 엔드롤이 끝나고,https://www.acmicpc.net/problem/27454,Platinum,Sliding Window
+Baekjoon,Sliding Window,28903 - Вафелька,https://www.acmicpc.net/problem/28903,Platinum,Sliding Window
+Baekjoon,Sliding Window,29091 - Рассадка зверей,https://www.acmicpc.net/problem/29091,Platinum,Sliding Window
+Baekjoon,Sliding Window,33627 - 네모네모,https://www.acmicpc.net/problem/33627,Platinum,Sliding Window
+Baekjoon,Sliding Window,34132 - [L] LCG Madness!,https://www.acmicpc.net/problem/34132,Platinum,Sliding Window
+Baekjoon,Sliding Window,35325 - Sliding Window Summation,https://www.acmicpc.net/problem/35325,Platinum,Sliding Window
+Baekjoon,Sliding Window,3988 - 수 고르기,https://www.acmicpc.net/problem/3988,Platinum,Sliding Window
+Baekjoon,Sliding Window,7041 - Dividing the Path,https://www.acmicpc.net/problem/7041,Platinum,Sliding Window
+Baekjoon,Sliding Window,7840 - Texture Tile,https://www.acmicpc.net/problem/7840,Platinum,Sliding Window
+Baekjoon,Sliding Window,7962 - A Journey to Mars,https://www.acmicpc.net/problem/7962,Platinum,Sliding Window
+Baekjoon,Sliding Window,17941 - 목장 CCTV,https://www.acmicpc.net/problem/17941,Platinum,Sliding Window
+Baekjoon,Sliding Window,25599 - 푸앙이와 레벨업,https://www.acmicpc.net/problem/25599,Platinum,Sliding Window
+Baekjoon,Sliding Window,29892 - 게임판,https://www.acmicpc.net/problem/29892,Platinum,Sliding Window
+Baekjoon,Sliding Window,30467 - 등불 날리기,https://www.acmicpc.net/problem/30467,Platinum,Sliding Window
+Baekjoon,Sliding Window,31930 - AK47,https://www.acmicpc.net/problem/31930,Platinum,Sliding Window
+Baekjoon,Sliding Window,33839 - 분탕의 신 아이보리 3,https://www.acmicpc.net/problem/33839,Platinum,Sliding Window
+Baekjoon,Sliding Window,5479 - Pyramid,https://www.acmicpc.net/problem/5479,Platinum,Sliding Window
+Baekjoon,Sliding Window,8779 - Rywalizacja,https://www.acmicpc.net/problem/8779,Platinum,Sliding Window
+Baekjoon,Sliding Window,11831 - Hyper-minimum,https://www.acmicpc.net/problem/11831,Platinum,Sliding Window
+Baekjoon,Sliding Window,18687 - Gotta Catch 'Em All,https://www.acmicpc.net/problem/18687,Platinum,Sliding Window
+Baekjoon,Sliding Window,29126 - Диаграмма,https://www.acmicpc.net/problem/29126,Platinum,Sliding Window
+Baekjoon,Sliding Window,30800 - 가희와 집,https://www.acmicpc.net/problem/30800,Platinum,Sliding Window
+Baekjoon,Sliding Window,2905 - 홍준이와 울타리,https://www.acmicpc.net/problem/2905,Platinum,Sliding Window
+Baekjoon,Sliding Window,8159 - BBB,https://www.acmicpc.net/problem/8159,Platinum,Sliding Window
+Baekjoon,Sliding Window,14603 - 소금과 후추 (Large),https://www.acmicpc.net/problem/14603,Platinum,Sliding Window
+Baekjoon,Sliding Window,20969 - Dance Mooves,https://www.acmicpc.net/problem/20969,Platinum,Sliding Window
+Baekjoon,Sliding Window,22020 - デジタルアート (Digital Art),https://www.acmicpc.net/problem/22020,Platinum,Sliding Window
+Baekjoon,Sliding Window,23934 - Diverse Subarray,https://www.acmicpc.net/problem/23934,Platinum,Sliding Window
+Baekjoon,Sliding Window,5061 - Amphiphilic Carbon Molecules,https://www.acmicpc.net/problem/5061,Platinum,Sliding Window
+Baekjoon,Sliding Window,15505 - 아름다운 퍼즐 만들기,https://www.acmicpc.net/problem/15505,Platinum,Sliding Window
+Baekjoon,Sliding Window,20646 - Square Pasture,https://www.acmicpc.net/problem/20646,Platinum,Sliding Window
+Baekjoon,Sliding Window,30789 - 초콜릿 케이크,https://www.acmicpc.net/problem/30789,Platinum,Sliding Window
+Baekjoon,Sliding Window,35361 - Rows of Stars,https://www.acmicpc.net/problem/35361,Platinum,Sliding Window
+Baekjoon,Sliding Window,16028 - Lottery,https://www.acmicpc.net/problem/16028,Diamond,Sliding Window
+Baekjoon,Sliding Window,28301 - 은하 온라인 마케팅 프로젝트,https://www.acmicpc.net/problem/28301,Diamond,Sliding Window
+Baekjoon,Sliding Window,14869 - 요리 강좌,https://www.acmicpc.net/problem/14869,Diamond,Sliding Window
+Baekjoon,Sliding Window,19401 - Ascent Sequences,https://www.acmicpc.net/problem/19401,Diamond,Sliding Window
+Baekjoon,Sliding Window,15864 - Alternating Current,https://www.acmicpc.net/problem/15864,Diamond,Sliding Window
+Baekjoon,Sliding Window,18553 - String Transformation,https://www.acmicpc.net/problem/18553,Ruby,Sliding Window
+DMOJ,Sliding Window,CCC 11 S4 - Blood Distribution,https://dmoj.ca/problem/ccc11s4,Medium,Sliding Window
+DMOJ,Sliding Window,COCI 13/14 Contest#5 P4 - DNA,https://dmoj.ca/problem/coci13c5p4,Hard,Sliding Window
+DMOJ,Sliding Window,CCC 07 S5 - Bowling Numbers,https://dmoj.ca/problem/ccc07s5,Medium,Sliding Window
+DMOJ,Sliding Window,IOI 02 P2 - Batch Scheduling,https://dmoj.ca/problem/ioi02p2,Hard,Sliding Window
+DMOJ,Sliding Window,DMOPC 14 CE1 P4 - Exfiltration,https://dmoj.ca/problem/dmopc14ce1p4,Hard,Sliding Window
+Kattis,Sliding Window,Maximum Subarray Sum,https://open.kattis.com/problems/maximumsubarraysum,Easy,Sliding Window
+Kattis,Sliding Window,Subarray Divisibility,https://open.kattis.com/problems/subarraydivisibility,Medium,Sliding Window
+POJ,Sliding Window,2823 - Sliding Window,http://poj.org/problem?id=2823,Medium,Sliding Window
+Timus,Sliding Window,1027 - D++ Again,https://acm.timus.ru/problem.aspx?space=1&num=1027,Medium,Sliding Window
+Timus,Sliding Window,1494 - Monobrow,https://acm.timus.ru/problem.aspx?space=1&num=1494,Medium,Sliding Window
+Timus,Sliding Window,1712 - Pencil Case,https://acm.timus.ru/problem.aspx?space=1&num=1712,Medium,Sliding Window
+Library Checker,Sliding Window,Max of Sliding Window,https://judge.yosupo.jp/problem/max_of_sliding_window,Medium,Sliding Window
+Library Checker,Sliding Window,Min of Sliding Window,https://judge.yosupo.jp/problem/min_of_sliding_window,Medium,Sliding Window
+Codewars,Sliding Window,Distinct Contiguous Elements in Every Window of Size k,https://www.codewars.com/kata/distinct-contiguous-elements-in-every-window-of-size-k,5 kyu,Sliding Window
+Codewars,Sliding Window,Squeaky Window,https://www.codewars.com/kata/squeaky-window,7 kyu,Sliding Window
+E-Olymp,Sliding Window,Sliding Window,https://www.e-olymp.com/en/problems/5039,Easy,Sliding Window
+E-Olymp,Sliding Window,Minimum of Sliding Window,https://www.e-olymp.com/en/problems/5040,Medium,Sliding Window
+E-Olymp,Sliding Window,Maximum of Sliding Window,https://www.e-olymp.com/en/problems/5041,Medium,Sliding Window
+E-Olymp,Sliding Window,Sum of Sliding Window,https://www.e-olymp.com/en/problems/5042,Easy,Sliding Window
+UVa,Sliding Window,10324 - Zeros and Ones,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1265,Easy,Sliding Window
+UVa,Sliding Window,10611 - The Playboy Chimp,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1552,Easy,Sliding Window
+HackerRank,Sliding Window,Sherlock and the Valid String,https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem,Medium,Sliding Window
+HackerRank,Sliding Window,Lily's Homework,https://www.hackerrank.com/challenges/lilys-homework/problem,Medium,Sliding Window
+HackerRank,Sliding Window,Subarray Sum Queries,https://www.hackerrank.com/challenges/subarray-sum-queries/problem,Hard,Sliding Window
+HackerRank,Sliding Window,Maximum Element,https://www.hackerrank.com/challenges/maximum-element/problem,Easy,Sliding Window
+HackerRank,Sliding Window,Largest Rectangle,https://www.hackerrank.com/challenges/largest-rectangle/problem,Medium,Sliding Window
+AOJ,Fixed-Size Window,DSL_3_A - The Smallest Window I,https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_3_A,Medium,Variable-size min covering substring
+AOJ,Fixed-Size Window,DSL_3_B - The Smallest Window II,https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_3_B,Medium,Variable-size containing condition
+AOJ,Variable-Size Window,DSL_3_C - The Number of Windows,https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_3_C,Medium,Variable-size sum bound count
+AOJ,Fixed-Size Window,DSL_3_D - Sliding Minimum Elements,https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_3_D,Medium,Deque sliding window min
+POJ,Variable-Size Window,3061 - Subsequence,http://poj.org/problem?id=3061,Medium,Variable-size min length sum >= target
+POJ,Variable-Size Window,3320 - Jessica's Reading Problem,http://poj.org/problem?id=3320,Medium,Variable-size min covering all unique
+POJ,Fixed-Size Window,2739 - Sum of Consecutive Prime Numbers,http://poj.org/problem?id=2739,Medium,Sliding window on prime list
+POJ,Variable-Size Window,2100 - Graveyard Design,http://poj.org/problem?id=2100,Medium,Sliding window consecutive squares
+Timus,Fixed-Size Window,1126 - Magnetic Storms,https://acm.timus.ru/problem.aspx?space=1&num=1126,Medium,Deque sliding window max
+Timus,Fixed-Size Window,1306 - Sequence Median,https://acm.timus.ru/problem.aspx?space=1&num=1306,Hard,Two-heap sliding median
+UVa,Variable-Size Window,1121 - Subsequence,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3562,Medium,Variable-size min length sum
+UVa,Variable-Size Window,11572 - Unique Snowflakes,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2619,Medium,Variable-size distinct elements hashset
+HackerRank,Fixed-Size Window,Fraudulent Activity Notifications,https://www.hackerrank.com/challenges/fraudulent-activity-notifications/problem,Medium,Counting sort sliding median
+CodeAbbey,Fixed-Size Window,141 - Sliding Window Search,https://www.codeabbey.com/index/task_view/sliding-window-search,Medium,Fixed-size window target search
+Codeforces,Variable-Size Window,602B - Approximating a Constant Range,https://codeforces.com/problemset/problem/602/B,1300,Deque min/max variable window
+Codeforces,Variable-Size Window,701C - They Are Everywhere,https://codeforces.com/problemset/problem/701/C,1500,Variable-size min covering all characters
+Codeforces,Variable-Size Window,279B - Books,https://codeforces.com/problemset/problem/279/B,1000,Variable-size sum bound
+Codeforces,Variable-Size Window,676C - Vasya and String,https://codeforces.com/problemset/problem/676/C,1500,Variable-size char replacement
+Codeforces,Variable-Size Window,1398C - Good Subarrays,https://codeforces.com/problemset/problem/1398/C,1500,Prefix sum + hashmap subarray count
+Codeforces,Variable-Size Window,1680C - Binary String,https://codeforces.com/problemset/problem/1680/C,1600,Variable-size binary window
+Codeforces,Variable-Size Window,1748B - Diverse Substrings,https://codeforces.com/problemset/problem/1748/B,1400,Variable-size distinct characters
+Codeforces,Variable-Size Window,251A - Points,https://codeforces.com/problemset/problem/251/A,1500,Two pointers counting subarrays
+Codeforces,Variable-Size Window,940A - Points on the line,https://codeforces.com/problemset/problem/940/A,1200,Sorting + sliding window max points
+Codeforces,Variable-Size Window,1197D - Yet Another Subarray Problem,https://codeforces.com/problemset/problem/1197/D,1900,DP + sliding window prefix sum
+Codeforces,Variable-Size Window,1736C2 - Good Subarrays (Hard),https://codeforces.com/problemset/problem/1736/C2,1700,Variable-size index constraint
+AtCoder,Fixed-Size Window,ABC 229 D - Longest X,https://atcoder.jp/contests/abc229/tasks/abc229_d,Medium,Variable-size K flips binary
+AtCoder,Fixed-Size Window,ABC 212 C - Min Difference,https://atcoder.jp/contests/abc212/tasks/abc212_c,Medium,Sorting + two pointers min diff
+AtCoder,Fixed-Size Window,ABC 321 D - Set Menu,https://atcoder.jp/contests/abc321/tasks/abc321_d,Medium,Sorting + two pointers sliding
+AtCoder,Fixed-Size Window,ABC 305 D - Sleep Log,https://atcoder.jp/contests/abc305/tasks/abc305_d,Medium,Binary search + sliding window
+AtCoder,Fixed-Size Window,ABC 179 D - Leaping Tak,https://atcoder.jp/contests/abc179/tasks/abc179_d,Medium,DP with sliding window sum
+CodeChef,Sliding Window,KCON - Kadane on Concatenated Array,https://www.codechef.com/problems/KCON,Medium,Kadane + sliding window circular
+Kattis,Sliding Window,consecutivesums - Consecutive Sums,https://open.kattis.com/problems/consecutivesums,Easy,Sliding window consecutive sum
+Kattis,Sliding Window,bank - Bank Queue,https://open.kattis.com/problems/bank,Easy,Greedy + sliding window
+SPOJ,Sliding Window,NHAY - A Needle in the Haystack,https://www.spoj.com/problems/NHAY/,Medium,Rolling hash sliding window match
+LightOJ,Sliding Window,1307 - Counting Triangles,https://lightoj.com/problem/counting-triangles,Medium,Sorting + sliding window
+DMOJ,Sliding Window,CCC 14 S3 - The Geneva Confection,https://dmoj.ca/problem/ccc14s3,Medium,Stack sliding window simulation
+DMOJ,Sliding Window,CCC 09 S5 - Wireless,https://dmoj.ca/problem/ccc09s5,Hard,2D sliding window diff array
+E-Olymp,Sliding Window,5036 - Maximum Subarray Sum,https://www.e-olymp.com/en/problems/5036,Medium,Kadane sliding window
+E-Olymp,Sliding Window,5037 - Longest Substring Without Repeating,https://www.e-olymp.com/en/problems/5037,Medium,Variable-size distinct hashmap
+E-Olymp,Sliding Window,5038 - Subarray with Given Sum,https://www.e-olymp.com/en/problems/5038,Medium,Variable-size target sum
+Codewars,Sliding Window,Maximum Subarray Sum,https://www.codewars.com/kata/54521e9ec8e60bc4de000d6c,5 kyu,Kadane sliding window
+HackerRank,Sliding Window,Bear and Steady Gene,https://www.hackerrank.com/challenges/bear-and-steady-gene/problem,Medium,Variable-size balancing window
+HackerRank,Sliding Window,Minimum Loss,https://www.hackerrank.com/challenges/minimum-loss/problem,Medium,Sorting + sliding window
+UVa,Sliding Window,11078 - Open Credit System,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2019,Easy,Sliding max difference
+Timus,Sliding Window,1026 - Questions and Answers,https://acm.timus.ru/problem.aspx?space=1&num=1026,Medium,Sorting + sliding window
+Codeforces,Variable-Size Window,1730C - Minimum Notation,https://codeforces.com/problemset/problem/1730/C,1200,Deque sliding min
+AtCoder,Variable-Size Window,ABC 291 D - Flip Cards,https://atcoder.jp/contests/abc291/tasks/abc291_d,Medium,DP + sliding window
+CodeChef,Sliding Window,CHN15A - Chef and Subarray,https://www.codechef.com/problems/CHN15A,Easy,Fixed-size XOR sliding
+CodeChef,Sliding Window,TACHSTCK - Stick,https://www.codechef.com/problems/TACHSTCK,Easy,Sorting + sliding window pairing
+LightOJ,Sliding Window,1428 - Melville Ranking,https://lightoj.com/problem/melville-ranking,Hard,BIT + sliding window
+DMOJ,Sliding Window,DMOPC 17 Contest 2 P5 - Candy,https://dmoj.ca/problem/dmopc17c2p5,Hard,Sliding window + frequency
+E-Olymp,Sliding Window,5050 - Minimum Window Substring,https://www.e-olymp.com/en/problems/5050,Hard,Variable-size min covering
+Codewars,Sliding Window,Sliding Window Median,https://www.codewars.com/kata/sliding-window-median,4 kyu,Two-heap sliding median
+Codeforces,Variable-Size Window,1462C - Unique Number,https://codeforces.com/problemset/problem/1462/C,1000,Variable-size digit sum
+SPOJ,Sliding Window,KPRIMES - K-Primes,https://www.spoj.com/problems/KPRIMES/,Medium,Sliding window sieve
+AtCoder,Variable-Size Window,ARC 137 B - Divide by 2 or 3,https://atcoder.jp/contests/arc137/tasks/arc137_b,Hard,Variable-size sliding min/max
+LeetCode,Variable-Size Window,1156. Swap For Longest Repeated Character Substring,https://leetcode.com/problems/swap-for-longest-repeated-character-substring/,Medium,Variable-size char swap window
+LeetCode,Variable-Size Window,1425. Constrained Subsequence Sum,https://leetcode.com/problems/constrained-subsequence-sum/,Hard,DP + deque sliding max
+LeetCode,Variable-Size Window,1477. Find Two Non-overlapping Sub-arrays Each With Target Sum,https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/,Medium,DP + sliding window prefix sum
+LeetCode,Variable-Size Window,1871. Jump Game VII,https://leetcode.com/problems/jump-game-vii/,Medium,Sliding window + DP range check
+LeetCode,Variable-Size Window,1918. Kth Smallest Subarray Sum,https://leetcode.com/problems/kth-smallest-subarray-sum/,Medium,Binary search + sliding window
+LeetCode,Fixed-Size Window,1984. Minimum Difference Between Highest and Lowest of K Scores,https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/,Easy,Fixed-size min difference sorted
+LeetCode,Variable-Size Window,2009. Minimum Number of Operations to Make Array Continuous,https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous/,Hard,Sorting + sliding window longest
+LeetCode,Variable-Size Window,2106. Maximum Fruits Harvested After at Most K Steps,https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/,Hard,Binary search + sliding window prefix sum
+LeetCode,Variable-Size Window,2110. Number of Smooth Descent Periods of a Stock,https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/,Medium,Variable-size consecutive decreasing
+LeetCode,Variable-Size Window,2528. Maximize the Minimum Powered City,https://leetcode.com/problems/maximize-the-minimum-powered-city/,Hard,Binary search + sliding window diff array
+LeetCode,Variable-Size Window,2779. Maximum Beauty of an Array After Applying Operation,https://leetcode.com/problems/maximum-beauty-of-an-array-after-applying-operation/,Medium,Sliding window on value range
+LeetCode,Variable-Size Window,2781. Length of the Longest Valid Substring,https://leetcode.com/problems/length-of-the-longest-valid-substring/,Hard,Variable-size forbidden substring
+LeetCode,Variable-Size Window,2799. Count Complete Subarrays in an Array,https://leetcode.com/problems/count-complete-subarrays-in-an-array/,Medium,Variable-size containing all distinct
+LeetCode,Variable-Size Window,2902. Count of Sub-Multisets With Bounded Sum,https://leetcode.com/problems/count-of-sub-multisets-with-bounded-sum/,Hard,DP + sliding window modulo
+LeetCode,Variable-Size Window,2904. Shortest and Lexicographically Smallest Beautiful String,https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string/,Medium,Variable-size shortest with ones
+LeetCode,Variable-Size Window,3037. Find Pattern in Infinite Stream II,https://leetcode.com/problems/find-pattern-in-infinite-stream-ii/,Hard,Rolling hash sliding window
+LeetCode,Variable-Size Window,3086. Minimum Moves to Pick K Ones,https://leetcode.com/problems/minimum-moves-to-pick-k-ones/,Hard,Sliding window + prefix sum median
+LeetCode,Variable-Size Window,3135. Equalize Strings by Adding or Removing Characters at Ends,https://leetcode.com/problems/equalize-strings-by-adding-or-removing-characters-at-ends/,Medium,Variable-size longest common substring
+LeetCode,Variable-Size Window,3323. Minimize Connected Groups by Inserting Interval,https://leetcode.com/problems/minimize-connected-groups-by-inserting-interval/,Medium,Sliding window + sorted intervals
+LeetCode,Variable-Size Window,3346. Maximum Frequency of an Element After Performing Operations I,https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/,Medium,Sorting + sliding window + prefix sum
+LeetCode,Variable-Size Window,3347. Maximum Frequency of an Element After Performing Operations II,https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-ii/,Hard,Sorting + sliding window + prefix sum
+LeetCode,Variable-Size Window,3420. Count Non-Decreasing Subarrays After K Operations,https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/,Hard,Sliding window + segment tree
+LeetCode,Variable-Size Window,3505. Minimum Operations to Make Elements Within K Subarrays Equal,https://leetcode.com/problems/minimum-operations-to-make-elements-within-k-subarrays-equal/,Hard,DP + sliding window median
+LeetCode,Variable-Size Window,3679. Minimum Discards to Balance Inventory,https://leetcode.com/problems/minimum-discards-to-balance-inventory/,Medium,Variable-size merging window
+LeetCode,Variable-Size Window,3851. Maximum Requests Without Violating the Limit,https://leetcode.com/problems/maximum-requests-without-violating-the-limit/,Medium,Sorting + sliding window range
+Codeforces,Variable-Size Window,1257/C - Dominated Subarray,https://codeforces.com/problemset/problem/1257/C,1200,Variable-size min duplicate gap
+Codeforces,Variable-Size Window,616/D - Longest k-Good Segment,https://codeforces.com/problemset/problem/616/D,1600,Variable-size distinct count window
+Codeforces,Variable-Size Window,1196/D2 - RGB Substring (hard version),https://codeforces.com/problemset/problem/1196/D2,1600,Fixed-size pattern matching
+Codeforces,Variable-Size Window,1203/D2 - Remove the Substring (hard version),https://codeforces.com/problemset/problem/1203/D2,1700,Variable-size subsequence removal
+Codeforces,Variable-Size Window,2009/G1 - Yunli's Subarray Queries (easy version),https://codeforces.com/problemset/problem/2009/G1,1900,Sliding window subarray queries
+Codeforces,Variable-Size Window,386/C - Diverse Substrings,https://codeforces.com/problemset/problem/386/C,2000,Variable-size distinct substring count
+Codeforces,Variable-Size Window,1729/G - Cut Substrings,https://codeforces.com/problemset/problem/1729/G,2100,Variable-size substring removal
+Codeforces,Variable-Size Window,2030/F - Orangutan Approved Subarrays,https://codeforces.com/problemset/problem/2030/F,2400,Variable-size subarray condition
+Codeforces,Variable-Size Window,1476/G - Minimum Difference,https://codeforces.com/problemset/problem/1476/G,3100,Variable-size window with multiset
+AtCoder,Variable-Size Window,ABC240 Ex - Sequence of Substrings,https://atcoder.jp/contests/abc240/tasks/abc240_ex,Hard,DP + sliding window substring
+AtCoder,Variable-Size Window,ABC280 Ex - Substring Sort,https://atcoder.jp/contests/abc280/tasks/abc280_ex,Hard,Sliding window + suffix array
+AtCoder,Variable-Size Window,ABC285 B - Longest Uncommon Prefix,https://atcoder.jp/contests/abc285/tasks/abc285_b,Easy,Sliding window LCP
+AtCoder,Variable-Size Window,ABC285 F - Substring of Sorted String,https://atcoder.jp/contests/abc285/tasks/abc285_f,Medium,Sliding window + BIT
+GeeksforGeeks,Variable-Size Window,Substrings with K Distinct Characters,https://www.geeksforgeeks.org/substrings-with-k-distinct-characters/,Medium,Variable-size K distinct substring
+GeeksforGeeks,Variable-Size Window,Minimum Swaps for K Consecutive Ones,https://www.geeksforgeeks.org/minimum-swaps-for-k-consecutive-ones/,Hard,Sliding window + prefix sum
+GeeksforGeeks,Variable-Size Window,Maximum Sum of K Sized Subarrays,https://www.geeksforgeeks.org/maximum-sum-k-sized-subarray/,Easy,Fixed-size max sum
+GeeksforGeeks,Variable-Size Window,Count Substrings with Same First and Last Characters,https://www.geeksforgeeks.org/count-substrings-same-first-last-characters/,Medium,Variable-size char frequency
+GeeksforGeeks,Variable-Size Window,Maximum Points Covered by K Segments,https://www.geeksforgeeks.org/maximum-points-covered-k-segments/,Hard,Sliding window + DP
+GeeksforGeeks,Variable-Size Window,Maximum Sum of Hourglass in Matrix,https://www.geeksforgeeks.org/maximum-sum-hourglass-matrix/,Medium,2D fixed-size sliding window
+GeeksforGeeks,Variable-Size Window,Find Subarray With Given Sum,https://www.geeksforgeeks.org/find-subarray-with-given-sum/,Medium,Variable-size target sum
+GeeksforGeeks,Variable-Size Window,Subarray of size k with given sum (non-negative),https://www.geeksforgeeks.org/find-subarray-with-given-sum-in-array-of-non-negative-integers/,Easy,Fixed-size target sum
+GeeksforGeeks,Variable-Size Window,Smallest Subarray with Sum K,https://www.geeksforgeeks.org/smallest-subarray-with-sum-k-from-an-array/,Medium,Variable-size min length sum K
+GeeksforGeeks,Variable-Size Window,Maximum Length Subarray With Product Greater Than Zero,https://www.geeksforgeeks.org/maximum-length-subarray-with-product-greater-than-zero/,Medium,Variable-size product tracking
+Kattis,Fixed-Size Window,Kattis - busnumbers,https://open.kattis.com/problems/busnumbers,Easy,Sorting + sliding consecutive
+CSES,Variable-Size Window,CSES 1662 - Subarray Divisibility,https://cses.fi/problemset/task/1662,Medium,Prefix sum + hashmap subarray
+CodeChef,Variable-Size Window,CodeChef - SUBMIN,https://www.codechef.com/problems/SUBMIN,Medium,Variable-size subarray minimum
+CodeChef,Variable-Size Window,CodeChef - SUBREM,https://www.codechef.com/problems/SUBREM,Medium,Variable-size subarray removal
+CodeChef,Variable-Size Window,CodeChef - SUBPRB,https://www.codechef.com/problems/SUBPRB,Medium,Variable-size subarray probability
+CodeChef,Variable-Size Window,CodeChef - SUBARR,https://www.codechef.com/problems/SUBARR,Medium,Variable-size subarray condition
+CodeChef,Variable-Size Window,CodeChef - MAXSUB,https://www.codechef.com/problems/MAXSUB,Medium,Variable-size max subarray sum
+CodeChef,Variable-Size Window,CodeChef - SUBARRAY,https://www.codechef.com/problems/SUBARRAY,Medium,Variable-size subarray constraint
+AtCoder,Variable-Size Window,ABC438 B - Substring 2,https://atcoder.jp/contests/abc438/tasks/abc438_b,Easy,Variable-size substring scan
+USACO,Variable-Size Window,USACO - Subarray Divisibility,https://train.usaco.org/usacoprob2?a=123&s=div7,Medium,Prefix sum + sliding window divisible
+CodeChef,Variable-Size Window,CodeChef - SUBINC,https://www.codechef.com/problems/SUBINC,Medium,Variable-size non-decreasing subarray count
+CodeChef,Variable-Size Window,CodeChef - MAXSUBARR,https://www.codechef.com/problems/MAXSUBARR,Medium,Variable-size max subarray sum

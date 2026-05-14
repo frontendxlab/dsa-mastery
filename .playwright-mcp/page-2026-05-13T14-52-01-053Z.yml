@@ -1,0 +1,470 @@
+- generic [ref=e2]:
+  - region "Skip to main content":
+    - link "Skip to main content" [ref=e3] [cursor=pointer]:
+      - /url: "#__docusaurus_skipToContent_fallback"
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - text: We collaborated with engineers from Google and Amazon and built the best front end interview preparation platform.
+      - link "Check out GreatFrontEnd today" [ref=e6] [cursor=pointer]:
+        - /url: https://www.greatfrontend.com?fpr=yangshun&utm_source=techinterviewhandbook&utm_medium=referral&utm_content=banner
+      - text: "!"
+  - navigation "Main" [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - button "Toggle navigation bar" [ref=e10] [cursor=pointer]:
+          - img [ref=e11]
+        - link "Tech Interview Handbook Logo Tech Interview Handbook" [ref=e13] [cursor=pointer]:
+          - /url: /
+          - img "Tech Interview Handbook Logo" [ref=e15]
+          - generic [ref=e16]: Tech Interview Handbook
+      - button "Search (Ctrl+K)" [ref=e18] [cursor=pointer]:
+        - generic [ref=e19]:
+          - img [ref=e20]
+          - generic [ref=e22]: Search
+        - generic [ref=e23]:
+          - img [ref=e25]
+          - generic [ref=e27]: K
+  - main [ref=e30]:
+    - generic [ref=e34]:
+      - article [ref=e35]:
+        - navigation "Breadcrumbs" [ref=e36]:
+          - list [ref=e37]:
+            - listitem [ref=e38]:
+              - link "Home page" [ref=e39] [cursor=pointer]:
+                - /url: /
+                - img [ref=e40]
+            - listitem [ref=e42]:
+              - generic [ref=e43]: Algorithms study cheatsheets
+            - listitem [ref=e44]:
+              - generic [ref=e45]: Basics
+            - listitem [ref=e46]:
+              - generic [ref=e47]: Array
+        - button "On this page" [ref=e49] [cursor=pointer]
+        - generic [ref=e50]:
+          - heading "Array cheatsheet for coding interviews" [level=1] [ref=e52]
+          - iframe [ref=e54]:
+            - generic [active]:
+              - generic:
+                - link "Star yangshun/tech-interview-handbook on GitHub" [ref=f3e1] [cursor=pointer]:
+                  - /url: https://github.com/yangshun/tech-interview-handbook
+                  - text: Star
+                - link "139,524 stargazers on GitHub" [ref=f3e3] [cursor=pointer]:
+                  - /url: https://github.com/yangshun/tech-interview-handbook/stargazers
+                  - text: 139,524
+          - link "👋 Hi there, I'm Yangshun, an ex-Meta Staff Engineer, author of this handbook and Blind 75. Follow me on LinkedIn for Software Engineering advice and interview tips!" [ref=e56] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/yangshun
+          - heading "IntroductionDirect link to Introduction" [level=2] [ref=e57]:
+            - text: Introduction
+            - link "Direct link to Introduction" [ref=e58] [cursor=pointer]:
+              - /url: "#introduction"
+              - text: "#"
+          - paragraph [ref=e59]: Arrays hold values of the same type at contiguous memory locations. In an array, we're usually concerned about two things - the position/index of an element and the element itself. Different programming languages implement arrays under the hood differently and can affect the time complexity of operations you make to the array. In some languages like Python, JavaScript, Ruby, PHP, the array (or list in Python) size is dynamic and you do not need to have a size defined beforehand when creating the array. As a result, people usually have an easier time using these languages for interviews.
+          - paragraph [ref=e60]: Arrays are among the most common data structures encountered during interviews. Questions which ask about other topics would likely involve arrays/sequences as well. Mastery of array is essential for interviews!
+          - paragraph [ref=e61]:
+            - strong [ref=e62]: Advantages
+          - list [ref=e63]:
+            - listitem [ref=e64]: Store multiple elements of the same type with one single variable name
+            - listitem [ref=e65]:
+              - text: Accessing elements is fast as long as you have the index, as opposed to
+              - link "linked lists" [ref=e66] [cursor=pointer]:
+                - /url: /algorithms/linked-list/
+              - text: where you have to traverse from the head.
+          - paragraph [ref=e67]:
+            - strong [ref=e68]: Disadvantages
+          - list [ref=e69]:
+            - listitem [ref=e70]: Addition and removal of elements into/from the middle of an array is slow because the remaining elements need to be shifted to accommodate the new/missing element. An exception to this is if the position to be inserted/removed is at the end of the array.
+            - listitem [ref=e71]: For certain languages where the array size is fixed, it cannot alter its size after initialization. If an insertion causes the total number of elements to exceed the size, a new array has to be allocated and the existing elements have to be copied over. The act of creating a new array and transferring elements over takes O(n) time.
+          - heading "Learning resourcesDirect link to Learning resources" [level=2] [ref=e72]:
+            - text: Learning resources
+            - link "Direct link to Learning resources" [ref=e73] [cursor=pointer]:
+              - /url: "#learning-resources"
+              - text: "#"
+          - list [ref=e74]:
+            - listitem [ref=e75]:
+              - text: Readings
+              - list [ref=e76]:
+                - listitem [ref=e77]:
+                  - 'link "Array in Data Structure: What is, Arrays Operations" [ref=e78] [cursor=pointer]':
+                    - /url: https://www.guru99.com/array-data-structure.html
+                  - text: ", Guru99"
+            - listitem [ref=e79]:
+              - text: Videos
+              - list [ref=e80]:
+                - listitem [ref=e81]:
+                  - link "Arrays" [ref=e82] [cursor=pointer]:
+                    - /url: https://www.coursera.org/lecture/data-structures/arrays-OsBSF
+                  - text: ", University of California San Diego"
+          - heading "Common termsDirect link to Common terms" [level=2] [ref=e83]:
+            - text: Common terms
+            - link "Direct link to Common terms" [ref=e84] [cursor=pointer]:
+              - /url: "#common-terms"
+              - text: "#"
+          - paragraph [ref=e85]: "Common terms you see when doing problems involving arrays:"
+          - list [ref=e86]:
+            - listitem [ref=e87]:
+              - text: Subarray - A range of contiguous values within an array.
+              - list [ref=e88]:
+                - listitem [ref=e89]:
+                  - text: "Example: given an array"
+                  - code [ref=e90]: "[2, 3, 6, 1, 5, 4]"
+                  - text: ","
+                  - code [ref=e91]: "[3, 6, 1]"
+                  - text: is a subarray while
+                  - code [ref=e92]: "[3, 1, 5]"
+                  - text: is not a subarray.
+            - listitem [ref=e93]:
+              - text: Subsequence - A sequence that can be derived from the given sequence by deleting some or no elements without changing the order of the remaining elements.
+              - list [ref=e94]:
+                - listitem [ref=e95]:
+                  - text: "Example: given an array"
+                  - code [ref=e96]: "[2, 3, 6, 1, 5, 4]"
+                  - text: ","
+                  - code [ref=e97]: "[3, 1, 5]"
+                  - text: is a subsequence but
+                  - code [ref=e98]: "[3, 5, 1]"
+                  - text: is not a subsequence.
+          - heading "Time complexityDirect link to Time complexity" [level=2] [ref=e99]:
+            - text: Time complexity
+            - link "Direct link to Time complexity" [ref=e100] [cursor=pointer]:
+              - /url: "#time-complexity"
+              - text: "#"
+          - table [ref=e101]:
+            - rowgroup [ref=e102]:
+              - row "Operation Big-O Note" [ref=e103]:
+                - columnheader "Operation" [ref=e104]
+                - columnheader "Big-O" [ref=e105]
+                - columnheader "Note" [ref=e106]
+            - rowgroup [ref=e107]:
+              - row "Access O(1)" [ref=e108]:
+                - cell "Access" [ref=e109]
+                - cell "O(1)" [ref=e110]
+                - cell [ref=e111]
+              - row "Search O(n)" [ref=e112]:
+                - cell "Search" [ref=e113]
+                - cell "O(n)" [ref=e114]
+                - cell [ref=e115]
+              - row "Search (sorted array) O(log(n))" [ref=e116]:
+                - cell "Search (sorted array)" [ref=e117]
+                - cell "O(log(n))" [ref=e118]
+                - cell [ref=e119]
+              - row "Insert O(n) Insertion would require shifting all the subsequent elements to the right by one and that takes O(n)" [ref=e120]:
+                - cell "Insert" [ref=e121]
+                - cell "O(n)" [ref=e122]
+                - cell "Insertion would require shifting all the subsequent elements to the right by one and that takes O(n)" [ref=e123]
+              - row "Insert (at the end) O(1) Special case of insertion where no other element needs to be shifted" [ref=e124]:
+                - cell "Insert (at the end)" [ref=e125]
+                - cell "O(1)" [ref=e126]
+                - cell "Special case of insertion where no other element needs to be shifted" [ref=e127]
+              - row "Remove O(n) Removal would require shifting all the subsequent elements to the left by one and that takes O(n)" [ref=e128]:
+                - cell "Remove" [ref=e129]
+                - cell "O(n)" [ref=e130]
+                - cell "Removal would require shifting all the subsequent elements to the left by one and that takes O(n)" [ref=e131]
+              - row "Remove (at the end) O(1) Special case of removal where no other element needs to be shifted" [ref=e132]:
+                - cell "Remove (at the end)" [ref=e133]
+                - cell "O(1)" [ref=e134]
+                - cell "Special case of removal where no other element needs to be shifted" [ref=e135]
+          - heading "Things to look out for during interviewsDirect link to Things to look out for during interviews" [level=2] [ref=e136]:
+            - text: Things to look out for during interviews
+            - link "Direct link to Things to look out for during interviews" [ref=e137] [cursor=pointer]:
+              - /url: "#things-to-look-out-for-during-interviews"
+              - text: "#"
+          - list [ref=e138]:
+            - listitem [ref=e139]: Clarify if there are duplicate values in the array. Would the presence of duplicate values affect the answer? Does it make the question simpler or harder?
+            - listitem [ref=e140]: When using an index to iterate through array elements, be careful not to go out of bounds.
+            - listitem [ref=e141]: Be mindful about slicing or concatenating arrays in your code. Typically, slicing and concatenating arrays would take O(n) time. Use start and end indices to demarcate a subarray/range where possible.
+          - heading "Corner casesDirect link to Corner cases" [level=2] [ref=e142]:
+            - text: Corner cases
+            - link "Direct link to Corner cases" [ref=e143] [cursor=pointer]:
+              - /url: "#corner-cases"
+              - text: "#"
+          - list [ref=e144]:
+            - listitem [ref=e145]: Empty sequence
+            - listitem [ref=e146]: Sequence with 1 or 2 elements
+            - listitem [ref=e147]: Sequence with repeated elements
+            - listitem [ref=e148]: Duplicated values in the sequence
+          - heading "TechniquesDirect link to Techniques" [level=2] [ref=e149]:
+            - text: Techniques
+            - link "Direct link to Techniques" [ref=e150] [cursor=pointer]:
+              - /url: "#techniques"
+              - text: "#"
+          - paragraph [ref=e151]: Note that because both arrays and strings are sequences (a string is an array of characters), most of the techniques here will apply to string problems.
+          - heading "Sliding windowDirect link to Sliding window" [level=3] [ref=e152]:
+            - text: Sliding window
+            - link "Direct link to Sliding window" [ref=e153] [cursor=pointer]:
+              - /url: "#sliding-window"
+              - text: "#"
+          - paragraph [ref=e154]:
+            - text: Master the
+            - link "sliding window technique" [ref=e155] [cursor=pointer]:
+              - /url: https://leetcode.com/problems/minimum-window-substring/solutions/26808/here-is-a-10-line-template-that-can-solve-most-substring-problems/
+            - text: "that applies to many subarray/substring problems. In a sliding window, the two pointers usually move in the same direction will never overtake each other. This ensures that each value is only visited at most twice and the time complexity is still O(n). Examples:"
+            - link "Longest Substring Without Repeating Characters" [ref=e156] [cursor=pointer]:
+              - /url: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+            - text: ","
+            - link "Minimum Size Subarray Sum" [ref=e157] [cursor=pointer]:
+              - /url: https://leetcode.com/problems/minimum-size-subarray-sum/
+            - text: ","
+            - link "Minimum Window Substring" [ref=e158] [cursor=pointer]:
+              - /url: https://leetcode.com/problems/minimum-window-substring/
+          - heading "Two pointersDirect link to Two pointers" [level=3] [ref=e159]:
+            - text: Two pointers
+            - link "Direct link to Two pointers" [ref=e160] [cursor=pointer]:
+              - /url: "#two-pointers"
+              - text: "#"
+          - paragraph [ref=e161]:
+            - text: "Two pointers is a more general version of sliding window where the pointers can cross each other and can be on different arrays. Examples:"
+            - link "Sort Colors" [ref=e162] [cursor=pointer]:
+              - /url: https://leetcode.com/problems/sort-colors/
+            - text: ","
+            - link "Palindromic Substrings" [ref=e163] [cursor=pointer]:
+              - /url: https://leetcode.com/problems/palindromic-substrings/
+          - paragraph [ref=e164]:
+            - text: "When you are given two arrays to process, it is common to have one index per array (pointer) to traverse/compare the both of them, incrementing one of the pointers when relevant. For example, we use this approach to merge two sorted arrays. Examples:"
+            - link "Merge Sorted Array" [ref=e165] [cursor=pointer]:
+              - /url: https://leetcode.com/problems/merge-sorted-array/
+          - heading "Traversing from the rightDirect link to Traversing from the right" [level=3] [ref=e166]:
+            - text: Traversing from the right
+            - link "Direct link to Traversing from the right" [ref=e167] [cursor=pointer]:
+              - /url: "#traversing-from-the-right"
+              - text: "#"
+          - paragraph [ref=e168]:
+            - text: "Sometimes you can traverse the array starting from the right instead of the conventional approach of from the left. Examples:"
+            - link "Daily Temperatures" [ref=e169] [cursor=pointer]:
+              - /url: https://leetcode.com/problems/daily-temperatures/
+            - text: ","
+            - link "Number of Visible People in a Queue" [ref=e170] [cursor=pointer]:
+              - /url: https://leetcode.com/problems/number-of-visible-people-in-a-queue/
+          - heading "Sorting the arrayDirect link to Sorting the array" [level=3] [ref=e171]:
+            - text: Sorting the array
+            - link "Direct link to Sorting the array" [ref=e172] [cursor=pointer]:
+              - /url: "#sorting-the-array"
+              - text: "#"
+          - paragraph [ref=e173]: Is the array sorted or partially sorted? If it is, some form of binary search should be possible. This also usually means that the interviewer is looking for a solution that is faster than O(n).
+          - paragraph [ref=e174]:
+            - text: "Can you sort the array? Sometimes sorting the array first may significantly simplify the problem. Obviously this would not work if the order of array elements need to be preserved. Examples:"
+            - link "Merge Intervals" [ref=e175] [cursor=pointer]:
+              - /url: https://leetcode.com/problems/merge-intervals/
+            - text: ","
+            - link "Non-overlapping Intervals" [ref=e176] [cursor=pointer]:
+              - /url: https://leetcode.com/problems/non-overlapping-intervals/
+          - heading "PrecomputationDirect link to Precomputation" [level=3] [ref=e177]:
+            - text: Precomputation
+            - link "Direct link to Precomputation" [ref=e178] [cursor=pointer]:
+              - /url: "#precomputation"
+              - text: "#"
+          - paragraph [ref=e179]:
+            - text: "For questions where summation or multiplication of a subarray is involved, pre-computation using hashing or a prefix/suffix sum/product might be useful. Examples:"
+            - link "Product of Array Except Self" [ref=e180] [cursor=pointer]:
+              - /url: https://leetcode.com/problems/product-of-array-except-self/
+            - text: ","
+            - link "Minimum Size Subarray Sum" [ref=e181] [cursor=pointer]:
+              - /url: https://leetcode.com/problems/minimum-size-subarray-sum/
+            - text: ","
+            - link "LeetCode questions tagged \"prefix-sum\"" [ref=e182] [cursor=pointer]:
+              - /url: https://leetcode.com/problem-list/prefix-sum/
+          - heading "Index as a hash keyDirect link to Index as a hash key" [level=3] [ref=e183]:
+            - text: Index as a hash key
+            - link "Direct link to Index as a hash key" [ref=e184] [cursor=pointer]:
+              - /url: "#index-as-a-hash-key"
+              - text: "#"
+          - paragraph [ref=e185]:
+            - text: "If you are given a sequence and the interviewer asks for O(1) space, it might be possible to use the array itself as a hash table. For example, if the array only has values from 1 to N, where N is the length of the array, negate the value at that index (minus one) to indicate presence of that number. Examples:"
+            - link "First Missing Positive" [ref=e186] [cursor=pointer]:
+              - /url: https://leetcode.com/problems/first-missing-positive/
+            - text: ","
+            - link "Daily Temperatures" [ref=e187] [cursor=pointer]:
+              - /url: https://leetcode.com/problems/daily-temperatures/
+          - heading "Traversing the array more than onceDirect link to Traversing the array more than once" [level=3] [ref=e188]:
+            - text: Traversing the array more than once
+            - link "Direct link to Traversing the array more than once" [ref=e189] [cursor=pointer]:
+              - /url: "#traversing-the-array-more-than-once"
+              - text: "#"
+          - paragraph [ref=e190]: This might be obvious, but traversing the array twice/thrice (as long as fewer than n times) is still O(n). Sometimes traversing the array more than once can help you solve the problem while keeping the time complexity to O(n).
+          - heading "Essential questionsDirect link to Essential questions" [level=2] [ref=e191]:
+            - text: Essential questions
+            - link "Direct link to Essential questions" [ref=e192] [cursor=pointer]:
+              - /url: "#essential-questions"
+              - text: "#"
+          - paragraph [ref=e193]:
+            - emphasis [ref=e194]: These are essential questions to practice if you're studying for this topic.
+          - list [ref=e195]:
+            - listitem [ref=e196]:
+              - link "Two Sum" [ref=e197] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/two-sum/
+            - listitem [ref=e198]:
+              - link "Best Time to Buy and Sell Stock" [ref=e199] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+            - listitem [ref=e200]:
+              - link "Product of Array Except Self" [ref=e201] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/product-of-array-except-self/
+            - listitem [ref=e202]:
+              - link "Maximum Subarray" [ref=e203] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/maximum-subarray/
+          - heading "Recommended practice questionsDirect link to Recommended practice questions" [level=2] [ref=e204]:
+            - text: Recommended practice questions
+            - link "Direct link to Recommended practice questions" [ref=e205] [cursor=pointer]:
+              - /url: "#recommended-practice-questions"
+              - text: "#"
+          - paragraph [ref=e206]:
+            - emphasis [ref=e207]: These are recommended questions to practice after you have studied for the topic and have practiced the essential questions.
+          - list [ref=e208]:
+            - listitem [ref=e209]:
+              - link "Contains Duplicate" [ref=e210] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/contains-duplicate/
+            - listitem [ref=e211]:
+              - link "Maximum Product Subarray" [ref=e212] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/maximum-product-subarray/
+            - listitem [ref=e213]:
+              - link "Search in Rotated Sorted Array" [ref=e214] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/search-in-rotated-sorted-array/
+            - listitem [ref=e215]:
+              - link "3Sum" [ref=e216] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/3sum/
+            - listitem [ref=e217]:
+              - link "Container With Most Water" [ref=e218] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/container-with-most-water/
+            - listitem [ref=e219]:
+              - link "Sliding Window Maximum" [ref=e220] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/sliding-window-maximum/
+          - heading "Recommended coursesDirect link to Recommended courses" [level=2] [ref=e221]:
+            - text: Recommended courses
+            - link "Direct link to Recommended courses" [ref=e222] [cursor=pointer]:
+              - /url: "#recommended-courses"
+              - text: "#"
+          - heading "AlgoMonsterDirect link to algomonster" [level=3] [ref=e223]:
+            - link "AlgoMonster" [ref=e224] [cursor=pointer]:
+              - /url: https://shareasale.com/r.cfm?b=1873647&u=3114753&m=114505&urllink=&afftrack=
+            - link "Direct link to algomonster" [ref=e225] [cursor=pointer]:
+              - /url: "#algomonster"
+              - text: "#"
+          - paragraph [ref=e226]:
+            - text: AlgoMonster aims to help you ace the technical interview
+            - strong [ref=e227]: in the shortest time possible
+            - text: . By Google engineers, AlgoMonster uses a data-driven approach to teach you the most useful key question patterns and has contents to help you quickly revise basic data structures and algorithms. Best of all, AlgoMonster is not subscription-based - pay a one-time fee and get
+            - strong [ref=e228]: lifetime access
+            - text: .
+            - link "Join today for a 70% discount →" [ref=e229] [cursor=pointer]:
+              - /url: https://shareasale.com/r.cfm?b=1873647&u=3114753&m=114505&urllink=&afftrack=
+              - strong [ref=e230]: Join today for a 70% discount →
+          - 'heading "Grokking the Coding Interview: Patterns for Coding QuestionsDirect link to grokking-the-coding-interview-patterns-for-coding-questions" [level=3] [ref=e231]':
+            - 'link "Grokking the Coding Interview: Patterns for Coding Questions" [ref=e232] [cursor=pointer]':
+              - /url: https://www.designgurus.io/course/grokking-the-coding-interview?aff=kJSIoU
+            - link "Direct link to grokking-the-coding-interview-patterns-for-coding-questions" [ref=e233] [cursor=pointer]:
+              - /url: "#grokking-the-coding-interview-patterns-for-coding-questions"
+              - text: "#"
+          - paragraph [ref=e234]:
+            - text: This course on by Design Gurus expands upon the questions on the recommended practice questions but approaches the practicing from a questions pattern perspective, which is an approach I also agree with for learning and have personally used to get better at coding interviews. The course allows you to practice selected questions in Java, Python, C++, JavaScript and also provides sample solutions in those languages along with step-by-step visualizations.
+            - strong [ref=e235]: Learn and understand patterns, not memorize answers!
+            - link "Get lifetime access now →" [ref=e236] [cursor=pointer]:
+              - /url: https://www.designgurus.io/course/grokking-the-coding-interview?aff=kJSIoU
+              - strong [ref=e237]: Get lifetime access now →
+          - 'heading "Master the Coding Interview: Data Structures + AlgorithmsDirect link to master-the-coding-interview-data-structures--algorithms" [level=3] [ref=e238]':
+            - 'link "Master the Coding Interview: Data Structures + Algorithms" [ref=e239] [cursor=pointer]':
+              - /url: https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/
+            - link "Direct link to master-the-coding-interview-data-structures--algorithms" [ref=e240] [cursor=pointer]:
+              - /url: "#master-the-coding-interview-data-structures--algorithms"
+              - text: "#"
+          - paragraph [ref=e241]:
+            - text: This Udemy bestseller is one of the highest-rated interview preparation course (4.6 stars, 21.5k ratings, 135k students) and packs
+            - strong [ref=e242]: 19 hours
+            - text: worth of contents into it. Like Tech Interview Handbook, it goes beyond coding interviews and covers resume, non-technical interviews, negotiations. It's an all-in-one package! Note that JavaScript is being used for the coding demos.
+            - link "Check it out →" [ref=e243] [cursor=pointer]:
+              - /url: https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/
+              - strong [ref=e244]: Check it out →
+        - generic [ref=e248]:
+          - text: Last updated on
+          - time [ref=e250]: Apr 5, 2026
+      - navigation "Docs pages" [ref=e251]:
+        - link "Previous « Introduction" [ref=e252] [cursor=pointer]:
+          - /url: /algorithms/study-cheatsheet/
+          - generic [ref=e253]: Previous
+          - generic [ref=e254]: « Introduction
+        - link "Next String »" [ref=e255] [cursor=pointer]:
+          - /url: /algorithms/string/
+          - generic [ref=e256]: Next
+          - generic [ref=e257]: String »
+      - link "LeetCode for Front End Built by ex-FAANG Senior Engineers, GreatFrontEnd is the fastest way to prepare for a Front End interview." [ref=e259] [cursor=pointer]:
+        - /url: https://www.greatfrontend.com?fpr=yangshun&utm_source=techinterviewhandbook&utm_medium=referral&utm_content=docs_bottom
+        - paragraph [ref=e260]:
+          - strong [ref=e261]: LeetCode for Front End
+          - text: Built by ex-FAANG Senior Engineers, GreatFrontEnd is the fastest way to prepare for a Front End interview.
+  - contentinfo [ref=e262]:
+    - generic [ref=e263]:
+      - generic [ref=e264]:
+        - generic [ref=e265]:
+          - generic [ref=e266]: General
+          - list [ref=e267]:
+            - listitem [ref=e268]:
+              - link "Start reading" [ref=e269] [cursor=pointer]:
+                - /url: /software-engineering-interview-guide/
+            - listitem [ref=e270]:
+              - link "Prepare a FAANG-ready resume" [ref=e271] [cursor=pointer]:
+                - /url: /resume/
+            - listitem [ref=e272]:
+              - link "Algorithms cheatsheets" [ref=e273] [cursor=pointer]:
+                - /url: /algorithms/study-cheatsheet/
+            - listitem [ref=e274]:
+              - link "Blog" [ref=e275] [cursor=pointer]:
+                - /url: /blog/
+        - generic [ref=e276]:
+          - generic [ref=e277]: Interviews
+          - list [ref=e278]:
+            - listitem [ref=e279]:
+              - link "Coding interviews" [ref=e280] [cursor=pointer]:
+                - /url: /coding-interview-prep/
+            - listitem [ref=e281]:
+              - link "Coding interview study plan" [ref=e282] [cursor=pointer]:
+                - /url: /coding-interview-study-plan/
+            - listitem [ref=e283]:
+              - link "System design interviews" [ref=e284] [cursor=pointer]:
+                - /url: /system-design/
+            - listitem [ref=e285]:
+              - link "Behavioral interviews" [ref=e286] [cursor=pointer]:
+                - /url: /behavioral-interview/
+        - generic [ref=e287]:
+          - generic [ref=e288]: Community
+          - list [ref=e289]:
+            - listitem [ref=e290]:
+              - link "GitHub" [ref=e291] [cursor=pointer]:
+                - /url: https://github.com/yangshun/tech-interview-handbook
+                - text: GitHub
+                - img [ref=e292]
+            - listitem [ref=e294]:
+              - link "Discord" [ref=e295] [cursor=pointer]:
+                - /url: https://discord.com/invite/usMqNaPczq
+                - text: Discord
+                - img [ref=e296]
+            - listitem [ref=e298]:
+              - link "Telegram" [ref=e299] [cursor=pointer]:
+                - /url: https://t.me/techinterviewhandbook
+                - text: Telegram
+                - img [ref=e300]
+            - listitem [ref=e302]:
+              - link "Twitter" [ref=e303] [cursor=pointer]:
+                - /url: https://twitter.com/techinterviewhb
+                - text: Twitter
+                - img [ref=e304]
+        - generic [ref=e306]:
+          - generic [ref=e307]: More
+          - list [ref=e308]:
+            - listitem [ref=e309]:
+              - link "Grind 75" [ref=e310] [cursor=pointer]:
+                - /url: https://www.techinterviewhandbook.org/grind75/
+                - text: Grind 75
+                - img [ref=e311]
+            - listitem [ref=e313]:
+              - link "Front End Interview Handbook" [ref=e314] [cursor=pointer]:
+                - /url: https://www.frontendinterviewhandbook.com
+                - text: Front End Interview Handbook
+                - img [ref=e315]
+            - listitem [ref=e317]:
+              - link "Contact us" [ref=e318] [cursor=pointer]:
+                - /url: mailto:contact@techinterviewhandbook.org
+                - text: Contact us
+                - img [ref=e319]
+            - listitem [ref=e321]:
+              - link "Facebook" [ref=e322] [cursor=pointer]:
+                - /url: https://www.facebook.com/techinterviewhandbook
+                - text: Facebook
+                - img [ref=e323]
+      - generic [ref=e326]: Copyright © 2026 Tech Interview Handbook. Built with Docusaurus.

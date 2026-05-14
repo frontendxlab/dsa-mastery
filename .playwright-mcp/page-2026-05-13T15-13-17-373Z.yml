@@ -1,0 +1,247 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic:
+        - link "Zur Navigation springen" [ref=e5] [cursor=pointer]:
+          - /url: "#navigation"
+        - link "Zum Content springen" [ref=e6] [cursor=pointer]:
+          - /url: "#content"
+      - img "Online Judge" [ref=e7]
+      - generic [ref=e8]:
+        - insertion [ref=e9]:
+          - iframe [ref=e11]:
+            - generic [active]:
+              - generic [ref=f44e1]:
+                - generic [ref=f44e2]:
+                  - generic:
+                    - img [ref=f44e6] [cursor=pointer]
+                    - button [ref=f44e8] [cursor=pointer]:
+                      - img [ref=f44e9]
+                - insertion [ref=f44e16]:
+                  - generic [ref=f44e17]:
+                    - link "Click Here" [ref=f44e18] [cursor=pointer]:
+                      - /url: https://googleads.g.doubleclick.net/dbm/clk?sa=L&ai=CBs4tCpUEaoOKO7HQmsMP5_7W8Qyswqf3hgGpgbe9-BWr59fzxgEQASDaquIFYOWCgIDYDqABi-KKoAHIAQmoAwHIA5sEqgTpAU_Qpm5T0aBfc18KDNK8Inx0KDyDZWWG3OtgT68YWRhW3oLbORQPowwLLSj_Km1J46TpGUN6Mlz8g30RfId0w6yzBIjfl9G7ExY1NQieEIjVcjba2iCeHtn_s_TUywb0VbxAhZbHWEyC8zCtKqDi_HgPDLZIdBWwYaE0grpxYQH4GyNn4QQ1uCle2MtWfV8aeRnjIs1-Qps-oq4HrrkQJRkSG0aZ7QlTsOuuFFC_JJGCsAFpBNbAF76iww3QxodcIAlcD4VRLbqazDqXtgk2FnCiIpnNpCpZSwYseBJTHQRBYDD-pbaXSt3awATK987i3gXgBAOIBYGs7N9YkAYBoAZNgAfdnfXfAqgHp8yxAqgHpr4bqAfMzrECqAfz0RuoB5bYG6gHqpuxAqgHjs4bqAeT2BuoB_DgG6gH7paxAqgH_p6xAqgHr76xAqgH1ckbqAfZtrECqAeaBqgH_56xAqgH35-xAqgH-MKxAqgH-8KxAqgH59exAtgHANIIMQiAYRABGJ8DMgiKgoCAgICACDoPgECAwICAgICogAKog4AQSL39wTpYqJXa2ca2lAOACgGYCwHICwGADAGqDQJJTuoNEwibwNrZxraUAxUxqGYCHWe_Nc7wDQGIDgWwE8nvjSLQEwDYEw3YFAHQFQHKFgIKAPgWAYAXAbIXEBgCKgo4MjcyNDM3Nzg4UAaqGBcJAAAAAGiGAUESCjgyNzI0Mzc3ODgYAbIYCRICnWMYTSIBANAZAdgZAQ&ae=1&num=1&cid=CAQS0gEABaugfa_oii731GJ72w77MnWBMwfibAY-sRDtMLKfwpS34xsurLcFIoK8dDpQAgatSAaruN7QWp6pWzGLrdIOm1iowyAaAB5osacdF76W9Opv03jcpYnEeQ_o_9yujXDZba111PzlKAqV8B5cZjLaay9GpXLktcdmlo0enlb98BWN00czKRiARawZOkEpt27v10KFUl04fkAnu8F0hLskK3sSTOyyHxwDIu4ARdmW8ete5LlUhcuahMz-thFfclNzekPTX1XbPf7x_DgIAYvShc8YAQ&sig=AOD64_1w3Vypdh0bx5t8ylDNr6M-DffDCQ&client=ca-pub-2439032012840386&dbm_c=AKAmf-BUhyhRBIywEzr_acAhBRhfQPn-YmSt6IrNH4vF9vqcULa3RU3HRbTrFvjDAGgywUoi_hYz79dFrPpiaFyluLkHOdbIzj2tTPLISQZUvoSTbP8n-2kni_AZM5sBq7sEMt1Mie4dFEktzxqd0FXOFDf9u-Uv-xXAIqj1tjZtiLpiLVJ8_uX9ZQiU-xAeAW4j_ER9bPi0yXixcbnkqDYUqG9d-RuHXzoU59Y1m2O-zdHXSR0y7xlzabk_NQVUkiQ6TNMDqQtZX1jCCyA3cz3ee6iJ9RgX2A&cry=1&dbm_d=AKAmf-CiOIpz8fYBntGj3xW9_AS5UEx2jDIwMN6oNyk-nxluitOdDWhRYrYsuJ8wtBwN1OCzXW5C2hM34-KV4uKG3OGuroyY_bMiQWFrH4sBlV6d5dNPznrkUgfDC8Ge2PytDo2eN_UXTorXZEN1k856VWWNss42EtMrvDBW8FFqToQ_U5Wo7kA5kjAs3tdNkTCeTm8MNJMfPO28Y6MT_ceD7Qxzkgem2ftqfWEB45p79wk839mi68sdoAOK6queV68JHIxSLJPqad4qIFUhp5BcbGBPPUm9chhpX7Ki-EVqMYutim-Jvd_BTzoaIOdH4dE-PV-7iz4t8gC9198FcG6pWTiL9_ejz3zJjLVQOPqF9sP7aEVk8eluSJN107znXichKeVWTleix0mcrpxV6dUjWkzuwMyN7EjfNxETzFaYWbWZo07zechTZnTZEuwkW6192_c0BvcW_EugA5Unjj1WdFN1rGWgH0XSXWN6ZboULmEHVtzjB9tbUOd7oISam0LFuCRSIsV0yhPvKI3cBTQcGP4EU1NR3e1eTB_Yb_o1R8nDyowzKUlTp1hpmHG7FBCIDaS8XNtoH90LfEQgEMnGsN6CQKCHq9fKJrbTilPzST9QhfFW6qnPY7P3czPp1pfuHma4-EFfsGbRa0rYkjO06Wx0geNMG36kXoyKOZfhhdIt197Tm7j3sf_WpaUDB2tDFHz7FdsbZatAaA5NG8lzHdy5pcUDOdl3ojJiklC8k1iKEqykySJMK2d4agBmlfphPDjLslQYpBL7125Ra6QXoZWGzxB__A&adurl=https://servedby.flashtalking.com/click/7/315990;10775447;6154455;210;0/?us_privacy=!!US_PRIVACY!&ft_impID=18D04761-361B-E361-4DB1-99FA6378D3B9&ft_section=23823324673&g=6707660B7231F8&random=672978.5853161882&ft_width=728&ft_height=90&url=https://www.adobe.com/in/creativecloud/buy/students.html?sdid=LZ32SLQ1&mv=display&mv2=display
+                      - img "Click Here" [ref=f44e19]
+                    - link "AdChoices arrow" [ref=f44e21] [cursor=pointer]:
+                      - /url: https://www.flashtalking.com/consumer-privacy
+                      - img "AdChoices arrow" [ref=f44e22]
+              - iframe
+        - text: "-->"
+    - generic [ref=e14]:
+      - link "Home" [ref=e15] [cursor=pointer]:
+        - /url: https://onlinejudge.org/index.php
+      - img "arrow" [ref=e16]
+      - text: Browse Problems
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - generic [ref=e20]:
+            - heading "Login" [level=3] [ref=e21]
+            - table [ref=e23]:
+              - rowgroup [ref=e24]:
+                - row "Username Password Remember me Login" [ref=e25]:
+                  - cell "Username Password Remember me Login" [ref=e26]:
+                    - generic [ref=e27]: Username
+                    - textbox "Username" [ref=e28]
+                    - generic [ref=e29]: Password
+                    - textbox "Password" [ref=e31]
+                    - checkbox "Remember me" [ref=e32]
+                    - generic [ref=e33]: Remember me
+                    - button "Login" [ref=e34]
+                - row "Forgot login?" [ref=e35]:
+                  - cell "Forgot login?" [ref=e36]:
+                    - link "Forgot login?" [ref=e37] [cursor=pointer]:
+                      - /url: https://onlinejudge.org/index.php?option=com_comprofiler&task=lostPassword
+                - row "No account yet? Register" [ref=e38]:
+                  - cell "No account yet? Register" [ref=e39]:
+                    - text: No account yet?
+                    - link "Register" [ref=e40] [cursor=pointer]:
+                      - /url: https://onlinejudge.org/index.php?option=com_comprofiler&task=registers
+          - generic [ref=e43]:
+            - textbox [ref=e44]
+            - button "Search" [ref=e45]
+          - generic [ref=e46]:
+            - heading "Main Menu" [level=3] [ref=e47]
+            - table [ref=e48]:
+              - rowgroup [ref=e49]:
+                - row "Home" [ref=e50]:
+                  - cell "Home" [ref=e51]:
+                    - link "Home" [ref=e52] [cursor=pointer]:
+                      - /url: https://onlinejudge.org/index.php?option=com_frontpage&Itemid=1
+                - row "Contact Us" [ref=e53]:
+                  - cell "Contact Us" [ref=e54]:
+                    - link "Contact Us" [ref=e55] [cursor=pointer]:
+                      - /url: https://onlinejudge.org/index.php?option=com_contact&Itemid=4
+                - row "ICPC Live Archive" [ref=e56]:
+                  - cell "ICPC Live Archive" [ref=e57]:
+                    - link "ICPC Live Archive" [ref=e58] [cursor=pointer]:
+                      - /url: http://livearchive.onlinejudge.org
+          - generic [ref=e59]:
+            - heading "Online Judge" [level=3] [ref=e60]
+            - table [ref=e61]:
+              - rowgroup [ref=e62]:
+                - row "My uHunt with Virtual Contest Service" [ref=e63]:
+                  - cell "My uHunt with Virtual Contest Service" [ref=e64]:
+                    - link "My uHunt with Virtual Contest Service" [ref=e65] [cursor=pointer]:
+                      - /url: http://uhunt.felix-halim.net/id/0
+                - row "Browse Problems" [ref=e66]:
+                  - cell "Browse Problems" [ref=e67]:
+                    - link "Browse Problems" [ref=e68] [cursor=pointer]:
+                      - /url: https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8
+                - row "Quick access, info and search" [ref=e69]:
+                  - cell "Quick access, info and search" [ref=e70]:
+                    - link "Quick access, info and search" [ref=e71] [cursor=pointer]:
+                      - /url: https://onlinejudge.org/local/online_judge/search_uva.html
+                - row "Problemsetters' Credits" [ref=e72]:
+                  - cell "Problemsetters' Credits" [ref=e73]:
+                    - link "Problemsetters' Credits" [ref=e74] [cursor=pointer]:
+                      - /url: https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=44
+                - row "Live Rankings" [ref=e75]:
+                  - cell "Live Rankings" [ref=e76]:
+                    - link "Live Rankings" [ref=e77] [cursor=pointer]:
+                      - /url: https://onlinejudge.org/local/online_judge/public_uva.html
+                - row "Site Statistics" [ref=e78]:
+                  - cell "Site Statistics" [ref=e79]:
+                    - link "Site Statistics" [ref=e80] [cursor=pointer]:
+                      - /url: https://onlinejudge.org/index.php?option=com_content&task=view&id=5&Itemid=18
+                - row "Contests" [ref=e81]:
+                  - cell "Contests" [ref=e82]:
+                    - link "Contests" [ref=e83] [cursor=pointer]:
+                      - /url: https://onlinejudge.org/index.php?option=com_content&task=view&id=2&Itemid=10
+                - row "Electronic Board" [ref=e84]:
+                  - cell "Electronic Board" [ref=e85]:
+                    - link "Electronic Board" [ref=e86] [cursor=pointer]:
+                      - /url: https://uva.onlinejudge.org/board/
+                - row "Additional Information" [ref=e87]:
+                  - cell "Additional Information" [ref=e88]:
+                    - link "Additional Information" [ref=e89] [cursor=pointer]:
+                      - /url: https://onlinejudge.org/index.php?option=com_content&task=view&id=14&Itemid=29
+                - row "Other Links" [ref=e90]:
+                  - cell "Other Links" [ref=e91]:
+                    - link "Other Links" [ref=e92] [cursor=pointer]:
+                      - /url: https://onlinejudge.org/index.php?option=com_content&task=view&id=17&Itemid=32
+          - generic [ref=e93]:
+            - link "uHunt" [ref=e94] [cursor=pointer]:
+              - /url: http://uhunt.felix-halim.net/
+              - img "uHunt" [ref=e95]
+            - link "uDebug" [ref=e96] [cursor=pointer]:
+              - /url: https://www.udebug.com/UVa
+              - img "uDebug" [ref=e97]
+        - generic:
+          - insertion:
+            - iframe [ref=e99]:
+              
+      - generic [ref=e101]:
+        - generic [ref=e102]:
+          - heading "Our Patreons" [level=3] [ref=e103]
+          - heading "Diamond Sponsors" [level=2] [ref=e104]:
+            - strong [ref=e105]: Diamond Sponsors
+          - paragraph [ref=e106]: Steven & Felix Halim
+          - paragraph [ref=e107]: Reinardus Pradhitya
+          - heading "Gold Sponsors" [level=2] [ref=e108]:
+            - strong [ref=e109]: Gold Sponsors
+          - paragraph [ref=e110]: "--- YOUR NAME HERE ----"
+          - heading "Silver Sponsors" [level=2] [ref=e111]:
+            - strong [ref=e112]: Silver Sponsors
+          - paragraph [ref=e113]: "--- YOUR NAME HERE ----"
+          - heading "Bronze Sponsors" [level=2] [ref=e114]:
+            - strong [ref=e115]: Bronze Sponsors
+          - paragraph [ref=e116]: Christianto Handojo
+          - paragraph [ref=e117]: Krzysztof Adamek
+          - paragraph [ref=e118]: Fatima Broom
+          - paragraph [ref=e119]:
+            - link "Amal AugustineTechBuy" [ref=e120] [cursor=pointer]:
+              - /url: https://techbuy.in/upgrad-referral-code
+              - text: Amal Augustine
+              - img "TechBuy" [ref=e121]
+        - generic [ref=e122]:
+          - heading "Contribute" [level=3] [ref=e123]
+          - paragraph [ref=e124]:
+            - link "Become a patron" [ref=e125] [cursor=pointer]:
+              - /url: https://www.patreon.com/onlinejudge
+              - img "Become a patron" [ref=e126]
+          - paragraph [ref=e127]:
+            - link "PayPal" [ref=e128] [cursor=pointer]:
+              - /url: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=D7XA3E822BTP8&source=url
+              - img "PayPal" [ref=e129]
+          - insertion [ref=e131]:
+            - generic [ref=e134]:
+              - heading "These are topics related to the article that might interest you" [level=2] [ref=e136]: Discover more
+              - link "Online Programming Tutorials" [ref=e137] [cursor=pointer]:
+                - generic "Online Programming Tutorials" [ref=e138]
+                - img [ref=e140]
+              - link "Advanced Algorithm Training" [ref=e142] [cursor=pointer]:
+                - generic "Advanced Algorithm Training" [ref=e143]
+                - img [ref=e145]
+              - link "Bitcoin Donations" [ref=e147] [cursor=pointer]:
+                - generic "Bitcoin Donations" [ref=e148]
+                - img [ref=e150]
+              - link "Data Structures Workshops" [ref=e152] [cursor=pointer]:
+                - generic "Data Structures Workshops" [ref=e153]
+                - img [ref=e155]
+              - link "Technical Interview Prep" [ref=e157] [cursor=pointer]:
+                - generic "Technical Interview Prep" [ref=e158]
+                - img [ref=e160]
+              - link "Programming Contest Service" [ref=e162] [cursor=pointer]:
+                - generic "Programming Contest Service" [ref=e163]
+                - img [ref=e165]
+              - link "Live Coding Events" [ref=e167] [cursor=pointer]:
+                - generic "Live Coding Events" [ref=e168]
+                - img [ref=e170]
+              - link "uHunt Virtual Contest" [ref=e172] [cursor=pointer]:
+                - generic "uHunt Virtual Contest" [ref=e173]
+                - img [ref=e175]
+          - paragraph [ref=e177]:
+            - img "1ojudgeapLUjJcnUmze67a4w3TJ6WnPxo" [ref=e178]
+          - generic:
+            - insertion:
+              - iframe [ref=e180]:
+                
+          - paragraph [ref=e181]: "Bitcoin:"
+          - paragraph [ref=e182]: 1ojudgeapLUjJcnUm
+          - paragraph [ref=e183]: ze67a4w3TJ6WnPxo
+      - generic [ref=e186]:
+        - table [ref=e187]:
+          - rowgroup [ref=e188]:
+            - row "Root Submit Problem Stats Download as PDF" [ref=e189]:
+              - cell "Root" [ref=e190]:
+                - link "Root" [ref=e191] [cursor=pointer]:
+                  - /url: index.php?option=com_onlinejudge&Itemid=8&category=0
+              - cell "Submit Problem Stats Download as PDF" [ref=e192]:
+                - link "Submit" [ref=e193] [cursor=pointer]:
+                  - /url: index.php?option=com_onlinejudge&Itemid=8&page=submit_problem&problemid=2619&category=0
+                  - img "Submit" [ref=e194]
+                - link "Problem Stats" [ref=e195] [cursor=pointer]:
+                  - /url: index.php?option=com_onlinejudge&Itemid=8&page=problem_stats&problemid=2619&category=0
+                  - img "Problem Stats" [ref=e196]
+                - link "Download as PDF" [ref=e197] [cursor=pointer]:
+                  - /url: external/115/11572.pdf
+                  - img "Download as PDF" [ref=e198]
+            - 'row "11572 - Unique Snowflakes Time limit: 2.000 seconds" [ref=e199]':
+              - 'cell "11572 - Unique Snowflakes Time limit: 2.000 seconds" [ref=e200]':
+                - heading "11572 - Unique Snowflakes" [level=3] [ref=e201]
+                - text: "Time limit: 2.000 seconds"
+        - iframe [ref=e202]: You should be using firefox.:
+          
+    - insertion [ref=e204]:
+      - generic [ref=e206]:
+        - generic "These are topics related to the article that might interest you" [ref=e207]: Discover more
+        - link "Statistics" [ref=e208] [cursor=pointer]:
+          - img [ref=e210]
+          - text: Statistics
+        - link "Programming Community Forum" [ref=e212] [cursor=pointer]:
+          - img [ref=e214]
+          - text: Programming Community Forum
+        - link "Problem Solving Books" [ref=e216] [cursor=pointer]:
+          - img [ref=e218]
+          - text: Problem Solving Books
+        - link "Online Judge Platform" [ref=e220] [cursor=pointer]:
+          - img [ref=e222]
+          - text: Online Judge Platform
+        - link "Algorithms Illuminated Series" [ref=e224] [cursor=pointer]:
+          - img [ref=e226]
+          - text: Algorithms Illuminated Series
+  - generic:
+    - insertion:
+      - iframe [ref=e229]:
+        

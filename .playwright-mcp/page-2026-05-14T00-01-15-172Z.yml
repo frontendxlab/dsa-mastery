@@ -1,0 +1,1077 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e12]:
+    - banner [ref=e13]:
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - link "LintCode-Logo" [ref=e16] [cursor=pointer]:
+            - /url: /
+            - img "LintCode-Logo" [ref=e17]
+          - menu [ref=e21]:
+            - generic:
+              - link:
+                - /url: /course
+                - text: Course
+            - menuitem:
+              - generic:
+                - link:
+                  - /url: /problem
+                  - generic:
+                    - generic: Problem
+                    - generic:
+                      - img:
+                        - img
+            - generic:
+              - link:
+                - /url: /referral
+                - text: Referral
+            - generic:
+              - link:
+                - /url: /vip
+                - text: VIP
+            - generic:
+              - link:
+                - /url: /cat
+                - text: CAT
+            - generic:
+              - link:
+                - /url: /contest
+                - text: Contest
+            - generic:
+              - link:
+                - /url: /note
+                - text: Note
+            - menuitem "More..." [ref=e22] [cursor=pointer]:
+              - generic [ref=e23]: More...
+          - generic [ref=e24]:
+            - generic [ref=e26]:
+              - combobox [ref=e28]
+              - generic: Problems,tags,collection
+            - img "search" [ref=e29]:
+              - img [ref=e30]
+        - generic [ref=e32]:
+          - button "School Institution" [ref=e34] [cursor=pointer]:
+            - generic [ref=e35]: School Institution
+          - button "Enterprise Service" [ref=e37] [cursor=pointer]:
+            - generic [ref=e38]: Enterprise Service
+          - generic [ref=e39] [cursor=pointer]:
+            - img "gift" [ref=e40]:
+              - img [ref=e41]
+            - text: Gift
+          - menu [ref=e43]:
+            - menuitem "ENG down" [ref=e44] [cursor=pointer]:
+              - generic [ref=e46]:
+                - text: ENG
+                - img "down" [ref=e47]:
+                  - img [ref=e48]
+            - menuitem [disabled]:
+              - img:
+                - img
+          - generic [ref=e50] [cursor=pointer]: Log in
+          - separator [ref=e51]
+          - generic [ref=e52] [cursor=pointer]: Sign up
+    - generic [ref=e74]:
+      - generic [ref=e75]:
+        - generic [ref=e77]:
+          - generic [ref=e78]:
+            - generic [ref=e79]:
+              - generic [ref=e80]:
+                - generic [ref=e81] [cursor=pointer]: All type
+                - generic [ref=e82] [cursor=pointer]: Algorithm type
+                - generic [ref=e83] [cursor=pointer]: Language type
+                - generic [ref=e84] [cursor=pointer]: Web develop
+                - generic [ref=e85] [cursor=pointer]: Design type
+                - generic [ref=e86] [cursor=pointer]: Command line
+                - generic [ref=e87] [cursor=pointer]: Data type
+              - generic [ref=e88]:
+                - generic [ref=e89]:
+                  - generic [ref=e91] [cursor=pointer]:
+                    - generic [ref=e92]: ALL
+                    - generic [ref=e93]: 3427 problems
+                  - generic [ref=e95] [cursor=pointer]:
+                    - generic [ref=e96]: Algorithms
+                    - generic [ref=e97]: 1941 problems
+                  - generic [ref=e99] [cursor=pointer]:
+                    - generic [ref=e100]: SQL
+                    - generic [ref=e101]: 263 problems
+                  - generic [ref=e103] [cursor=pointer]:
+                    - generic [ref=e104]: Java
+                    - generic [ref=e105]: 222 problems
+                  - generic [ref=e107] [cursor=pointer]:
+                    - generic [ref=e108]: Python
+                    - generic [ref=e109]: 192 problems
+                - generic [ref=e111] [cursor=pointer]: More
+            - generic [ref=e114]:
+              - generic [ref=e115]:
+                - generic [ref=e116]: "Algorithms:"
+                - generic [ref=e117]:
+                  - generic [ref=e118]:
+                    - generic [ref=e119] [cursor=pointer]: Two Pointers · 135
+                    - generic [ref=e120] [cursor=pointer]: Same Direction Two Pointers · 63
+                    - generic [ref=e121] [cursor=pointer]: Opposite Direction Two Pointers · 34
+                    - generic [ref=e122] [cursor=pointer]: Binary Search · 126
+                    - generic [ref=e123] [cursor=pointer]: Binary Search on Answer · 28
+                    - generic [ref=e124] [cursor=pointer]: Divide and Conquer · 80
+                    - generic [ref=e125] [cursor=pointer]: Breadth First Search/BFS · 155
+                    - generic [ref=e126] [cursor=pointer]: Topological Sort · 12
+                    - generic [ref=e127] [cursor=pointer]: Depth First Search/DFS · 263
+                    - generic [ref=e128] [cursor=pointer]: Dynamic Programming/DP · 278
+                    - generic [ref=e129] [cursor=pointer]: Backpack DP · 40
+                    - generic [ref=e130] [cursor=pointer]: Coordinate DP · 108
+                    - generic [ref=e131] [cursor=pointer]: Partition DP · 27
+                    - generic [ref=e132] [cursor=pointer]: Memoization Search · 33
+                    - generic [ref=e133] [cursor=pointer]: Interval DP · 33
+                    - generic [ref=e134] [cursor=pointer]: State Compression DP · 8
+                    - generic [ref=e135] [cursor=pointer]: Game DP · 5
+                    - generic [ref=e136] [cursor=pointer]: Two Sequences DP · 18
+                    - generic [ref=e137] [cursor=pointer]: Tree DP · 9
+                    - generic [ref=e138] [cursor=pointer]: Sort · 88
+                    - generic [ref=e139] [cursor=pointer]: External Sort · 2
+                    - generic [ref=e140] [cursor=pointer]: Quick Select · 12
+                    - generic [ref=e141] [cursor=pointer]: Euler Path · 1
+                    - generic [ref=e142] [cursor=pointer]: Simulation · 302
+                    - generic [ref=e143] [cursor=pointer]: Sweep Line · 20
+                    - generic [ref=e144] [cursor=pointer]: Enumerate · 117
+                    - generic [ref=e145] [cursor=pointer]: Shortest Path · 9
+                    - generic [ref=e146] [cursor=pointer]: Greedy · 107
+                    - generic [ref=e147] [cursor=pointer]: Minimum Spanning Tree/MST · 3
+                  - generic [ref=e149] [cursor=pointer]:
+                    - text: UNFOLD
+                    - img "caret-down" [ref=e150]:
+                      - img [ref=e151]
+              - generic [ref=e153]:
+                - generic [ref=e154]: "Data Structure:"
+                - generic [ref=e155]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157] [cursor=pointer]: Array · 298
+                    - generic [ref=e158] [cursor=pointer]: Prefix Sum Array · 60
+                    - generic [ref=e159] [cursor=pointer]: String · 302
+                    - generic [ref=e160] [cursor=pointer]: Linked List · 58
+                    - generic [ref=e161] [cursor=pointer]: Doubly Linked List · 1
+                    - generic [ref=e162] [cursor=pointer]: Queue · 24
+                    - generic [ref=e163] [cursor=pointer]: Monotonic Queue · 5
+                    - generic [ref=e164] [cursor=pointer]: Deque · 5
+                    - generic [ref=e165] [cursor=pointer]: Stack · 91
+                    - generic [ref=e166] [cursor=pointer]: Monotonic Stack · 38
+                    - generic [ref=e167] [cursor=pointer]: Binary Tree · 136
+                    - generic [ref=e168] [cursor=pointer]: Tree · 5
+                    - generic [ref=e169] [cursor=pointer]: Binary Search Tree · 35
+                    - generic [ref=e170] [cursor=pointer]: Iterator · 6
+                    - generic [ref=e171] [cursor=pointer]: Heap · 53
+                    - generic [ref=e172] [cursor=pointer]: Graph · 28
+                    - generic [ref=e173] [cursor=pointer]: Bipartite Graph · 5
+                    - generic [ref=e174] [cursor=pointer]: Hash Table · 203
+                    - generic [ref=e175] [cursor=pointer]: Trie · 23
+                    - generic [ref=e176] [cursor=pointer]: Union Find · 44
+                    - generic [ref=e177] [cursor=pointer]: Binary Indexed Tree/BIT/Fenwick Tree · 16
+                    - generic [ref=e178] [cursor=pointer]: Segment Tree · 28
+                    - generic [ref=e179] [cursor=pointer]: Balanced Binary Tree · 7
+                  - generic [ref=e181] [cursor=pointer]:
+                    - text: UNFOLD
+                    - img "caret-down" [ref=e182]:
+                      - img [ref=e183]
+              - generic [ref=e185]:
+                - generic [ref=e186]: "SQL Basic Syntax:"
+                - generic [ref=e187]:
+                  - generic [ref=e188]:
+                    - generic [ref=e189] [cursor=pointer]: Basic Grammar · 73
+                    - generic [ref=e190] [cursor=pointer]: Comparison Operators · 49
+                    - generic [ref=e191] [cursor=pointer]: Nested Queries · 41
+                    - generic [ref=e192] [cursor=pointer]: Logical Operators · 29
+                    - generic [ref=e193] [cursor=pointer]: JOIN · 28
+                    - generic [ref=e194] [cursor=pointer]: WHERE · 28
+                    - generic [ref=e195] [cursor=pointer]: ORDER BY · 23
+                    - generic [ref=e196] [cursor=pointer]: Arithmetic Operators · 20
+                    - generic [ref=e197] [cursor=pointer]: SELECT · 19
+                    - generic [ref=e198] [cursor=pointer]: IN · 17
+                    - generic [ref=e199] [cursor=pointer]: AS · 15
+                    - generic [ref=e200] [cursor=pointer]: INSERT · 12
+                    - generic [ref=e201] [cursor=pointer]: UPDATE · 10
+                    - generic [ref=e202] [cursor=pointer]: LEFT JOIN · 9
+                    - generic [ref=e203] [cursor=pointer]: LIKE · 9
+                    - generic [ref=e204] [cursor=pointer]: DISTINCT · 7
+                    - generic [ref=e205] [cursor=pointer]: LIMIT · 6
+                    - generic [ref=e206] [cursor=pointer]: CREATE · 6
+                    - generic [ref=e207] [cursor=pointer]: RIGHT JOIN · 4
+                    - generic [ref=e208] [cursor=pointer]: UNION · 4
+                    - generic [ref=e209] [cursor=pointer]: Constraints · 4
+                    - generic [ref=e210] [cursor=pointer]: IFNULL/COLLAPSE · 3
+                    - generic [ref=e211] [cursor=pointer]: DELETE · 3
+                    - generic [ref=e212] [cursor=pointer]: ANY · 2
+                    - generic [ref=e213] [cursor=pointer]: ALL · 2
+                    - generic [ref=e214] [cursor=pointer]: CROSS JOIN · 2
+                    - generic [ref=e215] [cursor=pointer]: INNER JOIN · 2
+                  - generic [ref=e217] [cursor=pointer]:
+                    - text: UNFOLD
+                    - img "caret-down" [ref=e218]:
+                      - img [ref=e219]
+            - generic [ref=e221]:
+              - generic [ref=e222]:
+                - generic [ref=e224] [cursor=pointer]:
+                  - generic [ref=e225]: Difficulty
+                  - img "caret-down" [ref=e226]:
+                    - img [ref=e227]
+                - generic [ref=e230] [cursor=pointer]:
+                  - generic [ref=e231]: Company
+                  - img "caret-down" [ref=e232]:
+                    - img [ref=e233]
+              - generic [ref=e235]:
+                - generic [ref=e236]: 3427 problems
+                - button "Feeling Lucky" [ref=e237] [cursor=pointer]:
+                  - generic [ref=e238]: Feeling Lucky
+          - generic [ref=e242]:
+            - table [ref=e246]:
+              - rowgroup [ref=e252]:
+                - row "Type ID sortable Hide tag Difficulty sortable" [ref=e253]:
+                  - columnheader "Type" [ref=e254]
+                  - columnheader "ID sortable" [ref=e255] [cursor=pointer]:
+                    - generic [ref=e256]:
+                      - generic [ref=e257]: ID
+                      - generic [ref=e259]:
+                        - generic "caret-up" [ref=e260]:
+                          - img [ref=e261]
+                        - generic "caret-down" [ref=e263]:
+                          - img [ref=e264]
+                  - columnheader "Hide tag" [ref=e266]:
+                    - generic [ref=e268] [cursor=pointer]:
+                      - checkbox "Hide tag" [ref=e270]
+                      - generic [ref=e272]: Hide tag
+                  - columnheader "Difficulty sortable" [ref=e273] [cursor=pointer]:
+                    - generic [ref=e274]:
+                      - generic [ref=e275]: Difficulty
+                      - generic [ref=e277]:
+                        - generic "caret-up" [ref=e278]:
+                          - img [ref=e279]
+                        - generic "caret-down" [ref=e281]:
+                          - img [ref=e282]
+              - rowgroup [ref=e284]:
+                - row "3447 · Implement Blog View Class PRE calendar 打卡题目 Solutions·3 View Function View Set Easy" [ref=e285] [cursor=pointer]:
+                  - cell [ref=e286]
+                  - cell "3447 · Implement Blog View Class PRE calendar 打卡题目 Solutions·3 View Function View Set" [ref=e287]:
+                    - generic [ref=e288]:
+                      - generic [ref=e289]:
+                        - generic "Implement Blog View Class" [ref=e290]: 3447 · Implement Blog View Class
+                        - generic [ref=e291]: PRE
+                        - generic [ref=e292]:
+                          - img "calendar" [ref=e293]:
+                            - img [ref=e294]
+                          - text: 打卡题目
+                      - generic [ref=e297]:
+                        - generic [ref=e298]: Solutions·3
+                        - generic [ref=e299]: View Function
+                        - generic [ref=e300]: View Set
+                  - cell "Easy" [ref=e301]:
+                    - generic [ref=e302]: Easy
+                - row "191 · Maximum Product Subarray Similar Problems·7 Solutions·52 Dynamic Programming/DP Coordinate DP TikTok Medium" [ref=e303] [cursor=pointer]:
+                  - cell [ref=e304]
+                  - cell "191 · Maximum Product Subarray Similar Problems·7 Solutions·52 Dynamic Programming/DP Coordinate DP TikTok" [ref=e305]:
+                    - generic [ref=e306]:
+                      - generic "Maximum Product Subarray" [ref=e308]: 191 · Maximum Product Subarray
+                      - generic [ref=e310]:
+                        - generic [ref=e311]: Similar Problems·7
+                        - generic [ref=e312]: Solutions·52
+                        - generic [ref=e313]: Dynamic Programming/DP
+                        - generic [ref=e314]: Coordinate DP
+                        - generic [ref=e315]: TikTok
+                  - cell "Medium" [ref=e316]:
+                    - generic [ref=e317]: Medium
+                - row "365 · Count 1 in Binary Similar Problems·3 Solutions·42 Binary Microsoft Easy" [ref=e318] [cursor=pointer]:
+                  - cell [ref=e319]
+                  - cell "365 · Count 1 in Binary Similar Problems·3 Solutions·42 Binary Microsoft" [ref=e320]:
+                    - generic [ref=e321]:
+                      - generic "Count 1 in Binary" [ref=e323]: 365 · Count 1 in Binary
+                      - generic [ref=e325]:
+                        - generic [ref=e326]: Similar Problems·3
+                        - generic [ref=e327]: Solutions·42
+                        - generic [ref=e328]: Binary
+                        - generic [ref=e329]: Microsoft
+                  - cell "Easy" [ref=e330]:
+                    - generic [ref=e331]: Easy
+                - row "392 · House Robber Similar Problems·8 Solutions·45 Dynamic Programming/DP Coordinate DP LinkedIn ... Medium" [ref=e332] [cursor=pointer]:
+                  - cell [ref=e333]
+                  - cell "392 · House Robber Similar Problems·8 Solutions·45 Dynamic Programming/DP Coordinate DP LinkedIn ..." [ref=e334]:
+                    - generic [ref=e335]:
+                      - generic "House Robber" [ref=e337]: 392 · House Robber
+                      - generic [ref=e339]:
+                        - generic [ref=e340]: Similar Problems·8
+                        - generic [ref=e341]: Solutions·45
+                        - generic [ref=e342]: Dynamic Programming/DP
+                        - generic [ref=e343]: Coordinate DP
+                        - generic [ref=e344]: LinkedIn
+                        - generic [ref=e345]: ...
+                  - cell "Medium" [ref=e346]:
+                    - generic [ref=e347]: Medium
+                - row "920 · Meeting Rooms Similar Problems·2 Solutions·113 Sort Facebook Uber Easy" [ref=e348] [cursor=pointer]:
+                  - cell [ref=e349]
+                  - cell "920 · Meeting Rooms Similar Problems·2 Solutions·113 Sort Facebook Uber" [ref=e350]:
+                    - generic [ref=e351]:
+                      - generic "Meeting Rooms" [ref=e353]: 920 · Meeting Rooms
+                      - generic [ref=e355]:
+                        - generic [ref=e356]: Similar Problems·2
+                        - generic [ref=e357]: Solutions·113
+                        - generic [ref=e358]: Sort
+                        - generic [ref=e359]: Facebook
+                        - generic [ref=e360]: Uber
+                  - cell "Easy" [ref=e361]:
+                    - generic [ref=e362]: Easy
+                - row "860 · Number of Distinct Islands Similar Problems·3 Solutions·45 Hash Table Depth First Search/DFS ... Medium" [ref=e363] [cursor=pointer]:
+                  - cell [ref=e364]
+                  - cell "860 · Number of Distinct Islands Similar Problems·3 Solutions·45 Hash Table Depth First Search/DFS ..." [ref=e365]:
+                    - generic [ref=e366]:
+                      - generic "Number of Distinct Islands" [ref=e368]: 860 · Number of Distinct Islands
+                      - generic [ref=e370]:
+                        - generic [ref=e371]: Similar Problems·3
+                        - generic [ref=e372]: Solutions·45
+                        - generic [ref=e373]: Hash Table
+                        - generic [ref=e374]: Depth First Search/DFS
+                        - generic [ref=e375]: ...
+                  - cell "Medium" [ref=e376]:
+                    - generic [ref=e377]: Medium
+                - row "41 · Maximum Subarray Similar Problems·8 Solutions·77 Dynamic Programming/DP Coordinate DP Prefix Sum Array ... Easy" [ref=e378] [cursor=pointer]:
+                  - cell [ref=e379]
+                  - cell "41 · Maximum Subarray Similar Problems·8 Solutions·77 Dynamic Programming/DP Coordinate DP Prefix Sum Array ..." [ref=e380]:
+                    - generic [ref=e381]:
+                      - generic "Maximum Subarray" [ref=e383]: 41 · Maximum Subarray
+                      - generic [ref=e385]:
+                        - generic [ref=e386]: Similar Problems·8
+                        - generic [ref=e387]: Solutions·77
+                        - generic [ref=e388]: Dynamic Programming/DP
+                        - generic [ref=e389]: Coordinate DP
+                        - generic [ref=e390]: Prefix Sum Array
+                        - generic [ref=e391]: ...
+                  - cell "Easy" [ref=e392]:
+                    - generic [ref=e393]: Easy
+                - row "2157 · Print Welcome to LintCode! Similar Problems·2 Solutions·26 Output Statements Naive" [ref=e394] [cursor=pointer]:
+                  - cell [ref=e395]
+                  - cell "2157 · Print Welcome to LintCode! Similar Problems·2 Solutions·26 Output Statements" [ref=e396]:
+                    - generic [ref=e397]:
+                      - generic "Print Welcome to LintCode!" [ref=e399]: 2157 · Print Welcome to LintCode!
+                      - generic [ref=e401]:
+                        - generic [ref=e402]: Similar Problems·2
+                        - generic [ref=e403]: Solutions·26
+                        - generic [ref=e404]: Output Statements
+                  - cell "Naive" [ref=e405]:
+                    - generic [ref=e406]: Naive
+                - row "837 · Palindromic Substrings Solutions·28 Enumerate String Facebook LinkedIn Medium" [ref=e407] [cursor=pointer]:
+                  - cell [ref=e408]
+                  - cell "837 · Palindromic Substrings Solutions·28 Enumerate String Facebook LinkedIn" [ref=e409]:
+                    - generic [ref=e410]:
+                      - generic "Palindromic Substrings" [ref=e412]: 837 · Palindromic Substrings
+                      - generic [ref=e414]:
+                        - generic [ref=e415]: Solutions·28
+                        - generic [ref=e416]: Enumerate
+                        - generic [ref=e417]: String
+                        - generic [ref=e418]: Facebook
+                        - generic [ref=e419]: LinkedIn
+                  - cell "Medium" [ref=e420]:
+                    - generic [ref=e421]: Medium
+                - row "97 · Maximum Depth of Binary Tree Similar Problems·3 Solutions·81 Binary Tree Depth First Search/DFS Divide and Conquer Easy" [ref=e422] [cursor=pointer]:
+                  - cell [ref=e423]
+                  - cell "97 · Maximum Depth of Binary Tree Similar Problems·3 Solutions·81 Binary Tree Depth First Search/DFS Divide and Conquer" [ref=e424]:
+                    - generic [ref=e425]:
+                      - generic "Maximum Depth of Binary Tree" [ref=e427]: 97 · Maximum Depth of Binary Tree
+                      - generic [ref=e429]:
+                        - generic [ref=e430]: Similar Problems·3
+                        - generic [ref=e431]: Solutions·81
+                        - generic [ref=e432]: Binary Tree
+                        - generic [ref=e433]: Depth First Search/DFS
+                        - generic [ref=e434]: Divide and Conquer
+                  - cell "Easy" [ref=e435]:
+                    - generic [ref=e436]: Easy
+                - row "3930 · Move Pieces to Obtain a String Solutions·6 Two Pointers String Medium" [ref=e437] [cursor=pointer]:
+                  - cell [ref=e438]
+                  - cell "3930 · Move Pieces to Obtain a String Solutions·6 Two Pointers String" [ref=e439]:
+                    - generic [ref=e440]:
+                      - generic "Move Pieces to Obtain a String" [ref=e442]: 3930 · Move Pieces to Obtain a String
+                      - generic [ref=e444]:
+                        - generic [ref=e445]: Solutions·6
+                        - generic [ref=e446]: Two Pointers
+                        - generic [ref=e447]: String
+                  - cell "Medium" [ref=e448]:
+                    - generic [ref=e449]: Medium
+                - row "3929 · Kth Smallest Product of Two Sorted Arrays Solutions·1 Error prone Binary Search Array Hard" [ref=e450] [cursor=pointer]:
+                  - cell [ref=e451]
+                  - cell "3929 · Kth Smallest Product of Two Sorted Arrays Solutions·1 Error prone Binary Search Array" [ref=e452]:
+                    - generic [ref=e453]:
+                      - generic "Kth Smallest Product of Two Sorted Arrays" [ref=e455]: 3929 · Kth Smallest Product of Two Sorted Arrays
+                      - generic [ref=e457]:
+                        - generic [ref=e458]: Solutions·1
+                        - generic [ref=e459]: Error prone
+                        - generic [ref=e460]: Binary Search
+                        - generic [ref=e461]: Array
+                  - cell "Hard" [ref=e462]:
+                    - generic [ref=e463]: Hard
+                - row "3928 · Fruits Into Baskets II Solutions·2 Error prone Segment Tree Binary Search Array Medium" [ref=e464] [cursor=pointer]:
+                  - cell [ref=e465]
+                  - cell "3928 · Fruits Into Baskets II Solutions·2 Error prone Segment Tree Binary Search Array" [ref=e466]:
+                    - generic [ref=e467]:
+                      - generic "Fruits Into Baskets II" [ref=e469]: 3928 · Fruits Into Baskets II
+                      - generic [ref=e471]:
+                        - generic [ref=e472]: Solutions·2
+                        - generic [ref=e473]: Error prone
+                        - generic [ref=e474]: Segment Tree
+                        - generic [ref=e475]: Binary Search
+                        - generic [ref=e476]: Array
+                  - cell "Medium" [ref=e477]:
+                    - generic [ref=e478]: Medium
+                - row "3927 · Hopscotch Solutions·3 Depth First Search/DFS Array Easy" [ref=e479] [cursor=pointer]:
+                  - cell [ref=e480]
+                  - cell "3927 · Hopscotch Solutions·3 Depth First Search/DFS Array" [ref=e481]:
+                    - generic [ref=e482]:
+                      - generic "Hopscotch" [ref=e484]: 3927 · Hopscotch
+                      - generic [ref=e486]:
+                        - generic [ref=e487]: Solutions·3
+                        - generic [ref=e488]: Depth First Search/DFS
+                        - generic [ref=e489]: Array
+                  - cell "Easy" [ref=e490]:
+                    - generic [ref=e491]: Easy
+                - row "3926 · Drying Solutions·2 Error prone Binary Search Array Easy" [ref=e492] [cursor=pointer]:
+                  - cell [ref=e493]
+                  - cell "3926 · Drying Solutions·2 Error prone Binary Search Array" [ref=e494]:
+                    - generic [ref=e495]:
+                      - generic "Drying" [ref=e497]: 3926 · Drying
+                      - generic [ref=e499]:
+                        - generic [ref=e500]: Solutions·2
+                        - generic [ref=e501]: Error prone
+                        - generic [ref=e502]: Binary Search
+                        - generic [ref=e503]: Array
+                  - cell "Easy" [ref=e504]:
+                    - generic [ref=e505]: Easy
+                - row "3925 · Gold Coins Solutions·7 Mathmatics Easy" [ref=e506] [cursor=pointer]:
+                  - cell [ref=e507]
+                  - cell "3925 · Gold Coins Solutions·7 Mathmatics" [ref=e508]:
+                    - generic [ref=e509]:
+                      - generic "Gold Coins" [ref=e511]: 3925 · Gold Coins
+                      - generic [ref=e513]:
+                        - generic [ref=e514]: Solutions·7
+                        - generic [ref=e515]: Mathmatics
+                  - cell "Easy" [ref=e516]:
+                    - generic [ref=e517]: Easy
+                - row "3924 · Letter Spinning Game Solutions·4 String Array Medium" [ref=e518] [cursor=pointer]:
+                  - cell [ref=e519]
+                  - cell "3924 · Letter Spinning Game Solutions·4 String Array" [ref=e520]:
+                    - generic [ref=e521]:
+                      - generic "Letter Spinning Game" [ref=e523]: 3924 · Letter Spinning Game
+                      - generic [ref=e525]:
+                        - generic [ref=e526]: Solutions·4
+                        - generic [ref=e527]: String
+                        - generic [ref=e528]: Array
+                  - cell "Medium" [ref=e529]:
+                    - generic [ref=e530]: Medium
+                - row "3923 · Constructing Overflow Bit Expression Solutions·1 String Hard" [ref=e531] [cursor=pointer]:
+                  - cell [ref=e532]
+                  - cell "3923 · Constructing Overflow Bit Expression Solutions·1 String" [ref=e533]:
+                    - generic [ref=e534]:
+                      - generic "Constructing Overflow Bit Expression" [ref=e536]: 3923 · Constructing Overflow Bit Expression
+                      - generic [ref=e538]:
+                        - generic [ref=e539]: Solutions·1
+                        - generic [ref=e540]: String
+                  - cell "Hard" [ref=e541]:
+                    - generic [ref=e542]: Hard
+                - row "3922 · Put Apples Solutions·3 Mathmatics Easy" [ref=e543] [cursor=pointer]:
+                  - cell [ref=e544]
+                  - cell "3922 · Put Apples Solutions·3 Mathmatics" [ref=e545]:
+                    - generic [ref=e546]:
+                      - generic "Put Apples" [ref=e548]: 3922 · Put Apples
+                      - generic [ref=e550]:
+                        - generic [ref=e551]: Solutions·3
+                        - generic [ref=e552]: Mathmatics
+                  - cell "Easy" [ref=e553]:
+                    - generic [ref=e554]: Easy
+                - row "3921 · Treasure Hunt Solutions·4 Hash Table Enumerate Easy" [ref=e555] [cursor=pointer]:
+                  - cell [ref=e556]
+                  - cell "3921 · Treasure Hunt Solutions·4 Hash Table Enumerate" [ref=e557]:
+                    - generic [ref=e558]:
+                      - generic "Treasure Hunt" [ref=e560]: 3921 · Treasure Hunt
+                      - generic [ref=e562]:
+                        - generic [ref=e563]: Solutions·4
+                        - generic [ref=e564]: Hash Table
+                        - generic [ref=e565]: Enumerate
+                  - cell "Easy" [ref=e566]:
+                    - generic [ref=e567]: Easy
+                - row "3920 · Minimum Area Rectangle II Similar Problems·1 Solutions·1 Hash Table Mathmatics Array Medium" [ref=e568] [cursor=pointer]:
+                  - cell [ref=e569]
+                  - cell "3920 · Minimum Area Rectangle II Similar Problems·1 Solutions·1 Hash Table Mathmatics Array" [ref=e570]:
+                    - generic [ref=e571]:
+                      - generic "Minimum Area Rectangle II" [ref=e573]: 3920 · Minimum Area Rectangle II
+                      - generic [ref=e575]:
+                        - generic [ref=e576]: Similar Problems·1
+                        - generic [ref=e577]: Solutions·1
+                        - generic [ref=e578]: Hash Table
+                        - generic [ref=e579]: Mathmatics
+                        - generic [ref=e580]: Array
+                  - cell "Medium" [ref=e581]:
+                    - generic [ref=e582]: Medium
+                - row "3919 · Minimum Cost to Make at Least One Valid Path in Grid Solutions·3 Heap Graph Breadth First Search/BFS Shortest Path Array Hard" [ref=e583] [cursor=pointer]:
+                  - cell [ref=e584]
+                  - cell "3919 · Minimum Cost to Make at Least One Valid Path in Grid Solutions·3 Heap Graph Breadth First Search/BFS Shortest Path Array" [ref=e585]:
+                    - generic [ref=e586]:
+                      - generic "Minimum Cost to Make at Least One Valid Path in Grid" [ref=e588]: 3919 · Minimum Cost to Make at Least One Valid Path in Grid
+                      - generic [ref=e590]:
+                        - generic [ref=e591]: Solutions·3
+                        - generic [ref=e592]: Heap
+                        - generic [ref=e593]: Graph
+                        - generic [ref=e594]: Breadth First Search/BFS
+                        - generic [ref=e595]: Shortest Path
+                        - generic [ref=e596]: Array
+                  - cell "Hard" [ref=e597]:
+                    - generic [ref=e598]: Hard
+                - row "3918 · Maximum Number of Events That Can Be Attended Solutions·2 Error prone Heap Greedy Array Sort Medium" [ref=e599] [cursor=pointer]:
+                  - cell [ref=e600]
+                  - cell "3918 · Maximum Number of Events That Can Be Attended Solutions·2 Error prone Heap Greedy Array Sort" [ref=e601]:
+                    - generic [ref=e602]:
+                      - generic "Maximum Number of Events That Can Be Attended" [ref=e604]: 3918 · Maximum Number of Events That Can Be Attended
+                      - generic [ref=e606]:
+                        - generic [ref=e607]: Solutions·2
+                        - generic [ref=e608]: Error prone
+                        - generic [ref=e609]: Heap
+                        - generic [ref=e610]: Greedy
+                        - generic [ref=e611]: Array
+                        - generic [ref=e612]: Sort
+                  - cell "Medium" [ref=e613]:
+                    - generic [ref=e614]: Medium
+                - row "3917 · Number of Enclaves Solutions·4 Depth First Search/DFS Array Breadth First Search/BFS Medium" [ref=e615] [cursor=pointer]:
+                  - cell [ref=e616]
+                  - cell "3917 · Number of Enclaves Solutions·4 Depth First Search/DFS Array Breadth First Search/BFS" [ref=e617]:
+                    - generic [ref=e618]:
+                      - generic "Number of Enclaves" [ref=e620]: 3917 · Number of Enclaves
+                      - generic [ref=e622]:
+                        - generic [ref=e623]: Solutions·4
+                        - generic [ref=e624]: Depth First Search/DFS
+                        - generic [ref=e625]: Array
+                        - generic [ref=e626]: Breadth First Search/BFS
+                  - cell "Medium" [ref=e627]:
+                    - generic [ref=e628]: Medium
+                - row "3916 · Check if Word Can Be Placed In Crossword Solutions·3 Enumerate Medium" [ref=e629] [cursor=pointer]:
+                  - cell [ref=e630]
+                  - cell "3916 · Check if Word Can Be Placed In Crossword Solutions·3 Enumerate" [ref=e631]:
+                    - generic [ref=e632]:
+                      - generic "Check if Word Can Be Placed In Crossword" [ref=e634]: 3916 · Check if Word Can Be Placed In Crossword
+                      - generic [ref=e636]:
+                        - generic [ref=e637]: Solutions·3
+                        - generic [ref=e638]: Enumerate
+                  - cell "Medium" [ref=e639]:
+                    - generic [ref=e640]: Medium
+                - row "3915 · Letter Tile Possibilities Solutions·2 Depth First Search/DFS String Medium" [ref=e641] [cursor=pointer]:
+                  - cell [ref=e642]
+                  - cell "3915 · Letter Tile Possibilities Solutions·2 Depth First Search/DFS String" [ref=e643]:
+                    - generic [ref=e644]:
+                      - generic "Letter Tile Possibilities" [ref=e646]: 3915 · Letter Tile Possibilities
+                      - generic [ref=e648]:
+                        - generic [ref=e649]: Solutions·2
+                        - generic [ref=e650]: Depth First Search/DFS
+                        - generic [ref=e651]: String
+                  - cell "Medium" [ref=e652]:
+                    - generic [ref=e653]: Medium
+                - row "3914 · Maximum Good People Based on Statements Solutions·3 Enumerate Binary Hard" [ref=e654] [cursor=pointer]:
+                  - cell [ref=e655]
+                  - cell "3914 · Maximum Good People Based on Statements Solutions·3 Enumerate Binary" [ref=e656]:
+                    - generic [ref=e657]:
+                      - generic "Maximum Good People Based on Statements" [ref=e659]: 3914 · Maximum Good People Based on Statements
+                      - generic [ref=e661]:
+                        - generic [ref=e662]: Solutions·3
+                        - generic [ref=e663]: Enumerate
+                        - generic [ref=e664]: Binary
+                  - cell "Hard" [ref=e665]:
+                    - generic [ref=e666]: Hard
+                - row "3913 · Parsing A Boolean Expression Solutions·2 Stack String Medium" [ref=e667] [cursor=pointer]:
+                  - cell [ref=e668]
+                  - cell "3913 · Parsing A Boolean Expression Solutions·2 Stack String" [ref=e669]:
+                    - generic [ref=e670]:
+                      - generic "Parsing A Boolean Expression" [ref=e672]: 3913 · Parsing A Boolean Expression
+                      - generic [ref=e674]:
+                        - generic [ref=e675]: Solutions·2
+                        - generic [ref=e676]: Stack
+                        - generic [ref=e677]: String
+                  - cell "Medium" [ref=e678]:
+                    - generic [ref=e679]: Medium
+                - row "3912 · The Average Solutions·2 Heap Queue Array Medium" [ref=e680] [cursor=pointer]:
+                  - cell [ref=e681]
+                  - cell "3912 · The Average Solutions·2 Heap Queue Array" [ref=e682]:
+                    - generic [ref=e683]:
+                      - generic "The Average" [ref=e685]: 3912 · The Average
+                      - generic [ref=e687]:
+                        - generic [ref=e688]: Solutions·2
+                        - generic [ref=e689]: Heap
+                        - generic [ref=e690]: Queue
+                        - generic [ref=e691]: Array
+                  - cell "Medium" [ref=e692]:
+                    - generic [ref=e693]: Medium
+                - row "3911 · Election Time Solutions·1 Heap Array Sort Medium" [ref=e694] [cursor=pointer]:
+                  - cell [ref=e695]
+                  - cell "3911 · Election Time Solutions·1 Heap Array Sort" [ref=e696]:
+                    - generic [ref=e697]:
+                      - generic "Election Time" [ref=e699]: 3911 · Election Time
+                      - generic [ref=e701]:
+                        - generic [ref=e702]: Solutions·1
+                        - generic [ref=e703]: Heap
+                        - generic [ref=e704]: Array
+                        - generic [ref=e705]: Sort
+                  - cell "Medium" [ref=e706]:
+                    - generic [ref=e707]: Medium
+                - row "3910 · Reverse Substrings Between Each Pair of Parentheses Solutions·4 Stack String Simulation Medium" [ref=e708] [cursor=pointer]:
+                  - cell [ref=e709]
+                  - cell "3910 · Reverse Substrings Between Each Pair of Parentheses Solutions·4 Stack String Simulation" [ref=e710]:
+                    - generic [ref=e711]:
+                      - generic "Reverse Substrings Between Each Pair of Parentheses" [ref=e713]: 3910 · Reverse Substrings Between Each Pair of Parentheses
+                      - generic [ref=e715]:
+                        - generic [ref=e716]: Solutions·4
+                        - generic [ref=e717]: Stack
+                        - generic [ref=e718]: String
+                        - generic [ref=e719]: Simulation
+                  - cell "Medium" [ref=e720]:
+                    - generic [ref=e721]: Medium
+                - row "3909 · Sort Array by Moving Items Solutions·1 Error prone Greedy Array Medium" [ref=e722] [cursor=pointer]:
+                  - cell [ref=e723]
+                  - cell "3909 · Sort Array by Moving Items Solutions·1 Error prone Greedy Array" [ref=e724]:
+                    - generic [ref=e725]:
+                      - generic "Sort Array by Moving Items" [ref=e727]: 3909 · Sort Array by Moving Items
+                      - generic [ref=e729]:
+                        - generic [ref=e730]: Solutions·1
+                        - generic [ref=e731]: Error prone
+                        - generic [ref=e732]: Greedy
+                        - generic [ref=e733]: Array
+                  - cell "Medium" [ref=e734]:
+                    - generic [ref=e735]: Medium
+                - row "3908 · Minimum Time to Defeat All Monsters Solutions·4 Error prone Dynamic Programming/DP Array Memoization Search Hard" [ref=e736] [cursor=pointer]:
+                  - cell [ref=e737]
+                  - cell "3908 · Minimum Time to Defeat All Monsters Solutions·4 Error prone Dynamic Programming/DP Array Memoization Search" [ref=e738]:
+                    - generic [ref=e739]:
+                      - generic "Minimum Time to Defeat All Monsters" [ref=e741]: 3908 · Minimum Time to Defeat All Monsters
+                      - generic [ref=e743]:
+                        - generic [ref=e744]: Solutions·4
+                        - generic [ref=e745]: Error prone
+                        - generic [ref=e746]: Dynamic Programming/DP
+                        - generic [ref=e747]: Array
+                        - generic [ref=e748]: Memoization Search
+                  - cell "Hard" [ref=e749]:
+                    - generic [ref=e750]: Hard
+                - row "3907 · Largest 1-Bordered Square Solutions·1 Dynamic Programming/DP Array Medium" [ref=e751] [cursor=pointer]:
+                  - cell [ref=e752]
+                  - cell "3907 · Largest 1-Bordered Square Solutions·1 Dynamic Programming/DP Array" [ref=e753]:
+                    - generic [ref=e754]:
+                      - generic "Largest 1-Bordered Square" [ref=e756]: 3907 · Largest 1-Bordered Square
+                      - generic [ref=e758]:
+                        - generic [ref=e759]: Solutions·1
+                        - generic [ref=e760]: Dynamic Programming/DP
+                        - generic [ref=e761]: Array
+                  - cell "Medium" [ref=e762]:
+                    - generic [ref=e763]: Medium
+                - row "3906 · Maximum Number of Vowels in a Substring of Given Length Solutions·1 Sliding Window String Medium" [ref=e764] [cursor=pointer]:
+                  - cell [ref=e765]
+                  - cell "3906 · Maximum Number of Vowels in a Substring of Given Length Solutions·1 Sliding Window String" [ref=e766]:
+                    - generic [ref=e767]:
+                      - generic "Maximum Number of Vowels in a Substring of Given Length" [ref=e769]: 3906 · Maximum Number of Vowels in a Substring of Given Length
+                      - generic [ref=e771]:
+                        - generic [ref=e772]: Solutions·1
+                        - generic [ref=e773]: Sliding Window
+                        - generic [ref=e774]: String
+                  - cell "Medium" [ref=e775]:
+                    - generic [ref=e776]: Medium
+                - row "3905 · String Transformation Solutions·2 Dynamic Programming/DP String Hard" [ref=e777] [cursor=pointer]:
+                  - cell [ref=e778]
+                  - cell "3905 · String Transformation Solutions·2 Dynamic Programming/DP String" [ref=e779]:
+                    - generic [ref=e780]:
+                      - generic "String Transformation" [ref=e782]: 3905 · String Transformation
+                      - generic [ref=e784]:
+                        - generic [ref=e785]: Solutions·2
+                        - generic [ref=e786]: Dynamic Programming/DP
+                        - generic [ref=e787]: String
+                  - cell "Hard" [ref=e788]:
+                    - generic [ref=e789]: Hard
+                - row "3904 · Continuous Subarray Sum V Solutions·3 Dynamic Programming/DP Two Pointers Array Medium" [ref=e790] [cursor=pointer]:
+                  - cell [ref=e791]
+                  - cell "3904 · Continuous Subarray Sum V Solutions·3 Dynamic Programming/DP Two Pointers Array" [ref=e792]:
+                    - generic [ref=e793]:
+                      - generic "Continuous Subarray Sum V" [ref=e795]: 3904 · Continuous Subarray Sum V
+                      - generic [ref=e797]:
+                        - generic [ref=e798]: Solutions·3
+                        - generic [ref=e799]: Dynamic Programming/DP
+                        - generic [ref=e800]: Two Pointers
+                        - generic [ref=e801]: Array
+                  - cell "Medium" [ref=e802]:
+                    - generic [ref=e803]: Medium
+                - row "3903 · Maximum Coins Heroes Can Collect Solutions·3 Binary Search Prefix Sum Array Array Medium" [ref=e804] [cursor=pointer]:
+                  - cell [ref=e805]
+                  - cell "3903 · Maximum Coins Heroes Can Collect Solutions·3 Binary Search Prefix Sum Array Array" [ref=e806]:
+                    - generic [ref=e807]:
+                      - generic "Maximum Coins Heroes Can Collect" [ref=e809]: 3903 · Maximum Coins Heroes Can Collect
+                      - generic [ref=e811]:
+                        - generic [ref=e812]: Solutions·3
+                        - generic [ref=e813]: Binary Search
+                        - generic [ref=e814]: Prefix Sum Array
+                        - generic [ref=e815]: Array
+                  - cell "Medium" [ref=e816]:
+                    - generic [ref=e817]: Medium
+                - row "3902 · Count the Number of Fair Pairs Solutions·3 Binary Search Two Pointers Array Medium" [ref=e818] [cursor=pointer]:
+                  - cell [ref=e819]
+                  - cell "3902 · Count the Number of Fair Pairs Solutions·3 Binary Search Two Pointers Array" [ref=e820]:
+                    - generic [ref=e821]:
+                      - generic "Count the Number of Fair Pairs" [ref=e823]: 3902 · Count the Number of Fair Pairs
+                      - generic [ref=e825]:
+                        - generic [ref=e826]: Solutions·3
+                        - generic [ref=e827]: Binary Search
+                        - generic [ref=e828]: Two Pointers
+                        - generic [ref=e829]: Array
+                  - cell "Medium" [ref=e830]:
+                    - generic [ref=e831]: Medium
+                - row "3901 · Append Characters to String to Make Subsequence Solutions·3 Two Pointers Greedy String Medium" [ref=e832] [cursor=pointer]:
+                  - cell [ref=e833]
+                  - cell "3901 · Append Characters to String to Make Subsequence Solutions·3 Two Pointers Greedy String" [ref=e834]:
+                    - generic [ref=e835]:
+                      - generic "Append Characters to String to Make Subsequence" [ref=e837]: 3901 · Append Characters to String to Make Subsequence
+                      - generic [ref=e839]:
+                        - generic [ref=e840]: Solutions·3
+                        - generic [ref=e841]: Two Pointers
+                        - generic [ref=e842]: Greedy
+                        - generic [ref=e843]: String
+                  - cell "Medium" [ref=e844]:
+                    - generic [ref=e845]: Medium
+                - row "3900 · Maximum Matching of Players With Coaches Solutions·1 Greedy Two Pointers Array Medium" [ref=e846] [cursor=pointer]:
+                  - cell [ref=e847]
+                  - cell "3900 · Maximum Matching of Players With Coaches Solutions·1 Greedy Two Pointers Array" [ref=e848]:
+                    - generic [ref=e849]:
+                      - generic "Maximum Matching of Players With Coaches" [ref=e851]: 3900 · Maximum Matching of Players With Coaches
+                      - generic [ref=e853]:
+                        - generic [ref=e854]: Solutions·1
+                        - generic [ref=e855]: Greedy
+                        - generic [ref=e856]: Two Pointers
+                        - generic [ref=e857]: Array
+                  - cell "Medium" [ref=e858]:
+                    - generic [ref=e859]: Medium
+                - row "3899 · Subarrays with K Different Integers Solutions·6 Two Pointers Array Hard" [ref=e860] [cursor=pointer]:
+                  - cell [ref=e861]
+                  - cell "3899 · Subarrays with K Different Integers Solutions·6 Two Pointers Array" [ref=e862]:
+                    - generic [ref=e863]:
+                      - generic "Subarrays with K Different Integers" [ref=e865]: 3899 · Subarrays with K Different Integers
+                      - generic [ref=e867]:
+                        - generic [ref=e868]: Solutions·6
+                        - generic [ref=e869]: Two Pointers
+                        - generic [ref=e870]: Array
+                  - cell "Hard" [ref=e871]:
+                    - generic [ref=e872]: Hard
+                - row "3898 · Intersection of Two Linked List II Solutions·2 Hash Table Linked List Two Pointers Easy" [ref=e873] [cursor=pointer]:
+                  - cell [ref=e874]
+                  - cell "3898 · Intersection of Two Linked List II Solutions·2 Hash Table Linked List Two Pointers" [ref=e875]:
+                    - generic [ref=e876]:
+                      - generic "Intersection of Two Linked List II" [ref=e878]: 3898 · Intersection of Two Linked List II
+                      - generic [ref=e880]:
+                        - generic [ref=e881]: Solutions·2
+                        - generic [ref=e882]: Hash Table
+                        - generic [ref=e883]: Linked List
+                        - generic [ref=e884]: Two Pointers
+                  - cell "Easy" [ref=e885]:
+                    - generic [ref=e886]: Easy
+                - row "3897 · Intersection of Two Linked List Solutions·6 Linked List Naive" [ref=e887] [cursor=pointer]:
+                  - cell [ref=e888]
+                  - cell "3897 · Intersection of Two Linked List Solutions·6 Linked List" [ref=e889]:
+                    - generic [ref=e890]:
+                      - generic "Intersection of Two Linked List" [ref=e892]: 3897 · Intersection of Two Linked List
+                      - generic [ref=e894]:
+                        - generic [ref=e895]: Solutions·6
+                        - generic [ref=e896]: Linked List
+                  - cell "Naive" [ref=e897]:
+                    - generic [ref=e898]: Naive
+                - row "3896 · Josephus Problem Solutions·6 Linked List Mathmatics Medium" [ref=e899] [cursor=pointer]:
+                  - cell [ref=e900]
+                  - cell "3896 · Josephus Problem Solutions·6 Linked List Mathmatics" [ref=e901]:
+                    - generic [ref=e902]:
+                      - generic "Josephus Problem" [ref=e904]: 3896 · Josephus Problem
+                      - generic [ref=e906]:
+                        - generic [ref=e907]: Solutions·6
+                        - generic [ref=e908]: Linked List
+                        - generic [ref=e909]: Mathmatics
+                  - cell "Medium" [ref=e910]:
+                    - generic [ref=e911]: Medium
+                - row "3895 · Minimum Costs Using the Bus Line Solutions·5 Dynamic Programming/DP Array Hard" [ref=e912] [cursor=pointer]:
+                  - cell [ref=e913]
+                  - cell "3895 · Minimum Costs Using the Bus Line Solutions·5 Dynamic Programming/DP Array" [ref=e914]:
+                    - generic [ref=e915]:
+                      - generic "Minimum Costs Using the Bus Line" [ref=e917]: 3895 · Minimum Costs Using the Bus Line
+                      - generic [ref=e919]:
+                        - generic [ref=e920]: Solutions·5
+                        - generic [ref=e921]: Dynamic Programming/DP
+                        - generic [ref=e922]: Array
+                  - cell "Hard" [ref=e923]:
+                    - generic [ref=e924]: Hard
+                - row "3894 · Maximum Number of Books You Can Take Solutions·5 Dynamic Programming/DP Monotonic Stack Stack Array Hard" [ref=e925] [cursor=pointer]:
+                  - cell [ref=e926]
+                  - cell "3894 · Maximum Number of Books You Can Take Solutions·5 Dynamic Programming/DP Monotonic Stack Stack Array" [ref=e927]:
+                    - generic [ref=e928]:
+                      - generic "Maximum Number of Books You Can Take" [ref=e930]: 3894 · Maximum Number of Books You Can Take
+                      - generic [ref=e932]:
+                        - generic [ref=e933]: Solutions·5
+                        - generic [ref=e934]: Dynamic Programming/DP
+                        - generic [ref=e935]: Monotonic Stack
+                        - generic [ref=e936]: Stack
+                        - generic [ref=e937]: Array
+                  - cell "Hard" [ref=e938]:
+                    - generic [ref=e939]: Hard
+                - row "3893 · Minimum Flips in Binary Tree to Get Result Solutions·2 Dynamic Programming/DP Tree DP Hard" [ref=e940] [cursor=pointer]:
+                  - cell [ref=e941]
+                  - cell "3893 · Minimum Flips in Binary Tree to Get Result Solutions·2 Dynamic Programming/DP Tree DP" [ref=e942]:
+                    - generic [ref=e943]:
+                      - generic "Minimum Flips in Binary Tree to Get Result" [ref=e945]: 3893 · Minimum Flips in Binary Tree to Get Result
+                      - generic [ref=e947]:
+                        - generic [ref=e948]: Solutions·2
+                        - generic [ref=e949]: Dynamic Programming/DP
+                        - generic [ref=e950]: Tree DP
+                  - cell "Hard" [ref=e951]:
+                    - generic [ref=e952]: Hard
+                - row "3892 · Make Array Non-decreasing or Non-increasing Solutions·3 Dynamic Programming/DP Greedy Hard" [ref=e953] [cursor=pointer]:
+                  - cell [ref=e954]
+                  - cell "3892 · Make Array Non-decreasing or Non-increasing Solutions·3 Dynamic Programming/DP Greedy" [ref=e955]:
+                    - generic [ref=e956]:
+                      - generic "Make Array Non-decreasing or Non-increasing" [ref=e958]: 3892 · Make Array Non-decreasing or Non-increasing
+                      - generic [ref=e960]:
+                        - generic [ref=e961]: Solutions·3
+                        - generic [ref=e962]: Dynamic Programming/DP
+                        - generic [ref=e963]: Greedy
+                  - cell "Hard" [ref=e964]:
+                    - generic [ref=e965]: Hard
+                - row "3891 · Maximum Cost of Trip With K Roads Solutions·3 State Compression DP Dynamic Programming/DP Graph Hard" [ref=e966] [cursor=pointer]:
+                  - cell [ref=e967]
+                  - cell "3891 · Maximum Cost of Trip With K Roads Solutions·3 State Compression DP Dynamic Programming/DP Graph" [ref=e968]:
+                    - generic [ref=e969]:
+                      - generic "Maximum Cost of Trip With K Roads" [ref=e971]: 3891 · Maximum Cost of Trip With K Roads
+                      - generic [ref=e973]:
+                        - generic [ref=e974]: Solutions·3
+                        - generic [ref=e975]: State Compression DP
+                        - generic [ref=e976]: Dynamic Programming/DP
+                        - generic [ref=e977]: Graph
+                  - cell "Hard" [ref=e978]:
+                    - generic [ref=e979]: Hard
+            - list [ref=e980]:
+              - listitem "Previous Page" [ref=e981]:
+                - button "left" [disabled] [ref=e982]:
+                  - img "left" [ref=e983]:
+                    - img [ref=e984]
+              - listitem "1" [ref=e986] [cursor=pointer]:
+                - generic [ref=e987]: "1"
+              - listitem "2" [ref=e988] [cursor=pointer]:
+                - generic [ref=e989]: "2"
+              - listitem "3" [ref=e990] [cursor=pointer]:
+                - generic [ref=e991]: "3"
+              - listitem "4" [ref=e992] [cursor=pointer]:
+                - generic [ref=e993]: "4"
+              - listitem "Next 5 Pages" [ref=e994] [cursor=pointer]:
+                - generic [ref=e996]:
+                  - img "double-right" [ref=e997]:
+                    - img [ref=e998]
+                  - generic [ref=e1000]: •••
+              - listitem "69" [ref=e1001] [cursor=pointer]:
+                - generic [ref=e1002]: "69"
+              - listitem "Next Page" [ref=e1003] [cursor=pointer]:
+                - button "right" [ref=e1004]:
+                  - img "right" [ref=e1005]:
+                    - img [ref=e1006]
+              - listitem [ref=e1008]:
+                - generic [ref=e1009]:
+                  - text: Go to
+                  - textbox "Page" [ref=e1010]
+                  - text: Page
+        - generic [ref=e1011]:
+          - button "sign in/sign up" [ref=e1016] [cursor=pointer]:
+            - generic [ref=e1017]: sign in/sign up
+          - generic [ref=e1018]:
+            - generic [ref=e1019]:
+              - generic [ref=e1021]: Clock In
+              - generic [ref=e1022] [cursor=pointer]:
+                - img "question-circle" [ref=e1023]:
+                  - img [ref=e1024]
+                - text: rules
+            - button "Clock In Now" [ref=e1027] [cursor=pointer]:
+              - generic [ref=e1028]: Clock In Now
+            - generic [ref=e1029]:
+              - generic [ref=e1031]:
+                - generic [ref=e1032]: Clock in everyday
+                - generic [ref=e1033]: Get LintCode VIP
+              - generic [ref=e1034]:
+                - generic [ref=e1038]: "5.11"
+                - generic [ref=e1043]: "5.12"
+                - generic [ref=e1048]: "5.13"
+                - generic [ref=e1053]: Today
+                - generic [ref=e1058]: "5.15"
+                - generic [ref=e1063]: "5.16"
+                - generic [ref=e1064]:
+                  - generic [ref=e1067]: VIP
+                  - generic [ref=e1068]: "5.17"
+              - img "caret-down" [ref=e1070] [cursor=pointer]:
+                - img [ref=e1071]
+          - generic [ref=e1073]:
+            - generic [ref=e1074]:
+              - generic [ref=e1075]: AC Leaderboard
+              - generic [ref=e1077]:
+                - generic [ref=e1078]: Monthly
+                - generic [ref=e1079]: Overall
+            - table [ref=e1086]:
+              - rowgroup [ref=e1088]:
+                - row "Rank User Pass" [ref=e1089]:
+                  - columnheader "Rank" [ref=e1090]
+                  - columnheader "User" [ref=e1091]
+                  - columnheader "Pass" [ref=e1092]
+              - rowgroup [ref=e1093]:
+                - row "LCuser_O2F1C7 161" [ref=e1094]:
+                  - cell [ref=e1095]
+                  - cell "LCuser_O2F1C7" [ref=e1096]:
+                    - link "LCuser_O2F1C7" [ref=e1097] [cursor=pointer]:
+                      - /url: /user/LCuser_O2F1C7/
+                      - img [ref=e1099]
+                      - generic [ref=e1100]: LCuser_O2F1C7
+                  - cell "161" [ref=e1101]
+                - row "user_ksdf56ath 118" [ref=e1102]:
+                  - cell [ref=e1103]
+                  - cell "user_ksdf56ath" [ref=e1104]:
+                    - link "user_ksdf56ath" [ref=e1105] [cursor=pointer]:
+                      - /url: /user/LCuser_684GRV/
+                      - img [ref=e1107]
+                      - generic [ref=e1108]: user_ksdf56ath
+                  - cell "118" [ref=e1109]
+                - row "糖醋脚趾甲 109" [ref=e1110]:
+                  - cell [ref=e1111]
+                  - cell "糖醋脚趾甲" [ref=e1112]:
+                    - link "糖醋脚趾甲" [ref=e1113] [cursor=pointer]:
+                      - /url: /user/13950200694/
+                      - img [ref=e1115]
+                      - generic [ref=e1116]: 糖醋脚趾甲
+                  - cell "109" [ref=e1117]
+                - row "4 LCuser_DLA2GZ 102" [ref=e1118]:
+                  - cell "4" [ref=e1119]:
+                    - generic [ref=e1120]: "4"
+                  - cell "LCuser_DLA2GZ" [ref=e1121]:
+                    - link "LCuser_DLA2GZ" [ref=e1122] [cursor=pointer]:
+                      - /url: /user/LCuser_DLA2GZ/
+                      - img [ref=e1124]
+                      - generic [ref=e1125]: LCuser_DLA2GZ
+                  - cell "102" [ref=e1126]
+                - row "5 LCuser_Q6UXQ7 79" [ref=e1127]:
+                  - cell "5" [ref=e1128]:
+                    - generic [ref=e1129]: "5"
+                  - cell "LCuser_Q6UXQ7" [ref=e1130]:
+                    - link "LCuser_Q6UXQ7" [ref=e1131] [cursor=pointer]:
+                      - /url: /user/LCuser_Q6UXQ7/
+                      - img [ref=e1133]
+                      - generic [ref=e1134]: LCuser_Q6UXQ7
+                  - cell "79" [ref=e1135]
+                - row "6 LCuser_PNA3R7 71" [ref=e1136]:
+                  - cell "6" [ref=e1137]:
+                    - generic [ref=e1138]: "6"
+                  - cell "LCuser_PNA3R7" [ref=e1139]:
+                    - link "LCuser_PNA3R7" [ref=e1140] [cursor=pointer]:
+                      - /url: /user/LCuser_PNA3R7/
+                      - img [ref=e1142]
+                      - generic [ref=e1143]: LCuser_PNA3R7
+                  - cell "71" [ref=e1144]
+                - row "7 MLLearner 69" [ref=e1145]:
+                  - cell "7" [ref=e1146]:
+                    - generic [ref=e1147]: "7"
+                  - cell "MLLearner" [ref=e1148]:
+                    - link "MLLearner" [ref=e1149] [cursor=pointer]:
+                      - /url: /user/LCuser_MWCPZE/
+                      - img [ref=e1151]
+                      - generic [ref=e1152]: MLLearner
+                  - cell "69" [ref=e1153]
+                - row "8 LHF_23456 68" [ref=e1154]:
+                  - cell "8" [ref=e1155]:
+                    - generic [ref=e1156]: "8"
+                  - cell "LHF_23456" [ref=e1157]:
+                    - link "LHF_23456" [ref=e1158] [cursor=pointer]:
+                      - /url: /user/LCuser_HFQFFO/
+                      - img [ref=e1160]
+                      - generic [ref=e1161]: LHF_23456
+                  - cell "68" [ref=e1162]
+                - row "9 LCuser_E39J1W 66" [ref=e1163]:
+                  - cell "9" [ref=e1164]:
+                    - generic [ref=e1165]: "9"
+                  - cell "LCuser_E39J1W" [ref=e1166]:
+                    - link "LCuser_E39J1W" [ref=e1167] [cursor=pointer]:
+                      - /url: /user/LCuser_E39J1W/
+                      - img [ref=e1169]
+                      - generic [ref=e1170]: LCuser_E39J1W
+                  - cell "66" [ref=e1171]
+                - row "10 码头整薯条 56" [ref=e1172]:
+                  - cell "10" [ref=e1173]:
+                    - generic [ref=e1174]: "10"
+                  - cell "码头整薯条" [ref=e1175]:
+                    - link "码头整薯条" [ref=e1176] [cursor=pointer]:
+                      - /url: /user/LCuser_R0X8FO/
+                      - img [ref=e1178]
+                      - generic [ref=e1179]: 码头整薯条
+                  - cell "56" [ref=e1180]
+            - generic [ref=e1181]:
+              - generic [ref=e1182] [cursor=pointer]: login
+              - generic [ref=e1183]: to check my Ranking
+          - generic [ref=e1184]:
+            - generic [ref=e1186]: Recommend Collection
+            - generic [ref=e1187]:
+              - link "Blind 75 key Unlock by password" [ref=e1188] [cursor=pointer]:
+                - /url: /collection/328/?source=AD-problemlist
+                - img [ref=e1189]
+                - generic [ref=e1190]:
+                  - generic [ref=e1191]: Blind 75
+                  - generic [ref=e1193]:
+                    - img "key" [ref=e1194]:
+                      - img [ref=e1195]
+                    - generic [ref=e1197]: Unlock by password
+              - link "新手必刷编程50题 public training" [ref=e1198] [cursor=pointer]:
+                - /url: /collection/192/?source=AD-problemlist
+                - img [ref=e1199]
+                - generic [ref=e1200]:
+                  - generic [ref=e1201]: 新手必刷编程50题
+                  - generic [ref=e1204]: public training
+              - link "进阶必刷编程80题 key Unlock by password" [ref=e1205] [cursor=pointer]:
+                - /url: /collection/195/?source=AD-problemlist
+                - img [ref=e1206]
+                - generic [ref=e1207]:
+                  - generic [ref=e1208]: 进阶必刷编程80题
+                  - generic [ref=e1210]:
+                    - img "key" [ref=e1211]:
+                      - img [ref=e1212]
+                    - generic [ref=e1214]: Unlock by password
+              - link "新手必刷 SQL 40 题 public training" [ref=e1215] [cursor=pointer]:
+                - /url: /collection/193/?source=AD-problemlist
+                - img [ref=e1216]
+                - generic [ref=e1217]:
+                  - generic [ref=e1218]: 新手必刷 SQL 40 题
+                  - generic [ref=e1221]: public training
+              - link "炼码精选100题 key Unlock by password" [ref=e1222] [cursor=pointer]:
+                - /url: /collection/164/?source=AD-problemlist
+                - img [ref=e1223]
+                - generic [ref=e1224]:
+                  - generic [ref=e1225]: 炼码精选100题
+                  - generic [ref=e1227]:
+                    - img "key" [ref=e1228]:
+                      - img [ref=e1229]
+                    - generic [ref=e1231]: Unlock by password
+              - link "Facebook 2025高频题 key Unlock by password" [ref=e1232] [cursor=pointer]:
+                - /url: /collection/29/?source=AD-problemlist
+                - img [ref=e1233]
+                - generic [ref=e1234]:
+                  - generic [ref=e1235]: Facebook 2025高频题
+                  - generic [ref=e1237]:
+                    - img "key" [ref=e1238]:
+                      - img [ref=e1239]
+                    - generic [ref=e1241]: Unlock by password
+              - link "剑指offer public training" [ref=e1242] [cursor=pointer]:
+                - /url: /collection/6/?source=AD-problemlist
+                - img [ref=e1243]
+                - generic [ref=e1244]:
+                  - generic [ref=e1245]: 剑指offer
+                  - generic [ref=e1248]: public training
+              - link "北美大厂精选题库 public training" [ref=e1249] [cursor=pointer]:
+                - /url: /collection/2/?source=AD-problemlist
+                - img [ref=e1250]
+                - generic [ref=e1251]:
+                  - generic [ref=e1252]: 北美大厂精选题库
+                  - generic [ref=e1255]: public training
+      - img [ref=e1256] [cursor=pointer]
+  - generic [ref=e60]:
+    - generic:
+      - alert:
+        - generic [ref=e61]:
+          - button "close" [ref=e62] [cursor=pointer]:
+            - img "close" [ref=e63]:
+              - img [ref=e64]
+          - generic [ref=e66]:
+            - paragraph [ref=e69]: Welcome to LintCode for the first time! Let me help you introduce the features so that you can start using LintCode more quickly!
+            - button "Understand The LintCode" [ref=e72] [cursor=pointer]:
+              - generic [ref=e73]: Understand The LintCode

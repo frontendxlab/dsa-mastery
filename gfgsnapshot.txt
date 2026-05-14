@@ -1,0 +1,353 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link "geeksforgeeks" [ref=e14] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/
+          - img "geeksforgeeks" [ref=e16]
+        - img "search icon" [ref=e19] [cursor=pointer]
+      - list [ref=e23]:
+        - listitem [ref=e24] [cursor=pointer]:
+          - button "Sign In" [ref=e26]
+        - listitem [ref=e27] [cursor=pointer]:
+          - generic [ref=e29]: Courses
+        - listitem [ref=e31] [cursor=pointer]:
+          - generic [ref=e33]: Tutorials
+        - listitem [ref=e35] [cursor=pointer]:
+          - generic [ref=e37]: Practice
+        - listitem [ref=e39] [cursor=pointer]:
+          - generic [ref=e41]: Jobs
+        - listitem [ref=e43]
+        - listitem [ref=e44] [cursor=pointer]:
+          - button "Toggle GFG Theme" [ref=e46]
+          - button "Change Language" [ref=e50]:
+            - generic [ref=e52]: Change Language
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - generic [ref=e177] [cursor=pointer]:
+          - heading "Companies" [level=3] [ref=e179]
+          - generic [ref=e181]: View All
+        - generic [ref=e183]:
+          - checkbox [ref=e184] [cursor=pointer]
+          - generic [ref=e185] [cursor=pointer]: Amazon (648)
+        - generic [ref=e187]:
+          - checkbox [ref=e188] [cursor=pointer]
+          - generic [ref=e189] [cursor=pointer]: Microsoft (444)
+        - generic [ref=e191]:
+          - checkbox [ref=e192] [cursor=pointer]
+          - generic [ref=e193] [cursor=pointer]: Google (177)
+        - generic [ref=e195]:
+          - checkbox [ref=e196] [cursor=pointer]
+          - generic [ref=e197] [cursor=pointer]: Flipkart (168)
+        - generic [ref=e199]:
+          - checkbox [ref=e200] [cursor=pointer]
+          - generic [ref=e201] [cursor=pointer]: Adobe (164)
+        - generic [ref=e203]:
+          - checkbox [ref=e204] [cursor=pointer]
+          - generic [ref=e205] [cursor=pointer]: NPCI (144)
+        - generic [ref=e56]:
+          - text:    
+          - generic [ref=e58]:
+            - generic [ref=e59]:
+              - generic [ref=e60]:
+                - heading "Popular Problems" [level=2] [ref=e61]
+                - generic [ref=e62]:
+                  - text:   
+                  - button "Search" [ref=e63] [cursor=pointer]:
+                    - generic [ref=e64]: 
+                    - text: Search
+                  - listbox [ref=e65] [cursor=pointer]:
+                    - generic [ref=e66]:
+                      - generic [ref=e67]: 
+                      - text: Submissions
+                    - generic [ref=e68]: 
+              - generic [ref=e206]:
+                - strong [ref=e207]: "?"
+                - text: of 638 Problems Solved (? %)Sign-In To Track Your Progress
+              - generic [ref=e74]:
+                - generic [ref=e75]: Submissions
+                - generic [ref=e76]:
+                  - text: Mathematical
+                  - generic [ref=e77] [cursor=pointer]: 
+              - generic [ref=e211]:
+                - generic [ref=e213] [cursor=pointer]:
+                  - generic [ref=e216]: Prime Number
+                  - generic [ref=e217]:
+                    - button "Solve" [ref=e218]
+                    - paragraph [ref=e219]:
+                      - generic [ref=e220]: Easy
+                      - generic [ref=e221]: 
+                      - generic [ref=e222]: 597K
+                      - generic [ref=e223]: 
+                      - generic [ref=e224]: 22.2%
+                - generic [ref=e226] [cursor=pointer]:
+                  - generic [ref=e229]: Sum of Natural Numbers
+                  - generic [ref=e230]:
+                    - button "Solve" [ref=e231]
+                    - paragraph [ref=e232]:
+                      - generic [ref=e233]: Easy
+                      - generic [ref=e234]: 
+                      - generic [ref=e235]: 505K
+                      - generic [ref=e236]: 
+                      - generic [ref=e237]: 23.81%
+                - generic [ref=e239] [cursor=pointer]:
+                  - generic [ref=e242]: Nth Fibonacci Number
+                  - generic [ref=e243]:
+                    - button "Solve" [ref=e244]
+                    - paragraph [ref=e245]:
+                      - generic [ref=e246]: Easy
+                      - generic [ref=e247]: 
+                      - generic [ref=e248]: 407K
+                      - generic [ref=e249]: 
+                      - generic [ref=e250]: 22.3%
+                - generic [ref=e252] [cursor=pointer]:
+                  - generic [ref=e255]: Ways to Reach the n'th Stair
+                  - generic [ref=e256]:
+                    - button "Solve" [ref=e257]
+                    - paragraph [ref=e258]:
+                      - generic [ref=e259]: Medium
+                      - generic [ref=e260]: 
+                      - generic [ref=e261]: 391K
+                      - generic [ref=e262]: 
+                      - generic [ref=e263]: 21.9%
+                - generic [ref=e265] [cursor=pointer]:
+                  - generic [ref=e268]: Power Of Numbers
+                  - generic [ref=e269]:
+                    - button "Solve" [ref=e270]
+                    - paragraph [ref=e271]:
+                      - generic [ref=e272]: Medium
+                      - generic [ref=e273]: 
+                      - generic [ref=e274]: 376K
+                      - generic [ref=e275]: 
+                      - generic [ref=e276]: 20.22%
+                - generic [ref=e278] [cursor=pointer]:
+                  - generic [ref=e281]: Square Root
+                  - generic [ref=e282]:
+                    - button "Solve" [ref=e283]
+                    - paragraph [ref=e284]:
+                      - generic [ref=e285]: Easy
+                      - generic [ref=e286]: 
+                      - generic [ref=e287]: 373K
+                      - generic [ref=e288]: 
+                      - generic [ref=e289]: 54.03%
+                - generic [ref=e291] [cursor=pointer]:
+                  - generic [ref=e294]: nCr
+                  - generic [ref=e295]:
+                    - button "Solve" [ref=e296]
+                    - paragraph [ref=e297]:
+                      - generic [ref=e298]: Medium
+                      - generic [ref=e299]: 
+                      - generic [ref=e300]: 363K
+                      - generic [ref=e301]: 
+                      - generic [ref=e302]: 14.82%
+                - generic [ref=e304] [cursor=pointer]:
+                  - generic [ref=e307]: Sum of Natural Numbers
+                  - generic [ref=e308]:
+                    - button "Solve" [ref=e309]
+                    - paragraph [ref=e310]:
+                      - generic [ref=e311]: Easy
+                      - generic [ref=e312]: 
+                      - generic [ref=e313]: 333K
+                      - generic [ref=e314]: 
+                      - generic [ref=e315]: 61.45%
+                - generic [ref=e317] [cursor=pointer]:
+                  - generic [ref=e320]: First n Fibonacci using Recursion
+                  - generic [ref=e321]:
+                    - button "Solve" [ref=e322]
+                    - paragraph [ref=e323]:
+                      - generic [ref=e324]: Basic
+                      - generic [ref=e325]: 
+                      - generic [ref=e326]: 280K
+                      - generic [ref=e327]: 
+                      - generic [ref=e328]: 29.92%
+                - generic [ref=e330] [cursor=pointer]:
+                  - generic [ref=e333]: Find nth root of m
+                  - generic [ref=e334]:
+                    - button "Solve" [ref=e335]
+                    - paragraph [ref=e336]:
+                      - generic [ref=e337]: Medium
+                      - generic [ref=e338]: 
+                      - generic [ref=e339]: 267K
+                      - generic [ref=e340]: 
+                      - generic [ref=e341]: 25.06%
+                - generic [ref=e343] [cursor=pointer]:
+                  - generic [ref=e346]: Quadratic Equation Roots
+                  - generic [ref=e347]:
+                    - button "Solve" [ref=e348]
+                    - paragraph [ref=e349]:
+                      - generic [ref=e350]: Basic
+                      - generic [ref=e351]: 
+                      - generic [ref=e352]: 261K
+                      - generic [ref=e353]: 
+                      - generic [ref=e354]: 12.78%
+                - generic [ref=e356] [cursor=pointer]:
+                  - generic [ref=e359]: Factorial
+                  - generic [ref=e360]:
+                    - button "Solve" [ref=e361]
+                    - paragraph [ref=e362]:
+                      - generic [ref=e363]: Basic
+                      - generic [ref=e364]: 
+                      - generic [ref=e365]: 254K
+                      - generic [ref=e366]: 
+                      - generic [ref=e367]: 40.58%
+                - generic [ref=e369] [cursor=pointer]:
+                  - generic [ref=e372]: Multiply two strings
+                  - generic [ref=e373]:
+                    - button "Solve" [ref=e374]
+                    - paragraph [ref=e375]:
+                      - generic [ref=e376]: Medium
+                      - generic [ref=e377]: 
+                      - generic [ref=e378]: 252K
+                      - generic [ref=e379]: 
+                      - generic [ref=e380]: 20.06%
+                - generic [ref=e382] [cursor=pointer]:
+                  - generic [ref=e385]: Perfect Numbers
+                  - generic [ref=e386]:
+                    - button "Solve" [ref=e387]
+                    - paragraph [ref=e388]:
+                      - generic [ref=e389]: Easy
+                      - generic [ref=e390]: 
+                      - generic [ref=e391]: 248K
+                      - generic [ref=e392]: 
+                      - generic [ref=e393]: 17.21%
+                - generic [ref=e395] [cursor=pointer]:
+                  - generic [ref=e398]: Armstrong Numbers
+                  - generic [ref=e399]:
+                    - button "Solve" [ref=e400]
+                    - paragraph [ref=e401]:
+                      - generic [ref=e402]: Easy
+                      - generic [ref=e403]: 
+                      - generic [ref=e404]: 233K
+                      - generic [ref=e405]: 
+                      - generic [ref=e406]: 49.88%
+                - generic [ref=e408] [cursor=pointer]:
+                  - generic [ref=e411]: Odd or Even
+                  - generic [ref=e412]:
+                    - button "Solve" [ref=e413]
+                    - paragraph [ref=e414]:
+                      - generic [ref=e415]: Basic
+                      - generic [ref=e416]: 
+                      - generic [ref=e417]: 232K
+                      - generic [ref=e418]: 
+                      - generic [ref=e419]: 60.6%
+                - generic [ref=e421] [cursor=pointer]:
+                  - generic [ref=e424]: LCM And GCD
+                  - generic [ref=e425]:
+                    - button "Solve" [ref=e426]
+                    - paragraph [ref=e427]:
+                      - generic [ref=e428]: Basic
+                      - generic [ref=e429]: 
+                      - generic [ref=e430]: 232K
+                      - generic [ref=e431]: 
+                      - generic [ref=e432]: 37.02%
+                - generic [ref=e434] [cursor=pointer]:
+                  - generic [ref=e437]: Sum 1 to n Divisors
+                  - generic [ref=e438]:
+                    - button "Solve" [ref=e439]
+                    - paragraph [ref=e440]:
+                      - generic [ref=e441]: Easy
+                      - generic [ref=e442]: 
+                      - generic [ref=e443]: 224K
+                      - generic [ref=e444]: 
+                      - generic [ref=e445]: 43.37%
+                - generic [ref=e447] [cursor=pointer]:
+                  - generic [ref=e450]: While Loop
+                  - generic [ref=e451]:
+                    - button "Solve" [ref=e452]
+                    - paragraph [ref=e453]:
+                      - generic [ref=e454]: Basic
+                      - generic [ref=e455]: 
+                      - generic [ref=e456]: 210K
+                      - generic [ref=e457]: 
+                      - generic [ref=e458]: 44.81%
+                - generic [ref=e460] [cursor=pointer]:
+                  - generic [ref=e463]: GCD of two numbers
+                  - generic [ref=e464]:
+                    - button "Solve" [ref=e465]
+                    - paragraph [ref=e466]:
+                      - generic [ref=e467]: Basic
+                      - generic [ref=e468]: 
+                      - generic [ref=e469]: 206K
+                      - generic [ref=e470]: 
+                      - generic [ref=e471]: 51.03%
+            - generic [ref=e80]:
+              - generic [ref=e473] [cursor=pointer]: Problem of the Day
+              - generic [ref=e84]:
+                - generic [ref=e86]:
+                  - generic [ref=e88]: Recently Online Experts
+                  - generic [ref=e89]:
+                    - link "shivamkumaqx5m Shivam kumar Jha Divinetalk, Flatmate" [ref=e90] [cursor=pointer]:
+                      - /url: /profile/shivamkumaqx5m/?from=explore
+                      - generic [ref=e91]:
+                        - img "shivamkumaqx5m" [ref=e94]
+                        - generic [ref=e95]:
+                          - heading "Shivam kumar Jha" [level=1] [ref=e96]:
+                            - text: Shivam kumar Jha
+                            - img [ref=e98]
+                          - paragraph [ref=e101]: Divinetalk, Flatmate
+                    - link "erkhushbossg9 Khushboo Garg Xebia, 3Pillar Global, Chetu Inc" [ref=e102] [cursor=pointer]:
+                      - /url: /profile/erkhushbossg9/?from=explore
+                      - generic [ref=e103]:
+                        - img "erkhushbossg9" [ref=e106]
+                        - generic [ref=e107]:
+                          - heading "Khushboo Garg" [level=1] [ref=e108]:
+                            - text: Khushboo Garg
+                            - img [ref=e110]
+                          - paragraph [ref=e113]: Xebia, 3Pillar Global, Chetu Inc
+                    - link "venkatadj Gambali Venkata Durga Rao Blaize Semiconductors Private Limited, Advanced Micro Devices, Teradata" [ref=e114] [cursor=pointer]:
+                      - /url: /profile/venkatadj/?from=explore
+                      - generic [ref=e115]:
+                        - img "venkatadj" [ref=e118]
+                        - generic [ref=e119]:
+                          - heading "Gambali Venkata Durga Rao" [level=1] [ref=e120]:
+                            - text: Gambali Venkata Durga Rao
+                            - img [ref=e122]
+                          - paragraph [ref=e125]: Blaize Semiconductors Private Limited, Advanced Micro Devices, Teradata
+                  - link "View All →" [ref=e127] [cursor=pointer]:
+                    - /url: /connect/explore
+                    - text: View All
+                    - generic [ref=e128]: →
+                - generic [ref=e130]:
+                  - generic [ref=e132]:
+                    - button "Fresher Jobs" [ref=e133] [cursor=pointer]
+                    - button "Experienced Jobs" [ref=e134] [cursor=pointer]
+                  - generic [ref=e135]:
+                    - link "C++ Developer | Intelizign C++ Developer Intelizign 0.5 - 5 Years • Onsite - Pune (Maharashtra) Apply by Thu May 14 2026" [ref=e136] [cursor=pointer]:
+                      - /url: /jobs/intelizign-cpp-developer
+                      - generic "C++ Developer" [ref=e137]:
+                        - img "C++ Developer | Intelizign" [ref=e140]
+                        - generic [ref=e141]:
+                          - heading "C++ Developer" [level=1] [ref=e142]
+                          - paragraph [ref=e143]: Intelizign
+                          - generic [ref=e144]:
+                            - paragraph [ref=e145]: 0.5 - 5 Years • Onsite - Pune (Maharashtra)
+                            - paragraph [ref=e146]: Apply by Thu May 14 2026
+                    - separator [ref=e147]
+                    - link "C# Developer | Intelizign C# Developer Intelizign 0.5 - 5 Years • Onsite - Pune (Maharashtra) Apply by Thu May 14 2026" [ref=e148] [cursor=pointer]:
+                      - /url: /jobs/intelizign-c-sharp-developer
+                      - generic "C# Developer" [ref=e149]:
+                        - img "C# Developer | Intelizign" [ref=e152]
+                        - generic [ref=e153]:
+                          - heading "C# Developer" [level=1] [ref=e154]
+                          - paragraph [ref=e155]: Intelizign
+                          - generic [ref=e156]:
+                            - paragraph [ref=e157]: 0.5 - 5 Years • Onsite - Pune (Maharashtra)
+                            - paragraph [ref=e158]: Apply by Thu May 14 2026
+                    - separator [ref=e159]
+                    - link "QA Engineer | Thrymr Software QA Engineer Thrymr Software Fresher • Onsite - Hyderabad (Telangana) Apply by Fri May 15 2026" [ref=e160] [cursor=pointer]:
+                      - /url: /jobs/thrymr-software-qa-engineer
+                      - generic "QA Engineer" [ref=e161]:
+                        - img "QA Engineer | Thrymr Software" [ref=e164]
+                        - generic [ref=e165]:
+                          - heading "QA Engineer" [level=1] [ref=e166]
+                          - paragraph [ref=e167]: Thrymr Software
+                          - generic [ref=e168]:
+                            - paragraph [ref=e169]: Fresher • Onsite - Hyderabad (Telangana)
+                            - paragraph [ref=e170]: Apply by Fri May 15 2026
+                  - link "View All →" [ref=e172] [cursor=pointer]:
+                    - /url: /jobs?tab_type=featured
+                    - text: View All
+                    - generic [ref=e173]: →
+          - text:                                               
+      - generic [ref=e174] [cursor=pointer]: 
+  - alert [ref=e175]

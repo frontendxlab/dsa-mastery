@@ -1,0 +1,227 @@
+- generic [active] [ref=e1]:
+  - img
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - text: 
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "DMOJ" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - img "DMOJ" [ref=e7]
+        - listitem [ref=e8]
+        - listitem [ref=e10]:
+          - link "Problems" [ref=e11] [cursor=pointer]:
+            - /url: /problems/
+        - listitem [ref=e12]:
+          - link "Submissions" [ref=e13] [cursor=pointer]:
+            - /url: /submissions/
+        - listitem [ref=e14]:
+          - link "Users" [ref=e15] [cursor=pointer]:
+            - /url: /users/
+        - listitem [ref=e16]:
+          - link "Contests" [ref=e17] [cursor=pointer]:
+            - /url: /contests/
+        - listitem [ref=e18]:
+          - link "About" [ref=e19] [cursor=pointer]:
+            - /url: /about/
+      - generic [ref=e21]:
+        - link "Log in" [ref=e22] [cursor=pointer]:
+          - /url: /accounts/login/?next=/problems/%3Fsearch%3Dsubarray
+        - text: or
+        - link "Sign up" [ref=e23] [cursor=pointer]:
+          - /url: /accounts/register/
+  - generic [ref=e25]:
+    - main [ref=e26]:
+      - generic [ref=e27]:
+        - heading "Problems" [level=2] [ref=e28]
+        - list
+      - generic [ref=e30]:
+        - generic [ref=e32]:
+          - generic [ref=e33]:
+            - heading "Problem search " [level=3] [ref=e34]:
+              - text: Problem search
+              - generic [ref=e35]: 
+            - generic [ref=e37]:
+              - textbox "Search problems..." [ref=e39]: subarray
+              - generic [ref=e40]:
+                - checkbox "Full text search" [ref=e41] [cursor=pointer]
+                - text: Full text search
+              - generic [ref=e42]:
+                - checkbox "Has editorial" [ref=e43] [cursor=pointer]
+                - text: Has editorial
+              - generic [ref=e44]:
+                - checkbox "Show problem types" [ref=e45] [cursor=pointer]
+                - text: Show problem types
+              - generic [ref=e46]:
+                - generic [ref=e47]: Category
+                - combobox [ref=e48]
+                - combobox "All" [ref=e51] [cursor=pointer]:
+                  - textbox "All" [ref=e52]
+              - generic [ref=e53]: Point range
+              - generic [ref=e55]:
+                - slider [ref=e56]:
+                  - generic [ref=e57]: "7"
+                - slider [ref=e59]:
+                  - generic [ref=e60]: "25"
+              - generic [ref=e61]:
+                - generic [ref=e62] [cursor=pointer]: Go
+                - generic [ref=e63] [cursor=pointer]: Random
+          - generic [ref=e64]:
+            - heading "Hot problems " [level=3] [ref=e65]:
+              - text: Hot problems
+              - generic [ref=e66]: 
+            - list [ref=e68]:
+              - listitem [ref=e69]:
+                - 'link "COCI ''23 Contest 4 #4 Putovanje" [ref=e70] [cursor=pointer]':
+                  - /url: /problem/coci23c4p4
+              - listitem [ref=e71]:
+                - 'link "COCI ''15 Contest 1 #5 Relativnost" [ref=e72] [cursor=pointer]':
+                  - /url: /problem/coci15c1p5
+              - listitem [ref=e73]:
+                - 'link "COCI ''23 Contest 1 #1 Sudoku" [ref=e74] [cursor=pointer]':
+                  - /url: /problem/coci23c1p1
+              - listitem [ref=e75]:
+                - link "IOI '19 P1 - Arranging Shoes" [ref=e76] [cursor=pointer]:
+                  - /url: /problem/ioi19p1
+              - listitem [ref=e77]:
+                - link "Yet Another Contest 3 P4 - Rumour" [ref=e78] [cursor=pointer]:
+                  - /url: /problem/yac3p4
+              - listitem [ref=e79]:
+                - link "CCO '15 P1 - Hungry Fox" [ref=e80] [cursor=pointer]:
+                  - /url: /problem/cco15p1
+              - listitem [ref=e81]:
+                - link "Max's Anger Contest Series 2 P2 - Password Anger" [ref=e82] [cursor=pointer]:
+                  - /url: /problem/macs2p2
+        - table [ref=e84]:
+          - rowgroup [ref=e85]:
+            - row "Problem Category Points AC %  Users" [ref=e86]:
+              - columnheader "Problem" [ref=e87]:
+                - link "Problem" [ref=e88] [cursor=pointer]:
+                  - /url: /problems/?search=subarray&order=name
+              - columnheader "Category" [ref=e89]:
+                - link "Category" [ref=e90] [cursor=pointer]:
+                  - /url: /problems/?search=subarray&order=group
+              - columnheader "Points" [ref=e91]:
+                - link "Points" [ref=e92] [cursor=pointer]:
+                  - /url: /problems/?search=subarray&order=-points
+              - columnheader "AC %" [ref=e93]:
+                - link "AC %" [ref=e94] [cursor=pointer]:
+                  - /url: /problems/?search=subarray&order=-ac_rate
+              - columnheader "" [ref=e95]:
+                - link "" [ref=e96] [cursor=pointer]:
+                  - /url: /problems/?search=subarray&order=editorial
+                  - generic [ref=e97]: 
+              - columnheader "Users" [ref=e98]:
+                - link "Users" [ref=e99] [cursor=pointer]:
+                  - /url: /problems/?search=subarray&order=-user_count
+          - rowgroup [ref=e100]:
+            - row "DMOPC '20 Contest 2 P5 - Majority Subarrays DMOPC 25p 7.4%  37" [ref=e101]:
+              - cell "DMOPC '20 Contest 2 P5 - Majority Subarrays" [ref=e102]:
+                - link "DMOPC '20 Contest 2 P5 - Majority Subarrays" [ref=e103] [cursor=pointer]:
+                  - /url: /problem/dmopc20c2p5
+              - cell "DMOPC" [ref=e104]
+              - cell "25p" [ref=e105]
+              - cell "7.4%" [ref=e106]
+              - cell "" [ref=e107]:
+                - link "" [ref=e108] [cursor=pointer]:
+                  - /url: /problem/dmopc20c2p5/editorial
+                  - generic [ref=e109]: 
+              - cell "37" [ref=e110]:
+                - link "37" [ref=e111] [cursor=pointer]:
+                  - /url: /problem/dmopc20c2p5/rank/
+            - row "Three Subarrays Olympiads School 20p 10.7%  10" [ref=e112]:
+              - cell "Three Subarrays" [ref=e113]:
+                - link "Three Subarrays" [ref=e114] [cursor=pointer]:
+                  - /url: /problem/oly22practice47
+              - cell "Olympiads School" [ref=e115]
+              - cell "20p" [ref=e116]
+              - cell "10.7%" [ref=e117]
+              - cell "" [ref=e118]:
+                - generic [ref=e119]: 
+              - cell "10" [ref=e120]:
+                - link "10" [ref=e121] [cursor=pointer]:
+                  - /url: /problem/oly22practice47/rank/
+            - row "Bob's Max Subarray Sum Olympiads School 25p 8.5%  5" [ref=e122]:
+              - cell "Bob's Max Subarray Sum" [ref=e123]:
+                - link "Bob's Max Subarray Sum" [ref=e124] [cursor=pointer]:
+                  - /url: /problem/oly25practice6
+              - cell "Olympiads School" [ref=e125]
+              - cell "25p" [ref=e126]
+              - cell "8.5%" [ref=e127]
+              - cell "" [ref=e128]:
+                - generic [ref=e129]: 
+              - cell "5" [ref=e130]:
+                - link "5" [ref=e131] [cursor=pointer]:
+                  - /url: /problem/oly25practice6/rank/
+            - row "SAC '22 Code Challenge 4 P4 - Obligatory Subarray Problem SAC Coding Challenge 10p 22.5%  101" [ref=e132]:
+              - cell "SAC '22 Code Challenge 4 P4 - Obligatory Subarray Problem" [ref=e133]:
+                - link "SAC '22 Code Challenge 4 P4 - Obligatory Subarray Problem" [ref=e134] [cursor=pointer]:
+                  - /url: /problem/sac22cc4p4
+              - cell "SAC Coding Challenge" [ref=e135]
+              - cell "10p" [ref=e136]
+              - cell "22.5%" [ref=e137]
+              - cell "" [ref=e138]:
+                - link "" [ref=e139] [cursor=pointer]:
+                  - /url: /problem/sac22cc4p4/editorial
+                  - generic [ref=e140]: 
+              - cell "101" [ref=e141]:
+                - link "101" [ref=e142] [cursor=pointer]:
+                  - /url: /problem/sac22cc4p4/rank/
+            - row "A Subarray Problem Uncategorized 7 39.7%  118" [ref=e143]:
+              - cell "A Subarray Problem" [ref=e144]:
+                - link "A Subarray Problem" [ref=e145] [cursor=pointer]:
+                  - /url: /problem/subarrayproblem
+              - cell "Uncategorized" [ref=e146]
+              - cell "7" [ref=e147]
+              - cell "39.7%" [ref=e148]
+              - cell "" [ref=e149]:
+                - generic [ref=e150]: 
+              - cell "118" [ref=e151]:
+                - link "118" [ref=e152] [cursor=pointer]:
+                  - /url: /problem/subarrayproblem/rank/
+            - row "Subarray Search Uncategorized 7 24.3%  35" [ref=e153]:
+              - cell "Subarray Search" [ref=e154]:
+                - link "Subarray Search" [ref=e155] [cursor=pointer]:
+                  - /url: /problem/subsearch
+              - cell "Uncategorized" [ref=e156]
+              - cell "7" [ref=e157]
+              - cell "24.3%" [ref=e158]
+              - cell "" [ref=e159]:
+                - generic [ref=e160]: 
+              - cell "35" [ref=e161]:
+                - link "35" [ref=e162] [cursor=pointer]:
+                  - /url: /problem/subsearch/rank/
+    - contentinfo [ref=e163]:
+      - generic [ref=e164]:
+        - link "fork us on Github" [ref=e165] [cursor=pointer]:
+          - /url: //github.com/DMOJ/
+        - text: "|"
+        - link "like us on Facebook" [ref=e166] [cursor=pointer]:
+          - /url: //www.facebook.com/dmoj.ca
+        - text: "|"
+        - link "help us translate" [ref=e167] [cursor=pointer]:
+          - /url: https://translate.dmoj.ca/
+        - text: "|"
+        - link "terms of service" [ref=e168] [cursor=pointer]:
+          - /url: https://dmoj.ca/tos/
+        - text: "|"
+        - combobox [ref=e170]:
+          - option "català (ca)"
+          - option "Deutsch (de)"
+          - option "Ελληνικά (el)"
+          - option "English (en)" [selected]
+          - option "español (es)"
+          - option "français (fr)"
+          - option "Hrvatski (hr)"
+          - option "Magyar (hu)"
+          - option "日本語 (ja)"
+          - option "Қазақ (kk)"
+          - option "한국어 (ko)"
+          - option "Português (pt)"
+          - option "Română (ro)"
+          - option "Русский (ru)"
+          - option "srpski (latinica) (sr-latn)"
+          - option "Türkçe (tr)"
+          - option "Tiếng Việt (vi)"
+          - option "简体中文 (zh-hans)"
+          - option "繁體中文 (zh-hant)"

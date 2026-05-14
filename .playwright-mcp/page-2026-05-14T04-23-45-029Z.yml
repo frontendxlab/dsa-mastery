@@ -1,0 +1,1182 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - link [ref=e5] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e6]:
+          - link "Practice" [ref=e7] [cursor=pointer]:
+            - /url: /practice/
+          - generic [ref=e8] [cursor=pointer]:
+            - text: Resources
+            - generic [ref=e9]: 
+          - text: New
+          - link "Contests" [ref=e10] [cursor=pointer]:
+            - /url: /contests/
+          - generic [ref=e11] [cursor=pointer]:
+            - text: Online IDE
+            - generic [ref=e12]: 
+          - generic [ref=e13] [cursor=pointer]:
+            - text: Free Mock
+            - generic [ref=e14]: 
+          - text:  
+          - link "Events New" [ref=e15] [cursor=pointer]:
+            - /url: /events/
+            - text: Events
+            - generic [ref=e16]: New
+          - link "Scaler" [ref=e17] [cursor=pointer]:
+            - /url: https://www.scaler.com/?utm_source=ib&utm_campaign=ib_menu&utm_medium=nav_menu
+        - generic [ref=e18]:
+          - textbox "Search Interviewbit.com" [ref=e19]:
+            - /placeholder: "Search Interviewbit.com "
+          - img "magnifying glass" [ref=e20] [cursor=pointer]
+      - generic:  
+    - generic:
+      - generic:
+        - link:
+          - /url: /
+      - text:    New  
+  - generic [ref=e21]:
+    - generic [ref=e22]:
+      - list [ref=e25]:
+        - listitem [ref=e26]:
+          - link "Courses" [ref=e27] [cursor=pointer]:
+            - /url: /courses/
+        - listitem [ref=e28]:
+          - text: /
+          - link "Programming" [ref=e29] [cursor=pointer]:
+            - /url: /courses/programming/
+        - listitem [ref=e30]: / Strings
+      - heading "Strings" [level=1] [ref=e31]
+      - generic [ref=e32]: "Last Updated: Nov 17, 2023"
+    - link "Go to Problems" [ref=e33] [cursor=pointer]:
+      - /url: "#problems"
+  - generic [ref=e34]:
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - text: Contents
+        - generic:
+          - generic [ref=e37] [cursor=pointer]: 
+          - generic [ref=e38] [cursor=pointer]: 
+      - generic [ref=e39]:
+        - heading "Level 1" [level=1] [ref=e40]
+        - generic [ref=e41]:
+          - button "Time Complexity " [ref=e43] [cursor=pointer]:
+            - heading "Time Complexity" [level=3] [ref=e44]
+            - generic [ref=e45]: 
+          - generic:
+            - generic:
+              - link "How to Calculate Running Time?" [ref=e47] [cursor=pointer]:
+                - /url: /courses/programming/time-complexity/how-to-calculate-running-time/
+                - heading "How to Calculate Running Time?" [level=3] [ref=e48]
+              - link "Asymptotic notations" [ref=e49] [cursor=pointer]:
+                - /url: /courses/programming/time-complexity/asymptotic-notations/
+                - heading "Asymptotic notations" [level=3] [ref=e50]
+              - link "How to Calculate Time Complexity?" [ref=e51] [cursor=pointer]:
+                - /url: /courses/programming/time-complexity/how-to-calculate-time-complexity/
+                - heading "How to Calculate Time Complexity?" [level=3] [ref=e52]
+              - link "Time Complexity Examples" [ref=e53] [cursor=pointer]:
+                - /url: /courses/programming/time-complexity/time-complexity-examples/
+                - heading "Time Complexity Examples" [level=3] [ref=e54]
+              - link "Relevance of time complexity" [ref=e55] [cursor=pointer]:
+                - /url: /courses/programming/time-complexity/relevance-of-time-complexity/
+                - heading "Relevance of time complexity" [level=3] [ref=e56]
+              - link "Space Complexity" [ref=e57] [cursor=pointer]:
+                - /url: /courses/programming/time-complexity/space-complexity/
+                - heading "Space Complexity" [level=3] [ref=e58]
+              - link "Go to problems" [ref=e59] [cursor=pointer]:
+                - /url: /courses/programming/time-complexity/#problems/
+                - generic [ref=e60]: Go to problems
+                - img [ref=e61]
+        - link " Jump to Level 2" [ref=e63] [cursor=pointer]:
+          - /url: /courses/1/checkpoint/1/
+          - generic [ref=e65]:
+            - generic [ref=e66]: 
+            - generic [ref=e67]: Jump to Level 2
+        - heading "Level 2" [level=1] [ref=e68]
+        - generic [ref=e69]:
+          - button "Arrays " [ref=e71] [cursor=pointer]:
+            - heading "Arrays" [level=3] [ref=e72]
+            - generic [ref=e73]: 
+          - generic:
+            - generic:
+              - link "Introduction to pointers in C/C++" [ref=e75] [cursor=pointer]:
+                - /url: /courses/programming/arrays/introduction-to-pointers-in-cc/
+                - heading "Introduction to pointers in C/C++" [level=3] [ref=e76]
+              - link "Arrays in programming - fundamentals" [ref=e77] [cursor=pointer]:
+                - /url: /courses/programming/arrays/arrays-in-programming-fundamentals/
+                - heading "Arrays in programming - fundamentals" [level=3] [ref=e78]
+              - link "Pointers and arrays" [ref=e79] [cursor=pointer]:
+                - /url: /courses/programming/arrays/pointers-and-arrays/
+                - heading "Pointers and arrays" [level=3] [ref=e80]
+              - link "Pointers and 2-D arrays" [ref=e81] [cursor=pointer]:
+                - /url: /courses/programming/arrays/pointers-and-2-d-arrays/
+                - heading "Pointers and 2-D arrays" [level=3] [ref=e82]
+              - link "Array Implementation Details" [ref=e83] [cursor=pointer]:
+                - /url: /courses/programming/arrays/array-implementation-details/
+                - heading "Array Implementation Details" [level=3] [ref=e84]
+              - link "Sorting Algorithms" [ref=e85] [cursor=pointer]:
+                - /url: /courses/programming/arrays/sorting-algorithms/
+                - heading "Sorting Algorithms" [level=3] [ref=e86]
+              - link "Insertion sort algorithm" [ref=e87] [cursor=pointer]:
+                - /url: /courses/programming/arrays/insertion-sort-algorithm/
+                - heading "Insertion sort algorithm" [level=3] [ref=e88]
+              - link "Merge sort algorithm" [ref=e89] [cursor=pointer]:
+                - /url: /courses/programming/arrays/merge-sort-algorithm/
+                - heading "Merge sort algorithm" [level=3] [ref=e90]
+              - link "QuickSort Algorithm" [ref=e91] [cursor=pointer]:
+                - /url: /courses/programming/arrays/quicksort-algorithm/
+                - heading "QuickSort Algorithm" [level=3] [ref=e92]
+              - link "Sort Implementation Details" [ref=e93] [cursor=pointer]:
+                - /url: /courses/programming/arrays/sort-implementation-details/
+                - heading "Sort Implementation Details" [level=3] [ref=e94]
+              - link "Selection Sort" [ref=e95] [cursor=pointer]:
+                - /url: /courses/programming/arrays/selection-sort/
+                - heading "Selection Sort" [level=3] [ref=e96]
+              - link "Bubble Sort" [ref=e97] [cursor=pointer]:
+                - /url: /courses/programming/arrays/bubble-sort/
+                - heading "Bubble Sort" [level=3] [ref=e98]
+              - link "Go to problems" [ref=e99] [cursor=pointer]:
+                - /url: /courses/programming/arrays/#problems/
+                - generic [ref=e100]: Go to problems
+                - img [ref=e101]
+        - generic [ref=e103]:
+          - button "Math " [ref=e105] [cursor=pointer]:
+            - heading "Math" [level=3] [ref=e106]
+            - generic [ref=e107]: 
+          - generic:
+            - generic:
+              - link "Math Introduction" [ref=e109] [cursor=pointer]:
+                - /url: /courses/programming/math/math-introduction/
+                - heading "Math Introduction" [level=3] [ref=e110]
+              - link "Factorization" [ref=e111] [cursor=pointer]:
+                - /url: /courses/programming/math/factorization/
+                - heading "Factorization" [level=3] [ref=e112]
+              - link "Base number system" [ref=e113] [cursor=pointer]:
+                - /url: /courses/programming/math/base-number-system/
+                - heading "Base number system" [level=3] [ref=e114]
+              - link "Unary number system" [ref=e115] [cursor=pointer]:
+                - /url: /courses/programming/math/unary-number-system/
+                - heading "Unary number system" [level=3] [ref=e116]
+              - link "Binary number system" [ref=e117] [cursor=pointer]:
+                - /url: /courses/programming/math/binary-number-system/
+                - heading "Binary number system" [level=3] [ref=e118]
+              - link "Base conversions for base N" [ref=e119] [cursor=pointer]:
+                - /url: /courses/programming/math/base-conversions-for-base-n/
+                - heading "Base conversions for base N" [level=3] [ref=e120]
+              - link "Go to problems" [ref=e121] [cursor=pointer]:
+                - /url: /courses/programming/math/#problems/
+                - generic [ref=e122]: Go to problems
+                - img [ref=e123]
+        - link " Jump to Level 3" [ref=e125] [cursor=pointer]:
+          - /url: /courses/1/checkpoint/2/
+          - generic [ref=e127]:
+            - generic [ref=e128]: 
+            - generic [ref=e129]: Jump to Level 3
+        - heading "Level 3" [level=1] [ref=e130]
+        - generic [ref=e131]:
+          - button "Binary Search " [ref=e133] [cursor=pointer]:
+            - heading "Binary Search" [level=3] [ref=e134]
+            - generic [ref=e135]: 
+          - generic:
+            - generic:
+              - link "Binary Search Implementations and common errors" [ref=e137] [cursor=pointer]:
+                - /url: /courses/programming/binary-search/binary-search-implementations-and-common-errors/
+                - heading "Binary Search Implementations and common errors" [level=3] [ref=e138]
+              - link "Binary Search Algorithm" [ref=e139] [cursor=pointer]:
+                - /url: /courses/programming/binary-search/binary-search-algorithm/
+                - heading "Binary Search Algorithm" [level=3] [ref=e140]
+              - link "Applications of Binary Search" [ref=e141] [cursor=pointer]:
+                - /url: /courses/programming/binary-search/applications-of-binary-search/
+                - heading "Applications of Binary Search" [level=3] [ref=e142]
+              - link "Beyond Sorted Array Binary Search" [ref=e143] [cursor=pointer]:
+                - /url: /courses/programming/binary-search/beyond-sorted-array-binary-search/
+                - heading "Beyond Sorted Array Binary Search" [level=3] [ref=e144]
+              - link "Advantages and Disadvantages of Binary Search" [ref=e145] [cursor=pointer]:
+                - /url: /courses/programming/binary-search/advantages-and-disadvantages-of-binary-search/
+                - heading "Advantages and Disadvantages of Binary Search" [level=3] [ref=e146]
+              - link "Go to problems" [ref=e147] [cursor=pointer]:
+                - /url: /courses/programming/binary-search/#problems/
+                - generic [ref=e148]: Go to problems
+                - img [ref=e149]
+        - generic [ref=e151]:
+          - button "Strings " [ref=e153] [cursor=pointer]:
+            - heading "Strings" [level=3] [ref=e154]
+            - generic [ref=e155]: 
+          - generic [ref=e159]:
+            - link "For C / C++ users," [ref=e160] [cursor=pointer]:
+              - /url: /courses/programming/strings/for-c-c-users/
+              - heading "For C / C++ users," [level=3] [ref=e161]
+            - link "For C / C++ users ( contd )," [ref=e162] [cursor=pointer]:
+              - /url: /courses/programming/strings/for-c-c-users-contd/
+              - heading "For C / C++ users ( contd )," [level=3] [ref=e163]
+            - link "String Implementation Details" [ref=e164] [cursor=pointer]:
+              - /url: /courses/programming/strings/string-implementation-details/
+              - heading "String Implementation Details" [level=3] [ref=e165]
+            - link "Go to problems" [ref=e166] [cursor=pointer]:
+              - /url: "#problems"
+              - generic [ref=e167]: Go to problems
+              - img [ref=e168]
+        - generic [ref=e170]:
+          - button "Bit Manipulation " [ref=e172] [cursor=pointer]:
+            - heading "Bit Manipulation" [level=3] [ref=e173]
+            - generic [ref=e174]: 
+          - generic:
+            - generic:
+              - link "What is Binary Number System?" [ref=e176] [cursor=pointer]:
+                - /url: /courses/programming/bit-manipulation/what-is-binary-number-system/
+                - heading "What is Binary Number System?" [level=3] [ref=e177]
+              - link "Understanding Data Types" [ref=e178] [cursor=pointer]:
+                - /url: /courses/programming/bit-manipulation/understanding-data-types/
+                - heading "Understanding Data Types" [level=3] [ref=e179]
+              - link "Bitwise Operators" [ref=e180] [cursor=pointer]:
+                - /url: /courses/programming/bit-manipulation/bitwise-operators/
+                - heading "Bitwise Operators" [level=3] [ref=e181]
+              - link "Bitwise Operators Examples" [ref=e182] [cursor=pointer]:
+                - /url: /courses/programming/bit-manipulation/bitwise-operators-examples/
+                - heading "Bitwise Operators Examples" [level=3] [ref=e183]
+              - link "Bitwise and Logical Operators" [ref=e184] [cursor=pointer]:
+                - /url: /courses/programming/bit-manipulation/bitwise-and-logical-operators/
+                - heading "Bitwise and Logical Operators" [level=3] [ref=e185]
+              - link "Go to problems" [ref=e186] [cursor=pointer]:
+                - /url: /courses/programming/bit-manipulation/#problems/
+                - generic [ref=e187]: Go to problems
+                - img [ref=e188]
+        - generic [ref=e190]:
+          - button "Two Pointers " [ref=e192] [cursor=pointer]:
+            - heading "Two Pointers" [level=3] [ref=e193]
+            - generic [ref=e194]: 
+          - generic:
+            - generic:
+              - link "TWO POINTERS" [ref=e196] [cursor=pointer]:
+                - /url: /courses/programming/two-pointers/two-pointers/
+                - heading "TWO POINTERS" [level=3] [ref=e197]
+              - link "Go to problems" [ref=e198] [cursor=pointer]:
+                - /url: /courses/programming/two-pointers/#problems/
+                - generic [ref=e199]: Go to problems
+                - img [ref=e200]
+        - link " Jump to Level 4" [ref=e202] [cursor=pointer]:
+          - /url: /courses/1/checkpoint/3/
+          - generic [ref=e204]:
+            - generic [ref=e205]: 
+            - generic [ref=e206]: Jump to Level 4
+        - heading "Level 4" [level=1] [ref=e207]
+        - generic [ref=e208]:
+          - button "Linked Lists " [ref=e210] [cursor=pointer]:
+            - heading "Linked Lists" [level=3] [ref=e211]
+            - generic [ref=e212]: 
+          - generic:
+            - generic:
+              - link "Introduction to linked list" [ref=e214] [cursor=pointer]:
+                - /url: /courses/programming/linked-lists/introduction-to-linked-list/
+                - heading "Introduction to linked list" [level=3] [ref=e215]
+              - link "Arrays vs Linked Lists" [ref=e216] [cursor=pointer]:
+                - /url: /courses/programming/linked-lists/arrays-vs-linked-lists/
+                - heading "Arrays vs Linked Lists" [level=3] [ref=e217]
+              - link "Linked List Implementation" [ref=e218] [cursor=pointer]:
+                - /url: /courses/programming/linked-lists/linked-list-implementation/
+                - heading "Linked List Implementation" [level=3] [ref=e219]
+              - link "Doubly linked list" [ref=e220] [cursor=pointer]:
+                - /url: /courses/programming/linked-lists/doubly-linked-list/
+                - heading "Doubly linked list" [level=3] [ref=e221]
+              - link "Doubly Linked List Implementation" [ref=e222] [cursor=pointer]:
+                - /url: /courses/programming/linked-lists/doubly-linked-list-implementation/
+                - heading "Doubly Linked List Implementation" [level=3] [ref=e223]
+              - link "Go to problems" [ref=e224] [cursor=pointer]:
+                - /url: /courses/programming/linked-lists/#problems/
+                - generic [ref=e225]: Go to problems
+                - img [ref=e226]
+        - generic [ref=e228]:
+          - button "Stacks And Queues " [ref=e230] [cursor=pointer]:
+            - heading "Stacks And Queues" [level=3] [ref=e231]
+            - generic [ref=e232]: 
+          - generic:
+            - generic:
+              - link "Introduction to Stack" [ref=e234] [cursor=pointer]:
+                - /url: /courses/programming/stacks-and-queues/introduction-to-stack/
+                - heading "Introduction to Stack" [level=3] [ref=e235]
+              - link "Array implementation of Stack" [ref=e236] [cursor=pointer]:
+                - /url: /courses/programming/stacks-and-queues/array-implementation-of-stack/
+                - heading "Array implementation of Stack" [level=3] [ref=e237]
+              - link "Linked List implementation of stack" [ref=e238] [cursor=pointer]:
+                - /url: /courses/programming/stacks-and-queues/linked-list-implementation-of-stack/
+                - heading "Linked List implementation of stack" [level=3] [ref=e239]
+              - link "Stack Implementation Details" [ref=e240] [cursor=pointer]:
+                - /url: /courses/programming/stacks-and-queues/stack-implementation-details/
+                - heading "Stack Implementation Details" [level=3] [ref=e241]
+              - link "Introduction to Queues" [ref=e242] [cursor=pointer]:
+                - /url: /courses/programming/stacks-and-queues/introduction-to-queues/
+                - heading "Introduction to Queues" [level=3] [ref=e243]
+              - link "Array implementation of Queues" [ref=e244] [cursor=pointer]:
+                - /url: /courses/programming/stacks-and-queues/array-implementation-of-queues/
+                - heading "Array implementation of Queues" [level=3] [ref=e245]
+              - link "Linked List implementation of Queue" [ref=e246] [cursor=pointer]:
+                - /url: /courses/programming/stacks-and-queues/linked-list-implementation-of-queue/
+                - heading "Linked List implementation of Queue" [level=3] [ref=e247]
+              - link "Queue Implementation Details" [ref=e248] [cursor=pointer]:
+                - /url: /courses/programming/stacks-and-queues/queue-implementation-details/
+                - heading "Queue Implementation Details" [level=3] [ref=e249]
+              - link "Go to problems" [ref=e250] [cursor=pointer]:
+                - /url: /courses/programming/stacks-and-queues/#problems/
+                - generic [ref=e251]: Go to problems
+                - img [ref=e252]
+        - link " Jump to Level 5" [ref=e254] [cursor=pointer]:
+          - /url: /courses/1/checkpoint/4/
+          - generic [ref=e256]:
+            - generic [ref=e257]: 
+            - generic [ref=e258]: Jump to Level 5
+        - heading "Level 5" [level=1] [ref=e259]
+        - generic [ref=e260]:
+          - button "Backtracking " [ref=e262] [cursor=pointer]:
+            - heading "Backtracking" [level=3] [ref=e263]
+            - generic [ref=e264]: 
+          - generic:
+            - generic:
+              - link "Recursion basics - using factorial" [ref=e266] [cursor=pointer]:
+                - /url: /courses/programming/backtracking/recursion-basics-using-factorial/
+                - heading "Recursion basics - using factorial" [level=3] [ref=e267]
+              - link "Complexity analysis of recursive programs" [ref=e268] [cursor=pointer]:
+                - /url: /courses/programming/backtracking/complexity-analysis-of-recursive-programs/
+                - heading "Complexity analysis of recursive programs" [level=3] [ref=e269]
+              - link "Why recursion is not always good" [ref=e270] [cursor=pointer]:
+                - /url: /courses/programming/backtracking/why-recursion-is-not-always-good/
+                - heading "Why recursion is not always good" [level=3] [ref=e271]
+              - link "Time Complexity analysis of recursion" [ref=e272] [cursor=pointer]:
+                - /url: /courses/programming/backtracking/time-complexity-analysis-of-recursion/
+                - heading "Time Complexity analysis of recursion" [level=3] [ref=e273]
+              - link "Space complexity analysis of recursion" [ref=e274] [cursor=pointer]:
+                - /url: /courses/programming/backtracking/space-complexity-analysis-of-recursion/
+                - heading "Space complexity analysis of recursion" [level=3] [ref=e275]
+              - link "Maze Traversal Algorithm Using Backtracking" [ref=e276] [cursor=pointer]:
+                - /url: /courses/programming/backtracking/maze-traversal-algorithm-using-backtracking/
+                - heading "Maze Traversal Algorithm Using Backtracking" [level=3] [ref=e277]
+              - link "Graph Coloring Algorithm using Backtracking" [ref=e278] [cursor=pointer]:
+                - /url: /courses/programming/backtracking/graph-coloring-algorithm-using-backtracking/
+                - heading "Graph Coloring Algorithm using Backtracking" [level=3] [ref=e279]
+              - link "Go to problems" [ref=e280] [cursor=pointer]:
+                - /url: /courses/programming/backtracking/#problems/
+                - generic [ref=e281]: Go to problems
+                - img [ref=e282]
+        - generic [ref=e284]:
+          - button "Hashing " [ref=e286] [cursor=pointer]:
+            - heading "Hashing" [level=3] [ref=e287]
+            - generic [ref=e288]: 
+          - generic:
+            - generic:
+              - link "Introduction to hashing" [ref=e290] [cursor=pointer]:
+                - /url: /courses/programming/hashing/introduction-to-hashing/
+                - heading "Introduction to hashing" [level=3] [ref=e291]
+              - link "Key terms in Hashing" [ref=e292] [cursor=pointer]:
+                - /url: /courses/programming/hashing/key-terms-in-hashing/
+                - heading "Key terms in Hashing" [level=3] [ref=e293]
+              - link "Hashing Techniques" [ref=e294] [cursor=pointer]:
+                - /url: /courses/programming/hashing/hashing-techniques/
+                - heading "Hashing Techniques" [level=3] [ref=e295]
+              - link "Hashing Implementation Details" [ref=e296] [cursor=pointer]:
+                - /url: /courses/programming/hashing/hashing-implementation-details/
+                - heading "Hashing Implementation Details" [level=3] [ref=e297]
+              - link "Hashing Summary" [ref=e298] [cursor=pointer]:
+                - /url: /courses/programming/hashing/hashing-summary/
+                - heading "Hashing Summary" [level=3] [ref=e299]
+              - link "Go to problems" [ref=e300] [cursor=pointer]:
+                - /url: /courses/programming/hashing/#problems/
+                - generic [ref=e301]: Go to problems
+                - img [ref=e302]
+        - link " Jump to Level 6" [ref=e304] [cursor=pointer]:
+          - /url: /courses/1/checkpoint/5/
+          - generic [ref=e306]:
+            - generic [ref=e307]: 
+            - generic [ref=e308]: Jump to Level 6
+        - heading "Level 6" [level=1] [ref=e309]
+        - generic [ref=e310]:
+          - button "Heaps And Maps " [ref=e312] [cursor=pointer]:
+            - heading "Heaps And Maps" [level=3] [ref=e313]
+            - generic [ref=e314]: 
+          - generic:
+            - generic:
+              - link "Why treemaps / heaps" [ref=e316] [cursor=pointer]:
+                - /url: /courses/programming/heaps-and-maps/why-treemaps-heaps/
+                - heading "Why treemaps / heaps" [level=3] [ref=e317]
+              - link "Heap and Map Implementation Details" [ref=e318] [cursor=pointer]:
+                - /url: /courses/programming/heaps-and-maps/heap-and-map-implementation-details/
+                - heading "Heap and Map Implementation Details" [level=3] [ref=e319]
+              - link "Heap Sort Algorithm" [ref=e320] [cursor=pointer]:
+                - /url: /courses/programming/heaps-and-maps/heap-sort-algorithm/
+                - heading "Heap Sort Algorithm" [level=3] [ref=e321]
+              - link "Go to problems" [ref=e322] [cursor=pointer]:
+                - /url: /courses/programming/heaps-and-maps/#problems/
+                - generic [ref=e323]: Go to problems
+                - img [ref=e324]
+        - generic [ref=e326]:
+          - button "Tree Data Structure " [ref=e328] [cursor=pointer]:
+            - heading "Tree Data Structure" [level=3] [ref=e329]
+            - generic [ref=e330]: 
+          - generic:
+            - generic:
+              - link "Introduction to Tree Data Structure" [ref=e332] [cursor=pointer]:
+                - /url: /courses/programming/tree-data-structure/introduction-to-tree-data-structure/
+                - heading "Introduction to Tree Data Structure" [level=3] [ref=e333]
+              - link "Binary Tree" [ref=e334] [cursor=pointer]:
+                - /url: /courses/programming/tree-data-structure/binary-tree/
+                - heading "Binary Tree" [level=3] [ref=e335]
+              - link "Binary Search Tree" [ref=e336] [cursor=pointer]:
+                - /url: /courses/programming/tree-data-structure/binary-search-tree/
+                - heading "Binary Search Tree" [level=3] [ref=e337]
+              - link "Implementation of BSTs" [ref=e338] [cursor=pointer]:
+                - /url: /courses/programming/tree-data-structure/implementation-of-bsts/
+                - heading "Implementation of BSTs" [level=3] [ref=e339]
+              - link "Go to problems" [ref=e340] [cursor=pointer]:
+                - /url: /courses/programming/tree-data-structure/#problems/
+                - generic [ref=e341]: Go to problems
+                - img [ref=e342]
+        - link " Jump to Level 7" [ref=e344] [cursor=pointer]:
+          - /url: /courses/1/checkpoint/6/
+          - generic [ref=e346]:
+            - generic [ref=e347]: 
+            - generic [ref=e348]: Jump to Level 7
+        - heading "Level 7" [level=1] [ref=e349]
+        - generic [ref=e350]:
+          - button "Dynamic Programming " [ref=e352] [cursor=pointer]:
+            - heading "Dynamic Programming" [level=3] [ref=e353]
+            - generic [ref=e354]: 
+          - generic:
+            - generic:
+              - link "Dynamic Programming Concept" [ref=e356] [cursor=pointer]:
+                - /url: /courses/programming/dynamic-programming/dynamic-programming-concept/
+                - heading "Dynamic Programming Concept" [level=3] [ref=e357]
+              - link "Dynamic Programming Examples" [ref=e358] [cursor=pointer]:
+                - /url: /courses/programming/dynamic-programming/dynamic-programming-examples/
+                - heading "Dynamic Programming Examples" [level=3] [ref=e359]
+              - link "Characteristics of Dynamic Programming" [ref=e360] [cursor=pointer]:
+                - /url: /courses/programming/dynamic-programming/characteristics-of-dynamic-programming/
+                - heading "Characteristics of Dynamic Programming" [level=3] [ref=e361]
+              - link "Dynamic Programming Methods" [ref=e362] [cursor=pointer]:
+                - /url: /courses/programming/dynamic-programming/dynamic-programming-methods/
+                - heading "Dynamic Programming Methods" [level=3] [ref=e363]
+              - link "Applications" [ref=e364] [cursor=pointer]:
+                - /url: /courses/programming/dynamic-programming/applications/
+                - heading "Applications" [level=3] [ref=e365]
+              - link "FAQs" [ref=e366] [cursor=pointer]:
+                - /url: /courses/programming/dynamic-programming/faqs/
+                - heading "FAQs" [level=3] [ref=e367]
+              - link "Dynamic Programming Interview Questions" [ref=e368] [cursor=pointer]:
+                - /url: /courses/programming/dynamic-programming/dynamic-programming-interview-questions/
+                - heading "Dynamic Programming Interview Questions" [level=3] [ref=e369]
+              - link "Go to problems" [ref=e370] [cursor=pointer]:
+                - /url: /courses/programming/dynamic-programming/#problems/
+                - generic [ref=e371]: Go to problems
+                - img [ref=e372]
+        - generic [ref=e374]:
+          - button "Greedy Algorithm " [ref=e376] [cursor=pointer]:
+            - heading "Greedy Algorithm" [level=3] [ref=e377]
+            - generic [ref=e378]: 
+          - generic:
+            - generic:
+              - link "Greedy Algorithm Examples" [ref=e380] [cursor=pointer]:
+                - /url: /courses/programming/greedy-algorithm/greedy-algorithm-examples/
+                - heading "Greedy Algorithm Examples" [level=3] [ref=e381]
+              - link "Greedy algorithms - When to use" [ref=e382] [cursor=pointer]:
+                - /url: /courses/programming/greedy-algorithm/greedy-algorithms-when-to-use/
+                - heading "Greedy algorithms - When to use" [level=3] [ref=e383]
+              - link "Activity Selection problem" [ref=e384] [cursor=pointer]:
+                - /url: /courses/programming/greedy-algorithm/activity-selection-problem/
+                - heading "Activity Selection problem" [level=3] [ref=e385]
+              - link "What is Greedy Algorithm?" [ref=e386] [cursor=pointer]:
+                - /url: /courses/programming/greedy-algorithm/what-is-greedy-algorithm/
+                - heading "What is Greedy Algorithm?" [level=3] [ref=e387]
+              - link "How to Create Greedy Algorithms?" [ref=e388] [cursor=pointer]:
+                - /url: /courses/programming/greedy-algorithm/how-to-create-greedy-algorithms/
+                - heading "How to Create Greedy Algorithms?" [level=3] [ref=e389]
+              - link "Go to problems" [ref=e390] [cursor=pointer]:
+                - /url: /courses/programming/greedy-algorithm/#problems/
+                - generic [ref=e391]: Go to problems
+                - img [ref=e392]
+        - link " Jump to Level 8" [ref=e394] [cursor=pointer]:
+          - /url: /courses/1/checkpoint/7/
+          - generic [ref=e396]:
+            - generic [ref=e397]: 
+            - generic [ref=e398]: Jump to Level 8
+        - heading "Level 8" [level=1] [ref=e399]
+        - generic [ref=e400]:
+          - button "Graph Data Structure & Algorithms " [ref=e402] [cursor=pointer]:
+            - heading "Graph Data Structure & Algorithms" [level=3] [ref=e403]
+            - generic [ref=e404]: 
+          - generic:
+            - generic:
+              - link "Introduction to graphs" [ref=e406] [cursor=pointer]:
+                - /url: /courses/programming/graph-data-structure-algorithms/introduction-to-graphs/
+                - heading "Introduction to graphs" [level=3] [ref=e407]
+              - link "Properties of graph" [ref=e408] [cursor=pointer]:
+                - /url: /courses/programming/graph-data-structure-algorithms/properties-of-graph/
+                - heading "Properties of graph" [level=3] [ref=e409]
+              - link "Graph Traversals ( DFS and BFS )" [ref=e410] [cursor=pointer]:
+                - /url: /courses/programming/graph-data-structure-algorithms/graph-traversals-dfs-and-bfs/
+                - heading "Graph Traversals ( DFS and BFS )" [level=3] [ref=e411]
+              - link "Example implementation of BFS and DFS" [ref=e412] [cursor=pointer]:
+                - /url: /courses/programming/graph-data-structure-algorithms/example-implementation-of-bfs-and-dfs/
+                - heading "Example implementation of BFS and DFS" [level=3] [ref=e413]
+              - link "Breadth First Search" [ref=e414] [cursor=pointer]:
+                - /url: /courses/programming/graph-data-structure-algorithms/breadth-first-search/
+                - heading "Breadth First Search" [level=3] [ref=e415]
+              - link "Depth-first Search" [ref=e416] [cursor=pointer]:
+                - /url: /courses/programming/graph-data-structure-algorithms/depth-first-search/
+                - heading "Depth-first Search" [level=3] [ref=e417]
+              - link "Dijkstra algorithm" [ref=e418] [cursor=pointer]:
+                - /url: /courses/programming/graph-data-structure-algorithms/dijkstra-algorithm/
+                - heading "Dijkstra algorithm" [level=3] [ref=e419]
+              - link "Go to problems" [ref=e420] [cursor=pointer]:
+                - /url: /courses/programming/graph-data-structure-algorithms/#problems/
+                - generic [ref=e421]: Go to problems
+                - img [ref=e422]
+        - link " Be a Code Ninja!" [ref=e424] [cursor=pointer]:
+          - /url: /courses/programming/ninja-test/
+          - generic [ref=e426]:
+            - generic [ref=e427]: 
+            - generic [ref=e428]: Be a Code Ninja!
+    - text:  
+    - generic [ref=e429]:
+      - generic:
+        - generic:
+          - generic [ref=e432]:
+            - generic [ref=e433]:
+              - generic [ref=e434]:
+                - generic [ref=e435]:
+                  - generic:
+                    - generic: 0/10
+                - generic [ref=e438]: string Simulation
+                - img [ref=e440]
+              - generic [ref=e441]:
+                - link "Palindrome String 30:40 Mins 150 Pts" [ref=e442] [cursor=pointer]:
+                  - /url: /problems/palindrome-string/
+                  - generic [ref=e445]: Palindrome String
+                  - generic [ref=e446]: 30:40 Mins
+                  - generic [ref=e447]: 150 Pts
+                - link "Vowel and Consonant Substrings! 42:26 Mins 200 Pts" [ref=e448] [cursor=pointer]:
+                  - /url: /problems/vowel-and-consonant-substrings/
+                  - generic [ref=e451]: Vowel and Consonant Substrings!
+                  - generic [ref=e452]: 42:26 Mins
+                  - generic [ref=e453]: 200 Pts
+                - link "Remove Consecutive Characters 42:39 Mins 200 Pts" [ref=e454] [cursor=pointer]:
+                  - /url: /problems/remove-consecutive-characters/
+                  - generic [ref=e457]: Remove Consecutive Characters
+                  - generic [ref=e458]: 42:39 Mins
+                  - generic [ref=e459]: 200 Pts
+                - link "Serialize 15:42 Mins 200 Pts" [ref=e460] [cursor=pointer]:
+                  - /url: /problems/serialize/
+                  - generic [ref=e463]: Serialize
+                  - generic [ref=e466]: 15:42 Mins
+                  - generic [ref=e467]: 200 Pts
+                - link "Deserialize 23:59 Mins 200 Pts" [ref=e468] [cursor=pointer]:
+                  - /url: /problems/deserialize/
+                  - generic [ref=e471]: Deserialize
+                  - generic [ref=e474]: 23:59 Mins
+                  - generic [ref=e475]: 200 Pts
+                - link "String And Its Frequency 22:58 Mins 200 Pts" [ref=e476] [cursor=pointer]:
+                  - /url: /problems/string-and-its-frequency/
+                  - generic [ref=e479]: String And Its Frequency
+                  - generic [ref=e480]: 22:58 Mins
+                  - generic [ref=e481]: 200 Pts
+                - link "Bulls and Cows 39:30 Mins 200 Pts" [ref=e482] [cursor=pointer]:
+                  - /url: /problems/bulls-and-cows/
+                  - generic [ref=e485]: Bulls and Cows
+                  - generic [ref=e488]: 39:30 Mins
+                  - generic [ref=e489]: 200 Pts
+                - link "Self Permutation 14:39 Mins 200 Pts" [ref=e490] [cursor=pointer]:
+                  - /url: /problems/self-permutation/
+                  - generic [ref=e493]: Self Permutation
+                  - generic [ref=e494]: 14:39 Mins
+                  - generic [ref=e495]: 200 Pts
+                - link "Longest Common Prefix 27:45 Mins 225 Pts" [ref=e496] [cursor=pointer]:
+                  - /url: /problems/longest-common-prefix/
+                  - generic [ref=e499]: Longest Common Prefix
+                  - generic [ref=e502]: 27:45 Mins
+                  - generic [ref=e503]: 225 Pts
+                - link "Count And Say +1 43:00 Mins 250 Pts" [ref=e504] [cursor=pointer]:
+                  - /url: /problems/count-and-say/
+                  - generic [ref=e507]: Count And Say
+                  - generic [ref=e511]: "+1"
+                  - generic [ref=e512]: 43:00 Mins
+                  - generic [ref=e513]: 250 Pts
+            - generic [ref=e514]:
+              - generic [ref=e515]:
+                - generic [ref=e516]:
+                  - generic:
+                    - generic: 0/3
+                - generic [ref=e519]: String Search
+                - img [ref=e521]
+              - generic [ref=e522]:
+                - link "Amazing Subarrays 26:39 Mins 150 Pts" [ref=e523] [cursor=pointer]:
+                  - /url: /problems/amazing-subarrays/
+                  - generic [ref=e526]: Amazing Subarrays
+                  - generic [ref=e527]: 26:39 Mins
+                  - generic [ref=e528]: 150 Pts
+                - link "Implement StrStr +3 33:14 Mins 225 Pts" [ref=e529] [cursor=pointer]:
+                  - /url: /problems/implement-strstr/
+                  - generic [ref=e532]: Implement StrStr
+                  - generic [ref=e536]: "+3"
+                  - generic [ref=e537]: 33:14 Mins
+                  - generic [ref=e538]: 225 Pts
+                - link "Stringoholics 67:59 Mins 300 Pts" [ref=e539] [cursor=pointer]:
+                  - /url: /problems/stringoholics/
+                  - generic [ref=e542]: Stringoholics
+                  - generic [ref=e543]: 67:59 Mins
+                  - generic [ref=e544]: 300 Pts
+            - generic [ref=e545]:
+              - generic [ref=e546]:
+                - generic [ref=e547]:
+                  - generic:
+                    - generic: 0/5
+                - generic [ref=e550]: string Tricks
+                - img [ref=e552]
+              - generic [ref=e553]:
+                - link "Minimum Characters required to make a String Palindromic 64:41 Mins 200 Pts" [ref=e554] [cursor=pointer]:
+                  - /url: /problems/minimum-characters-required-to-make-a-string-palindromic/
+                  - generic [ref=e557]: Minimum Characters required to make a String Palindromic
+                  - generic [ref=e561]: 64:41 Mins
+                  - generic [ref=e562]: 200 Pts
+                - link "Convert to Palindrome 40:51 Mins 200 Pts" [ref=e563] [cursor=pointer]:
+                  - /url: /problems/convert-to-palindrome/
+                  - generic [ref=e566]: Convert to Palindrome
+                  - generic [ref=e569]: 40:51 Mins
+                  - generic [ref=e570]: 200 Pts
+                - link "Minimum Appends for Palindrome! 46:42 Mins 200 Pts" [ref=e571] [cursor=pointer]:
+                  - /url: /problems/minimum-appends-for-palindrome/
+                  - generic [ref=e574]: Minimum Appends for Palindrome!
+                  - generic [ref=e577]: 46:42 Mins
+                  - generic [ref=e578]: 200 Pts
+                - link "Minimum Parantheses! 25:53 Mins 200 Pts" [ref=e579] [cursor=pointer]:
+                  - /url: /problems/minimum-parantheses/
+                  - generic [ref=e582]: Minimum Parantheses!
+                  - generic [ref=e585]: 25:53 Mins
+                  - generic [ref=e586]: 200 Pts
+                - link "Longest Palindromic Substring +1 59:51 Mins 500 Pts" [ref=e587] [cursor=pointer]:
+                  - /url: /problems/longest-palindromic-substring/
+                  - generic [ref=e590]: Longest Palindromic Substring
+                  - generic [ref=e594]: "+1"
+                  - generic [ref=e595]: 59:51 Mins
+                  - generic [ref=e596]: 500 Pts
+            - generic [ref=e597]:
+              - generic [ref=e598]:
+                - generic [ref=e599]:
+                  - generic:
+                    - generic: 0/6
+                - generic [ref=e602]: String math
+                - img [ref=e604]
+              - generic [ref=e605]:
+                - link "Salutes 24:14 Mins 200 Pts" [ref=e606] [cursor=pointer]:
+                  - /url: /problems/salutes/
+                  - generic [ref=e609]: Salutes
+                  - generic [ref=e610]: 24:14 Mins
+                  - generic [ref=e611]: 200 Pts
+                - link "Integer To Roman +2 42:10 Mins 250 Pts" [ref=e612] [cursor=pointer]:
+                  - /url: /problems/integer-to-roman/
+                  - generic [ref=e615]: Integer To Roman
+                  - generic [ref=e619]: "+2"
+                  - generic [ref=e620]: 42:10 Mins
+                  - generic [ref=e621]: 250 Pts
+                - link "Roman To Integer +2 33:02 Mins 250 Pts" [ref=e622] [cursor=pointer]:
+                  - /url: /problems/roman-to-integer/
+                  - generic [ref=e625]: Roman To Integer
+                  - generic [ref=e629]: "+2"
+                  - generic [ref=e630]: 33:02 Mins
+                  - generic [ref=e631]: 250 Pts
+                - link "Add Binary Strings 40:40 Mins 300 Pts" [ref=e632] [cursor=pointer]:
+                  - /url: /problems/add-binary-strings/
+                  - generic [ref=e635]: Add Binary Strings
+                  - generic [ref=e639]: 40:40 Mins
+                  - generic [ref=e640]: 300 Pts
+                - link "Power of 2 63:26 Mins 350 Pts" [ref=e641] [cursor=pointer]:
+                  - /url: /problems/power-of-2/
+                  - generic [ref=e644]: Power of 2
+                  - generic [ref=e647]: 63:26 Mins
+                  - generic [ref=e648]: 350 Pts
+                - link "Multiply Strings 65:07 Mins 375 Pts" [ref=e649] [cursor=pointer]:
+                  - /url: /problems/multiply-strings/
+                  - generic [ref=e652]: Multiply Strings
+                  - generic [ref=e656]: 65:07 Mins
+                  - generic [ref=e657]: 375 Pts
+          - generic [ref=e658]:
+            - generic [ref=e659]:
+              - generic [ref=e660]:
+                - generic [ref=e661]:
+                  - generic:
+                    - generic: 0/4
+                - generic [ref=e664]: String parsing
+                - img [ref=e666]
+              - generic [ref=e667]:
+                - link "Convert the amount in number to words 38:18 Mins 200 Pts" [ref=e668] [cursor=pointer]:
+                  - /url: /problems/convert-the-amount-in-number-to-words/
+                  - generic [ref=e671]: Convert the amount in number to words
+                  - generic [ref=e675]: 38:18 Mins
+                  - generic [ref=e676]: 200 Pts
+                - link "Compare Version Numbers 67:12 Mins 225 Pts" [ref=e677] [cursor=pointer]:
+                  - /url: /problems/compare-version-numbers/
+                  - generic [ref=e680]: Compare Version Numbers
+                  - generic [ref=e683]: 67:12 Mins
+                  - generic [ref=e684]: 225 Pts
+                - link "Atoi +6 52:19 Mins 250 Pts" [ref=e685] [cursor=pointer]:
+                  - /url: /problems/atoi/
+                  - generic [ref=e688]: Atoi
+                  - generic [ref=e691]: "+6"
+                  - generic [ref=e692]: 52:19 Mins
+                  - generic [ref=e693]: 250 Pts
+                - link "Valid Ip Addresses 68:48 Mins 250 Pts" [ref=e694] [cursor=pointer]:
+                  - /url: /problems/valid-ip-addresses/
+                  - generic [ref=e697]: Valid Ip Addresses
+                  - generic [ref=e701]: 68:48 Mins
+                  - generic [ref=e702]: 250 Pts
+            - generic [ref=e703]:
+              - generic [ref=e704]:
+                - generic [ref=e705]:
+                  - generic:
+                    - generic: 0/2
+                - generic [ref=e708]: Words
+                - img [ref=e710]
+              - generic [ref=e711]:
+                - link "Length of Last Word 17:54 Mins 225 Pts" [ref=e712] [cursor=pointer]:
+                  - /url: /problems/length-of-last-word/
+                  - generic [ref=e715]: Length of Last Word
+                  - generic [ref=e718]: 17:54 Mins
+                  - generic [ref=e719]: 225 Pts
+                - link "Reverse the String +4 36:31 Mins 250 Pts" [ref=e720] [cursor=pointer]:
+                  - /url: /problems/reverse-the-string/
+                  - generic [ref=e723]: Reverse the String
+                  - generic [ref=e726]: "+4"
+                  - generic [ref=e727]: 36:31 Mins
+                  - generic [ref=e728]: 250 Pts
+            - generic [ref=e729]:
+              - generic [ref=e730]:
+                - generic [ref=e731]:
+                  - generic:
+                    - generic: 0/3
+                - generic [ref=e734]: Pretty print
+                - img [ref=e736]
+              - generic [ref=e737]:
+                - link "Zigzag String 52:40 Mins 300 Pts" [ref=e738] [cursor=pointer]:
+                  - /url: /problems/zigzag-string/
+                  - generic [ref=e741]: Zigzag String
+                  - generic [ref=e744]: 52:40 Mins
+                  - generic [ref=e745]: 300 Pts
+                - link "Justified Text +1 79:35 Mins 300 Pts" [ref=e746] [cursor=pointer]:
+                  - /url: /problems/justified-text/
+                  - generic [ref=e749]: Justified Text
+                  - generic [ref=e753]: "+1"
+                  - generic [ref=e754]: 79:35 Mins
+                  - generic [ref=e755]: 300 Pts
+                - link "Pretty Json 64:58 Mins 400 Pts" [ref=e756] [cursor=pointer]:
+                  - /url: /problems/pretty-json/
+                  - generic [ref=e759]: Pretty Json
+                  - generic [ref=e763]: 64:58 Mins
+                  - generic [ref=e764]: 400 Pts
+      - generic [ref=e766]:
+        - generic [ref=e767] [cursor=pointer]:
+          - generic [ref=e768]: 
+          - text: Previous
+        - generic [ref=e769] [cursor=pointer]:
+          - text: Next
+          - generic [ref=e770]: 
+      - generic [ref=e772]:
+        - heading "Video Courses By" [level=2] [ref=e773]:
+          - img [ref=e774]
+          - text: Video Courses
+          - generic [ref=e775]:
+            - text: By
+            - img [ref=e776]
+        - generic [ref=e777]:
+          - button "" [ref=e778] [cursor=pointer]:
+            - generic [ref=e779]: 
+          - button "" [ref=e780] [cursor=pointer]:
+            - generic [ref=e781]: 
+        - link "View All Courses" [ref=e782] [cursor=pointer]:
+          - /url: https://www.interviewbit.com/api/v3/redirect/scaler_auth/?redirect_url=aHR0cHM6Ly9zY2FsZXIuY29tL3RvcGljcy9jb3Vyc2VzP3V0bV9zb3VyY2U9aWI=
+  - text:  
+  - generic [ref=e785]:
+    - link [ref=e786] [cursor=pointer]:
+      - /url: /
+      - img
+    - generic [ref=e787]:
+      - generic [ref=e788]:
+        - link "Download the icon App logo 4.5 Rating 100K+ Downloads logo":
+          - /url: https://app.scaler.com/N4wL
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - text: Download the
+                      - img "icon"
+                      - text: App
+                  - generic:
+                    - generic:
+                      - generic:
+                        - img "logo"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "4.5"
+                            - generic: Rating
+                          - generic:
+                            - generic: 100K+
+                            - generic: Downloads
+                        - img "logo"
+        - list [ref=e789]:
+          - listitem [ref=e790] [cursor=pointer]:
+            - link "Blog" [ref=e791]:
+              - /url: https://www.interviewbit.com/blog/
+          - link:
+            - /url: https://www.interviewbit.com/blog/
+          - listitem [ref=e792] [cursor=pointer]:
+            - link:
+              - /url: https://www.interviewbit.com/blog/
+            - link "Community" [ref=e793]:
+              - /url: /discussion/
+          - link:
+            - /url: /discussion/
+          - listitem [ref=e794] [cursor=pointer]:
+            - link:
+              - /url: /discussion/
+            - link "About Us" [ref=e795]:
+              - /url: /pages/about_us/
+          - link:
+            - /url: /pages/about_us/
+          - listitem [ref=e796] [cursor=pointer]:
+            - link:
+              - /url: /pages/about_us/
+            - link "FAQ" [ref=e797]:
+              - /url: /pages/faq/
+          - link:
+            - /url: /pages/faq/
+          - listitem [ref=e798] [cursor=pointer]:
+            - link:
+              - /url: /pages/faq/
+            - link "Contact Us" [ref=e799]:
+              - /url: /pages/contact_us/
+          - link:
+            - /url: /pages/contact_us/
+          - listitem [ref=e800] [cursor=pointer]:
+            - link:
+              - /url: /pages/contact_us/
+            - link "Terms" [ref=e801]:
+              - /url: /pages/terms/
+          - link:
+            - /url: /pages/terms/
+          - listitem [ref=e802] [cursor=pointer]:
+            - link:
+              - /url: /pages/terms/
+            - link "Privacy Policy" [ref=e803]:
+              - /url: /pages/privacy/
+          - link:
+            - /url: /pages/privacy/
+        - link:
+          - /url: /pages/privacy/
+        - list [ref=e804]:
+          - link:
+            - /url: /pages/privacy/
+          - listitem [ref=e805]:
+            - link:
+              - /url: /pages/privacy/
+            - link "instagram-icon" [ref=e806] [cursor=pointer]:
+              - /url: https://www.instagram.com/interview_bit/
+              - img "instagram-icon" [ref=e807]
+          - listitem [ref=e808]:
+            - link "instagram-icon" [ref=e809] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/interviewbit/
+              - img "instagram-icon" [ref=e810]
+          - listitem [ref=e811]:
+            - link "instagram-icon" [ref=e812] [cursor=pointer]:
+              - /url: https://twitter.com/interview_bit/
+              - img "instagram-icon" [ref=e813]
+          - listitem [ref=e814]:
+            - link "instagram-icon" [ref=e815] [cursor=pointer]:
+              - /url: https://www.facebook.com/interviewbit/
+              - img "instagram-icon" [ref=e816]
+        - list [ref=e817]:
+          - listitem [ref=e818]:
+            - list [ref=e819]:
+              - listitem [ref=e820] [cursor=pointer]:
+                - link "Practice Questions" [ref=e821]:
+                  - /url: /practice/
+                  - generic [ref=e822]: Practice Questions
+              - listitem [ref=e823] [cursor=pointer]:
+                - link "Programming" [ref=e824]:
+                  - /url: /courses/programming/
+              - listitem [ref=e825] [cursor=pointer]:
+                - link "Scripting" [ref=e826]:
+                  - /url: /courses/shell/
+              - listitem [ref=e827] [cursor=pointer]:
+                - link "System Design" [ref=e828]:
+                  - /url: /courses/system-design/
+              - listitem [ref=e829] [cursor=pointer]:
+                - link "Databases" [ref=e830]:
+                  - /url: /courses/databases/
+              - listitem [ref=e831] [cursor=pointer]:
+                - link "Puzzle" [ref=e832]:
+                  - /url: /puzzles/
+          - listitem [ref=e833]:
+            - list [ref=e834]:
+              - listitem [ref=e835] [cursor=pointer]:
+                - link "Fast Track Courses" [ref=e836]:
+                  - /url: /courses/fast-track/
+                  - generic [ref=e837]: Fast Track Courses
+              - listitem [ref=e838] [cursor=pointer]:
+                - link "Python" [ref=e839]:
+                  - /url: /courses/fast-track-python/
+              - listitem [ref=e840] [cursor=pointer]:
+                - link "Java" [ref=e841]:
+                  - /url: /courses/fast-track-java/
+              - listitem [ref=e842] [cursor=pointer]:
+                - link "C++" [ref=e843]:
+                  - /url: /courses/fast-track-cpp/
+              - listitem [ref=e844] [cursor=pointer]:
+                - link "Javascript" [ref=e845]:
+                  - /url: /courses/fast-track-js/
+      - generic [ref=e846]:
+        - list [ref=e847]:
+          - listitem [ref=e848] [cursor=pointer]:
+            - generic [ref=e849]: Online Interviewbit Compilers
+        - list [ref=e850]:
+          - listitem [ref=e851] [cursor=pointer]:
+            - link "Online C Compiler" [ref=e852]:
+              - /url: /online-c-compiler/
+          - listitem [ref=e853] [cursor=pointer]:
+            - link "Online C++ Compiler" [ref=e854]:
+              - /url: /online-cpp-compiler/
+          - listitem [ref=e855] [cursor=pointer]:
+            - link "Online Java Compiler" [ref=e856]:
+              - /url: /online-java-compiler/
+          - listitem [ref=e857] [cursor=pointer]:
+            - link "Online Javascript Compiler" [ref=e858]:
+              - /url: /online-javascript-compiler/
+          - listitem [ref=e859] [cursor=pointer]:
+            - link "Online Python Compiler" [ref=e860]:
+              - /url: /online-python-compiler/
+        - list [ref=e861]:
+          - listitem [ref=e862] [cursor=pointer]:
+            - generic [ref=e863]: Interview Preparation
+        - generic [ref=e864]:
+          - generic [ref=e865]:
+            - generic [ref=e866]: Top Interview Questions
+            - generic [ref=e867]: Language, Tools & Technologies
+            - list [ref=e868]:
+              - listitem [ref=e869] [cursor=pointer]:
+                - link "Java Interview Questions" [ref=e870]:
+                  - /url: /java-interview-questions/
+              - listitem [ref=e871] [cursor=pointer]:
+                - link "Sql Interview Questions" [ref=e872]:
+                  - /url: /sql-interview-questions/
+              - listitem [ref=e873] [cursor=pointer]:
+                - link "Python Interview Questions" [ref=e874]:
+                  - /url: /python-interview-questions/
+              - listitem [ref=e875] [cursor=pointer]:
+                - link "Javascript Interview Questions" [ref=e876]:
+                  - /url: /javascript-interview-questions/
+              - listitem [ref=e877] [cursor=pointer]:
+                - link "Angular Interview Questions" [ref=e878]:
+                  - /url: /angular-interview-questions/
+              - listitem [ref=e879] [cursor=pointer]:
+                - link "Networking Interview Questions" [ref=e880]:
+                  - /url: /networking-interview-questions/
+              - listitem [ref=e881] [cursor=pointer]:
+                - link "Selenium Interview Questions" [ref=e882]:
+                  - /url: /selenium-interview-questions/
+              - listitem [ref=e883] [cursor=pointer]:
+                - link "Data Structure Interview Questions" [ref=e884]:
+                  - /url: /data-structure-interview-questions/
+              - listitem [ref=e885] [cursor=pointer]:
+                - link "Data Science Interview Questions" [ref=e886]:
+                  - /url: /data-science-interview-questions/
+              - listitem [ref=e887] [cursor=pointer]:
+                - link "System Design Interview Questions" [ref=e888]:
+                  - /url: /system-design-interview-questions/
+              - listitem [ref=e889] [cursor=pointer]:
+                - link "Hr Interview Questions" [ref=e890]:
+                  - /url: /hr-interview-questions/
+              - listitem [ref=e891] [cursor=pointer]:
+                - link "Html Interview Questions" [ref=e892]:
+                  - /url: /html-interview-questions/
+              - listitem [ref=e893] [cursor=pointer]:
+                - link "C Interview Questions" [ref=e894]:
+                  - /url: /c-interview-questions/
+              - listitem [ref=e895] [cursor=pointer]:
+                - link "View All" [ref=e896]:
+                  - /url: /technical-interview-questions/
+            - generic [ref=e897]: Companies
+            - list [ref=e898]:
+              - listitem [ref=e899] [cursor=pointer]:
+                - link "Amazon Interview Questions" [ref=e900]:
+                  - /url: /amazon-interview-questions/
+              - listitem [ref=e901] [cursor=pointer]:
+                - link "Facebook Interview Questions" [ref=e902]:
+                  - /url: /facebook-interview-questions/
+              - listitem [ref=e903] [cursor=pointer]:
+                - link "Google Interview Questions" [ref=e904]:
+                  - /url: /google-interview-questions/
+              - listitem [ref=e905] [cursor=pointer]:
+                - link "Tcs Interview Questions" [ref=e906]:
+                  - /url: /tcs-interview-questions/
+              - listitem [ref=e907] [cursor=pointer]:
+                - link "Accenture Interview Questions" [ref=e908]:
+                  - /url: /accenture-interview-questions/
+              - listitem [ref=e909] [cursor=pointer]:
+                - link "Infosys Interview Questions" [ref=e910]:
+                  - /url: /infosys-interview-questions/
+              - listitem [ref=e911] [cursor=pointer]:
+                - link "Capgemini Interview Questions" [ref=e912]:
+                  - /url: /capgemini-interview-questions/
+              - listitem [ref=e913] [cursor=pointer]:
+                - link "Wipro Interview Questions" [ref=e914]:
+                  - /url: /wipro-interview-questions/
+              - listitem [ref=e915] [cursor=pointer]:
+                - link "Cognizant Interview Questions" [ref=e916]:
+                  - /url: /cognizant-interview-questions/
+              - listitem [ref=e917] [cursor=pointer]:
+                - link "Deloitte Interview Questions" [ref=e918]:
+                  - /url: /deloitte-interview-questions/
+              - listitem [ref=e919] [cursor=pointer]:
+                - link "Zoho Interview Questions" [ref=e920]:
+                  - /url: /zoho-interview-questions/
+              - listitem [ref=e921] [cursor=pointer]:
+                - link "Hcl Interview Questions" [ref=e922]:
+                  - /url: /hcl-interview-questions/
+              - listitem [ref=e923] [cursor=pointer]:
+                - link "View All" [ref=e924]:
+                  - /url: /technical-interview-questions/
+            - list
+          - generic [ref=e925]:
+            - generic [ref=e926]: Top Articles
+            - list [ref=e927]:
+              - listitem [ref=e928] [cursor=pointer]:
+                - link "Highest Paying Jobs In India" [ref=e929]:
+                  - /url: /blog/highest-paying-jobs-in-india/
+              - listitem [ref=e930] [cursor=pointer]:
+                - link "Exciting C Projects Ideas With Source Code" [ref=e931]:
+                  - /url: /blog/c-projects/
+              - listitem [ref=e932] [cursor=pointer]:
+                - link "Top Java 8 Features" [ref=e933]:
+                  - /url: /blog/java-8-features/
+              - listitem [ref=e934] [cursor=pointer]:
+                - link "Angular Vs React" [ref=e935]:
+                  - /url: /blog/angular-vs-react/
+              - listitem [ref=e936] [cursor=pointer]:
+                - link "10 Best Data Structures And Algorithms Books" [ref=e937]:
+                  - /url: /blog/data-structures-and-algorithms-books/
+              - listitem [ref=e938] [cursor=pointer]:
+                - link "Exciting C Projects Ideas With Source Code" [ref=e939]:
+                  - /url: /blog/c-projects/
+              - listitem [ref=e940] [cursor=pointer]:
+                - link "Best Full Stack Developer Courses" [ref=e941]:
+                  - /url: /blog/best-full-stack-developer-courses/
+              - listitem [ref=e942] [cursor=pointer]:
+                - link "Best Data Science Courses" [ref=e943]:
+                  - /url: /blog/best-data-science-courses/
+              - listitem [ref=e944] [cursor=pointer]:
+                - link "Python Commands List" [ref=e945]:
+                  - /url: /blog/python-commands/
+              - listitem [ref=e946] [cursor=pointer]:
+                - link "Data Scientist Salary" [ref=e947]:
+                  - /url: /blog/data-scientist-salary/
+              - listitem [ref=e948] [cursor=pointer]:
+                - link "Maximum Subarray Sum Kadane’s Algorithm" [ref=e949]:
+                  - /url: /blog/maximum-subarray-sum/
+              - listitem [ref=e950] [cursor=pointer]:
+                - link "View All" [ref=e951]:
+                  - /url: /blog/
+          - generic [ref=e952]:
+            - generic [ref=e953]: Top Cheat Sheet
+            - list [ref=e954]:
+              - listitem [ref=e955] [cursor=pointer]:
+                - link "Python Cheat Sheet" [ref=e956]:
+                  - /url: /python-cheat-sheet/
+              - listitem [ref=e957] [cursor=pointer]:
+                - link "C++ Cheat Sheet" [ref=e958]:
+                  - /url: /cpp-cheat-sheet/
+              - listitem [ref=e959] [cursor=pointer]:
+                - link "Javascript Cheat Sheet" [ref=e960]:
+                  - /url: /javascript-cheat-sheet/
+              - listitem [ref=e961] [cursor=pointer]:
+                - link "Git Cheat Sheet" [ref=e962]:
+                  - /url: /git-cheat-sheet/
+              - listitem [ref=e963] [cursor=pointer]:
+                - link "Java Cheat Sheet" [ref=e964]:
+                  - /url: /java-cheat-sheet/
+              - listitem [ref=e965] [cursor=pointer]:
+                - link "View All" [ref=e966]:
+                  - /url: /technical-interview-questions/
+          - generic [ref=e967]:
+            - generic [ref=e968]: Top MCQ
+            - list [ref=e969]:
+              - listitem [ref=e970] [cursor=pointer]:
+                - link "Java Mcq" [ref=e971]:
+                  - /url: /java-mcq/
+              - listitem [ref=e972] [cursor=pointer]:
+                - link "Data Structure Mcq" [ref=e973]:
+                  - /url: /data-structure-mcq/
+              - listitem [ref=e974] [cursor=pointer]:
+                - link "Dbms Mcq" [ref=e975]:
+                  - /url: /dbms-mcq/
+              - listitem [ref=e976] [cursor=pointer]:
+                - link "C Programming Mcq" [ref=e977]:
+                  - /url: /c-programming-mcq/
+              - listitem [ref=e978] [cursor=pointer]:
+                - link "C++ Mcq" [ref=e979]:
+                  - /url: /cpp-mcq/
+              - listitem [ref=e980] [cursor=pointer]:
+                - link "Python Mcq" [ref=e981]:
+                  - /url: /python-mcq/
+              - listitem [ref=e982] [cursor=pointer]:
+                - link "Javascript Mcq" [ref=e983]:
+                  - /url: /javascript-mcq/
+              - listitem [ref=e984] [cursor=pointer]:
+                - link "View All" [ref=e985]:
+                  - /url: /technical-interview-questions/
+  - text: 
+  - generic [ref=e990]:
+    - generic [ref=e991] [cursor=pointer]: 
+    - generic [ref=e992]:
+      - generic [ref=e995]:
+        - img [ref=e996]
+        - generic [ref=e997]:
+          - generic [ref=e998]: Free Mock Assessment
+          - generic [ref=e1000]:
+            - text: Powered By
+            - img [ref=e1001]
+      - generic [ref=e1004]: Fill up the details for personalised experience.
+      - generic [ref=e1007]:
+        - generic [ref=e1008]:
+          - generic [ref=e1013]:
+            - generic [ref=e1016] [cursor=pointer]:
+              - textbox "select phone_country_code" [ref=e1017]
+              - textbox "phone_country_code" [ref=e1018]: "+91"
+              - generic [ref=e1019]:
+                - generic [ref=e1020]: +91 *
+                - generic [ref=e1022]: 
+            - generic [ref=e1023]:
+              - textbox "Phone Number" [ref=e1024]
+              - generic [ref=e1025]: Phone Number
+          - generic [ref=e1030] [cursor=pointer]:
+            - textbox "select orgyear" [ref=e1031]
+            - textbox "orgyear" [ref=e1032]
+            - generic [ref=e1033]:
+              - generic [ref=e1034]: Graduation Year *
+              - generic [ref=e1036]: 
+        - generic [ref=e1038]:
+          - superscript [ref=e1039]: "*"
+          - text: Enter the expected year of graduation if you're student
+        - generic: 
+        - generic: 
+        - generic: 
+      - button [ref=e1041] [cursor=pointer]
+      - generic [ref=e1042]: By clicking on Start Test, I agree to be contacted by Scaler in the future.
+      - generic [ref=e1043]: Already have an account? Log in
+    - generic [ref=e1048]:
+      - img [ref=e1049]
+      - generic [ref=e1050]:
+        - generic [ref=e1051]: Free Mock Assessment
+        - generic [ref=e1053]:
+          - text: Powered By
+          - img [ref=e1054]
+  - generic [ref=e1055]:
+    - img [ref=e1057]
+    - generic [ref=e1058]: Instructions from Interviewbit
+    - generic [ref=e1059] [cursor=pointer]: Start Test

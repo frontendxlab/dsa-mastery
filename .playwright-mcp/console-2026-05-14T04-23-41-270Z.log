@@ -1,0 +1,14 @@
+[    1372ms] TypeError: Cannot read properties of undefined (reading 'connection')
+    at https://assets.interviewbit.com/assets/web/application-4d179eb2cf01b5fe6e88e3b437f102bd98f8773aceb99f97cf16a9d0846e9724.js.gz:179:829
+    at https://assets.interviewbit.com/assets/web/application-4d179eb2cf01b5fe6e88e3b437f102bd98f8773aceb99f97cf16a9d0846e9724.js.gz:179:902
+[    2751ms] ReferenceError: google is not defined
+    at Object.showPrompt [as showGooglePrompt] (https://www.interviewbit.com/courses/programming/strings/:7367:9)
+    at Object.success (https://www.interviewbit.com/courses/programming/strings/:7263:39)
+    at c (https://assets.interviewbit.com/assets/web/application-4d179eb2cf01b5fe6e88e3b437f102bd98f8773aceb99f97cf16a9d0846e9724.js.gz:2:9947)
+    at Object.fireWith [as resolveWith] (https://assets.interviewbit.com/assets/web/application-4d179eb2cf01b5fe6e88e3b437f102bd98f8773aceb99f97cf16a9d0846e9724.js.gz:2:10714)
+    at a (https://assets.interviewbit.com/assets/web/application-4d179eb2cf01b5fe6e88e3b437f102bd98f8773aceb99f97cf16a9d0846e9724.js.gz:3:13055)
+    at XMLHttpRequest.<anonymous> (https://assets.interviewbit.com/assets/web/application-4d179eb2cf01b5fe6e88e3b437f102bd98f8773aceb99f97cf16a9d0846e9724.js.gz:3:18934)
+[    3044ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://www.interviewbit.com/analytics/:0
+[    3128ms] [ERROR] Not signed in with the identity provider. @ https://www.interviewbit.com/courses/programming/strings/:0
+[    3794ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with AbortError: signal is aborted without reason @ https://accounts.google.com/gsi/client:85
+[    3795ms] [ERROR] Not signed in with the identity provider. @ https://www.interviewbit.com/courses/programming/strings/:0

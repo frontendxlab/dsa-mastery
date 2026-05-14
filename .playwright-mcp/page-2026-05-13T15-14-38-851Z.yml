@@ -1,0 +1,793 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - link [ref=e6] [cursor=pointer]:
+          - /url: /home
+        - generic [ref=e7]:
+          - list [ref=e8]:
+            - listitem [ref=e9]:
+              - link "AtCoder Beginner Contest 452" [ref=e10] [cursor=pointer]:
+                - /url: /contests/abc452
+          - list [ref=e11]:
+            - listitem [ref=e12]:
+              - button "English" [ref=e13] [cursor=pointer]:
+                - img [ref=e14]
+                - text: English
+            - listitem [ref=e16]:
+              - link "Sign Up" [ref=e17] [cursor=pointer]:
+                - /url: /register?continue=https%3A%2F%2Fatcoder.jp%2Fcontests%2Fabc452%2Ftasks%2Fabc452_g
+            - listitem [ref=e18]:
+              - link "Sign In" [ref=e19] [cursor=pointer]:
+                - /url: /login?continue=https%3A%2F%2Fatcoder.jp%2Fcontests%2Fabc452%2Ftasks%2Fabc452_g
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - generic [ref=e24]:
+              - text: "Contest Duration:"
+              - link "2026-04-04(Sat) 17:30" [ref=e25] [cursor=pointer]:
+                - /url: http://www.timeanddate.com/worldclock/fixedtime.html?iso=20260404T2100&p1=248
+                - time [ref=e26]: 2026-04-04(Sat) 17:30
+              - text: "-"
+              - link "2026-04-04(Sat) 19:10" [ref=e27] [cursor=pointer]:
+                - /url: http://www.timeanddate.com/worldclock/fixedtime.html?iso=20260404T2240&p1=248
+                - time [ref=e28]: 2026-04-04(Sat) 19:10
+              - text: (local time) (100 minutes)
+            - link "Back to Home" [ref=e30] [cursor=pointer]:
+              - /url: /home
+          - list [ref=e31]:
+            - listitem [ref=e32]:
+              - link "Top" [ref=e33] [cursor=pointer]:
+                - /url: /contests/abc452
+                - generic [ref=e34]: 
+                - text: Top
+            - listitem [ref=e35]:
+              - link "Tasks" [ref=e36] [cursor=pointer]:
+                - /url: /contests/abc452/tasks
+                - generic [ref=e37]: 
+                - text: Tasks
+            - listitem [ref=e38]:
+              - link "Clarifications" [ref=e39] [cursor=pointer]:
+                - /url: /contests/abc452/clarifications
+                - generic [ref=e40]: 
+                - text: Clarifications
+            - listitem [ref=e41]:
+              - button "Results" [ref=e42] [cursor=pointer]:
+                - generic [ref=e43]: 
+                - text: Results
+              - text: 
+            - listitem [ref=e45]:
+              - link "Standings" [ref=e46] [cursor=pointer]:
+                - /url: /contests/abc452/standings
+                - generic [ref=e47]: 
+                - text: Standings
+            - listitem [ref=e48]:
+              - link "Virtual Standings" [ref=e49] [cursor=pointer]:
+                - /url: /contests/abc452/standings/virtual
+                - generic [ref=e50]: 
+                - text: Virtual Standings
+            - listitem [ref=e51]:
+              - link "Editorial" [ref=e52] [cursor=pointer]:
+                - /url: /contests/abc452/editorial
+                - generic [ref=e53]: 
+                - text: Editorial
+            - listitem [ref=e54]:
+              - link "Discuss" [ref=e55] [cursor=pointer]:
+                - /url: https://codeforces.com/blog/entry/152624
+                - generic [ref=e56]: 
+                - text: Discuss
+            - listitem [ref=e57]:
+              - link [ref=e58] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - generic [ref=e59]: 
+        - generic [ref=e60]:
+          - generic [ref=e61]:
+            - text: G - 221 Substring
+            - link "Editorial" [ref=e62] [cursor=pointer]:
+              - /url: /contests/abc452/tasks/abc452_g/editorial
+          - generic [ref=e63]:
+            - img [ref=e65] [cursor=pointer]
+            - text: /
+            - img [ref=e67] [cursor=pointer]
+          - separator [ref=e68]
+          - paragraph [ref=e69]: "Time Limit: 2 sec / Memory Limit: 1024 MiB"
+          - generic [ref=e72]:
+            - paragraph [ref=e73]:
+              - text: "Score :"
+              - generic [ref=e76]:
+                - math [ref=e78]:
+                  - generic [ref=e81]: "600"
+                - generic [ref=e83]: "600"
+              - text: points
+            - generic [ref=e85]:
+              - heading "Problem Statement" [level=3] [ref=e86]
+              - paragraph [ref=e87]:
+                - text: For a sequence
+                - generic [ref=e90]:
+                  - math [ref=e92]:
+                    - generic [ref=e94]:
+                      - generic [ref=e95]: X
+                      - generic [ref=e96]: =
+                      - generic [ref=e97]: (
+                      - generic [ref=e98]:
+                        - generic [ref=e99]: X
+                        - generic [ref=e100]: "1"
+                      - generic [ref=e101]: ","
+                      - generic [ref=e102]: …
+                      - generic [ref=e103]: ","
+                      - generic [ref=e104]:
+                        - generic [ref=e105]: X
+                        - generic [ref=e106]: "n"
+                      - generic [ref=e107]: )
+                  - generic [ref=e108]:
+                    - generic [ref=e109]: X =
+                    - generic [ref=e110]:
+                      - text: (
+                      - generic [ref=e111]:
+                        - text: X
+                        - generic [ref=e116]: "1"
+                      - text: ", … ,"
+                      - generic [ref=e120]:
+                        - text: X
+                        - generic [ref=e125]: "n"
+                      - text: )
+                - text: of positive integers, we call
+                - generic [ref=e131]:
+                  - math [ref=e133]:
+                    - generic [ref=e136]: X
+                  - generic [ref=e138]: X
+                - text: a
+                - strong [ref=e139]: 221 sequence
+                - text: if and only if the length and value are equal for every (length, value) pair in its run-length encoding. More formally, a sequence satisfying the following condition is called a 221 sequence.
+              - list [ref=e140]:
+                - listitem [ref=e141]:
+                  - text: For any integer pair
+                  - generic [ref=e144]:
+                    - math [ref=e146]:
+                      - generic [ref=e148]:
+                        - generic [ref=e149]: (
+                        - generic [ref=e150]: l
+                        - generic [ref=e151]: ","
+                        - generic [ref=e152]: r
+                        - generic [ref=e153]: )
+                    - generic [ref=e155]: (l, r)
+                  - text: satisfying
+                  - generic [ref=e158]:
+                    - math [ref=e160]:
+                      - generic [ref=e162]:
+                        - generic [ref=e163]: "1"
+                        - generic [ref=e164]: ≤
+                        - generic [ref=e165]: l
+                        - generic [ref=e166]: ≤
+                        - generic [ref=e167]: r
+                        - generic [ref=e168]: ≤
+                        - generic [ref=e169]: "n"
+                    - generic [ref=e170]:
+                      - generic [ref=e171]: 1 ≤
+                      - generic [ref=e172]: l ≤
+                      - generic [ref=e173]: r ≤
+                      - generic [ref=e174]: "n"
+                  - text: ", if all three of the following conditions hold, then"
+                  - generic [ref=e177]:
+                    - math [ref=e179]:
+                      - generic [ref=e181]:
+                        - generic [ref=e182]: (
+                        - generic [ref=e183]: r
+                        - generic [ref=e184]: −
+                        - generic [ref=e185]: l
+                        - generic [ref=e186]: +
+                        - generic [ref=e187]: "1"
+                        - generic [ref=e188]: )
+                        - generic [ref=e189]: =
+                        - generic [ref=e190]:
+                          - generic [ref=e191]: X
+                          - generic [ref=e192]: l
+                    - generic [ref=e193]:
+                      - generic [ref=e194]: (r −
+                      - generic [ref=e195]: l +
+                      - generic [ref=e196]: 1) =
+                      - generic [ref=e198]:
+                        - text: X
+                        - generic [ref=e203]: l
+                  - text: .
+                  - list [ref=e207]:
+                    - listitem [ref=e208]:
+                      - generic [ref=e211]:
+                        - math [ref=e213]:
+                          - generic [ref=e215]:
+                            - generic [ref=e216]: l
+                            - generic [ref=e217]: =
+                            - generic [ref=e218]: "1"
+                        - generic [ref=e219]:
+                          - generic [ref=e220]: l =
+                          - generic [ref=e221]: "1"
+                      - text: or (
+                      - generic [ref=e224]:
+                        - math [ref=e226]:
+                          - generic [ref=e228]:
+                            - generic [ref=e229]: l
+                            - generic [ref=e230]: ≥
+                            - generic [ref=e231]: "2"
+                        - generic [ref=e232]:
+                          - generic [ref=e233]: l ≥
+                          - generic [ref=e234]: "2"
+                      - text: and
+                      - generic [ref=e237]:
+                        - math [ref=e239]:
+                          - generic [ref=e241]:
+                            - generic [ref=e242]:
+                              - generic [ref=e243]: X
+                              - generic [ref=e244]:
+                                - generic [ref=e245]: l
+                                - generic [ref=e246]: −
+                                - generic [ref=e247]: "1"
+                            - generic [ref=e248]: ≠
+                            - generic [ref=e249]:
+                              - generic [ref=e250]: X
+                              - generic [ref=e251]: l
+                        - generic [ref=e252]:
+                          - generic [ref=e253]:
+                            - generic [ref=e254]:
+                              - text: X
+                              - generic [ref=e260]: l−1
+                            - generic [ref=e264]:
+                              - generic [ref=e265]: 
+                              - text: =
+                          - generic [ref=e267]:
+                            - text: X
+                            - generic [ref=e272]: l
+                      - text: )
+                    - listitem [ref=e276]:
+                      - generic [ref=e279]:
+                        - math [ref=e281]:
+                          - generic [ref=e283]:
+                            - generic [ref=e284]: r
+                            - generic [ref=e285]: =
+                            - generic [ref=e286]: "n"
+                        - generic [ref=e287]:
+                          - generic [ref=e288]: r =
+                          - generic [ref=e289]: "n"
+                      - text: or (
+                      - generic [ref=e292]:
+                        - math [ref=e294]:
+                          - generic [ref=e296]:
+                            - generic [ref=e297]: r
+                            - generic [ref=e298]: ≤
+                            - generic [ref=e299]: "n"
+                            - generic [ref=e300]: −
+                            - generic [ref=e301]: "1"
+                        - generic [ref=e302]:
+                          - generic [ref=e303]: r ≤
+                          - generic [ref=e304]: n −
+                          - generic [ref=e305]: "1"
+                      - text: and
+                      - generic [ref=e308]:
+                        - math [ref=e310]:
+                          - generic [ref=e312]:
+                            - generic [ref=e313]:
+                              - generic [ref=e314]: X
+                              - generic [ref=e315]:
+                                - generic [ref=e316]: r
+                                - generic [ref=e317]: +
+                                - generic [ref=e318]: "1"
+                            - generic [ref=e319]: ≠
+                            - generic [ref=e320]:
+                              - generic [ref=e321]: X
+                              - generic [ref=e322]: r
+                        - generic [ref=e323]:
+                          - generic [ref=e324]:
+                            - generic [ref=e325]:
+                              - text: X
+                              - generic [ref=e331]: r+1
+                            - generic [ref=e335]:
+                              - generic [ref=e336]: 
+                              - text: =
+                          - generic [ref=e338]:
+                            - text: X
+                            - generic [ref=e343]: r
+                      - text: )
+                    - listitem [ref=e347]:
+                      - generic [ref=e350]:
+                        - math [ref=e352]:
+                          - generic [ref=e354]:
+                            - generic [ref=e355]:
+                              - generic [ref=e356]: X
+                              - generic [ref=e357]: l
+                            - generic [ref=e358]: =
+                            - generic [ref=e359]:
+                              - generic [ref=e360]: X
+                              - generic [ref=e361]:
+                                - generic [ref=e362]: l
+                                - generic [ref=e363]: +
+                                - generic [ref=e364]: "1"
+                            - generic [ref=e365]: =
+                            - generic [ref=e366]: ⋯
+                            - generic [ref=e367]: =
+                            - generic [ref=e368]:
+                              - generic [ref=e369]: X
+                              - generic [ref=e370]: r
+                        - generic [ref=e371]:
+                          - generic [ref=e372]:
+                            - generic [ref=e373]:
+                              - text: X
+                              - generic [ref=e378]: l
+                            - text: =
+                          - generic [ref=e382]:
+                            - generic [ref=e383]:
+                              - text: X
+                              - generic [ref=e389]: l+1
+                            - text: =
+                          - generic [ref=e393]: ⋯ =
+                          - generic [ref=e395]:
+                            - text: X
+                            - generic [ref=e400]: r
+              - paragraph [ref=e404]:
+                - text: For example,
+                - generic [ref=e407]:
+                  - math [ref=e409]:
+                    - generic [ref=e411]:
+                      - generic [ref=e412]: (
+                      - generic [ref=e413]: "2"
+                      - generic [ref=e414]: ","
+                      - generic [ref=e415]: "2"
+                      - generic [ref=e416]: ","
+                      - generic [ref=e417]: "3"
+                      - generic [ref=e418]: ","
+                      - generic [ref=e419]: "3"
+                      - generic [ref=e420]: ","
+                      - generic [ref=e421]: "3"
+                      - generic [ref=e422]: ","
+                      - generic [ref=e423]: "1"
+                      - generic [ref=e424]: ","
+                      - generic [ref=e425]: "2"
+                      - generic [ref=e426]: ","
+                      - generic [ref=e427]: "2"
+                      - generic [ref=e428]: )
+                  - generic [ref=e430]: (2, 2, 3, 3, 3, 1, 2, 2)
+                - text: is a 221 sequence, but
+                - generic [ref=e433]:
+                  - math [ref=e435]:
+                    - generic [ref=e437]:
+                      - generic [ref=e438]: (
+                      - generic [ref=e439]: "1"
+                      - generic [ref=e440]: ","
+                      - generic [ref=e441]: "1"
+                      - generic [ref=e442]: )
+                  - generic [ref=e444]: (1, 1)
+                - text: and
+                - generic [ref=e447]:
+                  - math [ref=e449]:
+                    - generic [ref=e451]:
+                      - generic [ref=e452]: (
+                      - generic [ref=e453]: "4"
+                      - generic [ref=e454]: ","
+                      - generic [ref=e455]: "4"
+                      - generic [ref=e456]: ","
+                      - generic [ref=e457]: "1"
+                      - generic [ref=e458]: ","
+                      - generic [ref=e459]: "4"
+                      - generic [ref=e460]: ","
+                      - generic [ref=e461]: "4"
+                      - generic [ref=e462]: )
+                  - generic [ref=e464]: (4, 4, 1, 4, 4)
+                - text: are not 221 sequences.
+              - paragraph [ref=e465]:
+                - text: You are given a sequence
+                - generic [ref=e468]:
+                  - math [ref=e470]:
+                    - generic [ref=e472]:
+                      - generic [ref=e473]: A
+                      - generic [ref=e474]: =
+                      - generic [ref=e475]: (
+                      - generic [ref=e476]:
+                        - generic [ref=e477]: A
+                        - generic [ref=e478]: "1"
+                      - generic [ref=e479]: ","
+                      - generic [ref=e480]: …
+                      - generic [ref=e481]: ","
+                      - generic [ref=e482]:
+                        - generic [ref=e483]: A
+                        - generic [ref=e484]: "N"
+                      - generic [ref=e485]: )
+                  - generic [ref=e486]:
+                    - generic [ref=e487]: A =
+                    - generic [ref=e488]:
+                      - text: (
+                      - generic [ref=e489]:
+                        - text: A
+                        - generic [ref=e494]: "1"
+                      - text: ", … ,"
+                      - generic [ref=e498]:
+                        - text: A
+                        - generic [ref=e503]: "N"
+                      - text: )
+                - text: of positive integers of length
+                - generic [ref=e509]:
+                  - math [ref=e511]:
+                    - generic [ref=e514]: "N"
+                  - generic [ref=e516]: "N"
+                - text: . Find the number of distinct 221 sequences that appear as a non-empty
+                - strong [ref=e517]: contiguous subsequence
+                - text: of
+                - generic [ref=e520]:
+                  - math [ref=e522]:
+                    - generic [ref=e525]: A
+                  - generic [ref=e527]: A
+                - text: .
+              - paragraph [ref=e528]: Even if two subsequences are extracted from different positions, they are counted as one if they are equal as sequences.
+            - generic [ref=e530]:
+              - heading "Constraints" [level=3] [ref=e531]
+              - list [ref=e532]:
+                - listitem [ref=e533]:
+                  - generic [ref=e536]:
+                    - math [ref=e538]:
+                      - generic [ref=e540]:
+                        - generic [ref=e541]: "1"
+                        - generic [ref=e542]: ≤
+                        - generic [ref=e543]: "N"
+                        - generic [ref=e544]: ≤
+                        - generic [ref=e545]: "500"
+                        - generic [ref=e546]: "000"
+                    - generic [ref=e547]:
+                      - generic [ref=e548]: 1 ≤
+                      - generic [ref=e549]: N ≤
+                      - generic [ref=e550]: 500 000
+                - listitem [ref=e551]:
+                  - generic [ref=e554]:
+                    - math [ref=e556]:
+                      - generic [ref=e558]:
+                        - generic [ref=e559]: "1"
+                        - generic [ref=e560]: ≤
+                        - generic [ref=e561]:
+                          - generic [ref=e562]: A
+                          - generic [ref=e563]: i
+                        - generic [ref=e564]: ≤
+                        - generic [ref=e565]: "9"
+                    - generic [ref=e566]:
+                      - generic [ref=e567]: 1 ≤
+                      - generic [ref=e568]:
+                        - generic [ref=e569]:
+                          - text: A
+                          - generic [ref=e574]: i
+                        - text: ≤
+                      - generic [ref=e578]: "9"
+                - listitem [ref=e579]: All input values are integers.
+            - separator [ref=e580]
+            - generic [ref=e581]:
+              - generic [ref=e583]:
+                - heading "Input" [level=3] [ref=e584]
+                - paragraph [ref=e585]: "The input is given from Standard Input in the following format:"
+                - generic [ref=e586]:
+                  - generic [ref=e589]:
+                    - math [ref=e591]:
+                      - generic [ref=e594]: "N"
+                    - generic [ref=e596]: "N"
+                  - generic [ref=e599]:
+                    - math [ref=e601]:
+                      - generic [ref=e604]:
+                        - generic [ref=e605]: A
+                        - generic [ref=e606]: "1"
+                    - generic [ref=e609]:
+                      - text: A
+                      - generic [ref=e614]: "1"
+                  - generic [ref=e620]:
+                    - math [ref=e622]:
+                      - generic [ref=e625]:
+                        - generic [ref=e626]: A
+                        - generic [ref=e627]: "2"
+                    - generic [ref=e630]:
+                      - text: A
+                      - generic [ref=e635]: "2"
+                  - generic [ref=e641]:
+                    - math [ref=e643]:
+                      - generic [ref=e646]: ⋯
+                    - generic [ref=e648]: ⋯
+                  - generic [ref=e651]:
+                    - math [ref=e653]:
+                      - generic [ref=e656]:
+                        - generic [ref=e657]: A
+                        - generic [ref=e658]: "N"
+                    - generic [ref=e661]:
+                      - text: A
+                      - generic [ref=e666]: "N"
+              - generic [ref=e671]:
+                - heading "Output" [level=3] [ref=e672]
+                - paragraph [ref=e673]: Output the answer on a single line.
+            - separator [ref=e674]
+            - generic [ref=e676]:
+              - heading "Sample Input 1 Copy" [level=3] [ref=e677]:
+                - text: Sample Input 1
+                - generic [ref=e678] [cursor=pointer]: Copy
+              - generic [ref=e679] [cursor=pointer]: Copy
+              - generic [ref=e680]: 23 2 2 3 3 3 1 1 1 3 3 3 1 2 2 2 1 9 1 4 4 4 4 4
+            - generic [ref=e682]:
+              - heading "Sample Output 1 Copy" [level=3] [ref=e683]:
+                - text: Sample Output 1
+                - generic [ref=e684] [cursor=pointer]: Copy
+              - generic [ref=e685] [cursor=pointer]: Copy
+              - generic [ref=e686]: "14"
+              - paragraph [ref=e687]:
+                - text: The 221 sequences that appear as a non-empty contiguous subsequence of
+                - generic [ref=e690]:
+                  - math [ref=e692]:
+                    - generic [ref=e695]: A
+                  - generic [ref=e697]: A
+                - text: are the following
+                - generic [ref=e700]:
+                  - math [ref=e702]:
+                    - generic [ref=e705]: "14"
+                  - generic [ref=e707]: "14"
+                - text: ":"
+              - list [ref=e708]:
+                - listitem [ref=e709]:
+                  - generic [ref=e712]:
+                    - math [ref=e714]:
+                      - generic [ref=e716]:
+                        - generic [ref=e717]: (
+                        - generic [ref=e718]: "1"
+                        - generic [ref=e719]: )
+                    - generic [ref=e721]: (1)
+                - listitem [ref=e722]:
+                  - generic [ref=e725]:
+                    - math [ref=e727]:
+                      - generic [ref=e729]:
+                        - generic [ref=e730]: (
+                        - generic [ref=e731]: "1"
+                        - generic [ref=e732]: ","
+                        - generic [ref=e733]: "2"
+                        - generic [ref=e734]: ","
+                        - generic [ref=e735]: "2"
+                        - generic [ref=e736]: )
+                    - generic [ref=e738]: (1, 2, 2)
+                - listitem [ref=e739]:
+                  - generic [ref=e742]:
+                    - math [ref=e744]:
+                      - generic [ref=e746]:
+                        - generic [ref=e747]: (
+                        - generic [ref=e748]: "1"
+                        - generic [ref=e749]: ","
+                        - generic [ref=e750]: "3"
+                        - generic [ref=e751]: ","
+                        - generic [ref=e752]: "3"
+                        - generic [ref=e753]: ","
+                        - generic [ref=e754]: "3"
+                        - generic [ref=e755]: )
+                    - generic [ref=e757]: (1, 3, 3, 3)
+                - listitem [ref=e758]:
+                  - generic [ref=e761]:
+                    - math [ref=e763]:
+                      - generic [ref=e765]:
+                        - generic [ref=e766]: (
+                        - generic [ref=e767]: "1"
+                        - generic [ref=e768]: ","
+                        - generic [ref=e769]: "3"
+                        - generic [ref=e770]: ","
+                        - generic [ref=e771]: "3"
+                        - generic [ref=e772]: ","
+                        - generic [ref=e773]: "3"
+                        - generic [ref=e774]: ","
+                        - generic [ref=e775]: "1"
+                        - generic [ref=e776]: )
+                    - generic [ref=e778]: (1, 3, 3, 3, 1)
+                - listitem [ref=e779]:
+                  - generic [ref=e782]:
+                    - math [ref=e784]:
+                      - generic [ref=e786]:
+                        - generic [ref=e787]: (
+                        - generic [ref=e788]: "1"
+                        - generic [ref=e789]: ","
+                        - generic [ref=e790]: "3"
+                        - generic [ref=e791]: ","
+                        - generic [ref=e792]: "3"
+                        - generic [ref=e793]: ","
+                        - generic [ref=e794]: "3"
+                        - generic [ref=e795]: ","
+                        - generic [ref=e796]: "1"
+                        - generic [ref=e797]: ","
+                        - generic [ref=e798]: "2"
+                        - generic [ref=e799]: ","
+                        - generic [ref=e800]: "2"
+                        - generic [ref=e801]: )
+                    - generic [ref=e803]: (1, 3, 3, 3, 1, 2, 2)
+                - listitem [ref=e804]:
+                  - generic [ref=e807]:
+                    - math [ref=e809]:
+                      - generic [ref=e811]:
+                        - generic [ref=e812]: (
+                        - generic [ref=e813]: "1"
+                        - generic [ref=e814]: ","
+                        - generic [ref=e815]: "4"
+                        - generic [ref=e816]: ","
+                        - generic [ref=e817]: "4"
+                        - generic [ref=e818]: ","
+                        - generic [ref=e819]: "4"
+                        - generic [ref=e820]: ","
+                        - generic [ref=e821]: "4"
+                        - generic [ref=e822]: )
+                    - generic [ref=e824]: (1, 4, 4, 4, 4)
+                - listitem [ref=e825]:
+                  - generic [ref=e828]:
+                    - math [ref=e830]:
+                      - generic [ref=e832]:
+                        - generic [ref=e833]: (
+                        - generic [ref=e834]: "2"
+                        - generic [ref=e835]: ","
+                        - generic [ref=e836]: "2"
+                        - generic [ref=e837]: )
+                    - generic [ref=e839]: (2, 2)
+                - listitem [ref=e840]:
+                  - generic [ref=e843]:
+                    - math [ref=e845]:
+                      - generic [ref=e847]:
+                        - generic [ref=e848]: (
+                        - generic [ref=e849]: "2"
+                        - generic [ref=e850]: ","
+                        - generic [ref=e851]: "2"
+                        - generic [ref=e852]: ","
+                        - generic [ref=e853]: "1"
+                        - generic [ref=e854]: )
+                    - generic [ref=e856]: (2, 2, 1)
+                - listitem [ref=e857]:
+                  - generic [ref=e860]:
+                    - math [ref=e862]:
+                      - generic [ref=e864]:
+                        - generic [ref=e865]: (
+                        - generic [ref=e866]: "2"
+                        - generic [ref=e867]: ","
+                        - generic [ref=e868]: "2"
+                        - generic [ref=e869]: ","
+                        - generic [ref=e870]: "3"
+                        - generic [ref=e871]: ","
+                        - generic [ref=e872]: "3"
+                        - generic [ref=e873]: ","
+                        - generic [ref=e874]: "3"
+                        - generic [ref=e875]: )
+                    - generic [ref=e877]: (2, 2, 3, 3, 3)
+                - listitem [ref=e878]:
+                  - generic [ref=e881]:
+                    - math [ref=e883]:
+                      - generic [ref=e885]:
+                        - generic [ref=e886]: (
+                        - generic [ref=e887]: "2"
+                        - generic [ref=e888]: ","
+                        - generic [ref=e889]: "2"
+                        - generic [ref=e890]: ","
+                        - generic [ref=e891]: "3"
+                        - generic [ref=e892]: ","
+                        - generic [ref=e893]: "3"
+                        - generic [ref=e894]: ","
+                        - generic [ref=e895]: "3"
+                        - generic [ref=e896]: ","
+                        - generic [ref=e897]: "1"
+                        - generic [ref=e898]: )
+                    - generic [ref=e900]: (2, 2, 3, 3, 3, 1)
+                - listitem [ref=e901]:
+                  - generic [ref=e904]:
+                    - math [ref=e906]:
+                      - generic [ref=e908]:
+                        - generic [ref=e909]: (
+                        - generic [ref=e910]: "3"
+                        - generic [ref=e911]: ","
+                        - generic [ref=e912]: "3"
+                        - generic [ref=e913]: ","
+                        - generic [ref=e914]: "3"
+                        - generic [ref=e915]: )
+                    - generic [ref=e917]: (3, 3, 3)
+                - listitem [ref=e918]:
+                  - generic [ref=e921]:
+                    - math [ref=e923]:
+                      - generic [ref=e925]:
+                        - generic [ref=e926]: (
+                        - generic [ref=e927]: "3"
+                        - generic [ref=e928]: ","
+                        - generic [ref=e929]: "3"
+                        - generic [ref=e930]: ","
+                        - generic [ref=e931]: "3"
+                        - generic [ref=e932]: ","
+                        - generic [ref=e933]: "1"
+                        - generic [ref=e934]: )
+                    - generic [ref=e936]: (3, 3, 3, 1)
+                - listitem [ref=e937]:
+                  - generic [ref=e940]:
+                    - math [ref=e942]:
+                      - generic [ref=e944]:
+                        - generic [ref=e945]: (
+                        - generic [ref=e946]: "3"
+                        - generic [ref=e947]: ","
+                        - generic [ref=e948]: "3"
+                        - generic [ref=e949]: ","
+                        - generic [ref=e950]: "3"
+                        - generic [ref=e951]: ","
+                        - generic [ref=e952]: "1"
+                        - generic [ref=e953]: ","
+                        - generic [ref=e954]: "2"
+                        - generic [ref=e955]: ","
+                        - generic [ref=e956]: "2"
+                        - generic [ref=e957]: )
+                    - generic [ref=e959]: (3, 3, 3, 1, 2, 2)
+                - listitem [ref=e960]:
+                  - generic [ref=e963]:
+                    - math [ref=e965]:
+                      - generic [ref=e967]:
+                        - generic [ref=e968]: (
+                        - generic [ref=e969]: "4"
+                        - generic [ref=e970]: ","
+                        - generic [ref=e971]: "4"
+                        - generic [ref=e972]: ","
+                        - generic [ref=e973]: "4"
+                        - generic [ref=e974]: ","
+                        - generic [ref=e975]: "4"
+                        - generic [ref=e976]: )
+                    - generic [ref=e978]: (4, 4, 4, 4)
+            - separator [ref=e979]
+            - generic [ref=e981]:
+              - heading "Sample Input 2 Copy" [level=3] [ref=e982]:
+                - text: Sample Input 2
+                - generic [ref=e983] [cursor=pointer]: Copy
+              - generic [ref=e984] [cursor=pointer]: Copy
+              - generic [ref=e985]: 2 6 7
+            - generic [ref=e987]:
+              - heading "Sample Output 2 Copy" [level=3] [ref=e988]:
+                - text: Sample Output 2
+                - generic [ref=e989] [cursor=pointer]: Copy
+              - generic [ref=e990] [cursor=pointer]: Copy
+              - generic [ref=e991]: "0"
+              - paragraph [ref=e992]:
+                - text: No 221 sequences appear as a non-empty contiguous subsequence of
+                - generic [ref=e995]:
+                  - math [ref=e997]:
+                    - generic [ref=e1000]: A
+                  - generic [ref=e1002]: A
+                - text: .
+      - separator [ref=e1003]
+      - generic [ref=e1004]:
+        - link "Facebook" [ref=e1005] [cursor=pointer]:
+          - /url: /#facebook
+          - generic [ref=e1006]: Facebook
+        - link "Twitter" [ref=e1007] [cursor=pointer]:
+          - /url: /#twitter
+          - generic [ref=e1008]: Twitter
+        - link "Telegram" [ref=e1009] [cursor=pointer]:
+          - /url: /#telegram
+          - generic [ref=e1010]: Telegram
+        - link "Share" [ref=e1011] [cursor=pointer]:
+          - /url: https://www.addtoany.com/share#url=https%3A%2F%2Fatcoder.jp%2Fcontests%2Fabc452%2Ftasks%2Fabc452_g%3Flang%3Den&title=G%20-%20221%20Substring
+          - generic [ref=e1012]: Share
+    - separator [ref=e1013]
+  - contentinfo [ref=e1015]:
+    - list [ref=e1016]:
+      - listitem [ref=e1017]:
+        - link "Rule" [ref=e1018] [cursor=pointer]:
+          - /url: /contests/abc452/rules
+      - listitem [ref=e1019]:
+        - link "Glossary" [ref=e1020] [cursor=pointer]:
+          - /url: /contests/abc452/glossary
+    - list [ref=e1021]:
+      - listitem [ref=e1022]:
+        - link "Terms of service" [ref=e1023] [cursor=pointer]:
+          - /url: /tos
+      - listitem [ref=e1024]:
+        - link "Privacy Policy" [ref=e1025] [cursor=pointer]:
+          - /url: /privacy
+      - listitem [ref=e1026]:
+        - link "Information Protection Policy" [ref=e1027] [cursor=pointer]:
+          - /url: /personal
+      - listitem [ref=e1028]:
+        - link "Company" [ref=e1029] [cursor=pointer]:
+          - /url: /company
+      - listitem [ref=e1030]:
+        - link "FAQ" [ref=e1031] [cursor=pointer]:
+          - /url: /faq
+      - listitem [ref=e1032]:
+        - link "Contact" [ref=e1033] [cursor=pointer]:
+          - /url: /contact
+    - generic [ref=e1035]:
+      - text: Copyright Since 2012 ©
+      - link "AtCoder Inc." [ref=e1036] [cursor=pointer]:
+        - /url: http://atcoder.co.jp
+      - text: All rights reserved.
+  - paragraph [ref=e1037] [cursor=pointer]:
+    - text: 2026-05-13 (Wed)
+    - text: 20:44:38 +05:30
+  - text: 

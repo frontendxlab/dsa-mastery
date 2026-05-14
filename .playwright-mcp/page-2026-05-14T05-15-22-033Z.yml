@@ -1,0 +1,281 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "CodeChef Logo" [ref=e8] [cursor=pointer]:
+        - /url: https://www.codechef.com
+        - img "CodeChef Logo" [ref=e9]
+      - generic [ref=e10]:
+        - generic "Switch to Light Mode" [ref=e12] [cursor=pointer]:
+          - img [ref=e13]
+        - generic [ref=e17]:
+          - link "Upgrade to Pro" [ref=e18] [cursor=pointer]:
+            - /url: /pro#practice-path-header
+            - generic [ref=e20]: Upgrade to Pro
+          - separator [ref=e21]
+          - generic [ref=e22]:
+            - button "Login" [ref=e23] [cursor=pointer]
+            - button "Sign Up" [ref=e24] [cursor=pointer]
+  - generic [ref=e27]:
+    - button "Courses" [ref=e28] [cursor=pointer]:
+      - generic [ref=e29]: Courses
+    - link "Practice" [ref=e32] [cursor=pointer]:
+      - /url: /practice
+      - generic [ref=e33]: Practice
+    - link "Compete" [ref=e34] [cursor=pointer]:
+      - /url: /contests
+      - generic [ref=e35]: Compete
+    - link "Compiler" [ref=e36] [cursor=pointer]:
+      - /url: /ide
+      - generic [ref=e37]: Compiler
+  - generic [ref=e40]:
+    - generic [ref=e41]:
+      - generic [ref=e43]:
+        - generic [ref=e44]:
+          - generic [ref=e45]:
+            - img "language-logo" [ref=e48]
+            - generic [ref=e49]:
+              - heading "Number theory" [level=1] [ref=e50]
+              - paragraph [ref=e51]: Practice problems on number theory concepts like Euclid’s algorithm for GCD, LCM, prime factorization etc
+              - generic [ref=e52]:
+                - generic [ref=e53]:
+                  - img [ref=e55]
+                  - generic [ref=e57]: 2 Lessons
+                - generic [ref=e58]:
+                  - img [ref=e60]
+                  - generic [ref=e62]: 10 Hours
+                - generic [ref=e63]:
+                  - img [ref=e65]
+                  - generic [ref=e67]: 24 Problems
+                - generic [ref=e68]:
+                  - img [ref=e70]
+                  - generic [ref=e72]: 9.6k Learners
+                - generic [ref=e73]:
+                  - img [ref=e75]
+                  - generic [ref=e77]: Intermediate Level
+              - generic [ref=e78]:
+                - generic [ref=e79]:
+                  - generic [ref=e81]:
+                    - img [ref=e82]
+                    - generic [ref=e84]: "Your Progress :"
+                    - generic [ref=e85]: 0% Completed
+                  - img [ref=e89]
+                - button "Start Learning" [ref=e92]
+          - generic [ref=e93]:
+            - generic [ref=e95]:
+              - img [ref=e96]
+              - text: Prerequisite course
+            - generic [ref=e98]: We recommend you complete this course first before you jump into Number theory, this will help you understand this even better.
+            - generic [ref=e100] [cursor=pointer]:
+              - generic [ref=e101]:
+                - img [ref=e102]
+                - generic [ref=e104]: Learn
+              - img "number-theory" [ref=e107]
+              - generic [ref=e108]:
+                - heading "Number theory" [level=3] [ref=e109]
+                - generic [ref=e110]:
+                  - generic [ref=e111]:
+                    - img [ref=e112]
+                    - generic [ref=e114]: 4.5 (202)
+                  - generic [ref=e115]: Intermediate
+                - paragraph [ref=e116]: Learn basic number theory concepts and their implementation in our Number Theory course. Understand and solve concepts such as prime numbers, divisibility, modular arithmetic, sieve of eratosthenes, and Fermat Little Theorem.
+              - generic [ref=e118]:
+                - img [ref=e119]
+                - generic [ref=e121]: 9 courses
+                - img [ref=e122]
+                - generic [ref=e124]: 3.9k learners
+        - generic [ref=e126]:
+          - generic [ref=e127] [cursor=pointer]:
+            - generic [ref=e129]: "1"
+            - generic [ref=e130]:
+              - heading "Basic number theory" [level=3] [ref=e131]
+              - paragraph [ref=e132]: Practice intermediate level problems using Number theory
+            - img [ref=e134]
+          - generic [ref=e136]:
+            - generic [ref=e138]: PROBLEM NAME
+            - generic [ref=e140]: STATUS
+            - generic [ref=e142]: DIFFICULTY
+          - generic [ref=e143]:
+            - generic [ref=e144]:
+              - link "Budget of Technex" [ref=e146] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/number-theory/INTNT01/problems/BUDTECH
+              - generic [ref=e153]: "449"
+            - generic [ref=e154]:
+              - link "Ranklist Pages" [ref=e156] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/number-theory/INTNT01/problems/RANKLISTPAGE
+              - generic [ref=e163]: "590"
+            - generic [ref=e164]:
+              - link "Better Deal" [ref=e166] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/number-theory/INTNT01/problems/BETDEAL
+              - generic [ref=e173]: "584"
+            - generic [ref=e174]:
+              - link "Online or Offline" [ref=e176] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/number-theory/INTNT01/problems/FOODPLAN
+              - generic [ref=e183]: "713"
+            - generic [ref=e184]:
+              - link "Odd Sum Pair" [ref=e186] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/number-theory/INTNT01/problems/ODDSUMPAIR
+              - generic [ref=e193]: "506"
+            - generic [ref=e194]:
+              - link "Divide Pages" [ref=e196] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/number-theory/INTNT01/problems/BOOKPAGES
+              - generic [ref=e203]: "500"
+            - generic [ref=e204]:
+              - link "Redistributing Chocolates" [ref=e206] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/number-theory/INTNT01/problems/REDSTRBTN
+              - generic [ref=e213]: "842"
+            - generic [ref=e214]:
+              - link "Lucky Numbers" [ref=e216] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/number-theory/INTNT01/problems/LUCKYN
+              - generic [ref=e223]: "655"
+            - generic [ref=e224]:
+              - link "Return the Change" [ref=e226] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/number-theory/INTNT01/problems/RETURNCHANGE
+              - generic [ref=e233]: "763"
+            - generic [ref=e234]:
+              - link "Paper Cutting" [ref=e236] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/number-theory/INTNT01/problems/CUTPAPER
+              - generic [ref=e243]: "800"
+            - generic [ref=e244]:
+              - link "Apples and oranges" [ref=e246] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/number-theory/INTNT01/problems/APPLEORANGE
+              - generic [ref=e253]: "1040"
+            - generic [ref=e254]:
+              - link "Hackerman" [ref=e256] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/number-theory/INTNT01/problems/PRIMEDICE
+              - generic [ref=e263]: "643"
+            - generic [ref=e264]:
+              - generic [ref=e265]:
+                - link "Cutting Recipes" [ref=e266] [cursor=pointer]:
+                  - /url: https://www.codechef.com/practice/course/number-theory/INTNT02/problems/RECIPE
+                - generic [ref=e267]: Pro
+              - img [ref=e271]
+              - generic [ref=e275]: "1047"
+            - generic [ref=e276]:
+              - generic [ref=e277]:
+                - link "Existence" [ref=e278] [cursor=pointer]:
+                  - /url: https://www.codechef.com/practice/course/number-theory/INTNT02/problems/EXISTENCE
+                - generic [ref=e279]: Pro
+              - img [ref=e283]
+              - generic [ref=e287]: "928"
+            - generic [ref=e288]:
+              - generic [ref=e289]:
+                - link "Walk on the Axis" [ref=e290] [cursor=pointer]:
+                  - /url: https://www.codechef.com/practice/course/number-theory/INTNT02/problems/ANUWTA
+                - generic [ref=e291]: Pro
+              - img [ref=e295]
+              - generic [ref=e299]: "1374"
+            - generic [ref=e300]:
+              - generic [ref=e301]:
+                - link "Musical Chairs" [ref=e302] [cursor=pointer]:
+                  - /url: https://www.codechef.com/practice/course/number-theory/INTNT02/problems/MUSICHAIR
+                - generic [ref=e303]: Pro
+              - img [ref=e307]
+              - generic [ref=e311]: "1494"
+            - generic [ref=e312]:
+              - generic [ref=e313]:
+                - link "Chef and Interview" [ref=e314] [cursor=pointer]:
+                  - /url: https://www.codechef.com/practice/course/number-theory/INTNT02/problems/CHEFLCM
+                - generic [ref=e315]: Pro
+              - img [ref=e319]
+              - generic [ref=e323]: "1447"
+            - generic [ref=e324]:
+              - generic [ref=e325]:
+                - link "Add smallest prime factor" [ref=e326] [cursor=pointer]:
+                  - /url: https://www.codechef.com/practice/course/number-theory/INTNT02/problems/PRIMEFACT
+                - generic [ref=e327]: Pro
+              - img [ref=e331]
+              - generic [ref=e335]: "1272"
+            - generic [ref=e336]:
+              - generic [ref=e337]:
+                - link "Dazzling GCD Pair" [ref=e338] [cursor=pointer]:
+                  - /url: https://www.codechef.com/practice/course/number-theory/INTNT02/problems/NOTUNIT
+                - generic [ref=e339]: Pro
+              - img [ref=e343]
+              - generic [ref=e347]: "1177"
+            - generic [ref=e348]:
+              - generic [ref=e349]:
+                - link "Number of Factors" [ref=e350] [cursor=pointer]:
+                  - /url: https://www.codechef.com/practice/course/number-theory/INTNT02/problems/NUMFACT
+                - generic [ref=e351]: Pro
+              - img [ref=e355]
+              - generic [ref=e359]: "1710"
+            - generic [ref=e360]:
+              - generic [ref=e361]:
+                - link "Luigi and Uniformity" [ref=e362] [cursor=pointer]:
+                  - /url: https://www.codechef.com/practice/course/number-theory/INTNT02/problems/DIVIDEMAKEEQ
+                - generic [ref=e363]: Pro
+              - img [ref=e367]
+              - generic [ref=e371]: "1185"
+            - generic [ref=e372]:
+              - generic [ref=e373]:
+                - link "Little Elephant and Divisors" [ref=e374] [cursor=pointer]:
+                  - /url: https://www.codechef.com/practice/course/number-theory/INTNT02/problems/LEDIV
+                - generic [ref=e375]: Pro
+              - img [ref=e379]
+              - generic [ref=e383]: "1716"
+            - generic [ref=e384]:
+              - generic [ref=e385]:
+                - link "The hardest gcd problem" [ref=e386] [cursor=pointer]:
+                  - /url: https://www.codechef.com/practice/course/number-theory/INTNT02/problems/GCDDIV
+                - generic [ref=e387]: Pro
+              - img [ref=e391]
+              - generic [ref=e395]: "1829"
+            - generic [ref=e396]:
+              - generic [ref=e397]:
+                - link "Strong Elements" [ref=e398] [cursor=pointer]:
+                  - /url: https://www.codechef.com/practice/course/number-theory/INTNT02/problems/STRNG
+                - generic [ref=e399]: Pro
+              - img [ref=e403]
+              - generic [ref=e407]: "1507"
+      - generic [ref=e410]:
+        - heading "Up Next" [level=5] [ref=e412]
+        - link "Practice binary-search Binary Search 4.7 (131) Intermediate Practice Binary search with our curated set of problems. Implement binary search algorithm in languages like C++, Java, Python and JavaScript. 2 courses 16.7k learners" [ref=e414] [cursor=pointer]:
+          - /url: https://www.codechef.com/practice/binary-search
+          - generic [ref=e415]:
+            - generic [ref=e416]:
+              - img [ref=e417]
+              - generic [ref=e419]: Practice
+            - img "binary-search" [ref=e422]
+            - generic [ref=e423]:
+              - heading "Binary Search" [level=3] [ref=e424]
+              - generic [ref=e425]:
+                - generic [ref=e426]:
+                  - img [ref=e427]
+                  - generic [ref=e429]: 4.7 (131)
+                - generic [ref=e430]: Intermediate
+              - paragraph [ref=e431]: Practice Binary search with our curated set of problems. Implement binary search algorithm in languages like C++, Java, Python and JavaScript.
+            - generic [ref=e433]:
+              - img [ref=e434]
+              - generic [ref=e436]: 2 courses
+              - img [ref=e437]
+              - generic [ref=e439]: 16.7k learners
+    - generic [ref=e441]:
+      - paragraph [ref=e442]: What our learners are saying?
+      - generic [ref=e443]:
+        - generic [ref=e444]:
+          - paragraph [ref=e448]: This website is extremely useful. The courses are easy to learn and very comprehensible. The language used on this website is simple, making it easy to understand.
+          - generic [ref=e449]:
+            - img "user profile" [ref=e450]
+            - generic [ref=e451]:
+              - paragraph [ref=e452]:
+                - text: Shaifa Urooj
+                - img "in" [ref=e453]
+              - generic [ref=e454]: Student
+        - generic [ref=e455]:
+          - paragraph [ref=e459]: The teaching method on this website is the best I've seen so far. Thank you so much!
+          - generic [ref=e460]:
+            - img "user profile" [ref=e461]
+            - generic [ref=e462]:
+              - paragraph [ref=e463]:
+                - text: Mohsen Chegini
+                - img "de" [ref=e464]
+              - generic [ref=e465]: Student
+        - generic [ref=e466]:
+          - paragraph [ref=e470]: A nice initiative to give learners the confidence that they can do anything and learn anything they want. Really nice work, Team CodeChef.
+          - generic [ref=e471]:
+            - img "user profile" [ref=e472]
+            - generic [ref=e473]:
+              - paragraph [ref=e474]:
+                - text: Tejas Kolhe
+                - img "in" [ref=e475]
+              - generic [ref=e476]: Student

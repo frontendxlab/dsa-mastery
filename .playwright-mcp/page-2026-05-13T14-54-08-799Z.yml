@@ -1,0 +1,8 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]: "404"
+    - heading "Page not found" [level=1] [ref=e5]
+    - paragraph [ref=e6]: The page you're looking for doesn't exist.
+    - link "← Back to questions" [ref=e7] [cursor=pointer]:
+      - /url: /leetcode-patterns
+  - alert [ref=e8]

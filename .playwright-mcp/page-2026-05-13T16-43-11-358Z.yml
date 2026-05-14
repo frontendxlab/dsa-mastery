@@ -1,0 +1,213 @@
+- generic [active] [ref=e1]:
+  - img
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - text: 
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "DMOJ" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - img "DMOJ" [ref=e7]
+        - listitem [ref=e8]
+        - listitem [ref=e10]:
+          - link "Problems" [ref=e11] [cursor=pointer]:
+            - /url: /problems/
+        - listitem [ref=e12]:
+          - link "Submissions" [ref=e13] [cursor=pointer]:
+            - /url: /submissions/
+        - listitem [ref=e14]:
+          - link "Users" [ref=e15] [cursor=pointer]:
+            - /url: /users/
+        - listitem [ref=e16]:
+          - link "Contests" [ref=e17] [cursor=pointer]:
+            - /url: /contests/
+        - listitem [ref=e18]:
+          - link "About" [ref=e19] [cursor=pointer]:
+            - /url: /about/
+      - generic [ref=e21]:
+        - link "Log in" [ref=e22] [cursor=pointer]:
+          - /url: /accounts/login/?next=/problems/%3Fsearch%3Dheap
+        - text: or
+        - link "Sign up" [ref=e23] [cursor=pointer]:
+          - /url: /accounts/register/
+  - generic [ref=e25]:
+    - main [ref=e26]:
+      - generic [ref=e27]:
+        - heading "Problems" [level=2] [ref=e28]
+        - list
+      - generic [ref=e30]:
+        - generic [ref=e32]:
+          - generic [ref=e33]:
+            - heading "Problem search " [level=3] [ref=e34]:
+              - text: Problem search
+              - generic [ref=e35]: 
+            - generic [ref=e37]:
+              - textbox "Search problems..." [ref=e39]: heap
+              - generic [ref=e40]:
+                - checkbox "Full text search" [ref=e41] [cursor=pointer]
+                - text: Full text search
+              - generic [ref=e42]:
+                - checkbox "Has editorial" [ref=e43] [cursor=pointer]
+                - text: Has editorial
+              - generic [ref=e44]:
+                - checkbox "Show problem types" [ref=e45] [cursor=pointer]
+                - text: Show problem types
+              - generic [ref=e46]:
+                - generic [ref=e47]: Category
+                - combobox [ref=e48]
+                - combobox "All" [ref=e51] [cursor=pointer]:
+                  - textbox "All" [ref=e52]
+              - generic [ref=e53]: Point range
+              - generic [ref=e55]:
+                - slider [ref=e56]:
+                  - generic [ref=e57]: "5"
+                - slider [ref=e59]:
+                  - generic [ref=e60]: "20"
+              - generic [ref=e61]:
+                - generic [ref=e62] [cursor=pointer]: Go
+                - generic [ref=e63] [cursor=pointer]: Random
+          - generic [ref=e64]:
+            - heading "Hot problems " [level=3] [ref=e65]:
+              - text: Hot problems
+              - generic [ref=e66]: 
+            - list [ref=e68]:
+              - listitem [ref=e69]:
+                - 'link "COCI ''23 Contest 4 #4 Putovanje" [ref=e70] [cursor=pointer]':
+                  - /url: /problem/coci23c4p4
+              - listitem [ref=e71]:
+                - 'link "COCI ''23 Contest 1 #1 Sudoku" [ref=e72] [cursor=pointer]':
+                  - /url: /problem/coci23c1p1
+              - listitem [ref=e73]:
+                - 'link "COCI ''15 Contest 1 #5 Relativnost" [ref=e74] [cursor=pointer]':
+                  - /url: /problem/coci15c1p5
+              - listitem [ref=e75]:
+                - link "IOI '19 P1 - Arranging Shoes" [ref=e76] [cursor=pointer]:
+                  - /url: /problem/ioi19p1
+              - listitem [ref=e77]:
+                - link "Yet Another Contest 3 P4 - Rumour" [ref=e78] [cursor=pointer]:
+                  - /url: /problem/yac3p4
+              - listitem [ref=e79]:
+                - link "Max's Anger Contest Series 2 P2 - Password Anger" [ref=e80] [cursor=pointer]:
+                  - /url: /problem/macs2p2
+              - listitem [ref=e81]:
+                - link "CCO '15 P1 - Hungry Fox" [ref=e82] [cursor=pointer]:
+                  - /url: /problem/cco15p1
+        - table [ref=e84]:
+          - rowgroup [ref=e85]:
+            - row "Problem Category Points AC %  Users" [ref=e86]:
+              - columnheader "Problem" [ref=e87]:
+                - link "Problem" [ref=e88] [cursor=pointer]:
+                  - /url: /problems/?search=heap&order=name
+              - columnheader "Category" [ref=e89]:
+                - link "Category" [ref=e90] [cursor=pointer]:
+                  - /url: /problems/?search=heap&order=group
+              - columnheader "Points" [ref=e91]:
+                - link "Points" [ref=e92] [cursor=pointer]:
+                  - /url: /problems/?search=heap&order=-points
+              - columnheader "AC %" [ref=e93]:
+                - link "AC %" [ref=e94] [cursor=pointer]:
+                  - /url: /problems/?search=heap&order=-ac_rate
+              - columnheader "" [ref=e95]:
+                - link "" [ref=e96] [cursor=pointer]:
+                  - /url: /problems/?search=heap&order=editorial
+                  - generic [ref=e97]: 
+              - columnheader "Users" [ref=e98]:
+                - link "Users" [ref=e99] [cursor=pointer]:
+                  - /url: /problems/?search=heap&order=-user_count
+          - rowgroup [ref=e100]:
+            - row "CCO '03 P6 - Cheap Gas CCO 20p 13.0%  83" [ref=e101]:
+              - cell "CCO '03 P6 - Cheap Gas" [ref=e102]:
+                - link "CCO '03 P6 - Cheap Gas" [ref=e103] [cursor=pointer]:
+                  - /url: /problem/cco03p6
+              - cell "CCO" [ref=e104]
+              - cell "20p" [ref=e105]
+              - cell "13.0%" [ref=e106]
+              - cell "" [ref=e107]:
+                - generic [ref=e108]: 
+              - cell "83" [ref=e109]:
+                - link "83" [ref=e110] [cursor=pointer]:
+                  - /url: /problem/cco03p6/rank/
+            - row "Allen's Segments Uncategorized 17 25.9%  76" [ref=e111]:
+              - cell "Allen's Segments" [ref=e112]:
+                - link "Allen's Segments" [ref=e113] [cursor=pointer]:
+                  - /url: /problem/cheapsegments
+              - cell "Uncategorized" [ref=e114]
+              - cell "17" [ref=e115]
+              - cell "25.9%" [ref=e116]
+              - cell "" [ref=e117]:
+                - generic [ref=e118]: 
+              - cell "76" [ref=e119]:
+                - link "76" [ref=e120] [cursor=pointer]:
+                  - /url: /problem/cheapsegments/rank/
+            - row "HCI '16 - Cheapest Operation Ever Uncategorized 20p 29.3%  219" [ref=e121]:
+              - cell "HCI '16 - Cheapest Operation Ever" [ref=e122]:
+                - link "HCI '16 - Cheapest Operation Ever" [ref=e123] [cursor=pointer]:
+                  - /url: /problem/hci16police
+              - cell "Uncategorized" [ref=e124]
+              - cell "20p" [ref=e125]
+              - cell "29.3%" [ref=e126]
+              - cell "" [ref=e127]:
+                - generic [ref=e128]: 
+              - cell "219" [ref=e129]:
+                - link "219" [ref=e130] [cursor=pointer]:
+                  - /url: /problem/hci16police/rank/
+            - row "Heap Dijkstra Revisited Data Structure Tests 10 12.0%  10" [ref=e131]:
+              - cell "Heap Dijkstra Revisited" [ref=e132]:
+                - link "Heap Dijkstra Revisited" [ref=e133] [cursor=pointer]:
+                  - /url: /problem/ragetree1
+              - cell "Data Structure Tests" [ref=e134]
+              - cell "10" [ref=e135]
+              - cell "12.0%" [ref=e136]
+              - cell "" [ref=e137]:
+                - generic [ref=e138]: 
+              - cell "10" [ref=e139]:
+                - link "10" [ref=e140] [cursor=pointer]:
+                  - /url: /problem/ragetree1/rank/
+            - row "Wesley's Anger Contest 6 Problem 2 - Cheap Christmas Lights WAC 5p 20.6%  257" [ref=e141]:
+              - cell "Wesley's Anger Contest 6 Problem 2 - Cheap Christmas Lights" [ref=e142]:
+                - link "Wesley's Anger Contest 6 Problem 2 - Cheap Christmas Lights" [ref=e143] [cursor=pointer]:
+                  - /url: /problem/wac6p2
+              - cell "WAC" [ref=e144]
+              - cell "5p" [ref=e145]
+              - cell "20.6%" [ref=e146]
+              - cell "" [ref=e147]:
+                - link "" [ref=e148] [cursor=pointer]:
+                  - /url: /problem/wac6p2/editorial
+                  - generic [ref=e149]: 
+              - cell "257" [ref=e150]:
+                - link "257" [ref=e151] [cursor=pointer]:
+                  - /url: /problem/wac6p2/rank/
+    - contentinfo [ref=e152]:
+      - generic [ref=e153]:
+        - link "fork us on Github" [ref=e154] [cursor=pointer]:
+          - /url: //github.com/DMOJ/
+        - text: "|"
+        - link "like us on Facebook" [ref=e155] [cursor=pointer]:
+          - /url: //www.facebook.com/dmoj.ca
+        - text: "|"
+        - link "help us translate" [ref=e156] [cursor=pointer]:
+          - /url: https://translate.dmoj.ca/
+        - text: "|"
+        - link "terms of service" [ref=e157] [cursor=pointer]:
+          - /url: https://dmoj.ca/tos/
+        - text: "|"
+        - combobox [ref=e159]:
+          - option "català (ca)"
+          - option "Deutsch (de)"
+          - option "Ελληνικά (el)"
+          - option "English (en)" [selected]
+          - option "español (es)"
+          - option "français (fr)"
+          - option "Hrvatski (hr)"
+          - option "Magyar (hu)"
+          - option "日本語 (ja)"
+          - option "Қазақ (kk)"
+          - option "한국어 (ko)"
+          - option "Português (pt)"
+          - option "Română (ro)"
+          - option "Русский (ru)"
+          - option "srpski (latinica) (sr-latn)"
+          - option "Türkçe (tr)"
+          - option "Tiếng Việt (vi)"
+          - option "简体中文 (zh-hans)"
+          - option "繁體中文 (zh-hant)"

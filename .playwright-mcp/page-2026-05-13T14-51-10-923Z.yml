@@ -1,0 +1,1444 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e6]:
+      - heading "Navigation Menu" [level=2] [ref=e7]
+      - generic [ref=e9]:
+        - button "Toggle navigation" [ref=e11] [cursor=pointer]
+        - link "Homepage" [ref=e17] [cursor=pointer]:
+          - /url: /
+          - img [ref=e18]
+        - generic [ref=e20]:
+          - link "Sign in" [ref=e21] [cursor=pointer]:
+            - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Ftopics%2Fsliding-window
+          - button "Appearance settings" [disabled] [ref=e24]:
+            - img
+  - main [ref=e27]:
+    - navigation "Explore navigation" [ref=e29]:
+      - generic [ref=e30]:
+        - link "Explore" [ref=e31] [cursor=pointer]:
+          - /url: /explore
+        - link "Topics" [ref=e32] [cursor=pointer]:
+          - /url: /topics
+        - link "Trending" [ref=e33] [cursor=pointer]:
+          - /url: /trending
+        - link "Collections" [ref=e34] [cursor=pointer]:
+          - /url: /collections
+        - link "Events" [ref=e35] [cursor=pointer]:
+          - /url: /events
+        - link "GitHub Sponsors" [ref=e36] [cursor=pointer]:
+          - /url: /sponsors/explore
+    - generic [ref=e37]:
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - generic [ref=e42]: "#"
+          - heading "sliding-window" [level=1] [ref=e43]
+        - link "You must be signed in to star a repository" [ref=e46] [cursor=pointer]:
+          - /url: /login?return_to=%2Ftopic.sliding-window
+          - img [ref=e47]
+          - text: Star
+      - generic [ref=e50]:
+        - generic [ref=e51]:
+          - heading "Here are 350 public repositories matching this topic..." [level=2] [ref=e52]
+          - generic [ref=e53]:
+            - group [ref=e54]:
+              - 'button "Language: All" [ref=e55] [cursor=pointer]'
+            - group [ref=e56]:
+              - 'button "Sort: Most stars" [ref=e57] [cursor=pointer]'
+          - article [ref=e58]:
+            - generic [ref=e60]:
+              - generic [ref=e61]:
+                - img [ref=e63]
+                - heading "bosima / FireflySoft.RateLimit" [level=3] [ref=e65]:
+                  - link "bosima" [ref=e66] [cursor=pointer]:
+                    - /url: /bosima
+                  - text: /
+                  - link "FireflySoft.RateLimit" [ref=e67] [cursor=pointer]:
+                    - /url: /bosima/FireflySoft.RateLimit
+              - link "You must be signed in to star a repository" [ref=e70] [cursor=pointer]:
+                - /url: /login?return_to=%2Fbosima%2FFireflySoft.RateLimit
+                - img [ref=e71]
+                - text: Star
+                - generic "159 users starred this repository" [ref=e73]: "159"
+            - 'navigation "Repository menu: bosima/FireflySoft.RateLimit" [ref=e74]':
+              - list [ref=e75]:
+                - listitem [ref=e76]:
+                  - link "Code" [ref=e77] [cursor=pointer]:
+                    - /url: /bosima/FireflySoft.RateLimit
+                    - img [ref=e78]
+                    - text: Code
+                - listitem [ref=e80]:
+                  - link "Issues" [ref=e81] [cursor=pointer]:
+                    - /url: /bosima/FireflySoft.RateLimit/issues
+                    - img [ref=e82]
+                    - text: Issues
+                - listitem [ref=e85]:
+                  - link "Pull requests" [ref=e86] [cursor=pointer]:
+                    - /url: /bosima/FireflySoft.RateLimit/pulls
+                    - img [ref=e87]
+                    - text: Pull requests
+            - generic [ref=e89]:
+              - paragraph [ref=e91]: It is a rate limiting library based on .Net standard.
+              - generic [ref=e92]:
+                - link "redis" [ref=e93] [cursor=pointer]:
+                  - /url: /topics/redis
+                - link "middleware" [ref=e94] [cursor=pointer]:
+                  - /url: /topics/middleware
+                - link "aspnetcore" [ref=e95] [cursor=pointer]:
+                  - /url: /topics/aspnetcore
+                - link "memory" [ref=e96] [cursor=pointer]:
+                  - /url: /topics/memory
+                - link "rate-limiting" [ref=e97] [cursor=pointer]:
+                  - /url: /topics/rate-limiting
+                - link "leaky-bucket" [ref=e98] [cursor=pointer]:
+                  - /url: /topics/leaky-bucket
+                - link "rate-limit" [ref=e99] [cursor=pointer]:
+                  - /url: /topics/rate-limit
+                - link "token-bucket" [ref=e100] [cursor=pointer]:
+                  - /url: /topics/token-bucket
+                - link "dotnet-framework" [ref=e101] [cursor=pointer]:
+                  - /url: /topics/dotnet-framework
+                - link "sliding-window" [ref=e102] [cursor=pointer]:
+                  - /url: /topics/sliding-window
+                - link "fixed-window" [ref=e103] [cursor=pointer]:
+                  - /url: /topics/fixed-window
+              - list [ref=e105]:
+                - listitem [ref=e106]: Updated Jul 2, 2022on Jul 2, 2022
+                - listitem [ref=e107]:
+                  - generic [ref=e108]: C#
+          - article [ref=e110]:
+            - generic [ref=e112]:
+              - generic [ref=e113]:
+                - img [ref=e115]
+                - heading "reugn / equalizer" [level=3] [ref=e117]:
+                  - link "reugn" [ref=e118] [cursor=pointer]:
+                    - /url: /reugn
+                  - text: /
+                  - link "equalizer" [ref=e119] [cursor=pointer]:
+                    - /url: /reugn/equalizer
+              - link "You must be signed in to star a repository" [ref=e122] [cursor=pointer]:
+                - /url: /login?return_to=%2Freugn%2Fequalizer
+                - img [ref=e123]
+                - text: Star
+                - generic "89 users starred this repository" [ref=e125]: "89"
+            - 'navigation "Repository menu: reugn/equalizer" [ref=e126]':
+              - list [ref=e127]:
+                - listitem [ref=e128]:
+                  - link "Code" [ref=e129] [cursor=pointer]:
+                    - /url: /reugn/equalizer
+                    - img [ref=e130]
+                    - text: Code
+                - listitem [ref=e132]:
+                  - link "Issues" [ref=e133] [cursor=pointer]:
+                    - /url: /reugn/equalizer/issues
+                    - img [ref=e134]
+                    - text: Issues
+                - listitem [ref=e137]:
+                  - link "Pull requests" [ref=e138] [cursor=pointer]:
+                    - /url: /reugn/equalizer/pulls
+                    - img [ref=e139]
+                    - text: Pull requests
+            - generic [ref=e141]:
+              - paragraph [ref=e143]: A set of performant rate limiters for Go
+              - generic [ref=e144]:
+                - link "api" [ref=e145] [cursor=pointer]:
+                  - /url: /topics/api
+                - link "rate-limiting" [ref=e146] [cursor=pointer]:
+                  - /url: /topics/rate-limiting
+                - link "throttle" [ref=e147] [cursor=pointer]:
+                  - /url: /topics/throttle
+                - link "rate" [ref=e148] [cursor=pointer]:
+                  - /url: /topics/rate
+                - link "rate-limit" [ref=e149] [cursor=pointer]:
+                  - /url: /topics/rate-limit
+                - link "quota" [ref=e150] [cursor=pointer]:
+                  - /url: /topics/quota
+                - link "throttling" [ref=e151] [cursor=pointer]:
+                  - /url: /topics/throttling
+                - link "rate-limiter" [ref=e152] [cursor=pointer]:
+                  - /url: /topics/rate-limiter
+                - link "throttler" [ref=e153] [cursor=pointer]:
+                  - /url: /topics/throttler
+                - link "ratelimiter" [ref=e154] [cursor=pointer]:
+                  - /url: /topics/ratelimiter
+                - link "tokenbucket" [ref=e155] [cursor=pointer]:
+                  - /url: /topics/tokenbucket
+                - link "sliding-window" [ref=e156] [cursor=pointer]:
+                  - /url: /topics/sliding-window
+                - link "ratelimit" [ref=e157] [cursor=pointer]:
+                  - /url: /topics/ratelimit
+                - link "quotas" [ref=e158] [cursor=pointer]:
+                  - /url: /topics/quotas
+              - list [ref=e160]:
+                - listitem [ref=e161]: Updated Mar 14, 2024on Mar 14, 2024
+                - listitem [ref=e162]:
+                  - generic [ref=e163]: Go
+          - article [ref=e165]:
+            - generic [ref=e167]:
+              - generic [ref=e168]:
+                - img [ref=e170]
+                - heading "MathisWellmann / sliding_features-rs" [level=3] [ref=e172]:
+                  - link "MathisWellmann" [ref=e173] [cursor=pointer]:
+                    - /url: /MathisWellmann
+                  - text: /
+                  - link "sliding_features-rs" [ref=e174] [cursor=pointer]:
+                    - /url: /MathisWellmann/sliding_features-rs
+              - link "You must be signed in to star a repository" [ref=e177] [cursor=pointer]:
+                - /url: /login?return_to=%2FMathisWellmann%2Fsliding_features-rs
+                - img [ref=e178]
+                - text: Star
+                - generic "75 users starred this repository" [ref=e180]: "75"
+            - 'navigation "Repository menu: MathisWellmann/sliding_features-rs" [ref=e181]':
+              - list [ref=e182]:
+                - listitem [ref=e183]:
+                  - link "Code" [ref=e184] [cursor=pointer]:
+                    - /url: /MathisWellmann/sliding_features-rs
+                    - img [ref=e185]
+                    - text: Code
+                - listitem [ref=e187]:
+                  - link "Issues" [ref=e188] [cursor=pointer]:
+                    - /url: /MathisWellmann/sliding_features-rs/issues
+                    - img [ref=e189]
+                    - text: Issues
+                - listitem [ref=e192]:
+                  - link "Pull requests" [ref=e193] [cursor=pointer]:
+                    - /url: /MathisWellmann/sliding_features-rs/pulls
+                    - img [ref=e194]
+                    - text: Pull requests
+            - generic [ref=e196]:
+              - paragraph [ref=e198]: Modular, chainable sliding windows with various signal processing functions such as normalization, RSI, ROC and other technical indicators.
+              - generic [ref=e199]:
+                - link "modular" [ref=e200] [cursor=pointer]:
+                  - /url: /topics/modular
+                - link "signal-processing" [ref=e201] [cursor=pointer]:
+                  - /url: /topics/signal-processing
+                - link "technical-analysis" [ref=e202] [cursor=pointer]:
+                  - /url: /topics/technical-analysis
+                - link "ta-lib" [ref=e203] [cursor=pointer]:
+                  - /url: /topics/ta-lib
+                - link "technical-indicators" [ref=e204] [cursor=pointer]:
+                  - /url: /topics/technical-indicators
+                - link "indicators" [ref=e205] [cursor=pointer]:
+                  - /url: /topics/indicators
+                - link "sliding-window" [ref=e206] [cursor=pointer]:
+                  - /url: /topics/sliding-window
+              - list [ref=e208]:
+                - listitem [ref=e209]: Updated Feb 18, 2026on Feb 19
+                - listitem [ref=e210]:
+                  - generic [ref=e211]: Rust
+          - article [ref=e213]:
+            - generic [ref=e215]:
+              - generic [ref=e216]:
+                - img [ref=e218]
+                - heading "sergeyleschev / leetcode-swift" [level=3] [ref=e220]:
+                  - link "sergeyleschev" [ref=e221] [cursor=pointer]:
+                    - /url: /sergeyleschev
+                  - text: /
+                  - link "leetcode-swift" [ref=e222] [cursor=pointer]:
+                    - /url: /sergeyleschev/leetcode-swift
+              - link "You must be signed in to star a repository" [ref=e225] [cursor=pointer]:
+                - /url: /login?return_to=%2Fsergeyleschev%2Fleetcode-swift
+                - img [ref=e226]
+                - text: Star
+                - generic "68 users starred this repository" [ref=e228]: "68"
+            - 'navigation "Repository menu: sergeyleschev/leetcode-swift" [ref=e229]':
+              - list [ref=e230]:
+                - listitem [ref=e231]:
+                  - link "Code" [ref=e232] [cursor=pointer]:
+                    - /url: /sergeyleschev/leetcode-swift
+                    - img [ref=e233]
+                    - text: Code
+                - listitem [ref=e235]:
+                  - link "Issues" [ref=e236] [cursor=pointer]:
+                    - /url: /sergeyleschev/leetcode-swift/issues
+                    - img [ref=e237]
+                    - text: Issues
+                - listitem [ref=e240]:
+                  - link "Pull requests" [ref=e241] [cursor=pointer]:
+                    - /url: /sergeyleschev/leetcode-swift/pulls
+                    - img [ref=e242]
+                    - text: Pull requests
+            - generic [ref=e244]:
+              - paragraph [ref=e246]: "TOP 200 #Dev 🏆 LeetCode, Solutions in  Swift, Shell, Database (T-SQL, PL/SQL, MySQL), Concurrency (Python3). @ S. Leschev. Google Engineering Level: L6+"
+              - generic [ref=e247]:
+                - link "shell" [ref=e248] [cursor=pointer]:
+                  - /url: /topics/shell
+                - link "swift" [ref=e249] [cursor=pointer]:
+                  - /url: /topics/swift
+                - link "tree" [ref=e250] [cursor=pointer]:
+                  - /url: /topics/tree
+                - link "sql" [ref=e251] [cursor=pointer]:
+                  - /url: /topics/sql
+                - link "linked-list" [ref=e252] [cursor=pointer]:
+                  - /url: /topics/linked-list
+                - link "stack" [ref=e253] [cursor=pointer]:
+                  - /url: /topics/stack
+                - link "queue" [ref=e254] [cursor=pointer]:
+                  - /url: /topics/queue
+                - link "oracle" [ref=e255] [cursor=pointer]:
+                  - /url: /topics/oracle
+                - link "hash" [ref=e256] [cursor=pointer]:
+                  - /url: /topics/hash
+                - link "sort" [ref=e257] [cursor=pointer]:
+                  - /url: /topics/sort
+                - link "dfs" [ref=e258] [cursor=pointer]:
+                  - /url: /topics/dfs
+                - link "heap" [ref=e259] [cursor=pointer]:
+                  - /url: /topics/heap
+                - link "bfs" [ref=e260] [cursor=pointer]:
+                  - /url: /topics/bfs
+                - link "hash-table" [ref=e261] [cursor=pointer]:
+                  - /url: /topics/hash-table
+                - link "binary-search" [ref=e262] [cursor=pointer]:
+                  - /url: /topics/binary-search
+                - link "t-sql" [ref=e263] [cursor=pointer]:
+                  - /url: /topics/t-sql
+                - link "two-pointers" [ref=e264] [cursor=pointer]:
+                  - /url: /topics/two-pointers
+                - link "sliding-window" [ref=e265] [cursor=pointer]:
+                  - /url: /topics/sliding-window
+                - link "greedy-problems" [ref=e266] [cursor=pointer]:
+                  - /url: /topics/greedy-problems
+                - link "sergeyleschev" [ref=e267] [cursor=pointer]:
+                  - /url: /topics/sergeyleschev
+              - list [ref=e269]:
+                - listitem [ref=e270]: Updated Jun 2, 2024on Jun 2, 2024
+                - listitem [ref=e271]:
+                  - generic [ref=e272]: Swift
+          - article [ref=e274]:
+            - generic [ref=e276]:
+              - generic [ref=e277]:
+                - img [ref=e279]
+                - heading "coinpaprika / ratelimiter" [level=3] [ref=e281]:
+                  - link "coinpaprika" [ref=e282] [cursor=pointer]:
+                    - /url: /coinpaprika
+                  - text: /
+                  - link "ratelimiter" [ref=e283] [cursor=pointer]:
+                    - /url: /coinpaprika/ratelimiter
+              - link "You must be signed in to star a repository" [ref=e286] [cursor=pointer]:
+                - /url: /login?return_to=%2Fcoinpaprika%2Fratelimiter
+                - img [ref=e287]
+                - text: Star
+                - generic "36 users starred this repository" [ref=e289]: "36"
+            - 'navigation "Repository menu: coinpaprika/ratelimiter" [ref=e290]':
+              - list [ref=e291]:
+                - listitem [ref=e292]:
+                  - link "Code" [ref=e293] [cursor=pointer]:
+                    - /url: /coinpaprika/ratelimiter
+                    - img [ref=e294]
+                    - text: Code
+                - listitem [ref=e296]:
+                  - link "Issues" [ref=e297] [cursor=pointer]:
+                    - /url: /coinpaprika/ratelimiter/issues
+                    - img [ref=e298]
+                    - text: Issues
+                - listitem [ref=e301]:
+                  - link "Pull requests" [ref=e302] [cursor=pointer]:
+                    - /url: /coinpaprika/ratelimiter/pulls
+                    - img [ref=e303]
+                    - text: Pull requests
+            - generic [ref=e305]:
+              - paragraph [ref=e307]: Simple rate limiter for any resources
+              - generic [ref=e308]:
+                - link "go" [ref=e309] [cursor=pointer]:
+                  - /url: /topics/go
+                - link "golang" [ref=e310] [cursor=pointer]:
+                  - /url: /topics/golang
+                - link "middleware" [ref=e311] [cursor=pointer]:
+                  - /url: /topics/middleware
+                - link "library" [ref=e312] [cursor=pointer]:
+                  - /url: /topics/library
+                - link "concurrency" [ref=e313] [cursor=pointer]:
+                  - /url: /topics/concurrency
+                - link "rate-limiting" [ref=e314] [cursor=pointer]:
+                  - /url: /topics/rate-limiting
+                - link "throttling" [ref=e315] [cursor=pointer]:
+                  - /url: /topics/throttling
+                - link "rate-limiter" [ref=e316] [cursor=pointer]:
+                  - /url: /topics/rate-limiter
+                - link "sliding-window" [ref=e317] [cursor=pointer]:
+                  - /url: /topics/sliding-window
+              - list [ref=e319]:
+                - listitem [ref=e320]: Updated Oct 3, 2023on Oct 4, 2023
+                - listitem [ref=e321]:
+                  - generic [ref=e322]: Go
+          - article [ref=e324]:
+            - generic [ref=e326]:
+              - generic [ref=e327]:
+                - img [ref=e329]
+                - heading "VinayakJamadar / DSA" [level=3] [ref=e331]:
+                  - link "VinayakJamadar" [ref=e332] [cursor=pointer]:
+                    - /url: /VinayakJamadar
+                  - text: /
+                  - link "DSA" [ref=e333] [cursor=pointer]:
+                    - /url: /VinayakJamadar/DSA
+              - link "You must be signed in to star a repository" [ref=e336] [cursor=pointer]:
+                - /url: /login?return_to=%2FVinayakJamadar%2FDSA
+                - img [ref=e337]
+                - text: Star
+                - generic "27 users starred this repository" [ref=e339]: "27"
+            - 'navigation "Repository menu: VinayakJamadar/DSA" [ref=e340]':
+              - list [ref=e341]:
+                - listitem [ref=e342]:
+                  - link "Code" [ref=e343] [cursor=pointer]:
+                    - /url: /VinayakJamadar/DSA
+                    - img [ref=e344]
+                    - text: Code
+                - listitem [ref=e346]:
+                  - link "Issues" [ref=e347] [cursor=pointer]:
+                    - /url: /VinayakJamadar/DSA/issues
+                    - img [ref=e348]
+                    - text: Issues
+                - listitem [ref=e351]:
+                  - link "Pull requests" [ref=e352] [cursor=pointer]:
+                    - /url: /VinayakJamadar/DSA/pulls
+                    - img [ref=e353]
+                    - text: Pull requests
+                - listitem [ref=e355]:
+                  - link "Discussions" [ref=e356] [cursor=pointer]:
+                    - /url: /VinayakJamadar/DSA/discussions
+                    - img [ref=e357]
+                    - text: Discussions
+            - generic [ref=e359]:
+              - paragraph [ref=e361]: This is Data Structure and Algorithm - Notes and Codes Repo
+              - generic [ref=e362]:
+                - link "tree" [ref=e363] [cursor=pointer]:
+                  - /url: /topics/tree
+                - link "stack" [ref=e364] [cursor=pointer]:
+                  - /url: /topics/stack
+                - link "cpp" [ref=e365] [cursor=pointer]:
+                  - /url: /topics/cpp
+                - link "graph" [ref=e366] [cursor=pointer]:
+                  - /url: /topics/graph
+                - link "trie" [ref=e367] [cursor=pointer]:
+                  - /url: /topics/trie
+                - link "recursion" [ref=e368] [cursor=pointer]:
+                  - /url: /topics/recursion
+                - link "binary-search-tree" [ref=e369] [cursor=pointer]:
+                  - /url: /topics/binary-search-tree
+                - link "binary-tree" [ref=e370] [cursor=pointer]:
+                  - /url: /topics/binary-tree
+                - link "heap" [ref=e371] [cursor=pointer]:
+                  - /url: /topics/heap
+                - link "binary-search" [ref=e372] [cursor=pointer]:
+                  - /url: /topics/binary-search
+                - link "dp" [ref=e373] [cursor=pointer]:
+                  - /url: /topics/dp
+                - link "dsa" [ref=e374] [cursor=pointer]:
+                  - /url: /topics/dsa
+                - link "sliding-window" [ref=e375] [cursor=pointer]:
+                  - /url: /topics/sliding-window
+                - link "dsu" [ref=e376] [cursor=pointer]:
+                  - /url: /topics/dsu
+                - link "striver" [ref=e377] [cursor=pointer]:
+                  - /url: /topics/striver
+                - link "aditya-verma" [ref=e378] [cursor=pointer]:
+                  - /url: /topics/aditya-verma
+                - link "takeuforward" [ref=e379] [cursor=pointer]:
+                  - /url: /topics/takeuforward
+              - list [ref=e381]:
+                - listitem [ref=e382]: Updated Aug 26, 2023on Aug 26, 2023
+                - listitem [ref=e383]:
+                  - generic [ref=e384]: C++
+          - article [ref=e386]:
+            - generic [ref=e388]:
+              - generic [ref=e389]:
+                - img [ref=e391]
+                - heading "sergeyleschev / leetcode-typescript" [level=3] [ref=e393]:
+                  - link "sergeyleschev" [ref=e394] [cursor=pointer]:
+                    - /url: /sergeyleschev
+                  - text: /
+                  - link "leetcode-typescript" [ref=e395] [cursor=pointer]:
+                    - /url: /sergeyleschev/leetcode-typescript
+              - link "You must be signed in to star a repository" [ref=e398] [cursor=pointer]:
+                - /url: /login?return_to=%2Fsergeyleschev%2Fleetcode-typescript
+                - img [ref=e399]
+                - text: Star
+                - generic "21 users starred this repository" [ref=e401]: "21"
+            - 'navigation "Repository menu: sergeyleschev/leetcode-typescript" [ref=e402]':
+              - list [ref=e403]:
+                - listitem [ref=e404]:
+                  - link "Code" [ref=e405] [cursor=pointer]:
+                    - /url: /sergeyleschev/leetcode-typescript
+                    - img [ref=e406]
+                    - text: Code
+                - listitem [ref=e408]:
+                  - link "Issues" [ref=e409] [cursor=pointer]:
+                    - /url: /sergeyleschev/leetcode-typescript/issues
+                    - img [ref=e410]
+                    - text: Issues
+                - listitem [ref=e413]:
+                  - link "Pull requests" [ref=e414] [cursor=pointer]:
+                    - /url: /sergeyleschev/leetcode-typescript/pulls
+                    - img [ref=e415]
+                    - text: Pull requests
+            - generic [ref=e417]:
+              - paragraph [ref=e419]: "TOP 200 #Dev 🏆 LeetCode, Solutions in TypeScript, Shell, Database (T-SQL, PL/SQL, MySQL), Concurrency (Python3). @ S. Leschev. Google Engineering Level: L6+"
+              - generic [ref=e420]:
+                - link "javascript" [ref=e421] [cursor=pointer]:
+                  - /url: /topics/javascript
+                - link "tree" [ref=e422] [cursor=pointer]:
+                  - /url: /topics/tree
+                - link "algorithm" [ref=e423] [cursor=pointer]:
+                  - /url: /topics/algorithm
+                - link "typescript" [ref=e424] [cursor=pointer]:
+                  - /url: /topics/typescript
+                - link "linked-list" [ref=e425] [cursor=pointer]:
+                  - /url: /topics/linked-list
+                - link "stack" [ref=e426] [cursor=pointer]:
+                  - /url: /topics/stack
+                - link "queue" [ref=e427] [cursor=pointer]:
+                  - /url: /topics/queue
+                - link "algorithms" [ref=e428] [cursor=pointer]:
+                  - /url: /topics/algorithms
+                - link "leetcode" [ref=e429] [cursor=pointer]:
+                  - /url: /topics/leetcode
+                - link "hash" [ref=e430] [cursor=pointer]:
+                  - /url: /topics/hash
+                - link "sort" [ref=e431] [cursor=pointer]:
+                  - /url: /topics/sort
+                - link "dfs" [ref=e432] [cursor=pointer]:
+                  - /url: /topics/dfs
+                - link "heap" [ref=e433] [cursor=pointer]:
+                  - /url: /topics/heap
+                - link "bfs" [ref=e434] [cursor=pointer]:
+                  - /url: /topics/bfs
+                - link "hash-table" [ref=e435] [cursor=pointer]:
+                  - /url: /topics/hash-table
+                - link "binary-search" [ref=e436] [cursor=pointer]:
+                  - /url: /topics/binary-search
+                - link "two-pointers" [ref=e437] [cursor=pointer]:
+                  - /url: /topics/two-pointers
+                - link "sliding-window" [ref=e438] [cursor=pointer]:
+                  - /url: /topics/sliding-window
+                - link "greedy-problems" [ref=e439] [cursor=pointer]:
+                  - /url: /topics/greedy-problems
+                - link "sergeyleschev" [ref=e440] [cursor=pointer]:
+                  - /url: /topics/sergeyleschev
+              - list [ref=e442]:
+                - listitem [ref=e443]: Updated Dec 11, 2024on Dec 11, 2024
+                - listitem [ref=e444]:
+                  - generic [ref=e445]: TypeScript
+          - article [ref=e447]:
+            - generic [ref=e449]:
+              - generic [ref=e450]:
+                - img [ref=e452]
+                - heading "Shareed2k / go_limiter" [level=3] [ref=e454]:
+                  - link "Shareed2k" [ref=e455] [cursor=pointer]:
+                    - /url: /Shareed2k
+                  - text: /
+                  - link "go_limiter" [ref=e456] [cursor=pointer]:
+                    - /url: /Shareed2k/go_limiter
+              - link "You must be signed in to star a repository" [ref=e459] [cursor=pointer]:
+                - /url: /login?return_to=%2FShareed2k%2Fgo_limiter
+                - img [ref=e460]
+                - text: Star
+                - generic "20 users starred this repository" [ref=e462]: "20"
+            - 'navigation "Repository menu: Shareed2k/go_limiter" [ref=e463]':
+              - list [ref=e464]:
+                - listitem [ref=e465]:
+                  - link "Code" [ref=e466] [cursor=pointer]:
+                    - /url: /Shareed2k/go_limiter
+                    - img [ref=e467]
+                    - text: Code
+                - listitem [ref=e469]:
+                  - link "Issues" [ref=e470] [cursor=pointer]:
+                    - /url: /Shareed2k/go_limiter/issues
+                    - img [ref=e471]
+                    - text: Issues
+                - listitem [ref=e474]:
+                  - link "Pull requests" [ref=e475] [cursor=pointer]:
+                    - /url: /Shareed2k/go_limiter/pulls
+                    - img [ref=e476]
+                    - text: Pull requests
+            - generic [ref=e478]:
+              - paragraph [ref=e480]: Rate limiting with few algorithms
+              - generic [ref=e481]:
+                - link "redis" [ref=e482] [cursor=pointer]:
+                  - /url: /topics/redis
+                - link "golang" [ref=e483] [cursor=pointer]:
+                  - /url: /topics/golang
+                - link "http" [ref=e484] [cursor=pointer]:
+                  - /url: /topics/http
+                - link "middleware" [ref=e485] [cursor=pointer]:
+                  - /url: /topics/middleware
+                - link "rate-limiting" [ref=e486] [cursor=pointer]:
+                  - /url: /topics/rate-limiting
+                - link "leaky-bucket" [ref=e487] [cursor=pointer]:
+                  - /url: /topics/leaky-bucket
+                - link "go-redis" [ref=e488] [cursor=pointer]:
+                  - /url: /topics/go-redis
+                - link "sliding-window" [ref=e489] [cursor=pointer]:
+                  - /url: /topics/sliding-window
+                - link "gcra" [ref=e490] [cursor=pointer]:
+                  - /url: /topics/gcra
+              - list [ref=e492]:
+                - listitem [ref=e493]: Updated Feb 29, 2024on Feb 29, 2024
+                - listitem [ref=e494]:
+                  - generic [ref=e495]: Go
+          - article [ref=e497]:
+            - generic [ref=e499]:
+              - generic [ref=e500]:
+                - img [ref=e502]
+                - heading "ckjellson / MTO_SW_LSTM" [level=3] [ref=e504]:
+                  - link "ckjellson" [ref=e505] [cursor=pointer]:
+                    - /url: /ckjellson
+                  - text: /
+                  - link "MTO_SW_LSTM" [ref=e506] [cursor=pointer]:
+                    - /url: /ckjellson/MTO_SW_LSTM
+              - link "You must be signed in to star a repository" [ref=e509] [cursor=pointer]:
+                - /url: /login?return_to=%2Fckjellson%2FMTO_SW_LSTM
+                - img [ref=e510]
+                - text: Star
+                - generic "20 users starred this repository" [ref=e512]: "20"
+            - 'navigation "Repository menu: ckjellson/MTO_SW_LSTM" [ref=e513]':
+              - list [ref=e514]:
+                - listitem [ref=e515]:
+                  - link "Code" [ref=e516] [cursor=pointer]:
+                    - /url: /ckjellson/MTO_SW_LSTM
+                    - img [ref=e517]
+                    - text: Code
+                - listitem [ref=e519]:
+                  - link "Issues" [ref=e520] [cursor=pointer]:
+                    - /url: /ckjellson/MTO_SW_LSTM/issues
+                    - img [ref=e521]
+                    - text: Issues
+                - listitem [ref=e524]:
+                  - link "Pull requests" [ref=e525] [cursor=pointer]:
+                    - /url: /ckjellson/MTO_SW_LSTM/pulls
+                    - img [ref=e526]
+                    - text: Pull requests
+            - generic [ref=e528]:
+              - paragraph [ref=e530]: Many-to-one sliding window LSTM implementation in Pytorch
+              - generic [ref=e531]:
+                - link "deep-learning" [ref=e532] [cursor=pointer]:
+                  - /url: /topics/deep-learning
+                - link "time-series" [ref=e533] [cursor=pointer]:
+                  - /url: /topics/time-series
+                - link "gpu" [ref=e534] [cursor=pointer]:
+                  - /url: /topics/gpu
+                - link "pytorch" [ref=e535] [cursor=pointer]:
+                  - /url: /topics/pytorch
+                - link "lstm" [ref=e536] [cursor=pointer]:
+                  - /url: /topics/lstm
+                - link "many-to-one" [ref=e537] [cursor=pointer]:
+                  - /url: /topics/many-to-one
+                - link "sliding-window" [ref=e538] [cursor=pointer]:
+                  - /url: /topics/sliding-window
+              - list [ref=e540]:
+                - listitem [ref=e541]: Updated Nov 4, 2021on Nov 4, 2021
+                - listitem [ref=e542]:
+                  - generic [ref=e543]: Python
+          - article [ref=e545]:
+            - generic [ref=e547]:
+              - generic [ref=e548]:
+                - img [ref=e550]
+                - heading "keilerkonzept / topk" [level=3] [ref=e552]:
+                  - link "keilerkonzept" [ref=e553] [cursor=pointer]:
+                    - /url: /keilerkonzept
+                  - text: /
+                  - link "topk" [ref=e554] [cursor=pointer]:
+                    - /url: /keilerkonzept/topk
+              - link "You must be signed in to star a repository" [ref=e557] [cursor=pointer]:
+                - /url: /login?return_to=%2Fkeilerkonzept%2Ftopk
+                - img [ref=e558]
+                - text: Star
+                - generic "18 users starred this repository" [ref=e560]: "18"
+            - 'navigation "Repository menu: keilerkonzept/topk" [ref=e561]':
+              - list [ref=e562]:
+                - listitem [ref=e563]:
+                  - link "Code" [ref=e564] [cursor=pointer]:
+                    - /url: /keilerkonzept/topk
+                    - img [ref=e565]
+                    - text: Code
+                - listitem [ref=e567]:
+                  - link "Issues" [ref=e568] [cursor=pointer]:
+                    - /url: /keilerkonzept/topk/issues
+                    - img [ref=e569]
+                    - text: Issues
+                - listitem [ref=e572]:
+                  - link "Pull requests" [ref=e573] [cursor=pointer]:
+                    - /url: /keilerkonzept/topk/pulls
+                    - img [ref=e574]
+                    - text: Pull requests
+            - generic [ref=e576]:
+              - paragraph [ref=e578]: Sliding-window and regular top-K sketches, based on HeavyKeeper
+              - generic [ref=e579]:
+                - link "go" [ref=e580] [cursor=pointer]:
+                  - /url: /topics/go
+                - link "golang" [ref=e581] [cursor=pointer]:
+                  - /url: /topics/golang
+                - link "sketch" [ref=e582] [cursor=pointer]:
+                  - /url: /topics/sketch
+                - link "top-k" [ref=e583] [cursor=pointer]:
+                  - /url: /topics/top-k
+                - link "probabilistic-data-structures" [ref=e584] [cursor=pointer]:
+                  - /url: /topics/probabilistic-data-structures
+                - link "sliding-window" [ref=e585] [cursor=pointer]:
+                  - /url: /topics/sliding-window
+                - link "heavy-hitters" [ref=e586] [cursor=pointer]:
+                  - /url: /topics/heavy-hitters
+                - link "heavykeeper" [ref=e587] [cursor=pointer]:
+                  - /url: /topics/heavykeeper
+                - link "heavy-keeper" [ref=e588] [cursor=pointer]:
+                  - /url: /topics/heavy-keeper
+              - list [ref=e590]:
+                - listitem [ref=e591]: Updated Apr 30, 2025on May 1, 2025
+                - listitem [ref=e592]:
+                  - generic [ref=e593]: Go
+          - article [ref=e595]:
+            - generic [ref=e597]:
+              - generic [ref=e598]:
+                - img [ref=e600]
+                - heading "DhananjayGore / leetcode" [level=3] [ref=e602]:
+                  - link "DhananjayGore" [ref=e603] [cursor=pointer]:
+                    - /url: /DhananjayGore
+                  - text: /
+                  - link "leetcode" [ref=e604] [cursor=pointer]:
+                    - /url: /DhananjayGore/leetcode
+              - link "You must be signed in to star a repository" [ref=e607] [cursor=pointer]:
+                - /url: /login?return_to=%2FDhananjayGore%2Fleetcode
+                - img [ref=e608]
+                - text: Star
+                - generic "17 users starred this repository" [ref=e610]: "17"
+            - 'navigation "Repository menu: DhananjayGore/leetcode" [ref=e611]':
+              - list [ref=e612]:
+                - listitem [ref=e613]:
+                  - link "Code" [ref=e614] [cursor=pointer]:
+                    - /url: /DhananjayGore/leetcode
+                    - img [ref=e615]
+                    - text: Code
+                - listitem [ref=e617]:
+                  - link "Issues" [ref=e618] [cursor=pointer]:
+                    - /url: /DhananjayGore/leetcode/issues
+                    - img [ref=e619]
+                    - text: Issues
+                - listitem [ref=e622]:
+                  - link "Pull requests" [ref=e623] [cursor=pointer]:
+                    - /url: /DhananjayGore/leetcode/pulls
+                    - img [ref=e624]
+                    - text: Pull requests
+            - generic [ref=e626]:
+              - paragraph [ref=e628]: This repo is having leetcode problems solution with explaination and also having the link to problems along with resources to learn and practice
+              - generic [ref=e629]:
+                - link "sorting" [ref=e630] [cursor=pointer]:
+                  - /url: /topics/sorting
+                - link "tree" [ref=e631] [cursor=pointer]:
+                  - /url: /topics/tree
+                - link "stack" [ref=e632] [cursor=pointer]:
+                  - /url: /topics/stack
+                - link "algorithms" [ref=e633] [cursor=pointer]:
+                  - /url: /topics/algorithms
+                - link "leetcode" [ref=e634] [cursor=pointer]:
+                  - /url: /topics/leetcode
+                - link "strings" [ref=e635] [cursor=pointer]:
+                  - /url: /topics/strings
+                - link "backtracking" [ref=e636] [cursor=pointer]:
+                  - /url: /topics/backtracking
+                - link "data-structures" [ref=e637] [cursor=pointer]:
+                  - /url: /topics/data-structures
+                - link "hashmap" [ref=e638] [cursor=pointer]:
+                  - /url: /topics/hashmap
+                - link "greedy" [ref=e639] [cursor=pointer]:
+                  - /url: /topics/greedy
+                - link "binary-search-tree" [ref=e640] [cursor=pointer]:
+                  - /url: /topics/binary-search-tree
+                - link "prefix-sum" [ref=e641] [cursor=pointer]:
+                  - /url: /topics/prefix-sum
+                - link "arrays" [ref=e642] [cursor=pointer]:
+                  - /url: /topics/arrays
+                - link "linkedlist" [ref=e643] [cursor=pointer]:
+                  - /url: /topics/linkedlist
+                - link "leetcode-solutions" [ref=e644] [cursor=pointer]:
+                  - /url: /topics/leetcode-solutions
+                - link "breadth-first-search" [ref=e645] [cursor=pointer]:
+                  - /url: /topics/breadth-first-search
+                - link "depth-first-search" [ref=e646] [cursor=pointer]:
+                  - /url: /topics/depth-first-search
+                - link "sliding-window" [ref=e647] [cursor=pointer]:
+                  - /url: /topics/sliding-window
+                - link "dymanic-programming" [ref=e648] [cursor=pointer]:
+                  - /url: /topics/dymanic-programming
+              - list [ref=e650]:
+                - listitem [ref=e651]: Updated May 20, 2022on May 20, 2022
+                - listitem [ref=e652]:
+                  - generic [ref=e653]: Java
+          - article [ref=e655]:
+            - generic [ref=e657]:
+              - generic [ref=e658]:
+                - img [ref=e660]
+                - heading "karygauss03 / Leetcode-Solutions" [level=3] [ref=e662]:
+                  - link "karygauss03" [ref=e663] [cursor=pointer]:
+                    - /url: /karygauss03
+                  - text: /
+                  - link "Leetcode-Solutions" [ref=e664] [cursor=pointer]:
+                    - /url: /karygauss03/Leetcode-Solutions
+              - link "You must be signed in to star a repository" [ref=e667] [cursor=pointer]:
+                - /url: /login?return_to=%2Fkarygauss03%2FLeetcode-Solutions
+                - img [ref=e668]
+                - text: Star
+                - generic "15 users starred this repository" [ref=e670]: "15"
+            - 'navigation "Repository menu: karygauss03/Leetcode-Solutions" [ref=e671]':
+              - list [ref=e672]:
+                - listitem [ref=e673]:
+                  - link "Code" [ref=e674] [cursor=pointer]:
+                    - /url: /karygauss03/Leetcode-Solutions
+                    - img [ref=e675]
+                    - text: Code
+                - listitem [ref=e677]:
+                  - link "Issues" [ref=e678] [cursor=pointer]:
+                    - /url: /karygauss03/Leetcode-Solutions/issues
+                    - img [ref=e679]
+                    - text: Issues
+                - listitem [ref=e682]:
+                  - link "Pull requests" [ref=e683] [cursor=pointer]:
+                    - /url: /karygauss03/Leetcode-Solutions/pulls
+                    - img [ref=e684]
+                    - text: Pull requests
+            - generic [ref=e686]:
+              - paragraph [ref=e688]: My Leetcode Solutions
+              - generic [ref=e689]:
+                - link "tree" [ref=e690] [cursor=pointer]:
+                  - /url: /topics/tree
+                - link "algorithms" [ref=e691] [cursor=pointer]:
+                  - /url: /topics/algorithms
+                - link "leetcode" [ref=e692] [cursor=pointer]:
+                  - /url: /topics/leetcode
+                - link "graph-algorithms" [ref=e693] [cursor=pointer]:
+                  - /url: /topics/graph-algorithms
+                - link "trie" [ref=e694] [cursor=pointer]:
+                  - /url: /topics/trie
+                - link "data-structures" [ref=e695] [cursor=pointer]:
+                  - /url: /topics/data-structures
+                - link "dfs" [ref=e696] [cursor=pointer]:
+                  - /url: /topics/dfs
+                - link "prefix-sum" [ref=e697] [cursor=pointer]:
+                  - /url: /topics/prefix-sum
+                - link "leetcode-solutions" [ref=e698] [cursor=pointer]:
+                  - /url: /topics/leetcode-solutions
+                - link "dijkstra" [ref=e699] [cursor=pointer]:
+                  - /url: /topics/dijkstra
+                - link "dynamic-programming" [ref=e700] [cursor=pointer]:
+                  - /url: /topics/dynamic-programming
+                - link "problem-solving" [ref=e701] [cursor=pointer]:
+                  - /url: /topics/problem-solving
+                - link "bfs" [ref=e702] [cursor=pointer]:
+                  - /url: /topics/bfs
+                - link "segment-tree" [ref=e703] [cursor=pointer]:
+                  - /url: /topics/segment-tree
+                - link "greedy-algorithm" [ref=e704] [cursor=pointer]:
+                  - /url: /topics/greedy-algorithm
+                - link "strongly-connected-components" [ref=e705] [cursor=pointer]:
+                  - /url: /topics/strongly-connected-components
+                - link "two-pointers" [ref=e706] [cursor=pointer]:
+                  - /url: /topics/two-pointers
+                - link "sliding-window" [ref=e707] [cursor=pointer]:
+                  - /url: /topics/sliding-window
+              - list [ref=e709]:
+                - listitem [ref=e710]: Updated Apr 4, 2025on Apr 4, 2025
+                - listitem [ref=e711]:
+                  - generic [ref=e712]: C++
+          - article [ref=e714]:
+            - generic [ref=e716]:
+              - generic [ref=e717]:
+                - img [ref=e719]
+                - heading "HiIAmTzeKean / streamsight" [level=3] [ref=e721]:
+                  - link "HiIAmTzeKean" [ref=e722] [cursor=pointer]:
+                    - /url: /HiIAmTzeKean
+                  - text: /
+                  - link "streamsight" [ref=e723] [cursor=pointer]:
+                    - /url: /HiIAmTzeKean/streamsight
+              - link "You must be signed in to star a repository" [ref=e726] [cursor=pointer]:
+                - /url: /login?return_to=%2FHiIAmTzeKean%2Fstreamsight
+                - img [ref=e727]
+                - text: Star
+                - generic "14 users starred this repository" [ref=e729]: "14"
+            - 'navigation "Repository menu: HiIAmTzeKean/streamsight" [ref=e730]':
+              - list [ref=e731]:
+                - listitem [ref=e732]:
+                  - link "Code" [ref=e733] [cursor=pointer]:
+                    - /url: /HiIAmTzeKean/streamsight
+                    - img [ref=e734]
+                    - text: Code
+                - listitem [ref=e736]:
+                  - link "Issues" [ref=e737] [cursor=pointer]:
+                    - /url: /HiIAmTzeKean/streamsight/issues
+                    - img [ref=e738]
+                    - text: Issues
+                - listitem [ref=e741]:
+                  - link "Pull requests" [ref=e742] [cursor=pointer]:
+                    - /url: /HiIAmTzeKean/streamsight/pulls
+                    - img [ref=e743]
+                    - text: Pull requests
+            - generic [ref=e745]:
+              - paragraph [ref=e747]: "Streamsight: a toolkit for offline evaluation of RecSys."
+              - generic [ref=e748]:
+                - link "toolkit" [ref=e749] [cursor=pointer]:
+                  - /url: /topics/toolkit
+                - link "evaluation" [ref=e750] [cursor=pointer]:
+                  - /url: /topics/evaluation
+                - link "recommender-system" [ref=e751] [cursor=pointer]:
+                  - /url: /topics/recommender-system
+                - link "sliding-window" [ref=e752] [cursor=pointer]:
+                  - /url: /topics/sliding-window
+              - list [ref=e754]:
+                - listitem [ref=e755]: Updated Jan 19, 2026on Jan 19
+                - listitem [ref=e756]:
+                  - generic [ref=e757]: Python
+          - article [ref=e759]:
+            - generic [ref=e761]:
+              - generic [ref=e762]:
+                - img [ref=e764]
+                - heading "sahandkhoshdel99 / Computer-Networks" [level=3] [ref=e766]:
+                  - link "sahandkhoshdel99" [ref=e767] [cursor=pointer]:
+                    - /url: /sahandkhoshdel99
+                  - text: /
+                  - link "Computer-Networks" [ref=e768] [cursor=pointer]:
+                    - /url: /sahandkhoshdel99/Computer-Networks
+              - link "You must be signed in to star a repository" [ref=e771] [cursor=pointer]:
+                - /url: /login?return_to=%2Fsahandkhoshdel99%2FComputer-Networks
+                - img [ref=e772]
+                - text: Star
+                - generic "13 users starred this repository" [ref=e774]: "13"
+            - 'navigation "Repository menu: sahandkhoshdel99/Computer-Networks" [ref=e775]':
+              - list [ref=e776]:
+                - listitem [ref=e777]:
+                  - link "Code" [ref=e778] [cursor=pointer]:
+                    - /url: /sahandkhoshdel99/Computer-Networks
+                    - img [ref=e779]
+                    - text: Code
+                - listitem [ref=e781]:
+                  - link "Issues" [ref=e782] [cursor=pointer]:
+                    - /url: /sahandkhoshdel99/Computer-Networks/issues
+                    - img [ref=e783]
+                    - text: Issues
+                - listitem [ref=e786]:
+                  - link "Pull requests" [ref=e787] [cursor=pointer]:
+                    - /url: /sahandkhoshdel99/Computer-Networks/pulls
+                    - img [ref=e788]
+                    - text: Pull requests
+            - generic [ref=e790]:
+              - paragraph [ref=e792]: Includes Final Project (Python), Wireshark Labs, and Theoretical HWs
+              - generic [ref=e793]:
+                - link "dns" [ref=e794] [cursor=pointer]:
+                  - /url: /topics/dns
+                - link "tcp" [ref=e795] [cursor=pointer]:
+                  - /url: /topics/tcp
+                - link "udp" [ref=e796] [cursor=pointer]:
+                  - /url: /topics/udp
+                - link "chatroom" [ref=e797] [cursor=pointer]:
+                  - /url: /topics/chatroom
+                - link "icmp" [ref=e798] [cursor=pointer]:
+                  - /url: /topics/icmp
+                - link "arp" [ref=e799] [cursor=pointer]:
+                  - /url: /topics/arp
+                - link "smtp-protocol" [ref=e800] [cursor=pointer]:
+                  - /url: /topics/smtp-protocol
+                - link "ethernet" [ref=e801] [cursor=pointer]:
+                  - /url: /topics/ethernet
+                - link "socket-programming" [ref=e802] [cursor=pointer]:
+                  - /url: /topics/socket-programming
+                - link "distance-vector-routing" [ref=e803] [cursor=pointer]:
+                  - /url: /topics/distance-vector-routing
+                - link "spanning-tree-protocol" [ref=e804] [cursor=pointer]:
+                  - /url: /topics/spanning-tree-protocol
+                - link "sliding-window" [ref=e805] [cursor=pointer]:
+                  - /url: /topics/sliding-window
+                - link "leaky-bucket-algorithm" [ref=e806] [cursor=pointer]:
+                  - /url: /topics/leaky-bucket-algorithm
+                - link "token-bucket-algorithm" [ref=e807] [cursor=pointer]:
+                  - /url: /topics/token-bucket-algorithm
+                - link "djikstra-algorithm" [ref=e808] [cursor=pointer]:
+                  - /url: /topics/djikstra-algorithm
+                - link "token-ring" [ref=e809] [cursor=pointer]:
+                  - /url: /topics/token-ring
+                - link "ad-hoc-network" [ref=e810] [cursor=pointer]:
+                  - /url: /topics/ad-hoc-network
+                - link "adaptive-tree-walk" [ref=e811] [cursor=pointer]:
+                  - /url: /topics/adaptive-tree-walk
+                - link "bitmap-protocol" [ref=e812] [cursor=pointer]:
+                  - /url: /topics/bitmap-protocol
+              - list [ref=e814]:
+                - listitem [ref=e815]: Updated Sep 27, 2021on Sep 27, 2021
+                - listitem [ref=e816]:
+                  - generic [ref=e817]: Python
+          - article [ref=e819]:
+            - generic [ref=e821]:
+              - generic [ref=e822]:
+                - img [ref=e824]
+                - heading "Jae7777 / Leetcode" [level=3] [ref=e826]:
+                  - link "Jae7777" [ref=e827] [cursor=pointer]:
+                    - /url: /Jae7777
+                  - text: /
+                  - link "Leetcode" [ref=e828] [cursor=pointer]:
+                    - /url: /Jae7777/Leetcode
+              - link "You must be signed in to star a repository" [ref=e831] [cursor=pointer]:
+                - /url: /login?return_to=%2FJae7777%2FLeetcode
+                - img [ref=e832]
+                - text: Star
+                - generic "11 users starred this repository" [ref=e834]: "11"
+            - 'navigation "Repository menu: Jae7777/Leetcode" [ref=e835]':
+              - list [ref=e836]:
+                - listitem [ref=e837]:
+                  - link "Code" [ref=e838] [cursor=pointer]:
+                    - /url: /Jae7777/Leetcode
+                    - img [ref=e839]
+                    - text: Code
+                - listitem [ref=e841]:
+                  - link "Issues" [ref=e842] [cursor=pointer]:
+                    - /url: /Jae7777/Leetcode/issues
+                    - img [ref=e843]
+                    - text: Issues
+                - listitem [ref=e846]:
+                  - link "Pull requests" [ref=e847] [cursor=pointer]:
+                    - /url: /Jae7777/Leetcode/pulls
+                    - img [ref=e848]
+                    - text: Pull requests
+            - generic [ref=e850]:
+              - paragraph [ref=e852]: My solutions to Leetcode problems
+              - generic [ref=e853]:
+                - link "python" [ref=e854] [cursor=pointer]:
+                  - /url: /topics/python
+                - link "linked-list" [ref=e855] [cursor=pointer]:
+                  - /url: /topics/linked-list
+                - link "stack" [ref=e856] [cursor=pointer]:
+                  - /url: /topics/stack
+                - link "graphs" [ref=e857] [cursor=pointer]:
+                  - /url: /topics/graphs
+                - link "priority-queue" [ref=e858] [cursor=pointer]:
+                  - /url: /topics/priority-queue
+                - link "backtracking" [ref=e859] [cursor=pointer]:
+                  - /url: /topics/backtracking
+                - link "bit-manipulation" [ref=e860] [cursor=pointer]:
+                  - /url: /topics/bit-manipulation
+                - link "heap" [ref=e861] [cursor=pointer]:
+                  - /url: /topics/heap
+                - link "dynamic-programming" [ref=e862] [cursor=pointer]:
+                  - /url: /topics/dynamic-programming
+                - link "trees" [ref=e863] [cursor=pointer]:
+                  - /url: /topics/trees
+                - link "intervals" [ref=e864] [cursor=pointer]:
+                  - /url: /topics/intervals
+                - link "greedy-algorithms" [ref=e865] [cursor=pointer]:
+                  - /url: /topics/greedy-algorithms
+                - link "binary-search" [ref=e866] [cursor=pointer]:
+                  - /url: /topics/binary-search
+                - link "tries" [ref=e867] [cursor=pointer]:
+                  - /url: /topics/tries
+                - link "two-pointers" [ref=e868] [cursor=pointer]:
+                  - /url: /topics/two-pointers
+                - link "sliding-window" [ref=e869] [cursor=pointer]:
+                  - /url: /topics/sliding-window
+                - link "data-structure-algorithms" [ref=e870] [cursor=pointer]:
+                  - /url: /topics/data-structure-algorithms
+                - link "arrays-and-hashing" [ref=e871] [cursor=pointer]:
+                  - /url: /topics/arrays-and-hashing
+                - link "advanced-graphs" [ref=e872] [cursor=pointer]:
+                  - /url: /topics/advanced-graphs
+                - link "math-and-geometry" [ref=e873] [cursor=pointer]:
+                  - /url: /topics/math-and-geometry
+              - list [ref=e875]:
+                - listitem [ref=e876]: Updated Mar 10, 2025on Mar 11, 2025
+                - listitem [ref=e877]:
+                  - generic [ref=e878]: Python
+          - article [ref=e880]:
+            - generic [ref=e882]:
+              - generic [ref=e883]:
+                - img [ref=e885]
+                - heading "MaxLSB / flash-attn2" [level=3] [ref=e887]:
+                  - link "MaxLSB" [ref=e888] [cursor=pointer]:
+                    - /url: /MaxLSB
+                  - text: /
+                  - link "flash-attn2" [ref=e889] [cursor=pointer]:
+                    - /url: /MaxLSB/flash-attn2
+              - link "You must be signed in to star a repository" [ref=e892] [cursor=pointer]:
+                - /url: /login?return_to=%2FMaxLSB%2Fflash-attn2
+                - img [ref=e893]
+                - text: Star
+                - generic "11 users starred this repository" [ref=e895]: "11"
+            - 'navigation "Repository menu: MaxLSB/flash-attn2" [ref=e896]':
+              - list [ref=e897]:
+                - listitem [ref=e898]:
+                  - link "Code" [ref=e899] [cursor=pointer]:
+                    - /url: /MaxLSB/flash-attn2
+                    - img [ref=e900]
+                    - text: Code
+                - listitem [ref=e902]:
+                  - link "Issues" [ref=e903] [cursor=pointer]:
+                    - /url: /MaxLSB/flash-attn2/issues
+                    - img [ref=e904]
+                    - text: Issues
+                - listitem [ref=e907]:
+                  - link "Pull requests" [ref=e908] [cursor=pointer]:
+                    - /url: /MaxLSB/flash-attn2/pulls
+                    - img [ref=e909]
+                    - text: Pull requests
+            - generic [ref=e911]:
+              - paragraph [ref=e913]: FlashAttention for sliding window attention in Triton (fwd + bwd pass)
+              - generic [ref=e914]:
+                - link "python" [ref=e915] [cursor=pointer]:
+                  - /url: /topics/python
+                - link "deep-learning" [ref=e916] [cursor=pointer]:
+                  - /url: /topics/deep-learning
+                - link "pytorch" [ref=e917] [cursor=pointer]:
+                  - /url: /topics/pytorch
+                - link "triton" [ref=e918] [cursor=pointer]:
+                  - /url: /topics/triton
+                - link "sliding-window" [ref=e919] [cursor=pointer]:
+                  - /url: /topics/sliding-window
+                - link "flash-attention-2" [ref=e920] [cursor=pointer]:
+                  - /url: /topics/flash-attention-2
+                - link "flashattention" [ref=e921] [cursor=pointer]:
+                  - /url: /topics/flashattention
+              - list [ref=e923]:
+                - listitem [ref=e924]: Updated Jun 25, 2025on Jun 25, 2025
+                - listitem [ref=e925]:
+                  - generic [ref=e926]: Python
+          - article [ref=e928]:
+            - generic [ref=e930]:
+              - generic [ref=e931]:
+                - img [ref=e933]
+                - heading "reza-ghaderi / CHA-CFAR" [level=3] [ref=e935]:
+                  - link "reza-ghaderi" [ref=e936] [cursor=pointer]:
+                    - /url: /reza-ghaderi
+                  - text: /
+                  - link "CHA-CFAR" [ref=e937] [cursor=pointer]:
+                    - /url: /reza-ghaderi/CHA-CFAR
+              - link "You must be signed in to star a repository" [ref=e940] [cursor=pointer]:
+                - /url: /login?return_to=%2Freza-ghaderi%2FCHA-CFAR
+                - img [ref=e941]
+                - text: Star
+                - generic "11 users starred this repository" [ref=e943]: "11"
+            - 'navigation "Repository menu: reza-ghaderi/CHA-CFAR" [ref=e944]':
+              - list [ref=e945]:
+                - listitem [ref=e946]:
+                  - link "Code" [ref=e947] [cursor=pointer]:
+                    - /url: /reza-ghaderi/CHA-CFAR
+                    - img [ref=e948]
+                    - text: Code
+                - listitem [ref=e950]:
+                  - link "Issues" [ref=e951] [cursor=pointer]:
+                    - /url: /reza-ghaderi/CHA-CFAR/issues
+                    - img [ref=e952]
+                    - text: Issues
+                - listitem [ref=e955]:
+                  - link "Pull requests" [ref=e956] [cursor=pointer]:
+                    - /url: /reza-ghaderi/CHA-CFAR/pulls
+                    - img [ref=e957]
+                    - text: Pull requests
+            - generic [ref=e959]:
+              - paragraph [ref=e961]: Robust CFAR detector based on censored harmonic averaging
+              - generic [ref=e962]:
+                - link "detector" [ref=e963] [cursor=pointer]:
+                  - /url: /topics/detector
+                - link "robust" [ref=e964] [cursor=pointer]:
+                  - /url: /topics/robust
+                - link "ship" [ref=e965] [cursor=pointer]:
+                  - /url: /topics/ship
+                - link "sar" [ref=e966] [cursor=pointer]:
+                  - /url: /topics/sar
+                - link "vessel" [ref=e967] [cursor=pointer]:
+                  - /url: /topics/vessel
+                - link "target-detection" [ref=e968] [cursor=pointer]:
+                  - /url: /topics/target-detection
+                - link "sliding-window" [ref=e969] [cursor=pointer]:
+                  - /url: /topics/sliding-window
+                - link "sar-images" [ref=e970] [cursor=pointer]:
+                  - /url: /topics/sar-images
+                - link "cfar" [ref=e971] [cursor=pointer]:
+                  - /url: /topics/cfar
+                - link "ship-detection" [ref=e972] [cursor=pointer]:
+                  - /url: /topics/ship-detection
+                - link "cfar-processing" [ref=e973] [cursor=pointer]:
+                  - /url: /topics/cfar-processing
+                - link "cha-cfar" [ref=e974] [cursor=pointer]:
+                  - /url: /topics/cha-cfar
+                - link "os-cfar" [ref=e975] [cursor=pointer]:
+                  - /url: /topics/os-cfar
+              - list [ref=e977]:
+                - listitem [ref=e978]: Updated Sep 1, 2023on Sep 1, 2023
+                - listitem [ref=e979]:
+                  - generic [ref=e980]: MATLAB
+          - article [ref=e982]:
+            - generic [ref=e984]:
+              - generic [ref=e985]:
+                - img [ref=e987]
+                - heading "bharadwaj-chukkala / Road-Lanes-detection-and-Turn-Prediction-using-Sliding-Window-Algorithm" [level=3] [ref=e989]:
+                  - link "bharadwaj-chukkala" [ref=e990] [cursor=pointer]:
+                    - /url: /bharadwaj-chukkala
+                  - text: /
+                  - link "Road-Lanes-detection-and-Turn-Prediction-using-Sliding-Window-Algorithm" [ref=e991] [cursor=pointer]:
+                    - /url: /bharadwaj-chukkala/Road-Lanes-detection-and-Turn-Prediction-using-Sliding-Window-Algorithm
+              - link "You must be signed in to star a repository" [ref=e994] [cursor=pointer]:
+                - /url: /login?return_to=%2Fbharadwaj-chukkala%2FRoad-Lanes-detection-and-Turn-Prediction-using-Sliding-Window-Algorithm
+                - img [ref=e995]
+                - text: Star
+                - generic "10 users starred this repository" [ref=e997]: "10"
+            - 'navigation "Repository menu: bharadwaj-chukkala/Road-Lanes-detection-and-Turn-Prediction-using-Sliding-Window-Algorithm" [ref=e998]':
+              - list [ref=e999]:
+                - listitem [ref=e1000]:
+                  - link "Code" [ref=e1001] [cursor=pointer]:
+                    - /url: /bharadwaj-chukkala/Road-Lanes-detection-and-Turn-Prediction-using-Sliding-Window-Algorithm
+                    - img [ref=e1002]
+                    - text: Code
+                - listitem [ref=e1004]:
+                  - link "Issues" [ref=e1005] [cursor=pointer]:
+                    - /url: /bharadwaj-chukkala/Road-Lanes-detection-and-Turn-Prediction-using-Sliding-Window-Algorithm/issues
+                    - img [ref=e1006]
+                    - text: Issues
+                - listitem [ref=e1009]:
+                  - link "Pull requests" [ref=e1010] [cursor=pointer]:
+                    - /url: /bharadwaj-chukkala/Road-Lanes-detection-and-Turn-Prediction-using-Sliding-Window-Algorithm/pulls
+                    - img [ref=e1011]
+                    - text: Pull requests
+            - generic [ref=e1013]:
+              - paragraph [ref=e1015]: "ENPM673: Project 2 Problem 2 and 3. In this project I detect the road lanes by performing image transformations on each frame of continuous input, further developing the program to also visually predict upcoming turns"
+              - generic [ref=e1016]:
+                - link "python" [ref=e1017] [cursor=pointer]:
+                  - /url: /topics/python
+                - link "opencv" [ref=e1018] [cursor=pointer]:
+                  - /url: /topics/opencv
+                - link "numpy" [ref=e1019] [cursor=pointer]:
+                  - /url: /topics/numpy
+                - link "lane-detection" [ref=e1020] [cursor=pointer]:
+                  - /url: /topics/lane-detection
+                - link "hough-transform" [ref=e1021] [cursor=pointer]:
+                  - /url: /topics/hough-transform
+                - link "canny-edge-detection" [ref=e1022] [cursor=pointer]:
+                  - /url: /topics/canny-edge-detection
+                - link "road-detection" [ref=e1023] [cursor=pointer]:
+                  - /url: /topics/road-detection
+                - link "lane-lines-detection" [ref=e1024] [cursor=pointer]:
+                  - /url: /topics/lane-lines-detection
+                - link "gaussian-blur" [ref=e1025] [cursor=pointer]:
+                  - /url: /topics/gaussian-blur
+                - link "sliding-window" [ref=e1026] [cursor=pointer]:
+                  - /url: /topics/sliding-window
+                - link "turn-prediction" [ref=e1027] [cursor=pointer]:
+                  - /url: /topics/turn-prediction
+                - link "polynomial-curve-fitting" [ref=e1028] [cursor=pointer]:
+                  - /url: /topics/polynomial-curve-fitting
+              - list [ref=e1030]:
+                - listitem [ref=e1031]: Updated Dec 19, 2022on Dec 19, 2022
+                - listitem [ref=e1032]:
+                  - generic [ref=e1033]: Python
+          - article [ref=e1035]:
+            - generic [ref=e1037]:
+              - generic [ref=e1038]:
+                - img [ref=e1040]
+                - heading "vladlen-codes / ratelink" [level=3] [ref=e1042]:
+                  - link "vladlen-codes" [ref=e1043] [cursor=pointer]:
+                    - /url: /vladlen-codes
+                  - text: /
+                  - link "ratelink" [ref=e1044] [cursor=pointer]:
+                    - /url: /vladlen-codes/ratelink
+              - generic [ref=e1045]:
+                - link "Sponsor @vladlen-codes" [ref=e1046] [cursor=pointer]:
+                  - /url: /sponsors/vladlen-codes
+                  - generic [ref=e1048]:
+                    - img [ref=e1049]
+                    - text: Sponsor
+                - link "You must be signed in to star a repository" [ref=e1052] [cursor=pointer]:
+                  - /url: /login?return_to=%2Fvladlen-codes%2Fratelink
+                  - img [ref=e1053]
+                  - text: Star
+                  - generic "9 users starred this repository" [ref=e1055]: "9"
+            - 'navigation "Repository menu: vladlen-codes/ratelink" [ref=e1056]':
+              - list [ref=e1057]:
+                - listitem [ref=e1058]:
+                  - link "Code" [ref=e1059] [cursor=pointer]:
+                    - /url: /vladlen-codes/ratelink
+                    - img [ref=e1060]
+                    - text: Code
+                - listitem [ref=e1062]:
+                  - link "Issues" [ref=e1063] [cursor=pointer]:
+                    - /url: /vladlen-codes/ratelink/issues
+                    - img [ref=e1064]
+                    - text: Issues
+                - listitem [ref=e1067]:
+                  - link "Pull requests" [ref=e1068] [cursor=pointer]:
+                    - /url: /vladlen-codes/ratelink/pulls
+                    - img [ref=e1069]
+                    - text: Pull requests
+                - listitem [ref=e1071]:
+                  - link "Discussions" [ref=e1072] [cursor=pointer]:
+                    - /url: /vladlen-codes/ratelink/discussions
+                    - img [ref=e1073]
+                    - text: Discussions
+            - generic [ref=e1075]:
+              - paragraph [ref=e1077]: A production-grade rate limiter module with 5+ algorithms (Token Bucket, Sliding Window, Leaky Bucket, etc.) with multi-backend support (Redis, memory, distributed).
+              - generic [ref=e1078]:
+                - link "python" [ref=e1079] [cursor=pointer]:
+                  - /url: /topics/python
+                - link "redis" [ref=e1080] [cursor=pointer]:
+                  - /url: /topics/redis
+                - link "flask" [ref=e1081] [cursor=pointer]:
+                  - /url: /topics/flask
+                - link "distributed-systems" [ref=e1082] [cursor=pointer]:
+                  - /url: /topics/distributed-systems
+                - link "django" [ref=e1083] [cursor=pointer]:
+                  - /url: /topics/django
+                - link "microservices" [ref=e1084] [cursor=pointer]:
+                  - /url: /topics/microservices
+                - link "api-gateway" [ref=e1085] [cursor=pointer]:
+                  - /url: /topics/api-gateway
+                - link "rate-limiting" [ref=e1086] [cursor=pointer]:
+                  - /url: /topics/rate-limiting
+                - link "prometheus" [ref=e1087] [cursor=pointer]:
+                  - /url: /topics/prometheus
+                - link "python3" [ref=e1088] [cursor=pointer]:
+                  - /url: /topics/python3
+                - link "production-ready" [ref=e1089] [cursor=pointer]:
+                  - /url: /topics/production-ready
+                - link "throttling" [ref=e1090] [cursor=pointer]:
+                  - /url: /topics/throttling
+                - link "rate-limiter" [ref=e1091] [cursor=pointer]:
+                  - /url: /topics/rate-limiter
+                - link "token-bucket" [ref=e1092] [cursor=pointer]:
+                  - /url: /topics/token-bucket
+                - link "observability" [ref=e1093] [cursor=pointer]:
+                  - /url: /topics/observability
+                - link "type-hints" [ref=e1094] [cursor=pointer]:
+                  - /url: /topics/type-hints
+                - link "sliding-window" [ref=e1095] [cursor=pointer]:
+                  - /url: /topics/sliding-window
+                - link "fastapi" [ref=e1096] [cursor=pointer]:
+                  - /url: /topics/fastapi
+                - link "api-rate-limiting" [ref=e1097] [cursor=pointer]:
+                  - /url: /topics/api-rate-limiting
+              - list [ref=e1099]:
+                - listitem [ref=e1100]: Updated Mar 19, 2026on Mar 19
+                - listitem [ref=e1101]:
+                  - generic [ref=e1102]: Python
+          - article [ref=e1104]:
+            - generic [ref=e1106]:
+              - generic [ref=e1107]:
+                - img [ref=e1109]
+                - heading "git-akshat / NP-Lab" [level=3] [ref=e1111]:
+                  - link "git-akshat" [ref=e1112] [cursor=pointer]:
+                    - /url: /git-akshat
+                  - text: /
+                  - link "NP-Lab" [ref=e1113] [cursor=pointer]:
+                    - /url: /git-akshat/NP-Lab
+              - link "You must be signed in to star a repository" [ref=e1116] [cursor=pointer]:
+                - /url: /login?return_to=%2Fgit-akshat%2FNP-Lab
+                - img [ref=e1117]
+                - text: Star
+                - generic "8 users starred this repository" [ref=e1119]: "8"
+            - 'navigation "Repository menu: git-akshat/NP-Lab" [ref=e1120]':
+              - list [ref=e1121]:
+                - listitem [ref=e1122]:
+                  - link "Code" [ref=e1123] [cursor=pointer]:
+                    - /url: /git-akshat/NP-Lab
+                    - img [ref=e1124]
+                    - text: Code
+                - listitem [ref=e1126]:
+                  - link "Issues" [ref=e1127] [cursor=pointer]:
+                    - /url: /git-akshat/NP-Lab/issues
+                    - img [ref=e1128]
+                    - text: Issues
+                - listitem [ref=e1131]:
+                  - link "Pull requests" [ref=e1132] [cursor=pointer]:
+                    - /url: /git-akshat/NP-Lab/pulls
+                    - img [ref=e1133]
+                    - text: Pull requests
+            - generic [ref=e1135]:
+              - paragraph [ref=e1137]: This repository contains programs implemented in Network Programing Lab in my 7th semester of SIT(VTU).
+              - generic [ref=e1138]:
+                - link "socket" [ref=e1139] [cursor=pointer]:
+                  - /url: /topics/socket
+                - link "tcp" [ref=e1140] [cursor=pointer]:
+                  - /url: /topics/tcp
+                - link "ftp" [ref=e1141] [cursor=pointer]:
+                  - /url: /topics/ftp
+                - link "udp" [ref=e1142] [cursor=pointer]:
+                  - /url: /topics/udp
+                - link "ping" [ref=e1143] [cursor=pointer]:
+                  - /url: /topics/ping
+                - link "tcl" [ref=e1144] [cursor=pointer]:
+                  - /url: /topics/tcl
+                - link "sit" [ref=e1145] [cursor=pointer]:
+                  - /url: /topics/sit
+                - link "throughput" [ref=e1146] [cursor=pointer]:
+                  - /url: /topics/throughput
+                - link "vtu" [ref=e1147] [cursor=pointer]:
+                  - /url: /topics/vtu
+                - link "client-server" [ref=e1148] [cursor=pointer]:
+                  - /url: /topics/client-server
+                - link "network-programming" [ref=e1149] [cursor=pointer]:
+                  - /url: /topics/network-programming
+                - link "ns2" [ref=e1150] [cursor=pointer]:
+                  - /url: /topics/ns2
+                - link "socket-programming" [ref=e1151] [cursor=pointer]:
+                  - /url: /topics/socket-programming
+                - link "crc16" [ref=e1152] [cursor=pointer]:
+                  - /url: /topics/crc16
+                - link "network-animator" [ref=e1153] [cursor=pointer]:
+                  - /url: /topics/network-animator
+                - link "sliding-window" [ref=e1154] [cursor=pointer]:
+                  - /url: /topics/sliding-window
+                - link "ftp-protocol" [ref=e1155] [cursor=pointer]:
+                  - /url: /topics/ftp-protocol
+                - link "fifo-ipc" [ref=e1156] [cursor=pointer]:
+                  - /url: /topics/fifo-ipc
+                - link "ethernet-lan" [ref=e1157] [cursor=pointer]:
+                  - /url: /topics/ethernet-lan
+              - list [ref=e1159]:
+                - listitem [ref=e1160]: Updated Jun 10, 2020on Jun 10, 2020
+                - listitem [ref=e1161]:
+                  - generic [ref=e1162]: C
+          - button "Load more…" [ref=e1165] [cursor=pointer]
+        - generic [ref=e1166]:
+          - generic [ref=e1167]:
+            - heading "Improve this page" [level=2] [ref=e1168]
+            - paragraph [ref=e1169]: Add a description, image, and links to the sliding-window topic page so that developers can more easily learn about it.
+            - paragraph [ref=e1170]:
+              - link "Curate this topic" [ref=e1171] [cursor=pointer]:
+                - /url: https://github.com/github/explore/tree/master/CONTRIBUTING.md?source=add-description-sliding-window
+                - text: Curate this topic
+                - img [ref=e1172]
+          - generic [ref=e1174]:
+            - heading "Add this topic to your repo" [level=2] [ref=e1175]
+            - paragraph [ref=e1176]: To associate your repository with the sliding-window topic, visit your repo's landing page and select "manage topics."
+            - paragraph [ref=e1177]:
+              - link "Learn more" [ref=e1178] [cursor=pointer]:
+                - /url: https://docs.github.com/en/articles/classifying-your-repository-with-topics
+                - text: Learn more
+                - img [ref=e1179]
+  - contentinfo [ref=e1181]:
+    - heading "Footer" [level=2] [ref=e1182]
+    - generic [ref=e1183]:
+      - generic [ref=e1184]:
+        - link "GitHub Homepage" [ref=e1185] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e1186]
+        - generic [ref=e1188]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e1189]:
+        - heading "Footer navigation" [level=3] [ref=e1190]
+        - list "Footer navigation" [ref=e1191]:
+          - listitem [ref=e1192]:
+            - link "Terms" [ref=e1193] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e1194]:
+            - link "Privacy" [ref=e1195] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e1196]:
+            - link "Security" [ref=e1197] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e1198]:
+            - link "Status" [ref=e1199] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e1200]:
+            - link "Community" [ref=e1201] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e1202]:
+            - link "Docs" [ref=e1203] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e1204]:
+            - link "Contact" [ref=e1205] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e1206]:
+            - button "Manage cookies" [ref=e1208] [cursor=pointer]
+          - listitem [ref=e1209]:
+            - button "Do not share my personal information" [ref=e1211] [cursor=pointer]

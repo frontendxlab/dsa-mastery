@@ -1,0 +1,1327 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "CodeChef Logo" [ref=e8] [cursor=pointer]:
+        - /url: https://www.codechef.com
+        - img "CodeChef Logo" [ref=e9]
+      - generic [ref=e10]:
+        - generic "Switch to Light Mode" [ref=e12] [cursor=pointer]:
+          - img [ref=e13]
+        - generic [ref=e17]:
+          - link "Upgrade to Pro" [ref=e18] [cursor=pointer]:
+            - /url: /pro#practice-path-header
+            - generic [ref=e20]: Upgrade to Pro
+          - separator [ref=e21]
+          - generic [ref=e22]:
+            - button "Login" [ref=e23] [cursor=pointer]
+            - button "Sign Up" [ref=e24] [cursor=pointer]
+  - generic [ref=e27]:
+    - button "Courses" [ref=e28] [cursor=pointer]:
+      - generic [ref=e29]: Courses
+    - link "Practice" [ref=e32] [cursor=pointer]:
+      - /url: /practice
+      - generic [ref=e33]: Practice
+    - link "Compete" [ref=e34] [cursor=pointer]:
+      - /url: /contests
+      - generic [ref=e35]: Compete
+    - link "Compiler" [ref=e36] [cursor=pointer]:
+      - /url: /ide
+      - generic [ref=e37]: Compiler
+  - generic [ref=e40]:
+    - generic [ref=e41]:
+      - heading "Welcome to Practice!" [level=2] [ref=e43]
+      - generic [ref=e44]: Practice over 5000+ problems and challenges in coding languages like Python, Java, JavaScript, C++, SQL and HTML. Start with beginner friendly challenges and solve hard problems as you become better. Use these practice problems and challenges to prove your coding skills.
+    - separator [ref=e45]
+    - textbox "Browse practice paths" [ref=e49]
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - button "View all topics" [ref=e52] [cursor=pointer]:
+          - generic [ref=e54]: View all topics
+        - generic:
+          - link "Recent Contest Problems" [ref=e55] [cursor=pointer]:
+            - /url: /practice/recent
+            - generic [ref=e56]: Recent Contest Problems
+          - link "Old practice page" [ref=e58] [cursor=pointer]:
+            - /url: /practice-old
+            - generic [ref=e59]: Old practice page
+      - generic [ref=e61]:
+        - heading "Programming Languages" [level=1] [ref=e62]
+        - generic [ref=e64]:
+          - link "cpp Practice C++ Solve C++ Practice problems online with the Practice C++ path on CodeChef. Answer MCQs exercises and write code for over 200 C++ coding challenges. 206 Problems Beginner level" [ref=e65] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/cpp
+            - generic [ref=e66]:
+              - img "cpp" [ref=e68]
+              - generic [ref=e69]:
+                - generic [ref=e70]:
+                  - paragraph [ref=e71]: Practice C++
+                  - paragraph [ref=e72]: Solve C++ Practice problems online with the Practice C++ path on CodeChef. Answer MCQs exercises and write code for over 200 C++ coding challenges.
+                - separator [ref=e73]
+                - generic [ref=e74]:
+                  - generic [ref=e77]: 206 Problems
+                  - generic [ref=e78]:
+                    - img [ref=e79]
+                    - generic [ref=e81]: Beginner level
+          - link "python Practice Python Solve Python coding problems online with Practice Python on CodeChef. Write code for over 195 Python coding exercises and boost your confidence in programming. 192 Problems Beginner level" [ref=e82] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/python
+            - generic [ref=e83]:
+              - img "python" [ref=e85]
+              - generic [ref=e86]:
+                - generic [ref=e87]:
+                  - paragraph [ref=e88]: Practice Python
+                  - paragraph [ref=e89]: Solve Python coding problems online with Practice Python on CodeChef. Write code for over 195 Python coding exercises and boost your confidence in programming.
+                - separator [ref=e90]
+                - generic [ref=e91]:
+                  - generic [ref=e94]: 192 Problems
+                  - generic [ref=e95]:
+                    - img [ref=e96]
+                    - generic [ref=e98]: Beginner level
+          - link "java Practice Java Complete your Java coding practice with our online Java practice course on CodeChef. Solve over 180 coding problems and challenges to get better at Java. 181 Problems Beginner level" [ref=e99] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/java
+            - generic [ref=e100]:
+              - img "java" [ref=e102]
+              - generic [ref=e103]:
+                - generic [ref=e104]:
+                  - paragraph [ref=e105]: Practice Java
+                  - paragraph [ref=e106]: Complete your Java coding practice with our online Java practice course on CodeChef. Solve over 180 coding problems and challenges to get better at Java.
+                - separator [ref=e107]
+                - generic [ref=e108]:
+                  - generic [ref=e111]: 181 Problems
+                  - generic [ref=e112]:
+                    - img [ref=e113]
+                    - generic [ref=e115]: Beginner level
+          - link "c Practice C Improve your C programming skills with over 200 coding practice problems. Solve these beginner friendly problems online to get better at C language. 222 Problems Beginner level" [ref=e116] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/c
+            - generic [ref=e117]:
+              - img "c" [ref=e119]
+              - generic [ref=e120]:
+                - generic [ref=e121]:
+                  - paragraph [ref=e122]: Practice C
+                  - paragraph [ref=e123]: Improve your C programming skills with over 200 coding practice problems. Solve these beginner friendly problems online to get better at C language.
+                - separator [ref=e124]
+                - generic [ref=e125]:
+                  - generic [ref=e128]: 222 Problems
+                  - generic [ref=e129]:
+                    - img [ref=e130]
+                    - generic [ref=e132]: Beginner level
+          - link "javascript Practice JavaScript Practice JavaScript online with our set of coding problems selected for beginners. Solve these JavaScript coding problems and prepare for your interviews. 169 Problems Beginner level" [ref=e133] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/javascript
+            - generic [ref=e134]:
+              - img "javascript" [ref=e136]
+              - generic [ref=e137]:
+                - generic [ref=e138]:
+                  - paragraph [ref=e139]: Practice JavaScript
+                  - paragraph [ref=e140]: Practice JavaScript online with our set of coding problems selected for beginners. Solve these JavaScript coding problems and prepare for your interviews.
+                - separator [ref=e141]
+                - generic [ref=e142]:
+                  - generic [ref=e145]: 169 Problems
+                  - generic [ref=e146]:
+                    - img [ref=e147]
+                    - generic [ref=e149]: Beginner level
+          - link "html Projects using HTML / CSS Practice HTML and CSS with our on site editor. Code 7 guided projects to build sites. Solve MCQ exercises on HTML and CSS to test your knowledge. 183 Problems Beginner level" [ref=e150] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/html
+            - generic [ref=e151]:
+              - img "html" [ref=e153]
+              - generic [ref=e154]:
+                - generic [ref=e155]:
+                  - paragraph [ref=e156]: Projects using HTML / CSS
+                  - paragraph [ref=e157]: Practice HTML and CSS with our on site editor. Code 7 guided projects to build sites. Solve MCQ exercises on HTML and CSS to test your knowledge.
+                - separator [ref=e158]
+                - generic [ref=e159]:
+                  - generic [ref=e162]: 183 Problems
+                  - generic [ref=e163]:
+                    - img [ref=e164]
+                    - generic [ref=e166]: Beginner level
+          - link "sql-case-studies-topic-wise SQL Practice Queries Practice queries on Select, Where, Limit, Order by, Aggregates, Group by, Joins, Sub-queries and Case expressions. Solve over 80 SQL exercises using real life case studies. Write queries in MySQL syntax. 93 Problems Intermediate level" [ref=e167] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/sql-case-studies-topic-wise
+            - generic [ref=e168]:
+              - img "sql-case-studies-topic-wise" [ref=e170]
+              - generic [ref=e171]:
+                - generic [ref=e172]:
+                  - paragraph [ref=e173]: SQL Practice Queries
+                  - paragraph [ref=e174]: Practice queries on Select, Where, Limit, Order by, Aggregates, Group by, Joins, Sub-queries and Case expressions. Solve over 80 SQL exercises using real life case studies. Write queries in MySQL syntax.
+                - separator [ref=e175]
+                - generic [ref=e176]:
+                  - generic [ref=e179]: 93 Problems
+                  - generic [ref=e180]:
+                    - img [ref=e181]
+                    - generic [ref=e183]: Intermediate level
+          - link "php Practice PHP Enhance your PHP skills with our hands-on practice course. Master PHP syntax and real-world problem-solving through interactive exercises, and become proficient in building dynamic web applications efficiently. 199 Problems Beginner level" [ref=e184] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/php
+            - generic [ref=e185]:
+              - img "php" [ref=e187]
+              - generic [ref=e188]:
+                - generic [ref=e189]:
+                  - paragraph [ref=e190]: Practice PHP
+                  - paragraph [ref=e191]: Enhance your PHP skills with our hands-on practice course. Master PHP syntax and real-world problem-solving through interactive exercises, and become proficient in building dynamic web applications efficiently.
+                - separator [ref=e192]
+                - generic [ref=e193]:
+                  - generic [ref=e196]: 199 Problems
+                  - generic [ref=e197]:
+                    - img [ref=e198]
+                    - generic [ref=e200]: Beginner level
+      - generic [ref=e201]:
+        - heading "Projects" [level=1] [ref=e202]
+        - generic [ref=e204]:
+          - link "Python Projects for Beginners Build 11 different Python projects from Calculator to URL shortening to Json / csv file processing using our beginner friendly and guided path. 94 Problems Intermediate level" [ref=e205] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/projects-python
+            - generic [ref=e206]:
+              - paragraph [ref=e208]: Python Projects for Beginners
+              - generic [ref=e209]:
+                - paragraph [ref=e211]: Build 11 different Python projects from Calculator to URL shortening to Json / csv file processing using our beginner friendly and guided path.
+                - separator [ref=e212]
+                - generic [ref=e213]:
+                  - generic [ref=e216]: 94 Problems
+                  - generic [ref=e217]:
+                    - img [ref=e218]
+                    - generic [ref=e220]: Intermediate level
+          - link "Java Projects for Beginners Build 6 different Java projects from Calculator to Rock Paper Scissors using our beginner friendly and guided path. 80 Problems Intermediate level" [ref=e221] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/projects-java
+            - generic [ref=e222]:
+              - paragraph [ref=e224]: Java Projects for Beginners
+              - generic [ref=e225]:
+                - paragraph [ref=e227]: Build 6 different Java projects from Calculator to Rock Paper Scissors using our beginner friendly and guided path.
+                - separator [ref=e228]
+                - generic [ref=e229]:
+                  - generic [ref=e232]: 80 Problems
+                  - generic [ref=e233]:
+                    - img [ref=e234]
+                    - generic [ref=e236]: Intermediate level
+          - link "C++ Projects for Beginners Build 6 different Cpp projects from Calculator to Rock Paper Scissors using our beginner friendly and guided path. 77 Problems Intermediate level" [ref=e237] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/projects-cpp
+            - generic [ref=e238]:
+              - paragraph [ref=e240]: C++ Projects for Beginners
+              - generic [ref=e241]:
+                - paragraph [ref=e243]: Build 6 different Cpp projects from Calculator to Rock Paper Scissors using our beginner friendly and guided path.
+                - separator [ref=e244]
+                - generic [ref=e245]:
+                  - generic [ref=e248]: 77 Problems
+                  - generic [ref=e249]:
+                    - img [ref=e250]
+                    - generic [ref=e252]: Intermediate level
+          - link "Projects for Beginners in C Build 6 different projects using C from Calculator to Rock Paper Scissors using our beginner friendly and guided path. 48 Problems Intermediate level" [ref=e253] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/projects-c
+            - generic [ref=e254]:
+              - paragraph [ref=e256]: Projects for Beginners in C
+              - generic [ref=e257]:
+                - paragraph [ref=e259]: Build 6 different projects using C from Calculator to Rock Paper Scissors using our beginner friendly and guided path.
+                - separator [ref=e260]
+                - generic [ref=e261]:
+                  - generic [ref=e264]: 48 Problems
+                  - generic [ref=e265]:
+                    - img [ref=e266]
+                    - generic [ref=e268]: Intermediate level
+          - link "Intermediate-level projects using Java Build 5 different Java projects from CPU task scheduler to Sudoku solver 31 Problems Intermediate level" [ref=e269] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/intermediate-projects-java
+            - generic [ref=e270]:
+              - paragraph [ref=e272]: Intermediate-level projects using Java
+              - generic [ref=e273]:
+                - paragraph [ref=e275]: Build 5 different Java projects from CPU task scheduler to Sudoku solver
+                - separator [ref=e276]
+                - generic [ref=e277]:
+                  - generic [ref=e280]: 31 Problems
+                  - generic [ref=e281]:
+                    - img [ref=e282]
+                    - generic [ref=e284]: Intermediate level
+          - link "Intermediate-level projects using Python Build 6 different Python projects from CPU task scheduler to Image recognition. 35 Problems Intermediate level" [ref=e285] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/intermediate-projects-python
+            - generic [ref=e286]:
+              - paragraph [ref=e288]: Intermediate-level projects using Python
+              - generic [ref=e289]:
+                - paragraph [ref=e291]: Build 6 different Python projects from CPU task scheduler to Image recognition.
+                - separator [ref=e292]
+                - generic [ref=e293]:
+                  - generic [ref=e296]: 35 Problems
+                  - generic [ref=e297]:
+                    - img [ref=e298]
+                    - generic [ref=e300]: Intermediate level
+          - link "Intermediate-level projects using Cpp Build 5 different Cpp projects from CPU task scheduler to Sudoku solver. 29 Problems Intermediate level" [ref=e301] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/intermediate-projects-cpp
+            - generic [ref=e302]:
+              - paragraph [ref=e304]: Intermediate-level projects using Cpp
+              - generic [ref=e305]:
+                - paragraph [ref=e307]: Build 5 different Cpp projects from CPU task scheduler to Sudoku solver.
+                - separator [ref=e308]
+                - generic [ref=e309]:
+                  - generic [ref=e312]: 29 Problems
+                  - generic [ref=e313]:
+                    - img [ref=e314]
+                    - generic [ref=e316]: Intermediate level
+          - link "Javascript Projects for Beginners Practice and Build projects such as Snake game, Flappy Bird, Weather app and many more using Javascript 13 Problems Beginner level" [ref=e317] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/projects-javascript
+            - generic [ref=e318]:
+              - paragraph [ref=e320]: Javascript Projects for Beginners
+              - generic [ref=e321]:
+                - paragraph [ref=e323]: Practice and Build projects such as Snake game, Flappy Bird, Weather app and many more using Javascript
+                - separator [ref=e324]
+                - generic [ref=e325]:
+                  - generic [ref=e328]: 13 Problems
+                  - generic [ref=e329]:
+                    - img [ref=e330]
+                    - generic [ref=e332]: Beginner level
+          - link "Machine learning Projects for Beginners Build your first 10 Machine learning projects - these are the foundation of your ML journey 52 Problems Intermediate level" [ref=e333] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/machine-learning-projects
+            - generic [ref=e334]:
+              - paragraph [ref=e336]: Machine learning Projects for Beginners
+              - generic [ref=e337]:
+                - paragraph [ref=e339]: Build your first 10 Machine learning projects - these are the foundation of your ML journey
+                - separator [ref=e340]
+                - generic [ref=e341]:
+                  - generic [ref=e344]: 52 Problems
+                  - generic [ref=e345]:
+                    - img [ref=e346]
+                    - generic [ref=e348]: Intermediate level
+          - link "Full Stack Projects using MERN Level up your MERN skills by building powerful full-stack projects that take you from beginner to expert. 24 Problems Intermediate level" [ref=e349] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/full-stack-mern
+            - generic [ref=e350]:
+              - paragraph [ref=e352]: Full Stack Projects using MERN
+              - generic [ref=e353]:
+                - paragraph [ref=e355]: Level up your MERN skills by building powerful full-stack projects that take you from beginner to expert.
+                - separator [ref=e356]
+                - generic [ref=e357]:
+                  - generic [ref=e360]: 24 Problems
+                  - generic [ref=e361]:
+                    - img [ref=e362]
+                    - generic [ref=e364]: Intermediate level
+          - link "Deep learning and AI Projects for Beginners Hands-on projects designed to introduce beginners to deep learning and AI concepts through practical implementation. 24 Problems Intermediate level" [ref=e365] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/deep-learning-ai-projects
+            - generic [ref=e366]:
+              - paragraph [ref=e368]: Deep learning and AI Projects for Beginners
+              - generic [ref=e369]:
+                - paragraph [ref=e371]: Hands-on projects designed to introduce beginners to deep learning and AI concepts through practical implementation.
+                - separator [ref=e372]
+                - generic [ref=e373]:
+                  - generic [ref=e376]: 24 Problems
+                  - generic [ref=e377]:
+                    - img [ref=e378]
+                    - generic [ref=e380]: Intermediate level
+          - link "Html/CSS/JS Projects A hands-on journey to master the basics of web development. Build real projects to learn how structure (HTML), styling (CSS), and interactivity (JavaScript) come together to create modern, responsive websites. 27 Problems Beginner level" [ref=e381] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/html-css-js-projects
+            - generic [ref=e382]:
+              - paragraph [ref=e384]: Html/CSS/JS Projects
+              - generic [ref=e385]:
+                - paragraph [ref=e387]: A hands-on journey to master the basics of web development. Build real projects to learn how structure (HTML), styling (CSS), and interactivity (JavaScript) come together to create modern, responsive websites.
+                - separator [ref=e388]
+                - generic [ref=e389]:
+                  - generic [ref=e392]: 27 Problems
+                  - generic [ref=e393]:
+                    - img [ref=e394]
+                    - generic [ref=e396]: Beginner level
+          - link "SQL Projects In this SQL Projects Practice Course, you’ll strengthen your core SQL skills by solving practical query problems and applying them directly within real backend applications. You’ll implement database logic inside Node.js codebases and learn how efficient SQL powers real-world systems. 24 Problems Intermediate level" [ref=e397] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/sql-projects
+            - generic [ref=e398]:
+              - paragraph [ref=e400]: SQL Projects
+              - generic [ref=e401]:
+                - paragraph [ref=e403]: In this SQL Projects Practice Course, you’ll strengthen your core SQL skills by solving practical query problems and applying them directly within real backend applications. You’ll implement database logic inside Node.js codebases and learn how efficient SQL powers real-world systems.
+                - separator [ref=e404]
+                - generic [ref=e405]:
+                  - generic [ref=e408]: 24 Problems
+                  - generic [ref=e409]:
+                    - img [ref=e410]
+                    - generic [ref=e412]: Intermediate level
+          - link "Data Analysis & Visualization Projects This Data Analysis & Visualization Practice Path helps you build hands-on experience by working on real-world projects using NumPy, Pandas, Matplotlib, and Seaborn. You will clean, analyze, and explore datasets, then convert insights into clear and meaningful visualizations, following real data analyst workflows and building practical, portfolio-ready skills. 24 Problems Intermediate level" [ref=e413] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/data-analysis-visualization-projects
+            - generic [ref=e414]:
+              - paragraph [ref=e416]: Data Analysis & Visualization Projects
+              - generic [ref=e417]:
+                - paragraph [ref=e419]: This Data Analysis & Visualization Practice Path helps you build hands-on experience by working on real-world projects using NumPy, Pandas, Matplotlib, and Seaborn. You will clean, analyze, and explore datasets, then convert insights into clear and meaningful visualizations, following real data analyst workflows and building practical, portfolio-ready skills.
+                - separator [ref=e420]
+                - generic [ref=e421]:
+                  - generic [ref=e424]: 24 Problems
+                  - generic [ref=e425]:
+                    - img [ref=e426]
+                    - generic [ref=e428]: Intermediate level
+          - link "Spring Boot Projects Learn Spring Boot by building real-world backend applications. This course emphasizes hands-on projects covering REST APIs, database integration, security, validation, and best practices. 16 Problems Intermediate level" [ref=e429] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/springboot
+            - generic [ref=e430]:
+              - paragraph [ref=e432]: Spring Boot Projects
+              - generic [ref=e433]:
+                - paragraph [ref=e435]: Learn Spring Boot by building real-world backend applications. This course emphasizes hands-on projects covering REST APIs, database integration, security, validation, and best practices.
+                - separator [ref=e436]
+                - generic [ref=e437]:
+                  - generic [ref=e440]: 16 Problems
+                  - generic [ref=e441]:
+                    - img [ref=e442]
+                    - generic [ref=e444]: Intermediate level
+          - link "DevOps Projects This practice path focuses on building real-world DevOps skills through hands-on projects. Learners will solve practical problems related to server management, automation, and infrastructure provisioning using Linux, shell scripting, and Terraform. Instead of only learning theory, students will work on tasks that simulate real production environments, helping them understand how DevOps engineers automate systems, manage infrastructure, and maintain reliable deployments. 21 Problems Intermediate level" [ref=e445] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/devops
+            - generic [ref=e446]:
+              - paragraph [ref=e448]: DevOps Projects
+              - generic [ref=e449]:
+                - paragraph [ref=e451]: This practice path focuses on building real-world DevOps skills through hands-on projects. Learners will solve practical problems related to server management, automation, and infrastructure provisioning using Linux, shell scripting, and Terraform. Instead of only learning theory, students will work on tasks that simulate real production environments, helping them understand how DevOps engineers automate systems, manage infrastructure, and maintain reliable deployments.
+                - separator [ref=e452]
+                - generic [ref=e453]:
+                  - generic [ref=e456]: 21 Problems
+                  - generic [ref=e457]:
+                    - img [ref=e458]
+                    - generic [ref=e460]: Intermediate level
+          - link "Cybersecurity Projects Master real-world cybersecurity by building and defending secure systems. This practice path emphasizes hands-on defense strategies across applications and infrastructure, equipping you with the practical skills to identify vulnerabilities, mitigate threats, and architect resilient environments. 20 Problems Intermediate level" [ref=e461] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/cybersecurity-projects
+            - generic [ref=e462]:
+              - paragraph [ref=e464]: Cybersecurity Projects
+              - generic [ref=e465]:
+                - paragraph [ref=e467]: Master real-world cybersecurity by building and defending secure systems. This practice path emphasizes hands-on defense strategies across applications and infrastructure, equipping you with the practical skills to identify vulnerabilities, mitigate threats, and architect resilient environments.
+                - separator [ref=e468]
+                - generic [ref=e469]:
+                  - generic [ref=e472]: 20 Problems
+                  - generic [ref=e473]:
+                    - img [ref=e474]
+                    - generic [ref=e476]: Intermediate level
+          - link "Golang projects Master Go by building high-performance CLI tools and concurrent backend services. Develop real-world applications focused on data parsing, memory management, and Go's native networking capabilities. 10 Problems Intermediate level" [ref=e477] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/go-projects
+            - generic [ref=e478]:
+              - paragraph [ref=e480]: Golang projects
+              - generic [ref=e481]:
+                - paragraph [ref=e483]: Master Go by building high-performance CLI tools and concurrent backend services. Develop real-world applications focused on data parsing, memory management, and Go's native networking capabilities.
+                - separator [ref=e484]
+                - generic [ref=e485]:
+                  - generic [ref=e488]: 10 Problems
+                  - generic [ref=e489]:
+                    - img [ref=e490]
+                    - generic [ref=e492]: Intermediate level
+      - generic [ref=e493]:
+        - heading "Beginner DSA" [level=1] [ref=e494]
+        - generic [ref=e496]:
+          - link "Practice Strings Practice String problems in C, C++, Python, Java and 10+ other languages. Solve these questions on Strings and prepare yourself for handling text based data. 43 Problems Beginner level" [ref=e497] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/strings
+            - generic [ref=e498]:
+              - paragraph [ref=e500]: Practice Strings
+              - generic [ref=e501]:
+                - paragraph [ref=e503]: Practice String problems in C, C++, Python, Java and 10+ other languages. Solve these questions on Strings and prepare yourself for handling text based data.
+                - separator [ref=e504]
+                - generic [ref=e505]:
+                  - generic [ref=e508]: 43 Problems
+                  - generic [ref=e509]:
+                    - img [ref=e510]
+                    - generic [ref=e512]: Beginner level
+          - link "Practice Arrays Solve Arrays coding problems to start learning data structures and algorithms. This curated set of 23 standard Arrays questions will give you the confidence to solve interview questions. 56 Problems Beginner level" [ref=e513] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/arrays
+            - generic [ref=e514]:
+              - paragraph [ref=e516]: Practice Arrays
+              - generic [ref=e517]:
+                - paragraph [ref=e519]: Solve Arrays coding problems to start learning data structures and algorithms. This curated set of 23 standard Arrays questions will give you the confidence to solve interview questions.
+                - separator [ref=e520]
+                - generic [ref=e521]:
+                  - generic [ref=e524]: 56 Problems
+                  - generic [ref=e525]:
+                    - img [ref=e526]
+                    - generic [ref=e528]: Beginner level
+          - link "Practice Basic Math Basic Math includes problems on topics like arithmetic, sequences, and counting, which are fundamental to proper understanding of algorithmic logic. 23 Problems Beginner level" [ref=e529] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/basic-math
+            - generic [ref=e530]:
+              - paragraph [ref=e532]: Practice Basic Math
+              - generic [ref=e533]:
+                - paragraph [ref=e535]: Basic Math includes problems on topics like arithmetic, sequences, and counting, which are fundamental to proper understanding of algorithmic logic.
+                - separator [ref=e536]
+                - generic [ref=e537]:
+                  - generic [ref=e540]: 23 Problems
+                  - generic [ref=e541]:
+                    - img [ref=e542]
+                    - generic [ref=e544]: Beginner level
+          - link "Practice Sorting Practice problems which require you to use sorting algorithms to solve the task at hand. These questions help you understand the different patters of sorting problems and how to identify them. 15 Problems Beginner level" [ref=e545] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/sorting
+            - generic [ref=e546]:
+              - paragraph [ref=e548]: Practice Sorting
+              - generic [ref=e549]:
+                - paragraph [ref=e551]: Practice problems which require you to use sorting algorithms to solve the task at hand. These questions help you understand the different patters of sorting problems and how to identify them.
+                - separator [ref=e552]
+                - generic [ref=e553]:
+                  - generic [ref=e556]: 15 Problems
+                  - generic [ref=e557]:
+                    - img [ref=e558]
+                    - generic [ref=e560]: Beginner level
+      - generic [ref=e561]:
+        - heading "Data structures" [level=1] [ref=e562]
+        - generic [ref=e564]:
+          - link "Linked Lists Practice these 15 Linked lists problems in languages like C++, Java, Python and JavaScript. These linked list coding questions range from easy to hard difficulty and will prepare you to tackle any linked list question in future. 27 Problems Beginner level" [ref=e565] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/linked-lists
+            - generic [ref=e566]:
+              - paragraph [ref=e568]: Linked Lists
+              - generic [ref=e569]:
+                - paragraph [ref=e571]: Practice these 15 Linked lists problems in languages like C++, Java, Python and JavaScript. These linked list coding questions range from easy to hard difficulty and will prepare you to tackle any linked list question in future.
+                - separator [ref=e572]
+                - generic [ref=e573]:
+                  - generic [ref=e576]: 27 Problems
+                  - generic [ref=e577]:
+                    - img [ref=e578]
+                    - generic [ref=e580]: Beginner level
+          - link "Stacks and Queues A stack follows the Last-In, First-Out (LIFO) principle. It is similar to a physical stack of objects, like a stack of books, where you can only add or remove items from the top. A queue follows the First-In, First-Out (FIFO) principle. It resembles a line of people waiting, where the person who arrives first is served first. 24 Problems Beginner level" [ref=e581] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/stacks-and-queues
+            - generic [ref=e582]:
+              - paragraph [ref=e584]: Stacks and Queues
+              - generic [ref=e585]:
+                - paragraph [ref=e587]: A stack follows the Last-In, First-Out (LIFO) principle. It is similar to a physical stack of objects, like a stack of books, where you can only add or remove items from the top. A queue follows the First-In, First-Out (FIFO) principle. It resembles a line of people waiting, where the person who arrives first is served first.
+                - separator [ref=e588]
+                - generic [ref=e589]:
+                  - generic [ref=e592]: 24 Problems
+                  - generic [ref=e593]:
+                    - img [ref=e594]
+                    - generic [ref=e596]: Beginner level
+          - link "2D Array / Matrices Practice problems on 2D Arrays or Matrices with our careful chosen set of 23 problems. Matrix is 2 dimensional data structures which can be used to represent grids, paths etc. Questions on 2D Arrays are generally asked in interviews to check your implementation skills. 25 Problems Intermediate level" [ref=e597] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/matrices
+            - generic [ref=e598]:
+              - paragraph [ref=e600]: 2D Array / Matrices
+              - generic [ref=e601]:
+                - paragraph [ref=e603]: Practice problems on 2D Arrays or Matrices with our careful chosen set of 23 problems. Matrix is 2 dimensional data structures which can be used to represent grids, paths etc. Questions on 2D Arrays are generally asked in interviews to check your implementation skills.
+                - separator [ref=e604]
+                - generic [ref=e605]:
+                  - generic [ref=e608]: 25 Problems
+                  - generic [ref=e609]:
+                    - img [ref=e610]
+                    - generic [ref=e612]: Intermediate level
+          - link "Heaps Practice problems on Heap data structure from the CodeChef repository of problems. Start with basics of Heaps and then solve harder questions which require Heap. 25 Problems Beginner level" [ref=e613] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/heaps
+            - generic [ref=e614]:
+              - paragraph [ref=e616]: Heaps
+              - generic [ref=e617]:
+                - paragraph [ref=e619]: Practice problems on Heap data structure from the CodeChef repository of problems. Start with basics of Heaps and then solve harder questions which require Heap.
+                - separator [ref=e620]
+                - generic [ref=e621]:
+                  - generic [ref=e624]: 25 Problems
+                  - generic [ref=e625]:
+                    - img [ref=e626]
+                    - generic [ref=e628]: Beginner level
+          - link "Monday Munch - DSA Challenge practice series Participate in the previous DSA Challenges 210 Problems Intermediate level" [ref=e629] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/dsa-challenges
+            - generic [ref=e630]:
+              - paragraph [ref=e632]: Monday Munch - DSA Challenge practice series
+              - generic [ref=e633]:
+                - paragraph [ref=e635]: Participate in the previous DSA Challenges
+                - separator [ref=e636]
+                - generic [ref=e637]:
+                  - generic [ref=e640]: 210 Problems
+                  - generic [ref=e641]:
+                    - img [ref=e642]
+                    - generic [ref=e644]: Intermediate level
+      - generic [ref=e645]:
+        - heading "Algorithms" [level=1] [ref=e646]
+        - generic [ref=e648]:
+          - link "Arrays, Strings & Sorting Practice programming problems using Intemediate level DSA concepts of Arrays, Strings and Sorting 10 Problems Intermediate level" [ref=e649] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/arrays-strings-sorting
+            - generic [ref=e650]:
+              - paragraph [ref=e652]: Arrays, Strings & Sorting
+              - generic [ref=e653]:
+                - paragraph [ref=e655]: Practice programming problems using Intemediate level DSA concepts of Arrays, Strings and Sorting
+                - separator [ref=e656]
+                - generic [ref=e657]:
+                  - generic [ref=e660]: 10 Problems
+                  - generic [ref=e661]:
+                    - img [ref=e662]
+                    - generic [ref=e664]: Intermediate level
+          - link "Greedy Algorithms Understanding Greedy algorithms helps in solving many complex problems where choosing the best option at each step provides the best solution. 18 Problems Intermediate level" [ref=e665] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/greedy-algorithms
+            - generic [ref=e666]:
+              - paragraph [ref=e668]: Greedy Algorithms
+              - generic [ref=e669]:
+                - paragraph [ref=e671]: Understanding Greedy algorithms helps in solving many complex problems where choosing the best option at each step provides the best solution.
+                - separator [ref=e672]
+                - generic [ref=e673]:
+                  - generic [ref=e676]: 18 Problems
+                  - generic [ref=e677]:
+                    - img [ref=e678]
+                    - generic [ref=e680]: Intermediate level
+          - link "Binary Search Practice Binary search with our curated set of problems. Implement binary search algorithm in languages like C++, Java, Python and JavaScript. 40 Problems Intermediate level" [ref=e681] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/binary-search
+            - generic [ref=e682]:
+              - paragraph [ref=e684]: Binary Search
+              - generic [ref=e685]:
+                - paragraph [ref=e687]: Practice Binary search with our curated set of problems. Implement binary search algorithm in languages like C++, Java, Python and JavaScript.
+                - separator [ref=e688]
+                - generic [ref=e689]:
+                  - generic [ref=e692]: 40 Problems
+                  - generic [ref=e693]:
+                    - img [ref=e694]
+                    - generic [ref=e696]: Intermediate level
+          - link "Dynamic programming Practice these 21 problems on Dynamic Programming to understand the pattern of questions and the different ways in which you can implement the solution. Practice concepts like Iterative DP, Recursive DP, 1D and 2D DP, Digit DP etc. 51 Problems Intermediate level" [ref=e697] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/dynamic-programming
+            - generic [ref=e698]:
+              - paragraph [ref=e700]: Dynamic programming
+              - generic [ref=e701]:
+                - paragraph [ref=e703]: Practice these 21 problems on Dynamic Programming to understand the pattern of questions and the different ways in which you can implement the solution. Practice concepts like Iterative DP, Recursive DP, 1D and 2D DP, Digit DP etc.
+                - separator [ref=e704]
+                - generic [ref=e705]:
+                  - generic [ref=e708]: 51 Problems
+                  - generic [ref=e709]:
+                    - img [ref=e710]
+                    - generic [ref=e712]: Intermediate level
+          - link "Number theory Practice problems on number theory concepts like Euclid’s algorithm for GCD, LCM, prime factorization etc 24 Problems Intermediate level" [ref=e713] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/number-theory
+            - generic [ref=e714]:
+              - paragraph [ref=e716]: Number theory
+              - generic [ref=e717]:
+                - paragraph [ref=e719]: Practice problems on number theory concepts like Euclid’s algorithm for GCD, LCM, prime factorization etc
+                - separator [ref=e720]
+                - generic [ref=e721]:
+                  - generic [ref=e724]: 24 Problems
+                  - generic [ref=e725]:
+                    - img [ref=e726]
+                    - generic [ref=e728]: Intermediate level
+          - link "Two Pointers and Sliding Window Technique The two pointer and sliding window techniques are widely used algorithmic approach in computer science and programming. It is used to solve problems that can be efficiently solved by maintaining two positions or indices in a sequence or array. 31 Problems Beginner level" [ref=e729] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/two-pointers
+            - generic [ref=e730]:
+              - paragraph [ref=e732]: Two Pointers and Sliding Window Technique
+              - generic [ref=e733]:
+                - paragraph [ref=e735]: The two pointer and sliding window techniques are widely used algorithmic approach in computer science and programming. It is used to solve problems that can be efficiently solved by maintaining two positions or indices in a sequence or array.
+                - separator [ref=e736]
+                - generic [ref=e737]:
+                  - generic [ref=e740]: 31 Problems
+                  - generic [ref=e741]:
+                    - img [ref=e742]
+                    - generic [ref=e744]: Beginner level
+          - link "Bit manipulation Learn bitwise operations, practice with 35+ problems, and improve your DSA skills. Explore our guide to bit manipulation in various programming languages. 43 Problems Intermediate level" [ref=e745] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/bit-manipulation
+            - generic [ref=e746]:
+              - paragraph [ref=e748]: Bit manipulation
+              - generic [ref=e749]:
+                - paragraph [ref=e751]: Learn bitwise operations, practice with 35+ problems, and improve your DSA skills. Explore our guide to bit manipulation in various programming languages.
+                - separator [ref=e752]
+                - generic [ref=e753]:
+                  - generic [ref=e756]: 43 Problems
+                  - generic [ref=e757]:
+                    - img [ref=e758]
+                    - generic [ref=e760]: Intermediate level
+          - link "Prefix Sum Problems Practice these 14 problems on Prefix and Suffix sum. Learn about how to create prefix arrays, suffix arrays and use them to efficiently solve a variety of programming problems. 14 Problems Intermediate level" [ref=e761] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/prefix-sums
+            - generic [ref=e762]:
+              - paragraph [ref=e764]: Prefix Sum Problems
+              - generic [ref=e765]:
+                - paragraph [ref=e767]: Practice these 14 problems on Prefix and Suffix sum. Learn about how to create prefix arrays, suffix arrays and use them to efficiently solve a variety of programming problems.
+                - separator [ref=e768]
+                - generic [ref=e769]:
+                  - generic [ref=e772]: 14 Problems
+                  - generic [ref=e773]:
+                    - img [ref=e774]
+                    - generic [ref=e776]: Intermediate level
+      - generic [ref=e777]:
+        - heading "Difficulty rating wise" [level=1] [ref=e778]
+        - generic [ref=e780]:
+          - link "500 difficulty rating Practice the most basic problems available on CodeChef. The problems are in the difficulty range of 0 - 500. 115 Problems Beginner level" [ref=e781] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/basic-programming-concepts
+            - generic [ref=e782]:
+              - paragraph [ref=e784]: 500 difficulty rating
+              - generic [ref=e785]:
+                - paragraph [ref=e787]: Practice the most basic problems available on CodeChef. The problems are in the difficulty range of 0 - 500.
+                - separator [ref=e788]
+                - generic [ref=e789]:
+                  - generic [ref=e792]: 115 Problems
+                  - generic [ref=e793]:
+                    - img [ref=e794]
+                    - generic [ref=e796]: Beginner level
+          - link "500 to 1000 difficulty problems Practice the easy logical problems available on CodeChef. The problems are in the difficulty range of 500 to 1000. 156 Problems Beginner level" [ref=e797] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/logical-problems
+            - generic [ref=e798]:
+              - paragraph [ref=e800]: 500 to 1000 difficulty problems
+              - generic [ref=e801]:
+                - paragraph [ref=e803]: Practice the easy logical problems available on CodeChef. The problems are in the difficulty range of 500 to 1000.
+                - separator [ref=e804]
+                - generic [ref=e805]:
+                  - generic [ref=e808]: 156 Problems
+                  - generic [ref=e809]:
+                    - img [ref=e810]
+                    - generic [ref=e812]: Beginner level
+          - link "1000 to 1400 difficulty problems Practice the problems which can help you become 1 star on CodeChef. 194 Problems Beginner level" [ref=e813] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/1-star-difficulty-problems
+            - generic [ref=e814]:
+              - paragraph [ref=e816]: 1000 to 1400 difficulty problems
+              - generic [ref=e817]:
+                - paragraph [ref=e819]: Practice the problems which can help you become 1 star on CodeChef.
+                - separator [ref=e820]
+                - generic [ref=e821]:
+                  - generic [ref=e824]: 194 Problems
+                  - generic [ref=e825]:
+                    - img [ref=e826]
+                    - generic [ref=e828]: Beginner level
+          - link "1400 to 1600 difficulty problems Practice problems which can help you become 2 star on CodeChef. 85 Problems Intermediate level" [ref=e829] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/2-star-difficulty-problems
+            - generic [ref=e830]:
+              - paragraph [ref=e832]: 1400 to 1600 difficulty problems
+              - generic [ref=e833]:
+                - paragraph [ref=e835]: Practice problems which can help you become 2 star on CodeChef.
+                - separator [ref=e836]
+                - generic [ref=e837]:
+                  - generic [ref=e840]: 85 Problems
+                  - generic [ref=e841]:
+                    - img [ref=e842]
+                    - generic [ref=e844]: Intermediate level
+          - link "1600 to 1800 difficulty problems Practice problems which can help you become 3 star on CodeChef. 128 Problems Intermediate level" [ref=e845] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/3-star-difficulty-problems
+            - generic [ref=e846]:
+              - paragraph [ref=e848]: 1600 to 1800 difficulty problems
+              - generic [ref=e849]:
+                - paragraph [ref=e851]: Practice problems which can help you become 3 star on CodeChef.
+                - separator [ref=e852]
+                - generic [ref=e853]:
+                  - generic [ref=e856]: 128 Problems
+                  - generic [ref=e857]:
+                    - img [ref=e858]
+                    - generic [ref=e860]: Intermediate level
+          - link "1800 to 2000 difficulty problems Practice problems which can help you become 4 star on CodeChef. 74 Problems Advanced level" [ref=e861] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/4-star-difficulty-problems
+            - generic [ref=e862]:
+              - paragraph [ref=e864]: 1800 to 2000 difficulty problems
+              - generic [ref=e865]:
+                - paragraph [ref=e867]: Practice problems which can help you become 4 star on CodeChef.
+                - separator [ref=e868]
+                - generic [ref=e869]:
+                  - generic [ref=e872]: 74 Problems
+                  - generic [ref=e873]:
+                    - img [ref=e874]
+                    - generic [ref=e876]: Advanced level
+          - link "2000 to 2500 difficulty problems Practice problems which can help you reach 5 star and higher on CodeChef. 112 Problems Advanced level" [ref=e877] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/5-star-and-above-problems
+            - generic [ref=e878]:
+              - paragraph [ref=e880]: 2000 to 2500 difficulty problems
+              - generic [ref=e881]:
+                - paragraph [ref=e883]: Practice problems which can help you reach 5 star and higher on CodeChef.
+                - separator [ref=e884]
+                - generic [ref=e885]:
+                  - generic [ref=e888]: 112 Problems
+                  - generic [ref=e889]:
+                    - img [ref=e890]
+                    - generic [ref=e892]: Advanced level
+      - generic [ref=e893]:
+        - heading "Star wise paths" [level=1] [ref=e894]
+        - generic [ref=e896]:
+          - link "Level up from 1* to 2* Practice these problems curated to help you level up from a 1* on CodeChef to 2* 66 Problems Beginner level" [ref=e897] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/1to2stars
+            - generic [ref=e898]:
+              - paragraph [ref=e900]: Level up from 1* to 2*
+              - generic [ref=e901]:
+                - paragraph [ref=e903]: Practice these problems curated to help you level up from a 1* on CodeChef to 2*
+                - separator [ref=e904]
+                - generic [ref=e905]:
+                  - generic [ref=e908]: 66 Problems
+                  - generic [ref=e909]:
+                    - img [ref=e910]
+                    - generic [ref=e912]: Beginner level
+          - link "Jump from 2* to 3* Practice these problems curated to help you jump up from a 2* on CodeChef to 3* 96 Problems Intermediate level" [ref=e913] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/2to3stars
+            - generic [ref=e914]:
+              - paragraph [ref=e916]: Jump from 2* to 3*
+              - generic [ref=e917]:
+                - paragraph [ref=e919]: Practice these problems curated to help you jump up from a 2* on CodeChef to 3*
+                - separator [ref=e920]
+                - generic [ref=e921]:
+                  - generic [ref=e924]: 96 Problems
+                  - generic [ref=e925]:
+                    - img [ref=e926]
+                    - generic [ref=e928]: Intermediate level
+          - link "Rise from 3* to 4* Practice these problems curated to help you rise from a 3* on CodeChef to 4* 118 Problems Intermediate level" [ref=e929] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/3to4stars
+            - generic [ref=e930]:
+              - paragraph [ref=e932]: Rise from 3* to 4*
+              - generic [ref=e933]:
+                - paragraph [ref=e935]: Practice these problems curated to help you rise from a 3* on CodeChef to 4*
+                - separator [ref=e936]
+                - generic [ref=e937]:
+                  - generic [ref=e940]: 118 Problems
+                  - generic [ref=e941]:
+                    - img [ref=e942]
+                    - generic [ref=e944]: Intermediate level
+      - generic [ref=e945]:
+        - heading "Interview Questions" [level=1] [ref=e946]
+        - generic [ref=e948]:
+          - link "Python Interview Questions Practice these 118 Python Interview Questions and prepare for freshers interviews. Use the detailed explanations for MCQs whose answer you don't know. 118 Problems Beginner level" [ref=e949] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/python-interview-questions
+            - generic [ref=e950]:
+              - paragraph [ref=e952]: Python Interview Questions
+              - generic [ref=e953]:
+                - paragraph [ref=e955]: Practice these 118 Python Interview Questions and prepare for freshers interviews. Use the detailed explanations for MCQs whose answer you don't know.
+                - separator [ref=e956]
+                - generic [ref=e957]:
+                  - generic [ref=e960]: 118 Problems
+                  - generic [ref=e961]:
+                    - img [ref=e962]
+                    - generic [ref=e964]: Beginner level
+          - link "Java Interview Questions for Freshers Practice these 146 Java MCQs with detailed explanations and prepare yourself for fresher interviews in Java. 146 Problems Beginner level" [ref=e965] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/java-interview-questions
+            - generic [ref=e966]:
+              - paragraph [ref=e968]: Java Interview Questions for Freshers
+              - generic [ref=e969]:
+                - paragraph [ref=e971]: Practice these 146 Java MCQs with detailed explanations and prepare yourself for fresher interviews in Java.
+                - separator [ref=e972]
+                - generic [ref=e973]:
+                  - generic [ref=e976]: 146 Problems
+                  - generic [ref=e977]:
+                    - img [ref=e978]
+                    - generic [ref=e980]: Beginner level
+          - link "C++ Interview Questions and Answers Revise all the important concepts of C++ and prepare yourself for the interviews. Check explanation of the questions if you are not able to solve them and learn new concepts. 120 Problems Beginner level" [ref=e981] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/cpp-interview-questions
+            - generic [ref=e982]:
+              - paragraph [ref=e984]: C++ Interview Questions and Answers
+              - generic [ref=e985]:
+                - paragraph [ref=e987]: Revise all the important concepts of C++ and prepare yourself for the interviews. Check explanation of the questions if you are not able to solve them and learn new concepts.
+                - separator [ref=e988]
+                - generic [ref=e989]:
+                  - generic [ref=e992]: 120 Problems
+                  - generic [ref=e993]:
+                    - img [ref=e994]
+                    - generic [ref=e996]: Beginner level
+          - link "Top SQL Interview Questions Revise all the important concepts with our 70 SQL interview questions. Prepare yourself for the upcoming SQL interviews by solving practice problems. 70 Problems Beginner level" [ref=e997] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/sql-interview-questions
+            - generic [ref=e998]:
+              - paragraph [ref=e1000]: Top SQL Interview Questions
+              - generic [ref=e1001]:
+                - paragraph [ref=e1003]: Revise all the important concepts with our 70 SQL interview questions. Prepare yourself for the upcoming SQL interviews by solving practice problems.
+                - separator [ref=e1004]
+                - generic [ref=e1005]:
+                  - generic [ref=e1008]: 70 Problems
+                  - generic [ref=e1009]:
+                    - img [ref=e1010]
+                    - generic [ref=e1012]: Beginner level
+          - link "Top JavaScript Interview Questions Revise all the important JavaScript concepts by answering these JavaScript Interview Questions. All questions contain detailed explanation so that you can learn the topics you don't know fully. 77 Problems Beginner level" [ref=e1013] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/javascript-interview-questions
+            - generic [ref=e1014]:
+              - paragraph [ref=e1016]: Top JavaScript Interview Questions
+              - generic [ref=e1017]:
+                - paragraph [ref=e1019]: Revise all the important JavaScript concepts by answering these JavaScript Interview Questions. All questions contain detailed explanation so that you can learn the topics you don't know fully.
+                - separator [ref=e1020]
+                - generic [ref=e1021]:
+                  - generic [ref=e1024]: 77 Problems
+                  - generic [ref=e1025]:
+                    - img [ref=e1026]
+                    - generic [ref=e1028]: Beginner level
+          - link "React Interview Questions Prepare for your React job interview with our list of common questions and answers. Cover key topics from JSX basics to advanced hooks, and boost your confidence for that big day by reading detailed explanations! 118 Problems Beginner level" [ref=e1029] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/react-interview-questions
+            - generic [ref=e1030]:
+              - paragraph [ref=e1032]: React Interview Questions
+              - generic [ref=e1033]:
+                - paragraph [ref=e1035]: Prepare for your React job interview with our list of common questions and answers. Cover key topics from JSX basics to advanced hooks, and boost your confidence for that big day by reading detailed explanations!
+                - separator [ref=e1036]
+                - generic [ref=e1037]:
+                  - generic [ref=e1040]: 118 Problems
+                  - generic [ref=e1041]:
+                    - img [ref=e1042]
+                    - generic [ref=e1044]: Beginner level
+          - link "Data Structures Interview Questions Prepare yourselves for technical interview with a carefully curated set of problems that appeared in companies like Google, Facebook, Amazon, Microsoft, Adobe, Flipkart, OLX Group, Walmart Labs, eBay, Ola, LinkedIn & more 153 Problems Beginner level" [ref=e1045] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/interview-dsa
+            - generic [ref=e1046]:
+              - paragraph [ref=e1048]: Data Structures Interview Questions
+              - generic [ref=e1049]:
+                - paragraph [ref=e1051]: Prepare yourselves for technical interview with a carefully curated set of problems that appeared in companies like Google, Facebook, Amazon, Microsoft, Adobe, Flipkart, OLX Group, Walmart Labs, eBay, Ola, LinkedIn & more
+                - separator [ref=e1052]
+                - generic [ref=e1053]:
+                  - generic [ref=e1056]: 153 Problems
+                  - generic [ref=e1057]:
+                    - img [ref=e1058]
+                    - generic [ref=e1060]: Beginner level
+          - link "Top DBMS Interview Questions Prepare for DBMS interviews with more than 92 interview questions. This path covers key topics such as data modelling, relational database design, SQL, transaction management, and emerging database technologies. 139 Problems Beginner level" [ref=e1061] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/interview-dbms
+            - generic [ref=e1062]:
+              - paragraph [ref=e1064]: Top DBMS Interview Questions
+              - generic [ref=e1065]:
+                - paragraph [ref=e1067]: Prepare for DBMS interviews with more than 92 interview questions. This path covers key topics such as data modelling, relational database design, SQL, transaction management, and emerging database technologies.
+                - separator [ref=e1068]
+                - generic [ref=e1069]:
+                  - generic [ref=e1072]: 139 Problems
+                  - generic [ref=e1073]:
+                    - img [ref=e1074]
+                    - generic [ref=e1076]: Beginner level
+          - link "Operating systems Interview Questions Revise all the important Operating Systems concepts and practice lots of MCQ questions to prepare for interviews. 160 Problems Beginner level" [ref=e1077] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/operating-systems
+            - generic [ref=e1078]:
+              - paragraph [ref=e1080]: Operating systems Interview Questions
+              - generic [ref=e1081]:
+                - paragraph [ref=e1083]: Revise all the important Operating Systems concepts and practice lots of MCQ questions to prepare for interviews.
+                - separator [ref=e1084]
+                - generic [ref=e1085]:
+                  - generic [ref=e1088]: 160 Problems
+                  - generic [ref=e1089]:
+                    - img [ref=e1090]
+                    - generic [ref=e1092]: Beginner level
+          - link "React Advanced Interview Questions Revise important Advanced React concepts with these interview questions and exercises. Attempt these 25 MCQs and Coding problems to practice Advanced React. 25 Problems Beginner level" [ref=e1093] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/react-advanced
+            - generic [ref=e1094]:
+              - paragraph [ref=e1096]: React Advanced Interview Questions
+              - generic [ref=e1097]:
+                - paragraph [ref=e1099]: Revise important Advanced React concepts with these interview questions and exercises. Attempt these 25 MCQs and Coding problems to practice Advanced React.
+                - separator [ref=e1100]
+                - generic [ref=e1101]:
+                  - generic [ref=e1104]: 25 Problems
+                  - generic [ref=e1105]:
+                    - img [ref=e1106]
+                    - generic [ref=e1108]: Beginner level
+          - link "Python Developer Interview Preparation Prepare for freshers interviews for Python developer roles. Practice your responses for commonly asked Interview questions. 160 Problems Intermediate level" [ref=e1109] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/python-development-interview
+            - generic [ref=e1110]:
+              - paragraph [ref=e1112]: Python Developer Interview Preparation
+              - generic [ref=e1113]:
+                - paragraph [ref=e1115]: Prepare for freshers interviews for Python developer roles. Practice your responses for commonly asked Interview questions.
+                - separator [ref=e1116]
+                - generic [ref=e1117]:
+                  - generic [ref=e1120]: 160 Problems
+                  - generic [ref=e1121]:
+                    - img [ref=e1122]
+                    - generic [ref=e1124]: Intermediate level
+          - link "Java Developer Interview Preparation Prepare for freshers interviews for Java developer roles. Practice your responses for commonly asked Interview questions. 84 Problems Beginner level" [ref=e1125] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/java-development-interview
+            - generic [ref=e1126]:
+              - paragraph [ref=e1128]: Java Developer Interview Preparation
+              - generic [ref=e1129]:
+                - paragraph [ref=e1131]: Prepare for freshers interviews for Java developer roles. Practice your responses for commonly asked Interview questions.
+                - separator [ref=e1132]
+                - generic [ref=e1133]:
+                  - generic [ref=e1136]: 84 Problems
+                  - generic [ref=e1137]:
+                    - img [ref=e1138]
+                    - generic [ref=e1140]: Beginner level
+      - generic [ref=e1141]:
+        - heading "Other Practice Paths" [level=1] [ref=e1142]
+        - generic [ref=e1144]:
+          - link "SQL case studies Put your SQL skills to the test. Get better at intermediate level Analytics using the case studies given in this practice path 192 Problems Intermediate level" [ref=e1145] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/sql-case-study
+            - generic [ref=e1146]:
+              - paragraph [ref=e1148]: SQL case studies
+              - generic [ref=e1149]:
+                - paragraph [ref=e1151]: Put your SQL skills to the test. Get better at intermediate level Analytics using the case studies given in this practice path
+                - separator [ref=e1152]
+                - generic [ref=e1153]:
+                  - generic [ref=e1156]: 192 Problems
+                  - generic [ref=e1157]:
+                    - img [ref=e1158]
+                    - generic [ref=e1160]: Intermediate level
+          - link "Practice R Programming Solve Practice problems online with the Practice R path on CodeChef. Write code for over 170 R coding challenges and prepare for interviews. 170 Problems Beginner level" [ref=e1161] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/r
+            - generic [ref=e1162]:
+              - paragraph [ref=e1164]: Practice R Programming
+              - generic [ref=e1165]:
+                - paragraph [ref=e1167]: Solve Practice problems online with the Practice R path on CodeChef. Write code for over 170 R coding challenges and prepare for interviews.
+                - separator [ref=e1168]
+                - generic [ref=e1169]:
+                  - generic [ref=e1172]: 170 Problems
+                  - generic [ref=e1173]:
+                    - img [ref=e1174]
+                    - generic [ref=e1176]: Beginner level
+          - link "Practice Rust Get hands-on experience in Rust language with this interactive and practical course. Master the basic syntax of the language and develop real-world applications with confidence. 33 Problems Beginner level" [ref=e1177] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/rust
+            - generic [ref=e1178]:
+              - paragraph [ref=e1180]: Practice Rust
+              - generic [ref=e1181]:
+                - paragraph [ref=e1183]: Get hands-on experience in Rust language with this interactive and practical course. Master the basic syntax of the language and develop real-world applications with confidence.
+                - separator [ref=e1184]
+                - generic [ref=e1185]:
+                  - generic [ref=e1188]: 33 Problems
+                  - generic [ref=e1189]:
+                    - img [ref=e1190]
+                    - generic [ref=e1192]: Beginner level
+          - link "Practice C# Learn the basics of C# programming with ease in this interactive and practical course. Master the basic syntax of the language and build a solid foundation for developing Windows applications. 33 Problems Beginner level" [ref=e1193] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/c-sharp
+            - generic [ref=e1194]:
+              - paragraph [ref=e1196]: Practice C#
+              - generic [ref=e1197]:
+                - paragraph [ref=e1199]: Learn the basics of C# programming with ease in this interactive and practical course. Master the basic syntax of the language and build a solid foundation for developing Windows applications.
+                - separator [ref=e1200]
+                - generic [ref=e1201]:
+                  - generic [ref=e1204]: 33 Problems
+                  - generic [ref=e1205]:
+                    - img [ref=e1206]
+                    - generic [ref=e1208]: Beginner level
+          - link "Practice Go Learn the basics of Go programming with ease in this interactive and practical course. This course will provide a good base to building real world applications in go. 33 Problems Beginner level" [ref=e1209] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/go
+            - generic [ref=e1210]:
+              - paragraph [ref=e1212]: Practice Go
+              - generic [ref=e1213]:
+                - paragraph [ref=e1215]: Learn the basics of Go programming with ease in this interactive and practical course. This course will provide a good base to building real world applications in go.
+                - separator [ref=e1216]
+                - generic [ref=e1217]:
+                  - generic [ref=e1220]: 33 Problems
+                  - generic [ref=e1221]:
+                    - img [ref=e1222]
+                    - generic [ref=e1224]: Beginner level
+          - link "Practice for ZCO and INOI Prepare for ZCO and INOI via specially curated practice problems and past exam problems. Read our roadmap - https://www.codechef.com/blogs/prepare-for-zco-inoi-ioi-exam 106 Problems Intermediate level" [ref=e1225] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/zco-inoi-problems
+            - generic [ref=e1226]:
+              - paragraph [ref=e1228]: Practice for ZCO and INOI
+              - generic [ref=e1229]:
+                - paragraph [ref=e1231]: Prepare for ZCO and INOI via specially curated practice problems and past exam problems. Read our roadmap - https://www.codechef.com/blogs/prepare-for-zco-inoi-ioi-exam
+                - separator [ref=e1232]
+                - generic [ref=e1233]:
+                  - generic [ref=e1236]: 106 Problems
+                  - generic [ref=e1237]:
+                    - img [ref=e1238]
+                    - generic [ref=e1240]: Intermediate level
+          - link "Prepare for ICPC - Past Year Problems Prepare for your next ICPC online or onsite round by practicing problems of past years. Get an understanding of the pattern of questions which are asked. 288 Problems Intermediate level" [ref=e1241] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/icpc
+            - generic [ref=e1242]:
+              - paragraph [ref=e1244]: Prepare for ICPC - Past Year Problems
+              - generic [ref=e1245]:
+                - paragraph [ref=e1247]: Prepare for your next ICPC online or onsite round by practicing problems of past years. Get an understanding of the pattern of questions which are asked.
+                - separator [ref=e1248]
+                - generic [ref=e1249]:
+                  - generic [ref=e1252]: 288 Problems
+                  - generic [ref=e1253]:
+                    - img [ref=e1254]
+                    - generic [ref=e1256]: Intermediate level
+          - link "Practice NumPy - Coding Problems and Challenges Practice the essential Python library for scientific computing. Master array manipulation, statistical operations, and start your journey to efficient, data-driven insights today! 46 Problems Intermediate level" [ref=e1257] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/numpy
+            - generic [ref=e1258]:
+              - paragraph [ref=e1260]: Practice NumPy - Coding Problems and Challenges
+              - generic [ref=e1261]:
+                - paragraph [ref=e1263]: Practice the essential Python library for scientific computing. Master array manipulation, statistical operations, and start your journey to efficient, data-driven insights today!
+                - separator [ref=e1264]
+                - generic [ref=e1265]:
+                  - generic [ref=e1268]: 46 Problems
+                  - generic [ref=e1269]:
+                    - img [ref=e1270]
+                    - generic [ref=e1272]: Intermediate level
+          - link "Pandas - Practice problems Unlock the power of data with by solving our Pandas practice problems for Beginners! Perfect for aspiring data scientists, this practice path covers Pandas, Series, DataFrames, data cleaning, preprocessing, and analysis. Learn via coding exercises. 32 Problems Intermediate level" [ref=e1273] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/pandas
+            - generic [ref=e1274]:
+              - paragraph [ref=e1276]: Pandas - Practice problems
+              - generic [ref=e1277]:
+                - paragraph [ref=e1279]: Unlock the power of data with by solving our Pandas practice problems for Beginners! Perfect for aspiring data scientists, this practice path covers Pandas, Series, DataFrames, data cleaning, preprocessing, and analysis. Learn via coding exercises.
+                - separator [ref=e1280]
+                - generic [ref=e1281]:
+                  - generic [ref=e1284]: 32 Problems
+                  - generic [ref=e1285]:
+                    - img [ref=e1286]
+                    - generic [ref=e1288]: Intermediate level
+      - generic [ref=e1289]:
+        - heading "Company Based Questions" [level=1] [ref=e1290]
+        - generic [ref=e1292]:
+          - link "Amazon Coding Interview Questions Prepare for your Amazon online assessment and Interview with most commonly asked coding questions. 26 Problems Beginner level" [ref=e1293] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/amazon-interview-questions
+            - generic [ref=e1294]:
+              - paragraph [ref=e1296]: Amazon Coding Interview Questions
+              - generic [ref=e1297]:
+                - paragraph [ref=e1299]: Prepare for your Amazon online assessment and Interview with most commonly asked coding questions.
+                - separator [ref=e1300]
+                - generic [ref=e1301]:
+                  - generic [ref=e1304]: 26 Problems
+                  - generic [ref=e1305]:
+                    - img [ref=e1306]
+                    - generic [ref=e1308]: Beginner level
+          - link "Microsoft Coding Interview Questions Prepare for your Microsoft online assessment and Interview with most commonly asked coding questions. 14 Problems Beginner level" [ref=e1309] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/microsoft-interview-questions
+            - generic [ref=e1310]:
+              - paragraph [ref=e1312]: Microsoft Coding Interview Questions
+              - generic [ref=e1313]:
+                - paragraph [ref=e1315]: Prepare for your Microsoft online assessment and Interview with most commonly asked coding questions.
+                - separator [ref=e1316]
+                - generic [ref=e1317]:
+                  - generic [ref=e1320]: 14 Problems
+                  - generic [ref=e1321]:
+                    - img [ref=e1322]
+                    - generic [ref=e1324]: Beginner level
+          - link "Google Interview Questions Prepare for your Google online assessment and Interview with most commonly asked coding questions. 11 Problems Beginner level" [ref=e1325] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/google-interview-questions
+            - generic [ref=e1326]:
+              - paragraph [ref=e1328]: Google Interview Questions
+              - generic [ref=e1329]:
+                - paragraph [ref=e1331]: Prepare for your Google online assessment and Interview with most commonly asked coding questions.
+                - separator [ref=e1332]
+                - generic [ref=e1333]:
+                  - generic [ref=e1336]: 11 Problems
+                  - generic [ref=e1337]:
+                    - img [ref=e1338]
+                    - generic [ref=e1340]: Beginner level
+          - link "Adobe Coding Interview Questions Prepare for your Adobe online assessment and Interview with most commonly asked coding questions. 13 Problems Beginner level" [ref=e1341] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/adobe-interview-questions
+            - generic [ref=e1342]:
+              - paragraph [ref=e1344]: Adobe Coding Interview Questions
+              - generic [ref=e1345]:
+                - paragraph [ref=e1347]: Prepare for your Adobe online assessment and Interview with most commonly asked coding questions.
+                - separator [ref=e1348]
+                - generic [ref=e1349]:
+                  - generic [ref=e1352]: 13 Problems
+                  - generic [ref=e1353]:
+                    - img [ref=e1354]
+                    - generic [ref=e1356]: Beginner level
+          - link "Flipkart Coding Interview Questions Prepare for your Flipkart online assessment and Interview with most commonly asked coding questions. 15 Problems Beginner level" [ref=e1357] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/flipkart-interview-questions
+            - generic [ref=e1358]:
+              - paragraph [ref=e1360]: Flipkart Coding Interview Questions
+              - generic [ref=e1361]:
+                - paragraph [ref=e1363]: Prepare for your Flipkart online assessment and Interview with most commonly asked coding questions.
+                - separator [ref=e1364]
+                - generic [ref=e1365]:
+                  - generic [ref=e1368]: 15 Problems
+                  - generic [ref=e1369]:
+                    - img [ref=e1370]
+                    - generic [ref=e1372]: Beginner level
+          - link "TCS Codevita Problems Prepare for TCS CodeVita and TCS Interview with most commonly asked coding problems. Solve the previous year Code Vita questions and get ready for for Codevita 2024. 19 Problems Beginner level" [ref=e1373] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/tcs-interview-questions
+            - generic [ref=e1374]:
+              - paragraph [ref=e1376]: TCS Codevita Problems
+              - generic [ref=e1377]:
+                - paragraph [ref=e1379]: Prepare for TCS CodeVita and TCS Interview with most commonly asked coding problems. Solve the previous year Code Vita questions and get ready for for Codevita 2024.
+                - separator [ref=e1380]
+                - generic [ref=e1381]:
+                  - generic [ref=e1384]: 19 Problems
+                  - generic [ref=e1385]:
+                    - img [ref=e1386]
+                    - generic [ref=e1388]: Beginner level
+          - link "TCS NQT Coding Questions Prepare for TCS NQT with previous years questions. Solve the coding, numerical ability, reasoning ability, verbal ability and quant questions which were asked in the past. 50 Problems Intermediate level" [ref=e1389] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/tcs-nqt-questions
+            - generic [ref=e1390]:
+              - paragraph [ref=e1392]: TCS NQT Coding Questions
+              - generic [ref=e1393]:
+                - paragraph [ref=e1395]: Prepare for TCS NQT with previous years questions. Solve the coding, numerical ability, reasoning ability, verbal ability and quant questions which were asked in the past.
+                - separator [ref=e1396]
+                - generic [ref=e1397]:
+                  - generic [ref=e1400]: 50 Problems
+                  - generic [ref=e1401]:
+                    - img [ref=e1402]
+                    - generic [ref=e1404]: Intermediate level
+          - link "Nutanix Coding Interview Questions Prepare for your Nutanix online assessment and Interview with most commonly asked coding questions. 12 Problems Intermediate level" [ref=e1405] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/nutanix-interview-questions
+            - generic [ref=e1406]:
+              - paragraph [ref=e1408]: Nutanix Coding Interview Questions
+              - generic [ref=e1409]:
+                - paragraph [ref=e1411]: Prepare for your Nutanix online assessment and Interview with most commonly asked coding questions.
+                - separator [ref=e1412]
+                - generic [ref=e1413]:
+                  - generic [ref=e1416]: 12 Problems
+                  - generic [ref=e1417]:
+                    - img [ref=e1418]
+                    - generic [ref=e1420]: Intermediate level
+          - link "Junglee Games Interview Questions Prepare for your Junglee Games online assessment and Interview with most commonly asked coding questions. 8 Problems Beginner level" [ref=e1421] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/junglee-games-interview-questions
+            - generic [ref=e1422]:
+              - paragraph [ref=e1424]: Junglee Games Interview Questions
+              - generic [ref=e1425]:
+                - paragraph [ref=e1427]: Prepare for your Junglee Games online assessment and Interview with most commonly asked coding questions.
+                - separator [ref=e1428]
+                - generic [ref=e1429]:
+                  - generic [ref=e1432]: 8 Problems
+                  - generic [ref=e1433]:
+                    - img [ref=e1434]
+                    - generic [ref=e1436]: Beginner level
+          - link "PhonePe Interview Questions Prepare for your PhonePe online assessment and Interview with most commonly asked coding questions. 8 Problems Intermediate level" [ref=e1437] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/phonepe-interview-questions
+            - generic [ref=e1438]:
+              - paragraph [ref=e1440]: PhonePe Interview Questions
+              - generic [ref=e1441]:
+                - paragraph [ref=e1443]: Prepare for your PhonePe online assessment and Interview with most commonly asked coding questions.
+                - separator [ref=e1444]
+                - generic [ref=e1445]:
+                  - generic [ref=e1448]: 8 Problems
+                  - generic [ref=e1449]:
+                    - img [ref=e1450]
+                    - generic [ref=e1452]: Intermediate level
+          - link "Visa Interview Questions Prepare for your Visae online assessment and Interview with most commonly asked coding questions. 10 Problems Intermediate level" [ref=e1453] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/visa-interview-questions
+            - generic [ref=e1454]:
+              - paragraph [ref=e1456]: Visa Interview Questions
+              - generic [ref=e1457]:
+                - paragraph [ref=e1459]: Prepare for your Visae online assessment and Interview with most commonly asked coding questions.
+                - separator [ref=e1460]
+                - generic [ref=e1461]:
+                  - generic [ref=e1464]: 10 Problems
+                  - generic [ref=e1465]:
+                    - img [ref=e1466]
+                    - generic [ref=e1468]: Intermediate level
+          - link "Accolite Coding Interview Questions Prepare for your Accolite Digital online assessment and Interview with most commonly asked coding questions. 9 Problems Intermediate level" [ref=e1469] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/accolite-interview-questions
+            - generic [ref=e1470]:
+              - paragraph [ref=e1472]: Accolite Coding Interview Questions
+              - generic [ref=e1473]:
+                - paragraph [ref=e1475]: Prepare for your Accolite Digital online assessment and Interview with most commonly asked coding questions.
+                - separator [ref=e1476]
+                - generic [ref=e1477]:
+                  - generic [ref=e1480]: 9 Problems
+                  - generic [ref=e1481]:
+                    - img [ref=e1482]
+                    - generic [ref=e1484]: Intermediate level
+          - link "Texas Instruments Coding Interview Questions Prepare for your Texas Instruments online assessment and Interview with most commonly asked coding questions. 8 Problems Intermediate level" [ref=e1485] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/texas-interview-questions
+            - generic [ref=e1486]:
+              - paragraph [ref=e1488]: Texas Instruments Coding Interview Questions
+              - generic [ref=e1489]:
+                - paragraph [ref=e1491]: Prepare for your Texas Instruments online assessment and Interview with most commonly asked coding questions.
+                - separator [ref=e1492]
+                - generic [ref=e1493]:
+                  - generic [ref=e1496]: 8 Problems
+                  - generic [ref=e1497]:
+                    - img [ref=e1498]
+                    - generic [ref=e1500]: Intermediate level
+          - link "Glean Coding Interview Questions Prepare for your Glean online assessment and Interview with most commonly asked coding questions. 8 Problems Intermediate level" [ref=e1501] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/glean-interview-questions
+            - generic [ref=e1502]:
+              - paragraph [ref=e1504]: Glean Coding Interview Questions
+              - generic [ref=e1505]:
+                - paragraph [ref=e1507]: Prepare for your Glean online assessment and Interview with most commonly asked coding questions.
+                - separator [ref=e1508]
+                - generic [ref=e1509]:
+                  - generic [ref=e1512]: 8 Problems
+                  - generic [ref=e1513]:
+                    - img [ref=e1514]
+                    - generic [ref=e1516]: Intermediate level
+          - link "Maxlinear Coding Interview Questions Prepare for your Maxlinear online assessment and Interview with most commonly asked coding questions. 10 Problems Intermediate level" [ref=e1517] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/maxlinear-interview-questions
+            - generic [ref=e1518]:
+              - paragraph [ref=e1520]: Maxlinear Coding Interview Questions
+              - generic [ref=e1521]:
+                - paragraph [ref=e1523]: Prepare for your Maxlinear online assessment and Interview with most commonly asked coding questions.
+                - separator [ref=e1524]
+                - generic [ref=e1525]:
+                  - generic [ref=e1528]: 10 Problems
+                  - generic [ref=e1529]:
+                    - img [ref=e1530]
+                    - generic [ref=e1532]: Intermediate level
+          - link "Deloitte NLA Questions Prepare for Deloitte NLA with previous years questions. Solve the coding, numerical ability, reasoning ability, verbal ability and quant questions which were asked in the past. 84 Problems Intermediate level" [ref=e1533] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/deloitte-nla
+            - generic [ref=e1534]:
+              - paragraph [ref=e1536]: Deloitte NLA Questions
+              - generic [ref=e1537]:
+                - paragraph [ref=e1539]: Prepare for Deloitte NLA with previous years questions. Solve the coding, numerical ability, reasoning ability, verbal ability and quant questions which were asked in the past.
+                - separator [ref=e1540]
+                - generic [ref=e1541]:
+                  - generic [ref=e1544]: 84 Problems
+                  - generic [ref=e1545]:
+                    - img [ref=e1546]
+                    - generic [ref=e1548]: Intermediate level
+          - link "WIPRO Elite Questions Prepare for WIPRO Elite NTH with previous years questions. Solve the coding, numerical ability, reasoning ability, verbal ability and quant questions which were asked in the past. 97 Problems Intermediate level" [ref=e1549] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/wipro-elite-nth
+            - generic [ref=e1550]:
+              - paragraph [ref=e1552]: WIPRO Elite Questions
+              - generic [ref=e1553]:
+                - paragraph [ref=e1555]: Prepare for WIPRO Elite NTH with previous years questions. Solve the coding, numerical ability, reasoning ability, verbal ability and quant questions which were asked in the past.
+                - separator [ref=e1556]
+                - generic [ref=e1557]:
+                  - generic [ref=e1560]: 97 Problems
+                  - generic [ref=e1561]:
+                    - img [ref=e1562]
+                    - generic [ref=e1564]: Intermediate level
+          - link "Accenture Interview Questions Prepare for Accenture with previous years questions. Solve the coding, numerical ability, reasoning ability, verbal ability and quant questions which were asked in the past. 112 Problems Intermediate level" [ref=e1565] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/accenture-interview-questions
+            - generic [ref=e1566]:
+              - paragraph [ref=e1568]: Accenture Interview Questions
+              - generic [ref=e1569]:
+                - paragraph [ref=e1571]: Prepare for Accenture with previous years questions. Solve the coding, numerical ability, reasoning ability, verbal ability and quant questions which were asked in the past.
+                - separator [ref=e1572]
+                - generic [ref=e1573]:
+                  - generic [ref=e1576]: 112 Problems
+                  - generic [ref=e1577]:
+                    - img [ref=e1578]
+                    - generic [ref=e1580]: Intermediate level
+          - link "Infosys InfyTQ - Questions Prepare for Infosys with previous years questions. Solve the coding, numerical ability, reasoning ability, verbal ability and quant questions which were asked in the past. 76 Problems Intermediate level" [ref=e1581] [cursor=pointer]:
+            - /url: https://www.codechef.com/practice/infosys-pyq
+            - generic [ref=e1582]:
+              - paragraph [ref=e1584]: Infosys InfyTQ - Questions
+              - generic [ref=e1585]:
+                - paragraph [ref=e1587]: Prepare for Infosys with previous years questions. Solve the coding, numerical ability, reasoning ability, verbal ability and quant questions which were asked in the past.
+                - separator [ref=e1588]
+                - generic [ref=e1589]:
+                  - generic [ref=e1592]: 76 Problems
+                  - generic [ref=e1593]:
+                    - img [ref=e1594]
+                    - generic [ref=e1596]: Intermediate level
+      - generic [ref=e1597]:
+        - heading "Advanced Coding Challenges" [level=1] [ref=e1598]
+        - link "Python Coding Challenges Solve these Python coding challenges based on all the well known features of the Python language and make yourself an expert at Python. You will find coding challenges on list comprehension, functional programming concepts, generators, decorators and a lot more. 42 Problems Intermediate level" [ref=e1601] [cursor=pointer]:
+          - /url: https://www.codechef.com/practice/python-coding-challenges
+          - generic [ref=e1602]:
+            - paragraph [ref=e1604]: Python Coding Challenges
+            - generic [ref=e1605]:
+              - paragraph [ref=e1607]: Solve these Python coding challenges based on all the well known features of the Python language and make yourself an expert at Python. You will find coding challenges on list comprehension, functional programming concepts, generators, decorators and a lot more.
+              - separator [ref=e1608]
+              - generic [ref=e1609]:
+                - generic [ref=e1612]: 42 Problems
+                - generic [ref=e1613]:
+                  - img [ref=e1614]
+                  - generic [ref=e1616]: Intermediate level
+  - contentinfo [ref=e1617]:
+    - generic [ref=e1618]:
+      - generic [ref=e1619]:
+        - generic [ref=e1621]:
+          - generic [ref=e1622]: Bizzhub Workspaces, 6th Floor, MSR North Tower, Outer Ring Rd, Manayata Tech Park, Nagavara, Bengaluru, Karnataka 560045
+          - link "help@codechef.com" [ref=e1624] [cursor=pointer]:
+            - /url: mailto:help@codechef.com
+          - generic [ref=e1625]: +91 95911 47880
+          - separator [ref=e1626]
+        - generic [ref=e1627]:
+          - generic [ref=e1628]: Find us online
+          - generic [ref=e1629]:
+            - link [ref=e1630] [cursor=pointer]:
+              - /url: //youtube.com/c/codechef1
+            - link [ref=e1631] [cursor=pointer]:
+              - /url: //facebook.com/CodeChef
+            - link [ref=e1632] [cursor=pointer]:
+              - /url: //instagram.com/codechef
+            - link [ref=e1633] [cursor=pointer]:
+              - /url: //twitter.com/codechef
+            - link [ref=e1634] [cursor=pointer]:
+              - /url: //medium.com/codechef-official
+            - link [ref=e1635] [cursor=pointer]:
+              - /url: //linkedin.com/company/codechef
+      - generic [ref=e1636]:
+        - generic [ref=e1637]:
+          - paragraph [ref=e1639]: ROADMAPS
+          - generic [ref=e1640]:
+            - link "Learn Python" [ref=e1642] [cursor=pointer]:
+              - /url: /roadmap/python-dsa
+            - link "Learn Java" [ref=e1644] [cursor=pointer]:
+              - /url: /roadmap/java-dsa
+            - link "Learn C" [ref=e1646] [cursor=pointer]:
+              - /url: /roadmap/c-dsa
+            - link "Learn C++" [ref=e1648] [cursor=pointer]:
+              - /url: /roadmap/cpp-dsa
+            - link "Data structures and Algorithms" [ref=e1650] [cursor=pointer]:
+              - /url: /roadmap/data-structures-and-algorithms
+            - link "Competitive Programming" [ref=e1652] [cursor=pointer]:
+              - /url: /roadmap/become-5-star
+            - link "More Roadmaps" [ref=e1654] [cursor=pointer]:
+              - /url: /roadmaps
+        - generic [ref=e1655]:
+          - paragraph [ref=e1657]: CAREER PATHS
+          - generic [ref=e1658]:
+            - link "React JS Developer" [ref=e1660] [cursor=pointer]:
+              - /url: /roadmap/react-developer
+            - link "Full stack development" [ref=e1662] [cursor=pointer]:
+              - /url: /roadmap/full-stack-development
+            - link "SQL for Data Analysis" [ref=e1664] [cursor=pointer]:
+              - /url: /roadmap/sql
+            - link "Frontend Developer" [ref=e1666] [cursor=pointer]:
+              - /url: /roadmap/html
+            - link "Java Backend Developer" [ref=e1668] [cursor=pointer]:
+              - /url: /roadmap/java-development
+            - link "Data Analysis using Python" [ref=e1670] [cursor=pointer]:
+              - /url: /roadmap/data-analysis-using-python
+            - link "Python Backend Developer" [ref=e1672] [cursor=pointer]:
+              - /url: /roadmap/python-development
+            - link "C++ Developer" [ref=e1674] [cursor=pointer]:
+              - /url: /roadmap/cpp-development
+            - link "Machine Learning using Python" [ref=e1676] [cursor=pointer]:
+              - /url: /roadmap/machine-learning-using-python
+        - generic [ref=e1677]:
+          - paragraph [ref=e1679]: COMPILERS
+          - generic [ref=e1680]:
+            - link "HTML online compiler" [ref=e1682] [cursor=pointer]:
+              - /url: /html-online-compiler
+            - link "C++ online compiler" [ref=e1684] [cursor=pointer]:
+              - /url: /cpp-online-compiler
+            - link "C online compiler" [ref=e1686] [cursor=pointer]:
+              - /url: /c-online-compiler
+            - link "Java online compiler" [ref=e1688] [cursor=pointer]:
+              - /url: /java-online-compiler
+            - link "Python online compiler" [ref=e1690] [cursor=pointer]:
+              - /url: /python-online-compiler
+            - link "SQL online compiler" [ref=e1692] [cursor=pointer]:
+              - /url: /sql-online-compiler
+            - link "JavaScript online compiler" [ref=e1694] [cursor=pointer]:
+              - /url: /javascript-online-compiler
+            - link "React online compiler" [ref=e1696] [cursor=pointer]:
+              - /url: /react-online-compiler
+            - link "More compilers" [ref=e1698] [cursor=pointer]:
+              - /url: /ide
+        - generic [ref=e1699]:
+          - paragraph [ref=e1701]: COMPANY
+          - generic [ref=e1702]:
+            - link "About us" [ref=e1704] [cursor=pointer]:
+              - /url: /aboutus
+            - link "For colleges" [ref=e1706] [cursor=pointer]:
+              - /url: /college-program
+            - link "Coding Contests" [ref=e1708] [cursor=pointer]:
+              - /url: /contests
+            - link "Blogs" [ref=e1710] [cursor=pointer]:
+              - /url: /blogs
+            - link "Hire from us" [ref=e1712] [cursor=pointer]:
+              - /url: https://jobboard.codechef.com/recruiters
+            - link "Contact us" [ref=e1714] [cursor=pointer]:
+              - /url: /contactus
+            - link "Privacy Policy" [ref=e1716] [cursor=pointer]:
+              - /url: /privacy-policy
+            - link "Frequently Asked Questions" [ref=e1718] [cursor=pointer]:
+              - /url: /faq
+    - separator [ref=e1719]
+    - paragraph [ref=e1721]: © 2026 CodeChef Inc. All rights reserved.

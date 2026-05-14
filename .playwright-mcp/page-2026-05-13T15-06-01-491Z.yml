@@ -1,0 +1,227 @@
+- generic [active] [ref=e1]:
+  - link "AIZU ONLINE JUDGE" [ref=e3] [cursor=pointer]:
+    - /url: index.jsp
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - link "PAGETOP" [ref=e7] [cursor=pointer]:
+        - /url: javascript:void(0)
+      - link "PROBLEM" [ref=e9] [cursor=pointer]:
+        - /url: "#"
+      - link "RANKING" [ref=e11] [cursor=pointer]:
+        - /url: ranking.jsp?criteria=0
+      - link "STATUS" [ref=e13] [cursor=pointer]:
+        - /url: submission.jsp
+      - link "CONTEST" [ref=e15] [cursor=pointer]:
+        - /url: https://onlinejudge.u-aizu.ac.jp/beta/arena.html
+      - link "COURSE" [ref=e17] [cursor=pointer]:
+        - /url: https://onlinejudge.u-aizu.ac.jp/courses/list
+    - generic [ref=e20]:
+      - link "Login" [ref=e21] [cursor=pointer]:
+        - /url: signin.jsp
+        - generic [ref=e22]: Login
+      - link "Logout" [ref=e23] [cursor=pointer]:
+        - /url: signout.jsp
+        - generic [ref=e24]: Logout
+      - link "Register/Setting" [ref=e25] [cursor=pointer]:
+        - /url: javascript:void(0);
+        - generic [ref=e26]: Register/Setting
+  - generic [ref=e28]:
+    - generic [ref=e29]:
+      - link "Japanese" [ref=e30] [cursor=pointer]:
+        - /url: index.jsp?lang=ja
+      - link "English" [ref=e31] [cursor=pointer]:
+        - /url: index.jsp?lang=en
+    - generic [ref=e32]:
+      - link "For beginners" [ref=e33] [cursor=pointer]:
+        - /url: introduction.jsp
+      - link "HOME" [ref=e34] [cursor=pointer]:
+        - /url: index.jsp
+      - text: "-"
+  - generic [ref=e41]:
+    - generic [ref=e42]:
+      - generic [ref=e43]:
+        - heading "Problem Set from ALDS1" [level=2] [ref=e44]
+        - generic [ref=e45]:
+          - text: Volume
+          - combobox [ref=e46]:
+            - option [selected]
+            - option "Volume 0"
+            - option "Volume 1"
+            - option "Volume 2"
+            - option "Volume 3"
+            - option "Volume 4"
+            - option "Volume 5"
+            - option "Volume 6"
+            - option "Volume 7"
+            - option "Volume 10"
+            - option "Volume 11"
+            - option "Volume 12"
+            - option "Volume 13"
+            - option "Volume 14"
+            - option "Volume 15"
+            - option "Volume 16"
+            - option "Volume 20"
+            - option "Volume 21"
+            - option "Volume 22"
+            - option "Volume 23"
+            - option "Volume 24"
+            - option "Volume 25"
+            - option "Volume 26"
+            - option "Volume 27"
+            - option "Volume 28"
+            - option "Volume 29"
+            - option "Volume 30"
+            - option "Volume 31"
+            - option "Volume 32"
+            - option "Volume 33"
+            - option "Volume 34"
+            - option "Volume 35"
+        - generic [ref=e47]:
+          - text: Challenge
+          - combobox [ref=e48]:
+            - option [selected]
+            - option "JOI/Prelim"
+            - option "JOI/Final"
+            - option "PCK/Prelim"
+            - option "PCK/Final"
+            - option "ICPC/Prelim"
+            - option "ICPC/Regional"
+            - option "JAG/Prelim"
+            - option "JAG/Regional"
+            - option "JAG/Summer"
+            - option "JAG/Winter"
+            - option "JAG/Spring"
+            - option "VPC/RUPC"
+            - option "VPC/HUPC"
+            - option "VPC/PKPC"
+            - option "VPC/KUPC"
+            - option "VPC/UTPC"
+            - option "VPC/OUPC"
+            - option "VPC/UECPC"
+            - option "VPC/WUPC"
+            - option "VPC/TUATPC"
+            - option "VPC/CVPC"
+            - option "VPC/TUPC"
+            - option "VPC/TOUPC"
+            - option "UOA/UAPC"
+            - option "UOA/PCKWU"
+        - generic [ref=e49]:
+          - text: Course
+          - combobox [ref=e50]:
+            - option [selected]
+            - option "ITP1"
+            - option "ALDS1"
+            - option "ITP2"
+            - option "DSL"
+            - option "CGL"
+            - option "GRL"
+            - option "DPL"
+            - option "NTL"
+      - generic [ref=e51]:
+        - link "ID" [ref=e52] [cursor=pointer]:
+          - /url: javascript:void(0)
+        - link "Solved" [ref=e53] [cursor=pointer]:
+          - /url: javascript:void(0)
+        - link "Recommended" [ref=e54] [cursor=pointer]:
+          - /url: javascript:void(0)
+    - table [ref=e60]:
+      - rowgroup [ref=e61]:
+        - row "Problem Title TL ML Success" [ref=e62]:
+          - cell [ref=e63]
+          - cell [ref=e64]
+          - cell "Problem Title" [ref=e65]
+          - cell [ref=e66]
+          - cell "TL" [ref=e67]
+          - cell "ML" [ref=e68]
+          - cell [ref=e69]
+          - cell "Success" [ref=e70]
+          - cell [ref=e71]
+      - rowgroup
+  - generic [ref=e75]:
+    - generic:
+      - generic [ref=e76]:
+        - table [ref=e77]:
+          - rowgroup [ref=e78]:
+            - row [ref=e79]:
+              - cell
+              - cell [ref=e80]
+              - cell
+        - generic [ref=e82]:
+          - link:
+            - /url: https://twitter.com/aizu_oj
+          - paragraph [ref=e83]:
+            - text: Aizu Online Judge
+            - link "follow us on Twitter" [ref=e84] [cursor=pointer]:
+              - /url: https://twitter.com/aizu_oj
+        - paragraph
+        - link [ref=e86] [cursor=pointer]:
+          - /url: http://www.u-aizu.ac.jp/
+          - img [ref=e87]
+      - generic [ref=e88]:
+        - generic [ref=e89]:
+          - heading "About us" [level=4] [ref=e90]
+          - paragraph [ref=e91]:
+            - link "Contact" [ref=e92] [cursor=pointer]:
+              - /url: contact.jsp
+            - link "System Info" [ref=e93] [cursor=pointer]:
+              - /url: system_info.jsp
+            - link "The University of Aizu" [ref=e94] [cursor=pointer]:
+              - /url: http://www.u-aizu.ac.jp
+            - link "Univ. of Aizu Competitive Programming Club" [ref=e95] [cursor=pointer]:
+              - /url: http://www.u-aizu.ac.jp/circles/acpc
+        - generic [ref=e96]:
+          - heading "Tools" [level=4] [ref=e97]
+          - paragraph [ref=e98]:
+            - link "WEB Board" [ref=e99] [cursor=pointer]:
+              - /url: https://onlinejudge.u-aizu.ac.jp/services/bbs/#/top
+            - link "Tools" [ref=e100] [cursor=pointer]:
+              - /url: aoj_tools.jsp
+            - link "Virtual Arena" [ref=e101] [cursor=pointer]:
+              - /url: https://onlinejudge.u-aizu.ac.jp/beta/arena.html
+            - link "API Reference" [ref=e102] [cursor=pointer]:
+              - /url: api.jsp
+        - generic [ref=e103]:
+          - heading "Links" [level=4] [ref=e104]
+          - paragraph [ref=e105]:
+            - link "ACM/ICPC" [ref=e106] [cursor=pointer]:
+              - /url: http://cm.baylor.edu/welcome.icpc
+            - link "ACM/ICPC Asia Japan" [ref=e107] [cursor=pointer]:
+              - /url: http://www.u-aizu.ac.jp/icpc2013
+            - link "ACM-ICPC OB/OG Alumni Group" [ref=e108] [cursor=pointer]:
+              - /url: http://acm-icpc.aitea.net/index.php?FrontPage
+            - link "PC Koshien" [ref=e109] [cursor=pointer]:
+              - /url: http://web-ext.u-aizu.ac.jp/pc-concours/
+            - link "JOI" [ref=e110] [cursor=pointer]:
+              - /url: http://www.ioi-jp.org
+          - paragraph [ref=e111]:
+            - link "AtCoder" [ref=e112] [cursor=pointer]:
+              - /url: http://atcoder.jp/
+            - link "TopCoder" [ref=e113] [cursor=pointer]:
+              - /url: http://www.topcoder.com/
+            - link "CodeForces" [ref=e114] [cursor=pointer]:
+              - /url: http://codeforces.com
+          - paragraph [ref=e115]:
+            - link "Uva Online judges" [ref=e116] [cursor=pointer]:
+              - /url: http://uva.onlinejudge.org
+            - link "ACM-ICPC Live Archive" [ref=e117] [cursor=pointer]:
+              - /url: http://livearchive.onlinejudge.org
+            - link "PKU JudgeOnline" [ref=e118] [cursor=pointer]:
+              - /url: http://poj.org/
+    - generic [ref=e119]:
+      - paragraph [ref=e120]:
+        - text: Best viewed using
+        - link "Firefox" [ref=e121] [cursor=pointer]:
+          - /url: http://mozilla.jp/firefox/
+        - text: ","
+        - link "Google Chrome" [ref=e122] [cursor=pointer]:
+          - /url: http://www.google.co.jp/chrome/
+      - paragraph [ref=e123]:
+        - text: Aizu Online Judge Version 1.0 © 2004 - 2016 Univ. of Aizu Competitive Programming Club (ICPCPC), Database Systems Lab.
+        - link "University of Aizu" [ref=e124] [cursor=pointer]:
+          - /url: http://www.u-aizu.ac.jp
+  - generic [ref=e126]: BESs
+  - generic [ref=e127]: BESs
+  - generic [ref=e128]: BESs
+  - generic [ref=e129]: BESs
+  - generic [ref=e130]: BESs
+  - generic [ref=e131]: BESs

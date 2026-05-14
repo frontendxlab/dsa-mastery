@@ -1,0 +1,28 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - img "Page Not Found" [ref=e7]
+      - heading "Whoops, that page is gone." [level=1] [ref=e8]
+      - paragraph [ref=e9]: While you’re here, feast your eyes upon these popular recommendations for you.
+    - generic [ref=e11]:
+      - link "Problem of the day Know more >>" [ref=e12] [cursor=pointer]:
+        - /url: https://www.geeksforgeeks.org/problem-of-the-day
+        - paragraph [ref=e13]: Problem of the day
+        - generic [ref=e14]: Know more >>
+        - img [ref=e16]
+      - link "All Courses Know more >>" [ref=e28] [cursor=pointer]:
+        - /url: https://www.geeksforgeeks.org/courses
+        - paragraph [ref=e29]: All Courses
+        - generic [ref=e30]: Know more >>
+        - img [ref=e32]
+      - link "Jobs Know more >>" [ref=e44] [cursor=pointer]:
+        - /url: https://www.geeksforgeeks.org/jobs
+        - paragraph [ref=e45]: Jobs
+        - generic [ref=e46]: Know more >>
+        - img [ref=e48]
+      - link "GfG Connect Know more >>" [ref=e60] [cursor=pointer]:
+        - /url: https://www.geeksforgeeks.org/gfg-connect
+        - paragraph [ref=e61]: GfG Connect
+        - generic [ref=e62]: Know more >>
+        - img [ref=e64]
+  - alert [ref=e76]

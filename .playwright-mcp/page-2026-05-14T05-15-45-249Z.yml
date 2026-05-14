@@ -1,0 +1,239 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "CodeChef Logo" [ref=e8] [cursor=pointer]:
+        - /url: https://www.codechef.com
+        - img "CodeChef Logo" [ref=e9]
+      - generic [ref=e10]:
+        - generic "Switch to Light Mode" [ref=e12] [cursor=pointer]:
+          - img [ref=e13]
+        - generic [ref=e17]:
+          - link "Upgrade to Pro" [ref=e18] [cursor=pointer]:
+            - /url: /pro#practice-path-header
+            - generic [ref=e20]: Upgrade to Pro
+          - separator [ref=e21]
+          - generic [ref=e22]:
+            - button "Login" [ref=e23] [cursor=pointer]
+            - button "Sign Up" [ref=e24] [cursor=pointer]
+  - generic [ref=e27]:
+    - button "Courses" [ref=e28] [cursor=pointer]:
+      - generic [ref=e29]: Courses
+    - link "Practice" [ref=e32] [cursor=pointer]:
+      - /url: /practice
+      - generic [ref=e33]: Practice
+    - link "Compete" [ref=e34] [cursor=pointer]:
+      - /url: /contests
+      - generic [ref=e35]: Compete
+    - link "Compiler" [ref=e36] [cursor=pointer]:
+      - /url: /ide
+      - generic [ref=e37]: Compiler
+  - generic [ref=e40]:
+    - generic [ref=e43]:
+      - generic [ref=e45]:
+        - img "language-logo" [ref=e48]
+        - generic [ref=e49]:
+          - heading "Practice Basic Math" [level=1] [ref=e50]
+          - paragraph [ref=e51]: Basic Math includes problems on topics like arithmetic, sequences, and counting, which are fundamental to proper understanding of algorithmic logic.
+          - generic [ref=e52]:
+            - generic [ref=e53]:
+              - img [ref=e55]
+              - generic [ref=e57]: 2 Lessons
+            - generic [ref=e58]:
+              - img [ref=e60]
+              - generic [ref=e62]: 10 Hours
+            - generic [ref=e63]:
+              - img [ref=e65]
+              - generic [ref=e67]: 23 Problems
+            - generic [ref=e68]:
+              - img [ref=e70]
+              - generic [ref=e72]: 80.7k Learners
+            - generic [ref=e73]:
+              - img [ref=e75]
+              - generic [ref=e77]: Beginner Level
+          - generic [ref=e78]:
+            - generic [ref=e79]:
+              - generic [ref=e81]:
+                - img [ref=e82]
+                - generic [ref=e84]: "Your Progress :"
+                - generic [ref=e85]: 0% Completed
+              - img [ref=e89]
+            - button "Start Learning" [ref=e92]
+      - generic [ref=e94]:
+        - generic [ref=e95] [cursor=pointer]:
+          - generic [ref=e97]: "1"
+          - generic [ref=e98]:
+            - heading "Basic Math" [level=3] [ref=e99]
+            - paragraph
+          - img [ref=e101]
+        - generic [ref=e103]:
+          - generic [ref=e105]: PROBLEM NAME
+          - generic [ref=e107]: STATUS
+          - generic [ref=e109]: DIFFICULTY
+        - generic [ref=e110]:
+          - generic [ref=e111]:
+            - link "Fitness" [ref=e113] [cursor=pointer]:
+              - /url: https://www.codechef.com/practice/course/basic-math/BASICMATH/problems/FIT
+            - generic [ref=e120]: "258"
+          - generic [ref=e121]:
+            - link "Second Max of Three Numbers" [ref=e123] [cursor=pointer]:
+              - /url: https://www.codechef.com/practice/course/basic-math/BASICMATH/problems/SNDMAX
+            - generic [ref=e130]: "300"
+          - generic [ref=e131]:
+            - link "Chef and Chocolates" [ref=e133] [cursor=pointer]:
+              - /url: https://www.codechef.com/practice/course/basic-math/BASICMATH/problems/CCHOCOLATES
+            - generic [ref=e140]: "405"
+          - generic [ref=e141]:
+            - link "Find Remainder" [ref=e143] [cursor=pointer]:
+              - /url: https://www.codechef.com/practice/course/basic-math/BASICMATH/problems/FLOW002
+            - generic [ref=e150]: "421"
+          - generic [ref=e151]:
+            - link "Candy Store" [ref=e153] [cursor=pointer]:
+              - /url: https://www.codechef.com/practice/course/basic-math/BASICMATH/problems/CANDYSTORE
+            - generic [ref=e160]: "429"
+          - generic [ref=e161]:
+            - link "Scalene Triangle" [ref=e163] [cursor=pointer]:
+              - /url: https://www.codechef.com/practice/course/basic-math/BASICMATH/problems/SCALENE
+            - generic [ref=e170]: "430"
+          - generic [ref=e171]:
+            - link "Sum of Digits" [ref=e173] [cursor=pointer]:
+              - /url: https://www.codechef.com/practice/course/basic-math/BASICMATH/problems/FLOW006
+            - generic [ref=e180]: "455"
+          - generic [ref=e181]:
+            - link "Favourite Numbers" [ref=e183] [cursor=pointer]:
+              - /url: https://www.codechef.com/practice/course/basic-math/BASICMATH/problems/FAVOURITENUM
+            - generic [ref=e190]: "477"
+          - generic [ref=e191]:
+            - generic [ref=e192]:
+              - link "Test Averages" [ref=e193] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/basic-math/BASICMATHPRO/problems/TESTAVG
+              - generic [ref=e194]: Pro
+            - img [ref=e198]
+            - generic [ref=e202]: "558"
+          - generic [ref=e203]:
+            - generic [ref=e204]:
+              - link "7 Rings" [ref=e205] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/basic-math/BASICMATHPRO/problems/SEVENRINGS
+              - generic [ref=e206]: Pro
+            - img [ref=e210]
+            - generic [ref=e214]: "568"
+          - generic [ref=e215]:
+            - generic [ref=e216]:
+              - link "Make AP" [ref=e217] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/basic-math/BASICMATHPRO/problems/MAKEAP
+              - generic [ref=e218]: Pro
+            - img [ref=e222]
+            - generic [ref=e226]: "577"
+          - generic [ref=e227]:
+            - generic [ref=e228]:
+              - link "Integers that sum to the same value" [ref=e229] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/basic-math/BASICMATHPRO/problems/SUMNEQ
+              - generic [ref=e230]: Pro
+            - img [ref=e234]
+            - generic [ref=e238]: "592"
+          - generic [ref=e239]:
+            - generic [ref=e240]:
+              - link "Minimum Number of Ones" [ref=e241] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/basic-math/BASICMATHPRO/problems/MINNOO
+              - generic [ref=e242]: Pro
+            - img [ref=e246]
+            - generic [ref=e250]: "604"
+          - generic [ref=e251]:
+            - generic [ref=e252]:
+              - link "Negative Product" [ref=e253] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/basic-math/BASICMATHPRO/problems/NEGPROD
+              - generic [ref=e254]: Pro
+            - img [ref=e258]
+            - generic [ref=e262]: "630"
+          - generic [ref=e263]:
+            - generic [ref=e264]:
+              - link "GCD and LCM" [ref=e265] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/basic-math/BASICMATHPRO/problems/FLOW016
+              - generic [ref=e266]: Pro
+            - img [ref=e270]
+            - generic [ref=e274]: "635"
+          - generic [ref=e275]:
+            - generic [ref=e276]:
+              - link "Make A and B equal" [ref=e277] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/basic-math/BASICMATHPRO/problems/EQUALISE
+              - generic [ref=e278]: Pro
+            - img [ref=e282]
+            - generic [ref=e286]: "851"
+          - generic [ref=e287]:
+            - generic [ref=e288]:
+              - link "Construct N" [ref=e289] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/basic-math/BASICMATHPRO/problems/CONN
+              - generic [ref=e290]: Pro
+            - img [ref=e294]
+            - generic [ref=e298]: "860"
+          - generic [ref=e299]:
+            - generic [ref=e300]:
+              - link "Alternate Additions" [ref=e301] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/basic-math/BASICMATHPRO/problems/ALTERADD
+              - generic [ref=e302]: Pro
+            - img [ref=e306]
+            - generic [ref=e310]: "863"
+          - generic [ref=e311]:
+            - generic [ref=e312]:
+              - link "Farmer And His Plot" [ref=e313] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/basic-math/BASICMATHPRO/problems/RECTSQ
+              - generic [ref=e314]: Pro
+            - img [ref=e318]
+            - generic [ref=e322]: "936"
+          - generic [ref=e323]:
+            - generic [ref=e324]:
+              - link "Two vs Ten" [ref=e325] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/basic-math/BASICMATHPRO/problems/TWOVSTEN
+              - generic [ref=e326]: Pro
+            - img [ref=e330]
+            - generic [ref=e334]: "936"
+          - generic [ref=e335]:
+            - generic [ref=e336]:
+              - link "Puppy and Sum" [ref=e337] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/basic-math/BASICMATHPRO/problems/PPSUM
+              - generic [ref=e338]: Pro
+            - img [ref=e342]
+            - generic [ref=e346]: "961"
+          - generic [ref=e347]:
+            - generic [ref=e348]:
+              - link "Divisible by 3" [ref=e349] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/basic-math/BASICMATHPRO/problems/MODULO3
+              - generic [ref=e350]: Pro
+            - img [ref=e354]
+            - generic [ref=e358]: "978"
+          - generic [ref=e359]:
+            - generic [ref=e360]:
+              - link "Balls and Boxes" [ref=e361] [cursor=pointer]:
+                - /url: https://www.codechef.com/practice/course/basic-math/BASICMATHPRO/problems/BALLBOX
+              - generic [ref=e362]: Pro
+            - img [ref=e366]
+            - generic [ref=e370]: "994"
+    - generic [ref=e372]:
+      - paragraph [ref=e373]: What our learners are saying?
+      - generic [ref=e374]:
+        - generic [ref=e375]:
+          - paragraph [ref=e379]: For beginners starting their journey into programming without any prior knowledge, this will definitely be helpful. With the aid of AI, you can get clearer explanations. Those who already have some knowledge can also refer to these resources.
+          - generic [ref=e380]:
+            - img "user profile" [ref=e381]
+            - generic [ref=e382]:
+              - paragraph [ref=e383]:
+                - text: akhil1636
+                - img "in" [ref=e384]
+              - generic [ref=e385]: Student
+        - generic [ref=e386]:
+          - paragraph [ref=e390]: The tutorials are very specific to each problem and reinforce the concepts effectively, making it a great way to learn. Thank you, and I wish you all the best in improving the learning process!
+          - generic [ref=e391]:
+            - img "user profile" [ref=e392]
+            - generic [ref=e393]:
+              - paragraph [ref=e394]:
+                - text: Deeksshitha S
+                - img "in" [ref=e395]
+              - generic [ref=e396]: Student
+        - generic [ref=e397]:
+          - paragraph [ref=e401]: A nice initiative to give learners the confidence that they can do anything and learn anything they want. Really nice work, Team CodeChef.
+          - generic [ref=e402]:
+            - img "user profile" [ref=e403]
+            - generic [ref=e404]:
+              - paragraph [ref=e405]:
+                - text: Tejas Kolhe
+                - img "in" [ref=e406]
+              - generic [ref=e407]: Student

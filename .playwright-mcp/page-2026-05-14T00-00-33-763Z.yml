@@ -1,0 +1,338 @@
+- generic [active] [ref=e1]:
+  - img
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - text: 
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "DMOJ" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - img "DMOJ" [ref=e7]
+        - listitem [ref=e8]
+        - listitem [ref=e10]:
+          - link "Problems" [ref=e11] [cursor=pointer]:
+            - /url: /problems/
+        - listitem [ref=e12]:
+          - link "Submissions" [ref=e13] [cursor=pointer]:
+            - /url: /submissions/
+        - listitem [ref=e14]:
+          - link "Users" [ref=e15] [cursor=pointer]:
+            - /url: /users/
+        - listitem [ref=e16]:
+          - link "Contests" [ref=e17] [cursor=pointer]:
+            - /url: /contests/
+        - listitem [ref=e18]:
+          - link "About" [ref=e19] [cursor=pointer]:
+            - /url: /about/
+      - generic [ref=e21]:
+        - link "Log in" [ref=e22] [cursor=pointer]:
+          - /url: /accounts/login/?next=/problem/cco03p6
+        - text: or
+        - link "Sign up" [ref=e23] [cursor=pointer]:
+          - /url: /accounts/register/
+  - generic [ref=e25]:
+    - main [ref=e26]:
+      - generic [ref=e27]:
+        - heading "CCO '03 P6 - Cheap Gas" [level=2] [ref=e28]
+        - link " View as PDF" [ref=e30] [cursor=pointer]:
+          - /url: /problem/cco03p6/pdf
+          - generic [ref=e32]: 
+          - text: View as PDF
+      - separator [ref=e34]
+      - generic [ref=e36]:
+        - generic [ref=e38]:
+          - link "Submit solution" [ref=e39] [cursor=pointer]:
+            - /url: /problem/cco03p6/submit
+          - separator [ref=e40]
+          - link "All submissions" [ref=e42] [cursor=pointer]:
+            - /url: /problem/cco03p6/submissions/
+          - link "Best submissions" [ref=e44] [cursor=pointer]:
+            - /url: /problem/cco03p6/rank/
+          - separator [ref=e45]
+          - generic [ref=e46]:
+            - generic [ref=e47]: 
+            - text: "Points: 20 (partial)"
+          - generic [ref=e48]:
+            - generic [ref=e49]: 
+            - text: "Time limit: 1.0s"
+          - generic [ref=e50]:
+            - generic [ref=e51]: 
+            - text: "Memory limit: 64M"
+          - separator [ref=e52]
+          - generic [ref=e54]:
+            - generic [ref=e55]: 
+            - text: Problem types
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - generic [ref=e58]:
+              - 'heading "Canadian Computing Competition: 2003 Stage 2, Day 2, Problem 3" [level=5] [ref=e59]'
+              - paragraph [ref=e60]: Every day you drive to work through the city. Gas prices have become exorbitant as of late. You've noticed that the gas prices differ throughout the city. Sometimes the cheapest gas is on the other side of the city, but you wonder if it's worth it to drive all the way there just to fill up on cheap gas. You obviously want to spend as little money on gas as possible, but you don't want to run out along the way (your gas tank has a finite size). You wonder if it's possible to calculate the minimum amount of money you need to spend to get to your office each day.
+              - paragraph [ref=e61]:
+                - text: Lucky for you! You live and work in grid city. In grid city there are streets running east-west and avenues running north-south. The streets are sequentially numbered, with the avenue is numbered with
+                - generic [ref=e64]:
+                  - generic [ref=e67]: "1"
+                  - math [ref=e69]:
+                    - generic [ref=e70]: "1"
+                - text: ". Residents of the city often refer to their location with a pair of numbers, including indicating the street and avenue they're at:"
+                - generic [ref=e73]:
+                  - generic [ref=e74]:
+                    - generic [ref=e76]: (
+                    - generic [ref=e78]: "3"
+                    - generic [ref=e80]: ","
+                    - generic [ref=e82]: "2"
+                    - generic [ref=e84]: )
+                  - math [ref=e86]:
+                    - generic [ref=e87]: (
+                    - generic [ref=e88]: "3"
+                    - generic [ref=e89]: ","
+                    - generic [ref=e90]: "2"
+                    - generic [ref=e91]: )
+                - text: implies that they are at the intersection of the 3rd street and 2nd avenue.
+              - paragraph [ref=e92]:
+                - text: "After years of \"applied experiments\" you have discovered something very uncanny about the city: it takes exactly one litre of gas to move from any intersection to any neighbouring intersection (one block north, east, south, or west). It is acceptable to arrive at your office or a gas station with"
+                - generic [ref=e95]:
+                  - generic [ref=e98]: "0"
+                  - math [ref=e100]:
+                    - generic [ref=e101]: "0"
+                - text: litres of gas in your tank.
+              - paragraph [ref=e102]: When you get to an intersection with a gas station you can choose to fill up with as much or as little gas as you'd like. You don't want to overfill the tank, though, as it would be wasted gas.
+              - heading "Input Specification" [level=4] [ref=e103]
+              - paragraph [ref=e104]:
+                - text: Input begins with a number
+                - generic [ref=e107]:
+                  - generic [ref=e110]: t
+                  - math [ref=e112]:
+                    - generic [ref=e113]: t
+                - text: ", the number of test cases."
+              - paragraph [ref=e114]:
+                - text: Each test case begins with a line with four integers
+                - generic [ref=e117]:
+                  - generic [ref=e120]: m
+                  - math [ref=e122]:
+                    - generic [ref=e123]: m
+                - text: ","
+                - generic [ref=e126]:
+                  - generic [ref=e129]: "n"
+                  - math [ref=e131]:
+                    - generic [ref=e132]: "n"
+                - text: ","
+                - generic [ref=e135]:
+                  - generic [ref=e138]: f
+                  - math [ref=e140]:
+                    - generic [ref=e141]: f
+                - text: ", and"
+                - generic [ref=e144]:
+                  - generic [ref=e147]: k
+                  - math [ref=e149]:
+                    - generic [ref=e150]: k
+                - text: .
+                - generic [ref=e153]:
+                  - generic [ref=e156]: m
+                  - math [ref=e158]:
+                    - generic [ref=e159]: m
+                - text: is the number of streets and
+                - generic [ref=e162]:
+                  - generic [ref=e165]: "n"
+                  - math [ref=e167]:
+                    - generic [ref=e168]: "n"
+                - text: is the number of avenues,
+                - generic [ref=e171]:
+                  - generic [ref=e172]:
+                    - generic [ref=e174]: (
+                    - generic [ref=e176]: "1"
+                    - generic [ref=e178]: ≤
+                    - generic [ref=e180]: m
+                    - generic [ref=e182]: ","
+                    - generic [ref=e184]: "n"
+                    - generic [ref=e186]: ≤
+                    - generic [ref=e187]:
+                      - generic [ref=e188]: "1"
+                      - generic [ref=e189]: "0"
+                      - generic [ref=e190]: "0"
+                    - generic [ref=e192]: )
+                  - math [ref=e194]:
+                    - generic [ref=e195]: (
+                    - generic [ref=e196]: "1"
+                    - generic [ref=e197]: ≤
+                    - generic [ref=e198]: m
+                    - generic [ref=e199]: ","
+                    - generic [ref=e200]: "n"
+                    - generic [ref=e201]: ≤
+                    - generic [ref=e202]: "100"
+                    - generic [ref=e203]: )
+                - text: .
+                - generic [ref=e206]:
+                  - generic [ref=e209]: f
+                  - math [ref=e211]:
+                    - generic [ref=e212]: f
+                - text: is the maximum capacity of your gas tank, in litres. Your starting location is
+                - generic [ref=e215]:
+                  - generic [ref=e216]:
+                    - generic [ref=e218]: (
+                    - generic [ref=e220]: "1"
+                    - generic [ref=e222]: ","
+                    - generic [ref=e224]: "1"
+                    - generic [ref=e226]: )
+                  - math [ref=e228]:
+                    - generic [ref=e229]: (
+                    - generic [ref=e230]: "1"
+                    - generic [ref=e231]: ","
+                    - generic [ref=e232]: "1"
+                    - generic [ref=e233]: )
+                - text: and your office is at
+                - generic [ref=e236]:
+                  - generic [ref=e237]:
+                    - generic [ref=e239]: (
+                    - generic [ref=e241]: m
+                    - generic [ref=e243]: ","
+                    - generic [ref=e245]: "n"
+                    - generic [ref=e247]: )
+                  - math [ref=e249]:
+                    - generic [ref=e250]: (
+                    - generic [ref=e251]: m
+                    - generic [ref=e252]: ","
+                    - generic [ref=e253]: "n"
+                    - generic [ref=e254]: )
+                - text: . You start at
+                - generic [ref=e257]:
+                  - generic [ref=e258]:
+                    - generic [ref=e260]: (
+                    - generic [ref=e262]: "1"
+                    - generic [ref=e264]: ","
+                    - generic [ref=e266]: "1"
+                    - generic [ref=e268]: )
+                  - math [ref=e270]:
+                    - generic [ref=e271]: (
+                    - generic [ref=e272]: "1"
+                    - generic [ref=e273]: ","
+                    - generic [ref=e274]: "1"
+                    - generic [ref=e275]: )
+                - text: with a full tank of gas in your car.
+              - paragraph [ref=e276]:
+                - text: Each of the next
+                - generic [ref=e279]:
+                  - generic [ref=e282]: k
+                  - math [ref=e284]:
+                    - generic [ref=e285]: k
+                - text: "lines contains three numbers:"
+                - generic [ref=e288]:
+                  - generic [ref=e289]:
+                    - generic [ref=e291]: a
+                    - generic [ref=e293]: ","
+                    - generic [ref=e295]: b
+                    - generic [ref=e297]: ","
+                    - generic [ref=e299]: c
+                  - math [ref=e301]:
+                    - generic [ref=e302]: a
+                    - generic [ref=e303]: ","
+                    - generic [ref=e304]: b
+                    - generic [ref=e305]: ","
+                    - generic [ref=e306]: c
+                - text: ":"
+                - generic [ref=e309]:
+                  - generic [ref=e312]: a
+                  - math [ref=e314]:
+                    - generic [ref=e315]: a
+                - text: and
+                - generic [ref=e318]:
+                  - generic [ref=e321]: b
+                  - math [ref=e323]:
+                    - generic [ref=e324]: b
+                - text: are integers,
+                - generic [ref=e327]:
+                  - generic [ref=e328]:
+                    - generic [ref=e330]: (
+                    - generic [ref=e332]: a
+                    - generic [ref=e334]: ","
+                    - generic [ref=e336]: b
+                    - generic [ref=e338]: )
+                  - math [ref=e340]:
+                    - generic [ref=e341]: (
+                    - generic [ref=e342]: a
+                    - generic [ref=e343]: ","
+                    - generic [ref=e344]: b
+                    - generic [ref=e345]: )
+                - text: being the location of a gas station, and
+                - generic [ref=e348]:
+                  - generic [ref=e351]: c
+                  - math [ref=e353]:
+                    - generic [ref=e354]: c
+                - text: is the price of gas at that gas station.
+              - heading "Output Specification" [level=4] [ref=e355]
+              - paragraph [ref=e356]:
+                - text: For each test case output the minimum amount of money to be spent on gas, rounded to the nearest penny (with two decimal digits), or
+                - code [ref=e357]: Stranded on the shoulder
+                - text: should it be impossible to get to your office without running out of gas.
+              - heading "Sample Input" [level=4] [ref=e358]
+              - generic "Click to copy" [ref=e359] [cursor=pointer]: Copy
+              - code [ref=e361]: 2 5 5 6 2 3 3 0.8 4 2 0.5 8 12 4 2 1 2 2 7 11 4.8
+              - heading "Sample Output" [level=4] [ref=e362]
+              - generic "Click to copy" [ref=e363] [cursor=pointer]: Copy
+              - code [ref=e365]: 1.00 Stranded on the shoulder
+            - separator [ref=e366]
+          - generic [ref=e367]:
+            - heading " Comments" [level=2] [ref=e368]:
+              - generic [ref=e369]: 
+              - text: Comments
+            - list [ref=e371]:
+              - listitem [ref=e372]:
+                - generic [ref=e373]:
+                  - generic [ref=e374]:
+                    - generic [ref=e375]:
+                      - link "" [ref=e376] [cursor=pointer]:
+                        - /url: javascript:alert('Please log in to vote')
+                      - generic [ref=e377]: "-1"
+                      - link "" [ref=e378] [cursor=pointer]:
+                        - /url: javascript:alert('Please log in to vote')
+                    - link [ref=e379] [cursor=pointer]:
+                      - /url: /user/Dan13llljws
+                      - img [ref=e380]
+                  - generic [ref=e381]:
+                    - generic [ref=e382]:
+                      - link "Dan13llljws" [ref=e385] [cursor=pointer]:
+                        - /url: /user/Dan13llljws
+                      - generic "Oct. 19, 2020, 2:06 p.m." [ref=e386]: commented on Oct. 19, 2020, 2:06 p.m.
+                      - link "" [ref=e390] [cursor=pointer]:
+                        - /url: "#comment-13484"
+                        - generic [ref=e391]: 
+                    - paragraph [ref=e394]:
+                      - text: What is the constraint on
+                      - generic [ref=e397]:
+                        - generic [ref=e400]: f
+                        - math [ref=e402]:
+                          - generic [ref=e403]: f
+                      - text: "?"
+    - contentinfo [ref=e404]:
+      - generic [ref=e405]:
+        - link "fork us on Github" [ref=e406] [cursor=pointer]:
+          - /url: //github.com/DMOJ/
+        - text: "|"
+        - link "like us on Facebook" [ref=e407] [cursor=pointer]:
+          - /url: //www.facebook.com/dmoj.ca
+        - text: "|"
+        - link "help us translate" [ref=e408] [cursor=pointer]:
+          - /url: https://translate.dmoj.ca/
+        - text: "|"
+        - link "terms of service" [ref=e409] [cursor=pointer]:
+          - /url: https://dmoj.ca/tos/
+        - text: "|"
+        - combobox [ref=e411]:
+          - option "català (ca)"
+          - option "Deutsch (de)"
+          - option "Ελληνικά (el)"
+          - option "English (en)" [selected]
+          - option "español (es)"
+          - option "français (fr)"
+          - option "Hrvatski (hr)"
+          - option "Magyar (hu)"
+          - option "日本語 (ja)"
+          - option "Қазақ (kk)"
+          - option "한국어 (ko)"
+          - option "Português (pt)"
+          - option "Română (ro)"
+          - option "Русский (ru)"
+          - option "srpski (latinica) (sr-latn)"
+          - option "Türkçe (tr)"
+          - option "Tiếng Việt (vi)"
+          - option "简体中文 (zh-hans)"
+          - option "繁體中文 (zh-hant)"

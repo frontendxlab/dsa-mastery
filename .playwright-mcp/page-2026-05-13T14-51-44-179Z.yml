@@ -1,0 +1,224 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - link "TakeUForward logo" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "TakeUForward logo" [ref=e7]
+      - button "Open menu" [ref=e8]:
+        - img [ref=e9]
+    - generic [ref=e16]:
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - heading "Strivers SDE Sheet - Top Coding Interview Problems" [level=1] [ref=e20]
+          - generic [ref=e22]: "Last updated : December 13, 2025"
+        - generic [ref=e23]:
+          - text: SDE Sheet contains very handily crafted and picked top coding interview questions from different topics of Data Structures & Algorithms. These questions are one of the most asked coding interview questions in coding interviews of companies like Google, Amazon, Microsoft, Facebook, Swiggy, Flipkart, etc, and cover almost all of the concepts related to Data Structure & Algorithms
+          - button "Know more" [ref=e24]
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - button "All Problems" [pressed] [ref=e28]
+          - button "Revision" [ref=e29]
+        - generic [ref=e31]:
+          - button [ref=e33] [cursor=pointer]:
+            - img
+          - button "All problems" [ref=e34] [cursor=pointer]:
+            - text: All problems
+            - img
+          - button "Difficulty" [ref=e35] [cursor=pointer]:
+            - text: Difficulty
+            - img
+          - button "Random Problem" [ref=e36] [cursor=pointer]:
+            - img
+            - text: Random Problem
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - generic [ref=e44]:
+            - img "0" [ref=e46]:
+              - generic [ref=e49]: "0"
+            - text: "%"
+          - generic [ref=e50]:
+            - generic [ref=e51]: Overall Progress
+            - generic [ref=e52]:
+              - img "0" [ref=e54]:
+                - generic [ref=e57]: "0"
+              - generic [ref=e58]: /
+              - img "191" [ref=e61]:
+                - generic [ref=e63]:
+                  - generic [ref=e64]: "1"
+                  - generic [ref=e65]: "9"
+                  - generic [ref=e66]: "1"
+        - generic [ref=e67]:
+          - generic [ref=e69]:
+            - generic [ref=e71]: Easy
+            - generic [ref=e72]: 0/25
+          - generic [ref=e75]:
+            - generic [ref=e77]: Medium
+            - generic [ref=e78]: 0/93
+          - generic [ref=e81]:
+            - generic [ref=e83]: Hard
+            - generic [ref=e84]: 0/73
+      - generic [ref=e86]:
+        - heading "Arrays 0 / 6" [level=3] [ref=e89]:
+          - button "Arrays 0 / 6" [ref=e90]:
+            - generic [ref=e91]:
+              - img [ref=e92]
+              - generic [ref=e94]: Arrays
+              - generic [ref=e97]: 0 / 6
+        - heading "Arrays Part-II 0 / 6" [level=3] [ref=e100]:
+          - button "Arrays Part-II 0 / 6" [ref=e101]:
+            - generic [ref=e102]:
+              - img [ref=e103]
+              - generic [ref=e105]: Arrays Part-II
+              - generic [ref=e108]: 0 / 6
+        - heading "Arrays Part-III 0 / 6" [level=3] [ref=e111]:
+          - button "Arrays Part-III 0 / 6" [ref=e112]:
+            - generic [ref=e113]:
+              - img [ref=e114]
+              - generic [ref=e116]: Arrays Part-III
+              - generic [ref=e119]: 0 / 6
+        - heading "Arrays Part-IV 0 / 6" [level=3] [ref=e122]:
+          - button "Arrays Part-IV 0 / 6" [ref=e123]:
+            - generic [ref=e124]:
+              - img [ref=e125]
+              - generic [ref=e127]: Arrays Part-IV
+              - generic [ref=e130]: 0 / 6
+        - heading "Linked List 0 / 6" [level=3] [ref=e133]:
+          - button "Linked List 0 / 6" [ref=e134]:
+            - generic [ref=e135]:
+              - img [ref=e136]
+              - generic [ref=e138]: Linked List
+              - generic [ref=e141]: 0 / 6
+        - heading "Linked List Part-II 0 / 6" [level=3] [ref=e144]:
+          - button "Linked List Part-II 0 / 6" [ref=e145]:
+            - generic [ref=e146]:
+              - img [ref=e147]
+              - generic [ref=e149]: Linked List Part-II
+              - generic [ref=e152]: 0 / 6
+        - heading "Linked List and Arrays 0 / 6" [level=3] [ref=e155]:
+          - button "Linked List and Arrays 0 / 6" [ref=e156]:
+            - generic [ref=e157]:
+              - img [ref=e158]
+              - generic [ref=e160]: Linked List and Arrays
+              - generic [ref=e163]: 0 / 6
+        - heading "Greedy Algorithm 0 / 6" [level=3] [ref=e166]:
+          - button "Greedy Algorithm 0 / 6" [ref=e167]:
+            - generic [ref=e168]:
+              - img [ref=e169]
+              - generic [ref=e171]: Greedy Algorithm
+              - generic [ref=e174]: 0 / 6
+        - heading "Recursion 0 / 6" [level=3] [ref=e177]:
+          - button "Recursion 0 / 6" [ref=e178]:
+            - generic [ref=e179]:
+              - img [ref=e180]
+              - generic [ref=e182]: Recursion
+              - generic [ref=e185]: 0 / 6
+        - heading "Recursion and Backtracking 0 / 6" [level=3] [ref=e188]:
+          - button "Recursion and Backtracking 0 / 6" [ref=e189]:
+            - generic [ref=e190]:
+              - img [ref=e191]
+              - generic [ref=e193]: Recursion and Backtracking
+              - generic [ref=e196]: 0 / 6
+        - heading "Binary Search 0 / 8" [level=3] [ref=e199]:
+          - button "Binary Search 0 / 8" [ref=e200]:
+            - generic [ref=e201]:
+              - img [ref=e202]
+              - generic [ref=e204]: Binary Search
+              - generic [ref=e207]: 0 / 8
+        - heading "Heaps 0 / 6" [level=3] [ref=e210]:
+          - button "Heaps 0 / 6" [ref=e211]:
+            - generic [ref=e212]:
+              - img [ref=e213]
+              - generic [ref=e215]: Heaps
+              - generic [ref=e218]: 0 / 6
+        - heading "Stack and Queue 0 / 7" [level=3] [ref=e221]:
+          - button "Stack and Queue 0 / 7" [ref=e222]:
+            - generic [ref=e223]:
+              - img [ref=e224]
+              - generic [ref=e226]: Stack and Queue
+              - generic [ref=e229]: 0 / 7
+        - heading "Stack and Queue Part-II 0 / 10" [level=3] [ref=e232]:
+          - button "Stack and Queue Part-II 0 / 10" [ref=e233]:
+            - generic [ref=e234]:
+              - img [ref=e235]
+              - generic [ref=e237]: Stack and Queue Part-II
+              - generic [ref=e240]: 0 / 10
+        - heading "String 0 / 6" [level=3] [ref=e243]:
+          - button "String 0 / 6" [ref=e244]:
+            - generic [ref=e245]:
+              - img [ref=e246]
+              - generic [ref=e248]: String
+              - generic [ref=e251]: 0 / 6
+        - heading "String Part-II 0 / 6" [level=3] [ref=e254]:
+          - button "String Part-II 0 / 6" [ref=e255]:
+            - generic [ref=e256]:
+              - img [ref=e257]
+              - generic [ref=e259]: String Part-II
+              - generic [ref=e262]: 0 / 6
+        - heading "Binary Tree 0 / 12" [level=3] [ref=e265]:
+          - button "Binary Tree 0 / 12" [ref=e266]:
+            - generic [ref=e267]:
+              - img [ref=e268]
+              - generic [ref=e270]: Binary Tree
+              - generic [ref=e273]: 0 / 12
+        - heading "Binary Tree part-II 0 / 8" [level=3] [ref=e276]:
+          - button "Binary Tree part-II 0 / 8" [ref=e277]:
+            - generic [ref=e278]:
+              - img [ref=e279]
+              - generic [ref=e281]: Binary Tree part-II
+              - generic [ref=e284]: 0 / 8
+        - heading "Binary Tree part-III 0 / 7" [level=3] [ref=e287]:
+          - button "Binary Tree part-III 0 / 7" [ref=e288]:
+            - generic [ref=e289]:
+              - img [ref=e290]
+              - generic [ref=e292]: Binary Tree part-III
+              - generic [ref=e295]: 0 / 7
+        - heading "Binary Search Tree 0 / 7" [level=3] [ref=e298]:
+          - button "Binary Search Tree 0 / 7" [ref=e299]:
+            - generic [ref=e300]:
+              - img [ref=e301]
+              - generic [ref=e303]: Binary Search Tree
+              - generic [ref=e306]: 0 / 7
+        - heading "Binary Search Tree Part-II 0 / 8" [level=3] [ref=e309]:
+          - button "Binary Search Tree Part-II 0 / 8" [ref=e310]:
+            - generic [ref=e311]:
+              - img [ref=e312]
+              - generic [ref=e314]: Binary Search Tree Part-II
+              - generic [ref=e317]: 0 / 8
+        - heading "Binary Trees[Miscellaneous] 0 / 6" [level=3] [ref=e320]:
+          - button "Binary Trees[Miscellaneous] 0 / 6" [ref=e321]:
+            - generic [ref=e322]:
+              - img [ref=e323]
+              - generic [ref=e325]: Binary Trees[Miscellaneous]
+              - generic [ref=e328]: 0 / 6
+        - heading "Graph 0 / 12" [level=3] [ref=e331]:
+          - button "Graph 0 / 12" [ref=e332]:
+            - generic [ref=e333]:
+              - img [ref=e334]
+              - generic [ref=e336]: Graph
+              - generic [ref=e339]: 0 / 12
+        - heading "Graph Part-II 0 / 6" [level=3] [ref=e342]:
+          - button "Graph Part-II 0 / 6" [ref=e343]:
+            - generic [ref=e344]:
+              - img [ref=e345]
+              - generic [ref=e347]: Graph Part-II
+              - generic [ref=e350]: 0 / 6
+        - heading "Dynamic Programming 0 / 7" [level=3] [ref=e353]:
+          - button "Dynamic Programming 0 / 7" [ref=e354]:
+            - generic [ref=e355]:
+              - img [ref=e356]
+              - generic [ref=e358]: Dynamic Programming
+              - generic [ref=e361]: 0 / 7
+        - heading "Dynamic Programming Part-II 0 / 8" [level=3] [ref=e364]:
+          - button "Dynamic Programming Part-II 0 / 8" [ref=e365]:
+            - generic [ref=e366]:
+              - img [ref=e367]
+              - generic [ref=e369]: Dynamic Programming Part-II
+              - generic [ref=e372]: 0 / 8
+        - heading "Trie 0 / 7" [level=3] [ref=e375]:
+          - button "Trie 0 / 7" [ref=e376]:
+            - generic [ref=e377]:
+              - img [ref=e378]
+              - generic [ref=e380]: Trie
+              - generic [ref=e383]: 0 / 7
+  - region "Notifications alt+T"
+  - alert [ref=e384]

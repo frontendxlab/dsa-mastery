@@ -1,0 +1,105 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link "Kattis logo" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "Kattis logo" [ref=e8]
+        - heading "Kattis" [level=4] [ref=e9]
+        - text: 
+      - generic [ref=e10]:
+        - navigation [ref=e11]:
+          - list [ref=e12]:
+            - listitem [ref=e13]:
+              - link " Problems" [ref=e14] [cursor=pointer]:
+                - /url: /problems
+                - generic [ref=e15]: 
+                - generic [ref=e16]: Problems
+            - listitem [ref=e17]:
+              - link " Contests" [ref=e18] [cursor=pointer]:
+                - /url: /contests
+                - generic [ref=e19]: 
+                - generic [ref=e20]: Contests
+            - listitem [ref=e21]:
+              - link " Challenge BETA" [ref=e22] [cursor=pointer]:
+                - /url: /challenge
+                - generic [ref=e23]: 
+                - generic [ref=e24]: Challenge BETA
+            - listitem [ref=e25]:
+              - link " Ranklists" [ref=e26] [cursor=pointer]:
+                - /url: /ranklist
+                - generic [ref=e27]: 
+                - generic [ref=e28]: Ranklists
+            - listitem [ref=e29]:
+              - link " Jobs" [ref=e30] [cursor=pointer]:
+                - /url: /jobs
+                - generic [ref=e31]: 
+                - generic [ref=e32]: Jobs
+            - listitem [ref=e33]:
+              - link " Languages" [ref=e34] [cursor=pointer]:
+                - /url: /languages
+                - generic [ref=e35]: 
+                - generic [ref=e36]: Languages
+            - listitem [ref=e37]:
+              - link " Info" [ref=e38] [cursor=pointer]:
+                - /url: /info
+                - generic [ref=e39]: 
+                - generic [ref=e40]: Info
+            - listitem [ref=e41]:
+              - link "? Help" [ref=e42] [cursor=pointer]:
+                - /url: https://support.kattis.com
+                - generic [ref=e43]: "?"
+                - generic [ref=e44]: Help
+        - generic [ref=e46]:
+          - img "Kattis Cat" [ref=e47]
+          - searchbox "Search" [ref=e48]
+          - generic [ref=e49] [cursor=pointer]: 
+  - generic [ref=e50]:
+    - main [ref=e51]:
+      - generic [ref=e54]:
+        - generic [ref=e56]:
+          - link "Problems" [ref=e57] [cursor=pointer]:
+            - /url: /problems
+          - generic [ref=e58]: /
+          - link "Problem sources" [ref=e59] [cursor=pointer]:
+            - /url: /problem-sources
+          - generic [ref=e60]: /
+          - generic [ref=e61]: Problems from The 2019 ICPC Asia-East Continent Final
+        - link "Log in" [ref=e63] [cursor=pointer]:
+          - /url: /login
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - heading "Problems from The 2019 ICPC Asia-East Continent Final" [level=1] [ref=e67]
+          - generic [ref=e69]:
+            - generic [ref=e71]:
+              - combobox [ref=e72]
+              - combobox "Any language" [ref=e75] [cursor=pointer]:
+                - textbox "Any language" [ref=e76]
+            - link "Clear filters" [ref=e78] [cursor=pointer]:
+              - /url: "#"
+            - button "show more" [ref=e79] [cursor=pointer]
+        - article [ref=e80]:
+          - generic [ref=e81]:
+            - text: 
+            - generic [ref=e85]: No data found
+    - contentinfo [ref=e86]:
+      - generic [ref=e87]:
+        - link "Contact" [ref=e88] [cursor=pointer]:
+          - /url: /contact
+        - link "System Status" [ref=e89] [cursor=pointer]:
+          - /url: https://status.kattis.com
+        - link "Terms of Service" [ref=e90] [cursor=pointer]:
+          - /url: /contracts/current/tos
+        - link "Privacy Policy" [ref=e91] [cursor=pointer]:
+          - /url: /contracts/current/privacy_policy
+  - iframe [ref=e92]:
+    - generic [ref=f22e2]:
+      - img [ref=f22e4]
+      - generic [ref=f22e11]:
+        - heading "Status embed installed correctly" [level=1] [ref=f22e12]:
+          - paragraph [ref=f22e13]: Status embed installed correctly
+        - generic [ref=f22e14]: This will be shown if an incident or maintenance is posted on your status page.
+        - link "View latest updates" [ref=f22e16] [cursor=pointer]:
+          - /url: https://status.kattis.com?utm_source=embed
+      - button [ref=f22e18] [cursor=pointer]:
+        - img [ref=f22e19]

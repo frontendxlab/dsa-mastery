@@ -1,0 +1,352 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - text: We use cookies to ensure you have the best browsing experience on our website. Please read our
+        - link "cookie policy" [ref=e9] [cursor=pointer]:
+          - /url: /privacy#cookies
+        - text: for more information about how we use cookies.
+      - button "Ok" [ref=e11] [cursor=pointer]:
+        - generic [ref=e13]: Ok
+    - status [ref=e14]
+    - alert [ref=e15]
+    - generic [ref=e16]:
+      - navigation [ref=e18]:
+        - generic [ref=e19]:
+          - list [ref=e21]:
+            - listitem [ref=e22] [cursor=pointer]:
+              - link "HackerRank Home" [ref=e23]:
+                - /url: /
+                - img "HackerRank Home" [ref=e24]
+            - generic [ref=e25]: "|"
+            - listitem [ref=e26] [cursor=pointer]:
+              - link "Prepare" [ref=e27]:
+                - /url: /dashboard
+            - listitem [ref=e28] [cursor=pointer]:
+              - link "Certify" [ref=e29]:
+                - /url: /skills-verification
+            - listitem [ref=e30] [cursor=pointer]:
+              - link "Compete" [ref=e31]:
+                - /url: /contests
+          - generic [ref=e32]:
+            - list [ref=e33]:
+              - listitem [ref=e34]:
+                - generic [ref=e36]:
+                  - textbox "Search" [ref=e39]
+                  - generic [ref=e40]: 
+            - list [ref=e41]:
+              - listitem
+              - listitem [ref=e42]:
+                - button "Log In" [ref=e43] [cursor=pointer]
+              - listitem [ref=e44]:
+                - button "Sign Up" [ref=e45] [cursor=pointer]
+      - banner [ref=e46]:
+        - generic [ref=e49]:
+          - list [ref=e50]:
+            - listitem [ref=e51]:
+              - link "Prepare" [ref=e52] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=e53]:
+              - generic [ref=e54]: 
+              - text: Algorithms
+          - heading "Algorithms" [level=1] [ref=e56]
+      - generic [ref=e59]:
+        - banner
+        - generic [ref=e60]:
+          - generic [ref=e63]:
+            - 'link "Super Reduced String Easy, Problem Solving (Intermediate), Max Score: 10, Success Rate: 87.94% Solve Challenge" [ref=e64] [cursor=pointer]':
+              - /url: /challenges/reduced-string/problem?isFullScreen=true
+              - generic [ref=e68]:
+                - 'heading "Super Reduced String Easy, Problem Solving (Intermediate), Max Score: 10, Success Rate: 87.94%" [level=4] [ref=e71]':
+                  - text: Super Reduced String
+                  - generic [ref=e72]: "Easy, Problem Solving (Intermediate), Max Score: 10, Success Rate: 87.94%"
+                - button "Solve Challenge" [ref=e76]:
+                  - generic [ref=e78]: Solve Challenge
+            - 'link "CamelCase Easy, Problem Solving (Basic), Max Score: 15, Success Rate: 98.06% Solve Challenge" [ref=e79] [cursor=pointer]':
+              - /url: /challenges/camelcase/problem?isFullScreen=true
+              - generic [ref=e83]:
+                - 'heading "CamelCase Easy, Problem Solving (Basic), Max Score: 15, Success Rate: 98.06%" [level=4] [ref=e86]':
+                  - text: CamelCase
+                  - generic [ref=e87]: "Easy, Problem Solving (Basic), Max Score: 15, Success Rate: 98.06%"
+                - button "Solve Challenge" [ref=e91]:
+                  - generic [ref=e93]: Solve Challenge
+            - 'link "Strong Password Easy, Problem Solving (Basic), Max Score: 15, Success Rate: 86.87% Solve Challenge" [ref=e94] [cursor=pointer]':
+              - /url: /challenges/strong-password/problem?isFullScreen=true
+              - generic [ref=e98]:
+                - 'heading "Strong Password Easy, Problem Solving (Basic), Max Score: 15, Success Rate: 86.87%" [level=4] [ref=e101]':
+                  - text: Strong Password
+                  - generic [ref=e102]: "Easy, Problem Solving (Basic), Max Score: 15, Success Rate: 86.87%"
+                - button "Solve Challenge" [ref=e106]:
+                  - generic [ref=e108]: Solve Challenge
+            - 'link "Two Characters Easy, Problem Solving (Intermediate), Max Score: 20, Success Rate: 81.70% Solve Challenge" [ref=e109] [cursor=pointer]':
+              - /url: /challenges/two-characters/problem?isFullScreen=true
+              - generic [ref=e113]:
+                - 'heading "Two Characters Easy, Problem Solving (Intermediate), Max Score: 20, Success Rate: 81.70%" [level=4] [ref=e116]':
+                  - text: Two Characters
+                  - generic [ref=e117]: "Easy, Problem Solving (Intermediate), Max Score: 20, Success Rate: 81.70%"
+                - button "Solve Challenge" [ref=e121]:
+                  - generic [ref=e123]: Solve Challenge
+            - 'link "Caesar Cipher Easy, Problem Solving (Basic), Max Score: 15, Success Rate: 87.47% Solve Challenge" [ref=e124] [cursor=pointer]':
+              - /url: /challenges/caesar-cipher-1/problem?isFullScreen=true
+              - generic [ref=e128]:
+                - 'heading "Caesar Cipher Easy, Problem Solving (Basic), Max Score: 15, Success Rate: 87.47%" [level=4] [ref=e131]':
+                  - text: Caesar Cipher
+                  - generic [ref=e132]: "Easy, Problem Solving (Basic), Max Score: 15, Success Rate: 87.47%"
+                - button "Solve Challenge" [ref=e136]:
+                  - generic [ref=e138]: Solve Challenge
+            - 'link "Mars Exploration Easy, Problem Solving (Basic), Max Score: 15, Success Rate: 94.03% Solve Challenge" [ref=e139] [cursor=pointer]':
+              - /url: /challenges/mars-exploration/problem?isFullScreen=true
+              - generic [ref=e143]:
+                - 'heading "Mars Exploration Easy, Problem Solving (Basic), Max Score: 15, Success Rate: 94.03%" [level=4] [ref=e146]':
+                  - text: Mars Exploration
+                  - generic [ref=e147]: "Easy, Problem Solving (Basic), Max Score: 15, Success Rate: 94.03%"
+                - button "Solve Challenge" [ref=e151]:
+                  - generic [ref=e153]: Solve Challenge
+            - 'link "HackerRank in a String! Easy, Problem Solving (Basic), Max Score: 20, Success Rate: 92.81% Solve Challenge" [ref=e154] [cursor=pointer]':
+              - /url: /challenges/hackerrank-in-a-string/problem?isFullScreen=true
+              - generic [ref=e158]:
+                - 'heading "HackerRank in a String! Easy, Problem Solving (Basic), Max Score: 20, Success Rate: 92.81%" [level=4] [ref=e161]':
+                  - text: HackerRank in a String!
+                  - generic [ref=e162]: "Easy, Problem Solving (Basic), Max Score: 20, Success Rate: 92.81%"
+                - button "Solve Challenge" [ref=e166]:
+                  - generic [ref=e168]: Solve Challenge
+            - 'link "Pangrams Easy, Problem Solving (Basic), Max Score: 20, Success Rate: 95.10% Solve Challenge" [ref=e169] [cursor=pointer]':
+              - /url: /challenges/pangrams/problem?isFullScreen=true
+              - generic [ref=e173]:
+                - 'heading "Pangrams Easy, Problem Solving (Basic), Max Score: 20, Success Rate: 95.10%" [level=4] [ref=e176]':
+                  - text: Pangrams
+                  - generic [ref=e177]: "Easy, Problem Solving (Basic), Max Score: 20, Success Rate: 95.10%"
+                - button "Solve Challenge" [ref=e181]:
+                  - generic [ref=e183]: Solve Challenge
+            - 'link "Weighted Uniform Strings Easy, Problem Solving (Intermediate), Max Score: 20, Success Rate: 77.37% Solve Challenge" [ref=e184] [cursor=pointer]':
+              - /url: /challenges/weighted-uniform-string/problem?isFullScreen=true
+              - generic [ref=e188]:
+                - 'heading "Weighted Uniform Strings Easy, Problem Solving (Intermediate), Max Score: 20, Success Rate: 77.37%" [level=4] [ref=e191]':
+                  - text: Weighted Uniform Strings
+                  - generic [ref=e192]: "Easy, Problem Solving (Intermediate), Max Score: 20, Success Rate: 77.37%"
+                - button "Solve Challenge" [ref=e196]:
+                  - generic [ref=e198]: Solve Challenge
+            - 'link "Separate the Numbers Easy, Problem Solving (Basic), Max Score: 20, Success Rate: 90.52% Solve Challenge" [ref=e199] [cursor=pointer]':
+              - /url: /challenges/separate-the-numbers/problem?isFullScreen=true
+              - generic [ref=e203]:
+                - 'heading "Separate the Numbers Easy, Problem Solving (Basic), Max Score: 20, Success Rate: 90.52%" [level=4] [ref=e206]':
+                  - text: Separate the Numbers
+                  - generic [ref=e207]: "Easy, Problem Solving (Basic), Max Score: 20, Success Rate: 90.52%"
+                - button "Solve Challenge" [ref=e211]:
+                  - generic [ref=e213]: Solve Challenge
+            - 'link "Funny String Easy, Problem Solving (Basic), Max Score: 25, Success Rate: 94.92% Solve Challenge" [ref=e214] [cursor=pointer]':
+              - /url: /challenges/funny-string/problem?isFullScreen=true
+              - generic [ref=e218]:
+                - 'heading "Funny String Easy, Problem Solving (Basic), Max Score: 25, Success Rate: 94.92%" [level=4] [ref=e221]':
+                  - text: Funny String
+                  - generic [ref=e222]: "Easy, Problem Solving (Basic), Max Score: 25, Success Rate: 94.92%"
+                - button "Solve Challenge" [ref=e226]:
+                  - generic [ref=e228]: Solve Challenge
+            - 'link "Gemstones Easy, Problem Solving (Basic), Max Score: 20, Success Rate: 93.85% Solve Challenge" [ref=e229] [cursor=pointer]':
+              - /url: /challenges/gem-stones/problem?isFullScreen=true
+              - generic [ref=e233]:
+                - 'heading "Gemstones Easy, Problem Solving (Basic), Max Score: 20, Success Rate: 93.85%" [level=4] [ref=e236]':
+                  - text: Gemstones
+                  - generic [ref=e237]: "Easy, Problem Solving (Basic), Max Score: 20, Success Rate: 93.85%"
+                - button "Solve Challenge" [ref=e241]:
+                  - generic [ref=e243]: Solve Challenge
+            - 'link "Alternating Characters Easy, Problem Solving (Basic), Max Score: 20, Success Rate: 97.54% Solve Challenge" [ref=e244] [cursor=pointer]':
+              - /url: /challenges/alternating-characters/problem?isFullScreen=true
+              - generic [ref=e248]:
+                - 'heading "Alternating Characters Easy, Problem Solving (Basic), Max Score: 20, Success Rate: 97.54%" [level=4] [ref=e251]':
+                  - text: Alternating Characters
+                  - generic [ref=e252]: "Easy, Problem Solving (Basic), Max Score: 20, Success Rate: 97.54%"
+                - button "Solve Challenge" [ref=e256]:
+                  - generic [ref=e258]: Solve Challenge
+            - 'link "Beautiful Binary String Easy, Problem Solving (Basic), Max Score: 20, Success Rate: 95.05% Solve Challenge" [ref=e259] [cursor=pointer]':
+              - /url: /challenges/beautiful-binary-string/problem?isFullScreen=true
+              - generic [ref=e263]:
+                - 'heading "Beautiful Binary String Easy, Problem Solving (Basic), Max Score: 20, Success Rate: 95.05%" [level=4] [ref=e266]':
+                  - text: Beautiful Binary String
+                  - generic [ref=e267]: "Easy, Problem Solving (Basic), Max Score: 20, Success Rate: 95.05%"
+                - button "Solve Challenge" [ref=e271]:
+                  - generic [ref=e273]: Solve Challenge
+            - 'link "The Love-Letter Mystery Easy, Problem Solving (Basic), Max Score: 20, Success Rate: 97.04% Solve Challenge" [ref=e274] [cursor=pointer]':
+              - /url: /challenges/the-love-letter-mystery/problem?isFullScreen=true
+              - generic [ref=e278]:
+                - 'heading "The Love-Letter Mystery Easy, Problem Solving (Basic), Max Score: 20, Success Rate: 97.04%" [level=4] [ref=e281]':
+                  - text: The Love-Letter Mystery
+                  - generic [ref=e282]: "Easy, Problem Solving (Basic), Max Score: 20, Success Rate: 97.04%"
+                - button "Solve Challenge" [ref=e286]:
+                  - generic [ref=e288]: Solve Challenge
+            - 'link "Determining DNA Health Hard, Problem Solving (Advanced), Max Score: 50, Success Rate: 39.79% Solve Challenge" [ref=e289] [cursor=pointer]':
+              - /url: /challenges/determining-dna-health/problem?isFullScreen=true
+              - generic [ref=e293]:
+                - 'heading "Determining DNA Health Hard, Problem Solving (Advanced), Max Score: 50, Success Rate: 39.79%" [level=4] [ref=e296]':
+                  - text: Determining DNA Health
+                  - generic [ref=e297]: "Hard, Problem Solving (Advanced), Max Score: 50, Success Rate: 39.79%"
+                - button "Solve Challenge" [ref=e301]:
+                  - generic [ref=e303]: Solve Challenge
+            - 'link "Palindrome Index Easy, Problem Solving (Basic), Max Score: 25, Success Rate: 71.11% Solve Challenge" [ref=e304] [cursor=pointer]':
+              - /url: /challenges/palindrome-index/problem?isFullScreen=true
+              - generic [ref=e308]:
+                - 'heading "Palindrome Index Easy, Problem Solving (Basic), Max Score: 25, Success Rate: 71.11%" [level=4] [ref=e311]':
+                  - text: Palindrome Index
+                  - generic [ref=e312]: "Easy, Problem Solving (Basic), Max Score: 25, Success Rate: 71.11%"
+                - button "Solve Challenge" [ref=e316]:
+                  - generic [ref=e318]: Solve Challenge
+            - 'link "Anagram Easy, Problem Solving (Basic), Max Score: 25, Success Rate: 89.55% Solve Challenge" [ref=e319] [cursor=pointer]':
+              - /url: /challenges/anagram/problem?isFullScreen=true
+              - generic [ref=e323]:
+                - 'heading "Anagram Easy, Problem Solving (Basic), Max Score: 25, Success Rate: 89.55%" [level=4] [ref=e326]':
+                  - text: Anagram
+                  - generic [ref=e327]: "Easy, Problem Solving (Basic), Max Score: 25, Success Rate: 89.55%"
+                - button "Solve Challenge" [ref=e331]:
+                  - generic [ref=e333]: Solve Challenge
+            - 'link "Making Anagrams Easy, Problem Solving (Basic), Max Score: 30, Success Rate: 93.88% Solve Challenge" [ref=e334] [cursor=pointer]':
+              - /url: /challenges/making-anagrams/problem?isFullScreen=true
+              - generic [ref=e338]:
+                - 'heading "Making Anagrams Easy, Problem Solving (Basic), Max Score: 30, Success Rate: 93.88%" [level=4] [ref=e341]':
+                  - text: Making Anagrams
+                  - generic [ref=e342]: "Easy, Problem Solving (Basic), Max Score: 30, Success Rate: 93.88%"
+                - button "Solve Challenge" [ref=e346]:
+                  - generic [ref=e348]: Solve Challenge
+            - 'link "Game of Thrones - I Easy, Problem Solving (Basic), Max Score: 30, Success Rate: 93.92% Solve Challenge" [ref=e349] [cursor=pointer]':
+              - /url: /challenges/game-of-thrones/problem?isFullScreen=true
+              - generic [ref=e353]:
+                - 'heading "Game of Thrones - I Easy, Problem Solving (Basic), Max Score: 30, Success Rate: 93.92%" [level=4] [ref=e356]':
+                  - text: Game of Thrones - I
+                  - generic [ref=e357]: "Easy, Problem Solving (Basic), Max Score: 30, Success Rate: 93.92%"
+                - button "Solve Challenge" [ref=e361]:
+                  - generic [ref=e363]: Solve Challenge
+          - generic [ref=e368]:
+            - generic [ref=e369]:
+              - generic [ref=e370]: Status
+              - group [ref=e372]:
+                - generic [ref=e373]:
+                  - generic [ref=e377] [cursor=pointer]:
+                    - checkbox "Solved" [ref=e379]
+                    - generic [ref=e381]: Solved
+                  - generic [ref=e385] [cursor=pointer]:
+                    - checkbox "Unsolved" [ref=e387]
+                    - generic [ref=e389]: Unsolved
+            - generic [ref=e390]:
+              - generic [ref=e391]: Skills
+              - group [ref=e393]:
+                - generic [ref=e394]:
+                  - generic [ref=e398] [cursor=pointer]:
+                    - checkbox "Problem Solving (Intermediate)" [ref=e400]
+                    - generic [ref=e402]: Problem Solving (Intermediate)
+                  - generic [ref=e406] [cursor=pointer]:
+                    - checkbox "Problem Solving (Advanced)" [ref=e408]
+                    - generic [ref=e410]: Problem Solving (Advanced)
+                  - generic [ref=e414] [cursor=pointer]:
+                    - checkbox "Problem Solving (Basic)" [ref=e416]
+                    - generic [ref=e418]: Problem Solving (Basic)
+            - generic [ref=e419]:
+              - generic [ref=e420]: Difficulty
+              - group [ref=e422]:
+                - generic [ref=e423]:
+                  - generic [ref=e427] [cursor=pointer]:
+                    - checkbox "Easy" [ref=e429]
+                    - generic [ref=e431]: Easy
+                  - generic [ref=e435] [cursor=pointer]:
+                    - checkbox "Medium" [ref=e437]
+                    - generic [ref=e439]: Medium
+                  - generic [ref=e443] [cursor=pointer]:
+                    - checkbox "Hard" [ref=e445]
+                    - generic [ref=e447]: Hard
+            - generic [ref=e448]:
+              - generic [ref=e449]: Subdomains
+              - group [ref=e451]:
+                - generic [ref=e452]:
+                  - generic [ref=e456] [cursor=pointer]:
+                    - checkbox "Warmup" [ref=e458]
+                    - generic [ref=e460]: Warmup
+                  - generic [ref=e464] [cursor=pointer]:
+                    - checkbox "Implementation" [ref=e466]
+                    - generic [ref=e468]: Implementation
+                  - generic [ref=e472] [cursor=pointer]:
+                    - generic [ref=e473]:
+                      - checkbox "Strings" [checked] [ref=e474]
+                      - img [ref=e476]
+                    - generic [ref=e478]: Strings
+                  - generic [ref=e482] [cursor=pointer]:
+                    - checkbox "Sorting" [ref=e484]
+                    - generic [ref=e486]: Sorting
+                  - generic [ref=e490] [cursor=pointer]:
+                    - checkbox "Search" [ref=e492]
+                    - generic [ref=e494]: Search
+                  - generic [ref=e498] [cursor=pointer]:
+                    - checkbox "Graph Theory" [ref=e500]
+                    - generic [ref=e502]: Graph Theory
+                  - generic [ref=e506] [cursor=pointer]:
+                    - checkbox "Greedy" [ref=e508]
+                    - generic [ref=e510]: Greedy
+                  - generic [ref=e514] [cursor=pointer]:
+                    - checkbox "Dynamic Programming" [ref=e516]
+                    - generic [ref=e518]: Dynamic Programming
+                  - generic [ref=e522] [cursor=pointer]:
+                    - checkbox "Constructive Algorithms" [ref=e524]
+                    - generic [ref=e526]: Constructive Algorithms
+                  - generic [ref=e530] [cursor=pointer]:
+                    - checkbox "Bit Manipulation" [ref=e532]
+                    - generic [ref=e534]: Bit Manipulation
+                  - generic [ref=e538] [cursor=pointer]:
+                    - checkbox "Recursion" [ref=e540]
+                    - generic [ref=e542]: Recursion
+                  - generic [ref=e546] [cursor=pointer]:
+                    - checkbox "Game Theory" [ref=e548]
+                    - generic [ref=e550]: Game Theory
+                  - generic [ref=e554] [cursor=pointer]:
+                    - checkbox "NP Complete" [ref=e556]
+                    - generic [ref=e558]: NP Complete
+                  - generic [ref=e562] [cursor=pointer]:
+                    - checkbox "Debugging" [ref=e564]
+                    - generic [ref=e566]: Debugging
+      - contentinfo [ref=e567]:
+        - list [ref=e568]:
+          - listitem [ref=e569]:
+            - link "Blog" [ref=e570] [cursor=pointer]:
+              - /url: /blog
+            - text: "|"
+          - listitem [ref=e571]:
+            - link "Scoring" [ref=e572] [cursor=pointer]:
+              - /url: /scoring
+            - text: "|"
+          - listitem [ref=e573]:
+            - link "Environment" [ref=e574] [cursor=pointer]:
+              - /url: /environment
+            - text: "|"
+          - listitem [ref=e575]:
+            - link "FAQ" [ref=e576] [cursor=pointer]:
+              - /url: /faq
+            - text: "|"
+          - listitem [ref=e577]:
+            - link "About Us" [ref=e578] [cursor=pointer]:
+              - /url: /about-us
+            - text: "|"
+          - listitem [ref=e579]:
+            - link "Helpdesk" [ref=e580] [cursor=pointer]:
+              - /url: //help.hackerrank.com
+            - text: "|"
+          - listitem [ref=e581]:
+            - link "Careers" [ref=e582] [cursor=pointer]:
+              - /url: //www.hackerrank.com/careers
+            - text: "|"
+          - listitem [ref=e583]:
+            - link "Terms Of Service" [ref=e584] [cursor=pointer]:
+              - /url: /terms-of-service
+            - text: "|"
+          - listitem [ref=e585]:
+            - link "Privacy Policy" [ref=e586] [cursor=pointer]:
+              - /url: /privacy
+  - generic [ref=e587]:
+    - iframe
+  - region "Cookie banner" [ref=e588]:
+    - dialog "Privacy" [ref=e589]:
+      - generic [ref=e591]:
+        - generic [ref=e594]:
+          - text: By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+          - link "More information about your privacy, opens in a new tab" [ref=e595] [cursor=pointer]:
+            - /url: https://www.hackerrank.com/about-us/privacy
+            - text: Privacy Policy.
+        - generic [ref=e597]:
+          - button "Cookies Settings" [ref=e598] [cursor=pointer]
+          - button "Accept All Cookies" [ref=e599] [cursor=pointer]
+      - button "Close" [ref=e601] [cursor=pointer]

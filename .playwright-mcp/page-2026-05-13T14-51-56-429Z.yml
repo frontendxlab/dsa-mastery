@@ -1,0 +1,111 @@
+- generic [ref=e2]:
+  - region "Skip to main content":
+    - link "Skip to main content" [ref=e3] [cursor=pointer]:
+      - /url: "#__docusaurus_skipToContent_fallback"
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - text: We collaborated with engineers from Google and Amazon and built the best front end interview preparation platform.
+      - link "Check out GreatFrontEnd today" [ref=e6] [cursor=pointer]:
+        - /url: https://www.greatfrontend.com?fpr=yangshun&utm_source=techinterviewhandbook&utm_medium=referral&utm_content=banner
+      - text: "!"
+  - navigation "Main" [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - button "Toggle navigation bar" [ref=e10] [cursor=pointer]:
+          - img [ref=e11]
+        - link "Tech Interview Handbook Logo Tech Interview Handbook" [ref=e13] [cursor=pointer]:
+          - /url: /
+          - img "Tech Interview Handbook Logo" [ref=e15]
+          - generic [ref=e16]: Tech Interview Handbook
+      - button "Search (Ctrl+K)" [ref=e18] [cursor=pointer]:
+        - generic [ref=e19]:
+          - img [ref=e20]
+          - generic [ref=e22]: Search
+        - generic [ref=e23]:
+          - img [ref=e25]
+          - generic [ref=e27]: K
+  - main [ref=e29]:
+    - generic [ref=e31]:
+      - heading "Page Not Found" [level=1] [ref=e32]
+      - paragraph [ref=e33]: We could not find what you were looking for.
+      - paragraph [ref=e34]: Please contact the owner of the site that linked you to the original URL and let them know their link is broken.
+  - contentinfo [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - generic [ref=e39]: General
+          - list [ref=e40]:
+            - listitem [ref=e41]:
+              - link "Start reading" [ref=e42] [cursor=pointer]:
+                - /url: /software-engineering-interview-guide/
+            - listitem [ref=e43]:
+              - link "Prepare a FAANG-ready resume" [ref=e44] [cursor=pointer]:
+                - /url: /resume/
+            - listitem [ref=e45]:
+              - link "Algorithms cheatsheets" [ref=e46] [cursor=pointer]:
+                - /url: /algorithms/study-cheatsheet/
+            - listitem [ref=e47]:
+              - link "Blog" [ref=e48] [cursor=pointer]:
+                - /url: /blog/
+        - generic [ref=e49]:
+          - generic [ref=e50]: Interviews
+          - list [ref=e51]:
+            - listitem [ref=e52]:
+              - link "Coding interviews" [ref=e53] [cursor=pointer]:
+                - /url: /coding-interview-prep/
+            - listitem [ref=e54]:
+              - link "Coding interview study plan" [ref=e55] [cursor=pointer]:
+                - /url: /coding-interview-study-plan/
+            - listitem [ref=e56]:
+              - link "System design interviews" [ref=e57] [cursor=pointer]:
+                - /url: /system-design/
+            - listitem [ref=e58]:
+              - link "Behavioral interviews" [ref=e59] [cursor=pointer]:
+                - /url: /behavioral-interview/
+        - generic [ref=e60]:
+          - generic [ref=e61]: Community
+          - list [ref=e62]:
+            - listitem [ref=e63]:
+              - link "GitHub" [ref=e64] [cursor=pointer]:
+                - /url: https://github.com/yangshun/tech-interview-handbook
+                - text: GitHub
+                - img [ref=e65]
+            - listitem [ref=e67]:
+              - link "Discord" [ref=e68] [cursor=pointer]:
+                - /url: https://discord.com/invite/usMqNaPczq
+                - text: Discord
+                - img [ref=e69]
+            - listitem [ref=e71]:
+              - link "Telegram" [ref=e72] [cursor=pointer]:
+                - /url: https://t.me/techinterviewhandbook
+                - text: Telegram
+                - img [ref=e73]
+            - listitem [ref=e75]:
+              - link "Twitter" [ref=e76] [cursor=pointer]:
+                - /url: https://twitter.com/techinterviewhb
+                - text: Twitter
+                - img [ref=e77]
+        - generic [ref=e79]:
+          - generic [ref=e80]: More
+          - list [ref=e81]:
+            - listitem [ref=e82]:
+              - link "Grind 75" [ref=e83] [cursor=pointer]:
+                - /url: https://www.techinterviewhandbook.org/grind75/
+                - text: Grind 75
+                - img [ref=e84]
+            - listitem [ref=e86]:
+              - link "Front End Interview Handbook" [ref=e87] [cursor=pointer]:
+                - /url: https://www.frontendinterviewhandbook.com
+                - text: Front End Interview Handbook
+                - img [ref=e88]
+            - listitem [ref=e90]:
+              - link "Contact us" [ref=e91] [cursor=pointer]:
+                - /url: mailto:contact@techinterviewhandbook.org
+                - text: Contact us
+                - img [ref=e92]
+            - listitem [ref=e94]:
+              - link "Facebook" [ref=e95] [cursor=pointer]:
+                - /url: https://www.facebook.com/techinterviewhandbook
+                - text: Facebook
+                - img [ref=e96]
+      - generic [ref=e99]: Copyright © 2026 Tech Interview Handbook. Built with Docusaurus.

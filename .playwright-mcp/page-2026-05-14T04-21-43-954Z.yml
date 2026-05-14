@@ -1,0 +1,439 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - link "geeksforgeeks" [ref=e15] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/
+          - img "geeksforgeeks" [ref=e17]
+        - img "search icon" [ref=e20] [cursor=pointer]
+      - list [ref=e24]:
+        - listitem [ref=e25] [cursor=pointer]:
+          - button "Sign In" [ref=e27]
+        - listitem [ref=e28] [cursor=pointer]:
+          - generic [ref=e30]: DSA Fundamentals
+        - listitem [ref=e32] [cursor=pointer]:
+          - generic [ref=e34]: Data Structures
+        - listitem [ref=e36] [cursor=pointer]:
+          - generic [ref=e38]: Algorithms
+        - listitem [ref=e40] [cursor=pointer]:
+          - generic [ref=e42]: Advanced
+        - listitem [ref=e44] [cursor=pointer]:
+          - generic [ref=e46]: Interview Preparation
+        - listitem [ref=e48] [cursor=pointer]:
+          - generic [ref=e50]: DSA Courses
+        - listitem [ref=e52]:
+          - link "DSA Course Course" [ref=e53] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/courses/dsa-self-paced
+            - link "DSA Course" [ref=e55]:
+              - /url: https://www.geeksforgeeks.org/courses/dsa-self-paced
+            - generic [ref=e56]: Course
+        - listitem [ref=e57] [cursor=pointer]:
+          - button "Toggle GFG Theme" [ref=e59]
+    - list [ref=e65]:
+      - listitem [ref=e66]:
+        - link "DSA Tutorial" [ref=e67] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/
+      - listitem [ref=e68]:
+        - link "Interview Questions" [ref=e69] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/dsa/top-100-data-structure-and-algorithms-dsa-interview-questions-topic-wise/
+      - listitem [ref=e70]:
+        - link "Quizzes" [ref=e71] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/dsa/data-structures-and-algorithms-online-quiz/
+      - listitem [ref=e72]:
+        - link "Must Do" [ref=e73] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/dsa/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/
+      - listitem [ref=e74]:
+        - link "Advanced DSA" [ref=e75] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/dsa/advanced-data-structures/
+      - listitem [ref=e76]:
+        - link "System Design" [ref=e77] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/system-design/system-design-tutorial/
+      - listitem [ref=e78]:
+        - link "Aptitude" [ref=e79] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/
+      - listitem [ref=e80]:
+        - link "Puzzles" [ref=e81] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/aptitude/puzzles/
+      - listitem [ref=e82]:
+        - link "Interview Corner" [ref=e83] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/interview-prep/interview-corner/
+      - listitem [ref=e84]:
+        - link "DSA Python" [ref=e85] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/dsa/python-data-structures-and-algorithms/
+    - generic [ref=e90]:
+      - generic [ref=e91]:
+        - generic [ref=e93]:
+          - heading "String Coding Interview Questions" [level=1] [ref=e95]
+          - generic [ref=e96]:
+            - generic [ref=e97]: "Last Updated : 18 Sep, 2025"
+            - list [ref=e105] [cursor=pointer]:
+              - listitem
+              - listitem
+              - listitem
+        - generic [ref=e110]:
+          - paragraph [ref=e111]: String-related problems often assess a candidate's understanding of concepts like pattern matching, manipulation, and efficient algorithm design. Here is the collection of frequently asked interview questions on Strings. Problems in this Article are divided into three Levels so that readers can practice according to the difficulty level step by step.
+          - heading "Easy Problems" [level=3] [ref=e112]
+          - list [ref=e113]:
+            - listitem [ref=e114]:
+              - link "Palindrome Check" [ref=e115] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/palindrome-string/
+            - listitem [ref=e116]:
+              - link "Reverse a String" [ref=e117] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/reverse-a-string/
+            - listitem [ref=e118]:
+              - link "Reverse Words" [ref=e119] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/reverse-words-in-a-given-string/
+            - listitem [ref=e120]:
+              - link "Check for Rotation" [ref=e121] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/a-program-to-check-if-strings-are-rotations-of-each-other/
+            - listitem [ref=e122]:
+              - link "First Non Repeating" [ref=e123] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/given-a-string-find-its-first-non-repeating-character/
+            - listitem [ref=e124]:
+              - link "Roman to Integer" [ref=e125] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/roman-number-to-integer/
+            - listitem [ref=e126]:
+              - link "Implement Atoi" [ref=e127] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/write-your-own-atoi/
+            - listitem [ref=e128]:
+              - link "Encrypt the String – II" [ref=e129] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/encrypt-the-string-2/
+            - listitem [ref=e130]:
+              - link "Equal Point in Brackets" [ref=e131] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/find-equal-point-string-brackets/
+            - listitem [ref=e132]:
+              - link "Anagram Checking" [ref=e133] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/check-whether-two-strings-are-anagram-of-each-other/
+            - listitem [ref=e134]:
+              - link "Panagram Checking" [ref=e135] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/pangram-checking/
+            - listitem [ref=e136]:
+              - link "Validate IP Address" [ref=e137] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/program-to-validate-an-ip-address/
+            - listitem [ref=e138]:
+              - link "Add Binary Strings" [ref=e139] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/program-to-add-two-binary-strings/
+          - heading "Medium Problems" [level=3] [ref=e140]
+          - list [ref=e141]:
+            - listitem [ref=e142]:
+              - link "Integer to Words" [ref=e143] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/program-to-convert-a-given-number-to-words-set-2/
+            - listitem [ref=e144]:
+              - link "Fizz Buzz" [ref=e145] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/fizz-buzz-implementation/
+            - listitem [ref=e146]:
+              - link "Palindromic Sentence Check" [ref=e147] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/sentence-palindrome-palindrome-removing-spaces-dots-etc/
+            - listitem [ref=e148]:
+              - link "Isomorphic Strings" [ref=e149] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/check-if-two-given-strings-are-isomorphic-to-each-other/
+            - listitem [ref=e150]:
+              - link "Check for k-anagram" [ref=e151] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/check-two-strings-k-anagrams-not/
+            - listitem [ref=e152]:
+              - link "Equal 0,1, and 2" [ref=e153] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/substring-equal-number-0-1-2/
+            - listitem [ref=e154]:
+              - link "Find and replace in String" [ref=e155] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/find-and-replace-all-occurrence-of-a-substring-in-the-given-string/
+            - listitem [ref=e156]:
+              - link "Look and say Pattern" [ref=e157] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/look-and-say-sequence/
+            - listitem [ref=e158]:
+              - link "Minimum repetitions to make Substring" [ref=e159] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/minimum-number-of-times-a-has-to-be-repeated-such-that-b-is-a-substring-of-it/
+            - listitem [ref=e160]:
+              - link "Excel Sheet – I" [ref=e161] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/find-excel-column-name-given-number/
+            - listitem [ref=e162]:
+              - link "Find the N-th character" [ref=e163] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/find-ith-index-character-in-a-binary-string-obtained-after-n-iterations-set-2/
+            - listitem [ref=e164]:
+              - link "Next Palindromic Number with same digits" [ref=e165] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/next-higher-palindromic-number-using-set-digits/
+            - listitem [ref=e166]:
+              - link "Length of longest prefix suffix" [ref=e167] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/longest-prefix-also-suffix/
+            - listitem [ref=e168]:
+              - link "Longest K unique characters substring" [ref=e169] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/find-the-longest-substring-with-k-unique-characters-in-a-given-string/
+            - listitem [ref=e170]:
+              - link "Smallest window containing all" [ref=e171] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/
+            - listitem [ref=e172]:
+              - link "Longest substring without repeating characters" [ref=e173] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/length-of-the-longest-substring-without-repeating-characters/
+            - listitem [ref=e174]:
+              - link "Substrings of length k with k-1 distinct elements" [ref=e175] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/count-of-substrings-of-length-k-with-exactly-k-distinct-characters/
+            - listitem [ref=e176]:
+              - link "Count number of substrings" [ref=e177] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/count-number-of-substrings-with-exactly-k-distinct-characters/
+            - listitem [ref=e178]:
+              - link "Interleaved Strings" [ref=e179] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/find-if-a-string-is-interleaved-of-two-other-strings-dp-33/
+            - listitem [ref=e180]:
+              - link "Print Anagrams together" [ref=e181] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/given-a-sequence-of-words-print-all-anagrams-together/
+            - listitem [ref=e182]:
+              - link "Rank the permutation" [ref=e183] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/lexicographic-rank-of-a-string/
+            - listitem [ref=e184]:
+              - link "A Special Keyboard" [ref=e185] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/how-to-print-maximum-number-of-a-using-given-four-keys/
+            - listitem [ref=e186]:
+              - link "Sum of two large numbers" [ref=e187] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/sum-two-large-numbers/
+          - heading "Hard Problems" [level=3] [ref=e188]
+          - list [ref=e189]:
+            - listitem [ref=e190]:
+              - link "Repeatedly Remove Duplicates" [ref=e191] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/reduce-the-string-by-removing-k-consecutive-identical-characters/
+            - listitem [ref=e192]:
+              - link "Multiply Two Strings" [ref=e193] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/multiply-large-numbers-represented-as-strings/
+            - listitem [ref=e194]:
+              - link "Search Pattern (KMP-Algorithm)" [ref=e195] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/kmp-algorithm-for-pattern-searching/
+            - listitem [ref=e196]:
+              - link "Search Pattern (Rabin-Karp Algorithm)" [ref=e197] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/rabin-karp-algorithm-for-pattern-searching/
+            - listitem [ref=e198]:
+              - link "Shortest Common Supersequence" [ref=e199] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/shortest-common-supersequence/
+            - listitem [ref=e200]:
+              - link "Longest substring to form a Palindrome" [ref=e201] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/longest-substring-whose-characters-can-be-rearranged-to-form-a-palindrome/
+            - listitem [ref=e202]:
+              - link "Longest Valid Parenthesis" [ref=e203] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/length-of-the-longest-valid-substring/
+            - listitem [ref=e204]:
+              - link "Longest Palindromic Subsequence" [ref=e205] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/longest-palindromic-subsequence-dp-12/
+            - listitem [ref=e206]:
+              - link "Distinct Palindromic Substrings" [ref=e207] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/find-number-distinct-palindromic-sub-strings-given-string/
+            - listitem [ref=e208]:
+              - link "Palindrome Substring Queries" [ref=e209] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/palindrome-substring-queries/
+            - listitem [ref=e210]:
+              - link "Number of Distinct Subsequences" [ref=e211] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/count-distinct-subsequences/
+            - listitem [ref=e212]:
+              - link "Minimum Deletions for Palindrome" [ref=e213] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/minimum-number-deletions-make-string-palindrome/
+            - listitem [ref=e214]:
+              - link "Minimum Insertions for Palindrome" [ref=e215] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/minimum-insertions-to-form-a-palindrome-dp-28/
+            - listitem [ref=e216]:
+              - link "Max Non-Overlapping Odd Palindrome Sum" [ref=e217] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/max-palindrome-sum/
+          - paragraph [ref=e218]:
+            - strong [ref=e220]: "Related Articles:"
+          - list [ref=e221]:
+            - listitem [ref=e222]:
+              - link "Array Coding Problems for Interviews" [ref=e223] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/top-50-array-coding-problems-for-interviews/
+            - listitem [ref=e224]:
+              - link "Tree Coding Problems for Interviews" [ref=e225] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/top-50-tree-coding-problems-for-interviews/
+            - listitem [ref=e226]:
+              - link "Graph Coding Problems for Interviews" [ref=e227] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/top-50-graph-coding-problems-for-interviews/
+            - listitem [ref=e228]:
+              - link "Dynamic Programming Coding Problems for Interviews" [ref=e229] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/top-50-dynamic-programming-coding-problems-for-interviews/
+            - listitem [ref=e230]:
+              - link "Sorting Coding Problems for Interviews" [ref=e231] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/top-sorting-interview-questions-and-problems/
+            - listitem [ref=e232]:
+              - link "Searching Coding Problems for Interviews" [ref=e233] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/top-50-searching-coding-problems-for-interviews/
+            - listitem [ref=e234]:
+              - link "Binary Search Tree Coding Problems for Interviews" [ref=e235] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/top-50-binary-search-tree-coding-problems-for-interviews/
+          - paragraph [ref=e236]:
+            - strong [ref=e238]: "Related Tutorials:"
+          - list [ref=e239]:
+            - listitem [ref=e240]:
+              - link "DSA Tutorial" [ref=e241] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/
+            - listitem [ref=e242]:
+              - link "System Design Tutorial" [ref=e243] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/system-design/system-design-tutorial/
+      - generic [ref=e244]:
+        - generic [ref=e247] [cursor=pointer]: Comment
+        - generic [ref=e250]:
+          - generic [ref=e253]:
+            - link "A" [ref=e255] [cursor=pointer]:
+              - /url: https://www.geeksforgeeks.org/user/abhishek1/
+              - paragraph [ref=e257]: A
+            - link "author profile" [ref=e259] [cursor=pointer]:
+              - /url: https://www.geeksforgeeks.org/user/abhishek1/
+              - text: abhishek1
+          - button "like article" [ref=e262] [cursor=pointer]:
+            - figure [ref=e264]: "131"
+      - generic [ref=e270]:
+        - generic [ref=e271]: "Article Tags:"
+        - link "Strings" [ref=e273] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/category/dsa/data-structures/c-strings/
+        - link "DSA" [ref=e275] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/category/dsa/
+        - link "GFG Sheets" [ref=e277] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/tag/gfg-sheets/
+    - region "Notifications Alt+T"
+    - contentinfo [ref=e279]:
+      - generic [ref=e280]:
+        - generic [ref=e281]:
+          - link "GeeksforGeeks" [ref=e282] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/
+            - img "GeeksforGeeks" [ref=e283]
+          - generic [ref=e284]:
+            - generic [ref=e285]:
+              - img "location" [ref=e286]
+              - generic [ref=e287]: "Corporate & Communications Address:"
+            - generic [ref=e288]: A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)
+          - generic [ref=e289]:
+            - generic [ref=e290]:
+              - img "location" [ref=e291]
+              - generic [ref=e292]: "Registered Address:"
+            - generic [ref=e293]: K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305
+          - generic [ref=e294]:
+            - generic [ref=e295]:
+              - link "GeeksforGeeks Linkedin" [ref=e296] [cursor=pointer]:
+                - /url: https://in.linkedin.com/company/geeksforgeeks
+              - link "GeeksforGeeks Instagram" [ref=e298] [cursor=pointer]:
+                - /url: https://www.instagram.com/geeks_for_geeks/
+              - link "GeeksforGeeks Twitter" [ref=e300] [cursor=pointer]:
+                - /url: https://twitter.com/geeksforgeeks
+              - link "GeeksforGeeks Facebook" [ref=e302] [cursor=pointer]:
+                - /url: https://www.facebook.com/geeksforgeeks.org/
+              - link "GeeksforGeeks Youtube" [ref=e304] [cursor=pointer]:
+                - /url: https://www.youtube.com/geeksforgeeksvideos
+            - generic [ref=e306]:
+              - link "GFG App on Play Store" [ref=e307] [cursor=pointer]:
+                - /url: https://geeksforgeeksapp.page.link/gfg-app
+                - img "GFG App on Play Store" [ref=e308]
+              - link "GFG App on App Store" [ref=e309] [cursor=pointer]:
+                - /url: https://geeksforgeeksapp.page.link/gfg-app
+                - img "GFG App on App Store" [ref=e310]
+        - generic [ref=e311]:
+          - list [ref=e312]:
+            - listitem [ref=e313]: Company
+            - listitem [ref=e314]:
+              - link "About Us" [ref=e315] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/about/
+            - listitem [ref=e316]:
+              - link "Legal" [ref=e317] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/legal/
+            - listitem [ref=e318]:
+              - link "Privacy Policy" [ref=e319] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/legal/privacy-policy/
+            - listitem [ref=e320]:
+              - link "Careers" [ref=e321] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&tab_type=featured
+            - listitem [ref=e322]:
+              - link "Contact Us" [ref=e323] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/about/contact-us/
+            - listitem [ref=e324]:
+              - link "Corporate Solution" [ref=e325] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/gfg-corporate-solution/
+            - listitem [ref=e326]:
+              - link "Campus Training Program" [ref=e327] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/campus-training-program/
+          - list [ref=e328]:
+            - listitem [ref=e329]: Explore
+            - listitem [ref=e330]:
+              - link "POTD" [ref=e331] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/problem-of-the-day
+            - listitem [ref=e332]:
+              - link "Practice Problems" [ref=e333] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/explore?page=1&sortBy=submissions
+            - listitem [ref=e334]:
+              - link "Connect" [ref=e335] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/connect/home
+            - listitem [ref=e336]:
+              - link "Blogs" [ref=e337] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/category/blogs/?type=recent
+            - listitem [ref=e338]:
+              - link "Upskill Courses" [ref=e339] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/courses
+          - list [ref=e340]:
+            - listitem [ref=e341]: Tutorials
+            - listitem [ref=e342]:
+              - link "Programming Languages" [ref=e343] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/
+            - listitem [ref=e344]:
+              - link "DSA" [ref=e345] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/
+            - listitem [ref=e346]:
+              - link "Web Technology" [ref=e347] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/web-tech/web-technology/
+            - listitem [ref=e348]:
+              - link "AI, ML & Data Science" [ref=e349] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/
+            - listitem [ref=e350]:
+              - link "DevOps" [ref=e351] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/devops/devops-tutorial/
+            - listitem [ref=e352]:
+              - link "CS Core Subjects" [ref=e353] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/gate/gate-exam-tutorial/
+            - listitem [ref=e354]:
+              - link "GATE" [ref=e355] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/gate/gate-exam-tutorial/
+            - listitem [ref=e356]:
+              - link "School Subjects" [ref=e357] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/
+            - listitem [ref=e358]:
+              - link "Software and Tools" [ref=e359] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/
+          - list [ref=e360]:
+            - listitem [ref=e361]: Courses
+            - listitem [ref=e362]:
+              - link "ML and Data Science" [ref=e363] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/courses/category/machine-learning-data-science
+            - listitem [ref=e364]:
+              - link "DSA and Placements" [ref=e365] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/courses/category/dsa-placements
+            - listitem [ref=e366]:
+              - link "Web Development" [ref=e367] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/courses/category/development-testing
+            - listitem [ref=e368]:
+              - link "Data Science" [ref=e369] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/courses/category/machine-learning-data-science
+            - listitem [ref=e370]:
+              - link "Programming Languages" [ref=e371] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/courses/category/programming-languages
+            - listitem [ref=e372]:
+              - link "DevOps & Cloud" [ref=e373] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/courses/category/cloud-devops
+            - listitem [ref=e374]:
+              - link "GATE" [ref=e375] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/courses/category/gate
+            - listitem [ref=e376]:
+              - link "MongoDB Certifications" [ref=e377] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/courses/category/mongodb?courseFeeType=free
+          - list [ref=e378]:
+            - listitem [ref=e379]: Preparation Corner
+            - listitem [ref=e380]:
+              - link "Interview Corner" [ref=e381] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/interview-prep/interview-corner/
+            - listitem [ref=e382]:
+              - link "Aptitude" [ref=e383] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/
+            - listitem [ref=e384]:
+              - link "Puzzles" [ref=e385] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/aptitude/puzzles/
+            - listitem [ref=e386]:
+              - link "GfG 160" [ref=e387] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/courses/gfg-160-series
+            - listitem [ref=e388]:
+              - link "System Design" [ref=e389] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/system-design/system-design-tutorial/
+      - generic [ref=e391]:
+        - link "@GeeksforGeeks, Sanchhaya Education Private Limited" [ref=e392] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/
+        - text: ","
+        - link "All rights reserved" [ref=e393] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/copyright-information/
+  - alert [ref=e394]

@@ -1,0 +1,282 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - link [ref=e6] [cursor=pointer]:
+          - /url: /home
+        - generic [ref=e7]:
+          - list [ref=e8]:
+            - listitem [ref=e9]:
+              - link "Toyota Programming Contest 2023#5（AtCoder Beginner Contest 320）" [ref=e10] [cursor=pointer]:
+                - /url: /contests/abc320
+          - list [ref=e11]:
+            - listitem [ref=e12]:
+              - button "English" [ref=e13] [cursor=pointer]:
+                - img [ref=e14]
+                - text: English
+            - listitem [ref=e16]:
+              - link "Sign Up" [ref=e17] [cursor=pointer]:
+                - /url: /register?continue=https%3A%2F%2Fatcoder.jp%2Fcontests%2Fabc320%2Ftasks%2Fabc320_b
+            - listitem [ref=e18]:
+              - link "Sign In" [ref=e19] [cursor=pointer]:
+                - /url: /login?continue=https%3A%2F%2Fatcoder.jp%2Fcontests%2Fabc320%2Ftasks%2Fabc320_b
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - generic [ref=e24]:
+              - text: "Contest Duration:"
+              - link "2023-09-16(Sat) 17:30" [ref=e25] [cursor=pointer]:
+                - /url: http://www.timeanddate.com/worldclock/fixedtime.html?iso=20230916T2100&p1=248
+                - time [ref=e26]: 2023-09-16(Sat) 17:30
+              - text: "-"
+              - link "2023-09-16(Sat) 19:10" [ref=e27] [cursor=pointer]:
+                - /url: http://www.timeanddate.com/worldclock/fixedtime.html?iso=20230916T2240&p1=248
+                - time [ref=e28]: 2023-09-16(Sat) 19:10
+              - text: (local time) (100 minutes)
+            - link "Back to Home" [ref=e30] [cursor=pointer]:
+              - /url: /home
+          - list [ref=e31]:
+            - listitem [ref=e32]:
+              - link "Top" [ref=e33] [cursor=pointer]:
+                - /url: /contests/abc320
+                - generic [ref=e34]: 
+                - text: Top
+            - listitem [ref=e35]:
+              - link "Tasks" [ref=e36] [cursor=pointer]:
+                - /url: /contests/abc320/tasks
+                - generic [ref=e37]: 
+                - text: Tasks
+            - listitem [ref=e38]:
+              - link "Clarifications" [ref=e39] [cursor=pointer]:
+                - /url: /contests/abc320/clarifications
+                - generic [ref=e40]: 
+                - text: Clarifications
+            - listitem [ref=e41]:
+              - button "Results" [ref=e42] [cursor=pointer]:
+                - generic [ref=e43]: 
+                - text: Results
+              - text: 
+            - listitem [ref=e45]:
+              - link "Standings" [ref=e46] [cursor=pointer]:
+                - /url: /contests/abc320/standings
+                - generic [ref=e47]: 
+                - text: Standings
+            - listitem [ref=e48]:
+              - link "Virtual Standings" [ref=e49] [cursor=pointer]:
+                - /url: /contests/abc320/standings/virtual
+                - generic [ref=e50]: 
+                - text: Virtual Standings
+            - listitem [ref=e51]:
+              - link "Editorial" [ref=e52] [cursor=pointer]:
+                - /url: /contests/abc320/editorial
+                - generic [ref=e53]: 
+                - text: Editorial
+            - listitem [ref=e54]:
+              - link "Discuss" [ref=e55] [cursor=pointer]:
+                - /url: https://codeforces.com/blog/entry/120415
+                - generic [ref=e56]: 
+                - text: Discuss
+            - listitem [ref=e57]:
+              - link [ref=e58] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - generic [ref=e59]: 
+        - generic [ref=e60]:
+          - generic [ref=e61]:
+            - text: B - Longest Palindrome
+            - link "Editorial" [ref=e62] [cursor=pointer]:
+              - /url: /contests/abc320/tasks/abc320_b/editorial
+          - generic [ref=e63]:
+            - img [ref=e65] [cursor=pointer]
+            - text: /
+            - img [ref=e67] [cursor=pointer]
+          - separator [ref=e68]
+          - paragraph [ref=e69]: "Time Limit: 2 sec / Memory Limit: 1024 MiB"
+          - generic [ref=e72]:
+            - paragraph [ref=e73]:
+              - text: "Score :"
+              - generic [ref=e76]:
+                - math [ref=e78]:
+                  - generic [ref=e81]: "200"
+                - generic [ref=e83]: "200"
+              - text: points
+            - generic [ref=e85]:
+              - heading "Problem Statement" [level=3] [ref=e86]
+              - paragraph [ref=e87]:
+                - text: You are given a string
+                - generic [ref=e90]:
+                  - math [ref=e92]:
+                    - generic [ref=e95]: S
+                  - generic [ref=e97]: S
+                - text: . Find the maximum length of a contiguous substring of
+                - generic [ref=e100]:
+                  - math [ref=e102]:
+                    - generic [ref=e105]: S
+                  - generic [ref=e107]: S
+                - text: that is a palindrome.
+                - text: Note that there is always a contiguous substring of
+                - generic [ref=e110]:
+                  - math [ref=e112]:
+                    - generic [ref=e115]: S
+                  - generic [ref=e117]: S
+                - text: that is a palindrome.
+            - generic [ref=e119]:
+              - heading "Constraints" [level=3] [ref=e120]
+              - list [ref=e121]:
+                - listitem [ref=e122]:
+                  - generic [ref=e125]:
+                    - math [ref=e127]:
+                      - generic [ref=e130]: S
+                    - generic [ref=e132]: S
+                  - text: is a string of length between
+                  - generic [ref=e135]:
+                    - math [ref=e137]:
+                      - generic [ref=e140]: "2"
+                    - generic [ref=e142]: "2"
+                  - text: and
+                  - generic [ref=e145]:
+                    - math [ref=e147]:
+                      - generic [ref=e150]: "100"
+                    - generic [ref=e152]: "100"
+                  - text: ", inclusive, consisting of uppercase English letters."
+            - separator [ref=e153]
+            - generic [ref=e154]:
+              - generic [ref=e156]:
+                - heading "Input" [level=3] [ref=e157]
+                - paragraph [ref=e158]: "The input is given from Standard Input in the following format:"
+                - generic [ref=e162]:
+                  - math [ref=e164]:
+                    - generic [ref=e167]: S
+                  - generic [ref=e169]: S
+              - generic [ref=e171]:
+                - heading "Output" [level=3] [ref=e172]
+                - paragraph [ref=e173]: Print the answer.
+            - separator [ref=e174]
+            - generic [ref=e176]:
+              - heading "Sample Input 1 Copy" [level=3] [ref=e177]:
+                - text: Sample Input 1
+                - generic [ref=e178] [cursor=pointer]: Copy
+              - generic [ref=e179] [cursor=pointer]: Copy
+              - generic [ref=e180]: TOYOTA
+            - generic [ref=e182]:
+              - heading "Sample Output 1 Copy" [level=3] [ref=e183]:
+                - text: Sample Output 1
+                - generic [ref=e184] [cursor=pointer]: Copy
+              - generic [ref=e185] [cursor=pointer]: Copy
+              - generic [ref=e186]: "5"
+              - paragraph [ref=e187]:
+                - code [ref=e188]: TOYOT
+                - text: ", a contiguous substring of"
+                - code [ref=e189]: TOYOTA
+                - text: ", is a palindrome of length"
+                - generic [ref=e192]:
+                  - math [ref=e194]:
+                    - generic [ref=e197]: "5"
+                  - generic [ref=e199]: "5"
+                - text: .
+                - code [ref=e200]: TOYOTA
+                - text: ", the only length-"
+                - generic [ref=e203]:
+                  - math [ref=e205]:
+                    - generic [ref=e208]: "6"
+                  - generic [ref=e210]: "6"
+                - text: contiguous substring of
+                - code [ref=e211]: TOYOTA
+                - text: ", is not a palindrome, so print"
+                - generic [ref=e214]:
+                  - math [ref=e216]:
+                    - generic [ref=e219]: "5"
+                  - generic [ref=e221]: "5"
+                - text: .
+            - separator [ref=e222]
+            - generic [ref=e224]:
+              - heading "Sample Input 2 Copy" [level=3] [ref=e225]:
+                - text: Sample Input 2
+                - generic [ref=e226] [cursor=pointer]: Copy
+              - generic [ref=e227] [cursor=pointer]: Copy
+              - generic [ref=e228]: ABCDEFG
+            - generic [ref=e230]:
+              - heading "Sample Output 2 Copy" [level=3] [ref=e231]:
+                - text: Sample Output 2
+                - generic [ref=e232] [cursor=pointer]: Copy
+              - generic [ref=e233] [cursor=pointer]: Copy
+              - generic [ref=e234]: "1"
+              - paragraph [ref=e235]:
+                - text: Every contiguous substring of length
+                - generic [ref=e238]:
+                  - math [ref=e240]:
+                    - generic [ref=e243]: "1"
+                  - generic [ref=e245]: "1"
+                - text: is a palindrome.
+            - separator [ref=e246]
+            - generic [ref=e248]:
+              - heading "Sample Input 3 Copy" [level=3] [ref=e249]:
+                - text: Sample Input 3
+                - generic [ref=e250] [cursor=pointer]: Copy
+              - generic [ref=e251] [cursor=pointer]: Copy
+              - generic [ref=e252]: AAAAAAAAAA
+            - generic [ref=e254]:
+              - heading "Sample Output 3 Copy" [level=3] [ref=e255]:
+                - text: Sample Output 3
+                - generic [ref=e256] [cursor=pointer]: Copy
+              - generic [ref=e257] [cursor=pointer]: Copy
+              - generic [ref=e258]: "10"
+      - separator [ref=e259]
+      - generic [ref=e260]:
+        - link "Facebook" [ref=e261] [cursor=pointer]:
+          - /url: /#facebook
+          - generic:
+            - img
+          - generic [ref=e262]: Facebook
+        - link "Twitter" [ref=e263] [cursor=pointer]:
+          - /url: /#twitter
+          - generic:
+            - img
+          - generic [ref=e264]: Twitter
+        - link "Telegram" [ref=e265] [cursor=pointer]:
+          - /url: /#telegram
+          - generic:
+            - img
+          - generic [ref=e266]: Telegram
+        - link "Share" [ref=e267] [cursor=pointer]:
+          - /url: https://www.addtoany.com/share#url=https%3A%2F%2Fatcoder.jp%2Fcontests%2Fabc320%2Ftasks%2Fabc320_b%3Flang%3Den&title=B%20-%20Longest%20Palindrome
+          - generic:
+            - img
+          - generic [ref=e268]: Share
+    - separator [ref=e269]
+  - contentinfo [ref=e271]:
+    - list [ref=e272]:
+      - listitem [ref=e273]:
+        - link "Rule" [ref=e274] [cursor=pointer]:
+          - /url: /contests/abc320/rules
+      - listitem [ref=e275]:
+        - link "Glossary" [ref=e276] [cursor=pointer]:
+          - /url: /contests/abc320/glossary
+    - list [ref=e277]:
+      - listitem [ref=e278]:
+        - link "Terms of service" [ref=e279] [cursor=pointer]:
+          - /url: /tos
+      - listitem [ref=e280]:
+        - link "Privacy Policy" [ref=e281] [cursor=pointer]:
+          - /url: /privacy
+      - listitem [ref=e282]:
+        - link "Information Protection Policy" [ref=e283] [cursor=pointer]:
+          - /url: /personal
+      - listitem [ref=e284]:
+        - link "Company" [ref=e285] [cursor=pointer]:
+          - /url: /company
+      - listitem [ref=e286]:
+        - link "FAQ" [ref=e287] [cursor=pointer]:
+          - /url: /faq
+      - listitem [ref=e288]:
+        - link "Contact" [ref=e289] [cursor=pointer]:
+          - /url: /contact
+    - generic [ref=e291]:
+      - text: Copyright Since 2012 ©
+      - link "AtCoder Inc." [ref=e292] [cursor=pointer]:
+        - /url: http://atcoder.co.jp
+      - text: All rights reserved.
+  - paragraph [ref=e293] [cursor=pointer]:
+    - text: 2026-05-13 (Wed)
+    - text: 21:03:54 +05:30
+  - text: 

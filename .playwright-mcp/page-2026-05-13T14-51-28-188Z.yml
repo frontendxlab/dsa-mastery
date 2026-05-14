@@ -1,0 +1,252 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e6]:
+      - heading "Navigation Menu" [level=2] [ref=e7]
+      - generic [ref=e9]:
+        - button "Toggle navigation" [ref=e11] [cursor=pointer]
+        - link "Homepage" [ref=e17] [cursor=pointer]:
+          - /url: /
+          - img [ref=e18]
+        - generic [ref=e20]:
+          - link "Sign in" [ref=e21] [cursor=pointer]:
+            - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fsearch%3Fq%3D%2522sliding%2Bwindow%2522%2B%2522problems%2522%2B%2522leetcode%2522%2B%2522list%2522%26type%3Drepositories%26s%3Dstars%26o%3Ddesc
+          - button "Appearance settings" [ref=e24] [cursor=pointer]:
+            - img
+  - main [ref=e27]:
+    - generic [ref=e30]:
+      - heading "repositories Search Results · \"sliding window\" \"problems\" \"leetcode\" \"list\"" [level=1] [ref=e31]
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - heading "Filter by" [level=2] [ref=e37]
+            - list "Filter by" [ref=e42]:
+              - listitem [ref=e43]:
+                - list [ref=e44]:
+                  - listitem [ref=e45]:
+                    - link "Code (...) results" [ref=e46] [cursor=pointer]:
+                      - /url: https://github.com/search?q=%22sliding+window%22+%22problems%22+%22leetcode%22+%22list%22&type=code
+                      - generic:
+                        - img
+                      - generic [ref=e47]:
+                        - generic [ref=e48]: Code
+                        - generic:
+                          - generic: ...
+                          - generic: (...)
+                          - generic: results
+                  - listitem [ref=e49]:
+                    - link "Repositories results" [ref=e50] [cursor=pointer]:
+                      - /url: https://github.com/search?q=%22sliding+window%22+%22problems%22+%22leetcode%22+%22list%22&type=repositories
+                      - generic:
+                        - img
+                      - generic [ref=e51]:
+                        - generic [ref=e52]: Repositories
+                        - generic:
+                          - generic: results
+                  - listitem [ref=e53]:
+                    - link "Issues results" [ref=e54] [cursor=pointer]:
+                      - /url: https://github.com/search?q=%22sliding+window%22+%22problems%22+%22leetcode%22+%22list%22&type=issues
+                      - generic:
+                        - img
+                      - generic [ref=e55]:
+                        - generic [ref=e56]: Issues
+                        - generic:
+                          - generic: results
+                  - listitem [ref=e57]:
+                    - link "Pull requests results" [ref=e58] [cursor=pointer]:
+                      - /url: https://github.com/search?q=%22sliding+window%22+%22problems%22+%22leetcode%22+%22list%22&type=pullrequests
+                      - generic:
+                        - img
+                      - generic [ref=e59]:
+                        - generic [ref=e60]: Pull requests
+                        - generic:
+                          - generic: results
+                  - listitem [ref=e61]:
+                    - link "Discussions results" [ref=e62] [cursor=pointer]:
+                      - /url: https://github.com/search?q=%22sliding+window%22+%22problems%22+%22leetcode%22+%22list%22&type=discussions
+                      - generic:
+                        - img
+                      - generic [ref=e63]:
+                        - generic [ref=e64]: Discussions
+                        - generic:
+                          - generic: results
+                  - listitem [ref=e65]:
+                    - link "Users results" [ref=e66] [cursor=pointer]:
+                      - /url: https://github.com/search?q=%22sliding+window%22+%22problems%22+%22leetcode%22+%22list%22&type=users
+                      - generic:
+                        - img
+                      - generic [ref=e67]:
+                        - generic [ref=e68]: Users
+                        - generic:
+                          - generic: results
+                  - listitem [ref=e69]:
+                    - button "More" [ref=e70] [cursor=pointer]:
+                      - generic:
+                        - img
+                      - generic [ref=e72]: More
+              - listitem [ref=e73]:
+                - heading "Advanced" [level=3] [ref=e75]
+                - list "Advanced" [ref=e76]:
+                  - listitem [ref=e77]:
+                    - button "Owner" [ref=e78] [cursor=pointer]:
+                      - generic:
+                        - img
+                      - generic "Owner" [ref=e82]
+                  - listitem [ref=e83]:
+                    - button "Size" [ref=e84] [cursor=pointer]:
+                      - generic:
+                        - img
+                      - generic "Size" [ref=e88]
+                  - listitem [ref=e89]:
+                    - button "Number of followers" [ref=e90] [cursor=pointer]:
+                      - generic:
+                        - img
+                      - generic "Number of followers" [ref=e94]
+                  - listitem [ref=e95]:
+                    - button "Number of forks" [ref=e96] [cursor=pointer]:
+                      - generic:
+                        - img
+                      - generic "Number of forks" [ref=e100]
+                  - listitem [ref=e101]:
+                    - button "Number of stars" [ref=e102] [cursor=pointer]:
+                      - generic:
+                        - img
+                      - generic "Number of stars" [ref=e106]
+                  - listitem [ref=e107]:
+                    - button "Date created" [ref=e108] [cursor=pointer]:
+                      - generic:
+                        - img
+                      - generic "Date created" [ref=e112]
+                  - listitem [ref=e113]:
+                    - button "Date pushed" [ref=e114] [cursor=pointer]:
+                      - generic:
+                        - img
+                      - generic "Date pushed" [ref=e118]
+                  - listitem [ref=e119]:
+                    - button "Topic" [ref=e120] [cursor=pointer]:
+                      - generic:
+                        - img
+                      - generic "Topic" [ref=e124]
+                  - listitem [ref=e125]:
+                    - button "License" [ref=e126] [cursor=pointer]:
+                      - generic:
+                        - img
+                      - generic "License" [ref=e130]
+                  - listitem [ref=e131]:
+                    - button "Archived" [ref=e132] [cursor=pointer]:
+                      - generic:
+                        - img
+                      - generic "Archived" [ref=e136]
+                  - listitem [ref=e137]:
+                    - link "Public" [ref=e138] [cursor=pointer]:
+                      - /url: https://github.com/search?q=%22sliding+window%22+%22problems%22+%22leetcode%22+%22list%22+is%3Apublic&type=repositories&s=stars&o=desc
+                      - generic:
+                        - img
+                      - generic "Public" [ref=e142]
+                  - listitem [ref=e143]:
+                    - link "Private" [ref=e144] [cursor=pointer]:
+                      - /url: https://github.com/search?q=%22sliding+window%22+%22problems%22+%22leetcode%22+%22list%22+is%3Aprivate&type=repositories&s=stars&o=desc
+                      - generic:
+                        - img
+                      - generic "Private" [ref=e148]
+              - listitem [ref=e149]
+              - listitem [ref=e150]:
+                - link "Advanced search" [ref=e151] [cursor=pointer]:
+                  - /url: /search/advanced
+                  - generic:
+                    - img
+                  - generic [ref=e153]: Advanced search
+          - slider "Draggable pane splitter" [ref=e155]
+        - generic [ref=e159]:
+          - generic [ref=e161]:
+            - generic [ref=e162]:
+              - generic [ref=e163]:
+                - generic [ref=e164]: 2 results
+                - generic [ref=e165]: (114 ms)
+              - heading "2 results" [active] [level=2] [ref=e166]
+            - generic [ref=e167]:
+              - 'button "Sort by: Most stars" [ref=e169] [cursor=pointer]':
+                - generic [ref=e171]: "Sort by: Most stars"
+                - generic:
+                  - img
+              - button "Open column options" [ref=e173] [cursor=pointer]:
+                - img [ref=e174]
+          - generic [ref=e178]:
+            - generic [ref=e180]:
+              - generic [ref=e181]:
+                - heading "vinay1500/coding-challenges" [level=3] [ref=e182]:
+                  - link "vinay1500/coding-challenges" [ref=e186] [cursor=pointer]:
+                    - /url: /vinay1500/coding-challenges
+                - generic [ref=e188]:
+                  - text: "# Coding Challenges A collection of coding"
+                  - emphasis [ref=e189]: problems
+                  - text: solved on
+                  - emphasis [ref=e190]: LeetCode
+                  - text: ", Codeforces, and other platforms. ## Contents - **"
+                  - emphasis [ref=e191]: LeetCode
+                  - text: "** - Arr…"
+                - list [ref=e192]:
+                  - listitem [ref=e193]:
+                    - generic "Python language" [ref=e196]: Python
+                  - generic [ref=e197]: ·
+                  - listitem [ref=e198]:
+                    - link "1 stars" [ref=e199] [cursor=pointer]:
+                      - /url: /vinay1500/coding-challenges/stargazers
+                      - img [ref=e200]
+                      - generic [ref=e202]: "1"
+                  - generic [ref=e203]: ·
+                  - listitem [ref=e204]:
+                    - generic [ref=e205]:
+                      - text: Updated
+                      - generic "Dec 11, 2025, 2:02 AM UTC" [ref=e206]: on Dec 11, 2025
+              - link "Star" [ref=e209] [cursor=pointer]:
+                - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fsearch%3Fq%3D%2522sliding%2Bwindow%2522%2B%2522problems%2522%2B%2522leetcode%2522%2B%2522list%2522%26type%3Drepositories%26s%3Dstars%26o%3Ddesc
+                - generic [ref=e210]:
+                  - generic:
+                    - img
+                  - generic [ref=e211]: Star
+            - generic [ref=e213]:
+              - generic [ref=e214]:
+                - heading "Prem-333/Substring-with-concatenation-of-all-words" [level=3] [ref=e215]:
+                  - link "Prem-333/Substring-with-concatenation-of-all-words" [ref=e219] [cursor=pointer]:
+                    - /url: /Prem-333/Substring-with-concatenation-of-all-words
+                - generic [ref=e221]:
+                  - text: This repository contains a Python solution for
+                  - emphasis [ref=e222]: LeetCode
+                  - emphasis [ref=e223]: Problem
+                  - text: "30: Substring with Concatenation of All Words. The goal is to find all st…"
+                - list [ref=e224]:
+                  - listitem [ref=e225]:
+                    - link "0 stars" [ref=e226] [cursor=pointer]:
+                      - /url: /Prem-333/Substring-with-concatenation-of-all-words/stargazers
+                      - img [ref=e227]
+                      - generic [ref=e229]: "0"
+                  - generic [ref=e230]: ·
+                  - listitem [ref=e231]:
+                    - generic [ref=e232]:
+                      - text: Updated
+                      - generic "Jul 20, 2025, 4:58 PM UTC" [ref=e233]: on Jul 20, 2025
+              - link "Star" [ref=e236] [cursor=pointer]:
+                - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fsearch%3Fq%3D%2522sliding%2Bwindow%2522%2B%2522problems%2522%2B%2522leetcode%2522%2B%2522list%2522%26type%3Drepositories%26s%3Dstars%26o%3Ddesc
+                - generic [ref=e237]:
+                  - generic:
+                    - img
+                  - generic [ref=e238]: Star
+          - generic [ref=e241]:
+            - generic [ref=e242]:
+              - img "Package icon" [ref=e244]
+              - heading "Sponsor open source projects you depend on" [level=2] [ref=e245]
+              - generic [ref=e246]: Contributors are working behind the scenes to make open source better for everyone—give them the help and recognition they deserve.
+              - link "Explore sponsorable projects" [ref=e247] [cursor=pointer]:
+                - /url: https://github.com/sponsors/explore
+                - text: Explore sponsorable projects
+                - img [ref=e248]
+            - generic [ref=e250]:
+              - generic [ref=e251]:
+                - img [ref=e252]
+                - text: ProTip!
+              - generic [ref=e254]:
+                - text: Press the
+                - generic [ref=e255]: /
+                - text: key to activate the search input again and adjust your query.

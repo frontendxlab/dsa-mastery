@@ -1,0 +1,588 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - link "geeksforgeeks" [ref=e16] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/
+            - img "geeksforgeeks" [ref=e18]
+          - img "search icon" [ref=e21] [cursor=pointer]
+        - list [ref=e25]:
+          - listitem [ref=e26] [cursor=pointer]:
+            - button "Sign In" [ref=e28]
+          - listitem [ref=e29] [cursor=pointer]:
+            - generic [ref=e31]: Courses
+          - listitem [ref=e33] [cursor=pointer]:
+            - generic [ref=e35]: Tutorials
+          - listitem [ref=e37] [cursor=pointer]:
+            - generic [ref=e39]: Practice
+          - listitem [ref=e41] [cursor=pointer]:
+            - generic [ref=e43]: Jobs
+          - listitem [ref=e45]
+          - listitem [ref=e46] [cursor=pointer]:
+            - button "Toggle GFG Theme" [ref=e48]
+      - list [ref=e53]:
+        - listitem [ref=e54]:
+          - link "DSA" [ref=e55] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/
+        - listitem [ref=e56]:
+          - link "Practice Problems" [ref=e57] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/explore
+        - listitem [ref=e58]:
+          - link "C" [ref=e59] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/c/c-programming-language/
+        - listitem [ref=e60]:
+          - link "C++" [ref=e61] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/cpp/c-plus-plus/
+        - listitem [ref=e62]:
+          - link "Java" [ref=e63] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/java/java/
+        - listitem [ref=e64]:
+          - link "Python" [ref=e65] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/python/python-programming-language-tutorial/
+        - listitem [ref=e66]:
+          - link "JavaScript" [ref=e67] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/javascript/javascript-tutorial/
+        - listitem [ref=e68]:
+          - link "Data Science" [ref=e69] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/data-science/data-science-for-beginners/
+        - listitem [ref=e70]:
+          - link "Machine Learning" [ref=e71] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/machine-learning/machine-learning/
+        - listitem [ref=e72]:
+          - link "Courses" [ref=e73] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/courses
+    - generic [ref=e78]:
+      - generic [ref=e79]:
+        - generic [ref=e80]:
+          - banner [ref=e81]:
+            - heading "sliding-window" [level=1] [ref=e82]
+          - banner [ref=e83]:
+            - generic [ref=e84]: 205+ posts
+        - link "Recent Articles" [ref=e85] [cursor=pointer]:
+          - /url: /tag/sliding-window/?type=recent
+          - button "Recent Articles" [disabled] [ref=e86]
+        - link "Popular Articles" [ref=e87] [cursor=pointer]:
+          - /url: /tag/sliding-window/?type=popular
+          - button "Popular Articles" [ref=e88]
+      - generic [ref=e90]:
+        - generic [ref=e91]:
+          - generic "Count Subarrays with product of sum and subarray length less than K" [ref=e92]:
+            - link "Count Subarrays with product of sum and subarray length less than K" [ref=e93] [cursor=pointer]:
+              - /url: https://www.geeksforgeeks.org/dsa/count-subarrays-with-product-of-sum-and-subarray-length-less-than-k/
+          - generic [ref=e94]: "Last Updated: 23 July 2025"
+        - link "Given an array of positive elements arr[] of length N, the task is to count all the subarrays such that the product of the subarray sum and length of the subarray should b...read more" [ref=e96] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/dsa/count-subarrays-with-product-of-sum-and-subarray-length-less-than-k/
+        - generic [ref=e97]:
+          - link "Technical Scripter" [ref=e100] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/technical-scripter/
+          - link "Technical Scripter 2022" [ref=e102] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/technical-scripter-2022/
+          - link "DSA" [ref=e104] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/
+          - link "Arrays" [ref=e106] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/data-structures/c-arrays/
+          - link "sliding-window" [ref=e108] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/sliding-window/
+          - link "two-pointer-algorithm" [ref=e110] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/two-pointer-algorithm/
+      - generic [ref=e112]:
+        - generic [ref=e113]:
+          - generic "Longest Subarray whose bitwise AND of every pair of elements is 0" [ref=e114]:
+            - link "Longest Subarray whose bitwise AND of every pair of elements is 0" [ref=e115] [cursor=pointer]:
+              - /url: https://www.geeksforgeeks.org/dsa/longest-subarray-whose-bitwise-and-of-every-pair-of-elements-is-0/
+          - generic [ref=e116]: "Last Updated: 23 July 2025"
+        - link "Given a positive integer array arr[] of size N, the task is to find the longest subarray such that the bitwise AND of every pair of elements in the subarray is equal to 0....read more" [ref=e118] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/dsa/longest-subarray-whose-bitwise-and-of-every-pair-of-elements-is-0/
+        - generic [ref=e119]:
+          - link "Bit Magic" [ref=e122] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/algorithm/bit-magic/
+          - link "Technical Scripter" [ref=e124] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/technical-scripter/
+          - link "Technical Scripter 2022" [ref=e126] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/technical-scripter-2022/
+          - link "DSA" [ref=e128] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/
+          - link "Arrays" [ref=e130] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/data-structures/c-arrays/
+          - link "subarray" [ref=e132] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/subarray/
+          - link "sliding-window" [ref=e134] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/sliding-window/
+      - generic [ref=e136]:
+        - generic [ref=e137]:
+          - generic "Find two non-intersecting String with maximum sum of difference of digits" [ref=e138]:
+            - link "Find two non-intersecting String with maximum sum of difference of digits" [ref=e139] [cursor=pointer]:
+              - /url: https://www.geeksforgeeks.org/dsa/find-two-non-intersecting-string-with-maximum-sum-of-difference-of-digits/
+          - generic [ref=e140]: "Last Updated: 23 July 2025"
+        - link "Given a string S of length N, the task is to find two non-intersecting strings of equal length such that the sum of absolute differences of their digits is maximum and one...read more" [ref=e142] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/dsa/find-two-non-intersecting-string-with-maximum-sum-of-difference-of-digits/
+        - generic [ref=e143]:
+          - link "Technical Scripter 2022" [ref=e146] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/technical-scripter-2022/
+          - link "DSA" [ref=e148] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/
+          - link "sliding-window" [ref=e150] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/sliding-window/
+          - link "strings" [ref=e152] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/strings/
+      - generic [ref=e153]:
+        - generic [ref=e154]:
+          - text: Similar Topics
+          - generic [ref=e155]:
+            - generic [ref=e156]:
+              - link "Web Technologies" [ref=e157] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/category/web-technologies/
+              - generic [ref=e159]: 32.1K+ articles
+            - generic [ref=e160]:
+              - link "DSA" [ref=e161] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/category/dsa/
+              - generic [ref=e163]: 20.4K+ articles
+            - generic [ref=e164]:
+              - link "Misc" [ref=e165] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/category/misc/
+              - generic [ref=e167]: 7.7K+ articles
+            - generic [ref=e168]:
+              - link "Mathematical" [ref=e169] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/category/dsa/algorithm/mathematical/
+              - generic [ref=e171]: 5.1K+ articles
+            - generic [ref=e172]:
+              - link "Arrays" [ref=e173] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/category/dsa/data-structures/c-arrays/
+              - generic [ref=e175]: 4.2K+ articles
+            - generic [ref=e176]:
+              - link "Strings" [ref=e177] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/category/dsa/data-structures/c-strings/
+              - generic [ref=e179]: 2.1K+ articles
+            - generic [ref=e180]:
+              - link "Amazon" [ref=e181] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/tag/amazon/
+              - generic [ref=e183]: 1.9K+ articles
+            - generic [ref=e184]:
+              - link "Hash" [ref=e185] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/category/dsa/data-structures/hash/
+              - generic [ref=e187]: 831+ articles
+            - generic [ref=e188]:
+              - link "subarray" [ref=e189] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/tag/subarray/
+              - generic [ref=e191]: 658+ articles
+            - generic [ref=e192]:
+              - link "subarray-sum" [ref=e193] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/tag/subarray-sum/
+              - generic [ref=e195]: 192+ articles
+        - generic [ref=e196]:
+          - generic [ref=e197]:
+            - generic "Partition Array into 3 Subarrays to maximize the product of sums" [ref=e198]:
+              - link "Partition Array into 3 Subarrays to maximize the product of sums" [ref=e199] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/partition-array-into-3-subarrays-to-maximize-the-product-of-sums/
+            - generic [ref=e200]: "Last Updated: 23 July 2025"
+          - link "You are given an array A[] of size N, the task is to divide the array into exactly three subarrays such that every element belongs to exactly one subarray such that the pr...read more" [ref=e202] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/dsa/partition-array-into-3-subarrays-to-maximize-the-product-of-sums/
+          - generic [ref=e203]:
+            - link "Technical Scripter" [ref=e206] [cursor=pointer]:
+              - /url: https://www.geeksforgeeks.org/category/technical-scripter/
+            - link "Technical Scripter 2022" [ref=e208] [cursor=pointer]:
+              - /url: https://www.geeksforgeeks.org/tag/technical-scripter-2022/
+            - link "DSA" [ref=e210] [cursor=pointer]:
+              - /url: https://www.geeksforgeeks.org/category/dsa/
+            - link "Arrays" [ref=e212] [cursor=pointer]:
+              - /url: https://www.geeksforgeeks.org/category/dsa/data-structures/c-arrays/
+            - link "Suffix-Array" [ref=e214] [cursor=pointer]:
+              - /url: https://www.geeksforgeeks.org/tag/suffix-array/
+            - link "sliding-window" [ref=e216] [cursor=pointer]:
+              - /url: https://www.geeksforgeeks.org/tag/sliding-window/
+      - generic [ref=e218]:
+        - generic [ref=e219]:
+          - generic "Maximum consecutive elements that can be purchased under given budget" [ref=e220]:
+            - link "Maximum consecutive elements that can be purchased under given budget" [ref=e221] [cursor=pointer]:
+              - /url: https://www.geeksforgeeks.org/dsa/maximum-consecutive-elements-that-can-be-purchased-under-given-budget/
+          - generic [ref=e222]: "Last Updated: 23 July 2025"
+        - link "Given N elements that have two costs associated with them that are represented in two arrays Costs1[] and Costs2[] of length N each and an integer budget. The task is to f...read more" [ref=e224] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/dsa/maximum-consecutive-elements-that-can-be-purchased-under-given-budget/
+        - generic [ref=e225]:
+          - link "DSA" [ref=e228] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/
+          - link "sliding-window" [ref=e230] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/sliding-window/
+      - generic [ref=e232]:
+        - generic [ref=e233]:
+          - generic "Maximum number of adjacent Subarrays having GCD X" [ref=e234]:
+            - link "Maximum number of adjacent Subarrays having GCD X" [ref=e235] [cursor=pointer]:
+              - /url: https://www.geeksforgeeks.org/dsa/maximum-number-of-adjacent-subarrays-having-gcd-x/
+          - generic [ref=e236]: "Last Updated: 14 April 2023"
+        - link "Given an array arr[] of length N consisting of positive integers and an integer X, the task is to find the maximum number of adjacent Sub-Arrays by following all the given...read more" [ref=e238] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/dsa/maximum-number-of-adjacent-subarrays-having-gcd-x/
+        - generic [ref=e239]:
+          - link "DSA" [ref=e242] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/
+          - link "Arrays" [ref=e244] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/data-structures/c-arrays/
+          - link "GCD-LCM" [ref=e246] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/gcd-lcm/
+          - link "subarray" [ref=e248] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/subarray/
+          - link "sliding-window" [ref=e250] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/sliding-window/
+      - generic [ref=e252]:
+        - generic [ref=e253]:
+          - generic "Count of K-length subarray with each element less than X times the next one" [ref=e254]:
+            - link "Count of K-length subarray with each element less than X times the next one" [ref=e255] [cursor=pointer]:
+              - /url: https://www.geeksforgeeks.org/dsa/count-of-k-length-subarray-with-each-element-less-than-x-times-the-next-one/
+          - generic [ref=e256]: "Last Updated: 02 February 2023"
+        - link "Given an array A[] of length N and two integers X and K, The task is to count the number of indices i (0 ≤ i N−k) such that:X0⋅ai X1⋅ai + 1 X2⋅ai+2 . . . Xk⋅ai+k.Exam...read more" [ref=e258] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/dsa/count-of-k-length-subarray-with-each-element-less-than-x-times-the-next-one/
+        - generic [ref=e259]:
+          - link "Greedy" [ref=e262] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/algorithm/greedy/
+          - link "DSA" [ref=e264] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/
+          - link "Arrays" [ref=e266] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/data-structures/c-arrays/
+          - link "subarray" [ref=e268] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/subarray/
+          - link "sliding-window" [ref=e270] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/sliding-window/
+      - generic [ref=e272]:
+        - generic [ref=e273]:
+          - generic "Longest subarray of only 0's or 1's with atmost K flips" [ref=e274]:
+            - link "Longest subarray of only 0's or 1's with atmost K flips" [ref=e275] [cursor=pointer]:
+              - /url: https://www.geeksforgeeks.org/dsa/longest-subarray-of-only-0s-or-1s-with-atmost-k-flips/
+          - generic [ref=e276]: "Last Updated: 23 July 2025"
+        - link "Given a binary array a[] or size N and an integer K, the task is to find the longest subarray consisting of only 1s or only 0s when at most K elements can be flipped (i.e ...read more" [ref=e278] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/dsa/longest-subarray-of-only-0s-or-1s-with-atmost-k-flips/
+        - generic [ref=e279]:
+          - link "Greedy" [ref=e282] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/algorithm/greedy/
+          - link "Picked" [ref=e284] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/picked/
+          - link "DSA" [ref=e286] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/
+          - link "Arrays" [ref=e288] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/data-structures/c-arrays/
+          - link "subarray" [ref=e290] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/subarray/
+          - link "sliding-window" [ref=e292] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/sliding-window/
+          - link "two-pointer-algorithm" [ref=e294] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/two-pointer-algorithm/
+      - generic [ref=e296]:
+        - generic [ref=e297]:
+          - generic "Smallest window containing 0, 1 and 2" [ref=e298]:
+            - link "Smallest window containing 0, 1 and 2" [ref=e299] [cursor=pointer]:
+              - /url: https://www.geeksforgeeks.org/dsa/smallest-window-containing-0-1-and-2/
+          - generic [ref=e300]: "Last Updated: 20 April 2026"
+        - generic [ref=e301]:
+          - link "Given a string s consisting of the characters 0, 1 and 2, find the length of the smallest substring of string s that contains all the three characters 0, 1 and 2. If no su...read more" [ref=e302] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/dsa/smallest-window-containing-0-1-and-2/
+          - link "article_image" [ref=e304] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/dsa/smallest-window-containing-0-1-and-2/
+            - img "article_image" [ref=e305]
+        - generic [ref=e306]:
+          - link "Strings" [ref=e309] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/data-structures/c-strings/
+          - link "Greedy" [ref=e311] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/algorithm/greedy/
+          - link "DSA" [ref=e313] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/
+          - link "sliding-window" [ref=e315] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/sliding-window/
+          - link "two-pointer-algorithm" [ref=e317] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/two-pointer-algorithm/
+      - generic [ref=e319]:
+        - generic [ref=e320]:
+          - generic "Minimum cost to remove all 1s from given Binary String as per given conditions" [ref=e321]:
+            - link "Minimum cost to remove all 1s from given Binary String as per given conditions" [ref=e322] [cursor=pointer]:
+              - /url: https://www.geeksforgeeks.org/dsa/minimum-cost-to-remove-all-1s-from-given-binary-string-as-per-given-conditions/
+          - generic [ref=e323]: "Last Updated: 23 July 2025"
+        - link "Given a binary sequence of 1's and 0's. Our task is to remove all 1s from the sequence in minimum cost by below operations.Remove an element from the left end (i.e., remov...read more" [ref=e325] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/dsa/minimum-cost-to-remove-all-1s-from-given-binary-string-as-per-given-conditions/
+        - generic [ref=e326]:
+          - link "Misc" [ref=e329] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/misc/
+          - link "Strings" [ref=e331] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/data-structures/c-strings/
+          - link "Dynamic Programming" [ref=e333] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/algorithm/dynamic-programming/
+          - link "Greedy" [ref=e335] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/algorithm/greedy/
+          - link "Mathematical" [ref=e337] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/algorithm/mathematical/
+          - link "DSA" [ref=e339] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/
+          - link "binary-string" [ref=e341] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/binary-string/
+          - link "sliding-window" [ref=e343] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/sliding-window/
+      - generic [ref=e345]:
+        - generic [ref=e346]:
+          - generic "Anagram Substring Search (Or Search for all permutations) | Set 2" [ref=e347]:
+            - link "Anagram Substring Search (Or Search for all permutations) | Set 2" [ref=e348] [cursor=pointer]:
+              - /url: https://www.geeksforgeeks.org/dsa/anagram-substring-search-or-search-for-all-permutations-set-2/
+          - generic [ref=e349]: "Last Updated: 23 July 2025"
+        - generic [ref=e350]:
+          - link "Given a text txt and a pattern pat of size n and m respectively, the task is to find all occurrences of pat and its permutations (or anagrams) in txt. You may assume n m....read more" [ref=e351] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/dsa/anagram-substring-search-or-search-for-all-permutations-set-2/
+          - link "article_image" [ref=e353] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/dsa/anagram-substring-search-or-search-for-all-permutations-set-2/
+            - img "article_image" [ref=e354]
+        - generic [ref=e355]:
+          - link "Strings" [ref=e358] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/data-structures/c-strings/
+          - link "Hash" [ref=e360] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/data-structures/hash/
+          - link "Geeks Premier League" [ref=e362] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/geeksforgeeks-initiatives/geeks-premier-league/
+          - link "Geeks-Premier-League-2022" [ref=e364] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/geeks-premier-league-2022/
+          - link "DSA" [ref=e366] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/
+          - link "anagram" [ref=e368] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/anagram/
+          - link "sliding-window" [ref=e370] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/sliding-window/
+      - generic [ref=e372]:
+        - generic [ref=e373]:
+          - generic "Count of setbits in bitwise OR of all K length substrings of given Binary String" [ref=e374]:
+            - link "Count of setbits in bitwise OR of all K length substrings of given Binary String" [ref=e375] [cursor=pointer]:
+              - /url: https://www.geeksforgeeks.org/dsa/count-of-setbits-in-bitwise-or-of-all-k-length-substrings-of-given-binary-string/
+          - generic [ref=e376]: "Last Updated: 23 July 2025"
+        - 'link "Given a binary string str of length N, the task is to find the number of setbits in the bitwise OR of all the K length substrings of string str.Examples:Input: N = 4, K = ...read more" [ref=e378] [cursor=pointer]':
+          - /url: https://www.geeksforgeeks.org/dsa/count-of-setbits-in-bitwise-or-of-all-k-length-substrings-of-given-binary-string/
+        - generic [ref=e379]:
+          - link "DSA" [ref=e382] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/
+          - link "setBitCount" [ref=e384] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/setbitcount/
+          - link "binary-string" [ref=e386] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/binary-string/
+          - link "sliding-window" [ref=e388] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/sliding-window/
+          - link "Bitwise-OR" [ref=e390] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/bitwise-or/
+      - generic [ref=e392]:
+        - generic [ref=e393]:
+          - generic "Minimum swaps to group all 0s together in Binary Circular Array" [ref=e394]:
+            - link "Minimum swaps to group all 0s together in Binary Circular Array" [ref=e395] [cursor=pointer]:
+              - /url: https://www.geeksforgeeks.org/dsa/minimum-swaps-to-group-all-0s-together-in-binary-circular-array/
+          - generic [ref=e396]: "Last Updated: 23 July 2025"
+        - 'link "Given a binary circular array arr[] of size N, the task is to find the minimum swaps to group all 0s together in the array.Examples:Input: arr[] = {1, 0, 1, 0, 0, 1, 1}Out...read more" [ref=e398] [cursor=pointer]':
+          - /url: https://www.geeksforgeeks.org/dsa/minimum-swaps-to-group-all-0s-together-in-binary-circular-array/
+        - generic [ref=e399]:
+          - link "DSA" [ref=e402] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/
+          - link "binary-representation" [ref=e404] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/binary-representation/
+          - link "sliding-window" [ref=e406] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/sliding-window/
+          - link "circular-array" [ref=e408] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/circular-array/
+          - link "Swap-Program" [ref=e410] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/swap-program/
+      - generic [ref=e412]:
+        - generic [ref=e413]:
+          - generic "Length of smallest substring to be replaced to make frequency of each character as N/3" [ref=e414]:
+            - link "Length of smallest substring to be replaced to make frequency of each character as N/3" [ref=e415] [cursor=pointer]:
+              - /url: https://www.geeksforgeeks.org/dsa/length-of-smallest-substring-to-be-replaced-to-make-frequency-of-each-character-as-n-3/
+          - generic [ref=e416]: "Last Updated: 23 July 2025"
+        - link "Given a string str of length N (divisible by 3) consisting of atmost three distinct characters, the task is to find the length of the smallest substring whose characters c...read more" [ref=e418] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/dsa/length-of-smallest-substring-to-be-replaced-to-make-frequency-of-each-character-as-n-3/
+        - generic [ref=e419]:
+          - link "Strings" [ref=e422] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/data-structures/c-strings/
+          - link "Algo Geek" [ref=e424] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/algo-geek/
+          - link "Algo-Geek 2021" [ref=e426] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/algo-geek-2021/
+          - link "DSA" [ref=e428] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/
+          - link "sliding-window" [ref=e430] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/sliding-window/
+      - generic [ref=e432]:
+        - generic [ref=e433]:
+          - generic "Longest unique subarray of an Array with maximum sum in another Array" [ref=e434]:
+            - link "Longest unique subarray of an Array with maximum sum in another Array" [ref=e435] [cursor=pointer]:
+              - /url: https://www.geeksforgeeks.org/dsa/longest-unique-subarray-of-an-array-with-maximum-sum-in-another-array/
+          - generic [ref=e436]: "Last Updated: 23 July 2025"
+        - link "Given two arrays X[] and Y[] of size N, the task is to find the longest subarray in X[] containing only unique values such that a subarray with similar indices in Y[] shou...read more" [ref=e438] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/dsa/longest-unique-subarray-of-an-array-with-maximum-sum-in-another-array/
+        - generic [ref=e439]:
+          - link "Algo-Geek 2021" [ref=e442] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/algo-geek-2021/
+          - link "DSA" [ref=e444] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/category/dsa/
+          - link "sliding-window" [ref=e446] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/sliding-window/
+          - link "subarray-sum" [ref=e448] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/tag/subarray-sum/
+      - generic [ref=e450]:
+        - link [ref=e451] [cursor=pointer]:
+          - /url: /tag/sliding-window/page/2/?type=recent
+        - link "1" [ref=e453] [cursor=pointer]:
+          - /url: /tag/sliding-window/page/1/?type=recent
+        - link "2" [ref=e454] [cursor=pointer]:
+          - /url: /tag/sliding-window/page/2/?type=recent
+        - link "3" [ref=e455] [cursor=pointer]:
+          - /url: /tag/sliding-window/page/3/?type=recent
+        - link "4" [ref=e456] [cursor=pointer]:
+          - /url: /tag/sliding-window/page/4/?type=recent
+        - paragraph [ref=e457]: ...
+        - link "14" [ref=e458] [cursor=pointer]:
+          - /url: /tag/sliding-window/page/14/?type=recent
+        - link [ref=e459] [cursor=pointer]:
+          - /url: /tag/sliding-window/page/4/?type=recent
+    - region "Notifications Alt+T"
+    - contentinfo [ref=e462]:
+      - generic [ref=e463]:
+        - generic [ref=e464]:
+          - link "GeeksforGeeks" [ref=e465] [cursor=pointer]:
+            - /url: https://www.geeksforgeeks.org/
+            - img "GeeksforGeeks" [ref=e466]
+          - generic [ref=e467]:
+            - generic [ref=e468]:
+              - img "location" [ref=e469]
+              - generic [ref=e470]: "Corporate & Communications Address:"
+            - generic [ref=e471]: A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305)
+          - generic [ref=e472]:
+            - generic [ref=e473]:
+              - img "location" [ref=e474]
+              - generic [ref=e475]: "Registered Address:"
+            - generic [ref=e476]: K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305
+          - generic [ref=e477]:
+            - generic [ref=e478]:
+              - link "GeeksforGeeks Linkedin" [ref=e479] [cursor=pointer]:
+                - /url: https://in.linkedin.com/company/geeksforgeeks
+              - link "GeeksforGeeks Instagram" [ref=e481] [cursor=pointer]:
+                - /url: https://www.instagram.com/geeks_for_geeks/
+              - link "GeeksforGeeks Twitter" [ref=e483] [cursor=pointer]:
+                - /url: https://twitter.com/geeksforgeeks
+              - link "GeeksforGeeks Facebook" [ref=e485] [cursor=pointer]:
+                - /url: https://www.facebook.com/geeksforgeeks.org/
+              - link "GeeksforGeeks Youtube" [ref=e487] [cursor=pointer]:
+                - /url: https://www.youtube.com/geeksforgeeksvideos
+            - generic [ref=e489]:
+              - link "GFG App on Play Store" [ref=e490] [cursor=pointer]:
+                - /url: https://geeksforgeeksapp.page.link/gfg-app
+                - img "GFG App on Play Store" [ref=e491]
+              - link "GFG App on App Store" [ref=e492] [cursor=pointer]:
+                - /url: https://geeksforgeeksapp.page.link/gfg-app
+                - img "GFG App on App Store" [ref=e493]
+        - generic [ref=e494]:
+          - list [ref=e495]:
+            - listitem [ref=e496]: Company
+            - listitem [ref=e497]:
+              - link "About Us" [ref=e498] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/about/
+            - listitem [ref=e499]:
+              - link "Legal" [ref=e500] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/legal/
+            - listitem [ref=e501]:
+              - link "Privacy Policy" [ref=e502] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/legal/privacy-policy/
+            - listitem [ref=e503]:
+              - link "Careers" [ref=e504] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/jobs?search=geeksforgeeks&tab_type=featured
+            - listitem [ref=e505]:
+              - link "Contact Us" [ref=e506] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/about/contact-us/
+            - listitem [ref=e507]:
+              - link "Corporate Solution" [ref=e508] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/gfg-corporate-solution/
+            - listitem [ref=e509]:
+              - link "Campus Training Program" [ref=e510] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/campus-training-program/
+          - list [ref=e511]:
+            - listitem [ref=e512]: Explore
+            - listitem [ref=e513]:
+              - link "POTD" [ref=e514] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/problem-of-the-day
+            - listitem [ref=e515]:
+              - link "Practice Problems" [ref=e516] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/explore?page=1&sortBy=submissions
+            - listitem [ref=e517]:
+              - link "Connect" [ref=e518] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/connect/home
+            - listitem [ref=e519]:
+              - link "Blogs" [ref=e520] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/category/blogs/?type=recent
+            - listitem [ref=e521]:
+              - link "Upskill Courses" [ref=e522] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/courses
+          - list [ref=e523]:
+            - listitem [ref=e524]: Tutorials
+            - listitem [ref=e525]:
+              - link "Programming Languages" [ref=e526] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/computer-science-fundamentals/programming-language-tutorials/
+            - listitem [ref=e527]:
+              - link "DSA" [ref=e528] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/
+            - listitem [ref=e529]:
+              - link "Web Technology" [ref=e530] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/web-tech/web-technology/
+            - listitem [ref=e531]:
+              - link "AI, ML & Data Science" [ref=e532] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/machine-learning/ai-ml-and-data-science-tutorial-learn-ai-ml-and-data-science/
+            - listitem [ref=e533]:
+              - link "DevOps" [ref=e534] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/devops/devops-tutorial/
+            - listitem [ref=e535]:
+              - link "CS Core Subjects" [ref=e536] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/gate/gate-exam-tutorial/
+            - listitem [ref=e537]:
+              - link "GATE" [ref=e538] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/gate/gate-exam-tutorial/
+            - listitem [ref=e539]:
+              - link "School Subjects" [ref=e540] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/gfg-academy/geeksforgeeks-school/
+            - listitem [ref=e541]:
+              - link "Software and Tools" [ref=e542] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/websites-apps/software-and-tools-a-to-z-list/
+          - list [ref=e543]:
+            - listitem [ref=e544]: Courses
+            - listitem [ref=e545]:
+              - link "ML and Data Science" [ref=e546] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/courses/category/machine-learning-data-science
+            - listitem [ref=e547]:
+              - link "DSA and Placements" [ref=e548] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/courses/category/dsa-placements
+            - listitem [ref=e549]:
+              - link "Web Development" [ref=e550] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/courses/category/development-testing
+            - listitem [ref=e551]:
+              - link "Data Science" [ref=e552] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/courses/category/machine-learning-data-science
+            - listitem [ref=e553]:
+              - link "Programming Languages" [ref=e554] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/courses/category/programming-languages
+            - listitem [ref=e555]:
+              - link "DevOps & Cloud" [ref=e556] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/courses/category/cloud-devops
+            - listitem [ref=e557]:
+              - link "GATE" [ref=e558] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/courses/category/gate
+            - listitem [ref=e559]:
+              - link "MongoDB Certifications" [ref=e560] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/courses/category/mongodb?courseFeeType=free
+          - list [ref=e561]:
+            - listitem [ref=e562]: Preparation Corner
+            - listitem [ref=e563]:
+              - link "Interview Corner" [ref=e564] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/interview-prep/interview-corner/
+            - listitem [ref=e565]:
+              - link "Aptitude" [ref=e566] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/
+            - listitem [ref=e567]:
+              - link "Puzzles" [ref=e568] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/aptitude/puzzles/
+            - listitem [ref=e569]:
+              - link "GfG 160" [ref=e570] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/courses/gfg-160-series
+            - listitem [ref=e571]:
+              - link "System Design" [ref=e572] [cursor=pointer]:
+                - /url: https://www.geeksforgeeks.org/system-design/system-design-tutorial/
+      - generic [ref=e574]:
+        - link "@GeeksforGeeks, Sanchhaya Education Private Limited" [ref=e575] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/
+        - text: ","
+        - link "All rights reserved" [ref=e576] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/copyright-information/
+  - alert [ref=e577]

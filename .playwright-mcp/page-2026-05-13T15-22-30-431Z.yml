@@ -1,0 +1,1372 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - navigation [ref=e7]:
+        - generic [ref=e8]:
+          - link "LeetCode" [ref=e9] [cursor=pointer]:
+            - /url: /
+            - img [ref=e11]
+          - list [ref=e19]:
+            - listitem [ref=e20]:
+              - link "Problems" [ref=e21] [cursor=pointer]:
+                - /url: /problemset
+            - listitem [ref=e22]:
+              - link "Contest" [ref=e23] [cursor=pointer]:
+                - /url: /contest
+            - listitem [ref=e24]:
+              - link "Discuss" [ref=e25] [cursor=pointer]:
+                - /url: /discuss/
+            - listitem [ref=e26]:
+              - generic [ref=e28] [cursor=pointer]:
+                - button "More" [ref=e29]:
+                  - text: More
+                  - img [ref=e30]
+                - list:
+                  - listitem:
+                    - link:
+                      - /url: https://interview.leetcode.com/interview/
+                      - img
+                      - generic: Online Interview
+                  - listitem:
+                    - link:
+                      - /url: /assessment/
+                      - img
+                      - generic: Assessment
+                  - listitem:
+                    - link:
+                      - /url: /store
+                      - generic: Redeem
+                  - listitem:
+                    - link:
+                      - /url: /subscribe/?ref=sto_npl&source=ql
+                      - generic: Premium
+          - generic [ref=e33]:
+            - generic [ref=e35]:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - img
+                    - textbox "Search" [ref=e36]
+              - generic "search" [ref=e37] [cursor=pointer]:
+                - img [ref=e38]
+            - generic [ref=e40]:
+              - link "Register" [ref=e41] [cursor=pointer]:
+                - /url: /accounts/signup/?next=%2Fproblemset%2F%3Fpage%3D1%26tags%3Dsliding-window
+              - generic [ref=e42]: or
+              - link "Log in" [ref=e43] [cursor=pointer]:
+                - /url: /accounts/login/?next=%2Fproblemset%2F%3Fpage%3D1%26tags%3Dsliding-window
+            - link "Premium" [ref=e45] [cursor=pointer]:
+              - /url: /subscribe/?ref=lp_pl&source=ql
+              - generic [ref=e46]: Premium
+      - generic [ref=e48]:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic [ref=e49] [cursor=pointer]:
+                  - img [ref=e51]
+                  - generic [ref=e53]: Library
+                - generic [ref=e54] [cursor=pointer]:
+                  - generic [ref=e55]:
+                    - img [ref=e57]
+                    - generic [ref=e59]: Quest
+                  - generic [ref=e60]: New
+                - link "Explore" [ref=e61] [cursor=pointer]:
+                  - /url: /explore/
+                  - img [ref=e63]
+                  - generic [ref=e65]: Explore
+                - generic [ref=e66] [cursor=pointer]:
+                  - img [ref=e68]
+                  - generic [ref=e70]: Study Plan
+                - generic:
+                  - paragraph: Sign in to view lists and
+                  - paragraph: track study progress.
+                  - link "Sign in" [ref=e71] [cursor=pointer]:
+                    - /url: /accounts/login/?next=%2Fproblemset%2F%3Fpage%3D1%26tags%3Dsliding-window
+                    - button "Sign in" [ref=e72]:
+                      - img [ref=e74]
+                      - generic [ref=e76]: Sign in
+        - button [ref=e78] [cursor=pointer]:
+          - img [ref=e80]
+        - generic [ref=e82]:
+          - generic [ref=e86]:
+            - generic [ref=e88]:
+              - link [ref=e89] [cursor=pointer]:
+                - /url: https://leetcode.com/discuss/post/7939302/leetcode-at-your-fingertips-code-without-027z/
+              - link [ref=e91] [cursor=pointer]:
+                - /url: https://leetcode.com/explore/featured/card/system-design-for-interviews-and-beyond/
+              - link [ref=e93] [cursor=pointer]:
+                - /url: https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/?vacRef=problembanner
+              - link [ref=e95] [cursor=pointer]:
+                - /url: https://leetcode.com/studyplan/top-interview-150/
+              - link [ref=e97] [cursor=pointer]:
+                - /url: https://leetcode.com/studyplan/30-days-of-javascript/
+            - generic [ref=e100]:
+              - generic [ref=e101]:
+                - generic [ref=e102]:
+                  - link "Array 2145" [ref=e104] [cursor=pointer]:
+                    - /url: /tag/array
+                    - generic [ref=e105]: Array
+                    - generic [ref=e106]: "2145"
+                  - link "String 867" [ref=e108] [cursor=pointer]:
+                    - /url: /tag/string
+                    - generic [ref=e109]: String
+                    - generic [ref=e110]: "867"
+                  - link "Hash Table 808" [ref=e112] [cursor=pointer]:
+                    - /url: /tag/hash-table
+                    - generic [ref=e113]: Hash Table
+                    - generic [ref=e114]: "808"
+                  - link "Math 666" [ref=e116] [cursor=pointer]:
+                    - /url: /tag/math
+                    - generic [ref=e117]: Math
+                    - generic [ref=e118]: "666"
+                  - link "Dynamic Programming 653" [ref=e120] [cursor=pointer]:
+                    - /url: /tag/dynamic-programming
+                    - generic [ref=e121]: Dynamic Programming
+                    - generic [ref=e122]: "653"
+                  - link "Sorting 512" [ref=e124] [cursor=pointer]:
+                    - /url: /tag/sorting
+                    - generic [ref=e125]: Sorting
+                    - generic [ref=e126]: "512"
+                  - link "Greedy 460" [ref=e128] [cursor=pointer]:
+                    - /url: /tag/greedy
+                    - generic [ref=e129]: Greedy
+                    - generic [ref=e130]: "460"
+                  - link "Depth-First Search 337" [ref=e132] [cursor=pointer]:
+                    - /url: /tag/depth-first-search
+                    - generic [ref=e133]: Depth-First Search
+                    - generic [ref=e134]: "337"
+                  - link "Binary Search 333" [ref=e136] [cursor=pointer]:
+                    - /url: /tag/binary-search
+                    - generic [ref=e137]: Binary Search
+                    - generic [ref=e138]: "333"
+                  - link "Database 310" [ref=e140] [cursor=pointer]:
+                    - /url: /tag/database
+                    - generic [ref=e141]: Database
+                    - generic [ref=e142]: "310"
+                  - link "Bit Manipulation 281" [ref=e144] [cursor=pointer]:
+                    - /url: /tag/bit-manipulation
+                    - generic [ref=e145]: Bit Manipulation
+                    - generic [ref=e146]: "281"
+                  - link "Matrix 274" [ref=e148] [cursor=pointer]:
+                    - /url: /tag/matrix
+                    - generic [ref=e149]: Matrix
+                    - generic [ref=e150]: "274"
+                  - link "Tree 262" [ref=e152] [cursor=pointer]:
+                    - /url: /tag/tree
+                    - generic [ref=e153]: Tree
+                    - generic [ref=e154]: "262"
+                  - link "Breadth-First Search 257" [ref=e156] [cursor=pointer]:
+                    - /url: /tag/breadth-first-search
+                    - generic [ref=e157]: Breadth-First Search
+                    - generic [ref=e158]: "257"
+                  - link "Two Pointers 251" [ref=e160] [cursor=pointer]:
+                    - /url: /tag/two-pointers
+                    - generic [ref=e161]: Two Pointers
+                    - generic [ref=e162]: "251"
+                  - link "Prefix Sum 245" [ref=e164] [cursor=pointer]:
+                    - /url: /tag/prefix-sum
+                    - generic [ref=e165]: Prefix Sum
+                    - generic [ref=e166]: "245"
+                  - link "Heap (Priority Queue) 214" [ref=e168] [cursor=pointer]:
+                    - /url: /tag/heap-priority-queue
+                    - generic [ref=e169]: Heap (Priority Queue)
+                    - generic [ref=e170]: "214"
+                  - link "Simulation 207" [ref=e172] [cursor=pointer]:
+                    - /url: /tag/simulation
+                    - generic [ref=e173]: Simulation
+                    - generic [ref=e174]: "207"
+                  - link "Counting 203" [ref=e176] [cursor=pointer]:
+                    - /url: /tag/counting
+                    - generic [ref=e177]: Counting
+                    - generic [ref=e178]: "203"
+                  - link "Graph Theory 181" [ref=e180] [cursor=pointer]:
+                    - /url: /tag/graph
+                    - generic [ref=e181]: Graph Theory
+                    - generic [ref=e182]: "181"
+                  - link "Binary Tree 180" [ref=e184] [cursor=pointer]:
+                    - /url: /tag/binary-tree
+                    - generic [ref=e185]: Binary Tree
+                    - generic [ref=e186]: "180"
+                  - link "Stack 179" [ref=e188] [cursor=pointer]:
+                    - /url: /tag/stack
+                    - generic [ref=e189]: Stack
+                    - generic [ref=e190]: "179"
+                  - link "Sliding Window 164" [ref=e192] [cursor=pointer]:
+                    - /url: /tag/sliding-window
+                    - generic [ref=e193]: Sliding Window
+                    - generic [ref=e194]: "164"
+                  - link "Enumeration 146" [ref=e196] [cursor=pointer]:
+                    - /url: /tag/enumeration
+                    - generic [ref=e197]: Enumeration
+                    - generic [ref=e198]: "146"
+                  - link "Design 136" [ref=e200] [cursor=pointer]:
+                    - /url: /tag/design
+                    - generic [ref=e201]: Design
+                    - generic [ref=e202]: "136"
+                  - link "Backtracking 113" [ref=e204] [cursor=pointer]:
+                    - /url: /tag/backtracking
+                    - generic [ref=e205]: Backtracking
+                    - generic [ref=e206]: "113"
+                  - link "Union-Find 99" [ref=e208] [cursor=pointer]:
+                    - /url: /tag/union-find
+                    - generic [ref=e209]: Union-Find
+                    - generic [ref=e210]: "99"
+                  - link "Number Theory 94" [ref=e212] [cursor=pointer]:
+                    - /url: /tag/number-theory
+                    - generic [ref=e213]: Number Theory
+                    - generic [ref=e214]: "94"
+                  - link "Linked List 82" [ref=e216] [cursor=pointer]:
+                    - /url: /tag/linked-list
+                    - generic [ref=e217]: Linked List
+                    - generic [ref=e218]: "82"
+                  - link "Ordered Set 76" [ref=e220] [cursor=pointer]:
+                    - /url: /tag/ordered-set
+                    - generic [ref=e221]: Ordered Set
+                    - generic [ref=e222]: "76"
+                  - link "Segment Tree 75" [ref=e224] [cursor=pointer]:
+                    - /url: /tag/segment-tree
+                    - generic [ref=e225]: Segment Tree
+                    - generic [ref=e226]: "75"
+                  - link "Monotonic Stack 73" [ref=e228] [cursor=pointer]:
+                    - /url: /tag/monotonic-stack
+                    - generic [ref=e229]: Monotonic Stack
+                    - generic [ref=e230]: "73"
+                  - link "Divide and Conquer 65" [ref=e232] [cursor=pointer]:
+                    - /url: /tag/divide-and-conquer
+                    - generic [ref=e233]: Divide and Conquer
+                    - generic [ref=e234]: "65"
+                  - link "Combinatorics 61" [ref=e236] [cursor=pointer]:
+                    - /url: /tag/combinatorics
+                    - generic [ref=e237]: Combinatorics
+                    - generic [ref=e238]: "61"
+                  - link "Trie 61" [ref=e240] [cursor=pointer]:
+                    - /url: /tag/trie
+                    - generic [ref=e241]: Trie
+                    - generic [ref=e242]: "61"
+                  - link "Bitmask 55" [ref=e244] [cursor=pointer]:
+                    - /url: /tag/bitmask
+                    - generic [ref=e245]: Bitmask
+                    - generic [ref=e246]: "55"
+                  - link "Queue 54" [ref=e248] [cursor=pointer]:
+                    - /url: /tag/queue
+                    - generic [ref=e249]: Queue
+                    - generic [ref=e250]: "54"
+                  - link "Recursion 51" [ref=e252] [cursor=pointer]:
+                    - /url: /tag/recursion
+                    - generic [ref=e253]: Recursion
+                    - generic [ref=e254]: "51"
+                  - link "Geometry 45" [ref=e256] [cursor=pointer]:
+                    - /url: /tag/geometry
+                    - generic [ref=e257]: Geometry
+                    - generic [ref=e258]: "45"
+                  - link "Binary Indexed Tree 44" [ref=e260] [cursor=pointer]:
+                    - /url: /tag/binary-indexed-tree
+                    - generic [ref=e261]: Binary Indexed Tree
+                    - generic [ref=e262]: "44"
+                  - link "Memoization 43" [ref=e264] [cursor=pointer]:
+                    - /url: /tag/memoization
+                    - generic [ref=e265]: Memoization
+                    - generic [ref=e266]: "43"
+                  - link "Hash Function 42" [ref=e268] [cursor=pointer]:
+                    - /url: /tag/hash-function
+                    - generic [ref=e269]: Hash Function
+                    - generic [ref=e270]: "42"
+                  - link "Binary Search Tree 42" [ref=e272] [cursor=pointer]:
+                    - /url: /tag/binary-search-tree
+                    - generic [ref=e273]: Binary Search Tree
+                    - generic [ref=e274]: "42"
+                  - link "Topological Sort 40" [ref=e276] [cursor=pointer]:
+                    - /url: /tag/topological-sort
+                    - generic [ref=e277]: Topological Sort
+                    - generic [ref=e278]: "40"
+                  - link "Shortest Path 38" [ref=e280] [cursor=pointer]:
+                    - /url: /tag/shortest-path
+                    - generic [ref=e281]: Shortest Path
+                    - generic [ref=e282]: "38"
+                  - link "String Matching 37" [ref=e284] [cursor=pointer]:
+                    - /url: /tag/string-matching
+                    - generic [ref=e285]: String Matching
+                    - generic [ref=e286]: "37"
+                  - link "Rolling Hash 32" [ref=e288] [cursor=pointer]:
+                    - /url: /tag/rolling-hash
+                    - generic [ref=e289]: Rolling Hash
+                    - generic [ref=e290]: "32"
+                  - link "Game Theory 30" [ref=e292] [cursor=pointer]:
+                    - /url: /tag/game-theory
+                    - generic [ref=e293]: Game Theory
+                    - generic [ref=e294]: "30"
+                  - link "Interactive 25" [ref=e296] [cursor=pointer]:
+                    - /url: /tag/interactive
+                    - generic [ref=e297]: Interactive
+                    - generic [ref=e298]: "25"
+                  - link "Data Stream 24" [ref=e300] [cursor=pointer]:
+                    - /url: /tag/data-stream
+                    - generic [ref=e301]: Data Stream
+                    - generic [ref=e302]: "24"
+                  - link "Monotonic Queue 23" [ref=e304] [cursor=pointer]:
+                    - /url: /tag/monotonic-queue
+                    - generic [ref=e305]: Monotonic Queue
+                    - generic [ref=e306]: "23"
+                  - link "Brainteaser 21" [ref=e308] [cursor=pointer]:
+                    - /url: /tag/brainteaser
+                    - generic [ref=e309]: Brainteaser
+                    - generic [ref=e310]: "21"
+                  - link "Doubly-Linked List 15" [ref=e312] [cursor=pointer]:
+                    - /url: /tag/doubly-linked-list
+                    - generic [ref=e313]: Doubly-Linked List
+                    - generic [ref=e314]: "15"
+                  - link "Merge Sort 15" [ref=e316] [cursor=pointer]:
+                    - /url: /tag/merge-sort
+                    - generic [ref=e317]: Merge Sort
+                    - generic [ref=e318]: "15"
+                  - link "Randomized 12" [ref=e320] [cursor=pointer]:
+                    - /url: /tag/randomized
+                    - generic [ref=e321]: Randomized
+                    - generic [ref=e322]: "12"
+                  - link "Counting Sort 11" [ref=e324] [cursor=pointer]:
+                    - /url: /tag/counting-sort
+                    - generic [ref=e325]: Counting Sort
+                    - generic [ref=e326]: "11"
+                  - link "Iterator 9" [ref=e328] [cursor=pointer]:
+                    - /url: /tag/iterator
+                    - generic [ref=e329]: Iterator
+                    - generic [ref=e330]: "9"
+                  - link "Concurrency 9" [ref=e332] [cursor=pointer]:
+                    - /url: /tag/concurrency
+                    - generic [ref=e333]: Concurrency
+                    - generic [ref=e334]: "9"
+                  - link "Quickselect 8" [ref=e336] [cursor=pointer]:
+                    - /url: /tag/quickselect
+                    - generic [ref=e337]: Quickselect
+                    - generic [ref=e338]: "8"
+                  - link "Suffix Array 8" [ref=e340] [cursor=pointer]:
+                    - /url: /tag/suffix-array
+                    - generic [ref=e341]: Suffix Array
+                    - generic [ref=e342]: "8"
+                  - link "Sweep Line 8" [ref=e344] [cursor=pointer]:
+                    - /url: /tag/line-sweep
+                    - generic [ref=e345]: Sweep Line
+                    - generic [ref=e346]: "8"
+                  - link "Probability and Statistics 7" [ref=e348] [cursor=pointer]:
+                    - /url: /tag/probability-and-statistics
+                    - generic [ref=e349]: Probability and Statistics
+                    - generic [ref=e350]: "7"
+                  - link "Minimum Spanning Tree 6" [ref=e352] [cursor=pointer]:
+                    - /url: /tag/minimum-spanning-tree
+                    - generic [ref=e353]: Minimum Spanning Tree
+                    - generic [ref=e354]: "6"
+                  - link "Bucket Sort 6" [ref=e356] [cursor=pointer]:
+                    - /url: /tag/bucket-sort
+                    - generic [ref=e357]: Bucket Sort
+                    - generic [ref=e358]: "6"
+                  - link "Shell 4" [ref=e360] [cursor=pointer]:
+                    - /url: /tag/shell
+                    - generic [ref=e361]: Shell
+                    - generic [ref=e362]: "4"
+                  - link "Reservoir Sampling 4" [ref=e364] [cursor=pointer]:
+                    - /url: /tag/reservoir-sampling
+                    - generic [ref=e365]: Reservoir Sampling
+                    - generic [ref=e366]: "4"
+                  - link "Eulerian Circuit 3" [ref=e368] [cursor=pointer]:
+                    - /url: /tag/eulerian-circuit
+                    - generic [ref=e369]: Eulerian Circuit
+                    - generic [ref=e370]: "3"
+                  - link "Radix Sort 3" [ref=e372] [cursor=pointer]:
+                    - /url: /tag/radix-sort
+                    - generic [ref=e373]: Radix Sort
+                    - generic [ref=e374]: "3"
+                  - link "Strongly Connected Component 2" [ref=e376] [cursor=pointer]:
+                    - /url: /tag/strongly-connected-component
+                    - generic [ref=e377]: Strongly Connected Component
+                    - generic [ref=e378]: "2"
+                  - link "Rejection Sampling 2" [ref=e380] [cursor=pointer]:
+                    - /url: /tag/rejection-sampling
+                    - generic [ref=e381]: Rejection Sampling
+                    - generic [ref=e382]: "2"
+                  - link "Biconnected Component 1" [ref=e384] [cursor=pointer]:
+                    - /url: /tag/biconnected-component
+                    - generic [ref=e385]: Biconnected Component
+                    - generic [ref=e386]: "1"
+                - generic [ref=e389] [cursor=pointer]:
+                  - generic [ref=e390]: Expand
+                  - img [ref=e391]
+              - generic [ref=e393]:
+                - generic [ref=e394]:
+                  - link "All Topics" [ref=e395] [cursor=pointer]:
+                    - /url: /problemset/all-code-essentials
+                    - generic [ref=e396]:
+                      - img [ref=e397]
+                      - text: All Topics
+                  - link "Algorithms" [ref=e399] [cursor=pointer]:
+                    - /url: /problemset/algorithms
+                    - generic [ref=e400]:
+                      - img [ref=e401]
+                      - text: Algorithms
+                  - link "Database" [ref=e403] [cursor=pointer]:
+                    - /url: /problemset/database
+                    - generic [ref=e404]:
+                      - img [ref=e405]
+                      - text: Database
+                  - link "Shell" [ref=e407] [cursor=pointer]:
+                    - /url: /problemset/shell
+                    - generic [ref=e408]:
+                      - img [ref=e409]
+                      - text: Shell
+                  - link "Concurrency" [ref=e411] [cursor=pointer]:
+                    - /url: /problemset/concurrency
+                    - generic [ref=e412]:
+                      - img [ref=e413]
+                      - text: Concurrency
+                  - link "JavaScript" [ref=e415] [cursor=pointer]:
+                    - /url: /problemset/javascript
+                    - generic [ref=e416]:
+                      - img [ref=e417]
+                      - text: JavaScript
+                  - link "pandas" [ref=e420] [cursor=pointer]:
+                    - /url: /problemset/pandas
+                    - generic [ref=e421]:
+                      - img [ref=e422]
+                      - text: pandas
+                - img [ref=e427] [cursor=pointer]
+            - generic [ref=e429]:
+              - generic [ref=e430]:
+                - generic [ref=e431]:
+                  - generic [ref=e432]:
+                    - textbox "Search questions" [ref=e433]
+                    - img [ref=e435]
+                  - button [ref=e438] [cursor=pointer]:
+                    - img [ref=e440]
+                  - button [ref=e444] [cursor=pointer]:
+                    - img [ref=e447]
+                - generic [ref=e450]:
+                  - link "0/3930 Solved" [ref=e452] [cursor=pointer]:
+                    - /url: /progress/
+                    - generic [ref=e453]:
+                      - img [ref=e455]
+                      - generic [ref=e458]: 0/3930 Solved
+                  - button [ref=e460] [cursor=pointer]:
+                    - img [ref=e462]
+              - generic [ref=e465]:
+                - link "1674. Minimum Moves to Make Array Complementary 60.7% Med." [ref=e466] [cursor=pointer]:
+                  - /url: /problems/minimum-moves-to-make-array-complementary?envType=daily-question&envId=2026-05-13&page=1&tags=sliding-window
+                  - generic [ref=e467]:
+                    - img [ref=e471]
+                    - generic [ref=e473]:
+                      - generic [ref=e476]: 1674. Minimum Moves to Make Array Complementary
+                      - generic [ref=e477]: 60.7%
+                      - paragraph [ref=e478]: Med.
+                    - img [ref=e490]
+                    - img [ref=e495]
+                - link "1. Two Sum 57.5% Easy" [ref=e497] [cursor=pointer]:
+                  - /url: /problems/two-sum?page=1&tags=sliding-window
+                  - generic [ref=e498]:
+                    - generic [ref=e502]:
+                      - generic [ref=e505]: 1. Two Sum
+                      - generic [ref=e506]: 57.5%
+                      - paragraph [ref=e507]: Easy
+                    - img [ref=e519]
+                    - img [ref=e524]
+                - link "2. Add Two Numbers 48.4% Med." [ref=e526] [cursor=pointer]:
+                  - /url: /problems/add-two-numbers?page=1&tags=sliding-window
+                  - generic [ref=e527]:
+                    - generic [ref=e531]:
+                      - generic [ref=e534]: 2. Add Two Numbers
+                      - generic [ref=e535]: 48.4%
+                      - paragraph [ref=e536]: Med.
+                    - img [ref=e548]
+                    - img [ref=e553]
+                - link "3. Longest Substring Without Repeating Characters 39.0% Med." [ref=e555] [cursor=pointer]:
+                  - /url: /problems/longest-substring-without-repeating-characters?page=1&tags=sliding-window
+                  - generic [ref=e556]:
+                    - generic [ref=e560]:
+                      - generic [ref=e563]: 3. Longest Substring Without Repeating Characters
+                      - generic [ref=e564]: 39.0%
+                      - paragraph [ref=e565]: Med.
+                    - img [ref=e577]
+                    - img [ref=e582]
+                - link "4. Median of Two Sorted Arrays 46.5% Hard" [ref=e584] [cursor=pointer]:
+                  - /url: /problems/median-of-two-sorted-arrays?page=1&tags=sliding-window
+                  - generic [ref=e585]:
+                    - generic [ref=e589]:
+                      - generic [ref=e592]: 4. Median of Two Sorted Arrays
+                      - generic [ref=e593]: 46.5%
+                      - paragraph [ref=e594]: Hard
+                    - img [ref=e606]
+                    - img [ref=e611]
+                - link "5. Longest Palindromic Substring 37.8% Med." [ref=e613] [cursor=pointer]:
+                  - /url: /problems/longest-palindromic-substring?page=1&tags=sliding-window
+                  - generic [ref=e614]:
+                    - generic [ref=e618]:
+                      - generic [ref=e621]: 5. Longest Palindromic Substring
+                      - generic [ref=e622]: 37.8%
+                      - paragraph [ref=e623]: Med.
+                    - img [ref=e635]
+                    - img [ref=e640]
+                - link "6. Zigzag Conversion 54.1% Med." [ref=e642] [cursor=pointer]:
+                  - /url: /problems/zigzag-conversion?page=1&tags=sliding-window
+                  - generic [ref=e643]:
+                    - generic [ref=e647]:
+                      - generic [ref=e650]: 6. Zigzag Conversion
+                      - generic [ref=e651]: 54.1%
+                      - paragraph [ref=e652]: Med.
+                    - img [ref=e664]
+                    - img [ref=e669]
+                - link "7. Reverse Integer 31.9% Med." [ref=e671] [cursor=pointer]:
+                  - /url: /problems/reverse-integer?page=1&tags=sliding-window
+                  - generic [ref=e672]:
+                    - generic [ref=e676]:
+                      - generic [ref=e679]: 7. Reverse Integer
+                      - generic [ref=e680]: 31.9%
+                      - paragraph [ref=e681]: Med.
+                    - img [ref=e693]
+                    - img [ref=e698]
+                - link "8. String to Integer (atoi) 21.0% Med." [ref=e700] [cursor=pointer]:
+                  - /url: /problems/string-to-integer-atoi?page=1&tags=sliding-window
+                  - generic [ref=e701]:
+                    - generic [ref=e705]:
+                      - generic [ref=e708]: 8. String to Integer (atoi)
+                      - generic [ref=e709]: 21.0%
+                      - paragraph [ref=e710]: Med.
+                    - img [ref=e722]
+                    - img [ref=e727]
+                - link "9. Palindrome Number 60.5% Easy" [ref=e729] [cursor=pointer]:
+                  - /url: /problems/palindrome-number?page=1&tags=sliding-window
+                  - generic [ref=e730]:
+                    - generic [ref=e734]:
+                      - generic [ref=e737]: 9. Palindrome Number
+                      - generic [ref=e738]: 60.5%
+                      - paragraph [ref=e739]: Easy
+                    - img [ref=e751]
+                    - img [ref=e756]
+                - link "10. Regular Expression Matching 30.9% Hard" [ref=e758] [cursor=pointer]:
+                  - /url: /problems/regular-expression-matching?page=1&tags=sliding-window
+                  - generic [ref=e759]:
+                    - generic [ref=e763]:
+                      - generic [ref=e766]: 10. Regular Expression Matching
+                      - generic [ref=e767]: 30.9%
+                      - paragraph [ref=e768]: Hard
+                    - img [ref=e780]
+                    - img [ref=e785]
+                - link "11. Container With Most Water 60.0% Med." [ref=e787] [cursor=pointer]:
+                  - /url: /problems/container-with-most-water?page=1&tags=sliding-window
+                  - generic [ref=e788]:
+                    - generic [ref=e792]:
+                      - generic [ref=e795]: 11. Container With Most Water
+                      - generic [ref=e796]: 60.0%
+                      - paragraph [ref=e797]: Med.
+                    - img [ref=e809]
+                    - img [ref=e814]
+                - link "12. Integer to Roman 70.9% Med." [ref=e816] [cursor=pointer]:
+                  - /url: /problems/integer-to-roman?page=1&tags=sliding-window
+                  - generic [ref=e817]:
+                    - generic [ref=e821]:
+                      - generic [ref=e824]: 12. Integer to Roman
+                      - generic [ref=e825]: 70.9%
+                      - paragraph [ref=e826]: Med.
+                    - img [ref=e838]
+                    - img [ref=e843]
+                - link "13. Roman to Integer 66.6% Easy" [ref=e845] [cursor=pointer]:
+                  - /url: /problems/roman-to-integer?page=1&tags=sliding-window
+                  - generic [ref=e846]:
+                    - generic [ref=e850]:
+                      - generic [ref=e853]: 13. Roman to Integer
+                      - generic [ref=e854]: 66.6%
+                      - paragraph [ref=e855]: Easy
+                    - img [ref=e867]
+                    - img [ref=e872]
+                - link "14. Longest Common Prefix 47.5% Easy" [ref=e874] [cursor=pointer]:
+                  - /url: /problems/longest-common-prefix?page=1&tags=sliding-window
+                  - generic [ref=e875]:
+                    - generic [ref=e879]:
+                      - generic [ref=e882]: 14. Longest Common Prefix
+                      - generic [ref=e883]: 47.5%
+                      - paragraph [ref=e884]: Easy
+                    - img [ref=e896]
+                    - img [ref=e901]
+                - link "15. 3Sum 39.0% Med." [ref=e903] [cursor=pointer]:
+                  - /url: /problems/3sum?page=1&tags=sliding-window
+                  - generic [ref=e904]:
+                    - generic [ref=e908]:
+                      - generic [ref=e911]: 15. 3Sum
+                      - generic [ref=e912]: 39.0%
+                      - paragraph [ref=e913]: Med.
+                    - img [ref=e925]
+                    - img [ref=e930]
+                - link "16. 3Sum Closest 48.5% Med." [ref=e932] [cursor=pointer]:
+                  - /url: /problems/3sum-closest?page=1&tags=sliding-window
+                  - generic [ref=e933]:
+                    - generic [ref=e937]:
+                      - generic [ref=e940]: 16. 3Sum Closest
+                      - generic [ref=e941]: 48.5%
+                      - paragraph [ref=e942]: Med.
+                    - img [ref=e954]
+                    - img [ref=e959]
+                - link "17. Letter Combinations of a Phone Number 66.0% Med." [ref=e961] [cursor=pointer]:
+                  - /url: /problems/letter-combinations-of-a-phone-number?page=1&tags=sliding-window
+                  - generic [ref=e962]:
+                    - generic [ref=e966]:
+                      - generic [ref=e969]: 17. Letter Combinations of a Phone Number
+                      - generic [ref=e970]: 66.0%
+                      - paragraph [ref=e971]: Med.
+                    - img [ref=e983]
+                    - img [ref=e988]
+                - link "18. 4Sum 40.6% Med." [ref=e990] [cursor=pointer]:
+                  - /url: /problems/4sum?page=1&tags=sliding-window
+                  - generic [ref=e991]:
+                    - generic [ref=e995]:
+                      - generic [ref=e998]: 18. 4Sum
+                      - generic [ref=e999]: 40.6%
+                      - paragraph [ref=e1000]: Med.
+                    - img [ref=e1012]
+                    - img [ref=e1017]
+                - link "19. Remove Nth Node From End of List 51.5% Med." [ref=e1019] [cursor=pointer]:
+                  - /url: /problems/remove-nth-node-from-end-of-list?page=1&tags=sliding-window
+                  - generic [ref=e1020]:
+                    - generic [ref=e1024]:
+                      - generic [ref=e1027]: 19. Remove Nth Node From End of List
+                      - generic [ref=e1028]: 51.5%
+                      - paragraph [ref=e1029]: Med.
+                    - img [ref=e1041]
+                    - img [ref=e1046]
+                - link "20. Valid Parentheses 44.1% Easy" [ref=e1048] [cursor=pointer]:
+                  - /url: /problems/valid-parentheses?page=1&tags=sliding-window
+                  - generic [ref=e1049]:
+                    - generic [ref=e1053]:
+                      - generic [ref=e1056]: 20. Valid Parentheses
+                      - generic [ref=e1057]: 44.1%
+                      - paragraph [ref=e1058]: Easy
+                    - img [ref=e1070]
+                    - img [ref=e1075]
+                - link "21. Merge Two Sorted Lists 68.3% Easy" [ref=e1077] [cursor=pointer]:
+                  - /url: /problems/merge-two-sorted-lists?page=1&tags=sliding-window
+                  - generic [ref=e1078]:
+                    - generic [ref=e1082]:
+                      - generic [ref=e1085]: 21. Merge Two Sorted Lists
+                      - generic [ref=e1086]: 68.3%
+                      - paragraph [ref=e1087]: Easy
+                    - img [ref=e1099]
+                    - img [ref=e1104]
+                - link "22. Generate Parentheses 78.6% Med." [ref=e1106] [cursor=pointer]:
+                  - /url: /problems/generate-parentheses?page=1&tags=sliding-window
+                  - generic [ref=e1107]:
+                    - generic [ref=e1111]:
+                      - generic [ref=e1114]: 22. Generate Parentheses
+                      - generic [ref=e1115]: 78.6%
+                      - paragraph [ref=e1116]: Med.
+                    - img [ref=e1128]
+                    - img [ref=e1133]
+                - link "23. Merge k Sorted Lists 59.5% Hard" [ref=e1135] [cursor=pointer]:
+                  - /url: /problems/merge-k-sorted-lists?page=1&tags=sliding-window
+                  - generic [ref=e1136]:
+                    - generic [ref=e1140]:
+                      - generic [ref=e1143]: 23. Merge k Sorted Lists
+                      - generic [ref=e1144]: 59.5%
+                      - paragraph [ref=e1145]: Hard
+                    - img [ref=e1157]
+                    - img [ref=e1162]
+                - link "24. Swap Nodes in Pairs 69.5% Med." [ref=e1164] [cursor=pointer]:
+                  - /url: /problems/swap-nodes-in-pairs?page=1&tags=sliding-window
+                  - generic [ref=e1165]:
+                    - generic [ref=e1169]:
+                      - generic [ref=e1172]: 24. Swap Nodes in Pairs
+                      - generic [ref=e1173]: 69.5%
+                      - paragraph [ref=e1174]: Med.
+                    - img [ref=e1186]
+                    - img [ref=e1191]
+                - link "25. Reverse Nodes in k-Group 66.0% Hard" [ref=e1193] [cursor=pointer]:
+                  - /url: /problems/reverse-nodes-in-k-group?page=1&tags=sliding-window
+                  - generic [ref=e1194]:
+                    - generic [ref=e1198]:
+                      - generic [ref=e1201]: 25. Reverse Nodes in k-Group
+                      - generic [ref=e1202]: 66.0%
+                      - paragraph [ref=e1203]: Hard
+                    - img [ref=e1215]
+                    - img [ref=e1220]
+                - link "26. Remove Duplicates from Sorted Array 62.8% Easy" [ref=e1222] [cursor=pointer]:
+                  - /url: /problems/remove-duplicates-from-sorted-array?page=1&tags=sliding-window
+                  - generic [ref=e1223]:
+                    - generic [ref=e1227]:
+                      - generic [ref=e1230]: 26. Remove Duplicates from Sorted Array
+                      - generic [ref=e1231]: 62.8%
+                      - paragraph [ref=e1232]: Easy
+                    - img [ref=e1244]
+                    - img [ref=e1249]
+                - link "27. Remove Element 61.8% Easy" [ref=e1251] [cursor=pointer]:
+                  - /url: /problems/remove-element?page=1&tags=sliding-window
+                  - generic [ref=e1252]:
+                    - generic [ref=e1256]:
+                      - generic [ref=e1259]: 27. Remove Element
+                      - generic [ref=e1260]: 61.8%
+                      - paragraph [ref=e1261]: Easy
+                    - img [ref=e1273]
+                    - img [ref=e1278]
+                - link "28. Find the Index of the First Occurrence in a String 46.6% Easy" [ref=e1280] [cursor=pointer]:
+                  - /url: /problems/find-the-index-of-the-first-occurrence-in-a-string?page=1&tags=sliding-window
+                  - generic [ref=e1281]:
+                    - generic [ref=e1285]:
+                      - generic [ref=e1288]: 28. Find the Index of the First Occurrence in a String
+                      - generic [ref=e1289]: 46.6%
+                      - paragraph [ref=e1290]: Easy
+                    - img [ref=e1302]
+                    - img [ref=e1307]
+                - link "29. Divide Two Integers 19.8% Med." [ref=e1309] [cursor=pointer]:
+                  - /url: /problems/divide-two-integers?page=1&tags=sliding-window
+                  - generic [ref=e1310]:
+                    - generic [ref=e1314]:
+                      - generic [ref=e1317]: 29. Divide Two Integers
+                      - generic [ref=e1318]: 19.8%
+                      - paragraph [ref=e1319]: Med.
+                    - img [ref=e1331]
+                    - img [ref=e1336]
+                - link "30. Substring with Concatenation of All Words 34.4% Hard" [ref=e1338] [cursor=pointer]:
+                  - /url: /problems/substring-with-concatenation-of-all-words?page=1&tags=sliding-window
+                  - generic [ref=e1339]:
+                    - generic [ref=e1343]:
+                      - generic [ref=e1346]: 30. Substring with Concatenation of All Words
+                      - generic [ref=e1347]: 34.4%
+                      - paragraph [ref=e1348]: Hard
+                    - img [ref=e1360]
+                    - img [ref=e1365]
+                - link "31. Next Permutation 45.2% Med." [ref=e1367] [cursor=pointer]:
+                  - /url: /problems/next-permutation?page=1&tags=sliding-window
+                  - generic [ref=e1368]:
+                    - generic [ref=e1372]:
+                      - generic [ref=e1375]: 31. Next Permutation
+                      - generic [ref=e1376]: 45.2%
+                      - paragraph [ref=e1377]: Med.
+                    - img [ref=e1389]
+                    - img [ref=e1394]
+                - link "32. Longest Valid Parentheses 38.8% Hard" [ref=e1396] [cursor=pointer]:
+                  - /url: /problems/longest-valid-parentheses?page=1&tags=sliding-window
+                  - generic [ref=e1397]:
+                    - generic [ref=e1401]:
+                      - generic [ref=e1404]: 32. Longest Valid Parentheses
+                      - generic [ref=e1405]: 38.8%
+                      - paragraph [ref=e1406]: Hard
+                    - img [ref=e1418]
+                    - img [ref=e1423]
+                - link "33. Search in Rotated Sorted Array 44.5% Med." [ref=e1425] [cursor=pointer]:
+                  - /url: /problems/search-in-rotated-sorted-array?page=1&tags=sliding-window
+                  - generic [ref=e1426]:
+                    - generic [ref=e1430]:
+                      - generic [ref=e1433]: 33. Search in Rotated Sorted Array
+                      - generic [ref=e1434]: 44.5%
+                      - paragraph [ref=e1435]: Med.
+                    - img [ref=e1447]
+                    - img [ref=e1452]
+                - link "34. Find First and Last Position of Element in Sorted Array 48.8% Med." [ref=e1454] [cursor=pointer]:
+                  - /url: /problems/find-first-and-last-position-of-element-in-sorted-array?page=1&tags=sliding-window
+                  - generic [ref=e1455]:
+                    - generic [ref=e1459]:
+                      - generic [ref=e1462]: 34. Find First and Last Position of Element in Sorted Array
+                      - generic [ref=e1463]: 48.8%
+                      - paragraph [ref=e1464]: Med.
+                    - img [ref=e1476]
+                    - img [ref=e1481]
+                - link "35. Search Insert Position 51.2% Easy" [ref=e1483] [cursor=pointer]:
+                  - /url: /problems/search-insert-position?page=1&tags=sliding-window
+                  - generic [ref=e1484]:
+                    - generic [ref=e1488]:
+                      - generic [ref=e1491]: 35. Search Insert Position
+                      - generic [ref=e1492]: 51.2%
+                      - paragraph [ref=e1493]: Easy
+                    - img [ref=e1505]
+                    - img [ref=e1510]
+                - link "36. Valid Sudoku 64.5% Med." [ref=e1512] [cursor=pointer]:
+                  - /url: /problems/valid-sudoku?page=1&tags=sliding-window
+                  - generic [ref=e1513]:
+                    - generic [ref=e1517]:
+                      - generic [ref=e1520]: 36. Valid Sudoku
+                      - generic [ref=e1521]: 64.5%
+                      - paragraph [ref=e1522]: Med.
+                    - img [ref=e1534]
+                    - img [ref=e1539]
+                - link "37. Sudoku Solver 65.5% Hard" [ref=e1541] [cursor=pointer]:
+                  - /url: /problems/sudoku-solver?page=1&tags=sliding-window
+                  - generic [ref=e1542]:
+                    - generic [ref=e1546]:
+                      - generic [ref=e1549]: 37. Sudoku Solver
+                      - generic [ref=e1550]: 65.5%
+                      - paragraph [ref=e1551]: Hard
+                    - img [ref=e1563]
+                    - img [ref=e1568]
+                - link "38. Count and Say 62.8% Med." [ref=e1570] [cursor=pointer]:
+                  - /url: /problems/count-and-say?page=1&tags=sliding-window
+                  - generic [ref=e1571]:
+                    - generic [ref=e1575]:
+                      - generic [ref=e1578]: 38. Count and Say
+                      - generic [ref=e1579]: 62.8%
+                      - paragraph [ref=e1580]: Med.
+                    - img [ref=e1592]
+                    - img [ref=e1597]
+                - link "39. Combination Sum 76.5% Med." [ref=e1599] [cursor=pointer]:
+                  - /url: /problems/combination-sum?page=1&tags=sliding-window
+                  - generic [ref=e1600]:
+                    - generic [ref=e1604]:
+                      - generic [ref=e1607]: 39. Combination Sum
+                      - generic [ref=e1608]: 76.5%
+                      - paragraph [ref=e1609]: Med.
+                    - img [ref=e1621]
+                    - img [ref=e1626]
+                - link "40. Combination Sum II 59.4% Med." [ref=e1628] [cursor=pointer]:
+                  - /url: /problems/combination-sum-ii?page=1&tags=sliding-window
+                  - generic [ref=e1629]:
+                    - generic [ref=e1633]:
+                      - generic [ref=e1636]: 40. Combination Sum II
+                      - generic [ref=e1637]: 59.4%
+                      - paragraph [ref=e1638]: Med.
+                    - img [ref=e1650]
+                    - img [ref=e1655]
+                - link "41. First Missing Positive 42.9% Hard" [ref=e1657] [cursor=pointer]:
+                  - /url: /problems/first-missing-positive?page=1&tags=sliding-window
+                  - generic [ref=e1658]:
+                    - generic [ref=e1662]:
+                      - generic [ref=e1665]: 41. First Missing Positive
+                      - generic [ref=e1666]: 42.9%
+                      - paragraph [ref=e1667]: Hard
+                    - img [ref=e1679]
+                    - img [ref=e1684]
+                - link "42. Trapping Rain Water 67.3% Hard" [ref=e1686] [cursor=pointer]:
+                  - /url: /problems/trapping-rain-water?page=1&tags=sliding-window
+                  - generic [ref=e1687]:
+                    - generic [ref=e1691]:
+                      - generic [ref=e1694]: 42. Trapping Rain Water
+                      - generic [ref=e1695]: 67.3%
+                      - paragraph [ref=e1696]: Hard
+                    - img [ref=e1708]
+                    - img [ref=e1713]
+                - link "43. Multiply Strings 44.1% Med." [ref=e1715] [cursor=pointer]:
+                  - /url: /problems/multiply-strings?page=1&tags=sliding-window
+                  - generic [ref=e1716]:
+                    - generic [ref=e1720]:
+                      - generic [ref=e1723]: 43. Multiply Strings
+                      - generic [ref=e1724]: 44.1%
+                      - paragraph [ref=e1725]: Med.
+                    - img [ref=e1737]
+                    - img [ref=e1742]
+                - link "44. Wildcard Matching 31.9% Hard" [ref=e1744] [cursor=pointer]:
+                  - /url: /problems/wildcard-matching?page=1&tags=sliding-window
+                  - generic [ref=e1745]:
+                    - generic [ref=e1749]:
+                      - generic [ref=e1752]: 44. Wildcard Matching
+                      - generic [ref=e1753]: 31.9%
+                      - paragraph [ref=e1754]: Hard
+                    - img [ref=e1766]
+                    - img [ref=e1771]
+                - link "45. Jump Game II 42.8% Med." [ref=e1773] [cursor=pointer]:
+                  - /url: /problems/jump-game-ii?page=1&tags=sliding-window
+                  - generic [ref=e1774]:
+                    - generic [ref=e1778]:
+                      - generic [ref=e1781]: 45. Jump Game II
+                      - generic [ref=e1782]: 42.8%
+                      - paragraph [ref=e1783]: Med.
+                    - img [ref=e1795]
+                    - img [ref=e1800]
+                - link "46. Permutations 81.9% Med." [ref=e1802] [cursor=pointer]:
+                  - /url: /problems/permutations?page=1&tags=sliding-window
+                  - generic [ref=e1803]:
+                    - generic [ref=e1807]:
+                      - generic [ref=e1810]: 46. Permutations
+                      - generic [ref=e1811]: 81.9%
+                      - paragraph [ref=e1812]: Med.
+                    - img [ref=e1824]
+                    - img [ref=e1829]
+                - link "47. Permutations II 63.4% Med." [ref=e1831] [cursor=pointer]:
+                  - /url: /problems/permutations-ii?page=1&tags=sliding-window
+                  - generic [ref=e1832]:
+                    - generic [ref=e1836]:
+                      - generic [ref=e1839]: 47. Permutations II
+                      - generic [ref=e1840]: 63.4%
+                      - paragraph [ref=e1841]: Med.
+                    - img [ref=e1853]
+                    - img [ref=e1858]
+                - link "48. Rotate Image 80.1% Med." [ref=e1860] [cursor=pointer]:
+                  - /url: /problems/rotate-image?page=1&tags=sliding-window
+                  - generic [ref=e1861]:
+                    - generic [ref=e1865]:
+                      - generic [ref=e1868]: 48. Rotate Image
+                      - generic [ref=e1869]: 80.1%
+                      - paragraph [ref=e1870]: Med.
+                    - img [ref=e1882]
+                    - img [ref=e1887]
+                - link "49. Group Anagrams 72.6% Med." [ref=e1889] [cursor=pointer]:
+                  - /url: /problems/group-anagrams?page=1&tags=sliding-window
+                  - generic [ref=e1890]:
+                    - generic [ref=e1894]:
+                      - generic [ref=e1897]: 49. Group Anagrams
+                      - generic [ref=e1898]: 72.6%
+                      - paragraph [ref=e1899]: Med.
+                    - img [ref=e1911]
+                    - img [ref=e1916]
+                - link "50. Pow(x, n) 38.6% Med." [ref=e1918] [cursor=pointer]:
+                  - /url: /problems/powx-n?page=1&tags=sliding-window
+                  - generic [ref=e1919]:
+                    - generic [ref=e1923]:
+                      - generic [ref=e1926]: 50. Pow(x, n)
+                      - generic [ref=e1927]: 38.6%
+                      - paragraph [ref=e1928]: Med.
+                    - img [ref=e1940]
+                    - img [ref=e1945]
+                - link "51. N-Queens 75.5% Hard" [ref=e1947] [cursor=pointer]:
+                  - /url: /problems/n-queens?page=1&tags=sliding-window
+                  - generic [ref=e1948]:
+                    - generic [ref=e1952]:
+                      - generic [ref=e1955]: 51. N-Queens
+                      - generic [ref=e1956]: 75.5%
+                      - paragraph [ref=e1957]: Hard
+                    - img [ref=e1969]
+                    - img [ref=e1974]
+                - link "52. N-Queens II 78.6% Hard" [ref=e1976] [cursor=pointer]:
+                  - /url: /problems/n-queens-ii?page=1&tags=sliding-window
+                  - generic [ref=e1977]:
+                    - generic [ref=e1981]:
+                      - generic [ref=e1984]: 52. N-Queens II
+                      - generic [ref=e1985]: 78.6%
+                      - paragraph [ref=e1986]: Hard
+                    - img [ref=e1998]
+                    - img [ref=e2003]
+                - link "53. Maximum Subarray 53.3% Med." [ref=e2005] [cursor=pointer]:
+                  - /url: /problems/maximum-subarray?page=1&tags=sliding-window
+                  - generic [ref=e2006]:
+                    - generic [ref=e2010]:
+                      - generic [ref=e2013]: 53. Maximum Subarray
+                      - generic [ref=e2014]: 53.3%
+                      - paragraph [ref=e2015]: Med.
+                    - img [ref=e2027]
+                    - img [ref=e2032]
+                - link "54. Spiral Matrix 56.7% Med." [ref=e2034] [cursor=pointer]:
+                  - /url: /problems/spiral-matrix?page=1&tags=sliding-window
+                  - generic [ref=e2035]:
+                    - generic [ref=e2039]:
+                      - generic [ref=e2042]: 54. Spiral Matrix
+                      - generic [ref=e2043]: 56.7%
+                      - paragraph [ref=e2044]: Med.
+                    - img [ref=e2056]
+                    - img [ref=e2061]
+                - link "55. Jump Game 40.9% Med." [ref=e2063] [cursor=pointer]:
+                  - /url: /problems/jump-game?page=1&tags=sliding-window
+                  - generic [ref=e2064]:
+                    - generic [ref=e2068]:
+                      - generic [ref=e2071]: 55. Jump Game
+                      - generic [ref=e2072]: 40.9%
+                      - paragraph [ref=e2073]: Med.
+                    - img [ref=e2085]
+                    - img [ref=e2090]
+                - link "56. Merge Intervals 51.8% Med." [ref=e2092] [cursor=pointer]:
+                  - /url: /problems/merge-intervals?page=1&tags=sliding-window
+                  - generic [ref=e2093]:
+                    - generic [ref=e2097]:
+                      - generic [ref=e2100]: 56. Merge Intervals
+                      - generic [ref=e2101]: 51.8%
+                      - paragraph [ref=e2102]: Med.
+                    - img [ref=e2114]
+                    - img [ref=e2119]
+                - link "57. Insert Interval 45.2% Med." [ref=e2121] [cursor=pointer]:
+                  - /url: /problems/insert-interval?page=1&tags=sliding-window
+                  - generic [ref=e2122]:
+                    - generic [ref=e2126]:
+                      - generic [ref=e2129]: 57. Insert Interval
+                      - generic [ref=e2130]: 45.2%
+                      - paragraph [ref=e2131]: Med.
+                    - img [ref=e2143]
+                    - img [ref=e2148]
+                - link "58. Length of Last Word 58.8% Easy" [ref=e2150] [cursor=pointer]:
+                  - /url: /problems/length-of-last-word?page=1&tags=sliding-window
+                  - generic [ref=e2151]:
+                    - generic [ref=e2155]:
+                      - generic [ref=e2158]: 58. Length of Last Word
+                      - generic [ref=e2159]: 58.8%
+                      - paragraph [ref=e2160]: Easy
+                    - img [ref=e2172]
+                    - img [ref=e2177]
+                - link "59. Spiral Matrix II 75.0% Med." [ref=e2179] [cursor=pointer]:
+                  - /url: /problems/spiral-matrix-ii?page=1&tags=sliding-window
+                  - generic [ref=e2180]:
+                    - generic [ref=e2184]:
+                      - generic [ref=e2187]: 59. Spiral Matrix II
+                      - generic [ref=e2188]: 75.0%
+                      - paragraph [ref=e2189]: Med.
+                    - img [ref=e2201]
+                    - img [ref=e2206]
+                - link "60. Permutation Sequence 53.0% Hard" [ref=e2208] [cursor=pointer]:
+                  - /url: /problems/permutation-sequence?page=1&tags=sliding-window
+                  - generic [ref=e2209]:
+                    - generic [ref=e2213]:
+                      - generic [ref=e2216]: 60. Permutation Sequence
+                      - generic [ref=e2217]: 53.0%
+                      - paragraph [ref=e2218]: Hard
+                    - img [ref=e2230]
+                    - img [ref=e2235]
+                - link "61. Rotate List 42.5% Med." [ref=e2237] [cursor=pointer]:
+                  - /url: /problems/rotate-list?page=1&tags=sliding-window
+                  - generic [ref=e2238]:
+                    - generic [ref=e2242]:
+                      - generic [ref=e2245]: 61. Rotate List
+                      - generic [ref=e2246]: 42.5%
+                      - paragraph [ref=e2247]: Med.
+                    - img [ref=e2259]
+                    - img [ref=e2264]
+                - link "62. Unique Paths 66.8% Med." [ref=e2266] [cursor=pointer]:
+                  - /url: /problems/unique-paths?page=1&tags=sliding-window
+                  - generic [ref=e2267]:
+                    - generic [ref=e2271]:
+                      - generic [ref=e2274]: 62. Unique Paths
+                      - generic [ref=e2275]: 66.8%
+                      - paragraph [ref=e2276]: Med.
+                    - img [ref=e2288]
+                    - img [ref=e2293]
+                - link "63. Unique Paths II 44.5% Med." [ref=e2295] [cursor=pointer]:
+                  - /url: /problems/unique-paths-ii?page=1&tags=sliding-window
+                  - generic [ref=e2296]:
+                    - generic [ref=e2300]:
+                      - generic [ref=e2303]: 63. Unique Paths II
+                      - generic [ref=e2304]: 44.5%
+                      - paragraph [ref=e2305]: Med.
+                    - img [ref=e2317]
+                    - img [ref=e2322]
+                - link "64. Minimum Path Sum 68.2% Med." [ref=e2324] [cursor=pointer]:
+                  - /url: /problems/minimum-path-sum?page=1&tags=sliding-window
+                  - generic [ref=e2325]:
+                    - generic [ref=e2329]:
+                      - generic [ref=e2332]: 64. Minimum Path Sum
+                      - generic [ref=e2333]: 68.2%
+                      - paragraph [ref=e2334]: Med.
+                    - img [ref=e2346]
+                    - img [ref=e2351]
+                - link "65. Valid Number 23.0% Hard" [ref=e2353] [cursor=pointer]:
+                  - /url: /problems/valid-number?page=1&tags=sliding-window
+                  - generic [ref=e2354]:
+                    - generic [ref=e2358]:
+                      - generic [ref=e2361]: 65. Valid Number
+                      - generic [ref=e2362]: 23.0%
+                      - paragraph [ref=e2363]: Hard
+                    - img [ref=e2375]
+                    - img [ref=e2380]
+                - link "66. Plus One 49.9% Easy" [ref=e2382] [cursor=pointer]:
+                  - /url: /problems/plus-one?page=1&tags=sliding-window
+                  - generic [ref=e2383]:
+                    - generic [ref=e2387]:
+                      - generic [ref=e2390]: 66. Plus One
+                      - generic [ref=e2391]: 49.9%
+                      - paragraph [ref=e2392]: Easy
+                    - img [ref=e2404]
+                    - img [ref=e2409]
+                - link "67. Add Binary 58.0% Easy" [ref=e2411] [cursor=pointer]:
+                  - /url: /problems/add-binary?page=1&tags=sliding-window
+                  - generic [ref=e2412]:
+                    - generic [ref=e2416]:
+                      - generic [ref=e2419]: 67. Add Binary
+                      - generic [ref=e2420]: 58.0%
+                      - paragraph [ref=e2421]: Easy
+                    - img [ref=e2433]
+                    - img [ref=e2438]
+                - link "68. Text Justification 51.1% Hard" [ref=e2440] [cursor=pointer]:
+                  - /url: /problems/text-justification?page=1&tags=sliding-window
+                  - generic [ref=e2441]:
+                    - generic [ref=e2445]:
+                      - generic [ref=e2448]: 68. Text Justification
+                      - generic [ref=e2449]: 51.1%
+                      - paragraph [ref=e2450]: Hard
+                    - img [ref=e2462]
+                    - img [ref=e2467]
+                - link "69. Sqrt(x) 41.8% Easy" [ref=e2469] [cursor=pointer]:
+                  - /url: /problems/sqrtx?page=1&tags=sliding-window
+                  - generic [ref=e2470]:
+                    - generic [ref=e2474]:
+                      - generic [ref=e2477]: 69. Sqrt(x)
+                      - generic [ref=e2478]: 41.8%
+                      - paragraph [ref=e2479]: Easy
+                    - img [ref=e2491]
+                    - img [ref=e2496]
+                - link "70. Climbing Stairs 54.1% Easy" [ref=e2498] [cursor=pointer]:
+                  - /url: /problems/climbing-stairs?page=1&tags=sliding-window
+                  - generic [ref=e2499]:
+                    - generic [ref=e2503]:
+                      - generic [ref=e2506]: 70. Climbing Stairs
+                      - generic [ref=e2507]: 54.1%
+                      - paragraph [ref=e2508]: Easy
+                    - img [ref=e2520]
+                    - img [ref=e2525]
+                - link "71. Simplify Path 50.6% Med." [ref=e2527] [cursor=pointer]:
+                  - /url: /problems/simplify-path?page=1&tags=sliding-window
+                  - generic [ref=e2528]:
+                    - generic [ref=e2532]:
+                      - generic [ref=e2535]: 71. Simplify Path
+                      - generic [ref=e2536]: 50.6%
+                      - paragraph [ref=e2537]: Med.
+                    - img [ref=e2549]
+                    - img [ref=e2554]
+                - link "72. Edit Distance 60.5% Med." [ref=e2556] [cursor=pointer]:
+                  - /url: /problems/edit-distance?page=1&tags=sliding-window
+                  - generic [ref=e2557]:
+                    - generic [ref=e2561]:
+                      - generic [ref=e2564]: 72. Edit Distance
+                      - generic [ref=e2565]: 60.5%
+                      - paragraph [ref=e2566]: Med.
+                    - img [ref=e2578]
+                    - img [ref=e2583]
+                - link "73. Set Matrix Zeroes 62.9% Med." [ref=e2585] [cursor=pointer]:
+                  - /url: /problems/set-matrix-zeroes?page=1&tags=sliding-window
+                  - generic [ref=e2586]:
+                    - generic [ref=e2590]:
+                      - generic [ref=e2593]: 73. Set Matrix Zeroes
+                      - generic [ref=e2594]: 62.9%
+                      - paragraph [ref=e2595]: Med.
+                    - img [ref=e2607]
+                    - img [ref=e2612]
+                - link "74. Search a 2D Matrix 53.9% Med." [ref=e2614] [cursor=pointer]:
+                  - /url: /problems/search-a-2d-matrix?page=1&tags=sliding-window
+                  - generic [ref=e2615]:
+                    - generic [ref=e2619]:
+                      - generic [ref=e2622]: 74. Search a 2D Matrix
+                      - generic [ref=e2623]: 53.9%
+                      - paragraph [ref=e2624]: Med.
+                    - img [ref=e2636]
+                    - img [ref=e2641]
+                - link "75. Sort Colors 69.6% Med." [ref=e2643] [cursor=pointer]:
+                  - /url: /problems/sort-colors?page=1&tags=sliding-window
+                  - generic [ref=e2644]:
+                    - generic [ref=e2648]:
+                      - generic [ref=e2651]: 75. Sort Colors
+                      - generic [ref=e2652]: 69.6%
+                      - paragraph [ref=e2653]: Med.
+                    - img [ref=e2665]
+                    - img [ref=e2670]
+                - link "76. Minimum Window Substring 47.5% Hard" [ref=e2672] [cursor=pointer]:
+                  - /url: /problems/minimum-window-substring?page=1&tags=sliding-window
+                  - generic [ref=e2673]:
+                    - generic [ref=e2677]:
+                      - generic [ref=e2680]: 76. Minimum Window Substring
+                      - generic [ref=e2681]: 47.5%
+                      - paragraph [ref=e2682]: Hard
+                    - img [ref=e2694]
+                    - img [ref=e2699]
+                - link "77. Combinations 74.6% Med." [ref=e2701] [cursor=pointer]:
+                  - /url: /problems/combinations?page=1&tags=sliding-window
+                  - generic [ref=e2702]:
+                    - generic [ref=e2706]:
+                      - generic [ref=e2709]: 77. Combinations
+                      - generic [ref=e2710]: 74.6%
+                      - paragraph [ref=e2711]: Med.
+                    - img [ref=e2723]
+                    - img [ref=e2728]
+                - link "78. Subsets 82.3% Med." [ref=e2730] [cursor=pointer]:
+                  - /url: /problems/subsets?page=1&tags=sliding-window
+                  - generic [ref=e2731]:
+                    - generic [ref=e2735]:
+                      - generic [ref=e2738]: 78. Subsets
+                      - generic [ref=e2739]: 82.3%
+                      - paragraph [ref=e2740]: Med.
+                    - img [ref=e2752]
+                    - img [ref=e2757]
+                - link "79. Word Search 47.3% Med." [ref=e2759] [cursor=pointer]:
+                  - /url: /problems/word-search?page=1&tags=sliding-window
+                  - generic [ref=e2760]:
+                    - generic [ref=e2764]:
+                      - generic [ref=e2767]: 79. Word Search
+                      - generic [ref=e2768]: 47.3%
+                      - paragraph [ref=e2769]: Med.
+                    - img [ref=e2781]
+                    - img [ref=e2786]
+                - link "80. Remove Duplicates from Sorted Array II 64.7% Med." [ref=e2788] [cursor=pointer]:
+                  - /url: /problems/remove-duplicates-from-sorted-array-ii?page=1&tags=sliding-window
+                  - generic [ref=e2789]:
+                    - generic [ref=e2793]:
+                      - generic [ref=e2796]: 80. Remove Duplicates from Sorted Array II
+                      - generic [ref=e2797]: 64.7%
+                      - paragraph [ref=e2798]: Med.
+                    - img [ref=e2810]
+                    - img [ref=e2815]
+                - link "81. Search in Rotated Sorted Array II 40.0% Med." [ref=e2817] [cursor=pointer]:
+                  - /url: /problems/search-in-rotated-sorted-array-ii?page=1&tags=sliding-window
+                  - generic [ref=e2818]:
+                    - generic [ref=e2822]:
+                      - generic [ref=e2825]: 81. Search in Rotated Sorted Array II
+                      - generic [ref=e2826]: 40.0%
+                      - paragraph [ref=e2827]: Med.
+                    - img [ref=e2839]
+                    - img [ref=e2844]
+                - link "82. Remove Duplicates from Sorted List II 51.8% Med." [ref=e2846] [cursor=pointer]:
+                  - /url: /problems/remove-duplicates-from-sorted-list-ii?page=1&tags=sliding-window
+                  - generic [ref=e2847]:
+                    - generic [ref=e2851]:
+                      - generic [ref=e2854]: 82. Remove Duplicates from Sorted List II
+                      - generic [ref=e2855]: 51.8%
+                      - paragraph [ref=e2856]: Med.
+                    - img [ref=e2868]
+                    - img [ref=e2873]
+                - link "83. Remove Duplicates from Sorted List 56.7% Easy" [ref=e2875] [cursor=pointer]:
+                  - /url: /problems/remove-duplicates-from-sorted-list?page=1&tags=sliding-window
+                  - generic [ref=e2876]:
+                    - generic [ref=e2880]:
+                      - generic [ref=e2883]: 83. Remove Duplicates from Sorted List
+                      - generic [ref=e2884]: 56.7%
+                      - paragraph [ref=e2885]: Easy
+                    - img [ref=e2897]
+                    - img [ref=e2902]
+                - link "84. Largest Rectangle in Histogram 49.8% Hard" [ref=e2904] [cursor=pointer]:
+                  - /url: /problems/largest-rectangle-in-histogram?page=1&tags=sliding-window
+                  - generic [ref=e2905]:
+                    - generic [ref=e2909]:
+                      - generic [ref=e2912]: 84. Largest Rectangle in Histogram
+                      - generic [ref=e2913]: 49.8%
+                      - paragraph [ref=e2914]: Hard
+                    - img [ref=e2926]
+                    - img [ref=e2931]
+                - link "85. Maximal Rectangle 58.7% Hard" [ref=e2933] [cursor=pointer]:
+                  - /url: /problems/maximal-rectangle?page=1&tags=sliding-window
+                  - generic [ref=e2934]:
+                    - generic [ref=e2938]:
+                      - generic [ref=e2941]: 85. Maximal Rectangle
+                      - generic [ref=e2942]: 58.7%
+                      - paragraph [ref=e2943]: Hard
+                    - img [ref=e2955]
+                    - img [ref=e2960]
+                - link "86. Partition List 61.1% Med." [ref=e2962] [cursor=pointer]:
+                  - /url: /problems/partition-list?page=1&tags=sliding-window
+                  - generic [ref=e2963]:
+                    - generic [ref=e2967]:
+                      - generic [ref=e2970]: 86. Partition List
+                      - generic [ref=e2971]: 61.1%
+                      - paragraph [ref=e2972]: Med.
+                    - img [ref=e2984]
+                    - img [ref=e2989]
+                - link "87. Scramble String 44.5% Hard" [ref=e2991] [cursor=pointer]:
+                  - /url: /problems/scramble-string?page=1&tags=sliding-window
+                  - generic [ref=e2992]:
+                    - generic [ref=e2996]:
+                      - generic [ref=e2999]: 87. Scramble String
+                      - generic [ref=e3000]: 44.5%
+                      - paragraph [ref=e3001]: Hard
+                    - img [ref=e3013]
+                    - img [ref=e3018]
+                - link "88. Merge Sorted Array 54.8% Easy" [ref=e3020] [cursor=pointer]:
+                  - /url: /problems/merge-sorted-array?page=1&tags=sliding-window
+                  - generic [ref=e3021]:
+                    - generic [ref=e3025]:
+                      - generic [ref=e3028]: 88. Merge Sorted Array
+                      - generic [ref=e3029]: 54.8%
+                      - paragraph [ref=e3030]: Easy
+                    - img [ref=e3042]
+                    - img [ref=e3047]
+                - link "89. Gray Code 64.9% Med." [ref=e3049] [cursor=pointer]:
+                  - /url: /problems/gray-code?page=1&tags=sliding-window
+                  - generic [ref=e3050]:
+                    - generic [ref=e3054]:
+                      - generic [ref=e3057]: 89. Gray Code
+                      - generic [ref=e3058]: 64.9%
+                      - paragraph [ref=e3059]: Med.
+                    - img [ref=e3071]
+                    - img [ref=e3076]
+                - link "90. Subsets II 61.3% Med." [ref=e3078] [cursor=pointer]:
+                  - /url: /problems/subsets-ii?page=1&tags=sliding-window
+                  - generic [ref=e3079]:
+                    - generic [ref=e3083]:
+                      - generic [ref=e3086]: 90. Subsets II
+                      - generic [ref=e3087]: 61.3%
+                      - paragraph [ref=e3088]: Med.
+                    - img [ref=e3100]
+                    - img [ref=e3105]
+                - link "91. Decode Ways 38.0% Med." [ref=e3107] [cursor=pointer]:
+                  - /url: /problems/decode-ways?page=1&tags=sliding-window
+                  - generic [ref=e3108]:
+                    - generic [ref=e3112]:
+                      - generic [ref=e3115]: 91. Decode Ways
+                      - generic [ref=e3116]: 38.0%
+                      - paragraph [ref=e3117]: Med.
+                    - img [ref=e3129]
+                    - img [ref=e3134]
+                - link "92. Reverse Linked List II 51.5% Med." [ref=e3136] [cursor=pointer]:
+                  - /url: /problems/reverse-linked-list-ii?page=1&tags=sliding-window
+                  - generic [ref=e3137]:
+                    - generic [ref=e3141]:
+                      - generic [ref=e3144]: 92. Reverse Linked List II
+                      - generic [ref=e3145]: 51.5%
+                      - paragraph [ref=e3146]: Med.
+                    - img [ref=e3158]
+                    - img [ref=e3163]
+                - link "93. Restore IP Addresses 56.0% Med." [ref=e3165] [cursor=pointer]:
+                  - /url: /problems/restore-ip-addresses?page=1&tags=sliding-window
+                  - generic [ref=e3166]:
+                    - generic [ref=e3170]:
+                      - generic [ref=e3173]: 93. Restore IP Addresses
+                      - generic [ref=e3174]: 56.0%
+                      - paragraph [ref=e3175]: Med.
+                    - img [ref=e3187]
+                    - img [ref=e3192]
+                - link "94. Binary Tree Inorder Traversal 80.0% Easy" [ref=e3194] [cursor=pointer]:
+                  - /url: /problems/binary-tree-inorder-traversal?page=1&tags=sliding-window
+                  - generic [ref=e3195]:
+                    - generic [ref=e3199]:
+                      - generic [ref=e3202]: 94. Binary Tree Inorder Traversal
+                      - generic [ref=e3203]: 80.0%
+                      - paragraph [ref=e3204]: Easy
+                    - img [ref=e3216]
+                    - img [ref=e3221]
+                - link "95. Unique Binary Search Trees II 62.4% Med." [ref=e3223] [cursor=pointer]:
+                  - /url: /problems/unique-binary-search-trees-ii?page=1&tags=sliding-window
+                  - generic [ref=e3224]:
+                    - generic [ref=e3228]:
+                      - generic [ref=e3231]: 95. Unique Binary Search Trees II
+                      - generic [ref=e3232]: 62.4%
+                      - paragraph [ref=e3233]: Med.
+                    - img [ref=e3245]
+                    - img [ref=e3250]
+                - link "96. Unique Binary Search Trees 63.7% Med." [ref=e3252] [cursor=pointer]:
+                  - /url: /problems/unique-binary-search-trees?page=1&tags=sliding-window
+                  - generic [ref=e3253]:
+                    - generic [ref=e3257]:
+                      - generic [ref=e3260]: 96. Unique Binary Search Trees
+                      - generic [ref=e3261]: 63.7%
+                      - paragraph [ref=e3262]: Med.
+                    - img [ref=e3274]
+                    - img [ref=e3279]
+                - link "97. Interleaving String 44.0% Med." [ref=e3281] [cursor=pointer]:
+                  - /url: /problems/interleaving-string?page=1&tags=sliding-window
+                  - generic [ref=e3282]:
+                    - generic [ref=e3286]:
+                      - generic [ref=e3289]: 97. Interleaving String
+                      - generic [ref=e3290]: 44.0%
+                      - paragraph [ref=e3291]: Med.
+                    - img [ref=e3303]
+                    - img [ref=e3308]
+                - link "98. Validate Binary Search Tree 35.7% Med." [ref=e3310] [cursor=pointer]:
+                  - /url: /problems/validate-binary-search-tree?page=1&tags=sliding-window
+                  - generic [ref=e3311]:
+                    - generic [ref=e3315]:
+                      - generic [ref=e3318]: 98. Validate Binary Search Tree
+                      - generic [ref=e3319]: 35.7%
+                      - paragraph [ref=e3320]: Med.
+                    - img [ref=e3332]
+                    - img [ref=e3337]
+                - link "99. Recover Binary Search Tree 59.6% Med." [ref=e3339] [cursor=pointer]:
+                  - /url: /problems/recover-binary-search-tree?page=1&tags=sliding-window
+                  - generic [ref=e3340]:
+                    - generic [ref=e3344]:
+                      - generic [ref=e3347]: 99. Recover Binary Search Tree
+                      - generic [ref=e3348]: 59.6%
+                      - paragraph [ref=e3349]: Med.
+                    - img [ref=e3361]
+                    - img [ref=e3366]
+                - link "100. Same Tree 67.1% Easy" [ref=e3368] [cursor=pointer]:
+                  - /url: /problems/same-tree?page=1&tags=sliding-window
+                  - generic [ref=e3369]:
+                    - generic [ref=e3373]:
+                      - generic [ref=e3376]: 100. Same Tree
+                      - generic [ref=e3377]: 67.1%
+                      - paragraph [ref=e3378]: Easy
+                    - img [ref=e3390]
+                    - img [ref=e3395]
+                - img "loading..." [ref=e3399]
+          - button [ref=e3408] [cursor=pointer]:
+            - img [ref=e3410]
+          - button [ref=e3400] [cursor=pointer]:
+            - img [ref=e3402]
+          - button [ref=e3404] [cursor=pointer]:
+            - img [ref=e3406]
+    - region "Notifications (F8)":
+      - list
+  - alert [ref=e3]

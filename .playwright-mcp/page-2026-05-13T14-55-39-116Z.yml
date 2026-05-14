@@ -1,0 +1,1883 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link "Kattis logo" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "Kattis logo" [ref=e8]
+        - heading "Kattis" [level=4] [ref=e9]
+        - text: 
+      - generic [ref=e10]:
+        - navigation [ref=e11]:
+          - list [ref=e12]:
+            - listitem [ref=e13]:
+              - link " Problems" [ref=e14] [cursor=pointer]:
+                - /url: /problems
+                - generic [ref=e15]: 
+                - generic [ref=e16]: Problems
+            - listitem [ref=e17]:
+              - link " Contests" [ref=e18] [cursor=pointer]:
+                - /url: /contests
+                - generic [ref=e19]: 
+                - generic [ref=e20]: Contests
+            - listitem [ref=e21]:
+              - link " Challenge BETA" [ref=e22] [cursor=pointer]:
+                - /url: /challenge
+                - generic [ref=e23]: 
+                - generic [ref=e24]: Challenge BETA
+            - listitem [ref=e25]:
+              - link " Ranklists" [ref=e26] [cursor=pointer]:
+                - /url: /ranklist
+                - generic [ref=e27]: 
+                - generic [ref=e28]: Ranklists
+            - listitem [ref=e29]:
+              - link " Jobs" [ref=e30] [cursor=pointer]:
+                - /url: /jobs
+                - generic [ref=e31]: 
+                - generic [ref=e32]: Jobs
+            - listitem [ref=e33]:
+              - link " Languages" [ref=e34] [cursor=pointer]:
+                - /url: /languages
+                - generic [ref=e35]: 
+                - generic [ref=e36]: Languages
+            - listitem [ref=e37]:
+              - link " Info" [ref=e38] [cursor=pointer]:
+                - /url: /info
+                - generic [ref=e39]: 
+                - generic [ref=e40]: Info
+            - listitem [ref=e41]:
+              - link "? Help" [ref=e42] [cursor=pointer]:
+                - /url: https://support.kattis.com
+                - generic [ref=e43]: "?"
+                - generic [ref=e44]: Help
+        - generic [ref=e46]:
+          - img "Kattis Cat" [ref=e47]
+          - searchbox "Search" [ref=e48]
+          - generic [ref=e49] [cursor=pointer]: 
+  - generic [ref=e50]:
+    - main [ref=e51]:
+      - generic [ref=e54]:
+        - generic [ref=e57]: Problems
+        - link "Log in" [ref=e59] [cursor=pointer]:
+          - /url: /login
+      - generic [ref=e60]:
+        - generic [ref=e61]:
+          - heading "Problems" [level=1] [ref=e63]
+          - generic [ref=e65]:
+            - generic [ref=e67]:
+              - combobox [ref=e68]
+              - combobox "Any language" [ref=e71] [cursor=pointer]:
+                - textbox "Any language" [ref=e72]
+            - link "Clear filters" [ref=e74] [cursor=pointer]:
+              - /url: "#"
+            - button "show more" [ref=e75] [cursor=pointer]
+        - generic [ref=e77]:
+          - link " List by problem author" [ref=e78] [cursor=pointer]:
+            - /url: /problem-authors
+            - generic [ref=e80]: 
+            - text: List by problem author
+          - link " List by problem source" [ref=e81] [cursor=pointer]:
+            - /url: /problem-sources
+            - generic [ref=e83]: 
+            - text: List by problem source
+        - article [ref=e84]:
+          - generic [ref=e85]:
+            - text: 
+            - generic [ref=e86]:
+              - table [ref=e89]:
+                - rowgroup [ref=e90]:
+                  - row "Name   Fastest  Shortest  Authors  Full Solves   Ratio  Difficulty  Languages" [ref=e91]:
+                    - columnheader "Name  " [ref=e92]:
+                      - generic [ref=e93]:
+                        - link "Name" [ref=e94] [cursor=pointer]:
+                          - /url: javascript:void(0)
+                        - generic [ref=e95]:
+                          - generic [ref=e96]: 
+                          - generic [ref=e97]: 
+                    - columnheader "Fastest " [ref=e98]:
+                      - generic "Runtime of fastest solution, measured in seconds" [ref=e99]:
+                        - link "Fastest" [ref=e100] [cursor=pointer]:
+                          - /url: javascript:void(0)
+                        - generic [ref=e102]: 
+                    - columnheader "Shortest " [ref=e103]:
+                      - generic "Length of shortest solution, measured in bytes" [ref=e104]:
+                        - link "Shortest" [ref=e105] [cursor=pointer]:
+                          - /url: javascript:void(0)
+                        - generic [ref=e107]: 
+                    - columnheader "Authors " [ref=e108]:
+                      - generic "Number of users that have submitted on the problem" [ref=e109]:
+                        - link "Authors" [ref=e110] [cursor=pointer]:
+                          - /url: javascript:void(0)
+                        - generic [ref=e112]: 
+                    - columnheader "Full Solves  " [ref=e113]:
+                      - generic "Number of users that have solved the problem fully" [ref=e114]:
+                        - link "Full Solves" [ref=e115] [cursor=pointer]:
+                          - /url: javascript:void(0)
+                        - link "" [ref=e116] [cursor=pointer]:
+                          - /url: https://support.kattis.com/support/solutions/articles/79000147257-why-do-problems-such-as-travelling-salesperson-2d-have-0-full-solves-
+                          - generic [ref=e117]: 
+                        - generic [ref=e119]: 
+                    - columnheader "Ratio " [ref=e120]:
+                      - generic "Full solves / Authors" [ref=e121]:
+                        - link "Ratio" [ref=e122] [cursor=pointer]:
+                          - /url: javascript:void(0)
+                        - generic [ref=e124]: 
+                    - columnheader "Difficulty " [ref=e125]:
+                      - generic [ref=e126]:
+                        - link "Difficulty" [ref=e127] [cursor=pointer]:
+                          - /url: javascript:void(0)
+                        - generic [ref=e129]: 
+                    - columnheader "Languages" [ref=e130]
+                    - columnheader [ref=e131]
+                - rowgroup [ref=e132]:
+                  - row "\"lv\"-able 0.00 28 4164 3319 80% 1.7 - 1.9Easy en " [ref=e133]:
+                    - cell "\"lv\"-able" [ref=e134]:
+                      - link "\"lv\"-able" [ref=e135] [cursor=pointer]:
+                        - /url: /problems/lvable
+                    - cell "0.00" [ref=e136]
+                    - cell "28" [ref=e137]
+                    - cell "4164" [ref=e138]
+                    - cell "3319" [ref=e139]
+                    - cell "80%" [ref=e140]
+                    - cell "1.7 - 1.9Easy" [ref=e141]
+                    - cell "en" [ref=e142]:
+                      - link "en" [ref=e144] [cursor=pointer]:
+                        - /url: /problems/lvable/en
+                    - cell "" [ref=e145]:
+                      - link "" [ref=e146] [cursor=pointer]:
+                        - /url: /problems/lvable/statistics
+                        - generic [ref=e147]: 
+                  - row "#exclude<scoring> 0.01 739 961 65 7% 9.1Hard en " [ref=e148]:
+                    - cell "#exclude<scoring>" [ref=e149]:
+                      - link "#exclude<scoring>" [ref=e150] [cursor=pointer]:
+                        - /url: /problems/excludescoring
+                    - cell "0.01" [ref=e151]
+                    - cell "739" [ref=e152]
+                    - cell "961" [ref=e153]
+                    - cell "65" [ref=e154]
+                    - cell "7%" [ref=e155]
+                    - cell "9.1Hard" [ref=e156]
+                    - cell "en" [ref=e157]:
+                      - link "en" [ref=e159] [cursor=pointer]:
+                        - /url: /problems/excludescoring/en
+                    - cell "" [ref=e160]:
+                      - link "" [ref=e161] [cursor=pointer]:
+                        - /url: /problems/excludescoring/statistics
+                        - generic [ref=e162]: 
+                  - row "#include \"main.hpp\" 0.07 1050 157 28 18% 4.2 - 8.9Hard en sv " [ref=e163]:
+                    - cell "#include \"main.hpp\"" [ref=e164]:
+                      - link "#include \"main.hpp\"" [ref=e165] [cursor=pointer]:
+                        - /url: /problems/includefile
+                    - cell "0.07" [ref=e166]
+                    - cell "1050" [ref=e167]
+                    - cell "157" [ref=e168]
+                    - cell "28" [ref=e169]
+                    - cell "18%" [ref=e170]
+                    - cell "4.2 - 8.9Hard" [ref=e171]
+                    - cell "en sv" [ref=e172]:
+                      - generic [ref=e173]:
+                        - link "en" [ref=e174] [cursor=pointer]:
+                          - /url: /problems/includefile/en
+                        - link "sv" [ref=e175] [cursor=pointer]:
+                          - /url: /problems/includefile/sv
+                    - cell "" [ref=e176]:
+                      - link "" [ref=e177] [cursor=pointer]:
+                        - /url: /problems/includefile/statistics
+                        - generic [ref=e178]: 
+                  - row "#include<scoring> 0.00 206 1270 881 69% 4.1Medium en " [ref=e179]:
+                    - cell "#include<scoring>" [ref=e180]:
+                      - link "#include<scoring>" [ref=e181] [cursor=pointer]:
+                        - /url: /problems/includescoring
+                    - cell "0.00" [ref=e182]
+                    - cell "206" [ref=e183]
+                    - cell "1270" [ref=e184]
+                    - cell "881" [ref=e185]
+                    - cell "69%" [ref=e186]
+                    - cell "4.1Medium" [ref=e187]
+                    - cell "en" [ref=e188]:
+                      - link "en" [ref=e190] [cursor=pointer]:
+                        - /url: /problems/includescoring/en
+                    - cell "" [ref=e191]:
+                      - link "" [ref=e192] [cursor=pointer]:
+                        - /url: /problems/includescoring/statistics
+                        - generic [ref=e193]: 
+                  - row "'S No Problem 0.02 664 400 147 37% 8.2Hard en " [ref=e194]:
+                    - cell "'S No Problem" [ref=e195]:
+                      - link "'S No Problem" [ref=e196] [cursor=pointer]:
+                        - /url: /problems/snoproblem
+                    - cell "0.02" [ref=e197]
+                    - cell "664" [ref=e198]
+                    - cell "400" [ref=e199]
+                    - cell "147" [ref=e200]
+                    - cell "37%" [ref=e201]
+                    - cell "8.2Hard" [ref=e202]
+                    - cell "en" [ref=e203]:
+                      - link "en" [ref=e205] [cursor=pointer]:
+                        - /url: /problems/snoproblem/en
+                    - cell "" [ref=e206]:
+                      - link "" [ref=e207] [cursor=pointer]:
+                        - /url: /problems/snoproblem/statistics
+                        - generic [ref=e208]: 
+                  - row "(More) Multiplication 0.00 354 1149 725 63% 6.2Hard en " [ref=e209]:
+                    - cell "(More) Multiplication" [ref=e210]:
+                      - link "(More) Multiplication" [ref=e211] [cursor=pointer]:
+                        - /url: /problems/multiplication
+                    - cell "0.00" [ref=e212]
+                    - cell "354" [ref=e213]
+                    - cell "1149" [ref=e214]
+                    - cell "725" [ref=e215]
+                    - cell "63%" [ref=e216]
+                    - cell "6.2Hard" [ref=e217]
+                    - cell "en" [ref=e218]:
+                      - link "en" [ref=e220] [cursor=pointer]:
+                        - /url: /problems/multiplication/en
+                    - cell "" [ref=e221]:
+                      - link "" [ref=e222] [cursor=pointer]:
+                        - /url: /problems/multiplication/statistics
+                        - generic [ref=e223]: 
+                  - row "(un)Fair Play 0.00 1159 492 305 62% 5.9Hard en " [ref=e224]:
+                    - cell "(un)Fair Play" [ref=e225]:
+                      - link "(un)Fair Play" [ref=e226] [cursor=pointer]:
+                        - /url: /problems/unfairplay
+                    - cell "0.00" [ref=e227]
+                    - cell "1159" [ref=e228]
+                    - cell "492" [ref=e229]
+                    - cell "305" [ref=e230]
+                    - cell "62%" [ref=e231]
+                    - cell "5.9Hard" [ref=e232]
+                    - cell "en" [ref=e233]:
+                      - link "en" [ref=e235] [cursor=pointer]:
+                        - /url: /problems/unfairplay/en
+                    - cell "" [ref=e236]:
+                      - link "" [ref=e237] [cursor=pointer]:
+                        - /url: /problems/unfairplay/statistics
+                        - generic [ref=e238]: 
+                  - row "0-1 Sequences 0.00 81 4704 2553 54% 3.7Medium en " [ref=e239]:
+                    - cell "0-1 Sequences" [ref=e240]:
+                      - link "0-1 Sequences" [ref=e241] [cursor=pointer]:
+                        - /url: /problems/sequences
+                    - cell "0.00" [ref=e242]
+                    - cell "81" [ref=e243]
+                    - cell "4704" [ref=e244]
+                    - cell "2553" [ref=e245]
+                    - cell "54%" [ref=e246]
+                    - cell "3.7Medium" [ref=e247]
+                    - cell "en" [ref=e248]:
+                      - link "en" [ref=e250] [cursor=pointer]:
+                        - /url: /problems/sequences/en
+                    - cell "" [ref=e251]:
+                      - link "" [ref=e252] [cursor=pointer]:
+                        - /url: /problems/sequences/statistics
+                        - generic [ref=e253]: 
+                  - row "1's For All 0.00 173 892 489 55% 6.7Hard en " [ref=e254]:
+                    - cell "1's For All" [ref=e255]:
+                      - link "1's For All" [ref=e256] [cursor=pointer]:
+                        - /url: /problems/1sforall
+                    - cell "0.00" [ref=e257]
+                    - cell "173" [ref=e258]
+                    - cell "892" [ref=e259]
+                    - cell "489" [ref=e260]
+                    - cell "55%" [ref=e261]
+                    - cell "6.7Hard" [ref=e262]
+                    - cell "en" [ref=e263]:
+                      - link "en" [ref=e265] [cursor=pointer]:
+                        - /url: /problems/1sforall/en
+                    - cell "" [ref=e266]:
+                      - link "" [ref=e267] [cursor=pointer]:
+                        - /url: /problems/1sforall/statistics
+                        - generic [ref=e268]: 
+                  - row "1-D Frogger (Easy) 0.00 150 3915 3112 79% 2.3Easy en " [ref=e269]:
+                    - cell "1-D Frogger (Easy)" [ref=e270]:
+                      - link "1-D Frogger (Easy)" [ref=e271] [cursor=pointer]:
+                        - /url: /problems/1dfroggereasy
+                    - cell "0.00" [ref=e272]
+                    - cell "150" [ref=e273]
+                    - cell "3915" [ref=e274]
+                    - cell "3112" [ref=e275]
+                    - cell "79%" [ref=e276]
+                    - cell "2.3Easy" [ref=e277]
+                    - cell "en" [ref=e278]:
+                      - link "en" [ref=e280] [cursor=pointer]:
+                        - /url: /problems/1dfroggereasy/en
+                    - cell "" [ref=e281]:
+                      - link "" [ref=e282] [cursor=pointer]:
+                        - /url: /problems/1dfroggereasy/statistics
+                        - generic [ref=e283]: 
+                  - row "1-D Frogger (Hard) 0.03 472 928 320 34% 7.7Hard en " [ref=e284]:
+                    - cell "1-D Frogger (Hard)" [ref=e285]:
+                      - link "1-D Frogger (Hard)" [ref=e286] [cursor=pointer]:
+                        - /url: /problems/1dfroggerhard
+                    - cell "0.03" [ref=e287]
+                    - cell "472" [ref=e288]
+                    - cell "928" [ref=e289]
+                    - cell "320" [ref=e290]
+                    - cell "34%" [ref=e291]
+                    - cell "7.7Hard" [ref=e292]
+                    - cell "en" [ref=e293]:
+                      - link "en" [ref=e295] [cursor=pointer]:
+                        - /url: /problems/1dfroggerhard/en
+                    - cell "" [ref=e296]:
+                      - link "" [ref=e297] [cursor=pointer]:
+                        - /url: /problems/1dfroggerhard/statistics
+                        - generic [ref=e298]: 
+                  - row "10 Kinds of People 0.01 366 8122 5668 70% 2.8Medium en " [ref=e299]:
+                    - cell "10 Kinds of People" [ref=e300]:
+                      - link "10 Kinds of People" [ref=e301] [cursor=pointer]:
+                        - /url: /problems/10kindsofpeople
+                    - cell "0.01" [ref=e302]
+                    - cell "366" [ref=e303]
+                    - cell "8122" [ref=e304]
+                    - cell "5668" [ref=e305]
+                    - cell "70%" [ref=e306]
+                    - cell "2.8Medium" [ref=e307]
+                    - cell "en" [ref=e308]:
+                      - link "en" [ref=e310] [cursor=pointer]:
+                        - /url: /problems/10kindsofpeople/en
+                    - cell "" [ref=e311]:
+                      - link "" [ref=e312] [cursor=pointer]:
+                        - /url: /problems/10kindsofpeople/statistics
+                        - generic [ref=e313]: 
+                  - row "10 Kinds of People 0.01 237 289 220 76% 3.7Medium en " [ref=e314]:
+                    - cell "10 Kinds of People" [ref=e315]:
+                      - link "10 Kinds of People" [ref=e316] [cursor=pointer]:
+                        - /url: /problems/tenkindsofpeople
+                    - cell "0.01" [ref=e317]
+                    - cell "237" [ref=e318]
+                    - cell "289" [ref=e319]
+                    - cell "220" [ref=e320]
+                    - cell "76%" [ref=e321]
+                    - cell "3.7Medium" [ref=e322]
+                    - cell "en" [ref=e323]:
+                      - link "en" [ref=e325] [cursor=pointer]:
+                        - /url: /problems/tenkindsofpeople/en
+                    - cell "" [ref=e326]:
+                      - link "" [ref=e327] [cursor=pointer]:
+                        - /url: /problems/tenkindsofpeople/statistics
+                        - generic [ref=e328]: 
+                  - row "100 meter dash 0.03 333 116 66 57% 6.0Hard en " [ref=e329]:
+                    - cell "100 meter dash" [ref=e330]:
+                      - link "100 meter dash" [ref=e331] [cursor=pointer]:
+                        - /url: /problems/100meterdash
+                    - cell "0.03" [ref=e332]
+                    - cell "333" [ref=e333]
+                    - cell "116" [ref=e334]
+                    - cell "66" [ref=e335]
+                    - cell "57%" [ref=e336]
+                    - cell "6.0Hard" [ref=e337]
+                    - cell "en" [ref=e338]:
+                      - link "en" [ref=e340] [cursor=pointer]:
+                        - /url: /problems/100meterdash/en
+                    - cell "" [ref=e341]:
+                      - link "" [ref=e342] [cursor=pointer]:
+                        - /url: /problems/100meterdash/statistics
+                        - generic [ref=e343]: 
+                  - row "13 Floors 0.00 18 3570 3354 94% 1.4Easy en " [ref=e344]:
+                    - cell "13 Floors" [ref=e345]:
+                      - link "13 Floors" [ref=e346] [cursor=pointer]:
+                        - /url: /problems/13floors
+                    - cell "0.00" [ref=e347]
+                    - cell "18" [ref=e348]
+                    - cell "3570" [ref=e349]
+                    - cell "3354" [ref=e350]
+                    - cell "94%" [ref=e351]
+                    - cell "1.4Easy" [ref=e352]
+                    - cell "en" [ref=e353]:
+                      - link "en" [ref=e355] [cursor=pointer]:
+                        - /url: /problems/13floors/en
+                    - cell "" [ref=e356]:
+                      - link "" [ref=e357] [cursor=pointer]:
+                        - /url: /problems/13floors/statistics
+                        - generic [ref=e358]: 
+                  - row "2, 4, 6, Greaaat 0.14 425 383 142 37% 8.5Hard en " [ref=e359]:
+                    - cell "2, 4, 6, Greaaat" [ref=e360]:
+                      - link "2, 4, 6, Greaaat" [ref=e361] [cursor=pointer]:
+                        - /url: /problems/246greaaat
+                    - cell "0.14" [ref=e362]
+                    - cell "425" [ref=e363]
+                    - cell "383" [ref=e364]
+                    - cell "142" [ref=e365]
+                    - cell "37%" [ref=e366]
+                    - cell "8.5Hard" [ref=e367]
+                    - cell "en" [ref=e368]:
+                      - link "en" [ref=e370] [cursor=pointer]:
+                        - /url: /problems/246greaaat/en
+                    - cell "" [ref=e371]:
+                      - link "" [ref=e372] [cursor=pointer]:
+                        - /url: /problems/246greaaat/statistics
+                        - generic [ref=e373]: 
+                  - row "2-Dimensional Indexing 0.01 802 69 36 52% 8.2Hard en " [ref=e374]:
+                    - cell "2-Dimensional Indexing" [ref=e375]:
+                      - link "2-Dimensional Indexing" [ref=e376] [cursor=pointer]:
+                        - /url: /problems/spatial
+                    - cell "0.01" [ref=e377]
+                    - cell "802" [ref=e378]
+                    - cell "69" [ref=e379]
+                    - cell "36" [ref=e380]
+                    - cell "52%" [ref=e381]
+                    - cell "8.2Hard" [ref=e382]
+                    - cell "en" [ref=e383]:
+                      - link "en" [ref=e385] [cursor=pointer]:
+                        - /url: /problems/spatial/en
+                    - cell "" [ref=e386]:
+                      - link "" [ref=e387] [cursor=pointer]:
+                        - /url: /problems/spatial/statistics
+                        - generic [ref=e388]: 
+                  - row "2048 0.00 187 8815 7258 82% 2.1Easy en " [ref=e389]:
+                    - cell "2048" [ref=e390]:
+                      - link "2048" [ref=e391] [cursor=pointer]:
+                        - /url: /problems/2048
+                    - cell "0.00" [ref=e392]
+                    - cell "187" [ref=e393]
+                    - cell "8815" [ref=e394]
+                    - cell "7258" [ref=e395]
+                    - cell "82%" [ref=e396]
+                    - cell "2.1Easy" [ref=e397]
+                    - cell "en" [ref=e398]:
+                      - link "en" [ref=e400] [cursor=pointer]:
+                        - /url: /problems/2048/en
+                    - cell "" [ref=e401]:
+                      - link "" [ref=e402] [cursor=pointer]:
+                        - /url: /problems/2048/statistics
+                        - generic [ref=e403]: 
+                  - row "24 Game 0.02 473 252 101 40% 2.4 - 6.1Hard en " [ref=e404]:
+                    - cell "24 Game" [ref=e405]:
+                      - link "24 Game" [ref=e406] [cursor=pointer]:
+                        - /url: /problems/24game
+                    - cell "0.02" [ref=e407]
+                    - cell "473" [ref=e408]
+                    - cell "252" [ref=e409]
+                    - cell "101" [ref=e410]
+                    - cell "40%" [ref=e411]
+                    - cell "2.4 - 6.1Hard" [ref=e412]
+                    - cell "en" [ref=e413]:
+                      - link "en" [ref=e415] [cursor=pointer]:
+                        - /url: /problems/24game/en
+                    - cell "" [ref=e416]:
+                      - link "" [ref=e417] [cursor=pointer]:
+                        - /url: /problems/24game/statistics
+                        - generic [ref=e418]: 
+                  - row "3-Puzzle 0.00 53 529 422 80% 2.5Easy en " [ref=e419]:
+                    - cell "3-Puzzle" [ref=e420]:
+                      - link "3-Puzzle" [ref=e421] [cursor=pointer]:
+                        - /url: /problems/3puzzle
+                    - cell "0.00" [ref=e422]
+                    - cell "53" [ref=e423]
+                    - cell "529" [ref=e424]
+                    - cell "422" [ref=e425]
+                    - cell "80%" [ref=e426]
+                    - cell "2.5Easy" [ref=e427]
+                    - cell "en" [ref=e428]:
+                      - link "en" [ref=e430] [cursor=pointer]:
+                        - /url: /problems/3puzzle/en
+                    - cell "" [ref=e431]:
+                      - link "" [ref=e432] [cursor=pointer]:
+                        - /url: /problems/3puzzle/statistics
+                        - generic [ref=e433]: 
+                  - row "3-Sided Dice 0.00 252 789 292 37% 7.6Hard en " [ref=e434]:
+                    - cell "3-Sided Dice" [ref=e435]:
+                      - link "3-Sided Dice" [ref=e436] [cursor=pointer]:
+                        - /url: /problems/3sideddice
+                    - cell "0.00" [ref=e437]
+                    - cell "252" [ref=e438]
+                    - cell "789" [ref=e439]
+                    - cell "292" [ref=e440]
+                    - cell "37%" [ref=e441]
+                    - cell "7.6Hard" [ref=e442]
+                    - cell "en" [ref=e443]:
+                      - link "en" [ref=e445] [cursor=pointer]:
+                        - /url: /problems/3sideddice/en
+                    - cell "" [ref=e446]:
+                      - link "" [ref=e447] [cursor=pointer]:
+                        - /url: /problems/3sideddice/statistics
+                        - generic [ref=e448]: 
+                  - row "3019 0.02 2022 75 46 61% 6.3Hard en " [ref=e449]:
+                    - cell "3019" [ref=e450]:
+                      - link "3019" [ref=e451] [cursor=pointer]:
+                        - /url: /problems/thirtynineteen
+                    - cell "0.02" [ref=e452]
+                    - cell "2022" [ref=e453]
+                    - cell "75" [ref=e454]
+                    - cell "46" [ref=e455]
+                    - cell "61%" [ref=e456]
+                    - cell "6.3Hard" [ref=e457]
+                    - cell "en" [ref=e458]:
+                      - link "en" [ref=e460] [cursor=pointer]:
+                        - /url: /problems/thirtynineteen/en
+                    - cell "" [ref=e461]:
+                      - link "" [ref=e462] [cursor=pointer]:
+                        - /url: /problems/thirtynineteen/statistics
+                        - generic [ref=e463]: 
+                  - row "3D Food Maker 0.00 647 44 8 18% 9.3Hard en " [ref=e464]:
+                    - cell "3D Food Maker" [ref=e465]:
+                      - link "3D Food Maker" [ref=e466] [cursor=pointer]:
+                        - /url: /problems/3dfoodmaker
+                    - cell "0.00" [ref=e467]
+                    - cell "647" [ref=e468]
+                    - cell "44" [ref=e469]
+                    - cell "8" [ref=e470]
+                    - cell "18%" [ref=e471]
+                    - cell "9.3Hard" [ref=e472]
+                    - cell "en" [ref=e473]:
+                      - link "en" [ref=e475] [cursor=pointer]:
+                        - /url: /problems/3dfoodmaker/en
+                    - cell "" [ref=e476]:
+                      - link "" [ref=e477] [cursor=pointer]:
+                        - /url: /problems/3dfoodmaker/statistics
+                        - generic [ref=e478]: 
+                  - row "3D Printed Statues 0.00 18 13042 11020 84% 2.0Easy en " [ref=e479]:
+                    - cell "3D Printed Statues" [ref=e480]:
+                      - link "3D Printed Statues" [ref=e481] [cursor=pointer]:
+                        - /url: /problems/3dprinter
+                    - cell "0.00" [ref=e482]
+                    - cell "18" [ref=e483]
+                    - cell "13042" [ref=e484]
+                    - cell "11020" [ref=e485]
+                    - cell "84%" [ref=e486]
+                    - cell "2.0Easy" [ref=e487]
+                    - cell "en" [ref=e488]:
+                      - link "en" [ref=e490] [cursor=pointer]:
+                        - /url: /problems/3dprinter/en
+                    - cell "" [ref=e491]:
+                      - link "" [ref=e492] [cursor=pointer]:
+                        - /url: /problems/3dprinter/statistics
+                        - generic [ref=e493]: 
+                  - row "3D Printer 0.00 241 780 253 32% 7.4Hard en " [ref=e494]:
+                    - cell "3D Printer" [ref=e495]:
+                      - link "3D Printer" [ref=e496] [cursor=pointer]:
+                        - /url: /problems/threedprinter
+                    - cell "0.00" [ref=e497]
+                    - cell "241" [ref=e498]
+                    - cell "780" [ref=e499]
+                    - cell "253" [ref=e500]
+                    - cell "32%" [ref=e501]
+                    - cell "7.4Hard" [ref=e502]
+                    - cell "en" [ref=e503]:
+                      - link "en" [ref=e505] [cursor=pointer]:
+                        - /url: /problems/threedprinter/en
+                    - cell "" [ref=e506]:
+                      - link "" [ref=e507] [cursor=pointer]:
+                        - /url: /problems/threedprinter/statistics
+                        - generic [ref=e508]: 
+                  - row "4 thought 0.00 115 7101 5854 82% 2.9Medium en " [ref=e509]:
+                    - cell "4 thought" [ref=e510]:
+                      - link "4 thought" [ref=e511] [cursor=pointer]:
+                        - /url: /problems/4thought
+                    - cell "0.00" [ref=e512]
+                    - cell "115" [ref=e513]
+                    - cell "7101" [ref=e514]
+                    - cell "5854" [ref=e515]
+                    - cell "82%" [ref=e516]
+                    - cell "2.9Medium" [ref=e517]
+                    - cell "en" [ref=e518]:
+                      - link "en" [ref=e520] [cursor=pointer]:
+                        - /url: /problems/4thought/en
+                    - cell "" [ref=e521]:
+                      - link "" [ref=e522] [cursor=pointer]:
+                        - /url: /problems/4thought/statistics
+                        - generic [ref=e523]: 
+                  - row "99 Problems 0.03 231 1573 886 56% 1.1 - 3.9Medium en " [ref=e524]:
+                    - cell "99 Problems" [ref=e525]:
+                      - link "99 Problems" [ref=e526] [cursor=pointer]:
+                        - /url: /problems/99problems2
+                    - cell "0.03" [ref=e527]
+                    - cell "231" [ref=e528]
+                    - cell "1573" [ref=e529]
+                    - cell "886" [ref=e530]
+                    - cell "56%" [ref=e531]
+                    - cell "1.1 - 3.9Medium" [ref=e532]
+                    - cell "en" [ref=e533]:
+                      - link "en" [ref=e535] [cursor=pointer]:
+                        - /url: /problems/99problems2/en
+                    - cell "" [ref=e536]:
+                      - link "" [ref=e537] [cursor=pointer]:
+                        - /url: /problems/99problems2/statistics
+                        - generic [ref=e538]: 
+                  - row "99 Problems 0.00 27 6735 5380 80% 2.7Easy en " [ref=e539]:
+                    - cell "99 Problems" [ref=e540]:
+                      - link "99 Problems" [ref=e541] [cursor=pointer]:
+                        - /url: /problems/99problems
+                    - cell "0.00" [ref=e542]
+                    - cell "27" [ref=e543]
+                    - cell "6735" [ref=e544]
+                    - cell "5380" [ref=e545]
+                    - cell "80%" [ref=e546]
+                    - cell "2.7Easy" [ref=e547]
+                    - cell "en" [ref=e548]:
+                      - link "en" [ref=e550] [cursor=pointer]:
+                        - /url: /problems/99problems/en
+                    - cell "" [ref=e551]:
+                      - link "" [ref=e552] [cursor=pointer]:
+                        - /url: /problems/99problems/statistics
+                        - generic [ref=e553]: 
+                  - row "A (Fast) Walk in the Woods 0.02 1510 144 53 37% 9.2Hard en " [ref=e554]:
+                    - cell "A (Fast) Walk in the Woods" [ref=e555]:
+                      - link "A (Fast) Walk in the Woods" [ref=e556] [cursor=pointer]:
+                        - /url: /problems/walkinthewoods
+                    - cell "0.02" [ref=e557]
+                    - cell "1510" [ref=e558]
+                    - cell "144" [ref=e559]
+                    - cell "53" [ref=e560]
+                    - cell "37%" [ref=e561]
+                    - cell "9.2Hard" [ref=e562]
+                    - cell "en" [ref=e563]:
+                      - link "en" [ref=e565] [cursor=pointer]:
+                        - /url: /problems/walkinthewoods/en
+                    - cell "" [ref=e566]:
+                      - link "" [ref=e567] [cursor=pointer]:
+                        - /url: /problems/walkinthewoods/statistics
+                        - generic [ref=e568]: 
+                  - row "A Brief Gerrymander 0.03 790 206 88 43% 7.9Hard en " [ref=e569]:
+                    - cell "A Brief Gerrymander" [ref=e570]:
+                      - link "A Brief Gerrymander" [ref=e571] [cursor=pointer]:
+                        - /url: /problems/gerrymander
+                    - cell "0.03" [ref=e572]
+                    - cell "790" [ref=e573]
+                    - cell "206" [ref=e574]
+                    - cell "88" [ref=e575]
+                    - cell "43%" [ref=e576]
+                    - cell "7.9Hard" [ref=e577]
+                    - cell "en" [ref=e578]:
+                      - link "en" [ref=e580] [cursor=pointer]:
+                        - /url: /problems/gerrymander/en
+                    - cell "" [ref=e581]:
+                      - link "" [ref=e582] [cursor=pointer]:
+                        - /url: /problems/gerrymander/statistics
+                        - generic [ref=e583]: 
+                  - row "A Cappella Recording 0.00 63 1493 1249 84% 2.2Easy en " [ref=e584]:
+                    - cell "A Cappella Recording" [ref=e585]:
+                      - link "A Cappella Recording" [ref=e586] [cursor=pointer]:
+                        - /url: /problems/acappellarecording
+                    - cell "0.00" [ref=e587]
+                    - cell "63" [ref=e588]
+                    - cell "1493" [ref=e589]
+                    - cell "1249" [ref=e590]
+                    - cell "84%" [ref=e591]
+                    - cell "2.2Easy" [ref=e592]
+                    - cell "en" [ref=e593]:
+                      - link "en" [ref=e595] [cursor=pointer]:
+                        - /url: /problems/acappellarecording/en
+                    - cell "" [ref=e596]:
+                      - link "" [ref=e597] [cursor=pointer]:
+                        - /url: /problems/acappellarecording/statistics
+                        - generic [ref=e598]: 
+                  - row "A Classy Problem 0.01 130 5600 4319 77% 2.5Easy en " [ref=e599]:
+                    - cell "A Classy Problem" [ref=e600]:
+                      - link "A Classy Problem" [ref=e601] [cursor=pointer]:
+                        - /url: /problems/classy
+                    - cell "0.01" [ref=e602]
+                    - cell "130" [ref=e603]
+                    - cell "5600" [ref=e604]
+                    - cell "4319" [ref=e605]
+                    - cell "77%" [ref=e606]
+                    - cell "2.5Easy" [ref=e607]
+                    - cell "en" [ref=e608]:
+                      - link "en" [ref=e610] [cursor=pointer]:
+                        - /url: /problems/classy/en
+                    - cell "" [ref=e611]:
+                      - link "" [ref=e612] [cursor=pointer]:
+                        - /url: /problems/classy/statistics
+                        - generic [ref=e613]: 
+                  - row "A Complex Problem 0.06 767 185 117 63% 6.5Hard en " [ref=e614]:
+                    - cell "A Complex Problem" [ref=e615]:
+                      - link "A Complex Problem" [ref=e616] [cursor=pointer]:
+                        - /url: /problems/acomplexproblem
+                    - cell "0.06" [ref=e617]
+                    - cell "767" [ref=e618]
+                    - cell "185" [ref=e619]
+                    - cell "117" [ref=e620]
+                    - cell "63%" [ref=e621]
+                    - cell "6.5Hard" [ref=e622]
+                    - cell "en" [ref=e623]:
+                      - link "en" [ref=e625] [cursor=pointer]:
+                        - /url: /problems/acomplexproblem/en
+                    - cell "" [ref=e626]:
+                      - link "" [ref=e627] [cursor=pointer]:
+                        - /url: /problems/acomplexproblem/statistics
+                        - generic [ref=e628]: 
+                  - row "A Different List Game 0.00 353 1296 281 22% 8.8Hard en " [ref=e629]:
+                    - cell "A Different List Game" [ref=e630]:
+                      - link "A Different List Game" [ref=e631] [cursor=pointer]:
+                        - /url: /problems/listgame2
+                    - cell "0.00" [ref=e632]
+                    - cell "353" [ref=e633]
+                    - cell "1296" [ref=e634]
+                    - cell "281" [ref=e635]
+                    - cell "22%" [ref=e636]
+                    - cell "8.8Hard" [ref=e637]
+                    - cell "en" [ref=e638]:
+                      - link "en" [ref=e640] [cursor=pointer]:
+                        - /url: /problems/listgame2/en
+                    - cell "" [ref=e641]:
+                      - link "" [ref=e642] [cursor=pointer]:
+                        - /url: /problems/listgame2/statistics
+                        - generic [ref=e643]: 
+                  - row "A Different Problem 0.00 26 26161 22159 85% 2.2Easy en " [ref=e644]:
+                    - cell "A Different Problem" [ref=e645]:
+                      - link "A Different Problem" [ref=e646] [cursor=pointer]:
+                        - /url: /problems/different
+                    - cell "0.00" [ref=e647]
+                    - cell "26" [ref=e648]
+                    - cell "26161" [ref=e649]
+                    - cell "22159" [ref=e650]
+                    - cell "85%" [ref=e651]
+                    - cell "2.2Easy" [ref=e652]
+                    - cell "en" [ref=e653]:
+                      - link "en" [ref=e655] [cursor=pointer]:
+                        - /url: /problems/different/en
+                    - cell "" [ref=e656]:
+                      - link "" [ref=e657] [cursor=pointer]:
+                        - /url: /problems/different/statistics
+                        - generic [ref=e658]: 
+                  - row "A Favourable Ending 0.00 202 1480 1170 79% 2.8Medium en " [ref=e659]:
+                    - cell "A Favourable Ending" [ref=e660]:
+                      - link "A Favourable Ending" [ref=e661] [cursor=pointer]:
+                        - /url: /problems/favourable
+                    - cell "0.00" [ref=e662]
+                    - cell "202" [ref=e663]
+                    - cell "1480" [ref=e664]
+                    - cell "1170" [ref=e665]
+                    - cell "79%" [ref=e666]
+                    - cell "2.8Medium" [ref=e667]
+                    - cell "en" [ref=e668]:
+                      - link "en" [ref=e670] [cursor=pointer]:
+                        - /url: /problems/favourable/en
+                    - cell "" [ref=e671]:
+                      - link "" [ref=e672] [cursor=pointer]:
+                        - /url: /problems/favourable/statistics
+                        - generic [ref=e673]: 
+                  - row "A Feast For Cats 0.00 36 2323 1926 83% 4.2Medium en " [ref=e674]:
+                    - cell "A Feast For Cats" [ref=e675]:
+                      - link "A Feast For Cats" [ref=e676] [cursor=pointer]:
+                        - /url: /problems/cats
+                    - cell "0.00" [ref=e677]
+                    - cell "36" [ref=e678]
+                    - cell "2323" [ref=e679]
+                    - cell "1926" [ref=e680]
+                    - cell "83%" [ref=e681]
+                    - cell "4.2Medium" [ref=e682]
+                    - cell "en" [ref=e683]:
+                      - link "en" [ref=e685] [cursor=pointer]:
+                        - /url: /problems/cats/en
+                    - cell "" [ref=e686]:
+                      - link "" [ref=e687] [cursor=pointer]:
+                        - /url: /problems/cats/statistics
+                        - generic [ref=e688]: 
+                  - row "A Flea on a Chessboard 0.01 287 462 302 65% 5.7Hard en " [ref=e689]:
+                    - cell "A Flea on a Chessboard" [ref=e690]:
+                      - link "A Flea on a Chessboard" [ref=e691] [cursor=pointer]:
+                        - /url: /problems/fleaonachessboard
+                    - cell "0.01" [ref=e692]
+                    - cell "287" [ref=e693]
+                    - cell "462" [ref=e694]
+                    - cell "302" [ref=e695]
+                    - cell "65%" [ref=e696]
+                    - cell "5.7Hard" [ref=e697]
+                    - cell "en" [ref=e698]:
+                      - link "en" [ref=e700] [cursor=pointer]:
+                        - /url: /problems/fleaonachessboard/en
+                    - cell "" [ref=e701]:
+                      - link "" [ref=e702] [cursor=pointer]:
+                        - /url: /problems/fleaonachessboard/statistics
+                        - generic [ref=e703]: 
+                  - row "A Furious Cocktail 0.00 56 2457 2011 82% 2.5Easy en " [ref=e704]:
+                    - cell "A Furious Cocktail" [ref=e705]:
+                      - link "A Furious Cocktail" [ref=e706] [cursor=pointer]:
+                        - /url: /problems/cocktail
+                    - cell "0.00" [ref=e707]
+                    - cell "56" [ref=e708]
+                    - cell "2457" [ref=e709]
+                    - cell "2011" [ref=e710]
+                    - cell "82%" [ref=e711]
+                    - cell "2.5Easy" [ref=e712]
+                    - cell "en" [ref=e713]:
+                      - link "en" [ref=e715] [cursor=pointer]:
+                        - /url: /problems/cocktail/en
+                    - cell "" [ref=e716]:
+                      - link "" [ref=e717] [cursor=pointer]:
+                        - /url: /problems/cocktail/statistics
+                        - generic [ref=e718]: 
+                  - row "A Game in the Park 0.00 304 172 127 74% 3.3Medium en " [ref=e719]:
+                    - cell "A Game in the Park" [ref=e720]:
+                      - link "A Game in the Park" [ref=e721] [cursor=pointer]:
+                        - /url: /problems/agameinthepark
+                    - cell "0.00" [ref=e722]
+                    - cell "304" [ref=e723]
+                    - cell "172" [ref=e724]
+                    - cell "127" [ref=e725]
+                    - cell "74%" [ref=e726]
+                    - cell "3.3Medium" [ref=e727]
+                    - cell "en" [ref=e728]:
+                      - link "en" [ref=e730] [cursor=pointer]:
+                        - /url: /problems/agameinthepark/en
+                    - cell "" [ref=e731]:
+                      - link "" [ref=e732] [cursor=pointer]:
+                        - /url: /problems/agameinthepark/statistics
+                        - generic [ref=e733]: 
+                  - row "A Horse Shoe-In 0.03 1883 86 34 40% 8.6Hard en " [ref=e734]:
+                    - cell "A Horse Shoe-In" [ref=e735]:
+                      - link "A Horse Shoe-In" [ref=e736] [cursor=pointer]:
+                        - /url: /problems/ahorseshoein
+                    - cell "0.03" [ref=e737]
+                    - cell "1883" [ref=e738]
+                    - cell "86" [ref=e739]
+                    - cell "34" [ref=e740]
+                    - cell "40%" [ref=e741]
+                    - cell "8.6Hard" [ref=e742]
+                    - cell "en" [ref=e743]:
+                      - link "en" [ref=e745] [cursor=pointer]:
+                        - /url: /problems/ahorseshoein/en
+                    - cell "" [ref=e746]:
+                      - link "" [ref=e747] [cursor=pointer]:
+                        - /url: /problems/ahorseshoein/statistics
+                        - generic [ref=e748]: 
+                  - row "A List Game 0.00 18 5390 4531 84% 2.6Easy en " [ref=e749]:
+                    - cell "A List Game" [ref=e750]:
+                      - link "A List Game" [ref=e751] [cursor=pointer]:
+                        - /url: /problems/listgame
+                    - cell "0.00" [ref=e752]
+                    - cell "18" [ref=e753]
+                    - cell "5390" [ref=e754]
+                    - cell "4531" [ref=e755]
+                    - cell "84%" [ref=e756]
+                    - cell "2.6Easy" [ref=e757]
+                    - cell "en" [ref=e758]:
+                      - link "en" [ref=e760] [cursor=pointer]:
+                        - /url: /problems/listgame/en
+                    - cell "" [ref=e761]:
+                      - link "" [ref=e762] [cursor=pointer]:
+                        - /url: /problems/listgame/statistics
+                        - generic [ref=e763]: 
+                  - row "A Little Leftover Pizza 0.00 52 1251 1187 95% 1.5Easy en " [ref=e764]:
+                    - cell "A Little Leftover Pizza" [ref=e765]:
+                      - link "A Little Leftover Pizza" [ref=e766] [cursor=pointer]:
+                        - /url: /problems/alittleleftoverpizza
+                    - cell "0.00" [ref=e767]
+                    - cell "52" [ref=e768]
+                    - cell "1251" [ref=e769]
+                    - cell "1187" [ref=e770]
+                    - cell "95%" [ref=e771]
+                    - cell "1.5Easy" [ref=e772]
+                    - cell "en" [ref=e773]:
+                      - link "en" [ref=e775] [cursor=pointer]:
+                        - /url: /problems/alittleleftoverpizza/en
+                    - cell "" [ref=e776]:
+                      - link "" [ref=e777] [cursor=pointer]:
+                        - /url: /problems/alittleleftoverpizza/statistics
+                        - generic [ref=e778]: 
+                  - row "A Little to the Right 0.00 138 385 262 68% 4.8Medium en " [ref=e779]:
+                    - cell "A Little to the Right" [ref=e780]:
+                      - link "A Little to the Right" [ref=e781] [cursor=pointer]:
+                        - /url: /problems/alittletotheright
+                    - cell "0.00" [ref=e782]
+                    - cell "138" [ref=e783]
+                    - cell "385" [ref=e784]
+                    - cell "262" [ref=e785]
+                    - cell "68%" [ref=e786]
+                    - cell "4.8Medium" [ref=e787]
+                    - cell "en" [ref=e788]:
+                      - link "en" [ref=e790] [cursor=pointer]:
+                        - /url: /problems/alittletotheright/en
+                    - cell "" [ref=e791]:
+                      - link "" [ref=e792] [cursor=pointer]:
+                        - /url: /problems/alittletotheright/statistics
+                        - generic [ref=e793]: 
+                  - row "A Mazing! 0.09 263 788 533 68% 5.7Hard en " [ref=e794]:
+                    - cell "A Mazing!" [ref=e795]:
+                      - link "A Mazing!" [ref=e796] [cursor=pointer]:
+                        - /url: /problems/amazing
+                    - cell "0.09" [ref=e797]
+                    - cell "263" [ref=e798]
+                    - cell "788" [ref=e799]
+                    - cell "533" [ref=e800]
+                    - cell "68%" [ref=e801]
+                    - cell "5.7Hard" [ref=e802]
+                    - cell "en" [ref=e803]:
+                      - link "en" [ref=e805] [cursor=pointer]:
+                        - /url: /problems/amazing/en
+                    - cell "" [ref=e806]:
+                      - link "" [ref=e807] [cursor=pointer]:
+                        - /url: /problems/amazing/statistics
+                        - generic [ref=e808]: 
+                  - row "A Multiplication Game 0.00 67 1552 1180 76% 3.0Medium en " [ref=e809]:
+                    - cell "A Multiplication Game" [ref=e810]:
+                      - link "A Multiplication Game" [ref=e811] [cursor=pointer]:
+                        - /url: /problems/amultiplicationgame
+                    - cell "0.00" [ref=e812]
+                    - cell "67" [ref=e813]
+                    - cell "1552" [ref=e814]
+                    - cell "1180" [ref=e815]
+                    - cell "76%" [ref=e816]
+                    - cell "3.0Medium" [ref=e817]
+                    - cell "en" [ref=e818]:
+                      - link "en" [ref=e820] [cursor=pointer]:
+                        - /url: /problems/amultiplicationgame/en
+                    - cell "" [ref=e821]:
+                      - link "" [ref=e822] [cursor=pointer]:
+                        - /url: /problems/amultiplicationgame/statistics
+                        - generic [ref=e823]: 
+                  - row "A Musical Question 0.00 262 295 189 64% 5.9Hard en " [ref=e824]:
+                    - cell "A Musical Question" [ref=e825]:
+                      - link "A Musical Question" [ref=e826] [cursor=pointer]:
+                        - /url: /problems/amusicalquestion
+                    - cell "0.00" [ref=e827]
+                    - cell "262" [ref=e828]
+                    - cell "295" [ref=e829]
+                    - cell "189" [ref=e830]
+                    - cell "64%" [ref=e831]
+                    - cell "5.9Hard" [ref=e832]
+                    - cell "en" [ref=e833]:
+                      - link "en" [ref=e835] [cursor=pointer]:
+                        - /url: /problems/amusicalquestion/en
+                    - cell "" [ref=e836]:
+                      - link "" [ref=e837] [cursor=pointer]:
+                        - /url: /problems/amusicalquestion/statistics
+                        - generic [ref=e838]: 
+                  - row "A New Adventure 0.00 476 304 201 66% 6.2Hard en " [ref=e839]:
+                    - cell "A New Adventure" [ref=e840]:
+                      - link "A New Adventure" [ref=e841] [cursor=pointer]:
+                        - /url: /problems/anewadventure
+                    - cell "0.00" [ref=e842]
+                    - cell "476" [ref=e843]
+                    - cell "304" [ref=e844]
+                    - cell "201" [ref=e845]
+                    - cell "66%" [ref=e846]
+                    - cell "6.2Hard" [ref=e847]
+                    - cell "en" [ref=e848]:
+                      - link "en" [ref=e850] [cursor=pointer]:
+                        - /url: /problems/anewadventure/en
+                    - cell "" [ref=e851]:
+                      - link "" [ref=e852] [cursor=pointer]:
+                        - /url: /problems/anewadventure/statistics
+                        - generic [ref=e853]: 
+                  - row "A New Alphabet 0.00 122 10891 9592 88% 1.9Easy en " [ref=e854]:
+                    - cell "A New Alphabet" [ref=e855]:
+                      - link "A New Alphabet" [ref=e856] [cursor=pointer]:
+                        - /url: /problems/anewalphabet
+                    - cell "0.00" [ref=e857]
+                    - cell "122" [ref=e858]
+                    - cell "10891" [ref=e859]
+                    - cell "9592" [ref=e860]
+                    - cell "88%" [ref=e861]
+                    - cell "1.9Easy" [ref=e862]
+                    - cell "en" [ref=e863]:
+                      - link "en" [ref=e865] [cursor=pointer]:
+                        - /url: /problems/anewalphabet/en
+                    - cell "" [ref=e866]:
+                      - link "" [ref=e867] [cursor=pointer]:
+                        - /url: /problems/anewalphabet/statistics
+                        - generic [ref=e868]: 
+                  - row "A Night To Remember 0.00 823 16 5 31% 8.4Hard en is " [ref=e869]:
+                    - cell "A Night To Remember" [ref=e870]:
+                      - link "A Night To Remember" [ref=e871] [cursor=pointer]:
+                        - /url: /problems/anighttoremember
+                    - cell "0.00" [ref=e872]
+                    - cell "823" [ref=e873]
+                    - cell "16" [ref=e874]
+                    - cell "5" [ref=e875]
+                    - cell "31%" [ref=e876]
+                    - cell "8.4Hard" [ref=e877]
+                    - cell "en is" [ref=e878]:
+                      - generic [ref=e879]:
+                        - link "en" [ref=e880] [cursor=pointer]:
+                          - /url: /problems/anighttoremember/en
+                        - link "is" [ref=e881] [cursor=pointer]:
+                          - /url: /problems/anighttoremember/is
+                    - cell "" [ref=e882]:
+                      - link "" [ref=e883] [cursor=pointer]:
+                        - /url: /problems/anighttoremember/statistics
+                        - generic [ref=e884]: 
+                  - row "A Night at Buckingham Palace 0.00 234 107 87 81% 3.9Medium en " [ref=e885]:
+                    - cell "A Night at Buckingham Palace" [ref=e886]:
+                      - link "A Night at Buckingham Palace" [ref=e887] [cursor=pointer]:
+                        - /url: /problems/anightatbuckinghampalace
+                    - cell "0.00" [ref=e888]
+                    - cell "234" [ref=e889]
+                    - cell "107" [ref=e890]
+                    - cell "87" [ref=e891]
+                    - cell "81%" [ref=e892]
+                    - cell "3.9Medium" [ref=e893]
+                    - cell "en" [ref=e894]:
+                      - link "en" [ref=e896] [cursor=pointer]:
+                        - /url: /problems/anightatbuckinghampalace/en
+                    - cell "" [ref=e897]:
+                      - link "" [ref=e898] [cursor=pointer]:
+                        - /url: /problems/anightatbuckinghampalace/statistics
+                        - generic [ref=e899]: 
+                  - row "A Pivotal Question 0.01 99 763 594 78% 3.5Medium en " [ref=e900]:
+                    - cell "A Pivotal Question" [ref=e901]:
+                      - link "A Pivotal Question" [ref=e902] [cursor=pointer]:
+                        - /url: /problems/apivotalquestion
+                    - cell "0.01" [ref=e903]
+                    - cell "99" [ref=e904]
+                    - cell "763" [ref=e905]
+                    - cell "594" [ref=e906]
+                    - cell "78%" [ref=e907]
+                    - cell "3.5Medium" [ref=e908]
+                    - cell "en" [ref=e909]:
+                      - link "en" [ref=e911] [cursor=pointer]:
+                        - /url: /problems/apivotalquestion/en
+                    - cell "" [ref=e912]:
+                      - link "" [ref=e913] [cursor=pointer]:
+                        - /url: /problems/apivotalquestion/statistics
+                        - generic [ref=e914]: 
+                  - row "A Prize No One Can Win 0.00 71 2963 2487 84% 2.8Medium en " [ref=e915]:
+                    - cell "A Prize No One Can Win" [ref=e916]:
+                      - link "A Prize No One Can Win" [ref=e917] [cursor=pointer]:
+                        - /url: /problems/aprizenoonecanwin
+                    - cell "0.00" [ref=e918]
+                    - cell "71" [ref=e919]
+                    - cell "2963" [ref=e920]
+                    - cell "2487" [ref=e921]
+                    - cell "84%" [ref=e922]
+                    - cell "2.8Medium" [ref=e923]
+                    - cell "en" [ref=e924]:
+                      - link "en" [ref=e926] [cursor=pointer]:
+                        - /url: /problems/aprizenoonecanwin/en
+                    - cell "" [ref=e927]:
+                      - link "" [ref=e928] [cursor=pointer]:
+                        - /url: /problems/aprizenoonecanwin/statistics
+                        - generic [ref=e929]: 
+                  - row "A Production Problem 0.00 1068 33 18 55% 5.5Hard en " [ref=e930]:
+                    - cell "A Production Problem" [ref=e931]:
+                      - link "A Production Problem" [ref=e932] [cursor=pointer]:
+                        - /url: /problems/aproductionproblem
+                    - cell "0.00" [ref=e933]
+                    - cell "1068" [ref=e934]
+                    - cell "33" [ref=e935]
+                    - cell "18" [ref=e936]
+                    - cell "55%" [ref=e937]
+                    - cell "5.5Hard" [ref=e938]
+                    - cell "en" [ref=e939]:
+                      - link "en" [ref=e941] [cursor=pointer]:
+                        - /url: /problems/aproductionproblem/en
+                    - cell "" [ref=e942]:
+                      - link "" [ref=e943] [cursor=pointer]:
+                        - /url: /problems/aproductionproblem/statistics
+                        - generic [ref=e944]: 
+                  - row "A Question of Ingestion 0.00 254 847 616 73% 6.5Hard en " [ref=e945]:
+                    - cell "A Question of Ingestion" [ref=e946]:
+                      - link "A Question of Ingestion" [ref=e947] [cursor=pointer]:
+                        - /url: /problems/ingestion
+                    - cell "0.00" [ref=e948]
+                    - cell "254" [ref=e949]
+                    - cell "847" [ref=e950]
+                    - cell "616" [ref=e951]
+                    - cell "73%" [ref=e952]
+                    - cell "6.5Hard" [ref=e953]
+                    - cell "en" [ref=e954]:
+                      - link "en" [ref=e956] [cursor=pointer]:
+                        - /url: /problems/ingestion/en
+                    - cell "" [ref=e957]:
+                      - link "" [ref=e958] [cursor=pointer]:
+                        - /url: /problems/ingestion/statistics
+                        - generic [ref=e959]: 
+                  - row "A Random Problem 0.00 1089 146 82 56% 7.9Hard en " [ref=e960]:
+                    - cell "A Random Problem" [ref=e961]:
+                      - link "A Random Problem" [ref=e962] [cursor=pointer]:
+                        - /url: /problems/randomproblem
+                    - cell "0.00" [ref=e963]
+                    - cell "1089" [ref=e964]
+                    - cell "146" [ref=e965]
+                    - cell "82" [ref=e966]
+                    - cell "56%" [ref=e967]
+                    - cell "7.9Hard" [ref=e968]
+                    - cell "en" [ref=e969]:
+                      - link "en" [ref=e971] [cursor=pointer]:
+                        - /url: /problems/randomproblem/en
+                    - cell "" [ref=e972]:
+                      - link "" [ref=e973] [cursor=pointer]:
+                        - /url: /problems/randomproblem/statistics
+                        - generic [ref=e974]: 
+                  - row "A Rank Problem 0.00 124 1615 1343 83% 3.0Medium en " [ref=e975]:
+                    - cell "A Rank Problem" [ref=e976]:
+                      - link "A Rank Problem" [ref=e977] [cursor=pointer]:
+                        - /url: /problems/rankproblem
+                    - cell "0.00" [ref=e978]
+                    - cell "124" [ref=e979]
+                    - cell "1615" [ref=e980]
+                    - cell "1343" [ref=e981]
+                    - cell "83%" [ref=e982]
+                    - cell "3.0Medium" [ref=e983]
+                    - cell "en" [ref=e984]:
+                      - link "en" [ref=e986] [cursor=pointer]:
+                        - /url: /problems/rankproblem/en
+                    - cell "" [ref=e987]:
+                      - link "" [ref=e988] [cursor=pointer]:
+                        - /url: /problems/rankproblem/statistics
+                        - generic [ref=e989]: 
+                  - row "A Rational Sequence 0.00 74 1478 1115 75% 4.6Medium en " [ref=e990]:
+                    - cell "A Rational Sequence" [ref=e991]:
+                      - link "A Rational Sequence" [ref=e992] [cursor=pointer]:
+                        - /url: /problems/rationalsequence
+                    - cell "0.00" [ref=e993]
+                    - cell "74" [ref=e994]
+                    - cell "1478" [ref=e995]
+                    - cell "1115" [ref=e996]
+                    - cell "75%" [ref=e997]
+                    - cell "4.6Medium" [ref=e998]
+                    - cell "en" [ref=e999]:
+                      - link "en" [ref=e1001] [cursor=pointer]:
+                        - /url: /problems/rationalsequence/en
+                    - cell "" [ref=e1002]:
+                      - link "" [ref=e1003] [cursor=pointer]:
+                        - /url: /problems/rationalsequence/statistics
+                        - generic [ref=e1004]: 
+                  - row "A Rational Sequence (Take 3) 0.00 86 1975 1784 90% 2.2Easy en " [ref=e1005]:
+                    - cell "A Rational Sequence (Take 3)" [ref=e1006]:
+                      - link "A Rational Sequence (Take 3)" [ref=e1007] [cursor=pointer]:
+                        - /url: /problems/rationalsequence3
+                    - cell "0.00" [ref=e1008]
+                    - cell "86" [ref=e1009]
+                    - cell "1975" [ref=e1010]
+                    - cell "1784" [ref=e1011]
+                    - cell "90%" [ref=e1012]
+                    - cell "2.2Easy" [ref=e1013]
+                    - cell "en" [ref=e1014]:
+                      - link "en" [ref=e1016] [cursor=pointer]:
+                        - /url: /problems/rationalsequence3/en
+                    - cell "" [ref=e1017]:
+                      - link "" [ref=e1018] [cursor=pointer]:
+                        - /url: /problems/rationalsequence3/statistics
+                        - generic [ref=e1019]: 
+                  - row "A Rational Sequence 2 0.00 100 2683 2448 91% 2.2Easy en " [ref=e1020]:
+                    - cell "A Rational Sequence 2" [ref=e1021]:
+                      - link "A Rational Sequence 2" [ref=e1022] [cursor=pointer]:
+                        - /url: /problems/rationalsequence2
+                    - cell "0.00" [ref=e1023]
+                    - cell "100" [ref=e1024]
+                    - cell "2683" [ref=e1025]
+                    - cell "2448" [ref=e1026]
+                    - cell "91%" [ref=e1027]
+                    - cell "2.2Easy" [ref=e1028]
+                    - cell "en" [ref=e1029]:
+                      - link "en" [ref=e1031] [cursor=pointer]:
+                        - /url: /problems/rationalsequence2/en
+                    - cell "" [ref=e1032]:
+                      - link "" [ref=e1033] [cursor=pointer]:
+                        - /url: /problems/rationalsequence2/statistics
+                        - generic [ref=e1034]: 
+                  - row "A Real Challenge 0.00 6 10936 9926 91% 1.7Easy en " [ref=e1035]:
+                    - cell "A Real Challenge" [ref=e1036]:
+                      - link "A Real Challenge" [ref=e1037] [cursor=pointer]:
+                        - /url: /problems/areal
+                    - cell "0.00" [ref=e1038]
+                    - cell "6" [ref=e1039]
+                    - cell "10936" [ref=e1040]
+                    - cell "9926" [ref=e1041]
+                    - cell "91%" [ref=e1042]
+                    - cell "1.7Easy" [ref=e1043]
+                    - cell "en" [ref=e1044]:
+                      - link "en" [ref=e1046] [cursor=pointer]:
+                        - /url: /problems/areal/en
+                    - cell "" [ref=e1047]:
+                      - link "" [ref=e1048] [cursor=pointer]:
+                        - /url: /problems/areal/statistics
+                        - generic [ref=e1049]: 
+                  - row "A Recurring Problem 0.42 3042 33 12 36% 8.6Hard en " [ref=e1050]:
+                    - cell "A Recurring Problem" [ref=e1051]:
+                      - link "A Recurring Problem" [ref=e1052] [cursor=pointer]:
+                        - /url: /problems/arecurringproblem
+                    - cell "0.42" [ref=e1053]
+                    - cell "3042" [ref=e1054]
+                    - cell "33" [ref=e1055]
+                    - cell "12" [ref=e1056]
+                    - cell "36%" [ref=e1057]
+                    - cell "8.6Hard" [ref=e1058]
+                    - cell "en" [ref=e1059]:
+                      - link "en" [ref=e1061] [cursor=pointer]:
+                        - /url: /problems/arecurringproblem/en
+                    - cell "" [ref=e1062]:
+                      - link "" [ref=e1063] [cursor=pointer]:
+                        - /url: /problems/arecurringproblem/statistics
+                        - generic [ref=e1064]: 
+                  - row "A Royal Problem 0.33 2974 46 14 30% 8.7Hard en " [ref=e1065]:
+                    - cell "A Royal Problem" [ref=e1066]:
+                      - link "A Royal Problem" [ref=e1067] [cursor=pointer]:
+                        - /url: /problems/aroyalproblem
+                    - cell "0.33" [ref=e1068]
+                    - cell "2974" [ref=e1069]
+                    - cell "46" [ref=e1070]
+                    - cell "14" [ref=e1071]
+                    - cell "30%" [ref=e1072]
+                    - cell "8.7Hard" [ref=e1073]
+                    - cell "en" [ref=e1074]:
+                      - link "en" [ref=e1076] [cursor=pointer]:
+                        - /url: /problems/aroyalproblem/en
+                    - cell "" [ref=e1077]:
+                      - link "" [ref=e1078] [cursor=pointer]:
+                        - /url: /problems/aroyalproblem/statistics
+                        - generic [ref=e1079]: 
+                  - row "A Safe Bet 0.16 2358 134 86 64% 7.2Hard en " [ref=e1080]:
+                    - cell "A Safe Bet" [ref=e1081]:
+                      - link "A Safe Bet" [ref=e1082] [cursor=pointer]:
+                        - /url: /problems/safebet
+                    - cell "0.16" [ref=e1083]
+                    - cell "2358" [ref=e1084]
+                    - cell "134" [ref=e1085]
+                    - cell "86" [ref=e1086]
+                    - cell "64%" [ref=e1087]
+                    - cell "7.2Hard" [ref=e1088]
+                    - cell "en" [ref=e1089]:
+                      - link "en" [ref=e1091] [cursor=pointer]:
+                        - /url: /problems/safebet/en
+                    - cell "" [ref=e1092]:
+                      - link "" [ref=e1093] [cursor=pointer]:
+                        - /url: /problems/safebet/statistics
+                        - generic [ref=e1094]: 
+                  - row "A Second Opinion 0.00 27 3108 2925 94% 1.4Easy en " [ref=e1095]:
+                    - cell "A Second Opinion" [ref=e1096]:
+                      - link "A Second Opinion" [ref=e1097] [cursor=pointer]:
+                        - /url: /problems/secondopinion
+                    - cell "0.00" [ref=e1098]
+                    - cell "27" [ref=e1099]
+                    - cell "3108" [ref=e1100]
+                    - cell "2925" [ref=e1101]
+                    - cell "94%" [ref=e1102]
+                    - cell "1.4Easy" [ref=e1103]
+                    - cell "en" [ref=e1104]:
+                      - link "en" [ref=e1106] [cursor=pointer]:
+                        - /url: /problems/secondopinion/en
+                    - cell "" [ref=e1107]:
+                      - link "" [ref=e1108] [cursor=pointer]:
+                        - /url: /problems/secondopinion/statistics
+                        - generic [ref=e1109]: 
+                  - row "A Shortcut to What? 0.00 6 6862 6677 97% 1.1Easy en " [ref=e1110]:
+                    - cell "A Shortcut to What?" [ref=e1111]:
+                      - link "A Shortcut to What?" [ref=e1112] [cursor=pointer]:
+                        - /url: /problems/shortcuttowhat
+                    - cell "0.00" [ref=e1113]
+                    - cell "6" [ref=e1114]
+                    - cell "6862" [ref=e1115]
+                    - cell "6677" [ref=e1116]
+                    - cell "97%" [ref=e1117]
+                    - cell "1.1Easy" [ref=e1118]
+                    - cell "en" [ref=e1119]:
+                      - link "en" [ref=e1121] [cursor=pointer]:
+                        - /url: /problems/shortcuttowhat/en
+                    - cell "" [ref=e1122]:
+                      - link "" [ref=e1123] [cursor=pointer]:
+                        - /url: /problems/shortcuttowhat/statistics
+                        - generic [ref=e1124]: 
+                  - row "A Simple Game 0.01 1677 58 12 21% 5.7 - 8.4Hard en " [ref=e1125]:
+                    - cell "A Simple Game" [ref=e1126]:
+                      - link "A Simple Game" [ref=e1127] [cursor=pointer]:
+                        - /url: /problems/asimplegame
+                    - cell "0.01" [ref=e1128]
+                    - cell "1677" [ref=e1129]
+                    - cell "58" [ref=e1130]
+                    - cell "12" [ref=e1131]
+                    - cell "21%" [ref=e1132]
+                    - cell "5.7 - 8.4Hard" [ref=e1133]
+                    - cell "en" [ref=e1134]:
+                      - link "en" [ref=e1136] [cursor=pointer]:
+                        - /url: /problems/asimplegame/en
+                    - cell "" [ref=e1137]:
+                      - link "" [ref=e1138] [cursor=pointer]:
+                        - /url: /problems/asimplegame/statistics
+                        - generic [ref=e1139]: 
+                  - row "A Stack of Gold 0.00 31 1406 1222 87% 2.3Easy en " [ref=e1140]:
+                    - cell "A Stack of Gold" [ref=e1141]:
+                      - link "A Stack of Gold" [ref=e1142] [cursor=pointer]:
+                        - /url: /problems/astackofgold
+                    - cell "0.00" [ref=e1143]
+                    - cell "31" [ref=e1144]
+                    - cell "1406" [ref=e1145]
+                    - cell "1222" [ref=e1146]
+                    - cell "87%" [ref=e1147]
+                    - cell "2.3Easy" [ref=e1148]
+                    - cell "en" [ref=e1149]:
+                      - link "en" [ref=e1151] [cursor=pointer]:
+                        - /url: /problems/astackofgold/en
+                    - cell "" [ref=e1152]:
+                      - link "" [ref=e1153] [cursor=pointer]:
+                        - /url: /problems/astackofgold/statistics
+                        - generic [ref=e1154]: 
+                  - row "A Star not a Tree? 0.00 330 242 181 75% 4.7Medium en " [ref=e1155]:
+                    - cell "A Star not a Tree?" [ref=e1156]:
+                      - link "A Star not a Tree?" [ref=e1157] [cursor=pointer]:
+                        - /url: /problems/starnotatree
+                    - cell "0.00" [ref=e1158]
+                    - cell "330" [ref=e1159]
+                    - cell "242" [ref=e1160]
+                    - cell "181" [ref=e1161]
+                    - cell "75%" [ref=e1162]
+                    - cell "4.7Medium" [ref=e1163]
+                    - cell "en" [ref=e1164]:
+                      - link "en" [ref=e1166] [cursor=pointer]:
+                        - /url: /problems/starnotatree/en
+                    - cell "" [ref=e1167]:
+                      - link "" [ref=e1168] [cursor=pointer]:
+                        - /url: /problems/starnotatree/statistics
+                        - generic [ref=e1169]: 
+                  - row "A String Problem 0.03 400 292 188 64% 1.3 - 5.2Medium en " [ref=e1170]:
+                    - cell "A String Problem" [ref=e1171]:
+                      - link "A String Problem" [ref=e1172] [cursor=pointer]:
+                        - /url: /problems/stringproblem
+                    - cell "0.03" [ref=e1173]
+                    - cell "400" [ref=e1174]
+                    - cell "292" [ref=e1175]
+                    - cell "188" [ref=e1176]
+                    - cell "64%" [ref=e1177]
+                    - cell "1.3 - 5.2Medium" [ref=e1178]
+                    - cell "en" [ref=e1179]:
+                      - link "en" [ref=e1181] [cursor=pointer]:
+                        - /url: /problems/stringproblem/en
+                    - cell "" [ref=e1182]:
+                      - link "" [ref=e1183] [cursor=pointer]:
+                        - /url: /problems/stringproblem/statistics
+                        - generic [ref=e1184]: 
+                  - row "A Tale of Two Queues 0.00 60 764 736 96% 1.4Easy en " [ref=e1185]:
+                    - cell "A Tale of Two Queues" [ref=e1186]:
+                      - link "A Tale of Two Queues" [ref=e1187] [cursor=pointer]:
+                        - /url: /problems/ataleoftwoqueues
+                    - cell "0.00" [ref=e1188]
+                    - cell "60" [ref=e1189]
+                    - cell "764" [ref=e1190]
+                    - cell "736" [ref=e1191]
+                    - cell "96%" [ref=e1192]
+                    - cell "1.4Easy" [ref=e1193]
+                    - cell "en" [ref=e1194]:
+                      - link "en" [ref=e1196] [cursor=pointer]:
+                        - /url: /problems/ataleoftwoqueues/en
+                    - cell "" [ref=e1197]:
+                      - link "" [ref=e1198] [cursor=pointer]:
+                        - /url: /problems/ataleoftwoqueues/statistics
+                        - generic [ref=e1199]: 
+                  - row "A Terrible Fortress 0.00 19 2172 2115 97% 1.2Easy en " [ref=e1200]:
+                    - cell "A Terrible Fortress" [ref=e1201]:
+                      - link "A Terrible Fortress" [ref=e1202] [cursor=pointer]:
+                        - /url: /problems/aterriblefortress
+                    - cell "0.00" [ref=e1203]
+                    - cell "19" [ref=e1204]
+                    - cell "2172" [ref=e1205]
+                    - cell "2115" [ref=e1206]
+                    - cell "97%" [ref=e1207]
+                    - cell "1.2Easy" [ref=e1208]
+                    - cell "en" [ref=e1209]:
+                      - link "en" [ref=e1211] [cursor=pointer]:
+                        - /url: /problems/aterriblefortress/en
+                    - cell "" [ref=e1212]:
+                      - link "" [ref=e1213] [cursor=pointer]:
+                        - /url: /problems/aterriblefortress/statistics
+                        - generic [ref=e1214]: 
+                  - row "A Totient Quotient 0.00 245 124 99 80% 5.7Hard en " [ref=e1215]:
+                    - cell "A Totient Quotient" [ref=e1216]:
+                      - link "A Totient Quotient" [ref=e1217] [cursor=pointer]:
+                        - /url: /problems/atotientquotient
+                    - cell "0.00" [ref=e1218]
+                    - cell "245" [ref=e1219]
+                    - cell "124" [ref=e1220]
+                    - cell "99" [ref=e1221]
+                    - cell "80%" [ref=e1222]
+                    - cell "5.7Hard" [ref=e1223]
+                    - cell "en" [ref=e1224]:
+                      - link "en" [ref=e1226] [cursor=pointer]:
+                        - /url: /problems/atotientquotient/en
+                    - cell "" [ref=e1227]:
+                      - link "" [ref=e1228] [cursor=pointer]:
+                        - /url: /problems/atotientquotient/statistics
+                        - generic [ref=e1229]: 
+                  - row "A Towering Problem 0.00 81 2720 2359 87% 2.0Easy en " [ref=e1230]:
+                    - cell "A Towering Problem" [ref=e1231]:
+                      - link "A Towering Problem" [ref=e1232] [cursor=pointer]:
+                        - /url: /problems/towering
+                    - cell "0.00" [ref=e1233]
+                    - cell "81" [ref=e1234]
+                    - cell "2720" [ref=e1235]
+                    - cell "2359" [ref=e1236]
+                    - cell "87%" [ref=e1237]
+                    - cell "2.0Easy" [ref=e1238]
+                    - cell "en" [ref=e1239]:
+                      - link "en" [ref=e1241] [cursor=pointer]:
+                        - /url: /problems/towering/en
+                    - cell "" [ref=e1242]:
+                      - link "" [ref=e1243] [cursor=pointer]:
+                        - /url: /problems/towering/statistics
+                        - generic [ref=e1244]: 
+                  - row "A Tree and Two Edges 0.03 2251 150 100 67% 7.2Hard en " [ref=e1245]:
+                    - cell "A Tree and Two Edges" [ref=e1246]:
+                      - link "A Tree and Two Edges" [ref=e1247] [cursor=pointer]:
+                        - /url: /problems/atreeandtwoedges
+                    - cell "0.03" [ref=e1248]
+                    - cell "2251" [ref=e1249]
+                    - cell "150" [ref=e1250]
+                    - cell "100" [ref=e1251]
+                    - cell "67%" [ref=e1252]
+                    - cell "7.2Hard" [ref=e1253]
+                    - cell "en" [ref=e1254]:
+                      - link "en" [ref=e1256] [cursor=pointer]:
+                        - /url: /problems/atreeandtwoedges/en
+                    - cell "" [ref=e1257]:
+                      - link "" [ref=e1258] [cursor=pointer]:
+                        - /url: /problems/atreeandtwoedges/statistics
+                        - generic [ref=e1259]: 
+                  - row "A Trivial Pursuit 0.09 696 82 45 55% 8.6Hard en " [ref=e1260]:
+                    - cell "A Trivial Pursuit" [ref=e1261]:
+                      - link "A Trivial Pursuit" [ref=e1262] [cursor=pointer]:
+                        - /url: /problems/atrivialpursuit
+                    - cell "0.09" [ref=e1263]
+                    - cell "696" [ref=e1264]
+                    - cell "82" [ref=e1265]
+                    - cell "45" [ref=e1266]
+                    - cell "55%" [ref=e1267]
+                    - cell "8.6Hard" [ref=e1268]
+                    - cell "en" [ref=e1269]:
+                      - link "en" [ref=e1271] [cursor=pointer]:
+                        - /url: /problems/atrivialpursuit/en
+                    - cell "" [ref=e1272]:
+                      - link "" [ref=e1273] [cursor=pointer]:
+                        - /url: /problems/atrivialpursuit/statistics
+                        - generic [ref=e1274]: 
+                  - row "A Vicious Pikeman (Easy) 0.00 127 1941 1683 87% 3.0Medium en " [ref=e1275]:
+                    - cell "A Vicious Pikeman (Easy)" [ref=e1276]:
+                      - link "A Vicious Pikeman (Easy)" [ref=e1277] [cursor=pointer]:
+                        - /url: /problems/pikemaneasy
+                    - cell "0.00" [ref=e1278]
+                    - cell "127" [ref=e1279]
+                    - cell "1941" [ref=e1280]
+                    - cell "1683" [ref=e1281]
+                    - cell "87%" [ref=e1282]
+                    - cell "3.0Medium" [ref=e1283]
+                    - cell "en" [ref=e1284]:
+                      - link "en" [ref=e1286] [cursor=pointer]:
+                        - /url: /problems/pikemaneasy/en
+                    - cell "" [ref=e1287]:
+                      - link "" [ref=e1288] [cursor=pointer]:
+                        - /url: /problems/pikemaneasy/statistics
+                        - generic [ref=e1289]: 
+                  - row "A Vicious Pikeman (Hard) 0.01 301 575 307 53% 7.9Hard en " [ref=e1290]:
+                    - cell "A Vicious Pikeman (Hard)" [ref=e1291]:
+                      - link "A Vicious Pikeman (Hard)" [ref=e1292] [cursor=pointer]:
+                        - /url: /problems/pikemanhard
+                    - cell "0.01" [ref=e1293]
+                    - cell "301" [ref=e1294]
+                    - cell "575" [ref=e1295]
+                    - cell "307" [ref=e1296]
+                    - cell "53%" [ref=e1297]
+                    - cell "7.9Hard" [ref=e1298]
+                    - cell "en" [ref=e1299]:
+                      - link "en" [ref=e1301] [cursor=pointer]:
+                        - /url: /problems/pikemanhard/en
+                    - cell "" [ref=e1302]:
+                      - link "" [ref=e1303] [cursor=pointer]:
+                        - /url: /problems/pikemanhard/statistics
+                        - generic [ref=e1304]: 
+                  - row "A Walk Through The Forest 0.06 472 903 704 78% 4.4Medium en " [ref=e1305]:
+                    - cell "A Walk Through The Forest" [ref=e1306]:
+                      - link "A Walk Through The Forest" [ref=e1307] [cursor=pointer]:
+                        - /url: /problems/walkforest
+                    - cell "0.06" [ref=e1308]
+                    - cell "472" [ref=e1309]
+                    - cell "903" [ref=e1310]
+                    - cell "704" [ref=e1311]
+                    - cell "78%" [ref=e1312]
+                    - cell "4.4Medium" [ref=e1313]
+                    - cell "en" [ref=e1314]:
+                      - link "en" [ref=e1316] [cursor=pointer]:
+                        - /url: /problems/walkforest/en
+                    - cell "" [ref=e1317]:
+                      - link "" [ref=e1318] [cursor=pointer]:
+                        - /url: /problems/walkforest/statistics
+                        - generic [ref=e1319]: 
+                  - row "A to Z Numerals 0.01 5309 7 2 29% 7.9Hard en " [ref=e1320]:
+                    - cell "A to Z Numerals" [ref=e1321]:
+                      - link "A to Z Numerals" [ref=e1322] [cursor=pointer]:
+                        - /url: /problems/a2znumerals
+                    - cell "0.01" [ref=e1323]
+                    - cell "5309" [ref=e1324]
+                    - cell "7" [ref=e1325]
+                    - cell "2" [ref=e1326]
+                    - cell "29%" [ref=e1327]
+                    - cell "7.9Hard" [ref=e1328]
+                    - cell "en" [ref=e1329]:
+                      - link "en" [ref=e1331] [cursor=pointer]:
+                        - /url: /problems/a2znumerals/en
+                    - cell "" [ref=e1332]:
+                      - link "" [ref=e1333] [cursor=pointer]:
+                        - /url: /problems/a2znumerals/statistics
+                        - generic [ref=e1334]: 
+                  - row "A+B Problem 0.02 461 2327 937 40% 5.5Hard en " [ref=e1335]:
+                    - cell "A+B Problem" [ref=e1336]:
+                      - link "A+B Problem" [ref=e1337] [cursor=pointer]:
+                        - /url: /problems/aplusb
+                    - cell "0.02" [ref=e1338]
+                    - cell "461" [ref=e1339]
+                    - cell "2327" [ref=e1340]
+                    - cell "937" [ref=e1341]
+                    - cell "40%" [ref=e1342]
+                    - cell "5.5Hard" [ref=e1343]
+                    - cell "en" [ref=e1344]:
+                      - link "en" [ref=e1346] [cursor=pointer]:
+                        - /url: /problems/aplusb/en
+                    - cell "" [ref=e1347]:
+                      - link "" [ref=e1348] [cursor=pointer]:
+                        - /url: /problems/aplusb/statistics
+                        - generic [ref=e1349]: 
+                  - row "A+B or A-B? 0.00 376 142 22 15% 8.6Hard en " [ref=e1350]:
+                    - cell "A+B or A-B?" [ref=e1351]:
+                      - link "A+B or A-B?" [ref=e1352] [cursor=pointer]:
+                        - /url: /problems/aplusorminusb
+                    - cell "0.00" [ref=e1353]
+                    - cell "376" [ref=e1354]
+                    - cell "142" [ref=e1355]
+                    - cell "22" [ref=e1356]
+                    - cell "15%" [ref=e1357]
+                    - cell "8.6Hard" [ref=e1358]
+                    - cell "en" [ref=e1359]:
+                      - link "en" [ref=e1361] [cursor=pointer]:
+                        - /url: /problems/aplusorminusb/en
+                    - cell "" [ref=e1362]:
+                      - link "" [ref=e1363] [cursor=pointer]:
+                        - /url: /problems/aplusorminusb/statistics
+                        - generic [ref=e1364]: 
+                  - row "A-Mazing Puzzle 0.48 1762 81 49 60% 8.8Hard en " [ref=e1365]:
+                    - cell "A-Mazing Puzzle" [ref=e1366]:
+                      - link "A-Mazing Puzzle" [ref=e1367] [cursor=pointer]:
+                        - /url: /problems/amazingpuzzle
+                    - cell "0.48" [ref=e1368]
+                    - cell "1762" [ref=e1369]
+                    - cell "81" [ref=e1370]
+                    - cell "49" [ref=e1371]
+                    - cell "60%" [ref=e1372]
+                    - cell "8.8Hard" [ref=e1373]
+                    - cell "en" [ref=e1374]:
+                      - link "en" [ref=e1376] [cursor=pointer]:
+                        - /url: /problems/amazingpuzzle/en
+                    - cell "" [ref=e1377]:
+                      - link "" [ref=e1378] [cursor=pointer]:
+                        - /url: /problems/amazingpuzzle/statistics
+                        - generic [ref=e1379]: 
+                  - row "A-Skew-ed Reasoning 0.09 1404 64 40 62% 7.3Hard en " [ref=e1380]:
+                    - cell "A-Skew-ed Reasoning" [ref=e1381]:
+                      - link "A-Skew-ed Reasoning" [ref=e1382] [cursor=pointer]:
+                        - /url: /problems/askewedreasoning
+                    - cell "0.09" [ref=e1383]
+                    - cell "1404" [ref=e1384]
+                    - cell "64" [ref=e1385]
+                    - cell "40" [ref=e1386]
+                    - cell "62%" [ref=e1387]
+                    - cell "7.3Hard" [ref=e1388]
+                    - cell "en" [ref=e1389]:
+                      - link "en" [ref=e1391] [cursor=pointer]:
+                        - /url: /problems/askewedreasoning/en
+                    - cell "" [ref=e1392]:
+                      - link "" [ref=e1393] [cursor=pointer]:
+                        - /url: /problems/askewedreasoning/statistics
+                        - generic [ref=e1394]: 
+                  - row "A1 Paper 0.00 98 3141 2438 78% 4.5Medium en " [ref=e1395]:
+                    - cell "A1 Paper" [ref=e1396]:
+                      - link "A1 Paper" [ref=e1397] [cursor=pointer]:
+                        - /url: /problems/a1paper
+                    - cell "0.00" [ref=e1398]
+                    - cell "98" [ref=e1399]
+                    - cell "3141" [ref=e1400]
+                    - cell "2438" [ref=e1401]
+                    - cell "78%" [ref=e1402]
+                    - cell "4.5Medium" [ref=e1403]
+                    - cell "en" [ref=e1404]:
+                      - link "en" [ref=e1406] [cursor=pointer]:
+                        - /url: /problems/a1paper/en
+                    - cell "" [ref=e1407]:
+                      - link "" [ref=e1408] [cursor=pointer]:
+                        - /url: /problems/a1paper/statistics
+                        - generic [ref=e1409]: 
+                  - row "A=B 0.00 242 91 57 63% 6.2Hard en " [ref=e1410]:
+                    - cell "A=B" [ref=e1411]:
+                      - link "A=B" [ref=e1412] [cursor=pointer]:
+                        - /url: /problems/aequalsb
+                    - cell "0.00" [ref=e1413]
+                    - cell "242" [ref=e1414]
+                    - cell "91" [ref=e1415]
+                    - cell "57" [ref=e1416]
+                    - cell "63%" [ref=e1417]
+                    - cell "6.2Hard" [ref=e1418]
+                    - cell "en" [ref=e1419]:
+                      - link "en" [ref=e1421] [cursor=pointer]:
+                        - /url: /problems/aequalsb/en
+                    - cell "" [ref=e1422]:
+                      - link "" [ref=e1423] [cursor=pointer]:
+                        - /url: /problems/aequalsb/statistics
+                        - generic [ref=e1424]: 
+                  - row "ABC 0.00 32 16831 14878 88% 1.7Easy en " [ref=e1425]:
+                    - cell "ABC" [ref=e1426]:
+                      - link "ABC" [ref=e1427] [cursor=pointer]:
+                        - /url: /problems/abc
+                    - cell "0.00" [ref=e1428]
+                    - cell "32" [ref=e1429]
+                    - cell "16831" [ref=e1430]
+                    - cell "14878" [ref=e1431]
+                    - cell "88%" [ref=e1432]
+                    - cell "1.7Easy" [ref=e1433]
+                    - cell "en" [ref=e1434]:
+                      - link "en" [ref=e1436] [cursor=pointer]:
+                        - /url: /problems/abc/en
+                    - cell "" [ref=e1437]:
+                      - link "" [ref=e1438] [cursor=pointer]:
+                        - /url: /problems/abc/statistics
+                        - generic [ref=e1439]: 
+                  - row "ABC String 0.00 54 728 504 69% 4.6Medium en " [ref=e1440]:
+                    - cell "ABC String" [ref=e1441]:
+                      - link "ABC String" [ref=e1442] [cursor=pointer]:
+                        - /url: /problems/abcstring
+                    - cell "0.00" [ref=e1443]
+                    - cell "54" [ref=e1444]
+                    - cell "728" [ref=e1445]
+                    - cell "504" [ref=e1446]
+                    - cell "69%" [ref=e1447]
+                    - cell "4.6Medium" [ref=e1448]
+                    - cell "en" [ref=e1449]:
+                      - link "en" [ref=e1451] [cursor=pointer]:
+                        - /url: /problems/abcstring/en
+                    - cell "" [ref=e1452]:
+                      - link "" [ref=e1453] [cursor=pointer]:
+                        - /url: /problems/abcstring/statistics
+                        - generic [ref=e1454]: 
+                  - row "ACKME Company Picnic 0.05 391 98 68 69% 5.6Hard en " [ref=e1455]:
+                    - cell "ACKME Company Picnic" [ref=e1456]:
+                      - link "ACKME Company Picnic" [ref=e1457] [cursor=pointer]:
+                        - /url: /problems/ackmecompanypicnic
+                    - cell "0.05" [ref=e1458]
+                    - cell "391" [ref=e1459]
+                    - cell "98" [ref=e1460]
+                    - cell "68" [ref=e1461]
+                    - cell "69%" [ref=e1462]
+                    - cell "5.6Hard" [ref=e1463]
+                    - cell "en" [ref=e1464]:
+                      - link "en" [ref=e1466] [cursor=pointer]:
+                        - /url: /problems/ackmecompanypicnic/en
+                    - cell "" [ref=e1467]:
+                      - link "" [ref=e1468] [cursor=pointer]:
+                        - /url: /problems/ackmecompanypicnic/statistics
+                        - generic [ref=e1469]: 
+                  - row "ACM Contest Scoring 0.00 95 8270 7696 93% 1.6Easy en " [ref=e1470]:
+                    - cell "ACM Contest Scoring" [ref=e1471]:
+                      - link "ACM Contest Scoring" [ref=e1472] [cursor=pointer]:
+                        - /url: /problems/acm
+                    - cell "0.00" [ref=e1473]
+                    - cell "95" [ref=e1474]
+                    - cell "8270" [ref=e1475]
+                    - cell "7696" [ref=e1476]
+                    - cell "93%" [ref=e1477]
+                    - cell "1.6Easy" [ref=e1478]
+                    - cell "en" [ref=e1479]:
+                      - link "en" [ref=e1481] [cursor=pointer]:
+                        - /url: /problems/acm/en
+                    - cell "" [ref=e1482]:
+                      - link "" [ref=e1483] [cursor=pointer]:
+                        - /url: /problems/acm/statistics
+                        - generic [ref=e1484]: 
+                  - row "AI Art 0.00 65 113 95 84% 2.8Medium en " [ref=e1485]:
+                    - cell "AI Art" [ref=e1486]:
+                      - link "AI Art" [ref=e1487] [cursor=pointer]:
+                        - /url: /problems/aiart
+                    - cell "0.00" [ref=e1488]
+                    - cell "65" [ref=e1489]
+                    - cell "113" [ref=e1490]
+                    - cell "95" [ref=e1491]
+                    - cell "84%" [ref=e1492]
+                    - cell "2.8Medium" [ref=e1493]
+                    - cell "en" [ref=e1494]:
+                      - link "en" [ref=e1496] [cursor=pointer]:
+                        - /url: /problems/aiart/en
+                    - cell "" [ref=e1497]:
+                      - link "" [ref=e1498] [cursor=pointer]:
+                        - /url: /problems/aiart/statistics
+                        - generic [ref=e1499]: 
+                  - row "AI Jeopardy 0.02 145 206 127 62% 6.5Hard en " [ref=e1500]:
+                    - cell "AI Jeopardy" [ref=e1501]:
+                      - link "AI Jeopardy" [ref=e1502] [cursor=pointer]:
+                        - /url: /problems/aijeopardy
+                    - cell "0.02" [ref=e1503]
+                    - cell "145" [ref=e1504]
+                    - cell "206" [ref=e1505]
+                    - cell "127" [ref=e1506]
+                    - cell "62%" [ref=e1507]
+                    - cell "6.5Hard" [ref=e1508]
+                    - cell "en" [ref=e1509]:
+                      - link "en" [ref=e1511] [cursor=pointer]:
+                        - /url: /problems/aijeopardy/en
+                    - cell "" [ref=e1512]:
+                      - link "" [ref=e1513] [cursor=pointer]:
+                        - /url: /problems/aijeopardy/statistics
+                        - generic [ref=e1514]: 
+                  - row "AND Permutation 0.08 134 218 125 57% 7.0Hard en " [ref=e1515]:
+                    - cell "AND Permutation" [ref=e1516]:
+                      - link "AND Permutation" [ref=e1517] [cursor=pointer]:
+                        - /url: /problems/andpermutation
+                    - cell "0.08" [ref=e1518]
+                    - cell "134" [ref=e1519]
+                    - cell "218" [ref=e1520]
+                    - cell "125" [ref=e1521]
+                    - cell "57%" [ref=e1522]
+                    - cell "7.0Hard" [ref=e1523]
+                    - cell "en" [ref=e1524]:
+                      - link "en" [ref=e1526] [cursor=pointer]:
+                        - /url: /problems/andpermutation/en
+                    - cell "" [ref=e1527]:
+                      - link "" [ref=e1528] [cursor=pointer]:
+                        - /url: /problems/andpermutation/statistics
+                        - generic [ref=e1529]: 
+                  - row "ARMPIT Computations 0.00 303 131 89 68% 5.6Hard en " [ref=e1530]:
+                    - cell "ARMPIT Computations" [ref=e1531]:
+                      - link "ARMPIT Computations" [ref=e1532] [cursor=pointer]:
+                        - /url: /problems/armpitcomputations
+                    - cell "0.00" [ref=e1533]
+                    - cell "303" [ref=e1534]
+                    - cell "131" [ref=e1535]
+                    - cell "89" [ref=e1536]
+                    - cell "68%" [ref=e1537]
+                    - cell "5.6Hard" [ref=e1538]
+                    - cell "en" [ref=e1539]:
+                      - link "en" [ref=e1541] [cursor=pointer]:
+                        - /url: /problems/armpitcomputations/en
+                    - cell "" [ref=e1542]:
+                      - link "" [ref=e1543] [cursor=pointer]:
+                        - /url: /problems/armpitcomputations/statistics
+                        - generic [ref=e1544]: 
+                  - row "AROD 0.01 1282 57 31 54% 9.0Hard en " [ref=e1545]:
+                    - cell "AROD" [ref=e1546]:
+                      - link "AROD" [ref=e1547] [cursor=pointer]:
+                        - /url: /problems/arod
+                    - cell "0.01" [ref=e1548]
+                    - cell "1282" [ref=e1549]
+                    - cell "57" [ref=e1550]
+                    - cell "31" [ref=e1551]
+                    - cell "54%" [ref=e1552]
+                    - cell "9.0Hard" [ref=e1553]
+                    - cell "en" [ref=e1554]:
+                      - link "en" [ref=e1556] [cursor=pointer]:
+                        - /url: /problems/arod/en
+                    - cell "" [ref=e1557]:
+                      - link "" [ref=e1558] [cursor=pointer]:
+                        - /url: /problems/arod/statistics
+                        - generic [ref=e1559]: 
+                  - row "ASCII Addition 0.00 491 1398 1236 88% 2.4Easy en " [ref=e1560]:
+                    - cell "ASCII Addition" [ref=e1561]:
+                      - link "ASCII Addition" [ref=e1562] [cursor=pointer]:
+                        - /url: /problems/asciiaddition
+                    - cell "0.00" [ref=e1563]
+                    - cell "491" [ref=e1564]
+                    - cell "1398" [ref=e1565]
+                    - cell "1236" [ref=e1566]
+                    - cell "88%" [ref=e1567]
+                    - cell "2.4Easy" [ref=e1568]
+                    - cell "en" [ref=e1569]:
+                      - link "en" [ref=e1571] [cursor=pointer]:
+                        - /url: /problems/asciiaddition/en
+                    - cell "" [ref=e1572]:
+                      - link "" [ref=e1573] [cursor=pointer]:
+                        - /url: /problems/asciiaddition/statistics
+                        - generic [ref=e1574]: 
+                  - row "ASCII Art 0.00 551 132 91 69% 5.0Medium en " [ref=e1575]:
+                    - cell "ASCII Art" [ref=e1576]:
+                      - link "ASCII Art" [ref=e1577] [cursor=pointer]:
+                        - /url: /problems/asciiart
+                    - cell "0.00" [ref=e1578]
+                    - cell "551" [ref=e1579]
+                    - cell "132" [ref=e1580]
+                    - cell "91" [ref=e1581]
+                    - cell "69%" [ref=e1582]
+                    - cell "5.0Medium" [ref=e1583]
+                    - cell "en" [ref=e1584]:
+                      - link "en" [ref=e1586] [cursor=pointer]:
+                        - /url: /problems/asciiart/en
+                    - cell "" [ref=e1587]:
+                      - link "" [ref=e1588] [cursor=pointer]:
+                        - /url: /problems/asciiart/statistics
+                        - generic [ref=e1589]: 
+                  - row "ASCII Box 3 0.00 228 101 57 56% 3.5 - 4.7Medium en is " [ref=e1590]:
+                    - cell "ASCII Box 3" [ref=e1591]:
+                      - link "ASCII Box 3" [ref=e1592] [cursor=pointer]:
+                        - /url: /problems/asciikassi3
+                    - cell "0.00" [ref=e1593]
+                    - cell "228" [ref=e1594]
+                    - cell "101" [ref=e1595]
+                    - cell "57" [ref=e1596]
+                    - cell "56%" [ref=e1597]
+                    - cell "3.5 - 4.7Medium" [ref=e1598]
+                    - cell "en is" [ref=e1599]:
+                      - generic [ref=e1600]:
+                        - link "en" [ref=e1601] [cursor=pointer]:
+                          - /url: /problems/asciikassi3/en
+                        - link "is" [ref=e1602] [cursor=pointer]:
+                          - /url: /problems/asciikassi3/is
+                    - cell "" [ref=e1603]:
+                      - link "" [ref=e1604] [cursor=pointer]:
+                        - /url: /problems/asciikassi3/statistics
+                        - generic [ref=e1605]: 
+                  - row "ASCII Figure Rotation 0.00 143 1363 1141 84% 2.7Easy en " [ref=e1606]:
+                    - cell "ASCII Figure Rotation" [ref=e1607]:
+                      - link "ASCII Figure Rotation" [ref=e1608] [cursor=pointer]:
+                        - /url: /problems/asciifigurerotation
+                    - cell "0.00" [ref=e1609]
+                    - cell "143" [ref=e1610]
+                    - cell "1363" [ref=e1611]
+                    - cell "1141" [ref=e1612]
+                    - cell "84%" [ref=e1613]
+                    - cell "2.7Easy" [ref=e1614]
+                    - cell "en" [ref=e1615]:
+                      - link "en" [ref=e1617] [cursor=pointer]:
+                        - /url: /problems/asciifigurerotation/en
+                    - cell "" [ref=e1618]:
+                      - link "" [ref=e1619] [cursor=pointer]:
+                        - /url: /problems/asciifigurerotation/statistics
+                        - generic [ref=e1620]: 
+                  - row "ASCII Kassi 2 0.00 68 749 572 76% 2.3 - 2.4Easy en is " [ref=e1621]:
+                    - cell "ASCII Kassi 2" [ref=e1622]:
+                      - link "ASCII Kassi 2" [ref=e1623] [cursor=pointer]:
+                        - /url: /problems/asciikassi2
+                    - cell "0.00" [ref=e1624]
+                    - cell "68" [ref=e1625]
+                    - cell "749" [ref=e1626]
+                    - cell "572" [ref=e1627]
+                    - cell "76%" [ref=e1628]
+                    - cell "2.3 - 2.4Easy" [ref=e1629]
+                    - cell "en is" [ref=e1630]:
+                      - generic [ref=e1631]:
+                        - link "en" [ref=e1632] [cursor=pointer]:
+                          - /url: /problems/asciikassi2/en
+                        - link "is" [ref=e1633] [cursor=pointer]:
+                          - /url: /problems/asciikassi2/is
+                    - cell "" [ref=e1634]:
+                      - link "" [ref=e1635] [cursor=pointer]:
+                        - /url: /problems/asciikassi2/statistics
+                        - generic [ref=e1636]: 
+              - generic [ref=e1637]:
+                - generic [ref=e1638]:
+                  - button " Previous" [ref=e1639]:
+                    - generic [ref=e1640]:
+                      - generic [ref=e1641]: 
+                      - generic [ref=e1642]: Previous
+                  - generic [ref=e1643]:
+                    - button "1" [ref=e1644] [cursor=pointer]
+                    - button "2" [ref=e1645] [cursor=pointer]
+                    - generic [ref=e1646]: ...
+                    - button "60" [ref=e1647] [cursor=pointer]
+                  - button "Next " [ref=e1648] [cursor=pointer]:
+                    - generic [ref=e1649]:
+                      - generic [ref=e1650]: Next
+                      - generic [ref=e1651]: 
+                - generic [ref=e1654]:
+                  - spinbutton [ref=e1655]
+                  - button "Go" [ref=e1656] [cursor=pointer]
+    - contentinfo [ref=e1658]:
+      - generic [ref=e1659]:
+        - link "Contact" [ref=e1660] [cursor=pointer]:
+          - /url: /contact
+        - link "System Status" [ref=e1661] [cursor=pointer]:
+          - /url: https://status.kattis.com
+        - link "Terms of Service" [ref=e1662] [cursor=pointer]:
+          - /url: /contracts/current/tos
+        - link "Privacy Policy" [ref=e1663] [cursor=pointer]:
+          - /url: /contracts/current/privacy_policy
+  - iframe [ref=e1664]:
+    - generic [ref=f14e2]:
+      - img [ref=f14e4]
+      - generic [ref=f14e11]:
+        - heading "Status embed installed correctly" [level=1] [ref=f14e12]:
+          - paragraph [ref=f14e13]: Status embed installed correctly
+        - generic [ref=f14e14]: This will be shown if an incident or maintenance is posted on your status page.
+        - link "View latest updates" [ref=f14e16] [cursor=pointer]:
+          - /url: https://status.kattis.com?utm_source=embed
+      - button [ref=f14e18] [cursor=pointer]:
+        - img [ref=f14e19]

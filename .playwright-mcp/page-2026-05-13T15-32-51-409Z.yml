@@ -1,0 +1,192 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - link "CSES" [ref=e4] [cursor=pointer]:
+      - /url: /
+      - img "CSES" [ref=e5]
+    - text: 
+    - generic [ref=e6]:
+      - link "Login" [ref=e7] [cursor=pointer]:
+        - /url: /login
+      - text: —
+      - link "Dark mode" [ref=e8] [cursor=pointer]:
+        - /url: /darkmode
+        - generic "Dark mode" [ref=e9]: 
+  - generic [ref=e10]:
+    - generic [ref=e12]:
+      - heading "CSES Problem Set" [level=3] [ref=e13]:
+        - link "CSES Problem Set" [ref=e14] [cursor=pointer]:
+          - /url: /problemset/list/
+      - heading "Subarray Divisibility" [level=1] [ref=e15]
+      - list [ref=e16]:
+        - listitem [ref=e17]:
+          - link "Task" [ref=e18] [cursor=pointer]:
+            - /url: /problemset/task/1662/
+        - listitem [ref=e19]:
+          - link "Statistics" [ref=e20] [cursor=pointer]:
+            - /url: /problemset/stats/1662/
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - list [ref=e23]:
+          - listitem [ref=e24]: "Time limit: 1.00 s"
+          - listitem [ref=e25]: "Memory limit: 512 MB"
+        - generic [ref=e26]:
+          - paragraph [ref=e27]:
+            - text: Given an array of
+            - generic [ref=e29]:
+              - math [ref=e31]:
+                - generic [ref=e34]: "n"
+              - generic [ref=e36]: "n"
+            - text: integers, your task is to count the number of subarrays where the sum of values is divisible by
+            - generic [ref=e38]:
+              - math [ref=e40]:
+                - generic [ref=e43]: "n"
+              - generic [ref=e45]: "n"
+            - text: .
+          - heading "Input" [level=1] [ref=e46]
+          - paragraph [ref=e47]:
+            - text: The first input line has an integer
+            - generic [ref=e49]:
+              - math [ref=e51]:
+                - generic [ref=e54]: "n"
+              - generic [ref=e56]: "n"
+            - text: ": the size of the array."
+          - paragraph [ref=e57]:
+            - text: The next line has
+            - generic [ref=e59]:
+              - math [ref=e61]:
+                - generic [ref=e64]: "n"
+              - generic [ref=e66]: "n"
+            - text: integers
+            - generic [ref=e68]:
+              - math [ref=e70]:
+                - generic [ref=e72]:
+                  - generic [ref=e73]:
+                    - generic [ref=e74]: a
+                    - generic [ref=e75]: "1"
+                  - generic [ref=e76]: ","
+                  - generic [ref=e77]:
+                    - generic [ref=e78]: a
+                    - generic [ref=e79]: "2"
+                  - generic [ref=e80]: ","
+                  - generic [ref=e81]: …
+                  - generic [ref=e82]: ","
+                  - generic [ref=e83]:
+                    - generic [ref=e84]: a
+                    - generic [ref=e85]: "n"
+              - generic [ref=e87]:
+                - generic [ref=e88]:
+                  - text: a
+                  - generic [ref=e93]: "1"
+                - text: ","
+                - generic [ref=e97]:
+                  - text: a
+                  - generic [ref=e102]: "2"
+                - text: ", … ,"
+                - generic [ref=e106]:
+                  - text: a
+                  - generic [ref=e111]: "n"
+            - text: ": the contents of the array."
+          - heading "Output" [level=1] [ref=e115]
+          - paragraph [ref=e116]: "Print one integer: the required number of subarrays."
+          - heading "Constraints" [level=1] [ref=e117]
+          - list [ref=e118]:
+            - listitem [ref=e119]:
+              - generic [ref=e121]:
+                - math [ref=e123]:
+                  - generic [ref=e125]:
+                    - generic [ref=e126]: "1"
+                    - generic [ref=e127]: ≤
+                    - generic [ref=e128]: "n"
+                    - generic [ref=e129]: ≤
+                    - generic [ref=e130]: "2"
+                    - generic [ref=e131]: ⋅
+                    - generic [ref=e132]: "1"
+                    - generic [ref=e133]:
+                      - generic [ref=e134]: "0"
+                      - generic [ref=e135]: "5"
+                - generic [ref=e136]:
+                  - generic [ref=e137]: 1 ≤
+                  - generic [ref=e138]: n ≤
+                  - generic [ref=e139]: 2 ⋅
+                  - generic [ref=e140]:
+                    - text: "1"
+                    - generic [ref=e141]:
+                      - text: "0"
+                      - generic [ref=e146]: "5"
+            - listitem [ref=e147]:
+              - generic [ref=e149]:
+                - math [ref=e151]:
+                  - generic [ref=e153]:
+                    - generic [ref=e154]: −
+                    - generic [ref=e155]: "1"
+                    - generic [ref=e156]:
+                      - generic [ref=e157]: "0"
+                      - generic [ref=e158]: "9"
+                    - generic [ref=e159]: ≤
+                    - generic [ref=e160]:
+                      - generic [ref=e161]: a
+                      - generic [ref=e162]: i
+                    - generic [ref=e163]: ≤
+                    - generic [ref=e164]: "1"
+                    - generic [ref=e165]:
+                      - generic [ref=e166]: "0"
+                      - generic [ref=e167]: "9"
+                - generic [ref=e168]:
+                  - generic [ref=e169]:
+                    - text: −1
+                    - generic [ref=e170]:
+                      - text: "0"
+                      - generic [ref=e175]: "9"
+                    - text: ≤
+                  - generic [ref=e176]:
+                    - generic [ref=e177]:
+                      - text: a
+                      - generic [ref=e182]: i
+                    - text: ≤
+                  - generic [ref=e186]:
+                    - text: "1"
+                    - generic [ref=e187]:
+                      - text: "0"
+                      - generic [ref=e192]: "9"
+          - heading "Example" [level=1] [ref=e193]
+          - paragraph [ref=e194]: "Input:"
+          - generic [ref=e195]: 5 3 1 2 7 4
+          - paragraph [ref=e196]: "Output:"
+          - generic [ref=e197]: "1"
+      - generic [ref=e198]:
+        - heading "Sorting and Searching" [level=4] [ref=e199]
+        - text: ...
+        - link "Nearest Smaller Values " [ref=e200] [cursor=pointer]:
+          - /url: /problemset/task/1645
+          - text: Nearest Smaller Values
+          - generic [ref=e201]: 
+        - link "Subarray Sums I " [ref=e202] [cursor=pointer]:
+          - /url: /problemset/task/1660
+          - text: Subarray Sums I
+          - generic [ref=e203]: 
+        - link "Subarray Sums II " [ref=e204] [cursor=pointer]:
+          - /url: /problemset/task/1661
+          - text: Subarray Sums II
+          - generic [ref=e205]: 
+        - link "Subarray Divisibility " [ref=e206] [cursor=pointer]:
+          - /url: /problemset/task/1662
+          - text: Subarray Divisibility
+          - generic [ref=e207]: 
+        - link "Distinct Values Subarrays II " [ref=e208] [cursor=pointer]:
+          - /url: /problemset/task/2428
+          - text: Distinct Values Subarrays II
+          - generic [ref=e209]: 
+        - link "Array Division " [ref=e210] [cursor=pointer]:
+          - /url: /problemset/task/1085
+          - text: Array Division
+          - generic [ref=e211]: 
+        - link "Movie Festival II " [ref=e212] [cursor=pointer]:
+          - /url: /problemset/task/1632
+          - text: Movie Festival II
+          - generic [ref=e213]: 
+        - link "Maximum Subarray Sum II " [ref=e214] [cursor=pointer]:
+          - /url: /problemset/task/1644
+          - text: Maximum Subarray Sum II
+          - generic [ref=e215]: 
+        - separator [ref=e216]
+        - heading "Your submissions" [level=4] [ref=e217]

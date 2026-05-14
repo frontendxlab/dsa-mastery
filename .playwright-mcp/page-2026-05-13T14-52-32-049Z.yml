@@ -1,0 +1,676 @@
+- generic [ref=e3]:
+  - img "Close" [ref=e5] [cursor=pointer]
+  - banner [ref=e7]:
+    - generic [ref=e8]:
+      - img [ref=e10] [cursor=pointer]
+      - link "AlgoExpert Ace the Technical Interviews" [ref=e13] [cursor=pointer]:
+        - /url: /product
+        - generic [ref=e14]:
+          - img [ref=e15]
+          - heading "AlgoExpert" [level=1] [ref=e17]
+        - generic [ref=e18]: Ace the Technical Interviews
+      - button "Log In" [ref=e21] [cursor=pointer]:
+        - generic [ref=e22]: Log In
+    - generic [ref=e23]:
+      - generic [ref=e25]:
+        - heading "AlgoExpert" [level=1] [ref=e26]
+        - paragraph [ref=e27]:
+          - text: The ultimate resource to prepare for coding interviews.
+          - text: Everything you need, in one streamlined platform.
+        - link "Buy AlgoExpert" [ref=e860] [cursor=pointer]:
+          - /url: /purchase#algoexpert
+          - generic [ref=e861]:
+            - img [ref=e862]
+            - text: Buy AlgoExpert
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - generic [ref=e33]:
+            - generic [ref=e35]: Prompt
+            - heading "Max Profit With K Transactions" [level=4] [ref=e37]
+          - generic [ref=e51]: Tests
+        - generic [ref=e73]:
+          - generic [ref=e75]:
+            - generic [ref=e76]: Input
+            - button "Run" [ref=e78] [cursor=pointer]
+          - generic [ref=e126]:
+            - generic [ref=e127]: Output
+            - button "Submit" [ref=e129] [cursor=pointer]
+  - generic [ref=e131]:
+    - generic [ref=e132]:
+      - heading "What is AlgoExpert?" [level=2] [ref=e133]
+      - button "Watch the Video Watch the Video" [ref=e135] [cursor=pointer]:
+        - generic [ref=e136]:
+          - img [ref=e137]
+          - generic [ref=e139]: Watch the Video
+        - img [ref=e140]
+        - generic [ref=e142]: Watch the Video
+      - generic [ref=e143]:
+        - generic [ref=e144]:
+          - img [ref=e145]
+          - heading "200 Hand-Picked Questions" [level=3] [ref=e149]
+          - paragraph [ref=e150]:
+            - text: Coding interview prep is a numbers game that many candidates lose. We've hand-picked 200 of the best coding interview questions to prepare you for every interview you could encounter.
+            - text: Learn more.
+        - generic [ref=e151]:
+          - img [ref=e152]
+          - heading "100+ Hours Of Video Explanations" [level=3] [ref=e156]
+          - paragraph [ref=e157]:
+            - text: Algorithms are tough to learn on paper. Each of our questions is accompanied by a two-part video explanation to maximize learning. That's over 100 hours of content, all at your fingertips.
+            - text: Learn more.
+        - generic [ref=e158]:
+          - img [ref=e159]
+          - heading "Data Structures Crash Course" [level=3] [ref=e161]
+          - paragraph [ref=e162]:
+            - text: Data structures are the pillars of coding interviews. Our video series gives you the foundational knowledge you need to be well-versed in all of the popular data structures.
+            - text: Learn more.
+        - generic [ref=e163]:
+          - img [ref=e164]
+          - heading "Solutions In 9 Languages" [level=3] [ref=e168]
+          - paragraph [ref=e169]:
+            - text: "Not everyone speaks the same programming language. All of our solutions come in 9 different languages: JavaScript, TypeScript, Python, Swift, Kotlin, C++, Java, C#, and Go."
+            - text: Learn more.
+        - generic [ref=e170]:
+          - img [ref=e171]
+          - heading "Feature-Rich Coding Workspace" [level=3] [ref=e174]
+          - paragraph [ref=e175]:
+            - text: Coding out solutions to algorithm problems is the best way to practice. Our coding workspace lets you type out your answers and run them against our test cases, right here on the website.
+            - text: Learn more.
+        - generic [ref=e176]:
+          - img [ref=e177]
+          - heading "Space-Time Complexity Analyses" [level=3] [ref=e181]
+          - paragraph [ref=e182]:
+            - text: Understanding how much memory an algorithm uses and how fast it runs is crucial to passing coding interviews. All of our explanations include a rigorous space-time complexity analysis.
+            - text: Learn more.
+        - generic [ref=e183]:
+          - img [ref=e184]
+          - heading "4 Curated Assessments" [level=3] [ref=e187]
+          - paragraph [ref=e188]: Real coding interviews are timed and have multiple questions. We've curated 4 assessments to reflect a real day of coding interviews, filled with variety and appropriate difficulty.
+        - generic [ref=e189]:
+          - img [ref=e190]
+          - heading "Mock Coding Interviews" [level=3] [ref=e195]
+          - paragraph [ref=e196]: Nothing compares to doing a real coding interview with a real human being. We let you do mock coding interviews with other users on a shared workspace, right here on AlgoExpert.
+        - generic [ref=e197]:
+          - img [ref=e198]
+          - heading "Recruiting Profile & Certificate" [level=3] [ref=e203]
+          - paragraph [ref=e204]:
+            - text: Landing technical interviews can be harder than passing them. Once you earn the AlgoExpert Certificate, we refer you to tech companies so you can directly start their interview process.
+            - text: Learn more.
+    - generic [ref=e206]:
+      - heading "A Better Way to Prep for Coding Interviews." [level=2] [ref=e207]
+      - table [ref=e209]:
+        - rowgroup [ref=e210]:
+          - row "Cracking the Coding Interview LeetCode AlgoExpert" [ref=e211]:
+            - columnheader [ref=e212]
+            - columnheader "Cracking the Coding Interview" [ref=e213]:
+              - generic [ref=e214]: Cracking the Coding Interview
+            - columnheader "LeetCode" [ref=e215]:
+              - generic [ref=e216]: LeetCode
+            - columnheader "AlgoExpert" [ref=e217]:
+              - generic [ref=e218]:
+                - img [ref=e219]
+                - text: AlgoExpert
+        - rowgroup [ref=e221]:
+          - row "100+ Practice Questions" [ref=e222]:
+            - rowheader "100+ Practice Questions" [ref=e223]
+            - cell [ref=e224]:
+              - img [ref=e226]
+            - cell [ref=e228]:
+              - img [ref=e230]
+            - cell [ref=e232]:
+              - img [ref=e234]
+          - row "Data Structures Content" [ref=e236]:
+            - rowheader "Data Structures Content" [ref=e237]
+            - cell [ref=e238]:
+              - img [ref=e240]
+            - cell [ref=e242]:
+              - img [ref=e244]
+            - cell [ref=e246]:
+              - img [ref=e248]
+          - row "Guided Format" [ref=e250]:
+            - rowheader "Guided Format" [ref=e251]
+            - cell [ref=e252]:
+              - img [ref=e254]
+            - cell [ref=e256]:
+              - img [ref=e258]
+            - cell [ref=e260]:
+              - img [ref=e262]
+          - row "Coding Workspace" [ref=e264]:
+            - rowheader "Coding Workspace" [ref=e265]
+            - cell [ref=e266]:
+              - img [ref=e268]
+            - cell [ref=e270]:
+              - img [ref=e272]
+            - cell [ref=e274]:
+              - img [ref=e276]
+          - row "Multiple Programming Languages" [ref=e278]:
+            - rowheader "Multiple Programming Languages" [ref=e279]
+            - cell [ref=e280]:
+              - img [ref=e282]
+            - cell [ref=e284]:
+              - img [ref=e286]
+            - cell [ref=e288]:
+              - img [ref=e290]
+          - row "High-Quality Solutions" [ref=e292]:
+            - rowheader "High-Quality Solutions" [ref=e293]
+            - cell [ref=e294]:
+              - img [ref=e296]
+            - cell [ref=e298]:
+              - img [ref=e300]
+            - cell [ref=e302]:
+              - img [ref=e304]
+          - row "Video Explanations" [ref=e306]:
+            - rowheader "Video Explanations" [ref=e307]
+            - cell [ref=e308]:
+              - img [ref=e310]
+            - cell [ref=e312]:
+              - img [ref=e314]
+            - cell [ref=e316]:
+              - img [ref=e318]
+          - row "Mock Interviews" [ref=e320]:
+            - rowheader "Mock Interviews" [ref=e321]
+            - cell [ref=e322]:
+              - img [ref=e324]
+            - cell [ref=e326]:
+              - img [ref=e328]
+            - cell [ref=e330]:
+              - img [ref=e332]
+          - row "All-In-One Platform" [ref=e334]:
+            - rowheader "All-In-One Platform" [ref=e335]
+            - cell [ref=e336]:
+              - img [ref=e338]
+            - cell [ref=e340]:
+              - img [ref=e342]
+            - cell [ref=e344]:
+              - img [ref=e346]
+    - generic [ref=e349]:
+      - heading "With Great Outcomes." [level=2] [ref=e350]
+      - heading "Our customers have gotten offers from awesome companies." [level=4] [ref=e351]
+      - generic [ref=e352]:
+        - generic [ref=e354]:
+          - generic [ref=e355]:
+            - generic [ref=e356]:
+              - img "company logo"
+            - generic [ref=e357]:
+              - img "company logo"
+            - generic [ref=e358]:
+              - img "company logo"
+            - generic [ref=e359]:
+              - img "company logo"
+            - generic [ref=e360]:
+              - img "company logo"
+            - generic [ref=e361]:
+              - img "company logo"
+          - generic [ref=e362]:
+            - generic [ref=e363]:
+              - img "company logo"
+            - generic [ref=e364]:
+              - img "company logo"
+            - generic [ref=e365]:
+              - img "company logo"
+            - generic [ref=e366]:
+              - img "company logo"
+            - generic [ref=e367]:
+              - img "company logo"
+            - generic [ref=e368]:
+              - img "company logo"
+        - generic [ref=e369]:
+          - generic [ref=e370]:
+            - generic [ref=e371]:
+              - img "company logo"
+            - generic [ref=e372]:
+              - img "company logo"
+            - generic [ref=e373]:
+              - img "company logo"
+            - generic [ref=e374]:
+              - img "company logo"
+            - generic [ref=e375]:
+              - img "company logo"
+            - generic [ref=e376]:
+              - img "company logo"
+          - generic [ref=e377]:
+            - generic [ref=e378]:
+              - img "company logo"
+            - generic [ref=e379]:
+              - img "company logo"
+            - generic [ref=e380]:
+              - img "company logo"
+            - generic [ref=e381]:
+              - img "company logo"
+            - generic [ref=e382]:
+              - img "company logo"
+            - generic [ref=e383]:
+              - img "company logo"
+    - generic [ref=e385]:
+      - heading "And Over 200,000 Satisfied Engineers." [level=2] [ref=e386]
+      - generic [ref=e387]:
+        - generic [ref=e388]:
+          - list [ref=e390]:
+            - listitem [ref=e391]:
+              - generic [ref=e392]:
+                - generic:
+                  - img "user profile picture"
+                - heading "Alex" [level=5] [ref=e393]
+                - generic [ref=e394]:
+                  - heading "Software Engineer" [level=5] [ref=e395]
+                  - img "Google logo" [ref=e396]
+                - paragraph [ref=e398]: AlgoExpert was the backbone of my technical coding interview preparation. It allows you to efficiently work through the most common variations of problems asked by top-tier companies without having to spend hours 'battling' an algorithm only to come up with an inefficient or incorrect solution. There are a lot of resources available for repetition, but AlgoExpert differentiates its product by providing the 'how' and 'why' in clear and concise videos. Developing a deeper understanding of how to approach these problems is better than trying to memorize lines of code. I highly recommend AlgoExpert.
+            - listitem [ref=e399]:
+              - generic [ref=e400]:
+                - generic:
+                  - img "user profile picture"
+                - heading "Corbin" [level=5] [ref=e401]
+                - generic [ref=e402]:
+                  - heading "Software Developer" [level=5] [ref=e403]
+                  - img "Amazon logo" [ref=e404]
+                - paragraph [ref=e406]: As a scientist who was looking to break into Tech, I knew the underlying logic of programming, but I had a lot of gaps in my understanding, especially on the types of algorithms questions asked at interviews. I can confidently say that AlgoExpert is one of the best resources out there for interview preparation, with fantastic video tutorials and an excellent question selection that allows you to get a deep understanding of the topics and confidence in your problem solving ability. The site is incredibly intuitive to use and I think that the staff are some of the best out there, being incredibly supportive and passionate about offering a great customer experience. I cannot recommend AlgoExpert highly enough.
+            - listitem [ref=e407]:
+              - generic [ref=e408]:
+                - generic:
+                  - img "user profile picture"
+                - heading "Carlos" [level=5] [ref=e409]
+                - generic [ref=e410]:
+                  - heading "Software Developer Intern" [level=5] [ref=e411]
+                  - img "Microsoft logo" [ref=e412]
+                - paragraph [ref=e414]: I'm just writing to thank you for this product. I had failed in so many interviews before, but I wanted to get into a top tech company so much that I even enrolled in a Master's program. Even then, I was unsure if I had what it takes to make it. From the moment I heard your first video explanation, I thought 'this is exactly the way to solve an interview question' (plus the extra points you can grab by asking clarifying questions). After a few months of studying, mainly on AlgoExpert, I got offers to intern at Microsoft and Google!
+            - listitem [ref=e415]:
+              - generic [ref=e416]:
+                - generic:
+                  - img "user profile picture"
+                - heading "Marlies" [level=5] [ref=e417]
+                - generic [ref=e418]:
+                  - heading "Software Engineer" [level=5] [ref=e419]
+                  - img "Palantir logo"
+                - paragraph [ref=e421]: I just accepted an offer with Palantir, and also received an offer from Amazon and a handful of startups. AlgoExpert does a great job selecting problems- many of my interview questions were variants of problems on the website. And when I came across problems I hadn't seen before, AlgoExpert gave me the tools to select the right data structures and identify patterns. Thanks AlgoExpert!
+            - listitem [ref=e422]:
+              - generic [ref=e423]:
+                - generic:
+                  - img "user profile picture"
+                - heading "Adarsh" [level=5] [ref=e424]
+                - generic [ref=e425]:
+                  - heading "Software Engineer" [level=5] [ref=e426]
+                  - img "Oracle logo"
+                - paragraph [ref=e428]: I just got a job offer from Oracle and most of the questions they asked, I had practiced on AlgoExpert. Even when they asked questions I was not familiar with, I was able to break down the problem and write code which I learned from the explanations section on AlgoExpert. Being a Computer Science Engineering student, I had fundamental knowledge in Data Structures & Algorithms, but I didn't know how to approach, break down and apply this knowledge to solve problems. Also since all the problems are classified into categories, I was able to easily identify my weak points and work on those. Extremely grateful to AlgoExpert !
+            - listitem [ref=e429]:
+              - generic [ref=e430]:
+                - generic:
+                  - img "user profile picture"
+                - heading "Elana" [level=5] [ref=e431]
+                - generic [ref=e432]:
+                  - heading "Senior Software Engineer" [level=5] [ref=e433]
+                  - img "Bloomberg logo" [ref=e434]
+                - paragraph [ref=e436]: The video explanations and detailed code examples on AlgoExpert have changed the way I approach coding problems. It has been an incredible asset during my career journey and I highly recommend it to anyone preparing for the job market.
+            - listitem [ref=e437]:
+              - generic [ref=e438]:
+                - generic:
+                  - img "user profile picture"
+                - heading "Alberto" [level=5] [ref=e439]
+                - generic [ref=e440]:
+                  - heading "Software Engineer" [level=5] [ref=e441]
+                  - img "Capital One logo"
+                - paragraph [ref=e443]: I've done Udemy, Udacity, Interview Cake, Educative, Egghead, Pluralsight, MIT OpenCourseWare, LeetCode, CodeSignal and various Youtube courses but this stuff that you all are putting out is among the best. Great work!
+            - listitem [ref=e444]:
+              - generic [ref=e445]:
+                - generic:
+                  - img "user profile picture"
+                - heading "Onyeka" [level=5] [ref=e446]
+                - generic [ref=e447]:
+                  - heading "Web Developer" [level=5] [ref=e448]
+                  - img "Harvard logo"
+                - paragraph [ref=e450]: You can choose to spend your time scouring the internet for resources, or you can invest your money wisely and get as good a resource as you'll need. AlgoExpert is a big league product, with a high quality selection of algorithms and expert explanations. This is the best place to sharpen your problem solving skills on all the best material.
+            - listitem [ref=e451]:
+              - generic [ref=e452]:
+                - generic:
+                  - img "user profile picture"
+                - heading "Ayoub" [level=5] [ref=e453]
+                - generic [ref=e454]:
+                  - heading "Software Engineer Intern" [level=5] [ref=e455]
+                  - img "Zillow logo"
+                - paragraph [ref=e457]: Hey, just wanted to thank you for AlgoExpert! I signed up a few months back and I went through 60% of the problems. Before AlgoExpert I was awful at solving anything harder than a LeetCode easy, now I can do LeetCode mediums without much effort and tackle LeetCode hards in a reasonable time frame! I don’t think I would have gotten an internship without AlgoExpert, so thank you!
+            - listitem [ref=e458]:
+              - generic [ref=e459]:
+                - generic:
+                  - img "user profile picture"
+                - heading "Sreepriya" [level=5] [ref=e460]
+                - generic [ref=e461]:
+                  - heading "Software Developer" [level=5] [ref=e462]
+                  - img "Microsoft logo" [ref=e463]
+                - paragraph [ref=e465]: According to me landing on a dream job requires strong determination and continuous practice. But the most important thing is to find the right resource for the practice and I found AlgoExpert. Algoexpert provided me a platform to improve my thought process towards an algorithm question. It really helped me to shape my thinking skills and coding skills. I would definitely recommend to all the aspiring software engineers.
+            - listitem [ref=e466]:
+              - generic [ref=e467]:
+                - generic:
+                  - img "user profile picture"
+                - heading "Erik" [level=5] [ref=e468]
+                - generic [ref=e469]:
+                  - heading "Software Engineer" [level=5] [ref=e470]
+                  - img "BlackRock logo"
+                - paragraph [ref=e472]: There are thousands of practice problems out there, but AlgoExpert provides curation, in-depth explanation, code testing, and support for multiple programming languages. A lot of the problems even have multiple solutions. I'm very glad I invested in it, and even though I've already been hired, I'm still using it to keep my skills up.
+            - listitem [ref=e473]:
+              - generic [ref=e474]:
+                - generic:
+                  - img "user profile picture"
+                - heading "Eren" [level=5] [ref=e475]
+                - generic [ref=e476]:
+                  - heading "Data Engineer" [level=5] [ref=e477]
+                  - img "Simon Data logo"
+                - paragraph [ref=e479]: AlgoExpert was the best resource I used during my coding interview prep. Its structure, hand-picked questions, and detailed explanation videos really set it apart from other resources I tried. It helped me go into my interviews with confidence, allowing me to do well not only with small startups but also with big tech companies.
+            - listitem [ref=e480]:
+              - generic [ref=e481]:
+                - generic:
+                  - img "user profile picture"
+                - heading "Mitch" [level=5] [ref=e482]
+                - generic [ref=e483]:
+                  - heading "Software Engineer" [level=5] [ref=e484]
+                  - img "Ethereum logo"
+                - paragraph [ref=e486]: I've tried a few of the algorithm learning resources and I think AlgoExpert is the best (and no I'm not being paid for this post). The site is super polished and offers a nice breadth of problems to get you best prepared with great solutions and video explanations. If you're on the job hunt, I think pairing AlgoExpert with an interviewing resource like Pramp and/or Interviewing.io is a great strategy.
+            - listitem [ref=e487]:
+              - generic [ref=e488]:
+                - generic:
+                  - img "user profile picture"
+                - heading "Jeremy" [level=5] [ref=e489]
+                - generic [ref=e490]:
+                  - heading "Analyst" [level=5] [ref=e491]
+                  - img "BlackRock logo"
+                - paragraph [ref=e493]: AlgoExpert helped me be confident in my interviews. Their curated list of questions and Clement's thorough review videos ensured that I was ready for anything thrown at me in onsite interviews. I highly recommend AlgoExpert to anyone looking to secure a tech job, or just brush up on their algorithm skills.
+            - listitem [ref=e494]:
+              - generic [ref=e495]:
+                - generic:
+                  - img "user profile picture"
+                - heading "You" [level=5] [ref=e496]
+                - heading "Dream Job" [level=5] [ref=e498]
+                - paragraph [ref=e500]:
+                  - generic [ref=e501]:
+                    - text: Got an AlgoExpert success story to share?
+                    - link "Tell us" [ref=e502] [cursor=pointer]:
+                      - /url: /reviews
+                    - text: where you work, what your position is, how helpful AlgoExpert was in getting it, and give us a link to your LinkedIn profile!
+          - generic [ref=e503]:
+            - button "Previous Review" [disabled] [ref=e504] [cursor=pointer]:
+              - img [ref=e505]
+            - button "Next Review" [ref=e507] [cursor=pointer]:
+              - img [ref=e508]
+        - button "Read More Testimonials" [ref=e511] [cursor=pointer]:
+          - generic [ref=e512]: Read More Testimonials
+    - generic [ref=e513]:
+      - heading "200 Questions Spanning 15 Categories." [level=2] [ref=e514]
+      - paragraph [ref=e515]: If you want to ace the coding interviews, being well-versed in all common data structures and popular problem-solving methods is paramount. With 200 questions spanning 15 categories and 4 difficulty levels, we've got you covered.
+      - link "Explore Questions" [ref=e517] [cursor=pointer]:
+        - /url: /questions
+        - generic [ref=e518]: Explore Questions
+      - list [ref=e520]:
+        - listitem [ref=e521]:
+          - generic [ref=e522]:
+            - generic [ref=e523]:
+              - img [ref=e525]
+              - text: Arrays
+            - generic [ref=e527]: Harder than they seem.
+        - listitem [ref=e528]:
+          - generic [ref=e529]:
+            - generic [ref=e530]:
+              - img [ref=e532]
+              - text: Graphs
+            - generic [ref=e534]: Easier than they seem.
+        - listitem [ref=e535]:
+          - generic [ref=e536]:
+            - generic [ref=e537]:
+              - img [ref=e539]
+              - text: Tries
+            - generic [ref=e542]:
+              - text: Yes.
+              - generic [ref=e543]: Tries
+              - text: . Not a typo.
+        - listitem [ref=e544]:
+          - generic [ref=e545]:
+            - generic [ref=e546]:
+              - img [ref=e548]
+              - text: Linked Lists
+            - generic [ref=e550]: Reverse them.
+        - listitem [ref=e551]:
+          - generic [ref=e552]:
+            - generic [ref=e553]:
+              - img [ref=e555]
+              - text: Binary Trees
+            - generic [ref=e557]: Invert them.
+        - listitem [ref=e558]:
+          - generic [ref=e559]:
+            - generic [ref=e560]:
+              - img [ref=e562]
+              - text: Strings
+            - generic [ref=e564]: "\"This is a string.\""
+        - listitem [ref=e565]:
+          - generic [ref=e566]:
+            - generic [ref=e567]:
+              - img [ref=e569]
+              - text: Dynamic Programming
+            - generic [ref=e571]: Everyone hates it.
+        - listitem [ref=e572]:
+          - generic [ref=e573]:
+            - generic [ref=e574]:
+              - img [ref=e576]
+              - text: Searching
+            - generic [ref=e579]:
+              - text: Searching for the
+              - link "Purchase" [ref=e580] [cursor=pointer]:
+                - /url: /purchase#algoexpert
+              - text: button?
+        - listitem [ref=e581]:
+          - generic [ref=e582]:
+            - generic [ref=e583]:
+              - img [ref=e585]
+              - text: Sorting
+            - generic [ref=e588]:
+              - generic [ref=e589]: array = [3, 1, 2]
+              - generic [ref=e590]: sort(array)
+              - generic [ref=e591]: array == [1, 2, 3]
+        - listitem [ref=e592]:
+          - generic [ref=e593]:
+            - generic [ref=e594]:
+              - img [ref=e596]
+              - text: Greedy Algorithms
+            - generic [ref=e599]: Not too greedy.
+        - listitem [ref=e600]:
+          - generic [ref=e601]:
+            - generic [ref=e602]:
+              - img [ref=e604]
+              - text: Recursion
+            - generic [ref=e606]: "[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]"
+        - listitem [ref=e607]:
+          - generic [ref=e608]:
+            - generic [ref=e609]:
+              - img [ref=e611]
+              - text: Famous Algorithms
+            - generic [ref=e613]: ヽ( ͡° ͜ʖ ͡°)ﾉ
+        - listitem [ref=e614]:
+          - generic [ref=e615]:
+            - generic [ref=e616]:
+              - img [ref=e618]
+              - text: Heaps
+            - generic [ref=e620]: Fancy trees.
+        - listitem [ref=e621]:
+          - generic [ref=e622]:
+            - generic [ref=e623]:
+              - img [ref=e625]
+              - text: Binary Search Trees
+            - generic [ref=e627]: BS trees.
+        - listitem [ref=e628]:
+          - generic [ref=e629]:
+            - generic [ref=e630]:
+              - img [ref=e632]
+              - text: Stacks
+            - generic [ref=e635]:
+              - generic [ref=e636]: Push. Pop.
+              - generic [ref=e637]: That's about it.
+    - generic [ref=e639]:
+      - generic [ref=e640]:
+        - heading "Our Videos Set Us Apart." [level=2] [ref=e641]
+        - paragraph [ref=e643]: The truth is that interview questions and algorithms are difficult. Even more difficult is trying to understand the inner workings of a complex algorithm from a book or from a poorly thought-out video shot on your grandma's camera. Our crisp 1080p videos boast crystal-clear audio and are strategically divided into two parts to give you the most comprehensive explanations to questions. That's over 100 hours of content specifically tailored to make interview questions and algorithms easy.
+        - generic [ref=e644]:
+          - generic [ref=e645]:
+            - generic [ref=e646] [cursor=pointer]:
+              - img [ref=e647]
+              - heading "Conceptual Overview" [level=3] [ref=e650]
+            - paragraph [ref=e651]: "Our videos all start with an in-depth conceptual overview of the algorithm at hand: how to approach it, how to implement it, how to optimize it, and how to analyze its space-time complexity. See an example."
+          - generic [ref=e652]:
+            - generic [ref=e653] [cursor=pointer]:
+              - img [ref=e654]
+              - heading "Code Walkthrough" [level=3] [ref=e657]
+            - paragraph [ref=e658]: Our videos all end with a complete walkthrough from start to finish of the actual code implementation of the algorithm. This is done in Python, since Python is very easy to read. See an example.
+      - iframe [ref=e662]:
+        
+    - generic [ref=e665]:
+      - generic:
+        - generic:
+          - generic:
+            - img "data structure video screenshot"
+      - generic [ref=e667]:
+        - heading "Data Structures Crash Course." [level=2] [ref=e668]
+        - generic [ref=e669]:
+          - paragraph [ref=e670]: Algorithms and data structures go hand in hand; the solution to virtually any coding interview problem will require the implementation of some kind of abstract data type in order to access and manipulate information.
+          - paragraph [ref=e671]: Our video series on data structures is the ultimate crash course on this important topic. We cover fundamental concepts pertaining to memory, complexity analysis, and Big O notation, and then break down popular data structures to give you a detailed look at how these concepts are applied under the hood. Linked Lists and Binary Trees will never instill fear in your heart again.
+        - link "Start The Course" [ref=e672] [cursor=pointer]:
+          - /url: /data-structures
+          - generic [ref=e673]: Start The Course
+    - generic [ref=e675]:
+      - generic [ref=e676]:
+        - generic [ref=e677]:
+          - heading "We Speak 9 Languages." [level=2] [ref=e678]
+          - generic [ref=e679]:
+            - paragraph [ref=e680]: There's nothing more frustrating than opening an interview prep book, only to find a bunch of solutions in a programming language that you don't know. That's why all of our questions come with complete written solutions in 9 popular languages.
+            - list [ref=e681]:
+              - listitem [ref=e682]:
+                - img [ref=e683]
+                - generic [ref=e690]: JavaScript
+                - text: ", for all you Front-End Developers"
+              - listitem [ref=e691]:
+                - img [ref=e692]
+                - generic [ref=e695]: TypeScript
+                - text: ", for all you Edgy JavaScripters"
+              - listitem [ref=e696]:
+                - img [ref=e697]
+                - generic [ref=e700]: Python
+                - text: ", for all you Data Scientists"
+              - listitem [ref=e701]:
+                - img [ref=e702]
+                - generic [ref=e706]: Swift
+                - text: ", for all you iOS Engineers"
+              - listitem [ref=e707]:
+                - img [ref=e708]
+                - generic [ref=e711]: Kotlin
+                - text: ", for all you Androiders"
+              - listitem [ref=e712]:
+                - img [ref=e713]
+                - generic [ref=e717]: C++
+                - text: ", for all you Old Schoolers"
+              - listitem [ref=e718]:
+                - img [ref=e719]
+                - generic [ref=e721]: Java
+                - text: ", for all you Masochists"
+              - listitem [ref=e722]:
+                - img [ref=e723]
+                - generic [ref=e728]: C#
+                - text: ", for all you Microsofters"
+              - listitem [ref=e729]:
+                - img [ref=e730]
+                - generic [ref=e733]: Go
+                - text: ", for all you Kool Kidz"
+        - generic [ref=e740]:
+          - img "javascript logo" [ref=e742]
+          - img "python logo" [ref=e744]
+          - img "golang logo" [ref=e748]
+          - img "c++ logo" [ref=e750]
+      - generic [ref=e752]:
+        - generic [ref=e753]: Hey there! Do you want to ace your upcoming coding interviews?|
+        - generic [ref=e754]:
+          - button "Of course!" [ref=e755] [cursor=pointer]
+          - button "Nope." [ref=e756] [cursor=pointer]
+    - generic [ref=e759]:
+      - generic [ref=e760]:
+        - heading "The Perfect Practice Environment." [level=2] [ref=e761]
+        - generic [ref=e762]:
+          - paragraph [ref=e763]: In an ideal world, you'd prepare for coding interviews by writing out solutions to problems in your language of choice, getting some hints if necessary, running your code against test cases, and looking at solutions when done.
+          - paragraph [ref=e764]: We've turned that ideal world into the real world. Pick a language. Read the prompt. Write your solution. Run your code. Get some hints. Run your code again. Check the output. Pass the tests. View our solution. Watch our video. All within the same workspace.
+        - link "Try Our Workspace" [ref=e765] [cursor=pointer]:
+          - /url: /questions/validate-subsequence
+          - generic [ref=e766]: Try Our Workspace
+      - generic:
+        - generic:
+          - generic:
+            - img "AlgoExpert coding workspace screenshot"
+    - generic [ref=e769]:
+      - heading "Big O Notation Made Easy." [level=2] [ref=e770]
+      - generic [ref=e771]:
+        - generic [ref=e772]:
+          - heading "Time Complexity" [level=2] [ref=e773]
+          - generic [ref=e774]:
+            - paragraph [ref=e775]: Why does building a heap only take O(N) time? What does O(logN) really mean? What's the time-complexity difference between appending a value to an array and adding a character to a string? We address all of these things, and more.
+            - img [ref=e776]
+        - generic [ref=e780]:
+          - heading "Space Complexity" [level=2] [ref=e781]
+          - generic [ref=e782]:
+            - paragraph [ref=e783]: You know that thing you're kinda familiar with but not really? Yeah, that's space complexity. And it turns out it's pretty important. All of our video explanations dive deep into space-complexity to turn you into a well rounded Big O expert.
+            - img [ref=e784]
+      - link "Become An AlgoExpert" [ref=e788] [cursor=pointer]:
+        - /url: /purchase#algoexpert
+        - generic [ref=e789]:
+          - text: Become An AlgoExpert
+          - img [ref=e790]
+    - generic [ref=e793]:
+      - generic [ref=e794]:
+        - heading "A Better Way To Land Interviews." [level=2] [ref=e795]
+        - generic [ref=e796]:
+          - paragraph [ref=e797]: Earn the AlgoExpert Certificate. Get referred to tech companies.
+          - paragraph [ref=e798]: No more InMail messages that get ignored.
+          - paragraph [ref=e799]: No more cold emails that go nowhere.
+          - paragraph [ref=e800]: No more job applications that get no attention.
+          - paragraph [ref=e801]: No more referral programs that don't work.
+          - paragraph [ref=e802]: No more recruiting agencies that cost a fortune.
+          - paragraph [ref=e803]: With AlgoExpert, preparing for interviews helps you land interviews.
+        - link "Learn More" [ref=e804] [cursor=pointer]:
+          - /url: /recruiting/profile
+          - generic [ref=e805]: Learn More
+      - generic [ref=e809]:
+        - img [ref=e811]
+        - generic [ref=e814]:
+          - generic [ref=e816]: InMail Message
+          - generic [ref=e817]: InMail Message
+          - generic [ref=e818]: Cold Email
+          - generic [ref=e819]: Job Application
+          - generic [ref=e820]: Cold Email
+          - generic [ref=e821]: InMail Message
+          - generic [ref=e822]: Recruiting Agency
+          - generic [ref=e823]: InMail Message
+          - generic [ref=e824]: Job Application
+          - generic [ref=e825]: Job Application
+          - generic [ref=e826]: InMail Message
+          - generic [ref=e827]: InMail Message
+          - generic [ref=e828]: Cold Email
+          - generic [ref=e829]: InMail Message
+          - generic [ref=e830]: Recruiting Agency
+          - generic [ref=e831]: Referral Program
+          - generic [ref=e832]: InMail Message
+          - generic [ref=e833]: Job Application
+          - generic [ref=e834]: Cold Email
+          - generic [ref=e835]: Cold Email
+          - generic [ref=e836]: Job Application
+          - generic [ref=e837]: Recruiting Agency
+          - generic [ref=e838]: InMail Message
+          - generic [ref=e839]: Referral Program
+  - contentinfo [ref=e840]:
+    - generic [ref=e842]:
+      - generic [ref=e843]:
+        - link "Contact Us" [ref=e844] [cursor=pointer]:
+          - /url: /help
+        - link "FAQ" [ref=e846] [cursor=pointer]:
+          - /url: /help
+        - link "Reviews" [ref=e848] [cursor=pointer]:
+          - /url: /reviews
+        - link "Blog" [ref=e850] [cursor=pointer]:
+          - /url: /blog
+        - link "Jobs" [ref=e852] [cursor=pointer]:
+          - /url: /jobs
+        - link "SWE Project Contests" [ref=e854] [cursor=pointer]:
+          - /url: /swe-project-contests
+        - link "Legal Stuff" [ref=e856] [cursor=pointer]:
+          - /url: /legal
+        - link "Privacy Policy" [ref=e858] [cursor=pointer]:
+          - /url: /privacy
+      - generic [ref=e859]: Copyright © 2017-2026 AlgoExpert LLC. All rights reserved.

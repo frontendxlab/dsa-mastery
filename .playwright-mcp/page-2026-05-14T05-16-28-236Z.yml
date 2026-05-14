@@ -1,0 +1,125 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link "geeksforgeeks" [ref=e14] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/
+          - img "geeksforgeeks" [ref=e16]
+        - img "search icon" [ref=e19] [cursor=pointer]
+      - list [ref=e23]:
+        - listitem [ref=e24] [cursor=pointer]:
+          - button "Sign In" [ref=e26]
+        - listitem [ref=e27] [cursor=pointer]:
+          - generic [ref=e29]: Courses
+        - listitem [ref=e31] [cursor=pointer]:
+          - generic [ref=e33]: Tutorials
+        - listitem [ref=e35] [cursor=pointer]:
+          - generic [ref=e37]: Practice
+        - listitem [ref=e39] [cursor=pointer]:
+          - generic [ref=e41]: Jobs
+        - listitem [ref=e43]
+        - listitem [ref=e44] [cursor=pointer]:
+          - button "Toggle GFG Theme" [ref=e46]
+          - button "Change Language" [ref=e50]:
+            - generic [ref=e52]: Change Language
+    - generic [ref=e53]:
+      - generic [ref=e56]:
+        - text:    
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - generic [ref=e60]:
+              - heading "Popular Problems" [level=2] [ref=e61]
+              - generic [ref=e62]:
+                - text:   
+                - button "Search" [ref=e63] [cursor=pointer]:
+                  - generic [ref=e64]: 
+                  - text: Search
+                - listbox [ref=e65] [cursor=pointer]:
+                  - generic [ref=e66]:
+                    - generic [ref=e67]: 
+                    - text: Submissions
+                  - generic [ref=e68]: 
+            - generic [ref=e74]:
+              - generic [ref=e75]: Submissions
+              - generic [ref=e76]:
+                - text: Mathematical
+                - generic [ref=e77] [cursor=pointer]: 
+          - generic [ref=e84]:
+            - generic [ref=e86]:
+              - generic [ref=e88]: Recently Online Experts
+              - generic [ref=e89]:
+                - link "shivamkumaqx5m Shivam kumar Jha Divinetalk, Flatmate" [ref=e90] [cursor=pointer]:
+                  - /url: /profile/shivamkumaqx5m/?from=explore
+                  - generic [ref=e91]:
+                    - img "shivamkumaqx5m" [ref=e94]
+                    - generic [ref=e95]:
+                      - heading "Shivam kumar Jha" [level=1] [ref=e96]:
+                        - text: Shivam kumar Jha
+                        - img [ref=e98]
+                      - paragraph [ref=e101]: Divinetalk, Flatmate
+                - link "erkhushbossg9 Khushboo Garg Xebia, 3Pillar Global, Chetu Inc" [ref=e102] [cursor=pointer]:
+                  - /url: /profile/erkhushbossg9/?from=explore
+                  - generic [ref=e103]:
+                    - img "erkhushbossg9" [ref=e106]
+                    - generic [ref=e107]:
+                      - heading "Khushboo Garg" [level=1] [ref=e108]:
+                        - text: Khushboo Garg
+                        - img [ref=e110]
+                      - paragraph [ref=e113]: Xebia, 3Pillar Global, Chetu Inc
+                - link "venkatadj Gambali Venkata Durga Rao Blaize Semiconductors Private Limited, Advanced Micro Devices, Teradata" [ref=e114] [cursor=pointer]:
+                  - /url: /profile/venkatadj/?from=explore
+                  - generic [ref=e115]:
+                    - img "venkatadj" [ref=e118]
+                    - generic [ref=e119]:
+                      - heading "Gambali Venkata Durga Rao" [level=1] [ref=e120]:
+                        - text: Gambali Venkata Durga Rao
+                        - img [ref=e122]
+                      - paragraph [ref=e125]: Blaize Semiconductors Private Limited, Advanced Micro Devices, Teradata
+              - link "View All →" [ref=e127] [cursor=pointer]:
+                - /url: /connect/explore
+                - text: View All
+                - generic [ref=e128]: →
+            - generic [ref=e130]:
+              - generic [ref=e132]:
+                - button "Fresher Jobs" [ref=e133] [cursor=pointer]
+                - button "Experienced Jobs" [ref=e134] [cursor=pointer]
+              - generic [ref=e135]:
+                - link "C++ Developer | Intelizign C++ Developer Intelizign 0.5 - 5 Years • Onsite - Pune (Maharashtra) Apply by Thu May 14 2026" [ref=e136] [cursor=pointer]:
+                  - /url: /jobs/intelizign-cpp-developer
+                  - generic "C++ Developer" [ref=e137]:
+                    - img "C++ Developer | Intelizign" [ref=e140]
+                    - generic [ref=e141]:
+                      - heading "C++ Developer" [level=1] [ref=e142]
+                      - paragraph [ref=e143]: Intelizign
+                      - generic [ref=e144]:
+                        - paragraph [ref=e145]: 0.5 - 5 Years • Onsite - Pune (Maharashtra)
+                        - paragraph [ref=e146]: Apply by Thu May 14 2026
+                - separator [ref=e147]
+                - link "C# Developer | Intelizign C# Developer Intelizign 0.5 - 5 Years • Onsite - Pune (Maharashtra) Apply by Thu May 14 2026" [ref=e148] [cursor=pointer]:
+                  - /url: /jobs/intelizign-c-sharp-developer
+                  - generic "C# Developer" [ref=e149]:
+                    - img "C# Developer | Intelizign" [ref=e152]
+                    - generic [ref=e153]:
+                      - heading "C# Developer" [level=1] [ref=e154]
+                      - paragraph [ref=e155]: Intelizign
+                      - generic [ref=e156]:
+                        - paragraph [ref=e157]: 0.5 - 5 Years • Onsite - Pune (Maharashtra)
+                        - paragraph [ref=e158]: Apply by Thu May 14 2026
+                - separator [ref=e159]
+                - link "QA Engineer | Thrymr Software QA Engineer Thrymr Software Fresher • Onsite - Hyderabad (Telangana) Apply by Fri May 15 2026" [ref=e160] [cursor=pointer]:
+                  - /url: /jobs/thrymr-software-qa-engineer
+                  - generic "QA Engineer" [ref=e161]:
+                    - img "QA Engineer | Thrymr Software" [ref=e164]
+                    - generic [ref=e165]:
+                      - heading "QA Engineer" [level=1] [ref=e166]
+                      - paragraph [ref=e167]: Thrymr Software
+                      - generic [ref=e168]:
+                        - paragraph [ref=e169]: Fresher • Onsite - Hyderabad (Telangana)
+                        - paragraph [ref=e170]: Apply by Fri May 15 2026
+              - link "View All →" [ref=e172] [cursor=pointer]:
+                - /url: /jobs?tab_type=featured
+                - text: View All
+                - generic [ref=e173]: →
+        - text:       
+      - generic [ref=e174] [cursor=pointer]: 
+  - alert [ref=e175]

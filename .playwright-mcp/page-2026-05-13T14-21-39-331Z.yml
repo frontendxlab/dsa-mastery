@@ -1,0 +1,3311 @@
+- generic [active] [ref=e1]:
+  - text: 
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - link "Codeforces" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "Codeforces" [ref=e6]
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - link "In English" [ref=e9] [cursor=pointer]:
+            - /url: "?tags=two+pointers&locale=en"
+            - img "In English" [ref=e10]
+          - link "По-русски" [ref=e11] [cursor=pointer]:
+            - /url: "?tags=two+pointers&locale=ru"
+            - img "По-русски" [ref=e12]
+        - generic [ref=e13]:
+          - link "Enter" [ref=e14] [cursor=pointer]:
+            - /url: /enter?back=%2Fproblemset%3Ftags%3Dtwo%2Bpointers
+          - text: "|"
+          - link "Register" [ref=e15] [cursor=pointer]:
+            - /url: /register
+    - generic [ref=e17]:
+      - list:
+        - listitem [ref=e18]:
+          - link "Home" [ref=e19] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e20]:
+          - link "Top" [ref=e21] [cursor=pointer]:
+            - /url: /top
+        - listitem [ref=e22]:
+          - link "Catalog" [ref=e23] [cursor=pointer]:
+            - /url: /catalog
+        - listitem [ref=e24]:
+          - link "Contests" [ref=e25] [cursor=pointer]:
+            - /url: /contests
+        - listitem [ref=e26]:
+          - link "Gym" [ref=e27] [cursor=pointer]:
+            - /url: /gyms
+        - listitem [ref=e28]:
+          - link "Problemset" [ref=e29] [cursor=pointer]:
+            - /url: /problemset
+        - listitem [ref=e30]:
+          - link "Groups" [ref=e31] [cursor=pointer]:
+            - /url: /groups
+        - listitem [ref=e32]:
+          - link "Rating" [ref=e33] [cursor=pointer]:
+            - /url: /ratings
+        - listitem [ref=e34]:
+          - link "Edu" [ref=e35] [cursor=pointer]:
+            - /url: /edu/courses
+        - listitem [ref=e36]:
+          - link "API" [ref=e37] [cursor=pointer]:
+            - /url: /apiHelp
+        - listitem [ref=e38]:
+          - link "Calendar" [ref=e39] [cursor=pointer]:
+            - /url: /calendar
+        - listitem [ref=e40]:
+          - link "Help" [ref=e41] [cursor=pointer]:
+            - /url: /help
+    - generic [ref=e42]:
+      - generic [ref=e43]:
+        - generic [ref=e44]:
+          - generic [ref=e45]: → Pay attention
+          - generic [ref=e47]:
+            - text: Before contest
+            - link "Codeforces Round 1098 (Div. 2)" [ref=e48] [cursor=pointer]:
+              - /url: /contests/2228
+            - generic [ref=e49]: 3 days
+            - link "Register now »" [ref=e50] [cursor=pointer]:
+              - /url: /contestRegistration/2228
+            - generic [ref=e51]:
+              - text: "*has extra registration"
+              - generic "If you are late to register in 5 minutes before the start, you can register later during the extra registration. Extra registration opens 10 minutes after the contest starts and lasts 20 minutes." [ref=e52] [cursor=pointer]: 
+        - generic [ref=e53]:
+          - generic [ref=e54]: → Filter Problems
+          - generic [ref=e56]:
+            - generic [ref=e58]:
+              - text: "Difficulty:"
+              - generic [ref=e59]:
+                - 'textbox "Difficulty: —" [ref=e60]'
+                - text: —
+                - textbox [ref=e61]
+            - generic "Two pointers" [ref=e64]:
+              - text: two pointers
+              - img [ref=e65] [cursor=pointer]
+            - link "Add tag" [ref=e67] [cursor=pointer]:
+              - /url: "#"
+            - button "Apply" [ref=e69]
+      - generic [ref=e70]:
+        - generic [ref=e71]:
+          - list [ref=e72]:
+            - listitem [ref=e73]
+            - listitem [ref=e75]:
+              - link "Main" [ref=e76] [cursor=pointer]:
+                - /url: /problemset
+            - listitem [ref=e77]:
+              - link "acmsguru" [ref=e78] [cursor=pointer]:
+                - /url: /problemsets/acmsguru
+          - text: "|"
+          - list [ref=e79]:
+            - listitem [ref=e80]
+            - listitem [ref=e82]:
+              - link "Problems" [ref=e83] [cursor=pointer]:
+                - /url: /problemset
+            - listitem [ref=e84]:
+              - link "Submit" [ref=e85] [cursor=pointer]:
+                - /url: /problemset/submit
+            - listitem [ref=e86]:
+              - link "Status" [ref=e87] [cursor=pointer]:
+                - /url: /problemset/status
+            - listitem [ref=e88]:
+              - link "Standings" [ref=e89] [cursor=pointer]:
+                - /url: /problemset/standings
+            - listitem [ref=e90]:
+              - link "Custom test" [ref=e91] [cursor=pointer]:
+                - /url: /problemset/customtest
+        - generic [ref=e92]:
+          - generic [ref=e97]:
+            - text: Problems
+            - generic [ref=e98] [cursor=pointer]: 
+            - img [ref=e100] [cursor=pointer]
+          - table [ref=e104]:
+            - rowgroup [ref=e105]:
+              - row "# Name Sort desc. Sort desc." [ref=e106]:
+                - columnheader "#" [ref=e107]
+                - columnheader "Name" [ref=e108]
+                - columnheader [ref=e109]
+                - columnheader "Sort desc." [ref=e110]:
+                  - link "Sort desc." [ref=e111] [cursor=pointer]:
+                    - /url: /problemset?order=BY_RATING_DESC&tags=two+pointers
+                    - img [ref=e112]
+                    - img "Sort desc." [ref=e113]
+                - columnheader "Sort desc." [ref=e114]:
+                  - link "Sort desc." [ref=e115] [cursor=pointer]:
+                    - /url: /problemset?order=BY_SOLVED_DESC&tags=two+pointers
+                    - img [ref=e116]
+                    - img "Sort desc." [ref=e117]
+              - row "2227D Palindromex binary search, brute force, constructive algorithms, data structures, greedy, implementation, two pointers Submit x9947" [ref=e118]:
+                - cell "2227D" [ref=e119]:
+                  - link "2227D" [ref=e120] [cursor=pointer]:
+                    - /url: /problemset/problem/2227/D
+                - cell "Palindromex binary search, brute force, constructive algorithms, data structures, greedy, implementation, two pointers" [ref=e121]:
+                  - link "Palindromex" [ref=e123] [cursor=pointer]:
+                    - /url: /problemset/problem/2227/D
+                  - generic [ref=e124]:
+                    - link "binary search" [ref=e125] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "brute force" [ref=e126] [cursor=pointer]:
+                      - /url: /problemset?tags=brute+force
+                    - text: ","
+                    - link "constructive algorithms" [ref=e127] [cursor=pointer]:
+                      - /url: /problemset?tags=constructive+algorithms
+                    - text: ","
+                    - link "data structures" [ref=e128] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "greedy" [ref=e129] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "implementation" [ref=e130] [cursor=pointer]:
+                      - /url: /problemset?tags=implementation
+                    - text: ","
+                    - link "two pointers" [ref=e131] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e132]:
+                  - link "Submit" [ref=e134] [cursor=pointer]:
+                    - /url: /problemset/submit/2227/D
+                    - img "Submit" [ref=e135]
+                - cell [ref=e136]
+                - cell "x9947" [ref=e137]:
+                  - link "x9947" [ref=e138] [cursor=pointer]:
+                    - /url: /problemset/status/2227/problem/D
+                    - img [ref=e139]
+                    - text: x9947
+              - row "2226E Mental Monumental (Hard Version) data structures, greedy, math, two pointers Submit x811" [ref=e140]:
+                - cell "2226E" [ref=e141]:
+                  - link "2226E" [ref=e142] [cursor=pointer]:
+                    - /url: /problemset/problem/2226/E
+                - cell "Mental Monumental (Hard Version) data structures, greedy, math, two pointers" [ref=e143]:
+                  - link "Mental Monumental (Hard Version)" [ref=e145] [cursor=pointer]:
+                    - /url: /problemset/problem/2226/E
+                  - generic [ref=e146]:
+                    - link "data structures" [ref=e147] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "greedy" [ref=e148] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "math" [ref=e149] [cursor=pointer]:
+                      - /url: /problemset?tags=math
+                    - text: ","
+                    - link "two pointers" [ref=e150] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e151]:
+                  - link "Submit" [ref=e153] [cursor=pointer]:
+                    - /url: /problemset/submit/2226/E
+                    - img "Submit" [ref=e154]
+                - cell [ref=e155]
+                - cell "x811" [ref=e156]:
+                  - link "x811" [ref=e157] [cursor=pointer]:
+                    - /url: /problemset/status/2226/problem/E
+                    - img [ref=e158]
+                    - text: x811
+              - row "2226C Mental Monumental (Easy Version) binary search, data structures, greedy, math, two pointers Submit x5994" [ref=e159]:
+                - cell "2226C" [ref=e160]:
+                  - link "2226C" [ref=e161] [cursor=pointer]:
+                    - /url: /problemset/problem/2226/C
+                - cell "Mental Monumental (Easy Version) binary search, data structures, greedy, math, two pointers" [ref=e162]:
+                  - link "Mental Monumental (Easy Version)" [ref=e164] [cursor=pointer]:
+                    - /url: /problemset/problem/2226/C
+                  - generic [ref=e165]:
+                    - link "binary search" [ref=e166] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "data structures" [ref=e167] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "greedy" [ref=e168] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "math" [ref=e169] [cursor=pointer]:
+                      - /url: /problemset?tags=math
+                    - text: ","
+                    - link "two pointers" [ref=e170] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e171]:
+                  - link "Submit" [ref=e173] [cursor=pointer]:
+                    - /url: /problemset/submit/2226/C
+                    - img "Submit" [ref=e174]
+                - cell [ref=e175]
+                - cell "x5994" [ref=e176]:
+                  - link "x5994" [ref=e177] [cursor=pointer]:
+                    - /url: /problemset/status/2226/problem/C
+                    - img [ref=e178]
+                    - text: x5994
+              - row "2223B Zhily and Barknights binary search, data structures, dp, math, sortings, two pointers Submit x2487" [ref=e179]:
+                - cell "2223B" [ref=e180]:
+                  - link "2223B" [ref=e181] [cursor=pointer]:
+                    - /url: /problemset/problem/2223/B
+                - cell "Zhily and Barknights binary search, data structures, dp, math, sortings, two pointers" [ref=e182]:
+                  - link "Zhily and Barknights" [ref=e184] [cursor=pointer]:
+                    - /url: /problemset/problem/2223/B
+                  - generic [ref=e185]:
+                    - link "binary search" [ref=e186] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "data structures" [ref=e187] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "dp" [ref=e188] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "math" [ref=e189] [cursor=pointer]:
+                      - /url: /problemset?tags=math
+                    - text: ","
+                    - link "sortings" [ref=e190] [cursor=pointer]:
+                      - /url: /problemset?tags=sortings
+                    - text: ","
+                    - link "two pointers" [ref=e191] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e192]:
+                  - link "Submit" [ref=e194] [cursor=pointer]:
+                    - /url: /problemset/submit/2223/B
+                    - img "Submit" [ref=e195]
+                - cell [ref=e196]
+                - cell "x2487" [ref=e197]:
+                  - link "x2487" [ref=e198] [cursor=pointer]:
+                    - /url: /problemset/status/2223/problem/B
+                    - img [ref=e199]
+                    - text: x2487
+              - row "2211C1 Equal Multisets (Easy Version) binary search, brute force, greedy, two pointers Submit 1300 x9301" [ref=e200]:
+                - cell "2211C1" [ref=e201]:
+                  - link "2211C1" [ref=e202] [cursor=pointer]:
+                    - /url: /problemset/problem/2211/C1
+                - cell "Equal Multisets (Easy Version) binary search, brute force, greedy, two pointers" [ref=e203]:
+                  - link "Equal Multisets (Easy Version)" [ref=e205] [cursor=pointer]:
+                    - /url: /problemset/problem/2211/C1
+                  - generic [ref=e206]:
+                    - link "binary search" [ref=e207] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "brute force" [ref=e208] [cursor=pointer]:
+                      - /url: /problemset?tags=brute+force
+                    - text: ","
+                    - link "greedy" [ref=e209] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "two pointers" [ref=e210] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e211]:
+                  - link "Submit" [ref=e213] [cursor=pointer]:
+                    - /url: /problemset/submit/2211/C1
+                    - img "Submit" [ref=e214]
+                - cell "1300" [ref=e215]
+                - cell "x9301" [ref=e216]:
+                  - link "x9301" [ref=e217] [cursor=pointer]:
+                    - /url: /problemset/status/2211/problem/C1
+                    - img [ref=e218]
+                    - text: x9301
+              - row "2207H3 Bowser's Castle (Hard Version) constructive algorithms, divide and conquer, interactive, trees, two pointers Submit x58" [ref=e219]:
+                - cell "2207H3" [ref=e220]:
+                  - link "2207H3" [ref=e221] [cursor=pointer]:
+                    - /url: /problemset/problem/2207/H3
+                - cell "Bowser's Castle (Hard Version) constructive algorithms, divide and conquer, interactive, trees, two pointers" [ref=e222]:
+                  - link "Bowser's Castle (Hard Version)" [ref=e224] [cursor=pointer]:
+                    - /url: /problemset/problem/2207/H3
+                  - generic [ref=e225]:
+                    - link "constructive algorithms" [ref=e226] [cursor=pointer]:
+                      - /url: /problemset?tags=constructive+algorithms
+                    - text: ","
+                    - link "divide and conquer" [ref=e227] [cursor=pointer]:
+                      - /url: /problemset?tags=divide+and+conquer
+                    - text: ","
+                    - link "interactive" [ref=e228] [cursor=pointer]:
+                      - /url: /problemset?tags=interactive
+                    - text: ","
+                    - link "trees" [ref=e229] [cursor=pointer]:
+                      - /url: /problemset?tags=trees
+                    - text: ","
+                    - link "two pointers" [ref=e230] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e231]:
+                  - link "Submit" [ref=e233] [cursor=pointer]:
+                    - /url: /problemset/submit/2207/H3
+                    - img "Submit" [ref=e234]
+                - cell [ref=e235]
+                - cell "x58" [ref=e236]:
+                  - link "x58" [ref=e237] [cursor=pointer]:
+                    - /url: /problemset/status/2207/problem/H3
+                    - img [ref=e238]
+                    - text: x58
+              - row "2207H2 Bowser's Castle (Medium Version) constructive algorithms, divide and conquer, interactive, trees, two pointers Submit x40" [ref=e239]:
+                - cell "2207H2" [ref=e240]:
+                  - link "2207H2" [ref=e241] [cursor=pointer]:
+                    - /url: /problemset/problem/2207/H2
+                - cell "Bowser's Castle (Medium Version) constructive algorithms, divide and conquer, interactive, trees, two pointers" [ref=e242]:
+                  - link "Bowser's Castle (Medium Version)" [ref=e244] [cursor=pointer]:
+                    - /url: /problemset/problem/2207/H2
+                  - generic [ref=e245]:
+                    - link "constructive algorithms" [ref=e246] [cursor=pointer]:
+                      - /url: /problemset?tags=constructive+algorithms
+                    - text: ","
+                    - link "divide and conquer" [ref=e247] [cursor=pointer]:
+                      - /url: /problemset?tags=divide+and+conquer
+                    - text: ","
+                    - link "interactive" [ref=e248] [cursor=pointer]:
+                      - /url: /problemset?tags=interactive
+                    - text: ","
+                    - link "trees" [ref=e249] [cursor=pointer]:
+                      - /url: /problemset?tags=trees
+                    - text: ","
+                    - link "two pointers" [ref=e250] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e251]:
+                  - link "Submit" [ref=e253] [cursor=pointer]:
+                    - /url: /problemset/submit/2207/H2
+                    - img "Submit" [ref=e254]
+                - cell [ref=e255]
+                - cell "x40" [ref=e256]:
+                  - link "x40" [ref=e257] [cursor=pointer]:
+                    - /url: /problemset/status/2207/problem/H2
+                    - img [ref=e258]
+                    - text: x40
+              - row "2204F Sum of Fractions binary search, brute force, combinatorics, data structures, greedy, math, number theory, two pointers Submit 2200 x1241" [ref=e259]:
+                - cell "2204F" [ref=e260]:
+                  - link "2204F" [ref=e261] [cursor=pointer]:
+                    - /url: /problemset/problem/2204/F
+                - cell "Sum of Fractions binary search, brute force, combinatorics, data structures, greedy, math, number theory, two pointers" [ref=e262]:
+                  - link "Sum of Fractions" [ref=e264] [cursor=pointer]:
+                    - /url: /problemset/problem/2204/F
+                  - generic [ref=e265]:
+                    - link "binary search" [ref=e266] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "brute force" [ref=e267] [cursor=pointer]:
+                      - /url: /problemset?tags=brute+force
+                    - text: ","
+                    - link "combinatorics" [ref=e268] [cursor=pointer]:
+                      - /url: /problemset?tags=combinatorics
+                    - text: ","
+                    - link "data structures" [ref=e269] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "greedy" [ref=e270] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "math" [ref=e271] [cursor=pointer]:
+                      - /url: /problemset?tags=math
+                    - text: ","
+                    - link "number theory" [ref=e272] [cursor=pointer]:
+                      - /url: /problemset?tags=number+theory
+                    - text: ","
+                    - link "two pointers" [ref=e273] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e274]:
+                  - link "Submit" [ref=e276] [cursor=pointer]:
+                    - /url: /problemset/submit/2204/F
+                    - img "Submit" [ref=e277]
+                - cell "2200" [ref=e278]
+                - cell "x1241" [ref=e279]:
+                  - link "x1241" [ref=e280] [cursor=pointer]:
+                    - /url: /problemset/status/2204/problem/F
+                    - img [ref=e281]
+                    - text: x1241
+              - row "2203F Binary Search with One Swap binary search, divide and conquer, dp, hashing, math, two pointers Submit 2600 x417" [ref=e282]:
+                - cell "2203F" [ref=e283]:
+                  - link "2203F" [ref=e284] [cursor=pointer]:
+                    - /url: /problemset/problem/2203/F
+                - cell "Binary Search with One Swap binary search, divide and conquer, dp, hashing, math, two pointers" [ref=e285]:
+                  - link "Binary Search with One Swap" [ref=e287] [cursor=pointer]:
+                    - /url: /problemset/problem/2203/F
+                  - generic [ref=e288]:
+                    - link "binary search" [ref=e289] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "divide and conquer" [ref=e290] [cursor=pointer]:
+                      - /url: /problemset?tags=divide+and+conquer
+                    - text: ","
+                    - link "dp" [ref=e291] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "hashing" [ref=e292] [cursor=pointer]:
+                      - /url: /problemset?tags=hashing
+                    - text: ","
+                    - link "math" [ref=e293] [cursor=pointer]:
+                      - /url: /problemset?tags=math
+                    - text: ","
+                    - link "two pointers" [ref=e294] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e295]:
+                  - link "Submit" [ref=e297] [cursor=pointer]:
+                    - /url: /problemset/submit/2203/F
+                    - img "Submit" [ref=e298]
+                - cell "2600" [ref=e299]
+                - cell "x417" [ref=e300]:
+                  - link "x417" [ref=e301] [cursor=pointer]:
+                    - /url: /problemset/status/2203/problem/F
+                    - img [ref=e302]
+                    - text: x417
+              - row "2197B Array and Permutation implementation, schedules, sortings, two pointers Submit 1100 x16014" [ref=e303]:
+                - cell "2197B" [ref=e304]:
+                  - link "2197B" [ref=e305] [cursor=pointer]:
+                    - /url: /problemset/problem/2197/B
+                - cell "Array and Permutation implementation, schedules, sortings, two pointers" [ref=e306]:
+                  - link "Array and Permutation" [ref=e308] [cursor=pointer]:
+                    - /url: /problemset/problem/2197/B
+                  - generic [ref=e309]:
+                    - link "implementation" [ref=e310] [cursor=pointer]:
+                      - /url: /problemset?tags=implementation
+                    - text: ","
+                    - link "schedules" [ref=e311] [cursor=pointer]:
+                      - /url: /problemset?tags=schedules
+                    - text: ","
+                    - link "sortings" [ref=e312] [cursor=pointer]:
+                      - /url: /problemset?tags=sortings
+                    - text: ","
+                    - link "two pointers" [ref=e313] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e314]:
+                  - link "Submit" [ref=e316] [cursor=pointer]:
+                    - /url: /problemset/submit/2197/B
+                    - img "Submit" [ref=e317]
+                - cell "1100" [ref=e318]
+                - cell "x16014" [ref=e319]:
+                  - link "x16014" [ref=e320] [cursor=pointer]:
+                    - /url: /problemset/status/2197/problem/B
+                    - img [ref=e321]
+                    - text: x16014
+              - row "2196B Another Problem about Beautiful Pairs brute force, math, two pointers Submit 1600 x8668" [ref=e322]:
+                - cell "2196B" [ref=e323]:
+                  - link "2196B" [ref=e324] [cursor=pointer]:
+                    - /url: /problemset/problem/2196/B
+                - cell "Another Problem about Beautiful Pairs brute force, math, two pointers" [ref=e325]:
+                  - link "Another Problem about Beautiful Pairs" [ref=e327] [cursor=pointer]:
+                    - /url: /problemset/problem/2196/B
+                  - generic [ref=e328]:
+                    - link "brute force" [ref=e329] [cursor=pointer]:
+                      - /url: /problemset?tags=brute+force
+                    - text: ","
+                    - link "math" [ref=e330] [cursor=pointer]:
+                      - /url: /problemset?tags=math
+                    - text: ","
+                    - link "two pointers" [ref=e331] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e332]:
+                  - link "Submit" [ref=e334] [cursor=pointer]:
+                    - /url: /problemset/submit/2196/B
+                    - img "Submit" [ref=e335]
+                - cell "1600" [ref=e336]
+                - cell "x8668" [ref=e337]:
+                  - link "x8668" [ref=e338] [cursor=pointer]:
+                    - /url: /problemset/status/2196/problem/B
+                    - img [ref=e339]
+                    - text: x8668
+              - row "2193D Monster Game binary search, sortings, two pointers Submit 1100 x21684" [ref=e340]:
+                - cell "2193D" [ref=e341]:
+                  - link "2193D" [ref=e342] [cursor=pointer]:
+                    - /url: /problemset/problem/2193/D
+                - cell "Monster Game binary search, sortings, two pointers" [ref=e343]:
+                  - link "Monster Game" [ref=e345] [cursor=pointer]:
+                    - /url: /problemset/problem/2193/D
+                  - generic [ref=e346]:
+                    - link "binary search" [ref=e347] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "sortings" [ref=e348] [cursor=pointer]:
+                      - /url: /problemset?tags=sortings
+                    - text: ","
+                    - link "two pointers" [ref=e349] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e350]:
+                  - link "Submit" [ref=e352] [cursor=pointer]:
+                    - /url: /problemset/submit/2193/D
+                    - img "Submit" [ref=e353]
+                - cell "1100" [ref=e354]
+                - cell "x21684" [ref=e355]:
+                  - link "x21684" [ref=e356] [cursor=pointer]:
+                    - /url: /problemset/status/2193/problem/D
+                    - img [ref=e357]
+                    - text: x21684
+              - row "2190C Comparable Permutations greedy, implementation, interactive, sortings, two pointers Submit 2300 x1298" [ref=e358]:
+                - cell "2190C" [ref=e359]:
+                  - link "2190C" [ref=e360] [cursor=pointer]:
+                    - /url: /problemset/problem/2190/C
+                - cell "Comparable Permutations greedy, implementation, interactive, sortings, two pointers" [ref=e361]:
+                  - link "Comparable Permutations" [ref=e363] [cursor=pointer]:
+                    - /url: /problemset/problem/2190/C
+                  - generic [ref=e364]:
+                    - link "greedy" [ref=e365] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "implementation" [ref=e366] [cursor=pointer]:
+                      - /url: /problemset?tags=implementation
+                    - text: ","
+                    - link "interactive" [ref=e367] [cursor=pointer]:
+                      - /url: /problemset?tags=interactive
+                    - text: ","
+                    - link "sortings" [ref=e368] [cursor=pointer]:
+                      - /url: /problemset?tags=sortings
+                    - text: ","
+                    - link "two pointers" [ref=e369] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e370]:
+                  - link "Submit" [ref=e372] [cursor=pointer]:
+                    - /url: /problemset/submit/2190/C
+                    - img "Submit" [ref=e373]
+                - cell "2300" [ref=e374]
+                - cell "x1298" [ref=e375]:
+                  - link "x1298" [ref=e376] [cursor=pointer]:
+                    - /url: /problemset/status/2190/problem/C
+                    - img [ref=e377]
+                    - text: x1298
+              - row "2190B1 Sub-RBS (Easy Version) combinatorics, constructive algorithms, dp, greedy, strings, two pointers Submit 1400 x10743" [ref=e378]:
+                - cell "2190B1" [ref=e379]:
+                  - link "2190B1" [ref=e380] [cursor=pointer]:
+                    - /url: /problemset/problem/2190/B1
+                - cell "Sub-RBS (Easy Version) combinatorics, constructive algorithms, dp, greedy, strings, two pointers" [ref=e381]:
+                  - link "Sub-RBS (Easy Version)" [ref=e383] [cursor=pointer]:
+                    - /url: /problemset/problem/2190/B1
+                  - generic [ref=e384]:
+                    - link "combinatorics" [ref=e385] [cursor=pointer]:
+                      - /url: /problemset?tags=combinatorics
+                    - text: ","
+                    - link "constructive algorithms" [ref=e386] [cursor=pointer]:
+                      - /url: /problemset?tags=constructive+algorithms
+                    - text: ","
+                    - link "dp" [ref=e387] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "greedy" [ref=e388] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "strings" [ref=e389] [cursor=pointer]:
+                      - /url: /problemset?tags=strings
+                    - text: ","
+                    - link "two pointers" [ref=e390] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e391]:
+                  - link "Submit" [ref=e393] [cursor=pointer]:
+                    - /url: /problemset/submit/2190/B1
+                    - img "Submit" [ref=e394]
+                - cell "1400" [ref=e395]
+                - cell "x10743" [ref=e396]:
+                  - link "x10743" [ref=e397] [cursor=pointer]:
+                    - /url: /problemset/status/2190/problem/B1
+                    - img [ref=e398]
+                    - text: x10743
+              - row "2185E The Robotic Rush binary search, greedy, implementation, two pointers Submit 1500 x10285" [ref=e399]:
+                - cell "2185E" [ref=e400]:
+                  - link "2185E" [ref=e401] [cursor=pointer]:
+                    - /url: /problemset/problem/2185/E
+                - cell "The Robotic Rush binary search, greedy, implementation, two pointers" [ref=e402]:
+                  - link "The Robotic Rush" [ref=e404] [cursor=pointer]:
+                    - /url: /problemset/problem/2185/E
+                  - generic [ref=e405]:
+                    - link "binary search" [ref=e406] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "greedy" [ref=e407] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "implementation" [ref=e408] [cursor=pointer]:
+                      - /url: /problemset?tags=implementation
+                    - text: ","
+                    - link "two pointers" [ref=e409] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e410]:
+                  - link "Submit" [ref=e412] [cursor=pointer]:
+                    - /url: /problemset/submit/2185/E
+                    - img "Submit" [ref=e413]
+                - cell "1500" [ref=e414]
+                - cell "x10285" [ref=e415]:
+                  - link "x10285" [ref=e416] [cursor=pointer]:
+                    - /url: /problemset/status/2185/problem/E
+                    - img [ref=e417]
+                    - text: x10285
+              - row "2185D OutOfMemoryError data structures, implementation, math, two pointers Submit 1100 x20784" [ref=e418]:
+                - cell "2185D" [ref=e419]:
+                  - link "2185D" [ref=e420] [cursor=pointer]:
+                    - /url: /problemset/problem/2185/D
+                - cell "OutOfMemoryError data structures, implementation, math, two pointers" [ref=e421]:
+                  - link "OutOfMemoryError" [ref=e423] [cursor=pointer]:
+                    - /url: /problemset/problem/2185/D
+                  - generic [ref=e424]:
+                    - link "data structures" [ref=e425] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "implementation" [ref=e426] [cursor=pointer]:
+                      - /url: /problemset?tags=implementation
+                    - text: ","
+                    - link "math" [ref=e427] [cursor=pointer]:
+                      - /url: /problemset?tags=math
+                    - text: ","
+                    - link "two pointers" [ref=e428] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e429]:
+                  - link "Submit" [ref=e431] [cursor=pointer]:
+                    - /url: /problemset/submit/2185/D
+                    - img "Submit" [ref=e432]
+                - cell "1100" [ref=e433]
+                - cell "x20784" [ref=e434]:
+                  - link "x20784" [ref=e435] [cursor=pointer]:
+                    - /url: /problemset/status/2185/problem/D
+                    - img [ref=e436]
+                    - text: x20784
+              - row "2183C War Strategy binary search, greedy, math, two pointers Submit 1500 x10719" [ref=e437]:
+                - cell "2183C" [ref=e438]:
+                  - link "2183C" [ref=e439] [cursor=pointer]:
+                    - /url: /problemset/problem/2183/C
+                - cell "War Strategy binary search, greedy, math, two pointers" [ref=e440]:
+                  - link "War Strategy" [ref=e442] [cursor=pointer]:
+                    - /url: /problemset/problem/2183/C
+                  - generic [ref=e443]:
+                    - link "binary search" [ref=e444] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "greedy" [ref=e445] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "math" [ref=e446] [cursor=pointer]:
+                      - /url: /problemset?tags=math
+                    - text: ","
+                    - link "two pointers" [ref=e447] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e448]:
+                  - link "Submit" [ref=e450] [cursor=pointer]:
+                    - /url: /problemset/submit/2183/C
+                    - img "Submit" [ref=e451]
+                - cell "1500" [ref=e452]
+                - cell "x10719" [ref=e453]:
+                  - link "x10719" [ref=e454] [cursor=pointer]:
+                    - /url: /problemset/status/2183/problem/C
+                    - img [ref=e455]
+                    - text: x10719
+              - row "2182E New Year's Gifts binary search, data structures, greedy, sortings, two pointers Submit 1800 x5585" [ref=e456]:
+                - cell "2182E" [ref=e457]:
+                  - link "2182E" [ref=e458] [cursor=pointer]:
+                    - /url: /problemset/problem/2182/E
+                - cell "New Year's Gifts binary search, data structures, greedy, sortings, two pointers" [ref=e459]:
+                  - link "New Year's Gifts" [ref=e461] [cursor=pointer]:
+                    - /url: /problemset/problem/2182/E
+                  - generic [ref=e462]:
+                    - link "binary search" [ref=e463] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "data structures" [ref=e464] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "greedy" [ref=e465] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "sortings" [ref=e466] [cursor=pointer]:
+                      - /url: /problemset?tags=sortings
+                    - text: ","
+                    - link "two pointers" [ref=e467] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e468]:
+                  - link "Submit" [ref=e470] [cursor=pointer]:
+                    - /url: /problemset/submit/2182/E
+                    - img "Submit" [ref=e471]
+                - cell "1800" [ref=e472]
+                - cell "x5585" [ref=e473]:
+                  - link "x5585" [ref=e474] [cursor=pointer]:
+                    - /url: /problemset/status/2182/problem/E
+                    - img [ref=e475]
+                    - text: x5585
+              - row "2174A Needle in a Haystack greedy, strings, two pointers Submit 1200 x14369" [ref=e476]:
+                - cell "2174A" [ref=e477]:
+                  - link "2174A" [ref=e478] [cursor=pointer]:
+                    - /url: /problemset/problem/2174/A
+                - cell "Needle in a Haystack greedy, strings, two pointers" [ref=e479]:
+                  - link "Needle in a Haystack" [ref=e481] [cursor=pointer]:
+                    - /url: /problemset/problem/2174/A
+                  - generic [ref=e482]:
+                    - link "greedy" [ref=e483] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "strings" [ref=e484] [cursor=pointer]:
+                      - /url: /problemset?tags=strings
+                    - text: ","
+                    - link "two pointers" [ref=e485] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e486]:
+                  - link "Submit" [ref=e488] [cursor=pointer]:
+                    - /url: /problemset/submit/2174/A
+                    - img "Submit" [ref=e489]
+                - cell "1200" [ref=e490]
+                - cell "x14369" [ref=e491]:
+                  - link "x14369" [ref=e492] [cursor=pointer]:
+                    - /url: /problemset/status/2174/problem/A
+                    - img [ref=e493]
+                    - text: x14369
+              - row "2170C Quotient and Remainder binary search, greedy, two pointers Submit 1300 x11287" [ref=e494]:
+                - cell "2170C" [ref=e495]:
+                  - link "2170C" [ref=e496] [cursor=pointer]:
+                    - /url: /problemset/problem/2170/C
+                - cell "Quotient and Remainder binary search, greedy, two pointers" [ref=e497]:
+                  - link "Quotient and Remainder" [ref=e499] [cursor=pointer]:
+                    - /url: /problemset/problem/2170/C
+                  - generic [ref=e500]:
+                    - link "binary search" [ref=e501] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "greedy" [ref=e502] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "two pointers" [ref=e503] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e504]:
+                  - link "Submit" [ref=e506] [cursor=pointer]:
+                    - /url: /problemset/submit/2170/C
+                    - img "Submit" [ref=e507]
+                - cell "1300" [ref=e508]
+                - cell "x11287" [ref=e509]:
+                  - link "x11287" [ref=e510] [cursor=pointer]:
+                    - /url: /problemset/status/2170/problem/C
+                    - img [ref=e511]
+                    - text: x11287
+              - row "2169C Range Operation dp, greedy, math, two pointers Submit 1300 x12733" [ref=e512]:
+                - cell "2169C" [ref=e513]:
+                  - link "2169C" [ref=e514] [cursor=pointer]:
+                    - /url: /problemset/problem/2169/C
+                - cell "Range Operation dp, greedy, math, two pointers" [ref=e515]:
+                  - link "Range Operation" [ref=e517] [cursor=pointer]:
+                    - /url: /problemset/problem/2169/C
+                  - generic [ref=e518]:
+                    - link "dp" [ref=e519] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "greedy" [ref=e520] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "math" [ref=e521] [cursor=pointer]:
+                      - /url: /problemset?tags=math
+                    - text: ","
+                    - link "two pointers" [ref=e522] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e523]:
+                  - link "Submit" [ref=e525] [cursor=pointer]:
+                    - /url: /problemset/submit/2169/C
+                    - img "Submit" [ref=e526]
+                - cell "1300" [ref=e527]
+                - cell "x12733" [ref=e528]:
+                  - link "x12733" [ref=e529] [cursor=pointer]:
+                    - /url: /problemset/status/2169/problem/C
+                    - img [ref=e530]
+                    - text: x12733
+              - row "2164D Copy String greedy, implementation, strings, two pointers Submit 1800 x5082" [ref=e531]:
+                - cell "2164D" [ref=e532]:
+                  - link "2164D" [ref=e533] [cursor=pointer]:
+                    - /url: /problemset/problem/2164/D
+                - cell "Copy String greedy, implementation, strings, two pointers" [ref=e534]:
+                  - link "Copy String" [ref=e536] [cursor=pointer]:
+                    - /url: /problemset/problem/2164/D
+                  - generic [ref=e537]:
+                    - link "greedy" [ref=e538] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "implementation" [ref=e539] [cursor=pointer]:
+                      - /url: /problemset?tags=implementation
+                    - text: ","
+                    - link "strings" [ref=e540] [cursor=pointer]:
+                      - /url: /problemset?tags=strings
+                    - text: ","
+                    - link "two pointers" [ref=e541] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e542]:
+                  - link "Submit" [ref=e544] [cursor=pointer]:
+                    - /url: /problemset/submit/2164/D
+                    - img "Submit" [ref=e545]
+                - cell "1800" [ref=e546]
+                - cell "x5082" [ref=e547]:
+                  - link "x5082" [ref=e548] [cursor=pointer]:
+                    - /url: /problemset/status/2164/problem/D
+                    - img [ref=e549]
+                    - text: x5082
+              - row "2163C Monopati brute force, combinatorics, dp, math, two pointers Submit 1500 x9068" [ref=e550]:
+                - cell "2163C" [ref=e551]:
+                  - link "2163C" [ref=e552] [cursor=pointer]:
+                    - /url: /problemset/problem/2163/C
+                - cell "Monopati brute force, combinatorics, dp, math, two pointers" [ref=e553]:
+                  - link "Monopati" [ref=e555] [cursor=pointer]:
+                    - /url: /problemset/problem/2163/C
+                  - generic [ref=e556]:
+                    - link "brute force" [ref=e557] [cursor=pointer]:
+                      - /url: /problemset?tags=brute+force
+                    - text: ","
+                    - link "combinatorics" [ref=e558] [cursor=pointer]:
+                      - /url: /problemset?tags=combinatorics
+                    - text: ","
+                    - link "dp" [ref=e559] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "math" [ref=e560] [cursor=pointer]:
+                      - /url: /problemset?tags=math
+                    - text: ","
+                    - link "two pointers" [ref=e561] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e562]:
+                  - link "Submit" [ref=e564] [cursor=pointer]:
+                    - /url: /problemset/submit/2163/C
+                    - img "Submit" [ref=e565]
+                - cell "1500" [ref=e566]
+                - cell "x9068" [ref=e567]:
+                  - link "x9068" [ref=e568] [cursor=pointer]:
+                    - /url: /problemset/status/2163/problem/C
+                    - img [ref=e569]
+                    - text: x9068
+              - row "2161C Loyalty constructive algorithms, greedy, sortings, two pointers Submit 1200 x12620" [ref=e570]:
+                - cell "2161C" [ref=e571]:
+                  - link "2161C" [ref=e572] [cursor=pointer]:
+                    - /url: /problemset/problem/2161/C
+                - cell "Loyalty constructive algorithms, greedy, sortings, two pointers" [ref=e573]:
+                  - link "Loyalty" [ref=e575] [cursor=pointer]:
+                    - /url: /problemset/problem/2161/C
+                  - generic [ref=e576]:
+                    - link "constructive algorithms" [ref=e577] [cursor=pointer]:
+                      - /url: /problemset?tags=constructive+algorithms
+                    - text: ","
+                    - link "greedy" [ref=e578] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "sortings" [ref=e579] [cursor=pointer]:
+                      - /url: /problemset?tags=sortings
+                    - text: ","
+                    - link "two pointers" [ref=e580] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e581]:
+                  - link "Submit" [ref=e583] [cursor=pointer]:
+                    - /url: /problemset/submit/2161/C
+                    - img "Submit" [ref=e584]
+                - cell "1200" [ref=e585]
+                - cell "x12620" [ref=e586]:
+                  - link "x12620" [ref=e587] [cursor=pointer]:
+                    - /url: /problemset/status/2161/problem/C
+                    - img [ref=e588]
+                    - text: x12620
+              - row "2159D1 Inverse Minimum Partition (Easy Version) binary search, brute force, dp, geometry, greedy, math, two pointers Submit 2500 x1044" [ref=e589]:
+                - cell "2159D1" [ref=e590]:
+                  - link "2159D1" [ref=e591] [cursor=pointer]:
+                    - /url: /problemset/problem/2159/D1
+                - cell "Inverse Minimum Partition (Easy Version) binary search, brute force, dp, geometry, greedy, math, two pointers" [ref=e592]:
+                  - link "Inverse Minimum Partition (Easy Version)" [ref=e594] [cursor=pointer]:
+                    - /url: /problemset/problem/2159/D1
+                  - generic [ref=e595]:
+                    - link "binary search" [ref=e596] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "brute force" [ref=e597] [cursor=pointer]:
+                      - /url: /problemset?tags=brute+force
+                    - text: ","
+                    - link "dp" [ref=e598] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "geometry" [ref=e599] [cursor=pointer]:
+                      - /url: /problemset?tags=geometry
+                    - text: ","
+                    - link "greedy" [ref=e600] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "math" [ref=e601] [cursor=pointer]:
+                      - /url: /problemset?tags=math
+                    - text: ","
+                    - link "two pointers" [ref=e602] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e603]:
+                  - link "Submit" [ref=e605] [cursor=pointer]:
+                    - /url: /problemset/submit/2159/D1
+                    - img "Submit" [ref=e606]
+                - cell "2500" [ref=e607]
+                - cell "x1044" [ref=e608]:
+                  - link "x1044" [ref=e609] [cursor=pointer]:
+                    - /url: /problemset/status/2159/problem/D1
+                    - img [ref=e610]
+                    - text: x1044
+              - row "2159B Rectangles brute force, data structures, dp, dsu, greedy, implementation, two pointers Submit 2100 x2366" [ref=e611]:
+                - cell "2159B" [ref=e612]:
+                  - link "2159B" [ref=e613] [cursor=pointer]:
+                    - /url: /problemset/problem/2159/B
+                - cell "Rectangles brute force, data structures, dp, dsu, greedy, implementation, two pointers" [ref=e614]:
+                  - link "Rectangles" [ref=e616] [cursor=pointer]:
+                    - /url: /problemset/problem/2159/B
+                  - generic [ref=e617]:
+                    - link "brute force" [ref=e618] [cursor=pointer]:
+                      - /url: /problemset?tags=brute+force
+                    - text: ","
+                    - link "data structures" [ref=e619] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "dp" [ref=e620] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "dsu" [ref=e621] [cursor=pointer]:
+                      - /url: /problemset?tags=dsu
+                    - text: ","
+                    - link "greedy" [ref=e622] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "implementation" [ref=e623] [cursor=pointer]:
+                      - /url: /problemset?tags=implementation
+                    - text: ","
+                    - link "two pointers" [ref=e624] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e625]:
+                  - link "Submit" [ref=e627] [cursor=pointer]:
+                    - /url: /problemset/submit/2159/B
+                    - img "Submit" [ref=e628]
+                - cell "2100" [ref=e629]
+                - cell "x2366" [ref=e630]:
+                  - link "x2366" [ref=e631] [cursor=pointer]:
+                    - /url: /problemset/status/2159/problem/B
+                    - img [ref=e632]
+                    - text: x2366
+              - row "2157D Billion Players Game binary search, greedy, math, sortings, ternary search, two pointers Submit 1600 x6119" [ref=e633]:
+                - cell "2157D" [ref=e634]:
+                  - link "2157D" [ref=e635] [cursor=pointer]:
+                    - /url: /problemset/problem/2157/D
+                - cell "Billion Players Game binary search, greedy, math, sortings, ternary search, two pointers" [ref=e636]:
+                  - link "Billion Players Game" [ref=e638] [cursor=pointer]:
+                    - /url: /problemset/problem/2157/D
+                  - generic [ref=e639]:
+                    - link "binary search" [ref=e640] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "greedy" [ref=e641] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "math" [ref=e642] [cursor=pointer]:
+                      - /url: /problemset?tags=math
+                    - text: ","
+                    - link "sortings" [ref=e643] [cursor=pointer]:
+                      - /url: /problemset?tags=sortings
+                    - text: ","
+                    - link "ternary search" [ref=e644] [cursor=pointer]:
+                      - /url: /problemset?tags=ternary+search
+                    - text: ","
+                    - link "two pointers" [ref=e645] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e646]:
+                  - link "Submit" [ref=e648] [cursor=pointer]:
+                    - /url: /problemset/submit/2157/D
+                    - img "Submit" [ref=e649]
+                - cell "1600" [ref=e650]
+                - cell "x6119" [ref=e651]:
+                  - link "x6119" [ref=e652] [cursor=pointer]:
+                    - /url: /problemset/status/2157/problem/D
+                    - img [ref=e653]
+                    - text: x6119
+              - row "2154E No Mind To Think binary search, divide and conquer, greedy, sortings, ternary search, two pointers Submit 2500 x1207" [ref=e654]:
+                - cell "2154E" [ref=e655]:
+                  - link "2154E" [ref=e656] [cursor=pointer]:
+                    - /url: /problemset/problem/2154/E
+                - cell "No Mind To Think binary search, divide and conquer, greedy, sortings, ternary search, two pointers" [ref=e657]:
+                  - link "No Mind To Think" [ref=e659] [cursor=pointer]:
+                    - /url: /problemset/problem/2154/E
+                  - generic [ref=e660]:
+                    - link "binary search" [ref=e661] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "divide and conquer" [ref=e662] [cursor=pointer]:
+                      - /url: /problemset?tags=divide+and+conquer
+                    - text: ","
+                    - link "greedy" [ref=e663] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "sortings" [ref=e664] [cursor=pointer]:
+                      - /url: /problemset?tags=sortings
+                    - text: ","
+                    - link "ternary search" [ref=e665] [cursor=pointer]:
+                      - /url: /problemset?tags=ternary+search
+                    - text: ","
+                    - link "two pointers" [ref=e666] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e667]:
+                  - link "Submit" [ref=e669] [cursor=pointer]:
+                    - /url: /problemset/submit/2154/E
+                    - img "Submit" [ref=e670]
+                - cell "2500" [ref=e671]
+                - cell "x1207" [ref=e672]:
+                  - link "x1207" [ref=e673] [cursor=pointer]:
+                    - /url: /problemset/status/2154/problem/E
+                    - img [ref=e674]
+                    - text: x1207
+              - row "2154D Catshock constructive algorithms, dfs and similar, graphs, trees, two pointers Submit 1900 x4781" [ref=e675]:
+                - cell "2154D" [ref=e676]:
+                  - link "2154D" [ref=e677] [cursor=pointer]:
+                    - /url: /problemset/problem/2154/D
+                - cell "Catshock constructive algorithms, dfs and similar, graphs, trees, two pointers" [ref=e678]:
+                  - link "Catshock" [ref=e680] [cursor=pointer]:
+                    - /url: /problemset/problem/2154/D
+                  - generic [ref=e681]:
+                    - link "constructive algorithms" [ref=e682] [cursor=pointer]:
+                      - /url: /problemset?tags=constructive+algorithms
+                    - text: ","
+                    - link "dfs and similar" [ref=e683] [cursor=pointer]:
+                      - /url: /problemset?tags=dfs+and+similar
+                    - text: ","
+                    - link "graphs" [ref=e684] [cursor=pointer]:
+                      - /url: /problemset?tags=graphs
+                    - text: ","
+                    - link "trees" [ref=e685] [cursor=pointer]:
+                      - /url: /problemset?tags=trees
+                    - text: ","
+                    - link "two pointers" [ref=e686] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e687]:
+                  - link "Submit" [ref=e689] [cursor=pointer]:
+                    - /url: /problemset/submit/2154/D
+                    - img "Submit" [ref=e690]
+                - cell "1900" [ref=e691]
+                - cell "x4781" [ref=e692]:
+                  - link "x4781" [ref=e693] [cursor=pointer]:
+                    - /url: /problemset/status/2154/problem/D
+                    - img [ref=e694]
+                    - text: x4781
+              - row "2154A Notelock greedy, two pointers Submit 800 x23216" [ref=e695]:
+                - cell "2154A" [ref=e696]:
+                  - link "2154A" [ref=e697] [cursor=pointer]:
+                    - /url: /problemset/problem/2154/A
+                - cell "Notelock greedy, two pointers" [ref=e698]:
+                  - link "Notelock" [ref=e700] [cursor=pointer]:
+                    - /url: /problemset/problem/2154/A
+                  - generic [ref=e701]:
+                    - link "greedy" [ref=e702] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "two pointers" [ref=e703] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e704]:
+                  - link "Submit" [ref=e706] [cursor=pointer]:
+                    - /url: /problemset/submit/2154/A
+                    - img "Submit" [ref=e707]
+                - cell "800" [ref=e708]
+                - cell "x23216" [ref=e709]:
+                  - link "x23216" [ref=e710] [cursor=pointer]:
+                    - /url: /problemset/status/2154/problem/A
+                    - img [ref=e711]
+                    - text: x23216
+              - row "2149E Hidden Knowledge of the Ancients data structures, two pointers Submit 1500 x9316" [ref=e712]:
+                - cell "2149E" [ref=e713]:
+                  - link "2149E" [ref=e714] [cursor=pointer]:
+                    - /url: /problemset/problem/2149/E
+                - cell "Hidden Knowledge of the Ancients data structures, two pointers" [ref=e715]:
+                  - link "Hidden Knowledge of the Ancients" [ref=e717] [cursor=pointer]:
+                    - /url: /problemset/problem/2149/E
+                  - generic [ref=e718]:
+                    - link "data structures" [ref=e719] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "two pointers" [ref=e720] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e721]:
+                  - link "Submit" [ref=e723] [cursor=pointer]:
+                    - /url: /problemset/submit/2149/E
+                    - img "Submit" [ref=e724]
+                - cell "1500" [ref=e725]
+                - cell "x9316" [ref=e726]:
+                  - link "x9316" [ref=e727] [cursor=pointer]:
+                    - /url: /problemset/status/2149/problem/E
+                    - img [ref=e728]
+                    - text: x9316
+              - row "2148E Split binary search, data structures, two pointers Submit 1200 x14119" [ref=e729]:
+                - cell "2148E" [ref=e730]:
+                  - link "2148E" [ref=e731] [cursor=pointer]:
+                    - /url: /problemset/problem/2148/E
+                - cell "Split binary search, data structures, two pointers" [ref=e732]:
+                  - link "Split" [ref=e734] [cursor=pointer]:
+                    - /url: /problemset/problem/2148/E
+                  - generic [ref=e735]:
+                    - link "binary search" [ref=e736] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "data structures" [ref=e737] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "two pointers" [ref=e738] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e739]:
+                  - link "Submit" [ref=e741] [cursor=pointer]:
+                    - /url: /problemset/submit/2148/E
+                    - img "Submit" [ref=e742]
+                - cell "1200" [ref=e743]
+                - cell "x14119" [ref=e744]:
+                  - link "x14119" [ref=e745] [cursor=pointer]:
+                    - /url: /problemset/status/2148/problem/E
+                    - img [ref=e746]
+                    - text: x14119
+              - row "2143D2 Inversion Graph Coloring (Hard Version) binary search, combinatorics, data structures, dp, two pointers Submit 2200 x2783" [ref=e747]:
+                - cell "2143D2" [ref=e748]:
+                  - link "2143D2" [ref=e749] [cursor=pointer]:
+                    - /url: /problemset/problem/2143/D2
+                - cell "Inversion Graph Coloring (Hard Version) binary search, combinatorics, data structures, dp, two pointers" [ref=e750]:
+                  - link "Inversion Graph Coloring (Hard Version)" [ref=e752] [cursor=pointer]:
+                    - /url: /problemset/problem/2143/D2
+                  - generic [ref=e753]:
+                    - link "binary search" [ref=e754] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "combinatorics" [ref=e755] [cursor=pointer]:
+                      - /url: /problemset?tags=combinatorics
+                    - text: ","
+                    - link "data structures" [ref=e756] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "dp" [ref=e757] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "two pointers" [ref=e758] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e759]:
+                  - link "Submit" [ref=e761] [cursor=pointer]:
+                    - /url: /problemset/submit/2143/D2
+                    - img "Submit" [ref=e762]
+                - cell "2200" [ref=e763]
+                - cell "x2783" [ref=e764]:
+                  - link "x2783" [ref=e765] [cursor=pointer]:
+                    - /url: /problemset/status/2143/problem/D2
+                    - img [ref=e766]
+                    - text: x2783
+              - row "2143D1 Inversion Graph Coloring (Easy Version) combinatorics, data structures, dp, greedy, two pointers Submit 1800 x6417" [ref=e767]:
+                - cell "2143D1" [ref=e768]:
+                  - link "2143D1" [ref=e769] [cursor=pointer]:
+                    - /url: /problemset/problem/2143/D1
+                - cell "Inversion Graph Coloring (Easy Version) combinatorics, data structures, dp, greedy, two pointers" [ref=e770]:
+                  - link "Inversion Graph Coloring (Easy Version)" [ref=e772] [cursor=pointer]:
+                    - /url: /problemset/problem/2143/D1
+                  - generic [ref=e773]:
+                    - link "combinatorics" [ref=e774] [cursor=pointer]:
+                      - /url: /problemset?tags=combinatorics
+                    - text: ","
+                    - link "data structures" [ref=e775] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "dp" [ref=e776] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "greedy" [ref=e777] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "two pointers" [ref=e778] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e779]:
+                  - link "Submit" [ref=e781] [cursor=pointer]:
+                    - /url: /problemset/submit/2143/D1
+                    - img "Submit" [ref=e782]
+                - cell "1800" [ref=e783]
+                - cell "x6417" [ref=e784]:
+                  - link "x6417" [ref=e785] [cursor=pointer]:
+                    - /url: /problemset/status/2143/problem/D1
+                    - img [ref=e786]
+                    - text: x6417
+              - row "2143B Discounts greedy, sortings, two pointers Submit 1000 x21005" [ref=e787]:
+                - cell "2143B" [ref=e788]:
+                  - link "2143B" [ref=e789] [cursor=pointer]:
+                    - /url: /problemset/problem/2143/B
+                - cell "Discounts greedy, sortings, two pointers" [ref=e790]:
+                  - link "Discounts" [ref=e792] [cursor=pointer]:
+                    - /url: /problemset/problem/2143/B
+                  - generic [ref=e793]:
+                    - link "greedy" [ref=e794] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "sortings" [ref=e795] [cursor=pointer]:
+                      - /url: /problemset?tags=sortings
+                    - text: ","
+                    - link "two pointers" [ref=e796] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e797]:
+                  - link "Submit" [ref=e799] [cursor=pointer]:
+                    - /url: /problemset/submit/2143/B
+                    - img "Submit" [ref=e800]
+                - cell "1000" [ref=e801]
+                - cell "x21005" [ref=e802]:
+                  - link "x21005" [ref=e803] [cursor=pointer]:
+                    - /url: /problemset/status/2143/problem/B
+                    - img [ref=e804]
+                    - text: x21005
+              - row "2143A All Lengths Subtraction brute force, two pointers Submit 800 x20762" [ref=e805]:
+                - cell "2143A" [ref=e806]:
+                  - link "2143A" [ref=e807] [cursor=pointer]:
+                    - /url: /problemset/problem/2143/A
+                - cell "All Lengths Subtraction brute force, two pointers" [ref=e808]:
+                  - link "All Lengths Subtraction" [ref=e810] [cursor=pointer]:
+                    - /url: /problemset/problem/2143/A
+                  - generic [ref=e811]:
+                    - link "brute force" [ref=e812] [cursor=pointer]:
+                      - /url: /problemset?tags=brute+force
+                    - text: ","
+                    - link "two pointers" [ref=e813] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e814]:
+                  - link "Submit" [ref=e816] [cursor=pointer]:
+                    - /url: /problemset/submit/2143/A
+                    - img "Submit" [ref=e817]
+                - cell "800" [ref=e818]
+                - cell "x20762" [ref=e819]:
+                  - link "x20762" [ref=e820] [cursor=pointer]:
+                    - /url: /problemset/status/2143/problem/A
+                    - img [ref=e821]
+                    - text: x20762
+              - row "2138B Antiamuny Wants to Learn Swap data structures, greedy, two pointers Submit 1900 x5337" [ref=e822]:
+                - cell "2138B" [ref=e823]:
+                  - link "2138B" [ref=e824] [cursor=pointer]:
+                    - /url: /problemset/problem/2138/B
+                - cell "Antiamuny Wants to Learn Swap data structures, greedy, two pointers" [ref=e825]:
+                  - link "Antiamuny Wants to Learn Swap" [ref=e827] [cursor=pointer]:
+                    - /url: /problemset/problem/2138/B
+                  - generic [ref=e828]:
+                    - link "data structures" [ref=e829] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "greedy" [ref=e830] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "two pointers" [ref=e831] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e832]:
+                  - link "Submit" [ref=e834] [cursor=pointer]:
+                    - /url: /problemset/submit/2138/B
+                    - img "Submit" [ref=e835]
+                - cell "1900" [ref=e836]
+                - cell "x5337" [ref=e837]:
+                  - link "x5337" [ref=e838] [cursor=pointer]:
+                    - /url: /problemset/status/2138/problem/B
+                    - img [ref=e839]
+                    - text: x5337
+              - row "2136B Like the Bitset constructive algorithms, greedy, two pointers Submit 900 x20966" [ref=e840]:
+                - cell "2136B" [ref=e841]:
+                  - link "2136B" [ref=e842] [cursor=pointer]:
+                    - /url: /problemset/problem/2136/B
+                - cell "Like the Bitset constructive algorithms, greedy, two pointers" [ref=e843]:
+                  - link "Like the Bitset" [ref=e845] [cursor=pointer]:
+                    - /url: /problemset/problem/2136/B
+                  - generic [ref=e846]:
+                    - link "constructive algorithms" [ref=e847] [cursor=pointer]:
+                      - /url: /problemset?tags=constructive+algorithms
+                    - text: ","
+                    - link "greedy" [ref=e848] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "two pointers" [ref=e849] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e850]:
+                  - link "Submit" [ref=e852] [cursor=pointer]:
+                    - /url: /problemset/submit/2136/B
+                    - img "Submit" [ref=e853]
+                - cell "900" [ref=e854]
+                - cell "x20966" [ref=e855]:
+                  - link "x20966" [ref=e856] [cursor=pointer]:
+                    - /url: /problemset/status/2136/problem/B
+                    - img [ref=e857]
+                    - text: x20966
+              - row "2131F Unjust Binary Life binary search, data structures, greedy, greedy, math, sortings, two pointers Submit 1900 x4732" [ref=e858]:
+                - cell "2131F" [ref=e859]:
+                  - link "2131F" [ref=e860] [cursor=pointer]:
+                    - /url: /problemset/problem/2131/F
+                - cell "Unjust Binary Life binary search, data structures, greedy, greedy, math, sortings, two pointers" [ref=e861]:
+                  - link "Unjust Binary Life" [ref=e863] [cursor=pointer]:
+                    - /url: /problemset/problem/2131/F
+                  - generic [ref=e864]:
+                    - link "binary search" [ref=e865] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "data structures" [ref=e866] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "greedy" [ref=e867] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "greedy" [ref=e868] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "math" [ref=e869] [cursor=pointer]:
+                      - /url: /problemset?tags=math
+                    - text: ","
+                    - link "sortings" [ref=e870] [cursor=pointer]:
+                      - /url: /problemset?tags=sortings
+                    - text: ","
+                    - link "two pointers" [ref=e871] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e872]:
+                  - link "Submit" [ref=e874] [cursor=pointer]:
+                    - /url: /problemset/submit/2131/F
+                    - img "Submit" [ref=e875]
+                - cell "1900" [ref=e876]
+                - cell "x4732" [ref=e877]:
+                  - link "x4732" [ref=e878] [cursor=pointer]:
+                    - /url: /problemset/status/2131/problem/F
+                    - img [ref=e879]
+                    - text: x4732
+              - row "2128E2 Submedians (Hard Version) binary search, constructive algorithms, data structures, math, two pointers Submit 2600 x799" [ref=e880]:
+                - cell "2128E2" [ref=e881]:
+                  - link "2128E2" [ref=e882] [cursor=pointer]:
+                    - /url: /problemset/problem/2128/E2
+                - cell "Submedians (Hard Version) binary search, constructive algorithms, data structures, math, two pointers" [ref=e883]:
+                  - link "Submedians (Hard Version)" [ref=e885] [cursor=pointer]:
+                    - /url: /problemset/problem/2128/E2
+                  - generic [ref=e886]:
+                    - link "binary search" [ref=e887] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "constructive algorithms" [ref=e888] [cursor=pointer]:
+                      - /url: /problemset?tags=constructive+algorithms
+                    - text: ","
+                    - link "data structures" [ref=e889] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "math" [ref=e890] [cursor=pointer]:
+                      - /url: /problemset?tags=math
+                    - text: ","
+                    - link "two pointers" [ref=e891] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e892]:
+                  - link "Submit" [ref=e894] [cursor=pointer]:
+                    - /url: /problemset/submit/2128/E2
+                    - img "Submit" [ref=e895]
+                - cell "2600" [ref=e896]
+                - cell "x799" [ref=e897]:
+                  - link "x799" [ref=e898] [cursor=pointer]:
+                    - /url: /problemset/status/2128/problem/E2
+                    - img [ref=e899]
+                    - text: x799
+              - row "2128B Deque Process constructive algorithms, greedy, sortings, two pointers Submit 1100 x21481" [ref=e900]:
+                - cell "2128B" [ref=e901]:
+                  - link "2128B" [ref=e902] [cursor=pointer]:
+                    - /url: /problemset/problem/2128/B
+                - cell "Deque Process constructive algorithms, greedy, sortings, two pointers" [ref=e903]:
+                  - link "Deque Process" [ref=e905] [cursor=pointer]:
+                    - /url: /problemset/problem/2128/B
+                  - generic [ref=e906]:
+                    - link "constructive algorithms" [ref=e907] [cursor=pointer]:
+                      - /url: /problemset?tags=constructive+algorithms
+                    - text: ","
+                    - link "greedy" [ref=e908] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "sortings" [ref=e909] [cursor=pointer]:
+                      - /url: /problemset?tags=sortings
+                    - text: ","
+                    - link "two pointers" [ref=e910] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e911]:
+                  - link "Submit" [ref=e913] [cursor=pointer]:
+                    - /url: /problemset/submit/2128/B
+                    - img "Submit" [ref=e914]
+                - cell "1100" [ref=e915]
+                - cell "x21481" [ref=e916]:
+                  - link "x21481" [ref=e917] [cursor=pointer]:
+                    - /url: /problemset/status/2128/problem/B
+                    - img [ref=e918]
+                    - text: x21481
+              - row "2126G2 Big Wins! (hard version) binary search, data structures, divide and conquer, dsu, trees, two pointers Submit 2400 x1173" [ref=e919]:
+                - cell "2126G2" [ref=e920]:
+                  - link "2126G2" [ref=e921] [cursor=pointer]:
+                    - /url: /problemset/problem/2126/G2
+                - cell "Big Wins! (hard version) binary search, data structures, divide and conquer, dsu, trees, two pointers" [ref=e922]:
+                  - link "Big Wins! (hard version)" [ref=e924] [cursor=pointer]:
+                    - /url: /problemset/problem/2126/G2
+                  - generic [ref=e925]:
+                    - link "binary search" [ref=e926] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "data structures" [ref=e927] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "divide and conquer" [ref=e928] [cursor=pointer]:
+                      - /url: /problemset?tags=divide+and+conquer
+                    - text: ","
+                    - link "dsu" [ref=e929] [cursor=pointer]:
+                      - /url: /problemset?tags=dsu
+                    - text: ","
+                    - link "trees" [ref=e930] [cursor=pointer]:
+                      - /url: /problemset?tags=trees
+                    - text: ","
+                    - link "two pointers" [ref=e931] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e932]:
+                  - link "Submit" [ref=e934] [cursor=pointer]:
+                    - /url: /problemset/submit/2126/G2
+                    - img "Submit" [ref=e935]
+                - cell "2400" [ref=e936]
+                - cell "x1173" [ref=e937]:
+                  - link "x1173" [ref=e938] [cursor=pointer]:
+                    - /url: /problemset/status/2126/problem/G2
+                    - img [ref=e939]
+                    - text: x1173
+              - row "2126G1 Big Wins! (easy version) binary search, data structures, dp, dsu, two pointers Submit 2200 x2490" [ref=e940]:
+                - cell "2126G1" [ref=e941]:
+                  - link "2126G1" [ref=e942] [cursor=pointer]:
+                    - /url: /problemset/problem/2126/G1
+                - cell "Big Wins! (easy version) binary search, data structures, dp, dsu, two pointers" [ref=e943]:
+                  - link "Big Wins! (easy version)" [ref=e945] [cursor=pointer]:
+                    - /url: /problemset/problem/2126/G1
+                  - generic [ref=e946]:
+                    - link "binary search" [ref=e947] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "data structures" [ref=e948] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "dp" [ref=e949] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "dsu" [ref=e950] [cursor=pointer]:
+                      - /url: /problemset?tags=dsu
+                    - text: ","
+                    - link "two pointers" [ref=e951] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e952]:
+                  - link "Submit" [ref=e954] [cursor=pointer]:
+                    - /url: /problemset/submit/2126/G1
+                    - img "Submit" [ref=e955]
+                - cell "2200" [ref=e956]
+                - cell "x2490" [ref=e957]:
+                  - link "x2490" [ref=e958] [cursor=pointer]:
+                    - /url: /problemset/status/2126/problem/G1
+                    - img [ref=e959]
+                    - text: x2490
+              - row "2125E Sets of Complementary Sums brute force, combinatorics, dp, math, two pointers Submit 2500 x1419" [ref=e960]:
+                - cell "2125E" [ref=e961]:
+                  - link "2125E" [ref=e962] [cursor=pointer]:
+                    - /url: /problemset/problem/2125/E
+                - cell "Sets of Complementary Sums brute force, combinatorics, dp, math, two pointers" [ref=e963]:
+                  - link "Sets of Complementary Sums" [ref=e965] [cursor=pointer]:
+                    - /url: /problemset/problem/2125/E
+                  - generic [ref=e966]:
+                    - link "brute force" [ref=e967] [cursor=pointer]:
+                      - /url: /problemset?tags=brute+force
+                    - text: ","
+                    - link "combinatorics" [ref=e968] [cursor=pointer]:
+                      - /url: /problemset?tags=combinatorics
+                    - text: ","
+                    - link "dp" [ref=e969] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "math" [ref=e970] [cursor=pointer]:
+                      - /url: /problemset?tags=math
+                    - text: ","
+                    - link "two pointers" [ref=e971] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e972]:
+                  - link "Submit" [ref=e974] [cursor=pointer]:
+                    - /url: /problemset/submit/2125/E
+                    - img "Submit" [ref=e975]
+                - cell "2500" [ref=e976]
+                - cell "x1419" [ref=e977]:
+                  - link "x1419" [ref=e978] [cursor=pointer]:
+                    - /url: /problemset/status/2125/problem/E
+                    - img [ref=e979]
+                    - text: x1419
+              - row "2124D Make a Palindrome greedy, sortings, two pointers Submit 1700 x8170" [ref=e980]:
+                - cell "2124D" [ref=e981]:
+                  - link "2124D" [ref=e982] [cursor=pointer]:
+                    - /url: /problemset/problem/2124/D
+                - cell "Make a Palindrome greedy, sortings, two pointers" [ref=e983]:
+                  - link "Make a Palindrome" [ref=e985] [cursor=pointer]:
+                    - /url: /problemset/problem/2124/D
+                  - generic [ref=e986]:
+                    - link "greedy" [ref=e987] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "sortings" [ref=e988] [cursor=pointer]:
+                      - /url: /problemset?tags=sortings
+                    - text: ","
+                    - link "two pointers" [ref=e989] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e990]:
+                  - link "Submit" [ref=e992] [cursor=pointer]:
+                    - /url: /problemset/submit/2124/D
+                    - img "Submit" [ref=e993]
+                - cell "1700" [ref=e994]
+                - cell "x8170" [ref=e995]:
+                  - link "x8170" [ref=e996] [cursor=pointer]:
+                    - /url: /problemset/status/2124/problem/D
+                    - img [ref=e997]
+                    - text: x8170
+              - row "2123E MEX Count binary search, data structures, greedy, sortings, two pointers Submit 1400 x14944" [ref=e998]:
+                - cell "2123E" [ref=e999]:
+                  - link "2123E" [ref=e1000] [cursor=pointer]:
+                    - /url: /problemset/problem/2123/E
+                - cell "MEX Count binary search, data structures, greedy, sortings, two pointers" [ref=e1001]:
+                  - link "MEX Count" [ref=e1003] [cursor=pointer]:
+                    - /url: /problemset/problem/2123/E
+                  - generic [ref=e1004]:
+                    - link "binary search" [ref=e1005] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "data structures" [ref=e1006] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "greedy" [ref=e1007] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "sortings" [ref=e1008] [cursor=pointer]:
+                      - /url: /problemset?tags=sortings
+                    - text: ","
+                    - link "two pointers" [ref=e1009] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1010]:
+                  - link "Submit" [ref=e1012] [cursor=pointer]:
+                    - /url: /problemset/submit/2123/E
+                    - img "Submit" [ref=e1013]
+                - cell "1400" [ref=e1014]
+                - cell "x14944" [ref=e1015]:
+                  - link "x14944" [ref=e1016] [cursor=pointer]:
+                    - /url: /problemset/status/2123/problem/E
+                    - img [ref=e1017]
+                    - text: x14944
+              - row "2121F Yamakasi binary search, brute force, data structures, greedy, two pointers Submit 1800 x8146" [ref=e1018]:
+                - cell "2121F" [ref=e1019]:
+                  - link "2121F" [ref=e1020] [cursor=pointer]:
+                    - /url: /problemset/problem/2121/F
+                - cell "Yamakasi binary search, brute force, data structures, greedy, two pointers" [ref=e1021]:
+                  - link "Yamakasi" [ref=e1023] [cursor=pointer]:
+                    - /url: /problemset/problem/2121/F
+                  - generic [ref=e1024]:
+                    - link "binary search" [ref=e1025] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "brute force" [ref=e1026] [cursor=pointer]:
+                      - /url: /problemset?tags=brute+force
+                    - text: ","
+                    - link "data structures" [ref=e1027] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "greedy" [ref=e1028] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "two pointers" [ref=e1029] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1030]:
+                  - link "Submit" [ref=e1032] [cursor=pointer]:
+                    - /url: /problemset/submit/2121/F
+                    - img "Submit" [ref=e1033]
+                - cell "1800" [ref=e1034]
+                - cell "x8146" [ref=e1035]:
+                  - link "x8146" [ref=e1036] [cursor=pointer]:
+                    - /url: /problemset/status/2121/problem/F
+                    - img [ref=e1037]
+                    - text: x8146
+              - row "2112C Coloring Game binary search, brute force, greedy, two pointers Submit 1300 x17771" [ref=e1038]:
+                - cell "2112C" [ref=e1039]:
+                  - link "2112C" [ref=e1040] [cursor=pointer]:
+                    - /url: /problemset/problem/2112/C
+                - cell "Coloring Game binary search, brute force, greedy, two pointers" [ref=e1041]:
+                  - link "Coloring Game" [ref=e1043] [cursor=pointer]:
+                    - /url: /problemset/problem/2112/C
+                  - generic [ref=e1044]:
+                    - link "binary search" [ref=e1045] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "brute force" [ref=e1046] [cursor=pointer]:
+                      - /url: /problemset?tags=brute+force
+                    - text: ","
+                    - link "greedy" [ref=e1047] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "two pointers" [ref=e1048] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1049]:
+                  - link "Submit" [ref=e1051] [cursor=pointer]:
+                    - /url: /problemset/submit/2112/C
+                    - img "Submit" [ref=e1052]
+                - cell "1300" [ref=e1053]
+                - cell "x17771" [ref=e1054]:
+                  - link "x17771" [ref=e1055] [cursor=pointer]:
+                    - /url: /problemset/status/2112/problem/C
+                    - img [ref=e1056]
+                    - text: x17771
+              - row "2111C Equal Values brute force, greedy, two pointers Submit 1100 x19472" [ref=e1057]:
+                - cell "2111C" [ref=e1058]:
+                  - link "2111C" [ref=e1059] [cursor=pointer]:
+                    - /url: /problemset/problem/2111/C
+                - cell "Equal Values brute force, greedy, two pointers" [ref=e1060]:
+                  - link "Equal Values" [ref=e1062] [cursor=pointer]:
+                    - /url: /problemset/problem/2111/C
+                  - generic [ref=e1063]:
+                    - link "brute force" [ref=e1064] [cursor=pointer]:
+                      - /url: /problemset?tags=brute+force
+                    - text: ","
+                    - link "greedy" [ref=e1065] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "two pointers" [ref=e1066] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1067]:
+                  - link "Submit" [ref=e1069] [cursor=pointer]:
+                    - /url: /problemset/submit/2111/C
+                    - img "Submit" [ref=e1070]
+                - cell "1100" [ref=e1071]
+                - cell "x19472" [ref=e1072]:
+                  - link "x19472" [ref=e1073] [cursor=pointer]:
+                    - /url: /problemset/status/2111/problem/C
+                    - img [ref=e1074]
+                    - text: x19472
+              - row "2106D Flower Boy binary search, dp, greedy, two pointers Submit 1500 x12301" [ref=e1075]:
+                - cell "2106D" [ref=e1076]:
+                  - link "2106D" [ref=e1077] [cursor=pointer]:
+                    - /url: /problemset/problem/2106/D
+                - cell "Flower Boy binary search, dp, greedy, two pointers" [ref=e1078]:
+                  - link "Flower Boy" [ref=e1080] [cursor=pointer]:
+                    - /url: /problemset/problem/2106/D
+                  - generic [ref=e1081]:
+                    - link "binary search" [ref=e1082] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "dp" [ref=e1083] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "greedy" [ref=e1084] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "two pointers" [ref=e1085] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1086]:
+                  - link "Submit" [ref=e1088] [cursor=pointer]:
+                    - /url: /problemset/submit/2106/D
+                    - img "Submit" [ref=e1089]
+                - cell "1500" [ref=e1090]
+                - cell "x12301" [ref=e1091]:
+                  - link "x12301" [ref=e1092] [cursor=pointer]:
+                    - /url: /problemset/status/2106/problem/D
+                    - img [ref=e1093]
+                    - text: x12301
+              - row "2103E Keep the Sum constructive algorithms, implementation, two pointers Submit 2600 x603" [ref=e1094]:
+                - cell "2103E" [ref=e1095]:
+                  - link "2103E" [ref=e1096] [cursor=pointer]:
+                    - /url: /problemset/problem/2103/E
+                - cell "Keep the Sum constructive algorithms, implementation, two pointers" [ref=e1097]:
+                  - link "Keep the Sum" [ref=e1099] [cursor=pointer]:
+                    - /url: /problemset/problem/2103/E
+                  - generic [ref=e1100]:
+                    - link "constructive algorithms" [ref=e1101] [cursor=pointer]:
+                      - /url: /problemset?tags=constructive+algorithms
+                    - text: ","
+                    - link "implementation" [ref=e1102] [cursor=pointer]:
+                      - /url: /problemset?tags=implementation
+                    - text: ","
+                    - link "two pointers" [ref=e1103] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1104]:
+                  - link "Submit" [ref=e1106] [cursor=pointer]:
+                    - /url: /problemset/submit/2103/E
+                    - img "Submit" [ref=e1107]
+                - cell "2600" [ref=e1108]
+                - cell "x603" [ref=e1109]:
+                  - link "x603" [ref=e1110] [cursor=pointer]:
+                    - /url: /problemset/status/2103/problem/E
+                    - img [ref=e1111]
+                    - text: x603
+              - row "2103D Local Construction constructive algorithms, dfs and similar, implementation, two pointers Submit 2000 x3986" [ref=e1112]:
+                - cell "2103D" [ref=e1113]:
+                  - link "2103D" [ref=e1114] [cursor=pointer]:
+                    - /url: /problemset/problem/2103/D
+                - cell "Local Construction constructive algorithms, dfs and similar, implementation, two pointers" [ref=e1115]:
+                  - link "Local Construction" [ref=e1117] [cursor=pointer]:
+                    - /url: /problemset/problem/2103/D
+                  - generic [ref=e1118]:
+                    - link "constructive algorithms" [ref=e1119] [cursor=pointer]:
+                      - /url: /problemset?tags=constructive+algorithms
+                    - text: ","
+                    - link "dfs and similar" [ref=e1120] [cursor=pointer]:
+                      - /url: /problemset?tags=dfs+and+similar
+                    - text: ","
+                    - link "implementation" [ref=e1121] [cursor=pointer]:
+                      - /url: /problemset?tags=implementation
+                    - text: ","
+                    - link "two pointers" [ref=e1122] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1123]:
+                  - link "Submit" [ref=e1125] [cursor=pointer]:
+                    - /url: /problemset/submit/2103/D
+                    - img "Submit" [ref=e1126]
+                - cell "2000" [ref=e1127]
+                - cell "x3986" [ref=e1128]:
+                  - link "x3986" [ref=e1129] [cursor=pointer]:
+                    - /url: /problemset/status/2103/problem/D
+                    - img [ref=e1130]
+                    - text: x3986
+              - row "2101D Mani and Segments data structures, implementation, sortings, two pointers Submit 2500 x1043" [ref=e1131]:
+                - cell "2101D" [ref=e1132]:
+                  - link "2101D" [ref=e1133] [cursor=pointer]:
+                    - /url: /problemset/problem/2101/D
+                - cell "Mani and Segments data structures, implementation, sortings, two pointers" [ref=e1134]:
+                  - link "Mani and Segments" [ref=e1136] [cursor=pointer]:
+                    - /url: /problemset/problem/2101/D
+                  - generic [ref=e1137]:
+                    - link "data structures" [ref=e1138] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "implementation" [ref=e1139] [cursor=pointer]:
+                      - /url: /problemset?tags=implementation
+                    - text: ","
+                    - link "sortings" [ref=e1140] [cursor=pointer]:
+                      - /url: /problemset?tags=sortings
+                    - text: ","
+                    - link "two pointers" [ref=e1141] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1142]:
+                  - link "Submit" [ref=e1144] [cursor=pointer]:
+                    - /url: /problemset/submit/2101/D
+                    - img "Submit" [ref=e1145]
+                - cell "2500" [ref=e1146]
+                - cell "x1043" [ref=e1147]:
+                  - link "x1043" [ref=e1148] [cursor=pointer]:
+                    - /url: /problemset/status/2101/problem/D
+                    - img [ref=e1149]
+                    - text: x1043
+              - row "2101C 23 Kingdom binary search, brute force, data structures, greedy, ternary search, two pointers Submit 2200 x2292" [ref=e1150]:
+                - cell "2101C" [ref=e1151]:
+                  - link "2101C" [ref=e1152] [cursor=pointer]:
+                    - /url: /problemset/problem/2101/C
+                - cell "23 Kingdom binary search, brute force, data structures, greedy, ternary search, two pointers" [ref=e1153]:
+                  - link "23 Kingdom" [ref=e1155] [cursor=pointer]:
+                    - /url: /problemset/problem/2101/C
+                  - generic [ref=e1156]:
+                    - link "binary search" [ref=e1157] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "brute force" [ref=e1158] [cursor=pointer]:
+                      - /url: /problemset?tags=brute+force
+                    - text: ","
+                    - link "data structures" [ref=e1159] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "greedy" [ref=e1160] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "ternary search" [ref=e1161] [cursor=pointer]:
+                      - /url: /problemset?tags=ternary+search
+                    - text: ","
+                    - link "two pointers" [ref=e1162] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1163]:
+                  - link "Submit" [ref=e1165] [cursor=pointer]:
+                    - /url: /problemset/submit/2101/C
+                    - img "Submit" [ref=e1166]
+                - cell "2200" [ref=e1167]
+                - cell "x2292" [ref=e1168]:
+                  - link "x2292" [ref=e1169] [cursor=pointer]:
+                    - /url: /problemset/status/2101/problem/C
+                    - img [ref=e1170]
+                    - text: x2292
+              - row "2096F Wonderful Impostors data structures, implementation, two pointers Submit 3100 x462" [ref=e1171]:
+                - cell "2096F" [ref=e1172]:
+                  - link "2096F" [ref=e1173] [cursor=pointer]:
+                    - /url: /problemset/problem/2096/F
+                - cell "Wonderful Impostors data structures, implementation, two pointers" [ref=e1174]:
+                  - link "Wonderful Impostors" [ref=e1176] [cursor=pointer]:
+                    - /url: /problemset/problem/2096/F
+                  - generic [ref=e1177]:
+                    - link "data structures" [ref=e1178] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "implementation" [ref=e1179] [cursor=pointer]:
+                      - /url: /problemset?tags=implementation
+                    - text: ","
+                    - link "two pointers" [ref=e1180] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1181]:
+                  - link "Submit" [ref=e1183] [cursor=pointer]:
+                    - /url: /problemset/submit/2096/F
+                    - img "Submit" [ref=e1184]
+                - cell "3100" [ref=e1185]
+                - cell "x462" [ref=e1186]:
+                  - link "x462" [ref=e1187] [cursor=pointer]:
+                    - /url: /problemset/status/2096/problem/F
+                    - img [ref=e1188]
+                    - text: x462
+              - row "2094D Tung Tung Sahur greedy, strings, two pointers Submit 1100 x23922" [ref=e1189]:
+                - cell "2094D" [ref=e1190]:
+                  - link "2094D" [ref=e1191] [cursor=pointer]:
+                    - /url: /problemset/problem/2094/D
+                - cell "Tung Tung Sahur greedy, strings, two pointers" [ref=e1192]:
+                  - link "Tung Tung Sahur" [ref=e1194] [cursor=pointer]:
+                    - /url: /problemset/problem/2094/D
+                  - generic [ref=e1195]:
+                    - link "greedy" [ref=e1196] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "strings" [ref=e1197] [cursor=pointer]:
+                      - /url: /problemset?tags=strings
+                    - text: ","
+                    - link "two pointers" [ref=e1198] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1199]:
+                  - link "Submit" [ref=e1201] [cursor=pointer]:
+                    - /url: /problemset/submit/2094/D
+                    - img "Submit" [ref=e1202]
+                - cell "1100" [ref=e1203]
+                - cell "x23922" [ref=e1204]:
+                  - link "x23922" [ref=e1205] [cursor=pointer]:
+                    - /url: /problemset/status/2094/problem/D
+                    - img [ref=e1206]
+                    - text: x23922
+              - row "2093G Shorten the Array binary search, bitmasks, data structures, dfs and similar, greedy, strings, trees, two pointers Submit 1900 x3819" [ref=e1207]:
+                - cell "2093G" [ref=e1208]:
+                  - link "2093G" [ref=e1209] [cursor=pointer]:
+                    - /url: /problemset/problem/2093/G
+                - cell "Shorten the Array binary search, bitmasks, data structures, dfs and similar, greedy, strings, trees, two pointers" [ref=e1210]:
+                  - link "Shorten the Array" [ref=e1212] [cursor=pointer]:
+                    - /url: /problemset/problem/2093/G
+                  - generic [ref=e1213]:
+                    - link "binary search" [ref=e1214] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "bitmasks" [ref=e1215] [cursor=pointer]:
+                      - /url: /problemset?tags=bitmasks
+                    - text: ","
+                    - link "data structures" [ref=e1216] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "dfs and similar" [ref=e1217] [cursor=pointer]:
+                      - /url: /problemset?tags=dfs+and+similar
+                    - text: ","
+                    - link "greedy" [ref=e1218] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "strings" [ref=e1219] [cursor=pointer]:
+                      - /url: /problemset?tags=strings
+                    - text: ","
+                    - link "trees" [ref=e1220] [cursor=pointer]:
+                      - /url: /problemset?tags=trees
+                    - text: ","
+                    - link "two pointers" [ref=e1221] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1222]:
+                  - link "Submit" [ref=e1224] [cursor=pointer]:
+                    - /url: /problemset/submit/2093/G
+                    - img "Submit" [ref=e1225]
+                - cell "1900" [ref=e1226]
+                - cell "x3819" [ref=e1227]:
+                  - link "x3819" [ref=e1228] [cursor=pointer]:
+                    - /url: /problemset/status/2093/problem/G
+                    - img [ref=e1229]
+                    - text: x3819
+              - row "2091E Interesting Ratio brute force, math, number theory, two pointers Submit 1300 x19662" [ref=e1230]:
+                - cell "2091E" [ref=e1231]:
+                  - link "2091E" [ref=e1232] [cursor=pointer]:
+                    - /url: /problemset/problem/2091/E
+                - cell "Interesting Ratio brute force, math, number theory, two pointers" [ref=e1233]:
+                  - link "Interesting Ratio" [ref=e1235] [cursor=pointer]:
+                    - /url: /problemset/problem/2091/E
+                  - generic [ref=e1236]:
+                    - link "brute force" [ref=e1237] [cursor=pointer]:
+                      - /url: /problemset?tags=brute+force
+                    - text: ","
+                    - link "math" [ref=e1238] [cursor=pointer]:
+                      - /url: /problemset?tags=math
+                    - text: ","
+                    - link "number theory" [ref=e1239] [cursor=pointer]:
+                      - /url: /problemset?tags=number+theory
+                    - text: ","
+                    - link "two pointers" [ref=e1240] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1241]:
+                  - link "Submit" [ref=e1243] [cursor=pointer]:
+                    - /url: /problemset/submit/2091/E
+                    - img "Submit" [ref=e1244]
+                - cell "1300" [ref=e1245]
+                - cell "x19662" [ref=e1246]:
+                  - link "x19662" [ref=e1247] [cursor=pointer]:
+                    - /url: /problemset/status/2091/problem/E
+                    - img [ref=e1248]
+                    - text: x19662
+              - row "2089B2 Canteen (Hard Version) binary search, data structures, dp, flows, greedy, two pointers Submit 2300 x1283" [ref=e1249]:
+                - cell "2089B2" [ref=e1250]:
+                  - link "2089B2" [ref=e1251] [cursor=pointer]:
+                    - /url: /problemset/problem/2089/B2
+                - cell "Canteen (Hard Version) binary search, data structures, dp, flows, greedy, two pointers" [ref=e1252]:
+                  - link "Canteen (Hard Version)" [ref=e1254] [cursor=pointer]:
+                    - /url: /problemset/problem/2089/B2
+                  - generic [ref=e1255]:
+                    - link "binary search" [ref=e1256] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "data structures" [ref=e1257] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "dp" [ref=e1258] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "flows" [ref=e1259] [cursor=pointer]:
+                      - /url: /problemset?tags=flows
+                    - text: ","
+                    - link "greedy" [ref=e1260] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "two pointers" [ref=e1261] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1262]:
+                  - link "Submit" [ref=e1264] [cursor=pointer]:
+                    - /url: /problemset/submit/2089/B2
+                    - img "Submit" [ref=e1265]
+                - cell "2300" [ref=e1266]
+                - cell "x1283" [ref=e1267]:
+                  - link "x1283" [ref=e1268] [cursor=pointer]:
+                    - /url: /problemset/status/2089/problem/B2
+                    - img [ref=e1269]
+                    - text: x1283
+              - row "2089B1 Canteen (Easy Version) binary search, data structures, flows, greedy, two pointers Submit 1900 x3243" [ref=e1270]:
+                - cell "2089B1" [ref=e1271]:
+                  - link "2089B1" [ref=e1272] [cursor=pointer]:
+                    - /url: /problemset/problem/2089/B1
+                - cell "Canteen (Easy Version) binary search, data structures, flows, greedy, two pointers" [ref=e1273]:
+                  - link "Canteen (Easy Version)" [ref=e1275] [cursor=pointer]:
+                    - /url: /problemset/problem/2089/B1
+                  - generic [ref=e1276]:
+                    - link "binary search" [ref=e1277] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "data structures" [ref=e1278] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "flows" [ref=e1279] [cursor=pointer]:
+                      - /url: /problemset?tags=flows
+                    - text: ","
+                    - link "greedy" [ref=e1280] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "two pointers" [ref=e1281] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1282]:
+                  - link "Submit" [ref=e1284] [cursor=pointer]:
+                    - /url: /problemset/submit/2089/B1
+                    - img "Submit" [ref=e1285]
+                - cell "1900" [ref=e1286]
+                - cell "x3243" [ref=e1287]:
+                  - link "x3243" [ref=e1288] [cursor=pointer]:
+                    - /url: /problemset/status/2089/problem/B1
+                    - img [ref=e1289]
+                    - text: x3243
+              - row "2084E Blossom binary search, combinatorics, dp, implementation, math, two pointers Submit 2400 x1795" [ref=e1290]:
+                - cell "2084E" [ref=e1291]:
+                  - link "2084E" [ref=e1292] [cursor=pointer]:
+                    - /url: /problemset/problem/2084/E
+                - cell "Blossom binary search, combinatorics, dp, implementation, math, two pointers" [ref=e1293]:
+                  - link "Blossom" [ref=e1295] [cursor=pointer]:
+                    - /url: /problemset/problem/2084/E
+                  - generic [ref=e1296]:
+                    - link "binary search" [ref=e1297] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "combinatorics" [ref=e1298] [cursor=pointer]:
+                      - /url: /problemset?tags=combinatorics
+                    - text: ","
+                    - link "dp" [ref=e1299] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "implementation" [ref=e1300] [cursor=pointer]:
+                      - /url: /problemset?tags=implementation
+                    - text: ","
+                    - link "math" [ref=e1301] [cursor=pointer]:
+                      - /url: /problemset?tags=math
+                    - text: ","
+                    - link "two pointers" [ref=e1302] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1303]:
+                  - link "Submit" [ref=e1305] [cursor=pointer]:
+                    - /url: /problemset/submit/2084/E
+                    - img "Submit" [ref=e1306]
+                - cell "2400" [ref=e1307]
+                - cell "x1795" [ref=e1308]:
+                  - link "x1795" [ref=e1309] [cursor=pointer]:
+                    - /url: /problemset/status/2084/problem/E
+                    - img [ref=e1310]
+                    - text: x1795
+              - row "2074D Counting Points brute force, data structures, geometry, implementation, two pointers Submit 1400 x12090" [ref=e1311]:
+                - cell "2074D" [ref=e1312]:
+                  - link "2074D" [ref=e1313] [cursor=pointer]:
+                    - /url: /problemset/problem/2074/D
+                - cell "Counting Points brute force, data structures, geometry, implementation, two pointers" [ref=e1314]:
+                  - link "Counting Points" [ref=e1316] [cursor=pointer]:
+                    - /url: /problemset/problem/2074/D
+                  - generic [ref=e1317]:
+                    - link "brute force" [ref=e1318] [cursor=pointer]:
+                      - /url: /problemset?tags=brute+force
+                    - text: ","
+                    - link "data structures" [ref=e1319] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "geometry" [ref=e1320] [cursor=pointer]:
+                      - /url: /problemset?tags=geometry
+                    - text: ","
+                    - link "implementation" [ref=e1321] [cursor=pointer]:
+                      - /url: /problemset?tags=implementation
+                    - text: ","
+                    - link "two pointers" [ref=e1322] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1323]:
+                  - link "Submit" [ref=e1325] [cursor=pointer]:
+                    - /url: /problemset/submit/2074/D
+                    - img "Submit" [ref=e1326]
+                - cell "1400" [ref=e1327]
+                - cell "x12090" [ref=e1328]:
+                  - link "x12090" [ref=e1329] [cursor=pointer]:
+                    - /url: /problemset/status/2074/problem/D
+                    - img [ref=e1330]
+                    - text: x12090
+              - row "2069D Palindrome Shuffle binary search, greedy, hashing, strings, two pointers Submit 1800 x7066" [ref=e1331]:
+                - cell "2069D" [ref=e1332]:
+                  - link "2069D" [ref=e1333] [cursor=pointer]:
+                    - /url: /problemset/problem/2069/D
+                - cell "Palindrome Shuffle binary search, greedy, hashing, strings, two pointers" [ref=e1334]:
+                  - link "Palindrome Shuffle" [ref=e1336] [cursor=pointer]:
+                    - /url: /problemset/problem/2069/D
+                  - generic [ref=e1337]:
+                    - link "binary search" [ref=e1338] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "greedy" [ref=e1339] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "hashing" [ref=e1340] [cursor=pointer]:
+                      - /url: /problemset?tags=hashing
+                    - text: ","
+                    - link "strings" [ref=e1341] [cursor=pointer]:
+                      - /url: /problemset?tags=strings
+                    - text: ","
+                    - link "two pointers" [ref=e1342] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1343]:
+                  - link "Submit" [ref=e1345] [cursor=pointer]:
+                    - /url: /problemset/submit/2069/D
+                    - img "Submit" [ref=e1346]
+                - cell "1800" [ref=e1347]
+                - cell "x7066" [ref=e1348]:
+                  - link "x7066" [ref=e1349] [cursor=pointer]:
+                    - /url: /problemset/status/2069/problem/D
+                    - img [ref=e1350]
+                    - text: x7066
+              - row "2069C Beautiful Sequence combinatorics, dp, greedy, two pointers Submit 1500 x14870" [ref=e1351]:
+                - cell "2069C" [ref=e1352]:
+                  - link "2069C" [ref=e1353] [cursor=pointer]:
+                    - /url: /problemset/problem/2069/C
+                - cell "Beautiful Sequence combinatorics, dp, greedy, two pointers" [ref=e1354]:
+                  - link "Beautiful Sequence" [ref=e1356] [cursor=pointer]:
+                    - /url: /problemset/problem/2069/C
+                  - generic [ref=e1357]:
+                    - link "combinatorics" [ref=e1358] [cursor=pointer]:
+                      - /url: /problemset?tags=combinatorics
+                    - text: ","
+                    - link "dp" [ref=e1359] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "greedy" [ref=e1360] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "two pointers" [ref=e1361] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1362]:
+                  - link "Submit" [ref=e1364] [cursor=pointer]:
+                    - /url: /problemset/submit/2069/C
+                    - img "Submit" [ref=e1365]
+                - cell "1500" [ref=e1366]
+                - cell "x14870" [ref=e1367]:
+                  - link "x14870" [ref=e1368] [cursor=pointer]:
+                    - /url: /problemset/status/2069/problem/C
+                    - img [ref=e1369]
+                    - text: x14870
+              - row "2068C Ads binary search, greedy, two pointers Submit 2100 x1645" [ref=e1370]:
+                - cell "2068C" [ref=e1371]:
+                  - link "2068C" [ref=e1372] [cursor=pointer]:
+                    - /url: /problemset/problem/2068/C
+                - cell "Ads binary search, greedy, two pointers" [ref=e1373]:
+                  - link "Ads" [ref=e1375] [cursor=pointer]:
+                    - /url: /problemset/problem/2068/C
+                  - generic [ref=e1376]:
+                    - link "binary search" [ref=e1377] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "greedy" [ref=e1378] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "two pointers" [ref=e1379] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1380]:
+                  - link "Submit" [ref=e1382] [cursor=pointer]:
+                    - /url: /problemset/submit/2068/C
+                    - img "Submit" [ref=e1383]
+                - cell "2100" [ref=e1384]
+                - cell "x1645" [ref=e1385]:
+                  - link "x1645" [ref=e1386] [cursor=pointer]:
+                    - /url: /problemset/status/2068/problem/C
+                    - img [ref=e1387]
+                    - text: x1645
+              - row "2064F We Be Summing binary search, data structures, dp, two pointers Submit 2600 x705" [ref=e1388]:
+                - cell "2064F" [ref=e1389]:
+                  - link "2064F" [ref=e1390] [cursor=pointer]:
+                    - /url: /problemset/problem/2064/F
+                - cell "We Be Summing binary search, data structures, dp, two pointers" [ref=e1391]:
+                  - link "We Be Summing" [ref=e1393] [cursor=pointer]:
+                    - /url: /problemset/problem/2064/F
+                  - generic [ref=e1394]:
+                    - link "binary search" [ref=e1395] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "data structures" [ref=e1396] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "dp" [ref=e1397] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "two pointers" [ref=e1398] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1399]:
+                  - link "Submit" [ref=e1401] [cursor=pointer]:
+                    - /url: /problemset/submit/2064/F
+                    - img "Submit" [ref=e1402]
+                - cell "2600" [ref=e1403]
+                - cell "x705" [ref=e1404]:
+                  - link "x705" [ref=e1405] [cursor=pointer]:
+                    - /url: /problemset/status/2064/problem/F
+                    - img [ref=e1406]
+                    - text: x705
+              - row "2064D Eating binary search, bitmasks, brute force, data structures, dp, greedy, trees, two pointers Submit 1900 x5885" [ref=e1407]:
+                - cell "2064D" [ref=e1408]:
+                  - link "2064D" [ref=e1409] [cursor=pointer]:
+                    - /url: /problemset/problem/2064/D
+                - cell "Eating binary search, bitmasks, brute force, data structures, dp, greedy, trees, two pointers" [ref=e1410]:
+                  - link "Eating" [ref=e1412] [cursor=pointer]:
+                    - /url: /problemset/problem/2064/D
+                  - generic [ref=e1413]:
+                    - link "binary search" [ref=e1414] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "bitmasks" [ref=e1415] [cursor=pointer]:
+                      - /url: /problemset?tags=bitmasks
+                    - text: ","
+                    - link "brute force" [ref=e1416] [cursor=pointer]:
+                      - /url: /problemset?tags=brute+force
+                    - text: ","
+                    - link "data structures" [ref=e1417] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "dp" [ref=e1418] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "greedy" [ref=e1419] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "trees" [ref=e1420] [cursor=pointer]:
+                      - /url: /problemset?tags=trees
+                    - text: ","
+                    - link "two pointers" [ref=e1421] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1422]:
+                  - link "Submit" [ref=e1424] [cursor=pointer]:
+                    - /url: /problemset/submit/2064/D
+                    - img "Submit" [ref=e1425]
+                - cell "1900" [ref=e1426]
+                - cell "x5885" [ref=e1427]:
+                  - link "x5885" [ref=e1428] [cursor=pointer]:
+                    - /url: /problemset/status/2064/problem/D
+                    - img [ref=e1429]
+                    - text: x5885
+              - row "2064B Variety is Discouraged binary search, constructive algorithms, greedy, two pointers Submit 1100 x20138" [ref=e1430]:
+                - cell "2064B" [ref=e1431]:
+                  - link "2064B" [ref=e1432] [cursor=pointer]:
+                    - /url: /problemset/problem/2064/B
+                - cell "Variety is Discouraged binary search, constructive algorithms, greedy, two pointers" [ref=e1433]:
+                  - link "Variety is Discouraged" [ref=e1435] [cursor=pointer]:
+                    - /url: /problemset/problem/2064/B
+                  - generic [ref=e1436]:
+                    - link "binary search" [ref=e1437] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "constructive algorithms" [ref=e1438] [cursor=pointer]:
+                      - /url: /problemset?tags=constructive+algorithms
+                    - text: ","
+                    - link "greedy" [ref=e1439] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "two pointers" [ref=e1440] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1441]:
+                  - link "Submit" [ref=e1443] [cursor=pointer]:
+                    - /url: /problemset/submit/2064/B
+                    - img "Submit" [ref=e1444]
+                - cell "1100" [ref=e1445]
+                - cell "x20138" [ref=e1446]:
+                  - link "x20138" [ref=e1447] [cursor=pointer]:
+                    - /url: /problemset/status/2064/problem/B
+                    - img [ref=e1448]
+                    - text: x20138
+              - row "2063D Game With Triangles binary search, brute force, data structures, geometry, greedy, implementation, math, ternary search, two pointers Submit 2000 x5047" [ref=e1449]:
+                - cell "2063D" [ref=e1450]:
+                  - link "2063D" [ref=e1451] [cursor=pointer]:
+                    - /url: /problemset/problem/2063/D
+                - cell "Game With Triangles binary search, brute force, data structures, geometry, greedy, implementation, math, ternary search, two pointers" [ref=e1452]:
+                  - link "Game With Triangles" [ref=e1454] [cursor=pointer]:
+                    - /url: /problemset/problem/2063/D
+                  - generic [ref=e1455]:
+                    - link "binary search" [ref=e1456] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "brute force" [ref=e1457] [cursor=pointer]:
+                      - /url: /problemset?tags=brute+force
+                    - text: ","
+                    - link "data structures" [ref=e1458] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "geometry" [ref=e1459] [cursor=pointer]:
+                      - /url: /problemset?tags=geometry
+                    - text: ","
+                    - link "greedy" [ref=e1460] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "implementation" [ref=e1461] [cursor=pointer]:
+                      - /url: /problemset?tags=implementation
+                    - text: ","
+                    - link "math" [ref=e1462] [cursor=pointer]:
+                      - /url: /problemset?tags=math
+                    - text: ","
+                    - link "ternary search" [ref=e1463] [cursor=pointer]:
+                      - /url: /problemset?tags=ternary+search
+                    - text: ","
+                    - link "two pointers" [ref=e1464] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1465]:
+                  - link "Submit" [ref=e1467] [cursor=pointer]:
+                    - /url: /problemset/submit/2063/D
+                    - img "Submit" [ref=e1468]
+                - cell "2000" [ref=e1469]
+                - cell "x5047" [ref=e1470]:
+                  - link "x5047" [ref=e1471] [cursor=pointer]:
+                    - /url: /problemset/status/2063/problem/D
+                    - img [ref=e1472]
+                    - text: x5047
+              - row "2060C Game of Mathletes games, greedy, sortings, two pointers Submit 900 x32128" [ref=e1473]:
+                - cell "2060C" [ref=e1474]:
+                  - link "2060C" [ref=e1475] [cursor=pointer]:
+                    - /url: /problemset/problem/2060/C
+                - cell "Game of Mathletes games, greedy, sortings, two pointers" [ref=e1476]:
+                  - link "Game of Mathletes" [ref=e1478] [cursor=pointer]:
+                    - /url: /problemset/problem/2060/C
+                  - generic [ref=e1479]:
+                    - link "games" [ref=e1480] [cursor=pointer]:
+                      - /url: /problemset?tags=games
+                    - text: ","
+                    - link "greedy" [ref=e1481] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "sortings" [ref=e1482] [cursor=pointer]:
+                      - /url: /problemset?tags=sortings
+                    - text: ","
+                    - link "two pointers" [ref=e1483] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1484]:
+                  - link "Submit" [ref=e1486] [cursor=pointer]:
+                    - /url: /problemset/submit/2060/C
+                    - img "Submit" [ref=e1487]
+                - cell "900" [ref=e1488]
+                - cell "x32128" [ref=e1489]:
+                  - link "x32128" [ref=e1490] [cursor=pointer]:
+                    - /url: /problemset/status/2060/problem/C
+                    - img [ref=e1491]
+                    - text: x32128
+              - row "2057F Formation binary search, data structures, dp, sortings, two pointers Submit 3300 x246" [ref=e1492]:
+                - cell "2057F" [ref=e1493]:
+                  - link "2057F" [ref=e1494] [cursor=pointer]:
+                    - /url: /problemset/problem/2057/F
+                - cell "Formation binary search, data structures, dp, sortings, two pointers" [ref=e1495]:
+                  - link "Formation" [ref=e1497] [cursor=pointer]:
+                    - /url: /problemset/problem/2057/F
+                  - generic [ref=e1498]:
+                    - link "binary search" [ref=e1499] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "data structures" [ref=e1500] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "dp" [ref=e1501] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "sortings" [ref=e1502] [cursor=pointer]:
+                      - /url: /problemset?tags=sortings
+                    - text: ","
+                    - link "two pointers" [ref=e1503] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1504]:
+                  - link "Submit" [ref=e1506] [cursor=pointer]:
+                    - /url: /problemset/submit/2057/F
+                    - img "Submit" [ref=e1507]
+                - cell "3300" [ref=e1508]
+                - cell "x246" [ref=e1509]:
+                  - link "x246" [ref=e1510] [cursor=pointer]:
+                    - /url: /problemset/status/2057/problem/F
+                    - img [ref=e1511]
+                    - text: x246
+              - row "2055C The Trail brute force, constructive algorithms, greedy, math, two pointers Submit 1400 x17275" [ref=e1512]:
+                - cell "2055C" [ref=e1513]:
+                  - link "2055C" [ref=e1514] [cursor=pointer]:
+                    - /url: /problemset/problem/2055/C
+                - cell "The Trail brute force, constructive algorithms, greedy, math, two pointers" [ref=e1515]:
+                  - link "The Trail" [ref=e1517] [cursor=pointer]:
+                    - /url: /problemset/problem/2055/C
+                  - generic [ref=e1518]:
+                    - link "brute force" [ref=e1519] [cursor=pointer]:
+                      - /url: /problemset?tags=brute+force
+                    - text: ","
+                    - link "constructive algorithms" [ref=e1520] [cursor=pointer]:
+                      - /url: /problemset?tags=constructive+algorithms
+                    - text: ","
+                    - link "greedy" [ref=e1521] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "math" [ref=e1522] [cursor=pointer]:
+                      - /url: /problemset?tags=math
+                    - text: ","
+                    - link "two pointers" [ref=e1523] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1524]:
+                  - link "Submit" [ref=e1526] [cursor=pointer]:
+                    - /url: /problemset/submit/2055/C
+                    - img "Submit" [ref=e1527]
+                - cell "1400" [ref=e1528]
+                - cell "x17275" [ref=e1529]:
+                  - link "x17275" [ref=e1530] [cursor=pointer]:
+                    - /url: /problemset/status/2055/problem/C
+                    - img [ref=e1531]
+                    - text: x17275
+              - row "2053I2 Affectionate Arrays (Hard Version) data structures, dp, graphs, greedy, math, shortest paths, two pointers Submit 3500 x107" [ref=e1532]:
+                - cell "2053I2" [ref=e1533]:
+                  - link "2053I2" [ref=e1534] [cursor=pointer]:
+                    - /url: /problemset/problem/2053/I2
+                - cell "Affectionate Arrays (Hard Version) data structures, dp, graphs, greedy, math, shortest paths, two pointers" [ref=e1535]:
+                  - link "Affectionate Arrays (Hard Version)" [ref=e1537] [cursor=pointer]:
+                    - /url: /problemset/problem/2053/I2
+                  - generic [ref=e1538]:
+                    - link "data structures" [ref=e1539] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "dp" [ref=e1540] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "graphs" [ref=e1541] [cursor=pointer]:
+                      - /url: /problemset?tags=graphs
+                    - text: ","
+                    - link "greedy" [ref=e1542] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "math" [ref=e1543] [cursor=pointer]:
+                      - /url: /problemset?tags=math
+                    - text: ","
+                    - link "shortest paths" [ref=e1544] [cursor=pointer]:
+                      - /url: /problemset?tags=shortest+paths
+                    - text: ","
+                    - link "two pointers" [ref=e1545] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1546]:
+                  - link "Submit" [ref=e1548] [cursor=pointer]:
+                    - /url: /problemset/submit/2053/I2
+                    - img "Submit" [ref=e1549]
+                - cell "3500" [ref=e1550]
+                - cell "x107" [ref=e1551]:
+                  - link "x107" [ref=e1552] [cursor=pointer]:
+                    - /url: /problemset/status/2053/problem/I2
+                    - img [ref=e1553]
+                    - text: x107
+              - row "2051D Counting Pairs binary search, sortings, two pointers Submit 1200 x23969" [ref=e1554]:
+                - cell "2051D" [ref=e1555]:
+                  - link "2051D" [ref=e1556] [cursor=pointer]:
+                    - /url: /problemset/problem/2051/D
+                - cell "Counting Pairs binary search, sortings, two pointers" [ref=e1557]:
+                  - link "Counting Pairs" [ref=e1559] [cursor=pointer]:
+                    - /url: /problemset/problem/2051/D
+                  - generic [ref=e1560]:
+                    - link "binary search" [ref=e1561] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "sortings" [ref=e1562] [cursor=pointer]:
+                      - /url: /problemset?tags=sortings
+                    - text: ","
+                    - link "two pointers" [ref=e1563] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1564]:
+                  - link "Submit" [ref=e1566] [cursor=pointer]:
+                    - /url: /problemset/submit/2051/D
+                    - img "Submit" [ref=e1567]
+                - cell "1200" [ref=e1568]
+                - cell "x23969" [ref=e1569]:
+                  - link "x23969" [ref=e1570] [cursor=pointer]:
+                    - /url: /problemset/status/2051/problem/D
+                    - img [ref=e1571]
+                    - text: x23969
+              - row "2048D Kevin and Competition Memories binary search, brute force, data structures, greedy, sortings, two pointers Submit 1600 x8324" [ref=e1572]:
+                - cell "2048D" [ref=e1573]:
+                  - link "2048D" [ref=e1574] [cursor=pointer]:
+                    - /url: /problemset/problem/2048/D
+                - cell "Kevin and Competition Memories binary search, brute force, data structures, greedy, sortings, two pointers" [ref=e1575]:
+                  - link "Kevin and Competition Memories" [ref=e1577] [cursor=pointer]:
+                    - /url: /problemset/problem/2048/D
+                  - generic [ref=e1578]:
+                    - link "binary search" [ref=e1579] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "brute force" [ref=e1580] [cursor=pointer]:
+                      - /url: /problemset?tags=brute+force
+                    - text: ","
+                    - link "data structures" [ref=e1581] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "greedy" [ref=e1582] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "sortings" [ref=e1583] [cursor=pointer]:
+                      - /url: /problemset?tags=sortings
+                    - text: ","
+                    - link "two pointers" [ref=e1584] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1585]:
+                  - link "Submit" [ref=e1587] [cursor=pointer]:
+                    - /url: /problemset/submit/2048/D
+                    - img "Submit" [ref=e1588]
+                - cell "1600" [ref=e1589]
+                - cell "x8324" [ref=e1590]:
+                  - link "x8324" [ref=e1591] [cursor=pointer]:
+                    - /url: /problemset/status/2048/problem/D
+                    - img [ref=e1592]
+                    - text: x8324
+              - row "2046C Adventurers binary search, data structures, greedy, sortings, ternary search, two pointers Submit 2100 x2353" [ref=e1593]:
+                - cell "2046C" [ref=e1594]:
+                  - link "2046C" [ref=e1595] [cursor=pointer]:
+                    - /url: /problemset/problem/2046/C
+                - cell "Adventurers binary search, data structures, greedy, sortings, ternary search, two pointers" [ref=e1596]:
+                  - link "Adventurers" [ref=e1598] [cursor=pointer]:
+                    - /url: /problemset/problem/2046/C
+                  - generic [ref=e1599]:
+                    - link "binary search" [ref=e1600] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "data structures" [ref=e1601] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "greedy" [ref=e1602] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "sortings" [ref=e1603] [cursor=pointer]:
+                      - /url: /problemset?tags=sortings
+                    - text: ","
+                    - link "ternary search" [ref=e1604] [cursor=pointer]:
+                      - /url: /problemset?tags=ternary+search
+                    - text: ","
+                    - link "two pointers" [ref=e1605] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1606]:
+                  - link "Submit" [ref=e1608] [cursor=pointer]:
+                    - /url: /problemset/submit/2046/C
+                    - img "Submit" [ref=e1609]
+                - cell "2100" [ref=e1610]
+                - cell "x2353" [ref=e1611]:
+                  - link "x2353" [ref=e1612] [cursor=pointer]:
+                    - /url: /problemset/status/2046/problem/C
+                    - img [ref=e1613]
+                    - text: x2353
+              - row "2042D Recommendations data structures, implementation, sortings, two pointers Submit 1900 x5252" [ref=e1614]:
+                - cell "2042D" [ref=e1615]:
+                  - link "2042D" [ref=e1616] [cursor=pointer]:
+                    - /url: /problemset/problem/2042/D
+                - cell "Recommendations data structures, implementation, sortings, two pointers" [ref=e1617]:
+                  - link "Recommendations" [ref=e1619] [cursor=pointer]:
+                    - /url: /problemset/problem/2042/D
+                  - generic [ref=e1620]:
+                    - link "data structures" [ref=e1621] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "implementation" [ref=e1622] [cursor=pointer]:
+                      - /url: /problemset?tags=implementation
+                    - text: ","
+                    - link "sortings" [ref=e1623] [cursor=pointer]:
+                      - /url: /problemset?tags=sortings
+                    - text: ","
+                    - link "two pointers" [ref=e1624] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1625]:
+                  - link "Submit" [ref=e1627] [cursor=pointer]:
+                    - /url: /problemset/submit/2042/D
+                    - img "Submit" [ref=e1628]
+                - cell "1900" [ref=e1629]
+                - cell "x5252" [ref=e1630]:
+                  - link "x5252" [ref=e1631] [cursor=pointer]:
+                    - /url: /problemset/status/2042/problem/D
+                    - img [ref=e1632]
+                    - text: x5252
+              - row "2041M Selection Sort binary search, data structures, greedy, two pointers Submit 2000 x1334" [ref=e1633]:
+                - cell "2041M" [ref=e1634]:
+                  - link "2041M" [ref=e1635] [cursor=pointer]:
+                    - /url: /problemset/problem/2041/M
+                - cell "Selection Sort binary search, data structures, greedy, two pointers" [ref=e1636]:
+                  - link "Selection Sort" [ref=e1638] [cursor=pointer]:
+                    - /url: /problemset/problem/2041/M
+                  - generic [ref=e1639]:
+                    - link "binary search" [ref=e1640] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "data structures" [ref=e1641] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "greedy" [ref=e1642] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "two pointers" [ref=e1643] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1644]:
+                  - link "Submit" [ref=e1646] [cursor=pointer]:
+                    - /url: /problemset/submit/2041/M
+                    - img "Submit" [ref=e1647]
+                - cell "2000" [ref=e1648]
+                - cell "x1334" [ref=e1649]:
+                  - link "x1334" [ref=e1650] [cursor=pointer]:
+                    - /url: /problemset/status/2041/problem/M
+                    - img [ref=e1651]
+                    - text: x1334
+              - row "2040D Non Prime Tree brute force, constructive algorithms, dfs and similar, greedy, number theory, trees, two pointers Submit 1900 x5852" [ref=e1652]:
+                - cell "2040D" [ref=e1653]:
+                  - link "2040D" [ref=e1654] [cursor=pointer]:
+                    - /url: /problemset/problem/2040/D
+                - cell "Non Prime Tree brute force, constructive algorithms, dfs and similar, greedy, number theory, trees, two pointers" [ref=e1655]:
+                  - link "Non Prime Tree" [ref=e1657] [cursor=pointer]:
+                    - /url: /problemset/problem/2040/D
+                  - generic [ref=e1658]:
+                    - link "brute force" [ref=e1659] [cursor=pointer]:
+                      - /url: /problemset?tags=brute+force
+                    - text: ","
+                    - link "constructive algorithms" [ref=e1660] [cursor=pointer]:
+                      - /url: /problemset?tags=constructive+algorithms
+                    - text: ","
+                    - link "dfs and similar" [ref=e1661] [cursor=pointer]:
+                      - /url: /problemset?tags=dfs+and+similar
+                    - text: ","
+                    - link "greedy" [ref=e1662] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "number theory" [ref=e1663] [cursor=pointer]:
+                      - /url: /problemset?tags=number+theory
+                    - text: ","
+                    - link "trees" [ref=e1664] [cursor=pointer]:
+                      - /url: /problemset?tags=trees
+                    - text: ","
+                    - link "two pointers" [ref=e1665] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1666]:
+                  - link "Submit" [ref=e1668] [cursor=pointer]:
+                    - /url: /problemset/submit/2040/D
+                    - img "Submit" [ref=e1669]
+                - cell "1900" [ref=e1670]
+                - cell "x5852" [ref=e1671]:
+                  - link "x5852" [ref=e1672] [cursor=pointer]:
+                    - /url: /problemset/status/2040/problem/D
+                    - img [ref=e1673]
+                    - text: x5852
+              - row "2040C Ordered Permutations bitmasks, combinatorics, constructive algorithms, greedy, math, two pointers Submit 1600 x10799" [ref=e1674]:
+                - cell "2040C" [ref=e1675]:
+                  - link "2040C" [ref=e1676] [cursor=pointer]:
+                    - /url: /problemset/problem/2040/C
+                - cell "Ordered Permutations bitmasks, combinatorics, constructive algorithms, greedy, math, two pointers" [ref=e1677]:
+                  - link "Ordered Permutations" [ref=e1679] [cursor=pointer]:
+                    - /url: /problemset/problem/2040/C
+                  - generic [ref=e1680]:
+                    - link "bitmasks" [ref=e1681] [cursor=pointer]:
+                      - /url: /problemset?tags=bitmasks
+                    - text: ","
+                    - link "combinatorics" [ref=e1682] [cursor=pointer]:
+                      - /url: /problemset?tags=combinatorics
+                    - text: ","
+                    - link "constructive algorithms" [ref=e1683] [cursor=pointer]:
+                      - /url: /problemset?tags=constructive+algorithms
+                    - text: ","
+                    - link "greedy" [ref=e1684] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "math" [ref=e1685] [cursor=pointer]:
+                      - /url: /problemset?tags=math
+                    - text: ","
+                    - link "two pointers" [ref=e1686] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1687]:
+                  - link "Submit" [ref=e1689] [cursor=pointer]:
+                    - /url: /problemset/submit/2040/C
+                    - img "Submit" [ref=e1690]
+                - cell "1600" [ref=e1691]
+                - cell "x10799" [ref=e1692]:
+                  - link "x10799" [ref=e1693] [cursor=pointer]:
+                    - /url: /problemset/status/2040/problem/C
+                    - img [ref=e1694]
+                    - text: x10799
+              - row "2038L Bridge Renovation brute force, dp, greedy, math, two pointers Submit 1400 x8007" [ref=e1695]:
+                - cell "2038L" [ref=e1696]:
+                  - link "2038L" [ref=e1697] [cursor=pointer]:
+                    - /url: /problemset/problem/2038/L
+                - cell "Bridge Renovation brute force, dp, greedy, math, two pointers" [ref=e1698]:
+                  - link "Bridge Renovation" [ref=e1700] [cursor=pointer]:
+                    - /url: /problemset/problem/2038/L
+                  - generic [ref=e1701]:
+                    - link "brute force" [ref=e1702] [cursor=pointer]:
+                      - /url: /problemset?tags=brute+force
+                    - text: ","
+                    - link "dp" [ref=e1703] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "greedy" [ref=e1704] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "math" [ref=e1705] [cursor=pointer]:
+                      - /url: /problemset?tags=math
+                    - text: ","
+                    - link "two pointers" [ref=e1706] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1707]:
+                  - link "Submit" [ref=e1709] [cursor=pointer]:
+                    - /url: /problemset/submit/2038/L
+                    - img "Submit" [ref=e1710]
+                - cell "1400" [ref=e1711]
+                - cell "x8007" [ref=e1712]:
+                  - link "x8007" [ref=e1713] [cursor=pointer]:
+                    - /url: /problemset/status/2038/problem/L
+                    - img [ref=e1714]
+                    - text: x8007
+              - row "2037F Ardent Flames binary search, data structures, math, sortings, two pointers Submit 2100 x2974" [ref=e1715]:
+                - cell "2037F" [ref=e1716]:
+                  - link "2037F" [ref=e1717] [cursor=pointer]:
+                    - /url: /problemset/problem/2037/F
+                - cell "Ardent Flames binary search, data structures, math, sortings, two pointers" [ref=e1718]:
+                  - link "Ardent Flames" [ref=e1720] [cursor=pointer]:
+                    - /url: /problemset/problem/2037/F
+                  - generic [ref=e1721]:
+                    - link "binary search" [ref=e1722] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "data structures" [ref=e1723] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "math" [ref=e1724] [cursor=pointer]:
+                      - /url: /problemset?tags=math
+                    - text: ","
+                    - link "sortings" [ref=e1725] [cursor=pointer]:
+                      - /url: /problemset?tags=sortings
+                    - text: ","
+                    - link "two pointers" [ref=e1726] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1727]:
+                  - link "Submit" [ref=e1729] [cursor=pointer]:
+                    - /url: /problemset/submit/2037/F
+                    - img "Submit" [ref=e1730]
+                - cell "2100" [ref=e1731]
+                - cell "x2974" [ref=e1732]:
+                  - link "x2974" [ref=e1733] [cursor=pointer]:
+                    - /url: /problemset/status/2037/problem/F
+                    - img [ref=e1734]
+                    - text: x2974
+              - row "2037E Kachina's Favorite Binary String dp, greedy, interactive, two pointers Submit 1600 x7393" [ref=e1735]:
+                - cell "2037E" [ref=e1736]:
+                  - link "2037E" [ref=e1737] [cursor=pointer]:
+                    - /url: /problemset/problem/2037/E
+                - cell "Kachina's Favorite Binary String dp, greedy, interactive, two pointers" [ref=e1738]:
+                  - link "Kachina's Favorite Binary String" [ref=e1740] [cursor=pointer]:
+                    - /url: /problemset/problem/2037/E
+                  - generic [ref=e1741]:
+                    - link "dp" [ref=e1742] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "greedy" [ref=e1743] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "interactive" [ref=e1744] [cursor=pointer]:
+                      - /url: /problemset?tags=interactive
+                    - text: ","
+                    - link "two pointers" [ref=e1745] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1746]:
+                  - link "Submit" [ref=e1748] [cursor=pointer]:
+                    - /url: /problemset/submit/2037/E
+                    - img "Submit" [ref=e1749]
+                - cell "1600" [ref=e1750]
+                - cell "x7393" [ref=e1751]:
+                  - link "x7393" [ref=e1752] [cursor=pointer]:
+                    - /url: /problemset/status/2037/problem/E
+                    - img [ref=e1753]
+                    - text: x7393
+              - row "2037D Sharky Surfing data structures, greedy, two pointers Submit 1300 x14775" [ref=e1754]:
+                - cell "2037D" [ref=e1755]:
+                  - link "2037D" [ref=e1756] [cursor=pointer]:
+                    - /url: /problemset/problem/2037/D
+                - cell "Sharky Surfing data structures, greedy, two pointers" [ref=e1757]:
+                  - link "Sharky Surfing" [ref=e1759] [cursor=pointer]:
+                    - /url: /problemset/problem/2037/D
+                  - generic [ref=e1760]:
+                    - link "data structures" [ref=e1761] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "greedy" [ref=e1762] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "two pointers" [ref=e1763] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1764]:
+                  - link "Submit" [ref=e1766] [cursor=pointer]:
+                    - /url: /problemset/submit/2037/D
+                    - img "Submit" [ref=e1767]
+                - cell "1300" [ref=e1768]
+                - cell "x14775" [ref=e1769]:
+                  - link "x14775" [ref=e1770] [cursor=pointer]:
+                    - /url: /problemset/status/2037/problem/D
+                    - img [ref=e1771]
+                    - text: x14775
+              - row "2036F XORificator 3000 bitmasks, dp, number theory, two pointers Submit 1900 x5281" [ref=e1772]:
+                - cell "2036F" [ref=e1773]:
+                  - link "2036F" [ref=e1774] [cursor=pointer]:
+                    - /url: /problemset/problem/2036/F
+                - cell "XORificator 3000 bitmasks, dp, number theory, two pointers" [ref=e1775]:
+                  - link "XORificator 3000" [ref=e1777] [cursor=pointer]:
+                    - /url: /problemset/problem/2036/F
+                  - generic [ref=e1778]:
+                    - link "bitmasks" [ref=e1779] [cursor=pointer]:
+                      - /url: /problemset?tags=bitmasks
+                    - text: ","
+                    - link "dp" [ref=e1780] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "number theory" [ref=e1781] [cursor=pointer]:
+                      - /url: /problemset?tags=number+theory
+                    - text: ","
+                    - link "two pointers" [ref=e1782] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1783]:
+                  - link "Submit" [ref=e1785] [cursor=pointer]:
+                    - /url: /problemset/submit/2036/F
+                    - img "Submit" [ref=e1786]
+                - cell "1900" [ref=e1787]
+                - cell "x5281" [ref=e1788]:
+                  - link "x5281" [ref=e1789] [cursor=pointer]:
+                    - /url: /problemset/status/2036/problem/F
+                    - img [ref=e1790]
+                    - text: x5281
+              - row "2034B Rakhsh's Revival data structures, greedy, implementation, two pointers Submit 1000 x15789" [ref=e1791]:
+                - cell "2034B" [ref=e1792]:
+                  - link "2034B" [ref=e1793] [cursor=pointer]:
+                    - /url: /problemset/problem/2034/B
+                - cell "Rakhsh's Revival data structures, greedy, implementation, two pointers" [ref=e1794]:
+                  - link "Rakhsh's Revival" [ref=e1796] [cursor=pointer]:
+                    - /url: /problemset/problem/2034/B
+                  - generic [ref=e1797]:
+                    - link "data structures" [ref=e1798] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "greedy" [ref=e1799] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "implementation" [ref=e1800] [cursor=pointer]:
+                      - /url: /problemset?tags=implementation
+                    - text: ","
+                    - link "two pointers" [ref=e1801] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1802]:
+                  - link "Submit" [ref=e1804] [cursor=pointer]:
+                    - /url: /problemset/submit/2034/B
+                    - img "Submit" [ref=e1805]
+                - cell "1000" [ref=e1806]
+                - cell "x15789" [ref=e1807]:
+                  - link "x15789" [ref=e1808] [cursor=pointer]:
+                    - /url: /problemset/status/2034/problem/B
+                    - img [ref=e1809]
+                    - text: x15789
+              - row "2033C Sakurako's Field Trip dp, greedy, two pointers Submit 1400 x17843" [ref=e1810]:
+                - cell "2033C" [ref=e1811]:
+                  - link "2033C" [ref=e1812] [cursor=pointer]:
+                    - /url: /problemset/problem/2033/C
+                - cell "Sakurako's Field Trip dp, greedy, two pointers" [ref=e1813]:
+                  - link "Sakurako's Field Trip" [ref=e1815] [cursor=pointer]:
+                    - /url: /problemset/problem/2033/C
+                  - generic [ref=e1816]:
+                    - link "dp" [ref=e1817] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "greedy" [ref=e1818] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "two pointers" [ref=e1819] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1820]:
+                  - link "Submit" [ref=e1822] [cursor=pointer]:
+                    - /url: /problemset/submit/2033/C
+                    - img "Submit" [ref=e1823]
+                - cell "1400" [ref=e1824]
+                - cell "x17843" [ref=e1825]:
+                  - link "x17843" [ref=e1826] [cursor=pointer]:
+                    - /url: /problemset/status/2033/problem/C
+                    - img [ref=e1827]
+                    - text: x17843
+              - row "2032D Genokraken constructive algorithms, data structures, graphs, greedy, implementation, interactive, trees, two pointers Submit 1800 x6204" [ref=e1828]:
+                - cell "2032D" [ref=e1829]:
+                  - link "2032D" [ref=e1830] [cursor=pointer]:
+                    - /url: /problemset/problem/2032/D
+                - cell "Genokraken constructive algorithms, data structures, graphs, greedy, implementation, interactive, trees, two pointers" [ref=e1831]:
+                  - link "Genokraken" [ref=e1833] [cursor=pointer]:
+                    - /url: /problemset/problem/2032/D
+                  - generic [ref=e1834]:
+                    - link "constructive algorithms" [ref=e1835] [cursor=pointer]:
+                      - /url: /problemset?tags=constructive+algorithms
+                    - text: ","
+                    - link "data structures" [ref=e1836] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "graphs" [ref=e1837] [cursor=pointer]:
+                      - /url: /problemset?tags=graphs
+                    - text: ","
+                    - link "greedy" [ref=e1838] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "implementation" [ref=e1839] [cursor=pointer]:
+                      - /url: /problemset?tags=implementation
+                    - text: ","
+                    - link "interactive" [ref=e1840] [cursor=pointer]:
+                      - /url: /problemset?tags=interactive
+                    - text: ","
+                    - link "trees" [ref=e1841] [cursor=pointer]:
+                      - /url: /problemset?tags=trees
+                    - text: ","
+                    - link "two pointers" [ref=e1842] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1843]:
+                  - link "Submit" [ref=e1845] [cursor=pointer]:
+                    - /url: /problemset/submit/2032/D
+                    - img "Submit" [ref=e1846]
+                - cell "1800" [ref=e1847]
+                - cell "x6204" [ref=e1848]:
+                  - link "x6204" [ref=e1849] [cursor=pointer]:
+                    - /url: /problemset/status/2032/problem/D
+                    - img [ref=e1850]
+                    - text: x6204
+              - row "2032C Trinity binary search, math, sortings, two pointers Submit 1400 x16203" [ref=e1851]:
+                - cell "2032C" [ref=e1852]:
+                  - link "2032C" [ref=e1853] [cursor=pointer]:
+                    - /url: /problemset/problem/2032/C
+                - cell "Trinity binary search, math, sortings, two pointers" [ref=e1854]:
+                  - link "Trinity" [ref=e1856] [cursor=pointer]:
+                    - /url: /problemset/problem/2032/C
+                  - generic [ref=e1857]:
+                    - link "binary search" [ref=e1858] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "math" [ref=e1859] [cursor=pointer]:
+                      - /url: /problemset?tags=math
+                    - text: ","
+                    - link "sortings" [ref=e1860] [cursor=pointer]:
+                      - /url: /problemset?tags=sortings
+                    - text: ","
+                    - link "two pointers" [ref=e1861] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1862]:
+                  - link "Submit" [ref=e1864] [cursor=pointer]:
+                    - /url: /problemset/submit/2032/C
+                    - img "Submit" [ref=e1865]
+                - cell "1400" [ref=e1866]
+                - cell "x16203" [ref=e1867]:
+                  - link "x16203" [ref=e1868] [cursor=pointer]:
+                    - /url: /problemset/status/2032/problem/C
+                    - img [ref=e1869]
+                    - text: x16203
+              - row "2031D Penchick and Desert Rabbit binary search, data structures, dfs and similar, dp, dsu, greedy, implementation, two pointers Submit 1700 x9845" [ref=e1870]:
+                - cell "2031D" [ref=e1871]:
+                  - link "2031D" [ref=e1872] [cursor=pointer]:
+                    - /url: /problemset/problem/2031/D
+                - cell "Penchick and Desert Rabbit binary search, data structures, dfs and similar, dp, dsu, greedy, implementation, two pointers" [ref=e1873]:
+                  - link "Penchick and Desert Rabbit" [ref=e1875] [cursor=pointer]:
+                    - /url: /problemset/problem/2031/D
+                  - generic [ref=e1876]:
+                    - link "binary search" [ref=e1877] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "data structures" [ref=e1878] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "dfs and similar" [ref=e1879] [cursor=pointer]:
+                      - /url: /problemset?tags=dfs+and+similar
+                    - text: ","
+                    - link "dp" [ref=e1880] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "dsu" [ref=e1881] [cursor=pointer]:
+                      - /url: /problemset?tags=dsu
+                    - text: ","
+                    - link "greedy" [ref=e1882] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "implementation" [ref=e1883] [cursor=pointer]:
+                      - /url: /problemset?tags=implementation
+                    - text: ","
+                    - link "two pointers" [ref=e1884] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1885]:
+                  - link "Submit" [ref=e1887] [cursor=pointer]:
+                    - /url: /problemset/submit/2031/D
+                    - img "Submit" [ref=e1888]
+                - cell "1700" [ref=e1889]
+                - cell "x9845" [ref=e1890]:
+                  - link "x9845" [ref=e1891] [cursor=pointer]:
+                    - /url: /problemset/status/2031/problem/D
+                    - img [ref=e1892]
+                    - text: x9845
+              - row "2030F Orangutan Approved Subarrays binary search, data structures, dp, greedy, implementation, two pointers Submit 2400 x1179" [ref=e1893]:
+                - cell "2030F" [ref=e1894]:
+                  - link "2030F" [ref=e1895] [cursor=pointer]:
+                    - /url: /problemset/problem/2030/F
+                - cell "Orangutan Approved Subarrays binary search, data structures, dp, greedy, implementation, two pointers" [ref=e1896]:
+                  - link "Orangutan Approved Subarrays" [ref=e1898] [cursor=pointer]:
+                    - /url: /problemset/problem/2030/F
+                  - generic [ref=e1899]:
+                    - link "binary search" [ref=e1900] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "data structures" [ref=e1901] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "dp" [ref=e1902] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "greedy" [ref=e1903] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "implementation" [ref=e1904] [cursor=pointer]:
+                      - /url: /problemset?tags=implementation
+                    - text: ","
+                    - link "two pointers" [ref=e1905] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1906]:
+                  - link "Submit" [ref=e1908] [cursor=pointer]:
+                    - /url: /problemset/submit/2030/F
+                    - img "Submit" [ref=e1909]
+                - cell "2400" [ref=e1910]
+                - cell "x1179" [ref=e1911]:
+                  - link "x1179" [ref=e1912] [cursor=pointer]:
+                    - /url: /problemset/status/2030/problem/F
+                    - img [ref=e1913]
+                    - text: x1179
+              - row "2028C Alice's Adventures in Cutting Cake binary search, dp, greedy, two pointers Submit 1600 x9993" [ref=e1914]:
+                - cell "2028C" [ref=e1915]:
+                  - link "2028C" [ref=e1916] [cursor=pointer]:
+                    - /url: /problemset/problem/2028/C
+                - cell "Alice's Adventures in Cutting Cake binary search, dp, greedy, two pointers" [ref=e1917]:
+                  - link "Alice's Adventures in Cutting Cake" [ref=e1919] [cursor=pointer]:
+                    - /url: /problemset/problem/2028/C
+                  - generic [ref=e1920]:
+                    - link "binary search" [ref=e1921] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "dp" [ref=e1922] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "greedy" [ref=e1923] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "two pointers" [ref=e1924] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1925]:
+                  - link "Submit" [ref=e1927] [cursor=pointer]:
+                    - /url: /problemset/submit/2028/C
+                    - img "Submit" [ref=e1928]
+                - cell "1600" [ref=e1929]
+                - cell "x9993" [ref=e1930]:
+                  - link "x9993" [ref=e1931] [cursor=pointer]:
+                    - /url: /problemset/status/2028/problem/C
+                    - img [ref=e1932]
+                    - text: x9993
+              - row "2027D2 The Endspeaker (Hard Version) binary search, data structures, dp, greedy, implementation, two pointers Submit 2200 x1905" [ref=e1933]:
+                - cell "2027D2" [ref=e1934]:
+                  - link "2027D2" [ref=e1935] [cursor=pointer]:
+                    - /url: /problemset/problem/2027/D2
+                - cell "The Endspeaker (Hard Version) binary search, data structures, dp, greedy, implementation, two pointers" [ref=e1936]:
+                  - link "The Endspeaker (Hard Version)" [ref=e1938] [cursor=pointer]:
+                    - /url: /problemset/problem/2027/D2
+                  - generic [ref=e1939]:
+                    - link "binary search" [ref=e1940] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "data structures" [ref=e1941] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "dp" [ref=e1942] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "greedy" [ref=e1943] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "implementation" [ref=e1944] [cursor=pointer]:
+                      - /url: /problemset?tags=implementation
+                    - text: ","
+                    - link "two pointers" [ref=e1945] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1946]:
+                  - link "Submit" [ref=e1948] [cursor=pointer]:
+                    - /url: /problemset/submit/2027/D2
+                    - img "Submit" [ref=e1949]
+                - cell "2200" [ref=e1950]
+                - cell "x1905" [ref=e1951]:
+                  - link "x1905" [ref=e1952] [cursor=pointer]:
+                    - /url: /problemset/status/2027/problem/D2
+                    - img [ref=e1953]
+                    - text: x1905
+              - row "2027D1 The Endspeaker (Easy Version) binary search, dp, graphs, greedy, implementation, two pointers Submit 1700 x6981" [ref=e1954]:
+                - cell "2027D1" [ref=e1955]:
+                  - link "2027D1" [ref=e1956] [cursor=pointer]:
+                    - /url: /problemset/problem/2027/D1
+                - cell "The Endspeaker (Easy Version) binary search, dp, graphs, greedy, implementation, two pointers" [ref=e1957]:
+                  - link "The Endspeaker (Easy Version)" [ref=e1959] [cursor=pointer]:
+                    - /url: /problemset/problem/2027/D1
+                  - generic [ref=e1960]:
+                    - link "binary search" [ref=e1961] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "dp" [ref=e1962] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "graphs" [ref=e1963] [cursor=pointer]:
+                      - /url: /problemset?tags=graphs
+                    - text: ","
+                    - link "greedy" [ref=e1964] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "implementation" [ref=e1965] [cursor=pointer]:
+                      - /url: /problemset?tags=implementation
+                    - text: ","
+                    - link "two pointers" [ref=e1966] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1967]:
+                  - link "Submit" [ref=e1969] [cursor=pointer]:
+                    - /url: /problemset/submit/2027/D1
+                    - img "Submit" [ref=e1970]
+                - cell "1700" [ref=e1971]
+                - cell "x6981" [ref=e1972]:
+                  - link "x6981" [ref=e1973] [cursor=pointer]:
+                    - /url: /problemset/status/2027/problem/D1
+                    - img [ref=e1974]
+                    - text: x6981
+              - row "2025D Attribute Checks brute force, data structures, dp, implementation, math, two pointers Submit 1800 x7896" [ref=e1975]:
+                - cell "2025D" [ref=e1976]:
+                  - link "2025D" [ref=e1977] [cursor=pointer]:
+                    - /url: /problemset/problem/2025/D
+                - cell "Attribute Checks brute force, data structures, dp, implementation, math, two pointers" [ref=e1978]:
+                  - link "Attribute Checks" [ref=e1980] [cursor=pointer]:
+                    - /url: /problemset/problem/2025/D
+                  - generic [ref=e1981]:
+                    - link "brute force" [ref=e1982] [cursor=pointer]:
+                      - /url: /problemset?tags=brute+force
+                    - text: ","
+                    - link "data structures" [ref=e1983] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "dp" [ref=e1984] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "implementation" [ref=e1985] [cursor=pointer]:
+                      - /url: /problemset?tags=implementation
+                    - text: ","
+                    - link "math" [ref=e1986] [cursor=pointer]:
+                      - /url: /problemset?tags=math
+                    - text: ","
+                    - link "two pointers" [ref=e1987] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e1988]:
+                  - link "Submit" [ref=e1990] [cursor=pointer]:
+                    - /url: /problemset/submit/2025/D
+                    - img "Submit" [ref=e1991]
+                - cell "1800" [ref=e1992]
+                - cell "x7896" [ref=e1993]:
+                  - link "x7896" [ref=e1994] [cursor=pointer]:
+                    - /url: /problemset/status/2025/problem/D
+                    - img [ref=e1995]
+                    - text: x7896
+              - row "2025C New Game binary search, brute force, greedy, implementation, sortings, two pointers Submit 1300 x19066" [ref=e1996]:
+                - cell "2025C" [ref=e1997]:
+                  - link "2025C" [ref=e1998] [cursor=pointer]:
+                    - /url: /problemset/problem/2025/C
+                - cell "New Game binary search, brute force, greedy, implementation, sortings, two pointers" [ref=e1999]:
+                  - link "New Game" [ref=e2001] [cursor=pointer]:
+                    - /url: /problemset/problem/2025/C
+                  - generic [ref=e2002]:
+                    - link "binary search" [ref=e2003] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "brute force" [ref=e2004] [cursor=pointer]:
+                      - /url: /problemset?tags=brute+force
+                    - text: ","
+                    - link "greedy" [ref=e2005] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "implementation" [ref=e2006] [cursor=pointer]:
+                      - /url: /problemset?tags=implementation
+                    - text: ","
+                    - link "sortings" [ref=e2007] [cursor=pointer]:
+                      - /url: /problemset?tags=sortings
+                    - text: ","
+                    - link "two pointers" [ref=e2008] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e2009]:
+                  - link "Submit" [ref=e2011] [cursor=pointer]:
+                    - /url: /problemset/submit/2025/C
+                    - img "Submit" [ref=e2012]
+                - cell "1300" [ref=e2013]
+                - cell "x19066" [ref=e2014]:
+                  - link "x19066" [ref=e2015] [cursor=pointer]:
+                    - /url: /problemset/status/2025/problem/C
+                    - img [ref=e2016]
+                    - text: x19066
+              - row "2025A Two Screens binary search, greedy, strings, two pointers Submit 800 x28618" [ref=e2017]:
+                - cell "2025A" [ref=e2018]:
+                  - link "2025A" [ref=e2019] [cursor=pointer]:
+                    - /url: /problemset/problem/2025/A
+                - cell "Two Screens binary search, greedy, strings, two pointers" [ref=e2020]:
+                  - link "Two Screens" [ref=e2022] [cursor=pointer]:
+                    - /url: /problemset/problem/2025/A
+                  - generic [ref=e2023]:
+                    - link "binary search" [ref=e2024] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "greedy" [ref=e2025] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "strings" [ref=e2026] [cursor=pointer]:
+                      - /url: /problemset?tags=strings
+                    - text: ","
+                    - link "two pointers" [ref=e2027] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e2028]:
+                  - link "Submit" [ref=e2030] [cursor=pointer]:
+                    - /url: /problemset/submit/2025/A
+                    - img "Submit" [ref=e2031]
+                - cell "800" [ref=e2032]
+                - cell "x28618" [ref=e2033]:
+                  - link "x28618" [ref=e2034] [cursor=pointer]:
+                    - /url: /problemset/status/2025/problem/A
+                    - img [ref=e2035]
+                    - text: x28618
+              - row "2018B Speedbreaker binary search, data structures, dp, greedy, implementation, two pointers Submit 1900 x5196" [ref=e2036]:
+                - cell "2018B" [ref=e2037]:
+                  - link "2018B" [ref=e2038] [cursor=pointer]:
+                    - /url: /problemset/problem/2018/B
+                - cell "Speedbreaker binary search, data structures, dp, greedy, implementation, two pointers" [ref=e2039]:
+                  - link "Speedbreaker" [ref=e2041] [cursor=pointer]:
+                    - /url: /problemset/problem/2018/B
+                  - generic [ref=e2042]:
+                    - link "binary search" [ref=e2043] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "data structures" [ref=e2044] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "dp" [ref=e2045] [cursor=pointer]:
+                      - /url: /problemset?tags=dp
+                    - text: ","
+                    - link "greedy" [ref=e2046] [cursor=pointer]:
+                      - /url: /problemset?tags=greedy
+                    - text: ","
+                    - link "implementation" [ref=e2047] [cursor=pointer]:
+                      - /url: /problemset?tags=implementation
+                    - text: ","
+                    - link "two pointers" [ref=e2048] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e2049]:
+                  - link "Submit" [ref=e2051] [cursor=pointer]:
+                    - /url: /problemset/submit/2018/B
+                    - img "Submit" [ref=e2052]
+                - cell "1900" [ref=e2053]
+                - cell "x5196" [ref=e2054]:
+                  - link "x5196" [ref=e2055] [cursor=pointer]:
+                    - /url: /problemset/status/2018/problem/B
+                    - img [ref=e2056]
+                    - text: x5196
+              - row "2010C2 Message Transmission Error (hard version) hashing, string suffix structures, strings, two pointers Submit 1700 x4589" [ref=e2057]:
+                - cell "2010C2" [ref=e2058]:
+                  - link "2010C2" [ref=e2059] [cursor=pointer]:
+                    - /url: /problemset/problem/2010/C2
+                - cell "Message Transmission Error (hard version) hashing, string suffix structures, strings, two pointers" [ref=e2060]:
+                  - link "Message Transmission Error (hard version)" [ref=e2062] [cursor=pointer]:
+                    - /url: /problemset/problem/2010/C2
+                  - generic [ref=e2063]:
+                    - link "hashing" [ref=e2064] [cursor=pointer]:
+                      - /url: /problemset?tags=hashing
+                    - text: ","
+                    - link "string suffix structures" [ref=e2065] [cursor=pointer]:
+                      - /url: /problemset?tags=string+suffix+structures
+                    - text: ","
+                    - link "strings" [ref=e2066] [cursor=pointer]:
+                      - /url: /problemset?tags=strings
+                    - text: ","
+                    - link "two pointers" [ref=e2067] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e2068]:
+                  - link "Submit" [ref=e2070] [cursor=pointer]:
+                    - /url: /problemset/submit/2010/C2
+                    - img "Submit" [ref=e2071]
+                - cell "1700" [ref=e2072]
+                - cell "x4589" [ref=e2073]:
+                  - link "x4589" [ref=e2074] [cursor=pointer]:
+                    - /url: /problemset/status/2010/problem/C2
+                    - img [ref=e2075]
+                    - text: x4589
+              - row "2009G1 Yunli's Subarray Queries (easy version) binary search, data structures, two pointers Submit 1900 x5383" [ref=e2076]:
+                - cell "2009G1" [ref=e2077]:
+                  - link "2009G1" [ref=e2078] [cursor=pointer]:
+                    - /url: /problemset/problem/2009/G1
+                - cell "Yunli's Subarray Queries (easy version) binary search, data structures, two pointers" [ref=e2079]:
+                  - link "Yunli's Subarray Queries (easy version)" [ref=e2081] [cursor=pointer]:
+                    - /url: /problemset/problem/2009/G1
+                  - generic [ref=e2082]:
+                    - link "binary search" [ref=e2083] [cursor=pointer]:
+                      - /url: /problemset?tags=binary+search
+                    - text: ","
+                    - link "data structures" [ref=e2084] [cursor=pointer]:
+                      - /url: /problemset?tags=data+structures
+                    - text: ","
+                    - link "two pointers" [ref=e2085] [cursor=pointer]:
+                      - /url: /problemset?tags=two+pointers
+                - cell "Submit" [ref=e2086]:
+                  - link "Submit" [ref=e2088] [cursor=pointer]:
+                    - /url: /problemset/submit/2009/G1
+                    - img "Submit" [ref=e2089]
+                - cell "1900" [ref=e2090]
+                - cell "x5383" [ref=e2091]:
+                  - link "x5383" [ref=e2092] [cursor=pointer]:
+                    - /url: /problemset/status/2009/problem/G1
+                    - img [ref=e2093]
+                    - text: x5383
+        - list [ref=e2095]:
+          - text: ←
+          - listitem [ref=e2096]:
+            - link "1" [ref=e2098] [cursor=pointer]:
+              - /url: /problemset/page/1?tags=two+pointers
+          - listitem [ref=e2099]:
+            - link "2" [ref=e2101] [cursor=pointer]:
+              - /url: /problemset/page/2?tags=two+pointers
+          - listitem [ref=e2102]:
+            - link "3" [ref=e2104] [cursor=pointer]:
+              - /url: /problemset/page/3?tags=two+pointers
+          - listitem [ref=e2105]: ...
+          - listitem [ref=e2106]:
+            - link "6" [ref=e2108] [cursor=pointer]:
+              - /url: /problemset/page/6?tags=two+pointers
+          - listitem [ref=e2109]:
+            - link "7" [ref=e2111] [cursor=pointer]:
+              - /url: /problemset/page/7?tags=two+pointers
+          - listitem [ref=e2112]:
+            - link "→" [ref=e2113] [cursor=pointer]:
+              - /url: /problemset/page/2?tags=two+pointers
+    - generic [ref=e2114]:
+      - generic [ref=e2115]:
+        - link "Codeforces" [ref=e2116] [cursor=pointer]:
+          - /url: https://codeforces.com/
+        - text: (c) Copyright 2010-2026 Mike Mirzayanov
+      - generic [ref=e2117]: The only programming contests Web 2.0 platform
+      - generic [ref=e2118]:
+        - text: "Server time: May/13/2026 19:51:37"
+        - superscript [ref=e2119]: UTC+5.5
+        - text: (k3).
+      - generic [ref=e2120]:
+        - text: Desktop version, switch to
+        - link "mobile version" [ref=e2121] [cursor=pointer]:
+          - /url: "?mobile=true"
+        - text: .
+      - generic [ref=e2122]:
+        - link "Privacy Policy" [ref=e2123] [cursor=pointer]:
+          - /url: /privacy
+        - text: "|"
+        - link "Terms and Conditions" [ref=e2124] [cursor=pointer]:
+          - /url: /terms
+      - generic [ref=e2125]: Supported by
+      - link "TON" [ref=e2127] [cursor=pointer]:
+        - /url: https://ton.org/
+        - img "TON" [ref=e2128]
