@@ -11,13 +11,14 @@
 > (documentation, ownership, history, decisions). **Always verify against
 > actual source files before making changes** — the index may be stale.
 
-Last indexed: 2026-05-14 (commit 3a00ff6). Confidence: 100%.
+Last indexed: 2026-05-14 (commit 513ab1c). Confidence: 100%.
 ### Key Modules
 | Module | Purpose | Owner |
 |--------|---------|-------|
 | `src` | The src module serves as the core foundation for the application, implementing a | — |
-| `scripts` | The scripts module serves as the primary utility layer for data ingestion and tr | — |
+| `scripts` | The scripts module serves as the automation and utility layer for the dsa-invent | — |
 | `root` | The root module serves as the primary configuration layer for the project's buil | — |
+| `greedy` | The greedy module provides a centralized utility for managing and consolidating  | — |
 ### Entry Points
 - `src/routes/index.tsx`
 ### Tech Stack
@@ -27,11 +28,11 @@ Last indexed: 2026-05-14 (commit 3a00ff6). Confidence: 100%.
 **Infra:** Vite### Hotspots (High Churn)
 | File | Churn | 90d Commits | Owner |
 |------|-------|-------------|-------|
-| `math/all_math_problems.csv` | 100.0th %ile | 2 | rashidtvmr |
-| `AGENTS.md` | 99.6th %ile | 3 | rashidtvmr |
-| `CLAUDE.md` | 99.2th %ile | 2 | rashidtvmr |
-| `.playwright-mcp/page-2026-05-14T05-41-59-098Z.yml` | 98.9th %ile | 1 | rashidtvmr |
-| `.playwright-mcp/page-2026-05-14T05-42-18-412Z.yml` | 98.5th %ile | 1 | rashidtvmr |
+| `math/all_math_problems.csv` | 100.0th %ile | 3 | rashidtvmr |
+| `greedy/all_greedy_problems.csv` | 99.7th %ile | 2 | rashidtvmr |
+| `backtrack/all_backtracking_problems.csv` | 99.3th %ile | 2 | rashidtvmr |
+| `dp/all_dp_problems.csv` | 99.0th %ile | 2 | rashidtvmr |
+| `graph/all_graph_problems.csv` | 98.6th %ile | 2 | rashidtvmr |
 
 ### Repowise MCP Tools
 
