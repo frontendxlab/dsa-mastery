@@ -1,0 +1,341 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - heading "DSA Inventory" [level=2] [ref=e4]:
+        - link "DSA Inventory" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - text: DSA Inventory
+      - generic [ref=e7]:
+        - link "Topics" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - link "Learn" [ref=e9] [cursor=pointer]:
+          - /url: /learn
+        - link "Explore" [ref=e10] [cursor=pointer]:
+          - /url: /explore
+        - link "GitHub" [ref=e11] [cursor=pointer]:
+          - /url: https://github.com/rashidtvmr/dsa-inventory
+      - generic [ref=e12]:
+        - button "Choose colour theme" [ref=e14] [cursor=pointer]: 🎨
+        - 'button "Theme mode: auto (system). Click to switch to light mode." [ref=e15]': Auto
+  - main [ref=e16]:
+    - generic [ref=e17]:
+      - link "Home" [ref=e18] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e19]: /
+      - link "Learn" [ref=e20] [cursor=pointer]:
+        - /url: /learn
+      - generic [ref=e21]: /
+      - generic [ref=e22]: Sliding Window
+    - generic [ref=e24]:
+      - generic [ref=e26]:
+        - generic [ref=e27]: 🪟
+        - generic [ref=e28]:
+          - paragraph [ref=e29]: Pattern Guide
+          - heading "Sliding Window" [level=1] [ref=e30]
+          - paragraph [ref=e31]: "\"Turn O(n²) subarray loops into O(n) with a moving window.\""
+          - paragraph [ref=e32]: Master fixed-size windows, dynamic windows, and the exact-count formula. The pattern that shows up in 80% of subarray/substring problems.
+          - generic [ref=e33]:
+            - generic [ref=e34]: 18 min read
+            - link "sliding window problems →" [ref=e35] [cursor=pointer]:
+              - /url: /problems/sliding_window
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - generic [ref=e38]:
+            - paragraph [ref=e39]: Problems you can solve with this pattern
+            - paragraph [ref=e40]: 7 problems · click any to start solving
+          - link "All sliding window →" [ref=e41] [cursor=pointer]:
+            - /url: /problems/sliding_window
+        - generic [ref=e42]:
+          - generic [ref=e43]:
+            - generic [ref=e44]:
+              - generic [ref=e45]:
+                - generic [ref=e46]: "1"
+                - generic [ref=e47]: Longest Substring Without Repeating Characters
+                - generic [ref=e48]: Medium
+                - link "Solve ↗" [ref=e49] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+              - generic [ref=e50]:
+                - generic [ref=e51]: "2"
+                - generic [ref=e52]: Maximum Number of Vowels in a Substring of Given Length
+                - generic [ref=e53]: Medium
+                - link "Solve ↗" [ref=e54] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/
+              - generic [ref=e55]:
+                - generic [ref=e56]: "3"
+                - generic [ref=e57]: Binary Subarrays With Sum
+                - generic [ref=e58]: Medium
+                - link "Solve ↗" [ref=e59] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/binary-subarrays-with-sum/
+              - generic [ref=e60]:
+                - generic [ref=e61]: "4"
+                - generic [ref=e62]: Count Number of Nice Subarrays
+                - generic [ref=e63]: Medium
+                - link "Solve ↗" [ref=e64] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/count-number-of-nice-subarrays/
+            - button "↓ Show 3 more problems" [ref=e65]
+          - generic [ref=e66]:
+            - generic [ref=e67]: Fixed window (size k)
+            - code [ref=e69]: "// Build first window, then slide let sum = 0; for (let i = 0; i < k; i++) sum += nums[i]; let maxSum = sum; for (let i = k; i < n; i++) { sum += nums[i]; // add incoming right element sum -= nums[i - k]; // remove outgoing left element maxSum = Math.max(maxSum, sum); }"
+      - generic [ref=e70]:
+        - paragraph [ref=e71]: "Every subarray problem at its core asks: \"find a contiguous part of the array that satisfies some condition.\" The brute force is always two nested loops — O(n²). Sliding window is the observation that you don't need to recompute from scratch for each starting point. You can maintain a running state and slide a window across the array, adding from the right and removing from the left."
+        - generic [ref=e72]:
+          - generic [ref=e73]: 💡
+          - generic [ref=e74]:
+            - text: "Two window types exist:"
+            - strong [ref=e76]: Fixed window
+            - text: — the size k is given upfront, window is always exactly k wide.
+            - strong [ref=e78]: Dynamic window
+            - text: — the window grows and shrinks based on a condition (longest valid / shortest valid).
+        - heading "When to Reach for Sliding Window" [level=2] [ref=e79]
+        - table [ref=e81]:
+          - rowgroup [ref=e82]:
+            - row "See This in the Problem Think This" [ref=e83]:
+              - columnheader "See This in the Problem" [ref=e84]
+              - columnheader "Think This" [ref=e85]
+          - rowgroup [ref=e86]:
+            - row "subarray / substring Sliding window candidate" [ref=e87]:
+              - cell "subarray / substring" [ref=e88]
+              - cell "Sliding window candidate" [ref=e89]
+            - row "\"longest ... with condition\" Dynamic window, expand until broken, shrink from left" [ref=e90]:
+              - cell "\"longest ... with condition\"" [ref=e91]
+              - cell "Dynamic window, expand until broken, shrink from left" [ref=e92]
+            - row "\"shortest ... with condition\" Dynamic window, shrink greedily once valid" [ref=e93]:
+              - cell "\"shortest ... with condition\"" [ref=e94]
+              - cell "Dynamic window, shrink greedily once valid" [ref=e95]
+            - row "\"fixed length k\" Fixed window, slide one step at a time" [ref=e96]:
+              - cell "\"fixed length k\"" [ref=e97]
+              - cell "Fixed window, slide one step at a time" [ref=e98]
+            - row "\"count of subarrays with exactly k\" atMost(k) − atMost(k−1) formula" [ref=e99]:
+              - cell "\"count of subarrays with exactly k\"" [ref=e100]
+              - cell "atMost(k) − atMost(k−1) formula" [ref=e101]
+            - row "input is ALL positive Two pointer / dynamic window is safe" [ref=e102]:
+              - cell "input is ALL positive" [ref=e103]
+              - cell "Two pointer / dynamic window is safe" [ref=e104]
+            - row "input has zeros Use exact-count formula instead of direct window" [ref=e105]:
+              - cell "input has zeros" [ref=e106]
+              - cell "Use exact-count formula instead of direct window" [ref=e107]
+            - row "input has negatives Avoid sliding window, use prefix sum + hashmap" [ref=e108]:
+              - cell "input has negatives" [ref=e109]
+              - cell "Avoid sliding window, use prefix sum + hashmap" [ref=e110]
+        - heading "The Core Templates" [level=2] [ref=e111]
+        - generic [ref=e112]:
+          - generic [ref=e113]: Fixed window (size k)
+          - generic [ref=e114]:
+            - button "Copy" [ref=e115]
+            - code [ref=e117]: "// Build first window, then slide let sum = 0; for (let i = 0; i < k; i++) sum += nums[i]; let maxSum = sum; for (let i = k; i < n; i++) { sum += nums[i]; // add incoming right element sum -= nums[i - k]; // remove outgoing left element maxSum = Math.max(maxSum, sum); }"
+        - generic [ref=e118]:
+          - generic [ref=e119]: Dynamic window — longest valid subarray
+          - generic [ref=e120]:
+            - button "Copy" [ref=e121]
+            - code [ref=e123]: "let i = 0, j = 0, ans = 0; while (j < n) { // 1. Expand: add nums[j] to window state state.add(nums[j]); // 2. Shrink: while window is invalid, remove from left while (!isValid(state)) { state.remove(nums[i]); i++; } // 3. Update answer with current valid window size ans = Math.max(ans, j - i + 1); j++; }"
+        - generic [ref=e124]:
+          - generic [ref=e125]: Count subarrays with EXACTLY k (the ans += n−j trick)
+          - generic [ref=e126]:
+            - button "Copy" [ref=e127]
+            - code [ref=e129]: "// When input has zeros, exact count can't be done by direct shrink. // Use: count(exactly k) = count(at most k) − count(at most k−1) const atMost = (goal) => { if (goal < 0) return 0; let i = j = ans = sum = 0; while (j < n) { sum += nums[j]; while (sum > goal) { sum -= nums[i]; i++; } ans += j - i + 1; // all subarrays ending at j with sum ≤ goal j++; } return ans; }; return atMost(k) - atMost(k - 1);"
+        - generic [ref=e130]:
+          - generic [ref=e131]: 🔑
+          - generic [ref=e132]:
+            - strong [ref=e133]: ans += n − j
+            - text: vs
+            - strong [ref=e134]: ans += j − i + 1
+            - text: When the window [i..j] first becomes valid, ALL extensions to the right are also valid. Use
+            - code [ref=e137]: ans += n − j
+            - text: to count "this window + every longer window ending at or after j".
+            - text: DON'T use
+            - code [ref=e140]: ans += j − i + 1
+            - text: in that scenario — that counts left-shrinking prefixes, a completely different set.
+        - heading "Worked Problems" [level=2] [ref=e141]
+        - generic [ref=e142]:
+          - generic [ref=e143]:
+            - generic [ref=e144]: "1"
+            - generic [ref=e145]:
+              - link "Longest Substring Without Repeating Characters" [ref=e146] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+              - generic [ref=e148]: Medium
+            - link "Solve ↗" [ref=e149] [cursor=pointer]:
+              - /url: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+          - generic [ref=e150]:
+            - 'button "1 Intuition 1: O(n³) brute force Check every possible substring. For each (i, j) pair, scan that window for duplicates using a nested loop or set. Works but TLEs on large input. ›" [ref=e152]':
+              - generic [ref=e153]:
+                - generic [ref=e154]: "1"
+                - generic [ref=e155]:
+                  - paragraph [ref=e156]: "Intuition 1: O(n³) brute force"
+                  - paragraph [ref=e157]: Check every possible substring. For each (i, j) pair, scan that window for duplicates using a nested loop or set. Works but TLEs on large input.
+                - generic [ref=e158]: ›
+            - 'button "2 Intuition 2: O(n) dynamic window with hashmap Key insight: when we hit a duplicate at position j, we don''t need to restart from i+1. We can jump the left pointer directly to (last seen position of s[j]) + 1, skipping everything before the previous occurrence of that character. Store each character''s NEXT valid start position in the map (map[char] = j + 1, one past its index). When we see a duplicate, set i = Math.max(i, map[s[j]]) — the max ensures we never move i backwards if i has already passed the old position. ›" [ref=e160]':
+              - generic [ref=e161]:
+                - generic [ref=e162]: "2"
+                - generic [ref=e163]:
+                  - paragraph [ref=e164]: "Intuition 2: O(n) dynamic window with hashmap"
+                  - paragraph [ref=e165]: "Key insight: when we hit a duplicate at position j, we don't need to restart from i+1. We can jump the left pointer directly to (last seen position of s[j]) + 1, skipping everything before the previous occurrence of that character. Store each character's NEXT valid start position in the map (map[char] = j + 1, one past its index). When we see a duplicate, set i = Math.max(i, map[s[j]]) — the max ensures we never move i backwards if i has already passed the old position."
+                - generic [ref=e166]: ›
+        - generic [ref=e167]:
+          - generic [ref=e168]:
+            - generic [ref=e169]: "2"
+            - generic [ref=e170]:
+              - link "Maximum Number of Vowels in a Substring of Given Length" [ref=e171] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/
+              - generic [ref=e173]: Medium
+            - link "Solve ↗" [ref=e174] [cursor=pointer]:
+              - /url: https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/
+          - generic [ref=e175]:
+            - 'button "1 Intuition 1: O(n·k) brute force For each starting position, count vowels in the next k characters. Recalculates the entire window from scratch each time. ›" [ref=e177]':
+              - generic [ref=e178]:
+                - generic [ref=e179]: "1"
+                - generic [ref=e180]:
+                  - paragraph [ref=e181]: "Intuition 1: O(n·k) brute force"
+                  - paragraph [ref=e182]: For each starting position, count vowels in the next k characters. Recalculates the entire window from scratch each time.
+                - generic [ref=e183]: ›
+            - 'button "2 Intuition 2: O(n) fixed window Build the first k-window, then slide. When the window moves right by 1: add s[i] to count if it''s a vowel, remove s[i-k] from count if it was a vowel. Classic \"add right, remove left\" slide. ›" [ref=e185]':
+              - generic [ref=e186]:
+                - generic [ref=e187]: "2"
+                - generic [ref=e188]:
+                  - paragraph [ref=e189]: "Intuition 2: O(n) fixed window"
+                  - paragraph [ref=e190]: "Build the first k-window, then slide. When the window moves right by 1: add s[i] to count if it's a vowel, remove s[i-k] from count if it was a vowel. Classic \"add right, remove left\" slide."
+                - generic [ref=e191]: ›
+        - generic [ref=e192]:
+          - generic [ref=e193]:
+            - generic [ref=e194]: "3"
+            - generic [ref=e195]:
+              - link "Binary Subarrays With Sum" [ref=e196] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/binary-subarrays-with-sum/
+              - generic [ref=e198]: Medium
+            - link "Solve ↗" [ref=e199] [cursor=pointer]:
+              - /url: https://leetcode.com/problems/binary-subarrays-with-sum/
+          - paragraph [ref=e200]: 💬 Input has 0s — can't direct-shrink to exact count. Use the formula.
+          - generic [ref=e201]:
+            - 'button "1 Intuition 1: Why direct sliding window fails here If input had only positive values, when sum > goal we''d shrink left and the window would be deterministic. But zeros mean both [0,1] and [0,0,1] have the same sum — there''s no single \"minimum\" window for a given sum. Shrinking to exact k is ambiguous. ›" [ref=e203]':
+              - generic [ref=e204]:
+                - generic [ref=e205]: "1"
+                - generic [ref=e206]:
+                  - paragraph [ref=e207]: "Intuition 1: Why direct sliding window fails here"
+                  - paragraph [ref=e208]: If input had only positive values, when sum > goal we'd shrink left and the window would be deterministic. But zeros mean both [0,1] and [0,0,1] have the same sum — there's no single "minimum" window for a given sum. Shrinking to exact k is ambiguous.
+                - generic [ref=e209]: ›
+            - 'button "2 Intuition 2: O(n) exact-count formula count(exactly goal) = count(at most goal) − count(at most goal−1) Write an atMost(goal) function using a normal shrink window. The difference of the two calls gives exactly the count we need. ›" [ref=e211]':
+              - generic [ref=e212]:
+                - generic [ref=e213]: "2"
+                - generic [ref=e214]:
+                  - paragraph [ref=e215]: "Intuition 2: O(n) exact-count formula"
+                  - paragraph [ref=e216]: count(exactly goal) = count(at most goal) − count(at most goal−1) Write an atMost(goal) function using a normal shrink window. The difference of the two calls gives exactly the count we need.
+                - generic [ref=e217]: ›
+        - generic [ref=e218]:
+          - generic [ref=e219]:
+            - generic [ref=e220]: "4"
+            - generic [ref=e221]:
+              - link "Count Number of Nice Subarrays" [ref=e222] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/count-number-of-nice-subarrays/
+              - generic [ref=e224]: Medium
+            - link "Solve ↗" [ref=e225] [cursor=pointer]:
+              - /url: https://leetcode.com/problems/count-number-of-nice-subarrays/
+          - 'button "1 Intuition 1: Same pattern as Binary Subarrays With Sum \"Nice subarray\" = subarray with exactly k odd numbers. This is the same atMost formula — we just transform the input first: map each element to 1 if odd, 0 if even. After that, it''s identical to the previous problem. ›" [ref=e228]':
+            - generic [ref=e229]:
+              - generic [ref=e230]: "1"
+              - generic [ref=e231]:
+                - paragraph [ref=e232]: "Intuition 1: Same pattern as Binary Subarrays With Sum"
+                - paragraph [ref=e233]: "\"Nice subarray\" = subarray with exactly k odd numbers. This is the same atMost formula — we just transform the input first: map each element to 1 if odd, 0 if even. After that, it's identical to the previous problem."
+              - generic [ref=e234]: ›
+        - generic [ref=e235]:
+          - generic [ref=e236]:
+            - generic [ref=e237]: "5"
+            - generic [ref=e238]:
+              - link "Rotting Oranges" [ref=e239] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/rotting-oranges/
+              - generic [ref=e241]: Medium
+            - link "Solve ↗" [ref=e242] [cursor=pointer]:
+              - /url: https://leetcode.com/problems/rotting-oranges/
+          - paragraph [ref=e243]: 💬 Multi-source BFS — not sliding window, but same "enqueue all sources first" insight.
+          - 'button "1 Intuition 1: Level-by-level BFS from all rotten oranges simultaneously Standard BFS finds shortest distance from ONE source. Here we need shortest time from ALL initial rotten oranges simultaneously. Solution: enqueue ALL starting rotten oranges at time=0 before beginning BFS. Each level of BFS = one minute. Track fresh orange count; decrement each time we rot one. If fresh > 0 after BFS completes, return -1. ›" [ref=e246]':
+            - generic [ref=e247]:
+              - generic [ref=e248]: "1"
+              - generic [ref=e249]:
+                - paragraph [ref=e250]: "Intuition 1: Level-by-level BFS from all rotten oranges simultaneously"
+                - paragraph [ref=e251]: "Standard BFS finds shortest distance from ONE source. Here we need shortest time from ALL initial rotten oranges simultaneously. Solution: enqueue ALL starting rotten oranges at time=0 before beginning BFS. Each level of BFS = one minute. Track fresh orange count; decrement each time we rot one. If fresh > 0 after BFS completes, return -1."
+              - generic [ref=e252]: ›
+        - generic [ref=e253]:
+          - generic [ref=e254]:
+            - paragraph [ref=e255]: Variation Trick
+            - heading "The One-Line Variation Trick" [level=3] [ref=e256]
+          - generic [ref=e257]:
+            - paragraph [ref=e258]: Base template
+            - code [ref=e260]: "// Base: count subarrays with sum exactly k const atMost = (goal) => { let i = j = ans = sum = 0; while (j < n) { sum += nums[j]; // ← THIS LINE controls what we're tracking while (sum > goal) { sum -= nums[i]; i++; } ans += j - i + 1; j++; } return ans; }; return atMost(k) - atMost(k - 1);"
+            - paragraph [ref=e261]: "Change only one line to solve:"
+            - generic [ref=e262]:
+              - generic [ref=e264]:
+                - generic [ref=e265]:
+                  - paragraph [ref=e266]: Count subarrays with exactly k ODD numbers
+                  - generic [ref=e267]: "sum += nums[j] % 2 // map: odd→1, even→0"
+                  - paragraph [ref=e268]: Transform values to 0/1 parity, same formula applies
+                - link "Solve ↗" [ref=e269] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/count-number-of-nice-subarrays/
+              - generic [ref=e271]:
+                - generic [ref=e272]:
+                  - paragraph [ref=e273]: Longest substring with at most k distinct characters
+                  - generic [ref=e274]: freq[s[j]]++; if new → distinct++ // track distinct count
+                  - paragraph [ref=e275]: Change sum to distinct-character count, return max window not count
+                - link "Solve ↗" [ref=e276] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/
+              - generic [ref=e278]:
+                - generic [ref=e279]:
+                  - paragraph [ref=e280]: Count subarrays where max appears at least k times
+                  - generic [ref=e281]: "freq += nums[j] === max ? 1 : 0 // count max occurrences"
+                  - paragraph [ref=e282]: "Once freq >= k, all right-extending windows are valid: ans += n - j"
+                - link "Solve ↗" [ref=e283] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/
+        - heading "More Worked Problems" [level=2] [ref=e284]
+        - generic [ref=e285]:
+          - generic [ref=e286]:
+            - generic [ref=e287]: "7"
+            - generic [ref=e288]:
+              - link "Minimum Window Substring" [ref=e289] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/minimum-window-substring/
+              - generic [ref=e291]: Hard
+            - link "Solve ↗" [ref=e292] [cursor=pointer]:
+              - /url: https://leetcode.com/problems/minimum-window-substring/
+          - 'button "1 Intuition 1: Sliding window with character frequency tracking Expand right to include all required chars, then shrink left while window still valid. Track \"formed\" count = how many distinct chars are at required frequency. Update answer when formed === required. ›" [ref=e295]':
+            - generic [ref=e296]:
+              - generic [ref=e297]: "1"
+              - generic [ref=e298]:
+                - paragraph [ref=e299]: "Intuition 1: Sliding window with character frequency tracking"
+                - paragraph [ref=e300]: Expand right to include all required chars, then shrink left while window still valid. Track "formed" count = how many distinct chars are at required frequency. Update answer when formed === required.
+              - generic [ref=e301]: ›
+        - generic [ref=e302]:
+          - generic [ref=e303]:
+            - generic [ref=e304]: "8"
+            - generic [ref=e305]:
+              - link "Sliding Window Maximum" [ref=e306] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/sliding-window-maximum/
+              - generic [ref=e308]: Hard
+            - link "Solve ↗" [ref=e309] [cursor=pointer]:
+              - /url: https://leetcode.com/problems/sliding-window-maximum/
+          - 'button "1 Intuition 1: Monotonic deque — O(n) Maintain a deque of indices in decreasing order of value. Front = current window maximum. Before adding new element, pop from back all elements smaller than it (they can never be future maximums). ›" [ref=e312]':
+            - generic [ref=e313]:
+              - generic [ref=e314]: "1"
+              - generic [ref=e315]:
+                - paragraph [ref=e316]: "Intuition 1: Monotonic deque — O(n)"
+                - paragraph [ref=e317]: Maintain a deque of indices in decreasing order of value. Front = current window maximum. Before adding new element, pop from back all elements smaller than it (they can never be future maximums).
+              - generic [ref=e318]: ›
+        - generic [ref=e319]:
+          - generic [ref=e320]: 📌
+          - generic [ref=e321]:
+            - strong [ref=e322]: "Sliding window checklist:"
+            - text: 1. Can I define a window [lo, hi] with a valid/invalid state?
+            - text: 2. Is the state monotone — if [lo, hi] is invalid, is [lo, hi+1] also invalid? → shrink window
+            - text: "3. For COUNT problems: use atMost(k) - atMost(k-1) trick"
+            - text: 4. Need max in window? → monotonic deque
+            - text: 5. Need sum/count in window? → simple two-pointer with running total
+      - link "👆👆 Two Pointers →" [ref=e329] [cursor=pointer]:
+        - /url: /learn/two-pointers
+  - contentinfo [ref=e330]:
+    - generic [ref=e331]:
+      - paragraph [ref=e332]: © 2026 Your name here. All rights reserved.
+      - paragraph [ref=e333]: Built with TanStack Start
+    - generic [ref=e334]:
+      - link "Follow TanStack on X" [ref=e335] [cursor=pointer]:
+        - /url: https://x.com/tan_stack
+        - generic [ref=e336]: Follow TanStack on X
+        - img [ref=e337]
+      - link "Go to TanStack GitHub" [ref=e339] [cursor=pointer]:
+        - /url: https://github.com/TanStack
+        - generic [ref=e340]: Go to TanStack GitHub
+        - img [ref=e341]

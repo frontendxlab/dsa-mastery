@@ -1,0 +1,345 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - heading "DSA Inventory" [level=2] [ref=e4]:
+        - link "DSA Inventory" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - text: DSA Inventory
+      - generic [ref=e7]:
+        - link "Topics" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - link "Learn" [ref=e9] [cursor=pointer]:
+          - /url: /learn
+        - link "Explore" [ref=e10] [cursor=pointer]:
+          - /url: /explore
+        - link "GitHub" [ref=e11] [cursor=pointer]:
+          - /url: https://github.com/rashidtvmr/dsa-inventory
+      - generic [ref=e12]:
+        - button "Choose colour theme" [ref=e14] [cursor=pointer]: 🎨
+        - 'button "Theme mode: auto (system). Click to switch to light mode." [ref=e15]': Auto
+  - main [ref=e16]:
+    - generic [ref=e17]:
+      - paragraph [ref=e18]: Cheat Sheet
+      - heading "Quick Patterns Reference" [level=1] [ref=e19]
+      - paragraph [ref=e20]: 13 core templates. Copy, adapt, solve.
+      - generic [ref=e21]:
+        - link "← All articles" [ref=e22] [cursor=pointer]:
+          - /url: /learn
+        - link "38k problems →" [ref=e23] [cursor=pointer]:
+          - /url: /explore
+    - generic [ref=e24]:
+      - textbox "Search patterns, triggers, keywords…" [ref=e25]
+      - img
+    - generic [ref=e26]:
+      - article [ref=e27]:
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - generic [ref=e30]:
+              - generic [ref=e31]: 🪟
+              - heading "Sliding Window" [level=3] [ref=e32]
+            - generic [ref=e33]: O(n)
+          - paragraph [ref=e34]: "When: subarray/substring, contiguous, at most k"
+        - generic [ref=e35]:
+          - code [ref=e37]: "let lo = 0, ans = 0; for (let hi = 0; hi < n; hi++) { // expand window with nums[hi] while (/* window invalid */) { // shrink from left lo++; } ans = Math.max(ans, hi - lo + 1); }"
+          - button "expand ▼" [ref=e39]
+        - list [ref=e41]:
+          - listitem [ref=e42]:
+            - generic [ref=e43]: ▸
+            - text: Sort order is preserved in window
+          - listitem [ref=e44]:
+            - generic [ref=e45]: ▸
+            - text: Exactly k = atMost(k) - atMost(k-1)
+          - listitem [ref=e46]:
+            - generic [ref=e47]: ▸
+            - text: "Variable window: while loop to shrink; fixed: slide both ends"
+        - link "Full article + problems →" [ref=e49] [cursor=pointer]:
+          - /url: /learn/sliding-window
+      - article [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e52]:
+            - generic [ref=e53]:
+              - generic [ref=e54]: 👆👆
+              - heading "Two Pointers" [level=3] [ref=e55]
+            - generic [ref=e56]: O(n)
+          - paragraph [ref=e57]: "When: sorted array, pair sum, palindrome, remove duplicates"
+        - generic [ref=e58]:
+          - code [ref=e60]: "let lo = 0, hi = arr.length - 1; while (lo < hi) { if (condition) { // found answer } else if (arr[lo] + arr[hi] < target) { lo++; } else { hi--; } }"
+          - button "expand ▼" [ref=e62]
+        - list [ref=e64]:
+          - listitem [ref=e65]:
+            - generic [ref=e66]: ▸
+            - text: Array must be sorted (or use fast/slow pointers on linked list)
+          - listitem [ref=e67]:
+            - generic [ref=e68]: ▸
+            - text: "Fast/slow: cycle detection, find middle"
+          - listitem [ref=e69]:
+            - generic [ref=e70]: ▸
+            - text: "Three sum: fix one, two-pointer on rest"
+        - link "Full article + problems →" [ref=e72] [cursor=pointer]:
+          - /url: /learn/two-pointers
+      - article [ref=e73]:
+        - generic [ref=e74]:
+          - generic [ref=e75]:
+            - generic [ref=e76]:
+              - generic [ref=e77]: 🔍
+              - heading "Binary Search" [level=3] [ref=e78]
+            - generic [ref=e79]: O(log n)
+          - paragraph [ref=e80]: "When: sorted, find minimum/maximum valid value, monotone predicate"
+        - generic [ref=e81]:
+          - code [ref=e83]: "let lo = 0, hi = n - 1; while (lo < hi) { const mid = (lo + hi) >> 1; if (check(mid)) hi = mid; // mid is valid, try smaller else lo = mid + 1; // mid is invalid, try larger } return lo; // first valid"
+          - button "expand ▼" [ref=e85]
+        - list [ref=e87]:
+          - listitem [ref=e88]:
+            - generic [ref=e89]: ▸
+            - text: lo < hi + return lo for "first valid"
+          - listitem [ref=e90]:
+            - generic [ref=e91]: ▸
+            - text: lo <= hi + return -1 for "find exact"
+          - listitem [ref=e92]:
+            - generic [ref=e93]: ▸
+            - text: "Binary search on answer: check(mid) = \"can we achieve mid?\""
+        - link "Full article + problems →" [ref=e95] [cursor=pointer]:
+          - /url: /learn/binary-search
+      - article [ref=e96]:
+        - generic [ref=e97]:
+          - generic [ref=e98]:
+            - generic [ref=e99]:
+              - generic [ref=e100]: 🧠
+              - heading "Dynamic Programming" [level=3] [ref=e101]
+            - generic [ref=e102]: O(n²) or O(n·k)
+          - paragraph [ref=e103]: "When: count ways, min/max value, optimal substructure, overlapping subproblems"
+        - generic [ref=e104]:
+          - code [ref=e106]: "// Top-down (memo) const memo = new Map(); function dp(i) { if (base_case) return base_value; if (memo.has(i)) return memo.get(i); const result = Math.max(dp(i-1) + ..., dp(i-2) + ...); memo.set(i, result); return result; } // Bottom-up (tabulation) const dp = new Array(n+1).fill(0); dp[0] = base; for (let i = 1; i <= n; i++) dp[i] = Math.max(dp[i-1] + ..., ...);"
+          - button "expand ▼" [ref=e108]
+        - list [ref=e110]:
+          - listitem [ref=e111]:
+            - generic [ref=e112]: ▸
+            - text: "Define state carefully: dp[i] = ?"
+          - listitem [ref=e113]:
+            - generic [ref=e114]: ▸
+            - text: "2D string DP: dp[i][j] = answer for s[0..i-1] and t[0..j-1]"
+          - listitem [ref=e115]:
+            - generic [ref=e116]: ▸
+            - text: "Knapsack: outer loop items, inner loop capacity"
+        - link "Full article + problems →" [ref=e118] [cursor=pointer]:
+          - /url: /learn/dynamic-programming
+      - article [ref=e119]:
+        - generic [ref=e120]:
+          - generic [ref=e121]:
+            - generic [ref=e122]:
+              - generic [ref=e123]: 🌊
+              - heading "BFS (Shortest Path)" [level=3] [ref=e124]
+            - generic [ref=e125]: O(V + E)
+          - paragraph [ref=e126]: "When: minimum steps, shortest path unweighted, level-by-level"
+        - generic [ref=e127]:
+          - code [ref=e129]: "const visited = new Set([start]); let queue = [start], level = 0; while (queue.length) { const next = []; for (const node of queue) { if (node === target) return level; for (const nb of graph[node]) if (!visited.has(nb)) { visited.add(nb); next.push(nb); } } queue = next; level++; }"
+          - button "expand ▼" [ref=e131]
+        - list [ref=e133]:
+          - listitem [ref=e134]:
+            - generic [ref=e135]: ▸
+            - text: BFS = shortest path in unweighted graph
+          - listitem [ref=e136]:
+            - generic [ref=e137]: ▸
+            - text: "Multi-source: push ALL starting nodes at level 0"
+          - listitem [ref=e138]:
+            - generic [ref=e139]: ▸
+            - text: "0-1 BFS: use deque, push 0-cost to front"
+        - link "Full article + problems →" [ref=e141] [cursor=pointer]:
+          - /url: /learn/graph
+      - article [ref=e142]:
+        - generic [ref=e143]:
+          - generic [ref=e144]:
+            - generic [ref=e145]:
+              - generic [ref=e146]: 🕸️
+              - heading "DFS (Components/Cycle)" [level=3] [ref=e147]
+            - generic [ref=e148]: O(V + E)
+          - paragraph [ref=e149]: "When: connected components, cycle detection, topological sort, flood fill"
+        - generic [ref=e150]:
+          - code [ref=e152]: "// Recursive DFS with 3-color cycle detection const color = new Array(n).fill(0); // 0=unvisited, 1=visiting, 2=done function dfs(u) { color[u] = 1; for (const v of graph[u]) { if (color[v] === 1) return false; // cycle! if (color[v] === 0 && !dfs(v)) return false; } color[u] = 2; return true; }"
+          - button "expand ▼" [ref=e154]
+        - list [ref=e156]:
+          - listitem [ref=e157]:
+            - generic [ref=e158]: ▸
+            - text: "DFS for: components, cycles, topo sort, bridges, SCCs"
+          - listitem [ref=e159]:
+            - generic [ref=e160]: ▸
+            - text: Postorder = reverse topological order
+          - listitem [ref=e161]:
+            - generic [ref=e162]: ▸
+            - text: Kahn's BFS topo = process indegree-0 first
+        - link "Full article + problems →" [ref=e164] [cursor=pointer]:
+          - /url: /learn/graph
+      - article [ref=e165]:
+        - generic [ref=e166]:
+          - generic [ref=e167]:
+            - generic [ref=e168]:
+              - generic [ref=e169]: 🌳
+              - heading "Tree DP (Postorder)" [level=3] [ref=e170]
+            - generic [ref=e171]: O(n)
+          - paragraph [ref=e172]: "When: tree path, subtree value, diameter, max sum through node"
+        - generic [ref=e173]:
+          - code [ref=e175]: "let globalAns = -Infinity; function dfs(node) { if (!node) return 0; const left = Math.max(0, dfs(node.left)); const right = Math.max(0, dfs(node.right)); // update answer: path THROUGH this node (uses both branches) globalAns = Math.max(globalAns, left + node.val + right); // return to parent: single branch only return node.val + Math.max(left, right); }"
+          - button "expand ▼" [ref=e177]
+        - list [ref=e179]:
+          - listitem [ref=e180]:
+            - generic [ref=e181]: ▸
+            - text: Return value = single branch going UP
+          - listitem [ref=e182]:
+            - generic [ref=e183]: ▸
+            - text: Global update = path bending at this node (both children)
+          - listitem [ref=e184]:
+            - generic [ref=e185]: ▸
+            - text: Clamp to 0 for max-sum; keep negatives for diameter/length
+        - link "Full article + problems →" [ref=e187] [cursor=pointer]:
+          - /url: /learn/trees
+      - article [ref=e188]:
+        - generic [ref=e189]:
+          - generic [ref=e190]:
+            - generic [ref=e191]:
+              - generic [ref=e192]: 🔄
+              - heading "Backtracking" [level=3] [ref=e193]
+            - generic [ref=e194]: O(2ⁿ) or O(n!)
+          - paragraph [ref=e195]: "When: all combinations, permutations, subsets, valid arrangements"
+        - generic [ref=e196]:
+          - code [ref=e198]: "function backtrack(start, current) { if (/* is valid complete solution */) { result.push([...current]); return; } for (let i = start; i < candidates.length; i++) { if (/* pruning: skip invalid */) continue; current.push(candidates[i]); // choose backtrack(i + 1, current); // explore (i+1 for combos, i for repeats) current.pop(); // unchoose } }"
+          - button "expand ▼" [ref=e200]
+        - list [ref=e202]:
+          - listitem [ref=e203]:
+            - generic [ref=e204]: ▸
+            - text: Sort candidates first for pruning (skip duplicates, early exit)
+          - listitem [ref=e205]:
+            - generic [ref=e206]: ▸
+            - text: "Combinations: pass i+1; Permutations: pass visited set"
+          - listitem [ref=e207]:
+            - generic [ref=e208]: ▸
+            - text: Pruning is the key to beating brute force
+        - link "Full article + problems →" [ref=e210] [cursor=pointer]:
+          - /url: /learn/backtracking
+      - article [ref=e211]:
+        - generic [ref=e212]:
+          - generic [ref=e213]:
+            - generic [ref=e214]:
+              - generic [ref=e215]: 🤑
+              - heading "Greedy" [level=3] [ref=e216]
+            - generic [ref=e217]: O(n log n)
+          - paragraph [ref=e218]: "When: interval scheduling, activity selection, always take best now"
+        - generic [ref=e219]:
+          - code [ref=e221]: "// Activity selection: max non-overlapping intervals intervals.sort((a, b) => a[1] - b[1]); // sort by END let count = 0, lastEnd = -Infinity; for (const [start, end] of intervals) { if (start >= lastEnd) { count++; // take this interval lastEnd = end; } }"
+          - button "expand ▼" [ref=e223]
+        - list [ref=e225]:
+          - listitem [ref=e226]:
+            - generic [ref=e227]: ▸
+            - text: "Interval problems: sort by END for max selection, START for merging"
+          - listitem [ref=e228]:
+            - generic [ref=e229]: ▸
+            - text: "Prove greedy: exchange argument or induction"
+          - listitem [ref=e230]:
+            - generic [ref=e231]: ▸
+            - text: "Heap-greedy: repeatedly take the locally best available choice"
+        - link "Full article + problems →" [ref=e233] [cursor=pointer]:
+          - /url: /learn/greedy
+      - article [ref=e234]:
+        - generic [ref=e235]:
+          - generic [ref=e236]:
+            - generic [ref=e237]:
+              - generic [ref=e238]: 📦
+              - heading "Heap / Priority Queue" [level=3] [ref=e239]
+            - generic [ref=e240]: O(n log k)
+          - paragraph [ref=e241]: "When: k-th largest/smallest, streaming top-k, merge k sorted"
+        - generic [ref=e242]:
+          - code [ref=e244]: "// Top-k smallest: max-heap of size k const heap = new MaxHeap(); for (const num of nums) { heap.push(num); if (heap.size() > k) heap.pop(); // remove largest } return heap.top(); // kth smallest // k-way merge: min-heap with source index const pq = new MinHeap(); // [val, listIdx, elemIdx] for (let i = 0; i < lists.length; i++) if (lists[i]) pq.push([lists[i].val, i, lists[i]]);"
+          - button "expand ▼" [ref=e246]
+        - list [ref=e248]:
+          - listitem [ref=e249]:
+            - generic [ref=e250]: ▸
+            - text: "Top-k smallest: max-heap of size k (pop when > k)"
+          - listitem [ref=e251]:
+            - generic [ref=e252]: ▸
+            - text: "Top-k largest: min-heap of size k (pop when > k)"
+          - listitem [ref=e253]:
+            - generic [ref=e254]: ▸
+            - text: Dijkstra uses min-heap on (distance, node)
+        - link "Full article + problems →" [ref=e256] [cursor=pointer]:
+          - /url: /learn/heap
+      - article [ref=e257]:
+        - generic [ref=e258]:
+          - generic [ref=e259]:
+            - generic [ref=e260]:
+              - generic [ref=e261]: 📚
+              - heading "Monotonic Stack" [level=3] [ref=e262]
+            - generic [ref=e263]: O(n)
+          - paragraph [ref=e264]: "When: next greater element, span, rectangle, trapped water"
+        - generic [ref=e265]:
+          - code [ref=e267]: "const stack = []; // indices, in decreasing value order const result = new Array(n).fill(-1); for (let i = 0; i < n; i++) { // pop elements that are smaller (for next greater) while (stack.length && nums[stack.at(-1)] < nums[i]) { result[stack.pop()] = i; // current i is \"next greater\" } stack.push(i); }"
+          - button "expand ▼" [ref=e269]
+        - list [ref=e271]:
+          - listitem [ref=e272]:
+            - generic [ref=e273]: ▸
+            - text: Decreasing stack → finds next GREATER element
+          - listitem [ref=e274]:
+            - generic [ref=e275]: ▸
+            - text: Increasing stack → finds next SMALLER element
+          - listitem [ref=e276]:
+            - generic [ref=e277]: ▸
+            - text: "For previous element: process stack before push"
+        - link "Full article + problems →" [ref=e279] [cursor=pointer]:
+          - /url: /learn/monotonic-stack
+      - article [ref=e280]:
+        - generic [ref=e281]:
+          - generic [ref=e282]:
+            - generic [ref=e283]:
+              - generic [ref=e284]: ⚡
+              - heading "Bit Manipulation" [level=3] [ref=e285]
+            - generic [ref=e286]: O(1) or O(2ⁿ)
+          - paragraph [ref=e287]: "When: XOR, subset enumeration, power of 2, single number"
+        - generic [ref=e288]:
+          - code [ref=e290]: "// Common bit tricks: x & (x-1) // clear lowest set bit (check power of 2: x & (x-1) === 0) x & (-x) // isolate lowest set bit x ^ x === 0 // XOR of same number = 0 a ^ b ^ a === b // XOR is its own inverse // Enumerate all subsets of mask for (let sub = mask; sub > 0; sub = (sub-1) & mask) { // process sub }"
+          - button "expand ▼" [ref=e292]
+        - list [ref=e294]:
+          - listitem [ref=e295]:
+            - generic [ref=e296]: ▸
+            - text: "XOR: a^a=0, a^0=a → find single number, missing number"
+          - listitem [ref=e297]:
+            - generic [ref=e298]: ▸
+            - text: "Subset DP: iterate submasks in O(3ⁿ) total"
+          - listitem [ref=e299]:
+            - generic [ref=e300]: ▸
+            - text: Bit 30 is safe upper bound for 1e9 problems
+        - link "Full article + problems →" [ref=e302] [cursor=pointer]:
+          - /url: /learn/bit-manipulation
+      - article [ref=e303]:
+        - generic [ref=e304]:
+          - generic [ref=e305]:
+            - generic [ref=e306]:
+              - generic [ref=e307]: 🌿
+              - heading "Trie (Prefix Tree)" [level=3] [ref=e308]
+            - generic [ref=e309]: O(L) per op
+          - paragraph [ref=e310]: "When: prefix search, autocomplete, word matching, XOR maximize"
+        - generic [ref=e311]:
+          - code [ref=e313]: "class TrieNode { constructor() { this.children = {}; this.isEnd = false; } } class Trie { constructor() { this.root = new TrieNode(); } insert(word) { let node = this.root; for (const c of word) { if (!node.children[c]) node.children[c] = new TrieNode(); node = node.children[c]; } node.isEnd = true; } search(word) { /* walk and check isEnd */ } startsWith(prefix) { /* walk, return any node found */ } }"
+          - button "expand ▼" [ref=e315]
+        - list [ref=e317]:
+          - listitem [ref=e318]:
+            - generic [ref=e319]: ▸
+            - text: Array[26] children faster than Map for lowercase letters
+          - listitem [ref=e320]:
+            - generic [ref=e321]: ▸
+            - text: "XOR trie: insert binary digits (bit 29 to 0) for max XOR queries"
+          - listitem [ref=e322]:
+            - generic [ref=e323]: ▸
+            - text: "Compressed trie (Patricia) for space: merge single-child chains"
+        - link "Full article + problems →" [ref=e325] [cursor=pointer]:
+          - /url: /learn/trie
+  - contentinfo [ref=e326]:
+    - generic [ref=e327]:
+      - paragraph [ref=e328]: © 2026 Your name here. All rights reserved.
+      - paragraph [ref=e329]: Built with TanStack Start
+    - generic [ref=e330]:
+      - link "Follow TanStack on X" [ref=e331] [cursor=pointer]:
+        - /url: https://x.com/tan_stack
+        - generic [ref=e332]: Follow TanStack on X
+        - img [ref=e333]
+      - link "Go to TanStack GitHub" [ref=e335] [cursor=pointer]:
+        - /url: https://github.com/TanStack
+        - generic [ref=e336]: Go to TanStack GitHub
+        - img [ref=e337]

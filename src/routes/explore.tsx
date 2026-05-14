@@ -1,5 +1,17 @@
 import { createFileRoute, useNavigate, useSearch } from '@tanstack/react-router'
 import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
+
+function useIsMobile(breakpoint = 640) {
+  const [isMobile, setIsMobile] = useState(false)
+  useEffect(() => {
+    const mq = window.matchMedia(`(max-width: ${breakpoint - 1}px)`)
+    setIsMobile(mq.matches)
+    const h = (e: MediaQueryListEvent) => setIsMobile(e.matches)
+    mq.addEventListener('change', h)
+    return () => mq.removeEventListener('change', h)
+  }, [breakpoint])
+  return isMobile
+}
 import { topics } from '#/data/topics'
 import { z } from 'zod'
 
@@ -213,7 +225,8 @@ function ExplorePage() {
 
   const clearAll = () => patch({ q: '', topics: '', platform: 'all', diff: 'tier', tiers: '', rmin: 800, rmax: 3500, sort: 'name', dir: 'asc' })
 
-  const COLS = '2.5rem 1fr 8rem 8rem 6rem 10rem'
+  const isMobile = useIsMobile()
+  const COLS = isMobile ? '2rem 1fr 5rem' : '2.5rem 1fr 8rem 8rem 6rem 10rem'
 
   return (
     <main className="page-wrap px-4 pb-16 pt-8 sm:pt-12">
@@ -371,13 +384,21 @@ function ExplorePage() {
         <div className="sticky top-0 z-10 grid border-b border-[var(--line)] bg-[var(--surface-strong)] text-[11px] font-bold uppercase tracking-wider text-[var(--sea-ink-soft)] backdrop-blur"
           style={{ gridTemplateColumns: COLS }}>
           <div className="px-3 py-3">#</div>
-          {(['name', 'topic', 'platform', 'difficulty'] as const).map(col => (
-            <button key={col} onClick={() => toggleSort(col)}
-              className="px-3 py-3 text-left capitalize transition-colors hover:text-[var(--sea-ink)]">
-              {col}{sortIcon(col)}
+          <button onClick={() => toggleSort('name')} className="px-3 py-3 text-left capitalize transition-colors hover:text-[var(--sea-ink)]">
+            Problem{sortIcon('name')}
+          </button>
+          {!isMobile && <>
+            <button onClick={() => toggleSort('topic')} className="px-3 py-3 text-left capitalize transition-colors hover:text-[var(--sea-ink)]">
+              Topic{sortIcon('topic')}
             </button>
-          ))}
-          <div className="px-3 py-3">Concept</div>
+            <button onClick={() => toggleSort('platform')} className="px-3 py-3 text-left capitalize transition-colors hover:text-[var(--sea-ink)]">
+              Platform{sortIcon('platform')}
+            </button>
+          </>}
+          <button onClick={() => toggleSort('difficulty')} className="px-3 py-3 text-left capitalize transition-colors hover:text-[var(--sea-ink)]">
+            Diff{sortIcon('difficulty')}
+          </button>
+          {!isMobile && <div className="px-3 py-3">Concept</div>}
         </div>
 
         {/* Virtual rows */}
@@ -415,18 +436,18 @@ function ExplorePage() {
                         : <span className="block truncate font-medium text-[var(--sea-ink)]">{p.name}</span>
                       }
                     </div>
-                    <div className="px-3">
+                    {!isMobile && <div className="px-3">
                       <span className="block truncate rounded-md bg-[var(--chip-bg)] px-2 py-0.5 text-[10px] font-medium text-[var(--sea-ink-soft)]">
                         {p.topic}
                       </span>
-                    </div>
-                    <div className="px-3">
+                    </div>}
+                    {!isMobile && <div className="px-3">
                       <span className="block truncate rounded-md bg-[var(--chip-bg)] px-2 py-0.5 text-[10px] font-medium text-[var(--sea-ink-soft)]">
                         {p.platform}
                       </span>
-                    </div>
+                    </div>}
                     <div className="px-3"><DiffBadge d={p.difficulty} /></div>
-                    <div className="truncate px-3 text-[11px] text-[var(--sea-ink-soft)]">{p.keyConcept}</div>
+                    {!isMobile && <div className="truncate px-3 text-[11px] text-[var(--sea-ink-soft)]">{p.keyConcept}</div>}
                   </div>
                 )
               })}

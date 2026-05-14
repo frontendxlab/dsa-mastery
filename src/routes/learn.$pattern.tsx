@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from '@tanstack/react-router'
-import { useState } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { articles, getArticle } from '#/data/articles'
 import type { Section, Intuition } from '#/data/articles'
 
@@ -455,6 +455,9 @@ function ArticlePage() {
             {article.sections.map((section, i) => renderSection(section, i))}
           </div>
 
+          {/* All problems for this topic, grouped by concept */}
+          <AllTopicProblems topicSlug={article.topicSlug} topicName={article.title} />
+
           {/* Footer nav */}
           <div className="mt-12 flex gap-4 flex-wrap border-t-2 border-[var(--nb-border-color)] pt-8">
             {(() => {
@@ -482,5 +485,152 @@ function ArticlePage() {
         </div>
       </div>
     </main>
+  )
+}
+
+// ─── All Topic Problems ─────────────────────────────────────────────────────
+interface RawProblem {
+  platform: string
+  name: string
+  url: string
+  difficulty: string
+  keyConcept: string
+}
+
+function AllTopicProblems({ topicSlug, topicName }: { topicSlug: string; topicName: string }) {
+  const [problems, setProblems] = useState<RawProblem[]>([])
+  const [loading, setLoading] = useState(true)
+  const [search, setSearch] = useState('')
+  const [openGroups, setOpenGroups] = useState<Set<string>>(new Set())
+
+  useEffect(() => {
+    fetch(`/data/${topicSlug}.json`)
+      .then(r => r.ok ? r.json() : null)
+      .then(d => { if (d?.problems) setProblems(d.problems) })
+      .catch(() => {})
+      .finally(() => setLoading(false))
+  }, [topicSlug])
+
+  const filtered = useMemo(() => {
+    if (!search.trim()) return problems
+    const q = search.toLowerCase()
+    return problems.filter(p =>
+      p.name.toLowerCase().includes(q) ||
+      p.keyConcept.toLowerCase().includes(q) ||
+      p.platform.toLowerCase().includes(q),
+    )
+  }, [problems, search])
+
+  // Group by keyConcept
+  const groups = useMemo(() => {
+    const map = new Map<string, RawProblem[]>()
+    for (const p of filtered) {
+      const key = p.keyConcept || 'General'
+      if (!map.has(key)) map.set(key, [])
+      map.get(key)!.push(p)
+    }
+    return [...map.entries()].sort((a, b) => b[1].length - a[1].length)
+  }, [filtered])
+
+  const toggleGroup = (key: string) => {
+    setOpenGroups(prev => {
+      const next = new Set(prev)
+      if (next.has(key)) next.delete(key)
+      else next.add(key)
+      return next
+    })
+  }
+
+  const diffColor = (d: string) => {
+    const l = d.toLowerCase()
+    if (l === 'easy' || l === '1') return 'text-green-600 dark:text-green-400'
+    if (l === 'medium' || l === '2') return 'text-amber-600 dark:text-amber-400'
+    if (l === 'hard' || l === '3') return 'text-red-600 dark:text-red-400'
+    const n = parseInt(d)
+    if (!isNaN(n) && n < 1500) return 'text-green-600 dark:text-green-400'
+    if (!isNaN(n) && n < 2200) return 'text-amber-600 dark:text-amber-400'
+    if (!isNaN(n)) return 'text-red-600 dark:text-red-400'
+    return 'text-[var(--sea-ink-soft)]'
+  }
+
+  if (!loading && problems.length === 0) return null
+
+  return (
+    <div className="mt-16 border-t-2 border-[var(--nb-border-color)] pt-10">
+      <div className="mb-6 flex flex-wrap items-end gap-4">
+        <div>
+          <h2 className="nb-heading">All {topicName} Problems</h2>
+          <p className="mt-1 text-sm text-[var(--sea-ink-soft)]">
+            {loading ? 'Loading…' : `${problems.length.toLocaleString()} problems · ${groups.length} concept groups`}
+          </p>
+        </div>
+        {!loading && (
+          <div className="relative ml-auto w-full sm:w-72">
+            <input
+              value={search}
+              onChange={e => setSearch(e.target.value)}
+              placeholder="Search problems…"
+              className="w-full rounded-xl border border-[var(--chip-line)] bg-[var(--chip-bg)] px-4 py-2 pl-9 text-sm text-[var(--sea-ink)] outline-none focus:border-[var(--lagoon)]"
+            />
+            <svg className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[var(--sea-ink-soft)]" width="13" height="13" viewBox="0 0 16 16" fill="none">
+              <circle cx="7" cy="7" r="5.5" stroke="currentColor" strokeWidth="1.5"/>
+              <path d="M11 11L14.5 14.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+            </svg>
+          </div>
+        )}
+      </div>
+
+      {loading ? (
+        <div className="flex items-center gap-2 py-8 text-sm text-[var(--sea-ink-soft)]">
+          <span className="h-4 w-4 animate-spin rounded-full border-2 border-[var(--lagoon)] border-t-transparent" />
+          Loading problems…
+        </div>
+      ) : groups.length === 0 ? (
+        <p className="py-8 text-center text-sm text-[var(--sea-ink-soft)]">No problems match "{search}"</p>
+      ) : (
+        <div className="space-y-2">
+          {groups.map(([concept, probs]) => {
+            const isOpen = openGroups.has(concept)
+            return (
+              <div key={concept} className="overflow-hidden rounded-xl border border-[var(--nb-border-color)]">
+                {/* Group header */}
+                <button
+                  onClick={() => toggleGroup(concept)}
+                  className="flex w-full items-center gap-3 bg-[var(--nb-surface)] px-4 py-3 text-left transition-colors hover:bg-[var(--nb-surface-strong)]"
+                >
+                  <span className="text-xs font-bold text-[var(--sea-ink-soft)]">{isOpen ? '▼' : '▶'}</span>
+                  <span className="flex-1 font-semibold text-[var(--nb-ink)]">{concept}</span>
+                  <span className="rounded-full bg-[var(--chip-bg)] px-2 py-0.5 text-[10px] font-bold text-[var(--sea-ink-soft)] border border-[var(--chip-line)]">
+                    {probs.length}
+                  </span>
+                </button>
+
+                {/* Problems list */}
+                {isOpen && (
+                  <div className="divide-y divide-[var(--line)] border-t border-[var(--nb-border-color)] bg-[var(--chip-bg)]">
+                    {probs.map((p, i) => (
+                      <div key={i} className="flex items-center gap-3 px-4 py-2.5">
+                        <span className="w-5 shrink-0 text-center text-[10px] tabular-nums text-[var(--sea-ink-soft)]">{i + 1}</span>
+                        <div className="min-w-0 flex-1">
+                          {p.url
+                            ? <a href={p.url} target="_blank" rel="noopener noreferrer"
+                                className="block truncate text-sm font-medium text-[var(--sea-ink)] no-underline hover:text-[var(--lagoon-deep)]">
+                                {p.name}
+                              </a>
+                            : <span className="block truncate text-sm font-medium text-[var(--sea-ink)]">{p.name}</span>
+                          }
+                        </div>
+                        <span className="shrink-0 text-[10px] font-bold text-[var(--sea-ink-soft)]">{p.platform}</span>
+                        <span className={`shrink-0 text-[10px] font-bold ${diffColor(p.difficulty)}`}>{p.difficulty || '—'}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )
+          })}
+        </div>
+      )}
+    </div>
   )
 }

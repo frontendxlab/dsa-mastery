@@ -1,0 +1,387 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - heading "DSA Inventory" [level=2] [ref=e4]:
+        - link "DSA Inventory" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - text: DSA Inventory
+      - generic [ref=e7]:
+        - link "Topics" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - link "Learn" [ref=e9] [cursor=pointer]:
+          - /url: /learn
+        - link "Explore" [ref=e10] [cursor=pointer]:
+          - /url: /explore
+        - link "GitHub" [ref=e11] [cursor=pointer]:
+          - /url: https://github.com/rashidtvmr/dsa-inventory
+      - generic [ref=e12]:
+        - button "Choose colour theme" [ref=e14] [cursor=pointer]: 🎨
+        - 'button "Theme mode: auto (system). Click to switch to light mode." [ref=e15]': Auto
+  - main [ref=e16]:
+    - generic [ref=e17]:
+      - paragraph [ref=e18]: DSA Course — Complete Textbook
+      - heading "Mastering DSA Through Patterns" [level=1] [ref=e19]:
+        - text: Mastering DSA
+        - text: Through Patterns
+      - paragraph [ref=e20]:
+        - text: 8 parts · 29 chapters · 38k+ practice problems.
+        - text: "Each chapter: brute force first, then the insight, then the optimal. That's how you actually learn."
+      - generic [ref=e21]:
+        - link "⚡ Quick Patterns Cheat Sheet" [ref=e22] [cursor=pointer]:
+          - /url: /learn/patterns
+        - link "Browse 38k+ Problems →" [ref=e23] [cursor=pointer]:
+          - /url: /explore
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - heading "Part I — Arrays & Pointers" [level=2] [ref=e28]
+          - generic [ref=e29]: 3 chapters
+        - generic [ref=e30]:
+          - link "1 👆👆 Two Pointers Prune half the search space at every step. 14 min read Start →" [ref=e31] [cursor=pointer]:
+            - /url: /learn/two-pointers
+            - generic [ref=e32]: "1"
+            - generic [ref=e33]:
+              - generic [ref=e34]:
+                - generic [ref=e35]: 👆👆
+                - heading "Two Pointers" [level=3] [ref=e36]
+              - paragraph [ref=e37]: Prune half the search space at every step.
+              - generic [ref=e38]:
+                - generic [ref=e39]: 14 min read
+                - generic [ref=e40]: Start →
+          - link "2 🪟 Sliding Window Turn O(n²) subarray loops into O(n) with a moving window. 18 min read Start →" [ref=e41] [cursor=pointer]:
+            - /url: /learn/sliding-window
+            - generic [ref=e42]: "2"
+            - generic [ref=e43]:
+              - generic [ref=e44]:
+                - generic [ref=e45]: 🪟
+                - heading "Sliding Window" [level=3] [ref=e46]
+              - paragraph [ref=e47]: Turn O(n²) subarray loops into O(n) with a moving window.
+              - generic [ref=e48]:
+                - generic [ref=e49]: 18 min read
+                - generic [ref=e50]: Start →
+          - link "3 🔍 Binary Search Eliminate half the search space every step. 16 min read Start →" [ref=e51] [cursor=pointer]:
+            - /url: /learn/binary-search
+            - generic [ref=e52]: "3"
+            - generic [ref=e53]:
+              - generic [ref=e54]:
+                - generic [ref=e55]: 🔍
+                - heading "Binary Search" [level=3] [ref=e56]
+              - paragraph [ref=e57]: Eliminate half the search space every step.
+              - generic [ref=e58]:
+                - generic [ref=e59]: 16 min read
+                - generic [ref=e60]: Start →
+      - generic [ref=e61]:
+        - generic [ref=e62]:
+          - heading "Part II — Linked Structures" [level=2] [ref=e64]
+          - generic [ref=e65]: 2 chapters
+        - generic [ref=e66]:
+          - link "4 🔗 Linked List Dummy node. Slow/fast pointers. Reverse in-place. 18 min read Start →" [ref=e67] [cursor=pointer]:
+            - /url: /learn/linked-list
+            - generic [ref=e68]: "4"
+            - generic [ref=e69]:
+              - generic [ref=e70]:
+                - generic [ref=e71]: 🔗
+                - heading "Linked List" [level=3] [ref=e72]
+              - paragraph [ref=e73]: Dummy node. Slow/fast pointers. Reverse in-place.
+              - generic [ref=e74]:
+                - generic [ref=e75]: 18 min read
+                - generic [ref=e76]: Start →
+          - link "6 🌲 Advanced Tree Structures Segment tree for range queries. Fenwick for prefix sums. O(log n) both. 20 min read Start →" [ref=e77] [cursor=pointer]:
+            - /url: /learn/advanced-trees
+            - generic [ref=e78]: "6"
+            - generic [ref=e79]:
+              - generic [ref=e80]:
+                - generic [ref=e81]: 🌲
+                - heading "Advanced Tree Structures" [level=3] [ref=e82]
+              - paragraph [ref=e83]: Segment tree for range queries. Fenwick for prefix sums. O(log n) both.
+              - generic [ref=e84]:
+                - generic [ref=e85]: 20 min read
+                - generic [ref=e86]: Start →
+      - generic [ref=e87]:
+        - generic [ref=e88]:
+          - heading "Part III — Hashing & Auxiliary Structures" [level=2] [ref=e90]
+          - generic [ref=e91]: 3 chapters
+        - generic [ref=e92]:
+          - link "7 📦 Heap & Priority Queue O(log n) access to the min or max. Always. 14 min read Start →" [ref=e93] [cursor=pointer]:
+            - /url: /learn/heap
+            - generic [ref=e94]: "7"
+            - generic [ref=e95]:
+              - generic [ref=e96]:
+                - generic [ref=e97]: 📦
+                - heading "Heap & Priority Queue" [level=3] [ref=e98]
+              - paragraph [ref=e99]: O(log n) access to the min or max. Always.
+              - generic [ref=e100]:
+                - generic [ref=e101]: 14 min read
+                - generic [ref=e102]: Start →
+          - link "8 🌿 Trie (Prefix Tree) Fast prefix lookup. One character per level. 12 min read Start →" [ref=e103] [cursor=pointer]:
+            - /url: /learn/trie
+            - generic [ref=e104]: "8"
+            - generic [ref=e105]:
+              - generic [ref=e106]:
+                - generic [ref=e107]: 🌿
+                - heading "Trie (Prefix Tree)" [level=3] [ref=e108]
+              - paragraph [ref=e109]: Fast prefix lookup. One character per level.
+              - generic [ref=e110]:
+                - generic [ref=e111]: 12 min read
+                - generic [ref=e112]: Start →
+          - link "9 📚 Monotonic Stack & Queue Next greater element in O(n). Sliding window max in O(n). 15 min read Start →" [ref=e113] [cursor=pointer]:
+            - /url: /learn/monotonic-stack
+            - generic [ref=e114]: "9"
+            - generic [ref=e115]:
+              - generic [ref=e116]:
+                - generic [ref=e117]: 📚
+                - heading "Monotonic Stack & Queue" [level=3] [ref=e118]
+              - paragraph [ref=e119]: Next greater element in O(n). Sliding window max in O(n).
+              - generic [ref=e120]:
+                - generic [ref=e121]: 15 min read
+                - generic [ref=e122]: Start →
+      - generic [ref=e123]:
+        - generic [ref=e124]:
+          - heading "Part IV — Core Algorithms" [level=2] [ref=e126]
+          - generic [ref=e127]: 3 chapters
+        - generic [ref=e128]:
+          - link "10 🧠 Dynamic Programming Overlapping subproblems + optimal substructure = DP. 24 min read Start →" [ref=e129] [cursor=pointer]:
+            - /url: /learn/dynamic-programming
+            - generic [ref=e130]: "10"
+            - generic [ref=e131]:
+              - generic [ref=e132]:
+                - generic [ref=e133]: 🧠
+                - heading "Dynamic Programming" [level=3] [ref=e134]
+              - paragraph [ref=e135]: Overlapping subproblems + optimal substructure = DP.
+              - generic [ref=e136]:
+                - generic [ref=e137]: 24 min read
+                - generic [ref=e138]: Start →
+          - link "11 🔄 Backtracking Try every option. Undo. Move on. 16 min read Start →" [ref=e139] [cursor=pointer]:
+            - /url: /learn/backtracking
+            - generic [ref=e140]: "11"
+            - generic [ref=e141]:
+              - generic [ref=e142]:
+                - generic [ref=e143]: 🔄
+                - heading "Backtracking" [level=3] [ref=e144]
+              - paragraph [ref=e145]: Try every option. Undo. Move on.
+              - generic [ref=e146]:
+                - generic [ref=e147]: 16 min read
+                - generic [ref=e148]: Start →
+          - link "12 🤑 Greedy Algorithms Make the locally optimal choice. Hope it's globally optimal. 14 min read Start →" [ref=e149] [cursor=pointer]:
+            - /url: /learn/greedy
+            - generic [ref=e150]: "12"
+            - generic [ref=e151]:
+              - generic [ref=e152]:
+                - generic [ref=e153]: 🤑
+                - heading "Greedy Algorithms" [level=3] [ref=e154]
+              - paragraph [ref=e155]: Make the locally optimal choice. Hope it's globally optimal.
+              - generic [ref=e156]:
+                - generic [ref=e157]: 14 min read
+                - generic [ref=e158]: Start →
+      - generic [ref=e159]:
+        - generic [ref=e160]:
+          - heading "Part V — Strings, Sequences & Grid" [level=2] [ref=e162]
+          - generic [ref=e163]: 3 chapters
+        - generic [ref=e164]:
+          - link "14 📝 String Algorithms KMP, Z-algo, rolling hash — pattern matching in O(n). 20 min read Start →" [ref=e165] [cursor=pointer]:
+            - /url: /learn/string-algorithms
+            - generic [ref=e166]: "14"
+            - generic [ref=e167]:
+              - generic [ref=e168]:
+                - generic [ref=e169]: 📝
+                - heading "String Algorithms" [level=3] [ref=e170]
+              - paragraph [ref=e171]: KMP, Z-algo, rolling hash — pattern matching in O(n).
+              - generic [ref=e172]:
+                - generic [ref=e173]: 20 min read
+                - generic [ref=e174]: Start →
+          - link "15 📈 Sequences — LIS, LCS & More LIS in O(n log n). LCS from DP. Every sequence has a structure. 18 min read Start →" [ref=e175] [cursor=pointer]:
+            - /url: /learn/sequences
+            - generic [ref=e176]: "15"
+            - generic [ref=e177]:
+              - generic [ref=e178]:
+                - generic [ref=e179]: 📈
+                - heading "Sequences — LIS, LCS & More" [level=3] [ref=e180]
+              - paragraph [ref=e181]: LIS in O(n log n). LCS from DP. Every sequence has a structure.
+              - generic [ref=e182]:
+                - generic [ref=e183]: 18 min read
+                - generic [ref=e184]: Start →
+          - link "16 🔲 Matrix & Shape Problems Spiral traversal, rotation, 2D prefix sums — grids have patterns. 16 min read Start →" [ref=e185] [cursor=pointer]:
+            - /url: /learn/matrix
+            - generic [ref=e186]: "16"
+            - generic [ref=e187]:
+              - generic [ref=e188]:
+                - generic [ref=e189]: 🔲
+                - heading "Matrix & Shape Problems" [level=3] [ref=e190]
+              - paragraph [ref=e191]: Spiral traversal, rotation, 2D prefix sums — grids have patterns.
+              - generic [ref=e192]:
+                - generic [ref=e193]: 16 min read
+                - generic [ref=e194]: Start →
+      - generic [ref=e195]:
+        - generic [ref=e196]:
+          - heading "Part VI — Math & Discrete" [level=2] [ref=e198]
+          - generic [ref=e199]: 5 chapters
+        - generic [ref=e200]:
+          - link "17 🔢 Math & Number Theory GCD, primes, modular arithmetic — the engine behind CP. 20 min read Start →" [ref=e201] [cursor=pointer]:
+            - /url: /learn/math
+            - generic [ref=e202]: "17"
+            - generic [ref=e203]:
+              - generic [ref=e204]:
+                - generic [ref=e205]: 🔢
+                - heading "Math & Number Theory" [level=3] [ref=e206]
+              - paragraph [ref=e207]: GCD, primes, modular arithmetic — the engine behind CP.
+              - generic [ref=e208]:
+                - generic [ref=e209]: 20 min read
+                - generic [ref=e210]: Start →
+          - link "18 ⚡ Bit Manipulation XOR is your best friend. Masks are your toolkit. 15 min read Start →" [ref=e211] [cursor=pointer]:
+            - /url: /learn/bit-manipulation
+            - generic [ref=e212]: "18"
+            - generic [ref=e213]:
+              - generic [ref=e214]:
+                - generic [ref=e215]: ⚡
+                - heading "Bit Manipulation" [level=3] [ref=e216]
+              - paragraph [ref=e217]: XOR is your best friend. Masks are your toolkit.
+              - generic [ref=e218]:
+                - generic [ref=e219]: 15 min read
+                - generic [ref=e220]: Start →
+          - link "19 🎲 Combinatorics & Counting nCr, inclusion-exclusion, Catalan numbers — count without listing. 16 min read Start →" [ref=e221] [cursor=pointer]:
+            - /url: /learn/combinatorics
+            - generic [ref=e222]: "19"
+            - generic [ref=e223]:
+              - generic [ref=e224]:
+                - generic [ref=e225]: 🎲
+                - heading "Combinatorics & Counting" [level=3] [ref=e226]
+              - paragraph [ref=e227]: nCr, inclusion-exclusion, Catalan numbers — count without listing.
+              - generic [ref=e228]:
+                - generic [ref=e229]: 16 min read
+                - generic [ref=e230]: Start →
+          - link "20 ♟️ Game Theory — Nim & Sprague-Grundy XOR determines the winner. Grundy values generalize everything. 14 min read Start →" [ref=e231] [cursor=pointer]:
+            - /url: /learn/game-theory
+            - generic [ref=e232]: "20"
+            - generic [ref=e233]:
+              - generic [ref=e234]:
+                - generic [ref=e235]: ♟️
+                - heading "Game Theory — Nim & Sprague-Grundy" [level=3] [ref=e236]
+              - paragraph [ref=e237]: XOR determines the winner. Grundy values generalize everything.
+              - generic [ref=e238]:
+                - generic [ref=e239]: 14 min read
+                - generic [ref=e240]: Start →
+          - link "21 📐 Computational Geometry Cross products determine orientation. Convex hull wraps everything. 16 min read Start →" [ref=e241] [cursor=pointer]:
+            - /url: /learn/geometry
+            - generic [ref=e242]: "21"
+            - generic [ref=e243]:
+              - generic [ref=e244]:
+                - generic [ref=e245]: 📐
+                - heading "Computational Geometry" [level=3] [ref=e246]
+              - paragraph [ref=e247]: Cross products determine orientation. Convex hull wraps everything.
+              - generic [ref=e248]:
+                - generic [ref=e249]: 16 min read
+                - generic [ref=e250]: Start →
+      - generic [ref=e251]:
+        - generic [ref=e252]:
+          - heading "Part VII — Advanced Topics" [level=2] [ref=e254]
+          - generic [ref=e255]: 5 chapters
+        - generic [ref=e256]:
+          - link "22 🔢 Linear Algebra & Matrix Exponentiation Speed up any linear recurrence from O(n) to O(log n) with matrix power. 18 min read Start →" [ref=e257] [cursor=pointer]:
+            - /url: /learn/linear-algebra
+            - generic [ref=e258]: "22"
+            - generic [ref=e259]:
+              - generic [ref=e260]:
+                - generic [ref=e261]: 🔢
+                - heading "Linear Algebra & Matrix Exponentiation" [level=3] [ref=e262]
+              - paragraph [ref=e263]: Speed up any linear recurrence from O(n) to O(log n) with matrix power.
+              - generic [ref=e264]:
+                - generic [ref=e265]: 18 min read
+                - generic [ref=e266]: Start →
+          - link "23 📈 Numerical Methods & Optimization Binary search on reals. Ternary search on unimodal functions. Simulated annealing for hard optimizations. 14 min read Start →" [ref=e267] [cursor=pointer]:
+            - /url: /learn/numerical-methods
+            - generic [ref=e268]: "23"
+            - generic [ref=e269]:
+              - generic [ref=e270]:
+                - generic [ref=e271]: 📈
+                - heading "Numerical Methods & Optimization" [level=3] [ref=e272]
+              - paragraph [ref=e273]: Binary search on reals. Ternary search on unimodal functions. Simulated annealing for hard optimizations.
+              - generic [ref=e274]:
+                - generic [ref=e275]: 14 min read
+                - generic [ref=e276]: Start →
+          - link "24 📅 Scheduling & Interval Problems Sort by deadline. Greedy + heap beats brute force every time. 15 min read Start →" [ref=e277] [cursor=pointer]:
+            - /url: /learn/scheduling
+            - generic [ref=e278]: "24"
+            - generic [ref=e279]:
+              - generic [ref=e280]:
+                - generic [ref=e281]: 📅
+                - heading "Scheduling & Interval Problems" [level=3] [ref=e282]
+              - paragraph [ref=e283]: Sort by deadline. Greedy + heap beats brute force every time.
+              - generic [ref=e284]:
+                - generic [ref=e285]: 15 min read
+                - generic [ref=e286]: Start →
+          - link "25 🔷 Shapes & 2D Geometry Triangles, rectangles, circles — every shape reduces to distance + area math. 14 min read Start →" [ref=e287] [cursor=pointer]:
+            - /url: /learn/shapes
+            - generic [ref=e288]: "25"
+            - generic [ref=e289]:
+              - generic [ref=e290]:
+                - generic [ref=e291]: 🔷
+                - heading "Shapes & 2D Geometry" [level=3] [ref=e292]
+              - paragraph [ref=e293]: Triangles, rectangles, circles — every shape reduces to distance + area math.
+              - generic [ref=e294]:
+                - generic [ref=e295]: 14 min read
+                - generic [ref=e296]: Start →
+          - link "26 🧩 Miscellaneous Algorithms BFS on state space, majority vote, puzzle inversions — the patterns that don't fit elsewhere. 12 min read Start →" [ref=e297] [cursor=pointer]:
+            - /url: /learn/miscellaneous
+            - generic [ref=e298]: "26"
+            - generic [ref=e299]:
+              - generic [ref=e300]:
+                - generic [ref=e301]: 🧩
+                - heading "Miscellaneous Algorithms" [level=3] [ref=e302]
+              - paragraph [ref=e303]: BFS on state space, majority vote, puzzle inversions — the patterns that don't fit elsewhere.
+              - generic [ref=e304]:
+                - generic [ref=e305]: 12 min read
+                - generic [ref=e306]: Start →
+      - generic [ref=e307]:
+        - generic [ref=e308]:
+          - heading "Part VIII — Cross-Topic Deep Dives" [level=2] [ref=e310]
+          - generic [ref=e311]: 3 chapters
+        - generic [ref=e312]:
+          - link "27 🔀 BFS vs DFS — When to Use Each Shortest path → BFS. Connected components → DFS. Know which in 10 seconds. 20 min read Start →" [ref=e313] [cursor=pointer]:
+            - /url: /learn/bfs-vs-dfs
+            - generic [ref=e314]: "27"
+            - generic [ref=e315]:
+              - generic [ref=e316]:
+                - generic [ref=e317]: 🔀
+                - heading "BFS vs DFS — When to Use Each" [level=3] [ref=e318]
+              - paragraph [ref=e319]: Shortest path → BFS. Connected components → DFS. Know which in 10 seconds.
+              - generic [ref=e320]:
+                - generic [ref=e321]: 20 min read
+                - generic [ref=e322]: Start →
+          - link "28 📏 Interval Problems — The Complete Guide Sort by start. Merge overlaps. Sweep with a heap. All interval problems reduce to three patterns. 22 min read Start →" [ref=e323] [cursor=pointer]:
+            - /url: /learn/interval-problems
+            - generic [ref=e324]: "28"
+            - generic [ref=e325]:
+              - generic [ref=e326]:
+                - generic [ref=e327]: 📏
+                - heading "Interval Problems — The Complete Guide" [level=3] [ref=e328]
+              - paragraph [ref=e329]: Sort by start. Merge overlaps. Sweep with a heap. All interval problems reduce to three patterns.
+              - generic [ref=e330]:
+                - generic [ref=e331]: 22 min read
+                - generic [ref=e332]: Start →
+          - link "29 🌳 DP on Trees Postorder + return value = tree DP. Same template solves diameter, max path, subtree counts. 18 min read Start →" [ref=e333] [cursor=pointer]:
+            - /url: /learn/dp-on-trees
+            - generic [ref=e334]: "29"
+            - generic [ref=e335]:
+              - generic [ref=e336]:
+                - generic [ref=e337]: 🌳
+                - heading "DP on Trees" [level=3] [ref=e338]
+              - paragraph [ref=e339]: Postorder + return value = tree DP. Same template solves diameter, max path, subtree counts.
+              - generic [ref=e340]:
+                - generic [ref=e341]: 18 min read
+                - generic [ref=e342]: Start →
+    - generic [ref=e343]:
+      - paragraph [ref=e344]: More chapters coming
+      - paragraph [ref=e345]: Segment Trees, Network Flow, Number Theory deep dives — next up.
+  - contentinfo [ref=e346]:
+    - generic [ref=e347]:
+      - paragraph [ref=e348]: © 2026 Your name here. All rights reserved.
+      - paragraph [ref=e349]: Built with TanStack Start
+    - generic [ref=e350]:
+      - link "Follow TanStack on X" [ref=e351] [cursor=pointer]:
+        - /url: https://x.com/tan_stack
+        - generic [ref=e352]: Follow TanStack on X
+        - img [ref=e353]
+      - link "Go to TanStack GitHub" [ref=e355] [cursor=pointer]:
+        - /url: https://github.com/TanStack
+        - generic [ref=e356]: Go to TanStack GitHub
+        - img [ref=e357]

@@ -1,0 +1,79 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - heading "DSA Inventory" [level=2] [ref=e4]:
+        - link "DSA Inventory" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - text: DSA Inventory
+      - generic [ref=e7]:
+        - link "Topics" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - link "Learn" [ref=e9] [cursor=pointer]:
+          - /url: /learn
+        - link "Explore" [ref=e10] [cursor=pointer]:
+          - /url: /explore
+        - link "GitHub" [ref=e11] [cursor=pointer]:
+          - /url: https://github.com/rashidtvmr/dsa-inventory
+      - generic [ref=e12]:
+        - button "Choose colour theme" [ref=e14] [cursor=pointer]: 🎨
+        - 'button "Theme mode: auto (system). Click to switch to light mode." [ref=e15]': Auto
+  - main [ref=e16]:
+    - generic [ref=e17]:
+      - paragraph [ref=e18]: Problem Explorer
+      - heading "0 problems loaded…" [level=1] [ref=e19]
+      - generic [ref=e20]:
+        - generic [ref=e21]: 14 topics
+        - generic [ref=e22]: … platforms
+        - generic [ref=e23]: Loading 0/14
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - textbox "Search by name, concept, topic, platform…" [ref=e28]
+        - img
+      - generic [ref=e29]:
+        - combobox [ref=e30]:
+          - option "All platforms" [selected]
+        - generic [ref=e31]:
+          - button "Tier filter" [ref=e32]
+          - button "Rating range" [ref=e33]
+        - generic [ref=e34]:
+          - button "easy" [ref=e35]
+          - button "medium" [ref=e36]
+          - button "hard" [ref=e37]
+      - generic [ref=e38]:
+        - button "Math" [ref=e39]
+        - button "Dynamic Programming" [ref=e40]
+        - button "Binary Search" [ref=e41]
+        - button "String" [ref=e42]
+        - button "Bit Manipulation" [ref=e43]
+        - button "Tree" [ref=e44]
+        - button "Graph" [ref=e45]
+        - button "Linked List" [ref=e46]
+        - button "Advanced Tree" [ref=e47]
+        - button "Sliding Window" [ref=e48]
+        - button "Heap / Priority Queue" [ref=e49]
+        - button "Shape / Matrix" [ref=e50]
+        - button "Backtracking" [ref=e51]
+        - button "Trie" [ref=e52]
+      - paragraph [ref=e53]: 0 of 0 problems
+    - generic [ref=e54]:
+      - generic [ref=e55]:
+        - generic [ref=e56]: "#"
+        - button "name ↑" [ref=e57]
+        - button "topic ↕" [ref=e58]
+        - button "platform ↕" [ref=e59]
+        - button "difficulty ↕" [ref=e60]
+        - generic [ref=e61]: Concept
+      - paragraph [ref=e65]: Loading problems…
+  - contentinfo [ref=e66]:
+    - generic [ref=e67]:
+      - paragraph [ref=e68]: © 2026 Your name here. All rights reserved.
+      - paragraph [ref=e69]: Built with TanStack Start
+    - generic [ref=e70]:
+      - link "Follow TanStack on X" [ref=e71] [cursor=pointer]:
+        - /url: https://x.com/tan_stack
+        - generic [ref=e72]: Follow TanStack on X
+        - img [ref=e73]
+      - link "Go to TanStack GitHub" [ref=e75] [cursor=pointer]:
+        - /url: https://github.com/TanStack
+        - generic [ref=e76]: Go to TanStack GitHub
+        - img [ref=e77]
