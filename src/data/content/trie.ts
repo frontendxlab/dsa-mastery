@@ -173,5 +173,92 @@ class Trie {
         },
       ],
     },
+    {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 4,
+      title: 'Design Add and Search Words Data Structure',
+      url: 'https://leetcode.com/problems/design-add-and-search-words-data-structure/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Trie with DFS for wildcard "."',
+          explanation: 'Standard trie for addWord. For search: DFS through trie. When char is ".", try ALL children recursively. When char is a letter, follow that edge only.',
+          code: `class WordDictionary {
+    constructor() { this.root = {}; }
+    addWord(word) {
+        let node = this.root;
+        for (const c of word) {
+            if (!node[c]) node[c] = {};
+            node = node[c];
+        }
+        node['#'] = true; // end marker
+    }
+    search(word) {
+        return this._dfs(word, 0, this.root);
+    }
+    _dfs(word, i, node) {
+        if (!node) return false;
+        if (i === word.length) return !!node['#'];
+        const c = word[i];
+        if (c === '.') {
+            // try all children
+            for (const key of Object.keys(node))
+                if (key !== '#' && this._dfs(word, i+1, node[key])) return true;
+            return false;
+        }
+        return this._dfs(word, i+1, node[c]);
+    }
+}`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 5,
+      title: 'Word Search II',
+      url: 'https://leetcode.com/problems/word-search-ii/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: Build trie of all words, DFS on grid with trie pruning',
+          explanation: 'BF would DFS from every cell for every word — O(M·N·4^L·W). Better: build trie of all words first, then DFS from every cell tracking where we are in the trie. If no trie child exists for this char, prune that branch immediately.',
+          code: `var findWords = function(board, words) {
+    // Build trie
+    const root = {};
+    for (const w of words) {
+        let node = root;
+        for (const c of w) { if (!node[c]) node[c] = {}; node = node[c]; }
+        node['$'] = w; // store word at leaf
+    }
+    const res = [], m = board.length, n = board[0].length;
+    const dfs = (i, j, node) => {
+        if (i<0||i>=m||j<0||j>=n) return;
+        const c = board[i][j];
+        if (!c || !node[c]) return;
+        const next = node[c];
+        if (next['$']) { res.push(next['$']); delete next['$']; } // found a word
+        board[i][j] = 0; // mark visited
+        dfs(i+1,j,next); dfs(i-1,j,next); dfs(i,j+1,next); dfs(i,j-1,next);
+        board[i][j] = c; // restore
+    };
+    for (let i=0;i<m;i++) for (let j=0;j<n;j++) dfs(i,j,root);
+    return res;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'callout',
+      icon: '🧠',
+      color: 'teal',
+      content: `**Trie vs HashMap decision:**\n- Need prefix search / autocomplete → Trie wins (HashMap can't query prefixes)\n- Need exact word lookup only → HashMap is simpler and faster\n- Need maximum XOR of two numbers → Binary Trie (insert bits)\n- Wildcard/regex matching on words → Trie with DFS on wildcards\n- Multiple word search in grid → Build Trie, DFS on grid with pruning`,
+    },
   ],
 }

@@ -40,11 +40,11 @@ style: <UI/CSS changes>
 > (documentation, ownership, history, decisions). **Always verify against
 > actual source files before making changes** — the index may be stale.
 
-Last indexed: 2026-05-14 (commit 5314f32). Confidence: 100%.
+Last indexed: 2026-05-14 (commit 6c9755b). Confidence: 100%.
 ### Key Modules
 | Module | Purpose | Owner |
 |--------|---------|-------|
-| `src` | The src module serves as the primary educational hub for the application, housin | — |
+| `src` | The src module serves as the primary routing and UI layer for the application's  | — |
 | `scripts` | The scripts module serves as the automation and utility layer for the dsa-invent | — |
 | `root` | The root module serves as the primary configuration layer for the project's buil | — |
 | `greedy` | The greedy module provides a centralized utility for managing and consolidating  | — |
@@ -58,7 +58,7 @@ Last indexed: 2026-05-14 (commit 5314f32). Confidence: 100%.
 | File | Churn | 90d Commits | Owner |
 |------|-------|-------------|-------|
 | `math/all_math_problems.csv` | 100.0th %ile | 3 | rashidtvmr |
-| `src/routes/explore.tsx` | 99.7th %ile | 2 | rashidtvmr |
+| `src/routes/explore.tsx` | 99.7th %ile | 3 | rashidtvmr |
 | `greedy/all_greedy_problems.csv` | 99.5th %ile | 2 | rashidtvmr |
 | `src/styles.css` | 99.2th %ile | 2 | rashidtvmr |
 | `backtrack/all_backtracking_problems.csv` | 98.9th %ile | 2 | rashidtvmr |

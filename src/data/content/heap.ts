@@ -160,5 +160,79 @@ var findKthLargest = function(nums, k) {
         },
       ],
     },
+    {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 5,
+      title: 'K Closest Points to Origin',
+      url: 'https://leetcode.com/problems/k-closest-points-to-origin/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Sort by squared distance — O(n log n)',
+          explanation: 'Compute x²+y² (no sqrt needed — monotone). Sort ascending. Return first k. Simple but processes all n points.',
+          code: `var kClosest = function(points, k) {
+    return points.sort((a,b)=>(a[0]*a[0]+a[1]*a[1])-(b[0]*b[0]+b[1]*b[1])).slice(0,k);
+};`,
+          lang: 'javascript',
+        },
+        {
+          label: 'Intuition 2: Max-heap of size k — O(n log k), better for streaming',
+          explanation: 'Maintain max-heap of size k (keyed by distance). For each point, add it; if size > k, pop the farthest. Heap always holds the k closest seen so far.',
+          code: `var kClosest = function(points, k) {
+    const heap = new MinPriorityQueue({ priority: x => -(x[0]*x[0]+x[1]*x[1]) });
+    for (const p of points) {
+        heap.enqueue(p);
+        if (heap.size() > k) heap.dequeue();
+    }
+    return heap.toArray().map(x => x.element);
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 6,
+      title: 'Merge K Sorted Lists',
+      url: 'https://leetcode.com/problems/merge-k-sorted-lists/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: O(kN) brute force — merge lists one by one',
+          explanation: 'Merge lists[0] and lists[1], then merge result with lists[2], etc. Each merge is O(N) total, done k-1 times = O(kN).',
+        },
+        {
+          label: 'Intuition 2: O(N log k) min-heap — always pop the globally smallest',
+          explanation: 'Push the head of each list into a min-heap. Pop the minimum, advance that list\'s pointer and push the next node. Each of N nodes gets pushed/popped once = O(N log k).',
+          code: `var mergeKLists = function(lists) {
+    const dummy = new ListNode(0);
+    let curr = dummy;
+    // Min-heap: [value, listIndex, node]
+    const heap = new MinPriorityQueue({ priority: x => x[0] });
+    for (let i = 0; i < lists.length; i++)
+        if (lists[i]) heap.enqueue([lists[i].val, i, lists[i]]);
+    while (!heap.isEmpty()) {
+        const [, i, node] = heap.dequeue().element;
+        curr.next = node;
+        curr = curr.next;
+        if (node.next) heap.enqueue([node.next.val, i, node.next]);
+    }
+    return dummy.next;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'callout',
+      icon: '🧠',
+      color: 'teal',
+      content: `**Heap pattern selector:**\n- "k-th largest/smallest overall" → min-heap of size k\n- "k-th largest in stream" → maintain min-heap of size k, top = answer\n- "merge k sorted lists/arrays" → min-heap of size k (one per list)\n- "find median from stream" → two heaps (max-heap lower half + min-heap upper half)\n- "Dijkstra / Prim's / scheduling" → min-heap with (cost, node)`,
+    },
   ],
 }

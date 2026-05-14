@@ -142,5 +142,94 @@ export const greedyArticle: Article = {
         },
       ],
     },
+    {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 4,
+      title: 'Gas Station',
+      url: 'https://leetcode.com/problems/gas-station/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: O(n²) brute force — try each starting station',
+          explanation: 'For each station as start, simulate the full circuit. Track cumulative gas. If tank goes negative, this start fails. O(n²).',
+        },
+        {
+          label: 'Intuition 2: O(n) greedy — one pass with two observations',
+          explanation: 'Observation 1: if total gas >= total cost, a solution ALWAYS exists. Observation 2: if tank goes negative at station i, any start from the current start to i cannot work (they would hit the same deficit). So reset start to i+1 and continue.',
+          code: `var canCompleteCircuit = function(gas, cost) {
+    let totalTank = 0, currTank = 0, start = 0;
+    for (let i = 0; i < gas.length; i++) {
+        const diff = gas[i] - cost[i];
+        totalTank += diff;
+        currTank  += diff;
+        if (currTank < 0) {
+            start = i + 1;  // can't start before i+1 — all would fail here
+            currTank = 0;
+        }
+    }
+    return totalTank >= 0 ? start : -1;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 5,
+      title: 'Jump Game',
+      url: 'https://leetcode.com/problems/jump-game/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: O(n) greedy — track farthest reachable index',
+          explanation: 'Track the maximum index reachable so far. At each position i, if i > maxReach, we can never reach here — return false. Otherwise extend maxReach.',
+          code: `var canJump = function(nums) {
+    let maxReach = 0;
+    for (let i = 0; i < nums.length; i++) {
+        if (i > maxReach) return false;      // can't reach this position
+        maxReach = Math.max(maxReach, i + nums[i]);
+    }
+    return true;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 6,
+      title: 'Candy',
+      url: 'https://leetcode.com/problems/candy/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: Two-pass greedy — left→right then right→left',
+          explanation: 'Pass 1 (left→right): give each child 1 candy. If ratings[i] > ratings[i-1], child i gets one more than child i-1. Pass 2 (right→left): if ratings[i] > ratings[i+1], child i must have more than child i+1 — take the max of current and right+1. Sum everything.',
+          code: `var candy = function(ratings) {
+    const n = ratings.length;
+    const candies = new Array(n).fill(1);
+    // Pass 1: left to right
+    for (let i = 1; i < n; i++)
+        if (ratings[i] > ratings[i-1]) candies[i] = candies[i-1] + 1;
+    // Pass 2: right to left
+    for (let i = n-2; i >= 0; i--)
+        if (ratings[i] > ratings[i+1]) candies[i] = Math.max(candies[i], candies[i+1]+1);
+    return candies.reduce((a,b) => a+b, 0);
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'callout',
+      icon: '🧠',
+      color: 'green',
+      content: `**Proving greedy correctness — exchange argument:**\nAssume optimal solution picks X. Show you can swap X for the greedy choice without making things worse. If every swap preserves or improves the solution, greedy is optimal.\n\n**Greedy fails when:** future consequences of a local choice can't be captured locally. Use DP instead.`,
+    },
   ],
 }
