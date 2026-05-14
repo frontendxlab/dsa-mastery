@@ -386,5 +386,110 @@ const hasCycle = (src) => {
     return scc;
 }`,
     },
+    {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 7,
+      title: 'Network Delay Time',
+      url: 'https://leetcode.com/problems/network-delay-time/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Dijkstra from source node',
+          explanation: 'Single-source shortest path. Use a min-heap. Start from k. Answer = max distance among all reachable nodes. If any node unreachable, return -1.',
+          code: `var networkDelayTime = function(times, n, k) {
+    const graph = Array.from({length:n+1},()=>[]);
+    for(const [u,v,w] of times) graph[u].push([v,w]);
+    const dist = new Array(n+1).fill(Infinity); dist[k]=0;
+    const heap = [[0,k]]; // [dist, node]
+    while(heap.length){
+        heap.sort((a,b)=>a[0]-b[0]); // use real min-heap in practice
+        const [d,u]=heap.shift();
+        if(d>dist[u]) continue;
+        for(const [v,w] of graph[u]){
+            if(dist[u]+w<dist[v]){ dist[v]=dist[u]+w; heap.push([dist[v],v]); }
+        }
+    }
+    const ans=Math.max(...dist.slice(1));
+    return ans===Infinity?-1:ans;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 8,
+      title: 'Number of Islands',
+      url: 'https://leetcode.com/problems/number-of-islands/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: DFS flood-fill — mark visited as water',
+          explanation: 'For each unvisited land cell, start a DFS that floods all connected land cells to water (mark visited). Each DFS start = one island.',
+          code: `var numIslands = function(grid) {
+    let count = 0;
+    const dfs = (r,c) => {
+        if(r<0||r>=grid.length||c<0||c>=grid[0].length||grid[r][c]!=='1') return;
+        grid[r][c]='0'; // mark visited
+        dfs(r+1,c); dfs(r-1,c); dfs(r,c+1); dfs(r,c-1);
+    };
+    for(let r=0;r<grid.length;r++)
+        for(let c=0;c<grid[0].length;c++)
+            if(grid[r][c]==='1'){ dfs(r,c); count++; }
+    return count;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 9,
+      title: 'Word Ladder',
+      url: 'https://leetcode.com/problems/word-ladder/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: BFS — each word is a node, edges between words differing by 1 char',
+          explanation: 'BFS from beginWord to endWord. Each level = one transformation. Generate all 1-char mutations of each word; if mutation is in wordSet, it is the next node. Return levels + 1.',
+          code: `var ladderLength = function(beginWord, endWord, wordList) {
+    const wordSet = new Set(wordList);
+    if(!wordSet.has(endWord)) return 0;
+    let q=[beginWord], steps=1;
+    const visited=new Set([beginWord]);
+    while(q.length){
+        const next=[];
+        for(const word of q){
+            const arr=word.split('');
+            for(let i=0;i<arr.length;i++){
+                const orig=arr[i];
+                for(let c=97;c<=122;c++){
+                    arr[i]=String.fromCharCode(c);
+                    const nw=arr.join('');
+                    if(nw===endWord) return steps+1;
+                    if(wordSet.has(nw)&&!visited.has(nw)){visited.add(nw);next.push(nw);}
+                    arr[i]=orig;
+                }
+            }
+        }
+        q=next; steps++;
+    }
+    return 0;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'callout',
+      icon: '🧠',
+      color: 'teal',
+      content: `**Graph algorithm selector:**\n- Unweighted shortest path → BFS\n- Weighted shortest path (positive weights) → Dijkstra\n- Negative weights → Bellman-Ford\n- All-pairs shortest path → Floyd-Warshall\n- Minimum spanning tree → Kruskal (sort edges) or Prim\n- Cycle detection / topo sort → DFS with color states or Kahn's BFS\n- Strongly connected components → Kosaraju (2 DFS) or Tarjan`,
+    },
   ],
 }

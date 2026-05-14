@@ -267,10 +267,174 @@ const helper = (i, j) => {
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'DP on Strings (Edit Distance Family)',
+    },
+    {
+      type: 'callout',
+      icon: '🔑',
+      color: 'blue',
+      content: `**Template — 2D DP on two strings s and t:**\n\`\`\`\ndp[i][j] = answer for s[0..i-1] and t[0..j-1]\n\`\`\`\n- If s[i-1] === t[j-1]: dp[i][j] = dp[i-1][j-1] + (something)\n- Else: dp[i][j] = min/max of dp[i-1][j], dp[i][j-1], dp[i-1][j-1] + (cost)\n\nEdit distance, LCS, shortest common supersequence, wildcard matching all use this skeleton.`,
+    },
+    {
+      type: 'problem',
+      num: 5,
+      title: 'Edit Distance',
+      url: 'https://leetcode.com/problems/edit-distance/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: 2D DP — dp[i][j] = min edits to convert word1[0..i-1] to word2[0..j-1]',
+          explanation: 'If characters match, dp[i][j] = dp[i-1][j-1]. Otherwise, take min of: delete (dp[i-1][j]+1), insert (dp[i][j-1]+1), replace (dp[i-1][j-1]+1). Base: dp[i][0]=i, dp[0][j]=j.',
+          code: `var minDistance = function(word1, word2) {
+    const m = word1.length, n = word2.length;
+    const dp = Array.from({length: m+1}, (_, i) => Array.from({length: n+1}, (_, j) => i||j ? i+j : 0));
+    for (let i = 1; i <= m; i++)
+        for (let j = 1; j <= n; j++)
+            dp[i][j] = word1[i-1] === word2[j-1]
+                ? dp[i-1][j-1]
+                : 1 + Math.min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]);
+    return dp[m][n];
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 6,
+      title: 'Longest Common Subsequence',
+      url: 'https://leetcode.com/problems/longest-common-subsequence/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: 2D DP — same skeleton as edit distance',
+          explanation: 'dp[i][j] = LCS of text1[0..i-1] and text2[0..j-1]. If chars match: dp[i][j] = dp[i-1][j-1]+1. Else: max(dp[i-1][j], dp[i][j-1]).',
+          code: `var longestCommonSubsequence = function(text1, text2) {
+    const m=text1.length, n=text2.length;
+    const dp=Array.from({length:m+1},()=>new Array(n+1).fill(0));
+    for(let i=1;i<=m;i++)
+        for(let j=1;j<=n;j++)
+            dp[i][j]=text1[i-1]===text2[j-1]
+                ? dp[i-1][j-1]+1
+                : Math.max(dp[i-1][j],dp[i][j-1]);
+    return dp[m][n];
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'heading',
+      level: 2,
+      text: 'DP on Intervals',
+    },
+    {
+      type: 'callout',
+      icon: '💡',
+      color: 'amber',
+      content: `**Interval DP template:** dp[i][j] = answer for subproblem on range [i, j].\n\nFill by increasing length: for len in 2..n → for i in 0..n-len → j = i+len-1 → try all split points k.\n\nUsed for: burst balloons, matrix chain multiplication, palindrome partitioning, optimal BST.`,
+    },
+    {
+      type: 'problem',
+      num: 7,
+      title: 'Burst Balloons',
+      url: 'https://leetcode.com/problems/burst-balloons/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: Interval DP — think "last balloon to burst"',
+          explanation: 'Instead of "first to burst", think "last balloon k burst in range [i,j]". When k is last, left and right boundaries are still intact: dp[i][j] = max over k of dp[i][k] + nums[i]*nums[k]*nums[j] + dp[k][j]. Add sentinel 1s on both ends.',
+          code: `var maxCoins = function(nums) {
+    nums = [1, ...nums, 1];
+    const n = nums.length;
+    const dp = Array.from({length:n}, ()=>new Array(n).fill(0));
+    for (let len = 2; len < n; len++)
+        for (let i = 0; i < n - len; i++) {
+            const j = i + len;
+            for (let k = i+1; k < j; k++)
+                dp[i][j] = Math.max(dp[i][j],
+                    nums[i]*nums[k]*nums[j] + dp[i][k] + dp[k][j]);
+        }
+    return dp[0][n-1];
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 8,
+      title: 'Coin Change',
+      url: 'https://leetcode.com/problems/coin-change/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: 1D DP — unbounded knapsack',
+          explanation: 'dp[i] = min coins to make amount i. For each coin c and each amount i >= c: dp[i] = min(dp[i], dp[i-c]+1). Base: dp[0]=0, rest=Infinity.',
+          code: `var coinChange = function(coins, amount) {
+    const dp = new Array(amount+1).fill(Infinity);
+    dp[0] = 0;
+    for (const c of coins)
+        for (let i = c; i <= amount; i++)
+            dp[i] = Math.min(dp[i], dp[i-c]+1);
+    return dp[amount]===Infinity ? -1 : dp[amount];
+};`,
+          lang: 'javascript',
+        },
+        {
+          label: 'Intuition 2: BFS (unweighted shortest path)',
+          explanation: 'Treat each amount as a node. Each coin is an edge of weight 1. BFS from 0 to amount finds the minimum number of coins (= min edges).',
+          code: `var coinChange = function(coins, amount) {
+    if(amount===0) return 0;
+    const visited=new Set([0]);
+    let q=[0], steps=0;
+    while(q.length){
+        steps++;
+        const next=[];
+        for(const cur of q)
+            for(const c of coins){
+                const v=cur+c;
+                if(v===amount) return steps;
+                if(v<amount && !visited.has(v)){visited.add(v);next.push(v);}
+            }
+        q=next;
+    }
+    return -1;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 9,
+      title: 'Word Break',
+      url: 'https://leetcode.com/problems/word-break/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: DP — dp[i] = can segment s[0..i-1]',
+          explanation: 'dp[i] = true if s[0..i-1] can be segmented. For each i, try all j < i: if dp[j] and s[j..i-1] is in wordDict, dp[i] = true.',
+          code: `var wordBreak = function(s, wordDict) {
+    const words = new Set(wordDict);
+    const dp = new Array(s.length+1).fill(false);
+    dp[0] = true;
+    for (let i=1;i<=s.length;i++)
+        for (let j=0;j<i;j++)
+            if(dp[j] && words.has(s.slice(j,i))){ dp[i]=true; break; }
+    return dp[s.length];
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '💡',
       color: 'green',
-      content: `**Recognizing DP problem titles**: Problems using words like *shortest, longest, minimum, maximum, count, ways, best* — especially when combined with constraints like "at most k" or "contiguous" — are almost always DP candidates. The optimal substructure is usually obvious once you ask: "if I knew the answer for all smaller subproblems, could I solve this one?"`,
+      content: `**DP pattern families:**\n- **1D linear:** Fibonacci, climbing stairs, house robber, coin change\n- **2D grid:** unique paths, minimum path sum, dungeon game\n- **2D string:** edit distance, LCS, wildcard matching, regex\n- **Interval:** burst balloons, matrix chain, palindrome partition\n- **Knapsack:** 0/1 knapsack, subset sum, partition equal subset\n- **Bitmask DP:** traveling salesman, min cost to visit all nodes\n\nRecognizing DP: words like *shortest, longest, minimum, maximum, count, ways, best* — especially with a constraint like "at most k" or "contiguous".`,
     },
   ],
 }

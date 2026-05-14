@@ -321,10 +321,72 @@ return atMost(k) - atMost(k - 1);`,
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 7,
+      title: 'Minimum Window Substring',
+      url: 'https://leetcode.com/problems/minimum-window-substring/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: Sliding window with character frequency tracking',
+          explanation: 'Expand right to include all required chars, then shrink left while window still valid. Track "formed" count = how many distinct chars are at required frequency. Update answer when formed === required.',
+          code: `var minWindow = function(s, t) {
+    const need={}, have={};
+    for(const c of t) need[c]=(need[c]||0)+1;
+    let formed=0, required=Object.keys(need).length;
+    let lo=0, ans=[Infinity,0,0];
+    for(let hi=0;hi<s.length;hi++){
+        const c=s[hi]; have[c]=(have[c]||0)+1;
+        if(need[c] && have[c]===need[c]) formed++;
+        while(formed===required){
+            if(hi-lo+1<ans[0]) ans=[hi-lo+1,lo,hi];
+            have[s[lo]]--;
+            if(need[s[lo]] && have[s[lo]]<need[s[lo]]) formed--;
+            lo++;
+        }
+    }
+    return ans[0]===Infinity?'':s.slice(ans[1],ans[2]+1);
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 8,
+      title: 'Sliding Window Maximum',
+      url: 'https://leetcode.com/problems/sliding-window-maximum/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: Monotonic deque — O(n)',
+          explanation: 'Maintain a deque of indices in decreasing order of value. Front = current window maximum. Before adding new element, pop from back all elements smaller than it (they can never be future maximums).',
+          code: `var maxSlidingWindow = function(nums, k) {
+    const dq=[], res=[];
+    for(let i=0;i<nums.length;i++){
+        // remove elements outside window
+        while(dq.length && dq[0]<i-k+1) dq.shift();
+        // maintain decreasing order: remove smaller elements from back
+        while(dq.length && nums[dq.at(-1)]<nums[i]) dq.pop();
+        dq.push(i);
+        if(i>=k-1) res.push(nums[dq[0]]);
+    }
+    return res;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '📌',
       color: 'gray',
-      content: `**Practice this topic**: The sliding window CSV has 590 curated problems from LeetCode, Codeforces, AtCoder and more — filtered and deduplicated. Head to the problems page to drill any difficulty level.`,
+      content: `**Sliding window checklist:**\n1. Can I define a window [lo, hi] with a valid/invalid state?\n2. Is the state monotone — if [lo, hi] is invalid, is [lo, hi+1] also invalid? → shrink window\n3. For COUNT problems: use atMost(k) - atMost(k-1) trick\n4. Need max in window? → monotonic deque\n5. Need sum/count in window? → simple two-pointer with running total`,
     },
   ],
 }

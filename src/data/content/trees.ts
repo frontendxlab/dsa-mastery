@@ -297,5 +297,101 @@ while (node || stack.length > 0) {
       color: 'green',
       content: `**BST key property**: inorder traversal gives sorted ascending sequence. Use this for:\n- kth smallest element (inorder, stop at k)\n- Validate BST (check prev < curr in inorder)\n- Convert BST to greater tree (REVERSE inorder — right→root→left — accumulate suffix sum)`,
     },
+    {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 7,
+      title: 'Binary Tree Maximum Path Sum',
+      url: 'https://leetcode.com/problems/binary-tree-maximum-path-sum/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: Postorder DFS — each node returns best single-branch gain',
+          explanation: 'At each node, compute max gain from left and right subtrees (ignore negative gains → clamp to 0). Update global max with left + node.val + right. Return node.val + max(left, right) to parent (can only use one branch).',
+          code: `var maxPathSum = function(root) {
+    let ans = -Infinity;
+    const dfs = node => {
+        if(!node) return 0;
+        const left  = Math.max(0, dfs(node.left));
+        const right = Math.max(0, dfs(node.right));
+        ans = Math.max(ans, left + node.val + right); // path through node
+        return node.val + Math.max(left, right);       // single branch up
+    };
+    dfs(root);
+    return ans;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 8,
+      title: 'Lowest Common Ancestor of a Binary Tree',
+      url: 'https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Postorder — first node that sees both p and q in subtrees',
+          explanation: 'Recurse left and right. If both return non-null, current node is LCA. If only one returns non-null, propagate that up (the other target is in that subtree too).',
+          code: `var lowestCommonAncestor = function(root, p, q) {
+    if(!root || root===p || root===q) return root;
+    const left  = lowestCommonAncestor(root.left,  p, q);
+    const right = lowestCommonAncestor(root.right, p, q);
+    return left && right ? root : left || right;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 9,
+      title: 'Serialize and Deserialize Binary Tree',
+      url: 'https://leetcode.com/problems/serialize-and-deserialize-binary-tree/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: BFS level-order serialization',
+          explanation: 'Serialize: BFS, append "null" for missing nodes. Deserialize: BFS, consume tokens pair-wise to attach left and right children.',
+          code: `var serialize = function(root) {
+    if(!root) return '';
+    const res=[], q=[root];
+    while(q.length){
+        const n=q.shift();
+        if(!n){ res.push('null'); continue; }
+        res.push(n.val);
+        q.push(n.left, n.right);
+    }
+    return res.join(',');
+};
+var deserialize = function(data) {
+    if(!data) return null;
+    const vals=data.split(',');
+    const root=new TreeNode(+vals[0]);
+    const q=[root]; let i=1;
+    while(q.length){
+        const n=q.shift();
+        if(vals[i]!=='null'){ n.left=new TreeNode(+vals[i]); q.push(n.left); }
+        i++;
+        if(vals[i]!=='null'){ n.right=new TreeNode(+vals[i]); q.push(n.right); }
+        i++;
+    }
+    return root;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'callout',
+      icon: '🧠',
+      color: 'teal',
+      content: `**Tree traversal selector:**\n- Visit children before parent (compute subtree result) → **postorder**\n- Path problems (max path, diameter) → postorder, return best branch, update global max\n- Level-by-level (zigzag, right view, connect nodes) → **BFS level-order**\n- BST operations (kth smallest, validate, range) → **inorder** (gives sorted sequence)\n- LCA → postorder, return the node that finds both targets`,
+    },
   ],
 }

@@ -291,5 +291,97 @@ return left;`,
         },
       ],
     },
+    {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 6,
+      title: 'Search in Rotated Sorted Array',
+      url: 'https://leetcode.com/problems/search-in-rotated-sorted-array/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Determine which half is sorted at each step',
+          explanation: 'At any mid, one half is always sorted (no rotation within it). Check if target is in the sorted half — if yes, search there; otherwise search the other half.',
+          code: `var search = function(nums, target) {
+    let lo=0, hi=nums.length-1;
+    while(lo<=hi){
+        const mid=(lo+hi)>>1;
+        if(nums[mid]===target) return mid;
+        if(nums[lo]<=nums[mid]){ // left half sorted
+            if(nums[lo]<=target && target<nums[mid]) hi=mid-1;
+            else lo=mid+1;
+        } else {                  // right half sorted
+            if(nums[mid]<target && target<=nums[hi]) lo=mid+1;
+            else hi=mid-1;
+        }
+    }
+    return -1;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 7,
+      title: 'Find Peak Element',
+      url: 'https://leetcode.com/problems/find-peak-element/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Binary search toward the larger neighbor',
+          explanation: 'If nums[mid] < nums[mid+1], a peak must exist on the right (the right slope is ascending). Otherwise peak exists at mid or left. This eliminates half each step.',
+          code: `var findPeakElement = function(nums) {
+    let lo=0, hi=nums.length-1;
+    while(lo<hi){
+        const mid=(lo+hi)>>1;
+        if(nums[mid]<nums[mid+1]) lo=mid+1;
+        else hi=mid;
+    }
+    return lo;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 8,
+      title: 'Median of Two Sorted Arrays',
+      url: 'https://leetcode.com/problems/median-of-two-sorted-arrays/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: Binary search on partition in shorter array',
+          explanation: 'Binary search on i (how many elements to take from nums1). Partition nums2 so total left = (m+n+1)/2. Valid partition: maxLeft1 <= minRight2 && maxLeft2 <= minRight1.',
+          code: `var findMedianSortedArrays = function(nums1, nums2) {
+    if(nums1.length > nums2.length) return findMedianSortedArrays(nums2, nums1);
+    const [m,n]=[nums1.length,nums2.length];
+    let lo=0, hi=m;
+    while(lo<=hi){
+        const i=(lo+hi)>>1, j=((m+n+1)>>1)-i;
+        const mL1=i?nums1[i-1]:-Infinity, mL2=j?nums2[j-1]:-Infinity;
+        const mR1=i<m?nums1[i]:Infinity, mR2=j<n?nums2[j]:Infinity;
+        if(mL1<=mR2 && mL2<=mR1){
+            if((m+n)%2) return Math.max(mL1,mL2);
+            return (Math.max(mL1,mL2)+Math.min(mR1,mR2))/2;
+        } else if(mL1>mR2) hi=i-1;
+        else lo=i+1;
+    }
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'callout',
+      icon: '🧠',
+      color: 'teal',
+      content: `**Binary search decision tree:**\n- Sorted array, find target → standard lo/hi\n- Rotated sorted array → check which half is sorted\n- Find peak/min → compare mid with neighbor, go toward larger\n- "Minimize maximum" / "Maximize minimum" → binary search on answer\n- Two sorted arrays, find median → binary search on partition`,
+    },
   ],
 }

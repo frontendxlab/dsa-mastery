@@ -40,11 +40,11 @@ style: <UI/CSS changes>
 > (documentation, ownership, history, decisions). **Always verify against
 > actual source files before making changes** — the index may be stale.
 
-Last indexed: 2026-05-14 (commit 4ecf176). Confidence: 100%.
+Last indexed: 2026-05-14 (commit 8f3c2eb). Confidence: 100%.
 ### Key Modules
 | Module | Purpose | Owner |
 |--------|---------|-------|
-| `src` | The src module serves as the core codebase for an interactive educational platfo | — |
+| `src` | The src module serves as the core architectural foundation for the application,  | — |
 | `scripts` | The scripts module serves as the automation and utility layer for the dsa-invent | — |
 | `root` | The root module serves as the primary configuration layer for the project's buil | — |
 | `greedy` | The greedy module provides a centralized utility for managing and consolidating  | — |
@@ -58,10 +58,10 @@ Last indexed: 2026-05-14 (commit 4ecf176). Confidence: 100%.
 | File | Churn | 90d Commits | Owner |
 |------|-------|-------------|-------|
 | `math/all_math_problems.csv` | 100.0th %ile | 3 | rashidtvmr |
-| `greedy/all_greedy_problems.csv` | 99.7th %ile | 2 | rashidtvmr |
-| `src/styles.css` | 99.4th %ile | 2 | rashidtvmr |
-| `backtrack/all_backtracking_problems.csv` | 99.2th %ile | 2 | rashidtvmr |
-| `dp/all_dp_problems.csv` | 98.9th %ile | 2 | rashidtvmr |
+| `src/routes/explore.tsx` | 99.7th %ile | 2 | rashidtvmr |
+| `greedy/all_greedy_problems.csv` | 99.5th %ile | 2 | rashidtvmr |
+| `src/styles.css` | 99.2th %ile | 2 | rashidtvmr |
+| `backtrack/all_backtracking_problems.csv` | 98.9th %ile | 2 | rashidtvmr |
 
 ### Repowise MCP Tools
 
