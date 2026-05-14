@@ -1,0 +1,159 @@
+Platform,Category,Problem Name,URL,Difficulty,Key Concept
+LeetCode,Implementation,208. Implement Trie (Prefix Tree),https://leetcode.com/problems/implement-trie-prefix-tree/,Medium,Trie implementation / insert-search-startsWith
+LeetCode,Implementation,1804. Implement Trie II (Prefix Tree) (Premium),https://leetcode.com/problems/implement-trie-ii-prefix-tree/,Medium,Trie with count / erase
+LeetCode,Design,211. Design Add and Search Words Data Structure,https://leetcode.com/problems/design-add-and-search-words-data-structure/,Medium,Trie with wildcard search
+LeetCode,Design,676. Implement Magic Dictionary,https://leetcode.com/problems/implement-magic-dictionary/,Medium,Trie with one-edit search
+LeetCode,Design,677. Map Sum Pairs,https://leetcode.com/problems/map-sum-pairs/,Medium,Trie with prefix sum
+LeetCode,Design,1166. Design File System (Premium),https://leetcode.com/problems/design-file-system/,Medium,Trie for file paths
+LeetCode,Design,2080. Range Frequency Queries,https://leetcode.com/problems/range-frequency-queries/,Medium,Trie + binary search on indices
+LeetCode,Prefix,14. Longest Common Prefix,https://leetcode.com/problems/longest-common-prefix/,Easy,Trie / vertical scanning
+LeetCode,Prefix,720. Longest Word in Dictionary,https://leetcode.com/problems/longest-word-in-dictionary/,Medium,Trie / DFS longest word
+LeetCode,Prefix,3043. Find the Length of the Longest Common Prefix,https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/,Medium,Trie for number prefixes
+LeetCode,Prefix,2416. Sum of Prefix Scores of Strings,https://leetcode.com/problems/sum-of-prefix-scores-of-strings/,Hard,Trie with prefix frequency count
+LeetCode,Prefix,3093. Longest Common Suffix Queries,https://leetcode.com/problems/longest-common-suffix-queries/,Hard,Trie on reversed strings
+LeetCode,Prefix,2185. Counting Words With a Given Prefix,https://leetcode.com/problems/counting-words-with-a-given-prefix/,Easy,Trie prefix count
+LeetCode,Prefix,3045. Count Prefix and Suffix Pairs II,https://leetcode.com/problems/count-prefix-and-suffix-pairs-ii/,Hard,Trie for prefix-suffix matching
+LeetCode,Prefix,745. Prefix and Suffix Search,https://leetcode.com/problems/prefix-and-suffix-search/,Hard,Trie with combined prefix+suffix keys
+LeetCode,Suggestion,1268. Search Suggestions System,https://leetcode.com/problems/search-suggestions-system/,Medium,Trie / binary search prefix
+LeetCode,Suggestion,758. Bold Words in String (Premium),https://leetcode.com/problems/bold-words-in-string/,Medium,Trie for word matching in text
+LeetCode,Suggestion,1065. Index Pairs of a String (Premium),https://leetcode.com/problems/index-pairs-of-a-string/,Easy,Trie for substring index pairs
+LeetCode,Word Break,472. Concatenated Words,https://leetcode.com/problems/concatenated-words/,Hard,Trie + DFS / DP
+LeetCode,Word Break,2707. Extra Characters in a String,https://leetcode.com/problems/extra-characters-in-a-string/,Medium,Trie + DP min extra chars
+LeetCode,Word Break,139. Word Break,https://leetcode.com/problems/word-break/,Medium,Trie + DP / memoization
+LeetCode,Word Break,140. Word Break II,https://leetcode.com/problems/word-break-ii/,Hard,Trie + DFS all sentences
+LeetCode,Word Search,212. Word Search II,https://leetcode.com/problems/word-search-ii/,Hard,Trie + DFS backtracking on grid
+LeetCode,Word Search,1032. Stream of Characters,https://leetcode.com/problems/stream-of-characters/,Hard,Trie on reversed words / stream query
+LeetCode,Replace,648. Replace Words,https://leetcode.com/problems/replace-words/,Medium,Trie prefix replacement
+LeetCode,Replace,1233. Remove Sub-Folders from the Filesystem,https://leetcode.com/problems/remove-sub-folders-from-the-filesystem/,Medium,Trie for folder paths
+LeetCode,Replace,1948. Delete Duplicate Folders in System,https://leetcode.com/problems/delete-duplicate-folders-in-system/,Hard,Trie serialization + dedup
+LeetCode,XOR,421. Maximum XOR of Two Numbers in an Array,https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/,Medium,Binary Trie for max XOR
+LeetCode,XOR,1707. Maximum XOR With an Element From Array,https://leetcode.com/problems/maximum-xor-with-an-element-from-array/,Hard,Binary Trie + offline queries
+LeetCode,XOR,1938. Maximum Genetic Difference Query,https://leetcode.com/problems/maximum-genetic-difference-query/,Hard,Binary Trie + DFS + queries
+LeetCode,XOR,1310. XOR Queries of a Subarray,https://leetcode.com/problems/xor-queries-of-a-subarray/,Medium,Prefix XOR / Binary Trie
+LeetCode,XOR,1442. Count Triplets That Can Form Two Arrays of Equal XOR,https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/,Medium,Prefix XOR / Trie counting
+LeetCode,Palindrome,336. Palindrome Pairs,https://leetcode.com/problems/palindrome-pairs/,Hard,Trie + palindrome check
+LeetCode,Palindrome,2135. Count Words Obtained After Adding a Letter,https://leetcode.com/problems/count-words-obtained-after-adding-a-letter/,Medium,Trie + bitmask
+LeetCode,Encoding,820. Short Encoding of Words,https://leetcode.com/problems/short-encoding-of-words/,Medium,Trie on reversed strings
+LeetCode,Puzzle,1178. Number of Valid Words for Each Puzzle,https://leetcode.com/problems/number-of-valid-words-for-each-puzzle/,Hard,Trie + bitmask subset enumeration
+LeetCode,Puzzle,2227. Encrypt and Decrypt Strings,https://leetcode.com/problems/encrypt-and-decrpt-strings/,Hard,Trie for dictionary encoding
+LeetCode,Pattern,1023. Camelcase Matching,https://leetcode.com/problems/camelcase-matching/,Medium,Trie / two-pointer matching
+LeetCode,Pattern,1392. Longest Happy Prefix,https://leetcode.com/problems/longest-happy-prefix/,Hard,Trie / KMP prefix function
+LeetCode,Pattern,1698. Number of Distinct Substrings in a String (Premium),https://leetcode.com/problems/number-of-distinct-substrings-in-a-string/,Hard,Trie all suffixes / distinct count
+LeetCode,Pattern,3137. Minimum Number of Operations to Make Word K-Periodic,https://leetcode.com/problems/minimum-number-of-operations-to-make-word-k-periodic/,Medium,Trie for substring frequency
+LeetCode,Pattern,2261. K Divisible Elements Subarrays,https://leetcode.com/problems/k-divisible-elements-subarrays/,Medium,Trie for subarray uniqueness
+LeetCode,Pattern,2115. Find All Possible Recipes from Given Supplies,https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/,Medium,Trie / graph topological
+LeetCode,Pattern,1641. Count Sorted Vowel Strings,https://leetcode.com/problems/count-sorted-vowel-strings/,Medium,Trie / combinatorics DP
+LeetCode,Pattern,3042. Count Prefix and Suffix Pairs I,https://leetcode.com/problems/count-prefix-and-suffix-pairs-i/,Easy,Trie brute / string matching
+GeeksforGeeks,Implementation,Trie Implementation (Insert Search Delete),https://www.geeksforgeeks.org/trie-insert-and-search/,Easy,Trie insert / search / delete
+GeeksforGeeks,Implementation,Trie Memory Efficient Implementation,https://www.geeksforgeeks.org/memory-efficient-trie-implementation-using-map/,Medium,Trie with hashmap
+GeeksforGeeks,Prefix,Longest Common Prefix using Trie,https://www.geeksforgeeks.org/longest-common-prefix-using-trie/,Medium,Trie prefix traversal
+GeeksforGeeks,Prefix,Shortest Unique Prefix for Every Word,https://www.geeksforgeeks.org/find-all-shortest-unique-prefixes-to-represent-each-word-in-a-given-list/,Medium,Trie frequency-based prefix
+GeeksforGeeks,Prefix,Longest Prefix Matching (IP Routing),https://www.geeksforgeeks.org/longest-prefix-matching-in-routers/,Medium,Trie for IP routing
+GeeksforGeeks,Prefix,Count Distinct Substrings in a String,https://www.geeksforgeeks.org/count-distinct-substrings-string-using-trie/,Medium,Trie all suffixes
+GeeksforGeeks,Prefix,Count Number of Strings with Given Prefix,https://www.geeksforgeeks.org/count-number-of-strings-with-given-prefix-using-trie/,Easy,Trie prefix count
+GeeksforGeeks,Auto-complete,Phone Directory (Contacts Search),https://www.geeksforgeeks.org/implement-a-phone-directory/,Medium,Trie DFS / suggestions
+GeeksforGeeks,Auto-complete,Auto-complete Feature using Trie,https://www.geeksforgeeks.org/auto-complete-feature-using-trie/,Medium,Trie DFS suggestions
+GeeksforGeeks,Word Break,Word Break Problem (using Trie),https://www.geeksforgeeks.org/word-break-problem-trie-solution/,Medium,Trie + DP segmentation
+GeeksforGeeks,Word Search,Boggle / Word Search in Matrix,https://www.geeksforgeeks.org/boggle-find-possible-words-board-characters/,Hard,Trie + DFS on grid
+GeeksforGeeks,Word Search,Generate All Possible Words from Character Matrix,https://www.geeksforgeeks.org/print-all-words-in-a-dictionary/,Hard,Trie + DFS backtracking
+GeeksforGeeks,Matching,Palindrome Pairs,https://www.geeksforgeeks.org/palindrome-pair-in-an-array-of-words-or-strings/,Hard,Trie + palindrome check
+GeeksforGeeks,Matching,CamelCase Pattern Matching,https://www.geeksforgeeks.org/camel-case-pattern-matching/,Medium,Trie for uppercase patterns
+GeeksforGeeks,Matching,Find All Words Matching a Pattern,https://www.geeksforgeeks.org/find-all-words-matching-pattern/,Medium,Trie pattern search
+GeeksforGeeks,Matching,Longest Word in Dictionary that is a Subsequence,https://www.geeksforgeeks.org/find-longest-word-in-dictionary-that-is-subsequence-of-given-string/,Medium,Trie + subsequence check
+GeeksforGeeks,Matching,Valid IP Address Prefixes,https://www.geeksforgeeks.org/print-all-valid-ip-addresses-from-given-string/,Medium,Trie for IP validation
+GeeksforGeeks,XOR,Maximum XOR of Two Numbers in an Array,https://www.geeksforgeeks.org/maximum-xor-of-two-numbers-in-an-array/,Medium,Binary Trie
+GeeksforGeeks,XOR,Maximum XOR Subarray,https://www.geeksforgeeks.org/find-maximum-xor-subarray/,Hard,Binary Trie prefix XOR
+GeeksforGeeks,Matrix,Print Unique Rows in a Binary Matrix,https://www.geeksforgeeks.org/print-unique-rows/,Medium,Trie for binary matrix rows
+GeeksforGeeks,Matrix,Find Duplicate Rows in a Binary Matrix,https://www.geeksforgeeks.org/find-duplicate-rows-binary-matrix/,Medium,Trie for row comparison
+GeeksforGeeks,Word Frequency,Find Maximum Occurring Word,https://www.geeksforgeeks.org/find-the-maximum-occurring-word-in-a-given-set-of-strings/,Easy,Trie word frequency
+GeeksforGeeks,Word Frequency,Find First K Maximum Occurring Words,https://www.geeksforgeeks.org/find-the-k-most-frequent-words-from-a-file/,Medium,Trie + heap frequency
+GeeksforGeeks,Sorting,Lexicographic Sorting of Keys,https://www.geeksforgeeks.org/sort-array-strings-according-string-lengths-using-trie/,Medium,Trie DFS traversal sorted
+GeeksforGeeks,DP,Search Suggestions System,https://www.geeksforgeeks.org/search-suggestions-system/,Medium,Trie prefix suggestions
+GeeksforGeeks,DP,Replace Words (Prefix Replacement),https://www.geeksforgeeks.org/replace-words-prefix-replacement/,Medium,Trie prefix replacement
+Techie Delight,Implementation,Trie Implementation (C / C++ / Java / Python),https://www.techiedelight.com/trie-implementation-insert-search-delete/,Beginner,Trie insert/search/delete
+Techie Delight,Prefix,Longest Common Prefix using Trie,https://www.techiedelight.com/longest-common-prefix-given-set-strings-using-trie/,Medium,Trie prefix traversal
+Techie Delight,Sorting,Lexicographic Sorting of Keys,https://www.techiedelight.com/lexicographic-sorting-given-set-of-keys/,Medium,Trie DFS sorted order
+Techie Delight,Word Frequency,Find Maximum Occurring Word,https://www.techiedelight.com/find-maximum-occurring-word-given-set-strings/,Easy,Trie word frequency
+Techie Delight,Word Frequency,Find First K Maximum Occurring Words,https://www.techiedelight.com/find-first-k-maximum-occurring-words-given-set-strings/,Medium,Trie + heap frequency
+Techie Delight,Matrix,Find Duplicate Rows in a Binary Matrix,https://www.techiedelight.com/find-duplicate-rows-binary-matrix/,Medium,Trie for binary matrix
+Techie Delight,Word Break,Word Break Problem using Trie,https://www.techiedelight.com/word-break-problem-using-trie/,Medium,Trie + DP segmentation
+Techie Delight,Word Search,Generate List of Possible Words from Character Matrix,https://www.techiedelight.com/generate-list-possible-words-characters-matrix-trie/,Hard,Trie + DFS on grid
+Techie Delight,Matching,Find All Words Matching a Pattern,https://www.techiedelight.com/find-all-words-matching-pattern-dictionary/,Medium,Trie pattern search
+Techie Delight,Prefix,Shortest Unique Prefix for Every Word,https://www.techiedelight.com/find-shortest-unique-prefix-every-word-array/,Medium,Trie frequency-based prefix
+HackerRank,Implementation,Contacts,https://www.hackerrank.com/challenges/contacts/,Medium,Trie insert + prefix count
+HackerRank,Validation,No Prefix Set,https://www.hackerrank.com/challenges/no-prefix-set/,Medium,Trie prefix conflict detection
+InterviewBit,Implementation,Implement Trie,https://www.interviewbit.com/problems/trie/,Easy,Trie insert / search / startsWith
+InterviewBit,Prefix,Prefix Matching,https://www.interviewbit.com/problems/shortest-unique-prefix/,Medium,Trie unique prefix
+InterviewBit,Word Break,Hotel Review (Word Matching),https://www.interviewbit.com/problems/hotel-reviews/,Medium,Trie for word matching + sort
+InterviewBit,Spell Check,Spell Checker,https://www.interviewbit.com/problems/spell-checker/,Medium,Trie for dictionary lookup
+InterviewBit,Suggestion,Auto-complete,https://www.interviewbit.com/problems/auto-complete/,Medium,Trie DFS suggestions
+InterviewBit,Suggestion,Phone Directory,https://www.interviewbit.com/problems/phone-directory/,Medium,Trie contact search
+InterviewBit,XOR,Maximum XOR Subarray,https://www.interviewbit.com/problems/maximum-xor-subarray/,Hard,Binary Trie
+InterviewBit,Word Search,Word Search Board,https://www.interviewbit.com/problems/word-search-board/,Medium,Trie + DFS backtracking
+InterviewBit,Validation,Valid Phone Directory,https://www.interviewbit.com/problems/valid-phone-directory/,Medium,Trie prefix conflict
+Codeforces,XOR / Trie,706D - Vasiliy's Multiset,https://codeforces.com/problemset/problem/706/D,1800,Binary Trie insert/delete/maxXOR
+Codeforces,XOR / Trie,665E - Beautiful Subarrays,https://codeforces.com/problemset/problem/665/E,2200,Binary Trie prefix XOR count
+Codeforces,XOR / Trie,923C - Perfect Security,https://codeforces.com/problemset/problem/923/C,1800,Binary Trie min XOR matching
+Codeforces,XOR / Trie,1731C - Even Subarrays,https://codeforces.com/problemset/problem/1731/C,1700,Binary Trie prefix XOR
+Codeforces,XOR / Trie,1416B - Make Them Equal,https://codeforces.com/problemset/problem/1416/B,2000,Trie / greedy redistribution
+Codeforces,XOR / Trie,1791F - Range Update Point Query,https://codeforces.com/problemset/problem/1791/F,1800,Trie digit-sum recursion
+Codeforces,String / Trie,514C - Watto and Mechanism,https://codeforces.com/problemset/problem/514/C,1900,Trie + one-edit search
+Codeforces,String / Trie,1705C - Mark and His Unfinished Essay,https://codeforces.com/problemset/problem/1705/C,1900,Trie for string expansion
+Codeforces,String / Trie,948C - Producing Snow,https://codeforces.com/problemset/problem/948/C,1700,Trie / binary search
+Codeforces,String / Trie,1000F - One Occurrence,https://codeforces.com/problemset/problem/1000/F,2200,Trie / segment tree
+Codeforces,String / Trie,1055E - Segments on the Line,https://codeforces.com/problemset/problem/1055/E,2400,Trie / binary search + greedy
+SPOJ,Prefix,PHONELST - Phone List,https://www.spoj.com/problems/PHONELST/,Easy,Trie prefix conflict detection
+SPOJ,XOR,SUBXOR - Subarray XOR,https://www.spoj.com/problems/SUBXOR/,Medium,Binary Trie prefix XOR count
+SPOJ,Dictionary,DICT - Search in Dictionary,https://www.spoj.com/problems/DICT/,Medium,Trie prefix search
+SPOJ,Indexing,ADAINDEX - Ada and Indexing,https://www.spoj.com/problems/ADAINDEX/,Medium,Trie prefix count
+SPOJ,Word Search,NINJA5 - Word Search,https://www.spoj.com/problems/NINJA5/,Medium,Trie + grid DFS
+SPOJ,Code,CRYPT - Crypt,https://www.spoj.com/problems/CRYPT/,Hard,Trie for code matching
+SPOJ,Word Puzzle,WPUZZLES - Word Puzzle,https://www.spoj.com/problems/WPUZZLES/,Medium,Trie + grid word search
+AtCoder,Trie / XOR,ABC 281 F - Xor Minimax,https://atcoder.jp/contests/abc281/tasks/abc281_f,1500,Binary Trie + DP
+AtCoder,Trie / XOR,ABC 287 Ex - Directed Graph and Query,https://atcoder.jp/contests/abc287/tasks/abc287_h,2800,Bitset + Trie optimization
+AtCoder,String / Trie,ABC 273 F - Hammer 2,https://atcoder.jp/contests/abc273/tasks/abc273_f,2200,Trie + coordinate DP
+AtCoder,String / Trie,TDPC Word (Trie + DP),https://atcoder.jp/contests/tdpc/tasks/tdpc_word,1500,Trie + DP string generation
+AtCoder,String / Trie,ABC 268 D - Unique Username,https://atcoder.jp/contests/abc268/tasks/abc268_d,1309,String generation + Trie lookup
+Coding Ninjas,Implementation,Trie Implementation,https://www.codingninjas.com/studio/problems/trie-implementation_630514,Easy,Trie insert/search/startsWith
+Coding Ninjas,Prefix,Shortest Unique Prefix,https://www.codingninjas.com/studio/problems/shortest-unique-prefix_1095634,Medium,Trie frequency prefix
+Coding Ninjas,XOR,Maximum XOR Subarray,https://www.codingninjas.com/studio/problems/maximum-xor-subarray_1301050,Hard,Binary Trie prefix XOR
+Coding Ninjas,Word Search,Boggle (Word Search),https://www.codingninjas.com/studio/problems/boggle_981312,Hard,Trie + DFS grid
+Coding Ninjas,Suggestion,Phone Directory,https://www.codingninjas.com/studio/problems/phone-directory_1062960,Medium,Trie contact suggestions
+Coding Ninjas,Suggestion,Auto-complete,https://www.codingninjas.com/studio/problems/auto-complete_1094863,Medium,Trie DFS suggestions
+Coding Ninjas,Word Break,Word Break,https://www.codingninjas.com/studio/problems/word-break_1094865,Medium,Trie + DP
+Coding Ninjas,Spell Check,Spell Checker,https://www.codingninjas.com/studio/problems/spell-checker_1095641,Medium,Trie dictionary lookup
+Coding Ninjas,Sorting,Sorting Array of Strings by Length,https://www.codingninjas.com/studio/problems/sort-array-of-strings-by-length_1095628,Medium,Trie DFS sorting
+Coding Ninjas,Validation,Valid Phone Numbers,https://www.codingninjas.com/studio/problems/valid-phone-numbers_1095629,Easy,Trie prefix validation
+LeetCode,Pattern,3045. Count Prefix and Suffix Pairs II,https://leetcode.com/problems/count-prefix-and-suffix-pairs-ii/,Hard,Trie with 2D prefix-suffix index
+LeetCode,Lexicographic,386. Lexicographical Numbers,https://leetcode.com/problems/lexicographical-numbers/,Medium,Trie-like DFS on 10-ary tree
+LeetCode,Lexicographic,440. K-th Smallest in Lexicographical Order,https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/,Hard,Trie-like counting / 10-ary tree
+LeetCode,Prefix (Premium),1858. Longest Word With All Prefixes (Premium),https://leetcode.com/problems/longest-word-with-all-prefixes/,Medium,Trie prefix verification
+LeetCode,Design,2271. Maximum White Tiles Covered by a Carpet,https://leetcode.com/problems/maximum-white-tiles-covered-by-a-carpet/,Medium,Sliding window / Trie sorting
+LeetCode,Pattern,2301. Match Substring After Replacement,https://leetcode.com/problems/match-substring-after-replacement/,Hard,Trie for character mapping
+HackerEarth,XOR / Trie,Special Subarrays,https://www.hackerearth.com/practice/data-structures/advanced-data-structures/trie-keyword-tree/practice-problems/algorithm/special-subarrays-58f012d7/,Hard,Trie XOR subarray
+HackerEarth,XOR / Trie,Bob And The Magic Pairs,https://www.hackerearth.com/practice/data-structures/advanced-data-structures/trie-keyword-tree/practice-problems/algorithm/bob-and-the-magic-pairs-7c2ad36f/,Hard,Trie XOR pair counting
+HackerEarth,XOR / Trie,Beautiful Substrings,https://www.hackerearth.com/practice/data-structures/advanced-data-structures/trie-keyword-tree/practice-problems/algorithm/beautiful-substrings-5/description/,Hard,Trie + bitmask substring
+HackerEarth,XOR / Trie,Prefix Queries,https://www.hackerearth.com/practice/data-structures/advanced-data-structures/trie-keyword-tree/practice-problems/algorithm/prefix-queries-2a071467/,Hard,Trie prefix count
+HackerEarth,XOR / Trie,Minimum XOR,https://www.hackerearth.com/practice/data-structures/advanced-data-structures/trie-keyword-tree/practice-problems/algorithm/minimum-xor-2964f5fc/,Medium,Binary Trie min XOR pair
+HackerEarth,XOR / Trie,XOR Paths,https://www.hackerearth.com/practice/data-structures/advanced-data-structures/trie-keyword-tree/practice-problems/algorithm/xor-paths-6a2f4090/,Hard,Binary Trie on tree paths
+HackerEarth,XOR / Trie,Permutations (Trie),https://www.hackerearth.com/practice/data-structures/advanced-data-structures/trie-keyword-tree/practice-problems/algorithm/permutations-4a99a791/,Hard,Trie for permutation ranking
+HackerEarth,XOR / Trie,Xor and Insert,https://www.hackerearth.com/practice/data-structures/advanced-data-structures/trie-keyword-tree/practice-problems/algorithm/xor-and-insert-92b24203/,Medium,Binary Trie insert / xor query
+HackerEarth,XOR / Trie,Xor Sequence,https://www.hackerearth.com/practice/data-structures/advanced-data-structures/trie-keyword-tree/practice-problems/algorithm/xor-sequence-6cf9dd2b/,Hard,Binary Trie sequence XOR
+HackerEarth,XOR / Trie,Shubham and Subarray Xor,https://www.hackerearth.com/practice/data-structures/advanced-data-structures/trie-keyword-tree/practice-problems/algorithm/shubham-and-subarray-xor-514de3cf/,Medium,Binary Trie subarray XOR
+CSES,String / Trie,Word Combinations,https://cses.fi/problemset/task/1731,Medium,Trie + DP string segmentation
+UVa,Frequency,10226 - Hardwood Species,https://onlinejudge.org/external/102/10226.pdf,Easy,Trie for frequency counting
+UVa,Prefix,11362 - Phone List,https://onlinejudge.org/external/113/11362.pdf,Easy,Trie prefix conflict detection
+UVa,Word Search,1164 - Word Search II,https://onlinejudge.org/external/11/1164.pdf,Medium,Trie + grid DFS
+CodeChef,XOR / Trie,REALSET - Real Set,https://www.codechef.com/problems/REALSET,Hard,Binary Trie XOR basis
+CodeChef,Prefix,PHCITY - Phone City,https://www.codechef.com/problems/PHCITY,Medium,Trie prefix matching
+LightOJ,String / Trie,1114 - Easily Readable,https://lightoj.com/problem/easily-readable,Medium,Trie + permutation sorting
+LightOJ,XOR / Trie,1269 - Consecutive Sum,https://lightoj.com/problem/consecutive-sum,Hard,Binary Trie max/min XOR subarray
+LightOJ,XOR / Trie,1224 - DNA Prefix,https://lightoj.com/problem/dna-prefix,Medium,Trie maximum prefix frequency
+Timus,Prefix,1494 - Monobilliards,https://acm.timus.ru/problem.aspx?space=1&num=1494,Medium,Trie / stack simulation
+Timus,String / Trie,1712 - Cipher Grille,https://acm.timus.ru/problem.aspx?space=1&num=1712,Easy,Trie grid decryption
+TCS CodeVita,Prefix,Phone Book Search,https://prepinsta.com/tcs-codevita/phone-book-search-problem/,Medium,Trie contact prefix search
+Google Kickstart,XOR / Trie,2021 Round A - XOR Graph,https://codingcompetitions.withgoogle.com/kickstart/round/0000000000436140,Hard,Binary Trie on graph
+LeetCode,Prefix,1940. Longest Common Subsequence Between Sorted Arrays (Premium),https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/,Medium,Trie for intersection
+LeetCode,Suggestion,2033. Minimum Operations to Make a Uni-Value Grid,https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/,Medium,Trie / median
+LeetCode,Pattern,2186. Minimum Number of Steps to Make Two Strings Anagram II,https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram-ii/,Medium,Trie frequency / counter
+LeetCode,Pattern,2935. Maximum Strong Pair XOR II,https://leetcode.com/problems/maximum-strong-pair-xor-ii/,Hard,Binary Trie + sliding window
