@@ -11,13 +11,13 @@
 > (documentation, ownership, history, decisions). **Always verify against
 > actual source files before making changes** — the index may be stale.
 
-Last indexed: 2026-05-14 (commit b6d207b). Confidence: 100%.
+Last indexed: 2026-05-14 (commit d6fa169). Confidence: 100%.
 ### Key Modules
 | Module | Purpose | Owner |
 |--------|---------|-------|
-| `src` | The src module serves as the core foundation of the application, implementing a  | — |
+| `src` | The src module serves as the core foundation for the application, implementing a | — |
 | `scripts` | The scripts module serves as the primary utility layer for data ingestion and tr | — |
-| `root` | The root module serves as the primary configuration and entry point for the proj | — |
+| `root` | The root module serves as the primary configuration layer for the project's buil | — |
 ### Entry Points
 - `src/routes/index.tsx`
 ### Tech Stack
@@ -27,7 +27,11 @@ Last indexed: 2026-05-14 (commit b6d207b). Confidence: 100%.
 **Infra:** Vite### Hotspots (High Churn)
 | File | Churn | 90d Commits | Owner |
 |------|-------|-------------|-------|
-| `dp/normalize_categories.py` | 75.0th %ile | 1 | rashidtvmr |
+| `math/all_math_problems.csv` | 100.0th %ile | 2 | rashidtvmr |
+| `AGENTS.md` | 99.5th %ile | 3 | rashidtvmr |
+| `CLAUDE.md` | 99.0th %ile | 2 | rashidtvmr |
+| `.playwright-mcp/page-2026-05-14T05-41-59-098Z.yml` | 98.5th %ile | 1 | rashidtvmr |
+| `.playwright-mcp/page-2026-05-14T05-42-18-412Z.yml` | 98.1th %ile | 1 | rashidtvmr |
 
 ### Repowise MCP Tools
 
