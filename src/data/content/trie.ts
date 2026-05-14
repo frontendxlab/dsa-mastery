@@ -255,10 +255,137 @@ class Trie {
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'Even More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 6,
+      title: 'Replace Words',
+      url: 'https://leetcode.com/problems/replace-words/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Build trie of roots, look up each word',
+          explanation: `Insert all roots into a trie. For each word in the sentence, walk the trie character by character. The moment we hit an end marker, we've found the shortest root — replace. If no root found in trie, keep the full word.`,
+          code: `var replaceWords = function(dictionary, sentence) {
+    const root = {};
+    for (const w of dictionary) {
+        let node = root;
+        for (const c of w) { if (!node[c]) node[c] = {}; node = node[c]; }
+        node['#'] = w; // store root word
+    }
+    return sentence.split(' ').map(word => {
+        let node = root;
+        for (const c of word) {
+            if (!node[c]) break;
+            node = node[c];
+            if (node['#']) return node['#']; // hit a root — replace
+        }
+        return word;
+    }).join(' ');
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 7,
+      title: 'Search Suggestions System',
+      url: 'https://leetcode.com/problems/search-suggestions-system/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Sort + binary search — no trie needed',
+          explanation: `Sort products. For each prefix, binary search for the insertion point. The 3 products at and after that position (if they start with the prefix) are the suggestions. O(n log n + m log n).`,
+          code: `var suggestedProducts = function(products, searchWord) {
+    products.sort();
+    const result = [];
+    let prefix = '';
+    for (const c of searchWord) {
+        prefix += c;
+        // Binary search for prefix
+        let lo = 0, hi = products.length;
+        while (lo < hi) {
+            const mid = (lo+hi)>>1;
+            products[mid] < prefix ? lo=mid+1 : hi=mid;
+        }
+        const suggestions = [];
+        for (let i = lo; i < Math.min(lo+3, products.length); i++) {
+            if (products[i].startsWith(prefix)) suggestions.push(products[i]);
+        }
+        result.push(suggestions);
+    }
+    return result;
+};`,
+          lang: 'javascript',
+        },
+        {
+          label: 'Intuition 2: Trie with DFS to collect top 3',
+          explanation: `Insert all products into a trie (storing complete words at end nodes). For each prefix, navigate to that prefix node in the trie, then DFS to collect up to 3 lexicographically smallest words.`,
+          code: `var suggestedProducts = function(products, searchWord) {
+    const root = {};
+    for (const p of products) {
+        let node = root;
+        for (const c of p) { if (!node[c]) node[c] = {}; node = node[c]; }
+        node['$'] = (node['$'] || []);
+        node['$'].push(p);
+        node['$'].sort();
+        if (node['$'].length > 3) node['$'].pop();
+    }
+    const result = [];
+    let node = root;
+    for (const c of searchWord) {
+        node = node && node[c];
+        const collect = [];
+        const dfs = n => {
+            if (!n || collect.length === 3) return;
+            if (n['$']) collect.push(...n['$'].slice(0, 3 - collect.length));
+            for (const k of Object.keys(n).sort())
+                if (k !== '$') dfs(n[k]);
+        };
+        dfs(node);
+        result.push(collect);
+    }
+    return result;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 8,
+      title: 'Longest Word in Dictionary',
+      url: 'https://leetcode.com/problems/longest-word-in-dictionary/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Sort + set — build words character by character',
+          explanation: `Sort words by length (then lexicographically). For each word, check if word[0..n-2] (prefix without last char) is already in the valid set. If yes, add this word to the set. Track the longest valid word found.`,
+          code: `var longestWord = function(words) {
+    words.sort();
+    const built = new Set(['']);
+    let ans = '';
+    for (const w of words) {
+        if (built.has(w.slice(0, -1))) {
+            built.add(w);
+            if (w.length > ans.length) ans = w;
+        }
+    }
+    return ans;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '🧠',
       color: 'teal',
-      content: `**Trie vs HashMap decision:**\n- Need prefix search / autocomplete → Trie wins (HashMap can't query prefixes)\n- Need exact word lookup only → HashMap is simpler and faster\n- Need maximum XOR of two numbers → Binary Trie (insert bits)\n- Wildcard/regex matching on words → Trie with DFS on wildcards\n- Multiple word search in grid → Build Trie, DFS on grid with pruning`,
+      content: `**Trie vs HashMap decision:**\n- Need prefix search / autocomplete → Trie wins (HashMap can't query prefixes)\n- Need exact word lookup only → HashMap is simpler and faster\n- Need maximum XOR of two numbers → Binary Trie (insert bits)\n- Wildcard/regex matching on words → Trie with DFS on wildcards\n- Multiple word search in grid → Build Trie, DFS on grid with pruning\n- Replace with shortest prefix → Trie insert roots, walk and stop at first end marker`,
     },
   ],
 }

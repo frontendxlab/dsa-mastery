@@ -234,10 +234,161 @@ return slow;  // new length`,
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 6,
+      title: '3Sum',
+      url: 'https://leetcode.com/problems/3sum/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: O(n³) brute force — check every triple',
+          explanation: `Three nested loops, check all combinations. O(n³) — fails for n=3000.`,
+        },
+        {
+          label: 'Intuition 2: Sort + fix one element + two pointers for the other two',
+          explanation: `Sort the array. Fix nums[i] as the first element. Use two pointers (lo=i+1, hi=end) to find pairs summing to -nums[i]. Skip duplicates at each level to avoid duplicate triplets.`,
+          code: `var threeSum = function(nums) {
+    nums.sort((a, b) => a - b);
+    const result = [];
+    for (let i = 0; i < nums.length - 2; i++) {
+        if (i > 0 && nums[i] === nums[i-1]) continue;  // skip dup for i
+        let lo = i + 1, hi = nums.length - 1;
+        while (lo < hi) {
+            const sum = nums[i] + nums[lo] + nums[hi];
+            if (sum === 0) {
+                result.push([nums[i], nums[lo], nums[hi]]);
+                while (lo < hi && nums[lo] === nums[lo+1]) lo++;  // skip dup lo
+                while (lo < hi && nums[hi] === nums[hi-1]) hi--;  // skip dup hi
+                lo++; hi--;
+            } else if (sum < 0) lo++;
+            else hi--;
+        }
+    }
+    return result;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 7,
+      title: 'Container With Most Water',
+      url: 'https://leetcode.com/problems/container-with-most-water/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: O(n²) brute force — try every pair',
+          explanation: `For every pair (i, j), area = min(height[i], height[j]) * (j-i). Track max. O(n²).`,
+        },
+        {
+          label: 'Intuition 2: Two pointers — always move the shorter side',
+          explanation: `Start with widest container (lo=0, hi=end). Area = min(heights) * width. If we move the taller side inward, min can only stay same or decrease while width decreases — guaranteed worse. So always move the shorter side inward: it's the only hope of finding a taller wall.`,
+          code: `var maxArea = function(height) {
+    let lo = 0, hi = height.length - 1, max = 0;
+    while (lo < hi) {
+        max = Math.max(max, Math.min(height[lo], height[hi]) * (hi - lo));
+        if (height[lo] < height[hi]) lo++;  // move shorter side — taller side stays
+        else hi--;
+    }
+    return max;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 8,
+      title: 'Sort Colors (Dutch National Flag)',
+      url: 'https://leetcode.com/problems/sort-colors/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Count each color, rewrite — two passes',
+          explanation: `Count 0s, 1s, 2s. Rewrite array with correct counts. Simple but two passes.`,
+        },
+        {
+          label: 'Intuition 2: Dutch National Flag — three-way partition in one pass',
+          explanation: `Three pointers: lo (boundary of 0s), mid (current element), hi (boundary of 2s).\n- nums[mid]=0: swap with lo, both lo and mid advance\n- nums[mid]=1: just advance mid\n- nums[mid]=2: swap with hi, only hi retreats (don't advance mid since swapped value is unseen)`,
+          code: `var sortColors = function(nums) {
+    let lo = 0, mid = 0, hi = nums.length - 1;
+    while (mid <= hi) {
+        if (nums[mid] === 0) {
+            [nums[lo], nums[mid]] = [nums[mid], nums[lo]];
+            lo++; mid++;
+        } else if (nums[mid] === 1) {
+            mid++;
+        } else {
+            [nums[mid], nums[hi]] = [nums[hi], nums[mid]];
+            hi--;  // DON'T advance mid — swapped element not yet examined
+        }
+    }
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 9,
+      title: 'Valid Palindrome II',
+      url: 'https://leetcode.com/problems/valid-palindrome-ii/',
+      difficulty: 'Easy',
+      intuitions: [
+        {
+          label: 'Intuition 1: Two pointers — on mismatch, try skipping left OR right',
+          explanation: `Walk from both ends. When characters match, continue. On first mismatch: try skipping the left character (check if s[lo+1..hi] is palindrome) OR the right character (check if s[lo..hi-1] is palindrome). If either works, return true.`,
+          code: `var validPalindrome = function(s) {
+    const isPalin = (l, r) => {
+        while (l < r) if (s[l++] !== s[r--]) return false;
+        return true;
+    };
+    let lo = 0, hi = s.length - 1;
+    while (lo < hi) {
+        if (s[lo] !== s[hi]) return isPalin(lo+1, hi) || isPalin(lo, hi-1);
+        lo++; hi--;
+    }
+    return true;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 10,
+      title: 'Boats to Save People',
+      url: 'https://leetcode.com/problems/boats-to-save-people/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Sort + two pointers — pair heaviest with lightest if possible',
+          explanation: `Sort by weight. Greedy: try to pair the heaviest person (hi) with the lightest (lo). If they fit together (sum ≤ limit), both get on a boat (lo++, hi--). If not, the heaviest goes alone (hi-- only). Count boats.`,
+          code: `var numRescueBoats = function(people, limit) {
+    people.sort((a, b) => a - b);
+    let lo = 0, hi = people.length - 1, boats = 0;
+    while (lo <= hi) {
+        if (people[lo] + people[hi] <= limit) lo++;  // pair them
+        hi--;   // heaviest always gets a boat (alone or paired)
+        boats++;
+    }
+    return boats;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '💡',
       color: 'green',
-      content: `**While loop condition rule for linked lists**: look at what you access INSIDE the loop.\n- Accessing \`curr.next\` → condition is \`while (curr)\`\n- Accessing \`curr.next.next\` → condition is \`while (curr && curr.next)\`\n\nThis prevents null pointer errors without special-casing.`,
+      content: `**Two pointer decision guide:**\n- "Find pair with sum = target in sorted array" → left/right converging pointers\n- "3Sum / 4Sum" → fix k-2 elements with loops, two pointers for final pair\n- "Partition array by condition" → slow/fast or lo/mid/hi (Dutch flag)\n- "Container / area maximization" → greedy: move the limiting (smaller) side inward\n- "Valid palindrome with one deletion" → two pointers + helper check on mismatch\n- "Linked list intersection" → equalize path lengths by switching lists\n\n**While loop condition rule**: access \`curr.next\` → \`while (curr)\`. Access \`curr.next.next\` → \`while (curr && curr.next)\`.`,
     },
   ],
 }

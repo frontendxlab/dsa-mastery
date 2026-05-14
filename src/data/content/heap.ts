@@ -229,10 +229,104 @@ var findKthLargest = function(nums, k) {
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'Two-Heap Pattern',
+    },
+    {
+      type: 'callout',
+      icon: '💡',
+      color: 'blue',
+      content: `**Two heaps** split data into two halves:\n- **Max-heap** (lower half): top = largest of the smaller half\n- **Min-heap** (upper half): top = smallest of the larger half\n\nMedian = average of both tops (even count) or top of larger heap (odd count).\n\nBalance rule: sizes differ by at most 1. After every insert, rebalance if needed.`,
+    },
+    {
+      type: 'problem',
+      num: 7,
+      title: 'Find Median from Data Stream',
+      url: 'https://leetcode.com/problems/find-median-from-data-stream/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: Sort on every query — O(n log n) per query',
+          explanation: `Store all numbers. On findMedian, sort and return middle. Too slow for large streams.`,
+        },
+        {
+          label: 'Intuition 2: Two heaps — max-heap (lower) + min-heap (upper), O(log n) add O(1) find',
+          explanation: `Maintain lower = max-heap (left half), upper = min-heap (right half). Every number in lower ≤ every number in upper. Add num: push to lower, then rebalance by moving max(lower) to upper if lower.top > upper.top. Keep sizes within 1. Median = top of larger heap or average of both tops.`,
+          code: `class MedianFinder {
+    constructor() {
+        // JS doesn't have built-in heap — simulate with sorted array for clarity
+        // In production: use a proper min/max heap implementation
+        this.lower = [];  // max-heap (negate values to simulate)
+        this.upper = [];  // min-heap
+    }
+    // Helper: binary insertion into sorted array (simulation)
+    _insert(arr, val, asc = true) {
+        let lo = 0, hi = arr.length;
+        while (lo < hi) { const mid = (lo+hi)>>1; arr[mid] < val === asc ? lo=mid+1 : hi=mid; }
+        arr.splice(lo, 0, val);
+    }
+    addNum(num) {
+        this._insert(this.lower, num, false); // insert descending
+        // Balance: move max of lower to upper
+        this.upper.unshift(this.lower.shift());  // simplified
+        this._insert(this.upper, this.upper.shift(), true);
+        if (this.upper.length > this.lower.length)
+            this.lower.unshift(this.upper.shift());
+    }
+    findMedian() {
+        return this.lower.length > this.upper.length
+            ? this.lower[0]
+            : (this.lower[0] + this.upper[0]) / 2;
+    }
+}
+
+// Clean two-heap template (conceptual — replace array ops with real heap):
+// addNum(num):
+//   1. Push to lower (max-heap)
+//   2. Push lower.pop() to upper (min-heap)  → ensures lower.max <= upper.min
+//   3. If upper.size > lower.size: push upper.pop() to lower  → rebalance
+// findMedian():
+//   lower.size > upper.size ? lower.top : (lower.top + upper.top) / 2`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 8,
+      title: 'IPO (maximize capital with limited projects)',
+      url: 'https://leetcode.com/problems/ipo/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: Greedy with two heaps — min-heap by capital, max-heap by profit',
+          explanation: `Greedy: at each step, pick the highest-profit project we can afford. Use a min-heap sorted by required capital (to find newly affordable projects) and a max-heap by profit (to pick the best among affordable ones). For each of k rounds: move all newly affordable projects to max-heap, pick the max-profit one.`,
+          code: `var findMaximizedCapital = function(k, w, profits, capital) {
+    const n = profits.length;
+    // Sort by capital requirement
+    const byCapital = profits.map((p,i)=>[capital[i],p]).sort((a,b)=>a[0]-b[0]);
+    // Max-heap by profit (simulate with array + sort)
+    const available = [];
+    let i = 0;
+    for (let round = 0; round < k; round++) {
+        // Add all projects we can afford
+        while (i < n && byCapital[i][0] <= w) available.push(byCapital[i++][1]);
+        if (!available.length) break;
+        available.sort((a,b) => b-a);  // max first
+        w += available.shift();         // take highest profit
+    }
+    return w;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '🧠',
       color: 'teal',
-      content: `**Heap pattern selector:**\n- "k-th largest/smallest overall" → min-heap of size k\n- "k-th largest in stream" → maintain min-heap of size k, top = answer\n- "merge k sorted lists/arrays" → min-heap of size k (one per list)\n- "find median from stream" → two heaps (max-heap lower half + min-heap upper half)\n- "Dijkstra / Prim's / scheduling" → min-heap with (cost, node)`,
+      content: `**Heap pattern selector:**\n- "k-th largest/smallest overall" → min-heap of size k\n- "k-th largest in stream" → maintain min-heap of size k, top = answer\n- "merge k sorted lists/arrays" → min-heap of size k (one per list)\n- "find median from stream" → two heaps (max-heap lower half + min-heap upper half)\n- "Dijkstra / Prim's / scheduling" → min-heap with (cost, node)\n- "maximize under budget constraint" → min-heap by cost + max-heap by benefit (IPO pattern)\n- "sliding window median" → two heaps with lazy deletion`,
     },
   ],
 }

@@ -242,10 +242,134 @@ function dfs(node) {
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 6,
+      title: 'Distribute Coins in Binary Tree',
+      url: 'https://leetcode.com/problems/distribute-coins-in-binary-tree/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Postorder — return excess coins flowing through each edge',
+          explanation: `Each edge carries the "net flow" of coins through it. The number of moves = sum of |flow| over all edges. For each subtree: excess = (total coins in subtree) - (total nodes in subtree). Each unit of excess must travel through the edge to this subtree's parent (or vice versa). DFS returns the excess.`,
+          code: `var distributeCoins = function(root) {
+    let moves = 0;
+    const dfs = node => {
+        if (!node) return 0;
+        const left = dfs(node.left);
+        const right = dfs(node.right);
+        moves += Math.abs(left) + Math.abs(right);
+        // excess = coins available - nodes that need coins
+        return node.val + left + right - 1;
+    };
+    dfs(root);
+    return moves;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 7,
+      title: 'Count Nodes Equal to Average of Subtree',
+      url: 'https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Postorder returns (sum, count), check condition',
+          explanation: `DFS returns (subtreeSum, subtreeCount). At each node, check if node.val === Math.floor(subtreeSum / subtreeCount). Standard tree DP: aggregate subtree info on the way up.`,
+          code: `var averageOfSubtree = function(root) {
+    let count = 0;
+    const dfs = node => {
+        if (!node) return [0, 0];
+        const [ls, lc] = dfs(node.left);
+        const [rs, rc] = dfs(node.right);
+        const sum = ls + rs + node.val;
+        const cnt = lc + rc + 1;
+        if (Math.floor(sum / cnt) === node.val) count++;
+        return [sum, cnt];
+    };
+    dfs(root);
+    return count;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 8,
+      title: 'Minimum Height Trees',
+      url: 'https://leetcode.com/problems/minimum-height-trees/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Topological sort (leaf trimming) — not tree DP',
+          explanation: `The centers of the tree (1 or 2 nodes) make the best roots for MHT. Iteratively remove leaf nodes (degree 1) like topological sort. The last 1-2 remaining nodes are the answers.`,
+          code: `var findMinHeightTrees = function(n, edges) {
+    if (n === 1) return [0];
+    const adj = Array.from({length:n},()=>new Set());
+    for (const [u,v] of edges){adj[u].add(v);adj[v].add(u);}
+    let leaves = [];
+    for (let i=0;i<n;i++) if(adj[i].size===1) leaves.push(i);
+    let remaining = n;
+    while (remaining > 2) {
+        remaining -= leaves.length;
+        const newLeaves = [];
+        for (const leaf of leaves) {
+            const neighbor = [...adj[leaf]][0];
+            adj[neighbor].delete(leaf);
+            if (adj[neighbor].size === 1) newLeaves.push(neighbor);
+        }
+        leaves = newLeaves;
+    }
+    return leaves;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 9,
+      title: 'Maximum Product of Splitted Binary Tree',
+      url: 'https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Precompute total sum, then find best split',
+          explanation: `Two passes: first compute total subtree sum. Then for each possible edge cut, one part has subtreeSum[node] and the other has total - subtreeSum[node]. Maximize product. The optimal cut is near total/2.`,
+          code: `var maxProduct = function(root) {
+    const MOD = 1e9 + 7;
+    let total = 0, ans = 0;
+    const sum = node => {
+        if (!node) return 0;
+        return node.val + sum(node.left) + sum(node.right);
+    };
+    total = sum(root);
+    const dfs = node => {
+        if (!node) return 0;
+        const s = node.val + dfs(node.left) + dfs(node.right);
+        ans = Math.max(ans, s * (total - s));
+        return s;
+    };
+    dfs(root);
+    return ans % MOD;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '🧠',
       color: 'green',
-      content: `**Tree DP checklist:**\n- What does the DFS function RETURN? (usually: best value in subtree, reachable from root of subtree via single path)\n- What GLOBAL variable tracks the actual answer? (usually: best path using this node as the "bend")\n- Do you need info from ABOVE the node? → rerooting (two passes)\n- Do you need to make a binary choice at each node? → return a tuple [choice_a, choice_b]\n- Standard template: clamp negative contributions to 0 for max-sum problems`,
+      content: `**Tree DP checklist:**\n- What does the DFS function RETURN? (usually: best value in subtree, reachable from root of subtree via single path)\n- What GLOBAL variable tracks the actual answer? (usually: best path using this node as the "bend")\n- Do you need info from ABOVE the node? → rerooting (two passes)\n- Do you need to make a binary choice at each node? → return a tuple [choice_a, choice_b]\n- Standard template: clamp negative contributions to 0 for max-sum problems\n\n**Return value patterns:**\n- Single value (height, sum): just return it\n- Two competing choices: return [take_this, skip_this]\n- Multiple aggregates: return [sum, count] or {sum, size}\n- Flows/excess: return signed excess (positive = has extra, negative = needs more)`,
     },
   ],
 }
