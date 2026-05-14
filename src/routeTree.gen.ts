@@ -15,6 +15,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProblemsIndexRouteImport } from './routes/problems.index'
 import { Route as LearnIndexRouteImport } from './routes/learn.index'
 import { Route as ProblemsTopicRouteImport } from './routes/problems.$topic'
+import { Route as LearnPatternsRouteImport } from './routes/learn.patterns'
 import { Route as LearnPatternRouteImport } from './routes/learn.$pattern'
 import { Route as DemoTanstackQueryRouteImport } from './routes/demo/tanstack-query'
 import { Route as DemoTableRouteImport } from './routes/demo/table'
@@ -51,6 +52,11 @@ const ProblemsTopicRoute = ProblemsTopicRouteImport.update({
   path: '/problems/$topic',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LearnPatternsRoute = LearnPatternsRouteImport.update({
+  id: '/learn/patterns',
+  path: '/learn/patterns',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LearnPatternRoute = LearnPatternRouteImport.update({
   id: '/learn/$pattern',
   path: '/learn/$pattern',
@@ -84,6 +90,7 @@ export interface FileRoutesByFullPath {
   '/demo/table': typeof DemoTableRoute
   '/demo/tanstack-query': typeof DemoTanstackQueryRoute
   '/learn/$pattern': typeof LearnPatternRoute
+  '/learn/patterns': typeof LearnPatternsRoute
   '/problems/$topic': typeof ProblemsTopicRoute
   '/learn/': typeof LearnIndexRoute
   '/problems/': typeof ProblemsIndexRoute
@@ -97,6 +104,7 @@ export interface FileRoutesByTo {
   '/demo/table': typeof DemoTableRoute
   '/demo/tanstack-query': typeof DemoTanstackQueryRoute
   '/learn/$pattern': typeof LearnPatternRoute
+  '/learn/patterns': typeof LearnPatternsRoute
   '/problems/$topic': typeof ProblemsTopicRoute
   '/learn': typeof LearnIndexRoute
   '/problems': typeof ProblemsIndexRoute
@@ -111,6 +119,7 @@ export interface FileRoutesById {
   '/demo/table': typeof DemoTableRoute
   '/demo/tanstack-query': typeof DemoTanstackQueryRoute
   '/learn/$pattern': typeof LearnPatternRoute
+  '/learn/patterns': typeof LearnPatternsRoute
   '/problems/$topic': typeof ProblemsTopicRoute
   '/learn/': typeof LearnIndexRoute
   '/problems/': typeof ProblemsIndexRoute
@@ -126,6 +135,7 @@ export interface FileRouteTypes {
     | '/demo/table'
     | '/demo/tanstack-query'
     | '/learn/$pattern'
+    | '/learn/patterns'
     | '/problems/$topic'
     | '/learn/'
     | '/problems/'
@@ -139,6 +149,7 @@ export interface FileRouteTypes {
     | '/demo/table'
     | '/demo/tanstack-query'
     | '/learn/$pattern'
+    | '/learn/patterns'
     | '/problems/$topic'
     | '/learn'
     | '/problems'
@@ -152,6 +163,7 @@ export interface FileRouteTypes {
     | '/demo/table'
     | '/demo/tanstack-query'
     | '/learn/$pattern'
+    | '/learn/patterns'
     | '/problems/$topic'
     | '/learn/'
     | '/problems/'
@@ -166,6 +178,7 @@ export interface RootRouteChildren {
   DemoTableRoute: typeof DemoTableRoute
   DemoTanstackQueryRoute: typeof DemoTanstackQueryRoute
   LearnPatternRoute: typeof LearnPatternRoute
+  LearnPatternsRoute: typeof LearnPatternsRoute
   ProblemsTopicRoute: typeof ProblemsTopicRoute
   LearnIndexRoute: typeof LearnIndexRoute
   ProblemsIndexRoute: typeof ProblemsIndexRoute
@@ -217,6 +230,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProblemsTopicRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/learn/patterns': {
+      id: '/learn/patterns'
+      path: '/learn/patterns'
+      fullPath: '/learn/patterns'
+      preLoaderRoute: typeof LearnPatternsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/learn/$pattern': {
       id: '/learn/$pattern'
       path: '/learn/$pattern'
@@ -262,6 +282,7 @@ const rootRouteChildren: RootRouteChildren = {
   DemoTableRoute: DemoTableRoute,
   DemoTanstackQueryRoute: DemoTanstackQueryRoute,
   LearnPatternRoute: LearnPatternRoute,
+  LearnPatternsRoute: LearnPatternsRoute,
   ProblemsTopicRoute: ProblemsTopicRoute,
   LearnIndexRoute: LearnIndexRoute,
   ProblemsIndexRoute: ProblemsIndexRoute,

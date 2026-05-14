@@ -26,9 +26,12 @@ function LearnPage() {
           <div className="nb-chip bg-white">
             38k+ problems
           </div>
-          <div className="nb-chip bg-white">
-            Written in your style
-          </div>
+          <Link
+            to="/learn/patterns"
+            className="nb-chip bg-white no-underline font-bold hover:bg-[var(--nb-teal)] transition-colors"
+          >
+            ⚡ Quick Patterns
+          </Link>
         </div>
       </section>
 
