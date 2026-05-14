@@ -11,7 +11,7 @@
 > (documentation, ownership, history, decisions). **Always verify against
 > actual source files before making changes** — the index may be stale.
 
-Last indexed: 2026-05-14 (commit d6fa169). Confidence: 100%.
+Last indexed: 2026-05-14 (commit 3a00ff6). Confidence: 100%.
 ### Key Modules
 | Module | Purpose | Owner |
 |--------|---------|-------|
@@ -28,10 +28,10 @@ Last indexed: 2026-05-14 (commit d6fa169). Confidence: 100%.
 | File | Churn | 90d Commits | Owner |
 |------|-------|-------------|-------|
 | `math/all_math_problems.csv` | 100.0th %ile | 2 | rashidtvmr |
-| `AGENTS.md` | 99.5th %ile | 3 | rashidtvmr |
-| `CLAUDE.md` | 99.0th %ile | 2 | rashidtvmr |
-| `.playwright-mcp/page-2026-05-14T05-41-59-098Z.yml` | 98.5th %ile | 1 | rashidtvmr |
-| `.playwright-mcp/page-2026-05-14T05-42-18-412Z.yml` | 98.1th %ile | 1 | rashidtvmr |
+| `AGENTS.md` | 99.6th %ile | 3 | rashidtvmr |
+| `CLAUDE.md` | 99.2th %ile | 2 | rashidtvmr |
+| `.playwright-mcp/page-2026-05-14T05-41-59-098Z.yml` | 98.9th %ile | 1 | rashidtvmr |
+| `.playwright-mcp/page-2026-05-14T05-42-18-412Z.yml` | 98.5th %ile | 1 | rashidtvmr |
 
 ### Repowise MCP Tools
 

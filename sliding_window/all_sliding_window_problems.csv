@@ -215,7 +215,6 @@ SPOJ,Fixed-Size Window,MAXSUB - Maximum of subarrays,https://www.spoj.com/proble
 SPOJ,Fixed-Size Window,ADAZOO - Ada and Zoo,https://www.spoj.com/problems/ADAZOO/,Medium,Sliding window + DS
 SPOJ,Variable-Size Window,SUBSUM - Subarray with given sum,https://www.spoj.com/problems/SUBSUM/,Medium,Variable-size target sum
 UVa,Variable-Size Window,11536 - Smallest Sub-Array,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2531,Medium,Variable-size min covering
-UVa,Variable-Size Window,108 - Maximum Sum,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=44,Medium,2D Kadane sliding window
 CodeChef,Sliding Window,KJSW - KJ and the Sliding Window,https://www.codechef.com/problems/KJSW,Medium,Sliding window
 CodeChef,Sliding Window,MAXSUBARRAY - Maximum Subarray,https://www.codechef.com/problems/MAXSUBARRAY,Medium,Fixed-size window sum
 CodeChef,Sliding Window,SUBGCD - Subarray GCD,https://www.codechef.com/problems/SUBGCD,Medium,Sliding window + GCD
@@ -339,8 +338,6 @@ LintCode,Variable-Size Window,386. Longest Substring with At Most K Distinct Cha
 LintCode,Fixed-Size Window,868. Maximum Average Subarray I,https://www.lintcode.com/problem/868/,Easy,Fixed-size max average
 LintCode,Variable-Size Window,838. Subarray Sum Equals K,https://www.lintcode.com/problem/838/,Medium,Prefix sum + hashmap sliding
 TopCoder,Sliding Window,SlidingWindow,https://community.topcoder.com/stat?c=problem_statement&pm=11188,Medium,Sliding window counting
-TopCoder,Sliding Window,ConsecutiveOnes,https://community.topcoder.com/stat?c=problem_statement&pm=11512,Medium,Sliding window ones
-TopCoder,Sliding Window,TandemXOR,https://community.topcoder.com/stat?c=problem_statement&pm=11098,Hard,Sliding window XOR
 Timus,Sliding Window,1404. Team.GOV,https://acm.timus.ru/problem.aspx?space=1&num=1404,Medium,Sliding window + string
 UVa,Category,Problem Name,URL,Difficulty,Key Concept
 AtCoder,Sliding Window,C. Consecutive,https://atcoder.jp/contests/abc328/tasks/abc328_c,Easy,Sliding Window
@@ -475,9 +472,6 @@ DMOJ,Sliding Window,DMOPC 14 CE1 P4 - Exfiltration,https://dmoj.ca/problem/dmopc
 Kattis,Sliding Window,Maximum Subarray Sum,https://open.kattis.com/problems/maximumsubarraysum,Easy,Sliding Window
 Kattis,Sliding Window,Subarray Divisibility,https://open.kattis.com/problems/subarraydivisibility,Medium,Sliding Window
 POJ,Sliding Window,2823 - Sliding Window,http://poj.org/problem?id=2823,Medium,Sliding Window
-Timus,Sliding Window,1027 - D++ Again,https://acm.timus.ru/problem.aspx?space=1&num=1027,Medium,Sliding Window
-Timus,Sliding Window,1494 - Monobrow,https://acm.timus.ru/problem.aspx?space=1&num=1494,Medium,Sliding Window
-Timus,Sliding Window,1712 - Pencil Case,https://acm.timus.ru/problem.aspx?space=1&num=1712,Medium,Sliding Window
 Library Checker,Sliding Window,Max of Sliding Window,https://judge.yosupo.jp/problem/max_of_sliding_window,Medium,Sliding Window
 Library Checker,Sliding Window,Min of Sliding Window,https://judge.yosupo.jp/problem/min_of_sliding_window,Medium,Sliding Window
 Codewars,Sliding Window,Distinct Contiguous Elements in Every Window of Size k,https://www.codewars.com/kata/distinct-contiguous-elements-in-every-window-of-size-k,5 kyu,Sliding Window
@@ -486,25 +480,12 @@ E-Olymp,Sliding Window,Sliding Window,https://www.e-olymp.com/en/problems/5039,E
 E-Olymp,Sliding Window,Minimum of Sliding Window,https://www.e-olymp.com/en/problems/5040,Medium,Sliding Window
 E-Olymp,Sliding Window,Maximum of Sliding Window,https://www.e-olymp.com/en/problems/5041,Medium,Sliding Window
 E-Olymp,Sliding Window,Sum of Sliding Window,https://www.e-olymp.com/en/problems/5042,Easy,Sliding Window
-UVa,Sliding Window,10324 - Zeros and Ones,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1265,Easy,Sliding Window
-UVa,Sliding Window,10611 - The Playboy Chimp,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1552,Easy,Sliding Window
 HackerRank,Sliding Window,Sherlock and the Valid String,https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem,Medium,Sliding Window
 HackerRank,Sliding Window,Lily's Homework,https://www.hackerrank.com/challenges/lilys-homework/problem,Medium,Sliding Window
 HackerRank,Sliding Window,Subarray Sum Queries,https://www.hackerrank.com/challenges/subarray-sum-queries/problem,Hard,Sliding Window
 HackerRank,Sliding Window,Maximum Element,https://www.hackerrank.com/challenges/maximum-element/problem,Easy,Sliding Window
 HackerRank,Sliding Window,Largest Rectangle,https://www.hackerrank.com/challenges/largest-rectangle/problem,Medium,Sliding Window
 AOJ,Fixed-Size Window,DSL_3_A - The Smallest Window I,https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_3_A,Medium,Variable-size min covering substring
-AOJ,Fixed-Size Window,DSL_3_B - The Smallest Window II,https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_3_B,Medium,Variable-size containing condition
-AOJ,Variable-Size Window,DSL_3_C - The Number of Windows,https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_3_C,Medium,Variable-size sum bound count
-AOJ,Fixed-Size Window,DSL_3_D - Sliding Minimum Elements,https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_3_D,Medium,Deque sliding window min
-POJ,Variable-Size Window,3061 - Subsequence,http://poj.org/problem?id=3061,Medium,Variable-size min length sum >= target
-POJ,Variable-Size Window,3320 - Jessica's Reading Problem,http://poj.org/problem?id=3320,Medium,Variable-size min covering all unique
-POJ,Fixed-Size Window,2739 - Sum of Consecutive Prime Numbers,http://poj.org/problem?id=2739,Medium,Sliding window on prime list
-POJ,Variable-Size Window,2100 - Graveyard Design,http://poj.org/problem?id=2100,Medium,Sliding window consecutive squares
-Timus,Fixed-Size Window,1126 - Magnetic Storms,https://acm.timus.ru/problem.aspx?space=1&num=1126,Medium,Deque sliding window max
-Timus,Fixed-Size Window,1306 - Sequence Median,https://acm.timus.ru/problem.aspx?space=1&num=1306,Hard,Two-heap sliding median
-UVa,Variable-Size Window,1121 - Subsequence,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3562,Medium,Variable-size min length sum
-UVa,Variable-Size Window,11572 - Unique Snowflakes,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2619,Medium,Variable-size distinct elements hashset
 HackerRank,Fixed-Size Window,Fraudulent Activity Notifications,https://www.hackerrank.com/challenges/fraudulent-activity-notifications/problem,Medium,Counting sort sliding median
 CodeAbbey,Fixed-Size Window,141 - Sliding Window Search,https://www.codeabbey.com/index/task_view/sliding-window-search,Medium,Fixed-size window target search
 Codeforces,Variable-Size Window,602B - Approximating a Constant Range,https://codeforces.com/problemset/problem/602/B,1300,Deque min/max variable window
@@ -536,8 +517,6 @@ E-Olymp,Sliding Window,5038 - Subarray with Given Sum,https://www.e-olymp.com/en
 Codewars,Sliding Window,Maximum Subarray Sum,https://www.codewars.com/kata/54521e9ec8e60bc4de000d6c,5 kyu,Kadane sliding window
 HackerRank,Sliding Window,Bear and Steady Gene,https://www.hackerrank.com/challenges/bear-and-steady-gene/problem,Medium,Variable-size balancing window
 HackerRank,Sliding Window,Minimum Loss,https://www.hackerrank.com/challenges/minimum-loss/problem,Medium,Sorting + sliding window
-UVa,Sliding Window,11078 - Open Credit System,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2019,Easy,Sliding max difference
-Timus,Sliding Window,1026 - Questions and Answers,https://acm.timus.ru/problem.aspx?space=1&num=1026,Medium,Sorting + sliding window
 Codeforces,Variable-Size Window,1730C - Minimum Notation,https://codeforces.com/problemset/problem/1730/C,1200,Deque sliding min
 AtCoder,Variable-Size Window,ABC 291 D - Flip Cards,https://atcoder.jp/contests/abc291/tasks/abc291_d,Medium,DP + sliding window
 CodeChef,Sliding Window,CHN15A - Chef and Subarray,https://www.codechef.com/problems/CHN15A,Easy,Fixed-size XOR sliding
@@ -606,6 +585,6 @@ CodeChef,Variable-Size Window,CodeChef - SUBARR,https://www.codechef.com/problem
 CodeChef,Variable-Size Window,CodeChef - MAXSUB,https://www.codechef.com/problems/MAXSUB,Medium,Variable-size max subarray sum
 CodeChef,Variable-Size Window,CodeChef - SUBARRAY,https://www.codechef.com/problems/SUBARRAY,Medium,Variable-size subarray constraint
 AtCoder,Variable-Size Window,ABC438 B - Substring 2,https://atcoder.jp/contests/abc438/tasks/abc438_b,Easy,Variable-size substring scan
-USACO,Variable-Size Window,USACO - Subarray Divisibility,https://train.usaco.org/usacoprob2?a=123&s=div7,Medium,Prefix sum + sliding window divisible
 CodeChef,Variable-Size Window,CodeChef - SUBINC,https://www.codechef.com/problems/SUBINC,Medium,Variable-size non-decreasing subarray count
 CodeChef,Variable-Size Window,CodeChef - MAXSUBARR,https://www.codechef.com/problems/MAXSUBARR,Medium,Variable-size max subarray sum
+USACO,Sliding Window,Sliding Window (max sum),http://www.usaco.org/index.php?page=viewproblem2&cpid=train,Medium,Fixed-size sum

@@ -1,0 +1,933 @@
+Platform,Category,Problem Name,URL,Difficulty,Key Concept
+AOJ,Circle Intersection,Circle Area,https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=cgl_7_h,Medium,Circle-polygon area
+AtCoder,Convex Hull,ABC 206 D - KAIBUNsyo,https://atcoder.jp/contests/abc206/tasks/abc206_d,600,Line geometry
+AtCoder,Convex Hull,ABC 227 D - Project Planning,https://atcoder.jp/contests/abc227/tasks/abc227_d,600,Line / binary search
+AtCoder,Convex Hull,ARC 143 B - Counting Grids,https://atcoder.jp/contests/arc143/tasks/arc143_b,500,Grid geometry
+AtCoder,Distance,ABC 042 D - Iroha and a Grid,https://atcoder.jp/contests/abc042/tasks/abc042_d,1600,Grid / Manhattan distance
+AtCoder,Distance,ABC 127 E - Cell Distance,https://atcoder.jp/contests/abc127/tasks/abc127_e,4000,Manhattan distance
+AtCoder,Distance,ABC 133 D - Rain Flows into Dams,https://atcoder.jp/contests/abc133/tasks/abc133_d,600,Line / distance
+AtCoder,Distance,ABC 155 D - Pairs,https://atcoder.jp/contests/abc155/tasks/abc155_d,800,Coordinate / line
+AtCoder,Distance,ABC 179 E - Sequence Sum,https://atcoder.jp/contests/abc179/tasks/abc179_e,800,Coordinate cycle
+AtCoder,Distance,ABC 202 D - aab aba baa,https://atcoder.jp/contests/abc202/tasks/abc202_d,600,Coordinate / combinatorics
+AtCoder,Distance,ABC 207 E - Mod i,https://atcoder.jp/contests/abc207/tasks/abc207_e,2000,Coordinate DP
+AtCoder,Distance,ABC 220 D - FG operation,https://atcoder.jp/contests/abc220/tasks/abc220_d,600,Line / coordinate DP
+AtCoder,Distance,ABC 247 D - Cylinder,https://atcoder.jp/contests/abc247/tasks/abc247_d,400,Line / queue
+AtCoder,Distance,ABC 257 D - Jumping Takahashi 2,https://atcoder.jp/contests/abc257/tasks/abc257_d,800,Distance / graph
+AtCoder,Distance,ABC 267 D - Index × A,https://atcoder.jp/contests/abc267/tasks/abc267_d,600,Coordinate DP
+AtCoder,Distance,ABC 281 D - Max Multiple,https://atcoder.jp/contests/abc281/tasks/abc281_d,600,Coordinate DP
+AtCoder,Distance,ABC 304 D - A Piece of Cake,https://atcoder.jp/contests/abc304/tasks/abc304_d,800,Coordinate frequency
+AtCoder,Distance,ABC 326 D - ABC Puzzle,https://atcoder.jp/contests/abc326/tasks/abc326_d,800,Grid / coordinate
+AtCoder,Distance,ABC 340 D - Super Takahashi Bros.,https://atcoder.jp/contests/abc340/tasks/abc340_d,800,Graph / distance
+AtCoder,Distance,ABC 351 D - Grid and Magnet,https://atcoder.jp/contests/abc351/tasks/abc351_d,800,Grid / BFS distance
+AtCoder,Geometry,ABC 002 D - Triple,https://atcoder.jp/contests/abc002/tasks/abc002_d,400,Coordinate / point set
+AtCoder,Geometry,ABC 003 C - AtCoder,https://atcoder.jp/contests/abc003/tasks/abc003_c,300,Coordinate sorting
+AtCoder,Geometry,ABC 007 C - Maze,https://atcoder.jp/contests/abc007/tasks/abc007_c,400,Grid geometry / BFS
+AtCoder,Geometry,ABC 015 D - High-Speed dot,https://atcoder.jp/contests/abc015/tasks/abc015_d,500,Coordinate DP
+AtCoder,Geometry,ABC 019 C - Number Transformation,https://atcoder.jp/contests/abc019/tasks/abc019_c,400,Line geometry
+AtCoder,Geometry,ABC 022 C - Blue Bird,https://atcoder.jp/contests/abc022/tasks/abc022_c,600,Graph / distance
+AtCoder,Geometry,ABC 023 D - Shooting,https://atcoder.jp/contests/abc023/tasks/abc023_d,1000,Coordinate binary search
+AtCoder,Geometry,ABC 030 D - Score Distribution,https://atcoder.jp/contests/abc030/tasks/abc030_d,500,Coordinate geometry
+AtCoder,Geometry,ABC 036 D - Colored Ball,https://atcoder.jp/contests/abc036/tasks/abc036_d,500,Grid geometry
+AtCoder,Geometry,ABC 041 D - Revenge,https://atcoder.jp/contests/abc041/tasks/abc041_d,500,Coordinate geometry
+AtCoder,Geometry,ABC 054 C - One-stroke Path,https://atcoder.jp/contests/abc054/tasks/abc054_c,300,Grid paths
+AtCoder,Geometry,ABC 054 D - Bots,https://atcoder.jp/contests/abc054/tasks/abc054_d,500,Coordinate DP
+AtCoder,Geometry,ABC 070 D - Transit Tree Path,https://atcoder.jp/contests/abc070/tasks/abc070_d,400,Tree distance
+AtCoder,Geometry,ABC 074 D - Restoring Road Network,https://atcoder.jp/contests/abc074/tasks/abc074_d,1500,Distance matrix / Floyd
+AtCoder,Geometry,ABC 107 C - Candles,https://atcoder.jp/contests/abc107/tasks/abc107_c,300,Coordinate / distance
+AtCoder,Geometry,ABC 109 D - Make Them Even,https://atcoder.jp/contests/abc109/tasks/abc109_d,600,Grid / parity
+AtCoder,Geometry,ABC 114 D - 756,https://atcoder.jp/contests/abc114/tasks/abc114_d,400,Line geometry
+AtCoder,Geometry,ABC 124 D - Handstand,https://atcoder.jp/contests/abc124/tasks/abc124_d,600,Line / range
+AtCoder,Geometry,ABC 125 D - Handstand,https://atcoder.jp/contests/abc125/tasks/abc125_d,500,Coordinate transform
+AtCoder,Geometry,ABC 129 D - Lamp,https://atcoder.jp/contests/abc129/tasks/abc129_d,600,Grid / line of sight
+AtCoder,Geometry,ABC 132 D - Blue and Red Balls,https://atcoder.jp/contests/abc132/tasks/abc132_d,600,Line combinatorics
+AtCoder,Geometry,ABC 136 D - Gathering Children,https://atcoder.jp/contests/abc136/tasks/abc136_d,800,Line / coordinate
+AtCoder,Geometry,ABC 139 C - Lower,https://atcoder.jp/contests/abc139/tasks/abc139_c,300,Coordinate geometry
+AtCoder,Geometry,ABC 140 D - Face Produces Unhappiness,https://atcoder.jp/contests/abc140/tasks/abc140_d,600,Line / segment
+AtCoder,Geometry,ABC 141 D - Powerful Discount Tickets,https://atcoder.jp/contests/abc141/tasks/abc141_d,400,Coordinate / greedy
+AtCoder,Geometry,ABC 143 C - Slimes,https://atcoder.jp/contests/abc143/tasks/abc143_c,200,Line segments
+AtCoder,Geometry,ABC 146 D - Coloring Edges on Tree,https://atcoder.jp/contests/abc146/tasks/abc146_d,800,Graph geometry
+AtCoder,Geometry,ABC 148 D - Brick Break,https://atcoder.jp/contests/abc148/tasks/abc148_d,400,Line / sequence
+AtCoder,Geometry,ABC 150 D - Semi Common Multiple,https://atcoder.jp/contests/abc150/tasks/abc150_d,600,LCM / line
+AtCoder,Geometry,ABC 151 D - Maze Master,https://atcoder.jp/contests/abc151/tasks/abc151_d,600,Grid / BFS distance
+AtCoder,Geometry,ABC 159 D - Banned K,https://atcoder.jp/contests/abc159/tasks/abc159_d,400,Coordinate / counting
+AtCoder,Geometry,ABC 160 D - Line++,https://atcoder.jp/contests/abc160/tasks/abc160_d,600,Line graph / distance
+AtCoder,Geometry,ABC 165 C - Many Requirements,https://atcoder.jp/contests/abc165/tasks/abc165_c,300,Coordinate geometry
+AtCoder,Geometry,ABC 168 C - : (Colon),https://atcoder.jp/contests/abc168/tasks/abc168_c,300,Clock angle / triangle
+AtCoder,Geometry,ABC 170 D - Not Divisible,https://atcoder.jp/contests/abc170/tasks/abc170_d,600,Line / sieve
+AtCoder,Geometry,ABC 172 D - Sum of Divisors,https://atcoder.jp/contests/abc172/tasks/abc172_d,600,Line geometry
+AtCoder,Geometry,ABC 173 D - Chat in a Circle,https://atcoder.jp/contests/abc173/tasks/abc173_d,600,Circle geometry
+AtCoder,Geometry,ABC 175 D - Moving Piece,https://atcoder.jp/contests/abc175/tasks/abc175_d,800,Cycle / coordinate
+AtCoder,Geometry,ABC 176 D - Wizard in Maze,https://atcoder.jp/contests/abc176/tasks/abc176_d,800,Grid / BFS geometry
+AtCoder,Geometry,ABC 177 D - Friends,https://atcoder.jp/contests/abc177/tasks/abc177_d,600,Graph / DSU geometry
+AtCoder,Geometry,ABC 178 C - Ubiquity,https://atcoder.jp/contests/abc178/tasks/abc178_c,300,Coordinate geometry
+AtCoder,Geometry,ABC 180 D - Takahashi Unevolved,https://atcoder.jp/contests/abc180/tasks/abc180_d,600,Line geometry
+AtCoder,Geometry,ABC 181 E - Transformable Teacher,https://atcoder.jp/contests/abc181/tasks/abc181_e,2500,Coordinate geometry
+AtCoder,Geometry,ABC 182 D - Wandering,https://atcoder.jp/contests/abc182/tasks/abc182_d,600,Line / prefix maxima
+AtCoder,Geometry,ABC 183 D - Water Heater,https://atcoder.jp/contests/abc183/tasks/abc183_d,600,Line / interval
+AtCoder,Geometry,ABC 184 D - Increment of Coins,https://atcoder.jp/contests/abc184/tasks/abc184_d,800,3D DP / coordinate
+AtCoder,Geometry,ABC 185 D - Stamp,https://atcoder.jp/contests/abc185/tasks/abc185_d,600,Line / interval
+AtCoder,Geometry,ABC 186 D - Sum of Difference,https://atcoder.jp/contests/abc186/tasks/abc186_d,600,Manhattan distance / sum
+AtCoder,Geometry,ABC 190 D - Staircase Sequences,https://atcoder.jp/contests/abc190/tasks/abc190_d,800,Arithmetic sequence / grid
+AtCoder,Geometry,ABC 191 D - Circle Lattice Points,https://atcoder.jp/contests/abc191/tasks/abc191_d,1200,Lattice points in circle
+AtCoder,Geometry,ABC 192 D - Base n,https://atcoder.jp/contests/abc192/tasks/abc192_d,800,Coordinate / line
+AtCoder,Geometry,ABC 193 D - Poker,https://atcoder.jp/contests/abc193/tasks/abc193_d,600,Coordinate / counting
+AtCoder,Geometry,ABC 194 D - Journey,https://atcoder.jp/contests/abc194/tasks/abc194_d,800,Geometry / probability
+AtCoder,Geometry,ABC 195 D - Shipping Center,https://atcoder.jp/contests/abc195/tasks/abc195_d,800,Coordinate / greedy
+AtCoder,Geometry,ABC 196 D - Hanjo,https://atcoder.jp/contests/abc196/tasks/abc196_d,800,Grid / rectangle tiling
+AtCoder,Geometry,ABC 197 D - Opposite,https://atcoder.jp/contests/abc197/tasks/abc197_d,600,Regular polygon / coordinates
+AtCoder,Geometry,ABC 199 D - RGB Coloring 2,https://atcoder.jp/contests/abc199/tasks/abc199_d,800,Graph / coloring geometry
+AtCoder,Geometry,ABC 201 D - Game in Momotetsu World,https://atcoder.jp/contests/abc201/tasks/abc201_d,800,Grid / game DP
+AtCoder,Geometry,ABC 203 D - Pond,https://atcoder.jp/contests/abc203/tasks/abc203_d,800,Grid / binary search
+AtCoder,Geometry,ABC 204 C - Tour,https://atcoder.jp/contests/abc204/tasks/abc204_c,300,Grid geometry
+AtCoder,Geometry,ABC 205 D - Kth Excluded,https://atcoder.jp/contests/abc205/tasks/abc205_d,600,Line / binary search
+AtCoder,Geometry,ABC 207 C - Many Segments,https://atcoder.jp/contests/abc207/tasks/abc207_c,300,Segment intersection
+AtCoder,Geometry,ABC 209 D - Collision,https://atcoder.jp/contests/abc209/tasks/abc209_d,600,Tree distance parity
+AtCoder,Geometry,ABC 210 D - National Railway,https://atcoder.jp/contests/abc210/tasks/abc210_d,800,Grid / Manhattan DP
+AtCoder,Geometry,ABC 212 D - Querying Multiset,https://atcoder.jp/contests/abc212/tasks/abc212_d,600,Line / coordinate
+AtCoder,Geometry,ABC 213 D - Takahashi Tour,https://atcoder.jp/contests/abc213/tasks/abc213_d,600,Graph / tree geometry
+AtCoder,Geometry,ABC 214 C - Distribution,https://atcoder.jp/contests/abc214/tasks/abc214_c,300,Coordinate / grid
+AtCoder,Geometry,ABC 215 D - Coprime 2,https://atcoder.jp/contests/abc215/tasks/abc215_d,600,Line / sieve
+AtCoder,Geometry,ABC 217 D - Cutting Woods,https://atcoder.jp/contests/abc217/tasks/abc217_d,600,Line / coordinate
+AtCoder,Geometry,ABC 218 F - Blocked Roads,https://atcoder.jp/contests/abc218/tasks/abc218_f,2000,Grid geometry / shortest
+AtCoder,Geometry,ABC 219 D - Strange Lunchbox,https://atcoder.jp/contests/abc219/tasks/abc219_d,800,2D DP / coordinate
+AtCoder,Geometry,ABC 221 D - Online games,https://atcoder.jp/contests/abc221/tasks/abc221_d,600,Line / sweep
+AtCoder,Geometry,ABC 222 D - Between Two Arrays,https://atcoder.jp/contests/abc222/tasks/abc222_d,600,Coordinate DP
+AtCoder,Geometry,ABC 224 D - 8 Puzzle on Graph,https://atcoder.jp/contests/abc224/tasks/abc224_d,800,Grid / BFS geometry
+AtCoder,Geometry,ABC 225 D - Play Train,https://atcoder.jp/contests/abc225/tasks/abc225_d,600,Line / linked list
+AtCoder,Geometry,ABC 230 D - Destroyer Takahashi,https://atcoder.jp/contests/abc230/tasks/abc230_d,600,Line / interval greedy
+AtCoder,Geometry,ABC 232 D - Degenerate Matrix,https://atcoder.jp/contests/abc232/tasks/abc232_d,600,Grid / BFS
+AtCoder,Geometry,ABC 233 D - Count Interval,https://atcoder.jp/contests/abc233/tasks/abc233_d,600,Line / prefix sum
+AtCoder,Geometry,ABC 234 D - Prefix K-th Max,https://atcoder.jp/contests/abc234/tasks/abc234_d,600,Coordinate / heap
+AtCoder,Geometry,ABC 235 F - Variety of Digits,https://atcoder.jp/contests/abc235/tasks/abc235_f,3000,Coordinate geometry
+AtCoder,Geometry,ABC 237 D - LR insertion,https://atcoder.jp/contests/abc237/tasks/abc237_d,600,Line / deque
+AtCoder,Geometry,ABC 238 E - Range Sums,https://atcoder.jp/contests/abc238/tasks/abc238_e,800,Segment / interval
+AtCoder,Geometry,ABC 239 D - Prime Sum Game,https://atcoder.jp/contests/abc239/tasks/abc239_d,600,Line / number
+AtCoder,Geometry,ABC 240 D - Strange Balls,https://atcoder.jp/contests/abc240/tasks/abc240_d,400,Line geometry
+AtCoder,Geometry,ABC 241 D - Sequence Query,https://atcoder.jp/contests/abc241/tasks/abc241_d,600,Coordinate / multiset
+AtCoder,Geometry,ABC 242 C - 1111gal password,https://atcoder.jp/contests/abc242/tasks/abc242_c,300,Grid adjacency
+AtCoder,Geometry,ABC 243 D - Moves on Binary Tree,https://atcoder.jp/contests/abc243/tasks/abc243_d,600,Tree coordinate
+AtCoder,Geometry,ABC 245 D - Polynomial division,https://atcoder.jp/contests/abc245/tasks/abc245_d,600,Coordinate / polynomial
+AtCoder,Geometry,ABC 246 C - Coupon,https://atcoder.jp/contests/abc246/tasks/abc246_c,300,Coordinate geometry
+AtCoder,Geometry,ABC 248 D - Range Count Query,https://atcoder.jp/contests/abc248/tasks/abc248_d,600,Coordinate / binary search
+AtCoder,Geometry,ABC 249 D - Index Trio,https://atcoder.jp/contests/abc249/tasks/abc249_d,600,Coordinate / frequency
+AtCoder,Geometry,ABC 250 D - 250-like Number,https://atcoder.jp/contests/abc250/tasks/abc250_d,600,Line / prime
+AtCoder,Geometry,ABC 251 D - Three Days Ago,https://atcoder.jp/contests/abc251/tasks/abc251_d,600,Coordinate / prefix
+AtCoder,Geometry,ABC 252 D - Distinct Trio,https://atcoder.jp/contests/abc252/tasks/abc252_d,600,Coordinate / counting
+AtCoder,Geometry,ABC 253 D - FizzBuzz Sum,https://atcoder.jp/contests/abc253/tasks/abc253_d,600,Line / inclusion-exclusion
+AtCoder,Geometry,ABC 254 D - Together,https://atcoder.jp/contests/abc254/tasks/abc254_d,600,Coordinate / counting
+AtCoder,Geometry,ABC 255 C - ±1 Operation 1,https://atcoder.jp/contests/abc255/tasks/abc255_c,500,Coordinate / line
+AtCoder,Geometry,ABC 256 D - Divide by 2 or 3,https://atcoder.jp/contests/abc256/tasks/abc256_d,600,Line / interval
+AtCoder,Geometry,ABC 258 C - Rotation,https://atcoder.jp/contests/abc258/tasks/abc258_c,300,Geometry on line
+AtCoder,Geometry,ABC 259 C - XX to XXX,https://atcoder.jp/contests/abc259/tasks/abc259_c,300,Coordinate transform
+AtCoder,Geometry,ABC 260 C - Changing Jewels,https://atcoder.jp/contests/abc260/tasks/abc260_c,300,Coordinate geometry
+AtCoder,Geometry,ABC 261 D - Flipping and Bonus,https://atcoder.jp/contests/abc261/tasks/abc261_d,600,Coordinate DP
+AtCoder,Geometry,ABC 262 D - I Hate Non-integer Number,https://atcoder.jp/contests/abc262/tasks/abc262_d,600,Coordinate DP
+AtCoder,Geometry,ABC 263 D - Lunchbox,https://atcoder.jp/contests/abc263/tasks/abc263_d,600,Line / interval
+AtCoder,Geometry,ABC 265 C - Belt Conveyor,https://atcoder.jp/contests/abc265/tasks/abc265_c,300,Grid coordinates
+AtCoder,Geometry,ABC 266 D - Snuke Panic (1D),https://atcoder.jp/contests/abc266/tasks/abc266_d,600,Coordinate DP
+AtCoder,Geometry,ABC 269 D - Do use hexagon grid,https://atcoder.jp/contests/abc269/tasks/abc269_d,600,Hexagonal grid
+AtCoder,Geometry,ABC 270 C - Simple path,https://atcoder.jp/contests/abc270/tasks/abc270_c,400,Graph / tree geometry
+AtCoder,Geometry,ABC 271 D - Flip and Adjust,https://atcoder.jp/contests/abc271/tasks/abc271_d,600,Coordinate DP
+AtCoder,Geometry,ABC 272 D - Root M Leaper,https://atcoder.jp/contests/abc272/tasks/abc272_d,600,Grid / BFS distance
+AtCoder,Geometry,ABC 273 D - LRUD Instructions,https://atcoder.jp/contests/abc273/tasks/abc273_d,800,Coordinate movement
+AtCoder,Geometry,ABC 274 D - Robot Arms 2,https://atcoder.jp/contests/abc274/tasks/abc274_d,2000,Coordinate DP
+AtCoder,Geometry,ABC 275 D - Yet Another Recursive Function,https://atcoder.jp/contests/abc275/tasks/abc275_d,600,Coordinate DP
+AtCoder,Geometry,ABC 276 D - Divide by 2 or 3,https://atcoder.jp/contests/abc276/tasks/abc276_d,600,Line / GCD
+AtCoder,Geometry,ABC 277 D - Takahashi's Solitaire,https://atcoder.jp/contests/abc277/tasks/abc277_d,600,Line / sort
+AtCoder,Geometry,ABC 278 D - All Assign Point Add,https://atcoder.jp/contests/abc278/tasks/abc278_d,600,Coordinate / lazy
+AtCoder,Geometry,ABC 279 D - Freefall,https://atcoder.jp/contests/abc279/tasks/abc279_d,600,Coordinate / ternary
+AtCoder,Geometry,ABC 280 D - Factorial and Multiple,https://atcoder.jp/contests/abc280/tasks/abc280_d,600,Line / prime
+AtCoder,Geometry,ABC 284 D - Happy Birthday! 2,https://atcoder.jp/contests/abc284/tasks/abc284_d,400,Coordinate geometry
+AtCoder,Geometry,ABC 285 D - Change Usernames,https://atcoder.jp/contests/abc285/tasks/abc285_d,600,Graph / coordinate
+AtCoder,Geometry,ABC 286 D - Money in Hand,https://atcoder.jp/contests/abc286/tasks/abc286_d,600,Coordinate DP
+AtCoder,Geometry,ABC 287 D - Match or Not,https://atcoder.jp/contests/abc287/tasks/abc287_d,600,Line / comparison
+AtCoder,Geometry,ABC 288 D - Range Add Query,https://atcoder.jp/contests/abc288/tasks/abc288_d,800,Line / difference
+AtCoder,Geometry,ABC 296 D - M<=ab,https://atcoder.jp/contests/abc296/tasks/abc296_d,800,Coordinate search
+AtCoder,Geometry,ABC 297 D - Common Divisor Game,https://atcoder.jp/contests/abc297/tasks/abc297_d,600,Coordinate / Euclidean
+AtCoder,Geometry,ABC 298 D - Writing a Numeral,https://atcoder.jp/contests/abc298/tasks/abc298_d,600,Coordinate / modulo
+AtCoder,Geometry,ABC 299 D - Find by Query,https://atcoder.jp/contests/abc299/tasks/abc299_d,600,Line / binary search
+AtCoder,Geometry,ABC 300 D - AABBC,https://atcoder.jp/contests/abc300/tasks/abc300_d,800,Coordinate geometry
+AtCoder,Geometry,ABC 302 D - Impartial Gift,https://atcoder.jp/contests/abc302/tasks/abc302_d,600,Line / sorting
+AtCoder,Geometry,ABC 303 D - Shift vs CapsLock,https://atcoder.jp/contests/abc303/tasks/abc303_d,600,Line DP
+AtCoder,Geometry,ABC 305 D - Sleep Log,https://atcoder.jp/contests/abc305/tasks/abc305_d,600,Line / interval
+AtCoder,Geometry,ABC 306 D - Poisonous Full-Course,https://atcoder.jp/contests/abc306/tasks/abc306_d,600,Line DP
+AtCoder,Geometry,ABC 308 D - Snuke Maze,https://atcoder.jp/contests/abc308/tasks/abc308_d,600,Grid / BFS
+AtCoder,Geometry,ABC 309 D - Add One Edge,https://atcoder.jp/contests/abc309/tasks/abc309_d,800,Graph / distance
+AtCoder,Geometry,ABC 310 D - Peaceful Teams,https://atcoder.jp/contests/abc310/tasks/abc310_d,800,Coordinate / grouping
+AtCoder,Geometry,ABC 311 D - Grid Ice Floor,https://atcoder.jp/contests/abc311/tasks/abc311_d,800,Grid / BFS geometry
+AtCoder,Geometry,ABC 315 D - Magical Cookies,https://atcoder.jp/contests/abc315/tasks/abc315_d,800,Grid / coordinate
+AtCoder,Geometry,ABC 316 D - Minimum Width,https://atcoder.jp/contests/abc316/tasks/abc316_d,800,Line / binary search
+AtCoder,Geometry,ABC 317 D - President,https://atcoder.jp/contests/abc317/tasks/abc317_d,800,Coordinate DP
+AtCoder,Geometry,ABC 319 D - Minimum Width,https://atcoder.jp/contests/abc319/tasks/abc319_d,800,Line / binary search
+AtCoder,Geometry,ABC 320 D - Relative Position,https://atcoder.jp/contests/abc320/tasks/abc320_d,800,Coordinate / BFS graph
+AtCoder,Geometry,ABC 321 D - Set Menu,https://atcoder.jp/contests/abc321/tasks/abc321_d,800,Line / sorting
+AtCoder,Geometry,ABC 323 D - Merge Slimes,https://atcoder.jp/contests/abc323/tasks/abc323_d,800,Coordinate / merging
+AtCoder,Geometry,ABC 325 D - Printing Machine,https://atcoder.jp/contests/abc325/tasks/abc325_d,800,Line / scheduling
+AtCoder,Geometry,ABC 327 D - Good Tuple Problem,https://atcoder.jp/contests/abc327/tasks/abc327_d,800,Graph / coordinate
+AtCoder,Geometry,ABC 329 D - Election Quick Report,https://atcoder.jp/contests/abc329/tasks/abc329_d,600,Coordinate / frequency
+AtCoder,Geometry,ABC 330 D - Counting Ls,https://atcoder.jp/contests/abc330/tasks/abc330_d,600,Grid / coordinate counting
+AtCoder,Geometry,ABC 331 D - Water Heater,https://atcoder.jp/contests/abc331/tasks/abc331_d,800,Grid / 2D prefix
+AtCoder,Geometry,ABC 332 D - Swapping Puzzle,https://atcoder.jp/contests/abc332/tasks/abc332_d,800,Grid / coordinate BFS
+AtCoder,Geometry,ABC 333 D - Erase Leaves,https://atcoder.jp/contests/abc333/tasks/abc333_d,600,Tree coordinate
+AtCoder,Geometry,ABC 334 D - Reindeer and Sleigh,https://atcoder.jp/contests/abc334/tasks/abc334_d,600,Line / sorting
+AtCoder,Geometry,ABC 335 D - Loong and Takahashi,https://atcoder.jp/contests/abc335/tasks/abc335_d,600,Grid / spiral
+AtCoder,Geometry,ABC 336 D - Pyramid,https://atcoder.jp/contests/abc336/tasks/abc336_d,800,Line / coordinate
+AtCoder,Geometry,ABC 337 D - Cheating Gomoku Narabe,https://atcoder.jp/contests/abc337/tasks/abc337_d,600,Grid / sliding window
+AtCoder,Geometry,ABC 338 D - Island Tour,https://atcoder.jp/contests/abc338/tasks/abc338_d,800,Circle / distance
+AtCoder,Geometry,ABC 339 D - Synchronized Players,https://atcoder.jp/contests/abc339/tasks/abc339_d,800,Grid / BFS coordinate
+AtCoder,Geometry,ABC 341 D - Only one of kind,https://atcoder.jp/contests/abc341/tasks/abc341_d,800,Line / binary search
+AtCoder,Geometry,ABC 342 D - Square Pair,https://atcoder.jp/contests/abc342/tasks/abc342_d,800,Coordinate / number theory
+AtCoder,Geometry,ABC 343 D - Diversity of Scores,https://atcoder.jp/contests/abc343/tasks/abc343_d,800,Coordinate / frequency
+AtCoder,Geometry,ABC 345 D - Tiling,https://atcoder.jp/contests/abc345/tasks/abc345_d,800,Grid / rectangle tiling
+AtCoder,Geometry,ABC 346 D - Gomamayo Sequence,https://atcoder.jp/contests/abc346/tasks/abc346_d,800,Line DP
+AtCoder,Geometry,ABC 348 D - Medicines on Grid,https://atcoder.jp/contests/abc348/tasks/abc348_d,800,Grid / BFS geometry
+AtCoder,Geometry,ABC 349 D - Divide Interval,https://atcoder.jp/contests/abc349/tasks/abc349_d,800,Line / interval
+AtCoder,Geometry,ABC 350 D - New Friend,https://atcoder.jp/contests/abc350/tasks/abc350_d,800,Graph / coordinate
+AtCoder,Geometry,AGC 015 C - Nuske vs Phantom Thnook,https://atcoder.jp/contests/agc015/tasks/agc015_c,1600,Grid connectivity
+AtCoder,Geometry,AGC 043 A - Range Flip Find Route,https://atcoder.jp/contests/agc043/tasks/agc043_a,800,Grid geometry
+AtCoder,Geometry,ARC 112 A - B = C,https://atcoder.jp/contests/arc112/tasks/arc112_a,300,Line intersection
+AtCoder,Geometry,ARC 153 B - Grid Rotations,https://atcoder.jp/contests/arc153/tasks/arc153_b,800,Grid rotation
+AtCoder,Line Intersection,ABC 090 D - Remainder Reminder,https://atcoder.jp/contests/abc090/tasks/abc090_d,600,Coordinate / line
+AtCoder,Line Intersection,ABC 174 D - Alter,https://atcoder.jp/contests/abc174/tasks/abc174_d,600,Line / swap
+Baekjoon,Circle Intersection,Circle Intersection,https://acmicpc.net/problem/7869,Gold 1,Circle intersection area
+Baekjoon,Convex Hull,City Construction,https://acmicpc.net/problem/20149,Gold 1,Segment intersection
+Baekjoon,Convex Hull,Convex Hull,https://acmicpc.net/problem/1708,Gold 1,Convex hull / Graham scan
+Baekjoon,Convex Hull,Convex Hull,https://acmicpc.net/problem/4181,Gold 1,Convex hull / monotone chain
+Baekjoon,Convex Hull,Farthest Distance,https://acmicpc.net/problem/1310,Gold 1,Rotating calipers / diameter
+Baekjoon,Convex Hull,Nearest Convex Hull,https://acmicpc.net/problem/1712,Gold 1,Convex hull / closest pair
+Baekjoon,Geometry,3D Geometry,https://acmicpc.net/problem/2147,Gold 3,3D coordinate geometry
+Baekjoon,Geometry,Area of Triangle,https://acmicpc.net/problem/11758,Gold 5,CCW / triangle area
+Baekjoon,Geometry,Basketball,https://www.acmicpc.net/problem/1743,Silver 1,Coordinate / grid geometry
+Baekjoon,Geometry,Checkers,https://www.acmicpc.net/problem/3066,Gold 4,Coordinate geometry
+Baekjoon,Geometry,Circle and Points,https://www.acmicpc.net/problem/2673,Gold 2,Circle coverage of points
+Baekjoon,Geometry,Citadel,https://www.acmicpc.net/problem/1150,Gold 3,Closest point queries
+Baekjoon,Geometry,Distance,https://www.acmicpc.net/problem/1485,Silver 3,Square check / distance
+Baekjoon,Geometry,Drawing Circles,https://acmicpc.net/problem/1029,Gold 4,Circle geometry
+Baekjoon,Geometry,Euler's Gift,https://www.acmicpc.net/problem/18227,Gold 5,Circle geometry
+Baekjoon,Geometry,Fence,https://www.acmicpc.net/problem/2562,Gold 4,Convex hull / fence
+Baekjoon,Geometry,Geometric Progression,https://www.acmicpc.net/problem/2012,Silver 1,Coordinate sorting
+Baekjoon,Geometry,Ladder,https://www.acmicpc.net/problem/2022,Gold 4,Intersecting ladders / binary search
+Baekjoon,Geometry,Let's meet in the middle,https://acmicpc.net/problem/1008,Medium,Manhattan distance
+Baekjoon,Geometry,Line,https://www.acmicpc.net/problem/6439,Gold 3,Line segment / rectangle intersection
+Baekjoon,Geometry,Line Segment,https://acmicpc.net/problem/1595,Gold 4,Segment geometry
+Baekjoon,Geometry,Polygon,https://www.acmicpc.net/problem/10254,Gold 1,Convex hull / farthest pair
+Baekjoon,Geometry,Rectangle,https://acmicpc.net/problem/1002,Silver 3,Rectangle in coordinate
+Baekjoon,Geometry,Rectangle,https://www.acmicpc.net/problem/2527,Silver 1,Rectangle overlap
+Baekjoon,Geometry,Rectangles,https://www.acmicpc.net/problem/15685,Gold 4,Dragon curve geometry
+Baekjoon,Geometry,Rotation,https://www.acmicpc.net/problem/1347,Silver 3,Coordinate rotation
+Baekjoon,Geometry,Ship,https://www.acmicpc.net/problem/1069,Gold 3,Circle / distance geometry
+Baekjoon,Geometry,Square,https://www.acmicpc.net/problem/1035,Silver 3,Square / coordinate geometry
+Baekjoon,Geometry,Stars,https://www.acmicpc.net/problem/1196,Gold 3,Line arrangement
+Baekjoon,Geometry,Triangle,https://acmicpc.net/problem/1342,Silver 3,Triangle classification
+Baekjoon,Geometry,Triangle,https://www.acmicpc.net/problem/3009,Silver 3,Find fourth point of rectangle
+Baekjoon,Geometry,Turret,https://acmicpc.net/problem/1004,Silver 3,Circle position / distance
+Baekjoon,Line Intersection,Line Intersection,https://acmicpc.net/problem/17386,Gold 2,Line segment intersection
+Baekjoon,Line Intersection,Line Intersection 2,https://acmicpc.net/problem/17387,Gold 1,Line segment intersection (including collinear)
+Baekjoon,Point in Polygon,Point in Polygon,https://acmicpc.net/problem/11664,Gold 3,Point in polygon / distance
+Baekjoon,Polygon Area,Polygon Area,https://acmicpc.net/problem/2166,Gold 5,Shoelace formula
+BinarySearch,Distance,K Closest Points to Origin,https://binarysearch.com/problems/k-closest-points-to-origin,Medium,Euclidean distance
+BinarySearch,Geometry,Collinear Points,https://binarysearch.com/problems/collinear-points,Medium,Collinearity check
+BinarySearch,Geometry,Intersecting Lines,https://binarysearch.com/problems/intersecting-lines,Medium,Line intersection
+BinarySearch,Geometry,Line of People,https://binarysearch.com/problems/line-of-people,Easy,Coordinate / line
+BinarySearch,Geometry,Rectangle Overlap,https://binarysearch.com/problems/rectangle-overlap,Easy,Rectangle overlap
+BinarySearch,Geometry,Triangle Area,https://binarysearch.com/problems/triangle-area,Easy,Shoelace formula
+CodeAbbey,Basic Geometry,Distance,https://codeabbey.com/index/task_view/distance-between-points,Easy,Euclidean distance
+CodeAbbey,Basic Geometry,Points in a Circle,https://codeabbey.com/index/task_view/points-in-a-circle,Easy,Circle radius check
+CodeAbbey,Basic Geometry,Rectangle,https://codeabbey.com/index/task_view/rectangle,Easy,Rectangle geometry
+CodeAbbey,Basic Geometry,Square,https://codeabbey.com/index/task_view/square,Easy,Square geometry
+CodeAbbey,Basic Geometry,Triangle Area,https://codeabbey.com/index/task_view/triangle-area,Easy,Area via coordinates
+CodeAbbey,Basic Geometry,Triangles,https://codeabbey.com/index/task_view/triangles,Easy,Triangle classification
+CodeChef,Geometry,AREA,https://www.codechef.com/problems/AREA,Easy,Area calculation
+CodeChef,Geometry,Area of a Circle,https://codechef.com/problems/areacircle,Easy,Circle area
+CodeChef,Geometry,CCW,https://www.codechef.com/problems/CCW,Medium,Counter-clockwise orientation
+CodeChef,Geometry,CHEFCIRC,https://www.codechef.com/problems/CHEFCIRC,Hard,Circle covering points
+CodeChef,Geometry,CHN15A,https://www.codechef.com/problems/CHN15A,Easy,Coordinate geometry
+CodeChef,Geometry,Chef and Rainbow Road,https://codechef.com/problems/rainbow,Medium,Geometry / probability
+CodeChef,Geometry,Chef in a Plane,https://codechef.com/problems/plane,Medium,Coordinate geometry
+CodeChef,Geometry,Circle Union,https://codechef.com/problems/ciru,Hard,Circle union area
+CodeChef,Geometry,Circular Track,https://codechef.com/problems/circle,Easy,Circle geometry
+CodeChef,Geometry,Convex Polygon,https://codechef.com/problems/convex,Medium,Convex polygon
+CodeChef,Geometry,DISTANCE,https://www.codechef.com/problems/DISTANCE,Easy,Distance formula
+CodeChef,Geometry,Geometric Mean,https://codechef.com/problems/geo,Medium,Geometric progression
+CodeChef,Geometry,MINMAX,https://www.codechef.com/problems/MINMAX,Medium,Geometric median
+CodeChef,Geometry,Manhattan Distance,https://codechef.com/problems/mandist,Easy,Manhattan distance
+CodeChef,Geometry,POINTCONV,https://www.codechef.com/problems/POINTCONV,Medium,Point in convex polygon
+CodeChef,Geometry,Point of Impact,https://codechef.com/problems/billrd,Easy,Reflection geometry
+CodeChef,Geometry,Rectangle Area,https://codechef.com/problems/rectangle,Easy,Rectangle in coordinates
+CodeChef,Geometry,Rotating Rectangle,https://codechef.com/problems/rotrec,Medium,Rectangle rotation
+CodeChef,Geometry,SQUARE,https://www.codechef.com/problems/SQUARE,Easy,Square check
+CodeChef,Geometry,TRIANGLE,https://www.codechef.com/problems/TRIANGLE,Easy,Triangle check
+CodeChef,Geometry,Triangle Counting,https://codechef.com/problems/triangsum,Easy,Triangle geometry
+CodeChef,Geometry,Triangle With Maximum Area,https://codechef.com/problems/tmaxarea,Medium,Max triangle area
+CodeChef,Line Intersection,INTSEG,https://www.codechef.com/problems/INTSEG,Medium,Line segment intersection
+CodeChef,Line Intersection,Line Segment,https://codechef.com/problems/lines,Easy,Line geometry
+CodeChef,Polygon Area,POLYAREA,https://www.codechef.com/problems/POLYAREA,Medium,Shoelace formula
+Codeforces,Geometry,...Dary!,https://codeforces.com/problemset/problem/696/f,3300,binary search; geometry; two pointers
+Codeforces,Geometry,2D Traveling,https://codeforces.com/problemset/problem/1869/b,1100,geometry; math; shortest paths; sortings
+Codeforces,Geometry,4-point polyline,https://codeforces.com/problemset/problem/452/b,1800,brute force; constructive algorithms; geometry; trees
+Codeforces,Geometry,5G Antenna Towers,https://codeforces.com/problemset/problem/1423/e,2700,geometry
+Codeforces,Geometry,A Colourful Prospect,https://codeforces.com/problemset/problem/933/c,2700,geometry; graphs
+Codeforces,Geometry,A New Beginning,https://codeforces.com/problemset/problem/1534/g,3300,data structures; dp; geometry; sortings
+Codeforces,Geometry,A Problem about Polyline,https://codeforces.com/problemset/problem/578/a,1700,geometry; math
+Codeforces,Geometry,A Shade of Moonlight,https://codeforces.com/problemset/problem/989/d,2500,binary search; geometry; math; sortings; two pointers
+Codeforces,Geometry,A Trance of Nightfall,https://codeforces.com/problemset/problem/989/e,2700,dp; geometry; matrices; probabilities
+Codeforces,Geometry,Aerodynamic,https://codeforces.com/problemset/problem/1299/b,1800,geometry
+Codeforces,Geometry,Algoland and Berland,https://codeforces.com/problemset/problem/1070/m,3000,constructive algorithms; divide and conquer; geometry
+Codeforces,Geometry,Alternative Reality,https://codeforces.com/problemset/problem/119/e,2400,geometry
+Codeforces,Geometry,Alyona and Triangles,https://codeforces.com/problemset/problem/682/e,2600,geometry; two pointers
+Codeforces,Geometry,Amr and Pins,https://codeforces.com/problemset/problem/507/b,1400,geometry; math
+Codeforces,Geometry,An overnight dance in discotheque,https://codeforces.com/problemset/problem/814/d,2000,dfs and similar; dp; geometry; greedy; trees
+Codeforces,Geometry,Analyzing Polyline,https://codeforces.com/problemset/problem/195/d,1900,geometry; math; sortings
+Codeforces,Geometry,Ancient Berland Circus,https://codeforces.com/problemset/problem/1/c,2100,geometry; math
+Codeforces,Geometry,Ancient civilizations,https://codeforces.com/problemset/problem/1045/e,3200,constructive algorithms; geometry
+Codeforces,Geometry,Anton and Lines,https://codeforces.com/problemset/problem/593/b,1600,geometry; sortings
+Codeforces,Geometry,Archer's Shot,https://codeforces.com/problemset/problem/78/d,2300,binary search; geometry; math; two pointers
+Codeforces,Geometry,Area of Two Circles' Intersection,https://codeforces.com/problemset/problem/600/d,2000,geometry
+Codeforces,Geometry,Area of a Star,https://codeforces.com/problemset/problem/630/p,2100,geometry; math
+Codeforces,Geometry,Armistice Area Apportionment,https://codeforces.com/problemset/problem/645/g,3200,binary search; geometry
+Codeforces,Geometry,Aroma's Search,https://codeforces.com/problemset/problem/1292/b,1700,brute force; constructive algorithms; geometry; greedy; implementation
+Codeforces,Geometry,Arpa and an exam about geometry,https://codeforces.com/problemset/problem/851/b,1400,geometry; math
+Codeforces,Geometry,Arranging Crystal Balls,https://codeforces.com/problemset/problem/1740/i,3500,data structures; divide and conquer; dp; geometry; graphs; number theory
+Codeforces,Geometry,Arrow,https://codeforces.com/problemset/problem/630/o,2000,geometry
+Codeforces,Geometry,Astronomy,https://codeforces.com/problemset/problem/949/f,3300,geometry; probabilities
+Codeforces,Geometry,BCPC,https://codeforces.com/problemset/problem/592/e,2700,binary search; geometry; two pointers
+Codeforces,Geometry,Bad Triangle,https://codeforces.com/problemset/problem/1398/a,800,geometry; math
+Codeforces,Geometry,Balance the Cards,https://codeforces.com/problemset/problem/1503/f,3500,constructive algorithms; data structures; divide and conquer; geometry; graphs; implementation
+Codeforces,Geometry,Balanced Removals (Easier),https://codeforces.com/problemset/problem/1237/c1,1700,constructive algorithms; geometry; greedy
+Codeforces,Geometry,Balls of Steel,https://codeforces.com/problemset/problem/1450/b,1000,brute force; geometry; greedy
+Codeforces,Geometry,Barcelonian Distance,https://codeforces.com/problemset/problem/1032/d,1900,geometry; implementation
+Codeforces,Geometry,Battlefield,https://codeforces.com/problemset/problem/182/a,2200,geometry; graphs; implementation; shortest paths
+Codeforces,Geometry,Bear and Bowling 4,https://codeforces.com/problemset/problem/660/f,2500,binary search; data structures; divide and conquer; geometry; ternary search
+Codeforces,Geometry,Bear and Floodlight,https://codeforces.com/problemset/problem/385/d,2200,bitmasks; dp; geometry
+Codeforces,Geometry,Bear and Isomorphic Points,https://codeforces.com/problemset/problem/771/f,3300,geometry; two pointers
+Codeforces,Geometry,BerPaint,https://codeforces.com/problemset/problem/44/f,2700,geometry; graphs
+Codeforces,Geometry,Bermuda Triangle,https://codeforces.com/problemset/problem/2097/c,2400,chinese remainder theorem; geometry; implementation; math; number theory
+Codeforces,Geometry,Beru-taxi,https://codeforces.com/problemset/problem/706/a,900,brute force; geometry; implementation
+Codeforces,Geometry,Bessie's Birthday Cake (Easy Version),https://codeforces.com/problemset/problem/1942/c1,1300,geometry; greedy; math
+Codeforces,Geometry,Bessie's Birthday Cake (Hard Version),https://codeforces.com/problemset/problem/1942/c2,1700,geometry; greedy; math
+Codeforces,Geometry,Bicycle Race,https://codeforces.com/problemset/problem/659/d,1500,geometry; implementation; math
+Codeforces,Geometry,Billiard,https://codeforces.com/problemset/problem/982/e,2600,geometry; number theory
+Codeforces,Geometry,Birthday,https://codeforces.com/problemset/problem/2172/i,2000,geometry
+Codeforces,Geometry,Birthday,https://codeforces.com/problemset/problem/128/e,2900,geometry; math
+Codeforces,Geometry,Black Circles,https://codeforces.com/problemset/problem/2002/c,1200,brute force; geometry; greedy; math
+Codeforces,Geometry,Blackslex and Girls,https://codeforces.com/problemset/problem/2179/e,1800,constructive algorithms; geometry; math
+Codeforces,Geometry,Bob and stages,https://codeforces.com/problemset/problem/852/h,3000,dp; geometry
+Codeforces,Geometry,Boboniu and String,https://codeforces.com/problemset/problem/1394/c,2600,binary search; geometry; ternary search
+Codeforces,Geometry,Bovine Dilemma,https://codeforces.com/problemset/problem/1466/a,800,brute force; geometry; math
+Codeforces,Geometry,Bowls,https://codeforces.com/problemset/problem/36/c,2200,geometry; implementation
+Codeforces,Geometry,Building Bridge,https://codeforces.com/problemset/problem/250/d,1900,geometry; ternary search; two pointers
+Codeforces,Geometry,Building an Amusement Park,https://codeforces.com/problemset/problem/1575/b,2300,binary search; geometry
+Codeforces,Geometry,Cannon,https://codeforces.com/problemset/problem/47/e,2200,data structures; geometry; sortings
+Codeforces,Geometry,Captain Marmot,https://codeforces.com/problemset/problem/474/c,2000,brute force; geometry
+Codeforces,Geometry,Cardboard for Pictures,https://codeforces.com/problemset/problem/1850/e,1100,binary search; geometry; implementation; math
+Codeforces,Geometry,Careful Maneuvering,https://codeforces.com/problemset/problem/993/c,2100,bitmasks; brute force; geometry
+Codeforces,Geometry,Chain Reaction,https://codeforces.com/problemset/problem/666/d,3000,brute force; geometry
+Codeforces,Geometry,Chemistry Lab,https://codeforces.com/problemset/problem/1765/f,2200,dp; geometry; probabilities
+Codeforces,Geometry,Chip 'n Dale Rescue Rangers,https://codeforces.com/problemset/problem/590/b,2100,binary search; geometry; math
+Codeforces,Geometry,Chris and Road,https://codeforces.com/problemset/problem/703/c,2100,geometry; implementation
+Codeforces,Geometry,Circle Game,https://codeforces.com/problemset/problem/1451/d,1700,games; geometry; math
+Codeforces,Geometry,Circle Perimeter,https://codeforces.com/problemset/problem/1971/f,1600,binary search; brute force; dfs and similar; geometry; implementation; math
+Codeforces,Geometry,Circular Mirror,https://codeforces.com/problemset/problem/1725/c,2000,binary search; combinatorics; geometry; math; two pointers
+Codeforces,Geometry,City Union,https://codeforces.com/problemset/problem/1799/e,2300,constructive algorithms; dfs and similar; dsu; geometry; greedy; implementation; math
+Codeforces,Geometry,Coat of Anticubism,https://codeforces.com/problemset/problem/667/b,1100,constructive algorithms; geometry
+Codeforces,Geometry,Codeforces Heuristic Contest 001,https://codeforces.com/problemset/problem/2195/h,2400,brute force; constructive algorithms; geometry; implementation
+Codeforces,Geometry,Codeforces Scoreboard,https://codeforces.com/problemset/problem/1787/h,3300,binary search; data structures; dp; geometry
+Codeforces,Geometry,Colorful Polygon,https://codeforces.com/problemset/problem/2122/f,3400,constructive algorithms; divide and conquer; geometry
+Codeforces,Geometry,Coloring,https://codeforces.com/problemset/problem/1697/e,2400,brute force; combinatorics; constructive algorithms; dp; geometry; graphs; greedy; implementation; math
+Codeforces,Geometry,Come Together,https://codeforces.com/problemset/problem/1845/b,900,geometry; implementation; math
+Codeforces,Geometry,Commentator problem,https://codeforces.com/problemset/problem/2/c,2600,geometry
+Codeforces,Geometry,Connect the Points,https://codeforces.com/problemset/problem/1666/c,1800,brute force; constructive algorithms; geometry
+Codeforces,Geometry,Constellation,https://codeforces.com/problemset/problem/618/c,1600,geometry; implementation
+Codeforces,Geometry,Construct a Rectangle,https://codeforces.com/problemset/problem/1622/a,800,geometry; math
+Codeforces,Geometry,Contact,https://codeforces.com/problemset/problem/68/e,2900,geometry
+Codeforces,Geometry,Contest Start,https://codeforces.com/problemset/problem/1539/a,1000,combinatorics; geometry; greedy; math
+Codeforces,Geometry,Cookie Clicker,https://codeforces.com/problemset/problem/377/e,2800,dp; geometry
+Codeforces,Geometry,Corridor,https://codeforces.com/problemset/problem/82/e,2600,geometry
+Codeforces,Geometry,Cosmic Divide,https://codeforces.com/problemset/problem/2055/f,3200,brute force; geometry; hashing; math; strings
+Codeforces,Geometry,Count The Rectangles,https://codeforces.com/problemset/problem/1194/e,2200,bitmasks; brute force; data structures; geometry; sortings
+Codeforces,Geometry,Counting Points,https://codeforces.com/problemset/problem/2074/d,1400,brute force; data structures; geometry; implementation; two pointers
+Codeforces,Geometry,Cover Points,https://codeforces.com/problemset/problem/1047/b,900,geometry; math
+Codeforces,Geometry,Covered Points,https://codeforces.com/problemset/problem/1036/e,2400,fft; geometry; number theory
+Codeforces,Geometry,Covering Circle,https://codeforces.com/problemset/problem/1641/f,3500,geometry
+Codeforces,Geometry,Covering Points with Circles,https://codeforces.com/problemset/problem/2225/e,N/A,constructive algorithms; geometry; math
+Codeforces,Geometry,Cow and Friend,https://codeforces.com/problemset/problem/1307/b,1300,geometry; greedy; math
+Codeforces,Geometry,Cowboy Beblop at his computer,https://codeforces.com/problemset/problem/717/i,2800,geometry
+Codeforces,Geometry,Crazy Town,https://codeforces.com/problemset/problem/498/a,1700,geometry
+Codeforces,Geometry,Crop Squares,https://codeforces.com/problemset/problem/1715/f,2700,constructive algorithms; geometry; interactive; math
+Codeforces,Geometry,Cross Sum,https://codeforces.com/problemset/problem/607/e,3300,binary search; geometry
+Codeforces,Geometry,Cubes,https://codeforces.com/problemset/problem/243/d,2700,data structures; dp; geometry; two pointers
+Codeforces,Geometry,Cubic Lattice,https://codeforces.com/problemset/problem/1375/i,3500,geometry; math; matrices; number theory
+Codeforces,Geometry,Cupboard and Balloons,https://codeforces.com/problemset/problem/342/c,1900,geometry
+Codeforces,Geometry,Cut Length,https://codeforces.com/problemset/problem/598/f,2900,geometry
+Codeforces,Geometry,Cut the pie,https://codeforces.com/problemset/problem/799/g,3500,binary search; data structures; geometry
+Codeforces,Geometry,Cutting Carrot,https://codeforces.com/problemset/problem/794/b,1200,geometry; math
+Codeforces,Geometry,DIY,https://codeforces.com/problemset/problem/2038/c,1400,data structures; geometry; greedy; sortings
+Codeforces,Geometry,Dark Matter,https://codeforces.com/problemset/problem/1952/i,N/A,*special; bitmasks; geometry
+Codeforces,Geometry,Darts,https://codeforces.com/problemset/problem/107/e,2700,geometry; probabilities
+Codeforces,Geometry,Definitely a Geometry Problem,https://codeforces.com/problemset/problem/2095/g,N/A,*special; geometry
+Codeforces,Geometry,Delivering Carcinogen,https://codeforces.com/problemset/problem/198/c,2400,binary search; geometry
+Codeforces,Geometry,Depression,https://codeforces.com/problemset/problem/80/b,1200,geometry; math
+Codeforces,Geometry,Diamond Miner,https://codeforces.com/problemset/problem/1495/a,1200,geometry; greedy; math; sortings
+Codeforces,Geometry,Disjoint Triangles,https://codeforces.com/problemset/problem/1025/f,2700,geometry
+Codeforces,Geometry,Disks,https://codeforces.com/problemset/problem/1949/i,1800,dfs and similar; geometry; graph matchings; graphs
+Codeforces,Geometry,Divide Points,https://codeforces.com/problemset/problem/1270/e,2300,constructive algorithms; geometry; math
+Codeforces,Geometry,Divide Square,https://codeforces.com/problemset/problem/1401/e,2400,data structures; geometry; implementation; sortings
+Codeforces,Geometry,Do You Love Your Hero and His Two-Hit Multi-Target Attacks?,https://codeforces.com/problemset/problem/2072/e,1500,binary search; brute force; constructive algorithms; dp; geometry; greedy; math
+Codeforces,Geometry,Donkey and Stars,https://codeforces.com/problemset/problem/249/d,2700,data structures; dp; geometry; math; sortings
+Codeforces,Geometry,DravDe saves the world,https://codeforces.com/problemset/problem/28/e,2800,geometry; math
+Codeforces,Geometry,Draw Polygon Lines,https://codeforces.com/problemset/problem/1939/a,N/A,*special; constructive algorithms; dp; geometry; interactive
+Codeforces,Geometry,Draw a Square,https://codeforces.com/problemset/problem/2074/a,800,geometry; implementation
+Codeforces,Geometry,Drawing Circles is Fun,https://codeforces.com/problemset/problem/372/e,3000,combinatorics; geometry
+Codeforces,Geometry,"Dwarves, Hats and Extrasensory Abilities",https://codeforces.com/problemset/problem/1063/c,1900,binary search; constructive algorithms; geometry; interactive
+Codeforces,Geometry,Eastern Exhibition,https://codeforces.com/problemset/problem/1486/b,1500,binary search; geometry; shortest paths; sortings
+Codeforces,Geometry,Eligible Segments,https://codeforces.com/problemset/problem/1584/g,3200,geometry
+Codeforces,Geometry,Emperor's Problem,https://codeforces.com/problemset/problem/46/g,2500,geometry
+Codeforces,Geometry,Empty Triangle,https://codeforces.com/problemset/problem/2074/e,1600,geometry; interactive; probabilities
+Codeforces,Geometry,Equal Binary Subsequences,https://codeforces.com/problemset/problem/1736/d,2200,constructive algorithms; geometry; greedy; implementation; strings
+Codeforces,Geometry,Escape Through Leaf,https://codeforces.com/problemset/problem/932/f,2700,data structures; dp; geometry
+Codeforces,Geometry,Evaluate RBS,https://codeforces.com/problemset/problem/1860/f,2900,data structures; geometry; implementation; math; sortings
+Codeforces,Geometry,Fading into Fog,https://codeforces.com/problemset/problem/1826/f,2800,geometry; interactive; math; probabilities
+Codeforces,Geometry,Fancy Fence,https://codeforces.com/problemset/problem/270/a,1100,geometry; implementation; math
+Codeforces,Geometry,FashionabLee,https://codeforces.com/problemset/problem/1369/a,800,geometry; math
+Codeforces,Geometry,Fear of the Dark,https://codeforces.com/problemset/problem/1886/b,1200,binary search; geometry; math
+Codeforces,Geometry,Fence,https://codeforces.com/problemset/problem/1422/a,800,geometry; math
+Codeforces,Geometry,Fifa and Fafa,https://codeforces.com/problemset/problem/935/c,1600,geometry
+Codeforces,Geometry,Find Color,https://codeforces.com/problemset/problem/40/a,1300,constructive algorithms; geometry; implementation; math
+Codeforces,Geometry,Find Extra One,https://codeforces.com/problemset/problem/900/a,800,geometry; implementation
+Codeforces,Geometry,Find a Mine,https://codeforces.com/problemset/problem/1934/c,1700,binary search; constructive algorithms; geometry; greedy; interactive; math
+Codeforces,Geometry,Fishingprince Plays With Array Again,https://codeforces.com/problemset/problem/1696/g,3300,brute force; data structures; geometry; math
+Codeforces,Geometry,Five Dimensional Points,https://codeforces.com/problemset/problem/850/a,1700,brute force; geometry; math
+Codeforces,Geometry,Fly Around the World,https://codeforces.com/problemset/problem/1517/h,3500,dp; geometry
+Codeforces,Geometry,Following Directions,https://codeforces.com/problemset/problem/1791/b,800,geometry; implementation
+Codeforces,Geometry,Four Points,https://codeforces.com/problemset/problem/1455/e,2400,brute force; constructive algorithms; flows; geometry; greedy; implementation; math; ternary search
+Codeforces,Geometry,Four Segments,https://codeforces.com/problemset/problem/14/c,1700,brute force; constructive algorithms; geometry; implementation; math
+Codeforces,Geometry,Fox and Meteor Shower,https://codeforces.com/problemset/problem/388/e,3100,geometry
+Codeforces,Geometry,Fractal Origami,https://codeforces.com/problemset/problem/1924/c,2400,geometry; math; matrices
+Codeforces,Geometry,Framing Pictures,https://codeforces.com/problemset/problem/1578/f,2900,geometry
+Codeforces,Geometry,Freelancer's Dreams,https://codeforces.com/problemset/problem/605/c,2400,geometry
+Codeforces,Geometry,Full Turn,https://codeforces.com/problemset/problem/1468/f,1700,geometry; hashing; number theory
+Codeforces,Geometry,Game With Triangles,https://codeforces.com/problemset/problem/2063/d,2000,binary search; brute force; data structures; geometry; greedy; implementation; math; ternary search; two pointers
+Codeforces,Geometry,Game With Triangles: Season 2,https://codeforces.com/problemset/problem/2074/g,2100,dp; geometry
+Codeforces,Geometry,Garage,https://codeforces.com/problemset/problem/1725/g,1500,binary search; geometry; math
+Codeforces,Geometry,Gears,https://codeforces.com/problemset/problem/497/d,2900,brute force; geometry; math
+Codeforces,Geometry,Gena and Second Distance,https://codeforces.com/problemset/problem/442/e,3100,geometry
+Codeforces,Geometry,Geolocation,https://codeforces.com/problemset/problem/1220/g,3400,geometry
+Codeforces,Geometry,Geometers Anonymous Club,https://codeforces.com/problemset/problem/1195/f,2500,data structures; geometry; math; sortings
+Codeforces,Geometry,Geometric Balance,https://codeforces.com/problemset/problem/2052/g,2800,data structures; geometry; implementation
+Codeforces,Geometry,Gerald's Hexagon,https://codeforces.com/problemset/problem/559/a,1600,brute force; geometry; math
+Codeforces,Geometry,Ghosts,https://codeforces.com/problemset/problem/975/d,2000,geometry; math
+Codeforces,Geometry,Gleb And Pizza,https://codeforces.com/problemset/problem/842/b,1100,geometry
+Codeforces,Geometry,Global Warming,https://codeforces.com/problemset/problem/1666/g,3100,geometry; math
+Codeforces,Geometry,Good Robot Paths,https://codeforces.com/problemset/problem/2141/g,2800,*special; data structures; geometry; sortings
+Codeforces,Geometry,Grand Finale: Circles,https://codeforces.com/problemset/problem/1936/f,3300,binary search; geometry
+Codeforces,Geometry,Gregor and the Odd Cows (Easy),https://codeforces.com/problemset/problem/1548/d1,2300,bitmasks; geometry; math; number theory
+Codeforces,Geometry,Gregor and the Odd Cows (Hard),https://codeforces.com/problemset/problem/1548/d2,3300,brute force; geometry; math; number theory
+Codeforces,Geometry,Grid Coloring,https://codeforces.com/problemset/problem/2118/e,2400,constructive algorithms; geometry; greedy; math
+Codeforces,Geometry,Grove,https://codeforces.com/problemset/problem/1949/a,3300,brute force; dfs and similar; dp; geometry; probabilities
+Codeforces,Geometry,Guard Duty (easy),https://codeforces.com/problemset/problem/958/e1,1600,brute force; geometry; greedy; math
+Codeforces,Geometry,Guard Duty (hard),https://codeforces.com/problemset/problem/958/e3,2700,geometry
+Codeforces,Geometry,Guard Towers,https://codeforces.com/problemset/problem/85/e,2600,binary search; dsu; geometry; graphs; sortings
+Codeforces,Geometry,Guarding warehouses,https://codeforces.com/problemset/problem/1218/b,3000,data structures; geometry
+Codeforces,Geometry,Hag's Khashba,https://codeforces.com/problemset/problem/975/e,2600,geometry
+Codeforces,Geometry,Han Solo and Lazer Gun,https://codeforces.com/problemset/problem/514/b,1400,brute force; data structures; geometry; implementation; math
+Codeforces,Geometry,Happy Farm 5,https://codeforces.com/problemset/problem/50/c,2000,geometry
+Codeforces,Geometry,Hard Way,https://codeforces.com/problemset/problem/1642/a,800,geometry
+Codeforces,Geometry,Harry Potter and the Golden Snitch,https://codeforces.com/problemset/problem/65/c,2100,binary search; geometry
+Codeforces,Geometry,Help Greg the Dwarf,https://codeforces.com/problemset/problem/98/c,2500,geometry; ternary search
+Codeforces,Geometry,Help Greg the Dwarf 2,https://codeforces.com/problemset/problem/142/e,3000,geometry
+Codeforces,Geometry,Hide-and-Seek,https://codeforces.com/problemset/problem/32/e,2400,geometry; implementation
+Codeforces,Geometry,Hill Climbing,https://codeforces.com/problemset/problem/406/d,2200,dfs and similar; geometry; trees
+Codeforces,Geometry,Hit Ball,https://codeforces.com/problemset/problem/203/d,1700,geometry; implementation; math
+Codeforces,Geometry,Hobbits,https://codeforces.com/problemset/problem/1468/g,2500,binary search; geometry
+Codeforces,Geometry,Hongcow Draws a Circle,https://codeforces.com/problemset/problem/744/d,3200,geometry
+Codeforces,Geometry,Hopscotch,https://codeforces.com/problemset/problem/141/b,1400,geometry; math
+Codeforces,Geometry,Ian Visits Mary,https://codeforces.com/problemset/problem/1816/a,800,constructive algorithms; geometry; number theory
+Codeforces,Geometry,Ideal Point,https://codeforces.com/problemset/problem/1795/b,900,brute force; geometry; greedy
+Codeforces,Geometry,Igloo Skyscraper,https://codeforces.com/problemset/problem/91/e,2500,data structures; geometry
+Codeforces,Geometry,Inna and Babies,https://codeforces.com/problemset/problem/374/e,2600,binary search; data structures; dsu; geometry; implementation
+Codeforces,Geometry,Innovative Washing Machine,https://codeforces.com/problemset/problem/1912/i,3300,geometry; math; two pointers
+Codeforces,Geometry,Inquisition,https://codeforces.com/problemset/problem/62/c,2300,geometry; implementation; sortings
+Codeforces,Geometry,Inscribed Figures,https://codeforces.com/problemset/problem/1156/a,1400,geometry
+Codeforces,Geometry,Integer Points,https://codeforces.com/problemset/problem/1248/a,1000,geometry; math
+Codeforces,Geometry,Interactive Rays,https://codeforces.com/problemset/problem/1578/i,3300,geometry; interactive
+Codeforces,Geometry,Interactive Treasure Hunt,https://codeforces.com/problemset/problem/1666/i,2200,brute force; constructive algorithms; geometry; interactive; math
+Codeforces,Geometry,Intranet of Buses,https://codeforces.com/problemset/problem/780/h,3100,binary search; geometry; implementation; two pointers
+Codeforces,Geometry,Inverse Minimum Partition (Easy Version),https://codeforces.com/problemset/problem/2159/d1,2500,binary search; brute force; dp; geometry; greedy; math; two pointers
+Codeforces,Geometry,Iron Man,https://codeforces.com/problemset/problem/704/e,3300,data structures; geometry; trees
+Codeforces,Geometry,Irrigation Interlock,https://codeforces.com/problemset/problem/2181/i,3500,geometry
+Codeforces,Geometry,Jog Around The Graph,https://codeforces.com/problemset/problem/1366/f,2700,binary search; dp; geometry; graphs
+Codeforces,Geometry,Jordan Smiley,https://codeforces.com/problemset/problem/1331/e,N/A,*special; dfs and similar; geometry; implementation
+Codeforces,Geometry,Jumbo Extra Cheese 2,https://codeforces.com/problemset/problem/1740/b,800,geometry; greedy; sortings
+Codeforces,Geometry,Kalila and Dimna in the Logging Industry,https://codeforces.com/problemset/problem/319/c,2100,dp; geometry
+Codeforces,Geometry,Karen and Cards,https://codeforces.com/problemset/problem/815/d,2800,binary search; combinatorics; data structures; geometry
+Codeforces,Geometry,Keen Tree Calculation,https://codeforces.com/problemset/problem/1866/k,2500,binary search; data structures; dp; geometry; graphs; implementation; trees
+Codeforces,Geometry,Kevin and Geometry,https://codeforces.com/problemset/problem/2061/b,1100,binary search; geometry
+Codeforces,Geometry,King's Problem?,https://codeforces.com/problemset/problem/30/d,2600,geometry; greedy
+Codeforces,Geometry,Knights,https://codeforces.com/problemset/problem/33/d,2000,geometry; graphs; shortest paths; sortings
+Codeforces,Geometry,Ksusha and Square,https://codeforces.com/problemset/problem/293/d,2700,geometry; math; probabilities; two pointers
+Codeforces,Geometry,Lada Malina,https://codeforces.com/problemset/problem/853/e,3400,data structures; geometry
+Codeforces,Geometry,Landscaping,https://codeforces.com/problemset/problem/1901/f,2900,binary search; geometry; two pointers
+Codeforces,Geometry,Large Triangle,https://codeforces.com/problemset/problem/1019/d,2700,binary search; geometry; sortings
+Codeforces,Geometry,Laser Beams,https://codeforces.com/problemset/problem/1571/h,2900,*special; geometry; probabilities
+Codeforces,Geometry,Lasers,https://codeforces.com/problemset/problem/2148/b,800,geometry
+Codeforces,Geometry,Lazy Security Guard,https://codeforces.com/problemset/problem/859/b,1000,brute force; geometry; math
+Codeforces,Geometry,Leaving the Bar,https://codeforces.com/problemset/problem/995/c,2300,brute force; data structures; geometry; greedy; math; sortings
+Codeforces,Geometry,Lena and Matrix,https://codeforces.com/problemset/problem/1689/d,1900,data structures; dp; geometry; shortest paths
+Codeforces,Geometry,Lena and Queries,https://codeforces.com/problemset/problem/678/f,2500,data structures; divide and conquer; geometry
+Codeforces,Geometry,Letter A,https://codeforces.com/problemset/problem/13/b,2000,geometry; implementation
+Codeforces,Geometry,Lightbulb for Minister,https://codeforces.com/problemset/problem/394/e,N/A,geometry
+Codeforces,Geometry,Limak and Shooting Points,https://codeforces.com/problemset/problem/698/d,2600,brute force; geometry; math
+Codeforces,Geometry,Line Distance,https://codeforces.com/problemset/problem/1446/f,3200,binary search; data structures; geometry
+Codeforces,Geometry,Line Segments,https://codeforces.com/problemset/problem/2119/b,1200,geometry; greedy; math
+Codeforces,Geometry,Little Brother,https://codeforces.com/problemset/problem/887/e,2800,binary search; geometry; sortings
+Codeforces,Geometry,Little Elephant and Triangle,https://codeforces.com/problemset/problem/220/d,2500,geometry; math
+Codeforces,Geometry,Long Way Home,https://codeforces.com/problemset/problem/1715/e,2400,data structures; divide and conquer; dp; geometry; graphs; greedy; shortest paths
+Codeforces,Geometry,Looking for Owls,https://codeforces.com/problemset/problem/350/d,2400,binary search; data structures; geometry; hashing; sortings
+Codeforces,Geometry,Low Budget Inception,https://codeforces.com/problemset/problem/1167/g,3100,brute force; geometry
+Codeforces,Geometry,Mages and Monsters,https://codeforces.com/problemset/problem/792/f,3100,data structures; geometry
+Codeforces,Geometry,Magic Box,https://codeforces.com/problemset/problem/231/d,1600,brute force; geometry
+Codeforces,Geometry,Mahmoud and a Triangle,https://codeforces.com/problemset/problem/766/b,1000,constructive algorithms; geometry; greedy; math; number theory; sortings
+Codeforces,Geometry,Mainak and the Bleeding Polygon,https://codeforces.com/problemset/problem/1726/h,3500,binary search; geometry; implementation; math
+Codeforces,Geometry,Make a triangle!,https://codeforces.com/problemset/problem/1064/a,800,brute force; geometry; math
+Codeforces,Geometry,Managing Telephone Poles,https://codeforces.com/problemset/problem/1575/m,2400,data structures; geometry
+Codeforces,Geometry,Manhattan Pairs,https://codeforces.com/problemset/problem/2122/c,1700,constructive algorithms; geometry; greedy; math; sortings
+Codeforces,Geometry,Manhattan Subarrays,https://codeforces.com/problemset/problem/1550/c,1700,brute force; geometry; greedy; implementation
+Codeforces,Geometry,Manhattan Triangle,https://codeforces.com/problemset/problem/1979/e,2400,binary search; constructive algorithms; data structures; geometry; implementation; two pointers
+Codeforces,Geometry,Martian Colony,https://codeforces.com/problemset/problem/154/e,3000,geometry
+Codeforces,Geometry,Martian Food,https://codeforces.com/problemset/problem/77/e,2800,geometry
+Codeforces,Geometry,Mathematical Problem,https://codeforces.com/problemset/problem/1916/d,1700,brute force; constructive algorithms; geometry; math
+Codeforces,Geometry,Max and Bike,https://codeforces.com/problemset/problem/594/b,2500,binary search; geometry
+Codeforces,Geometry,Max and Min,https://codeforces.com/problemset/problem/566/g,2500,geometry
+Codeforces,Geometry,Maximal Area Quadrilateral,https://codeforces.com/problemset/problem/340/b,2100,brute force; geometry
+Codeforces,Geometry,Maximize the Intersections,https://codeforces.com/problemset/problem/1552/c,1800,combinatorics; constructive algorithms; geometry; greedy; sortings
+Codeforces,Geometry,Meeting on the Line,https://codeforces.com/problemset/problem/1730/b,1600,binary search; geometry; greedy; implementation; math; ternary search
+Codeforces,Geometry,Mice problem,https://codeforces.com/problemset/problem/793/c,2300,geometry; implementation; math; sortings
+Codeforces,Geometry,Mike and Geometry Problem,https://codeforces.com/problemset/problem/689/e,2000,combinatorics; data structures; dp; geometry; implementation
+Codeforces,Geometry,Minimum Sum,https://codeforces.com/problemset/problem/120/j,1900,divide and conquer; geometry; sortings
+Codeforces,Geometry,Mirror Box,https://codeforces.com/problemset/problem/241/c,2000,geometry; implementation
+Codeforces,Geometry,Mister B and Angle in Polygon,https://codeforces.com/problemset/problem/820/b,1300,constructive algorithms; geometry; math
+Codeforces,Geometry,Mixture,https://codeforces.com/problemset/problem/1386/b,2900,*special; data structures; geometry; math; sortings
+Codeforces,Geometry,Mogohu-Rea Idol,https://codeforces.com/problemset/problem/87/e,2600,geometry
+Codeforces,Geometry,Monocarp and a Strategic Game,https://codeforces.com/problemset/problem/1841/f,2700,geometry; sortings; two pointers
+Codeforces,Geometry,NN and the Optical Illusion,https://codeforces.com/problemset/problem/1100/c,1200,binary search; geometry; math
+Codeforces,Geometry,Nature Reserve,https://codeforces.com/problemset/problem/1059/d,2200,binary search; geometry; ternary search
+Codeforces,Geometry,Nearest vectors,https://codeforces.com/problemset/problem/598/c,2300,geometry; sortings
+Codeforces,Geometry,New Year Snowflake,https://codeforces.com/problemset/problem/140/f,2600,geometry; sortings
+Codeforces,Geometry,New Year Table,https://codeforces.com/problemset/problem/140/a,1700,geometry; math
+Codeforces,Geometry,New Year Tree Decorations,https://codeforces.com/problemset/problem/379/e,2500,geometry; schedules; sortings
+Codeforces,Geometry,New Year and Cake,https://codeforces.com/problemset/problem/611/g,2900,geometry; two pointers
+Codeforces,Geometry,New Year and Castle Construction,https://codeforces.com/problemset/problem/1284/e,2500,combinatorics; geometry; math; sortings
+Codeforces,Geometry,New Year and Curling,https://codeforces.com/problemset/problem/908/c,1500,brute force; geometry; implementation; math
+Codeforces,Geometry,New Year and North Pole,https://codeforces.com/problemset/problem/750/b,1300,geometry; implementation
+Codeforces,Geometry,Nezzar and Nice Beatmap,https://codeforces.com/problemset/problem/1477/c,2200,constructive algorithms; geometry; greedy; math; sortings
+Codeforces,Geometry,Not So Simple Polygon Embedding,https://codeforces.com/problemset/problem/1354/c2,2000,binary search; brute force; geometry; math
+Codeforces,Geometry,Not Splitting,https://codeforces.com/problemset/problem/1627/f,2700,geometry; graphs; greedy; implementation; shortest paths
+Codeforces,Geometry,Not a Geometry Problem,https://codeforces.com/problemset/problem/1812/e,N/A,*special; constructive algorithms; geometry; math
+Codeforces,Geometry,Number of Parallelograms,https://codeforces.com/problemset/problem/660/d,1900,geometry
+Codeforces,Geometry,Ode to the Bridge Builder,https://codeforces.com/problemset/problem/2138/f,3500,constructive algorithms; geometry
+Codeforces,Geometry,Off by One,https://codeforces.com/problemset/problem/1519/e,2700,constructive algorithms; dfs and similar; geometry; graphs; sortings; trees
+Codeforces,Geometry,Olympiad Training,https://codeforces.com/problemset/problem/1746/g,3500,binary search; data structures; dp; flows; geometry; implementation; sortings
+Codeforces,Geometry,Omkar and Akmar,https://codeforces.com/problemset/problem/1536/f,2600,chinese remainder theorem; combinatorics; constructive algorithms; fft; games; geometry; math; meet-in-the-middle; string suffix structures
+Codeforces,Geometry,On a plane,https://codeforces.com/problemset/problem/409/g,2200,*special; geometry
+Codeforces,Geometry,Optimal Polygon Perimeter,https://codeforces.com/problemset/problem/1044/c,2100,dp; geometry
+Codeforces,Geometry,Origami,https://codeforces.com/problemset/problem/1381/e,3300,geometry; math; sortings
+Codeforces,Geometry,Paint Tree,https://codeforces.com/problemset/problem/196/c,2200,constructive algorithms; divide and conquer; geometry; sortings; trees
+Codeforces,Geometry,Pair Of Lines,https://codeforces.com/problemset/problem/961/d,2000,geometry
+Codeforces,Geometry,Pandemic Restrictions,https://codeforces.com/problemset/problem/1662/k,N/A,geometry; ternary search
+Codeforces,Geometry,Parallel Projection,https://codeforces.com/problemset/problem/1781/a,800,geometry; math
+Codeforces,Geometry,Parallel Sums,https://codeforces.com/problemset/problem/2206/e,2500,data structures; geometry
+Codeforces,Geometry,Parallelepiped,https://codeforces.com/problemset/problem/224/a,1100,brute force; geometry; math
+Codeforces,Geometry,Parallelogram is Back,https://codeforces.com/problemset/problem/749/b,1200,brute force; constructive algorithms; geometry
+Codeforces,Geometry,Pebbles and Beads,https://codeforces.com/problemset/problem/1735/f,2900,data structures; geometry
+Codeforces,Geometry,Permutation Factory,https://codeforces.com/problemset/problem/2062/g,3500,flows; geometry; graph matchings; graphs
+Codeforces,Geometry,Perpendicular Segments,https://codeforces.com/problemset/problem/2026/a,900,constructive algorithms; geometry; greedy; math
+Codeforces,Geometry,Peter and Snow Blower,https://codeforces.com/problemset/problem/613/a,1900,binary search; geometry; ternary search
+Codeforces,Geometry,Phoenix and Puzzle,https://codeforces.com/problemset/problem/1515/b,1000,brute force; geometry; math; number theory
+Codeforces,Geometry,Place for a Selfie,https://codeforces.com/problemset/problem/1805/c,1400,binary search; data structures; geometry; math
+Codeforces,Geometry,Planar Graph,https://codeforces.com/problemset/problem/223/e,3000,flows; geometry; graphs
+Codeforces,Geometry,Plane Tiling,https://codeforces.com/problemset/problem/1468/i,2500,geometry; implementation; math
+Codeforces,Geometry,Plane of Tanks,https://codeforces.com/problemset/problem/73/f,2900,brute force; geometry
+Codeforces,Geometry,Playing the ball,https://codeforces.com/problemset/problem/420/e,2600,geometry
+Codeforces,Geometry,Point Ordering,https://codeforces.com/problemset/problem/1254/c,2300,constructive algorithms; geometry; interactive; math
+Codeforces,Geometry,Point on Spiral,https://codeforces.com/problemset/problem/279/a,1400,brute force; geometry; implementation
+Codeforces,Geometry,Points in triangle,https://codeforces.com/problemset/problem/530/h,2100,*special; geometry
+Codeforces,Geometry,Points on Plane,https://codeforces.com/problemset/problem/576/c,2100,constructive algorithms; divide and conquer; geometry; greedy; sortings
+Codeforces,Geometry,Polygon,https://codeforces.com/problemset/problem/1572/e,3000,binary search; dp; geometry
+Codeforces,Geometry,Polygon,https://codeforces.com/problemset/problem/306/d,2300,constructive algorithms; geometry
+Codeforces,Geometry,Polygon for the Angle,https://codeforces.com/problemset/problem/1096/c,1600,brute force; geometry
+Codeforces,Geometry,Polygons,https://codeforces.com/problemset/problem/166/b,2100,geometry; sortings
+Codeforces,Geometry,Pouring Rain,https://codeforces.com/problemset/problem/667/a,1100,geometry; math
+Codeforces,Geometry,Power Defence,https://codeforces.com/problemset/problem/175/e,2600,brute force; dp; geometry; greedy
+Codeforces,Geometry,Power Transmission (Easy Edition),https://codeforces.com/problemset/problem/1163/c1,1900,brute force; geometry
+Codeforces,Geometry,Power Transmission (Hard Edition),https://codeforces.com/problemset/problem/1163/c2,1900,data structures; geometry; implementation; math
+Codeforces,Geometry,Prison Break,https://codeforces.com/problemset/problem/1427/h,3500,binary search; games; geometry; ternary search
+Codeforces,Geometry,Product Sum,https://codeforces.com/problemset/problem/631/e,2600,data structures; dp; geometry
+Codeforces,Geometry,Professor's task,https://codeforces.com/problemset/problem/70/d,2700,data structures; geometry
+Codeforces,Geometry,Pyramids,https://codeforces.com/problemset/problem/630/q,1700,geometry; math
+Codeforces,Geometry,RC Kaboom Show,https://codeforces.com/problemset/problem/1359/f,2900,binary search; brute force; data structures; geometry; math
+Codeforces,Geometry,Rain,https://codeforces.com/problemset/problem/1710/b,2100,binary search; brute force; data structures; geometry; greedy; implementation; math
+Codeforces,Geometry,Rain Protection,https://codeforces.com/problemset/problem/1071/e,3500,binary search; geometry
+Codeforces,Geometry,Randomizer,https://codeforces.com/problemset/problem/559/d,2800,combinatorics; geometry; probabilities
+Codeforces,Geometry,Rational Bubble Sort,https://codeforces.com/problemset/problem/2211/g,2900,constructive algorithms; geometry; greedy
+Codeforces,Geometry,Recover Polygon (medium),https://codeforces.com/problemset/problem/690/b2,2600,geometry
+Codeforces,Geometry,Rectangle Arrangement,https://codeforces.com/problemset/problem/2027/a,800,geometry; implementation; math
+Codeforces,Geometry,Rectangle Cutting,https://codeforces.com/problemset/problem/1928/a,800,geometry; math
+Codeforces,Geometry,Rectangle Puzzle,https://codeforces.com/problemset/problem/280/a,2000,geometry
+Codeforces,Geometry,Rectangle and Square,https://codeforces.com/problemset/problem/135/b,1600,brute force; geometry; math
+Codeforces,Geometry,Rectangles,https://codeforces.com/problemset/problem/1028/c,1600,geometry; implementation; sortings
+Codeforces,Geometry,Rectangular Polyline,https://codeforces.com/problemset/problem/1444/d,2900,constructive algorithms; dp; geometry
+Codeforces,Geometry,Recycling Bottles,https://codeforces.com/problemset/problem/671/a,1800,dp; geometry; greedy; implementation
+Codeforces,Geometry,Representative Edges,https://codeforces.com/problemset/problem/1616/c,1500,brute force; geometry; implementation; math
+Codeforces,Geometry,Rest In The Shades,https://codeforces.com/problemset/problem/1016/e,2400,binary search; geometry
+Codeforces,Geometry,Restore Cube ,https://codeforces.com/problemset/problem/464/b,2000,brute force; geometry
+Codeforces,Geometry,Roads,https://codeforces.com/problemset/problem/1402/b,2900,*special; geometry; sortings
+Codeforces,Geometry,Robo-Footballer,https://codeforces.com/problemset/problem/248/c,2000,binary search; geometry
+Codeforces,Geometry,Robot Arm,https://codeforces.com/problemset/problem/618/e,2500,data structures; geometry
+Codeforces,Geometry,Roland and Rose,https://codeforces.com/problemset/problem/460/e,2700,brute force; geometry; math; sortings
+Codeforces,Geometry,Rooter's Song,https://codeforces.com/problemset/problem/848/b,1900,constructive algorithms; data structures; geometry; implementation; sortings; two pointers
+Codeforces,Geometry,Rotation,https://codeforces.com/problemset/problem/100/i,1500,*special; geometry; math
+Codeforces,Geometry,Rudolph and Christmas Tree,https://codeforces.com/problemset/problem/1846/d,1200,constructive algorithms; geometry; math
+Codeforces,Geometry,Ruminations on Ruminants,https://codeforces.com/problemset/problem/603/d,2900,geometry; math
+Codeforces,Geometry,Runaway to a Shadow,https://codeforces.com/problemset/problem/681/e,2500,geometry; sortings
+Codeforces,Geometry,Running Student,https://codeforces.com/problemset/problem/9/b,1200,brute force; geometry; implementation
+Codeforces,Geometry,Sasha Circle,https://codeforces.com/problemset/problem/549/e,2700,geometry; math
+Codeforces,Geometry,Satanic Panic,https://codeforces.com/problemset/problem/1146/h,2900,dp; geometry
+Codeforces,Geometry,Satyam and Counting,https://codeforces.com/problemset/problem/2009/d,1400,geometry; math
+Codeforces,Geometry,Save the City!,https://codeforces.com/problemset/problem/67/e,2500,geometry
+Codeforces,Geometry,Say Hello,https://codeforces.com/problemset/problem/1046/i,2300,geometry
+Codeforces,Geometry,Scissors and Tape,https://codeforces.com/problemset/problem/1193/c,N/A,*special; constructive algorithms; geometry
+Codeforces,Geometry,Sequence of points,https://codeforces.com/problemset/problem/24/c,1800,geometry; implementation; math
+Codeforces,Geometry,Sereja and Straight Lines,https://codeforces.com/problemset/problem/314/d,2500,binary search; data structures; geometry; sortings; two pointers
+Codeforces,Geometry,Series of Crimes,https://codeforces.com/problemset/problem/181/a,800,brute force; geometry; implementation
+Codeforces,Geometry,Set of Points,https://codeforces.com/problemset/problem/277/b,2300,constructive algorithms; geometry
+Codeforces,Geometry,Shady Lady,https://codeforces.com/problemset/problem/1045/f,3400,geometry; math
+Codeforces,Geometry,Shawarma Tent,https://codeforces.com/problemset/problem/1271/c,1300,brute force; geometry; greedy; implementation
+Codeforces,Geometry,Sherlock's bet to Moriarty,https://codeforces.com/problemset/problem/776/f,2800,constructive algorithms; data structures; divide and conquer; geometry; graphs; implementation; trees
+Codeforces,Geometry,Shifting Dominoes,https://codeforces.com/problemset/problem/1368/g,3200,data structures; geometry; graphs; trees
+Codeforces,Geometry,Ship's Shortest Path,https://codeforces.com/problemset/problem/75/e,2400,geometry; shortest paths
+Codeforces,Geometry,Shortest path,https://codeforces.com/problemset/problem/1599/g,2700,brute force; geometry; math; shortest paths
+Codeforces,Geometry,Sign Posts,https://codeforces.com/problemset/problem/568/d,2800,brute force; geometry; math
+Codeforces,Geometry,Simple Polygon Embedding,https://codeforces.com/problemset/problem/1354/c1,1400,binary search; geometry; math; ternary search
+Codeforces,Geometry,Smooth Sailing (Hard Version),https://codeforces.com/problemset/problem/1920/f2,3000,binary search; data structures; dsu; geometry; graphs; trees
+Codeforces,Geometry,Space Rescuers,https://codeforces.com/problemset/problem/106/e,2100,geometry; ternary search
+Codeforces,Geometry,Space mines,https://codeforces.com/problemset/problem/89/d,2500,geometry
+Codeforces,Geometry,Spaceship Crisis Management,https://codeforces.com/problemset/problem/1628/f,3500,binary search; data structures; geometry; sortings
+Codeforces,Geometry,Spaceship Exploration,https://codeforces.com/problemset/problem/1906/d,2800,binary search; geometry
+Codeforces,Geometry,Special Olympics,https://codeforces.com/problemset/problem/199/b,1900,geometry
+Codeforces,Geometry,Spectator Riots,https://codeforces.com/problemset/problem/575/e,2800,geometry
+Codeforces,Geometry,Spider,https://codeforces.com/problemset/problem/223/d,3000,geometry; graphs
+Codeforces,Geometry,Spiderweb Trees,https://codeforces.com/problemset/problem/1326/g,3500,dp; geometry; trees
+Codeforces,Geometry,Spinach Pizza,https://codeforces.com/problemset/problem/1776/i,2500,games; geometry; greedy; interactive
+Codeforces,Geometry,Square Pool,https://codeforces.com/problemset/problem/2120/b,1000,geometry
+Codeforces,Geometry,Square of Rectangles,https://codeforces.com/problemset/problem/2120/a,800,geometry; math
+Codeforces,Geometry,Star Map,https://codeforces.com/problemset/problem/2215/e,2700,constructive algorithms; data structures; geometry; greedy; sortings
+Codeforces,Geometry,Stars,https://codeforces.com/problemset/problem/213/d,2300,constructive algorithms; geometry
+Codeforces,Geometry,String Theory,https://codeforces.com/problemset/problem/269/e,3100,geometry; math; strings
+Codeforces,Geometry,Sum of Prefix Sums,https://codeforces.com/problemset/problem/1303/g,2700,data structures; divide and conquer; geometry; trees
+Codeforces,Geometry,Summer Earnings,https://codeforces.com/problemset/problem/333/e,2500,binary search; bitmasks; brute force; geometry; sortings
+Codeforces,Geometry,Surrounded,https://codeforces.com/problemset/problem/190/b,1800,geometry
+Codeforces,Geometry,Swap Pass,https://codeforces.com/problemset/problem/1508/d,3000,constructive algorithms; geometry; sortings
+Codeforces,Geometry,Symmetric Projections,https://codeforces.com/problemset/problem/886/f,2900,geometry
+Codeforces,Geometry,Symmetrical Polygons,https://codeforces.com/problemset/problem/2153/c,1500,constructive algorithms; geometry; greedy; implementation; sortings
+Codeforces,Geometry,Tavas and Pashmaks,https://codeforces.com/problemset/problem/535/e,2600,geometry; math
+Codeforces,Geometry,Tell Your World,https://codeforces.com/problemset/problem/849/b,1600,brute force; geometry
+Codeforces,Geometry,Tender Carpenter,https://codeforces.com/problemset/problem/2053/a,800,dp; geometry; greedy; math
+Codeforces,Geometry,Tennis Rackets,https://codeforces.com/problemset/problem/309/d,2700,brute force; geometry
+Codeforces,Geometry,Tenzing and Triangle,https://codeforces.com/problemset/problem/1842/e,2300,data structures; dp; geometry; greedy; math
+Codeforces,Geometry,Tetragon,https://codeforces.com/problemset/problem/23/d,2600,geometry; math
+Codeforces,Geometry,The Butcher,https://codeforces.com/problemset/problem/1819/b,1900,geometry; greedy; implementation; sortings; two pointers
+Codeforces,Geometry,The Check of the Point,https://codeforces.com/problemset/problem/683/a,1200,*special; geometry
+Codeforces,Geometry,The Child and Polygon,https://codeforces.com/problemset/problem/437/e,2500,dp; geometry
+Codeforces,Geometry,The Fair Nut and Rectangles,https://codeforces.com/problemset/problem/1083/e,2400,data structures; dp; geometry
+Codeforces,Geometry,The Last Hole!,https://codeforces.com/problemset/problem/274/c,2600,brute force; geometry
+Codeforces,Geometry,The Morning Star,https://codeforces.com/problemset/problem/1850/g,1500,combinatorics; data structures; geometry; implementation; math; sortings
+Codeforces,Geometry,The Supersonic Rocket,https://codeforces.com/problemset/problem/1017/e,2400,geometry; hashing; strings
+Codeforces,Geometry,The Third Side,https://codeforces.com/problemset/problem/2074/b,800,geometry; greedy; math
+Codeforces,Geometry,Three Logos,https://codeforces.com/problemset/problem/581/d,1700,bitmasks; brute force; constructive algorithms; geometry; implementation; math
+Codeforces,Geometry,Timofey and rectangles,https://codeforces.com/problemset/problem/763/b,2100,constructive algorithms; geometry
+Codeforces,Geometry,Tower Capturing,https://codeforces.com/problemset/problem/1984/h,3300,combinatorics; dp; geometry
+Codeforces,Geometry,Trace,https://codeforces.com/problemset/problem/157/b,1000,geometry; sortings
+Codeforces,Geometry,Training Session,https://codeforces.com/problemset/problem/1598/d,1700,combinatorics; data structures; geometry; implementation; math
+Codeforces,Geometry,Traveling Salescat,https://codeforces.com/problemset/problem/2062/f,2900,constructive algorithms; dp; geometry; graphs; greedy; math; sortings
+Codeforces,Geometry,Traveling Salesman Problem,https://codeforces.com/problemset/problem/1713/a,800,geometry; greedy; implementation
+Codeforces,Geometry,Triangle,https://codeforces.com/problemset/problem/407/a,1600,brute force; geometry; implementation; math
+Codeforces,Geometry,Triangle,https://codeforces.com/problemset/problem/18/a,1500,brute force; geometry
+Codeforces,Geometry,Triangle,https://codeforces.com/problemset/problem/6/a,900,brute force; geometry
+Codeforces,Geometry,Triangles,https://codeforces.com/problemset/problem/13/d,2600,dp; geometry
+Codeforces,Geometry,Triangles 3000,https://codeforces.com/problemset/problem/528/e,3100,geometry; sortings
+Codeforces,Geometry,Triangles on a Rectangle,https://codeforces.com/problemset/problem/1620/b,1000,geometry; greedy; math
+Codeforces,Geometry,Tricky Function,https://codeforces.com/problemset/problem/429/d,2200,data structures; divide and conquer; geometry
+Codeforces,Geometry,Turn,https://codeforces.com/problemset/problem/630/m,1800,geometry; math
+Codeforces,Geometry,Two Friends,https://codeforces.com/problemset/problem/8/d,2600,binary search; geometry
+Codeforces,Geometry,Two Regular Polygons,https://codeforces.com/problemset/problem/1312/a,800,geometry; greedy; math; number theory
+Codeforces,Geometry,Two Squares,https://codeforces.com/problemset/problem/993/a,1600,geometry; implementation
+Codeforces,Geometry,U2,https://codeforces.com/problemset/problem/1142/c,2400,geometry
+Codeforces,Geometry,Uncle Bogdan and Projections,https://codeforces.com/problemset/problem/1388/e,2700,data structures; geometry; sortings
+Codeforces,Geometry,Vacuum Сleaner,https://codeforces.com/problemset/problem/54/e,2700,geometry
+Codeforces,Geometry,Vanya and Triangles,https://codeforces.com/problemset/problem/552/d,1900,brute force; combinatorics; data structures; geometry; math; sortings
+Codeforces,Geometry,Vasya and Cornfield,https://codeforces.com/problemset/problem/1030/b,1100,geometry
+Codeforces,Geometry,Vasya and Triangle,https://codeforces.com/problemset/problem/1030/d,1800,geometry; number theory
+Codeforces,Geometry,Very Suspicious,https://codeforces.com/problemset/problem/1670/d,1700,binary search; brute force; geometry; greedy; implementation; math
+Codeforces,Geometry,Very simple problem,https://codeforces.com/problemset/problem/55/e,2500,geometry; two pointers
+Codeforces,Geometry,View Angle,https://codeforces.com/problemset/problem/257/c,1800,brute force; geometry; math
+Codeforces,Geometry,Vika and Segments,https://codeforces.com/problemset/problem/610/d,2300,constructive algorithms; data structures; geometry; two pointers
+Codeforces,Geometry,Visible Black Areas,https://codeforces.com/problemset/problem/962/g,2800,data structures; dsu; geometry; trees
+Codeforces,Geometry,Vittorio Plays with LEGO Bricks,https://codeforces.com/problemset/problem/1776/b,2200,dp; geometry
+Codeforces,Geometry,Vlad and Shapes,https://codeforces.com/problemset/problem/1926/b,800,geometry; implementation
+Codeforces,Geometry,Volatile Kite,https://codeforces.com/problemset/problem/772/b,1800,geometry
+Codeforces,Geometry,Walking Master,https://codeforces.com/problemset/problem/1806/a,800,geometry; greedy; math
+Codeforces,Geometry,Wasted Time,https://codeforces.com/problemset/problem/127/a,900,geometry
+Codeforces,Geometry,Watchmen,https://codeforces.com/problemset/problem/650/a,1400,data structures; geometry; math
+Codeforces,Geometry,Water Balance,https://codeforces.com/problemset/problem/1299/c,2100,data structures; geometry; greedy
+Codeforces,Geometry,Water Lily,https://codeforces.com/problemset/problem/1199/b,1000,geometry; math
+Codeforces,Geometry,Weird Sum,https://codeforces.com/problemset/problem/1648/a,1400,combinatorics; data structures; geometry; math; matrices; sortings
+Codeforces,Geometry,Where Am I?,https://codeforces.com/problemset/problem/2095/d,N/A,*special; geometry
+Codeforces,Geometry,Where do I Turn?,https://codeforces.com/problemset/problem/227/a,1300,geometry
+Codeforces,Geometry,White Sheet,https://codeforces.com/problemset/problem/1216/c,1700,geometry; math
+Codeforces,Geometry,Wilbur and Swimming Pool,https://codeforces.com/problemset/problem/596/a,1100,geometry; implementation
+Codeforces,Geometry,Winding polygonal line,https://codeforces.com/problemset/problem/1158/d,2600,constructive algorithms; geometry; greedy; math
+Codeforces,Geometry,X Axis,https://codeforces.com/problemset/problem/1986/a,800,brute force; geometry; math; sortings
+Codeforces,Geometry,XOR and Triangle,https://codeforces.com/problemset/problem/2074/c,1100,bitmasks; brute force; geometry; greedy; probabilities
+Codeforces,Geometry,Yet Another Partiton Problem,https://codeforces.com/problemset/problem/1175/g,3000,data structures; divide and conquer; dp; geometry; two pointers
+Codeforces,Geometry,Zoo,https://codeforces.com/problemset/problem/183/b,1700,brute force; geometry
+Codeforces,Geometry,khba Loves to Sleep!,https://codeforces.com/problemset/problem/2167/e,1600,binary search; data structures; geometry; greedy; implementation
+Codewars,Distance,Manhattan Distance,https://codewars.com/kata/manhattan-distance,7 kyu,Manhattan distance
+Codewars,Geometry,Circle Intersection,https://codewars.com/kata/circle-intersection-area,5 kyu,Circle intersection area
+Codewars,Geometry,Closest pair of points,https://codewars.com/kata/closest-pair-of-points,4 kyu,Closest pair
+Codewars,Geometry,Convex Hull,https://codewars.com/kata/convex-hull,4 kyu,Convex hull algorithm
+Codewars,Geometry,Line Intersection,https://codewars.com/kata/line-intersection,5 kyu,Line intersection
+Codewars,Geometry,Point in Polygon,https://codewars.com/kata/point-in-polygon,4 kyu,Ray casting
+Codewars,Geometry,Points in a circle,https://codewars.com/kata/points-in-a-circle,6 kyu,Circle / distance
+Codewars,Geometry,Polygon Area,https://codewars.com/kata/polygon-area,5 kyu,Shoelace formula
+Codewars,Geometry,Rectangle Area,https://codewars.com/kata/rectangle-area,7 kyu,Area calculation
+Codewars,Geometry,Triangle Area,https://codewars.com/kata/triangle-area,6 kyu,Heron's formula
+Codewars,Geometry,Vector Math,https://codewars.com/kata/vector-math,6 kyu,Vector operations
+DMOJ,Convex Hull,Convex Hull,https://dmoj.ca/problem/convexhull,Medium,Convex hull
+DMOJ,Geometry,Circle,https://dmoj.ca/problem/circle,Easy,Circle geometry
+DMOJ,Geometry,Polygon Area,https://dmoj.ca/problem/polygonarea,Easy,Shoelace formula
+DMOJ,Geometry,Rectangle,https://dmoj.ca/problem/rectangle,Easy,Rectangle geometry
+DMOJ,Geometry,Square,https://dmoj.ca/problem/square,Easy,Square geometry
+DMOJ,Geometry,Triangle,https://dmoj.ca/problem/triangle,Easy,Triangle geometry
+DMOJ,Line Intersection,Intersection,https://dmoj.ca/problem/intersection,Medium,Line intersection
+E-Olymp,Convex Hull,Convex Hull,https://e-olymp.com/en/problems/2622,Medium,Convex hull
+E-Olymp,Distance,Distance between points,https://e-olymp.com/en/problems/2628,Easy,Euclidean distance
+E-Olymp,Geometry,Circle,https://e-olymp.com/en/problems/2627,Easy,Circle geometry
+E-Olymp,Geometry,Point in Polygon,https://e-olymp.com/en/problems/2625,Medium,Point in polygon
+E-Olymp,Geometry,Quadrilateral,https://e-olymp.com/en/problems/2631,Easy,Quadrilateral area
+E-Olymp,Geometry,Rectangle,https://e-olymp.com/en/problems/2629,Easy,Rectangle geometry
+E-Olymp,Geometry,Square,https://e-olymp.com/en/problems/2630,Easy,Square geometry
+E-Olymp,Geometry,Triangle,https://e-olymp.com/en/problems/2626,Easy,Triangle properties
+E-Olymp,Line Intersection,Segment Intersection,https://e-olymp.com/en/problems/2623,Medium,Line segment intersection
+E-Olymp,Polygon Area,Polygon Area,https://e-olymp.com/en/problems/2624,Easy,Shoelace formula
+GeeksforGeeks,Basic Geometry,Find all angles of a given triangle,https://geeksforgeeks.org/find-all-angles-of-a-given-triangle,Easy,Law of cosines
+GeeksforGeeks,Basic Geometry,Find if a point lies inside a triangle,https://geeksforgeeks.org/check-whether-triangle-is-valid-or-not-if-sides-are-given,Medium,Barycentric coordinates
+GeeksforGeeks,Basic Geometry,Minimum enclosing circle,https://geeksforgeeks.org/minimum-enclosing-circle-using-welzls-algorithm,Hard,Welzl's algorithm
+GeeksforGeeks,Basic Geometry,Program to check if three points are collinear,https://geeksforgeeks.org/program-to-check-if-three-points-are-collinear,Easy,Slope / area method
+GeeksforGeeks,Basic Geometry,Program to find line passing through 2 Points,https://geeksforgeeks.org/program-to-find-line-passing-through-2-points,Easy,Line equation
+GeeksforGeeks,Basic Geometry,Program to find slope of a line,https://geeksforgeeks.org/program-find-slope-line,Easy,Slope formula
+GeeksforGeeks,Basic Geometry,Program to find the mid-point,https://geeksforgeeks.org/program-find-mid-point-line,Easy,Midpoint formula
+GeeksforGeeks,Basic Geometry,Program to find the type of triangle,https://geeksforgeeks.org/program-to-find-the-type-of-triangle-from-the-given-coordinates,Easy,Distance formula
+GeeksforGeeks,Basic Geometry,"Program to find the volume of cube, cuboid, sphere, cylinder, cone",https://geeksforgeeks.org/program-to-find-the-volume-of-cube-cuboid-sphere-cylinder-and-cone,Easy,Volume formulas
+GeeksforGeeks,Circle Intersection,Check if two given circles touch or intersect each other,https://geeksforgeeks.org/check-if-two-given-circles-touch-or-intersect-each-other,Easy,Distance between centres
+GeeksforGeeks,Closest Pair,Closest Pair of Points using Divide and Conquer,https://geeksforgeeks.org/closest-pair-of-points-using-divide-and-conquer-algorithm,Hard,Divide and conquer / strip method
+GeeksforGeeks,Convex Hull,Convex Hull using Divide and Conquer,https://geeksforgeeks.org/convex-hull-using-divide-and-conquer-algorithm,Hard,Divide and conquer approach
+GeeksforGeeks,Convex Hull,Convex Hull using Graham Scan,https://geeksforgeeks.org/convex-hull-using-graham-scan,Medium,Graham scan / monotonic chain
+GeeksforGeeks,Convex Hull,Convex Hull using Jarvis' Algorithm,https://geeksforgeeks.org/convex-hull-using-jarvis-algorithm-or-wrapping,Medium,Jarvis march / gift wrapping
+GeeksforGeeks,Convex Hull,Quickhull algorithm for Convex Hull,https://geeksforgeeks.org/quickhull-algorithm-convex-hull,Medium,Quickhull algorithm
+GeeksforGeeks,Distance,Maximum distance between two points in coordinate plane,https://geeksforgeeks.org/maximum-distance-between-two-points-in-coordinate-plane-using-rotating-calipers,Hard,Rotating calipers
+GeeksforGeeks,Distance,Program to calculate distance between two points,https://geeksforgeeks.org/program-calculate-distance-two-points,Easy,Euclidean distance
+GeeksforGeeks,Line Intersection,Check if two given line segments intersect,https://geeksforgeeks.org/check-if-two-given-line-segments-intersect,Medium,Orientation / collinearity
+GeeksforGeeks,Line Intersection,Program to find intersection of two lines,https://geeksforgeeks.org/program-for-point-of-intersection-of-two-lines,Medium,Line intersection formula
+GeeksforGeeks,Point in Polygon,How to check if a given point lies inside a polygon,https://geeksforgeeks.org/how-to-check-if-a-given-point-lies-inside-a-polygon,Medium,Ray casting / winding number
+GeeksforGeeks,Polygon Area,Area of a polygon with given n ordered vertices,https://geeksforgeeks.org/area-of-a-polygon-with-given-n-ordered-vertices,Easy,Shoelace formula
+GeeksforGeeks,Polygon Area,Area of the circle that has a triangle inscribed,https://geeksforgeeks.org/area-of-the-circle-that-has-a-triangle-inscribed-in-it,Easy,Incircle / Circumcircle
+GeeksforGeeks,Polygon Area,Area of the circumcircle of any triangles with sides given,https://geeksforgeeks.org/area-circumcircle-any-triangles-sides-given,Easy,Circumradius formula
+GeeksforGeeks,Polygon Area,Program to find area of a triangle,https://geeksforgeeks.org/c-program-find-area-triangle,Easy,Heron's formula / cross product
+GeeksforGeeks,Rotating Calipers,Rotating Calipers technique,https://geeksforgeeks.org/rotating-calipers-technique,Hard,Rotating calipers
+GeeksforGeeks,Sweep Line,Count number of rectangles that can be formed from given points,https://geeksforgeeks.org/count-number-of-rectangles-that-can-be-formed-from-given-points,Medium,Point grouping
+GeeksforGeeks,Sweep Line,Line Sweep Algorithm,https://geeksforgeeks.org/line-sweep-algorithm,Medium,Line sweep technique
+HackerEarth,Basic Geometry,Area of Rectangle,https://hackerearth.com/practice/basic-programming/geometry/area-of-rectangle/practice-problems,Easy,Rectangle area
+HackerEarth,Basic Geometry,Circle Area,https://hackerearth.com/practice/basic-programming/geometry/circle-area/practice-problems,Easy,Circle area / perimeter
+HackerEarth,Basic Geometry,Points and Lines,https://hackerearth.com/practice/basic-programming/geometry/points-and-lines/practice-problems,Easy,Point-line geometry
+HackerEarth,Basic Geometry,Triangle Area,https://hackerearth.com/practice/basic-programming/geometry/triangle-area/practice-problems,Easy,Heron / cross product
+HackerEarth,Circle Intersection,Circle Intersection,https://hackerearth.com/practice/math/geometry/circle-intersection/practice-problems,Medium,Circle intersection
+HackerEarth,Convex Hull,Convex Hull,https://hackerearth.com/practice/math/geometry/convex-hull/practice-problems,Medium,Convex hull algorithms
+HackerEarth,Convex Hull,Jarvis Algorithm,https://www.hackerearth.com/practice/math/geometry/jarvis-algorithm/practice-problems/,Medium,Jarvis march
+HackerEarth,Geometry,Area of Triangle,https://hackerearth.com/practice/math/geometry/area-of-triangle/practice-problems,Easy,Triangle area
+HackerEarth,Geometry,Closest Points,https://hackerearth.com/practice/math/geometry/closest-points/practice-problems,Medium,Closest pair of points
+HackerEarth,Geometry,Counting Triangles,https://www.hackerearth.com/practice/math/geometry/counting-triangles/practice-problems/,Easy,Triangle counting
+HackerEarth,Geometry,Grid and Rectangles,https://www.hackerearth.com/practice/math/geometry/grid-and-rectangles/practice-problems/,Medium,Grid geometry
+HackerEarth,Geometry,Jarvis and Rectangles,https://www.hackerearth.com/practice/math/geometry/jarvis-and-rectangles/practice-problems/,Medium,Rectangle overlap
+HackerEarth,Geometry,Kill the monsters,https://hackerearth.com/problem/algorithm/kill-the-monsters-2,Medium,Distance based
+HackerEarth,Geometry,Manhattan Distance,https://www.hackerearth.com/practice/math/geometry/manhattan-distance/practice-problems/,Easy,Manhattan distance
+HackerEarth,Geometry,Matrix and Coordinates,https://www.hackerearth.com/practice/math/geometry/matrix-and-coordinates/practice-problems/,Easy,Coordinate geometry
+HackerEarth,Geometry,Minimum Distance,https://hackerearth.com/practice/math/geometry/minimum-distance/practice-problems,Medium,Min distance between points
+HackerEarth,Geometry,Polygon and Points,https://www.hackerearth.com/practice/math/geometry/polygon-and-points/practice-problems/,Medium,Point in polygon
+HackerEarth,Geometry,Rectangular Area,https://hackerearth.com/practice/math/geometry/rectangular-area/practice-problems,Easy,Rectangle overlap / union
+HackerEarth,Geometry,The Star,https://hackerearth.com/problem/algorithm/the-star-2,Medium,Star polygon geometry
+HackerEarth,Line Intersection,Line Intersection,https://hackerearth.com/practice/math/geometry/line-intersection/practice-problems,Medium,Line segment intersection
+HackerEarth,Point in Polygon,Point in Polygon,https://hackerearth.com/practice/math/geometry/point-in-polygon/practice-problems,Medium,Point in polygon test
+HackerRank,Convex Hull,Convex Hull Trick,https://hackerrank.com/challenges/convex-hull-trick/problem,Hard,CHT DP optimization
+HackerRank,Distance,Distance,https://hackerrank.com/challenges/distance/problem,Easy,Distance formula
+HackerRank,Distance,Which triangle?,https://hackerrank.com/challenges/which-triangle/problem,Easy,Triangle classification
+HackerRank,Geometry,Area,https://hackerrank.com/challenges/area-of-a-square/problem,Easy,Area of square
+HackerRank,Geometry,Circle City,https://hackerrank.com/challenges/circle-city/problem,Medium,Lattice points in circle
+HackerRank,Geometry,Find the Angle,https://hackerrank.com/challenges/find-angle/problem,Easy,Angle computation
+HackerRank,Geometry,Points On Coordinate Plane,https://hackerrank.com/challenges/points-in-a-plane/problem,Medium,Coordinate plane
+HackerRank,Geometry,Points on a Line,https://hackerrank.com/challenges/points-on-a-line/problem,Easy,Collinearity
+HackerRank,Geometry,Polygon,https://hackerrank.com/challenges/polygon-identification/problem,Easy,Polygon sides
+HackerRank,Geometry,Rectangular Game,https://hackerrank.com/challenges/rectangular-game/problem,Easy,Rectangle multiplication
+HackerRank,Geometry,Sherlock and Geometry,https://hackerrank.com/challenges/sherlock-and-geometry/problem,Medium,Triangle types
+HackerRank,Geometry,Straight Lines,https://hackerrank.com/challenges/straight-lines/problem,Easy,Line types
+HackerRank,Geometry,Triangle Numbers,https://hackerrank.com/challenges/triangle-numbers/problem,Medium,Triangle geometry
+InterviewBit,Convex Hull,Convex Hull,https://interviewbit.com/problems/convex-hull,Hard,Convex hull algorithm
+InterviewBit,Geometry,Grid Path,https://interviewbit.com/problems/grid-path,Easy,Grid geometry
+InterviewBit,Geometry,Largest Distance between Nodes,https://interviewbit.com/problems/largest-distance-between-nodes-of-a-tree,Medium,Graph distance / diameter
+InterviewBit,Geometry,Max Points on a Line,https://interviewbit.com/problems/max-points-on-a-line,Medium,Slope counting
+InterviewBit,Geometry,Points on Straight Line,https://interviewbit.com/problems/points-on-straight-line,Medium,Slope hash / max collinear
+InterviewBit,Geometry,Rectangle Area,https://interviewbit.com/problems/rectangle-area,Easy,Rectangle overlap area
+InterviewBit,Geometry,Triangle,https://interviewbit.com/problems/triangle-number,Medium,Triangle counting
+Kattis,3D Geometry,3D Printer,https://open.kattis.com/problems/3dprinter,Easy,3D volume
+Kattis,Convex Hull,Convex Hull,https://open.kattis.com/problems/convexhull,Medium,Convex hull
+Kattis,Distance,Closest Pair,https://open.kattis.com/problems/closestpair,Hard,Closest pair of points
+Kattis,Distance,Manhattan,https://open.kattis.com/problems/manhattan,Easy,Manhattan distance
+Kattis,Geometry,Circle Matters,https://open.kattis.com/problems/circlematters,Medium,Circle geometry
+Kattis,Geometry,Draw a Perfect Circle,https://open.kattis.com/problems/drawaperfectcircle,Medium,Circle drawing
+Kattis,Geometry,Fractal,https://open.kattis.com/problems/fractal,Hard,Fractal geometry
+Kattis,Geometry,Linear Recursion,https://open.kattis.com/problems/linearrecursion,Medium,Line geometry
+Kattis,Geometry,Max Area,https://open.kattis.com/problems/maxarea,Medium,Maximum polygon area
+Kattis,Geometry,Point in Polygon,https://open.kattis.com/problems/pointinpolygon,Easy,Point in polygon
+Kattis,Geometry,Polygon Area,https://open.kattis.com/problems/polygonarea,Easy,Polygon area / shoelace
+Kattis,Geometry,Rectangle,https://open.kattis.com/problems/rectangle,Easy,Rectangle geometry
+Kattis,Geometry,Robot protection,https://open.kattis.com/problems/robotprotection,Medium,Convex hull
+Kattis,Geometry,Segment Intersection,https://open.kattis.com/problems/segmentintersection,Medium,Line segment intersection
+Kattis,Geometry,Square,https://open.kattis.com/problems/square,Easy,Square geometry
+Kattis,Geometry,Triangle Trouble,https://open.kattis.com/problems/triangletrouble,Easy,Triangle geometry
+LeetCode,Geometry,1003. Minimum Area Rectangle II,https://leetcode.com/problems/minimum-area-rectangle-ii/,Medium,Array; Hash Table; Math; Geometry
+LeetCode,Geometry,1014. K Closest Points to Origin,https://leetcode.com/problems/k-closest-points-to-origin/,Medium,Array; Math; Divide and Conquer; Geometry; Sorting; Heap (Priority Queue); Quickselect
+LeetCode,Geometry,1094. Matrix Cells in Distance Order,https://leetcode.com/problems/matrix-cells-in-distance-order/,Easy,Array; Math; Geometry; Sorting; Matrix
+LeetCode,Geometry,1115. Valid Boomerang,https://leetcode.com/problems/valid-boomerang/,Easy,Array; Math; Geometry
+LeetCode,Geometry,1349. Check If It Is a Straight Line,https://leetcode.com/problems/check-if-it-is-a-straight-line/,Easy,Array; Math; Geometry
+LeetCode,Geometry,1395. Minimum Time Visiting All Points,https://leetcode.com/problems/minimum-time-visiting-all-points/,Easy,Array; Math; Geometry
+LeetCode,Geometry,149. Max Points on a Line,https://leetcode.com/problems/max-points-on-a-line/,Hard,Array; Hash Table; Math; Geometry
+LeetCode,Geometry,1501. Circle and Rectangle Overlapping,https://leetcode.com/problems/circle-and-rectangle-overlapping/,Medium,Math; Geometry
+LeetCode,Geometry,1563. Maximum Number of Darts Inside of a Circular Dartboard,https://leetcode.com/problems/maximum-number-of-darts-inside-of-a-circular-dartboard/,Hard,Array; Math; Geometry
+LeetCode,Geometry,1638. Best Position for a Service Centre,https://leetcode.com/problems/best-position-for-a-service-centre/,Hard,Array; Math; Geometry; Randomized
+LeetCode,Geometry,1733. Maximum Number of Visible Points,https://leetcode.com/problems/maximum-number-of-visible-points/,Hard,Array; Math; Geometry; Sliding Window; Sorting
+LeetCode,Geometry,1939. Queries on Number of Points Inside a Circle,https://leetcode.com/problems/queries-on-number-of-points-inside-a-circle/,Medium,Array; Math; Geometry
+LeetCode,Geometry,2073. Minimum Time For K Virus Variants to Spread,https://leetcode.com/problems/minimum-time-for-k-virus-variants-to-spread/,Hard,Array; Math; Binary Search; Geometry; Enumeration
+LeetCode,Geometry,2074. Erect the Fence II,https://leetcode.com/problems/erect-the-fence-ii/,Hard,Array; Math; Geometry
+LeetCode,Geometry,2206. Detonate the Maximum Bombs,https://leetcode.com/problems/detonate-the-maximum-bombs/,Medium,Array; Math; Depth-First Search; Breadth-First Search; Graph Theory; Geometry
+LeetCode,Geometry,223. Rectangle Area,https://leetcode.com/problems/rectangle-area/,Medium,Math; Geometry
+LeetCode,Geometry,2287. Minimum Number of Lines to Cover Points,https://leetcode.com/problems/minimum-number-of-lines-to-cover-points/,Medium,Array; Hash Table; Math; Dynamic Programming; Backtracking; Bit Manipulation; Geometry; Bitmask
+LeetCode,Geometry,2332. Count Lattice Points Inside a Circle,https://leetcode.com/problems/count-lattice-points-inside-a-circle/,Medium,Array; Hash Table; Math; Geometry; Enumeration
+LeetCode,Geometry,2367. Minimum Lines to Represent a Line Chart,https://leetcode.com/problems/minimum-lines-to-represent-a-line-chart/,Medium,Array; Math; Geometry; Sorting; Number Theory
+LeetCode,Geometry,2575. Minimum Cuts to Divide a Circle,https://leetcode.com/problems/minimum-cuts-to-divide-a-circle/,Easy,Math; Geometry
+LeetCode,Geometry,2719. Beautiful Pairs,https://leetcode.com/problems/beautiful-pairs/,Hard,Array; Math; Divide and Conquer; Geometry; Sorting; Ordered Set
+LeetCode,Geometry,3277. Find the Number of Ways to Place People II,https://leetcode.com/problems/find-the-number-of-ways-to-place-people-ii/,Hard,Array; Math; Geometry; Sorting; Enumeration
+LeetCode,Geometry,3278. Find the Number of Ways to Place People I,https://leetcode.com/problems/find-the-number-of-ways-to-place-people-i/,Medium,Array; Math; Geometry; Sorting; Enumeration
+LeetCode,Geometry,3315. Maximum Number of Intersections on the Chart,https://leetcode.com/problems/maximum-number-of-intersections-on-the-chart/,Hard,Array; Hash Table; Math; Binary Indexed Tree; Geometry; Sweep Line; Sorting
+LeetCode,Geometry,3325. Find the Largest Area of Square Inside Two Rectangles,https://leetcode.com/problems/find-the-largest-area-of-square-inside-two-rectangles/,Medium,Array; Math; Geometry
+LeetCode,Geometry,3344. Minimize Manhattan Distances,https://leetcode.com/problems/minimize-manhattan-distances/,Hard,Array; Math; Geometry; Sorting; Ordered Set
+LeetCode,Geometry,335. Self Crossing,https://leetcode.com/problems/self-crossing/,Hard,Array; Math; Geometry
+LeetCode,Geometry,3478. Check if the Rectangle Corner Is Reachable,https://leetcode.com/problems/check-if-the-rectangle-corner-is-reachable/,Hard,Array; Math; Depth-First Search; Breadth-First Search; Union-Find; Geometry
+LeetCode,Geometry,3681. Maximum Area Rectangle With Point Constraints I,https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/,Medium,Array; Math; Binary Indexed Tree; Segment Tree; Geometry; Sorting; Enumeration
+LeetCode,Geometry,3689. Maximum Area Rectangle With Point Constraints II,https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-ii/,Hard,Array; Math; Binary Indexed Tree; Segment Tree; Geometry; Sorting
+LeetCode,Geometry,3781. Maximize the Distance Between Points on a Square,https://leetcode.com/problems/maximize-the-distance-between-points-on-a-square/,Hard,Array; Math; Binary Search; Geometry; Sorting
+LeetCode,Geometry,3868. Find Maximum Area of a Triangle,https://leetcode.com/problems/find-maximum-area-of-a-triangle/,Medium,Array; Hash Table; Math; Greedy; Geometry; Enumeration
+LeetCode,Geometry,3886. Count Number of Trapezoids I,https://leetcode.com/problems/count-number-of-trapezoids-i/,Medium,Array; Hash Table; Math; Geometry
+LeetCode,Geometry,3897. Count Number of Trapezoids II,https://leetcode.com/problems/count-number-of-trapezoids-ii/,Hard,Array; Hash Table; Math; Geometry
+LeetCode,Geometry,391. Perfect Rectangle,https://leetcode.com/problems/perfect-rectangle/,Hard,Array; Hash Table; Math; Geometry; Sweep Line
+LeetCode,Geometry,469. Convex Polygon,https://leetcode.com/problems/convex-polygon/,Medium,Array; Math; Geometry
+LeetCode,Geometry,587. Erect the Fence,https://leetcode.com/problems/erect-the-fence/,Hard,Array; Math; Geometry
+LeetCode,Geometry,593. Valid Square,https://leetcode.com/problems/valid-square/,Medium,Math; Geometry
+LeetCode,Geometry,830. Largest Triangle Area,https://leetcode.com/problems/largest-triangle-area/,Easy,Array; Math; Geometry
+LeetCode,Geometry,866. Rectangle Overlap,https://leetcode.com/problems/rectangle-overlap/,Easy,Math; Geometry
+LeetCode,Geometry,888. Mirror Reflection,https://leetcode.com/problems/mirror-reflection/,Medium,Math; Geometry; Number Theory
+LeetCode,Geometry,915. Generate Random Point in a Circle,https://leetcode.com/problems/generate-random-point-in-a-circle/,Medium,Math; Geometry; Rejection Sampling; Randomized
+LeetCode,Geometry,919. Projection Area of 3D Shapes,https://leetcode.com/problems/projection-area-of-3d-shapes/,Easy,Array; Math; Geometry; Matrix
+LeetCode,Geometry,928. Surface Area of 3D Shapes,https://leetcode.com/problems/surface-area-of-3d-shapes/,Easy,Array; Math; Geometry; Matrix
+LeetCode,Geometry,976. Minimum Area Rectangle,https://leetcode.com/problems/minimum-area-rectangle/,Medium,Array; Hash Table; Math; Geometry; Sorting
+LightOJ,Circle Intersection,Circle Intersection,https://lightoj.com/problem/circle-intersection,Medium,Circle intersection area
+LightOJ,Convex Hull,Convex Hull,https://lightoj.com/problem/convex-hull,Medium,Convex hull
+LightOJ,Convex Hull,Maximum Number of Points,https://lightoj.com/problem/maximum-number-of-points,Hard,Convex hull / farthest points
+LightOJ,Distance,Closest Pair,https://lightoj.com/problem/closest-pair,Hard,Closest pair of points
+LightOJ,Geometry,Angle and Triangles,https://lightoj.com/problem/angle-and-triangles,Medium,Angle computation
+LightOJ,Geometry,Circle in a Rectangle,https://lightoj.com/problem/circle-in-a-rectangle,Easy,Circle rectangle collision
+LightOJ,Geometry,How Many Triangles?,https://lightoj.com/problem/how-many-triangles,Medium,Triangle counting
+LightOJ,Geometry,Maximum Area,https://lightoj.com/problem/maximum-area,Medium,Max area polygon
+LightOJ,Geometry,Points in a Rectangle,https://lightoj.com/problem/points-in-a-rectangle,Easy,Point in rectangle
+LightOJ,Geometry,Polygon Area,https://lightoj.com/problem/polygon-area,Easy,Shoelace formula
+LightOJ,Geometry,Rectangle Area,https://lightoj.com/problem/rectangle-area,Easy,Area of rectangle
+LightOJ,Geometry,Rotating Calipers,https://lightoj.com/problem/rotating-calipers,Hard,Rotating calipers
+LightOJ,Geometry,Triangle,https://lightoj.com/problem/triangle,Easy,Triangle properties
+LightOJ,Line Intersection,Line Segment Intersection,https://lightoj.com/problem/line-segment-intersection,Medium,Line segment intersection
+LightOJ,Point in Polygon,Point in Polygon,https://lightoj.com/problem/point-in-polygon,Medium,Point in polygon test
+LintCode,Convex Hull,Convex Hull,https://lintcode.com/problem/convex-hull,Hard,Convex hull algorithm
+LintCode,Geometry,Largest Triangle Area,https://lintcode.com/problem/largest-triangle-area,Easy,Shoelace formula
+LintCode,Geometry,Max Points on a Line,https://lintcode.com/problem/max-points-on-a-line,Hard,Slope counting
+LintCode,Geometry,Minimum Area Rectangle,https://lintcode.com/problem/minimum-area-rectangle,Medium,Hash map of points
+LintCode,Geometry,Point in Polygon,https://lintcode.com/problem/point-in-polygon,Medium,Point in polygon
+LintCode,Geometry,Rectangle Overlap,https://lintcode.com/problem/rectangle-overlap,Easy,Axis-aligned rectangle check
+LintCode,Geometry,Triangle Count,https://lintcode.com/problem/triangle-count,Medium,Triangle inequality
+POJ,Circle Intersection,Area of Circles,http://poj.org/problem?id=2546,Medium,Circle intersection area
+SPOJ,3D Geometry,3D Triangles,https://spoj.com/problems/tricol,Hard,3D triangle intersection
+SPOJ,Circle Intersection,Circle Union,https://spoj.com/problems/ciru,Hard,Circle union area
+SPOJ,Circle Intersection,Circles,https://spoj.com/problems/circles,Medium,Circle intersection
+SPOJ,Closest Pair,Closest Pair,https://spoj.com/problems/closest,Hard,Closest pair of points
+SPOJ,Closest Pair,Closest Pair of Points,https://spoj.com/problems/koipe,Medium,Closest pair
+SPOJ,Convex Hull,CH,https://www.spoj.com/problems/CH/,Medium,Convex hull
+SPOJ,Convex Hull,Convex Hull,https://spoj.com/problems/convex,Medium,Convex hull
+SPOJ,Convex Hull,Convex Hull Trick,https://spoj.com/problems/cht,Hard,DP optimization
+SPOJ,Convex Hull,Polygon Union,https://spoj.com/problems/polygon,Hard,Polygon union area
+SPOJ,Distance,MINIDIST,https://www.spoj.com/problems/MINIDIST/,Easy,Manhattan distance
+SPOJ,Distance,Manhattan Distance,https://spoj.com/problems/manhattan,Easy,Manhattan distance
+SPOJ,Geometry,3D Surfaces,https://spoj.com/problems/surf,Hard,3D surface area
+SPOJ,Geometry,BSHEEP,https://www.spoj.com/problems/BSHEEP/,Medium,Convex hull / perimeter
+SPOJ,Geometry,Balanced Rectangles,https://spoj.com/problems/brect,Medium,Rectangle counting
+SPOJ,Geometry,CUTPOLY,https://www.spoj.com/problems/CUTPOLY/,Hard,Polygon cutting
+SPOJ,Geometry,Circle,https://spoj.com/problems/circle,Easy,Circle geometry basics
+SPOJ,Geometry,Crash,https://spoj.com/problems/cran01,Hard,Collision detection
+SPOJ,Geometry,Cylinder,https://spoj.com/problems/cylinder,Medium,3D geometry
+SPOJ,Geometry,Earthquake,https://spoj.com/problems/eqst,Hard,Geometric probability
+SPOJ,Geometry,FARTHEST,https://www.spoj.com/problems/FARTHEST/,Hard,Farthest pair of points
+SPOJ,Geometry,Flying safely,https://spoj.com/problems/fs,Medium,Minimum spanning circle
+SPOJ,Geometry,GPOLY,https://www.spoj.com/problems/GPOLY/,Hard,General polygon
+SPOJ,Geometry,Guard,https://spoj.com/problems/guard,Hard,Art gallery problem
+SPOJ,Geometry,HAIL,https://www.spoj.com/problems/HAIL/,Medium,Coordinate geometry
+SPOJ,Geometry,HRECT,https://www.spoj.com/problems/HRECT/,Hard,Counting rectangles
+SPOJ,Geometry,INPOLY,https://www.spoj.com/problems/INPOLY/,Medium,Point in convex polygon
+SPOJ,Geometry,Island Hopping,https://spoj.com/problems/island,Medium,Euclidean MST / geometry
+SPOJ,Geometry,KPPOLY,https://www.spoj.com/problems/KPPOLY/,Hard,Polygon intersection
+SPOJ,Geometry,Line of Sight,https://spoj.com/problems/los,Medium,Line of sight / tangents
+SPOJ,Geometry,MOBILES,https://www.spoj.com/problems/MOBILES/,Medium,Grid geometry
+SPOJ,Geometry,MTOTALF,https://www.spoj.com/problems/MTOTALF/,Hard,Triangle area from points
+SPOJ,Geometry,Maximum Triangle,https://spoj.com/problems/maxtri,Medium,Maximum area triangle
+SPOJ,Geometry,Minimum Bounding Rectangle,https://spoj.com/problems/mbr,Medium,Bounding rectangle
+SPOJ,Geometry,Nails,https://spoj.com/problems/nhlf,Medium,Polygon perimeter
+SPOJ,Geometry,Pizza Cutting,https://spoj.com/problems/pcut,Easy,Line intersection / counting
+SPOJ,Geometry,Polygon,https://spoj.com/problems/hpynos2,Medium,Polygon / cycle detection
+SPOJ,Geometry,Power of Triangles,https://spoj.com/problems/potri,Medium,Triangle counting
+SPOJ,Geometry,Quadrilateral,https://spoj.com/problems/quadarea,Easy,Quadrilateral area
+SPOJ,Geometry,RCIRCLE,https://www.spoj.com/problems/RCIRCLE/,Easy,Circle geometry
+SPOJ,Geometry,Rectangles,https://spoj.com/problems/area,Medium,Rectangle area
+SPOJ,Geometry,Rectangles Perimeter,https://spoj.com/problems/rectangl,Easy,Rectangle perimeter
+SPOJ,Geometry,SQUARE,https://www.spoj.com/problems/SQUARE/,Easy,Square geometry
+SPOJ,Geometry,Stars,https://spoj.com/problems/stars,Medium,Line arrangement
+SPOJ,Geometry,TRIANGLE,https://www.spoj.com/problems/TRIANGLE/,Easy,Triangle geometry
+SPOJ,Geometry,Tangent Lines,https://spoj.com/problems/tangent,Medium,Circle tangents
+SPOJ,Geometry,Triangles,https://spoj.com/problems/semtri,Easy,Triangle classification
+SPOJ,Point in Polygon,POINTSP,https://www.spoj.com/problems/POINTSP/,Medium,Point location
+SPOJ,Point in Polygon,Point in Polygon,https://spoj.com/problems/geopoin,Easy,Point in polygon
+SPOJ,Polygon Area,Area,https://spoj.com/problems/shoelace,Easy,Shoelace formula
+SPOJ,Sweep Line,Sweep Line,https://spoj.com/problems/swpln,Medium,Sweep line algorithm
+Timus,Convex Hull,Cover the House,https://acm.timus.ru/problem.aspx?space=1&num=1111,Hard,Convex hull
+TopCoder,Distance,ManhattanDistance,https://community.topcoder.com/stat?c=problem_statement&pm=3458,Easy,Manhattan distance
+Toph,Geometry,Circle,https://toph.co/p/circle,Easy,Circle geometry
+Toph,Geometry,Convex Hull,https://toph.co/p/convex-hull,Medium,Convex hull
+Toph,Geometry,Line Segment,https://toph.co/p/line-segment,Medium,Line geometry
+Toph,Geometry,Point in Polygon,https://toph.co/p/point-in-polygon,Medium,Point in polygon
+Toph,Geometry,Rectangle,https://toph.co/p/rectangle,Easy,Rectangle geometry
+Toph,Geometry,Triangle Area,https://toph.co/p/triangle-area,Easy,Triangle area
+USACO,Convex Hull,Cow Steeplechase,http://usaco.org/index.php?page=viewproblem2&cpid=938,Gold,Convex hull
+UVa,Circle Intersection,Area of Intersecting Circles,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1456,Medium,Circle intersection area

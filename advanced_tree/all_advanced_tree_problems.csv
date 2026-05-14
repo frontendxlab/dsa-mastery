@@ -481,14 +481,6 @@ AtCoder,Advanced Tree,G. Balanced Subarrays,https://atcoder.jp/contests/abc455/t
 AtCoder,Advanced Tree,A. Non-Crossing Railcar Rearrangement,https://atcoder.jp/contests/ahc064/tasks/ahc064_a,Very Hard,Range Query
 AtCoder,Advanced Tree,F. Range Division,https://atcoder.jp/contests/arc219/tasks/arc219_f,Very Hard,Range Query
 TopCoder,Advanced Tree,Range Minimum Query,https://community.topcoder.com/stat?c=problem_statement&pm=3561,Hard,Sparse Table / Segment Tree
-TopCoder,Advanced Tree,Inversions,https://community.topcoder.com/stat?c=problem_statement&pm=2998,Medium,Fenwick Tree / BIT
-TopCoder,Advanced Tree,Segments,https://community.topcoder.com/stat?c=problem_statement&pm=356,Medium,Segment Tree
-TopCoder,Advanced Tree,Inversions,https://community.topcoder.com/stat?c=problem_statement&pm=343,Medium,Fenwick Tree
-TopCoder,Advanced Tree,CollectingBonuses,https://community.topcoder.com/stat?c=problem_statement&pm=396,Hard,Fenwick Tree
-TopCoder,Advanced Tree,SumOfSegments,https://community.topcoder.com/stat?c=problem_statement&pm=399,Hard,Segment Tree / BIT
-TopCoder,Advanced Tree,RangeSquaredSubsets,https://community.topcoder.com/stat?c=problem_statement&pm=327,Hard,Segment Tree
-TopCoder,Advanced Tree,Balance,https://community.topcoder.com/stat?c=problem_statement&pm=358,Medium,DSU / Union Find
-TopCoder,Advanced Tree,SnapJump,https://community.topcoder.com/stat?c=problem_statement&pm=328,Medium,Segment Tree
 GeeksforGeeks,Advanced Tree,Count Reverse Pairs,https://www.geeksforgeeks.org/problems/count-reverse-pairs/1,Hard,Segment Tree & Binary Indexed Tree (Merge Sort)
 GeeksforGeeks,Advanced Tree,Range Sum Queries,https://www.geeksforgeeks.org/problems/range-sum-queries2353/1,Medium,Segment Tree (Range Sum Query)
 GeeksforGeeks,Advanced Tree,Range GCD Queries,https://www.geeksforgeeks.org/problems/range-gcd-queries3654/1,Medium,Segment Tree (Range GCD Query)
@@ -521,40 +513,7 @@ GeeksforGeeks,Advanced Tree,Optimal Construction of Roads,https://www.geeksforge
 GeeksforGeeks,Advanced Tree,CSES Solutions - Fixed-Length Paths II,https://www.geeksforgeeks.org/dsa/cses-solutions-fixed-length-paths-ii/,Hard,Fenwick Tree (Tree Path Counting)
 Coding Ninjas,Advanced Tree,Fenwick Tree,https://www.naukri.com/code360/problems/fenwick-tree_1071952,Moderate,Fenwick Tree
 AOJ,Advanced Tree,Range Minimum Query (RMQ),https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_2_A,Easy,Segment Tree
-AOJ,Advanced Tree,Range Sum Query (RSQ),https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_2_B,Easy,Fenwick Tree / BIT
-AOJ,Advanced Tree,Range Search (kD Tree),https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_2_C,Medium,kD Tree
-AOJ,Advanced Tree,Range Update Query (RUQ),https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_2_D,Medium,Lazy Segment Tree
-AOJ,Advanced Tree,Range Add Query (RAQ),https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_2_E,Easy,Fenwick Tree / BIT Range Add
-AOJ,Advanced Tree,RMQ and RUQ,https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_2_F,Hard,Lazy Segment Tree
-AOJ,Advanced Tree,RSQ and RAQ,https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_2_G,Medium,Fenwick Tree / BIT Range Add Sum
-AOJ,Advanced Tree,RMQ and RAQ,https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_2_H,Hard,Lazy Segment Tree
-AOJ,Advanced Tree,RSQ and RUQ,https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_2_I,Hard,Lazy Segment Tree
-AOJ,Advanced Tree,The Number of Inversions,https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_5_D,Medium,Fenwick Tree / BIT Inversion Count
 POJ,Advanced Tree,Stars,http://poj.org/problem?id=2352,Easy,Fenwick Tree / BIT 2D Partial Order
-POJ,Advanced Tree,Ultra-QuickSort,http://poj.org/problem?id=2299,Medium,Fenwick Tree / BIT Inversion Count
-POJ,Advanced Tree,Brainman,http://poj.org/problem?id=1804,Easy,Fenwick Tree / BIT Inversion Count
-POJ,Advanced Tree,Lost Cows,http://poj.org/problem?id=2182,Medium,Segment Tree / BIT Order Statistic
-POJ,Advanced Tree,Cows,http://poj.org/problem?id=2481,Medium,Fenwick Tree / BIT Interval Count
-POJ,Advanced Tree,Japan,http://poj.org/problem?id=3067,Medium,Fenwick Tree / BIT Inversion Count
-POJ,Advanced Tree,Apple Tree,http://poj.org/problem?id=3321,Medium,Fenwick Tree / BIT DFS Order
-POJ,Advanced Tree,Sliding Window,http://poj.org/problem?id=2823,Medium,Segment Tree / RMQ / Deque
-POJ,Advanced Tree,A Simple Problem with Integers,http://poj.org/problem?id=3468,Medium,Segment Tree / BIT Range Update
-POJ,Advanced Tree,Count Color,http://poj.org/problem?id=2777,Medium,Segment Tree Lazy Propagation
-POJ,Advanced Tree,Mayor's posters,http://poj.org/problem?id=2528,Medium,Segment Tree Lazy + Compression
-POJ,Advanced Tree,Buy Tickets,http://poj.org/problem?id=2828,Medium,Segment Tree Order Statistic
-POJ,Advanced Tree,Who Gets the Most Candies?,http://poj.org/problem?id=2886,Hard,Segment Tree Order Statistic
-POJ,Advanced Tree,Balanced Lineup,http://poj.org/problem?id=3264,Easy,Segment Tree / RMQ
-POJ,Advanced Tree,Frequent values,http://poj.org/problem?id=3368,Medium,Segment Tree / RMQ
-POJ,Advanced Tree,Hotel,http://poj.org/problem?id=3667,Hard,Segment Tree Lazy Propagation
-POJ,Advanced Tree,Mobile phones,http://poj.org/problem?id=1195,Medium,2D Fenwick Tree / BIT
-POJ,Advanced Tree,Matrix,http://poj.org/problem?id=2155,Medium,2D Fenwick Tree / BIT
-POJ,Advanced Tree,MooFest,http://poj.org/problem?id=1990,Medium,Fenwick Tree / BIT
-POJ,Advanced Tree,City Horizon,http://poj.org/problem?id=3277,Hard,Segment Tree Sweep Line
-POJ,Advanced Tree,Potted Flower,http://poj.org/problem?id=2750,Medium,Segment Tree
-POJ,Advanced Tree,Help with Intervals,http://poj.org/problem?id=3225,Medium,Segment Tree
-POJ,Advanced Tree,Atlantis,http://poj.org/problem?id=1151,Hard,Segment Tree Sweep Line
-POJ,Advanced Tree,Picture,http://poj.org/problem?id=1177,Hard,Segment Tree Sweep Line
-POJ,Advanced Tree,Crane,http://poj.org/problem?id=2991,Hard,Segment Tree
 DMOJ,Advanced Tree,Binary Indexed Tree Test,https://dmoj.ca/problem/ds1,Medium,Fenwick Tree / BIT
 DMOJ,Advanced Tree,Segment Tree Test,https://dmoj.ca/problem/ds3,Medium,Segment Tree
 DMOJ,Advanced Tree,Dynamic Range Minimum Test,https://dmoj.ca/problem/segtree,Medium,Segment Tree
@@ -657,26 +616,7 @@ SPOJ,Advanced Tree,ROCK,https://www.spoj.com/problems/ROCK/,Medium,Mo's Algorith
 SPOJ,Advanced Tree,AKVOD05,https://www.spoj.com/problems/AKVOD05/,Medium,Segment Tree
 SPOJ,Advanced Tree,RRSCHED,https://www.spoj.com/problems/RRSCHED/,Hard,Segment Tree (Dynamic)
 UVa,Advanced Tree,Potentiometers,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3238,Easy,BIT / Segment Tree
-UVa,Advanced Tree,Dynamic Inversion,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3141,Hard,BIT / Sqrt Decomposition
-UVa,Advanced Tree,SKYLINE,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3673,Medium,Segment Tree (Lazy)
-UVa,Advanced Tree,Ahoy Pirates,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2397,Hard,Segment Tree (Lazy with States)
-UVa,Advanced Tree,Interval Product,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3983,Medium,Segment Tree (Product with sign)
-UVa,Advanced Tree,Array Transformer,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3154,Hard,Sqrt Decomposition
-UVa,Advanced Tree,Census,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2262,Hard,2D Segment Tree
-UVa,Advanced Tree,Permutation,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2210,Medium,BIT / Segment Tree (Order Statistic)
-UVa,Advanced Tree,Ultra-QuickSort,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1751,Easy,BIT (Inversion Count)
-UVa,Advanced Tree,Frequent Values,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2176,Medium,Segment Tree (RMQ)
-UVa,Advanced Tree,Binary Search Tree,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3705,Hard,Segment Tree
-UVa,Advanced Tree,Point in Polygon,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3151,Hard,Segment Tree
-UVa,Advanced Tree,Find the Median,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3142,Medium,BIT / Order Statistic
-UVa,Advanced Tree,Jane and the Frost Giants,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=4541,Medium,Segment Tree
 Timus,Advanced Tree,Stars,https://acm.timus.ru/problem.aspx?space=1&num=1028,Easy,BIT / Fenwick Tree
-Timus,Advanced Tree,War Games 2,https://acm.timus.ru/problem.aspx?space=1&num=1521,Medium,BIT / Segment Tree (Josephus)
-Timus,Advanced Tree,Minimal Coverage,https://acm.timus.ru/problem.aspx?space=1&num=1303,Medium,Segment Tree (Greedy + Range)
-Timus,Advanced Tree,Two Rounds,https://acm.timus.ru/problem.aspx?space=1&num=1346,Hard,Segment Tree
-Timus,Advanced Tree,Strip,https://acm.timus.ru/problem.aspx?space=1&num=1654,Hard,Segment Tree
-Timus,Advanced Tree,Railway,https://acm.timus.ru/problem.aspx?space=1&num=1318,Hard,BIT
-Timus,Advanced Tree,Brackets,https://acm.timus.ru/problem.aspx?space=1&num=1220,Hard,Segment Tree (Balance)
 Kattis,Advanced Tree,Supercomputer,https://open.kattis.com/problems/supercomputer,Easy,BIT
 Kattis,Advanced Tree,Where Have You Bin,https://open.kattis.com/problems/wherehaveyoubin,Medium,BIT / Segment Tree
 Kattis,Advanced Tree,Knapsack,https://open.kattis.com/problems/knapsack,Hard,BIT / DP Optimization
@@ -692,18 +632,6 @@ Toph,Advanced Tree,Power of Three,https://toph.co/p/power-of-three,Medium,Segmen
 Toph,Advanced Tree,Neutralize,https://toph.co/p/neutralize,Hard,Segment Tree
 Toph,Advanced Tree,Point Updates,https://toph.co/p/point-updates,Medium,Segment Tree / BIT
 USACO,Advanced Tree,Crowded Cows,https://www.usaco.org/index.php?page=viewproblem2&cpid=1038,Medium,BIT / Segment Tree
-USACO,Advanced Tree,Balanced Photo,https://www.usaco.org/index.php?page=viewproblem2&cpid=693,Medium,BIT
-USACO,Advanced Tree,Out of Sorts,https://www.usaco.org/index.php?page=viewproblem2&cpid=834,Medium,BIT
-USACO,Advanced Tree,Sleepy Cow Sorting,https://www.usaco.org/index.php?page=viewproblem2&cpid=898,Medium,BIT
-USACO,Advanced Tree,The Cow Run,https://www.usaco.org/index.php?page=viewproblem2&cpid=311,Hard,Segment Tree / BIT (DP)
-USACO,Advanced Tree,Balancing,https://www.usaco.org/index.php?page=viewproblem2&cpid=624,Hard,BIT / Segment Tree
-USACO,Advanced Tree,Counting Haybales,https://www.usaco.org/index.php?page=viewproblem2&cpid=578,Medium,Segment Tree (Lazy)
-USACO,Advanced Tree,Superbull,https://www.usaco.org/index.php?page=viewproblem2&cpid=591,Medium,BIT / DSU
-USACO,Advanced Tree,Left Out,https://www.usaco.org/index.php?page=viewproblem2&cpid=1040,Hard,2D BIT / Segment Tree
-USACO,Advanced Tree,Reduce,https://www.usaco.org/index.php?page=viewproblem2&cpid=642,Hard,BIT / Line Sweep
-USACO,Advanced Tree,The Great Revegetation,https://www.usaco.org/index.php?page=viewproblem2&cpid=1245,Medium,BIT
-USACO,Advanced Tree,Falling Portals,https://www.usaco.org/index.php?page=viewproblem2&cpid=998,Hard,Segment Tree (Lazy)
-USACO,Advanced Tree,Exercise,https://www.usaco.org/index.php?page=viewproblem2&cpid=1043,Hard,Segment Tree
 LightOJ,Advanced Tree,Helping Cicada,https://lightoj.com/problem/helping-cicada,Medium,BIT
 LightOJ,Advanced Tree,Point Situation,https://lightoj.com/problem/point-situation,Medium,BIT
 LightOJ,Advanced Tree,Rooks,https://lightoj.com/problem/rooks,Medium,BIT
@@ -853,58 +781,28 @@ Codeforces,Advanced Tree,XOR on Segment,https://codeforces.com/problemset/proble
 Codeforces,Advanced Tree,Please another Queries on Array,https://codeforces.com/problemset/problem/1114/F,Hard,Segment Tree with Lazy
 COCI,Advanced Tree,Deda,https://oj.uz/problem/view/COCI17_deda,Medium,Segment Tree
 Codeforces,Advanced Tree,The Untended Antiquity,https://codeforces.com/problemset/problem/869/E,Medium,2D Segment Tree
-UVa,Advanced Tree,Potentiometers,https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=3238,Easy,Fenwick Tree
 LightOJ,Advanced Tree,Curious Robin Hood,http://www.lightoj.com/volume_showproblem.php?problem=1112,Easy,Fenwick Tree
-LightOJ,Advanced Tree,Points in Rectangle,http://www.lightoj.com/volume_showproblem.php?problem=1266,Medium,2D Fenwick Tree
-CodeChef,Advanced Tree,SPREAD,http://www.codechef.com/problems/SPREAD,Medium,Fenwick Tree Range Update
-SPOJ,Advanced Tree,CTRICK,http://www.spoj.com/problems/CTRICK/,Medium,Fenwick Tree
-SPOJ,Advanced Tree,MATSUM,http://www.spoj.com/problems/MATSUM/,Easy,2D Fenwick Tree
 SPOJ,Advanced Tree,DQUERY,http://www.spoj.com/problems/DQUERY/,Medium,Fenwick Tree / Mo's Algorithm
-SPOJ,Advanced Tree,NKTEAM,http://www.spoj.com/problems/NKTEAM/,Hard,Fenwick Tree
-SPOJ,Advanced Tree,YODANESS,http://www.spoj.com/problems/YODANESS/,Medium,Fenwick Tree / Inversions
-TopCoder,Advanced Tree,FloatingMedian,https://community.topcoder.com/stat?c=problem_statement&pm=6551&rd=9990,Medium,Fenwick Tree
-SPOJ,Advanced Tree,Ada and Behives,http://www.spoj.com/problems/ADABEHIVE/,Medium,2D Fenwick Tree
 HackerEarth,Advanced Tree,Counting in Byteland,https://www.hackerearth.com/practice/data-structures/advanced-data-structures/fenwick-binary-indexed-trees/practice-problems/algorithm/counting-in-byteland/,Medium,Fenwick Tree
 Codeforces,Advanced Tree,Little Artem and Time Machine,http://codeforces.com/contest/669/problem/E,Medium,Fenwick Tree / Offline
 Codeforces,Advanced Tree,Hanoi Factory,http://codeforces.com/contest/777/problem/E,Medium,Fenwick Tree / DP
-SPOJ,Advanced Tree,Tulip and Numbers,http://www.spoj.com/problems/TULIPNUM/,Medium,Fenwick Tree
 SPOJ,Advanced Tree,SUMSUM,http://www.spoj.com/problems/SUMSUM/,Hard,Fenwick Tree
-SPOJ,Advanced Tree,Sabir and Gifts,http://www.spoj.com/problems/SGIFT/,Medium,Fenwick Tree
-SPOJ,Advanced Tree,The Permutation Game Again,http://www.spoj.com/problems/TPGA/,Medium,Fenwick Tree
-SPOJ,Advanced Tree,Zig when you Zag,http://www.spoj.com/problems/ZIGZAG2/,Hard,Fenwick Tree
-SPOJ,Advanced Tree,Crayon,http://www.spoj.com/problems/CRAYON/,Medium,Fenwick Tree
-SPOJ,Advanced Tree,Weird Points,http://www.spoj.com/problems/DCEPC705/,Medium,Fenwick Tree
-SPOJ,Advanced Tree,Its a Murder,http://www.spoj.com/problems/DCEPC206/,Easy,Fenwick Tree
-SPOJ,Advanced Tree,Bored of Suffixes and Prefixes,http://www.spoj.com/problems/KOPC12G/,Medium,Fenwick Tree
-SPOJ,Advanced Tree,Mega Inversions,http://www.spoj.com/problems/TRIPINV/,Medium,Fenwick Tree / Inversions
 Codeforces,Advanced Tree,Subsequences,http://codeforces.com/contest/597/problem/C,Hard,Fenwick Tree / DP
 Codeforces,Advanced Tree,Ball,http://codeforces.com/contest/12/problem/D,Hard,Fenwick Tree / 3D
 Codeforces,Advanced Tree,Garlands,http://codeforces.com/contest/707/problem/E,Hard,2D Fenwick Tree
 Codeforces,Advanced Tree,Inversions after Shuffle,http://codeforces.com/contest/749/problem/E,Hard,Fenwick Tree
 Codeforces,Advanced Tree,Goodbye Souvenir,http://codeforces.com/contest/849/problem/E,Hard,Fenwick Tree
-SPOJ,Advanced Tree,Ada and Species,http://www.spoj.com/problems/ADACABAA/,Hard,2D Fenwick Tree
 Codeforces,Advanced Tree,Thor,https://codeforces.com/problemset/problem/704/A,Medium,Fenwick Tree
 Codeforces,Advanced Tree,Kuriyama Mirais Stones,https://codeforces.com/problemset/problem/433/B,Easy,Sqrt Decomposition
-UVa,Advanced Tree,Array Transformer,https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3154,Medium,Sqrt Decomposition
-UVa,Advanced Tree,Dynamic Inversion,https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3141,Hard,Sqrt Decomposition
-SPOJ,Advanced Tree,Give Away,http://www.spoj.com/problems/GIVEAWAY/,Medium,Sqrt Decomposition
 Codeforces,Advanced Tree,Till I Collapse,http://codeforces.com/contest/786/problem/C,Hard,Sqrt Decomposition
 Codeforces,Advanced Tree,Destiny,http://codeforces.com/contest/840/problem/D,Hard,Sqrt Decomposition
 Codeforces,Advanced Tree,Holes,http://codeforces.com/contest/13/problem/E,Medium,Sqrt Decomposition
 Codeforces,Advanced Tree,XOR and Favorite Number,https://codeforces.com/problemset/problem/617/E,Medium,Mo's Algorithm
 Codeforces,Advanced Tree,Powerful array,http://codeforces.com/problemset/problem/86/D,Medium,Mo's Algorithm
 Codeforces,Advanced Tree,Robin Hood Archery,https://codeforces.com/contest/2014/problem/H,Medium,Mo's Algorithm
-SPOJ,Advanced Tree,Ada and Aphids,http://www.spoj.com/problems/ADAAPHID/,Hard,Treap
-SPOJ,Advanced Tree,Ada and Harvest,http://www.spoj.com/problems/ADACROP/,Medium,Treap / Implicit
 Codeforces,Advanced Tree,Radio Stations,http://codeforces.com/contest/762/problem/E,Hard,Treap
-SPOJ,Advanced Tree,Ghost Town,http://www.spoj.com/problems/COUNT1IT/,Medium,Treap
-SPOJ,Advanced Tree,Arrangement Validity,http://www.spoj.com/problems/IITWPC4D/,Medium,Treap
-SPOJ,Advanced Tree,All in One,http://www.spoj.com/problems/ALLIN1/,Medium,Treap
 Codeforces,Advanced Tree,Dog Show,http://codeforces.com/contest/847/problem/D,Medium,Treap
 Codeforces,Advanced Tree,Yet Another Array Queries Problem,http://codeforces.com/contest/863/problem/D,Medium,Implicit Treap
-SPOJ,Advanced Tree,Mean of Array,http://www.spoj.com/problems/MEANARR/,Hard,Treap
-SPOJ,Advanced Tree,TWIST,http://www.spoj.com/problems/TWIST/,Medium,Implicit Treap
-SPOJ,Advanced Tree,KOILINE,http://www.spoj.com/problems/KOILINE/,Hard,Implicit Treap
 CodeChef,Advanced Tree,The Prestige,https://www.codechef.com/problems/PRESTIGE,Hard,Implicit Treap
 Codeforces,Advanced Tree,T-Shirts,https://codeforces.com/contest/702/problem/F,Hard,Treap
 Codeforces,Advanced Tree,Yaroslav and Points,https://codeforces.com/contest/295/problem/E,Hard,Treap

@@ -91,17 +91,6 @@ InterviewBit,Suggestion,Phone Directory,https://www.interviewbit.com/problems/ph
 InterviewBit,XOR,Maximum XOR Subarray,https://www.interviewbit.com/problems/maximum-xor-subarray/,Hard,Binary Trie
 InterviewBit,Word Search,Word Search Board,https://www.interviewbit.com/problems/word-search-board/,Medium,Trie + DFS backtracking
 InterviewBit,Validation,Valid Phone Directory,https://www.interviewbit.com/problems/valid-phone-directory/,Medium,Trie prefix conflict
-Codeforces,XOR / Trie,706D - Vasiliy's Multiset,https://codeforces.com/problemset/problem/706/D,1800,Binary Trie insert/delete/maxXOR
-Codeforces,XOR / Trie,665E - Beautiful Subarrays,https://codeforces.com/problemset/problem/665/E,2200,Binary Trie prefix XOR count
-Codeforces,XOR / Trie,923C - Perfect Security,https://codeforces.com/problemset/problem/923/C,1800,Binary Trie min XOR matching
-Codeforces,XOR / Trie,1731C - Even Subarrays,https://codeforces.com/problemset/problem/1731/C,1700,Binary Trie prefix XOR
-Codeforces,XOR / Trie,1416B - Make Them Equal,https://codeforces.com/problemset/problem/1416/B,2000,Trie / greedy redistribution
-Codeforces,XOR / Trie,1791F - Range Update Point Query,https://codeforces.com/problemset/problem/1791/F,1800,Trie digit-sum recursion
-Codeforces,String / Trie,514C - Watto and Mechanism,https://codeforces.com/problemset/problem/514/C,1900,Trie + one-edit search
-Codeforces,String / Trie,1705C - Mark and His Unfinished Essay,https://codeforces.com/problemset/problem/1705/C,1900,Trie for string expansion
-Codeforces,String / Trie,948C - Producing Snow,https://codeforces.com/problemset/problem/948/C,1700,Trie / binary search
-Codeforces,String / Trie,1000F - One Occurrence,https://codeforces.com/problemset/problem/1000/F,2200,Trie / segment tree
-Codeforces,String / Trie,1055E - Segments on the Line,https://codeforces.com/problemset/problem/1055/E,2400,Trie / binary search + greedy
 SPOJ,Prefix,PHONELST - Phone List,https://www.spoj.com/problems/PHONELST/,Easy,Trie prefix conflict detection
 SPOJ,XOR,SUBXOR - Subarray XOR,https://www.spoj.com/problems/SUBXOR/,Medium,Binary Trie prefix XOR count
 SPOJ,Dictionary,DICT - Search in Dictionary,https://www.spoj.com/problems/DICT/,Medium,Trie prefix search
@@ -124,7 +113,6 @@ Coding Ninjas,Word Break,Word Break,https://www.codingninjas.com/studio/problems
 Coding Ninjas,Spell Check,Spell Checker,https://www.codingninjas.com/studio/problems/spell-checker_1095641,Medium,Trie dictionary lookup
 Coding Ninjas,Sorting,Sorting Array of Strings by Length,https://www.codingninjas.com/studio/problems/sort-array-of-strings-by-length_1095628,Medium,Trie DFS sorting
 Coding Ninjas,Validation,Valid Phone Numbers,https://www.codingninjas.com/studio/problems/valid-phone-numbers_1095629,Easy,Trie prefix validation
-LeetCode,Pattern,3045. Count Prefix and Suffix Pairs II,https://leetcode.com/problems/count-prefix-and-suffix-pairs-ii/,Hard,Trie with 2D prefix-suffix index
 LeetCode,Lexicographic,386. Lexicographical Numbers,https://leetcode.com/problems/lexicographical-numbers/,Medium,Trie-like DFS on 10-ary tree
 LeetCode,Lexicographic,440. K-th Smallest in Lexicographical Order,https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/,Hard,Trie-like counting / 10-ary tree
 LeetCode,Prefix (Premium),1858. Longest Word With All Prefixes (Premium),https://leetcode.com/problems/longest-word-with-all-prefixes/,Medium,Trie prefix verification
@@ -150,10 +138,186 @@ LightOJ,String / Trie,1114 - Easily Readable,https://lightoj.com/problem/easily-
 LightOJ,XOR / Trie,1269 - Consecutive Sum,https://lightoj.com/problem/consecutive-sum,Hard,Binary Trie max/min XOR subarray
 LightOJ,XOR / Trie,1224 - DNA Prefix,https://lightoj.com/problem/dna-prefix,Medium,Trie maximum prefix frequency
 Timus,Prefix,1494 - Monobilliards,https://acm.timus.ru/problem.aspx?space=1&num=1494,Medium,Trie / stack simulation
-Timus,String / Trie,1712 - Cipher Grille,https://acm.timus.ru/problem.aspx?space=1&num=1712,Easy,Trie grid decryption
 TCS CodeVita,Prefix,Phone Book Search,https://prepinsta.com/tcs-codevita/phone-book-search-problem/,Medium,Trie contact prefix search
 Google Kickstart,XOR / Trie,2021 Round A - XOR Graph,https://codingcompetitions.withgoogle.com/kickstart/round/0000000000436140,Hard,Binary Trie on graph
 LeetCode,Prefix,1940. Longest Common Subsequence Between Sorted Arrays (Premium),https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/,Medium,Trie for intersection
 LeetCode,Suggestion,2033. Minimum Operations to Make a Uni-Value Grid,https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/,Medium,Trie / median
 LeetCode,Pattern,2186. Minimum Number of Steps to Make Two Strings Anagram II,https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram-ii/,Medium,Trie frequency / counter
 LeetCode,Pattern,2935. Maximum Strong Pair XOR II,https://leetcode.com/problems/maximum-strong-pair-xor-ii/,Hard,Binary Trie + sliding window
+GeeksforGeeks,Trie,Advantages Trie Data Structure,https://www.geeksforgeeks.org/dsa/advantages-trie-data-structure/,N/A,GFG Problem
+GeeksforGeeks,Trie,Trie Insert And Search,https://www.geeksforgeeks.org/dsa/trie-insert-and-search/,N/A,GFG Problem
+GeeksforGeeks,Trie,Square Root Sqrt Decomposition Algorithm,https://www.geeksforgeeks.org/dsa/square-root-sqrt-decomposition-algorithm/,N/A,GFG Problem
+GeeksforGeeks,Trie,Trie,https://www.geeksforgeeks.org/tag/trie/,N/A,GFG Problem
+GeeksforGeeks,Trie,Trie Display Content,https://www.geeksforgeeks.org/dsa/trie-display-content/,N/A,GFG Problem
+GeeksforGeeks,Trie,Auto Complete Feature Using Trie,https://www.geeksforgeeks.org/dsa/auto-complete-feature-using-trie/,N/A,GFG Problem
+HackerEarth,Trie,Data Structures,https://www.hackerearth.com/practice/data-structures/,N/A,HackerEarth Problem
+HackerEarth,Trie,Advanced Data Structures,https://www.hackerearth.com/practice/data-structures/advanced-data-structures/,N/A,HackerEarth Problem
+HackerEarth,Trie,1 D,https://www.hackerearth.com/practice/data-structures/arrays/1-d/,N/A,HackerEarth Problem
+HackerEarth,Trie,Multi Dimensional,https://www.hackerearth.com/practice/data-structures/arrays/multi-dimensional/,N/A,HackerEarth Problem
+HackerEarth,Trie,Basics Of Stacks,https://www.hackerearth.com/practice/data-structures/stacks/basics-of-stacks/,N/A,HackerEarth Problem
+HackerEarth,Trie,Basics Of Queues,https://www.hackerearth.com/practice/data-structures/queues/basics-of-queues/,N/A,HackerEarth Problem
+HackerEarth,Trie,Basics Of Hash Tables,https://www.hackerearth.com/practice/data-structures/hash-tables/basics-of-hash-tables/,N/A,HackerEarth Problem
+HackerEarth,Trie,Singly Linked List,https://www.hackerearth.com/practice/data-structures/linked-list/singly-linked-list/,N/A,HackerEarth Problem
+HackerEarth,Trie,Binary And Nary Trees,https://www.hackerearth.com/practice/data-structures/trees/binary-and-nary-trees/,N/A,HackerEarth Problem
+HackerEarth,Trie,Binary Search Tree,https://www.hackerearth.com/practice/data-structures/trees/binary-search-tree/,N/A,HackerEarth Problem
+HackerEarth,Trie,Heapspriority Queues,https://www.hackerearth.com/practice/data-structures/trees/heapspriority-queues/,N/A,HackerEarth Problem
+HackerEarth,Trie,Trie Keyword Tree,https://www.hackerearth.com/practice/data-structures/advanced-data-structures/trie-keyword-tree/,N/A,HackerEarth Problem
+HackerEarth,Trie,Segment Trees,https://www.hackerearth.com/practice/data-structures/advanced-data-structures/segment-trees/,N/A,HackerEarth Problem
+HackerEarth,Trie,Fenwick Binary Indexed Trees,https://www.hackerearth.com/practice/data-structures/advanced-data-structures/fenwick-binary-indexed-trees/,N/A,HackerEarth Problem
+HackerEarth,Trie,Suffix Trees,https://www.hackerearth.com/practice/data-structures/advanced-data-structures/suffix-trees/,N/A,HackerEarth Problem
+HackerEarth,Trie,Suffix Arrays,https://www.hackerearth.com/practice/data-structures/advanced-data-structures/suffix-arrays/,N/A,HackerEarth Problem
+HackerEarth,Trie,Basics Of Disjoint Data Structures,https://www.hackerearth.com/practice/data-structures/disjoint-data-strutures/basics-of-disjoint-data-structures/,N/A,HackerEarth Problem
+HackerEarth,Trie,Tutorial,https://www.hackerearth.com/practice/data-structures/advanced-data-structures/trie-keyword-tree/tutorial/,N/A,HackerEarth Problem
+HackerEarth,Trie,?Sort_By=Partially Solved&P_Level=,https://www.hackerearth.com/practice/data-structures/advanced-data-structures/trie-keyword-tree/practice-problems/2/?sort_by=partially solved&p_level=,N/A,HackerEarth Problem
+HackerEarth,Trie,?Sort_By=Partially Solved&P_Level=,https://www.hackerearth.com/practice/data-structures/advanced-data-structures/trie-keyword-tree/practice-problems/3/?sort_by=partially solved&p_level=,N/A,HackerEarth Problem
+Codeforces,Trie,Division + LCP (hard version),https://codeforces.com/problemset/problem/1968/G2,2200,Hash / String Hashing
+Codeforces,Trie,Division + LCP (easy version),https://codeforces.com/problemset/problem/1968/G1,1900,Hash / String Hashing
+Codeforces,Trie,XOR Palindromes,https://codeforces.com/problemset/problem/1867/B,1100,Binary Trie / XOR
+Codeforces,Trie,Prefix and Suffix Array,https://codeforces.com/problemset/problem/1794/A,800,String / Trie
+Codeforces,Trie,Prefixes and Suffixes,https://codeforces.com/problemset/problem/1730/D,2200,String / Trie
+Codeforces,Trie,Prefix Function Queries,https://codeforces.com/problemset/problem/1721/E,2200,Hash / String Hashing
+Codeforces,Trie,Xor-Subsequence (hard version),https://codeforces.com/problemset/problem/1720/D2,2400,Binary Trie / XOR
+Codeforces,Trie,Xor-Subsequence (easy version),https://codeforces.com/problemset/problem/1720/D1,1800,Binary Trie / XOR
+Codeforces,Trie,Cypher,https://codeforces.com/problemset/problem/1703/C,800,String / Trie
+Codeforces,Trie,Minimal String Xoration,https://codeforces.com/problemset/problem/1654/F,2800,Binary Trie / XOR
+Codeforces,Trie,Prefix Removals,https://codeforces.com/problemset/problem/1654/B,800,String / Trie
+Codeforces,Trie,Prefixes and Suffixes,https://codeforces.com/problemset/problem/1532/F,N/A,String / Trie
+Codeforces,Trie,Enormous XOR,https://codeforces.com/problemset/problem/1493/E,2600,Binary Trie / XOR
+Codeforces,Trie,XOR Inverse,https://codeforces.com/problemset/problem/1416/C,2000,Binary Trie / XOR
+Codeforces,Trie,Common Prefixes,https://codeforces.com/problemset/problem/1384/A,1200,String / Trie
+Codeforces,Trie,Prefix Flip (Hard Version),https://codeforces.com/problemset/problem/1381/A2,1700,String / Trie
+Codeforces,Trie,Prefix Flip (Easy Version),https://codeforces.com/problemset/problem/1381/A1,1300,String / Trie
+Codeforces,Trie,Kaavi and Magic Spell,https://codeforces.com/problemset/problem/1336/C,2200,String / Trie
+Codeforces,Trie,Prefix-Suffix Palindrome (Hard version),https://codeforces.com/problemset/problem/1326/D2,1800,Hash / String Hashing
+Codeforces,Trie,Prefix-Suffix Palindrome (Easy version),https://codeforces.com/problemset/problem/1326/D1,1500,Hash / String Hashing
+Codeforces,Trie,Infinite Prefixes,https://codeforces.com/problemset/problem/1295/B,1700,String / Trie
+Codeforces,Trie,Prefixes,https://codeforces.com/problemset/problem/1216/A,800,String / Trie
+Codeforces,Trie,Telephone Number,https://codeforces.com/problemset/problem/1167/A,800,String / Trie
+Codeforces,Trie,Prefixes and Suffixes,https://codeforces.com/problemset/problem/1092/C,1700,String / Trie
+Codeforces,Trie,Two Prefixes,https://codeforces.com/problemset/problem/1090/J,2600,String / Trie
+Codeforces,Trie,Fibonacci Suffix,https://codeforces.com/problemset/problem/1065/G,2700,String / Trie
+Codeforces,Trie,Tree and XOR,https://codeforces.com/problemset/problem/1055/F,2900,String / Trie
+Codeforces,Trie,Palindrome Pairs,https://codeforces.com/problemset/problem/1045/I,1600,Hash / String Hashing
+Codeforces,Trie,Kuro and GCD and XOR and SUM,https://codeforces.com/problemset/problem/979/D,2200,Binary Trie / XOR
+Codeforces,Trie,Phone Numbers,https://codeforces.com/problemset/problem/940/C,1500,String / Trie
+Codeforces,Trie,Phone Numbers,https://codeforces.com/problemset/problem/898/C,1400,String / Trie
+Codeforces,Trie,DNA Evolution,https://codeforces.com/problemset/problem/827/C,2100,String / Trie
+Codeforces,Trie,Xors on Segments,https://codeforces.com/problemset/problem/620/F,2800,String / Trie
+Codeforces,Trie,DNA Alignment,https://codeforces.com/problemset/problem/520/C,1500,String / Trie
+Codeforces,Trie,Hacking Cypher,https://codeforces.com/problemset/problem/490/C,1700,String / Trie
+Codeforces,Trie,Suffix Structures,https://codeforces.com/problemset/problem/448/B,1400,String / Trie
+Codeforces,Trie,Prefixes and Suffixes,https://codeforces.com/problemset/problem/432/D,2000,String / Trie
+Codeforces,Trie,Suffix Subgroup,https://codeforces.com/problemset/problem/345/G,2200,String / Trie
+Codeforces,Trie,Wizards and Minimal Spell,https://codeforces.com/problemset/problem/168/B,1700,String / Trie
+Codeforces,Trie,Palindrome pairs,https://codeforces.com/problemset/problem/159/D,1500,String / Trie
+Codeforces,Trie,Phone Numbers,https://codeforces.com/problemset/problem/151/B,1200,String / Trie
+Codeforces,Trie,Spelling Check,https://codeforces.com/problemset/problem/39/J,1500,Hash / String Hashing
+Codeforces,Trie,The 67th XOR Problem,https://codeforces.com/problemset/problem/2218/E,1200,Binary Trie / XOR
+Codeforces,Trie,Xor Product,https://codeforces.com/problemset/problem/2190/F,3300,Binary Trie / XOR
+Codeforces,Trie,XOR-convenience (Hard Version),https://codeforces.com/problemset/problem/2189/C2,1800,Binary Trie / XOR
+Codeforces,Trie,XOR Convenience (Easy Version),https://codeforces.com/problemset/problem/2189/C1,1300,Binary Trie / XOR
+Codeforces,Trie,No Effect XOR,https://codeforces.com/problemset/problem/2180/E,2300,Binary Trie / XOR
+Codeforces,Trie,XOR-factorization,https://codeforces.com/problemset/problem/2180/C,1900,Binary Trie / XOR
+Codeforces,Trie,Renako Amaori and XOR Game (hard version),https://codeforces.com/problemset/problem/2171/C2,1400,Binary Trie / XOR
+Codeforces,Trie,Renako Amaori and XOR Game (easy version),https://codeforces.com/problemset/problem/2171/C1,1100,Binary Trie / XOR
+Codeforces,Trie,Build XOR on a Segment,https://codeforces.com/problemset/problem/2170/F,2600,Binary Trie / XOR
+Codeforces,Trie,Beautiful XOR,https://codeforces.com/problemset/problem/2162/C,1100,Binary Trie / XOR
+Codeforces,Trie,Reverse XOR,https://codeforces.com/problemset/problem/2160/C,1300,Binary Trie / XOR
+Codeforces,Trie,Increasing Xor,https://codeforces.com/problemset/problem/2143/F,2700,Binary Trie / XOR
+Codeforces,Trie,Add or XOR,https://codeforces.com/problemset/problem/2119/A,800,Binary Trie / XOR
+Codeforces,Trie,Wonderful XOR Problem,https://codeforces.com/problemset/problem/2096/H,3200,Binary Trie / XOR
+Codeforces,Trie,XOR Matrix,https://codeforces.com/problemset/problem/2075/E,2500,Binary Trie / XOR
+Codeforces,Trie,XOR and Triangle,https://codeforces.com/problemset/problem/2074/C,1100,Binary Trie / XOR
+Codeforces,Trie,Xor of Median (Hard Version),https://codeforces.com/problemset/problem/2056/F2,3000,Binary Trie / XOR
+Codeforces,Trie,Xor of Median (Easy Version),https://codeforces.com/problemset/problem/2056/F1,2700,Binary Trie / XOR
+Codeforces,Trie,Xorderable Array,https://codeforces.com/problemset/problem/2045/J,2600,Binary Trie / XOR
+Codeforces,Trie,Shohag Loves XOR (Hard Version),https://codeforces.com/problemset/problem/2039/C2,1800,Binary Trie / XOR
+Codeforces,Trie,Shohag Loves XOR (Easy Version),https://codeforces.com/problemset/problem/2039/C1,1200,Binary Trie / XOR
+Codeforces,Trie,XORificator 3000,https://codeforces.com/problemset/problem/2036/F,1900,Binary Trie / XOR
+Codeforces,Trie,Xor-Grid Problem,https://codeforces.com/problemset/problem/1993/E,2700,Binary Trie / XOR
+Codeforces,Trie,Prime XOR Coloring,https://codeforces.com/problemset/problem/1991/D,1900,Binary Trie / XOR
+Codeforces,Trie,XOR Sequences,https://codeforces.com/problemset/problem/1979/B,1000,Binary Trie / XOR
+Codeforces,Trie,XORificator,https://codeforces.com/problemset/problem/1977/D,2300,Binary Trie / XOR
+Codeforces,Trie,Equal XOR,https://codeforces.com/problemset/problem/1944/B,1100,Binary Trie / XOR
+Codeforces,Trie,XOR Break --- Game Version,https://codeforces.com/problemset/problem/1934/D2,2400,Binary Trie / XOR
+Codeforces,Trie,XOR Break --- Solo Version,https://codeforces.com/problemset/problem/1934/D1,2100,Binary Trie / XOR
+Codeforces,Trie,XOR-distance,https://codeforces.com/problemset/problem/1918/C,1400,Binary Trie / XOR
+Codeforces,Trie,XOR Construction,https://codeforces.com/problemset/problem/1895/D,1900,Binary Trie / XOR
+Codeforces,Trie,Tree XOR,https://codeforces.com/problemset/problem/1882/D,1900,Binary Trie / XOR
+Codeforces,Trie,Sum of XOR Functions,https://codeforces.com/problemset/problem/1879/D,1700,Binary Trie / XOR
+Codeforces,Trie,"Divide, XOR, and Conquer",https://codeforces.com/problemset/problem/1863/F,2600,Binary Trie / XOR
+Codeforces,Trie,XOR Partition,https://codeforces.com/problemset/problem/1849/F,2700,Binary Trie / XOR
+Codeforces,Trie,XOR Counting,https://codeforces.com/problemset/problem/1815/D,2600,Binary Trie / XOR
+Codeforces,Trie,Fixed Prefix Permutations,https://codeforces.com/problemset/problem/1792/D,1700,Binary Trie / XOR
+Codeforces,Trie,"XOR, Tree, and Queries",https://codeforces.com/problemset/problem/1788/F,2500,Binary Trie / XOR
+Codeforces,Trie,The Harmonization of XOR,https://codeforces.com/problemset/problem/1787/E,2100,Binary Trie / XOR
+Codeforces,Trie,Xorcerer's Stones,https://codeforces.com/problemset/problem/1779/F,2500,Binary Trie / XOR
+Codeforces,Trie,Circular Xor Reversal,https://codeforces.com/problemset/problem/1748/F,3000,Binary Trie / XOR
+Codeforces,Trie,Even-Odd XOR,https://codeforces.com/problemset/problem/1722/G,1500,Binary Trie / XOR
+Codeforces,Trie,XOR Triangle,https://codeforces.com/problemset/problem/1710/C,2500,Binary Trie / XOR
+Codeforces,Trie,XOR Tree,https://codeforces.com/problemset/problem/1709/E,2400,Binary Trie / XOR
+Codeforces,Trie,XOR Mixup,https://codeforces.com/problemset/problem/1698/A,800,Binary Trie / XOR
+Codeforces,Trie,Power or XOR?,https://codeforces.com/problemset/problem/1673/E,2500,Binary Trie / XOR
+Codeforces,Trie,Keep XOR Low,https://codeforces.com/problemset/problem/1616/H,3000,Binary Trie / XOR
+Codeforces,Trie,Korney Korneevich and XOR (easy version),https://codeforces.com/problemset/problem/1582/F1,1800,Binary Trie / XOR
+Codeforces,Trie,MEXor Mixup,https://codeforces.com/problemset/problem/1567/B,1000,Binary Trie / XOR
+Codeforces,Trie,Moamen and XOR,https://codeforces.com/problemset/problem/1557/C,1700,Binary Trie / XOR
+Codeforces,Trie,XOR and Distance,https://codeforces.com/problemset/problem/1553/H,2900,Binary Trie / XOR
+Codeforces,Trie,Xor Tree,https://codeforces.com/problemset/problem/1446/C,2100,Binary Trie / XOR
+Codeforces,Trie,XORwice,https://codeforces.com/problemset/problem/1421/A,800,Binary Trie / XOR
+Codeforces,Trie,XOR-gun,https://codeforces.com/problemset/problem/1415/D,2000,Binary Trie / XOR
+Codeforces,Trie,Ehab the Xorcist,https://codeforces.com/problemset/problem/1325/D,1700,Binary Trie / XOR
+Codeforces,Trie,Xor-Set,https://codeforces.com/problemset/problem/1261/F,3100,Binary Trie / XOR
+Codeforces,Trie,XOR Guessing,https://codeforces.com/problemset/problem/1207/E,1900,Binary Trie / XOR
+Codeforces,Trie,Ehab and the Expected XOR Problem,https://codeforces.com/problemset/problem/1174/D,1900,Binary Trie / XOR
+Codeforces,Trie,Dima and a Bad XOR,https://codeforces.com/problemset/problem/1151/B,1600,Binary Trie / XOR
+Codeforces,Trie,Decypher the String,https://codeforces.com/problemset/problem/1117/E,2200,Binary Trie / XOR
+Codeforces,Trie,Ehab and another another xor problem,https://codeforces.com/problemset/problem/1088/D,2000,Binary Trie / XOR
+Codeforces,Trie,Xor-Paths,https://codeforces.com/problemset/problem/1006/F,2100,Binary Trie / XOR
+Codeforces,Trie,Mahmoud and Ehab and yet another xor task,https://codeforces.com/problemset/problem/959/F,2400,Binary Trie / XOR
+Codeforces,Trie,Mahmoud and Ehab and the xor-MST,https://codeforces.com/problemset/problem/959/E,1900,Binary Trie / XOR
+Codeforces,Trie,Xor-MST,https://codeforces.com/problemset/problem/888/G,2300,Binary Trie / XOR
+Codeforces,Trie,Sherlock and the Encrypted Data,https://codeforces.com/problemset/problem/776/G,2900,Binary Trie / XOR
+Codeforces,Trie,Mahmoud and a xor trip,https://codeforces.com/problemset/problem/766/E,2100,Binary Trie / XOR
+Codeforces,Trie,Xor-matic Number of the Graph,https://codeforces.com/problemset/problem/724/G,2600,Binary Trie / XOR
+Codeforces,Trie,Misha and XOR,https://codeforces.com/problemset/problem/504/D,2700,Binary Trie / XOR
+Codeforces,Trie,Little Girl and Maximum XOR,https://codeforces.com/problemset/problem/276/D,1700,Binary Trie / XOR
+Codeforces,Trie,XOR on Segment,https://codeforces.com/problemset/problem/242/E,2000,Binary Trie / XOR
+Codeforces,Trie,Misha and LCP on Tree,https://codeforces.com/problemset/problem/504/E,3000,Hash / String Hashing
+HackerRank,Trie,Problem?Isfullscreen=True,https://www.hackerrank.com/challenges/contacts/problem?isFullScreen=true,N/A,HackerRank Problem
+HackerRank,Trie,Problem?Isfullscreen=True,https://www.hackerrank.com/challenges/no-prefix-set/problem?isFullScreen=true,N/A,HackerRank Problem
+LeetCode,Trie,425. Word Squares,https://leetcode.com/problems/word-squares/,Hard,LeetCode Problem
+LeetCode,Trie,527. Word Abbreviation,https://leetcode.com/problems/word-abbreviation/,Hard,LeetCode Problem
+LeetCode,Trie,588. Design In-Memory File System,https://leetcode.com/problems/design-in-memory-file-system/,Hard,LeetCode Problem
+LeetCode,Trie,616. Add Bold Tag in String,https://leetcode.com/problems/add-bold-tag-in-string/,Medium,LeetCode Problem
+LeetCode,Trie,642. Design Search Autocomplete System,https://leetcode.com/problems/design-search-autocomplete-system/,Hard,LeetCode Problem
+LeetCode,Trie,692. Top K Frequent Words,https://leetcode.com/problems/top-k-frequent-words/,Medium,LeetCode Problem
+LeetCode,Trie,808. Number of Matching Subsequences,https://leetcode.com/problems/number-of-matching-subsequences/,Medium,LeetCode Problem
+LeetCode,Trie,1244. Distinct Echo Substrings,https://leetcode.com/problems/distinct-echo-substrings/,Hard,LeetCode Problem
+LeetCode,Trie,1433. Encrypt and Decrypt Strings,https://leetcode.com/problems/encrypt-and-decrypt-strings/,Hard,LeetCode Problem
+LeetCode,Trie,1907. Count Pairs With XOR in a Range,https://leetcode.com/problems/count-pairs-with-xor-in-a-range/,Hard,LeetCode Problem
+LeetCode,Trie,2550. Words Within Two Edits of Dictionary,https://leetcode.com/problems/words-within-two-edits-of-dictionary/,Medium,LeetCode Problem
+LeetCode,Trie,2623. Maximum XOR of Two Non-Overlapping Subtrees,https://leetcode.com/problems/maximum-xor-of-two-non-overlapping-subtrees/,Hard,LeetCode Problem
+LeetCode,Trie,3193. Maximum Strong Pair XOR I,https://leetcode.com/problems/maximum-strong-pair-xor-i/,Easy,LeetCode Problem
+LeetCode,Trie,3238. Minimum Cost to Convert String II,https://leetcode.com/problems/minimum-cost-to-convert-string-ii/,Hard,LeetCode Problem
+LeetCode,Trie,3356. Shortest Uncommon Substring in an Array,https://leetcode.com/problems/shortest-uncommon-substring-in-an-array/,Medium,LeetCode Problem
+LeetCode,Trie,3559. Minimum Number of Valid Strings to Form Target I,https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/,Medium,LeetCode Problem
+LeetCode,Trie,3784. Longest Common Prefix of K Strings After Removal,https://leetcode.com/problems/longest-common-prefix-of-k-strings-after-removal/,Hard,LeetCode Problem
+LeetCode,Trie,3836. Phone Number Prefix,https://leetcode.com/problems/phone-number-prefix/,Easy,LeetCode Problem
+LeetCode,Trie,3905. Partition String ,https://leetcode.com/problems/partition-string/,Medium,LeetCode Problem
+LeetCode,Trie,3929. Subarrays with XOR at Least K,https://leetcode.com/problems/subarrays-with-xor-at-least-k/,Hard,LeetCode Problem
+LeetCode,Trie,4148. Convert Number Words to Digits,https://leetcode.com/problems/convert-number-words-to-digits/,Medium,LeetCode Problem
+LeetCode,Trie,4204. Maximum Subarray XOR with Bounded Range,https://leetcode.com/problems/maximum-subarray-xor-with-bounded-range/,Hard,LeetCode Problem
+USACO,Trie,Censoring,http://www.usaco.org/index.php?page=viewproblem2&cpid=526,Bronze,String
+TopCoder,Trie,11731,https://community.topcoder.com/stat?c=problem_statement&pm=Trie,Medium,Trie Implementation
+AOJ,Trie,String Search (Rolling Hash),https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_14_C,Medium,Hash
+POJ,Trie,Babelfish,http://poj.org/problem?id=2503,Easy,Trie / Map
+Baekjoon,Trie,생태학,https://www.acmicpc.net/problem/4358,Medium,Trie
+Baekjoon,Trie,전화번호 목록,https://www.acmicpc.net/problem/5052,Hard,Trie
+Baekjoon,Trie,용량 부족,https://www.acmicpc.net/problem/5446,Hard,Trie
+Baekjoon,Trie,휴대폰 자판,https://www.acmicpc.net/problem/5670,Hard,Trie
+Baekjoon,Trie,Boggle,https://www.acmicpc.net/problem/9202,Hard,Trie
+Baekjoon,Trie,문자열 집합,https://www.acmicpc.net/problem/14425,Medium,Trie
+Baekjoon,Trie,개미굴,https://www.acmicpc.net/problem/14725,Hard,Trie
+Baekjoon,Trie,전설,https://www.acmicpc.net/problem/19585,Hard,Trie
+Baekjoon,Trie,문자열 지옥에 빠진 호석,https://www.acmicpc.net/problem/20166,Hard,Trie

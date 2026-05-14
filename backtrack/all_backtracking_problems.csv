@@ -30,7 +30,7 @@ LeetCode,Graph Paths,980. Unique Paths III,https://leetcode.com/problems/unique-
 LeetCode,Graph Paths,2065. Maximum Path Quality of a Graph,https://leetcode.com/problems/maximum-path-quality-of-a-graph/,Hard,Path with time constraint
 LeetCode,Word Search,79. Word Search,https://leetcode.com/problems/word-search/,Medium,Grid word search
 LeetCode,Word Search,212. Word Search II,https://leetcode.com/problems/word-search-ii/,Hard,Trie + backtracking
-LeetCode,Maze,"489. Robot Room Cleaner",https://leetcode.com/problems/robot-room-cleaner/,Hard,Robot vacuum backtracking
+LeetCode,Maze,489. Robot Room Cleaner,https://leetcode.com/problems/robot-room-cleaner/,Hard,Robot vacuum backtracking
 LeetCode,Maze,1219. Path with Maximum Gold,https://leetcode.com/problems/path-with-maximum-gold/,Medium,Grid gold collection
 LeetCode,Maze,1593. Split a String Into the Max Number of Unique Substrings,https://leetcode.com/problems/split-a-string-into-the-max-number-of-unique-substrings/,Medium,Unique split backtracking
 LeetCode,Parentheses,22. Generate Parentheses,https://leetcode.com/problems/generate-parentheses/,Medium,Valid parentheses generation
@@ -59,7 +59,6 @@ LeetCode,Optimal,465. Optimal Account Balancing,https://leetcode.com/problems/op
 LeetCode,Optimal,638. Shopping Offers,https://leetcode.com/problems/shopping-offers/,Medium,Best price combos
 LeetCode,Optimal,1066. Campus Bikes II,https://leetcode.com/problems/campus-bikes-ii/,Medium,Min assignment cost
 LeetCode,Optimal,1467. Probability of a Two Boxes Having The Same Number of Distinct Balls,https://leetcode.com/problems/probability-of-a-two-boxes-having-the-same-number-of-distinct-balls/,Hard,Ball distribution probability
-LeetCode,Permutation Sequence,60. Permutation Sequence,https://leetcode.com/problems/permutation-sequence/,Hard,Factorial number system
 LeetCode,Brace Expansion,1087. Brace Expansion,https://leetcode.com/problems/brace-expansion/,Medium,Brace expansion strings
 LeetCode,Brace Expansion,1096. Brace Expansion II,https://leetcode.com/problems/brace-expansion-ii/,Hard,Nested brace expansion
 LeetCode,Confusing Number,1088. Confusing Number II,https://leetcode.com/problems/confusing-number-ii/,Hard,Rotatable digits enumeration
@@ -96,8 +95,6 @@ LeetCode,Word Abbreviation,320. Generalized Abbreviation,https://leetcode.com/pr
 LeetCode,Word Squares,425. Word Squares,https://leetcode.com/problems/word-squares/,Hard,Word square construction
 LeetCode,Ambiguous Coordinates,816. Ambiguous Coordinates,https://leetcode.com/problems/ambiguous-coordinates/,Medium,Decimal point placement
 LeetCode,Chessboard,2152. Minimum Number of Lines to Cover Points,https://leetcode.com/problems/minimum-number-of-lines-to-cover-points/,Hard,Line cover with backtracking
-LeetCode,Work Sessions,1986. Minimum Number of Work Sessions to Finish the Tasks,https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/,Medium,Task scheduling
-LeetCode,Sentence Split,1593. Split a String Into the Max Number of Unique Substrings,https://leetcode.com/problems/split-a-string-into-the-max-number-of-unique-substrings/,Medium,Max unique split
 LeetCode,Unique Binary Search Trees,95. Unique Binary Search Trees II,https://leetcode.com/problems/unique-binary-search-trees-ii/,Medium,Generate all BSTs
 LeetCode,Schedule,1799. Maximize Score After N Operations,https://leetcode.com/problems/maximize-score-after-n-operations/,Hard,GCD pairing backtracking
 CSES,Introductory,Creationg Strings,https://cses.fi/problemset/task/1622,Normal,All permutations of string
@@ -108,7 +105,6 @@ CSES,Permutations,Permutations,https://cses.fi/problemset/task/1070,Normal,Beaut
 CSES,Counting,Creating Strings II,https://cses.fi/problemset/task/1715,Normal,Permutation count with repetitions
 CSES,Counting,Counting Bishops,https://cses.fi/problemset/task/TBA,Hard,Bishop placement counting
 CSES,Generating,Generating Combinations,https://cses.fi/problemset/task/1710,Normal,Combinatorial generation
-CSES,Generating,Generating Permutations,https://cses.fi/problemset/task/1710,Normal,Permutation generation
 CSES,Sets,Dice Combinations,https://cses.fi/problemset/task/1633,Medium,DP with backtracking
 Codeforces,Complete Search,Dreamoon and WiFi,https://codeforces.com/problemset/problem/476/B,Normal 1500,Probability via backtracking
 Codeforces,Complete Search,Robbers Watch,https://codeforces.com/problemset/problem/686/C,Hard 2000,Base representation backtracking
@@ -119,10 +115,9 @@ Codeforces,Brute Force,Good Sequences,https://codeforces.com/problemset/problem/
 Codeforces,Graph,Graph Coloring,https://codeforces.com/problemset/problem/663/B,Normal 1500,Coloring backtracking
 Codeforces,Brute Force,1545C - AquaMoon and Permutations,https://codeforces.com/problemset/problem/1545/C,Hard 2400,Permutation selection backtracking
 Codeforces,Complete Search,Football Kit,https://codeforces.com/problemset/problem/432/C,Easy,N/A
-Codeforces,Permutations,Beautiful Permutation II,https://cses.fi/problemset/task/1070,Normal,Adjacent diff constraint
 UVa,Classic,Passwords,https://onlinejudge.org/external/6/628.pdf,Level 1,Password generation
 UVa,Classic,Tree Summing,https://onlinejudge.org/external/1/112.pdf,Level 1,Tree parsing + backtracking
-UVa,Classic,"Don't Get Rooked",https://onlinejudge.org/external/6/639.pdf,Level 1,Rook placement constraint
+UVa,Classic,Don't Get Rooked,https://onlinejudge.org/external/6/639.pdf,Level 1,Rook placement constraint
 UVa,Classic,Expert Enough,https://onlinejudge.org/external/12/1237.pdf,Level 1,Simple search
 UVa,Classic,23 out of 5,https://onlinejudge.org/external/103/10344.pdf,Level 1,Expression from digits
 UVa,Classic,The Hamming Distance Problem,https://onlinejudge.org/external/7/729.pdf,Level 1,Bit permutation generation
@@ -177,15 +172,6 @@ AtCoder,Game,AWC0003 - Bin Packing,https://atcoder.jp/contests/awc0003/editorial
 HackerRank,Recursion,Fibonacci Numbers,https://www.hackerrank.com/challenges/ctci-fibonacci-numbers,Easy,Recursive Fibonacci
 HackerRank,Recursion,Davis Staircase,https://www.hackerrank.com/challenges/ctci-recursive-staircase,Medium,1-2-3 step recursion
 HackerEarth,Backtracking,N-Queens,https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/practice-problems/,Easy,N-Queens solver
-HackerEarth,Backtracking,Nearby Squares,https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/practice-problems/,Easy,Proximity backtracking
-HackerEarth,Backtracking,Count the Array,https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/practice-problems/,Medium,Array counting
-HackerEarth,Backtracking,Special Series,https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/practice-problems/,Hard,Series generation
-HackerEarth,Backtracking,A Binary Palindrome,https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/practice-problems/,Medium,Binary palindrome backtrack
-HackerEarth,Backtracking,Three Arrays,https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/practice-problems/,Medium,Array permutation
-HackerEarth,Backtracking,Number of Divisors,https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/practice-problems/,Medium,Divisor counting backtrack
-HackerEarth,Backtracking,Divide Number,https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/practice-problems/,Medium,Number partitioning
-HackerEarth,Backtracking,Movement in Arrays,https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/practice-problems/,Hard,Array movement
-HackerEarth,Backtracking,GCD Strings,https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/practice-problems/,Easy,GCD string backtracking
 CodeChef,Practice,Subsets,https://www.codechef.com/practice/course/interview-dsa/DSAPREP_16/problems/PREP42,N/A,Generate all subsets
 CodeChef,Practice,Palindrome Partitioning,https://www.codechef.com/practice/course/interview-dsa/DSAPREP_16/problems/PREP43,N/A,Palindrome partitioning
 CodeChef,Practice,Valid Parenthesis,https://www.codechef.com/practice/course/interview-dsa/DSAPREP_16/problems/PREP41,N/A,Balanced parentheses gen
@@ -200,23 +186,12 @@ LightOJ,Backtracking,Sudoku Solver,https://lightoj.com/problem/sudoku-solver,N/A
 LightOJ,Backtracking,1125 - Divisible Group Sums,https://lightoj.com/problem/divisible-group-sums,N/A,Subset sum modulo
 LightOJ,Backtracking,1326 - Race,https://lightoj.com/problem/race,N/A,Race backtracking
 TopCoder,Search,BridgeCrossing,https://community.topcoder.com/stat?c=problem_statement&pm=1575,SRM 146 Div 2,Min bridge crossing time
-TopCoder,Search,MNS,https://community.topcoder.com/stat?c=problem_statement&pm=1623,SRM 148 Div 1,Magic square permutation
-TopCoder,Search,Cafeteria,https://community.topcoder.com/stat?c=problem_statement&pm=2279,SRM 229 Div 1,Cafeteria backtracking
-TopCoder,Search,WordFind,https://community.topcoder.com/stat?c=problem_statement&pm=2329,SRM 232 Div 1,Word find in grid
-TopCoder,Search,EllysAndXor,https://community.topcoder.com/stat?c=problem_statement&pm=15765,TCO 2019,Max XOR expression
-TopCoder,Search,EllysCodeConstants,https://community.topcoder.com/stat?c=problem_statement&pm=15766,TCO 2019,Hex literal encoding
-TopCoder,Search,CollectingPostmarks,https://community.topcoder.com/stat?c=problem_statement&pm=11566,N/A,Subset sum backtracking
-TopCoder,Search,PerfectMemory,https://community.topcoder.com/stat?c=problem_statement&pm=11619,N/A,Memory game backtracking
 Toph,Backtracking,Lets Play Pipeline,https://toph.co/p/lets-play-pipeline,N/A,Pipe connection paths
 Toph,Backtracking,Three Friends,https://toph.co/p/three-friends,N/A,Friend grouping
 Toph,Backtracking,Bracket Sequences,https://toph.co/p/bracket-sequences,N/A,Bracket generation
 Toph,Backtracking,Many Paths Many Costs,https://toph.co/p/many-paths-many-costs,N/A,Path counting backtrack
 Toph,Backtracking,Kingdom of Dreams,https://toph.co/p/kingdom-of-dreams,N/A,Permutation search
 Timus,DP/Backtracking,1005 - Stone Pile,https://acm.timus.ru/problem.aspx?space=1&num=1005,78,Subset sum partitioning
-Timus,Backtracking,1007 - Code Words,https://acm.timus.ru/problem.aspx?space=1&num=1007,404,Code word construction
-Timus,Backtracking,1014 - Product of Digits,https://acm.timus.ru/problem.aspx?space=1&num=1014,94,Digit factorization
-Timus,Combinatorics,1017 - Staircases,https://acm.timus.ru/problem.aspx?space=1&num=1017,157,Partition enumeration
-Timus,Backtracking,1024 - Permutations,https://acm.timus.ru/problem.aspx?space=1&num=1024,N/A,Permutation cycles
 Project Euler,Combinatorics,24 - Lexicographic Permutations,https://projecteuler.net/problem=24,5%,Millionth permutation
 Project Euler,Combinatorics,49 - Prime Permutations,https://projecteuler.net/problem=49,10%,Prime permutation sequence
 Project Euler,Combinatorics,68 - Magic 5-gon Ring,https://projecteuler.net/problem=68,10%,Ring arrangement
@@ -278,12 +253,7 @@ GeeksforGeeks,Classic,Consecutive perfect square sum,https://www.geeksforgeeks.o
 GeeksforGeeks,Classic,Power set lexicographic,https://www.geeksforgeeks.org/powet-set-lexicographic-order/,Medium,Sorted subset generation
 GeeksforGeeks,Classic,IP Address generation,https://www.geeksforgeeks.org/program-generate-possible-valid-ip-addresses-given-string/,Medium,Valid IP enumeration
 USACO,Search,Chessboard & Queens,https://usaco.guide/bronze/complete-rec,Normal,N-Queens backtracking
-USACO,Search,Apple Division,https://usaco.guide/bronze/complete-rec,Normal,Subset sum minimization
-USACO,Search,Creating Strings I,https://usaco.guide/bronze/complete-rec,Normal,String permutation generation
 USACO,Search,Mothers Milk,https://jvonk.github.io/usaco/2018/10/03/milk3.html,Normal,Pouring state search
-USACO,Search,The Cow Run,https://usaco.guide/bronze/complete-rec,Hard,Permutation search
-USACO,Search,Name That Number,https://usaco.guide/bronze/complete-rec,Normal,Digit name mapping
-CCC,Search,Permutation,https://usaco.guide/bronze/complete-rec,Normal,Permutation generation
 LeetCode,Pattern Matching,291. Word Pattern II,https://leetcode.com/problems/word-pattern-ii/,Hard,Pattern matching backtracking
 LeetCode,Graph,332. Reconstruct Itinerary,https://leetcode.com/problems/reconstruct-itinerary/,Hard,Eulerian path backtracking
 LeetCode,Permutations,784. Letter Case Permutation,https://leetcode.com/problems/letter-case-permutation/,Medium,Case permutation enumeration
@@ -310,17 +280,454 @@ TopCoder,Search,RecursiveTournament,https://archive.topcoder.com/ProblemStatemen
 TopCoder,Search,CaterpillarTree,https://archive.topcoder.com/ProblemStatement/pm/1041,TCO05 Wildcard Div I L1,Tree caterpillar recursion
 TopCoder,Search,TreeTraversals,https://archive.topcoder.com/ProblemStatement/pm/216,TCCC 03 Semifinals Div I L3,Tree reconstruction
 TopCoder,Search,BinaryTreeAutomaton,https://archive.topcoder.com/ProblemStatement,SRM 819 Div 2,Recursion on trees
-TopCoder,Search,GameOfInterval,https://archive.topcoder.com/ProblemStatement,SRM 716 Div I L3,Recursive game
 Toph,Backtracking,Alice in Candyland,https://toph.co/p/alice-in-candyland,Normal,Row/col selection backtracking
 Toph,Backtracking,Brain Fold (Easy),https://toph.co/p/brain-fold-easy,Easy,Puzzle backtracking
 Toph,Backtracking,Brain Fold (Hard),https://toph.co/p/brain-fold-hard,Hard,Puzzle backtracking
 Project Euler,Combinatorics,96 - Su Doku,https://projecteuler.net/problem=96,10%,Sudoku solver backtracking
 SPOJ,Classic,CLEANRBT - Cleaning Robot,https://www.spoj.com/problems/CLEANRBT/,Hard,TSP with BFS backtracking
 USACO,Search,Checker Challenge,http://train.usaco.org/usacoprob2?a=S3zlegK3l3k&S=checker,Normal,N-Queens variant
-USACO,Search,Prime Cryptarithm,http://train.usaco.org/usacoprob2?a=S3zlegK3l3k&S=crypt1,Normal,Digit puzzle complete search
-USACO,Search,Healthy Holsteins,http://train.usaco.org/usacoprob2?a=S3zlegK3l3k&S=holstein,Normal,Subset search backtracking
-USACO,Search,Hamming Codes,http://train.usaco.org/usacoprob2?a=S3zlegK3l3k&S=hamming,Normal,Code construction backtracking
-USACO,Search,Zero Sum,http://train.usaco.org/usacoprob2?a=S3zlegK3l3k&S=zerosum,Normal,Expression enumeration
 AtCoder,Recursion,ABC382 D - Keep Distance,https://atcoder.jp/contests/abc382/tasks/abc382_d,685,Recursive sequence enumeration
 AtCoder,Puzzles,ABC326 D - ABC Puzzle,https://atcoder.jp/contests/abc326/tasks/abc326_d,1371,Backtracking grid placement
 AtCoder,Game,ABC349 E - Weighted Tic-Tac-Toe,https://atcoder.jp/contests/abc349/tasks/abc349_e,1686,Game recursion backtracking
+Codeforces,Backtracking,Super-Short-Polynomial-San,https://codeforces.com/problemset/problem/2159/E,3500,Meet in the middle
+Codeforces,Backtracking,Juan's Colorful Tree,https://codeforces.com/problemset/problem/2155/F,2800,Meet in the middle
+Codeforces,Backtracking,Lattice Optimizing,https://codeforces.com/problemset/problem/2002/G,3400,Meet in the middle
+Codeforces,Backtracking,Number of k-good subarrays,https://codeforces.com/problemset/problem/1982/E,2300,Meet in the middle
+Codeforces,Backtracking,Equal Trees,https://codeforces.com/problemset/problem/1958/I,3100,Meet in the middle
+Codeforces,Backtracking,In Search of Truth (Hard Version),https://codeforces.com/problemset/problem/1840/G2,2500,Meet in the middle
+Codeforces,Backtracking,In Search of Truth (Easy Version),https://codeforces.com/problemset/problem/1840/G1,2200,Meet in the middle
+Codeforces,Backtracking,Another n-dimensional chocolate bar,https://codeforces.com/problemset/problem/1801/F,2700,Meet in the middle
+Codeforces,Backtracking,Dasha and Nightmares,https://codeforces.com/problemset/problem/1800/F,1900,Meet in the middle
+Codeforces,Backtracking,Olympic Team Building,https://codeforces.com/problemset/problem/1779/H,3500,Meet in the middle
+Codeforces,Backtracking,Algebra Flash,https://codeforces.com/problemset/problem/1767/E,2500,Meet in the middle
+Codeforces,Backtracking,Multiset of Strings,https://codeforces.com/problemset/problem/1709/F,2500,Meet in the middle
+Codeforces,Backtracking,Long Binary String,https://codeforces.com/problemset/problem/1698/G,2900,Meet in the middle
+Codeforces,Backtracking,Interesting Sections,https://codeforces.com/problemset/problem/1609/F,2800,Meet in the middle
+Codeforces,Backtracking,Two Sorts,https://codeforces.com/problemset/problem/1601/F,3400,Meet in the middle
+Codeforces,Backtracking,Red-Black Number,https://codeforces.com/problemset/problem/1593/F,2100,Meet in the middle
+Codeforces,Backtracking,Playoff Restoration,https://codeforces.com/problemset/problem/1569/E,2600,Meet in the middle
+Codeforces,Backtracking,Down Below,https://codeforces.com/problemset/problem/1558/E,3000,Meet in the middle
+Codeforces,Backtracking,Omkar and Akmar,https://codeforces.com/problemset/problem/1536/F,2600,Meet in the middle
+Codeforces,Backtracking,Light switches,https://codeforces.com/problemset/problem/1423/L,2600,Meet in the middle
+Codeforces,Backtracking,Wise Men (Easy Version),https://codeforces.com/problemset/problem/1326/F1,2600,Meet in the middle
+Codeforces,Backtracking,Red-Blue Graph,https://codeforces.com/problemset/problem/1266/H,3400,Meet in the middle
+Codeforces,Backtracking,Everyone is a Winner!,https://codeforces.com/problemset/problem/1263/C,1400,Meet in the middle
+Codeforces,Backtracking,Make Them Similar,https://codeforces.com/problemset/problem/1257/F,2400,Meet in the middle
+Codeforces,Backtracking,Good Numbers (hard version),https://codeforces.com/problemset/problem/1249/C2,1500,Meet in the middle
+Codeforces,Backtracking,Graph And Numbers,https://codeforces.com/problemset/problem/1221/G,2900,Meet in the middle
+Codeforces,Backtracking,Cubeword,https://codeforces.com/problemset/problem/1192/C,N/A,Meet in the middle
+Codeforces,Backtracking,Helping Hiasat ,https://codeforces.com/problemset/problem/1105/E,2200,Meet in the middle
+Codeforces,Backtracking,Mysterious Crime,https://codeforces.com/problemset/problem/1043/D,1700,Meet in the middle
+Codeforces,Backtracking,Xor-Paths,https://codeforces.com/problemset/problem/1006/F,2100,Meet in the middle
+Codeforces,Backtracking,Number Clicker,https://codeforces.com/problemset/problem/995/E,2700,Meet in the middle
+Codeforces,Backtracking,Prime Gift,https://codeforces.com/problemset/problem/912/E,2400,Meet in the middle
+Codeforces,Backtracking,Maximum Subsequence,https://codeforces.com/problemset/problem/888/E,1800,Meet in the middle
+Codeforces,Backtracking,Egg Roulette,https://codeforces.com/problemset/problem/865/F,3300,Meet in the middle
+Codeforces,Backtracking,Mother of Dragons,https://codeforces.com/problemset/problem/839/E,2700,Meet in the middle
+Codeforces,Backtracking,Field expansion,https://codeforces.com/problemset/problem/799/D,2100,Meet in the middle
+Codeforces,Backtracking,k-Interesting Pairs Of Integers,https://codeforces.com/problemset/problem/769/D,1700,Meet in the middle
+Codeforces,Backtracking,"Math, math everywhere",https://codeforces.com/problemset/problem/765/G,3200,Meet in the middle
+Codeforces,Backtracking,Bears and Juice,https://codeforces.com/problemset/problem/643/F,2900,Meet in the middle
+Codeforces,Backtracking,Lizard Era: Beginning,https://codeforces.com/problemset/problem/585/D,2300,Meet in the middle
+Codeforces,Backtracking,Vanya and Scales,https://codeforces.com/problemset/problem/552/C,1900,Meet in the middle
+Codeforces,Backtracking,Simplified Nonogram,https://codeforces.com/problemset/problem/534/F,2400,Meet in the middle
+Codeforces,Backtracking,Anya and Cubes,https://codeforces.com/problemset/problem/525/E,2100,Meet in the middle
+Codeforces,Backtracking,Drazil and His Happy Friends,https://codeforces.com/problemset/problem/515/B,1300,Meet in the middle
+Codeforces,Backtracking,Inversions problem,https://codeforces.com/problemset/problem/513/G1,1800,Meet in the middle
+Codeforces,Backtracking,Chocolate,https://codeforces.com/problemset/problem/490/D,1900,Meet in the middle
+Codeforces,Backtracking,Wavy numbers,https://codeforces.com/problemset/problem/478/E,2900,Meet in the middle
+Codeforces,Backtracking,Permanent,https://codeforces.com/problemset/problem/468/E,3100,Meet in the middle
+Codeforces,Backtracking,Golden System,https://codeforces.com/problemset/problem/457/A,1700,Meet in the middle
+Codeforces,Backtracking,Axis Walking,https://codeforces.com/problemset/problem/327/E,2300,Meet in the middle
+Codeforces,Backtracking,Permutation Sum,https://codeforces.com/problemset/problem/285/D,1900,Meet in the middle
+Codeforces,Backtracking,Event Dates,https://codeforces.com/problemset/problem/45/D,1900,Meet in the middle
+GeeksforGeeks,Backtracking,Backtracking Algorithms,https://www.geeksforgeeks.org/dsa/backtracking-algorithms/,N/A,GFG Problem
+GeeksforGeeks,Backtracking,Trie Insert And Search,https://www.geeksforgeeks.org/dsa/trie-insert-and-search/,N/A,GFG Problem
+GeeksforGeeks,Backtracking,Square Root Sqrt Decomposition Algorithm,https://www.geeksforgeeks.org/dsa/square-root-sqrt-decomposition-algorithm/,N/A,GFG Problem
+GeeksforGeeks,Backtracking,Introduction To Backtracking 2,https://www.geeksforgeeks.org/dsa/introduction-to-backtracking-2/,N/A,GFG Problem
+GeeksforGeeks,Backtracking,Difference Between Backtracking And Branch N Bound Technique,https://www.geeksforgeeks.org/dsa/difference-between-backtracking-and-branch-n-bound-technique/,N/A,GFG Problem
+GeeksforGeeks,Backtracking,Write A C Program To Print All Permutations Of A Given String,https://www.geeksforgeeks.org/dsa/write-a-c-program-to-print-all-permutations-of-a-given-string/,N/A,GFG Problem
+GeeksforGeeks,Backtracking,The Knights Tour,https://www.geeksforgeeks.org/dsa/the-knights-tour-problem/,N/A,GFG Problem
+GeeksforGeeks,Backtracking,Rat In A Maze,https://www.geeksforgeeks.org/dsa/rat-in-a-maze/,N/A,GFG Problem
+GeeksforGeeks,Backtracking,N Queen  Backtracking 3,https://www.geeksforgeeks.org/dsa/n-queen-problem-backtracking-3/,N/A,GFG Problem
+GeeksforGeeks,Backtracking,Subset Sum,https://www.geeksforgeeks.org/dsa/subset-sum-problem/,N/A,GFG Problem
+GeeksforGeeks,Backtracking,Sudoku Backtracking 7,https://www.geeksforgeeks.org/dsa/sudoku-backtracking-7/,N/A,GFG Problem
+GeeksforGeeks,Backtracking,Backtracking To Find All Subsets,https://www.geeksforgeeks.org/dsa/backtracking-to-find-all-subsets/,N/A,GFG Problem
+GeeksforGeeks,Backtracking,Find Distinct Subsets Given Set,https://www.geeksforgeeks.org/dsa/find-distinct-subsets-given-set/,N/A,GFG Problem
+GeeksforGeeks,Backtracking,Combinational Sum,https://www.geeksforgeeks.org/dsa/combinational-sum/,N/A,GFG Problem
+GeeksforGeeks,Backtracking,Warnsdorffs Algorithm Knights Tour,https://www.geeksforgeeks.org/dsa/warnsdorffs-algorithm-knights-tour-problem/,N/A,GFG Problem
+GeeksforGeeks,Backtracking,Rat In A Maze With Multiple Steps Jump Allowed,https://www.geeksforgeeks.org/dsa/rat-in-a-maze-with-multiple-steps-jump-allowed/,N/A,GFG Problem
+GeeksforGeeks,Backtracking,N Queen In On Space,https://www.geeksforgeeks.org/dsa/n-queen-in-on-space/,N/A,GFG Problem
+GeeksforGeeks,Backtracking,Word Break  Using Backtracking,https://www.geeksforgeeks.org/dsa/word-break-problem-using-backtracking/,N/A,GFG Problem
+GeeksforGeeks,Backtracking,Partition Set K Subsets Equal Sum,https://www.geeksforgeeks.org/dsa/partition-set-k-subsets-equal-sum/,N/A,GFG Problem
+GeeksforGeeks,Backtracking,Longest Possible Route In A Matrix With Hurdles,https://www.geeksforgeeks.org/dsa/longest-possible-route-in-a-matrix-with-hurdles/,N/A,GFG Problem
+GeeksforGeeks,Backtracking,Printing Solutions N Queen,https://www.geeksforgeeks.org/dsa/printing-solutions-n-queen-problem/,N/A,GFG Problem
+GeeksforGeeks,Backtracking,Top 20 Backtracking Algorithm Interview Questions,https://www.geeksforgeeks.org/dsa/top-20-backtracking-algorithm-interview-questions/,N/A,GFG Problem
+GeeksforGeeks,Backtracking,Top Mcqs On Backtracking Algorithm With Answers,https://www.geeksforgeeks.org/quizzes/top-mcqs-on-backtracking-algorithm-with-answers/,N/A,GFG Problem
+GeeksforGeeks,Backtracking,Backtracking,https://www.geeksforgeeks.org/category/dsa/algorithm/backtracking/,N/A,GFG Problem
+GeeksforGeeks,Backtracking,Algorithms Backtracking,https://www.geeksforgeeks.org/tag/algorithms-backtracking/,N/A,GFG Problem
+GeeksforGeeks,Backtracking,Print All Possible Paths From Top Left To Bottom Right Of A Mxn Matrix,https://www.geeksforgeeks.org/dsa/print-all-possible-paths-from-top-left-to-bottom-right-of-a-mxn-matrix/,N/A,GFG Problem
+GeeksforGeeks,Backtracking,What Is The Difference Between Backtracking And Recursion,https://www.geeksforgeeks.org/dsa/what-is-the-difference-between-backtracking-and-recursion/,N/A,GFG Problem
+HackerEarth,Backtracking,Basic Programming,https://www.hackerearth.com/practice/basic-programming/,N/A,HackerEarth Problem
+HackerEarth,Backtracking,Recursion,https://www.hackerearth.com/practice/basic-programming/recursion/,N/A,HackerEarth Problem
+HackerEarth,Backtracking,Basics Of Input Output,https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/,N/A,HackerEarth Problem
+HackerEarth,Backtracking,Time And Space Complexity,https://www.hackerearth.com/practice/basic-programming/complexity-analysis/time-and-space-complexity/,N/A,HackerEarth Problem
+HackerEarth,Backtracking,Basics Of Implementation,https://www.hackerearth.com/practice/basic-programming/implementation/basics-of-implementation/,N/A,HackerEarth Problem
+HackerEarth,Backtracking,Basics Of Operators,https://www.hackerearth.com/practice/basic-programming/operators/basics-of-operators/,N/A,HackerEarth Problem
+HackerEarth,Backtracking,Basics Of Bit Manipulation,https://www.hackerearth.com/practice/basic-programming/bit-manipulation/basics-of-bit-manipulation/,N/A,HackerEarth Problem
+HackerEarth,Backtracking,Recursion And Backtracking,https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/,N/A,HackerEarth Problem
+HackerEarth,Backtracking,Tutorial,https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/tutorial/,N/A,HackerEarth Problem
+Codeforces,Backtracking,Zhily and Permutation,https://codeforces.com/problemset/problem/2223/E,N/A,Backtracking
+Codeforces,Backtracking,Permutation Construction,https://codeforces.com/problemset/problem/2222/D,N/A,Backtracking
+Codeforces,Backtracking,The 67th Permutation Problem,https://codeforces.com/problemset/problem/2218/C,800,Backtracking
+Codeforces,Backtracking,Operation Permutation,https://codeforces.com/problemset/problem/2200/G,2200,Backtracking
+Codeforces,Backtracking,Array and Permutation,https://codeforces.com/problemset/problem/2197/B,1100,Backtracking
+Codeforces,Backtracking,Reverse a Permutation,https://codeforces.com/problemset/problem/2193/B,800,Backtracking
+Codeforces,Backtracking,Median Permutation,https://codeforces.com/problemset/problem/2190/E,3200,Backtracking
+Codeforces,Backtracking,Comparable Permutations,https://codeforces.com/problemset/problem/2190/C,2300,Backtracking
+Codeforces,Backtracking,Divisible Permutation,https://codeforces.com/problemset/problem/2188/A,800,Backtracking
+Codeforces,Backtracking,Anisphia Wynn Palettia and Good Permutations,https://codeforces.com/problemset/problem/2171/E,2000,Backtracking
+Codeforces,Backtracking,Beautiful Permutation,https://codeforces.com/problemset/problem/2162/D,1400,Backtracking
+Codeforces,Backtracking,Inversion Value of a Permutation,https://codeforces.com/problemset/problem/2145/D,1800,Backtracking
+Codeforces,Backtracking,Maximum Cost Permutation,https://codeforces.com/problemset/problem/2144/B,1000,Backtracking
+Codeforces,Backtracking,Fun Permutation,https://codeforces.com/problemset/problem/2137/B,900,Backtracking
+Codeforces,Backtracking,Permutation Oddness,https://codeforces.com/problemset/problem/2134/F,2900,Backtracking
+Codeforces,Backtracking,Permutation Blackhole,https://codeforces.com/problemset/problem/2129/D,2600,Backtracking
+Codeforces,Backtracking,Appending Permutations (Hard Version),https://codeforces.com/problemset/problem/2124/F2,2800,Backtracking
+Codeforces,Backtracking,Appending Permutations (Easy Version),https://codeforces.com/problemset/problem/2124/F1,2300,Backtracking
+Codeforces,Backtracking,Subset Multiplication,https://codeforces.com/problemset/problem/2124/C,1300,Backtracking
+Codeforces,Backtracking,Make It Permutation,https://codeforces.com/problemset/problem/2118/B,1200,Backtracking
+Codeforces,Backtracking,Permutation Warm-Up,https://codeforces.com/problemset/problem/2108/A,800,Backtracking
+Codeforces,Backtracking,Simple Permutation,https://codeforces.com/problemset/problem/2089/A,1700,Backtracking
+Codeforces,Backtracking,Disappearing Permutation,https://codeforces.com/problemset/problem/2086/C,1300,Backtracking
+Codeforces,Backtracking,Permutation Factory,https://codeforces.com/problemset/problem/2062/G,3500,Backtracking
+Codeforces,Backtracking,Find the Permutation,https://codeforces.com/problemset/problem/2056/B,1300,Backtracking
+Codeforces,Backtracking,Kevin and Permutation,https://codeforces.com/problemset/problem/2048/B,900,Backtracking
+Codeforces,Backtracking,Ordered Permutations,https://codeforces.com/problemset/problem/2040/C,1600,Backtracking
+Codeforces,Backtracking,Superultra's Favorite Permutation,https://codeforces.com/problemset/problem/2037/C,1000,Backtracking
+Codeforces,Backtracking,Alya and Permutation,https://codeforces.com/problemset/problem/2035/C,1400,Backtracking
+Codeforces,Backtracking,Permutations Harmony,https://codeforces.com/problemset/problem/2034/E,2200,Backtracking
+Codeforces,Backtracking,"Sakurako, Kosuke, and the Permutation",https://codeforces.com/problemset/problem/2033/E,1400,Backtracking
+Codeforces,Backtracking,QED's Favorite Permutation,https://codeforces.com/problemset/problem/2030/D,1700,Backtracking
+Codeforces,Backtracking,Removal of a Permutation,https://codeforces.com/problemset/problem/2011/G,N/A,Backtracking
+Codeforces,Backtracking,Generate Permutation,https://codeforces.com/problemset/problem/2001/B,800,Backtracking
+Codeforces,Backtracking,Gorilla and Permutation,https://codeforces.com/problemset/problem/1992/C,900,Backtracking
+Codeforces,Backtracking,Permutation Problem (Hard Version),https://codeforces.com/problemset/problem/1986/G2,2500,Backtracking
+Codeforces,Backtracking,Permutation Problem (Simple Version),https://codeforces.com/problemset/problem/1986/G1,2200,Backtracking
+Codeforces,Backtracking,Permutation of Rows and Columns,https://codeforces.com/problemset/problem/1980/E,1600,Backtracking
+Codeforces,Backtracking,Manhattan Permutations,https://codeforces.com/problemset/problem/1978/C,1300,Backtracking
+Codeforces,Backtracking,Splittable Permutations,https://codeforces.com/problemset/problem/1976/E,2500,Backtracking
+Codeforces,Backtracking,Permutation Game,https://codeforces.com/problemset/problem/1968/D,1300,Backtracking
+Codeforces,Backtracking,Permutation Counting,https://codeforces.com/problemset/problem/1967/A,1400,Backtracking
+Codeforces,Backtracking,Yet Another Permutation Constructive,https://codeforces.com/problemset/problem/1958/E,1900,Backtracking
+Codeforces,Backtracking,Girl Permutation,https://codeforces.com/problemset/problem/1946/E,2200,Backtracking
+Codeforces,Backtracking,Yet Yet Another Permutation Problem,https://codeforces.com/problemset/problem/1936/E,3400,Backtracking
+Codeforces,Backtracking,Permutation Printing,https://codeforces.com/problemset/problem/1930/B,1000,Backtracking
+Codeforces,Backtracking,Klever Permutation,https://codeforces.com/problemset/problem/1927/E,1400,Backtracking
+Codeforces,Backtracking,Permutation of Given,https://codeforces.com/problemset/problem/1918/G,2700,Backtracking
+Codeforces,Backtracking,Short Permutation Problem,https://codeforces.com/problemset/problem/1909/I,1900,Backtracking
+Codeforces,Backtracking,Small Permutation Problem (Hard Version),https://codeforces.com/problemset/problem/1909/F2,2500,Backtracking
+Codeforces,Backtracking,Small Permutation Problem (Easy Version),https://codeforces.com/problemset/problem/1909/F1,2200,Backtracking
+Codeforces,Backtracking,Permutation Sorting,https://codeforces.com/problemset/problem/1896/E,2100,Backtracking
+Codeforces,Backtracking,Two Permutations (Hard Version),https://codeforces.com/problemset/problem/1882/E2,3100,Backtracking
+Codeforces,Backtracking,Two Permutations (Easy Version),https://codeforces.com/problemset/problem/1882/E1,2400,Backtracking
+Codeforces,Backtracking,Plus Minus Permutation,https://codeforces.com/problemset/problem/1872/D,1200,Backtracking
+Codeforces,Backtracking,"green_gold_dog, array and permutation",https://codeforces.com/problemset/problem/1867/A,800,Backtracking
+Codeforces,Backtracking,Non-Intersecting Subpermutations,https://codeforces.com/problemset/problem/1861/E,2300,Backtracking
+Codeforces,Backtracking,Game on Permutation,https://codeforces.com/problemset/problem/1860/C,1400,Backtracking
+Codeforces,Backtracking,Another Permutation Problem,https://codeforces.com/problemset/problem/1859/C,1200,Backtracking
+Codeforces,Backtracking,Yet Another Permutation Problem,https://codeforces.com/problemset/problem/1858/C,1000,Backtracking
+Codeforces,Backtracking,Prefix Permutation Sums,https://codeforces.com/problemset/problem/1851/D,1300,Backtracking
+Codeforces,Backtracking,Min Cost Permutation (Hard Version),https://codeforces.com/problemset/problem/1844/F2,2800,Backtracking
+Codeforces,Backtracking,Min Cost Permutation (Easy Version),https://codeforces.com/problemset/problem/1844/F1,2600,Backtracking
+Codeforces,Backtracking,Permutations & Primes,https://codeforces.com/problemset/problem/1844/B,1000,Backtracking
+Codeforces,Backtracking,Minimize Permutation Subarrays,https://codeforces.com/problemset/problem/1838/B,1100,Backtracking
+Codeforces,Backtracking,Combinatorics Problem,https://codeforces.com/problemset/problem/1832/E,2200,Backtracking
+Codeforces,Backtracking,Twin Permutations,https://codeforces.com/problemset/problem/1831/A,800,Backtracking
+Codeforces,Backtracking,Permutation Swap,https://codeforces.com/problemset/problem/1828/B,900,Backtracking
+Codeforces,Backtracking,Copium Permutation,https://codeforces.com/problemset/problem/1827/F,3500,Backtracking
+Codeforces,Backtracking,Super-Permutation,https://codeforces.com/problemset/problem/1822/D,1200,Backtracking
+Codeforces,Backtracking,Make It Permutation,https://codeforces.com/problemset/problem/1810/C,1300,Backtracking
+Codeforces,Backtracking,Fixed Prefix Permutations,https://codeforces.com/problemset/problem/1792/D,1700,Backtracking
+Codeforces,Backtracking,The Forbidden Permutation,https://codeforces.com/problemset/problem/1778/B,1300,Backtracking
+Codeforces,Backtracking,Count Permutations,https://codeforces.com/problemset/problem/1776/N,3500,Backtracking
+Codeforces,Backtracking,Maximum Permutation,https://codeforces.com/problemset/problem/1774/H,3500,Backtracking
+Codeforces,Backtracking,Permutation Game,https://codeforces.com/problemset/problem/1772/E,1700,Backtracking
+Codeforces,Backtracking,Hossam and Combinatorics,https://codeforces.com/problemset/problem/1771/A,900,Backtracking
+Codeforces,Backtracking,Koxia and Permutation,https://codeforces.com/problemset/problem/1770/B,1000,Backtracking
+Codeforces,Backtracking,Lucky Permutation,https://codeforces.com/problemset/problem/1768/D,1800,Backtracking
+Codeforces,Backtracking,Valid Bitonic Permutations,https://codeforces.com/problemset/problem/1763/D,2200,Backtracking
+Codeforces,Backtracking,Two Permutations,https://codeforces.com/problemset/problem/1761/A,800,Backtracking
+Codeforces,Backtracking,Restore the Permutation,https://codeforces.com/problemset/problem/1759/G,1900,Backtracking
+Codeforces,Backtracking,Lost Permutation,https://codeforces.com/problemset/problem/1759/B,800,Backtracking
+Codeforces,Backtracking,Kevin and Permutation,https://codeforces.com/problemset/problem/1754/B,800,Backtracking
+Codeforces,Backtracking,Permutation Operations,https://codeforces.com/problemset/problem/1746/C,1300,Backtracking
+Codeforces,Backtracking,Permutation Value,https://codeforces.com/problemset/problem/1743/B,800,Backtracking
+Codeforces,Backtracking,Funny Permutation,https://codeforces.com/problemset/problem/1741/B,800,Backtracking
+Codeforces,Backtracking,Permutation Addicts,https://codeforces.com/problemset/problem/1738/D,1900,Backtracking
+Codeforces,Backtracking,Best Permutation,https://codeforces.com/problemset/problem/1728/B,800,Backtracking
+Codeforces,Backtracking,Permutation for Burenka,https://codeforces.com/problemset/problem/1718/D,3300,Backtracking
+Codeforces,Backtracking,Permutation Chain,https://codeforces.com/problemset/problem/1716/B,800,Backtracking
+Codeforces,Backtracking,Build Permutation,https://codeforces.com/problemset/problem/1713/C,1200,Backtracking
+Codeforces,Backtracking,Woeful Permutation,https://codeforces.com/problemset/problem/1712/B,800,Backtracking
+Codeforces,Backtracking,Wonderful Permutation,https://codeforces.com/problemset/problem/1712/A,800,Backtracking
+Codeforces,Backtracking,Perfect Permutation,https://codeforces.com/problemset/problem/1711/A,800,Backtracking
+Codeforces,Backtracking,Permutation Restoration,https://codeforces.com/problemset/problem/1701/D,1900,Backtracking
+Codeforces,Backtracking,Permutation,https://codeforces.com/problemset/problem/1701/B,800,Backtracking
+Codeforces,Backtracking,PermutationForces II,https://codeforces.com/problemset/problem/1698/E,2300,Backtracking
+Codeforces,Backtracking,Permutation Graph,https://codeforces.com/problemset/problem/1696/D,1900,Backtracking
+Codeforces,Backtracking,Mystic Permutation,https://codeforces.com/problemset/problem/1689/B,900,Backtracking
+Codeforces,Backtracking,Koishi's Unconscious Permutation,https://codeforces.com/problemset/problem/1687/F,3500,Backtracking
+Codeforces,Backtracking,Permutation Weight (Hard Version),https://codeforces.com/problemset/problem/1685/D2,3500,Backtracking
+Codeforces,Backtracking,Permutation Weight (Easy Version),https://codeforces.com/problemset/problem/1685/D1,2800,Backtracking
+Codeforces,Backtracking,Tokitsukaze and Permutations,https://codeforces.com/problemset/problem/1677/D,2500,Backtracking
+Codeforces,Backtracking,PermutationForces,https://codeforces.com/problemset/problem/1672/I,3000,Backtracking
+Codeforces,Backtracking,Permutation Counting,https://codeforces.com/problemset/problem/1671/F,2700,Backtracking
+Codeforces,Backtracking,Tree and Permutation Game,https://codeforces.com/problemset/problem/1659/F,3000,Backtracking
+Codeforces,Backtracking,Shinju and the Lost Permutation,https://codeforces.com/problemset/problem/1658/C,1700,Backtracking
+Codeforces,Backtracking,Marin and Anti-coprime Permutation,https://codeforces.com/problemset/problem/1658/B,800,Backtracking
+Codeforces,Backtracking,Equal LCM Subsets,https://codeforces.com/problemset/problem/1656/H,3200,Backtracking
+Codeforces,Backtracking,Twist the Permutation,https://codeforces.com/problemset/problem/1650/D,1300,Backtracking
+Codeforces,Backtracking,Anti-Fibonacci Permutation,https://codeforces.com/problemset/problem/1644/B,800,Backtracking
+Codeforces,Backtracking,Division by Two and Permutation,https://codeforces.com/problemset/problem/1624/C,1100,Backtracking
+Codeforces,Backtracking,Plus One on the Subset,https://codeforces.com/problemset/problem/1624/A,800,Backtracking
+Codeforces,Backtracking,Hidden Permutations,https://codeforces.com/problemset/problem/1621/C,1700,Backtracking
+Codeforces,Backtracking,Permutation and Queries,https://codeforces.com/problemset/problem/1619/H,2400,Backtracking
+Codeforces,Backtracking,Paprika and Permutation,https://codeforces.com/problemset/problem/1617/C,1300,Backtracking
+Codeforces,Backtracking,Special Permutation,https://codeforces.com/problemset/problem/1612/B,900,Backtracking
+Codeforces,Backtracking,Polycarp Recovers the Permutation,https://codeforces.com/problemset/problem/1611/C,1000,Backtracking
+Codeforces,Backtracking,Build the Permutation,https://codeforces.com/problemset/problem/1608/B,1200,Backtracking
+Codeforces,Backtracking,Blue-Red Permutation,https://codeforces.com/problemset/problem/1607/D,1300,Backtracking
+Codeforces,Backtracking,Guess the Permutation,https://codeforces.com/problemset/problem/1584/D,2000,Backtracking
+Codeforces,Backtracking,CQXYM Count Permutations,https://codeforces.com/problemset/problem/1581/A,800,Backtracking
+Codeforces,Backtracking,Permutation Minimization by Deque,https://codeforces.com/problemset/problem/1579/E1,1000,Backtracking
+Codeforces,Backtracking,Combinatorics Homework,https://codeforces.com/problemset/problem/1574/B,1100,Backtracking
+Codeforces,Backtracking,Permutation Shift,https://codeforces.com/problemset/problem/1553/E,2100,Backtracking
+Codeforces,Backtracking,Subsequence Permutation,https://codeforces.com/problemset/problem/1552/A,800,Backtracking
+Codeforces,Backtracking,Abnormal Permutation Pairs (hard version),https://codeforces.com/problemset/problem/1542/E2,2700,Backtracking
+Codeforces,Backtracking,Abnormal Permutation Pairs (easy version),https://codeforces.com/problemset/problem/1542/E1,2400,Backtracking
+Codeforces,Backtracking,Pretty Permutations,https://codeforces.com/problemset/problem/1541/A,800,Backtracking
+Codeforces,Backtracking,Permutation Sort,https://codeforces.com/problemset/problem/1525/B,900,Backtracking
+Codeforces,Backtracking,Nastia and a Hidden Permutation,https://codeforces.com/problemset/problem/1521/C,2000,Backtracking
+Codeforces,Backtracking,Baby Ehab Plays with Permutations,https://codeforces.com/problemset/problem/1516/E,2500,Backtracking
+Codeforces,Backtracking,Permutation by Sum,https://codeforces.com/problemset/problem/1512/E,1600,Backtracking
+Codeforces,Backtracking,Restoring the Permutation,https://codeforces.com/problemset/problem/1506/E,1500,Backtracking
+Codeforces,Backtracking,Subset Trick,https://codeforces.com/problemset/problem/1500/E,3300,Backtracking
+Codeforces,Backtracking,Permutation Transformation,https://codeforces.com/problemset/problem/1490/D,1200,Backtracking
+Codeforces,Backtracking,Nezzar and Hidden Permutations,https://codeforces.com/problemset/problem/1477/D,2800,Backtracking
+Codeforces,Backtracking,Strange Permutation,https://codeforces.com/problemset/problem/1470/E,3200,Backtracking
+Codeforces,Backtracking,Special Permutation,https://codeforces.com/problemset/problem/1454/A,800,Backtracking
+Codeforces,Backtracking,Long Permutation,https://codeforces.com/problemset/problem/1443/E,2400,Backtracking
+Codeforces,Backtracking,Graph Subset Problem,https://codeforces.com/problemset/problem/1439/B,2600,Backtracking
+Codeforces,Backtracking,Sum Over Subsets,https://codeforces.com/problemset/problem/1436/F,2800,Backtracking
+Codeforces,Backtracking,Subset Mex,https://codeforces.com/problemset/problem/1406/A,900,Backtracking
+Codeforces,Backtracking,Permutation Forgery,https://codeforces.com/problemset/problem/1405/A,800,Backtracking
+Codeforces,Backtracking,Yet Another Segments Subset,https://codeforces.com/problemset/problem/1399/F,2300,Backtracking
+Codeforces,Backtracking,Cyclic Permutations ,https://codeforces.com/problemset/problem/1391/C,1500,Backtracking
+Codeforces,Backtracking,Restore the Permutation by Merger,https://codeforces.com/problemset/problem/1385/B,800,Backtracking
+Codeforces,Backtracking,Special Permutation,https://codeforces.com/problemset/problem/1352/G,1600,Backtracking
+Codeforces,Backtracking,Restore the Permutation by Sorted Segments,https://codeforces.com/problemset/problem/1343/F,2400,Backtracking
+Codeforces,Backtracking,Dreamoon Likes Permutations,https://codeforces.com/problemset/problem/1330/B,1400,Backtracking
+Codeforces,Backtracking,Permutation Partitions,https://codeforces.com/problemset/problem/1326/C,1300,Backtracking
+Codeforces,Backtracking,Even Subset Sum Problem,https://codeforces.com/problemset/problem/1323/A,800,Backtracking
+Codeforces,Backtracking,Restoring Permutation,https://codeforces.com/problemset/problem/1315/C,1200,Backtracking
+Codeforces,Backtracking,Permutation Separation,https://codeforces.com/problemset/problem/1295/E,2200,Backtracking
+Codeforces,Backtracking,Obtain a Permutation,https://codeforces.com/problemset/problem/1294/E,1900,Backtracking
+Codeforces,Backtracking,New Year and Permutation,https://codeforces.com/problemset/problem/1284/C,1600,Backtracking
+Codeforces,Backtracking,New Year Permutations,https://codeforces.com/problemset/problem/1279/E,2700,Backtracking
+Codeforces,Backtracking,Subset with Zero Sum,https://codeforces.com/problemset/problem/1270/G,2700,Backtracking
+Codeforces,Backtracking,Permutation Concatenation,https://codeforces.com/problemset/problem/1266/G,3300,Backtracking
+Codeforces,Backtracking,Minimize the Permutation,https://codeforces.com/problemset/problem/1256/B,1400,Backtracking
+Codeforces,Backtracking,Maximum Weight Subset,https://codeforces.com/problemset/problem/1249/F,2200,Backtracking
+Codeforces,Backtracking,Special Permutations,https://codeforces.com/problemset/problem/1234/E,2000,Backtracking
+Codeforces,Backtracking,Double Permutation Inc.,https://codeforces.com/problemset/problem/1211/E,2000,Backtracking
+Codeforces,Backtracking,Restore Permutation,https://codeforces.com/problemset/problem/1208/D,1900,Backtracking
+Codeforces,Backtracking,Number Of Permutations,https://codeforces.com/problemset/problem/1207/D,1800,Backtracking
+Codeforces,Backtracking,Beauty of a Permutation,https://codeforces.com/problemset/problem/1205/F,3400,Backtracking
+Codeforces,Backtracking,The Number of Subpermutations,https://codeforces.com/problemset/problem/1175/F,2500,Backtracking
+Codeforces,Backtracking,Good Subsets,https://codeforces.com/problemset/problem/1170/I,N/A,Backtracking
+Codeforces,Backtracking,Xor Permutations,https://codeforces.com/problemset/problem/1168/E,3100,Backtracking
+Codeforces,Backtracking,Magical Permutation,https://codeforces.com/problemset/problem/1163/E,2400,Backtracking
+Codeforces,Backtracking,Permutation recovery,https://codeforces.com/problemset/problem/1158/C,2100,Backtracking
+Codeforces,Backtracking,Special Segments of Permutation,https://codeforces.com/problemset/problem/1156/E,2200,Backtracking
+Codeforces,Backtracking,Polycarp Restores Permutation,https://codeforces.com/problemset/problem/1141/C,1500,Backtracking
+Codeforces,Backtracking,(Zero XOR Subset)-less,https://codeforces.com/problemset/problem/1101/G,2300,Backtracking
+Codeforces,Backtracking,Intersection of Permutations,https://codeforces.com/problemset/problem/1093/E,2400,Backtracking
+Codeforces,Backtracking,New Year and the Permutation Concatenation,https://codeforces.com/problemset/problem/1091/D,1700,Backtracking
+Codeforces,Backtracking,Interval-Free Permutations,https://codeforces.com/problemset/problem/1089/I,2600,Backtracking
+Codeforces,Backtracking,Permutation Game,https://codeforces.com/problemset/problem/1033/C,1600,Backtracking
+Codeforces,Backtracking,Median on Segments (Permutations Edition),https://codeforces.com/problemset/problem/1005/E1,1800,Backtracking
+Codeforces,Backtracking,Petr and Permutations,https://codeforces.com/problemset/problem/986/B,1800,Backtracking
+Codeforces,Backtracking,Permutation Cycle,https://codeforces.com/problemset/problem/932/C,1600,Backtracking
+Codeforces,Backtracking,Minimal Subset Difference,https://codeforces.com/problemset/problem/924/F,3200,Backtracking
+Codeforces,Backtracking,AND-permutations,https://codeforces.com/problemset/problem/909/F,2500,Backtracking
+Codeforces,Backtracking,Square Subsets,https://codeforces.com/problemset/problem/895/C,2000,Backtracking
+Codeforces,Backtracking,Almost Identity Permutations,https://codeforces.com/problemset/problem/888/D,1600,Backtracking
+Codeforces,Backtracking,Make a Permutation!,https://codeforces.com/problemset/problem/864/D,1500,Backtracking
+Codeforces,Backtracking,Almost Permutation,https://codeforces.com/problemset/problem/863/F,2200,Backtracking
+Codeforces,Backtracking,Round Subset,https://codeforces.com/problemset/problem/837/D,2100,Backtracking
+Codeforces,Backtracking,Permutation Game,https://codeforces.com/problemset/problem/818/B,1600,Backtracking
+Codeforces,Backtracking,The same permutation ,https://codeforces.com/problemset/problem/804/E,3100,Backtracking
+Codeforces,Backtracking,Mike and code of a permutation,https://codeforces.com/problemset/problem/798/E,3000,Backtracking
+Codeforces,Backtracking,Anton and Permutation,https://codeforces.com/problemset/problem/785/E,2200,Backtracking
+Codeforces,Backtracking,Permutations,https://codeforces.com/problemset/problem/736/D,2800,Backtracking
+Codeforces,Backtracking,Complete the Permutations,https://codeforces.com/problemset/problem/715/E,3400,Backtracking
+Codeforces,Backtracking,Coprime Permutation,https://codeforces.com/problemset/problem/698/F,3000,Backtracking
+Codeforces,Backtracking,Swaps in Permutation,https://codeforces.com/problemset/problem/691/D,1700,Backtracking
+Codeforces,Backtracking,Nicholas and Permutation,https://codeforces.com/problemset/problem/676/A,800,Backtracking
+Codeforces,Backtracking,Simple Subset,https://codeforces.com/problemset/problem/665/D,1800,Backtracking
+Codeforces,Backtracking,Different Subsets For All Tuples,https://codeforces.com/problemset/problem/660/E,2300,Backtracking
+Codeforces,Backtracking,Optimal Number Permutation,https://codeforces.com/problemset/problem/622/D,1900,Backtracking
+Codeforces,Backtracking,Guess the Permutation,https://codeforces.com/problemset/problem/618/B,1100,Backtracking
+Codeforces,Backtracking,Square Root of Permutation,https://codeforces.com/problemset/problem/612/E,2200,Backtracking
+Codeforces,Backtracking,Alphabet Permutations,https://codeforces.com/problemset/problem/610/E,2500,Backtracking
+Codeforces,Backtracking,Kyoya and Permutation,https://codeforces.com/problemset/problem/553/B,1900,Backtracking
+Codeforces,Backtracking,Permutations,https://codeforces.com/problemset/problem/513/B2,1800,Backtracking
+Codeforces,Backtracking,Permutations,https://codeforces.com/problemset/problem/513/B1,1400,Backtracking
+Codeforces,Backtracking,Misha and Permutations Summation,https://codeforces.com/problemset/problem/501/D,2000,Backtracking
+Codeforces,Backtracking,New Year Permutation,https://codeforces.com/problemset/problem/500/B,1600,Backtracking
+Codeforces,Backtracking,Diverse Permutation,https://codeforces.com/problemset/problem/482/A,1200,Backtracking
+Codeforces,Backtracking,Permutation,https://codeforces.com/problemset/problem/452/F,2700,Backtracking
+Codeforces,Backtracking,Sorting Permutations,https://codeforces.com/problemset/problem/398/E,N/A,Backtracking
+Codeforces,Backtracking,On Sum of Number of Inversions in Permutations,https://codeforces.com/problemset/problem/396/D,N/A,Backtracking
+Codeforces,Backtracking,Ksenia and Combinatorics,https://codeforces.com/problemset/problem/382/E,2600,Backtracking
+Codeforces,Backtracking,Levko and Permutation,https://codeforces.com/problemset/problem/361/B,1200,Backtracking
+Codeforces,Backtracking,Permutation,https://codeforces.com/problemset/problem/359/B,1400,Backtracking
+Codeforces,Backtracking,Jeff and Permutation,https://codeforces.com/problemset/problem/351/E,2200,Backtracking
+Codeforces,Backtracking,Subset Sums,https://codeforces.com/problemset/problem/348/C,2500,Backtracking
+Codeforces,Backtracking,Iahub and Permutations,https://codeforces.com/problemset/problem/340/E,2000,Backtracking
+Codeforces,Backtracking,Two permutations,https://codeforces.com/problemset/problem/323/C,2400,Backtracking
+Codeforces,Backtracking,Lucky Permutation Triple,https://codeforces.com/problemset/problem/303/A,1300,Backtracking
+Codeforces,Backtracking,Yaroslav and Permutations,https://codeforces.com/problemset/problem/296/A,1100,Backtracking
+Codeforces,Backtracking,Lucky Permutation,https://codeforces.com/problemset/problem/286/A,1400,Backtracking
+Codeforces,Backtracking,Positions in Permutations,https://codeforces.com/problemset/problem/285/E,2600,Backtracking
+Codeforces,Backtracking,Building Permutation,https://codeforces.com/problemset/problem/285/C,1200,Backtracking
+Codeforces,Backtracking,Slightly Decreasing Permutations,https://codeforces.com/problemset/problem/285/A,1100,Backtracking
+Codeforces,Backtracking,Playing with Permutations,https://codeforces.com/problemset/problem/251/B,1800,Backtracking
+Codeforces,Backtracking,Perfect Permutation,https://codeforces.com/problemset/problem/233/A,800,Backtracking
+Codeforces,Backtracking,Two Permutations,https://codeforces.com/problemset/problem/213/E,2700,Backtracking
+Codeforces,Backtracking,Permutations,https://codeforces.com/problemset/problem/187/A,1500,Backtracking
+Codeforces,Backtracking,Digits Permutations,https://codeforces.com/problemset/problem/138/B,1900,Backtracking
+Codeforces,Backtracking,Permutation,https://codeforces.com/problemset/problem/137/B,1000,Backtracking
+Codeforces,Backtracking,Permutations,https://codeforces.com/problemset/problem/124/B,1400,Backtracking
+Codeforces,Backtracking,Prime Permutation,https://codeforces.com/problemset/problem/123/A,1300,Backtracking
+Codeforces,Backtracking,Lucky Permutation,https://codeforces.com/problemset/problem/121/C,1900,Backtracking
+Codeforces,Backtracking,Restoration of the Permutation,https://codeforces.com/problemset/problem/67/B,1800,Backtracking
+Codeforces,Backtracking,Spoilt Permutation,https://codeforces.com/problemset/problem/56/B,1300,Backtracking
+Codeforces,Backtracking,Permutations,https://codeforces.com/problemset/problem/48/D,1500,Backtracking
+HackerRank,Backtracking,Problem?Isfullscreen=True,https://www.hackerrank.com/challenges/the-power-sum/problem?isFullScreen=true,N/A,HackerRank Problem
+HackerRank,Backtracking,Problem?Isfullscreen=True,https://www.hackerrank.com/challenges/crossword-puzzle/problem?isFullScreen=true,N/A,HackerRank Problem
+HackerRank,Backtracking,Problem?Isfullscreen=True,https://www.hackerrank.com/challenges/recursive-digit-sum/problem?isFullScreen=true,N/A,HackerRank Problem
+HackerRank,Backtracking,Problem?Isfullscreen=True,https://www.hackerrank.com/challenges/simplified-chess-engine/problem?isFullScreen=true,N/A,HackerRank Problem
+HackerRank,Backtracking,Problem?Isfullscreen=True,https://www.hackerrank.com/challenges/password-cracker/problem?isFullScreen=true,N/A,HackerRank Problem
+HackerRank,Backtracking,Problem?Isfullscreen=True,https://www.hackerrank.com/challenges/arithmetic-expressions/problem?isFullScreen=true,N/A,HackerRank Problem
+HackerRank,Backtracking,Problem?Isfullscreen=True,https://www.hackerrank.com/challenges/stone-division-2/problem?isFullScreen=true,N/A,HackerRank Problem
+HackerRank,Backtracking,Problem?Isfullscreen=True,https://www.hackerrank.com/challenges/k-factorization/problem?isFullScreen=true,N/A,HackerRank Problem
+HackerRank,Backtracking,Problem?Isfullscreen=True,https://www.hackerrank.com/challenges/bowling-pins/problem?isFullScreen=true,N/A,HackerRank Problem
+HackerRank,Backtracking,Problem?Isfullscreen=True,https://www.hackerrank.com/challenges/simplified-chess-engine-ii/problem?isFullScreen=true,N/A,HackerRank Problem
+LeetCode,Backtracking,757. Pyramid Transition Matrix,https://leetcode.com/problems/pyramid-transition-matrix/,Medium,LeetCode Problem
+LeetCode,Backtracking,2754. Maximum Strength of a Group,https://leetcode.com/problems/maximum-strength-of-a-group/,Medium,LeetCode Problem
+LeetCode,Backtracking,2802. Find the Punishment Number of an Integer,https://leetcode.com/problems/find-the-punishment-number-of-an-integer/,Medium,LeetCode Problem
+LeetCode,Backtracking,2883. Partition String Into Minimum Beautiful Substrings,https://leetcode.com/problems/partition-string-into-minimum-beautiful-substrings/,Medium,LeetCode Problem
+LeetCode,Backtracking,3092. Minimum Moves to Spread Stones Over Grid,https://leetcode.com/problems/minimum-moves-to-spread-stones-over-grid/,Medium,LeetCode Problem
+LeetCode,Backtracking,3294. Number of Self-Divisible Permutations,https://leetcode.com/problems/number-of-self-divisible-permutations/,Medium,LeetCode Problem
+LeetCode,Backtracking,3635. Smallest Divisible Digit Product II,https://leetcode.com/problems/smallest-divisible-digit-product-ii/,Hard,LeetCode Problem
+LeetCode,Backtracking,3649. Minimum Time to Break Locks I,https://leetcode.com/problems/minimum-time-to-break-locks-i/,Medium,LeetCode Problem
+LeetCode,Backtracking,3780. Permutations III,https://leetcode.com/problems/permutations-iii/,Medium,LeetCode Problem
+LeetCode,Backtracking,3947. Balanced K-Factor Decomposition,https://leetcode.com/problems/balanced-k-factor-decomposition/,Medium,LeetCode Problem
+LeetCode,Backtracking,3951. Next Special Palindrome Number,https://leetcode.com/problems/next-special-palindrome-number/,Hard,LeetCode Problem
+LeetCode,Backtracking,4071. Word Squares II,https://leetcode.com/problems/word-squares-ii/,Medium,LeetCode Problem
+USACO,Backtracking,Angry Cows,http://www.usaco.org/index.php?page=viewproblem2&cpid=594,Silver,Binary Search / Backtrack
+AOJ,Backtracking,Exhaustive Search,https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_5_A,Easy,Recursion / Backtrack
+POJ,Backtracking,Chessboard Problem,http://poj.org/problem?id=1321,Easy,Backtrack / N-Queens
+Baekjoon,Backtracking,감소하는 수,https://www.acmicpc.net/problem/1038,Hard,Backtracking
+Baekjoon,Backtracking,가르침,https://www.acmicpc.net/problem/1062,Hard,Backtracking
+Baekjoon,Backtracking,줄어드는 수,https://www.acmicpc.net/problem/1174,Hard,Backtracking
+Baekjoon,Backtracking,부분수열의 합,https://www.acmicpc.net/problem/1182,Medium,Backtracking
+Baekjoon,Backtracking,컴백홈,https://www.acmicpc.net/problem/1189,Medium,Backtracking
+Baekjoon,Backtracking,Guess,https://www.acmicpc.net/problem/1248,Hard,Backtracking
+Baekjoon,Backtracking,행운의 문자열,https://www.acmicpc.net/problem/1342,Medium,Backtracking
+Baekjoon,Backtracking,미친 로봇,https://www.acmicpc.net/problem/1405,Hard,Backtracking
+Baekjoon,Backtracking,숌 사이 수열,https://www.acmicpc.net/problem/1469,Hard,Backtracking
+Baekjoon,Backtracking,기타콘서트,https://www.acmicpc.net/problem/1497,Medium,Backtracking
+Baekjoon,Backtracking,도미노 찾기,https://www.acmicpc.net/problem/1553,Hard,Backtracking
+Baekjoon,Backtracking,이차원 배열의 합,https://www.acmicpc.net/problem/1729,Hard,Backtracking
+Baekjoon,Backtracking,암호 만들기,https://www.acmicpc.net/problem/1759,Hard,Backtracking
+Baekjoon,Backtracking,비숍,https://www.acmicpc.net/problem/1799,Hard,Backtracking
+Baekjoon,Backtracking,소문난 칠공주,https://www.acmicpc.net/problem/1941,Hard,Backtracking
+Baekjoon,Backtracking,알파벳,https://www.acmicpc.net/problem/1987,Hard,Backtracking
+Baekjoon,Backtracking,신기한 소수,https://www.acmicpc.net/problem/2023,Hard,Backtracking
+Baekjoon,Backtracking,소풍,https://www.acmicpc.net/problem/2026,Hard,Backtracking
+Baekjoon,Backtracking,스도쿠,https://www.acmicpc.net/problem/2239,Hard,Backtracking
+Baekjoon,Backtracking,부등호,https://www.acmicpc.net/problem/2529,Medium,Backtracking
+Baekjoon,Backtracking,스도쿠,https://www.acmicpc.net/problem/2580,Hard,Backtracking
+Baekjoon,Backtracking,좋은수열,https://www.acmicpc.net/problem/2661,Hard,Backtracking
+Baekjoon,Backtracking,즐거운 단어,https://www.acmicpc.net/problem/2922,Hard,Backtracking
+Baekjoon,Backtracking,5,https://www.acmicpc.net/problem/3165,Hard,Backtracking
+Baekjoon,Backtracking,선발 명단,https://www.acmicpc.net/problem/3980,Hard,Backtracking
+Baekjoon,Backtracking,애너그램,https://www.acmicpc.net/problem/6443,Hard,Backtracking
+Baekjoon,Backtracking,로또,https://www.acmicpc.net/problem/6603,Medium,Backtracking
+Baekjoon,Backtracking,월드컵,https://www.acmicpc.net/problem/6987,Hard,Backtracking
+Baekjoon,Backtracking,0 만들기,https://www.acmicpc.net/problem/7490,Hard,Backtracking
+Baekjoon,Backtracking,틱택토,https://www.acmicpc.net/problem/7682,Hard,Backtracking
+Baekjoon,Backtracking,N-Queen,https://www.acmicpc.net/problem/9663,Hard,Backtracking
+Baekjoon,Backtracking,NxM 보드 완주하기,https://www.acmicpc.net/problem/9944,Hard,Backtracking
+Baekjoon,Backtracking,수식 완성하기,https://www.acmicpc.net/problem/10421,Hard,Backtracking
+Baekjoon,Backtracking,순열장난,https://www.acmicpc.net/problem/10597,Hard,Backtracking
+Baekjoon,Backtracking,차이를 최대로,https://www.acmicpc.net/problem/10819,Medium,Backtracking
+Baekjoon,Backtracking,외판원 순회 2,https://www.acmicpc.net/problem/10971,Medium,Backtracking
+Baekjoon,Backtracking,모든 순열,https://www.acmicpc.net/problem/10974,Medium,Backtracking
+Baekjoon,Backtracking,"1, 2, 3 더하기 2",https://www.acmicpc.net/problem/12101,Medium,Backtracking
+Baekjoon,Backtracking,텔레포트 3,https://www.acmicpc.net/problem/12908,Hard,Backtracking
+Baekjoon,Backtracking,비밀번호,https://www.acmicpc.net/problem/13908,Medium,Backtracking
+Baekjoon,Backtracking,넴모넴모 (Easy),https://www.acmicpc.net/problem/14712,Hard,Backtracking
+Baekjoon,Backtracking,연산자 끼워넣기,https://www.acmicpc.net/problem/14888,Medium,Backtracking
+Baekjoon,Backtracking,스타트와 링크,https://www.acmicpc.net/problem/14889,Medium,Backtracking
+Baekjoon,Backtracking,개구리 1,https://www.acmicpc.net/problem/15566,Medium,Backtracking
+Baekjoon,Backtracking,N과 M (1),https://www.acmicpc.net/problem/15649,Medium,Backtracking
+Baekjoon,Backtracking,N과 M (2),https://www.acmicpc.net/problem/15650,Medium,Backtracking
+Baekjoon,Backtracking,N과 M (3),https://www.acmicpc.net/problem/15651,Medium,Backtracking
+Baekjoon,Backtracking,N과 M (4),https://www.acmicpc.net/problem/15652,Medium,Backtracking
+Baekjoon,Backtracking,N과 M (5),https://www.acmicpc.net/problem/15654,Medium,Backtracking
+Baekjoon,Backtracking,N과 M (6),https://www.acmicpc.net/problem/15655,Medium,Backtracking
+Baekjoon,Backtracking,N과 M (7),https://www.acmicpc.net/problem/15656,Medium,Backtracking
+Baekjoon,Backtracking,N과 M (8),https://www.acmicpc.net/problem/15657,Medium,Backtracking
+Baekjoon,Backtracking,연산자 끼워넣기 (2),https://www.acmicpc.net/problem/15658,Medium,Backtracking
+Baekjoon,Backtracking,연산자 끼워넣기 (3),https://www.acmicpc.net/problem/15659,Hard,Backtracking
+Baekjoon,Backtracking,N과 M (9),https://www.acmicpc.net/problem/15663,Medium,Backtracking
+Baekjoon,Backtracking,N과 M (10),https://www.acmicpc.net/problem/15664,Medium,Backtracking
+Baekjoon,Backtracking,N과 M (11),https://www.acmicpc.net/problem/15665,Medium,Backtracking
+Baekjoon,Backtracking,N과 M (12),https://www.acmicpc.net/problem/15666,Medium,Backtracking
+Baekjoon,Backtracking,사다리 조작,https://www.acmicpc.net/problem/15684,Hard,Backtracking
+Baekjoon,Backtracking,랭퍼든 수열쟁이야!!,https://www.acmicpc.net/problem/15918,Hard,Backtracking
+Baekjoon,Backtracking,에너지 모으기,https://www.acmicpc.net/problem/16198,Medium,Backtracking
+Baekjoon,Backtracking,알파 틱택토,https://www.acmicpc.net/problem/16571,Hard,Backtracking
+Baekjoon,Backtracking,로마 숫자 만들기,https://www.acmicpc.net/problem/16922,Medium,Backtracking
+Baekjoon,Backtracking,캠프 준비,https://www.acmicpc.net/problem/16938,Hard,Backtracking
+Baekjoon,Backtracking,계란으로 계란치기,https://www.acmicpc.net/problem/16987,Hard,Backtracking
+Baekjoon,Backtracking,색종이 붙이기,https://www.acmicpc.net/problem/17136,Hard,Backtracking
+Baekjoon,Backtracking,NM과 K (1),https://www.acmicpc.net/problem/18290,Medium,Backtracking
+Baekjoon,Backtracking,근손실,https://www.acmicpc.net/problem/18429,Medium,Backtracking
+Baekjoon,Backtracking,무기 공학,https://www.acmicpc.net/problem/18430,Hard,Backtracking
+Baekjoon,Backtracking,소-난다!,https://www.acmicpc.net/problem/19699,Medium,Backtracking
+Baekjoon,Backtracking,다이어트,https://www.acmicpc.net/problem/19942,Hard,Backtracking
+Baekjoon,Backtracking,영재의 시험,https://www.acmicpc.net/problem/19949,Medium,Backtracking
+Baekjoon,Backtracking,진우의 민트초코우유,https://www.acmicpc.net/problem/20208,Hard,Backtracking
+Baekjoon,Backtracking,미술가 미미,https://www.acmicpc.net/problem/20950,Medium,Backtracking
+Baekjoon,Backtracking,죽음의 비,https://www.acmicpc.net/problem/22944,Hard,Backtracking
+Baekjoon,Backtracking,카드 놓기,https://www.acmicpc.net/problem/5568,Medium,Backtracking
+Baekjoon,Backtracking,친구 팰린드롬,https://www.acmicpc.net/problem/15270,Medium,Backtracking
+Baekjoon,Backtracking,꽃길,https://www.acmicpc.net/problem/14620,Medium,Backtracking
+Baekjoon,Backtracking,도영이가 만든 맛있는 음식,https://www.acmicpc.net/problem/2961,Medium,Backtracking
+Baekjoon,Backtracking,링크와 스타트,https://www.acmicpc.net/problem/15661,Hard,Backtracking
+Baekjoon,Backtracking,숫자 재배치,https://www.acmicpc.net/problem/16943,Medium,Backtracking
+Baekjoon,Backtracking,치킨 배달,https://www.acmicpc.net/problem/15686,Hard,Backtracking
+Baekjoon,Backtracking,인싸들의 가위바위보,https://www.acmicpc.net/problem/16986,Hard,Backtracking
+Baekjoon,Backtracking,연산 최대로,https://www.acmicpc.net/problem/21943,Hard,Backtracking
+Baekjoon,Backtracking,N으로 만들기,https://www.acmicpc.net/problem/17255,Hard,Backtracking
+Baekjoon,Backtracking,ABCDE,https://www.acmicpc.net/problem/13023,Hard,Backtracking
+Baekjoon,Backtracking,배열 돌리기 4,https://www.acmicpc.net/problem/17406,Hard,Backtracking
+Baekjoon,Backtracking,골목 대장 호석 - 기능성,https://www.acmicpc.net/problem/20168,Hard,Backtracking
+Baekjoon,Backtracking,감시,https://www.acmicpc.net/problem/15683,Hard,Backtracking
+Baekjoon,Backtracking,청소년 상어,https://www.acmicpc.net/problem/19236,Hard,Backtracking
+Baekjoon,Backtracking,Boggle,https://www.acmicpc.net/problem/9202,Hard,Backtracking

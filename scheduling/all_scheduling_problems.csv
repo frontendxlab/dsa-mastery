@@ -1,0 +1,144 @@
+Platform,Category,Problem Name,URL,Difficulty,Key Concept
+Codeforces,Deadline Scheduling,1095C - Powers of Two,https://codeforces.com/problemset/problem/1095/C,1300,Scheduling power-of-two sums
+Codeforces,Deadline Scheduling,1201C - Maximum Median,https://codeforces.com/problemset/problem/1201/C,1400,Binary search on median scheduling
+Codeforces,Deadline Scheduling,1288D - Minimax,https://codeforces.com/problemset/problem/1288/D,2000,Binary search on constraints
+Baekjoon,Deadline Scheduling,13904 - Homework,https://www.acmicpc.net/problem/13904,Gold 3,Deadline scheduling with max profit
+LeetCode,Deadline Scheduling,1462. Course Schedule IV,https://leetcode.com/problems/course-schedule-iv/,Medium,Prerequisite checking / Floyd-Warshall
+Codeforces,Deadline Scheduling,1579E2 - Array Optimization by Deque,https://codeforces.com/problemset/problem/1579/E2,1700,Scheduling with min inversions
+LeetCode,Deadline Scheduling,1705. Maximum Number of Eaten Apples,https://leetcode.com/problems/maximum-number-of-eaten-apples/,Medium,Eat apples before they rot (deadline)
+Baekjoon,Deadline Scheduling,1781 - Cup Noodles,https://www.acmicpc.net/problem/1781,Gold 2,Deadline scheduling with max heap
+LeetCode,Deadline Scheduling,207. Course Schedule,https://leetcode.com/problems/course-schedule/,Medium,Topological sort / prerequisite check
+LeetCode,Deadline Scheduling,210. Course Schedule II,https://leetcode.com/problems/course-schedule-ii/,Medium,Topological order output
+Baekjoon,Deadline Scheduling,6068 - Time Management,https://www.acmicpc.net/problem/6068,Gold 5,Schedule with deadlines
+AtCoder,Deadline Scheduling,ABC 148 F - Playing Tag on Tree,https://atcoder.jp/contests/abc148/tasks/abc148_f,1548,Tree min-max scheduling
+AtCoder,Deadline Scheduling,ABC 218 F - Blocked Roads,https://atcoder.jp/contests/abc218/tasks/abc218_f,1575,Shortest path scheduling
+CodeChef,Deadline Scheduling,CHEFSOCK - Chef and Socks,https://www.codechef.com/problems/CHEFSOCK,Easy,Deadline-driven choice
+CodeChef,Deadline Scheduling,COOK82B - AND Graph,https://www.codechef.com/problems/COOK82B,Medium,Scheduling with graph constraints
+CSES,Deadline Scheduling,Task and Deadlines,https://cses.fi/problemset/task/1630,Easy,Maximize profit with deadlines
+GeeksforGeeks,Deadline Scheduling,Weighted Job Scheduling,https://www.geeksforgeeks.org/weighted-job-scheduling/,Hard,DP with binary search on jobs
+GeeksforGeeks,Deadline Scheduling,Weighted Job Scheduling (Practice),https://www.geeksforgeeks.org/problems/weighted-job-scheduling/1,Hard,DP with binary search
+LeetCode,Interval Scheduling,1024. Video Stitching,https://leetcode.com/problems/video-stitching/,Medium,Minimum intervals to cover range
+Baekjoon,Interval Scheduling,11000 - Assign Lecture Room,https://www.acmicpc.net/problem/11000,Gold 5,Minimum classrooms for lectures
+LeetCode,Interval Scheduling,1272. Remove Interval,https://leetcode.com/problems/remove-interval/,Medium,Subtract interval from set
+LeetCode,Interval Scheduling,1288. Remove Covered Intervals,https://leetcode.com/problems/remove-covered-intervals/,Medium,Remove covered intervals
+Baekjoon,Interval Scheduling,1374 - Lecture Room,https://www.acmicpc.net/problem/1374,Gold 5,Minimum rooms
+Codeforces,Interval Scheduling,1669E - 2-Letter Strings,https://codeforces.com/problemset/problem/1669/E,1000,Count overlapping pairs
+Codeforces,Interval Scheduling,1730B - Meeting on the Line,https://codeforces.com/problemset/problem/1730/B,1600,Find meeting point minimizing time
+Codeforces,Interval Scheduling,1741C - Minimize the Thickness,https://codeforces.com/problemset/problem/1741/C,1100,Greedy partition scheduling
+LeetCode,Interval Scheduling,1854. Maximum Population Year,https://leetcode.com/problems/maximum-population-year/,Easy,Line sweep on intervals
+LeetCode,Interval Scheduling,1893. Check if All the Integers in a Range Are Covered,https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/,Easy,Interval union
+Baekjoon,Interval Scheduling,1931 - Assign Meeting Room,https://www.acmicpc.net/problem/1931,Silver 1,Maximum non-overlapping meetings
+Baekjoon,Interval Scheduling,2170 - Draw a Line,https://www.acmicpc.net/problem/2170,Gold 5,Merging intervals
+LeetCode,Interval Scheduling,2271. Maximum White Tiles Covered by a Carpet,https://leetcode.com/problems/maximum-white-tiles-covered-by-a-carpet/,Medium,Sliding window on intervals
+LeetCode,Interval Scheduling,2406. Divide Intervals Into Minimum Number of Groups,https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/,Medium,Minimum groups for non-overlap
+LeetCode,Interval Scheduling,252. Meeting Rooms,https://leetcode.com/problems/meeting-rooms/,Easy,Check if intervals overlap
+LeetCode,Interval Scheduling,253. Meeting Rooms II,https://leetcode.com/problems/meeting-rooms-ii/,Medium,Minimum meeting rooms / min heap
+LeetCode,Interval Scheduling,2580. Count Ways to Group Overlapping Ranges,https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/,Medium,Merge intervals + counting
+Codeforces,Interval Scheduling,289B - Polo the Penguin and Matrix,https://codeforces.com/problemset/problem/289/B,1200,Sorting and median scheduling
+LeetCode,Interval Scheduling,435. Non-overlapping Intervals,https://leetcode.com/problems/non-overlapping-intervals/,Medium,Remove min intervals to make non-overlapping
+LeetCode,Interval Scheduling,452. Minimum Number of Arrows to Burst Balloons,https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/,Medium,Overlapping intervals greedy
+Codeforces,Interval Scheduling,467C - George and Job,https://codeforces.com/problemset/problem/467/C,1700,DP on interval selection
+Codeforces,Interval Scheduling,500B - New Year Permutation,https://codeforces.com/problemset/problem/500/B,1400,Scheduling via graph swaps
+LeetCode,Interval Scheduling,56. Merge Intervals,https://leetcode.com/problems/merge-intervals/,Medium,Sorting overlapping intervals
+LeetCode,Interval Scheduling,57. Insert Interval,https://leetcode.com/problems/insert-interval/,Medium,Insert and merge interval
+LeetCode,Interval Scheduling,646. Maximum Length of Pair Chain,https://leetcode.com/problems/maximum-length-of-pair-chain/,Medium,Longest chain of intervals
+LeetCode,Interval Scheduling,757. Set Intersection Size At Least Two,https://leetcode.com/problems/set-intersection-size-at-least-two/,Hard,Greedy interval covering
+LeetCode,Interval Scheduling,759. Employee Free Time,https://leetcode.com/problems/employee-free-time/,Hard,Find gaps in intervals
+LeetCode,Interval Scheduling,763. Partition Labels,https://leetcode.com/problems/partition-labels/,Medium,Partition string based on intervals
+LeetCode,Interval Scheduling,986. Interval List Intersections,https://leetcode.com/problems/interval-list-intersections/,Medium,Two-pointer interval intersection
+AtCoder,Interval Scheduling,ABC 207 F - Tree Patrolling,https://atcoder.jp/contests/abc207/tasks/abc207_f,carburetor,DP on intervals
+AtCoder,Interval Scheduling,ABC 230 F - Predilection,https://atcoder.jp/contests/abc230/tasks/abc230_f,1469,DP on sequence scheduling
+GeeksforGeeks,Interval Scheduling,Activity Selection (Practice),https://www.geeksforgeeks.org/problems/activity-selection/0,Medium,Maximum non-conflicting activities
+GeeksforGeeks,Interval Scheduling,Activity Selection Problem,https://www.geeksforgeeks.org/activity-selection-problem-greedy-algo-1/,Medium,Maximum non-conflicting activities
+SPOJ,Interval Scheduling,BUSYMAN - I AM VERY BUSY,https://www.spoj.com/problems/BUSYMAN/,Easy,Maximum activities selection
+HackerRank,Interval Scheduling,Chief Hopper,https://www.hackerrank.com/challenges/chief-hopper/problem,Medium,Binary search scheduling
+HackerRank,Interval Scheduling,Interval Selection,https://www.hackerrank.com/challenges/interval-selection/problem,Medium,Non-overlapping interval selection
+HackerRank,Interval Scheduling,Jim and the Orders,https://www.hackerrank.com/challenges/jim-and-the-orders/problem,Easy,Schedule orders by completion time
+CodeChef,Interval Scheduling,MAXDIFF - Maximum Difference,https://www.codechef.com/problems/MAXDIFF,Easy,Scheduling by difficulty
+SPOJ,Interval Scheduling,MSTICK - Wooden Sticks,https://www.spoj.com/problems/MSTICK/,Easy,Scheduling with two constraints
+HackerRank,Interval Scheduling,Maximum Subarray Sum,https://www.hackerrank.com/challenges/maximum-subarray-sum/problem,Hard,Circular scheduling
+GeeksforGeeks,Interval Scheduling,Maximum non-overlapping intervals,https://www.geeksforgeeks.org/problems/maximum-non-overlapping-intervals/0,Medium,Greedy interval selection
+GeeksforGeeks,Interval Scheduling,Maximum trains for which stoppage can be provided,https://www.geeksforgeeks.org/maximum-trains-stoppage-can-provided/,Medium,Greedy train scheduling
+InterviewBit,Interval Scheduling,Meeting Rooms,https://www.interviewbit.com/problems/meeting-rooms/,Medium,Minimum rooms for meeting intervals
+InterviewBit,Interval Scheduling,Merge Intervals,https://www.interviewbit.com/problems/merge-intervals/,Medium,Merge overlapping intervals
+GeeksforGeeks,Interval Scheduling,Minimum Number of Platforms Required,https://www.geeksforgeeks.org/minimum-number-platforms-required-railwaybus-station/,Medium,Minimum platforms for scheduling
+GeeksforGeeks,Interval Scheduling,Minimum Platforms (Practice),https://www.geeksforgeeks.org/problems/minimum-platforms/0,Medium,Minimum platforms
+CSES,Interval Scheduling,Movie Festival,https://cses.fi/problemset/task/1629,Easy,Maximum non-overlapping intervals
+CSES,Interval Scheduling,Movie Festival II,https://cses.fi/problemset/task/1632,Medium,Multiple people scheduling
+GeeksforGeeks,Interval Scheduling,N meetings in one room,https://www.geeksforgeeks.org/problems/n-meetings-in-one-room/0,Easy,Maximum non-overlapping meetings
+InterviewBit,Interval Scheduling,Non-overlapping Intervals,https://www.interviewbit.com/problems/non-overlapping-intervals/,Medium,Remove min overlapping intervals
+CSES,Interval Scheduling,Restaurant Customers,https://cses.fi/problemset/task/1619,Easy,Maximum simultaneous intervals
+CSES,Interval Scheduling,Room Allocation,https://cses.fi/problemset/task/1143,Medium,Minimum rooms for intervals
+HackerRank,Interval Scheduling,Team Formation,https://www.hackerrank.com/challenges/team-formation/problem,Medium,Greedy group scheduling
+UVa,Interval Scheduling,UVa 10026 - Shoemaker's Problem,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=12&page=show_problem&problem=967,Medium,Order scheduling by fine ratio
+Kattis,Interval Scheduling,consecutivesums,https://open.kattis.com/problems/consecutivesums,Medium,Consecutive sum scheduling
+Kattis,Interval Scheduling,movies,https://open.kattis.com/problems/movies,Medium,Movie scheduling
+Codeforces,Job Sequencing,1108C - Nice Garland,https://codeforces.com/problemset/problem/1108/C,1300,Scheduling pattern minimizations
+Codeforces,Job Sequencing,1203F1 - Complete the Projects (easy version),https://codeforces.com/problemset/problem/1203/F1,1900,Greedy scheduling with rating change
+Codeforces,Job Sequencing,1203F2 - Complete the Projects (hard version),https://codeforces.com/problemset/problem/1203/F2,2100,Greedy scheduling with rating change
+Codeforces,Job Sequencing,1519C - The Sports Programming Festival,https://codeforces.com/problemset/problem/1519/C,1600,Scheduling participants by university
+Codeforces,Job Sequencing,1781C - Equal Frequencies,https://codeforces.com/problemset/problem/1781/C,1400,Scheduling character frequencies
+Baekjoon,Job Sequencing,2109 - Touring Lecture,https://www.acmicpc.net/problem/2109,Gold 3,Deadline scheduling max profit
+LeetCode,Job Sequencing,502. IPO,https://leetcode.com/problems/ipo/,Hard,Capital-profit job scheduling
+Codeforces,Job Sequencing,545C - Woodcutters,https://codeforces.com/problemset/problem/545/C,1500,Greedy tree cutting order
+Codeforces,Job Sequencing,580C - Kefa and Park,https://codeforces.com/problemset/problem/580/C,1500,Tree traversal scheduling
+LeetCode,Job Sequencing,826. Most Profit Assigning Work,https://leetcode.com/problems/most-profit-assigning-work/,Medium,Sort jobs and workers by ability
+AtCoder,Job Sequencing,ABC 137 D - Summer Vacation,https://atcoder.jp/contests/abc137/tasks/abc137_d,1204,Greedy scheduling with max heap
+AtCoder,Job Sequencing,ABC 139 F - Engines,https://atcoder.jp/contests/abc139/tasks/abc139_f,1676,Sorting by angle scheduling
+GeeksforGeeks,Job Sequencing,Job Sequencing Problem,https://www.geeksforgeeks.org/job-sequencing-problem/,Medium,Greedy scheduling with deadlines and profit
+GeeksforGeeks,Job Sequencing,Job Sequencing Problem (Practice),https://www.geeksforgeeks.org/problems/job-sequencing-problem/0,Medium,Practical job sequencing
+GeeksforGeeks,Job Sequencing,Job Sequencing with Deadlines (Greedy),https://www.geeksforgeeks.org/job-sequencing-problem-using-greedy-method-in-python/,Medium,Max profit within deadlines
+CSES,Job Sequencing,Reading Books,https://cses.fi/problemset/task/1631,Medium,Two-processor task scheduling
+CodeChef,Job Sequencing,SCHEDULE - Scheduling,https://www.codechef.com/problems/SCHEDULE,Medium,Job scheduling problem
+SPOJ,Job Sequencing,SCUBADIV - Scuba Diver,https://www.spoj.com/problems/SCUBADIV/,Medium,Two-dimensional knapsack scheduling
+Kattis,Job Sequencing,jobexpenses,https://open.kattis.com/problems/jobexpenses,Easy,Job expense calculation
+LeetCode,Minimizing Makespan,1011. Capacity To Ship Packages Within D Days,https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/,Medium,Binary search on max load
+LeetCode,Minimizing Makespan,1482. Minimum Number of Days to Make m Bouquets,https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/,Medium,Binary search on time
+LeetCode,Minimizing Makespan,1552. Magnetic Force Between Two Balls,https://leetcode.com/problems/magnetic-force-between-two-balls/,Medium,Binary search on min force
+LeetCode,Minimizing Makespan,1760. Minimum Limit of Balls in a Bag,https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/,Medium,Binary search on max count
+LeetCode,Minimizing Makespan,1870. Minimum Speed to Arrive on Time,https://leetcode.com/problems/minimum-speed-to-arrive-on-time/,Medium,Binary search on speed
+LeetCode,Minimizing Makespan,2064. Minimized Maximum of Products Distributed to Any Store,https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/,Medium,Binary search on max per store
+LeetCode,Minimizing Makespan,2187. Minimum Time to Complete Trips,https://leetcode.com/problems/minimum-time-to-complete-trips/,Medium,Binary search on total time
+LeetCode,Minimizing Makespan,2226. Maximum Candies Allocated to K Children,https://leetcode.com/problems/maximum-candies-allocated-to-k-children/,Medium,Binary search on candies per child
+LeetCode,Minimizing Makespan,2594. Minimum Time to Repair Cars,https://leetcode.com/problems/minimum-time-to-repair-cars/,Medium,Binary search on repair time
+LeetCode,Minimizing Makespan,410. Split Array Largest Sum,https://leetcode.com/problems/split-array-largest-sum/,Hard,Binary search on makespan
+GeeksforGeeks,Minimizing Makespan,Minimum time to finish tasks without skipping,https://www.geeksforgeeks.org/minimum-time-required-to-finish-tasks-without-skipping-two-consecutive/,Medium,DP on scheduling
+Codeforces,Scheduling,1443A - Kids Seating,https://codeforces.com/problemset/problem/1443/A,800,Scheduling non-conflicting numbers
+Codeforces,Scheduling,1622C - Set or Decrease,https://codeforces.com/problemset/problem/1622/C,1600,Greedy array operations
+Codeforces,Scheduling,550A - Two Substrings,https://codeforces.com/problemset/problem/550/A,1500,String scheduling
+GeeksforGeeks,Scheduling,Maximum profit by buying and selling a share at most twice,https://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-twice/,Hard,Stock scheduling
+GeeksforGeeks,Scheduling,Schedule jobs with maximum profit such that each job has deadline and duration,https://www.geeksforgeeks.org/schedule-jobs-with-maximum-profit-such-that-each-job-has-deadline-and-duration/,Hard,Deadline scheduling with unit time
+Timus,Single Machine,1022 - Genealogical Tree,https://acm.timus.ru/problem.aspx?space=1&num=1022,Medium,Topological ordering task scheduling
+Codeforces,Single Machine,140C - New Year Snowmen,https://codeforces.com/problemset/problem/140/C,1800,Greedy with max heap scheduling
+Codeforces,Single Machine,1443C - The Delivery Dilemma,https://codeforces.com/problemset/problem/1443/C,1400,Binary search on delivery time
+Baekjoon,Single Machine,14728 - Cramming,https://www.acmicpc.net/problem/14728,Gold 5,Single machine knapsack scheduling
+GeeksforGeeks,Single Machine,Minimum time to produce items,https://www.geeksforgeeks.org/minimum-time-produce-items-machine-can-produce-item-every-time/,Medium,Greedy on single machine
+LeetCode,Task Scheduling,1235. Maximum Profit in Job Scheduling,https://leetcode.com/problems/maximum-profit-in-job-scheduling/,Hard,DP with binary search on jobs
+LeetCode,Task Scheduling,1353. Maximum Number of Events That Can Be Attended,https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/,Medium,Greedy scheduling with min heap
+Baekjoon,Task Scheduling,1461 - Library,https://www.acmicpc.net/problem/1461,Gold 4,Greedy walking scheduling
+Baekjoon,Task Scheduling,1715 - Card Sorting,https://www.acmicpc.net/problem/1715,Gold 4,Optimal merge scheduling
+LeetCode,Task Scheduling,1751. Maximum Number of Events That Can Be Attended II,https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/,Hard,DP + binary search on events
+Baekjoon,Task Scheduling,1766 - Problem Set (Topological Sort),https://www.acmicpc.net/problem/1766,Gold 2,Priority-based scheduling
+Baekjoon,Task Scheduling,1826 - Refueling,https://www.acmicpc.net/problem/1826,Gold 2,Greedy scheduling with max heap
+LeetCode,Task Scheduling,1834. Single-Threaded CPU,https://leetcode.com/problems/single-threaded-cpu/,Medium,Min heap scheduling by burst time
+LeetCode,Task Scheduling,1882. Process Tasks Using Servers,https://leetcode.com/problems/process-tasks-using-servers/,Medium,Two-heap server-task scheduler
+Baekjoon,Task Scheduling,19598 - Minimum Number of Meeting Rooms,https://www.acmicpc.net/problem/19598,Gold 5,Minimum meeting rooms
+LeetCode,Task Scheduling,2008. Maximum Earnings From Taxi,https://leetcode.com/problems/maximum-earnings-from-taxi/,Medium,DP scheduling with binary search
+LeetCode,Task Scheduling,2050. Parallel Courses III,https://leetcode.com/problems/parallel-courses-iii/,Hard,Topological ordering with durations
+LeetCode,Task Scheduling,621. Task Scheduler,https://leetcode.com/problems/task-scheduler/,Medium,CPU task scheduling with cooldown
+LeetCode,Task Scheduling,630. Course Schedule III,https://leetcode.com/problems/course-schedule-iii/,Hard,Deadline scheduling with max heap
+Baekjoon,Task Scheduling,9576 - Book Distribution,https://www.acmicpc.net/problem/9576,Gold 2,Greedy book assignment
+GeeksforGeeks,Task Scheduling,"CPU Scheduling (FCFS, SJF, Priority, RR)",https://www.geeksforgeeks.org/program-for-fcfs-cpu-scheduling-set-1/,Easy,CPU scheduling algorithms
+HackerRank,Task Scheduling,Minimum Average Waiting Time,https://www.hackerrank.com/challenges/minimum-average-waiting-time/problem,Medium,SJF scheduling
+GeeksforGeeks,Task Scheduling,Priority CPU Scheduling,https://www.geeksforgeeks.org/program-for-priority-cpu-scheduling-set-1/,Easy,Priority-based scheduling
+GeeksforGeeks,Task Scheduling,Round Robin Scheduling,https://www.geeksforgeeks.org/program-for-round-robin-scheduling/,Easy,Time quantum scheduling
+GeeksforGeeks,Task Scheduling,Shortest Job First (SJF) Scheduling,https://www.geeksforgeeks.org/program-for-shortest-job-first-sjf-scheduling-set-1-non-preemptive/,Easy,Non-preemptive SJF
+HackerRank,Task Scheduling,Task Scheduling,https://www.hackerrank.com/challenges/task-scheduling/problem,Medium,Deadline scheduling with overflow
+InterviewBit,Task Scheduling,Task Scheduling,https://www.interviewbit.com/problems/task-scheduling/,Medium,Circular task scheduling
+Codeforces,Two Machines,1029C - Maximal Intersection,https://codeforces.com/problemset/problem/1029/C,1500,Interval intersection scheduling
+Baekjoon,Two Machines,2405 - Median and Two Machines,https://www.acmicpc.net/problem/2405,Gold 3,Two machine scheduling
+GeeksforGeeks,Two Machines,Johnson's Rule for 2 Machines,https://www.geeksforgeeks.org/johnsons-rule-for-2-machine-problem-2/,Medium,Optimal two-machine sequencing
+TopCoder,Scheduling,13128,https://community.topcoder.com/stat?c=problem_statement&pm=ScheduleResources,Easy,Greedy Scheduling
+USACO,Scheduling,Convention,http://www.usaco.org/index.php?page=viewproblem2&cpid=710,Silver,Scheduling / Min Wait Time
+AOJ,Scheduling,Queue (Scheduling),https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_3_B,Easy,Round Robin
+POJ,Scheduling,Stall Reservations,http://poj.org/problem?id=3190,Medium,Scheduling / Interval

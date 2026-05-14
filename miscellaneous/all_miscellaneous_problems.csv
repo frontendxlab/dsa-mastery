@@ -1,0 +1,92 @@
+Platform,Category,Problem Name,URL,Difficulty,Key Concept
+Baekjoon,15-Puzzle,1035 - Puzzle,https://www.acmicpc.net/problem/1035,Gold 1,Puzzle movement with BFS
+LightOJ,15-Puzzle,1121 - 15 Puzzle,https://lightoj.com/problem/15-puzzle,Hard,15 puzzle solution existence
+HackerRank,15-Puzzle,15 Puzzle,https://www.hackerrank.com/challenges/15-puzzle/problem,Hard,15-puzzle solver
+GeeksforGeeks,15-Puzzle,15 Puzzle Game: Existence of Solution,https://www.geeksforgeeks.org/check-instance-15-puzzle-solvable/,Hard,Solvability check using inversions
+Baekjoon,15-Puzzle,1525 - Puzzle,https://www.acmicpc.net/problem/1525,Gold 2,N-puzzle BFS with hash
+LeetCode,15-Puzzle,773. Sliding Puzzle,https://leetcode.com/problems/sliding-puzzle/,Hard,BFS on 2x3 board state space
+SPOJ,15-Puzzle,PUZZLE - 15 Puzzle,https://www.spoj.com/problems/PUZZLE/,Hard,15 puzzle solver using BFS/A*
+LeetCode,Boyer-Moore Voting,169. Majority Element,https://leetcode.com/problems/majority-element/,Easy,Boyer-Moore majority vote algorithm
+Codeforces,Boyer-Moore Voting,1730C - Minimum Notation,https://codeforces.com/problemset/problem/1730/C,1200,Greedy with majority-like logic
+LeetCode,Boyer-Moore Voting,229. Majority Element II,https://leetcode.com/problems/majority-element-ii/,Medium,Boyer-Moore extended to n/3
+GeeksforGeeks,Boyer-Moore Voting,Majority Element (Boyer-Moore),https://www.geeksforgeeks.org/boyer-moore-majority-voting-algorithm/,Medium,Linear time majority element
+Codeforces,Farey Sequence,113B - Petr#,https://codeforces.com/problemset/problem/113/B,2000,String matching with Farey-like enumeration
+Baekjoon,Farey Sequence,11694 - Farey Sequence,https://www.acmicpc.net/problem/11694,Platinum 5,Farey sequence with totient
+LeetCode,Farey Sequence,1447. Simplified Fractions,https://leetcode.com/problems/simplified-fractions/,Medium,Enumerate all reduced fractions
+Codeforces,Farey Sequence,1744F - Create the Teams,https://codeforces.com/problemset/problem/1744/F,1600,Farey-like interval counting
+POJ,Farey Sequence,2478 - Farey Sequence,http://poj.org/problem?id=2478,Medium,Farey sequence using Euler totient
+LeetCode,Farey Sequence,592. Fraction Addition and Subtraction,https://leetcode.com/problems/fraction-addition-and-subtraction/,Medium,Fraction arithmetic
+Baekjoon,Farey Sequence,6543 - Farey Sequence,https://www.acmicpc.net/problem/6543,Gold 3,Length of Farey sequence
+AtCoder,Farey Sequence,ABC 230 F - Predilection,https://atcoder.jp/contests/abc230/tasks/abc230_f,1840,DP with Farey-like enumeration
+SPOJ,Farey Sequence,DIV - Divisors and Fibonacci,https://www.spoj.com/problems/DIV/,Hard,Farey and Euler totient
+SPOJ,Farey Sequence,FAREY - Farey Sequence,https://www.spoj.com/problems/FAREY/,Medium,Length of Farey sequence
+SPOJ,Farey Sequence,FRACT - Fractions,https://www.spoj.com/problems/FRACT/,Hard,Fraction enumeration with Farey
+GeeksforGeeks,Farey Sequence,Farey Sequence,https://www.geeksforgeeks.org/farey-sequence/,Medium,Generate Farey sequence of order n
+E-Olymp,Farey Sequence,Farey Sequence,https://www.e-olymp.com/en/problems/693,Medium,Generate Farey sequence
+GeeksforGeeks,Farey Sequence,Farey Sequence (Practice),https://www.geeksforgeeks.org/problems/farey-sequence/0,Medium,Farey sequence of order n
+GeeksforGeeks,Farey Sequence,Farey Sequence using Euler Totient,https://www.geeksforgeeks.org/program-farey-sequence-using-euler-totient-function/,Medium,Totient-based Farey length
+Codeforces,Josephus,101955K - Let the Flames Begin,https://codeforces.com/problemset/problem/101955/K,3000,Josephus problem with large constraints
+Baekjoon,Josephus,11025 - Josephus Problem 3,https://www.acmicpc.net/problem/11025,Gold 4,Josephus O(n) formula
+Baekjoon,Josephus,1158 - Josephus Problem,https://www.acmicpc.net/problem/1158,Silver 4,Josephus permutation
+Baekjoon,Josephus,1168 - Josephus Problem 2,https://www.acmicpc.net/problem/1168,Gold 2,Josephus with segment tree
+LightOJ,Josephus,1179 - Josephus Problem,https://lightoj.com/problem/josephus-problem,Medium,Josephus problem recursive solution
+Baekjoon,Josephus,11866 - Josephus Problem 0,https://www.acmicpc.net/problem/11866,Silver 4,Josephus sequence output
+LeetCode,Josephus,1823. Find the Winner of the Circular Game,https://leetcode.com/problems/find-the-winner-of-the-circular-game/,Medium,Josephus problem simulation
+LeetCode,Josephus,390. Elimination Game,https://leetcode.com/problems/elimination-game/,Medium,Josephus variant with alternating direction
+Codeforces,Josephus,792B - Counting-out Rhyme,https://codeforces.com/problemset/problem/792/B,1200,Josephus simulation with queue
+HackerRank,Josephus,Counter Game,https://www.hackerrank.com/challenges/counter-game/problem,Medium,Josephus-like elimination game
+SPOJ,Josephus,JOSEPH - Josephus Problem,https://www.spoj.com/problems/JOSEPH/,Medium,Classic Josephus problem
+GeeksforGeeks,Josephus,Josephus Problem,https://www.geeksforgeeks.org/josephus-problem/,Hard,Circular elimination O(n) solution
+CSES,Josephus,Josephus Problem,https://cses.fi/problemset/task/2162,Easy,Josephus problem simulation
+Coding Ninjas,Josephus,Josephus Problem,https://www.codingninjas.com/studio/problems/josephus-problem_2535799,Medium,Circular elimination simulation
+CodeAbbey,Josephus,Josephus Problem,https://www.codeabbey.com/index/task_view/josephus-problem,Medium,Basic Josephus problem
+CSES,Josephus,Josephus Problem II,https://cses.fi/problemset/task/2163,Medium,Josephus with removal order
+GeeksforGeeks,Josephus,Josephus Problem using BIT,https://www.geeksforgeeks.org/josephus-problem-using-bit/,Hard,Fenwick tree O(n log n)
+GeeksforGeeks,Josephus,Josephus Problem with XOR,https://www.geeksforgeeks.org/josephus-problem-with-xor/,Hard,XOR-based elimination
+GeeksforGeeks,Josephus,Josephus circle using circular linked list,https://www.geeksforgeeks.org/josephus-circle-using-circular-linked-list/,Medium,Circular linked list simulation
+SPOJ,Josephus,ORDERS - Ordering the Soldiers,https://www.spoj.com/problems/ORDERS/,Medium,Josephus-like inverse problem
+GeeksforGeeks,Josephus,Order of removal in Josephus problem in O(N logN),https://www.geeksforgeeks.org/order-of-removal-in-josephus-problem-in-on-logn/,Hard,Ordered set optimization
+HackerRank,Josephus,Save the Prisoner,https://www.hackerrank.com/challenges/save-the-prisoner/problem,Easy,Josephus variant with modulo
+UVa,Josephus,UVa 305 - Joseph,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=241,Medium,Josephus problem with k=2 variant
+Kattis,Josephus,anotherbrick,https://open.kattis.com/problems/anotherbrick,Easy,Simple elimination
+LeetCode,Kadane Algorithm,53. Maximum Subarray,https://leetcode.com/problems/maximum-subarray/,Medium,Kadane's algorithm
+LeetCode,Kadane Algorithm,918. Maximum Sum Circular Subarray,https://leetcode.com/problems/maximum-sum-circular-subarray/,Medium,Kadane with circular array
+LeetCode,Kadane Algorithm,978. Longest Turbulent Subarray,https://leetcode.com/problems/longest-turbulent-subarray/,Medium,Kadane-like DP for turbulent
+GeeksforGeeks,Kadane Algorithm,Kadane's Algorithm,https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/,Medium,Maximum subarray sum
+GeeksforGeeks,Kadane Algorithm,Maximum circular subarray sum,https://www.geeksforgeeks.org/maximum-contiguous-circular-sum/,Medium,Kadane on circular arrays
+GeeksforGeeks,Kadane Algorithm,Smallest sum contiguous subarray,https://www.geeksforgeeks.org/smallest-sum-contiguous-subarray/,Medium,Minimum subarray sum variant
+Baekjoon,Maximum Average Segment,1182 - Sum of Partial Sequences,https://www.acmicpc.net/problem/1182,Silver 2,Subsequence sum equals target
+Codeforces,Maximum Average Segment,1352C - K-th Not Divisible by n,https://codeforces.com/problemset/problem/1352/C,1000,Binary search on segment average
+Codeforces,Maximum Average Segment,1730B - Meeting on the Line,https://codeforces.com/problemset/problem/1730/B,1600,Binary search on time (average-like)
+Baekjoon,Maximum Average Segment,1806 - Partial Sum,https://www.acmicpc.net/problem/1806,Gold 4,Minimum length subarray with sum >= S
+Baekjoon,Maximum Average Segment,2003 - Sum of Numbers,https://www.acmicpc.net/problem/2003,Silver 3,Two-pointer subarray sum
+LeetCode,Maximum Average Segment,643. Maximum Average Subarray I,https://leetcode.com/problems/maximum-average-subarray-i/,Easy,Sliding window average of k-length subarray
+LeetCode,Maximum Average Segment,644. Maximum Average Subarray II,https://leetcode.com/problems/maximum-average-subarray-ii/,Hard,Binary search on max average subarray
+LeetCode,Maximum Average Segment,813. Largest Sum of Averages,https://leetcode.com/problems/largest-sum-of-averages/,Medium,DP partition into subarrays for max avg
+SPOJ,Maximum Average Segment,ARRAYSUB - Subarray with Max Average,https://www.spoj.com/problems/ARRAYSUB/,Medium,Sliding window on array
+SPOJ,Maximum Average Segment,AVG - Maximum Average Segment,https://www.spoj.com/problems/AVG/,Medium,Binary search on subarray average
+GeeksforGeeks,Maximum Average Segment,Largest sum of averages (partition array),https://www.geeksforgeeks.org/largest-sum-of-averages/,Medium,DP partitioning for max avg
+GeeksforGeeks,Maximum Average Segment,Maximum average subarray,https://www.geeksforgeeks.org/maximum-average-subarray/,Medium,Find subarray with max average
+GeeksforGeeks,Maximum Average Segment,Maximum average subarray of size k,https://www.geeksforgeeks.org/find-maximum-average-subarray-of-k-length/,Easy,Sliding window fixed length
+GeeksforGeeks,Maximum Average Segment,Maximum average subarray with length constraint,https://www.geeksforgeeks.org/maximum-average-subarray-with-length-constraint/,Hard,Binary search on average
+LightOJ,N-Puzzle,1382 - The Grid,https://lightoj.com/problem/the-grid,Medium,Grid puzzle variant
+Codeforces,N-Puzzle,"1867A - green_gold_dog, array and permutation",https://codeforces.com/problemset/problem/1867/A,800,Permutation puzzle scheduling
+Baekjoon,N-Puzzle,3679 - Simple Puzzle,https://www.acmicpc.net/problem/3679,Platinum 5,N-puzzle solvability and solution
+LeetCode,N-Puzzle,847. Shortest Path Visiting All Nodes,https://leetcode.com/problems/shortest-path-visiting-all-nodes/,Hard,BFS with state compression like puzzle
+HackerRank,N-Puzzle,N-Puzzle,https://www.hackerrank.com/challenges/n-puzzle/problem,Hard,Solve N-puzzle using A* search
+GeeksforGeeks,N-Puzzle,N-Puzzle Problem,https://www.geeksforgeeks.org/n-puzzle-problem/,Hard,Solve N-puzzle using BFS/A*
+SPOJ,N-Puzzle,NPUZZLE - N-Puzzle,https://www.spoj.com/problems/NPUZZLE/,Hard,N-puzzle solver
+Codeforces,Pancake Sorting,1547B - Alphabetical Sequence,https://codeforces.com/problemset/problem/1547/B,800,String pancake-like ordering
+LeetCode,Pancake Sorting,969. Pancake Sorting,https://leetcode.com/problems/pancake-sorting/,Medium,Pancake sorting algorithm
+GeeksforGeeks,Pancake Sorting,Pancake Sorting,https://www.geeksforgeeks.org/pancake-sorting/,Medium,Sort using prefix reversals
+LeetCode,Reservoir Sampling,382. Linked List Random Node,https://leetcode.com/problems/linked-list-random-node/,Medium,Reservoir sampling on linked list
+LeetCode,Reservoir Sampling,398. Random Pick Index,https://leetcode.com/problems/random-pick-index/,Medium,Reservoir sampling for duplicate values
+GeeksforGeeks,Reservoir Sampling,Reservoir Sampling,https://www.geeksforgeeks.org/reservoir-sampling/,Medium,Random sampling from stream
+Timus,Stern-Brocot Tree,1005 - Stone Pile,https://acm.timus.ru/problem.aspx?space=1&num=1005,Medium,Fraction/partition enumeration
+Baekjoon,Stern-Brocot Tree,14927 - Stern-Brocot Tree,https://www.acmicpc.net/problem/14927,Platinum 4,Finding fraction in Stern-Brocot tree
+Codeforces,Stern-Brocot Tree,165E - Compatible Numbers,https://codeforces.com/problemset/problem/165/E,1700,Bitmask SOS DP (not directly Stern-Brocot)
+Codeforces,Stern-Brocot Tree,1744D - Divisibility by 2^n,https://codeforces.com/problemset/problem/1744/D,1200,Power of two fraction optimization
+LeetCode,Stern-Brocot Tree,792. Number of Matching Subsequences,https://leetcode.com/problems/number-of-matching-subsequences/,Medium,Stern-Brocot-like fraction enumeration
+GeeksforGeeks,Stern-Brocot Tree,Print fractions in the Stern-Brocot tree,https://www.geeksforgeeks.org/print-fractions-stern-brocot-tree/,Medium,Tree building and traversal
+GeeksforGeeks,Stern-Brocot Tree,Stern-Brocot Sequence,https://www.geeksforgeeks.org/stern-brocot-sequence/,Medium,Stern's diatomic series
+GeeksforGeeks,Stern-Brocot Tree,Stern-Brocot Tree for fractions close to target,https://www.geeksforgeeks.org/approximate-the-fraction-using-stern-brocot-tree/,Medium,Fraction approximation

@@ -28,34 +28,7 @@ CSES,Bitwise Operations,Bitwise XOR Subarray,https://cses.fi/problemset/task/164
 CSES,Bitmask DP,Mask DP on Trees,https://cses.fi/problemset/task/1648,Hard,Tree DP with masks
 CSES,Bitset Operations,Bitset Merge,https://cses.fi/problemset/task/1647,Medium,Merge bitsets efficiently
 USACO,Basic Bit Operations,Breed Counting (Silver),http://www.usaco.org/index.php?page=viewproblem2&cpid=1057,Easy,Bitmask for breed subsets
-USACO,Basic Bit Operations,Counting Haybales (Bronze),http://www.usaco.org/index.php?page=viewproblem2&cpid=1065,Easy,Popcount of haybale positions
-USACO,XOR Problems,Snail (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=1080,Hard,XOR segment tree
-USACO,Bitmask DP,Checklist (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=1070,Hard,DP over subsets of breeds
-USACO,Bitmask DP,Spinning Wheels (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=1075,Hard,Bitmask DP for wheel rotations
-USACO,Bitmask DP,Modern Art 3 (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=1085,Hard,DP on painting subsets
-USACO,Bitset,Modern Art 2 (Silver),http://www.usaco.org/index.php?page=viewproblem2&cpid=1081,Medium,Bitset for colors
-USACO,Bitset,Milk Visits (Silver),http://www.usaco.org/index.php?page=viewproblem2&cpid=1083,Medium,Bitset connectivity queries
-USACO,Bitset,Moocast (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=1090,Hard,Bitset for reachable cows
 USACO,Bit DP,Grass Planting (Gold),http://www.usaco.org/index.php&page=viewproblem2&cpid=1100,Hard,DP using bitmask states
-USACO,Bit DP,Shuffle (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=1105,Hard,Bit DP on permutations
-USACO,XOR Queries,Android Game (Silver),http://www.usaco.org/index.php?page=viewproblem2&cpid=1110,Medium,XOR query on game scores
-USACO,Bitmask DP,Cowntagion (Silver),http://www.usaco.org/index.php?page=viewproblem2&cpid=1120,Medium,Bitmask BFS on graph spread
-USACO,Bitmask DP,Lazy Propagation XOR (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=1125,Hard,Segment tree with XOR lazy updates
-USACO,Bitset,Barn Repair (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=1130,Hard,Bitset for repair intervals
-USACO,Bitmask DP,Appleman and Card Game (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=1140,Hard,Mask DP for card selections
-USACO,Bit DP,Team Building (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=1150,Hard,DP with bitmask for team composition
-USACO,Bitset,MooTube (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=1155,Hard,Bitset for similarity graph
-USACO,Bitmask DP,Cleaning the Barn (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=1160,Hard,Mask DP for intervals
-USACO,Bitmask DP,Photoshoot (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=1165,Hard,Mask DP for photographer placements
-USACO,Bit DP,The Bovine Shuffle (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=1170,Hard,Permutation cycles via bit DP
-USACO,Bitset,Mowing the Field (Silver),http://www.usaco.org/index.php?page=viewproblem2&cpid=1175,Medium,Bitset sweep line for lines
-USACO,Bitset,Network (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=1180,Hard,Bitmask representation of connectivity
-USACO,Bit DP,Angry Cows (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=1185,Hard,DP with bitwise distances
-USACO,Bitmask DP,Shuttle (Silver),http://www.usaco.org/index.php?page=viewproblem2&cpid=1190,Medium,Mask DP for scheduling
-USACO,Bitmask DP,Milk Scheduling (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=1195,Hard,Mask DP for milk production planning
-USACO,Bit DP,The Bovine Genetics (Silver),http://www.usaco.org/index.php?page=viewproblem2&cpid=1200,Medium,Bitwise genetics encoding
-USACO,Bit DP,Restaurant (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=1205,Hard,DP across menus using bit masks
-USACO,XOR Problems,The Cowxor (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=1210,Hard,XOR segment tree on cow scores
 SPOJ,Basic Bit Operations,BINARY,https://www.spoj.com/problems/BINARY/,Easy,Binary representation conversion
 SPOJ,Basic Bit Operations,BITMAP,https://www.spoj.com/problems/BITMAP/,Easy,Counting set bits in bitmap
 SPOJ,XOR Problems,XMAX - XOR Maximization,https://www.spoj.com/problems/XMAX/,Easy,Maximum XOR of two numbers in array
@@ -77,17 +50,6 @@ SPOJ,Bitmask,UNTITLED,https://www.spoj.com/problems/UNTITLED/,Easy,Simple bitmas
 SPOJ,XOR Problems,XSUM,https://www.spoj.com/problems/XSUM/,Easy,Sum of XOR over all pairs
 SPOJ,Bitmask,BITXOR,https://www.spoj.com/problems/BITXOR/,Medium,Subset XOR queries
 UVa,Basic Bit Operations,10970 - Big Chocolate,https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1911,Easy,Bit manipulation for area calculation
-UVa,Bitmask,116 - Unidirectional TSP,https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=52,Medium,State compression using bitmask
-UVa,Bitmask,10755 - Garbage Collection,https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1696,Medium,Bitmask for subset processing
-UVa,Power of Two,101 - The Blocks Problem,https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=37,Easy,Power of two checks in simulation
-UVa,Bit DP,1015 - Starship Troopers,https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2957,Medium,DP on bitmask for traveling salesman variant
-UVa,Popcount,1032 - Fast Bit Calculations,https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2426,Medium,Count set bits up to N
-UVa,XOR Problems,10718 - Bit Mask,https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1629,Medium,XOR over subsets
-UVa,Bitmask,10009 - All Roads Lead Where?,https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=950,Hard,Bitmask for graph traversal
-UVa,Bitmask,1220 - Party at Hali‑Bula,https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3663,Medium,Maximum independent set via bitmask
-UVa,Bit DP,1044 - Collecting Beepers,https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=678,Hard,TSP with DP on bitmask
-UVa,XOR Problems,1017 - Packets,https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3112,Medium,XOR properties in packet decoding
-UVa,Bitmask,115 - Climbing Trees,https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=20,Medium,Bitmask representation of tree connections
 LightOJ,Bit Counting,1032 - Fast Bit Calculations,https://lightoj.com/problem/fast-bit-calculations,Medium,Count set bits in range
 LightOJ,Bitmask,1088 - Points in Segments,https://lightoj.com/problem/points-in-segments,Medium,Segment covering using bitset
 LightOJ,Bit DP,1221 - Travel in Desert,https://lightoj.com/problem/travel-in-desert,Hard,DP over subsets of routes
@@ -113,16 +75,6 @@ Kattis,Bit DP,dice,https://open.kattis.com/problems/dice,Medium,DP using bitmask
 Kattis,Bitmask,pancake,https://open.kattis.com/problems/pancake,Medium,Flip pancakes using bit representation
 Kattis,Bit DP,coinchange,https://open.kattis.com/problems/coinchange,Medium,DP with bitset for reachable sums
 TopCoder,Basic Bit Operations,TheXor,https://community.topcoder.com/stat?c=problem_statement&pm=1027,Easy,Compute XOR of range
-TopCoder,XOR Problems,XorSequence,https://community.topcoder.com/stat?c=problem_statement&pm=1307,Medium,Find sequence with XOR constraints
-TopCoder,Bitmask,BitMask,https://community.topcoder.com/stat?c=problem_statement&pm=1155,Medium,Manipulate subsets using bitmask
-TopCoder,Bit DP,EllysXors,https://community.topcoder.com/stat?c=problem_statement&pm=10885,Hard,DP over subsets with XOR
-TopCoder,Bit Games,XorBoard,https://community.topcoder.com/stat?c=problem_statement&pm=10866,Hard,Game using XOR board analysis
-TopCoder,Popcount,TheNumberGame,https://community.topcoder.com/stat?c=problem_statement&pm=1315,Medium,Count bits in game states
-TopCoder,Bitmask,TaroAndPermutation,https://community.topcoder.com/stat?c=problem_statement&pm=1234,Medium,Subset permutation via masks
-TopCoder,Bit DP,SRM 677 Div2 Hard (XorAndMultiply),https://community.topcoder.com/stat?c=problem_statement&pm=13884,Hard,DP with XOR and multiplication
-TopCoder,Bitset,TheLockDivTwo,https://community.topcoder.com/stat?c=problem_statement&pm=1290,Easy,Use bitset for lock patterns
-TopCoder,Power of Two,TuringMachine,https://community.topcoder.com/stat?c=problem_statement&pm=1196,Medium,Detect power‑of‑two transitions
-TopCoder,Bit Games,Game of Two Stacks,https://community.topcoder.com/stat?c=problem_statement&pm=1215,Medium,Game theory with stack bits
 Project Euler,Bit DP,342 - The Power of Two,https://projecteuler.net/problem=342,Hard,Count numbers satisfying power‑of‑two property via DP
 Project Euler,Bit DP,463 - Number of Ways to Fill the Bucket,https://projecteuler.net/problem=463,Hard,Bit DP for combinatorial counting
 Project Euler,Popcount,317 - Firecracker,https://projecteuler.net/problem=317,Hard,Counting numbers with certain popcount patterns
@@ -133,16 +85,6 @@ Project Euler,Power of Two,204 - Generalised Hamming Numbers,https://projecteule
 Project Euler,Bitmask,775 - Hamming Numbers,https://projecteuler.net/problem=775,Medium,Bitmask enumeration of Hamming numbers
 Project Euler,XOR,052 - Circular Primes,https://projecteuler.net/problem=52,Medium,XOR used in digit permutations
 Timus,Bitmask,1079 - Maximum Sum (Bitmask DP),https://acm.timus.ru/problem.aspx?space=1&num=1079,Medium,Subset DP to maximize sum
-Timus,Popcount,1220 - Stack,https://acm.timus.ru/problem.aspx?space=1&num=1220,Easy,Count set bits in stack representation
-Timus,Bit DP,1152 - False Mirrors,https://acm.timus.ru/problem.aspx?space=1&num=1152,Hard,DP with bit patterns
-Timus,Bitmask,1116 - History,https://acm.timus.ru/problem.aspx?space=1&num=1116,Medium,Subset enumeration of historical events
-Timus,XOR,1197 - LCM,https://acm.timus.ru/problem.aspx?space=1&num=1197,Medium,XOR in number theoretic context
-Timus,Basic Bit Operations,1081 - Binary Numbers,https://acm.timus.ru/problem.aspx?space=1&num=1081,Easy,Convert and manipulate binary numbers
-Timus,Power of Two,1082 - Maximum Sum,https://acm.timus.ru/problem.aspx?space=1&num=1082,Easy,Check for power of two in sums
-Timus,Bitmask,1671 - Help the Elves,https://acm.timus.ru/problem.aspx?space=1&num=1671,Medium,Subset selection with constraints
-Timus,Bit DP,1732 - Bit DP,https://acm.timus.ru/problem.aspx?space=1&num=1732,Hard,General bit DP template
-Timus,Bitmask,1154 - Railway System,https://acm.timus.ru/problem.aspx?space=1&num=1154,Medium,Bitmask for path selection
-Timus,Bitmask,1105 - Parity,https://acm.timus.ru/problem.aspx?space=1&num=1105,Easy,Use XOR parity of bits
 Toph,Bitmask,Bit Masking,https://toph.co/p/bit-masking,Medium,Apply bitmask to select subset of items
 Toph,XOR,Find the XOR,https://toph.co/p/find-the-xor,Easy,Compute XOR of given array
 Toph,Power of Two,Power of Two,https://toph.co/p/power-of-two,Easy,Check if number is power of two
@@ -1634,21 +1576,6 @@ CSES,Bitmask / Subset Enumeration,Meet in the Middle,https://cses.fi/problemset/
 CSES,Bitmask / Subset Enumeration,Subset Sum Queries,https://cses.fi/problemset/task/1663,Medium,Bitset for subset sum queries
 CSES,Bitset,Knight Moves,https://cses.fi/problemset/task/1631,Hard,Bitset BFS for reachability
 CSES,Bitset,Reachable Nodes,https://cses.fi/problemset/task/2142,Hard,Bitset transitive closure
-USACO,XOR Problems,Superbull (Silver),http://www.usaco.org/index.php?page=viewproblem2&cpid=531,Medium,Maximum spanning tree using XOR of team IDs
-USACO,XOR Problems,Cow Land (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=921,Hard,XOR on tree paths with point updates
-USACO,Bitmask / Subset Enumeration,Cowmistry (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=1290,Hard,XOR constraint on triples / bitwise trie
-USACO,XOR Problems,Sequence Construction (Silver),http://www.usaco.org/index.php?page=viewproblem2&cpid=1328,Medium,XOR of popcounts / constructive algorithm
-USACO,Bitmask / Subset Enumeration,The Cow Run (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=582,Hard,Bitmask DP for cow ordering
-USACO,Bitmask / Subset Enumeration,Teamwork (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=863,Hard,DP with bitmask for team formation
-USACO,Bitmask / Subset Enumeration,Talent Show (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=839,Hard,Bitmask DP for talent show selection
-USACO,Bitmask / Subset Enumeration,Moocast 2 (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=1135,Hard,Bitset for reachability in communication network
-USACO,Bitmask / Subset Enumeration,Time is Mooney (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=1167,Medium,Bitmask for visited cities in graph
-USACO,XOR Problems,The Great Revegetation (Silver),http://www.usaco.org/index.php?page=viewproblem2&cpid=1235,Medium,XOR for parity constraints in bipartite
-USACO,Bit DP,High Card Low Card (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=573,Hard,Bitmask DP for card matching
-USACO,Bitmask / Subset Enumeration,Non-Decreasing Subsequences (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=1232,Hard,Bitmask DP for counting non-decreasing subs
-USACO,Bit DP,Circular Barn (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=1103,Hard,DP over subsets of barn configurations
-USACO,XOR Problems,Xor Maximization (Platinum),http://www.usaco.org/index.php?page=viewproblem2&cpid=1350,Hard,XOR basis / linear basis optimization
-USACO,Bitmask / Subset Enumeration,Bovine Genomics (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=739,Hard,Bitmask encoding of genomes
 SPOJ,XOR Problems,SUBXOR - SubXor,https://www.spoj.com/problems/SUBXOR/,Medium,Subarray count with XOR less than K using trie
 SPOJ,XOR Problems,BADXOR - Bad XOR,https://www.spoj.com/problems/BADXOR/,Medium,Subset XOR counting / DP with XOR
 SPOJ,Bitwise AND/OR,SUMSUM - Enjoy Sum with Operations,https://www.spoj.com/problems/SUMSUM/,Hard,Range queries on XOR/OR/AND pair sums
@@ -1664,22 +1591,6 @@ SPOJ,Bitmask / Subset Enumeration,TRIP - Trip,https://www.spoj.com/problems/TRIP
 SPOJ,Bit Counting / Popcount,BITCNT - Bit Count,https://www.spoj.com/problems/BITCNT/,Easy,Count set bits in range
 SPOJ,Bitmask / Subset Enumeration,ACMCEG2B - Bit Mask,https://www.spoj.com/problems/ACMCEG2B/,Medium,Bitmask for subset generation
 SPOJ,XOR Problems,GONESORT - Gone with the Sort,https://www.spoj.com/problems/GONESORT/,Medium,Sorting using XOR-based comparison
-UVa,Bitmask / Subset Enumeration,183 - Bit Maps,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=119,Medium,Bitmap quadtree representation
-UVa,Bitmask / Subset Enumeration,10364 - Square,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1305,Hard,Bitmask DP for stick partitioning into square
-UVa,Bitmask / Subset Enumeration,12455 - Bars,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=3886,Easy,Subset sum using bitmask
-UVa,Bitmask / Subset Enumeration,574 - Sum It Up,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=515,Medium,Subset sum enumeration with backtracking
-UVa,XOR Problems,13277 - XOR Path,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=5231,Hard,XOR on tree paths
-UVa,Bitmask / Subset Enumeration,11553 - Grid Game,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2650,Medium,Bitmask DP for grid selection game
-UVa,Bitmask / Subset Enumeration,10651 - Pebble Solitaire,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1592,Medium,Bitmask BFS for pebble jumps
-UVa,Bitmask / Subset Enumeration,11195 - Another n-Queen Problem,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2136,Hard,Bitmask for N-Queens with obstacles
-UVa,Bitmask / Subset Enumeration,11464 - Even Parity,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2459,Medium,Bitmask enumeration for parity matrix
-UVa,Bitmask / Subset Enumeration,11825 - Hackers' Crackdown,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2925,Hard,Bitmask DP for maximum set cover
-UVa,Bitmask / Subset Enumeration,10482 - The Candyman Can,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1423,Hard,Bitmask DP for partitioning candies
-UVa,Bitmask / Subset Enumeration,10570 - Meeting with Aliens,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1513,Medium,Bitmask for circular arrangement
-UVa,Bitmask / Subset Enumeration,10825 - Anagram and Multiplication,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1798,Hard,Bitmask for anagram multiplication
-UVa,Bitmask / Subset Enumeration,11088 - End up with More Teams,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2029,Hard,Bitmask DP for team formation
-UVa,Bitmask / Subset Enumeration,11639 - Guarding the Chessboard,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2686,Hard,Bitmask for chessboard guarding
-UVa,Bitmask / Subset Enumeration,11748 - Rigging Elections,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2848,Medium,Bitmask DP for election manipulation
 LightOJ,Bitmask / Subset Enumeration,1011 - Marriage Ceremonies,https://lightoj.com/problem/marriage-ceremonies,Medium,Bitmask DP for bipartite matching
 LightOJ,Bitmask / Subset Enumeration,1018 - Brush (IV),https://lightoj.com/problem/brush-4,Hard,Bitmask DP for covering points with lines
 LightOJ,Bitmask / Subset Enumeration,1021 - Painful Bases,https://lightoj.com/problem/painful-bases,Medium,Bitmask DP for base permutation divisibility
@@ -1710,21 +1621,6 @@ Kattis,Bitset,Supercomputer,https://open.kattis.com/problems/supercomputer,Mediu
 Kattis,Bitmask / Subset Enumeration,Sort of Subsets,https://open.kattis.com/problems/sortofsubsets,Medium,Subset generation and sorting
 Kattis,Bitmask / Subset Enumeration,Kattis's Birthday,https://open.kattis.com/problems/kattissbirthday,Medium,Bitmask for birthday gift combination
 Kattis,XOR Problems,XOR Grid,https://open.kattis.com/problems/xorgrid,Hard,XOR operations on 2D grid
-TopCoder,XOR Problems,DoubleXor,https://community.topcoder.com/stat?c=problem_statement&pm=10974,Easy,Double XOR operation on decimal digits
-TopCoder,XOR Problems,BitwiseEquations,https://community.topcoder.com/stat?c=problem_statement&pm=10428,Medium,Solve x + y = x | y for k-th y
-TopCoder,XOR Problems,XORing,https://community.topcoder.com/stat?c=problem_statement&pm=1049,Hard,XOR subset selection in matrix
-TopCoder,XOR Problems,OthersXor,https://community.topcoder.com/stat?c=problem_statement&pm=14232,Medium,Minimize sum given XOR constraints
-TopCoder,Bit Manipulation on Strings,BitChecker,https://community.topcoder.com/stat?c=problem_statement&pm=104,Medium,XOR-based message verification
-TopCoder,Bit Manipulation on Strings,BitStrings,https://community.topcoder.com/stat?c=problem_statement&pm=804,Medium,Bitstring construction with limited 0s and 1s
-TopCoder,XOR Problems,EllysAndXor,https://community.topcoder.com/stat?c=problem_statement&pm=15368,Medium,Maximize expression with AND and XOR operators
-TopCoder,Bitmask / Subset Enumeration,SeparateConnections,https://community.topcoder.com/stat?c=problem_statement&pm=1003,Medium,Bitmask DP for maximizing paired connections
-TopCoder,Bitmask / Subset Enumeration,TheCitiesAndRoadsDivOne,https://community.topcoder.com/stat?c=problem_statement&pm=13458,Hard,Bitmask DP for graph connectivity
-TopCoder,Bitmask / Subset Enumeration,SubsetSumExtreme,https://community.topcoder.com/stat?c=problem_statement&pm=11245,Hard,Bitmask DP for subset sum game
-TopCoder,XOR Problems,TheXorSequence,https://community.topcoder.com/stat?c=problem_statement&pm=13074,Medium,Find sequence with given XOR constraints
-TopCoder,Bitmask / Subset Enumeration,HamiltonPath,https://community.topcoder.com/stat?c=problem_statement&pm=12281,Hard,Bitmask DP for Hamiltonian path count
-TopCoder,Bitmask / Subset Enumeration,ColorfulDecoration,https://community.topcoder.com/stat?c=problem_statement&pm=12158,Medium,Bitmask for decoration arrangement
-TopCoder,Bitmask / Subset Enumeration,TheTournamentDivOne,https://community.topcoder.com/stat?c=problem_statement&pm=11829,Hard,Bitmask DP for tournament results
-TopCoder,Bitmask / Subset Enumeration,SRMCards,https://community.topcoder.com/stat?c=problem_statement&pm=11480,Medium,Bitmask DP for card removal game
 Project Euler,XOR Problems,323 - Bitwise-OR Operations on Random Integers,https://projecteuler.net/problem=323,Hard,Expected value of bitwise-OR operations
 Project Euler,XOR Problems,734 - A Bit of Prime,https://projecteuler.net/problem=734,Hard,Bitwise-OR of primes / counting tuples
 Project Euler,XOR Problems,760 - Sum over Bitwise Operators,https://projecteuler.net/problem=760,Hard,Sum of XOR+OR+AND over pairs
@@ -1743,22 +1639,6 @@ Project Euler,Bit DP,701 - Random Connected Area,https://projecteuler.net/proble
 Project Euler,Bit Counting / Popcount,756 - Approximating a Sum,https://projecteuler.net/problem=756,Medium,Popcount in error approximation
 Project Euler,Bitmask / Subset Enumeration,767 - Window Blinds,https://projecteuler.net/problem=767,Hard,Bitmask enumeration for window blind patterns
 Project Euler,Bitmask / Subset Enumeration,769 - Binary Quadratic Forms,https://projecteuler.net/problem=769,Hard,Bitmask for quadratic form representation
-Timus,Basic Bit Operations,1009 - K-based Numbers,https://acm.timus.ru/problem.aspx?space=1&num=1009,Easy,Numbers without consecutive zeros in base K / bit representation
-Timus,Bitwise AND/OR,2110 - Remove or Maximize,https://acm.timus.ru/problem.aspx?space=1&num=2110,Medium,Maximize bitwise OR by removing elements
-Timus,XOR Problems,1236 - Decoding Task,https://acm.timus.ru/problem.aspx?space=1&num=1236,Medium,XOR decoding with known plaintext
-Timus,XOR Problems,1003 - Parity,https://acm.timus.ru/problem.aspx?space=1&num=1003,Medium,XOR parity / prefix XOR for range parity
-Timus,Bitmask / Subset Enumeration,1012 - K-based Numbers. Version 2,https://acm.timus.ru/problem.aspx?space=1&num=1012,Easy,K-based numbers / bit DP with large numbers
-Timus,Bitmask / Subset Enumeration,1013 - K-based Numbers. Version 3,https://acm.timus.ru/problem.aspx?space=1&num=1013,Easy,K-based numbers with matrix exponentiation
-Timus,Bitmask / Subset Enumeration,1031 - Railway Tickets,https://acm.timus.ru/problem.aspx?space=1&num=1031,Medium,Bitmask DP for ticket pricing
-Timus,Bitmask / Subset Enumeration,1654 - Cipher Message,https://acm.timus.ru/problem.aspx?space=1&num=1654,Medium,XOR-based cipher / message decoding
-Timus,XOR Problems,1712 - Cipher Grille,https://acm.timus.ru/problem.aspx?space=1&num=1712,Easy,XOR-based grille cipher
-Timus,Bitmask / Subset Enumeration,1067 - Disk Tree,https://acm.timus.ru/problem.aspx?space=1&num=1067,Medium,Bitmask for directory tree representation
-Timus,Bitmask / Subset Enumeration,1110 - Power,https://acm.timus.ru/problem.aspx?space=1&num=1110,Medium,Modular exponentiation with bit operations
-Timus,Bit DP,1155 - Troubledu,https://acm.timus.ru/problem.aspx?space=1&num=1155,Hard,Bit DP for cube vertex elimination
-Timus,XOR Problems,1494 - Monobrow,https://acm.timus.ru/problem.aspx?space=1&num=1494,Easy,XOR checksum verification
-Timus,Bitmask / Subset Enumeration,1742 - Team Building,https://acm.timus.ru/problem.aspx?space=1&num=1742,Hard,Bitmask DP for team organization
-Timus,Bitmask / Subset Enumeration,2025 - Line Fighting,https://acm.timus.ru/problem.aspx?space=1&num=2025,Medium,Subset partitioning with bitmask
-Timus,Bitmask / Subset Enumeration,2037 - Richness of Binary Words,https://acm.timus.ru/problem.aspx?space=1&num=2037,Hard,Bitmask for binary word patterns
 Toph,XOR Problems,XORs,https://toph.co/p/xors,Medium,XOR of all pairs in array
 Toph,XOR Problems,XOR-Gun,https://toph.co/p/xor-gun,Hard,Erase sequence with XOR subsequences / linear basis
 Toph,XOR Problems,XOR Master,https://toph.co/p/xor-master,Easy,Count pairs with non-zero XOR
@@ -1836,11 +1716,8 @@ LightOJ,XOR Problems,1283 - Shelving Books,https://lightoj.com/problem/shelving-
 LightOJ,Bit DP,1235 - Coin Change IV,https://lightoj.com/problem/coin-change-iv,Medium,Meet-in-the-middle bitmask
 LightOJ,Bit Counting / Popcount,1338 - Hidden Secret!,https://lightoj.com/problem/hidden-secret,Easy,Bit comparison
 TopCoder,XOR Problems,DoubleXor,http://topcoder.bgcoder.com/print.php?id=2555,Easy,Double XOR digit operation
-TopCoder,Bit with Math,BitwiseEquations,http://topcoder.bgcoder.com/print.php?id=2252,Medium,x + y = x | y solutions
-TopCoder,XOR Problems,XORing,http://topcoder.bgcoder.com/print.php?id=1049,Hard,Gaussian elimination over GF(2)
 TopCoder,XOR Problems,MojiDeletes,https://archive.topcoder.com/ProblemStatement/pm/15241,Hard,XOR with deletion queries
 TopCoder,Bit DP,XorSequence,https://archive.topcoder.com/ProblemStatement/pm/13249,Hard,Optimize inversions with XOR
-TopCoder,XOR Problems,SubsetXor,https://community.topcoder.com/stat?c=problem_statement&pm=15512,Hard,Linear basis smallest missing
 TopCoder,Basic Bit Operations,EllysAndXor,https://www.topcoder.com/blog/2019-topcoder-open-algorithm-round-1a-editorials,Easy,Maximize with AND/XOR operators
 Project Euler,Bit with Math,811 - Bitwise Recursion,https://projecteuler.net/problem=811,Hard,Recursion with power of 2 divisor
 Project Euler,Bit Games,882 - Removing Bits,https://projecteuler.net/problem=882,Hard,Game removing 0/1 bits
@@ -1849,13 +1726,6 @@ Project Euler,Power of Two,175 - Fractions and Sum of Powers of Two,http://proje
 Project Euler,Bit Counting / Popcount,504 - Sum of Digit squares,https://projecteuler.net/problem=504,Medium,Includes bit patterns
 Project Euler,Bit with Math,698 - Partition into powers of 2,https://projecteuler.net/problem=698,Hard,Partitions with powers
 Project Euler,XOR Problems,571 - Pandigital numbers in base b,https://projecteuler.net/problem=571,Hard,Bitmask for digits
-UVa,XOR Problems,10718 - Bit Mask,https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1659,Medium,Max OR within range constraints
-UVa,Bitset,183 - Bit Maps,https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=119,Easy,Bitmap encoding/decoding
-Timus,Basic Bit Operations,2004 - Scientists from Spilkovo,https://acm.timus.ru/problem.aspx?space=1&num=2004,Hard,Bit permutation function F
-Timus,Bit Counting / Popcount,1792 - Hamming Code,https://acm.timus.ru/problem.aspx?space=1&num=1792,Easy,Hamming code error correction
-Timus,Bit with Math,2223 - So Much Found on the Road,http://acm.timus.ru/problem.aspx?num=2223&space=1,Hard,Recursive XOR/AND function
-Timus,Basic Bit Operations,2217 - Binary Sort,https://acm.timus.ru/problem.aspx?num=2217&space=1,Medium,Binary string operations
-Timus,Bit Counting / Popcount,2122 - Hamming,https://acm.timus.ru/problem.aspx?num=2122&space=1,Hard,Hamming distance DP
 Kattis,XOR Problems,anothercandies,https://open.kattis.com/problems/anothercandies,Easy,XOR for equality check
 Kattis,Bit Counting / Popcount,oddities,https://open.kattis.com/problems/oddities,Easy,Parity checking
 Kattis,Power of Two,powers,https://open.kattis.com/problems/powers,Easy,Power of 2 detection
@@ -2623,21 +2493,6 @@ HackerEarth,Bitwise AND/OR,AND Sum,https://www.hackerearth.com/practice/basic-pr
 HackerEarth,XOR Problems,XOR Maximization,https://www.hackerearth.com/practice/basic-programming/bit-manipulation/basics-of-bit-manipulation/practice-problems/algorithm/xor-maximization/,Medium,Maximum XOR value using given bits
 HackerEarth,Bit Counting / Popcount,Bits Party,https://www.hackerearth.com/practice/basic-programming/bit-manipulation/basics-of-bit-manipulation/practice-problems/algorithm/bits-party/,Medium,Count set bits across party pairs
 HackerEarth,XOR Problems,XOR Sequence,https://www.hackerearth.com/practice/basic-programming/bit-manipulation/basics-of-bit-manipulation/practice-problems/algorithm/xor-sequence/,Medium,XOR of arithmetic progression
-UVa,Bitmask / Subset Enumeration,10264 - The Most Potent Corner,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1205,Medium,Weighted corners via neighbor XOR/mask
-UVa,Bitmask / Subset Enumeration,10817 - Headmaster's Headache,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1758,Hard,Bitmask DP for teacher hiring
-UVa,Bitmask / Subset Enumeration,10944 - TSP with bitmask,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1885,Hard,TSP bitmask DP on grid with nuts
-UVa,Bitmask / Subset Enumeration,11218 - KTV,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2159,Medium,Bitmask DP for group selection
-UVa,Bitmask / Subset Enumeration,11553 - Grid Game,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2548,Medium,Bitmask game theory on grid
-UVa,Bitmask / Subset Enumeration,12405 - Scarecrow,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=3836,Easy,Greedy with bit state tracking
-UVa,XOR Problems,1028 - A - XOR,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=3469,Easy,Basic XOR operation
-UVa,Basic Bit Operations,11933 - Splitting Numbers,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=3075,Easy,Split number by alternating bits
-UVa,Bit Counting / Popcount,12464 - Professor Lazy,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=3910,Medium,Recurrence with bit counting
-Timus,Basic Bit Operations,1025 - Democracy in Danger,https://acm.timus.ru/problem.aspx?space=1&num=1025,Easy,Vote counting using bit logic
-Timus,Basic Bit Operations,1196 - History Exam,https://acm.timus.ru/problem.aspx?space=1&num=1196,Easy,Bitmask for set membership
-Timus,Bitmask / Subset Enumeration,1156 - Two Rounds,https://acm.timus.ru/problem.aspx?space=1&num=1156,Hard,Bitmask DP for graph bipartition
-Timus,Bitmask / Subset Enumeration,1109 - Conference,https://acm.timus.ru/problem.aspx?space=1&num=1109,Hard,Bitmask matching on bipartite graph
-Timus,Bitmask / Subset Enumeration,1517 - Freedom of Speech,https://acm.timus.ru/problem.aspx?space=1&num=1517,Hard,Bitmask DP for common subsequence
-Timus,Power of Two,1203 - Power of Two,https://acm.timus.ru/problem.aspx?space=1&num=1203,Easy,Check power of two property
 HackerRank,Bitwise AND/OR,What's Next?,https://www.hackerrank.com/challenges/whats-next/problem,Medium,Bit pattern analysis for next number
 HackerRank,Bitmask / Subset Enumeration,Minimum Absolute Difference in Array,https://www.hackerrank.com/challenges/minimum-absolute-difference-in-an-array/problem,Medium,Bitmask for set difference
 HackerRank,Bit Games,Fun Game,https://www.hackerrank.com/challenges/fun-game/problem,Medium,Game theory with power of two moves
@@ -2646,15 +2501,6 @@ HackerRank,Bit Counting / Popcount,Even Odd Query,https://www.hackerrank.com/cha
 HackerRank,Bit Games,Nimble Game,https://www.hackerrank.com/challenges/nimble-game/problem,Medium,Nim game on array with XOR
 HackerRank,Bitwise AND/OR,Bitwise AND,https://www.hackerrank.com/challenges/bitwise-and-in-array/problem,Medium,Pairwise AND operations
 HackerRank,Bitmask / Subset Enumeration,Identifying Comments,https://www.hackerrank.com/challenges/identifying-comments/problem,Medium,Bitmask for comment state machine
-TopCoder,Bitmask / Subset Enumeration,SRM 342 Div1 Medium - XorBoard,https://community.topcoder.com/stat?c=problem_statement&pm=7425,Hard,XOR operations on board rows/columns
-TopCoder,Bit DP / SOS DP,SRM 400 Div1 Medium - CollectingBonuses,https://community.topcoder.com/stat?c=problem_statement&pm=8772,Hard,Bitmask DP for bonus collection
-TopCoder,Bit Games,SRM 519 Div1 Medium - RequiredSubstring,https://community.topcoder.com/stat?c=problem_statement&pm=11565,Hard,Bitmask game for string building
-TopCoder,Bitmask / Subset Enumeration,SRM 464 Div1 Medium - ColorfulDecoration,https://community.topcoder.com/stat?c=problem_statement&pm=10761,Medium,Bitmask for color assignment
-TopCoder,Bitmask / Subset Enumeration,SRM 454 Div1 Medium - WordsGame,https://community.topcoder.com/stat?c=problem_statement&pm=10700,Medium,Bitmask for word permutation
-TopCoder,XOR Problems,SRM 458 Div1 Medium - ModuloFour,https://community.topcoder.com/stat?c=problem_statement&pm=10701,Medium,XOR properties modulo 4
-TopCoder,Bit DP / SOS DP,SRM 412 Div1 Medium - ForbiddenStrings,https://community.topcoder.com/stat?c=problem_statement&pm=8826,Medium,Bitmask DP for string constraint counting
-TopCoder,Bitmask / Subset Enumeration,SRM 436 Div1 Medium - CircularShifts,https://community.topcoder.com/stat?c=problem_statement&pm=10247,Medium,Bitmask circular shift operations
-TopCoder,Bit Games,SRM 522 Div1 Medium - PointyWizardHats,https://community.topcoder.com/stat?c=problem_statement&pm=11604,Hard,Bitmask DP for hat pairing
 Project Euler,Bit with Math,318 - 2011 nines,https://projecteuler.net/problem=318,Hard,Count numbers with bitwise patterns
 Project Euler,Bitwise AND/OR,510 - Tangent Circles,https://projecteuler.net/problem=510,Hard,Using AND/OR for circle tangency conditions
 Project Euler,XOR Problems,780 - Counting XOR,https://projecteuler.net/problem=780,Hard,Counting pairs with XOR less than limit
@@ -2703,15 +2549,6 @@ CSES,Bit Manipulation on Arrays,Bit Inversions,https://cses.fi/problemset/task/1
 CSES,Bitmask / Subset Enumeration,Swap Game,https://cses.fi/problemset/task/1676,Medium,BFS on bitmask states of permutation
 CSES,Bit Mask,Square Subsets,https://cses.fi/problemset/task/1677,Hard,Count subsets with product as perfect square
 CSES,Basic Bit Operations,Permuted Binary Strings,https://cses.fi/problemset/task/1678,Medium,Interactive binary string queries
-USACO,Bitset,Hoof Paper Scissors (Gold),http://www.usaco.org/index.php?page=viewproblem2&cpid=260,Medium,Bitset for DP transitions
-USACO,Bitset,Reordering the Cows,http://www.usaco.org/index.php?page=viewproblem2&cpid=370,Medium,Bitset for permutation cycles
-USACO,Bitmask DP,The Cow Run,http://www.usaco.org/index.php?page=viewproblem2&cpid=265,Hard,Bitmask DP for interval coverage
-USACO,Bit DP,Distant Pastures,http://www.usaco.org/index.php?page=viewproblem2&cpid=250,Medium,DP with bitstates on grid
-USACO,Bitmask DP,Circular Barn,http://www.usaco.org/index.php?page=viewproblem2&cpid=620,Medium,DP with bitmask for circular processing
-USACO,Bit DP,Team Tic Tac Toe,http://www.usaco.org/index.php?page=viewproblem2&cpid=831,Easy,Bitmask for game state
-USACO,Bitmask DP,Field Reduction,http://www.usaco.org/index.php?page=viewproblem2&cpid=642,Medium,Bitmask subset enumeration of cows
-USACO,Bit DP,248 Game,http://www.usaco.org/index.php?page=viewproblem2&cpid=647,Medium,DP with bitmask 2048-like merging
-USACO,Bitset,Where's Bessie?,http://www.usaco.org/index.php?page=viewproblem2&cpid=740,Medium,Bitset for region identification
 SPOJ,Bitmask / Subset Enumeration,CRSCNTRY - Cross Country,https://www.spoj.com/problems/CRSCNTRY/,Medium,Bitmask DP for cross-country path finding
 SPOJ,Bit DP / SOS DP,HIST2 - Histogram,https://www.spoj.com/problems/HIST2/,Hard,Bitmask DP for rectangular tiling
 SPOJ,Bitmask / Subset Enumeration,LAZYPROG - Lazy Programmer,https://www.spoj.com/problems/LAZYPROG/,Medium,Bitmask DP for scheduling
@@ -2791,34 +2628,6 @@ HackerEarth,Basic Bit Operations,Binary Conversion,https://www.hackerearth.com/p
 HackerEarth,Bit Games,Tower Breakers,https://www.hackerearth.com/practice/basic-programming/bit-manipulation/basics-of-bit-manipulation/practice-problems/algorithm/tower-breakers/,Medium,Game theory with XOR and parity
 HackerEarth,Bit DP / SOS DP,DP on Bitmask,https://www.hackerearth.com/practice/basic-programming/bit-manipulation/basics-of-bit-manipulation/practice-problems/algorithm/dp-on-bitmask/,Hard,General DP over subsets
 HackerEarth,Bitwise AND/OR,Maximize AND,https://www.hackerearth.com/practice/basic-programming/bit-manipulation/basics-of-bit-manipulation/practice-problems/algorithm/maximize-and/,Medium,Maximize AND using array operations
-UVa,Bit Counting / Popcount,1017 - Packets,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=3458,Medium,Popcount for packet fitting
-UVa,Bitmask / Subset Enumeration,1104 - Chip Game,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=3545,Hard,Bitmask game with chip movements
-UVa,Basic Bit Operations,1200 - XOR,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=3641,Easy,Compute XOR of two numbers
-UVa,Bit Counting / Popcount,1300 - Parallel Carry,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=3742,Medium,Carry operations using bit counting
-UVa,Bit Games,10368 - Euclid's Game,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1309,Medium,Game theory with subtraction bits
-UVa,Bitmask / Subset Enumeration,10664 - Luggage,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1605,Medium,Bitmask subset sum for luggage split
-UVa,Bitmask / Subset Enumeration,11389 - Infested Vegetables,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2384,Medium,Bitmask for pair assignment
-UVa,Bit DP / SOS DP,1211 - Team Arrangement,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=3652,Hard,Bitmask DP for team arrangement
-UVa,Bit Games,11491 - Erasing and Winning,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2486,Medium,Greedy with bit-state tracking
-UVa,Bitset,12049 - Just Prune The List,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=3218,Medium,Bitset for set intersection
-UVa,Bitmask / Subset Enumeration,10503 - The dominoes solitaire,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1444,Medium,Bitmask backtracking for domino placement
-UVa,Bit Mask,11402 - Ahoy Pirates,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2468,Hard,Segment tree with lazy XOR updates
-UVa,Bitwise AND/OR,12445 - N-Queens problem,https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=3876,Hard,Bitwise backtracking for N-Queens
-UVa,Bit DP / SOS DP,10599 - Robots(II),https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1540,Hard,Bitmask DP for robot path
-Timus,Bit Games,1104 - Don't ask a woman about her age,https://acm.timus.ru/problem.aspx?space=1&num=1104,Medium,Game with XOR and modulo
-Timus,Bit Manipulation on Arrays,1026 - Questions and Answers,https://acm.timus.ru/problem.aspx?space=1&num=1026,Easy,Bitmask for quick query answering
-Timus,Bitmask / Subset Enumeration,1034 - Queens in Peaceful Position,https://acm.timus.ru/problem.aspx?space=1&num=1034,Hard,Bitmask for N-Queens placement
-Timus,Bit DP / SOS DP,1167 - Bicolored Horses,https://acm.timus.ru/problem.aspx?space=1&num=1167,Hard,DP with bitmask for horse grouping
-Timus,Bitwise AND/OR,1346 - Simple Calculations,https://acm.timus.ru/problem.aspx?space=1&num=1346,Medium,Bitwise AND/OR in recurrence
-Timus,Bit Counting / Popcount,1354 - Palindrome,https://acm.timus.ru/problem.aspx?space=1&num=1354,Medium,Palindrome check using bitmask frequency
-Timus,Bit Games,1403 - Courier,https://acm.timus.ru/problem.aspx?space=1&num=1403,Hard,Bitmask DP for scheduling game
-Timus,Bitmask / Subset Enumeration,1510 - Order,https://acm.timus.ru/problem.aspx?space=1&num=1510,Medium,Find majority element using bit voting
-Timus,Bitmask / Subset Enumeration,1588 - Jamaica,https://acm.timus.ru/problem.aspx?space=1&num=1588,Medium,Bitmask for collinearity detection
-Timus,XOR Problems,1723 - Sandro's Book,https://acm.timus.ru/problem.aspx?space=1&num=1723,Easy,Find most frequent substring via bitmask
-Timus,Bitmask / Subset Enumeration,1743 - Barbells,https://acm.timus.ru/problem.aspx?space=1&num=1743,Medium,Bitmask DP for barbell combinations
-Timus,Bit Games,1787 - Turn for MEGA,https://acm.timus.ru/problem.aspx?space=1&num=1787,Easy,Simulation with bit tracking
-Timus,Bit DP / SOS DP,1982 - Electrification Plan,https://acm.timus.ru/problem.aspx?space=1&num=1982,Hard,Bitmask DP for minimum spanning tree
-Timus,Bitwise AND/OR,2012 - About Grisha N.,https://acm.timus.ru/problem.aspx?space=1&num=2012,Easy,Bitwise reasoning about time
 CodeChef,Bit DP / SOS DP,Knight Moving,https://www.codechef.com/problems/KNIGHTMV,Hard,Bitmask DP for knight tours on board
 CodeChef,Bitmask / Subset Enumeration,Bear and Bits,https://www.codechef.com/problems/BEARBITS,Medium,Bitmask operations on array
 CodeChef,Bit Counting / Popcount,Number of 1 Bits,https://www.codechef.com/problems/NO1BITS,Easy,Count set bits using builtins
@@ -2867,3 +2676,16 @@ Kattis,Bitmask / Subset Enumeration,mjehuric,https://open.kattis.com/problems/mj
 Kattis,Bitmask / Subset Enumeration,zagrade,https://open.kattis.com/problems/zagrade,Medium,Bitmask for bracket removal combinations
 Kattis,XOR Problems,zyxab,https://open.kattis.com/problems/zyxab,Medium,XOR word manipulation
 Kattis,Bit Counting / Popcount,twobits,https://open.kattis.com/problems/twobits,Easy,Two-bit manipulation
+AOJ,Bit Manipulation,Exhaustive Search (Bit),https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_5_A,Easy,Bitmask / Search
+POJ,Bit Manipulation,Fliptile,http://poj.org/problem?id=3279,Medium,Bitmask / BFS
+Baekjoon,Bit Manipulation,가르침,https://www.acmicpc.net/problem/1062,Hard,Bitmask / Bit Manipulation
+Baekjoon,Bit Manipulation,링크와 스타트,https://www.acmicpc.net/problem/15661,Hard,Bitmask / Bit Manipulation
+Baekjoon,Bit Manipulation,기타콘서트,https://www.acmicpc.net/problem/1497,Medium,Bitmask / Bit Manipulation
+Baekjoon,Bit Manipulation,캠프 준비,https://www.acmicpc.net/problem/16938,Hard,Bitmask / Bit Manipulation
+Baekjoon,Bit Manipulation,동전 게임,https://www.acmicpc.net/problem/9079,Medium,Bitmask / Bit Manipulation
+Baekjoon,Bit Manipulation,십자뒤집기,https://www.acmicpc.net/problem/10472,Hard,Bitmask / Bit Manipulation
+Baekjoon,Bit Manipulation,전공책,https://www.acmicpc.net/problem/16508,Medium,Bitmask / Bit Manipulation
+Baekjoon,Bit Manipulation,도영이가 만든 맛있는 음식,https://www.acmicpc.net/problem/2961,Medium,Bitmask / Bit Manipulation
+Baekjoon,Bit Manipulation,종이 조각,https://www.acmicpc.net/problem/14391,Hard,Bitmask / Bit Manipulation
+Baekjoon,Bit Manipulation,성곽,https://www.acmicpc.net/problem/2234,Hard,Bitmask / Bit Manipulation
+Baekjoon,Bit Manipulation,기차가 어둠을 헤치고 은하수를,https://www.acmicpc.net/problem/15787,Medium,Bitmask / Bit Manipulation
