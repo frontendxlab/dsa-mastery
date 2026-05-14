@@ -234,5 +234,221 @@ return result;`,
         },
       ],
     },
+    {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 5,
+      title: 'Subsets',
+      url: 'https://leetcode.com/problems/subsets/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Every call is a valid result — collect on every node',
+          explanation: `Unlike combinations where we collect only at leaves (target reached), for subsets every partial state is a valid result. So push current at the start of each call before looping. Use start index to avoid going backward (no duplicates).`,
+          code: `var subsets = function(nums) {
+    const result = [];
+    const backtrack = (start, current) => {
+        result.push([...current]);  // every node = valid subset
+        for (let i = start; i < nums.length; i++) {
+            current.push(nums[i]);
+            backtrack(i + 1, current);
+            current.pop();
+        }
+    };
+    backtrack(0, []);
+    return result;
+};`,
+          lang: 'javascript',
+        },
+        {
+          label: 'Intuition 2: Bit manipulation — each subset = a bitmask',
+          explanation: `n elements → 2^n subsets. Iterate all 2^n bitmasks. For mask i, bit j set = include nums[j]. Clean O(n·2^n) iterative solution.`,
+          code: `var subsets = function(nums) {
+    const n = nums.length, result = [];
+    for (let mask = 0; mask < (1 << n); mask++) {
+        const sub = [];
+        for (let j = 0; j < n; j++)
+            if (mask >> j & 1) sub.push(nums[j]);
+        result.push(sub);
+    }
+    return result;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 6,
+      title: 'Subsets II (contains duplicates)',
+      url: 'https://leetcode.com/problems/subsets-ii/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Sort + skip same value at same recursion level',
+          explanation: `Same as Subsets but with duplicate elements → duplicate subsets. Fix: sort, then in the loop skip candidates[i] if it equals candidates[i-1] AND i > start (meaning we're at the same recursion depth, not first pick).`,
+          code: `var subsetsWithDup = function(nums) {
+    nums.sort((a, b) => a - b);
+    const result = [];
+    const backtrack = (start, current) => {
+        result.push([...current]);
+        for (let i = start; i < nums.length; i++) {
+            if (i > start && nums[i] === nums[i-1]) continue;  // skip dup at same level
+            current.push(nums[i]);
+            backtrack(i + 1, current);
+            current.pop();
+        }
+    };
+    backtrack(0, []);
+    return result;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 7,
+      title: 'Word Search',
+      url: 'https://leetcode.com/problems/word-search/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: DFS from each cell, mark visited in-place',
+          explanation: `For each cell matching word[0], do DFS. At each step, check bounds + visited + correct character. Mark cell as visited by temporarily mutating (set to '#'), then restore on backtrack. This avoids a separate visited array.`,
+          code: `var exist = function(board, word) {
+    const m = board.length, n = board[0].length;
+    const dfs = (r, c, idx) => {
+        if (idx === word.length) return true;
+        if (r < 0 || r >= m || c < 0 || c >= n || board[r][c] !== word[idx]) return false;
+        const tmp = board[r][c];
+        board[r][c] = '#';  // mark visited
+        const found = dfs(r+1,c,idx+1) || dfs(r-1,c,idx+1) || dfs(r,c+1,idx+1) || dfs(r,c-1,idx+1);
+        board[r][c] = tmp;  // restore (backtrack)
+        return found;
+    };
+    for (let r = 0; r < m; r++)
+        for (let c = 0; c < n; c++)
+            if (dfs(r, c, 0)) return true;
+    return false;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 8,
+      title: 'Palindrome Partitioning',
+      url: 'https://leetcode.com/problems/palindrome-partitioning/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Backtrack with isPalindrome check as pruning',
+          explanation: `At each position, try every possible end index for the next substring. If s[start..i] is a palindrome, take it and recurse from i+1. If start reaches end of string, we have a complete valid partition. The pruning: skip any substring that isn't a palindrome.`,
+          code: `var partition = function(s) {
+    const result = [];
+    const isPalin = (l, r) => {
+        while (l < r) if (s[l++] !== s[r--]) return false;
+        return true;
+    };
+    const backtrack = (start, current) => {
+        if (start === s.length) { result.push([...current]); return; }
+        for (let end = start; end < s.length; end++) {
+            if (!isPalin(start, end)) continue;  // pruning: skip non-palindromes
+            current.push(s.slice(start, end + 1));
+            backtrack(end + 1, current);
+            current.pop();
+        }
+    };
+    backtrack(0, []);
+    return result;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 9,
+      title: 'Sudoku Solver',
+      url: 'https://leetcode.com/problems/sudoku-solver/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: Fill empty cells one by one, check 3 constraints',
+          explanation: `Find next empty cell. Try digits 1-9. Valid if digit not in: same row, same column, same 3x3 box. If valid, place and recurse. If recursion returns true, done. If all 9 digits fail, backtrack (set cell back to '.'). 3x3 box index = Math.floor(r/3)*3 + Math.floor(c/3).`,
+          code: `var solveSudoku = function(board) {
+    const isValid = (r, c, ch) => {
+        const box = Math.floor(r/3)*3 + Math.floor(c/3);
+        for (let i = 0; i < 9; i++) {
+            if (board[r][i] === ch) return false;          // row
+            if (board[i][c] === ch) return false;          // col
+            const br = Math.floor(box/3)*3 + Math.floor(i/3);
+            const bc = (box%3)*3 + (i%3);
+            if (board[br][bc] === ch) return false;        // box
+        }
+        return true;
+    };
+    const solve = () => {
+        for (let r = 0; r < 9; r++)
+            for (let c = 0; c < 9; c++) {
+                if (board[r][c] !== '.') continue;
+                for (let d = 1; d <= 9; d++) {
+                    const ch = String(d);
+                    if (!isValid(r, c, ch)) continue;
+                    board[r][c] = ch;
+                    if (solve()) return true;
+                    board[r][c] = '.';
+                }
+                return false;  // no digit worked → backtrack
+            }
+        return true;  // all cells filled
+    };
+    solve();
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 10,
+      title: 'Letter Combinations of a Phone Number',
+      url: 'https://leetcode.com/problems/letter-combinations-of-a-phone-number/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Backtrack through digits, pick letter at each level',
+          explanation: `Classic backtracking on a fixed-depth decision tree. At level i (processing digit i), try every letter mapped to that digit. When current.length === digits.length, we have a complete combination. No pruning needed — all paths are valid.`,
+          code: `var letterCombinations = function(digits) {
+    if (!digits.length) return [];
+    const map = {'2':'abc','3':'def','4':'ghi','5':'jkl','6':'mno','7':'pqrs','8':'tuv','9':'wxyz'};
+    const result = [];
+    const backtrack = (idx, current) => {
+        if (idx === digits.length) { result.push(current.join('')); return; }
+        for (const ch of map[digits[idx]]) {
+            current.push(ch);
+            backtrack(idx + 1, current);
+            current.pop();
+        }
+    };
+    backtrack(0, []);
+    return result;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'callout',
+      icon: '🧠',
+      color: 'green',
+      content: `**Backtracking pruning cheat sheet:**\n- **Combinations**: sort first, then \`if (i > start && nums[i] === nums[i-1]) continue\` to skip dups\n- **Permutations with dups**: sort first, then \`if (i > 0 && nums[i] === nums[i-1] && !used[i-1]) continue\`\n- **Combination sum**: \`if (candidates[i] > remaining) break\` (sorted input)\n- **N-Queens**: 3 sets (col, diag1, diag2) for O(1) conflict check\n- **Grid DFS**: mutate board in place (set to '#') instead of a visited array\n- **Palindrome partition**: precompute isPalin[i][j] DP to make pruning O(1)`,
+    },
   ],
 }

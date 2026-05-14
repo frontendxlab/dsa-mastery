@@ -188,10 +188,142 @@ function polygonArea(points) {
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 4,
+      title: 'K Closest Points to Origin',
+      url: 'https://leetcode.com/problems/k-closest-points-to-origin/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Sort by squared distance — O(n log n)',
+          explanation: `Distance = sqrt(x²+y²). Comparing distances → compare x²+y² (avoid sqrt for exact integer comparison). Sort all points, take first k.`,
+          code: `var kClosest = function(points, k) {
+    return points
+        .sort((a, b) => (a[0]**2 + a[1]**2) - (b[0]**2 + b[1]**2))
+        .slice(0, k);
+};`,
+          lang: 'javascript',
+        },
+        {
+          label: 'Intuition 2: Max-heap of size k — O(n log k)',
+          explanation: `Maintain a max-heap of size k. For each point, if its distance is less than the heap's max, replace the max. Heap never grows beyond k.`,
+          code: `var kClosest = function(points, k) {
+    // Using sort is fine for LC; heap is better for streaming/very large n
+    // Quickselect gives O(n) average — partition around a pivot distance
+    const dist = p => p[0]**2 + p[1]**2;
+    const quickselect = (lo, hi) => {
+        const pivot = dist(points[hi]);
+        let i = lo;
+        for (let j = lo; j < hi; j++)
+            if (dist(points[j]) <= pivot) [points[i], points[j]] = [points[j], points[i++]];
+        [points[i], points[hi]] = [points[hi], points[i]];
+        if (i === k - 1) return;
+        if (i < k - 1) quickselect(i + 1, hi);
+        else quickselect(lo, i - 1);
+    };
+    quickselect(0, points.length - 1);
+    return points.slice(0, k);
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 5,
+      title: 'Rectangle Overlap',
+      url: 'https://leetcode.com/problems/rectangle-overlap/',
+      difficulty: 'Easy',
+      intuitions: [
+        {
+          label: 'Intuition 1: Check non-overlap conditions and negate',
+          explanation: `Two rectangles DON'T overlap if: one is fully to the left, right, above, or below the other. Negate all four conditions for overlap. Also check they have positive area (not degenerate line/point).`,
+          code: `var isRectangleOverlap = function(rec1, rec2) {
+    // rec = [x1, y1, x2, y2] (bottom-left to top-right)
+    const [x1,y1,x2,y2] = rec1, [x3,y3,x4,y4] = rec2;
+    // No overlap if: right of r1 <= left of r2, or left of r1 >= right of r2, etc.
+    return !(x2 <= x3 || x4 <= x1 || y2 <= y3 || y4 <= y1);
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 6,
+      title: 'Check If Two String Arrays are Equivalent',
+      url: 'https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/',
+      difficulty: 'Easy',
+      intuitions: [
+        {
+          label: 'Intuition 1: Concatenate and compare',
+          explanation: `Join all strings in each array and compare. O(n) time and space.`,
+          code: `var arrayStringsAreEqual = function(w1, w2) {
+    return w1.join('') === w2.join('');
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 7,
+      title: 'Check If It Is a Straight Line',
+      url: 'https://leetcode.com/problems/check-if-it-is-a-straight-line/',
+      difficulty: 'Easy',
+      intuitions: [
+        {
+          label: 'Intuition 1: Cross product of consecutive vectors must be 0',
+          explanation: `For all points to be collinear, every triple (p0, p1, pi) must have cross product 0. Use cross product with integer arithmetic to avoid floating point: (p1-p0) × (pi-p0) = (dx1)(dy2) - (dy1)(dx2).`,
+          code: `var checkStraightLine = function(coords) {
+    const [x0,y0] = coords[0], [x1,y1] = coords[1];
+    const dx = x1-x0, dy = y1-y0;
+    for (let i = 2; i < coords.length; i++) {
+        const [x,y] = coords[i];
+        // cross product of (dx,dy) and (x-x0, y-y0)
+        if (dx*(y-y0) - dy*(x-x0) !== 0) return false;
+    }
+    return true;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 8,
+      title: 'Largest Triangle Area',
+      url: 'https://leetcode.com/problems/largest-triangle-area/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: O(n³) — try all triples, use shoelace formula for area',
+          explanation: `With n ≤ 50, O(n³) is fine. For every triple of points, compute triangle area using the cross product / shoelace formula: area = |cross(A,B,C)| / 2. Track maximum.`,
+          code: `var largestTriangleArea = function(points) {
+    const area = (a, b, c) =>
+        Math.abs((b[0]-a[0])*(c[1]-a[1]) - (c[0]-a[0])*(b[1]-a[1])) / 2;
+    let max = 0;
+    const n = points.length;
+    for (let i = 0; i < n; i++)
+        for (let j = i+1; j < n; j++)
+            for (let k = j+1; k < n; k++)
+                max = Math.max(max, area(points[i], points[j], points[k]));
+    return max;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '💡',
       color: 'amber',
-      content: `**Floating point pitfalls**: Geometry problems with floating point coordinates often fail due to precision. Strategies:\n1. Use integer arithmetic where possible (scale and avoid division)\n2. Use ε comparisons: \`Math.abs(a - b) < 1e-9\` instead of \`a === b\`\n3. GCD normalization for slopes eliminates float issues entirely`,
+      content: `**Floating point pitfalls**: Geometry problems with floating point coordinates often fail due to precision. Strategies:\n1. Use integer arithmetic where possible (scale and avoid division)\n2. Use ε comparisons: \`Math.abs(a - b) < 1e-9\` instead of \`a === b\`\n3. GCD normalization for slopes eliminates float issues entirely\n\n**Key formulas:**\n- Cross product (orientation): (b.x-a.x)*(c.y-a.y) - (b.y-a.y)*(c.x-a.x)\n- Triangle area: |cross product| / 2\n- Polygon area (shoelace): |Σ(x_i * y_{i+1} - x_{i+1} * y_i)| / 2\n- Distance²: dx*dx + dy*dy (avoid sqrt when just comparing)`,
     },
   ],
 }

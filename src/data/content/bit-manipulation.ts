@@ -203,20 +203,103 @@ while (n) { n &= (n - 1); count++; }  // each step removes lowest set bit
     {
       type: 'problem',
       num: 7,
-      title: 'Sum of Two Integers (no + or -)',
-      url: 'https://leetcode.com/problems/sum-of-two-integers/',
+      title: 'Single Number II (appears 3 times)',
+      url: 'https://leetcode.com/problems/single-number-ii/',
       difficulty: 'Medium',
       intuitions: [
         {
-          label: 'Intuition 1: XOR = sum without carry; AND<<1 = carry',
-          explanation: 'a XOR b gives bits that differ (partial sum with no carry). (a AND b) << 1 gives the carry bits. Repeat until carry is 0.',
-          code: `var getSum = function(a, b) {
-    while (b !== 0) {
-        const carry = (a & b) << 1;  // carry bits shifted left
-        a = a ^ b;                    // sum without carry
-        b = carry;
+          label: 'Intuition 1: O(32n) — count bits per position mod 3',
+          explanation: `For each bit position (0..31), count how many numbers have that bit set. If count % 3 ≠ 0, the single number has that bit set. Works because every number appearing 3 times contributes 3 to each bit position count.`,
+          code: `var singleNumber = function(nums) {
+    let result = 0;
+    for (let bit = 0; bit < 32; bit++) {
+        let count = 0;
+        for (const n of nums) count += (n >> bit) & 1;
+        if (count % 3 !== 0) result |= (1 << bit);
     }
-    return a;
+    return result;
+};`,
+          lang: 'javascript',
+        },
+        {
+          label: 'Intuition 2: Bit circuit — ones and twos registers',
+          explanation: `Maintain two bitmasks: ones = bits seen once so far, twos = bits seen twice. On each number: twos |= ones & n; ones ^= n; then clear bits seen 3 times: mask = ~(ones & twos); ones &= mask; twos &= mask.`,
+          code: `var singleNumber = function(nums) {
+    let ones = 0, twos = 0;
+    for (const n of nums) {
+        ones = (ones ^ n) & ~twos;
+        twos = (twos ^ n) & ~ones;
+    }
+    return ones;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 8,
+      title: 'Find the Duplicate Number',
+      url: 'https://leetcode.com/problems/find-the-duplicate-number/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Bit count comparison — O(n log n)',
+          explanation: `For each bit position, count how many numbers in nums have that bit set vs. how many numbers in 1..n have that bit set. If nums has MORE, the duplicate contributes that bit. Build the duplicate number bit by bit.`,
+          code: `var findDuplicate = function(nums) {
+    const n = nums.length - 1;
+    let dup = 0;
+    for (let bit = 0; bit < 32; bit++) {
+        let countNums = 0, countRange = 0;
+        for (let i = 0; i <= n; i++) {
+            if ((nums[i] >> bit) & 1) countNums++;
+            if ((i >> bit) & 1) countRange++;  // i represents 1..n range
+        }
+        if (countNums > countRange) dup |= (1 << bit);
+    }
+    return dup;
+};`,
+          lang: 'javascript',
+        },
+        {
+          label: 'Intuition 2: Floyd\'s cycle detection — O(n) time, O(1) space',
+          explanation: `Treat array as a linked list where nums[i] is the "next" pointer from i. Since there's a duplicate, two indices point to the same next node → cycle. Find cycle entry with slow/fast pointers.`,
+          code: `var findDuplicate = function(nums) {
+    let slow = nums[0], fast = nums[0];
+    do { slow = nums[slow]; fast = nums[nums[fast]]; } while (slow !== fast);
+    slow = nums[0];
+    while (slow !== fast) { slow = nums[slow]; fast = nums[fast]; }
+    return slow;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 9,
+      title: 'Maximum XOR of Two Numbers in an Array',
+      url: 'https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: O(n²) brute force — try all pairs',
+          explanation: `XOR every pair, track maximum. O(n²) — too slow for n=3×10^4.`,
+        },
+        {
+          label: 'Intuition 2: Greedy bit-by-bit with prefix set — O(32n)',
+          explanation: `Build the answer greedily from MSB to LSB. At bit i, we want the current bit of XOR to be 1. Compute all prefixes (upper i bits) of array numbers. For each prefix p, check if p XOR (answer_so_far | (1<<i)) exists in the prefix set. If yes, we can set this bit.`,
+          code: `var findMaximumXOR = function(nums) {
+    let max = 0, mask = 0;
+    for (let i = 31; i >= 0; i--) {
+        mask |= (1 << i);
+        const prefixes = new Set(nums.map(n => n & mask));
+        const candidate = max | (1 << i);
+        for (const p of prefixes) {
+            if (prefixes.has(p ^ candidate)) { max = candidate; break; }
+        }
+    }
+    return max;
 };`,
           lang: 'javascript',
         },
@@ -226,7 +309,7 @@ while (n) { n &= (n - 1); count++; }  // each step removes lowest set bit
       type: 'callout',
       icon: '🧠',
       color: 'teal',
-      content: `**Bit trick cheat sheet:**\n- Clear lowest set bit: \`x & (x-1)\`\n- Isolate lowest set bit: \`x & (-x)\`\n- Check power of 2: \`x > 0 && (x & (x-1)) === 0\`\n- Count set bits: Brian Kernighan's loop — \`while(x) { count++; x &= x-1; }\`\n- XOR cancelation: \`a ^ a = 0\` and \`a ^ 0 = a\`\n- Swap without temp: \`a ^= b; b ^= a; a ^= b;\``,
+      content: `**Bit trick cheat sheet:**\n- Clear lowest set bit: \`x & (x-1)\`\n- Isolate lowest set bit: \`x & (-x)\`\n- Check power of 2: \`x > 0 && (x & (x-1)) === 0\`\n- Count set bits: Brian Kernighan's loop — \`while(x) { count++; x &= x-1; }\`\n- XOR cancelation: \`a ^ a = 0\` and \`a ^ 0 = a\`\n- Swap without temp: \`a ^= b; b ^= a; a ^= b;\`\n- Bitmask DP: enumerate subsets of mask with \`for(sub=mask; sub>0; sub=(sub-1)&mask)\``,
     },
   ],
 }

@@ -18,12 +18,12 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part III — Hashing & Auxiliary Structures',
     color: 'var(--nb-purple)',
-    chapters: ['heap', 'trie', 'monotonic-stack'],
+    chapters: ['heap', 'trie', 'monotonic-stack', 'hashmap-patterns', 'stack-queue'],
   },
   {
     part: 'Part IV — Core Algorithms',
     color: 'var(--nb-green)',
-    chapters: ['dynamic-programming', 'backtracking', 'greedy', 'graph'],
+    chapters: ['dynamic-programming', 'backtracking', 'greedy', 'graph', 'shortest-path'],
   },
   {
     part: 'Part V — Strings, Sequences & Grid',
@@ -124,12 +124,6 @@ function LearnPage() {
       </div>
     </main>
   )
-}
-
-interface ChapterCardProps {
-  article: ReturnType<typeof articles[0]['sections']['map']> extends never ? never : (typeof articles)[0]
-  num: number
-  accentColor: string
 }
 
 function ChapterCard({ article, num, accentColor }: { article: (typeof articles)[0]; num: number; accentColor: string }) {

@@ -226,10 +226,133 @@ export const greedyArticle: Article = {
       ],
     },
     {
+      type: 'problem',
+      num: 7,
+      title: 'Jump Game II (minimum jumps)',
+      url: 'https://leetcode.com/problems/jump-game-ii/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: O(n) greedy — BFS levels',
+          explanation: `Think of it as BFS where each "level" = one jump. Track the farthest reachable position from the current level. When you exhaust the current level's range, you must jump — that counts as one jump. The farthest reachable from the current level becomes the new level boundary.`,
+          code: `var jump = function(nums) {
+    let jumps = 0, currEnd = 0, farthest = 0;
+    for (let i = 0; i < nums.length - 1; i++) {
+        farthest = Math.max(farthest, i + nums[i]);
+        if (i === currEnd) {        // reached end of current jump range
+            jumps++;
+            currEnd = farthest;     // jump as far as possible
+        }
+    }
+    return jumps;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 8,
+      title: 'Partition Labels',
+      url: 'https://leetcode.com/problems/partition-labels/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Precompute last occurrence, then greedy merge',
+          explanation: `For each character, find its last occurrence in the string. Then scan left→right, tracking the farthest last occurrence seen so far. When current index reaches that farthest position, we've found a partition — all characters from start to here only appear within this segment.`,
+          code: `var partitionLabels = function(s) {
+    const last = {};
+    for (let i = 0; i < s.length; i++) last[s[i]] = i;
+    const result = [];
+    let start = 0, end = 0;
+    for (let i = 0; i < s.length; i++) {
+        end = Math.max(end, last[s[i]]);
+        if (i === end) {
+            result.push(end - start + 1);
+            start = end + 1;
+        }
+    }
+    return result;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 9,
+      title: 'Task Scheduler',
+      url: 'https://leetcode.com/problems/task-scheduler/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Math formula — most frequent task drives the answer',
+          explanation: `The most frequent task determines the minimum time. If task A appears f times, we need at least (f-1)*(n+1)+1 slots. But if there are multiple tasks with frequency f, each one fills a "slot" in the last chunk: result = max(tasks.length, (maxFreq-1)*(n+1) + countOfMaxFreq).`,
+          code: `var leastInterval = function(tasks, n) {
+    const freq = new Array(26).fill(0);
+    for (const t of tasks) freq[t.charCodeAt(0) - 65]++;
+    const maxFreq = Math.max(...freq);
+    const countOfMax = freq.filter(f => f === maxFreq).length;
+    return Math.max(tasks.length, (maxFreq - 1) * (n + 1) + countOfMax);
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 10,
+      title: 'Assign Cookies',
+      url: 'https://leetcode.com/problems/assign-cookies/',
+      difficulty: 'Easy',
+      intuitions: [
+        {
+          label: 'Intuition 1: Sort both, greedily assign smallest sufficient cookie',
+          explanation: `Sort children by greed factor, sort cookies by size. Use two pointers: try to satisfy the least greedy child with the smallest cookie. If cookie ≥ greed, assign it and move both pointers. If not, try a bigger cookie.`,
+          code: `var findContentChildren = function(g, s) {
+    g.sort((a,b) => a-b);
+    s.sort((a,b) => a-b);
+    let child = 0, cookie = 0;
+    while (child < g.length && cookie < s.length) {
+        if (s[cookie] >= g[child]) child++;  // satisfy this child
+        cookie++;                             // move to next cookie regardless
+    }
+    return child;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 11,
+      title: 'Minimum Number of Arrows to Burst Balloons',
+      url: 'https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Sort by end, shoot as far right as possible',
+          explanation: `Sort balloons by end position. Greedily shoot at the end of the first balloon. This arrow also bursts any overlapping balloon whose start ≤ arrow position. Move to the next unbursted balloon and repeat.`,
+          code: `var findMinArrowShots = function(points) {
+    points.sort((a, b) => a[1] - b[1]);  // sort by end
+    let arrows = 1, arrowPos = points[0][1];
+    for (let i = 1; i < points.length; i++) {
+        if (points[i][0] > arrowPos) {  // balloon starts after current arrow
+            arrows++;
+            arrowPos = points[i][1];    // shoot at end of this balloon
+        }
+    }
+    return arrows;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '🧠',
       color: 'green',
-      content: `**Proving greedy correctness — exchange argument:**\nAssume optimal solution picks X. Show you can swap X for the greedy choice without making things worse. If every swap preserves or improves the solution, greedy is optimal.\n\n**Greedy fails when:** future consequences of a local choice can't be captured locally. Use DP instead.`,
+      content: `**Proving greedy correctness — exchange argument:**\nAssume optimal solution picks X. Show you can swap X for the greedy choice without making things worse. If every swap preserves or improves the solution, greedy is optimal.\n\n**Greedy fails when:** future consequences of a local choice can't be captured locally. Use DP instead.\n\n**Greedy sorting tricks:**\n- Interval scheduling: sort by END time (keeps most room for future)\n- Interval merging: sort by START time (detect overlaps)\n- Job sequencing: sort by deadline / profit ratio\n- Two-group problems (candy, tasks): two-pass left→right then right→left`,
     },
   ],
 }

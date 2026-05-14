@@ -208,10 +208,149 @@ const union = (x, y) => {
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: "Kruskal's MST — Union-Find Application",
+    },
+    {
+      type: 'callout',
+      icon: '🔑',
+      color: 'teal',
+      content: `**Minimum Spanning Tree (MST)**: Connects all n nodes with n-1 edges of minimum total weight. No cycles.\n\n**Kruskal's algorithm**: Sort all edges by weight. Process cheapest edge first. If it connects two different components (union-find check), add it to MST. Skip if both endpoints in same component (would create cycle).\n\nTime: O(E log E) for sorting.`,
+    },
+    {
+      type: 'code',
+      lang: 'javascript',
+      caption: "Kruskal's MST with Union-Find",
+      code: `function kruskalMST(n, edges) {
+    // edges = [[weight, u, v], ...]
+    edges.sort((a, b) => a[0] - b[0]);  // sort by weight
+    const parent = Array.from({length: n}, (_, i) => i);
+    const rank = new Array(n).fill(0);
+
+    const find = x => {
+        if (parent[x] !== x) parent[x] = find(parent[x]);
+        return parent[x];
+    };
+    const union = (x, y) => {
+        const px = find(x), py = find(y);
+        if (px === py) return false;  // same component — would create cycle
+        if (rank[px] < rank[py]) parent[px] = py;
+        else if (rank[px] > rank[py]) parent[py] = px;
+        else { parent[py] = px; rank[px]++; }
+        return true;
+    };
+
+    let totalWeight = 0, edgesUsed = 0;
+    const mst = [];
+    for (const [w, u, v] of edges) {
+        if (union(u, v)) {
+            mst.push([u, v, w]);
+            totalWeight += w;
+            if (++edgesUsed === n - 1) break;  // MST complete
+        }
+    }
+    return { mst, totalWeight, connected: edgesUsed === n - 1 };
+}`,
+    },
+    {
+      type: 'problem',
+      num: 5,
+      title: 'Min Cost to Connect All Points (MST)',
+      url: 'https://leetcode.com/problems/min-cost-to-connect-all-points/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: "Intuition 1: Kruskal's MST — build all edges, sort, union",
+          explanation: `Each point is a node. Cost between two points = Manhattan distance. Build all n² edges, sort by cost, then Kruskal's: union cheapest edges that don't create cycles. Stop when n-1 edges added.`,
+          code: `var minCostConnectPoints = function(points) {
+    const n = points.length;
+    const edges = [];
+    for (let i = 0; i < n; i++)
+        for (let j = i+1; j < n; j++)
+            edges.push([Math.abs(points[i][0]-points[j][0])+Math.abs(points[i][1]-points[j][1]), i, j]);
+    edges.sort((a,b) => a[0]-b[0]);
+
+    const parent = Array.from({length:n},(_,i)=>i);
+    const find = x => parent[x]===x ? x : (parent[x]=find(parent[x]));
+    let cost=0, used=0;
+    for (const [w,u,v] of edges) {
+        const pu=find(u), pv=find(v);
+        if (pu!==pv) { parent[pu]=pv; cost+=w; if(++used===n-1) break; }
+    }
+    return cost;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 6,
+      title: 'Satisfiability of Equality Equations',
+      url: 'https://leetcode.com/problems/satisfiability-of-equality-equations/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Two-pass Union-Find — union equals, check not-equals',
+          explanation: `Pass 1: process all "==" equations — union the two variables. Pass 2: process all "!=" equations — if the two variables are in the same component (same root), contradiction → return false.`,
+          code: `var equationsPossible = function(equations) {
+    const parent = Array.from({length:26}, (_,i)=>i);
+    const find = x => parent[x]===x ? x : (parent[x]=find(parent[x]));
+    // Pass 1: union equal variables
+    for (const eq of equations)
+        if (eq[1]==='=')
+            parent[find(eq.charCodeAt(0)-97)] = find(eq.charCodeAt(3)-97);
+    // Pass 2: check inequalities
+    for (const eq of equations)
+        if (eq[1]==='!' && find(eq.charCodeAt(0)-97)===find(eq.charCodeAt(3)-97))
+            return false;
+    return true;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 7,
+      title: 'Largest Component Size by Common Factor',
+      url: 'https://leetcode.com/problems/largest-component-size-by-common-factor/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: Union-Find on prime factors',
+          explanation: `Two numbers sharing a common factor > 1 are in the same component. For each number, factorize it and union all its factors together with the number itself. The largest component size = answer. Use Union-Find where both numbers and their factors are nodes.`,
+          code: `var largestComponentSize = function(nums) {
+    const maxVal = Math.max(...nums);
+    const parent = Array.from({length:maxVal+1}, (_,i)=>i);
+    const find = x => parent[x]===x ? x : (parent[x]=find(parent[x]));
+    const union = (x,y) => { parent[find(x)]=find(y); };
+
+    for (const n of nums) {
+        for (let f = 2; f * f <= n; f++) {
+            if (n % f === 0) { union(n, f); union(n, n/f); }
+        }
+    }
+    const count = new Map();
+    let max = 0;
+    for (const n of nums) {
+        const root = find(n);
+        const c = (count.get(root) ?? 0) + 1;
+        count.set(root, c);
+        max = Math.max(max, c);
+    }
+    return max;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '🧠',
       color: 'green',
-      content: `**Union-Find vs BFS/DFS:**\n- Static graph, one-time query → BFS/DFS is simpler\n- Dynamic graph (edges added online) → Union-Find handles streaming\n- Cycle detection in undirected → Union-Find is cleaner\n- Strongly connected components → Need Tarjan/Kosaraju (DFS), not Union-Find\n- Minimum spanning tree → Kruskal = sort edges + Union-Find`,
+      content: `**Union-Find vs BFS/DFS:**\n- Static graph, one-time query → BFS/DFS is simpler\n- Dynamic graph (edges added online) → Union-Find handles streaming\n- Cycle detection in undirected → Union-Find is cleaner\n- Strongly connected components → Need Tarjan/Kosaraju (DFS), not Union-Find\n- Minimum spanning tree → Kruskal = sort edges + Union-Find\n\n**Two-pass Union-Find pattern:**\n1. Process "must be same" constraints → union them\n2. Check "must be different" constraints → if same root, contradiction`,
     },
   ],
 }

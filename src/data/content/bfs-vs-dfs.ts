@@ -316,10 +316,156 @@ function topoSort(graph, n) {
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 5,
+      title: 'Word Ladder',
+      url: 'https://leetcode.com/problems/word-ladder/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: BFS on word graph — each edge = one letter change',
+          explanation: `BFS where each "node" is a word and edges connect words that differ by exactly one letter. Shortest path = fewest transformations. Key optimization: for each word, try all 26 letters at each position and check if result is in the word set — O(26 × L) neighbors per word instead of O(wordList²).`,
+          code: `var ladderLength = function(beginWord, endWord, wordList) {
+    const wordSet = new Set(wordList);
+    if (!wordSet.has(endWord)) return 0;
+    let queue = [beginWord], steps = 1;
+    while (queue.length) {
+        const next = [];
+        for (const word of queue) {
+            if (word === endWord) return steps;
+            for (let i = 0; i < word.length; i++) {
+                for (let c = 97; c <= 122; c++) {
+                    const newWord = word.slice(0, i) + String.fromCharCode(c) + word.slice(i+1);
+                    if (wordSet.has(newWord)) {
+                        wordSet.delete(newWord);  // mark visited by removing
+                        next.push(newWord);
+                    }
+                }
+            }
+        }
+        queue = next;
+        steps++;
+    }
+    return 0;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 6,
+      title: 'Open the Lock',
+      url: 'https://leetcode.com/problems/open-the-lock/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: BFS on state space — each state is a 4-digit combo',
+          explanation: `State = current lock combination (string of 4 digits). Each state has 8 neighbors (turn each of 4 wheels up or down). BFS finds shortest path from "0000" to target avoiding deadends. Classic BFS on state graph where the "graph" is implicit.`,
+          code: `var openLock = function(deadends, target) {
+    const dead = new Set(deadends);
+    if (dead.has('0000')) return -1;
+    if (target === '0000') return 0;
+    const visited = new Set(['0000']);
+    let queue = ['0000'], steps = 0;
+    const turn = (d, dir) => String((Number(d) + dir + 10) % 10);
+    while (queue.length) {
+        const next = [];
+        steps++;
+        for (const state of queue) {
+            for (let i = 0; i < 4; i++) {
+                for (const dir of [1, -1]) {
+                    const ns = state.slice(0,i) + turn(state[i], dir) + state.slice(i+1);
+                    if (ns === target) return steps;
+                    if (!visited.has(ns) && !dead.has(ns)) {
+                        visited.add(ns);
+                        next.push(ns);
+                    }
+                }
+            }
+        }
+        queue = next;
+    }
+    return -1;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 7,
+      title: 'Walls and Gates (Multi-source BFS)',
+      url: 'https://leetcode.com/problems/walls-and-gates/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Multi-source BFS from all gates simultaneously',
+          explanation: `If you BFS from each gate separately it's O(n² × m²). Instead, start BFS from ALL gates at once (multi-source). Each cell gets the distance to its nearest gate in one pass. Cells reachable from a closer gate get filled before farther ones.`,
+          code: `var wallsAndGates = function(rooms) {
+    const m = rooms.length, n = rooms[0].length;
+    const INF = 2147483647, q = [];
+    for (let r = 0; r < m; r++)
+        for (let c = 0; c < n; c++)
+            if (rooms[r][c] === 0) q.push([r, c]);
+    const dirs = [[0,1],[0,-1],[1,0],[-1,0]];
+    let i = 0;
+    while (i < q.length) {
+        const [r, c] = q[i++];
+        for (const [dr, dc] of dirs) {
+            const nr = r+dr, nc = c+dc;
+            if (nr>=0 && nr<m && nc>=0 && nc<n && rooms[nr][nc] === INF) {
+                rooms[nr][nc] = rooms[r][c] + 1;
+                q.push([nr, nc]);
+            }
+        }
+    }
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 8,
+      title: 'Clone Graph',
+      url: 'https://leetcode.com/problems/clone-graph/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: BFS with a clone map',
+          explanation: `BFS traversal. For each node encountered, create its clone if not already created. For each edge in original, add the corresponding edge to the clone. Use a Map from original node → clone node to avoid re-creating.`,
+          code: `var cloneGraph = function(node) {
+    if (!node) return null;
+    const clones = new Map();
+    const queue = [node];
+    clones.set(node, new Node(node.val));
+    while (queue.length) {
+        const curr = queue.shift();
+        for (const nb of curr.neighbors) {
+            if (!clones.has(nb)) {
+                clones.set(nb, new Node(nb.val));
+                queue.push(nb);
+            }
+            clones.get(curr).neighbors.push(clones.get(nb));
+        }
+    }
+    return clones.get(node);
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '🧠',
       color: 'green',
-      content: `**The 30-second BFS vs DFS decision:**\n1. "Minimum steps / shortest path" → **BFS** (never DFS for shortest path in unweighted graph)\n2. "Can reach / connected / flood fill" → **DFS** (simpler code)\n3. "All cells within distance k" → **BFS** level-by-level\n4. "Cycle detection / dependency order" → **DFS** with colors\n5. "Start from multiple sources" → **Multi-source BFS**\n6. "Binary edge weights (0 or 1)" → **0-1 BFS** (deque)`,
+      content: `**The 30-second BFS vs DFS decision:**\n1. "Minimum steps / shortest path" → **BFS** (never DFS for shortest path in unweighted graph)\n2. "Can reach / connected / flood fill" → **DFS** (simpler code)\n3. "All cells within distance k" → **BFS** level-by-level\n4. "Cycle detection / dependency order" → **DFS** with colors\n5. "Start from multiple sources" → **Multi-source BFS**\n6. "Binary edge weights (0 or 1)" → **0-1 BFS** (deque)\n7. "State space search (lock, word ladder)" → **BFS** (states as nodes, transitions as edges)`,
     },
   ],
 }

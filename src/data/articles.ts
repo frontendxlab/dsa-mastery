@@ -65,6 +65,9 @@ import { dpOnTreesArticle } from './content/dp-on-trees'
 import { unionFindArticle } from './content/union-find'
 import { prefixSumArticle } from './content/prefix-sum'
 import { stringMatchingArticle } from './content/string-matching'
+import { hashmapPatternsArticle } from './content/hashmap-patterns'
+import { stackQueueArticle } from './content/stack-queue'
+import { shortestPathArticle } from './content/shortest-path'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -99,6 +102,9 @@ export const articles: Article[] = [
   unionFindArticle,
   prefixSumArticle,
   stringMatchingArticle,
+  hashmapPatternsArticle,
+  stackQueueArticle,
+  shortestPathArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
