@@ -200,5 +200,79 @@ function maxSlidingWindow(nums, k) {
         },
       ],
     },
+    {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 5,
+      title: 'Daily Temperatures',
+      url: 'https://leetcode.com/problems/daily-temperatures/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: O(n²) brute force — for each day, scan right for warmer day',
+          explanation: 'For each day i, iterate j from i+1. First j where temperatures[j] > temperatures[i] is the answer. O(n²).',
+        },
+        {
+          label: 'Intuition 2: O(n) monotonic stack — indices in decreasing temperature order',
+          explanation: 'Maintain a stack of indices with decreasing temperatures. When we hit a day warmer than the stack top, the stack top found its answer. Pop and record distance.',
+          code: `var dailyTemperatures = function(temps) {
+    const n = temps.length, ans = new Array(n).fill(0);
+    const stack = []; // indices, decreasing temps
+    for (let i = 0; i < n; i++) {
+        while (stack.length && temps[stack.at(-1)] < temps[i]) {
+            const j = stack.pop();
+            ans[j] = i - j; // days until warmer
+        }
+        stack.push(i);
+    }
+    return ans;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 6,
+      title: 'Largest Rectangle in Histogram',
+      url: 'https://leetcode.com/problems/largest-rectangle-in-histogram/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: O(n²) brute force — for each bar, extend left and right',
+          explanation: 'For each bar as the minimum height, find how far left and right it extends. Width = leftBoundary to rightBoundary. Area = height × width. O(n²).',
+        },
+        {
+          label: 'Intuition 2: O(n) monotonic stack — find previous/next smaller bar',
+          explanation: 'For each bar i, the maximum rectangle using bar[i] as height extends from (previous smaller bar + 1) to (next smaller bar - 1). Use stack to find these boundaries in O(n) total.',
+          code: `var largestRectangleArea = function(heights) {
+    const n = heights.length;
+    heights = [0, ...heights, 0]; // sentinel 0s on both ends
+    const stack = [0]; // indices
+    let maxArea = 0;
+    for (let i = 1; i < heights.length; i++) {
+        while (heights[stack.at(-1)] > heights[i]) {
+            const h = heights[stack.pop()];
+            const w = i - stack.at(-1) - 1; // width between current boundaries
+            maxArea = Math.max(maxArea, h * w);
+        }
+        stack.push(i);
+    }
+    return maxArea;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'callout',
+      icon: '🧠',
+      color: 'teal',
+      content: `**Monotonic stack direction guide:**\n- Decreasing stack → pop when GREATER element arrives → finds "next greater"\n- Increasing stack → pop when SMALLER element arrives → finds "next smaller"\n- Process right→left instead for "previous greater/smaller"\n- Histogram / contribution: use both sides (left stack + right stack)`,
+    },
   ],
 }

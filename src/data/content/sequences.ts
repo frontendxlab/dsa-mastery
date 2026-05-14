@@ -196,5 +196,71 @@ function lcs(text1, text2) {
         },
       ],
     },
+    {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 5,
+      title: 'Maximum Length of Repeated Subarray',
+      url: 'https://leetcode.com/problems/maximum-length-of-repeated-subarray/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: O(n²·m) brute force — check every pair of substrings',
+          explanation: 'For each starting pair (i, j), count common prefix length. O(n·m) pairs × O(min) to compare. Too slow.',
+        },
+        {
+          label: 'Intuition 2: O(nm) DP — longest common SUBARRAY (contiguous)',
+          explanation: 'Unlike LCS (subsequence), subarray requires continuity: dp[i][j] = length of longest common subarray ending at nums1[i-1] and nums2[j-1]. If they match, dp[i][j] = dp[i-1][j-1]+1. Otherwise 0 (subarray must be contiguous).',
+          code: `var findLength = function(nums1, nums2) {
+    const m=nums1.length, n=nums2.length;
+    const dp=Array.from({length:m+1},()=>new Array(n+1).fill(0));
+    let ans=0;
+    for(let i=1;i<=m;i++)
+        for(let j=1;j<=n;j++){
+            if(nums1[i-1]===nums2[j-1]) dp[i][j]=dp[i-1][j-1]+1;
+            // else dp[i][j] stays 0 — subarray is contiguous, reset on mismatch
+            ans=Math.max(ans,dp[i][j]);
+        }
+    return ans;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 6,
+      title: 'Palindromic Substrings',
+      url: 'https://leetcode.com/problems/palindromic-substrings/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Expand around center — O(n²)',
+          explanation: 'For each possible center (n odd centers + n-1 even centers = 2n-1 total), expand outward while characters match. Count each valid palindrome.',
+          code: `var countSubstrings = function(s) {
+    let count = 0;
+    const expand = (l, r) => {
+        while (l >= 0 && r < s.length && s[l] === s[r]) { count++; l--; r++; }
+    };
+    for (let i = 0; i < s.length; i++) {
+        expand(i, i);     // odd length
+        expand(i, i+1);   // even length
+    }
+    return count;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'callout',
+      icon: '🧠',
+      color: 'teal',
+      content: `**Subsequence vs Subarray — the key difference:**\n- Subsequence: characters can be non-contiguous → LCS dp[i][j] = max of skip or (match: dp[i-1][j-1]+1)\n- Subarray (contiguous): reset to 0 on mismatch → longest common subarray\n- Palindrome subsequence: dp[i][j] = whether s[i..j] is palindrome, expand from center\n- Edit distance: both can skip (insert/delete) AND match/replace`,
+    },
   ],
 }

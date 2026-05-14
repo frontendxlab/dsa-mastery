@@ -62,6 +62,9 @@ import { numericalMethodsArticle } from './content/numerical-methods'
 import { bfsVsDfsArticle } from './content/bfs-vs-dfs'
 import { intervalProblemsArticle } from './content/interval-problems'
 import { dpOnTreesArticle } from './content/dp-on-trees'
+import { unionFindArticle } from './content/union-find'
+import { prefixSumArticle } from './content/prefix-sum'
+import { stringMatchingArticle } from './content/string-matching'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -93,6 +96,9 @@ export const articles: Article[] = [
   bfsVsDfsArticle,
   intervalProblemsArticle,
   dpOnTreesArticle,
+  unionFindArticle,
+  prefixSumArticle,
+  stringMatchingArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
