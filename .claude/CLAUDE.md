@@ -40,11 +40,11 @@ style: <UI/CSS changes>
 > (documentation, ownership, history, decisions). **Always verify against
 > actual source files before making changes** — the index may be stale.
 
-Last indexed: 2026-05-14 (commit 8f3c2eb). Confidence: 100%.
+Last indexed: 2026-05-14 (commit 8e6e4bb). Confidence: 100%.
 ### Key Modules
 | Module | Purpose | Owner |
 |--------|---------|-------|
-| `src` | The src module serves as the core architectural foundation for the application,  | — |
+| `src` | The src module serves as the central knowledge repository for the application's  | — |
 | `scripts` | The scripts module serves as the automation and utility layer for the dsa-invent | — |
 | `root` | The root module serves as the primary configuration layer for the project's buil | — |
 | `greedy` | The greedy module provides a centralized utility for managing and consolidating  | — |

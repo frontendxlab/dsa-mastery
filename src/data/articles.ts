@@ -59,6 +59,9 @@ import { schedulingArticle } from './content/scheduling'
 import { shapesArticle } from './content/shapes'
 import { miscellaneousArticle } from './content/miscellaneous'
 import { numericalMethodsArticle } from './content/numerical-methods'
+import { bfsVsDfsArticle } from './content/bfs-vs-dfs'
+import { intervalProblemsArticle } from './content/interval-problems'
+import { dpOnTreesArticle } from './content/dp-on-trees'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -87,6 +90,9 @@ export const articles: Article[] = [
   shapesArticle,
   miscellaneousArticle,
   numericalMethodsArticle,
+  bfsVsDfsArticle,
+  intervalProblemsArticle,
+  dpOnTreesArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
