@@ -164,6 +164,70 @@ NumArray.prototype.sumRange = function(left, right) {
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 4,
+      title: 'Range Sum Query — Mutable',
+      url: 'https://leetcode.com/problems/range-sum-query-mutable/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Brute force — O(n) query, O(1) update',
+          explanation: 'Sum by iterating; update in O(1). Too slow for many queries.',
+        },
+        {
+          label: 'Intuition 2: Fenwick Tree — O(log n) for both update and query',
+          explanation: 'BIT: update one element and query prefix sum both in O(log n). Range sum = prefix(right) - prefix(left-1).',
+          code: `class NumArray {
+    constructor(nums) {
+        this.n = nums.length;
+        this.bit = new Array(this.n + 1).fill(0);
+        for (let i = 0; i < nums.length; i++) this._update(i+1, nums[i]);
+    }
+    _update(i, delta) { for (; i <= this.n; i += i&(-i)) this.bit[i] += delta; }
+    _query(i) { let s=0; for (; i>0; i -= i&(-i)) s+=this.bit[i]; return s; }
+    update(i, val) {
+        const diff = val - (this._query(i+1) - this._query(i)); // current value
+        this._update(i+1, diff);
+    }
+    sumRange(l, r) { return this._query(r+1) - this._query(l); }
+}`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 5,
+      title: 'Longest Increasing Subsequence (with BIT for O(n log n))',
+      url: 'https://leetcode.com/problems/longest-increasing-subsequence/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: O(n²) DP — for each i, check all j < i',
+          explanation: 'dp[i] = max dp[j]+1 for all j < i where nums[j] < nums[i]. O(n²).',
+        },
+        {
+          label: 'Intuition 2: O(n log n) — patience sorting with binary search',
+          explanation: 'Maintain "tails" array: tails[i] = smallest tail element of all increasing subsequences of length i+1. For each num, binary search for insertion position. Length of tails = LIS length.',
+          code: `var lengthOfLIS = function(nums) {
+    const tails = [];
+    for (const num of nums) {
+        let lo=0, hi=tails.length;
+        while (lo<hi) { const mid=(lo+hi)>>1; if(tails[mid]<num) lo=mid+1; else hi=mid; }
+        tails[lo] = num; // replace or extend
+    }
+    return tails.length;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '🔑',
       color: 'amber',

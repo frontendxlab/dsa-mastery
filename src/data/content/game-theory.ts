@@ -152,10 +152,68 @@ export const gameTheoryArticle: Article = {
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 4,
+      title: 'Stone Game VII',
+      url: 'https://leetcode.com/problems/stone-game-vii/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Minimax DP — dp[i][j] = max score diff for piles[i..j]',
+          explanation: 'Alice removes a stone from either end. She earns the sum of REMAINING stones. Bob wants to minimize Alice\'s net advantage. dp[i][j] = max advantage for current player on piles[i..j]. When player picks left: earns sum(i+1..j), but opponent plays optimally on (i+1..j).',
+          code: `var stoneGameVII = function(stones) {
+    const n=stones.length;
+    const prefix=[0,...stones.reduce((a,x,i)=>[...a,a[i]+x],[0])];
+    const rangeSum=(i,j)=>prefix[j+1]-prefix[i];
+    const dp=Array.from({length:n},()=>new Array(n).fill(0));
+    for(let len=2;len<=n;len++)
+        for(let i=0;i<=n-len;i++){
+            const j=i+len-1;
+            dp[i][j]=Math.max(
+                rangeSum(i+1,j)-dp[i+1][j], // pick left (earn sum without left)
+                rangeSum(i,j-1)-dp[i][j-1]  // pick right (earn sum without right)
+            );
+        }
+    return dp[0][n-1];
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 5,
+      title: 'Predict the Winner',
+      url: 'https://leetcode.com/problems/predict-the-winner/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Minimax DP — score difference',
+          explanation: 'dp[i][j] = score difference (current player - other) on nums[i..j]. If picks nums[i]: nums[i] - dp[i+1][j] (other player now has advantage). If picks nums[j]: nums[j] - dp[i][j-1].',
+          code: `var predictTheWinner = function(nums) {
+    const n=nums.length;
+    const dp=Array.from({length:n},(_,i)=>[...nums]); // dp[i][i]=nums[i]
+    for(let len=2;len<=n;len++)
+        for(let i=0;i<=n-len;i++){
+            const j=i+len-1;
+            dp[i][j]=Math.max(nums[i]-dp[i+1][j], nums[j]-dp[i][j-1]);
+        }
+    return dp[0][n-1]>=0;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '💡',
       color: 'green',
-      content: `**Pattern recognition for game problems:**\n- "Take 1..k stones from pile" → Nim / Sprague-Grundy\n- "Last player to move wins" → normal play convention, compute Grundy\n- "Multiple independent games simultaneously" → XOR of Grundy values\n- "Optimal play both sides" → usually minimax DP or Grundy`,
+      content: `**Pattern recognition for game problems:**\n- "Take 1..k stones from pile" → Nim / Sprague-Grundy\n- "Last player to move wins" → normal play convention, compute Grundy\n- "Multiple independent games simultaneously" → XOR of Grundy values\n- "Optimal play both sides" → usually minimax DP or Grundy\n- "Score difference for current player" → dp[i][j] = score_diff on range [i..j]`,
     },
   ],
 }

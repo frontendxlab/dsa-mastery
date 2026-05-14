@@ -184,6 +184,66 @@ var searchMatrix = function(matrix, target) {
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 4,
+      title: 'Spiral Matrix',
+      url: 'https://leetcode.com/problems/spiral-matrix/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Boundary shrink — track top/bottom/left/right',
+          explanation: 'Maintain four boundaries. Traverse: right along top, down along right, left along bottom, up along left. After each direction, shrink that boundary inward. Stop when boundaries cross.',
+          code: `var spiralOrder = function(matrix) {
+    const res = [];
+    let top=0, bot=matrix.length-1, left=0, right=matrix[0].length-1;
+    while (top<=bot && left<=right) {
+        for(let c=left;c<=right;c++) res.push(matrix[top][c]); top++;
+        for(let r=top;r<=bot;r++) res.push(matrix[r][right]); right--;
+        if(top<=bot) { for(let c=right;c>=left;c--) res.push(matrix[bot][c]); bot--; }
+        if(left<=right) { for(let r=bot;r>=top;r--) res.push(matrix[r][left]); left++; }
+    }
+    return res;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 5,
+      title: 'Set Matrix Zeroes',
+      url: 'https://leetcode.com/problems/set-matrix-zeroes/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: O(m+n) extra space — track which rows/cols have zeros',
+          explanation: 'First pass: collect rows and cols containing zeros. Second pass: set entire row/col to zero.',
+        },
+        {
+          label: 'Intuition 2: O(1) space — use first row/col as markers',
+          explanation: 'Use matrix[0][j] to mark "column j needs zeroing" and matrix[i][0] to mark "row i needs zeroing". Handle first row/col separately (check if they originally had zeros).',
+          code: `var setZeroes = function(matrix) {
+    const m=matrix.length, n=matrix[0].length;
+    let firstRowZero=matrix[0].includes(0), firstColZero=matrix.some(r=>r[0]===0);
+    // mark in first row/col
+    for(let i=1;i<m;i++) for(let j=1;j<n;j++)
+        if(matrix[i][j]===0){ matrix[i][0]=0; matrix[0][j]=0; }
+    // zero using marks
+    for(let i=1;i<m;i++) for(let j=1;j<n;j++)
+        if(matrix[i][0]===0||matrix[0][j]===0) matrix[i][j]=0;
+    if(firstRowZero) matrix[0].fill(0);
+    if(firstColZero) for(let i=0;i<m;i++) matrix[i][0]=0;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '💡',
       color: 'amber',
