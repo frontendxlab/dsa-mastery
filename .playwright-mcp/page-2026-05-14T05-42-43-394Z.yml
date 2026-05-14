@@ -1,0 +1,349 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link "geeksforgeeks" [ref=e14] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/
+          - img "geeksforgeeks" [ref=e16]
+        - img "search icon" [ref=e19] [cursor=pointer]
+      - list [ref=e23]:
+        - listitem [ref=e24] [cursor=pointer]:
+          - button "Sign In" [ref=e26]
+        - listitem [ref=e27] [cursor=pointer]:
+          - generic [ref=e29]: Courses
+        - listitem [ref=e31] [cursor=pointer]:
+          - generic [ref=e33]: Tutorials
+        - listitem [ref=e35] [cursor=pointer]:
+          - generic [ref=e37]: Practice
+        - listitem [ref=e39] [cursor=pointer]:
+          - generic [ref=e41]: Jobs
+        - listitem [ref=e43]
+        - listitem [ref=e44] [cursor=pointer]:
+          - button "Toggle GFG Theme" [ref=e46]
+          - button "Change Language" [ref=e50]:
+            - generic [ref=e52]: Change Language
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - generic [ref=e56] [cursor=pointer]:
+          - heading "Companies" [level=3] [ref=e58]
+          - generic [ref=e60]: View All
+        - generic [ref=e62]:
+          - checkbox [ref=e63] [cursor=pointer]
+          - generic [ref=e64] [cursor=pointer]: Amazon (648)
+        - generic [ref=e66]:
+          - checkbox [ref=e67] [cursor=pointer]
+          - generic [ref=e68] [cursor=pointer]: Microsoft (444)
+        - generic [ref=e70]:
+          - checkbox [ref=e71] [cursor=pointer]
+          - generic [ref=e72] [cursor=pointer]: Google (177)
+        - generic [ref=e74]:
+          - checkbox [ref=e75] [cursor=pointer]
+          - generic [ref=e76] [cursor=pointer]: Flipkart (168)
+        - generic [ref=e78]:
+          - checkbox [ref=e79] [cursor=pointer]
+          - generic [ref=e80] [cursor=pointer]: Adobe (164)
+        - generic [ref=e82]:
+          - checkbox [ref=e83] [cursor=pointer]
+          - generic [ref=e84] [cursor=pointer]: NPCI (144)
+        - generic [ref=e86]:
+          - text:    
+          - generic [ref=e88]:
+            - generic [ref=e89]:
+              - generic [ref=e90]:
+                - heading "Popular Problems" [level=2] [ref=e91]
+                - generic [ref=e92]:
+                  - text:   
+                  - button "Search" [ref=e93] [cursor=pointer]:
+                    - generic [ref=e94]: 
+                    - text: Search
+                  - listbox [ref=e95] [cursor=pointer]:
+                    - generic [ref=e96]:
+                      - generic [ref=e97]: 
+                      - text: Submissions
+                    - generic [ref=e98]: 
+              - generic [ref=e100]:
+                - strong [ref=e101]: "?"
+                - text: of 3738 Problems Solved (? %)Sign-In To Track Your Progress
+              - generic [ref=e105]: Submissions
+              - generic [ref=e108]:
+                - generic [ref=e110] [cursor=pointer]:
+                  - generic [ref=e113]: Indexes of Subarray Sum
+                  - generic [ref=e114]:
+                    - button "Solve" [ref=e115]
+                    - paragraph [ref=e116]:
+                      - generic [ref=e117]: Medium
+                      - generic [ref=e118]: 
+                      - generic [ref=e119]: 2M
+                      - generic [ref=e120]: 
+                      - generic [ref=e121]: 16.5%
+                - generic [ref=e123] [cursor=pointer]:
+                  - generic [ref=e126]: Missing in Array
+                  - generic [ref=e127]:
+                    - button "Solve" [ref=e128]
+                    - paragraph [ref=e129]:
+                      - generic [ref=e130]: Easy
+                      - generic [ref=e131]: 
+                      - generic [ref=e132]: 2M
+                      - generic [ref=e133]: 
+                      - generic [ref=e134]: 29.59%
+                - generic [ref=e136] [cursor=pointer]:
+                  - generic [ref=e139]: Second Largest
+                  - generic [ref=e140]:
+                    - button "Solve" [ref=e141]
+                    - paragraph [ref=e142]:
+                      - generic [ref=e143]: Easy
+                      - generic [ref=e144]: 
+                      - generic [ref=e145]: 2M
+                      - generic [ref=e146]: 
+                      - generic [ref=e147]: 26.72%
+                - generic [ref=e149] [cursor=pointer]:
+                  - generic [ref=e152]: Kadane's Algorithm
+                  - generic [ref=e153]:
+                    - button "Solve" [ref=e154]
+                    - paragraph [ref=e155]:
+                      - generic [ref=e156]: Medium
+                      - generic [ref=e157]: 
+                      - generic [ref=e158]: 1M
+                      - generic [ref=e159]: 
+                      - generic [ref=e160]: 36.28%
+                - generic [ref=e162] [cursor=pointer]:
+                  - generic [ref=e165]: Minimum Jumps
+                  - generic [ref=e166]:
+                    - button "Solve" [ref=e167]
+                    - paragraph [ref=e168]:
+                      - generic [ref=e169]: Medium
+                      - generic [ref=e170]: 
+                      - generic [ref=e171]: 1M
+                      - generic [ref=e172]: 
+                      - generic [ref=e173]: 11.91%
+                - generic [ref=e175] [cursor=pointer]:
+                  - generic [ref=e178]: Array Leaders
+                  - generic [ref=e179]:
+                    - button "Solve" [ref=e180]
+                    - paragraph [ref=e181]:
+                      - generic [ref=e182]: Easy
+                      - generic [ref=e183]: 
+                      - generic [ref=e184]: 1M
+                      - generic [ref=e185]: 
+                      - generic [ref=e186]: 29.94%
+                - generic [ref=e188] [cursor=pointer]:
+                  - generic [ref=e191]: Array Duplicates
+                  - generic [ref=e192]:
+                    - button "Solve" [ref=e193]
+                    - paragraph [ref=e194]:
+                      - generic [ref=e195]: Easy
+                      - generic [ref=e196]: 
+                      - generic [ref=e197]: 907K
+                      - generic [ref=e198]: 
+                      - generic [ref=e199]: 18.95%
+                - generic [ref=e201] [cursor=pointer]:
+                  - generic [ref=e204]: Sort 0s, 1s and 2s
+                  - generic [ref=e205]:
+                    - button "Solve" [ref=e206]
+                    - paragraph [ref=e207]:
+                      - generic [ref=e208]: Medium
+                      - generic [ref=e209]: 
+                      - generic [ref=e210]: 860K
+                      - generic [ref=e211]: 
+                      - generic [ref=e212]: 50.58%
+                - generic [ref=e214] [cursor=pointer]:
+                  - generic [ref=e217]: Majority Element
+                  - generic [ref=e218]:
+                    - button "Solve" [ref=e219]
+                    - paragraph [ref=e220]:
+                      - generic [ref=e221]: Medium
+                      - generic [ref=e222]: 
+                      - generic [ref=e223]: 824K
+                      - generic [ref=e224]: 
+                      - generic [ref=e225]: 27.82%
+                - generic [ref=e227] [cursor=pointer]:
+                  - generic [ref=e230]: Longest Subarray with Sum K
+                  - generic [ref=e231]:
+                    - button "Solve" [ref=e232]
+                    - paragraph [ref=e233]:
+                      - generic [ref=e234]: Medium
+                      - generic [ref=e235]: 
+                      - generic [ref=e236]: 813K
+                      - generic [ref=e237]: 
+                      - generic [ref=e238]: 24.64%
+                - generic [ref=e240] [cursor=pointer]:
+                  - generic [ref=e243]: Minimize the Heights II
+                  - generic [ref=e244]:
+                    - button "Solve" [ref=e245]
+                    - paragraph [ref=e246]:
+                      - generic [ref=e247]: Medium
+                      - generic [ref=e248]: 
+                      - generic [ref=e249]: 783K
+                      - generic [ref=e250]: 
+                      - generic [ref=e251]: 15.06%
+                - generic [ref=e253] [cursor=pointer]:
+                  - generic [ref=e256]: Count Inversions
+                  - generic [ref=e257]:
+                    - button "Solve" [ref=e258]
+                    - paragraph [ref=e259]:
+                      - generic [ref=e260]: Medium
+                      - generic [ref=e261]: 
+                      - generic [ref=e262]: 771K
+                      - generic [ref=e263]: 
+                      - generic [ref=e264]: 16.93%
+                - generic [ref=e266] [cursor=pointer]:
+                  - generic [ref=e269]: Kth Smallest
+                  - generic [ref=e270]:
+                    - button "Solve" [ref=e271]
+                    - paragraph [ref=e272]:
+                      - generic [ref=e273]: Medium
+                      - generic [ref=e274]: 
+                      - generic [ref=e275]: 754K
+                      - generic [ref=e276]: 
+                      - generic [ref=e277]: 35.17%
+                - generic [ref=e279] [cursor=pointer]:
+                  - generic [ref=e282]: Rotate Array
+                  - generic [ref=e283]:
+                    - button "Solve" [ref=e284]
+                    - paragraph [ref=e285]:
+                      - generic [ref=e286]: Medium
+                      - generic [ref=e287]: 
+                      - generic [ref=e288]: 740K
+                      - generic [ref=e289]: 
+                      - generic [ref=e290]: 37.06%
+                - generic [ref=e292] [cursor=pointer]:
+                  - generic [ref=e295]: Parenthesis Checker
+                  - generic [ref=e296]:
+                    - button "Solve" [ref=e297]
+                    - paragraph [ref=e298]:
+                      - generic [ref=e299]: Easy
+                      - generic [ref=e300]: 
+                      - generic [ref=e301]: 736K
+                      - generic [ref=e302]: 
+                      - generic [ref=e303]: 28.56%
+                - generic [ref=e305] [cursor=pointer]:
+                  - generic [ref=e308]: First Occurrence in Sorted
+                  - generic [ref=e309]:
+                    - button "Solve" [ref=e310]
+                    - paragraph [ref=e311]:
+                      - generic [ref=e312]: Easy
+                      - generic [ref=e313]: 
+                      - generic [ref=e314]: 727K
+                      - generic [ref=e315]: 
+                      - generic [ref=e316]: 44.32%
+                - generic [ref=e318] [cursor=pointer]:
+                  - generic [ref=e321]: Undirected Graph Cycle
+                  - generic [ref=e322]:
+                    - button "Solve" [ref=e323]
+                    - paragraph [ref=e324]:
+                      - generic [ref=e325]: Medium
+                      - generic [ref=e326]: 
+                      - generic [ref=e327]: 720K
+                      - generic [ref=e328]: 
+                      - generic [ref=e329]: 30.13%
+                - generic [ref=e331] [cursor=pointer]:
+                  - generic [ref=e334]: Array Search
+                  - generic [ref=e335]:
+                    - button "Solve" [ref=e336]
+                    - paragraph [ref=e337]:
+                      - generic [ref=e338]: Basic
+                      - generic [ref=e339]: 
+                      - generic [ref=e340]: 717K
+                      - generic [ref=e341]: 
+                      - generic [ref=e342]: 40.95%
+                - generic [ref=e344] [cursor=pointer]:
+                  - generic [ref=e347]: Missing And Repeating
+                  - generic [ref=e348]:
+                    - button "Solve" [ref=e349]
+                    - paragraph [ref=e350]:
+                      - generic [ref=e351]: Easy
+                      - generic [ref=e352]: 
+                      - generic [ref=e353]: 700K
+                      - generic [ref=e354]: 
+                      - generic [ref=e355]: 24.83%
+                - generic [ref=e357] [cursor=pointer]:
+                  - generic [ref=e360]: Equilibrium Point
+                  - generic [ref=e361]:
+                    - button "Solve" [ref=e362]
+                    - paragraph [ref=e363]:
+                      - generic [ref=e364]: Easy
+                      - generic [ref=e365]: 
+                      - generic [ref=e366]: 692K
+                      - generic [ref=e367]: 
+                      - generic [ref=e368]: 28.13%
+            - generic [ref=e369]:
+              - generic [ref=e372] [cursor=pointer]: Problem of the Day
+              - generic [ref=e373]:
+                - generic [ref=e375]:
+                  - generic [ref=e377]: Recently Online Experts
+                  - generic [ref=e378]:
+                    - link "shivamkumaqx5m Shivam kumar Jha Divinetalk, Flatmate" [ref=e379] [cursor=pointer]:
+                      - /url: /profile/shivamkumaqx5m/?from=explore
+                      - generic [ref=e380]:
+                        - img "shivamkumaqx5m" [ref=e383]
+                        - generic [ref=e384]:
+                          - heading "Shivam kumar Jha" [level=1] [ref=e385]:
+                            - text: Shivam kumar Jha
+                            - img [ref=e387]
+                          - paragraph [ref=e390]: Divinetalk, Flatmate
+                    - link "erkhushbossg9 Khushboo Garg Xebia, 3Pillar Global, Chetu Inc" [ref=e391] [cursor=pointer]:
+                      - /url: /profile/erkhushbossg9/?from=explore
+                      - generic [ref=e392]:
+                        - img "erkhushbossg9" [ref=e395]
+                        - generic [ref=e396]:
+                          - heading "Khushboo Garg" [level=1] [ref=e397]:
+                            - text: Khushboo Garg
+                            - img [ref=e399]
+                          - paragraph [ref=e402]: Xebia, 3Pillar Global, Chetu Inc
+                    - link "venkatadj Gambali Venkata Durga Rao Blaize Semiconductors Private Limited, Advanced Micro Devices, Teradata" [ref=e403] [cursor=pointer]:
+                      - /url: /profile/venkatadj/?from=explore
+                      - generic [ref=e404]:
+                        - img "venkatadj" [ref=e407]
+                        - generic [ref=e408]:
+                          - heading "Gambali Venkata Durga Rao" [level=1] [ref=e409]:
+                            - text: Gambali Venkata Durga Rao
+                            - img [ref=e411]
+                          - paragraph [ref=e414]: Blaize Semiconductors Private Limited, Advanced Micro Devices, Teradata
+                  - link "View All →" [ref=e416] [cursor=pointer]:
+                    - /url: /connect/explore
+                    - text: View All
+                    - generic [ref=e417]: →
+                - generic [ref=e419]:
+                  - generic [ref=e421]:
+                    - button "Fresher Jobs" [ref=e422] [cursor=pointer]
+                    - button "Experienced Jobs" [ref=e423] [cursor=pointer]
+                  - generic [ref=e424]:
+                    - link "C++ Developer | Intelizign C++ Developer Intelizign 0.5 - 5 Years • Onsite - Pune (Maharashtra) Apply by Thu May 14 2026" [ref=e425] [cursor=pointer]:
+                      - /url: /jobs/intelizign-cpp-developer
+                      - generic "C++ Developer" [ref=e426]:
+                        - img "C++ Developer | Intelizign" [ref=e429]
+                        - generic [ref=e430]:
+                          - heading "C++ Developer" [level=1] [ref=e431]
+                          - paragraph [ref=e432]: Intelizign
+                          - generic [ref=e433]:
+                            - paragraph [ref=e434]: 0.5 - 5 Years • Onsite - Pune (Maharashtra)
+                            - paragraph [ref=e435]: Apply by Thu May 14 2026
+                    - separator [ref=e436]
+                    - link "C# Developer | Intelizign C# Developer Intelizign 0.5 - 5 Years • Onsite - Pune (Maharashtra) Apply by Thu May 14 2026" [ref=e437] [cursor=pointer]:
+                      - /url: /jobs/intelizign-c-sharp-developer
+                      - generic "C# Developer" [ref=e438]:
+                        - img "C# Developer | Intelizign" [ref=e441]
+                        - generic [ref=e442]:
+                          - heading "C# Developer" [level=1] [ref=e443]
+                          - paragraph [ref=e444]: Intelizign
+                          - generic [ref=e445]:
+                            - paragraph [ref=e446]: 0.5 - 5 Years • Onsite - Pune (Maharashtra)
+                            - paragraph [ref=e447]: Apply by Thu May 14 2026
+                    - separator [ref=e448]
+                    - link "QA Engineer | Thrymr Software QA Engineer Thrymr Software Fresher • Onsite - Hyderabad (Telangana) Apply by Fri May 15 2026" [ref=e449] [cursor=pointer]:
+                      - /url: /jobs/thrymr-software-qa-engineer
+                      - generic "QA Engineer" [ref=e450]:
+                        - img "QA Engineer | Thrymr Software" [ref=e453]
+                        - generic [ref=e454]:
+                          - heading "QA Engineer" [level=1] [ref=e455]
+                          - paragraph [ref=e456]: Thrymr Software
+                          - generic [ref=e457]:
+                            - paragraph [ref=e458]: Fresher • Onsite - Hyderabad (Telangana)
+                            - paragraph [ref=e459]: Apply by Fri May 15 2026
+                  - link "View All →" [ref=e461] [cursor=pointer]:
+                    - /url: /jobs?tab_type=featured
+                    - text: View All
+                    - generic [ref=e462]: →
+          - text:                                              
+      - generic [ref=e463] [cursor=pointer]: 
+  - alert [ref=e464]

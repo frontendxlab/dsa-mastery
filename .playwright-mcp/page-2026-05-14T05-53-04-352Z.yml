@@ -1,0 +1,2290 @@
+- generic [ref=e2]:
+  - heading "Kata Library" [level=1] [ref=e3]
+  - generic [ref=e4]:
+    - text: 
+    - navigation [ref=e5]:
+      - list [ref=e6]:
+        - listitem [ref=e7]:
+          - link "Sign Up Time to claim your honor" [ref=e8] [cursor=pointer]:
+            - /url: https://www.codewars.com/
+            - img [ref=e10]
+            - generic [ref=e11]:
+              - generic [ref=e12]: Sign Up
+              - generic [ref=e13]: Time to claim your honor
+        - listitem [ref=e14]: Training
+        - listitem [ref=e15]:
+          - link "Practice Complete challenging Kata to earn honor and ranks. Re-train to hone technique" [ref=e16]:
+            - /url: /kata/latest?beta=false
+            - img [ref=e18]
+            - generic [ref=e21]:
+              - generic [ref=e22]: Practice
+              - generic [ref=e23]:
+                - text: Complete challenging
+                - strong [ref=e24]: Kata
+                - text: to earn honor and ranks. Re-train to hone technique
+        - listitem [ref=e25]:
+          - link "Freestyle Sparring Take turns remixing and refactoring others code through Kumite" [ref=e26] [cursor=pointer]:
+            - /url: /kumite
+            - img [ref=e28]
+            - generic [ref=e31]:
+              - generic [ref=e32]: Freestyle Sparring
+              - generic [ref=e33]:
+                - text: Take turns remixing and refactoring others code through
+                - strong [ref=e34]: Kumite
+        - listitem [ref=e35]: Community
+        - listitem [ref=e36]:
+          - link "Leaderboards Achieve honor and move up the global leaderboards" [ref=e37] [cursor=pointer]:
+            - /url: /users/leaderboard
+            - img [ref=e39]
+            - generic [ref=e41]:
+              - generic [ref=e42]: Leaderboards
+              - generic [ref=e43]: Achieve honor and move up the global leaderboards
+        - listitem [ref=e44]:
+          - link "Chat Join our Discord server and chat with your fellow code warriors" [ref=e45] [cursor=pointer]:
+            - /url: https://discord.gg/mSwJWRvkHA
+            - img [ref=e47]
+            - generic [ref=e50]:
+              - generic [ref=e51]: Chat
+              - generic [ref=e52]:
+                - text: Join our
+                - strong [ref=e53]: Discord
+                - text: server and chat with your fellow code warriors
+        - listitem [ref=e54]:
+          - link "Discussions View our Github Discussions board to discuss general Codewars topics" [ref=e55] [cursor=pointer]:
+            - /url: https://github.com/codewars/codewars.com/discussions
+            - img [ref=e57]
+            - generic [ref=e59]:
+              - generic [ref=e60]: Discussions
+              - generic [ref=e61]:
+                - text: View our
+                - strong [ref=e62]: Github Discussions
+                - text: board to discuss general Codewars topics
+        - listitem [ref=e63]: About
+        - listitem [ref=e64]:
+          - link "Docs Learn about all of the different aspects of Codewars" [ref=e65] [cursor=pointer]:
+            - /url: https://docs.codewars.com
+            - img [ref=e67]
+            - generic [ref=e69]:
+              - generic [ref=e70]: Docs
+              - generic [ref=e71]: Learn about all of the different aspects of Codewars
+        - listitem [ref=e72]:
+          - link "Blog Read the latest news from Codewars and the community" [ref=e73] [cursor=pointer]:
+            - /url: https://codewars.com/blog
+            - img [ref=e75]
+            - generic [ref=e77]:
+              - generic [ref=e78]: Blog
+              - generic [ref=e79]: Read the latest news from Codewars and the community
+    - banner [ref=e80]:
+      - list:
+        - listitem [ref=e81]:
+          - img [ref=e83] [cursor=pointer]
+        - listitem [ref=e85]:
+          - link "Log In" [ref=e87] [cursor=pointer]:
+            - /url: /users/sign_in
+        - listitem [ref=e88]:
+          - link "Sign Up" [ref=e90] [cursor=pointer]:
+            - /url: /join
+    - main [ref=e91]:
+      - list [ref=e92]:
+        - listitem [ref=e93]:
+          - generic:
+            - generic: 
+            - text: Library
+        - listitem [ref=e94]:
+          - link "Collections" [ref=e95] [cursor=pointer]:
+            - /url: /collections
+            - generic [ref=e96]: 
+            - text: Collections
+      - generic [ref=e97]:
+        - generic [ref=e100]:
+          - generic [ref=e104]:
+            - textbox [ref=e105]
+            - button [ref=e108] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img
+          - generic [ref=e110]:
+            - generic [ref=e112]: Sort By
+            - generic [ref=e115]:
+              - combobox [ref=e117] [cursor=pointer]:
+                - generic [ref=e118]: Newest
+                - img [ref=e122]
+                - textbox [ref=e124]: "1"
+              - generic:
+                - generic:
+                  - generic: Newest
+                  - generic: Oldest
+                  - generic: Popularity
+                  - generic: Positive Feedback
+                  - generic: Most Completed
+                  - generic: Least Completed
+                  - generic: Hardest
+                  - generic: Easiest
+                  - generic: Name
+                  - generic: Relevance
+                  - generic: Low Satisfaction
+          - generic [ref=e126]:
+            - generic [ref=e128]: Language
+            - generic [ref=e131]:
+              - combobox [ref=e133] [cursor=pointer]:
+                - generic [ref=e134]: All
+                - img [ref=e138]
+                - textbox [ref=e140]
+              - generic:
+                - generic:
+                  - generic: All
+                  - generic: My Languages
+                  - generic: Agda (Beta)
+                  - generic: BF (Beta)
+                  - generic: C
+                  - generic: CFML (Beta)
+                  - generic: Clojure
+                  - generic: COBOL (Beta)
+                  - generic: CoffeeScript
+                  - generic: CommonLisp (Beta)
+                  - generic: Coq
+                  - generic: C++
+                  - generic: Crystal
+                  - generic: C#
+                  - generic: D (Beta)
+                  - generic: Dart
+                  - generic: Elixir
+                  - generic: Elm (Beta)
+                  - generic: Erlang (Beta)
+                  - generic: Factor (Beta)
+                  - generic: Forth (Beta)
+                  - generic: Fortran (Beta)
+                  - generic: F#
+                  - generic: Go
+                  - generic: Groovy
+                  - generic: Haskell
+                  - generic: Haxe (Beta)
+                  - generic: Idris (Beta)
+                  - generic: Java
+                  - generic: JavaScript
+                  - generic: Julia (Beta)
+                  - generic: Kotlin
+                  - generic: λ Calculus (Beta)
+                  - generic: Lean
+                  - generic: Lua
+                  - generic: NASM
+                  - generic: Nim (Beta)
+                  - generic: Objective-C (Beta)
+                  - generic: OCaml (Beta)
+                  - generic: Pascal (Beta)
+                  - generic: Perl (Beta)
+                  - generic: PHP
+                  - generic: PowerShell (Beta)
+                  - generic: Prolog (Beta)
+                  - generic: PureScript (Beta)
+                  - generic: Python
+                  - generic: R (Beta)
+                  - generic: Racket
+                  - generic: Raku (Beta)
+                  - generic: Reason (Beta)
+                  - generic: RISC-V (Beta)
+                  - generic: Ruby
+                  - generic: Rust
+                  - generic: Scala
+                  - generic: Shell
+                  - generic: Solidity (Beta)
+                  - generic: SQL
+                  - generic: Swift
+                  - generic: TypeScript
+                  - generic: VB (Beta)
+          - generic [ref=e142]:
+            - generic [ref=e144]: Status
+            - generic [ref=e147]:
+              - combobox [ref=e149] [cursor=pointer]:
+                - generic [ref=e150]: Approved
+                - img [ref=e154]
+                - textbox [ref=e156]: "1"
+              - generic:
+                - generic:
+                  - generic: Approved & Beta
+                  - generic: Approved
+                  - generic: Beta
+          - generic [ref=e158]:
+            - generic [ref=e160]: Progress
+            - generic [ref=e163]:
+              - combobox [ref=e165] [cursor=pointer]:
+                - generic [ref=e166]: All
+                - img [ref=e170]
+                - textbox [ref=e172]
+              - generic:
+                - generic:
+                  - generic: All
+                  - generic: Kata I have not trained on
+                  - generic: Kata I have not completed
+                  - generic: Kata I have completed
+          - generic [ref=e174]:
+            - generic [ref=e176]: Difficulty
+            - generic [ref=e179]:
+              - combobox [ref=e181] [cursor=pointer]:
+                - generic [ref=e182]: Select ranks
+                - img [ref=e186]
+                - textbox [ref=e188]
+              - generic:
+                - generic:
+                  - generic: 8 kyu
+                  - generic: 7 kyu
+                  - generic: 6 kyu
+                  - generic: 5 kyu
+                  - generic: 4 kyu
+                  - generic: 3 kyu
+                  - generic: 2 kyu
+                  - generic: 1 kyu
+          - generic [ref=e190]:
+            - generic [ref=e192]: Tags
+            - generic [ref=e195]:
+              - combobox [ref=e197] [cursor=pointer]:
+                - generic [ref=e201]:
+                  - generic [ref=e202]:
+                    - generic: Algorithms
+                  - button "Remove" [ref=e204]:
+                    - generic:
+                      - generic:
+                        - img
+                - button "Clear entry" [ref=e205]:
+                  - img [ref=e209]
+                - img [ref=e214]
+                - textbox [ref=e216]: "1"
+              - generic:
+                - generic:
+                  - generic: ASCII Art
+                  - generic:
+                    - generic: "36"
+                  - generic: Algebra
+                  - generic:
+                    - generic: "27"
+                  - generic: Algorithms
+                  - generic:
+                    - generic: "3106"
+                  - generic: Angular
+                  - generic:
+                    - generic: "2"
+                  - generic: Arrays
+                  - generic:
+                    - generic: "466"
+                  - generic: Artificial Intelligence
+                  - generic:
+                    - generic: "4"
+                  - generic: Big Integers
+                  - generic:
+                    - generic: "12"
+                  - generic: Binary
+                  - generic:
+                    - generic: "42"
+                  - generic: Binary Search Trees
+                  - generic:
+                    - generic: "6"
+                  - generic: Binary Trees
+                  - generic:
+                    - generic: "10"
+                  - generic: Bits
+                  - generic:
+                    - generic: "26"
+                  - generic: Cellular Automata
+                  - generic:
+                    - generic: "3"
+                  - generic: Ciphers
+                  - generic:
+                    - generic: "33"
+                  - generic: Combinatorics
+                  - generic:
+                    - generic: "35"
+                  - generic: Compilers
+                  - generic:
+                    - generic: "5"
+                  - generic: Cryptography
+                  - generic:
+                    - generic: "42"
+                  - generic: Data Science
+                  - generic:
+                    - generic: "18"
+                  - generic: Data Structures
+                  - generic:
+                    - generic: "215"
+                  - generic: Databases
+                  - generic:
+                    - generic: "4"
+                  - generic: Date Time
+                  - generic:
+                    - generic: "33"
+                  - generic: Debugging
+                  - generic:
+                    - generic: "3"
+                  - generic: Decorator
+                  - generic:
+                    - generic: "1"
+                  - generic: Design Patterns
+                  - generic:
+                    - generic: "3"
+                  - generic: Discrete Mathematics
+                  - generic:
+                    - generic: "5"
+                  - generic: Domain Specific Languages
+                  - generic:
+                    - generic: "1"
+                  - generic: Dynamic Programming
+                  - generic:
+                    - generic: "46"
+                  - generic: Esoteric Languages
+                  - generic:
+                    - generic: "15"
+                  - generic: Filtering
+                  - generic:
+                    - generic: "10"
+                  - generic: Functional Programming
+                  - generic:
+                    - generic: "50"
+                  - generic: Fundamentals
+                  - generic:
+                    - generic: "556"
+                  - generic: Game Solvers
+                  - generic:
+                    - generic: "29"
+                  - generic: Games
+                  - generic:
+                    - generic: "142"
+                  - generic: Genetic Algorithms
+                  - generic:
+                    - generic: "6"
+                  - generic: Geometry
+                  - generic:
+                    - generic: "79"
+                  - generic: Graph Theory
+                  - generic:
+                    - generic: "59"
+                  - generic: Graphics
+                  - generic:
+                    - generic: "7"
+                  - generic: Graphs
+                  - generic:
+                    - generic: "6"
+                  - generic: Heaps
+                  - generic:
+                    - generic: "1"
+                  - generic: Image Processing
+                  - generic:
+                    - generic: "6"
+                  - generic: Interpreters
+                  - generic:
+                    - generic: "21"
+                  - generic: Iterators
+                  - generic:
+                    - generic: "5"
+                  - generic: JSON
+                  - generic:
+                    - generic: "2"
+                  - generic: Language Features
+                  - generic:
+                    - generic: "4"
+                  - generic: Linear Algebra
+                  - generic:
+                    - generic: "17"
+                  - generic: Linked Lists
+                  - generic:
+                    - generic: "18"
+                  - generic: Lists
+                  - generic:
+                    - generic: "88"
+                  - generic: Logic
+                  - generic:
+                    - generic: "165"
+                  - generic: Machine Learning
+                  - generic:
+                    - generic: "14"
+                  - generic: Mathematics
+                  - generic:
+                    - generic: "667"
+                  - generic: Matrix
+                  - generic:
+                    - generic: "77"
+                  - generic: Memoization
+                  - generic:
+                    - generic: "20"
+                  - generic: Metaprogramming
+                  - generic:
+                    - generic: "8"
+                  - generic: Monads
+                  - generic:
+                    - generic: "3"
+                  - generic: Networks
+                  - generic:
+                    - generic: "4"
+                  - generic: NumPy
+                  - generic:
+                    - generic: "1"
+                  - generic: Number Theory
+                  - generic:
+                    - generic: "47"
+                  - generic: Object-oriented Programming
+                  - generic:
+                    - generic: "46"
+                  - generic: Parsing
+                  - generic:
+                    - generic: "60"
+                  - generic: Performance
+                  - generic:
+                    - generic: "216"
+                  - generic: Permutations
+                  - generic:
+                    - generic: "23"
+                  - generic: Physics
+                  - generic:
+                    - generic: "6"
+                  - generic: Priority Queues
+                  - generic:
+                    - generic: "1"
+                  - generic: Probability
+                  - generic:
+                    - generic: "8"
+                  - generic: Puzzles
+                  - generic:
+                    - generic: "258"
+                  - generic: Queues
+                  - generic:
+                    - generic: "6"
+                  - generic: Recursion
+                  - generic:
+                    - generic: "97"
+                  - generic: Refactoring
+                  - generic:
+                    - generic: "6"
+                  - generic: Regular Expressions
+                  - generic:
+                    - generic: "99"
+                  - generic: Restricted
+                  - generic:
+                    - generic: "39"
+                  - generic: Riddles
+                  - generic:
+                    - generic: "4"
+                  - generic: SQL
+                  - generic:
+                    - generic: "6"
+                  - generic: Scheduling
+                  - generic:
+                    - generic: "4"
+                  - generic: Searching
+                  - generic:
+                    - generic: "8"
+                  - generic: Security
+                  - generic:
+                    - generic: "24"
+                  - generic: Set Theory
+                  - generic:
+                    - generic: "11"
+                  - generic: Sets
+                  - generic:
+                    - generic: "7"
+                  - generic: Simulation
+                  - generic:
+                    - generic: "9"
+                  - generic: Sorting
+                  - generic:
+                    - generic: "107"
+                  - generic: Stacks
+                  - generic:
+                    - generic: "3"
+                  - generic: State Machines
+                  - generic:
+                    - generic: "2"
+                  - generic: Statistics
+                  - generic:
+                    - generic: "16"
+                  - generic: Streams
+                  - generic:
+                    - generic: "8"
+                  - generic: Strings
+                  - generic:
+                    - generic: "525"
+                  - generic: Theorem Proving
+                  - generic:
+                    - generic: "22"
+                  - generic: Trees
+                  - generic:
+                    - generic: "33"
+                  - generic: Tutorials
+                  - generic:
+                    - generic: "13"
+                  - generic: Unicode
+                  - generic:
+                    - generic: "2"
+                  - generic: Web Scraping
+                  - generic:
+                    - generic: "1"
+        - generic [ref=e217]:
+          - generic [ref=e218]:
+            - generic [ref=e219]: FEATURED TAGS
+            - generic [ref=e220]:
+              - link "Cryptography" [ref=e221] [cursor=pointer]:
+                - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CCryptography"
+                - img [ref=e224]
+                - generic [ref=e227]: Cryptography
+              - link "Data Science" [ref=e228] [cursor=pointer]:
+                - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CData+Science"
+                - img [ref=e231]
+                - generic [ref=e233]: Data Science
+              - link "Debugging" [ref=e234] [cursor=pointer]:
+                - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CDebugging"
+                - img [ref=e237]
+                - generic [ref=e239]: Debugging
+              - link "Games" [ref=e240] [cursor=pointer]:
+                - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CGames"
+                - img [ref=e243]
+                - generic [ref=e246]: Games
+              - link "Tutorials" [ref=e247] [cursor=pointer]:
+                - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CTutorials"
+                - img [ref=e250]
+                - generic [ref=e252]: Tutorials
+          - generic [ref=e253]:
+            - generic [ref=e254]: 3,106 Kata Found
+            - button [ref=e258] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img
+          - generic [ref=e260]:
+            - generic [ref=e261]:
+              - generic [ref=e262]:
+                - generic [ref=e265]: 7 kyu
+                - link "The dropWhile Function" [ref=e266] [cursor=pointer]:
+                  - /url: /kata/54f9c37106098647f400080a
+              - generic [ref=e267]:
+                - generic [ref=e268]:
+                  - generic [ref=e269]: 
+                  - text: 3,573
+                - link "jgdodson" [ref=e270] [cursor=pointer]:
+                  - /url: /users/jgdodson
+                  - generic [ref=e271]: 
+                  - text: jgdodson
+                - link "1 Issue Reported" [ref=e273] [cursor=pointer]:
+                  - /url: /kata/54f9c37106098647f400080a/discuss#label-issue
+                  - generic [ref=e274]: 
+                  - text: 1 Issue Reported
+              - generic [ref=e275]:
+                - generic [ref=e277]: 
+                - link "Functional Programming" [ref=e279] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CFunctional+Programming"
+                - link "Arrays" [ref=e281] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CArrays"
+                - link "Algorithms" [ref=e283] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+            - list [ref=e285]:
+              - listitem [ref=e286]:
+                - link "" [ref=e287] [cursor=pointer]:
+                  - /url: /kata/54f9c37106098647f400080a/train/c
+                  - generic [ref=e289]: 
+              - listitem [ref=e290]:
+                - link "" [ref=e291] [cursor=pointer]:
+                  - /url: /kata/54f9c37106098647f400080a/train/coffeescript
+                  - generic [ref=e293]: 
+              - listitem [ref=e294]:
+                - link "" [ref=e295] [cursor=pointer]:
+                  - /url: /kata/54f9c37106098647f400080a/train/cpp
+                  - generic [ref=e297]: 
+              - listitem [ref=e298]:
+                - link "" [ref=e299] [cursor=pointer]:
+                  - /url: /kata/54f9c37106098647f400080a/train/csharp
+                  - generic [ref=e301]: 
+              - listitem [ref=e302]:
+                - link "" [ref=e303] [cursor=pointer]:
+                  - /url: /kata/54f9c37106098647f400080a/train/factor
+                  - generic [ref=e305]: 
+              - listitem [ref=e306]:
+                - link "" [ref=e307] [cursor=pointer]:
+                  - /url: /kata/54f9c37106098647f400080a/train/haskell
+                  - generic [ref=e309]: 
+              - listitem [ref=e310]:
+                - link "" [ref=e311] [cursor=pointer]:
+                  - /url: /kata/54f9c37106098647f400080a/train/javascript
+                  - generic [ref=e313]: 
+              - listitem [ref=e314]:
+                - link "" [ref=e315] [cursor=pointer]:
+                  - /url: /kata/54f9c37106098647f400080a/train/lambdacalc
+                  - generic [ref=e317]: 
+              - listitem [ref=e318]:
+                - link "" [ref=e319] [cursor=pointer]:
+                  - /url: /kata/54f9c37106098647f400080a/train/lua
+                  - generic [ref=e321]: 
+              - listitem [ref=e322]:
+                - link "" [ref=e323] [cursor=pointer]:
+                  - /url: /kata/54f9c37106098647f400080a/train/ocaml
+                  - generic [ref=e325]: 
+              - listitem [ref=e326]:
+                - link "" [ref=e327] [cursor=pointer]:
+                  - /url: /kata/54f9c37106098647f400080a/train/python
+                  - generic [ref=e329]: 
+              - listitem [ref=e330]:
+                - link "" [ref=e331] [cursor=pointer]:
+                  - /url: /kata/54f9c37106098647f400080a/train/ruby
+                  - generic [ref=e333]: 
+          - generic [ref=e335]:
+            - generic [ref=e336]:
+              - generic [ref=e337]:
+                - generic [ref=e340]: 6 kyu
+                - link "Release Wave Validator" [ref=e341] [cursor=pointer]:
+                  - /url: /kata/69debe70a31b1b9851068261
+              - generic [ref=e342]:
+                - generic [ref=e343]:
+                  - generic [ref=e344]: 
+                  - text: "23"
+                - link "Gabpat" [ref=e345] [cursor=pointer]:
+                  - /url: /users/Gabpat
+                  - generic [ref=e346]: 
+                  - text: Gabpat
+              - generic [ref=e347]:
+                - generic [ref=e349]: 
+                - link "Algorithms" [ref=e351] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+                - link "Graph Theory" [ref=e353] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CGraph+Theory"
+                - link "Arrays" [ref=e355] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CArrays"
+                - link "Logic" [ref=e357] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CLogic"
+            - list [ref=e359]:
+              - listitem [ref=e360]:
+                - link "" [ref=e361] [cursor=pointer]:
+                  - /url: /kata/69debe70a31b1b9851068261/train/python
+                  - generic [ref=e363]: 
+          - generic [ref=e365]:
+            - generic [ref=e366]:
+              - generic [ref=e367]:
+                - generic [ref=e370]: 6 kyu
+                - 'link "MIDI Files: Variable Length Quantity" [ref=e371] [cursor=pointer]':
+                  - /url: /kata/6a020680357f9fb3614e6502
+              - generic [ref=e372]:
+                - generic [ref=e373]:
+                  - generic [ref=e374]: 
+                  - text: "76"
+                - link "BobtheLantern" [ref=e375] [cursor=pointer]:
+                  - /url: /users/BobtheLantern
+                  - generic [ref=e376]: 
+                  - text: BobtheLantern
+              - generic [ref=e377]:
+                - generic [ref=e379]: 
+                - link "Binary" [ref=e381] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CBinary"
+                - link "Bits" [ref=e383] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CBits"
+                - link "Algorithms" [ref=e385] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+            - list [ref=e387]:
+              - listitem [ref=e388]:
+                - link "" [ref=e389] [cursor=pointer]:
+                  - /url: /kata/6a020680357f9fb3614e6502/train/cpp
+                  - generic [ref=e391]: 
+              - listitem [ref=e392]:
+                - link "" [ref=e393] [cursor=pointer]:
+                  - /url: /kata/6a020680357f9fb3614e6502/train/csharp
+                  - generic [ref=e395]: 
+              - listitem [ref=e396]:
+                - link "" [ref=e397] [cursor=pointer]:
+                  - /url: /kata/6a020680357f9fb3614e6502/train/go
+                  - generic [ref=e399]: 
+              - listitem [ref=e400]:
+                - link "" [ref=e401] [cursor=pointer]:
+                  - /url: /kata/6a020680357f9fb3614e6502/train/java
+                  - generic [ref=e403]: 
+              - listitem [ref=e404]:
+                - link "" [ref=e405] [cursor=pointer]:
+                  - /url: /kata/6a020680357f9fb3614e6502/train/javascript
+                  - generic [ref=e407]: 
+              - listitem [ref=e408]:
+                - link "" [ref=e409] [cursor=pointer]:
+                  - /url: /kata/6a020680357f9fb3614e6502/train/lua
+                  - generic [ref=e411]: 
+              - listitem [ref=e412]:
+                - link "" [ref=e413] [cursor=pointer]:
+                  - /url: /kata/6a020680357f9fb3614e6502/train/php
+                  - generic [ref=e415]: 
+              - listitem [ref=e416]:
+                - link "" [ref=e417] [cursor=pointer]:
+                  - /url: /kata/6a020680357f9fb3614e6502/train/python
+                  - generic [ref=e419]: 
+              - listitem [ref=e420]:
+                - link "" [ref=e421] [cursor=pointer]:
+                  - /url: /kata/6a020680357f9fb3614e6502/train/ruby
+                  - generic [ref=e423]: 
+              - listitem [ref=e424]:
+                - link "" [ref=e425] [cursor=pointer]:
+                  - /url: /kata/6a020680357f9fb3614e6502/train/rust
+                  - generic [ref=e427]: 
+              - listitem [ref=e428]:
+                - link "" [ref=e429] [cursor=pointer]:
+                  - /url: /kata/6a020680357f9fb3614e6502/train/typescript
+                  - generic [ref=e431]: 
+          - generic [ref=e433]:
+            - generic [ref=e434]:
+              - generic [ref=e435]:
+                - generic [ref=e438]: 4 kyu
+                - link "Queue Battle" [ref=e439] [cursor=pointer]:
+                  - /url: /kata/5d617c2fa5e6a2001a369da2
+              - generic [ref=e440]:
+                - generic [ref=e441]:
+                  - generic [ref=e442]: 
+                  - text: "144"
+                - link "docgunthrop" [ref=e443] [cursor=pointer]:
+                  - /url: /users/docgunthrop
+                  - generic [ref=e444]: 
+                  - text: docgunthrop
+              - generic [ref=e445]:
+                - generic [ref=e447]: 
+                - link "Arrays" [ref=e449] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CArrays"
+                - link "Puzzles" [ref=e451] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CPuzzles"
+                - link "Games" [ref=e453] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CGames"
+                - link "Algorithms" [ref=e455] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+            - list [ref=e457]:
+              - listitem [ref=e458]:
+                - link "" [ref=e459] [cursor=pointer]:
+                  - /url: /kata/5d617c2fa5e6a2001a369da2/train/go
+                  - generic [ref=e461]: 
+              - listitem [ref=e462]:
+                - link "" [ref=e463] [cursor=pointer]:
+                  - /url: /kata/5d617c2fa5e6a2001a369da2/train/javascript
+                  - generic [ref=e465]: 
+              - listitem [ref=e466]:
+                - link "" [ref=e467] [cursor=pointer]:
+                  - /url: /kata/5d617c2fa5e6a2001a369da2/train/kotlin
+                  - generic [ref=e469]: 
+              - listitem [ref=e470]:
+                - link "" [ref=e471] [cursor=pointer]:
+                  - /url: /kata/5d617c2fa5e6a2001a369da2/train/python
+                  - generic [ref=e473]: 
+              - listitem [ref=e474]:
+                - link "" [ref=e475] [cursor=pointer]:
+                  - /url: /kata/5d617c2fa5e6a2001a369da2/train/ruby
+                  - generic [ref=e477]: 
+          - generic [ref=e479]:
+            - generic [ref=e480]:
+              - generic [ref=e481]:
+                - generic [ref=e484]: 5 kyu
+                - link "Ruby Array invoke instance method" [ref=e485] [cursor=pointer]:
+                  - /url: /kata/511fdb8755fe570889000005
+              - generic [ref=e486]:
+                - generic [ref=e487]:
+                  - generic [ref=e488]: 
+                  - text: "473"
+                - link "jhoffner" [ref=e489] [cursor=pointer]:
+                  - /url: /users/jhoffner
+                  - generic [ref=e490]: 
+                  - text: jhoffner
+              - generic [ref=e491]:
+                - generic [ref=e493]: 
+                - link "Arrays" [ref=e495] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CArrays"
+                - link "Algorithms" [ref=e497] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+            - list [ref=e499]:
+              - listitem [ref=e500]:
+                - link "" [ref=e501] [cursor=pointer]:
+                  - /url: /kata/511fdb8755fe570889000005/train/ruby
+                  - generic [ref=e503]: 
+          - generic [ref=e505]:
+            - generic [ref=e506]:
+              - generic [ref=e507]:
+                - generic [ref=e510]: 7 kyu
+                - 'link "Simple Fun #74: Growing Plant" [ref=e511] [cursor=pointer]':
+                  - /url: /kata/58941fec8afa3618c9000184
+              - generic [ref=e512]:
+                - generic [ref=e513]:
+                  - generic [ref=e514]: 
+                  - text: 13,126
+                - link "myjinxin2015" [ref=e515] [cursor=pointer]:
+                  - /url: /users/myjinxin2015
+                  - generic [ref=e516]: 
+                  - text: myjinxin2015
+                - link "1 Issue Reported" [ref=e518] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/discuss#label-issue
+                  - generic [ref=e519]: 
+                  - text: 1 Issue Reported
+              - generic [ref=e520]:
+                - generic [ref=e522]: 
+                - link "Algorithms" [ref=e524] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+            - list [ref=e526]:
+              - listitem [ref=e527]:
+                - link "" [ref=e528] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/c
+                  - generic [ref=e530]: 
+              - listitem [ref=e531]:
+                - link "" [ref=e532] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/cfml
+                  - generic [ref=e534]: 
+              - listitem [ref=e535]:
+                - link "" [ref=e536] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/clojure
+                  - generic [ref=e538]: 
+              - listitem [ref=e539]:
+                - link "" [ref=e540] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/cobol
+                  - generic [ref=e542]: 
+              - listitem [ref=e543]:
+                - link "" [ref=e544] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/coffeescript
+                  - generic [ref=e546]: 
+              - listitem [ref=e547]:
+                - link "" [ref=e548] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/cpp
+                  - generic [ref=e550]: 
+              - listitem [ref=e551]:
+                - link "" [ref=e552] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/crystal
+                  - generic [ref=e554]: 
+              - listitem [ref=e555]:
+                - link "" [ref=e556] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/csharp
+                  - generic [ref=e558]: 
+              - listitem [ref=e559]:
+                - link "" [ref=e560] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/dart
+                  - generic [ref=e562]: 
+              - listitem [ref=e563]:
+                - link "" [ref=e564] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/elixir
+                  - generic [ref=e566]: 
+              - listitem [ref=e567]:
+                - link "" [ref=e568] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/elm
+                  - generic [ref=e570]: 
+              - listitem [ref=e571]:
+                - link "" [ref=e572] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/erlang
+                  - generic [ref=e574]: 
+              - listitem [ref=e575]:
+                - link "" [ref=e576] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/factor
+                  - generic [ref=e578]: 
+              - listitem [ref=e579]:
+                - link "" [ref=e580] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/forth
+                  - generic [ref=e582]: 
+              - listitem [ref=e583]:
+                - link "" [ref=e584] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/fortran
+                  - generic [ref=e586]: 
+              - listitem [ref=e587]:
+                - link "" [ref=e588] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/go
+                  - generic [ref=e590]: 
+              - listitem [ref=e591]:
+                - link "" [ref=e592] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/groovy
+                  - generic [ref=e594]: 
+              - listitem [ref=e595]:
+                - link "" [ref=e596] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/haskell
+                  - generic [ref=e598]: 
+              - listitem [ref=e599]:
+                - link "" [ref=e600] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/java
+                  - generic [ref=e602]: 
+              - listitem [ref=e603]:
+                - link "" [ref=e604] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/javascript
+                  - generic [ref=e606]: 
+              - listitem [ref=e607]:
+                - link "" [ref=e608] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/julia
+                  - generic [ref=e610]: 
+              - listitem [ref=e611]:
+                - link "" [ref=e612] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/kotlin
+                  - generic [ref=e614]: 
+              - listitem [ref=e615]:
+                - link "" [ref=e616] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/lua
+                  - generic [ref=e618]: 
+              - listitem [ref=e619]:
+                - link "" [ref=e620] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/nasm
+                  - generic [ref=e622]: 
+              - listitem [ref=e623]:
+                - link "" [ref=e624] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/nim
+                  - generic [ref=e626]: 
+              - listitem [ref=e627]:
+                - link "" [ref=e628] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/php
+                  - generic [ref=e630]: 
+              - listitem [ref=e631]:
+                - link "" [ref=e632] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/python
+                  - generic [ref=e634]: 
+              - listitem [ref=e635]:
+                - link "" [ref=e636] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/r
+                  - generic [ref=e638]: 
+              - listitem [ref=e639]:
+                - link "" [ref=e640] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/racket
+                  - generic [ref=e642]: 
+              - listitem [ref=e643]:
+                - link "" [ref=e644] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/reason
+                  - generic [ref=e646]: 
+              - listitem [ref=e647]:
+                - link "" [ref=e648] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/ruby
+                  - generic [ref=e650]: 
+              - listitem [ref=e651]:
+                - link "" [ref=e652] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/scala
+                  - generic [ref=e654]: 
+              - listitem [ref=e655]:
+                - link "" [ref=e656] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/sql
+                  - generic [ref=e658]: 
+              - listitem [ref=e659]:
+                - link "" [ref=e660] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/swift
+                  - generic [ref=e662]: 
+              - listitem [ref=e663]:
+                - link "" [ref=e664] [cursor=pointer]:
+                  - /url: /kata/58941fec8afa3618c9000184/train/typescript
+                  - generic [ref=e666]: 
+          - generic [ref=e668]:
+            - generic [ref=e669]:
+              - generic [ref=e670]:
+                - generic [ref=e673]: 6 kyu
+                - link "Find the missing letter" [ref=e674] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2
+              - generic [ref=e675]:
+                - generic [ref=e676]:
+                  - generic [ref=e677]: 
+                  - text: 106,203
+                - link "user5036852" [ref=e678] [cursor=pointer]:
+                  - /url: /users/user5036852
+                  - generic [ref=e679]: 
+                  - text: user5036852
+                - link "1 Issue Reported" [ref=e681] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/discuss#label-issue
+                  - generic [ref=e682]: 
+                  - text: 1 Issue Reported
+              - generic [ref=e683]:
+                - generic [ref=e685]: 
+                - link "Mathematics" [ref=e687] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CMathematics"
+                - link "Algorithms" [ref=e689] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+            - list [ref=e691]:
+              - listitem [ref=e692]:
+                - link "" [ref=e693] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/train/bf
+                  - generic [ref=e695]: 
+              - listitem [ref=e696]:
+                - link "" [ref=e697] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/train/c
+                  - generic [ref=e699]: 
+              - listitem [ref=e700]:
+                - link "" [ref=e701] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/train/coffeescript
+                  - generic [ref=e703]: 
+              - listitem [ref=e704]:
+                - link "" [ref=e705] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/train/cpp
+                  - generic [ref=e707]: 
+              - listitem [ref=e708]:
+                - link "" [ref=e709] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/train/crystal
+                  - generic [ref=e711]: 
+              - listitem [ref=e712]:
+                - link "" [ref=e713] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/train/csharp
+                  - generic [ref=e715]: 
+              - listitem [ref=e716]:
+                - link "" [ref=e717] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/train/dart
+                  - generic [ref=e719]: 
+              - listitem [ref=e720]:
+                - link "" [ref=e721] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/train/factor
+                  - generic [ref=e723]: 
+              - listitem [ref=e724]:
+                - link "" [ref=e725] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/train/fsharp
+                  - generic [ref=e727]: 
+              - listitem [ref=e728]:
+                - link "" [ref=e729] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/train/go
+                  - generic [ref=e731]: 
+              - listitem [ref=e732]:
+                - link "" [ref=e733] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/train/haskell
+                  - generic [ref=e735]: 
+              - listitem [ref=e736]:
+                - link "" [ref=e737] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/train/java
+                  - generic [ref=e739]: 
+              - listitem [ref=e740]:
+                - link "" [ref=e741] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/train/javascript
+                  - generic [ref=e743]: 
+              - listitem [ref=e744]:
+                - link "" [ref=e745] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/train/julia
+                  - generic [ref=e747]: 
+              - listitem [ref=e748]:
+                - link "" [ref=e749] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/train/kotlin
+                  - generic [ref=e751]: 
+              - listitem [ref=e752]:
+                - link "" [ref=e753] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/train/lua
+                  - generic [ref=e755]: 
+              - listitem [ref=e756]:
+                - link "" [ref=e757] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/train/nasm
+                  - generic [ref=e759]: 
+              - listitem [ref=e760]:
+                - link "" [ref=e761] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/train/objc
+                  - generic [ref=e763]: 
+              - listitem [ref=e764]:
+                - link "" [ref=e765] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/train/php
+                  - generic [ref=e767]: 
+              - listitem [ref=e768]:
+                - link "" [ref=e769] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/train/python
+                  - generic [ref=e771]: 
+              - listitem [ref=e772]:
+                - link "" [ref=e773] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/train/racket
+                  - generic [ref=e775]: 
+              - listitem [ref=e776]:
+                - link "" [ref=e777] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/train/ruby
+                  - generic [ref=e779]: 
+              - listitem [ref=e780]:
+                - link "" [ref=e781] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/train/rust
+                  - generic [ref=e783]: 
+              - listitem [ref=e784]:
+                - link "" [ref=e785] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/train/scala
+                  - generic [ref=e787]: 
+              - listitem [ref=e788]:
+                - link "" [ref=e789] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/train/swift
+                  - generic [ref=e791]: 
+              - listitem [ref=e792]:
+                - link "" [ref=e793] [cursor=pointer]:
+                  - /url: /kata/5839edaa6754d6fec10000a2/train/typescript
+                  - generic [ref=e795]: 
+          - generic [ref=e797]:
+            - generic [ref=e798]:
+              - generic [ref=e799]:
+                - generic [ref=e802]: 6 kyu
+                - link "Split Strings" [ref=e803] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001
+              - generic [ref=e804]:
+                - generic [ref=e805]:
+                  - generic [ref=e806]: 
+                  - text: 181,259
+                - link "jhoffner" [ref=e807] [cursor=pointer]:
+                  - /url: /users/jhoffner
+                  - generic [ref=e808]: 
+                  - text: jhoffner
+              - generic [ref=e809]:
+                - generic [ref=e811]: 
+                - link "Regular Expressions" [ref=e813] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CRegular+Expressions"
+                - link "Strings" [ref=e815] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CStrings"
+                - link "Algorithms" [ref=e817] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+            - list [ref=e819]:
+              - listitem [ref=e820]:
+                - link "" [ref=e821] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/bf
+                  - generic [ref=e823]: 
+              - listitem [ref=e824]:
+                - link "" [ref=e825] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/c
+                  - generic [ref=e827]: 
+              - listitem [ref=e828]:
+                - link "" [ref=e829] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/clojure
+                  - generic [ref=e831]: 
+              - listitem [ref=e832]:
+                - link "" [ref=e833] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/cobol
+                  - generic [ref=e835]: 
+              - listitem [ref=e836]:
+                - link "" [ref=e837] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/coffeescript
+                  - generic [ref=e839]: 
+              - listitem [ref=e840]:
+                - link "" [ref=e841] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/cpp
+                  - generic [ref=e843]: 
+              - listitem [ref=e844]:
+                - link "" [ref=e845] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/crystal
+                  - generic [ref=e847]: 
+              - listitem [ref=e848]:
+                - link "" [ref=e849] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/csharp
+                  - generic [ref=e851]: 
+              - listitem [ref=e852]:
+                - link "" [ref=e853] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/dart
+                  - generic [ref=e855]: 
+              - listitem [ref=e856]:
+                - link "" [ref=e857] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/elixir
+                  - generic [ref=e859]: 
+              - listitem [ref=e860]:
+                - link "" [ref=e861] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/factor
+                  - generic [ref=e863]: 
+              - listitem [ref=e864]:
+                - link "" [ref=e865] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/go
+                  - generic [ref=e867]: 
+              - listitem [ref=e868]:
+                - link "" [ref=e869] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/groovy
+                  - generic [ref=e871]: 
+              - listitem [ref=e872]:
+                - link "" [ref=e873] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/haskell
+                  - generic [ref=e875]: 
+              - listitem [ref=e876]:
+                - link "" [ref=e877] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/java
+                  - generic [ref=e879]: 
+              - listitem [ref=e880]:
+                - link "" [ref=e881] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/javascript
+                  - generic [ref=e883]: 
+              - listitem [ref=e884]:
+                - link "" [ref=e885] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/julia
+                  - generic [ref=e887]: 
+              - listitem [ref=e888]:
+                - link "" [ref=e889] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/kotlin
+                  - generic [ref=e891]: 
+              - listitem [ref=e892]:
+                - link "" [ref=e893] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/php
+                  - generic [ref=e895]: 
+              - listitem [ref=e896]:
+                - link "" [ref=e897] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/powershell
+                  - generic [ref=e899]: 
+              - listitem [ref=e900]:
+                - link "" [ref=e901] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/prolog
+                  - generic [ref=e903]: 
+              - listitem [ref=e904]:
+                - link "" [ref=e905] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/python
+                  - generic [ref=e907]: 
+              - listitem [ref=e908]:
+                - link "" [ref=e909] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/r
+                  - generic [ref=e911]: 
+              - listitem [ref=e912]:
+                - link "" [ref=e913] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/ruby
+                  - generic [ref=e915]: 
+              - listitem [ref=e916]:
+                - link "" [ref=e917] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/rust
+                  - generic [ref=e919]: 
+              - listitem [ref=e920]:
+                - link "" [ref=e921] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/scala
+                  - generic [ref=e923]: 
+              - listitem [ref=e924]:
+                - link "" [ref=e925] [cursor=pointer]:
+                  - /url: /kata/515de9ae9dcfc28eb6000001/train/swift
+                  - generic [ref=e927]: 
+          - generic [ref=e929]:
+            - generic [ref=e930]:
+              - generic [ref=e931]:
+                - generic [ref=e934]: 4 kyu
+                - link "Large Factorials" [ref=e935] [cursor=pointer]:
+                  - /url: /kata/557f6437bf8dcdd135000010
+              - generic [ref=e936]:
+                - generic [ref=e937]:
+                  - generic [ref=e938]: 
+                  - text: 10,016
+                - link "matt c" [ref=e939] [cursor=pointer]:
+                  - /url: /users/matt%20c
+                  - generic [ref=e940]: 
+                  - text: matt c
+                - link "6 Issues Reported" [ref=e942] [cursor=pointer]:
+                  - /url: /kata/557f6437bf8dcdd135000010/discuss#label-issue
+                  - generic [ref=e943]: 
+                  - text: 6 Issues Reported
+              - generic [ref=e944]:
+                - generic [ref=e946]: 
+                - link "Algorithms" [ref=e948] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+                - link "Big Integers" [ref=e950] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CBig+Integers"
+            - list [ref=e952]:
+              - listitem [ref=e953]:
+                - link "" [ref=e954] [cursor=pointer]:
+                  - /url: /kata/557f6437bf8dcdd135000010/train/c
+                  - generic [ref=e956]: 
+              - listitem [ref=e957]:
+                - link "" [ref=e958] [cursor=pointer]:
+                  - /url: /kata/557f6437bf8dcdd135000010/train/cpp
+                  - generic [ref=e960]: 
+              - listitem [ref=e961]:
+                - link "" [ref=e962] [cursor=pointer]:
+                  - /url: /kata/557f6437bf8dcdd135000010/train/csharp
+                  - generic [ref=e964]: 
+              - listitem [ref=e965]:
+                - link "" [ref=e966] [cursor=pointer]:
+                  - /url: /kata/557f6437bf8dcdd135000010/train/java
+                  - generic [ref=e968]: 
+              - listitem [ref=e969]:
+                - link "" [ref=e970] [cursor=pointer]:
+                  - /url: /kata/557f6437bf8dcdd135000010/train/javascript
+                  - generic [ref=e972]: 
+              - listitem [ref=e973]:
+                - link "" [ref=e974] [cursor=pointer]:
+                  - /url: /kata/557f6437bf8dcdd135000010/train/nasm
+                  - generic [ref=e976]: 
+              - listitem [ref=e977]:
+                - link "" [ref=e978] [cursor=pointer]:
+                  - /url: /kata/557f6437bf8dcdd135000010/train/rust
+                  - generic [ref=e980]: 
+          - generic [ref=e982]:
+            - generic [ref=e983]:
+              - generic [ref=e984]:
+                - generic [ref=e987]: 6 kyu
+                - link "Virtual string compression" [ref=e988] [cursor=pointer]:
+                  - /url: /kata/6935d143ecefd2e9904262ef
+              - generic [ref=e989]:
+                - generic [ref=e990]:
+                  - generic [ref=e991]: 
+                  - text: "26"
+                - link "D_A_V_M_X_H_25" [ref=e992] [cursor=pointer]:
+                  - /url: /users/D_A_V_M_X_H_25
+                  - generic [ref=e993]: 
+                  - text: D_A_V_M_X_H_25
+              - generic [ref=e994]:
+                - generic [ref=e996]: 
+                - link "Logic" [ref=e998] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CLogic"
+                - link "Performance" [ref=e1000] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CPerformance"
+                - link "Algorithms" [ref=e1002] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+                - link "Strings" [ref=e1004] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CStrings"
+            - list [ref=e1006]:
+              - listitem [ref=e1007]:
+                - link "" [ref=e1008] [cursor=pointer]:
+                  - /url: /kata/6935d143ecefd2e9904262ef/train/javascript
+                  - generic [ref=e1010]: 
+          - generic [ref=e1012]:
+            - generic [ref=e1013]:
+              - generic [ref=e1014]:
+                - generic [ref=e1017]: 5 kyu
+                - link "Number of Distinct Substrings (advanced)" [ref=e1018] [cursor=pointer]:
+                  - /url: /kata/6999f80ec6d1c396f6809312
+              - generic [ref=e1019]:
+                - generic [ref=e1020]:
+                  - generic [ref=e1021]: 
+                  - text: "21"
+                - link "tkonrad" [ref=e1022] [cursor=pointer]:
+                  - /url: /users/tkonrad
+                  - generic [ref=e1023]: 
+                  - text: tkonrad
+              - generic [ref=e1024]:
+                - generic [ref=e1026]: 
+                - link "Strings" [ref=e1028] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CStrings"
+                - link "Algorithms" [ref=e1030] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+            - list [ref=e1032]:
+              - listitem [ref=e1033]:
+                - link "" [ref=e1034] [cursor=pointer]:
+                  - /url: /kata/6999f80ec6d1c396f6809312/train/python
+                  - generic [ref=e1036]: 
+          - generic [ref=e1038]:
+            - generic [ref=e1039]:
+              - generic [ref=e1040]:
+                - generic [ref=e1043]: 5 kyu
+                - link "Block Blast" [ref=e1044] [cursor=pointer]:
+                  - /url: /kata/699c081dc91c581b7dd90565
+              - generic [ref=e1045]:
+                - generic [ref=e1046]:
+                  - generic [ref=e1047]: 
+                  - text: "19"
+                - link "azart__" [ref=e1048] [cursor=pointer]:
+                  - /url: /users/azart__
+                  - generic [ref=e1049]: 
+                  - text: azart__
+              - generic [ref=e1050]:
+                - generic [ref=e1052]: 
+                - link "Games" [ref=e1054] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CGames"
+                - link "Algorithms" [ref=e1056] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+            - list [ref=e1058]:
+              - listitem [ref=e1059]:
+                - link "" [ref=e1060] [cursor=pointer]:
+                  - /url: /kata/699c081dc91c581b7dd90565/train/python
+                  - generic [ref=e1062]: 
+          - generic [ref=e1064]:
+            - generic [ref=e1065]:
+              - generic [ref=e1066]:
+                - generic [ref=e1069]: 7 kyu
+                - link "How Many Lonely Letters?" [ref=e1070] [cursor=pointer]:
+                  - /url: /kata/69cda5b85599f307742ce70a
+              - generic [ref=e1071]:
+                - generic [ref=e1072]:
+                  - generic [ref=e1073]: 
+                  - text: "587"
+                - link "Ori-wiki" [ref=e1074] [cursor=pointer]:
+                  - /url: /users/Ori-wiki
+                  - generic [ref=e1075]: 
+                  - text: Ori-wiki
+                - link "1 Issue Reported" [ref=e1077] [cursor=pointer]:
+                  - /url: /kata/69cda5b85599f307742ce70a/discuss#label-issue
+                  - generic [ref=e1078]: 
+                  - text: 1 Issue Reported
+              - generic [ref=e1079]:
+                - generic [ref=e1081]: 
+                - link "Strings" [ref=e1083] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CStrings"
+                - link "Fundamentals" [ref=e1085] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CFundamentals"
+                - link "Algorithms" [ref=e1087] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+            - list [ref=e1089]:
+              - listitem [ref=e1090]:
+                - link "" [ref=e1091] [cursor=pointer]:
+                  - /url: /kata/69cda5b85599f307742ce70a/train/c
+                  - generic [ref=e1093]: 
+              - listitem [ref=e1094]:
+                - link "" [ref=e1095] [cursor=pointer]:
+                  - /url: /kata/69cda5b85599f307742ce70a/train/dart
+                  - generic [ref=e1097]: 
+              - listitem [ref=e1098]:
+                - link "" [ref=e1099] [cursor=pointer]:
+                  - /url: /kata/69cda5b85599f307742ce70a/train/javascript
+                  - generic [ref=e1101]: 
+              - listitem [ref=e1102]:
+                - link "" [ref=e1103] [cursor=pointer]:
+                  - /url: /kata/69cda5b85599f307742ce70a/train/lua
+                  - generic [ref=e1105]: 
+              - listitem [ref=e1106]:
+                - link "" [ref=e1107] [cursor=pointer]:
+                  - /url: /kata/69cda5b85599f307742ce70a/train/python
+                  - generic [ref=e1109]: 
+              - listitem [ref=e1110]:
+                - link "" [ref=e1111] [cursor=pointer]:
+                  - /url: /kata/69cda5b85599f307742ce70a/train/solidity
+                  - generic [ref=e1113]: 
+          - generic [ref=e1115]:
+            - generic [ref=e1116]:
+              - generic [ref=e1117]:
+                - generic [ref=e1120]: 6 kyu
+                - link "Missing Angle" [ref=e1121] [cursor=pointer]:
+                  - /url: /kata/58417e9ab9c25c774500001f
+              - generic [ref=e1122]:
+                - generic [ref=e1123]:
+                  - generic [ref=e1124]: 
+                  - text: "901"
+                - link "user5196477" [ref=e1125] [cursor=pointer]:
+                  - /url: /users/user5196477
+                  - generic [ref=e1126]: 
+                  - text: user5196477
+                - link "2 Issues Reported" [ref=e1128] [cursor=pointer]:
+                  - /url: /kata/58417e9ab9c25c774500001f/discuss#label-issue
+                  - generic [ref=e1129]: 
+                  - text: 2 Issues Reported
+              - generic [ref=e1130]:
+                - generic [ref=e1132]: 
+                - link "Algorithms" [ref=e1134] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+                - link "Mathematics" [ref=e1136] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CMathematics"
+                - link "Geometry" [ref=e1138] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CGeometry"
+            - list [ref=e1140]:
+              - listitem [ref=e1141]:
+                - link "" [ref=e1142] [cursor=pointer]:
+                  - /url: /kata/58417e9ab9c25c774500001f/train/c
+                  - generic [ref=e1144]: 
+              - listitem [ref=e1145]:
+                - link "" [ref=e1146] [cursor=pointer]:
+                  - /url: /kata/58417e9ab9c25c774500001f/train/coffeescript
+                  - generic [ref=e1148]: 
+              - listitem [ref=e1149]:
+                - link "" [ref=e1150] [cursor=pointer]:
+                  - /url: /kata/58417e9ab9c25c774500001f/train/crystal
+                  - generic [ref=e1152]: 
+              - listitem [ref=e1153]:
+                - link "" [ref=e1154] [cursor=pointer]:
+                  - /url: /kata/58417e9ab9c25c774500001f/train/csharp
+                  - generic [ref=e1156]: 
+              - listitem [ref=e1157]:
+                - link "" [ref=e1158] [cursor=pointer]:
+                  - /url: /kata/58417e9ab9c25c774500001f/train/javascript
+                  - generic [ref=e1160]: 
+              - listitem [ref=e1161]:
+                - link "" [ref=e1162] [cursor=pointer]:
+                  - /url: /kata/58417e9ab9c25c774500001f/train/python
+                  - generic [ref=e1164]: 
+              - listitem [ref=e1165]:
+                - link "" [ref=e1166] [cursor=pointer]:
+                  - /url: /kata/58417e9ab9c25c774500001f/train/ruby
+                  - generic [ref=e1168]: 
+          - generic [ref=e1170]:
+            - generic [ref=e1171]:
+              - generic [ref=e1172]:
+                - generic [ref=e1175]: 5 kyu
+                - link "Square sums (simple)" [ref=e1176] [cursor=pointer]:
+                  - /url: /kata/5a6b24d4e626c59d5b000066
+              - generic [ref=e1177]:
+                - generic [ref=e1178]:
+                  - generic [ref=e1179]: 
+                  - text: 1,510
+                - link "metalim" [ref=e1180] [cursor=pointer]:
+                  - /url: /users/metalim
+                  - generic [ref=e1181]: 
+                  - text: metalim
+                - link "3 Issues Reported" [ref=e1183] [cursor=pointer]:
+                  - /url: /kata/5a6b24d4e626c59d5b000066/discuss#label-issue
+                  - generic [ref=e1184]: 
+                  - text: 3 Issues Reported
+              - generic [ref=e1185]:
+                - generic [ref=e1187]: 
+                - link "Algorithms" [ref=e1189] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+                - link "Mathematics" [ref=e1191] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CMathematics"
+            - list [ref=e1193]:
+              - listitem [ref=e1194]:
+                - link "" [ref=e1195] [cursor=pointer]:
+                  - /url: /kata/5a6b24d4e626c59d5b000066/train/c
+                  - generic [ref=e1197]: 
+              - listitem [ref=e1198]:
+                - link "" [ref=e1199] [cursor=pointer]:
+                  - /url: /kata/5a6b24d4e626c59d5b000066/train/coffeescript
+                  - generic [ref=e1201]: 
+              - listitem [ref=e1202]:
+                - link "" [ref=e1203] [cursor=pointer]:
+                  - /url: /kata/5a6b24d4e626c59d5b000066/train/go
+                  - generic [ref=e1205]: 
+              - listitem [ref=e1206]:
+                - link "" [ref=e1207] [cursor=pointer]:
+                  - /url: /kata/5a6b24d4e626c59d5b000066/train/haskell
+                  - generic [ref=e1209]: 
+              - listitem [ref=e1210]:
+                - link "" [ref=e1211] [cursor=pointer]:
+                  - /url: /kata/5a6b24d4e626c59d5b000066/train/java
+                  - generic [ref=e1213]: 
+              - listitem [ref=e1214]:
+                - link "" [ref=e1215] [cursor=pointer]:
+                  - /url: /kata/5a6b24d4e626c59d5b000066/train/javascript
+                  - generic [ref=e1217]: 
+              - listitem [ref=e1218]:
+                - link "" [ref=e1219] [cursor=pointer]:
+                  - /url: /kata/5a6b24d4e626c59d5b000066/train/python
+                  - generic [ref=e1221]: 
+              - listitem [ref=e1222]:
+                - link "" [ref=e1223] [cursor=pointer]:
+                  - /url: /kata/5a6b24d4e626c59d5b000066/train/ruby
+                  - generic [ref=e1225]: 
+              - listitem [ref=e1226]:
+                - link "" [ref=e1227] [cursor=pointer]:
+                  - /url: /kata/5a6b24d4e626c59d5b000066/train/rust
+                  - generic [ref=e1229]: 
+              - listitem [ref=e1230]:
+                - link "" [ref=e1231] [cursor=pointer]:
+                  - /url: /kata/5a6b24d4e626c59d5b000066/train/scala
+                  - generic [ref=e1233]: 
+          - generic [ref=e1235]:
+            - generic [ref=e1236]:
+              - generic [ref=e1237]:
+                - generic [ref=e1240]: 5 kyu
+                - link "Iterative Rotation Cipher" [ref=e1241] [cursor=pointer]:
+                  - /url: /kata/5a3357ae8058425bde002674
+              - generic [ref=e1242]:
+                - generic [ref=e1243]:
+                  - generic [ref=e1244]: 
+                  - text: "893"
+                - link "docgunthrop" [ref=e1245] [cursor=pointer]:
+                  - /url: /users/docgunthrop
+                  - generic [ref=e1246]: 
+                  - text: docgunthrop
+                - link "1 Issue Reported" [ref=e1248] [cursor=pointer]:
+                  - /url: /kata/5a3357ae8058425bde002674/discuss#label-issue
+                  - generic [ref=e1249]: 
+                  - text: 1 Issue Reported
+              - generic [ref=e1250]:
+                - generic [ref=e1252]: 
+                - link "Strings" [ref=e1254] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CStrings"
+                - link "Ciphers" [ref=e1256] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CCiphers"
+                - link "Algorithms" [ref=e1258] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+            - list [ref=e1260]:
+              - listitem [ref=e1261]:
+                - link "" [ref=e1262] [cursor=pointer]:
+                  - /url: /kata/5a3357ae8058425bde002674/train/cpp
+                  - generic [ref=e1264]: 
+              - listitem [ref=e1265]:
+                - link "" [ref=e1266] [cursor=pointer]:
+                  - /url: /kata/5a3357ae8058425bde002674/train/csharp
+                  - generic [ref=e1268]: 
+              - listitem [ref=e1269]:
+                - link "" [ref=e1270] [cursor=pointer]:
+                  - /url: /kata/5a3357ae8058425bde002674/train/elixir
+                  - generic [ref=e1272]: 
+              - listitem [ref=e1273]:
+                - link "" [ref=e1274] [cursor=pointer]:
+                  - /url: /kata/5a3357ae8058425bde002674/train/go
+                  - generic [ref=e1276]: 
+              - listitem [ref=e1277]:
+                - link "" [ref=e1278] [cursor=pointer]:
+                  - /url: /kata/5a3357ae8058425bde002674/train/haskell
+                  - generic [ref=e1280]: 
+              - listitem [ref=e1281]:
+                - link "" [ref=e1282] [cursor=pointer]:
+                  - /url: /kata/5a3357ae8058425bde002674/train/javascript
+                  - generic [ref=e1284]: 
+              - listitem [ref=e1285]:
+                - link "" [ref=e1286] [cursor=pointer]:
+                  - /url: /kata/5a3357ae8058425bde002674/train/kotlin
+                  - generic [ref=e1288]: 
+              - listitem [ref=e1289]:
+                - link "" [ref=e1290] [cursor=pointer]:
+                  - /url: /kata/5a3357ae8058425bde002674/train/python
+                  - generic [ref=e1292]: 
+              - listitem [ref=e1293]:
+                - link "" [ref=e1294] [cursor=pointer]:
+                  - /url: /kata/5a3357ae8058425bde002674/train/ruby
+                  - generic [ref=e1296]: 
+              - listitem [ref=e1297]:
+                - link "" [ref=e1298] [cursor=pointer]:
+                  - /url: /kata/5a3357ae8058425bde002674/train/rust
+                  - generic [ref=e1300]: 
+          - generic [ref=e1302]:
+            - generic [ref=e1303]:
+              - generic [ref=e1304]:
+                - generic [ref=e1307]: 6 kyu
+                - link "Multisize Nonogram Checker" [ref=e1308] [cursor=pointer]:
+                  - /url: /kata/69f7182cce8b8759701fde64
+              - generic [ref=e1309]:
+                - generic [ref=e1310]:
+                  - generic [ref=e1311]: 
+                  - text: "47"
+                - link "AbdisamadAbdi" [ref=e1312] [cursor=pointer]:
+                  - /url: /users/AbdisamadAbdi
+                  - generic [ref=e1313]: 
+                  - text: AbdisamadAbdi
+              - generic [ref=e1314]:
+                - generic [ref=e1316]: 
+                - link "Algorithms" [ref=e1318] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+                - link "Logic" [ref=e1320] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CLogic"
+                - link "Games" [ref=e1322] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CGames"
+            - list [ref=e1324]:
+              - listitem [ref=e1325]:
+                - link "" [ref=e1326] [cursor=pointer]:
+                  - /url: /kata/69f7182cce8b8759701fde64/train/python
+                  - generic [ref=e1328]: 
+          - generic [ref=e1330]:
+            - generic [ref=e1331]:
+              - generic [ref=e1332]:
+                - generic [ref=e1335]: 4 kyu
+                - link "Chinese Numeral Encoder" [ref=e1336] [cursor=pointer]:
+                  - /url: /kata/52608f5345d4a19bed000b31
+              - generic [ref=e1337]:
+                - generic [ref=e1338]:
+                  - generic [ref=e1339]: 
+                  - text: 1,256
+                - link "constablebrew" [ref=e1340] [cursor=pointer]:
+                  - /url: /users/constablebrew
+                  - generic [ref=e1341]: 
+                  - text: constablebrew
+                - link "3 Issues Reported" [ref=e1343] [cursor=pointer]:
+                  - /url: /kata/52608f5345d4a19bed000b31/discuss#label-issue
+                  - generic [ref=e1344]: 
+                  - text: 3 Issues Reported
+              - generic [ref=e1345]:
+                - generic [ref=e1347]: 
+                - link "Algorithms" [ref=e1349] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+            - list [ref=e1351]:
+              - listitem [ref=e1352]:
+                - link "" [ref=e1353] [cursor=pointer]:
+                  - /url: /kata/52608f5345d4a19bed000b31/train/javascript
+                  - generic [ref=e1355]: 
+              - listitem [ref=e1356]:
+                - link "" [ref=e1357] [cursor=pointer]:
+                  - /url: /kata/52608f5345d4a19bed000b31/train/python
+                  - generic [ref=e1359]: 
+          - generic [ref=e1361]:
+            - generic [ref=e1362]:
+              - generic [ref=e1363]:
+                - generic [ref=e1366]: 4 kyu
+                - link "LRU Cache" [ref=e1367] [cursor=pointer]:
+                  - /url: /kata/53b406e67040e51e17000c0a
+              - generic [ref=e1368]:
+                - generic [ref=e1369]:
+                  - generic [ref=e1370]: 
+                  - text: "524"
+                - link "xcthulhu" [ref=e1371] [cursor=pointer]:
+                  - /url: /users/xcthulhu
+                  - generic [ref=e1372]: 
+                  - text: xcthulhu
+                - link "1 Issue Reported" [ref=e1374] [cursor=pointer]:
+                  - /url: /kata/53b406e67040e51e17000c0a/discuss#label-issue
+                  - generic [ref=e1375]: 
+                  - text: 1 Issue Reported
+              - generic [ref=e1376]:
+                - generic [ref=e1378]: 
+                - link "Data Structures" [ref=e1380] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CData+Structures"
+                - link "Metaprogramming" [ref=e1382] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CMetaprogramming"
+                - link "Algorithms" [ref=e1384] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+            - list [ref=e1386]:
+              - listitem [ref=e1387]:
+                - link "" [ref=e1388] [cursor=pointer]:
+                  - /url: /kata/53b406e67040e51e17000c0a/train/javascript
+                  - generic [ref=e1390]: 
+          - generic [ref=e1392]:
+            - generic [ref=e1393]:
+              - generic [ref=e1394]:
+                - generic [ref=e1397]: 7 kyu
+                - link "Rotate for a Max" [ref=e1398] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026
+              - generic [ref=e1399]:
+                - generic [ref=e1400]:
+                  - generic [ref=e1401]: 
+                  - text: 11,713
+                - link "g964" [ref=e1402] [cursor=pointer]:
+                  - /url: /users/g964
+                  - generic [ref=e1403]: 
+                  - text: g964
+                - link "1 Issue Reported" [ref=e1405] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/discuss#label-issue
+                  - generic [ref=e1406]: 
+                  - text: 1 Issue Reported
+              - generic [ref=e1407]:
+                - generic [ref=e1409]: 
+                - link "Algorithms" [ref=e1411] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+            - list [ref=e1413]:
+              - listitem [ref=e1414]:
+                - link "" [ref=e1415] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/c
+                  - generic [ref=e1417]: 
+              - listitem [ref=e1418]:
+                - link "" [ref=e1419] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/clojure
+                  - generic [ref=e1421]: 
+              - listitem [ref=e1422]:
+                - link "" [ref=e1423] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/coffeescript
+                  - generic [ref=e1425]: 
+              - listitem [ref=e1426]:
+                - link "" [ref=e1427] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/cpp
+                  - generic [ref=e1429]: 
+              - listitem [ref=e1430]:
+                - link "" [ref=e1431] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/crystal
+                  - generic [ref=e1433]: 
+              - listitem [ref=e1434]:
+                - link "" [ref=e1435] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/csharp
+                  - generic [ref=e1437]: 
+              - listitem [ref=e1438]:
+                - link "" [ref=e1439] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/dart
+                  - generic [ref=e1441]: 
+              - listitem [ref=e1442]:
+                - link "" [ref=e1443] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/elixir
+                  - generic [ref=e1445]: 
+              - listitem [ref=e1446]:
+                - link "" [ref=e1447] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/factor
+                  - generic [ref=e1449]: 
+              - listitem [ref=e1450]:
+                - link "" [ref=e1451] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/fsharp
+                  - generic [ref=e1453]: 
+              - listitem [ref=e1454]:
+                - link "" [ref=e1455] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/go
+                  - generic [ref=e1457]: 
+              - listitem [ref=e1458]:
+                - link "" [ref=e1459] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/haskell
+                  - generic [ref=e1461]: 
+              - listitem [ref=e1462]:
+                - link "" [ref=e1463] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/java
+                  - generic [ref=e1465]: 
+              - listitem [ref=e1466]:
+                - link "" [ref=e1467] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/javascript
+                  - generic [ref=e1469]: 
+              - listitem [ref=e1470]:
+                - link "" [ref=e1471] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/julia
+                  - generic [ref=e1473]: 
+              - listitem [ref=e1474]:
+                - link "" [ref=e1475] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/kotlin
+                  - generic [ref=e1477]: 
+              - listitem [ref=e1478]:
+                - link "" [ref=e1479] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/lua
+                  - generic [ref=e1481]: 
+              - listitem [ref=e1482]:
+                - link "" [ref=e1483] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/nim
+                  - generic [ref=e1485]: 
+              - listitem [ref=e1486]:
+                - link "" [ref=e1487] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/ocaml
+                  - generic [ref=e1489]: 
+              - listitem [ref=e1490]:
+                - link "" [ref=e1491] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/perl
+                  - generic [ref=e1493]: 
+              - listitem [ref=e1494]:
+                - link "" [ref=e1495] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/php
+                  - generic [ref=e1497]: 
+              - listitem [ref=e1498]:
+                - link "" [ref=e1499] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/powershell
+                  - generic [ref=e1501]: 
+              - listitem [ref=e1502]:
+                - link "" [ref=e1503] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/prolog
+                  - generic [ref=e1505]: 
+              - listitem [ref=e1506]:
+                - link "" [ref=e1507] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/python
+                  - generic [ref=e1509]: 
+              - listitem [ref=e1510]:
+                - link "" [ref=e1511] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/r
+                  - generic [ref=e1513]: 
+              - listitem [ref=e1514]:
+                - link "" [ref=e1515] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/racket
+                  - generic [ref=e1517]: 
+              - listitem [ref=e1518]:
+                - link "" [ref=e1519] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/reason
+                  - generic [ref=e1521]: 
+              - listitem [ref=e1522]:
+                - link "" [ref=e1523] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/ruby
+                  - generic [ref=e1525]: 
+              - listitem [ref=e1526]:
+                - link "" [ref=e1527] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/rust
+                  - generic [ref=e1529]: 
+              - listitem [ref=e1530]:
+                - link "" [ref=e1531] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/scala
+                  - generic [ref=e1533]: 
+              - listitem [ref=e1534]:
+                - link "" [ref=e1535] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/shell
+                  - generic [ref=e1537]: 
+              - listitem [ref=e1538]:
+                - link "" [ref=e1539] [cursor=pointer]:
+                  - /url: /kata/56a4872cbb65f3a610000026/train/typescript
+                  - generic [ref=e1541]: 
+          - generic [ref=e1543]:
+            - generic [ref=e1544]:
+              - generic [ref=e1545]:
+                - generic [ref=e1548]: 5 kyu
+                - link "Multisize Nonogram Encoder" [ref=e1549] [cursor=pointer]:
+                  - /url: /kata/629049687438580064f0e6dd
+              - generic [ref=e1550]:
+                - generic [ref=e1551]:
+                  - generic [ref=e1552]: 
+                  - text: "299"
+                - link "оkabe" [ref=e1553] [cursor=pointer]:
+                  - /url: /users/%D0%BEkabe
+                  - generic [ref=e1554]: 
+                  - text: оkabe
+              - generic [ref=e1555]:
+                - generic [ref=e1557]: 
+                - link "Games" [ref=e1559] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CGames"
+                - link "Algorithms" [ref=e1561] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+            - list [ref=e1563]:
+              - listitem [ref=e1564]:
+                - link "" [ref=e1565] [cursor=pointer]:
+                  - /url: /kata/629049687438580064f0e6dd/train/javascript
+                  - generic [ref=e1567]: 
+              - listitem [ref=e1568]:
+                - link "" [ref=e1569] [cursor=pointer]:
+                  - /url: /kata/629049687438580064f0e6dd/train/python
+                  - generic [ref=e1571]: 
+              - listitem [ref=e1572]:
+                - link "" [ref=e1573] [cursor=pointer]:
+                  - /url: /kata/629049687438580064f0e6dd/train/rust
+                  - generic [ref=e1575]: 
+          - generic [ref=e1577]:
+            - generic [ref=e1578]:
+              - generic [ref=e1579]:
+                - generic [ref=e1582]: 6 kyu
+                - link "Tom's Allergies" [ref=e1583] [cursor=pointer]:
+                  - /url: /kata/58be35e9e36224a33f000023
+              - generic [ref=e1584]:
+                - generic [ref=e1585]:
+                  - generic [ref=e1586]: 
+                  - text: "389"
+                - link "Lusina" [ref=e1587] [cursor=pointer]:
+                  - /url: /users/Lusina
+                  - generic [ref=e1588]: 
+                  - text: Lusina
+              - generic [ref=e1589]:
+                - generic [ref=e1591]: 
+                - link "Algorithms" [ref=e1593] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+                - link "Puzzles" [ref=e1595] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CPuzzles"
+                - link "Fundamentals" [ref=e1597] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CFundamentals"
+            - list [ref=e1599]:
+              - listitem [ref=e1600]:
+                - link "" [ref=e1601] [cursor=pointer]:
+                  - /url: /kata/58be35e9e36224a33f000023/train/crystal
+                  - generic [ref=e1603]: 
+              - listitem [ref=e1604]:
+                - link "" [ref=e1605] [cursor=pointer]:
+                  - /url: /kata/58be35e9e36224a33f000023/train/javascript
+                  - generic [ref=e1607]: 
+              - listitem [ref=e1608]:
+                - link "" [ref=e1609] [cursor=pointer]:
+                  - /url: /kata/58be35e9e36224a33f000023/train/php
+                  - generic [ref=e1611]: 
+              - listitem [ref=e1612]:
+                - link "" [ref=e1613] [cursor=pointer]:
+                  - /url: /kata/58be35e9e36224a33f000023/train/python
+                  - generic [ref=e1615]: 
+              - listitem [ref=e1616]:
+                - link "" [ref=e1617] [cursor=pointer]:
+                  - /url: /kata/58be35e9e36224a33f000023/train/ruby
+                  - generic [ref=e1619]: 
+          - generic [ref=e1621]:
+            - generic [ref=e1622]:
+              - generic [ref=e1623]:
+                - generic [ref=e1626]: 5 kyu
+                - link "Simple string expansion" [ref=e1627] [cursor=pointer]:
+                  - /url: /kata/5a793fdbfd8c06d07f0000d5
+              - generic [ref=e1628]:
+                - generic [ref=e1629]:
+                  - generic [ref=e1630]: 
+                  - text: 2,397
+                - link "KenKamau" [ref=e1631] [cursor=pointer]:
+                  - /url: /users/KenKamau
+                  - generic [ref=e1632]: 
+                  - text: KenKamau
+              - generic [ref=e1633]:
+                - generic [ref=e1635]: 
+                - link "Algorithms" [ref=e1637] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+            - list [ref=e1639]:
+              - listitem [ref=e1640]:
+                - link "" [ref=e1641] [cursor=pointer]:
+                  - /url: /kata/5a793fdbfd8c06d07f0000d5/train/clojure
+                  - generic [ref=e1643]: 
+              - listitem [ref=e1644]:
+                - link "" [ref=e1645] [cursor=pointer]:
+                  - /url: /kata/5a793fdbfd8c06d07f0000d5/train/cpp
+                  - generic [ref=e1647]: 
+              - listitem [ref=e1648]:
+                - link "" [ref=e1649] [cursor=pointer]:
+                  - /url: /kata/5a793fdbfd8c06d07f0000d5/train/haskell
+                  - generic [ref=e1651]: 
+              - listitem [ref=e1652]:
+                - link "" [ref=e1653] [cursor=pointer]:
+                  - /url: /kata/5a793fdbfd8c06d07f0000d5/train/java
+                  - generic [ref=e1655]: 
+              - listitem [ref=e1656]:
+                - link "" [ref=e1657] [cursor=pointer]:
+                  - /url: /kata/5a793fdbfd8c06d07f0000d5/train/javascript
+                  - generic [ref=e1659]: 
+              - listitem [ref=e1660]:
+                - link "" [ref=e1661] [cursor=pointer]:
+                  - /url: /kata/5a793fdbfd8c06d07f0000d5/train/lua
+                  - generic [ref=e1663]: 
+              - listitem [ref=e1664]:
+                - link "" [ref=e1665] [cursor=pointer]:
+                  - /url: /kata/5a793fdbfd8c06d07f0000d5/train/php
+                  - generic [ref=e1667]: 
+              - listitem [ref=e1668]:
+                - link "" [ref=e1669] [cursor=pointer]:
+                  - /url: /kata/5a793fdbfd8c06d07f0000d5/train/python
+                  - generic [ref=e1671]: 
+              - listitem [ref=e1672]:
+                - link "" [ref=e1673] [cursor=pointer]:
+                  - /url: /kata/5a793fdbfd8c06d07f0000d5/train/ruby
+                  - generic [ref=e1675]: 
+              - listitem [ref=e1676]:
+                - link "" [ref=e1677] [cursor=pointer]:
+                  - /url: /kata/5a793fdbfd8c06d07f0000d5/train/scala
+                  - generic [ref=e1679]: 
+          - generic [ref=e1681]:
+            - generic [ref=e1682]:
+              - generic [ref=e1683]:
+                - generic [ref=e1686]: 6 kyu
+                - link "Hex class" [ref=e1687] [cursor=pointer]:
+                  - /url: /kata/5483366098aa442def0009af
+              - generic [ref=e1688]:
+                - generic [ref=e1689]:
+                  - generic [ref=e1690]: 
+                  - text: 1,806
+                - link "josher19" [ref=e1691] [cursor=pointer]:
+                  - /url: /users/josher19
+                  - generic [ref=e1692]: 
+                  - text: josher19
+                - link "2 Issues Reported" [ref=e1694] [cursor=pointer]:
+                  - /url: /kata/5483366098aa442def0009af/discuss#label-issue
+                  - generic [ref=e1695]: 
+                  - text: 2 Issues Reported
+              - generic [ref=e1696]:
+                - generic [ref=e1698]: 
+                - link "Algorithms" [ref=e1700] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+                - link "Parsing" [ref=e1702] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CParsing"
+                - link "Fundamentals" [ref=e1704] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CFundamentals"
+                - link "Object-oriented Programming" [ref=e1706] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CObject-oriented+Programming"
+            - list [ref=e1708]:
+              - listitem [ref=e1709]:
+                - link "" [ref=e1710] [cursor=pointer]:
+                  - /url: /kata/5483366098aa442def0009af/train/coffeescript
+                  - generic [ref=e1712]: 
+              - listitem [ref=e1713]:
+                - link "" [ref=e1714] [cursor=pointer]:
+                  - /url: /kata/5483366098aa442def0009af/train/java
+                  - generic [ref=e1716]: 
+              - listitem [ref=e1717]:
+                - link "" [ref=e1718] [cursor=pointer]:
+                  - /url: /kata/5483366098aa442def0009af/train/javascript
+                  - generic [ref=e1720]: 
+          - generic [ref=e1722]:
+            - generic [ref=e1723]:
+              - generic [ref=e1724]:
+                - generic [ref=e1727]: 5 kyu
+                - link "Pete, the baker" [ref=e1728] [cursor=pointer]:
+                  - /url: /kata/525c65e51bf619685c000059
+              - generic [ref=e1729]:
+                - generic [ref=e1730]:
+                  - generic [ref=e1731]: 
+                  - text: 90,202
+                - link "BattleRattle" [ref=e1732] [cursor=pointer]:
+                  - /url: /users/BattleRattle
+                  - generic [ref=e1733]: 
+                  - text: BattleRattle
+                - link "3 Issues Reported" [ref=e1735] [cursor=pointer]:
+                  - /url: /kata/525c65e51bf619685c000059/discuss#label-issue
+                  - generic [ref=e1736]: 
+                  - text: 3 Issues Reported
+              - generic [ref=e1737]:
+                - generic [ref=e1739]: 
+                - link "Algorithms" [ref=e1741] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+            - list [ref=e1743]:
+              - listitem [ref=e1744]:
+                - link "" [ref=e1745] [cursor=pointer]:
+                  - /url: /kata/525c65e51bf619685c000059/train/coffeescript
+                  - generic [ref=e1747]: 
+              - listitem [ref=e1748]:
+                - link "" [ref=e1749] [cursor=pointer]:
+                  - /url: /kata/525c65e51bf619685c000059/train/cpp
+                  - generic [ref=e1751]: 
+              - listitem [ref=e1752]:
+                - link "" [ref=e1753] [cursor=pointer]:
+                  - /url: /kata/525c65e51bf619685c000059/train/factor
+                  - generic [ref=e1755]: 
+              - listitem [ref=e1756]:
+                - link "" [ref=e1757] [cursor=pointer]:
+                  - /url: /kata/525c65e51bf619685c000059/train/go
+                  - generic [ref=e1759]: 
+              - listitem [ref=e1760]:
+                - link "" [ref=e1761] [cursor=pointer]:
+                  - /url: /kata/525c65e51bf619685c000059/train/haskell
+                  - generic [ref=e1763]: 
+              - listitem [ref=e1764]:
+                - link "" [ref=e1765] [cursor=pointer]:
+                  - /url: /kata/525c65e51bf619685c000059/train/java
+                  - generic [ref=e1767]: 
+              - listitem [ref=e1768]:
+                - link "" [ref=e1769] [cursor=pointer]:
+                  - /url: /kata/525c65e51bf619685c000059/train/javascript
+                  - generic [ref=e1771]: 
+              - listitem [ref=e1772]:
+                - link "" [ref=e1773] [cursor=pointer]:
+                  - /url: /kata/525c65e51bf619685c000059/train/python
+                  - generic [ref=e1775]: 
+              - listitem [ref=e1776]:
+                - link "" [ref=e1777] [cursor=pointer]:
+                  - /url: /kata/525c65e51bf619685c000059/train/ruby
+                  - generic [ref=e1779]: 
+              - listitem [ref=e1780]:
+                - link "" [ref=e1781] [cursor=pointer]:
+                  - /url: /kata/525c65e51bf619685c000059/train/rust
+                  - generic [ref=e1783]: 
+          - generic [ref=e1785]:
+            - generic [ref=e1786]:
+              - generic [ref=e1787]:
+                - generic [ref=e1790]: 5 kyu
+                - link "Mirrored Exponential Chunks" [ref=e1791] [cursor=pointer]:
+                  - /url: /kata/5852d0d463adbd39670000a1
+              - generic [ref=e1792]:
+                - generic [ref=e1793]:
+                  - generic [ref=e1794]: 
+                  - text: "180"
+                - link "n33kos" [ref=e1795] [cursor=pointer]:
+                  - /url: /users/n33kos
+                  - generic [ref=e1796]: 
+                  - text: n33kos
+                - link "1 Issue Reported" [ref=e1798] [cursor=pointer]:
+                  - /url: /kata/5852d0d463adbd39670000a1/discuss#label-issue
+                  - generic [ref=e1799]: 
+                  - text: 1 Issue Reported
+              - generic [ref=e1800]:
+                - generic [ref=e1802]: 
+                - link "Arrays" [ref=e1804] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CArrays"
+                - link "Algorithms" [ref=e1806] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+            - list [ref=e1808]:
+              - listitem [ref=e1809]:
+                - link "" [ref=e1810] [cursor=pointer]:
+                  - /url: /kata/5852d0d463adbd39670000a1/train/go
+                  - generic [ref=e1812]: 
+              - listitem [ref=e1813]:
+                - link "" [ref=e1814] [cursor=pointer]:
+                  - /url: /kata/5852d0d463adbd39670000a1/train/javascript
+                  - generic [ref=e1816]: 
+              - listitem [ref=e1817]:
+                - link "" [ref=e1818] [cursor=pointer]:
+                  - /url: /kata/5852d0d463adbd39670000a1/train/php
+                  - generic [ref=e1820]: 
+              - listitem [ref=e1821]:
+                - link "" [ref=e1822] [cursor=pointer]:
+                  - /url: /kata/5852d0d463adbd39670000a1/train/python
+                  - generic [ref=e1824]: 
+          - generic [ref=e1826]:
+            - generic [ref=e1827]:
+              - generic [ref=e1828]:
+                - generic [ref=e1831]: 5 kyu
+                - link "Largest Palindromic Product" [ref=e1832] [cursor=pointer]:
+                  - /url: /kata/5aca2aceb4f6352a4100004f
+              - generic [ref=e1833]:
+                - generic [ref=e1834]:
+                  - generic [ref=e1835]: 
+                  - text: "99"
+                - link "aMoniker" [ref=e1836] [cursor=pointer]:
+                  - /url: /users/aMoniker
+                  - generic [ref=e1837]: 
+                  - text: aMoniker
+              - generic [ref=e1838]:
+                - generic [ref=e1840]: 
+                - link "Mathematics" [ref=e1842] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CMathematics"
+                - link "Algorithms" [ref=e1844] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+            - list [ref=e1846]:
+              - listitem [ref=e1847]:
+                - link "" [ref=e1848] [cursor=pointer]:
+                  - /url: /kata/5aca2aceb4f6352a4100004f/train/javascript
+                  - generic [ref=e1850]: 
+              - listitem [ref=e1851]:
+                - link "" [ref=e1852] [cursor=pointer]:
+                  - /url: /kata/5aca2aceb4f6352a4100004f/train/php
+                  - generic [ref=e1854]: 
+          - generic [ref=e1856]:
+            - generic [ref=e1857]:
+              - generic [ref=e1858]:
+                - generic [ref=e1861]: 4 kyu
+                - link "Burrows-Wheeler-Transformation" [ref=e1862] [cursor=pointer]:
+                  - /url: /kata/54ce4c6804fcc440a1000ecb
+              - generic [ref=e1863]:
+                - generic [ref=e1864]:
+                  - generic [ref=e1865]: 
+                  - text: 2,295
+                - link "muesli4" [ref=e1866] [cursor=pointer]:
+                  - /url: /users/muesli4
+                  - generic [ref=e1867]: 
+                  - text: muesli4
+              - generic [ref=e1868]:
+                - generic [ref=e1870]: 
+                - link "Lists" [ref=e1872] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CLists"
+                - link "Puzzles" [ref=e1874] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CPuzzles"
+                - link "Algorithms" [ref=e1876] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+            - list [ref=e1878]:
+              - listitem [ref=e1879]:
+                - link "" [ref=e1880] [cursor=pointer]:
+                  - /url: /kata/54ce4c6804fcc440a1000ecb/train/cpp
+                  - generic [ref=e1882]: 
+              - listitem [ref=e1883]:
+                - link "" [ref=e1884] [cursor=pointer]:
+                  - /url: /kata/54ce4c6804fcc440a1000ecb/train/csharp
+                  - generic [ref=e1886]: 
+              - listitem [ref=e1887]:
+                - link "" [ref=e1888] [cursor=pointer]:
+                  - /url: /kata/54ce4c6804fcc440a1000ecb/train/haskell
+                  - generic [ref=e1890]: 
+              - listitem [ref=e1891]:
+                - link "" [ref=e1892] [cursor=pointer]:
+                  - /url: /kata/54ce4c6804fcc440a1000ecb/train/java
+                  - generic [ref=e1894]: 
+              - listitem [ref=e1895]:
+                - link "" [ref=e1896] [cursor=pointer]:
+                  - /url: /kata/54ce4c6804fcc440a1000ecb/train/javascript
+                  - generic [ref=e1898]: 
+              - listitem [ref=e1899]:
+                - link "" [ref=e1900] [cursor=pointer]:
+                  - /url: /kata/54ce4c6804fcc440a1000ecb/train/php
+                  - generic [ref=e1902]: 
+              - listitem [ref=e1903]:
+                - link "" [ref=e1904] [cursor=pointer]:
+                  - /url: /kata/54ce4c6804fcc440a1000ecb/train/python
+                  - generic [ref=e1906]: 
+              - listitem [ref=e1907]:
+                - link "" [ref=e1908] [cursor=pointer]:
+                  - /url: /kata/54ce4c6804fcc440a1000ecb/train/ruby
+                  - generic [ref=e1910]: 
+              - listitem [ref=e1911]:
+                - link "" [ref=e1912] [cursor=pointer]:
+                  - /url: /kata/54ce4c6804fcc440a1000ecb/train/rust
+                  - generic [ref=e1914]: 
+          - generic [ref=e1916]:
+            - generic [ref=e1917]:
+              - generic [ref=e1918]:
+                - generic [ref=e1921]: 7 kyu
+                - link "Sum Factorial" [ref=e1922] [cursor=pointer]:
+                  - /url: /kata/56b0f6243196b9d42d000034
+              - generic [ref=e1923]:
+                - generic [ref=e1924]:
+                  - generic [ref=e1925]: 
+                  - text: 4,397
+                - link "Alpri Else" [ref=e1926] [cursor=pointer]:
+                  - /url: /users/Alpri%20Else
+                  - generic [ref=e1927]: 
+                  - text: Alpri Else
+              - generic [ref=e1928]:
+                - generic [ref=e1930]: 
+                - link "Algorithms" [ref=e1932] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+            - list [ref=e1934]:
+              - listitem [ref=e1935]:
+                - link "" [ref=e1936] [cursor=pointer]:
+                  - /url: /kata/56b0f6243196b9d42d000034/train/c
+                  - generic [ref=e1938]: 
+              - listitem [ref=e1939]:
+                - link "" [ref=e1940] [cursor=pointer]:
+                  - /url: /kata/56b0f6243196b9d42d000034/train/cpp
+                  - generic [ref=e1942]: 
+              - listitem [ref=e1943]:
+                - link "" [ref=e1944] [cursor=pointer]:
+                  - /url: /kata/56b0f6243196b9d42d000034/train/haskell
+                  - generic [ref=e1946]: 
+              - listitem [ref=e1947]:
+                - link "" [ref=e1948] [cursor=pointer]:
+                  - /url: /kata/56b0f6243196b9d42d000034/train/javascript
+                  - generic [ref=e1950]: 
+              - listitem [ref=e1951]:
+                - link "" [ref=e1952] [cursor=pointer]:
+                  - /url: /kata/56b0f6243196b9d42d000034/train/python
+                  - generic [ref=e1954]: 
+              - listitem [ref=e1955]:
+                - link "" [ref=e1956] [cursor=pointer]:
+                  - /url: /kata/56b0f6243196b9d42d000034/train/ruby
+                  - generic [ref=e1958]: 
+          - generic [ref=e1960]:
+            - generic [ref=e1961]:
+              - generic [ref=e1962]:
+                - generic [ref=e1965]: 6 kyu
+                - link "Deriving Elemental Defense Matchups" [ref=e1966] [cursor=pointer]:
+                  - /url: /kata/69f22732d11a75e5cc23409a
+              - generic [ref=e1967]:
+                - generic [ref=e1968]:
+                  - generic [ref=e1969]: 
+                  - text: "32"
+                - link "ClutzyWitz" [ref=e1970] [cursor=pointer]:
+                  - /url: /users/ClutzyWitz
+                  - generic [ref=e1971]: 
+                  - text: ClutzyWitz
+              - generic [ref=e1972]:
+                - generic [ref=e1974]: 
+                - link "Algorithms" [ref=e1976] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q="
+                - link "Logic" [ref=e1978] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CLogic"
+                - link "Sorting" [ref=e1980] [cursor=pointer]:
+                  - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=Algorithms%2CSorting"
+            - list [ref=e1982]:
+              - listitem [ref=e1983]:
+                - link "" [ref=e1984] [cursor=pointer]:
+                  - /url: /kata/69f22732d11a75e5cc23409a/train/python
+                  - generic [ref=e1986]: 
+          - paragraph [ref=e1988]: Loading...
+  - contentinfo [ref=e1989]:
+    - list [ref=e1990]:
+      - generic [ref=e1991]:
+        - listitem [ref=e1992]: © 2026 Codewars
+        - listitem [ref=e1993]:
+          - link "About" [ref=e1994] [cursor=pointer]:
+            - /url: /about
+        - listitem [ref=e1995]:
+          - link "API" [ref=e1996] [cursor=pointer]:
+            - /url: https://dev.codewars.com
+        - listitem [ref=e1997]:
+          - link "Blog" [ref=e1998] [cursor=pointer]:
+            - /url: https://www.codewars.com/blog
+        - listitem [ref=e1999]:
+          - link "Privacy" [ref=e2000] [cursor=pointer]:
+            - /url: /about/privacy
+        - listitem [ref=e2001]:
+          - link "Terms" [ref=e2002] [cursor=pointer]:
+            - /url: /about/terms-of-service
+        - listitem [ref=e2003]:
+          - link "Code of Conduct" [ref=e2004] [cursor=pointer]:
+            - /url: https://docs.codewars.com/community/code-of-conduct
+        - listitem [ref=e2005]:
+          - link "Contact" [ref=e2006] [cursor=pointer]:
+            - /url: mailto:info@codewars.com
+      - listitem [ref=e2007]:
+        - link [ref=e2008] [cursor=pointer]:
+          - /url: https://www.qualified.io?utm_source=codewars&utm_medium=web&utm_term=footer
+          - img [ref=e2010]
+  - text: 

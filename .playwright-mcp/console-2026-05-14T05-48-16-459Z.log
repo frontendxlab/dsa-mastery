@@ -1,0 +1,11 @@
+[    5226ms] Uncaught TypeError: Cannot read properties of undefined (reading 'currentTarget')
+    at initGTMOnEvent (https://www.naukri.com/code360/problems/fenwick-tree_1071952:282:14)
+    at Le.<computed> (https://static.naukimg.com/code360/vendorOther.c6a8eeb279f64daa.js:0:275478)
+    at invokeTask (https://static.naukimg.com/code360/vendorOther.c6a8eeb279f64daa.js:0:253563)
+    at runTask (https://static.naukimg.com/code360/vendorOther.c6a8eeb279f64daa.js:0:248595)
+    at invokeTask (https://static.naukimg.com/code360/vendorOther.c6a8eeb279f64daa.js:0:254681)
+    at invoke (https://static.naukimg.com/code360/vendorOther.c6a8eeb279f64daa.js:0:254574)
+    at U.be.args.<computed> (https://static.naukimg.com/code360/vendorOther.c6a8eeb279f64daa.js:0:275174)
+[    8975ms] [LOG] aquisition data {"lp":"https://www.naukri.com/code360/fourofour","type":"direct"} @ https://wsdk-files.webengage.com/webengage/~47b66064/~hg3cf7.js?r=1589419472000:6
+[    8976ms] [LOG] forever {luid: fa1f22b82d631f9d067a6e5e9a5a7c3140ac24e2, time: 1778737604900, isGzip: false, sc: 1, session: Object} @ https://wsdk-files.webengage.com/webengage/~47b66064/8eda484.js?r=1683877959000:3
+[    8976ms] [LOG] {userId: fa1f22b82d631f9d067a6e5e9a5a7c3140ac24e2} @ https://wsdk-files.webengage.com/webengage/~47b66064/8eda484.js?r=1683877959000:16

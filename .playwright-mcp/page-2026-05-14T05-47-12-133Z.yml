@@ -1,0 +1,365 @@
+- generic [ref=e6]:
+  - generic [ref=e12]:
+    - img "Naukri Code 360" [ref=e17]
+    - generic [ref=e18]:
+      - generic [ref=e19] [cursor=pointer]:
+        - img "potd-icon" [ref=e20]
+        - paragraph [ref=e21]: Become AI ready
+      - generic [ref=e22]:
+        - generic [ref=e25] [cursor=pointer]: Login
+        - img "ham" [ref=e27] [cursor=pointer]
+  - generic [ref=e30]:
+    - generic [ref=e31]:
+      - heading "Coding Interview Questions" [level=1] [ref=e36]
+      - generic [ref=e40]:
+        - img "Search icon" [ref=e42]
+        - textbox "Search problems" [ref=e43]: fenwick
+      - generic [ref=e57]:
+        - generic [ref=e60]: Filters
+        - generic [ref=e63]: Sort by
+    - generic [ref=e65]:
+      - generic [ref=e66]:
+        - link "home" [ref=e68] [cursor=pointer]:
+          - /url: https://www.naukri.com/code360
+          - img "home" [ref=e70]
+        - img "expand-more" [ref=e71]
+        - generic [ref=e73] [cursor=pointer]: Interview problem
+      - link "featured-banner" [ref=e77] [cursor=pointer]:
+        - /url: https://www.naukri.com/code360/problem-lists/ninjas-sde-sheet
+        - img "featured-banner" [ref=e78]
+    - contentinfo [ref=e80]:
+      - generic [ref=e84]:
+        - generic [ref=e86]:
+          - generic [ref=e88]: "Popular Interview Experiences:"
+          - generic [ref=e89]:
+            - link "Amazon Interview Experience" [ref=e91] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-experiences/amazon
+            - link "Microsoft Interview Experience" [ref=e94] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-experiences/microsoft
+            - link "Google Interview Experience" [ref=e97] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-experiences/google
+            - link "Goldman Sachs Interview Experience" [ref=e100] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-experiences/goldman-sachs
+            - link "Oracle Interview Experience" [ref=e103] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-experiences/oracle
+            - link "Accenture Interview Experience" [ref=e106] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-experiences/accenture
+            - link "Adobe Interview Experience" [ref=e109] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-experiences/adobe
+            - link "Intuit Interview Experience" [ref=e112] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-experiences/intuit
+            - link "Arcesium Interview Experience" [ref=e115] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-experiences/arcesium
+            - link "Uber Interview Experience" [ref=e118] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-experiences/uber
+            - link "Barclays Interview Experience" [ref=e121] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-experiences/barclays
+            - link "Paypal Interview Experience" [ref=e124] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-experiences/paypal
+        - generic [ref=e126]:
+          - generic [ref=e128]: "Popular Interview Problems:"
+          - generic [ref=e129]:
+            - link "Reverse An Array" [ref=e131] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/problems/reverse-the-array_1262298
+            - link "Print Longest Palindromic Subsequence" [ref=e134] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/problems/longest-palindromic-subsequence_842787
+            - link "Largest Subarray With 0 Sum" [ref=e137] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/problems/longest-subset-zero-sum_920321
+            - link "Valid Parentheses" [ref=e140] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/problems/valid-parenthesis_795104
+            - link "Rod Cutting Problem" [ref=e143] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/problems/rod-cutting-problem_800284
+            - link "Bottom View Of Binary Tree" [ref=e146] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/problems/bottom-view-of-binary-tree_893110
+            - link "Remove Loop In Linked List" [ref=e149] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/problems/interview-shuriken-42-detect-and-remove-loop_241049
+            - link "Minimum Platforms" [ref=e152] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/problems/minimum-number-of-platforms_799400
+            - link "Reverse Level Order Traversal" [ref=e155] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/problems/reverse-level-order-traversal_764339
+            - link "Count Inversions" [ref=e158] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/problems/count-inversions_615
+        - generic [ref=e160]:
+          - generic [ref=e162]: "Popular Guided Paths:"
+          - generic [ref=e163]:
+            - link "Competitive Programming" [ref=e165] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/guided-paths/competitive-programming
+            - link "Aptitude Preparation" [ref=e168] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/guided-paths/aptitude-preparation
+            - link "Basics of Java" [ref=e171] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/guided-paths/basics-of-java
+            - link "Basics of Python" [ref=e174] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/guided-paths/basics-of-python
+            - link "Basics of Javascript" [ref=e177] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/guided-paths/basics-of-javascript
+            - link "Data Structures and Algorithms" [ref=e180] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/guided-paths/data-structures-algorithms
+            - link "Basics of C++" [ref=e183] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/guided-paths/basics-of-c
+            - link "Tcs Nqt Test Preparation" [ref=e186] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/guided-paths/tcs-nqt-test-preparation-path
+            - link "Fundamentals of HTML" [ref=e189] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/guided-paths/fundamentals-of-html
+            - link "OOPS in Python" [ref=e192] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/guided-paths/oops-in-python
+            - link "OOPS in C++" [ref=e195] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/guided-paths/oops-in-c
+            - link "OOPS in Java" [ref=e198] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/guided-paths/oops-in-java
+        - generic [ref=e200]:
+          - generic [ref=e202]: "Best Online Compilers:"
+          - generic [ref=e203]:
+            - link "Online Java Compiler" [ref=e205] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/online-compiler/online-java-compiler
+            - link "Online Python Compiler" [ref=e208] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/online-compiler/online-python-compiler
+            - link "Online Javascript Compiler" [ref=e211] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/online-compiler/online-javascript-compiler
+            - link "Online C Compiler" [ref=e214] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/online-compiler/online-c-compiler
+            - link "Online C++ Compiler" [ref=e217] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/online-compiler/online-cpp-compiler
+        - generic [ref=e219]:
+          - generic [ref=e221]: "Library:"
+          - generic [ref=e222]:
+            - link "Java" [ref=e224] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/library/introduction-to-java
+            - link "Python" [ref=e227] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/library/python-introduction
+            - link "C Programming Language" [ref=e230] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/library/introduction-to-c-programming
+            - link "C++ Programming Language" [ref=e233] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/library/introduction-to-cpp
+            - link "Cloud Computing" [ref=e236] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/library/introduction-to-cloud-computing
+            - link "Node JS" [ref=e239] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/library/introduction-to-node-js
+            - link "Machine Learning" [ref=e242] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/library/what-is-machine-learning
+            - link "Deep Learning" [ref=e245] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/library/introduction-to-deep-learning
+            - link "Big Data" [ref=e248] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/library/what-is-big-data
+            - link "Operating System" [ref=e251] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/library/introduction-to-operating-system
+            - link "Go Language" [ref=e254] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/library/introduction-to-go
+            - link "C#" [ref=e257] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/library/introduction-to-csharp
+            - link "Ruby" [ref=e260] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/library/try-ruby
+            - link "Amazon Web Services" [ref=e263] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/library/introduction-to-aws
+            - link "Microsoft Azure" [ref=e266] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/library/introduction-to-microsoft-azure
+            - link "Google Cloud Platform" [ref=e269] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/library/introduction-to-google-cloud-platform
+            - link "Data Warehousing" [ref=e272] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/library/what-is-data-warehousing
+            - link "Internet of Things" [ref=e275] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/library/what-is-iot
+        - generic [ref=e277]:
+          - generic [ref=e279]: "Popular Test Series:"
+          - generic [ref=e280]:
+            - link "Adobe Onsite Test" [ref=e282] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/test-series/adobe-onsite-interview-test-series
+            - link "Apple Online Assessment" [ref=e285] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/test-series/apple-online-assessment-test-series
+            - link "Uber Online Assessment" [ref=e288] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/test-series/uber-online-assessment-test-series
+            - link "Amazon Online Assessment Test" [ref=e291] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/test-series/amazon-online-test-series
+            - link "Accenture Assessment Test" [ref=e294] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/test-series/accenture-mock-test-series
+            - link "Microsoft Online Test" [ref=e297] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/test-series/microsoft-online-assessment-test-series
+            - link "Goldman Sachs Mock Test" [ref=e300] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/test-series/goldman-sachs-online-assessment-test-series
+            - link "Facebook Online Coding Test" [ref=e303] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/test-series/facebook-online-assessment-test-series
+            - link "Wipro Mock Test" [ref=e306] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/test-series/wipro-mock-test-series-online
+            - link "De Shaw Online Test" [ref=e309] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/test-series/de-shaw-online-assessment-test-series
+            - link "Tcs Nqt Mock Test" [ref=e312] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/test-series/tcs-mock-test-series-nqt
+            - link "Flipkart Mock Test" [ref=e315] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/test-series/flipkart-mock-test-series
+            - link "Infosys Mock Test" [ref=e318] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/test-series/infosys-mock-test-series
+        - generic [ref=e320]:
+          - generic [ref=e322]: "Popular Interview Bundle:"
+          - generic [ref=e323]:
+            - link "Amazon Interview Preparation" [ref=e325] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-bundle/amazon
+            - link "Google Interview Preparation" [ref=e328] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-bundle/google
+            - link "Microsoft Interview Preparation" [ref=e331] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-bundle/microsoft
+            - link "Samsung Interview Preparation" [ref=e334] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-bundle/samsung
+            - link "OYO Interview Preparation" [ref=e337] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-bundle/oyo
+            - link "Flipkart Interview Preparation" [ref=e340] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-bundle/flipkart
+            - link "Morgan Stanley Interview Preparation" [ref=e343] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-bundle/morgan-stanley
+            - link "Adobe Interview Preparation" [ref=e346] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-bundle/adobe
+            - link "JP Morgan Interview Preparation" [ref=e349] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-bundle/jp-morgan
+            - link "Apple Interview Preparation" [ref=e352] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-bundle/apple
+            - link "Accenture Interview Preparation" [ref=e355] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-bundle/accenture
+            - link "Infosys preparation" [ref=e358] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-bundle/infosys
+            - link "Uber Interview Preparation" [ref=e361] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-bundle/uber
+            - link "LinkedIn Interview Preparation" [ref=e364] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-bundle/linkedin
+            - link "Cognizant Interview Preparation" [ref=e367] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-bundle/cognizant
+            - link "Facebook Interview Preparation" [ref=e370] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-bundle/facebook
+            - link "IBM Interview Preparation" [ref=e373] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/interview-bundle/ibm
+        - generic [ref=e375]:
+          - generic [ref=e377]: "Popular Problem Lists:"
+          - generic [ref=e378]:
+            - link "Uber Coding Questions" [ref=e380] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/problem-lists/top-uber-coding-interview-questions
+            - link "Zero to One SDE Sheet" [ref=e383] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/problem-lists/zero-to-one-sde-sheet
+            - link "Google Code Interview Questions" [ref=e386] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/problem-lists/top-google-coding-interview-questions
+            - link "Microsoft Interview Questions" [ref=e389] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/problem-lists/top-microsoft-coding-interview-questions
+            - link "Array Interview Questions" [ref=e392] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/problem-lists/top-array-coding-interview-questions
+            - link "Apple Interview Questions" [ref=e395] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/problem-lists/top-apple-coding-interview-questions
+            - link "Facebook Interview Questions" [ref=e398] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/problem-lists/top-facebook-coding-interview-questions
+            - link "Love Babbar DSA Sheet" [ref=e401] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/problem-lists/love-babbar-dsa-sheet-problems
+            - link "Graphs Interview Questions" [ref=e404] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/problem-lists/top-graphs-interview-questions
+            - link "Dynamic Programming Questions" [ref=e407] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/problem-lists/top-dynamic-programming-questions
+            - link "Cracking the Coding Interview" [ref=e410] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/problem-lists/cracking-the-coding-interview-questions
+            - link "Amazon Coding Questions" [ref=e413] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/problem-lists/top-amazon-coding-interview-questions
+            - link "Tree Interview Questions" [ref=e416] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/problem-lists/top-trees-interview-questions
+            - link "Graph Interview Questions" [ref=e419] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/problem-lists/top-graphs-interview-questions
+            - link "SQL Practice Problems" [ref=e422] [cursor=pointer]:
+              - /url: https://www.naukri.com/code360/problem-lists/top-100-sql-problems
+      - generic [ref=e426]:
+        - generic [ref=e427]:
+          - generic [ref=e428]: Get the tech career you deserve faster with Coding Ninjas courses
+          - generic [ref=e429]:
+            - generic [ref=e431]: User rating 4.7/5
+            - generic [ref=e433]: 1:1 doubt support
+            - generic [ref=e435]: 95% placement record
+        - button "Request a callback" [ref=e437] [cursor=pointer]:
+          - generic [ref=e438]:
+            - img [ref=e439]: 
+            - text: Request a callback
+      - generic [ref=e441]:
+        - generic [ref=e442]:
+          - generic [ref=e443]:
+            - generic [ref=e444]:
+              - link:
+                - /url: https://www.codingninjas.com/
+              - generic [ref=e445]:
+                - button "About us" [ref=e447] [cursor=pointer]:
+                  - generic [ref=e448]:
+                    - link "About us" [ref=e449]:
+                      - /url: https://www.codingninjas.com/about
+                      - generic [ref=e450]: About us
+                    - img [ref=e451]: 
+                - button "Success stories" [ref=e453] [cursor=pointer]:
+                  - generic [ref=e454]:
+                    - link "Success stories" [ref=e455]:
+                      - /url: https://www.codingninjas.com/review
+                      - generic [ref=e456]: Success stories
+                    - img [ref=e457]: 
+                - button "Privacy policy" [ref=e459] [cursor=pointer]:
+                  - generic [ref=e460]:
+                    - link "Privacy policy" [ref=e461]:
+                      - /url: https://www.codingninjas.com/policy/privacy.pdf
+                      - generic [ref=e462]: Privacy policy
+                    - img [ref=e463]: 
+                - button "Terms & conditions" [ref=e465] [cursor=pointer]:
+                  - generic [ref=e466]:
+                    - link "Terms & conditions" [ref=e467]:
+                      - /url: https://www.codingninjas.com/policy/tnc.pdf
+                      - generic [ref=e468]: Terms & conditions
+                    - img [ref=e469]: 
+            - generic [ref=e470]:
+              - generic [ref=e471]: Our courses
+              - generic [ref=e472]:
+                - generic:
+                  - link:
+                    - /url: https://www.codingninjas.com/programs/job-bootcamp-web-development
+          - generic [ref=e473]:
+            - generic [ref=e475]:
+              - generic [ref=e476]: Follow us on
+              - generic [ref=e477]:
+                - link "instagram" [ref=e478] [cursor=pointer]:
+                  - /url: https://www.instagram.com/coding.ninjas/
+                  - button "instagram" [ref=e479]:
+                    - img "instagram" [ref=e481]
+                - link "twitter" [ref=e482] [cursor=pointer]:
+                  - /url: https://twitter.com/CodingNinjasOff
+                  - button "twitter" [ref=e483]:
+                    - img "twitter" [ref=e485]
+                - link "facebook" [ref=e486] [cursor=pointer]:
+                  - /url: https://www.facebook.com/codingninjas
+                  - button "facebook" [ref=e487]:
+                    - img "facebook" [ref=e489]
+                - link "youtube" [ref=e490] [cursor=pointer]:
+                  - /url: https://www.youtube.com/c/CodingNinjasIndia
+                  - button "youtube" [ref=e491]:
+                    - img "youtube" [ref=e493]
+                - link "linkedin" [ref=e494] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/coding-ninjas-india/
+                  - button "linkedin" [ref=e495]:
+                    - img "linkedin" [ref=e497]
+            - generic [ref=e499]:
+              - generic [ref=e500]: Contact us
+              - generic [ref=e501] [cursor=pointer]:
+                - img [ref=e502]: 
+                - link "1800-123-3598" [ref=e503]:
+                  - /url: tel:1800-123-3598
+              - generic [ref=e504] [cursor=pointer]:
+                - img [ref=e505]: 
+                - link "code360@codingninjas.com" [ref=e506]:
+                  - /url: mailto:code360@codingninjas.com
+        - generic [ref=e507]:
+          - generic [ref=e508]:
+            - link [ref=e509] [cursor=pointer]:
+              - /url: https://www.naukri.com/
+            - generic [ref=e510]:
+              - button "Privacy policy" [ref=e512] [cursor=pointer]:
+                - generic [ref=e513]:
+                  - link "Privacy policy" [ref=e514]:
+                    - /url: https://www.naukri.com/privacypolicy
+                    - generic [ref=e515]: Privacy policy
+                  - img [ref=e516]: 
+              - button "Terms & conditions" [ref=e518] [cursor=pointer]:
+                - generic [ref=e519]:
+                  - link "Terms & conditions" [ref=e520]:
+                    - /url: https://www.naukri.com/termsconditions
+                    - generic [ref=e521]: Terms & conditions
+                  - img [ref=e522]: 
+          - generic [ref=e523]:
+            - generic [ref=e524]: Download the naukri app
+            - generic [ref=e525]:
+              - link [ref=e526] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=naukriApp.appModules.login&pcampaignid=web_share
+              - link [ref=e527] [cursor=pointer]:
+                - /url: https://apps.apple.com/in/app/naukri-com-job-search/id482877505

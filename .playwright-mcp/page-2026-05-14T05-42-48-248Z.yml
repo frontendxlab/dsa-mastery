@@ -1,0 +1,70 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link "geeksforgeeks" [ref=e14] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/
+          - img "geeksforgeeks" [ref=e16]
+        - img "search icon" [ref=e19] [cursor=pointer]
+      - list [ref=e23]:
+        - listitem [ref=e24] [cursor=pointer]:
+          - button "Sign In" [ref=e26]
+        - listitem [ref=e27] [cursor=pointer]:
+          - generic [ref=e29]: Courses
+        - listitem [ref=e31] [cursor=pointer]:
+          - generic [ref=e33]: Tutorials
+        - listitem [ref=e35] [cursor=pointer]:
+          - generic [ref=e37]: Practice
+        - listitem [ref=e39] [cursor=pointer]:
+          - generic [ref=e41]: Jobs
+        - listitem [ref=e43]
+        - listitem [ref=e44] [cursor=pointer]:
+          - button "Toggle GFG Theme" [ref=e46]
+          - button "Change Language" [ref=e50]:
+            - generic [ref=e52]: Change Language
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - generic [ref=e56] [cursor=pointer]:
+          - heading "Companies" [level=3] [ref=e58]
+          - generic [ref=e60]: View All
+        - generic [ref=e62]:
+          - checkbox [ref=e63] [cursor=pointer]
+          - generic [ref=e64] [cursor=pointer]: Amazon (648)
+        - generic [ref=e66]:
+          - checkbox [ref=e67] [cursor=pointer]
+          - generic [ref=e68] [cursor=pointer]: Microsoft (444)
+        - generic [ref=e70]:
+          - checkbox [ref=e71] [cursor=pointer]
+          - generic [ref=e72] [cursor=pointer]: Google (177)
+        - generic [ref=e74]:
+          - checkbox [ref=e75] [cursor=pointer]
+          - generic [ref=e76] [cursor=pointer]: Flipkart (168)
+        - generic [ref=e78]:
+          - checkbox [ref=e79] [cursor=pointer]
+          - generic [ref=e80] [cursor=pointer]: Adobe (164)
+        - generic [ref=e82]:
+          - checkbox [ref=e83] [cursor=pointer]
+          - generic [ref=e84] [cursor=pointer]: NPCI (144)
+        - generic [ref=e86]:
+          - text:    
+          - generic [ref=e89]:
+            - generic [ref=e90]:
+              - heading "Popular Problems" [level=2] [ref=e91]
+              - generic [ref=e92]:
+                - text:   
+                - button "Search" [ref=e93] [cursor=pointer]:
+                  - generic [ref=e94]: 
+                  - text: Search
+                - listbox [ref=e95] [cursor=pointer]:
+                  - generic [ref=e96]:
+                    - generic [ref=e97]: 
+                    - text: Submissions
+                  - generic [ref=e98]: 
+            - generic [ref=e104]:
+              - generic [ref=e105]: Submissions
+              - generic [ref=e106]:
+                - text: Segment-Tree
+                - generic [ref=e107] [cursor=pointer]: 
+          - text:       
+      - generic [ref=e116] [cursor=pointer]: 
+  - alert [ref=e117]

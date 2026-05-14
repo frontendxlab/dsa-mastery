@@ -1,0 +1,202 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link "geeksforgeeks" [ref=e14] [cursor=pointer]:
+          - /url: https://www.geeksforgeeks.org/
+          - img "geeksforgeeks" [ref=e16]
+        - img "search icon" [ref=e19] [cursor=pointer]
+      - list [ref=e23]:
+        - listitem [ref=e24] [cursor=pointer]:
+          - button "Sign In" [ref=e26]
+        - listitem [ref=e27] [cursor=pointer]:
+          - generic [ref=e29]: Courses
+        - listitem [ref=e31] [cursor=pointer]:
+          - generic [ref=e33]: Tutorials
+        - listitem [ref=e35] [cursor=pointer]:
+          - generic [ref=e37]: Practice
+        - listitem [ref=e39] [cursor=pointer]:
+          - generic [ref=e41]: Jobs
+        - listitem [ref=e43]
+        - listitem [ref=e44] [cursor=pointer]:
+          - button "Toggle GFG Theme" [ref=e46]
+          - button "Change Language" [ref=e50]:
+            - generic [ref=e52]: Change Language
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - generic [ref=e56] [cursor=pointer]:
+          - heading "Companies" [level=3] [ref=e58]
+          - generic [ref=e60]: View All
+        - generic [ref=e62]:
+          - checkbox [ref=e63] [cursor=pointer]
+          - generic [ref=e64] [cursor=pointer]: Amazon (648)
+        - generic [ref=e66]:
+          - checkbox [ref=e67] [cursor=pointer]
+          - generic [ref=e68] [cursor=pointer]: Microsoft (444)
+        - generic [ref=e70]:
+          - checkbox [ref=e71] [cursor=pointer]
+          - generic [ref=e72] [cursor=pointer]: Google (177)
+        - generic [ref=e74]:
+          - checkbox [ref=e75] [cursor=pointer]
+          - generic [ref=e76] [cursor=pointer]: Flipkart (168)
+        - generic [ref=e78]:
+          - checkbox [ref=e79] [cursor=pointer]
+          - generic [ref=e80] [cursor=pointer]: Adobe (164)
+        - generic [ref=e82]:
+          - checkbox [ref=e83] [cursor=pointer]
+          - generic [ref=e84] [cursor=pointer]: NPCI (144)
+        - generic [ref=e86]:
+          - text:    
+          - generic [ref=e88]:
+            - generic [ref=e89]:
+              - generic [ref=e90]:
+                - heading "Popular Problems" [level=2] [ref=e91]
+                - generic [ref=e92]:
+                  - text:   
+                  - button "Search" [ref=e93] [cursor=pointer]:
+                    - generic [ref=e94]: 
+                    - text: Search
+                  - listbox [ref=e95] [cursor=pointer]:
+                    - generic [ref=e96]
+                    - generic [ref=e98]: 
+              - generic [ref=e100]:
+                - strong [ref=e101]: "?"
+                - text: of 3738 Problems Solved (? %)Sign-In To Track Your Progress
+              - generic [ref=e105]: Submissions
+              - generic [ref=e108]:
+                - generic [ref=e110] [cursor=pointer]:
+                  - generic [ref=e113]: Indexes of Subarray Sum
+                  - generic [ref=e114]:
+                    - button "Solve" [ref=e115]
+                    - paragraph [ref=e116]
+                - generic [ref=e123] [cursor=pointer]:
+                  - generic [ref=e126]: Missing in Array
+                  - generic [ref=e127]:
+                    - button "Solve" [ref=e128]
+                    - paragraph [ref=e129]
+                - generic [ref=e136] [cursor=pointer]:
+                  - generic [ref=e139]: Second Largest
+                  - generic [ref=e140]:
+                    - button "Solve" [ref=e141]
+                    - paragraph [ref=e142]
+                - generic [ref=e149] [cursor=pointer]:
+                  - generic [ref=e152]: Kadane's Algorithm
+                  - generic [ref=e153]:
+                    - button "Solve" [ref=e154]
+                    - paragraph [ref=e155]
+                - generic [ref=e162] [cursor=pointer]:
+                  - generic [ref=e165]: Minimum Jumps
+                  - generic [ref=e166]:
+                    - button "Solve" [ref=e167]
+                    - paragraph [ref=e168]
+                - generic [ref=e175] [cursor=pointer]:
+                  - generic [ref=e178]: Array Leaders
+                  - generic [ref=e179]:
+                    - button "Solve" [ref=e180]
+                    - paragraph [ref=e181]
+                - generic [ref=e188] [cursor=pointer]:
+                  - generic [ref=e191]: Array Duplicates
+                  - generic [ref=e192]:
+                    - button "Solve" [ref=e193]
+                    - paragraph [ref=e194]
+                - generic [ref=e201] [cursor=pointer]:
+                  - generic [ref=e204]: Sort 0s, 1s and 2s
+                  - generic [ref=e205]:
+                    - button "Solve" [ref=e206]
+                    - paragraph [ref=e207]
+                - generic [ref=e214] [cursor=pointer]:
+                  - generic [ref=e217]: Majority Element
+                  - generic [ref=e218]:
+                    - button "Solve" [ref=e219]
+                    - paragraph [ref=e220]
+                - generic [ref=e227] [cursor=pointer]:
+                  - generic [ref=e230]: Longest Subarray with Sum K
+                  - generic [ref=e231]:
+                    - button "Solve" [ref=e232]
+                    - paragraph [ref=e233]
+                - generic [ref=e240] [cursor=pointer]:
+                  - generic [ref=e243]: Minimize the Heights II
+                  - generic [ref=e244]:
+                    - button "Solve" [ref=e245]
+                    - paragraph [ref=e246]
+                - generic [ref=e253] [cursor=pointer]:
+                  - generic [ref=e256]: Count Inversions
+                  - generic [ref=e257]:
+                    - button "Solve" [ref=e258]
+                    - paragraph [ref=e259]
+                - generic [ref=e266] [cursor=pointer]:
+                  - generic [ref=e269]: Kth Smallest
+                  - generic [ref=e270]:
+                    - button "Solve" [ref=e271]
+                    - paragraph [ref=e272]
+                - generic [ref=e279] [cursor=pointer]:
+                  - generic [ref=e282]: Rotate Array
+                  - generic [ref=e283]:
+                    - button "Solve" [ref=e284]
+                    - paragraph [ref=e285]
+                - generic [ref=e292] [cursor=pointer]:
+                  - generic [ref=e295]: Parenthesis Checker
+                  - generic [ref=e296]:
+                    - button "Solve" [ref=e297]
+                    - paragraph [ref=e298]
+                - generic [ref=e305] [cursor=pointer]:
+                  - generic [ref=e308]: First Occurrence in Sorted
+                  - generic [ref=e309]:
+                    - button "Solve" [ref=e310]
+                    - paragraph [ref=e311]
+                - generic [ref=e318] [cursor=pointer]:
+                  - generic [ref=e321]: Undirected Graph Cycle
+                  - generic [ref=e322]:
+                    - button "Solve" [ref=e323]
+                    - paragraph [ref=e324]
+                - generic [ref=e331] [cursor=pointer]:
+                  - generic [ref=e334]: Array Search
+                  - generic [ref=e335]:
+                    - button "Solve" [ref=e336]
+                    - paragraph [ref=e337]
+                - generic [ref=e344] [cursor=pointer]:
+                  - generic [ref=e347]: Missing And Repeating
+                  - generic [ref=e348]:
+                    - button "Solve" [ref=e349]
+                    - paragraph [ref=e350]
+                - generic [ref=e357] [cursor=pointer]:
+                  - generic [ref=e360]: Equilibrium Point
+                  - generic [ref=e361]:
+                    - button "Solve" [ref=e362]
+                    - paragraph [ref=e363]
+            - generic [ref=e369]:
+              - generic [ref=e372] [cursor=pointer]: Problem of the Day
+              - generic [ref=e373]:
+                - generic [ref=e375]:
+                  - generic [ref=e377]: Recently Online Experts
+                  - generic [ref=e378]:
+                    - link "shivamkumaqx5m Shivam kumar Jha Divinetalk, Flatmate" [ref=e379] [cursor=pointer]:
+                      - /url: /profile/shivamkumaqx5m/?from=explore
+                    - link "erkhushbossg9 Khushboo Garg Xebia, 3Pillar Global, Chetu Inc" [ref=e391] [cursor=pointer]:
+                      - /url: /profile/erkhushbossg9/?from=explore
+                    - link "venkatadj Gambali Venkata Durga Rao Blaize Semiconductors Private Limited, Advanced Micro Devices, Teradata" [ref=e403] [cursor=pointer]:
+                      - /url: /profile/venkatadj/?from=explore
+                  - link "View All →" [ref=e416] [cursor=pointer]:
+                    - /url: /connect/explore
+                    - text: View All
+                    - generic [ref=e417]: →
+                - generic [ref=e419]:
+                  - generic [ref=e421]:
+                    - button "Fresher Jobs" [ref=e422] [cursor=pointer]
+                    - button "Experienced Jobs" [ref=e423] [cursor=pointer]
+                  - generic [ref=e424]:
+                    - link "C++ Developer | Intelizign C++ Developer Intelizign 0.5 - 5 Years • Onsite - Pune (Maharashtra) Apply by Thu May 14 2026" [ref=e425] [cursor=pointer]:
+                      - /url: /jobs/intelizign-cpp-developer
+                    - separator [ref=e436]
+                    - link "C# Developer | Intelizign C# Developer Intelizign 0.5 - 5 Years • Onsite - Pune (Maharashtra) Apply by Thu May 14 2026" [ref=e437] [cursor=pointer]:
+                      - /url: /jobs/intelizign-c-sharp-developer
+                    - separator [ref=e448]
+                    - link "QA Engineer | Thrymr Software QA Engineer Thrymr Software Fresher • Onsite - Hyderabad (Telangana) Apply by Fri May 15 2026" [ref=e449] [cursor=pointer]:
+                      - /url: /jobs/thrymr-software-qa-engineer
+                  - link "View All →" [ref=e461] [cursor=pointer]:
+                    - /url: /jobs?tab_type=featured
+                    - text: View All
+                    - generic [ref=e462]: →
+          - text:                                              
+      - generic [ref=e463] [cursor=pointer]: 
+  - alert [ref=e464]

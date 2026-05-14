@@ -1,0 +1,223 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e6]:
+      - heading "Navigation Menu" [level=2] [ref=e7]
+      - generic [ref=e9]:
+        - button "Toggle navigation" [ref=e11] [cursor=pointer]
+        - link "Homepage" [ref=e17] [cursor=pointer]:
+          - /url: /
+          - img [ref=e18]
+        - generic [ref=e20]:
+          - link "Sign in" [ref=e21] [cursor=pointer]:
+            - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fsearch%3Fq%3Dcodewars%2Bmath%2Bkata%2Blist%26type%3Drepositories%26s%3Dstars%26o%3Ddesc
+          - button "Appearance settings" [ref=e24] [cursor=pointer]:
+            - img
+  - main [ref=e27]:
+    - generic [ref=e30]:
+      - heading "repositories Search Results · codewars math kata list" [level=1] [ref=e31]
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - heading "Filter by" [level=2] [ref=e37]
+            - list "Filter by" [ref=e42]:
+              - listitem [ref=e43]:
+                - list [ref=e44]:
+                  - listitem [ref=e45]:
+                    - link "Code (...) results" [ref=e46] [cursor=pointer]:
+                      - /url: https://github.com/search?q=codewars+math+kata+list&type=code
+                      - generic:
+                        - img
+                      - generic [ref=e47]:
+                        - generic [ref=e48]: Code
+                        - generic:
+                          - generic: ...
+                          - generic: (...)
+                          - generic: results
+                  - listitem [ref=e49]:
+                    - link "Repositories results" [ref=e50] [cursor=pointer]:
+                      - /url: https://github.com/search?q=codewars+math+kata+list&type=repositories
+                      - generic:
+                        - img
+                      - generic [ref=e51]:
+                        - generic [ref=e52]: Repositories
+                        - generic:
+                          - generic: results
+                  - listitem [ref=e53]:
+                    - link "Issues results" [ref=e54] [cursor=pointer]:
+                      - /url: https://github.com/search?q=codewars+math+kata+list&type=issues
+                      - generic:
+                        - img
+                      - generic [ref=e55]:
+                        - generic [ref=e56]: Issues
+                        - generic:
+                          - generic: results
+                  - listitem [ref=e57]:
+                    - link "Pull requests results" [ref=e58] [cursor=pointer]:
+                      - /url: https://github.com/search?q=codewars+math+kata+list&type=pullrequests
+                      - generic:
+                        - img
+                      - generic [ref=e59]:
+                        - generic [ref=e60]: Pull requests
+                        - generic:
+                          - generic: results
+                  - listitem [ref=e61]:
+                    - link "Discussions results" [ref=e62] [cursor=pointer]:
+                      - /url: https://github.com/search?q=codewars+math+kata+list&type=discussions
+                      - generic:
+                        - img
+                      - generic [ref=e63]:
+                        - generic [ref=e64]: Discussions
+                        - generic:
+                          - generic: results
+                  - listitem [ref=e65]:
+                    - link "Users results" [ref=e66] [cursor=pointer]:
+                      - /url: https://github.com/search?q=codewars+math+kata+list&type=users
+                      - generic:
+                        - img
+                      - generic [ref=e67]:
+                        - generic [ref=e68]: Users
+                        - generic:
+                          - generic: results
+                  - listitem [ref=e69]:
+                    - button "More" [ref=e70] [cursor=pointer]:
+                      - generic:
+                        - img
+                      - generic [ref=e72]: More
+              - listitem [ref=e73]:
+                - heading "Advanced" [level=3] [ref=e75]
+                - list "Advanced" [ref=e76]:
+                  - listitem [ref=e77]:
+                    - button "Owner" [ref=e78] [cursor=pointer]:
+                      - generic:
+                        - img
+                      - generic "Owner" [ref=e82]
+                  - listitem [ref=e83]:
+                    - button "Size" [ref=e84] [cursor=pointer]:
+                      - generic:
+                        - img
+                      - generic "Size" [ref=e88]
+                  - listitem [ref=e89]:
+                    - button "Number of followers" [ref=e90] [cursor=pointer]:
+                      - generic:
+                        - img
+                      - generic "Number of followers" [ref=e94]
+                  - listitem [ref=e95]:
+                    - button "Number of forks" [ref=e96] [cursor=pointer]:
+                      - generic:
+                        - img
+                      - generic "Number of forks" [ref=e100]
+                  - listitem [ref=e101]:
+                    - button "Number of stars" [ref=e102] [cursor=pointer]:
+                      - generic:
+                        - img
+                      - generic "Number of stars" [ref=e106]
+                  - listitem [ref=e107]:
+                    - button "Date created" [ref=e108] [cursor=pointer]:
+                      - generic:
+                        - img
+                      - generic "Date created" [ref=e112]
+                  - listitem [ref=e113]:
+                    - button "Date pushed" [ref=e114] [cursor=pointer]:
+                      - generic:
+                        - img
+                      - generic "Date pushed" [ref=e118]
+                  - listitem [ref=e119]:
+                    - button "Topic" [ref=e120] [cursor=pointer]:
+                      - generic:
+                        - img
+                      - generic "Topic" [ref=e124]
+                  - listitem [ref=e125]:
+                    - button "License" [ref=e126] [cursor=pointer]:
+                      - generic:
+                        - img
+                      - generic "License" [ref=e130]
+                  - listitem [ref=e131]:
+                    - button "Archived" [ref=e132] [cursor=pointer]:
+                      - generic:
+                        - img
+                      - generic "Archived" [ref=e136]
+                  - listitem [ref=e137]:
+                    - link "Public" [ref=e138] [cursor=pointer]:
+                      - /url: https://github.com/search?q=codewars+math+kata+list+is%3Apublic&type=repositories&s=stars&o=desc
+                      - generic:
+                        - img
+                      - generic "Public" [ref=e142]
+                  - listitem [ref=e143]:
+                    - link "Private" [ref=e144] [cursor=pointer]:
+                      - /url: https://github.com/search?q=codewars+math+kata+list+is%3Aprivate&type=repositories&s=stars&o=desc
+                      - generic:
+                        - img
+                      - generic "Private" [ref=e148]
+              - listitem [ref=e149]
+              - listitem [ref=e150]:
+                - link "Advanced search" [ref=e151] [cursor=pointer]:
+                  - /url: /search/advanced
+                  - generic:
+                    - img
+                  - generic [ref=e153]: Advanced search
+          - slider "Draggable pane splitter" [ref=e155]
+        - generic [ref=e159]:
+          - generic [ref=e161]:
+            - generic [ref=e162]:
+              - generic [ref=e163]:
+                - generic [ref=e164]: 1 result
+                - generic [ref=e165]: (66 ms)
+              - heading "1 result" [active] [level=2] [ref=e166]
+            - generic [ref=e167]:
+              - 'button "Sort by: Most stars" [ref=e169] [cursor=pointer]':
+                - generic [ref=e171]: "Sort by: Most stars"
+                - generic:
+                  - img
+              - button "Open column options" [ref=e173] [cursor=pointer]:
+                - img [ref=e174]
+          - generic [ref=e180]:
+            - generic [ref=e181]:
+              - heading "hirwaaldo1/Tribonacci-Sequence-codewars" [level=3] [ref=e182]:
+                - link "hirwaaldo1/Tribonacci-Sequence-codewars" [ref=e186] [cursor=pointer]:
+                  - /url: /hirwaaldo1/Tribonacci-Sequence-codewars
+                  - generic [ref=e187]:
+                    - text: hirwaaldo1/Tribonacci-Sequence-
+                    - emphasis [ref=e188]: codewars
+              - generic [ref=e190]:
+                - text: ... of it can be found in the Xbonacci
+                - emphasis [ref=e191]: kata
+                - text: "[Personal thanks to Professor Jim Fowler on Coursera for his awesome classes that I really re…"
+              - list [ref=e192]:
+                - listitem [ref=e193]:
+                  - generic "JavaScript language" [ref=e196]: JavaScript
+                - generic [ref=e197]: ·
+                - listitem [ref=e198]:
+                  - link "0 stars" [ref=e199] [cursor=pointer]:
+                    - /url: /hirwaaldo1/Tribonacci-Sequence-codewars/stargazers
+                    - img [ref=e200]
+                    - generic [ref=e202]: "0"
+                - generic [ref=e203]: ·
+                - listitem [ref=e204]:
+                  - generic [ref=e205]:
+                    - text: Updated
+                    - generic "Sep 14, 2022, 7:04 AM UTC" [ref=e206]: on Sep 14, 2022
+            - link "Star" [ref=e209] [cursor=pointer]:
+              - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fsearch%3Fq%3Dcodewars%2Bmath%2Bkata%2Blist%26type%3Drepositories%26s%3Dstars%26o%3Ddesc
+              - generic [ref=e210]:
+                - generic:
+                  - img
+                - generic [ref=e211]: Star
+          - generic [ref=e214]:
+            - generic [ref=e215]:
+              - img "Package icon" [ref=e217]
+              - heading "Sponsor open source projects you depend on" [level=2] [ref=e218]
+              - generic [ref=e219]: Contributors are working behind the scenes to make open source better for everyone—give them the help and recognition they deserve.
+              - link "Explore sponsorable projects" [ref=e220] [cursor=pointer]:
+                - /url: https://github.com/sponsors/explore
+                - text: Explore sponsorable projects
+                - img [ref=e221]
+            - generic [ref=e223]:
+              - generic [ref=e224]:
+                - img [ref=e225]
+                - text: ProTip!
+              - generic [ref=e227]:
+                - text: Press the
+                - generic [ref=e228]: /
+                - text: key to activate the search input again and adjust your query.

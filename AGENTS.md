@@ -1,5 +1,12 @@
 @RTK.md
 
+## Process & Port Management
+
+- **Never** use `pkill`, `kill $(lsof -ti:port)`, or broad process-kill commands to free ports or stop servers
+- If a port is busy, use `--port <different_port>` flag instead of killing the existing process
+- To stop a specific process: use `ps aux | grep <process-name>` to find the PID, then `kill <pid>` for that specific pid
+- These rules apply unless the user explicitly asks you to forcefully free a port or kill processes
+
 # Fetch DSA Problems Agent Spec
 
 Collect every problem for a given DSA topic from across the web into a deduplicated CSV,
@@ -482,3 +489,42 @@ with open(master_csv, 'a', newline='') as f:
 
 8. **Save temp files to uniquely named paths** — Using the same filename across parallel
    agents causes overwrites. Use `/tmp/phase1_{agent_name}.csv` patterns.
+
+<!-- code-review-graph MCP tools -->
+## MCP Tools: code-review-graph
+
+**IMPORTANT: This project has a knowledge graph. ALWAYS use the
+code-review-graph MCP tools BEFORE using Grep/Glob/Read to explore
+the codebase.** The graph is faster, cheaper (fewer tokens), and gives
+you structural context (callers, dependents, test coverage) that file
+scanning cannot.
+
+### When to use graph tools FIRST
+
+- **Exploring code**: `semantic_search_nodes` or `query_graph` instead of Grep
+- **Understanding impact**: `get_impact_radius` instead of manually tracing imports
+- **Code review**: `detect_changes` + `get_review_context` instead of reading entire files
+- **Finding relationships**: `query_graph` with callers_of/callees_of/imports_of/tests_for
+- **Architecture questions**: `get_architecture_overview` + `list_communities`
+
+Fall back to Grep/Glob/Read **only** when the graph doesn't cover what you need.
+
+### Key Tools
+
+| Tool | Use when |
+|------|----------|
+| `detect_changes` | Reviewing code changes — gives risk-scored analysis |
+| `get_review_context` | Need source snippets for review — token-efficient |
+| `get_impact_radius` | Understanding blast radius of a change |
+| `get_affected_flows` | Finding which execution paths are impacted |
+| `query_graph` | Tracing callers, callees, imports, tests, dependencies |
+| `semantic_search_nodes` | Finding functions/classes by name or keyword |
+| `get_architecture_overview` | Understanding high-level codebase structure |
+| `refactor_tool` | Planning renames, finding dead code |
+
+### Workflow
+
+1. The graph auto-updates on file changes (via hooks).
+2. Use `detect_changes` for code review.
+3. Use `get_affected_flows` to understand impact.
+4. Use `query_graph` pattern="tests_for" to check coverage.

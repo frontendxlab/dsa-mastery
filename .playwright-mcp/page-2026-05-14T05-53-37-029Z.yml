@@ -1,0 +1,101 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e6]:
+      - heading "Navigation Menu" [level=2] [ref=e7]
+      - generic [ref=e9]:
+        - button "Toggle navigation" [ref=e11] [cursor=pointer]
+        - link "Homepage" [ref=e17] [cursor=pointer]:
+          - /url: /
+          - img [ref=e18]
+        - generic [ref=e20]:
+          - link "Sign in" [ref=e21] [cursor=pointer]:
+            - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Ftopics%2Fcompetitive-programming-problems
+          - button "Appearance settings" [ref=e24] [cursor=pointer]:
+            - img
+  - main [ref=e27]:
+    - navigation "Explore navigation" [ref=e29]:
+      - generic [ref=e30]:
+        - link "Explore" [ref=e31] [cursor=pointer]:
+          - /url: /explore
+        - link "Topics" [ref=e32] [cursor=pointer]:
+          - /url: /topics
+        - link "Trending" [ref=e33] [cursor=pointer]:
+          - /url: /trending
+        - link "Collections" [ref=e34] [cursor=pointer]:
+          - /url: /collections
+        - link "Events" [ref=e35] [cursor=pointer]:
+          - /url: /events
+        - link "GitHub Sponsors" [ref=e36] [cursor=pointer]:
+          - /url: /sponsors/explore
+    - generic [ref=e37]:
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - generic [ref=e42]: "#"
+          - heading "competitive-programming-problems" [level=1] [ref=e43]
+        - link "You must be signed in to star a repository" [ref=e46] [cursor=pointer]:
+          - /url: /login?return_to=%2Ftopics
+          - img [ref=e47]
+          - text: Star
+      - generic [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e52]:
+            - text: The
+            - strong [ref=e53]: competitive-programming-problems
+            - text: topic hasn't been used on any public repositories, yet.
+          - link "Explore topics" [ref=e54] [cursor=pointer]:
+            - /url: /topics
+        - generic [ref=e55]:
+          - generic [ref=e56]:
+            - heading "Improve this page" [level=2] [ref=e57]
+            - paragraph [ref=e58]: Add a description, image, and links to the competitive-programming-problems topic page so that developers can more easily learn about it.
+            - paragraph [ref=e59]:
+              - link "Curate this topic" [ref=e60] [cursor=pointer]:
+                - /url: https://github.com/github/explore/tree/master/CONTRIBUTING.md?source=add-description-competitive-programming-problems
+                - text: Curate this topic
+                - img [ref=e61]
+          - generic [ref=e63]:
+            - heading "Add this topic to your repo" [level=2] [ref=e64]
+            - paragraph [ref=e65]: To associate your repository with the competitive-programming-problems topic, visit your repo's landing page and select "manage topics."
+            - paragraph [ref=e66]:
+              - link "Learn more" [ref=e67] [cursor=pointer]:
+                - /url: https://docs.github.com/en/articles/classifying-your-repository-with-topics
+                - text: Learn more
+                - img [ref=e68]
+  - contentinfo [ref=e70]:
+    - heading "Footer" [level=2] [ref=e71]
+    - generic [ref=e72]:
+      - generic [ref=e73]:
+        - link "GitHub Homepage" [ref=e74] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e75]
+        - generic [ref=e77]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e78]:
+        - heading "Footer navigation" [level=3] [ref=e79]
+        - list "Footer navigation" [ref=e80]:
+          - listitem [ref=e81]:
+            - link "Terms" [ref=e82] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e83]:
+            - link "Privacy" [ref=e84] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e85]:
+            - link "Security" [ref=e86] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e87]:
+            - link "Status" [ref=e88] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e89]:
+            - link "Community" [ref=e90] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e91]:
+            - link "Docs" [ref=e92] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e93]:
+            - link "Contact" [ref=e94] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e95]:
+            - button "Manage cookies" [ref=e97] [cursor=pointer]
+          - listitem [ref=e98]:
+            - button "Do not share my personal information" [ref=e100] [cursor=pointer]

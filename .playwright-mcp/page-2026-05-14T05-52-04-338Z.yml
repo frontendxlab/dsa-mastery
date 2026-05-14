@@ -1,0 +1,324 @@
+- generic [ref=e2]:
+  - heading "Kata Library" [level=1] [ref=e3]
+  - generic [ref=e4]:
+    - text: 
+    - navigation [ref=e5]:
+      - list [ref=e6]:
+        - listitem [ref=e7]:
+          - link "Sign Up Time to claim your honor" [ref=e8] [cursor=pointer]:
+            - /url: https://www.codewars.com/
+            - img [ref=e10]
+            - generic [ref=e11]:
+              - generic [ref=e12]: Sign Up
+              - generic [ref=e13]: Time to claim your honor
+        - listitem [ref=e14]: Training
+        - listitem [ref=e15]:
+          - link "Practice Complete challenging Kata to earn honor and ranks. Re-train to hone technique" [ref=e16]:
+            - /url: /kata/latest?beta=false
+            - img [ref=e18]
+            - generic [ref=e21]:
+              - generic [ref=e22]: Practice
+              - generic [ref=e23]:
+                - text: Complete challenging
+                - strong [ref=e24]: Kata
+                - text: to earn honor and ranks. Re-train to hone technique
+        - listitem [ref=e25]:
+          - link "Freestyle Sparring Take turns remixing and refactoring others code through Kumite" [ref=e26] [cursor=pointer]:
+            - /url: /kumite
+            - img [ref=e28]
+            - generic [ref=e31]:
+              - generic [ref=e32]: Freestyle Sparring
+              - generic [ref=e33]:
+                - text: Take turns remixing and refactoring others code through
+                - strong [ref=e34]: Kumite
+        - listitem [ref=e35]: Community
+        - listitem [ref=e36]:
+          - link "Leaderboards Achieve honor and move up the global leaderboards" [ref=e37] [cursor=pointer]:
+            - /url: /users/leaderboard
+            - img [ref=e39]
+            - generic [ref=e41]:
+              - generic [ref=e42]: Leaderboards
+              - generic [ref=e43]: Achieve honor and move up the global leaderboards
+        - listitem [ref=e44]:
+          - link "Chat Join our Discord server and chat with your fellow code warriors" [ref=e45] [cursor=pointer]:
+            - /url: https://discord.gg/mSwJWRvkHA
+            - img [ref=e47]
+            - generic [ref=e50]:
+              - generic [ref=e51]: Chat
+              - generic [ref=e52]:
+                - text: Join our
+                - strong [ref=e53]: Discord
+                - text: server and chat with your fellow code warriors
+        - listitem [ref=e54]:
+          - link "Discussions View our Github Discussions board to discuss general Codewars topics" [ref=e55] [cursor=pointer]:
+            - /url: https://github.com/codewars/codewars.com/discussions
+            - img [ref=e57]
+            - generic [ref=e59]:
+              - generic [ref=e60]: Discussions
+              - generic [ref=e61]:
+                - text: View our
+                - strong [ref=e62]: Github Discussions
+                - text: board to discuss general Codewars topics
+        - listitem [ref=e63]: About
+        - listitem [ref=e64]:
+          - link "Docs Learn about all of the different aspects of Codewars" [ref=e65] [cursor=pointer]:
+            - /url: https://docs.codewars.com
+            - img [ref=e67]
+            - generic [ref=e69]:
+              - generic [ref=e70]: Docs
+              - generic [ref=e71]: Learn about all of the different aspects of Codewars
+        - listitem [ref=e72]:
+          - link "Blog Read the latest news from Codewars and the community" [ref=e73] [cursor=pointer]:
+            - /url: https://codewars.com/blog
+            - img [ref=e75]
+            - generic [ref=e77]:
+              - generic [ref=e78]: Blog
+              - generic [ref=e79]: Read the latest news from Codewars and the community
+    - banner [ref=e80]:
+      - list:
+        - listitem [ref=e81]:
+          - img [ref=e83] [cursor=pointer]
+        - listitem [ref=e85]:
+          - link "Log In" [ref=e87] [cursor=pointer]:
+            - /url: /users/sign_in
+        - listitem [ref=e88]:
+          - link "Sign Up" [ref=e90] [cursor=pointer]:
+            - /url: /join
+    - main [ref=e91]:
+      - list [ref=e92]:
+        - listitem [ref=e93]:
+          - generic:
+            - generic: 
+            - text: Library
+        - listitem [ref=e94]:
+          - link "Collections" [ref=e95] [cursor=pointer]:
+            - /url: /collections
+            - generic [ref=e96]: 
+            - text: Collections
+      - generic [ref=e97]:
+        - generic [ref=e98]:
+          - generic [ref=e100]:
+            - generic [ref=e104]:
+              - textbox [ref=e105]
+              - button [ref=e108] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - img
+            - generic [ref=e110]:
+              - generic [ref=e112]: Sort By
+              - generic [ref=e115]:
+                - combobox [ref=e117] [cursor=pointer]:
+                  - generic [ref=e118]: Newest
+                  - img [ref=e122]
+                  - textbox [ref=e124]: "1"
+                - generic:
+                  - generic:
+                    - generic: Newest
+                    - generic: Oldest
+                    - generic: Popularity
+                    - generic: Positive Feedback
+                    - generic: Most Completed
+                    - generic: Least Completed
+                    - generic: Hardest
+                    - generic: Easiest
+                    - generic: Name
+                    - generic: Relevance
+                    - generic: Low Satisfaction
+            - generic [ref=e126]:
+              - generic [ref=e128]: Language
+              - generic [ref=e131]:
+                - combobox [ref=e133] [cursor=pointer]:
+                  - generic [ref=e134]: All
+                  - img [ref=e138]
+                  - textbox [ref=e140]
+                - generic:
+                  - generic:
+                    - generic: All
+                    - generic: My Languages
+                    - generic: Agda (Beta)
+                    - generic: BF (Beta)
+                    - generic: C
+                    - generic: CFML (Beta)
+                    - generic: Clojure
+                    - generic: COBOL (Beta)
+                    - generic: CoffeeScript
+                    - generic: CommonLisp (Beta)
+                    - generic: Coq
+                    - generic: C++
+                    - generic: Crystal
+                    - generic: C#
+                    - generic: D (Beta)
+                    - generic: Dart
+                    - generic: Elixir
+                    - generic: Elm (Beta)
+                    - generic: Erlang (Beta)
+                    - generic: Factor (Beta)
+                    - generic: Forth (Beta)
+                    - generic: Fortran (Beta)
+                    - generic: F#
+                    - generic: Go
+                    - generic: Groovy
+                    - generic: Haskell
+                    - generic: Haxe (Beta)
+                    - generic: Idris (Beta)
+                    - generic: Java
+                    - generic: JavaScript
+                    - generic: Julia (Beta)
+                    - generic: Kotlin
+                    - generic: λ Calculus (Beta)
+                    - generic: Lean
+                    - generic: Lua
+                    - generic: NASM
+                    - generic: Nim (Beta)
+                    - generic: Objective-C (Beta)
+                    - generic: OCaml (Beta)
+                    - generic: Pascal (Beta)
+                    - generic: Perl (Beta)
+                    - generic: PHP
+                    - generic: PowerShell (Beta)
+                    - generic: Prolog (Beta)
+                    - generic: PureScript (Beta)
+                    - generic: Python
+                    - generic: R (Beta)
+                    - generic: Racket
+                    - generic: Raku (Beta)
+                    - generic: Reason (Beta)
+                    - generic: RISC-V (Beta)
+                    - generic: Ruby
+                    - generic: Rust
+                    - generic: Scala
+                    - generic: Shell
+                    - generic: Solidity (Beta)
+                    - generic: SQL
+                    - generic: Swift
+                    - generic: TypeScript
+                    - generic: VB (Beta)
+            - generic [ref=e142]:
+              - generic [ref=e144]: Status
+              - generic [ref=e147]:
+                - combobox [ref=e149] [cursor=pointer]:
+                  - generic [ref=e150]: Approved
+                  - img [ref=e154]
+                  - textbox [ref=e156]: "1"
+                - generic:
+                  - generic:
+                    - generic: Approved & Beta
+                    - generic: Approved
+                    - generic: Beta
+            - generic [ref=e158]:
+              - generic [ref=e160]: Progress
+              - generic [ref=e163]:
+                - combobox [ref=e165] [cursor=pointer]:
+                  - generic [ref=e166]: All
+                  - img [ref=e170]
+                  - textbox [ref=e172]
+                - generic:
+                  - generic:
+                    - generic: All
+                    - generic: Kata I have not trained on
+                    - generic: Kata I have not completed
+                    - generic: Kata I have completed
+            - generic [ref=e174]:
+              - generic [ref=e176]: Difficulty
+              - generic [ref=e179]:
+                - combobox [ref=e181] [cursor=pointer]:
+                  - generic [ref=e182]: Select ranks
+                  - img [ref=e186]
+                  - textbox [ref=e188]
+                - generic:
+                  - generic:
+                    - generic: 8 kyu
+                    - generic: 7 kyu
+                    - generic: 6 kyu
+                    - generic: 5 kyu
+                    - generic: 4 kyu
+                    - generic: 3 kyu
+                    - generic: 2 kyu
+                    - generic: 1 kyu
+            - generic [ref=e190]:
+              - generic [ref=e192]: Tags
+              - generic [ref=e195]:
+                - combobox [ref=e197] [cursor=pointer]:
+                  - generic [ref=e201]:
+                    - generic [ref=e202]:
+                      - generic: math
+                    - button "Remove" [ref=e204]:
+                      - generic:
+                        - generic:
+                          - img
+                  - button "Clear entry" [ref=e205]:
+                    - img [ref=e209]
+                  - img [ref=e214]
+                  - textbox [ref=e216]: "1"
+                - generic:
+                  - generic:
+                    - generic: math
+          - generic [ref=e221]:
+            - link "Ad Would You Pass the Google SQL Interview? Test Yourself with These 7 Concepts Study up for your next SQL interview with these interview questions." [ref=e222] [cursor=pointer]:
+              - /url: /ads/house_srv?path=https%3A%2F%2Fwww.codewars.com%2Fpost%2Fwould-you-pass-the-google-sql-interview-test-yourself-with-these-7-concepts&&ad=would-you-pass-the-google-sql-interview&placement=kata_catalog
+              - img "Ad" [ref=e223]
+              - generic [ref=e224]:
+                - generic [ref=e225]: Would You Pass the Google SQL Interview? Test Yourself with These 7 Concepts
+                - generic [ref=e226]: Study up for your next SQL interview with these interview questions.
+            - link:
+              - /url: http://www.codewars.com/blog
+        - generic [ref=e227]:
+          - generic [ref=e228]:
+            - generic [ref=e229]: FEATURED TAGS
+            - generic [ref=e230]:
+              - link "Cryptography" [ref=e231] [cursor=pointer]:
+                - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=math%2CCryptography"
+                - img [ref=e234]
+                - generic [ref=e237]: Cryptography
+              - link "Data Science" [ref=e238] [cursor=pointer]:
+                - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=math%2CData+Science"
+                - img [ref=e241]
+                - generic [ref=e243]: Data Science
+              - link "Debugging" [ref=e244] [cursor=pointer]:
+                - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=math%2CDebugging"
+                - img [ref=e247]
+                - generic [ref=e249]: Debugging
+              - link "Games" [ref=e250] [cursor=pointer]:
+                - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=math%2CGames"
+                - img [ref=e253]
+                - generic [ref=e256]: Games
+              - link "Tutorials" [ref=e257] [cursor=pointer]:
+                - /url: "?beta=false&order_by=popularity%3Adesc&q=&tags=math%2CTutorials"
+                - img [ref=e260]
+                - generic [ref=e262]: Tutorials
+          - generic [ref=e263]:
+            - generic [ref=e264]: 0 Kata Found
+            - button [ref=e268] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - img
+  - contentinfo [ref=e269]:
+    - list [ref=e270]:
+      - generic [ref=e271]:
+        - listitem [ref=e272]: © 2026 Codewars
+        - listitem [ref=e273]:
+          - link "About" [ref=e274] [cursor=pointer]:
+            - /url: /about
+        - listitem [ref=e275]:
+          - link "API" [ref=e276] [cursor=pointer]:
+            - /url: https://dev.codewars.com
+        - listitem [ref=e277]:
+          - link "Blog" [ref=e278] [cursor=pointer]:
+            - /url: https://www.codewars.com/blog
+        - listitem [ref=e279]:
+          - link "Privacy" [ref=e280] [cursor=pointer]:
+            - /url: /about/privacy
+        - listitem [ref=e281]:
+          - link "Terms" [ref=e282] [cursor=pointer]:
+            - /url: /about/terms-of-service
+        - listitem [ref=e283]:
+          - link "Code of Conduct" [ref=e284] [cursor=pointer]:
+            - /url: https://docs.codewars.com/community/code-of-conduct
+        - listitem [ref=e285]:
+          - link "Contact" [ref=e286] [cursor=pointer]:
+            - /url: mailto:info@codewars.com
+      - listitem [ref=e287]:
+        - link [ref=e288] [cursor=pointer]:
+          - /url: https://www.qualified.io?utm_source=codewars&utm_medium=web&utm_term=footer
+          - img [ref=e290]
+  - text: 

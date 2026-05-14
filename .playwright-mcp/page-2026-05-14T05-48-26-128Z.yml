@@ -1,0 +1,103 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e10]:
+    - generic [ref=e16]:
+      - generic [ref=e18]:
+        - button [ref=e20] [cursor=pointer]:
+          - img [ref=e22]: 
+        - img "Naukri Code 360" [ref=e25]
+      - generic [ref=e27]:
+        - generic [ref=e30] [cursor=pointer]: Login
+        - img "ham" [ref=e32] [cursor=pointer]
+    - generic [ref=e34]:
+      - generic [ref=e36]:
+        - button "Interview problems" [ref=e37] [cursor=pointer]:
+          - generic [ref=e39]: Interview problems
+        - button "View all problems" [ref=e40] [cursor=pointer]:
+          - generic [ref=e42]: View all problems
+      - generic [ref=e48]:
+        - generic [ref=e49]:
+          - generic [ref=e53]:
+            - tablist [ref=e56]:
+              - generic [ref=e57]:
+                - tab "Problem" [selected] [ref=e58] [cursor=pointer]:
+                  - generic [ref=e62]: Problem
+                - tab "Submissions" [ref=e63] [cursor=pointer]:
+                  - generic [ref=e67]: Submissions
+                - tab "Hints & solutions" [ref=e68] [cursor=pointer]:
+                  - generic [ref=e72]: Hints & solutions
+                - tab "Discuss" [ref=e73] [cursor=pointer]:
+                  - generic [ref=e77]: Discuss
+            - generic [ref=e78]:
+              - tabpanel "Problem" [ref=e79]:
+                - generic [ref=e85]:
+                  - generic [ref=e86]:
+                    - generic [ref=e87]:
+                      - generic [ref=e88]:
+                        - generic [ref=e89]:
+                          - img [ref=e91]: 
+                          - heading "Fenwick Tree" [level=1] [ref=e92]
+                        - img [ref=e95] [cursor=pointer]: 
+                      - generic [ref=e96]:
+                        - generic [ref=e97]: Moderate
+                        - img [ref=e99]: 
+                        - generic [ref=e102]: 0/80
+                        - img [ref=e104]: 
+                        - generic [ref=e105]: Average time to solve is 15m
+                    - generic [ref=e107]:
+                      - generic [ref=e108]:
+                        - link "profile" [ref=e112] [cursor=pointer]:
+                          - /url: /code360/profile/03965afe-5256-46d3-877f-0f174ff0b743
+                          - img "profile" [ref=e113]
+                        - generic [ref=e114]: Contributed by
+                        - button "Himanshu" [ref=e115] [cursor=pointer]:
+                          - generic [ref=e116]: Himanshu
+                      - generic [ref=e119] [cursor=pointer]:
+                        - img [ref=e121]: 
+                        - generic [ref=e122]: 2 upvotes
+                      - generic [ref=e125] [cursor=pointer]:
+                        - generic [ref=e126]: Asked in companies
+                        - generic [ref=e127]:
+                          - img "Amazon" [ref=e128]
+                          - img "Goldman Sachs" [ref=e129]
+                          - img "Samsung Electronics" [ref=e130]
+                  - generic [ref=e132]:
+                    - generic [ref=e133]:
+                      - heading "Problem statement" [level=2] [ref=e134]
+                      - button "Send feedback" [ref=e137] [cursor=pointer]:
+                        - generic [ref=e139]: Send feedback
+                    - generic [ref=e141]:
+                      - paragraph [ref=e142]: "You are given an array/list 'ARR' of ‘N’ integers, and ‘Q’ queries. Each query can be of two types:"
+                      - paragraph [ref=e143]: Given 2 integers ‘L’,’R’ ( L>=0 and R<N ) find the sum of all the elements of the array with the index in the range 'L' and 'R' (inclusive). This is a query of type range sum.
+                      - paragraph [ref=e144]: Given an index ‘i’ update the value of ARR[i] to a given integer ‘X’. This is a query of type point update.
+                      - paragraph [ref=e145]: Your task is to perform the queries on the given array and return the desired output for each query.
+                    - generic [ref=e147] [cursor=pointer]:
+                      - generic [ref=e148]: Detailed explanation ( Input/output format, Notes, Images )
+                      - img [ref=e150]: 
+                    - generic [ref=e151]:
+                      - text: "Constraints:"
+                      - code [ref=e153]: "1 <= T <= 10 1 <= N <= 10^5 1 <= Q <= 10^5 -10^9 <= ARR[i] <= 10^9 Where ‘N’ denotes the length of the array 'ARR', 'Q' denotes the number of queries, and ‘ARR[i]’ is the value of the element at index ‘i’. Time Limit: 1 sec"
+                    - generic [ref=e154]:
+                      - text: "Sample Input 1 :"
+                      - code [ref=e156]: 1 5 5 4 2 3 5 5 1 0 2 2 1 1 1 0 2 2 3 1 1 0 4
+                      - text: "Sample Output 1 :"
+                      - code [ref=e158]: 11 8 14
+                      - text: "Explanation of The Sample Input 1:"
+                      - code [ref=e160]: "The first line has a single integer which means it's a single test case. The next line has an integer 5 denoting that there are 5 integers in the array. Then the 5 space-separated integers in the third line represent the elements in the array. Then the fourth line has ‘Q’ which is the number of queries. In this case, we have 5 queries. Then the 5 queries follow: We can see that the first query is of type 1 i.e a range sum query. From the second and third integer we get we need to find the sum of the elements at index 0 1 and 2 i.e the first 3 elements. We can see that the sum will be 5+4+2=11 and hence we print 11. The next query is of type 2 so we need to update the element at index 1 to 1. So the array after updating will be {5 1 2 3 5}. Note that we do not print anything. The next query is of type 1 from index 0 to 2. Now the sum will be 5+1+2=8 hence we print 8 in a new line. The next query is of type 2 in which the element at index 3 is updated to 1. After updating, the array is: {5 1 2 1 5}. The last query is of type 1 and we need to find the sum of all 5 elements which will be: 5+1+2+1+5=14. Hence we print 14 in a new line."
+                      - text: "Sample Input 2 :"
+                      - code [ref=e162]: 2 9 12 20 10 15 16 11 19 10 10 6 1 3 5 1 7 7 1 4 5 2 1 27 2 7 23 2 5 12 9 18 19 19 10 17 18 19 10 14 7 2 4 25 1 4 8 1 7 7 2 5 15 2 8 14 1 4 5 2 0 4
+                      - text: "Sample Output 2 :"
+                      - code [ref=e164]: 42 10 27 86 10 40
+              - tabpanel "Submissions" [ref=e165]
+              - tabpanel "Hints & solutions" [ref=e166]
+              - tabpanel "Discuss" [ref=e167]
+          - text:      
+        - generic [ref=e171]:
+          - button "Prev" [ref=e172] [cursor=pointer]:
+            - generic [ref=e173]: Prev
+          - button "Solve on desktop" [ref=e174] [cursor=pointer]:
+            - generic [ref=e177]: Solve on desktop
+          - button "Next" [ref=e178] [cursor=pointer]:
+            - generic [ref=e179]: Next
+  - generic:
+    - alert
+    - status

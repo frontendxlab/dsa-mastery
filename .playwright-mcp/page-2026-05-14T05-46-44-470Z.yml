@@ -1,0 +1,16 @@
+- generic [ref=e10]:
+  - generic [ref=e16]:
+    - img "Naukri Code 360" [ref=e21]
+    - generic [ref=e22]:
+      - generic [ref=e23] [cursor=pointer]:
+        - img "potd-icon" [ref=e24]
+        - paragraph [ref=e25]: Become AI ready
+      - generic [ref=e26]:
+        - generic [ref=e29] [cursor=pointer]: Login
+        - img "ham" [ref=e31] [cursor=pointer]
+  - generic [ref=e36]:
+    - generic [ref=e37]:
+      - generic [ref=e38]: 404 - That's an error.
+      - generic [ref=e39]: But we're not ones to leave you hanging. Head to our homepage for a full catalog of awesome stuff.
+    - link "Go back to home" [ref=e41] [cursor=pointer]:
+      - /url: /code360
