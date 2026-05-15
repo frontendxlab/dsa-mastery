@@ -13,17 +13,17 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part II — Linked Structures',
     color: 'var(--nb-blue)',
-    chapters: ['linked-list', 'trees', 'advanced-trees', 'sparse-table', 'segment-tree-lazy', 'cycle-detection', 'tree-construction', 'lca', 'dsu-on-tree', 'tree-diameter'],
+    chapters: ['linked-list', 'trees', 'advanced-trees', 'sparse-table', 'segment-tree-lazy', 'cycle-detection', 'tree-construction', 'lca', 'dsu-on-tree', 'tree-diameter', 'offline-lca'],
   },
   {
     part: 'Part III — Hashing & Auxiliary Structures',
     color: 'var(--nb-purple)',
-    chapters: ['heap', 'trie', 'monotonic-stack', 'hashmap-patterns', 'stack-queue', 'counting-patterns', 'kth-element', 'monotonic-queue', 'two-heaps', 'bracket-sequences', 'amortized-patterns', 'expression-parsing'],
+    chapters: ['heap', 'trie', 'monotonic-stack', 'hashmap-patterns', 'stack-queue', 'counting-patterns', 'kth-element', 'monotonic-queue', 'two-heaps', 'bracket-sequences', 'amortized-patterns', 'expression-parsing', 'trie-xor'],
   },
   {
     part: 'Part IV — Core Algorithms',
     color: 'var(--nb-green)',
-    chapters: ['dynamic-programming', 'backtracking', 'greedy', 'graph', 'shortest-path', 'bitmask-dp', 'divide-conquer', 'knapsack-dp', 'graph-advanced', 'bipartite', 'coordinate-compression', 'topological-sort', 'minimum-spanning-tree', 'network-flow', 'meet-in-middle', 'convex-hull-trick', 'centroid-decomposition', 'line-sweep', 'two-sat', 'bridges-articulation', 'min-cost-flow'],
+    chapters: ['dynamic-programming', 'backtracking', 'greedy', 'graph', 'shortest-path', 'bitmask-dp', 'divide-conquer', 'knapsack-dp', 'graph-advanced', 'bipartite', 'coordinate-compression', 'topological-sort', 'minimum-spanning-tree', 'network-flow', 'meet-in-middle', 'convex-hull-trick', 'centroid-decomposition', 'line-sweep', 'two-sat', 'bridges-articulation', 'min-cost-flow', 'flow-lower-bounds'],
   },
   {
     part: 'Part V — Strings, Sequences & Grid',
@@ -33,7 +33,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part VI — Math & Discrete',
     color: 'var(--nb-pink)',
-    chapters: ['math', 'bit-manipulation', 'combinatorics', 'game-theory', 'geometry', 'number-theory', 'probability-dp', 'ternary-search', 'fft', 'sprague-grundy', 'chinese-remainder', 'convex-hull', 'inclusion-exclusion', 'catalan-numbers', 'josephus', 'sieve-variants', 'burnside-lemma', 'gray-code', 'gaussian-gf2'],
+    chapters: ['math', 'bit-manipulation', 'combinatorics', 'game-theory', 'geometry', 'number-theory', 'probability-dp', 'ternary-search', 'fft', 'sprague-grundy', 'chinese-remainder', 'convex-hull', 'inclusion-exclusion', 'catalan-numbers', 'josephus', 'sieve-variants', 'burnside-lemma', 'gray-code', 'gaussian-gf2', 'lucas-theorem'],
   },
   {
     part: 'Part VII — Advanced Topics',

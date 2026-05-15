@@ -151,6 +151,10 @@ import { minCostFlowArticle } from './content/min-cost-flow'
 import { slopeTrickArticle } from './content/slope-trick'
 import { palindromeAutomatonArticle } from './content/palindrome-automaton'
 import { gaussianGf2Article } from './content/gaussian-gf2'
+import { trieXorArticle } from './content/trie-xor'
+import { lucasTheoremArticle } from './content/lucas-theorem'
+import { offlineLcaArticle } from './content/offline-lca'
+import { flowLowerBoundsArticle } from './content/flow-lower-bounds'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -271,6 +275,10 @@ export const articles: Article[] = [
   slopeTrickArticle,
   palindromeAutomatonArticle,
   gaussianGf2Article,
+  trieXorArticle,
+  lucasTheoremArticle,
+  offlineLcaArticle,
+  flowLowerBoundsArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
