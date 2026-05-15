@@ -83,6 +83,7 @@ import { sparseTableArticle } from './content/sparse-table'
 import { countingPatternsArticle } from './content/counting-patterns'
 import { graphAdvancedArticle } from './content/graph-advanced'
 import { twoSumFamilyArticle } from './content/two-sum-family'
+import { palindromePatternsArticle } from './content/palindrome-patterns'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -135,6 +136,7 @@ export const articles: Article[] = [
   countingPatternsArticle,
   graphAdvancedArticle,
   twoSumFamilyArticle,
+  palindromePatternsArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
