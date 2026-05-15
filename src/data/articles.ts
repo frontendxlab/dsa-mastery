@@ -171,6 +171,10 @@ import { wordBreakVariantsArticle } from './content/word-break-variants'
 import { rotatingCalipersArticle } from './content/rotating-calipers'
 import { matchingFlowArticle } from './content/matching-flow'
 import { shortestSupersequenceArticle } from './content/shortest-supersequence'
+import { aliensTrickArticle } from './content/aliens-trick'
+import { persistentUnionFindArticle } from './content/persistent-union-find'
+import { graphColoringArticle } from './content/graph-coloring'
+import { arithmeticDpArticle } from './content/arithmetic-dp'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -311,6 +315,10 @@ export const articles: Article[] = [
   rotatingCalipersArticle,
   matchingFlowArticle,
   shortestSupersequenceArticle,
+  aliensTrickArticle,
+  persistentUnionFindArticle,
+  graphColoringArticle,
+  arithmeticDpArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {

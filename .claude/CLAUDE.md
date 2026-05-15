@@ -40,11 +40,11 @@ style: <UI/CSS changes>
 > (documentation, ownership, history, decisions). **Always verify against
 > actual source files before making changes** — the index may be stale.
 
-Last indexed: 2026-05-15 (commit ad7a942). Confidence: 100%.
+Last indexed: 2026-05-15 (commit 9ca6377). Confidence: 100%.
 ### Key Modules
 | Module | Purpose | Owner |
 |--------|---------|-------|
-| `src` | The src module serves as the core foundation for an extensive educational platfo | — |
+| `src` | The src module serves as the core foundation for the application, acting as a co | — |
 | `scripts` | The scripts module serves as a collection of iterative data analysis and dedupli | — |
 | `root` | The root module serves as the primary configuration layer for the project's buil | — |
 | `greedy` | The greedy module provides a centralized utility for managing and consolidating  | — |
@@ -59,9 +59,9 @@ Last indexed: 2026-05-15 (commit ad7a942). Confidence: 100%.
 |------|-------|-------------|-------|
 | `math/all_math_problems.csv` | 100.0th %ile | 3 | rashidtvmr |
 | `src/styles.css` | 99.8th %ile | 3 | rashidtvmr |
-| `src/routes/explore.tsx` | 99.6th %ile | 3 | rashidtvmr |
-| `greedy/all_greedy_problems.csv` | 99.4th %ile | 2 | rashidtvmr |
-| `backtrack/all_backtracking_problems.csv` | 99.2th %ile | 2 | rashidtvmr |
+| `src/routes/index.tsx` | 99.6th %ile | 4 | rashidtvmr |
+| `src/routes/explore.tsx` | 99.4th %ile | 3 | rashidtvmr |
+| `src/components/Header.tsx` | 99.2th %ile | 5 | rashidtvmr |
 
 ### Repowise MCP Tools
 
