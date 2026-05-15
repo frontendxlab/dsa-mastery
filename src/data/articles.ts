@@ -103,6 +103,10 @@ import { twoHeapsArticle } from './content/two-heaps'
 import { networkFlowArticle } from './content/network-flow'
 import { meetInMiddleArticle } from './content/meet-in-middle'
 import { convexHullTrickArticle } from './content/convex-hull-trick'
+import { fenwickTreeArticle } from './content/fenwick-tree'
+import { suffixArrayArticle } from './content/suffix-array'
+import { heavyLightDecompositionArticle } from './content/heavy-light-decomposition'
+import { randomizedAlgorithmsArticle } from './content/randomized-algorithms'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -175,6 +179,10 @@ export const articles: Article[] = [
   networkFlowArticle,
   meetInMiddleArticle,
   convexHullTrickArticle,
+  fenwickTreeArticle,
+  suffixArrayArticle,
+  heavyLightDecompositionArticle,
+  randomizedAlgorithmsArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
