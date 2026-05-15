@@ -84,6 +84,7 @@ import { countingPatternsArticle } from './content/counting-patterns'
 import { graphAdvancedArticle } from './content/graph-advanced'
 import { twoSumFamilyArticle } from './content/two-sum-family'
 import { palindromePatternsArticle } from './content/palindrome-patterns'
+import { sortingAlgorithmsArticle } from './content/sorting-algorithms'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -137,6 +138,7 @@ export const articles: Article[] = [
   graphAdvancedArticle,
   twoSumFamilyArticle,
   palindromePatternsArticle,
+  sortingAlgorithmsArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
