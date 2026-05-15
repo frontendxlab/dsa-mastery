@@ -179,6 +179,10 @@ import { kadaneVariantsArticle } from './content/kadane-variants'
 import { subsequenceCountingArticle } from './content/subsequence-counting'
 import { slidingWindowAdvancedArticle } from './content/sliding-window-advanced'
 import { twoPointerAdvancedArticle } from './content/two-pointer-advanced'
+import { carryDpArticle } from './content/carry-dp'
+import { randomWalkArticle } from './content/random-walk'
+import { stringConstructionArticle } from './content/string-construction'
+import { topkStreamingArticle } from './content/topk-streaming'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -327,6 +331,10 @@ export const articles: Article[] = [
   subsequenceCountingArticle,
   slidingWindowAdvancedArticle,
   twoPointerAdvancedArticle,
+  carryDpArticle,
+  randomWalkArticle,
+  stringConstructionArticle,
+  topkStreamingArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
