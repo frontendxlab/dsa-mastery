@@ -69,6 +69,7 @@ import { hashmapPatternsArticle } from './content/hashmap-patterns'
 import { stackQueueArticle } from './content/stack-queue'
 import { shortestPathArticle } from './content/shortest-path'
 import { bitmaskDpArticle } from './content/bitmask-dp'
+import { numberTheoryArticle } from './content/number-theory'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -107,6 +108,7 @@ export const articles: Article[] = [
   stackQueueArticle,
   shortestPathArticle,
   bitmaskDpArticle,
+  numberTheoryArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
