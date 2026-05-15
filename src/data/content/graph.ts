@@ -486,10 +486,117 @@ const hasCycle = (src) => {
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'Even More Problems',
+    },
+    {
+      type: 'problem',
+      num: 10,
+      title: 'Alien Dictionary (Topological Sort)',
+      url: 'https://leetcode.com/problems/alien-dictionary/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: Build DAG from adjacent words, topo sort',
+          explanation: `Compare adjacent words in the list. For each pair (words[i], words[i+1]), find the first differing character — that gives an ordering constraint (edge in DAG). If words[i] is a prefix of words[i+1] and longer, return "" (invalid). Then topological sort with Kahn's BFS.`,
+          code: `var alienOrder = function(words) {
+    const adj = {}, indegree = {};
+    for (const w of words) for (const c of w) { adj[c] = adj[c] || new Set(); indegree[c] = indegree[c] ?? 0; }
+    for (let i = 0; i < words.length - 1; i++) {
+        const [a, b] = [words[i], words[i+1]];
+        let found = false;
+        for (let j = 0; j < Math.min(a.length, b.length); j++) {
+            if (a[j] !== b[j]) {
+                if (!adj[a[j]].has(b[j])) { adj[a[j]].add(b[j]); indegree[b[j]]++; }
+                found = true; break;
+            }
+        }
+        if (!found && a.length > b.length) return '';
+    }
+    const q = Object.keys(indegree).filter(c => indegree[c] === 0);
+    let result = '';
+    while (q.length) {
+        const c = q.shift(); result += c;
+        for (const nb of adj[c]) if (--indegree[nb] === 0) q.push(nb);
+    }
+    return result.length === Object.keys(indegree).length ? result : '';
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 11,
+      title: 'Swim in Rising Water',
+      url: 'https://leetcode.com/problems/swim-in-rising-water/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: Dijkstra — minimize maximum elevation on path',
+          explanation: `"Minimax path" variant: minimize the maximum grid value along the path from (0,0) to (n-1,n-1). Use Dijkstra where dist[r][c] = minimum possible max elevation to reach (r,c). Edge weight = grid[nr][nc] (not sum — we take max along path).`,
+          code: `var swimInWater = function(grid) {
+    const n = grid.length;
+    const dist = Array.from({length:n},()=>new Array(n).fill(Infinity));
+    dist[0][0] = grid[0][0];
+    const heap = [[grid[0][0], 0, 0]];
+    const dirs = [[0,1],[0,-1],[1,0],[-1,0]];
+    while (heap.length) {
+        heap.sort((a,b)=>a[0]-b[0]);
+        const [d, r, c] = heap.shift();
+        if (r===n-1 && c===n-1) return d;
+        if (d > dist[r][c]) continue;
+        for (const [dr,dc] of dirs) {
+            const nr=r+dr, nc=c+dc;
+            if (nr<0||nr>=n||nc<0||nc>=n) continue;
+            const newDist = Math.max(d, grid[nr][nc]); // max along path
+            if (newDist < dist[nr][nc]) {
+                dist[nr][nc] = newDist;
+                heap.push([newDist, nr, nc]);
+            }
+        }
+    }
+    return dist[n-1][n-1];
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 12,
+      title: 'Reconstruct Itinerary',
+      url: 'https://leetcode.com/problems/reconstruct-itinerary/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: Hierholzer\'s algorithm for Eulerian path',
+          explanation: `All tickets must be used exactly once → Eulerian path problem. Start at JFK, use DFS. The trick: when a path is exhausted (no more neighbors), add current node to the FRONT of result. This post-order insertion builds the Eulerian path correctly.`,
+          code: `var findItinerary = function(tickets) {
+    const graph = {};
+    tickets.sort().forEach(([from, to]) => {
+        if (!graph[from]) graph[from] = [];
+        graph[from].push(to);
+    });
+    const result = [];
+    const dfs = (node) => {
+        while (graph[node] && graph[node].length)
+            dfs(graph[node].shift()); // always pick lexicographically smallest
+        result.unshift(node); // add to front when path exhausted
+    };
+    dfs('JFK');
+    return result;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '🧠',
       color: 'teal',
-      content: `**Graph algorithm selector:**\n- Unweighted shortest path → BFS\n- Weighted shortest path (positive weights) → Dijkstra\n- Negative weights → Bellman-Ford\n- All-pairs shortest path → Floyd-Warshall\n- Minimum spanning tree → Kruskal (sort edges) or Prim\n- Cycle detection / topo sort → DFS with color states or Kahn's BFS\n- Strongly connected components → Kosaraju (2 DFS) or Tarjan`,
+      content: `**Graph algorithm selector:**\n- Unweighted shortest path → BFS\n- Weighted shortest path (positive weights) → Dijkstra\n- Minimax/maximin path → Dijkstra with max instead of sum\n- Negative weights → Bellman-Ford\n- All-pairs shortest path → Floyd-Warshall\n- Minimum spanning tree → Kruskal (sort edges + UF) or Prim (Dijkstra-like)\n- Cycle detection / topo sort → DFS with color states or Kahn's BFS\n- Strongly connected components → Kosaraju (2 DFS) or Tarjan\n- Eulerian path → Hierholzer's (DFS, post-order insert to front)`,
     },
   ],
 }

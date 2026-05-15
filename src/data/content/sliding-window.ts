@@ -383,10 +383,102 @@ return atMost(k) - atMost(k - 1);`,
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'Even More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 9,
+      title: 'Longest Repeating Character Replacement',
+      url: 'https://leetcode.com/problems/longest-repeating-character-replacement/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Sliding window — window valid when replacements needed ≤ k',
+          explanation: `Window [lo, hi] is valid when (window size - max frequency char in window) ≤ k (i.e., we only need to replace the non-dominant chars). Expand hi, update max freq. If window becomes invalid, shrink lo (we don't need to recompute max freq — we're looking for a window of the same or larger size).`,
+          code: `var characterReplacement = function(s, k) {
+    const freq = new Array(26).fill(0);
+    let lo = 0, maxFreq = 0, maxLen = 0;
+    for (let hi = 0; hi < s.length; hi++) {
+        freq[s.charCodeAt(hi)-65]++;
+        maxFreq = Math.max(maxFreq, freq[s.charCodeAt(hi)-65]);
+        // replacements needed = window size - max freq
+        if (hi - lo + 1 - maxFreq > k) {
+            freq[s.charCodeAt(lo)-65]--;
+            lo++;
+        }
+        maxLen = Math.max(maxLen, hi - lo + 1);
+    }
+    return maxLen;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 10,
+      title: 'Permutation in String',
+      url: 'https://leetcode.com/problems/permutation-in-string/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Fixed-size sliding window with frequency matching',
+          explanation: `s2 contains a permutation of s1 iff there's a window of size s1.length in s2 with the same character frequencies. Use a fixed window of size s1.length; track how many characters have matching frequencies (satisfied count). When all 26 chars are satisfied, found a permutation.`,
+          code: `var checkInclusion = function(s1, s2) {
+    if (s1.length > s2.length) return false;
+    const f1 = new Array(26).fill(0), f2 = new Array(26).fill(0);
+    for (const c of s1) f1[c.charCodeAt(0)-97]++;
+    let satisfied = 0;
+    for (let i = 0; i < 26; i++) if (f1[i] === f2[i]) satisfied++;
+    for (let i = 0; i < s2.length; i++) {
+        const addIdx = s2.charCodeAt(i)-97;
+        if (f1[addIdx] === f2[addIdx]) satisfied--;
+        f2[addIdx]++;
+        if (f1[addIdx] === f2[addIdx]) satisfied++;
+        if (i >= s1.length) {
+            const remIdx = s2.charCodeAt(i-s1.length)-97;
+            if (f1[remIdx] === f2[remIdx]) satisfied--;
+            f2[remIdx]--;
+            if (f1[remIdx] === f2[remIdx]) satisfied++;
+        }
+        if (satisfied === 26) return true;
+    }
+    return false;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 11,
+      title: 'Max Consecutive Ones III',
+      url: 'https://leetcode.com/problems/max-consecutive-ones-iii/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Sliding window — window valid when zeros ≤ k',
+          explanation: `"Flip at most k zeros" = find the longest window containing at most k zeros. Classic variable sliding window. Shrink from left when zero count exceeds k.`,
+          code: `var longestOnes = function(nums, k) {
+    let lo = 0, zeros = 0, maxLen = 0;
+    for (let hi = 0; hi < nums.length; hi++) {
+        if (nums[hi] === 0) zeros++;
+        while (zeros > k) { if (nums[lo++] === 0) zeros--; }
+        maxLen = Math.max(maxLen, hi - lo + 1);
+    }
+    return maxLen;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '📌',
       color: 'gray',
-      content: `**Sliding window checklist:**\n1. Can I define a window [lo, hi] with a valid/invalid state?\n2. Is the state monotone — if [lo, hi] is invalid, is [lo, hi+1] also invalid? → shrink window\n3. For COUNT problems: use atMost(k) - atMost(k-1) trick\n4. Need max in window? → monotonic deque\n5. Need sum/count in window? → simple two-pointer with running total`,
+      content: `**Sliding window checklist:**\n1. Can I define a window [lo, hi] with a valid/invalid state?\n2. Is the state monotone — if [lo, hi] is invalid, is [lo, hi+1] also invalid? → shrink window\n3. For COUNT problems: use atMost(k) - atMost(k-1) trick\n4. Need max in window? → monotonic deque\n5. Need sum/count in window? → simple two-pointer with running total\n6. "At most k replacements/flips" → (windowSize - max_dominant_count) ≤ k\n7. "Permutation in string" → fixed window + frequency matching (satisfied count)`,
     },
   ],
 }
