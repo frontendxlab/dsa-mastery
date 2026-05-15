@@ -219,6 +219,10 @@ import { greedyStringsArticle } from './content/greedy-strings'
 import { arrayRotationArticle } from './content/array-rotation'
 import { unionFindApplicationsArticle } from './content/union-find-applications'
 import { stringParsingArticle } from './content/string-parsing'
+import { trappingRainwaterArticle } from './content/trapping-rainwater'
+import { nextPermutationArticle } from './content/next-permutation'
+import { graphColoringBipartiteArticle } from './content/graph-coloring-bipartite'
+import { matrixChainArticle } from './content/matrix-chain'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -407,6 +411,10 @@ export const articles: Article[] = [
   arrayRotationArticle,
   unionFindApplicationsArticle,
   stringParsingArticle,
+  trappingRainwaterArticle,
+  nextPermutationArticle,
+  graphColoringBipartiteArticle,
+  matrixChainArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {

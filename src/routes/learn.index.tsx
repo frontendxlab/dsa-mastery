@@ -8,7 +8,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part I — Arrays & Pointers',
     color: 'var(--nb-teal)',
-    chapters: ['two-pointers', 'sliding-window', 'binary-search', 'prefix-sum', 'two-sum-family', 'array-tricks', 'difference-array', 'contribution-technique', 'binary-search-answer', 'permutation-patterns', 'word-break-variants', 'shortest-supersequence', 'kadane-variants', 'two-pointer-advanced', 'cyclic-sort', 'array-rotation'],
+    chapters: ['two-pointers', 'sliding-window', 'binary-search', 'prefix-sum', 'two-sum-family', 'array-tricks', 'difference-array', 'contribution-technique', 'binary-search-answer', 'permutation-patterns', 'word-break-variants', 'shortest-supersequence', 'kadane-variants', 'two-pointer-advanced', 'cyclic-sort', 'array-rotation', 'next-permutation'],
   },
   {
     part: 'Part II — Linked Structures',
@@ -23,7 +23,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part IV — Core Algorithms',
     color: 'var(--nb-green)',
-    chapters: ['dynamic-programming', 'backtracking', 'greedy', 'graph', 'shortest-path', 'bitmask-dp', 'divide-conquer', 'knapsack-dp', 'graph-advanced', 'bipartite', 'coordinate-compression', 'topological-sort', 'minimum-spanning-tree', 'network-flow', 'meet-in-middle', 'convex-hull-trick', 'centroid-decomposition', 'line-sweep', 'two-sat', 'bridges-articulation', 'min-cost-flow', 'flow-lower-bounds', 'bidirectional-bfs', 'a-star-search', 'difference-constraints', 'functional-graphs', 'matching-flow', 'graph-coloring', 'topk-streaming', 'strongly-connected-components', 'graph-state-space', 'greedy-intervals', 'constructive-algorithms', 'backtracking-pruning', 'multi-source-bfs', 'grid-islands', 'graph-bellman-ford', 'jump-game-variants', 'union-find-applications', 'greedy-strings'],
+    chapters: ['dynamic-programming', 'backtracking', 'greedy', 'graph', 'shortest-path', 'bitmask-dp', 'divide-conquer', 'knapsack-dp', 'graph-advanced', 'bipartite', 'coordinate-compression', 'topological-sort', 'minimum-spanning-tree', 'network-flow', 'meet-in-middle', 'convex-hull-trick', 'centroid-decomposition', 'line-sweep', 'two-sat', 'bridges-articulation', 'min-cost-flow', 'flow-lower-bounds', 'bidirectional-bfs', 'a-star-search', 'difference-constraints', 'functional-graphs', 'matching-flow', 'graph-coloring', 'topk-streaming', 'strongly-connected-components', 'graph-state-space', 'greedy-intervals', 'constructive-algorithms', 'backtracking-pruning', 'multi-source-bfs', 'grid-islands', 'graph-bellman-ford', 'jump-game-variants', 'union-find-applications', 'greedy-strings', 'graph-coloring-bipartite'],
   },
   {
     part: 'Part V — Strings, Sequences & Grid',
@@ -43,7 +43,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part VIII — Cross-Topic Deep Dives',
     color: 'var(--nb-red)',
-    chapters: ['bfs-vs-dfs', 'interval-problems', 'dp-on-trees', 'union-find', 'digit-dp', 'interval-dp', 'grid-dp', 'state-machine-dp', 'recursion-memoization', 'grid-patterns', 'fenwick-tree', 'heavy-light-decomposition', 'euler-tour', 'mo-algorithm', 'xor-basis', 'euler-path', 'divide-conquer-dp', 'sqrt-decomposition', 'persistent-segment-tree', 'treap', 'offline-cdq', 'bitset-operations', 'slope-trick', 'segment-tree-beats', 'balanced-dp', 'profile-dp', 'aliens-trick', 'arithmetic-dp', 'subsequence-counting', 'sliding-window-advanced', 'two-d-prefix-sum', 'dp-with-deque', 'stock-trading', 'dp-space-optimization', 'string-window-patterns', 'wildcard-regex', 'counting-subarrays', 'dp-palindromes'],
+    chapters: ['bfs-vs-dfs', 'interval-problems', 'dp-on-trees', 'union-find', 'digit-dp', 'interval-dp', 'grid-dp', 'state-machine-dp', 'recursion-memoization', 'grid-patterns', 'fenwick-tree', 'heavy-light-decomposition', 'euler-tour', 'mo-algorithm', 'xor-basis', 'euler-path', 'divide-conquer-dp', 'sqrt-decomposition', 'persistent-segment-tree', 'treap', 'offline-cdq', 'bitset-operations', 'slope-trick', 'segment-tree-beats', 'balanced-dp', 'profile-dp', 'aliens-trick', 'arithmetic-dp', 'subsequence-counting', 'sliding-window-advanced', 'two-d-prefix-sum', 'dp-with-deque', 'stock-trading', 'dp-space-optimization', 'string-window-patterns', 'wildcard-regex', 'counting-subarrays', 'dp-palindromes', 'trapping-rainwater', 'matrix-chain'],
   },
 ]
 
