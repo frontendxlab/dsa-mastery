@@ -71,6 +71,7 @@ import { shortestPathArticle } from './content/shortest-path'
 import { bitmaskDpArticle } from './content/bitmask-dp'
 import { numberTheoryArticle } from './content/number-theory'
 import { digitDpArticle } from './content/digit-dp'
+import { divideConquerArticle } from './content/divide-conquer'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -111,6 +112,7 @@ export const articles: Article[] = [
   bitmaskDpArticle,
   numberTheoryArticle,
   digitDpArticle,
+  divideConquerArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
