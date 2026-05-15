@@ -279,10 +279,171 @@ class LRUCache {
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 6,
+      title: 'Merge K Sorted Lists',
+      url: 'https://leetcode.com/problems/merge-k-sorted-lists/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: Divide and conquer — merge pairs recursively',
+          explanation: `Instead of merging one by one (O(kN)), merge lists in pairs like merge sort. log(k) rounds, each O(N) total = O(N log k).`,
+          code: `var mergeKLists = function(lists) {
+    if (!lists.length) return null;
+    const merge2 = (l1, l2) => {
+        const dummy = new ListNode(0);
+        let curr = dummy;
+        while (l1 && l2) {
+            if (l1.val <= l2.val) { curr.next = l1; l1 = l1.next; }
+            else { curr.next = l2; l2 = l2.next; }
+            curr = curr.next;
+        }
+        curr.next = l1 || l2;
+        return dummy.next;
+    };
+    while (lists.length > 1) {
+        const merged = [];
+        for (let i = 0; i < lists.length; i += 2)
+            merged.push(merge2(lists[i], lists[i+1] ?? null));
+        lists = merged;
+    }
+    return lists[0];
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 7,
+      title: 'Reorder List',
+      url: 'https://leetcode.com/problems/reorder-list/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Find middle, reverse second half, merge two halves',
+          explanation: `Three steps: (1) Find middle with slow/fast pointers. (2) Reverse the second half. (3) Merge the two halves by alternating nodes (first from left half, then from right half).`,
+          code: `var reorderList = function(head) {
+    // Step 1: find middle
+    let slow = head, fast = head;
+    while (fast.next && fast.next.next) { slow = slow.next; fast = fast.next.next; }
+    // Step 2: reverse second half
+    let prev = null, curr = slow.next;
+    slow.next = null;
+    while (curr) { const next = curr.next; curr.next = prev; prev = curr; curr = next; }
+    // Step 3: merge
+    let l1 = head, l2 = prev;
+    while (l2) {
+        const n1 = l1.next, n2 = l2.next;
+        l1.next = l2;
+        l2.next = n1;
+        l1 = n1; l2 = n2;
+    }
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 8,
+      title: 'Copy List with Random Pointer',
+      url: 'https://leetcode.com/problems/copy-list-with-random-pointer/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: HashMap old→new node, two passes',
+          explanation: `Pass 1: create all new nodes, store mapping old→new. Pass 2: for each node, set new.next = map[old.next] and new.random = map[old.random].`,
+          code: `var copyRandomList = function(head) {
+    if (!head) return null;
+    const map = new Map();
+    let curr = head;
+    while (curr) { map.set(curr, new Node(curr.val)); curr = curr.next; }
+    curr = head;
+    while (curr) {
+        map.get(curr).next = map.get(curr.next) ?? null;
+        map.get(curr).random = map.get(curr.random) ?? null;
+        curr = curr.next;
+    }
+    return map.get(head);
+};`,
+          lang: 'javascript',
+        },
+        {
+          label: 'Intuition 2: O(1) space — interleave nodes, then separate',
+          explanation: `Weave copy nodes between originals: A→A'→B→B'→C→C'. Set random pointers (A'.random = A.random.next). Then unweave the two lists.`,
+          code: `var copyRandomList = function(head) {
+    if (!head) return null;
+    // Step 1: interleave
+    let curr = head;
+    while (curr) {
+        const copy = new Node(curr.val);
+        copy.next = curr.next;
+        curr.next = copy;
+        curr = copy.next;
+    }
+    // Step 2: set random on copies
+    curr = head;
+    while (curr) {
+        if (curr.random) curr.next.random = curr.random.next;
+        curr = curr.next.next;
+    }
+    // Step 3: unweave
+    curr = head;
+    const copyHead = head.next;
+    while (curr) {
+        const copy = curr.next;
+        curr.next = copy.next;
+        if (copy.next) copy.next = copy.next.next;
+        curr = curr.next;
+    }
+    return copyHead;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 9,
+      title: 'Flatten a Multilevel Doubly Linked List',
+      url: 'https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: DFS/stack — flatten child lists in-place',
+          explanation: `Whenever we encounter a node with a child, insert the flattened child list between current node and current.next. Use a stack or recursion. The key operation: find the tail of the child list, connect it to current.next, then connect current to child.`,
+          code: `var flatten = function(head) {
+    let curr = head;
+    while (curr) {
+        if (curr.child) {
+            const child = curr.child;
+            const next = curr.next;
+            // Find tail of child list
+            let tail = child;
+            while (tail.next) tail = tail.next;
+            // Insert child list
+            curr.next = child; child.prev = curr; curr.child = null;
+            tail.next = next; if (next) next.prev = tail;
+        }
+        curr = curr.next;
+    }
+    return head;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '💡',
       color: 'amber',
-      content: `**Recursive linked list reversal**: works by reversing the rest of the list first, then fixing the current node's pointers when recursion unwinds.\n\`\`\`\nif (!head || !head.next) return head;\nconst newHead = reverse(head.next);\nhead.next.next = head;  // last node of reversed part now points back\nhead.next = null;       // break old forward link\nreturn newHead;\n\`\`\`\n\`prev\` always holds the head of the reversed list so far.`,
+      content: `**Recursive linked list reversal**: works by reversing the rest of the list first, then fixing the current node's pointers when recursion unwinds.\n\`\`\`\nif (!head || !head.next) return head;\nconst newHead = reverse(head.next);\nhead.next.next = head;  // last node of reversed part now points back\nhead.next = null;       // break old forward link\nreturn newHead;\n\`\`\`\n\n**Linked list pattern checklist:**\n- "Find middle" → slow/fast pointers (slow ends at middle)\n- "Detect cycle" → Floyd's: slow+fast, if they meet, cycle exists\n- "k-th from end" → two pointers gap k apart\n- "Merge/sort" → divide and conquer (merge sort on lists)\n- "Copy with extra pointers" → HashMap OR interleave trick (O(1) space)`,
     },
   ],
 }

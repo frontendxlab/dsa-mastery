@@ -267,10 +267,121 @@ Solution.prototype.pickIndex = function() {
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 4,
+      title: 'Design Twitter',
+      url: 'https://leetcode.com/problems/design-twitter/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: HashMap for follows/tweets + min-heap for feed',
+          explanation: `Store: tweets per user (with timestamp), follows per user. For getNewsFeed: collect most recent 10 tweets from all followed users. Use a min-heap to merge k sorted tweet lists (each user's tweet list is sorted newest-first). O(F log F) where F = number of followees.`,
+          code: `var Twitter = function() {
+    this.time = 0;
+    this.tweets = new Map();   // userId → [[time, tweetId], ...]
+    this.follows = new Map();  // userId → Set of followeeIds
+};
+Twitter.prototype.postTweet = function(userId, tweetId) {
+    if (!this.tweets.has(userId)) this.tweets.set(userId, []);
+    this.tweets.get(userId).push([this.time++, tweetId]);
+};
+Twitter.prototype.getNewsFeed = function(userId) {
+    const users = [...(this.follows.get(userId) ?? new Set()), userId];
+    const candidates = [];
+    for (const u of users)
+        if (this.tweets.has(u)) {
+            const tw = this.tweets.get(u);
+            candidates.push(...tw.slice(-10));
+        }
+    return candidates.sort((a,b) => b[0]-a[0]).slice(0,10).map(x=>x[1]);
+};
+Twitter.prototype.follow = function(f, e) {
+    if (!this.follows.has(f)) this.follows.set(f, new Set());
+    this.follows.get(f).add(e);
+};
+Twitter.prototype.unfollow = function(f, e) {
+    this.follows.get(f)?.delete(e);
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 5,
+      title: 'Insert Delete GetRandom O(1)',
+      url: 'https://leetcode.com/problems/insert-delete-getrandom-o1/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: HashMap + array — swap-with-last for O(1) delete',
+          explanation: `Array supports O(1) random access. HashMap (val→index) supports O(1) lookup. The trick for O(1) delete: swap the element to delete with the last element, then pop the tail. Update the swapped element's index in the map.`,
+          code: `var RandomizedSet = function() {
+    this.map = new Map();  // val → index in arr
+    this.arr = [];
+};
+RandomizedSet.prototype.insert = function(val) {
+    if (this.map.has(val)) return false;
+    this.map.set(val, this.arr.length);
+    this.arr.push(val);
+    return true;
+};
+RandomizedSet.prototype.remove = function(val) {
+    if (!this.map.has(val)) return false;
+    const idx = this.map.get(val);
+    const last = this.arr[this.arr.length - 1];
+    this.arr[idx] = last;           // swap with last
+    this.map.set(last, idx);        // update last's index
+    this.arr.pop();
+    this.map.delete(val);
+    return true;
+};
+RandomizedSet.prototype.getRandom = function() {
+    return this.arr[Math.floor(Math.random() * this.arr.length)];
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 6,
+      title: 'Find Duplicate File in System',
+      url: 'https://leetcode.com/problems/find-duplicate-file-in-system/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Parse path+filename, group by content',
+          explanation: `Parse each entry: split by space (first = directory, rest = file(content) pairs). Extract content between parens. Group (directory/filename) by content using a hashmap. Return groups with more than 1 file.`,
+          code: `var findDuplicate = function(paths) {
+    const map = new Map();
+    for (const path of paths) {
+        const parts = path.split(' ');
+        const dir = parts[0];
+        for (let i = 1; i < parts.length; i++) {
+            const p = parts[i].indexOf('(');
+            const fname = parts[i].slice(0, p);
+            const content = parts[i].slice(p+1, -1);
+            if (!map.has(content)) map.set(content, []);
+            map.get(content).push(dir + '/' + fname);
+        }
+    }
+    return [...map.values()].filter(v => v.length > 1);
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '🧠',
       color: 'green',
-      content: `**Pattern recognition:**\n- "Find majority without extra space" → Boyer-Moore (single pass!)\n- "Random pick proportional to weights" → prefix sums + binary search\n- "Is this puzzle solvable?" → count inversions + parity check\n- "Minimum moves on small board" → BFS with string-encoded state\n- "Pick k random from unknown-length stream" → reservoir sampling`,
+      content: `**Pattern recognition:**\n- "Find majority without extra space" → Boyer-Moore (single pass!)\n- "Random pick proportional to weights" → prefix sums + binary search\n- "Is this puzzle solvable?" → count inversions + parity check\n- "Minimum moves on small board" → BFS with string-encoded state\n- "Pick k random from unknown-length stream" → reservoir sampling\n- "O(1) insert + delete + random" → array + hashmap (swap-with-last trick)\n- "News feed / top k from multiple sorted sources" → min-heap merge`,
     },
   ],
 }

@@ -388,10 +388,96 @@ var deserialize = function(data) {
       ],
     },
     {
+      type: 'problem',
+      num: 10,
+      title: 'Count Good Nodes in Binary Tree',
+      url: 'https://leetcode.com/problems/count-good-nodes-in-binary-tree/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: DFS tracking max value on path from root',
+          explanation: `A node is "good" if no node on the path from root to it has a greater value. DFS carries the max value seen so far. If current node >= maxSoFar, it's good.`,
+          code: `var goodNodes = function(root) {
+    let count = 0;
+    const dfs = (node, maxSoFar) => {
+        if (!node) return;
+        if (node.val >= maxSoFar) count++;
+        dfs(node.left,  Math.max(maxSoFar, node.val));
+        dfs(node.right, Math.max(maxSoFar, node.val));
+    };
+    dfs(root, -Infinity);
+    return count;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 11,
+      title: 'Path Sum III',
+      url: 'https://leetcode.com/problems/path-sum-iii/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: O(n²) — for each node, count paths starting from it',
+          explanation: `Two nested DFS: outer visits each node, inner counts paths downward from that node summing to target. O(n²).`,
+        },
+        {
+          label: 'Intuition 2: O(n) prefix sum + hashmap (same as subarray sum = k)',
+          explanation: `DFS carries the running prefix sum from root. For each node, check how many previous prefix sums satisfy prefixSum - target = earlier sum (i.e., there's a subpath summing to target). Use a hashmap of prefix sum → count. Add current sum before recursing, remove after (backtrack).`,
+          code: `var pathSum = function(root, targetSum) {
+    let count = 0;
+    const map = new Map([[0, 1]]); // prefix sum 0 seen once (empty path)
+    const dfs = (node, currSum) => {
+        if (!node) return;
+        currSum += node.val;
+        count += (map.get(currSum - targetSum) ?? 0);
+        map.set(currSum, (map.get(currSum) ?? 0) + 1);
+        dfs(node.left, currSum);
+        dfs(node.right, currSum);
+        map.set(currSum, map.get(currSum) - 1); // backtrack
+    };
+    dfs(root, 0);
+    return count;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 12,
+      title: 'Delete Nodes and Return Forest',
+      url: 'https://leetcode.com/problems/delete-nodes-and-return-forest/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Postorder — decide delete after processing children',
+          explanation: `Process bottom-up (postorder). If a node is to be deleted: its children (if not deleted) become new roots. Return null to parent (remove from tree). If a node is NOT deleted and its parent was deleted, it becomes a root. Pass a "parentDeleted" flag down.`,
+          code: `var delNodes = function(root, to_delete) {
+    const del = new Set(to_delete);
+    const roots = [];
+    const dfs = (node, isRoot) => {
+        if (!node) return null;
+        const deleted = del.has(node.val);
+        if (isRoot && !deleted) roots.push(node);
+        node.left  = dfs(node.left,  deleted);
+        node.right = dfs(node.right, deleted);
+        return deleted ? null : node;
+    };
+    dfs(root, true);
+    return roots;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '🧠',
       color: 'teal',
-      content: `**Tree traversal selector:**\n- Visit children before parent (compute subtree result) → **postorder**\n- Path problems (max path, diameter) → postorder, return best branch, update global max\n- Level-by-level (zigzag, right view, connect nodes) → **BFS level-order**\n- BST operations (kth smallest, validate, range) → **inorder** (gives sorted sequence)\n- LCA → postorder, return the node that finds both targets`,
+      content: `**Tree traversal selector:**\n- Visit children before parent (compute subtree result) → **postorder**\n- Path problems (max path, diameter) → postorder, return best branch, update global max\n- Level-by-level (zigzag, right view, connect nodes) → **BFS level-order**\n- BST operations (kth smallest, validate, range) → **inorder** (gives sorted sequence)\n- LCA → postorder, return the node that finds both targets\n- Paths from root down → **preorder**, carry running state (max, sum) as parameter\n- Path sum counting → prefix sum + hashmap (backtrack on return)`,
     },
   ],
 }
