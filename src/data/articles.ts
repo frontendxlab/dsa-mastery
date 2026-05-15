@@ -199,6 +199,10 @@ import { stockTradingArticle } from './content/stock-trading'
 import { gridIslandsArticle } from './content/grid-islands'
 import { iterativeTraversalArticle } from './content/iterative-traversal'
 import { multiSourceBfsArticle } from './content/multi-source-bfs'
+import { kWayMergeArticle } from './content/k-way-merge'
+import { numberTricksArticle } from './content/number-tricks'
+import { dpSpaceOptimizationArticle } from './content/dp-space-optimization'
+import { stringWindowPatternsArticle } from './content/string-window-patterns'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -367,6 +371,10 @@ export const articles: Article[] = [
   gridIslandsArticle,
   iterativeTraversalArticle,
   multiSourceBfsArticle,
+  kWayMergeArticle,
+  numberTricksArticle,
+  dpSpaceOptimizationArticle,
+  stringWindowPatternsArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {

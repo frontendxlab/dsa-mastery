@@ -18,7 +18,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part III — Hashing & Auxiliary Structures',
     color: 'var(--nb-purple)',
-    chapters: ['heap', 'trie', 'monotonic-stack', 'hashmap-patterns', 'stack-queue', 'counting-patterns', 'kth-element', 'monotonic-queue', 'two-heaps', 'bracket-sequences', 'amortized-patterns', 'expression-parsing', 'trie-xor'],
+    chapters: ['heap', 'trie', 'monotonic-stack', 'hashmap-patterns', 'stack-queue', 'counting-patterns', 'kth-element', 'monotonic-queue', 'two-heaps', 'bracket-sequences', 'amortized-patterns', 'expression-parsing', 'trie-xor', 'k-way-merge'],
   },
   {
     part: 'Part IV — Core Algorithms',
@@ -33,7 +33,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part VI — Math & Discrete',
     color: 'var(--nb-pink)',
-    chapters: ['math', 'bit-manipulation', 'combinatorics', 'game-theory', 'geometry', 'number-theory', 'probability-dp', 'ternary-search', 'fft', 'sprague-grundy', 'chinese-remainder', 'convex-hull', 'inclusion-exclusion', 'catalan-numbers', 'josephus', 'sieve-variants', 'burnside-lemma', 'gray-code', 'gaussian-gf2', 'lucas-theorem', 'lattice-paths', 'advanced-counting-dp', 'rotating-calipers', 'carry-dp', 'random-walk'],
+    chapters: ['math', 'bit-manipulation', 'combinatorics', 'game-theory', 'geometry', 'number-theory', 'probability-dp', 'ternary-search', 'fft', 'sprague-grundy', 'chinese-remainder', 'convex-hull', 'inclusion-exclusion', 'catalan-numbers', 'josephus', 'sieve-variants', 'burnside-lemma', 'gray-code', 'gaussian-gf2', 'lucas-theorem', 'lattice-paths', 'advanced-counting-dp', 'rotating-calipers', 'carry-dp', 'random-walk', 'number-tricks'],
   },
   {
     part: 'Part VII — Advanced Topics',
@@ -43,7 +43,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part VIII — Cross-Topic Deep Dives',
     color: 'var(--nb-red)',
-    chapters: ['bfs-vs-dfs', 'interval-problems', 'dp-on-trees', 'union-find', 'digit-dp', 'interval-dp', 'grid-dp', 'state-machine-dp', 'recursion-memoization', 'grid-patterns', 'fenwick-tree', 'heavy-light-decomposition', 'euler-tour', 'mo-algorithm', 'xor-basis', 'euler-path', 'divide-conquer-dp', 'sqrt-decomposition', 'persistent-segment-tree', 'treap', 'offline-cdq', 'bitset-operations', 'slope-trick', 'segment-tree-beats', 'balanced-dp', 'profile-dp', 'aliens-trick', 'arithmetic-dp', 'subsequence-counting', 'sliding-window-advanced', 'two-d-prefix-sum', 'dp-with-deque', 'stock-trading'],
+    chapters: ['bfs-vs-dfs', 'interval-problems', 'dp-on-trees', 'union-find', 'digit-dp', 'interval-dp', 'grid-dp', 'state-machine-dp', 'recursion-memoization', 'grid-patterns', 'fenwick-tree', 'heavy-light-decomposition', 'euler-tour', 'mo-algorithm', 'xor-basis', 'euler-path', 'divide-conquer-dp', 'sqrt-decomposition', 'persistent-segment-tree', 'treap', 'offline-cdq', 'bitset-operations', 'slope-trick', 'segment-tree-beats', 'balanced-dp', 'profile-dp', 'aliens-trick', 'arithmetic-dp', 'subsequence-counting', 'sliding-window-advanced', 'two-d-prefix-sum', 'dp-with-deque', 'stock-trading', 'dp-space-optimization', 'string-window-patterns'],
   },
 ]
 
