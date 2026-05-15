@@ -4,7 +4,7 @@ import { useState, useMemo, useEffect, useRef } from 'react'
 
 export const Route = createFileRoute('/')({ component: App })
 
-function AnimatedCounter({ target, suffix = '' }: { target: number; suffix?: string }) {
+function AnimatedCounter({ target, suffix = '', duration = 1500 }: { target: number; suffix?: string; duration?: number }) {
   const [count, setCount] = useState(0)
   const ref = useRef<HTMLSpanElement>(null)
   const counted = useRef(false)
@@ -15,7 +15,6 @@ function AnimatedCounter({ target, suffix = '' }: { target: number; suffix?: str
       ([entry]) => {
         if (!entry?.isIntersecting || counted.current) return
         counted.current = true
-        const duration = 1500
         const start = performance.now()
         const animate = (now: number) => {
           const elapsed = now - start
@@ -30,12 +29,224 @@ function AnimatedCounter({ target, suffix = '' }: { target: number; suffix?: str
     )
     observer.observe(ref.current)
     return () => observer.disconnect()
-  }, [target])
+  }, [target, duration])
 
   return (
     <span ref={ref}>
       {count.toLocaleString()}{suffix}
     </span>
+  )
+}
+
+function TypewriterText({ texts, speed = 80, pause = 2000 }: { texts: string[]; speed?: number; pause?: number }) {
+  const [displayText, setDisplayText] = useState('')
+  const [textIndex, setTextIndex] = useState(0)
+  const [isDeleting, setIsDeleting] = useState(false)
+
+  useEffect(() => {
+    const currentText = texts[textIndex]
+    let timeout: ReturnType<typeof setTimeout>
+
+    if (!isDeleting) {
+      if (displayText.length < currentText.length) {
+        timeout = setTimeout(() => {
+          setDisplayText(currentText.slice(0, displayText.length + 1))
+        }, speed)
+      } else {
+        timeout = setTimeout(() => setIsDeleting(true), pause)
+      }
+    } else {
+      if (displayText.length > 0) {
+        timeout = setTimeout(() => {
+          setDisplayText(displayText.slice(0, -1))
+        }, speed / 2)
+      } else {
+        setIsDeleting(false)
+        setTextIndex((prev) => (prev + 1) % texts.length)
+      }
+    }
+
+    return () => clearTimeout(timeout)
+  }, [displayText, isDeleting, textIndex, texts, speed, pause])
+
+  return (
+    <span className="inline-block">
+      {displayText}
+      <span className="nb-cursor inline-block w-1 bg-[var(--nb-pink,#ff9ec4)] animate-pulse" style={{ marginLeft: '2px' }}>&nbsp;</span>
+    </span>
+  )
+}
+
+function FloatingShape({ delay, color, size, x, y }: { delay: number; color: string; size: number; x: string; y: string }) {
+  return (
+    <div
+      className="nb-float-shape absolute pointer-events-none rounded-lg border-2 border-[var(--nb-border-color,#0f0f0f)]"
+      style={{
+        width: size,
+        height: size,
+        left: x,
+        top: y,
+        backgroundColor: color,
+        animationDelay: `${delay}ms`,
+      }}
+    />
+  )
+}
+
+function MarqueeRow({ children, direction = 'left', speed = 30 }: { children: React.ReactNode; direction?: 'left' | 'right'; speed?: number }) {
+  return (
+    <div className="nb-marquee overflow-hidden" style={{ '--marquee-speed': `${speed}s` } as React.CSSProperties}>
+      <div className={`nb-marquee-track ${direction === 'right' ? 'nb-marquee-reverse' : ''}`}>
+        {children}
+        {children}
+      </div>
+    </div>
+  )
+}
+
+function StatCard({
+  icon,
+  label,
+  value,
+  suffix,
+  color,
+  delay = 0,
+}: {
+  icon: string
+  label: string
+  value: number
+  suffix?: string
+  color: string
+  delay?: number
+}) {
+  return (
+    <div
+      className="nb-stat-card relative rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] p-6 shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)] transition-all duration-200 hover:shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)] hover:translate-x-[2px] hover:translate-y-[2px]"
+      style={{ backgroundColor: color, animationDelay: `${delay}ms` }}
+    >
+      <div className="absolute -right-2 -top-2 flex h-8 w-8 items-center justify-center rounded-full border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] text-lg shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)]">
+        {icon}
+      </div>
+      <p className="text-[10px] font-bold uppercase tracking-widest text-[var(--nb-on-accent,#111)] opacity-70">
+        {label}
+      </p>
+      <p className="nb-display mt-1 text-4xl font-black text-[var(--nb-on-accent,#111)] tracking-tight">
+        <AnimatedCounter target={value} suffix={suffix} duration={2000} />
+      </p>
+    </div>
+  )
+}
+
+function FeatureCard({
+  icon,
+  title,
+  description,
+  color,
+  delay = 0,
+}: {
+  icon: string
+  title: string
+  description: string
+  color: string
+  delay?: number
+}) {
+  return (
+    <div
+      className="nb-feature-card group relative rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] p-6 shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)] transition-all duration-200 hover:shadow-[6px_6px_0px_var(--nb-border-color,#0f0f0f)] hover:-translate-x-[2px] hover:-translate-y-[2px]"
+      style={{ backgroundColor: color, animationDelay: `${delay}ms` }}
+    >
+      <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-lg border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] text-2xl shadow-[3px_3px_0px_var(--nb-border-color,#0f0f0f)] transition-all duration-200 group-hover:shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)] group-hover:translate-x-[1px] group-hover:translate-y-[1px]">
+        {icon}
+      </div>
+      <h3 className="nb-heading-sm text-lg font-black text-[var(--nb-on-accent,#111)] tracking-tight">
+        {title}
+      </h3>
+      <p className="mt-2 text-sm leading-relaxed text-[var(--nb-on-accent,#111)] opacity-75">
+        {description}
+      </p>
+    </div>
+  )
+}
+
+function TopicCard({
+  topic,
+  index,
+}: {
+  topic: (typeof topics)[0]
+  index: number
+}) {
+  const colors = [
+    'var(--nb-yellow)',
+    'var(--nb-pink)',
+    'var(--nb-teal)',
+    'var(--nb-green)',
+    'var(--nb-blue)',
+    'var(--nb-purple)',
+    'var(--nb-orange)',
+    'var(--nb-red)',
+  ]
+  const bgColor = colors[index % colors.length]
+  const delay = index * 60
+
+  return (
+    <Link
+      to="/problems/$topic"
+      params={{ topic: topic.slug }}
+      className="nb-topic-card group block no-underline"
+      style={{ animationDelay: `${delay}ms` }}
+    >
+      <article className="relative rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] p-5 shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)] transition-all duration-200 hover:shadow-[6px_6px_0px_var(--nb-border-color,#0f0f0f)] hover:-translate-x-[2px] hover:-translate-y-[2px]"
+        style={{ backgroundColor: bgColor }}
+      >
+        <div className="absolute -right-3 -top-3 flex h-10 w-10 items-center justify-center rounded-lg border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] text-sm font-black shadow-[3px_3px_0px_var(--nb-border-color,#0f0f0f)] transition-all duration-200 group-hover:rotate-12">
+          {topic.name.charAt(0)}
+        </div>
+
+        <div className="pr-8">
+          <h3 className="nb-heading-sm text-base font-black text-[var(--nb-on-accent,#111)] tracking-tight">
+            {topic.name}
+          </h3>
+          <p className="mt-1 line-clamp-2 text-xs leading-relaxed text-[var(--nb-on-accent,#111)] opacity-70">
+            {topic.description}
+          </p>
+        </div>
+
+        <div className="mt-4 flex items-center justify-between border-t-2 border-[var(--nb-border-color,#0f0f0f)] pt-3">
+          <div className="flex items-baseline gap-1">
+            <span className="nb-display text-2xl font-black tabular-nums text-[var(--nb-on-accent,#111)]">
+              {topic.count.toLocaleString()}
+            </span>
+            <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--nb-on-accent,#111)] opacity-60">
+              problems
+            </span>
+          </div>
+          <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--nb-on-accent,#111)] opacity-50 transition-opacity group-hover:opacity-100">
+            Explore →
+          </span>
+        </div>
+
+        <div className="mt-2 flex gap-1">
+          <span className="inline-flex items-center rounded-full border border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] px-2 py-0.5 text-[9px] font-bold text-[var(--nb-on-accent,#111)]">
+            {topic.platforms} platforms
+          </span>
+        </div>
+      </article>
+    </Link>
+  )
+}
+
+function SectionDivider({ text, color }: { text: string; color: string }) {
+  return (
+    <div className="my-16 flex items-center gap-4">
+      <div className="h-1 flex-1 border-t-2 border-[var(--nb-border-color,#0f0f0f)]" />
+      <span
+        className="nb-heading-sm inline-flex items-center gap-2 rounded-full border-2 border-[var(--nb-border-color,#0f0f0f)] px-4 py-1.5 text-xs font-black uppercase tracking-widest shadow-[3px_3px_0px_var(--nb-border-color,#0f0f0f)]"
+        style={{ backgroundColor: color }}
+      >
+        {text}
+      </span>
+      <div className="h-1 flex-1 border-t-2 border-[var(--nb-border-color,#0f0f0f)]" />
+    </div>
   )
 }
 
@@ -53,151 +264,230 @@ function App() {
     [search],
   )
 
+  const platformNames = ['LeetCode', 'Codeforces', 'AtCoder', 'GeeksforGeeks', 'CSES', 'Baekjoon', 'SPOJ', 'UVa', 'HackerRank', 'CodeChef', 'Kattis', 'TopCoder']
+
   return (
-    <main className="page-wrap px-4 pb-16 pt-10 sm:pt-14">
-      <section className="island-shell rise-in relative overflow-hidden rounded-[2rem] px-6 py-14 sm:px-12 sm:py-20">
-        <div className="pointer-events-none absolute -left-24 -top-28 h-72 w-72 rounded-full bg-[radial-gradient(circle,rgba(79,184,178,0.3),transparent_66%)]" />
-        <div className="pointer-events-none absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-[radial-gradient(circle,rgba(47,106,74,0.16),transparent_66%)]" />
-        <div className="pointer-events-none absolute left-1/2 top-1/3 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.5),transparent_60%)]" />
+    <main className="nb-page-wrap px-4 pb-16 pt-10 sm:pt-14">
+      {/* ── Hero Section ───────────────────────────────────────────────────────── */}
+      <section className="nb-hero relative mb-8 overflow-hidden rounded-2xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] p-6 sm:p-10 shadow-[8px_8px_0px_var(--nb-border-color,#0f0f0f)]">
+        <FloatingShape delay={0} color="var(--nb-yellow)" size={80} x="5%" y="10%" />
+        <FloatingShape delay={200} color="var(--nb-pink)" size={60} x="85%" y="15%" />
+        <FloatingShape delay={400} color="var(--nb-teal)" size={100} x="70%" y="60%" />
+        <FloatingShape delay={600} color="var(--nb-green)" size={50} x="15%" y="70%" />
+        <FloatingShape delay={800} color="var(--nb-orange)" size={70} x="45%" y="5%" />
 
-        <p className="island-kicker mb-4">DSA Problem Inventory</p>
-
-        <div className="flex flex-wrap gap-8 sm:gap-12">
-          <div>
-            <h1 className="display-title text-[clamp(2.5rem,7vw,5rem)] leading-[1.02] font-bold tracking-tight text-[var(--sea-ink)]">
-              <span className="text-[var(--lagoon-deep)] tabular-nums">
-                <AnimatedCounter target={totalProblems} />
-              </span>
-              <br />
-              <span className="text-[length:0.45em] text-[var(--sea-ink)]">
-                problems
-              </span>
-            </h1>
+        <div className="relative z-10">
+          <div className="nb-hero-badge inline-flex items-center gap-2 rounded-full border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-yellow,#ffe566)] px-3 py-1 shadow-[3px_3px_0px_var(--nb-border-color,#0f0f0f)]">
+            <span className="text-sm">⚡</span>
+            <span className="text-[11px] font-black uppercase tracking-widest text-[var(--nb-on-accent,#111)]">
+              Now with 38,000+ problems
+            </span>
           </div>
-          <div className="flex flex-col gap-2 self-end pb-2">
-            <p className="text-sm text-[var(--sea-ink-soft)]">
-              <span className="font-semibold text-[var(--sea-ink)]">{topics.length}</span> topics
-              <span className="mx-2">·</span>
-              <span className="font-semibold text-[var(--sea-ink)]">{uniquePlatforms}+</span> platforms
-              <span className="mx-2">·</span>
-              <span className="font-semibold text-[var(--sea-ink)]">37+</span> OJs
-            </p>
-            <p className="max-w-lg text-sm leading-relaxed text-[var(--sea-ink-soft)]">
-              Curated, deduplicated DSA problems from LeetCode, Codeforces,
-              AtCoder, GeeksforGeeks, CSES, and beyond. Built for serious practice.
-            </p>
-          </div>
-        </div>
 
-        <div className="mt-8 grid gap-3 sm:grid-cols-3">
-          {[
-            ['CSV-backed', 'All data lives in plain CSVs — auditable, portable, Git-friendly'],
-            ['SSR rendered', 'TanStack Start + Cloudflare Workers for instant page loads'],
-            ['Search & filter', 'Full-text search across 31k+ problems with platform filters'],
-          ].map(([title, desc]) => (
-            <div
-              key={title}
-              className="rounded-xl border border-[var(--chip-line)] bg-[var(--chip-bg)] px-4 py-3"
+          <h1 className="nb-hero-title nb-display mt-6 text-[clamp(2.5rem,8vw,5rem)] font-black leading-[0.95] tracking-tighter text-[var(--nb-ink,#111)]">
+            Master
+            <br />
+            <span className="relative inline-block">
+              <span className="relative z-10">
+                <TypewriterText
+                  texts={['DSA', 'Algorithms', 'Dynamic Programming', 'Graphs', 'Trees', 'Binary Search']}
+                  speed={60}
+                  pause={1500}
+                />
+              </span>
+              <span className="absolute -bottom-1 left-0 h-4 w-full -rotate-1 bg-[var(--nb-yellow,#ffe566)]" style={{ zIndex: 0 }} />
+            </span>
+            <br />
+            <span className="text-[var(--nb-ink-soft,#3a3a3a)]">One problem at a time.</span>
+          </h1>
+
+          <p className="nb-hero-subtitle mt-6 max-w-2xl text-base leading-relaxed text-[var(--nb-ink-soft,#3a3a3a)]">
+            Curated, deduplicated DSA problems from{' '}
+            <span className="inline-flex items-center rounded border border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-teal,#7ee8e2)] px-1.5 py-0.5 text-[11px] font-black">
+              50+ platforms
+            </span>{' '}
+            including LeetCode, Codeforces, AtCoder, and beyond.
+            Organized by topic, tagged by concept, ready for practice.
+          </p>
+
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Link
+              to="/learn"
+              className="nb-btn inline-flex items-center gap-2 rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-pink,#ff9ec4)] px-6 py-3 text-sm font-black shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)] transition-all duration-150 hover:shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)] hover:translate-x-[2px] hover:translate-y-[2px] active:shadow-none active:translate-x-[4px] active:translate-y-[4px]"
             >
-              <p className="text-xs font-semibold text-[var(--sea-ink)]">{title}</p>
-              <p className="mt-0.5 text-[11px] leading-relaxed text-[var(--sea-ink-soft)]">{desc}</p>
-            </div>
-          ))}
-        </div>
-
-        <div className="relative mt-8 max-w-md">
-          <input
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            placeholder="Search topics..."
-            className="w-full rounded-full border border-[var(--chip-line)] bg-[var(--chip-bg)] px-5 py-3 pl-11 text-sm text-[var(--sea-ink)] outline-none transition placeholder:text-[var(--sea-ink-soft)] focus:border-[var(--lagoon)] focus:ring-2 focus:ring-[rgba(79,184,178,0.2)]"
-          />
-          <svg className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[var(--sea-ink-soft)]" width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <circle cx="7" cy="7" r="5.5" stroke="currentColor" strokeWidth="1.5" />
-            <path d="M11 11L14.5 14.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          </svg>
+              <span>📚</span>
+              <span>Start Learning</span>
+            </Link>
+            <Link
+              to="/explore"
+              className="nb-btn-outline inline-flex items-center gap-2 rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] px-6 py-3 text-sm font-black shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)] transition-all duration-150 hover:bg-[var(--nb-teal,#7ee8e2)] hover:shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)] hover:translate-x-[2px] hover:translate-y-[2px] active:shadow-none active:translate-x-[4px] active:translate-y-[4px]"
+            >
+              <span>🔍</span>
+              <span>Explore Problems</span>
+            </Link>
+          </div>
         </div>
       </section>
 
-      <div className="mt-8 flex items-center justify-between">
-        <h2 className="display-title text-xl font-bold text-[var(--sea-ink)]">
-          {filtered.length} topic{filtered.length !== 1 ? 's' : ''}
-        </h2>
-        <p className="island-kicker text-xs">
-          <AnimatedCounter target={totalProblems} /> total problems
-        </p>
-      </div>
-
-      <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {filtered.map((topic, i) => (
-          <Link
-            key={topic.slug}
-            to="/problems/$topic"
-            params={{ topic: topic.slug }}
-            className="rise-in group block no-underline"
-            style={{ animationDelay: `${i * 50 + 80}ms` }}
-          >
-            <article className="island-shell feature-card relative rounded-2xl p-5 transition-all duration-200 hover:-translate-y-1">
-              <div className="relative z-10 mb-3 flex items-center gap-3">
-                <span
-                  className={`inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br ${topic.gradient} text-sm font-bold text-white shadow-sm`}
-                >
-                  {topic.name.charAt(0)}
-                </span>
-                <div className="min-w-0">
-                  <h3 className="truncate text-sm font-semibold text-[var(--sea-ink)]">
-                    {topic.name}
-                  </h3>
-                  <p className="text-xs text-[var(--sea-ink-soft)]">
-                    {topic.platforms} platform{topic.platforms !== 1 ? 's' : ''}
-                  </p>
-                </div>
-              </div>
-
-              <p className="relative z-10 mb-4 line-clamp-2 text-xs leading-relaxed text-[var(--sea-ink-soft)]">
-                {topic.description}
-              </p>
-
-              <div className="relative z-10 flex items-center justify-between border-t border-[var(--line)] pt-3">
-                <span className="flex items-baseline gap-1">
-                  <span className="text-xl font-bold tabular-nums tracking-tight text-[var(--sea-ink)]">
-                    {topic.count.toLocaleString()}
-                  </span>
-                  <span className="text-[10px] text-[var(--sea-ink-soft)]">problems</span>
-                </span>
-              </div>
-
-              <div
-                className={`pointer-events-none absolute -inset-px rounded-2xl bg-gradient-to-br ${topic.gradient} opacity-0 transition-opacity duration-300 group-hover:opacity-[0.08]`}
-              />
-            </article>
-          </Link>
-        ))}
-      </div>
-
-      {filtered.length === 0 && (
-        <p className="mt-12 text-center text-sm text-[var(--sea-ink-soft)]">
-          No topics match "{search}"
-        </p>
-      )}
-
-      <section className="rise-in mt-16 rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-6 sm:p-8" style={{ animationDelay: '300ms' }}>
-        <p className="island-kicker mb-4">By the Numbers</p>
-        <div className="grid gap-6 sm:grid-cols-3">
-          {[
-            ['Total Problems', totalProblems, 'Across all 14 topics'],
-            ['Topics Covered', topics.length, 'From Math to Trie'],
-            ['Source Platforms', `${uniquePlatforms}+`, 'LeetCode, Codeforces, AtCero, GFG, CSES...'],
-          ].map(([label, value, desc]) => (
-            <div key={label}>
-              <p className="display-title text-3xl font-bold tabular-nums tracking-tight text-[var(--lagoon-deep)]">
-                <AnimatedCounter target={typeof value === 'number' ? value : 0} />
-                {typeof value !== 'number' ? '' : '+'}
-              </p>
-              <p className="mt-1 text-sm font-semibold text-[var(--sea-ink)]">{label}</p>
-              <p className="mt-0.5 text-xs text-[var(--sea-ink-soft)]">{desc}</p>
-            </div>
+      {/* ── Marquee ──────────────────────────────────────────────────────────── */}
+      <div className="mb-8 rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-yellow,#ffe566)] py-3 shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)]">
+        <MarqueeRow speed={40}>
+          {platformNames.map((platform, i) => (
+            <span key={i} className="inline-flex items-center gap-3 px-6 text-sm font-black uppercase tracking-wider text-[var(--nb-on-accent,#111)]">
+              <span className="text-lg">◆</span>
+              {platform}
+            </span>
           ))}
+        </MarqueeRow>
+      </div>
+
+      {/* ── Stats Section ────────────────────────────────────────────────────── */}
+      <section className="mb-8">
+        <div className="grid gap-4 sm:grid-cols-3">
+          <StatCard
+            icon="📦"
+            label="Total Problems"
+            value={totalProblems}
+            color="var(--nb-yellow)"
+            delay={0}
+          />
+          <StatCard
+            icon="📚"
+            label="Topics"
+            value={topics.length}
+            color="var(--nb-teal)"
+            delay={100}
+          />
+          <StatCard
+            icon="🌐"
+            label="Platforms"
+            value={uniquePlatforms}
+            suffix="+"
+            color="var(--nb-pink)"
+            delay={200}
+          />
+        </div>
+      </section>
+
+      {/* ── Features Section ─────────────────────────────────────────────────── */}
+      <SectionDivider text="What You Can Do" color="var(--nb-green)" />
+
+      <section className="mb-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <FeatureCard
+          icon="🔍"
+          title="Explore Problems"
+          description="Browse 38,000+ problems across 50+ platforms. Filter by difficulty, platform, and topic. Find the perfect problem for your practice session."
+          color="var(--nb-yellow)"
+          delay={0}
+        />
+        <FeatureCard
+          icon="📚"
+          title="Learn Patterns"
+          description="Master DSA through pattern-based learning. Each topic comes with explanations, examples, and carefully curated practice problems."
+          color="var(--nb-pink)"
+          delay={100}
+        />
+        <FeatureCard
+          icon="🎯"
+          title="Topic Grouping"
+          description="Problems organized into 14 core topics: Dynamic Programming, Graphs, Trees, Binary Search, Sliding Window, and more. Practice systematically."
+          color="var(--nb-teal)"
+          delay={200}
+        />
+        <FeatureCard
+          icon="⚡"
+          title="Quick Search"
+          description="Full-text search across problem names, concepts, topics, and platforms. Find exactly what you need in milliseconds."
+          color="var(--nb-green)"
+          delay={300}
+        />
+        <FeatureCard
+          icon="📊"
+          title="Track by Difficulty"
+          description="Filter by Easy, Medium, Hard, or rating ranges. Build your skills progressively from fundamentals to advanced challenges."
+          color="var(--nb-orange)"
+          delay={400}
+        />
+        <FeatureCard
+          icon="✅"
+          title="Deduplicated & Clean"
+          description="Every problem is carefully deduplicated across platforms. No more solving the same problem with different names. Focus on learning, not redundancy."
+          color="var(--nb-purple)"
+          delay={500}
+        />
+      </section>
+
+      {/* ── Topic Cards Section ───────────────────────────────────────────────── */}
+      <SectionDivider text="Browse by Topic" color="var(--nb-orange)" />
+
+      <section className="mb-8">
+        <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <h2 className="nb-heading-sm text-xl font-black text-[var(--nb-ink,#111)] tracking-tight">
+            {filtered.length} Topic{filtered.length !== 1 ? 's' : ''}
+          </h2>
+
+          <div className="relative max-w-md flex-1 sm:ml-4">
+            <input
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder="Search topics..."
+              className="w-full rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] px-5 py-3 pl-11 text-sm font-semibold text-[var(--nb-ink,#111)] outline-none shadow-[3px_3px_0px_var(--nb-border-color,#0f0f0f)] transition-all placeholder:text-[var(--nb-ink-soft,#3a3a3a)] placeholder:opacity-60 focus:ring-2 focus:ring-[var(--nb-pink,#ff9ec4)]"
+            />
+            <svg className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[var(--nb-ink-soft,#3a3a3a)]" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <circle cx="7" cy="7" r="5.5" stroke="currentColor" strokeWidth="1.5" />
+              <path d="M11 11L14.5 14.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+            </svg>
+          </div>
+        </div>
+
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {filtered.map((topic, i) => (
+            <TopicCard key={topic.slug} topic={topic} index={i} />
+          ))}
+        </div>
+
+        {filtered.length === 0 && (
+          <div className="rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] p-12 text-center shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)]">
+            <p className="text-4xl">🔍</p>
+            <p className="mt-4 text-base font-bold text-[var(--nb-ink,#111)]">
+              No topics match "{search}"
+            </p>
+            <button
+              onClick={() => setSearch('')}
+              className="mt-4 rounded-lg border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-teal,#7ee8e2)] px-4 py-2 text-xs font-black shadow-[3px_3px_0px_var(--nb-border-color,#0f0f0f)] transition-all hover:shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)] hover:translate-x-[1px] hover:translate-y-[1px]"
+            >
+              Clear Search
+            </button>
+          </div>
+        )}
+      </section>
+
+      {/* ── CTA Section ───────────────────────────────────────────────────────── */}
+      <SectionDivider text="Ready to Start?" color="var(--nb-pink)" />
+
+      <section className="rounded-2xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-teal,#7ee8e2)] p-8 sm:p-12 text-center shadow-[8px_8px_0px_var(--nb-border-color,#0f0f0f)]">
+        <h2 className="nb-display text-3xl font-black text-[var(--nb-on-accent,#111)] tracking-tight sm:text-4xl">
+          Start Your DSA Journey
+        </h2>
+        <p className="mt-4 max-w-xl mx-auto text-base leading-relaxed text-[var(--nb-on-accent,#111)] opacity-80">
+          Whether you're preparing for interviews or building competitive programming skills,
+          frontendx has the problems, patterns, and structure you need.
+        </p>
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
+          <Link
+            to="/learn"
+            className="inline-flex items-center gap-2 rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-pink,#ff9ec4)] px-8 py-4 text-base font-black shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)] transition-all duration-150 hover:shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)] hover:translate-x-[2px] hover:translate-y-[2px] active:shadow-none active:translate-x-[4px] active:translate-y-[4px]"
+          >
+            <span>📖</span>
+            <span>Learn Patterns</span>
+          </Link>
+          <Link
+            to="/explore"
+            className="inline-flex items-center gap-2 rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-yellow,#ffe566)] px-8 py-4 text-base font-black shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)] transition-all duration-150 hover:shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)] hover:translate-x-[2px] hover:translate-y-[2px] active:shadow-none active:translate-x-[4px] active:translate-y-[4px]"
+          >
+            <span>🎯</span>
+            <span>Browse Problems</span>
+          </Link>
         </div>
       </section>
     </main>

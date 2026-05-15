@@ -159,6 +159,10 @@ import { bidirectionalBfsArticle } from './content/bidirectional-bfs'
 import { segmentTreeBeatsArticle } from './content/segment-tree-beats'
 import { aStarSearchArticle } from './content/a-star-search'
 import { stringRotationsArticle } from './content/string-rotations'
+import { differenceConstraintsArticle } from './content/difference-constraints'
+import { treeIsomorphismArticle } from './content/tree-isomorphism'
+import { lyndonFactorizationArticle } from './content/lyndon-factorization'
+import { balancedDpArticle } from './content/balanced-dp'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -287,6 +291,10 @@ export const articles: Article[] = [
   segmentTreeBeatsArticle,
   aStarSearchArticle,
   stringRotationsArticle,
+  differenceConstraintsArticle,
+  treeIsomorphismArticle,
+  lyndonFactorizationArticle,
+  balancedDpArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
