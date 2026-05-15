@@ -90,6 +90,7 @@ import { segmentTreeLazyArticle } from './content/segment-tree-lazy'
 import { recursionMemoizationArticle } from './content/recursion-memoization'
 import { cycleDetectionArticle } from './content/cycle-detection'
 import { kthElementArticle } from './content/kth-element'
+import { arrayTricksArticle } from './content/array-tricks'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -149,6 +150,7 @@ export const articles: Article[] = [
   recursionMemoizationArticle,
   cycleDetectionArticle,
   kthElementArticle,
+  arrayTricksArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
