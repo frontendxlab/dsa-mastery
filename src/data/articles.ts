@@ -75,6 +75,7 @@ import { divideConquerArticle } from './content/divide-conquer'
 import { designPatternsArticle } from './content/design-patterns'
 import { intervalDpArticle } from './content/interval-dp'
 import { gridDpArticle } from './content/grid-dp'
+import { stringDpArticle } from './content/string-dp'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -119,6 +120,7 @@ export const articles: Article[] = [
   designPatternsArticle,
   intervalDpArticle,
   gridDpArticle,
+  stringDpArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {

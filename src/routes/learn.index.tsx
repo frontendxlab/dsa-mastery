@@ -28,7 +28,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part V — Strings, Sequences & Grid',
     color: 'var(--nb-orange)',
-    chapters: ['string-algorithms', 'string-matching', 'sequences', 'matrix'],
+    chapters: ['string-algorithms', 'string-matching', 'sequences', 'matrix', 'string-dp'],
   },
   {
     part: 'Part VI — Math & Discrete',
