@@ -111,6 +111,10 @@ import { eulerTourArticle } from './content/euler-tour'
 import { moAlgorithmArticle } from './content/mo-algorithm'
 import { xorBasisArticle } from './content/xor-basis'
 import { eulerPathArticle } from './content/euler-path'
+import { matrixExponentiationArticle } from './content/matrix-exponentiation'
+import { ahoCorasickArticle } from './content/aho-corasick'
+import { centroidDecompositionArticle } from './content/centroid-decomposition'
+import { lineSweepArticle } from './content/line-sweep'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -191,6 +195,10 @@ export const articles: Article[] = [
   moAlgorithmArticle,
   xorBasisArticle,
   eulerPathArticle,
+  matrixExponentiationArticle,
+  ahoCorasickArticle,
+  centroidDecompositionArticle,
+  lineSweepArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
