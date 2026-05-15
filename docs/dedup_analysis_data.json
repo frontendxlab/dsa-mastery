@@ -1,0 +1,3337 @@
+{
+  "total_problems": 38586,
+  "cross_platform_count": 1078,
+  "cross_topic_count": 6452,
+  "title_inconsistency_count": 1647,
+  "pattern_counts": {
+    "Trie / Prefix Tree": 383,
+    "DFS / Backtracking": 1405,
+    "Topological Sort": 77,
+    "Sliding Window": 443,
+    "MST (Kruskal/Prim)": 387,
+    "GCD / Euclidean": 129,
+    "Fibonacci-style DP": 112,
+    "Matrix Exponentiation": 210,
+    "Two Pointers": 467,
+    "BFS (unweighted shortest)": 529,
+    "Knapsack DP": 185,
+    "LIS (Longest Inc Subseq)": 493,
+    "Tree DP": 855,
+    "Union Find / DSU": 322,
+    "Segment Tree / Fenwick": 1077,
+    "Dijkstra / Shortest Path": 107,
+    "Binary Search (on answer)": 896,
+    "LCS / Edit Distance": 56,
+    "Bitmask DP": 534
+  },
+  "cross_platform_examples": [
+    {
+      "title": "range minimum query",
+      "platforms": [
+        "Toph",
+        "SPOJ",
+        "HackerEarth",
+        "HackerRank",
+        "E-Olymp",
+        "GeeksforGeeks",
+        "USACO",
+        "AtCoder",
+        "Kattis",
+        "InterviewBit",
+        "DMOJ",
+        "AOJ",
+        "TopCoder"
+      ],
+      "topics": [
+        "sequences",
+        "tree",
+        "advanced_tree"
+      ],
+      "count": 16
+    },
+    {
+      "title": "convex hull",
+      "platforms": [
+        "LintCode",
+        "Toph",
+        "SPOJ",
+        "HackerEarth",
+        "E-Olymp",
+        "Baekjoon",
+        "DMOJ",
+        "InterviewBit",
+        "Kattis",
+        "LightOJ",
+        "Codewars",
+        "CSES"
+      ],
+      "topics": [
+        "shape",
+        "geometry"
+      ],
+      "count": 13
+    },
+    {
+      "title": "triangle",
+      "platforms": [
+        "SPOJ",
+        "Codeforces",
+        "E-Olymp",
+        "AtCoder",
+        "Baekjoon",
+        "LeetCode",
+        "CodeChef",
+        "DMOJ",
+        "InterviewBit",
+        "Kattis",
+        "LightOJ"
+      ],
+      "topics": [
+        "geometry",
+        "binary_search",
+        "dp",
+        "math",
+        "combinatorics",
+        "shape"
+      ],
+      "count": 23
+    },
+    {
+      "title": "point in polygon",
+      "platforms": [
+        "LintCode",
+        "Toph",
+        "SPOJ",
+        "HackerEarth",
+        "E-Olymp",
+        "Baekjoon",
+        "Kattis",
+        "LightOJ",
+        "Codewars",
+        "CodeAbbey",
+        "CSES"
+      ],
+      "topics": [
+        "shape",
+        "geometry",
+        "math"
+      ],
+      "count": 11
+    },
+    {
+      "title": "power of two",
+      "platforms": [
+        "Toph",
+        "HackerEarth",
+        "HackerRank",
+        "E-Olymp",
+        "GeeksforGeeks",
+        "LeetCode",
+        "Coding Ninjas",
+        "CodeChef",
+        "Codewars",
+        "CSES"
+      ],
+      "topics": [
+        "bit",
+        "math"
+      ],
+      "count": 12
+    },
+    {
+      "title": "maximum subarray sum",
+      "platforms": [
+        "HackerRank",
+        "Codeforces",
+        "CodingBlocks",
+        "Coding Ninjas",
+        "CodeChef",
+        "Scaler",
+        "Kattis",
+        "Codewars",
+        "HackerBlocks",
+        "CSES"
+      ],
+      "topics": [
+        "binary_search",
+        "scheduling",
+        "math",
+        "sliding_window",
+        "sequences",
+        "num_methods"
+      ],
+      "count": 19
+    },
+    {
+      "title": "kth number",
+      "platforms": [
+        "SPOJ",
+        "HackerRank",
+        "AtCoder",
+        "Baekjoon",
+        "CodeChef",
+        "Kattis",
+        "DMOJ",
+        "LightOJ",
+        "UVa"
+      ],
+      "topics": [
+        "sequences",
+        "binary_search",
+        "math"
+      ],
+      "count": 10
+    },
+    {
+      "title": "level order traversal",
+      "platforms": [
+        "BinarySearch",
+        "Educative",
+        "HackerEarth",
+        "GeeksforGeeks",
+        "Techie Delight",
+        "Coding Ninjas",
+        "Scaler",
+        "InterviewBit",
+        "PrepBytes"
+      ],
+      "topics": [
+        "tree"
+      ],
+      "count": 9
+    },
+    {
+      "title": "square",
+      "platforms": [
+        "SPOJ",
+        "Codeforces",
+        "E-Olymp",
+        "Baekjoon",
+        "CodeChef",
+        "DMOJ",
+        "Kattis",
+        "CodeAbbey"
+      ],
+      "topics": [
+        "geometry",
+        "math"
+      ],
+      "count": 12
+    },
+    {
+      "title": "permutations",
+      "platforms": [
+        "LintCode",
+        "HackerEarth",
+        "Codeforces",
+        "E-Olymp",
+        "LeetCode",
+        "InterviewBit",
+        "Codewars",
+        "CSES"
+      ],
+      "topics": [
+        "backtrack",
+        "math",
+        "bit",
+        "tree",
+        "combinatorics"
+      ],
+      "count": 19
+    },
+    {
+      "title": "factorial",
+      "platforms": [
+        "Toph",
+        "E-Olymp",
+        "GeeksforGeeks",
+        "AtCoder",
+        "Coding Ninjas",
+        "Scaler",
+        "DMOJ",
+        "Codewars"
+      ],
+      "topics": [
+        "combinatorics",
+        "math"
+      ],
+      "count": 10
+    },
+    {
+      "title": "rectangle",
+      "platforms": [
+        "Toph",
+        "E-Olymp",
+        "AtCoder",
+        "Baekjoon",
+        "DMOJ",
+        "Kattis",
+        "CodeChef",
+        "CodeAbbey"
+      ],
+      "topics": [
+        "shape",
+        "geometry",
+        "math"
+      ],
+      "count": 10
+    },
+    {
+      "title": "longest substring without repeating characters",
+      "platforms": [
+        "BinarySearch",
+        "Educative",
+        "LintCode",
+        "GeeksforGeeks",
+        "Techie Delight",
+        "LeetCode",
+        "Coding Ninjas",
+        "Scaler"
+      ],
+      "topics": [
+        "sliding_window",
+        "string",
+        "math"
+      ],
+      "count": 13
+    },
+    {
+      "title": "longest palindromic substring",
+      "platforms": [
+        "LintCode",
+        "GeeksforGeeks",
+        "LeetCode",
+        "Coding Ninjas",
+        "Scaler",
+        "InterviewBit",
+        "AlgoExpert",
+        "CSES"
+      ],
+      "topics": [
+        "string",
+        "dp",
+        "binary_search",
+        "math"
+      ],
+      "count": 11
+    },
+    {
+      "title": "search in rotated sorted array",
+      "platforms": [
+        "LintCode",
+        "GeeksforGeeks",
+        "CodingBlocks",
+        "LeetCode",
+        "Coding Ninjas",
+        "Scaler",
+        "LeetCode Discuss",
+        "PrepBytes"
+      ],
+      "topics": [
+        "num_methods",
+        "binary_search",
+        "math"
+      ],
+      "count": 10
+    },
+    {
+      "title": "polygon area",
+      "platforms": [
+        "E-Olymp",
+        "Baekjoon",
+        "DMOJ",
+        "Kattis",
+        "AOJ",
+        "LightOJ",
+        "Codewars",
+        "CSES"
+      ],
+      "topics": [
+        "shape",
+        "geometry"
+      ],
+      "count": 8
+    },
+    {
+      "title": "range sum query",
+      "platforms": [
+        "Toph",
+        "SPOJ",
+        "HackerEarth",
+        "E-Olymp",
+        "GeeksforGeeks",
+        "AtCoder",
+        "DMOJ",
+        "LightOJ"
+      ],
+      "topics": [
+        "sequences",
+        "tree",
+        "advanced_tree"
+      ],
+      "count": 9
+    },
+    {
+      "title": "palindrome number",
+      "platforms": [
+        "Educative",
+        "LintCode",
+        "GeeksforGeeks",
+        "LeetCode",
+        "Coding Ninjas",
+        "Scaler",
+        "PrepBytes"
+      ],
+      "topics": [
+        "math"
+      ],
+      "count": 7
+    },
+    {
+      "title": "sum of digits",
+      "platforms": [
+        "Toph",
+        "E-Olymp",
+        "GeeksforGeeks",
+        "Coding Ninjas",
+        "CodeChef",
+        "PrepBytes",
+        "CodeAbbey"
+      ],
+      "topics": [
+        "math"
+      ],
+      "count": 7
+    },
+    {
+      "title": "fenwick tree",
+      "platforms": [
+        "Toph",
+        "Codeforces",
+        "E-Olymp",
+        "AtCoder",
+        "Coding Ninjas",
+        "CodeChef",
+        "Kattis"
+      ],
+      "topics": [
+        "math",
+        "bit",
+        "tree",
+        "sequences",
+        "advanced_tree"
+      ],
+      "count": 10
+    },
+    {
+      "title": "lcm",
+      "platforms": [
+        "Toph",
+        "Project Euler",
+        "Codeforces",
+        "E-Olymp",
+        "AtCoder",
+        "Baekjoon",
+        "Scaler"
+      ],
+      "topics": [
+        "math"
+      ],
+      "count": 8
+    },
+    {
+      "title": "subarray sum",
+      "platforms": [
+        "BinarySearch",
+        "Toph",
+        "LintCode",
+        "HackerRank",
+        "AtCoder",
+        "Kattis",
+        "LightOJ"
+      ],
+      "topics": [
+        "sliding_window",
+        "sequences",
+        "dp",
+        "math"
+      ],
+      "count": 8
+    },
+    {
+      "title": "binary search",
+      "platforms": [
+        "CodeSignal",
+        "Codeforces",
+        "Coding Ninjas",
+        "LeetCode",
+        "DMOJ",
+        "AOJ",
+        "AlgoExpert"
+      ],
+      "topics": [
+        "num_methods",
+        "binary_search",
+        "math"
+      ],
+      "count": 10
+    },
+    {
+      "title": "matrix",
+      "platforms": [
+        "SPOJ",
+        "HackerRank",
+        "Codeforces",
+        "E-Olymp",
+        "USACO",
+        "Kattis",
+        "DMOJ"
+      ],
+      "topics": [
+        "math",
+        "graph",
+        "combinatorics",
+        "linear_algebra",
+        "shape",
+        "advanced_tree"
+      ],
+      "count": 11
+    },
+    {
+      "title": "find peak element",
+      "platforms": [
+        "LintCode",
+        "CodeSignal",
+        "Techie Delight",
+        "Coding Ninjas",
+        "LeetCode",
+        "Scaler",
+        "PrepBytes"
+      ],
+      "topics": [
+        "binary_search",
+        "num_methods"
+      ],
+      "count": 9
+    },
+    {
+      "title": "longest common prefix",
+      "platforms": [
+        "LintCode",
+        "GeeksforGeeks",
+        "LeetCode",
+        "Coding Ninjas",
+        "Scaler",
+        "InterviewBit"
+      ],
+      "topics": [
+        "trie",
+        "string",
+        "math"
+      ],
+      "count": 9
+    },
+    {
+      "title": "rectangle area",
+      "platforms": [
+        "LintCode",
+        "LeetCode",
+        "CodeChef",
+        "InterviewBit",
+        "LightOJ",
+        "Codewars"
+      ],
+      "topics": [
+        "shape",
+        "geometry",
+        "math"
+      ],
+      "count": 8
+    },
+    {
+      "title": "nim game",
+      "platforms": [
+        "GeeksforGeeks",
+        "LeetCode",
+        "DMOJ",
+        "InterviewBit",
+        "CodeAbbey",
+        "CSES"
+      ],
+      "topics": [
+        "game_theory",
+        "bit",
+        "math"
+      ],
+      "count": 7
+    },
+    {
+      "title": "stone game",
+      "platforms": [
+        "HackerEarth",
+        "Project Euler",
+        "HackerRank",
+        "GeeksforGeeks",
+        "LeetCode",
+        "DMOJ"
+      ],
+      "topics": [
+        "game_theory",
+        "bit",
+        "dp",
+        "math"
+      ],
+      "count": 9
+    },
+    {
+      "title": "binomial coefficients",
+      "platforms": [
+        "HackerEarth",
+        "HackerRank",
+        "Codeforces",
+        "E-Olymp",
+        "AtCoder",
+        "CSES"
+      ],
+      "topics": [
+        "combinatorics",
+        "num_methods",
+        "math"
+      ],
+      "count": 8
+    },
+    {
+      "title": "maximum sum",
+      "platforms": [
+        "Toph",
+        "HackerEarth",
+        "Codeforces",
+        "AtCoder",
+        "Kattis",
+        "LightOJ"
+      ],
+      "topics": [
+        "dp",
+        "math",
+        "sliding_window",
+        "tree",
+        "advanced_tree"
+      ],
+      "count": 7
+    },
+    {
+      "title": "modular exponentiation",
+      "platforms": [
+        "SPOJ",
+        "Codeforces",
+        "GeeksforGeeks",
+        "LeetCode",
+        "Coding Ninjas",
+        "CodeAbbey"
+      ],
+      "topics": [
+        "math"
+      ],
+      "count": 6
+    },
+    {
+      "title": "fibonacci numbers",
+      "platforms": [
+        "Educative",
+        "Toph",
+        "HackerRank",
+        "E-Olymp",
+        "GeeksforGeeks",
+        "CSES"
+      ],
+      "topics": [
+        "dp",
+        "backtrack",
+        "math",
+        "linear_algebra",
+        "num_methods"
+      ],
+      "count": 9
+    },
+    {
+      "title": "josephus problem",
+      "platforms": [
+        "CP-Algorithms",
+        "GeeksforGeeks",
+        "Coding Ninjas",
+        "LightOJ",
+        "CodeAbbey",
+        "CSES"
+      ],
+      "topics": [
+        "linked_list",
+        "miscellaneous",
+        "binary_search",
+        "math"
+      ],
+      "count": 11
+    },
+    {
+      "title": "triangle area",
+      "platforms": [
+        "BinarySearch",
+        "Toph",
+        "HackerEarth",
+        "Kattis",
+        "Codewars",
+        "CodeAbbey"
+      ],
+      "topics": [
+        "geometry",
+        "math"
+      ],
+      "count": 7
+    },
+    {
+      "title": "swap nodes in pairs",
+      "platforms": [
+        "LintCode",
+        "GeeksforGeeks",
+        "LeetCode",
+        "CodeChef",
+        "Scaler",
+        "PrepBytes"
+      ],
+      "topics": [
+        "linked_list",
+        "math"
+      ],
+      "count": 7
+    },
+    {
+      "title": "longest palindrome",
+      "platforms": [
+        "LintCode",
+        "HackerEarth",
+        "Project Euler",
+        "AtCoder",
+        "LeetCode",
+        "CSES"
+      ],
+      "topics": [
+        "dp",
+        "string",
+        "math"
+      ],
+      "count": 6
+    },
+    {
+      "title": "stars",
+      "platforms": [
+        "SPOJ",
+        "HackerRank",
+        "Codeforces",
+        "Timus",
+        "POJ",
+        "Baekjoon"
+      ],
+      "topics": [
+        "advanced_tree",
+        "shape",
+        "geometry",
+        "math"
+      ],
+      "count": 9
+    },
+    {
+      "title": "minimum window substring",
+      "platforms": [
+        "BinarySearch",
+        "LintCode",
+        "Educative",
+        "HackerRank",
+        "LeetCode",
+        "Coding Ninjas"
+      ],
+      "topics": [
+        "sliding_window",
+        "sequences",
+        "string",
+        "math"
+      ],
+      "count": 10
+    },
+    {
+      "title": "koko eating bananas",
+      "platforms": [
+        "LintCode",
+        "GeeksforGeeks",
+        "Coding Ninjas",
+        "LeetCode",
+        "Scaler",
+        "LeetCode Discuss"
+      ],
+      "topics": [
+        "binary_search",
+        "num_methods"
+      ],
+      "count": 7
+    },
+    {
+      "title": "merge two sorted linked lists",
+      "platforms": [
+        "HackerEarth",
+        "HackerRank",
+        "GeeksforGeeks",
+        "Techie Delight",
+        "Coding Ninjas",
+        "PrepBytes"
+      ],
+      "topics": [
+        "linked_list"
+      ],
+      "count": 6
+    },
+    {
+      "title": "tree diameter",
+      "platforms": [
+        "Educative",
+        "HackerEarth",
+        "Codeforces",
+        "LeetCode",
+        "Kattis",
+        "CSES"
+      ],
+      "topics": [
+        "bit",
+        "tree",
+        "graph"
+      ],
+      "count": 7
+    },
+    {
+      "title": "sliding window maximum",
+      "platforms": [
+        "BinarySearch",
+        "LintCode",
+        "GeeksforGeeks",
+        "LeetCode",
+        "Scaler",
+        "PrepBytes"
+      ],
+      "topics": [
+        "sliding_window",
+        "heap"
+      ],
+      "count": 7
+    },
+    {
+      "title": "segment tree",
+      "platforms": [
+        "Toph",
+        "Codeforces",
+        "AtCoder",
+        "Baekjoon",
+        "CodeChef",
+        "Kattis"
+      ],
+      "topics": [
+        "sequences",
+        "tree",
+        "advanced_tree"
+      ],
+      "count": 6
+    },
+    {
+      "title": "diameter of binary tree",
+      "platforms": [
+        "Techie Delight",
+        "LeetCode",
+        "Coding Ninjas",
+        "Scaler",
+        "InterviewBit",
+        "PrepBytes"
+      ],
+      "topics": [
+        "tree"
+      ],
+      "count": 6
+    },
+    {
+      "title": "integer to roman",
+      "platforms": [
+        "LintCode",
+        "LeetCode",
+        "Scaler",
+        "InterviewBit",
+        "Codewars"
+      ],
+      "topics": [
+        "greedy",
+        "string",
+        "math"
+      ],
+      "count": 7
+    },
+    {
+      "title": "roman to integer",
+      "platforms": [
+        "LintCode",
+        "GeeksforGeeks",
+        "LeetCode",
+        "Scaler",
+        "InterviewBit"
+      ],
+      "topics": [
+        "greedy",
+        "string",
+        "math"
+      ],
+      "count": 8
+    },
+    {
+      "title": "armstrong number",
+      "platforms": [
+        "Educative",
+        "LeetCode",
+        "Coding Ninjas",
+        "Scaler",
+        "PrepBytes"
+      ],
+      "topics": [
+        "math"
+      ],
+      "count": 5
+    },
+    {
+      "title": "palindromes",
+      "platforms": [
+        "HackerRank",
+        "E-Olymp",
+        "Baekjoon",
+        "DMOJ",
+        "CodeAbbey"
+      ],
+      "topics": [
+        "string",
+        "math"
+      ],
+      "count": 6
+    },
+    {
+      "title": "lucky numbers",
+      "platforms": [
+        "HackerRank",
+        "Codeforces",
+        "GeeksforGeeks",
+        "AtCoder",
+        "CodeChef"
+      ],
+      "topics": [
+        "bit",
+        "num_methods",
+        "binary_search",
+        "math"
+      ],
+      "count": 8
+    },
+    {
+      "title": "gcd",
+      "platforms": [
+        "Toph",
+        "Codeforces",
+        "E-Olymp",
+        "Baekjoon",
+        "Scaler"
+      ],
+      "topics": [
+        "math"
+      ],
+      "count": 5
+    },
+    {
+      "title": "permutation",
+      "platforms": [
+        "Toph",
+        "Codeforces",
+        "AtCoder",
+        "Kattis",
+        "DMOJ"
+      ],
+      "topics": [
+        "backtrack",
+        "math",
+        "string",
+        "combinatorics",
+        "advanced_tree"
+      ],
+      "count": 11
+    },
+    {
+      "title": "square root",
+      "platforms": [
+        "SPOJ",
+        "CodeSignal",
+        "GeeksforGeeks",
+        "CodeChef",
+        "CodeAbbey"
+      ],
+      "topics": [
+        "shape",
+        "num_methods",
+        "binary_search",
+        "math"
+      ],
+      "count": 6
+    },
+    {
+      "title": "polygon",
+      "platforms": [
+        "SPOJ",
+        "HackerRank",
+        "Codeforces",
+        "E-Olymp",
+        "Baekjoon"
+      ],
+      "topics": [
+        "shape",
+        "geometry",
+        "binary_search",
+        "math"
+      ],
+      "count": 14
+    },
+    {
+      "title": "combinations",
+      "platforms": [
+        "Toph",
+        "LintCode",
+        "E-Olymp",
+        "LeetCode",
+        "LightOJ"
+      ],
+      "topics": [
+        "combinatorics",
+        "backtrack",
+        "math"
+      ],
+      "count": 6
+    },
+    {
+      "title": "longest common subsequence",
+      "platforms": [
+        "LintCode",
+        "GeeksforGeeks",
+        "LeetCode",
+        "AOJ",
+        "CodeAbbey"
+      ],
+      "topics": [
+        "dp",
+        "string",
+        "math"
+      ],
+      "count": 8
+    },
+    {
+      "title": "game of stones",
+      "platforms": [
+        "Toph",
+        "HackerRank",
+        "Codeforces",
+        "DMOJ",
+        "CodeAbbey"
+      ],
+      "topics": [
+        "game_theory",
+        "bit",
+        "math"
+      ],
+      "count": 5
+    },
+    {
+      "title": "rotate string",
+      "platforms": [
+        "LintCode",
+        "HackerRank",
+        "GeeksforGeeks",
+        "LeetCode",
+        "CodeAbbey"
+      ],
+      "topics": [
+        "string",
+        "math"
+      ],
+      "count": 6
+    },
+    {
+      "title": "flatten binary tree to linked list",
+      "platforms": [
+        "LintCode",
+        "GeeksforGeeks",
+        "LeetCode",
+        "Scaler",
+        "InterviewBit"
+      ],
+      "topics": [
+        "linked_list",
+        "tree",
+        "math"
+      ],
+      "count": 7
+    },
+    {
+      "title": "median of two sorted arrays",
+      "platforms": [
+        "LeetCode",
+        "Coding Ninjas",
+        "Scaler",
+        "AlgoExpert",
+        "LeetCode Discuss"
+      ],
+      "topics": [
+        "binary_search",
+        "math"
+      ],
+      "count": 6
+    },
+    {
+      "title": "group anagrams",
+      "platforms": [
+        "LintCode",
+        "LeetCode",
+        "Coding Ninjas",
+        "Scaler",
+        "AlgoExpert"
+      ],
+      "topics": [
+        "string",
+        "math"
+      ],
+      "count": 6
+    },
+    {
+      "title": "aggressive cows",
+      "platforms": [
+        "SPOJ",
+        "GeeksforGeeks",
+        "CodingBlocks",
+        "Coding Ninjas",
+        "Scaler"
+      ],
+      "topics": [
+        "greedy",
+        "binary_search",
+        "num_methods"
+      ],
+      "count": 7
+    },
+    {
+      "title": "find k closest elements",
+      "platforms": [
+        "LintCode",
+        "Educative",
+        "GeeksforGeeks",
+        "LeetCode",
+        "LeetCode Discuss"
+      ],
+      "topics": [
+        "sliding_window",
+        "heap",
+        "binary_search"
+      ],
+      "count": 7
+    },
+    {
+      "title": "find minimum in rotated sorted array",
+      "platforms": [
+        "LintCode",
+        "GeeksforGeeks",
+        "Techie Delight",
+        "LeetCode",
+        "Scaler"
+      ],
+      "topics": [
+        "binary_search",
+        "num_methods"
+      ],
+      "count": 6
+    },
+    {
+      "title": "longest increasing subsequence",
+      "platforms": [
+        "HackerEarth",
+        "CP-Algorithms",
+        "GeeksforGeeks",
+        "LeetCode",
+        "Kattis"
+      ],
+      "topics": [
+        "advanced_tree",
+        "binary_search",
+        "dp"
+      ],
+      "count": 7
+    },
+    {
+      "title": "ternary search",
+      "platforms": [
+        "HackerEarth",
+        "CP-Algorithms",
+        "GeeksforGeeks",
+        "Techie Delight",
+        "DMOJ"
+      ],
+      "topics": [
+        "binary_search",
+        "num_methods"
+      ],
+      "count": 6
+    },
+    {
+      "title": "count set bits",
+      "platforms": [
+        "Toph",
+        "GeeksforGeeks",
+        "CodingBlocks",
+        "CodeChef",
+        "HackerBlocks"
+      ],
+      "topics": [
+        "bit",
+        "binary_search"
+      ],
+      "count": 5
+    },
+    {
+      "title": "reverse a linked list",
+      "platforms": [
+        "HackerRank",
+        "GeeksforGeeks",
+        "Scaler",
+        "CodeChef",
+        "PrepBytes"
+      ],
+      "topics": [
+        "linked_list"
+      ],
+      "count": 5
+    },
+    {
+      "title": "reverse words in a string",
+      "platforms": [
+        "LintCode",
+        "Educative",
+        "LeetCode",
+        "Coding Ninjas",
+        "Scaler"
+      ],
+      "topics": [
+        "string"
+      ],
+      "count": 5
+    },
+    {
+      "title": "valid anagram",
+      "platforms": [
+        "Educative",
+        "LeetCode",
+        "Coding Ninjas",
+        "Scaler",
+        "CodeChef"
+      ],
+      "topics": [
+        "string"
+      ],
+      "count": 5
+    },
+    {
+      "title": "inversion count",
+      "platforms": [
+        "Toph",
+        "SPOJ",
+        "E-Olymp",
+        "GeeksforGeeks",
+        "LightOJ"
+      ],
+      "topics": [
+        "sequences",
+        "tree",
+        "advanced_tree"
+      ],
+      "count": 5
+    },
+    {
+      "title": "height of binary tree",
+      "platforms": [
+        "GeeksforGeeks",
+        "Techie Delight",
+        "Coding Ninjas",
+        "Scaler",
+        "PrepBytes"
+      ],
+      "topics": [
+        "tree"
+      ],
+      "count": 5
+    },
+    {
+      "title": "lowest common ancestor",
+      "platforms": [
+        "Toph",
+        "Techie Delight",
+        "Coding Ninjas",
+        "Scaler",
+        "PrepBytes"
+      ],
+      "topics": [
+        "tree"
+      ],
+      "count": 5
+    },
+    {
+      "title": "word break",
+      "platforms": [
+        "LeetCode",
+        "LintCode",
+        "GeeksforGeeks",
+        "Coding Ninjas"
+      ],
+      "topics": [
+        "trie",
+        "backtrack",
+        "dp",
+        "string"
+      ],
+      "count": 6
+    },
+    {
+      "title": "maximum xor subarray",
+      "platforms": [
+        "Coding Ninjas",
+        "GeeksforGeeks",
+        "InterviewBit",
+        "CSES"
+      ],
+      "topics": [
+        "binary_search",
+        "math",
+        "trie",
+        "bit",
+        "sequences"
+      ],
+      "count": 7
+    },
+    {
+      "title": "xor partition",
+      "platforms": [
+        "Codeforces",
+        "Toph",
+        "CodeChef",
+        "Kattis"
+      ],
+      "topics": [
+        "trie",
+        "bit",
+        "binary_search"
+      ],
+      "count": 6
+    },
+    {
+      "title": "reverse integer",
+      "platforms": [
+        "LeetCode",
+        "LintCode",
+        "Coding Ninjas",
+        "InterviewBit"
+      ],
+      "topics": [
+        "math"
+      ],
+      "count": 4
+    },
+    {
+      "title": "perfect number",
+      "platforms": [
+        "LeetCode",
+        "Codeforces",
+        "PrepBytes",
+        "Coding Ninjas"
+      ],
+      "topics": [
+        "binary_search",
+        "math"
+      ],
+      "count": 5
+    },
+    {
+      "title": "fibonacci number",
+      "platforms": [
+        "LeetCode",
+        "Codeforces",
+        "Coding Ninjas",
+        "AOJ"
+      ],
+      "topics": [
+        "linear_algebra",
+        "dp",
+        "math"
+      ],
+      "count": 6
+    },
+    {
+      "title": "k closest points to origin",
+      "platforms": [
+        "LeetCode",
+        "GeeksforGeeks",
+        "BinarySearch",
+        "Coding Ninjas"
+      ],
+      "topics": [
+        "heap",
+        "shape",
+        "geometry",
+        "math"
+      ],
+      "count": 7
+    },
+    {
+      "title": "set",
+      "platforms": [
+        "Codeforces",
+        "Baekjoon",
+        "Project Euler",
+        "HackerRank"
+      ],
+      "topics": [
+        "advanced_tree",
+        "greedy",
+        "bit",
+        "math"
+      ],
+      "count": 6
+    },
+    {
+      "title": "divisors",
+      "platforms": [
+        "Codeforces",
+        "Toph",
+        "GeeksforGeeks",
+        "Kattis"
+      ],
+      "topics": [
+        "math"
+      ],
+      "count": 5
+    },
+    {
+      "title": "rectangles",
+      "platforms": [
+        "Codeforces",
+        "SPOJ",
+        "Baekjoon",
+        "AtCoder"
+      ],
+      "topics": [
+        "geometry",
+        "binary_search",
+        "math",
+        "shape",
+        "advanced_tree"
+      ],
+      "count": 13
+    },
+    {
+      "title": "prime number",
+      "platforms": [
+        "Codeforces",
+        "Scaler",
+        "GeeksforGeeks",
+        "AOJ"
+      ],
+      "topics": [
+        "math"
+      ],
+      "count": 5
+    },
+    {
+      "title": "friends",
+      "platforms": [
+        "Codeforces",
+        "LightOJ",
+        "HackerEarth",
+        "AtCoder"
+      ],
+      "topics": [
+        "binary_search",
+        "math",
+        "bit",
+        "tree",
+        "advanced_tree"
+      ],
+      "count": 8
+    },
+    {
+      "title": "triangles",
+      "platforms": [
+        "Codeforces",
+        "CodeAbbey",
+        "SPOJ",
+        "AtCoder"
+      ],
+      "topics": [
+        "shape",
+        "geometry",
+        "math"
+      ],
+      "count": 11
+    },
+    {
+      "title": "rotation",
+      "platforms": [
+        "Codeforces",
+        "HackerEarth",
+        "Baekjoon",
+        "AtCoder"
+      ],
+      "topics": [
+        "geometry",
+        "binary_search",
+        "math",
+        "string",
+        "shape"
+      ],
+      "count": 6
+    },
+    {
+      "title": "largest prime factor",
+      "platforms": [
+        "Coding Ninjas",
+        "Codewars",
+        "GeeksforGeeks",
+        "Project Euler"
+      ],
+      "topics": [
+        "math"
+      ],
+      "count": 4
+    },
+    {
+      "title": "lcm of two numbers",
+      "platforms": [
+        "Coding Ninjas",
+        "Educative",
+        "PrepBytes",
+        "GeeksforGeeks"
+      ],
+      "topics": [
+        "math"
+      ],
+      "count": 4
+    },
+    {
+      "title": "pairs",
+      "platforms": [
+        "Codeforces",
+        "Toph",
+        "HackerRank",
+        "AtCoder"
+      ],
+      "topics": [
+        "num_methods",
+        "binary_search",
+        "math"
+      ],
+      "count": 5
+    },
+    {
+      "title": "pascals triangle",
+      "platforms": [
+        "LeetCode",
+        "Toph",
+        "E-Olymp",
+        "Codewars"
+      ],
+      "topics": [
+        "combinatorics",
+        "dp",
+        "math"
+      ],
+      "count": 5
+    },
+    {
+      "title": "nim",
+      "platforms": [
+        "Codeforces",
+        "Kattis",
+        "HackerEarth",
+        "Project Euler"
+      ],
+      "topics": [
+        "dp",
+        "game_theory",
+        "math",
+        "bit",
+        "graph"
+      ],
+      "count": 7
+    },
+    {
+      "title": "graph coloring",
+      "platforms": [
+        "Codeforces",
+        "LightOJ",
+        "Interview Cake",
+        "CSES"
+      ],
+      "topics": [
+        "backtrack",
+        "graph",
+        "math"
+      ],
+      "count": 5
+    },
+    {
+      "title": "find the duplicate number",
+      "platforms": [
+        "LeetCode",
+        "LintCode",
+        "GeeksforGeeks",
+        "Scaler"
+      ],
+      "topics": [
+        "linked_list",
+        "bit",
+        "binary_search",
+        "math"
+      ],
+      "count": 7
+    },
+    {
+      "title": "count and say",
+      "platforms": [
+        "LeetCode",
+        "LintCode",
+        "Coding Ninjas",
+        "InterviewBit"
+      ],
+      "topics": [
+        "string",
+        "math"
+      ],
+      "count": 6
+    },
+    {
+      "title": "tree coloring",
+      "platforms": [
+        "Codeforces",
+        "HackerEarth",
+        "CodeChef",
+        "BinarySearch"
+      ],
+      "topics": [
+        "tree",
+        "math"
+      ],
+      "count": 5
+    },
+    {
+      "title": "tree queries",
+      "platforms": [
+        "Codeforces",
+        "Toph",
+        "CodeChef",
+        "HackerEarth"
+      ],
+      "topics": [
+        "advanced_tree",
+        "graph",
+        "tree",
+        "math"
+      ],
+      "count": 6
+    },
+    {
+      "title": "subsets",
+      "platforms": [
+        "LeetCode",
+        "CodeChef",
+        "InterviewBit",
+        "CSES"
+      ],
+      "topics": [
+        "combinatorics",
+        "bit",
+        "backtrack",
+        "math"
+      ],
+      "count": 6
+    },
+    {
+      "title": "merge k sorted lists",
+      "platforms": [
+        "LeetCode",
+        "LintCode",
+        "CodeChef",
+        "InterviewBit"
+      ],
+      "topics": [
+        "linked_list",
+        "heap",
+        "math"
+      ],
+      "count": 6
+    },
+    {
+      "title": "combination sum",
+      "platforms": [
+        "LeetCode",
+        "LintCode",
+        "Codewars",
+        "InterviewBit"
+      ],
+      "topics": [
+        "combinatorics",
+        "backtrack",
+        "math"
+      ],
+      "count": 5
+    }
+  ],
+  "cross_topic_examples": [
+    {
+      "title": "",
+      "topics": [
+        "linked_list",
+        "binary_search",
+        "dp",
+        "backtrack",
+        "math",
+        "trie",
+        "heap",
+        "sequences",
+        "bit",
+        "tree",
+        "graph",
+        "string",
+        "greedy",
+        "shape",
+        "num_methods"
+      ],
+      "count": 881
+    },
+    {
+      "title": "2",
+      "topics": [
+        "binary_search",
+        "dp",
+        "backtrack",
+        "math",
+        "sequences",
+        "tree",
+        "graph",
+        "string",
+        "greedy",
+        "shape",
+        "num_methods"
+      ],
+      "count": 56
+    },
+    {
+      "title": "3",
+      "topics": [
+        "dp",
+        "backtrack",
+        "heap",
+        "sequences",
+        "string",
+        "graph",
+        "greedy",
+        "shape",
+        "num_methods"
+      ],
+      "count": 16
+    },
+    {
+      "title": "word search ii",
+      "topics": [
+        "backtrack",
+        "math",
+        "trie",
+        "tree",
+        "graph",
+        "string",
+        "linear_algebra",
+        "shape"
+      ],
+      "count": 8
+    },
+    {
+      "title": "fixed prefix permutations",
+      "topics": [
+        "binary_search",
+        "backtrack",
+        "math",
+        "trie",
+        "bit",
+        "string",
+        "sequences"
+      ],
+      "count": 7
+    },
+    {
+      "title": "5",
+      "topics": [
+        "dp",
+        "backtrack",
+        "math",
+        "sequences",
+        "greedy",
+        "shape",
+        "num_methods"
+      ],
+      "count": 11
+    },
+    {
+      "title": "minimum number of valid strings to form target i",
+      "topics": [
+        "dp",
+        "binary_search",
+        "trie",
+        "string",
+        "sequences",
+        "advanced_tree"
+      ],
+      "count": 6
+    },
+    {
+      "title": "maximum subarray sum",
+      "topics": [
+        "binary_search",
+        "scheduling",
+        "math",
+        "sliding_window",
+        "sequences",
+        "num_methods"
+      ],
+      "count": 19
+    },
+    {
+      "title": "triangle",
+      "topics": [
+        "geometry",
+        "binary_search",
+        "dp",
+        "math",
+        "combinatorics",
+        "shape"
+      ],
+      "count": 23
+    },
+    {
+      "title": "matrix",
+      "topics": [
+        "math",
+        "graph",
+        "combinatorics",
+        "linear_algebra",
+        "shape",
+        "advanced_tree"
+      ],
+      "count": 11
+    },
+    {
+      "title": "word search",
+      "topics": [
+        "backtrack",
+        "math",
+        "graph",
+        "string",
+        "linear_algebra",
+        "shape"
+      ],
+      "count": 7
+    },
+    {
+      "title": "maximum subarray",
+      "topics": [
+        "dp",
+        "math",
+        "miscellaneous",
+        "sequences",
+        "string",
+        "greedy"
+      ],
+      "count": 7
+    },
+    {
+      "title": "0",
+      "topics": [
+        "binary_search",
+        "backtrack",
+        "math",
+        "sequences",
+        "greedy",
+        "num_methods"
+      ],
+      "count": 9
+    },
+    {
+      "title": "path with minimum effort",
+      "topics": [
+        "binary_search",
+        "heap",
+        "graph",
+        "linear_algebra",
+        "greedy",
+        "shape"
+      ],
+      "count": 6
+    },
+    {
+      "title": "1",
+      "topics": [
+        "dp",
+        "backtrack",
+        "tree",
+        "graph",
+        "sequences",
+        "shape"
+      ],
+      "count": 15
+    },
+    {
+      "title": "search suggestions system",
+      "topics": [
+        "binary_search",
+        "trie",
+        "tree",
+        "string",
+        "heap"
+      ],
+      "count": 6
+    },
+    {
+      "title": "xor queries of a subarray",
+      "topics": [
+        "math",
+        "trie",
+        "bit",
+        "linear_algebra",
+        "sequences"
+      ],
+      "count": 5
+    },
+    {
+      "title": "maximum xor subarray",
+      "topics": [
+        "binary_search",
+        "math",
+        "trie",
+        "bit",
+        "sequences"
+      ],
+      "count": 7
+    },
+    {
+      "title": "maximum white tiles covered by a carpet",
+      "topics": [
+        "binary_search",
+        "scheduling",
+        "trie",
+        "sliding_window",
+        "sequences"
+      ],
+      "count": 6
+    },
+    {
+      "title": "maximum strong pair xor ii",
+      "topics": [
+        "binary_search",
+        "trie",
+        "sliding_window",
+        "bit",
+        "linear_algebra"
+      ],
+      "count": 5
+    },
+    {
+      "title": "kuro and gcd and xor and sum",
+      "topics": [
+        "binary_search",
+        "math",
+        "trie",
+        "bit",
+        "sequences"
+      ],
+      "count": 5
+    },
+    {
+      "title": "xor matrix",
+      "topics": [
+        "math",
+        "trie",
+        "bit",
+        "shape",
+        "advanced_tree"
+      ],
+      "count": 6
+    },
+    {
+      "title": "xor and triangle",
+      "topics": [
+        "geometry",
+        "math",
+        "trie",
+        "bit",
+        "shape"
+      ],
+      "count": 6
+    },
+    {
+      "title": "xor tree",
+      "topics": [
+        "binary_search",
+        "math",
+        "trie",
+        "bit",
+        "tree"
+      ],
+      "count": 7
+    },
+    {
+      "title": "number of matching subsequences",
+      "topics": [
+        "dp",
+        "binary_search",
+        "trie",
+        "miscellaneous",
+        "string"
+      ],
+      "count": 6
+    },
+    {
+      "title": "gray code",
+      "topics": [
+        "backtrack",
+        "math",
+        "bit",
+        "combinatorics",
+        "linear_algebra"
+      ],
+      "count": 7
+    },
+    {
+      "title": "maximum number of visible points",
+      "topics": [
+        "geometry",
+        "binary_search",
+        "math",
+        "sliding_window",
+        "shape"
+      ],
+      "count": 5
+    },
+    {
+      "title": "find the count of monotonic pairs ii",
+      "topics": [
+        "dp",
+        "math",
+        "sequences",
+        "combinatorics",
+        "greedy"
+      ],
+      "count": 5
+    },
+    {
+      "title": "count number of balanced permutations",
+      "topics": [
+        "linked_list",
+        "dp",
+        "math",
+        "string",
+        "combinatorics"
+      ],
+      "count": 5
+    },
+    {
+      "title": "two arrays",
+      "topics": [
+        "binary_search",
+        "math",
+        "bit",
+        "string",
+        "greedy"
+      ],
+      "count": 14
+    },
+    {
+      "title": "inverse minimum partition easy version",
+      "topics": [
+        "geometry",
+        "binary_search",
+        "math",
+        "shape",
+        "num_methods"
+      ],
+      "count": 5
+    },
+    {
+      "title": "game with triangles",
+      "topics": [
+        "geometry",
+        "binary_search",
+        "math",
+        "shape",
+        "num_methods"
+      ],
+      "count": 5
+    },
+    {
+      "title": "fenwick tree",
+      "topics": [
+        "math",
+        "bit",
+        "tree",
+        "sequences",
+        "advanced_tree"
+      ],
+      "count": 10
+    },
+    {
+      "title": "chain reaction",
+      "topics": [
+        "geometry",
+        "binary_search",
+        "math",
+        "shape",
+        "advanced_tree"
+      ],
+      "count": 7
+    },
+    {
+      "title": "maximum sum",
+      "topics": [
+        "dp",
+        "math",
+        "sliding_window",
+        "tree",
+        "advanced_tree"
+      ],
+      "count": 7
+    },
+    {
+      "title": "points on plane",
+      "topics": [
+        "geometry",
+        "binary_search",
+        "math",
+        "shape",
+        "num_methods"
+      ],
+      "count": 6
+    },
+    {
+      "title": "shortest path",
+      "topics": [
+        "geometry",
+        "math",
+        "graph",
+        "heap",
+        "shape"
+      ],
+      "count": 7
+    },
+    {
+      "title": "omkar and akmar",
+      "topics": [
+        "geometry",
+        "backtrack",
+        "math",
+        "string",
+        "shape"
+      ],
+      "count": 5
+    },
+    {
+      "title": "prison break",
+      "topics": [
+        "geometry",
+        "binary_search",
+        "math",
+        "graph",
+        "shape"
+      ],
+      "count": 7
+    },
+    {
+      "title": "fence",
+      "topics": [
+        "geometry",
+        "binary_search",
+        "math",
+        "string",
+        "shape"
+      ],
+      "count": 7
+    },
+    {
+      "title": "simple polygon embedding",
+      "topics": [
+        "geometry",
+        "binary_search",
+        "math",
+        "shape",
+        "num_methods"
+      ],
+      "count": 6
+    },
+    {
+      "title": "rectangles",
+      "topics": [
+        "geometry",
+        "binary_search",
+        "math",
+        "shape",
+        "advanced_tree"
+      ],
+      "count": 13
+    },
+    {
+      "title": "permutations",
+      "topics": [
+        "backtrack",
+        "math",
+        "bit",
+        "tree",
+        "combinatorics"
+      ],
+      "count": 19
+    },
+    {
+      "title": "chip n dale rescue rangers",
+      "topics": [
+        "geometry",
+        "binary_search",
+        "math",
+        "sequences",
+        "shape"
+      ],
+      "count": 5
+    },
+    {
+      "title": "permutation",
+      "topics": [
+        "backtrack",
+        "math",
+        "string",
+        "combinatorics",
+        "advanced_tree"
+      ],
+      "count": 11
+    },
+    {
+      "title": "friends",
+      "topics": [
+        "binary_search",
+        "math",
+        "bit",
+        "tree",
+        "advanced_tree"
+      ],
+      "count": 8
+    },
+    {
+      "title": "rotation",
+      "topics": [
+        "geometry",
+        "binary_search",
+        "math",
+        "string",
+        "shape"
+      ],
+      "count": 6
+    },
+    {
+      "title": "01 matrix",
+      "topics": [
+        "dp",
+        "math",
+        "graph",
+        "linear_algebra",
+        "shape"
+      ],
+      "count": 6
+    },
+    {
+      "title": "fibonacci numbers",
+      "topics": [
+        "dp",
+        "backtrack",
+        "math",
+        "linear_algebra",
+        "num_methods"
+      ],
+      "count": 9
+    },
+    {
+      "title": "counting bits",
+      "topics": [
+        "dp",
+        "binary_search",
+        "math",
+        "bit",
+        "combinatorics"
+      ],
+      "count": 8
+    },
+    {
+      "title": "traffic lights",
+      "topics": [
+        "linked_list",
+        "binary_search",
+        "math",
+        "greedy",
+        "advanced_tree"
+      ],
+      "count": 5
+    },
+    {
+      "title": "nim",
+      "topics": [
+        "dp",
+        "game_theory",
+        "math",
+        "bit",
+        "graph"
+      ],
+      "count": 7
+    },
+    {
+      "title": "course schedule iii",
+      "topics": [
+        "scheduling",
+        "math",
+        "heap",
+        "graph",
+        "greedy"
+      ],
+      "count": 6
+    },
+    {
+      "title": "looking for owls",
+      "topics": [
+        "geometry",
+        "binary_search",
+        "math",
+        "string",
+        "shape"
+      ],
+      "count": 5
+    },
+    {
+      "title": "summer earnings",
+      "topics": [
+        "geometry",
+        "binary_search",
+        "math",
+        "bit",
+        "shape"
+      ],
+      "count": 5
+    },
+    {
+      "title": "count complete tree nodes",
+      "topics": [
+        "linked_list",
+        "binary_search",
+        "math",
+        "bit",
+        "tree"
+      ],
+      "count": 5
+    },
+    {
+      "title": "stickers to spell word",
+      "topics": [
+        "dp",
+        "backtrack",
+        "math",
+        "bit",
+        "string"
+      ],
+      "count": 5
+    },
+    {
+      "title": "shortest path visiting all nodes",
+      "topics": [
+        "dp",
+        "math",
+        "miscellaneous",
+        "bit",
+        "graph"
+      ],
+      "count": 5
+    },
+    {
+      "title": "shortest path to get all keys",
+      "topics": [
+        "math",
+        "bit",
+        "graph",
+        "heap",
+        "shape"
+      ],
+      "count": 5
+    },
+    {
+      "title": "unique paths iii",
+      "topics": [
+        "backtrack",
+        "math",
+        "bit",
+        "graph",
+        "shape"
+      ],
+      "count": 5
+    },
+    {
+      "title": "maximum length of a concatenated string with unique characters",
+      "topics": [
+        "backtrack",
+        "math",
+        "bit",
+        "string",
+        "linear_algebra"
+      ],
+      "count": 5
+    },
+    {
+      "title": "maximum score words formed by letters",
+      "topics": [
+        "dp",
+        "backtrack",
+        "math",
+        "bit",
+        "string"
+      ],
+      "count": 5
+    },
+    {
+      "title": "range sum query 2d mutable",
+      "topics": [
+        "math",
+        "tree",
+        "sequences",
+        "shape",
+        "advanced_tree"
+      ],
+      "count": 5
+    },
+    {
+      "title": "longest increasing path in a matrix",
+      "topics": [
+        "dp",
+        "math",
+        "graph",
+        "linear_algebra",
+        "shape"
+      ],
+      "count": 5
+    },
+    {
+      "title": "the maze iii",
+      "topics": [
+        "math",
+        "graph",
+        "string",
+        "heap",
+        "shape"
+      ],
+      "count": 5
+    },
+    {
+      "title": "sliding puzzle",
+      "topics": [
+        "dp",
+        "backtrack",
+        "math",
+        "miscellaneous",
+        "shape"
+      ],
+      "count": 5
+    },
+    {
+      "title": "swim in rising water",
+      "topics": [
+        "binary_search",
+        "math",
+        "graph",
+        "heap",
+        "shape"
+      ],
+      "count": 5
+    },
+    {
+      "title": "word ladder",
+      "topics": [
+        "binary_search",
+        "backtrack",
+        "math",
+        "string",
+        "graph"
+      ],
+      "count": 6
+    },
+    {
+      "title": "1730c minimum notation",
+      "topics": [
+        "linked_list",
+        "dp",
+        "miscellaneous",
+        "sliding_window",
+        "linear_algebra"
+      ],
+      "count": 5
+    },
+    {
+      "title": "find kth largest xor coordinate value",
+      "topics": [
+        "bit",
+        "sequences",
+        "linear_algebra",
+        "heap",
+        "shape"
+      ],
+      "count": 5
+    },
+    {
+      "title": "1205 palindromic numbers",
+      "topics": [
+        "binary_search",
+        "game_theory",
+        "dp",
+        "combinatorics",
+        "linear_algebra"
+      ],
+      "count": 5
+    },
+    {
+      "title": "f erase subarrays",
+      "topics": [
+        "dp",
+        "sliding_window",
+        "bit",
+        "linear_algebra",
+        "advanced_tree"
+      ],
+      "count": 6
+    },
+    {
+      "title": "movie festival ii",
+      "topics": [
+        "linked_list",
+        "binary_search",
+        "scheduling",
+        "heap",
+        "greedy"
+      ],
+      "count": 5
+    },
+    {
+      "title": "room allocation",
+      "topics": [
+        "linked_list",
+        "binary_search",
+        "scheduling",
+        "heap",
+        "greedy"
+      ],
+      "count": 5
+    },
+    {
+      "title": "longest nice subarray",
+      "topics": [
+        "binary_search",
+        "sliding_window",
+        "bit",
+        "heap",
+        "greedy"
+      ],
+      "count": 5
+    },
+    {
+      "title": "maximum number of robots within budget",
+      "topics": [
+        "binary_search",
+        "sliding_window",
+        "bit",
+        "sequences",
+        "heap"
+      ],
+      "count": 5
+    },
+    {
+      "title": "minimum number of valid strings to form target ii",
+      "topics": [
+        "dp",
+        "binary_search",
+        "string",
+        "sequences",
+        "advanced_tree"
+      ],
+      "count": 5
+    },
+    {
+      "title": "minimum sum of values by dividing array",
+      "topics": [
+        "binary_search",
+        "dp",
+        "sequences",
+        "greedy",
+        "advanced_tree"
+      ],
+      "count": 5
+    },
+    {
+      "title": "maximum building i",
+      "topics": [
+        "linked_list",
+        "binary_search",
+        "sequences",
+        "greedy",
+        "advanced_tree"
+      ],
+      "count": 5
+    },
+    {
+      "title": "minimum time to visit a cell in a grid",
+      "topics": [
+        "binary_search",
+        "bit",
+        "graph",
+        "heap",
+        "shape"
+      ],
+      "count": 5
+    },
+    {
+      "title": "large",
+      "topics": [
+        "dp",
+        "binary_search",
+        "tree",
+        "string",
+        "graph"
+      ],
+      "count": 11
+    },
+    {
+      "title": "jump game vii",
+      "topics": [
+        "dp",
+        "sliding_window",
+        "sequences",
+        "string",
+        "greedy"
+      ],
+      "count": 5
+    },
+    {
+      "title": "range frequency queries",
+      "topics": [
+        "trie",
+        "sequences",
+        "binary_search",
+        "advanced_tree"
+      ],
+      "count": 4
+    },
+    {
+      "title": "sum of prefix scores of strings",
+      "topics": [
+        "trie",
+        "tree",
+        "binary_search",
+        "string"
+      ],
+      "count": 4
+    },
+    {
+      "title": "word break",
+      "topics": [
+        "trie",
+        "backtrack",
+        "dp",
+        "string"
+      ],
+      "count": 6
+    },
+    {
+      "title": "word break ii",
+      "topics": [
+        "trie",
+        "backtrack",
+        "dp",
+        "string"
+      ],
+      "count": 4
+    },
+    {
+      "title": "maximum xor of two numbers in an array",
+      "topics": [
+        "trie",
+        "bit",
+        "tree",
+        "math"
+      ],
+      "count": 5
+    },
+    {
+      "title": "count triplets that can form two arrays of equal xor",
+      "topics": [
+        "trie",
+        "sequences",
+        "bit",
+        "math"
+      ],
+      "count": 4
+    },
+    {
+      "title": "number of valid words for each puzzle",
+      "topics": [
+        "trie",
+        "bit",
+        "string",
+        "math"
+      ],
+      "count": 4
+    },
+    {
+      "title": "count sorted vowel strings",
+      "topics": [
+        "trie",
+        "combinatorics",
+        "dp",
+        "math"
+      ],
+      "count": 4
+    },
+    {
+      "title": "d unique username",
+      "topics": [
+        "trie",
+        "bit",
+        "dp",
+        "linked_list"
+      ],
+      "count": 4
+    },
+    {
+      "title": "minimum operations to make a univalue grid",
+      "topics": [
+        "trie",
+        "shape",
+        "binary_search",
+        "math"
+      ],
+      "count": 4
+    },
+    {
+      "title": "trie insert and search",
+      "topics": [
+        "trie",
+        "heap",
+        "backtrack",
+        "tree"
+      ],
+      "count": 4
+    },
+    {
+      "title": "minimal string xoration",
+      "topics": [
+        "trie",
+        "sequences",
+        "bit",
+        "advanced_tree"
+      ],
+      "count": 4
+    },
+    {
+      "title": "xor of median hard version",
+      "topics": [
+        "trie",
+        "heap",
+        "bit",
+        "math"
+      ],
+      "count": 4
+    },
+    {
+      "title": "xor of median easy version",
+      "topics": [
+        "trie",
+        "heap",
+        "bit",
+        "math"
+      ],
+      "count": 4
+    },
+    {
+      "title": "prime xor coloring",
+      "topics": [
+        "trie",
+        "heap",
+        "bit",
+        "math"
+      ],
+      "count": 4
+    },
+    {
+      "title": "xor triangle",
+      "topics": [
+        "trie",
+        "bit",
+        "shape",
+        "math"
+      ],
+      "count": 4
+    },
+    {
+      "title": "keep xor low",
+      "topics": [
+        "trie",
+        "advanced_tree",
+        "bit",
+        "math"
+      ],
+      "count": 4
+    },
+    {
+      "title": "xor on segment",
+      "topics": [
+        "trie",
+        "sequences",
+        "bit",
+        "advanced_tree"
+      ],
+      "count": 4
+    }
+  ],
+  "title_variants": {
+    "d - game": [
+      "ABC 206 D - Game",
+      "ABC 209 D - Game",
+      "ABC 215 D - Game",
+      "ARC 105 D - Game",
+      "ARC 116 D - Game"
+    ],
+    "integer to roman": [
+      "12. Integer to Roman",
+      "418. Integer to Roman",
+      "Integer To Roman",
+      "Integer to Roman"
+    ],
+    "roman to integer": [
+      "13. Roman to Integer",
+      "419. Roman to Integer",
+      "Roman To Integer",
+      "Roman to Integer"
+    ],
+    "random point in non-overlapping rectangles": [
+      "0914. Random Point in Non-overlapping Rectangles",
+      "497. Random Point in Non-overlapping Rectangles",
+      "914. Random Point in Non-overlapping Rectangles",
+      "Random Point in Non-overlapping Rectangles"
+    ],
+    "random pick with weight": [
+      "0912. Random Pick with Weight",
+      "528. Random Pick with Weight",
+      "912. Random Pick with Weight",
+      "Random Pick with Weight"
+    ],
+    "stone game": [
+      "260. Stone Game",
+      "877. Stone Game",
+      "909. Stone Game",
+      "Stone Game"
+    ],
+    "powers of two": [
+      "686. Powers of Two",
+      "Powers Of Two",
+      "Powers of Two",
+      "Powers of two"
+    ],
+    "grid game": [
+      "2017. Grid Game",
+      "2145. Grid Game",
+      "Grid Game",
+      "Grid game"
+    ],
+    "longest common subsequence": [
+      "1143. Longest Common Subsequence",
+      "1250. Longest Common Subsequence",
+      "762. Longest Common Subsequence",
+      "Longest Common Subsequence"
+    ],
+    "count and say": [
+      "38. Count and Say",
+      "420. Count and Say",
+      "Count And Say",
+      "Count and Say"
+    ],
+    "swap nodes in pairs": [
+      "24. Swap Nodes in Pairs",
+      "451. Swap Nodes in Pairs",
+      "Swap Nodes in Pairs",
+      "Swap nodes in pairs"
+    ],
+    "longest palindrome": [
+      "409. Longest Palindrome",
+      "627. Longest Palindrome",
+      "Longest Palindrome",
+      "Longest palindrome"
+    ],
+    "transpose matrix": [
+      "867. Transpose Matrix",
+      "898. Transpose Matrix",
+      "Transpose Matrix",
+      "Transpose matrix"
+    ],
+    "longest substring without repeating characters": [
+      "3. Longest Substring Without Repeating Characters",
+      "384. Longest Substring Without Repeating Characters",
+      "Longest Substring Without Repeating Characters",
+      "Longest substring without repeating characters"
+    ],
+    "merge k sorted lists": [
+      "23. Merge k Sorted Lists",
+      "Merge K Sorted Lists",
+      "Merge K sorted lists",
+      "Merge k Sorted Lists"
+    ],
+    "minimum sum of values by dividing array": [
+      "3117. Minimum Sum of Values by Dividing Array",
+      "3132. Minimum Sum of Values by Dividing Array",
+      "3364. Minimum Sum of Values by Dividing Array",
+      "Minimum Sum of Values by Dividing Array"
+    ],
+    "shortest subarray with sum at least k": [
+      "0892. Shortest Subarray with Sum at Least K",
+      "862. Shortest Subarray with Sum at Least K",
+      "892. Shortest Subarray with Sum at Least K",
+      "Shortest Subarray with Sum at Least K"
+    ],
+    "minimum time to visit a cell in a grid": [
+      "2577. Minimum Time to Visit a Cell In a Grid",
+      "2711. Minimum Time to Visit a Cell In a Grid",
+      "3386. Minimum Time to Visit a Cell in a Grid",
+      "Minimum Time to Visit a Cell in a Grid"
+    ],
+    "range frequency queries": [
+      "1294. Range Frequency Queries",
+      "2080. Range Frequency Queries",
+      "Range Frequency Queries"
+    ],
+    "longest common prefix": [
+      "14. Longest Common Prefix",
+      "Longest Common Prefix",
+      "Longest common prefix"
+    ],
+    "sum of prefix scores of strings": [
+      "2416. Sum of Prefix Scores of Strings",
+      "2494. Sum of Prefix Scores of Strings",
+      "Sum of Prefix Scores of Strings"
+    ],
+    "longest common suffix queries": [
+      "3093. Longest Common Suffix Queries",
+      "3376. Longest Common Suffix Queries",
+      "Longest Common Suffix Queries"
+    ],
+    "prefix and suffix search": [
+      "745. Prefix and Suffix Search",
+      "746. Prefix and Suffix Search",
+      "Prefix and Suffix Search"
+    ],
+    "search suggestions system": [
+      "1268. Search Suggestions System",
+      "1397. Search Suggestions System",
+      "Search Suggestions System"
+    ],
+    "delete duplicate folders in system": [
+      "1948. Delete Duplicate Folders in System",
+      "2079. Delete Duplicate Folders in System",
+      "Delete Duplicate Folders in System"
+    ],
+    "xor queries of a subarray": [
+      "1310. XOR Queries of a Subarray",
+      "1435. XOR Queries of a Subarray",
+      "XOR Queries of a Subarray"
+    ],
+    "palindrome pairs": [
+      "336. Palindrome Pairs",
+      "Palindrome Pairs",
+      "Palindrome pairs"
+    ],
+    "short encoding of words": [
+      "820. Short Encoding of Words",
+      "839. Short Encoding of Words",
+      "Short Encoding of Words"
+    ],
+    "number of valid words for each puzzle": [
+      "1178. Number of Valid Words for Each Puzzle",
+      "1282. Number of Valid Words for Each Puzzle",
+      "Number of Valid Words for Each Puzzle"
+    ],
+    "encrypt and decrypt strings": [
+      "1433. Encrypt and Decrypt Strings",
+      "2227. Encrypt and Decrypt Strings",
+      "Encrypt and Decrypt Strings"
+    ],
+    "k divisible elements subarrays": [
+      "2261. K Divisible Elements Subarrays",
+      "2339. K Divisible Elements Subarrays",
+      "K Divisible Elements Subarrays"
+    ],
+    "maximum white tiles covered by a carpet": [
+      "2271. Maximum White Tiles Covered by a Carpet",
+      "2359. Maximum White Tiles Covered by a Carpet",
+      "Maximum White Tiles Covered by a Carpet"
+    ],
+    "xor sequence": [
+      "XOR Sequence",
+      "Xor Sequence",
+      "Xor sequence"
+    ],
+    "minimum operations to make a uni-value grid": [
+      "2033. Minimum Operations to Make a Uni-Value Grid",
+      "2160. Minimum Operations to Make a Uni-Value Grid",
+      "Minimum Operations to Make a Uni-Value Grid"
+    ],
+    "maximum strong pair xor ii": [
+      "2935. Maximum Strong Pair XOR II",
+      "3197. Maximum Strong Pair XOR II",
+      "Maximum Strong Pair XOR II"
+    ],
+    "number of matching subsequences": [
+      "792. Number of Matching Subsequences",
+      "808. Number of Matching Subsequences",
+      "Number of Matching Subsequences"
+    ],
+    "minimum number of valid strings to form target i": [
+      "3291. Minimum Number of Valid Strings to Form Target I",
+      "3559. Minimum Number of Valid Strings to Form Target I",
+      "Minimum Number of Valid Strings to Form Target I"
+    ],
+    "reverse integer": [
+      "413. Reverse Integer",
+      "7. Reverse Integer",
+      "Reverse Integer"
+    ],
+    "palindrome number": [
+      "491. Palindrome Number",
+      "9. Palindrome Number",
+      "Palindrome Number"
+    ],
+    "divide two integers": [
+      "29. Divide Two Integers",
+      "414. Divide Two Integers",
+      "Divide Two Integers"
+    ],
+    "sqrt(x)": [
+      "69. Sqrt(x)",
+      "720. Sqrt(x)",
+      "Sqrt(x)"
+    ],
+    "gray code": [
+      "411. Gray Code",
+      "89. Gray Code",
+      "Gray Code"
+    ],
+    "unique binary search trees": [
+      "163. Unique Binary Search Trees",
+      "96. Unique Binary Search Trees",
+      "Unique Binary Search Trees"
+    ],
+    "rectangle area": [
+      "223. Rectangle Area",
+      "454. Rectangle Area",
+      "Rectangle Area"
+    ],
+    "power of two": [
+      "231. Power of Two",
+      "Power of Two",
+      "Power of two"
+    ],
+    "missing number": [
+      "196. Missing Number",
+      "268. Missing Number",
+      "Missing Number"
+    ],
+    "super ugly number": [
+      "313. Super Ugly Number",
+      "739. Super Ugly Number",
+      "Super Ugly Number"
+    ],
+    "fizz buzz": [
+      "412. Fizz Buzz",
+      "9. Fizz Buzz",
+      "Fizz Buzz"
+    ],
+    "generate random point in a circle": [
+      "478. Generate Random Point in a Circle",
+      "915. Generate Random Point in a Circle",
+      "Generate Random Point in a Circle"
+    ],
+    "fibonacci number": [
+      "1013. Fibonacci Number",
+      "509. Fibonacci Number",
+      "Fibonacci Number"
+    ],
+    "sum of square numbers": [
+      "633. Sum of Square Numbers",
+      "697. Sum of Square Numbers",
+      "Sum of Square Numbers"
+    ],
+    "random pick with blacklist": [
+      "710. Random Pick with Blacklist",
+      "894. Random Pick with Blacklist",
+      "Random Pick with Blacklist"
+    ],
+    "super egg drop": [
+      "887. Super Egg Drop",
+      "923. Super Egg Drop",
+      "Super Egg Drop"
+    ],
+    "numbers at most n given digit set": [
+      "902. Numbers At Most N Given Digit Set",
+      "938. Numbers At Most N Given Digit Set",
+      "Numbers At Most N Given Digit Set"
+    ],
+    "cat and mouse": [
+      "913. Cat and Mouse",
+      "949. Cat and Mouse",
+      "Cat and Mouse"
+    ],
+    "largest perimeter triangle": [
+      "1018. Largest Perimeter Triangle",
+      "976. Largest Perimeter Triangle",
+      "Largest Perimeter Triangle"
+    ],
+    "divisor game": [
+      "1025. Divisor Game",
+      "1086. Divisor Game",
+      "550. Divisor Game"
+    ],
+    "stone game ii": [
+      "1140. Stone Game II",
+      "1240. Stone Game II",
+      "325. Stone Game II"
+    ],
+    "stone game iii": [
+      "1406. Stone Game III",
+      "1522. Stone Game III",
+      "366. Stone Game III"
+    ],
+    "stone game iv": [
+      "1510. Stone Game IV",
+      "1617. Stone Game IV",
+      "870. Stone Game IV"
+    ],
+    "number of ways to reorder array to get same bst": [
+      "1569. Number of Ways to Reorder Array to Get Same BST",
+      "1692. Number of Ways to Reorder Array to Get Same BST",
+      "Number of Ways to Reorder Array to Get Same BST"
+    ],
+    "maximum number of visible points": [
+      "1610. Maximum Number of Visible Points",
+      "1733. Maximum Number of Visible Points",
+      "Maximum Number of Visible Points"
+    ],
+    "sell diminishing-valued colored balls": [
+      "1648. Sell Diminishing-Valued Colored Balls",
+      "1771. Sell Diminishing-Valued Colored Balls",
+      "Sell Diminishing-Valued Colored Balls"
+    ],
+    "largest odd number in string": [
+      "1903. Largest Odd Number in String",
+      "2032. Largest Odd Number in String",
+      "Largest odd number in string"
+    ],
+    "game of nim": [
+      "1908. Game of Nim",
+      "2062. Game of Nim",
+      "Game of Nim"
+    ],
+    "count ways to build rooms in an ant colony": [
+      "1313. Count Ways to Build Rooms in an Ant Colony",
+      "1916. Count Ways to Build Rooms in an Ant Colony",
+      "Count Ways to Build Rooms in an Ant Colony"
+    ],
+    "subtree removal game with fibonacci tree": [
+      "2005. Subtree Removal Game with Fibonacci Tree",
+      "2153. Subtree Removal Game with Fibonacci Tree",
+      "Subtree Removal Game with Fibonacci Tree"
+    ],
+    "detonate the maximum bombs": [
+      "2101. Detonate the Maximum Bombs",
+      "2206. Detonate the Maximum Bombs",
+      "Detonate the Maximum Bombs"
+    ],
+    "maximum xor after operations": [
+      "2317. Maximum XOR After Operations",
+      "2402. Maximum XOR After Operations",
+      "Maximum XOR After Operations"
+    ],
+    "minimum addition to make integer beautiful": [
+      "2457. Minimum Addition to Make Integer Beautiful",
+      "2544. Minimum Addition to Make Integer Beautiful",
+      "Minimum Addition to Make Integer Beautiful"
+    ],
+    "minimize the maximum of two arrays": [
+      "2513. Minimize the Maximum of Two Arrays",
+      "2628. Minimize the Maximum of Two Arrays",
+      "Minimize the Maximum of Two Arrays"
+    ],
+    "prime subtraction operation": [
+      "2601. Prime Subtraction Operation",
+      "2716. Prime Subtraction Operation",
+      "Prime Subtraction Operation"
+    ],
+    "power of heroes": [
+      "2681. Power of Heroes",
+      "2784. Power of Heroes",
+      "Power of Heroes"
+    ],
+    "maximum number of groups with increasing length": [
+      "2790. Maximum Number of Groups With Increasing Length",
+      "2919. Maximum Number of Groups With Increasing Length",
+      "Maximum Number of Groups With Increasing Length"
+    ],
+    "string transformation": [
+      "2851. String Transformation",
+      "3024. String Transformation",
+      "String Transformation"
+    ],
+    "count valid paths in a tree": [
+      "2867. Count Valid Paths in a Tree",
+      "3112. Count Valid Paths in a Tree",
+      "Count Valid Paths in a Tree"
+    ],
+    "minimum cost to make array equalindromic": [
+      "2967. Minimum Cost to Make Array Equalindromic",
+      "3229. Minimum Cost to Make Array Equalindromic",
+      "Minimum Cost to Make Array Equalindromic"
+    ],
+    "count the number of powerful integers": [
+      "2999. Count the Number of Powerful Integers",
+      "3243. Count the Number of Powerful Integers",
+      "Count the Number of Powerful Integers"
+    ],
+    "maximum number that sum of the prices is less than or equal to k": [
+      "3007. Maximum Number That Sum of the Prices Is Less Than or Equal to K",
+      "3240. Maximum Number That Sum of the Prices Is Less Than or Equal to K",
+      "Maximum Number That Sum of the Prices Is Less Than or Equal to K"
+    ],
+    "number of ways to assign edge weights ii": [
+      "3559. Number of Ways to Assign Edge Weights II",
+      "3842. Number of Ways to Assign Edge Weights II",
+      "Number of Ways to Assign Edge Weights II"
+    ],
+    "triangle": [
+      "120. Triangle",
+      "TRIANGLE",
+      "Triangle"
+    ],
+    "largest prime factor": [
+      "3. Largest Prime Factor",
+      "Largest Prime Factor",
+      "Largest prime factor"
+    ],
+    "container with most water": [
+      "11. Container With Most Water",
+      "383. Container With Most Water",
+      "Container With Most Water"
+    ],
+    "roman numerals": [
+      "89. Roman Numerals",
+      "Roman Numerals",
+      "Roman numerals"
+    ],
+    "snakes and ladders": [
+      "909. Snakes and Ladders",
+      "945. Snakes and Ladders",
+      "Snakes and Ladders"
+    ],
+    "matrix": [
+      "MATRIX",
+      "Matrix",
+      "matrix"
+    ],
+    "rotate string": [
+      "8. Rotate String",
+      "812. Rotate String",
+      "Rotate String"
+    ],
+    "reverse nodes in k-group": [
+      "25. Reverse Nodes in k-Group",
+      "450. Reverse Nodes in k-Group",
+      "Reverse Nodes in k-Group"
+    ],
+    "flatten binary tree to linked list": [
+      "114. Flatten Binary Tree to Linked List",
+      "453. Flatten Binary Tree to Linked List",
+      "Flatten Binary Tree to Linked List"
+    ],
+    "binary tree paths": [
+      "257. Binary Tree Paths",
+      "480. Binary Tree Paths",
+      "Binary Tree Paths"
+    ],
+    "house robber iii": [
+      "337. House Robber III",
+      "535. House Robber III",
+      "House Robber III"
+    ],
+    "walls and gates": [
+      "286. Walls and Gates",
+      "663. Walls and Gates",
+      "Walls and Gates"
+    ],
+    "coin change": [
+      "322. Coin Change",
+      "669. Coin Change",
+      "Coin Change"
+    ],
+    "decode ways": [
+      "676. Decode Ways",
+      "91. Decode Ways",
+      "Decode Ways"
+    ],
+    "binary watch": [
+      "401. Binary Watch",
+      "694. Binary Watch",
+      "Binary Watch"
+    ],
+    "course schedule iii": [
+      "630. Course Schedule III",
+      "696. Course Schedule III",
+      "Course Schedule III"
+    ],
+    "palindromic substrings": [
+      "647. Palindromic Substrings",
+      "745. Palindromic Substrings",
+      "Palindromic Substrings"
+    ],
+    "kth smallest element in bst": [
+      "748. Kth Smallest Element in BST",
+      "Kth Smallest Element in BST",
+      "Kth smallest element in BST"
+    ],
+    "house robber": [
+      "198. House Robber",
+      "749. House Robber",
+      "House Robber"
+    ],
+    "bulls and cows": [
+      "299. Bulls and Cows",
+      "750. Bulls and Cows",
+      "Bulls and Cows"
+    ]
+  }
+}

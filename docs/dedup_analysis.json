@@ -1,0 +1,3880 @@
+{
+  "total_problems": 38586,
+  "total_csvs": 23,
+  "cross_platform_by_url": 1,
+  "same_problem_different_name": 3913,
+  "cross_topic_entries": 7809,
+  "solution_pattern_groups": {
+    "segment_tree": 3963,
+    "binary_search": 1368,
+    "dfs": 1334,
+    "tree_dp": 734,
+    "bfs": 649,
+    "lis": 493,
+    "two_sum": 467,
+    "sliding_window": 380,
+    "mst": 342,
+    "trie": 326,
+    "union_find": 246,
+    "dp_1d": 212,
+    "topological_sort": 207,
+    "knapsack": 169,
+    "fibonacci": 113,
+    "gcd": 99,
+    "dijkstra": 87,
+    "lcs": 17,
+    "bitmask": 2
+  },
+  "cross_platform_details": [
+    {
+      "url": "lightoj.com/problem/lcs-revisited",
+      "names": [
+        "1157 - LCS Revisited",
+        "LCS Revisited (1157)"
+      ],
+      "platforms": [
+        "LightOJ",
+        "UVa"
+      ],
+      "topics": [
+        "dp",
+        "string"
+      ]
+    }
+  ],
+  "different_name_details": [
+    [
+      "queue-reconstruction-by-height",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "406. Queue Reconstruction by Height",
+          "https://leetcode.com/problems/queue-reconstruction-by-height/",
+          "Medium",
+          "Array Binary Indexed Tree Segment Tree Sorting"
+        ],
+        [
+          "greedy",
+          "LeetCode",
+          "Array Greedy",
+          "406. Queue Reconstruction by Height",
+          "https://leetcode.com/problems/queue-reconstruction-by-height/",
+          "Medium",
+          "Sort tall first then insert by positions"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "0406. Queue Reconstruction by Height",
+          "https://leetcode.com/problems/queue-reconstruction-by-height",
+          "Medium",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "number-of-longest-increasing-subsequence",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "673. Number of Longest Increasing Subsequence",
+          "https://leetcode.com/problems/number-of-longest-increasing-subsequence/",
+          "Medium",
+          "Array Dynamic Programming Binary Indexed Tree Segment Tree"
+        ],
+        [
+          "dp",
+          "LeetCode",
+          "LIS / LCS",
+          "673. Number of Longest Increasing Subsequence",
+          "https://leetcode.com/problems/number-of-longest-increasing-subsequence/",
+          "Medium",
+          "LIS / Count Paths"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "0673. Number of Longest Increasing Subsequence",
+          "https://leetcode.com/problems/number-of-longest-increasing-subsequence",
+          "Medium",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "online-majority-element-in-subarray",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "1262. Online Majority Element In Subarray",
+          "https://leetcode.com/problems/online-majority-element-in-subarray/",
+          "Hard",
+          "Array Binary Search Design Binary Indexed Tree Segment Tree"
+        ],
+        [
+          "binary_search",
+          "LeetCode",
+          "BS with Data Structures",
+          "Online Majority Element In Subarray",
+          "https://leetcode.com/problems/online-majority-element-in-subarray/",
+          "Hard",
+          "Segment Tree + Binary Search"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "1262. Online Majority Element In Subarray",
+          "https://leetcode.com/problems/online-majority-element-in-subarray",
+          "Hard",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "count-number-of-teams",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "1511. Count Number of Teams",
+          "https://leetcode.com/problems/count-number-of-teams/",
+          "Medium",
+          "Array Dynamic Programming Binary Indexed Tree Segment Tree"
+        ],
+        [
+          "dp",
+          "LeetCode",
+          "1D DP",
+          "1395. Count Number of Teams",
+          "https://leetcode.com/problems/count-number-of-teams/",
+          "Medium",
+          "DP / Count"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "1511. Count Number of Teams",
+          "https://leetcode.com/problems/count-number-of-teams",
+          "Medium",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "queries-on-a-permutation-with-key",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "1525. Queries on a Permutation With Key",
+          "https://leetcode.com/problems/queries-on-a-permutation-with-key/",
+          "Medium",
+          "Array Binary Indexed Tree Simulation"
+        ],
+        [
+          "math",
+          "LeetCode",
+          "Math",
+          "Queries on a Permutation With Key",
+          "https://leetcode.com/problems/queries-on-a-permutation-with-key/",
+          "Medium",
+          "Array, Binary Indexed Tree, Simulation"
+        ]
+      ]
+    ],
+    [
+      "minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "1629. Minimum Possible Integer After at Most K Adjacent Swaps On Digits",
+          "https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/",
+          "Hard",
+          "String Greedy Binary Indexed Tree Segment Tree"
+        ],
+        [
+          "greedy",
+          "LeetCode",
+          "Array Greedy",
+          "1505. Minimum Possible Integer After at Most K Adjacent Swaps on Digits",
+          "https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/",
+          "Hard",
+          "Greedy digit selection with Fenwick tree"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "1629. Minimum Possible Integer After at Most K Adjacent Swaps On Digits",
+          "https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits",
+          "Hard",
+          "Tag: segment-tree"
+        ],
+        [
+          "string",
+          "LeetCode",
+          "String",
+          "1629. Minimum Possible Integer After at Most K Adjacent Swaps On Digits",
+          "https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/",
+          "Hard",
+          "String"
+        ]
+      ]
+    ],
+    [
+      "find-the-longest-valid-obstacle-course-at-each-position",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "2096. Find the Longest Valid Obstacle Course at Each Position",
+          "https://leetcode.com/problems/find-the-longest-valid-obstacle-course-at-each-position/",
+          "Hard",
+          "Array Binary Search Binary Indexed Tree"
+        ],
+        [
+          "binary_search",
+          "LeetCode",
+          "BST",
+          "Find the Longest Valid Obstacle Course at Each Position",
+          "https://leetcode.com/problems/find-the-longest-valid-obstacle-course-at-each-position/",
+          "Hard",
+          "Binary Search on LIS"
+        ]
+      ]
+    ],
+    [
+      "count-subarrays-with-more-ones-than-zeros",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "510. Count Subarrays With More Ones Than Zeros",
+          "https://leetcode.com/problems/count-subarrays-with-more-ones-than-zeros/",
+          "Medium",
+          "Array Hash Table Binary Search Divide and Conquer Binary Indexed Tree Segment Tree Merge Sort Ordered Set"
+        ],
+        [
+          "binary_search",
+          "LeetCode",
+          "Binary Search",
+          "Count Subarrays With More Ones Than Zeros",
+          "https://leetcode.com/problems/count-subarrays-with-more-ones-than-zeros/",
+          "Medium",
+          "Prefix Sum + Binary Search"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "0510. Count Subarrays With More Ones Than Zeros",
+          "https://leetcode.com/problems/count-subarrays-with-more-ones-than-zeros",
+          "Medium",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "minimum-number-of-moves-to-make-palindrome",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "1356. Minimum Number of Moves to Make Palindrome",
+          "https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/",
+          "Hard",
+          "Two Pointers String Greedy Binary Indexed Tree"
+        ],
+        [
+          "greedy",
+          "LeetCode",
+          "Array Greedy",
+          "2193. Minimum Number of Moves to Make Palindrome",
+          "https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/",
+          "Hard",
+          "Greedy two-pointer matching"
+        ],
+        [
+          "string",
+          "LeetCode",
+          "String",
+          "1356. Minimum Number of Moves to Make Palindrome",
+          "https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/",
+          "Hard",
+          "String"
+        ]
+      ]
+    ],
+    [
+      "booking-concert-tickets-in-groups",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "2380. Booking Concert Tickets in Groups",
+          "https://leetcode.com/problems/booking-concert-tickets-in-groups/",
+          "Hard",
+          "Binary Search Design Binary Indexed Tree Segment Tree"
+        ],
+        [
+          "binary_search",
+          "LeetCode",
+          "BS with Data Structures",
+          "Booking Concert Tickets in Groups",
+          "https://leetcode.com/problems/booking-concert-tickets-in-groups/",
+          "Hard",
+          "Segment Tree + Binary Search"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "2380. Booking Concert Tickets in Groups",
+          "https://leetcode.com/problems/booking-concert-tickets-in-groups",
+          "Hard",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "count-the-number-of-k-big-indices",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "2658. Count the Number of K-Big Indices",
+          "https://leetcode.com/problems/count-the-number-of-k-big-indices/",
+          "Hard",
+          "Array Binary Search Divide and Conquer Binary Indexed Tree Segment Tree Merge Sort Ordered Set"
+        ],
+        [
+          "binary_search",
+          "LeetCode",
+          "BS with Data Structures",
+          "Count the Number of K-Big Indices",
+          "https://leetcode.com/problems/count-the-number-of-k-big-indices/",
+          "Hard",
+          "Fenwick + Binary Search"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "2658. Count the Number of K-Big Indices",
+          "https://leetcode.com/problems/count-the-number-of-k-big-indices",
+          "Hard",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "count-increasing-quadruplets",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "2682. Count Increasing Quadruplets",
+          "https://leetcode.com/problems/count-increasing-quadruplets/",
+          "Hard",
+          "Array Dynamic Programming Binary Indexed Tree Enumeration Prefix Sum"
+        ],
+        [
+          "dp",
+          "LeetCode",
+          "1D DP",
+          "2552. Count Increasing Quadruplets",
+          "https://leetcode.com/problems/count-increasing-quadruplets/",
+          "Hard",
+          "DP / Combinatorics"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Prefix Sum",
+          "2682. Count Increasing Quadruplets",
+          "https://leetcode.com/problems/count-increasing-quadruplets",
+          "Hard",
+          "Tag: prefix-sum"
+        ]
+      ]
+    ],
+    [
+      "maximum-profitable-triplets-with-increasing-prices-i",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "3187. Maximum Profitable Triplets With Increasing Prices I",
+          "https://leetcode.com/problems/maximum-profitable-triplets-with-increasing-prices-i/",
+          "Medium",
+          "Array Binary Indexed Tree Segment Tree"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "3187. Maximum Profitable Triplets With Increasing Prices I",
+          "https://leetcode.com/problems/maximum-profitable-triplets-with-increasing-prices-i",
+          "Medium",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "subarrays-distinct-element-sum-of-squares-ii",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "3139. Subarrays Distinct Element Sum of Squares II",
+          "https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii/",
+          "Hard",
+          "Array Dynamic Programming Binary Indexed Tree Segment Tree"
+        ],
+        [
+          "dp",
+          "LeetCode",
+          "1D DP",
+          "2916. Subarrays Distinct Element Sum of Squares II",
+          "https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii/",
+          "Hard",
+          "DP / Segment Tree"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "3139. Subarrays Distinct Element Sum of Squares II",
+          "https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii",
+          "Hard",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "maximum-profitable-triplets-with-increasing-prices-ii",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "3204. Maximum Profitable Triplets With Increasing Prices II",
+          "https://leetcode.com/problems/maximum-profitable-triplets-with-increasing-prices-ii/",
+          "Hard",
+          "Array Binary Indexed Tree Segment Tree"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "3204. Maximum Profitable Triplets With Increasing Prices II",
+          "https://leetcode.com/problems/maximum-profitable-triplets-with-increasing-prices-ii",
+          "Hard",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "maximum-balanced-subsequence-sum",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "3184. Maximum Balanced Subsequence Sum",
+          "https://leetcode.com/problems/maximum-balanced-subsequence-sum/",
+          "Hard",
+          "Array Binary Search Dynamic Programming Binary Indexed Tree Segment Tree"
+        ],
+        [
+          "binary_search",
+          "LeetCode",
+          "BS with Data Structures",
+          "Maximum Balanced Subsequence Sum",
+          "https://leetcode.com/problems/maximum-balanced-subsequence-sum/",
+          "Hard",
+          "Fenwick + Binary Search"
+        ],
+        [
+          "dp",
+          "LeetCode",
+          "1D DP",
+          "2926. Maximum Balanced Subsequence Sum",
+          "https://leetcode.com/problems/maximum-balanced-subsequence-sum/",
+          "Hard",
+          "DP / Fenwick"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "3184. Maximum Balanced Subsequence Sum",
+          "https://leetcode.com/problems/maximum-balanced-subsequence-sum",
+          "Hard",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "maximum-number-of-intersections-on-the-chart",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "3315. Maximum Number of Intersections on the Chart",
+          "https://leetcode.com/problems/maximum-number-of-intersections-on-the-chart/",
+          "Hard",
+          "Array Hash Table Math Binary Indexed Tree Geometry Sweep Line Sorting"
+        ],
+        [
+          "geometry",
+          "LeetCode",
+          "Geometry",
+          "3315. Maximum Number of Intersections on the Chart",
+          "https://leetcode.com/problems/maximum-number-of-intersections-on-the-chart/",
+          "Hard",
+          "Array; Hash Table; Math; Binary Indexed Tree; Geometry; Sweep Line; Sorting"
+        ],
+        [
+          "math",
+          "LeetCode",
+          "Math",
+          "3315. Maximum Number of Intersections on the Chart",
+          "https://leetcode.com/problems/maximum-number-of-intersections-on-the-chart/",
+          "Hard",
+          "Math"
+        ]
+      ]
+    ],
+    [
+      "find-the-index-of-permutation",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "3417. Find the Index of Permutation",
+          "https://leetcode.com/problems/find-the-index-of-permutation/",
+          "Medium",
+          "Array Binary Search Divide and Conquer Binary Indexed Tree Segment Tree Merge Sort Ordered Set"
+        ],
+        [
+          "binary_search",
+          "LeetCode",
+          "BS on Answer",
+          "Find the Index of Permutation",
+          "https://leetcode.com/problems/find-the-index-of-permutation/",
+          "Medium",
+          "Binary Search on Permutation"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "3417. Find the Index of Permutation",
+          "https://leetcode.com/problems/find-the-index-of-permutation",
+          "Medium",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "block-placement-queries",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "3435. Block Placement Queries",
+          "https://leetcode.com/problems/block-placement-queries/",
+          "Hard",
+          "Array Binary Search Binary Indexed Tree Segment Tree"
+        ],
+        [
+          "binary_search",
+          "LeetCode",
+          "BS with Data Structures",
+          "Block Placement Queries",
+          "https://leetcode.com/problems/block-placement-queries/",
+          "Hard",
+          "Binary Search + Segment Tree"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "3435. Block Placement Queries",
+          "https://leetcode.com/problems/block-placement-queries",
+          "Hard",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "peaks-in-array",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "3438. Peaks in Array",
+          "https://leetcode.com/problems/peaks-in-array/",
+          "Hard",
+          "Array Binary Indexed Tree Segment Tree"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "3438. Peaks in Array",
+          "https://leetcode.com/problems/peaks-in-array",
+          "Hard",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "number-of-integers-with-popcount-depth-equal-to-k-ii",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "3941. Number of Integers With Popcount-Depth Equal to K II",
+          "https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/",
+          "Hard",
+          "Array Divide and Conquer Binary Indexed Tree Segment Tree"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "3941. Number of Integers With Popcount-Depth Equal to K II",
+          "https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii",
+          "Hard",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "sum-of-beautiful-subsequences",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "3989. Sum of Beautiful Subsequences",
+          "https://leetcode.com/problems/sum-of-beautiful-subsequences/",
+          "Hard",
+          "Array Math Binary Indexed Tree Number Theory"
+        ],
+        [
+          "math",
+          "LeetCode",
+          "Math",
+          "3989. Sum of Beautiful Subsequences",
+          "https://leetcode.com/problems/sum-of-beautiful-subsequences/",
+          "Hard",
+          "Math"
+        ]
+      ]
+    ],
+    [
+      "range-module",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "715. Range Module",
+          "https://leetcode.com/problems/range-module/",
+          "Hard",
+          "Design Segment Tree Ordered Set"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "0715. Range Module",
+          "https://leetcode.com/problems/range-module",
+          "Hard",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "my-calendar-i",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "729. My Calendar I",
+          "https://leetcode.com/problems/my-calendar-i/",
+          "Medium",
+          "Array Binary Search Design Segment Tree Ordered Set"
+        ],
+        [
+          "binary_search",
+          "LeetCode",
+          "BS with Data Structures",
+          "My Calendar I",
+          "https://leetcode.com/problems/my-calendar-i/",
+          "Medium",
+          "Binary Search on Intervals (TreeSet)"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "0729. My Calendar I",
+          "https://leetcode.com/problems/my-calendar-i",
+          "Medium",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "my-calendar-ii",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "731. My Calendar II",
+          "https://leetcode.com/problems/my-calendar-ii/",
+          "Medium",
+          "Array Binary Search Design Segment Tree Prefix Sum Ordered Set"
+        ],
+        [
+          "binary_search",
+          "LeetCode",
+          "Binary Search",
+          "My Calendar II",
+          "https://leetcode.com/problems/my-calendar-ii/",
+          "Medium",
+          "Binary Search on Intervals"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "0731. My Calendar II",
+          "https://leetcode.com/problems/my-calendar-ii",
+          "Medium",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "my-calendar-iii",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "732. My Calendar III",
+          "https://leetcode.com/problems/my-calendar-iii/",
+          "Hard",
+          "Binary Search Design Segment Tree Prefix Sum Ordered Set"
+        ],
+        [
+          "binary_search",
+          "LeetCode",
+          "BS with Data Structures",
+          "My Calendar III",
+          "https://leetcode.com/problems/my-calendar-iii/",
+          "Hard",
+          "Binary Search on Intervals (Difference Array)"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "0732. My Calendar III",
+          "https://leetcode.com/problems/my-calendar-iii",
+          "Hard",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "find-a-value-of-a-mysterious-function-closest-to-target",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "1645. Find a Value of a Mysterious Function Closest to Target",
+          "https://leetcode.com/problems/find-a-value-of-a-mysterious-function-closest-to-target/",
+          "Hard",
+          "Array Binary Search Bit Manipulation Segment Tree"
+        ],
+        [
+          "binary_search",
+          "LeetCode",
+          "BS on Answer",
+          "Find a Value of a Mysterious Function Closest to Target",
+          "https://leetcode.com/problems/find-a-value-of-a-mysterious-function-closest-to-target/",
+          "Hard",
+          "Binary Search + Bitwise OR"
+        ],
+        [
+          "math",
+          "LeetCode",
+          "Math",
+          "Find a Value of a Mysterious Function Closest to Target",
+          "https://leetcode.com/problems/find-a-value-of-a-mysterious-function-closest-to-target/",
+          "Hard",
+          "Array, Binary Search, Bit Manipulation, Segment Tree"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "1645. Find a Value of a Mysterious Function Closest to Target",
+          "https://leetcode.com/problems/find-a-value-of-a-mysterious-function-closest-to-target",
+          "Hard",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "fancy-sequence",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "1728. Fancy Sequence",
+          "https://leetcode.com/problems/fancy-sequence/",
+          "Hard",
+          "Math Design Segment Tree Number Theory"
+        ],
+        [
+          "math",
+          "LeetCode",
+          "Math",
+          "1728. Fancy Sequence",
+          "https://leetcode.com/problems/fancy-sequence/",
+          "Hard",
+          "Math"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "1728. Fancy Sequence",
+          "https://leetcode.com/problems/fancy-sequence",
+          "Hard",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "range-frequency-queries",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "1294. Range Frequency Queries",
+          "https://leetcode.com/problems/range-frequency-queries/",
+          "Medium",
+          "Array Hash Table Binary Search Design Segment Tree"
+        ],
+        [
+          "binary_search",
+          "LeetCode",
+          "BS with Data Structures",
+          "Range Frequency Queries",
+          "https://leetcode.com/problems/range-frequency-queries/",
+          "Medium",
+          "Binary Search on Position Lists"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "1294. Range Frequency Queries",
+          "https://leetcode.com/problems/range-frequency-queries",
+          "Medium",
+          "Tag: segment-tree"
+        ],
+        [
+          "trie",
+          "LeetCode",
+          "Design",
+          "2080. Range Frequency Queries",
+          "https://leetcode.com/problems/range-frequency-queries/",
+          "Medium",
+          "Trie + binary search on indices"
+        ]
+      ]
+    ],
+    [
+      "amount-of-new-area-painted-each-day",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "2297. Amount of New Area Painted Each Day",
+          "https://leetcode.com/problems/amount-of-new-area-painted-each-day/",
+          "Hard",
+          "Array Segment Tree Ordered Set"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "2297. Amount of New Area Painted Each Day",
+          "https://leetcode.com/problems/amount-of-new-area-painted-each-day",
+          "Hard",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "minimum-sum-of-values-by-dividing-array",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "3364. Minimum Sum of Values by Dividing Array",
+          "https://leetcode.com/problems/minimum-sum-of-values-by-dividing-array/",
+          "Hard",
+          "Array Binary Search Dynamic Programming Bit Manipulation Segment Tree Queue"
+        ],
+        [
+          "binary_search",
+          "LeetCode",
+          "BS on Answer",
+          "Minimum Sum of Values by Dividing Array",
+          "https://leetcode.com/problems/minimum-sum-of-values-by-dividing-array/",
+          "Hard",
+          "Binary Search + DP"
+        ],
+        [
+          "dp",
+          "LeetCode",
+          "1D DP",
+          "3117. Minimum Sum of Values by Dividing Array",
+          "https://leetcode.com/problems/minimum-sum-of-values-by-dividing-array/",
+          "Hard",
+          "DP / AND"
+        ],
+        [
+          "greedy",
+          "LeetCode",
+          "Array Greedy",
+          "3132. Minimum Sum of Values by Dividing Array",
+          "https://leetcode.com/problems/minimum-sum-of-values-by-dividing-array/",
+          "Hard",
+          "Greedy bitwise AND grouping"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "3364. Minimum Sum of Values by Dividing Array",
+          "https://leetcode.com/problems/minimum-sum-of-values-by-dividing-array",
+          "Hard",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "maximum-sum-of-subsequence-with-non-adjacent-elements",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "3423. Maximum Sum of Subsequence With Non-adjacent Elements",
+          "https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/",
+          "Hard",
+          "Array Divide and Conquer Dynamic Programming Segment Tree"
+        ],
+        [
+          "dp",
+          "LeetCode",
+          "1D DP",
+          "3165. Maximum Sum of Subsequence With Non-adjacent Elements",
+          "https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/",
+          "Hard",
+          "DP / Segment Tree"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "3423. Maximum Sum of Subsequence With Non-adjacent Elements",
+          "https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements",
+          "Hard",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "find-subarray-with-bitwise-or-closest-to-k",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "3436. Find Subarray With Bitwise OR Closest to K",
+          "https://leetcode.com/problems/find-subarray-with-bitwise-or-closest-to-k/",
+          "Hard",
+          "Array Binary Search Bit Manipulation Segment Tree"
+        ],
+        [
+          "binary_search",
+          "LeetCode",
+          "BS on Answer",
+          "Find Subarray With Bitwise OR Closest to K",
+          "https://leetcode.com/problems/find-subarray-with-bitwise-or-closest-to-k/",
+          "Hard",
+          "Binary Search on Bitwise OR"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "3436. Find Subarray With Bitwise OR Closest to K",
+          "https://leetcode.com/problems/find-subarray-with-bitwise-or-closest-to-k",
+          "Hard",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "number-of-subarrays-with-and-value-of-k",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "3466. Number of Subarrays With AND Value of K",
+          "https://leetcode.com/problems/number-of-subarrays-with-and-value-of-k/",
+          "Hard",
+          "Array Binary Search Bit Manipulation Segment Tree"
+        ],
+        [
+          "binary_search",
+          "LeetCode",
+          "BS on Answer",
+          "Number of Subarrays With AND Value of K",
+          "https://leetcode.com/problems/number-of-subarrays-with-and-value-of-k/",
+          "Hard",
+          "Binary Search on Bitwise AND"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "3466. Number of Subarrays With AND Value of K",
+          "https://leetcode.com/problems/number-of-subarrays-with-and-value-of-k",
+          "Hard",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "minimum-number-of-valid-strings-to-form-target-i",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "3559. Minimum Number of Valid Strings to Form Target I",
+          "https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/",
+          "Medium",
+          "Array String Binary Search Dynamic Programming Greedy Trie Segment Tree Rolling Hash String Matching Hash Function"
+        ],
+        [
+          "binary_search",
+          "LeetCode",
+          "BS on Answer",
+          "Minimum Number of Valid Strings to Form Target I",
+          "https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/",
+          "Medium",
+          "Binary Search + DP"
+        ],
+        [
+          "dp",
+          "LeetCode",
+          "DP on Strings",
+          "3291. Minimum Number of Valid Strings to Form Target I",
+          "https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/",
+          "Medium",
+          "String DP / Target"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "3559. Minimum Number of Valid Strings to Form Target I",
+          "https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i",
+          "Medium",
+          "Tag: segment-tree"
+        ],
+        [
+          "string",
+          "LeetCode",
+          "String",
+          "3559. Minimum Number of Valid Strings to Form Target I",
+          "https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/",
+          "Medium",
+          "String"
+        ],
+        [
+          "trie",
+          "LeetCode",
+          "Trie",
+          "3559. Minimum Number of Valid Strings to Form Target I",
+          "https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/",
+          "Medium",
+          "LeetCode Problem"
+        ]
+      ]
+    ],
+    [
+      "minimum-number-of-valid-strings-to-form-target-ii",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "3557. Minimum Number of Valid Strings to Form Target II",
+          "https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-ii/",
+          "Hard",
+          "Array String Binary Search Dynamic Programming Greedy Segment Tree Rolling Hash String Matching Hash Function"
+        ],
+        [
+          "binary_search",
+          "LeetCode",
+          "BS with Data Structures",
+          "Minimum Number of Valid Strings to Form Target II",
+          "https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-ii/",
+          "Hard",
+          "Binary Search + AC Automaton"
+        ],
+        [
+          "dp",
+          "LeetCode",
+          "DP on Strings",
+          "3292. Minimum Number of Valid Strings to Form Target II",
+          "https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-ii/",
+          "Hard",
+          "String DP / AC Automaton"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "3557. Minimum Number of Valid Strings to Form Target II",
+          "https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-ii",
+          "Hard",
+          "Tag: segment-tree"
+        ],
+        [
+          "string",
+          "LeetCode",
+          "String",
+          "3557. Minimum Number of Valid Strings to Form Target II",
+          "https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-ii/",
+          "Hard",
+          "String"
+        ]
+      ]
+    ],
+    [
+      "maximize-subarray-sum-after-removing-all-occurrences-of-one-element",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "3688. Maximize Subarray Sum After Removing All Occurrences of One Element",
+          "https://leetcode.com/problems/maximize-subarray-sum-after-removing-all-occurrences-of-one-element/",
+          "Hard",
+          "Array Dynamic Programming Segment Tree"
+        ],
+        [
+          "dp",
+          "LeetCode",
+          "1D DP",
+          "3410. Maximize Subarray Sum After Removing All Occurrences of One Element",
+          "https://leetcode.com/problems/maximize-subarray-sum-after-removing-all-occurrences-of-one-element/",
+          "Medium",
+          "Kadane / Remove Element"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "3688. Maximize Subarray Sum After Removing All Occurrences of One Element",
+          "https://leetcode.com/problems/maximize-subarray-sum-after-removing-all-occurrences-of-one-element",
+          "Hard",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "count-non-decreasing-subarrays-after-k-operations",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "3674. Count Non-Decreasing Subarrays After K Operations",
+          "https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/",
+          "Hard",
+          "Array Stack Segment Tree Queue Sliding Window Monotonic Stack Monotonic Queue"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "3674. Count Non-Decreasing Subarrays After K Operations",
+          "https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations",
+          "Hard",
+          "Tag: segment-tree"
+        ],
+        [
+          "sliding_window",
+          "LeetCode",
+          "Variable-Size Window",
+          "3420. Count Non-Decreasing Subarrays After K Operations",
+          "https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/",
+          "Hard",
+          "Sliding window + segment tree"
+        ]
+      ]
+    ],
+    [
+      "separate-squares-ii",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "3775. Separate Squares II",
+          "https://leetcode.com/problems/separate-squares-ii/",
+          "Hard",
+          "Array Binary Search Segment Tree Sweep Line"
+        ],
+        [
+          "binary_search",
+          "LeetCode",
+          "BS on Answer",
+          "Separate Squares II",
+          "https://leetcode.com/problems/separate-squares-ii/",
+          "Hard",
+          "Binary Search on Y-Coordinate"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "3775. Separate Squares II",
+          "https://leetcode.com/problems/separate-squares-ii",
+          "Hard",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "fruits-into-baskets-ii",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "3790. Fruits Into Baskets II",
+          "https://leetcode.com/problems/fruits-into-baskets-ii/",
+          "Easy",
+          "Array Binary Search Segment Tree Simulation Ordered Set"
+        ],
+        [
+          "binary_search",
+          "LeetCode",
+          "Binary Search",
+          "Fruits Into Baskets II",
+          "https://leetcode.com/problems/fruits-into-baskets-ii/",
+          "Easy",
+          "Binary Search on Baskets"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "3790. Fruits Into Baskets II",
+          "https://leetcode.com/problems/fruits-into-baskets-ii",
+          "Easy",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "fruits-into-baskets-iii",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "3791. Fruits Into Baskets III",
+          "https://leetcode.com/problems/fruits-into-baskets-iii/",
+          "Medium",
+          "Array Binary Search Segment Tree Ordered Set"
+        ],
+        [
+          "binary_search",
+          "LeetCode",
+          "BS on Answer",
+          "Fruits Into Baskets III",
+          "https://leetcode.com/problems/fruits-into-baskets-iii/",
+          "Medium",
+          "Binary Search on Baskets"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "3791. Fruits Into Baskets III",
+          "https://leetcode.com/problems/fruits-into-baskets-iii",
+          "Medium",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "maximize-subarrays-after-removing-one-conflicting-pair",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "3789. Maximize Subarrays After Removing One Conflicting Pair",
+          "https://leetcode.com/problems/maximize-subarrays-after-removing-one-conflicting-pair/",
+          "Hard",
+          "Array Segment Tree Enumeration Prefix Sum"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "3789. Maximize Subarrays After Removing One Conflicting Pair",
+          "https://leetcode.com/problems/maximize-subarrays-after-removing-one-conflicting-pair",
+          "Hard",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "maximize-active-section-with-trade-ii",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "3804. Maximize Active Section with Trade II",
+          "https://leetcode.com/problems/maximize-active-section-with-trade-ii/",
+          "Hard",
+          "Array String Binary Search Segment Tree"
+        ],
+        [
+          "binary_search",
+          "LeetCode",
+          "BS on Answer",
+          "Maximize Active Section with Trade II",
+          "https://leetcode.com/problems/maximize-active-section-with-trade-ii/",
+          "Hard",
+          "Binary Search on Segments"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "3804. Maximize Active Section with Trade II",
+          "https://leetcode.com/problems/maximize-active-section-with-trade-ii",
+          "Hard",
+          "Tag: segment-tree"
+        ],
+        [
+          "string",
+          "LeetCode",
+          "String",
+          "3804. Maximize Active Section with Trade II",
+          "https://leetcode.com/problems/maximize-active-section-with-trade-ii/",
+          "Hard",
+          "String"
+        ]
+      ]
+    ],
+    [
+      "find-x-value-of-array-ii",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "3840. Find X Value of Array II",
+          "https://leetcode.com/problems/find-x-value-of-array-ii/",
+          "Hard",
+          "Array Math Segment Tree"
+        ],
+        [
+          "math",
+          "LeetCode",
+          "Math",
+          "3840. Find X Value of Array II",
+          "https://leetcode.com/problems/find-x-value-of-array-ii/",
+          "Hard",
+          "Math"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "3840. Find X Value of Array II",
+          "https://leetcode.com/problems/find-x-value-of-array-ii",
+          "Hard",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "maximize-count-of-distinct-primes-after-split",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "3878. Maximize Count of Distinct Primes After Split",
+          "https://leetcode.com/problems/maximize-count-of-distinct-primes-after-split/",
+          "Hard",
+          "Array Math Segment Tree Number Theory"
+        ],
+        [
+          "math",
+          "LeetCode",
+          "Math",
+          "3878. Maximize Count of Distinct Primes After Split",
+          "https://leetcode.com/problems/maximize-count-of-distinct-primes-after-split/",
+          "Hard",
+          "Math"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "3878. Maximize Count of Distinct Primes After Split",
+          "https://leetcode.com/problems/maximize-count-of-distinct-primes-after-split",
+          "Hard",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "minimum-stability-factor-of-array",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "3920. Minimum Stability Factor of Array",
+          "https://leetcode.com/problems/minimum-stability-factor-of-array/",
+          "Hard",
+          "Array Math Binary Search Greedy Segment Tree Number Theory"
+        ],
+        [
+          "binary_search",
+          "LeetCode",
+          "BS on Answer",
+          "Minimum Stability Factor of Array",
+          "https://leetcode.com/problems/minimum-stability-factor-of-array/",
+          "Hard",
+          "Binary Search on Stability"
+        ],
+        [
+          "math",
+          "LeetCode",
+          "Math",
+          "3920. Minimum Stability Factor of Array",
+          "https://leetcode.com/problems/minimum-stability-factor-of-array/",
+          "Hard",
+          "Math"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "3920. Minimum Stability Factor of Array",
+          "https://leetcode.com/problems/minimum-stability-factor-of-array",
+          "Hard",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "longest-balanced-subarray-i",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "4045. Longest Balanced Subarray I",
+          "https://leetcode.com/problems/longest-balanced-subarray-i/",
+          "Medium",
+          "Array Hash Table Divide and Conquer Segment Tree Prefix Sum"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "4045. Longest Balanced Subarray I",
+          "https://leetcode.com/problems/longest-balanced-subarray-i",
+          "Medium",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "longest-balanced-subarray-ii",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "4047. Longest Balanced Subarray II",
+          "https://leetcode.com/problems/longest-balanced-subarray-ii/",
+          "Hard",
+          "Array Hash Table Divide and Conquer Segment Tree Prefix Sum"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "4047. Longest Balanced Subarray II",
+          "https://leetcode.com/problems/longest-balanced-subarray-ii",
+          "Hard",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "count-subarrays-with-majority-element-i",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "4074. Count Subarrays With Majority Element I",
+          "https://leetcode.com/problems/count-subarrays-with-majority-element-i/",
+          "Medium",
+          "Array Hash Table Divide and Conquer Segment Tree Merge Sort Counting Prefix Sum"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "4074. Count Subarrays With Majority Element I",
+          "https://leetcode.com/problems/count-subarrays-with-majority-element-i",
+          "Medium",
+          "Tag: segment-tree"
+        ]
+      ]
+    ],
+    [
+      "count-subarrays-with-majority-element-ii",
+      [
+        [
+          "advanced_tree",
+          "LeetCode",
+          "Advanced Tree",
+          "4075. Count Subarrays With Majority Element II",
+          "https://leetcode.com/problems/count-subarrays-with-majority-element-ii/",
+          "Hard",
+          "Array Hash Table Divide and Conquer Segment Tree Merge Sort Prefix Sum"
+        ],
+        [
+          "sequences",
+          "LeetCode",
+          "Segment Tree",
+          "4075. Count Subarrays With Majority Element II",
+          "https://leetcode.com/problems/count-subarrays-with-majority-element-ii",
+          "Hard",
+          "Tag: segment-tree"
+        ]
+      ]
+    ]
+  ],
+  "cross_topic_details": [
+    {
+      "name": "Stars",
+      "url": "poj.org/problem",
+      "entries": [
+        [
+          "advanced_tree",
+          "Advanced Tree",
+          "POJ"
+        ],
+        [
+          "backtrack",
+          "Backtracking",
+          "POJ"
+        ],
+        [
+          "binary_search",
+          "Binary Search",
+          "POJ"
+        ],
+        [
+          "bit",
+          "Bit Manipulation",
+          "POJ"
+        ],
+        [
+          "combinatorics",
+          "Combinations",
+          "POJ"
+        ],
+        [
+          "dp",
+          "Dynamic Programming",
+          "POJ"
+        ],
+        [
+          "game_theory",
+          "Game Theory",
+          "POJ"
+        ],
+        [
+          "geometry",
+          "Circle Intersection",
+          "POJ"
+        ],
+        [
+          "graph",
+          "Graph",
+          "POJ"
+        ],
+        [
+          "greedy",
+          "Greedy",
+          "POJ"
+        ],
+        [
+          "heap",
+          "Heap",
+          "POJ"
+        ],
+        [
+          "linear_algebra",
+          "Matrix Exponentiation",
+          "POJ"
+        ],
+        [
+          "linked_list",
+          "Linked List",
+          "POJ"
+        ],
+        [
+          "math",
+          "Math",
+          "POJ"
+        ],
+        [
+          "miscellaneous",
+          "Farey Sequence",
+          "POJ"
+        ],
+        [
+          "num_methods",
+          "Numerical Methods",
+          "POJ"
+        ],
+        [
+          "scheduling",
+          "Scheduling",
+          "POJ"
+        ],
+        [
+          "sequences",
+          "Segment Tree",
+          "POJ"
+        ],
+        [
+          "shape",
+          "Shape",
+          "POJ"
+        ],
+        [
+          "sliding_window",
+          "Sliding Window",
+          "POJ"
+        ],
+        [
+          "string",
+          "String",
+          "POJ"
+        ],
+        [
+          "tree",
+          "Tree",
+          "POJ"
+        ],
+        [
+          "trie",
+          "Trie",
+          "POJ"
+        ]
+      ]
+    },
+    {
+      "name": "Stars",
+      "url": "acm.timus.ru/problem.aspx",
+      "entries": [
+        [
+          "advanced_tree",
+          "Advanced Tree",
+          "Timus"
+        ],
+        [
+          "backtrack",
+          "DP/Backtracking",
+          "Timus"
+        ],
+        [
+          "binary_search",
+          "Binary Search",
+          "Timus"
+        ],
+        [
+          "bit",
+          "Bitmask",
+          "Timus"
+        ],
+        [
+          "combinatorics",
+          "Combinations",
+          "Timus"
+        ],
+        [
+          "dp",
+          "1D DP",
+          "Timus"
+        ],
+        [
+          "game_theory",
+          "Game Theory",
+          "Timus"
+        ],
+        [
+          "geometry",
+          "Convex Hull",
+          "Timus"
+        ],
+        [
+          "graph",
+          "Graph Traversal",
+          "Timus"
+        ],
+        [
+          "greedy",
+          "Greedy",
+          "Timus"
+        ],
+        [
+          "heap",
+          "Heap / Priority Queue",
+          "Timus"
+        ],
+        [
+          "linear_algebra",
+          "Matrix Exponentiation",
+          "Timus"
+        ],
+        [
+          "linked_list",
+          "Sorting",
+          "Timus"
+        ],
+        [
+          "math",
+          "Math",
+          "Timus"
+        ],
+        [
+          "miscellaneous",
+          "Stern-Brocot Tree",
+          "Timus"
+        ],
+        [
+          "num_methods",
+          "Numerical Methods",
+          "Timus"
+        ],
+        [
+          "scheduling",
+          "Single Machine",
+          "Timus"
+        ],
+        [
+          "sequences",
+          "Range Query",
+          "Timus"
+        ],
+        [
+          "shape",
+          "Triangles",
+          "Timus"
+        ],
+        [
+          "sliding_window",
+          "Sliding Window",
+          "Timus"
+        ],
+        [
+          "string",
+          "String",
+          "Timus"
+        ],
+        [
+          "tree",
+          "Tree Traversal",
+          "Timus"
+        ],
+        [
+          "trie",
+          "Prefix",
+          "Timus"
+        ]
+      ]
+    },
+    {
+      "name": "Range Minimum Query",
+      "url": "community.topcoder.com/stat",
+      "entries": [
+        [
+          "advanced_tree",
+          "Advanced Tree",
+          "TopCoder"
+        ],
+        [
+          "backtrack",
+          "Search",
+          "TopCoder"
+        ],
+        [
+          "binary_search",
+          "Binary Search",
+          "TopCoder"
+        ],
+        [
+          "bit",
+          "Basic Bit Operations",
+          "TopCoder"
+        ],
+        [
+          "combinatorics",
+          "Counting",
+          "TopCoder"
+        ],
+        [
+          "dp",
+          "1D DP",
+          "TopCoder"
+        ],
+        [
+          "game_theory",
+          "Game Theory",
+          "TopCoder"
+        ],
+        [
+          "geometry",
+          "Distance",
+          "TopCoder"
+        ],
+        [
+          "graph",
+          "Graph Theory",
+          "TopCoder"
+        ],
+        [
+          "greedy",
+          "Greedy",
+          "TopCoder"
+        ],
+        [
+          "heap",
+          "Heap",
+          "TopCoder"
+        ],
+        [
+          "linear_algebra",
+          "Matrix Exponentiation",
+          "TopCoder"
+        ],
+        [
+          "linked_list",
+          "Basic Operations",
+          "TopCoder"
+        ],
+        [
+          "math",
+          "Math",
+          "TopCoder"
+        ],
+        [
+          "num_methods",
+          "Numerical Methods",
+          "TopCoder"
+        ],
+        [
+          "scheduling",
+          "Scheduling",
+          "TopCoder"
+        ],
+        [
+          "sequences",
+          "RMQ",
+          "TopCoder"
+        ],
+        [
+          "shape",
+          "Right-Angled Triangles",
+          "TopCoder"
+        ],
+        [
+          "sliding_window",
+          "Sliding Window",
+          "TopCoder"
+        ],
+        [
+          "string",
+          "String",
+          "TopCoder"
+        ],
+        [
+          "tree",
+          "Tree Traversal",
+          "TopCoder"
+        ],
+        [
+          "trie",
+          "Trie",
+          "TopCoder"
+        ]
+      ]
+    },
+    {
+      "name": "Crowded Cows",
+      "url": "usaco.org/index.php",
+      "entries": [
+        [
+          "advanced_tree",
+          "Advanced Tree",
+          "USACO"
+        ],
+        [
+          "backtrack",
+          "Backtracking",
+          "USACO"
+        ],
+        [
+          "binary_search",
+          "BS on Answer",
+          "USACO"
+        ],
+        [
+          "bit",
+          "Basic Bit Operations",
+          "USACO"
+        ],
+        [
+          "combinatorics",
+          "Counting",
+          "USACO"
+        ],
+        [
+          "dp",
+          "1D DP",
+          "USACO"
+        ],
+        [
+          "game_theory",
+          "Game Theory",
+          "USACO"
+        ],
+        [
+          "geometry",
+          "Convex Hull",
+          "USACO"
+        ],
+        [
+          "graph",
+          "Silver Graph Traversal",
+          "USACO"
+        ],
+        [
+          "greedy",
+          "Greedy",
+          "USACO"
+        ],
+        [
+          "heap",
+          "Heap / Priority Queue",
+          "USACO"
+        ],
+        [
+          "linear_algebra",
+          "Matrix Operations",
+          "USACO"
+        ],
+        [
+          "linked_list",
+          "Implementation",
+          "USACO"
+        ],
+        [
+          "math",
+          "Math",
+          "USACO"
+        ],
+        [
+          "num_methods",
+          "Numerical Methods",
+          "USACO"
+        ],
+        [
+          "scheduling",
+          "Scheduling",
+          "USACO"
+        ],
+        [
+          "sequences",
+          "Range Query",
+          "USACO"
+        ],
+        [
+          "shape",
+          "Shape",
+          "USACO"
+        ],
+        [
+          "sliding_window",
+          "Sliding Window",
+          "USACO"
+        ],
+        [
+          "string",
+          "String",
+          "USACO"
+        ],
+        [
+          "tree",
+          "Tree with Data Structures",
+          "USACO"
+        ],
+        [
+          "trie",
+          "Trie",
+          "USACO"
+        ]
+      ]
+    },
+    {
+      "name": "Range Minimum Query (RMQ)",
+      "url": "judge.u-aizu.ac.jp/onlinejudge/description.jsp",
+      "entries": [
+        [
+          "advanced_tree",
+          "Advanced Tree",
+          "AOJ"
+        ],
+        [
+          "backtrack",
+          "Backtracking",
+          "AOJ"
+        ],
+        [
+          "binary_search",
+          "Binary Search",
+          "AOJ"
+        ],
+        [
+          "bit",
+          "Bit Manipulation",
+          "AOJ"
+        ],
+        [
+          "combinatorics",
+          "Combinations",
+          "AOJ"
+        ],
+        [
+          "dp",
+          "Dynamic Programming",
+          "AOJ"
+        ],
+        [
+          "game_theory",
+          "Game Theory",
+          "AOJ"
+        ],
+        [
+          "geometry",
+          "Circle Intersection",
+          "AOJ"
+        ],
+        [
+          "graph",
+          "Graph",
+          "AOJ"
+        ],
+        [
+          "greedy",
+          "Greedy",
+          "AOJ"
+        ],
+        [
+          "heap",
+          "Heap",
+          "AOJ"
+        ],
+        [
+          "linear_algebra",
+          "Matrix Determinant",
+          "AOJ"
+        ],
+        [
+          "math",
+          "Math",
+          "AOJ"
+        ],
+        [
+          "num_methods",
+          "Numerical Methods",
+          "AOJ"
+        ],
+        [
+          "scheduling",
+          "Scheduling",
+          "AOJ"
+        ],
+        [
+          "sequences",
+          "Segment Tree",
+          "AOJ"
+        ],
+        [
+          "shape",
+          "Shape",
+          "AOJ"
+        ],
+        [
+          "sliding_window",
+          "Fixed-Size Window",
+          "AOJ"
+        ],
+        [
+          "string",
+          "String",
+          "AOJ"
+        ],
+        [
+          "tree",
+          "Tree Properties",
+          "AOJ"
+        ],
+        [
+          "trie",
+          "Trie",
+          "AOJ"
+        ]
+      ]
+    },
+    {
+      "name": "Potentiometers",
+      "url": "onlinejudge.org/index.php",
+      "entries": [
+        [
+          "advanced_tree",
+          "Advanced Tree",
+          "UVa"
+        ],
+        [
+          "bit",
+          "Basic Bit Operations",
+          "UVa"
+        ],
+        [
+          "combinatorics",
+          "Binomial Coefficients",
+          "UVa"
+        ],
+        [
+          "game_theory",
+          "Game Theory",
+          "UVa"
+        ],
+        [
+          "geometry",
+          "Circle Intersection",
+          "UVa"
+        ],
+        [
+          "heap",
+          "Heap / Priority Queue",
+          "UVa"
+        ],
+        [
+          "linear_algebra",
+          "Matrix Exponentiation",
+          "UVa"
+        ],
+        [
+          "linked_list",
+          "Simulation",
+          "UVa"
+        ],
+        [
+          "math",
+          "Math",
+          "UVa"
+        ],
+        [
+          "miscellaneous",
+          "Josephus",
+          "UVa"
+        ],
+        [
+          "scheduling",
+          "Interval Scheduling",
+          "UVa"
+        ],
+        [
+          "sequences",
+          "Range Query",
+          "UVa"
+        ],
+        [
+          "sliding_window",
+          "Variable-Size Window",
+          "UVa"
+        ],
+        [
+          "string",
+          "String",
+          "UVa"
+        ]
+      ]
+    },
+    {
+      "name": "212. Word Search II",
+      "url": "leetcode.com/problems/word-search-ii",
+      "entries": [
+        [
+          "backtrack",
+          "Word Search",
+          "LeetCode"
+        ],
+        [
+          "graph",
+          "Graph Traversal - BFS/DFS",
+          "LeetCode"
+        ],
+        [
+          "linear_algebra",
+          "Matrix Traversal",
+          "LeetCode"
+        ],
+        [
+          "math",
+          "Math",
+          "LeetCode"
+        ],
+        [
+          "shape",
+          "Matrix",
+          "LeetCode"
+        ],
+        [
+          "string",
+          "String",
+          "LeetCode"
+        ],
+        [
+          "tree",
+          "Trie",
+          "LeetCode"
+        ],
+        [
+          "trie",
+          "Word Search",
+          "LeetCode"
+        ]
+      ]
+    },
+    {
+      "name": "Kuro and GCD and XOR and SUM",
+      "url": "codeforces.com/problemset/problem/979/d",
+      "entries": [
+        [
+          "binary_search",
+          "BS with Data Structures",
+          "Codeforces"
+        ],
+        [
+          "bit",
+          "Bitmask DP",
+          "Codeforces"
+        ],
+        [
+          "dp",
+          "DP on Trees",
+          "Codeforces"
+        ],
+        [
+          "math",
+          "Math",
+          "Codeforces"
+        ],
+        [
+          "sequences",
+          "Range Query",
+          "Codeforces"
+        ],
+        [
+          "string",
+          "String",
+          "Codeforces"
+        ],
+        [
+          "tree",
+          "DSU on Tree",
+          "Codeforces"
+        ],
+        [
+          "trie",
+          "Trie",
+          "Codeforces"
+        ]
+      ]
+    },
+    {
+      "name": "Meeting on the Line",
+      "url": "codeforces.com/problemset/problem/1730/b",
+      "entries": [
+        [
+          "binary_search",
+          "BS on Answer",
+          "Codeforces"
+        ],
+        [
+          "geometry",
+          "Geometry",
+          "Codeforces"
+        ],
+        [
+          "linked_list",
+          "Simulation",
+          "Codeforces"
+        ],
+        [
+          "math",
+          "Math",
+          "Codeforces"
+        ],
+        [
+          "miscellaneous",
+          "Maximum Average Segment",
+          "Codeforces"
+        ],
+        [
+          "num_methods",
+          "Ternary Search",
+          "Codeforces"
+        ],
+        [
+          "scheduling",
+          "Interval Scheduling",
+          "Codeforces"
+        ],
+        [
+          "shape",
+          "Triangles",
+          "Codeforces"
+        ]
+      ]
+    },
+    {
+      "name": "Omkar and Akmar",
+      "url": "codeforces.com/problemset/problem/1536/f",
+      "entries": [
+        [
+          "backtrack",
+          "Backtracking",
+          "Codeforces"
+        ],
+        [
+          "combinatorics",
+          "Combinatorics",
+          "Codeforces"
+        ],
+        [
+          "game_theory",
+          "Game Theory",
+          "Codeforces"
+        ],
+        [
+          "geometry",
+          "Geometry",
+          "Codeforces"
+        ],
+        [
+          "math",
+          "Math",
+          "Codeforces"
+        ],
+        [
+          "shape",
+          "Shape/Grid",
+          "Codeforces"
+        ],
+        [
+          "string",
+          "String",
+          "Codeforces"
+        ]
+      ]
+    },
+    {
+      "name": "Fixed Prefix Permutations",
+      "url": "codeforces.com/problemset/problem/1792/d",
+      "entries": [
+        [
+          "backtrack",
+          "Backtracking",
+          "Codeforces"
+        ],
+        [
+          "binary_search",
+          "BS with Data Structures",
+          "Codeforces"
+        ],
+        [
+          "bit",
+          "Bitwise Math",
+          "Codeforces"
+        ],
+        [
+          "math",
+          "Math",
+          "Codeforces"
+        ],
+        [
+          "sequences",
+          "Prefix Sum",
+          "Codeforces"
+        ],
+        [
+          "string",
+          "String",
+          "Codeforces"
+        ],
+        [
+          "trie",
+          "Trie",
+          "Codeforces"
+        ]
+      ]
+    },
+    {
+      "name": "XOR Matrix",
+      "url": "codeforces.com/problemset/problem/2075/e",
+      "entries": [
+        [
+          "bit",
+          "Bitmask DP",
+          "Codeforces"
+        ],
+        [
+          "combinatorics",
+          "Combinatorics",
+          "Codeforces"
+        ],
+        [
+          "dp",
+          "DP with Bitmask",
+          "Codeforces"
+        ],
+        [
+          "linear_algebra",
+          "Matrix Algebra",
+          "Codeforces"
+        ],
+        [
+          "math",
+          "Math",
+          "Codeforces"
+        ],
+        [
+          "shape",
+          "Shape/Grid",
+          "Codeforces"
+        ],
+        [
+          "trie",
+          "Trie",
+          "Codeforces"
+        ]
+      ]
+    },
+    {
+      "name": "1730C - Minimum Notation",
+      "url": "codeforces.com/problemset/problem/1730/c",
+      "entries": [
+        [
+          "dp",
+          "DP with State Machine",
+          "Codeforces"
+        ],
+        [
+          "linear_algebra",
+          "Linear Basis",
+          "Codeforces"
+        ],
+        [
+          "linked_list",
+          "Simulation",
+          "Codeforces"
+        ],
+        [
+          "math",
+          "Math",
+          "Codeforces"
+        ],
+        [
+          "miscellaneous",
+          "Boyer-Moore Voting",
+          "Codeforces"
+        ],
+        [
+          "sequences",
+          "Range Query",
+          "Codeforces"
+        ],
+        [
+          "sliding_window",
+          "Variable-Size Window",
+          "Codeforces"
+        ]
+      ]
+    },
+    {
+      "name": "3559. Minimum Number of Valid Strings to Form Target I",
+      "url": "leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i",
+      "entries": [
+        [
+          "advanced_tree",
+          "Advanced Tree",
+          "LeetCode"
+        ],
+        [
+          "binary_search",
+          "BS on Answer",
+          "LeetCode"
+        ],
+        [
+          "dp",
+          "DP on Strings",
+          "LeetCode"
+        ],
+        [
+          "sequences",
+          "Segment Tree",
+          "LeetCode"
+        ],
+        [
+          "string",
+          "String",
+          "LeetCode"
+        ],
+        [
+          "trie",
+          "Trie",
+          "LeetCode"
+        ]
+      ]
+    },
+    {
+      "name": "Keep XOR Low",
+      "url": "codeforces.com/problemset/problem/1616/h",
+      "entries": [
+        [
+          "advanced_tree",
+          "Advanced Tree",
+          "Codeforces"
+        ],
+        [
+          "bit",
+          "Bitmask DP",
+          "Codeforces"
+        ],
+        [
+          "combinatorics",
+          "Combinatorics",
+          "Codeforces"
+        ],
+        [
+          "dp",
+          "DP with Bitmask",
+          "Codeforces"
+        ],
+        [
+          "math",
+          "Math",
+          "Codeforces"
+        ],
+        [
+          "trie",
+          "Trie",
+          "Codeforces"
+        ]
+      ]
+    },
+    {
+      "name": "79. Word Search",
+      "url": "leetcode.com/problems/word-search",
+      "entries": [
+        [
+          "backtrack",
+          "Word Search",
+          "LeetCode"
+        ],
+        [
+          "graph",
+          "Graph Traversal - BFS/DFS",
+          "LeetCode"
+        ],
+        [
+          "linear_algebra",
+          "Matrix Traversal",
+          "LeetCode"
+        ],
+        [
+          "math",
+          "Math",
+          "LeetCode"
+        ],
+        [
+          "shape",
+          "Matrix",
+          "LeetCode"
+        ],
+        [
+          "string",
+          "String",
+          "LeetCode"
+        ]
+      ]
+    },
+    {
+      "name": "Strange Permutation",
+      "url": "codeforces.com/problemset/problem/1470/e",
+      "entries": [
+        [
+          "backtrack",
+          "Backtracking",
+          "Codeforces"
+        ],
+        [
+          "binary_search",
+          "BS with Data Structures",
+          "Codeforces"
+        ],
+        [
+          "combinatorics",
+          "Combinatorics",
+          "Codeforces"
+        ],
+        [
+          "dp",
+          "DP on Graphs / DAG DP",
+          "Codeforces"
+        ],
+        [
+          "math",
+          "Math",
+          "Codeforces"
+        ],
+        [
+          "sequences",
+          "Range Query",
+          "Codeforces"
+        ]
+      ]
+    },
+    {
+      "name": "Square Subsets",
+      "url": "codeforces.com/problemset/problem/895/c",
+      "entries": [
+        [
+          "backtrack",
+          "Backtracking",
+          "Codeforces"
+        ],
+        [
+          "bit",
+          "Bitmask DP",
+          "Codeforces"
+        ],
+        [
+          "combinatorics",
+          "Combinatorics",
+          "Codeforces"
+        ],
+        [
+          "dp",
+          "DP with Bitmask",
+          "Codeforces"
+        ],
+        [
+          "linear_algebra",
+          "Linear Basis",
+          "Codeforces"
+        ],
+        [
+          "math",
+          "Math",
+          "Codeforces"
+        ]
+      ]
+    },
+    {
+      "name": "Jumping Takahashi 2",
+      "url": "atcoder.jp/contests/abc257/tasks/abc257_d",
+      "entries": [
+        [
+          "binary_search",
+          "Binary Search",
+          "AtCoder"
+        ],
+        [
+          "bit",
+          "Bitmask / Subset Enumeration",
+          "AtCoder"
+        ],
+        [
+          "dp",
+          "DP on Graphs / DAG DP",
+          "AtCoder"
+        ],
+        [
+          "geometry",
+          "Distance",
+          "AtCoder"
+        ],
+        [
+          "heap",
+          "Heap",
+          "AtCoder"
+        ],
+        [
+          "linked_list",
+          "Simulation",
+          "AtCoder"
+        ]
+      ]
+    },
+    {
+      "name": "Shift and Inversions",
+      "url": "atcoder.jp/contests/abc190/tasks/abc190_f",
+      "entries": [
+        [
+          "binary_search",
+          "Binary Search",
+          "AtCoder"
+        ],
+        [
+          "bit",
+          "Bit DP / SOS DP",
+          "AtCoder"
+        ],
+        [
+          "dp",
+          "DP with Data Structures",
+          "AtCoder"
+        ],
+        [
+          "game_theory",
+          "Game Theory",
+          "AtCoder"
+        ],
+        [
+          "math",
+          "Math",
+          "AtCoder"
+        ],
+        [
+          "tree",
+          "Tree Traversal",
+          "AtCoder"
+        ]
+      ]
+    },
+    {
+      "name": "Chain Prefix Rank (Hard Version)",
+      "url": "codeforces.com/problemset/problem/2164/f2",
+      "entries": [
+        [
+          "binary_search",
+          "BS with Data Structures",
+          "Codeforces"
+        ],
+        [
+          "combinatorics",
+          "Combinatorics",
+          "Codeforces"
+        ],
+        [
+          "dp",
+          "DP on Trees",
+          "Codeforces"
+        ],
+        [
+          "math",
+          "Math",
+          "Codeforces"
+        ],
+        [
+          "sequences",
+          "Prefix Sum",
+          "Codeforces"
+        ],
+        [
+          "tree",
+          "Tree Combinatorics",
+          "Codeforces"
+        ]
+      ]
+    },
+    {
+      "name": "Hossam and Range Minimum Query",
+      "url": "codeforces.com/problemset/problem/1771/f",
+      "entries": [
+        [
+          "binary_search",
+          "BS with Data Structures",
+          "Codeforces"
+        ],
+        [
+          "bit",
+          "Bitset/Data Structures",
+          "Codeforces"
+        ],
+        [
+          "math",
+          "Math",
+          "Codeforces"
+        ],
+        [
+          "sequences",
+          "Range Query",
+          "Codeforces"
+        ],
+        [
+          "string",
+          "String",
+          "Codeforces"
+        ],
+        [
+          "tree",
+          "Tree Games",
+          "Codeforces"
+        ]
+      ]
+    },
+    {
+      "name": "Inverse Minimum Partition (Easy Version)",
+      "url": "codeforces.com/problemset/problem/2159/d1",
+      "entries": [
+        [
+          "binary_search",
+          "BS on Answer",
+          "Codeforces"
+        ],
+        [
+          "dp",
+          "DP with Combinatorics",
+          "Codeforces"
+        ],
+        [
+          "geometry",
+          "Geometry",
+          "Codeforces"
+        ],
+        [
+          "math",
+          "Math",
+          "Codeforces"
+        ],
+        [
+          "num_methods",
+          "Numerical Binary Search",
+          "Codeforces"
+        ],
+        [
+          "shape",
+          "Shape/Grid",
+          "Codeforces"
+        ]
+      ]
+    },
+    {
+      "name": "Keen Tree Calculation",
+      "url": "codeforces.com/problemset/problem/1866/k",
+      "entries": [
+        [
+          "binary_search",
+          "BS with Data Structures",
+          "Codeforces"
+        ],
+        [
+          "dp",
+          "DP on Trees",
+          "Codeforces"
+        ],
+        [
+          "geometry",
+          "Geometry",
+          "Codeforces"
+        ],
+        [
+          "math",
+          "Math",
+          "Codeforces"
+        ],
+        [
+          "shape",
+          "Shape/Grid",
+          "Codeforces"
+        ],
+        [
+          "tree",
+          "Tree with Geometry",
+          "Codeforces"
+        ]
+      ]
+    },
+    {
+      "name": "Random Task",
+      "url": "codeforces.com/problemset/problem/431/d",
+      "entries": [
+        [
+          "binary_search",
+          "BS on Answer",
+          "Codeforces"
+        ],
+        [
+          "bit",
+          "Bitmask DP",
+          "Codeforces"
+        ],
+        [
+          "combinatorics",
+          "Combinatorics",
+          "Codeforces"
+        ],
+        [
+          "dp",
+          "DP with Bitmask",
+          "Codeforces"
+        ],
+        [
+          "math",
+          "Math",
+          "Codeforces"
+        ],
+        [
+          "num_methods",
+          "Monte Carlo",
+          "Codeforces"
+        ]
+      ]
+    },
+    {
+      "name": "Strange Test",
+      "url": "codeforces.com/problemset/problem/1632/c",
+      "entries": [
+        [
+          "binary_search",
+          "BS on Answer",
+          "Codeforces"
+        ],
+        [
+          "bit",
+          "Bitmask DP",
+          "Codeforces"
+        ],
+        [
+          "dp",
+          "DP with Bitmask",
+          "Codeforces"
+        ],
+        [
+          "graph",
+          "DSU (General)",
+          "Codeforces"
+        ],
+        [
+          "math",
+          "Math",
+          "Codeforces"
+        ],
+        [
+          "sequences",
+          "Range Query",
+          "Codeforces"
+        ]
+      ]
+    },
+    {
+      "name": "Path With Minimum Effort",
+      "url": "leetcode.com/problems/path-with-minimum-effort",
+      "entries": [
+        [
+          "binary_search",
+          "BS on Answer",
+          "LeetCode"
+        ],
+        [
+          "graph",
+          "Shortest Path - Dijkstra",
+          "LeetCode"
+        ],
+        [
+          "greedy",
+          "Graph Greedy",
+          "LeetCode"
+        ],
+        [
+          "heap",
+          "Heap",
+          "LeetCode"
+        ],
+        [
+          "linear_algebra",
+          "Matrix Operations",
+          "LeetCode"
+        ],
+        [
+          "shape",
+          "Matrix",
+          "LeetCode"
+        ]
+      ]
+    },
+    {
+      "name": "CHEFARC",
+      "url": "codechef.com/problems/chefarc",
+      "entries": [
+        [
+          "binary_search",
+          "Binary Search",
+          "CodeChef"
+        ],
+        [
+          "bit",
+          "Bitmask / Subset Enumeration",
+          "CodeChef"
+        ],
+        [
+          "combinatorics",
+          "Counting",
+          "CodeChef"
+        ],
+        [
+          "game_theory",
+          "Game Theory",
+          "CodeChef"
+        ],
+        [
+          "linear_algebra",
+          "Matrix Exponentiation",
+          "CodeChef"
+        ],
+        [
+          "num_methods",
+          "Numerical Optimization",
+          "CodeChef"
+        ]
+      ]
+    },
+    {
+      "name": "KCON",
+      "url": "codechef.com/problems/kcon",
+      "entries": [
+        [
+          "binary_search",
+          "Binary Search",
+          "CodeChef"
+        ],
+        [
+          "combinatorics",
+          "Counting",
+          "CodeChef"
+        ],
+        [
+          "dp",
+          "1D DP",
+          "CodeChef"
+        ],
+        [
+          "linear_algebra",
+          "Matrix Exponentiation",
+          "CodeChef"
+        ],
+        [
+          "sequences",
+          "Segment Tree",
+          "CodeChef"
+        ],
+        [
+          "sliding_window",
+          "Sliding Window",
+          "CodeChef"
+        ]
+      ]
+    },
+    {
+      "name": "ABC 252 F - Bread",
+      "url": "atcoder.jp/contests/abc252/tasks/abc252_f",
+      "entries": [
+        [
+          "bit",
+          "Bit DP / SOS DP",
+          "AtCoder"
+        ],
+        [
+          "dp",
+          "DP on Trees",
+          "AtCoder"
+        ],
+        [
+          "graph",
+          "ABC",
+          "AtCoder"
+        ],
+        [
+          "greedy",
+          "Greedy",
+          "AtCoder"
+        ],
+        [
+          "heap",
+          "Heap",
+          "AtCoder"
+        ],
+        [
+          "tree",
+          "Tree Traversal",
+          "AtCoder"
+        ]
+      ]
+    },
+    {
+      "name": "ABC 266 F - Exactly K Steps",
+      "url": "atcoder.jp/contests/abc266/tasks/abc266_f",
+      "entries": [
+        [
+          "bit",
+          "Bit DP / SOS DP",
+          "AtCoder"
+        ],
+        [
+          "dp",
+          "DP on Trees",
+          "AtCoder"
+        ],
+        [
+          "graph",
+          "ABC",
+          "AtCoder"
+        ],
+        [
+          "linear_algebra",
+          "Matrix Exponentiation",
+          "AtCoder"
+        ],
+        [
+          "sequences",
+          "Segment Tree",
+          "AtCoder"
+        ],
+        [
+          "tree",
+          "Tree DP",
+          "AtCoder"
+        ]
+      ]
+    },
+    {
+      "name": "ABC 281 F - Xor of Sequences",
+      "url": "atcoder.jp/contests/abc281/tasks/abc281_f",
+      "entries": [
+        [
+          "bit",
+          "Bit DP / SOS DP",
+          "AtCoder"
+        ],
+        [
+          "dp",
+          "DP with Data Structures",
+          "AtCoder"
+        ],
+        [
+          "linear_algebra",
+          "Matrix Exponentiation",
+          "AtCoder"
+        ],
+        [
+          "math",
+          "Math",
+          "AtCoder"
+        ],
+        [
+          "sequences",
+          "Range Query",
+          "AtCoder"
+        ],
+        [
+          "trie",
+          "Trie / XOR",
+          "AtCoder"
+        ]
+      ]
+    },
+    {
+      "name": "Xor of Median (Hard Version)",
+      "url": "codeforces.com/problemset/problem/2056/f2",
+      "entries": [
+        [
+          "bit",
+          "Bitmask DP",
+          "Codeforces"
+        ],
+        [
+          "combinatorics",
+          "Combinatorics",
+          "Codeforces"
+        ],
+        [
+          "dp",
+          "DP with Bitmask",
+          "Codeforces"
+        ],
+        [
+          "heap",
+          "Heap",
+          "Codeforces"
+        ],
+        [
+          "math",
+          "Math",
+          "Codeforces"
+        ],
+        [
+          "trie",
+          "Trie",
+          "Codeforces"
+        ]
+      ]
+    },
+    {
+      "name": "Xor of Median (Easy Version)",
+      "url": "codeforces.com/problemset/problem/2056/f1",
+      "entries": [
+        [
+          "bit",
+          "Bitmask DP",
+          "Codeforces"
+        ],
+        [
+          "combinatorics",
+          "Combinatorics",
+          "Codeforces"
+        ],
+        [
+          "dp",
+          "DP with Bitmask",
+          "Codeforces"
+        ],
+        [
+          "heap",
+          "Heap",
+          "Codeforces"
+        ],
+        [
+          "math",
+          "Math",
+          "Codeforces"
+        ],
+        [
+          "trie",
+          "Trie",
+          "Codeforces"
+        ]
+      ]
+    },
+    {
+      "name": "Fenwick Tree",
+      "url": "codeforces.com/problemset/problem/1967/c",
+      "entries": [
+        [
+          "bit",
+          "Bitmask DP",
+          "Codeforces"
+        ],
+        [
+          "combinatorics",
+          "Combinatorics",
+          "Codeforces"
+        ],
+        [
+          "dp",
+          "DP on Trees",
+          "Codeforces"
+        ],
+        [
+          "math",
+          "Math",
+          "Codeforces"
+        ],
+        [
+          "sequences",
+          "Fenwick Tree",
+          "Codeforces"
+        ],
+        [
+          "tree",
+          "Tree Combinatorics",
+          "Codeforces"
+        ]
+      ]
+    },
+    {
+      "name": "Moamen and XOR",
+      "url": "codeforces.com/problemset/problem/1557/c",
+      "entries": [
+        [
+          "bit",
+          "Bitmask DP",
+          "Codeforces"
+        ],
+        [
+          "combinatorics",
+          "Combinatorics",
+          "Codeforces"
+        ],
+        [
+          "dp",
+          "DP with Bitmask",
+          "Codeforces"
+        ],
+        [
+          "linear_algebra",
+          "Linear Basis",
+          "Codeforces"
+        ],
+        [
+          "math",
+          "Math",
+          "Codeforces"
+        ],
+        [
+          "trie",
+          "Trie",
+          "Codeforces"
+        ]
+      ]
+    },
+    {
+      "name": "XOR Inverse",
+      "url": "codeforces.com/problemset/problem/1416/c",
+      "entries": [
+        [
+          "bit",
+          "Bitmask DP",
+          "Codeforces"
+        ],
+        [
+          "dp",
+          "DP on Trees",
+          "Codeforces"
+        ],
+        [
+          "math",
+          "Math",
+          "Codeforces"
+        ],
+        [
+          "string",
+          "String",
+          "Codeforces"
+        ],
+        [
+          "tree",
+          "Tree DP",
+          "Codeforces"
+        ],
+        [
+          "trie",
+          "Trie",
+          "Codeforces"
+        ]
+      ]
+    },
+    {
+      "name": "1542D. Priority Queue",
+      "url": "codeforces.com/problemset/problem/1542/d",
+      "entries": [
+        [
+          "combinatorics",
+          "Combinatorics",
+          "Codeforces"
+        ],
+        [
+          "dp",
+          "DP with Combinatorics",
+          "Codeforces"
+        ],
+        [
+          "heap",
+          "Heap",
+          "Codeforces"
+        ],
+        [
+          "linked_list",
+          "Simulation",
+          "Codeforces"
+        ],
+        [
+          "math",
+          "Math",
+          "Codeforces"
+        ],
+        [
+          "num_methods",
+          "Ternary Search",
+          "Codeforces"
+        ]
+      ]
+    },
+    {
+      "name": "1205 - Palindromic Numbers",
+      "url": "lightoj.com/problem/palindromic-numbers",
+      "entries": [
+        [
+          "combinatorics",
+          "Combinations",
+          "LightOJ"
+        ],
+        [
+          "dp",
+          "DP on Intervals",
+          "LightOJ"
+        ],
+        [
+          "game_theory",
+          "Game Theory",
+          "LightOJ"
+        ],
+        [
+          "greedy",
+          "Greedy",
+          "LightOJ"
+        ],
+        [
+          "linear_algebra",
+          "Matrix Exponentiation",
+          "LightOJ"
+        ],
+        [
+          "string",
+          "String",
+          "LightOJ"
+        ]
+      ]
+    },
+    {
+      "name": "3364. Minimum Sum of Values by Dividing Array",
+      "url": "leetcode.com/problems/minimum-sum-of-values-by-dividing-array",
+      "entries": [
+        [
+          "advanced_tree",
+          "Advanced Tree",
+          "LeetCode"
+        ],
+        [
+          "binary_search",
+          "BS on Answer",
+          "LeetCode"
+        ],
+        [
+          "dp",
+          "1D DP",
+          "LeetCode"
+        ],
+        [
+          "greedy",
+          "Array Greedy",
+          "LeetCode"
+        ],
+        [
+          "sequences",
+          "Segment Tree",
+          "LeetCode"
+        ]
+      ]
+    },
+    {
+      "name": "3557. Minimum Number of Valid Strings to Form Target II",
+      "url": "leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-ii",
+      "entries": [
+        [
+          "advanced_tree",
+          "Advanced Tree",
+          "LeetCode"
+        ],
+        [
+          "binary_search",
+          "BS with Data Structures",
+          "LeetCode"
+        ],
+        [
+          "dp",
+          "DP on Strings",
+          "LeetCode"
+        ],
+        [
+          "sequences",
+          "Segment Tree",
+          "LeetCode"
+        ],
+        [
+          "string",
+          "String",
+          "LeetCode"
+        ]
+      ]
+    },
+    {
+      "name": "Invertible Bracket Sequences",
+      "url": "codeforces.com/problemset/problem/1976/d",
+      "entries": [
+        [
+          "advanced_tree",
+          "Advanced Tree",
+          "Codeforces"
+        ],
+        [
+          "binary_search",
+          "BS with Data Structures",
+          "Codeforces"
+        ],
+        [
+          "combinatorics",
+          "Combinatorics",
+          "Codeforces"
+        ],
+        [
+          "math",
+          "Math",
+          "Codeforces"
+        ],
+        [
+          "string",
+          "String",
+          "Codeforces"
+        ]
+      ]
+    },
+    {
+      "name": "Minimal String Xoration",
+      "url": "codeforces.com/problemset/problem/1654/f",
+      "entries": [
+        [
+          "advanced_tree",
+          "Advanced Tree",
+          "Codeforces"
+        ],
+        [
+          "bit",
+          "Bitset/Data Structures",
+          "Codeforces"
+        ],
+        [
+          "sequences",
+          "Range Query",
+          "Codeforces"
+        ],
+        [
+          "string",
+          "String",
+          "Codeforces"
+        ],
+        [
+          "trie",
+          "Trie",
+          "Codeforces"
+        ]
+      ]
+    },
+    {
+      "name": "High Cry",
+      "url": "codeforces.com/problemset/problem/875/d",
+      "entries": [
+        [
+          "advanced_tree",
+          "Advanced Tree",
+          "Codeforces"
+        ],
+        [
+          "binary_search",
+          "BS with Data Structures",
+          "Codeforces"
+        ],
+        [
+          "bit",
+          "Bitset/Data Structures",
+          "Codeforces"
+        ],
+        [
+          "combinatorics",
+          "Combinatorics",
+          "Codeforces"
+        ],
+        [
+          "math",
+          "Math",
+          "Codeforces"
+        ]
+      ]
+    },
+    {
+      "name": "Maximum Building I",
+      "url": "cses.fi/problemset/task/1147",
+      "entries": [
+        [
+          "advanced_tree",
+          "Advanced Tree",
+          "CSES"
+        ],
+        [
+          "binary_search",
+          "Binary Search",
+          "CSES"
+        ],
+        [
+          "greedy",
+          "Additional Problems",
+          "CSES"
+        ],
+        [
+          "linked_list",
+          "Simulation",
+          "CSES"
+        ],
+        [
+          "sequences",
+          "Range Maximum Query",
+          "CSES"
+        ]
+      ]
+    },
+    {
+      "name": "C. Median Sum",
+      "url": "atcoder.jp/contests/agc020/tasks/agc020_c",
+      "entries": [
+        [
+          "advanced_tree",
+          "Advanced Tree",
+          "AtCoder"
+        ],
+        [
+          "binary_search",
+          "Binary Search",
+          "AtCoder"
+        ],
+        [
+          "bit",
+          "Bitset Operations",
+          "AtCoder"
+        ],
+        [
+          "dp",
+          "Meet in the Middle",
+          "AtCoder"
+        ],
+        [
+          "math",
+          "Math",
+          "AtCoder"
+        ]
+      ]
+    },
+    {
+      "name": "D. Count Interval",
+      "url": "atcoder.jp/contests/abc233/tasks/abc233_d",
+      "entries": [
+        [
+          "advanced_tree",
+          "Advanced Tree",
+          "AtCoder"
+        ],
+        [
+          "binary_search",
+          "Binary Search",
+          "AtCoder"
+        ],
+        [
+          "bit",
+          "Bitmask / Subset Enumeration",
+          "AtCoder"
+        ],
+        [
+          "geometry",
+          "Geometry",
+          "AtCoder"
+        ],
+        [
+          "math",
+          "Math",
+          "AtCoder"
+        ]
+      ]
+    },
+    {
+      "name": "D. Strange Balls",
+      "url": "atcoder.jp/contests/abc240/tasks/abc240_d",
+      "entries": [
+        [
+          "advanced_tree",
+          "Advanced Tree",
+          "AtCoder"
+        ],
+        [
+          "binary_search",
+          "Binary Search",
+          "AtCoder"
+        ],
+        [
+          "bit",
+          "Bitmask / Subset Enumeration",
+          "AtCoder"
+        ],
+        [
+          "geometry",
+          "Geometry",
+          "AtCoder"
+        ],
+        [
+          "linked_list",
+          "Simulation",
+          "AtCoder"
+        ]
+      ]
+    },
+    {
+      "name": "F. Erase Subarrays",
+      "url": "atcoder.jp/contests/abc275/tasks/abc275_f",
+      "entries": [
+        [
+          "advanced_tree",
+          "Advanced Tree",
+          "AtCoder"
+        ],
+        [
+          "bit",
+          "Bit DP / SOS DP",
+          "AtCoder"
+        ],
+        [
+          "dp",
+          "DP with Probability / Expected Value",
+          "AtCoder"
+        ],
+        [
+          "math",
+          "Math",
+          "AtCoder"
+        ],
+        [
+          "sliding_window",
+          "Sliding Window",
+          "AtCoder"
+        ]
+      ]
+    },
+    {
+      "name": "D. Range Add Query",
+      "url": "atcoder.jp/contests/abc288/tasks/abc288_d",
+      "entries": [
+        [
+          "advanced_tree",
+          "Advanced Tree",
+          "AtCoder"
+        ],
+        [
+          "binary_search",
+          "Binary Search",
+          "AtCoder"
+        ],
+        [
+          "bit",
+          "Bitmask / Subset Enumeration",
+          "AtCoder"
+        ],
+        [
+          "geometry",
+          "Geometry",
+          "AtCoder"
+        ],
+        [
+          "math",
+          "Math",
+          "AtCoder"
+        ]
+      ]
+    }
+  ]
+}

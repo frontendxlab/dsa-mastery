@@ -99,6 +99,10 @@ import { monotonicQueueArticle } from './content/monotonic-queue'
 import { topologicalSortArticle } from './content/topological-sort'
 import { minimumSpanningTreeArticle } from './content/minimum-spanning-tree'
 import { stringHashingArticle } from './content/string-hashing'
+import { twoHeapsArticle } from './content/two-heaps'
+import { networkFlowArticle } from './content/network-flow'
+import { meetInMiddleArticle } from './content/meet-in-middle'
+import { convexHullTrickArticle } from './content/convex-hull-trick'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -167,6 +171,10 @@ export const articles: Article[] = [
   topologicalSortArticle,
   minimumSpanningTreeArticle,
   stringHashingArticle,
+  twoHeapsArticle,
+  networkFlowArticle,
+  meetInMiddleArticle,
+  convexHullTrickArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
