@@ -2,6 +2,8 @@ import { createFileRoute, Link, notFound } from '@tanstack/react-router'
 import { useState, useEffect, useMemo } from 'react'
 import { articles, getArticle } from '#/data/articles'
 import type { Section, Intuition } from '#/data/articles'
+import { ShikiCodeBlock, SimpleCodeBlock } from '#/components/ShikiCodeBlock'
+import katex from 'katex'
 
 export const Route = createFileRoute('/learn/$pattern')({
   loader: ({ params }) => {
@@ -23,8 +25,20 @@ export const Route = createFileRoute('/learn/$pattern')({
 
 // ─── Helpers ───────────────────────────────────────────────────────────────
 
+function renderKatex(tex: string, display: boolean) {
+  try {
+    return katex.renderToString(tex, { displayMode: display, throwOnError: false, output: 'html' })
+  } catch {
+    return tex
+  }
+}
+
 function md(text: string) {
   return text
+    // Block math: $$...$$
+    .replace(/\$\$([^$]+)\$\$/g, (_, tex) => `<span class="katex-block">${renderKatex(tex.trim(), true)}</span>`)
+    // Inline math: $...$
+    .replace(/\$([^$\n]+)\$/g, (_, tex) => renderKatex(tex.trim(), false))
     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
     .replace(/`([^`]+)`/g, '<code class="nb-inline-code">$1</code>')
     .replace(/\n/g, '<br/>')
@@ -52,27 +66,7 @@ function StickyCallout({ icon, color, content }: { icon: string; color: string; 
   )
 }
 
-function CodeBlock({ code, caption }: { lang?: string; code: string; caption?: string }) {
-  const [copied, setCopied] = useState(false)
-  const copy = () => {
-    navigator.clipboard.writeText(code)
-    setCopied(true)
-    setTimeout(() => setCopied(false), 1500)
-  }
-  return (
-    <div className="nb-code-block my-6">
-      {caption && <div className="nb-code-caption">{caption}</div>}
-      <div className="relative">
-        <button onClick={copy} className="absolute right-3 top-3 nb-chip bg-white text-xs py-1 px-2 z-10">
-          {copied ? '✓ Copied' : 'Copy'}
-        </button>
-        <pre className="overflow-x-auto p-4 pr-20 text-sm leading-relaxed">
-          <code>{code}</code>
-        </pre>
-      </div>
-    </div>
-  )
-}
+
 
 function RecognitionTable({ headers, rows }: { headers: string[]; rows: string[][] }) {
   return (
@@ -346,7 +340,7 @@ function renderSection(section: Section, i: number) {
     case 'callout':
       return <StickyCallout key={i} icon={section.icon} color={section.color} content={section.content} />
     case 'code':
-      return <CodeBlock key={i} lang={section.lang} code={section.code} caption={section.caption} />
+      return <ShikiCodeBlock key={i} lang={section.lang || 'javascript'} code={section.code} caption={section.caption} />
     case 'table':
       return <RecognitionTable key={i} headers={section.headers} rows={section.rows} />
     case 'problem':
