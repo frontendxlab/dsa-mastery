@@ -86,6 +86,7 @@ import { twoSumFamilyArticle } from './content/two-sum-family'
 import { palindromePatternsArticle } from './content/palindrome-patterns'
 import { sortingAlgorithmsArticle } from './content/sorting-algorithms'
 import { bipartiteArticle } from './content/bipartite'
+import { segmentTreeLazyArticle } from './content/segment-tree-lazy'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -141,6 +142,7 @@ export const articles: Article[] = [
   palindromePatternsArticle,
   sortingAlgorithmsArticle,
   bipartiteArticle,
+  segmentTreeLazyArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
