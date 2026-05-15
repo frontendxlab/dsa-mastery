@@ -87,6 +87,7 @@ import { palindromePatternsArticle } from './content/palindrome-patterns'
 import { sortingAlgorithmsArticle } from './content/sorting-algorithms'
 import { bipartiteArticle } from './content/bipartite'
 import { segmentTreeLazyArticle } from './content/segment-tree-lazy'
+import { recursionMemoizationArticle } from './content/recursion-memoization'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -143,6 +144,7 @@ export const articles: Article[] = [
   sortingAlgorithmsArticle,
   bipartiteArticle,
   segmentTreeLazyArticle,
+  recursionMemoizationArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
