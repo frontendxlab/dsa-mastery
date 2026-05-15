@@ -1,5 +1,38 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { articles } from '#/data/articles'
+import {
+  Share2, Layers, TreePine, Hash, Link2, ChevronUp, Network,
+  Type, List, Search, Zap, Binary, RotateCcw, Shuffle,
+  Gamepad2, Triangle, Grid3X3, Calendar, Package, TrendingUp,
+  GitMerge, Code2, ArrowRight,
+} from 'lucide-react'
+import type { LucideIcon } from 'lucide-react'
+
+const TOPIC_ICON: Record<string, LucideIcon> = {
+  graph: Share2,
+  dp: Layers,
+  tree: TreePine,
+  math: Hash,
+  linked_list: Link2,
+  heap: ChevronUp,
+  trie: Network,
+  string: Type,
+  sequences: List,
+  binary_search: Search,
+  greedy: Zap,
+  bit: Binary,
+  backtrack: RotateCcw,
+  combinatorics: Shuffle,
+  game_theory: Gamepad2,
+  geometry: Triangle,
+  linear_algebra: Grid3X3,
+  scheduling: Calendar,
+  miscellaneous: Package,
+  num_methods: TrendingUp,
+  advanced_tree: GitMerge,
+  sliding_window: Search,
+  shape: Package,
+}
 
 export const Route = createFileRoute('/learn/')({ component: LearnPage })
 
@@ -144,7 +177,7 @@ function ChapterCard({ article, num, accentColor }: { article: (typeof articles)
       {/* Content */}
       <div className="min-w-0 flex-1">
         <div className="flex items-start gap-2">
-          <span className="text-lg leading-none">{article.emoji}</span>
+          {(() => { const Icon = TOPIC_ICON[article.topicSlug] ?? Code2; return <Icon size={16} className="shrink-0 opacity-70 mt-0.5" />; })()}
           <h3 className="nb-heading-sm truncate leading-tight">{article.title}</h3>
         </div>
         <p className="mt-1 line-clamp-2 text-xs leading-relaxed opacity-60">

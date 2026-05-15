@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import ThemeToggle from "./ThemeToggle";
 import { useState, useEffect, useRef } from "react";
+import { Palette, Menu, X, Github, BookOpen, Compass, LayoutGrid, Zap } from "lucide-react";
 
 const NB_THEMES = [
 	{ key: "default", label: "Default", swatch: "#ffe566" },
@@ -56,10 +57,10 @@ function NbThemePicker() {
 				style={{ "--swatch": current.swatch } as React.CSSProperties}
 				aria-label="Choose colour theme"
 			>
-				🎨
+				<Palette size={16} />
 			</button>
 			{open && (
-				<div className="absolute right-0 top-10 z-50 flex gap-1.5 rounded-lg border-2 border-[var(--nb-border-color,#0f0f0f)] bg-white p-2 shadow-[4px_4px_0px_#0f0f0f]">
+				<div className="absolute right-0 top-10 z-50 flex gap-1.5 rounded-lg border border-[var(--nb-border-color)] bg-white p-2 shadow-md">
 					{NB_THEMES.map((t) => (
 						<button
 							key={t.key}
@@ -142,16 +143,16 @@ export default function Header() {
 	}, []);
 
 	const navItems = [
-		{ label: "Topics", to: "/" },
-		{ label: "Learn", to: "/learn" },
-		{ label: "DSA Patterns", to: "/patterns" },
-		{ label: "Explore", to: "/explore" },
+		{ label: "Topics", to: "/", icon: LayoutGrid },
+		{ label: "Learn", to: "/learn", icon: BookOpen },
+		{ label: "DSA Patterns", to: "/patterns", icon: Zap },
+		{ label: "Explore", to: "/explore", icon: Compass },
 	];
 
 	return (
 		<header
-			className={`sticky top-0 z-50 border-b-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] transition-all duration-200 ${
-				scrolled ? "shadow-[0_4px_0px_var(--nb-border-color,#0f0f0f)]" : ""
+			className={`sticky top-0 z-50 border-b border-[var(--nb-border-color)] bg-[var(--nb-surface)] transition-all duration-200 ${
+				scrolled ? "shadow-md" : ""
 			}`}
 		>
 			<nav className="page-wrap flex flex-wrap items-center gap-x-3 gap-y-2 py-3 sm:py-4">
@@ -160,7 +161,7 @@ export default function Header() {
 						to="/"
 						className="nb-logo inline-flex items-center gap-3 no-underline"
 					>
-						<div className="nb-logo-mark relative flex h-10 w-10 items-center justify-center rounded-lg border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-yellow,#ffe566)] shadow-[3px_3px_0px_var(--nb-border-color,#0f0f0f)] transition-all duration-150 hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]">
+						<div className="nb-logo-mark relative flex h-9 w-9 items-center justify-center rounded-lg border border-[var(--nb-border-color)] bg-[var(--nb-yellow)] shadow-sm transition-all duration-150 hover:shadow-md hover:-translate-y-0.5">
 							<span className="text-xl font-black text-[var(--nb-on-accent,#111)]">
 								fx
 							</span>
@@ -180,12 +181,10 @@ export default function Header() {
 				<button
 					type="button"
 					onClick={() => setMobileMenuOpen((o) => !o)}
-					className="ml-auto flex sm:hidden items-center justify-center h-10 w-10 rounded-lg border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] shadow-[3px_3px_0px_var(--nb-border-color,#0f0f0f)] transition-all duration-150 active:shadow-none active:translate-x-[3px] active:translate-y-[3px]"
+					className="ml-auto flex sm:hidden items-center justify-center h-9 w-9 rounded-lg border border-[var(--nb-border-color)] bg-[var(--nb-surface-strong)] transition-all duration-150"
 					aria-label="Toggle menu"
 				>
-					<span className="text-lg font-black">
-						{mobileMenuOpen ? "×" : "☰"}
-					</span>
+					{mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
 				</button>
 
 				<div
@@ -195,26 +194,27 @@ export default function Header() {
 						<Link
 							key={item.to}
 							to={item.to}
-							className="nb-nav-link group relative inline-flex items-center justify-center sm:justify-start px-4 py-2 text-sm font-bold text-[var(--nb-ink,#111)] no-underline rounded-lg border-2 border-transparent transition-all duration-150 hover:border-[var(--nb-border-color,#0f0f0f)] hover:bg-[var(--nb-yellow,#ffe566)] hover:shadow-[3px_3px_0px_var(--nb-border-color,#0f0f0f)]"
+							className="nb-nav-link group relative inline-flex items-center justify-center sm:justify-start gap-0 px-3 py-2 text-sm font-semibold text-[var(--nb-ink,#111)] no-underline rounded-lg border border-transparent transition-all duration-150 hover:border-[var(--nb-border-color)] hover:bg-[var(--nb-surface-strong)]"
 							activeProps={{
 								className:
-									"nb-nav-link-active border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-teal,#7ee8e2)] shadow-[3px_3px_0px_var(--nb-border-color,#0f0f0f)]",
+									"nb-nav-link-active border-[var(--nb-border-color)] bg-[var(--nb-teal)] text-[var(--nb-ink)]",
 							}}
 							onClick={() => setMobileMenuOpen(false)}
 						>
-							<span className="relative z-10">{item.label}</span>
-							<span className="absolute bottom-0 left-1/2 h-1 w-0 -translate-x-1/2 bg-[var(--nb-pink,#ff9ec4)] transition-all duration-200 group-hover:w-3/4 group-[.nb-nav-link-active]:w-3/4" />
+							<item.icon size={14} className="shrink-0 opacity-70" />
+							<span className="relative z-10 ml-1.5">{item.label}</span>
+							<span className="absolute bottom-0 left-1/2 h-1 w-0 -translate-x-1/2 bg-[var(--nb-pink)] transition-all duration-200 group-hover:w-3/4 group-[.nb-nav-link-active]:w-3/4" />
 						</Link>
 					))}
 					<a
 						href="https://github.com/rashidtvmr/dsa-inventory"
-						className="nb-nav-link inline-flex items-center justify-center sm:justify-start gap-1.5 px-4 py-2 text-sm font-bold text-[var(--nb-ink,#111)] no-underline rounded-lg border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] shadow-[3px_3px_0px_var(--nb-border-color,#0f0f0f)] transition-all duration-150 hover:bg-[var(--nb-green,#a8f0b8)] active:shadow-none active:translate-x-[3px] active:translate-y-[3px]"
+						className="nb-nav-link inline-flex items-center justify-center sm:justify-start gap-1.5 px-3 py-2 text-sm font-semibold text-[var(--nb-ink,#111)] no-underline rounded-lg border border-[var(--nb-border-color)] bg-[var(--nb-surface-strong)] transition-all duration-150 hover:bg-[var(--nb-green)]"
 						target="_blank"
 						rel="noreferrer"
 						onClick={() => setMobileMenuOpen(false)}
 					>
+						<Github size={16} />
 						<span>GitHub</span>
-						<span className="text-xs">↗</span>
 					</a>
 				</div>
 

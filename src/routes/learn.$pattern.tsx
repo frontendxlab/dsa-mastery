@@ -4,6 +4,39 @@ import { articles, getArticle } from '#/data/articles'
 import type { Section, Intuition } from '#/data/articles'
 import { ShikiCodeBlock, SimpleCodeBlock } from '#/components/ShikiCodeBlock'
 import katex from 'katex'
+import {
+  Share2, Layers, TreePine, Hash, Link2, ChevronUp, Network,
+  Type, List, Search, Zap, Binary, RotateCcw, Shuffle,
+  Gamepad2, Triangle, Grid3X3, Calendar, Package, TrendingUp,
+  GitMerge, Code2,
+} from 'lucide-react'
+import type { LucideIcon } from 'lucide-react'
+
+const TOPIC_ICON: Record<string, LucideIcon> = {
+  graph: Share2,
+  dp: Layers,
+  tree: TreePine,
+  math: Hash,
+  linked_list: Link2,
+  heap: ChevronUp,
+  trie: Network,
+  string: Type,
+  sequences: List,
+  binary_search: Search,
+  greedy: Zap,
+  bit: Binary,
+  backtrack: RotateCcw,
+  combinatorics: Shuffle,
+  game_theory: Gamepad2,
+  geometry: Triangle,
+  linear_algebra: Grid3X3,
+  scheduling: Calendar,
+  miscellaneous: Package,
+  num_methods: TrendingUp,
+  advanced_tree: GitMerge,
+  sliding_window: Search,
+  shape: Package,
+}
 
 export const Route = createFileRoute('/learn/$pattern')({
   loader: ({ params }) => {
@@ -380,7 +413,7 @@ function ArticleNav({ currentSlug }: { currentSlug: string }) {
                 params={{ pattern: a.slug }}
                 className={`flex items-center gap-2 rounded px-2 py-1.5 text-xs font-semibold no-underline transition-colors hover:bg-[var(--nb-yellow)] ${a.slug === currentSlug ? 'bg-[var(--nb-yellow)] font-black' : ''}`}
               >
-                <span>{a.emoji}</span>
+                {(() => { const Icon = TOPIC_ICON[a.topicSlug] ?? Code2; return <Icon size={12} className="shrink-0 opacity-60" />; })()}
                 <span className="truncate">{a.title}</span>
               </Link>
             </li>
@@ -414,7 +447,7 @@ function ArticlePage() {
           {/* Article hero */}
           <div className="nb-card bg-[var(--nb-yellow)] mb-8 p-7 sm:p-10">
             <div className="flex items-start gap-4 flex-wrap sm:flex-nowrap">
-              <span className="text-5xl flex-shrink-0">{article.emoji}</span>
+              {(() => { const Icon = TOPIC_ICON[article.topicSlug] ?? Code2; return <Icon size={40} className="shrink-0 opacity-80" />; })()}
               <div className="flex-1 min-w-0">
                 <p className="nb-kicker mb-1">Pattern Guide</p>
                 <h1 className="nb-display text-[clamp(1.6rem,4vw,2.8rem)] leading-tight mb-2">
@@ -463,13 +496,13 @@ function ArticlePage() {
                   {prev && (
                     <Link to="/learn/$pattern" params={{ pattern: prev.slug }}
                       className="nb-btn nb-btn-outline flex-1 text-center no-underline min-w-[140px]">
-                      ← {prev.emoji} {prev.title}
+                      ← {prev.title}
                     </Link>
                   )}
                   {next && (
                     <Link to="/learn/$pattern" params={{ pattern: next.slug }}
                       className="nb-btn flex-1 text-center no-underline min-w-[140px]">
-                      {next.emoji} {next.title} →
+                      {next.title} →
                     </Link>
                   )}
                 </>
