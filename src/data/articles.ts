@@ -183,6 +183,10 @@ import { carryDpArticle } from './content/carry-dp'
 import { randomWalkArticle } from './content/random-walk'
 import { stringConstructionArticle } from './content/string-construction'
 import { topkStreamingArticle } from './content/topk-streaming'
+import { stronglyConnectedComponentsArticle } from './content/strongly-connected-components'
+import { binaryLiftingArticle } from './content/binary-lifting'
+import { segmentTreeBasicsArticle } from './content/segment-tree-basics'
+import { multisetOrderedSetArticle } from './content/multiset-ordered-set'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -335,6 +339,10 @@ export const articles: Article[] = [
   randomWalkArticle,
   stringConstructionArticle,
   topkStreamingArticle,
+  stronglyConnectedComponentsArticle,
+  binaryLiftingArticle,
+  segmentTreeBasicsArticle,
+  multisetOrderedSetArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {

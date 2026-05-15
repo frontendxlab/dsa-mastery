@@ -13,7 +13,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part II — Linked Structures',
     color: 'var(--nb-blue)',
-    chapters: ['linked-list', 'trees', 'advanced-trees', 'sparse-table', 'segment-tree-lazy', 'cycle-detection', 'tree-construction', 'lca', 'dsu-on-tree', 'tree-diameter', 'offline-lca', 'tree-isomorphism', 'persistent-union-find'],
+    chapters: ['linked-list', 'trees', 'advanced-trees', 'sparse-table', 'segment-tree-lazy', 'cycle-detection', 'tree-construction', 'lca', 'dsu-on-tree', 'tree-diameter', 'offline-lca', 'tree-isomorphism', 'persistent-union-find', 'binary-lifting', 'segment-tree-basics'],
   },
   {
     part: 'Part III — Hashing & Auxiliary Structures',
@@ -23,7 +23,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part IV — Core Algorithms',
     color: 'var(--nb-green)',
-    chapters: ['dynamic-programming', 'backtracking', 'greedy', 'graph', 'shortest-path', 'bitmask-dp', 'divide-conquer', 'knapsack-dp', 'graph-advanced', 'bipartite', 'coordinate-compression', 'topological-sort', 'minimum-spanning-tree', 'network-flow', 'meet-in-middle', 'convex-hull-trick', 'centroid-decomposition', 'line-sweep', 'two-sat', 'bridges-articulation', 'min-cost-flow', 'flow-lower-bounds', 'bidirectional-bfs', 'a-star-search', 'difference-constraints', 'functional-graphs', 'matching-flow', 'graph-coloring', 'topk-streaming'],
+    chapters: ['dynamic-programming', 'backtracking', 'greedy', 'graph', 'shortest-path', 'bitmask-dp', 'divide-conquer', 'knapsack-dp', 'graph-advanced', 'bipartite', 'coordinate-compression', 'topological-sort', 'minimum-spanning-tree', 'network-flow', 'meet-in-middle', 'convex-hull-trick', 'centroid-decomposition', 'line-sweep', 'two-sat', 'bridges-articulation', 'min-cost-flow', 'flow-lower-bounds', 'bidirectional-bfs', 'a-star-search', 'difference-constraints', 'functional-graphs', 'matching-flow', 'graph-coloring', 'topk-streaming', 'strongly-connected-components'],
   },
   {
     part: 'Part V — Strings, Sequences & Grid',
@@ -38,7 +38,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part VII — Advanced Topics',
     color: 'var(--nb-yellow)',
-    chapters: ['linear-algebra', 'numerical-methods', 'scheduling', 'shapes', 'miscellaneous', 'design-patterns', 'sorting-algorithms', 'simulation', 'matrix-exponentiation', 'randomized-algorithms'],
+    chapters: ['linear-algebra', 'numerical-methods', 'scheduling', 'shapes', 'miscellaneous', 'design-patterns', 'sorting-algorithms', 'simulation', 'matrix-exponentiation', 'randomized-algorithms', 'multiset-ordered-set'],
   },
   {
     part: 'Part VIII — Cross-Topic Deep Dives',
