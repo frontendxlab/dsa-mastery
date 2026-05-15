@@ -115,6 +115,10 @@ import { matrixExponentiationArticle } from './content/matrix-exponentiation'
 import { ahoCorasickArticle } from './content/aho-corasick'
 import { centroidDecompositionArticle } from './content/centroid-decomposition'
 import { lineSweepArticle } from './content/line-sweep'
+import { bracketSequencesArticle } from './content/bracket-sequences'
+import { differenceArrayArticle } from './content/difference-array'
+import { contributionTechniqueArticle } from './content/contribution-technique'
+import { divideConquerDpArticle } from './content/divide-conquer-dp'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -199,6 +203,10 @@ export const articles: Article[] = [
   ahoCorasickArticle,
   centroidDecompositionArticle,
   lineSweepArticle,
+  bracketSequencesArticle,
+  differenceArrayArticle,
+  contributionTechniqueArticle,
+  divideConquerDpArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
