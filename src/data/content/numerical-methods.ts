@@ -261,10 +261,81 @@ function newtonMethod(f, fPrime, x0, tolerance = 1e-9) {
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 4,
+      title: 'Magnetic Force Between Two Balls',
+      url: 'https://leetcode.com/problems/magnetic-force-between-two-balls/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Binary search on minimum gap — maximize it',
+          explanation: `"Maximize minimum distance between any two balls." Binary search on the answer (min gap d). For a given d, greedily check if m balls can be placed such that each consecutive pair has gap ≥ d: start at position[0], place next ball at the first position ≥ prev + d. Count placements — if ≥ m, d is achievable.`,
+          code: `var maxDistance = function(position, m) {
+    position.sort((a,b)=>a-b);
+    const canPlace = d => {
+        let count = 1, last = position[0];
+        for (let i = 1; i < position.length; i++) {
+            if (position[i] - last >= d) { count++; last = position[i]; }
+        }
+        return count >= m;
+    };
+    let lo = 1, hi = position[position.length-1] - position[0];
+    while (lo < hi) {
+        const mid = lo + ((hi - lo + 1) >> 1);
+        if (canPlace(mid)) lo = mid;
+        else hi = mid - 1;
+    }
+    return lo;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 5,
+      title: 'Ternary Search — Peak in Unimodal Array',
+      url: 'https://leetcode.com/problems/find-peak-element/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Ternary search on unimodal function',
+          explanation: `For a unimodal function (first increases, then decreases), ternary search works. Divide range into thirds: if f(m1) < f(m2), peak is in [m1, hi]; else peak in [lo, m2]. Narrows by 1/3 each step. O(log₃(n)).`,
+          code: `// Ternary search template for unimodal integer function
+function ternarySearch(lo, hi, f) {
+    while (hi - lo > 2) {
+        const m1 = lo + Math.floor((hi - lo) / 3);
+        const m2 = hi - Math.floor((hi - lo) / 3);
+        if (f(m1) < f(m2)) lo = m1 + 1;
+        else hi = m2 - 1;
+    }
+    let best = lo;
+    for (let i = lo+1; i <= hi; i++) if (f(i) > f(best)) best = i;
+    return best;
+}
+
+// For continuous real-valued: 200 iterations of (lo+hi)/3 divisions
+function ternarySearchReal(lo, hi, f) {
+    for (let i = 0; i < 200; i++) {
+        const m1 = lo + (hi-lo)/3, m2 = hi - (hi-lo)/3;
+        if (f(m1) < f(m2)) lo = m1; else hi = m2;
+    }
+    return (lo+hi)/2;
+}`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '🧠',
       color: 'green',
-      content: `**Choosing the right method:**\n- Answer is a real number, condition is monotone → binary search on reals (100 iters)\n- Find min/max of unimodal continuous function → ternary search (200 iters)\n- Need fast root finding → Newton's method (converges in ~10 iters)\n- NP-hard, approximate answer OK → simulated annealing\n\n**Precision rule:** 100 iterations of binary search on [0, 1e9] gives ~10⁻²¹ precision. Way more than enough.`,
+      content: `**Choosing the right method:**\n- Answer is an integer, condition is monotone → binary search (exact)\n- Answer is a real number, condition is monotone → binary search (100 iters)\n- Find min/max of unimodal continuous function → ternary search (200 iters)\n- Need fast root finding → Newton's method (~10 iters)\n- "Maximize minimum" or "Minimize maximum" → binary search on answer + greedy check\n\n**Precision rule:** 100 iterations of binary search on [0, 1e9] gives ~10⁻²¹ precision. Way more than enough.`,
     },
   ],
 }

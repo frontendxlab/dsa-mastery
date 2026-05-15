@@ -297,10 +297,82 @@ function canForm(basis, x) {
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 5,
+      title: 'Fibonacci Number (Matrix Exponentiation O(log n))',
+      url: 'https://leetcode.com/problems/fibonacci-number/',
+      difficulty: 'Easy',
+      intuitions: [
+        {
+          label: 'Intuition 1: O(n) DP — standard',
+          explanation: `fib(0)=0, fib(1)=1, fib(n) = fib(n-1) + fib(n-2). Iterate with two variables. O(n).`,
+          code: `var fib = function(n) {
+    if (n <= 1) return n;
+    let a = 0, b = 1;
+    for (let i = 2; i <= n; i++) [a, b] = [b, a+b];
+    return b;
+};`,
+          lang: 'javascript',
+        },
+        {
+          label: 'Intuition 2: O(log n) matrix exponentiation',
+          explanation: `[fib(n+1), fib(n)] = [[1,1],[1,0]]^n × [1, 0]. Matrix exponentiation computes the n-th power in O(log n) matrix multiplications, each O(2³) = O(1). Total: O(log n).`,
+          code: `var fib = function(n) {
+    if (n <= 1) return n;
+    const matMul = (A, B) => [
+        [A[0][0]*B[0][0]+A[0][1]*B[1][0], A[0][0]*B[0][1]+A[0][1]*B[1][1]],
+        [A[1][0]*B[0][0]+A[1][1]*B[1][0], A[1][0]*B[0][1]+A[1][1]*B[1][1]],
+    ];
+    const matPow = (M, p) => {
+        if (p === 1) return M;
+        const half = matPow(M, p>>1);
+        const sq = matMul(half, half);
+        return p & 1 ? matMul(sq, M) : sq;
+    };
+    return matPow([[1,1],[1,0]], n)[0][1];
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 6,
+      title: 'Staircase (k steps) — Matrix Recurrence',
+      url: 'https://leetcode.com/problems/climbing-stairs/',
+      difficulty: 'Easy',
+      intuitions: [
+        {
+          label: 'Intuition 1: DP — climbing stairs is Fibonacci',
+          explanation: `ways(n) = ways(n-1) + ways(n-2). Same as Fibonacci with ways(1)=1, ways(2)=2.`,
+          code: `var climbStairs = function(n) {
+    if (n <= 2) return n;
+    let a = 1, b = 2;
+    for (let i = 3; i <= n; i++) [a, b] = [b, a+b];
+    return b;
+};`,
+          lang: 'javascript',
+        },
+        {
+          label: 'Intuition 2: Matrix exponentiation for n up to 10^18',
+          explanation: `For very large n (up to 10^18), O(n) DP is impossible. Matrix exponentiation: [[f(n+1)],[f(n)]] = [[1,1],[1,0]]^n × [[1],[0]]. Compute in O(log n).`,
+          code: `// Same matrix power approach as Fibonacci — just change base case
+// [[1,1],[1,0]]^n gives F(n+1) at position [0][0]
+// For k-step staircase (up to k steps at a time), use k×k matrix`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '⚡',
       color: 'teal',
-      content: `**When to use matrix exponentiation:**\n- Recurrence of fixed order k: O(k³ log n) vs O(kn)\n- n can be up to 10¹⁸ — impossible to iterate\n- Counting paths of exact length in small graph\n- Tiling, staircase, domino problems with periodic structure\n\n**Matrix size rule of thumb:** k×k matrix where k = number of terms in recurrence. Keep k small (≤ 4) for competitive programming.`,
+      content: `**When to use matrix exponentiation:**\n- Recurrence of fixed order k: O(k³ log n) vs O(kn)\n- n can be up to 10¹⁸ — impossible to iterate\n- Counting paths of exact length in small graph\n- Tiling, staircase, domino problems with periodic structure\n\n**Matrix size rule of thumb:** k×k matrix where k = number of terms in recurrence. Keep k small (≤ 4) for competitive programming.\n\n**XOR basis:**\n- Maintain basis of O(32) independent XOR vectors\n- Maximize XOR: greedily try adding each basis vector if it increases result\n- Add number to basis: Gaussian elimination on bits (highest bit first)`,
     },
   ],
 }

@@ -70,6 +70,7 @@ import { stackQueueArticle } from './content/stack-queue'
 import { shortestPathArticle } from './content/shortest-path'
 import { bitmaskDpArticle } from './content/bitmask-dp'
 import { numberTheoryArticle } from './content/number-theory'
+import { digitDpArticle } from './content/digit-dp'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -109,6 +110,7 @@ export const articles: Article[] = [
   shortestPathArticle,
   bitmaskDpArticle,
   numberTheoryArticle,
+  digitDpArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
