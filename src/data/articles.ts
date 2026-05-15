@@ -187,6 +187,10 @@ import { stronglyConnectedComponentsArticle } from './content/strongly-connected
 import { binaryLiftingArticle } from './content/binary-lifting'
 import { segmentTreeBasicsArticle } from './content/segment-tree-basics'
 import { multisetOrderedSetArticle } from './content/multiset-ordered-set'
+import { graphStateSpaceArticle } from './content/graph-state-space'
+import { twoDPrefixSumArticle } from './content/two-d-prefix-sum'
+import { greedyIntervalsArticle } from './content/greedy-intervals'
+import { constructiveAlgorithmsArticle } from './content/constructive-algorithms'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -343,6 +347,10 @@ export const articles: Article[] = [
   binaryLiftingArticle,
   segmentTreeBasicsArticle,
   multisetOrderedSetArticle,
+  graphStateSpaceArticle,
+  twoDPrefixSumArticle,
+  greedyIntervalsArticle,
+  constructiveAlgorithmsArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {

@@ -23,7 +23,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part IV — Core Algorithms',
     color: 'var(--nb-green)',
-    chapters: ['dynamic-programming', 'backtracking', 'greedy', 'graph', 'shortest-path', 'bitmask-dp', 'divide-conquer', 'knapsack-dp', 'graph-advanced', 'bipartite', 'coordinate-compression', 'topological-sort', 'minimum-spanning-tree', 'network-flow', 'meet-in-middle', 'convex-hull-trick', 'centroid-decomposition', 'line-sweep', 'two-sat', 'bridges-articulation', 'min-cost-flow', 'flow-lower-bounds', 'bidirectional-bfs', 'a-star-search', 'difference-constraints', 'functional-graphs', 'matching-flow', 'graph-coloring', 'topk-streaming', 'strongly-connected-components'],
+    chapters: ['dynamic-programming', 'backtracking', 'greedy', 'graph', 'shortest-path', 'bitmask-dp', 'divide-conquer', 'knapsack-dp', 'graph-advanced', 'bipartite', 'coordinate-compression', 'topological-sort', 'minimum-spanning-tree', 'network-flow', 'meet-in-middle', 'convex-hull-trick', 'centroid-decomposition', 'line-sweep', 'two-sat', 'bridges-articulation', 'min-cost-flow', 'flow-lower-bounds', 'bidirectional-bfs', 'a-star-search', 'difference-constraints', 'functional-graphs', 'matching-flow', 'graph-coloring', 'topk-streaming', 'strongly-connected-components', 'graph-state-space', 'greedy-intervals', 'constructive-algorithms'],
   },
   {
     part: 'Part V — Strings, Sequences & Grid',
@@ -43,7 +43,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part VIII — Cross-Topic Deep Dives',
     color: 'var(--nb-red)',
-    chapters: ['bfs-vs-dfs', 'interval-problems', 'dp-on-trees', 'union-find', 'digit-dp', 'interval-dp', 'grid-dp', 'state-machine-dp', 'recursion-memoization', 'grid-patterns', 'fenwick-tree', 'heavy-light-decomposition', 'euler-tour', 'mo-algorithm', 'xor-basis', 'euler-path', 'divide-conquer-dp', 'sqrt-decomposition', 'persistent-segment-tree', 'treap', 'offline-cdq', 'bitset-operations', 'slope-trick', 'segment-tree-beats', 'balanced-dp', 'profile-dp', 'aliens-trick', 'arithmetic-dp', 'subsequence-counting', 'sliding-window-advanced'],
+    chapters: ['bfs-vs-dfs', 'interval-problems', 'dp-on-trees', 'union-find', 'digit-dp', 'interval-dp', 'grid-dp', 'state-machine-dp', 'recursion-memoization', 'grid-patterns', 'fenwick-tree', 'heavy-light-decomposition', 'euler-tour', 'mo-algorithm', 'xor-basis', 'euler-path', 'divide-conquer-dp', 'sqrt-decomposition', 'persistent-segment-tree', 'treap', 'offline-cdq', 'bitset-operations', 'slope-trick', 'segment-tree-beats', 'balanced-dp', 'profile-dp', 'aliens-trick', 'arithmetic-dp', 'subsequence-counting', 'sliding-window-advanced', 'two-d-prefix-sum'],
   },
 ]
 
