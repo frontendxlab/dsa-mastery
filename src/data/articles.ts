@@ -223,6 +223,10 @@ import { trappingRainwaterArticle } from './content/trapping-rainwater'
 import { nextPermutationArticle } from './content/next-permutation'
 import { graphColoringBipartiteArticle } from './content/graph-coloring-bipartite'
 import { matrixChainArticle } from './content/matrix-chain'
+import { stoneGameDpArticle } from './content/stone-game-dp'
+import { hashPrefixProblemsArticle } from './content/hash-prefix-problems'
+import { floydWarshallArticle } from './content/floyd-warshall'
+import { treeGeneralDpArticle } from './content/tree-general-dp'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -415,6 +419,10 @@ export const articles: Article[] = [
   nextPermutationArticle,
   graphColoringBipartiteArticle,
   matrixChainArticle,
+  stoneGameDpArticle,
+  hashPrefixProblemsArticle,
+  floydWarshallArticle,
+  treeGeneralDpArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
