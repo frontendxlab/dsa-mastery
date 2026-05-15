@@ -107,6 +107,10 @@ import { fenwickTreeArticle } from './content/fenwick-tree'
 import { suffixArrayArticle } from './content/suffix-array'
 import { heavyLightDecompositionArticle } from './content/heavy-light-decomposition'
 import { randomizedAlgorithmsArticle } from './content/randomized-algorithms'
+import { eulerTourArticle } from './content/euler-tour'
+import { moAlgorithmArticle } from './content/mo-algorithm'
+import { xorBasisArticle } from './content/xor-basis'
+import { eulerPathArticle } from './content/euler-path'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -183,6 +187,10 @@ export const articles: Article[] = [
   suffixArrayArticle,
   heavyLightDecompositionArticle,
   randomizedAlgorithmsArticle,
+  eulerTourArticle,
+  moAlgorithmArticle,
+  xorBasisArticle,
+  eulerPathArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
