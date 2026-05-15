@@ -42,6 +42,7 @@ function NbThemePicker() {
   return (
     <div ref={ref} className="relative">
       <button
+        type="button"
         onClick={() => setOpen(o => !o)}
         title="Pick learn page theme"
         className="nb-theme-btn"
@@ -55,6 +56,7 @@ function NbThemePicker() {
           {NB_THEMES.map(t => (
             <button
               key={t.key}
+              type="button"
               title={t.label}
               onClick={() => pick(t.key)}
               className={`nb-theme-btn ${active === t.key ? "active" : ""}`}
@@ -99,7 +101,7 @@ function FrontendXLogo() {
   return (
     <div className="nb-logo-text">
       {text.split("").map((char, i) => (
-        <LogoLetter key={i} char={char} delay={i * 80} color={colors[i % colors.length]} />
+        <LogoLetter key={`${char}-${i}`} char={char} delay={i * 80} color={colors[i % colors.length]} />
       ))}
     </div>
   );
@@ -151,6 +153,7 @@ export default function Header() {
         </h2>
 
         <button
+          type="button"
           onClick={() => setMobileMenuOpen(o => !o)}
           className="ml-auto flex sm:hidden items-center justify-center h-10 w-10 rounded-lg border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] shadow-[3px_3px_0px_var(--nb-border-color,#0f0f0f)] transition-all duration-150 active:shadow-none active:translate-x-[3px] active:translate-y-[3px]"
           aria-label="Toggle menu"

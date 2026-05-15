@@ -163,6 +163,10 @@ import { differenceConstraintsArticle } from './content/difference-constraints'
 import { treeIsomorphismArticle } from './content/tree-isomorphism'
 import { lyndonFactorizationArticle } from './content/lyndon-factorization'
 import { balancedDpArticle } from './content/balanced-dp'
+import { profileDpArticle } from './content/profile-dp'
+import { latticePathsArticle } from './content/lattice-paths'
+import { functionalGraphsArticle } from './content/functional-graphs'
+import { advancedCountingDpArticle } from './content/advanced-counting-dp'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -295,6 +299,10 @@ export const articles: Article[] = [
   treeIsomorphismArticle,
   lyndonFactorizationArticle,
   balancedDpArticle,
+  profileDpArticle,
+  latticePathsArticle,
+  functionalGraphsArticle,
+  advancedCountingDpArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {

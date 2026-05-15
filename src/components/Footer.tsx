@@ -124,8 +124,8 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
               className="flex h-10 w-10 items-center justify-center rounded-lg border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] text-[var(--nb-ink,#111)] shadow-[3px_3px_0px_var(--nb-border-color,#0f0f0f)] transition-all duration-150 hover:bg-[var(--nb-yellow,#ffe566)] active:shadow-none active:translate-x-[3px] active:translate-y-[3px]"
-              aria-label="GitHub"
             >
+              <span className="sr-only">GitHub</span>
               <svg viewBox="0 0 16 16" aria-hidden="true" width="18" height="18">
                 <path
                   fill="currentColor"

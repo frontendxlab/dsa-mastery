@@ -433,7 +433,7 @@ function App() {
               placeholder="Search topics..."
               className="w-full rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] px-5 py-3 pl-11 text-sm font-semibold text-[var(--nb-ink,#111)] outline-none shadow-[3px_3px_0px_var(--nb-border-color,#0f0f0f)] transition-all placeholder:text-[var(--nb-ink-soft,#3a3a3a)] placeholder:opacity-60 focus:ring-2 focus:ring-[var(--nb-pink,#ff9ec4)]"
             />
-            <svg className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[var(--nb-ink-soft,#3a3a3a)]" width="16" height="16" viewBox="0 0 16 16" fill="none">
+             <svg className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[var(--nb-ink-soft,#3a3a3a)]" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
               <circle cx="7" cy="7" r="5.5" stroke="currentColor" strokeWidth="1.5" />
               <path d="M11 11L14.5 14.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
             </svg>
@@ -453,6 +453,7 @@ function App() {
               No topics match "{search}"
             </p>
             <button
+              type="button"
               onClick={() => setSearch('')}
               className="mt-4 rounded-lg border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-teal,#7ee8e2)] px-4 py-2 text-xs font-black shadow-[3px_3px_0px_var(--nb-border-color,#0f0f0f)] transition-all hover:shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)] hover:translate-x-[1px] hover:translate-y-[1px]"
             >
