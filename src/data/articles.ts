@@ -80,6 +80,7 @@ import { knapsackDpArticle } from './content/knapsack-dp'
 import { stateMachineDpArticle } from './content/state-machine-dp'
 import { probabilityDpArticle } from './content/probability-dp'
 import { sparseTableArticle } from './content/sparse-table'
+import { countingPatternsArticle } from './content/counting-patterns'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -129,6 +130,7 @@ export const articles: Article[] = [
   stateMachineDpArticle,
   probabilityDpArticle,
   sparseTableArticle,
+  countingPatternsArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {

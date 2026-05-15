@@ -18,7 +18,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part III — Hashing & Auxiliary Structures',
     color: 'var(--nb-purple)',
-    chapters: ['heap', 'trie', 'monotonic-stack', 'hashmap-patterns', 'stack-queue'],
+    chapters: ['heap', 'trie', 'monotonic-stack', 'hashmap-patterns', 'stack-queue', 'counting-patterns'],
   },
   {
     part: 'Part IV — Core Algorithms',
