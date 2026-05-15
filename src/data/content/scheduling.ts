@@ -301,10 +301,81 @@ function findOrder(numCourses, prerequisites) {
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 6,
+      title: 'Parallel Courses (Minimum Semesters)',
+      url: 'https://leetcode.com/problems/parallel-courses/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Topological sort with level counting (BFS)',
+          explanation: `Courses with no prerequisites can be taken in semester 1. Their dependents unlock in semester 2, etc. This is a BFS level-order topo sort. Number of levels = answer. If any course never unlocks (cycle), return -1.`,
+          code: `var minimumSemesters = function(n, relations) {
+    const g = Array.from({length:n+1},()=>[]);
+    const ind = new Array(n+1).fill(0);
+    for (const [u,v] of relations) { g[u].push(v); ind[v]++; }
+    let q = [], done = 0, sems = 0;
+    for (let i=1;i<=n;i++) if(!ind[i]) q.push(i);
+    while (q.length) {
+        const next = [];
+        sems++;
+        for (const u of q) {
+            done++;
+            for (const v of g[u]) if (--ind[v]===0) next.push(v);
+        }
+        q = next;
+    }
+    return done === n ? sems : -1;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 7,
+      title: 'Find All Possible Recipes from Given Supplies',
+      url: 'https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Topological sort — supplies are starting nodes',
+          explanation: `Build a dependency graph: ingredient → recipes that need it. Initial queue = all supplies. Process like Kahn's topo sort: when all ingredients of a recipe are available, add that recipe to queue (it's now available as an ingredient for other recipes).`,
+          code: `var findAllRecipes = function(recipes, ingredients, supplies) {
+    const g = new Map(), ind = new Map();
+    const recipeSet = new Set(recipes);
+    for (let i=0;i<recipes.length;i++) {
+        ind.set(recipes[i], ingredients[i].length);
+        for (const ing of ingredients[i]) {
+            if (!g.has(ing)) g.set(ing, []);
+            g.get(ing).push(recipes[i]);
+        }
+    }
+    const q = [...supplies], result = [];
+    while (q.length) {
+        const item = q.shift();
+        if (recipeSet.has(item)) result.push(item);
+        for (const next of (g.get(item) ?? [])) {
+            ind.set(next, ind.get(next) - 1);
+            if (ind.get(next) === 0) q.push(next);
+        }
+    }
+    return result;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '🧠',
       color: 'green',
-      content: `**Scheduling decision tree:**\n1. "Max tasks, no overlap" → sort by END time, greedy\n2. "Min removals for non-overlapping" → same as above, count skips\n3. "Max profit before deadlines" → sort by PROFIT desc + Union-Find\n4. "Max weighted jobs, no overlap" → DP + binary search on end times\n5. "Task ordering with dependencies" → topological sort (Kahn's BFS)\n6. "Tasks with cooldowns" → heap simulation or math formula`,
+      content: `**Scheduling decision tree:**\n1. "Max tasks, no overlap" → sort by END time, greedy\n2. "Min removals for non-overlapping" → same as above, count skips\n3. "Max profit before deadlines" → sort by PROFIT desc + Union-Find\n4. "Max weighted jobs, no overlap" → DP + binary search on end times\n5. "Task ordering with dependencies" → topological sort (Kahn's BFS)\n6. "Tasks with cooldowns" → heap simulation or math formula\n7. "Min time with parallel execution" → BFS levels of topo sort`,
     },
   ],
 }

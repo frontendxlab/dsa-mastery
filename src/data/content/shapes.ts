@@ -267,10 +267,107 @@ function maximumDetonation(bombs) {
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 6,
+      title: 'Number of Boomerangs',
+      url: 'https://leetcode.com/problems/number-of-boomerangs/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: For each point, group others by distance squared',
+          explanation: `A boomerang (i, j, k) requires dist(i,j) === dist(i,k). For each anchor i: group all other points by their squared distance to i. For each group of size m, count ordered pairs: m × (m-1).`,
+          code: `var numberOfBoomerangs = function(points) {
+    let count = 0;
+    for (const [ax, ay] of points) {
+        const distMap = new Map();
+        for (const [bx, by] of points) {
+            const d = (bx-ax)**2 + (by-ay)**2;
+            distMap.set(d, (distMap.get(d) ?? 0) + 1);
+        }
+        for (const m of distMap.values())
+            count += m * (m - 1); // ordered pairs: m choose 2 × 2
+    }
+    return count;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 7,
+      title: 'Count Lattice Points Inside a Circle',
+      url: 'https://leetcode.com/problems/count-lattice-points-inside-a-circle/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Brute force — iterate all points in bounding box',
+          explanation: `For each circle, iterate all integer points (x, y) in the bounding box [cx-r, cx+r] × [cy-r, cy+r]. Check if (x-cx)² + (y-cy)² ≤ r². Use a Set to deduplicate lattice points.`,
+          code: `var countLatticePoints = function(circles) {
+    const inside = new Set();
+    for (const [cx, cy, r] of circles)
+        for (let x = cx-r; x <= cx+r; x++)
+            for (let y = cy-r; y <= cy+r; y++)
+                if ((x-cx)**2 + (y-cy)**2 <= r*r)
+                    inside.add(x * 1000 + y); // encode (x,y) as single number
+    return inside.size;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 8,
+      title: 'Detect Squares',
+      url: 'https://leetcode.com/problems/detect-squares/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Fix diagonal, count opposite corners',
+          explanation: `For a query point P and any other point Q that could be the diagonal opposite (dx === dy and dx > 0), check if the two other corners exist: (P.x, Q.y) and (Q.x, P.y). Multiply their point counts. Sum over all valid diagonal Q choices.`,
+          code: `class DetectSquares {
+    constructor() {
+        this.ptsMap = new Map();  // "x,y" → count
+        this.xs = new Map();      // x → Set of ys
+    }
+    add([x, y]) {
+        const key = x+','+y;
+        this.ptsMap.set(key, (this.ptsMap.get(key)??0)+1);
+        if (!this.xs.has(x)) this.xs.set(x, new Set());
+        this.xs.get(x).add(y);
+    }
+    count([px, py]) {
+        let total = 0;
+        for (const qy of (this.xs.get(px) ?? [])) {
+            if (qy === py) continue;
+            const d = qy - py;
+            // two other corners: (px+d, py) and (px+d, qy)
+            for (const dx of [d, -d]) {
+                const qx = px + dx;
+                const c1 = this.ptsMap.get(px+','+qy) ?? 0;
+                const c2 = this.ptsMap.get(qx+','+py) ?? 0;
+                const c3 = this.ptsMap.get(qx+','+qy) ?? 0;
+                total += c1 * c2 * c3;
+            }
+        }
+        return total;
+    }
+}`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '⚠️',
       color: 'red',
-      content: `**Floating point traps:**\n- Use squared distances when comparing (avoids sqrt and floating point)\n- For area comparisons, multiply by 2 and compare integers\n- When checking collinearity: cross product === 0 (exact with integers)\n- Triangle classification: use squared side lengths (a²+b² vs c²), not actual sides`,
+      content: `**Floating point traps:**\n- Use squared distances when comparing (avoids sqrt and floating point)\n- For area comparisons, multiply by 2 and compare integers\n- When checking collinearity: cross product === 0 (exact with integers)\n- Triangle classification: use squared side lengths (a²+b² vs c²), not actual sides\n\n**Geometry trick summary:**\n- Distance² = dx²+dy² (skip sqrt for comparisons)\n- Chebyshev distance (8-directional moves) = max(|dx|, |dy|)\n- Boomerang counting: group by distance, count ordered pairs m*(m-1)\n- Square detection: fix diagonal → check two remaining corners exist`,
     },
   ],
 }
