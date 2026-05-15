@@ -1,0 +1,692 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - navigation [ref=e6]:
+        - generic [ref=e7]:
+          - link "LeetCode" [ref=e8] [cursor=pointer]:
+            - /url: /
+            - img [ref=e10]
+          - list [ref=e18]:
+            - listitem [ref=e19]:
+              - link "Problems" [ref=e20] [cursor=pointer]:
+                - /url: /problemset
+            - listitem [ref=e21]:
+              - link "Contest" [ref=e22] [cursor=pointer]:
+                - /url: /contest
+            - listitem [ref=e23]:
+              - link "Discuss" [ref=e24] [cursor=pointer]:
+                - /url: /discuss/
+            - listitem [ref=e25]:
+              - generic [ref=e27] [cursor=pointer]:
+                - button "More" [ref=e28]:
+                  - text: More
+                  - img [ref=e29]
+                - list:
+                  - listitem:
+                    - link:
+                      - /url: https://interview.leetcode.com/interview/
+                      - img
+                      - generic: Online Interview
+                  - listitem:
+                    - link:
+                      - /url: /assessment/
+                      - img
+                      - generic: Assessment
+                  - listitem:
+                    - link:
+                      - /url: /store
+                      - generic: Redeem
+                  - listitem:
+                    - link:
+                      - /url: /subscribe/?ref=sto_npl&source=ot
+                      - generic: Premium
+      - generic [ref=e32]:
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - link [ref=e36] [cursor=pointer]:
+              - /url: /discuss/
+              - button [ref=e37]:
+                - img [ref=e39]
+            - button [ref=e41] [cursor=pointer]:
+              - img [ref=e43]
+          - generic [ref=e46]:
+            - generic [ref=e47]: Become Master In Linked List
+            - generic [ref=e48]:
+              - link [ref=e50] [cursor=pointer]:
+                - /url: /u/hi-malik/
+              - generic [ref=e51]:
+                - link "Himanshu Malik" [ref=e54] [cursor=pointer]:
+                  - /url: /u/hi-malik/
+                - generic [ref=e55]:
+                  - generic [ref=e56]:
+                    - img [ref=e57]
+                    - generic [ref=e59]: "110689"
+                  - generic [ref=e60]:
+                    - img [ref=e61]
+                    - generic [ref=e63]: Feb 26, 2022
+                  - generic [ref=e64]:
+                    - img [ref=e66]
+                    - generic [ref=e68]: Feb 28, 2022
+            - generic [ref=e69]:
+              - link "Career" [ref=e70] [cursor=pointer]:
+                - /url: /discuss/topic/career/
+              - link "Linked List" [ref=e71] [cursor=pointer]:
+                - /url: /discuss/topic/linked-list/
+          - generic [ref=e75]:
+            - paragraph [ref=e76]:
+              - img "image" [ref=e77]
+              - img "image" [ref=e78]
+              - text: Let me give you a quick introduction about myself.
+            - code [ref=e82]:
+              - generic [ref=e83]: I'm a 3 year Student studying Computer Science as a major
+              - generic [ref=e84]: I'm just an average person like other's.
+            - paragraph [ref=e85]:
+              - strong [ref=e86]: I'm not talented enough
+              - text: ", but I work"
+              - strong [ref=e87]: hard
+              - text: "& what I know is"
+              - emphasis [ref=e88]:
+                - strong [ref=e89]: "\"Hard work always beats talent, when talent doesn't work Hard!!”"
+            - separator [ref=e90]
+            - separator [ref=e91]
+            - paragraph [ref=e92]:
+              - text: It's not an language specific article. Trust me, you will learn a lot. Right now it's written in
+              - strong [ref=e93]: Java
+              - text: but trust me it will never be a issue.
+            - separator [ref=e94]
+            - separator [ref=e95]
+            - paragraph [ref=e96]:
+              - code [ref=e97]: So, with that let's start.
+              - text: Hello, my fellow programmer's today I'm going to teach you how you can become
+              - emphasis [ref=e98]: master's
+              - text: in
+              - strong [ref=e99]: LinkedList
+            - paragraph [ref=e100]:
+              - text: If you want to become master, then you have to follow some
+              - strong [ref=e101]: rules
+              - text: ", only after that you can become"
+              - strong [ref=e102]: Magician
+              - text: or called
+              - strong [ref=e103]: Master's in LinkedList
+              - code [ref=e104]: "Rules:"
+            - list [ref=e105]:
+              - listitem [ref=e106]:
+                - text: Bring up your
+                - strong [ref=e107]: pen
+                - text: and a fresh
+                - strong [ref=e108]: new notebook
+                - text: where you have to write all of these thing's which I will teach you
+                - strong [ref=e109]: right now
+                - text: .
+              - listitem [ref=e110]:
+                - text: If you had started learning linked list, then
+                - strong [ref=e111]: don't quit
+                - text: . Here's why,
+                - strong [ref=e112]: ask yourself
+                - text: this question when you feel about to quit,
+                - code [ref=e113]: "\"If you had to leave, then why you had start?\""
+              - listitem [ref=e114]: Look back again at above 2 rule's
+            - paragraph [ref=e115]: "Remember : Practice makes a men perfect"
+            - separator [ref=e116]
+            - separator [ref=e117]
+            - code [ref=e121]:
+              - generic [ref=e122]: "#Introduction"
+            - separator [ref=e123]
+            - separator [ref=e124]
+            - blockquote [ref=e125]:
+              - paragraph [ref=e126]:
+                - strong [ref=e127]: What is linked list ?
+              - blockquote [ref=e128]:
+                - paragraph [ref=e129]:
+                  - text: Linked list is an linear data structure, which consists of a group of nodes in a sequence
+                  - strong [ref=e130]: "[OR]"
+                  - text: Linked list in which we store data in linear from!
+            - paragraph [ref=e131]:
+              - emphasis [ref=e132]:
+                - code [ref=e133]: But, Array also stores data in linear form.
+              - text: Then what's the difference!
+            - paragraph [ref=e134]:
+              - text: In array we have to first define the size of the Array
+              - text: Let's say:-
+            - code [ref=e138]:
+              - generic [ref=e139]: int arr[] = new int[8]
+              - generic [ref=e140]: Array :- [10, 20, 15, 18, 16, 10, 20, 16]
+            - paragraph [ref=e141]:
+              - text: And each bit has it's
+              - emphasis [ref=e142]: memory address
+              - text: ", where"
+              - code [ref=e143]: 1 bit size = 4, therefore 8 bit = 8 * 4 = 32 bit
+              - text: .
+            - paragraph [ref=e144]: But linked list is dynamic, we don't have to define it's size.
+            - paragraph [ref=e145]:
+              - img "image" [ref=e146]
+            - blockquote [ref=e147]:
+              - paragraph [ref=e148]:
+                - emphasis [ref=e149]:
+                  - code [ref=e150]: In linked list we can add element as many as we want. But, in array size is fixed. So, to add new element we have to create a new array!
+            - paragraph [ref=e151]:
+              - img "image" [ref=e152]
+            - code [ref=e156]:
+              - generic [ref=e157]: Advantages DisAdvantages
+              - generic [ref=e158]: 1. Dynamic Nature 1. More memory usage due to address pointer
+              - generic [ref=e159]: 2. Optimal insertion & deletion 2. Slow traversal compared to arrays
+              - generic [ref=e160]: 3. Stack's & queues can be easily implemented 3. No reverse traversal in singly linked list
+              - generic [ref=e161]: 4. No memory wastage 4. No random access
+            - paragraph [ref=e162]:
+              - strong [ref=e163]: Real-life Application's :-
+            - list [ref=e164]:
+              - listitem [ref=e165]: Previous - n - next page in browser
+              - listitem [ref=e166]: Image Viewer
+              - listitem [ref=e167]: Music Player
+            - separator [ref=e168]
+            - separator [ref=e169]
+            - code [ref=e173]:
+              - generic [ref=e174]: "#Type's of Linked list"
+            - separator [ref=e175]
+            - separator [ref=e176]
+            - paragraph [ref=e177]:
+              - emphasis [ref=e178]:
+                - strong [ref=e179]: There are 4 type's of linked list, but in general we use 3 type's only:-
+            - list [ref=e180]:
+              - listitem [ref=e181]:
+                - paragraph [ref=e182]:
+                  - strong [ref=e183]:
+                    - code [ref=e184]: "Singly-linked list:"
+                  - text: linked list in which each node points to the next node and the last node points to null
+                  - img "image" [ref=e185]
+              - listitem [ref=e186]:
+                - paragraph [ref=e187]:
+                  - strong [ref=e188]:
+                    - code [ref=e189]: "Doubly-linked list:"
+                  - text: linked list in which each node has two pointers, p and n, such that p points to the previous node and n points to the next node; the last node's n pointer points to null
+                  - img "image" [ref=e190]
+              - listitem [ref=e191]:
+                - paragraph [ref=e192]:
+                  - strong [ref=e193]:
+                    - code [ref=e194]: "Circular-linked list:"
+                  - text: linked list in which each node points to the next node and the last node points back to the first node
+                  - img "image" [ref=e195]
+              - listitem [ref=e196]:
+                - paragraph [ref=e197]:
+                  - strong [ref=e198]:
+                    - code [ref=e199]: "Circular-Doubly-linked list:"
+                  - img "image" [ref=e200]
+            - blockquote [ref=e201]:
+              - paragraph [ref=e202]:
+                - strong [ref=e203]: "Time Complexity:"
+            - code [ref=e207]:
+              - generic [ref=e208]: "Access: O(n)"
+              - generic [ref=e209]: "Search: O(n)"
+              - generic [ref=e210]: "Insert: O(1)"
+              - generic [ref=e211]: "Remove: O(1)"
+            - separator [ref=e212]
+            - separator [ref=e213]
+            - blockquote [ref=e214]:
+              - paragraph [ref=e215]:
+                - emphasis [ref=e216]:
+                  - strong [ref=e217]: Let's see how to create a linked list
+            - paragraph [ref=e218]:
+              - strong [ref=e219]: Code :-
+              - img "image" [ref=e220]
+            - paragraph [ref=e221]:
+              - strong [ref=e222]: Therefore,
+              - img "image" [ref=e223]
+            - paragraph [ref=e224]:
+              - strong [ref=e225]: Output:-
+            - code [ref=e229]:
+              - generic [ref=e230]: "-------- -------- --------"
+              - generic [ref=e231]: "| 10 | --> | 20 | --> | 30 |"
+              - generic [ref=e232]: "-------- -------- --------"
+            - separator [ref=e233]
+            - separator [ref=e234]
+            - blockquote [ref=e235]:
+              - paragraph [ref=e236]:
+                - emphasis [ref=e237]:
+                  - strong [ref=e238]: Let's see how we traverse in linked list
+            - paragraph [ref=e239]:
+              - strong [ref=e240]: Code:-
+              - img "image" [ref=e241]
+            - paragraph [ref=e242]:
+              - strong [ref=e243]: Output:-
+            - code [ref=e247]:
+              - generic [ref=e248]: "-------- -------- --------"
+              - generic [ref=e249]: "| 10 | --> | 20 | --> | 30 | --> X"
+              - generic [ref=e250]: "-------- -------- --------"
+              - generic [ref=e251]: curr^
+              - generic [ref=e252]: print:- 10
+              - generic [ref=e253]: "**************************************************"
+              - generic [ref=e254]: "-------- -------- --------"
+              - generic [ref=e255]: "| 10 | --> | 20 | --> | 30 | --> X"
+              - generic [ref=e256]: "-------- -------- --------"
+              - generic [ref=e257]: curr^
+              - generic [ref=e258]: print:- 10, 20
+              - generic [ref=e259]: "**************************************************"
+              - generic [ref=e260]: "-------- -------- --------"
+              - generic [ref=e261]: "| 10 | --> | 20 | --> | 30 | --> X"
+              - generic [ref=e262]: "-------- -------- --------"
+              - generic [ref=e263]: curr^
+              - generic [ref=e264]: print:- 10, 20, 30
+              - generic [ref=e265]: "**************************************************"
+              - generic [ref=e266]: "-------- -------- --------"
+              - generic [ref=e267]: "| 10 | --> | 20 | --> | 30 | --> X"
+              - generic [ref=e268]: "-------- -------- --------"
+              - generic [ref=e269]: curr^
+              - generic [ref=e270]: print & return answer :- 10, 20, 30
+            - separator [ref=e271]
+            - separator [ref=e272]
+            - blockquote [ref=e273]:
+              - paragraph [ref=e274]:
+                - emphasis [ref=e275]:
+                  - strong [ref=e276]: Let's see how to insert an element[node] in linked list
+            - paragraph [ref=e277]:
+              - strong [ref=e278]: Code:-
+              - img "image" [ref=e279]
+            - paragraph [ref=e280]:
+              - code [ref=e281]: Key Point :-
+              - emphasis [ref=e282]: Never miss your node reference!
+              - text: Otherwise, you will lose your linked list;
+            - paragraph [ref=e283]:
+              - strong [ref=e284]: Output:-
+            - code [ref=e288]:
+              - generic [ref=e289]: Given :-
+              - generic [ref=e290]: "-------- -------- -------- -------- --------"
+              - generic [ref=e291]: "| 5 | --> | 10 | --> | 5 | --> | 24 | --> | 40 |"
+              - generic [ref=e292]: "-------- -------- -------- -------- --------"
+              - generic [ref=e293]: Insert 30 at 3 index
+              - text: head˅
+              - generic [ref=e294]: "-------- -------- -------- -------- --------"
+              - generic [ref=e295]: "| 5 | --> | 10 | --> | 5 | --| |--> | 24 | --> | 40 |"
+              - generic [ref=e296]: "-------- -------- -------- | | -------- --------"
+              - generic [ref=e297]: prev^ prev^ ˅ |
+              - generic [ref=e298]: "--------"
+              - generic [ref=e299]: "| 30 |"
+              - generic [ref=e300]: "--------"
+              - generic [ref=e301]: toAdd^
+            - separator [ref=e302]
+            - separator [ref=e303]
+            - blockquote [ref=e304]:
+              - paragraph [ref=e305]:
+                - emphasis [ref=e306]:
+                  - strong [ref=e307]: Let's delete an element[node] from linked list
+            - paragraph [ref=e308]:
+              - strong [ref=e309]: Code :-
+              - img "image" [ref=e310]
+            - paragraph [ref=e311]:
+              - code [ref=e312]: Key point:-
+              - text: In java, if there is no reference to a node in linked list, garbage collector will take it off.
+            - paragraph [ref=e313]:
+              - strong [ref=e314]: Ouput :-
+            - code [ref=e318]:
+              - generic [ref=e319]: Given :-
+              - generic [ref=e320]: "-------- -------- -------- -------- --------"
+              - generic [ref=e321]: "| 5 | --> | 10 | --> | 15 | --> | 12 | --> | 14 | --> X"
+              - generic [ref=e322]: "-------- -------- -------- -------- --------"
+              - generic [ref=e323]: delete 3rd element from linked list
+              - generic [ref=e324]: "-------- -------- -------- -------- --------"
+              - generic [ref=e325]: "| 5 | --> | 10 | --> | 15 | |-X- | 12 | |----> | 14 | --> X"
+              - generic [ref=e326]: "-------- -------- --------| -------- | --------"
+              - generic [ref=e327]: "|-----------------|"
+            - separator [ref=e328]
+            - separator [ref=e329]
+            - code [ref=e333]:
+              - generic [ref=e334]: Best Question's to practice
+            - separator [ref=e335]
+            - separator [ref=e336]
+            - paragraph [ref=e337]:
+              - text: Problem list is in order from
+              - strong [ref=e338]: EASY to HARD
+              - text: in a sequence.
+              - code [ref=e339]: And all question's are available on LeetCode!
+            - list [ref=e340]:
+              - listitem [ref=e341]: Reverse a Linked List
+              - listitem [ref=e342]: Middle of the Linked List
+              - listitem [ref=e343]: Delete Node in a Linked List
+              - listitem [ref=e344]: Merge Two Sorted Linked List
+              - listitem [ref=e345]: Remove duplicates from sorted list
+              - listitem [ref=e346]: Intersection of two linked list
+              - listitem [ref=e347]: Linked List Cycle
+              - listitem [ref=e348]: Palindrome Linked List
+              - listitem [ref=e349]: Swapping Nodes in a Linked List
+              - listitem [ref=e350]: Odd Even Linked List
+              - listitem [ref=e351]: Remove nth node from Linked List
+              - listitem [ref=e352]: Add Two Numbers
+              - listitem [ref=e353]: Swap Nodes in Pairs
+              - listitem [ref=e354]: Split Linked List in Parts
+              - listitem [ref=e355]: Insertion sort on Linked List
+              - listitem [ref=e356]: Merge sort on Linked List
+              - listitem [ref=e357]: Copy list with random pointers
+              - listitem [ref=e358]: Remove zero sum from consecutive nodes from linked list
+              - listitem [ref=e359]: Merge k sorted Linked List
+              - listitem [ref=e360]: Reverse nodes in k group
+              - listitem [ref=e361]: Doubly Linked List
+              - listitem [ref=e362]: Adding a node at the front, at the end, after a node or before a node
+              - listitem [ref=e363]: Deleting a node from the front, from the end, after a node or before a node
+              - listitem [ref=e364]: Circular Doubly Linked List
+              - listitem [ref=e365]: Adding a node at the front, at the end, after a node or before a node
+              - listitem [ref=e366]: Deleting a node from the front, from the end, after a node or before a node
+              - listitem [ref=e367]: LRU Cache
+              - listitem [ref=e368]: LFU Cache
+            - blockquote [ref=e369]:
+              - paragraph [ref=e370]: I highly recommend you to solve these question's & few of them I will solve as well.
+            - separator [ref=e371]
+            - separator [ref=e372]
+            - blockquote [ref=e373]:
+              - paragraph [ref=e374]:
+                - strong [ref=e375]:
+                  - code [ref=e376]: 206. Reverse Linked List
+              - blockquote [ref=e377]:
+                - paragraph [ref=e378]:
+                  - strong [ref=e379]: Problem Statement :-
+                  - strong [ref=e380]: "Input:"
+                  - text: head = [1,2,3,4,5]
+                  - strong [ref=e381]: "Output:"
+                  - text: "[5,4,3,2,1]"
+            - paragraph [ref=e382]:
+              - code [ref=e383]: Explanation :-
+              - text: We use 3 pointer's
+              - strong [ref=e384]: prev = previous, curr = current, forw = forward
+              - text: . Where prev will point to the previous pointer, curr will point to the current pointer & forw will point to the next pointer.
+            - list [ref=e385]:
+              - listitem [ref=e386]:
+                - paragraph [ref=e387]: Prev will hold the previous value becuase, if we break the link. So, we will not lose our linked list
+              - listitem [ref=e388]:
+                - paragraph [ref=e389]: Similarly forw will point to the next pointer after curr. So, that once link is broken we will not lose our remaining linked list.
+              - listitem [ref=e390]:
+                - paragraph [ref=e391]: Once curr reaches null our prev will be on our new head. So, we will return our prev as the answer.
+            - paragraph [ref=e392]:
+              - img "image" [ref=e393]
+            - paragraph [ref=e394]:
+              - code [ref=e395]: Solution :-
+            - code [ref=e399]:
+              - generic [ref=e400]: "class Solution {"
+              - generic [ref=e401]: "public ListNode reverseList(ListNode head) {"
+              - generic [ref=e402]: ListNode prev = null;
+              - generic [ref=e403]: ListNode curr = head;
+              - generic [ref=e404]: ListNode forw = null;
+              - generic [ref=e405]: "while(curr != null){"
+              - generic [ref=e406]: forw = curr.next;
+              - generic [ref=e407]: curr.next = prev;
+              - generic [ref=e408]: prev = curr;
+              - generic [ref=e409]: curr = forw;
+              - generic [ref=e410]: "}"
+              - generic [ref=e411]: return prev;
+              - generic [ref=e412]: "}"
+              - generic [ref=e413]: "}"
+            - separator [ref=e414]
+            - separator [ref=e415]
+            - blockquote [ref=e416]:
+              - paragraph [ref=e417]:
+                - strong [ref=e418]:
+                  - code [ref=e419]: 876. Middle of the Linked List
+              - blockquote [ref=e420]:
+                - paragraph [ref=e421]:
+                  - strong [ref=e422]: Problem Statement :-
+                  - strong [ref=e423]: "Input:"
+                  - text: head = [1,2,3,4,5]
+                  - strong [ref=e424]: "Output:"
+                  - text: "[3,4,5]"
+            - paragraph [ref=e425]:
+              - code [ref=e426]: Explanation:-
+              - text: We will create 2 pointer's
+              - strong [ref=e427]: fast & slow
+            - list [ref=e428]:
+              - listitem [ref=e429]:
+                - paragraph [ref=e430]: Fast pointer will move at the speed of 2X
+              - listitem [ref=e431]:
+                - paragraph [ref=e432]: Slow pointer will move at the speed of 1X
+              - listitem [ref=e433]:
+                - paragraph [ref=e434]: If fast pointer reaches null or fast.next is null we will return our slow pointer which mean's our slow pointer is pointing at mid of linked list
+            - paragraph [ref=e435]:
+              - img "image" [ref=e436]
+            - paragraph [ref=e437]:
+              - code [ref=e438]: Solution:-
+            - code [ref=e442]:
+              - generic [ref=e443]: "class Solution {"
+              - generic [ref=e444]: "public ListNode middleNode(ListNode head) {"
+              - generic [ref=e445]: // Base Condition
+              - generic [ref=e446]: if(head.next == null) return head;
+              - generic [ref=e447]: ListNode slow = head;
+              - generic [ref=e448]: ListNode fast = head;
+              - generic [ref=e449]: "while(fast != null && fast.next != null){"
+              - generic [ref=e450]: fast = fast.next.next;
+              - generic [ref=e451]: slow = slow.next;
+              - generic [ref=e452]: "}"
+              - generic [ref=e453]: return slow;
+              - generic [ref=e454]: "}"
+              - generic [ref=e455]: "}"
+            - separator [ref=e456]
+            - separator [ref=e457]
+            - blockquote [ref=e458]:
+              - paragraph [ref=e459]:
+                - strong [ref=e460]:
+                  - code [ref=e461]: 141. Linked List Cycle
+              - blockquote [ref=e462]:
+                - paragraph [ref=e463]:
+                  - strong [ref=e464]: Problem Statement :-
+                  - strong [ref=e465]: "Input:"
+                  - text: head = [3,2,0,-4], pos = 1
+                  - strong [ref=e466]: "Output:"
+                  - text: "true"
+            - paragraph [ref=e467]:
+              - code [ref=e468]: Explanation:-
+            - paragraph [ref=e469]:
+              - text: We will create 2 pointer's
+              - strong [ref=e470]: fast & slow
+            - list [ref=e471]:
+              - listitem [ref=e472]:
+                - paragraph [ref=e473]: Fast pointer will move at the speed of 2X
+              - listitem [ref=e474]:
+                - paragraph [ref=e475]: Slow pointer will move at the speed of 1X
+              - listitem [ref=e476]:
+                - paragraph [ref=e477]: If fast pointer & slow pointer meet each other we will return true otherwise they there is no cycle we will return false!!
+            - paragraph [ref=e478]:
+              - img "image" [ref=e479]
+            - paragraph [ref=e480]:
+              - code [ref=e481]: Solution:-
+            - code [ref=e485]:
+              - generic [ref=e486]: "public class Solution {"
+              - generic [ref=e487]: "public boolean hasCycle(ListNode head) {"
+              - generic [ref=e488]: ListNode fast = head;
+              - generic [ref=e489]: ListNode slow = head;
+              - generic [ref=e490]: "while(fast != null && fast.next != null){"
+              - generic [ref=e491]: fast = fast.next.next;
+              - generic [ref=e492]: slow = slow.next;
+              - generic [ref=e493]: if(fast == slow) return true;
+              - generic [ref=e494]: "}"
+              - generic [ref=e495]: return false;
+              - generic [ref=e496]: "}"
+              - generic [ref=e497]: "}"
+            - separator [ref=e498]
+            - separator [ref=e499]
+            - blockquote [ref=e500]:
+              - paragraph [ref=e501]:
+                - strong [ref=e502]:
+                  - code [ref=e503]: 234. Palindrome Linked List
+              - blockquote [ref=e504]:
+                - paragraph [ref=e505]:
+                  - strong [ref=e506]: Problem Statement :-
+                  - strong [ref=e507]: "Input:"
+                  - text: head = [1,2,2,1]
+                  - strong [ref=e508]: "Output:"
+                  - text: "true"
+            - paragraph [ref=e509]:
+              - code [ref=e510]: Explanation:-
+            - list [ref=e511]:
+              - listitem [ref=e512]: First we will get the mid so, that we can divide a linked list into two.
+              - listitem [ref=e513]: After that, we will reverse the half of the linked list
+              - listitem [ref=e514]: Then we have our slow pointer on new head & we will compare the value with old head i.e. head
+              - listitem [ref=e515]: We will check these value & move both the pointer's slow & head until slow reaches null.
+              - listitem [ref=e516]: If slow reaches null we will return true, otherwise false.
+            - paragraph [ref=e517]:
+              - img "image" [ref=e518]
+            - paragraph [ref=e519]:
+              - img "image" [ref=e520]
+            - paragraph [ref=e521]:
+              - img "image" [ref=e522]
+            - paragraph [ref=e523]:
+              - code [ref=e524]: Solution:-
+            - code [ref=e528]:
+              - generic [ref=e529]: "class Solution {"
+              - generic [ref=e530]: "public ListNode reverse(ListNode head){"
+              - generic [ref=e531]: ListNode prev = null;
+              - generic [ref=e532]: ListNode curr = head;
+              - generic [ref=e533]: ListNode forw = null;
+              - generic [ref=e534]: "while(curr != null){"
+              - generic [ref=e535]: forw = curr.next;
+              - generic [ref=e536]: curr.next = prev;
+              - generic [ref=e537]: prev = curr;
+              - generic [ref=e538]: curr = forw;
+              - generic [ref=e539]: "}"
+              - generic [ref=e540]: return prev;
+              - generic [ref=e541]: "}"
+              - generic [ref=e542]: "public boolean isPalindrome(ListNode head) {"
+              - generic [ref=e543]: ListNode fast = head;
+              - generic [ref=e544]: ListNode slow = head;
+              - generic [ref=e545]: "while(fast != null && fast.next != null){"
+              - generic [ref=e546]: fast = fast.next.next;
+              - generic [ref=e547]: slow = slow.next;
+              - generic [ref=e548]: "}"
+              - generic [ref=e549]: slow= reverse(slow);
+              - generic [ref=e550]: "while(slow != null && (slow.val == head.val)){"
+              - generic [ref=e551]: head = head.next;
+              - generic [ref=e552]: slow = slow.next;
+              - generic [ref=e553]: "}"
+              - generic [ref=e554]: return slow == null;
+              - generic [ref=e555]: "}"
+              - generic [ref=e556]: "}"
+            - separator [ref=e557]
+            - separator [ref=e558]
+            - blockquote [ref=e559]:
+              - paragraph [ref=e560]:
+                - strong [ref=e561]:
+                  - code [ref=e562]: 160. Intersection of Two Linked Lists
+              - blockquote [ref=e563]:
+                - paragraph [ref=e564]:
+                  - strong [ref=e565]: Problem Statement :-
+                  - strong [ref=e566]: "Input:"
+                  - text: intersectVal = 8, listA = [4,1,8,4,5], listB = [5,6,1,8,4,5], skipA = 2, skipB = 3
+                  - strong [ref=e567]: "Output:"
+                  - text: Intersected at '8'
+            - paragraph [ref=e568]:
+              - code [ref=e569]: Explanation:-
+              - text: So, what we doing is
+            - list [ref=e570]:
+              - listitem [ref=e571]:
+                - paragraph [ref=e572]: "Take 2 pointer's: pointer A walks through List A and List B (since once it hits null, it goes to List B's head)."
+              - listitem [ref=e573]:
+                - paragraph [ref=e574]: Pointer B also walks through List B and List A.
+              - listitem [ref=e575]:
+                - paragraph [ref=e576]: Regardless of the length of the two lists, the sum of the lengths are the same (i.e. a+b = b+a), which means that the pointers sync up at the point of intersection.
+              - listitem [ref=e577]:
+                - paragraph [ref=e578]: If the lists never intersected, it's fine too, because they'll sync up at the end of each list, both of which are null.
+            - paragraph [ref=e579]:
+              - img "image" [ref=e580]
+            - paragraph [ref=e581]:
+              - img "image" [ref=e582]
+            - code [ref=e586]:
+              - generic [ref=e587]: Notice that if list A and list B have the same length, this solution will terminate in no more than 1 traversal; if both lists have different lengths,
+              - generic [ref=e588]: this solution will terminate in no more than 2 traversals -- in the second traversal, swapping a and b synchronizes a and b before the end of the
+              - generic [ref=e589]: second traversal.
+              - generic [ref=e590]: By synchronizing a and b I mean both have the same remaining steps in the second traversal so that it's guaranteed for them to reach the
+              - generic [ref=e591]: first intersection node, or reach null at the same time (technically speaking, in the same iteration)
+              - generic [ref=e592]: "-- see Case 2 (Have Intersection & Different Len) and Case 4 (Have No Intersection & Different Len)."
+              - generic [ref=e593]: "PS: There are many great explanations of this solution for various cases, I believe to visualize it can resolve most of your doubts!"
+            - paragraph [ref=e594]:
+              - code [ref=e595]: Solution:-
+            - code [ref=e599]:
+              - generic [ref=e600]: "public class Solution {"
+              - generic [ref=e601]: "public ListNode getIntersectionNode(ListNode headA, ListNode headB) {"
+              - generic [ref=e602]: ListNode a = headA;
+              - generic [ref=e603]: ListNode b = headB;
+              - generic [ref=e604]: "while(a != b){"
+              - generic [ref=e605]: "a = a == null ? headB : a.next;"
+              - generic [ref=e606]: "b = b == null ? headA : b.next;"
+              - generic [ref=e607]: "}"
+              - generic [ref=e608]: return b;
+              - generic [ref=e609]: "}"
+              - generic [ref=e610]: "}"
+            - separator [ref=e611]
+            - separator [ref=e612]
+            - paragraph [ref=e613]:
+              - text: Alright, guy's
+              - code [ref=e614]: I hope you like my work!
+              - text: If do, then stay tuned. Because i'll post few more solution's**
+            - separator [ref=e615]
+            - separator [ref=e616]
+            - paragraph [ref=e617]:
+              - img "image" [ref=e618]
+              - img "image" [ref=e619]
+            - paragraph [ref=e620]:
+              - strong [ref=e621]: Last Update :- 28th-Feb-2022
+          - generic [ref=e624]:
+            - generic [ref=e625]:
+              - button "792" [ref=e626] [cursor=pointer]:
+                - img [ref=e628]
+                - generic [ref=e630]: "792"
+              - button [ref=e632] [cursor=pointer]:
+                - img [ref=e634]
+            - button "65" [ref=e636] [cursor=pointer]:
+              - img [ref=e638]
+              - generic [ref=e640]: "65"
+            - button [ref=e642] [cursor=pointer]:
+              - button [ref=e643]:
+                - img [ref=e645]
+          - generic [ref=e647]:
+            - generic [ref=e648]:
+              - img [ref=e650]
+              - generic [ref=e652]: Comments (65)
+              - button "Sort by:Best" [ref=e656] [cursor=pointer]:
+                - generic [ref=e657]:
+                  - generic [ref=e658]: "Sort by:"
+                  - text: Best
+                - generic:
+                  - img
+            - generic [ref=e662]:
+              - textbox "Type comment here..." [ref=e663]
+              - generic [ref=e664]:
+                - generic [ref=e666]:
+                  - img [ref=e668] [cursor=pointer]
+                  - img [ref=e671] [cursor=pointer]
+                  - img [ref=e674] [cursor=pointer]
+                  - img [ref=e677] [cursor=pointer]
+                - button "Comment" [disabled] [ref=e680] [cursor=pointer]
+            - navigation [ref=e794]:
+              - button "prev" [disabled]:
+                - img
+              - button "1" [disabled]
+              - button "2" [disabled]
+              - button "3" [disabled]
+              - button "4" [disabled]
+              - button "5" [disabled]
+              - button "6" [disabled]
+              - button "7" [disabled]
+              - button "next" [disabled]:
+                - img
+        - generic [ref=e795]:
+          - generic [ref=e797]:
+            - img [ref=e799]
+            - generic [ref=e801]: Explore
+          - generic [ref=e836]:
+            - generic [ref=e837]:
+              - link "Download App" [ref=e838] [cursor=pointer]:
+                - /url: https://leetcode.com/app/?utm_campaign=AppPromotion&utm_medium=site&utm_source=site_footer&gio_link_id=nPN4bXe9
+                - img [ref=e840]
+                - text: Download App
+              - link "Support" [ref=e843] [cursor=pointer]:
+                - /url: https://support.leetcode.com/hc/en-us
+              - link "Terms" [ref=e845] [cursor=pointer]:
+                - /url: /terms
+              - link "Privacy Policy" [ref=e847] [cursor=pointer]:
+                - /url: /privacy
+              - generic [ref=e849] [cursor=pointer]: More
+            - link "Copyright © 2026 LeetCode" [ref=e850] [cursor=pointer]:
+              - /url: /
+            - link "United States" [ref=e852] [cursor=pointer]:
+              - /url: /region
+        - generic [ref=e853]:
+          - button:
+            - generic:
+              - img
+    - region "Notifications (F8)":
+      - list
+  - alert [ref=e854]

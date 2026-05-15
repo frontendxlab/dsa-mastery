@@ -1,0 +1,351 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - navigation [ref=e6]:
+        - generic [ref=e7]:
+          - link "LeetCode" [ref=e8] [cursor=pointer]:
+            - /url: /
+            - img [ref=e10]
+          - list [ref=e18]:
+            - listitem [ref=e19]:
+              - link "Problems" [ref=e20] [cursor=pointer]:
+                - /url: /problemset
+            - listitem [ref=e21]:
+              - link "Contest" [ref=e22] [cursor=pointer]:
+                - /url: /contest
+            - listitem [ref=e23]:
+              - link "Discuss" [ref=e24] [cursor=pointer]:
+                - /url: /discuss/
+            - listitem [ref=e25]:
+              - generic [ref=e27] [cursor=pointer]:
+                - button "More" [ref=e28]:
+                  - text: More
+                  - img [ref=e29]
+                - list:
+                  - listitem:
+                    - link:
+                      - /url: https://interview.leetcode.com/interview/
+                      - img
+                      - generic: Online Interview
+                  - listitem:
+                    - link:
+                      - /url: /assessment/
+                      - img
+                      - generic: Assessment
+                  - listitem:
+                    - link:
+                      - /url: /store
+                      - generic: Redeem
+                  - listitem:
+                    - link:
+                      - /url: /subscribe/?ref=sto_npl&source=ot
+                      - generic: Premium
+      - generic [ref=e32]:
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - link [ref=e36] [cursor=pointer]:
+              - /url: /discuss/
+              - button [ref=e37]:
+                - img [ref=e39]
+            - button [ref=e41] [cursor=pointer]:
+              - img [ref=e43]
+          - generic [ref=e46]:
+            - generic [ref=e47]: Disjoint Set Union (DSU)/Union-Find - A Complete Guide
+            - generic [ref=e48]:
+              - link [ref=e50] [cursor=pointer]:
+                - /url: /u/invulnerable/
+              - generic [ref=e51]:
+                - link "Sumukh Bhardwaj" [ref=e54] [cursor=pointer]:
+                  - /url: /u/invulnerable/
+                - generic [ref=e55]:
+                  - generic [ref=e56]:
+                    - img [ref=e57]
+                    - generic [ref=e59]: "82126"
+                  - generic [ref=e60]:
+                    - img [ref=e61]
+                    - generic [ref=e63]: Feb 19, 2021
+                  - generic [ref=e64]:
+                    - img [ref=e66]
+                    - generic [ref=e68]: Mar 16, 2021
+            - generic [ref=e69]:
+              - link "Union-Find" [ref=e70] [cursor=pointer]:
+                - /url: /discuss/topic/union-find/
+              - link "Graph Theory" [ref=e71] [cursor=pointer]:
+                - /url: /discuss/topic/graph/
+          - generic [ref=e75]:
+            - paragraph [ref=e76]:
+              - strong [ref=e77]: Disjoint Set Union
+              - text: is one of easiest data structures to implement. We will learn how it works by considering some examples and will see its different implementations.
+            - paragraph [ref=e78]: This is my first article on Leetcode, please give feedback or suggestion for any kind of improvement.
+            - paragraph [ref=e79]: Lets start with the definition
+            - paragraph [ref=e80]:
+              - strong [ref=e81]: "What are Disjoint Sets:"
+            - paragraph [ref=e82]: "Sets are called as Disjoint if:"
+            - list [ref=e83]:
+              - listitem [ref=e84]: Intersection of any two sets is NULL
+            - paragraph [ref=e85]: DSU Data Structure have the same property as stated above and the union of all these disjoint sets is equal to entire set (universal set).
+            - paragraph [ref=e86]:
+              - emphasis [ref=e87]: "Consider a problem:"
+              - text: "You are given several elements each element is a separate set initially. You want to do two kinds of operations:"
+            - list [ref=e88]:
+              - listitem [ref=e89]: Combine two given sets
+              - listitem [ref=e90]: Tell about the connectivity of two elements i.e., whether they are in the same set or not.
+            - paragraph [ref=e91]: "Consider the below set, we will be using this input for various approaches:"
+            - paragraph [ref=e92]:
+              - img "image" [ref=e93]
+            - paragraph [ref=e94]: So as you can see initially all the elements are separate sets.
+            - paragraph [ref=e95]: We will also assign a representative to each set, you can assume that this representative will be the point of contact of this set. Initially each element will be representative of themselves.
+            - paragraph [ref=e96]:
+              - text: For each element you can assume representative as the
+              - strong [ref=e97]: immediate parent
+              - text: of that element.
+            - paragraph [ref=e98]:
+              - text: "Initial State:"
+              - img "image" [ref=e99]
+            - paragraph [ref=e100]:
+              - text: Let
+              - emphasis [ref=e101]: Combine(u, v)
+              - text: be the operation which combines the set containing the element u and the set containing v.
+            - paragraph [ref=e102]: "Lets jump to some combine(u, v) examples to understand better:"
+            - paragraph [ref=e103]: "Combine(a,b):"
+            - paragraph [ref=e104]:
+              - img "image" [ref=e105]
+            - paragraph [ref=e106]:
+              - img "image" [ref=e107]
+            - paragraph [ref=e108]: So as you can see, elements a & b now belongs to the same set and a is the representative of this set ( representative of both a and b is a).
+            - paragraph [ref=e109]: "Combine (c,d):"
+            - paragraph [ref=e110]:
+              - img "image" [ref=e111]
+            - paragraph [ref=e112]:
+              - img "image" [ref=e113]
+            - paragraph [ref=e114]: "Combine (e,f):"
+            - paragraph [ref=e115]:
+              - img "image" [ref=e116]
+            - paragraph [ref=e117]:
+              - img "image" [ref=e118]
+            - paragraph [ref=e119]: "Combine (g,h):"
+            - paragraph [ref=e120]:
+              - img "image" [ref=e121]
+            - paragraph [ref=e122]:
+              - img "image" [ref=e123]
+            - paragraph [ref=e124]: "Combine (a,c):"
+            - paragraph [ref=e125]:
+              - img "image" [ref=e126]
+            - paragraph [ref=e127]:
+              - img "image" [ref=e128]
+            - paragraph [ref=e129]: "Combine(e,c):"
+            - paragraph [ref=e130]:
+              - img "image" [ref=e131]
+            - paragraph [ref=e132]:
+              - img "image" [ref=e133]
+            - paragraph [ref=e134]: "Combine(g,f):"
+            - paragraph [ref=e135]:
+              - img "image" [ref=e136]
+            - paragraph [ref=e137]:
+              - img "image" [ref=e138]
+            - paragraph [ref=e139]: "So far we have seen how actually combine function works, lets make it more clear by writing some code:"
+            - paragraph [ref=e140]: "When we combine two sets, we actually combine the representative of their respective sets. So we need a way to find the representative of an element's set. Lets call that function be find(), which can be defined as:"
+            - code [ref=e144]:
+              - generic [ref=e145]: int find(int u)
+              - generic [ref=e146]: "{"
+              - generic [ref=e147]: if(u == representative[u])
+              - generic [ref=e148]: return u;
+              - generic [ref=e149]: else
+              - generic [ref=e150]: return find(representative[u]);
+              - generic [ref=e151]: "}"
+            - paragraph [ref=e152]:
+              - text: "Lets see if it works or not, currently the representative array looks like below:"
+              - img "image" [ref=e153]
+            - paragraph [ref=e154]:
+              - text: "Suppose we call find(u) with u = d, then function call will be like below:"
+              - text: representative[d] = c (c!=d) ,
+              - text: representative[c] = a (a!=c) ,
+              - text: representative[a] = e (e!=a) ,
+              - text: representative[e] = g (g!=e) ,
+              - text: representative[g] = g (g=g hence break)
+              - text: return g
+            - paragraph [ref=e155]: find(d) return g which is actually the representative of the set.
+            - paragraph [ref=e156]: Now we have find() function ready we can combine two sets,
+            - code [ref=e160]:
+              - generic [ref=e161]: void combine (int u, int v)
+              - generic [ref=e162]: "{"
+              - generic [ref=e163]: u = find(u);
+              - generic [ref=e164]: v = find(v);
+              - generic [ref=e165]: if(u == v) // already in the same set so no action needed
+              - generic [ref=e166]: return;
+              - generic [ref=e167]: else
+              - generic [ref=e168]: representative[v] = u;
+              - generic [ref=e169]: "}"
+            - paragraph [ref=e170]:
+              - text: We are done with the DSU implementation, its that easy.
+              - text: To check if two elements are in the same set or not just find their representative using find() and if they are same they belong to the same set.
+            - paragraph [ref=e171]: "However our implementation is not much efficient, consider the below case:"
+            - paragraph [ref=e172]:
+              - img "image" [ref=e173]
+            - paragraph [ref=e174]: Calling to find() function in cases like above actually will be of O(N).
+            - paragraph [ref=e175]:
+              - strong [ref=e176]: "Union by Size:"
+            - paragraph [ref=e177]: We can rectify this problem, we just need to keep the height of the tree as minimum as possible.
+            - paragraph [ref=e178]: Remember when we called combine(u,v) we always make u as the representative of v, however we could have done opposite as well. We can reduce the tree height by comparing the size of sets we are going to combine and always make the bigger set as the representative of the smaller.
+            - paragraph [ref=e179]: "Following the above approach the tree after the above combine operations will look like below:"
+            - paragraph [ref=e180]:
+              - img "image" [ref=e181]
+            - paragraph [ref=e182]: Please verify the above result, you just have to compare the size of sets before combining.
+            - paragraph [ref=e183]:
+              - text: For the set size we have to define an array size[] which will store the size of set.
+              - text: "Initial State:"
+              - img "image" [ref=e184]
+            - paragraph [ref=e185]: "Updated Combine function:"
+            - code [ref=e189]:
+              - generic [ref=e190]: void combine (int u, int v)
+              - generic [ref=e191]: "{"
+              - generic [ref=e192]: u = find(u);
+              - generic [ref=e193]: v = find(v);
+              - generic [ref=e194]: if(u == v)
+              - generic [ref=e195]: return;
+              - generic [ref=e196]: else
+              - generic [ref=e197]: "{"
+              - generic [ref=e198]: if(size[u] > sizev])
+              - generic [ref=e199]: "{"
+              - generic [ref=e200]: representative[v] = u;
+              - generic [ref=e201]: size[u] += size[v];
+              - generic [ref=e202]: "}"
+              - generic [ref=e203]: else
+              - generic [ref=e204]: "{"
+              - generic [ref=e205]: representative[u] = v;
+              - generic [ref=e206]: size[v] += size[u];
+              - generic [ref=e207]: "}"
+              - generic [ref=e208]: "}"
+              - generic [ref=e209]: "}"
+            - paragraph [ref=e210]:
+              - text: DSU with union by size works in
+              - emphasis [ref=e211]:
+                - strong [ref=e212]: O(log N)
+              - text: "which is fast enough to solve alomost all problems, still there is one more optimization possible to the above implementation:"
+            - paragraph [ref=e213]:
+              - strong [ref=e214]: "Path Compression:"
+            - paragraph [ref=e215]:
+              - text: When we call find() function we traverse the path from given node ‘u’ all upto its representative what if we can set the representative of all the nodes in the path while finding the representative for ‘u’;
+              - text: "See the below updated find() code:"
+            - code [ref=e219]:
+              - generic [ref=e220]: int find(int u)
+              - generic [ref=e221]: "{"
+              - generic [ref=e222]: if(u == representative[u])
+              - generic [ref=e223]: return u;
+              - generic [ref=e224]: else
+              - generic [ref=e225]: return representative[u] = find(representative[u]);
+              - generic [ref=e226]: "}"
+            - paragraph [ref=e227]:
+              - text: "Example:"
+              - text: See the graph initially
+              - img "image" [ref=e228]
+            - paragraph [ref=e229]: "Now if a call is made to find(g), then the graph will be transformed to :"
+            - paragraph [ref=e230]:
+              - img "image" [ref=e231]
+            - paragraph [ref=e232]: Hence Any further call to find(g)/find(e)/find(c) will be just a single operation task.
+            - paragraph [ref=e233]: "The final optimised implementation of combine() & find() are below:"
+            - code [ref=e237]:
+              - generic [ref=e238]: int find(int u)
+              - generic [ref=e239]: "{"
+              - generic [ref=e240]: if(u == representative[u])
+              - generic [ref=e241]: return u;
+              - generic [ref=e242]: else
+              - generic [ref=e243]: return representative[u] = find(representative[u]);
+              - generic [ref=e244]: "}"
+              - generic [ref=e245]: void combine (int u, int v)
+              - generic [ref=e246]: "{"
+              - generic [ref=e247]: u = find(u);
+              - generic [ref=e248]: v = find(v);
+              - generic [ref=e249]: if(u == v)
+              - generic [ref=e250]: return;
+              - generic [ref=e251]: else
+              - generic [ref=e252]: "{"
+              - generic [ref=e253]: if(size[u] > size[v])
+              - generic [ref=e254]: "{"
+              - generic [ref=e255]: representative[v] = u;
+              - generic [ref=e256]: size[u] += size[v];
+              - generic [ref=e257]: "}"
+              - generic [ref=e258]: else
+              - generic [ref=e259]: "{"
+              - generic [ref=e260]: representative[u] = v;
+              - generic [ref=e261]: size[v] += size[u];
+              - generic [ref=e262]: "}"
+              - generic [ref=e263]: "}"
+              - generic [ref=e264]: "}"
+            - paragraph [ref=e265]:
+              - text: "Try out the below problems to get further clarity:"
+              - link "https://leetcode.com/list/5lhmb4mj/" [ref=e266] [cursor=pointer]:
+                - /url: https://leetcode.com/list/5lhmb4mj/
+            - paragraph [ref=e267]: Thanks @rowe1227 & @pleasegetmeajob for the list.
+            - paragraph [ref=e268]: Please upvote if you find this article helpful :)
+          - generic [ref=e271]:
+            - generic [ref=e272]:
+              - button "1.1K" [ref=e273] [cursor=pointer]:
+                - img [ref=e275]
+                - generic [ref=e277]: 1.1K
+              - button [ref=e279] [cursor=pointer]:
+                - img [ref=e281]
+            - button "60" [ref=e283] [cursor=pointer]:
+              - img [ref=e285]
+              - generic [ref=e287]: "60"
+            - button [ref=e289] [cursor=pointer]:
+              - button [ref=e290]:
+                - img [ref=e292]
+          - generic [ref=e294]:
+            - generic [ref=e295]:
+              - img [ref=e297]
+              - generic [ref=e299]: Comments (60)
+              - button "Sort by:Best" [ref=e303] [cursor=pointer]:
+                - generic [ref=e304]:
+                  - generic [ref=e305]: "Sort by:"
+                  - text: Best
+                - generic:
+                  - img
+            - generic [ref=e309]:
+              - textbox "Type comment here..." [ref=e310]
+              - generic [ref=e311]:
+                - generic [ref=e313]:
+                  - img [ref=e315] [cursor=pointer]
+                  - img [ref=e318] [cursor=pointer]
+                  - img [ref=e321] [cursor=pointer]
+                  - img [ref=e324] [cursor=pointer]
+                - button "Comment" [disabled] [ref=e327] [cursor=pointer]
+            - navigation [ref=e441]:
+              - button "prev" [disabled]:
+                - img
+              - button "1" [disabled]
+              - button "2" [disabled]
+              - button "3" [disabled]
+              - button "4" [disabled]
+              - button "5" [disabled]
+              - button "6" [disabled]
+              - button "next" [disabled]:
+                - img
+        - generic [ref=e442]:
+          - generic [ref=e444]:
+            - img [ref=e446]
+            - generic [ref=e448]: Explore
+          - generic [ref=e483]:
+            - generic [ref=e484]:
+              - link "Download App" [ref=e485] [cursor=pointer]:
+                - /url: https://leetcode.com/app/?utm_campaign=AppPromotion&utm_medium=site&utm_source=site_footer&gio_link_id=nPN4bXe9
+                - img [ref=e487]
+                - text: Download App
+              - link "Support" [ref=e490] [cursor=pointer]:
+                - /url: https://support.leetcode.com/hc/en-us
+              - link "Terms" [ref=e492] [cursor=pointer]:
+                - /url: /terms
+              - link "Privacy Policy" [ref=e494] [cursor=pointer]:
+                - /url: /privacy
+              - generic [ref=e496] [cursor=pointer]: More
+            - link "Copyright © 2026 LeetCode" [ref=e497] [cursor=pointer]:
+              - /url: /
+            - link "United States" [ref=e499] [cursor=pointer]:
+              - /url: /region
+        - generic [ref=e500]:
+          - button:
+            - generic:
+              - img
+    - region "Notifications (F8)":
+      - list
+  - alert [ref=e501]

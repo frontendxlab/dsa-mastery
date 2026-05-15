@@ -1,0 +1,258 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - navigation [ref=e6]:
+        - generic [ref=e7]:
+          - link "LeetCode" [ref=e8] [cursor=pointer]:
+            - /url: /
+            - img [ref=e10]
+          - list [ref=e18]:
+            - listitem [ref=e19]:
+              - link "Problems" [ref=e20] [cursor=pointer]:
+                - /url: /problemset
+            - listitem [ref=e21]:
+              - link "Contest" [ref=e22] [cursor=pointer]:
+                - /url: /contest
+            - listitem [ref=e23]:
+              - link "Discuss" [ref=e24] [cursor=pointer]:
+                - /url: /discuss/
+            - listitem [ref=e25]:
+              - generic [ref=e27] [cursor=pointer]:
+                - button "More" [ref=e28]:
+                  - text: More
+                  - img [ref=e29]
+                - list:
+                  - listitem:
+                    - link:
+                      - /url: https://interview.leetcode.com/interview/
+                      - img
+                      - generic: Online Interview
+                  - listitem:
+                    - link:
+                      - /url: /assessment/
+                      - img
+                      - generic: Assessment
+                  - listitem:
+                    - link:
+                      - /url: /store
+                      - generic: Redeem
+                  - listitem:
+                    - link:
+                      - /url: /subscribe/?ref=sto_npl&source=ot
+                      - generic: Premium
+      - generic [ref=e32]:
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - link [ref=e36] [cursor=pointer]:
+              - /url: /discuss/
+              - button [ref=e37]:
+                - img [ref=e39]
+            - button [ref=e41] [cursor=pointer]:
+              - img [ref=e43]
+          - generic [ref=e46]:
+            - generic [ref=e47]: Backtracking for Beginners [Problems]
+            - generic [ref=e48]:
+              - link [ref=e50] [cursor=pointer]:
+                - /url: /u/xahinds2/
+              - generic [ref=e51]:
+                - link "Sahin Das" [ref=e54] [cursor=pointer]:
+                  - /url: /u/xahinds2/
+                - generic [ref=e55]:
+                  - generic [ref=e56]:
+                    - img [ref=e57]
+                    - generic [ref=e59]: "15814"
+                  - generic [ref=e60]:
+                    - img [ref=e61]
+                    - generic [ref=e63]: Jul 06, 2022
+                  - generic [ref=e64]:
+                    - img [ref=e66]
+                    - generic [ref=e68]: Jul 12, 2022
+            - generic [ref=e69]:
+              - link "Backtracking" [ref=e70] [cursor=pointer]:
+                - /url: /discuss/topic/backtracking/
+              - link "Career" [ref=e71] [cursor=pointer]:
+                - /url: /discuss/topic/career/
+          - generic [ref=e75]:
+            - code [ref=e79]:
+              - generic [ref=e80]: Generally backtracking does not require memoization since the testcase size are less
+              - generic [ref=e81]: try finding all the possibilities with the given condition and if it satisfies all the
+              - text: condition stop the recursion
+            - paragraph [ref=e82]:
+              - text: "Leetcode Problems :"
+              - link "Graph for Beginners [Problems]" [ref=e83] [cursor=pointer]:
+                - /url: https://leetcode.com/discuss/study-guide/1808711/Graph-for-Beginners-Problems
+            - paragraph [ref=e84]: "Level 1 :"
+            - list [ref=e85]:
+              - listitem [ref=e86]:
+                - text: "Permutations :"
+                - link "http://leetcode.com/problems/permutations/" [ref=e87] [cursor=pointer]:
+                  - /url: http://leetcode.com/problems/permutations/
+              - listitem [ref=e88]:
+                - text: "Permutations II :"
+                - link "http://leetcode.com/problems/permutations-ii/" [ref=e89] [cursor=pointer]:
+                  - /url: http://leetcode.com/problems/permutations-ii/
+              - listitem [ref=e90]:
+                - text: "Combinations :"
+                - link "http://leetcode.com/problems/combinations/" [ref=e91] [cursor=pointer]:
+                  - /url: http://leetcode.com/problems/combinations/
+              - listitem [ref=e92]:
+                - text: "Combination Sum :"
+                - link "http://leetcode.com/problems/combination-sum/" [ref=e93] [cursor=pointer]:
+                  - /url: http://leetcode.com/problems/combination-sum/
+              - listitem [ref=e94]:
+                - text: "Combination Sum II :"
+                - link "http://leetcode.com/problems/combination-sum-ii/" [ref=e95] [cursor=pointer]:
+                  - /url: http://leetcode.com/problems/combination-sum-ii/
+              - listitem [ref=e96]:
+                - text: "Combination Sum III :"
+                - link "http://leetcode.com/problems/combination-sum-iii/" [ref=e97] [cursor=pointer]:
+                  - /url: http://leetcode.com/problems/combination-sum-iii/
+              - listitem [ref=e98]:
+                - text: "Subsets :"
+                - link "http://leetcode.com/problems/subsets" [ref=e99] [cursor=pointer]:
+                  - /url: http://leetcode.com/problems/subsets
+              - listitem [ref=e100]:
+                - text: "Subsets II :"
+                - link "http://leetcode.com/problems/subsets-ii/submissions/" [ref=e101] [cursor=pointer]:
+                  - /url: http://leetcode.com/problems/subsets-ii/submissions/
+              - listitem [ref=e102]:
+                - text: "Palindrome Partitioning :"
+                - link "http://leetcode.com/problems/palindrome-partitioning/" [ref=e103] [cursor=pointer]:
+                  - /url: http://leetcode.com/problems/palindrome-partitioning/
+              - listitem [ref=e104]:
+                - text: "Generate Parentheses :"
+                - link "http://leetcode.com/problems/generate-parentheses/" [ref=e105] [cursor=pointer]:
+                  - /url: http://leetcode.com/problems/generate-parentheses/
+              - listitem [ref=e106]:
+                - text: "Word Search :"
+                - link "http://leetcode.com/problems/word-search/" [ref=e107] [cursor=pointer]:
+                  - /url: http://leetcode.com/problems/word-search/
+              - listitem [ref=e108]:
+                - text: "Shopping Offers :"
+                - link "http://leetcode.com/problems/shopping-offers" [ref=e109] [cursor=pointer]:
+                  - /url: http://leetcode.com/problems/shopping-offers
+              - listitem [ref=e110]:
+                - text: "Count Number of Texts :"
+                - link "https://leetcode.com/problems/count-number-of-texts/" [ref=e111] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/count-number-of-texts/
+                - text: (memoization needed)
+              - listitem [ref=e112]:
+                - text: "Letter Combinations of a Phone Number :"
+                - link "https://leetcode.com/problems/letter-combinations-of-a-phone-number/" [ref=e113] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+            - paragraph [ref=e114]: "Level 2 :"
+            - list [ref=e115]:
+              - listitem [ref=e116]:
+                - text: "N-Queens :"
+                - link "http://leetcode.com/problems/n-queens/" [ref=e117] [cursor=pointer]:
+                  - /url: http://leetcode.com/problems/n-queens/
+              - listitem [ref=e118]:
+                - text: "Sudoku Solver :"
+                - link "http://leetcode.com/problems/sudoku-solver/" [ref=e119] [cursor=pointer]:
+                  - /url: http://leetcode.com/problems/sudoku-solver/
+              - listitem [ref=e120]:
+                - text: "Letter Case Permutation :"
+                - link "http://leetcode.com/problems/letter-case-permutation" [ref=e121] [cursor=pointer]:
+                  - /url: http://leetcode.com/problems/letter-case-permutation
+              - listitem [ref=e122]:
+                - text: "Path with Maximum Gold :"
+                - link "http://leetcode.com/problems/path-with-maximum-gold" [ref=e123] [cursor=pointer]:
+                  - /url: http://leetcode.com/problems/path-with-maximum-gold
+              - listitem [ref=e124]:
+                - text: "Beautiful Arrangement :"
+                - link "http://leetcode.com/problems/beautiful-arrangement" [ref=e125] [cursor=pointer]:
+                  - /url: http://leetcode.com/problems/beautiful-arrangement
+              - listitem [ref=e126]:
+                - text: "Fair Distribution of Cookies :"
+                - link "http://leetcode.com/problems/fair-distribution-of-cookies" [ref=e127] [cursor=pointer]:
+                  - /url: http://leetcode.com/problems/fair-distribution-of-cookies
+              - listitem [ref=e128]:
+                - text: "Find Unique Binary String :"
+                - link "http://leetcode.com/problems/find-unique-binary-string" [ref=e129] [cursor=pointer]:
+                  - /url: http://leetcode.com/problems/find-unique-binary-string
+              - listitem [ref=e130]:
+                - text: "Unique Paths III :"
+                - link "https://leetcode.com/problems/unique-paths-iii/" [ref=e131] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/unique-paths-iii/
+              - listitem [ref=e132]:
+                - text: "Maximum Compatibility Score Sum :"
+                - link "http://leetcode.com/problems/maximum-compatibility-score-sum" [ref=e133] [cursor=pointer]:
+                  - /url: http://leetcode.com/problems/maximum-compatibility-score-sum
+              - listitem [ref=e134]:
+                - text: "Maximum Score Words Formed by Letters :"
+                - link "http://leetcode.com/problems/maximum-score-words-formed-by-letters" [ref=e135] [cursor=pointer]:
+                  - /url: http://leetcode.com/problems/maximum-score-words-formed-by-letters
+              - listitem [ref=e136]:
+                - text: "Circular Permutation in Binary Representation :"
+                - link "http://leetcode.com/problems/circular-permutation-in-binary-representation" [ref=e137] [cursor=pointer]:
+                  - /url: http://leetcode.com/problems/circular-permutation-in-binary-representation
+              - listitem [ref=e138]:
+                - text: "The k-th Lexicographical String of All Happy Strings of Length n :"
+                - link "http://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n" [ref=e139] [cursor=pointer]:
+                  - /url: http://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n
+          - generic [ref=e142]:
+            - generic [ref=e143]:
+              - button "112" [ref=e144] [cursor=pointer]:
+                - img [ref=e146]
+                - generic [ref=e148]: "112"
+              - button [ref=e150] [cursor=pointer]:
+                - img [ref=e152]
+            - button "7" [ref=e154] [cursor=pointer]:
+              - img [ref=e156]
+              - generic [ref=e158]: "7"
+            - button [ref=e160] [cursor=pointer]:
+              - button [ref=e161]:
+                - img [ref=e163]
+          - generic [ref=e165]:
+            - generic [ref=e166]:
+              - img [ref=e168]
+              - generic [ref=e170]: Comments (7)
+              - button "Sort by:Best" [ref=e174] [cursor=pointer]:
+                - generic [ref=e175]:
+                  - generic [ref=e176]: "Sort by:"
+                  - text: Best
+                - generic:
+                  - img
+            - generic [ref=e180]:
+              - textbox "Type comment here..." [ref=e181]
+              - generic [ref=e182]:
+                - generic [ref=e184]:
+                  - img [ref=e186] [cursor=pointer]
+                  - img [ref=e189] [cursor=pointer]
+                  - img [ref=e192] [cursor=pointer]
+                  - img [ref=e195] [cursor=pointer]
+                - button "Comment" [disabled] [ref=e198] [cursor=pointer]
+            - navigation [ref=e279]:
+              - button "prev" [disabled]:
+                - img
+              - button "1" [disabled]
+              - button "next" [disabled]:
+                - img
+        - generic [ref=e280]:
+          - generic [ref=e282]:
+            - img [ref=e284]
+            - generic [ref=e286]: Explore
+          - generic [ref=e321]:
+            - generic [ref=e322]:
+              - link "Download App" [ref=e323] [cursor=pointer]:
+                - /url: https://leetcode.com/app/?utm_campaign=AppPromotion&utm_medium=site&utm_source=site_footer&gio_link_id=nPN4bXe9
+                - img [ref=e325]
+                - text: Download App
+              - link "Support" [ref=e328] [cursor=pointer]:
+                - /url: https://support.leetcode.com/hc/en-us
+              - link "Terms" [ref=e330] [cursor=pointer]:
+                - /url: /terms
+              - link "Privacy Policy" [ref=e332] [cursor=pointer]:
+                - /url: /privacy
+              - generic [ref=e334] [cursor=pointer]: More
+            - link "Copyright © 2026 LeetCode" [ref=e335] [cursor=pointer]:
+              - /url: /
+            - link "United States" [ref=e337] [cursor=pointer]:
+              - /url: /region
+        - generic [ref=e338]:
+          - button:
+            - generic:
+              - img
+    - region "Notifications (F8)":
+      - list
+  - alert [ref=e339]

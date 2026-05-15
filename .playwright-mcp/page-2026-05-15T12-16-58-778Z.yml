@@ -1,0 +1,804 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - navigation [ref=e6]:
+        - generic [ref=e7]:
+          - link "LeetCode" [ref=e8] [cursor=pointer]:
+            - /url: /
+            - img [ref=e10]
+          - list [ref=e18]:
+            - listitem [ref=e19]:
+              - link "Problems" [ref=e20] [cursor=pointer]:
+                - /url: /problemset
+            - listitem [ref=e21]:
+              - link "Contest" [ref=e22] [cursor=pointer]:
+                - /url: /contest
+            - listitem [ref=e23]:
+              - link "Discuss" [ref=e24] [cursor=pointer]:
+                - /url: /discuss/
+            - listitem [ref=e25]:
+              - generic [ref=e27] [cursor=pointer]:
+                - button "More" [ref=e28]:
+                  - text: More
+                  - img [ref=e29]
+                - list:
+                  - listitem:
+                    - link:
+                      - /url: https://interview.leetcode.com/interview/
+                      - img
+                      - generic: Online Interview
+                  - listitem:
+                    - link:
+                      - /url: /assessment/
+                      - img
+                      - generic: Assessment
+                  - listitem:
+                    - link:
+                      - /url: /store
+                      - generic: Redeem
+                  - listitem:
+                    - link:
+                      - /url: /subscribe/?ref=sto_npl&source=ot
+                      - generic: Premium
+      - generic [ref=e32]:
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - link [ref=e36] [cursor=pointer]:
+              - /url: /discuss/
+              - button [ref=e37]:
+                - img [ref=e39]
+            - button [ref=e41] [cursor=pointer]:
+              - img [ref=e43]
+          - generic [ref=e46]:
+            - generic [ref=e47]: Become Master In Recursion
+            - generic [ref=e48]:
+              - link [ref=e50] [cursor=pointer]:
+                - /url: /u/hi-malik/
+              - generic [ref=e51]:
+                - link "Himanshu Malik" [ref=e54] [cursor=pointer]:
+                  - /url: /u/hi-malik/
+                - generic [ref=e55]:
+                  - generic [ref=e56]:
+                    - img [ref=e57]
+                    - generic [ref=e59]: "76790"
+                  - generic [ref=e60]:
+                    - img [ref=e61]
+                    - generic [ref=e63]: Jan 31, 2022
+                  - generic [ref=e64]:
+                    - img [ref=e66]
+                    - generic [ref=e68]: Feb 15, 2022
+            - generic [ref=e69]:
+              - link "Recursion" [ref=e70] [cursor=pointer]:
+                - /url: /discuss/topic/recursion/
+              - link "Career" [ref=e71] [cursor=pointer]:
+                - /url: /discuss/topic/career/
+          - generic [ref=e75]:
+            - paragraph [ref=e76]:
+              - img "image" [ref=e77]
+              - img "image" [ref=e78]
+            - paragraph [ref=e79]: Let me give you a little introduction about myself.
+            - code [ref=e83]:
+              - generic [ref=e84]: I'm a 3 year Student studying Computer Science as a major
+              - generic [ref=e85]: I'm just an average person like other's.
+            - paragraph [ref=e86]:
+              - strong [ref=e87]: I'm not talented enough
+              - text: ", but I work"
+              - strong [ref=e88]: hard
+              - text: "& what I know is"
+              - emphasis [ref=e89]:
+                - strong [ref=e90]: "\"Hard work always beats talent, when talent doesn't work Hard!!”"
+            - separator [ref=e91]
+            - separator [ref=e92]
+            - paragraph [ref=e93]:
+              - text: It's not an language specific article. Trust me, you will learn a lot. Right now it's written in
+              - strong [ref=e94]: Java
+              - text: but trust me it will never be a issue.
+              - text: And I promise I'll add
+              - strong [ref=e95]: C++
+              - text: code also in it.
+            - separator [ref=e96]
+            - separator [ref=e97]
+            - paragraph [ref=e98]:
+              - code [ref=e99]: So, with that let's start.
+              - text: Hello, my fellow programmer's today I'm going to teach you how you can become
+              - emphasis [ref=e100]: master's
+              - text: in
+              - strong [ref=e101]: RECURSION
+            - paragraph [ref=e102]:
+              - text: If you want to become master, then you have to follow some
+              - strong [ref=e103]: rules
+              - text: ", only after that you can become"
+              - strong [ref=e104]: Magician
+              - text: or called
+              - strong [ref=e105]: Master's in Recursion
+              - code [ref=e106]: "Rules:"
+            - list [ref=e107]:
+              - listitem [ref=e108]:
+                - text: Bring up your
+                - strong [ref=e109]: pen
+                - text: and a fresh
+                - strong [ref=e110]: new notebook
+                - text: where you have to write all of these thing's which I will teach you
+                - strong [ref=e111]: right now
+                - text: .
+              - listitem [ref=e112]:
+                - text: If you had started learning recursion, then
+                - strong [ref=e113]: don't quit
+                - text: . Here's why,
+                - strong [ref=e114]: ask yourself
+                - text: this question when you feel about to quit,
+                - code [ref=e115]: "\"If you had to leave, then why you had start?\""
+              - listitem [ref=e116]: Look back again at above 2 rule's
+            - paragraph [ref=e117]: "Remember : Practice makes a men perfect"
+            - paragraph [ref=e118]:
+              - text: I have made complete recursion hand-written notes as well, if you want to download.
+              - link "Pdf Link 1" [ref=e119] [cursor=pointer]:
+                - /url: https://bit.ly/3s1sInf
+                - strong [ref=e120]: Pdf Link 1
+              - link "Pdf Link 2" [ref=e121] [cursor=pointer]:
+                - /url: https://bit.ly/3KSH2XX
+                - strong [ref=e122]: Pdf Link 2
+            - code [ref=e126]:
+              - generic [ref=e127]: "#RECURSION"
+            - paragraph [ref=e128]:
+              - strong [ref=e129]: INTRODUCTION
+              - text: Recursion is a method of solving a problem where the
+              - strong [ref=e130]: solution depends on solutions to smaller instances
+              - text: of the same problem.
+            - paragraph [ref=e131]: What we gonna learn:-
+            - list [ref=e132]:
+              - listitem [ref=e133]: Make Input Smaller! But why?
+              - listitem [ref=e134]: Recursion - Decision Space
+              - listitem [ref=e135]: Recursive Tree - Soul of Recursion [Important]
+              - listitem [ref=e136]: 2 steps to solve any Recursive problem
+            - list [ref=e137]:
+              - listitem [ref=e138]:
+                - strong [ref=e139]: Make Input Smaller! But Why?
+                - text: We don't deliberately smaller the input. The input becomes smaller
+                - strong [ref=e140]: automatically!
+                - text: . That's the power of recursion
+            - paragraph [ref=e141]:
+              - text: Let's understand it with an example. How the input is getting smaller.
+              - text: Let's say you want to get a higher package job. For that you have to take some decision's.
+              - strong [ref=e142]: The 1st decision [D1]
+              - text: you take is to get into a good college. By doing that your problem becomes small. Now
+              - strong [ref=e143]: 2nd decision [D2]
+              - text: you took is to learn coding [Data Structure & Algorithm]. Now your problem had become more smaller. Similarly upon taking several decision's you will land a high package job!
+            - paragraph [ref=e144]:
+              - img "image" [ref=e145]
+            - paragraph [ref=e146]: Similar thing happen's with our Iutput. Our Input is bigger in the starting but taking few decision's it becomes smaller & we finally get our result!
+            - paragraph [ref=e147]:
+              - img "image" [ref=e148]
+            - paragraph [ref=e149]:
+              - text: So, what you learn from above is, our
+              - strong [ref=e150]: decision
+              - text: has to be a
+              - strong [ref=e151]: primary goal
+              - text: "& on the basis of that. Input becomes smaller automatically"
+            - list [ref=e152]:
+              - listitem [ref=e153]:
+                - strong [ref=e154]: Recusion - Decision Space
+                - text: Whenever we have to think about space. Recusion is a good choice.
+            - paragraph [ref=e155]: Now how can we identify that whether a problem statement use recursion or not.
+            - blockquote [ref=e156]:
+              - paragraph [ref=e157]: For that we have to look at the problem, that we have given some Choice's & some Decision. If that's the case then it's a recursion problem.
+            - code [ref=e161]:
+              - generic [ref=e162]: "-----------------------------"
+              - generic [ref=e163]: Choices + Decision
+              - generic [ref=e164]: "-----------------------------"
+            - list [ref=e165]:
+              - listitem [ref=e166]:
+                - strong [ref=e167]: Recursion Tree
+            - paragraph [ref=e168]:
+              - text: Let's undrestand with an example,
+              - strong [ref=e169]: "-> Get subset of \"abc\"."
+              - text: "Now what is subset : \"subset is a set which contains all the elements of given set\""
+              - text: In our "abc", abc subset will be :-
+            - code [ref=e173]:
+              - generic [ref=e174]: "\" \" a ab abc"
+              - text: b bc c ac
+            - paragraph [ref=e175]: Don't worry I'm not teaching you right now, how to code & print subset. But later on we will learn.
+            - paragraph [ref=e176]:
+              - text: So, why I'm teaching you subset so that you can learn how we are solving this problem just by taking some
+              - strong [ref=e177]: choices & decision.
+            - paragraph [ref=e178]:
+              - text: So, In this example what choices can we have for
+              - strong [ref=e179]: "\"abc\""
+              - text: for a we have two choices whether to consider or not.
+            - code [ref=e183]:
+              - generic [ref=e184]: a b c
+              - text: / \ / \ / \ Yes No Yes No Yes No
+            - paragraph [ref=e185]: So, on these choices whatever decision I will take, it will make my subset!
+            - paragraph [ref=e186]:
+              - img "image" [ref=e187]
+            - paragraph [ref=e188]:
+              - text: So, if you see we are taking choices whether to
+              - strong [ref=e189]: have or not. [ 0 or 1 ]
+              - text: And by these choices we are making decision's. And because of that. Our Input is getting smaller.
+            - paragraph [ref=e190]:
+              - text: Now let's understand, what is
+              - strong [ref=e191]: Recursion tree?
+            - paragraph [ref=e192]: Again, let's understand with example we have to get subset of "ab"
+            - code [ref=e196]:
+              - generic [ref=e197]: "| \" \" | a -> 0 b -> 0"
+              - generic [ref=e198]: "| a | a -> 1 b -> 0"
+              - generic [ref=e199]: "| b | a -> 0 b -> 1"
+              - generic [ref=e200]: "| ab | a -> 1 b -> 1"
+            - paragraph [ref=e201]:
+              - text: So, instead of representing in
+              - strong [ref=e202]: a->0b->0
+              - text: way. We want to represent in a good way & that way is called
+              - emphasis [ref=e203]:
+                - strong [ref=e204]: Recursive Tree
+            - paragraph [ref=e205]:
+              - text: For Recursive tree there is a method called
+              - strong [ref=e206]: "\"IP - OP Method\""
+            - paragraph [ref=e207]:
+              - img "image" [ref=e208]
+            - paragraph [ref=e209]:
+              - text: Let's understand this tree with an example as well. Get
+              - strong [ref=e210]: subset of "ab"
+            - paragraph [ref=e211]:
+              - img "image" [ref=e212]
+            - paragraph [ref=e213]:
+              - text: When
+              - strong [ref=e214]: smaller"IP"
+              - text: becomes empty
+              - strong [ref=e215]: return the tree & get's the answer
+            - list [ref=e216]:
+              - listitem [ref=e217]:
+                - strong [ref=e218]: 2 steps to solve Recursion Problem
+            - list [ref=e219]:
+              - listitem [ref=e220]:
+                - code [ref=e221]: Design a recursive tree
+              - listitem [ref=e222]:
+                - code [ref=e223]: F8ck the problem a.k.a
+                - strong [ref=e224]: Write the code
+            - code [ref=e228]:
+              - generic [ref=e229]: RECUSRION is every-where
+            - blockquote [ref=e230]:
+              - paragraph [ref=e231]: We use recursion in most of the places.
+            - paragraph [ref=e232]: Data Structure :-
+            - list [ref=e233]:
+              - listitem [ref=e234]: Array/String
+              - listitem [ref=e235]: Heap
+              - listitem [ref=e236]: Stack
+              - listitem [ref=e237]: Tree
+              - listitem [ref=e238]: Graph [DFS]
+              - listitem [ref=e239]: Linked List
+            - blockquote [ref=e240]:
+              - paragraph [ref=e241]:
+                - text: Recursion is backbone of :-
+                - strong [ref=e242]: DP / BackTracking / Divide n Conquer
+            - paragraph [ref=e243]: Question's we gonna solve :-
+            - code [ref=e247]:
+              - generic [ref=e248]: "-> Print 1 to N"
+              - generic [ref=e249]: "-> Print N to 1"
+              - generic [ref=e250]: "-> Height of a Binary Tree"
+              - generic [ref=e251]: "-> Sort an array"
+              - generic [ref=e252]: "-> Sort an stack"
+              - generic [ref=e253]: "-> Delete Middle Element from A Stack"
+              - generic [ref=e254]: "-> Reverse A Stack"
+              - generic [ref=e255]: "-> Kth Symbol In Grammar"
+              - generic [ref=e256]: "-> Tower Of Hanoi"
+              - generic [ref=e257]: "-> Print Subsets"
+              - generic [ref=e258]: "-> Print Unique Subsets & Variation"
+              - generic [ref=e259]: "-> Permutation with Spaces"
+              - generic [ref=e260]: "-> Permutation with Case Change"
+              - generic [ref=e261]: "-> Letter Case Permutation"
+              - generic [ref=e262]: "-> Generate All Balanced Parenthesis"
+            - separator [ref=e263]
+            - separator [ref=e264]
+            - code [ref=e268]:
+              - generic [ref=e269]: Hypothesis - Induction - Base Condition
+            - paragraph [ref=e270]:
+              - text: Okay, now you will ask what is this,
+              - strong [ref=e271]: Hypothesis-Induction-Base Condition
+              - text: ", well I call it as"
+              - strong [ref=e272]: IBH method
+              - text: I will get on to your point, but before that let's understand, in recursion there are several approaches to solve a
+              - strong [ref=e273]: Recursive problem
+              - text: But we will learn 2 ways to solve a problem.
+            - list [ref=e274]:
+              - listitem [ref=e275]:
+                - text: Recursive Tree -> IP/OP method
+                - strong [ref=e276]: "[work's only if you know Decision]"
+              - listitem [ref=e277]:
+                - text: Base Condition-Induction-Hypothesis -> [IBH]
+                - strong [ref=e278]: "[only work when you don't have given choices & make IP smaller]"
+            - paragraph [ref=e279]:
+              - code [ref=e280]: Let's understand what are Hypothesis, Induction & Base Condition
+            - list [ref=e281]:
+              - listitem [ref=e282]:
+                - strong [ref=e283]: Hypothesis :- Work's like recursion tree
+              - listitem [ref=e284]:
+                - strong [ref=e285]: Induction :- let's say you have to print 1 to n all numbers, so the magic happen's called induction
+              - listitem [ref=e286]:
+                - strong [ref=e287]: Base Condition :- Work's only if you have "smallest valid Input" OR "smallest invalid iput"
+            - paragraph [ref=e288]: Let's understand our IBH method with one question
+            - blockquote [ref=e289]:
+              - paragraph [ref=e290]:
+                - strong [ref=e291]: Que. Print 1 to n
+              - blockquote [ref=e292]:
+                - paragraph [ref=e293]:
+                  - strong [ref=e294]: Problem Statement :-
+                  - text: In this let say we have
+                  - strong [ref=e295]: input 7
+                  - text: and we want to print all possible no.s from
+                  - strong [ref=e296]: 1 to 7
+                  - text: . And that will be 1,2,3,4,5,6,7
+            - paragraph [ref=e297]:
+              - img "image" [ref=e298]
+            - paragraph [ref=e299]:
+              - text: In this problem our
+              - strong [ref=e300]: hypothesis
+              - text: is to look at the no just below 7 i.e. 6 & work wtill here. Rest will be come up automatically..
+              - text: Now, you will ask automatically rest will come but
+              - strong [ref=e301]: how?
+              - text: . Okay let me explain then, so whenever we are making call to our let say
+              - strong [ref=e302]: solve function
+              - text: . So, it will store the value in the stack becuase firstly we are making function call of
+              - strong [ref=e303]: solve(n - 1)
+              - text: which is our
+              - strong [ref=e304]: hypothesis
+              - text: "& then we are printing them out."
+            - paragraph [ref=e305]:
+              - text: Once it make a call till 0. So, 0 is our smaller valid input possible & this will be our
+              - strong [ref=e306]: base condition
+              - text: . Once our function hit's the base condition, we will start printing it back & that will be our
+              - strong [ref=e307]: induction
+            - paragraph [ref=e308]:
+              - img "image" [ref=e309]
+            - paragraph [ref=e310]:
+              - text: So, if you carefully observe we are just making our input smaller each n every time by the help of
+              - strong [ref=e311]: Hypothesis
+              - text: that we had created. And once input become so smaller and hit our
+              - strong [ref=e312]: base condition
+              - text: ", we will get our answer and that magic is"
+              - strong [ref=e313]: induction
+              - text: .
+              - code [ref=e314]: So, we are only worried about making our input 1 step smaller, for the rest input it will work magically. And that magic is recursion
+            - paragraph [ref=e315]: I hope now you have understand, that how IBH method helps in making Input smaller.
+            - paragraph [ref=e316]: Now let's see how we code it up,
+            - code [ref=e320]:
+              - generic [ref=e321]: import java.util.*;
+              - generic [ref=e322]: "class Main {"
+              - generic [ref=e323]: "public static void solve(int n){"
+              - generic [ref=e324]: // Base condition
+              - generic [ref=e325]: if(n == 0) return;
+              - generic [ref=e326]: solve(n - 1); // Hypothesis
+              - generic [ref=e327]: System.out.println(n); // Induction
+              - generic [ref=e328]: "}"
+              - generic [ref=e329]: "}"
+            - separator [ref=e330]
+            - separator [ref=e331]
+            - blockquote [ref=e332]:
+              - paragraph [ref=e333]:
+                - strong [ref=e334]: Que. Print n to 1
+              - blockquote [ref=e335]:
+                - paragraph [ref=e336]:
+                  - strong [ref=e337]: Problem Statement :-
+                  - text: In this let say we have
+                  - strong [ref=e338]: input 7
+                  - text: and we want to print all possible no.s from
+                  - strong [ref=e339]: 7 to 1
+                  - text: . And that will be 7,6,5,4,3,2,1
+            - paragraph [ref=e340]: Okay this question is almost similar to the previous question we have done. In this one we have to print all of them in reverse order.
+            - paragraph [ref=e341]:
+              - text: So, what difference you can see over here is in the previous question, first we are writing
+              - strong [ref=e342]: Hypothesis
+              - text: then making call to our
+              - strong [ref=e343]: indcution
+              - text: to print it. But in this question we dont store all of them in our stack. First we will make a call to print it, then we will move a call to our
+              - strong [ref=e344]: solve function (n - 1)
+              - text: . And once we hit the
+              - strong [ref=e345]: base condition
+              - text: ", we will return our output."
+            - paragraph [ref=e346]:
+              - img "image" [ref=e347]
+            - paragraph [ref=e348]: "Now let's see how we code this:"
+            - code [ref=e352]:
+              - generic [ref=e353]: import java.util.*;
+              - generic [ref=e354]: "class Main {"
+              - generic [ref=e355]: "public static void solve(int n){"
+              - generic [ref=e356]: // Base condition
+              - generic [ref=e357]: if(n == 0) return;
+              - generic [ref=e358]: System.out.println(n); // Induction
+              - generic [ref=e359]: solve(n - 1); // Hypothesis
+              - generic [ref=e360]: "}"
+              - generic [ref=e361]: "}"
+            - separator [ref=e362]
+            - separator [ref=e363]
+            - text: Alright guy's now you get a good understanding of how **IBH method** works. Now let's practice more question's and do some rock n roll
+            - separator [ref=e364]
+            - separator [ref=e365]
+            - blockquote [ref=e366]:
+              - paragraph [ref=e367]:
+                - strong [ref=e368]: Que. Height Of A Binary Tree
+              - blockquote [ref=e369]:
+                - paragraph [ref=e370]:
+                  - strong [ref=e371]: Problem Statement:-
+                  - text: Given the root of a binary tree, return its maximum depth. In
+                  - strong [ref=e372]: input
+                  - text: we have given tree node values & in
+                  - strong [ref=e373]: output
+                  - text: we have to return it's maximum height.
+            - paragraph [ref=e374]: Let's understand this with an tree example.
+            - paragraph [ref=e375]: Say we have given something like this :-
+            - paragraph [ref=e376]:
+              - img "image" [ref=e377]
+            - paragraph [ref=e378]:
+              - text: To calculate it's height, we draw line and found out that it's
+              - strong [ref=e379]: height is 3
+            - paragraph [ref=e380]:
+              - text: Now, by
+              - code [ref=e381]: using recursion how can we find it.
+              - text: So, we know the root & it's child will be find by
+              - strong [ref=e382]: Hypothesis
+              - text: . So we go deep inside to it's left, then to it's right & from there we will get the deepest root to child value of it's left & right. We will compare both of them and that will be our
+              - strong [ref=e383]: Induction
+              - text: and which one has the greatest value will be added to 1, as root will count as well.
+              - text: Now in this the smallest valid Input could be if root is null & that;s our
+              - strong [ref=e384]: Base condition
+              - text: .
+              - code [ref=e385]: Let's understand visually
+            - paragraph [ref=e386]:
+              - img "image" [ref=e387]
+            - paragraph [ref=e388]:
+              - text: In the above diagram, max height we get is 3. But we have to add root as well. So, it will be
+              - strong [ref=e389]: 3 + 1 = 4
+            - paragraph [ref=e390]: Now let's code it up :-
+            - code [ref=e394]:
+              - generic [ref=e395]: "class Solution {"
+              - generic [ref=e396]: "public int maxDepth(TreeNode root) {"
+              - generic [ref=e397]: // Base Condition
+              - generic [ref=e398]: if(root == null) return 0;
+              - generic [ref=e399]: // Hypothesis
+              - generic [ref=e400]: int left = maxDepth(root.left);
+              - generic [ref=e401]: int right = maxDepth(root.right);
+              - generic [ref=e402]: // Induction
+              - generic [ref=e403]: return Math.max(left, right) + 1;
+              - generic [ref=e404]: "}"
+              - generic [ref=e405]: "}"
+            - separator [ref=e406]
+            - separator [ref=e407]
+            - blockquote [ref=e408]:
+              - paragraph [ref=e409]:
+                - strong [ref=e410]: Que. Sort An Array Using Recursion
+              - blockquote [ref=e411]:
+                - paragraph [ref=e412]:
+                  - strong [ref=e413]: Problem Statement :-
+                  - text: We have given an array list, we have to sort the array in
+                  - strong [ref=e414]: asscending order
+                  - text: .
+                  - strong [ref=e415]: "Input :"
+                  - text: "[5,1,0,2] &"
+                  - strong [ref=e416]: "Output :"
+                  - text: "[0,1,2,5]"
+            - paragraph [ref=e417]:
+              - text: Firstly, your thought is.
+              - strong [ref=e418]: Why we are doing this with recusrion
+              - text: as, we can do that using
+              - strong [ref=e419]: Sorting or Iterative way
+              - text: .
+            - paragraph [ref=e420]:
+              - code [ref=e421]: I say, you will learn from this a lot.
+            - paragraph [ref=e422]:
+              - strong [ref=e423]: arr = [5,1,0,2]
+              - text: sort this array
+              - code [ref=e424]: "Understand it visually:"
+            - paragraph [ref=e425]:
+              - img "image" [ref=e426]
+            - paragraph [ref=e427]:
+              - text: Okay, so we have figure out our
+              - strong [ref=e428]: Hypothesis & Induction
+              - strong [ref=e429]: Base Condition
+              - text: left. Our smallest valid input could be if
+              - strong [ref=e430]: Array size is 1
+              - text: ", then we simply"
+              - strong [ref=e431]: return Array
+            - paragraph [ref=e432]: Now let's code it up :-
+            - code [ref=e436]:
+              - generic [ref=e437]: import java.util.*;
+              - generic [ref=e438]: "class Main { // Main function call"
+              - generic [ref=e439]: "public static void main(String[] args) {"
+              - generic [ref=e440]: ArrayList arr = new ArrayList(
+              - generic [ref=e441]: Arrays.asList(5,1,0,2)
+              - generic [ref=e442]: );
+              - generic [ref=e443]: arr = sort(arr);
+              - generic [ref=e444]: System.out.println(arr);
+              - generic [ref=e445]: "}"
+              - generic [ref=e446]: // Actual work start's from here
+              - generic [ref=e447]: "public static ArrayList sort(ArrayList<Integer> arr){ // sort function"
+              - generic [ref=e448]: // Base Condition
+              - generic [ref=e449]: "if(arr.size()==1){"
+              - generic [ref=e450]: return arr;
+              - generic [ref=e451]: "}"
+              - generic [ref=e452]: // Hypothesis
+              - generic [ref=e453]: int temp = arr.get(arr.size()-1); // getting 2 out
+              - generic [ref=e454]: arr.remove(arr.size()-1); // removing it from array
+              - generic [ref=e455]: sort(arr); // sorting the array from [5,1,0] -> [0,1,5]
+              - generic [ref=e456]: insert(arr,temp);
+              - generic [ref=e457]: return arr;
+              - generic [ref=e458]: "}"
+              - generic [ref=e459]: "public static ArrayList insert(ArrayList<Integer> arr,int temp){ // insert function"
+              - generic [ref=e460]: // Base Condition
+              - generic [ref=e461]: "if(arr.size() == 0 || temp >= arr.get(arr.size() - 1)){ // checking if let say we have 6 in temp & 6 is greater then 5"
+              - generic [ref=e462]: arr.add(temp); // we will simply add it into our array
+              - generic [ref=e463]: return arr; // and return it
+              - generic [ref=e464]: "}"
+              - generic [ref=e465]: // Hypothesis
+              - generic [ref=e466]: int val = arr.get(arr.size() - 1); // getting 5 out
+              - generic [ref=e467]: arr.remove(arr.size() - 1); // removing 5 from array -> [0,1]
+              - generic [ref=e468]: insert(arr, temp); // insrting 2 to [0,1] which becomes -> [0,1,2]
+              - generic [ref=e469]: // Induction
+              - generic [ref=e470]: arr.add(val); // adding 5 to [0,1,2] which becomes -> [0,1,2,5]
+              - generic [ref=e471]: return arr;
+              - generic [ref=e472]: "}"
+              - generic [ref=e473]: "}"
+            - separator [ref=e474]
+            - separator [ref=e475]
+            - blockquote [ref=e476]:
+              - paragraph [ref=e477]:
+                - strong [ref=e478]: Que. Sort A Stack
+              - blockquote [ref=e479]:
+                - paragraph [ref=e480]:
+                  - strong [ref=e481]: Problem Statement
+                  - text: Given a stack, sort it in asscending order
+            - code [ref=e485]:
+              - generic [ref=e486]: "Input: Output:"
+              - generic [ref=e487]: 2 <--- Top 5 <--- Top
+              - generic [ref=e488]: 0 2
+              - generic [ref=e489]: 1 1
+              - generic [ref=e490]: 5 0
+            - paragraph [ref=e491]:
+              - text: Alright, Guy's this problem is much similar to "Sort an Array".
+              - code [ref=e492]: I mean it's almost to that
+            - paragraph [ref=e493]: Let's understand it visually,
+            - paragraph [ref=e494]:
+              - img "image" [ref=e495]
+            - paragraph [ref=e496]:
+              - text: Okay, so we have figure out our
+              - strong [ref=e497]: Hypothesis & Induction
+              - strong [ref=e498]: Base Condition
+              - text: left. Our smallest valid input could be if
+              - strong [ref=e499]: Stack size is 1
+              - text: ", then we simply"
+              - strong [ref=e500]: return stack
+            - paragraph [ref=e501]: Now let's code it up :-
+            - code [ref=e505]:
+              - generic [ref=e506]: "class Main {"
+              - generic [ref=e507]: // Main function call
+              - generic [ref=e508]: "public static void main(String[] args) {"
+              - generic [ref=e509]: Stack<Integer> st = new Stack<>();
+              - generic [ref=e510]: st.push(5);
+              - generic [ref=e511]: st.push(1);
+              - generic [ref=e512]: st.push(0);
+              - generic [ref=e513]: st.push(2);
+              - generic [ref=e514]: System.out.println("Stack before sorting:");
+              - generic [ref=e515]: "for (Integer s : st) {"
+              - generic [ref=e516]: System.out.print(s + " ");
+              - generic [ref=e517]: "}"
+              - generic [ref=e518]: System.out.println("\nStack after sorting:");
+              - generic [ref=e519]: Stack<Integer> sorted = sortStack(st);
+              - generic [ref=e520]: "for (Integer i : sorted) {"
+              - generic [ref=e521]: System.out.print(i + " ");
+              - generic [ref=e522]: "}"
+              - generic [ref=e523]: "}"
+              - generic [ref=e524]: // Actual work start's from here
+              - generic [ref=e525]: "public static Stack<Integer> sortStack(Stack<Integer> st){"
+              - generic [ref=e526]: if(st.size() == 1) return st; // Base Condition
+              - generic [ref=e527]: // Hypothesis
+              - generic [ref=e528]: int temp = st.pop(); // getting 2 out
+              - generic [ref=e529]: sortStack(st); // sorting the stack from [5,1,0] -> [0,1,5]
+              - generic [ref=e530]: return insertElementAtStack(st, temp);
+              - generic [ref=e531]: "}"
+              - generic [ref=e532]: "public static Stack<Integer> insertElementAtStack(Stack<Integer> st, int temp){"
+              - generic [ref=e533]: // Base Condition
+              - generic [ref=e534]: "if(st.size() == 0 || temp >= st.peek()){ // checking if let say we have 6 in temp & 6 is greater then 5"
+              - generic [ref=e535]: st.push(temp); // we will simply add it into our stack
+              - generic [ref=e536]: return st;
+              - generic [ref=e537]: "}"
+              - generic [ref=e538]: // Hypothesis
+              - generic [ref=e539]: int val = st.pop(); // getting 5 out stack becomes -> [0,1]
+              - generic [ref=e540]: insertElementAtStack(st, temp); // insrting 2 to [0,1] which becomes -> [0,1,2]
+              - generic [ref=e541]: // Induction
+              - generic [ref=e542]: st.push(val); // adding 5 to [0,1,2] which becomes -> [0,1,2,5]
+              - generic [ref=e543]: return st;
+              - generic [ref=e544]: "}"
+              - generic [ref=e545]: "}"
+            - separator [ref=e546]
+            - separator [ref=e547]
+            - blockquote [ref=e548]:
+              - paragraph [ref=e549]:
+                - strong [ref=e550]: Que. Delete Middle Element Of a Stack
+              - blockquote [ref=e551]:
+                - paragraph [ref=e552]:
+                  - strong [ref=e553]: Problem Statement :-
+                  - text: "Input : Stack[] = [1, 2, 3, 4, 5]"
+                  - text: "Output : Stack[] = [1, 2, 4, 5]"
+            - paragraph [ref=e554]: So, in this we have to delete a middle element from a stack.
+            - paragraph [ref=e555]: "Let's understand it's visually :"
+            - paragraph [ref=e556]:
+              - img "image" [ref=e557]
+            - paragraph [ref=e558]:
+              - img "image" [ref=e559]
+            - paragraph [ref=e560]:
+              - text: Okay, so we have figure out our
+              - strong [ref=e561]: Hypothesis & Induction
+              - text: "["
+              - emphasis [ref=e562]: Induction = return stack.push(temp)
+              - text: "]"
+              - strong [ref=e563]: Base Condition
+              - text: left. Our smallest valid input could be if
+              - strong [ref=e564]: Stack size is 0
+              - text: ", then we simply"
+              - strong [ref=e565]: return stack
+            - paragraph [ref=e566]: Now let's code it up :-
+            - code [ref=e570]:
+              - generic [ref=e571]: "class Solution {"
+              - generic [ref=e572]: "public static void midDel(Stack<Integer> st) {"
+              - generic [ref=e573]: // Base Condition
+              - generic [ref=e574]: if(st.size() == 0) return st;
+              - generic [ref=e575]: // Hypothesis
+              - generic [ref=e576]: int k = st.size() / 2 + 1; // calculating mid
+              - generic [ref=e577]: solve(st, k); // func. call
+              - generic [ref=e578]: "}"
+              - generic [ref=e579]: "public static Stack<Integer> solve(Stack<Integer> st, int k) {"
+              - generic [ref=e580]: // Base Condition
+              - generic [ref=e581]: "if(st.size() == 1){"
+              - generic [ref=e582]: st.pop();
+              - generic [ref=e583]: return st;
+              - generic [ref=e584]: "}"
+              - generic [ref=e585]: // Hypothesis
+              - generic [ref=e586]: int temp = st.pop(); // removing 5 from stack
+              - generic [ref=e587]: solve(st, k - 1);
+              - generic [ref=e588]: // Induction
+              - generic [ref=e589]: return st.push(temp);
+              - generic [ref=e590]: "}"
+              - generic [ref=e591]: "}"
+            - separator [ref=e592]
+            - separator [ref=e593]
+            - blockquote [ref=e594]:
+              - paragraph [ref=e595]:
+                - strong [ref=e596]: Que. Reverse A Stack
+              - blockquote [ref=e597]:
+                - paragraph [ref=e598]:
+                  - strong [ref=e599]: Problem Statement
+            - code [ref=e603]:
+              - generic [ref=e604]: Input :- Output :-
+              - generic [ref=e605]: 5 <-- top 1 <-- top
+              - generic [ref=e606]: 4 2
+              - generic [ref=e607]: 3 3
+              - generic [ref=e608]: 2 4
+              - generic [ref=e609]: 1 5
+            - paragraph [ref=e610]: So, we have given a stack & we have to reverse it.
+            - paragraph [ref=e611]: Let's understand this visually:-
+            - paragraph [ref=e612]:
+              - img "image" [ref=e613]
+            - paragraph [ref=e614]:
+              - text: Okay, so we have figure out our
+              - strong [ref=e615]: Hypothesis & Induction
+              - text: "["
+              - emphasis [ref=e616]: Induction = return stack.push(val)
+              - text: "]"
+              - strong [ref=e617]: Base Condition
+              - text: left. Our smallest valid input could be if
+              - strong [ref=e618]: Stack size is 1
+              - text: ", then we simply"
+              - strong [ref=e619]: return stack
+            - paragraph [ref=e620]: Now let's code it up :-
+            - code [ref=e624]:
+              - generic [ref=e625]: "class Solution {"
+              - generic [ref=e626]: "public static void reverse(Stack<Integer> st) {"
+              - generic [ref=e627]: // Base Condition
+              - generic [ref=e628]: if(st.size() == 1) return st;
+              - generic [ref=e629]: // Hypothesis
+              - generic [ref=e630]: int temp = st.pop() // removing 5 from stack
+              - generic [ref=e631]: reverse(st); // reversing the stack
+              - generic [ref=e632]: insert(st, temp); // func. call
+              - generic [ref=e633]: "}"
+              - generic [ref=e634]: "public static Stack<Integer> solve(Stack<Integer> st, int temp) {"
+              - generic [ref=e635]: // Base Condition
+              - generic [ref=e636]: "if(st.size() == 0){"
+              - generic [ref=e637]: st.push(temp);
+              - generic [ref=e638]: return st;
+              - generic [ref=e639]: "}"
+              - generic [ref=e640]: // Hypothesis
+              - generic [ref=e641]: int val = st.pop(); // removing 1 from stack
+              - generic [ref=e642]: insert(st, temp); // inserting 5 to stack;
+              - generic [ref=e643]: // Induction
+              - generic [ref=e644]: st.push(val); // inserting 1 to stack
+              - generic [ref=e645]: return st;
+              - generic [ref=e646]: "}"
+              - generic [ref=e647]: "}"
+            - separator [ref=e648]
+            - separator [ref=e649]
+            - paragraph [ref=e650]:
+              - text: Alright, guy's
+              - code [ref=e651]: I hope you like my work!
+              - text: If do, then stay tuned. Because everyday I will post
+              - strong [ref=e652]: 1-2 Question's
+            - paragraph [ref=e653]:
+              - text: Uptill now we have solve
+              - strong [ref=e654]: 7 question's
+              - text: "& i had promise with you that, we will"
+              - strong [ref=e655]: solve 15+ question's
+            - separator [ref=e656]
+            - separator [ref=e657]
+            - paragraph [ref=e658]:
+              - img "image" [ref=e659]
+              - img "image" [ref=e660]
+            - paragraph [ref=e661]:
+              - strong [ref=e662]: Last Update :- 15th-Feb-2022
+          - generic [ref=e665]:
+            - generic [ref=e666]:
+              - button "695" [ref=e667] [cursor=pointer]:
+                - img [ref=e669]
+                - generic [ref=e671]: "695"
+              - button [ref=e673] [cursor=pointer]:
+                - img [ref=e675]
+            - button "53" [ref=e677] [cursor=pointer]:
+              - img [ref=e679]
+              - generic [ref=e681]: "53"
+            - button [ref=e683] [cursor=pointer]:
+              - button [ref=e684]:
+                - img [ref=e686]
+          - generic [ref=e688]:
+            - generic [ref=e689]:
+              - img [ref=e691]
+              - generic [ref=e693]: Comments (53)
+              - button "Sort by:Best" [ref=e697] [cursor=pointer]:
+                - generic [ref=e698]:
+                  - generic [ref=e699]: "Sort by:"
+                  - text: Best
+                - generic:
+                  - img
+            - generic [ref=e703]:
+              - textbox "Type comment here..." [ref=e704]
+              - generic [ref=e705]:
+                - generic [ref=e707]:
+                  - img [ref=e709] [cursor=pointer]
+                  - img [ref=e712] [cursor=pointer]
+                  - img [ref=e715] [cursor=pointer]
+                  - img [ref=e718] [cursor=pointer]
+                - button "Comment" [disabled] [ref=e721] [cursor=pointer]
+            - navigation [ref=e835]:
+              - button "prev" [disabled]:
+                - img
+              - button "1" [disabled]
+              - button "2" [disabled]
+              - button "3" [disabled]
+              - button "4" [disabled]
+              - button "5" [disabled]
+              - button "6" [disabled]
+              - button "next" [disabled]:
+                - img
+        - generic [ref=e836]:
+          - generic [ref=e838]:
+            - img [ref=e840]
+            - generic [ref=e842]: Explore
+          - generic [ref=e877]:
+            - generic [ref=e878]:
+              - link "Download App" [ref=e879] [cursor=pointer]:
+                - /url: https://leetcode.com/app/?utm_campaign=AppPromotion&utm_medium=site&utm_source=site_footer&gio_link_id=nPN4bXe9
+                - img [ref=e881]
+                - text: Download App
+              - link "Support" [ref=e884] [cursor=pointer]:
+                - /url: https://support.leetcode.com/hc/en-us
+              - link "Terms" [ref=e886] [cursor=pointer]:
+                - /url: /terms
+              - link "Privacy Policy" [ref=e888] [cursor=pointer]:
+                - /url: /privacy
+              - generic [ref=e890] [cursor=pointer]: More
+            - link "Copyright © 2026 LeetCode" [ref=e891] [cursor=pointer]:
+              - /url: /
+            - link "United States" [ref=e893] [cursor=pointer]:
+              - /url: /region
+        - generic [ref=e894]:
+          - button:
+            - generic:
+              - img
+    - region "Notifications (F8)":
+      - list
+  - alert [ref=e895]

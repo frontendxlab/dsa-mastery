@@ -1,0 +1,1637 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - navigation [ref=e6]:
+        - generic [ref=e7]:
+          - link "LeetCode" [ref=e8] [cursor=pointer]:
+            - /url: /
+            - img [ref=e10]
+          - list [ref=e18]:
+            - listitem [ref=e19]:
+              - link "Problems" [ref=e20] [cursor=pointer]:
+                - /url: /problemset
+            - listitem [ref=e21]:
+              - link "Contest" [ref=e22] [cursor=pointer]:
+                - /url: /contest
+            - listitem [ref=e23]:
+              - link "Discuss" [ref=e24] [cursor=pointer]:
+                - /url: /discuss/
+            - listitem [ref=e25]:
+              - generic [ref=e27] [cursor=pointer]:
+                - button "More" [ref=e28]:
+                  - text: More
+                  - img [ref=e29]
+                - list:
+                  - listitem:
+                    - link:
+                      - /url: https://interview.leetcode.com/interview/
+                      - img
+                      - generic: Online Interview
+                  - listitem:
+                    - link:
+                      - /url: /assessment/
+                      - img
+                      - generic: Assessment
+                  - listitem:
+                    - link:
+                      - /url: /store
+                      - generic: Redeem
+                  - listitem:
+                    - link:
+                      - /url: /subscribe/?ref=sto_npl&source=ot
+                      - generic: Premium
+      - generic [ref=e32]:
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - link [ref=e36] [cursor=pointer]:
+              - /url: /discuss/
+              - button [ref=e37]:
+                - img [ref=e39]
+            - button [ref=e41] [cursor=pointer]:
+              - img [ref=e43]
+          - generic [ref=e46]:
+            - generic [ref=e47]: Become Master In Graph
+            - generic [ref=e48]:
+              - link [ref=e50] [cursor=pointer]:
+                - /url: /u/hi-malik/
+              - generic [ref=e51]:
+                - link "Himanshu Malik" [ref=e54] [cursor=pointer]:
+                  - /url: /u/hi-malik/
+                - generic [ref=e55]:
+                  - generic [ref=e56]:
+                    - img [ref=e57]
+                    - generic [ref=e59]: "62273"
+                  - generic [ref=e60]:
+                    - img [ref=e61]
+                    - generic [ref=e63]: Jul 31, 2022
+                  - generic [ref=e64]:
+                    - img [ref=e66]
+                    - generic [ref=e68]: Aug 05, 2022
+            - generic [ref=e69]:
+              - link "Graph Theory" [ref=e70] [cursor=pointer]:
+                - /url: /discuss/topic/graph/
+              - link "Career" [ref=e71] [cursor=pointer]:
+                - /url: /discuss/topic/career/
+          - generic [ref=e75]:
+            - paragraph [ref=e76]:
+              - img "image" [ref=e77]
+              - img "image" [ref=e78]
+            - paragraph [ref=e79]:
+              - text: I can say this is the best Article Ever created over on LeetCode regarding Graph. And this article is inspired from
+              - code [ref=e80]: TakeYouForward
+              - text: and a lot of thanks to
+              - strong [ref=e81]: "@striver_79"
+            - separator [ref=e82]
+            - separator [ref=e83]
+            - paragraph [ref=e84]:
+              - text: It's not an language specific article. Trust me, you will learn a lot. Right now it's written in
+              - strong [ref=e85]: Java
+              - text: but trust me it will never be a issue.
+            - separator [ref=e86]
+            - separator [ref=e87]
+            - paragraph [ref=e88]:
+              - code [ref=e89]: So, with that let's start.
+              - text: Hello, my fellow programmer's today I'm going to teach you how you can become
+              - emphasis [ref=e90]: master's
+              - text: in
+              - strong [ref=e91]: Graph
+            - paragraph [ref=e92]:
+              - text: If you want to become master, then you have to follow some
+              - strong [ref=e93]: rules
+              - text: ", only after that you can become"
+              - strong [ref=e94]: Magician
+              - text: or called
+              - strong [ref=e95]: Master's in Graph
+              - code [ref=e96]: "Rules:"
+            - list [ref=e97]:
+              - listitem [ref=e98]:
+                - text: Bring up your
+                - strong [ref=e99]: pen
+                - text: and a fresh
+                - strong [ref=e100]: new notebook
+                - text: where you have to write all of these thing's which I will teach you
+                - strong [ref=e101]: right now
+                - text: .
+              - listitem [ref=e102]:
+                - text: If you had started learning graph, then
+                - strong [ref=e103]: don't quit
+                - text: . Here's why,
+                - strong [ref=e104]: ask yourself
+                - text: this question when you feel about to quit,
+                - code [ref=e105]: "\"If you had to leave, then why you had start?\""
+              - listitem [ref=e106]: Look back again at above 2 rule's
+            - paragraph [ref=e107]: "Remember : If you don't sacrifice for what you want, what you want become sacrify!"
+            - separator [ref=e108]
+            - separator [ref=e109]
+            - code [ref=e113]:
+              - generic [ref=e114]: "# Introduction to Graph"
+            - blockquote [ref=e115]:
+              - paragraph [ref=e116]: A graph data structure is a collection of nodes that have data and are connected to other nodes.
+            - paragraph [ref=e117]:
+              - strong [ref=e118]: Let's try to understand this through an example.
+              - text: On facebook, everything is a node. That includes User, Photo, Album, Event, Group, Page, Comment, Story, Video, Link, Note...anything that has
+              - strong [ref=e119]: data is a node.
+            - paragraph [ref=e120]:
+              - text: Every relationship is an
+              - strong [ref=e121]: edge
+              - text: from one
+              - strong [ref=e122]: node
+              - text: to another. Whether you post a photo, join a group, like a page, etc., a new edge is created for that
+              - strong [ref=e123]: relationship
+              - text: .
+            - paragraph [ref=e124]:
+              - img "image" [ref=e125]
+            - paragraph [ref=e126]:
+              - text: All of facebook is then a collection of these nodes and edges. This is because
+              - code [ref=e127]: facebook uses a graph data structure to store its data.
+            - paragraph [ref=e128]:
+              - text: More precisely, a
+              - strong [ref=e129]: graph is a data structure (V, E) that consists of
+            - list [ref=e130]:
+              - listitem [ref=e131]:
+                - text: A collection of
+                - strong [ref=e132]: vertices V
+              - listitem [ref=e133]:
+                - text: A collection of
+                - strong [ref=e134]: edges E
+                - text: ", represented as ordered"
+                - strong [ref=e135]: pairs of vertices (u,v)
+            - paragraph [ref=e136]:
+              - text: And generally there are
+              - strong [ref=e137]: 2 types
+              - text: of Graphs :-
+              - strong [ref=e138]:
+                - code [ref=e139]: Undirected Graph
+              - text: and
+              - strong [ref=e140]:
+                - code [ref=e141]: Directed Graph
+            - paragraph [ref=e142]:
+              - img "image" [ref=e143]
+            - paragraph [ref=e144]:
+              - strong [ref=e145]: Terms used in Graph :-
+            - list [ref=e146]:
+              - listitem [ref=e147]:
+                - paragraph [ref=e148]:
+                  - strong [ref=e149]: "Adjacency:"
+                  - text: A vertex is said to be adjacent to another vertex if there is an edge connecting them. Vertices 2 and 3 are not adjacent because there is no edge between them.
+              - listitem [ref=e150]:
+                - paragraph [ref=e151]:
+                  - strong [ref=e152]: "Path:"
+                  - text: A sequence of edges that allows you to go from vertex A to vertex B is called a path. 0-1, 1-2 and 0-2 are paths from vertex 0 to vertex 2.
+              - listitem [ref=e153]:
+                - paragraph [ref=e154]:
+                  - strong [ref=e155]: "Directed Graph:"
+                  - text: A graph in which an edge (u,v) doesn't necessarily mean that there is an edge (v, u) as well. The edges in such a graph are represented by arrows to show the direction of the edge.
+              - listitem [ref=e156]:
+                - paragraph [ref=e157]:
+                  - strong [ref=e158]: "Undirected Graph:"
+                  - text: A graph in which an edge (u,v) mean's that there is an edge (v, u) and they are bi-directional.
+            - paragraph [ref=e159]:
+              - strong [ref=e160]:
+                - code [ref=e161]: "Storing our Graph in Data Structure:"
+            - paragraph [ref=e162]: There are two ways to store Graph in a Data Structure.
+            - list [ref=e163]:
+              - listitem [ref=e164]:
+                - strong [ref=e165]:
+                  - code [ref=e166]: Adjacency Matrix
+                - text: :- An adjacency matrix is a
+                - strong [ref=e167]: 2D array of V x V vertices
+                - text: . Each row and column represent a vertex. If the value of any element
+                - code [ref=e168]: a[i][j]
+                - text: is
+                - strong [ref=e169]: "1"
+                - text: ", it represents that there is an edge connecting"
+                - strong [ref=e170]: vertex i
+                - text: and
+                - strong [ref=e171]: vertex j
+                - text: .
+                - text: Let's understand how we store data in matrix.
+            - list [ref=e172]:
+              - listitem [ref=e173]:
+                - text: First of all, create a matrix of
+                - strong [ref=e174]:
+                  - code [ref=e175]: n + 1 X n + 1
+              - listitem [ref=e176]:
+                - text: And Intially our 2-D Array will be filled with
+                - code [ref=e177]: "0"
+              - listitem [ref=e178]:
+                - text: Since it is an
+                - strong [ref=e179]: undirected graph
+                - text: ", for edge"
+                - code [ref=e180]: (0,2)
+                - text: ", we also need to mark edge"
+                - code [ref=e181]: (2,0)
+              - listitem [ref=e182]:
+                - text: And as weight of the edge is not given, we'll mark it with
+                - code [ref=e183]: "1"
+                - img "image" [ref=e184]
+            - paragraph [ref=e185]: Let's look at code:-
+            - paragraph [ref=e186]:
+              - strong [ref=e187]: Java :-
+            - code [ref=e191]:
+              - generic [ref=e192]: import java.io.*;
+              - generic [ref=e193]: "class himalik {"
+              - generic [ref=e194]: "public static void main (String[] args) {"
+              - generic [ref=e195]: int n = 3, m = 3;
+              - generic [ref=e196]: int adj[][] = new int[n+1][n+1];
+              - generic [ref=e197]: // edge 1---2
+              - generic [ref=e198]: adj[1][2] = 1;
+              - generic [ref=e199]: adj[2][1] = 1;
+              - generic [ref=e200]: // edge 2---3
+              - generic [ref=e201]: adj[2][3] = 1;
+              - generic [ref=e202]: adj[3][2] = 1;
+              - generic [ref=e203]: // adge 1--3
+              - generic [ref=e204]: adj[1][3] = 1;
+              - generic [ref=e205]: adj[3][1] = 1;
+              - generic [ref=e206]: "}"
+              - generic [ref=e207]: "}"
+            - paragraph [ref=e208]: There'fore General Representation :-
+            - code [ref=e212]:
+              - generic [ref=e213]: adj[u][v] = 1
+              - text: adj[v][u] = 1
+            - paragraph [ref=e214]:
+              - strong [ref=e215]: Disadvantage of using Adjacency Matrix
+              - text: ": Edge lookup(checking if an edge exists between vertex A and vertex B) is extremely fast in adjacency matrix representation but we have to"
+              - strong [ref=e216]: reserve space
+              - text: for every possible link between all
+              - strong [ref=e217]:
+                - code [ref=e218]: vertices(V x V), so it requires more space.
+              - text: For example the range of matrix we have given is
+              - strong [ref=e219]: 10^5
+              - text: then,
+              - code [ref=e220]: 10^5 X 10^5
+              - text: will be out of bound [M.L.E]
+            - list [ref=e221]:
+              - listitem [ref=e222]:
+                - text: To Optimise it we use >>
+                - strong [ref=e223]:
+                  - code [ref=e224]: Adjacency List
+                - text: ": An adjacency list represents a graph as an array of"
+                - strong [ref=e225]: linked lists
+                - text: . The index of the array represents a vertex and each element in its linked list represents the other vertices that form an edge with the vertex.
+                - text: Let's understand how we store data in list, taken an example.
+                - img "image" [ref=e226]
+            - paragraph [ref=e227]: Let's look at code:-
+            - paragraph [ref=e228]:
+              - strong [ref=e229]: Java
+            - code [ref=e233]:
+              - generic [ref=e234]: import java.io.*;
+              - generic [ref=e235]: import java.util.*;
+              - generic [ref=e236]: "class himalik {"
+              - generic [ref=e237]: "public static void main (String[] args) {"
+              - generic [ref=e238]: int n = 3, m = 3;
+              - generic [ref=e239]: ArrayList<ArrayList<Integer> > adj = new ArrayList<>();
+              - generic [ref=e240]: for (int i = 0; i <= n; i++)
+              - generic [ref=e241]: adj.add(new ArrayList<Integer>());
+              - generic [ref=e242]: // edge 1---2
+              - generic [ref=e243]: adj.get(1).add(2);
+              - generic [ref=e244]: adj.get(2).add(1);
+              - generic [ref=e245]: adj.get(u).add(v);
+              - generic [ref=e246]: adj.get(v).add(u);
+              - generic [ref=e247]: // edge 2---3
+              - generic [ref=e248]: adj.get(2).add(3);
+              - generic [ref=e249]: adj.get(3).add(2);
+              - generic [ref=e250]: // adge 1--3
+              - generic [ref=e251]: adj.get(1).add(3);
+              - generic [ref=e252]: adj.get(3).add(1);
+              - generic [ref=e253]: "for (int i = 1; i < n; i++) {"
+              - generic [ref=e254]: "for (int j = 0; j < adj.get(i).size(); j++) {"
+              - generic [ref=e255]: System.out.print(adj.get(i).get(j)+" ");
+              - generic [ref=e256]: "}"
+              - generic [ref=e257]: System.out.println();
+              - generic [ref=e258]: "}"
+              - generic [ref=e259]: "}"
+              - generic [ref=e260]: "}"
+            - paragraph [ref=e261]: There'fore General Representation :-
+            - code [ref=e265]:
+              - generic [ref=e266]: adj.get(u).add(v) = 1
+              - generic [ref=e267]: adj.get(v).add(u) = 1
+            - paragraph [ref=e268]: An adjacency list is efficient in terms of storage because we only need to store the values for the edges. For a graph with millions of vertices, this can mean a lot of saved space.
+            - paragraph [ref=e269]:
+              - strong [ref=e270]: Space Complexity :-
+            - list [ref=e271]:
+              - listitem [ref=e272]:
+                - paragraph [ref=e273]:
+                  - strong [ref=e274]:
+                    - code [ref=e275]: For Undirected Graph :-
+                  - text: BigO(N + 2 * E), where N is node & E is edge
+              - listitem [ref=e276]:
+                - paragraph [ref=e277]:
+                  - strong [ref=e278]:
+                    - code [ref=e279]: For Directed Graph :-
+                  - text: BigO(N + E), where N is node & E is edge
+            - code [ref=e283]:
+              - generic [ref=e284]: "# Connected Components In A Graph"
+            - paragraph [ref=e285]:
+              - text: A connected component is the
+              - strong [ref=e286]: portion
+              - text: of a
+              - strong [ref=e287]: graph
+              - text: in which there is a path from each vertex to another vertex.
+              - text: You can think it like this, when a graph is broken into several components, but those components are connected through vertex.
+            - paragraph [ref=e288]:
+              - img "image" [ref=e289]
+            - paragraph [ref=e290]:
+              - strong [ref=e291]: Let's break this graph into components,
+            - paragraph [ref=e292]:
+              - img "image" [ref=e293]
+            - code [ref=e297]:
+              - generic [ref=e298]: Now, to Traverse this disconnected graph and check it's components. We gonna have one "visited [] array"
+              - generic [ref=e299]: "-------------------------------------"
+              - generic [ref=e300]: vis[] =| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+              - generic [ref=e301]: "-------------------------------------"
+              - generic [ref=e302]: index=> 0 1 2 3 4 5 6 7 8
+            - paragraph [ref=e303]:
+              - text: For the traversing we going to use either
+              - strong [ref=e304]:
+                - code [ref=e305]: dfs
+              - text: OR
+              - strong [ref=e306]:
+                - code [ref=e307]: bfs
+            - paragraph [ref=e308]: The basic code will be like:-
+            - code [ref=e312]:
+              - generic [ref=e313]: "for(int i = 0; i < n; i++){"
+              - generic [ref=e314]: "if(!vis[i]){"
+              - generic [ref=e315]: "\"dfs\" OR \"bfs\""
+              - generic [ref=e316]: "}"
+              - generic [ref=e317]: "}"
+            - code [ref=e321]:
+              - generic [ref=e322]: "# Breadth-First Search (BFS)"
+            - paragraph [ref=e323]: BFS is a traversing algorithm where you should start traversing from a selected node (source or starting node) and traverse the graph layerwise thus exploring the neighbour nodes (nodes which are directly connected to source node). You must then move towards the next-level neighbour nodes.
+            - paragraph [ref=e324]: "A standard BFS implementation puts each vertex of the graph into one of two categories:"
+            - list [ref=e325]:
+              - listitem [ref=e326]:
+                - strong [ref=e327]: Not Visited
+                - text: "--> An array with all values initialised with 0."
+              - listitem [ref=e328]:
+                - strong [ref=e329]: Visited
+                - text: "--> An array with values updated from 0 to 1."
+            - paragraph [ref=e330]:
+              - emphasis [ref=e331]: The purpose of the algorithm is to mark each vertex as visited while avoiding cycles.
+            - paragraph [ref=e332]:
+              - strong [ref=e333]: "The algorithm works as follows:"
+            - list [ref=e334]:
+              - listitem [ref=e335]:
+                - paragraph [ref=e336]:
+                  - text: Start by putting any one of the graph's vertices at the
+                  - strong [ref=e337]: back of a queue
+                  - text: .
+              - listitem [ref=e338]:
+                - paragraph [ref=e339]:
+                  - text: Take the
+                  - strong [ref=e340]: front
+                  - text: item of the
+                  - strong [ref=e341]: queue
+                  - text: and
+                  - strong [ref=e342]: add
+                  - text: it to the
+                  - strong [ref=e343]: visited list
+                  - text: .
+              - listitem [ref=e344]:
+                - paragraph [ref=e345]:
+                  - text: Create a list of that vertex's adjacent nodes.
+                  - strong [ref=e346]: Add
+                  - text: the
+                  - strong [ref=e347]: ones
+                  - text: which aren't in the
+                  - strong [ref=e348]: visited list
+                  - text: to the
+                  - strong [ref=e349]: back of the queue
+                  - text: .
+              - listitem [ref=e350]:
+                - paragraph [ref=e351]:
+                  - text: Keep
+                  - strong [ref=e352]: repeating
+                  - text: steps 2 and 3 until the
+                  - strong [ref=e353]: queue is empty
+                  - text: .
+            - paragraph [ref=e354]:
+              - strong [ref=e355]:
+                - code [ref=e356]: "Let's understand with an Example:"
+            - paragraph [ref=e357]:
+              - img "image" [ref=e358]
+              - img "image" [ref=e359]
+              - img "image" [ref=e360]
+              - img "image" [ref=e361]
+              - img "image" [ref=e362]
+              - img "image" [ref=e363]
+              - img "image" [ref=e364]
+              - img "image" [ref=e365]
+            - paragraph [ref=e366]:
+              - strong [ref=e367]: "Now, let's code it up:"
+            - paragraph [ref=e368]:
+              - strong [ref=e369]: Java
+            - code [ref=e373]:
+              - generic [ref=e374]: "// { Driver Code Starts"
+              - generic [ref=e375]: // Initial Template for Java
+              - generic [ref=e376]: import java.util.*;
+              - generic [ref=e377]: import java.lang.*;
+              - generic [ref=e378]: import java.io.*;
+              - generic [ref=e379]: "class GFG {"
+              - generic [ref=e380]: "public static void main(String[] args) throws IOException {"
+              - generic [ref=e381]: BufferedReader br =
+              - generic [ref=e382]: new BufferedReader(new InputStreamReader(System.in));
+              - generic [ref=e383]: int T = Integer.parseInt(br.readLine().trim());
+              - generic [ref=e384]: "while (T-- > 0) {"
+              - generic [ref=e385]: String[] s = br.readLine().trim().split(" ");
+              - generic [ref=e386]: int V = Integer.parseInt(s[0]);
+              - generic [ref=e387]: int E = Integer.parseInt(s[1]);
+              - generic [ref=e388]: ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
+              - generic [ref=e389]: for (int i = 0; i < V; i++) adj.add(i, new ArrayList<Integer>());
+              - generic [ref=e390]: "for (int i = 0; i < E; i++) {"
+              - generic [ref=e391]: String[] S = br.readLine().trim().split(" ");
+              - generic [ref=e392]: int u = Integer.parseInt(S[0]);
+              - generic [ref=e393]: int v = Integer.parseInt(S[1]);
+              - generic [ref=e394]: adj.get(u).add(v);
+              - generic [ref=e395]: // adj.get(v).add(u);
+              - generic [ref=e396]: "}"
+              - generic [ref=e397]: Solution obj = new Solution();
+              - generic [ref=e398]: ArrayList<Integer> ans = obj.bfsOfGraph(V, adj);
+              - generic [ref=e399]: for (int i = 0; i < ans.size(); i++)
+              - generic [ref=e400]: System.out.print(ans.get(i) + " ");
+              - generic [ref=e401]: System.out.println();
+              - generic [ref=e402]: "}"
+              - generic [ref=e403]: "}"
+              - generic [ref=e404]: "}"
+              - generic [ref=e405]: "// } Driver Code Ends"
+              - generic [ref=e406]: "class Solution {"
+              - generic [ref=e407]: // Function to return Breadth First Traversal of given graph.
+              - generic [ref=e408]: "public ArrayList<Integer> bfsOfGraph(int V, ArrayList<ArrayList<Integer>> adj) {"
+              - generic [ref=e409]: // Code here
+              - generic [ref=e410]: ArrayList<Integer> bfs = new ArrayList<>();
+              - generic [ref=e411]: boolean vis[] = new boolean[V + 1];
+              - generic [ref=e412]: Queue<Integer> q = new LinkedList<>();
+              - generic [ref=e413]: q.add(0);
+              - generic [ref=e414]: vis[0] = true;
+              - generic [ref=e415]: "while(!q.isEmpty()){"
+              - generic [ref=e416]: Integer node = q.poll();
+              - generic [ref=e417]: bfs.add(node);
+              - generic [ref=e418]: "for(Integer it : adj.get(node)){"
+              - generic [ref=e419]: "if(vis[it] == false){"
+              - generic [ref=e420]: q.add(it);
+              - generic [ref=e421]: vis[it] = true;
+              - generic [ref=e422]: "}"
+              - generic [ref=e423]: "}"
+              - generic [ref=e424]: "}"
+              - generic [ref=e425]: return bfs;
+              - generic [ref=e426]: "}"
+              - generic [ref=e427]: "}"
+            - paragraph [ref=e428]: ANALYSIS :-
+            - list [ref=e429]:
+              - listitem [ref=e430]:
+                - paragraph [ref=e431]:
+                  - strong [ref=e432]: Time Complexity :-
+                  - strong [ref=e433]:
+                    - code [ref=e434]: BigO(N+E)
+                  - text: where N = Nodes , E = travelling through adjacent nodes
+              - listitem [ref=e435]:
+                - paragraph [ref=e436]:
+                  - strong [ref=e437]: Space Complexity :-
+                  - strong [ref=e438]:
+                    - code [ref=e439]: BigO(N+E) + O(N) + O(N)
+                  - text: where Space for adjacency list, visited array, queue data structure
+            - code [ref=e443]:
+              - generic [ref=e444]: "# Depth-First Search (DFS)"
+            - paragraph [ref=e445]: Depth First Traversal is a traversal technique/algorithm, used to traverse through all the nodes in the given graph.
+            - paragraph [ref=e446]: It starts traversal through any one of its neighbour nodes and explores the farthest possible node in each path/branch and then starts Back-tracking.
+            - paragraph [ref=e447]: Backtracking happens when the DFS algorithm reaches a particular node that has no neighbours to visit further, once it reaches that node with no neighbours to be visited it’ll backtrack to its previous node (say N) and from this node N algorithm will start searching for unvisited neighbour nodes and starts visiting them.
+            - paragraph [ref=e448]:
+              - strong [ref=e449]: "Approach:"
+            - list [ref=e450]:
+              - listitem [ref=e451]:
+                - paragraph [ref=e452]:
+                  - text: Start with a
+                  - strong [ref=e453]: random
+                  - text: node from
+                  - strong [ref=e454]: graph
+              - listitem [ref=e455]:
+                - paragraph [ref=e456]:
+                  - text: Make an
+                  - strong [ref=e457]: array
+                  - text: to keep track of
+                  - strong [ref=e458]: visited
+                  - text: nodes, once visited
+                  - strong [ref=e459]: mark
+                  - text: that node as
+                  - strong [ref=e460]: visited
+              - listitem [ref=e461]:
+                - paragraph [ref=e462]:
+                  - strong [ref=e463]: Print
+                  - text: this current node
+              - listitem [ref=e464]:
+                - paragraph [ref=e465]:
+                  - text: Get neighbour nodes and perform above steps
+                  - strong [ref=e466]: recursively
+                  - text: for each node
+                  - strong [ref=e467]: deeply/depthly
+                  - text: if node is
+                  - strong [ref=e468]: unvisited
+                  - text: .
+            - paragraph [ref=e469]:
+              - strong [ref=e470]: "Let's understand with an example:"
+            - paragraph [ref=e471]:
+              - img "image" [ref=e472]
+              - img "image" [ref=e473]
+              - img "image" [ref=e474]
+              - img "image" [ref=e475]
+              - img "image" [ref=e476]
+              - img "image" [ref=e477]
+              - img "image" [ref=e478]
+              - img "image" [ref=e479]
+              - img "image" [ref=e480]
+              - img "image" [ref=e481]
+            - paragraph [ref=e482]:
+              - strong [ref=e483]: "Now, let's code it up:"
+            - paragraph [ref=e484]:
+              - strong [ref=e485]: Java
+            - code [ref=e489]:
+              - generic [ref=e490]: "// { Driver Code Starts"
+              - generic [ref=e491]: // Initial Template for Java
+              - generic [ref=e492]: import java.util.*;
+              - generic [ref=e493]: import java.lang.*;
+              - generic [ref=e494]: import java.io.*;
+              - generic [ref=e495]: "class GFG {"
+              - generic [ref=e496]: "public static void main(String[] args) throws IOException {"
+              - generic [ref=e497]: BufferedReader br =
+              - generic [ref=e498]: new BufferedReader(new InputStreamReader(System.in));
+              - generic [ref=e499]: int T = Integer.parseInt(br.readLine().trim());
+              - generic [ref=e500]: "while (T-- > 0) {"
+              - generic [ref=e501]: String[] s = br.readLine().trim().split(" ");
+              - generic [ref=e502]: int V = Integer.parseInt(s[0]);
+              - generic [ref=e503]: int E = Integer.parseInt(s[1]);
+              - generic [ref=e504]: ArrayList<ArrayList<Integer>> adj =
+              - generic [ref=e505]: new ArrayList<ArrayList<Integer>>();
+              - generic [ref=e506]: for (int i = 0; i < V; i++) adj.add(new ArrayList<Integer>());
+              - generic [ref=e507]: "for (int i = 0; i < E; i++) {"
+              - generic [ref=e508]: String[] S = br.readLine().trim().split(" ");
+              - generic [ref=e509]: int u = Integer.parseInt(S[0]);
+              - generic [ref=e510]: int v = Integer.parseInt(S[1]);
+              - generic [ref=e511]: adj.get(u).add(v);
+              - generic [ref=e512]: adj.get(v).add(u);
+              - generic [ref=e513]: "}"
+              - generic [ref=e514]: Solution obj = new Solution();
+              - generic [ref=e515]: ArrayList<Integer> ans = obj.dfsOfGraph(V, adj);
+              - generic [ref=e516]: for (int i = 0; i < ans.size(); i++)
+              - generic [ref=e517]: System.out.print(ans.get(i) + " ");
+              - generic [ref=e518]: System.out.println();
+              - generic [ref=e519]: "}"
+              - generic [ref=e520]: "}"
+              - generic [ref=e521]: "}"
+              - generic [ref=e522]: "// } Driver Code Ends"
+              - generic [ref=e523]: "class Solution {"
+              - generic [ref=e524]: // Function to return a list containing the DFS traversal of the graph.
+              - generic [ref=e525]: "public ArrayList<Integer> dfsOfGraph(int V, ArrayList<ArrayList<Integer>> adj) {"
+              - generic [ref=e526]: // Code here
+              - generic [ref=e527]: ArrayList<Integer> dfsStore = new ArrayList<>();
+              - generic [ref=e528]: boolean vis[] = new boolean[V + 1];
+              - generic [ref=e529]: "for(int i = 0; i < V; i++){"
+              - generic [ref=e530]: "if(vis[i] == false){"
+              - generic [ref=e531]: dfs(i, vis, adj, dfsStore);
+              - generic [ref=e532]: "}"
+              - generic [ref=e533]: "}"
+              - generic [ref=e534]: return dfsStore;
+              - generic [ref=e535]: "}"
+              - generic [ref=e536]: "public void dfs(int node, boolean vis[], ArrayList<ArrayList<Integer>> adj, ArrayList<Integer> dfsStore){"
+              - generic [ref=e537]: dfsStore.add(node);
+              - generic [ref=e538]: vis[node] = true;
+              - generic [ref=e539]: "for(Integer i : adj.get(node)){"
+              - generic [ref=e540]: "if(vis[i] == false){"
+              - generic [ref=e541]: dfs(i, vis, adj, dfsStore);
+              - generic [ref=e542]: "}"
+              - generic [ref=e543]: "}"
+              - generic [ref=e544]: "}"
+              - generic [ref=e545]: "}"
+            - paragraph [ref=e546]: ANALYSIS :-
+            - list [ref=e547]:
+              - listitem [ref=e548]:
+                - paragraph [ref=e549]:
+                  - strong [ref=e550]: Time Complexity :-
+                  - strong [ref=e551]:
+                    - code [ref=e552]: BigO(N+E)
+                  - text: Where N is the time taken for visiting N nodes and E is for travelling through adjacent nodes.
+              - listitem [ref=e553]:
+                - paragraph [ref=e554]:
+                  - strong [ref=e555]: Space Complexity :-
+                  - strong [ref=e556]:
+                    - code [ref=e557]: BigO(N+E) + O(N) + O(N)
+                  - text: where Space for adjacency list, Array,Auxiliary space.
+            - code [ref=e561]:
+              - generic [ref=e562]: "# Detect A Cycle In Undirected Graph {B F S}"
+            - paragraph [ref=e563]:
+              - text: In this we have to check wether a
+              - strong [ref=e564]: cycle
+              - text: present in
+              - strong [ref=e565]: Undirected graph.
+            - paragraph [ref=e566]:
+              - code [ref=e567]: Intuition :-
+              - text: The intuition behind this is to check for the visited element if it is found again, this means the
+              - strong [ref=e568]: cycle is present
+              - text: in the given undirected graph.
+            - paragraph [ref=e569]:
+              - img "image" [ref=e570]
+            - paragraph [ref=e571]:
+              - code [ref=e572]: Approach :-
+            - paragraph [ref=e573]:
+              - strong [ref=e574]: For the first component,
+              - text: firstly we insert the first element of the graph by marking it as visited in the Queue having prev of the first element as -1. Now we pop out that element and traverse the adjacent element list for that and then insert the elements in the Queue and continue the process until no adjacent element is found for the present element. Here, we can see that no loop is formed.
+              - code [ref=e575]: So, we return false for the first component.
+            - paragraph [ref=e576]:
+              - img "image" [ref=e577]
+            - paragraph [ref=e578]:
+              - strong [ref=e579]: For the second component,
+              - text: a similar process will be done as we have done for the first component. Here we will be able to see that when we come to 7, 8 is one of the next adjacent ones which matters to us, and also, it is already marked as positive. This means someone is linked already with this element.
+              - code [ref=e580]: So, it forms a loop and we return true finally.
+            - paragraph [ref=e581]:
+              - img "image" [ref=e582]
+            - paragraph [ref=e583]:
+              - strong [ref=e584]: "Now, let's code it up:"
+            - paragraph [ref=e585]:
+              - strong [ref=e586]: Java
+            - code [ref=e590]:
+              - generic [ref=e591]: import java.util.*;
+              - generic [ref=e592]: import java.lang.*;
+              - generic [ref=e593]: import java.io.*;
+              - generic [ref=e594]: class GFG
+              - generic [ref=e595]: "{"
+              - generic [ref=e596]: public static void main(String[] args) throws IOException
+              - generic [ref=e597]: "{"
+              - generic [ref=e598]: int V = 5;
+              - generic [ref=e599]: ArrayList<ArrayList<Integer>>adj = new ArrayList<>();
+              - generic [ref=e600]: for(int i = 0; i < V; i++)
+              - generic [ref=e601]: adj.add(i, new ArrayList<Integer>());
+              - generic [ref=e602]: adj.get(0).add(1);
+              - generic [ref=e603]: adj.get(0).add(2);
+              - generic [ref=e604]: adj.get(2).add(3);
+              - generic [ref=e605]: adj.get(1).add(3);
+              - generic [ref=e606]: adj.get(2).add(4);
+              - generic [ref=e607]: Solution obj = new Solution();
+              - generic [ref=e608]: boolean ans = obj.isCycle(V, adj);
+              - generic [ref=e609]: if(ans)
+              - generic [ref=e610]: System.out.println("Yes");
+              - generic [ref=e611]: else
+              - generic [ref=e612]: System.out.println("No");
+              - generic [ref=e613]: "}"
+              - generic [ref=e614]: "}"
+              - generic [ref=e615]: "class Node {"
+              - generic [ref=e616]: int first;
+              - generic [ref=e617]: int second;
+              - generic [ref=e618]: "public Node(int first, int second) {"
+              - generic [ref=e619]: this.first = first;
+              - generic [ref=e620]: this.second = second;
+              - generic [ref=e621]: "}"
+              - generic [ref=e622]: "}"
+              - generic [ref=e623]: class himalik
+              - generic [ref=e624]: "{"
+              - generic [ref=e625]: static boolean checkForCycle(ArrayList<ArrayList<Integer>> adj, int s,
+              - generic [ref=e626]: boolean vis[])
+              - generic [ref=e627]: "{"
+              - generic [ref=e628]: Queue<Node> q = new LinkedList<>(); //BFS
+              - generic [ref=e629]: q.add(new Node(s, -1));
+              - generic [ref=e630]: vis[s] =true;
+              - generic [ref=e631]: while(!q.isEmpty())
+              - generic [ref=e632]: "{"
+              - generic [ref=e633]: int node = q.peek().first;
+              - generic [ref=e634]: int par = q.peek().second;
+              - generic [ref=e635]: q.remove();
+              - generic [ref=e636]: "for(Integer it: adj.get(node))"
+              - generic [ref=e637]: "{"
+              - generic [ref=e638]: if(vis[it]==false)
+              - generic [ref=e639]: "{"
+              - generic [ref=e640]: q.add(new Node(it, node));
+              - generic [ref=e641]: vis[it] = true;
+              - generic [ref=e642]: "}"
+              - generic [ref=e643]: else if(par != it) return true;
+              - generic [ref=e644]: "}"
+              - generic [ref=e645]: "}"
+              - generic [ref=e646]: return false;
+              - generic [ref=e647]: "}"
+              - generic [ref=e648]: public boolean isCycle(int V, ArrayList<ArrayList<Integer>> adj)
+              - generic [ref=e649]: "{"
+              - generic [ref=e650]: boolean vis[] = new boolean[V];
+              - generic [ref=e651]: Arrays.fill(vis,false);
+              - generic [ref=e652]: for(int i=0;i<V;i++)
+              - generic [ref=e653]: if(vis[i]==false)
+              - generic [ref=e654]: if(checkForCycle(adj, i,vis))
+              - generic [ref=e655]: return true;
+              - generic [ref=e656]: return false;
+              - generic [ref=e657]: "}"
+              - generic [ref=e658]: "}"
+            - paragraph [ref=e659]: ANALYSIS :-
+            - list [ref=e660]:
+              - listitem [ref=e661]:
+                - paragraph [ref=e662]:
+                  - strong [ref=e663]: Time Complexity :-
+                  - strong [ref=e664]:
+                    - code [ref=e665]: BigO(N+E)
+                  - text: Where N is the time taken and E is for traveling through adjacent nodes overall.
+              - listitem [ref=e666]:
+                - paragraph [ref=e667]:
+                  - strong [ref=e668]: Space Complexity :-
+                  - strong [ref=e669]:
+                    - code [ref=e670]: BigO(N+E) + O(N) + O(N)
+                  - text: where space for adjacent list , array and queue
+            - code [ref=e674]:
+              - generic [ref=e675]: "# Detect A Cycle In Undirected Graph {D F S}"
+            - paragraph [ref=e676]: So, the problem description is same as above one.
+            - paragraph [ref=e677]:
+              - strong [ref=e678]: To solve this we going to
+              - text: run a for loop from the first node to the last node and check if the node is visited. If it is not visited then call the function recursively which goes into the depth as known as DFS search and if you find a cycle you can say that there is a cycle in the graph.
+            - list [ref=e679]:
+              - listitem [ref=e680]:
+                - paragraph [ref=e681]:
+                  - text: Basically calling the isCyclic function with number of nodes and passing the graph
+                  - text: Traversing from 1 to number of nodes and checking for every node if it is unvisited
+              - listitem [ref=e682]:
+                - paragraph [ref=e683]: If the node is unvisited then call a function checkForCycle, that checks if there is a cycle and returns true if there is a cycle.
+              - listitem [ref=e684]:
+                - paragraph [ref=e685]: Now the function checkForCycle has the node and previous of the parent node. It will also have the visited array and the graph that has adjacency list
+              - listitem [ref=e686]:
+                - paragraph [ref=e687]: Mark it as visited and then traverse for its adjacency list using a for loop.
+              - listitem [ref=e688]:
+                - paragraph [ref=e689]: Calling DFS traversal if that node is unvisited call recursive function that checks if its a cycle and returns true
+              - listitem [ref=e690]:
+                - paragraph [ref=e691]: If the previously visited node and it is not equal to the parent we can say there is cycle again and will return true
+              - listitem [ref=e692]:
+                - paragraph [ref=e693]: Now if you have traveled for all adjacent nodes and all the DSF have been called and it never returned true that means we have done the DSF call entirely and now we can return false, that mean there is no DSF cycle
+            - paragraph [ref=e694]:
+              - img "image" [ref=e695]
+              - img "image" [ref=e696]
+            - paragraph [ref=e697]:
+              - strong [ref=e698]: "Now, let's code it up:"
+            - paragraph [ref=e699]:
+              - strong [ref=e700]: Java
+            - code [ref=e704]:
+              - generic [ref=e705]: "// { Driver Code Starts"
+              - generic [ref=e706]: import java.util.*;
+              - generic [ref=e707]: import java.lang.*;
+              - generic [ref=e708]: import java.io.*;
+              - generic [ref=e709]: "class GFG {"
+              - generic [ref=e710]: "public static void main(String[] args) throws IOException {"
+              - generic [ref=e711]: BufferedReader br =
+              - generic [ref=e712]: new BufferedReader(new InputStreamReader(System.in));
+              - generic [ref=e713]: int T = Integer.parseInt(br.readLine().trim());
+              - generic [ref=e714]: "while (T-- > 0) {"
+              - generic [ref=e715]: String[] s = br.readLine().trim().split(" ");
+              - generic [ref=e716]: int V = Integer.parseInt(s[0]);
+              - generic [ref=e717]: int E = Integer.parseInt(s[1]);
+              - generic [ref=e718]: ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
+              - generic [ref=e719]: for (int i = 0; i < V; i++) adj.add(i, new ArrayList<Integer>());
+              - generic [ref=e720]: "for (int i = 0; i < E; i++) {"
+              - generic [ref=e721]: String[] S = br.readLine().trim().split(" ");
+              - generic [ref=e722]: int u = Integer.parseInt(S[0]);
+              - generic [ref=e723]: int v = Integer.parseInt(S[1]);
+              - generic [ref=e724]: adj.get(u).add(v);
+              - generic [ref=e725]: adj.get(v).add(u);
+              - generic [ref=e726]: "}"
+              - generic [ref=e727]: Solution obj = new Solution();
+              - generic [ref=e728]: boolean ans = obj.isCycle(V, adj);
+              - generic [ref=e729]: if (ans)
+              - generic [ref=e730]: System.out.println("1");
+              - generic [ref=e731]: else
+              - generic [ref=e732]: System.out.println("0");
+              - generic [ref=e733]: "}"
+              - generic [ref=e734]: "}"
+              - generic [ref=e735]: "}// } Driver Code Ends"
+              - generic [ref=e736]: "class Solution {"
+              - generic [ref=e737]: // Function to detect cycle in an undirected graph.
+              - generic [ref=e738]: "public boolean isCycle(int V, ArrayList<ArrayList<Integer>> adj) {"
+              - generic [ref=e739]: // Code here
+              - generic [ref=e740]: boolean vis[] = new boolean[V + 1];
+              - generic [ref=e741]: Arrays.fill(vis, false);
+              - generic [ref=e742]: "for(int i = 0; i < V; i++){"
+              - generic [ref=e743]: "if(vis[i] == false){"
+              - generic [ref=e744]: if(cycleDFS(i, -1, vis, adj)) return true;
+              - generic [ref=e745]: "}"
+              - generic [ref=e746]: "}"
+              - generic [ref=e747]: return false;
+              - generic [ref=e748]: "}"
+              - generic [ref=e749]: "public boolean cycleDFS(int node, int par, boolean vis[], ArrayList<ArrayList<Integer>> adj){"
+              - generic [ref=e750]: vis[node] = true;
+              - generic [ref=e751]: "for(Integer i : adj.get(node)){"
+              - generic [ref=e752]: "if(vis[i] == false){"
+              - generic [ref=e753]: if(cycleDFS(i, node, vis, adj) == true) return true;
+              - generic [ref=e754]: "}"
+              - generic [ref=e755]: else if(i != par) return true;
+              - generic [ref=e756]: "}"
+              - generic [ref=e757]: return false;
+              - generic [ref=e758]: "}"
+              - generic [ref=e759]: "}"
+            - paragraph [ref=e760]: ANALYSIS :-
+            - list [ref=e761]:
+              - listitem [ref=e762]:
+                - paragraph [ref=e763]:
+                  - strong [ref=e764]: Time Complexity :-
+                  - strong [ref=e765]:
+                    - code [ref=e766]: BigO(N)
+              - listitem [ref=e767]:
+                - paragraph [ref=e768]:
+                  - strong [ref=e769]: Space Complexity :-
+                  - strong [ref=e770]:
+                    - code [ref=e771]: BigO(N)
+            - code [ref=e775]:
+              - generic [ref=e776]: "# Biparite Graph (B F S)"
+            - paragraph [ref=e777]:
+              - code [ref=e778]: Definition :-
+              - text: A bipartite graph (or bigraph) is a graph whose vertices can be divided into two disjoint and independent sets and , that is every edge connects a vertex in to one in.
+              - emphasis [ref=e779]:
+                - strong [ref=e780]: Source :- Wikipedia
+              - img "image" [ref=e781]
+            - paragraph [ref=e782]:
+              - strong [ref=e783]: Okay so in simple terms
+              - text: ", A bipartite graph is possible if the graph coloring is possible using two colors such that vertices in a set are colored with the same color. Note that it is possible to color a cycle graph with even cycle using two colors. For example, see the following graph."
+              - img "image" [ref=e784]
+            - paragraph [ref=e785]:
+              - strong [ref=e786]: It is not possible to color a cycle graph with odd cycle using two colors.
+              - img "image" [ref=e787]
+            - paragraph [ref=e788]:
+              - text: So, with the help of an example, let's see whether a
+              - strong [ref=e789]: graph
+              - text: is
+              - strong [ref=e790]: bipartite
+              - text: or not.
+            - paragraph [ref=e791]:
+              - text: To, solve it we gonna use the help of
+              - strong [ref=e792]: Queue
+              - text: and a
+              - strong [ref=e793]: color array
+            - paragraph [ref=e794]:
+              - img "image" [ref=e795]
+              - img "image" [ref=e796]
+              - img "image" [ref=e797]
+              - img "image" [ref=e798]
+              - img "image" [ref=e799]
+              - img "image" [ref=e800]
+              - img "image" [ref=e801]
+              - img "image" [ref=e802]
+            - paragraph [ref=e803]:
+              - strong [ref=e804]: "Now, let's code it up:"
+            - paragraph [ref=e805]:
+              - strong [ref=e806]: Java
+            - code [ref=e810]:
+              - generic [ref=e811]: "// { Driver Code Starts"
+              - generic [ref=e812]: import java.util.*;
+              - generic [ref=e813]: import java.lang.*;
+              - generic [ref=e814]: import java.io.*;
+              - generic [ref=e815]: class GFG
+              - generic [ref=e816]: "{"
+              - generic [ref=e817]: public static void main(String[] args) throws IOException
+              - generic [ref=e818]: "{"
+              - generic [ref=e819]: BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+              - generic [ref=e820]: int T = Integer.parseInt(br.readLine().trim());
+              - generic [ref=e821]: while(T-->0)
+              - generic [ref=e822]: "{"
+              - generic [ref=e823]: String[] S = br.readLine().trim().split(" ");
+              - generic [ref=e824]: int V = Integer.parseInt(S[0]);
+              - generic [ref=e825]: int E = Integer.parseInt(S[1]);
+              - generic [ref=e826]: ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
+              - generic [ref=e827]: "for(int i = 0; i < V; i++){"
+              - generic [ref=e828]: adj.add(new ArrayList<Integer>());
+              - generic [ref=e829]: "}"
+              - generic [ref=e830]: "for(int i = 0; i < E; i++){"
+              - generic [ref=e831]: String[] s = br.readLine().trim().split(" ");
+              - generic [ref=e832]: int u = Integer.parseInt(s[0]);
+              - generic [ref=e833]: int v = Integer.parseInt(s[1]);
+              - generic [ref=e834]: adj.get(u).add(v);
+              - generic [ref=e835]: adj.get(v).add(u);
+              - generic [ref=e836]: "}"
+              - generic [ref=e837]: Solution obj = new Solution();
+              - generic [ref=e838]: boolean ans = obj.isBipartite(V, adj);
+              - generic [ref=e839]: if(ans)
+              - generic [ref=e840]: System.out.println("1");
+              - generic [ref=e841]: else System.out.println("0");
+              - generic [ref=e842]: "}"
+              - generic [ref=e843]: "}"
+              - generic [ref=e844]: "}// } Driver Code Ends"
+              - generic [ref=e845]: class himalik
+              - generic [ref=e846]: "{"
+              - generic [ref=e847]: public boolean isBipartite(int V, ArrayList<ArrayList<Integer>>adj)
+              - generic [ref=e848]: "{"
+              - generic [ref=e849]: // Code here
+              - generic [ref=e850]: int color[] = new int[V + 1];
+              - generic [ref=e851]: Arrays.fill(color, -1);
+              - generic [ref=e852]: "for(int i = 0; i < V; i++){"
+              - generic [ref=e853]: "if(color[i] == -1){"
+              - generic [ref=e854]: if(!bfs(i, color, adj)) return false;
+              - generic [ref=e855]: "}"
+              - generic [ref=e856]: "}"
+              - generic [ref=e857]: return true;
+              - generic [ref=e858]: "}"
+              - generic [ref=e859]: "public boolean bfs(int node, int color[], ArrayList<ArrayList<Integer>>adj){"
+              - generic [ref=e860]: Queue<Integer> q = new LinkedList<>();
+              - generic [ref=e861]: q.add(node);
+              - generic [ref=e862]: color[node] = 1;
+              - generic [ref=e863]: "while(!q.isEmpty()){"
+              - generic [ref=e864]: int nde = q.poll();
+              - generic [ref=e865]: "for(Integer i : adj.get(nde)){"
+              - generic [ref=e866]: "if(color[i] == -1){"
+              - generic [ref=e867]: q.add(i);
+              - generic [ref=e868]: color[i] = 1 - color[nde];
+              - generic [ref=e869]: "}"
+              - generic [ref=e870]: else if(color[i] == color[nde]) return false;
+              - generic [ref=e871]: "}"
+              - generic [ref=e872]: "}"
+              - generic [ref=e873]: return true;
+              - generic [ref=e874]: "}"
+              - generic [ref=e875]: "}"
+            - paragraph [ref=e876]: ANALYSIS :-
+            - list [ref=e877]:
+              - listitem [ref=e878]:
+                - paragraph [ref=e879]:
+                  - strong [ref=e880]: Time Complexity :-
+                  - strong [ref=e881]:
+                    - code [ref=e882]: BigO(N+E)
+                  - text: Where N is the time taken and E is for traveling through adjacent nodes overall.
+              - listitem [ref=e883]:
+                - paragraph [ref=e884]:
+                  - strong [ref=e885]: Space Complexity :-
+                  - strong [ref=e886]:
+                    - code [ref=e887]: BigO(N+E) + O(N) + O(N)
+                  - text: where space for adjacent list , array and queue
+            - code [ref=e891]:
+              - generic [ref=e892]: "# Biparite Graph (D F S)"
+            - paragraph [ref=e893]:
+              - strong [ref=e894]: The Definition & explanation is same as given above for BFS, only what the difference is we'll solve this recursively!
+            - paragraph [ref=e895]:
+              - text: Well, using recursion. we going to also take up the help of
+              - strong [ref=e896]: color array.
+            - paragraph [ref=e897]:
+              - img "image" [ref=e898]
+            - paragraph [ref=e899]:
+              - strong [ref=e900]: "Now, let's code it up:"
+            - paragraph [ref=e901]:
+              - strong [ref=e902]: Java
+            - code [ref=e906]:
+              - generic [ref=e907]: "// { Driver Code Starts"
+              - generic [ref=e908]: import java.util.*;
+              - generic [ref=e909]: import java.lang.*;
+              - generic [ref=e910]: import java.io.*;
+              - generic [ref=e911]: class GFG
+              - generic [ref=e912]: "{"
+              - generic [ref=e913]: public static void main(String[] args) throws IOException
+              - generic [ref=e914]: "{"
+              - generic [ref=e915]: BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+              - generic [ref=e916]: int T = Integer.parseInt(br.readLine().trim());
+              - generic [ref=e917]: while(T-->0)
+              - generic [ref=e918]: "{"
+              - generic [ref=e919]: String[] S = br.readLine().trim().split(" ");
+              - generic [ref=e920]: int V = Integer.parseInt(S[0]);
+              - generic [ref=e921]: int E = Integer.parseInt(S[1]);
+              - generic [ref=e922]: ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
+              - generic [ref=e923]: "for(int i = 0; i < V; i++){"
+              - generic [ref=e924]: adj.add(new ArrayList<Integer>());
+              - generic [ref=e925]: "}"
+              - generic [ref=e926]: "for(int i = 0; i < E; i++){"
+              - generic [ref=e927]: String[] s = br.readLine().trim().split(" ");
+              - generic [ref=e928]: int u = Integer.parseInt(s[0]);
+              - generic [ref=e929]: int v = Integer.parseInt(s[1]);
+              - generic [ref=e930]: adj.get(u).add(v);
+              - generic [ref=e931]: adj.get(v).add(u);
+              - generic [ref=e932]: "}"
+              - generic [ref=e933]: Solution obj = new Solution();
+              - generic [ref=e934]: boolean ans = obj.isBipartite(V, adj);
+              - generic [ref=e935]: if(ans)
+              - generic [ref=e936]: System.out.println("1");
+              - generic [ref=e937]: else System.out.println("0");
+              - generic [ref=e938]: "}"
+              - generic [ref=e939]: "}"
+              - generic [ref=e940]: "}// } Driver Code Ends"
+              - generic [ref=e941]: class himalik
+              - generic [ref=e942]: "{"
+              - generic [ref=e943]: public boolean isBipartite(int V, ArrayList<ArrayList<Integer>>adj)
+              - generic [ref=e944]: "{"
+              - generic [ref=e945]: // Code here
+              - generic [ref=e946]: int color[] = new int[V + 1];
+              - generic [ref=e947]: Arrays.fill(color, -1);
+              - generic [ref=e948]: "for(int i = 0; i < V; i++){"
+              - generic [ref=e949]: "if(color[i] == -1){"
+              - generic [ref=e950]: if(!dfs(i, color, adj)) return false;
+              - generic [ref=e951]: "}"
+              - generic [ref=e952]: "}"
+              - generic [ref=e953]: return true;
+              - generic [ref=e954]: "}"
+              - generic [ref=e955]: "public boolean dfs(int node, int color[], ArrayList<ArrayList<Integer>>adj){"
+              - generic [ref=e956]: // if(color[node] == -1) color[node] = 0;
+              - generic [ref=e957]: "for(Integer i : adj.get(node)){"
+              - generic [ref=e958]: "if(color[i] == -1){"
+              - generic [ref=e959]: color[i] = 1 - color[node];
+              - generic [ref=e960]: if(!dfs(i, color, adj)) return false;
+              - generic [ref=e961]: "}"
+              - generic [ref=e962]: else if(color[i] == color[node]) return false;
+              - generic [ref=e963]: "}"
+              - generic [ref=e964]: return true;
+              - generic [ref=e965]: "}"
+              - generic [ref=e966]: "}"
+            - paragraph [ref=e967]: ANALYSIS :-
+            - list [ref=e968]:
+              - listitem [ref=e969]:
+                - paragraph [ref=e970]:
+                  - strong [ref=e971]: Time Complexity :-
+                  - strong [ref=e972]:
+                    - code [ref=e973]: BigO(V+E)
+                  - text: since in its whole, it is a DFS implementation, V – vertices; E – edges;
+              - listitem [ref=e974]:
+                - paragraph [ref=e975]:
+                  - strong [ref=e976]: Space Complexity :-
+                  - strong [ref=e977]:
+                    - code [ref=e978]: BigO(V)
+                  - text: because, apart from the graph, we maintain a color array.
+            - code [ref=e982]:
+              - generic [ref=e983]: "# Cycle Detection In Directed Graph (D F S)"
+            - paragraph [ref=e984]:
+              - text: A cycle involves at least 2 nodes. The basic intuition for cycle detection is to check whether a node is reachable when we are processing its neighbors and also its neighbors’ neighbors, and so on.
+              - strong [ref=e985]: Look at this example what I mean
+              - img "image" [ref=e986]
+            - paragraph [ref=e987]: We can see that 7 is reachable through 8 and 9. We can use the normal DFS traversal with some modifications to check for cycles.
+            - paragraph [ref=e988]:
+              - strong [ref=e989]: Now Let's understand it visually:-
+              - img "image" [ref=e990]
+              - img "image" [ref=e991]
+              - img "image" [ref=e992]
+            - paragraph [ref=e993]:
+              - strong [ref=e994]: "Now, let's code it up:"
+            - paragraph [ref=e995]:
+              - strong [ref=e996]: Java
+            - code [ref=e1000]:
+              - generic [ref=e1001]: "// { Driver Code Starts"
+              - generic [ref=e1002]: import java.util.*;
+              - generic [ref=e1003]: import java.io.*;
+              - generic [ref=e1004]: import java.lang.*;
+              - generic [ref=e1005]: "class DriverClass {"
+              - generic [ref=e1006]: "public static void main(String[] args) {"
+              - generic [ref=e1007]: Scanner sc = new Scanner(System.in);
+              - generic [ref=e1008]: int t = sc.nextInt();
+              - generic [ref=e1009]: "while (t-- > 0) {"
+              - generic [ref=e1010]: ArrayList<ArrayList<Integer>> list = new ArrayList<>();
+              - generic [ref=e1011]: int V = sc.nextInt();
+              - generic [ref=e1012]: int E = sc.nextInt();
+              - generic [ref=e1013]: for (int i = 0; i < V + 1; i++)
+              - generic [ref=e1014]: list.add(i, new ArrayList<Integer>());
+              - generic [ref=e1015]: "for (int i = 0; i < E; i++) {"
+              - generic [ref=e1016]: int u = sc.nextInt();
+              - generic [ref=e1017]: int v = sc.nextInt();
+              - generic [ref=e1018]: list.get(u).add(v);
+              - generic [ref=e1019]: "}"
+              - generic [ref=e1020]: if (new Solution().isCyclic(V, list) == true)
+              - generic [ref=e1021]: System.out.println("1");
+              - generic [ref=e1022]: else
+              - generic [ref=e1023]: System.out.println("0");
+              - generic [ref=e1024]: "}"
+              - generic [ref=e1025]: "}"
+              - generic [ref=e1026]: "}// } Driver Code Ends"
+              - generic [ref=e1027]: /*Complete the function below*/
+              - generic [ref=e1028]: "class Solution {"
+              - generic [ref=e1029]: // Function to detect cycle in a directed graph.
+              - generic [ref=e1030]: "public boolean isCyclic(int V, ArrayList<ArrayList<Integer>> adj) {"
+              - generic [ref=e1031]: // code here
+              - generic [ref=e1032]: int vis[] = new int[V + 1];
+              - generic [ref=e1033]: int dfsVis[] = new int[V + 1];
+              - generic [ref=e1034]: Arrays.fill(vis, 0);
+              - generic [ref=e1035]: Arrays.fill(dfsVis, 0);
+              - generic [ref=e1036]: "for(int i = 0; i < V; i++){"
+              - generic [ref=e1037]: "if(vis[i] == 0){"
+              - generic [ref=e1038]: if(cycleDFS(i, vis, dfsVis, adj)) return true;
+              - generic [ref=e1039]: "}"
+              - generic [ref=e1040]: "}"
+              - generic [ref=e1041]: return false;
+              - generic [ref=e1042]: "}"
+              - generic [ref=e1043]: "public boolean cycleDFS(int node, int vis[], int dfsVis[], ArrayList<ArrayList<Integer>> adj){"
+              - generic [ref=e1044]: vis[node] = 1;
+              - generic [ref=e1045]: dfsVis[node] = 1;
+              - generic [ref=e1046]: "for(Integer i : adj.get(node)){"
+              - generic [ref=e1047]: "if(vis[i] == 0){"
+              - generic [ref=e1048]: if(cycleDFS(i, vis, dfsVis, adj)) return true;
+              - generic [ref=e1049]: "}"
+              - generic [ref=e1050]: else if(dfsVis[i] == 1) return true;
+              - generic [ref=e1051]: "}"
+              - generic [ref=e1052]: dfsVis[node] = 0;
+              - generic [ref=e1053]: return false;
+              - generic [ref=e1054]: "}"
+              - generic [ref=e1055]: "}"
+            - paragraph [ref=e1056]: ANALYSIS :-
+            - list [ref=e1057]:
+              - listitem [ref=e1058]:
+                - paragraph [ref=e1059]:
+                  - strong [ref=e1060]: Time Complexity :-
+                  - strong [ref=e1061]:
+                    - code [ref=e1062]: BigO(V+E)
+                  - text: since in its whole, it is a DFS implementation, V – vertices; E – edges;
+              - listitem [ref=e1063]:
+                - paragraph [ref=e1064]:
+                  - strong [ref=e1065]: Space Complexity :-
+                  - strong [ref=e1066]:
+                    - code [ref=e1067]: BigO(V)
+                  - text: because, apart from the graph, we have 2 arrays of size V, to store the required information
+            - code [ref=e1071]:
+              - generic [ref=e1072]: "# Topological Sort (D F S)"
+            - paragraph [ref=e1073]:
+              - text: First of all let’s understand Topological Sorting. It means linear ordering of vertices such that there is an edge
+              - code [ref=e1074]: u—-> v
+              - text: ","
+              - strong [ref=e1075]: u
+              - text: appears before
+              - strong [ref=e1076]: v
+              - text: in the ordering.
+            - paragraph [ref=e1077]:
+              - strong [ref=e1078]: Let's take an example,
+              - img "image" [ref=e1079]
+            - paragraph [ref=e1080]: "Some of the possible Topological orders can be:"
+            - list [ref=e1081]:
+              - listitem [ref=e1082]:
+                - paragraph [ref=e1083]:
+                  - code [ref=e1084]: 5,4,2,3,1,0
+              - listitem [ref=e1085]:
+                - paragraph [ref=e1086]:
+                  - code [ref=e1087]: 4,5,2,3,1,0
+              - listitem [ref=e1088]:
+                - paragraph [ref=e1089]:
+                  - text: In both cases we can see, that
+                  - code [ref=e1090]: 4->0 ( 4 appears before 0 ) , 5>3 ( 5 appears before 3 ), …
+              - listitem [ref=e1091]:
+                - paragraph [ref=e1092]:
+                  - text: Similarly there can be
+                  - strong [ref=e1093]: multiple toposorts order for the given graph
+                  - text: but the condition should be if there is an edge
+                  - code [ref=e1094]: u->v
+                  - text: then
+                  - strong [ref=e1095]: u
+                  - text: should always appear before
+                  - strong [ref=e1096]: v
+                  - text: .
+              - listitem [ref=e1097]:
+                - paragraph [ref=e1098]:
+                  - text: Topological Sorting is applicable only for DAG(Directed Acyclic Graph).
+                  - strong [ref=e1099]: Why is it so?
+                  - strong [ref=e1100]: "Because of the following reasons:"
+              - listitem [ref=e1101]:
+                - list [ref=e1102]:
+                  - listitem [ref=e1103]: Specifically, only u->v is not applicable for undirected graphs. It is uncertain if the edge (u-v) lies between u and v or v and u.
+              - listitem [ref=e1104]:
+                - list [ref=e1105]:
+                  - listitem [ref=e1106]: There will always be a dependence factor in a circular graph. You cannot guarantee that the vertices will be arranged linearly.
+            - code [ref=e1110]:
+              - generic [ref=e1111]: Finally, you now fully get what Topological Sorting is.
+              - generic [ref=e1112]: To fix the issue, we'll use the DFS (Depth First Search) approach.
+              - generic [ref=e1113]: Each vertex's neighbouring vertex will be explored for each vertex in turn.
+              - generic [ref=e1114]: Following exploration, the current vertex will be stored in a data structure to preserve Topo Sort.
+            - paragraph [ref=e1115]:
+              - strong [ref=e1116]: "We will be using the following data structure to get Topo sort:"
+            - list [ref=e1117]:
+              - listitem [ref=e1118]:
+                - strong [ref=e1119]:
+                  - code [ref=e1120]: Visited Vector
+                - text: – To store visit of each vertex
+              - listitem [ref=e1121]:
+                - strong [ref=e1122]:
+                  - code [ref=e1123]: Stack
+                - text: – To maintain the topo sort order.
+                - img "image" [ref=e1124]
+                - img "image" [ref=e1125]
+                - img "image" [ref=e1126]
+                - img "image" [ref=e1127]
+                - img "image" [ref=e1128]
+                - img "image" [ref=e1129]
+            - paragraph [ref=e1130]:
+              - strong [ref=e1131]: Aside from utilising Stack, did you notice anything else?
+              - text: just because
+              - strong [ref=e1132]: u
+              - text: had an edge over
+              - strong [ref=e1133]: v
+              - text: . From
+              - strong [ref=e1134]: u
+              - text: to
+              - strong [ref=e1135]: v
+              - text: ", the DFS call will travel. Initial, the first"
+              - strong [ref=e1136]: dfs (v)
+              - text: ", and then"
+              - strong [ref=e1137]: dfs (u)
+              - text: . Here, we are ensuring that if
+              - code [ref=e1138]: u->v
+              - text: ","
+              - strong [ref=e1139]: v
+              - text: will be placed onto the stack first, followed by
+              - strong [ref=e1140]: u
+              - text: .
+              - code [ref=e1141]: This is how the Stack maintains topological order.
+            - paragraph [ref=e1142]:
+              - strong [ref=e1143]: "Now, let's code it up:"
+            - paragraph [ref=e1144]:
+              - strong [ref=e1145]: Java
+            - code [ref=e1149]:
+              - generic [ref=e1150]: "// { Driver Code Starts"
+              - generic [ref=e1151]: import java.util.*;
+              - generic [ref=e1152]: import java.io.*;
+              - generic [ref=e1153]: import java.lang.*;
+              - generic [ref=e1154]: "class Main {"
+              - generic [ref=e1155]: "public static void main(String[] args) throws IOException {"
+              - generic [ref=e1156]: BufferedReader read =
+              - generic [ref=e1157]: new BufferedReader(new InputStreamReader(System.in));
+              - generic [ref=e1158]: int t = Integer.parseInt(read.readLine());
+              - generic [ref=e1159]: "while (t-- > 0) {"
+              - generic [ref=e1160]: ArrayList<ArrayList<Integer>> list = new ArrayList<>();
+              - generic [ref=e1161]: String st[] = read.readLine().trim().split("\\s+");
+              - generic [ref=e1162]: int edg = Integer.parseInt(st[0]);
+              - generic [ref=e1163]: int nov = Integer.parseInt(st[1]);
+              - generic [ref=e1164]: for (int i = 0; i < nov + 1; i++)
+              - generic [ref=e1165]: list.add(i, new ArrayList<Integer>());
+              - generic [ref=e1166]: int p = 0;
+              - generic [ref=e1167]: "for (int i = 1; i <= edg; i++) {"
+              - generic [ref=e1168]: String s[] = read.readLine().trim().split("\\s+");
+              - generic [ref=e1169]: int u = Integer.parseInt(s[0]);
+              - generic [ref=e1170]: int v = Integer.parseInt(s[1]);
+              - generic [ref=e1171]: list.get(u).add(v);
+              - generic [ref=e1172]: "}"
+              - generic [ref=e1173]: int[] res = new Solution().topoSort(nov, list);
+              - generic [ref=e1174]: if (check(list, nov, res) == true)
+              - generic [ref=e1175]: System.out.println("1");
+              - generic [ref=e1176]: else
+              - generic [ref=e1177]: System.out.println("0");
+              - generic [ref=e1178]: "}"
+              - generic [ref=e1179]: "}"
+              - generic [ref=e1180]: "static boolean check(ArrayList<ArrayList<Integer>> list, int V, int[] res) {"
+              - generic [ref=e1181]: if(V!=res.length)
+              - generic [ref=e1182]: return false;
+              - generic [ref=e1183]: int[] map = new int[V];
+              - generic [ref=e1184]: "for (int i = 0; i < V; i++) {"
+              - generic [ref=e1185]: map[res[i]] = i;
+              - generic [ref=e1186]: "}"
+              - generic [ref=e1187]: "for (int i = 0; i < V; i++) {"
+              - generic [ref=e1188]: "for (int v : list.get(i)) {"
+              - generic [ref=e1189]: if (map[i] > map[v]) return false;
+              - generic [ref=e1190]: "}"
+              - generic [ref=e1191]: "}"
+              - generic [ref=e1192]: return true;
+              - generic [ref=e1193]: "}"
+              - generic [ref=e1194]: "}"
+              - generic [ref=e1195]: "// } Driver Code Ends"
+              - generic [ref=e1196]: /*Complete the function below*/
+              - generic [ref=e1197]: class Solution
+              - generic [ref=e1198]: "{"
+              - generic [ref=e1199]: //Function to return list containing vertices in Topological order.
+              - generic [ref=e1200]: static int[] topoSort(int V, ArrayList<ArrayList<Integer>> adj)
+              - generic [ref=e1201]: "{"
+              - generic [ref=e1202]: // add your code here
+              - generic [ref=e1203]: Stack<Integer> st = new Stack<>();
+              - generic [ref=e1204]: int vis[] = new int[V + 1];
+              - generic [ref=e1205]: Arrays.fill(vis, 0);
+              - generic [ref=e1206]: "for(int i = 0; i < V; i++){"
+              - generic [ref=e1207]: "if(vis[i] == 0){"
+              - generic [ref=e1208]: dfs(i, vis, st, adj);
+              - generic [ref=e1209]: "}"
+              - generic [ref=e1210]: "}"
+              - generic [ref=e1211]: int topo[] = new int[V];
+              - generic [ref=e1212]: int i = 0;
+              - generic [ref=e1213]: "while(!st.isEmpty()){"
+              - generic [ref=e1214]: topo[i++] = st.pop();
+              - generic [ref=e1215]: "}"
+              - generic [ref=e1216]: return topo;
+              - generic [ref=e1217]: "}"
+              - generic [ref=e1218]: "public static void dfs(int node, int vis[], Stack<Integer> st, ArrayList<ArrayList<Integer>> adj){"
+              - generic [ref=e1219]: vis[node] = 1;
+              - generic [ref=e1220]: "for(Integer i : adj.get(node)){"
+              - generic [ref=e1221]: "if(vis[i] == 0){"
+              - generic [ref=e1222]: dfs(i, vis, st, adj);
+              - generic [ref=e1223]: "}"
+              - generic [ref=e1224]: "}"
+              - generic [ref=e1225]: st.push(node);
+              - generic [ref=e1226]: "}"
+              - generic [ref=e1227]: "}"
+            - paragraph [ref=e1228]: ANALYSIS :-
+            - list [ref=e1229]:
+              - listitem [ref=e1230]:
+                - paragraph [ref=e1231]:
+                  - strong [ref=e1232]: Time Complexity :-
+                  - strong [ref=e1233]:
+                    - code [ref=e1234]: BigO(N+E)
+                  - text: where N = Number of node , E = Number of Edges
+              - listitem [ref=e1235]:
+                - paragraph [ref=e1236]:
+                  - strong [ref=e1237]: Space Complexity :-
+                  - strong [ref=e1238]:
+                    - code [ref=e1239]: BigO(N) + O(N)
+                  - text: because, Visited Array and Stack data structure. Both will be using O(N).
+            - code [ref=e1243]:
+              - generic [ref=e1244]: "# Topological Sort (B F S) \"OR\" KAHN'S ALGORITHM"
+            - paragraph [ref=e1245]:
+              - text: Topological sorting for Directed Acyclic Graph (DAG) is a linear ordering of vertices such that for every directed edge
+              - strong [ref=e1246]: uv
+              - text: ", vertex"
+              - strong [ref=e1247]: u
+              - text: comes before
+              - strong [ref=e1248]: v
+              - text: in the ordering. Topological Sorting for a graph is not possible if the graph is not a DAG.
+              - strong [ref=e1249]:
+                - code [ref=e1250]: For example,
+              - text: a topological sorting of the following graph is “
+              - emphasis [ref=e1251]:
+                - strong [ref=e1252]: 5 4 2 3 1 0?. There can be more than one topological sorting for a graph. For example, another topological sorting of the following graph is “4 5 2 0 3 1
+              - text: ″. The first vertex in topological sorting is always a vertex with an in-degree of 0 (a vertex with no incoming edges).
+            - paragraph [ref=e1253]:
+              - img "image" [ref=e1254]
+            - paragraph [ref=e1255]: Now, let's talk about how we can solve this using BFS, or How's Kahn's Algorithm helps us.
+            - paragraph [ref=e1256]:
+              - text: So, In this instead of using
+              - deletion [ref=e1257]:
+                - strong [ref=e1258]: visited array
+              - text: we going to use
+              - strong [ref=e1259]: array of indegree
+              - text: . Now some of you may will ask,
+              - emphasis [ref=e1260]: dude wait but what is indegree?
+            - paragraph [ref=e1261]:
+              - text: Well I forgot to tell you in the very beginning about degree & indegree!!
+              - text: Here's the quick understanding:-
+            - list [ref=e1262]:
+              - listitem [ref=e1263]:
+                - strong [ref=e1264]: OutDegree :-
+                - text: Outdegree of vertex V is the number of edges which are going out from the vertex V.
+              - listitem [ref=e1265]:
+                - strong [ref=e1266]: InDegree :-
+                - text: Indegree of vertex V is the number of edges which are coming into the vertex V.
+            - paragraph [ref=e1267]:
+              - text: So, more you understand this while we solve the problem,
+              - strong [ref=e1268]: now let's get back to the problem again.
+            - code [ref=e1272]:
+              - generic [ref=e1273]: The data Structure we use to solve this problem is:-
+              - generic [ref=e1274]: "> Queue :- The queue will store the \"0\" indegree vertex only"
+              - generic [ref=e1275]: "> Indegree Array :- We will going to have all kind of vertex whose indergree is 0 or greater then 0."
+              - generic [ref=e1276]: (If indegree of a vertex is greater then 0, we going to decrement it until 0)
+            - paragraph [ref=e1277]:
+              - strong [ref=e1278]: Now, let's understand this problem using an example,
+              - img "image" [ref=e1279]
+            - list [ref=e1280]:
+              - listitem [ref=e1281]:
+                - paragraph [ref=e1282]:
+                  - strong [ref=e1283]:
+                    - text: Our First job is to fill the
+                    - code [ref=e1284]: indegree array
+                    - text: with the degree as per the node/vertex
+                  - img "image" [ref=e1285]
+              - listitem [ref=e1286]:
+                - paragraph [ref=e1287]:
+                  - strong [ref=e1288]:
+                    - text: Now as you can, see we have done that. Now our next job is to push
+                    - code [ref=e1289]: "0"
+                    - text: vertex in the
+                    - code [ref=e1290]: queue
+                    - text: i.e. we have
+                    - code [ref=e1291]: 4 & 5
+                    - text: "& after doing that we have to reduce it's adjacent node value by 1. In our case node"
+                    - code [ref=e1292]: "4"
+                    - text: adjacent are
+                    - code [ref=e1293]: 0 & 1
+                    - text: "& node"
+                    - code [ref=e1294]: "5"
+                    - text: adjacent are
+                    - code [ref=e1295]: 0 & 2
+                  - img "image" [ref=e1296]
+              - listitem [ref=e1297]:
+                - paragraph [ref=e1298]:
+                  - strong [ref=e1299]:
+                    - text: Now do the same for node
+                    - code [ref=e1300]: "5"
+                  - img "image" [ref=e1301]
+              - listitem [ref=e1302]:
+                - paragraph [ref=e1303]:
+                  - strong [ref=e1304]:
+                    - text: Now, next
+                    - code [ref=e1305]: "0"
+                    - text: indegree vertex/node we have is
+                    - code [ref=e1306]: "0"
+                  - img "image" [ref=e1307]
+              - listitem [ref=e1308]:
+                - paragraph [ref=e1309]:
+                  - strong [ref=e1310]:
+                    - text: Next is
+                    - code [ref=e1311]: "2"
+                    - text: with indegree
+                    - code [ref=e1312]: "0"
+                    - text: "& it's adjacent is"
+                    - code [ref=e1313]: "3"
+                    - text: so decrement it value by 1
+                  - img "image" [ref=e1314]
+              - listitem [ref=e1315]:
+                - paragraph [ref=e1316]:
+                  - strong [ref=e1317]:
+                    - text: Next is
+                    - code [ref=e1318]: "3"
+                    - text: with indegree
+                    - code [ref=e1319]: "0"
+                    - text: "& it's adjacent is"
+                    - code [ref=e1320]: "1"
+                    - text: so decrement it value by 1
+                  - img "image" [ref=e1321]
+              - listitem [ref=e1322]:
+                - paragraph [ref=e1323]:
+                  - strong [ref=e1324]:
+                    - text: Finally
+                    - code [ref=e1325]: "1"
+                    - text: whose indegree is
+                    - code [ref=e1326]: "0"
+                    - text: now so, put it into the queue & no one is adjacent to it's
+                  - img "image" [ref=e1327]
+            - paragraph [ref=e1328]:
+              - strong [ref=e1329]: "Now, let's code it up:"
+            - paragraph [ref=e1330]:
+              - strong [ref=e1331]: Java
+            - code [ref=e1335]:
+              - generic [ref=e1336]: "// { Driver Code Starts"
+              - generic [ref=e1337]: import java.util.*;
+              - generic [ref=e1338]: import java.io.*;
+              - generic [ref=e1339]: import java.lang.*;
+              - generic [ref=e1340]: "class Main {"
+              - generic [ref=e1341]: "public static void main(String[] args) throws IOException {"
+              - generic [ref=e1342]: BufferedReader read =
+              - generic [ref=e1343]: new BufferedReader(new InputStreamReader(System.in));
+              - generic [ref=e1344]: int t = Integer.parseInt(read.readLine());
+              - generic [ref=e1345]: "while (t-- > 0) {"
+              - generic [ref=e1346]: ArrayList<ArrayList<Integer>> list = new ArrayList<>();
+              - generic [ref=e1347]: String st[] = read.readLine().trim().split("\\s+");
+              - generic [ref=e1348]: int edg = Integer.parseInt(st[0]);
+              - generic [ref=e1349]: int nov = Integer.parseInt(st[1]);
+              - generic [ref=e1350]: for (int i = 0; i < nov + 1; i++)
+              - generic [ref=e1351]: list.add(i, new ArrayList<Integer>());
+              - generic [ref=e1352]: int p = 0;
+              - generic [ref=e1353]: "for (int i = 1; i <= edg; i++) {"
+              - generic [ref=e1354]: String s[] = read.readLine().trim().split("\\s+");
+              - generic [ref=e1355]: int u = Integer.parseInt(s[0]);
+              - generic [ref=e1356]: int v = Integer.parseInt(s[1]);
+              - generic [ref=e1357]: list.get(u).add(v);
+              - generic [ref=e1358]: "}"
+              - generic [ref=e1359]: int[] res = new Solution().topoSort(nov, list);
+              - generic [ref=e1360]: if (check(list, nov, res) == true)
+              - generic [ref=e1361]: System.out.println("1");
+              - generic [ref=e1362]: else
+              - generic [ref=e1363]: System.out.println("0");
+              - generic [ref=e1364]: "}"
+              - generic [ref=e1365]: "}"
+              - generic [ref=e1366]: "static boolean check(ArrayList<ArrayList<Integer>> list, int V, int[] res) {"
+              - generic [ref=e1367]: if(V!=res.length)
+              - generic [ref=e1368]: return false;
+              - generic [ref=e1369]: int[] map = new int[V];
+              - generic [ref=e1370]: "for (int i = 0; i < V; i++) {"
+              - generic [ref=e1371]: map[res[i]] = i;
+              - generic [ref=e1372]: "}"
+              - generic [ref=e1373]: "for (int i = 0; i < V; i++) {"
+              - generic [ref=e1374]: "for (int v : list.get(i)) {"
+              - generic [ref=e1375]: if (map[i] > map[v]) return false;
+              - generic [ref=e1376]: "}"
+              - generic [ref=e1377]: "}"
+              - generic [ref=e1378]: return true;
+              - generic [ref=e1379]: "}"
+              - generic [ref=e1380]: "}"
+              - generic [ref=e1381]: "// } Driver Code Ends"
+              - generic [ref=e1382]: /*Complete the function below*/
+              - generic [ref=e1383]: class himalik
+              - generic [ref=e1384]: "{"
+              - generic [ref=e1385]: //Function to return list containing vertices in Topological order.
+              - generic [ref=e1386]: static int[] topoSort(int V, ArrayList<ArrayList<Integer>> adj)
+              - generic [ref=e1387]: "{"
+              - generic [ref=e1388]: // add your code here
+              - generic [ref=e1389]: Stack<Integer> st = new Stack<>();
+              - generic [ref=e1390]: int vis[] = new int[V + 1];
+              - generic [ref=e1391]: Arrays.fill(vis, 0);
+              - generic [ref=e1392]: "for(int i = 0; i < V; i++){"
+              - generic [ref=e1393]: "if(vis[i] == 0){"
+              - generic [ref=e1394]: dfs(i, vis, st, adj);
+              - generic [ref=e1395]: "}"
+              - generic [ref=e1396]: "}"
+              - generic [ref=e1397]: int topo[] = new int[V];
+              - generic [ref=e1398]: int i = 0;
+              - generic [ref=e1399]: "while(!st.isEmpty()){"
+              - generic [ref=e1400]: topo[i++] = st.pop();
+              - generic [ref=e1401]: "}"
+              - generic [ref=e1402]: return topo;
+              - generic [ref=e1403]: "}"
+              - generic [ref=e1404]: "public static void dfs(int node, int vis[], Stack<Integer> st, ArrayList<ArrayList<Integer>> adj){"
+              - generic [ref=e1405]: vis[node] = 1;
+              - generic [ref=e1406]: "for(Integer i : adj.get(node)){"
+              - generic [ref=e1407]: "if(vis[i] == 0){"
+              - generic [ref=e1408]: dfs(i, vis, st, adj);
+              - generic [ref=e1409]: "}"
+              - generic [ref=e1410]: "}"
+              - generic [ref=e1411]: st.push(node);
+              - generic [ref=e1412]: "}"
+              - generic [ref=e1413]: "}"
+            - paragraph [ref=e1414]: ANALYSIS :-
+            - list [ref=e1415]:
+              - listitem [ref=e1416]:
+                - paragraph [ref=e1417]:
+                  - strong [ref=e1418]: Time Complexity :-
+                  - strong [ref=e1419]:
+                    - code [ref=e1420]: BigO(N+E)
+                  - text: where N = Number of node , E = Number of Edges
+              - listitem [ref=e1421]:
+                - paragraph [ref=e1422]:
+                  - strong [ref=e1423]: Space Complexity :-
+                  - strong [ref=e1424]:
+                    - code [ref=e1425]: BigO(N) + O(N)
+                  - text: because, Indegree Array and Queue data structure. Both will be using O(N).
+            - separator [ref=e1426]
+            - separator [ref=e1427]
+            - paragraph [ref=e1428]: UpComing Topics to be covered :-
+            - separator [ref=e1429]
+            - separator [ref=e1430]
+            - paragraph [ref=e1431]:
+              - deletion [ref=e1432]: 1. Biparite Graph[BFS]
+              - deletion [ref=e1433]: 2. Biparite Graph[DFS]
+              - deletion [ref=e1434]: 3. Cycle Detection In Directed Graph[DFS]
+              - deletion [ref=e1435]: 4. Topological Sort[DFS]
+              - deletion [ref=e1436]:
+                - text: 5. Topological Sort[BFS] a.k.a
+                - strong [ref=e1437]: Kahn's Algorithm
+            - list [ref=e1438]:
+              - listitem [ref=e1439]: Cycle Detection In Directed Graph[BFS]
+              - listitem [ref=e1440]: Smallest Distance In Undirected Graph
+              - listitem [ref=e1441]: Shortest Path In a DAG[Direct Acylic Graph]
+              - listitem [ref=e1442]:
+                - text: Shortest Path In Undirected Graph a.k.a
+                - strong [ref=e1443]: Dijkstra's Algorithm
+              - listitem [ref=e1444]:
+                - text: Minimum Spanning Tree a.k.a
+                - strong [ref=e1445]: Prim's Algorithm
+              - listitem [ref=e1446]: Disjoint Set/ Union By Rank & Path Compression
+              - listitem [ref=e1447]:
+                - strong [ref=e1448]: Kruskal's Algorithm
+            - paragraph [ref=e1449]:
+              - text: So, these 7 topics left to be added in this article to make you
+              - strong [ref=e1450]: MASTER
+              - text: "& these article will going to be added soon. Thank You for your patience."
+              - strong [ref=e1451]: :)
+            - paragraph [ref=e1452]:
+              - img "image" [ref=e1453]
+              - img "image" [ref=e1454]
+            - code [ref=e1458]:
+              - generic [ref=e1459]: And Guy's as always there is a lot to know, a lot to discuss.
+              - generic [ref=e1460]: "\"Let me know your thought's in comment.\" // All sort of views are welcome :)"
+          - generic [ref=e1463]:
+            - generic [ref=e1464]:
+              - button "962" [ref=e1465] [cursor=pointer]:
+                - img [ref=e1467]
+                - generic [ref=e1469]: "962"
+              - button [ref=e1471] [cursor=pointer]:
+                - img [ref=e1473]
+            - button "75" [ref=e1475] [cursor=pointer]:
+              - img [ref=e1477]
+              - generic [ref=e1479]: "75"
+            - button [ref=e1481] [cursor=pointer]:
+              - button [ref=e1482]:
+                - img [ref=e1484]
+          - generic [ref=e1486]:
+            - generic [ref=e1487]:
+              - img [ref=e1489]
+              - generic [ref=e1491]: Comments (75)
+              - button "Sort by:Best" [ref=e1495] [cursor=pointer]:
+                - generic [ref=e1496]:
+                  - generic [ref=e1497]: "Sort by:"
+                  - text: Best
+                - generic:
+                  - img
+            - generic [ref=e1501]:
+              - textbox "Type comment here..." [ref=e1502]
+              - generic [ref=e1503]:
+                - generic [ref=e1505]:
+                  - img [ref=e1507] [cursor=pointer]
+                  - img [ref=e1510] [cursor=pointer]
+                  - img [ref=e1513] [cursor=pointer]
+                  - img [ref=e1516] [cursor=pointer]
+                - button "Comment" [disabled] [ref=e1519] [cursor=pointer]
+            - navigation [ref=e1633]:
+              - button "prev" [disabled]:
+                - img
+              - button "1" [disabled]
+              - button "2" [disabled]
+              - button "3" [disabled]
+              - button "4" [disabled]
+              - button "5" [disabled]
+              - button "6" [disabled]
+              - button "7" [disabled]
+              - button "8" [disabled]
+              - button "next" [disabled]:
+                - img
+        - generic [ref=e1634]:
+          - generic [ref=e1636]:
+            - img [ref=e1638]
+            - generic [ref=e1640]: Explore
+          - generic [ref=e1675]:
+            - generic [ref=e1676]:
+              - link "Download App" [ref=e1677] [cursor=pointer]:
+                - /url: https://leetcode.com/app/?utm_campaign=AppPromotion&utm_medium=site&utm_source=site_footer&gio_link_id=nPN4bXe9
+                - img [ref=e1679]
+                - text: Download App
+              - link "Support" [ref=e1682] [cursor=pointer]:
+                - /url: https://support.leetcode.com/hc/en-us
+              - link "Terms" [ref=e1684] [cursor=pointer]:
+                - /url: /terms
+              - link "Privacy Policy" [ref=e1686] [cursor=pointer]:
+                - /url: /privacy
+              - generic [ref=e1688] [cursor=pointer]: More
+            - link "Copyright © 2026 LeetCode" [ref=e1689] [cursor=pointer]:
+              - /url: /
+            - link "United States" [ref=e1691] [cursor=pointer]:
+              - /url: /region
+        - generic [ref=e1692]:
+          - button:
+            - generic:
+              - img
+    - region "Notifications (F8)":
+      - list
+  - alert [ref=e1693]

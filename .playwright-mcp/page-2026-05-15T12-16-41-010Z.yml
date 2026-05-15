@@ -1,0 +1,375 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - navigation [ref=e6]:
+        - generic [ref=e7]:
+          - link "LeetCode" [ref=e8] [cursor=pointer]:
+            - /url: /
+            - img [ref=e10]
+          - list [ref=e18]:
+            - listitem [ref=e19]:
+              - link "Problems" [ref=e20] [cursor=pointer]:
+                - /url: /problemset
+            - listitem [ref=e21]:
+              - link "Contest" [ref=e22] [cursor=pointer]:
+                - /url: /contest
+            - listitem [ref=e23]:
+              - link "Discuss" [ref=e24] [cursor=pointer]:
+                - /url: /discuss/
+            - listitem [ref=e25]:
+              - generic [ref=e27] [cursor=pointer]:
+                - button "More" [ref=e28]:
+                  - text: More
+                  - img [ref=e29]
+                - list:
+                  - listitem:
+                    - link:
+                      - /url: https://interview.leetcode.com/interview/
+                      - img
+                      - generic: Online Interview
+                  - listitem:
+                    - link:
+                      - /url: /assessment/
+                      - img
+                      - generic: Assessment
+                  - listitem:
+                    - link:
+                      - /url: /store
+                      - generic: Redeem
+                  - listitem:
+                    - link:
+                      - /url: /subscribe/?ref=sto_npl&source=ot
+                      - generic: Premium
+      - generic [ref=e32]:
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - link [ref=e36] [cursor=pointer]:
+              - /url: /discuss/
+              - button [ref=e37]:
+                - img [ref=e39]
+            - button [ref=e41] [cursor=pointer]:
+              - img [ref=e43]
+          - generic [ref=e46]:
+            - generic [ref=e47]: Binary Trees study guide
+            - generic [ref=e48]:
+              - link [ref=e50] [cursor=pointer]:
+                - /url: /u/ag_piyush/
+              - generic [ref=e51]:
+                - link "Piyush Agarwal" [ref=e54] [cursor=pointer]:
+                  - /url: /u/ag_piyush/
+                - generic [ref=e55]:
+                  - generic [ref=e56]:
+                    - img [ref=e57]
+                    - generic [ref=e59]: "94073"
+                  - generic [ref=e60]:
+                    - img [ref=e61]
+                    - generic [ref=e63]: May 16, 2021
+                  - generic [ref=e64]:
+                    - img [ref=e66]
+                    - generic [ref=e68]: Dec 22, 2021
+            - generic [ref=e69]:
+              - link "Tree" [ref=e70] [cursor=pointer]:
+                - /url: /discuss/topic/tree/
+              - link "Binary Search Tree" [ref=e71] [cursor=pointer]:
+                - /url: /discuss/topic/binary-search-tree/
+              - link "Binary Tree" [ref=e72] [cursor=pointer]:
+                - /url: /discuss/topic/binary-tree/
+              - link "Career" [ref=e73] [cursor=pointer]:
+                - /url: /discuss/topic/career/
+          - generic [ref=e77]:
+            - paragraph [ref=e78]:
+              - strong [ref=e79]: Prerequisites
+              - text: "that you should be familiar with before :"
+              - emphasis [ref=e80]: Recursion, stack, queue
+            - paragraph [ref=e81]: A basic instinct for solving DFS based questions is to do a recursive call and for all BFS(level order traversal) is to make queue and iterate, but also think upon how to iterate in DFS(Hint think on stack) and recurse in BFS based.
+            - paragraph [ref=e82]:
+              - text: First of all you should look at
+              - strong [ref=e83]: traversal problems
+              - text: ":"
+            - list [ref=e84]:
+              - listitem [ref=e85]:
+                - link "Inorder Traversal" [ref=e86] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/binary-tree-inorder-traversal
+              - listitem [ref=e87]:
+                - link "Preorder Traversal" [ref=e88] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/binary-tree-preorder-traversal
+              - listitem [ref=e89]:
+                - link "PostOrder Traversal" [ref=e90] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/binary-tree-postorder-traversal
+              - listitem [ref=e91]:
+                - link "Level Order Traversal" [ref=e92] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/binary-tree-level-order-traversal
+            - paragraph [ref=e93]:
+              - text: "A variation for LevelOrder can be:"
+              - link "ZigZag level order traversal" [ref=e94] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
+              - text: and
+              - link "Binary Tree Level Order Traversal II" [ref=e95] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
+              - text: Solving these questions will help you get familiarized with basic btree dfs and bfs traversals.
+            - paragraph [ref=e96]:
+              - strong [ref=e97]: Intuition for Level Order Traversal
+              - text: "iteratively using queue:"
+            - list [ref=e98]:
+              - listitem [ref=e99]:
+                - text: "Construct a queue of type: TreeNode"
+                - code [ref=e100]: queue<TreeNode* > q
+                - text: ", initially push the given root in it."
+              - listitem [ref=e101]:
+                - text: "Iterate through the queue until empty:"
+                - list [ref=e102]:
+                  - listitem [ref=e103]:
+                    - text: Store the current size of queue
+                    - code [ref=e104]: tempSize
+                    - text: ", this will be the size of the current level of the tree."
+                  - listitem [ref=e105]:
+                    - text: Now we need to traverse this level so iterate for
+                    - code [ref=e106]: tempSize>=0
+                    - text: ":"
+                    - list [ref=e107]:
+                      - listitem [ref=e108]: Pop the current element and apply the needed operation for the same and if left or right child exist then pass them to the queue.
+            - paragraph [ref=e109]: "Now, some basic Binary Tree problems that will help your thinking process:"
+            - list [ref=e110]:
+              - listitem [ref=e111]:
+                - link "Same Tree" [ref=e112] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/same-tree/
+              - listitem [ref=e113]:
+                - link "Symmetric Tree" [ref=e114] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/symmetric-tree/
+              - listitem [ref=e115]:
+                - link "Maximum Depth of Binary Tree" [ref=e116] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/maximum-depth-of-binary-tree/
+              - listitem [ref=e117]:
+                - link "Balanced Binary Tree" [ref=e118] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/balanced-binary-tree/
+              - listitem [ref=e119]:
+                - link "Minimum Depth of Binary Tree" [ref=e120] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/minimum-depth-of-binary-tree/
+              - listitem [ref=e121]:
+                - link "Merge Two Binary Trees" [ref=e122] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/merge-two-binary-trees
+              - listitem [ref=e123]:
+                - link "Diameter of Binary Tree" [ref=e124] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/diameter-of-binary-tree/
+              - listitem [ref=e125]:
+                - link "Binary Tree Tilt" [ref=e126] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/binary-tree-tilt
+              - listitem [ref=e127]:
+                - link "Invert Binary Tree" [ref=e128] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/invert-binary-tree/
+            - paragraph [ref=e129]:
+              - strong [ref=e130]: "Binary Search Tree:"
+              - text: Use the property of BST judiciously (the left subtree will always contain nodes with value less than root's value and right subtree will contain nodes with value greater than root's value)
+            - list [ref=e131]:
+              - listitem [ref=e132]:
+                - link "Search in a Binary Search Tree" [ref=e133] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/search-in-a-binary-search-tree
+              - listitem [ref=e134]:
+                - link "Two Sum IV - Input is a BST" [ref=e135] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/two-sum-iv-input-is-a-bst/
+              - listitem [ref=e136]:
+                - link "Minimum Absolute Difference in BST" [ref=e137] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/minimum-absolute-difference-in-bst/
+              - listitem [ref=e138]:
+                - link "Range Sum of BST" [ref=e139] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/range-sum-of-bst/
+              - listitem [ref=e140]:
+                - link "Delete Node in a BST" [ref=e141] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/delete-node-in-a-bst/
+              - listitem [ref=e142]:
+                - link "Trim a Binary Search Tree" [ref=e143] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/trim-a-binary-search-tree
+              - listitem [ref=e144]:
+                - link "Insert into a Binary Search Tree" [ref=e145] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/insert-into-a-binary-search-tree
+              - listitem [ref=e146]:
+                - link "Kth Smallest Element in a BST" [ref=e147] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/kth-smallest-element-in-a-bst
+              - listitem [ref=e148]:
+                - link "All Elements in Two Binary Search Trees" [ref=e149] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/all-elements-in-two-binary-search-trees
+            - paragraph [ref=e150]:
+              - strong [ref=e151]: "Path problems:"
+              - text: "You are given root, you have to perform operations on a path, (path is root to leaf). Think upon the type of traversal you will apply when going from root to leaf:"
+            - list [ref=e152]:
+              - listitem [ref=e153]:
+                - link "Binary Tree Paths" [ref=e154] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/binary-tree-paths/
+              - listitem [ref=e155]:
+                - link "Path Sum" [ref=e156] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/path-sum
+              - listitem [ref=e157]:
+                - link "Path Sum II" [ref=e158] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/path-sum-ii
+              - listitem [ref=e159]:
+                - link "Sum root to leaf numbers" [ref=e160] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/sum-root-to-leaf-numbers/
+              - listitem [ref=e161]:
+                - link "Binary Tree Maximum Path Sum" [ref=e162] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/binary-tree-maximum-path-sum/
+              - listitem [ref=e163]:
+                - text: "*"
+                - link "Path Sum III" [ref=e164] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/path-sum-iii
+              - listitem [ref=e165]:
+                - text: "*"
+                - link "Pseudo-Palindromic Paths in a Binary Tree" [ref=e166] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree
+                - text: "*Last two problems here are utmost important"
+            - paragraph [ref=e167]:
+              - text: Next is, given a combination of preorder, postorder and inorder traversals, you need to
+              - strong [ref=e168]: construct a binary tree/BST
+              - text: ":"
+              - text: "Hint: Observe in each traversal method, position of root and head of right and left subtrees"
+            - list [ref=e169]:
+              - listitem [ref=e170]:
+                - link "Construct Binary Tree from Preorder and Inorder Traversal" [ref=e171] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal
+              - listitem [ref=e172]:
+                - link "Construct Binary Tree from Inorder and Postorder Traversal" [ref=e173] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal
+              - listitem [ref=e174]:
+                - link "Construct Binary Tree from Preorder and Postorder Traversal" [ref=e175] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal
+              - listitem [ref=e176]:
+                - link "Convert Sorted Array to Binary Search Tree" [ref=e177] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree
+              - listitem [ref=e178]:
+                - link "Construct Binary Search Tree from Preorder Traversal" [ref=e179] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal
+            - paragraph [ref=e180]:
+              - strong [ref=e181]: "View problems:"
+              - text: Try thinking for left, bottom and top too!
+              - link "Binary Tree Right Side View" [ref=e182] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/binary-tree-right-side-view
+            - paragraph [ref=e183]:
+              - strong [ref=e184]: "Lowest Common Ancestor problems:"
+              - text: "You are given two nodes and you have to return their ancestor at as least depth possible, these are problems are a must todo:"
+            - list [ref=e185]:
+              - listitem [ref=e186]:
+                - link "Lowest Common Ancestor of a Binary Tree" [ref=e187] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree
+              - listitem [ref=e188]:
+                - link "Lowest Common Ancestor of a Binary Search Tree" [ref=e189] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree
+              - listitem [ref=e190]:
+                - link "Lowest Common Ancestor of Deepest Leaves" [ref=e191] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves
+            - paragraph [ref=e192]:
+              - strong [ref=e193]: "Validate trees:"
+            - list [ref=e194]:
+              - listitem [ref=e195]:
+                - link "Validate Binary Tree Nodes" [ref=e196] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/validate-binary-tree-nodes/
+              - listitem [ref=e197]:
+                - link "Validate Binary Search Tree" [ref=e198] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/validate-binary-search-tree/
+            - paragraph [ref=e199]:
+              - text: Some
+              - strong [ref=e200]: miscellaneous
+              - text: "problems that you should definitely look through:"
+            - list [ref=e201]:
+              - listitem [ref=e202]:
+                - link "Flatten Binary Tree to Linked List" [ref=e203] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/flatten-binary-tree-to-linked-list
+              - listitem [ref=e204]:
+                - link "Count Complete Tree Nodes" [ref=e205] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/count-complete-tree-nodes/
+              - listitem [ref=e206]:
+                - link "Maximum Width of Binary Tree" [ref=e207] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/maximum-width-of-binary-tree
+              - listitem [ref=e208]:
+                - link "Check Completeness of a Binary Tree" [ref=e209] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/check-completeness-of-a-binary-tree
+              - listitem [ref=e210]:
+                - link "Cousins in Binary Tree" [ref=e211] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/cousins-in-binary-tree
+              - listitem [ref=e212]:
+                - link "Maximum Difference Between Node and Ancestor" [ref=e213] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/maximum-difference-between-node-and-ancestor
+              - listitem [ref=e214]:
+                - link "Number of Good Leaf Nodes Pairs" [ref=e215] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/number-of-good-leaf-nodes-pairs
+              - listitem [ref=e216]:
+                - link "Smallest Subtree with all the Deepest Nodes" [ref=e217] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/
+              - listitem [ref=e218]:
+                - link "All Nodes Distance K in Binary Tree" [ref=e219] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/
+              - listitem [ref=e220]:
+                - link "Find a Corresponding Node of a Binary Tree in a Clone of That Tree" [ref=e221] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/
+              - listitem [ref=e222]:
+                - link "Vertical Order Traversal of a Binary Tree" [ref=e223] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/
+            - paragraph [ref=e224]: I will be updating this list on finding more important questions or any pattern that I find.
+          - generic [ref=e227]:
+            - generic [ref=e228]:
+              - button "926" [ref=e229] [cursor=pointer]:
+                - img [ref=e231]
+                - generic [ref=e233]: "926"
+              - button [ref=e235] [cursor=pointer]:
+                - img [ref=e237]
+            - button "46" [ref=e239] [cursor=pointer]:
+              - img [ref=e241]
+              - generic [ref=e243]: "46"
+            - button [ref=e245] [cursor=pointer]:
+              - button [ref=e246]:
+                - img [ref=e248]
+          - generic [ref=e250]:
+            - generic [ref=e251]:
+              - img [ref=e253]
+              - generic [ref=e255]: Comments (46)
+              - button "Sort by:Best" [ref=e259] [cursor=pointer]:
+                - generic [ref=e260]:
+                  - generic [ref=e261]: "Sort by:"
+                  - text: Best
+                - generic:
+                  - img
+            - generic [ref=e265]:
+              - textbox "Type comment here..." [ref=e266]
+              - generic [ref=e267]:
+                - generic [ref=e269]:
+                  - img [ref=e271] [cursor=pointer]
+                  - img [ref=e274] [cursor=pointer]
+                  - img [ref=e277] [cursor=pointer]
+                  - img [ref=e280] [cursor=pointer]
+                - button "Comment" [disabled] [ref=e283] [cursor=pointer]
+            - navigation [ref=e397]:
+              - button "prev" [disabled]:
+                - img
+              - button "1" [disabled]
+              - button "2" [disabled]
+              - button "3" [disabled]
+              - button "4" [disabled]
+              - button "5" [disabled]
+              - button "next" [disabled]:
+                - img
+        - generic [ref=e398]:
+          - generic [ref=e400]:
+            - img [ref=e402]
+            - generic [ref=e404]: Explore
+          - generic [ref=e439]:
+            - generic [ref=e440]:
+              - link "Download App" [ref=e441] [cursor=pointer]:
+                - /url: https://leetcode.com/app/?utm_campaign=AppPromotion&utm_medium=site&utm_source=site_footer&gio_link_id=nPN4bXe9
+                - img [ref=e443]
+                - text: Download App
+              - link "Support" [ref=e446] [cursor=pointer]:
+                - /url: https://support.leetcode.com/hc/en-us
+              - link "Terms" [ref=e448] [cursor=pointer]:
+                - /url: /terms
+              - link "Privacy Policy" [ref=e450] [cursor=pointer]:
+                - /url: /privacy
+              - generic [ref=e452] [cursor=pointer]: More
+            - link "Copyright © 2026 LeetCode" [ref=e453] [cursor=pointer]:
+              - /url: /
+            - link "United States" [ref=e455] [cursor=pointer]:
+              - /url: /region
+        - generic [ref=e456]:
+          - button:
+            - generic:
+              - img
+    - region "Notifications (F8)":
+      - list
+  - alert [ref=e457]

@@ -1,0 +1,706 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - navigation [ref=e6]:
+        - generic [ref=e7]:
+          - link "LeetCode" [ref=e8] [cursor=pointer]:
+            - /url: /
+            - img [ref=e10]
+          - list [ref=e18]:
+            - listitem [ref=e19]:
+              - link "Problems" [ref=e20] [cursor=pointer]:
+                - /url: /problemset
+            - listitem [ref=e21]:
+              - link "Contest" [ref=e22] [cursor=pointer]:
+                - /url: /contest
+            - listitem [ref=e23]:
+              - link "Discuss" [ref=e24] [cursor=pointer]:
+                - /url: /discuss/
+            - listitem [ref=e25]:
+              - generic [ref=e27] [cursor=pointer]:
+                - button "More" [ref=e28]:
+                  - text: More
+                  - img [ref=e29]
+                - list:
+                  - listitem:
+                    - link:
+                      - /url: https://interview.leetcode.com/interview/
+                      - img
+                      - generic: Online Interview
+                  - listitem:
+                    - link:
+                      - /url: /assessment/
+                      - img
+                      - generic: Assessment
+                  - listitem:
+                    - link:
+                      - /url: /store
+                      - generic: Redeem
+                  - listitem:
+                    - link:
+                      - /url: /subscribe/?ref=sto_npl&source=ot
+                      - generic: Premium
+      - generic [ref=e32]:
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - link [ref=e36] [cursor=pointer]:
+              - /url: /discuss/
+              - button [ref=e37]:
+                - img [ref=e39]
+            - button [ref=e41] [cursor=pointer]:
+              - img [ref=e43]
+          - generic [ref=e46]:
+            - generic [ref=e47]: Graph algorithms + problems to practice
+            - generic [ref=e48]:
+              - link [ref=e50] [cursor=pointer]:
+                - /url: /u/a1exrebys/
+              - generic [ref=e51]:
+                - link "Aleksei" [ref=e54] [cursor=pointer]:
+                  - /url: /u/a1exrebys/
+                - generic [ref=e55]:
+                  - generic [ref=e56]:
+                    - img [ref=e57]
+                    - generic [ref=e59]: "160287"
+                  - generic [ref=e60]:
+                    - img [ref=e61]
+                    - generic [ref=e63]: Jul 09, 2021
+                  - generic [ref=e64]:
+                    - img [ref=e66]
+                    - generic [ref=e68]: Nov 04, 2024
+            - generic [ref=e69]:
+              - link "Union-Find" [ref=e70] [cursor=pointer]:
+                - /url: /discuss/topic/union-find/
+              - link "Graph Theory" [ref=e71] [cursor=pointer]:
+                - /url: /discuss/topic/graph/
+              - link "Topological Sort" [ref=e72] [cursor=pointer]:
+                - /url: /discuss/topic/topological-sort/
+              - link "C" [ref=e73] [cursor=pointer]:
+                - /url: /discuss/topic/c/
+              - link "Career" [ref=e74] [cursor=pointer]:
+                - /url: /discuss/topic/career/
+              - link "Depth-First Search" [ref=e75] [cursor=pointer]:
+                - /url: /discuss/topic/depth-first-search/
+              - link "Breadth-First Search" [ref=e76] [cursor=pointer]:
+                - /url: /discuss/topic/breadth-first-search/
+          - generic [ref=e80]:
+            - paragraph [ref=e81]:
+              - text: Hi folks! I created a small list of graph problems that can be useful to memorize/practice to solve more graph problems (from my point of view).
+              - text: We should not memorize the algorithm itself, but rather the idea and some implementation notes. So under each algorithm I put notes which can help to remember the algorithm.
+            - paragraph [ref=e82]: "P.S.: Please put comments how do you remember algorithms or ideas, and I will update the this post with interesting notes."
+            - paragraph [ref=e83]:
+              - strong [ref=e84]: Update
+              - text: ": updated with Eulearian Path, visualization of BFS, UnionFind, Dijkstra, Topological Sort and Bellman Ford."
+            - paragraph [ref=e85]:
+              - strong [ref=e86]: Update
+              - text: ": If you want to see more about interview experiences and algorithm problems, have a look at my YouTube channel:"
+              - link "https://youtube.com/@aleksei-iv?si=tRqIOtVfymNVHvX3" [ref=e87] [cursor=pointer]:
+                - /url: https://youtube.com/@aleksei-iv?si=tRqIOtVfymNVHvX3
+            - heading "Graph problems" [level=1] [ref=e88]
+            - paragraph [ref=e89]:
+              - strong [ref=e90]: "Description:"
+              - text: In computer science, graphs are used to represent networks of communication, data organization, computational devices, the flow of computation, etc. For instance, the link structure of a website can be represented by a directed graph, in which the vertices represent web pages and directed edges represent links from one page to another.
+            - heading "Common algorithms" [level=1] [ref=e91]
+            - paragraph [ref=e92]:
+              - strong [ref=e93]: "BFS:"
+              - text: Breadth-first search (BFS) is an algorithm for searching a tree data structure for a node that satisfies a given property. It starts at the tree root and explores all nodes at the present depth prior to moving on to the nodes at the next depth level. Extra memory, usually a queue, is needed to keep track of the child nodes that were encountered but not yet explored.
+              - text: "Part of a solution for the problem \"Evaluate Division\":"
+              - link "https://leetcode.com/problems/evaluate-division/" [ref=e94] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/evaluate-division/
+            - code [ref=e98]:
+              - generic [ref=e99]: "double bfs(unordered_map<string, vector<ip>>& adj, vector<string>& query) {"
+              - generic [ref=e100]: unordered_set<string> visited;
+              - generic [ref=e101]: string start = query[0];
+              - generic [ref=e102]: string end = query[1];
+              - generic [ref=e103]: queue<ip> q;
+              - generic [ref=e104]: "q.push({start, 1.0});"
+              - generic [ref=e105]: visited.insert(start);
+              - generic [ref=e106]: "while (!q.empty()) {"
+              - generic [ref=e107]: int sz = q.size();
+              - generic [ref=e108]: "for (int i = 0; i < sz; i++) {"
+              - generic [ref=e109]: auto [node, cost] = q.front(); q.pop();
+              - generic [ref=e110]: if (!adj.count(node)) continue;
+              - generic [ref=e111]: if (node == end) return cost;
+              - generic [ref=e112]: "for (auto& a : adj[node]) {"
+              - generic [ref=e113]: "if (!visited.count(a.first)) {"
+              - generic [ref=e114]: "q.push({a.first, cost * a.second});"
+              - generic [ref=e115]: visited.insert(node);
+              - generic [ref=e116]: "}"
+              - generic [ref=e117]: "}"
+              - generic [ref=e118]: "}"
+              - generic [ref=e119]: "}"
+              - generic [ref=e120]: return -1.0;
+              - generic [ref=e121]: "}"
+            - paragraph [ref=e122]:
+              - img "image" [ref=e123]
+              - text: Visualization of BFS with first 3 layers. A - root node/first lavel, C/M/B/O - second layer, D/N/L/J - third layer.
+              - strong [ref=e124]: Notes
+              - text: ":"
+            - list [ref=e125]:
+              - listitem [ref=e126]: Algorithm uses queue for implementation.
+              - listitem [ref=e127]: It checks whether a vertex has been explored before enqueueing the vertex.
+              - listitem [ref=e128]: We can track if the node was already explored by modifying the original matrix.
+              - listitem [ref=e129]:
+                - text: BFS algorithm can be instructed with additional array dist which can help to
+                - text: track the parent node of the next node. This will help to reconstruct the path
+                - text: by looping backward from end node.
+            - paragraph [ref=e130]:
+              - strong [ref=e131]: "DFS:"
+              - text: Is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node (selecting some arbitrary node as the root node in the case of a graph) and explores as far as possible along each branch before backtracking.
+            - code [ref=e135]:
+              - generic [ref=e136]: "void dfs(unordered_map<int, vector<int>>& graph, int node, unordered_set<int>& visited) {"
+              - generic [ref=e137]: visited.insert(node);
+              - generic [ref=e138]: "for (auto& n : graph[node]) {"
+              - generic [ref=e139]: "if (!visited.count(n)) {"
+              - generic [ref=e140]: dfs(graph, n, visited);
+              - generic [ref=e141]: "}"
+              - generic [ref=e142]: "}"
+              - generic [ref=e143]: "}"
+              - generic [ref=e144]: // Find connected components.
+              - generic [ref=e145]: int count = 0;
+              - generic [ref=e146]: "for (int i = 0; i < n; i++) {"
+              - generic [ref=e147]: "if (!visited.count(i)) {"
+              - generic [ref=e148]: count++;
+              - generic [ref=e149]: dfs(graph, i, visited);
+              - generic [ref=e150]: "}"
+              - generic [ref=e151]: "}"
+            - paragraph [ref=e152]:
+              - strong [ref=e153]: Notes
+              - text: ":"
+            - list [ref=e154]:
+              - listitem [ref=e155]: Algorithm usually uses recursion implementation.
+              - listitem [ref=e156]: We mark the node as visited and will keep exploring its neighbors if there are not yet explored.
+              - listitem [ref=e157]: DFS can be useful to find connected components. We can iterate through the nodes and call dfs() to find all nodes which belongs to component.
+              - listitem [ref=e158]: We can use unordered_map<int, vector> to represent the graph.
+            - paragraph [ref=e159]:
+              - strong [ref=e160]: "Dijkstra's algorithm:"
+              - text: Is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks.
+            - code [ref=e164]:
+              - generic [ref=e165]: "class Solution {"
+              - generic [ref=e166]: "public:"
+              - generic [ref=e167]: "int networkDelayTime(vector<vector<int>>& times, int n, int k) {"
+              - generic [ref=e168]: using ip = pair<int, int>;
+              - generic [ref=e169]: vector<vector<ip>> adj(n + 1);
+              - generic [ref=e170]: "for (auto& t : times) adj[t[0]].push_back({t[1], t[2]});"
+              - generic [ref=e171]: priority_queue<ip, vector<ip>, greater<ip>> pq;
+              - generic [ref=e172]: vector<int> dist(n + 1, INT_MAX);
+              - generic [ref=e173]: vector<bool> visited(n + 1, false);
+              - generic [ref=e174]: "pq.push({0, k});"
+              - generic [ref=e175]: dist[k] = 0;
+              - generic [ref=e176]: "while (!pq.empty()) {"
+              - generic [ref=e177]: auto [n_cost, node] = pq.top(); pq.pop();
+              - generic [ref=e178]: visited[node] = true;
+              - generic [ref=e179]: "if (dist[node] < n_cost) continue; // Optimization: skip node if we already find better option."
+              - generic [ref=e180]: "for (auto& [next, cost] : adj[node]) {"
+              - generic [ref=e181]: "if (visited[next] == true) continue; // Optimization: do not re-visit nodes."
+              - generic [ref=e182]: "if (dist[next] > dist[node] + cost) {"
+              - generic [ref=e183]: dist[next] = dist[node] + cost;
+              - generic [ref=e184]: "pq.push({dist[next], next});"
+              - generic [ref=e185]: "}"
+              - generic [ref=e186]: "}"
+              - generic [ref=e187]: "}"
+              - generic [ref=e188]: int res = 0;
+              - generic [ref=e189]: "for_each(dist.begin() + 1, dist.end(), [&](int d) {"
+              - generic [ref=e190]: res = max(res, d);
+              - generic [ref=e191]: "});"
+              - generic [ref=e192]: "return res == INT_MAX ? -1 : res;"
+              - generic [ref=e193]: "}"
+              - generic [ref=e194]: "};"
+            - paragraph [ref=e195]:
+              - img "image" [ref=e196]
+              - text: Visualization of traversing graph using Dijkstra algorithm and distance array. The priority queue itself is not shown there, as well as redundant nodes that we might have in priority queue. Green node - explored/current node, Yellow - node in the priority queue.
+              - strong [ref=e197]: Notes
+              - text: ":"
+            - list [ref=e198]:
+              - listitem [ref=e199]: We will have a set to track visited nodes.
+              - listitem [ref=e200]: "We will create a distance array to track the distance to each node. Initial node will have 0, others maximum. There is a room for optimization: if the node we got from the pq has larger cost than in our dist[] array, we should not explore it as we already got a better option."
+              - listitem [ref=e201]: We will use min priority_queue to get the node with the minimum distance from the current node.
+              - listitem [ref=e202]: "If we are only interested in shortes distance till some END node, we can terminate the search earlier: if (node == dst) return cost;"
+              - listitem [ref=e203]: "If we already find a better path we shouldn't explore it further: if (dist[node] < stops) continue;"
+            - paragraph [ref=e204]:
+              - strong [ref=e205]: "Union-Find:"
+              - text: Union–find data structure or disjoint-set data structure or merge–find set, is a data structure that stores a collection of disjoint (non-overlapping) sets. Equivalently, it stores a partition of a set into disjoint subsets. It provides operations for adding new sets, merging sets (replacing them by their union), and finding a representative member of a set. Helps to find the number of connected components, and can help to find MST.
+            - code [ref=e209]:
+              - generic [ref=e210]: "class UnionFind {"
+              - generic [ref=e211]: "public:"
+              - generic [ref=e212]: "UnionFind(int n) : parent(n) {"
+              - generic [ref=e213]: iota(parent.begin(), parent.end(), 0);
+              - generic [ref=e214]: "}"
+              - generic [ref=e215]: "int Find(int x) {"
+              - generic [ref=e216]: int temp = x;
+              - generic [ref=e217]: "while (temp != parent[temp]) {"
+              - generic [ref=e218]: temp = parent[temp];
+              - generic [ref=e219]: "}"
+              - generic [ref=e220]: // Path compression below
+              - generic [ref=e221]: "while (x != temp) {"
+              - generic [ref=e222]: int next = parent[x];
+              - generic [ref=e223]: parent[x] = temp;
+              - generic [ref=e224]: x = next;
+              - generic [ref=e225]: "}"
+              - generic [ref=e226]: return x;
+              - generic [ref=e227]: "}"
+              - generic [ref=e228]: "void Union(int x, int y) {"
+              - generic [ref=e229]: int xx = Find(x);
+              - generic [ref=e230]: int yy = Find(y);
+              - generic [ref=e231]: "if (xx != yy) {"
+              - generic [ref=e232]: parent[xx] = yy;
+              - generic [ref=e233]: "}"
+              - generic [ref=e234]: "}"
+              - generic [ref=e235]: "private:"
+              - generic [ref=e236]: vector<int> parent;
+              - generic [ref=e237]: "};"
+            - paragraph [ref=e238]:
+              - img "image" [ref=e239]
+              - text: The above picture demonstrates the state of the parent array after multiple Union() calls, follows multiple Find() calls.
+              - strong [ref=e240]: Notes
+              - text: ":"
+              - text: 1. We can use vector to hold the set of nodes or unordered_map<int, int> if we don't know the amount of nodes.
+              - text: 2. If the parent[id] == id, we know that id is the root node.
+              - text: 3. The data structure using two methods Union() - union to nodes/components, and Find() - find the root node.
+              - text: 4. We can do path compression, so after some number of Find() calls it will be O(1) to call Find() again.
+            - paragraph [ref=e241]:
+              - strong [ref=e242]: "Minimum Spanning Tree:"
+              - text: A minimum spanning tree (MST) is a subset of the edges of a connected, edge-weighted undirected graph that connects all the vertices together, without any cycles and with the minimum possible total edge weight.
+              - text: "Solution for Connecting Cities With Minimum Cost:"
+              - link "https://leetcode.com/problems/connecting-cities-with-minimum-cost/" [ref=e243] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/connecting-cities-with-minimum-cost/
+              - text: .
+            - code [ref=e247]:
+              - generic [ref=e248]: "class UnionFind {"
+              - generic [ref=e249]: "public:"
+              - generic [ref=e250]: "UnionFind(int n) : parent(n) {"
+              - generic [ref=e251]: iota(parent.begin(), parent.end(), 0);
+              - generic [ref=e252]: "}"
+              - generic [ref=e253]: "int Find(int x) {"
+              - generic [ref=e254]: int temp = x;
+              - generic [ref=e255]: "while (temp != parent[temp]) {"
+              - generic [ref=e256]: temp = parent[temp];
+              - generic [ref=e257]: "}"
+              - generic [ref=e258]: "while (x != temp) {"
+              - generic [ref=e259]: int next = parent[x];
+              - generic [ref=e260]: parent[x] = temp;
+              - generic [ref=e261]: x = next;
+              - generic [ref=e262]: "}"
+              - generic [ref=e263]: return temp;
+              - generic [ref=e264]: "}"
+              - generic [ref=e265]: "bool Union(int x, int y) {"
+              - generic [ref=e266]: int xx = Find(x);
+              - generic [ref=e267]: int yy = Find(y);
+              - generic [ref=e268]: if (xx == yy) return false;
+              - generic [ref=e269]: parent[xx] = yy;
+              - generic [ref=e270]: return true;
+              - generic [ref=e271]: "}"
+              - generic [ref=e272]: "private:"
+              - generic [ref=e273]: vector<int> parent;
+              - generic [ref=e274]: "};"
+              - generic [ref=e275]: "int minimumCost(int n, vector<vector<int>>& connections) {"
+              - generic [ref=e276]: "sort(connections.begin(), connections.end(), [](const auto& lhs, const auto& rhs){"
+              - generic [ref=e277]: return lhs[2] < rhs[2];
+              - generic [ref=e278]: "});"
+              - generic [ref=e279]: UnionFind uf(n + 1);
+              - generic [ref=e280]: int sum = 0, count = 0;
+              - generic [ref=e281]: "for (auto& c : connections) {"
+              - generic [ref=e282]: "if (uf.Union(c[0], c[1])) {"
+              - generic [ref=e283]: count++;
+              - generic [ref=e284]: sum += c[2];
+              - generic [ref=e285]: "}"
+              - generic [ref=e286]: if (count == n - 1) return sum; // Return earlier once graph is connected.
+              - generic [ref=e287]: "}"
+              - generic [ref=e288]: return -1;
+              - generic [ref=e289]: "}"
+            - paragraph [ref=e290]:
+              - img "image" [ref=e291]
+              - text: "Visualization of Kruskal's algorithm: we will try to union nodes if they are not connected."
+              - strong [ref=e292]: Notes
+              - text: ":"
+              - text: 1. One of the implementation of MST algorithm use Union Find algorithm (Kruskal's Algorithm).
+              - text: 2. We need to sort elements by the weight before appying the algorithm, or we can use min priority_queue.
+            - paragraph [ref=e293]:
+              - strong [ref=e294]: Topological sort
+              - text: Is a linear ordering of its vertices such that for every directed edge uv from vertex u to vertex v, u comes before v in the ordering.
+            - code [ref=e298]:
+              - generic [ref=e299]: // Kahn's Algorithm
+              - generic [ref=e300]: vector<vector<int>> adj(numCourses);
+              - generic [ref=e301]: vector<int> indegree(numCourses, 0);
+              - generic [ref=e302]: "for (auto& p : prerequisites) {"
+              - generic [ref=e303]: indegree[p[1]]++;
+              - generic [ref=e304]: adj[p[0]].push_back(p[1]);
+              - generic [ref=e305]: "}"
+              - generic [ref=e306]: queue<int> q;
+              - generic [ref=e307]: "for (int i = 0; i < numCourses; i++) {"
+              - generic [ref=e308]: if (indegree[i] == 0) q.push(i);
+              - generic [ref=e309]: "}"
+              - generic [ref=e310]: int prereq = 0;
+              - generic [ref=e311]: "while (!q.empty()) {"
+              - generic [ref=e312]: int el = q.front();
+              - generic [ref=e313]: q.pop();
+              - generic [ref=e314]: prereq++;
+              - generic [ref=e315]: "for (auto& next : adj[el]) {"
+              - generic [ref=e316]: "if (--indegree[next] == 0) {"
+              - generic [ref=e317]: q.push(next);
+              - generic [ref=e318]: "}"
+              - generic [ref=e319]: "}"
+              - generic [ref=e320]: "}"
+              - generic [ref=e321]: return prereq == numCourses;
+            - paragraph [ref=e322]:
+              - img "image" [ref=e323]
+              - text: The above picture demonstrates linear order of the given graph. The vertices can be tasks, and edges can represent some contraints, such as U should be finished before V in (U -> V).
+              - strong [ref=e324]: Notes
+              - text: ":"
+              - text: 1. We will have the indegree array to count, which nods should be visited first.
+              - text: 2. We will have a queue to push the nodes that don't have any dependencies.
+            - heading "Bellman Ford" [level=2] [ref=e325]
+            - paragraph [ref=e326]: Is an algorithm that computes shortest paths from a single source vertex to all of the other vertices in a weighted digraph.
+            - code [ref=e330]:
+              - generic [ref=e331]: "class Solution {"
+              - generic [ref=e332]: "public:"
+              - generic [ref=e333]: "int networkDelayTime(vector<vector<int>>& times, int n, int k) {"
+              - generic [ref=e334]: vector<int> dist(n + 1, INT_MAX);
+              - generic [ref=e335]: dist[k] = 0;
+              - generic [ref=e336]: "for (int i = 1; i <= n; i++) {"
+              - generic [ref=e337]: "for (auto& t : times) {"
+              - generic [ref=e338]: "if (dist[t[0]] != INT_MAX && dist[t[1]] > dist[t[0]] + t[2]) {"
+              - generic [ref=e339]: dist[t[1]] = dist[t[0]] + t[2];
+              - generic [ref=e340]: "}"
+              - generic [ref=e341]: "}"
+              - generic [ref=e342]: "}"
+              - generic [ref=e343]: int res = 0;
+              - generic [ref=e344]: "for (int i = 1; i <= n; i++) {"
+              - generic [ref=e345]: res = max(res, dist[i]);
+              - generic [ref=e346]: "}"
+              - generic [ref=e347]: "return res == INT_MAX ? -1 : res;"
+              - generic [ref=e348]: "}"
+              - generic [ref=e349]: "};"
+            - paragraph [ref=e350]:
+              - img "image" [ref=e351]
+              - text: The above picture demonstrates how the dist array incrementally updated with better values. If not a single value is updated during iteration - we can stop earlier.
+              - strong [ref=e352]: Notes
+              - text: ":"
+              - text: 1. We will use the array to hold the distance between particular start node and all others.
+              - text: 2. We will try to improve distance n times between all nodes in the graph.
+            - heading "Floyd Warshall" [level=2] [ref=e353]
+            - paragraph [ref=e354]: Is an algorithm for finding shortest paths in a directed weighted graph with positive or negative edge weights.
+            - code [ref=e358]:
+              - generic [ref=e359]: "class Solution {"
+              - generic [ref=e360]: "public:"
+              - generic [ref=e361]: "int networkDelayTime(vector<vector<int>>& times, int n, int k) {"
+              - generic [ref=e362]: vector<vector<long>> dist(n, vector<long>(n, INT_MAX));
+              - generic [ref=e363]: "for (auto& t : times)"
+              - generic [ref=e364]: dist[t[0] - 1][t[1] - 1] = t[2];
+              - generic [ref=e365]: for (int i = 0; i < n; i++)
+              - generic [ref=e366]: dist[i][i] = 0;
+              - generic [ref=e367]: "for (int k = 0; k < n; k++) {"
+              - generic [ref=e368]: "for (int i = 0; i < n; i++) {"
+              - generic [ref=e369]: "for (int j = 0; j < n; j++) {"
+              - generic [ref=e370]: dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]);
+              - generic [ref=e371]: "}"
+              - generic [ref=e372]: "}"
+              - generic [ref=e373]: "}"
+              - generic [ref=e374]: long res = INT_MIN;
+              - generic [ref=e375]: "for (int i = 0; i < n; i++) {"
+              - generic [ref=e376]: if (dist[k - 1][i] == INT_MAX) return -1;
+              - generic [ref=e377]: res = max(res, dist[k - 1][i]);
+              - generic [ref=e378]: "}"
+              - generic [ref=e379]: return (int)res;
+              - generic [ref=e380]: "}"
+              - generic [ref=e381]: "};"
+            - paragraph [ref=e382]:
+              - text: Vizualization for Floyd Warshall is slightly different from Bellman Ford, but the idea stays the same.
+              - strong [ref=e383]: Notes
+              - text: ":"
+              - text: 1. We will use vector<vector> to keep track of distance between nodes i and j.
+              - text: 2. We will have a 3 loops, checks if we can improve the distance between i and j by using k node.
+            - heading "Eulearian Path" [level=2] [ref=e384]
+            - paragraph [ref=e385]:
+              - text: Is an algorithm that finds a path that uses every
+              - emphasis [ref=e386]:
+                - strong [ref=e387]: edge
+              - text: in a graph only once.
+              - text: The algorithm below is a solution for the "
+              - strong [ref=e388]: Reconstruct Itinerary
+              - text: "\":"
+              - link "https://leetcode.com/problems/reconstruct-itinerary/" [ref=e389] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/reconstruct-itinerary/
+            - code [ref=e393]:
+              - generic [ref=e394]: "class Solution {"
+              - generic [ref=e395]: "public:"
+              - generic [ref=e396]: void dfs(unordered_map<string, multiset<string>>& graph,
+              - generic [ref=e397]: "vector<string>& res, string start) {"
+              - generic [ref=e398]: "while (graph[start].size() > 0) {"
+              - generic [ref=e399]: auto next = *graph[start].begin();
+              - generic [ref=e400]: graph[start].erase(graph[start].begin());
+              - generic [ref=e401]: dfs(graph, res, next);
+              - generic [ref=e402]: "}"
+              - generic [ref=e403]: res.push_back(start);
+              - generic [ref=e404]: "}"
+              - generic [ref=e405]: "vector<string> findItinerary(vector<vector<string>>& tickets) {"
+              - generic [ref=e406]: unordered_map<string, multiset<string>> graph;
+              - generic [ref=e407]: "for (const auto& t : tickets) graph[t[0]].insert(t[1]);"
+              - generic [ref=e408]: vector<string> res;
+              - generic [ref=e409]: dfs(graph, res, "JFK");
+              - generic [ref=e410]: reverse(res.begin(), res.end());
+              - generic [ref=e411]: return res;
+              - generic [ref=e412]: "}"
+              - generic [ref=e413]: "};"
+            - paragraph [ref=e414]:
+              - img "image" [ref=e415]
+              - text: The above picture is the visualization of eulerian path algorithm. You can observe how the result is constructed on the backtracking.
+              - strong [ref=e416]: Notes
+              - text: ":"
+              - text: "1. The algorithm almost identical to the dfs traversal with one main instrumentation: we are building the path on the backtrack of the dfs algorithm:"
+              - code [ref=e417]: res.push_back(start);
+              - text: "2. That is why we should reverse the list at the end of the traversal:"
+              - code [ref=e418]: reverse(res.begin(), res.end());
+              - text: "3. In the above implementation we are using multiset (because of the problem), but the general implementation may use vector<> and additional vector<> to track the outgoing degrees, and use it for two main purposes: as index in the adj list, and to track how many node we not visited yet."
+            - heading "BFS problems" [level=2] [ref=e419]
+            - list [ref=e420]:
+              - listitem [ref=e421]:
+                - text: "Flood Fill:"
+                - link "https://leetcode.com/problems/flood-fill/" [ref=e422] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/flood-fill/
+              - listitem [ref=e423]:
+                - text: "Number of Islands:"
+                - link "https://leetcode.com/problems/number-of-islands/" [ref=e424] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/number-of-islands/
+              - listitem [ref=e425]:
+                - text: "Word Ladder I:"
+                - link "https://leetcode.com/problems/word-ladder/" [ref=e426] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/word-ladder/
+              - listitem [ref=e427]:
+                - text: "Word Ladder II:"
+                - link "https://leetcode.com/problems/word-ladder-ii/" [ref=e428] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/word-ladder-ii/
+              - listitem [ref=e429]:
+                - text: "Evaluate Division:"
+                - link "https://leetcode.com/problems/evaluate-division/" [ref=e430] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/evaluate-division/
+              - listitem [ref=e431]:
+                - text: "Get Watched Videos by Your Friends:"
+                - link "https://leetcode.com/problems/get-watched-videos-by-your-friends/" [ref=e432] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/get-watched-videos-by-your-friends/
+              - listitem [ref=e433]:
+                - text: "Cut Off Trees for Golf Event:"
+                - link "https://leetcode.com/problems/cut-off-trees-for-golf-event/" [ref=e434] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/cut-off-trees-for-golf-event/
+            - heading "DFS problems" [level=2] [ref=e435]
+            - list [ref=e436]:
+              - listitem [ref=e437]:
+                - paragraph [ref=e438]:
+                  - text: "Number of Islands:"
+                  - link "https://leetcode.com/problems/number-of-islands/" [ref=e439] [cursor=pointer]:
+                    - /url: https://leetcode.com/problems/number-of-islands/
+              - listitem [ref=e440]:
+                - paragraph [ref=e441]:
+                  - text: "Flood Fill:"
+                  - link "https://leetcode.com/problems/flood-fill/" [ref=e442] [cursor=pointer]:
+                    - /url: https://leetcode.com/problems/flood-fill/
+              - listitem [ref=e443]:
+                - paragraph [ref=e444]:
+                  - text: "Longest Increasing Path in a Matrix:"
+                  - link "https://leetcode.com/problems/longest-increasing-path-in-a-matrix/" [ref=e445] [cursor=pointer]:
+                    - /url: https://leetcode.com/problems/longest-increasing-path-in-a-matrix/
+              - listitem [ref=e446]:
+                - paragraph [ref=e447]:
+                  - text: "Evaluate Division:"
+                  - link "https://leetcode.com/problems/evaluate-division/" [ref=e448] [cursor=pointer]:
+                    - /url: https://leetcode.com/problems/evaluate-division/
+              - listitem [ref=e449]:
+                - paragraph [ref=e450]:
+                  - text: "Robot Room Cleaner:"
+                  - link "https://leetcode.com/problems/robot-room-cleaner/" [ref=e451] [cursor=pointer]:
+                    - /url: https://leetcode.com/problems/robot-room-cleaner/
+              - listitem [ref=e452]:
+                - paragraph [ref=e453]:
+                  - text: "Most Stones Removed with Same Row or Column:"
+                  - link "https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/" [ref=e454] [cursor=pointer]:
+                    - /url: https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/
+              - listitem [ref=e455]:
+                - paragraph [ref=e456]:
+                  - text: "Reconstruct Itinerary:"
+                  - link "https://leetcode.com/problems/reconstruct-itinerary/" [ref=e457] [cursor=pointer]:
+                    - /url: https://leetcode.com/problems/reconstruct-itinerary/
+              - listitem [ref=e458]:
+                - paragraph [ref=e459]:
+                  - text: "Tree Diameter:"
+                  - link "https://leetcode.com/problems/tree-diameter/" [ref=e460] [cursor=pointer]:
+                    - /url: https://leetcode.com/problems/tree-diameter/
+              - listitem [ref=e461]:
+                - paragraph [ref=e462]:
+                  - text: "Accounts Merge:"
+                  - link "https://leetcode.com/problems/accounts-merge/" [ref=e463] [cursor=pointer]:
+                    - /url: https://leetcode.com/problems/accounts-merge/
+            - heading "Connected components problems" [level=2] [ref=e464]
+            - list [ref=e465]:
+              - listitem [ref=e466]:
+                - text: "Number of Provinces:"
+                - link "https://leetcode.com/problems/number-of-provinces/" [ref=e467] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/number-of-provinces/
+              - listitem [ref=e468]:
+                - text: "Number of Connected Components in an Undirected Graph:"
+                - link "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/" [ref=e469] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/
+              - listitem [ref=e470]:
+                - text: "Number of Operations to Make Network Connected:"
+                - link "https://leetcode.com/problems/number-of-operations-to-make-network-connected/" [ref=e471] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/number-of-operations-to-make-network-connected/
+              - listitem [ref=e472]:
+                - text: "Accounts Merge:"
+                - link "https://leetcode.com/problems/accounts-merge/" [ref=e473] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/accounts-merge/
+              - listitem [ref=e474]:
+                - text: "Critical Connections in a Network:"
+                - link "https://leetcode.com/problems/critical-connections-in-a-network/" [ref=e475] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/critical-connections-in-a-network/
+            - heading "Dijkstra's problems" [level=2] [ref=e476]
+            - list [ref=e477]:
+              - listitem [ref=e478]:
+                - text: "Path With Maximum Minimum Valued:"
+                - link "https://leetcode.com/problems/path-with-maximum-minimum-value/" [ref=e479] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/path-with-maximum-minimum-value/
+              - listitem [ref=e480]:
+                - text: "Network delay time:"
+                - link "https://leetcode.com/problems/network-delay-time/" [ref=e481] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/network-delay-time/
+              - listitem [ref=e482]:
+                - text: "Path with Maximum Probability:"
+                - link "https://leetcode.com/problems/path-with-maximum-probability/" [ref=e483] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/path-with-maximum-probability/
+              - listitem [ref=e484]:
+                - text: "Path With Minimum Effort:"
+                - link "https://leetcode.com/problems/path-with-minimum-effort/" [ref=e485] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/path-with-minimum-effort/
+              - listitem [ref=e486]:
+                - text: "Cheapest Flights Within K Stops:"
+                - link "https://leetcode.com/problems/cheapest-flights-within-k-stops/" [ref=e487] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/cheapest-flights-within-k-stops/
+            - heading "Union Find problems" [level=2] [ref=e488]
+            - list [ref=e489]:
+              - listitem [ref=e490]:
+                - text: "Number of Islands:"
+                - link "https://leetcode.com/problems/number-of-islands/" [ref=e491] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/number-of-islands/
+              - listitem [ref=e492]:
+                - text: "Largest Component Size by Common Factor:"
+                - link "https://leetcode.com/problems/largest-component-size-by-common-factor/" [ref=e493] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/largest-component-size-by-common-factor/
+              - listitem [ref=e494]:
+                - text: "Most Stones Removed with Same Row or Column:"
+                - link "https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/" [ref=e495] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/
+              - listitem [ref=e496]:
+                - text: "Number of Connected Components in an Undirected Graph:"
+                - link "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/" [ref=e497] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/
+            - heading "Minimum Spanning Tree problems" [level=2] [ref=e498]
+            - list [ref=e499]:
+              - listitem [ref=e500]:
+                - text: "Connecting Cities With Minimum Cost:"
+                - link "https://leetcode.com/problems/connecting-cities-with-minimum-cost/" [ref=e501] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/connecting-cities-with-minimum-cost/
+              - listitem [ref=e502]:
+                - text: "Min Cost to Connect All Points:"
+                - link "https://leetcode.com/problems/min-cost-to-connect-all-points/" [ref=e503] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/min-cost-to-connect-all-points/
+            - heading "Topological sort problems" [level=2] [ref=e504]
+            - list [ref=e505]:
+              - listitem [ref=e506]:
+                - text: "Course Schedule :"
+                - link "https://leetcode.com/problems/course-schedule/" [ref=e507] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/course-schedule/
+              - listitem [ref=e508]:
+                - text: "Course Schedule II:"
+                - link "https://leetcode.com/problems/course-schedule-ii/" [ref=e509] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/course-schedule-ii/
+              - listitem [ref=e510]:
+                - text: "Sequence Reconstruction:"
+                - link "https://leetcode.com/problems/sequence-reconstruction/" [ref=e511] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/sequence-reconstruction/
+              - listitem [ref=e512]:
+                - text: "Alien Dictionary:"
+                - link "https://leetcode.com/problems/alien-dictionary/solution/" [ref=e513] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/alien-dictionary/solution/
+            - heading "Floyd Warshall problems" [level=2] [ref=e514]
+            - list [ref=e515]:
+              - listitem [ref=e516]:
+                - text: "Find the City With the Smallest Number of Neighbors at a Threshold Distance:"
+                - link "https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/" [ref=e517] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/
+              - listitem [ref=e518]:
+                - text: "Network delay time:"
+                - link "https://leetcode.com/problems/network-delay-time/" [ref=e519] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/network-delay-time/
+            - heading "Bellman Ford problems" [level=2] [ref=e520]
+            - list [ref=e521]:
+              - listitem [ref=e522]:
+                - text: "Network delay time:"
+                - link "https://leetcode.com/problems/network-delay-time/" [ref=e523] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/network-delay-time/
+          - generic [ref=e526]:
+            - generic [ref=e527]:
+              - button "1.3K" [ref=e528] [cursor=pointer]:
+                - img [ref=e530]
+                - generic [ref=e532]: 1.3K
+              - button [ref=e534] [cursor=pointer]:
+                - img [ref=e536]
+            - button "42" [ref=e538] [cursor=pointer]:
+              - img [ref=e540]
+              - generic [ref=e542]: "42"
+            - button [ref=e544] [cursor=pointer]:
+              - button [ref=e545]:
+                - img [ref=e547]
+          - generic [ref=e549]:
+            - generic [ref=e550]:
+              - img [ref=e552]
+              - generic [ref=e554]: Comments (42)
+              - button "Sort by:Best" [ref=e558] [cursor=pointer]:
+                - generic [ref=e559]:
+                  - generic [ref=e560]: "Sort by:"
+                  - text: Best
+                - generic:
+                  - img
+            - generic [ref=e564]:
+              - textbox "Type comment here..." [ref=e565]
+              - generic [ref=e566]:
+                - generic [ref=e568]:
+                  - img [ref=e570] [cursor=pointer]
+                  - img [ref=e573] [cursor=pointer]
+                  - img [ref=e576] [cursor=pointer]
+                  - img [ref=e579] [cursor=pointer]
+                - button "Comment" [disabled] [ref=e582] [cursor=pointer]
+            - navigation [ref=e696]:
+              - button "prev" [disabled]:
+                - img
+              - button "1" [disabled]
+              - button "2" [disabled]
+              - button "3" [disabled]
+              - button "4" [disabled]
+              - button "5" [disabled]
+              - button "next" [disabled]:
+                - img
+        - generic [ref=e697]:
+          - generic [ref=e699]:
+            - img [ref=e701]
+            - generic [ref=e703]: Explore
+          - generic [ref=e738]:
+            - generic [ref=e739]:
+              - link "Download App" [ref=e740] [cursor=pointer]:
+                - /url: https://leetcode.com/app/?utm_campaign=AppPromotion&utm_medium=site&utm_source=site_footer&gio_link_id=nPN4bXe9
+                - img [ref=e742]
+                - text: Download App
+              - link "Support" [ref=e745] [cursor=pointer]:
+                - /url: https://support.leetcode.com/hc/en-us
+              - link "Terms" [ref=e747] [cursor=pointer]:
+                - /url: /terms
+              - link "Privacy Policy" [ref=e749] [cursor=pointer]:
+                - /url: /privacy
+              - generic [ref=e751] [cursor=pointer]: More
+            - link "Copyright © 2026 LeetCode" [ref=e752] [cursor=pointer]:
+              - /url: /
+            - link "United States" [ref=e754] [cursor=pointer]:
+              - /url: /region
+        - generic [ref=e755]:
+          - button:
+            - generic:
+              - img
+    - region "Notifications (F8)":
+      - list
+  - alert [ref=e756]

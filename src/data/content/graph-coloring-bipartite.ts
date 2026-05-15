@@ -156,7 +156,7 @@ export const graphColoringBipartiteArticle: Article = {
     {
       type: 'callout',
       icon: '🎨',
-      color: 'pink',
+      color: 'red',
       content: `**Bipartite ↔ 2-colorable ↔ no odd cycles:** All three are equivalent. BFS/DFS 2-coloring is the canonical check.\n\n**Applications:**\n- Conflict graph partition: "must be in different groups" → edges in conflict graph → bipartite check\n- Maximum bipartite matching: Hopcroft-Karp on bipartite graph\n- Hungarian algorithm: min-cost bipartite matching\n\n**Odd cycle detection:** If BFS finds same-color neighbor, the two paths from start to that neighbor form an odd cycle. The cycle length = dist[u] + dist[v] + 1.`,
     },
   ],

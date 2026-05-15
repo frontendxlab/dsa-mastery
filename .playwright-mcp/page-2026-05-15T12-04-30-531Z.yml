@@ -1,0 +1,567 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - navigation [ref=e6]:
+        - generic [ref=e7]:
+          - link "LeetCode" [ref=e8] [cursor=pointer]:
+            - /url: /
+            - img [ref=e10]
+          - list [ref=e18]:
+            - listitem [ref=e19]:
+              - link "Problems" [ref=e20] [cursor=pointer]:
+                - /url: /problemset
+            - listitem [ref=e21]:
+              - link "Contest" [ref=e22] [cursor=pointer]:
+                - /url: /contest
+            - listitem [ref=e23]:
+              - link "Discuss" [ref=e24] [cursor=pointer]:
+                - /url: /discuss/
+            - listitem [ref=e25]:
+              - generic [ref=e27] [cursor=pointer]:
+                - button "More" [ref=e28]:
+                  - text: More
+                  - img [ref=e29]
+                - list:
+                  - listitem:
+                    - link:
+                      - /url: https://interview.leetcode.com/interview/
+                      - img
+                      - generic: Online Interview
+                  - listitem:
+                    - link:
+                      - /url: /assessment/
+                      - img
+                      - generic: Assessment
+                  - listitem:
+                    - link:
+                      - /url: /store
+                      - generic: Redeem
+                  - listitem:
+                    - link:
+                      - /url: /subscribe/?ref=sto_npl&source=ot
+                      - generic: Premium
+          - generic [ref=e438]:
+            - generic [ref=e440]:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - img
+                    - textbox "Search" [ref=e441]
+              - generic "search" [ref=e442] [cursor=pointer]:
+                - img [ref=e443]
+            - generic [ref=e445]:
+              - link "Register" [ref=e446] [cursor=pointer]:
+                - /url: /accounts/signup/?next=%2Fdiscuss%2Fpost%2F5366542%2Fall-leetcode-articles-on-coding-patterns-1uhy%2F
+              - generic [ref=e447]: or
+              - link "Log in" [ref=e448] [cursor=pointer]:
+                - /url: /accounts/login/?next=%2Fdiscuss%2Fpost%2F5366542%2Fall-leetcode-articles-on-coding-patterns-1uhy%2F
+            - link "Premium" [ref=e450] [cursor=pointer]:
+              - /url: /subscribe/?ref=lp_pl&source=ot
+              - generic [ref=e451]: Premium
+      - generic [ref=e32]:
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - link [ref=e36] [cursor=pointer]:
+              - /url: /discuss/
+              - button [ref=e37]:
+                - img [ref=e39]
+            - button [ref=e41] [cursor=pointer]:
+              - img [ref=e43]
+          - generic [ref=e46]:
+            - generic [ref=e47]: All leetcode articles on coding patterns summarized in one page.
+            - generic [ref=e48]:
+              - link [ref=e50] [cursor=pointer]:
+                - /url: /u/Rahul_Gunkar/
+              - generic [ref=e51]:
+                - link "Rahul Gunkar" [ref=e54] [cursor=pointer]:
+                  - /url: /u/Rahul_Gunkar/
+                - generic [ref=e55]:
+                  - generic [ref=e56]:
+                    - img [ref=e57]
+                    - generic [ref=e59]: "46886"
+                  - generic [ref=e60]:
+                    - img [ref=e61]
+                    - generic [ref=e63]: Jun 25, 2024
+                  - generic [ref=e64]:
+                    - img [ref=e66]
+                    - generic [ref=e68]: Mar 28, 2025
+            - link "Interview" [ref=e70] [cursor=pointer]:
+              - /url: /discuss/topic/interview/
+          - generic [ref=e74]:
+            - paragraph [ref=e75]:
+              - strong [ref=e76]: This post consists links to all the good articles I have found on leetcode. I am not the author of these articles and I am grateful to the people who wrote them.
+            - paragraph [ref=e77]:
+              - strong [ref=e78]: 1)Dynamic Programming
+            - list [ref=e79]:
+              - listitem [ref=e80]:
+                - link "https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns" [ref=e81] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns
+              - listitem [ref=e82]:
+                - link "https://leetcode.com/discuss/interview-question/1986802/Dynamic-Programming" [ref=e83] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/interview-question/1986802/Dynamic-Programming
+              - listitem [ref=e84]:
+                - link "https://leetcode.com/discuss/general-discussion/662866/DP-for-Beginners-Problems-or-Patterns-or-Sample-Solutions" [ref=e85] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/general-discussion/662866/DP-for-Beginners-Problems-or-Patterns-or-Sample-Solutions
+              - listitem [ref=e86]:
+                - link "https://leetcode.com/discuss/general-discussion/1000929/solved-all-dynamic-programming-dp-problems-in-7-months#:~:text=There%20are%20total%20241%20dp,only%20solved%20the%20public%20ones.&text=Then%20I%20started%20to%20solve,my%20monthly%20problem%20list%20here.&text=The%20average%20pace%20was%20about%201%20problem%20per%20day" [ref=e87] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/general-discussion/1000929/solved-all-dynamic-programming-dp-problems-in-7-months#:~:text=There%20are%20total%20241%20dp,only%20solved%20the%20public%20ones.&text=Then%20I%20started%20to%20solve,my%20monthly%20problem%20list%20here.&text=The%20average%20pace%20was%20about%201%20problem%20per%20day
+                - text: .
+            - paragraph [ref=e88]:
+              - strong [ref=e89]: 2)Linked List
+            - list [ref=e90]:
+              - listitem [ref=e91]:
+                - link "https://leetcode.com/discuss/study-guide/1800120/Become-Master-In-Linked-List" [ref=e92] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/1800120/Become-Master-In-Linked-List
+              - listitem [ref=e93]:
+                - link "https://leetcode.com/discuss/study-guide/2725900/Linked-list-study-guide" [ref=e94] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/2725900/Linked-list-study-guide
+            - paragraph [ref=e95]:
+              - strong [ref=e96]: 3)Two pointers
+            - list [ref=e97]:
+              - listitem [ref=e98]:
+                - link "https://leetcode.com/discuss/study-guide/1688903/Solved-all-two-pointers-problems-in-100-days" [ref=e99] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/1688903/Solved-all-two-pointers-problems-in-100-days
+              - listitem [ref=e100]:
+                - link "https://leetcode.com/discuss/study-guide/1905453/master-in-two-pointer" [ref=e101] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/1905453/master-in-two-pointer
+            - paragraph [ref=e102]:
+              - strong [ref=e103]: 4)Stack & Queue
+            - list [ref=e104]:
+              - listitem [ref=e105]:
+                - link "https://leetcode.com/discuss/study-guide/3168516/A-general-approach-to-stack-problems-in-C%2B%2B-or-Generic-Template" [ref=e106] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/3168516/A-general-approach-to-stack-problems-in-C%2B%2B-or-Generic-Template
+              - listitem [ref=e107]:
+                - link "https://leetcode.com/discuss/study-guide/5085517/Templates-for-monotonic-stacks-and-queues-(with-solved-problems)/" [ref=e108] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/5085517/Templates-for-monotonic-stacks-and-queues-(with-solved-problems)/
+            - paragraph [ref=e109]:
+              - strong [ref=e110]: 5)Graphs
+            - list [ref=e111]:
+              - listitem [ref=e112]:
+                - link "https://leetcode.com/discuss/study-guide/1326900/graph-algorithms-problems-to-practice" [ref=e113] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/1326900/graph-algorithms-problems-to-practice
+              - listitem [ref=e114]:
+                - link "https://leetcode.com/discuss/study-guide/2360573/become-master-in-graph" [ref=e115] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/2360573/become-master-in-graph
+                - list [ref=e116]:
+                  - listitem [ref=e117]:
+                    - strong [ref=e118]: Union Find
+                    - text: ":"
+                    - link "https://leetcode.com/discuss/general-discussion/1072418/Disjoint-Set-Union-(DSU)Union-Find-A-Complete-Guide" [ref=e119] [cursor=pointer]:
+                      - /url: https://leetcode.com/discuss/general-discussion/1072418/Disjoint-Set-Union-(DSU)Union-Find-A-Complete-Guide
+            - paragraph [ref=e120]:
+              - strong [ref=e121]: 6)Prefix Sum
+            - list [ref=e122]:
+              - listitem [ref=e123]:
+                - link "https://leetcode.com/problems/subarray-sum-equals-k/solutions/867435/detailed-explanation-of-math-behind-o-n-solution-python3/" [ref=e124] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/subarray-sum-equals-k/solutions/867435/detailed-explanation-of-math-behind-o-n-solution-python3/
+            - paragraph [ref=e125]:
+              - strong [ref=e126]: 7)Sliding Window
+            - list [ref=e127]:
+              - listitem [ref=e128]:
+                - link "https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/1175088/C++-Maximum-Sliding-Window-Cheatsheet-Template/" [ref=e129] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/1175088/C++-Maximum-Sliding-Window-Cheatsheet-Template/
+            - paragraph [ref=e130]:
+              - strong [ref=e131]: 8)Back tracking
+            - list [ref=e132]:
+              - listitem [ref=e133]:
+                - link "https://leetcode.com/discuss/study-guide/2244368/backtracking-for-beginners-problems" [ref=e134] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/2244368/backtracking-for-beginners-problems
+              - listitem [ref=e135]:
+                - link "https://leetcode.com/discuss/general-discussion/680269/a-general-approach-to-backtracking-problems-in-cexhaustive-searching" [ref=e136] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/general-discussion/680269/a-general-approach-to-backtracking-problems-in-cexhaustive-searching
+            - paragraph [ref=e137]:
+              - strong [ref=e138]: 9)Tree
+            - list [ref=e139]:
+              - listitem [ref=e140]:
+                - link "https://leetcode.com/discuss/study-guide/1337373/Tree-question-pattern-oror2021-placement" [ref=e141] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/1337373/Tree-question-pattern-oror2021-placement
+              - listitem [ref=e142]:
+                - link "https://leetcode.com/discuss/study-guide/5020529/Master-Tree-Patterns/" [ref=e143] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/5020529/Master-Tree-Patterns/
+              - listitem [ref=e144]:
+                - link "https://leetcode.com/discuss/study-guide/1212004/Binary-Trees-study-guide" [ref=e145] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/1212004/Binary-Trees-study-guide
+            - paragraph [ref=e146]:
+              - strong [ref=e147]: 10)Recusrion
+            - list [ref=e148]:
+              - listitem [ref=e149]:
+                - link "https://leetcode.com/discuss/study-guide/1733447/Become-Master-In-Recursion" [ref=e150] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/1733447/Become-Master-In-Recursion
+            - paragraph [ref=e151]:
+              - strong [ref=e152]: 11)Heap
+            - list [ref=e153]:
+              - listitem [ref=e154]:
+                - link "https://leetcode.com/discuss/general-discussion/1127238/master-heap-by-solving-23-questions-in-4-pattern-categories" [ref=e155] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/general-discussion/1127238/master-heap-by-solving-23-questions-in-4-pattern-categories
+              - listitem [ref=e156]:
+                - link "https://leetcode.com/discuss/study-guide/2773740/Important-Patterns-in-HeapPriority-Queue-with-link-to-problems" [ref=e157] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/2773740/Important-Patterns-in-HeapPriority-Queue-with-link-to-problems
+            - paragraph [ref=e158]:
+              - strong [ref=e159]: 12)Binary Search
+            - list [ref=e160]:
+              - listitem [ref=e161]:
+                - link "https://leetcode.com/discuss/study-guide/1233854/a-noobs-guide-to-the-binary-search-algorithm" [ref=e162] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/1233854/a-noobs-guide-to-the-binary-search-algorithm
+              - listitem [ref=e163]:
+                - link "https://leetcode.com/discuss/study-guide/786126/Python-Powerful-Ultimate-Binary-Search-Template.-Solved-many-problems" [ref=e164] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/786126/Python-Powerful-Ultimate-Binary-Search-Template.-Solved-many-problems
+            - paragraph [ref=e165]:
+              - strong [ref=e166]: 13)Greedy
+            - list [ref=e167]:
+              - listitem [ref=e168]:
+                - link "https://leetcode.com/discuss/general-discussion/1061059/ABCs-of-Greedy" [ref=e169] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/general-discussion/1061059/ABCs-of-Greedy
+            - paragraph [ref=e170]:
+              - strong [ref=e171]: 14)Bits Manipulation
+            - list [ref=e172]:
+              - listitem [ref=e173]:
+                - link "https://leetcode.com/discuss/interview-question/3695233/all-types-of-patterns-for-bits-manipulations-and-how-to-use-it" [ref=e174] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/interview-question/3695233/all-types-of-patterns-for-bits-manipulations-and-how-to-use-it
+            - paragraph [ref=e175]:
+              - strong [ref=e176]: 15)Strings
+            - list [ref=e177]:
+              - listitem [ref=e178]:
+                - link "https://leetcode.com/discuss/interview-question/2001789/collections-of-important-string-questions-pattern" [ref=e179] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/interview-question/2001789/collections-of-important-string-questions-pattern
+            - paragraph [ref=e180]:
+              - strong [ref=e181]: 16)String Matching
+            - list [ref=e182]:
+              - listitem [ref=e183]:
+                - link "https://leetcode.com/discuss/post/6587919/string-matching-algorithms-based-questio-w4ac/" [ref=e184] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/post/6587919/string-matching-algorithms-based-questio-w4ac/
+            - code [ref=e188]:
+              - generic [ref=e189]: Following article contains the list of questions topic wise
+            - paragraph [ref=e190]:
+              - strong [ref=e191]: QUESTIONS LIST
+            - list [ref=e192]:
+              - listitem [ref=e193]:
+                - link "https://leetcode.com/discuss/interview-question/2069641/the-only-lists-you-need-for-your-interview-preparation" [ref=e194] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/interview-question/2069641/the-only-lists-you-need-for-your-interview-preparation
+            - paragraph [ref=e195]:
+              - strong [ref=e196]: System Design Articles
+            - list [ref=e197]:
+              - listitem [ref=e198]:
+                - link "https://leetcode.com/discuss/study-guide/3611301/Complete-System-Design-Case-Studies-%3A-Bookmark-it" [ref=e199] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/3611301/Complete-System-Design-Case-Studies-%3A-Bookmark-it
+              - listitem [ref=e200]:
+                - link "https://leetcode.com/discuss/general-discussion/2340482/system-design-template-that-landed-me-to-google" [ref=e201] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/general-discussion/2340482/system-design-template-that-landed-me-to-google
+              - listitem [ref=e202]:
+                - link "https://leetcode.com/discuss/general-discussion/2341201/object-oriented-design-template-that-landed-me-to-google" [ref=e203] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/general-discussion/2341201/object-oriented-design-template-that-landed-me-to-google
+          - generic [ref=e452]:
+            - generic [ref=e453]: Advertisement
+            - img [ref=e457] [cursor=pointer]
+          - generic [ref=e206]:
+            - generic [ref=e207]:
+              - button "852" [ref=e208] [cursor=pointer]:
+                - img [ref=e210]
+                - generic [ref=e212]: "852"
+              - button [ref=e214] [cursor=pointer]:
+                - img [ref=e216]
+            - button "51" [ref=e218] [cursor=pointer]:
+              - img [ref=e220]
+              - generic [ref=e222]: "51"
+            - button [ref=e224] [cursor=pointer]:
+              - button [ref=e225]:
+                - img [ref=e227]
+          - generic [ref=e229]:
+            - generic [ref=e230]:
+              - img [ref=e232]
+              - generic [ref=e234]: Comments (52)
+              - button "Sort by:Best" [ref=e238] [cursor=pointer]:
+                - generic [ref=e239]:
+                  - generic [ref=e240]: "Sort by:"
+                  - text: Best
+                - generic:
+                  - img
+            - generic [ref=e244]:
+              - textbox "Type comment here..." [ref=e245]
+              - generic [ref=e246]:
+                - generic [ref=e248]:
+                  - img [ref=e250] [cursor=pointer]
+                  - img [ref=e253] [cursor=pointer]
+                  - img [ref=e256] [cursor=pointer]
+                  - img [ref=e259] [cursor=pointer]
+                - button "Comment" [disabled] [ref=e262] [cursor=pointer]
+            - generic [ref=e459]:
+              - generic [ref=e461]:
+                - generic [ref=e462]:
+                  - link [ref=e464] [cursor=pointer]:
+                    - /url: /u/inc_/
+                  - generic [ref=e466]:
+                    - generic [ref=e468]:
+                      - link "inc" [ref=e469] [cursor=pointer]:
+                        - /url: /u/inc_/
+                      - img "100 Days Badge 2024" [ref=e471]
+                    - generic [ref=e474]: Jun 30, 2024
+                - generic [ref=e475]:
+                  - paragraph [ref=e482]: please leetcode admins, make a feature to save a post. The only thing to keep this post is for me to subscribe it, but it gets hectic, when all the comments under it are notified to you.
+                  - generic [ref=e484]:
+                    - generic [ref=e485]:
+                      - generic [ref=e486]:
+                        - img [ref=e489] [cursor=pointer]
+                        - generic [ref=e491] [cursor=pointer]: "15"
+                      - img [ref=e495] [cursor=pointer]
+                    - generic [ref=e497] [cursor=pointer]:
+                      - img [ref=e498]
+                      - generic [ref=e500]: Show 1 Replies
+                    - generic [ref=e501] [cursor=pointer]:
+                      - img [ref=e502]
+                      - generic [ref=e504]: Reply
+              - generic [ref=e506]:
+                - generic [ref=e507]:
+                  - link [ref=e509] [cursor=pointer]:
+                    - /url: /u/__AC__/
+                  - generic [ref=e511]:
+                    - generic [ref=e513]:
+                      - link "John Wick" [ref=e514] [cursor=pointer]:
+                        - /url: /u/__AC__/
+                      - img "Mar LeetCoding Challenge" [ref=e516]
+                    - generic [ref=e519]: Jun 25, 2024
+                - generic [ref=e520]:
+                  - paragraph [ref=e527]: Thank you !!
+                  - generic [ref=e529]:
+                    - generic [ref=e530]:
+                      - generic [ref=e531]:
+                        - img [ref=e534] [cursor=pointer]
+                        - generic [ref=e536] [cursor=pointer]: "6"
+                      - img [ref=e540] [cursor=pointer]
+                    - generic [ref=e542] [cursor=pointer]:
+                      - img [ref=e543]
+                      - generic [ref=e545]: Show 1 Replies
+                    - generic [ref=e546] [cursor=pointer]:
+                      - img [ref=e547]
+                      - generic [ref=e549]: Reply
+              - generic [ref=e551]:
+                - generic [ref=e552]:
+                  - link [ref=e554] [cursor=pointer]:
+                    - /url: /u/Amit_jagini/
+                  - generic [ref=e556]:
+                    - link "Amit Jagini" [ref=e559] [cursor=pointer]:
+                      - /url: /u/Amit_jagini/
+                    - generic [ref=e562]: Jun 27, 2024
+                - generic [ref=e563]:
+                  - paragraph [ref=e570]: Finally found a map for the treasure hunt.
+                  - generic [ref=e572]:
+                    - generic [ref=e573]:
+                      - generic [ref=e574]:
+                        - img [ref=e577] [cursor=pointer]
+                        - generic [ref=e579] [cursor=pointer]: "3"
+                      - img [ref=e583] [cursor=pointer]
+                    - generic [ref=e585] [cursor=pointer]:
+                      - img [ref=e586]
+                      - generic [ref=e588]: Reply
+              - generic [ref=e590]:
+                - generic [ref=e591]:
+                  - link [ref=e593] [cursor=pointer]:
+                    - /url: /u/DMad19/
+                  - generic [ref=e595]:
+                    - generic [ref=e597]:
+                      - link "DMad19" [ref=e598] [cursor=pointer]:
+                        - /url: /u/DMad19/
+                      - img "50 Days Badge 2024" [ref=e600]
+                    - generic [ref=e603]: Nov 06, 2024
+                - generic [ref=e604]:
+                  - paragraph [ref=e611]: Thank You for this
+                  - generic [ref=e613]:
+                    - generic [ref=e614]:
+                      - generic [ref=e615]:
+                        - img [ref=e618] [cursor=pointer]
+                        - generic [ref=e620] [cursor=pointer]: "2"
+                      - img [ref=e624] [cursor=pointer]
+                    - generic [ref=e626] [cursor=pointer]:
+                      - img [ref=e627]
+                      - generic [ref=e629]: Reply
+              - generic [ref=e631]:
+                - generic [ref=e632]:
+                  - link [ref=e634] [cursor=pointer]:
+                    - /url: /u/vardanaggarwal/
+                  - generic [ref=e636]:
+                    - generic [ref=e638]:
+                      - link "Vardan Aggarwal" [ref=e639] [cursor=pointer]:
+                        - /url: /u/vardanaggarwal/
+                      - img "50 Days Badge 2023" [ref=e641]
+                    - generic [ref=e644]: Aug 24, 2024
+                - generic [ref=e645]:
+                  - paragraph [ref=e652]: useful Content
+                  - generic [ref=e654]:
+                    - generic [ref=e655]:
+                      - generic [ref=e656]:
+                        - img [ref=e659] [cursor=pointer]
+                        - generic [ref=e661] [cursor=pointer]: "2"
+                      - img [ref=e665] [cursor=pointer]
+                    - generic [ref=e667] [cursor=pointer]:
+                      - img [ref=e668]
+                      - generic [ref=e670]: Reply
+              - generic [ref=e672]:
+                - generic [ref=e673]:
+                  - link [ref=e675] [cursor=pointer]:
+                    - /url: /u/jennylee2022/
+                  - generic [ref=e677]:
+                    - generic [ref=e679]:
+                      - link "jennylee2022" [ref=e680] [cursor=pointer]:
+                        - /url: /u/jennylee2022/
+                      - img "100 Days Badge 2023" [ref=e682]
+                    - generic [ref=e685]: Jul 16, 2024
+                - generic [ref=e686]:
+                  - paragraph [ref=e693]: Great! Thanks for sharing!
+                  - generic [ref=e695]:
+                    - generic [ref=e696]:
+                      - generic [ref=e697]:
+                        - img [ref=e700] [cursor=pointer]
+                        - generic [ref=e702] [cursor=pointer]: "2"
+                      - img [ref=e706] [cursor=pointer]
+                    - generic [ref=e708] [cursor=pointer]:
+                      - img [ref=e709]
+                      - generic [ref=e711]: Reply
+              - generic [ref=e713]:
+                - generic [ref=e714]:
+                  - link [ref=e716] [cursor=pointer]:
+                    - /url: /u/Nozibul_Islam/
+                  - generic [ref=e718]:
+                    - generic [ref=e720]:
+                      - link "Md Nozibul Islam" [ref=e721] [cursor=pointer]:
+                        - /url: /u/Nozibul_Islam/
+                      - img "365 Days Badge" [ref=e723]
+                    - generic [ref=e726]: Sep 02, 2025
+                - generic [ref=e727]:
+                  - paragraph [ref=e734]: Many many thanks.
+                  - generic [ref=e736]:
+                    - generic [ref=e737]:
+                      - generic [ref=e738]:
+                        - img [ref=e741] [cursor=pointer]
+                        - generic [ref=e743] [cursor=pointer]: "1"
+                      - img [ref=e747] [cursor=pointer]
+                    - generic [ref=e749] [cursor=pointer]:
+                      - img [ref=e750]
+                      - generic [ref=e752]: Reply
+              - generic [ref=e754]:
+                - generic [ref=e755]:
+                  - link [ref=e757] [cursor=pointer]:
+                    - /url: /u/Owl_Knight/
+                  - generic [ref=e759]:
+                    - generic [ref=e761]:
+                      - link "Ajoy Nath" [ref=e762] [cursor=pointer]:
+                        - /url: /u/Owl_Knight/
+                      - img "50 Days Badge 2023" [ref=e764]
+                    - generic [ref=e767]: Feb 21, 2025
+                - generic [ref=e768]:
+                  - paragraph [ref=e775]: Gold!
+                  - generic [ref=e777]:
+                    - generic [ref=e778]:
+                      - generic [ref=e779]:
+                        - img [ref=e782] [cursor=pointer]
+                        - generic [ref=e784] [cursor=pointer]: "1"
+                      - img [ref=e788] [cursor=pointer]
+                    - generic [ref=e790] [cursor=pointer]:
+                      - img [ref=e791]
+                      - generic [ref=e793]: Reply
+              - generic [ref=e795]:
+                - generic [ref=e796]:
+                  - link [ref=e798] [cursor=pointer]:
+                    - /url: /u/risarora/
+                  - generic [ref=e800]:
+                    - link "Rishi Arora" [ref=e803] [cursor=pointer]:
+                      - /url: /u/risarora/
+                    - generic [ref=e806]: Jan 11, 2025
+                - generic [ref=e807]:
+                  - paragraph [ref=e814]: Nice aggregation.
+                  - generic [ref=e816]:
+                    - generic [ref=e817]:
+                      - generic [ref=e818]:
+                        - img [ref=e821] [cursor=pointer]
+                        - generic [ref=e823] [cursor=pointer]: "1"
+                      - img [ref=e827] [cursor=pointer]
+                    - generic [ref=e829] [cursor=pointer]:
+                      - img [ref=e830]
+                      - generic [ref=e832]: Reply
+            - navigation [ref=e376]:
+              - button "prev" [disabled]:
+                - img
+              - button "1"
+              - button "2" [ref=e833] [cursor=pointer]
+              - button "3" [ref=e834] [cursor=pointer]
+              - button "4" [ref=e835] [cursor=pointer]
+              - button "5" [ref=e836] [cursor=pointer]
+              - button "6" [ref=e837] [cursor=pointer]
+              - button "next" [ref=e838] [cursor=pointer]:
+                - img [ref=e839]
+        - generic [ref=e377]:
+          - generic [ref=e378]:
+            - generic [ref=e379]:
+              - img [ref=e381]
+              - generic [ref=e383]: Explore
+            - generic [ref=e841]:
+              - generic [ref=e842]:
+                - link "#Interview leetcode Nirupama_7" [ref=e843] [cursor=pointer]:
+                  - /url: /discuss/topic/interview/
+                  - generic [ref=e844]: "#Interview"
+                  - generic [ref=e845]:
+                    - img "leetcode" [ref=e847]
+                    - img "Nirupama_7" [ref=e850]
+                - link "📱 LeetCode at Your Fingertips" [ref=e852] [cursor=pointer]:
+                  - /url: /discuss/post/7939302/leetcode-at-your-fingertips-code-without-027z/
+                  - generic [ref=e853]: 📱 LeetCode at Your Fingertips
+                - link "Google L5 Team Matching" [ref=e855] [cursor=pointer]:
+                  - /url: /discuss/post/8238240/google-l5-team-matching-by-anonymous_use-pixk/
+                  - generic [ref=e856]: Google L5 Team Matching
+              - generic [ref=e857]:
+                - link "#Career leetcode" [ref=e858] [cursor=pointer]:
+                  - /url: /discuss/topic/career/
+                  - generic [ref=e859]: "#Career"
+                  - img "leetcode" [ref=e862]
+                - link "📱 LeetCode at Your Fingertips" [ref=e866] [cursor=pointer]:
+                  - /url: /discuss/post/7939302/leetcode-at-your-fingertips-code-without-027z/
+                  - generic [ref=e867]: 📱 LeetCode at Your Fingertips
+                - link "Google L5 Team Matching" [ref=e869] [cursor=pointer]:
+                  - /url: /discuss/post/8238240/google-l5-team-matching-by-anonymous_use-pixk/
+                  - generic [ref=e870]: Google L5 Team Matching
+              - generic [ref=e871]:
+                - link "#Compensation" [ref=e872] [cursor=pointer]:
+                  - /url: /discuss/topic/compensation/
+                  - generic [ref=e873]: "#Compensation"
+                - link "Google L5 Team Matching" [ref=e879] [cursor=pointer]:
+                  - /url: /discuss/post/8238240/google-l5-team-matching-by-anonymous_use-pixk/
+                  - generic [ref=e880]: Google L5 Team Matching
+                - link "Microsoft | Software Engineer - 2 (L61) | May 2025 (Rejected)" [ref=e882] [cursor=pointer]:
+                  - /url: /discuss/post/8234198/microsoft-software-engineer-2-l61-may-20-dusr/
+                  - generic [ref=e883]: Microsoft | Software Engineer - 2 (L61) | May 2025 (Rejected)
+              - generic [ref=e884]:
+                - link "#Feedback RShadowMonarch" [ref=e885] [cursor=pointer]:
+                  - /url: /discuss/topic/feedback/
+                  - generic [ref=e886]: "#Feedback"
+                  - img "RShadowMonarch" [ref=e890]
+                - link "Google L5 Team Matching" [ref=e893] [cursor=pointer]:
+                  - /url: /discuss/post/8238240/google-l5-team-matching-by-anonymous_use-pixk/
+                  - generic [ref=e894]: Google L5 Team Matching
+                - link "Laid off, career break - 2.8 years, Experience - 8.6 years || Need Advice" [ref=e896] [cursor=pointer]:
+                  - /url: /discuss/post/8235466/laid-off-career-break-28-years-experienc-fgkb/
+                  - generic [ref=e897]: Laid off, career break - 2.8 years, Experience - 8.6 years || Need Advice
+              - generic [ref=e898] [cursor=pointer]: Show More
+          - generic [ref=e418]:
+            - generic [ref=e419]:
+              - link "Download App" [ref=e420] [cursor=pointer]:
+                - /url: https://leetcode.com/app/?utm_campaign=AppPromotion&utm_medium=site&utm_source=site_footer&gio_link_id=nPN4bXe9
+                - img [ref=e422]
+                - text: Download App
+              - link "Support" [ref=e425] [cursor=pointer]:
+                - /url: https://support.leetcode.com/hc/en-us
+              - link "Terms" [ref=e427] [cursor=pointer]:
+                - /url: /terms
+              - link "Privacy Policy" [ref=e429] [cursor=pointer]:
+                - /url: /privacy
+              - generic [ref=e431] [cursor=pointer]: More
+            - link "Copyright © 2026 LeetCode" [ref=e432] [cursor=pointer]:
+              - /url: /
+            - link "United States" [ref=e434] [cursor=pointer]:
+              - /url: /region
+        - generic [ref=e435]:
+          - button:
+            - generic:
+              - img
+    - region "Notifications (F8)":
+      - list
+  - alert [ref=e436]

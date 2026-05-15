@@ -9,19 +9,28 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as PatternsRouteImport } from './routes/patterns'
 import { Route as ExploreRouteImport } from './routes/explore'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProblemsIndexRouteImport } from './routes/problems.index'
+import { Route as PatternsIndexRouteImport } from './routes/patterns.index'
 import { Route as LearnIndexRouteImport } from './routes/learn.index'
 import { Route as ProblemsTopicRouteImport } from './routes/problems.$topic'
+import { Route as PatternsPatternRouteImport } from './routes/patterns.$pattern'
 import { Route as LearnPatternsRouteImport } from './routes/learn.patterns'
+import { Route as LearnTrackRouteImport } from './routes/learn.$track'
 import { Route as LearnPatternRouteImport } from './routes/learn.$pattern'
 import { Route as DemoTanstackQueryRouteImport } from './routes/demo/tanstack-query'
 import { Route as DemoTableRouteImport } from './routes/demo/table'
 import { Route as DemoFormSimpleRouteImport } from './routes/demo/form.simple'
 import { Route as DemoFormAddressRouteImport } from './routes/demo/form.address'
 
+const PatternsRoute = PatternsRouteImport.update({
+  id: '/patterns',
+  path: '/patterns',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ExploreRoute = ExploreRouteImport.update({
   id: '/explore',
   path: '/explore',
@@ -42,6 +51,11 @@ const ProblemsIndexRoute = ProblemsIndexRouteImport.update({
   path: '/problems/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PatternsIndexRoute = PatternsIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => PatternsRoute,
+} as any)
 const LearnIndexRoute = LearnIndexRouteImport.update({
   id: '/learn/',
   path: '/learn/',
@@ -52,9 +66,19 @@ const ProblemsTopicRoute = ProblemsTopicRouteImport.update({
   path: '/problems/$topic',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PatternsPatternRoute = PatternsPatternRouteImport.update({
+  id: '/$pattern',
+  path: '/$pattern',
+  getParentRoute: () => PatternsRoute,
+} as any)
 const LearnPatternsRoute = LearnPatternsRouteImport.update({
   id: '/learn/patterns',
   path: '/learn/patterns',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LearnTrackRoute = LearnTrackRouteImport.update({
+  id: '/learn/$track',
+  path: '/learn/$track',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LearnPatternRoute = LearnPatternRouteImport.update({
@@ -87,12 +111,16 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/explore': typeof ExploreRoute
+  '/patterns': typeof PatternsRouteWithChildren
   '/demo/table': typeof DemoTableRoute
   '/demo/tanstack-query': typeof DemoTanstackQueryRoute
   '/learn/$pattern': typeof LearnPatternRoute
+  '/learn/$track': typeof LearnTrackRoute
   '/learn/patterns': typeof LearnPatternsRoute
+  '/patterns/$pattern': typeof PatternsPatternRoute
   '/problems/$topic': typeof ProblemsTopicRoute
   '/learn/': typeof LearnIndexRoute
+  '/patterns/': typeof PatternsIndexRoute
   '/problems/': typeof ProblemsIndexRoute
   '/demo/form/address': typeof DemoFormAddressRoute
   '/demo/form/simple': typeof DemoFormSimpleRoute
@@ -104,9 +132,12 @@ export interface FileRoutesByTo {
   '/demo/table': typeof DemoTableRoute
   '/demo/tanstack-query': typeof DemoTanstackQueryRoute
   '/learn/$pattern': typeof LearnPatternRoute
+  '/learn/$track': typeof LearnTrackRoute
   '/learn/patterns': typeof LearnPatternsRoute
+  '/patterns/$pattern': typeof PatternsPatternRoute
   '/problems/$topic': typeof ProblemsTopicRoute
   '/learn': typeof LearnIndexRoute
+  '/patterns': typeof PatternsIndexRoute
   '/problems': typeof ProblemsIndexRoute
   '/demo/form/address': typeof DemoFormAddressRoute
   '/demo/form/simple': typeof DemoFormSimpleRoute
@@ -116,12 +147,16 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/explore': typeof ExploreRoute
+  '/patterns': typeof PatternsRouteWithChildren
   '/demo/table': typeof DemoTableRoute
   '/demo/tanstack-query': typeof DemoTanstackQueryRoute
   '/learn/$pattern': typeof LearnPatternRoute
+  '/learn/$track': typeof LearnTrackRoute
   '/learn/patterns': typeof LearnPatternsRoute
+  '/patterns/$pattern': typeof PatternsPatternRoute
   '/problems/$topic': typeof ProblemsTopicRoute
   '/learn/': typeof LearnIndexRoute
+  '/patterns/': typeof PatternsIndexRoute
   '/problems/': typeof ProblemsIndexRoute
   '/demo/form/address': typeof DemoFormAddressRoute
   '/demo/form/simple': typeof DemoFormSimpleRoute
@@ -132,12 +167,16 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/explore'
+    | '/patterns'
     | '/demo/table'
     | '/demo/tanstack-query'
     | '/learn/$pattern'
+    | '/learn/$track'
     | '/learn/patterns'
+    | '/patterns/$pattern'
     | '/problems/$topic'
     | '/learn/'
+    | '/patterns/'
     | '/problems/'
     | '/demo/form/address'
     | '/demo/form/simple'
@@ -149,9 +188,12 @@ export interface FileRouteTypes {
     | '/demo/table'
     | '/demo/tanstack-query'
     | '/learn/$pattern'
+    | '/learn/$track'
     | '/learn/patterns'
+    | '/patterns/$pattern'
     | '/problems/$topic'
     | '/learn'
+    | '/patterns'
     | '/problems'
     | '/demo/form/address'
     | '/demo/form/simple'
@@ -160,12 +202,16 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/explore'
+    | '/patterns'
     | '/demo/table'
     | '/demo/tanstack-query'
     | '/learn/$pattern'
+    | '/learn/$track'
     | '/learn/patterns'
+    | '/patterns/$pattern'
     | '/problems/$topic'
     | '/learn/'
+    | '/patterns/'
     | '/problems/'
     | '/demo/form/address'
     | '/demo/form/simple'
@@ -175,9 +221,11 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   ExploreRoute: typeof ExploreRoute
+  PatternsRoute: typeof PatternsRouteWithChildren
   DemoTableRoute: typeof DemoTableRoute
   DemoTanstackQueryRoute: typeof DemoTanstackQueryRoute
   LearnPatternRoute: typeof LearnPatternRoute
+  LearnTrackRoute: typeof LearnTrackRoute
   LearnPatternsRoute: typeof LearnPatternsRoute
   ProblemsTopicRoute: typeof ProblemsTopicRoute
   LearnIndexRoute: typeof LearnIndexRoute
@@ -188,6 +236,13 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/patterns': {
+      id: '/patterns'
+      path: '/patterns'
+      fullPath: '/patterns'
+      preLoaderRoute: typeof PatternsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/explore': {
       id: '/explore'
       path: '/explore'
@@ -216,6 +271,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProblemsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/patterns/': {
+      id: '/patterns/'
+      path: '/'
+      fullPath: '/patterns/'
+      preLoaderRoute: typeof PatternsIndexRouteImport
+      parentRoute: typeof PatternsRoute
+    }
     '/learn/': {
       id: '/learn/'
       path: '/learn'
@@ -230,11 +292,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProblemsTopicRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/patterns/$pattern': {
+      id: '/patterns/$pattern'
+      path: '/$pattern'
+      fullPath: '/patterns/$pattern'
+      preLoaderRoute: typeof PatternsPatternRouteImport
+      parentRoute: typeof PatternsRoute
+    }
     '/learn/patterns': {
       id: '/learn/patterns'
       path: '/learn/patterns'
       fullPath: '/learn/patterns'
       preLoaderRoute: typeof LearnPatternsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/learn/$track': {
+      id: '/learn/$track'
+      path: '/learn/$track'
+      fullPath: '/learn/$track'
+      preLoaderRoute: typeof LearnTrackRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/learn/$pattern': {
@@ -275,13 +351,29 @@ declare module '@tanstack/react-router' {
   }
 }
 
+interface PatternsRouteChildren {
+  PatternsPatternRoute: typeof PatternsPatternRoute
+  PatternsIndexRoute: typeof PatternsIndexRoute
+}
+
+const PatternsRouteChildren: PatternsRouteChildren = {
+  PatternsPatternRoute: PatternsPatternRoute,
+  PatternsIndexRoute: PatternsIndexRoute,
+}
+
+const PatternsRouteWithChildren = PatternsRoute._addFileChildren(
+  PatternsRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   ExploreRoute: ExploreRoute,
+  PatternsRoute: PatternsRouteWithChildren,
   DemoTableRoute: DemoTableRoute,
   DemoTanstackQueryRoute: DemoTanstackQueryRoute,
   LearnPatternRoute: LearnPatternRoute,
+  LearnTrackRoute: LearnTrackRoute,
   LearnPatternsRoute: LearnPatternsRoute,
   ProblemsTopicRoute: ProblemsTopicRoute,
   LearnIndexRoute: LearnIndexRoute,

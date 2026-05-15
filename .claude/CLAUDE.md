@@ -40,11 +40,11 @@ style: <UI/CSS changes>
 > (documentation, ownership, history, decisions). **Always verify against
 > actual source files before making changes** — the index may be stale.
 
-Last indexed: 2026-05-15 (commit 1ea4650). Confidence: 100%.
+Last indexed: 2026-05-15 (commit 485672d). Confidence: 100%.
 ### Key Modules
 | Module | Purpose | Owner |
 |--------|---------|-------|
-| `src` | The src module serves as the core repository for a comprehensive library of algo | — |
+| `src` | The src module serves as the core routing and presentation layer for the applica | — |
 | `scripts` | The scripts module serves as a collection of iterative data analysis and dedupli | — |
 | `root` | The root module serves as the primary configuration layer for the project's buil | — |
 | `greedy` | The greedy module provides a centralized utility for managing and consolidating  | — |
@@ -58,10 +58,10 @@ Last indexed: 2026-05-15 (commit 1ea4650). Confidence: 100%.
 | File | Churn | 90d Commits | Owner |
 |------|-------|-------------|-------|
 | `math/all_math_problems.csv` | 100.0th %ile | 3 | rashidtvmr |
-| `src/styles.css` | 99.8th %ile | 3 | rashidtvmr |
+| `src/styles.css` | 99.8th %ile | 4 | rashidtvmr |
 | `src/routes/index.tsx` | 99.6th %ile | 4 | rashidtvmr |
-| `src/routes/explore.tsx` | 99.4th %ile | 3 | rashidtvmr |
-| `src/components/Header.tsx` | 99.2th %ile | 5 | rashidtvmr |
+| `pnpm-lock.yaml` | 99.5th %ile | 3 | rashidtvmr |
+| `src/routes/explore.tsx` | 99.3th %ile | 3 | rashidtvmr |
 
 ### Repowise MCP Tools
 

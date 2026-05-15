@@ -144,6 +144,7 @@ export default function Header() {
 	const navItems = [
 		{ label: "Topics", to: "/" },
 		{ label: "Learn", to: "/learn" },
+		{ label: "DSA Patterns", to: "/patterns" },
 		{ label: "Explore", to: "/explore" },
 	];
 

@@ -1,0 +1,304 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - navigation [ref=e6]:
+        - generic [ref=e7]:
+          - link "LeetCode" [ref=e8] [cursor=pointer]:
+            - /url: /
+            - img [ref=e10]
+          - list [ref=e18]:
+            - listitem [ref=e19]:
+              - link "Problems" [ref=e20] [cursor=pointer]:
+                - /url: /problemset
+            - listitem [ref=e21]:
+              - link "Contest" [ref=e22] [cursor=pointer]:
+                - /url: /contest
+            - listitem [ref=e23]:
+              - link "Discuss" [ref=e24] [cursor=pointer]:
+                - /url: /discuss/
+            - listitem [ref=e25]:
+              - generic [ref=e27] [cursor=pointer]:
+                - button "More" [ref=e28]:
+                  - text: More
+                  - img [ref=e29]
+                - list:
+                  - listitem:
+                    - link:
+                      - /url: https://interview.leetcode.com/interview/
+                      - img
+                      - generic: Online Interview
+                  - listitem:
+                    - link:
+                      - /url: /assessment/
+                      - img
+                      - generic: Assessment
+                  - listitem:
+                    - link:
+                      - /url: /store
+                      - generic: Redeem
+                  - listitem:
+                    - link:
+                      - /url: /subscribe/?ref=sto_npl&source=ot
+                      - generic: Premium
+      - generic [ref=e32]:
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - link [ref=e36] [cursor=pointer]:
+              - /url: /discuss/
+              - button [ref=e37]:
+                - img [ref=e39]
+            - button [ref=e41] [cursor=pointer]:
+              - img [ref=e43]
+          - generic [ref=e46]:
+            - generic [ref=e47]: All leetcode articles on coding patterns summarized in one page.
+            - generic [ref=e48]:
+              - link [ref=e50] [cursor=pointer]:
+                - /url: /u/Rahul_Gunkar/
+              - generic [ref=e51]:
+                - link "Rahul Gunkar" [ref=e54] [cursor=pointer]:
+                  - /url: /u/Rahul_Gunkar/
+                - generic [ref=e55]:
+                  - generic [ref=e56]:
+                    - img [ref=e57]
+                    - generic [ref=e59]: "46886"
+                  - generic [ref=e60]:
+                    - img [ref=e61]
+                    - generic [ref=e63]: Jun 25, 2024
+                  - generic [ref=e64]:
+                    - img [ref=e66]
+                    - generic [ref=e68]: Mar 28, 2025
+            - link "Interview" [ref=e70] [cursor=pointer]:
+              - /url: /discuss/topic/interview/
+          - generic [ref=e74]:
+            - paragraph [ref=e75]:
+              - strong [ref=e76]: This post consists links to all the good articles I have found on leetcode. I am not the author of these articles and I am grateful to the people who wrote them.
+            - paragraph [ref=e77]:
+              - strong [ref=e78]: 1)Dynamic Programming
+            - list [ref=e79]:
+              - listitem [ref=e80]:
+                - link "https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns" [ref=e81] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns
+              - listitem [ref=e82]:
+                - link "https://leetcode.com/discuss/interview-question/1986802/Dynamic-Programming" [ref=e83] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/interview-question/1986802/Dynamic-Programming
+              - listitem [ref=e84]:
+                - link "https://leetcode.com/discuss/general-discussion/662866/DP-for-Beginners-Problems-or-Patterns-or-Sample-Solutions" [ref=e85] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/general-discussion/662866/DP-for-Beginners-Problems-or-Patterns-or-Sample-Solutions
+              - listitem [ref=e86]:
+                - link "https://leetcode.com/discuss/general-discussion/1000929/solved-all-dynamic-programming-dp-problems-in-7-months#:~:text=There%20are%20total%20241%20dp,only%20solved%20the%20public%20ones.&text=Then%20I%20started%20to%20solve,my%20monthly%20problem%20list%20here.&text=The%20average%20pace%20was%20about%201%20problem%20per%20day" [ref=e87] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/general-discussion/1000929/solved-all-dynamic-programming-dp-problems-in-7-months#:~:text=There%20are%20total%20241%20dp,only%20solved%20the%20public%20ones.&text=Then%20I%20started%20to%20solve,my%20monthly%20problem%20list%20here.&text=The%20average%20pace%20was%20about%201%20problem%20per%20day
+                - text: .
+            - paragraph [ref=e88]:
+              - strong [ref=e89]: 2)Linked List
+            - list [ref=e90]:
+              - listitem [ref=e91]:
+                - link "https://leetcode.com/discuss/study-guide/1800120/Become-Master-In-Linked-List" [ref=e92] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/1800120/Become-Master-In-Linked-List
+              - listitem [ref=e93]:
+                - link "https://leetcode.com/discuss/study-guide/2725900/Linked-list-study-guide" [ref=e94] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/2725900/Linked-list-study-guide
+            - paragraph [ref=e95]:
+              - strong [ref=e96]: 3)Two pointers
+            - list [ref=e97]:
+              - listitem [ref=e98]:
+                - link "https://leetcode.com/discuss/study-guide/1688903/Solved-all-two-pointers-problems-in-100-days" [ref=e99] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/1688903/Solved-all-two-pointers-problems-in-100-days
+              - listitem [ref=e100]:
+                - link "https://leetcode.com/discuss/study-guide/1905453/master-in-two-pointer" [ref=e101] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/1905453/master-in-two-pointer
+            - paragraph [ref=e102]:
+              - strong [ref=e103]: 4)Stack & Queue
+            - list [ref=e104]:
+              - listitem [ref=e105]:
+                - link "https://leetcode.com/discuss/study-guide/3168516/A-general-approach-to-stack-problems-in-C%2B%2B-or-Generic-Template" [ref=e106] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/3168516/A-general-approach-to-stack-problems-in-C%2B%2B-or-Generic-Template
+              - listitem [ref=e107]:
+                - link "https://leetcode.com/discuss/study-guide/5085517/Templates-for-monotonic-stacks-and-queues-(with-solved-problems)/" [ref=e108] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/5085517/Templates-for-monotonic-stacks-and-queues-(with-solved-problems)/
+            - paragraph [ref=e109]:
+              - strong [ref=e110]: 5)Graphs
+            - list [ref=e111]:
+              - listitem [ref=e112]:
+                - link "https://leetcode.com/discuss/study-guide/1326900/graph-algorithms-problems-to-practice" [ref=e113] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/1326900/graph-algorithms-problems-to-practice
+              - listitem [ref=e114]:
+                - link "https://leetcode.com/discuss/study-guide/2360573/become-master-in-graph" [ref=e115] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/2360573/become-master-in-graph
+                - list [ref=e116]:
+                  - listitem [ref=e117]:
+                    - strong [ref=e118]: Union Find
+                    - text: ":"
+                    - link "https://leetcode.com/discuss/general-discussion/1072418/Disjoint-Set-Union-(DSU)Union-Find-A-Complete-Guide" [ref=e119] [cursor=pointer]:
+                      - /url: https://leetcode.com/discuss/general-discussion/1072418/Disjoint-Set-Union-(DSU)Union-Find-A-Complete-Guide
+            - paragraph [ref=e120]:
+              - strong [ref=e121]: 6)Prefix Sum
+            - list [ref=e122]:
+              - listitem [ref=e123]:
+                - link "https://leetcode.com/problems/subarray-sum-equals-k/solutions/867435/detailed-explanation-of-math-behind-o-n-solution-python3/" [ref=e124] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/subarray-sum-equals-k/solutions/867435/detailed-explanation-of-math-behind-o-n-solution-python3/
+            - paragraph [ref=e125]:
+              - strong [ref=e126]: 7)Sliding Window
+            - list [ref=e127]:
+              - listitem [ref=e128]:
+                - link "https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/1175088/C++-Maximum-Sliding-Window-Cheatsheet-Template/" [ref=e129] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/1175088/C++-Maximum-Sliding-Window-Cheatsheet-Template/
+            - paragraph [ref=e130]:
+              - strong [ref=e131]: 8)Back tracking
+            - list [ref=e132]:
+              - listitem [ref=e133]:
+                - link "https://leetcode.com/discuss/study-guide/2244368/backtracking-for-beginners-problems" [ref=e134] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/2244368/backtracking-for-beginners-problems
+              - listitem [ref=e135]:
+                - link "https://leetcode.com/discuss/general-discussion/680269/a-general-approach-to-backtracking-problems-in-cexhaustive-searching" [ref=e136] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/general-discussion/680269/a-general-approach-to-backtracking-problems-in-cexhaustive-searching
+            - paragraph [ref=e137]:
+              - strong [ref=e138]: 9)Tree
+            - list [ref=e139]:
+              - listitem [ref=e140]:
+                - link "https://leetcode.com/discuss/study-guide/1337373/Tree-question-pattern-oror2021-placement" [ref=e141] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/1337373/Tree-question-pattern-oror2021-placement
+              - listitem [ref=e142]:
+                - link "https://leetcode.com/discuss/study-guide/5020529/Master-Tree-Patterns/" [ref=e143] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/5020529/Master-Tree-Patterns/
+              - listitem [ref=e144]:
+                - link "https://leetcode.com/discuss/study-guide/1212004/Binary-Trees-study-guide" [ref=e145] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/1212004/Binary-Trees-study-guide
+            - paragraph [ref=e146]:
+              - strong [ref=e147]: 10)Recusrion
+            - list [ref=e148]:
+              - listitem [ref=e149]:
+                - link "https://leetcode.com/discuss/study-guide/1733447/Become-Master-In-Recursion" [ref=e150] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/1733447/Become-Master-In-Recursion
+            - paragraph [ref=e151]:
+              - strong [ref=e152]: 11)Heap
+            - list [ref=e153]:
+              - listitem [ref=e154]:
+                - link "https://leetcode.com/discuss/general-discussion/1127238/master-heap-by-solving-23-questions-in-4-pattern-categories" [ref=e155] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/general-discussion/1127238/master-heap-by-solving-23-questions-in-4-pattern-categories
+              - listitem [ref=e156]:
+                - link "https://leetcode.com/discuss/study-guide/2773740/Important-Patterns-in-HeapPriority-Queue-with-link-to-problems" [ref=e157] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/2773740/Important-Patterns-in-HeapPriority-Queue-with-link-to-problems
+            - paragraph [ref=e158]:
+              - strong [ref=e159]: 12)Binary Search
+            - list [ref=e160]:
+              - listitem [ref=e161]:
+                - link "https://leetcode.com/discuss/study-guide/1233854/a-noobs-guide-to-the-binary-search-algorithm" [ref=e162] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/1233854/a-noobs-guide-to-the-binary-search-algorithm
+              - listitem [ref=e163]:
+                - link "https://leetcode.com/discuss/study-guide/786126/Python-Powerful-Ultimate-Binary-Search-Template.-Solved-many-problems" [ref=e164] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/786126/Python-Powerful-Ultimate-Binary-Search-Template.-Solved-many-problems
+            - paragraph [ref=e165]:
+              - strong [ref=e166]: 13)Greedy
+            - list [ref=e167]:
+              - listitem [ref=e168]:
+                - link "https://leetcode.com/discuss/general-discussion/1061059/ABCs-of-Greedy" [ref=e169] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/general-discussion/1061059/ABCs-of-Greedy
+            - paragraph [ref=e170]:
+              - strong [ref=e171]: 14)Bits Manipulation
+            - list [ref=e172]:
+              - listitem [ref=e173]:
+                - link "https://leetcode.com/discuss/interview-question/3695233/all-types-of-patterns-for-bits-manipulations-and-how-to-use-it" [ref=e174] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/interview-question/3695233/all-types-of-patterns-for-bits-manipulations-and-how-to-use-it
+            - paragraph [ref=e175]:
+              - strong [ref=e176]: 15)Strings
+            - list [ref=e177]:
+              - listitem [ref=e178]:
+                - link "https://leetcode.com/discuss/interview-question/2001789/collections-of-important-string-questions-pattern" [ref=e179] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/interview-question/2001789/collections-of-important-string-questions-pattern
+            - paragraph [ref=e180]:
+              - strong [ref=e181]: 16)String Matching
+            - list [ref=e182]:
+              - listitem [ref=e183]:
+                - link "https://leetcode.com/discuss/post/6587919/string-matching-algorithms-based-questio-w4ac/" [ref=e184] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/post/6587919/string-matching-algorithms-based-questio-w4ac/
+            - code [ref=e188]:
+              - generic [ref=e189]: Following article contains the list of questions topic wise
+            - paragraph [ref=e190]:
+              - strong [ref=e191]: QUESTIONS LIST
+            - list [ref=e192]:
+              - listitem [ref=e193]:
+                - link "https://leetcode.com/discuss/interview-question/2069641/the-only-lists-you-need-for-your-interview-preparation" [ref=e194] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/interview-question/2069641/the-only-lists-you-need-for-your-interview-preparation
+            - paragraph [ref=e195]:
+              - strong [ref=e196]: System Design Articles
+            - list [ref=e197]:
+              - listitem [ref=e198]:
+                - link "https://leetcode.com/discuss/study-guide/3611301/Complete-System-Design-Case-Studies-%3A-Bookmark-it" [ref=e199] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/study-guide/3611301/Complete-System-Design-Case-Studies-%3A-Bookmark-it
+              - listitem [ref=e200]:
+                - link "https://leetcode.com/discuss/general-discussion/2340482/system-design-template-that-landed-me-to-google" [ref=e201] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/general-discussion/2340482/system-design-template-that-landed-me-to-google
+              - listitem [ref=e202]:
+                - link "https://leetcode.com/discuss/general-discussion/2341201/object-oriented-design-template-that-landed-me-to-google" [ref=e203] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/general-discussion/2341201/object-oriented-design-template-that-landed-me-to-google
+          - generic [ref=e206]:
+            - generic [ref=e207]:
+              - button "852" [ref=e208] [cursor=pointer]:
+                - img [ref=e210]
+                - generic [ref=e212]: "852"
+              - button [ref=e214] [cursor=pointer]:
+                - img [ref=e216]
+            - button "51" [ref=e218] [cursor=pointer]:
+              - img [ref=e220]
+              - generic [ref=e222]: "51"
+            - button [ref=e224] [cursor=pointer]:
+              - button [ref=e225]:
+                - img [ref=e227]
+          - generic [ref=e229]:
+            - generic [ref=e230]:
+              - img [ref=e232]
+              - generic [ref=e234]: Comments (51)
+              - button "Sort by:Best" [ref=e238] [cursor=pointer]:
+                - generic [ref=e239]:
+                  - generic [ref=e240]: "Sort by:"
+                  - text: Best
+                - generic:
+                  - img
+            - generic [ref=e244]:
+              - textbox "Type comment here..." [ref=e245]
+              - generic [ref=e246]:
+                - generic [ref=e248]:
+                  - img [ref=e250] [cursor=pointer]
+                  - img [ref=e253] [cursor=pointer]
+                  - img [ref=e256] [cursor=pointer]
+                  - img [ref=e259] [cursor=pointer]
+                - button "Comment" [disabled] [ref=e262] [cursor=pointer]
+            - navigation [ref=e376]:
+              - button "prev" [disabled]:
+                - img
+              - button "1" [disabled]
+              - button "2" [disabled]
+              - button "3" [disabled]
+              - button "4" [disabled]
+              - button "5" [disabled]
+              - button "6" [disabled]
+              - button "next" [disabled]:
+                - img
+        - generic [ref=e377]:
+          - generic [ref=e379]:
+            - img [ref=e381]
+            - generic [ref=e383]: Explore
+          - generic [ref=e418]:
+            - generic [ref=e419]:
+              - link "Download App" [ref=e420] [cursor=pointer]:
+                - /url: https://leetcode.com/app/?utm_campaign=AppPromotion&utm_medium=site&utm_source=site_footer&gio_link_id=nPN4bXe9
+                - img [ref=e422]
+                - text: Download App
+              - link "Support" [ref=e425] [cursor=pointer]:
+                - /url: https://support.leetcode.com/hc/en-us
+              - link "Terms" [ref=e427] [cursor=pointer]:
+                - /url: /terms
+              - link "Privacy Policy" [ref=e429] [cursor=pointer]:
+                - /url: /privacy
+              - generic [ref=e431] [cursor=pointer]: More
+            - link "Copyright © 2026 LeetCode" [ref=e432] [cursor=pointer]:
+              - /url: /
+            - link "United States" [ref=e434] [cursor=pointer]:
+              - /url: /region
+        - generic [ref=e435]:
+          - button:
+            - generic:
+              - img
+    - region "Notifications (F8)":
+      - list
+  - alert [ref=e436]

@@ -1,0 +1,1065 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - navigation [ref=e6]:
+        - generic [ref=e7]:
+          - link "LeetCode" [ref=e8] [cursor=pointer]:
+            - /url: /
+            - img [ref=e10]
+          - list [ref=e18]:
+            - listitem [ref=e19]:
+              - link "Problems" [ref=e20] [cursor=pointer]:
+                - /url: /problemset
+            - listitem [ref=e21]:
+              - link "Contest" [ref=e22] [cursor=pointer]:
+                - /url: /contest
+            - listitem [ref=e23]:
+              - link "Discuss" [ref=e24] [cursor=pointer]:
+                - /url: /discuss/
+            - listitem [ref=e25]:
+              - generic [ref=e27] [cursor=pointer]:
+                - button "More" [ref=e28]:
+                  - text: More
+                  - img [ref=e29]
+                - list:
+                  - listitem:
+                    - link:
+                      - /url: https://interview.leetcode.com/interview/
+                      - img
+                      - generic: Online Interview
+                  - listitem:
+                    - link:
+                      - /url: /assessment/
+                      - img
+                      - generic: Assessment
+                  - listitem:
+                    - link:
+                      - /url: /store
+                      - generic: Redeem
+                  - listitem:
+                    - link:
+                      - /url: /subscribe/?ref=sto_npl&source=ot
+                      - generic: Premium
+          - generic [ref=e1316]:
+            - generic [ref=e1318]:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - img
+                    - textbox "Search" [ref=e1319]
+              - generic "search" [ref=e1320] [cursor=pointer]:
+                - img [ref=e1321]
+            - generic [ref=e1323]:
+              - link "Register" [ref=e1324] [cursor=pointer]:
+                - /url: /accounts/signup/?next=%2Fdiscuss%2Fpost%2F662866%2Fdp-for-beginners-problems-patterns-sampl-atdb%2F
+              - generic [ref=e1325]: or
+              - link "Log in" [ref=e1326] [cursor=pointer]:
+                - /url: /accounts/login/?next=%2Fdiscuss%2Fpost%2F662866%2Fdp-for-beginners-problems-patterns-sampl-atdb%2F
+            - link "Premium" [ref=e1328] [cursor=pointer]:
+              - /url: /subscribe/?ref=lp_pl&source=ot
+              - generic [ref=e1329]: Premium
+      - generic [ref=e32]:
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - link [ref=e36] [cursor=pointer]:
+              - /url: /discuss/
+              - button [ref=e37]:
+                - img [ref=e39]
+            - button [ref=e41] [cursor=pointer]:
+              - img [ref=e43]
+          - generic [ref=e46]:
+            - generic [ref=e47]: DP for Beginners [Problems | Patterns | Sample Solutions]
+            - generic [ref=e48]:
+              - link [ref=e50] [cursor=pointer]:
+                - /url: /u/wh0ami/
+              - generic [ref=e51]:
+                - link "Jayant Shekhar" [ref=e54] [cursor=pointer]:
+                  - /url: /u/wh0ami/
+                - generic [ref=e55]:
+                  - generic [ref=e56]:
+                    - img [ref=e57]
+                    - generic [ref=e59]: "441742"
+                  - generic [ref=e60]:
+                    - img [ref=e61]
+                    - generic [ref=e63]: May 31, 2020
+                  - generic [ref=e64]:
+                    - img [ref=e66]
+                    - generic [ref=e68]: Dec 16, 2021
+            - generic [ref=e69]:
+              - link "Dynamic Programming" [ref=e70] [cursor=pointer]:
+                - /url: /discuss/topic/dynamic-programming/
+              - link "Career" [ref=e71] [cursor=pointer]:
+                - /url: /discuss/topic/career/
+          - generic [ref=e75]:
+            - paragraph [ref=e76]:
+              - text: As some folks requested to list down good Dynamic Programming problems to start practice with. So, I am listing down them below and dividing them into different DP problem pattern. Problem listed in group follow a particular pattern and similar approach to solve them. I have tried to list those which till now I have solved, might have missed a few as well. Mostly are LC Medium problems and few LC Hard ones.
+              - text: Beginner folks can wish to look at solutions listed below of particular pattern and can try to solve the other problem themselves.
+            - paragraph [ref=e77]:
+              - text: "Full problem list:"
+              - link "https://leetcode.com/list/x1k8lxi5" [ref=e78] [cursor=pointer]:
+                - /url: https://leetcode.com/list/x1k8lxi5
+            - paragraph [ref=e79]:
+              - strong [ref=e80]: "Longest Increasing Subsequence variants:"
+              - link "https://leetcode.com/problems/longest-increasing-subsequence/" [ref=e81] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/longest-increasing-subsequence/
+              - link "https://leetcode.com/problems/largest-divisible-subset/" [ref=e82] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/largest-divisible-subset/
+              - link "https://leetcode.com/problems/russian-doll-envelopes/" [ref=e83] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/russian-doll-envelopes/
+              - link "https://leetcode.com/problems/maximum-length-of-pair-chain/" [ref=e84] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/maximum-length-of-pair-chain/
+              - link "https://leetcode.com/problems/number-of-longest-increasing-subsequence/" [ref=e85] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/number-of-longest-increasing-subsequence/
+              - link "https://leetcode.com/problems/delete-and-earn/" [ref=e86] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/delete-and-earn/
+              - link "https://leetcode.com/problems/longest-string-chain/" [ref=e87] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/longest-string-chain/
+            - paragraph [ref=e88]:
+              - strong [ref=e89]: "Partition Subset:"
+              - link "https://leetcode.com/problems/partition-equal-subset-sum/" [ref=e90] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/partition-equal-subset-sum/
+              - link "https://leetcode.com/problems/last-stone-weight-ii/" [ref=e91] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/last-stone-weight-ii/
+            - paragraph [ref=e92]:
+              - strong [ref=e93]: "BitMasking:"
+              - link "https://leetcode.com/problems/partition-to-k-equal-sum-subsets/" [ref=e94] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/partition-to-k-equal-sum-subsets/
+            - paragraph [ref=e95]:
+              - strong [ref=e96]: "Longest Common Subsequence Variant:"
+              - link "https://leetcode.com/problems/longest-common-subsequence/" [ref=e97] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/longest-common-subsequence/
+              - link "https://leetcode.com/problems/edit-distance/" [ref=e98] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/edit-distance/
+              - link "https://leetcode.com/problems/distinct-subsequences/" [ref=e99] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/distinct-subsequences/
+              - link "https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/" [ref=e100] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/
+            - paragraph [ref=e101]:
+              - strong [ref=e102]: "Palindrome:"
+              - link "https://leetcode.com/problems/palindrome-partitioning-ii/" [ref=e103] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/palindrome-partitioning-ii/
+              - link "https://leetcode.com/problems/palindromic-substrings/" [ref=e104] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/palindromic-substrings/
+            - paragraph [ref=e105]:
+              - strong [ref=e106]: "Coin Change variant:"
+              - link "https://leetcode.com/problems/coin-change/" [ref=e107] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/coin-change/
+              - link "https://leetcode.com/problems/coin-change-2/" [ref=e108] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/coin-change-2/
+              - link "https://leetcode.com/problems/combination-sum-iv/" [ref=e109] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/combination-sum-iv/
+              - link "https://leetcode.com/problems/perfect-squares/" [ref=e110] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/perfect-squares/
+              - link "https://leetcode.com/problems/minimum-cost-for-tickets/" [ref=e111] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/minimum-cost-for-tickets/
+            - paragraph [ref=e112]:
+              - strong [ref=e113]: "Matrix multiplication variant:"
+              - link "https://leetcode.com/problems/minimum-score-triangulation-of-polygon/" [ref=e114] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/minimum-score-triangulation-of-polygon/
+              - link "https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/" [ref=e115] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/
+              - link "https://leetcode.com/problems/burst-balloons/" [ref=e116] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/burst-balloons/
+            - paragraph [ref=e117]:
+              - strong [ref=e118]: "Matrix/2D Array:"
+              - link "https://leetcode.com/problems/matrix-block-sum/" [ref=e119] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/matrix-block-sum/
+              - link "https://leetcode.com/problems/range-sum-query-2d-immutable/" [ref=e120] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/range-sum-query-2d-immutable/
+              - link "https://leetcode.com/problems/dungeon-game/" [ref=e121] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/dungeon-game/
+              - link "https://leetcode.com/problems/triangle/" [ref=e122] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/triangle/
+              - link "https://leetcode.com/problems/maximal-square/" [ref=e123] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/maximal-square/
+              - link "https://leetcode.com/problems/minimum-falling-path-sum/" [ref=e124] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/minimum-falling-path-sum/
+            - paragraph [ref=e125]:
+              - strong [ref=e126]: "Hash + DP:"
+              - link "https://leetcode.com/problems/target-sum/" [ref=e127] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/target-sum/
+              - link "https://leetcode.com/problems/longest-arithmetic-sequence/" [ref=e128] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/longest-arithmetic-sequence/
+              - link "https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/" [ref=e129] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/
+              - link "https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/" [ref=e130] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/
+            - paragraph [ref=e131]:
+              - strong [ref=e132]: "State machine:"
+              - link "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/" [ref=e133] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+              - link "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/" [ref=e134] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
+              - link "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/" [ref=e135] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
+              - link "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/" [ref=e136] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
+              - link "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/" [ref=e137] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
+              - link "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/" [ref=e138] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
+            - paragraph [ref=e139]:
+              - strong [ref=e140]: "Depth First Search + DP:"
+              - link "https://leetcode.com/problems/out-of-boundary-paths/" [ref=e141] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/out-of-boundary-paths/
+              - link "https://leetcode.com/problems/knight-probability-in-chessboard/" [ref=e142] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/knight-probability-in-chessboard/
+            - paragraph [ref=e143]:
+              - strong [ref=e144]: "Minimax DP:"
+              - link "https://leetcode.com/problems/predict-the-winner/" [ref=e145] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/predict-the-winner/
+              - link "https://leetcode.com/problems/stone-game/" [ref=e146] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/stone-game/
+            - paragraph [ref=e147]:
+              - strong [ref=e148]: "Misc:"
+              - link "https://leetcode.com/problems/greatest-sum-divisible-by-three/" [ref=e149] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/greatest-sum-divisible-by-three/
+              - link "https://leetcode.com/problems/decode-ways/" [ref=e150] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/decode-ways/
+              - link "https://leetcode.com/problems/perfect-squares/" [ref=e151] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/perfect-squares/
+              - link "https://leetcode.com/problems/count-numbers-with-unique-digits/" [ref=e152] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/count-numbers-with-unique-digits/
+              - link "https://leetcode.com/problems/longest-turbulent-subarray/" [ref=e153] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/longest-turbulent-subarray/
+              - link "https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/" [ref=e154] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/
+            - separator [ref=e155]
+            - heading "Sample solutions for each of above problem type:" [level=1] [ref=e156]
+            - separator [ref=e157]
+            - paragraph [ref=e158]:
+              - strong [ref=e159]: Longest Increasing Subsequence
+              - link "https://leetcode.com/problems/longest-increasing-subsequence/" [ref=e160] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/longest-increasing-subsequence/
+              - link "https://leetcode.com/problems/largest-divisible-subset/" [ref=e161] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/largest-divisible-subset/
+              - link "https://leetcode.com/problems/russian-doll-envelopes/" [ref=e162] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/russian-doll-envelopes/
+              - link "https://leetcode.com/problems/maximum-length-of-pair-chain/" [ref=e163] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/maximum-length-of-pair-chain/
+              - link "https://leetcode.com/problems/number-of-longest-increasing-subsequence/" [ref=e164] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/number-of-longest-increasing-subsequence/
+              - link "https://leetcode.com/problems/delete-and-earn/" [ref=e165] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/delete-and-earn/
+              - link "https://leetcode.com/problems/longest-string-chain/" [ref=e166] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/longest-string-chain/
+            - code [ref=e170]:
+              - generic [ref=e171]: "class Solution {"
+              - generic [ref=e172]: "public:"
+              - generic [ref=e173]: "int lengthOfLIS(vector<int>& nums) {"
+              - generic [ref=e174]: int n = nums.size();
+              - generic [ref=e175]: vector<int>LIS(n+1, 1);
+              - generic [ref=e176]: "for (int i = 0; i < n; i++) {"
+              - generic [ref=e177]: "for (int j = 0; j < i; j++) {"
+              - generic [ref=e178]: if (nums[i] > nums[j])
+              - generic [ref=e179]: LIS[i] = max(LIS[i], 1 + LIS[j]);
+              - generic [ref=e180]: "}"
+              - generic [ref=e181]: "}"
+              - generic [ref=e182]: int ans = 0;
+              - generic [ref=e183]: "for (int i = 0; i < n; i++) {"
+              - generic [ref=e184]: ans = max(ans, LIS[i]);
+              - generic [ref=e185]: "}"
+              - generic [ref=e186]: return ans;
+              - generic [ref=e187]: "}"
+              - generic [ref=e188]: "};"
+            - paragraph [ref=e189]:
+              - strong [ref=e190]: "Partition Subset Sum:"
+              - link "https://leetcode.com/problems/partition-equal-subset-sum/" [ref=e191] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/partition-equal-subset-sum/
+              - link "https://leetcode.com/problems/last-stone-weight-ii/" [ref=e192] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/last-stone-weight-ii/
+            - code [ref=e196]:
+              - generic [ref=e197]: "class Solution {"
+              - generic [ref=e198]: "public:"
+              - generic [ref=e199]: "bool canPartition(vector<int>& nums) {"
+              - generic [ref=e200]: int n = nums.size();
+              - generic [ref=e201]: int sum = 0;
+              - generic [ref=e202]: for (int i = 0; i < n; i++)
+              - generic [ref=e203]: sum += nums[i];
+              - generic [ref=e204]: if (sum % 2 != 0) return false;
+              - generic [ref=e205]: int target = sum/2;
+              - generic [ref=e206]: vector<bool>dp(target+1, false);
+              - generic [ref=e207]: dp[0] = true;
+              - generic [ref=e208]: "for (int i = 0; i < n; i++) {"
+              - generic [ref=e209]: "for (int j = target; j >= nums[i]; j--) {"
+              - generic [ref=e210]: dp[j] = dp[j] | dp[j - nums[i]];
+              - generic [ref=e211]: "}"
+              - generic [ref=e212]: "}"
+              - generic [ref=e213]: return dp[target];
+              - generic [ref=e214]: "}"
+              - generic [ref=e215]: "};"
+            - paragraph [ref=e216]:
+              - strong [ref=e217]: "BitMasking in DP:"
+              - link "https://leetcode.com/problems/partition-to-k-equal-sum-subsets/" [ref=e218] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/partition-to-k-equal-sum-subsets/
+            - code [ref=e222]:
+              - generic [ref=e223]: "class Solution {"
+              - generic [ref=e224]: int dp[(1<<16) + 2];
+              - generic [ref=e225]: "public:"
+              - generic [ref=e226]: "bool canPartitionKSubsets(vector<int>& nums, int k) {"
+              - generic [ref=e227]: int n = nums.size();
+              - generic [ref=e228]: fill(dp, dp+(1<<16)+2, -1);
+              - generic [ref=e229]: int sum = 0;
+              - generic [ref=e230]: for (int i = 0; i < n; i++)
+              - generic [ref=e231]: sum += nums[i];
+              - generic [ref=e232]: if (sum % k != 0) return false;
+              - generic [ref=e233]: int target = sum/k;
+              - generic [ref=e234]: dp[0] = 0;
+              - generic [ref=e235]: "for (int mask = 0; mask < (1<<n); mask++) {"
+              - generic [ref=e236]: if (dp[mask] == -1) continue;
+              - generic [ref=e237]: "for (int i = 0; i < n; i++) {"
+              - generic [ref=e238]: if (!(mask & (1 << i)) && dp[mask] + nums[i] <= target)
+              - generic [ref=e239]: dp[mask | (1 << i)] = (dp[mask] + nums[i]) % target;
+              - generic [ref=e240]: "}"
+              - generic [ref=e241]: "}"
+              - generic [ref=e242]: return dp[(1<<n)-1] == 0;
+              - generic [ref=e243]: "}"
+              - generic [ref=e244]: "};"
+            - paragraph [ref=e245]:
+              - strong [ref=e246]: Longest Common Subsequence
+              - link "https://leetcode.com/problems/longest-common-subsequence/" [ref=e247] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/longest-common-subsequence/
+              - link "https://leetcode.com/problems/edit-distance/" [ref=e248] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/edit-distance/
+              - link "https://leetcode.com/problems/distinct-subsequences/" [ref=e249] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/distinct-subsequences/
+              - link "https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/" [ref=e250] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/
+            - code [ref=e254]:
+              - generic [ref=e255]: "class Solution {"
+              - generic [ref=e256]: "int longestCommonSubsequenceUtil(string text1, string text2, int n, int m) {"
+              - generic [ref=e257]: if (n == 0 || m == 0)
+              - generic [ref=e258]: return 0;
+              - generic [ref=e259]: vector<vector<int>>L(n+1, vector<int>(m+1, 0));
+              - generic [ref=e260]: "for (int i = 0; i <= n; i++) {"
+              - generic [ref=e261]: "for (int j = 0; j <= m; j++) {"
+              - generic [ref=e262]: if (i == 0 || j == 0)
+              - generic [ref=e263]: L[i][j] = 0;
+              - generic [ref=e264]: else if (text1[i-1] == text2[j-1])
+              - generic [ref=e265]: L[i][j] = 1 + L[i-1][j-1];
+              - generic [ref=e266]: else
+              - generic [ref=e267]: L[i][j] = max(L[i][j-1], L[i-1][j]);
+              - generic [ref=e268]: "}"
+              - generic [ref=e269]: "}"
+              - generic [ref=e270]: return L[n][m];
+              - generic [ref=e271]: "}"
+              - generic [ref=e272]: "public:"
+              - generic [ref=e273]: "int longestCommonSubsequence(string text1, string text2) {"
+              - generic [ref=e274]: int n = text1.size();
+              - generic [ref=e275]: int m = text2.size();
+              - generic [ref=e276]: return longestCommonSubsequenceUtil(text1, text2, n, m);
+              - generic [ref=e277]: "}"
+              - generic [ref=e278]: "};"
+            - paragraph [ref=e279]:
+              - strong [ref=e280]: "Palindrome:"
+              - link "https://leetcode.com/problems/palindrome-partitioning-ii/" [ref=e281] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/palindrome-partitioning-ii/
+              - link "https://leetcode.com/problems/palindromic-substrings/" [ref=e282] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/palindromic-substrings/
+            - code [ref=e286]:
+              - generic [ref=e287]: "class Solution {"
+              - generic [ref=e288]: "public:"
+              - generic [ref=e289]: "int minCut(string s) {"
+              - generic [ref=e290]: int n = s.length();
+              - generic [ref=e291]: int res[n];
+              - generic [ref=e292]: bool P[n][n];
+              - generic [ref=e293]: for (int i = 0; i < n; i++)
+              - generic [ref=e294]: P[i][i] = true;
+              - generic [ref=e295]: "for (int L = 2; L <= n; L++) {"
+              - generic [ref=e296]: "for (int i = 0; i < n-L+1; i++) {"
+              - generic [ref=e297]: int j = i+L-1;
+              - generic [ref=e298]: "if (L == 2) {"
+              - generic [ref=e299]: P[i][j] = (s[i] == s[j]);
+              - generic [ref=e300]: "} else {"
+              - generic [ref=e301]: P[i][j] = (s[i] == s[j]) && P[i+1][j-1];
+              - generic [ref=e302]: "}"
+              - generic [ref=e303]: "}"
+              - generic [ref=e304]: "}"
+              - generic [ref=e305]: "for (int i = 0; i < n; i++) {"
+              - generic [ref=e306]: if (P[0][i])
+              - generic [ref=e307]: res[i] = 0;
+              - generic [ref=e308]: "else {"
+              - generic [ref=e309]: res[i] = INT_MAX;
+              - generic [ref=e310]: "for (int j = 0; j < i; j++) {"
+              - generic [ref=e311]: if (P[j+1][i] && res[i] > 1 + res[j])
+              - generic [ref=e312]: res[i] = 1+res[j];
+              - generic [ref=e313]: "}"
+              - generic [ref=e314]: "}"
+              - generic [ref=e315]: "}"
+              - generic [ref=e316]: "return res[n-1] == INT_MAX ? 1 : res[n-1];"
+              - generic [ref=e317]: "}"
+              - generic [ref=e318]: "};"
+            - paragraph [ref=e319]:
+              - strong [ref=e320]: "Coin Change:"
+              - link "https://leetcode.com/problems/coin-change/" [ref=e321] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/coin-change/
+              - link "https://leetcode.com/problems/coin-change-2/" [ref=e322] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/coin-change-2/
+              - link "https://leetcode.com/problems/combination-sum-iv/" [ref=e323] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/combination-sum-iv/
+              - link "https://leetcode.com/problems/perfect-squares/" [ref=e324] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/perfect-squares/
+              - link "https://leetcode.com/problems/minimum-cost-for-tickets/" [ref=e325] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/minimum-cost-for-tickets/
+            - code [ref=e329]:
+              - generic [ref=e330]: "class Solution {"
+              - generic [ref=e331]: "public:"
+              - generic [ref=e332]: "int coinChange(vector<int>& coins, int amount) {"
+              - generic [ref=e333]: int n = coins.size();
+              - generic [ref=e334]: if (n == 0) return 0;
+              - generic [ref=e335]: vector<int>res(amount+1, INT_MAX);
+              - generic [ref=e336]: res[0] = 0;
+              - generic [ref=e337]: "for (int i = 0; i < n; i++) {"
+              - generic [ref=e338]: "for (int j = coins[i]; j <= amount; j++) {"
+              - generic [ref=e339]: if (res[j-coins[i]] != INT_MAX)
+              - generic [ref=e340]: res[j] = min(res[j], 1+res[j-coins[i]]);
+              - generic [ref=e341]: "}"
+              - generic [ref=e342]: "}"
+              - generic [ref=e343]: "return res[amount] != INT_MAX ? res[amount] : -1;"
+              - generic [ref=e344]: "}"
+              - generic [ref=e345]: "};"
+            - paragraph [ref=e346]:
+              - strong [ref=e347]: "Matrix multiplication:"
+              - link "https://leetcode.com/problems/minimum-score-triangulation-of-polygon/" [ref=e348] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/minimum-score-triangulation-of-polygon/
+              - link "https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/" [ref=e349] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/
+              - link "https://leetcode.com/problems/burst-balloons/" [ref=e350] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/burst-balloons/
+            - code [ref=e354]:
+              - generic [ref=e355]: "class Solution {"
+              - generic [ref=e356]: "public:"
+              - generic [ref=e357]: "int minScoreTriangulation(vector<int>& A) {"
+              - generic [ref=e358]: int n = A.size();
+              - generic [ref=e359]: vector<vector<int>>dp(n, vector<int>(n, 0));
+              - generic [ref=e360]: "for (int L = 2; L <= n; L++) {"
+              - generic [ref=e361]: "for (int i = 0; i+L < n; i++) {"
+              - generic [ref=e362]: int j = i+L;
+              - generic [ref=e363]: dp[i][j] = INT_MAX;
+              - generic [ref=e364]: "for (int k = i+1; k < j; k++) {"
+              - generic [ref=e365]: dp[i][j] = min(dp[i][j], dp[i][k] + dp[k][j] + A[i]*A[k]*A[j]);
+              - generic [ref=e366]: "}"
+              - generic [ref=e367]: "}"
+              - generic [ref=e368]: "}"
+              - generic [ref=e369]: return dp[0][n-1];
+              - generic [ref=e370]: "}"
+              - generic [ref=e371]: "};"
+            - paragraph [ref=e372]:
+              - strong [ref=e373]: "Matrix/2D Array:"
+              - link "https://leetcode.com/problems/matrix-block-sum/" [ref=e374] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/matrix-block-sum/
+              - link "https://leetcode.com/problems/range-sum-query-2d-immutable/" [ref=e375] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/range-sum-query-2d-immutable/
+              - link "https://leetcode.com/problems/dungeon-game/" [ref=e376] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/dungeon-game/
+              - link "https://leetcode.com/problems/triangle/" [ref=e377] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/triangle/
+              - link "https://leetcode.com/problems/maximal-square/" [ref=e378] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/maximal-square/
+              - link "https://leetcode.com/problems/minimum-falling-path-sum/" [ref=e379] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/minimum-falling-path-sum/
+            - code [ref=e383]:
+              - generic [ref=e384]: "class Solution {"
+              - generic [ref=e385]: "public:"
+              - generic [ref=e386]: "vector<vector<int>> matrixBlockSum(vector<vector<int>>& mat, int K) {"
+              - generic [ref=e387]: int m = mat.size();
+              - generic [ref=e388]: int n = mat[0].size();
+              - generic [ref=e389]: vector<vector<int>>sum(m+1, vector<int>(n+1, 0));
+              - generic [ref=e390]: "for (int i = 1; i <= m; i++) {"
+              - generic [ref=e391]: "for (int j = 1; j <= n; j++) {"
+              - generic [ref=e392]: sum[i][j] = sum[i-1][j] + sum[i][j-1] - sum[i-1][j-1] + mat[i-1][j-1];
+              - generic [ref=e393]: "}"
+              - generic [ref=e394]: "}"
+              - generic [ref=e395]: vector<vector<int>>res(m, vector<int>(n, 0));
+              - generic [ref=e396]: "for (int i = 0; i < m; i++) {"
+              - generic [ref=e397]: "for (int j = 0; j < n; j++) {"
+              - generic [ref=e398]: int r1 = max(0, i-K); int c1 = max(0, j-K);
+              - generic [ref=e399]: int r2 = min(m-1, i+K); int c2 = min(n-1, j+K);
+              - generic [ref=e400]: r1++; r2++;
+              - generic [ref=e401]: c1++; c2++;
+              - generic [ref=e402]: res[i][j] = sum[r2][c2] - (sum[r2][c1-1] + sum[r1-1][c2]- sum[r1-1][c1-1]);
+              - generic [ref=e403]: "}"
+              - generic [ref=e404]: "}"
+              - generic [ref=e405]: return res;
+              - generic [ref=e406]: "}"
+              - generic [ref=e407]: "};"
+            - paragraph [ref=e408]:
+              - strong [ref=e409]: "Hash + DP:"
+              - link "https://leetcode.com/problems/target-sum/" [ref=e410] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/target-sum/
+              - link "https://leetcode.com/problems/longest-arithmetic-sequence/" [ref=e411] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/longest-arithmetic-sequence/
+              - link "https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/" [ref=e412] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/
+              - link "https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/" [ref=e413] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/
+            - code [ref=e417]:
+              - generic [ref=e418]: "class Solution {"
+              - generic [ref=e419]: "public:"
+              - generic [ref=e420]: "int findTargetSumWays(vector<int>& nums, int S) {"
+              - generic [ref=e421]: int n = nums.size();
+              - generic [ref=e422]: unordered_map<int, int>hm;
+              - generic [ref=e423]: hm[0] = 1;
+              - generic [ref=e424]: "for (int i = 0; i < n; i++) {"
+              - generic [ref=e425]: auto mp = hm;
+              - generic [ref=e426]: hm.clear();
+              - generic [ref=e427]: "for (auto it = mp.begin(); it != mp.end(); it++) {"
+              - generic [ref=e428]: hm[it->first + nums[i]] += it->second;
+              - generic [ref=e429]: hm[it->first - nums[i]] += it->second;
+              - generic [ref=e430]: "}"
+              - generic [ref=e431]: "}"
+              - generic [ref=e432]: return hm[S];
+              - generic [ref=e433]: "}"
+              - generic [ref=e434]: "};"
+            - paragraph [ref=e435]:
+              - strong [ref=e436]: "State machine:"
+              - link "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/" [ref=e437] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+              - link "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/" [ref=e438] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
+              - link "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/" [ref=e439] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
+              - link "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/" [ref=e440] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
+              - link "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/" [ref=e441] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
+              - link "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/" [ref=e442] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
+            - code [ref=e446]:
+              - generic [ref=e447]: "class Solution {"
+              - generic [ref=e448]: "public:"
+              - generic [ref=e449]: "int maxProfit(vector<int>& prices, int fee) {"
+              - generic [ref=e450]: int n = prices.size();
+              - generic [ref=e451]: vector<int>buy(n, 0);
+              - generic [ref=e452]: vector<int>sell(n, 0);
+              - generic [ref=e453]: buy[0] = -prices[0], sell[0] = 0;
+              - generic [ref=e454]: "for (int i = 1; i < n; i++) {"
+              - generic [ref=e455]: buy[i] = max(buy[i-1], sell[i-1]-prices[i]);
+              - generic [ref=e456]: sell[i] = max(sell[i-1], buy[i-1]+prices[i]-fee);
+              - generic [ref=e457]: "}"
+              - generic [ref=e458]: return sell[n-1];
+              - generic [ref=e459]: "}"
+              - generic [ref=e460]: "};"
+            - paragraph [ref=e461]:
+              - text: "Depth First Search +DP:"
+              - link "https://leetcode.com/problems/out-of-boundary-paths/" [ref=e462] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/out-of-boundary-paths/
+              - link "https://leetcode.com/problems/knight-probability-in-chessboard/" [ref=e463] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/knight-probability-in-chessboard/
+            - code [ref=e467]:
+              - generic [ref=e468]: "class Solution {"
+              - generic [ref=e469]: int mod = 1000000007;
+              - generic [ref=e470]: "int dfs(int m, int n, int N, int r, int c, vector<vector<vector<int>>>& dp) {"
+              - generic [ref=e471]: if (r < 0 || c < 0 || r >= m || c >= n) return 1;
+              - generic [ref=e472]: if (N == 0) return 0;
+              - generic [ref=e473]: if (dp[N][r][c] != -1) return dp[N][r][c]%mod;
+              - generic [ref=e474]: int moves = 0;
+              - generic [ref=e475]: moves = (moves + dfs(m, n, N-1, r, c+1, dp))%mod;
+              - generic [ref=e476]: moves = (moves + dfs(m, n, N-1, r, c-1, dp))%mod;
+              - generic [ref=e477]: moves = (moves + dfs(m, n, N-1, r+1, c, dp))%mod;
+              - generic [ref=e478]: moves = (moves + dfs(m, n, N-1, r-1, c, dp))%mod;
+              - generic [ref=e479]: dp[N][r][c] = moves%mod;
+              - generic [ref=e480]: return dp[N][r][c];
+              - generic [ref=e481]: "}"
+              - generic [ref=e482]: "public:"
+              - generic [ref=e483]: "int findPaths(int m, int n, int N, int i, int j) {"
+              - generic [ref=e484]: vector<vector<vector<int>>>dp(N+1, vector<vector<int>>(m+1, vector<int>(n+1, -1)));
+              - generic [ref=e485]: return dfs(m, n, N, i, j, dp);
+              - generic [ref=e486]: "}"
+              - generic [ref=e487]: "};"
+            - paragraph [ref=e488]:
+              - strong [ref=e489]: "Minimax DP:"
+              - link "https://leetcode.com/problems/predict-the-winner/" [ref=e490] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/predict-the-winner/
+              - link "https://leetcode.com/problems/stone-game/" [ref=e491] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/stone-game/
+            - code [ref=e495]:
+              - generic [ref=e496]: "class Solution {"
+              - generic [ref=e497]: "public:"
+              - generic [ref=e498]: "bool PredictTheWinner(vector<int>& nums) {"
+              - generic [ref=e499]: int n = nums.size();
+              - generic [ref=e500]: int res[n][n];
+              - generic [ref=e501]: for (int i = 0; i < n; i++)
+              - generic [ref=e502]: res[i][i] = nums[i];
+              - generic [ref=e503]: "for (int l = 2; l <= n; l++) {"
+              - generic [ref=e504]: "for (int i = 0; i+l-1 < n; i++) {"
+              - generic [ref=e505]: int j = i+l-1;
+              - generic [ref=e506]: "int a = (i+1 <= j-1) ? res[i+1][j-1] : 0;"
+              - generic [ref=e507]: "int b = (i+2 <= j) ? res[i+2][j] : 0;"
+              - generic [ref=e508]: "int c = (i <= j-2) ? res[i][j-2] : 0;"
+              - generic [ref=e509]: res[i][j] = max(nums[i] + min(a,b), nums[j] + min(a, c));
+              - generic [ref=e510]: "}"
+              - generic [ref=e511]: "}"
+              - generic [ref=e512]: int total = 0;
+              - generic [ref=e513]: for (int i = 0; i < n; i++)
+              - generic [ref=e514]: total += nums[i];
+              - generic [ref=e515]: return res[0][n-1] >= total - res[0][n-1];
+              - generic [ref=e516]: "}"
+              - generic [ref=e517]: "};"
+            - paragraph [ref=e518]:
+              - strong [ref=e519]: "Miscellaneous:"
+              - link "https://leetcode.com/problems/greatest-sum-divisible-by-three/" [ref=e520] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/greatest-sum-divisible-by-three/
+              - link "https://leetcode.com/problems/decode-ways/" [ref=e521] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/decode-ways/
+              - link "https://leetcode.com/problems/count-numbers-with-unique-digits/" [ref=e522] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/count-numbers-with-unique-digits/
+              - link "https://leetcode.com/problems/longest-turbulent-subarray/" [ref=e523] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/longest-turbulent-subarray/
+              - link "https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/" [ref=e524] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/
+            - paragraph [ref=e525]: Please point out issues in solutions if you find any. There might be better approaches in few.
+          - generic [ref=e759]:
+            - generic [ref=e760]: Advertisement
+            - img [ref=e764] [cursor=pointer]
+          - generic [ref=e528]:
+            - generic [ref=e529]:
+              - button "3.5K" [ref=e530] [cursor=pointer]:
+                - img [ref=e532]
+                - generic [ref=e534]: 3.5K
+              - button [ref=e536] [cursor=pointer]:
+                - img [ref=e538]
+            - button "91" [ref=e540] [cursor=pointer]:
+              - img [ref=e542]
+              - generic [ref=e544]: "91"
+            - button [ref=e546] [cursor=pointer]:
+              - button [ref=e547]:
+                - img [ref=e549]
+          - generic [ref=e551]:
+            - generic [ref=e552]:
+              - img [ref=e554]
+              - generic [ref=e556]: Comments (91)
+              - button "Sort by:Best" [ref=e560] [cursor=pointer]:
+                - generic [ref=e561]:
+                  - generic [ref=e562]: "Sort by:"
+                  - text: Best
+                - generic:
+                  - img
+            - generic [ref=e566]:
+              - textbox "Type comment here..." [ref=e567]
+              - generic [ref=e568]:
+                - generic [ref=e570]:
+                  - img [ref=e572] [cursor=pointer]
+                  - img [ref=e575] [cursor=pointer]
+                  - img [ref=e578] [cursor=pointer]
+                  - img [ref=e581] [cursor=pointer]
+                - button "Comment" [disabled] [ref=e584] [cursor=pointer]
+            - generic [ref=e766]:
+              - generic [ref=e768]:
+                - generic [ref=e769]:
+                  - link [ref=e771] [cursor=pointer]:
+                    - /url: /u/organicapplefarmer/
+                  - generic [ref=e773]:
+                    - link "Organic Apple Farmer" [ref=e776] [cursor=pointer]:
+                      - /url: /u/organicapplefarmer/
+                    - generic [ref=e779]: May 31, 2020
+                - generic [ref=e780]:
+                  - generic [ref=e783]:
+                    - generic [ref=e786]:
+                      - paragraph [ref=e787]: I used to solve DP problems after DP problems without really it clicking in my head. I would see a solution and wonder "how the heck did they come with that solution..."
+                      - paragraph [ref=e788]: Here is my practical guide to solving DP problems.
+                      - list [ref=e789]:
+                        - listitem [ref=e790]:
+                          - paragraph [ref=e791]: The order of solving a dp problem should be 1) come up with a recurrence relation first 2) code it up. The first part only needs a pen and paper.
+                        - listitem [ref=e792]:
+                          - paragraph [ref=e793]:
+                            - text: When coming up with a recurrence relation, separately come up with a general case and base cases.
+                            - text: "**2.1 when coming up with a general case, assign well"
+                            - emphasis [ref=e794]: defined English meaning
+                            - text: to your dp term, dp[...][...][...]... e.g. for
+                            - link "https://leetcode.com/problems/longest-increasing-subsequence/" [ref=e795] [cursor=pointer]:
+                              - /url: https://leetcode.com/problems/longest-increasing-subsequence/
+                            - text: ", dp[i] = the length of the longest increasing subsequence that ENDS on element i."
+                            - text: "**2.2 once you define your meaning, express the answer to the original problem in terms of your dp terms. If you can't do this, then it means your dp definition likely lacks certain necessary information. e.g. for longest increasing subsequence, ans == max(dp[i]) for 0 <= i < n, n == length of an input array (because you don't know where an optimal solution ends)"
+                            - text: "**2.3 base cases are usually straightforwardly defined if you follow the top-down approach. i.e. the conditions in which your recursive function ends. If your recursive function is stuck in an infinite loop, you are probably missing a base case (though it is possible your general case is messed up and creates a cycle. see my point 4)"
+                        - listitem [ref=e796]:
+                          - paragraph [ref=e797]: People usually prefer either the top-down or the bottom-up style. Stick with one or the other and always code in some template. Then, writing code is a matter of translating your recurrence relation. This way, you avoid mistakes.
+                        - listitem [ref=e798]:
+                          - paragraph [ref=e799]: At its core, DP problems are really graph problems. Here each dp[...][...][...] terms are nodes and edges are drawn based on recurrence relations. For your problem to have a DP solution, this graph MUST BE a DAG. This is usually what textbooks mean "optimal substructure". For me, this connection of DP to its graph representation greatly helped.
+                        - listitem [ref=e800]:
+                          - paragraph [ref=e801]: Once you "get" the solid understanding, then solve problems to find and internalize common patterns.
+                      - paragraph [ref=e802]: To me, the practice of 2.1 and understanding of 4 were the tipping point. After that, DP became really easy for me and a weapon to solve many problems, that even have other solutions (usually greedy, which is harder to come up with)
+                    - generic [ref=e804] [cursor=pointer]:
+                      - img [ref=e806]
+                      - text: Read more
+                  - generic [ref=e809]:
+                    - generic [ref=e810]:
+                      - generic [ref=e811]:
+                        - img [ref=e814] [cursor=pointer]
+                        - generic [ref=e816] [cursor=pointer]: "435"
+                      - img [ref=e820] [cursor=pointer]
+                    - generic [ref=e822] [cursor=pointer]:
+                      - img [ref=e823]
+                      - generic [ref=e825]: Show 11 Replies
+                    - generic [ref=e826] [cursor=pointer]:
+                      - img [ref=e827]
+                      - generic [ref=e829]: Reply
+              - generic [ref=e831]:
+                - generic [ref=e832]:
+                  - link [ref=e834] [cursor=pointer]:
+                    - /url: /u/deepika135/
+                  - generic [ref=e836]:
+                    - link "bits anonymous" [ref=e839] [cursor=pointer]:
+                      - /url: /u/deepika135/
+                    - generic [ref=e842]: Jun 01, 2020
+                - generic [ref=e843]:
+                  - generic [ref=e846]:
+                    - generic [ref=e849]:
+                      - paragraph [ref=e850]:
+                        - text: Edit - As suggested by
+                        - link "@user7846QH" [ref=e851] [cursor=pointer]:
+                          - /url: https://leetcode.com/user7846QH
+                        - text: ", I have moved this comment to a post ("
+                        - link "https://leetcode.com/discuss/general-discussion/665604/Important-and-Useful-links-from-all-over-the-Leetcode" [ref=e852] [cursor=pointer]:
+                          - /url: https://leetcode.com/discuss/general-discussion/665604/Important-and-Useful-links-from-all-over-the-Leetcode
+                        - text: ) so that more number of people can benefit from this. You can find the updated list there.
+                      - paragraph [ref=e853]: I am trying to compile all the good posts on Leetcode. Comment down whichever I missed and I will add all of them here -
+                      - list [ref=e854]:
+                        - listitem [ref=e855]:
+                          - text: DP for beginners by
+                          - link "@wh0ami" [ref=e856] [cursor=pointer]:
+                            - /url: https://leetcode.com/wh0ami
+                          - text: "-"
+                          - link "https://leetcode.com/discuss/general-discussion/662866/dp-for-beginners-problems-patterns-sample-solutions" [ref=e857] [cursor=pointer]:
+                            - /url: https://leetcode.com/discuss/general-discussion/662866/dp-for-beginners-problems-patterns-sample-solutions
+                          - text: "[LIST -"
+                          - link "https://leetcode.com/list/x1k8lxi5" [ref=e858] [cursor=pointer]:
+                            - /url: https://leetcode.com/list/x1k8lxi5
+                          - text: "]"
+                        - listitem [ref=e859]:
+                          - text: Graph for beginners by
+                          - link "@wh0ami" [ref=e860] [cursor=pointer]:
+                            - /url: https://leetcode.com/wh0ami
+                          - text: "-"
+                          - link "https://leetcode.com/discuss/general-discussion/655708/graph-for-beginners-problems-pattern-sample-solutions/562734" [ref=e861] [cursor=pointer]:
+                            - /url: https://leetcode.com/discuss/general-discussion/655708/graph-for-beginners-problems-pattern-sample-solutions/562734
+                          - text: "[LIST -"
+                          - link "https://leetcode.com/list/x1wy4de7" [ref=e862] [cursor=pointer]:
+                            - /url: https://leetcode.com/list/x1wy4de7
+                          - text: "]"
+                        - listitem [ref=e863]:
+                          - text: Sliding window for beginners by
+                          - link "@wh0ami" [ref=e864] [cursor=pointer]:
+                            - /url: https://leetcode.com/wh0ami
+                          - text: "-"
+                          - link "https://leetcode.com/discuss/general-discussion/657507/sliding-window-for-beginners-problems-template-sample-solutions/562721" [ref=e865] [cursor=pointer]:
+                            - /url: https://leetcode.com/discuss/general-discussion/657507/sliding-window-for-beginners-problems-template-sample-solutions/562721
+                          - text: "[LIST -"
+                          - link "https://leetcode.com/list/x1lbzfk3" [ref=e866] [cursor=pointer]:
+                            - /url: https://leetcode.com/list/x1lbzfk3
+                          - text: "]"
+                        - listitem [ref=e867]:
+                          - text: DP Patterns by @atalyk -
+                          - link "https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns" [ref=e868] [cursor=pointer]:
+                            - /url: https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns
+                        - listitem [ref=e869]:
+                          - text: Leetcode patterns from edu_cative_dot_io by @late_riser -
+                          - link "https://leetcode.com/discuss/general-discussion/457546/LeetCode-Problem-Patterns-from-" [ref=e870] [cursor=pointer]:
+                            - /url: https://leetcode.com/discuss/general-discussion/457546/LeetCode-Problem-Patterns-from-
+                          - text: "***"
+                        - listitem [ref=e871]:
+                          - text: List of questions sorted by common patterns by @Maverick2594 -
+                          - link "https://leetcode.com/discuss/career/448285/List-of-questions-sorted-by-common-patterns" [ref=e872] [cursor=pointer]:
+                            - /url: https://leetcode.com/discuss/career/448285/List-of-questions-sorted-by-common-patterns
+                        - listitem [ref=e873]:
+                          - text: How to solve DP - String? Template and 4 Steps to be followed by @igooglethings -
+                          - link "https://leetcode.com/discuss/general-discussion/651719/how-to-solve-dp-string-template-and-4-steps-to-be-followed" [ref=e874] [cursor=pointer]:
+                            - /url: https://leetcode.com/discuss/general-discussion/651719/how-to-solve-dp-string-template-and-4-steps-to-be-followed
+                        - listitem [ref=e875]:
+                          - text: Using bit manipulation to solve problems easily and efficiently by @LHearen -
+                          - link "https://leetcode.com/problems/sum-of-two-integers/discuss/84278/A-summary%3A-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently" [ref=e876] [cursor=pointer]:
+                            - /url: https://leetcode.com/problems/sum-of-two-integers/discuss/84278/A-summary%3A-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently
+                        - listitem [ref=e877]:
+                          - text: Recursive approach to segment trees and range sum queries and lazy propagation -
+                          - link "https://leetcode.com/articles/a-recursive-approach-to-segment-trees-range-sum-queries-lazy-propagation/" [ref=e878] [cursor=pointer]:
+                            - /url: https://leetcode.com/articles/a-recursive-approach-to-segment-trees-range-sum-queries-lazy-propagation/
+                        - listitem [ref=e879]:
+                          - text: How to use Leetcode efficiently and effectively by beginners by @megaspazz -
+                          - link "https://leetcode.com/discuss/career/450215/How-to-use-LeetCode-to-help-yourself-efficiently-and-effectively-(for-beginners)" [ref=e880] [cursor=pointer]:
+                            - /url: https://leetcode.com/discuss/career/450215/How-to-use-LeetCode-to-help-yourself-efficiently-and-effectively-(for-beginners)
+                    - generic [ref=e882] [cursor=pointer]:
+                      - img [ref=e884]
+                      - text: Read more
+                  - generic [ref=e887]:
+                    - generic [ref=e888]:
+                      - generic [ref=e889]:
+                        - img [ref=e892] [cursor=pointer]
+                        - generic [ref=e894] [cursor=pointer]: "202"
+                      - img [ref=e898] [cursor=pointer]
+                    - generic [ref=e900] [cursor=pointer]:
+                      - img [ref=e901]
+                      - generic [ref=e903]: Show 9 Replies
+                    - generic [ref=e904] [cursor=pointer]:
+                      - img [ref=e905]
+                      - generic [ref=e907]: Reply
+              - generic [ref=e909]:
+                - generic [ref=e910]:
+                  - link [ref=e912] [cursor=pointer]:
+                    - /url: /u/atarikere/
+                  - generic [ref=e914]:
+                    - link "Rockstar Developer" [ref=e917] [cursor=pointer]:
+                      - /url: /u/atarikere/
+                    - generic [ref=e920]: May 31, 2020
+                - generic [ref=e921]:
+                  - paragraph [ref=e928]:
+                    - text: Here is the list of the problems. You can clone them.
+                    - link "https://leetcode.com/list/x1k8lxi5" [ref=e929] [cursor=pointer]:
+                      - /url: https://leetcode.com/list/x1k8lxi5
+                  - generic [ref=e931]:
+                    - generic [ref=e932]:
+                      - generic [ref=e933]:
+                        - img [ref=e936] [cursor=pointer]
+                        - generic [ref=e938] [cursor=pointer]: "91"
+                      - img [ref=e942] [cursor=pointer]
+                    - generic [ref=e944] [cursor=pointer]:
+                      - img [ref=e945]
+                      - generic [ref=e947]: Show 4 Replies
+                    - generic [ref=e948] [cursor=pointer]:
+                      - img [ref=e949]
+                      - generic [ref=e951]: Reply
+              - generic [ref=e953]:
+                - generic [ref=e954]:
+                  - link [ref=e956] [cursor=pointer]:
+                    - /url: /u/NoobOP/
+                  - generic [ref=e958]:
+                    - link "NoobOP" [ref=e961] [cursor=pointer]:
+                      - /url: /u/NoobOP/
+                    - generic [ref=e964]: May 31, 2020
+                - generic [ref=e965]:
+                  - paragraph [ref=e972]: This is as good as kasol's maal. :P
+                  - generic [ref=e974]:
+                    - generic [ref=e975]:
+                      - generic [ref=e976]:
+                        - img [ref=e979] [cursor=pointer]
+                        - generic [ref=e981] [cursor=pointer]: "147"
+                      - img [ref=e985] [cursor=pointer]
+                    - generic [ref=e987] [cursor=pointer]:
+                      - img [ref=e988]
+                      - generic [ref=e990]: Show 14 Replies
+                    - generic [ref=e991] [cursor=pointer]:
+                      - img [ref=e992]
+                      - generic [ref=e994]: Reply
+              - generic [ref=e996]:
+                - generic [ref=e997]:
+                  - link [ref=e999] [cursor=pointer]:
+                    - /url: /u/arjunshanewarne3/
+                  - generic [ref=e1001]:
+                    - link "Arjun" [ref=e1004] [cursor=pointer]:
+                      - /url: /u/arjunshanewarne3/
+                    - generic [ref=e1007]: Jun 04, 2020
+                - generic [ref=e1008]:
+                  - paragraph [ref=e1015]: I'd highly recommend everyone read up the section about DP from Jeff Erickson's algorithms book. You can find the DP section separately for free at algorithms(dot)wtf. It's how you should be approaching DP problems when you're just getting started out and don't have the intuition to quickly build states in your head. I'd highly recommend everyone read it once.
+                  - generic [ref=e1017]:
+                    - generic [ref=e1018]:
+                      - generic [ref=e1019]:
+                        - img [ref=e1022] [cursor=pointer]
+                        - generic [ref=e1024] [cursor=pointer]: "40"
+                      - img [ref=e1028] [cursor=pointer]
+                    - generic [ref=e1030] [cursor=pointer]:
+                      - img [ref=e1031]
+                      - generic [ref=e1033]: Show 3 Replies
+                    - generic [ref=e1034] [cursor=pointer]:
+                      - img [ref=e1035]
+                      - generic [ref=e1037]: Reply
+              - generic [ref=e1039]:
+                - generic [ref=e1040]:
+                  - link [ref=e1042] [cursor=pointer]:
+                    - /url: /u/zorgeek/
+                  - generic [ref=e1044]:
+                    - generic [ref=e1046]:
+                      - link "zorgeek" [ref=e1047] [cursor=pointer]:
+                        - /url: /u/zorgeek/
+                      - img "50 Days Badge 2022" [ref=e1049]
+                    - generic [ref=e1052]: Jun 01, 2020
+                - generic [ref=e1053]:
+                  - paragraph [ref=e1060]: leetcode should give this man LC Premium so that he can add premium questions too in this list ....
+                  - generic [ref=e1062]:
+                    - generic [ref=e1063]:
+                      - generic [ref=e1064]:
+                        - img [ref=e1067] [cursor=pointer]
+                        - generic [ref=e1069] [cursor=pointer]: "59"
+                      - img [ref=e1073] [cursor=pointer]
+                    - generic [ref=e1075] [cursor=pointer]:
+                      - img [ref=e1076]
+                      - generic [ref=e1078]: Reply
+              - generic [ref=e1080]:
+                - generic [ref=e1081]:
+                  - link [ref=e1083] [cursor=pointer]:
+                    - /url: /u/Aniket_Prantor/
+                  - generic [ref=e1085]:
+                    - link "Pradipta" [ref=e1088] [cursor=pointer]:
+                      - /url: /u/Aniket_Prantor/
+                    - generic [ref=e1091]: May 31, 2020
+                - generic [ref=e1092]:
+                  - paragraph [ref=e1099]:
+                    - link "@wh0ami" [ref=e1100] [cursor=pointer]:
+                      - /url: https://leetcode.com/wh0ami
+                    - text: First Graph, then sliding window, now DP. Keep up the good work.
+                    - text: Can you please do the same for Tree DFS and BFS and Two Pointer Approach?
+                  - generic [ref=e1102]:
+                    - generic [ref=e1103]:
+                      - generic [ref=e1104]:
+                        - img [ref=e1107] [cursor=pointer]
+                        - generic [ref=e1109] [cursor=pointer]: "35"
+                      - img [ref=e1113] [cursor=pointer]
+                    - generic [ref=e1115] [cursor=pointer]:
+                      - img [ref=e1116]
+                      - generic [ref=e1118]: Show 7 Replies
+                    - generic [ref=e1119] [cursor=pointer]:
+                      - img [ref=e1120]
+                      - generic [ref=e1122]: Reply
+              - generic [ref=e1124]:
+                - generic [ref=e1125]:
+                  - link [ref=e1127] [cursor=pointer]:
+                    - /url: /u/Rose_JU/
+                  - generic [ref=e1129]:
+                    - link "Rose_JU" [ref=e1132] [cursor=pointer]:
+                      - /url: /u/Rose_JU/
+                    - generic [ref=e1135]: Jun 01, 2020
+                - generic [ref=e1136]:
+                  - paragraph [ref=e1143]: i think best way to learn DP is to first come up with recursive approach...then sort out the base cases and then solving the problem in bottom up approach...i.e. what Dynamic Programming
+                  - generic [ref=e1145]:
+                    - generic [ref=e1146]:
+                      - generic [ref=e1147]:
+                        - img [ref=e1150] [cursor=pointer]
+                        - generic [ref=e1152] [cursor=pointer]: "27"
+                      - img [ref=e1156] [cursor=pointer]
+                    - generic [ref=e1158] [cursor=pointer]:
+                      - img [ref=e1159]
+                      - generic [ref=e1161]: Show 2 Replies
+                    - generic [ref=e1162] [cursor=pointer]:
+                      - img [ref=e1163]
+                      - generic [ref=e1165]: Reply
+              - generic [ref=e1167]:
+                - generic [ref=e1168]:
+                  - link [ref=e1170] [cursor=pointer]:
+                    - /url: /u/deepika135/
+                  - generic [ref=e1172]:
+                    - link "bits anonymous" [ref=e1175] [cursor=pointer]:
+                      - /url: /u/deepika135/
+                    - generic [ref=e1178]: Jun 01, 2020
+                - generic [ref=e1179]:
+                  - paragraph [ref=e1186]: You are the hero we need but don't deserve!! Thanks for the post! :)
+                  - generic [ref=e1188]:
+                    - generic [ref=e1189]:
+                      - generic [ref=e1190]:
+                        - img [ref=e1193] [cursor=pointer]
+                        - generic [ref=e1195] [cursor=pointer]: "21"
+                      - img [ref=e1199] [cursor=pointer]
+                    - generic [ref=e1201] [cursor=pointer]:
+                      - img [ref=e1202]
+                      - generic [ref=e1204]: Show 1 Replies
+                    - generic [ref=e1205] [cursor=pointer]:
+                      - img [ref=e1206]
+                      - generic [ref=e1208]: Reply
+              - generic [ref=e1210]:
+                - generic [ref=e1211]:
+                  - link [ref=e1213] [cursor=pointer]:
+                    - /url: /u/deleted_user/
+                  - generic [ref=e1215]:
+                    - link "deleted_user" [ref=e1218] [cursor=pointer]:
+                      - /url: /u/deleted_user/
+                    - generic [ref=e1221]: Jun 02, 2020
+                - generic [ref=e1222]:
+                  - paragraph [ref=e1229]: super high quality contribution
+                  - generic [ref=e1231]:
+                    - generic [ref=e1232]:
+                      - generic [ref=e1233]:
+                        - img [ref=e1236] [cursor=pointer]
+                        - generic [ref=e1238] [cursor=pointer]: "12"
+                      - img [ref=e1242] [cursor=pointer]
+                    - generic [ref=e1244] [cursor=pointer]:
+                      - img [ref=e1245]
+                      - generic [ref=e1247]: Reply
+            - navigation [ref=e698]:
+              - button "prev" [disabled]:
+                - img
+              - button "1"
+              - button "2" [ref=e1248] [cursor=pointer]
+              - button "3" [ref=e1249] [cursor=pointer]
+              - button "4" [ref=e1250] [cursor=pointer]
+              - button "5" [ref=e1251] [cursor=pointer]
+              - button "6" [ref=e1252] [cursor=pointer]
+              - button "gap" [disabled]:
+                - img
+              - button "10" [ref=e1253] [cursor=pointer]
+              - button "next" [ref=e1254] [cursor=pointer]:
+                - img [ref=e1255]
+        - generic [ref=e699]:
+          - generic [ref=e700]:
+            - generic [ref=e701]:
+              - img [ref=e703]
+              - generic [ref=e705]: Explore
+            - generic [ref=e1257]:
+              - generic [ref=e1258]:
+                - link "#Interview leetcode Nirupama_7" [ref=e1259] [cursor=pointer]:
+                  - /url: /discuss/topic/interview/
+                  - generic [ref=e1260]: "#Interview"
+                  - generic [ref=e1261]:
+                    - img "leetcode" [ref=e1263]
+                    - img "Nirupama_7" [ref=e1266]
+                - link "📱 LeetCode at Your Fingertips" [ref=e1268] [cursor=pointer]:
+                  - /url: /discuss/post/7939302/leetcode-at-your-fingertips-code-without-027z/
+                  - generic [ref=e1269]: 📱 LeetCode at Your Fingertips
+                - link "Google L5 Team Matching" [ref=e1271] [cursor=pointer]:
+                  - /url: /discuss/post/8238240/google-l5-team-matching-by-anonymous_use-pixk/
+                  - generic [ref=e1272]: Google L5 Team Matching
+              - generic [ref=e1273]:
+                - link "#Career leetcode" [ref=e1274] [cursor=pointer]:
+                  - /url: /discuss/topic/career/
+                  - generic [ref=e1275]: "#Career"
+                  - img "leetcode" [ref=e1278]
+                - link "📱 LeetCode at Your Fingertips" [ref=e1282] [cursor=pointer]:
+                  - /url: /discuss/post/7939302/leetcode-at-your-fingertips-code-without-027z/
+                  - generic [ref=e1283]: 📱 LeetCode at Your Fingertips
+                - link "Google L5 Team Matching" [ref=e1285] [cursor=pointer]:
+                  - /url: /discuss/post/8238240/google-l5-team-matching-by-anonymous_use-pixk/
+                  - generic [ref=e1286]: Google L5 Team Matching
+              - generic [ref=e1287]:
+                - link "#Compensation" [ref=e1288] [cursor=pointer]:
+                  - /url: /discuss/topic/compensation/
+                  - generic [ref=e1289]: "#Compensation"
+                - link "Google L5 Team Matching" [ref=e1295] [cursor=pointer]:
+                  - /url: /discuss/post/8238240/google-l5-team-matching-by-anonymous_use-pixk/
+                  - generic [ref=e1296]: Google L5 Team Matching
+                - link "Microsoft | Software Engineer - 2 (L61) | May 2025 (Rejected)" [ref=e1298] [cursor=pointer]:
+                  - /url: /discuss/post/8234198/microsoft-software-engineer-2-l61-may-20-dusr/
+                  - generic [ref=e1299]: Microsoft | Software Engineer - 2 (L61) | May 2025 (Rejected)
+              - generic [ref=e1300]:
+                - link "#Feedback RShadowMonarch" [ref=e1301] [cursor=pointer]:
+                  - /url: /discuss/topic/feedback/
+                  - generic [ref=e1302]: "#Feedback"
+                  - img "RShadowMonarch" [ref=e1306]
+                - link "Google L5 Team Matching" [ref=e1309] [cursor=pointer]:
+                  - /url: /discuss/post/8238240/google-l5-team-matching-by-anonymous_use-pixk/
+                  - generic [ref=e1310]: Google L5 Team Matching
+                - link "Laid off, career break - 2.8 years, Experience - 8.6 years || Need Advice" [ref=e1312] [cursor=pointer]:
+                  - /url: /discuss/post/8235466/laid-off-career-break-28-years-experienc-fgkb/
+                  - generic [ref=e1313]: Laid off, career break - 2.8 years, Experience - 8.6 years || Need Advice
+              - generic [ref=e1314] [cursor=pointer]: Show More
+          - generic [ref=e740]:
+            - generic [ref=e741]:
+              - link "Download App" [ref=e742] [cursor=pointer]:
+                - /url: https://leetcode.com/app/?utm_campaign=AppPromotion&utm_medium=site&utm_source=site_footer&gio_link_id=nPN4bXe9
+                - img [ref=e744]
+                - text: Download App
+              - link "Support" [ref=e747] [cursor=pointer]:
+                - /url: https://support.leetcode.com/hc/en-us
+              - link "Terms" [ref=e749] [cursor=pointer]:
+                - /url: /terms
+              - link "Privacy Policy" [ref=e751] [cursor=pointer]:
+                - /url: /privacy
+              - generic [ref=e753] [cursor=pointer]: More
+            - link "Copyright © 2026 LeetCode" [ref=e754] [cursor=pointer]:
+              - /url: /
+            - link "United States" [ref=e756] [cursor=pointer]:
+              - /url: /region
+        - generic [ref=e757]:
+          - button:
+            - generic:
+              - img
+    - region "Notifications (F8)":
+      - list
+  - alert [ref=e758]

@@ -221,7 +221,7 @@ function manacher(s) {
     {
       type: 'callout',
       icon: '🪞',
-      color: 'pink',
+      color: 'red',
       content: `**Palindrome algorithm selector:**\n- "Is this a palindrome?" → two pointers, O(n)\n- "Longest palindromic substring" → expand around center O(n²) or Manacher's O(n)\n- "Count palindromic substrings" → expand around center, count on each step\n- "Longest palindromic subsequence" → LCS(s, reverse(s)) = O(n²)\n- "Min cuts / min insertions" → LPS relationship: \n  - min cuts = n - LPS would be wrong; use separate DP\n  - min insertions = n - LPS(s)\n- "Can become palindrome with k deletions?" → n - LPS ≤ k\n- "Palindrome prefix" → KMP LPS last value`,
     },
   ],

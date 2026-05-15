@@ -1,0 +1,1035 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - navigation [ref=e6]:
+        - generic [ref=e7]:
+          - link "LeetCode" [ref=e8] [cursor=pointer]:
+            - /url: /
+            - img [ref=e10]
+          - list [ref=e18]:
+            - listitem [ref=e19]:
+              - link "Problems" [ref=e20] [cursor=pointer]:
+                - /url: /problemset
+            - listitem [ref=e21]:
+              - link "Contest" [ref=e22] [cursor=pointer]:
+                - /url: /contest
+            - listitem [ref=e23]:
+              - link "Discuss" [ref=e24] [cursor=pointer]:
+                - /url: /discuss/
+            - listitem [ref=e25]:
+              - generic [ref=e27] [cursor=pointer]:
+                - button "More" [ref=e28]:
+                  - text: More
+                  - img [ref=e29]
+                - list:
+                  - listitem:
+                    - link:
+                      - /url: https://interview.leetcode.com/interview/
+                      - img
+                      - generic: Online Interview
+                  - listitem:
+                    - link:
+                      - /url: /assessment/
+                      - img
+                      - generic: Assessment
+                  - listitem:
+                    - link:
+                      - /url: /store
+                      - generic: Redeem
+                  - listitem:
+                    - link:
+                      - /url: /subscribe/?ref=sto_npl&source=ot
+                      - generic: Premium
+      - generic [ref=e32]:
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - link [ref=e36] [cursor=pointer]:
+              - /url: /discuss/
+              - button [ref=e37]:
+                - img [ref=e39]
+            - button [ref=e41] [cursor=pointer]:
+              - img [ref=e43]
+          - generic [ref=e46]:
+            - generic [ref=e47]: Solved all dynamic programming (dp) problems in 7 months.
+            - generic [ref=e48]:
+              - link [ref=e50] [cursor=pointer]:
+                - /url: /u/chuka231/
+              - generic [ref=e51]:
+                - link "chuka231" [ref=e54] [cursor=pointer]:
+                  - /url: /u/chuka231/
+                - generic [ref=e55]:
+                  - generic [ref=e56]:
+                    - img [ref=e57]
+                    - generic [ref=e59]: "347207"
+                  - generic [ref=e60]:
+                    - img [ref=e61]
+                    - generic [ref=e63]: Jan 04, 2021
+                  - generic [ref=e64]:
+                    - img [ref=e66]
+                    - generic [ref=e68]: Dec 16, 2021
+            - generic [ref=e69]:
+              - link "Dynamic Programming" [ref=e70] [cursor=pointer]:
+                - /url: /discuss/topic/dynamic-programming/
+              - link "Career" [ref=e71] [cursor=pointer]:
+                - /url: /discuss/topic/career/
+          - generic [ref=e75]:
+            - paragraph [ref=e76]: Hi All,
+            - paragraph [ref=e77]:
+              - text: I just completed my DP adventure which I started in last June and I would like to share my findings in this post.
+              - text: There are total 241 dp tagged problems in LeetCode as of Today, and 26 of them are locked so I only solved the public ones.
+            - list [ref=e78]:
+              - listitem [ref=e79]: First of all, I participated the monthly challange April & May, so this really helped me to build a habbit of daily problem solving
+              - listitem [ref=e80]:
+                - text: Then I started to solve DP problems and kept updating my monthly problem list here.
+                - link "https://leetcode.com/discuss/general-discussion/665187/everyday-dp-challenge-list" [ref=e81] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/general-discussion/665187/everyday-dp-challenge-list
+              - listitem [ref=e82]: The average pace was about 1 problem per day.
+              - listitem [ref=e83]:
+                - text: I read these great articles to learn the general dynamic programming knowledge & patterns
+                - link "https://leetcode.com/discuss/general-discussion/458695/Dynamic-Programming-Patterns" [ref=e84] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/general-discussion/458695/Dynamic-Programming-Patterns
+                - link "https://leetcode.com/discuss/general-discussion/662866/DP-for-Beginners-Problems-or-Patterns-or-Sample-Solutions" [ref=e85] [cursor=pointer]:
+                  - /url: https://leetcode.com/discuss/general-discussion/662866/DP-for-Beginners-Problems-or-Patterns-or-Sample-Solutions
+            - paragraph [ref=e86]:
+              - text: The followings are my categorization of the all 215 DP problems. (In each category, problems are sorted by LeetCode difficulty)
+              - text: "Table version of the list:"
+              - link "https://chuka231.blogspot.com/2021/01/leetcode-all-dynamic-programming.html" [ref=e87] [cursor=pointer]:
+                - /url: https://chuka231.blogspot.com/2021/01/leetcode-all-dynamic-programming.html
+            - table [ref=e88]:
+              - rowgroup [ref=e89]:
+                - row "1.Linear DP" [ref=e90]:
+                  - columnheader "1.Linear DP" [ref=e91]
+              - rowgroup [ref=e92]:
+                - row "https://leetcode.com/problems/climbing-stairs/" [ref=e93]:
+                  - cell "https://leetcode.com/problems/climbing-stairs/" [ref=e94]:
+                    - link "https://leetcode.com/problems/climbing-stairs/" [ref=e95] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/climbing-stairs/
+                - row "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/" [ref=e96]:
+                  - cell "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/" [ref=e97]:
+                    - link "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/" [ref=e98] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+                - row "https://leetcode.com/problems/min-cost-climbing-stairs/" [ref=e99]:
+                  - cell "https://leetcode.com/problems/min-cost-climbing-stairs/" [ref=e100]:
+                    - link "https://leetcode.com/problems/min-cost-climbing-stairs/" [ref=e101] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/min-cost-climbing-stairs/
+                - row "https://leetcode.com/problems/divisor-game/" [ref=e102]:
+                  - cell "https://leetcode.com/problems/divisor-game/" [ref=e103]:
+                    - link "https://leetcode.com/problems/divisor-game/" [ref=e104] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/divisor-game/
+                - row "https://leetcode.com/problems/decode-ways/" [ref=e105]:
+                  - cell "https://leetcode.com/problems/decode-ways/" [ref=e106]:
+                    - link "https://leetcode.com/problems/decode-ways/" [ref=e107] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/decode-ways/
+                - row "https://leetcode.com/problems/unique-binary-search-trees/" [ref=e108]:
+                  - cell "https://leetcode.com/problems/unique-binary-search-trees/" [ref=e109]:
+                    - link "https://leetcode.com/problems/unique-binary-search-trees/" [ref=e110] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/unique-binary-search-trees/
+                - row "https://leetcode.com/problems/house-robber/" [ref=e111]:
+                  - cell "https://leetcode.com/problems/house-robber/" [ref=e112]:
+                    - link "https://leetcode.com/problems/house-robber/" [ref=e113] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/house-robber/
+                - row "https://leetcode.com/problems/perfect-squares/" [ref=e114]:
+                  - cell "https://leetcode.com/problems/perfect-squares/" [ref=e115]:
+                    - link "https://leetcode.com/problems/perfect-squares/" [ref=e116] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/perfect-squares/
+                - row "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/" [ref=e117]:
+                  - cell "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/" [ref=e118]:
+                    - link "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/" [ref=e119] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
+                - row "https://leetcode.com/problems/coin-change/" [ref=e120]:
+                  - cell "https://leetcode.com/problems/coin-change/" [ref=e121]:
+                    - link "https://leetcode.com/problems/coin-change/" [ref=e122] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/coin-change/
+                - row "https://leetcode.com/problems/counting-bits/" [ref=e123]:
+                  - cell "https://leetcode.com/problems/counting-bits/" [ref=e124]:
+                    - link "https://leetcode.com/problems/counting-bits/" [ref=e125] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/counting-bits/
+                - row "https://leetcode.com/problems/integer-break/" [ref=e126]:
+                  - cell "https://leetcode.com/problems/integer-break/" [ref=e127]:
+                    - link "https://leetcode.com/problems/integer-break/" [ref=e128] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/integer-break/
+                - row "https://leetcode.com/problems/count-numbers-with-unique-digits/" [ref=e129]:
+                  - cell "https://leetcode.com/problems/count-numbers-with-unique-digits/" [ref=e130]:
+                    - link "https://leetcode.com/problems/count-numbers-with-unique-digits/" [ref=e131] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/count-numbers-with-unique-digits/
+                - row "https://leetcode.com/problems/wiggle-subsequence/" [ref=e132]:
+                  - cell "https://leetcode.com/problems/wiggle-subsequence/" [ref=e133]:
+                    - link "https://leetcode.com/problems/wiggle-subsequence/" [ref=e134] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/wiggle-subsequence/
+                - row "https://leetcode.com/problems/partition-equal-subset-sum/" [ref=e135]:
+                  - cell "https://leetcode.com/problems/partition-equal-subset-sum/" [ref=e136]:
+                    - link "https://leetcode.com/problems/partition-equal-subset-sum/" [ref=e137] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/partition-equal-subset-sum/
+                - row "https://leetcode.com/problems/maximum-length-of-pair-chain/" [ref=e138]:
+                  - cell "https://leetcode.com/problems/maximum-length-of-pair-chain/" [ref=e139]:
+                    - link "https://leetcode.com/problems/maximum-length-of-pair-chain/" [ref=e140] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/maximum-length-of-pair-chain/
+                - row "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/" [ref=e141]:
+                  - cell "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/" [ref=e142]:
+                    - link "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/" [ref=e143] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
+                - row "https://leetcode.com/problems/delete-and-earn/" [ref=e144]:
+                  - cell "https://leetcode.com/problems/delete-and-earn/" [ref=e145]:
+                    - link "https://leetcode.com/problems/delete-and-earn/" [ref=e146] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/delete-and-earn/
+                - row "https://leetcode.com/problems/domino-and-tromino-tiling/" [ref=e147]:
+                  - cell "https://leetcode.com/problems/domino-and-tromino-tiling/" [ref=e148]:
+                    - link "https://leetcode.com/problems/domino-and-tromino-tiling/" [ref=e149] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/domino-and-tromino-tiling/
+                - row "https://leetcode.com/problems/knight-dialer/" [ref=e150]:
+                  - cell "https://leetcode.com/problems/knight-dialer/" [ref=e151]:
+                    - link "https://leetcode.com/problems/knight-dialer/" [ref=e152] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/knight-dialer/
+                - row "https://leetcode.com/problems/minimum-cost-for-tickets/" [ref=e153]:
+                  - cell "https://leetcode.com/problems/minimum-cost-for-tickets/" [ref=e154]:
+                    - link "https://leetcode.com/problems/minimum-cost-for-tickets/" [ref=e155] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/minimum-cost-for-tickets/
+                - row "https://leetcode.com/problems/partition-array-for-maximum-sum/" [ref=e156]:
+                  - cell "https://leetcode.com/problems/partition-array-for-maximum-sum/" [ref=e157]:
+                    - link "https://leetcode.com/problems/partition-array-for-maximum-sum/" [ref=e158] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/partition-array-for-maximum-sum/
+                - row "https://leetcode.com/problems/filling-bookcase-shelves/" [ref=e159]:
+                  - cell "https://leetcode.com/problems/filling-bookcase-shelves/" [ref=e160]:
+                    - link "https://leetcode.com/problems/filling-bookcase-shelves/" [ref=e161] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/filling-bookcase-shelves/
+                - row "https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/" [ref=e162]:
+                  - cell "https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/" [ref=e163]:
+                    - link "https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/" [ref=e164] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/
+                - row "https://leetcode.com/problems/greatest-sum-divisible-by-three/" [ref=e165]:
+                  - cell "https://leetcode.com/problems/greatest-sum-divisible-by-three/" [ref=e166]:
+                    - link "https://leetcode.com/problems/greatest-sum-divisible-by-three/" [ref=e167] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/greatest-sum-divisible-by-three/
+                - row "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/" [ref=e168]:
+                  - cell "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/" [ref=e169]:
+                    - link "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/" [ref=e170] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
+                - row "https://leetcode.com/problems/student-attendance-record-ii/" [ref=e171]:
+                  - cell "https://leetcode.com/problems/student-attendance-record-ii/" [ref=e172]:
+                    - link "https://leetcode.com/problems/student-attendance-record-ii/" [ref=e173] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/student-attendance-record-ii/
+                - row "https://leetcode.com/problems/decode-ways-ii/" [ref=e174]:
+                  - cell "https://leetcode.com/problems/decode-ways-ii/" [ref=e175]:
+                    - link "https://leetcode.com/problems/decode-ways-ii/" [ref=e176] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/decode-ways-ii/
+                - row "https://leetcode.com/problems/triples-with-bitwise-and-equal-to-zero/" [ref=e177]:
+                  - cell "https://leetcode.com/problems/triples-with-bitwise-and-equal-to-zero/" [ref=e178]:
+                    - link "https://leetcode.com/problems/triples-with-bitwise-and-equal-to-zero/" [ref=e179] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/triples-with-bitwise-and-equal-to-zero/
+                - row "https://leetcode.com/problems/maximum-profit-in-job-scheduling/" [ref=e180]:
+                  - cell "https://leetcode.com/problems/maximum-profit-in-job-scheduling/" [ref=e181]:
+                    - link "https://leetcode.com/problems/maximum-profit-in-job-scheduling/" [ref=e182] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/maximum-profit-in-job-scheduling/
+                - row "https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/" [ref=e183]:
+                  - cell "https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/" [ref=e184]:
+                    - link "https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/" [ref=e185] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/
+                - row "https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/" [ref=e186]:
+                  - cell "https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/" [ref=e187]:
+                    - link "https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/" [ref=e188] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/
+                - row "https://leetcode.com/problems/stone-game-iii/" [ref=e189]:
+                  - cell "https://leetcode.com/problems/stone-game-iii/" [ref=e190]:
+                    - link "https://leetcode.com/problems/stone-game-iii/" [ref=e191] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/stone-game-iii/
+                - row "https://leetcode.com/problems/restore-the-array/" [ref=e192]:
+                  - cell "https://leetcode.com/problems/restore-the-array/" [ref=e193]:
+                    - link "https://leetcode.com/problems/restore-the-array/" [ref=e194] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/restore-the-array/
+                - row "https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/" [ref=e195]:
+                  - cell "https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/" [ref=e196]:
+                    - link "https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/" [ref=e197] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/
+                - row "https://leetcode.com/problems/stone-game-iv/" [ref=e198]:
+                  - cell "https://leetcode.com/problems/stone-game-iv/" [ref=e199]:
+                    - link "https://leetcode.com/problems/stone-game-iv/" [ref=e200] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/stone-game-iv/
+                - row "https://leetcode.com/problems/coin-change-2/" [ref=e201]:
+                  - cell "https://leetcode.com/problems/coin-change-2/" [ref=e202]:
+                    - link "https://leetcode.com/problems/coin-change-2/" [ref=e203] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/coin-change-2/
+            - table [ref=e204]:
+              - rowgroup [ref=e205]:
+                - row "2.Knapsack" [ref=e206]:
+                  - columnheader "2.Knapsack" [ref=e207]
+              - rowgroup [ref=e208]:
+                - row "https://leetcode.com/problems/house-robber-ii/" [ref=e209]:
+                  - cell "https://leetcode.com/problems/house-robber-ii/" [ref=e210]:
+                    - link "https://leetcode.com/problems/house-robber-ii/" [ref=e211] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/house-robber-ii/
+                - row "https://leetcode.com/problems/ones-and-zeroes/" [ref=e212]:
+                  - cell "https://leetcode.com/problems/ones-and-zeroes/" [ref=e213]:
+                    - link "https://leetcode.com/problems/ones-and-zeroes/" [ref=e214] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/ones-and-zeroes/
+                - row "https://leetcode.com/problems/target-sum/" [ref=e215]:
+                  - cell "https://leetcode.com/problems/target-sum/" [ref=e216]:
+                    - link "https://leetcode.com/problems/target-sum/" [ref=e217] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/target-sum/
+                - row "https://leetcode.com/problems/shopping-offers/" [ref=e218]:
+                  - cell "https://leetcode.com/problems/shopping-offers/" [ref=e219]:
+                    - link "https://leetcode.com/problems/shopping-offers/" [ref=e220] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/shopping-offers/
+                - row "https://leetcode.com/problems/2-keys-keyboard/" [ref=e221]:
+                  - cell "https://leetcode.com/problems/2-keys-keyboard/" [ref=e222]:
+                    - link "https://leetcode.com/problems/2-keys-keyboard/" [ref=e223] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/2-keys-keyboard/
+                - row "https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/" [ref=e224]:
+                  - cell "https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/" [ref=e225]:
+                    - link "https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/" [ref=e226] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/
+                - row "https://leetcode.com/problems/best-team-with-no-conflicts/" [ref=e227]:
+                  - cell "https://leetcode.com/problems/best-team-with-no-conflicts/" [ref=e228]:
+                    - link "https://leetcode.com/problems/best-team-with-no-conflicts/" [ref=e229] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/best-team-with-no-conflicts/
+                - row "https://leetcode.com/problems/profitable-schemes/" [ref=e230]:
+                  - cell "https://leetcode.com/problems/profitable-schemes/" [ref=e231]:
+                    - link "https://leetcode.com/problems/profitable-schemes/" [ref=e232] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/profitable-schemes/
+                - row "https://leetcode.com/problems/tallest-billboard/" [ref=e233]:
+                  - cell "https://leetcode.com/problems/tallest-billboard/" [ref=e234]:
+                    - link "https://leetcode.com/problems/tallest-billboard/" [ref=e235] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/tallest-billboard/
+                - row "https://leetcode.com/problems/pizza-with-3n-slices/" [ref=e236]:
+                  - cell "https://leetcode.com/problems/pizza-with-3n-slices/" [ref=e237]:
+                    - link "https://leetcode.com/problems/pizza-with-3n-slices/" [ref=e238] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/pizza-with-3n-slices/
+                - row "https://leetcode.com/problems/reducing-dishes/" [ref=e239]:
+                  - cell "https://leetcode.com/problems/reducing-dishes/" [ref=e240]:
+                    - link "https://leetcode.com/problems/reducing-dishes/" [ref=e241] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/reducing-dishes/
+            - table [ref=e242]:
+              - rowgroup [ref=e243]:
+                - row "3.Multi Dimensions DP" [ref=e244]:
+                  - columnheader "3.Multi Dimensions DP" [ref=e245]
+              - rowgroup [ref=e246]:
+                - row "https://leetcode.com/problems/triangle/" [ref=e247]:
+                  - cell "https://leetcode.com/problems/triangle/" [ref=e248]:
+                    - link "https://leetcode.com/problems/triangle/" [ref=e249] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/triangle/
+                - row "https://leetcode.com/problems/combination-sum-iv/" [ref=e250]:
+                  - cell "https://leetcode.com/problems/combination-sum-iv/" [ref=e251]:
+                    - link "https://leetcode.com/problems/combination-sum-iv/" [ref=e252] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/combination-sum-iv/
+                - row "https://leetcode.com/problems/out-of-boundary-paths/" [ref=e253]:
+                  - cell "https://leetcode.com/problems/out-of-boundary-paths/" [ref=e254]:
+                    - link "https://leetcode.com/problems/out-of-boundary-paths/" [ref=e255] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/out-of-boundary-paths/
+                - row "https://leetcode.com/problems/knight-probability-in-chessboard/" [ref=e256]:
+                  - cell "https://leetcode.com/problems/knight-probability-in-chessboard/" [ref=e257]:
+                    - link "https://leetcode.com/problems/knight-probability-in-chessboard/" [ref=e258] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/knight-probability-in-chessboard/
+                - row "https://leetcode.com/problems/champagne-tower/" [ref=e259]:
+                  - cell "https://leetcode.com/problems/champagne-tower/" [ref=e260]:
+                    - link "https://leetcode.com/problems/champagne-tower/" [ref=e261] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/champagne-tower/
+                - row "https://leetcode.com/problems/largest-sum-of-averages/" [ref=e262]:
+                  - cell "https://leetcode.com/problems/largest-sum-of-averages/" [ref=e263]:
+                    - link "https://leetcode.com/problems/largest-sum-of-averages/" [ref=e264] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/largest-sum-of-averages/
+                - row "https://leetcode.com/problems/minimum-falling-path-sum/" [ref=e265]:
+                  - cell "https://leetcode.com/problems/minimum-falling-path-sum/" [ref=e266]:
+                    - link "https://leetcode.com/problems/minimum-falling-path-sum/" [ref=e267] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/minimum-falling-path-sum/
+                - row "https://leetcode.com/problems/video-stitching/" [ref=e268]:
+                  - cell "https://leetcode.com/problems/video-stitching/" [ref=e269]:
+                    - link "https://leetcode.com/problems/video-stitching/" [ref=e270] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/video-stitching/
+                - row "https://leetcode.com/problems/longest-arithmetic-subsequence/" [ref=e271]:
+                  - cell "https://leetcode.com/problems/longest-arithmetic-subsequence/" [ref=e272]:
+                    - link "https://leetcode.com/problems/longest-arithmetic-subsequence/" [ref=e273] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/longest-arithmetic-subsequence/
+                - row "https://leetcode.com/problems/stone-game-ii/" [ref=e274]:
+                  - cell "https://leetcode.com/problems/stone-game-ii/" [ref=e275]:
+                    - link "https://leetcode.com/problems/stone-game-ii/" [ref=e276] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/stone-game-ii/
+                - row "https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/" [ref=e277]:
+                  - cell "https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/" [ref=e278]:
+                    - link "https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/" [ref=e279] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/
+                - row "https://leetcode.com/problems/dice-roll-simulation/" [ref=e280]:
+                  - cell "https://leetcode.com/problems/dice-roll-simulation/" [ref=e281]:
+                    - link "https://leetcode.com/problems/dice-roll-simulation/" [ref=e282] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/dice-roll-simulation/
+                - row "https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/" [ref=e283]:
+                  - cell "https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/" [ref=e284]:
+                    - link "https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/" [ref=e285] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/
+                - row "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/" [ref=e286]:
+                  - cell "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/" [ref=e287]:
+                    - link "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/" [ref=e288] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
+                - row "https://leetcode.com/problems/create-maximum-number/" [ref=e289]:
+                  - cell "https://leetcode.com/problems/create-maximum-number/" [ref=e290]:
+                    - link "https://leetcode.com/problems/create-maximum-number/" [ref=e291] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/create-maximum-number/
+                - row "https://leetcode.com/problems/frog-jump/" [ref=e292]:
+                  - cell "https://leetcode.com/problems/frog-jump/" [ref=e293]:
+                    - link "https://leetcode.com/problems/frog-jump/" [ref=e294] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/frog-jump/
+                - row "https://leetcode.com/problems/split-array-largest-sum/" [ref=e295]:
+                  - cell "https://leetcode.com/problems/split-array-largest-sum/" [ref=e296]:
+                    - link "https://leetcode.com/problems/split-array-largest-sum/" [ref=e297] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/split-array-largest-sum/
+                - row "https://leetcode.com/problems/freedom-trail/" [ref=e298]:
+                  - cell "https://leetcode.com/problems/freedom-trail/" [ref=e299]:
+                    - link "https://leetcode.com/problems/freedom-trail/" [ref=e300] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/freedom-trail/
+                - row "https://leetcode.com/problems/minimum-number-of-refueling-stops/" [ref=e301]:
+                  - cell "https://leetcode.com/problems/minimum-number-of-refueling-stops/" [ref=e302]:
+                    - link "https://leetcode.com/problems/minimum-number-of-refueling-stops/" [ref=e303] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/minimum-number-of-refueling-stops/
+                - row "https://leetcode.com/problems/number-of-music-playlists/" [ref=e304]:
+                  - cell "https://leetcode.com/problems/number-of-music-playlists/" [ref=e305]:
+                    - link "https://leetcode.com/problems/number-of-music-playlists/" [ref=e306] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/number-of-music-playlists/
+                - row "https://leetcode.com/problems/count-vowels-permutation/" [ref=e307]:
+                  - cell "https://leetcode.com/problems/count-vowels-permutation/" [ref=e308]:
+                    - link "https://leetcode.com/problems/count-vowels-permutation/" [ref=e309] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/count-vowels-permutation/
+                - row "https://leetcode.com/problems/minimum-falling-path-sum-ii/" [ref=e310]:
+                  - cell "https://leetcode.com/problems/minimum-falling-path-sum-ii/" [ref=e311]:
+                    - link "https://leetcode.com/problems/minimum-falling-path-sum-ii/" [ref=e312] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/minimum-falling-path-sum-ii/
+                - row "https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/" [ref=e313]:
+                  - cell "https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/" [ref=e314]:
+                    - link "https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/" [ref=e315] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/
+                - row "https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/" [ref=e316]:
+                  - cell "https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/" [ref=e317]:
+                    - link "https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/" [ref=e318] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/
+                - row "https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/" [ref=e319]:
+                  - cell "https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/" [ref=e320]:
+                    - link "https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/" [ref=e321] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/
+                - row "https://leetcode.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons/" [ref=e322]:
+                  - cell "https://leetcode.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons/" [ref=e323]:
+                    - link "https://leetcode.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons/" [ref=e324] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons/
+                - row "https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/" [ref=e325]:
+                  - cell "https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/" [ref=e326]:
+                    - link "https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/" [ref=e327] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/
+                - row "https://leetcode.com/problems/paint-house-iii/" [ref=e328]:
+                  - cell "https://leetcode.com/problems/paint-house-iii/" [ref=e329]:
+                    - link "https://leetcode.com/problems/paint-house-iii/" [ref=e330] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/paint-house-iii/
+                - row "https://leetcode.com/problems/count-all-possible-routes/" [ref=e331]:
+                  - cell "https://leetcode.com/problems/count-all-possible-routes/" [ref=e332]:
+                    - link "https://leetcode.com/problems/count-all-possible-routes/" [ref=e333] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/count-all-possible-routes/
+            - table [ref=e334]:
+              - rowgroup [ref=e335]:
+                - row "4.Interval DP" [ref=e336]:
+                  - columnheader "4.Interval DP" [ref=e337]
+              - rowgroup [ref=e338]:
+                - row "https://leetcode.com/problems/guess-number-higher-or-lower-ii/" [ref=e339]:
+                  - cell "https://leetcode.com/problems/guess-number-higher-or-lower-ii/" [ref=e340]:
+                    - link "https://leetcode.com/problems/guess-number-higher-or-lower-ii/" [ref=e341] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/guess-number-higher-or-lower-ii/
+                - row "https://leetcode.com/problems/arithmetic-slices/" [ref=e342]:
+                  - cell "https://leetcode.com/problems/arithmetic-slices/" [ref=e343]:
+                    - link "https://leetcode.com/problems/arithmetic-slices/" [ref=e344] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/arithmetic-slices/
+                - row "https://leetcode.com/problems/predict-the-winner/" [ref=e345]:
+                  - cell "https://leetcode.com/problems/predict-the-winner/" [ref=e346]:
+                    - link "https://leetcode.com/problems/predict-the-winner/" [ref=e347] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/predict-the-winner/
+                - row "https://leetcode.com/problems/palindromic-substrings/" [ref=e348]:
+                  - cell "https://leetcode.com/problems/palindromic-substrings/" [ref=e349]:
+                    - link "https://leetcode.com/problems/palindromic-substrings/" [ref=e350] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/palindromic-substrings/
+                - row "https://leetcode.com/problems/stone-game/" [ref=e351]:
+                  - cell "https://leetcode.com/problems/stone-game/" [ref=e352]:
+                    - link "https://leetcode.com/problems/stone-game/" [ref=e353] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/stone-game/
+                - row "https://leetcode.com/problems/minimum-score-triangulation-of-polygon/" [ref=e354]:
+                  - cell "https://leetcode.com/problems/minimum-score-triangulation-of-polygon/" [ref=e355]:
+                    - link "https://leetcode.com/problems/minimum-score-triangulation-of-polygon/" [ref=e356] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/minimum-score-triangulation-of-polygon/
+                - row "https://leetcode.com/problems/last-stone-weight-ii/" [ref=e357]:
+                  - cell "https://leetcode.com/problems/last-stone-weight-ii/" [ref=e358]:
+                    - link "https://leetcode.com/problems/last-stone-weight-ii/" [ref=e359] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/last-stone-weight-ii/
+                - row "https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/" [ref=e360]:
+                  - cell "https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/" [ref=e361]:
+                    - link "https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/" [ref=e362] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/
+                - row "https://leetcode.com/problems/stone-game-vii/" [ref=e363]:
+                  - cell "https://leetcode.com/problems/stone-game-vii/" [ref=e364]:
+                    - link "https://leetcode.com/problems/stone-game-vii/" [ref=e365] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/stone-game-vii/
+                - row "https://leetcode.com/problems/burst-balloons/" [ref=e366]:
+                  - cell "https://leetcode.com/problems/burst-balloons/" [ref=e367]:
+                    - link "https://leetcode.com/problems/burst-balloons/" [ref=e368] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/burst-balloons/
+                - row "https://leetcode.com/problems/remove-boxes/" [ref=e369]:
+                  - cell "https://leetcode.com/problems/remove-boxes/" [ref=e370]:
+                    - link "https://leetcode.com/problems/remove-boxes/" [ref=e371] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/remove-boxes/
+                - row "https://leetcode.com/problems/strange-printer/" [ref=e372]:
+                  - cell "https://leetcode.com/problems/strange-printer/" [ref=e373]:
+                    - link "https://leetcode.com/problems/strange-printer/" [ref=e374] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/strange-printer/
+                - row "https://leetcode.com/problems/valid-permutations-for-di-sequence/" [ref=e375]:
+                  - cell "https://leetcode.com/problems/valid-permutations-for-di-sequence/" [ref=e376]:
+                    - link "https://leetcode.com/problems/valid-permutations-for-di-sequence/" [ref=e377] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/valid-permutations-for-di-sequence/
+                - row "https://leetcode.com/problems/minimum-cost-to-merge-stones/" [ref=e378]:
+                  - cell "https://leetcode.com/problems/minimum-cost-to-merge-stones/" [ref=e379]:
+                    - link "https://leetcode.com/problems/minimum-cost-to-merge-stones/" [ref=e380] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/minimum-cost-to-merge-stones/
+                - row "https://leetcode.com/problems/allocate-mailboxes/" [ref=e381]:
+                  - cell "https://leetcode.com/problems/allocate-mailboxes/" [ref=e382]:
+                    - link "https://leetcode.com/problems/allocate-mailboxes/" [ref=e383] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/allocate-mailboxes/
+                - row "https://leetcode.com/problems/minimum-cost-to-cut-a-stick/" [ref=e384]:
+                  - cell "https://leetcode.com/problems/minimum-cost-to-cut-a-stick/" [ref=e385]:
+                    - link "https://leetcode.com/problems/minimum-cost-to-cut-a-stick/" [ref=e386] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/minimum-cost-to-cut-a-stick/
+                - row "https://leetcode.com/problems/stone-game-v/" [ref=e387]:
+                  - cell "https://leetcode.com/problems/stone-game-v/" [ref=e388]:
+                    - link "https://leetcode.com/problems/stone-game-v/" [ref=e389] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/stone-game-v/
+            - table [ref=e390]:
+              - rowgroup [ref=e391]:
+                - row "5.bit DP" [ref=e392]:
+                  - columnheader "5.bit DP" [ref=e393]
+              - rowgroup [ref=e394]:
+                - row "https://leetcode.com/problems/can-i-win/" [ref=e395]:
+                  - cell "https://leetcode.com/problems/can-i-win/" [ref=e396]:
+                    - link "https://leetcode.com/problems/can-i-win/" [ref=e397] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/can-i-win/
+                - row "https://leetcode.com/problems/partition-to-k-equal-sum-subsets/" [ref=e398]:
+                  - cell "https://leetcode.com/problems/partition-to-k-equal-sum-subsets/" [ref=e399]:
+                    - link "https://leetcode.com/problems/partition-to-k-equal-sum-subsets/" [ref=e400] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/partition-to-k-equal-sum-subsets/
+                - row "https://leetcode.com/problems/stickers-to-spell-word/" [ref=e401]:
+                  - cell "https://leetcode.com/problems/stickers-to-spell-word/" [ref=e402]:
+                    - link "https://leetcode.com/problems/stickers-to-spell-word/" [ref=e403] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/stickers-to-spell-word/
+                - row "https://leetcode.com/problems/shortest-path-visiting-all-nodes/" [ref=e404]:
+                  - cell "https://leetcode.com/problems/shortest-path-visiting-all-nodes/" [ref=e405]:
+                    - link "https://leetcode.com/problems/shortest-path-visiting-all-nodes/" [ref=e406] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/shortest-path-visiting-all-nodes/
+                - row "https://leetcode.com/problems/smallest-sufficient-team/" [ref=e407]:
+                  - cell "https://leetcode.com/problems/smallest-sufficient-team/" [ref=e408]:
+                    - link "https://leetcode.com/problems/smallest-sufficient-team/" [ref=e409] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/smallest-sufficient-team/
+                - row "https://leetcode.com/problems/maximum-students-taking-exam/" [ref=e410]:
+                  - cell "https://leetcode.com/problems/maximum-students-taking-exam/" [ref=e411]:
+                    - link "https://leetcode.com/problems/maximum-students-taking-exam/" [ref=e412] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/maximum-students-taking-exam/
+                - row "https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/" [ref=e413]:
+                  - cell "https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/" [ref=e414]:
+                    - link "https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/" [ref=e415] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/
+                - row "https://leetcode.com/problems/minimum-cost-to-connect-two-groups-of-points/" [ref=e416]:
+                  - cell "https://leetcode.com/problems/minimum-cost-to-connect-two-groups-of-points/" [ref=e417]:
+                    - link "https://leetcode.com/problems/minimum-cost-to-connect-two-groups-of-points/" [ref=e418] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/minimum-cost-to-connect-two-groups-of-points/
+                - row "https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/" [ref=e419]:
+                  - cell "https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/" [ref=e420]:
+                    - link "https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/" [ref=e421] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/
+                - row "https://leetcode.com/problems/distribute-repeating-integers/" [ref=e422]:
+                  - cell "https://leetcode.com/problems/distribute-repeating-integers/" [ref=e423]:
+                    - link "https://leetcode.com/problems/distribute-repeating-integers/" [ref=e424] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/distribute-repeating-integers/
+                - row "https://leetcode.com/problems/maximize-grid-happiness/" [ref=e425]:
+                  - cell "https://leetcode.com/problems/maximize-grid-happiness/" [ref=e426]:
+                    - link "https://leetcode.com/problems/maximize-grid-happiness/" [ref=e427] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/maximize-grid-happiness/
+                - row "https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs/" [ref=e428]:
+                  - cell "https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs/" [ref=e429]:
+                    - link "https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs/" [ref=e430] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs/
+            - table [ref=e431]:
+              - rowgroup [ref=e432]:
+                - row "6.Digit DP" [ref=e433]:
+                  - columnheader "6.Digit DP" [ref=e434]
+              - rowgroup [ref=e435]:
+                - row "https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/" [ref=e436]:
+                  - cell "https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/" [ref=e437]:
+                    - link "https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/" [ref=e438] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/
+                - row "https://leetcode.com/problems/numbers-at-most-n-given-digit-set/" [ref=e439]:
+                  - cell "https://leetcode.com/problems/numbers-at-most-n-given-digit-set/" [ref=e440]:
+                    - link "https://leetcode.com/problems/numbers-at-most-n-given-digit-set/" [ref=e441] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/numbers-at-most-n-given-digit-set/
+                - row "https://leetcode.com/problems/numbers-with-repeated-digits/" [ref=e442]:
+                  - cell "https://leetcode.com/problems/numbers-with-repeated-digits/" [ref=e443]:
+                    - link "https://leetcode.com/problems/numbers-with-repeated-digits/" [ref=e444] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/numbers-with-repeated-digits/
+            - table [ref=e445]:
+              - rowgroup [ref=e446]:
+                - row "7.DP on Trees" [ref=e447]:
+                  - columnheader "7.DP on Trees" [ref=e448]
+              - rowgroup [ref=e449]:
+                - row "https://leetcode.com/problems/unique-binary-search-trees-ii/" [ref=e450]:
+                  - cell "https://leetcode.com/problems/unique-binary-search-trees-ii/" [ref=e451]:
+                    - link "https://leetcode.com/problems/unique-binary-search-trees-ii/" [ref=e452] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/unique-binary-search-trees-ii/
+                - row "https://leetcode.com/problems/house-robber-iii/" [ref=e453]:
+                  - cell "https://leetcode.com/problems/house-robber-iii/" [ref=e454]:
+                    - link "https://leetcode.com/problems/house-robber-iii/" [ref=e455] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/house-robber-iii/
+                - row "https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/" [ref=e456]:
+                  - cell "https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/" [ref=e457]:
+                    - link "https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/" [ref=e458] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/
+                - row "https://leetcode.com/problems/linked-list-in-binary-tree/" [ref=e459]:
+                  - cell "https://leetcode.com/problems/linked-list-in-binary-tree/" [ref=e460]:
+                    - link "https://leetcode.com/problems/linked-list-in-binary-tree/" [ref=e461] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/linked-list-in-binary-tree/
+                - row "https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/" [ref=e462]:
+                  - cell "https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/" [ref=e463]:
+                    - link "https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/" [ref=e464] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/
+                - row "https://leetcode.com/problems/binary-tree-cameras/" [ref=e465]:
+                  - cell "https://leetcode.com/problems/binary-tree-cameras/" [ref=e466]:
+                    - link "https://leetcode.com/problems/binary-tree-cameras/" [ref=e467] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/binary-tree-cameras/
+                - row "https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/" [ref=e468]:
+                  - cell "https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/" [ref=e469]:
+                    - link "https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/" [ref=e470] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/
+                - row "https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/" [ref=e471]:
+                  - cell "https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/" [ref=e472]:
+                    - link "https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/" [ref=e473] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/
+            - table [ref=e474]:
+              - rowgroup [ref=e475]:
+                - row "8.String DP" [ref=e476]:
+                  - columnheader "8.String DP" [ref=e477]
+              - rowgroup [ref=e478]:
+                - row "https://leetcode.com/problems/is-subsequence/" [ref=e479]:
+                  - cell "https://leetcode.com/problems/is-subsequence/" [ref=e480]:
+                    - link "https://leetcode.com/problems/is-subsequence/" [ref=e481] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/is-subsequence/
+                - row "https://leetcode.com/problems/palindrome-partitioning/" [ref=e482]:
+                  - cell "https://leetcode.com/problems/palindrome-partitioning/" [ref=e483]:
+                    - link "https://leetcode.com/problems/palindrome-partitioning/" [ref=e484] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/palindrome-partitioning/
+                - row "https://leetcode.com/problems/palindrome-partitioning-ii/" [ref=e485]:
+                  - cell "https://leetcode.com/problems/palindrome-partitioning-ii/" [ref=e486]:
+                    - link "https://leetcode.com/problems/palindrome-partitioning-ii/" [ref=e487] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/palindrome-partitioning-ii/
+                - row "https://leetcode.com/problems/word-break/" [ref=e488]:
+                  - cell "https://leetcode.com/problems/word-break/" [ref=e489]:
+                    - link "https://leetcode.com/problems/word-break/" [ref=e490] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/word-break/
+                - row "https://leetcode.com/problems/unique-substrings-in-wraparound-string/" [ref=e491]:
+                  - cell "https://leetcode.com/problems/unique-substrings-in-wraparound-string/" [ref=e492]:
+                    - link "https://leetcode.com/problems/unique-substrings-in-wraparound-string/" [ref=e493] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/unique-substrings-in-wraparound-string/
+                - row "https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/" [ref=e494]:
+                  - cell "https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/" [ref=e495]:
+                    - link "https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/" [ref=e496] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/
+                - row "https://leetcode.com/problems/longest-string-chain/" [ref=e497]:
+                  - cell "https://leetcode.com/problems/longest-string-chain/" [ref=e498]:
+                    - link "https://leetcode.com/problems/longest-string-chain/" [ref=e499] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/longest-string-chain/
+                - row "https://leetcode.com/problems/longest-happy-string/" [ref=e500]:
+                  - cell "https://leetcode.com/problems/longest-happy-string/" [ref=e501]:
+                    - link "https://leetcode.com/problems/longest-happy-string/" [ref=e502] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/longest-happy-string/
+                - row "https://leetcode.com/problems/longest-valid-parentheses/" [ref=e503]:
+                  - cell "https://leetcode.com/problems/longest-valid-parentheses/" [ref=e504]:
+                    - link "https://leetcode.com/problems/longest-valid-parentheses/" [ref=e505] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/longest-valid-parentheses/
+                - row "https://leetcode.com/problems/distinct-subsequences/" [ref=e506]:
+                  - cell "https://leetcode.com/problems/distinct-subsequences/" [ref=e507]:
+                    - link "https://leetcode.com/problems/distinct-subsequences/" [ref=e508] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/distinct-subsequences/
+                - row "https://leetcode.com/problems/word-break-ii/" [ref=e509]:
+                  - cell "https://leetcode.com/problems/word-break-ii/" [ref=e510]:
+                    - link "https://leetcode.com/problems/word-break-ii/" [ref=e511] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/word-break-ii/
+                - row "https://leetcode.com/problems/count-the-repetitions/" [ref=e512]:
+                  - cell "https://leetcode.com/problems/count-the-repetitions/" [ref=e513]:
+                    - link "https://leetcode.com/problems/count-the-repetitions/" [ref=e514] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/count-the-repetitions/
+                - row "https://leetcode.com/problems/concatenated-words/" [ref=e515]:
+                  - cell "https://leetcode.com/problems/concatenated-words/" [ref=e516]:
+                    - link "https://leetcode.com/problems/concatenated-words/" [ref=e517] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/concatenated-words/
+                - row "https://leetcode.com/problems/count-different-palindromic-subsequences/" [ref=e518]:
+                  - cell "https://leetcode.com/problems/count-different-palindromic-subsequences/" [ref=e519]:
+                    - link "https://leetcode.com/problems/count-different-palindromic-subsequences/" [ref=e520] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/count-different-palindromic-subsequences/
+                - row "https://leetcode.com/problems/distinct-subsequences-ii/" [ref=e521]:
+                  - cell "https://leetcode.com/problems/distinct-subsequences-ii/" [ref=e522]:
+                    - link "https://leetcode.com/problems/distinct-subsequences-ii/" [ref=e523] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/distinct-subsequences-ii/
+                - row "https://leetcode.com/problems/longest-chunked-palindrome-decomposition/" [ref=e524]:
+                  - cell "https://leetcode.com/problems/longest-chunked-palindrome-decomposition/" [ref=e525]:
+                    - link "https://leetcode.com/problems/longest-chunked-palindrome-decomposition/" [ref=e526] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/longest-chunked-palindrome-decomposition/
+                - row "https://leetcode.com/problems/palindrome-partitioning-iii/" [ref=e527]:
+                  - cell "https://leetcode.com/problems/palindrome-partitioning-iii/" [ref=e528]:
+                    - link "https://leetcode.com/problems/palindrome-partitioning-iii/" [ref=e529] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/palindrome-partitioning-iii/
+                - row "https://leetcode.com/problems/find-all-good-strings/" [ref=e530]:
+                  - cell "https://leetcode.com/problems/find-all-good-strings/" [ref=e531]:
+                    - link "https://leetcode.com/problems/find-all-good-strings/" [ref=e532] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/find-all-good-strings/
+                - row "https://leetcode.com/problems/string-compression-ii/" [ref=e533]:
+                  - cell "https://leetcode.com/problems/string-compression-ii/" [ref=e534]:
+                    - link "https://leetcode.com/problems/string-compression-ii/" [ref=e535] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/string-compression-ii/
+                - row "https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary/" [ref=e536]:
+                  - cell "https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary/" [ref=e537]:
+                    - link "https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary/" [ref=e538] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary/
+            - table [ref=e539]:
+              - rowgroup [ref=e540]:
+                - row "9.Probability DP" [ref=e541]:
+                  - columnheader "9.Probability DP" [ref=e542]
+              - rowgroup [ref=e543]:
+                - row "https://leetcode.com/problems/soup-servings/" [ref=e544]:
+                  - cell "https://leetcode.com/problems/soup-servings/" [ref=e545]:
+                    - link "https://leetcode.com/problems/soup-servings/" [ref=e546] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/soup-servings/
+                - row "https://leetcode.com/problems/new-21-game/" [ref=e547]:
+                  - cell "https://leetcode.com/problems/new-21-game/" [ref=e548]:
+                    - link "https://leetcode.com/problems/new-21-game/" [ref=e549] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/new-21-game/
+                - row "https://leetcode.com/problems/airplane-seat-assignment-probability/" [ref=e550]:
+                  - cell "https://leetcode.com/problems/airplane-seat-assignment-probability/" [ref=e551]:
+                    - link "https://leetcode.com/problems/airplane-seat-assignment-probability/" [ref=e552] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/airplane-seat-assignment-probability/
+            - table [ref=e553]:
+              - rowgroup [ref=e554]:
+                - row "10.Classic DPs" [ref=e555]:
+                  - columnheader "10.Classic DPs" [ref=e556]
+              - rowgroup [ref=e557]:
+                - row "A.Cadane's Algorithm" [ref=e558]:
+                  - cell "A.Cadane's Algorithm" [ref=e559]
+                - row "https://leetcode.com/problems/maximum-subarray/" [ref=e560]:
+                  - cell "https://leetcode.com/problems/maximum-subarray/" [ref=e561]:
+                    - link "https://leetcode.com/problems/maximum-subarray/" [ref=e562] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/maximum-subarray/
+                - row "https://leetcode.com/problems/maximum-product-subarray/" [ref=e563]:
+                  - cell "https://leetcode.com/problems/maximum-product-subarray/" [ref=e564]:
+                    - link "https://leetcode.com/problems/maximum-product-subarray/" [ref=e565] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/maximum-product-subarray/
+                - row "https://leetcode.com/problems/bitwise-ors-of-subarrays/" [ref=e566]:
+                  - cell "https://leetcode.com/problems/bitwise-ors-of-subarrays/" [ref=e567]:
+                    - link "https://leetcode.com/problems/bitwise-ors-of-subarrays/" [ref=e568] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/bitwise-ors-of-subarrays/
+                - row "https://leetcode.com/problems/longest-turbulent-subarray/" [ref=e569]:
+                  - cell "https://leetcode.com/problems/longest-turbulent-subarray/" [ref=e570]:
+                    - link "https://leetcode.com/problems/longest-turbulent-subarray/" [ref=e571] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/longest-turbulent-subarray/
+                - row "https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/" [ref=e572]:
+                  - cell "https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/" [ref=e573]:
+                    - link "https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/" [ref=e574] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/
+                - row "https://leetcode.com/problems/k-concatenation-maximum-sum/" [ref=e575]:
+                  - cell "https://leetcode.com/problems/k-concatenation-maximum-sum/" [ref=e576]:
+                    - link "https://leetcode.com/problems/k-concatenation-maximum-sum/" [ref=e577] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/k-concatenation-maximum-sum/
+                - row "https://leetcode.com/problems/largest-divisible-subset/" [ref=e578]:
+                  - cell "https://leetcode.com/problems/largest-divisible-subset/" [ref=e579]:
+                    - link "https://leetcode.com/problems/largest-divisible-subset/" [ref=e580] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/largest-divisible-subset/
+                - row "https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/" [ref=e581]:
+                  - cell "https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/" [ref=e582]:
+                    - link "https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/" [ref=e583] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/
+            - paragraph [ref=e584]:
+              - text: B.LCS
+              - link "https://leetcode.com/problems/longest-palindromic-substring/" [ref=e585] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/longest-palindromic-substring/
+              - link "https://leetcode.com/problems/longest-palindromic-subsequence/" [ref=e586] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/longest-palindromic-subsequence/
+              - link "https://leetcode.com/problems/maximum-length-of-repeated-subarray/" [ref=e587] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/maximum-length-of-repeated-subarray/
+              - link "https://leetcode.com/problems/longest-common-subsequence/" [ref=e588] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/longest-common-subsequence/
+              - link "https://leetcode.com/problems/regular-expression-matching/" [ref=e589] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/regular-expression-matching/
+              - link "https://leetcode.com/problems/wildcard-matching/" [ref=e590] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/wildcard-matching/
+              - link "https://leetcode.com/problems/edit-distance/" [ref=e591] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/edit-distance/
+              - link "https://leetcode.com/problems/interleaving-string/" [ref=e592] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/interleaving-string/
+              - link "https://leetcode.com/problems/shortest-common-supersequence/" [ref=e593] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/shortest-common-supersequence/
+              - link "https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/" [ref=e594] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/
+              - link "https://leetcode.com/problems/max-dot-product-of-two-subsequences/" [ref=e595] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/max-dot-product-of-two-subsequences/
+            - paragraph [ref=e596]:
+              - text: C.LIS
+              - link "https://leetcode.com/problems/longest-increasing-subsequence/" [ref=e597] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/longest-increasing-subsequence/
+              - link "https://leetcode.com/problems/number-of-longest-increasing-subsequence/" [ref=e598] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/number-of-longest-increasing-subsequence/
+              - link "https://leetcode.com/problems/russian-doll-envelopes/" [ref=e599] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/russian-doll-envelopes/
+              - link "https://leetcode.com/problems/delete-columns-to-make-sorted-iii/" [ref=e600] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/delete-columns-to-make-sorted-iii/
+              - link "https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/" [ref=e601] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/
+              - link "https://leetcode.com/problems/maximum-height-by-stacking-cuboids/" [ref=e602] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/maximum-height-by-stacking-cuboids/
+              - link "https://leetcode.com/problems/make-array-strictly-increasing/" [ref=e603] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/make-array-strictly-increasing/
+            - paragraph [ref=e604]:
+              - text: D.2D Grid Traversal
+              - link "https://leetcode.com/problems/unique-paths/" [ref=e605] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/unique-paths/
+              - link "https://leetcode.com/problems/unique-paths-ii/" [ref=e606] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/unique-paths-ii/
+              - link "https://leetcode.com/problems/minimum-path-sum/" [ref=e607] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/minimum-path-sum/
+              - link "https://leetcode.com/problems/maximum-non-negative-product-in-a-matrix/" [ref=e608] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/maximum-non-negative-product-in-a-matrix/
+              - link "https://leetcode.com/problems/where-will-the-ball-fall/" [ref=e609] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/where-will-the-ball-fall/
+              - link "https://leetcode.com/problems/dungeon-game/" [ref=e610] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/dungeon-game/
+              - link "https://leetcode.com/problems/cherry-pickup/" [ref=e611] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/cherry-pickup/
+              - link "https://leetcode.com/problems/number-of-paths-with-max-score/" [ref=e612] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/number-of-paths-with-max-score/
+              - link "https://leetcode.com/problems/cherry-pickup-ii/" [ref=e613] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/cherry-pickup-ii/
+              - link "https://leetcode.com/problems/kth-smallest-instructions/" [ref=e614] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/kth-smallest-instructions/
+            - paragraph [ref=e615]:
+              - text: E.Cumulative Sum
+              - link "https://leetcode.com/problems/range-sum-query-immutable/" [ref=e616] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/range-sum-query-immutable/
+              - link "https://leetcode.com/problems/maximal-square/" [ref=e617] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/maximal-square/
+              - link "https://leetcode.com/problems/range-sum-query-2d-immutable/" [ref=e618] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/range-sum-query-2d-immutable/
+              - link "https://leetcode.com/problems/largest-plus-sign/" [ref=e619] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/largest-plus-sign/
+              - link "https://leetcode.com/problems/push-dominoes/" [ref=e620] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/push-dominoes/
+              - link "https://leetcode.com/problems/largest-1-bordered-square/" [ref=e621] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/largest-1-bordered-square/
+              - link "https://leetcode.com/problems/count-square-submatrices-with-all-ones/" [ref=e622] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/count-square-submatrices-with-all-ones/
+              - link "https://leetcode.com/problems/matrix-block-sum/" [ref=e623] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/matrix-block-sum/
+              - link "https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/" [ref=e624] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/
+              - link "https://leetcode.com/problems/count-submatrices-with-all-ones/" [ref=e625] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/count-submatrices-with-all-ones/
+              - link "https://leetcode.com/problems/ways-to-make-a-fair-array/" [ref=e626] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/ways-to-make-a-fair-array/
+              - link "https://leetcode.com/problems/maximal-rectangle/" [ref=e627] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/maximal-rectangle/
+              - link "https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/" [ref=e628] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/
+              - link "https://leetcode.com/problems/super-washing-machines/" [ref=e629] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/super-washing-machines/
+              - link "https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/" [ref=e630] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/
+              - link "https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/" [ref=e631] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/
+              - link "https://leetcode.com/problems/get-the-maximum-score/" [ref=e632] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/get-the-maximum-score/
+            - paragraph [ref=e633]:
+              - text: F.Hashmap (SubArray)
+              - link "https://leetcode.com/problems/continuous-subarray-sum/" [ref=e634] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/continuous-subarray-sum/
+              - link "https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/" [ref=e635] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/
+              - link "https://leetcode.com/problems/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/" [ref=e636] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/
+            - table [ref=e637]:
+              - rowgroup [ref=e638]:
+                - row "11.DP + Alpha (Tricks/DS)" [ref=e639]:
+                  - columnheader "11.DP + Alpha (Tricks/DS)" [ref=e640]
+              - rowgroup [ref=e641]:
+                - row "https://leetcode.com/problems/arithmetic-slices-ii-subsequence/" [ref=e642]:
+                  - cell "https://leetcode.com/problems/arithmetic-slices-ii-subsequence/" [ref=e643]:
+                    - link "https://leetcode.com/problems/arithmetic-slices-ii-subsequence/" [ref=e644] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/arithmetic-slices-ii-subsequence/
+                - row "https://leetcode.com/problems/odd-even-jump/" [ref=e645]:
+                  - cell "https://leetcode.com/problems/odd-even-jump/" [ref=e646]:
+                    - link "https://leetcode.com/problems/odd-even-jump/" [ref=e647] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/odd-even-jump/
+                - row "https://leetcode.com/problems/constrained-subsequence-sum/" [ref=e648]:
+                  - cell "https://leetcode.com/problems/constrained-subsequence-sum/" [ref=e649]:
+                    - link "https://leetcode.com/problems/constrained-subsequence-sum/" [ref=e650] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/constrained-subsequence-sum/
+                - row "https://leetcode.com/problems/delivering-boxes-from-storage-to-ports/" [ref=e651]:
+                  - cell "https://leetcode.com/problems/delivering-boxes-from-storage-to-ports/" [ref=e652]:
+                    - link "https://leetcode.com/problems/delivering-boxes-from-storage-to-ports/" [ref=e653] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/delivering-boxes-from-storage-to-ports/
+            - table [ref=e654]:
+              - rowgroup [ref=e655]:
+                - row "12.Insertion DP" [ref=e656]:
+                  - columnheader "12.Insertion DP" [ref=e657]
+              - rowgroup [ref=e658]:
+                - row "https://leetcode.com/problems/k-inverse-pairs-array/" [ref=e659]:
+                  - cell "https://leetcode.com/problems/k-inverse-pairs-array/" [ref=e660]:
+                    - link "https://leetcode.com/problems/k-inverse-pairs-array/" [ref=e661] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/k-inverse-pairs-array/
+            - table [ref=e662]:
+              - rowgroup [ref=e663]:
+                - row "13.Graph DP" [ref=e664]:
+                  - columnheader "13.Graph DP" [ref=e665]
+              - rowgroup [ref=e666]:
+                - row "https://leetcode.com/problems/cheapest-flights-within-k-stops/" [ref=e667]:
+                  - cell "https://leetcode.com/problems/cheapest-flights-within-k-stops/" [ref=e668]:
+                    - link "https://leetcode.com/problems/cheapest-flights-within-k-stops/" [ref=e669] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/cheapest-flights-within-k-stops/
+                - row "https://leetcode.com/problems/find-the-shortest-superstring/" [ref=e670]:
+                  - cell "https://leetcode.com/problems/find-the-shortest-superstring/" [ref=e671]:
+                    - link "https://leetcode.com/problems/find-the-shortest-superstring/" [ref=e672] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/find-the-shortest-superstring/
+            - table [ref=e673]:
+              - rowgroup [ref=e674]:
+                - row "14.Memoization" [ref=e675]:
+                  - columnheader "14.Memoization" [ref=e676]
+              - rowgroup [ref=e677]:
+                - row "https://leetcode.com/problems/minimum-jumps-to-reach-home/" [ref=e678]:
+                  - cell "https://leetcode.com/problems/minimum-jumps-to-reach-home/" [ref=e679]:
+                    - link "https://leetcode.com/problems/minimum-jumps-to-reach-home/" [ref=e680] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/minimum-jumps-to-reach-home/
+                - row "https://leetcode.com/problems/scramble-string/" [ref=e681]:
+                  - cell "https://leetcode.com/problems/scramble-string/" [ref=e682]:
+                    - link "https://leetcode.com/problems/scramble-string/" [ref=e683] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/scramble-string/
+                - row "https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/" [ref=e684]:
+                  - cell "https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/" [ref=e685]:
+                    - link "https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/" [ref=e686] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/
+                - row "https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/" [ref=e687]:
+                  - cell "https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/" [ref=e688]:
+                    - link "https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/" [ref=e689] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/
+                - row "https://leetcode.com/problems/jump-game-v/" [ref=e690]:
+                  - cell "https://leetcode.com/problems/jump-game-v/" [ref=e691]:
+                    - link "https://leetcode.com/problems/jump-game-v/" [ref=e692] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/jump-game-v/
+                - row "https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/" [ref=e693]:
+                  - cell "https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/" [ref=e694]:
+                    - link "https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/" [ref=e695] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/
+            - table [ref=e696]:
+              - rowgroup [ref=e697]:
+                - row "15.Binary Lifting" [ref=e698]:
+                  - columnheader "15.Binary Lifting" [ref=e699]
+              - rowgroup [ref=e700]:
+                - row "https://leetcode.com/problems/kth-ancestor-of-a-tree-node/" [ref=e701]:
+                  - cell "https://leetcode.com/problems/kth-ancestor-of-a-tree-node/" [ref=e702]:
+                    - link "https://leetcode.com/problems/kth-ancestor-of-a-tree-node/" [ref=e703] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/kth-ancestor-of-a-tree-node/
+            - table [ref=e704]:
+              - rowgroup [ref=e705]:
+                - row "16.Math" [ref=e706]:
+                  - columnheader "16.Math" [ref=e707]
+              - rowgroup [ref=e708]:
+                - row "https://leetcode.com/problems/ugly-number-ii/" [ref=e709]:
+                  - cell "https://leetcode.com/problems/ugly-number-ii/" [ref=e710]:
+                    - link "https://leetcode.com/problems/ugly-number-ii/" [ref=e711] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/ugly-number-ii/
+                - row "https://leetcode.com/problems/count-sorted-vowel-strings/" [ref=e712]:
+                  - cell "https://leetcode.com/problems/count-sorted-vowel-strings/" [ref=e713]:
+                    - link "https://leetcode.com/problems/count-sorted-vowel-strings/" [ref=e714] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/count-sorted-vowel-strings/
+                - row "https://leetcode.com/problems/race-car/" [ref=e715]:
+                  - cell "https://leetcode.com/problems/race-car/" [ref=e716]:
+                    - link "https://leetcode.com/problems/race-car/" [ref=e717] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/race-car/
+                - row "https://leetcode.com/problems/super-egg-drop/" [ref=e718]:
+                  - cell "https://leetcode.com/problems/super-egg-drop/" [ref=e719]:
+                    - link "https://leetcode.com/problems/super-egg-drop/" [ref=e720] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/super-egg-drop/
+                - row "https://leetcode.com/problems/least-operators-to-express-number/" [ref=e721]:
+                  - cell "https://leetcode.com/problems/least-operators-to-express-number/" [ref=e722]:
+                    - link "https://leetcode.com/problems/least-operators-to-express-number/" [ref=e723] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/least-operators-to-express-number/
+                - row "https://leetcode.com/problems/largest-multiple-of-three/" [ref=e724]:
+                  - cell "https://leetcode.com/problems/largest-multiple-of-three/" [ref=e725]:
+                    - link "https://leetcode.com/problems/largest-multiple-of-three/" [ref=e726] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/largest-multiple-of-three/
+                - row "https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/" [ref=e727]:
+                  - cell "https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/" [ref=e728]:
+                    - link "https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/" [ref=e729] [cursor=pointer]:
+                      - /url: https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/
+          - generic [ref=e732]:
+            - generic [ref=e733]:
+              - button "3.4K" [ref=e734] [cursor=pointer]:
+                - img [ref=e736]
+                - generic [ref=e738]: 3.4K
+              - button [ref=e740] [cursor=pointer]:
+                - img [ref=e742]
+            - button "146" [ref=e744] [cursor=pointer]:
+              - img [ref=e746]
+              - generic [ref=e748]: "146"
+            - button [ref=e750] [cursor=pointer]:
+              - button [ref=e751]:
+                - img [ref=e753]
+          - generic [ref=e755]:
+            - generic [ref=e756]:
+              - img [ref=e758]
+              - generic [ref=e760]: Comments (146)
+              - button "Sort by:Best" [ref=e764] [cursor=pointer]:
+                - generic [ref=e765]:
+                  - generic [ref=e766]: "Sort by:"
+                  - text: Best
+                - generic:
+                  - img
+            - generic [ref=e770]:
+              - textbox "Type comment here..." [ref=e771]
+              - generic [ref=e772]:
+                - generic [ref=e774]:
+                  - img [ref=e776] [cursor=pointer]
+                  - img [ref=e779] [cursor=pointer]
+                  - img [ref=e782] [cursor=pointer]
+                  - img [ref=e785] [cursor=pointer]
+                - button "Comment" [disabled] [ref=e788] [cursor=pointer]
+            - navigation [ref=e902]:
+              - button "prev" [disabled]:
+                - img
+              - button "1" [disabled]
+              - button "2" [disabled]
+              - button "3" [disabled]
+              - button "4" [disabled]
+              - button "5" [disabled]
+              - button "6" [disabled]
+              - button "gap" [disabled]:
+                - img
+              - button "15" [disabled]
+              - button "next" [disabled]:
+                - img
+        - generic [ref=e903]:
+          - generic [ref=e905]:
+            - img [ref=e907]
+            - generic [ref=e909]: Explore
+          - generic [ref=e944]:
+            - generic [ref=e945]:
+              - link "Download App" [ref=e946] [cursor=pointer]:
+                - /url: https://leetcode.com/app/?utm_campaign=AppPromotion&utm_medium=site&utm_source=site_footer&gio_link_id=nPN4bXe9
+                - img [ref=e948]
+                - text: Download App
+              - link "Support" [ref=e951] [cursor=pointer]:
+                - /url: https://support.leetcode.com/hc/en-us
+              - link "Terms" [ref=e953] [cursor=pointer]:
+                - /url: /terms
+              - link "Privacy Policy" [ref=e955] [cursor=pointer]:
+                - /url: /privacy
+              - generic [ref=e957] [cursor=pointer]: More
+            - link "Copyright © 2026 LeetCode" [ref=e958] [cursor=pointer]:
+              - /url: /
+            - link "United States" [ref=e960] [cursor=pointer]:
+              - /url: /region
+        - generic [ref=e961]:
+          - button:
+            - generic:
+              - img
+    - region "Notifications (F8)":
+      - list
+  - alert [ref=e962]

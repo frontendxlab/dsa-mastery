@@ -162,7 +162,7 @@ function minCut(s) {
     {
       type: 'callout',
       icon: '🪞',
-      color: 'pink',
+      color: 'red',
       content: `**Palindrome DP building blocks:**\n- isPalin table: O(n²), foundation for all other problems\n- LPS (longest palindromic subsequence) = LCS(s, rev(s))\n- Min cuts: O(n²) with isPalin table\n- Min insertions = n - LPS\n- Min deletions to make palindrome = n - LPS\n\n**Interval DP approach:** For dp[i][j]: base case when i==j (single char is palindrome). For len≥2: if s[i]==s[j], use inner dp[i+1][j-1]; else take max of excluding either end.`,
     },
   ],

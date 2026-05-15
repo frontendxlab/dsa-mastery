@@ -1,0 +1,332 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - navigation [ref=e6]:
+        - generic [ref=e7]:
+          - link "LeetCode" [ref=e8] [cursor=pointer]:
+            - /url: /
+            - img [ref=e10]
+          - list [ref=e18]:
+            - listitem [ref=e19]:
+              - link "Problems" [ref=e20] [cursor=pointer]:
+                - /url: /problemset
+            - listitem [ref=e21]:
+              - link "Contest" [ref=e22] [cursor=pointer]:
+                - /url: /contest
+            - listitem [ref=e23]:
+              - link "Discuss" [ref=e24] [cursor=pointer]:
+                - /url: /discuss/
+            - listitem [ref=e25]:
+              - generic [ref=e27] [cursor=pointer]:
+                - button "More" [ref=e28]:
+                  - text: More
+                  - img [ref=e29]
+                - list:
+                  - listitem:
+                    - link:
+                      - /url: https://interview.leetcode.com/interview/
+                      - img
+                      - generic: Online Interview
+                  - listitem:
+                    - link:
+                      - /url: /assessment/
+                      - img
+                      - generic: Assessment
+                  - listitem:
+                    - link:
+                      - /url: /store
+                      - generic: Redeem
+                  - listitem:
+                    - link:
+                      - /url: /subscribe/?ref=sto_npl&source=ot
+                      - generic: Premium
+      - generic [ref=e32]:
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - link [ref=e36] [cursor=pointer]:
+              - /url: /discuss/
+              - button [ref=e37]:
+                - img [ref=e39]
+            - button [ref=e41] [cursor=pointer]:
+              - img [ref=e43]
+          - generic [ref=e46]:
+            - generic [ref=e47]: Linked list study guide
+            - generic [ref=e48]:
+              - link [ref=e50] [cursor=pointer]:
+                - /url: /u/sunyingbao/
+              - generic [ref=e51]:
+                - link "sunyingbao" [ref=e54] [cursor=pointer]:
+                  - /url: /u/sunyingbao/
+                - generic [ref=e55]:
+                  - generic [ref=e56]:
+                    - img [ref=e57]
+                    - generic [ref=e59]: "5493"
+                  - generic [ref=e60]:
+                    - img [ref=e61]
+                    - generic [ref=e63]: Oct 20, 2022
+                  - generic [ref=e64]:
+                    - img [ref=e66]
+                    - generic [ref=e68]: Jun 23, 2023
+            - generic [ref=e69]:
+              - link "Linked List" [ref=e70] [cursor=pointer]:
+                - /url: /discuss/topic/linked-list/
+              - link "Career" [ref=e71] [cursor=pointer]:
+                - /url: /discuss/topic/career/
+          - generic [ref=e75]:
+            - paragraph [ref=e76]:
+              - strong [ref=e77]: 1. Linked List traversal&Reverse Linked List
+            - paragraph [ref=e78]: This type of questions normally needs prev variable in order to remove certain nodes or reverse linked list
+            - code [ref=e82]:
+              - generic [ref=e83]: dummy = ListNode()
+              - generic [ref=e84]: dummy.next = head
+              - generic [ref=e85]: prev = dummy
+              - generic [ref=e86]: "while head:"
+              - generic [ref=e87]: "if hashmap[head.val] > 1:"
+              - generic [ref=e88]: prev.next = head.next
+              - generic [ref=e89]: "else:"
+              - generic [ref=e90]: prev = head
+              - generic [ref=e91]: head = head.next
+              - generic [ref=e92]: return dummy.next
+            - code [ref=e96]:
+              - generic [ref=e97]: prev = None
+              - generic [ref=e98]: "while head:"
+              - generic [ref=e99]: next = head.next
+              - generic [ref=e100]: head.next = prev
+              - generic [ref=e101]: prev = head
+              - generic [ref=e102]: head = next
+              - generic [ref=e103]: return prev
+            - paragraph [ref=e104]:
+              - link "1290. Convert Binary Number in a Linked List to Integer" [ref=e105] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/
+              - link "206. Reverse Linked List" [ref=e106] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/reverse-linked-list/
+              - link "2046. Sort Linked List Already Sorted Using Absolute Values" [ref=e107] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/
+              - link "160. Intersection of Two Linked Lists" [ref=e108] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/intersection-of-two-linked-lists/
+              - link "1265. Print Immutable Linked List in Reverse" [ref=e109] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/print-immutable-linked-list-in-reverse/
+              - link "2181. Merge Nodes in Between Zeros" [ref=e110] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/merge-nodes-in-between-zeros/
+              - link "1669. Merge In Between Linked Lists" [ref=e111] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/merge-in-between-linked-lists/
+              - link "92. Reverse Linked List II" [ref=e112] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/reverse-linked-list-ii/
+            - paragraph [ref=e113]:
+              - link "369. Plus One Linked List" [ref=e114] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/plus-one-linked-list/
+            - code [ref=e118]:
+              - generic [ref=e119]: 1. find the rightmost not-nine digit
+              - generic [ref=e120]: 2. increase this rightmost not-nine digit by 1
+              - generic [ref=e121]: 3. set all the following nines to zeros
+            - paragraph [ref=e122]:
+              - link "445. Add Two Numbers II" [ref=e123] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/add-two-numbers-ii/
+            - paragraph [ref=e124]:
+              - link "382. Linked List Random Node" [ref=e125] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/linked-list-random-node/
+              - link "817. Linked List Components" [ref=e126] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/linked-list-components/
+              - link "2058. Find the Minimum and Maximum Number of Nodes Between Critical Points" [ref=e127] [cursor=pointer]:
+                - /url: https://leetcode.com/tag/linked-list/discuss?currentPage=1&orderBy=most_votes&query=
+              - link "19. Remove Nth Node From End of List" [ref=e128] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+              - link "61. Rotate List" [ref=e129] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/rotate-list/
+              - link "2487. Remove Nodes From Linked List" [ref=e130] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/remove-nodes-from-linked-list/
+              - link "725. Split Linked List in Parts" [ref=e131] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/split-linked-list-in-parts//
+            - paragraph [ref=e132]:
+              - strong [ref=e133]: 2. Fast slow pointer
+            - code [ref=e137]:
+              - generic [ref=e138]: fast_pointer = head
+              - generic [ref=e139]: slow_pointer = head
+              - generic [ref=e140]: "while fast_pointer or fast_pointer.next:"
+              - generic [ref=e141]: fast_pointer = fast_pointer.next.next
+              - generic [ref=e142]: slow_pointer = slow_pointer
+            - code [ref=e146]:
+              - generic [ref=e147]: 快慢指针主要用来找到链表的中间点， 如果链表的长度是奇数时，慢指针最终指向链表的中间点， 如果链表的长度是偶数时，慢指针最终指向第（n/2 + 1） 个点（例如链表长度是4，慢指针最终指向第三个点）
+              - text: 判断链表是否有环也可以使用快慢指针。 如果有环， 则快指针与慢指针最终会相遇。
+            - paragraph [ref=e148]:
+              - link "2130. Maximum Twin Sum of a Linked List" [ref=e149] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/
+              - link "234. Palindrome Linked List" [ref=e150] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/palindrome-linked-list/
+            - paragraph [ref=e151]:
+              - link "876. Middle of the Linked List" [ref=e152] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/middle-of-the-linked-list/
+              - link "141. Linked List Cycle" [ref=e153] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/linked-list-cycle/
+            - paragraph [ref=e154]:
+              - link "2095. Delete the Middle Node of a Linked List" [ref=e155] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/
+              - link "24. Swap Nodes in Pairs" [ref=e156] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/swap-nodes-in-pairs/
+              - link "142. Linked List Cycle II" [ref=e157] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/linked-list-cycle-ii/
+            - paragraph [ref=e158]:
+              - strong [ref=e159]: 3. Two pointers
+            - code [ref=e163]:
+              - generic [ref=e164]: 遇到two pointer 的题， 如果从前后双指针，可以先使用快慢指针确定中间节点， 然后翻转后半段链表。这样就可以前后同时进行遍历了
+            - paragraph [ref=e165]:
+              - link "143. Reorder List" [ref=e166] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/reorder-list/
+            - paragraph [ref=e167]:
+              - link "21. Merge Two Sorted Lists" [ref=e168] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/merge-two-sorted-lists/
+              - link "328. Odd Even Linked List" [ref=e169] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/odd-even-linked-list/
+              - link "1634. Add Two Polynomials Represented as Linked Lists" [ref=e170] [cursor=pointer]:
+                - /url: https://leetcode.com/tag/linked-list/discuss?currentPage=1&orderBy=most_votes&query=
+              - link "86. Partition List" [ref=e171] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/partition-list/
+              - link "2. Add Two Numbers" [ref=e172] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/add-two-numbers/
+            - paragraph [ref=e173]:
+              - strong [ref=e174]: 4. design/ doubled linked list
+              - link "1472. Design Browser History" [ref=e175] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/design-browser-history/
+              - link "641. Design Circular Deque" [ref=e176] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/design-circular-deque/
+            - paragraph [ref=e177]:
+              - strong [ref=e178]: 5. Override value
+              - link "237. Delete Node in a Linked List" [ref=e179] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/delete-node-in-a-linked-list/
+              - link "1721. Swapping Nodes in a Linked List" [ref=e180] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/swapping-nodes-in-a-linked-list/
+            - paragraph [ref=e181]:
+              - strong [ref=e182]: 6. Monotonic stack
+              - link "1019. Next Greater Node In Linked List" [ref=e183] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/next-greater-node-in-linked-list/
+            - paragraph [ref=e184]:
+              - strong [ref=e185]: 7. DFS/BFS
+              - link "426. Convert Binary Search Tree to Sorted Doubly Linked List" [ref=e186] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/
+              - link "114. Flatten Binary Tree to Linked List" [ref=e187] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
+              - link "430. Flatten a Multilevel Doubly Linked List" [ref=e188] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/
+              - link "116. Populating Next Right Pointers in Each Node" [ref=e189] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
+              - link "109. Convert Sorted List to Binary Search Tree" [ref=e190] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/
+              - link "117. Populating Next Right Pointers in Each Node II" [ref=e191] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/
+              - link "1367. Linked List in Binary Tree" [ref=e192] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/linked-list-in-binary-tree/
+            - paragraph [ref=e193]:
+              - strong [ref=e194]: 8. Design
+              - link "622. Design Circular Queue" [ref=e195] [cursor=pointer]:
+                - /url: http://
+              - link "146. LRU Cache" [ref=e196] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/lru-cache/
+              - text: ": OrderedDict and dict+linked list"
+              - link "1670. Design Front Middle Back Queue" [ref=e197] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/design-front-middle-back-queue/
+              - link "379. Design Phone Directory" [ref=e198] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/design-phone-directory/
+              - link "355. Design Twitter" [ref=e199] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/design-twitter/
+              - link "707. Design Linked List" [ref=e200] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/design-linked-list/
+            - paragraph [ref=e201]:
+              - strong [ref=e202]: 9. Delete nodes
+              - link "203. Remove Linked List Elements" [ref=e203] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/remove-linked-list-elements/
+              - link "83. Remove Duplicates from Sorted List" [ref=e204] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+              - link "1836. Remove Duplicates From an Unsorted Linked List" [ref=e205] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/
+              - link "82. Remove Duplicates from Sorted List II" [ref=e206] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
+              - link "1474. Delete N Nodes After M Nodes of a Linked List" [ref=e207] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/
+            - paragraph [ref=e208]:
+              - strong [ref=e209]: 10.Question needs to be practiced
+              - link "328. Odd Even Linked List" [ref=e210] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/odd-even-linked-list/
+            - paragraph [ref=e211]:
+              - strong [ref=e212]: 11.Sorting
+              - link "147. Insertion Sort List" [ref=e213] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/insertion-sort-list/
+            - paragraph [ref=e214]:
+              - strong [ref=e215]: 12.Prefix Sum
+              - link "1171. Remove Zero Sum Consecutive Nodes from Linked List" [ref=e216] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/
+            - paragraph [ref=e217]:
+              - strong [ref=e218]: 13.Tricks
+              - text: There are some tricks used in solving linked list questions
+            - code [ref=e222]:
+              - generic [ref=e223]: "When we would like to construct an integer from a string or linked list, we can always use this pattern. For example:"
+              - generic [ref=e224]: string = 'xxx'
+              - generic [ref=e225]: integer = 0
+              - generic [ref=e226]: "for item in string:"
+              - generic [ref=e227]: integer = integer*base + item
+              - generic [ref=e228]: Here base can be 10 base, 2 base.
+          - generic [ref=e231]:
+            - generic [ref=e232]:
+              - button "16" [ref=e233] [cursor=pointer]:
+                - img [ref=e235]
+                - generic [ref=e237]: "16"
+              - button [ref=e239] [cursor=pointer]:
+                - img [ref=e241]
+            - button "3" [ref=e243] [cursor=pointer]:
+              - img [ref=e245]
+              - generic [ref=e247]: "3"
+            - button [ref=e249] [cursor=pointer]:
+              - button [ref=e250]:
+                - img [ref=e252]
+          - generic [ref=e254]:
+            - generic [ref=e255]:
+              - img [ref=e257]
+              - generic [ref=e259]: Comments (3)
+              - button "Sort by:Best" [ref=e263] [cursor=pointer]:
+                - generic [ref=e264]:
+                  - generic [ref=e265]: "Sort by:"
+                  - text: Best
+                - generic:
+                  - img
+            - generic [ref=e269]:
+              - textbox "Type comment here..." [ref=e270]
+              - generic [ref=e271]:
+                - generic [ref=e273]:
+                  - img [ref=e275] [cursor=pointer]
+                  - img [ref=e278] [cursor=pointer]
+                  - img [ref=e281] [cursor=pointer]
+                  - img [ref=e284] [cursor=pointer]
+                - button "Comment" [disabled] [ref=e287] [cursor=pointer]
+            - navigation [ref=e324]:
+              - button "prev" [disabled]:
+                - img
+              - button "1" [disabled]
+              - button "next" [disabled]:
+                - img
+        - generic [ref=e325]:
+          - generic [ref=e327]:
+            - img [ref=e329]
+            - generic [ref=e331]: Explore
+          - generic [ref=e366]:
+            - generic [ref=e367]:
+              - link "Download App" [ref=e368] [cursor=pointer]:
+                - /url: https://leetcode.com/app/?utm_campaign=AppPromotion&utm_medium=site&utm_source=site_footer&gio_link_id=nPN4bXe9
+                - img [ref=e370]
+                - text: Download App
+              - link "Support" [ref=e373] [cursor=pointer]:
+                - /url: https://support.leetcode.com/hc/en-us
+              - link "Terms" [ref=e375] [cursor=pointer]:
+                - /url: /terms
+              - link "Privacy Policy" [ref=e377] [cursor=pointer]:
+                - /url: /privacy
+              - generic [ref=e379] [cursor=pointer]: More
+            - link "Copyright © 2026 LeetCode" [ref=e380] [cursor=pointer]:
+              - /url: /
+            - link "United States" [ref=e382] [cursor=pointer]:
+              - /url: /region
+        - generic [ref=e383]:
+          - button:
+            - generic:
+              - img
+    - region "Notifications (F8)":
+      - list
+  - alert [ref=e384]

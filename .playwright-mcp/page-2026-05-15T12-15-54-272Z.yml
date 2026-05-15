@@ -1,0 +1,431 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - navigation [ref=e6]:
+        - generic [ref=e7]:
+          - link "LeetCode" [ref=e8] [cursor=pointer]:
+            - /url: /
+            - img [ref=e10]
+          - list [ref=e18]:
+            - listitem [ref=e19]:
+              - link "Problems" [ref=e20] [cursor=pointer]:
+                - /url: /problemset
+            - listitem [ref=e21]:
+              - link "Contest" [ref=e22] [cursor=pointer]:
+                - /url: /contest
+            - listitem [ref=e23]:
+              - link "Discuss" [ref=e24] [cursor=pointer]:
+                - /url: /discuss/
+            - listitem [ref=e25]:
+              - generic [ref=e27] [cursor=pointer]:
+                - button "More" [ref=e28]:
+                  - text: More
+                  - img [ref=e29]
+                - list:
+                  - listitem:
+                    - link:
+                      - /url: https://interview.leetcode.com/interview/
+                      - img
+                      - generic: Online Interview
+                  - listitem:
+                    - link:
+                      - /url: /assessment/
+                      - img
+                      - generic: Assessment
+                  - listitem:
+                    - link:
+                      - /url: /store
+                      - generic: Redeem
+                  - listitem:
+                    - link:
+                      - /url: /subscribe/?ref=sto_npl&source=ot
+                      - generic: Premium
+      - generic [ref=e32]:
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - link [ref=e36] [cursor=pointer]:
+              - /url: /discuss/
+              - button [ref=e37]:
+                - img [ref=e39]
+            - button [ref=e41] [cursor=pointer]:
+              - img [ref=e43]
+          - generic [ref=e46]:
+            - generic [ref=e47]: Tree question pattern ||2021 placement
+            - generic [ref=e48]:
+              - link [ref=e50] [cursor=pointer]:
+                - /url: /u/manisha4018/
+              - generic [ref=e51]:
+                - link "Manisha" [ref=e54] [cursor=pointer]:
+                  - /url: /u/manisha4018/
+                - generic [ref=e55]:
+                  - generic [ref=e56]:
+                    - img [ref=e57]
+                    - generic [ref=e59]: "80593"
+                  - generic [ref=e60]:
+                    - img [ref=e61]
+                    - generic [ref=e63]: Jul 14, 2021
+            - generic [ref=e64]:
+              - link "Tree" [ref=e65] [cursor=pointer]:
+                - /url: /discuss/topic/tree/
+              - link "Binary Search Tree" [ref=e66] [cursor=pointer]:
+                - /url: /discuss/topic/binary-search-tree/
+              - link "Career" [ref=e67] [cursor=pointer]:
+                - /url: /discuss/topic/career/
+          - generic [ref=e71]:
+            - paragraph [ref=e72]:
+              - text: I have sorted the some tree problems and categorize so that it could help to others.
+              - text: If you have any query or suggestion please comment below .
+            - paragraph [ref=e73]:
+              - strong [ref=e74]: Ancestor problem :-
+            - paragraph [ref=e75]:
+              - text: "1."
+              - link "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/" [ref=e76] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
+              - text: "2."
+              - link "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/" [ref=e77] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
+              - text: "3."
+              - link "https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/" [ref=e78] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/
+              - text: "4."
+              - link "https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/" [ref=e79] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/
+              - text: "5."
+              - link "https://leetcode.com/problems/kth-ancestor-of-a-tree-node/" [ref=e80] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/kth-ancestor-of-a-tree-node/
+              - text: "6."
+              - link "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/" [ref=e81] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
+            - paragraph [ref=e82]:
+              - strong [ref=e83]: Root to leaf path problems:-
+              - text: "1."
+              - link "https://leetcode.com/problems/binary-tree-paths/" [ref=e84] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/binary-tree-paths/
+              - text: EASY
+              - text: "2."
+              - link "https://leetcode.com/problems/path-sum-iii/submissions/" [ref=e85] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/path-sum-iii/submissions/
+              - text: "3."
+              - link "https://leetcode.com/problems/smallest-string-starting-from-leaf/" [ref=e86] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/smallest-string-starting-from-leaf/
+              - text: "4."
+              - link "https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/" [ref=e87] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/
+              - text: "5."
+              - link "https://leetcode.com/problems/insufficient-nodes-in-root-to-leaf-paths/" [ref=e88] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/insufficient-nodes-in-root-to-leaf-paths/
+              - text: "6."
+              - link "https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/" [ref=e89] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/
+            - paragraph [ref=e90]:
+              - strong [ref=e91]: Serialize and deserialize:-
+              - text: "1."
+              - link "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/" [ref=e92] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
+              - text: Hard
+              - text: "2."
+              - link "https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/" [ref=e93] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/
+              - text: Medium
+              - text: "3."
+              - link "https://leetcode.com/problems/serialize-and-deserialize-bst/" [ref=e94] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/serialize-and-deserialize-bst/
+              - text: "4."
+              - link "https://leetcode.com/problems/serialize-and-deserialize-bst/" [ref=e95] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/serialize-and-deserialize-bst/
+            - paragraph [ref=e96]:
+              - strong [ref=e97]: Leaves related problem:-
+              - text: "1."
+              - link "https://leetcode.com/problems/sum-of-left-leaves/" [ref=e98] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/sum-of-left-leaves/
+              - text: EASY
+              - text: "2."
+              - link "https://leetcode.com/problems/leaf-similar-trees/" [ref=e99] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/leaf-similar-trees/
+              - text: EASY
+              - text: "3."
+              - link "https://leetcode.com/problems/deepest-leaves-sum/" [ref=e100] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/deepest-leaves-sum/
+              - text: "4."
+              - link "https://leetcode.com/problems/delete-leaves-with-a-given-value/" [ref=e101] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/delete-leaves-with-a-given-value/
+            - paragraph [ref=e102]:
+              - strong [ref=e103]: Level order traversal:-
+              - text: "1."
+              - link "https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/" [ref=e104] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/
+              - text: "2."
+              - link "https://leetcode.com/problems/path-in-zigzag-labelled-binary-tree/" [ref=e105] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/path-in-zigzag-labelled-binary-tree/
+              - text: "3."
+              - link "https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/" [ref=e106] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/
+              - text: "4."
+              - link "https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent/" [ref=e107] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent/
+              - text: "5."
+              - link "https://leetcode.com/problems/frog-position-after-t-seconds/" [ref=e108] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/frog-position-after-t-seconds/
+              - text: "6."
+              - link "https://leetcode.com/problems/even-odd-tree/" [ref=e109] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/even-odd-tree/
+              - text: "7."
+              - link "https://leetcode.com/problems/binary-tree-level-order-traversal/" [ref=e110] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/binary-tree-level-order-traversal/
+              - text: "8."
+              - link "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/" [ref=e111] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
+              - text: "9."
+              - link "https://leetcode.com/problems/binary-tree-level-order-traversal-ii/" [ref=e112] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
+              - text: "10."
+              - link "https://leetcode.com/problems/binary-tree-right-side-view/" [ref=e113] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/binary-tree-right-side-view/
+              - text: "11."
+              - link "https://leetcode.com/problems/n-ary-tree-level-order-traversal/" [ref=e114] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/n-ary-tree-level-order-traversal/
+              - text: "12."
+              - link "https://leetcode.com/problems/find-largest-value-in-each-tree-row/" [ref=e115] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/find-largest-value-in-each-tree-row/
+              - text: "13."
+              - link "https://leetcode.com/problems/add-one-row-to-tree/" [ref=e116] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/add-one-row-to-tree/
+              - text: "14."
+              - link "https://leetcode.com/problems/average-of-levels-in-binary-tree/" [ref=e117] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/average-of-levels-in-binary-tree/
+              - text: "15."
+              - link "https://leetcode.com/problems/maximum-width-of-binary-tree/" [ref=e118] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/maximum-width-of-binary-tree/
+            - paragraph [ref=e119]:
+              - strong [ref=e120]: Node deletion:-
+              - text: "1."
+              - link "https://leetcode.com/problems/delete-nodes-and-return-forest/" [ref=e121] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/delete-nodes-and-return-forest/
+              - text: "2."
+              - link "https://leetcode.com/problems/delete-node-in-a-bst/" [ref=e122] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/delete-node-in-a-bst/
+            - paragraph [ref=e123]:
+              - strong [ref=e124]: Tree construction:-
+              - text: "1."
+              - link "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/" [ref=e125] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/
+              - text: "2."
+              - link "https://leetcode.com/problems/all-possible-full-binary-trees/" [ref=e126] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/all-possible-full-binary-trees/
+              - text: "3."
+              - link "https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/" [ref=e127] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/
+              - text: "4."
+              - link "https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/" [ref=e128] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/
+              - text: "5."
+              - link "https://leetcode.com/problems/validate-binary-tree-nodes/" [ref=e129] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/validate-binary-tree-nodes/
+              - text: "6."
+              - link "https://leetcode.com/problems/number-of-ways-to-reconstruct-a-tree/" [ref=e130] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/number-of-ways-to-reconstruct-a-tree/
+              - text: "7."
+              - link "https://leetcode.com/problems/merge-bsts-to-create-single-bst/" [ref=e131] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/merge-bsts-to-create-single-bst/
+              - text: "8."
+              - link "https://leetcode.com/problems/unique-binary-search-trees-ii/" [ref=e132] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/unique-binary-search-trees-ii/
+              - text: "9."
+              - link "https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/" [ref=e133] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/
+              - text: "10."
+              - link "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/" [ref=e134] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
+            - list [ref=e135]:
+              - listitem [ref=e136]
+            - paragraph [ref=e137]:
+              - strong [ref=e138]: Distance between two Nodes:-
+              - text: "1."
+              - link "https://leetcode.com/problems/minimum-distance-between-bst-nodes/" [ref=e139] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/minimum-distance-between-bst-nodes/
+              - text: "2."
+              - link "https://leetcode.com/problems/sum-of-distances-in-tree/" [ref=e140] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/sum-of-distances-in-tree/
+              - text: Hard
+              - text: "3."
+              - link "https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/" [ref=e141] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/
+            - paragraph [ref=e142]:
+              - text: "**Inorder traversal **"
+              - text: "1."
+              - link "https://leetcode.com/problems/increasing-order-search-tree/" [ref=e143] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/increasing-order-search-tree/
+              - text: "2."
+              - link "https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/" [ref=e144] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/
+              - text: "3."
+              - link "https://leetcode.com/problems/all-elements-in-two-binary-search-trees/" [ref=e145] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/all-elements-in-two-binary-search-trees/
+              - text: "4."
+              - link "https://leetcode.com/problems/validate-binary-search-tree/" [ref=e146] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/validate-binary-search-tree/
+              - text: "5."
+              - link "https://leetcode.com/problems/convert-bst-to-greater-tree/" [ref=e147] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/convert-bst-to-greater-tree/
+              - text: Rangesum of BT
+              - text: "1."
+              - link "https://leetcode.com/problems/range-sum-of-bst/" [ref=e148] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/range-sum-of-bst/
+            - paragraph [ref=e149]:
+              - strong [ref=e150]: Flipping:-
+              - text: "1."
+              - link "https://leetcode.com/problems/flip-equivalent-binary-trees/" [ref=e151] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/flip-equivalent-binary-trees/
+              - text: "2."
+              - link "https://leetcode.com/problems/flip-binary-tree-to-match-preorder-traversal/" [ref=e152] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/flip-binary-tree-to-match-preorder-traversal/
+            - paragraph [ref=e153]:
+              - strong [ref=e154]: Check binary tree:-
+              - text: "1."
+              - link "https://leetcode.com/problems/check-completeness-of-a-binary-tree/" [ref=e155] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/check-completeness-of-a-binary-tree/
+              - text: "2."
+              - link "https://leetcode.com/problems/check-completeness-of-a-binary-tree/" [ref=e156] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/check-completeness-of-a-binary-tree/
+              - text: "3."
+              - link "https://leetcode.com/problems/univalued-binary-tree/" [ref=e157] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/univalued-binary-tree/
+            - paragraph [ref=e158]:
+              - strong [ref=e159]: Tree relations:-
+              - text: "1."
+              - link "https://leetcode.com/problems/cousins-in-binary-tree/" [ref=e160] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/cousins-in-binary-tree/
+            - paragraph [ref=e161]:
+              - strong [ref=e162]: Counting of nodes:-
+              - text: "1."
+              - link "https://leetcode.com/problems/count-good-nodes-in-binary-tree/" [ref=e163] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/count-good-nodes-in-binary-tree/
+              - text: "2."
+              - link "https://leetcode.com/problems/number-of-nodes-in-the-sub-tree-with-the-same-label/" [ref=e164] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/number-of-nodes-in-the-sub-tree-with-the-same-label/
+              - text: "3."
+              - link "https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/" [ref=e165] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/
+              - text: "4."
+              - link "https://leetcode.com/problems/unique-binary-search-trees/" [ref=e166] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/unique-binary-search-trees/
+            - paragraph [ref=e167]:
+              - strong [ref=e168]: Recovery:-
+              - text: "1."
+              - link "https://leetcode.com/problems/recover-binary-search-tree/" [ref=e169] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/recover-binary-search-tree/
+            - paragraph [ref=e170]:
+              - text: Kth smallest :-
+              - text: "1."
+              - link "https://leetcode.com/problems/kth-smallest-element-in-a-bst/" [ref=e171] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/kth-smallest-element-in-a-bst/
+              - text: "2."
+              - link "https://leetcode.com/problems/kth-largest-element-in-a-stream/" [ref=e172] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/kth-largest-element-in-a-stream/
+            - paragraph [ref=e173]:
+              - strong [ref=e174]: "Trimming or pruning:"
+              - text: "1."
+              - link "https://leetcode.com/problems/trim-a-binary-search-tree/" [ref=e175] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/trim-a-binary-search-tree/
+            - paragraph [ref=e176]:
+              - strong [ref=e177]: Searching:-
+              - text: "1."
+              - link "https://leetcode.com/problems/search-in-a-binary-search-tree/" [ref=e178] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/search-in-a-binary-search-tree/
+            - paragraph [ref=e179]:
+              - strong [ref=e180]: Difference problem in BT:-
+              - text: "1."
+              - link "https://leetcode.com/problems/kth-largest-element-in-a-stream/" [ref=e181] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/kth-largest-element-in-a-stream/
+            - paragraph [ref=e182]:
+              - strong [ref=e183]: Tree checking:-
+              - text: "1."
+              - link "https://leetcode.com/problems/same-tree/" [ref=e184] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/same-tree/
+              - text: "2."
+              - link "https://leetcode.com/problems/symmetric-tree/" [ref=e185] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/symmetric-tree/
+            - paragraph [ref=e186]:
+              - strong [ref=e187]: Depth problem:-
+              - text: "1."
+              - link "https://leetcode.com/problems/maximum-depth-of-binary-tree/" [ref=e188] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/maximum-depth-of-binary-tree/
+              - text: "2."
+              - link "https://leetcode.com/problems/minimum-depth-of-binary-tree/" [ref=e189] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/minimum-depth-of-binary-tree/
+              - text: "3."
+              - link "https://leetcode.com/problems/minimum-absolute-difference-in-bst/" [ref=e190] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/minimum-absolute-difference-in-bst/
+              - text: "4."
+              - link "https://leetcode.com/problems/maximum-depth-of-n-ary-tree/" [ref=e191] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/maximum-depth-of-n-ary-tree/
+              - text: "**Please upvote if you like it. **"
+          - generic [ref=e194]:
+            - generic [ref=e195]:
+              - button "997" [ref=e196] [cursor=pointer]:
+                - img [ref=e198]
+                - generic [ref=e200]: "997"
+              - button [ref=e202] [cursor=pointer]:
+                - img [ref=e204]
+            - button "37" [ref=e206] [cursor=pointer]:
+              - img [ref=e208]
+              - generic [ref=e210]: "37"
+            - button [ref=e212] [cursor=pointer]:
+              - button [ref=e213]:
+                - img [ref=e215]
+          - generic [ref=e217]:
+            - generic [ref=e218]:
+              - img [ref=e220]
+              - generic [ref=e222]: Comments (37)
+              - button "Sort by:Best" [ref=e226] [cursor=pointer]:
+                - generic [ref=e227]:
+                  - generic [ref=e228]: "Sort by:"
+                  - text: Best
+                - generic:
+                  - img
+            - generic [ref=e232]:
+              - textbox "Type comment here..." [ref=e233]
+              - generic [ref=e234]:
+                - generic [ref=e236]:
+                  - img [ref=e238] [cursor=pointer]
+                  - img [ref=e241] [cursor=pointer]
+                  - img [ref=e244] [cursor=pointer]
+                  - img [ref=e247] [cursor=pointer]
+                - button "Comment" [disabled] [ref=e250] [cursor=pointer]
+            - navigation [ref=e364]:
+              - button "prev" [disabled]:
+                - img
+              - button "1" [disabled]
+              - button "2" [disabled]
+              - button "3" [disabled]
+              - button "4" [disabled]
+              - button "next" [disabled]:
+                - img
+        - generic [ref=e365]:
+          - generic [ref=e367]:
+            - img [ref=e369]
+            - generic [ref=e371]: Explore
+          - generic [ref=e406]:
+            - generic [ref=e407]:
+              - link "Download App" [ref=e408] [cursor=pointer]:
+                - /url: https://leetcode.com/app/?utm_campaign=AppPromotion&utm_medium=site&utm_source=site_footer&gio_link_id=nPN4bXe9
+                - img [ref=e410]
+                - text: Download App
+              - link "Support" [ref=e413] [cursor=pointer]:
+                - /url: https://support.leetcode.com/hc/en-us
+              - link "Terms" [ref=e415] [cursor=pointer]:
+                - /url: /terms
+              - link "Privacy Policy" [ref=e417] [cursor=pointer]:
+                - /url: /privacy
+              - generic [ref=e419] [cursor=pointer]: More
+            - link "Copyright © 2026 LeetCode" [ref=e420] [cursor=pointer]:
+              - /url: /
+            - link "United States" [ref=e422] [cursor=pointer]:
+              - /url: /region
+        - generic [ref=e423]:
+          - button:
+            - generic:
+              - img
+    - region "Notifications (F8)":
+      - list
+  - alert [ref=e424]

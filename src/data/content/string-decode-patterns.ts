@@ -160,7 +160,7 @@ var decode = function(s) {
     {
       type: 'callout',
       icon: '🔓',
-      color: 'pink',
+      color: 'red',
       content: `**Nested decode stack pattern:**\n1. On "[": push (current_string, current_multiplier) to stack; reset current\n2. On "]": pop (prev, k); current = prev + current.repeat(k)\n3. On digit: build multiplier (k = k*10 + digit) for multi-digit numbers\n4. On letter: append to current\n\n**Encoding schemes:**\n- Run-length: "aabbbcc" → "a2b3c2" (or "2a3b2c" depending on format)\n- Length-prefix: "length#string" — safe for any content\n- Delimiter: works only if delimiter doesn't appear in content\n\n**Recursive descent:** For complex grammars, implement explicit recursive functions for each grammar rule instead of a single-pass stack.`,
     },
   ],

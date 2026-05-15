@@ -1,0 +1,344 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - navigation [ref=e6]:
+        - generic [ref=e7]:
+          - link "LeetCode" [ref=e8] [cursor=pointer]:
+            - /url: /
+            - img [ref=e10]
+          - list [ref=e18]:
+            - listitem [ref=e19]:
+              - link "Problems" [ref=e20] [cursor=pointer]:
+                - /url: /problemset
+            - listitem [ref=e21]:
+              - link "Contest" [ref=e22] [cursor=pointer]:
+                - /url: /contest
+            - listitem [ref=e23]:
+              - link "Discuss" [ref=e24] [cursor=pointer]:
+                - /url: /discuss/
+            - listitem [ref=e25]:
+              - generic [ref=e27] [cursor=pointer]:
+                - button "More" [ref=e28]:
+                  - text: More
+                  - img [ref=e29]
+                - list:
+                  - listitem:
+                    - link:
+                      - /url: https://interview.leetcode.com/interview/
+                      - img
+                      - generic: Online Interview
+                  - listitem:
+                    - link:
+                      - /url: /assessment/
+                      - img
+                      - generic: Assessment
+                  - listitem:
+                    - link:
+                      - /url: /store
+                      - generic: Redeem
+                  - listitem:
+                    - link:
+                      - /url: /subscribe/?ref=sto_npl&source=ot
+                      - generic: Premium
+      - generic [ref=e32]:
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - link [ref=e36] [cursor=pointer]:
+              - /url: /discuss/
+              - button [ref=e37]:
+                - img [ref=e39]
+            - button [ref=e41] [cursor=pointer]:
+              - img [ref=e43]
+          - generic [ref=e46]:
+            - generic [ref=e47]: ABCs of Greedy
+            - generic [ref=e48]:
+              - link [ref=e50] [cursor=pointer]:
+                - /url: /u/Sapphire_Skies/
+              - generic [ref=e51]:
+                - link "Sapphire_Skies" [ref=e54] [cursor=pointer]:
+                  - /url: /u/Sapphire_Skies/
+                - generic [ref=e55]:
+                  - generic [ref=e56]:
+                    - img [ref=e57]
+                    - generic [ref=e59]: "32242"
+                  - generic [ref=e60]:
+                    - img [ref=e61]
+                    - generic [ref=e63]: Feb 11, 2021
+                  - generic [ref=e64]:
+                    - img [ref=e66]
+                    - generic [ref=e68]: Mar 08, 2021
+          - generic [ref=e72]:
+            - paragraph [ref=e73]:
+              - text: I've seen there are many amazing tutorials and problem lists out there for various Concepts like
+              - link "Dynamic Programming" [ref=e74] [cursor=pointer]:
+                - /url: https://leetcode.com/discuss/general-discussion/458695/Dynamic-Programming-Patterns
+              - text: by @aatalyk. I plan on compiling one for Greedy in C++ so that it's helpful for me as well as people starting their interview preps. Java and Python solution can be found in the solution column of the questions. It's incomplete but feel free to suggest some resources which can benefit people while revising Greedy.
+            - separator [ref=e75]
+            - heading "Some Background" [level=4] [ref=e76]
+            - paragraph [ref=e77]: Greedy algorithm is nothing but a paradigm which builds problems piece by piece. In recursion, we keep on dividing a big problem into multiple smaller chunks and solving those sub problems which is finally used to solve our actual problem. But this isn't the case for Greedy. In this, at any instant, we choose a piece of solution which will offer the most obvious and immediate benefit. For example the famous problem Fractional Knapsack. We keep on choosing the items which are local maximathat is, the items which have maximum value of "profit per unit weight" and in the end get the global maximum.
+            - separator [ref=e78]
+            - heading "Some popular Greedy Algorithms" [level=4] [ref=e79]
+            - list [ref=e80]:
+              - listitem [ref=e81]: Dijkstra’s Shortest Path
+              - listitem [ref=e82]: Kruskal’s Minimum Spanning Tree (MST)
+              - listitem [ref=e83]: Prim's Minimum Spanning tree
+              - listitem [ref=e84]: Huffman Coding
+            - separator [ref=e85]
+            - heading "Problem List for Greedy" [level=4] [ref=e86]
+            - paragraph [ref=e87]: These problems are sufficient for developing intuition for Greedy.
+            - list [ref=e88]:
+              - listitem [ref=e89]:
+                - link "https://leetcode.com/list/50f6p33i" [ref=e90] [cursor=pointer]:
+                  - /url: https://leetcode.com/list/50f6p33i
+            - separator [ref=e91]
+            - heading "When to use it ?" [level=4] [ref=e92]
+            - paragraph [ref=e93]: Whenever we see optimum or maximum or minimum or larget or smallest, the first approach which should strike our mind should be Greedy or Dynamic Programming. If the problem is solvable via recursion, one should do for memoized recursion or DP else start with the brute force and reduce it to Greedy.
+            - separator [ref=e94]
+            - heading "Some problems based on Greedy for beginners with the intuition behind solving them:" [level=4] [ref=e95]
+            - heading "Max-Consecutive-Ones" [level=4] [ref=e96]:
+              - link "Max-Consecutive-Ones" [ref=e97] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/max-consecutive-ones/
+            - paragraph [ref=e98]:
+              - strong [ref=e99]: Problem Statement
+              - text: In an array of 0s and 1s, we are to fing length of the longest chain of 1s.
+            - paragraph [ref=e100]:
+              - strong [ref=e101]: Intuition
+              - text: Traverse the whole array once and find lengths of various chains of 1. Finally return the length of the longest chain.
+            - paragraph [ref=e102]:
+              - strong [ref=e103]: Code
+            - code [ref=e107]:
+              - generic [ref=e108]: int count = 0 , count_max = 0;
+              - generic [ref=e109]: "for(auto& num : nums)"
+              - generic [ref=e110]: "{"
+              - generic [ref=e111]: if(num == 1)
+              - generic [ref=e112]: ++count;
+              - generic [ref=e113]: else
+              - generic [ref=e114]: "{"
+              - generic [ref=e115]: "count_max = (count_max < count) ? count : count_max;"
+              - generic [ref=e116]: count = 0;
+              - generic [ref=e117]: "}"
+              - generic [ref=e118]: "}"
+              - generic [ref=e119]: "return (count > count_max) ? count : count_max ;"
+            - separator [ref=e120]
+            - heading "Best time to buy and sell stocks" [level=4] [ref=e121]:
+              - link "Best time to buy and sell stocks" [ref=e122] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+            - paragraph [ref=e123]:
+              - strong [ref=e124]: Problem Statement
+              - text: Given array of prices, you can buy stock and sell it on a later date only once. Goal is to maximize profit.
+            - paragraph [ref=e125]:
+              - strong [ref=e126]: Intuition
+              - text: The brute for solution would be finding all such possibilities of profit but the time complexity shoots to O(n^2) so this is rejected because it's possible to do it in O(n) time. Simply keep track of the local minima at each step and which traversing the array, find the difference between array element and local minima and return the max difference.
+            - paragraph [ref=e127]:
+              - strong [ref=e128]: Code
+            - code [ref=e132]:
+              - generic [ref=e133]: int max_profit = 0, min_price = INT_MAX;
+              - generic [ref=e134]: for(int i = 0 ; i < prices.size() ; ++i )
+              - generic [ref=e135]: "{"
+              - generic [ref=e136]: "min_price = (min_price > prices[i]) ? prices[i] : min_price ;"
+              - generic [ref=e137]: "max_profit = (max_profit < prices[i] - min_price) ? prices[i] - min_price : max_profit;"
+              - generic [ref=e138]: "}"
+              - generic [ref=e139]: return max_profit ;
+            - separator [ref=e140]
+            - heading "Jump Game" [level=4] [ref=e141]:
+              - link "Jump Game" [ref=e142] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/jump-game/
+            - paragraph [ref=e143]:
+              - strong [ref=e144]: Problem Statement
+              - text: Given an array of non-negative integers nums, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at that position. Determine if you are able to reach the last index.
+            - paragraph [ref=e145]:
+              - strong [ref=e146]: Intuition
+              - text: We need to determine the farthest_index that can be reached while traversing the array. If the farthest_index is greater than or equal to the last index, we should return true else false. The time complexity will be O(N) and space complexity O(1).
+            - paragraph [ref=e147]:
+              - strong [ref=e148]: Code
+            - code [ref=e152]:
+              - generic [ref=e153]: "bool canJump(vector<int>& nums) {"
+              - generic [ref=e154]: int n = nums.size(), farthest_index = 0 ;
+              - generic [ref=e155]: "for(int i=0; i<n; i++) {"
+              - generic [ref=e156]: if(farthest_index < i) return false;
+              - generic [ref=e157]: farthest_index = max (i + nums[i] , farthest_index) ;
+              - generic [ref=e158]: "}"
+              - generic [ref=e159]: return true;
+              - generic [ref=e160]: "}"
+            - separator [ref=e161]
+            - heading "Jump Game II" [level=4] [ref=e162]:
+              - link "Jump Game II" [ref=e163] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/jump-game-ii/
+            - paragraph [ref=e164]:
+              - strong [ref=e165]: Problem Statement
+              - text: Given an array of non-negative integers nums, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at that position. Your goal is to reach the last index in the minimum number of jumps. You can assume that you can always reach the last index.
+            - paragraph [ref=e166]:
+              - strong [ref=e167]: Intuition
+              - text: As soon as we see the word minimum number of steps, our aim should be to maximize our reach at every step thus giving the greedy solution of O(N) time. As soon as the right index where we reach is greater than or equal to our last index, we can safely return the step number.
+            - paragraph [ref=e168]:
+              - strong [ref=e169]: Code
+            - code [ref=e173]:
+              - generic [ref=e174]: "int jump(vector<int>& nums) {"
+              - generic [ref=e175]: int step = 0;
+              - generic [ref=e176]: "for(int l = 0, r = 0; r < nums.size() - 1; step++){"
+              - generic [ref=e177]: int r_new = 0;
+              - generic [ref=e178]: for(int i = l; i <= r; i++) r_new = max(r_new, i + nums[i]);
+              - generic [ref=e179]: l = r + 1;
+              - generic [ref=e180]: r = r_new;
+              - generic [ref=e181]: "}"
+              - generic [ref=e182]: return step;
+              - generic [ref=e183]: "}"
+            - separator [ref=e184]
+            - heading "Gas Station" [level=4] [ref=e185]:
+              - link "Gas Station" [ref=e186] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/gas-station/submissions/
+            - paragraph [ref=e187]:
+              - strong [ref=e188]: Problem Statement
+              - text: Given two integer arrays gas and cost, return the starting gas station's index if you can travel around the circuit once in the clockwise direction, otherwise return -1. If there exists a solution, it is guaranteed to be unique.
+            - paragraph [ref=e189]:
+              - strong [ref=e190]: Intuition
+              - text: The starting index would be such that gas[index] >= cost[index] at that particular index. Idea is to go to stations from which we can travel to the farthest so that you can travel the farthest.
+            - paragraph [ref=e191]:
+              - strong [ref=e192]: Code
+            - code [ref=e196]:
+              - generic [ref=e197]: int n = cost.size();
+              - generic [ref=e198]: int sum;
+              - generic [ref=e199]: "for(int i=0; i<n; ++i) {"
+              - generic [ref=e200]: if(gas[i] < cost[i]) continue; //idea starting index should've gas[i] >= cost[i]
+              - generic [ref=e201]: int j = 0, k, sum = 0;
+              - generic [ref=e202]: "for(j=0 ; j < n ; ++j){"
+              - generic [ref=e203]: k = (i+ j) % n;
+              - generic [ref=e204]: sum += gas[k] - cost[k];
+              - generic [ref=e205]: "if (sum < 0) {"
+              - generic [ref=e206]: if(k<i)
+              - generic [ref=e207]: return -1;
+              - generic [ref=e208]: else
+              - generic [ref=e209]: i = k;
+              - generic [ref=e210]: break;
+              - generic [ref=e211]: "}"
+              - generic [ref=e212]: "}"
+              - generic [ref=e213]: if(j==n) return i;
+              - generic [ref=e214]: "}"
+              - generic [ref=e215]: return -1;
+            - separator [ref=e216]
+            - heading "Lemonade Change" [level=4] [ref=e217]:
+              - link "Lemonade Change" [ref=e218] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/lemonade-change/submissions/
+            - paragraph [ref=e219]:
+              - strong [ref=e220]: Problem Statement
+              - text: Return true if and only if you can provide every customer with correct change.
+            - paragraph [ref=e221]:
+              - strong [ref=e222]: Intuition
+              - text: You need to keep the track of the amount of change you have. Customer gives 5 then no problem. If customer gives 10 then you should have
+              - generic [ref=e226]: 5billanddecrementtheamountof
+              - text: 5 bills you have and increment
+              - generic [ref=e230]: 10bill.Ifcustomergives
+              - text: 20, first you try to give
+              - generic [ref=e234]: 10+
+              - text: 5. If you don't have
+              - generic [ref=e238]: 10, thenyoutrytogive3∗
+              - text: 5 but if you don't have it, return false.
+            - paragraph [ref=e239]:
+              - strong [ref=e240]: Code
+            - code [ref=e244]:
+              - generic [ref=e245]: int n5 = 0 , n10 = 0 ;
+              - generic [ref=e246]: int n= bills.size();
+              - generic [ref=e247]: for(int i=0; i<n; i++)
+              - generic [ref=e248]: "{"
+              - generic [ref=e249]: if (bills[i] == 5) ++n5;
+              - generic [ref=e250]: else if(bills[i] == 10 )
+              - generic [ref=e251]: "{"
+              - generic [ref=e252]: "if(n5) {"
+              - generic [ref=e253]: "--n5;"
+              - generic [ref=e254]: ++n10;
+              - generic [ref=e255]: "}"
+              - generic [ref=e256]: else return false;
+              - generic [ref=e257]: "}"
+              - generic [ref=e258]: else
+              - generic [ref=e259]: "{"
+              - generic [ref=e260]: if(n10 && n5)
+              - generic [ref=e261]: "{"
+              - generic [ref=e262]: "--n10;"
+              - generic [ref=e263]: "--n5;"
+              - generic [ref=e264]: "}"
+              - generic [ref=e265]: else
+              - generic [ref=e266]: "{"
+              - generic [ref=e267]: if(n5>=3)
+              - generic [ref=e268]: "{"
+              - generic [ref=e269]: n5-=3;
+              - generic [ref=e270]: "}"
+              - generic [ref=e271]: else return false;
+              - generic [ref=e272]: "}"
+              - generic [ref=e273]: "}"
+              - generic [ref=e274]: "}"
+              - generic [ref=e275]: return true;
+            - paragraph [ref=e276]:
+              - link "4. Candy" [ref=e277] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/candy
+            - separator [ref=e278]
+            - paragraph [ref=e279]:
+              - strong [ref=e280]: Some amazing General Discussions
+            - paragraph [ref=e281]:
+              - link "Greedy Algorithms in Graphs" [ref=e282] [cursor=pointer]:
+                - /url: https://leetcode.com/discuss/general-discussion/969327/graph-algorithms-one-place-dijkstra-bellman-ford-floyd-warshall-prims-kruskals-dsu
+          - generic [ref=e285]:
+            - generic [ref=e286]:
+              - button "195" [ref=e287] [cursor=pointer]:
+                - img [ref=e289]
+                - generic [ref=e291]: "195"
+              - button [ref=e293] [cursor=pointer]:
+                - img [ref=e295]
+            - button "9" [ref=e297] [cursor=pointer]:
+              - img [ref=e299]
+              - generic [ref=e301]: "9"
+            - button [ref=e303] [cursor=pointer]:
+              - button [ref=e304]:
+                - img [ref=e306]
+          - generic [ref=e308]:
+            - generic [ref=e309]:
+              - img [ref=e311]
+              - generic [ref=e313]: Comments (9)
+              - button "Sort by:Best" [ref=e317] [cursor=pointer]:
+                - generic [ref=e318]:
+                  - generic [ref=e319]: "Sort by:"
+                  - text: Best
+                - generic:
+                  - img
+            - generic [ref=e323]:
+              - textbox "Type comment here..." [ref=e324]
+              - generic [ref=e325]:
+                - generic [ref=e327]:
+                  - img [ref=e329] [cursor=pointer]
+                  - img [ref=e332] [cursor=pointer]
+                  - img [ref=e335] [cursor=pointer]
+                  - img [ref=e338] [cursor=pointer]
+                - button "Comment" [disabled] [ref=e341] [cursor=pointer]
+            - navigation [ref=e444]:
+              - button "prev" [disabled]:
+                - img
+              - button "1" [disabled]
+              - button "next" [disabled]:
+                - img
+        - generic [ref=e445]:
+          - generic [ref=e447]:
+            - img [ref=e449]
+            - generic [ref=e451]: Explore
+          - generic [ref=e486]:
+            - generic [ref=e487]:
+              - link "Download App" [ref=e488] [cursor=pointer]:
+                - /url: https://leetcode.com/app/?utm_campaign=AppPromotion&utm_medium=site&utm_source=site_footer&gio_link_id=nPN4bXe9
+                - img [ref=e490]
+                - text: Download App
+              - link "Support" [ref=e493] [cursor=pointer]:
+                - /url: https://support.leetcode.com/hc/en-us
+              - link "Terms" [ref=e495] [cursor=pointer]:
+                - /url: /terms
+              - link "Privacy Policy" [ref=e497] [cursor=pointer]:
+                - /url: /privacy
+              - generic [ref=e499] [cursor=pointer]: More
+            - link "Copyright © 2026 LeetCode" [ref=e500] [cursor=pointer]:
+              - /url: /
+            - link "United States" [ref=e502] [cursor=pointer]:
+              - /url: /region
+        - generic [ref=e503]:
+          - button:
+            - generic:
+              - img
+    - region "Notifications (F8)":
+      - list
+  - alert [ref=e504]
