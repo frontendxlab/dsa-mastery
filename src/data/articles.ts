@@ -76,6 +76,7 @@ import { designPatternsArticle } from './content/design-patterns'
 import { intervalDpArticle } from './content/interval-dp'
 import { gridDpArticle } from './content/grid-dp'
 import { stringDpArticle } from './content/string-dp'
+import { knapsackDpArticle } from './content/knapsack-dp'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -121,6 +122,7 @@ export const articles: Article[] = [
   intervalDpArticle,
   gridDpArticle,
   stringDpArticle,
+  knapsackDpArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
