@@ -155,6 +155,10 @@ import { trieXorArticle } from './content/trie-xor'
 import { lucasTheoremArticle } from './content/lucas-theorem'
 import { offlineLcaArticle } from './content/offline-lca'
 import { flowLowerBoundsArticle } from './content/flow-lower-bounds'
+import { bidirectionalBfsArticle } from './content/bidirectional-bfs'
+import { segmentTreeBeatsArticle } from './content/segment-tree-beats'
+import { aStarSearchArticle } from './content/a-star-search'
+import { stringRotationsArticle } from './content/string-rotations'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -279,6 +283,10 @@ export const articles: Article[] = [
   lucasTheoremArticle,
   offlineLcaArticle,
   flowLowerBoundsArticle,
+  bidirectionalBfsArticle,
+  segmentTreeBeatsArticle,
+  aStarSearchArticle,
+  stringRotationsArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
