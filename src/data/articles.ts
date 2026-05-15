@@ -88,6 +88,7 @@ import { sortingAlgorithmsArticle } from './content/sorting-algorithms'
 import { bipartiteArticle } from './content/bipartite'
 import { segmentTreeLazyArticle } from './content/segment-tree-lazy'
 import { recursionMemoizationArticle } from './content/recursion-memoization'
+import { cycleDetectionArticle } from './content/cycle-detection'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -145,6 +146,7 @@ export const articles: Article[] = [
   bipartiteArticle,
   segmentTreeLazyArticle,
   recursionMemoizationArticle,
+  cycleDetectionArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
