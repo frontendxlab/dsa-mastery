@@ -175,6 +175,10 @@ import { aliensTrickArticle } from './content/aliens-trick'
 import { persistentUnionFindArticle } from './content/persistent-union-find'
 import { graphColoringArticle } from './content/graph-coloring'
 import { arithmeticDpArticle } from './content/arithmetic-dp'
+import { kadaneVariantsArticle } from './content/kadane-variants'
+import { subsequenceCountingArticle } from './content/subsequence-counting'
+import { slidingWindowAdvancedArticle } from './content/sliding-window-advanced'
+import { twoPointerAdvancedArticle } from './content/two-pointer-advanced'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -319,6 +323,10 @@ export const articles: Article[] = [
   persistentUnionFindArticle,
   graphColoringArticle,
   arithmeticDpArticle,
+  kadaneVariantsArticle,
+  subsequenceCountingArticle,
+  slidingWindowAdvancedArticle,
+  twoPointerAdvancedArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {

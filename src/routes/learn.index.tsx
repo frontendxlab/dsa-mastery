@@ -8,7 +8,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part I — Arrays & Pointers',
     color: 'var(--nb-teal)',
-    chapters: ['two-pointers', 'sliding-window', 'binary-search', 'prefix-sum', 'two-sum-family', 'array-tricks', 'difference-array', 'contribution-technique', 'binary-search-answer', 'permutation-patterns', 'word-break-variants', 'shortest-supersequence'],
+    chapters: ['two-pointers', 'sliding-window', 'binary-search', 'prefix-sum', 'two-sum-family', 'array-tricks', 'difference-array', 'contribution-technique', 'binary-search-answer', 'permutation-patterns', 'word-break-variants', 'shortest-supersequence', 'kadane-variants', 'two-pointer-advanced'],
   },
   {
     part: 'Part II — Linked Structures',
@@ -43,7 +43,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part VIII — Cross-Topic Deep Dives',
     color: 'var(--nb-red)',
-    chapters: ['bfs-vs-dfs', 'interval-problems', 'dp-on-trees', 'union-find', 'digit-dp', 'interval-dp', 'grid-dp', 'state-machine-dp', 'recursion-memoization', 'grid-patterns', 'fenwick-tree', 'heavy-light-decomposition', 'euler-tour', 'mo-algorithm', 'xor-basis', 'euler-path', 'divide-conquer-dp', 'sqrt-decomposition', 'persistent-segment-tree', 'treap', 'offline-cdq', 'bitset-operations', 'slope-trick', 'segment-tree-beats', 'balanced-dp', 'profile-dp', 'aliens-trick', 'arithmetic-dp'],
+    chapters: ['bfs-vs-dfs', 'interval-problems', 'dp-on-trees', 'union-find', 'digit-dp', 'interval-dp', 'grid-dp', 'state-machine-dp', 'recursion-memoization', 'grid-patterns', 'fenwick-tree', 'heavy-light-decomposition', 'euler-tour', 'mo-algorithm', 'xor-basis', 'euler-path', 'divide-conquer-dp', 'sqrt-decomposition', 'persistent-segment-tree', 'treap', 'offline-cdq', 'bitset-operations', 'slope-trick', 'segment-tree-beats', 'balanced-dp', 'profile-dp', 'aliens-trick', 'arithmetic-dp', 'subsequence-counting', 'sliding-window-advanced'],
   },
 ]
 
