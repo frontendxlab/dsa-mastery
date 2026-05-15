@@ -93,6 +93,7 @@ import { kthElementArticle } from './content/kth-element'
 import { arrayTricksArticle } from './content/array-tricks'
 import { treeConstructionArticle } from './content/tree-construction'
 import { gridPatternsArticle } from './content/grid-patterns'
+import { coordinateCompressionArticle } from './content/coordinate-compression'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -155,6 +156,7 @@ export const articles: Article[] = [
   arrayTricksArticle,
   treeConstructionArticle,
   gridPatternsArticle,
+  coordinateCompressionArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
