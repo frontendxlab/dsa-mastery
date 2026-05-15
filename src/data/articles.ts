@@ -203,6 +203,14 @@ import { kWayMergeArticle } from './content/k-way-merge'
 import { numberTricksArticle } from './content/number-tricks'
 import { dpSpaceOptimizationArticle } from './content/dp-space-optimization'
 import { stringWindowPatternsArticle } from './content/string-window-patterns'
+import { matrixOperationsArticle } from './content/matrix-operations'
+import { lruLfuCacheArticle } from './content/lru-lfu-cache'
+import { graphBellmanFordArticle } from './content/graph-bellman-ford'
+import { stringDecodePattersArticle } from './content/string-decode-patterns'
+import { wildcardRegexArticle } from './content/wildcard-regex'
+import { bstOperationsArticle } from './content/bst-operations'
+import { countingSubarraysArticle } from './content/counting-subarrays'
+import { jumpGameVariantsArticle } from './content/jump-game-variants'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -375,6 +383,14 @@ export const articles: Article[] = [
   numberTricksArticle,
   dpSpaceOptimizationArticle,
   stringWindowPatternsArticle,
+  matrixOperationsArticle,
+  lruLfuCacheArticle,
+  graphBellmanFordArticle,
+  stringDecodePattersArticle,
+  wildcardRegexArticle,
+  bstOperationsArticle,
+  countingSubarraysArticle,
+  jumpGameVariantsArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
