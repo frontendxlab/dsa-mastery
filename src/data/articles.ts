@@ -167,6 +167,10 @@ import { profileDpArticle } from './content/profile-dp'
 import { latticePathsArticle } from './content/lattice-paths'
 import { functionalGraphsArticle } from './content/functional-graphs'
 import { advancedCountingDpArticle } from './content/advanced-counting-dp'
+import { wordBreakVariantsArticle } from './content/word-break-variants'
+import { rotatingCalipersArticle } from './content/rotating-calipers'
+import { matchingFlowArticle } from './content/matching-flow'
+import { shortestSupersequenceArticle } from './content/shortest-supersequence'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -303,6 +307,10 @@ export const articles: Article[] = [
   latticePathsArticle,
   functionalGraphsArticle,
   advancedCountingDpArticle,
+  wordBreakVariantsArticle,
+  rotatingCalipersArticle,
+  matchingFlowArticle,
+  shortestSupersequenceArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {

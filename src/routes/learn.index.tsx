@@ -8,7 +8,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part I — Arrays & Pointers',
     color: 'var(--nb-teal)',
-    chapters: ['two-pointers', 'sliding-window', 'binary-search', 'prefix-sum', 'two-sum-family', 'array-tricks', 'difference-array', 'contribution-technique', 'binary-search-answer', 'permutation-patterns'],
+    chapters: ['two-pointers', 'sliding-window', 'binary-search', 'prefix-sum', 'two-sum-family', 'array-tricks', 'difference-array', 'contribution-technique', 'binary-search-answer', 'permutation-patterns', 'word-break-variants', 'shortest-supersequence'],
   },
   {
     part: 'Part II — Linked Structures',
@@ -23,7 +23,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part IV — Core Algorithms',
     color: 'var(--nb-green)',
-    chapters: ['dynamic-programming', 'backtracking', 'greedy', 'graph', 'shortest-path', 'bitmask-dp', 'divide-conquer', 'knapsack-dp', 'graph-advanced', 'bipartite', 'coordinate-compression', 'topological-sort', 'minimum-spanning-tree', 'network-flow', 'meet-in-middle', 'convex-hull-trick', 'centroid-decomposition', 'line-sweep', 'two-sat', 'bridges-articulation', 'min-cost-flow', 'flow-lower-bounds', 'bidirectional-bfs', 'a-star-search', 'difference-constraints', 'functional-graphs'],
+    chapters: ['dynamic-programming', 'backtracking', 'greedy', 'graph', 'shortest-path', 'bitmask-dp', 'divide-conquer', 'knapsack-dp', 'graph-advanced', 'bipartite', 'coordinate-compression', 'topological-sort', 'minimum-spanning-tree', 'network-flow', 'meet-in-middle', 'convex-hull-trick', 'centroid-decomposition', 'line-sweep', 'two-sat', 'bridges-articulation', 'min-cost-flow', 'flow-lower-bounds', 'bidirectional-bfs', 'a-star-search', 'difference-constraints', 'functional-graphs', 'matching-flow'],
   },
   {
     part: 'Part V — Strings, Sequences & Grid',
@@ -33,7 +33,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part VI — Math & Discrete',
     color: 'var(--nb-pink)',
-    chapters: ['math', 'bit-manipulation', 'combinatorics', 'game-theory', 'geometry', 'number-theory', 'probability-dp', 'ternary-search', 'fft', 'sprague-grundy', 'chinese-remainder', 'convex-hull', 'inclusion-exclusion', 'catalan-numbers', 'josephus', 'sieve-variants', 'burnside-lemma', 'gray-code', 'gaussian-gf2', 'lucas-theorem', 'lattice-paths', 'advanced-counting-dp'],
+    chapters: ['math', 'bit-manipulation', 'combinatorics', 'game-theory', 'geometry', 'number-theory', 'probability-dp', 'ternary-search', 'fft', 'sprague-grundy', 'chinese-remainder', 'convex-hull', 'inclusion-exclusion', 'catalan-numbers', 'josephus', 'sieve-variants', 'burnside-lemma', 'gray-code', 'gaussian-gf2', 'lucas-theorem', 'lattice-paths', 'advanced-counting-dp', 'rotating-calipers'],
   },
   {
     part: 'Part VII — Advanced Topics',
