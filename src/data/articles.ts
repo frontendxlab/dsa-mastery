@@ -73,6 +73,7 @@ import { numberTheoryArticle } from './content/number-theory'
 import { digitDpArticle } from './content/digit-dp'
 import { divideConquerArticle } from './content/divide-conquer'
 import { designPatternsArticle } from './content/design-patterns'
+import { intervalDpArticle } from './content/interval-dp'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -115,6 +116,7 @@ export const articles: Article[] = [
   digitDpArticle,
   divideConquerArticle,
   designPatternsArticle,
+  intervalDpArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
