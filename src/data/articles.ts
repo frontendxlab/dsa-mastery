@@ -191,6 +191,10 @@ import { graphStateSpaceArticle } from './content/graph-state-space'
 import { twoDPrefixSumArticle } from './content/two-d-prefix-sum'
 import { greedyIntervalsArticle } from './content/greedy-intervals'
 import { constructiveAlgorithmsArticle } from './content/constructive-algorithms'
+import { cyclicSortArticle } from './content/cyclic-sort'
+import { treePathProblemsArticle } from './content/tree-path-problems'
+import { dpWithDequeArticle } from './content/dp-with-deque'
+import { backtrackingPruningArticle } from './content/backtracking-pruning'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -351,6 +355,10 @@ export const articles: Article[] = [
   twoDPrefixSumArticle,
   greedyIntervalsArticle,
   constructiveAlgorithmsArticle,
+  cyclicSortArticle,
+  treePathProblemsArticle,
+  dpWithDequeArticle,
+  backtrackingPruningArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
