@@ -92,6 +92,7 @@ import { cycleDetectionArticle } from './content/cycle-detection'
 import { kthElementArticle } from './content/kth-element'
 import { arrayTricksArticle } from './content/array-tricks'
 import { treeConstructionArticle } from './content/tree-construction'
+import { gridPatternsArticle } from './content/grid-patterns'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -153,6 +154,7 @@ export const articles: Article[] = [
   kthElementArticle,
   arrayTricksArticle,
   treeConstructionArticle,
+  gridPatternsArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
