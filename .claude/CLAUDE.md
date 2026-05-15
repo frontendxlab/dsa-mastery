@@ -40,7 +40,7 @@ style: <UI/CSS changes>
 > (documentation, ownership, history, decisions). **Always verify against
 > actual source files before making changes** — the index may be stale.
 
-Last indexed: 2026-05-15 (commit 8c9a283). Confidence: 100%.
+Last indexed: 2026-05-15 (commit cf4e696). Confidence: 100%.
 ### Key Modules
 | Module | Purpose | Owner |
 |--------|---------|-------|

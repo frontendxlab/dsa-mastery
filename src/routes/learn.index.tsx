@@ -28,12 +28,12 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part V — Strings, Sequences & Grid',
     color: 'var(--nb-orange)',
-    chapters: ['string-algorithms', 'string-matching', 'sequences', 'matrix', 'string-dp', 'palindrome-patterns', 'string-hashing', 'suffix-array', 'aho-corasick', 'z-function'],
+    chapters: ['string-algorithms', 'string-matching', 'sequences', 'matrix', 'string-dp', 'palindrome-patterns', 'string-hashing', 'suffix-array', 'aho-corasick', 'z-function', 'manachers'],
   },
   {
     part: 'Part VI — Math & Discrete',
     color: 'var(--nb-pink)',
-    chapters: ['math', 'bit-manipulation', 'combinatorics', 'game-theory', 'geometry', 'number-theory', 'probability-dp', 'ternary-search', 'fft'],
+    chapters: ['math', 'bit-manipulation', 'combinatorics', 'game-theory', 'geometry', 'number-theory', 'probability-dp', 'ternary-search', 'fft', 'sprague-grundy', 'chinese-remainder', 'convex-hull'],
   },
   {
     part: 'Part VII — Advanced Topics',

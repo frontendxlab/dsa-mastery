@@ -127,6 +127,10 @@ import { zFunctionArticle } from './content/z-function'
 import { ternarySearchArticle } from './content/ternary-search'
 import { treapArticle } from './content/treap'
 import { fftArticle } from './content/fft'
+import { manachersArticle } from './content/manachers'
+import { convexHullArticle } from './content/convex-hull'
+import { spragueGrundyArticle } from './content/sprague-grundy'
+import { chineseRemainderArticle } from './content/chinese-remainder'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -223,6 +227,10 @@ export const articles: Article[] = [
   ternarySearchArticle,
   treapArticle,
   fftArticle,
+  manachersArticle,
+  convexHullArticle,
+  spragueGrundyArticle,
+  chineseRemainderArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
