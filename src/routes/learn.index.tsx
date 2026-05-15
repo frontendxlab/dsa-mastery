@@ -8,7 +8,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part I — Arrays & Pointers',
     color: 'var(--nb-teal)',
-    chapters: ['two-pointers', 'sliding-window', 'binary-search', 'prefix-sum', 'two-sum-family', 'array-tricks', 'difference-array', 'contribution-technique', 'binary-search-answer'],
+    chapters: ['two-pointers', 'sliding-window', 'binary-search', 'prefix-sum', 'two-sum-family', 'array-tricks', 'difference-array', 'contribution-technique', 'binary-search-answer', 'permutation-patterns'],
   },
   {
     part: 'Part II — Linked Structures',
@@ -18,7 +18,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part III — Hashing & Auxiliary Structures',
     color: 'var(--nb-purple)',
-    chapters: ['heap', 'trie', 'monotonic-stack', 'hashmap-patterns', 'stack-queue', 'counting-patterns', 'kth-element', 'monotonic-queue', 'two-heaps', 'bracket-sequences'],
+    chapters: ['heap', 'trie', 'monotonic-stack', 'hashmap-patterns', 'stack-queue', 'counting-patterns', 'kth-element', 'monotonic-queue', 'two-heaps', 'bracket-sequences', 'amortized-patterns'],
   },
   {
     part: 'Part IV — Core Algorithms',
@@ -33,7 +33,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part VI — Math & Discrete',
     color: 'var(--nb-pink)',
-    chapters: ['math', 'bit-manipulation', 'combinatorics', 'game-theory', 'geometry', 'number-theory', 'probability-dp', 'ternary-search', 'fft', 'sprague-grundy', 'chinese-remainder', 'convex-hull', 'inclusion-exclusion', 'catalan-numbers', 'josephus', 'sieve-variants'],
+    chapters: ['math', 'bit-manipulation', 'combinatorics', 'game-theory', 'geometry', 'number-theory', 'probability-dp', 'ternary-search', 'fft', 'sprague-grundy', 'chinese-remainder', 'convex-hull', 'inclusion-exclusion', 'catalan-numbers', 'josephus', 'sieve-variants', 'burnside-lemma', 'gray-code'],
   },
   {
     part: 'Part VII — Advanced Topics',

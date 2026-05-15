@@ -139,6 +139,10 @@ import { binarySearchAnswerArticle } from './content/binary-search-answer'
 import { catalanNumbersArticle } from './content/catalan-numbers'
 import { josephusArticle } from './content/josephus'
 import { sieveVariantsArticle } from './content/sieve-variants'
+import { permutationPatternsArticle } from './content/permutation-patterns'
+import { burnsideLemmaArticle } from './content/burnside-lemma'
+import { grayCodeArticle } from './content/gray-code'
+import { amortizedPatternsArticle } from './content/amortized-patterns'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -247,6 +251,10 @@ export const articles: Article[] = [
   catalanNumbersArticle,
   josephusArticle,
   sieveVariantsArticle,
+  permutationPatternsArticle,
+  burnsideLemmaArticle,
+  grayCodeArticle,
+  amortizedPatternsArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
