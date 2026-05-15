@@ -147,6 +147,10 @@ import { expressionParsingArticle } from './content/expression-parsing'
 import { treeDiameterArticle } from './content/tree-diameter'
 import { offlineCdqArticle } from './content/offline-cdq'
 import { bitsetOperationsArticle } from './content/bitset-operations'
+import { minCostFlowArticle } from './content/min-cost-flow'
+import { slopeTrickArticle } from './content/slope-trick'
+import { palindromeAutomatonArticle } from './content/palindrome-automaton'
+import { gaussianGf2Article } from './content/gaussian-gf2'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -263,6 +267,10 @@ export const articles: Article[] = [
   treeDiameterArticle,
   offlineCdqArticle,
   bitsetOperationsArticle,
+  minCostFlowArticle,
+  slopeTrickArticle,
+  palindromeAutomatonArticle,
+  gaussianGf2Article,
 ]
 
 export function getArticle(slug: string): Article | undefined {

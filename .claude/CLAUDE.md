@@ -40,11 +40,11 @@ style: <UI/CSS changes>
 > (documentation, ownership, history, decisions). **Always verify against
 > actual source files before making changes** — the index may be stale.
 
-Last indexed: 2026-05-15 (commit aa5b027). Confidence: 100%.
+Last indexed: 2026-05-15 (commit 405e0cf). Confidence: 100%.
 ### Key Modules
 | Module | Purpose | Owner |
 |--------|---------|-------|
-| `src` | The src module serves as the core repository for an extensive library of algorit | — |
+| `src` | The src module serves as the central repository for a comprehensive algorithmic  | — |
 | `scripts` | The scripts module serves as a collection of iterative data analysis and dedupli | — |
 | `root` | The root module serves as the primary configuration layer for the project's buil | — |
 | `greedy` | The greedy module provides a centralized utility for managing and consolidating  | — |
