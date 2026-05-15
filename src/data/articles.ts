@@ -91,6 +91,7 @@ import { recursionMemoizationArticle } from './content/recursion-memoization'
 import { cycleDetectionArticle } from './content/cycle-detection'
 import { kthElementArticle } from './content/kth-element'
 import { arrayTricksArticle } from './content/array-tricks'
+import { treeConstructionArticle } from './content/tree-construction'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -151,6 +152,7 @@ export const articles: Article[] = [
   cycleDetectionArticle,
   kthElementArticle,
   arrayTricksArticle,
+  treeConstructionArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {

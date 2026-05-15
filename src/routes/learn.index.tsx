@@ -13,7 +13,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part II — Linked Structures',
     color: 'var(--nb-blue)',
-    chapters: ['linked-list', 'trees', 'advanced-trees', 'sparse-table', 'segment-tree-lazy', 'cycle-detection'],
+    chapters: ['linked-list', 'trees', 'advanced-trees', 'sparse-table', 'segment-tree-lazy', 'cycle-detection', 'tree-construction'],
   },
   {
     part: 'Part III — Hashing & Auxiliary Structures',
