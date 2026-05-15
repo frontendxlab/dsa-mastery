@@ -1,5 +1,8 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { articles } from '#/data/articles'
+import { Card } from '@heroui/react/card'
+import { Button } from '@heroui/react/button'
+import { ArrowUpRight } from 'lucide-react'
 import {
   Share2, Layers, TreePine, Hash, Link2, ChevronUp, Network,
   Type, List, Search, Zap, Binary, RotateCcw, Shuffle,
@@ -92,26 +95,26 @@ function LearnPage() {
     <main className="nb-page-wrap px-4 pb-20 pt-10 sm:pt-14">
 
       {/* ── Book cover ───────────────────────────────────────────── */}
-      <section className="nb-card nb-accent-bg mb-10 bg-[var(--nb-yellow)] p-8 sm:p-12">
-        <p className="nb-kicker mb-3">DSA Course — Complete Textbook</p>
-        <h1 className="nb-display mb-4 text-[clamp(2rem,6vw,4rem)] leading-tight">
+      <section className="mb-10 rounded-2xl border border-[var(--border)] bg-gradient-to-br from-[var(--surface)] to-[var(--surface-secondary)] p-8 sm:p-12">
+        <p className="mb-2 text-xs font-bold uppercase tracking-widest text-[var(--accent)]">DSA Course — Complete Textbook</p>
+        <h1 className="mb-4 text-[clamp(2rem,5vw,3.5rem)] font-bold leading-tight text-[var(--foreground)]">
           Mastering DSA<br/>
-          <span className="nb-underline">Through Patterns</span>
+          <span className="text-[var(--muted)]">Through Patterns</span>
         </h1>
-        <p className="max-w-2xl text-sm font-medium leading-relaxed opacity-80">
-          {BOOK.length} parts · {articles.length} chapters · 38k+ practice problems.<br/>
-          Each chapter: brute force first, then the insight, then the optimal. That's how you actually learn.
+        <p className="max-w-2xl text-sm leading-relaxed text-[var(--muted)]">
+          {BOOK.length} parts · {articles.length} chapters · 38k+ practice problems.
+          Each chapter: brute force first, then the insight, then the optimal.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <Link
             to="/learn/patterns"
-            className="nb-chip bg-white font-bold no-underline hover:bg-[var(--nb-teal)] transition-colors"
+            className="inline-flex items-center gap-1.5 rounded-lg border border-[var(--border)] bg-[var(--default)] px-4 py-2 text-sm font-medium text-[var(--foreground)] no-underline transition-colors hover:bg-[var(--accent)] hover:text-white hover:border-[var(--accent)]"
           >
-            <Zap size={13} className="inline mr-1 opacity-80" />Quick Patterns Cheat Sheet
+            <Zap size={13} />Quick Patterns
           </Link>
           <Link
             to="/explore"
-            className="nb-chip bg-white no-underline hover:bg-[var(--nb-green)] transition-colors inline-flex items-center gap-1.5"
+            className="inline-flex items-center gap-1.5 rounded-lg border border-[var(--border)] bg-[var(--default)] px-4 py-2 text-sm font-medium text-[var(--foreground)] no-underline transition-colors hover:bg-[var(--default)]"
           >
             Browse 38k+ Problems <ArrowRight size={13} />
           </Link>
@@ -128,19 +131,14 @@ function LearnPage() {
           return (
             <section key={section.part}>
               {/* Part header */}
-              <div
-                className="mb-4 flex items-center gap-3 border-b-2 border-[var(--nb-border-color)] pb-3"
-              >
-                <span
-                  className="h-3 w-3 rounded-full border-2 border-[var(--nb-border-color)] shrink-0"
-                  style={{ background: section.color }}
-                />
-                <h2 className="nb-heading-sm text-[var(--nb-ink)]">{section.part}</h2>
-                <span className="ml-auto text-xs font-bold opacity-50">{validChapters.length} chapters</span>
+              <div className="mb-4 flex items-center gap-3 border-b border-[var(--border)] pb-3">
+                <span className="h-2.5 w-2.5 rounded-full shrink-0" style={{ background: section.color }} />
+                <h2 className="text-sm font-semibold text-[var(--foreground)]">{section.part}</h2>
+                <span className="ml-auto text-xs text-[var(--muted)]">{validChapters.length} chapters</span>
               </div>
 
               {/* Chapter list */}
-              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
                 {validChapters.map(({ slug, article, num }) => (
                   <ChapterCard key={slug} article={article} num={num} accentColor={section.color} />
                 ))}
@@ -151,45 +149,47 @@ function LearnPage() {
       </div>
 
       {/* ── Footer ───────────────────────────────────────────────── */}
-      <div className="nb-card nb-accent-bg bg-[var(--nb-green)] p-6 text-center">
-        <p className="nb-heading-sm mb-1">More chapters coming</p>
-        <p className="text-sm opacity-75">Segment Trees, Network Flow, Number Theory deep dives — next up.</p>
+      <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6 text-center">
+        <p className="text-sm font-semibold text-[var(--foreground)] mb-1">More chapters coming</p>
+        <p className="text-xs text-[var(--muted)]">Segment Trees, Network Flow, Number Theory deep dives — next up.</p>
       </div>
     </main>
   )
 }
 
 function ChapterCard({ article, num, accentColor }: { article: (typeof articles)[0]; num: number; accentColor: string }) {
+  const Icon = TOPIC_ICON[article.topicSlug] ?? Code2
   return (
     <Link
       to="/learn/$pattern"
       params={{ pattern: article.slug }}
-      className="group nb-card nb-card-hover flex gap-4 p-4 no-underline"
+      className="group block no-underline"
     >
-      {/* Chapter number badge */}
-      <div
-        className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border-2 border-[var(--nb-border-color)] text-sm font-black shadow-[2px_2px_0px_var(--nb-border-color)] transition-shadow group-hover:shadow-none"
-        style={{ background: accentColor, color: 'var(--nb-on-accent)' }}
-      >
-        {num}
-      </div>
-
-      {/* Content */}
-      <div className="min-w-0 flex-1">
-        <div className="flex items-start gap-2">
-          {(() => { const Icon = TOPIC_ICON[article.topicSlug] ?? Code2; return <Icon size={16} className="shrink-0 opacity-70 mt-0.5" />; })()}
-          <h3 className="nb-heading-sm truncate leading-tight">{article.title}</h3>
+      <Card className="h-full border border-[var(--border)] bg-[var(--surface)] p-4 transition-all duration-200 hover:border-[var(--accent)]/50 hover:shadow-[var(--surface-shadow)] hover:-translate-y-px">
+        <div className="flex gap-3">
+          {/* Chapter number */}
+          <div
+            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-xs font-bold text-white shadow-sm"
+            style={{ background: accentColor }}
+          >
+            {num}
+          </div>
+          {/* Content */}
+          <div className="min-w-0 flex-1">
+            <div className="flex items-center gap-1.5">
+              <Icon size={13} className="shrink-0 text-[var(--muted)]" />
+              <h3 className="truncate text-sm font-semibold text-[var(--foreground)] leading-tight">{article.title}</h3>
+            </div>
+            <p className="mt-1 line-clamp-2 text-xs leading-relaxed text-[var(--muted)]">
+              {article.tagline}
+            </p>
+            <div className="mt-2 flex items-center justify-between">
+              <span className="text-[10px] font-medium uppercase tracking-wide text-[var(--muted)] opacity-60">{article.readTime}</span>
+              <ArrowUpRight size={12} className="text-[var(--muted)] opacity-0 transition-opacity group-hover:opacity-60" />
+            </div>
+          </div>
         </div>
-        <p className="mt-1 line-clamp-2 text-xs leading-relaxed opacity-60">
-          {article.tagline}
-        </p>
-        <div className="mt-2 flex items-center justify-between">
-          <span className="text-[10px] font-bold uppercase tracking-wide opacity-40">{article.readTime} read</span>
-          <span className="text-xs font-bold text-[var(--lagoon-deep)] opacity-0 transition-opacity group-hover:opacity-100">
-            Start →
-          </span>
-        </div>
-      </div>
+      </Card>
     </Link>
   )
 }
