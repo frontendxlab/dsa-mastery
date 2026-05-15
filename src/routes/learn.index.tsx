@@ -38,7 +38,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part VII — Advanced Topics',
     color: 'var(--nb-yellow)',
-    chapters: ['linear-algebra', 'numerical-methods', 'scheduling', 'shapes', 'miscellaneous'],
+    chapters: ['linear-algebra', 'numerical-methods', 'scheduling', 'shapes', 'miscellaneous', 'design-patterns'],
   },
   {
     part: 'Part VIII — Cross-Topic Deep Dives',

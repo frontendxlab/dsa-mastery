@@ -72,6 +72,7 @@ import { bitmaskDpArticle } from './content/bitmask-dp'
 import { numberTheoryArticle } from './content/number-theory'
 import { digitDpArticle } from './content/digit-dp'
 import { divideConquerArticle } from './content/divide-conquer'
+import { designPatternsArticle } from './content/design-patterns'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -113,6 +114,7 @@ export const articles: Article[] = [
   numberTheoryArticle,
   digitDpArticle,
   divideConquerArticle,
+  designPatternsArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
