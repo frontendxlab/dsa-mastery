@@ -28,7 +28,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part V — Strings, Sequences & Grid',
     color: 'var(--nb-orange)',
-    chapters: ['string-algorithms', 'string-matching', 'sequences', 'matrix', 'string-dp', 'palindrome-patterns', 'string-hashing', 'suffix-array', 'aho-corasick', 'z-function', 'manachers', 'suffix-automaton', 'palindrome-automaton', 'string-rotations', 'lyndon-factorization', 'string-construction'],
+    chapters: ['string-algorithms', 'string-matching', 'sequences', 'matrix', 'string-dp', 'palindrome-patterns', 'string-hashing', 'suffix-array', 'aho-corasick', 'z-function', 'manachers', 'suffix-automaton', 'palindrome-automaton', 'string-rotations', 'lyndon-factorization', 'string-construction', 'string-decode-patterns'],
   },
   {
     part: 'Part VI — Math & Discrete',
@@ -38,7 +38,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part VII — Advanced Topics',
     color: 'var(--nb-yellow)',
-    chapters: ['linear-algebra', 'numerical-methods', 'scheduling', 'shapes', 'miscellaneous', 'design-patterns', 'sorting-algorithms', 'simulation', 'matrix-exponentiation', 'randomized-algorithms', 'multiset-ordered-set'],
+    chapters: ['linear-algebra', 'numerical-methods', 'scheduling', 'shapes', 'miscellaneous', 'design-patterns', 'sorting-algorithms', 'simulation', 'matrix-exponentiation', 'randomized-algorithms', 'multiset-ordered-set', 'lru-lfu-cache', 'matrix-operations'],
   },
   {
     part: 'Part VIII — Cross-Topic Deep Dives',
