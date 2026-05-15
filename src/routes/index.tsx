@@ -1,6 +1,8 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
 import { topics, totalProblems, uniquePlatforms } from "#/data/topics";
 import { useState, useMemo, useEffect, useRef } from "react";
+import { BookOpen, Globe, Search, Target, Zap, BarChart2, CheckCircle, ArrowRight } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
 export const Route = createFileRoute("/")({ component: App });
 
@@ -152,14 +154,14 @@ function MarqueeRow({
 }
 
 function StatCard({
-	icon,
+	icon: Icon,
 	label,
 	value,
 	suffix,
 	color,
 	delay = 0,
 }: {
-	icon: string;
+	icon: LucideIcon;
 	label: string;
 	value: number;
 	suffix?: string;
@@ -168,11 +170,11 @@ function StatCard({
 }) {
 	return (
 		<div
-			className="nb-stat-card relative rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] p-6 shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)] transition-all duration-200 hover:shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)] hover:translate-x-[2px] hover:translate-y-[2px]"
+			className="nb-stat-card relative rounded-xl border border-[var(--nb-border-color)] p-6 shadow-sm transition-all duration-200 hover:shadow-md hover:-translate-y-0.5"
 			style={{ backgroundColor: color, animationDelay: `${delay}ms` }}
 		>
-			<div className="absolute -right-2 -top-2 flex h-8 w-8 items-center justify-center rounded-full border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] text-lg shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)]">
-				{icon}
+			<div className="absolute -right-2 -top-2 flex h-8 w-8 items-center justify-center rounded-full border border-[var(--nb-border-color)] bg-[var(--nb-surface)] shadow-sm">
+				<Icon size={15} />
 			</div>
 			<p className="text-[10px] font-bold uppercase tracking-widest text-[var(--nb-on-accent,#111)] opacity-70">
 				{label}
@@ -185,13 +187,13 @@ function StatCard({
 }
 
 function FeatureCard({
-	icon,
+	icon: Icon,
 	title,
 	description,
 	color,
 	delay = 0,
 }: {
-	icon: string;
+	icon: LucideIcon;
 	title: string;
 	description: string;
 	color: string;
@@ -199,11 +201,11 @@ function FeatureCard({
 }) {
 	return (
 		<div
-			className="nb-feature-card group relative rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] p-6 shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)] transition-all duration-200 hover:shadow-[6px_6px_0px_var(--nb-border-color,#0f0f0f)] hover:-translate-x-[2px] hover:-translate-y-[2px]"
+			className="nb-feature-card group relative rounded-xl border border-[var(--nb-border-color)] p-6 shadow-sm transition-all duration-200 hover:shadow-md hover:-translate-y-0.5"
 			style={{ backgroundColor: color, animationDelay: `${delay}ms` }}
 		>
-			<div className="mb-4 flex h-14 w-14 items-center justify-center rounded-lg border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] text-2xl shadow-[3px_3px_0px_var(--nb-border-color,#0f0f0f)] transition-all duration-200 group-hover:shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)] group-hover:translate-x-[1px] group-hover:translate-y-[1px]">
-				{icon}
+			<div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg border border-[var(--nb-border-color)] bg-[var(--nb-surface)] shadow-sm">
+				<Icon size={22} className="opacity-70" />
 			</div>
 			<h3 className="nb-heading-sm text-lg font-black text-[var(--nb-on-accent,#111)] tracking-tight">
 				{title}
@@ -416,16 +418,16 @@ function App() {
 					<div className="mt-8 flex flex-wrap gap-3">
 						<Link
 							to="/learn"
-							className="nb-btn inline-flex items-center gap-2 rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-pink,#ff9ec4)] px-6 py-3 text-sm font-black shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)] transition-all duration-150 hover:shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)] hover:translate-x-[2px] hover:translate-y-[2px] active:shadow-none active:translate-x-[4px] active:translate-y-[4px]"
+							className="nb-btn inline-flex items-center gap-2 rounded-xl border border-[var(--nb-border-color)] bg-[var(--nb-pink)] px-6 py-3 text-sm font-bold shadow-sm transition-all duration-150 hover:shadow-md hover:-translate-y-0.5"
 						>
-							<span>📚</span>
+							<BookOpen size={16} />
 							<span>Start Learning</span>
 						</Link>
 						<Link
 							to="/explore"
-							className="nb-btn-outline inline-flex items-center gap-2 rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] px-6 py-3 text-sm font-black shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)] transition-all duration-150 hover:bg-[var(--nb-teal,#7ee8e2)] hover:shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)] hover:translate-x-[2px] hover:translate-y-[2px] active:shadow-none active:translate-x-[4px] active:translate-y-[4px]"
+							className="nb-btn-outline inline-flex items-center gap-2 rounded-xl border border-[var(--nb-border-color)] bg-[var(--nb-surface-strong)] px-6 py-3 text-sm font-bold shadow-sm transition-all duration-150 hover:bg-[var(--nb-teal)] hover:shadow-md hover:-translate-y-0.5"
 						>
-							<span>🔍</span>
+							<Search size={16} />
 							<span>Explore Problems</span>
 						</Link>
 					</div>
@@ -451,21 +453,21 @@ function App() {
 			<section className="mb-8">
 				<div className="grid gap-4 sm:grid-cols-3">
 					<StatCard
-						icon="📦"
+						icon={BarChart2}
 						label="Total Problems"
 						value={totalProblems}
 						color="var(--nb-yellow)"
 						delay={0}
 					/>
 					<StatCard
-						icon="📚"
+						icon={BookOpen}
 						label="Topics"
 						value={topics.length}
 						color="var(--nb-teal)"
 						delay={100}
 					/>
 					<StatCard
-						icon="🌐"
+						icon={Globe}
 						label="Platforms"
 						value={uniquePlatforms}
 						suffix="+"
@@ -480,42 +482,42 @@ function App() {
 
 			<section className="mb-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
 				<FeatureCard
-					icon="🔍"
+					icon={Search}
 					title="Explore Problems"
 					description="Browse 38,000+ problems across 50+ platforms. Filter by difficulty, platform, and topic. Find the perfect problem for your practice session."
 					color="var(--nb-yellow)"
 					delay={0}
 				/>
 				<FeatureCard
-					icon="📚"
+					icon={BookOpen}
 					title="Learn Patterns"
 					description="Master DSA through pattern-based learning. Each topic comes with explanations, examples, and carefully curated practice problems."
 					color="var(--nb-pink)"
 					delay={100}
 				/>
 				<FeatureCard
-					icon="🎯"
+					icon={Target}
 					title="Topic Grouping"
 					description="Problems organized into 14 core topics: Dynamic Programming, Graphs, Trees, Binary Search, Sliding Window, and more. Practice systematically."
 					color="var(--nb-teal)"
 					delay={200}
 				/>
 				<FeatureCard
-					icon="⚡"
+					icon={Zap}
 					title="Quick Search"
 					description="Full-text search across problem names, concepts, topics, and platforms. Find exactly what you need in milliseconds."
 					color="var(--nb-green)"
 					delay={300}
 				/>
 				<FeatureCard
-					icon="📊"
+					icon={BarChart2}
 					title="Track by Difficulty"
 					description="Filter by Easy, Medium, Hard, or rating ranges. Build your skills progressively from fundamentals to advanced challenges."
 					color="var(--nb-orange)"
 					delay={400}
 				/>
 				<FeatureCard
-					icon="✅"
+					icon={CheckCircle}
 					title="Deduplicated & Clean"
 					description="Every problem is carefully deduplicated across platforms. No more solving the same problem with different names. Focus on learning, not redundancy."
 					color="var(--nb-purple)"
@@ -571,8 +573,8 @@ function App() {
 				</div>
 
 				{filtered.length === 0 && (
-					<div className="rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] p-12 text-center shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)]">
-						<p className="text-4xl">🔍</p>
+					<div className="rounded-xl border border-[var(--nb-border-color)] bg-[var(--nb-surface)] p-12 text-center shadow-sm">
+						<Search size={32} className="mx-auto mb-3 opacity-30" />
 						<p className="mt-4 text-base font-bold text-[var(--nb-ink,#111)]">
 							No topics match "{search}"
 						</p>
@@ -602,16 +604,16 @@ function App() {
 				<div className="mt-8 flex flex-wrap justify-center gap-3">
 					<Link
 						to="/learn"
-						className="inline-flex items-center gap-2 rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-pink,#ff9ec4)] px-8 py-4 text-base font-black shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)] transition-all duration-150 hover:shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)] hover:translate-x-[2px] hover:translate-y-[2px] active:shadow-none active:translate-x-[4px] active:translate-y-[4px]"
+						className="inline-flex items-center gap-2 rounded-xl border border-[var(--nb-border-color)] bg-[var(--nb-pink)] px-8 py-4 text-base font-bold shadow-sm transition-all duration-150 hover:shadow-md hover:-translate-y-0.5"
 					>
-						<span>📖</span>
+						<BookOpen size={18} />
 						<span>Learn Patterns</span>
 					</Link>
 					<Link
 						to="/explore"
-						className="inline-flex items-center gap-2 rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-yellow,#ffe566)] px-8 py-4 text-base font-black shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)] transition-all duration-150 hover:shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)] hover:translate-x-[2px] hover:translate-y-[2px] active:shadow-none active:translate-x-[4px] active:translate-y-[4px]"
+						className="inline-flex items-center gap-2 rounded-xl border border-[var(--nb-border-color)] bg-[var(--nb-yellow)] px-8 py-4 text-base font-bold shadow-sm transition-all duration-150 hover:shadow-md hover:-translate-y-0.5"
 					>
-						<span>🎯</span>
+						<Target size={18} />
 						<span>Browse Problems</span>
 					</Link>
 				</div>

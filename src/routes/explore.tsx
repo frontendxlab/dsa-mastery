@@ -1,5 +1,6 @@
 import { createFileRoute, useNavigate, useSearch } from '@tanstack/react-router'
 import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
+import { Search } from 'lucide-react'
 
 function useIsMobile(breakpoint = 640) {
   const [isMobile, setIsMobile] = useState(false)
@@ -410,7 +411,7 @@ function ExplorePage() {
             </div>
           ) : filtered.length === 0 ? (
             <div className="py-20 text-center">
-              <p className="text-2xl">🔍</p>
+              <Search size={28} className="mx-auto mb-2 opacity-30" />
               <p className="mt-2 text-sm font-medium text-[var(--sea-ink)]">No problems match</p>
               <p className="mt-1 text-xs text-[var(--sea-ink-soft)]">Try a different search or clear filters</p>
               <button onClick={clearAll} className="mt-3 rounded-lg bg-[var(--lagoon)] px-4 py-2 text-xs font-bold text-white">
