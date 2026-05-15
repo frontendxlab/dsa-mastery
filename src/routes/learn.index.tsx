@@ -18,17 +18,17 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part III — Hashing & Auxiliary Structures',
     color: 'var(--nb-purple)',
-    chapters: ['heap', 'trie', 'monotonic-stack', 'hashmap-patterns', 'stack-queue', 'counting-patterns', 'kth-element'],
+    chapters: ['heap', 'trie', 'monotonic-stack', 'hashmap-patterns', 'stack-queue', 'counting-patterns', 'kth-element', 'monotonic-queue'],
   },
   {
     part: 'Part IV — Core Algorithms',
     color: 'var(--nb-green)',
-    chapters: ['dynamic-programming', 'backtracking', 'greedy', 'graph', 'shortest-path', 'bitmask-dp', 'divide-conquer', 'knapsack-dp', 'graph-advanced', 'bipartite', 'coordinate-compression'],
+    chapters: ['dynamic-programming', 'backtracking', 'greedy', 'graph', 'shortest-path', 'bitmask-dp', 'divide-conquer', 'knapsack-dp', 'graph-advanced', 'bipartite', 'coordinate-compression', 'topological-sort', 'minimum-spanning-tree'],
   },
   {
     part: 'Part V — Strings, Sequences & Grid',
     color: 'var(--nb-orange)',
-    chapters: ['string-algorithms', 'string-matching', 'sequences', 'matrix', 'string-dp', 'palindrome-patterns'],
+    chapters: ['string-algorithms', 'string-matching', 'sequences', 'matrix', 'string-dp', 'palindrome-patterns', 'string-hashing'],
   },
   {
     part: 'Part VI — Math & Discrete',
@@ -38,7 +38,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part VII — Advanced Topics',
     color: 'var(--nb-yellow)',
-    chapters: ['linear-algebra', 'numerical-methods', 'scheduling', 'shapes', 'miscellaneous', 'design-patterns', 'sorting-algorithms'],
+    chapters: ['linear-algebra', 'numerical-methods', 'scheduling', 'shapes', 'miscellaneous', 'design-patterns', 'sorting-algorithms', 'simulation'],
   },
   {
     part: 'Part VIII — Cross-Topic Deep Dives',

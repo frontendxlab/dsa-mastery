@@ -94,6 +94,11 @@ import { arrayTricksArticle } from './content/array-tricks'
 import { treeConstructionArticle } from './content/tree-construction'
 import { gridPatternsArticle } from './content/grid-patterns'
 import { coordinateCompressionArticle } from './content/coordinate-compression'
+import { simulationArticle } from './content/simulation'
+import { monotonicQueueArticle } from './content/monotonic-queue'
+import { topologicalSortArticle } from './content/topological-sort'
+import { minimumSpanningTreeArticle } from './content/minimum-spanning-tree'
+import { stringHashingArticle } from './content/string-hashing'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -157,6 +162,11 @@ export const articles: Article[] = [
   treeConstructionArticle,
   gridPatternsArticle,
   coordinateCompressionArticle,
+  simulationArticle,
+  monotonicQueueArticle,
+  topologicalSortArticle,
+  minimumSpanningTreeArticle,
+  stringHashingArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
