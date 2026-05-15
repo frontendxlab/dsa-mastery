@@ -89,6 +89,7 @@ import { bipartiteArticle } from './content/bipartite'
 import { segmentTreeLazyArticle } from './content/segment-tree-lazy'
 import { recursionMemoizationArticle } from './content/recursion-memoization'
 import { cycleDetectionArticle } from './content/cycle-detection'
+import { kthElementArticle } from './content/kth-element'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -147,6 +148,7 @@ export const articles: Article[] = [
   segmentTreeLazyArticle,
   recursionMemoizationArticle,
   cycleDetectionArticle,
+  kthElementArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
