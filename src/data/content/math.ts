@@ -234,10 +234,151 @@ function nCr(n, r) {
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 5,
+      title: 'Count Primes',
+      url: 'https://leetcode.com/problems/count-primes/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: O(n log log n) — Sieve of Eratosthenes',
+          explanation: `Mark all multiples of each prime as composite. Start from 2: mark 4, 6, 8... Then 3: mark 9, 12... Only check multiples starting from p². Count unmarked numbers.`,
+          code: `var countPrimes = function(n) {
+    if (n < 2) return 0;
+    const sieve = new Uint8Array(n).fill(1); // 1 = prime
+    sieve[0] = sieve[1] = 0;
+    for (let p = 2; p * p < n; p++) {
+        if (!sieve[p]) continue;
+        for (let m = p * p; m < n; m += p) sieve[m] = 0;
+    }
+    let count = 0;
+    for (let i = 2; i < n; i++) if (sieve[i]) count++;
+    return count;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 6,
+      title: 'Pow(x, n) — Fast Exponentiation',
+      url: 'https://leetcode.com/problems/powx-n/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: O(log n) — binary exponentiation',
+          explanation: `x^n = x^(n/2) × x^(n/2) (if n even), or x × x^(n-1) (if n odd). Reduces n by half each time → O(log n). Handle negative n: x^(-n) = 1/x^n.`,
+          code: `var myPow = function(x, n) {
+    if (n < 0) { x = 1 / x; n = -n; }
+    let result = 1;
+    while (n > 0) {
+        if (n & 1) result *= x;  // n is odd: multiply in one more x
+        x *= x;                  // square x
+        n >>= 1;                 // n = n/2
+    }
+    return result;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 7,
+      title: 'Greatest Common Divisor of Strings',
+      url: 'https://leetcode.com/problems/greatest-common-divisor-of-strings/',
+      difficulty: 'Easy',
+      intuitions: [
+        {
+          label: 'Intuition 1: GCD length + verify',
+          explanation: `If a GCD string exists, both str1 and str2 are built from repetitions of it. Key insight: str1 + str2 === str2 + str1 iff a common divisor exists (they share the same building block). If yes, GCD length = gcd(str1.length, str2.length).`,
+          code: `var gcdOfStrings = function(str1, str2) {
+    if (str1 + str2 !== str2 + str1) return '';
+    const gcd = (a, b) => b === 0 ? a : gcd(b, a % b);
+    return str1.slice(0, gcd(str1.length, str2.length));
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 8,
+      title: 'Sqrt(x) — Integer Square Root',
+      url: 'https://leetcode.com/problems/sqrtx/',
+      difficulty: 'Easy',
+      intuitions: [
+        {
+          label: 'Intuition 1: Binary search on answer',
+          explanation: `Find largest k where k² ≤ x. Binary search: lo=1, hi=x. If mid*mid <= x, answer might be mid or larger (lo=mid). Else too big (hi=mid-1).`,
+          code: `var mySqrt = function(x) {
+    if (x < 2) return x;
+    let lo = 1, hi = x >> 1; // k² ≤ x → k ≤ x/2 for x ≥ 4
+    while (lo < hi) {
+        const mid = lo + ((hi - lo + 1) >> 1); // upper mid to avoid infinite loop
+        if (mid <= x / mid) lo = mid;  // avoid overflow: mid*mid <= x
+        else hi = mid - 1;
+    }
+    return lo;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 9,
+      title: 'Palindrome Number',
+      url: 'https://leetcode.com/problems/palindrome-number/',
+      difficulty: 'Easy',
+      intuitions: [
+        {
+          label: 'Intuition 1: Reverse second half, compare with first half',
+          explanation: `Negative numbers are never palindromes. Numbers ending in 0 (except 0 itself) are not. Reverse the second half digit by digit. Stop when reversed ≥ x (we've processed half). Compare x with reversed (or reversed/10 for odd-length numbers).`,
+          code: `var isPalindrome = function(x) {
+    if (x < 0 || (x % 10 === 0 && x !== 0)) return false;
+    let rev = 0;
+    while (x > rev) {
+        rev = rev * 10 + x % 10;
+        x = Math.floor(x / 10);
+    }
+    return x === rev || x === Math.floor(rev / 10); // even or odd length
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 10,
+      title: 'Excel Sheet Column Number',
+      url: 'https://leetcode.com/problems/excel-sheet-column-number/',
+      difficulty: 'Easy',
+      intuitions: [
+        {
+          label: 'Intuition 1: Base-26 to decimal conversion',
+          explanation: `Treat the column title as a base-26 number where A=1, B=2, ..., Z=26. Process left to right: result = result * 26 + charValue.`,
+          code: `var titleToNumber = function(columnTitle) {
+    let result = 0;
+    for (const c of columnTitle)
+        result = result * 26 + (c.charCodeAt(0) - 64);
+    return result;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '💡',
       color: 'blue',
-      content: `**Modular arithmetic rule of thumb**: Whenever a problem involves factorials, combinations, or counting paths mod 10^9+7 (a prime), you need:\n1. Precomputed factorials up to MAX\n2. Precomputed modular inverses of factorials\n3. nCr(n, r) = fact[n] * inv_fact[r] * inv_fact[n-r] mod p`,
+      content: `**Modular arithmetic rule of thumb**: Whenever a problem involves factorials, combinations, or counting paths mod 10^9+7 (a prime), you need:\n1. Precomputed factorials up to MAX\n2. Precomputed modular inverses of factorials\n3. nCr(n, r) = fact[n] * inv_fact[r] * inv_fact[n-r] mod p\n\n**Math tricks to remember:**\n- GCD: Euclidean algorithm \`gcd(a,b) = b===0 ? a : gcd(b, a%b)\`\n- Sieve: Eratosthenes in O(n log log n) — start marking from p²\n- Median minimizes L1 (sum of abs deviations); mean minimizes L2\n- Fast power: x^n in O(log n) via repeated squaring`,
     },
   ],
 }

@@ -378,10 +378,95 @@ return left;`,
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'Even More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 9,
+      title: 'Koko Eating Bananas',
+      url: 'https://leetcode.com/problems/koko-eating-bananas/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Binary search on eating speed k',
+          explanation: `"Minimize k such that total hours ≤ h." Binary search on k (speed). For a given k, hours needed = Σ ceil(pile/k). If ≤ h, k might work — try smaller. Else too slow — try larger. Range: 1 to max(piles).`,
+          code: `var minEatingSpeed = function(piles, h) {
+    let lo = 1, hi = Math.max(...piles);
+    while (lo < hi) {
+        const mid = (lo + hi) >> 1;
+        const hours = piles.reduce((s, p) => s + Math.ceil(p / mid), 0);
+        if (hours <= h) hi = mid;  // could eat slower
+        else lo = mid + 1;          // too slow, need faster
+    }
+    return lo;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 10,
+      title: 'Capacity to Ship Packages Within D Days',
+      url: 'https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Binary search on ship capacity',
+          explanation: `"Minimum weight capacity to ship all within D days." For a given capacity, greedily count days needed (pack as much as possible each day). Binary search on capacity: lo = max single weight, hi = total weight.`,
+          code: `var shipWithinDays = function(weights, days) {
+    let lo = Math.max(...weights), hi = weights.reduce((a,b)=>a+b);
+    while (lo < hi) {
+        const mid = (lo + hi) >> 1;
+        let d = 1, curr = 0;
+        for (const w of weights) {
+            if (curr + w > mid) { d++; curr = 0; }
+            curr += w;
+        }
+        if (d <= days) hi = mid;
+        else lo = mid + 1;
+    }
+    return lo;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 11,
+      title: 'Split Array Largest Sum',
+      url: 'https://leetcode.com/problems/split-array-largest-sum/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: Binary search on answer — minimize largest subarray sum',
+          explanation: `"Split into k subarrays to minimize the largest sum." Binary search on the answer (largest sum). For a given limit, greedily check if k splits suffice: start new subarray whenever current exceeds limit. If splits needed ≤ k, limit might work (try smaller).`,
+          code: `var splitArray = function(nums, k) {
+    let lo = Math.max(...nums), hi = nums.reduce((a,b)=>a+b);
+    while (lo < hi) {
+        const mid = (lo + hi) >> 1;
+        let splits = 1, curr = 0;
+        for (const n of nums) {
+            if (curr + n > mid) { splits++; curr = 0; }
+            curr += n;
+        }
+        if (splits <= k) hi = mid;
+        else lo = mid + 1;
+    }
+    return lo;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '🧠',
       color: 'teal',
-      content: `**Binary search decision tree:**\n- Sorted array, find target → standard lo/hi\n- Rotated sorted array → check which half is sorted\n- Find peak/min → compare mid with neighbor, go toward larger\n- "Minimize maximum" / "Maximize minimum" → binary search on answer\n- Two sorted arrays, find median → binary search on partition`,
+      content: `**Binary search decision tree:**\n- Sorted array, find target → standard lo/hi\n- Rotated sorted array → check which half is sorted\n- Find peak/min → compare mid with neighbor, go toward larger\n- "Minimize maximum" / "Maximize minimum" → binary search on answer\n- Two sorted arrays, find median → binary search on partition\n\n**"Binary search on answer" template:**\n1. Identify: monotone feasibility function f(x) — if x works, x+1 also works (or vice versa)\n2. Set lo/hi to range of valid answers\n3. Check if mid is feasible (greedy simulation)\n4. Move lo/hi based on feasibility\n\nCommon "binary search on answer" problems: Koko, Ship Packages, Split Array, Minimum Effort Path.`,
     },
   ],
 }
