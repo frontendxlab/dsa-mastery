@@ -40,11 +40,11 @@ style: <UI/CSS changes>
 > (documentation, ownership, history, decisions). **Always verify against
 > actual source files before making changes** — the index may be stale.
 
-Last indexed: 2026-05-15 (commit 07bcffc). Confidence: 100%.
+Last indexed: 2026-05-15 (commit 147ad06). Confidence: 100%.
 ### Key Modules
 | Module | Purpose | Owner |
 |--------|---------|-------|
-| `src` | The src module serves as the core repository for the application's educational c | — |
+| `src` | The src module serves as the core repository for an algorithmic knowledge base | — |
 | `scripts` | The scripts module serves as a collection of iterative data analysis and dedupli | — |
 | `root` | The root module serves as the primary configuration layer for the project's buil | — |
 | `greedy` | The greedy module provides a centralized utility for managing and consolidating  | — |
@@ -59,7 +59,7 @@ Last indexed: 2026-05-15 (commit 07bcffc). Confidence: 100%.
 |------|-------|-------------|-------|
 | `math/all_math_problems.csv` | 100.0th %ile | 3 | rashidtvmr |
 | `src/routes/explore.tsx` | 99.8th %ile | 3 | rashidtvmr |
-| `greedy/all_greedy_problems.csv` | 99.5th %ile | 2 | rashidtvmr |
+| `greedy/all_greedy_problems.csv` | 99.6th %ile | 2 | rashidtvmr |
 | `src/styles.css` | 99.3th %ile | 2 | rashidtvmr |
 | `backtrack/all_backtracking_problems.csv` | 99.1th %ile | 2 | rashidtvmr |
 

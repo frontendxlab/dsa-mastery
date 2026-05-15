@@ -119,6 +119,10 @@ import { bracketSequencesArticle } from './content/bracket-sequences'
 import { differenceArrayArticle } from './content/difference-array'
 import { contributionTechniqueArticle } from './content/contribution-technique'
 import { divideConquerDpArticle } from './content/divide-conquer-dp'
+import { lcaArticle } from './content/lca'
+import { dsuOnTreeArticle } from './content/dsu-on-tree'
+import { sqrtDecompositionArticle } from './content/sqrt-decomposition'
+import { persistentSegmentTreeArticle } from './content/persistent-segment-tree'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -207,6 +211,10 @@ export const articles: Article[] = [
   differenceArrayArticle,
   contributionTechniqueArticle,
   divideConquerDpArticle,
+  lcaArticle,
+  dsuOnTreeArticle,
+  sqrtDecompositionArticle,
+  persistentSegmentTreeArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
