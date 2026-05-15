@@ -28,12 +28,12 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part V — Strings, Sequences & Grid',
     color: 'var(--nb-orange)',
-    chapters: ['string-algorithms', 'string-matching', 'sequences', 'matrix', 'string-dp', 'palindrome-patterns', 'string-hashing', 'suffix-array', 'aho-corasick'],
+    chapters: ['string-algorithms', 'string-matching', 'sequences', 'matrix', 'string-dp', 'palindrome-patterns', 'string-hashing', 'suffix-array', 'aho-corasick', 'z-function'],
   },
   {
     part: 'Part VI — Math & Discrete',
     color: 'var(--nb-pink)',
-    chapters: ['math', 'bit-manipulation', 'combinatorics', 'game-theory', 'geometry', 'number-theory', 'probability-dp'],
+    chapters: ['math', 'bit-manipulation', 'combinatorics', 'game-theory', 'geometry', 'number-theory', 'probability-dp', 'ternary-search', 'fft'],
   },
   {
     part: 'Part VII — Advanced Topics',
@@ -43,7 +43,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part VIII — Cross-Topic Deep Dives',
     color: 'var(--nb-red)',
-    chapters: ['bfs-vs-dfs', 'interval-problems', 'dp-on-trees', 'union-find', 'digit-dp', 'interval-dp', 'grid-dp', 'state-machine-dp', 'recursion-memoization', 'grid-patterns', 'fenwick-tree', 'heavy-light-decomposition', 'euler-tour', 'mo-algorithm', 'xor-basis', 'euler-path', 'divide-conquer-dp', 'sqrt-decomposition', 'persistent-segment-tree'],
+    chapters: ['bfs-vs-dfs', 'interval-problems', 'dp-on-trees', 'union-find', 'digit-dp', 'interval-dp', 'grid-dp', 'state-machine-dp', 'recursion-memoization', 'grid-patterns', 'fenwick-tree', 'heavy-light-decomposition', 'euler-tour', 'mo-algorithm', 'xor-basis', 'euler-path', 'divide-conquer-dp', 'sqrt-decomposition', 'persistent-segment-tree', 'treap'],
   },
 ]
 

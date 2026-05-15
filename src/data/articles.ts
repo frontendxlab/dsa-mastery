@@ -123,6 +123,10 @@ import { lcaArticle } from './content/lca'
 import { dsuOnTreeArticle } from './content/dsu-on-tree'
 import { sqrtDecompositionArticle } from './content/sqrt-decomposition'
 import { persistentSegmentTreeArticle } from './content/persistent-segment-tree'
+import { zFunctionArticle } from './content/z-function'
+import { ternarySearchArticle } from './content/ternary-search'
+import { treapArticle } from './content/treap'
+import { fftArticle } from './content/fft'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -215,6 +219,10 @@ export const articles: Article[] = [
   dsuOnTreeArticle,
   sqrtDecompositionArticle,
   persistentSegmentTreeArticle,
+  zFunctionArticle,
+  ternarySearchArticle,
+  treapArticle,
+  fftArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
