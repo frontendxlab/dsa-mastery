@@ -143,6 +143,10 @@ import { permutationPatternsArticle } from './content/permutation-patterns'
 import { burnsideLemmaArticle } from './content/burnside-lemma'
 import { grayCodeArticle } from './content/gray-code'
 import { amortizedPatternsArticle } from './content/amortized-patterns'
+import { expressionParsingArticle } from './content/expression-parsing'
+import { treeDiameterArticle } from './content/tree-diameter'
+import { offlineCdqArticle } from './content/offline-cdq'
+import { bitsetOperationsArticle } from './content/bitset-operations'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -255,6 +259,10 @@ export const articles: Article[] = [
   burnsideLemmaArticle,
   grayCodeArticle,
   amortizedPatternsArticle,
+  expressionParsingArticle,
+  treeDiameterArticle,
+  offlineCdqArticle,
+  bitsetOperationsArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
