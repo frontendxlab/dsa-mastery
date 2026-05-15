@@ -8,7 +8,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part I — Arrays & Pointers',
     color: 'var(--nb-teal)',
-    chapters: ['two-pointers', 'sliding-window', 'binary-search', 'prefix-sum', 'two-sum-family', 'array-tricks', 'difference-array', 'contribution-technique', 'binary-search-answer', 'permutation-patterns', 'word-break-variants', 'shortest-supersequence', 'kadane-variants', 'two-pointer-advanced', 'cyclic-sort'],
+    chapters: ['two-pointers', 'sliding-window', 'binary-search', 'prefix-sum', 'two-sum-family', 'array-tricks', 'difference-array', 'contribution-technique', 'binary-search-answer', 'permutation-patterns', 'word-break-variants', 'shortest-supersequence', 'kadane-variants', 'two-pointer-advanced', 'cyclic-sort', 'array-rotation'],
   },
   {
     part: 'Part II — Linked Structures',
@@ -23,12 +23,12 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part IV — Core Algorithms',
     color: 'var(--nb-green)',
-    chapters: ['dynamic-programming', 'backtracking', 'greedy', 'graph', 'shortest-path', 'bitmask-dp', 'divide-conquer', 'knapsack-dp', 'graph-advanced', 'bipartite', 'coordinate-compression', 'topological-sort', 'minimum-spanning-tree', 'network-flow', 'meet-in-middle', 'convex-hull-trick', 'centroid-decomposition', 'line-sweep', 'two-sat', 'bridges-articulation', 'min-cost-flow', 'flow-lower-bounds', 'bidirectional-bfs', 'a-star-search', 'difference-constraints', 'functional-graphs', 'matching-flow', 'graph-coloring', 'topk-streaming', 'strongly-connected-components', 'graph-state-space', 'greedy-intervals', 'constructive-algorithms', 'backtracking-pruning', 'multi-source-bfs', 'grid-islands', 'graph-bellman-ford', 'jump-game-variants'],
+    chapters: ['dynamic-programming', 'backtracking', 'greedy', 'graph', 'shortest-path', 'bitmask-dp', 'divide-conquer', 'knapsack-dp', 'graph-advanced', 'bipartite', 'coordinate-compression', 'topological-sort', 'minimum-spanning-tree', 'network-flow', 'meet-in-middle', 'convex-hull-trick', 'centroid-decomposition', 'line-sweep', 'two-sat', 'bridges-articulation', 'min-cost-flow', 'flow-lower-bounds', 'bidirectional-bfs', 'a-star-search', 'difference-constraints', 'functional-graphs', 'matching-flow', 'graph-coloring', 'topk-streaming', 'strongly-connected-components', 'graph-state-space', 'greedy-intervals', 'constructive-algorithms', 'backtracking-pruning', 'multi-source-bfs', 'grid-islands', 'graph-bellman-ford', 'jump-game-variants', 'union-find-applications', 'greedy-strings'],
   },
   {
     part: 'Part V — Strings, Sequences & Grid',
     color: 'var(--nb-orange)',
-    chapters: ['string-algorithms', 'string-matching', 'sequences', 'matrix', 'string-dp', 'palindrome-patterns', 'string-hashing', 'suffix-array', 'aho-corasick', 'z-function', 'manachers', 'suffix-automaton', 'palindrome-automaton', 'string-rotations', 'lyndon-factorization', 'string-construction', 'string-decode-patterns'],
+    chapters: ['string-algorithms', 'string-matching', 'sequences', 'matrix', 'string-dp', 'palindrome-patterns', 'string-hashing', 'suffix-array', 'aho-corasick', 'z-function', 'manachers', 'suffix-automaton', 'palindrome-automaton', 'string-rotations', 'lyndon-factorization', 'string-construction', 'string-decode-patterns', 'string-parsing'],
   },
   {
     part: 'Part VI — Math & Discrete',

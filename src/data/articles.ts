@@ -215,6 +215,10 @@ import { linkedListReversalArticle } from './content/linked-list-reversal'
 import { treeLevelOrderArticle } from './content/tree-level-order'
 import { dpPalindromesArticle } from './content/dp-palindromes'
 import { bitCountingArticle } from './content/bit-counting'
+import { greedyStringsArticle } from './content/greedy-strings'
+import { arrayRotationArticle } from './content/array-rotation'
+import { unionFindApplicationsArticle } from './content/union-find-applications'
+import { stringParsingArticle } from './content/string-parsing'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -399,6 +403,10 @@ export const articles: Article[] = [
   treeLevelOrderArticle,
   dpPalindromesArticle,
   bitCountingArticle,
+  greedyStringsArticle,
+  arrayRotationArticle,
+  unionFindApplicationsArticle,
+  stringParsingArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
