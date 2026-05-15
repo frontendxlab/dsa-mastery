@@ -269,10 +269,97 @@ function maxSlidingWindow(nums, k) {
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'Even More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 7,
+      title: 'Remove K Digits',
+      url: 'https://leetcode.com/problems/remove-k-digits/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Greedy with monotonic stack — remove larger digits early',
+          explanation: `To minimize the number, remove digits that are larger than the next digit. Use a monotonic increasing stack: pop top when current digit < top AND k > 0. After processing, remove from the right if k still > 0. Strip leading zeros.`,
+          code: `var removeKdigits = function(num, k) {
+    const stack = [];
+    for (const d of num) {
+        while (k > 0 && stack.length && stack.at(-1) > d) {
+            stack.pop(); k--;
+        }
+        stack.push(d);
+    }
+    // k remaining? remove from tail (stack is already non-decreasing)
+    while (k-- > 0) stack.pop();
+    const result = stack.join('').replace(/^0+/, '') || '0';
+    return result;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 8,
+      title: '132 Pattern',
+      url: 'https://leetcode.com/problems/132-pattern/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: O(n²) or O(n³) brute — try all triples',
+          explanation: `Check all i < j < k with nums[i] < nums[k] < nums[j]. O(n³) or O(n²) with some optimization.`,
+        },
+        {
+          label: 'Intuition 2: O(n) — scan right→left, maintain stack and track max "3"',
+          explanation: `Scan from right. Maintain a decreasing stack. Whenever we pop from the stack, the popped value is a candidate for the "3" position (middle value). If at any point current element < max_popped, we found the "1" (since "2" was the stack top, "3" is max_popped, "1" is current).`,
+          code: `var find132pattern = function(nums) {
+    let third = -Infinity; // the "3" in 1-3-2 (the middle value)
+    const stack = [];
+    for (let i = nums.length - 1; i >= 0; i--) {
+        if (nums[i] < third) return true; // found "1" < "3"
+        while (stack.length && stack.at(-1) < nums[i]) {
+            third = stack.pop(); // this is now the "3" (smaller than nums[i]="2")
+        }
+        stack.push(nums[i]);
+    }
+    return false;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 9,
+      title: 'Online Stock Span',
+      url: 'https://leetcode.com/problems/online-stock-span/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Monotonic stack with accumulated spans',
+          explanation: `For each price, the span = number of consecutive days (including today) where price was ≤ today. Use a decreasing stack storing (price, span). When popping, accumulate the span. This way each pop "skips" multiple previously-collapsed days in O(1) amortized.`,
+          code: `var StockSpanner = function() {
+    this.stack = []; // [price, span]
+};
+StockSpanner.prototype.next = function(price) {
+    let span = 1;
+    while (this.stack.length && this.stack.at(-1)[0] <= price) {
+        span += this.stack.pop()[1]; // absorb the span of smaller prices
+    }
+    this.stack.push([price, span]);
+    return span;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '🧠',
       color: 'teal',
-      content: `**Monotonic stack direction guide:**\n- Decreasing stack → pop when GREATER element arrives → finds "next greater"\n- Increasing stack → pop when SMALLER element arrives → finds "next smaller"\n- Process right→left instead for "previous greater/smaller"\n- Histogram / contribution: use both sides (left stack + right stack)`,
+      content: `**Monotonic stack direction guide:**\n- Decreasing stack → pop when GREATER element arrives → finds "next greater element"\n- Increasing stack → pop when SMALLER element arrives → finds "next smaller element"\n- Process right→left instead → finds "previous greater/smaller"\n- Histogram / contribution: use both sides (left[] and right[] boundaries)\n- "Minimize/maximize by removing k elements" → greedy with monotonic stack\n- "132 pattern / jump patterns" → scan backwards, pop = candidate for middle value`,
     },
   ],
 }

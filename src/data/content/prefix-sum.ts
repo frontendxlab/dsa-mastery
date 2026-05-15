@@ -227,10 +227,139 @@ const query2D = (p, r1, c1, r2, c2) =>
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 5,
+      title: 'Number of Ways to Split Array',
+      url: 'https://leetcode.com/problems/number-of-ways-to-split-array/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Prefix sum — check left vs right sum at each split point',
+          explanation: `A valid split at index i means prefix[i+1] >= suffix sum from i+1. Precompute total sum. Left sum = prefix[i+1]. Right sum = total - left. If leftSum >= rightSum, count it.`,
+          code: `var waysToSplitArray = function(nums) {
+    const total = nums.reduce((a,b)=>a+b, 0);
+    let leftSum = 0, count = 0;
+    for (let i = 0; i < nums.length - 1; i++) {
+        leftSum += nums[i];
+        if (leftSum >= total - leftSum) count++;
+    }
+    return count;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 6,
+      title: 'Product of Array Except Self',
+      url: 'https://leetcode.com/problems/product-of-array-except-self/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: O(n) space — left prefix product × right suffix product',
+          explanation: `For each index i, answer = (product of all elements left of i) × (product of all elements right of i). Build left-prefix array and right-suffix array, multiply element-wise.`,
+        },
+        {
+          label: 'Intuition 2: O(1) space — accumulate right product on the fly',
+          explanation: `First pass: fill result with left prefix products. Second pass: multiply in right suffix products using a running variable (no extra array needed).`,
+          code: `var productExceptSelf = function(nums) {
+    const n = nums.length, result = new Array(n).fill(1);
+    // Pass 1: result[i] = product of nums[0..i-1]
+    for (let i = 1; i < n; i++) result[i] = result[i-1] * nums[i-1];
+    // Pass 2: multiply by product of nums[i+1..n-1]
+    let right = 1;
+    for (let i = n-1; i >= 0; i--) {
+        result[i] *= right;
+        right *= nums[i];
+    }
+    return result;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 7,
+      title: 'Minimum Size Subarray Sum',
+      url: 'https://leetcode.com/problems/minimum-size-subarray-sum/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Sliding window (all positive) — O(n)',
+          explanation: `Since all values positive, sliding window works. Expand right pointer. When sum ≥ target, shrink from left while sum stays ≥ target. Track minimum window size.`,
+          code: `var minSubArrayLen = function(target, nums) {
+    let lo = 0, sum = 0, min = Infinity;
+    for (let hi = 0; hi < nums.length; hi++) {
+        sum += nums[hi];
+        while (sum >= target) {
+            min = Math.min(min, hi - lo + 1);
+            sum -= nums[lo++];
+        }
+    }
+    return min === Infinity ? 0 : min;
+};`,
+          lang: 'javascript',
+        },
+        {
+          label: 'Intuition 2: Prefix sum + binary search — O(n log n)',
+          explanation: `Build prefix sums. For each start index i, binary search for the smallest j where prefix[j] - prefix[i] >= target. O(n log n) — useful when values could be negative.`,
+          code: `var minSubArrayLen = function(target, nums) {
+    const prefix = [0];
+    for (const n of nums) prefix.push(prefix.at(-1) + n);
+    let min = Infinity;
+    for (let i = 0; i < nums.length; i++) {
+        // find smallest j > i where prefix[j] >= prefix[i] + target
+        let lo = i+1, hi = nums.length;
+        while (lo < hi) {
+            const mid = (lo+hi)>>1;
+            prefix[mid] >= prefix[i]+target ? hi=mid : lo=mid+1;
+        }
+        if (lo <= nums.length) min = Math.min(min, lo-i);
+    }
+    return min === Infinity ? 0 : min;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 8,
+      title: 'Count Number of Bad Pairs',
+      url: 'https://leetcode.com/problems/count-number-of-bad-pairs/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Count good pairs, subtract from total',
+          explanation: `Bad pair: j - i ≠ nums[j] - nums[i], equivalently: nums[i] - i ≠ nums[j] - j. So good pairs = pairs where nums[i]-i === nums[j]-j. Use a hashmap to count occurrences of each (nums[i]-i) value. Good pairs = sum of C(count, 2) for each group. Bad = total - good.`,
+          code: `var countBadPairs = function(nums) {
+    const n = nums.length;
+    const total = BigInt(n) * BigInt(n-1) / 2n;
+    const freq = new Map();
+    for (let i = 0; i < n; i++) {
+        const key = nums[i] - i;
+        freq.set(key, (freq.get(key) ?? 0) + 1);
+    }
+    let good = 0n;
+    for (const c of freq.values()) good += BigInt(c) * BigInt(c-1) / 2n;
+    return Number(total - good);
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '🧠',
       color: 'green',
-      content: `**Prefix sum checklist:**\n- "Sum of subarray" → prefix[r+1] - prefix[l]\n- "Count subarrays with sum = k" → prefix map (two-sum trick)\n- "Subarray sum divisible by k" → prefix mod k (two-sum trick with modulo)\n- "Range updates + query each element" → difference array\n- "2D rectangle sum" → 2D prefix sum with inclusion-exclusion\n- Input has negatives → sliding window fails → use prefix sum + hashmap`,
+      content: `**Prefix sum checklist:**\n- "Sum of subarray" → prefix[r+1] - prefix[l]\n- "Count subarrays with sum = k" → prefix map (two-sum trick)\n- "Subarray sum divisible by k" → prefix mod k (two-sum trick with modulo)\n- "Range updates + query each element" → difference array\n- "2D rectangle sum" → 2D prefix sum with inclusion-exclusion\n- Input has negatives → sliding window fails → use prefix sum + hashmap\n- "Product except self" → prefix product + suffix product (same idea, multiplication)`,
     },
   ],
 }

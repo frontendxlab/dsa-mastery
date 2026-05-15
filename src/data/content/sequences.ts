@@ -257,10 +257,63 @@ function lcs(text1, text2) {
       ],
     },
     {
+      type: 'problem',
+      num: 7,
+      title: 'Distinct Subsequences',
+      url: 'https://leetcode.com/problems/distinct-subsequences/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: O(m×n) DP — count ways to form t from s',
+          explanation: `dp[i][j] = number of distinct ways to form t[0..j-1] using s[0..i-1]. If s[i-1] !== t[j-1]: dp[i][j] = dp[i-1][j] (skip s[i-1]). If equal: dp[i][j] = dp[i-1][j] (skip s[i-1]) + dp[i-1][j-1] (use s[i-1] to match t[j-1]).`,
+          code: `var numDistinct = function(s, t) {
+    const m=s.length, n=t.length;
+    // dp[i][j] = distinct subseqs of s[0..i-1] equal to t[0..j-1]
+    const dp=Array.from({length:m+1},()=>new Array(n+1).fill(0));
+    for(let i=0;i<=m;i++) dp[i][0]=1; // empty t matched by any prefix of s
+    for(let i=1;i<=m;i++)
+        for(let j=1;j<=n;j++){
+            dp[i][j]=dp[i-1][j]; // always: skip s[i-1]
+            if(s[i-1]===t[j-1]) dp[i][j]+=dp[i-1][j-1]; // use s[i-1]
+        }
+    return dp[m][n];
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 8,
+      title: 'Is Subsequence',
+      url: 'https://leetcode.com/problems/is-subsequence/',
+      difficulty: 'Easy',
+      intuitions: [
+        {
+          label: 'Intuition 1: Two pointers — match chars in order',
+          explanation: `Pointer i on s, pointer j on t. If s[i] matches t[j], advance i. Always advance j. If i reaches s.length, all chars matched.`,
+          code: `var isSubsequence = function(s, t) {
+    let i = 0;
+    for (const c of t) if (i < s.length && c === s[i]) i++;
+    return i === s.length;
+};`,
+          lang: 'javascript',
+        },
+        {
+          label: 'Intuition 2: Follow-up — O(log n) per query with binary search',
+          explanation: `For many queries against the same t: precompute next[i][c] = next occurrence of char c at or after position i in t. For each char in s, binary search for its next occurrence after current position.`,
+          code: `// Precompute: idx[c] = sorted list of positions where c appears in t
+// For each char in s: pos = upper_bound(idx[c], current_pos)
+// If not found, return false`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '🧠',
       color: 'teal',
-      content: `**Subsequence vs Subarray — the key difference:**\n- Subsequence: characters can be non-contiguous → LCS dp[i][j] = max of skip or (match: dp[i-1][j-1]+1)\n- Subarray (contiguous): reset to 0 on mismatch → longest common subarray\n- Palindrome subsequence: dp[i][j] = whether s[i..j] is palindrome, expand from center\n- Edit distance: both can skip (insert/delete) AND match/replace`,
+      content: `**Subsequence vs Subarray — the key difference:**\n- Subsequence: characters can be non-contiguous → LCS dp[i][j] = max of skip or (match: dp[i-1][j-1]+1)\n- Subarray (contiguous): reset to 0 on mismatch → longest common subarray\n- Palindrome subsequence: dp[i][j] = whether s[i..j] is palindrome, expand from center\n- Edit distance: both can skip (insert/delete) AND match/replace\n- Count distinct subsequences: dp[i][j] = skip + (if match: use)`,
     },
   ],
 }

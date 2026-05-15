@@ -230,10 +230,99 @@ function rabinKarp(text, pattern) {
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 4,
+      title: 'Count Occurrences of Anagram',
+      url: 'https://leetcode.com/problems/find-all-anagrams-in-a-string/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Rolling hash — Rabin-Karp on sorted character multisets',
+          explanation: `Hash each window as the product of prime(char) for each char. This is order-independent. Window of size p.length: slide by removing leftmost char hash and adding rightmost. If window hash === pattern hash, it's an anagram.`,
+          code: `var findAnagrams = function(s, p) {
+    // Use character frequency instead of hash for correctness
+    const pMap = new Array(26).fill(0);
+    const wMap = new Array(26).fill(0);
+    for (const c of p) pMap[c.charCodeAt(0)-97]++;
+    const result = [], k = p.length;
+    for (let i = 0; i < s.length; i++) {
+        wMap[s.charCodeAt(i)-97]++;
+        if (i >= k) wMap[s.charCodeAt(i-k)-97]--;
+        if (i >= k-1 && pMap.join(',') === wMap.join(',')) result.push(i-k+1);
+    }
+    return result;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 5,
+      title: 'Longest Happy Prefix (KMP LPS application)',
+      url: 'https://leetcode.com/problems/longest-happy-prefix/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: Build KMP LPS — last value is the answer',
+          explanation: `A "happy prefix" is a prefix that is also a suffix (non-trivial). This is exactly what KMP's LPS array computes. Build LPS for s, return s.slice(0, lps[n-1]).`,
+          code: `var longestPrefix = function(s) {
+    const n = s.length;
+    const lps = new Array(n).fill(0);
+    let len = 0, i = 1;
+    while (i < n) {
+        if (s[i] === s[len]) { lps[i++] = ++len; }
+        else if (len) len = lps[len-1];
+        else lps[i++] = 0;
+    }
+    return s.slice(0, lps[n-1]); // longest proper prefix = suffix
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 6,
+      title: 'Implement strStr (Rabin-Karp variant)',
+      url: 'https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/',
+      difficulty: 'Easy',
+      intuitions: [
+        {
+          label: 'Intuition 1: Rabin-Karp rolling hash — O(n+m) average',
+          explanation: `Hash the needle. Slide a window of size m over haystack, maintaining rolling hash. On hash match, verify character by character (avoid false positives). Rolling hash: remove leftmost char, add new rightmost char using modular arithmetic.`,
+          code: `var strStr = function(haystack, needle) {
+    const n=haystack.length, m=needle.length;
+    if(m>n) return -1;
+    const BASE=31, MOD=1e9+7;
+    let nHash=0, hHash=0, power=1;
+    for(let i=0;i<m;i++){
+        nHash=(nHash*BASE+(needle.charCodeAt(i)-96))%MOD;
+        hHash=(hHash*BASE+(haystack.charCodeAt(i)-96))%MOD;
+        if(i>0) power=power*BASE%MOD;
+    }
+    if(nHash===hHash && haystack.slice(0,m)===needle) return 0;
+    for(let i=1;i<=n-m;i++){
+        hHash=(hHash-(haystack.charCodeAt(i-1)-96)*power%MOD+MOD)%MOD;
+        hHash=(hHash*BASE+(haystack.charCodeAt(i+m-1)-96))%MOD;
+        if(hHash===nHash && haystack.slice(i,i+m)===needle) return i;
+    }
+    return -1;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '🧠',
       color: 'green',
-      content: `**String matching algorithm selector:**\n- Single pattern in text → KMP (O(n+m), deterministic)\n- Multiple patterns in text → Aho-Corasick (build trie of all patterns, single pass)\n- Substring comparison / all prefix-suffix matches → Z-algorithm\n- Rolling hash / multiple patterns / competitive → Rabin-Karp\n- "Repeated substring" / "palindrome prefix" → LPS/KMP tricks`,
+      content: `**String matching algorithm selector:**\n- Single pattern in text → KMP (O(n+m), deterministic)\n- Multiple patterns in text → Aho-Corasick (build trie of all patterns, single pass)\n- Substring comparison / all prefix-suffix matches → Z-algorithm\n- Rolling hash / multiple patterns / competitive → Rabin-Karp\n- "Repeated substring" / "palindrome prefix" → LPS/KMP tricks\n- "Longest prefix = suffix" → lps[n-1] (KMP LPS last value)`,
     },
   ],
 }

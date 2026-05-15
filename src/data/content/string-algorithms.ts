@@ -241,10 +241,145 @@ function rabinKarp(text, pattern) {
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 5,
+      title: 'Minimum Window Substring',
+      url: 'https://leetcode.com/problems/minimum-window-substring/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: O(n²) brute force — check every substring',
+          explanation: `Generate all substrings, check each if it contains all of t's characters. O(n² × |t|).`,
+        },
+        {
+          label: 'Intuition 2: Sliding window with need/have counts — O(n)',
+          explanation: `"need" = frequency of each char in t. "have" = how many t-chars are satisfied in current window. Window is valid when have === need size. Expand right, when valid shrink from left. Track minimum valid window.`,
+          code: `var minWindow = function(s, t) {
+    if (!t.length) return '';
+    const need = new Map(), have = new Map();
+    for (const c of t) need.set(c, (need.get(c) ?? 0) + 1);
+    let satisfied = 0, lo = 0, minLen = Infinity, ans = '';
+    for (let hi = 0; hi < s.length; hi++) {
+        const c = s[hi];
+        have.set(c, (have.get(c) ?? 0) + 1);
+        if (need.has(c) && have.get(c) === need.get(c)) satisfied++;
+        while (satisfied === need.size) {
+            if (hi - lo + 1 < minLen) { minLen = hi - lo + 1; ans = s.slice(lo, hi+1); }
+            const lc = s[lo++];
+            have.set(lc, have.get(lc) - 1);
+            if (need.has(lc) && have.get(lc) < need.get(lc)) satisfied--;
+        }
+    }
+    return ans;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 6,
+      title: 'Valid Anagram',
+      url: 'https://leetcode.com/problems/valid-anagram/',
+      difficulty: 'Easy',
+      intuitions: [
+        {
+          label: 'Intuition 1: Sort both strings and compare',
+          explanation: `Sort both strings. If equal, they are anagrams. O(n log n).`,
+          code: `var isAnagram = function(s, t) {
+    return s.length === t.length && [...s].sort().join('') === [...t].sort().join('');
+};`,
+          lang: 'javascript',
+        },
+        {
+          label: 'Intuition 2: Character frequency array — O(n)',
+          explanation: `Count character frequencies. Increment for s, decrement for t. If all counts are 0, they're anagrams.`,
+          code: `var isAnagram = function(s, t) {
+    if (s.length !== t.length) return false;
+    const cnt = new Array(26).fill(0);
+    for (let i = 0; i < s.length; i++) {
+        cnt[s.charCodeAt(i) - 97]++;
+        cnt[t.charCodeAt(i) - 97]--;
+    }
+    return cnt.every(c => c === 0);
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 7,
+      title: 'Longest Common Prefix',
+      url: 'https://leetcode.com/problems/longest-common-prefix/',
+      difficulty: 'Easy',
+      intuitions: [
+        {
+          label: 'Intuition 1: Vertical scan — compare column by column',
+          explanation: `Check character at position i across all strings. If any string ends or has a different char, return the prefix so far.`,
+          code: `var longestCommonPrefix = function(strs) {
+    for (let i = 0; i < strs[0].length; i++)
+        for (let j = 1; j < strs.length; j++)
+            if (strs[j][i] !== strs[0][i]) return strs[0].slice(0, i);
+    return strs[0];
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 8,
+      title: 'Find All Anagrams in a String',
+      url: 'https://leetcode.com/problems/find-all-anagrams-in-a-string/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Fixed sliding window with frequency comparison',
+          explanation: `Maintain a window of size p.length. Track how many characters have matching frequencies (satisfied count). Slide window: add right char, remove left char, update satisfied count. When satisfied === 26 (all chars match), record start index.`,
+          code: `var findAnagrams = function(s, p) {
+    if (s.length < p.length) return [];
+    const pFreq = new Array(26).fill(0), wFreq = new Array(26).fill(0);
+    for (const c of p) pFreq[c.charCodeAt(0)-97]++;
+    let satisfied = 0;
+    const result = [];
+    // Count initially satisfied characters
+    const check = i => pFreq[i] === wFreq[i];
+    for (let i = 0; i < p.length; i++) {
+        const idx = s.charCodeAt(i)-97;
+        wFreq[idx]++;
+    }
+    satisfied = pFreq.filter((v,i) => v === wFreq[i]).length;
+    if (satisfied === 26) result.push(0);
+    for (let i = p.length; i < s.length; i++) {
+        const addIdx = s.charCodeAt(i)-97;
+        const remIdx = s.charCodeAt(i-p.length)-97;
+        // Remove left char
+        if (pFreq[remIdx] === wFreq[remIdx]) satisfied--;
+        wFreq[remIdx]--;
+        if (pFreq[remIdx] === wFreq[remIdx]) satisfied++;
+        // Add right char
+        if (pFreq[addIdx] === wFreq[addIdx]) satisfied--;
+        wFreq[addIdx]++;
+        if (pFreq[addIdx] === wFreq[addIdx]) satisfied++;
+        if (satisfied === 26) result.push(i - p.length + 1);
+    }
+    return result;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '💡',
       color: 'green',
-      content: `**KMP "buffer string" trick**: When building LPS of pattern on text, create "pattern + '#' + text". The '#' separator ensures the LPS of the combined string in the text portion never exceeds pattern.length. Access text positions at offset = pattern.length + 1.`,
+      content: `**KMP "buffer string" trick**: When building LPS of pattern on text, create "pattern + '#' + text". The '#' separator ensures the LPS of the combined string in the text portion never exceeds pattern.length. Access text positions at offset = pattern.length + 1.\n\n**String pattern signals:**\n- "Anagram / permutation in string" → fixed sliding window + frequency array\n- "Minimum window containing all chars" → variable sliding window + need/have count\n- "Pattern matching guaranteed linear" → KMP\n- "Palindrome substring" → expand around center (O(n²)) or Manacher (O(n))\n- "Repeated pattern" → KMP LPS: if s.length % (s.length - lps.last) === 0, yes`,
     },
   ],
 }
