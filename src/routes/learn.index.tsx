@@ -8,7 +8,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part I — Arrays & Pointers',
     color: 'var(--nb-teal)',
-    chapters: ['two-pointers', 'sliding-window', 'binary-search', 'prefix-sum', 'two-sum-family', 'array-tricks', 'difference-array', 'contribution-technique'],
+    chapters: ['two-pointers', 'sliding-window', 'binary-search', 'prefix-sum', 'two-sum-family', 'array-tricks', 'difference-array', 'contribution-technique', 'binary-search-answer'],
   },
   {
     part: 'Part II — Linked Structures',
@@ -33,7 +33,7 @@ const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part VI — Math & Discrete',
     color: 'var(--nb-pink)',
-    chapters: ['math', 'bit-manipulation', 'combinatorics', 'game-theory', 'geometry', 'number-theory', 'probability-dp', 'ternary-search', 'fft', 'sprague-grundy', 'chinese-remainder', 'convex-hull', 'inclusion-exclusion'],
+    chapters: ['math', 'bit-manipulation', 'combinatorics', 'game-theory', 'geometry', 'number-theory', 'probability-dp', 'ternary-search', 'fft', 'sprague-grundy', 'chinese-remainder', 'convex-hull', 'inclusion-exclusion', 'catalan-numbers', 'josephus', 'sieve-variants'],
   },
   {
     part: 'Part VII — Advanced Topics',

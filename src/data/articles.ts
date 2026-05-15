@@ -135,6 +135,10 @@ import { suffixAutomatonArticle } from './content/suffix-automaton'
 import { twoSatArticle } from './content/two-sat'
 import { inclusionExclusionArticle } from './content/inclusion-exclusion'
 import { bridgesArticulationArticle } from './content/bridges-articulation'
+import { binarySearchAnswerArticle } from './content/binary-search-answer'
+import { catalanNumbersArticle } from './content/catalan-numbers'
+import { josephusArticle } from './content/josephus'
+import { sieveVariantsArticle } from './content/sieve-variants'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -239,6 +243,10 @@ export const articles: Article[] = [
   twoSatArticle,
   inclusionExclusionArticle,
   bridgesArticulationArticle,
+  binarySearchAnswerArticle,
+  catalanNumbersArticle,
+  josephusArticle,
+  sieveVariantsArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
