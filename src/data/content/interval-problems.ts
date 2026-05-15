@@ -286,10 +286,110 @@ function maxNonOverlapWeight(jobs) {
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'More Worked Problems',
+    },
+    {
+      type: 'problem',
+      num: 6,
+      title: 'Insert Interval',
+      url: 'https://leetcode.com/problems/insert-interval/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: Three phases — before, overlap, after',
+          explanation: `Walk through sorted intervals in three phases:\n1. Add all intervals that END before newInterval starts (no overlap)\n2. Merge all intervals that OVERLAP with newInterval (update newInterval's boundaries)\n3. Add all remaining intervals (start after newInterval ends)`,
+          code: `var insert = function(intervals, newInterval) {
+    const result = [];
+    let i = 0, [newStart, newEnd] = newInterval;
+    // Phase 1: before new interval
+    while (i < intervals.length && intervals[i][1] < newStart)
+        result.push(intervals[i++]);
+    // Phase 2: merge overlapping
+    while (i < intervals.length && intervals[i][0] <= newEnd) {
+        newStart = Math.min(newStart, intervals[i][0]);
+        newEnd   = Math.max(newEnd,   intervals[i][1]);
+        i++;
+    }
+    result.push([newStart, newEnd]);
+    // Phase 3: after new interval
+    while (i < intervals.length) result.push(intervals[i++]);
+    return result;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 7,
+      title: 'Minimum Interval to Include Each Query',
+      url: 'https://leetcode.com/problems/minimum-interval-to-include-each-query/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: Sort queries + intervals, min-heap by interval size',
+          explanation: `Sort both intervals and queries. Process queries in sorted order. For each query q: add all intervals with start ≤ q to a min-heap (keyed by size = end-start+1). Remove intervals from heap that have ended (end < q). Heap top = smallest active interval containing q.`,
+          code: `var minInterval = function(intervals, queries) {
+    intervals.sort((a,b)=>a[0]-b[0]);
+    const sortedQ = queries.map((q,i)=>[q,i]).sort((a,b)=>a[0]-b[0]);
+    // Min-heap: [size, end] — smallest interval first
+    const heap = []; // simulate with array for clarity
+    const ans = new Array(queries.length).fill(-1);
+    let j = 0;
+    for (const [q, idx] of sortedQ) {
+        // Add intervals starting <= q
+        while (j < intervals.length && intervals[j][0] <= q) {
+            const [s,e] = intervals[j++];
+            heap.push([e-s+1, e]);
+            heap.sort((a,b)=>a[0]-b[0]);
+        }
+        // Remove expired intervals
+        while (heap.length && heap[0][1] < q) heap.shift();
+        if (heap.length) ans[idx] = heap[0][0];
+    }
+    return ans;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 8,
+      title: 'Maximum Profit in Job Scheduling',
+      url: 'https://leetcode.com/problems/maximum-profit-in-job-scheduling/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: Sort by end time + DP + binary search',
+          explanation: `Sort jobs by end time. dp[i] = max profit considering first i jobs. For each job: option A = skip it (dp[i-1]), option B = take it (profit[i] + dp[j] where j = last job ending ≤ startTime[i]). Use binary search to find j. O(n log n).`,
+          code: `var jobScheduling = function(startTime, endTime, profit) {
+    const n = startTime.length;
+    const jobs = Array.from({length:n}, (_,i)=>[endTime[i], startTime[i], profit[i]])
+                      .sort((a,b)=>a[0]-b[0]);
+    const dp = [0]; // dp[i] = max profit from first i jobs
+    const ends = [0]; // end times for binary search
+    for (const [e, s, p] of jobs) {
+        // Binary search: rightmost end time <= s
+        let lo=0, hi=ends.length-1;
+        while(lo<hi){ const mid=(lo+hi+1)>>1; ends[mid]<=s?lo=mid:hi=mid-1; }
+        const take = dp[lo] + p;
+        dp.push(Math.max(dp[dp.length-1], take));
+        ends.push(e);
+    }
+    return dp[dp.length-1];
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '🧠',
       color: 'green',
-      content: `**Interval problem decision tree:**\n1. Need to combine overlapping → sort by START, merge\n2. Min rooms / max overlap count → sweep line (events) or two sorted arrays\n3. Max non-overlapping count → sort by END, greedy\n4. Max weighted non-overlapping → sort by END + DP + binary search\n5. Cover a range with min intervals → sort by START, greedy max reach\n6. All interval problems: **SORT FIRST** — usually by start, sometimes by end`,
+      content: `**Interval problem decision tree:**\n1. Need to combine overlapping → sort by START, merge\n2. Min rooms / max overlap count → sweep line (events) or two sorted arrays\n3. Max non-overlapping count → sort by END, greedy\n4. Max weighted non-overlapping → sort by END + DP + binary search\n5. Cover a range with min intervals → sort by START, greedy max reach\n6. Insert new interval → 3 phases: before / merge overlap / after\n7. Queries on intervals → sort both, slide pointer + heap for active intervals`,
     },
   ],
 }

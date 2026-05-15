@@ -431,10 +431,148 @@ const helper = (i, j) => {
       ],
     },
     {
+      type: 'heading',
+      level: 2,
+      text: 'Knapsack Pattern',
+    },
+    {
+      type: 'callout',
+      icon: '🔑',
+      color: 'teal',
+      content: `**0/1 Knapsack template**: dp[i][w] = max value using first i items with capacity w.\n- Include item i: dp[i-1][w-weight[i]] + value[i]\n- Exclude item i: dp[i-1][w]\n- Take max of both\n\n**1D optimization**: iterate capacity backwards when each item can only be used ONCE (0/1). Iterate forwards for unbounded knapsack (coin change).`,
+    },
+    {
+      type: 'problem',
+      num: 10,
+      title: 'Partition Equal Subset Sum',
+      url: 'https://leetcode.com/problems/partition-equal-subset-sum/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: 0/1 knapsack — can we reach sum/2?',
+          explanation: `If total is odd, impossible. Otherwise find if any subset sums to total/2. Classic 0/1 knapsack: dp[j] = can we reach sum j using items so far. Iterate items, then iterate j from target down to item value (backwards = each item used at most once).`,
+          code: `var canPartition = function(nums) {
+    const total = nums.reduce((a,b) => a+b, 0);
+    if (total % 2 !== 0) return false;
+    const target = total / 2;
+    const dp = new Array(target + 1).fill(false);
+    dp[0] = true;
+    for (const n of nums) {
+        for (let j = target; j >= n; j--) {  // backwards = 0/1 (no reuse)
+            dp[j] = dp[j] || dp[j - n];
+        }
+    }
+    return dp[target];
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 11,
+      title: 'Target Sum',
+      url: 'https://leetcode.com/problems/target-sum/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: O(2^n) backtracking — try + and - for each number',
+          explanation: `Assign + or - to each number. 2^n combinations. Too slow for n=20.`,
+        },
+        {
+          label: 'Intuition 2: O(n × S) DP — count ways to reach each sum',
+          explanation: `dp[sum] = number of ways to reach this sum. For each number, update sums: new_dp[sum + n] += dp[sum], new_dp[sum - n] += dp[sum]. After all numbers, answer is dp[target].`,
+          code: `var findTargetSumWays = function(nums, target) {
+    let dp = new Map([[0, 1]]);
+    for (const n of nums) {
+        const next = new Map();
+        for (const [sum, cnt] of dp) {
+            next.set(sum+n, (next.get(sum+n) ?? 0) + cnt);
+            next.set(sum-n, (next.get(sum-n) ?? 0) + cnt);
+        }
+        dp = next;
+    }
+    return dp.get(target) ?? 0;
+};`,
+          lang: 'javascript',
+        },
+        {
+          label: 'Intuition 3: Math reduction to subset sum',
+          explanation: `Let P = sum of numbers with + and N = sum with -. Then P + N = total and P - N = target. So P = (total + target) / 2. Count subsets summing to P (0/1 knapsack count variant).`,
+          code: `var findTargetSumWays = function(nums, target) {
+    const total = nums.reduce((a,b)=>a+b, 0);
+    if ((total + target) % 2 !== 0 || Math.abs(target) > total) return 0;
+    const P = (total + target) / 2;
+    const dp = new Array(P+1).fill(0);
+    dp[0] = 1;
+    for (const n of nums)
+        for (let j = P; j >= n; j--)
+            dp[j] += dp[j-n];
+    return dp[P];
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 12,
+      title: 'Maximum Subarray (Kadane\'s)',
+      url: 'https://leetcode.com/problems/maximum-subarray/',
+      difficulty: 'Medium',
+      intuitions: [
+        {
+          label: 'Intuition 1: O(n) Kadane\'s algorithm',
+          explanation: `dp[i] = max subarray sum ending at i. dp[i] = max(nums[i], dp[i-1] + nums[i]). If previous sum is negative, start fresh at nums[i]. Track global max.`,
+          code: `var maxSubArray = function(nums) {
+    let currSum = nums[0], maxSum = nums[0];
+    for (let i = 1; i < nums.length; i++) {
+        currSum = Math.max(nums[i], currSum + nums[i]);  // extend or restart
+        maxSum = Math.max(maxSum, currSum);
+    }
+    return maxSum;
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
+      type: 'problem',
+      num: 13,
+      title: 'Regular Expression Matching',
+      url: 'https://leetcode.com/problems/regular-expression-matching/',
+      difficulty: 'Hard',
+      intuitions: [
+        {
+          label: 'Intuition 1: 2D DP — dp[i][j] = does s[0..i-1] match p[0..j-1]',
+          explanation: `Cases:\n1. p[j-1] is a letter: must match s[i-1]. dp[i][j] = dp[i-1][j-1] && (s[i-1] === p[j-1] || p[j-1] === '.')\n2. p[j-1] is '*': can mean "zero of previous" → dp[i][j-2], OR "one or more of previous" if p[j-2] matches s[i-1] → dp[i-1][j]`,
+          code: `var isMatch = function(s, p) {
+    const m=s.length, n=p.length;
+    const dp=Array.from({length:m+1},()=>new Array(n+1).fill(false));
+    dp[0][0]=true;
+    // "x*" patterns can match empty string
+    for(let j=2;j<=n;j++) if(p[j-1]==='*') dp[0][j]=dp[0][j-2];
+    for(let i=1;i<=m;i++)
+        for(let j=1;j<=n;j++){
+            if(p[j-1]==='*'){
+                dp[i][j]=dp[i][j-2]; // zero occurrences of p[j-2]
+                if(p[j-2]==='.' || p[j-2]===s[i-1])
+                    dp[i][j]=dp[i][j]||dp[i-1][j]; // one+ more
+            } else if(p[j-1]==='.'||p[j-1]===s[i-1]){
+                dp[i][j]=dp[i-1][j-1];
+            }
+        }
+    return dp[m][n];
+};`,
+          lang: 'javascript',
+        },
+      ],
+    },
+    {
       type: 'callout',
       icon: '💡',
       color: 'green',
-      content: `**DP pattern families:**\n- **1D linear:** Fibonacci, climbing stairs, house robber, coin change\n- **2D grid:** unique paths, minimum path sum, dungeon game\n- **2D string:** edit distance, LCS, wildcard matching, regex\n- **Interval:** burst balloons, matrix chain, palindrome partition\n- **Knapsack:** 0/1 knapsack, subset sum, partition equal subset\n- **Bitmask DP:** traveling salesman, min cost to visit all nodes\n\nRecognizing DP: words like *shortest, longest, minimum, maximum, count, ways, best* — especially with a constraint like "at most k" or "contiguous".`,
+      content: `**DP pattern families:**\n- **1D linear:** Fibonacci, climbing stairs, house robber, coin change, Kadane's\n- **2D grid:** unique paths, minimum path sum, dungeon game\n- **2D string:** edit distance, LCS, regex, wildcard matching\n- **Interval:** burst balloons, matrix chain, palindrome partition\n- **Knapsack:** 0/1 (iterate j backwards), unbounded (forwards), count variants\n- **Bitmask DP:** traveling salesman, min cost to visit all nodes\n\nRecognizing DP: words like *shortest, longest, minimum, maximum, count, ways, best* — especially with a constraint like "at most k" or "contiguous".\n\n**Knapsack direction rule:** iterate weight/sum **backwards** for 0/1 (each item once), **forwards** for unbounded (items reusable).`,
     },
   ],
 }
