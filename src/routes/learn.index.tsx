@@ -107,13 +107,13 @@ function LearnPage() {
             to="/learn/patterns"
             className="nb-chip bg-white font-bold no-underline hover:bg-[var(--nb-teal)] transition-colors"
           >
-            ⚡ Quick Patterns Cheat Sheet
+            <Zap size={13} className="inline mr-1 opacity-80" />Quick Patterns Cheat Sheet
           </Link>
           <Link
             to="/explore"
-            className="nb-chip bg-white no-underline hover:bg-[var(--nb-green)] transition-colors"
+            className="nb-chip bg-white no-underline hover:bg-[var(--nb-green)] transition-colors inline-flex items-center gap-1.5"
           >
-            Browse 38k+ Problems →
+            Browse 38k+ Problems <ArrowRight size={13} />
           </Link>
         </div>
       </section>
