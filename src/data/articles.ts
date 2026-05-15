@@ -131,6 +131,10 @@ import { manachersArticle } from './content/manachers'
 import { convexHullArticle } from './content/convex-hull'
 import { spragueGrundyArticle } from './content/sprague-grundy'
 import { chineseRemainderArticle } from './content/chinese-remainder'
+import { suffixAutomatonArticle } from './content/suffix-automaton'
+import { twoSatArticle } from './content/two-sat'
+import { inclusionExclusionArticle } from './content/inclusion-exclusion'
+import { bridgesArticulationArticle } from './content/bridges-articulation'
 
 export const articles: Article[] = [
   slidingWindowArticle,
@@ -231,6 +235,10 @@ export const articles: Article[] = [
   convexHullArticle,
   spragueGrundyArticle,
   chineseRemainderArticle,
+  suffixAutomatonArticle,
+  twoSatArticle,
+  inclusionExclusionArticle,
+  bridgesArticulationArticle,
 ]
 
 export function getArticle(slug: string): Article | undefined {
