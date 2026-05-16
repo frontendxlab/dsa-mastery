@@ -1,7 +1,5 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { articles } from '#/data/articles'
-import { Card } from '@heroui/react/card'
-import { Button } from '@heroui/react/button'
 import { ArrowUpRight } from 'lucide-react'
 import {
   Share2, Layers, TreePine, Hash, Link2, ChevronUp, Network,
@@ -95,7 +93,7 @@ function LearnPage() {
     <main className="mx-auto max-w-7xl px-4 pb-20 pt-10 sm:pt-14">
 
       {/* ── Book cover ───────────────────────────────────────────── */}
-      <section className="mb-10 rounded-2xl border border-[var(--border)] bg-gradient-to-br from-[var(--surface)] to-[var(--surface-secondary)] p-8 sm:p-12">
+      <section className="squircle mb-10 border border-[rgba(214,235,253,0.09)] bg-[#10121f] p-8 sm:p-12">
         <p className="mb-2 text-xs font-bold uppercase tracking-widest text-[var(--accent)]">DSA Course — Complete Textbook</p>
         <h1 className="mb-4 text-[clamp(2rem,5vw,3.5rem)] font-bold leading-tight text-[var(--foreground)]">
           Mastering DSA<br/>
@@ -149,7 +147,7 @@ function LearnPage() {
       </div>
 
       {/* ── Footer ───────────────────────────────────────────────── */}
-      <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6 text-center">
+      <div className="squircle border border-[rgba(214,235,253,0.09)] bg-[#10121f] p-6 text-center">
         <p className="text-sm font-semibold text-[var(--foreground)] mb-1">More chapters coming</p>
         <p className="text-xs text-[var(--muted)]">Segment Trees, Network Flow, Number Theory deep dives — next up.</p>
       </div>
@@ -165,11 +163,11 @@ function ChapterCard({ article, num, accentColor }: { article: (typeof articles)
       params={{ pattern: article.slug }}
       className="group block no-underline"
     >
-      <Card className="h-full border border-[var(--border)] bg-[var(--surface)] p-4 transition-all duration-200 hover:border-[var(--accent)]/50 hover:shadow-[var(--surface-shadow)] hover:-translate-y-px">
+      <div className="squircle h-full border border-[var(--border)] bg-[#10121f] p-4 transition-all duration-200 hover:border-[#3b9eff]/40 hover:shadow-[0_4px_20px_rgba(0,0,0,0.4)] hover:-translate-y-0.5">
         <div className="flex gap-3">
-          {/* Chapter number */}
+          {/* Chapter number — squircle icon */}
           <div
-            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-xs font-bold text-white shadow-sm"
+            className="squircle-icon flex h-9 w-9 shrink-0 items-center justify-center text-xs font-bold text-white shadow-sm"
             style={{ background: accentColor }}
           >
             {num}
@@ -177,19 +175,19 @@ function ChapterCard({ article, num, accentColor }: { article: (typeof articles)
           {/* Content */}
           <div className="min-w-0 flex-1">
             <div className="flex items-center gap-1.5">
-              <Icon size={13} className="shrink-0 text-[var(--muted)]" />
-              <h3 className="truncate text-sm font-semibold text-[var(--foreground)] leading-tight">{article.title}</h3>
+              <Icon size={13} className="shrink-0 text-[#7d8299]" />
+              <h3 className="truncate text-sm font-semibold text-[#e8eaf0] leading-tight">{article.title}</h3>
             </div>
-            <p className="mt-1 line-clamp-2 text-xs leading-relaxed text-[var(--muted)]">
+            <p className="mt-1 line-clamp-2 text-xs leading-relaxed text-[#7d8299]">
               {article.tagline}
             </p>
             <div className="mt-2 flex items-center justify-between">
-              <span className="text-[10px] font-medium uppercase tracking-wide text-[var(--muted)] opacity-60">{article.readTime}</span>
-              <ArrowUpRight size={12} className="text-[var(--muted)] opacity-0 transition-opacity group-hover:opacity-60" />
+              <span className="text-[10px] font-medium uppercase tracking-wide text-[#7d8299] opacity-60">{article.readTime}</span>
+              <ArrowUpRight size={12} className="text-[#7d8299] opacity-0 transition-opacity group-hover:opacity-60" />
             </div>
           </div>
         </div>
-      </Card>
+      </div>
     </Link>
   )
 }

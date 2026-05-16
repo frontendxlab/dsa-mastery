@@ -461,17 +461,29 @@ a {
 }
 
 /* ── Squircle — iOS-style continuous corners ─────────────── */
-/* Override Tailwind rounded-* with larger squircle-like radii */
-.rounded-sm  { border-radius: 10px; }
-.rounded     { border-radius: 18px; }
-.rounded-md  { border-radius: 20px; }
-.rounded-lg  { border-radius: 20px; }
-.rounded-xl  { border-radius: 20px; }
-.rounded-2xl { border-radius: 24px; }
-.rounded-3xl { border-radius: 28px; }
-/* Logo mark squircle */
-.rounded-\[7px\]  { border-radius: 18% !important; }
-.rounded-\[8px\]  { border-radius: 18% !important; }
+/*
+ * True squircle: superellipse |x|^n + |y|^n = r^n where n≈5
+ * CSS approximation: generous fixed-px radius for rectangles,
+ * percentage-based radius for square elements (iOS app-icon style).
+ *
+ * Classes:
+ *   .squircle      — card/panel  (24px)
+ *   .squircle-sm   — small elem  (18px)
+ *   .squircle-icon — square icon (22%, scales with size)
+ */
+:root {
+  --squircle-radius: 24px;
+  --squircle-radius-sm: 18px;
+  --squircle-icon: 22%;
+}
+.squircle      { border-radius: var(--squircle-radius); }
+.squircle-sm   { border-radius: var(--squircle-radius-sm); }
+.squircle-icon { border-radius: var(--squircle-icon); }
+
+/* Apply squircle to Tailwind rounded utility classes */
+.rounded-lg  { border-radius: var(--squircle-radius-sm); }
+.rounded-xl  { border-radius: var(--squircle-radius); }
+.rounded-2xl { border-radius: calc(var(--squircle-radius) + 6px); }
 
 /* ── Selection color ─────────────────────────────────────── */
 ::selection {
@@ -497,11 +509,12 @@ a {
   align-items: center;
   gap: 8px;
   padding: 8px 14px;
-  background: transparent;
-  border: 1px solid rgba(214, 235, 253, 0.12);
+  background: rgba(10, 11, 18, 0.96);
+  border: 1px solid rgba(214, 235, 253, 0.10);
   border-radius: 22px;
-  backdrop-filter: blur(20px) saturate(160%);
-  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.5);
 }
 
 /* Spacer below fixed header */
@@ -612,8 +625,9 @@ a {
 
 /* Light mode overrides */
 .light .hdr-pill, [data-theme="light"] .hdr-pill {
-  background: transparent;
-  border-color: rgba(0,0,51,0.10);
+  background: rgba(255, 255, 255, 0.96);
+  border-color: rgba(0,0,51,0.09);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.08);
 }
 .light .hdr-logo-name, [data-theme="light"] .hdr-logo-name { color: #0e0f14; }
 .light .hdr-logo-sub, [data-theme="light"] .hdr-logo-sub { color: #4b4f63; }
