@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from '@tanstack/react-router'
+import { createFileRoute, Link, redirect } from '@tanstack/react-router'
 import { topics } from '#/data/topics'
 import { useMemo, useState, useEffect, useRef } from 'react'
 
@@ -17,17 +17,11 @@ interface TopicData {
 }
 
 export const Route = createFileRoute('/problems/$topic')({
-  loader: async ({ params }) => {
-    const topicInfo = topics.find((t) => t.slug === params.topic)
-    if (!topicInfo) return { topicInfo: null, total: 0, platforms: [], problems: [] }
-    try {
-      const res = await fetch(`/data/${params.topic}.json`)
-      if (!res.ok) return { topicInfo, total: 0, platforms: [], problems: [] }
-      const data: TopicData = await res.json()
-      return { topicInfo, ...data }
-    } catch {
-      return { topicInfo, total: 0, platforms: [], problems: [] }
-    }
+  loader: ({ params }) => {
+    throw redirect({
+      to: '/explore',
+      search: { q: '', topics: params.topic, platform: 'all', diff: 'tier', tiers: '', rmin: 800, rmax: 3500, sort: 'name', dir: 'asc' },
+    })
   },
   component: TopicPage,
   notFoundComponent: () => (

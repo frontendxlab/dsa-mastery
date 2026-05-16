@@ -2,6 +2,6 @@ import { createFileRoute, redirect } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/problems/")({
 	loader: () => {
-		throw redirect({ to: "/" });
+		throw redirect({ to: "/explore" });
 	},
 });
