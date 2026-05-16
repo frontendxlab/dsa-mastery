@@ -46,11 +46,11 @@ export const Route = createFileRoute('/learn/$pattern')({
   },
   component: ArticlePage,
   notFoundComponent: () => (
-    <main className="nb-page-wrap px-4 py-20 text-center">
-      <div className="nb-card mx-auto max-w-md bg-[var(--nb-pink)] p-8">
-        <p className="nb-display text-4xl">404</p>
-        <p className="mt-2 font-bold">Pattern not found</p>
-        <Link to="/learn" className="nb-btn mt-4 inline-block">← Back to Learn</Link>
+    <main className="mx-auto max-w-5xl px-4 py-20 text-center">
+      <div className="mx-auto max-w-md rounded-xl border border-[var(--border)] bg-[var(--secondary)] p-8">
+        <p className="text-4xl font-bold text-[var(--foreground)]">404</p>
+        <p className="mt-2 font-bold text-[var(--foreground)]">Pattern not found</p>
+        <Link to="/learn" className="mt-4 inline-flex items-center gap-2 rounded-lg bg-[var(--foreground)] px-4 py-2 text-sm font-medium text-[var(--background)] no-underline transition-opacity hover:opacity-90">← Back to Learn</Link>
       </div>
     </main>
   ),
@@ -73,7 +73,7 @@ function md(text: string) {
     // Inline math: $...$
     .replace(/\$([^$\n]+)\$/g, (_, tex) => renderKatex(tex.trim(), false))
     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-    .replace(/`([^`]+)`/g, '<code class="nb-inline-code">$1</code>')
+    .replace(/`([^`]+)`/g, '<code class="inline-code">$1</code>')
     .replace(/\n/g, '<br/>')
 }
 
@@ -81,18 +81,18 @@ function md(text: string) {
 
 function StickyCallout({ icon, color, content }: { icon: string; color: string; content: string }) {
   const bgMap: Record<string, string> = {
-    teal:  'bg-[var(--nb-teal)]',
-    green: 'bg-[var(--nb-green)]',
-    amber: 'bg-[var(--nb-yellow)]',
-    red:   'bg-[var(--nb-pink)]',
-    blue:  'bg-[var(--nb-blue)]',
-    gray:  'bg-[var(--nb-surface-strong)]',
+    teal:  'bg-[var(--success,#86efac)]/10 border-[var(--success,#86efac)]/20',
+    green: 'bg-[var(--success,#86efac)]/10 border-[var(--success,#86efac)]/20',
+    amber: 'bg-[var(--warning,#fcd34d)]/10 border-[var(--warning,#fcd34d)]/20',
+    red:   'bg-[var(--destructive,#fca5a5)]/10 border-[var(--destructive,#fca5a5)]/20',
+    blue:  'bg-[var(--primary,#3b82f6)]/10 border-[var(--primary,#3b82f6)]/20',
+    gray:  'bg-[var(--secondary)] border-[var(--border)]',
   }
   return (
-    <div className={`nb-sticky-note ${bgMap[color] ?? bgMap.gray} my-6`}>
+    <div className={`flex gap-3 rounded-xl border p-4 my-6 ${bgMap[color] ?? bgMap.gray}`}>
       <span className="mr-2 text-xl flex-shrink-0">{icon}</span>
       <div
-        className="flex-1 text-sm font-medium leading-relaxed whitespace-pre-wrap"
+        className="flex-1 text-sm font-medium leading-relaxed whitespace-pre-wrap text-[var(--foreground)]"
         dangerouslySetInnerHTML={{ __html: md(content) }}
       />
     </div>
@@ -103,17 +103,21 @@ function StickyCallout({ icon, color, content }: { icon: string; color: string; 
 
 function RecognitionTable({ headers, rows }: { headers: string[]; rows: string[][] }) {
   return (
-    <div className="nb-table-wrap my-6 overflow-x-auto">
+    <div className="my-6 overflow-x-auto">
       <table className="w-full border-collapse text-sm">
         <thead>
           <tr>
-            {headers.map(h => <th key={h} className="nb-th">{h}</th>)}
+            {headers.map(h => (
+              <th key={h} className="text-left text-xs font-semibold text-[var(--muted-foreground)] px-3 py-2 border-b border-[var(--border)]">{h}</th>
+            ))}
           </tr>
         </thead>
         <tbody>
           {rows.map((row, i) => (
-            <tr key={i} className={i % 2 === 0 ? 'bg-[var(--nb-surface)]' : 'bg-[var(--nb-surface-strong)]'}>
-              {row.map((cell, j) => <td key={j} className="nb-td font-medium">{cell}</td>)}
+            <tr key={i} className={i % 2 === 0 ? 'bg-[var(--background)]' : 'bg-[var(--secondary)]'}>
+              {row.map((cell, j) => (
+                <td key={j} className="px-3 py-2 text-sm text-[var(--foreground)] border-b border-[var(--border)] font-medium">{cell}</td>
+              ))}
             </tr>
           ))}
         </tbody>
@@ -125,31 +129,31 @@ function RecognitionTable({ headers, rows }: { headers: string[]; rows: string[]
 function IntuitionBlock({ intuition, idx }: { intuition: Intuition; idx: number }) {
   const [open, setOpen] = useState(false)
   const colors = [
-    'bg-[var(--nb-yellow)]',
-    'bg-[var(--nb-blue)]',
-    'bg-[var(--nb-green)]',
-    'bg-[var(--nb-pink)]',
+    'bg-[var(--warning,#fcd34d)]/20',
+    'bg-[var(--primary,#3b82f6)]/10',
+    'bg-[var(--success,#86efac)]/20',
+    'bg-[var(--destructive,#fca5a5)]/10',
   ]
   return (
-    <div className={`nb-card ${colors[idx % colors.length]} mb-3`}>
+    <div className={`rounded-xl border border-[var(--border)] ${colors[idx % colors.length]} mb-3`}>
       <button className="w-full text-left" onClick={() => setOpen(o => !o)}>
         <div className="flex items-start gap-3 p-4">
-          <span className="nb-intuition-badge mt-0.5 shrink-0">{idx + 1}</span>
+          <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--primary)] text-[10px] font-bold text-white mt-0.5">{idx + 1}</span>
           <div className="flex-1 min-w-0">
-            <p className="font-bold text-sm leading-snug">{intuition.label}</p>
-            <p className="mt-1 text-sm leading-relaxed" style={{ opacity: 0.8 }}>{intuition.explanation}</p>
+            <p className="font-bold text-sm leading-snug text-[var(--foreground)]">{intuition.label}</p>
+            <p className="mt-1 text-sm leading-relaxed text-[var(--muted-foreground)]">{intuition.explanation}</p>
           </div>
-          <span className="shrink-0 font-bold text-lg" style={{ transform: open ? 'rotate(90deg)' : 'none', display: 'inline-block', transition: 'transform 150ms' }}>
+          <span className="shrink-0 font-bold text-lg text-[var(--muted-foreground)]" style={{ transform: open ? 'rotate(90deg)' : 'none', display: 'inline-block', transition: 'transform 150ms' }}>
             ›
           </span>
         </div>
       </button>
       {open && intuition.code && (
-        <div className="border-t-2 border-[var(--nb-border-color)]">
+        <div className="border-t border-[var(--border)]">
           {intuition.codeCaption && (
-            <p className="px-4 pt-3 text-xs font-bold uppercase tracking-wider opacity-60">{intuition.codeCaption}</p>
+            <p className="px-4 pt-3 text-xs font-bold uppercase tracking-wider opacity-60 text-[var(--foreground)]">{intuition.codeCaption}</p>
           )}
-          <pre className="overflow-x-auto p-4 text-sm leading-relaxed" style={{ background: 'var(--nb-code-bg)', color: 'var(--nb-code-text)' }}>
+          <pre className="overflow-x-auto p-4 text-sm leading-relaxed rounded-b-xl" style={{ background: '#1a1a2e', color: '#e8f4fd' }}>
             <code>{intuition.code}</code>
           </pre>
         </div>
@@ -160,19 +164,19 @@ function IntuitionBlock({ intuition, idx }: { intuition: Intuition; idx: number 
 
 function ProblemCard({ section }: { section: Extract<Section, { type: 'problem' }> }) {
   const diffClass: Record<string, string> = {
-    easy: 'nb-diff-easy', medium: 'nb-diff-medium', hard: 'nb-diff-hard', 'n/a': '',
+    easy: 'diff-easy', medium: 'diff-medium', hard: 'diff-hard', 'n/a': '',
   }
   return (
-    <div className="nb-problem-card my-6">
+    <div className="my-6 rounded-xl border border-[var(--border)] bg-[var(--card)] overflow-hidden shadow-sm">
       {/* Header row */}
-      <div className="nb-problem-header">
-        <span className="nb-problem-num">{section.num}</span>
+      <div className="flex items-start gap-3 p-4 border-b border-[var(--border)] bg-[var(--secondary)]">
+        <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[var(--foreground)] text-xs font-bold text-[var(--background)]">{section.num}</span>
         <div className="flex-1 min-w-0">
-          <a href={section.url} target="_blank" rel="noopener noreferrer" className="nb-problem-title">
+          <a href={section.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[var(--foreground)] no-underline hover:text-[var(--primary)]">
             {section.title}
           </a>
           <div className="flex items-center gap-2 mt-1 flex-wrap">
-            <span className={`nb-diff-badge ${diffClass[section.difficulty.toLowerCase()] ?? ''}`}>
+            <span className={`inline-flex items-center rounded border px-1.5 py-0.5 text-[10px] font-bold ${diffClass[section.difficulty.toLowerCase()] ?? ''}`}>
               {section.difficulty}
             </span>
           </div>
@@ -182,30 +186,15 @@ function ProblemCard({ section }: { section: Extract<Section, { type: 'problem' 
           href={section.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="shrink-0 inline-flex items-center gap-1 px-3 py-1.5 text-xs font-800 font-bold border-2 rounded"
-          style={{
-            borderColor: 'var(--nb-yellow)',
-            color: 'var(--nb-yellow)',
-            background: 'transparent',
-            textDecoration: 'none',
-            whiteSpace: 'nowrap',
-            transition: 'background 120ms',
-          }}
-          onMouseEnter={e => {
-            (e.currentTarget as HTMLAnchorElement).style.background = 'var(--nb-yellow)'
-            ;(e.currentTarget as HTMLAnchorElement).style.color = 'var(--nb-ink)'
-          }}
-          onMouseLeave={e => {
-            (e.currentTarget as HTMLAnchorElement).style.background = 'transparent'
-            ;(e.currentTarget as HTMLAnchorElement).style.color = 'var(--nb-yellow)'
-          }}
+          className="shrink-0 inline-flex items-center gap-1 px-3 py-1.5 text-xs font-bold border rounded-lg text-[var(--foreground)] border-[var(--border)] no-underline transition-colors hover:bg-[var(--foreground)] hover:text-[var(--background)]"
+          style={{ whiteSpace: 'nowrap' }}
         >
           Solve ↗
         </a>
       </div>
 
       {section.note && (
-        <p className="px-4 py-2 text-xs font-bold uppercase tracking-wider border-b-2 border-[var(--nb-border-color)] opacity-70" style={{ background: 'var(--nb-surface)' }}>
+        <p className="px-4 py-2 text-xs font-bold uppercase tracking-wider border-b border-[var(--border)] opacity-70 text-[var(--foreground)]" style={{ background: 'var(--secondary)' }}>
           💬 {section.note}
         </p>
       )}
@@ -221,33 +210,33 @@ function ProblemCard({ section }: { section: Extract<Section, { type: 'problem' 
 
 function VariationCard({ section }: { section: Extract<Section, { type: 'variation' }> }) {
   return (
-    <div className="nb-card bg-[var(--nb-purple)] my-8">
-      <div className="p-5 border-b-2 border-[var(--nb-border-color)]">
-        <p className="nb-kicker mb-1">Variation Trick</p>
-        <h3 className="nb-heading-sm">{section.title}</h3>
+    <div className="rounded-xl border border-[var(--border)] bg-[var(--primary)]/5 my-8">
+      <div className="p-5 border-b border-[var(--border)]">
+        <p className="text-xs font-bold uppercase tracking-widest text-[var(--primary)] mb-1">Variation Trick</p>
+        <h3 className="text-base font-semibold text-[var(--foreground)]">{section.title}</h3>
       </div>
       <div className="p-5">
-        <p className="mb-3 text-xs font-bold uppercase tracking-wider opacity-60">Base template</p>
-        <pre className="nb-code-inline mb-5 overflow-x-auto p-4 text-sm leading-relaxed">
+        <p className="mb-3 text-xs font-bold uppercase tracking-wider opacity-60 text-[var(--foreground)]">Base template</p>
+        <pre className="rounded-lg border border-[var(--border)] mb-5 overflow-x-auto p-4 text-sm leading-relaxed" style={{ background: '#1a1a2e', color: '#e8f4fd' }}>
           <code>{section.baseCode}</code>
         </pre>
-        <p className="mb-3 text-xs font-bold uppercase tracking-wider opacity-60">Change only one line to solve:</p>
+        <p className="mb-3 text-xs font-bold uppercase tracking-wider opacity-60 text-[var(--foreground)]">Change only one line to solve:</p>
         <div className="space-y-3">
           {section.variants.map((v, i) => (
-            <div key={i} className="nb-card bg-[var(--nb-surface)] p-4">
+            <div key={i} className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-4">
               <div className="flex items-start justify-between gap-3">
                 <div className="flex-1 min-w-0">
-                  <p className="font-bold text-sm mb-1">{v.problem}</p>
-                  <div className="nb-code-inline px-3 py-1.5 text-xs font-mono mb-1.5">
+                  <p className="font-bold text-sm mb-1 text-[var(--foreground)]">{v.problem}</p>
+                  <div className="rounded border border-[var(--border)] px-3 py-1.5 text-xs font-mono mb-1.5 text-[var(--foreground)] bg-[var(--secondary)]">
                     {v.change}
                   </div>
-                  <p className="text-xs opacity-70">{v.why}</p>
+                  <p className="text-xs opacity-70 text-[var(--foreground)]">{v.why}</p>
                 </div>
                 <a
                   href={v.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="nb-btn nb-btn-sm shrink-0 no-underline"
+                  className="inline-flex items-center gap-1 rounded-lg bg-[var(--foreground)] px-3 py-1.5 text-xs font-medium text-[var(--background)] no-underline transition-opacity hover:opacity-90 shrink-0"
                 >
                   Solve ↗
                 </a>
@@ -281,22 +270,21 @@ function QuickOverview({ sections, topicSlug }: { sections: Section[]; topicSlug
   const hidden = problems.length - PREVIEW
 
   return (
-    <div className="nb-card bg-[var(--nb-surface)] mb-8 overflow-hidden">
+    <div className="rounded-xl border border-[var(--border)] bg-[var(--card)] mb-8 overflow-hidden shadow-sm">
       {/* Header */}
-      <div className="flex items-center justify-between px-5 py-4 border-b-2 border-[var(--nb-border-color)] bg-[var(--nb-ink)]">
+      <div className="flex items-center justify-between px-5 py-4 border-b border-[var(--border)] bg-[var(--secondary)]">
         <div>
-          <p className="text-xs font-black uppercase tracking-wider" style={{ color: 'var(--nb-yellow)' }}>
+          <p className="text-xs font-black uppercase tracking-wider text-[var(--foreground)]">
             Problems you can solve with this pattern
           </p>
-          <p className="text-xs mt-0.5" style={{ color: 'var(--nb-yellow)', opacity: 0.6 }}>
+          <p className="text-xs mt-0.5 text-[var(--muted-foreground)]">
             {problems.length} problems · click any to start solving
           </p>
         </div>
         <Link
           to="/problems/$topic"
           params={{ topic: topicSlug }}
-          className="nb-btn nb-btn-sm no-underline"
-          style={{ background: 'var(--nb-yellow)', color: 'var(--nb-ink)' }}
+          className="inline-flex items-center gap-1 rounded-lg bg-[var(--foreground)] px-3 py-1.5 text-xs font-medium text-[var(--background)] no-underline transition-opacity hover:opacity-90"
         >
           All {topicSlug.replace('_', ' ')} →
         </Link>
@@ -305,19 +293,19 @@ function QuickOverview({ sections, topicSlug }: { sections: Section[]; topicSlug
       <div className="lg:flex">
         {/* Problem list */}
         <div className="flex-1 min-w-0">
-          <div className="divide-y-2 divide-[var(--nb-border-color)]" style={{ borderColor: 'var(--nb-border-color)' }}>
+          <div className="divide-y divide-[var(--border)]">
             {visible.map((p) => (
-              <div key={p.num} className="flex items-center gap-3 px-4 py-3 hover:bg-[var(--nb-yellow)] transition-colors group">
-                <span className="shrink-0 w-6 text-center text-xs font-black" style={{ opacity: 0.4 }}>{p.num}</span>
-                <span className="flex-1 text-sm font-semibold truncate">{p.title}</span>
-                <span className={`nb-diff-badge nb-diff-${p.difficulty.toLowerCase()} shrink-0 text-[10px]`}>
+              <div key={p.num} className="flex items-center gap-3 px-4 py-3 hover:bg-[var(--secondary)] transition-colors group">
+                <span className="shrink-0 w-6 text-center text-xs font-black text-[var(--muted-foreground)]">{p.num}</span>
+                <span className="flex-1 text-sm font-semibold truncate text-[var(--foreground)]">{p.title}</span>
+                <span className={`inline-flex items-center rounded border px-1.5 py-0.5 text-[10px] font-bold shrink-0 diff-${p.difficulty.toLowerCase()}`}>
                   {p.difficulty}
                 </span>
                 <a
                   href={p.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="shrink-0 nb-btn nb-btn-sm no-underline"
+                  className="shrink-0 inline-flex items-center gap-1 rounded-lg bg-[var(--foreground)] px-2 py-1 text-[10px] font-medium text-[var(--background)] no-underline transition-opacity hover:opacity-90"
                   style={{ opacity: 0, transition: 'opacity 120ms' }}
                   onMouseEnter={e => (e.currentTarget.style.opacity = '1')}
                   onFocus={e => (e.currentTarget.style.opacity = '1')}
@@ -334,7 +322,7 @@ function QuickOverview({ sections, topicSlug }: { sections: Section[]; topicSlug
           {hidden > 0 && (
             <button
               onClick={() => setExpanded(e => !e)}
-              className="w-full py-3 px-4 text-sm font-bold border-t-2 border-[var(--nb-border-color)] hover:bg-[var(--nb-yellow)] transition-colors text-left"
+              className="w-full py-3 px-4 text-sm font-bold border-t border-[var(--border)] hover:bg-[var(--secondary)] transition-colors text-left text-[var(--foreground)]"
             >
               {expanded ? `↑ Show fewer` : `↓ Show ${hidden} more problems`}
             </button>
@@ -343,13 +331,13 @@ function QuickOverview({ sections, topicSlug }: { sections: Section[]; topicSlug
 
         {/* Template snippet — only shown on wider screens */}
         {templateSection && (
-          <div className="lg:w-80 xl:w-96 shrink-0 border-t-2 lg:border-t-0 lg:border-l-2 border-[var(--nb-border-color)]">
-            <div className="px-3 pt-3 pb-1 text-xs font-black uppercase tracking-wider opacity-50">
+          <div className="lg:w-80 xl:w-96 shrink-0 border-t lg:border-t-0 lg:border-l border-[var(--border)]">
+            <div className="px-3 pt-3 pb-1 text-xs font-black uppercase tracking-wider opacity-50 text-[var(--foreground)]">
               {templateSection.caption ?? 'Core Template'}
             </div>
             <pre
               className="overflow-x-auto p-3 text-xs leading-relaxed h-full"
-              style={{ background: 'var(--nb-code-bg)', color: 'var(--nb-code-text)', maxHeight: '280px' }}
+              style={{ background: '#1a1a2e', color: '#e8f4fd', maxHeight: '280px' }}
             >
               <code>{templateSection.code}</code>
             </pre>
@@ -366,10 +354,10 @@ function renderSection(section: Section, i: number) {
   switch (section.type) {
     case 'heading':
       return section.level === 2
-        ? <h2 key={i} className="nb-heading mt-10 mb-4">{section.text}</h2>
-        : <h3 key={i} className="nb-heading-sm mt-7 mb-3">{section.text}</h3>
+        ? <h2 key={i} className="text-2xl font-bold text-[var(--foreground)] mt-10 mb-4 border-b border-[var(--border)] pb-2">{section.text}</h2>
+        : <h3 key={i} className="text-base font-semibold text-[var(--foreground)] mt-7 mb-3">{section.text}</h3>
     case 'text':
-      return <p key={i} className="my-4 text-base leading-relaxed">{section.content}</p>
+      return <p key={i} className="my-4 text-base leading-relaxed text-[var(--foreground)]">{section.content}</p>
     case 'callout':
       return <StickyCallout key={i} icon={section.icon} color={section.color} content={section.content} />
     case 'code':
@@ -384,15 +372,15 @@ function renderSection(section: Section, i: number) {
       return (
         <ul key={i} className="my-4 space-y-2">
           {section.items.map((item, j) => (
-            <li key={j} className="flex items-start gap-2 text-sm">
-              <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[var(--nb-ink)] opacity-60" />
+            <li key={j} className="flex items-start gap-2 text-sm text-[var(--foreground)]">
+              <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[var(--primary)] opacity-60" />
               {item}
             </li>
           ))}
         </ul>
       )
     case 'divider':
-      return <hr key={i} className="my-8 border-t-2 border-[var(--nb-border-color)]" />
+      return <hr key={i} className="my-8 border-t border-[var(--border)]" />
     default:
       return null
   }
@@ -403,15 +391,15 @@ function renderSection(section: Section, i: number) {
 function ArticleNav({ currentSlug }: { currentSlug: string }) {
   return (
     <nav className="hidden xl:block w-56 shrink-0">
-      <div className="sticky top-24 nb-card bg-[var(--nb-surface)] p-4">
-        <p className="nb-kicker text-xs mb-3">All Patterns</p>
+      <div className="sticky top-24 rounded-xl border border-[var(--border)] bg-[var(--card)] p-4">
+        <p className="text-xs font-bold uppercase tracking-widest text-[var(--primary)] mb-3">All Patterns</p>
         <ul className="space-y-0.5">
           {articles.map(a => (
             <li key={a.slug}>
               <Link
                 to="/learn/$pattern"
                 params={{ pattern: a.slug }}
-                className={`flex items-center gap-2 rounded px-2 py-1.5 text-xs font-semibold no-underline transition-colors hover:bg-[var(--nb-yellow)] ${a.slug === currentSlug ? 'bg-[var(--nb-yellow)] font-black' : ''}`}
+                className={`flex items-center gap-2 rounded px-2 py-1.5 text-xs font-semibold no-underline transition-colors hover:bg-[var(--secondary)] hover:text-[var(--foreground)] text-[var(--muted-foreground)] ${a.slug === currentSlug ? 'bg-[var(--secondary)] text-[var(--foreground)] font-black' : ''}`}
               >
                 {(() => { const Icon = TOPIC_ICON[a.topicSlug] ?? Code2; return <Icon size={12} className="shrink-0 opacity-60" />; })()}
                 <span className="truncate">{a.title}</span>
@@ -430,14 +418,14 @@ function ArticlePage() {
   const article = Route.useLoaderData()
 
   return (
-    <main className="nb-page-wrap px-4 pb-20 pt-8">
+    <main className="mx-auto max-w-5xl px-4 pb-20 pt-8">
       {/* Breadcrumb */}
-      <div className="mb-6 flex items-center gap-2 text-xs font-bold uppercase tracking-wider opacity-60">
-        <Link to="/" className="no-underline hover:opacity-100">Home</Link>
+      <div className="mb-6 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[var(--muted-foreground)]">
+        <Link to="/" className="no-underline hover:text-[var(--foreground)]">Home</Link>
         <span>/</span>
-        <Link to="/learn" className="no-underline hover:opacity-100">Learn</Link>
+        <Link to="/learn" className="no-underline hover:text-[var(--foreground)]">Learn</Link>
         <span>/</span>
-        <span className="opacity-100">{article.title}</span>
+        <span className="text-[var(--foreground)]">{article.title}</span>
       </div>
 
       <div className="flex gap-8">
@@ -445,27 +433,26 @@ function ArticlePage() {
 
         <div className="min-w-0 flex-1">
           {/* Article hero */}
-          <div className="nb-card bg-[var(--nb-yellow)] mb-8 p-7 sm:p-10">
+          <div className="rounded-xl border border-[var(--border)] bg-[var(--warning,#fcd34d)]/20 mb-8 p-7 sm:p-10">
             <div className="flex items-start gap-4 flex-wrap sm:flex-nowrap">
-              {(() => { const Icon = TOPIC_ICON[article.topicSlug] ?? Code2; return <Icon size={40} className="shrink-0 opacity-80" />; })()}
+              {(() => { const Icon = TOPIC_ICON[article.topicSlug] ?? Code2; return <Icon size={40} className="shrink-0 opacity-70 text-[var(--foreground)]" />; })()}
               <div className="flex-1 min-w-0">
-                <p className="nb-kicker mb-1">Pattern Guide</p>
-                <h1 className="nb-display text-[clamp(1.6rem,4vw,2.8rem)] leading-tight mb-2">
+                <p className="text-xs font-bold uppercase tracking-widest text-[var(--primary)] mb-1">Pattern Guide</p>
+                <h1 className="text-[clamp(1.6rem,4vw,2.8rem)] font-bold leading-tight mb-2 text-[var(--foreground)]">
                   {article.title}
                 </h1>
-                <p className="text-sm font-bold italic mb-3" style={{ opacity: 0.7 }}>
+                <p className="text-sm font-bold italic mb-3 text-[var(--muted-foreground)]">
                   "{article.tagline}"
                 </p>
-                <p className="text-sm leading-relaxed max-w-2xl" style={{ opacity: 0.85 }}>
+                <p className="text-sm leading-relaxed max-w-2xl text-[var(--foreground)]" style={{ opacity: 0.85 }}>
                   {article.description}
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2 items-center">
-                  <span className="nb-chip bg-[var(--nb-surface)]">{article.readTime} read</span>
+                  <span className="inline-flex items-center rounded-full border border-[var(--border)] bg-[var(--card)] px-3 py-1 text-sm font-medium text-[var(--foreground)]">{article.readTime} read</span>
                   <Link
                     to="/problems/$topic"
                     params={{ topic: article.topicSlug }}
-                    className="nb-btn nb-btn-sm no-underline"
-                    style={{ background: 'var(--nb-ink)', color: 'var(--nb-yellow)' }}
+                    className="inline-flex items-center gap-2 rounded-lg bg-[var(--foreground)] px-4 py-2 text-sm font-medium text-[var(--background)] no-underline transition-opacity hover:opacity-90"
                   >
                     {article.topicSlug.replace('_', ' ')} problems →
                   </Link>
@@ -478,7 +465,7 @@ function ArticlePage() {
           <QuickOverview sections={article.sections} topicSlug={article.topicSlug} />
 
           {/* Article body */}
-          <div className="nb-article-body">
+          <div className="max-w-[760px]">
             {article.sections.map((section, i) => renderSection(section, i))}
           </div>
 
@@ -486,7 +473,7 @@ function ArticlePage() {
           <AllTopicProblems topicSlug={article.topicSlug} topicName={article.title} />
 
           {/* Footer nav */}
-          <div className="mt-12 flex gap-4 flex-wrap border-t-2 border-[var(--nb-border-color)] pt-8">
+          <div className="mt-12 flex gap-4 flex-wrap border-t border-[var(--border)] pt-8">
             {(() => {
               const idx = articles.findIndex(a => a.slug === article.slug)
               const prev = articles[idx - 1]
@@ -495,13 +482,13 @@ function ArticlePage() {
                 <>
                   {prev && (
                     <Link to="/learn/$pattern" params={{ pattern: prev.slug }}
-                      className="nb-btn nb-btn-outline flex-1 text-center no-underline min-w-[140px]">
+                      className="inline-flex items-center gap-2 rounded-lg border border-[var(--border)] bg-[var(--secondary)] px-4 py-2 text-sm font-medium text-[var(--foreground)] no-underline transition-colors hover:bg-[var(--card)] flex-1 text-center min-w-[140px]">
                       ← {prev.title}
                     </Link>
                   )}
                   {next && (
                     <Link to="/learn/$pattern" params={{ pattern: next.slug }}
-                      className="nb-btn flex-1 text-center no-underline min-w-[140px]">
+                      className="inline-flex items-center gap-2 rounded-lg bg-[var(--foreground)] px-4 py-2 text-sm font-medium text-[var(--background)] no-underline transition-opacity hover:opacity-90 flex-1 text-center min-w-[140px]">
                       {next.title} →
                     </Link>
                   )}
@@ -577,17 +564,17 @@ function AllTopicProblems({ topicSlug, topicName }: { topicSlug: string; topicNa
     if (!isNaN(n) && n < 1500) return 'text-green-600 dark:text-green-400'
     if (!isNaN(n) && n < 2200) return 'text-amber-600 dark:text-amber-400'
     if (!isNaN(n)) return 'text-red-600 dark:text-red-400'
-    return 'text-[var(--sea-ink-soft)]'
+    return 'text-[var(--muted-foreground)]'
   }
 
   if (!loading && problems.length === 0) return null
 
   return (
-    <div className="mt-16 border-t-2 border-[var(--nb-border-color)] pt-10">
+    <div className="mt-16 border-t border-[var(--border)] pt-10">
       <div className="mb-6 flex flex-wrap items-end gap-4">
         <div>
-          <h2 className="nb-heading">All {topicName} Problems</h2>
-          <p className="mt-1 text-sm text-[var(--sea-ink-soft)]">
+          <h2 className="text-2xl font-bold text-[var(--foreground)]">All {topicName} Problems</h2>
+          <p className="mt-1 text-sm text-[var(--muted-foreground)]">
             {loading ? 'Loading…' : `${problems.length.toLocaleString()} problems · ${groups.length} concept groups`}
           </p>
         </div>
@@ -597,9 +584,9 @@ function AllTopicProblems({ topicSlug, topicName }: { topicSlug: string; topicNa
               value={search}
               onChange={e => setSearch(e.target.value)}
               placeholder="Search problems…"
-              className="w-full rounded-xl border border-[var(--chip-line)] bg-[var(--chip-bg)] px-4 py-2 pl-9 text-sm text-[var(--sea-ink)] outline-none focus:border-[var(--lagoon)]"
+              className="w-full rounded-xl border border-[var(--border)] bg-[var(--secondary)] px-4 py-2 pl-9 text-sm text-[var(--foreground)] outline-none focus:border-[var(--primary)]"
             />
-            <svg className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[var(--sea-ink-soft)]" width="13" height="13" viewBox="0 0 16 16" fill="none">
+            <svg className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[var(--muted-foreground)]" width="13" height="13" viewBox="0 0 16 16" fill="none">
               <circle cx="7" cy="7" r="5.5" stroke="currentColor" strokeWidth="1.5"/>
               <path d="M11 11L14.5 14.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
             </svg>
@@ -608,46 +595,46 @@ function AllTopicProblems({ topicSlug, topicName }: { topicSlug: string; topicNa
       </div>
 
       {loading ? (
-        <div className="flex items-center gap-2 py-8 text-sm text-[var(--sea-ink-soft)]">
-          <span className="h-4 w-4 animate-spin rounded-full border-2 border-[var(--lagoon)] border-t-transparent" />
+        <div className="flex items-center gap-2 py-8 text-sm text-[var(--muted-foreground)]">
+          <span className="h-4 w-4 animate-spin rounded-full border-2 border-[var(--primary)] border-t-transparent" />
           Loading problems…
         </div>
       ) : groups.length === 0 ? (
-        <p className="py-8 text-center text-sm text-[var(--sea-ink-soft)]">No problems match "{search}"</p>
+        <p className="py-8 text-center text-sm text-[var(--muted-foreground)]">No problems match "{search}"</p>
       ) : (
         <div className="space-y-2">
           {groups.map(([concept, probs]) => {
             const isOpen = openGroups.has(concept)
             return (
-              <div key={concept} className="overflow-hidden rounded-xl border border-[var(--nb-border-color)]">
+              <div key={concept} className="overflow-hidden rounded-xl border border-[var(--border)]">
                 {/* Group header */}
                 <button
                   onClick={() => toggleGroup(concept)}
-                  className="flex w-full items-center gap-3 bg-[var(--nb-surface)] px-4 py-3 text-left transition-colors hover:bg-[var(--nb-surface-strong)]"
+                  className="flex w-full items-center gap-3 bg-[var(--secondary)] px-4 py-3 text-left transition-colors hover:bg-[var(--card)]"
                 >
-                  <span className="text-xs font-bold text-[var(--sea-ink-soft)]">{isOpen ? '▼' : '▶'}</span>
-                  <span className="flex-1 font-semibold text-[var(--nb-ink)]">{concept}</span>
-                  <span className="rounded-full bg-[var(--chip-bg)] px-2 py-0.5 text-[10px] font-bold text-[var(--sea-ink-soft)] border border-[var(--chip-line)]">
+                  <span className="text-xs font-bold text-[var(--muted-foreground)]">{isOpen ? '▼' : '▶'}</span>
+                  <span className="flex-1 font-semibold text-[var(--foreground)]">{concept}</span>
+                  <span className="rounded-full bg-[var(--card)] px-2 py-0.5 text-[10px] font-bold text-[var(--muted-foreground)] border border-[var(--border)]">
                     {probs.length}
                   </span>
                 </button>
 
                 {/* Problems list */}
                 {isOpen && (
-                  <div className="divide-y divide-[var(--line)] border-t border-[var(--nb-border-color)] bg-[var(--chip-bg)]">
+                  <div className="divide-y divide-[var(--border)] border-t border-[var(--border)] bg-[var(--background)]">
                     {probs.map((p, i) => (
                       <div key={i} className="flex items-center gap-3 px-4 py-2.5">
-                        <span className="w-5 shrink-0 text-center text-[10px] tabular-nums text-[var(--sea-ink-soft)]">{i + 1}</span>
+                        <span className="w-5 shrink-0 text-center text-[10px] tabular-nums text-[var(--muted-foreground)]">{i + 1}</span>
                         <div className="min-w-0 flex-1">
                           {p.url
                             ? <a href={p.url} target="_blank" rel="noopener noreferrer"
-                                className="block truncate text-sm font-medium text-[var(--sea-ink)] no-underline hover:text-[var(--lagoon-deep)]">
+                                className="block truncate text-sm font-medium text-[var(--foreground)] no-underline hover:text-[var(--primary)]">
                                 {p.name}
                               </a>
-                            : <span className="block truncate text-sm font-medium text-[var(--sea-ink)]">{p.name}</span>
+                            : <span className="block truncate text-sm font-medium text-[var(--foreground)]">{p.name}</span>
                           }
                         </div>
-                        <span className="shrink-0 text-[10px] font-bold text-[var(--sea-ink-soft)]">{p.platform}</span>
+                        <span className="shrink-0 text-[10px] font-bold text-[var(--muted-foreground)]">{p.platform}</span>
                         <span className={`shrink-0 text-[10px] font-bold ${diffColor(p.difficulty)}`}>{p.difficulty || '—'}</span>
                       </div>
                     ))}

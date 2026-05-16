@@ -19,7 +19,7 @@ export const Route = createFileRoute('/patterns/$pattern')({
       <div className="mx-auto max-w-md rounded-xl border border-[var(--border)] bg-[var(--secondary)] p-8">
         <p className="text-4xl font-bold text-[var(--foreground)]">404</p>
         <p className="mt-2 font-bold text-[var(--foreground)]">Pattern not found</p>
-        <Link to="/patterns" className="mt-4 inline-flex items-center gap-2 rounded-lg bg-[var(--primary)] px-4 py-2 text-sm font-medium text-[var(--primary-foreground)] no-underline transition-opacity hover:opacity-90">← Back to Patterns</Link>
+        <Link to="/patterns" className="mt-4 inline-flex items-center gap-2 rounded-lg bg-[var(--foreground)] px-4 py-2 text-sm font-medium text-[var(--background)] no-underline transition-opacity hover:opacity-90">← Back to Patterns</Link>
       </div>
     </main>
   ),
@@ -114,7 +114,7 @@ function ProblemCard({ section }: { section: Extract<Section, { type: 'problem' 
   return (
     <div className="my-6 rounded-xl border border-[var(--border)] bg-[var(--card)] overflow-hidden shadow-sm">
       <div className="flex items-start gap-3 p-4 border-b border-[var(--border)] bg-[var(--secondary)]">
-        <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[var(--primary)] text-xs font-bold text-[var(--primary-foreground)]">{section.num}</span>
+        <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[var(--foreground)] text-xs font-bold text-[var(--background)]">{section.num}</span>
         <div className="flex-1 min-w-0">
           <a href={section.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[var(--foreground)] no-underline hover:text-[var(--primary)]">
             {section.title}
@@ -129,7 +129,7 @@ function ProblemCard({ section }: { section: Extract<Section, { type: 'problem' 
           href={section.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="shrink-0 inline-flex items-center gap-1 px-3 py-1.5 text-xs font-bold border rounded-lg text-[var(--primary)] border-[var(--primary)] no-underline transition-colors hover:bg-[var(--primary)] hover:text-[var(--primary-foreground)]"
+          className="shrink-0 inline-flex items-center gap-1 px-3 py-1.5 text-xs font-bold border rounded-lg text-[var(--foreground)] border-[var(--border)] no-underline transition-colors hover:bg-[var(--foreground)] hover:text-[var(--background)]"
           style={{ whiteSpace: 'nowrap' }}
         >
           Solve ↗
@@ -345,7 +345,7 @@ function VariationBlogSection({
     <section className="mb-12">
       {/* Variation Header */}
       <div className="mb-6 flex items-center gap-4">
-        <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--primary)] text-lg font-black text-[var(--primary-foreground)]">
+        <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--foreground)] text-lg font-black text-[var(--background)]">
           {index + 1}
         </span>
         <div>
