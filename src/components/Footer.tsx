@@ -90,10 +90,10 @@ export default function Footer() {
 							</div>
 							<div>
 								<p className="text-lg font-black text-[var(--foreground)] tracking-tight">
-									frontendx
+									DSA Mastery
 								</p>
 								<p className="text-[10px] font-bold uppercase tracking-widest text-[var(--muted-foreground)]">
-									DSA Inventory
+									by frontendx
 								</p>
 							</div>
 						</Link>
@@ -132,7 +132,7 @@ export default function Footer() {
 
 				<div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-[var(--border)] pt-6 sm:flex-row">
 					<p className="text-sm text-[var(--muted-foreground)]">
-						© {year} frontendx. Built for DSA practice.
+						© {year} DSA Mastery. Built for DSA practice.
 					</p>
 					<div className="flex items-center gap-4">
 						<a

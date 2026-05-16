@@ -35,7 +35,7 @@ function HomePage() {
         <div className="ld-w ld-hero-inner">
           <Link to="/explore" className="ld-announce-badge">
             <span className="ld-announce-dot" />
-            Now with {totalProblems.toLocaleString()}+ problems
+            Now with {totalProblems.toLocaleString()}+ curated problems
             <span style={{ opacity: .55, marginLeft: 2 }}>→</span>
           </Link>
           <h1 className="ld-hero-title">

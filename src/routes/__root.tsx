@@ -32,7 +32,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
         content: 'width=device-width, initial-scale=1',
       },
       {
-        title: 'DSA Inventory — 31,945 problems across 14 topics',
+        title: 'DSA Mastery — 38,000+ problems across 14 topics',
       },
     ],
     links: [

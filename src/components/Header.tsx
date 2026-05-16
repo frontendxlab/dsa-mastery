@@ -23,7 +23,7 @@ export default function Header() {
               <span>fx</span>
             </div>
             <span className="hdr-logo-name">
-              frontendx<span className="hdr-logo-sub"> · DSA</span>
+              DSA Mastery
             </span>
           </RouterLink>
 

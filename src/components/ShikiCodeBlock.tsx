@@ -54,9 +54,13 @@ export function ShikiCodeBlock({ code, lang = 'javascript', caption }: ShikiCode
 
   if (!htmlLight) {
     return (
-      <div className="nb-code-block my-6">
-        {caption && <div className="nb-code-caption">{caption}</div>}
-        <pre className="overflow-x-auto p-4 text-sm leading-relaxed opacity-50">
+      <div className="my-6 overflow-hidden rounded-lg border border-[var(--border)]">
+        {caption && (
+          <div className="border-b border-[var(--border)] bg-[var(--secondary)] px-4 py-1.5 text-[11px] font-bold uppercase tracking-widest text-[var(--muted-foreground)]">
+            {caption}
+          </div>
+        )}
+        <pre className="overflow-x-auto p-4 text-sm leading-relaxed opacity-50 bg-[#1a1a2e] text-[#e8f4fd]">
           <code>{code}</code>
         </pre>
       </div>
@@ -64,13 +68,17 @@ export function ShikiCodeBlock({ code, lang = 'javascript', caption }: ShikiCode
   }
 
   return (
-    <div className="nb-code-block my-6">
-      {caption && <div className="nb-code-caption">{caption}</div>}
+    <div className="my-6 overflow-hidden rounded-lg border border-[var(--border)]">
+      {caption && (
+        <div className="border-b border-[var(--border)] bg-[var(--secondary)] px-4 py-1.5 text-[11px] font-bold uppercase tracking-widest text-[var(--muted-foreground)]">
+          {caption}
+        </div>
+      )}
       <div className="relative">
         <button
           type="button"
           onClick={copy}
-          className="absolute right-3 top-3 z-10 nb-chip bg-white text-xs py-1 px-2"
+          className="absolute right-3 top-3 z-10 inline-flex items-center rounded border border-[var(--border)] bg-[var(--card)] px-2 py-1 text-xs font-medium text-[var(--foreground)] transition-colors hover:bg-[var(--secondary)]"
         >
           {copied ? '✓ Copied' : 'Copy'}
         </button>
@@ -85,7 +93,6 @@ export function ShikiCodeBlock({ code, lang = 'javascript', caption }: ShikiCode
           .shiki-block-dark .shiki {
             margin: 0 !important;
             border-radius: 0 !important;
-            background: var(--nb-code-bg) !important;
           }
 
           .shiki-code-wrapper pre {
@@ -127,17 +134,21 @@ export function SimpleCodeBlock({ code, caption }: { code: string; caption?: str
   }
 
   return (
-    <div className="nb-code-block my-6">
-      {caption && <div className="nb-code-caption">{caption}</div>}
+    <div className="my-6 overflow-hidden rounded-lg border border-[var(--border)]">
+      {caption && (
+        <div className="border-b border-[var(--border)] bg-[var(--secondary)] px-4 py-1.5 text-[11px] font-bold uppercase tracking-widest text-[var(--muted-foreground)]">
+          {caption}
+        </div>
+      )}
       <div className="relative">
         <button
           type="button"
           onClick={copy}
-          className="absolute right-3 top-3 z-10 nb-chip bg-white text-xs py-1 px-2"
+          className="absolute right-3 top-3 z-10 inline-flex items-center rounded border border-[var(--border)] bg-[var(--card)] px-2 py-1 text-xs font-medium text-[var(--foreground)] transition-colors hover:bg-[var(--secondary)]"
         >
           {copied ? '✓ Copied' : 'Copy'}
         </button>
-        <pre className="overflow-x-auto p-4 pr-20 text-sm leading-relaxed">
+        <pre className="overflow-x-auto p-4 pr-20 text-sm leading-relaxed bg-[#1a1a2e] text-[#e8f4fd]">
           <code>{code}</code>
         </pre>
       </div>

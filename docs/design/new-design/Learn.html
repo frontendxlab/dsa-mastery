@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learn DSA — DSA Mastery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;scroll-behavior:smooth}
+:root{
+  --f:'Inter',system-ui,-apple-system,sans-serif;
+  --fm:'JetBrains Mono',ui-monospace,monospace;
+  --bg:#090a0e; --bg2:#0d0f19; --card:#111420; --hover:#181a2c;
+  --nav-bg:rgba(9,10,14,0.86);
+  --b:rgba(214,235,253,0.08); --b2:rgba(214,235,253,0.16);
+  --t:#e8eaf0; --t2:#7d8299; --t3:rgba(232,234,240,0.36);
+  --a:#3b9eff; --a-bg:rgba(59,158,255,0.10); --a-bdr:rgba(59,158,255,0.22); --a-glow:rgba(59,158,255,0.14);
+  --easy:#34d399; --easy-bg:rgba(52,211,153,0.10);
+  --med:#fbbf24; --med-bg:rgba(251,191,36,0.10);
+  --hard:#f87171; --hard-bg:rgba(248,113,113,0.10);
+  --sh:0 1px 3px rgba(0,0,0,.3),0 0 0 1px var(--b);
+  --r:8px; --rl:12px; --rp:9999px;
+}
+:root[data-theme="light"]{
+  --bg:#fafbff; --bg2:#f3f5fb; --card:#ffffff; --hover:#edf0f8;
+  --nav-bg:rgba(250,251,255,0.90);
+  --b:rgba(0,0,51,0.07); --b2:rgba(0,0,51,0.14);
+  --t:#0e0f14; --t2:#4b4f63; --t3:rgba(14,15,20,.40);
+  --a:#1a6de0; --a-bg:rgba(26,109,224,0.08); --a-bdr:rgba(26,109,224,0.22); --a-glow:rgba(26,109,224,0.10);
+  --easy:#059669; --easy-bg:rgba(5,150,105,0.10);
+  --med:#d97706; --med-bg:rgba(217,119,6,0.10);
+  --hard:#dc2626; --hard-bg:rgba(220,38,38,0.10);
+  --sh:0 1px 3px rgba(0,0,0,.06),0 0 0 1px var(--b);
+}
+body{font-family:var(--f);background:var(--bg);color:var(--t);line-height:1.6;min-height:100vh}
+.w{max-width:1200px;margin:0 auto;padding:0 24px}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;background:none;border:none;font-family:inherit;color:inherit}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;height:60px;background:var(--nav-bg);backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%);border-bottom:1px solid var(--b)}
+.nav-inner{height:100%;display:flex;align-items:center;gap:16px}
+.logo{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.logo-mark{display:flex;align-items:center;justify-content:center;width:28px;height:28px;background:var(--a);color:#fff;font-size:11px;font-weight:700;border-radius:7px;font-family:var(--fm);letter-spacing:-.5px;flex-shrink:0}
+.logo-mark.sm{width:22px;height:22px;font-size:9px;border-radius:5px}
+.logo-name{font-size:14px;font-weight:600;color:var(--t);letter-spacing:-.3px}
+.nav-links{display:flex;align-items:center;gap:2px;flex:1}
+.nav-link{padding:5px 12px;border-radius:6px;font-size:14px;font-weight:500;color:var(--t2);transition:all .15s}
+.nav-link:hover{background:var(--hover);color:var(--t)}
+.nav-link.act{background:var(--a-bg);color:var(--a)}
+.nav-end{display:flex;align-items:center;gap:4px;margin-left:auto}
+.icon-btn{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:var(--r);color:var(--t2);transition:all .15s}
+.icon-btn:hover{background:var(--hover);color:var(--t)}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:9px 18px;border-radius:var(--r);font-size:13px;font-weight:600;transition:all .15s;cursor:pointer;text-decoration:none;border:none;font-family:inherit;white-space:nowrap}
+.btn-primary{background:var(--a);color:#fff}
+.btn-primary:hover{filter:brightness(1.12);transform:translateY(-1px)}
+.btn-outline{background:transparent;color:var(--t);border:1px solid var(--b2)}
+.btn-outline:hover{background:var(--hover)}
+
+/* PAGE LAYOUT */
+.page{padding-top:100px;padding-bottom:80px}
+
+/* COURSE HERO */
+.course-hero{padding:52px 0 56px;border-bottom:1px solid var(--b)}
+.course-tag{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;background:var(--a-bg);border:1px solid var(--a-bdr);border-radius:var(--rp);font-size:11px;font-weight:600;color:var(--a);letter-spacing:.04em;text-transform:uppercase;margin-bottom:20px}
+.course-title{font-size:clamp(32px,5vw,52px);font-weight:700;letter-spacing:-.04em;line-height:1.08;color:var(--t);margin-bottom:14px}
+.course-subtitle{font-size:16px;color:var(--t2);max-width:540px;line-height:1.65;margin-bottom:28px}
+.course-meta{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.course-stat{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--t2)}
+.course-stat-val{font-weight:600;color:var(--t)}
+.course-stat-sep{width:3px;height:3px;border-radius:50%;background:var(--b2)}
+.progress-summary{display:flex;align-items:center;gap:10px;padding:12px 16px;background:var(--card);border:1px solid var(--b);border-radius:var(--r);margin-top:24px;max-width:480px}
+.progress-bar-wrap{flex:1;height:4px;background:var(--b2);border-radius:var(--rp);overflow:hidden}
+.progress-bar-fill{height:100%;background:var(--a);border-radius:var(--rp);transition:width .4s ease}
+.progress-text{font-size:12px;color:var(--t2);white-space:nowrap;font-weight:500}
+.progress-pct{font-size:12px;font-weight:700;color:var(--a);white-space:nowrap;font-family:var(--fm)}
+
+/* QUICK LINKS */
+.quick-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.quick-link{padding:6px 14px;background:var(--card);border:1px solid var(--b);border-radius:var(--r);font-size:13px;font-weight:500;color:var(--t2);transition:all .15s;cursor:pointer}
+.quick-link:hover{border-color:var(--b2);color:var(--t);background:var(--hover)}
+
+/* PARTS */
+.parts-list{display:flex;flex-direction:column;gap:0;margin-top:48px}
+
+.part-section{border:1px solid var(--b);border-radius:var(--rl);overflow:hidden;transition:border-color .15s}
+.part-section+.part-section{margin-top:10px}
+.part-section:hover{border-color:var(--b2)}
+
+.part-header{padding:20px 24px;display:flex;align-items:center;gap:16px;cursor:pointer;user-select:none;background:var(--card);transition:background .15s}
+.part-header:hover{background:var(--hover)}
+.part-number{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);font-family:var(--fm);flex-shrink:0;width:56px}
+.part-title-col{flex:1;min-width:0}
+.part-title{font-size:15px;font-weight:600;color:var(--t);letter-spacing:-.01em}
+.part-count{font-size:13px;color:var(--t2);margin-top:1px}
+.part-progress-mini{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.part-bar{width:80px;height:3px;background:var(--b2);border-radius:var(--rp);overflow:hidden;flex-shrink:0}
+.part-bar-fill{height:100%;background:var(--a);border-radius:var(--rp);transition:width .4s ease}
+.part-pct{font-size:11px;font-weight:600;color:var(--t3);font-family:var(--fm);width:30px;text-align:right;flex-shrink:0}
+.part-chevron{color:var(--t3);transition:transform .2s ease;flex-shrink:0;display:flex;align-items:center;margin-left:8px}
+.part-chevron.open{transform:rotate(180deg)}
+
+.part-chapters{background:var(--bg2);border-top:1px solid var(--b)}
+.chapter-row{display:flex;align-items:center;gap:14px;padding:11px 24px;border-bottom:1px solid var(--b);transition:background .15s;cursor:pointer;position:relative}
+.chapter-row:last-child{border-bottom:none}
+.chapter-row:hover{background:var(--hover)}
+.chapter-row:hover .chapter-open{opacity:1}
+.chapter-check{width:18px;height:18px;border-radius:4px;border:1px solid var(--b2);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .15s;cursor:pointer}
+.chapter-check.done{background:var(--a);border-color:var(--a)}
+.chapter-check.done svg{opacity:1}
+.chapter-check svg{opacity:0;transition:opacity .15s}
+.chapter-num{font-size:11px;font-weight:600;color:var(--t3);font-family:var(--fm);width:28px;flex-shrink:0;text-align:right}
+.chapter-emoji{font-size:15px;flex-shrink:0;width:22px;text-align:center}
+.chapter-info{flex:1;min-width:0}
+.chapter-title{font-size:14px;font-weight:500;color:var(--t);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transition:color .15s}
+.chapter-row:hover .chapter-title{color:var(--a)}
+.chapter-desc{font-size:12px;color:var(--t2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
+.chapter-meta{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.diff-badge{padding:2px 7px;border-radius:var(--rp);font-size:11px;font-weight:600;font-family:var(--fm)}
+.diff-easy{color:var(--easy);background:var(--easy-bg)}
+.diff-med{color:var(--med);background:var(--med-bg)}
+.diff-hard{color:var(--hard);background:var(--hard-bg)}
+.time-badge{font-size:11px;color:var(--t3);font-family:var(--fm);white-space:nowrap}
+.chapter-open{opacity:0;transition:opacity .15s;color:var(--t3);margin-left:4px;flex-shrink:0}
+
+/* FOOTER */
+.footer{border-top:1px solid var(--b);padding:40px 0 28px;margin-top:80px}
+.footer-bottom-row{display:flex;align-items:center;justify-content:space-between;font-size:12px;color:var(--t3)}
+.footer-gh{color:var(--t2);display:flex;transition:color .15s}.footer-gh:hover{color:var(--t)}
+
+@media(max-width:700px){.part-progress-mini{display:none}.chapter-desc{display:none}.nav-links{display:none}}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const { useState, useEffect, useCallback } = React;
+
+const PARTS = [
+  { num:'I',   roman:'I',   title:'Arrays & Pointers',              color:'#3b9eff', chapters:[
+    {n:1,  e:'👆', t:'Two Pointers',              d:'Prune half the search space at every step.',                diff:'easy', min:14},
+    {n:2,  e:'🪟', t:'Sliding Window',             d:'Turn O(n²) subarray loops into O(n).',                     diff:'easy', min:18},
+    {n:3,  e:'🔍', t:'Binary Search',              d:'Eliminate half the search space every step.',               diff:'easy', min:16},
+    {n:4,  e:'∑',  t:'Prefix Sum',                 d:'Precompute prefix sums. Any range query becomes O(1).',     diff:'easy', min:14},
+    {n:5,  e:'➕', t:'Two Sum Family',              d:'One element + its complement. HashMap stores what you\'ve seen.',diff:'easy',min:16},
+    {n:6,  e:'🔧', t:'Array Manipulation Tricks',  d:'Rotate with 3 reverses. Mark visited in-place.',           diff:'med',  min:14},
+    {n:7,  e:'🔧', t:'Difference Array & Range Updates',d:'Add delta to range [l,r] in O(1). Prefix sum to recover.',diff:'med',min:12},
+    {n:8,  e:'🧩', t:'Contribution Technique',     d:'Count how many times each element contributes.',           diff:'med',  min:14},
+    {n:9,  e:'🎯', t:'Binary Search on Answer',    d:'When you can check "is X achievable?" in O(f(n)).',        diff:'med',  min:16},
+    {n:10, e:'🔀', t:'Permutation Patterns',       d:'Next permutation, cycle decomposition, inversions.',       diff:'hard', min:15},
+    {n:11, e:'📝', t:'Word Break & String Segmentation',d:'Can we split a string into valid words?',             diff:'med',  min:15},
+    {n:12, e:'🧵', t:'Shortest Supersequence & LCS Duality',d:'SCS(s,t) = |s| + |t| - LCS(s,t).',              diff:'hard', min:13},
+    {n:13, e:'📊', t:"Kadane's Algorithm",         d:'Max subarray sum in O(n). Circular variant.',             diff:'easy', min:15},
+    {n:14, e:'👆', t:'Two Pointer Advanced',        d:'3Sum, 4Sum, remove duplicates, partition.',               diff:'med',  min:14},
+    {n:15, e:'🔃', t:'Cyclic Sort',                d:'Place each number at its correct index. Find missing in O(n) O(1).',diff:'easy',min:11},
+  ]},
+  { num:'II',  roman:'II',  title:'Linked Structures',               color:'#db2777', chapters:[
+    {n:16, e:'🔗', t:'Linked List',                d:'Dummy node. Slow/fast pointers. Reverse in-place.',        diff:'easy', min:18},
+    {n:17, e:'🌲', t:'Binary Tree Patterns',       d:'DFS/BFS templates. Level order. Path sums.',              diff:'easy', min:16},
+    {n:18, e:'🌲', t:'Advanced Tree Structures',   d:'Segment tree for range queries. Fenwick for prefix sums.', diff:'hard', min:20},
+    {n:19, e:'📊', t:'Sparse Table & Binary Lifting',d:'Precompute powers of 2. Answer range min/max in O(1).', diff:'hard', min:18},
+    {n:20, e:'🌳', t:'Segment Tree: Lazy Propagation',d:'Range update in O(log n). Defer the work.',           diff:'hard', min:20},
+    {n:21, e:'🔄', t:'Cycle Detection',            d:"Floyd's tortoise and hare. O(n) time, O(1) space.",       diff:'med',  min:14},
+    {n:22, e:'🌳', t:'Tree Construction from Traversals',d:'Preorder[0] = root. Inorder splits left/right.',  diff:'med',  min:16},
+    {n:23, e:'🌲', t:'Lowest Common Ancestor',     d:'Find common ancestor. Binary lifting O(n log n).',        diff:'hard', min:16},
+    {n:24, e:'🌳', t:'DSU on Tree',                d:'Heavy child inherits parent\'s data. O(n log n).',        diff:'hard', min:15},
+    {n:25, e:'🌐', t:'Tree Diameter & Path Queries',d:'Diameter via two BFS. Rerooting DP.',                   diff:'hard', min:14},
+  ]},
+  { num:'III', roman:'III', title:'Hashing & Auxiliary Structures',  color:'#0891b2', chapters:[
+    {n:33, e:'📦', t:'Heap & Priority Queue',      d:'O(log n) access to the min or max. Always.',              diff:'easy', min:14},
+    {n:34, e:'🌿', t:'Trie (Prefix Tree)',         d:'Fast prefix lookup. One character per level.',            diff:'med',  min:12},
+    {n:35, e:'📚', t:'Monotonic Stack & Queue',    d:'Next greater element in O(n). Sliding window max.',       diff:'med',  min:15},
+    {n:36, e:'#️⃣', t:'HashMap & Counting Patterns',d:'Trading time for space. One pass with a map.',          diff:'easy', min:16},
+    {n:37, e:'📚', t:'Stack & Queue Patterns',     d:'LIFO for matching/nesting. FIFO for BFS/order.',          diff:'easy', min:18},
+    {n:38, e:'🔢', t:'Counting Patterns',          d:'Count pairs, subarrays, paths.',                         diff:'med',  min:18},
+    {n:39, e:'🏆', t:'K-th Element Patterns',      d:'QuickSelect O(n), heap O(n log k), binary search.',       diff:'med',  min:16},
+    {n:40, e:'🪟', t:'Monotonic Queue',            d:'Sliding window max/min in O(1).',                        diff:'med',  min:15},
+    {n:41, e:'⚖️', t:'Two Heaps Pattern',          d:'Balance max-heap and min-heap to maintain median.',       diff:'med',  min:14},
+    {n:42, e:'🔗', t:'Bracket Sequences',          d:'Stack for matching. Count valid sequences. DP.',          diff:'easy', min:15},
+  ]},
+  { num:'IV',  roman:'IV',  title:'Core Algorithms',                 color:'#16a34a', chapters:[
+    {n:47, e:'🧠', t:'Dynamic Programming',        d:'Overlapping subproblems + optimal substructure = DP.',    diff:'hard', min:24},
+    {n:48, e:'🔄', t:'Backtracking',               d:'Try every option. Undo. Move on.',                       diff:'med',  min:16},
+    {n:49, e:'🤑', t:'Greedy Algorithms',          d:'Make the locally optimal choice.',                       diff:'med',  min:14},
+    {n:51, e:'🗺️', t:'Shortest Path Algorithms',  d:'Dijkstra non-negative. Bellman-Ford negatives. Floyd all-pairs.',diff:'hard',min:22},
+    {n:52, e:'🔢', t:'Bitmask DP',                 d:'Subsets as integers. 2^n states where n ≤ 20.',           diff:'hard', min:18},
+    {n:53, e:'⚔️', t:'Divide and Conquer',         d:'Split. Solve each half. Merge. Repeat until trivial.',   diff:'med',  min:18},
+    {n:54, e:'🎒', t:'Knapsack DP',                d:'Iterate backwards for 0/1. Forwards for unbounded.',      diff:'hard', min:18},
+    {n:55, e:'🕸️', t:'Advanced Graph: SCC & 2-SAT',d:"Tarjan finds SCCs, bridges, articulation points.",      diff:'hard', min:22},
+    {n:58, e:'📐', t:'Topological Sort',           d:'Order nodes so all edges point forward.',                diff:'med',  min:16},
+    {n:59, e:'🌲', t:'Minimum Spanning Tree',      d:'Connect all nodes with minimum total weight.',           diff:'med',  min:16},
+  ]},
+  { num:'V',   roman:'V',   title:'Strings, Sequences & Grid',       color:'#ea580c', chapters:[
+    {n:83, e:'📝', t:'String Algorithms',          d:'KMP, Z-algo, rolling hash — pattern matching in O(n).',  diff:'hard', min:20},
+    {n:85, e:'📈', t:'Sequences — LIS, LCS & More',d:'LIS in O(n log n). LCS from DP.',                      diff:'med',  min:18},
+    {n:86, e:'🔲', t:'Matrix & Shape Problems',    d:'Spiral traversal, rotation, 2D prefix sums.',           diff:'med',  min:16},
+    {n:87, e:'📝', t:'String DP',                  d:'dp[i][j] = answer for s1[0..i-1] and s2[0..j-1].',      diff:'hard', min:20},
+    {n:88, e:'🪞', t:'Palindrome Patterns',        d:'Expand from center, or DP on intervals.',               diff:'med',  min:16},
+    {n:90, e:'🔤', t:'Suffix Array & LCP Array',   d:'Sort all suffixes. Build LCP array.',                   diff:'hard', min:16},
+    {n:91, e:'🤖', t:'Aho-Corasick Automaton',     d:'Multi-pattern string matching in O(n + m + k).',        diff:'hard', min:16},
+    {n:93, e:'🪞', t:"Manacher's Algorithm",       d:'Find all palindromic substrings in O(n).',              diff:'hard', min:14},
+  ]},
+  { num:'VI',  roman:'VI',  title:'Math & Discrete',                  color:'#7c3aed', chapters:[
+    {n:99,  e:'🔢', t:'Math & Number Theory',      d:'GCD, primes, modular arithmetic.',                      diff:'med',  min:20},
+    {n:100, e:'⚡', t:'Bit Manipulation',           d:'XOR is your best friend. Masks are your toolkit.',      diff:'med',  min:15},
+    {n:101, e:'🎲', t:'Combinatorics & Counting',  d:'nCr, inclusion-exclusion, Catalan numbers.',            diff:'hard', min:16},
+    {n:102, e:'♟️', t:'Game Theory — Nim & Sprague-Grundy',d:'XOR determines the winner.',                   diff:'hard', min:14},
+    {n:103, e:'📐', t:'Computational Geometry',    d:'Cross products determine orientation. Convex hull.',    diff:'hard', min:16},
+    {n:107, e:'〰️', t:'FFT & Polynomial Multiplication',d:'Multiply polynomials in O(n log n).',             diff:'hard', min:18},
+  ]},
+  { num:'VII', roman:'VII', title:'Advanced Topics',                  color:'#d97706', chapters:[
+    {n:125, e:'🔢', t:'Linear Algebra & Matrix Exponentiation',d:'Speed up linear recurrences from O(n) to O(log n).',diff:'hard',min:18},
+    {n:128, e:'🔷', t:'Shapes & 2D Geometry',      d:'Triangles, rectangles, circles — every shape reduces to distance + area math.',diff:'med',min:14},
+    {n:130, e:'🏗️', t:'Design Data Structures',   d:'LRU, LFU, iterators — combine primitives for O(1) every operation.',diff:'hard',min:20},
+    {n:131, e:'📊', t:'Sorting Algorithms & Applications',d:'Non-comparison sorts beat O(n log n).',         diff:'med',  min:16},
+    {n:134, e:'🎲', t:'Randomized Algorithms',     d:'Random choices eliminate worst cases. Reservoir sampling.',diff:'med',min:13},
+  ]},
+  { num:'VIII',roman:'VIII',title:'Cross-Topic Deep Dives',           color:'#0d9488', chapters:[
+    {n:136, e:'🔀', t:'BFS vs DFS — When to Use Each',d:'Shortest path → BFS. Connected components → DFS.',  diff:'med',  min:20},
+    {n:137, e:'📏', t:'Interval Problems — Complete Guide',d:'Sort by start. Merge overlaps. Sweep with a heap.',diff:'hard',min:22},
+    {n:138, e:'🌳', t:'DP on Trees',               d:'Postorder + return value = tree DP.',                  diff:'hard', min:18},
+    {n:139, e:'🔗', t:'Union-Find (DSU)',           d:'Find the root. Union the sets. Near-constant time.',   diff:'med',  min:16},
+    {n:140, e:'🔟', t:'Digit DP',                  d:'Count integers in [0, N] satisfying a digit property.', diff:'hard', min:18},
+    {n:146, e:'🌳', t:'Fenwick Tree (BIT)',         d:'Range sum and point update in O(log n).',              diff:'med',  min:14},
+    {n:147, e:'🏋️', t:'Heavy-Light Decomposition', d:'Decompose tree into O(log n) chains.',                 diff:'hard', min:18},
+    {n:149, e:'🔲', t:"Mo's Algorithm",            d:'Sort offline queries to minimize total movement.',      diff:'hard', min:15},
+    {n:152, e:'✂️', t:'Divide & Conquer DP Optimization',d:'Reduce O(n²k) DP to O(nk log n).',             diff:'hard', min:16},
+    {n:154, e:'📚', t:'Persistent Segment Tree',   d:'Keep all historical versions. Query any past state.',  diff:'hard', min:16},
+    {n:158, e:'📉', t:'Slope Trick',               d:'Maintain piecewise-linear convex function via two heaps.',diff:'hard',min:15},
+  ]},
+];
+
+const GH = () => (
+  <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.164 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.343-3.369-1.343-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/>
+  </svg>
+);
+const Sun = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>;
+const Moon = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>;
+const Check = () => <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="#fff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="2,6 5,9 10,3"/></svg>;
+const Chevron = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><polyline points="6 9 12 15 18 9"/></svg>;
+const ArrowRight = () => <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>;
+
+function Nav({ dark, setDark }) {
+  return (
+    <nav className="nav">
+      <div className="nav-inner w">
+        <a href="Landing.html" className="logo">
+          <span className="logo-mark">fx</span>
+          <span className="logo-name">DSA Mastery</span>
+        </a>
+        <div className="nav-links">
+          <a href="Learn.html" className="nav-link act">Learn</a>
+          <a href="Explore.html" className="nav-link">Explore</a>
+          <a href="#" className="nav-link">Patterns</a>
+        </div>
+        <div className="nav-end">
+          <a href="https://github.com/rashidtvmr/dsa-inventory" className="icon-btn" target="_blank" rel="noreferrer"><GH /></a>
+          <button className="icon-btn" onClick={() => setDark(d => !d)}>{dark ? <Sun /> : <Moon />}</button>
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+function PartSection({ part, done, onToggle }) {
+  const [open, setOpen] = useState(part.num === 'I');
+  const doneCount = part.chapters.filter(c => done.has(c.n)).length;
+  const pct = Math.round((doneCount / part.chapters.length) * 100);
+
+  return (
+    <div className="part-section">
+      <div className="part-header" onClick={() => setOpen(o => !o)}>
+        <span className="part-number">Part {part.num}</span>
+        <div className="part-title-col">
+          <div className="part-title">{part.title}</div>
+          <div className="part-count">{part.chapters.length} chapters</div>
+        </div>
+        <div className="part-progress-mini">
+          <div className="part-bar"><div className="part-bar-fill" style={{width:`${pct}%`, background: part.color}} /></div>
+          <span className="part-pct">{pct}%</span>
+        </div>
+        <span className={`part-chevron${open ? ' open' : ''}`}><Chevron /></span>
+      </div>
+      {open && (
+        <div className="part-chapters">
+          {part.chapters.map(ch => {
+            const isDone = done.has(ch.n);
+            return (
+              <a key={ch.n} href="Article.html" className="chapter-row">
+                <div
+                  className={`chapter-check${isDone ? ' done' : ''}`}
+                  style={isDone ? {} : {}}
+                  onClick={e => { e.preventDefault(); onToggle(ch.n); }}
+                >
+                  <Check />
+                </div>
+                <span className="chapter-num">{ch.n}</span>
+                <span className="chapter-emoji">{ch.e}</span>
+                <div className="chapter-info">
+                  <div className="chapter-title">{ch.t}</div>
+                  <div className="chapter-desc">{ch.d}</div>
+                </div>
+                <div className="chapter-meta">
+                  <span className={`diff-badge diff-${ch.diff}`}>{ch.diff === 'easy' ? 'Easy' : ch.diff === 'med' ? 'Med' : 'Hard'}</span>
+                  <span className="time-badge">{ch.min} min</span>
+                </div>
+                <span className="chapter-open"><ArrowRight /></span>
+              </a>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function App() {
+  const [dark, setDark] = useState(() => {
+    try { return localStorage.getItem('dsam-theme') !== 'light'; } catch { return true; }
+  });
+  const [done, setDone] = useState(() => {
+    try {
+      const saved = localStorage.getItem('dsam-done');
+      return new Set(saved ? JSON.parse(saved) : [1, 2, 3, 13]);
+    } catch { return new Set([1, 2, 3, 13]); }
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+    try { localStorage.setItem('dsam-theme', dark ? 'dark' : 'light'); } catch {}
+  }, [dark]);
+
+  const toggleDone = useCallback((n) => {
+    setDone(prev => {
+      const next = new Set(prev);
+      next.has(n) ? next.delete(n) : next.add(n);
+      try { localStorage.setItem('dsam-done', JSON.stringify([...next])); } catch {}
+      return next;
+    });
+  }, []);
+
+  const total = PARTS.reduce((a, p) => a + p.chapters.length, 0);
+  const totalDone = PARTS.reduce((a, p) => a + p.chapters.filter(c => done.has(c.n)).length, 0);
+  const overallPct = Math.round((totalDone / total) * 100);
+
+  return (
+    <>
+      <Nav dark={dark} setDark={setDark} />
+      <div className="page">
+        <div className="w">
+          {/* HERO */}
+          <div className="course-hero">
+            <div className="course-tag">DSA Course — Complete Textbook</div>
+            <h1 className="course-title">Mastering DSA<br /><span style={{color:'var(--t3)'}}>Through Patterns</span></h1>
+            <p className="course-subtitle">8 parts · 170 chapters · 38k+ practice problems. Each chapter: brute force first, then the insight, then the optimal.</p>
+            <div className="course-meta">
+              {[{v:'8',l:'Parts'},{v:'170',l:'Chapters'},{v:'38k+',l:'Problems'},{v:total,l:'Total lessons'}].map((s,i) => (
+                <React.Fragment key={s.l}>
+                  {i>0 && <span className="course-stat-sep" />}
+                  <span className="course-stat"><span className="course-stat-val">{s.v}</span> {s.l}</span>
+                </React.Fragment>
+              ))}
+            </div>
+            <div className="progress-summary">
+              <div className="progress-bar-wrap">
+                <div className="progress-bar-fill" style={{width:`${overallPct}%`}} />
+              </div>
+              <span className="progress-text">{totalDone} / {total} chapters</span>
+              <span className="progress-pct">{overallPct}%</span>
+            </div>
+            <div style={{display:'flex',gap:12,marginTop:20,flexWrap:'wrap'}}>
+              <a href="Article.html" className="btn btn-primary">Continue Reading →</a>
+              <a href="#" className="btn btn-outline">Patterns Cheat Sheet</a>
+            </div>
+          </div>
+
+          {/* QUICK JUMP */}
+          <div style={{margin:'32px 0 0'}}>
+            <div style={{fontSize:12,fontWeight:600,letterSpacing:'.06em',textTransform:'uppercase',color:'var(--t3)',marginBottom:10}}>Jump to Part</div>
+            <div className="quick-links">
+              {PARTS.map(p => (
+                <span key={p.num} className="quick-link" onClick={() => document.querySelector(`[data-part="${p.num}"]`)?.scrollIntoView()}>
+                  {p.num} — {p.title}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* PARTS */}
+          <div className="parts-list">
+            {PARTS.map(p => (
+              <div key={p.num} data-part={p.num}>
+                <PartSection part={p} done={done} onToggle={toggleDone} />
+              </div>
+            ))}
+          </div>
+
+          {/* COMING SOON */}
+          <div style={{marginTop:16,padding:'20px 24px',background:'var(--card)',border:'1px solid var(--b)',borderRadius:'var(--rl)',textAlign:'center'}}>
+            <div style={{fontSize:13,fontWeight:600,color:'var(--t)',marginBottom:4}}>More chapters coming</div>
+            <div style={{fontSize:13,color:'var(--t2)'}}>Segment Trees, Network Flow, Number Theory deep dives — next up.</div>
+          </div>
+        </div>
+      </div>
+
+      <footer className="footer">
+        <div className="w footer-bottom-row">
+          <span>© 2026 frontendx. Built for DSA practice.</span>
+          <a href="https://github.com/rashidtvmr/dsa-inventory" target="_blank" rel="noreferrer" className="footer-gh"><GH /></a>
+        </div>
+      </footer>
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

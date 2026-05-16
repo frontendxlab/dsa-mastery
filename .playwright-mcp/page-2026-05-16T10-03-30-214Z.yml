@@ -1,0 +1,668 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - navigation [ref=e5]:
+        - generic [ref=e6]:
+          - img "Logo" [ref=e7]
+          - link "SKIPER-UI" [ref=e8] [cursor=pointer]:
+            - /url: /
+        - generic [ref=e9]:
+          - link "Pricing" [ref=e10] [cursor=pointer]:
+            - /url: /pricing
+          - link "Components" [ref=e11] [cursor=pointer]:
+            - /url: /components
+          - generic [ref=e12]:
+            - generic [ref=e13]:
+              - button "Command + K" [ref=e14] [cursor=pointer]:
+                - img [ref=e16]
+                - generic [ref=e18]: Command + K
+              - generic [ref=e19]:
+                - heading "Command Palette" [level=2] [ref=e20]
+                - paragraph [ref=e21]: Search for a command to run...
+            - button "Show Menu" [ref=e23] [cursor=pointer]:
+              - img [ref=e25]
+              - generic [ref=e30]: Show Menu
+      - list [ref=e31]:
+        - listitem [ref=e32] [cursor=pointer]:
+          - link "How to use [Use docs]" [ref=e33]:
+            - /url: /docs/quick-start
+            - generic [ref=e34]: How to use
+            - generic [ref=e35]: "[Use docs]"
+        - listitem [ref=e36] [cursor=pointer]:
+          - link "Pricing [free pro]" [ref=e37]:
+            - /url: /pricing
+            - generic [ref=e38]: Pricing
+            - generic [ref=e39]: "[free pro]"
+        - listitem [ref=e40] [cursor=pointer]:
+          - link "Components [All components]" [ref=e41]:
+            - /url: /components
+            - generic [ref=e42]: Components
+            - generic [ref=e43]: "[All components]"
+        - listitem [ref=e44] [cursor=pointer]:
+          - link "Get Support [hello@skiper-ui.com]" [ref=e45]:
+            - /url: mailto:hello@skiper-ui.com
+            - generic [ref=e46]: Get Support
+            - generic [ref=e47]: "[hello@skiper-ui.com]"
+        - listitem [ref=e48] [cursor=pointer]:
+          - link "Founder [gxuri]" [ref=e49]:
+            - /url: https://x.com/Gur__vi
+            - generic [ref=e50]: Founder
+            - generic [ref=e51]: "[gxuri]"
+        - listitem [ref=e52] [cursor=pointer]:
+          - link "Account [pro]" [ref=e53]:
+            - /url: /user
+            - generic [ref=e54]: Account
+            - generic [ref=e55]: "[pro]"
+        - listitem [ref=e56] [cursor=pointer]:
+          - button "Login Login" [ref=e57]:
+            - generic [ref=e58]: Login
+            - generic [ref=e59]: Login
+      - generic [ref=e60]:
+        - link "Privacy Policy" [ref=e61] [cursor=pointer]:
+          - /url: /docs/privacy-policy
+        - link "Terms of Service" [ref=e62] [cursor=pointer]:
+          - /url: /docs/terms-of-service
+      - generic [ref=e63]:
+        - generic [ref=e64]: FREE
+        - generic [ref=e65]: Not logged in
+    - main [ref=e66]:
+      - generic [ref=e68]:
+        - paragraph [ref=e69]: SKIPER UI'S
+        - generic [ref=e70]:
+          - heading "u u u u u u u" [level=1] [ref=e72]:
+            - generic [ref=e73]: u
+            - generic [ref=e74]: u
+            - generic [ref=e75]: u
+            - generic [ref=e76]: u
+            - generic [ref=e77]: u
+            - generic [ref=e78]: u
+            - generic [ref=e79]: u
+          - heading "n n n n n n n n" [level=1] [ref=e81]:
+            - generic [ref=e82]: "n"
+            - generic [ref=e83]: "n"
+            - generic [ref=e84]: "n"
+            - generic [ref=e85]: "n"
+            - generic [ref=e86]: "n"
+            - generic [ref=e87]: "n"
+            - generic [ref=e88]: "n"
+            - generic [ref=e89]: "n"
+          - heading "- - - - - - - - - -" [level=1] [ref=e91]:
+            - generic [ref=e92]: "-"
+            - generic [ref=e93]: "-"
+            - generic [ref=e94]: "-"
+            - generic [ref=e95]: "-"
+            - generic [ref=e96]: "-"
+            - generic [ref=e97]: "-"
+            - generic [ref=e98]: "-"
+            - generic [ref=e99]: "-"
+            - generic [ref=e100]: "-"
+            - generic [ref=e101]: "-"
+          - heading "c c c c c c c c c c c c c" [level=1] [ref=e103]:
+            - generic [ref=e104]: c
+            - generic [ref=e105]: c
+            - generic [ref=e106]: c
+            - generic [ref=e107]: c
+            - generic [ref=e108]: c
+            - generic [ref=e109]: c
+            - generic [ref=e110]: c
+            - generic [ref=e111]: c
+            - generic [ref=e112]: c
+            - generic [ref=e113]: c
+            - generic [ref=e114]: c
+            - generic [ref=e115]: c
+            - generic [ref=e116]: c
+          - heading "o o o o o o o o o o o o o o o o o o o o o o" [level=1] [ref=e118]:
+            - generic [ref=e119]: o
+            - generic [ref=e120]: o
+            - generic [ref=e121]: o
+            - generic [ref=e122]: o
+            - generic [ref=e123]: o
+            - generic [ref=e124]: o
+            - generic [ref=e125]: o
+            - generic [ref=e126]: o
+            - generic [ref=e127]: o
+            - generic [ref=e128]: o
+            - generic [ref=e129]: o
+            - generic [ref=e130]: o
+            - generic [ref=e131]: o
+            - generic [ref=e132]: o
+            - generic [ref=e133]: o
+            - generic [ref=e134]: o
+            - generic [ref=e135]: o
+            - generic [ref=e136]: o
+            - generic [ref=e137]: o
+            - generic [ref=e138]: o
+            - generic [ref=e139]: o
+            - generic [ref=e140]: o
+          - heading "m m m m m m m m m m m m m" [level=1] [ref=e142]:
+            - generic [ref=e143]: m
+            - generic [ref=e144]: m
+            - generic [ref=e145]: m
+            - generic [ref=e146]: m
+            - generic [ref=e147]: m
+            - generic [ref=e148]: m
+            - generic [ref=e149]: m
+            - generic [ref=e150]: m
+            - generic [ref=e151]: m
+            - generic [ref=e152]: m
+            - generic [ref=e153]: m
+            - generic [ref=e154]: m
+            - generic [ref=e155]: m
+          - heading "m m m m m m m m m m" [level=1] [ref=e157]:
+            - generic [ref=e158]: m
+            - generic [ref=e159]: m
+            - generic [ref=e160]: m
+            - generic [ref=e161]: m
+            - generic [ref=e162]: m
+            - generic [ref=e163]: m
+            - generic [ref=e164]: m
+            - generic [ref=e165]: m
+            - generic [ref=e166]: m
+            - generic [ref=e167]: m
+          - heading "o o o o o o o o" [level=1] [ref=e169]:
+            - generic [ref=e170]: o
+            - generic [ref=e171]: o
+            - generic [ref=e172]: o
+            - generic [ref=e173]: o
+            - generic [ref=e174]: o
+            - generic [ref=e175]: o
+            - generic [ref=e176]: o
+            - generic [ref=e177]: o
+          - heading "n n n n n n n" [level=1] [ref=e179]:
+            - generic [ref=e180]: "n"
+            - generic [ref=e181]: "n"
+            - generic [ref=e182]: "n"
+            - generic [ref=e183]: "n"
+            - generic [ref=e184]: "n"
+            - generic [ref=e185]: "n"
+            - generic [ref=e186]: "n"
+        - generic [ref=e187]:
+          - heading "c c c c c c" [level=1] [ref=e189]:
+            - generic [ref=e190]: c
+            - generic [ref=e191]: c
+            - generic [ref=e192]: c
+            - generic [ref=e193]: c
+            - generic [ref=e194]: c
+            - generic [ref=e195]: c
+          - heading "o o o o o o o" [level=1] [ref=e197]:
+            - generic [ref=e198]: o
+            - generic [ref=e199]: o
+            - generic [ref=e200]: o
+            - generic [ref=e201]: o
+            - generic [ref=e202]: o
+            - generic [ref=e203]: o
+            - generic [ref=e204]: o
+          - heading "m m m m m m m m" [level=1] [ref=e206]:
+            - generic [ref=e207]: m
+            - generic [ref=e208]: m
+            - generic [ref=e209]: m
+            - generic [ref=e210]: m
+            - generic [ref=e211]: m
+            - generic [ref=e212]: m
+            - generic [ref=e213]: m
+            - generic [ref=e214]: m
+          - heading "p p p p p p p p p p" [level=1] [ref=e216]:
+            - generic [ref=e217]: p
+            - generic [ref=e218]: p
+            - generic [ref=e219]: p
+            - generic [ref=e220]: p
+            - generic [ref=e221]: p
+            - generic [ref=e222]: p
+            - generic [ref=e223]: p
+            - generic [ref=e224]: p
+            - generic [ref=e225]: p
+            - generic [ref=e226]: p
+          - heading "o o o o o o o o o o o o o" [level=1] [ref=e228]:
+            - generic [ref=e229]: o
+            - generic [ref=e230]: o
+            - generic [ref=e231]: o
+            - generic [ref=e232]: o
+            - generic [ref=e233]: o
+            - generic [ref=e234]: o
+            - generic [ref=e235]: o
+            - generic [ref=e236]: o
+            - generic [ref=e237]: o
+            - generic [ref=e238]: o
+            - generic [ref=e239]: o
+            - generic [ref=e240]: o
+            - generic [ref=e241]: o
+          - heading "n n n n n n n n n n n n n n n n n n n n n n" [level=1] [ref=e243]:
+            - generic [ref=e244]: "n"
+            - generic [ref=e245]: "n"
+            - generic [ref=e246]: "n"
+            - generic [ref=e247]: "n"
+            - generic [ref=e248]: "n"
+            - generic [ref=e249]: "n"
+            - generic [ref=e250]: "n"
+            - generic [ref=e251]: "n"
+            - generic [ref=e252]: "n"
+            - generic [ref=e253]: "n"
+            - generic [ref=e254]: "n"
+            - generic [ref=e255]: "n"
+            - generic [ref=e256]: "n"
+            - generic [ref=e257]: "n"
+            - generic [ref=e258]: "n"
+            - generic [ref=e259]: "n"
+            - generic [ref=e260]: "n"
+            - generic [ref=e261]: "n"
+            - generic [ref=e262]: "n"
+            - generic [ref=e263]: "n"
+            - generic [ref=e264]: "n"
+            - generic [ref=e265]: "n"
+          - heading "e e e e e e e e e e e e e" [level=1] [ref=e267]:
+            - generic [ref=e268]: e
+            - generic [ref=e269]: e
+            - generic [ref=e270]: e
+            - generic [ref=e271]: e
+            - generic [ref=e272]: e
+            - generic [ref=e273]: e
+            - generic [ref=e274]: e
+            - generic [ref=e275]: e
+            - generic [ref=e276]: e
+            - generic [ref=e277]: e
+            - generic [ref=e278]: e
+            - generic [ref=e279]: e
+            - generic [ref=e280]: e
+          - heading "n n n n n n n n n n" [level=1] [ref=e282]:
+            - generic [ref=e283]: "n"
+            - generic [ref=e284]: "n"
+            - generic [ref=e285]: "n"
+            - generic [ref=e286]: "n"
+            - generic [ref=e287]: "n"
+            - generic [ref=e288]: "n"
+            - generic [ref=e289]: "n"
+            - generic [ref=e290]: "n"
+            - generic [ref=e291]: "n"
+            - generic [ref=e292]: "n"
+          - heading "t t t t t t t t" [level=1] [ref=e294]:
+            - generic [ref=e295]: t
+            - generic [ref=e296]: t
+            - generic [ref=e297]: t
+            - generic [ref=e298]: t
+            - generic [ref=e299]: t
+            - generic [ref=e300]: t
+            - generic [ref=e301]: t
+            - generic [ref=e302]: t
+          - heading "s s s s s s s" [level=1] [ref=e304]:
+            - generic [ref=e305]: s
+            - generic [ref=e306]: s
+            - generic [ref=e307]: s
+            - generic [ref=e308]: s
+            - generic [ref=e309]: s
+            - generic [ref=e310]: s
+            - generic [ref=e311]: s
+        - paragraph [ref=e312]: FOR SHADCN/UI
+        - generic [ref=e313]:
+          - generic [ref=e315] [cursor=pointer]:
+            - text: npx shadcn add @skiper-ui
+            - generic [ref=e316]: /skiper40
+          - link "Quick Start" [ref=e317] [cursor=pointer]:
+            - /url: /v1/skiper1
+            - generic [ref=e318]: Quick Start
+      - generic [ref=e321]:
+        - generic [ref=e323]:
+          - heading "103+ Outstanding components" [level=2] [ref=e324]:
+            - generic [ref=e325]: 103+
+            - generic [ref=e326]: Outstanding
+            - generic [ref=e327]: components
+          - paragraph [ref=e328]:
+            - generic [ref=e329]: No extra packages — just one file for each component,
+            - generic [ref=e330]: Use directly with your fav ShadCN CLI.
+        - generic [ref=e331]:
+          - generic [ref=e332] [cursor=pointer]:
+            - button "Premium Component" [ref=e335]:
+              - img [ref=e336]
+              - generic [ref=e339]: Premium Component
+            - link "Image reveal" [ref=e340]:
+              - /url: /v1/skiper71
+            - paragraph [ref=e342]: Image reveal
+          - generic [ref=e343] [cursor=pointer]:
+            - button "Premium Component" [ref=e346]:
+              - img [ref=e347]
+              - generic [ref=e350]: Premium Component
+            - link "Hover members" [ref=e351]:
+              - /url: /v1/skiper6
+            - paragraph [ref=e353]: Hover members
+          - generic [ref=e354] [cursor=pointer]:
+            - button "Premium Component" [ref=e357]:
+              - img [ref=e358]
+              - generic [ref=e361]: Premium Component
+            - link "Things drag and scroll" [ref=e362]:
+              - /url: /v1/skiper5
+            - paragraph [ref=e364]: Things drag and scroll
+          - generic [ref=e365] [cursor=pointer]:
+            - button "Premium Component" [ref=e368]:
+              - img [ref=e369]
+              - generic [ref=e372]: Premium Component
+            - link "Devouring details sign in" [ref=e373]:
+              - /url: /v1/skiper56
+            - paragraph [ref=e375]: Devouring details sign in
+          - generic [ref=e376] [cursor=pointer]:
+            - button "Free Component" [ref=e379]:
+              - img [ref=e380]
+              - generic [ref=e389]: Free Component
+            - link "Dynamic island" [ref=e390]:
+              - /url: /v1/skiper2
+            - paragraph [ref=e392]: Dynamic island
+          - generic [ref=e393] [cursor=pointer]:
+            - button "Premium Component" [ref=e396]:
+              - img [ref=e397]
+              - generic [ref=e400]: Premium Component
+            - link "Vercel Tooltip" [ref=e401]:
+              - /url: /v1/skiper43
+            - paragraph [ref=e403]: Vercel Tooltip
+          - generic [ref=e404] [cursor=pointer]:
+            - button "Premium Component" [ref=e407]:
+              - img [ref=e408]
+              - generic [ref=e411]: Premium Component
+            - link "Aave token swap" [ref=e412]:
+              - /url: /v1/skiper22
+            - paragraph [ref=e414]: Aave token swap
+          - generic [ref=e415] [cursor=pointer]:
+            - button "Premium Component" [ref=e418]:
+              - img [ref=e419]
+              - generic [ref=e422]: Premium Component
+            - link "Image cursor trail" [ref=e423]:
+              - /url: /v1/skiper18
+            - paragraph [ref=e425]: Image cursor trail
+        - link "Explore all components" [ref=e426] [cursor=pointer]:
+          - /url: /components
+          - text: Explore all components
+          - img [ref=e428]
+      - generic [ref=e430]:
+        - generic [ref=e432]:
+          - generic [ref=e433]:
+            - generic [ref=e435]: Devouring
+            - generic [ref=e436]: Details
+          - paragraph [ref=e437]:
+            - generic [ref=e438]: The platform's design is deeply inspired by Devouring
+            - generic [ref=e439]: Details by Rauno. Their lessons are truly another-level
+            - generic [ref=e440]: highly recommend checking them out if you want to
+            - generic [ref=e441]: sharpen your skills
+        - generic [ref=e442]:
+          - link "Devouring Details" [ref=e443] [cursor=pointer]:
+            - /url: https://devouringdetails.com/
+            - generic [ref=e444]: Devouring Details
+            - img [ref=e446]
+          - link "Rauno.me" [ref=e450] [cursor=pointer]:
+            - /url: https://rauno.me/
+            - generic [ref=e451]: Rauno.me
+            - img [ref=e453]
+      - generic [ref=e457]:
+        - generic [ref=e459]:
+          - heading "Skiper UI is Used by the finest in the industry" [level=2] [ref=e460]:
+            - generic [ref=e461]: Skiper
+            - generic [ref=e462]: UI
+            - generic [ref=e463]: is
+            - generic [ref=e464]: Used
+            - generic [ref=e465]: by
+            - generic [ref=e466]: the
+            - generic [ref=e467]: finest
+            - generic [ref=e468]: in
+            - generic [ref=e469]: the
+            - generic [ref=e470]: industry
+          - paragraph
+        - generic [ref=e471]:
+          - generic [ref=e472]:
+            - img [ref=e473]
+            - paragraph [ref=e475]: Diamond user
+            - img [ref=e476]
+          - link "Shadcnblocks.com" [ref=e478]:
+            - /url: https://shadcnblocks.com
+            - paragraph [ref=e479]: Shadcnblocks.com
+          - generic [ref=e480]:
+            - img [ref=e481]
+            - paragraph [ref=e483]: INSPIRED & LEGENDS
+            - img [ref=e484]
+          - generic [ref=e487]:
+            - generic [ref=e488]:
+              - link "Emil Kowalski" [ref=e489]:
+                - /url: https://x.com/emilkowalski_
+              - link "Benji Taylor" [ref=e490]:
+                - /url: https://x.com/benjitaylor
+              - link "Ben" [ref=e491]:
+                - /url: https://x.com/gobennovela
+              - link "Kumail Nanji" [ref=e492]:
+                - /url: https://x.com/KumailNanji
+              - link "Jakub" [ref=e493]:
+                - /url: https://x.com/jakubkrehel
+              - link "Rauno Freiberg" [ref=e494]:
+                - /url: https://x.com/raunofreiberg
+              - link "Mariana Castilho" [ref=e495]:
+                - /url: https://x.com/mrncst
+              - link "Rob Austin" [ref=e496]:
+                - /url: https://x.com/ausrobdev
+              - link "Lochie Axon" [ref=e497]:
+                - /url: https://x.com/lochieaxon
+              - link "Dennis Brotzky" [ref=e498]:
+                - /url: https://x.com/brotzky_
+              - link "dillion" [ref=e499]:
+                - /url: https://x.com/dillionverma
+              - link "Julien Thibeaut" [ref=e500]:
+                - /url: https://x.com/Ibelick
+              - link "Manu Arora" [ref=e501]:
+                - /url: https://x.com/mannupaaji
+              - link "Nitish Khagwal" [ref=e502]:
+                - /url: https://x.com/nitishkmrk
+              - link "Henry Heffernan" [ref=e503]:
+                - /url: https://x.com/henryheffernan
+            - generic [ref=e504]:
+              - link "Emil Kowalski" [ref=e505]:
+                - /url: https://x.com/emilkowalski_
+              - link "Benji Taylor" [ref=e506]:
+                - /url: https://x.com/benjitaylor
+              - link "Ben" [ref=e507]:
+                - /url: https://x.com/gobennovela
+              - link "Kumail Nanji" [ref=e508]:
+                - /url: https://x.com/KumailNanji
+              - link "Jakub" [ref=e509]:
+                - /url: https://x.com/jakubkrehel
+              - link "Rauno Freiberg" [ref=e510]:
+                - /url: https://x.com/raunofreiberg
+              - link "Mariana Castilho" [ref=e511]:
+                - /url: https://x.com/mrncst
+              - link "Rob Austin" [ref=e512]:
+                - /url: https://x.com/ausrobdev
+              - link "Lochie Axon" [ref=e513]:
+                - /url: https://x.com/lochieaxon
+              - link "Dennis Brotzky" [ref=e514]:
+                - /url: https://x.com/brotzky_
+              - link "dillion" [ref=e515]:
+                - /url: https://x.com/dillionverma
+              - link "Julien Thibeaut" [ref=e516]:
+                - /url: https://x.com/Ibelick
+              - link "Manu Arora" [ref=e517]:
+                - /url: https://x.com/mannupaaji
+              - link "Nitish Khagwal" [ref=e518]:
+                - /url: https://x.com/nitishkmrk
+              - link "Henry Heffernan" [ref=e519]:
+                - /url: https://x.com/henryheffernan
+            - generic [ref=e520]:
+              - link "Emil Kowalski" [ref=e521]:
+                - /url: https://x.com/emilkowalski_
+              - link "Benji Taylor" [ref=e522]:
+                - /url: https://x.com/benjitaylor
+              - link "Ben" [ref=e523]:
+                - /url: https://x.com/gobennovela
+              - link "Kumail Nanji" [ref=e524]:
+                - /url: https://x.com/KumailNanji
+              - link "Jakub" [ref=e525]:
+                - /url: https://x.com/jakubkrehel
+              - link "Rauno Freiberg" [ref=e526]:
+                - /url: https://x.com/raunofreiberg
+              - link "Mariana Castilho" [ref=e527]:
+                - /url: https://x.com/mrncst
+              - link "Rob Austin" [ref=e528]:
+                - /url: https://x.com/ausrobdev
+              - link "Lochie Axon" [ref=e529]:
+                - /url: https://x.com/lochieaxon
+              - link "Dennis Brotzky" [ref=e530]:
+                - /url: https://x.com/brotzky_
+              - link "dillion" [ref=e531]:
+                - /url: https://x.com/dillionverma
+              - link "Julien Thibeaut" [ref=e532]:
+                - /url: https://x.com/Ibelick
+              - link "Manu Arora" [ref=e533]:
+                - /url: https://x.com/mannupaaji
+              - link "Nitish Khagwal" [ref=e534]:
+                - /url: https://x.com/nitishkmrk
+              - link "Henry Heffernan" [ref=e535]:
+                - /url: https://x.com/henryheffernan
+            - generic [ref=e536]:
+              - link "Emil Kowalski" [ref=e537]:
+                - /url: https://x.com/emilkowalski_
+              - link "Benji Taylor" [ref=e538]:
+                - /url: https://x.com/benjitaylor
+              - link "Ben" [ref=e539]:
+                - /url: https://x.com/gobennovela
+              - link "Kumail Nanji" [ref=e540]:
+                - /url: https://x.com/KumailNanji
+              - link "Jakub" [ref=e541]:
+                - /url: https://x.com/jakubkrehel
+              - link "Rauno Freiberg" [ref=e542]:
+                - /url: https://x.com/raunofreiberg
+              - link "Mariana Castilho" [ref=e543]:
+                - /url: https://x.com/mrncst
+              - link "Rob Austin" [ref=e544]:
+                - /url: https://x.com/ausrobdev
+              - link "Lochie Axon" [ref=e545]:
+                - /url: https://x.com/lochieaxon
+              - link "Dennis Brotzky" [ref=e546]:
+                - /url: https://x.com/brotzky_
+              - link "dillion" [ref=e547]:
+                - /url: https://x.com/dillionverma
+              - link "Julien Thibeaut" [ref=e548]:
+                - /url: https://x.com/Ibelick
+              - link "Manu Arora" [ref=e549]:
+                - /url: https://x.com/mannupaaji
+              - link "Nitish Khagwal" [ref=e550]:
+                - /url: https://x.com/nitishkmrk
+              - link "Henry Heffernan" [ref=e551]:
+                - /url: https://x.com/henryheffernan
+        - generic [ref=e552]:
+          - img [ref=e553]
+          - paragraph [ref=e555]: TOOLS & STACK
+          - img [ref=e556]
+        - generic [ref=e558]:
+          - link "Tailwind css" [ref=e559]:
+            - /url: http://tailwindcss.com/
+            - img "Tailwind css" [ref=e560]
+          - link "Next.js" [ref=e561]:
+            - /url: http://nextjs.org/
+            - paragraph [ref=e562]: Next.js
+          - link "Motion.dev" [ref=e563] [cursor=pointer]:
+            - /url: http://motion.dev/
+            - paragraph [ref=e564]: Motion.dev
+          - link "V0.app" [ref=e565]:
+            - /url: https://www.v0.app/
+            - img [ref=e566]
+        - img [ref=e569]
+        - generic [ref=e571] [cursor=pointer]:
+          - paragraph [ref=e572]: Skiper is made possible thanks to all mentioned above
+          - link "be a part" [ref=e573]:
+            - /url: /pricing
+            - text: be a part
+            - img [ref=e575]
+      - generic [ref=e577]:
+        - generic [ref=e579]:
+          - heading "New Rare Templates" [level=2] [ref=e580]:
+            - generic [ref=e581]: New
+            - generic [ref=e582]: Rare
+            - generic [ref=e583]: Templates
+          - paragraph [ref=e584]:
+            - generic [ref=e585]: Get figma + Next js fully coded portfolio with just
+            - generic [ref=e586]: one subscription Coming Soon
+        - img [ref=e589]
+        - region [ref=e593]:
+          - generic [ref=e595]:
+            - group [ref=e596]
+            - group [ref=e599]
+            - group [ref=e602]
+            - group [ref=e605]
+        - generic [ref=e609] [cursor=pointer]:
+          - text: Coming soon
+          - img [ref=e611]
+      - generic [ref=e613]:
+        - generic [ref=e615]:
+          - heading "Just One-time payment no Subscription" [level=2] [ref=e616]:
+            - generic [ref=e617]: Just
+            - generic [ref=e618]: One-time
+            - generic [ref=e619]: payment
+            - generic [ref=e620]: "no"
+            - generic [ref=e621]: Subscription
+          - paragraph
+        - generic [ref=e622]:
+          - generic [ref=e625]:
+            - generic [ref=e626]:
+              - paragraph [ref=e627]: Premium
+              - heading "$129" [level=3] [ref=e628]
+              - list [ref=e629]:
+                - listitem [ref=e630]:
+                  - img [ref=e631]
+                  - paragraph [ref=e644]: All Premium components
+                - listitem [ref=e645]:
+                  - img [ref=e646]
+                  - paragraph [ref=e651]: Early access
+                - listitem [ref=e652]:
+                  - img [ref=e653]
+                  - paragraph [ref=e655]: Component Request
+                - listitem [ref=e656]:
+                  - img [ref=e657]
+                  - paragraph [ref=e660]: Free Lifetime updates
+                - listitem [ref=e661]:
+                  - img [ref=e662]
+                  - paragraph [ref=e665]: Skiper pro badge
+            - button "Get Instant access" [ref=e666] [cursor=pointer]
+          - generic [ref=e668]:
+            - generic [ref=e669]:
+              - paragraph [ref=e670]: Exclusive
+              - heading "$549" [level=3] [ref=e671]
+              - list [ref=e672]:
+                - listitem [ref=e673]:
+                  - img [ref=e674]
+                  - paragraph [ref=e687]: All Premium components
+                - listitem [ref=e688]:
+                  - img [ref=e689]
+                  - paragraph [ref=e694]: Early access
+                - listitem [ref=e695]:
+                  - img [ref=e696]
+                  - paragraph [ref=e698]: Component Request
+                - listitem [ref=e699]:
+                  - img [ref=e700]
+                  - paragraph [ref=e703]: Free Lifetime updates
+                - listitem [ref=e704]:
+                  - img [ref=e705]
+                  - paragraph [ref=e708]: Skiper pro badge
+                - listitem [ref=e709]:
+                  - img [ref=e710]
+                  - paragraph [ref=e716]: Figma file
+                - listitem [ref=e717]:
+                  - img [ref=e718]
+                  - paragraph [ref=e720]: Full Website templates
+            - button "Coming Soon" [ref=e721] [cursor=pointer]
+      - generic [ref=e722]:
+        - generic [ref=e723]:
+          - paragraph [ref=e725]: JOIN US
+          - generic [ref=e726]:
+            - heading "Get your Skiper UI's Pro badge now" [level=2] [ref=e727]:
+              - generic [ref=e728]: Get
+              - generic [ref=e729]: your
+              - generic [ref=e730]: Skiper
+              - generic [ref=e731]: UI's
+              - generic [ref=e732]: Pro
+              - generic [ref=e733]: badge
+              - generic [ref=e734]: now
+            - paragraph
+        - link "the-skiper-ui-logo" [ref=e736] [cursor=pointer]:
+          - /url: /pricing
+          - generic [ref=e737]:
+            - img [ref=e738]
+            - img "the-skiper-ui-logo" [ref=e750]
+        - generic [ref=e753]:
+          - text: Design and Developed by
+          - link "©Gxuri" [ref=e754] [cursor=pointer]:
+            - /url: https://x.com/Gur__vi
+            - text: ©Gxuri
+            - img [ref=e755]
+  - region "Notifications alt+T"
+  - alert [ref=e757]

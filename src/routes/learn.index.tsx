@@ -43,42 +43,42 @@ export const Route = createFileRoute('/learn/')({ component: LearnPage })
 const BOOK: { part: string; color: string; chapters: string[] }[] = [
   {
     part: 'Part I — Arrays & Pointers',
-    color: 'var(--nb-teal)',
+    color: 'oklch(0.82 0.096 191 / 40%)',
     chapters: ['two-pointers', 'sliding-window', 'binary-search', 'prefix-sum', 'two-sum-family', 'array-tricks', 'difference-array', 'contribution-technique', 'binary-search-answer', 'permutation-patterns', 'word-break-variants', 'shortest-supersequence', 'kadane-variants', 'two-pointer-advanced', 'cyclic-sort', 'array-rotation', 'next-permutation'],
   },
   {
     part: 'Part II — Linked Structures',
-    color: 'var(--nb-blue)',
+    color: 'oklch(0.72 0.112 240 / 30%)',
     chapters: ['linked-list', 'trees', 'advanced-trees', 'sparse-table', 'segment-tree-lazy', 'cycle-detection', 'tree-construction', 'lca', 'dsu-on-tree', 'tree-diameter', 'offline-lca', 'tree-isomorphism', 'persistent-union-find', 'binary-lifting', 'segment-tree-basics', 'tree-path-problems', 'iterative-traversal', 'bst-operations', 'linked-list-reversal', 'tree-level-order', 'tree-general-dp'],
   },
   {
     part: 'Part III — Hashing & Auxiliary Structures',
-    color: 'var(--nb-purple)',
+    color: 'oklch(0.75 0.112 290 / 30%)',
     chapters: ['heap', 'trie', 'monotonic-stack', 'hashmap-patterns', 'stack-queue', 'counting-patterns', 'kth-element', 'monotonic-queue', 'two-heaps', 'bracket-sequences', 'amortized-patterns', 'expression-parsing', 'trie-xor', 'k-way-merge'],
   },
   {
     part: 'Part IV — Core Algorithms',
-    color: 'var(--nb-green)',
+    color: 'oklch(0.85 0.104 145 / 40%)',
     chapters: ['dynamic-programming', 'backtracking', 'greedy', 'graph', 'shortest-path', 'bitmask-dp', 'divide-conquer', 'knapsack-dp', 'graph-advanced', 'bipartite', 'coordinate-compression', 'topological-sort', 'minimum-spanning-tree', 'network-flow', 'meet-in-middle', 'convex-hull-trick', 'centroid-decomposition', 'line-sweep', 'two-sat', 'bridges-articulation', 'min-cost-flow', 'flow-lower-bounds', 'bidirectional-bfs', 'a-star-search', 'difference-constraints', 'functional-graphs', 'matching-flow', 'graph-coloring', 'topk-streaming', 'strongly-connected-components', 'graph-state-space', 'greedy-intervals', 'constructive-algorithms', 'backtracking-pruning', 'multi-source-bfs', 'grid-islands', 'graph-bellman-ford', 'jump-game-variants', 'union-find-applications', 'greedy-strings', 'graph-coloring-bipartite', 'floyd-warshall'],
   },
   {
     part: 'Part V — Strings, Sequences & Grid',
-    color: 'var(--nb-orange)',
+    color: 'oklch(0.82 0.112 60 / 40%)',
     chapters: ['string-algorithms', 'string-matching', 'sequences', 'matrix', 'string-dp', 'palindrome-patterns', 'string-hashing', 'suffix-array', 'aho-corasick', 'z-function', 'manachers', 'suffix-automaton', 'palindrome-automaton', 'string-rotations', 'lyndon-factorization', 'string-construction', 'string-decode-patterns', 'string-parsing'],
   },
   {
     part: 'Part VI — Math & Discrete',
-    color: 'var(--nb-pink)',
+    color: 'oklch(0.82 0.112 355 / 30%)',
     chapters: ['math', 'bit-manipulation', 'combinatorics', 'game-theory', 'geometry', 'number-theory', 'probability-dp', 'ternary-search', 'fft', 'sprague-grundy', 'chinese-remainder', 'convex-hull', 'inclusion-exclusion', 'catalan-numbers', 'josephus', 'sieve-variants', 'burnside-lemma', 'gray-code', 'gaussian-gf2', 'lucas-theorem', 'lattice-paths', 'advanced-counting-dp', 'rotating-calipers', 'carry-dp', 'random-walk', 'number-tricks', 'bit-counting'],
   },
   {
     part: 'Part VII — Advanced Topics',
-    color: 'var(--nb-yellow)',
+    color: 'oklch(0.88 0.104 90 / 40%)',
     chapters: ['linear-algebra', 'numerical-methods', 'scheduling', 'shapes', 'miscellaneous', 'design-patterns', 'sorting-algorithms', 'simulation', 'matrix-exponentiation', 'randomized-algorithms', 'multiset-ordered-set', 'lru-lfu-cache', 'matrix-operations'],
   },
   {
     part: 'Part VIII — Cross-Topic Deep Dives',
-    color: 'var(--nb-red)',
+    color: 'oklch(0.72 0.144 25 / 20%)',
     chapters: ['bfs-vs-dfs', 'interval-problems', 'dp-on-trees', 'union-find', 'digit-dp', 'interval-dp', 'grid-dp', 'state-machine-dp', 'recursion-memoization', 'grid-patterns', 'fenwick-tree', 'heavy-light-decomposition', 'euler-tour', 'mo-algorithm', 'xor-basis', 'euler-path', 'divide-conquer-dp', 'sqrt-decomposition', 'persistent-segment-tree', 'treap', 'offline-cdq', 'bitset-operations', 'slope-trick', 'segment-tree-beats', 'balanced-dp', 'profile-dp', 'aliens-trick', 'arithmetic-dp', 'subsequence-counting', 'sliding-window-advanced', 'two-d-prefix-sum', 'dp-with-deque', 'stock-trading', 'dp-space-optimization', 'string-window-patterns', 'wildcard-regex', 'counting-subarrays', 'dp-palindromes', 'trapping-rainwater', 'matrix-chain', 'stone-game-dp', 'hash-prefix-problems'],
   },
 ]
@@ -92,7 +92,7 @@ function LearnPage() {
   const articleMap = Object.fromEntries(articles.map(a => [a.slug, a]))
 
   return (
-    <main className="nb-page-wrap px-4 pb-20 pt-10 sm:pt-14">
+    <main className="mx-auto max-w-7xl px-4 pb-20 pt-10 sm:pt-14">
 
       {/* ── Book cover ───────────────────────────────────────────── */}
       <section className="mb-10 rounded-2xl border border-[var(--border)] bg-gradient-to-br from-[var(--surface)] to-[var(--surface-secondary)] p-8 sm:p-12">

@@ -357,7 +357,7 @@ function PatternCard({ pattern: p, delay }: { pattern: Pattern; delay: number })
       {/* Template code */}
       <div className="relative flex-1">
         <pre
-          className={`overflow-hidden bg-[var(--nb-code-bg,#1a1a2e)] px-4 py-3 font-mono text-[11px] leading-relaxed text-[#e8f4fd] transition-all ${expanded ? 'max-h-none' : 'max-h-40'}`}
+          className={`overflow-hidden bg-[#1a1a2e] px-4 py-3 font-mono text-[11px] leading-relaxed text-[#e8f4fd] transition-all ${expanded ? 'max-h-none' : 'max-h-40'}`}
         >
           <code>{p.template}</code>
         </pre>

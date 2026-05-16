@@ -353,6 +353,8 @@ function QuickOverview({ sections, topicSlug }: { sections: Section[]; topicSlug
 function renderSection(section: Section, i: number) {
   switch (section.type) {
     case 'heading':
+      // Hide "Worked Problems" headings — article is a shared guide, not a personal log
+      if (/worked\s+problem/i.test(section.text ?? '')) return null
       return section.level === 2
         ? <h2 key={i} className="text-2xl font-bold text-[var(--foreground)] mt-10 mb-4 border-b border-[var(--border)] pb-2">{section.text}</h2>
         : <h3 key={i} className="text-base font-semibold text-[var(--foreground)] mt-7 mb-3">{section.text}</h3>
