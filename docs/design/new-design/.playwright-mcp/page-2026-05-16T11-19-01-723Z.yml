@@ -1,0 +1,901 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: fx
+        - generic [ref=e7]: DSA Mastery
+      - generic [ref=e8]:
+        - 'button "Theme mode: dark. Click to switch mode." [ref=e72]': Dark
+        - link "GitHub" [ref=e10] [cursor=pointer]:
+          - /url: https://github.com/rashidtvmr/dsa-inventory
+          - img [ref=e11]
+        - button "Toggle menu" [ref=e14] [cursor=pointer]:
+          - img [ref=e15]
+  - generic [ref=e73]:
+    - button "Chapters" [ref=e74] [cursor=pointer]:
+      - img [ref=e75]
+      - generic [ref=e76]: Chapters
+    - main [ref=e77]:
+      - generic [ref=e78]:
+        - generic [ref=e79]: ◇
+        - generic [ref=e80]:
+          - generic [ref=e81]: Chapter 1 · Beginner
+          - heading "Introduction to Shapes" [level=1] [ref=e82]
+          - paragraph [ref=e83]: 225 curated problems
+      - generic [ref=e85]:
+        - generic [ref=e86]:
+          - generic [ref=e87]: ❓
+          - generic [ref=e88]: What is it?
+          - paragraph [ref=e89]: A shape is any connected group of cells in a grid, defined by its boundary points and the area it encloses.
+        - generic [ref=e90]:
+          - generic [ref=e91]: 💡
+          - generic [ref=e92]: Core Idea
+          - paragraph [ref=e93]: Traverse the grid. Collect connected cells. Normalize for comparison. Measure perimeter/area.
+        - generic [ref=e94]:
+          - generic [ref=e95]: 🧠
+          - generic [ref=e96]: Mental Model
+          - paragraph [ref=e97]: Think of shape detection as "flood fill with a pen" — mark every cell you visit, trace the boundary when you hit empty space.
+        - generic [ref=e98]:
+          - generic [ref=e99]: 🎯
+          - generic [ref=e100]: Why It Matters
+          - paragraph [ref=e101]: Shape problems teach systematic grid traversal, pattern recognition, and geometric property measurement — foundational for all geometry algorithms.
+      - img [ref=e103]:
+        - generic [ref=e108]: Row 1
+        - generic [ref=e109]: Col A
+        - generic [ref=e110]: Col B
+        - generic [ref=e111]: Col C
+      - generic [ref=e112]:
+        - 'heading "Chapter 1: Introduction to Shapes" [level=2] [ref=e113]'
+        - heading "1. INTRODUCTION" [level=3] [ref=e114]
+        - paragraph [ref=e115]: Welcome to the world of shapes in programming. If you have never written a geometry algorithm before, do not worry — we will start from the absolute ground floor.
+        - paragraph [ref=e116]:
+          - strong [ref=e118]: What is a "shape" in computing?
+        - paragraph [ref=e119]: "When we say \"shape\" in the context of DSA problems, we mean any structured arrangement of points, lines, or cells that forms a recognizable pattern. This could be:"
+        - list [ref=e120]:
+          - listitem [ref=e121]:
+            - text: A triangle drawn on a grid of
+            - code [ref=e122]: "1"
+            - text: s and
+            - code [ref=e123]: "0"
+            - text: s
+          - listitem [ref=e124]: A rectangle formed by four corners in 2D space
+          - listitem [ref=e125]: A polygon defined by a sequence of vertices
+          - listitem [ref=e126]:
+            - text: A pattern of
+            - code [ref=e127]: "1"
+            - text: cells that looks like an "L" shape in binary matrix
+        - paragraph [ref=e128]:
+          - generic [ref=e129]:
+            - strong [ref=e130]: "Real-world intuition:"
+            - text: Think of organizing chairs in a room. You might arrange them in a perfect square grid, in a circle, or in a rectangular block. The shape of your arrangement determines what fits where. Similarly, in coding problems, we often need to detect, count, or transform shapes.
+        - paragraph [ref=e131]:
+          - generic [ref=e132]:
+            - strong [ref=e133]: Why does it matter?
+            - text: "Shape problems teach you:"
+        - list [ref=e134]:
+          - listitem [ref=e135]: How to traverse 2D space systematically
+          - listitem [ref=e136]: How to identify patterns in noisy data
+          - listitem [ref=e137]: How grid coordinates work (row = y, column = x)
+          - listitem [ref=e138]: How to measure geometric properties (area, perimeter, symmetry)
+        - paragraph [ref=e139]:
+          - generic [ref=e140]:
+            - strong [ref=e141]: "The fundamental mental model:"
+            - text: Everything on a computer screen is ultimately a grid of pixels. In algorithmic problems, we typically work with much smaller grids or coordinate systems. The core skill is learning to "see" shapes within these grids.
+        - paragraph [ref=e142]:
+          - generic [ref=e143]:
+            - strong [ref=e144]: A shape is defined by its boundaries.
+            - text: "Whether you have a triangle, a square, or a circle, what makes a shape distinct is:"
+        - list [ref=e145]:
+          - listitem [ref=e146]: Its set of boundary points
+          - listitem [ref=e147]: The relationship between those points
+          - listitem [ref=e148]: The area it encloses
+        - heading "2. CORE CONCEPTS" [level=3] [ref=e149]
+        - heading "2.1 Grid Basics" [level=4] [ref=e150]
+        - paragraph [ref=e151]:
+          - generic [ref=e152]:
+            - text: A 2D grid (or matrix) is an
+            - code [ref=e153]: m x n
+            - text: array of cells. Each cell has coordinates
+            - code [ref=e154]: (r, c)
+            - text: where
+            - code [ref=e155]: r
+            - text: is the row index (0 to m-1, top to bottom) and
+            - code [ref=e156]: c
+            - text: is the column index (0 to n-1, left to right).
+        - generic [ref=e157]:
+          - generic [ref=e158]:
+            - button [ref=e160] [cursor=pointer]
+            - generic [ref=e161]: 1 languages
+          - code [ref=e163]: "Grid (4 x 5): c0 c1 c2 c3 c4 r0 [ ] [ ] [ ] [ ] [ ] r1 [ ] [ ] [ ] [ ] [ ] r2 [ ] [ ] [ ] [ ] [ ] r3 [ ] [ ] [ ] [ ] [ ]"
+        - paragraph [ref=e164]:
+          - generic [ref=e165]:
+            - strong [ref=e166]: "Neighbors:"
+            - text: "Each cell has up to 4 orthogonal neighbors (up, down, left, right) and up to 4 diagonal neighbors:"
+        - generic [ref=e167]:
+          - generic [ref=e168]:
+            - button [ref=e170] [cursor=pointer]
+            - generic [ref=e171]: 1 languages
+          - code [ref=e173]: (r-1, c-1) (r-1, c) (r-1, c+1) (r, c-1) [r, c] (r, c+1) (r+1, c-1) (r+1, c) (r+1, c+1)
+        - heading "2.2 Shape Perimeter on a Grid" [level=4] [ref=e174]
+        - paragraph [ref=e175]:
+          - generic [ref=e176]:
+            - text: When shapes are formed by
+            - code [ref=e177]: "1"
+            - text: "s in a binary matrix, the perimeter can be computed cell by cell:"
+        - list [ref=e178]:
+          - listitem [ref=e179]:
+            - text: Each cell with value
+            - code [ref=e180]: "1"
+            - text: contributes 4 to the potential perimeter
+          - listitem [ref=e181]:
+            - text: Subtract 1 for each orthogonal neighbor that is also
+            - code [ref=e182]: "1"
+        - generic [ref=e183]:
+          - generic [ref=e184]:
+            - button [ref=e186] [cursor=pointer]
+            - generic [ref=e187]: 1 languages
+          - code [ref=e189]: "Example: 0 1 0 1 1 1 0 1 0 Perimeter: - Center cell has 4 neighbors -> contributes 0 - Top, left, right, bottom cells each have 2 neighbors -> contribute 2 each - Total = 4 * 2 = 8"
+        - heading "2.3 Surface Area of 3D Shapes" [level=4] [ref=e190]
+        - paragraph [ref=e191]: "For 3D shapes built from unit cubes on a grid:"
+        - list [ref=e192]:
+          - listitem [ref=e193]: Each cube has 6 faces
+          - listitem [ref=e194]: A face is exposed if no adjacent cube occupies that side
+          - listitem [ref=e195]: "Projection area: count of non-zero cells when viewed from top, front, side"
+        - paragraph [ref=e196]:
+          - strong [ref=e198]: "Projection rules:"
+        - list [ref=e199]:
+          - listitem [ref=e200]:
+            - strong [ref=e201]: "Top view (xy-plane):"
+            - text: Count every cell with height > 0
+          - listitem [ref=e202]:
+            - strong [ref=e203]: "Front view (xz-plane):"
+            - text: For each column, the maximum height
+          - listitem [ref=e204]:
+            - strong [ref=e205]: "Side view (yz-plane):"
+            - text: For each row, the maximum height
+        - heading "2.4 Shape Rotation and Translation" [level=4] [ref=e206]
+        - paragraph [ref=e207]:
+          - generic [ref=e208]:
+            - strong [ref=e209]: "Translation:"
+            - text: "Moving a shape by adding a constant offset to all coordinates:"
+        - generic [ref=e210]:
+          - generic [ref=e211]:
+            - button [ref=e213] [cursor=pointer]
+            - generic [ref=e214]: 1 languages
+          - code [ref=e216]: New point = (x + dx, y + dy)
+        - paragraph [ref=e217]:
+          - generic [ref=e218]:
+            - strong [ref=e219]: "90-degree rotation on grid:"
+            - text: "Rotating a shape by 90 degrees clockwise:"
+        - list [ref=e220]:
+          - listitem [ref=e221]:
+            - text: "New coordinates:"
+            - code [ref=e222]: (r, c) -> (c, rows-1-r)
+        - paragraph [ref=e223]:
+          - generic [ref=e224]:
+            - strong [ref=e225]: "Normalization for shape matching:"
+            - text: To compare shapes regardless of position, translate so the top-left point is at
+            - code [ref=e226]: (0, 0)
+            - text: ":"
+        - generic [ref=e227]:
+          - generic [ref=e228]:
+            - button [ref=e230] [cursor=pointer]
+            - generic [ref=e231]: 1 languages
+          - code [ref=e233]: min_r = min(r_i); min_c = min(c_i) normalized = [(r_i - min_r, c_i - min_c) for each point]
+        - heading "2.5 Point-in-Shape Detection" [level=4] [ref=e234]
+        - paragraph [ref=e235]:
+          - generic [ref=e236]:
+            - text: For a point
+            - code [ref=e237]: (x, y)
+            - text: ", determine if it lies inside a shape:"
+        - list [ref=e238]:
+          - listitem [ref=e239]:
+            - strong [ref=e240]: "Rectangle:"
+            - text: Check if
+            - code [ref=e241]: x
+            - text: is between rectangle bounds and
+            - code [ref=e242]: "y"
+            - text: is between rectangle bounds
+          - listitem [ref=e243]:
+            - strong [ref=e244]: "Circle:"
+            - text: Check if distance from center
+            - code [ref=e245]: <= radius
+          - listitem [ref=e246]:
+            - strong [ref=e247]: "Triangle:"
+            - text: Use barycentric coordinates or area method
+        - heading "2.6 Convex vs Concave Shapes" [level=4] [ref=e248]
+        - list [ref=e249]:
+          - listitem [ref=e250]:
+            - strong [ref=e251]: "Convex shape:"
+            - text: All interior angles are <= 180 degrees. Any line segment between two points lies entirely inside the shape.
+          - listitem [ref=e252]:
+            - strong [ref=e253]: "Concave shape:"
+            - text: At least one interior angle > 180 degrees. Has "indentations."
+        - heading "3. PROBLEM RECOGNITION" [level=3] [ref=e254]
+        - paragraph [ref=e255]:
+          - strong [ref=e257]: "Keywords that signal shape identification problems:"
+        - list [ref=e258]:
+          - listitem [ref=e259]: "\"shape\", \"pattern\", \"figure\""
+          - listitem [ref=e260]: "\"grid\", \"matrix\", \"board\""
+          - listitem [ref=e261]: "\"L-shape\", \"T-shape\", \"polyomino\""
+          - listitem [ref=e262]: "\"rotate\", \"translate\", \"reflect\", \"mirror\""
+          - listitem [ref=e263]: "\"connected 1s\", \"island\", \"blob\""
+          - listitem [ref=e264]: "\"perimeter\", \"boundary\", \"contour\""
+          - listitem [ref=e265]: "\"projection\", \"surface area\""
+          - listitem [ref=e266]: "\"projection area\" (3D shapes)"
+          - listitem [ref=e267]: "\"minimum rectangle covering\""
+          - listitem [ref=e268]: "\"transform\", \"normalize\" (shape matching)"
+        - paragraph [ref=e269]:
+          - strong [ref=e271]: "How interviewers frame these:"
+        - list [ref=e272]:
+          - listitem [ref=e273]: "\"Given a binary matrix, find the perimeter of the shape formed by 1s\""
+          - listitem [ref=e274]: "\"Determine if the two shapes are the same after rotation/translation\""
+          - listitem [ref=e275]: "\"Calculate the surface area of a 3D shape built on a grid\""
+          - listitem [ref=e276]: "\"Find the smallest rectangle that encloses all marked cells\""
+          - listitem [ref=e277]: "\"Check if a set of points forms a valid rectangle/square\""
+          - listitem [ref=e278]: "\"How many L-shaped pieces can you fit?\""
+        - paragraph [ref=e279]:
+          - strong [ref=e281]: "Hidden geometry indicators:"
+        - list [ref=e282]:
+          - listitem [ref=e283]: Problems about "painting", "coloring" contiguous regions
+          - listitem [ref=e284]: "\"Game of Life\" style grid transformations"
+          - listitem [ref=e285]: "\"Puzzle piece\" fitting problems"
+          - listitem [ref=e286]: "\"Find the pattern\" in a matrix"
+        - heading "4. PATTERN ANALYSIS" [level=3] [ref=e287]
+        - 'heading "Pattern 1: Grid Traversal for Shape Detection" [level=4] [ref=e288]'
+        - list [ref=e289]:
+          - listitem [ref=e290]:
+            - strong [ref=e291]: "When to use:"
+            - text: Matrix/grid with 0/1s; need to identify or count shapes
+          - listitem [ref=e292]:
+            - strong [ref=e293]: "Why it works:"
+            - text: BFS/DFS from each unvisited 1-cell collects all connected cells forming the shape
+          - listitem [ref=e294]:
+            - strong [ref=e295]: "Complexity:"
+            - text: O(m * n) time, O(m * n) space
+          - listitem [ref=e296]:
+            - strong [ref=e297]: "Common mistake:"
+            - text: Forgetting that diagonal connections in some problems don't count as connected (4-directional vs 8-directional)
+        - 'heading "Pattern 2: Shape Normalization for Comparison" [level=4] [ref=e298]'
+        - list [ref=e299]:
+          - listitem [ref=e300]:
+            - strong [ref=e301]: "When to use:"
+            - text: Two shapes need to be compared for rotational/translational equality
+          - listitem [ref=e302]:
+            - strong [ref=e303]: "Why it works:"
+            - text: By normalizing to a canonical position, equivalent shapes produce identical representations
+          - listitem [ref=e304]:
+            - strong [ref=e305]: "Complexity:"
+            - text: O(k) where k is the number of cells in the shape
+          - listitem [ref=e306]:
+            - strong [ref=e307]: "Common mistake:"
+            - text: Not generating all rotations — a shape may match after 90, 180, 270 degrees
+        - 'heading "Pattern 3: Perimeter via Neighbor Counting" [level=4] [ref=e308]'
+        - list [ref=e309]:
+          - listitem [ref=e310]:
+            - strong [ref=e311]: "When to use:"
+            - text: Need the perimeter of a shape formed by 1s in a binary matrix
+          - listitem [ref=e312]:
+            - strong [ref=e313]: "Why it works:"
+            - text: Each 1-cell contributes 4 - (number of 1-neighbors) to the perimeter
+          - listitem [ref=e314]:
+            - strong [ref=e315]: "Complexity:"
+            - text: O(m * n)
+          - listitem [ref=e316]:
+            - strong [ref=e317]: "Common mistake:"
+            - text: Only checking 4 directions, not 8 (depends on problem definition)
+        - 'heading "Pattern 4: Bounding Box Analysis" [level=4] [ref=e318]'
+        - list [ref=e319]:
+          - listitem [ref=e320]:
+            - strong [ref=e321]: "When to use:"
+            - text: Need to enclose a shape, check alignment, or detect rectangles
+          - listitem [ref=e322]:
+            - strong [ref=e323]: "Why it works:"
+            - text: The min/max row and column of shape cells define the tightest enclosing rectangle
+          - listitem [ref=e324]:
+            - strong [ref=e325]: "Complexity:"
+            - text: O(m * n) to find boundaries
+          - listitem [ref=e326]:
+            - strong [ref=e327]: "Common mistake:"
+            - text: Assuming the shape is aligned with grid axes
+        - heading "5. REUSABLE CODING TEMPLATES" [level=3] [ref=e328]
+        - 'heading "Template 1: Grid BFS/DFS for Connected Components" [level=4] [ref=e329]'
+        - generic [ref=e330]:
+          - generic [ref=e331]:
+            - generic [ref=e332]:
+              - button "🐍 Python" [ref=e333] [cursor=pointer]:
+                - generic [ref=e334]: 🐍
+                - text: Python
+              - button "⚡ C++" [ref=e335] [cursor=pointer]:
+                - generic [ref=e336]: ⚡
+                - text: C++
+              - button "☕ Java" [ref=e337] [cursor=pointer]:
+                - generic [ref=e338]: ☕
+                - text: Java
+            - generic [ref=e339]: 3 languages
+          - code [ref=e341]: "def get_cells(grid, r, c, visited): class=\"gb-syn-string\">\"\"class=\"gb-syn-string\">\"Collect all cells of a connected shape (class=\"gb-syn-number\">4-directional).\"class=\"gb-syn-string\">\"\" m, n = len(grid), len(grid[class=\"gb-syn-number\">0]) stack = [(r, c)] visited[r][c] = True cells = [] while stack: cr, cc = stack.pop() cells.append((cr, cc)) for dr, dc in ((class=\"gb-syn-number\">1, class=\"gb-syn-number\">0), (-class=\"gb-syn-number\">1, class=\"gb-syn-number\">0), (class=\"gb-syn-number\">0, class=\"gb-syn-number\">1), (class=\"gb-syn-number\">0, -class=\"gb-syn-number\">1)): nr, nc = cr + dr, cc + dc if class=\"gb-syn-number\">0 <= nr < m and class=\"gb-syn-number\">0 <= nc < n and not visited[nr][nc] and grid[nr][nc] == class=\"gb-syn-number\">1: visited[nr][nc] = True stack.append((nr, nc)) return cells def find_shapes(grid): m, n = len(grid), len(grid[class=\"gb-syn-number\">0]) visited = [[False] * n for _ in range(m)] shapes = [] for i in range(m): for j in range(n): if grid[i][j] == class=\"gb-syn-number\">1 and not visited[i][j]: shapes.append(get_cells(grid, i, j, visited)) return shapes"
+        - 'heading "Template 2: Shape Normalization" [level=4] [ref=e342]'
+        - generic [ref=e343]:
+          - generic [ref=e344]:
+            - button "🐍 Python" [ref=e346] [cursor=pointer]:
+              - generic [ref=e347]: 🐍
+              - text: Python
+            - generic [ref=e348]: 1 languages
+          - code [ref=e350]: "def normalize(cells): class=\"gb-syn-string\">\"\"class=\"gb-syn-string\">\"Translate shape so top-left point is at (class=\"gb-syn-number\">0,class=\"gb-syn-number\">0).\"class=\"gb-syn-string\">\"\" if not cells: return [] min_r = min(r for r, c in cells) min_c = min(c for r, c in cells) return sorted([(r - min_r, c - min_c) for r, c in cells]) def rotate_90(cells, max_r=None, max_c=None): class=\"gb-syn-string\">\"\"class=\"gb-syn-string\">\"Rotate shape class=\"gb-syn-number\">90 degrees clockwise.\"class=\"gb-syn-string\">\"\" if not cells: return [] if max_r is None: max_r = max(r for r, c in cells) if max_c is None: max_c = max(c for r, c in cells) rotated = [(c, max_r - r) for r, c in cells] return normalize(rotated)"
+        - 'heading "Template 3: Perimeter of Shape in Binary Matrix" [level=4] [ref=e351]'
+        - generic [ref=e352]:
+          - generic [ref=e353]:
+            - button "🐍 Python" [ref=e355] [cursor=pointer]:
+              - generic [ref=e356]: 🐍
+              - text: Python
+            - generic [ref=e357]: 1 languages
+          - code [ref=e359]: "def perimeter(grid): m, n = len(grid), len(grid[class=\"gb-syn-number\">0]) total = class=\"gb-syn-number\">0 for i in range(m): for j in range(n): if grid[i][j] == class=\"gb-syn-number\">1: total += class=\"gb-syn-number\">4 if i > class=\"gb-syn-number\">0 and grid[i-class=\"gb-syn-number\">1][j] == class=\"gb-syn-number\">1: total -= class=\"gb-syn-number\">2 class=class=\"gb-syn-string\">\"gb-syn-comment\"># shared edge counted twice if j > class=\"gb-syn-number\">0 and grid[i][j-class=\"gb-syn-number\">1] == class=\"gb-syn-number\">1: total -= class=\"gb-syn-number\">2 return total"
+        - 'heading "Template 4: Bounding Box" [level=4] [ref=e360]'
+        - generic [ref=e361]:
+          - generic [ref=e362]:
+            - button "🐍 Python" [ref=e364] [cursor=pointer]:
+              - generic [ref=e365]: 🐍
+              - text: Python
+            - generic [ref=e366]: 1 languages
+          - code [ref=e368]: "def bounding_box(cells): if not cells: return None min_r = min(r for r, c in cells) max_r = max(r for r, c in cells) min_c = min(c for r, c in cells) max_c = max(c for r, c in cells) return (min_r, min_c, max_r, max_c)"
+        - 'heading "Template 5: Projection Area (3D Shapes)" [level=4] [ref=e369]'
+        - generic [ref=e370]:
+          - generic [ref=e371]:
+            - button "🐍 Python" [ref=e373] [cursor=pointer]:
+              - generic [ref=e374]: 🐍
+              - text: Python
+            - generic [ref=e375]: 1 languages
+          - code [ref=e377]: "def projection_area(grid): class=\"gb-syn-string\">\"\"class=\"gb-syn-string\">\"grid[i][j] = height of cube at (i,j).\"class=\"gb-syn-string\">\"\" top = sum(class=\"gb-syn-number\">1 for row in grid for val in row if val > class=\"gb-syn-number\">0) front = sum(max(col) for col in zip(*grid)) side = sum(max(row) for row in grid) return top + front + side"
+        - 'heading "Template 6: Surface Area of 3D Shapes" [level=4] [ref=e378]'
+        - generic [ref=e379]:
+          - generic [ref=e380]:
+            - button "🐍 Python" [ref=e382] [cursor=pointer]:
+              - generic [ref=e383]: 🐍
+              - text: Python
+            - generic [ref=e384]: 1 languages
+          - code [ref=e386]: "def surface_area(grid): m, n = len(grid), len(grid[class=\"gb-syn-number\">0]) area = class=\"gb-syn-number\">0 for i in range(m): for j in range(n): if grid[i][j]: area += class=\"gb-syn-number\">4 * grid[i][j] + class=\"gb-syn-number\">2 class=class=\"gb-syn-string\">\"gb-syn-comment\"># sides + top/bottom if i > class=\"gb-syn-number\">0: area -= class=\"gb-syn-number\">2 * min(grid[i][j], grid[i-class=\"gb-syn-number\">1][j]) if j > class=\"gb-syn-number\">0: area -= class=\"gb-syn-number\">2 * min(grid[i][j], grid[i][j-class=\"gb-syn-number\">1]) return area"
+        - heading "6. CURATED REAL PROBLEMS" [level=3] [ref=e387]
+        - table [ref=e389]:
+          - rowgroup [ref=e390]:
+            - row "# Problem Platform Difficulty URL Concepts Pattern" [ref=e391]:
+              - columnheader "#" [ref=e392]
+              - columnheader "Problem" [ref=e393]
+              - columnheader "Platform" [ref=e394]
+              - columnheader "Difficulty" [ref=e395]
+              - columnheader "URL" [ref=e396]
+              - columnheader "Concepts" [ref=e397]
+              - columnheader "Pattern" [ref=e398]
+          - rowgroup [ref=e399]:
+            - row "1 Vlad and Shapes Codeforces 800 https://codeforces.com/problemset/problem/1926/b Grid shape recognition Bounding box" [ref=e400]:
+              - cell "1" [ref=e401]
+              - cell "Vlad and Shapes" [ref=e402]
+              - cell "Codeforces" [ref=e403]
+              - cell "800" [ref=e404]
+              - cell "https://codeforces.com/problemset/problem/1926/b" [ref=e405]
+              - cell "Grid shape recognition" [ref=e406]
+              - cell "Bounding box" [ref=e407]
+            - row "2 Projection Area of 3D Shapes LeetCode Easy https://leetcode.com/problems/projection-area-of-3d-shapes/ 3D projection Grid traversal" [ref=e408]:
+              - cell "2" [ref=e409]
+              - cell "Projection Area of 3D Shapes" [ref=e410]
+              - cell "LeetCode" [ref=e411]
+              - cell "Easy" [ref=e412]
+              - cell "https://leetcode.com/problems/projection-area-of-3d-shapes/" [ref=e413]
+              - cell "3D projection" [ref=e414]
+              - cell "Grid traversal" [ref=e415]
+            - row "3 Surface Area of 3D Shapes LeetCode Easy https://leetcode.com/problems/surface-area-of-3d-shapes/ Surface area Per-cell counting" [ref=e416]:
+              - cell "3" [ref=e417]
+              - cell "Surface Area of 3D Shapes" [ref=e418]
+              - cell "LeetCode" [ref=e419]
+              - cell "Easy" [ref=e420]
+              - cell "https://leetcode.com/problems/surface-area-of-3d-shapes/" [ref=e421]
+              - cell "Surface area" [ref=e422]
+              - cell "Per-cell counting" [ref=e423]
+            - row "4 L-shapes Codeforces 1700 https://codeforces.com/problemset/problem/1722/F DFS, L-pattern detection DFS + pattern matching" [ref=e424]:
+              - cell "4" [ref=e425]
+              - cell "L-shapes" [ref=e426]
+              - cell "Codeforces" [ref=e427]
+              - cell "1700" [ref=e428]
+              - cell "https://codeforces.com/problemset/problem/1722/F" [ref=e429]
+              - cell "DFS, L-pattern detection" [ref=e430]
+              - cell "DFS + pattern matching" [ref=e431]
+            - row "5 ABC218C - Shapes AtCoder 300 https://atcoder.jp/contests/abc218/tasks/abc218_c 90 rotation + translation Shape normalization" [ref=e432]:
+              - cell "5" [ref=e433]
+              - cell "ABC218C - Shapes" [ref=e434]
+              - cell "AtCoder" [ref=e435]
+              - cell "300" [ref=e436]
+              - cell "https://atcoder.jp/contests/abc218/tasks/abc218_c" [ref=e437]
+              - cell "90 rotation + translation" [ref=e438]
+              - cell "Shape normalization" [ref=e439]
+            - row "6 478 - Points in Rectangles Circles Triangles UVa 1 https://onlinejudge.org/external/4/478.html Point-in-shape detection Geometric containment" [ref=e440]:
+              - cell "6" [ref=e441]
+              - cell "478 - Points in Rectangles Circles Triangles" [ref=e442]
+              - cell "UVa" [ref=e443]
+              - cell "1" [ref=e444]
+              - cell "https://onlinejudge.org/external/4/478.html" [ref=e445]
+              - cell "Point-in-shape detection" [ref=e446]
+              - cell "Geometric containment" [ref=e447]
+            - row "7 Shape Perimeter Codeforces 800 https://codeforces.com/problemset/problem/2056/A Perimeter Edge counting" [ref=e448]:
+              - cell "7" [ref=e449]
+              - cell "Shape Perimeter" [ref=e450]
+              - cell "Codeforces" [ref=e451]
+              - cell "800" [ref=e452]
+              - cell "https://codeforces.com/problemset/problem/2056/A" [ref=e453]
+              - cell "Perimeter" [ref=e454]
+              - cell "Edge counting" [ref=e455]
+            - row "8 Shape Factory LintCode Easy https://www.lintcode.com/problem/497/ OO Design Factory pattern" [ref=e456]:
+              - cell "8" [ref=e457]
+              - cell "Shape Factory" [ref=e458]
+              - cell "LintCode" [ref=e459]
+              - cell "Easy" [ref=e460]
+              - cell "https://www.lintcode.com/problem/497/" [ref=e461]
+              - cell "OO Design" [ref=e462]
+              - cell "Factory pattern" [ref=e463]
+            - row "9 Making Shapes Codeforces 3500 https://codeforces.com/problemset/problem/1290/F DP, shape construction Advanced DP" [ref=e464]:
+              - cell "9" [ref=e465]
+              - cell "Making Shapes" [ref=e466]
+              - cell "Codeforces" [ref=e467]
+              - cell "3500" [ref=e468]
+              - cell "https://codeforces.com/problemset/problem/1290/F" [ref=e469]
+              - cell "DP, shape construction" [ref=e470]
+              - cell "Advanced DP" [ref=e471]
+            - row "10 Find perimeter of shapes formed with 1s in binary matrix GeeksforGeeks -- https://www.geeksforgeeks.org/dsa/find-perimeter-of-shapes-formed-with-1s-in-binary-matrix/ Grid geometry Perimeter via neighbors" [ref=e472]:
+              - cell "10" [ref=e473]
+              - cell "Find perimeter of shapes formed with 1s in binary matrix" [ref=e474]
+              - cell "GeeksforGeeks" [ref=e475]
+              - cell "--" [ref=e476]
+              - cell "https://www.geeksforgeeks.org/dsa/find-perimeter-of-shapes-formed-with-1s-in-binary-matrix/" [ref=e477]
+              - cell "Grid geometry" [ref=e478]
+              - cell "Perimeter via neighbors" [ref=e479]
+            - row "11 Mirror Grid Codeforces 1200 https://codeforces.com/problemset/problem/1703/E Grid rotation/mirror Symmetry" [ref=e480]:
+              - cell "11" [ref=e481]
+              - cell "Mirror Grid" [ref=e482]
+              - cell "Codeforces" [ref=e483]
+              - cell "1200" [ref=e484]
+              - cell "https://codeforces.com/problemset/problem/1703/E" [ref=e485]
+              - cell "Grid rotation/mirror" [ref=e486]
+              - cell "Symmetry" [ref=e487]
+            - row "12 Convex Shape Codeforces 1700 https://codeforces.com/problemset/problem/275/B Convexity detection Grid analysis" [ref=e488]:
+              - cell "12" [ref=e489]
+              - cell "Convex Shape" [ref=e490]
+              - cell "Codeforces" [ref=e491]
+              - cell "1700" [ref=e492]
+              - cell "https://codeforces.com/problemset/problem/275/B" [ref=e493]
+              - cell "Convexity detection" [ref=e494]
+              - cell "Grid analysis" [ref=e495]
+            - row "13 Grid L Codeforces N/A https://codeforces.com/problemset/problem/2219/A L-shapes on grid Shape detection" [ref=e496]:
+              - cell "13" [ref=e497]
+              - cell "Grid L" [ref=e498]
+              - cell "Codeforces" [ref=e499]
+              - cell "N/A" [ref=e500]
+              - cell "https://codeforces.com/problemset/problem/2219/A" [ref=e501]
+              - cell "L-shapes on grid" [ref=e502]
+              - cell "Shape detection" [ref=e503]
+            - row "14 Polygon Area AOJ Easy https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=CGL_3_A Polygon area Shoelace formula" [ref=e504]:
+              - cell "14" [ref=e505]
+              - cell "Polygon Area" [ref=e506]
+              - cell "AOJ" [ref=e507]
+              - cell "Easy" [ref=e508]
+              - cell "https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=CGL_3_A" [ref=e509]
+              - cell "Polygon area" [ref=e510]
+              - cell "Shoelace formula" [ref=e511]
+            - row "15 Almost Rectangle Codeforces 800 https://codeforces.com/problemset/problem/1512/B Grid rectangle completion Bounding box" [ref=e512]:
+              - cell "15" [ref=e513]
+              - cell "Almost Rectangle" [ref=e514]
+              - cell "Codeforces" [ref=e515]
+              - cell "800" [ref=e516]
+              - cell "https://codeforces.com/problemset/problem/1512/B" [ref=e517]
+              - cell "Grid rectangle completion" [ref=e518]
+              - cell "Bounding box" [ref=e519]
+        - heading "7. GENERATED PRACTICE PROBLEMS" [level=3] [ref=e520]
+        - paragraph [ref=e521]:
+          - generic [ref=e522]:
+            - strong [ref=e523]: "Easy 1: Count the Squares"
+            - text: You are given an
+            - code [ref=e524]: m x n
+            - text: binary matrix. Count the number of 2x2 squares of all
+            - code [ref=e525]: "1"
+            - text: s in the matrix. A 2x2 square is defined as four cells at positions
+            - code [ref=e526]: (r,c)
+            - text: ","
+            - code [ref=e527]: (r,c+1)
+            - text: ","
+            - code [ref=e528]: (r+1,c)
+            - text: ","
+            - code [ref=e529]: (r+1,c+1)
+            - text: ", all with value 1."
+        - paragraph [ref=e530]:
+          - generic [ref=e531]:
+            - strong [ref=e532]: "Easy 2: Find the Missing Corner"
+            - text: You are given three corners of a rectangle aligned with the grid axes. Find the fourth corner.
+        - paragraph [ref=e533]:
+          - generic [ref=e534]:
+            - strong [ref=e535]: "Medium 3: Shape Equivalence"
+            - text: Two shapes are defined as sets of cells in two binary matrices. Determine if they represent the same shape (allowing translation and 90-degree rotation). Matrices can be up to 100x100.
+        - paragraph [ref=e536]:
+          - generic [ref=e537]:
+            - strong [ref=e538]: "Medium 4: Hollow Square Detection"
+            - text: Given an
+            - code [ref=e539]: m x n
+            - text: binary matrix, find all hollow squares — squares where the border cells are all
+            - code [ref=e540]: "1"
+            - text: s and the interior is all
+            - code [ref=e541]: "0"
+            - text: s. Return the number of such squares.
+        - paragraph [ref=e542]:
+          - generic [ref=e543]:
+            - strong [ref=e544]: "Medium 5: Shape Perimeter with Holes"
+            - text: Given a binary matrix where
+            - code [ref=e545]: "1"
+            - text: s form a shape that may have holes, compute the total perimeter (external + internal hole boundaries).
+        - paragraph [ref=e546]:
+          - generic [ref=e547]:
+            - strong [ref=e548]: "Hard 6: Minimum Bounding Shape"
+            - text: Given scattered
+            - code [ref=e549]: "1"
+            - text: "s in a large matrix, find the minimum number of unit squares you need to add to make the shape convex. Allowed additions: flip"
+            - code [ref=e550]: "0"
+            - text: to
+            - code [ref=e551]: "1"
+            - text: .
+        - paragraph [ref=e552]:
+          - generic [ref=e553]:
+            - strong [ref=e554]: "Hard 7: 3D Layer Stacking"
+            - text: You have
+            - code [ref=e555]: "n"
+            - text: layers, each represented by an
+            - code [ref=e556]: m x m
+            - text: binary matrix. When stacked,
+            - code [ref=e557]: "1"
+            - text: s become cubes in 3D. Compute the total exposed surface area of the combined 3D shape.
+        - paragraph [ref=e558]:
+          - generic [ref=e559]:
+            - strong [ref=e560]: "Interview-style 8: Shape Registration"
+            - text: Given two sets of points in 2D, determine if one can be transformed into the other by a combination of translation, rotation, and reflection (no scaling). Points are integer coordinates. Return the transformation parameters if they exist.
+        - paragraph [ref=e561]:
+          - generic [ref=e562]:
+            - strong [ref=e563]: "Contest-style 9: Maximal L-Shapes"
+            - text: In an
+            - code [ref=e564]: n x n
+            - text: binary matrix, an L-shape consists of a horizontal segment and a vertical segment of
+            - code [ref=e565]: "1"
+            - text: s meeting at a corner cell, forming a right angle. Each segment must have length at least 2. Find the L-shape with the maximum total number of
+            - code [ref=e566]: "1"
+            - text: s.
+        - heading "8. COMPLETE SOLUTION SECTION" [level=3] [ref=e567]
+        - 'heading "Problem 1: Vlad and Shapes (Codeforces 1926B)" [level=4] [ref=e568]'
+        - paragraph [ref=e569]:
+          - generic [ref=e570]:
+            - strong [ref=e571]: "A. Intuition:"
+            - text: Given a binary matrix, determine if the
+            - code [ref=e572]: "1"
+            - text: s form a square or a triangle. A square will have equal width and height in its bounding box. A triangle will have either width or height = 1, or the pattern of
+            - code [ref=e573]: "1"
+            - text: s will not fill the bounding box.
+        - paragraph [ref=e574]:
+          - generic [ref=e575]:
+            - strong [ref=e576]: "B. Brute Force:"
+            - text: Find all
+            - code [ref=e577]: "1"
+            - text: cells, compute their bounding box. Check if the number of
+            - code [ref=e578]: "1"
+            - text: s equals the area of the bounding box (for a square) or half of it (for a right triangle).
+        - paragraph [ref=e579]:
+          - generic [ref=e580]:
+            - strong [ref=e581]: "C. Optimized Approach:"
+            - text: Same as brute force — the problem is small enough.
+        - paragraph [ref=e582]:
+          - strong [ref=e584]: "D. Step-by-Step:"
+        - list [ref=e585]:
+          - listitem [ref=e586]: Read the matrix
+          - listitem [ref=e587]:
+            - text: Find min/max row and col with
+            - code [ref=e588]: "1"
+            - text: s
+          - listitem [ref=e589]:
+            - text: Count total
+            - code [ref=e590]: "1"
+            - text: s
+          - listitem [ref=e591]: Compute bounding box width = max_c - min_c + 1, height = max_r - min_r + 1
+          - listitem [ref=e592]:
+            - text: If total
+            - code [ref=e593]: "1"
+            - text: s == width * height → "SQUARE"
+          - listitem [ref=e594]: Else → "TRIANGLE"
+        - paragraph [ref=e595]:
+          - generic [ref=e596]:
+            - strong [ref=e597]: "E. Complexity:"
+            - text: O(n^2) time, O(1) space.
+        - paragraph [ref=e598]:
+          - generic [ref=e599]:
+            - strong [ref=e600]: "F. Edge Cases:"
+            - text: Single
+            - code [ref=e601]: "1"
+            - text: — both square and triangle are valid, problem guarantees unambiguous.
+        - paragraph [ref=e602]:
+          - strong [ref=e604]: "G. Code:"
+        - generic [ref=e605]:
+          - generic [ref=e606]:
+            - generic [ref=e607]:
+              - button "🐍 Python" [ref=e608] [cursor=pointer]:
+                - generic [ref=e609]: 🐍
+                - text: Python
+              - button "⚡ C++" [ref=e610] [cursor=pointer]:
+                - generic [ref=e611]: ⚡
+                - text: C++
+              - button "☕ Java" [ref=e612] [cursor=pointer]:
+                - generic [ref=e613]: ☕
+                - text: Java
+            - generic [ref=e614]: 3 languages
+          - code [ref=e616]: "def solve(): t = int(input()) for _ in range(t): n = int(input()) grid = [input().strip() for _ in range(n)] cells = [] for i in range(n): for j in range(n): if grid[i][j] == class=\"gb-syn-string\">'class=\"gb-syn-number\">1': cells.append((i, j)) min_r = min(r for r, c in cells) max_r = max(r for r, c in cells) min_c = min(c for r, c in cells) max_c = max(c for r, c in cells) w = max_c - min_c + class=\"gb-syn-number\">1 h = max_r - min_r + class=\"gb-syn-number\">1 if len(cells) == w * h: print(class=\"gb-syn-string\">\"SQUARE\") else: print(class=\"gb-syn-string\">\"TRIANGLE\") if __name__ == class=\"gb-syn-string\">\"__main__\": solve()"
+        - 'heading "Problem 2: Projection Area of 3D Shapes (LeetCode 919)" [level=4] [ref=e617]'
+        - paragraph [ref=e618]:
+          - generic [ref=e619]:
+            - strong [ref=e620]: "A. Intuition:"
+            - text: Think of the 3D shape as a city skyline. The top view counts all buildings. The front view is the tallest building in each column. The side view is the tallest in each row.
+        - paragraph [ref=e621]:
+          - generic [ref=e622]:
+            - strong [ref=e623]: "B. Brute Force:"
+            - text: Not applicable — the problem definition is the solution.
+        - paragraph [ref=e624]:
+          - generic [ref=e625]:
+            - strong [ref=e626]: "C. Optimized Approach:"
+            - text: "Single pass: track max per row, max per column, and count non-zero cells."
+        - paragraph [ref=e627]:
+          - strong [ref=e629]: "D. Step-by-Step:"
+        - list [ref=e630]:
+          - listitem [ref=e631]:
+            - text: Initialize
+            - code [ref=e632]: top = 0
+            - text: ","
+            - code [ref=e633]: front = [0]*n
+            - text: ","
+            - code [ref=e634]: side = [0]*m
+          - listitem [ref=e635]:
+            - text: For each cell
+            - code [ref=e636]: (i, j)
+            - text: with height
+            - code [ref=e637]: h
+            - text: ":"
+        - list [ref=e638]:
+          - listitem [ref=e639]:
+            - text: If
+            - code [ref=e640]: "h > 0: top++"
+          - listitem [ref=e641]:
+            - code [ref=e642]: side[i] = max(side[i], h)
+          - listitem [ref=e643]:
+            - code [ref=e644]: front[j] = max(front[j], h)
+        - list [ref=e645]:
+          - listitem [ref=e646]:
+            - text: Sum
+            - code [ref=e647]: top + sum(front) + sum(side)
+        - paragraph [ref=e648]:
+          - generic [ref=e649]:
+            - strong [ref=e650]: "E. Complexity:"
+            - text: O(m*n) time, O(m+n) space.
+        - paragraph [ref=e651]:
+          - generic [ref=e652]:
+            - strong [ref=e653]: "F. Edge Cases:"
+            - text: All zeros → 0. Single tall tower → 1 + h + h.
+        - paragraph [ref=e654]:
+          - strong [ref=e656]: "G. Code:"
+        - generic [ref=e657]:
+          - generic [ref=e658]:
+            - generic [ref=e659]:
+              - button "🐍 Python" [ref=e660] [cursor=pointer]:
+                - generic [ref=e661]: 🐍
+                - text: Python
+              - button "⚡ C++" [ref=e662] [cursor=pointer]:
+                - generic [ref=e663]: ⚡
+                - text: C++
+              - button "☕ Java" [ref=e664] [cursor=pointer]:
+                - generic [ref=e665]: ☕
+                - text: Java
+            - generic [ref=e666]: 3 languages
+          - code [ref=e668]: "def projection_area(grid): m, n = len(grid), len(grid[class=\"gb-syn-number\">0]) top = class=\"gb-syn-number\">0 front = [class=\"gb-syn-number\">0] * n side = [class=\"gb-syn-number\">0] * m for i in range(m): for j in range(n): h = grid[i][j] if h: top += class=\"gb-syn-number\">1 side[i] = max(side[i], h) front[j] = max(front[j], h) return top + sum(front) + sum(side)"
+        - 'heading "Problem 3: ABC218C - Shapes (AtCoder)" [level=4] [ref=e669]'
+        - paragraph [ref=e670]:
+          - generic [ref=e671]:
+            - strong [ref=e672]: "A. Intuition:"
+            - text: Two shapes are the same if their normalized (translated to origin) cell sets match after some rotation. Generate all 4 rotations of shape S, normalize each to origin, and compare to the normalized T.
+        - paragraph [ref=e673]:
+          - generic [ref=e674]:
+            - strong [ref=e675]: "B. Brute Force:"
+            - text: Not applicable — comparison requires normalization.
+        - paragraph [ref=e676]:
+          - generic [ref=e677]:
+            - strong [ref=e678]: "C. Optimized Approach:"
+            - text: The grid is small (n <= 200), so generating all rotations is fine.
+        - paragraph [ref=e679]:
+          - strong [ref=e681]: "D. Step-by-Step:"
+        - list [ref=e682]:
+          - listitem [ref=e683]:
+            - text: Find all
+            - code [ref=e684]: "#"
+            - text: cells in S and T
+          - listitem [ref=e685]: "For each of the 4 rotations of S:"
+        - list [ref=e686]:
+          - listitem [ref=e687]: Rotate by 90 degrees clockwise
+          - listitem [ref=e688]: Normalize to origin
+          - listitem [ref=e689]: Check if equal to normalized T
+        - list [ref=e690]:
+          - listitem [ref=e691]: If any match → Yes, else → No
+        - paragraph [ref=e692]:
+          - generic [ref=e693]:
+            - strong [ref=e694]: "E. Complexity:"
+            - text: O(n^2) per rotation, O(n^2) total.
+        - paragraph [ref=e695]:
+          - generic [ref=e696]:
+            - strong [ref=e697]: "F. Edge Cases:"
+            - text: Different number of
+            - code [ref=e698]: "#"
+            - text: → immediate No. Empty shapes? Not in this problem.
+        - paragraph [ref=e699]:
+          - strong [ref=e701]: "G. Code:"
+        - generic [ref=e702]:
+          - generic [ref=e703]:
+            - button "🐍 Python" [ref=e705] [cursor=pointer]:
+              - generic [ref=e706]: 🐍
+              - text: Python
+            - generic [ref=e707]: 1 languages
+          - code [ref=e709]: "def normalize(cells): min_r = min(r for r, c in cells) min_c = min(c for r, c in cells) return frozenset((r - min_r, c - min_c) for r, c in cells) def rotate(cells, n): return [(c, n - class=\"gb-syn-number\">1 - r) for r, c in cells] def solve(): n = int(input()) s = [input().strip() for _ in range(n)] t = [input().strip() for _ in range(n)] s_cells = [(i, j) for i in range(n) for j in range(n) if s[i][j] == class=\"gb-syn-string\">'class=\"gb-syn-comment\">#'] t_cells = [(i, j) for i in range(n) for j in range(n) if t[i][j] == class=\"gb-syn-string\">'class=\"gb-syn-comment\">#'] if len(s_cells) != len(t_cells): print(class=\"gb-syn-string\">\"No\") return t_norm = normalize(t_cells) cur = s_cells[:] for _ in range(class=\"gb-syn-number\">4): if normalize(cur) == t_norm: print(class=\"gb-syn-string\">\"Yes\") return cur = rotate(cur, n) print(class=\"gb-syn-string\">\"No\") if __name__ == class=\"gb-syn-string\">\"__main__\": solve()"
+        - 'heading "Problem 4: Largest Triangle Area (LeetCode 830)" [level=4] [ref=e710]'
+        - paragraph [ref=e711]:
+          - generic [ref=e712]:
+            - strong [ref=e713]: "A. Intuition:"
+            - text: Given a set of points, the maximum area triangle can be found by trying all combinations of 3 points and using the shoelace formula to compute the area.
+        - paragraph [ref=e714]:
+          - generic [ref=e715]:
+            - strong [ref=e716]: "B. Brute Force:"
+            - text: Try all O(n^3) triples. For n <= 50 (as in this problem), this is acceptable.
+        - paragraph [ref=e717]:
+          - generic [ref=e718]:
+            - strong [ref=e719]: "C. Optimized Approach:"
+            - text: Same as brute force for this constraint.
+        - paragraph [ref=e720]:
+          - strong [ref=e722]: "D. Step-by-Step:"
+        - list [ref=e723]:
+          - listitem [ref=e724]: "For each triple (i, j, k):"
+        - list [ref=e725]:
+          - listitem [ref=e726]:
+            - text: "Compute area using formula:"
+            - code [ref=e727]: 0.5 * abs(x1*(y2-y3) + x2*(y3-y1) + x3*(y1-y2))
+        - list [ref=e728]:
+          - listitem [ref=e729]: Track maximum
+        - paragraph [ref=e730]:
+          - generic [ref=e731]:
+            - strong [ref=e732]: "E. Complexity:"
+            - text: O(n^3) time, O(1) space.
+        - paragraph [ref=e733]:
+          - generic [ref=e734]:
+            - strong [ref=e735]: "F. Edge Cases:"
+            - text: Collinear points → area = 0. Minimum 3 points guaranteed.
+        - paragraph [ref=e736]:
+          - strong [ref=e738]: "G. Code:"
+        - generic [ref=e739]:
+          - generic [ref=e740]:
+            - button "🐍 Python" [ref=e742] [cursor=pointer]:
+              - generic [ref=e743]: 🐍
+              - text: Python
+            - generic [ref=e744]: 1 languages
+          - code [ref=e746]: "def largest_triangle_area(points): n = len(points) max_area = class=\"gb-syn-number\">0.0 for i in range(n): x1, y1 = points[i] for j in range(i+class=\"gb-syn-number\">1, n): x2, y2 = points[j] for k in range(j+class=\"gb-syn-number\">1, n): x3, y3 = points[k] area = class=\"gb-syn-number\">0.5 * abs(x1*(y2-y3) + x2*(y3-y1) + x3*(y1-y2)) max_area = max(max_area, area) return max_area"
+        - 'heading "Problem 5: Almost Rectangle (Codeforces 1512B)" [level=4] [ref=e747]'
+        - paragraph [ref=e748]:
+          - generic [ref=e749]:
+            - strong [ref=e750]: "A. Intuition:"
+            - text: Given a grid with exactly two
+            - code [ref=e751]: "*"
+            - text: s, find the other two corners of the axis-aligned rectangle. The missing corners are determined by taking the row of one
+            - code [ref=e752]: "*"
+            - text: and the column of the other.
+        - paragraph [ref=e753]:
+          - generic [ref=e754]:
+            - strong [ref=e755]: "B. Brute Force:"
+            - text: Find both
+            - code [ref=e756]: "*"
+            - text: cells. The other two corners of the rectangle are
+            - code [ref=e757]: (r1, c2)
+            - text: and
+            - code [ref=e758]: (r2, c1)
+            - text: ", unless those fall outside the grid, in which case we need to adjust."
+        - paragraph [ref=e759]:
+          - generic [ref=e760]:
+            - strong [ref=e761]: "C. Optimized Approach:"
+            - text: Identify the two
+            - code [ref=e762]: "*"
+            - text: cells. Compute the missing corners. If a computed corner is out of bounds, swap the rows/columns to the opposite side.
+        - paragraph [ref=e763]:
+          - strong [ref=e765]: "D. Step-by-Step:"
+        - list [ref=e766]:
+          - listitem [ref=e767]: Find the two asterisks at (r1, c1) and (r2, c2)
+          - listitem [ref=e768]: The rectangle corners are (r1, c1), (r1, c2), (r2, c1), (r2, c2)
+          - listitem [ref=e769]: We already have two; the missing two are (r1, c2) and (r2, c1)
+          - listitem [ref=e770]: If r1 == r2, the missing rows must be the row above (r1-1) or below (r1+1), whichever is in bounds
+          - listitem [ref=e771]: Similarly if c1 == c2
+        - paragraph [ref=e772]:
+          - generic [ref=e773]:
+            - strong [ref=e774]: "E. Complexity:"
+            - text: O(n^2) or O(1) if coordinates tracked during input.
+        - paragraph [ref=e775]:
+          - generic [ref=e776]:
+            - strong [ref=e777]: "F. Edge Cases:"
+            - code [ref=e778]: "*"
+            - text: on same row or same column.
+        - paragraph [ref=e779]:
+          - strong [ref=e781]: "G. Code:"
+        - generic [ref=e782]:
+          - generic [ref=e783]:
+            - button "🐍 Python" [ref=e785] [cursor=pointer]:
+              - generic [ref=e786]: 🐍
+              - text: Python
+            - generic [ref=e787]: 1 languages
+          - code [ref=e789]: "def solve(): t = int(input()) for _ in range(t): n = int(input()) grid = [list(input().strip()) for _ in range(n)] pts = [] for i in range(n): for j in range(n): if grid[i][j] == class=\"gb-syn-string\">'*': pts.append((i, j)) r1, c1 = pts[class=\"gb-syn-number\">0] r2, c2 = pts[class=\"gb-syn-number\">1] if r1 == r2: r3 = (r1 + class=\"gb-syn-number\">1) % n r4 = r3 c3, c4 = c1, c2 elif c1 == c2: c3 = (c1 + class=\"gb-syn-number\">1) % n c4 = c3 r3, r4 = r1, r2 else: r3, c3 = r1, c2 r4, c4 = r2, c1 grid[r3][c3] = class=\"gb-syn-string\">'*' grid[r4][c4] = class=\"gb-syn-string\">'*' for row in grid: print(class=\"gb-syn-string\">''.join(row)) if __name__ == class=\"gb-syn-string\">\"__main__\": solve()"
+        - separator [ref=e790]
+      - link "Next Basic Geometry →" [ref=e792] [cursor=pointer]:
+        - /url: /geometry-book/basic-geometry
+        - generic [ref=e793]:
+          - generic [ref=e794]: Next
+          - generic [ref=e795]: Basic Geometry
+        - generic [ref=e796]: →
+  - contentinfo [ref=e20]:
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - link "fx DSA Mastery by frontendx" [ref=e24] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e26]: fx
+            - generic [ref=e27]:
+              - paragraph [ref=e28]: DSA Mastery
+              - paragraph [ref=e29]: by frontendx
+          - paragraph [ref=e30]: 38,000+ curated DSA problems from 50+ platforms. Organized by topic, tagged by concept, ready for practice.
+          - generic [ref=e31]:
+            - generic [ref=e32]: 38k+ Problems
+            - generic [ref=e33]: 50+ Platforms
+            - generic [ref=e34]: 14 Topics
+        - generic [ref=e35]:
+          - heading "Explore" [level=3] [ref=e36]
+          - list [ref=e37]:
+            - listitem [ref=e38]:
+              - link "All Topics" [ref=e39] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e40]:
+              - link "Problem Explorer" [ref=e41] [cursor=pointer]:
+                - /url: /explore
+            - listitem [ref=e42]:
+              - link "Learn DSA" [ref=e43] [cursor=pointer]:
+                - /url: /learn
+        - generic [ref=e44]:
+          - heading "Topics" [level=3] [ref=e45]
+          - list [ref=e46]:
+            - listitem [ref=e47]:
+              - link "Dynamic Programming" [ref=e48] [cursor=pointer]:
+                - /url: /problems/dp
+            - listitem [ref=e49]:
+              - link "Binary Search" [ref=e50] [cursor=pointer]:
+                - /url: /problems/binary_search
+            - listitem [ref=e51]:
+              - link "Graph" [ref=e52] [cursor=pointer]:
+                - /url: /problems/graph
+            - listitem [ref=e53]:
+              - link "Tree" [ref=e54] [cursor=pointer]:
+                - /url: /problems/tree
+            - listitem [ref=e55]:
+              - link "Math" [ref=e56] [cursor=pointer]:
+                - /url: /problems/math
+        - generic [ref=e57]:
+          - heading "Resources" [level=3] [ref=e58]
+          - list [ref=e59]:
+            - listitem [ref=e60]:
+              - link "Patterns Cheat Sheet" [ref=e61] [cursor=pointer]:
+                - /url: /learn/patterns
+            - listitem [ref=e62]:
+              - link "GitHub ↗" [ref=e63] [cursor=pointer]:
+                - /url: https://github.com/rashidtvmr/dsa-inventory
+                - text: GitHub
+                - generic [ref=e64]: ↗
+      - generic [ref=e65]:
+        - paragraph [ref=e66]: © 2026 DSA Mastery. Built for DSA practice.
+        - link "GitHub" [ref=e68] [cursor=pointer]:
+          - /url: https://github.com/rashidtvmr/dsa-inventory
+          - generic [ref=e69]: GitHub
+          - img [ref=e70]

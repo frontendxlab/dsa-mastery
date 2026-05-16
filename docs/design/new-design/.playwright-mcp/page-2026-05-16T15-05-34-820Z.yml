@@ -1,0 +1,77 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: fx
+        - generic [ref=e7]: DSA Mastery
+      - generic [ref=e8]:
+        - 'button "Theme mode: auto (system). Click to switch to light mode." [ref=e9]': Auto
+        - link "GitHub" [ref=e10] [cursor=pointer]:
+          - /url: https://github.com/rashidtvmr/dsa-inventory
+          - img [ref=e11]
+        - button "Toggle menu" [ref=e14] [cursor=pointer]:
+          - img [ref=e15]
+  - main [ref=e17]
+  - contentinfo [ref=e20]:
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - link "fx DSA Mastery by frontendx" [ref=e24] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e26]: fx
+            - generic [ref=e27]:
+              - paragraph [ref=e28]: DSA Mastery
+              - paragraph [ref=e29]: by frontendx
+          - paragraph [ref=e30]: 38,000+ curated DSA problems from 50+ platforms. Organized by topic, tagged by concept, ready for practice.
+          - generic [ref=e31]:
+            - generic [ref=e32]: 38k+ Problems
+            - generic [ref=e33]: 50+ Platforms
+            - generic [ref=e34]: 14 Topics
+        - generic [ref=e35]:
+          - heading "Explore" [level=3] [ref=e36]
+          - list [ref=e37]:
+            - listitem [ref=e38]:
+              - link "All Topics" [ref=e39] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e40]:
+              - link "Problem Explorer" [ref=e41] [cursor=pointer]:
+                - /url: /explore
+            - listitem [ref=e42]:
+              - link "Learn DSA" [ref=e43] [cursor=pointer]:
+                - /url: /learn
+        - generic [ref=e44]:
+          - heading "Topics" [level=3] [ref=e45]
+          - list [ref=e46]:
+            - listitem [ref=e47]:
+              - link "Dynamic Programming" [ref=e48] [cursor=pointer]:
+                - /url: /problems/dp
+            - listitem [ref=e49]:
+              - link "Binary Search" [ref=e50] [cursor=pointer]:
+                - /url: /problems/binary_search
+            - listitem [ref=e51]:
+              - link "Graph" [ref=e52] [cursor=pointer]:
+                - /url: /problems/graph
+            - listitem [ref=e53]:
+              - link "Tree" [ref=e54] [cursor=pointer]:
+                - /url: /problems/tree
+            - listitem [ref=e55]:
+              - link "Math" [ref=e56] [cursor=pointer]:
+                - /url: /problems/math
+        - generic [ref=e57]:
+          - heading "Resources" [level=3] [ref=e58]
+          - list [ref=e59]:
+            - listitem [ref=e60]:
+              - link "Patterns Cheat Sheet" [ref=e61] [cursor=pointer]:
+                - /url: /learn/patterns
+            - listitem [ref=e62]:
+              - link "GitHub ↗" [ref=e63] [cursor=pointer]:
+                - /url: https://github.com/rashidtvmr/dsa-inventory
+                - text: GitHub
+                - generic [ref=e64]: ↗
+      - generic [ref=e65]:
+        - paragraph [ref=e66]: © 2026 DSA Mastery. Built for DSA practice.
+        - link "GitHub" [ref=e68] [cursor=pointer]:
+          - /url: https://github.com/rashidtvmr/dsa-inventory
+          - generic [ref=e69]: GitHub
+          - img [ref=e70]

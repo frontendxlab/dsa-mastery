@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Pointers — DSA Mastery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;scroll-behavior:smooth}
+:root{
+  --f:'Inter',system-ui,-apple-system,sans-serif;
+  --fm:'JetBrains Mono',ui-monospace,monospace;
+  --bg:#090a0e; --bg2:#0d0f19; --card:#111420; --hover:#181a2c;
+  --nav-bg:rgba(9,10,14,0.86);
+  --b:rgba(214,235,253,0.08); --b2:rgba(214,235,253,0.16);
+  --t:#e8eaf0; --t2:#7d8299; --t3:rgba(232,234,240,0.36);
+  --a:#3b9eff; --a-bg:rgba(59,158,255,0.10); --a-bdr:rgba(59,158,255,0.22); --a-glow:rgba(59,158,255,0.14);
+  --easy:#34d399; --easy-bg:rgba(52,211,153,0.10);
+  --med:#fbbf24; --med-bg:rgba(251,191,36,0.10);
+  --hard:#f87171; --hard-bg:rgba(248,113,113,0.10);
+  --code-bg:#0d0f19;
+  --code-kw:#3b9eff; --code-str:#34d399; --code-cmt:rgba(232,234,240,0.32); --code-num:#fbbf24; --code-fn:#a78bfa; --code-op:rgba(232,234,240,0.55);
+  --sh:0 1px 3px rgba(0,0,0,.3),0 0 0 1px var(--b);
+  --r:8px; --rl:12px; --rp:9999px;
+}
+:root[data-theme="light"]{
+  --bg:#fafbff; --bg2:#f3f5fb; --card:#ffffff; --hover:#edf0f8;
+  --nav-bg:rgba(250,251,255,0.90);
+  --b:rgba(0,0,51,0.07); --b2:rgba(0,0,51,0.14);
+  --t:#0e0f14; --t2:#4b4f63; --t3:rgba(14,15,20,.40);
+  --a:#1a6de0; --a-bg:rgba(26,109,224,0.08); --a-bdr:rgba(26,109,224,0.22); --a-glow:rgba(26,109,224,0.10);
+  --easy:#059669; --easy-bg:rgba(5,150,105,0.10);
+  --med:#d97706; --med-bg:rgba(217,119,6,0.10);
+  --hard:#dc2626; --hard-bg:rgba(220,38,38,0.10);
+  --code-bg:#f3f5fb;
+  --code-kw:#1a6de0; --code-str:#059669; --code-cmt:rgba(14,15,20,.35); --code-num:#d97706; --code-fn:#7c3aed; --code-op:rgba(14,15,20,.50);
+  --sh:0 1px 3px rgba(0,0,0,.06),0 0 0 1px var(--b);
+}
+body{font-family:var(--f);background:var(--bg);color:var(--t);line-height:1.6;min-height:100vh}
+.w{max-width:1200px;margin:0 auto;padding:0 24px}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;background:none;border:none;font-family:inherit;color:inherit}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;height:60px;background:var(--nav-bg);backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%);border-bottom:1px solid var(--b)}
+.nav-inner{height:100%;display:flex;align-items:center;gap:16px}
+.logo{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.logo-mark{display:flex;align-items:center;justify-content:center;width:28px;height:28px;background:var(--a);color:#fff;font-size:11px;font-weight:700;border-radius:7px;font-family:var(--fm);letter-spacing:-.5px}
+.logo-name{font-size:14px;font-weight:600;color:var(--t);letter-spacing:-.3px}
+.nav-links{display:flex;align-items:center;gap:2px;flex:1}
+.nav-link{padding:5px 12px;border-radius:6px;font-size:14px;font-weight:500;color:var(--t2);transition:all .15s}
+.nav-link:hover{background:var(--hover);color:var(--t)}
+.nav-link.act{background:var(--a-bg);color:var(--a)}
+.nav-end{display:flex;align-items:center;gap:4px;margin-left:auto}
+.icon-btn{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:var(--r);color:var(--t2);transition:all .15s}
+.icon-btn:hover{background:var(--hover);color:var(--t)}
+
+/* LAYOUT */
+.page{padding-top:80px}
+.article-outer{max-width:1200px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1fr 248px;gap:64px;align-items:start}
+@media(max-width:1080px){.article-outer{grid-template-columns:1fr}.toc-col{display:none}}
+@media(max-width:640px){.article-outer{padding:0 16px}.nav-links{display:none}}
+
+/* BREADCRUMB */
+.breadcrumb-bar{border-bottom:1px solid var(--b);padding:0 0 0 0;position:sticky;top:60px;z-index:50;background:var(--nav-bg);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.breadcrumb{display:flex;align-items:center;gap:6px;padding:10px 24px;max-width:1200px;margin:0 auto;font-size:13px;color:var(--t2);overflow-x:auto;white-space:nowrap}
+.breadcrumb a{color:var(--t2);transition:color .15s}.breadcrumb a:hover{color:var(--t)}
+.breadcrumb-sep{color:var(--t3);flex-shrink:0}
+.breadcrumb-cur{color:var(--t)}
+
+/* ARTICLE */
+.article-col{padding:40px 0 80px;min-width:0}
+.article-header{margin-bottom:40px;padding-bottom:32px;border-bottom:1px solid var(--b)}
+.article-part-tag{display:inline-flex;align-items:center;gap:6px;padding:3px 10px;background:var(--a-bg);border:1px solid var(--a-bdr);border-radius:var(--rp);font-size:11px;font-weight:600;color:var(--a);letter-spacing:.04em;text-transform:uppercase;margin-bottom:16px;font-family:var(--fm)}
+.article-h1{font-size:clamp(28px,4vw,42px);font-weight:700;letter-spacing:-.04em;line-height:1.1;color:var(--t);margin-bottom:12px}
+.article-lead{font-size:18px;color:var(--t2);line-height:1.65;margin-bottom:20px}
+.article-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.meta-pill{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:var(--rp);font-size:12px;font-weight:500;border:1px solid var(--b2);color:var(--t2)}
+.meta-pill.solved{background:var(--easy-bg);border-color:var(--easy);color:var(--easy)}
+
+/* PROSE */
+.prose{font-size:16px;line-height:1.72;color:var(--t)}
+.prose > * + *{margin-top:24px}
+.prose h2{font-size:22px;font-weight:700;letter-spacing:-.02em;color:var(--t);margin-top:48px;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--b)}
+.prose h3{font-size:17px;font-weight:600;color:var(--t);margin-top:32px;margin-bottom:10px;letter-spacing:-.01em}
+.prose p{color:var(--t2);line-height:1.75}
+.prose strong{color:var(--t);font-weight:600}
+.prose ul,.prose ol{padding-left:20px;color:var(--t2)}
+.prose li{margin-top:6px;line-height:1.65}
+.prose li::marker{color:var(--a)}
+.prose a{color:var(--a);border-bottom:1px solid var(--a-bdr);transition:border-color .15s}
+.prose a:hover{border-color:var(--a)}
+
+/* CODE BLOCK */
+.code-block{position:relative;border:1px solid var(--b);border-radius:var(--rl);overflow:hidden;font-family:var(--fm)}
+.code-block-header{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;background:var(--card);border-bottom:1px solid var(--b)}
+.code-lang{font-size:12px;font-weight:600;color:var(--t2);text-transform:uppercase;letter-spacing:.04em}
+.copy-btn{display:flex;align-items:center;gap:5px;padding:3px 9px;background:var(--hover);border:1px solid var(--b);border-radius:5px;font-size:11px;font-weight:500;color:var(--t2);cursor:pointer;transition:all .15s;font-family:var(--f)}
+.copy-btn:hover{color:var(--t);border-color:var(--b2)}
+.copy-btn.copied{color:var(--easy);border-color:var(--easy)}
+.code-body{padding:20px;background:var(--code-bg);overflow-x:auto;font-size:14px;line-height:1.7}
+.code-body code{font-family:var(--fm)}
+.kw{color:var(--code-kw)}
+.fn{color:var(--code-fn)}
+.str{color:var(--code-str)}
+.cmt{color:var(--code-cmt);font-style:italic}
+.num{color:var(--code-num)}
+.op{color:var(--code-op)}
+
+/* CALLOUTS */
+.callout{padding:14px 18px;border-radius:var(--r);border:1px solid;font-size:14px;line-height:1.65}
+.callout.tip{background:var(--a-bg);border-color:var(--a-bdr);color:var(--t2)}
+.callout.tip .callout-title{color:var(--a)}
+.callout.warn{background:var(--med-bg);border-color:rgba(251,191,36,.25);color:var(--t2)}
+.callout.warn .callout-title{color:var(--med)}
+.callout.note{background:var(--easy-bg);border-color:rgba(52,211,153,.2);color:var(--t2)}
+.callout.note .callout-title{color:var(--easy)}
+.callout-title{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+
+/* INTERACTIVE DEMO PLACEHOLDER */
+.demo-placeholder{border:1px solid var(--b);border-radius:var(--rl);overflow:hidden}
+.demo-header{padding:12px 18px;background:var(--card);border-bottom:1px solid var(--b);display:flex;align-items:center;justify-content:space-between}
+.demo-title{font-size:13px;font-weight:600;color:var(--t)}
+.demo-tag{padding:2px 8px;background:var(--a-bg);border:1px solid var(--a-bdr);border-radius:var(--rp);font-size:10px;font-weight:600;color:var(--a);text-transform:uppercase;letter-spacing:.04em}
+.demo-body{padding:32px 24px;background:var(--bg2);min-height:180px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px}
+.demo-array{display:flex;gap:6px;align-items:center}
+.demo-cell{width:44px;height:44px;border:1px solid var(--b2);border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:600;color:var(--t);font-family:var(--fm);background:var(--card);transition:all .25s}
+.demo-cell.left{border-color:var(--easy);background:var(--easy-bg);color:var(--easy)}
+.demo-cell.right{border-color:var(--a);background:var(--a-bg);color:var(--a)}
+.demo-label{font-size:12px;color:var(--t2)}
+.demo-controls{display:flex;gap:8px}
+.demo-btn{padding:7px 14px;background:var(--card);border:1px solid var(--b2);border-radius:var(--r);font-size:12px;font-weight:500;color:var(--t2);cursor:pointer;transition:all .15s;font-family:var(--f)}
+.demo-btn:hover{border-color:var(--a);color:var(--a)}
+.demo-btn.primary{background:var(--a);border-color:var(--a);color:#fff}
+.demo-btn.primary:hover{filter:brightness(1.12)}
+
+/* PROBLEMS TABLE */
+.problems-table-wrap{overflow-x:auto;border:1px solid var(--b);border-radius:var(--rl)}
+.problems-table{width:100%;border-collapse:collapse}
+.problems-table th{padding:10px 14px;font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--t3);background:var(--card);border-bottom:1px solid var(--b);text-align:left;white-space:nowrap}
+.problems-table td{padding:11px 14px;font-size:13px;border-bottom:1px solid var(--b);vertical-align:middle}
+.problems-table tr:last-child td{border-bottom:none}
+.problems-table tr:hover td{background:var(--hover)}
+.solve-check{width:16px;height:16px;border-radius:3px;border:1px solid var(--b2);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .15s;flex-shrink:0}
+.solve-check.done{background:var(--easy);border-color:var(--easy)}
+.prob-link{color:var(--t);font-weight:500;transition:color .15s}.prob-link:hover{color:var(--a)}
+.plat-badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:var(--rp);font-size:11px;font-weight:600}
+.diff-badge{padding:2px 7px;border-radius:var(--rp);font-size:11px;font-weight:600;font-family:var(--fm)}
+.diff-Easy{color:var(--easy);background:var(--easy-bg)}
+.diff-Medium{color:var(--med);background:var(--med-bg)}
+.diff-Hard{color:var(--hard);background:var(--hard-bg)}
+
+/* TOC */
+.toc-col{position:sticky;top:108px;padding:40px 0 0}
+.toc-title{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);margin-bottom:14px}
+.toc-list{display:flex;flex-direction:column;gap:1px}
+.toc-item{padding:6px 10px;border-radius:6px;font-size:13px;color:var(--t2);cursor:pointer;transition:all .15s;border-left:2px solid transparent}
+.toc-item:hover{background:var(--hover);color:var(--t)}
+.toc-item.active{color:var(--a);border-left-color:var(--a);background:var(--a-bg)}
+.toc-divider{height:1px;background:var(--b);margin:12px 0}
+.toc-progress{margin-top:4px;padding:14px;background:var(--card);border:1px solid var(--b);border-radius:var(--r)}
+.toc-prog-label{font-size:11px;color:var(--t2);margin-bottom:8px}
+.toc-prog-bar{height:3px;background:var(--b2);border-radius:var(--rp);overflow:hidden;margin-bottom:6px}
+.toc-prog-fill{height:100%;background:var(--a);border-radius:var(--rp);transition:width .3s}
+.toc-prog-num{font-size:11px;font-weight:600;color:var(--a);font-family:var(--fm)}
+
+/* PREV/NEXT */
+.chapter-nav{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:56px;padding-top:32px;border-top:1px solid var(--b)}
+.chapter-nav-card{padding:16px 20px;background:var(--card);border:1px solid var(--b);border-radius:var(--rl);transition:all .15s;cursor:pointer;display:flex;align-items:center;gap:12px}
+.chapter-nav-card:hover{border-color:var(--b2);background:var(--hover);transform:translateY(-1px)}
+.chapter-nav-card.next{justify-content:flex-end;text-align:right;flex-direction:row-reverse}
+.cnc-dir{font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--t3);margin-bottom:3px}
+.cnc-title{font-size:14px;font-weight:600;color:var(--t)}
+.cnc-arrow{color:var(--t2);flex-shrink:0}
+
+/* FOOTER */
+.footer{border-top:1px solid var(--b);padding:28px 0;margin-top:40px}
+.footer-row{display:flex;align-items:center;justify-content:space-between;font-size:12px;color:var(--t3)}
+.footer-gh{color:var(--t2);display:flex;transition:color .15s}.footer-gh:hover{color:var(--t)}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const { useState, useEffect, useRef } = React;
+
+const PROBLEMS = [
+  { id:1,  title:'Two Sum',                     platform:'LeetCode',   plat_color:'#FFA116', diff:'Easy',   url:'#', solved:true },
+  { id:2,  title:'Container With Most Water',   platform:'LeetCode',   plat_color:'#FFA116', diff:'Medium', url:'#', solved:false },
+  { id:3,  title:'3Sum',                        platform:'LeetCode',   plat_color:'#FFA116', diff:'Medium', url:'#', solved:false },
+  { id:4,  title:'Sort Colors (Dutch National Flag)',platform:'LeetCode',plat_color:'#FFA116',diff:'Medium', url:'#', solved:false },
+  { id:5,  title:'Two Pointer Sorting',         platform:'Codeforces', plat_color:'#1F8ACB', diff:'Easy',   url:'#', solved:false },
+  { id:6,  title:'Valid Palindrome',            platform:'LeetCode',   plat_color:'#FFA116', diff:'Easy',   url:'#', solved:true },
+  { id:7,  title:'Reverse Vowels of a String',  platform:'LeetCode',   plat_color:'#FFA116', diff:'Easy',   url:'#', solved:false },
+  { id:8,  title:'Trapping Rain Water',         platform:'LeetCode',   plat_color:'#FFA116', diff:'Hard',   url:'#', solved:false },
+];
+
+const TOC = [
+  'The Core Idea',
+  'Template',
+  'When to Use It',
+  'Worked Example',
+  'Interactive Demo',
+  'Practice Problems',
+  'Common Pitfalls',
+];
+
+const GH = () => (
+  <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.164 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.343-3.369-1.343-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/>
+  </svg>
+);
+const Sun = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>;
+const Moon = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>;
+const CheckSmall = () => <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="#fff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="2,6 5,9 10,3"/></svg>;
+const CopyIcon = () => <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>;
+
+function Nav({ dark, setDark }) {
+  return (
+    <nav className="nav">
+      <div className="nav-inner w">
+        <a href="Landing.html" className="logo">
+          <span className="logo-mark">fx</span>
+          <span className="logo-name">DSA Mastery</span>
+        </a>
+        <div className="nav-links">
+          <a href="Learn.html" className="nav-link act">Learn</a>
+          <a href="Explore.html" className="nav-link">Explore</a>
+          <a href="#" className="nav-link">Patterns</a>
+        </div>
+        <div className="nav-end">
+          <a href="https://github.com/rashidtvmr/dsa-inventory" className="icon-btn" target="_blank" rel="noreferrer"><GH /></a>
+          <button className="icon-btn" onClick={() => setDark(d => !d)}>{dark ? <Sun /> : <Moon />}</button>
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+function CodeBlock({ lang, children }) {
+  const [copied, setCopied] = useState(false);
+  return (
+    <div className="code-block">
+      <div className="code-block-header">
+        <span className="code-lang">{lang}</span>
+        <button className={`copy-btn${copied ? ' copied' : ''}`} onClick={() => { setCopied(true); setTimeout(() => setCopied(false), 1800); }}>
+          <CopyIcon />{copied ? 'Copied!' : 'Copy'}
+        </button>
+      </div>
+      <div className="code-body"><code dangerouslySetInnerHTML={{__html: children}} /></div>
+    </div>
+  );
+}
+
+function Callout({ type, title, children }) {
+  return (
+    <div className={`callout ${type}`}>
+      <div className="callout-title">{type === 'tip' ? '💡 Tip' : type === 'warn' ? '⚠ Warning' : '✓ Key Insight'} — {title}</div>
+      <div>{children}</div>
+    </div>
+  );
+}
+
+function InteractiveDemo() {
+  const arr = [1, 4, 6, 8, 11, 15];
+  const target = 19;
+  const [left, setLeft] = useState(0);
+  const [right, setRight] = useState(arr.length - 1);
+  const [found, setFound] = useState(null);
+
+  const step = () => {
+    if (found !== null) { setLeft(0); setRight(arr.length-1); setFound(null); return; }
+    const sum = arr[left] + arr[right];
+    if (sum === target) { setFound([left, right]); return; }
+    if (sum < target) setLeft(l => Math.min(l + 1, right - 1));
+    else setRight(r => Math.max(r - 1, left + 1));
+  };
+
+  return (
+    <div className="demo-placeholder">
+      <div className="demo-header">
+        <span className="demo-title">Two Pointers — Sum to {target}</span>
+        <span className="demo-tag">Interactive</span>
+      </div>
+      <div className="demo-body">
+        <div className="demo-label" style={{fontSize:13,color:'var(--t2)'}}>
+          arr = [{arr.join(', ')}] · target = {target}
+          {found ? <span style={{color:'var(--easy)',marginLeft:8}}>✓ Found: {arr[found[0]]} + {arr[found[1]]} = {target}</span>
+                 : <span style={{marginLeft:8}}>sum = {arr[left]} + {arr[right]} = {arr[left]+arr[right]}</span>}
+        </div>
+        <div className="demo-array">
+          {arr.map((v, i) => (
+            <div key={i} className={`demo-cell${i===left ? ' left' : i===right ? ' right' : ''}`}
+                 style={found && (i===found[0]||i===found[1]) ? {borderColor:'var(--easy)',background:'var(--easy-bg)',color:'var(--easy)'} : {}}>
+              {v}
+            </div>
+          ))}
+        </div>
+        <div style={{display:'flex',gap:12,alignItems:'center',fontSize:12,color:'var(--t2)'}}>
+          <span style={{color:'var(--easy)'}}>■</span> left pointer
+          <span style={{color:'var(--a)',marginLeft:4}}>■</span> right pointer
+        </div>
+        <div className="demo-controls">
+          <button className="demo-btn primary" onClick={step}>{found ? 'Reset' : 'Step →'}</button>
+          <button className="demo-btn" onClick={() => { setLeft(0); setRight(arr.length-1); setFound(null); }}>Reset</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ProblemsTable() {
+  const [solved, setSolved] = useState(() => new Set(PROBLEMS.filter(p=>p.solved).map(p=>p.id)));
+  return (
+    <div className="problems-table-wrap">
+      <table className="problems-table">
+        <thead>
+          <tr>
+            <th style={{width:36}}></th>
+            <th>#</th>
+            <th>Problem</th>
+            <th>Platform</th>
+            <th>Difficulty</th>
+          </tr>
+        </thead>
+        <tbody>
+          {PROBLEMS.map(p => {
+            const done = solved.has(p.id);
+            return (
+              <tr key={p.id}>
+                <td>
+                  <div className={`solve-check${done ? ' done' : ''}`}
+                       onClick={() => setSolved(s => { const n=new Set(s); done?n.delete(p.id):n.add(p.id); return n; })}>
+                    {done && <CheckSmall />}
+                  </div>
+                </td>
+                <td style={{color:'var(--t3)',fontFamily:'var(--fm)',fontSize:12}}>{p.id}</td>
+                <td>
+                  <a href={p.url} className="prob-link">{p.title}</a>
+                </td>
+                <td>
+                  <span className="plat-badge" style={{background:`${p.plat_color}18`,color:p.plat_color}}>
+                    {p.platform}
+                  </span>
+                </td>
+                <td><span className={`diff-badge diff-${p.diff}`}>{p.diff}</span></td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+function App() {
+  const [dark, setDark] = useState(() => {
+    try { return localStorage.getItem('dsam-theme') !== 'light'; } catch { return true; }
+  });
+  const [activeToc, setActiveToc] = useState(0);
+  const [readProgress, setReadProgress] = useState(0);
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+    try { localStorage.setItem('dsam-theme', dark ? 'dark' : 'light'); } catch {}
+  }, [dark]);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const el = document.documentElement;
+      const pct = el.scrollTop / (el.scrollHeight - el.clientHeight);
+      setReadProgress(Math.round(pct * 100));
+      const tIdx = Math.min(TOC.length-1, Math.floor(pct * TOC.length * 1.4));
+      setActiveToc(tIdx);
+    };
+    window.addEventListener('scroll', onScroll, {passive:true});
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  const pyCode = `<span class="kw">def</span> <span class="fn">two_pointers</span>(arr, target):
+    left, right = <span class="num">0</span>, <span class="fn">len</span>(arr) - <span class="num">1</span>
+
+    <span class="kw">while</span> left &lt; right:
+        current_sum = arr[left] + arr[right]
+
+        <span class="kw">if</span> current_sum == target:
+            <span class="kw">return</span> [left, right]  <span class="cmt"># found!</span>
+        <span class="kw">elif</span> current_sum &lt; target:
+            left += <span class="num">1</span>   <span class="cmt"># need bigger sum → move left right</span>
+        <span class="kw">else</span>:
+            right -= <span class="num">1</span>  <span class="cmt"># need smaller sum → move right left</span>
+
+    <span class="kw">return</span> <span class="num">-1</span>`;
+
+  const jsCode = `<span class="kw">function</span> <span class="fn">twoPointers</span>(arr, target) {
+  <span class="kw">let</span> left = <span class="num">0</span>, right = arr.length - <span class="num">1</span>;
+
+  <span class="kw">while</span> (left &lt; right) {
+    <span class="kw">const</span> sum = arr[left] + arr[right];
+
+    <span class="kw">if</span> (sum === target) <span class="kw">return</span> [left, right];
+    <span class="kw">if</span> (sum &lt; target) left++;
+    <span class="kw">else</span> right--;
+  }
+
+  <span class="kw">return</span> <span class="num">-1</span>;
+}`;
+
+  return (
+    <>
+      <Nav dark={dark} setDark={setDark} />
+
+      {/* READ PROGRESS BAR */}
+      <div style={{position:'fixed',top:60,left:0,right:0,zIndex:99,height:2,background:'var(--b)'}}>
+        <div style={{height:'100%',width:`${readProgress}%`,background:'var(--a)',transition:'width .1s linear'}} />
+      </div>
+
+      <div className="page">
+        {/* BREADCRUMB */}
+        <div className="breadcrumb-bar">
+          <div className="breadcrumb">
+            <a href="Learn.html">Learn</a>
+            <span className="breadcrumb-sep">/</span>
+            <span>Part I — Arrays &amp; Pointers</span>
+            <span className="breadcrumb-sep">/</span>
+            <span className="breadcrumb-cur">Two Pointers</span>
+          </div>
+        </div>
+
+        <div className="article-outer">
+          {/* MAIN ARTICLE */}
+          <article className="article-col">
+            <header className="article-header">
+              <div className="article-part-tag">Part I · Chapter 1</div>
+              <h1 className="article-h1">Two Pointers</h1>
+              <p className="article-lead">Prune half the search space at every step.</p>
+              <div className="article-meta">
+                <span className="meta-pill">14 min read</span>
+                <span className="meta-pill" style={{background:'var(--easy-bg)',borderColor:'var(--easy)',color:'var(--easy)'}}>Easy</span>
+                <span className="meta-pill">Arrays &amp; Pointers</span>
+                <span className="meta-pill">{PROBLEMS.length} problems</span>
+              </div>
+            </header>
+
+            <div className="prose">
+              <h2>The Core Idea</h2>
+              <p>
+                Two pointers is one of the most universally useful patterns in DSA. The idea is simple: use <strong>two index variables</strong> that move toward each other (or in the same direction) through an array. Instead of checking every pair — which is O(n²) — you use invariants to skip vast portions of the search space.
+              </p>
+              <p>
+                The key insight: <strong>if the array is sorted</strong>, you can always decide which pointer to move based on the current sum. This transforms many brute-force O(n²) solutions into O(n).
+              </p>
+
+              <Callout type="note" title="When does it work?">
+                Two pointers shines on <strong>sorted arrays</strong> and problems with a monotonic property: moving one pointer makes things strictly "better" or "worse", so you can safely discard the alternatives.
+              </Callout>
+
+              <h2>Template</h2>
+              <CodeBlock lang="Python">{pyCode}</CodeBlock>
+              <CodeBlock lang="JavaScript">{jsCode}</CodeBlock>
+
+              <h2>When to Use It</h2>
+              <ul>
+                <li>Find a pair (or triplet) with a given sum in a sorted array</li>
+                <li>Check if a string is a palindrome</li>
+                <li>Remove duplicates from a sorted array in-place</li>
+                <li>Merge two sorted arrays</li>
+                <li>Reverse an array or string in-place</li>
+                <li>Partition an array around a pivot</li>
+              </ul>
+
+              <Callout type="tip" title="The Sorted Array Trick">
+                If the problem asks "find pair with sum X" on an unsorted array, <strong>sort first</strong> (O(n log n)) then apply two pointers (O(n)). The combined O(n log n) still beats brute-force O(n²).
+              </Callout>
+
+              <h2>Worked Example</h2>
+              <p>
+                <strong>Problem:</strong> Container With Most Water. Given an array of heights, find two bars that form a container holding the most water.
+              </p>
+              <p>
+                Start both pointers at the ends. The area is <code style={{fontFamily:'var(--fm)',fontSize:13,color:'var(--a)'}}>min(h[l], h[r]) × (r - l)</code>. To maximize, always move the <strong>shorter bar</strong> inward — moving the taller bar can only decrease the height, so it can never improve things.
+              </p>
+
+              <CodeBlock lang="Python">{`<span class="kw">def</span> <span class="fn">max_area</span>(height):
+    left, right = <span class="num">0</span>, <span class="fn">len</span>(height) - <span class="num">1</span>
+    best = <span class="num">0</span>
+
+    <span class="kw">while</span> left &lt; right:
+        h = <span class="fn">min</span>(height[left], height[right])
+        best = <span class="fn">max</span>(best, h * (right - left))
+
+        <span class="kw">if</span> height[left] &lt; height[right]:
+            left += <span class="num">1</span>   <span class="cmt"># move shorter bar</span>
+        <span class="kw">else</span>:
+            right -= <span class="num">1</span>
+
+    <span class="kw">return</span> best`}</CodeBlock>
+
+              <h2>Interactive Demo</h2>
+              <InteractiveDemo />
+
+              <h2>Practice Problems</h2>
+              <p>Work through these in order. The first three are foundational.</p>
+              <ProblemsTable />
+
+              <h2>Common Pitfalls</h2>
+              <ul>
+                <li><strong>Not sorting first:</strong> Two pointers only works with sorted data (or data with a monotonic property). Always check if you need to sort first.</li>
+                <li><strong>Off-by-one in the loop condition:</strong> Use <code style={{fontFamily:'var(--fm)',fontSize:13,color:'var(--a)'}}>left &lt; right</code>, not <code style={{fontFamily:'var(--fm)',fontSize:13,color:'var(--a)'}}>left &lt;= right</code>, when searching for a pair.</li>
+                <li><strong>Moving both pointers:</strong> Only move one pointer per iteration. Moving both can skip valid answers.</li>
+                <li><strong>Forgetting to handle duplicates:</strong> In 3Sum and similar, you'll often need to skip duplicate values after finding a valid pair.</li>
+              </ul>
+
+              <Callout type="warn" title="3Sum needs de-duplication">
+                When extending to 3Sum, after finding a valid triplet, advance both pointers <em>while skipping duplicates</em>. Forgetting this step produces duplicate triplets in the output.
+              </Callout>
+
+              {/* PREV / NEXT */}
+              <div className="chapter-nav">
+                <div className="chapter-nav-card" style={{opacity:.5,cursor:'not-allowed'}}>
+                  <span className="cnc-arrow">←</span>
+                  <div><div className="cnc-dir">Previous</div><div className="cnc-title">— First chapter</div></div>
+                </div>
+                <a href="Learn.html" className="chapter-nav-card next">
+                  <div><div className="cnc-dir">Next</div><div className="cnc-title">Sliding Window</div></div>
+                  <span className="cnc-arrow">→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          {/* TOC SIDEBAR */}
+          <aside className="toc-col">
+            <div className="toc-title">On this page</div>
+            <nav className="toc-list">
+              {TOC.map((item, i) => (
+                <div key={item} className={`toc-item${activeToc === i ? ' active' : ''}`}>{item}</div>
+              ))}
+            </nav>
+            <div className="toc-divider" />
+            <div className="toc-progress">
+              <div className="toc-prog-label">Reading progress</div>
+              <div className="toc-prog-bar"><div className="toc-prog-fill" style={{width:`${readProgress}%`}} /></div>
+              <span className="toc-prog-num">{readProgress}%</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <footer className="footer">
+        <div className="w footer-row">
+          <span>© 2026 frontendx. Built for DSA practice.</span>
+          <a href="https://github.com/rashidtvmr/dsa-inventory" target="_blank" rel="noreferrer" className="footer-gh"><GH /></a>
+        </div>
+      </footer>
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

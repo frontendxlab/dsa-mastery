@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Problems — DSA Mastery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;scroll-behavior:smooth}
+:root{
+  --f:'Inter',system-ui,-apple-system,sans-serif;
+  --fm:'JetBrains Mono',ui-monospace,monospace;
+  --bg:#090a0e; --bg2:#0d0f19; --card:#111420; --hover:#181a2c;
+  --nav-bg:rgba(9,10,14,0.86);
+  --b:rgba(214,235,253,0.08); --b2:rgba(214,235,253,0.16);
+  --t:#e8eaf0; --t2:#7d8299; --t3:rgba(232,234,240,0.36);
+  --a:#3b9eff; --a-bg:rgba(59,158,255,0.10); --a-bdr:rgba(59,158,255,0.22); --a-glow:rgba(59,158,255,0.14);
+  --easy:#34d399; --easy-bg:rgba(52,211,153,0.10);
+  --med:#fbbf24;  --med-bg:rgba(251,191,36,0.10);
+  --hard:#f87171; --hard-bg:rgba(248,113,113,0.10);
+  --sh:0 1px 3px rgba(0,0,0,.3),0 0 0 1px var(--b);
+  --r:8px; --rl:12px; --rp:9999px;
+}
+:root[data-theme="light"]{
+  --bg:#fafbff; --bg2:#f3f5fb; --card:#ffffff; --hover:#edf0f8;
+  --nav-bg:rgba(250,251,255,0.90);
+  --b:rgba(0,0,51,0.07); --b2:rgba(0,0,51,0.14);
+  --t:#0e0f14; --t2:#4b4f63; --t3:rgba(14,15,20,.40);
+  --a:#1a6de0; --a-bg:rgba(26,109,224,0.08); --a-bdr:rgba(26,109,224,0.22); --a-glow:rgba(26,109,224,0.10);
+  --easy:#059669; --easy-bg:rgba(5,150,105,0.10);
+  --med:#d97706;  --med-bg:rgba(217,119,6,0.10);
+  --hard:#dc2626; --hard-bg:rgba(220,38,38,0.10);
+  --sh:0 1px 3px rgba(0,0,0,.06),0 0 0 1px var(--b);
+}
+body{font-family:var(--f);background:var(--bg);color:var(--t);line-height:1.6;min-height:100vh}
+.w{max-width:1200px;margin:0 auto;padding:0 24px}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;background:none;border:none;font-family:inherit;color:inherit}
+input,select{font-family:inherit;font-size:inherit;color:inherit}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;height:60px;background:var(--nav-bg);backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%);border-bottom:1px solid var(--b)}
+.nav-inner{height:100%;display:flex;align-items:center;gap:16px}
+.logo{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.logo-mark{display:flex;align-items:center;justify-content:center;width:28px;height:28px;background:var(--a);color:#fff;font-size:11px;font-weight:700;border-radius:7px;font-family:var(--fm);letter-spacing:-.5px}
+.logo-name{font-size:14px;font-weight:600;color:var(--t);letter-spacing:-.3px}
+.nav-links{display:flex;align-items:center;gap:2px;flex:1}
+.nav-link{padding:5px 12px;border-radius:6px;font-size:14px;font-weight:500;color:var(--t2);transition:all .15s}
+.nav-link:hover{background:var(--hover);color:var(--t)}
+.nav-link.act{background:var(--a-bg);color:var(--a)}
+.nav-end{display:flex;align-items:center;gap:4px;margin-left:auto}
+.icon-btn{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:var(--r);color:var(--t2);transition:all .15s}
+.icon-btn:hover{background:var(--hover);color:var(--t)}
+
+/* PAGE */
+.page{padding-top:100px;padding-bottom:80px}
+
+/* PAGE HEADER */
+.page-header{padding:40px 0 32px;border-bottom:1px solid var(--b);margin-bottom:28px}
+.page-eyebrow{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--a);margin-bottom:10px}
+.page-title{font-size:clamp(28px,4vw,40px);font-weight:700;letter-spacing:-.04em;color:var(--t);margin-bottom:8px}
+.page-subtitle{font-size:15px;color:var(--t2)}
+.page-stats{display:flex;align-items:center;gap:20px;margin-top:16px;flex-wrap:wrap}
+.page-stat{font-size:13px;color:var(--t2);display:flex;align-items:center;gap:5px}
+.page-stat strong{color:var(--t);font-weight:600}
+
+/* FILTER BAR */
+.filter-bar{background:var(--card);border:1px solid var(--b);border-radius:var(--rl);padding:14px 16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:16px;position:sticky;top:60px;z-index:40}
+
+.search-wrap{position:relative;flex:1;min-width:200px}
+.search-icon{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--t3);pointer-events:none;display:flex}
+.search-input{width:100%;padding:8px 12px 8px 34px;background:var(--bg2);border:1px solid var(--b);border-radius:var(--r);font-size:14px;color:var(--t);outline:none;transition:border-color .15s}
+.search-input::placeholder{color:var(--t3)}
+.search-input:focus{border-color:var(--a)}
+
+.filter-select{padding:8px 12px;background:var(--bg2);border:1px solid var(--b);border-radius:var(--r);font-size:13px;color:var(--t2);outline:none;cursor:pointer;transition:all .15s;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%237d8299' stroke-width='2' stroke-linecap='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;padding-right:30px}
+.filter-select:focus{border-color:var(--a);color:var(--t)}
+.filter-select option{background:var(--card);color:var(--t)}
+
+/* RATING RANGE */
+.rating-range{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.rating-label{font-size:12px;font-weight:500;color:var(--t3);white-space:nowrap}
+.rating-val{font-size:12px;font-weight:600;color:var(--a);font-family:var(--fm);white-space:nowrap;min-width:40px;text-align:center;padding:6px 8px;background:var(--bg2);border:1px solid var(--b);border-radius:6px}
+.range-input{-webkit-appearance:none;appearance:none;width:80px;height:3px;background:var(--b2);border-radius:var(--rp);outline:none;cursor:pointer}
+.range-input::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:14px;height:14px;border-radius:50%;background:var(--a);cursor:pointer;border:2px solid var(--bg)}
+.range-input::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:var(--a);cursor:pointer;border:2px solid var(--bg)}
+
+/* FILTER PILLS */
+.filter-pills{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:16px;min-height:28px}
+.filter-pill{display:inline-flex;align-items:center;gap:5px;padding:3px 9px;background:var(--a-bg);border:1px solid var(--a-bdr);border-radius:var(--rp);font-size:12px;font-weight:500;color:var(--a)}
+.pill-x{cursor:pointer;opacity:.7;margin-left:2px;transition:opacity .15s}.pill-x:hover{opacity:1}
+.results-info{font-size:13px;color:var(--t2);margin-left:auto;flex-shrink:0;font-family:var(--fm)}
+
+/* TOOLBAR */
+.toolbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.toolbar-left{display:flex;align-items:center;gap:8px}
+.toolbar-right{display:flex;align-items:center;gap:6px}
+.result-count{font-size:13px;color:var(--t2)}
+.result-count strong{color:var(--t);font-weight:600}
+.view-btn{padding:5px 10px;border-radius:6px;font-size:12px;font-weight:500;color:var(--t2);border:1px solid transparent;transition:all .15s}
+.view-btn:hover{background:var(--hover)}
+.view-btn.active{background:var(--card);border-color:var(--b2);color:var(--t)}
+.collection-btn{display:flex;align-items:center;gap:5px;padding:6px 12px;background:var(--card);border:1px solid var(--b);border-radius:var(--r);font-size:12px;font-weight:500;color:var(--t2);transition:all .15s}
+.collection-btn:hover{border-color:var(--b2);color:var(--t)}
+.collection-btn.has-items{background:var(--a-bg);border-color:var(--a-bdr);color:var(--a)}
+
+/* TABLE */
+.table-wrap{border:1px solid var(--b);border-radius:var(--rl);overflow:hidden}
+.prob-table{width:100%;border-collapse:collapse}
+.prob-table th{padding:10px 14px;font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--t3);background:var(--card);border-bottom:1px solid var(--b);text-align:left;white-space:nowrap;user-select:none;cursor:pointer;transition:color .15s}
+.prob-table th:hover{color:var(--t2)}
+.prob-table th .sort-icon{margin-left:4px;opacity:.5;display:inline-block;transition:transform .15s}
+.prob-table th.sort-asc .sort-icon{opacity:1;transform:rotate(0deg)}
+.prob-table th.sort-desc .sort-icon{opacity:1;transform:rotate(180deg)}
+.prob-table td{padding:11px 14px;font-size:13px;border-bottom:1px solid var(--b);vertical-align:middle;color:var(--t2)}
+.prob-table tr:last-child td{border-bottom:none}
+.prob-table tr:hover td{background:var(--hover)}
+.prob-table tr.selected td{background:var(--a-bg)}
+
+.row-check{width:16px;height:16px;border-radius:3px;border:1px solid var(--b2);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .15s;flex-shrink:0}
+.row-check.done{background:var(--easy);border-color:var(--easy)}
+.row-check.selected{background:var(--a);border-color:var(--a)}
+
+.prob-name{font-weight:500;color:var(--t);transition:color .15s;cursor:pointer}
+.prob-name:hover{color:var(--a)}
+.prob-tags{display:flex;gap:4px;flex-wrap:wrap;margin-top:3px}
+.tag{padding:1px 6px;border-radius:3px;font-size:10px;font-weight:500;background:var(--bg2);color:var(--t3);border:1px solid var(--b)}
+
+.plat-badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:var(--rp);font-size:11px;font-weight:600;white-space:nowrap}
+.diff-badge{padding:2px 7px;border-radius:var(--rp);font-size:11px;font-weight:600;font-family:var(--fm);white-space:nowrap}
+.diff-Easy{color:var(--easy);background:var(--easy-bg)}
+.diff-Medium{color:var(--med);background:var(--med-bg)}
+.diff-Hard{color:var(--hard);background:var(--hard-bg)}
+
+.rating-num{font-family:var(--fm);font-size:12px;color:var(--t2)}
+.rating-bar{display:flex;align-items:center;gap:6px}
+.rating-bar-track{width:40px;height:3px;background:var(--b2);border-radius:var(--rp);overflow:hidden}
+.rating-bar-fill{height:100%;border-radius:var(--rp)}
+
+.row-actions{display:flex;align-items:center;gap:4px;opacity:0;transition:opacity .15s}
+.prob-table tr:hover .row-actions{opacity:1}
+.act-btn{display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:5px;color:var(--t2);transition:all .15s;border:1px solid transparent}
+.act-btn:hover{background:var(--hover);color:var(--t);border-color:var(--b)}
+.act-btn.bookmarked{color:var(--med)}
+
+/* PAGINATION */
+.pagination{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-top:1px solid var(--b);background:var(--card)}
+.page-btns{display:flex;align-items:center;gap:4px}
+.page-btn{padding:5px 10px;border-radius:6px;font-size:13px;font-weight:500;color:var(--t2);border:1px solid transparent;transition:all .15s;min-width:32px;text-align:center}
+.page-btn:hover{background:var(--hover);color:var(--t)}
+.page-btn.current{background:var(--a-bg);border-color:var(--a-bdr);color:var(--a)}
+.page-btn:disabled{opacity:.35;cursor:not-allowed}
+.page-info{font-size:12px;color:var(--t2);font-family:var(--fm)}
+
+/* COLLECTION DRAWER */
+.collection-drawer{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--card);border:1px solid var(--b2);border-radius:var(--rl);padding:12px 20px;display:flex;align-items:center;gap:16px;box-shadow:0 8px 32px rgba(0,0,0,.5);z-index:200;animation:slideUp .2s ease}
+@keyframes slideUp{from{opacity:0;transform:translateX(-50%) translateY(8px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
+.collection-drawer-label{font-size:13px;font-weight:600;color:var(--t)}
+.collection-drawer-count{font-size:13px;color:var(--a);font-family:var(--fm);font-weight:700}
+.coll-actions{display:flex;gap:6px}
+.coll-btn{padding:6px 14px;border-radius:var(--r);font-size:12px;font-weight:600;transition:all .15s}
+.coll-btn-save{background:var(--a);color:#fff}.coll-btn-save:hover{filter:brightness(1.12)}
+.coll-btn-clear{background:var(--hover);color:var(--t2);border:1px solid var(--b)}.coll-btn-clear:hover{color:var(--t)}
+
+/* FOOTER */
+.footer{border-top:1px solid var(--b);padding:28px 0;margin-top:40px}
+.footer-row{display:flex;align-items:center;justify-content:space-between;font-size:12px;color:var(--t3)}
+.footer-gh{color:var(--t2);display:flex;transition:color .15s}.footer-gh:hover{color:var(--t)}
+
+@media(max-width:900px){.rating-range{display:none}}
+@media(max-width:700px){.nav-links{display:none}.filter-bar{top:60px}}
+@media(max-width:580px){.prob-table th:nth-child(5),.prob-table td:nth-child(5){display:none}.prob-table th:nth-child(6),.prob-table td:nth-child(6){display:none}}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const { useState, useEffect, useMemo, useCallback } = React;
+
+const PLATFORMS_META = {
+  'LeetCode':    { color:'#FFA116' },
+  'Codeforces':  { color:'#1F8ACB' },
+  'AtCoder':     { color:'#808080' },
+  'CSES':        { color:'#4CAF50' },
+  'GeeksforGeeks':{ color:'#2F8D46' },
+  'CodeChef':    { color:'#5B4638' },
+  'HackerRank':  { color:'#00EA64' },
+  'SPOJ':        { color:'#E60000' },
+  'Kattis':      { color:'#F9A825' },
+  'Baekjoon':    { color:'#0070C0' },
+};
+
+const ALL_PROBLEMS = [
+  { id:1,   title:'Two Sum',                      plat:'LeetCode',  diff:'Easy',   rating:800,  topic:'Array',          tags:['hash-map','array'] },
+  { id:2,   title:'Container With Most Water',    plat:'LeetCode',  diff:'Medium', rating:1600, topic:'Array',          tags:['two-pointers'] },
+  { id:3,   title:'3Sum',                         plat:'LeetCode',  diff:'Medium', rating:1500, topic:'Array',          tags:['two-pointers','sorting'] },
+  { id:4,   title:'Longest Substring Without Repeating', plat:'LeetCode', diff:'Medium',rating:1400,topic:'Sliding Window', tags:['hash-map','string'] },
+  { id:5,   title:'Minimum Window Substring',     plat:'LeetCode',  diff:'Hard',   rating:2200, topic:'Sliding Window', tags:['two-pointers','string'] },
+  { id:6,   title:'Binary Search',                plat:'LeetCode',  diff:'Easy',   rating:700,  topic:'Binary Search',  tags:['binary-search'] },
+  { id:7,   title:'Find Minimum in Rotated Sorted Array', plat:'LeetCode',diff:'Medium',rating:1500,topic:'Binary Search',tags:['binary-search'] },
+  { id:8,   title:'Median of Two Sorted Arrays',  plat:'LeetCode',  diff:'Hard',   rating:2500, topic:'Binary Search',  tags:['binary-search','divide-conquer'] },
+  { id:9,   title:'Climbing Stairs',              plat:'LeetCode',  diff:'Easy',   rating:800,  topic:'Dynamic Programming', tags:['dp','fibonacci'] },
+  { id:10,  title:'Coin Change',                  plat:'LeetCode',  diff:'Medium', rating:1600, topic:'Dynamic Programming', tags:['dp','bfs'] },
+  { id:11,  title:'Longest Increasing Subsequence', plat:'LeetCode',diff:'Medium', rating:2000, topic:'Dynamic Programming', tags:['dp','binary-search'] },
+  { id:12,  title:'Edit Distance',                plat:'LeetCode',  diff:'Hard',   rating:2100, topic:'Dynamic Programming', tags:['dp','string'] },
+  { id:13,  title:'Number of Islands',            plat:'LeetCode',  diff:'Medium', rating:1400, topic:'Graph',          tags:['bfs','dfs','matrix'] },
+  { id:14,  title:'Course Schedule',              plat:'LeetCode',  diff:'Medium', rating:1500, topic:'Graph',          tags:['topological-sort','dfs'] },
+  { id:15,  title:'Network Delay Time',           plat:'LeetCode',  diff:'Medium', rating:1800, topic:'Graph',          tags:['dijkstra','shortest-path'] },
+  { id:16,  title:'Invert Binary Tree',           plat:'LeetCode',  diff:'Easy',   rating:800,  topic:'Tree',           tags:['tree','dfs'] },
+  { id:17,  title:'Diameter of Binary Tree',      plat:'LeetCode',  diff:'Easy',   rating:1200, topic:'Tree',           tags:['tree','dfs'] },
+  { id:18,  title:'Binary Tree Maximum Path Sum', plat:'LeetCode',  diff:'Hard',   rating:2100, topic:'Tree',           tags:['tree','dp'] },
+  { id:19,  title:'Reverse Linked List',          plat:'LeetCode',  diff:'Easy',   rating:700,  topic:'Linked List',    tags:['linked-list'] },
+  { id:20,  title:'Merge Two Sorted Lists',       plat:'LeetCode',  diff:'Easy',   rating:900,  topic:'Linked List',    tags:['linked-list','sorting'] },
+  { id:21,  title:'Codeforces — Watermelon',      plat:'Codeforces',diff:'Easy',   rating:800,  topic:'Math',           tags:['math','parity'] },
+  { id:22,  title:'Codeforces — Way Too Long Words',plat:'Codeforces',diff:'Easy', rating:800,  topic:'String',         tags:['string','implementation'] },
+  { id:23,  title:'Codeforces — Team',            plat:'Codeforces',diff:'Easy',   rating:900,  topic:'Math',           tags:['math'] },
+  { id:24,  title:'Codeforces — Next Round',      plat:'Codeforces',diff:'Easy',   rating:900,  topic:'Array',          tags:['array','implementation'] },
+  { id:25,  title:'Codeforces — Helpful Maths',   plat:'Codeforces',diff:'Easy',   rating:900,  topic:'String',         tags:['sorting','string'] },
+  { id:26,  title:'Codeforces — Domino Piling',   plat:'Codeforces',diff:'Easy',   rating:1000, topic:'Math',           tags:['math','greedy'] },
+  { id:27,  title:'Codeforces — Petya and Strings',plat:'Codeforces',diff:'Easy',  rating:1100, topic:'String',         tags:['string','comparison'] },
+  { id:28,  title:'CSES — Weird Algorithm',       plat:'CSES',      diff:'Easy',   rating:900,  topic:'Math',           tags:['simulation'] },
+  { id:29,  title:'CSES — Missing Number',        plat:'CSES',      diff:'Easy',   rating:800,  topic:'Array',          tags:['math','prefix-sum'] },
+  { id:30,  title:'CSES — Repetitions',           plat:'CSES',      diff:'Easy',   rating:900,  topic:'String',         tags:['greedy','string'] },
+  { id:31,  title:'CSES — Two Knights',           plat:'CSES',      diff:'Medium', rating:1600, topic:'Math',           tags:['combinatorics','math'] },
+  { id:32,  title:'CSES — Gray Code',             plat:'CSES',      diff:'Medium', rating:1500, topic:'Bit Manipulation',tags:['bit-manipulation'] },
+  { id:33,  title:'CSES — Collecting Numbers',    plat:'CSES',      diff:'Medium', rating:1400, topic:'Array',          tags:['greedy','sorting'] },
+  { id:34,  title:'AtCoder — ABC001 A',           plat:'AtCoder',   diff:'Easy',   rating:800,  topic:'Math',           tags:['math'] },
+  { id:35,  title:'Kth Largest Element in Array', plat:'LeetCode',  diff:'Medium', rating:1500, topic:'Heap',           tags:['heap','quickselect'] },
+  { id:36,  title:'Implement Trie',               plat:'LeetCode',  diff:'Medium', rating:1600, topic:'Trie',           tags:['trie','design'] },
+  { id:37,  title:'Word Search II',               plat:'LeetCode',  diff:'Hard',   rating:2400, topic:'Trie',           tags:['trie','dfs','backtracking'] },
+  { id:38,  title:'Sliding Window Maximum',       plat:'LeetCode',  diff:'Hard',   rating:2100, topic:'Sliding Window', tags:['deque','sliding-window'] },
+  { id:39,  title:'Trapping Rain Water',          plat:'LeetCode',  diff:'Hard',   rating:2000, topic:'Array',          tags:['two-pointers','stack'] },
+  { id:40,  title:'N-Queens',                     plat:'LeetCode',  diff:'Hard',   rating:2300, topic:'Backtracking',   tags:['backtracking'] },
+];
+
+const TOPICS = ['All Topics','Array','Sliding Window','Binary Search','Dynamic Programming','Graph','Tree','Linked List','String','Math','Bit Manipulation','Heap','Trie','Backtracking'];
+const PLATFORMS = ['All Platforms', ...Object.keys(PLATFORMS_META)];
+const DIFFS = ['All Difficulties','Easy','Medium','Hard'];
+
+const GH = () => (
+  <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.164 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.343-3.369-1.343-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/>
+  </svg>
+);
+const Sun = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>;
+const Moon = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>;
+const SearchIcon = () => <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>;
+const ChevUp = () => <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><polyline points="18 15 12 9 6 15"/></svg>;
+const LinkIcon = () => <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>;
+const BookmarkIcon = () => <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>;
+const CheckSmall = () => <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="2,6 5,9 10,3"/></svg>;
+const PlusIcon = () => <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>;
+
+const PAGE_SIZE = 15;
+
+function ratingColor(r) {
+  if (r < 1000) return 'var(--easy)';
+  if (r < 1500) return 'var(--med)';
+  if (r < 2000) return '#f97316';
+  return 'var(--hard)';
+}
+
+function Nav({ dark, setDark }) {
+  return (
+    <nav className="nav">
+      <div className="nav-inner w">
+        <a href="Landing.html" className="logo">
+          <span className="logo-mark">fx</span>
+          <span className="logo-name">DSA Mastery</span>
+        </a>
+        <div className="nav-links">
+          <a href="Learn.html" className="nav-link">Learn</a>
+          <a href="Explore.html" className="nav-link act">Explore</a>
+          <a href="#" className="nav-link">Patterns</a>
+        </div>
+        <div className="nav-end">
+          <a href="https://github.com/rashidtvmr/dsa-inventory" className="icon-btn" target="_blank" rel="noreferrer"><GH /></a>
+          <button className="icon-btn" onClick={() => setDark(d => !d)}>{dark ? <Sun /> : <Moon />}</button>
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+function App() {
+  const [dark, setDark] = useState(() => {
+    try { return localStorage.getItem('dsam-theme') !== 'light'; } catch { return true; }
+  });
+
+  const [query, setQuery] = useState('');
+  const [platform, setPlatform] = useState('All Platforms');
+  const [diff, setDiff] = useState('All Difficulties');
+  const [topic, setTopic] = useState('All Topics');
+  const [rMin, setRMin] = useState(800);
+  const [rMax, setRMax] = useState(3500);
+  const [sortKey, setSortKey] = useState('rating');
+  const [sortDir, setSortDir] = useState('asc');
+  const [page, setPage] = useState(1);
+  const [solved, setSolved] = useState(() => new Set([1, 6, 16, 19, 21, 28]));
+  const [bookmarked, setBookmarked] = useState(() => new Set([2, 11, 15]));
+  const [selected, setSelected] = useState(() => new Set());
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+    try { localStorage.setItem('dsam-theme', dark ? 'dark' : 'light'); } catch {}
+  }, [dark]);
+
+  const filtered = useMemo(() => {
+    return ALL_PROBLEMS
+      .filter(p => {
+        if (query && !p.title.toLowerCase().includes(query.toLowerCase()) && !p.tags.some(t => t.includes(query.toLowerCase()))) return false;
+        if (platform !== 'All Platforms' && p.plat !== platform) return false;
+        if (diff !== 'All Difficulties' && p.diff !== diff) return false;
+        if (topic !== 'All Topics' && p.topic !== topic) return false;
+        if (p.rating < rMin || p.rating > rMax) return false;
+        return true;
+      })
+      .sort((a, b) => {
+        let va = a[sortKey], vb = b[sortKey];
+        if (typeof va === 'string') { va = va.toLowerCase(); vb = vb.toLowerCase(); }
+        if (va < vb) return sortDir === 'asc' ? -1 : 1;
+        if (va > vb) return sortDir === 'asc' ? 1 : -1;
+        return 0;
+      });
+  }, [query, platform, diff, topic, rMin, rMax, sortKey, sortDir]);
+
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  const pageData = filtered.slice((page-1)*PAGE_SIZE, page*PAGE_SIZE);
+
+  const sort = (key) => {
+    if (sortKey === key) setSortDir(d => d === 'asc' ? 'desc' : 'asc');
+    else { setSortKey(key); setSortDir('asc'); }
+    setPage(1);
+  };
+
+  const activePills = [
+    platform !== 'All Platforms' && { label: platform, clear: () => setPlatform('All Platforms') },
+    diff !== 'All Difficulties' && { label: diff, clear: () => setDiff('All Difficulties') },
+    topic !== 'All Topics' && { label: topic, clear: () => setTopic('All Topics') },
+    (rMin !== 800 || rMax !== 3500) && { label: `Rating ${rMin}–${rMax}`, clear: () => { setRMin(800); setRMax(3500); } },
+  ].filter(Boolean);
+
+  const ThCol = ({ label, k, style }) => {
+    const active = sortKey === k;
+    return (
+      <th className={active ? `sort-${sortDir}` : ''} onClick={() => sort(k)} style={style}>
+        {label} <span className="sort-icon"><ChevUp /></span>
+      </th>
+    );
+  };
+
+  return (
+    <>
+      <Nav dark={dark} setDark={setDark} />
+      <div className="page">
+        <div className="w">
+          {/* HEADER */}
+          <div className="page-header">
+            <div className="page-eyebrow">Problem Explorer</div>
+            <h1 className="page-title">Explore 38,000+ Problems</h1>
+            <p className="page-subtitle">Every DSA problem in one place. Filter, sort, save to collections.</p>
+            <div className="page-stats">
+              {[{l:'Total problems',v:'38,124'},{l:'Topics',v:'14'},{l:'Platforms',v:'50+'},{l:'Shown',v:filtered.length}].map(s => (
+                <span key={s.l} className="page-stat"><strong>{s.v}</strong> {s.l}</span>
+              ))}
+            </div>
+          </div>
+
+          {/* FILTER BAR */}
+          <div className="filter-bar">
+            <div className="search-wrap">
+              <span className="search-icon"><SearchIcon /></span>
+              <input
+                className="search-input"
+                placeholder="Search problems, tags, topics…"
+                value={query}
+                onChange={e => { setQuery(e.target.value); setPage(1); }}
+              />
+            </div>
+            <select className="filter-select" value={platform} onChange={e => { setPlatform(e.target.value); setPage(1); }}>
+              {PLATFORMS.map(p => <option key={p}>{p}</option>)}
+            </select>
+            <select className="filter-select" value={diff} onChange={e => { setDiff(e.target.value); setPage(1); }}>
+              {DIFFS.map(d => <option key={d}>{d}</option>)}
+            </select>
+            <select className="filter-select" value={topic} onChange={e => { setTopic(e.target.value); setPage(1); }}>
+              {TOPICS.map(t => <option key={t}>{t}</option>)}
+            </select>
+            <div className="rating-range">
+              <span className="rating-label">Rating</span>
+              <span className="rating-val">{rMin}</span>
+              <input type="range" className="range-input" min={800} max={3500} step={100} value={rMin}
+                onChange={e => { const v=+e.target.value; if(v<rMax) { setRMin(v); setPage(1); } }} />
+              <input type="range" className="range-input" min={800} max={3500} step={100} value={rMax}
+                onChange={e => { const v=+e.target.value; if(v>rMin) { setRMax(v); setPage(1); } }} />
+              <span className="rating-val">{rMax}</span>
+            </div>
+          </div>
+
+          {/* ACTIVE PILLS */}
+          {activePills.length > 0 && (
+            <div className="filter-pills">
+              <span style={{fontSize:12,color:'var(--t3)',marginRight:2}}>Filters:</span>
+              {activePills.map((p,i) => (
+                <span key={i} className="filter-pill">
+                  {p.label}
+                  <span className="pill-x" onClick={p.clear}>✕</span>
+                </span>
+              ))}
+              <button onClick={() => { setPlatform('All Platforms'); setDiff('All Difficulties'); setTopic('All Topics'); setRMin(800); setRMax(3500); setQuery(''); }}
+                style={{fontSize:12,color:'var(--t3)',marginLeft:4,transition:'color .15s',cursor:'pointer',background:'none',border:'none',fontFamily:'inherit'}}
+                onMouseEnter={e=>e.target.style.color='var(--hard)'}
+                onMouseLeave={e=>e.target.style.color='var(--t3)'}>
+                Clear all
+              </button>
+            </div>
+          )}
+
+          {/* TOOLBAR */}
+          <div className="toolbar">
+            <div className="toolbar-left">
+              <span className="result-count">
+                <strong>{filtered.length}</strong> problems
+                {solved.size > 0 && <span style={{marginLeft:8,color:'var(--easy)',fontWeight:500}}> · {solved.size} solved</span>}
+              </span>
+            </div>
+            <div className="toolbar-right">
+              {selected.size > 0 && (
+                <button className="collection-btn has-items">
+                  <PlusIcon /> Save {selected.size} to Collection
+                </button>
+              )}
+              <button className="collection-btn">
+                <BookmarkIcon /> Collections
+              </button>
+            </div>
+          </div>
+
+          {/* TABLE */}
+          <div className="table-wrap">
+            <table className="prob-table">
+              <thead>
+                <tr>
+                  <th style={{width:36}}></th>
+                  <th style={{width:44,textAlign:'center'}}>#</th>
+                  <ThCol label="Problem" k="title" />
+                  <ThCol label="Platform" k="plat" />
+                  <ThCol label="Difficulty" k="diff" />
+                  <ThCol label="Rating" k="rating" />
+                  <ThCol label="Topic" k="topic" />
+                  <th style={{width:80}}></th>
+                </tr>
+              </thead>
+              <tbody>
+                {pageData.map((p, i) => {
+                  const isSolved = solved.has(p.id);
+                  const isBookmarked = bookmarked.has(p.id);
+                  const isSelected = selected.has(p.id);
+                  const pm = PLATFORMS_META[p.plat] || { color:'#888' };
+                  const rPct = Math.round(((p.rating - 800) / (3500 - 800)) * 100);
+                  return (
+                    <tr key={p.id} className={isSelected ? 'selected' : ''}>
+                      <td>
+                        <div
+                          className={`row-check${isSolved ? ' done' : ''}`}
+                          onClick={() => setSolved(s => { const n=new Set(s); isSolved?n.delete(p.id):n.add(p.id); return n; })}
+                        >
+                          {isSolved && <CheckSmall />}
+                        </div>
+                      </td>
+                      <td style={{textAlign:'center',fontFamily:'var(--fm)',fontSize:11,color:'var(--t3)'}}>
+                        {(page-1)*PAGE_SIZE + i + 1}
+                      </td>
+                      <td>
+                        <div className="prob-name">{p.title}</div>
+                        <div className="prob-tags">
+                          {p.tags.slice(0,3).map(t => <span key={t} className="tag">{t}</span>)}
+                        </div>
+                      </td>
+                      <td>
+                        <span className="plat-badge" style={{background:`${pm.color}18`,color:pm.color}}>{p.plat}</span>
+                      </td>
+                      <td><span className={`diff-badge diff-${p.diff}`}>{p.diff}</span></td>
+                      <td>
+                        <div className="rating-bar">
+                          <span className="rating-num" style={{color:ratingColor(p.rating)}}>{p.rating}</span>
+                          <div className="rating-bar-track">
+                            <div className="rating-bar-fill" style={{width:`${rPct}%`,background:ratingColor(p.rating)}} />
+                          </div>
+                        </div>
+                      </td>
+                      <td style={{color:'var(--t2)',fontSize:12}}>{p.topic}</td>
+                      <td>
+                        <div className="row-actions">
+                          <button
+                            className={`act-btn${isBookmarked ? ' bookmarked' : ''}`}
+                            onClick={() => setBookmarked(s => { const n=new Set(s); isBookmarked?n.delete(p.id):n.add(p.id); return n; })}
+                            title="Bookmark"
+                          ><BookmarkIcon /></button>
+                          <button
+                            className="act-btn"
+                            onClick={() => setSelected(s => { const n=new Set(s); isSelected?n.delete(p.id):n.add(p.id); return n; })}
+                            title="Add to collection"
+                          ><PlusIcon /></button>
+                          <a href="#" className="act-btn" title="Open problem"><LinkIcon /></a>
+                        </div>
+                      </td>
+                    </tr>
+                  );
+                })}
+                {pageData.length === 0 && (
+                  <tr>
+                    <td colSpan="8" style={{textAlign:'center',padding:'40px 24px',color:'var(--t2)'}}>
+                      No problems match your filters. <button style={{color:'var(--a)',cursor:'pointer',background:'none',border:'none',font:'inherit'}}
+                        onClick={() => { setQuery(''); setPlatform('All Platforms'); setDiff('All Difficulties'); setTopic('All Topics'); setRMin(800); setRMax(3500); }}>
+                        Clear filters
+                      </button>
+                    </td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+
+            {/* PAGINATION */}
+            <div className="pagination">
+              <span className="page-info">
+                {Math.min((page-1)*PAGE_SIZE+1, filtered.length)}–{Math.min(page*PAGE_SIZE, filtered.length)} of {filtered.length}
+              </span>
+              <div className="page-btns">
+                <button className="page-btn" disabled={page===1} onClick={() => setPage(p => p-1)}>←</button>
+                {Array.from({length:Math.min(5,totalPages)}, (_,i) => {
+                  let pg = i+1;
+                  if (totalPages > 5) {
+                    if (page <= 3) pg = i+1;
+                    else if (page >= totalPages-2) pg = totalPages-4+i;
+                    else pg = page-2+i;
+                  }
+                  return (
+                    <button key={pg} className={`page-btn${page===pg?' current':''}`} onClick={() => setPage(pg)}>{pg}</button>
+                  );
+                })}
+                <button className="page-btn" disabled={page===totalPages} onClick={() => setPage(p => p+1)}>→</button>
+              </div>
+            </div>
+          </div>
+
+          {/* COLLECTION DRAWER */}
+          {selected.size > 0 && (
+            <div className="collection-drawer">
+              <span className="collection-drawer-count">{selected.size}</span>
+              <span className="collection-drawer-label">problems selected</span>
+              <div className="coll-actions">
+                <button className="coll-btn coll-btn-save">Save to Collection</button>
+                <button className="coll-btn coll-btn-clear" onClick={() => setSelected(new Set())}>Clear</button>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+
+      <footer className="footer">
+        <div className="w footer-row">
+          <span>© 2026 frontendx. Built for DSA practice.</span>
+          <a href="https://github.com/rashidtvmr/dsa-inventory" target="_blank" rel="noreferrer" className="footer-gh"><GH /></a>
+        </div>
+      </footer>
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

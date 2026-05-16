@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DSA Mastery — Master DSA, one pattern at a time</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;scroll-behavior:smooth}
+:root{
+  --f:'Inter',system-ui,-apple-system,sans-serif;
+  --fm:'JetBrains Mono',ui-monospace,monospace;
+  --bg:#090a0e; --bg2:#0d0f19; --card:#111420; --hover:#181a2c;
+  --nav-bg:rgba(9,10,14,0.86);
+  --b:rgba(214,235,253,0.08); --b2:rgba(214,235,253,0.16);
+  --t:#e8eaf0; --t2:#7d8299; --t3:rgba(232,234,240,0.36);
+  --a:#3b9eff; --a-bg:rgba(59,158,255,0.10); --a-bdr:rgba(59,158,255,0.22); --a-glow:rgba(59,158,255,0.14);
+  --easy:#34d399; --easy-bg:rgba(52,211,153,0.10);
+  --med:#fbbf24;  --med-bg:rgba(251,191,36,0.10);
+  --hard:#f87171; --hard-bg:rgba(248,113,113,0.10);
+  --sh:0 1px 3px rgba(0,0,0,.3),0 0 0 1px var(--b);
+  --sh2:0 4px 24px rgba(0,0,0,.55),0 0 0 1px var(--b2);
+  --r:8px; --rl:12px; --rp:9999px;
+}
+:root[data-theme="light"]{
+  --bg:#fafbff; --bg2:#f3f5fb; --card:#ffffff; --hover:#edf0f8;
+  --nav-bg:rgba(250,251,255,0.90);
+  --b:rgba(0,0,51,0.07); --b2:rgba(0,0,51,0.14);
+  --t:#0e0f14; --t2:#4b4f63; --t3:rgba(14,15,20,.40);
+  --a:#1a6de0; --a-bg:rgba(26,109,224,0.08); --a-bdr:rgba(26,109,224,0.22); --a-glow:rgba(26,109,224,0.10);
+  --easy:#059669; --easy-bg:rgba(5,150,105,0.10);
+  --med:#d97706;  --med-bg:rgba(217,119,6,0.10);
+  --hard:#dc2626; --hard-bg:rgba(220,38,38,0.10);
+  --sh:0 1px 3px rgba(0,0,0,.06),0 0 0 1px var(--b);
+  --sh2:0 4px 24px rgba(0,0,0,.09),0 0 0 1px var(--b2);
+}
+body{font-family:var(--f);background:var(--bg);color:var(--t);line-height:1.6;min-height:100vh}
+.w{max-width:1200px;margin:0 auto;padding:0 24px}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;background:none;border:none;font-family:inherit;color:inherit}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;height:60px;background:var(--nav-bg);backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%);border-bottom:1px solid var(--b)}
+.nav-inner{height:100%;display:flex;align-items:center;gap:16px}
+.logo{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.logo-mark{display:flex;align-items:center;justify-content:center;width:28px;height:28px;background:var(--a);color:#fff;font-size:11px;font-weight:700;border-radius:7px;font-family:var(--fm);letter-spacing:-.5px;flex-shrink:0}
+.logo-mark.sm{width:22px;height:22px;font-size:9px;border-radius:5px}
+.logo-name{font-size:14px;font-weight:600;color:var(--t);letter-spacing:-.3px}
+.nav-links{display:flex;align-items:center;gap:2px;flex:1}
+.nav-link{padding:5px 12px;border-radius:6px;font-size:14px;font-weight:500;color:var(--t2);transition:all .15s}
+.nav-link:hover,.nav-link.act{background:var(--hover);color:var(--t)}
+.nav-end{display:flex;align-items:center;gap:4px;margin-left:auto}
+.icon-btn{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:var(--r);color:var(--t2);transition:all .15s}
+.icon-btn:hover{background:var(--hover);color:var(--t)}
+
+/* HERO */
+.hero{position:relative;padding:140px 0 100px;text-align:center;overflow:hidden}
+.hero-glow{position:absolute;top:0;left:50%;transform:translateX(-50%);width:900px;height:520px;background:radial-gradient(ellipse,rgba(59,158,255,0.13) 0%,transparent 62%);filter:blur(60px);pointer-events:none}
+.hero-dots{position:absolute;inset:0;background-image:radial-gradient(circle,rgba(214,235,253,0.045) 1px,transparent 1px);background-size:28px 28px;pointer-events:none}
+.hero-inner{position:relative;display:flex;flex-direction:column;align-items:center;gap:24px}
+.hero-inner > *{animation:fadeUp .55s ease both}
+.hero-inner > *:nth-child(1){animation-delay:.05s}
+.hero-inner > *:nth-child(2){animation-delay:.15s}
+.hero-inner > *:nth-child(3){animation-delay:.22s}
+.hero-inner > *:nth-child(4){animation-delay:.29s}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.announce-badge{display:inline-flex;align-items:center;gap:8px;padding:5px 14px 5px 10px;background:var(--a-bg);border:1px solid var(--a-bdr);border-radius:var(--rp);font-size:13px;font-weight:500;color:var(--a);cursor:pointer;transition:background .15s}
+.announce-badge:hover{background:rgba(59,158,255,0.16)}
+.announce-dot{width:6px;height:6px;border-radius:50%;background:var(--a);box-shadow:0 0 8px var(--a);flex-shrink:0;animation:pulse 2s ease infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 8px var(--a)}50%{box-shadow:0 0 14px var(--a),0 0 4px var(--a)}}
+.hero-title{font-size:clamp(46px,7vw,76px);font-weight:700;letter-spacing:-.044em;line-height:1.05;color:var(--t)}
+.hero-dim{color:var(--t3)}
+.hero-desc{font-size:17px;color:var(--t2);max-width:500px;line-height:1.68}
+.hero-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:11px 22px;border-radius:var(--r);font-size:14px;font-weight:600;transition:all .15s;cursor:pointer;text-decoration:none;border:none;font-family:inherit;white-space:nowrap}
+.btn-primary{background:var(--a);color:#fff}
+.btn-primary:hover{filter:brightness(1.12);box-shadow:0 4px 22px var(--a-glow);transform:translateY(-1px)}
+.btn-outline{background:transparent;color:var(--t);border:1px solid var(--b2)}
+.btn-outline:hover{background:var(--hover);transform:translateY(-1px)}
+
+/* MARQUEE */
+.marquee-shell{padding:20px 0;overflow:hidden;mask-image:linear-gradient(90deg,transparent 0%,#000 8%,#000 92%,transparent 100%);-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 8%,#000 92%,transparent 100%)}
+.marquee-track{display:flex;gap:36px;animation:slide 30s linear infinite;width:max-content}
+.marquee-item{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:var(--t3);white-space:nowrap}
+.marquee-dot{width:3px;height:3px;border-radius:50%;background:var(--t3);flex-shrink:0}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* STATS */
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--b2);border:1px solid var(--b2);border-radius:var(--rl);overflow:hidden;margin:40px 0}
+.stat-cell{padding:32px 24px;background:var(--card);text-align:center}
+.stat-value{font-size:36px;font-weight:700;letter-spacing:-.035em;color:var(--t)}
+.stat-label{font-size:13px;color:var(--t2);margin-top:4px;font-weight:500}
+
+/* SECTIONS */
+.section{padding:72px 0}
+.section-head{margin-bottom:40px}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--a);margin-bottom:10px}
+.section-title{font-size:30px;font-weight:700;letter-spacing:-.02em;color:var(--t)}
+.section-sub{font-size:15px;color:var(--t2);margin-top:8px;max-width:440px;line-height:1.6}
+
+/* TOPICS */
+.topics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.topic-card{padding:20px;background:var(--card);border:1px solid var(--b);border-radius:var(--rl);position:relative;overflow:hidden;display:block;transition:all .15s}
+.topic-card:hover{background:var(--hover);border-color:var(--b2);transform:translateY(-2px);box-shadow:var(--sh2)}
+.topic-card:hover .topic-bg-letter{opacity:.18}
+.topic-bg-letter{position:absolute;right:-8px;top:-10px;font-size:88px;font-weight:800;line-height:1;letter-spacing:-.04em;opacity:.11;user-select:none;pointer-events:none;transition:opacity .15s}
+.topic-dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-bottom:10px;flex-shrink:0}
+.topic-name{font-size:14px;font-weight:600;color:var(--t);margin-bottom:4px}
+.topic-desc{font-size:12px;color:var(--t2);line-height:1.55;margin-bottom:14px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.topic-meta{font-size:12px;color:var(--t3);display:flex;align-items:center;gap:5px}
+.topic-count{color:var(--t2);font-weight:500}
+
+/* FEATURES */
+.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.feature-card{padding:24px;background:var(--card);border:1px solid var(--b);border-radius:var(--rl);transition:all .15s}
+.feature-card:hover{border-color:var(--b2);box-shadow:var(--sh)}
+.feature-icon{width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:var(--a-bg);border:1px solid var(--a-bdr);border-radius:10px;font-size:15px;color:var(--a);margin-bottom:14px;font-family:var(--fm)}
+.feature-name{font-size:15px;font-weight:600;color:var(--t);margin-bottom:6px}
+.feature-desc{font-size:13px;color:var(--t2);line-height:1.62}
+
+/* CTA */
+.cta-block{background:var(--card);border:1px solid var(--b);border-radius:16px;padding:64px 48px;text-align:center;position:relative;overflow:hidden}
+.cta-glow{position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 0%,var(--a-glow),transparent 65%);pointer-events:none}
+.cta-title{font-size:36px;font-weight:700;letter-spacing:-.03em;color:var(--t);margin-bottom:12px;position:relative}
+.cta-desc{font-size:16px;color:var(--t2);margin-bottom:28px;position:relative}
+.cta-actions{display:flex;justify-content:center;gap:12px;position:relative}
+
+/* FOOTER */
+.footer{border-top:1px solid var(--b);padding:48px 0 32px;margin-top:40px}
+.footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:32px}
+.footer-logo{display:flex;align-items:center;gap:8px;margin-bottom:12px}
+.footer-brand-name{font-size:14px;font-weight:600;color:var(--t)}
+.footer-tagline{font-size:13px;color:var(--t2);line-height:1.65;margin-bottom:14px;max-width:280px}
+.footer-chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{padding:3px 9px;background:var(--bg2);border:1px solid var(--b);border-radius:var(--rp);font-size:11px;color:var(--t2);font-weight:500}
+.footer-col-title{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);margin-bottom:12px}
+.footer-links{display:flex;flex-direction:column;gap:9px}
+.footer-link{font-size:13px;color:var(--t2);transition:color .15s}
+.footer-link:hover{color:var(--t)}
+.footer-bottom{padding-top:20px;border-top:1px solid var(--b);display:flex;align-items:center;justify-content:space-between;font-size:12px;color:var(--t3)}
+.footer-gh{color:var(--t2);display:flex;transition:color .15s}.footer-gh:hover{color:var(--t)}
+
+/* RESPONSIVE */
+@media(max-width:960px){.topics-grid{grid-template-columns:repeat(2,1fr)}.features-grid{grid-template-columns:repeat(2,1fr)}.footer-inner{grid-template-columns:1fr 1fr}.stats-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.topics-grid{grid-template-columns:1fr}.features-grid{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr}.nav-links{display:none}.hero-title{font-size:38px}.cta-block{padding:40px 24px}}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const { useState, useEffect } = React;
+
+const TOPICS = [
+  { id:'math',  letter:'M', color:'#7c3aed', name:'Math',                desc:'Number theory, combinatorics, geometry, probability',   count:'9,632', platforms:31 },
+  { id:'dp',    letter:'D', color:'#0891b2', name:'Dynamic Programming', desc:'Knapsack, LIS, LCS, tree DP, digit DP, DP on graphs',   count:'4,313', platforms:30 },
+  { id:'bs',    letter:'B', color:'#2563eb', name:'Binary Search',       desc:'Classic BS, BS on answer, ternary search, bitonic',     count:'3,709', platforms:26 },
+  { id:'str',   letter:'S', color:'#ea580c', name:'String',              desc:'KMP, Z-algo, suffix array, palindromes, pattern match', count:'3,426', platforms:36 },
+  { id:'bit',   letter:'B', color:'#ca8a04', name:'Bit Manipulation',    desc:'XOR tricks, bitmask DP, subsets, bit hacks, gray code', count:'2,868', platforms:28 },
+  { id:'tree',  letter:'T', color:'#16a34a', name:'Tree',                desc:'Binary tree, BST, traversal, LCA, diameter, n-ary',    count:'2,714', platforms:25 },
+  { id:'graph', letter:'G', color:'#0d9488', name:'Graph',               desc:'BFS, DFS, Dijkstra, MST, topological sort, SCC, flow', count:'1,290', platforms:24 },
+  { id:'ll',    letter:'L', color:'#db2777', name:'Linked List',         desc:'Cycle detection, merge, reverse, slow/fast pointers',  count:'1,135', platforms:20 },
+  { id:'adv',   letter:'A', color:'#6d28d9', name:'Advanced Tree',       desc:"Fenwick, segment tree, sqrt decomp, Mo's algo, treap", count:'924',   platforms:24 },
+  { id:'sw',    letter:'S', color:'#d97706', name:'Sliding Window',      desc:'Fixed/variable size windows, deque optimization',      count:'610',   platforms:37 },
+  { id:'heap',  letter:'H', color:'#dc2626', name:'Heap',                desc:'Min/max heap, top K, median, merge K sorted, Huffman', count:'496',   platforms:29 },
+  { id:'mat',   letter:'S', color:'#64748b', name:'Shape / Matrix',      desc:'Matrix traversal, rotation, spiral, 2D arrays, grids', count:'331',   platforms:14 },
+  { id:'bt',    letter:'B', color:'#65a30d', name:'Backtracking',        desc:'Permutations, combinations, subsets, N-queens, SAT',   count:'325',   platforms:18 },
+  { id:'trie',  letter:'T', color:'#0284c7', name:'Trie',                desc:'Prefix tree, dictionary, auto-complete, XOR max pair', count:'158',   platforms:17 },
+];
+
+const PLATFORMS = ['LeetCode','Codeforces','AtCoder','GeeksforGeeks','CSES','Baekjoon','SPOJ','UVa','HackerRank','CodeChef','Kattis','TopCoder'];
+
+const FEATURES = [
+  { icon:'⌕', label:'Explore Problems',     desc:'38,000+ problems across 50+ platforms. Filter by difficulty, platform, topic, and rating range.' },
+  { icon:'◈', label:'Learn Patterns',        desc:'170 chapters of pattern-based learning. Brute force first, then the insight, then optimal.' },
+  { icon:'▦', label:'Curated Collections',   desc:'14 core topics: DP, Graphs, Trees, Binary Search, Sliding Window, and more. Practice systematically.' },
+  { icon:'⚡', label:'Instant Search',        desc:'Full-text search across problem names, concepts, topics, and platforms. Find what you need in milliseconds.' },
+  { icon:'◎', label:'Track Progress',        desc:'Mark problems as solved, track per-topic completion. Save personal collections to IndexedDB — no account needed.' },
+  { icon:'✓', label:'Deduplicated',          desc:'Every problem carefully deduplicated across platforms. No more solving the same problem with a different name.' },
+];
+
+const GH = () => (
+  <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.164 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.343-3.369-1.343-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/>
+  </svg>
+);
+const Sun = () => (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+    <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+    <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+  </svg>
+);
+const Moon = () => (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+  </svg>
+);
+
+function Nav({ dark, setDark }) {
+  return (
+    <nav className="nav">
+      <div className="nav-inner w">
+        <a href="Landing.html" className="logo">
+          <span className="logo-mark">fx</span>
+          <span className="logo-name">DSA Mastery</span>
+        </a>
+        <div className="nav-links">
+          <a href="Learn.html" className="nav-link">Learn</a>
+          <a href="Explore.html" className="nav-link">Explore</a>
+          <a href="#" className="nav-link">Patterns</a>
+        </div>
+        <div className="nav-end">
+          <a href="https://github.com/rashidtvmr/dsa-inventory" className="icon-btn" target="_blank" rel="noreferrer"><GH /></a>
+          <button className="icon-btn" onClick={() => setDark(d => !d)} title="Toggle theme">{dark ? <Sun /> : <Moon />}</button>
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+function Hero() {
+  return (
+    <section className="hero">
+      <div className="hero-glow" />
+      <div className="hero-dots" />
+      <div className="w hero-inner">
+        <a href="Explore.html" className="announce-badge">
+          <span className="announce-dot" />
+          Now with 38,000+ problems
+          <span style={{opacity:.55, marginLeft:2}}>→</span>
+        </a>
+        <h1 className="hero-title">
+          Master DSA.<br />
+          <span className="hero-dim">One pattern at a time.</span>
+        </h1>
+        <p className="hero-desc">
+          Curated, deduplicated problems from 50+ platforms. Organized by topic, tagged by concept, ready for practice.
+        </p>
+        <div className="hero-actions">
+          <a href="Learn.html" className="btn btn-primary">Start Learning →</a>
+          <a href="Explore.html" className="btn btn-outline">Explore Problems</a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Marquee() {
+  const items = [...PLATFORMS, ...PLATFORMS];
+  return (
+    <div className="marquee-shell">
+      <div className="marquee-track">
+        {items.map((p, i) => (
+          <span key={i} className="marquee-item">
+            <span className="marquee-dot" />{p}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function Stats() {
+  const data = [{v:'38k+',l:'Problems'},{v:'14',l:'Topics'},{v:'50+',l:'Platforms'},{v:'170+',l:'Chapters'}];
+  return (
+    <div className="w">
+      <div className="stats-grid">
+        {data.map(s => (
+          <div key={s.l} className="stat-cell">
+            <div className="stat-value">{s.v}</div>
+            <div className="stat-label">{s.l}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function Topics() {
+  return (
+    <section className="section w">
+      <div className="section-head">
+        <div className="eyebrow">Browse by Topic</div>
+        <h2 className="section-title">14 Topics</h2>
+        <p className="section-sub">Every problem tagged, every concept linked. Find exactly what you need.</p>
+      </div>
+      <div className="topics-grid">
+        {TOPICS.map(t => (
+          <a key={t.id} href={`Explore.html?topic=${t.id}`} className="topic-card">
+            <span className="topic-bg-letter" style={{color:t.color}}>{t.letter}</span>
+            <span className="topic-dot" style={{background:t.color}} />
+            <div className="topic-name">{t.name}</div>
+            <div className="topic-desc">{t.desc}</div>
+            <div className="topic-meta">
+              <span className="topic-count">{t.count}</span>
+              <span>·</span>
+              <span>{t.platforms} platforms</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function Features() {
+  return (
+    <section className="section w">
+      <div className="section-head">
+        <div className="eyebrow">What You Can Do</div>
+        <h2 className="section-title">Everything you need to master DSA</h2>
+      </div>
+      <div className="features-grid">
+        {FEATURES.map(f => (
+          <div key={f.label} className="feature-card">
+            <div className="feature-icon">{f.icon}</div>
+            <div className="feature-name">{f.label}</div>
+            <p className="feature-desc">{f.desc}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function CTA() {
+  return (
+    <section className="section w">
+      <div className="cta-block">
+        <div className="cta-glow" />
+        <h2 className="cta-title">Start your DSA journey today.</h2>
+        <p className="cta-desc">38,000+ problems. 170 chapters. One platform.</p>
+        <div className="cta-actions">
+          <a href="Learn.html" className="btn btn-primary">Learn Patterns →</a>
+          <a href="Explore.html" className="btn btn-outline">Browse Problems</a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Footer() {
+  const cols = [
+    { title:'Explore', links:[['All Topics','Landing.html'],['Problem Explorer','Explore.html'],['Learn DSA','Learn.html']] },
+    { title:'Topics',  links:[['Dynamic Programming','#'],['Binary Search','#'],['Graph','#'],['Tree','#'],['Math','#']] },
+    { title:'Resources', links:[['Patterns Cheat Sheet','#'],['GitHub ↗','https://github.com/rashidtvmr/dsa-inventory']] },
+  ];
+  return (
+    <footer className="footer">
+      <div className="w footer-inner">
+        <div>
+          <div className="footer-logo">
+            <span className="logo-mark sm">fx</span>
+            <span className="footer-brand-name">DSA Mastery</span>
+          </div>
+          <p className="footer-tagline">38k+ curated DSA problems from 50+ platforms. Organized by topic, tagged by concept, ready for practice.</p>
+          <div className="footer-chips">
+            {['38k+ Problems','50+ Platforms','14 Topics'].map(c => <span key={c} className="chip">{c}</span>)}
+          </div>
+        </div>
+        {cols.map(col => (
+          <div key={col.title}>
+            <div className="footer-col-title">{col.title}</div>
+            <div className="footer-links">
+              {col.links.map(([text, href]) => <a key={text} href={href} className="footer-link">{text}</a>)}
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="w footer-bottom">
+        <span>© 2026 frontendx. Built for DSA practice.</span>
+        <a href="https://github.com/rashidtvmr/dsa-inventory" target="_blank" rel="noreferrer" className="footer-gh"><GH /></a>
+      </div>
+    </footer>
+  );
+}
+
+function App() {
+  const [dark, setDark] = useState(() => {
+    try { return localStorage.getItem('dsam-theme') !== 'light'; } catch { return true; }
+  });
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+    try { localStorage.setItem('dsam-theme', dark ? 'dark' : 'light'); } catch {}
+  }, [dark]);
+  return (
+    <>
+      <Nav dark={dark} setDark={setDark} />
+      <Hero />
+      <Marquee />
+      <Stats />
+      <Topics />
+      <Features />
+      <CTA />
+      <Footer />
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

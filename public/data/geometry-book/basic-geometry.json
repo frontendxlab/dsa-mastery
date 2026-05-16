@@ -1,0 +1,1291 @@
+{
+  "chapter": 2,
+  "slug": "basic-geometry",
+  "title": "Basic Geometry",
+  "icon": "●",
+  "color": "#6366f1",
+  "problemCount": 3856,
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Chapter 2: Basic Geometry"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "1. INTRODUCTION"
+    },
+    {
+      "type": "text",
+      "content": "Geometry in programming is about describing and manipulating objects in space using numbers. If you can put it on a graph, you can compute with it."
+    },
+    {
+      "type": "text",
+      "content": "**What is basic geometry in DSA?**"
+    },
+    {
+      "type": "text",
+      "content": "At its core, computational geometry answers questions like:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "How far apart are two points?",
+        "Is this point inside a circle?",
+        "Do these two lines intersect?",
+        "What is the area of this polygon?",
+        "Which direction does this triangle turn?"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**Real-world intuition:** GPS navigation computes distances between coordinates. Video games detect collisions between shapes. Computer graphics render 3D objects on 2D screens. Every one of these applications uses the same geometric primitives we will learn here."
+    },
+    {
+      "type": "text",
+      "content": "**Why it matters for interviews:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Geometry appears in ~5-10% of coding interviews at top companies",
+        "It tests your ability to translate math into clean code",
+        "It reveals whether you understand floating-point precision",
+        "Many \"hard\" problems hide a simple geometric insight"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**The three great tools of computational geometry:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Distance formula** (Pythagorean theorem)",
+        "**Cross product** (orientation, area, direction)",
+        "**Dot product** (angle, projection)"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "Master these three, and you can solve 80% of basic geometry problems."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2. CORE CONCEPTS"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.1 Points and Coordinates"
+    },
+    {
+      "type": "text",
+      "content": "A point in 2D space is defined by an ordered pair `(x, y)` where:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "`x` = horizontal position (positive = right)",
+        "`y` = vertical position (positive = up, in math; positive = down, in computer graphics)"
+      ]
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "class Point:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "struct Point {\n    double x, y;\n    Point(double x, double y) : x(x), y(y) {}\n};",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "class Point {\n    double x, y;\n    Point(double x, double y) { this.x = x; this.y = y; }\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "class Point {\n    constructor(x, y) {\n        this.x = x;\n        this.y = y;\n    }\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.2 Distance Formula"
+    },
+    {
+      "type": "text",
+      "content": "The Euclidean distance between two points `(x1, y1)` and `(x2, y2)` is:"
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "d = sqrt((x2 - x1)^2 + (y2 - y1)^2)",
+      "caption": null
+    },
+    {
+      "type": "text",
+      "content": "This is derived directly from the Pythagorean theorem. The horizontal and vertical differences form the legs of a right triangle; the distance is the hypotenuse."
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "import math\n\ndef distance(p1, p2):\n    dx = p2[0] - p1[0]\n    dy = p2[1] - p1[1]\n    return math.sqrt(dx*dx + dy*dy)",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "#include <cmath>\n\ndouble distance(pair<double,double> p1, pair<double,double> p2) {\n    double dx = p2.first - p1.first;\n    double dy = p2.second - p1.second;\n    return sqrt(dx*dx + dy*dy);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public double distance(int[] p1, int[] p2) {\n    double dx = p2[0] - p1[0];\n    double dy = p2[1] - p1[1];\n    return Math.sqrt(dx*dx + dy*dy);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function distance(p1, p2) {\n    const dx = p2[0] - p1[0], dy = p2[1] - p1[1];\n    return Math.sqrt(dx*dx + dy*dy);\n}",
+      "caption": null
+    },
+    {
+      "type": "text",
+      "content": "**Manhattan distance** (taxicab geometry) is an alternative metric:"
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "d_manhattan = |x2 - x1| + |y2 - y1|",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.3 Midpoint Formula"
+    },
+    {
+      "type": "text",
+      "content": "The midpoint between two points:"
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "M = ((x1 + x2)/2, (y1 + y2)/2)",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.4 Slope of a Line"
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "slope = (y2 - y1) / (x2 - x1)",
+      "caption": null
+    },
+    {
+      "type": "text",
+      "content": "**Important:** Vertical lines have undefined slope (division by zero). Always check `x2 == x1` before computing slope."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.5 Line Equation"
+    },
+    {
+      "type": "text",
+      "content": "A line can be represented as:"
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "y = mx + b         (slope-intercept form)\nax + by + c = 0    (general form)",
+      "caption": null
+    },
+    {
+      "type": "text",
+      "content": "The general form avoids the vertical line problem."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.6 Collinearity"
+    },
+    {
+      "type": "text",
+      "content": "Three points are collinear if they lie on the same line. Check using area:"
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "area = x1*(y2 - y3) + x2*(y3 - y1) + x3*(y1 - y2)",
+      "caption": null
+    },
+    {
+      "type": "text",
+      "content": "If `area == 0` (or very close to 0 with floating point), the points are collinear."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.7 Cross Product and Orientation"
+    },
+    {
+      "type": "text",
+      "content": "The cross product of two vectors tells us the signed area of the parallelogram they form:"
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "cross(v1, v2) = v1.x * v2.y - v1.y * v2.x",
+      "caption": null
+    },
+    {
+      "type": "text",
+      "content": "Given three points A, B, C, the orientation (counter-clockwise, clockwise, collinear) is:"
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "orientation(A, B, C) = cross(B - A, C - A)\n                     = (B.x - A.x)*(C.y - A.y) - (B.y - A.y)*(C.x - A.x)",
+      "caption": null
+    },
+    {
+      "type": "list",
+      "items": [
+        "**orientation > 0:** Counter-clockwise (left turn)",
+        "**orientation < 0:** Clockwise (right turn)",
+        "**orientation = 0:** Collinear"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "This is the single most useful operation in computational geometry. Memorize it."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.8 Circle Geometry"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Area:** `A = pi * r^2`",
+        "**Circumference:** `C = 2 * pi * r`",
+        "**Point in circle:** distance from center <= radius"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.9 Rectangle Geometry"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Area:** `A = width * height`",
+        "**Perimeter:** `P = 2 * (width + height)`",
+        "**Overlap check:** Two axis-aligned rectangles overlap if:"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "``` not (r1.right < r2.left or r1.left > r2.right or r1.bottom < r2.top or r1.top > r2.bottom) ```"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.10 Triangle Classification"
+    },
+    {
+      "type": "text",
+      "content": "By side length:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Equilateral:** All three sides equal",
+        "**Isosceles:** Two sides equal",
+        "**Scalene:** All three sides different"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "By angle:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Acute:** All angles < 90 degrees",
+        "**Right:** One angle = 90 degrees",
+        "**Obtuse:** One angle > 90 degrees"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.11 Polygon Area (Shoelace Formula)"
+    },
+    {
+      "type": "text",
+      "content": "For a polygon with vertices `(x0, y0), (x1, y1), ..., (xn-1, yn-1)`:"
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "Area = 0.5 * |sum_{i=0}^{n-1} (xi * y_{i+1} - x_{i+1} * yi)|",
+      "caption": null
+    },
+    {
+      "type": "text",
+      "content": "Where `(xn, yn) = (x0, y0)` to close the polygon."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.12 Line Segment Intersection"
+    },
+    {
+      "type": "text",
+      "content": "Two segments AB and CD intersect if the orientations of (A, B, C) and (A, B, D) are opposite AND the orientations of (C, D, A) and (C, D, B) are opposite. Special case: collinear overlapping segments."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "3. PROBLEM RECOGNITION"
+    },
+    {
+      "type": "text",
+      "content": "**Common keywords:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "\"distance\", \"midpoint\", \"slope\"",
+        "\"collinear\", \"colinear\"",
+        "\"orientation\", \"clockwise\", \"counterclockwise\"",
+        "\"intersect\", \"intersection\"",
+        "\"inside\", \"contained within\", \"lies within\"",
+        "\"area\", \"perimeter\", \"circumference\"",
+        "\"circle\", \"rectangle\", \"triangle\", \"polygon\"",
+        "\"reflection\", \"mirror\", \"symmetric\"",
+        "\"rotate\", \"translation\"",
+        "\"minimum enclosing circle\"",
+        "\"closest pair\""
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**How interviewers frame geometry:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "\"Given N points, find the pair with the smallest distance...\"",
+        "\"Check if three points are collinear\"",
+        "\"Does this point lie inside the triangle?\"",
+        "\"Calculate the area of a polygon from its vertices\"",
+        "\"Determine if two rectangles overlap...\"",
+        "\"How many integer lattice points lie on the line segment?\""
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**Hidden geometry:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "\"Contains Duplicate III\" (LeetCode 220) — uses bucket sort with distance check",
+        "\"Points on a line\" (max points sharing a line)",
+        "\"Valid Square\" (check if 4 points form a square)",
+        "\"Boomerangs\" (count pairs equidistant from a point)"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "4. PATTERN ANALYSIS"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Pattern 1: Cross-Product for Orientation"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**When to use:** Any problem involving turns, direction, line intersection, point-in-polygon",
+        "**Why it works:** Single formula encodes signed direction",
+        "**Complexity:** O(1)",
+        "**Key formula:** `(B.x-A.x)*(C.y-A.y) - (B.y-A.y)*(C.x-A.x)`"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Pattern 2: Distance-Based Grouping"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**When to use:** Problems about equidistant points, clustering, circles",
+        "**Why it works:** Group points by (squared) distance from a reference",
+        "**Complexity:** O(n^2) for all-pairs, can be reduced",
+        "**Key insight:** Use squared distance to avoid sqrt"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Pattern 3: Sweep Line"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**When to use:** Interval overlap, closest pair, rectangle union",
+        "**Why it works:** Processing events in sorted order reduces 2D to 1D",
+        "**Complexity:** O(n log n) typically",
+        "**Common mistake:** Not handling events at the same x coordinate correctly"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Pattern 4: Convex Hull"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**When to use:** \"Smallest polygon containing all points\", extreme points",
+        "**Why it works:** Graham scan sorts by angle, then filters non-convex turns",
+        "**Complexity:** O(n log n)"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "5. REUSABLE CODING TEMPLATES"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Template 1: Point Class with Core Operations"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "import math\nfrom typing import List, Tuple\n\nPoint = Tuple[float, float]\n\ndef dist2(p1: Point, p2: Point) -> float:\n    \"\"\"Squared distance (avoids sqrt).\"\"\"\n    dx = p2[0] - p1[0]\n    dy = p2[1] - p1[1]\n    return dx*dx + dy*dy\n\ndef dist(p1: Point, p2: Point) -> float:\n    return math.sqrt(dist2(p1, p2))\n\ndef cross(o: Point, a: Point, b: Point) -> float:\n    \"\"\"Cross product (OA x OB). Positive = CCW turn.\"\"\"\n    return (a[0]-o[0])*(b[1]-o[1]) - (a[1]-o[1])*(b[0]-o[0])\n\ndef dot(a: Point, b: Point) -> float:\n    return a[0]*b[0] + a[1]*b[1]\n\ndef collinear(a: Point, b: Point, c: Point) -> bool:\n    return abs(cross(a, b, c)) < 1e-9",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "#include <vector>\n#include <cmath>\nusing namespace std;\n\nvector<double> triangleAngles(double a, double b, double c) {\n    return {\n        acos((b*b + c*c - a*a) / (2*b*c)),\n        acos((a*a + c*c - b*b) / (2*a*c)),\n        acos((a*a + b*b - c*c) / (2*a*b))\n    };\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "import java.util.*;\n\nclass TriangleUtils {\n    static List<Double> triangleAngles(double a, double b, double c) {\n        return Arrays.asList(\n            Math.acos((b*b + c*c - a*a) / (2*b*c)),\n            Math.acos((a*a + c*c - b*b) / (2*a*c)),\n            Math.acos((a*a + b*b - c*c) / (2*a*b))\n        );\n    }\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function triangleAngles(a, b, c) {\n    return [\n        Math.acos((b*b + c*c - a*a) / (2*b*c)),\n        Math.acos((a*a + c*c - b*b) / (2*a*c)),\n        Math.acos((a*a + b*b - c*c) / (2*a*b))\n    ];\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Template 2: Segment Intersection"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def on_segment(p: Point, q: Point, r: Point) -> bool:\n    \"\"\"Check if q lies on segment pr (collinear and within bounds).\"\"\"\n    return (q[0] <= max(p[0], r[0]) and q[0] >= min(p[0], r[0]) and\n            q[1] <= max(p[1], r[1]) and q[1] >= min(p[1], r[1]))\n\ndef segments_intersect(p1: Point, p2: Point, p3: Point, p4: Point) -> bool:\n    \"\"\"Check if segment p1-p2 intersects segment p3-p4.\"\"\"\n    o1 = cross(p1, p2, p3)\n    o2 = cross(p1, p2, p4)\n    o3 = cross(p3, p4, p1)\n    o4 = cross(p3, p4, p2)\n    \n    # General case\n    if o1 * o2 < 0 and o3 * o4 < 0:\n        return True\n    \n    # Collinear special cases\n    if o1 == 0 and on_segment(p1, p3, p2): return True\n    if o2 == 0 and on_segment(p1, p4, p2): return True\n    if o3 == 0 and on_segment(p3, p1, p4): return True\n    if o4 == 0 and on_segment(p3, p2, p4): return True\n    \n    return False",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "bool onSegment(vector<int> a, vector<int> b, vector<int> c) {\n    return min(a[0], b[0]) <= c[0] && c[0] <= max(a[0], b[0]) &&\n           min(a[1], b[1]) <= c[1] && c[1] <= max(a[1], b[1]);\n}\n\ndouble cross(vector<int> o, vector<int> a, vector<int> b) {\n    return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);\n}\n\nbool segmentsIntersect(vector<int> p1, vector<int> p2, vector<int> p3, vector<int> p4) {\n    double o1 = cross(p1, p2, p3), o2 = cross(p1, p2, p4);\n    double o3 = cross(p3, p4, p1), o4 = cross(p3, p4, p2);\n    if (o1 * o2 < 0 && o3 * o4 < 0) return true;\n    if (o1 == 0 && onSegment(p1, p3, p2)) return true;\n    if (o2 == 0 && onSegment(p1, p4, p2)) return true;\n    if (o3 == 0 && onSegment(p3, p1, p4)) return true;\n    if (o4 == 0 && onSegment(p3, p2, p4)) return true;\n    return false;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "import java.util.*;\n\nclass SegmentUtils {\n    static boolean onSegment(int[] a, int[] b, int[] c) {\n        return Math.min(a[0], b[0]) <= c[0] && c[0] <= Math.max(a[0], b[0]) &&\n               Math.min(a[1], b[1]) <= c[1] && c[1] <= Math.max(a[1], b[1]);\n    }\n    \n    static double cross(int[] o, int[] a, int[] b) {\n        return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);\n    }\n    \n    static boolean segmentsIntersect(int[] p1, int[] p2, int[] p3, int[] p4) {\n        double o1 = cross(p1, p2, p3), o2 = cross(p1, p2, p4);\n        double o3 = cross(p3, p4, p1), o4 = cross(p3, p4, p2);\n        if (o1 * o2 < 0 && o3 * o4 < 0) return true;\n        if (o1 == 0 && onSegment(p1, p3, p2)) return true;\n        if (o2 == 0 && onSegment(p1, p4, p2)) return true;\n        if (o3 == 0 && onSegment(p3, p1, p4)) return true;\n        if (o4 == 0 && onSegment(p3, p2, p4)) return true;\n        return false;\n    }\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function onSegment(a, b, c) {\n    return Math.min(a[0], b[0]) <= c[0] && c[0] <= Math.max(a[0], b[0]) &&\n           Math.min(a[1], b[1]) <= c[1] && c[1] <= Math.max(a[1], b[1]);\n}\n\nfunction cross(o, a, b) {\n    return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);\n}\n\nfunction segmentsIntersect(p1, p2, p3, p4) {\n    const o1 = cross(p1, p2, p3), o2 = cross(p1, p2, p4);\n    const o3 = cross(p3, p4, p1), o4 = cross(p3, p4, p2);\n    if (o1 * o2 < 0 && o3 * o4 < 0) return true;\n    if (o1 === 0 && onSegment(p1, p3, p2)) return true;\n    if (o2 === 0 && onSegment(p1, p4, p2)) return true;\n    if (o3 === 0 && onSegment(p3, p1, p4)) return true;\n    if (o4 === 0 && onSegment(p3, p2, p4)) return true;\n    return false;\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Template 3: Shoelace (Polygon Area)"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def polygon_area(vertices: List[Point]) -> float:\n    \"\"\"Compute area of a polygon using shoelace formula.\"\"\"\n    n = len(vertices)\n    area = 0.0\n    for i in range(n):\n        j = (i + 1) % n\n        area += vertices[i][0] * vertices[j][1]\n        area -= vertices[j][0] * vertices[i][1]\n    return abs(area) / 2.0",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "double polygonArea(vector<pair<double,double>>& vertices) {\n    int n = vertices.size();\n    double area = 0.0;\n    for (int i = 0; i < n; i++) {\n        int j = (i + 1) % n;\n        area += vertices[i].first * vertices[j].second;\n        area -= vertices[j].first * vertices[i].second;\n    }\n    return abs(area) / 2.0;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public double polygonArea(List<double[]> vertices) {\n    int n = vertices.size();\n    double area = 0.0;\n    for (int i = 0; i < n; i++) {\n        int j = (i + 1) % n;\n        area += vertices.get(i)[0] * vertices.get(j)[1];\n        area -= vertices.get(j)[0] * vertices.get(i)[1];\n    }\n    return Math.abs(area) / 2.0;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function polygonArea(vertices) {\n    const n = vertices.length;\n    let area = 0.0;\n    for (let i = 0; i < n; i++) {\n        const j = (i + 1) % n;\n        area += vertices[i][0] * vertices[j][1];\n        area -= vertices[j][0] * vertices[i][1];\n    }\n    return Math.abs(area) / 2.0;\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Template 4: Point in Convex Polygon"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def point_in_convex_polygon(pt: Point, polygon: List[Point]) -> bool:\n    \"\"\"Check if point is inside a convex polygon (CCW order).\"\"\"\n    n = len(polygon)\n    for i in range(n):\n        if cross(polygon[i], polygon[(i+1)%n], pt) < 0:\n            return False\n    return True",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "#include <vector>\nusing namespace std;\n\nusing Point = pair<double,double>;\n\ndouble cross(Point o, Point a, Point b) {\n    return (a.first - o.first) * (b.second - o.second) - (a.second - o.second) * (b.first - o.first);\n}\n\nbool pointInConvexPolygon(Point pt, vector<Point>& polygon) {\n    int n = polygon.size();\n    for (int i = 0; i < n; i++) {\n        if (cross(polygon[i], polygon[(i+1)%n], pt) < 0)\n            return false;\n    }\n    return true;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "import java.util.*;\n\nclass ConvexUtils {\n    static double cross(double[] o, double[] a, double[] b) {\n        return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);\n    }\n    \n    static boolean pointInConvexPolygon(double[] pt, List<double[]> polygon) {\n        int n = polygon.size();\n        for (int i = 0; i < n; i++) {\n            if (cross(polygon.get(i), polygon.get((i+1)%n), pt) < 0)\n                return false;\n        }\n        return true;\n    }\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function cross(o, a, b) {\n    return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);\n}\n\nfunction pointInConvexPolygon(pt, polygon) {\n    const n = polygon.length;\n    for (let i = 0; i < n; i++) {\n        if (cross(polygon[i], polygon[(i + 1) % n], pt) < 0)\n            return false;\n    }\n    return true;\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Template 5: Rectangle Overlap (Axis-Aligned)"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def rect_overlap(r1, r2):\n    \"\"\"r = (x1, y1, x2, y2) where (x1,y1) is bottom-left, (x2,y2) is top-right.\"\"\"\n    return not (r1[2] <= r2[0] or r1[0] >= r2[2] or r1[3] <= r2[1] or r1[1] >= r2[3])",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "#include <vector>\n#include <algorithm>\nusing namespace std;\n\nbool rectOverlap(vector<int>& r1, vector<int>& r2) {\n    return !(r1[2] <= r2[0] || r1[0] >= r2[2] || r1[3] <= r2[1] || r1[1] >= r2[3]);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public boolean rectOverlap(int[] r1, int[] r2) {\n    return !(r1[2] <= r2[0] || r1[0] >= r2[2] || r1[3] <= r2[1] || r1[1] >= r2[3]);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function rectOverlap(r1, r2) {\n    return !(r1[2] <= r2[0] || r1[0] >= r2[2] || r1[3] <= r2[1] || r1[1] >= r2[3]);\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Template 6: Finding All Angles of a Triangle"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "import math\n\ndef triangle_angles(a: float, b: float, c: float) -> List[float]:\n    \"\"\"Given 3 sides, return angles in radians (law of cosines).\"\"\"\n    angles = [\n        math.acos((b*b + c*c - a*a) / (2*b*c)),\n        math.acos((a*a + c*c - b*b) / (2*a*c)),\n        math.acos((a*a + b*b - c*c) / (2*a*b))\n    ]\n    return angles",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "#include <vector>\n#include <cmath>\nusing namespace std;\n\nvector<double> triangleAngles(double a, double b, double c) {\n    return {\n        acos((b*b + c*c - a*a) / (2*b*c)),\n        acos((a*a + c*c - b*b) / (2*a*c)),\n        acos((a*a + b*b - c*c) / (2*a*b))\n    };\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "import java.util.*;\n\nclass TriangleUtils {\n    static List<Double> triangleAngles(double a, double b, double c) {\n        return Arrays.asList(\n            Math.acos((b*b + c*c - a*a) / (2*b*c)),\n            Math.acos((a*a + c*c - b*b) / (2*a*c)),\n            Math.acos((a*a + b*b - c*c) / (2*a*b))\n        );\n    }\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function triangleAngles(a, b, c) {\n    return [\n        Math.acos((b*b + c*c - a*a) / (2*b*c)),\n        Math.acos((a*a + c*c - b*b) / (2*a*c)),\n        Math.acos((a*a + b*b - c*c) / (2*a*b))\n    ];\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "6. CURATED REAL PROBLEMS"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "#",
+        "Problem",
+        "Platform",
+        "Difficulty",
+        "URL",
+        "Concepts",
+        "Pattern"
+      ],
+      "rows": [
+        [
+          "1",
+          "Valid Boomerang",
+          "LeetCode",
+          "Easy",
+          "https://leetcode.com/problems/valid-boomerang/",
+          "Collinearity check",
+          "Cross product"
+        ],
+        [
+          "2",
+          "2D Traveling",
+          "Codeforces",
+          "1100",
+          "https://codeforces.com/problemset/problem/1869/b",
+          "Distance, path optimization",
+          "Distance formula"
+        ],
+        [
+          "3",
+          "Come Together",
+          "Codeforces",
+          "900",
+          "https://codeforces.com/problemset/problem/1845/b",
+          "Manhanttan distance",
+          "Distance"
+        ],
+        [
+          "4",
+          "Bicycle Race",
+          "Codeforces",
+          "1500",
+          "https://codeforces.com/problemset/problem/659/d",
+          "Turn direction",
+          "Cross product"
+        ],
+        [
+          "5",
+          "Crazy Town",
+          "Codeforces",
+          "1700",
+          "https://codeforces.com/problemset/problem/498/a",
+          "Line side test",
+          "Orientation"
+        ],
+        [
+          "6",
+          "Collinearity (ABC181C)",
+          "AtCoder",
+          "248",
+          "https://atcoder.jp/contests/abc181/tasks/abc181_c",
+          "3-point collinearity",
+          "Cross product"
+        ],
+        [
+          "7",
+          "Points in a Circle",
+          "CodeAbbey",
+          "Easy",
+          "https://codeabbey.com/index/task_view/points-in-a-circle",
+          "Circle containment",
+          "Distance <= radius"
+        ],
+        [
+          "8",
+          "CCW",
+          "CodeChef",
+          "Medium",
+          "https://www.codechef.com/problems/CCW",
+          "Counter-clockwise orientation",
+          "Cross product"
+        ],
+        [
+          "9",
+          "Find Extra One",
+          "Codeforces",
+          "800",
+          "https://codeforces.com/problemset/problem/900/a",
+          "Point counting by side",
+          "Orientation"
+        ],
+        [
+          "10",
+          "Where do I Turn?",
+          "Codeforces",
+          "1300",
+          "https://codeforces.com/problemset/problem/227/a",
+          "Turn direction",
+          "Cross product"
+        ],
+        [
+          "11",
+          "Triangle Area",
+          "CodeAbbey",
+          "Easy",
+          "https://codeabbey.com/index/task_view/triangle-area",
+          "Area via coordinates",
+          "Shoelace"
+        ],
+        [
+          "12",
+          "Bovine Dilemma",
+          "Codeforces",
+          "800",
+          "https://codeforces.com/problemset/problem/1466/a",
+          "Distinct triangle areas",
+          "Distance + set"
+        ],
+        [
+          "13",
+          "Watchmen",
+          "Codeforces",
+          "1400",
+          "https://codeforces.com/problemset/problem/650/a",
+          "Manhattan vs Euclidean pairs",
+          "Distance equality"
+        ],
+        [
+          "14",
+          "White Sheet",
+          "Codeforces",
+          "1700",
+          "https://codeforces.com/problemset/problem/1216/c",
+          "Rectangle overlap",
+          "Overlap checking"
+        ],
+        [
+          "15",
+          "Follow Directions",
+          "Codeforces",
+          "800",
+          "https://codeforces.com/problemset/problem/1791/b",
+          "Grid movement",
+          "Point tracking"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "7. GENERATED PRACTICE PROBLEMS"
+    },
+    {
+      "type": "text",
+      "content": "**Easy 1: Hit the Target** Given a point `(x, y)` and a circle centered at `(cx, cy)` with radius `r`, determine if the point lies on the circumference (within 1e-6 tolerance)."
+    },
+    {
+      "type": "text",
+      "content": "**Easy 2: Collinear Triplets** Given N points, count the number of collinear triplets. N <= 100."
+    },
+    {
+      "type": "text",
+      "content": "**Medium 3: Mirror Image** Given a point `P` and a line defined by two points `A` and `B`, compute the mirror image of `P` across the line."
+    },
+    {
+      "type": "text",
+      "content": "**Medium 4: Minimum Bounding Circle** Given N points, find the minimum radius circle centered at `(0, 0)` that contains all points. Then solve for the general case (center can be anywhere)."
+    },
+    {
+      "type": "text",
+      "content": "**Medium 5: Path Simplification** Given a path as a sequence of points, remove redundant points that are collinear with their neighbors. For example, `[(0,0), (1,1), (2,2), (3,0)]` simplifies to `[(0,0), (2,2), (3,0)]`."
+    },
+    {
+      "type": "text",
+      "content": "**Hard 6: Closest Pair of Points** Given N points (N <= 10^5), find the minimum distance between any two points."
+    },
+    {
+      "type": "text",
+      "content": "**Hard 7: Maximum Points on a Line** Given N points (N <= 300), find the maximum number of points that lie on the same straight line."
+    },
+    {
+      "type": "text",
+      "content": "**Interview-style 8: Rectangle Union Area** Given N axis-aligned rectangles, compute the total area covered by their union. N <= 1000."
+    },
+    {
+      "type": "text",
+      "content": "**Contest-style 9: Counting Lattice Points in a Polygon** Given a convex polygon with integer vertices, count the number of integer lattice points strictly inside it."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "8. COMPLETE SOLUTION SECTION"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Problem 1: Valid Boomerang (LeetCode 1115)"
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition:** A boomerang is three non-collinear points. Three points are collinear if the area of the triangle they form (cross product) is zero."
+    },
+    {
+      "type": "text",
+      "content": "**B. Brute Force:** Compute cross product. That is the solution."
+    },
+    {
+      "type": "text",
+      "content": "**C. Optimized Approach:** Single cross product."
+    },
+    {
+      "type": "text",
+      "content": "**D. Step-by-Step:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Let points be (x1,y1), (x2,y2), (x3,y3)",
+        "Compute area = (x2-x1)*(y3-y1) - (x3-x1)*(y2-y1)",
+        "Return area != 0"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**E. Complexity:** $O(1)$ time, $O(1)$ space."
+    },
+    {
+      "type": "text",
+      "content": "**F. Edge Cases:** Floating point — use exact integer comparison if coordinates are integers (they are here)."
+    },
+    {
+      "type": "text",
+      "content": "**G. Code:**"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def is_boomerang(points):\n    (x1, y1), (x2, y2), (x3, y3) = points\n    area = (x2 - x1) * (y3 - y1) - (x3 - x1) * (y2 - y1)\n    return area != 0",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "bool isBoomerang(vector<vector<int>>& points) {\n    int x1 = points[0][0], y1 = points[0][1];\n    int x2 = points[1][0], y2 = points[1][1];\n    int x3 = points[2][0], y3 = points[2][1];\n    return (x2 - x1) * (y3 - y1) != (x3 - x1) * (y2 - y1);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public boolean isBoomerang(int[][] points) {\n    int x1 = points[0][0], y1 = points[0][1];\n    int x2 = points[1][0], y2 = points[1][1];\n    int x3 = points[2][0], y3 = points[2][1];\n    return (x2 - x1) * (y3 - y1) != (x3 - x1) * (y2 - y1);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function isBoomerang(points) {\n    const [[x1, y1], [x2, y2], [x3, y3]] = points;\n    return (x2 - x1) * (y3 - y1) !== (x3 - x1) * (y2 - y1);\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Problem 2: Crazy Town (Codeforces 498A)"
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition:** Each line divides the plane into two half-planes. If the start and end points are on opposite sides of a line, the walker must cross that line. Count such lines."
+    },
+    {
+      "type": "text",
+      "content": "**B. Brute Force:** For each line, compute the orientation of the start and end points relative to the line. If the signs differ, increment counter."
+    },
+    {
+      "type": "text",
+      "content": "**C. Optimized Approach:** Use cross product sign to determine which side of a line a point is on."
+    },
+    {
+      "type": "text",
+      "content": "**D. Step-by-Step:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "For each line (a, b, c): ax + by + c = 0",
+        "Compute f(x, y) = a*x + b*y + c",
+        "If f(x1, y1) * f(x2, y2) < 0 → sign differs → must cross → count++"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**E. Complexity:** $O(n)$ time, $O(1)$ space."
+    },
+    {
+      "type": "text",
+      "content": "**F. Edge Cases:** Points exactly on a line (f=0). Problem guarantees start and end are not on any line."
+    },
+    {
+      "type": "text",
+      "content": "**G. Code:**"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def solve():\n    x1, y1 = map(int, input().split())\n    x2, y2 = map(int, input().split())\n    n = int(input())\n    count = 0\n    for _ in range(n):\n        a, b, c = map(int, input().split())\n        f1 = a * x1 + b * y1 + c\n        f2 = a * x2 + b * y2 + c\n        if f1 * f2 < 0:\n            count += 1\n    print(count)",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    long long x1, y1, x2, y2;\n    cin >> x1 >> y1 >> x2 >> y2;\n    int n, count = 0;\n    cin >> n;\n    for (int i = 0; i < n; i++) {\n        long long a, b, c;\n        cin >> a >> b >> c;\n        long long f1 = a * x1 + b * y1 + c;\n        long long f2 = a * x2 + b * y2 + c;\n        if (f1 * f2 < 0) count++;\n    }\n    cout << count << endl;\n    return 0;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        long x1 = sc.nextLong(), y1 = sc.nextLong();\n        long x2 = sc.nextLong(), y2 = sc.nextLong();\n        int n = sc.nextInt(), count = 0;\n        for (int i = 0; i < n; i++) {\n            long a = sc.nextLong(), b = sc.nextLong(), c = sc.nextLong();\n            long f1 = a * x1 + b * y1 + c;\n            long f2 = a * x2 + b * y2 + c;\n            if (f1 * f2 < 0) count++;\n        }\n        System.out.println(count);\n    }\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function solve(input) {\n    const lines = input.trim().split('\\n').map(l => l.split(' ').map(Number));\n    let idx = 0;\n    const [x1, y1] = lines[idx++];\n    const [x2, y2] = lines[idx++];\n    const n = lines[idx++][0];\n    let count = 0;\n    for (let i = 0; i < n; i++) {\n        const [a, b, c] = lines[idx++];\n        const f1 = a * x1 + b * y1 + c;\n        const f2 = a * x2 + b * y2 + c;\n        if (f1 * f2 < 0) count++;\n    }\n    console.log(count);\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Problem 3: Bovine Dilemma (Codeforces 1466A)"
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition:** With N points on the x-axis, choose two distinct points as base vertices of a triangle, and a third fixed point `(0, 1)` as the apex. The area of each such triangle is `base_length / 2`. Count distinct base lengths."
+    },
+    {
+      "type": "text",
+      "content": "**B. Brute Force:** Compute all pairwise distances (base lengths). Count unique values."
+    },
+    {
+      "type": "text",
+      "content": "**C. Optimized Approach:** Use a set to track unique distances."
+    },
+    {
+      "type": "text",
+      "content": "**D. Step-by-Step:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Read N points (all on x-axis, so only x-coordinates matter)",
+        "For each pair i < j:"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Compute base = |x_i - x_j|",
+        "Add to set"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Print size of set"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**E. Complexity:** O(n^2) time, O(n^2) space for the set."
+    },
+    {
+      "type": "text",
+      "content": "**F. Edge Cases:** N=1 → no pairs → answer 0."
+    },
+    {
+      "type": "text",
+      "content": "**G. Code:**"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def solve():\n    t = int(input())\n    for _ in range(t):\n        n = int(input())\n        xs = list(map(int, input().split()))\n        areas = set()\n        for i in range(n):\n            for j in range(i+1, n):\n                areas.add(abs(xs[i] - xs[j]))\n        print(len(areas))",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "#include <iostream>\n#include <vector>\n#include <set>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    int t; cin >> t;\n    while (t--) {\n        int n; cin >> n;\n        vector<int> xs(n);\n        for (int i = 0; i < n; i++) cin >> xs[i];\n        set<int> areas;\n        for (int i = 0; i < n; i++)\n            for (int j = i + 1; j < n; j++)\n                areas.insert(abs(xs[i] - xs[j]));\n        cout << areas.size() << '\\n';\n    }\n    return 0;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int t = sc.nextInt();\n        while (t-- > 0) {\n            int n = sc.nextInt();\n            int[] xs = new int[n];\n            for (int i = 0; i < n; i++) xs[i] = sc.nextInt();\n            Set<Integer> areas = new HashSet<>();\n            for (int i = 0; i < n; i++)\n                for (int j = i + 1; j < n; j++)\n                    areas.add(Math.abs(xs[i] - xs[j]));\n            System.out.println(areas.size());\n        }\n    }\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function solve(input) {\n    const lines = input.trim().split('\\n').map(l => l.split(' ').map(Number));\n    let idx = 0;\n    const t = lines[idx++][0];\n    for (let _ = 0; _ < t; _++) {\n        const n = lines[idx++][0];\n        const xs = lines[idx++];\n        const areas = new Set();\n        for (let i = 0; i < n; i++)\n            for (let j = i + 1; j < n; j++)\n                areas.add(Math.abs(xs[i] - xs[j]));\n        console.log(areas.size);\n    }\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Problem 4: Where do I Turn? (Codeforces 227A)"
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition:** Given three points A, B, C in order, determine whether the turn at B is left, right, or straight (collinear). Use the cross product of vectors AB and BC."
+    },
+    {
+      "type": "text",
+      "content": "**B. Brute Force:** Compute cross product at B."
+    },
+    {
+      "type": "text",
+      "content": "**C. Optimized Approach:** Direct cross product formula."
+    },
+    {
+      "type": "text",
+      "content": "**D. Step-by-Step:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Compute cross = (B.x - A.x)*(C.y - B.y) - (B.y - A.y)*(C.x - B.x)",
+        "If cross > 0 → LEFT",
+        "If cross < 0 → RIGHT",
+        "If cross == 0 → TOWARDS (collinear)"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**E. Complexity:** $O(1)$."
+    },
+    {
+      "type": "text",
+      "content": "**F. Edge Cases:** Large coordinates, but within 64-bit integer range."
+    },
+    {
+      "type": "text",
+      "content": "**G. Code:**"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "ax, ay = map(int, input().split())\nbx, by = map(int, input().split())\ncx, cy = map(int, input().split())\n\ncross = (bx - ax)*(cy - by) - (by - ay)*(cx - bx)\nif cross > 0:\n    print(\"LEFT\")\nelif cross < 0:\n    print(\"RIGHT\")\nelse:\n    print(\"TOWARDS\")",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    long long ax, ay, bx, by, cx, cy;\n    cin >> ax >> ay >> bx >> by >> cx >> cy;\n    long long cross = (bx - ax) * (cy - by) - (by - ay) * (cx - bx);\n    if (cross > 0) cout << \"LEFT\" << endl;\n    else if (cross < 0) cout << \"RIGHT\" << endl;\n    else cout << \"TOWARDS\" << endl;\n    return 0;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        long ax = sc.nextLong(), ay = sc.nextLong();\n        long bx = sc.nextLong(), by = sc.nextLong();\n        long cx = sc.nextLong(), cy = sc.nextLong();\n        long cross = (bx - ax) * (cy - by) - (by - ay) * (cx - bx);\n        if (cross > 0) System.out.println(\"LEFT\");\n        else if (cross < 0) System.out.println(\"RIGHT\");\n        else System.out.println(\"TOWARDS\");\n    }\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function solve(input) {\n    const [ax, ay, bx, by, cx, cy] = input.trim().split(/\\s+/).map(Number);\n    const cross = (bx - ax) * (cy - by) - (by - ay) * (cx - bx);\n    if (cross > 0) console.log(\"LEFT\");\n    else if (cross < 0) console.log(\"RIGHT\");\n    else console.log(\"TOWARDS\");\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Problem 5: White Sheet (Codeforces 1216C)"
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition:** Determine if a white rectangle is fully covered by two black rectangles. The white rectangle is visible if any part of it is not covered by the black rectangles. Compute the union of the black rectangles covering the white rectangle, and check if it equals the white rectangle's area."
+    },
+    {
+      "type": "text",
+      "content": "**B. Brute Force:** For each cell in the white rectangle (not feasible for large coordinates)."
+    },
+    {
+      "type": "text",
+      "content": "**C. Optimized Approach:** Use rectangle intersection. Compute the overlapping area between the white rectangle and each black rectangle. Also check if the two black rectangles together cover the white rectangle entirely."
+    },
+    {
+      "type": "text",
+      "content": "**D. Step-by-Step:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Define a function `intersect(r1, r2)` that returns the intersection rectangle (or None)",
+        "Compute intersection of white with black1, white with black2",
+        "If these cover the entire white rectangle → NO (fully covered)",
+        "If the two black rectangles overlap, subtract the overlap from the union area",
+        "If union area == white area → NO, else → YES"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**E. Complexity:** $O(1)$."
+    },
+    {
+      "type": "text",
+      "content": "**F. Edge Cases:** Large coordinates up to 10^6, but still fits in 64-bit integers."
+    },
+    {
+      "type": "text",
+      "content": "**G. Code:**"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def intersect(r1, r2):\n    x1 = max(r1[0], r2[0])\n    y1 = max(r1[1], r2[1])\n    x2 = min(r1[2], r2[2])\n    y2 = min(r1[3], r2[3])\n    if x1 < x2 and y1 < y2:\n        return (x1, y1, x2, y2)\n    return None\n\ndef area(r):\n    return (r[2] - r[0]) * (r[3] - r[1])\n\nwhite = tuple(map(int, input().split()))\nblack1 = tuple(map(int, input().split()))\nblack2 = tuple(map(int, input().split()))\n\niw1 = intersect(white, black1)\niw2 = intersect(white, black2)\niw12 = intersect(iw1, iw2) if iw1 and iw2 else None\n\ncovered = 0\nif iw1: covered += area(iw1)\nif iw2: covered += area(iw2)\nif iw12: covered -= area(iw12)\n\nprint(\"NO\" if covered >= area(white) else \"YES\")",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "#include <iostream>\n#include <vector>\n#include <algorithm>\nusing namespace std;\n\nusing Rect = vector<long long>;\n\nRect intersect(Rect& r1, Rect& r2) {\n    long long x1 = max(r1[0], r2[0]), y1 = max(r1[1], r2[1]);\n    long long x2 = min(r1[2], r2[2]), y2 = min(r1[3], r2[3]);\n    if (x1 < x2 && y1 < y2) return {x1, y1, x2, y2};\n    return {};\n}\n\nlong long area(Rect& r) {\n    return (r[2] - r[0]) * (r[3] - r[1]);\n}\n\nint main() {\n    Rect white(4), black1(4), black2(4);\n    for (int i = 0; i < 4; i++) cin >> white[i];\n    for (int i = 0; i < 4; i++) cin >> black1[i];\n    for (int i = 0; i < 4; i++) cin >> black2[i];\n    \n    Rect iw1 = intersect(white, black1);\n    Rect iw2 = intersect(white, black2);\n    Rect iw12;\n    bool has_iw12 = !iw1.empty() && !iw2.empty();\n    if (has_iw12) iw12 = intersect(iw1, iw2);\n    \n    long long covered = 0;\n    if (!iw1.empty()) covered += area(iw1);\n    if (!iw2.empty()) covered += area(iw2);\n    if (has_iw12 && !iw12.empty()) covered -= area(iw12);\n    \n    cout << (covered >= area(white) ? \"NO\" : \"YES\") << endl;\n    return 0;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "import java.util.*;\n\npublic class Main {\n    static long[] intersect(long[] r1, long[] r2) {\n        long x1 = Math.max(r1[0], r2[0]), y1 = Math.max(r1[1], r2[1]);\n        long x2 = Math.min(r1[2], r2[2]), y2 = Math.min(r1[3], r2[3]);\n        if (x1 < x2 && y1 < y2) return new long[]{x1, y1, x2, y2};\n        return null;\n    }\n    \n    static long area(long[] r) {\n        return (r[2] - r[0]) * (r[3] - r[1]);\n    }\n    \n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        long[] white = new long[4], black1 = new long[4], black2 = new long[4];\n        for (int i = 0; i < 4; i++) white[i] = sc.nextLong();\n        for (int i = 0; i < 4; i++) black1[i] = sc.nextLong();\n        for (int i = 0; i < 4; i++) black2[i] = sc.nextLong();\n        \n        long[] iw1 = intersect(white, black1);\n        long[] iw2 = intersect(white, black2);\n        long[] iw12 = (iw1 != null && iw2 != null) ? intersect(iw1, iw2) : null;\n        \n        long covered = 0;\n        if (iw1 != null) covered += area(iw1);\n        if (iw2 != null) covered += area(iw2);\n        if (iw12 != null) covered -= area(iw12);\n        \n        System.out.println(covered >= area(white) ? \"NO\" : \"YES\");\n    }\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function intersect(r1, r2) {\n    const x1 = Math.max(r1[0], r2[0]), y1 = Math.max(r1[1], r2[1]);\n    const x2 = Math.min(r1[2], r2[2]), y2 = Math.min(r1[3], r2[3]);\n    if (x1 < x2 && y1 < y2) return [x1, y1, x2, y2];\n    return null;\n}\n\nfunction area(r) {\n    return (r[2] - r[0]) * (r[3] - r[1]);\n}\n\nfunction solve(input) {\n    const nums = input.trim().split(/\\s+/).map(Number);\n    const white = nums.slice(0, 4);\n    const black1 = nums.slice(4, 8);\n    const black2 = nums.slice(8, 12);\n    \n    const iw1 = intersect(white, black1);\n    const iw2 = intersect(white, black2);\n    const iw12 = iw1 && iw2 ? intersect(iw1, iw2) : null;\n    \n    let covered = 0;\n    if (iw1) covered += area(iw1);\n    if (iw2) covered += area(iw2);\n    if (iw12) covered -= area(iw12);\n    \n    console.log(covered >= area(white) ? \"NO\" : \"YES\");\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Problem 6: Tell Your World (Codeforces 849B)"
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition:** Given N points, determine if they can be split into two non-empty groups, each lying on a distinct line (both lines parallel). Use the fact that the first point must belong to one of the two lines."
+    },
+    {
+      "type": "text",
+      "content": "**B. Brute Force:** Try assigning each point to line 1 or line 2. That's O(2^n) — infeasible."
+    },
+    {
+      "type": "text",
+      "content": "**C. Optimized Approach:** There are only three candidate lines through the first point (connecting it to i=1, 2, 3). For each candidate, try to build two parallel lines."
+    },
+    {
+      "type": "text",
+      "content": "**D. Step-by-Step:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Check 3 candidates for the slope through point 0:"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Line through points 0 and 1",
+        "Line through points 0 and 2",
+        "Line through points 1 and 2 (if point 0 is alone on a line)"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "For each slope candidate:"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "First line: all points on this slope from the chosen pair",
+        "Second line: all remaining points, check if they share one common slope (parallel to first)"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "If any candidate works → YES"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**E. Complexity:** $O(n)$ time, $O(1)$ space."
+    },
+    {
+      "type": "text",
+      "content": "**F. Edge Cases:** All points collinear → NO (need two non-empty groups). All but one point collinear → YES if that point alone on the second line."
+    },
+    {
+      "type": "text",
+      "content": "**G. Code:**"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def solve():\n    n = int(input())\n    pts = list(map(int, input().split()))\n    \n    def slope(i, j):\n        return (pts[j] - pts[i]) / (j - i)\n    \n    def check_with_slope(s):\n        line1 = set()\n        for i in range(n):\n            if (pts[i] - pts[0]) == s * i:\n                line1.add(i)\n        if len(line1) == n:\n            return False\n        line2 = [i for i in range(n) if i not in line1]\n        if len(line2) <= 1:\n            return True\n        s2 = (pts[line2[1]] - pts[line2[0]]) / (line2[1] - line2[0])\n        if abs(s2 - s) > 1e-9:\n            return False\n        for i in line2[2:]:\n            if abs((pts[i] - pts[line2[0]]) - s2 * (i - line2[0])) > 1e-9:\n                return False\n        return True\n    \n    if check_with_slope(slope(0, 1)) or check_with_slope(slope(0, 2)):\n        print(\"Yes\")\n        return\n    \n    # Case where point 0 is alone on its line\n    s = slope(1, 2)\n    for i in range(3, n):\n        if abs((pts[i] - pts[1]) - s * (i - 1)) > 1e-9:\n            print(\"No\")\n            return\n    print(\"Yes\")",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "#include <iostream>\n#include <vector>\n#include <set>\n#include <cmath>\nusing namespace std;\n\nint main() {\n    int n; cin >> n;\n    vector<int> pts(n);\n    for (int i = 0; i < n; i++) cin >> pts[i];\n    \n    auto slope = [&](int i, int j) -> double {\n        return (double)(pts[j] - pts[i]) / (j - i);\n    };\n    \n    auto check = [&](double s) -> bool {\n        set<int> line1;\n        for (int i = 0; i < n; i++)\n            if (abs(pts[i] - pts[0] - s * i) < 1e-9)\n                line1.insert(i);\n        if (line1.size() == n) return false;\n        vector<int> line2;\n        for (int i = 0; i < n; i++)\n            if (!line1.count(i)) line2.push_back(i);\n        if (line2.size() <= 1) return true;\n        double s2 = (double)(pts[line2[1]] - pts[line2[0]]) / (line2[1] - line2[0]);\n        if (abs(s2 - s) > 1e-9) return false;\n        for (int k = 2; k < line2.size(); k++)\n            if (abs((pts[line2[k]] - pts[line2[0]]) - s2 * (line2[k] - line2[0])) > 1e-9)\n                return false;\n        return true;\n    };\n    \n    if (check(slope(0, 1)) || check(slope(0, 2))) {\n        cout << \"Yes\" << endl;\n        return 0;\n    }\n    \n    double s = slope(1, 2);\n    for (int i = 3; i < n; i++) {\n        if (abs((pts[i] - pts[1]) - s * (i - 1)) > 1e-9) {\n            cout << \"No\" << endl;\n            return 0;\n        }\n    }\n    cout << \"Yes\" << endl;\n    return 0;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int[] pts = new int[n];\n        for (int i = 0; i < n; i++) pts[i] = sc.nextInt();\n        \n        if (check(pts, slope(pts, 0, 1)) || check(pts, slope(pts, 0, 2))) {\n            System.out.println(\"Yes\");\n            return;\n        }\n        \n        double s = slope(pts, 1, 2);\n        for (int i = 3; i < n; i++) {\n            if (Math.abs((pts[i] - pts[1]) - s * (i - 1)) > 1e-9) {\n                System.out.println(\"No\");\n                return;\n            }\n        }\n        System.out.println(\"Yes\");\n    }\n    \n    static double slope(int[] pts, int i, int j) {\n        return (double)(pts[j] - pts[i]) / (j - i);\n    }\n    \n    static boolean check(int[] pts, double s) {\n        int n = pts.length;\n        Set<Integer> line1 = new HashSet<>();\n        for (int i = 0; i < n; i++)\n            if (Math.abs(pts[i] - pts[0] - s * i) < 1e-9)\n                line1.add(i);\n        if (line1.size() == n) return false;\n        List<Integer> line2 = new ArrayList<>();\n        for (int i = 0; i < n; i++)\n            if (!line1.contains(i)) line2.add(i);\n        if (line2.size() <= 1) return true;\n        double s2 = (double)(pts[line2.get(1)] - pts[line2.get(0)]) / (line2.get(1) - line2.get(0));\n        if (Math.abs(s2 - s) > 1e-9) return false;\n        for (int k = 2; k < line2.size(); k++)\n            if (Math.abs((pts[line2.get(k)] - pts[line2.get(0)]) - s2 * (line2.get(k) - line2.get(0))) > 1e-9)\n                return false;\n        return true;\n    }\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function solve(input) {\n    const lines = input.trim().split('\\n');\n    const n = parseInt(lines[0]);\n    const pts = lines[1].split(' ').map(Number);\n    \n    const slope = (i, j) => (pts[j] - pts[i]) / (j - i);\n    \n    const check = (s) => {\n        const line1 = new Set();\n        for (let i = 0; i < n; i++)\n            if (Math.abs(pts[i] - pts[0] - s * i) < 1e-9)\n                line1.add(i);\n        if (line1.size === n) return false;\n        const line2 = [];\n        for (let i = 0; i < n; i++)\n            if (!line1.has(i)) line2.push(i);\n        if (line2.length <= 1) return true;\n        const s2 = (pts[line2[1]] - pts[line2[0]]) / (line2[1] - line2[0]);\n        if (Math.abs(s2 - s) > 1e-9) return false;\n        for (let k = 2; k < line2.length; k++)\n            if (Math.abs((pts[line2[k]] - pts[line2[0]]) - s2 * (line2[k] - line2[0])) > 1e-9)\n                return false;\n        return true;\n    };\n    \n    if (check(slope(0, 1)) || check(slope(0, 2))) {\n        console.log(\"Yes\");\n        return;\n    }\n    \n    const s = slope(1, 2);\n    for (let i = 3; i < n; i++) {\n        if (Math.abs((pts[i] - pts[1]) - s * (i - 1)) > 1e-9) {\n            console.log(\"No\");\n            return;\n        }\n    }\n    console.log(\"Yes\");\n}",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    }
+  ],
+  "difficulty": "Beginner"
+}

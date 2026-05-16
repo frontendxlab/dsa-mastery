@@ -1,0 +1,1161 @@
+{
+  "chapter": 12,
+  "slug": "area-and-perimeter",
+  "title": "Area and Perimeter",
+  "icon": "▣",
+  "color": "#14b8a6",
+  "problemCount": 37,
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Chapter 12: Area and Perimeter"
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "1. INTRODUCTION"
+    },
+    {
+      "type": "text",
+      "content": "Area and perimeter are the most fundamental measurements of any geometric shape. Area tells you how much space a shape covers (think: how much paint you need to cover a wall). Perimeter tells you the length of the boundary around a shape (think: how much fencing you need to enclose a garden)."
+    },
+    {
+      "type": "text",
+      "content": "In the real world, area and perimeter problems show up everywhere:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Graphics engines** calculate pixel coverage",
+        "**Robotics** computes obstacle footprints",
+        "**Urban planning** measures land lots",
+        "**Game development** detects region overlaps",
+        "**Computer vision** segments object boundaries"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "At its core, every area/perimeter problem boils down to: **given points and edges defining a shape (or shapes), what space do they occupy, and what is the length of their boundary?**"
+    },
+    {
+      "type": "text",
+      "content": "In DSA interviews and competitive programming, these problems appear as:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Grid-based shapes (islands in binary matrices)",
+        "Polygon area via coordinate formulas",
+        "Region merging and overlap",
+        "Surface area of 3D shapes projected onto 2D",
+        "Cutting shapes and computing remaining area"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "The beautiful thing about area and perimeter problems: they are visual. You can draw them. And once you understand the formulas, the code is often surprisingly short."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2. CORE CONCEPTS"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.1 Area of Basic Shapes"
+    },
+    {
+      "type": "text",
+      "content": "**Rectangle:** $A = \\text{width} \\times \\text{height}$"
+    },
+    {
+      "type": "text",
+      "content": "**Triangle:** $A = \\frac{1}{2} \\times \\text{base} \\times \\text{height}$"
+    },
+    {
+      "type": "list",
+      "items": [
+        "For triangles given by coordinates: Shoelace formula (see below)"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**Circle:** $A = \\pi \\times r^2$"
+    },
+    {
+      "type": "text",
+      "content": "**Trapezoid:** $A = \\frac{1}{2} \\times (a + b) \\times h$ where a, b are parallel sides"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.2 Perimeter of Basic Shapes"
+    },
+    {
+      "type": "text",
+      "content": "**Rectangle:** $P = 2 \\times (\\text{width} + \\text{height})$"
+    },
+    {
+      "type": "text",
+      "content": "**Triangle:** $P = \\text{side}_1 + \\text{side}_2 + \\text{side}_3$"
+    },
+    {
+      "type": "text",
+      "content": "**Circle (Circumference):** $C = 2\\pi r$"
+    },
+    {
+      "type": "text",
+      "content": "**General Polygon:** Sum of Euclidean distances between consecutive vertices"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.3 The Shoelace Formula (Surveyor's Formula)"
+    },
+    {
+      "type": "text",
+      "content": "Given a polygon with vertices `(x_1, y_1), (x_2, y_2), ..., (x_n, y_n)` in order:"
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "Area = ½ × | Σ(xᵢ × yᵢ₊₁ - xᵢ₊₁ × yᵢ) |",
+      "caption": null
+    },
+    {
+      "type": "text",
+      "content": "where indices wrap around (vertex n+1 = vertex 1)."
+    },
+    {
+      "type": "text",
+      "content": "**Why it works:** The formula computes the sum of cross products of consecutive edge vectors. Geometrically, each term `x_i·y_i_+_1 - x_i_+_1·y_i` represents twice the signed area of the triangle formed by the origin and the edge from vertex i to vertex i+1. When summed around the polygon, interior contributions cancel, leaving exactly twice the polygon's area."
+    },
+    {
+      "type": "text",
+      "content": "**Key insight:** The sign tells you vertex orientation. Positive = counterclockwise, negative = clockwise. Take absolute value for area."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.4 Heron's Formula for Triangle Area"
+    },
+    {
+      "type": "text",
+      "content": "Given three side lengths a, b, c:"
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "s = (a + b + c) / 2\nArea = √(s × (s - a) × (s - b) × (s - c))",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.5 Area of Intersecting Rectangles"
+    },
+    {
+      "type": "text",
+      "content": "Given two axis-aligned rectangles `(x_1, y_1, x_2, y_2)` and `(x_3, y_3, x_4, y_4)`:"
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "overlap_x = max(0, min(x₂, x₄) - max(x₁, x₃))\noverlap_y = max(0, min(y₂, y₄) - max(y₁, y₃))\noverlap_area = overlap_x × overlap_y",
+      "caption": null
+    },
+    {
+      "type": "text",
+      "content": "**Intuition:** The overlap rectangle's left edge is the rightmost of the two left edges. Its right edge is the leftmost of the two right edges. If the result is negative, they don't overlap."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.6 Island Perimeter in Grids"
+    },
+    {
+      "type": "text",
+      "content": "For a grid of 1s (land) and 0s (water), the perimeter of each land cell starts at 4 and loses 1 for each adjacent land cell (up, down, left, right)."
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "perimeter = Σ(4 - adjacent_land_count) for each land cell",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.7 Union Area of Rectangles (Sweep Line)"
+    },
+    {
+      "type": "text",
+      "content": "When multiple rectangles overlap, computing the union area requires:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Sweep line** approach: sort events by x-coordinate",
+        "Maintain active y-intervals using a segment tree",
+        "At each x-step: `area += (x_next - x_current) × total_active_y_length`"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "This is a classic application of line sweep + interval union tracking, typically $O(N \\log N)$."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "3. PROBLEM RECOGNITION"
+    },
+    {
+      "type": "text",
+      "content": "**Keywords that signal area/perimeter problems:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "\"area\", \"perimeter\", \"surface area\", \"volume\"",
+        "\"maximize area\", \"minimum area\", \"enclosing\"",
+        "\"overlap\", \"intersection\", \"union\"",
+        "\"island\", \"region\", \"enclosure\"",
+        "\"cover\", \"fill\", \"occupied\"",
+        "\"cut\", \"split\", \"partition\"",
+        "\"fence\", \"boundary\", \"border\""
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**Hidden indicators:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Binary matrices where 1s represent shapes",
+        "Grid problems asking for \"number of boundary cells\"",
+        "Problems about \"maximizing land\" or \"minimum bounding box\"",
+        "Coordinate pairs where you need the shape they define",
+        "Problems about \"painting\" or \"covering\" regions"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**How interviewers frame these:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "\"Given N rectangles, find the total area covered by at least one of them\"",
+        "\"Find the perimeter of the shape formed by 1s in a binary matrix\"",
+        "\"Given points, find the largest triangle area\"",
+        "\"What is the minimum area rectangle that encloses all points?\"",
+        "\"How much surface area do stacked cubes have?\""
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "4. PATTERN ANALYSIS"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Pattern 1: Grid-Based Perimeter/Area"
+    },
+    {
+      "type": "text",
+      "content": "**When to use:** Binary matrix with connected components or isolated 1s."
+    },
+    {
+      "type": "text",
+      "content": "**Why it works:** Grid cells have a natural coordinate system. Each cell contributes 4 to perimeter minus 1 for each neighbor. Area is just counting 1s or running DFS/BFS on connected components."
+    },
+    {
+      "type": "text",
+      "content": "**Complexity:** $$O(R \\times C)$$ for the grid, $$O(R \\times C)$$ for BFS/DFS flood fill."
+    },
+    {
+      "type": "text",
+      "content": "**Common mistake:** Forgetting diagonal adjacency doesn't count as touching for perimeter reduction."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Pattern 2: Polygon Area from Coordinates"
+    },
+    {
+      "type": "text",
+      "content": "**When to use:** Problems that give you vertices of a polygon (possibly self-intersecting, but usually simple)."
+    },
+    {
+      "type": "text",
+      "content": "**Why it works:** The shoelace formula works for ANY simple polygon, convex or concave."
+    },
+    {
+      "type": "text",
+      "content": "**Complexity:** $O(N)$ for N vertices."
+    },
+    {
+      "type": "text",
+      "content": "**Common mistake:** Vertices must be in order (clockwise or counterclockwise). Out-of-order vertices produce garbage."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Pattern 3: Rectangle Overlap / Union"
+    },
+    {
+      "type": "text",
+      "content": "**When to use:** Multiple axis-aligned rectangles, need total covered area or overlap detection."
+    },
+    {
+      "type": "text",
+      "content": "**Why it works:** Axis-aligned rectangles decompose naturally into x-events (start/end). The active y-intervals can be managed with a segment tree or interval merging."
+    },
+    {
+      "type": "text",
+      "content": "**Complexity:** $O(N \\log N)$ with segment tree."
+    },
+    {
+      "type": "text",
+      "content": "**Common mistake:** Integer overflow with coordinate multiplication. Use 64-bit integers."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Pattern 4: Surface Area of Stacked Shapes"
+    },
+    {
+      "type": "text",
+      "content": "**When to use:** 3D shapes described by a 2D grid of heights (like LeetCode 928)."
+    },
+    {
+      "type": "text",
+      "content": "**Why it works:** Each column contributes `4 × height + 2` (top and bottom) minus `2 × min(h1, h2)` for each shared face with a neighbor."
+    },
+    {
+      "type": "text",
+      "content": "**Complexity:** $$O(R \\times C)$$ to compute."
+    },
+    {
+      "type": "text",
+      "content": "**Common mistake:** Forgetting the bottom face or double-counting hidden faces."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Pattern 5: Maximum Area After Cuts"
+    },
+    {
+      "type": "text",
+      "content": "**When to use:** \"Cut a cake/rectangle along given lines, find largest piece area.\""
+    },
+    {
+      "type": "text",
+      "content": "**Why it works:** The largest piece after cuts is determined by the largest gap between consecutive horizontal cuts × largest gap between consecutive vertical cuts."
+    },
+    {
+      "type": "text",
+      "content": "**Complexity:** $O(H \\log H + V \\log V)$ sorting + O(H + V) scanning."
+    },
+    {
+      "type": "text",
+      "content": "**Common mistake:** Not including the edges (0 and max dimension) as implicit cut positions."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "5. REUSABLE CODING TEMPLATES"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Template 1: Shoelace Formula (Polygon Area)"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def polygon_area(vertices):\n    \"\"\"Area of a simple polygon given as list of (x, y) points in order.\"\"\"\n    n = len(vertices)\n    area = 0\n    for i in range(n):\n        x1, y1 = vertices[i]\n        x2, y2 = vertices[(i + 1) % n]\n        area += x1 * y2 - x2 * y1\n    return abs(area) / 2.0",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "double polygon_area(vector<pair<double, double>>& vertices) {\n    int n = vertices.size();\n    double area = 0;\n    for (int i = 0; i < n; i++) {\n        auto [x1, y1] = vertices[i];\n        auto [x2, y2] = vertices[(i + 1) % n];\n        area += x1 * y2 - x2 * y1;\n    }\n    return abs(area) / 2.0;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public static double polygonArea(int[][] vertices) {\n    int n = vertices.length;\n    long area = 0;\n    for (int i = 0; i < n; i++) {\n        int x1 = vertices[i][0], y1 = vertices[i][1];\n        int x2 = vertices[(i + 1) % n][0], y2 = vertices[(i + 1) % n][1];\n        area += (long) x1 * y2 - (long) x2 * y1;\n    }\n    return Math.abs(area) / 2.0;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function polygonArea(vertices) {\n    let area = 0;\n    const n = vertices.length;\n    for (let i = 0; i < n; i++) {\n        const [x1, y1] = vertices[i];\n        const [x2, y2] = vertices[(i + 1) % n];\n        area += x1 * y2 - x2 * y1;\n    }\n    return Math.abs(area) / 2.0;\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Template 2: Rectangle Overlap Area"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def overlap_area(r1, r2):\n    \"\"\"Rectangles as (x1, y1, x2, y2) where (x1,y1) is bottom-left and (x2,y2) is top-right.\"\"\"\n    x_overlap = max(0, min(r1[2], r2[2]) - max(r1[0], r2[0]))\n    y_overlap = max(0, min(r1[3], r2[3]) - max(r1[1], r2[1]))\n    return x_overlap * y_overlap",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "long long overlap_area(vector<int>& r1, vector<int>& r2) {\n    long long x = max(0, min(r1[2], r2[2]) - max(r1[0], r2[0]));\n    long long y = max(0, min(r1[3], r2[3]) - max(r1[1], r2[1]));\n    return x * y;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public static long overlapArea(int[] r1, int[] r2) {\n    long x = Math.max(0, Math.min(r1[2], r2[2]) - Math.max(r1[0], r2[0]));\n    long y = Math.max(0, Math.min(r1[3], r2[3]) - Math.max(r1[1], r2[1]));\n    return x * y;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function overlapArea(r1, r2) {\n    const xOverlap = Math.max(0, Math.min(r1[2], r2[2]) - Math.max(r1[0], r2[0]));\n    const yOverlap = Math.max(0, Math.min(r1[3], r2[3]) - Math.max(r1[1], r2[1]));\n    return xOverlap * yOverlap;\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Template 3: Island Perimeter (Grid)"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def island_perimeter(grid):\n    rows, cols = len(grid), len(grid[0])\n    perimeter = 0\n    for r in range(rows):\n        for c in range(cols):\n            if grid[r][c] == 1:\n                perimeter += 4\n                if r > 0 and grid[r-1][c] == 1:\n                    perimeter -= 2\n                if c > 0 and grid[r][c-1] == 1:\n                    perimeter -= 2\n    return perimeter",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "int islandPerimeter(vector<vector<int>>& grid) {\n    int m = grid.size(), n = grid[0].size(), perim = 0;\n    for (int i = 0; i < m; i++) {\n        for (int j = 0; j < n; j++) {\n            if (grid[i][j] == 1) {\n                perim += 4;\n                if (i > 0 && grid[i-1][j] == 1) perim -= 2;\n                if (j > 0 && grid[i][j-1] == 1) perim -= 2;\n            }\n        }\n    }\n    return perim;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public int islandPerimeter(int[][] grid) {\n    int m = grid.length, n = grid[0].length, perim = 0;\n    for (int i = 0; i < m; i++) {\n        for (int j = 0; j < n; j++) {\n            if (grid[i][j] == 1) {\n                perim += 4;\n                if (i > 0 && grid[i-1][j] == 1) perim -= 2;\n                if (j > 0 && grid[i][j-1] == 1) perim -= 2;\n            }\n        }\n    }\n    return perim;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function islandPerimeter(grid) {\n    const rows = grid.length, cols = grid[0].length;\n    let perimeter = 0;\n    for (let r = 0; r < rows; r++) {\n        for (let c = 0; c < cols; c++) {\n            if (grid[r][c] === 1) {\n                perimeter += 4;\n                if (r > 0 && grid[r-1][c] === 1) perimeter -= 2;\n                if (c > 0 && grid[r][c-1] === 1) perimeter -= 2;\n            }\n        }\n    }\n    return perimeter;\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Template 4: Max Area of Island (Grid DFS)"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def max_area_of_island(grid):\n    rows, cols = len(grid), len(grid[0])\n    \n    def dfs(r, c):\n        if r < 0 or r >= rows or c < 0 or c >= cols or grid[r][c] == 0:\n            return 0\n        grid[r][c] = 0  # mark visited\n        return 1 + dfs(r+1, c) + dfs(r-1, c) + dfs(r, c+1) + dfs(r, c-1)\n    \n    max_area = 0\n    for r in range(rows):\n        for c in range(cols):\n            if grid[r][c] == 1:\n                max_area = max(max_area, dfs(r, c))\n    return max_area",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "int maxAreaOfIsland(vector<vector<int>>& grid) {\n    int rows = grid.size(), cols = grid[0].size();\n    function<int(int,int)> dfs = [&](int r, int c) -> int {\n        if (r < 0 || r >= rows || c < 0 || c >= cols || grid[r][c] == 0) return 0;\n        grid[r][c] = 0;\n        return 1 + dfs(r+1, c) + dfs(r-1, c) + dfs(r, c+1) + dfs(r, c-1);\n    };\n    int maxArea = 0;\n    for (int r = 0; r < rows; r++)\n        for (int c = 0; c < cols; c++)\n            if (grid[r][c] == 1) maxArea = max(maxArea, dfs(r, c));\n    return maxArea;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public int maxAreaOfIsland(int[][] grid) {\n    int rows = grid.length, cols = grid[0].length;\n    int maxArea = 0;\n    for (int r = 0; r < rows; r++)\n        for (int c = 0; c < cols; c++)\n            if (grid[r][c] == 1) maxArea = Math.max(maxArea, dfs(grid, r, c, rows, cols));\n    return maxArea;\n}\nint dfs(int[][] grid, int r, int c, int rows, int cols) {\n    if (r < 0 || r >= rows || c < 0 || c >= cols || grid[r][c] == 0) return 0;\n    grid[r][c] = 0;\n    return 1 + dfs(grid, r+1, c, rows, cols) + dfs(grid, r-1, c, rows, cols)\n           + dfs(grid, r, c+1, rows, cols) + dfs(grid, r, c-1, rows, cols);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function maxAreaOfIsland(grid) {\n    const rows = grid.length, cols = grid[0].length;\n    function dfs(r, c) {\n        if (r < 0 || r >= rows || c < 0 || c >= cols || grid[r][c] === 0) return 0;\n        grid[r][c] = 0;\n        return 1 + dfs(r+1, c) + dfs(r-1, c) + dfs(r, c+1) + dfs(r, c-1);\n    }\n    let maxArea = 0;\n    for (let r = 0; r < rows; r++)\n        for (let c = 0; c < cols; c++)\n            if (grid[r][c] === 1) maxArea = Math.max(maxArea, dfs(r, c));\n    return maxArea;\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Template 5: Union Area of Rectangles (Line Sweep)"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def rectangle_union_area(rects):\n    \"\"\"rects: list of (x1, y1, x2, y2). Returns total area covered.\"\"\"\n    events = []\n    for x1, y1, x2, y2 in rects:\n        events.append((x1, 1, y1, y2))  # 1 = start\n        events.append((x2, -1, y1, y2)) # -1 = end\n    events.sort()\n    \n    active = []  # list of (y1, y2) for active rectangles\n    prev_x = events[0][0]\n    total = 0\n    \n    def active_y_length():\n        if not active:\n            return 0\n        active.sort()\n        length = 0\n        cur_start, cur_end = active[0]\n        for s, e in active[1:]:\n            if s <= cur_end:\n                cur_end = max(cur_end, e)\n            else:\n                length += cur_end - cur_start\n                cur_start, cur_end = s, e\n        length += cur_end - cur_start\n        return length\n    \n    for x, typ, y1, y2 in events:\n        total += (x - prev_x) * active_y_length()\n        if typ == 1:\n            active.append((y1, y2))\n        else:\n            active.remove((y1, y2))\n        prev_x = x\n    \n    return total",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "long long rectangleUnionArea(vector<vector<int>>& rects) {\n    vector<tuple<int,int,int,int>> events;\n    for (auto& r : rects) {\n        events.push_back({r[0], 1, r[1], r[3]});\n        events.push_back({r[2], -1, r[1], r[3]});\n    }\n    sort(events.begin(), events.end());\n    vector<pair<int,int>> active;\n    int prevX = get<0>(events[0]);\n    long long total = 0;\n    auto activeYLength = [&]() -> long long {\n        if (active.empty()) return 0;\n        sort(active.begin(), active.end());\n        long long len = 0;\n        int curStart = active[0].first, curEnd = active[0].second;\n        for (auto& [s, e] : active) {\n            if (s <= curEnd) curEnd = max(curEnd, e);\n            else { len += curEnd - curStart; curStart = s; curEnd = e; }\n        }\n        len += curEnd - curStart;\n        return len;\n    };\n    for (auto& [x, typ, y1, y2] : events) {\n        total += (x - prevX) * activeYLength();\n        if (typ == 1) active.push_back({y1, y2});\n        else active.erase(find(active.begin(), active.end(), make_pair(y1, y2)));\n        prevX = x;\n    }\n    return total;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public static long rectangleUnionArea(int[][] rects) {\n    List<int[]> events = new ArrayList<>();\n    for (int[] r : rects) {\n        events.add(new int[]{r[0], 1, r[1], r[3]});\n        events.add(new int[]{r[2], -1, r[1], r[3]});\n    }\n    events.sort((a,b) -> a[0] - b[0]);\n    List<int[]> active = new ArrayList<>();\n    int prevX = events.get(0)[0];\n    long total = 0;\n    for (int[] e : events) {\n        int x = e[0], typ = e[1], y1 = e[2], y2 = e[3];\n        total += (long)(x - prevX) * activeYLength(active);\n        if (typ == 1) active.add(new int[]{y1, y2});\n        else active.removeIf(a -> a[0] == y1 && a[1] == y2);\n        prevX = x;\n    }\n    return total;\n}\nstatic long activeYLength(List<int[]> active) {\n    if (active.isEmpty()) return 0;\n    active.sort((a,b) -> a[0] - b[0]);\n    long len = 0;\n    int curStart = active.get(0)[0], curEnd = active.get(0)[1];\n    for (int[] a : active) {\n        if (a[0] <= curEnd) curEnd = Math.max(curEnd, a[1]);\n        else { len += curEnd - curStart; curStart = a[0]; curEnd = a[1]; }\n    }\n    return len + curEnd - curStart;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function rectangleUnionArea(rects) {\n    const events = [];\n    for (const [x1, y1, x2, y2] of rects) {\n        events.push([x1, 1, y1, y2]);\n        events.push([x2, -1, y1, y2]);\n    }\n    events.sort((a, b) => a[0] - b[0]);\n    let active = [];\n    let prevX = events[0][0];\n    let total = 0;\n    function activeYLength() {\n        if (active.length === 0) return 0;\n        active.sort((a, b) => a[0] - b[0]);\n        let len = 0;\n        let curStart = active[0][0], curEnd = active[0][1];\n        for (const [s, e] of active) {\n            if (s <= curEnd) curEnd = Math.max(curEnd, e);\n            else { len += curEnd - curStart; curStart = s; curEnd = e; }\n        }\n        return len + curEnd - curStart;\n    }\n    for (const [x, typ, y1, y2] of events) {\n        total += (x - prevX) * activeYLength();\n        if (typ === 1) active.push([y1, y2]);\n        else active = active.filter(a => !(a[0] === y1 && a[1] === y2));\n        prevX = x;\n    }\n    return total;\n}",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "6. CURATED REAL PROBLEMS"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "#",
+        "Problem",
+        "Platform",
+        "Difficulty",
+        "Concepts",
+        "Pattern"
+      ],
+      "rows": [
+        [
+          "1",
+          "463. Island Perimeter",
+          "LeetCode",
+          "Easy",
+          "Grid, Adjacency",
+          "Grid Perimeter"
+        ],
+        [
+          "2",
+          "695. Max Area of Island",
+          "LeetCode",
+          "Medium",
+          "DFS, Connected Components",
+          "Grid Area"
+        ],
+        [
+          "3",
+          "130. Surrounded Regions",
+          "LeetCode",
+          "Medium",
+          "BFS/DFS, Boundary",
+          "Region Fill"
+        ],
+        [
+          "4",
+          "1465. Max Area of Piece of Cake",
+          "LeetCode",
+          "Medium",
+          "Sorting, Max Gap",
+          "Cut-Based Area"
+        ],
+        [
+          "5",
+          "999. Regions Cut By Slashes",
+          "LeetCode",
+          "Medium",
+          "Union-Find, Grid Upscaling",
+          "Connected Area"
+        ],
+        [
+          "6",
+          "Grass Seed Inc",
+          "Kattis",
+          "Easy",
+          "Basic Arithmetic",
+          "Simple Area"
+        ],
+        [
+          "7",
+          "3461. Min Area to Cover All Ones I",
+          "LeetCode",
+          "Medium",
+          "Bounding Box",
+          "Enclosing Area"
+        ],
+        [
+          "8",
+          "BSHEEP",
+          "SPOJ",
+          "Medium",
+          "Convex Hull, Perimeter",
+          "Hull Perimeter"
+        ],
+        [
+          "9",
+          "PIR - Tetrahedron Volume",
+          "SPOJ",
+          "Medium",
+          "Heron's 3D, Volume",
+          "3D Volume"
+        ],
+        [
+          "10",
+          "Area of a Star",
+          "Codeforces",
+          "Hard (2100)",
+          "Polygon, Shoelace",
+          "Complex Area"
+        ],
+        [
+          "11",
+          "3459. Min Area to Cover All Ones II",
+          "LeetCode",
+          "Hard",
+          "Enumeration, Partition",
+          "Min Enclosing"
+        ],
+        [
+          "12",
+          "Visible Black Areas",
+          "Codeforces",
+          "Hard (2800)",
+          "Sweep Line, DSU",
+          "Union Area"
+        ],
+        [
+          "13",
+          "2158. Amount of New Area Painted Each Day",
+          "LeetCode",
+          "Hard",
+          "Segment Tree, Lazy",
+          "Union Area"
+        ],
+        [
+          "14",
+          "Combined Volume of Cuboids",
+          "Project Euler",
+          "Very Hard",
+          "Inclusion-Exclusion",
+          "3D Union"
+        ],
+        [
+          "15",
+          "MMAXPER - Maximum Perimeter",
+          "SPOJ",
+          "Easy",
+          "DP, Interval",
+          "Max Perimeter"
+        ]
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "7. GENERATED PRACTICE PROBLEMS"
+    },
+    {
+      "type": "text",
+      "content": "**Easy 1: Garden Fence** You have a rectangular garden of size $M \\times N$. You place a fence that goes around the garden but leaves a gap of width `g` at the bottom for a gate. What is the total length of the fence?"
+    },
+    {
+      "type": "text",
+      "content": "**Easy 2: Paint the Wall** You have a wall of size W×H. You paint K rectangles on it (axis-aligned). Some may overlap. What is the total painted area?"
+    },
+    {
+      "type": "text",
+      "content": "**Medium 1: Lake Area** Given a 2D grid where 0 = water and 1 = land, find the largest connected water body (lake) that is completely surrounded by land (not touching the grid boundary). Return its area."
+    },
+    {
+      "type": "text",
+      "content": "**Medium 2: Minimum Perimeter Enclosure** Given N points in a 2D plane, find the perimeter of the smallest axis-aligned rectangle that encloses at least K of them."
+    },
+    {
+      "type": "text",
+      "content": "**Hard 1: City Blocks** You are given N rectangles representing buildings in a city (viewed from above). Compute the total ground area covered by buildings, accounting for overlaps. If a building completely covers another, the smaller one doesn't count. But if they partially overlap, the union counts once. N \\le  10⁵."
+    },
+    {
+      "type": "text",
+      "content": "**Hard 2: Irregular Field** A field is defined by an irregular polygon given by N vertices in order. A river defined by a line segment passes through the field. Compute the area of the field on each side of the river."
+    },
+    {
+      "type": "text",
+      "content": "**Interview-Style: Max Island After One Flip** Given a binary matrix, you can flip at most one 0 to 1. What's the maximum possible area of the largest connected component of 1s after the flip?"
+    },
+    {
+      "type": "text",
+      "content": "**Contest-Style: Area of Union of Rotated Rectangles** Given N rectangles (axis-aligned), randomly rotate each by a small angle \\theta  (same for all). Compute the union area with 10⁻⁶ precision."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "8. COMPLETE SOLUTION SECTION"
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Problem 1: 463. Island Perimeter (LeetCode Easy)"
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition** Each land cell has 4 sides. When two land cells touch, they share a side that is NOT part of the perimeter. So: total perimeter = sum over all land cells of (4 - number of land neighbors)."
+    },
+    {
+      "type": "text",
+      "content": "**B. Brute Force** For each cell, check all 4 neighbors. This is already optimal since we must examine every cell."
+    },
+    {
+      "type": "text",
+      "content": "**C. Optimized Approach** Iterate once. Count each cell's contribution, subtracting 2 for each top/left neighbor (we count each shared side once, and subtracting 2 accounts for both cells losing that side)."
+    },
+    {
+      "type": "text",
+      "content": "**D. Step-by-Step**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Initialize perimeter = 0",
+        "For each cell (r, c) in the grid:"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "If land: add 4",
+        "If neighbor above is land: subtract 2",
+        "If neighbor to left is land: subtract 2"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Return perimeter"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**E. Complexity** $$O(R \\times C)$$ time, $O(1)$ space."
+    },
+    {
+      "type": "text",
+      "content": "**F. Edge Cases**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Single cell: perimeter = 4",
+        "No land: perimeter = 0",
+        "Full grid of land: perimeter = 2×(R+C) (if no holes)"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**G. Code**"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def islandPerimeter(self, grid):\n    m, n = len(grid), len(grid[0])\n    perim = 0\n    for i in range(m):\n        for j in range(n):\n            if grid[i][j] == 1:\n                perim += 4\n                if i > 0 and grid[i-1][j] == 1: perim -= 2\n                if j > 0 and grid[i][j-1] == 1: perim -= 2\n    return perim",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "int islandPerimeter(vector<vector<int>>& grid) {\n    int m = grid.size(), n = grid[0].size(), p = 0;\n    for (int i = 0; i < m; i++)\n        for (int j = 0; j < n; j++)\n            if (grid[i][j]) {\n                p += 4;\n                if (i && grid[i-1][j]) p -= 2;\n                if (j && grid[i][j-1]) p -= 2;\n            }\n    return p;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public int islandPerimeter(int[][] grid) {\n    int m = grid.length, n = grid[0].length, p = 0;\n    for (int i = 0; i < m; i++)\n        for (int j = 0; j < n; j++)\n            if (grid[i][j] == 1) {\n                p += 4;\n                if (i > 0 && grid[i-1][j] == 1) p -= 2;\n                if (j > 0 && grid[i][j-1] == 1) p -= 2;\n            }\n    return p;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "var islandPerimeter = function(grid) {\n    const m = grid.length, n = grid[0].length;\n    let p = 0;\n    for (let i = 0; i < m; i++)\n        for (let j = 0; j < n; j++)\n            if (grid[i][j] === 1) {\n                p += 4;\n                if (i > 0 && grid[i-1][j] === 1) p -= 2;\n                if (j > 0 && grid[i][j-1] === 1) p -= 2;\n            }\n    return p;\n};",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Problem 2: 695. Max Area of Island (LeetCode Medium)"
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition** This is a connected components problem on a grid. Each island is a connected component of 1s. We need the largest one. Use DFS to explore each island, counting cells as we go. Mark visited cells as 0 (sink the island) to avoid revisiting."
+    },
+    {
+      "type": "text",
+      "content": "**B. Brute Force** For each cell that is land, run BFS/DFS to find the full island. This is the standard approach and is optimal."
+    },
+    {
+      "type": "text",
+      "content": "**C. Optimized Approach** Same as brute force — this is already $$O(R \\times C)$$. The key optimization is in-place marking: set `grid[r][c] = 0` when visiting to avoid using a separate visited array."
+    },
+    {
+      "type": "text",
+      "content": "**D. Step-by-Step**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Initialize max_area = 0",
+        "For each cell in the grid:"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "If land: start DFS, count all connected 1s (sink as you go)",
+        "Update max_area"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Return max_area"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**E. Complexity** $$O(R \\times C)$$ time, $$O(R \\times C)$$ worst-case recursion stack."
+    },
+    {
+      "type": "text",
+      "content": "**F. Edge Cases**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Empty grid: area = 0",
+        "All water: area = 0",
+        "Single cell: area = 1",
+        "Islands that touch diagonally: NOT connected (only 4-directional)"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**G. Code**"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def maxAreaOfIsland(self, grid):\n    m, n = len(grid), len(grid[0])\n    \n    def dfs(r, c):\n        if r < 0 or r >= m or c < 0 or c >= n or grid[r][c] == 0:\n            return 0\n        grid[r][c] = 0\n        return 1 + dfs(r-1, c) + dfs(r+1, c) + dfs(r, c-1) + dfs(r, c+1)\n    \n    max_area = 0\n    for r in range(m):\n        for c in range(n):\n            if grid[r][c] == 1:\n                max_area = max(max_area, dfs(r, c))\n    return max_area",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "class Solution {\npublic:\n    int maxAreaOfIsland(vector<vector<int>>& grid) {\n        int m = grid.size(), n = grid[0].size(), best = 0;\n        function<int(int,int)> dfs = [&](int r, int c) -> int {\n            if (r < 0 || r >= m || c < 0 || c >= n || !grid[r][c]) return 0;\n            grid[r][c] = 0;\n            return 1 + dfs(r-1,c) + dfs(r+1,c) + dfs(r,c-1) + dfs(r,c+1);\n        };\n        for (int r = 0; r < m; r++)\n            for (int c = 0; c < n; c++)\n                if (grid[r][c]) best = max(best, dfs(r, c));\n        return best;\n    }\n};",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "class Solution {\n    int m, n;\n    public int maxAreaOfIsland(int[][] grid) {\n        m = grid.length; n = grid[0].length;\n        int best = 0;\n        for (int r = 0; r < m; r++)\n            for (int c = 0; c < n; c++)\n                if (grid[r][c] == 1) best = Math.max(best, dfs(grid, r, c));\n        return best;\n    }\n    int dfs(int[][] g, int r, int c) {\n        if (r < 0 || r >= m || c < 0 || c >= n || g[r][c] == 0) return 0;\n        g[r][c] = 0;\n        return 1 + dfs(g, r+1, c) + dfs(g, r-1, c) + dfs(g, r, c+1) + dfs(g, r, c-1);\n    }\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "var maxAreaOfIsland = function(grid) {\n    const m = grid.length, n = grid[0].length;\n    function dfs(r, c) {\n        if (r < 0 || r >= m || c < 0 || c >= n || grid[r][c] === 0) return 0;\n        grid[r][c] = 0;\n        return 1 + dfs(r-1, c) + dfs(r+1, c) + dfs(r, c-1) + dfs(r, c+1);\n    }\n    let maxArea = 0;\n    for (let r = 0; r < m; r++)\n        for (let c = 0; c < n; c++)\n            if (grid[r][c] === 1) maxArea = Math.max(maxArea, dfs(r, c));\n    return maxArea;\n};",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Problem 3: 1465. Maximum Area of a Piece of Cake (LeetCode Medium)"
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition** When you cut a rectangle horizontally and vertically, the area of each piece is (horizontal gap) × (vertical gap). The largest piece will use the largest horizontal gap and the largest vertical gap."
+    },
+    {
+      "type": "text",
+      "content": "**B. Brute Force** Generate all possible piece dimensions: $O(H \\times V)$ — too slow."
+    },
+    {
+      "type": "text",
+      "content": "**C. Optimized Approach** Sort the cuts. Compute max gap between consecutive horizontal cuts (including edges 0 and h). Same for vertical cuts. Multiply the two max gaps."
+    },
+    {
+      "type": "text",
+      "content": "**D. Step-by-Step**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Add boundary cuts: 0 to horizontalCuts, h to horizontalCuts; 0 to verticalCuts, w to verticalCuts",
+        "Sort both arrays",
+        "Find max gap in horizontalCuts: max(horizontalCuts[i+1] - horizontalCuts[i])",
+        "Find max gap in verticalCuts: max(verticalCuts[i+1] - verticalCuts[i])",
+        "Return (max_h_gap × max_v_gap) % (10⁹ + 7)"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**E. Complexity** $O(H \\log H + V \\log V)$ for sorting, O(H + V) for scanning."
+    },
+    {
+      "type": "text",
+      "content": "**F. Edge Cases**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "No cuts: area = h × w",
+        "Single horizontal cut: max horizontal gap = max(cut, h - cut)",
+        "Large numbers: use modulo and 64-bit integers"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**G. Code**"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def maxArea(self, h, w, horizontalCuts, verticalCuts):\n    horizontalCuts.extend([0, h])\n    verticalCuts.extend([0, w])\n    horizontalCuts.sort()\n    verticalCuts.sort()\n    \n    max_h = max(horizontalCuts[i+1] - horizontalCuts[i] for i in range(len(horizontalCuts)-1))\n    max_v = max(verticalCuts[i+1] - verticalCuts[i] for i in range(len(verticalCuts)-1))\n    \n    return (max_h * max_v) % (10**9 + 7)",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "int maxArea(int h, int w, vector<int>& hc, vector<int>& vc) {\n    hc.push_back(0); hc.push_back(h);\n    vc.push_back(0); vc.push_back(w);\n    sort(hc.begin(), hc.end());\n    sort(vc.begin(), vc.end());\n    long mh = 0, mv = 0;\n    for (int i = 0; i + 1 < hc.size(); i++) mh = max(mh, (long)hc[i+1] - hc[i]);\n    for (int i = 0; i + 1 < vc.size(); i++) mv = max(mv, (long)vc[i+1] - vc[i]);\n    return (int)((mh * mv) % 1000000007);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public int maxArea(int h, int w, int[] hc, int[] vc) {\n    List<Integer> hList = new ArrayList<>();\n    List<Integer> vList = new ArrayList<>();\n    for (int x : hc) hList.add(x);\n    for (int x : vc) vList.add(x);\n    hList.add(0); hList.add(h);\n    vList.add(0); vList.add(w);\n    Collections.sort(hList);\n    Collections.sort(vList);\n    long mh = 0, mv = 0;\n    for (int i = 0; i + 1 < hList.size(); i++)\n        mh = Math.max(mh, (long)hList.get(i+1) - hList.get(i));\n    for (int i = 0; i + 1 < vList.size(); i++)\n        mv = Math.max(mv, (long)vList.get(i+1) - vList.get(i));\n    return (int)((mh * mv) % 1000000007);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "var maxArea = function(h, w, horizontalCuts, verticalCuts) {\n    horizontalCuts.push(0, h);\n    verticalCuts.push(0, w);\n    horizontalCuts.sort((a, b) => a - b);\n    verticalCuts.sort((a, b) => a - b);\n    let maxH = 0, maxV = 0;\n    for (let i = 0; i + 1 < horizontalCuts.length; i++)\n        maxH = Math.max(maxH, horizontalCuts[i+1] - horizontalCuts[i]);\n    for (let i = 0; i + 1 < verticalCuts.length; i++)\n        maxV = Math.max(maxV, verticalCuts[i+1] - verticalCuts[i]);\n    return Number((BigInt(maxH) * BigInt(maxV)) % 1000000007n);\n};",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Problem 4: 130. Surrounded Regions (LeetCode Medium)"
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition** Any 'O' connected to the border cannot be captured. All other 'O' regions are surrounded by 'X' and should be flipped to 'X'. So: find all border-connected 'O's, mark them, flip everything else."
+    },
+    {
+      "type": "text",
+      "content": "**B. Brute Force** For each 'O', BFS to see if it reaches the border. Extremely slow: O((R×C)^2)."
+    },
+    {
+      "type": "text",
+      "content": "**C. Optimized Approach** Start BFS/DFS from all border 'O's. These are the safe regions. Then flip all remaining 'O's to 'X'."
+    },
+    {
+      "type": "text",
+      "content": "**D. Step-by-Step**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Find all 'O's on the border (row 0, row m-1, col 0, col n-1)",
+        "Run DFS from each, marking connected 'O's as 'S' (safe)",
+        "Iterate through the entire board:"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "'S' → 'O' (border-connected, keep)",
+        "'O' → 'X' (surrounded, flip)"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Return board"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**E. Complexity** $$O(R \\times C)$$ time, $$O(R \\times C)$$ worst-case recursion."
+    },
+    {
+      "type": "text",
+      "content": "**F. Edge Cases**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "No 'O's: nothing to do",
+        "All 'O's on border: nothing flips",
+        "Single row or column: all 'O's are border-connected"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**G. Code**"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def solve(self, board):\n    if not board or not board[0]: return\n    m, n = len(board), len(board[0])\n    \n    def dfs(r, c):\n        if r < 0 or r >= m or c < 0 or c >= n or board[r][c] != 'O':\n            return\n        board[r][c] = 'S'\n        dfs(r-1, c); dfs(r+1, c); dfs(r, c-1); dfs(r, c+1)\n    \n    for r in range(m):\n        dfs(r, 0); dfs(r, n-1)\n    for c in range(n):\n        dfs(0, c); dfs(m-1, c)\n    \n    for r in range(m):\n        for c in range(n):\n            if board[r][c] == 'S': board[r][c] = 'O'\n            elif board[r][c] == 'O': board[r][c] = 'X'",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "class Solution {\npublic:\n    void solve(vector<vector<char>>& board) {\n        if (board.empty()) return;\n        int m = board.size(), n = board[0].size();\n        function<void(int,int)> dfs = [&](int r, int c) {\n            if (r < 0 || r >= m || c < 0 || c >= n || board[r][c] != 'O') return;\n            board[r][c] = 'S';\n            dfs(r-1,c); dfs(r+1,c); dfs(r,c-1); dfs(r,c+1);\n        };\n        for (int r = 0; r < m; r++) { dfs(r, 0); dfs(r, n-1); }\n        for (int c = 0; c < n; c++) { dfs(0, c); dfs(m-1, c); }\n        for (int r = 0; r < m; r++)\n            for (int c = 0; c < n; c++)\n                board[r][c] = (board[r][c] == 'S') ? 'O' : 'X';\n    }\n};",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "class Solution {\n    int m, n;\n    public void solve(char[][] board) {\n        if (board.length == 0) return;\n        m = board.length; n = board[0].length;\n        for (int r = 0; r < m; r++) { dfs(board, r, 0); dfs(board, r, n-1); }\n        for (int c = 0; c < n; c++) { dfs(board, 0, c); dfs(board, m-1, c); }\n        for (int r = 0; r < m; r++)\n            for (int c = 0; c < n; c++)\n                board[r][c] = board[r][c] == 'S' ? 'O' : 'X';\n    }\n    void dfs(char[][] b, int r, int c) {\n        if (r < 0 || r >= m || c < 0 || c >= n || b[r][c] != 'O') return;\n        b[r][c] = 'S';\n        dfs(b, r-1, c); dfs(b, r+1, c); dfs(b, r, c-1); dfs(b, r, c+1);\n    }\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "var solve = function(board) {\n    if (!board.length || !board[0].length) return;\n    const m = board.length, n = board[0].length;\n    function dfs(r, c) {\n        if (r < 0 || r >= m || c < 0 || c >= n || board[r][c] !== 'O') return;\n        board[r][c] = 'S';\n        dfs(r-1, c); dfs(r+1, c);\n        dfs(r, c-1); dfs(r, c+1);\n    }\n    for (let r = 0; r < m; r++) { dfs(r, 0); dfs(r, n-1); }\n    for (let c = 0; c < n; c++) { dfs(0, c); dfs(m-1, c); }\n    for (let r = 0; r < m; r++)\n        for (let c = 0; c < n; c++)\n            board[r][c] = board[r][c] === 'S' ? 'O' : 'X';\n};",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Problem 5: 999. Regions Cut By Slashes (LeetCode Medium)"
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition** This is a connected-components problem on a grid where slashes act as walls. Upscale each cell to a $3 \\times 3$ sub-grid so that a `/` or `\\\\` becomes a diagonal wall of 1s. Then flood-fill the upscaled grid to count connected regions of 0s."
+    },
+    {
+      "type": "text",
+      "content": "**B. Brute Force** Treating slashes as edges between grid cells requires complex geometry. Upscaling makes it a standard grid problem."
+    },
+    {
+      "type": "text",
+      "content": "**C. Optimized Approach** Scale each cell to $3 \\times 3$. Draw `/` as a diagonal (top-right to bottom-left) of 1s. Draw `\\\\` as the other diagonal. Then count connected components of 0s in the upscaled grid."
+    },
+    {
+      "type": "text",
+      "content": "**D. Step-by-Step**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Create a 3N × 3N grid of 0s",
+        "For each cell (r, c) in original grid:"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "If `/` : set cells [r*3][c*3+2], [r*3+1][c*3+1], [r*3+2][c*3] to 1",
+        "If `\\\\` : set cells [r*3][c*3], [r*3+1][c*3+1], [r*3+2][c*3+2] to 1"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Flood-fill all 0-cells, counting connected components",
+        "Return count"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**E. Complexity** $O(N^2)$ for upscaling. $O(9N^2)$ for flood fill. Overall $O(N^2)$."
+    },
+    {
+      "type": "text",
+      "content": "**F. Edge Cases**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "All slashes: regions depend on slash pattern",
+        "No slashes: exactly 1 region",
+        "Checkerboard pattern: maximum regions"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**G. Code**"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def regionsBySlashes(self, grid):\n    n = len(grid)\n    upscaled = [[0] * (3 * n) for _ in range(3 * n)]\n    \n    for r in range(n):\n        for c in range(n):\n            if grid[r][c] == '/':\n                upscaled[r*3][c*3+2] = 1\n                upscaled[r*3+1][c*3+1] = 1\n                upscaled[r*3+2][c*3] = 1\n            elif grid[r][c] == '\\\\\\\\':\n                upscaled[r*3][c*3] = 1\n                upscaled[r*3+1][c*3+1] = 1\n                upscaled[r*3+2][c*3+2] = 1\n    \n    def dfs(r, c):\n        if r < 0 or r >= 3*n or c < 0 or c >= 3*n or upscaled[r][c] != 0:\n            return\n        upscaled[r][c] = 1\n        dfs(r-1, c); dfs(r+1, c); dfs(r, c-1); dfs(r, c+1)\n    \n    regions = 0\n    for r in range(3*n):\n        for c in range(3*n):\n            if upscaled[r][c] == 0:\n                regions += 1\n                dfs(r, c)\n    return regions",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "class Solution {\npublic:\n    int regionsBySlashes(vector<string>& grid) {\n        int n = grid.size();\n        vector<vector<int>> g(3*n, vector<int>(3*n, 0));\n        for (int r = 0; r < n; r++)\n            for (int c = 0; c < n; c++)\n                if (grid[r][c] == '/') {\n                    g[r*3][c*3+2] = 1;\n                    g[r*3+1][c*3+1] = 1;\n                    g[r*3+2][c*3] = 1;\n                } else if (grid[r][c] == '\\\\\\\\') {\n                    g[r*3][c*3] = 1;\n                    g[r*3+1][c*3+1] = 1;\n                    g[r*3+2][c*3+2] = 1;\n                }\n        int regions = 0, sz = 3*n;\n        function<void(int,int)> dfs = [&](int r, int c) {\n            if (r < 0 || r >= sz || c < 0 || c >= sz || g[r][c]) return;\n            g[r][c] = 1;\n            dfs(r-1,c); dfs(r+1,c); dfs(r,c-1); dfs(r,c+1);\n        };\n        for (int r = 0; r < sz; r++)\n            for (int c = 0; c < sz; c++)\n                if (!g[r][c]) { regions++; dfs(r, c); }\n        return regions;\n    }\n};",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "class Solution {\n    public int regionsBySlashes(String[] grid) {\n        int n = grid.length;\n        int[][] g = new int[3*n][3*n];\n        for (int r = 0; r < n; r++)\n            for (int c = 0; c < n; c++) {\n                char ch = grid[r].charAt(c);\n                if (ch == '/') {\n                    g[r*3][c*3+2] = 1;\n                    g[r*3+1][c*3+1] = 1;\n                    g[r*3+2][c*3] = 1;\n                } else if (ch == '\\\\\\\\') {\n                    g[r*3][c*3] = 1;\n                    g[r*3+1][c*3+1] = 1;\n                    g[r*3+2][c*3+2] = 1;\n                }\n            }\n        int sz = 3*n, regions = 0;\n        for (int r = 0; r < sz; r++)\n            for (int c = 0; c < sz; c++)\n                if (g[r][c] == 0) { regions++; dfs(g, r, c, sz); }\n        return regions;\n    }\n    void dfs(int[][] g, int r, int c, int sz) {\n        if (r < 0 || r >= sz || c < 0 || c >= sz || g[r][c] != 0) return;\n        g[r][c] = 1;\n        dfs(g, r-1, c, sz); dfs(g, r+1, c, sz);\n        dfs(g, r, c-1, sz); dfs(g, r, c+1, sz);\n    }\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "var regionsBySlashes = function(grid) {\n    const n = grid.length;\n    const g = Array.from({length: 3 * n}, () => new Array(3 * n).fill(0));\n    for (let r = 0; r < n; r++) {\n        for (let c = 0; c < n; c++) {\n            if (grid[r][c] === '/') {\n                g[r*3][c*3+2] = 1;\n                g[r*3+1][c*3+1] = 1;\n                g[r*3+2][c*3] = 1;\n            } else if (grid[r][c] === '\\\\') {\n                g[r*3][c*3] = 1;\n                g[r*3+1][c*3+1] = 1;\n                g[r*3+2][c*3+2] = 1;\n            }\n        }\n    }\n    const sz = 3 * n;\n    function dfs(r, c) {\n        if (r < 0 || r >= sz || c < 0 || c >= sz || g[r][c] !== 0) return;\n        g[r][c] = 1;\n        dfs(r-1, c); dfs(r+1, c);\n        dfs(r, c-1); dfs(r, c+1);\n    }\n    let regions = 0;\n    for (let r = 0; r < sz; r++)\n        for (let c = 0; c < sz; c++)\n            if (g[r][c] === 0) { regions++; dfs(r, c); }\n    return regions;\n};",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    }
+  ],
+  "difficulty": "Advanced"
+}

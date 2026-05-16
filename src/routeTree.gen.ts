@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as PatternsRouteImport } from './routes/patterns'
 import { Route as PatternRouteImport } from './routes/pattern'
+import { Route as GeometryBookRouteImport } from './routes/geometry-book'
 import { Route as ExploreRouteImport } from './routes/explore'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
@@ -18,12 +19,14 @@ import { Route as ProblemsIndexRouteImport } from './routes/problems.index'
 import { Route as PatternsIndexRouteImport } from './routes/patterns.index'
 import { Route as PatternIndexRouteImport } from './routes/pattern.index'
 import { Route as LearnIndexRouteImport } from './routes/learn.index'
+import { Route as GeometryBookIndexRouteImport } from './routes/geometry-book.index'
 import { Route as ProblemsTopicRouteImport } from './routes/problems.$topic'
 import { Route as PatternsPatternRouteImport } from './routes/patterns.$pattern'
 import { Route as PatternSlugRouteImport } from './routes/pattern.$slug'
 import { Route as LearnPatternsRouteImport } from './routes/learn.patterns'
 import { Route as LearnTrackRouteImport } from './routes/learn.$track'
 import { Route as LearnPatternRouteImport } from './routes/learn.$pattern'
+import { Route as GeometryBookChapterSlugRouteImport } from './routes/geometry-book.$chapterSlug'
 import { Route as DemoTanstackQueryRouteImport } from './routes/demo/tanstack-query'
 import { Route as DemoTableRouteImport } from './routes/demo/table'
 import { Route as DemoFormSimpleRouteImport } from './routes/demo/form.simple'
@@ -37,6 +40,11 @@ const PatternsRoute = PatternsRouteImport.update({
 const PatternRoute = PatternRouteImport.update({
   id: '/pattern',
   path: '/pattern',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GeometryBookRoute = GeometryBookRouteImport.update({
+  id: '/geometry-book',
+  path: '/geometry-book',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ExploreRoute = ExploreRouteImport.update({
@@ -74,6 +82,11 @@ const LearnIndexRoute = LearnIndexRouteImport.update({
   path: '/learn/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GeometryBookIndexRoute = GeometryBookIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => GeometryBookRoute,
+} as any)
 const ProblemsTopicRoute = ProblemsTopicRouteImport.update({
   id: '/problems/$topic',
   path: '/problems/$topic',
@@ -104,6 +117,11 @@ const LearnPatternRoute = LearnPatternRouteImport.update({
   path: '/learn/$pattern',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GeometryBookChapterSlugRoute = GeometryBookChapterSlugRouteImport.update({
+  id: '/$chapterSlug',
+  path: '/$chapterSlug',
+  getParentRoute: () => GeometryBookRoute,
+} as any)
 const DemoTanstackQueryRoute = DemoTanstackQueryRouteImport.update({
   id: '/demo/tanstack-query',
   path: '/demo/tanstack-query',
@@ -129,16 +147,19 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/explore': typeof ExploreRoute
+  '/geometry-book': typeof GeometryBookRouteWithChildren
   '/pattern': typeof PatternRouteWithChildren
   '/patterns': typeof PatternsRouteWithChildren
   '/demo/table': typeof DemoTableRoute
   '/demo/tanstack-query': typeof DemoTanstackQueryRoute
+  '/geometry-book/$chapterSlug': typeof GeometryBookChapterSlugRoute
   '/learn/$pattern': typeof LearnPatternRoute
   '/learn/$track': typeof LearnTrackRoute
   '/learn/patterns': typeof LearnPatternsRoute
   '/pattern/$slug': typeof PatternSlugRoute
   '/patterns/$pattern': typeof PatternsPatternRoute
   '/problems/$topic': typeof ProblemsTopicRoute
+  '/geometry-book/': typeof GeometryBookIndexRoute
   '/learn/': typeof LearnIndexRoute
   '/pattern/': typeof PatternIndexRoute
   '/patterns/': typeof PatternsIndexRoute
@@ -152,12 +173,14 @@ export interface FileRoutesByTo {
   '/explore': typeof ExploreRoute
   '/demo/table': typeof DemoTableRoute
   '/demo/tanstack-query': typeof DemoTanstackQueryRoute
+  '/geometry-book/$chapterSlug': typeof GeometryBookChapterSlugRoute
   '/learn/$pattern': typeof LearnPatternRoute
   '/learn/$track': typeof LearnTrackRoute
   '/learn/patterns': typeof LearnPatternsRoute
   '/pattern/$slug': typeof PatternSlugRoute
   '/patterns/$pattern': typeof PatternsPatternRoute
   '/problems/$topic': typeof ProblemsTopicRoute
+  '/geometry-book': typeof GeometryBookIndexRoute
   '/learn': typeof LearnIndexRoute
   '/pattern': typeof PatternIndexRoute
   '/patterns': typeof PatternsIndexRoute
@@ -170,16 +193,19 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/explore': typeof ExploreRoute
+  '/geometry-book': typeof GeometryBookRouteWithChildren
   '/pattern': typeof PatternRouteWithChildren
   '/patterns': typeof PatternsRouteWithChildren
   '/demo/table': typeof DemoTableRoute
   '/demo/tanstack-query': typeof DemoTanstackQueryRoute
+  '/geometry-book/$chapterSlug': typeof GeometryBookChapterSlugRoute
   '/learn/$pattern': typeof LearnPatternRoute
   '/learn/$track': typeof LearnTrackRoute
   '/learn/patterns': typeof LearnPatternsRoute
   '/pattern/$slug': typeof PatternSlugRoute
   '/patterns/$pattern': typeof PatternsPatternRoute
   '/problems/$topic': typeof ProblemsTopicRoute
+  '/geometry-book/': typeof GeometryBookIndexRoute
   '/learn/': typeof LearnIndexRoute
   '/pattern/': typeof PatternIndexRoute
   '/patterns/': typeof PatternsIndexRoute
@@ -193,16 +219,19 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/explore'
+    | '/geometry-book'
     | '/pattern'
     | '/patterns'
     | '/demo/table'
     | '/demo/tanstack-query'
+    | '/geometry-book/$chapterSlug'
     | '/learn/$pattern'
     | '/learn/$track'
     | '/learn/patterns'
     | '/pattern/$slug'
     | '/patterns/$pattern'
     | '/problems/$topic'
+    | '/geometry-book/'
     | '/learn/'
     | '/pattern/'
     | '/patterns/'
@@ -216,12 +245,14 @@ export interface FileRouteTypes {
     | '/explore'
     | '/demo/table'
     | '/demo/tanstack-query'
+    | '/geometry-book/$chapterSlug'
     | '/learn/$pattern'
     | '/learn/$track'
     | '/learn/patterns'
     | '/pattern/$slug'
     | '/patterns/$pattern'
     | '/problems/$topic'
+    | '/geometry-book'
     | '/learn'
     | '/pattern'
     | '/patterns'
@@ -233,16 +264,19 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/explore'
+    | '/geometry-book'
     | '/pattern'
     | '/patterns'
     | '/demo/table'
     | '/demo/tanstack-query'
+    | '/geometry-book/$chapterSlug'
     | '/learn/$pattern'
     | '/learn/$track'
     | '/learn/patterns'
     | '/pattern/$slug'
     | '/patterns/$pattern'
     | '/problems/$topic'
+    | '/geometry-book/'
     | '/learn/'
     | '/pattern/'
     | '/patterns/'
@@ -255,6 +289,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   ExploreRoute: typeof ExploreRoute
+  GeometryBookRoute: typeof GeometryBookRouteWithChildren
   PatternRoute: typeof PatternRouteWithChildren
   PatternsRoute: typeof PatternsRouteWithChildren
   DemoTableRoute: typeof DemoTableRoute
@@ -283,6 +318,13 @@ declare module '@tanstack/react-router' {
       path: '/pattern'
       fullPath: '/pattern'
       preLoaderRoute: typeof PatternRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/geometry-book': {
+      id: '/geometry-book'
+      path: '/geometry-book'
+      fullPath: '/geometry-book'
+      preLoaderRoute: typeof GeometryBookRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/explore': {
@@ -334,6 +376,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LearnIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/geometry-book/': {
+      id: '/geometry-book/'
+      path: '/'
+      fullPath: '/geometry-book/'
+      preLoaderRoute: typeof GeometryBookIndexRouteImport
+      parentRoute: typeof GeometryBookRoute
+    }
     '/problems/$topic': {
       id: '/problems/$topic'
       path: '/problems/$topic'
@@ -376,6 +425,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LearnPatternRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/geometry-book/$chapterSlug': {
+      id: '/geometry-book/$chapterSlug'
+      path: '/$chapterSlug'
+      fullPath: '/geometry-book/$chapterSlug'
+      preLoaderRoute: typeof GeometryBookChapterSlugRouteImport
+      parentRoute: typeof GeometryBookRoute
+    }
     '/demo/tanstack-query': {
       id: '/demo/tanstack-query'
       path: '/demo/tanstack-query'
@@ -406,6 +462,20 @@ declare module '@tanstack/react-router' {
     }
   }
 }
+
+interface GeometryBookRouteChildren {
+  GeometryBookChapterSlugRoute: typeof GeometryBookChapterSlugRoute
+  GeometryBookIndexRoute: typeof GeometryBookIndexRoute
+}
+
+const GeometryBookRouteChildren: GeometryBookRouteChildren = {
+  GeometryBookChapterSlugRoute: GeometryBookChapterSlugRoute,
+  GeometryBookIndexRoute: GeometryBookIndexRoute,
+}
+
+const GeometryBookRouteWithChildren = GeometryBookRoute._addFileChildren(
+  GeometryBookRouteChildren,
+)
 
 interface PatternRouteChildren {
   PatternSlugRoute: typeof PatternSlugRoute
@@ -438,6 +508,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   ExploreRoute: ExploreRoute,
+  GeometryBookRoute: GeometryBookRouteWithChildren,
   PatternRoute: PatternRouteWithChildren,
   PatternsRoute: PatternsRouteWithChildren,
   DemoTableRoute: DemoTableRoute,

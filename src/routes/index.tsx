@@ -2,6 +2,7 @@ import { Link, createFileRoute } from "@tanstack/react-router";
 import { topics, totalProblems, uniquePlatforms } from "#/data/topics";
 import { articles } from "#/data/articles";
 import { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
 
 export const Route = createFileRoute("/")({ component: HomePage });
 
@@ -112,24 +113,42 @@ const A = (dur: number, del: number) => ({ '--dur': `${dur}s`, '--del': `${del}s
 // ── Topic card interactive SVG types ──────────────────────────────────────────
 type SVGProps = { c: string; hovered: boolean }
 
-// 1. Math — cycling shapes + formula symbols
+// Morph paths — all 6-vertex polygons (M + 5×L + Z) so framer-motion can interpolate
+const MATH_PATHS = [
+  "M 26,10 L 39.9,18 L 39.9,34 L 26,42 L 12.1,34 L 12.1,18 Z",        // hexagon ≈ circle
+  "M 26,10 L 32.9,22 L 39.9,34 L 26,34 L 12.1,34 L 19.1,22 Z",        // triangle
+  "M 26,10 L 41.2,21 L 35.4,39 L 16.6,39 L 10.8,21 L 26,10 Z",        // pentagon
+  "M 13,13 L 39,13 L 39,26 L 39,39 L 13,39 L 13,26 Z",                 // rectangle
+]
+const MATH_SYMS = ['∑', '∫', 'π', '∞']
+const MATH_FMLS = ['Σkⁿ', '∫f(x)', 'πr²', 'n→∞']
+
+// 1. Math — SVG path morphing via framer-motion
 function MathCard({ c, hovered }: SVGProps) {
   const [tick, setTick] = useState(0)
   useEffect(() => {
     if (!hovered) return
-    const id = setInterval(() => setTick(t => (t + 1) % 4), 550)
+    const id = setInterval(() => setTick(t => (t + 1) % 4), 700)
     return () => { clearInterval(id); setTick(0) }
   }, [hovered])
-  const SYMS = ['∑', '∫', 'π', '∞']
-  const FMLS = ['Σkⁿ', '∫f(x)', 'πr²', 'n→∞']
   return (
     <svg viewBox="0 0 52 52" fill="none" width="50" height="50">
-      <circle cx="26" cy="24" r="18" stroke={c} strokeWidth="1.3" opacity={tick===0&&hovered?0.85:0.45} style={{transition:'opacity .45s'}}/>
-      <polygon points="26,7 43,37 9,37" stroke={c} strokeWidth="1.3" fill="none" opacity={tick===1?0.85:0.1} style={{transition:'opacity .45s'}}/>
-      <polygon points="26,6 40,16 36,34 16,34 12,16" stroke={c} strokeWidth="1.3" fill="none" opacity={tick===2?0.85:0.05} style={{transition:'opacity .45s'}}/>
-      <rect x="11" y="10" width="30" height="26" rx="3" stroke={c} strokeWidth="1.3" opacity={tick===3?0.85:0.03} style={{transition:'opacity .45s'}}/>
-      <text x="26" y="30" textAnchor="middle" fill={c} fontSize="17" fontFamily="serif" fontWeight="700">{SYMS[hovered?tick:0]}</text>
-      <text x="26" y="47" textAnchor="middle" fill={c} fontSize="7.5" fontFamily="monospace" opacity={hovered?0.72:0} style={{transition:'opacity .3s'}}>{FMLS[hovered?tick:0]}</text>
+      <motion.path
+        animate={{ d: MATH_PATHS[tick] }}
+        transition={{ duration: 0.55, ease: 'easeInOut' }}
+        stroke={c}
+        strokeWidth="1.5"
+        fill={c}
+        fillOpacity={0.12}
+      />
+      <text x="26" y="31" textAnchor="middle" fill={c} fontSize="16" fontFamily="serif" fontWeight="700"
+        style={{ transition: 'all .35s' }}>
+        {MATH_SYMS[tick]}
+      </text>
+      <text x="26" y="47" textAnchor="middle" fill={c} fontSize="7.5" fontFamily="monospace"
+        opacity={hovered ? 0.72 : 0} style={{ transition: 'opacity .3s' }}>
+        {MATH_FMLS[tick]}
+      </text>
     </svg>
   )
 }
@@ -746,48 +765,6 @@ function OpenBook() {
 
 // ── HomePage ───────────────────────────────────────────────────────────────────
 function HomePage() {
-  // Cursor glow
-  useEffect(() => {
-    if (typeof window === 'undefined') return
-    const glow = document.getElementById('cursor-glow')
-    if (!glow) return
-    let tx = window.innerWidth / 2
-    let ty = window.innerHeight / 2
-    let cx = tx
-    let cy = ty
-    let raf: number
-
-    const onMove = (e: MouseEvent) => { tx = e.clientX; ty = e.clientY }
-    const tick = () => {
-      cx += (tx - cx) * 0.09
-      cy += (ty - cy) * 0.09
-      glow.style.left = cx + 'px'
-      glow.style.top = cy + 'px'
-      raf = requestAnimationFrame(tick)
-    }
-    raf = requestAnimationFrame(tick)
-    window.addEventListener('mousemove', onMove)
-    return () => {
-      window.removeEventListener('mousemove', onMove)
-      cancelAnimationFrame(raf)
-    }
-  }, [])
-
-  // Mouse parallax for floating shapes
-  useEffect(() => {
-    if (typeof window === 'undefined') return
-    const onMove = (e: MouseEvent) => {
-      const px = (e.clientX / window.innerWidth - 0.5) * 2
-      const py = (e.clientY / window.innerHeight - 0.5) * 2
-      document.querySelectorAll<HTMLElement>('[data-d]').forEach(el => {
-        const d = parseFloat(el.dataset.d ?? '1')
-        el.style.transform = `translate(${px * d * 16}px, ${py * d * 10}px)`
-      })
-    }
-    window.addEventListener('mousemove', onMove)
-    return () => window.removeEventListener('mousemove', onMove)
-  }, [])
-
   // Scroll reveal
   useEffect(() => {
     if (typeof window === 'undefined') return
@@ -800,29 +777,26 @@ function HomePage() {
 
   return (
     <>
-      {/* Cursor glow overlay */}
-      <div id="cursor-glow" />
-
       {/* ── Hero ──────────────────────────────────────────── */}
       <section className="ld2-hero">
         <div className="ld2-hero-glow" />
         <div className="ld2-hero-dots" />
 
         {/* Floating shapes */}
-        <div className="fwrap" style={{ position: 'absolute', top: '8%', left: '6%' }} data-d="0.6">
-          <div className="finner" data-d="0.6"><TreeSVG /></div>
+        <div className="fwrap" style={{ position: 'absolute', top: '8%', left: '6%' }}>
+          <div className="finner"><TreeSVG /></div>
         </div>
-        <div className="fwrap" style={{ position: 'absolute', top: '10%', right: '7%' }} data-d="0.8">
-          <div className="finner" data-d="0.8"><GraphSVG /></div>
+        <div className="fwrap" style={{ position: 'absolute', top: '10%', right: '7%' }}>
+          <div className="finner"><GraphSVG /></div>
         </div>
-        <div className="fwrap" style={{ position: 'absolute', top: '45%', left: '3%' }} data-d="0.5">
-          <div className="finner" data-d="0.5"><LinkedListSVG /></div>
+        <div className="fwrap" style={{ position: 'absolute', top: '45%', left: '3%' }}>
+          <div className="finner"><LinkedListSVG /></div>
         </div>
-        <div className="fwrap" style={{ position: 'absolute', top: '42%', right: '4%' }} data-d="0.7">
-          <div className="finner" data-d="0.7"><DPGridSVG /></div>
+        <div className="fwrap" style={{ position: 'absolute', top: '42%', right: '4%' }}>
+          <div className="finner"><DPGridSVG /></div>
         </div>
-        <div className="fwrap" style={{ position: 'absolute', bottom: '12%', left: '50%', transform: 'translateX(-50%)' }} data-d="0.4">
-          <div className="finner" data-d="0.4"><StackSVG /></div>
+        <div className="fwrap" style={{ position: 'absolute', bottom: '12%', left: '50%', transform: 'translateX(-50%)' }}>
+          <div className="finner"><StackSVG /></div>
         </div>
 
         <div className="ld-w ld2-hero-inner">

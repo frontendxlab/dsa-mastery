@@ -1,0 +1,1185 @@
+{
+  "chapter": 11,
+  "slug": "grid-based-geometry",
+  "title": "Grid-Based Geometry",
+  "icon": "⊞",
+  "color": "#ec4899",
+  "problemCount": 402,
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Chapter 11: Grid-Based Geometry"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "1. INTRODUCTION"
+    },
+    {
+      "type": "text",
+      "content": "A grid is one of the most fundamental structures in computer science. Think of a chessboard, a city map with blocks, a spreadsheet, or a pixelated image — these are all grids. In a grid, the world is divided into discrete cells arranged in rows and columns, and movement is restricted to these cells."
+    },
+    {
+      "type": "text",
+      "content": "Grid-based geometry problems are among the most common in both interviews and competitive programming. They test your ability to navigate, transform, and compute within a discrete coordinate system. The geometry of grids feels intuitive (we've all played grid-based games), but the algorithmic depth is surprising."
+    },
+    {
+      "type": "text",
+      "content": "Why does grid geometry deserve its own chapter? Because grids introduce discrete constraints that continuous geometry does not have. You cannot move \"half a cell\"; you are either in cell (r, c) or you are not. Distances are measured in steps, not straight lines. Rotations must map integer coordinates to integer coordinates."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2. CORE CONCEPTS"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.1 Grid Representation"
+    },
+    {
+      "type": "text",
+      "content": "A grid of size R × C can be represented as:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "A 2D array (list of lists): `grid[r][c]`",
+        "Coordinate convention: row r (0 to R-1), column c (0 to C-1)",
+        "Values typically: 0/1 for binary grids, characters for mazes, integers for weighted grids"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.2 Neighbor Directions"
+    },
+    {
+      "type": "text",
+      "content": "**4-directional (von Neumann neighborhood):** Up:    (-1, 0) Down:  ( 1, 0) Left:  ( 0,-1) Right: ( 0, 1)"
+    },
+    {
+      "type": "text",
+      "content": "**8-directional (Moore neighborhood):** Adds diagonals: (-1,-1), (-1, 1), (1,-1), (1, 1)"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.3 Grid BFS and DFS"
+    },
+    {
+      "type": "text",
+      "content": "**BFS (Breadth-First Search):**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Uses a queue",
+        "Finds shortest path in unweighted grid (4-dir or 8-dir)",
+        "O(R × C) time and space"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**DFS (Depth-First Search):**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Uses recursion or stack",
+        "Good for connectivity, component finding, maze solving",
+        "O(R × C) time and space"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.4 Grid Distances"
+    },
+    {
+      "type": "text",
+      "content": "**4-directional distance:** Same as Manhattan distance: |r1-r2| + |c1-c2| **8-directional distance:** Same as Chebyshev distance: max(|r1-r2|, |c1-c2|)"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.5 Grid Transformations"
+    },
+    {
+      "type": "text",
+      "content": "**90° Rotation (clockwise):** new_grid[c][R-1-r] = grid[r][c] Or equivalently: transpose then reverse each row."
+    },
+    {
+      "type": "text",
+      "content": "**Reflection (horizontal):** new_grid[r][C-1-c] = grid[r][c]"
+    },
+    {
+      "type": "text",
+      "content": "**Reflection (vertical):** new_grid[R-1-r][c] = grid[r][c]"
+    },
+    {
+      "type": "text",
+      "content": "**Transpose:** new_grid[c][r] = grid[r][c]"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.6 2D Prefix Sum"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "# Build 2D prefix sum\nprefix = [[0]*(C+1) for _ in range(R+1)]\nfor r in range(R):\n    for c in range(C):\n        prefix[r+1][c+1] = grid[r][c] + prefix[r][c+1] + prefix[r+1][c] - prefix[r][c]\n\n# Sum of submatrix from (r1,c1) to (r2,c2) inclusive\ndef submatrix_sum(prefix, r1, c1, r2, c2):\n    return (prefix[r2+1][c2+1] - prefix[r1][c2+1] \n            - prefix[r2+1][c1] + prefix[r1][c1])",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "// Build 2D prefix sum\nvector<vector<int>> prefix(R+1, vector<int>(C+1, 0));\nfor (int r = 0; r < R; r++)\n    for (int c = 0; c < C; c++)\n        prefix[r+1][c+1] = grid[r][c] + prefix[r][c+1] + prefix[r+1][c] - prefix[r][c];\n\n// Sum of submatrix from (r1,c1) to (r2,c2) inclusive\nint submatrix_sum(vector<vector<int>>& prefix, int r1, int c1, int r2, int c2) {\n    return prefix[r2+1][c2+1] - prefix[r1][c2+1] - prefix[r2+1][c1] + prefix[r1][c1];\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "// Build 2D prefix sum\nint[][] prefix = new int[R+1][C+1];\nfor (int r = 0; r < R; r++)\n    for (int c = 0; c < C; c++)\n        prefix[r+1][c+1] = grid[r][c] + prefix[r][c+1] + prefix[r+1][c] - prefix[r][c];\n\n// Sum of submatrix from (r1,c1) to (r2,c2) inclusive\npublic static int submatrixSum(int[][] prefix, int r1, int c1, int r2, int c2) {\n    return prefix[r2+1][c2+1] - prefix[r1][c2+1] - prefix[r2+1][c1] + prefix[r1][c1];\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "// Build 2D prefix sum\nconst prefix = Array.from({length: R+1}, () => new Array(C+1).fill(0));\nfor (let r = 0; r < R; r++)\n    for (let c = 0; c < C; c++)\n        prefix[r+1][c+1] = grid[r][c] + prefix[r][c+1] + prefix[r+1][c] - prefix[r][c];\n\n// Sum of submatrix from (r1,c1) to (r2,c2) inclusive\nfunction submatrixSum(prefix, r1, c1, r2, c2) {\n    return prefix[r2+1][c2+1] - prefix[r1][c2+1] - prefix[r2+1][c1] + prefix[r1][c1];\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.7 Multi-source BFS"
+    },
+    {
+      "type": "text",
+      "content": "Initialize the queue with ALL starting cells simultaneously. The BFS frontier expands from all sources at once, giving each cell its distance to the nearest source."
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def multi_source_bfs(grid, sources):\n    R, C = len(grid), len(grid[0])\n    dist = [[-1]*C for _ in range(R)]\n    q = deque()\n    for r, c in sources:\n        dist[r][c] = 0\n        q.append((r, c))\n    while q:\n        r, c = q.popleft()\n        for dr, dc in [(1,0),(-1,0),(0,1),(0,-1)]:\n            nr, nc = r+dr, c+dc\n            if 0 <= nr < R and 0 <= nc < C and dist[nr][nc] == -1:\n                dist[nr][nc] = dist[r][c] + 1\n                q.append((nr, nc))\n    return dist",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "void multi_source_bfs(vector<vector<int>>& grid, vector<pair<int,int>>& sources, vector<vector<int>>& dist) {\n    int R = grid.size(), C = grid[0].size();\n    dist.assign(R, vector<int>(C, -1));\n    queue<pair<int,int>> q;\n    for (auto [r, c] : sources) {\n        dist[r][c] = 0;\n        q.push({r, c});\n    }\n    int dr[] = {1, -1, 0, 0};\n    int dc[] = {0, 0, 1, -1};\n    while (!q.empty()) {\n        auto [r, c] = q.front(); q.pop();\n        for (int d = 0; d < 4; d++) {\n            int nr = r + dr[d], nc = c + dc[d];\n            if (nr >= 0 && nr < R && nc >= 0 && nc < C && dist[nr][nc] == -1) {\n                dist[nr][nc] = dist[r][c] + 1;\n                q.push({nr, nc});\n            }\n        }\n    }\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public static int[][] multiSourceBFS(int[][] grid, int[][] sources) {\n    int R = grid.length, C = grid[0].length;\n    int[][] dist = new int[R][C];\n    for (int[] row : dist) Arrays.fill(row, -1);\n    Queue<int[]> q = new LinkedList<>();\n    for (int[] s : sources) {\n        dist[s[0]][s[1]] = 0;\n        q.offer(new int[]{s[0], s[1]});\n    }\n    int[] dr = {1, -1, 0, 0};\n    int[] dc = {0, 0, 1, -1};\n    while (!q.isEmpty()) {\n        int[] cur = q.poll();\n        int r = cur[0], c = cur[1];\n        for (int d = 0; d < 4; d++) {\n            int nr = r + dr[d], nc = c + dc[d];\n            if (nr >= 0 && nr < R && nc >= 0 && nc < C && dist[nr][nc] == -1) {\n                dist[nr][nc] = dist[r][c] + 1;\n                q.offer(new int[]{nr, nc});\n            }\n        }\n    }\n    return dist;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function multiSourceBFS(grid, sources) {\n    const R = grid.length, C = grid[0].length;\n    const dist = Array.from({length: R}, () => new Array(C).fill(-1));\n    const q = [];\n    for (const [r, c] of sources) {\n        dist[r][c] = 0;\n        q.push([r, c]);\n    }\n    const dr = [1, -1, 0, 0];\n    const dc = [0, 0, 1, -1];\n    while (q.length) {\n        const [r, c] = q.shift();\n        for (let d = 0; d < 4; d++) {\n            const nr = r + dr[d], nc = c + dc[d];\n            if (nr >= 0 && nr < R && nc >= 0 && nc < C && dist[nr][nc] === -1) {\n                dist[nr][nc] = dist[r][c] + 1;\n                q.push([nr, nc]);\n            }\n        }\n    }\n    return dist;\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "3. PROBLEM RECOGNITION"
+    },
+    {
+      "type": "text",
+      "content": "**Common keywords and phrases:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "\"Grid\" / \"matrix\" / \"2D array\"",
+        "\"Maze\" / \"labyrinth\"",
+        "\"Shortest path in grid\"",
+        "\"Island\" / \"connected components\"",
+        "\"Flood fill\"",
+        "\"Number of paths in a grid\"",
+        "\"Rotate the matrix\" / \"spiral traversal\"",
+        "\"Obstacle\" / \"blocked cells\""
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**Hidden geometry indicators:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "\"Robot moving on a board\" → grid movement simulation",
+        "\"Only move right and down\" → DP on grid (unique paths)",
+        "\"4-directional\" or \"8-directional\" → BFS or DFS",
+        "\"Minimum steps\" in a grid → BFS (unweighted) or Dijkstra (weighted)",
+        "\"Number of ways to reach\" → combinatorial DP"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "4. PATTERN ANALYSIS"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Pattern 1: Grid BFS for Shortest Path"
+    },
+    {
+      "type": "text",
+      "content": "**When to use:** Minimum number of steps to reach a target in an unweighted grid."
+    },
+    {
+      "type": "text",
+      "content": "**Why it works:** BFS explores in order of increasing distance from the source."
+    },
+    {
+      "type": "text",
+      "content": "**Complexity:** O(R × C)."
+    },
+    {
+      "type": "text",
+      "content": "**Common mistakes:** Forgetting visited set; not checking bounds."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Pattern 2: Grid DP for Counting Paths"
+    },
+    {
+      "type": "text",
+      "content": "**When to use:** Count the number of ways to go from top-left to bottom-right, moving only right/down."
+    },
+    {
+      "type": "text",
+      "content": "**Why it works:** dp[r][c] = dp[r-1][c] + dp[r][c-1] (with obstacles: set dp = 0 at obstacles)."
+    },
+    {
+      "type": "text",
+      "content": "**Complexity:** O(R × C)."
+    },
+    {
+      "type": "text",
+      "content": "**Common mistakes:** Not handling obstacle cells; overflow (use modulo)."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Pattern 3: Multi-source BFS"
+    },
+    {
+      "type": "text",
+      "content": "**When to use:** Distance from nearest of multiple sources (e.g., nearest 0 for each 1 in 01 Matrix)."
+    },
+    {
+      "type": "text",
+      "content": "**Why it works:** All sources start at distance 0 in the queue; BFS ensures each cell gets distance to nearest source."
+    },
+    {
+      "type": "text",
+      "content": "**Complexity:** O(R × C)."
+    },
+    {
+      "type": "text",
+      "content": "**Common mistakes:** Initializing distances incorrectly; not using all sources."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Pattern 4: Island Counting / Connected Components"
+    },
+    {
+      "type": "text",
+      "content": "**When to use:** Count distinct connected regions in a binary grid."
+    },
+    {
+      "type": "text",
+      "content": "**Why it works:** DFS or BFS from each unvisited land cell, marking all cells in that component."
+    },
+    {
+      "type": "text",
+      "content": "**Complexity:** O(R × C)."
+    },
+    {
+      "type": "text",
+      "content": "**Common mistakes:** Not handling edge connections properly; considering diagonal vs 4-directional connectivity."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Pattern 5: Grid Transformations (Rotation, Reflection)"
+    },
+    {
+      "type": "text",
+      "content": "**When to use:** Rotating or reflecting a grid / shape."
+    },
+    {
+      "type": "text",
+      "content": "**Why it works:** Coordinate mapping functions."
+    },
+    {
+      "type": "text",
+      "content": "**Complexity:** O(R × C)."
+    },
+    {
+      "type": "text",
+      "content": "**Common mistakes:** Off-by-one in mapping; not handling rectangular (non-square) grids correctly for rotation."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "5. REUSABLE CODING TEMPLATES"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Grid BFS (Shortest Path, Unweighted)"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "from collections import deque\n\ndef grid_bfs(grid, start, target):\n    R, C = len(grid), len(grid[0])\n    visited = [[False]*C for _ in range(R)]\n    dist = [[0]*C for _ in range(R)]\n    q = deque()\n    q.append(start)\n    visited[start[0]][start[1]] = True\n    \n    while q:\n        r, c = q.popleft()\n        if (r, c) == target:\n            return dist[r][c]\n        for dr, dc in [(1,0),(-1,0),(0,1),(0,-1)]:\n            nr, nc = r+dr, c+dc\n            if 0 <= nr < R and 0 <= nc < C and not visited[nr][nc] and grid[nr][nc] != 1:\n                visited[nr][nc] = True\n                dist[nr][nc] = dist[r][c] + 1\n                q.append((nr, nc))\n    return -1",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "int grid_bfs(vector<vector<int>>& grid, pair<int,int> start, pair<int,int> target) {\n    int R = grid.size(), C = grid[0].size();\n    vector<vector<bool>> visited(R, vector<bool>(C, false));\n    vector<vector<int>> dist(R, vector<int>(C, 0));\n    queue<pair<int,int>> q;\n    q.push(start);\n    visited[start.first][start.second] = true;\n    \n    int dr[] = {1, -1, 0, 0};\n    int dc[] = {0, 0, 1, -1};\n    \n    while (!q.empty()) {\n        auto [r, c] = q.front(); q.pop();\n        if (r == target.first && c == target.second) return dist[r][c];\n        for (int d = 0; d < 4; d++) {\n            int nr = r + dr[d], nc = c + dc[d];\n            if (nr >= 0 && nr < R && nc >= 0 && nc < C && \n                !visited[nr][nc] && grid[nr][nc] != 1) {\n                visited[nr][nc] = true;\n                dist[nr][nc] = dist[r][c] + 1;\n                q.push({nr, nc});\n            }\n        }\n    }\n    return -1;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public static int gridBFS(int[][] grid, int[] start, int[] target) {\n    int R = grid.length, C = grid[0].length;\n    boolean[][] visited = new boolean[R][C];\n    int[][] dist = new int[R][C];\n    Queue<int[]> q = new LinkedList<>();\n    q.offer(start);\n    visited[start[0]][start[1]] = true;\n    \n    int[] dr = {1, -1, 0, 0};\n    int[] dc = {0, 0, 1, -1};\n    \n    while (!q.isEmpty()) {\n        int[] cur = q.poll();\n        int r = cur[0], c = cur[1];\n        if (r == target[0] && c == target[1]) return dist[r][c];\n        for (int d = 0; d < 4; d++) {\n            int nr = r + dr[d], nc = c + dc[d];\n            if (nr >= 0 && nr < R && nc >= 0 && nc < C && \n                !visited[nr][nc] && grid[nr][nc] != 1) {\n                visited[nr][nc] = true;\n                dist[nr][nc] = dist[r][c] + 1;\n                q.offer(new int[]{nr, nc});\n            }\n        }\n    }\n    return -1;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function gridBFS(grid, start, target) {\n    const R = grid.length, C = grid[0].length;\n    const visited = Array.from({length: R}, () => new Array(C).fill(false));\n    const dist = Array.from({length: R}, () => new Array(C).fill(0));\n    const q = [];\n    q.push(start);\n    visited[start[0]][start[1]] = true;\n    const dr = [1, -1, 0, 0];\n    const dc = [0, 0, 1, -1];\n    while (q.length) {\n        const [r, c] = q.shift();\n        if (r === target[0] && c === target[1]) return dist[r][c];\n        for (let d = 0; d < 4; d++) {\n            const nr = r + dr[d], nc = c + dc[d];\n            if (nr >= 0 && nr < R && nc >= 0 && nc < C && !visited[nr][nc] && grid[nr][nc] !== 1) {\n                visited[nr][nc] = true;\n                dist[nr][nc] = dist[r][c] + 1;\n                q.push([nr, nc]);\n            }\n        }\n    }\n    return -1;\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Grid DFS (Connected Components)"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def count_islands(grid):\n    R, C = len(grid), len(grid[0])\n    visited = [[False]*C for _ in range(R)]\n    \n    def dfs(r, c):\n        if r < 0 or r >= R or c < 0 or c >= C:\n            return\n        if visited[r][c] or grid[r][c] == 0:\n            return\n        visited[r][c] = True\n        for dr, dc in [(1,0),(-1,0),(0,1),(0,-1)]:\n            dfs(r+dr, c+dc)\n    \n    count = 0\n    for r in range(R):\n        for c in range(C):\n            if grid[r][c] == 1 and not visited[r][c]:\n                count += 1\n                dfs(r, c)\n    return count",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "void dfs(vector<vector<int>>& grid, vector<vector<bool>>& visited, int r, int c) {\n    int R = grid.size(), C = grid[0].size();\n    if (r < 0 || r >= R || c < 0 || c >= C) return;\n    if (visited[r][c] || grid[r][c] == 0) return;\n    visited[r][c] = true;\n    dfs(grid, visited, r+1, c);\n    dfs(grid, visited, r-1, c);\n    dfs(grid, visited, r, c+1);\n    dfs(grid, visited, r, c-1);\n}\n\nint count_islands(vector<vector<int>>& grid) {\n    int R = grid.size(), C = grid[0].size();\n    vector<vector<bool>> visited(R, vector<bool>(C, false));\n    int count = 0;\n    for (int r = 0; r < R; r++)\n        for (int c = 0; c < C; c++)\n            if (grid[r][c] == 1 && !visited[r][c]) {\n                count++;\n                dfs(grid, visited, r, c);\n            }\n    return count;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public static int countIslands(int[][] grid) {\n    int R = grid.length, C = grid[0].length;\n    boolean[][] visited = new boolean[R][C];\n    int count = 0;\n    for (int r = 0; r < R; r++)\n        for (int c = 0; c < C; c++)\n            if (grid[r][c] == 1 && !visited[r][c]) {\n                count++;\n                dfs(grid, visited, r, c);\n            }\n    return count;\n}\n\nstatic void dfs(int[][] grid, boolean[][] visited, int r, int c) {\n    int R = grid.length, C = grid[0].length;\n    if (r < 0 || r >= R || c < 0 || c >= C) return;\n    if (visited[r][c] || grid[r][c] == 0) return;\n    visited[r][c] = true;\n    dfs(grid, visited, r+1, c);\n    dfs(grid, visited, r-1, c);\n    dfs(grid, visited, r, c+1);\n    dfs(grid, visited, r, c-1);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function countIslands(grid) {\n    const R = grid.length, C = grid[0].length;\n    const visited = Array.from({length: R}, () => new Array(C).fill(false));\n    function dfs(r, c) {\n        if (r < 0 || r >= R || c < 0 || c >= C) return;\n        if (visited[r][c] || grid[r][c] === 0) return;\n        visited[r][c] = true;\n        dfs(r+1, c); dfs(r-1, c);\n        dfs(r, c+1); dfs(r, c-1);\n    }\n    let count = 0;\n    for (let r = 0; r < R; r++)\n        for (let c = 0; c < C; c++)\n            if (grid[r][c] === 1 && !visited[r][c]) {\n                count++;\n                dfs(r, c);\n            }\n    return count;\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Grid Rotation (90° Clockwise)"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def rotate_clockwise(grid):\n    R, C = len(grid), len(grid[0])\n    rotated = [[0]*R for _ in range(C)]\n    for r in range(R):\n        for c in range(C):\n            rotated[c][R-1-r] = grid[r][c]\n    return rotated",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "vector<vector<int>> rotate_clockwise(vector<vector<int>>& grid) {\n    int R = grid.size(), C = grid[0].size();\n    vector<vector<int>> rotated(C, vector<int>(R));\n    for (int r = 0; r < R; r++)\n        for (int c = 0; c < C; c++)\n            rotated[c][R-1-r] = grid[r][c];\n    return rotated;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public static int[][] rotateClockwise(int[][] grid) {\n    int R = grid.length, C = grid[0].length;\n    int[][] rotated = new int[C][R];\n    for (int r = 0; r < R; r++)\n        for (int c = 0; c < C; c++)\n            rotated[c][R-1-r] = grid[r][c];\n    return rotated;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function rotateClockwise(grid) {\n    const R = grid.length, C = grid[0].length;\n    const rotated = Array.from({length: C}, () => new Array(R).fill(0));\n    for (let r = 0; r < R; r++)\n        for (let c = 0; c < C; c++)\n            rotated[c][R-1-r] = grid[r][c];\n    return rotated;\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Grid Unique Paths DP"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def unique_paths(R, C, obstacles=None):\n    dp = [[0]*C for _ in range(R)]\n    dp[0][0] = 1 if (not obstacles or obstacles[0][0] == 0) else 0\n    for r in range(R):\n        for c in range(C):\n            if obstacles and obstacles[r][c] == 1:\n                dp[r][c] = 0\n                continue\n            if r > 0: dp[r][c] += dp[r-1][c]\n            if c > 0: dp[r][c] += dp[r][c-1]\n    return dp[R-1][C-1]",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "int uniquePaths(int R, int C, vector<vector<int>>& obstacles) {\n    vector<vector<long long>> dp(R, vector<long long>(C, 0));\n    dp[0][0] = (obstacles.empty() || obstacles[0][0] == 0) ? 1 : 0;\n    for (int r = 0; r < R; r++) {\n        for (int c = 0; c < C; c++) {\n            if (!obstacles.empty() && obstacles[r][c] == 1) {\n                dp[r][c] = 0;\n                continue;\n            }\n            if (r > 0) dp[r][c] += dp[r-1][c];\n            if (c > 0) dp[r][c] += dp[r][c-1];\n        }\n    }\n    return dp[R-1][C-1];\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public static int uniquePaths(int R, int C, int[][] obstacles) {\n    long[][] dp = new long[R][C];\n    dp[0][0] = (obstacles == null || obstacles[0][0] == 0) ? 1 : 0;\n    for (int r = 0; r < R; r++) {\n        for (int c = 0; c < C; c++) {\n            if (obstacles != null && obstacles[r][c] == 1) {\n                dp[r][c] = 0;\n                continue;\n            }\n            if (r > 0) dp[r][c] += dp[r-1][c];\n            if (c > 0) dp[r][c] += dp[r][c-1];\n        }\n    }\n    return (int) dp[R-1][C-1];\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function uniquePaths(R, C, obstacles) {\n    const dp = Array.from({length: R}, () => new Array(C).fill(0));\n    dp[0][0] = (!obstacles || obstacles[0][0] === 0) ? 1 : 0;\n    for (let r = 0; r < R; r++) {\n        for (let c = 0; c < C; c++) {\n            if (obstacles && obstacles[r][c] === 1) {\n                dp[r][c] = 0;\n                continue;\n            }\n            if (r > 0) dp[r][c] += dp[r-1][c];\n            if (c > 0) dp[r][c] += dp[r][c-1];\n        }\n    }\n    return dp[R-1][C-1];\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "6. CURATED REAL PROBLEMS"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "#",
+        "Problem Name",
+        "Platform",
+        "Difficulty",
+        "Key Concept",
+        "Link"
+      ],
+      "rows": [
+        [
+          "1",
+          "733. Flood Fill",
+          "LeetCode",
+          "Easy",
+          "Grid DFS/BFS",
+          "https://leetcode.com/problems/flood-fill/"
+        ],
+        [
+          "2",
+          "200. Number of Islands",
+          "LeetCode",
+          "Medium",
+          "Grid connected components",
+          "https://leetcode.com/problems/number-of-islands/"
+        ],
+        [
+          "3",
+          "64. Minimum Path Sum",
+          "LeetCode",
+          "Medium",
+          "Grid DP",
+          "https://leetcode.com/problems/minimum-path-sum/"
+        ],
+        [
+          "4",
+          "542. 01 Matrix",
+          "LeetCode",
+          "Medium",
+          "Multi-source BFS",
+          "https://leetcode.com/problems/01-matrix/"
+        ],
+        [
+          "5",
+          "ABC 007 C - Maze",
+          "AtCoder",
+          "Easy (400)",
+          "Grid BFS",
+          "https://atcoder.jp/contests/abc007/tasks/abc007_c"
+        ],
+        [
+          "6",
+          "ABC 176 D - Wizard in Maze",
+          "AtCoder",
+          "Medium (800)",
+          "Grid BFS with warp",
+          "https://atcoder.jp/contests/abc176/tasks/abc176_d"
+        ],
+        [
+          "7",
+          "Grid Unique Paths",
+          "InterviewBit",
+          "Easy",
+          "Combinatorial paths",
+          "https://www.interviewbit.com/problems/grid-unique-paths/"
+        ],
+        [
+          "8",
+          "ABC 335 D - Loong and Takahashi",
+          "AtCoder",
+          "Medium (600)",
+          "Grid spiral traversal",
+          "https://atcoder.jp/contests/abc335/tasks/abc335_d"
+        ],
+        [
+          "9",
+          "2087. Minimum Cost Homecoming of a Robot in a Grid",
+          "LeetCode",
+          "Medium",
+          "Manhattan in grid",
+          "https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/"
+        ],
+        [
+          "10",
+          "1394. Minimum Path Cost in a Grid",
+          "LeetCode",
+          "Medium",
+          "Grid DP with cost",
+          "https://leetcode.com/problems/minimum-path-cost-in-a-grid/"
+        ],
+        [
+          "11",
+          "2145. Grid Game",
+          "LeetCode",
+          "Medium",
+          "Grid prefix sum",
+          "https://leetcode.com/problems/grid-game/"
+        ],
+        [
+          "12",
+          "2160. Minimum Operations to Make a Uni-Value Grid",
+          "LeetCode",
+          "Medium",
+          "Grid median",
+          "https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/"
+        ],
+        [
+          "13",
+          "ABC 337 D - Cheating Gomoku Narabe",
+          "AtCoder",
+          "Medium (600)",
+          "Grid sliding window",
+          "https://atcoder.jp/contests/abc337/tasks/abc337_d"
+        ],
+        [
+          "14",
+          "1414. Shortest Path in a Grid with Obstacles Elimination",
+          "LeetCode",
+          "Hard",
+          "BFS with state (k obstacles)",
+          "https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/"
+        ],
+        [
+          "15",
+          "407. Trapping Rain Water II",
+          "LeetCode",
+          "Hard",
+          "Grid Dijkstra / Min-heap",
+          "https://leetcode.com/problems/trapping-rain-water-ii/"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "7. GENERATED PRACTICE PROBLEMS"
+    },
+    {
+      "type": "text",
+      "content": "**Problem 1: Spiral Walk (Easy)** Given an R × C grid, start at (0, 0) and walk in a clockwise spiral pattern visiting every cell exactly once. Return the list of coordinates visited in order."
+    },
+    {
+      "type": "text",
+      "content": "**Problem 2: Island Perimeter (Easy)** Given a binary grid where 1 = land and 0 = water, compute the total perimeter of all islands (each land cell contributes 4 - number of adjacent land cells)."
+    },
+    {
+      "type": "text",
+      "content": "**Problem 3: Nearest Exit (Medium)** Given a grid with '.' (empty), '+' (wall), and 'S' (start), find the minimum steps to reach any cell on the boundary (outside). You can only move 4-directionally through empty cells."
+    },
+    {
+      "type": "text",
+      "content": "**Problem 4: Grid Transformation Matching (Medium)** Given two binary grids A and B of the same size, determine if A can be transformed into B using any combination of: 90° rotation, horizontal reflection, vertical reflection, and translation (shifting)."
+    },
+    {
+      "type": "text",
+      "content": "**Problem 5: Maximum Submatrix with Sum Zero (Hard)** Given an R × C grid of integers, find the largest rectangular submatrix whose sum is zero."
+    },
+    {
+      "type": "text",
+      "content": "**Problem 6: Knight's Minimum Moves (Hard)** Given a chessboard of size N × N, find the minimum number of knight moves to go from (r1, c1) to (r2, c2). A knight moves in an L-shape: (±1, ±2) or (±2, ±1). N up to 10^5."
+    },
+    {
+      "type": "text",
+      "content": "**Problem 7: Grid Teleportation (Contest-Style)** You are on an R × C grid. Cells contain letters 'a'-'z'. When you step on a cell, you can optionally teleport to any other cell with the same letter. Find the minimum steps from start to target."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "8. COMPLETE SOLUTION SECTION"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Problem 1: Number of Islands (LeetCode 200)"
+    },
+    {
+      "type": "text",
+      "content": "**Given:** A binary grid of '1's (land) and '0's (water). Count the number of islands. An island is surrounded by water and formed by connecting adjacent lands horizontally or vertically."
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition:** This is a connected components problem on a grid. Each island is a connected component of '1's using 4-directional connectivity."
+    },
+    {
+      "type": "text",
+      "content": "**B. Brute Force:** Same as DFS/BFS approach — no truly brute force alternative for counting components."
+    },
+    {
+      "type": "text",
+      "content": "**C. Optimized Approach:** Iterate through every cell. When we find unvisited land, increment count and perform DFS/BFS to mark the entire island as visited."
+    },
+    {
+      "type": "text",
+      "content": "**D. Step-by-Step Explanation:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Initialize visited[R][C] = False, count = 0.",
+        "For each cell (r, c):"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "If grid[r][c] == '1' and not visited[r][c]:",
+        "count += 1",
+        "DFS(r, c): mark current as visited, recursively visit all 4-directional neighbors that are land and unvisited."
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Return count."
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**E. Complexity Analysis:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Time: O(R × C) — each cell visited at most once.",
+        "Space: O(R × C) worst case for recursion stack (or visited array)."
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**F. Edge Cases:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Empty grid: return 0.",
+        "All water: return 0.",
+        "All land: return 1.",
+        "Single cell: return grid[0][0] == '1'.",
+        "Diagonal land cells do NOT connect (only 4-dir)."
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**G. Fully Working Code:**"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def num_islands(grid):\n    if not grid or not grid[0]:\n        return 0\n    R, C = len(grid), len(grid[0])\n    visited = [[False]*C for _ in range(R)]\n    \n    def dfs(r, c):\n        if r < 0 or r >= R or c < 0 or c >= C:\n            return\n        if visited[r][c] or grid[r][c] == '0':\n            return\n        visited[r][c] = True\n        dfs(r+1, c)\n        dfs(r-1, c)\n        dfs(r, c+1)\n        dfs(r, c-1)\n    \n    count = 0\n    for r in range(R):\n        for c in range(C):\n            if grid[r][c] == '1' and not visited[r][c]:\n                count += 1\n                dfs(r, c)\n    return count",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "int numIslands(vector<vector<char>>& grid) {\n    if (grid.empty() || grid[0].empty()) return 0;\n    int R = grid.size(), C = grid[0].size();\n    vector<vector<bool>> visited(R, vector<bool>(C, false));\n    \n    function<void(int,int)> dfs = [&](int r, int c) {\n        if (r < 0 || r >= R || c < 0 || c >= C) return;\n        if (visited[r][c] || grid[r][c] == '0') return;\n        visited[r][c] = true;\n        dfs(r+1, c); dfs(r-1, c);\n        dfs(r, c+1); dfs(r, c-1);\n    };\n    \n    int count = 0;\n    for (int r = 0; r < R; r++)\n        for (int c = 0; c < C; c++)\n            if (grid[r][c] == '1' && !visited[r][c]) {\n                count++;\n                dfs(r, c);\n            }\n    return count;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public int numIslands(char[][] grid) {\n    if (grid == null || grid.length == 0 || grid[0].length == 0) return 0;\n    int R = grid.length, C = grid[0].length;\n    boolean[][] visited = new boolean[R][C];\n    \n    int count = 0;\n    for (int r = 0; r < R; r++)\n        for (int c = 0; c < C; c++)\n            if (grid[r][c] == '1' && !visited[r][c]) {\n                count++;\n                dfs(grid, visited, r, c);\n            }\n    return count;\n}\n\nvoid dfs(char[][] grid, boolean[][] visited, int r, int c) {\n    int R = grid.length, C = grid[0].length;\n    if (r < 0 || r >= R || c < 0 || c >= C) return;\n    if (visited[r][c] || grid[r][c] == '0') return;\n    visited[r][c] = true;\n    dfs(grid, visited, r+1, c);\n    dfs(grid, visited, r-1, c);\n    dfs(grid, visited, r, c+1);\n    dfs(grid, visited, r, c-1);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function numIslands(grid) {\n    if (!grid.length || !grid[0].length) return 0;\n    const R = grid.length, C = grid[0].length;\n    const visited = Array.from({length: R}, () => new Array(C).fill(false));\n    function dfs(r, c) {\n        if (r < 0 || r >= R || c < 0 || c >= C) return;\n        if (visited[r][c] || grid[r][c] === '0') return;\n        visited[r][c] = true;\n        dfs(r+1, c); dfs(r-1, c);\n        dfs(r, c+1); dfs(r, c-1);\n    }\n    let count = 0;\n    for (let r = 0; r < R; r++)\n        for (let c = 0; c < C; c++)\n            if (grid[r][c] === '1' && !visited[r][c]) {\n                count++;\n                dfs(r, c);\n            }\n    return count;\n}",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Problem 2: 01 Matrix (LeetCode 542)"
+    },
+    {
+      "type": "text",
+      "content": "**Given:** A binary matrix of 0s and 1s. For each cell, find the distance to the nearest 0."
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition:** This is a multi-source BFS problem. Start BFS from ALL 0 cells simultaneously. The distance recorded for each cell is its minimum distance to any 0."
+    },
+    {
+      "type": "text",
+      "content": "**B. Brute Force:** For each 1, BFS until we find a 0: O((R*C)^2)."
+    },
+    {
+      "type": "text",
+      "content": "**C. Optimized Approach:** Multi-source BFS: all 0s are sources with distance 0. Push them all into the queue. BFS processes by expanding level by level, ensuring each cell gets the shortest distance."
+    },
+    {
+      "type": "text",
+      "content": "**D. Step-by-Step Explanation:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Initialize dist matrix with -1 (unvisited).",
+        "Push all cells with value 0 into the queue with dist = 0.",
+        "BFS: pop cell, check 4 neighbors. If neighbor is unvisited, set dist = current dist + 1, push neighbor.",
+        "Return dist matrix."
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**E. Complexity Analysis:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Time: O(R × C) — each cell exactly once.",
+        "Space: O(R × C) for queue and dist matrix."
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**F. Edge Cases:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "All zeros: dist is all zeros.",
+        "Single row / single column: still works.",
+        "Large grid: BFS queue may grow large."
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**G. Fully Working Code:**"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "from collections import deque\n\ndef update_matrix(mat):\n    R, C = len(mat), len(mat[0])\n    dist = [[-1]*C for _ in range(R)]\n    q = deque()\n    \n    for r in range(R):\n        for c in range(C):\n            if mat[r][c] == 0:\n                dist[r][c] = 0\n                q.append((r, c))\n    \n    while q:\n        r, c = q.popleft()\n        for dr, dc in [(1,0),(-1,0),(0,1),(0,-1)]:\n            nr, nc = r+dr, c+dc\n            if 0 <= nr < R and 0 <= nc < C and dist[nr][nc] == -1:\n                dist[nr][nc] = dist[r][c] + 1\n                q.append((nr, nc))\n    \n    return dist",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {\n    int R = mat.size(), C = mat[0].size();\n    vector<vector<int>> dist(R, vector<int>(C, -1));\n    queue<pair<int,int>> q;\n    \n    for (int r = 0; r < R; r++)\n        for (int c = 0; c < C; c++)\n            if (mat[r][c] == 0) {\n                dist[r][c] = 0;\n                q.push({r, c});\n            }\n    \n    int dr[] = {1, -1, 0, 0};\n    int dc[] = {0, 0, 1, -1};\n    \n    while (!q.empty()) {\n        auto [r, c] = q.front(); q.pop();\n        for (int d = 0; d < 4; d++) {\n            int nr = r + dr[d], nc = c + dc[d];\n            if (nr >= 0 && nr < R && nc >= 0 && nc < C && dist[nr][nc] == -1) {\n                dist[nr][nc] = dist[r][c] + 1;\n                q.push({nr, nc});\n            }\n        }\n    }\n    return dist;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public int[][] updateMatrix(int[][] mat) {\n    int R = mat.length, C = mat[0].length;\n    int[][] dist = new int[R][C];\n    for (int[] row : dist) Arrays.fill(row, -1);\n    Queue<int[]> q = new LinkedList<>();\n    \n    for (int r = 0; r < R; r++)\n        for (int c = 0; c < C; c++)\n            if (mat[r][c] == 0) {\n                dist[r][c] = 0;\n                q.offer(new int[]{r, c});\n            }\n    \n    int[] dr = {1, -1, 0, 0};\n    int[] dc = {0, 0, 1, -1};\n    \n    while (!q.isEmpty()) {\n        int[] cur = q.poll();\n        int r = cur[0], c = cur[1];\n        for (int d = 0; d < 4; d++) {\n            int nr = r + dr[d], nc = c + dc[d];\n            if (nr >= 0 && nr < R && nc >= 0 && nc < C && dist[nr][nc] == -1) {\n                dist[nr][nc] = dist[r][c] + 1;\n                q.offer(new int[]{nr, nc});\n            }\n        }\n    }\n    return dist;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function updateMatrix(mat) {\n    const R = mat.length, C = mat[0].length;\n    const dist = Array.from({length: R}, () => new Array(C).fill(-1));\n    const q = [];\n    for (let r = 0; r < R; r++)\n        for (let c = 0; c < C; c++)\n            if (mat[r][c] === 0) {\n                dist[r][c] = 0;\n                q.push([r, c]);\n            }\n    const dr = [1, -1, 0, 0];\n    const dc = [0, 0, 1, -1];\n    while (q.length) {\n        const [r, c] = q.shift();\n        for (let d = 0; d < 4; d++) {\n            const nr = r + dr[d], nc = c + dc[d];\n            if (nr >= 0 && nr < R && nc >= 0 && nc < C && dist[nr][nc] === -1) {\n                dist[nr][nc] = dist[r][c] + 1;\n                q.push([nr, nc]);\n            }\n        }\n    }\n    return dist;\n}",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Problem 3: Minimum Path Sum (LeetCode 64)"
+    },
+    {
+      "type": "text",
+      "content": "**Given:** An R × C grid of non-negative integers. Find the path from top-left to bottom-right that minimizes the sum of numbers along the path. You can only move right or down."
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition:** This is a classic DP problem. At each cell, the minimum sum to reach it is the cell's value plus the minimum of the incoming paths (from above or from left)."
+    },
+    {
+      "type": "text",
+      "content": "**B. Brute Force:** Explore all possible paths: exponential (choose R-1 down moves among R+C-2 total moves = C(R+C-2, R-1) paths)."
+    },
+    {
+      "type": "text",
+      "content": "**C. Optimized Approach (DP):** dp[r][c] = min(dp[r-1][c], dp[r][c-1]) + grid[r][c]."
+    },
+    {
+      "type": "text",
+      "content": "**D. Step-by-Step Explanation:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Initialize dp[0][0] = grid[0][0].",
+        "Fill first row: dp[0][c] = dp[0][c-1] + grid[0][c].",
+        "Fill first column: dp[r][0] = dp[r-1][0] + grid[r][0].",
+        "For each remaining cell: dp[r][c] = min(dp[r-1][c], dp[r][c-1]) + grid[r][c].",
+        "Return dp[R-1][C-1]."
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**E. Complexity Analysis:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Time: O(R × C).",
+        "Space: O(R × C) or O(C) with space optimization."
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**F. Edge Cases:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Single cell: return grid[0][0].",
+        "Single row: only right moves.",
+        "Single column: only down moves.",
+        "Large values: use long/int64."
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**G. Fully Working Code:**"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def min_path_sum(grid):\n    R, C = len(grid), len(grid[0])\n    dp = [[0]*C for _ in range(R)]\n    dp[0][0] = grid[0][0]\n    \n    for c in range(1, C):\n        dp[0][c] = dp[0][c-1] + grid[0][c]\n    for r in range(1, R):\n        dp[r][0] = dp[r-1][0] + grid[r][0]\n    \n    for r in range(1, R):\n        for c in range(1, C):\n            dp[r][c] = min(dp[r-1][c], dp[r][c-1]) + grid[r][c]\n    \n    return dp[R-1][C-1]",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "int minPathSum(vector<vector<int>>& grid) {\n    int R = grid.size(), C = grid[0].size();\n    vector<vector<int>> dp(R, vector<int>(C));\n    dp[0][0] = grid[0][0];\n    \n    for (int c = 1; c < C; c++) dp[0][c] = dp[0][c-1] + grid[0][c];\n    for (int r = 1; r < R; r++) dp[r][0] = dp[r-1][0] + grid[r][0];\n    \n    for (int r = 1; r < R; r++)\n        for (int c = 1; c < C; c++)\n            dp[r][c] = min(dp[r-1][c], dp[r][c-1]) + grid[r][c];\n    \n    return dp[R-1][C-1];\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public int minPathSum(int[][] grid) {\n    int R = grid.length, C = grid[0].length;\n    int[][] dp = new int[R][C];\n    dp[0][0] = grid[0][0];\n    \n    for (int c = 1; c < C; c++) dp[0][c] = dp[0][c-1] + grid[0][c];\n    for (int r = 1; r < R; r++) dp[r][0] = dp[r-1][0] + grid[r][0];\n    \n    for (int r = 1; r < R; r++)\n        for (int c = 1; c < C; c++)\n            dp[r][c] = Math.min(dp[r-1][c], dp[r][c-1]) + grid[r][c];\n    \n    return dp[R-1][C-1];\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function minPathSum(grid) {\n    const R = grid.length, C = grid[0].length;\n    const dp = Array.from({length: R}, () => new Array(C).fill(0));\n    dp[0][0] = grid[0][0];\n    for (let c = 1; c < C; c++) dp[0][c] = dp[0][c-1] + grid[0][c];\n    for (let r = 1; r < R; r++) dp[r][0] = dp[r-1][0] + grid[r][0];\n    for (let r = 1; r < R; r++)\n        for (let c = 1; c < C; c++)\n            dp[r][c] = Math.min(dp[r-1][c], dp[r][c-1]) + grid[r][c];\n    return dp[R-1][C-1];\n}",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Problem 4: Flood Fill (LeetCode 733)"
+    },
+    {
+      "type": "text",
+      "content": "**Given:** An R × C grid representing an image. Start at (sr, sc) and change all cells connected 4-directionally with the same starting color to a new color."
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition:** Simple DFS/BFS from the starting cell. Visit all connected cells with the same initial color and change them."
+    },
+    {
+      "type": "text",
+      "content": "**B. Brute Force:** Same as DFS/BFS — this is the canonical solution."
+    },
+    {
+      "type": "text",
+      "content": "**C. Optimized Approach:** DFS (recursive or iterative) or BFS."
+    },
+    {
+      "type": "text",
+      "content": "**D. Step-by-Step Explanation:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "If grid[sr][sc] == newColor: return grid (no change needed).",
+        "Store starting color.",
+        "DFS(sr, sc): if out of bounds, return. If current cell != start color, return. Set current cell = newColor. Recursively visit all 4 neighbors.",
+        "Return modified grid."
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**E. Complexity Analysis:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Time: O(R × C) — each cell visited at most once.",
+        "Space: O(R × C) worst-case recursion depth."
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**F. Edge Cases:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Start color = new color: no change needed (infinite loop if not checked).",
+        "Single cell.",
+        "Non-rectangular grid (all are rectangular)."
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**G. Fully Working Code:**"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def flood_fill(image, sr, sc, new_color):\n    R, C = len(image), len(image[0])\n    start_color = image[sr][sc]\n    if start_color == new_color:\n        return image\n    \n    def dfs(r, c):\n        if r < 0 or r >= R or c < 0 or c >= C:\n            return\n        if image[r][c] != start_color:\n            return\n        image[r][c] = new_color\n        dfs(r+1, c)\n        dfs(r-1, c)\n        dfs(r, c+1)\n        dfs(r, c-1)\n    \n    dfs(sr, sc)\n    return image",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int newColor) {\n    int R = image.size(), C = image[0].size();\n    int startColor = image[sr][sc];\n    if (startColor == newColor) return image;\n    function<void(int,int)> dfs = [&](int r, int c) {\n        if (r < 0 || r >= R || c < 0 || c >= C) return;\n        if (image[r][c] != startColor) return;\n        image[r][c] = newColor;\n        dfs(r+1, c); dfs(r-1, c);\n        dfs(r, c+1); dfs(r, c-1);\n    };\n    dfs(sr, sc);\n    return image;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public int[][] floodFill(int[][] image, int sr, int sc, int newColor) {\n    int R = image.length, C = image[0].length;\n    int startColor = image[sr][sc];\n    if (startColor == newColor) return image;\n    dfs(image, sr, sc, startColor, newColor, R, C);\n    return image;\n}\nvoid dfs(int[][] image, int r, int c, int startColor, int newColor, int R, int C) {\n    if (r < 0 || r >= R || c < 0 || c >= C) return;\n    if (image[r][c] != startColor) return;\n    image[r][c] = newColor;\n    dfs(image, r+1, c, startColor, newColor, R, C);\n    dfs(image, r-1, c, startColor, newColor, R, C);\n    dfs(image, r, c+1, startColor, newColor, R, C);\n    dfs(image, r, c-1, startColor, newColor, R, C);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function floodFill(image, sr, sc, newColor) {\n    const R = image.length, C = image[0].length;\n    const startColor = image[sr][sc];\n    if (startColor === newColor) return image;\n    function dfs(r, c) {\n        if (r < 0 || r >= R || c < 0 || c >= C) return;\n        if (image[r][c] !== startColor) return;\n        image[r][c] = newColor;\n        dfs(r+1, c); dfs(r-1, c);\n        dfs(r, c+1); dfs(r, c-1);\n    }\n    dfs(sr, sc);\n    return image;\n}",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Problem 5: Minimum Cost Homecoming of a Robot in a Grid (LeetCode 2087)"
+    },
+    {
+      "type": "text",
+      "content": "**Given:** A robot starts at (sr, sc) and wants to go home at (er, ec). Each row r has a cost rowCosts[r] for moving left/right in that row. Each column c has a cost colCosts[c] for moving up/down in that column. Find minimum total cost."
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition:** Since movement costs are per row/column (not per cell), and the robot cannot move diagonally, the total cost is simply: sum of row costs along the path + sum of column costs along the path. The optimal path is any monotonic path (always moving toward the target)."
+    },
+    {
+      "type": "text",
+      "content": "**B. Brute Force:** BFS/Dijkstra: O(R*C log(R*C))."
+    },
+    {
+      "type": "text",
+      "content": "**C. Optimized Approach:** Sum the costs without needing pathfinding. Total cost = sum of rowCosts between sr and er + sum of colCosts between sc and ec."
+    },
+    {
+      "type": "text",
+      "content": "**D. Step-by-Step Explanation:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Initialize total = 0.",
+        "For each row from sr to er (in the direction of er): add rowCosts[row] for each step.",
+        "For each column from sc to ec (in the direction of ec): add colCosts[col] for each step.",
+        "Return total."
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**E. Complexity Analysis:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Time: O(R + C) — iterate over rows and columns traversed.",
+        "Space: O(1)."
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**F. Edge Cases:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Start = home: cost = 0.",
+        "Negative costs: path is still optimal because all monotonic paths have the same cost."
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**G. Fully Working Code:**"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def min_cost_homecoming(sr, sc, er, ec, row_costs, col_costs):\n    total = 0\n    step_r = 1 if er >= sr else -1\n    step_c = 1 if ec >= sc else -1\n    \n    for r in range(sr + step_r, er + step_r, step_r):\n        total += row_costs[r]\n    for c in range(sc + step_c, ec + step_c, step_c):\n        total += col_costs[c]\n    \n    return total",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "int minCostHomecoming(int sr, int sc, int er, int ec, vector<int>& rowCosts, vector<int>& colCosts) {\n    int total = 0;\n    int stepR = (er >= sr) ? 1 : -1;\n    int stepC = (ec >= sc) ? 1 : -1;\n    for (int r = sr + stepR; r != er + stepR; r += stepR)\n        total += rowCosts[r];\n    for (int c = sc + stepC; c != ec + stepC; c += stepC)\n        total += colCosts[c];\n    return total;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public int minCostHomecoming(int sr, int sc, int er, int ec, int[] rowCosts, int[] colCosts) {\n    int total = 0;\n    int stepR = (er >= sr) ? 1 : -1;\n    int stepC = (ec >= sc) ? 1 : -1;\n    for (int r = sr + stepR; r != er + stepR; r += stepR)\n        total += rowCosts[r];\n    for (int c = sc + stepC; c != ec + stepC; c += stepC)\n        total += colCosts[c];\n    return total;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function minCostHomecoming(sr, sc, er, ec, rowCosts, colCosts) {\n    let total = 0;\n    const stepR = er >= sr ? 1 : -1;\n    const stepC = ec >= sc ? 1 : -1;\n    for (let r = sr + stepR; r !== er + stepR; r += stepR)\n        total += rowCosts[r];\n    for (let c = sc + stepC; c !== ec + stepC; c += stepC)\n        total += colCosts[c];\n    return total;\n}",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Problem 6: Shortest Path in a Grid with Obstacles Elimination (LeetCode 1293)"
+    },
+    {
+      "type": "text",
+      "content": "**Given:** An R × C grid with 0 = empty, 1 = obstacle. You can eliminate at most k obstacles. Find the minimum steps from (0,0) to (R-1,C-1)."
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition:** This is BFS with state (r, c, k_remaining). The state space is R × C × (k+1)."
+    },
+    {
+      "type": "text",
+      "content": "**B. Brute Force:** BFS without obstacle elimination (treat obstacles as walls): may be impossible."
+    },
+    {
+      "type": "text",
+      "content": "**C. Optimized Approach:** BFS with visited[r][c][k] = min steps to reach (r,c) with k eliminations remaining. Use a queue and explore 4-directionally."
+    },
+    {
+      "type": "text",
+      "content": "**D. Step-by-Step Explanation:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "visited[r][c][k] = -1 (unvisited). visited[0][0][k] = 0.",
+        "BFS queue: (r, c, k_remaining).",
+        "For each neighbor:"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "If neighbor is obstacle and k > 0: new_k = k - 1, cost = visited[r][c][k] + 1.",
+        "If neighbor is empty: new_k = k, cost = visited[r][c][k] + 1.",
+        "If cost < visited[nr][nc][new_k]: update and push."
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Return min over all k of visited[R-1][C-1][k]."
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**E. Complexity Analysis:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Time: O(R × C × k).",
+        "Space: O(R × C × k)."
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**F. Edge Cases:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "k >= min obstacle count on best path.",
+        "No path even with eliminations.",
+        "Start = target."
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**G. Fully Working Code:**"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "from collections import deque\n\ndef shortest_path_with_elimination(grid, k):\n    R, C = len(grid), len(grid[0])\n    if R == 1 and C == 1:\n        return 0\n    \n    INF = 10**9\n    dist = [[[INF]*(k+1) for _ in range(C)] for _ in range(R)]\n    q = deque()\n    \n    for kk in range(k+1):\n        dist[0][0][kk] = 0\n    q.append((0, 0, k))\n    \n    while q:\n        r, c, kk = q.popleft()\n        d = dist[r][c][kk]\n        \n        for dr, dc in [(1,0),(-1,0),(0,1),(0,-1)]:\n            nr, nc = r+dr, c+dc\n            if 0 <= nr < R and 0 <= nc < C:\n                nk = kk - (grid[nr][nc] == 1)\n                if nk >= 0 and dist[nr][nc][nk] > d + 1:\n                    dist[nr][nc][nk] = d + 1\n                    q.append((nr, nc, nk))\n    \n    ans = min(dist[R-1][C-1])\n    return ans if ans != INF else -1",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "int shortestPathWithElimination(vector<vector<int>>& grid, int k) {\n    int R = grid.size(), C = grid[0].size();\n    if (R == 1 && C == 1) return 0;\n    const int INF = 1e9;\n    vector<vector<vector<int>>> dist(R, vector<vector<int>>(C, vector<int>(k+1, INF)));\n    queue<tuple<int,int,int>> q;\n    for (int kk = 0; kk <= k; kk++) dist[0][0][kk] = 0;\n    q.push({0, 0, k});\n    int dr[] = {1, -1, 0, 0};\n    int dc[] = {0, 0, 1, -1};\n    while (!q.empty()) {\n        auto [r, c, kk] = q.front(); q.pop();\n        int d = dist[r][c][kk];\n        for (int i = 0; i < 4; i++) {\n            int nr = r + dr[i], nc = c + dc[i];\n            if (nr >= 0 && nr < R && nc >= 0 && nc < C) {\n                int nk = kk - (grid[nr][nc] == 1);\n                if (nk >= 0 && dist[nr][nc][nk] > d + 1) {\n                    dist[nr][nc][nk] = d + 1;\n                    q.push({nr, nc, nk});\n                }\n            }\n        }\n    }\n    int ans = *min_element(dist[R-1][C-1].begin(), dist[R-1][C-1].end());\n    return ans >= INF ? -1 : ans;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public int shortestPathWithElimination(int[][] grid, int k) {\n    int R = grid.length, C = grid[0].length;\n    if (R == 1 && C == 1) return 0;\n    int INF = (int)1e9;\n    int[][][] dist = new int[R][C][k+1];\n    for (int[][] mat : dist) for (int[] row : mat) Arrays.fill(row, INF);\n    Queue<int[]> q = new LinkedList<>();\n    for (int kk = 0; kk <= k; kk++) dist[0][0][kk] = 0;\n    q.offer(new int[]{0, 0, k});\n    int[] dr = {1, -1, 0, 0};\n    int[] dc = {0, 0, 1, -1};\n    while (!q.isEmpty()) {\n        int[] cur = q.poll();\n        int r = cur[0], c = cur[1], kk = cur[2];\n        int d = dist[r][c][kk];\n        for (int i = 0; i < 4; i++) {\n            int nr = r + dr[i], nc = c + dc[i];\n            if (nr >= 0 && nr < R && nc >= 0 && nc < C) {\n                int nk = kk - (grid[nr][nc] == 1 ? 1 : 0);\n                if (nk >= 0 && dist[nr][nc][nk] > d + 1) {\n                    dist[nr][nc][nk] = d + 1;\n                    q.offer(new int[]{nr, nc, nk});\n                }\n            }\n        }\n    }\n    int ans = INF;\n    for (int v : dist[R-1][C-1]) ans = Math.min(ans, v);\n    return ans >= INF ? -1 : ans;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function shortestPathWithElimination(grid, k) {\n    const R = grid.length, C = grid[0].length;\n    if (R === 1 && C === 1) return 0;\n    const INF = 1e9;\n    const dist = Array.from({length: R}, () =>\n        Array.from({length: C}, () => new Array(k+1).fill(INF)));\n    const q = [];\n    for (let kk = 0; kk <= k; kk++) dist[0][0][kk] = 0;\n    q.push([0, 0, k]);\n    const dr = [1, -1, 0, 0];\n    const dc = [0, 0, 1, -1];\n    while (q.length) {\n        const [r, c, kk] = q.shift();\n        const d = dist[r][c][kk];\n        for (let i = 0; i < 4; i++) {\n            const nr = r + dr[i], nc = c + dc[i];\n            if (nr >= 0 && nr < R && nc >= 0 && nc < C) {\n                const nk = kk - (grid[nr][nc] === 1 ? 1 : 0);\n                if (nk >= 0 && dist[nr][nc][nk] > d + 1) {\n                    dist[nr][nc][nk] = d + 1;\n                    q.push([nr, nc, nk]);\n                }\n            }\n        }\n    }\n    const ans = Math.min(...dist[R-1][C-1]);\n    return ans >= INF ? -1 : ans;\n}",
+      "caption": null
+    }
+  ],
+  "difficulty": "Advanced"
+}

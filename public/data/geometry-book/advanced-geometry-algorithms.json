@@ -1,0 +1,719 @@
+{
+  "chapter": 15,
+  "slug": "advanced-geometry-algorithms",
+  "title": "Advanced Geometry Algorithms",
+  "icon": "✦",
+  "color": "#84cc16",
+  "problemCount": 172,
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Chapter 15: Advanced Geometry Algorithms"
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "1. INTRODUCTION"
+    },
+    {
+      "type": "text",
+      "content": "Advanced geometry algorithms push beyond foundational techniques into specialized domains:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Fractal geometry:** self-similar patterns at different scales",
+        "**3D geometry:** objects with depth, volume, spatial intersections",
+        "**Sphere packing:** optimal arrangement in space",
+        "**Bezier curves:** smooth curves from control points (fonts, vector graphics)",
+        "**Geodesics:** shortest paths on curved surfaces",
+        "**Voronoi diagrams:** nearest-neighbor region partitioning",
+        "**Delaunay triangulation:** angle-optimized triangulation"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "These are staples of advanced competitive programming, graphics, and engineering."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2. CORE CONCEPTS"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.1 Fractals"
+    },
+    {
+      "type": "text",
+      "content": "Self-similar shapes at all scales."
+    },
+    {
+      "type": "text",
+      "content": "**Mandelbrot Set:** For each complex number c, iterate $z = z^2 + c$ from z = 0. If bounded, c is in the set."
+    },
+    {
+      "type": "text",
+      "content": "**H-Tree:** Each branch splits into two perpendicular branches of half length."
+    },
+    {
+      "type": "text",
+      "content": "**Sierpinski Triangle:** Triangle recursively subdivided into 4, middle removed."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.2 3D Geometry"
+    },
+    {
+      "type": "text",
+      "content": "**Distance:** `$d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2}$`"
+    },
+    {
+      "type": "text",
+      "content": "**Point-plane distance:** `dist = $|ax_0+by_0+cz_0+d| / \\sqrt{a^2+b^2+c^2}$`"
+    },
+    {
+      "type": "text",
+      "content": "**Tetrahedron volume:** `$V = |AB \\cdot (AC \\times AD)| / 6$`"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.3 Bezier Curves"
+    },
+    {
+      "type": "text",
+      "content": "**Cubic:** `$B(t) = (1-t)^3P_0 + 3(1-t)^2 t P_1 + 3(1-t) t^2 P_2 + t^3 P_3$`"
+    },
+    {
+      "type": "text",
+      "content": "Properties: passes through $P_0$, $P_3$; tangent at ends points to $P_1$, $P_2$; lies in convex hull of control points."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.4 Voronoi / Delaunay"
+    },
+    {
+      "type": "text",
+      "content": "**Voronoi:** Partition by nearest seed point. **Delaunay:** Dual graph — connects seeds whose Voronoi cells touch. Maximizes minimum angle. $O(N \\log N)$ via Fortune's algorithm."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "3. PROBLEM RECOGNITION"
+    },
+    {
+      "type": "text",
+      "content": "**Keywords:** fractal, 3D, volume, packing, Bezier, curve, Voronoi, Delaunay, Mandelbrot, complex, geodesic, sphere, cube, tetrahedron."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "4. PATTERN ANALYSIS"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Pattern 1: Fractal Recursion"
+    },
+    {
+      "type": "text",
+      "content": "**When to use:** Self-similar recursive shapes."
+    },
+    {
+      "type": "text",
+      "content": "**Complexity:** O(branching^depth)."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Pattern 2: 3D Geometry"
+    },
+    {
+      "type": "text",
+      "content": "**When to use:** Problems involving cubes, spheres, 3D points."
+    },
+    {
+      "type": "text",
+      "content": "**Complexity:** $O(1)$ for formulas, $O(N)$ for multiple objects."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Pattern 3: Bezier Curves"
+    },
+    {
+      "type": "text",
+      "content": "**When to use:** Smooth interpolation, path design."
+    },
+    {
+      "type": "text",
+      "content": "**Algorithm:** De Casteljau's recursive evaluation."
+    },
+    {
+      "type": "text",
+      "content": "**Complexity:** $O(1)$ per evaluation."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "5. REUSABLE CODING TEMPLATES"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Template 1: Mandelbrot Set"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def mandelbrot(cx, cy, max_iter=100):\n    x = y = 0\n    for i in range(max_iter):\n        x2, y2 = x*x - y*y + cx, 2*x*y + cy\n        x, y = x2, y2\n        if x*x + y*y > 4:\n            return i\n    return max_iter",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "int mandelbrot(double cx, double cy, int maxIter = 100) {\n    double x = 0, y = 0;\n    for (int i = 0; i < maxIter; i++) {\n        double x2 = x*x - y*y + cx;\n        double y2 = 2*x*y + cy;\n        x = x2; y = y2;\n        if (x*x + y*y > 4) return i;\n    }\n    return maxIter;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public static int mandelbrot(double cx, double cy, int maxIter) {\n    double x = 0, y = 0;\n    for (int i = 0; i < maxIter; i++) {\n        double x2 = x*x - y*y + cx;\n        double y2 = 2*x*y + cy;\n        x = x2; y = y2;\n        if (x*x + y*y > 4) return i;\n    }\n    return maxIter;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function mandelbrot(cx, cy, maxIter = 100) {\n    let x = 0, y = 0;\n    for (let i = 0; i < maxIter; i++) {\n        const x2 = x*x - y*y + cx;\n        const y2 = 2*x*y + cy;\n        x = x2; y = y2;\n        if (x*x + y*y > 4) return i;\n    }\n    return maxIter;\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Template 2: H-Tree"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def h_tree(x, y, length, depth):\n    if depth == 0:\n        return\n    draw_line(x-length/2, y, x+length/2, y)\n    draw_line(x-length/2, y-length/2, x-length/2, y+length/2)\n    draw_line(x+length/2, y-length/2, x+length/2, y+length/2)\n    new_len = length / math.sqrt(2)\n    h_tree(x-length/2, y-length/2, new_len, depth-1)\n    h_tree(x-length/2, y+length/2, new_len, depth-1)\n    h_tree(x+length/2, y-length/2, new_len, depth-1)\n    h_tree(x+length/2, y+length/2, new_len, depth-1)",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "void hTree(double x, double y, double length, int depth) {\n    if (depth == 0) return;\n    drawLine(x-length/2, y, x+length/2, y);\n    drawLine(x-length/2, y-length/2, x-length/2, y+length/2);\n    drawLine(x+length/2, y-length/2, x+length/2, y+length/2);\n    double newLen = length / sqrt(2);\n    hTree(x-length/2, y-length/2, newLen, depth-1);\n    hTree(x-length/2, y+length/2, newLen, depth-1);\n    hTree(x+length/2, y-length/2, newLen, depth-1);\n    hTree(x+length/2, y+length/2, newLen, depth-1);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public static void hTree(double x, double y, double length, int depth) {\n    if (depth == 0) return;\n    drawLine(x-length/2, y, x+length/2, y);\n    drawLine(x-length/2, y-length/2, x-length/2, y+length/2);\n    drawLine(x+length/2, y-length/2, x+length/2, y+length/2);\n    double newLen = length / Math.sqrt(2);\n    hTree(x-length/2, y-length/2, newLen, depth-1);\n    hTree(x-length/2, y+length/2, newLen, depth-1);\n    hTree(x+length/2, y-length/2, newLen, depth-1);\n    hTree(x+length/2, y+length/2, newLen, depth-1);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function hTree(x, y, length, depth) {\n    if (depth === 0) return;\n    drawLine(x-length/2, y, x+length/2, y);\n    drawLine(x-length/2, y-length/2, x-length/2, y+length/2);\n    drawLine(x+length/2, y-length/2, x+length/2, y+length/2);\n    const newLen = length / Math.sqrt(2);\n    hTree(x-length/2, y-length/2, newLen, depth-1);\n    hTree(x-length/2, y+length/2, newLen, depth-1);\n    hTree(x+length/2, y-length/2, newLen, depth-1);\n    hTree(x+length/2, y+length/2, newLen, depth-1);\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Template 3: 3D Vector Math"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "import math\n\nclass Vec3:\n    def __init__(self, x=0, y=0, z=0):\n        self.x, self.y, self.z = x, y, z\n    \n    def dot(self, other):\n        return self.x*other.x + self.y*other.y + self.z*other.z\n    \n    def cross(self, other):\n        return Vec3(\n            self.y*other.z - self.z*other.y,\n            self.z*other.x - self.x*other.z,\n            self.x*other.y - self.y*other.x\n        )\n    \n    def length(self):\n        return math.sqrt(self.x**2 + self.y**2 + self.z**2)\n    \n    def dist_to(self, other):\n        return math.sqrt((self.x-other.x)**2 + (self.y-other.y)**2 + (self.z-other.z)**2)",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "#include <cmath>\nstruct Vec3 {\n    double x, y, z;\n    Vec3(double x=0, double y=0, double z=0) : x(x), y(y), z(z) {}\n    double dot(const Vec3& other) const {\n        return x*other.x + y*other.y + z*other.z;\n    }\n    Vec3 cross(const Vec3& other) const {\n        return {y*other.z - z*other.y, z*other.x - x*other.z, x*other.y - y*other.x};\n    }\n    double length() const { return sqrt(x*x + y*y + z*z); }\n    double distTo(const Vec3& other) const {\n        return sqrt((x-other.x)*(x-other.x) + (y-other.y)*(y-other.y) + (z-other.z)*(z-other.z));\n    }\n};",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public class Vec3 {\n    double x, y, z;\n    public Vec3(double x, double y, double z) { this.x = x; this.y = y; this.z = z; }\n    public double dot(Vec3 other) { return x*other.x + y*other.y + z*other.z; }\n    public Vec3 cross(Vec3 other) {\n        return new Vec3(y*other.z - z*other.y, z*other.x - x*other.z, x*other.y - y*other.x);\n    }\n    public double length() { return Math.sqrt(x*x + y*y + z*z); }\n    public double distTo(Vec3 other) {\n        return Math.sqrt((x-other.x)*(x-other.x) + (y-other.y)*(y-other.y) + (z-other.z)*(z-other.z));\n    }\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "class Vec3 {\n    constructor(x = 0, y = 0, z = 0) { this.x = x; this.y = y; this.z = z; }\n    dot(other) { return this.x*other.x + this.y*other.y + this.z*other.z; }\n    cross(other) {\n        return new Vec3(\n            this.y*other.z - this.z*other.y,\n            this.z*other.x - this.x*other.z,\n            this.x*other.y - this.y*other.x\n        );\n    }\n    length() { return Math.sqrt(this.x**2 + this.y**2 + this.z**2); }\n    distTo(other) {\n        return Math.sqrt((this.x-other.x)**2 + (this.y-other.y)**2 + (this.z-other.z)**2);\n    }\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Template 4: Bezier Curve (De Casteljau)"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def bezier_point(points, t):\n    pts = points[:]\n    n = len(pts)\n    while n > 1:\n        for i in range(n - 1):\n            x = (1 - t) * pts[i][0] + t * pts[i+1][0]\n            y = (1 - t) * pts[i][1] + t * pts[i+1][1]\n            pts[i] = (x, y)\n        n -= 1\n    return pts[0]",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "pair<double,double> bezierPoint(vector<pair<double,double>>& pts, double t) {\n    int n = pts.size();\n    vector<pair<double,double>> cur = pts;\n    while (n > 1) {\n        for (int i = 0; i < n-1; i++) {\n            cur[i].first = (1-t) * cur[i].first + t * cur[i+1].first;\n            cur[i].second = (1-t) * cur[i].second + t * cur[i+1].second;\n        }\n        n--;\n    }\n    return cur[0];\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public static double[] bezierPoint(int[][] points, double t) {\n    int n = points.length;\n    double[][] cur = new double[n][2];\n    for (int i = 0; i < n; i++) { cur[i][0] = points[i][0]; cur[i][1] = points[i][1]; }\n    while (n > 1) {\n        for (int i = 0; i < n-1; i++) {\n            cur[i][0] = (1-t) * cur[i][0] + t * cur[i+1][0];\n            cur[i][1] = (1-t) * cur[i][1] + t * cur[i+1][1];\n        }\n        n--;\n    }\n    return cur[0];\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function bezierPoint(points, t) {\n    const pts = points.map(p => [...p]);\n    let n = pts.length;\n    while (n > 1) {\n        for (let i = 0; i < n-1; i++) {\n            pts[i][0] = (1-t) * pts[i][0] + t * pts[i+1][0];\n            pts[i][1] = (1-t) * pts[i][1] + t * pts[i+1][1];\n        }\n        n--;\n    }\n    return pts[0];\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Template 5: 3D Rotation Matrices"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def rotate_x(point, angle_rad):\n    x, y, z = point\n    return (x, y*math.cos(angle_rad) - z*math.sin(angle_rad),\n            y*math.sin(angle_rad) + z*math.cos(angle_rad))\n\ndef rotate_y(point, angle_rad):\n    x, y, z = point\n    return (x*math.cos(angle_rad) + z*math.sin(angle_rad), y,\n            -x*math.sin(angle_rad) + z*math.cos(angle_rad))\n\ndef rotate_z(point, angle_rad):\n    x, y, z = point\n    return (x*math.cos(angle_rad) - y*math.sin(angle_rad),\n            x*math.sin(angle_rad) + y*math.cos(angle_rad), z)",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "tuple<double,double,double> rotateX(tuple<double,double,double> point, double rad) {\n    auto [x, y, z] = point;\n    return {x, y*cos(rad) - z*sin(rad), y*sin(rad) + z*cos(rad)};\n}\ntuple<double,double,double> rotateY(tuple<double,double,double> point, double rad) {\n    auto [x, y, z] = point;\n    return {x*cos(rad) + z*sin(rad), y, -x*sin(rad) + z*cos(rad)};\n}\ntuple<double,double,double> rotateZ(tuple<double,double,double> point, double rad) {\n    auto [x, y, z] = point;\n    return {x*cos(rad) - y*sin(rad), x*sin(rad) + y*cos(rad), z};\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public static double[] rotateX(double[] point, double rad) {\n    double x = point[0], y = point[1], z = point[2];\n    return new double[]{x, y*Math.cos(rad) - z*Math.sin(rad), y*Math.sin(rad) + z*Math.cos(rad)};\n}\npublic static double[] rotateY(double[] point, double rad) {\n    double x = point[0], y = point[1], z = point[2];\n    return new double[]{x*Math.cos(rad) + z*Math.sin(rad), y, -x*Math.sin(rad) + z*Math.cos(rad)};\n}\npublic static double[] rotateZ(double[] point, double rad) {\n    double x = point[0], y = point[1], z = point[2];\n    return new double[]{x*Math.cos(rad) - y*Math.sin(rad), x*Math.sin(rad) + y*Math.cos(rad), z};\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function rotateX(point, rad) {\n    const [x, y, z] = point;\n    return [x, y*Math.cos(rad) - z*Math.sin(rad), y*Math.sin(rad) + z*Math.cos(rad)];\n}\nfunction rotateY(point, rad) {\n    const [x, y, z] = point;\n    return [x*Math.cos(rad) + z*Math.sin(rad), y, -x*Math.sin(rad) + z*Math.cos(rad)];\n}\nfunction rotateZ(point, rad) {\n    const [x, y, z] = point;\n    return [x*Math.cos(rad) - y*Math.sin(rad), x*Math.sin(rad) + y*Math.cos(rad), z];\n}",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "6. CURATED REAL PROBLEMS"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "#",
+        "Problem",
+        "Platform",
+        "Difficulty",
+        "Concepts",
+        "Pattern"
+      ],
+      "rows": [
+        [
+          "1",
+          "2073D. Tower of Hanoi",
+          "Codeforces (2400)",
+          "Hard",
+          "Recursion",
+          "Fractal"
+        ],
+        [
+          "2",
+          "ABC 115 D - Christmas",
+          "AtCoder (1400)",
+          "Medium",
+          "Recursion",
+          "Fractal Burger"
+        ],
+        [
+          "3",
+          "36B. Fractal",
+          "Codeforces (1600)",
+          "Medium",
+          "Grid Drawing",
+          "Fractal"
+        ],
+        [
+          "4",
+          "H-Tree Construction",
+          "Pramp",
+          "Medium",
+          "Recursion",
+          "Fractal Tree"
+        ],
+        [
+          "5",
+          "Mandelbrot Set",
+          "CodeAbbey",
+          "Hard",
+          "Complex Numbers",
+          "Fractal"
+        ],
+        [
+          "6",
+          "Cubes - 2",
+          "E-Olymp",
+          "Very Easy",
+          "3D Geometry",
+          "Volume"
+        ],
+        [
+          "7",
+          "Spheres",
+          "HackerRank",
+          "Medium",
+          "3D Geometry",
+          "Intersection"
+        ],
+        [
+          "8",
+          "Cylinder",
+          "SPOJ",
+          "Medium",
+          "3D Geometry",
+          "Volume"
+        ],
+        [
+          "9",
+          "532 - Dungeon Master",
+          "UVa",
+          "Medium",
+          "BFS in 3D",
+          "3D Grid BFS"
+        ],
+        [
+          "10",
+          "ABC 180 E - TSP Aerial Cities",
+          "AtCoder",
+          "Hard",
+          "TSP Bitmask DP",
+          "3D TSP"
+        ],
+        [
+          "11",
+          "Cube Summation",
+          "HackerRank",
+          "Hard",
+          "3D Fenwick",
+          "3D Range Query"
+        ],
+        [
+          "12",
+          "Sphere Packing",
+          "Project Euler 222",
+          "Very Hard",
+          "Packing",
+          "Geometry"
+        ],
+        [
+          "13",
+          "Bezier Curves",
+          "Project Euler 363",
+          "Very Hard",
+          "Splines",
+          "Curve Geometry"
+        ],
+        [
+          "14",
+          "Nanobots on Geodesics",
+          "Project Euler 532",
+          "Very Hard",
+          "Geodesics",
+          "3D Surface"
+        ],
+        [
+          "15",
+          "Ball (12D)",
+          "Codeforces",
+          "Hard",
+          "3D Fenwick",
+          "3D Data Structure"
+        ]
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "7. GENERATED PRACTICE PROBLEMS"
+    },
+    {
+      "type": "text",
+      "content": "**Easy 1: Cube Surface** Given the side length of a cube, compute its surface area and volume."
+    },
+    {
+      "type": "text",
+      "content": "**Easy 2: Recursive Squares** Start with a square of side 1. At each corner, attach a square of side half the previous. After N steps, total area?"
+    },
+    {
+      "type": "text",
+      "content": "**Medium 1: Tower of Hanoi Simulation** Given N disks and Kth move, which disk moves where?"
+    },
+    {
+      "type": "text",
+      "content": "**Medium 2: Sphere Overlap** Two spheres with centers and radii — do they intersect? Compute intersection volume if yes."
+    },
+    {
+      "type": "text",
+      "content": "**Hard 1: 3D Convex Hull** Given N points in 3D, compute the faces of their convex hull. $N \\le 2000$."
+    },
+    {
+      "type": "text",
+      "content": "**Hard 2: Fractal Dimension** Given a fractal rule (e.g., Sierpinski carpet), compute Hausdorff dimension and area after N iterations."
+    },
+    {
+      "type": "text",
+      "content": "**Interview-Style: Line of Sight in 3D** Can you see point $P_2$ from $P_1$ with a blocking sphere of radius R? Compute visibility."
+    },
+    {
+      "type": "text",
+      "content": "**Contest-Style: Voronoi on a Torus** Compute Voronoi diagram of N points on a torus surface. Approximate using 3D embedding metric."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "8. COMPLETE SOLUTION SECTION"
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Problem 1: ABC 115 D - Christmas (AtCoder, Fractal Burger)"
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition** A level-N \"Christmas burger\" = bun + level-(N-1) burger + patty + level-(N-1) burger + bun. Need patty count in bottom X layers. Recursive fractal."
+    },
+    {
+      "type": "text",
+      "content": "**B. Brute Force** Build entire burger for small N only (exponential size)."
+    },
+    {
+      "type": "text",
+      "content": "**C. Optimized Approach** Recursion with precomputed totals. At each level, decide which part the bottom X layers fall into."
+    },
+    {
+      "type": "text",
+      "content": "**D. Step-by-Step**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Precompute total_len[N] and patties[N]:"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "len[0] = 1, pat[0] = 1",
+        "$\\text{len}[N] = 3 + 2\\cdot\\text{len}[N-1]$, $\\text{pat}[N] = 1 + 2\\cdot\\text{pat}[N-1]$"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Recursive count(N, X):"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "$X \\le 0$: 0",
+        "N = 0: 1",
+        "$X \\le 1$: 0 (just bun)",
+        "$X \\le 1 + \\text{len}[N-1]$: $\\text{count}(N-1, X-1)$",
+        "X = 1 + len[N-1] + 1: pat[N-1] + 1",
+        "else: pat[N-1] + 1 + count(N-1, X - 2 - len[N-1])"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**E. Complexity** $O(N)$."
+    },
+    {
+      "type": "text",
+      "content": "**F. Edge Cases**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "X = 0: 0",
+        "$X \\ge \\text{total\\_len}[N]$: full patty count"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**G. Code**"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def christmas_burger(N, X):\n    total_len = [0] * (N + 1)\n    patties = [0] * (N + 1)\n    total_len[0] = 1\n    patties[0] = 1\n    for i in range(1, N + 1):\n        total_len[i] = 3 + 2 * total_len[i-1]\n        patties[i] = 1 + 2 * patties[i-1]\n    \n    def count(n, x):\n        if x <= 0:\n            return 0\n        if n == 0:\n            return 1\n        if x <= 1:\n            return 0\n        if x <= 1 + total_len[n-1]:\n            return count(n-1, x - 1)\n        if x == 1 + total_len[n-1] + 1:\n            return patties[n-1] + 1\n        return patties[n-1] + 1 + count(n-1, x - 2 - total_len[n-1])\n    \n    return count(N, X)",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "long long christmas(int N, long long X) {\n    vector<long long> len(N+1), pat(N+1);\n    len[0] = 1; pat[0] = 1;\n    for (int i = 1; i <= N; i++) {\n        len[i] = 3 + 2 * len[i-1];\n        pat[i] = 1 + 2 * pat[i-1];\n    }\n    \n    function<long long(int, long long)> count = [&](int n, long long x) -> long long {\n        if (x <= 0) return 0;\n        if (n == 0) return 1;\n        if (x <= 1) return 0;\n        if (x <= 1 + len[n-1]) return count(n-1, x-1);\n        if (x == 1 + len[n-1] + 1) return pat[n-1] + 1;\n        return pat[n-1] + 1 + count(n-1, x - 2 - len[n-1]);\n    };\n    \n    return count(N, X);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public class Main {\n    static long[] len, pat;\n    \n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int N = sc.nextInt();\n        long X = sc.nextLong();\n        \n        len = new long[N+1];\n        pat = new long[N+1];\n        len[0] = 1; pat[0] = 1;\n        for (int i = 1; i <= N; i++) {\n            len[i] = 3 + 2 * len[i-1];\n            pat[i] = 1 + 2 * pat[i-1];\n        }\n        \n        System.out.println(count(N, X));\n    }\n    \n    static long count(int n, long x) {\n        if (x <= 0) return 0;\n        if (n == 0) return 1;\n        if (x <= 1) return 0;\n        if (x <= 1 + len[n-1]) return count(n-1, x-1);\n        if (x == 1 + len[n-1] + 1) return pat[n-1] + 1;\n        return pat[n-1] + 1 + count(n-1, x - 2 - len[n-1]);\n    }\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function christmasBurger(N, X) {\n    const totalLen = new Array(N+1).fill(0);\n    const patties = new Array(N+1).fill(0);\n    totalLen[0] = 1;\n    patties[0] = 1;\n    for (let i = 1; i <= N; i++) {\n        totalLen[i] = 3 + 2 * totalLen[i-1];\n        patties[i] = 1 + 2 * patties[i-1];\n    }\n    function count(n, x) {\n        if (x <= 0) return 0;\n        if (n === 0) return 1;\n        if (x <= 1) return 0;\n        if (x <= 1 + totalLen[n-1]) return count(n-1, x - 1);\n        if (x === 1 + totalLen[n-1] + 1) return patties[n-1] + 1;\n        return patties[n-1] + 1 + count(n-1, x - 2 - totalLen[n-1]);\n    }\n    return count(N, X);\n}",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Problem 2: 532 - Dungeon Master (UVa, 3D BFS)"
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition** This is a shortest-path problem in a 3D grid. The state is (level, row, col). BFS in 3D works exactly like 2D BFS but with 6 neighbors instead of 4 (up, down, N, S, E, W)."
+    },
+    {
+      "type": "text",
+      "content": "**B. Brute Force** DFS with exhaustive search: will find the path but not guarantee shortest."
+    },
+    {
+      "type": "text",
+      "content": "**C. Optimized Approach** Standard 3D BFS from start 'S' to end 'E'. Use a 3D visited array and a queue."
+    },
+    {
+      "type": "text",
+      "content": "**D. Step-by-Step**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Read L (levels), R (rows), C (columns)",
+        "Find start 'S' position",
+        "BFS: for each cell, try 6 neighbor directions",
+        "If 'E' is reached, return distance",
+        "If queue empties, return \"Trapped!\""
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**E. Complexity** $$O(L \\times R \\times C)$$ time and space."
+    },
+    {
+      "type": "text",
+      "content": "**F. Edge Cases**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Start = End (immediate reach)",
+        "No path exists",
+        "Single cell dungeon"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**G. Code**"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "from collections import deque\n\ndef dungeon_master(L, R, C, grid):\n    # Find start\n    for l in range(L):\n        for r in range(R):\n            for c in range(C):\n                if grid[l][r][c] == 'S':\n                    sr, sc, sl = r, c, l\n    \n    dq = deque([(sr, sc, sl, 0)])\n    visited = [[[False]*C for _ in range(R)] for _ in range(L)]\n    visited[sl][sr][sc] = True\n    dirs = [(0,0,1),(0,0,-1),(0,1,0),(0,-1,0),(1,0,0),(-1,0,0)]\n    \n    while dq:\n        r, c, l, dist = dq.popleft()\n        if grid[l][r][c] == 'E':\n            return f\"Escaped in {dist} minute(s).\"\n        for dr, dc, dl in dirs:\n            nr, nc, nl = r+dr, c+dc, l+dl\n            if 0 <= nl < L and 0 <= nr < R and 0 <= nc < C and \\\n               not visited[nl][nr][nc] and grid[nl][nr][nc] != '#':\n                visited[nl][nr][nc] = True\n                dq.append((nr, nc, nl, dist+1))\n    \n    return \"Trapped!\"",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "#include <bits/stdc++.h>\nusing namespace std;\n\nint main() {\n    int L, R, C;\n    while (cin >> L >> R >> C && (L || R || C)) {\n        vector<vector<string>> grid(L, vector<string>(R));\n        int sl, sr, sc;\n        for (int l = 0; l < L; l++)\n            for (int r = 0; r < R; r++) {\n                cin >> grid[l][r];\n                for (int c = 0; c < C; c++)\n                    if (grid[l][r][c] == 'S') sl = l, sr = r, sc = c;\n            }\n        \n        queue<tuple<int,int,int,int>> q;\n        q.push({sr, sc, sl, 0});\n        vector<vector<vector<bool>>> vis(L, vector<vector<bool>>(R, vector<bool>(C, false)));\n        vis[sl][sr][sc] = true;\n        \n        int dr[] = {0,0,0,0,1,-1};\n        int dc[] = {0,0,1,-1,0,0};\n        int dl[] = {1,-1,0,0,0,0};\n        \n        bool found = false;\n        while (!q.empty() && !found) {\n            auto [r, c, l, d] = q.front(); q.pop();\n            if (grid[l][r][c] == 'E') {\n                cout << \"Escaped in \" << d << \" minute(s).\\n\";\n                found = true;\n            }\n            for (int i = 0; i < 6; i++) {\n                int nr = r+dr[i], nc = c+dc[i], nl = l+dl[i];\n                if (nl >= 0 && nl < L && nr >= 0 && nr < R && nc >= 0 && nc < C &&\n                    !vis[nl][nr][nc] && grid[nl][nr][nc] != '#') {\n                    vis[nl][nr][nc] = true;\n                    q.push({nr, nc, nl, d+1});\n                }\n            }\n        }\n        if (!found) cout << \"Trapped!\\n\";\n    }\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        while (true) {\n            int L = sc.nextInt(), R = sc.nextInt(), C = sc.nextInt();\n            if (L == 0 && R == 0 && C == 0) break;\n            char[][][] grid = new char[L][R][C];\n            int sl = 0, sr = 0, sc2 = 0;\n            for (int l = 0; l < L; l++)\n                for (int r = 0; r < R; r++) {\n                    String line = sc.next();\n                    for (int c = 0; c < C; c++) {\n                        grid[l][r][c] = line.charAt(c);\n                        if (grid[l][r][c] == 'S') { sl = l; sr = r; sc2 = c; }\n                    }\n                }\n            int result = bfs(L, R, C, grid, sl, sr, sc2);\n            if (result == -1) System.out.println(\"Trapped!\");\n            else System.out.println(\"Escaped in \" + result + \" minute(s).\");\n        }\n    }\n    static int bfs(int L, int R, int C, char[][][] grid, int sl, int sr, int sc) {\n        Queue<int[]> q = new LinkedList<>();\n        boolean[][][] visited = new boolean[L][R][C];\n        q.offer(new int[]{sr, sc, sl, 0});\n        visited[sl][sr][sc] = true;\n        int[] dr = {0,0,0,0,1,-1};\n        int[] dc = {0,0,1,-1,0,0};\n        int[] dl = {1,-1,0,0,0,0};\n        while (!q.isEmpty()) {\n            int[] cur = q.poll();\n            int r = cur[0], c = cur[1], l = cur[2], d = cur[3];\n            if (grid[l][r][c] == 'E') return d;\n            for (int i = 0; i < 6; i++) {\n                int nr = r+dr[i], nc = c+dc[i], nl = l+dl[i];\n                if (nl >= 0 && nl < L && nr >= 0 && nr < R && nc >= 0 && nc < C &&\n                    !visited[nl][nr][nc] && grid[nl][nr][nc] != '#') {\n                    visited[nl][nr][nc] = true;\n                    q.offer(new int[]{nr, nc, nl, d+1});\n                }\n            }\n        }\n        return -1;\n    }\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function dungeonMaster(L, R, C, grid) {\n    let sr = 0, sc = 0, sl = 0;\n    for (let l = 0; l < L; l++)\n        for (let r = 0; r < R; r++)\n            for (let c = 0; c < C; c++)\n                if (grid[l][r][c] === 'S') { sr = r; sc = c; sl = l; }\n    const q = [[sr, sc, sl, 0]];\n    const visited = Array.from({length: L}, () =>\n        Array.from({length: R}, () => new Array(C).fill(false)));\n    visited[sl][sr][sc] = true;\n    const dirs = [[0,0,1],[0,0,-1],[0,1,0],[0,-1,0],[1,0,0],[-1,0,0]];\n    while (q.length) {\n        const [r, c, l, dist] = q.shift();\n        if (grid[l][r][c] === 'E') return `Escaped in ${dist} minute(s).`;\n        for (const [dr, dc, dl] of dirs) {\n            const nr = r+dr, nc = c+dc, nl = l+dl;\n            if (nl >= 0 && nl < L && nr >= 0 && nr < R && nc >= 0 && nc < C &&\n                !visited[nl][nr][nc] && grid[nl][nr][nc] !== '#') {\n                visited[nl][nr][nc] = true;\n                q.push([nr, nc, nl, dist+1]);\n            }\n        }\n    }\n    return \"Trapped!\";\n}",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "About the Code"
+    },
+    {
+      "type": "text",
+      "content": "All code in these chapters follows the following conventions:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Python:** Uses native types (tuples, lists), math module, and standard library.",
+        "**C++:** Uses `long long` for cross products to avoid overflow, `function` for recursion, and standard library containers.",
+        "**Java:** Uses `long` for cross products, `List<int[]>` for points, and `Arrays.deepEquals` for matrix comparison."
+      ]
+    },
+    {
+      "type": "text",
+      "content": "All implementations assume you have already read the input and are working on the core algorithmic logic."
+    },
+    {
+      "type": "divider"
+    }
+  ],
+  "difficulty": "Expert"
+}

@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DSA Mastery — Master DSA, one pattern at a time</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;scroll-behavior:smooth}
+:root{
+  --f:'Inter',system-ui,sans-serif;--fm:'JetBrains Mono',monospace;
+  --bg:#06070d;--bg2:#0a0c18;--card:#0f1122;--hover:#141730;
+  --nav-bg:rgba(6,7,13,0.87);
+  --b:rgba(214,235,253,0.06);--b2:rgba(214,235,253,0.12);
+  --t:#e8eaf0;--t2:#7d8299;--t3:rgba(232,234,240,0.28);
+  --a:#3b9eff;--a-bg:rgba(59,158,255,0.09);--a-bdr:rgba(59,158,255,0.20);--a-glow:rgba(59,158,255,0.12);
+  --easy:#34d399;--med:#fbbf24;--hard:#f87171;
+  --r:8px;--rl:14px;--rp:9999px;
+}
+:root[data-theme="light"]{
+  --bg:#f5f6fb;--bg2:#eef0f8;--card:#ffffff;--hover:#e8ecf6;
+  --nav-bg:rgba(245,246,251,0.88);
+  --b:rgba(0,0,51,0.07);--b2:rgba(0,0,51,0.13);
+  --t:#0e0f14;--t2:#4b4f63;--t3:rgba(14,15,20,.36);
+  --a:#1a6de0;--a-bg:rgba(26,109,224,0.08);--a-bdr:rgba(26,109,224,0.20);--a-glow:rgba(26,109,224,0.09);
+  --easy:#059669;--med:#d97706;--hard:#dc2626;
+}
+body{font-family:var(--f);background:var(--bg);color:var(--t);line-height:1.6;overflow-x:hidden}
+.w{max-width:1180px;margin:0 auto;padding:0 28px}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;background:none;border:none;font-family:inherit;color:inherit}
+
+/* LAYERS */
+#bg-canvas{position:fixed;inset:0;z-index:0;pointer-events:none}
+#cursor-glow{position:fixed;width:420px;height:420px;border-radius:50%;pointer-events:none;z-index:1;
+  background:radial-gradient(circle,rgba(59,158,255,.05) 0%,transparent 62%);
+  transform:translate(-50%,-50%);filter:blur(12px)}
+:root[data-theme="light"] #cursor-glow{background:radial-gradient(circle,rgba(26,109,224,.04) 0%,transparent 60%)}
+.nav,.hero,.main,footer{position:relative;z-index:2}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;height:60px;
+  background:var(--nav-bg);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);
+  border-bottom:1px solid var(--b);transition:box-shadow .3s}
+.nav.scrolled{box-shadow:0 4px 32px rgba(0,0,0,.4)}
+.nav-inner{height:100%;display:flex;align-items:center;gap:16px}
+.logo{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.logo-mark{display:flex;align-items:center;justify-content:center;width:28px;height:28px;
+  background:var(--a);color:#fff;font-size:11px;font-weight:700;border-radius:7px;font-family:var(--fm);letter-spacing:-.5px;
+  animation:logoPulse 4s ease-in-out infinite}
+.logo-mark.sm{width:22px;height:22px;font-size:9px;border-radius:5px;animation:none}
+@keyframes logoPulse{0%,100%{box-shadow:0 0 10px rgba(59,158,255,.3)}50%{box-shadow:0 0 22px rgba(59,158,255,.62)}}
+.logo-name{font-size:14px;font-weight:600;letter-spacing:-.3px}
+.nav-links{display:flex;align-items:center;gap:2px;flex:1}
+.nav-link{padding:5px 12px;border-radius:6px;font-size:14px;font-weight:500;color:var(--t2);transition:all .15s}
+.nav-link:hover,.nav-link.act{background:var(--hover);color:var(--t)}
+.nav-end{display:flex;align-items:center;gap:4px;margin-left:auto}
+.icon-btn{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:var(--r);color:var(--t2);transition:all .15s}
+.icon-btn:hover{background:var(--hover);color:var(--t)}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:80px 24px 40px;overflow:hidden}
+.hero-glow{position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:1200px;height:820px;
+  pointer-events:none;
+  background:radial-gradient(ellipse at 50% 32%,rgba(59,158,255,.12) 0%,rgba(139,92,246,.06) 38%,transparent 64%);
+  filter:blur(52px)}
+.hero-dots{position:absolute;inset:0;pointer-events:none;
+  background-image:radial-gradient(circle,rgba(214,235,253,.032) 1px,transparent 1px);
+  background-size:28px 28px}
+
+/* FLOATING SHAPES */
+.fwrap{position:absolute;pointer-events:none;will-change:transform}
+.finner{will-change:transform;transition:transform .15s ease-out}
+@keyframes float1{0%,100%{transform:translateY(0) rotate(0deg)}45%{transform:translateY(-18px) rotate(2.5deg)}70%{transform:translateY(10px) rotate(-1.5deg)}}
+@keyframes float2{0%,100%{transform:translateY(0) rotate(0deg)}38%{transform:translateY(-14px) rotate(-3deg)}65%{transform:translateY(12px) rotate(2deg)}}
+@keyframes float3{0%,100%{transform:translateY(0) rotate(0deg)}42%{transform:translateY(-20px) rotate(2deg)}72%{transform:translateY(8px) rotate(-2deg)}}
+@keyframes float4{0%,100%{transform:translateY(0) rotate(0deg)}35%{transform:translateY(-13px) rotate(-2.5deg)}62%{transform:translateY(14px) rotate(1.5deg)}}
+@keyframes float5{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-15px) rotate(1.5deg)}68%{transform:translateY(7px) rotate(-3deg)}}
+
+/* SVG DRAW LOOP — universal: stroke-dasharray 9999 always covers any path length */
+.dl{stroke-dasharray:9999;stroke-dashoffset:9999;opacity:0;
+  animation:loopDraw var(--dur,5s) var(--del,0s) ease-in-out infinite}
+@keyframes loopDraw{
+  0%,100%{stroke-dashoffset:9999;opacity:0}
+  8%{opacity:1}
+  42%{stroke-dashoffset:0;opacity:1}
+  60%{stroke-dashoffset:0;opacity:.8}
+  92%{opacity:0}
+}
+
+/* HERO CONTENT */
+.hero-inner{position:relative;display:flex;flex-direction:column;align-items:center;gap:28px;max-width:780px}
+.hero-inner > *{opacity:0;animation:fadeUp .7s ease both}
+.hero-inner > *:nth-child(1){animation-delay:.08s}
+.hero-inner > *:nth-child(2){animation-delay:.18s}
+.hero-inner > *:nth-child(3){animation-delay:.28s}
+.hero-inner > *:nth-child(4){animation-delay:.36s}
+.hero-inner > *:nth-child(5){animation-delay:.44s}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+
+.announce-badge{display:inline-flex;align-items:center;gap:8px;padding:6px 16px 6px 12px;
+  background:var(--a-bg);border:1px solid var(--a-bdr);border-radius:var(--rp);
+  font-size:13px;font-weight:500;color:var(--a);cursor:pointer;transition:background .15s}
+.announce-badge:hover{background:rgba(59,158,255,.16)}
+.adot{width:6px;height:6px;border-radius:50%;background:var(--a);flex-shrink:0;animation:pulseDot 2.2s ease infinite}
+@keyframes pulseDot{0%,100%{box-shadow:0 0 0 0 rgba(59,158,255,.55)}60%{box-shadow:0 0 0 6px rgba(59,158,255,0)}}
+
+.hero-title{font-size:clamp(48px,8.5vw,96px);font-weight:800;letter-spacing:-.046em;line-height:1.02;text-wrap:balance}
+.hero-title .acc{
+  background:linear-gradient(135deg,#3b9eff 0%,#a78bfa 45%,#3b9eff 100%);
+  background-size:200% 100%;
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  animation:gradShift 5s ease infinite}
+@keyframes gradShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.hero-title .dim{color:var(--t3)}
+.hero-desc{font-size:clamp(15px,1.8vw,18px);color:var(--t2);max-width:480px;line-height:1.72}
+.hero-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-flex;align-items:center;gap:7px;padding:12px 24px;border-radius:var(--r);
+  font-size:14px;font-weight:600;transition:all .22s;cursor:pointer;border:none;font-family:inherit;white-space:nowrap}
+.btn-primary{background:var(--a);color:#fff;box-shadow:0 4px 20px rgba(59,158,255,.28)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(59,158,255,.46)}
+.btn-outline{background:var(--card);color:var(--t);border:1px solid var(--b2)}
+.btn-outline:hover{background:var(--hover);transform:translateY(-2px);box-shadow:0 4px 18px rgba(0,0,0,.3)}
+.scroll-hint{display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--t3);
+  font-size:10px;letter-spacing:.1em;text-transform:uppercase;margin-top:8px}
+.sline{width:1px;height:36px;background:linear-gradient(to bottom,transparent,var(--a),transparent);
+  animation:slineAnim 2.2s ease-in-out infinite}
+@keyframes slineAnim{0%,100%{opacity:.3;transform:scaleY(.5)}55%{opacity:.9;transform:scaleY(1)}}
+
+/* MARQUEE */
+.marquee-shell{padding:18px 0;overflow:hidden;
+  mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marquee-track{display:flex;gap:40px;animation:slideMarq 32s linear infinite;width:max-content}
+.marquee-track:hover{animation-play-state:paused}
+.marquee-item{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:var(--t3);white-space:nowrap;transition:color .2s}
+.marquee-item:hover{color:var(--t2)}
+.marquee-dot{width:3px;height:3px;border-radius:50%;background:var(--t3)}
+@keyframes slideMarq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* STATS */
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:36px 0}
+.stat-card{background:var(--card);border:1px solid var(--b);border-radius:var(--rl);padding:28px 20px;
+  text-align:center;transition:all .28s cubic-bezier(.23,1,.32,1);cursor:default;position:relative;overflow:hidden}
+.stat-card::before{content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(59,158,255,.07),transparent 55%);opacity:0;transition:opacity .3s;pointer-events:none}
+.stat-card:hover::before{opacity:1}
+.stat-card:hover{transform:translateY(-5px) scale(1.01);border-color:var(--a-bdr);
+  box-shadow:0 18px 40px rgba(0,0,0,.4),0 0 0 1px var(--a-bdr)}
+.stat-val{font-size:38px;font-weight:800;letter-spacing:-.04em;font-family:var(--fm)}
+.stat-lbl{font-size:11px;color:var(--t2);margin-top:4px;font-weight:500;text-transform:uppercase;letter-spacing:.07em}
+
+/* SECTIONS */
+.section{padding:72px 0}
+.section-head{margin-bottom:44px}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--a);margin-bottom:10px}
+.section-title{font-size:clamp(24px,3.5vw,34px);font-weight:700;letter-spacing:-.025em}
+.section-sub{font-size:15px;color:var(--t2);margin-top:8px;max-width:420px;line-height:1.65}
+.sep{height:1px;background:linear-gradient(90deg,transparent,var(--b2),transparent)}
+
+/* TOPIC CARDS */
+.topics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.topic-card{padding:20px 18px 16px;background:var(--card);border:1px solid var(--b);border-radius:var(--rl);
+  display:block;position:relative;overflow:hidden;
+  transition:transform .28s cubic-bezier(.23,1,.32,1),box-shadow .28s,border-color .25s;will-change:transform;
+  cursor:pointer}
+.topic-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:var(--tc,var(--a));transform:scaleY(0);transition:transform .25s cubic-bezier(.23,1,.32,1);border-radius:0 2px 2px 0}
+.topic-card:hover::before{transform:scaleY(1)}
+.topic-card::after{content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 82% 15%,var(--tc-glow,transparent) 0%,transparent 58%);
+  opacity:0;transition:opacity .3s;pointer-events:none}
+.topic-card:hover::after{opacity:1}
+.tsvg{position:absolute;top:14px;right:14px;opacity:.2;transition:opacity .3s,transform .35s cubic-bezier(.23,1,.32,1)}
+.topic-card:hover .tsvg{opacity:.52;transform:scale(1.08) translateY(-2px)}
+.tdot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-bottom:10px}
+.tname{font-size:14px;font-weight:600;margin-bottom:4px}
+.tdesc{font-size:12px;color:var(--t2);line-height:1.56;margin-bottom:12px;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.tmeta{font-size:12px;color:var(--t3);display:flex;align-items:center;gap:5px}
+.tcnt{color:var(--t2);font-weight:600;font-family:var(--fm)}
+
+/* FEATURE CARDS */
+.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.feature-card{padding:26px;background:var(--card);border:1px solid var(--b);border-radius:var(--rl);
+  transition:transform .28s cubic-bezier(.23,1,.32,1),box-shadow .28s,border-color .25s;will-change:transform}
+.ficon{width:38px;height:38px;display:flex;align-items:center;justify-content:center;
+  background:var(--a-bg);border:1px solid var(--a-bdr);border-radius:10px;
+  font-size:15px;color:var(--a);margin-bottom:14px;font-family:var(--fm);
+  transition:transform .22s;flex-shrink:0}
+.feature-card:hover .ficon{transform:scale(1.12) rotate(5deg)}
+.fname{font-size:15px;font-weight:600;margin-bottom:6px}
+.fdesc{font-size:13px;color:var(--t2);line-height:1.65}
+
+/* CTA */
+.cta-block{background:var(--card);border:1px solid var(--b);border-radius:18px;padding:72px 48px;
+  text-align:center;position:relative;overflow:hidden}
+.cta-glow{position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(ellipse 70% 70% at 50% 0%,rgba(59,158,255,.11),transparent 65%)}
+.cta-glow2{position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(ellipse 50% 40% at 50% 100%,rgba(139,92,246,.07),transparent 65%)}
+.cta-title{font-size:clamp(26px,4vw,44px);font-weight:800;letter-spacing:-.038em;margin-bottom:12px;position:relative}
+.cta-desc{font-size:16px;color:var(--t2);margin-bottom:32px;position:relative}
+.cta-actions{display:flex;justify-content:center;gap:12px;position:relative}
+
+/* FOOTER */
+.footer{border-top:1px solid var(--b);padding:48px 0 32px;margin-top:40px}
+.footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:32px}
+.footer-logo{display:flex;align-items:center;gap:8px;margin-bottom:12px}
+.footer-bn{font-size:14px;font-weight:600}
+.footer-tag{font-size:13px;color:var(--t2);line-height:1.65;margin-bottom:14px;max-width:280px}
+.footer-chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{padding:3px 9px;background:var(--bg2);border:1px solid var(--b);border-radius:var(--rp);font-size:11px;color:var(--t2);font-weight:500}
+.fcol-title{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);margin-bottom:12px}
+.flinks{display:flex;flex-direction:column;gap:9px}
+.flink{font-size:13px;color:var(--t2);transition:color .15s}.flink:hover{color:var(--t)}
+.footer-btm{padding-top:20px;border-top:1px solid var(--b);display:flex;align-items:center;justify-content:space-between;font-size:12px;color:var(--t3)}
+.footer-gh{color:var(--t2);display:flex;transition:color .15s}.footer-gh:hover{color:var(--t)}
+
+/* ══════════════ THE SHAPE CODEX — OPEN BOOK ══════════════ */
+.codex-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+
+/* FLOATING STAGE */
+.ob-stage{display:flex;align-items:center;justify-content:center;
+  position:relative;min-height:360px;animation:obBob 6s ease-in-out infinite}
+@keyframes obBob{
+  0%,100%{transform:translateY(0) rotate(-.5deg)}
+  50%{transform:translateY(-14px) rotate(.5deg)}
+}
+.ob-glow{position:absolute;width:380px;height:380px;border-radius:50%;pointer-events:none;
+  background:radial-gradient(circle,rgba(139,92,246,.16) 0%,transparent 68%);
+  filter:blur(36px);top:50%;left:50%;transform:translate(-50%,-50%)}
+.ob-scene{perspective:1300px;position:relative;z-index:1}
+
+/* THE BOOK */
+.ob-book{
+  display:grid;grid-template-columns:204px 20px 204px;
+  position:relative;
+  transform:rotateX(16deg) rotateY(-10deg);
+  transform-style:preserve-3d;
+  border-radius:3px 6px 6px 3px;
+  box-shadow:0 50px 90px rgba(0,0,0,.6),0 20px 40px rgba(0,0,0,.35),
+    0 0 0 1px rgba(255,255,255,.03) inset;
+  animation:obAppear .9s .2s cubic-bezier(.23,1,.32,1) both;
+}
+@keyframes obAppear{
+  from{opacity:0;transform:rotateX(28deg) rotateY(-22deg) scale(.85)}
+  to{opacity:1;transform:rotateX(16deg) rotateY(-10deg) scale(1)}
+}
+
+/* PAGE SURFACES */
+.ob-left,.ob-right{height:286px;padding:22px 18px;position:relative;overflow:visible}
+.ob-left{
+  width:204px;
+  background:linear-gradient(104deg,#f3eed8 0%,#f8f4e6 60%,#f0ebe0 100%);
+  border-radius:3px 0 0 3px;
+  box-shadow:inset -8px 0 16px rgba(0,0,0,.1)}
+.ob-right{
+  width:204px;
+  background:linear-gradient(76deg,#f0ebe0 0%,#f8f4e6 40%,#f3eed8 100%);
+  border-radius:0 5px 5px 0;
+  box-shadow:inset 8px 0 16px rgba(0,0,0,.08)}
+
+/* SPINE */
+.ob-spine{
+  width:20px;height:286px;
+  background:linear-gradient(to right,#1a0434,#30065c,#1a0434);
+  box-shadow:inset 2px 0 3px rgba(255,255,255,.06),inset -2px 0 5px rgba(0,0,0,.4)}
+
+/* PAGE CONTENT TYPOGRAPHY */
+.ob-ph{font-size:6.5px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;
+  color:rgba(109,40,217,.65);margin-bottom:11px;padding-bottom:7px;
+  border-bottom:1.5px solid rgba(109,40,217,.18);font-family:var(--fm)}
+.ob-toc-row{display:flex;align-items:baseline;gap:5px;margin-bottom:6px}
+.ob-toc-n{font-size:7.5px;color:rgba(109,40,217,.8);font-family:var(--fm);font-weight:700;min-width:16px;flex-shrink:0}
+.ob-toc-t{font-size:8.5px;color:#1e0a38;font-weight:500;flex:1;line-height:1.2}
+.ob-toc-d{flex:1;border-bottom:1px dotted rgba(109,40,217,.2);margin:0 3px 2px}
+.ob-toc-p{font-size:7.5px;color:rgba(109,40,217,.45);font-family:var(--fm)}
+.ob-st{font-size:8px;font-weight:700;color:#1e0a38;letter-spacing:.05em;text-transform:uppercase;margin:10px 0 5px}
+.ob-body{font-size:8px;color:rgba(30,10,56,.6);line-height:1.56;margin-bottom:6px}
+.ob-formula-box{margin:9px 0;padding:9px 8px;border-radius:4px;text-align:center;
+  background:rgba(109,40,217,.08);border:1px solid rgba(109,40,217,.2)}
+.ob-fml{font-size:12px;font-family:var(--fm);color:#1e0a38;font-weight:700;line-height:1.7}
+.ob-fml-cap{font-size:6.5px;color:rgba(30,10,56,.42);margin-top:3px;font-family:var(--fm)}
+.ob-corner{position:absolute;bottom:7px;right:9px;width:18px;height:18px;
+  background:linear-gradient(225deg,rgba(109,40,217,.1) 38%,transparent 62%)}
+
+/* ── PAGE TURN ANIMATION ── */
+/* Overlay positioned absolute over the left page */
+.ob-flip-layer{
+  position:absolute;top:0;left:0;width:204px;height:286px;
+  transform-origin:right center;
+  transform-style:preserve-3d;
+  z-index:20;pointer-events:none;
+  animation:obFlip 12s 3s cubic-bezier(.645,.045,.355,.999) infinite}
+@keyframes obFlip{
+  0%,18%{transform:rotateY(0deg)}
+  42%,58%{transform:rotateY(-180deg)}
+  82%,100%{transform:rotateY(0deg)}
+}
+.ob-flip-front,.ob-flip-back{
+  position:absolute;inset:0;padding:22px 18px;
+  backface-visibility:hidden;-webkit-backface-visibility:hidden;
+  border-radius:3px 0 0 3px}
+.ob-flip-front{
+  background:linear-gradient(104deg,#f3eed8,#f8f4e6 60%,#f0ebe0);
+  box-shadow:inset -8px 0 16px rgba(0,0,0,.1),-2px 0 8px rgba(0,0,0,.06)}
+.ob-flip-back{
+  background:linear-gradient(104deg,#f0ebe0,#f8f4e6 40%,#f3eed8);
+  transform:rotateY(180deg);
+  box-shadow:inset -8px 0 16px rgba(0,0,0,.1)}
+/* Shadow that sweeps across during flip for realism */
+.ob-flip-front::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(to left,rgba(0,0,0,.12),transparent 60%);
+  border-radius:inherit;pointer-events:none}
+
+/* CODEX CONTENT SIDE */
+.codex-info{display:flex;flex-direction:column;gap:20px}
+.codex-vol-badge{display:inline-flex;align-items:center;gap:8px;padding:5px 12px;
+  background:rgba(139,92,246,.1);border:1px solid rgba(139,92,246,.26);border-radius:var(--rp);
+  font-size:11px;font-weight:600;color:#a78bfa;font-family:var(--fm);width:fit-content}
+.codex-main-title{font-size:clamp(28px,3.5vw,42px);font-weight:800;letter-spacing:-.038em;line-height:1.08}
+.codex-main-title .acc{color:#a78bfa}
+.codex-desc{font-size:14px;color:var(--t2);line-height:1.72;max-width:440px}
+.codex-rule{height:1px;background:linear-gradient(to right,rgba(139,92,246,.3),transparent)}
+.codex-ch-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--t3)}
+.codex-chapters{display:flex;flex-direction:column;gap:3px}
+.codex-ch{display:flex;align-items:center;gap:11px;padding:7px 10px;border-radius:8px;
+  border:1px solid transparent;transition:all .18s;cursor:default}
+.codex-ch:hover{background:rgba(139,92,246,.07);border-color:rgba(139,92,246,.18)}
+.codex-ch-num{font-size:10px;font-family:var(--fm);color:#7c3aed;font-weight:700;min-width:22px}
+.codex-ch-name{font-size:13px;color:var(--t2);font-weight:500;flex:1;transition:color .15s}
+.codex-ch:hover .codex-ch-name{color:var(--t)}
+.codex-ch-probs{font-size:10px;color:var(--t3);font-family:var(--fm)}
+.codex-stats-row{display:flex;gap:24px;flex-wrap:wrap}
+.codex-stat-v{font-size:24px;font-weight:800;font-family:var(--fm);letter-spacing:-.03em}
+.codex-stat-l{font-size:10px;color:var(--t3);text-transform:uppercase;letter-spacing:.07em;font-weight:500;margin-top:1px}
+.codex-actions{display:flex;gap:10px;flex-wrap:wrap}
+.btn-codex{display:inline-flex;align-items:center;gap:7px;padding:12px 22px;border-radius:var(--r);
+  font-size:14px;font-weight:600;cursor:pointer;border:none;font-family:inherit;white-space:nowrap;
+  background:linear-gradient(135deg,#7c3aed,#6d28d9);color:#fff;
+  box-shadow:0 4px 20px rgba(124,58,237,.32);transition:all .22s}
+.btn-codex:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(124,58,237,.48)}
+.btn-codex-out{display:inline-flex;align-items:center;gap:7px;padding:12px 22px;border-radius:var(--r);
+  font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;white-space:nowrap;
+  background:var(--card);color:var(--t2);border:1px solid var(--b2);transition:all .2s}
+.btn-codex-out:hover{color:var(--t);background:var(--hover);transform:translateY(-1px)}
+
+@media(max-width:960px){.codex-grid{grid-template-columns:1fr;gap:48px}}
+@media(max-width:620px){.ob-stage{display:none}}
+/* SCROLL REVEAL */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s cubic-bezier(.23,1,.32,1)}
+.reveal.in{opacity:1;transform:translateY(0)}
+.rd1{transition-delay:.07s}.rd2{transition-delay:.14s}.rd3{transition-delay:.21s}.rd4{transition-delay:.28s}
+
+/* RESPONSIVE */
+@media(max-width:960px){.topics-grid{grid-template-columns:repeat(2,1fr)}.features-grid{grid-template-columns:repeat(2,1fr)}.footer-inner{grid-template-columns:1fr 1fr}.stats-row{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.topics-grid{grid-template-columns:1fr}.features-grid{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr}.nav-links{display:none}.fwrap{display:none}.cta-block{padding:48px 24px}}
+</style>
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+<div id="cursor-glow"></div>
+<div id="root"></div>
+
+<script>
+/* BG PARTICLE CANVAS */
+(function(){
+  var c=document.getElementById('bg-canvas'),ctx=c.getContext('2d'),W,H,pts=[];
+  function resize(){W=c.width=innerWidth;H=c.height=innerHeight;pts=[];
+    var n=Math.min(60,Math.floor(W*H/14000));
+    for(var i=0;i<n;i++)pts.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.19,vy:(Math.random()-.5)*.19,r:Math.random()*1.4+.5,ph:Math.random()*Math.PI*2});
+  }
+  function ac(){return document.documentElement.getAttribute('data-theme')==='light'?'26,109,224':'59,158,255'}
+  function frame(ts){
+    ctx.clearRect(0,0,W,H);var col=ac();
+    pts.forEach(function(p){p.x+=p.vx;p.y+=p.vy;if(p.x<-60)p.x=W+60;if(p.x>W+60)p.x=-60;if(p.y<-60)p.y=H+60;if(p.y>H+60)p.y=-60;});
+    for(var i=0;i<pts.length;i++)for(var j=i+1;j<pts.length;j++){
+      var dx=pts[i].x-pts[j].x,dy=pts[i].y-pts[j].y,d=Math.sqrt(dx*dx+dy*dy);
+      if(d<145){ctx.beginPath();ctx.strokeStyle='rgba('+col+','+(1-d/145)*.06+')';ctx.lineWidth=.5;ctx.moveTo(pts[i].x,pts[i].y);ctx.lineTo(pts[j].x,pts[j].y);ctx.stroke();}
+    }
+    pts.forEach(function(p){var pv=.7+.3*Math.sin(ts*.0008+p.ph);ctx.beginPath();ctx.arc(p.x,p.y,p.r*pv,0,Math.PI*2);ctx.fillStyle='rgba('+col+','+.22*pv+')';ctx.fill();});
+    requestAnimationFrame(frame);
+  }
+  resize();window.addEventListener('resize',resize);requestAnimationFrame(frame);
+})();
+
+/* CURSOR GLOW + MOUSE PARALLAX + NAV SCROLL */
+(function(){
+  var g=document.getElementById('cursor-glow'),cx=-500,cy=-500,tx=-500,ty=-500;
+  document.addEventListener('mousemove',function(e){
+    tx=e.clientX;ty=e.clientY;
+    var px=(e.clientX/innerWidth-.5)*2,py=(e.clientY/innerHeight-.5)*2;
+    document.querySelectorAll('[data-d]').forEach(function(el){
+      var d=parseFloat(el.getAttribute('data-d'));
+      el.style.transform='translate('+(px*d*16)+'px,'+(py*d*10)+'px)';
+    });
+  });
+  (function anim(){cx+=(tx-cx)*.09;cy+=(ty-cy)*.09;g.style.left=cx+'px';g.style.top=cy+'px';requestAnimationFrame(anim);})();
+  window.addEventListener('scroll',function(){document.querySelector('.nav').classList.toggle('scrolled',scrollY>10);},{ passive:true });
+})();
+</script>
+
+<script type="text/babel">
+const {useState,useEffect,useRef,useCallback}=React;
+
+/* CSS animation props helper — uses large dasharray so it works on any path length */
+const A=(dur,del)=>({'--dur':dur+'s','--del':del+'s'});
+
+/* ══════════════ HERO FLOATING SVG SHAPES ══════════════ */
+const TreeSVG=({c='#34d399'})=>(
+  <svg viewBox="0 0 88 74" fill="none" width="88" height="74">
+    <line x1="44" y1="17" x2="23" y2="35" stroke={c} strokeWidth="1.2" opacity=".55" className="dl" style={A(5.5,.48)}/>
+    <line x1="44" y1="17" x2="65" y2="35" stroke={c} strokeWidth="1.2" opacity=".55" className="dl" style={A(5.5,.62)}/>
+    <line x1="17" y1="49" x2="8" y2="62" stroke={c} strokeWidth=".9" opacity=".3" className="dl" style={A(5.5,1.38)}/>
+    <line x1="27" y1="49" x2="36" y2="62" stroke={c} strokeWidth=".9" opacity=".3" className="dl" style={A(5.5,1.5)}/>
+    <line x1="61" y1="49" x2="52" y2="62" stroke={c} strokeWidth=".9" opacity=".3" className="dl" style={A(5.5,1.62)}/>
+    <line x1="71" y1="49" x2="80" y2="62" stroke={c} strokeWidth=".9" opacity=".3" className="dl" style={A(5.5,1.74)}/>
+    <circle cx="44" cy="10" r="8" stroke={c} strokeWidth="1.8" className="dl" style={A(5.5,0)}/>
+    <text x="44" y="13.5" textAnchor="middle" fill={c} fontSize="6" fontFamily="'JetBrains Mono',monospace" opacity=".75">n</text>
+    <circle cx="22" cy="42" r="7" stroke={c} strokeWidth="1.5" opacity=".8" className="dl" style={A(5.5,.88)}/>
+    <circle cx="66" cy="42" r="7" stroke={c} strokeWidth="1.5" opacity=".8" className="dl" style={A(5.5,1.0)}/>
+    <circle cx="5" cy="68" r="5" stroke={c} strokeWidth="1.2" opacity=".28" className="dl" style={A(5.5,1.78)}/>
+    <circle cx="39" cy="68" r="5" stroke={c} strokeWidth="1.2" opacity=".28" className="dl" style={A(5.5,1.9)}/>
+    <circle cx="49" cy="68" r="5" stroke={c} strokeWidth="1.2" opacity=".28" className="dl" style={A(5.5,2.02)}/>
+    <circle cx="83" cy="68" r="5" stroke={c} strokeWidth="1.2" opacity=".28" className="dl" style={A(5.5,2.14)}/>
+  </svg>
+);
+
+const GraphSVG=({c='#3b9eff'})=>(
+  <svg viewBox="0 0 100 90" fill="none" width="100" height="90">
+    <line x1="50" y1="10" x2="86" y2="36" stroke={c} strokeWidth="1" opacity=".48" className="dl" style={A(6,.3)}/>
+    <line x1="86" y1="36" x2="72" y2="76" stroke={c} strokeWidth="1" opacity=".48" className="dl" style={A(6,.56)}/>
+    <line x1="72" y1="76" x2="28" y2="76" stroke={c} strokeWidth="1" opacity=".48" className="dl" style={A(6,.82)}/>
+    <line x1="28" y1="76" x2="14" y2="36" stroke={c} strokeWidth="1" opacity=".48" className="dl" style={A(6,1.08)}/>
+    <line x1="14" y1="36" x2="50" y2="10" stroke={c} strokeWidth="1" opacity=".48" className="dl" style={A(6,1.34)}/>
+    <line x1="50" y1="10" x2="28" y2="76" stroke={c} strokeWidth=".7" opacity=".2" className="dl" style={A(6,1.6)}/>
+    <line x1="86" y1="36" x2="14" y2="36" stroke={c} strokeWidth=".7" opacity=".2" className="dl" style={A(6,1.82)}/>
+    <line x1="50" y1="10" x2="50" y2="47" stroke={c} strokeWidth=".7" opacity=".18" className="dl" style={A(6,2.0)}/>
+    <circle cx="50" cy="10" r="7" stroke={c} strokeWidth="1.6" className="dl" style={A(6,0)}/>
+    <circle cx="86" cy="36" r="7" stroke={c} strokeWidth="1.6" className="dl" style={A(6,.2)}/>
+    <circle cx="72" cy="76" r="7" stroke={c} strokeWidth="1.6" className="dl" style={A(6,.4)}/>
+    <circle cx="28" cy="76" r="7" stroke={c} strokeWidth="1.6" className="dl" style={A(6,.6)}/>
+    <circle cx="14" cy="36" r="7" stroke={c} strokeWidth="1.6" className="dl" style={A(6,.8)}/>
+    <circle cx="50" cy="50" r="5" stroke={c} strokeWidth="1.2" opacity=".52" className="dl" style={A(6,2.1)}/>
+  </svg>
+);
+
+const LinkedListSVG=({c='#f472b6'})=>(
+  <svg viewBox="0 0 130 32" fill="none" width="130" height="32">
+    {[0,1,2].map(i=>(
+      <g key={i}>
+        <rect x={2+i*32} y="5" width="25" height="22" rx="4" stroke={c} strokeWidth="1.4" opacity={1-i*.1} className="dl" style={A(5.5,i*.38)}/>
+        <text x={14.5+i*32} y="18.5" textAnchor="middle" fill={c} fontSize="7.5" fontFamily="'JetBrains Mono',monospace" opacity=".82">{i+1}</text>
+        <line x1={27+i*32} y1="16" x2={34+i*32} y2="16" stroke={c} strokeWidth="1.1" className="dl" style={A(5.5,.28+i*.38)}/>
+        <polyline points={`${31+i*32},12.5 ${35+i*32},16 ${31+i*32},19.5`} stroke={c} strokeWidth="1.1" fill="none" strokeLinejoin="round" className="dl" style={A(5.5,.38+i*.38)}/>
+      </g>
+    ))}
+    <rect x="98" y="5" width="25" height="22" rx="4" stroke={c} strokeWidth="1.3" opacity=".45" className="dl" style={A(5.5,1.14)}/>
+    <line x1="104" y1="22" x2="118" y2="10" stroke={c} strokeWidth="1" opacity=".38"/>
+    <text x="111" y="14" textAnchor="middle" fill={c} fontSize="5.5" fontFamily="'JetBrains Mono',monospace" opacity=".38">null</text>
+  </svg>
+);
+
+const DPGridSVG=({c='#a78bfa'})=>{
+  const delays=[0,.24,.46,.18,.52,.78,.32,.7,.96];
+  return(
+    <svg viewBox="0 0 76 76" fill="none" width="76" height="76">
+      {Array.from({length:9},(_,i)=>(
+        <rect key={i} x={5+(i%3)*24} y={5+Math.floor(i/3)*24} width="20" height="20" rx="3"
+          stroke={c} strokeWidth="1.4" className="dl" style={A(5.5,delays[i])}/>
+      ))}
+      <rect x="5" y="5" width="20" height="20" rx="3" fill={c} opacity=".14"/>
+      <rect x="29" y="29" width="20" height="20" rx="3" fill={c} opacity=".14"/>
+      <rect x="53" y="53" width="20" height="20" rx="3" fill={c} opacity=".14"/>
+      <polyline points="15,28 15,29 25,29" stroke={c} strokeWidth=".9" opacity=".38"/>
+      <polyline points="28,15 29,15 29,25" stroke={c} strokeWidth=".9" opacity=".38"/>
+    </svg>
+  );
+};
+
+const StackSVG=({c='#fb923c'})=>(
+  <svg viewBox="0 0 52 86" fill="none" width="52" height="86">
+    <line x1="6" y1="16" x2="6" y2="82" stroke={c} strokeWidth="1.1" opacity=".38"/>
+    <line x1="46" y1="16" x2="46" y2="82" stroke={c} strokeWidth="1.1" opacity=".38"/>
+    <line x1="6" y1="82" x2="46" y2="82" stroke={c} strokeWidth="1.6" opacity=".52"/>
+    {[0,1,2,3].map(i=>(
+      <g key={i}>
+        <rect x="8" y={62-i*18} width="36" height="16" rx="3" stroke={c} strokeWidth="1.4" opacity={.42+i*.16} className="dl" style={A(5.5,i*.28)}/>
+        <text x="26" y={73-i*18} textAnchor="middle" fill={c} fontSize="7" fontFamily="'JetBrains Mono',monospace" opacity={.42+i*.16}>{i+1}</text>
+      </g>
+    ))}
+    <line x1="26" y1="1" x2="26" y2="8" stroke={c} strokeWidth="1.2" opacity=".65" className="dl" style={A(5.5,1.24)}/>
+    <polyline points="22,7 26,1 30,7" stroke={c} strokeWidth="1.2" fill="none" opacity=".65" className="dl" style={A(5.5,1.36)}/>
+  </svg>
+);
+
+/* ══════════════ MINI TOPIC SVGs (one per topic card) ══════════════ */
+const M={
+  math:({c})=>(
+    <svg viewBox="0 0 52 52" fill="none" width="50" height="50">
+      <circle cx="26" cy="26" r="21" stroke={c} strokeWidth="1.2" className="dl" style={A(4.5,0)}/>
+      <polygon points="26,9 40,33 12,33" stroke={c} strokeWidth="1.1" fill="none" className="dl" style={A(4.5,.42)}/>
+      <circle cx="26" cy="26" r="4.5" stroke={c} strokeWidth="1" opacity=".48" className="dl" style={A(4.5,1.0)}/>
+    </svg>
+  ),
+  dp:({c})=>{
+    const d=[0,.22,.44,.16,.48,.74,.3,.62,.9];
+    return(
+      <svg viewBox="0 0 52 52" fill="none" width="50" height="50">
+        {Array.from({length:9},(_,i)=><rect key={i} x={4+(i%3)*16} y={4+Math.floor(i/3)*16} width="13" height="13" rx="2" stroke={c} strokeWidth="1" className="dl" style={A(4,d[i])}/>)}
+        <rect x="4" y="4" width="13" height="13" rx="2" fill={c} opacity=".14"/>
+        <rect x="20" y="20" width="13" height="13" rx="2" fill={c} opacity=".14"/>
+        <rect x="36" y="36" width="13" height="13" rx="2" fill={c} opacity=".14"/>
+      </svg>
+    );
+  },
+  bs:({c})=>(
+    <svg viewBox="0 0 58 28" fill="none" width="56" height="28">
+      {[0,1,2,3,4,5,6].map(i=>(
+        <rect key={i} x={2+i*8} y="4" width="7" height="20" rx="1.5" stroke={c}
+          strokeWidth={i===3?1.5:1} opacity={i===3?1:.36} fill={i===3?c+'1a':'none'}
+          className="dl" style={A(4,i*.1)}/>
+      ))}
+      <line x1="25.5" y1="0" x2="25.5" y2="4" stroke={c} strokeWidth="1.1" opacity=".7"/>
+      <polyline points="22.5,3.5 25.5,0 28.5,3.5" stroke={c} strokeWidth="1" fill="none" opacity=".7"/>
+    </svg>
+  ),
+  str:({c})=>(
+    <svg viewBox="0 0 58 28" fill="none" width="56" height="28">
+      {['a','b','c','a','b'].map((ch,i)=>(
+        <g key={i}>
+          <rect x={2+i*10} y="4" width="9" height="20" rx="2" stroke={c}
+            strokeWidth={i>=1&&i<=3?1.4:1} opacity={i>=1&&i<=3?1:.32}
+            fill={i>=1&&i<=3?c+'14':'none'} className="dl" style={A(4,i*.12)}/>
+          <text x={6.5+i*10} y="17.5" textAnchor="middle" fill={c} fontSize="6.5" fontFamily="'JetBrains Mono',monospace" opacity=".8">{ch}</text>
+        </g>
+      ))}
+      <rect x="11" y="2" width="30" height="24" rx="2" stroke={c} strokeWidth="1.2" opacity=".42" fill="none"/>
+    </svg>
+  ),
+  bit:({c})=>{
+    const bits=[1,0,1,1,0,1,0,0];
+    return(
+      <svg viewBox="0 0 68 22" fill="none" width="66" height="22">
+        {bits.map((b,i)=>(
+          <g key={i}>
+            <rect x={2+i*8} y="1" width="7" height="20" rx="1.5" stroke={c} strokeWidth="1" opacity={b?.86:.35} className="dl" style={A(4,i*.1)}/>
+            <text x={5.5+i*8} y="14.5" textAnchor="middle" fill={c} fontSize="7.5" fontFamily="'JetBrains Mono',monospace" opacity={b?.86:.32}>{b}</text>
+          </g>
+        ))}
+      </svg>
+    );
+  },
+  tree:({c})=>(
+    <svg viewBox="0 0 60 52" fill="none" width="58" height="52">
+      <line x1="30" y1="12" x2="16" y2="26" stroke={c} strokeWidth="1" opacity=".48" className="dl" style={A(4,.3)}/>
+      <line x1="30" y1="12" x2="44" y2="26" stroke={c} strokeWidth="1" opacity=".48" className="dl" style={A(4,.42)}/>
+      <line x1="14" y1="33" x2="7" y2="45" stroke={c} strokeWidth=".9" opacity=".32" className="dl" style={A(4,.78)}/>
+      <line x1="18" y1="33" x2="25" y2="45" stroke={c} strokeWidth=".9" opacity=".32" className="dl" style={A(4,.88)}/>
+      <line x1="42" y1="33" x2="35" y2="45" stroke={c} strokeWidth=".9" opacity=".32" className="dl" style={A(4,.98)}/>
+      <line x1="46" y1="33" x2="53" y2="45" stroke={c} strokeWidth=".9" opacity=".32" className="dl" style={A(4,1.08)}/>
+      <circle cx="30" cy="7" r="6" stroke={c} strokeWidth="1.5" className="dl" style={A(4,0)}/>
+      <circle cx="14" cy="30" r="5" stroke={c} strokeWidth="1.3" opacity=".8" className="dl" style={A(4,.54)}/>
+      <circle cx="46" cy="30" r="5" stroke={c} strokeWidth="1.3" opacity=".8" className="dl" style={A(4,.64)}/>
+      <circle cx="5" cy="49" r="4" stroke={c} strokeWidth="1" opacity=".35" className="dl" style={A(4,1.1)}/>
+      <circle cx="27" cy="49" r="4" stroke={c} strokeWidth="1" opacity=".35"/>
+      <circle cx="33" cy="49" r="4" stroke={c} strokeWidth="1" opacity=".35"/>
+      <circle cx="55" cy="49" r="4" stroke={c} strokeWidth="1" opacity=".35"/>
+    </svg>
+  ),
+  graph:({c})=>(
+    <svg viewBox="0 0 56 52" fill="none" width="54" height="52">
+      <line x1="28" y1="8" x2="48" y2="22" stroke={c} strokeWidth="1" opacity=".44" className="dl" style={A(4,.2)}/>
+      <line x1="48" y1="22" x2="40" y2="44" stroke={c} strokeWidth="1" opacity=".44" className="dl" style={A(4,.42)}/>
+      <line x1="40" y1="44" x2="16" y2="44" stroke={c} strokeWidth="1" opacity=".44" className="dl" style={A(4,.64)}/>
+      <line x1="16" y1="44" x2="8" y2="22" stroke={c} strokeWidth="1" opacity=".44" className="dl" style={A(4,.86)}/>
+      <line x1="8" y1="22" x2="28" y2="8" stroke={c} strokeWidth="1" opacity=".44" className="dl" style={A(4,1.08)}/>
+      <line x1="28" y1="8" x2="16" y2="44" stroke={c} strokeWidth=".8" opacity=".2" className="dl" style={A(4,1.28)}/>
+      <circle cx="28" cy="8" r="6" stroke={c} strokeWidth="1.4" className="dl" style={A(4,0)}/>
+      <circle cx="48" cy="22" r="5" stroke={c} strokeWidth="1.2" opacity=".85" className="dl" style={A(4,.2)}/>
+      <circle cx="40" cy="44" r="5" stroke={c} strokeWidth="1.2" opacity=".85" className="dl" style={A(4,.4)}/>
+      <circle cx="16" cy="44" r="5" stroke={c} strokeWidth="1.2" opacity=".85" className="dl" style={A(4,.6)}/>
+      <circle cx="8" cy="22" r="5" stroke={c} strokeWidth="1.2" opacity=".85" className="dl" style={A(4,.8)}/>
+    </svg>
+  ),
+  ll:({c})=>(
+    <svg viewBox="0 0 70 24" fill="none" width="68" height="24">
+      {[0,1,2,3].map(i=>(
+        <g key={i}>
+          <rect x={2+i*17} y="3" width="13" height="18" rx="3" stroke={c} strokeWidth="1.3" opacity={1-i*.1} className="dl" style={A(4,i*.3)}/>
+          <text x={8.5+i*17} y="14.5" textAnchor="middle" fill={c} fontSize="6.5" fontFamily="'JetBrains Mono',monospace" opacity=".8">{i+1}</text>
+          {i<3&&<polyline key={'a'+i} points={`${15+i*17},12 ${18+i*17},12 ${16+i*17},10 ${18+i*17},12 ${16+i*17},14`} stroke={c} strokeWidth="1" fill="none" opacity=".58" className="dl" style={A(4,.22+i*.3)}/>}
+        </g>
+      ))}
+    </svg>
+  ),
+  adv:({c})=>(
+    <svg viewBox="0 0 66 54" fill="none" width="64" height="54">
+      <rect x="23" y="2" width="20" height="12" rx="2" stroke={c} strokeWidth="1.3" className="dl" style={A(4,0)}/>
+      <text x="33" y="10.5" textAnchor="middle" fill={c} fontSize="5.5" fontFamily="'JetBrains Mono',monospace" opacity=".72">0–7</text>
+      <line x1="29" y1="14" x2="18" y2="24" stroke={c} strokeWidth="1" opacity=".48" className="dl" style={A(4,.4)}/>
+      <line x1="37" y1="14" x2="48" y2="24" stroke={c} strokeWidth="1" opacity=".48" className="dl" style={A(4,.5)}/>
+      <rect x="6" y="24" width="22" height="12" rx="2" stroke={c} strokeWidth="1.1" opacity=".78" className="dl" style={A(4,.56)}/>
+      <text x="17" y="32.5" textAnchor="middle" fill={c} fontSize="5" fontFamily="'JetBrains Mono',monospace" opacity=".62">0–3</text>
+      <rect x="38" y="24" width="22" height="12" rx="2" stroke={c} strokeWidth="1.1" opacity=".78" className="dl" style={A(4,.62)}/>
+      <text x="49" y="32.5" textAnchor="middle" fill={c} fontSize="5" fontFamily="'JetBrains Mono',monospace" opacity=".62">4–7</text>
+      {[0,1,2,3,4,5,6,7].map(i=>(
+        <rect key={i} x={2+i*8} y="46" width="6" height="6" rx="1" stroke={c} strokeWidth="1" opacity=".26" className="dl" style={A(4,.9+i*.06)}/>
+      ))}
+    </svg>
+  ),
+  sw:({c})=>(
+    <svg viewBox="0 0 64 26" fill="none" width="62" height="26">
+      {[0,1,2,3,4,5,6].map(i=>(
+        <rect key={i} x={2+i*9} y="4" width="7" height="18" rx="1.5" stroke={c}
+          strokeWidth={i>=2&&i<=4?1.4:1} opacity={i>=2&&i<=4?1:.33}
+          fill={i>=2&&i<=4?c+'14':'none'} className="dl" style={A(4,i*.1)}/>
+      ))}
+      <rect x="20" y="2" width="27" height="22" rx="2" stroke={c} strokeWidth="1.3" fill="none" className="dl" style={A(4,.82)}/>
+    </svg>
+  ),
+  heap:({c})=>(
+    <svg viewBox="0 0 64 52" fill="none" width="62" height="52">
+      <circle cx="32" cy="8" r="7" stroke={c} strokeWidth="1.5" className="dl" style={A(4,0)}/>
+      <text x="32" y="11.5" textAnchor="middle" fill={c} fontSize="6.5" fontFamily="'JetBrains Mono',monospace" opacity=".82">1</text>
+      <line x1="26" y1="14" x2="18" y2="26" stroke={c} strokeWidth="1" opacity=".48" className="dl" style={A(4,.42)}/>
+      <line x1="38" y1="14" x2="46" y2="26" stroke={c} strokeWidth="1" opacity=".48" className="dl" style={A(4,.52)}/>
+      <circle cx="16" cy="32" r="6" stroke={c} strokeWidth="1.3" opacity=".78" className="dl" style={A(4,.58)}/>
+      <text x="16" y="35.5" textAnchor="middle" fill={c} fontSize="6" fontFamily="'JetBrains Mono',monospace" opacity=".68">3</text>
+      <circle cx="48" cy="32" r="6" stroke={c} strokeWidth="1.3" opacity=".78" className="dl" style={A(4,.68)}/>
+      <text x="48" y="35.5" textAnchor="middle" fill={c} fontSize="6" fontFamily="'JetBrains Mono',monospace" opacity=".68">5</text>
+      <line x1="11" y1="37" x2="6" y2="46" stroke={c} strokeWidth=".9" opacity=".32"/>
+      <line x1="21" y1="37" x2="26" y2="46" stroke={c} strokeWidth=".9" opacity=".32"/>
+      <line x1="43" y1="37" x2="38" y2="46" stroke={c} strokeWidth=".9" opacity=".32"/>
+      <line x1="53" y1="37" x2="58" y2="46" stroke={c} strokeWidth=".9" opacity=".32"/>
+      <circle cx="4" cy="50" r="4" stroke={c} strokeWidth="1" opacity=".26" className="dl" style={A(4,1.0)}/>
+      <circle cx="28" cy="50" r="4" stroke={c} strokeWidth="1" opacity=".26"/>
+      <circle cx="36" cy="50" r="4" stroke={c} strokeWidth="1" opacity=".26"/>
+      <circle cx="60" cy="50" r="4" stroke={c} strokeWidth="1" opacity=".26"/>
+    </svg>
+  ),
+  mat:({c})=>{
+    const cells=[];
+    for(let i=0;i<4;i++)for(let j=0;j<4;j++)cells.push(
+      <rect key={i*4+j} x={2+j*13} y={2+i*13} width="11" height="11" rx="1.5"
+        stroke={c} strokeWidth="1" opacity={.32+(i+j)*.045} className="dl" style={A(4,(i+j)*.1)}/>
+    );
+    return(
+      <svg viewBox="0 0 56 56" fill="none" width="54" height="54">
+        {cells}
+        <polyline points="2,2 54,2 54,54 2,54 2,15 41,15 41,41 15,41 15,28"
+          stroke={c} strokeWidth="1.1" fill="none" opacity=".32" className="dl" style={A(4.5,1.2)}/>
+      </svg>
+    );
+  },
+  bt:({c})=>(
+    <svg viewBox="0 0 60 54" fill="none" width="58" height="54">
+      <circle cx="30" cy="7" r="6" stroke={c} strokeWidth="1.4" className="dl" style={A(4,0)}/>
+      <line x1="25" y1="12" x2="14" y2="25" stroke={c} strokeWidth="1" opacity=".58" className="dl" style={A(4,.3)}/>
+      <line x1="35" y1="12" x2="46" y2="25" stroke={c} strokeWidth="1" opacity=".58" className="dl" style={A(4,.42)}/>
+      <circle cx="12" cy="29" r="5" stroke={c} strokeWidth="1.2" opacity=".78" className="dl" style={A(4,.52)}/>
+      <circle cx="48" cy="29" r="5" stroke={c} strokeWidth="1.2" opacity=".78" className="dl" style={A(4,.62)}/>
+      <line x1="8" y1="34" x2="4" y2="45" stroke={c} strokeWidth=".9" opacity=".38" className="dl" style={A(4,.8)}/>
+      <line x1="16" y1="34" x2="20" y2="45" stroke={c} strokeWidth=".9" opacity=".38" className="dl" style={A(4,.86)}/>
+      <circle cx="3" cy="49" r="4" stroke={c} strokeWidth="1" opacity=".28"/>
+      <circle cx="21" cy="49" r="4" stroke={c} strokeWidth="1" opacity=".28"/>
+      <line x1="37" y1="41" x2="43" y2="48" stroke={c} strokeWidth="1.4" opacity=".62"/>
+      <line x1="43" y1="41" x2="37" y2="48" stroke={c} strokeWidth="1.4" opacity=".62"/>
+      <line x1="53" y1="41" x2="59" y2="48" stroke={c} strokeWidth="1.4" opacity=".62"/>
+      <line x1="59" y1="41" x2="53" y2="48" stroke={c} strokeWidth="1.4" opacity=".62"/>
+    </svg>
+  ),
+  trie:({c})=>(
+    <svg viewBox="0 0 64 56" fill="none" width="62" height="56">
+      <circle cx="32" cy="6" r="5" stroke={c} strokeWidth="1.4" className="dl" style={A(4,0)}/>
+      <text x="32" y="8.5" textAnchor="middle" fill={c} fontSize="5" fontFamily="'JetBrains Mono',monospace" opacity=".78">*</text>
+      <line x1="28" y1="11" x2="14" y2="22" stroke={c} strokeWidth="1" opacity=".48" className="dl" style={A(4,.32)}/>
+      <line x1="32" y1="11" x2="32" y2="22" stroke={c} strokeWidth="1" opacity=".48" className="dl" style={A(4,.42)}/>
+      <line x1="36" y1="11" x2="50" y2="22" stroke={c} strokeWidth="1" opacity=".48" className="dl" style={A(4,.52)}/>
+      <circle cx="12" cy="26" r="5" stroke={c} strokeWidth="1.2" opacity=".78" className="dl" style={A(4,.56)}/>
+      <text x="12" y="28.5" textAnchor="middle" fill={c} fontSize="5" fontFamily="'JetBrains Mono',monospace" opacity=".72">a</text>
+      <circle cx="32" cy="26" r="5" stroke={c} strokeWidth="1.2" opacity=".78" className="dl" style={A(4,.66)}/>
+      <text x="32" y="28.5" textAnchor="middle" fill={c} fontSize="5" fontFamily="'JetBrains Mono',monospace" opacity=".72">b</text>
+      <circle cx="52" cy="26" r="5" stroke={c} strokeWidth="1.2" opacity=".78" className="dl" style={A(4,.76)}/>
+      <text x="52" y="28.5" textAnchor="middle" fill={c} fontSize="5" fontFamily="'JetBrains Mono',monospace" opacity=".72">c</text>
+      <line x1="9" y1="31" x2="5" y2="42" stroke={c} strokeWidth=".9" opacity=".32" className="dl" style={A(4,.98)}/>
+      <line x1="15" y1="31" x2="19" y2="42" stroke={c} strokeWidth=".9" opacity=".32" className="dl" style={A(4,1.04)}/>
+      <line x1="29" y1="31" x2="25" y2="42" stroke={c} strokeWidth=".9" opacity=".32" className="dl" style={A(4,1.1)}/>
+      <line x1="35" y1="31" x2="39" y2="42" stroke={c} strokeWidth=".9" opacity=".32" className="dl" style={A(4,1.16)}/>
+      <circle cx="4" cy="47" r="4" stroke={c} strokeWidth="1" opacity=".26"/>
+      <circle cx="20" cy="47" r="4" stroke={c} strokeWidth="1" opacity=".26"/>
+      <circle cx="24" cy="47" r="4" stroke={c} strokeWidth="1" opacity=".26"/>
+      <circle cx="40" cy="47" r="4" stroke={c} strokeWidth="1" opacity=".26"/>
+    </svg>
+  ),
+};
+
+/* ══════════════ DATA ══════════════ */
+const TOPICS=[
+  {id:'math',c:'#7c3aed',name:'Math',              desc:'Number theory, combinatorics, geometry, probability',   count:'9,632',plats:31},
+  {id:'dp',  c:'#0891b2',name:'Dynamic Programming',desc:'Knapsack, LIS, LCS, tree DP, digit DP, DP on graphs',  count:'4,313',plats:30},
+  {id:'bs',  c:'#2563eb',name:'Binary Search',      desc:'Classic BS, BS on answer, ternary search, bitonic',    count:'3,709',plats:26},
+  {id:'str', c:'#ea580c',name:'String',             desc:'KMP, Z-algo, suffix array, palindromes, pattern match',count:'3,426',plats:36},
+  {id:'bit', c:'#ca8a04',name:'Bit Manipulation',   desc:'XOR tricks, bitmask DP, subsets, bit hacks, gray code',count:'2,868',plats:28},
+  {id:'tree',c:'#16a34a',name:'Tree',               desc:'Binary tree, BST, traversal, LCA, diameter, n-ary',   count:'2,714',plats:25},
+  {id:'graph',c:'#0d9488',name:'Graph',             desc:'BFS, DFS, Dijkstra, MST, topological sort, SCC, flow',count:'1,290',plats:24},
+  {id:'ll',  c:'#db2777',name:'Linked List',        desc:'Cycle detection, merge, reverse, slow/fast pointers',  count:'1,135',plats:20},
+  {id:'adv', c:'#6d28d9',name:'Advanced Tree',      desc:"Fenwick, segment tree, sqrt decomp, Mo's algo, treap",count:'924',  plats:24},
+  {id:'sw',  c:'#d97706',name:'Sliding Window',     desc:'Fixed/variable size windows, deque optimization',      count:'610',  plats:37},
+  {id:'heap',c:'#dc2626',name:'Heap',               desc:'Min/max heap, top K, median, merge K sorted, Huffman',count:'496',  plats:29},
+  {id:'mat', c:'#64748b',name:'Shape / Matrix',     desc:'Matrix traversal, rotation, spiral, 2D arrays, grids',count:'331',  plats:14},
+  {id:'bt',  c:'#65a30d',name:'Backtracking',       desc:'Permutations, combinations, subsets, N-queens, SAT',  count:'325',  plats:18},
+  {id:'trie',c:'#0284c7',name:'Trie',               desc:'Prefix tree, dictionary, auto-complete, XOR max pair',count:'158',  plats:17},
+];
+
+const FEATURES=[
+  {icon:'⌕',label:'Explore Problems',    desc:'38,000+ problems across 50+ platforms. Filter by difficulty, platform, topic, and rating range.'},
+  {icon:'◈',label:'Learn Patterns',      desc:'170 chapters of pattern-based learning. Brute force first, then the insight, then optimal solution.'},
+  {icon:'▦',label:'Curated Collections', desc:'14 core topics: DP, Graphs, Trees, Binary Search, Sliding Window, and more. Practice systematically.'},
+  {icon:'⚡',label:'Instant Search',      desc:'Full-text search across problem names, concepts, topics, and platforms. Find what you need instantly.'},
+  {icon:'◎',label:'Track Progress',      desc:'Mark problems as solved, track per-topic completion. Save personal collections — no account needed.'},
+  {icon:'✓',label:'Deduplicated',        desc:'Every problem carefully deduplicated across platforms. No more solving the same problem twice.'},
+];
+
+const PLATFORMS=['LeetCode','Codeforces','AtCoder','GeeksforGeeks','CSES','Baekjoon','SPOJ','UVa','HackerRank','CodeChef','Kattis','TopCoder'];
+
+/* ══════════════ HOOKS ══════════════ */
+function use3DTilt(){
+  const ref=useRef(null);
+  const onMove=useCallback(e=>{
+    const el=ref.current;if(!el)return;
+    const r=el.getBoundingClientRect();
+    const x=((e.clientX-r.left)/r.width-.5)*2;
+    const y=((e.clientY-r.top)/r.height-.5)*2;
+    const color=el.dataset.tc||'rgba(59,158,255,0.3)';
+    el.style.transform=`perspective(560px) rotateX(${-y*6}deg) rotateY(${x*4.5}deg) translateZ(8px) scale(1.015)`;
+    el.style.boxShadow=`${-x*12}px ${6+y*4}px 32px rgba(0,0,0,.44),0 0 0 1px ${color}44`;
+  },[]);
+  const onLeave=useCallback(()=>{
+    const el=ref.current;if(!el)return;
+    el.style.transform='';el.style.boxShadow='';
+  },[]);
+  return{ref,onMouseMove:onMove,onMouseLeave:onLeave};
+}
+
+function useCountUp(target,dur=1600){
+  const[val,setVal]=useState(0);
+  const ref=useRef(null);
+  const done=useRef(false);
+  useEffect(()=>{
+    const io=new IntersectionObserver(([e])=>{
+      if(!e.isIntersecting||done.current)return;
+      done.current=true;io.disconnect();
+      const t0=performance.now();
+      const tick=now=>{const t=Math.min((now-t0)/dur,1),ease=1-(1-t)**3;setVal(Math.round(ease*target));if(t<1)requestAnimationFrame(tick);};
+      requestAnimationFrame(tick);
+    },{threshold:.5});
+    if(ref.current)io.observe(ref.current);
+    return()=>io.disconnect();
+  },[target,dur]);
+  return{val,ref};
+}
+
+/* ══════════════ ICONS ══════════════ */
+const GH=()=><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.164 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.343-3.369-1.343-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>;
+const Sun=()=><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>;
+const Moon=()=><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>;
+
+/* ══════════════ COMPONENTS ══════════════ */
+function Nav({dark,setDark}){
+  return(
+    <nav className="nav">
+      <div className="nav-inner w">
+        <a href="Landing v2.html" className="logo">
+          <span className="logo-mark">fx</span>
+          <span className="logo-name">DSA Mastery</span>
+        </a>
+        <div className="nav-links">
+          <a href="Learn.html" className="nav-link">Learn</a>
+          <a href="Explore v2.html" className="nav-link">Explore</a>
+          <a href="#" className="nav-link">Patterns</a>
+        </div>
+        <div className="nav-end">
+          <a href="https://github.com/rashidtvmr/dsa-inventory" className="icon-btn" target="_blank" rel="noreferrer"><GH/></a>
+          <button className="icon-btn" onClick={()=>setDark(d=>!d)} title="Toggle theme">{dark?<Sun/>:<Moon/>}</button>
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+function Hero(){
+  const shapes=[
+    {id:'tree', Comp:TreeSVG,       c:'#34d399',anim:'float1',dur:13,del:0, depth:.9, style:{top:'16%',left:'5%'},  op:.3},
+    {id:'graph',Comp:GraphSVG,      c:'#3b9eff',anim:'float2',dur:17,del:2, depth:.6, style:{top:'13%',right:'6%'}, op:.25},
+    {id:'ll',   Comp:LinkedListSVG, c:'#f472b6',anim:'float3',dur:11,del:1, depth:1.0,style:{top:'54%',left:'2%'},  op:.27},
+    {id:'dp',   Comp:DPGridSVG,     c:'#a78bfa',anim:'float4',dur:15,del:3, depth:.7, style:{top:'58%',right:'4%'}, op:.22},
+    {id:'stk',  Comp:StackSVG,      c:'#fb923c',anim:'float5',dur:12,del:5, depth:.5, style:{bottom:'12%',left:'43%'},op:.2},
+  ];
+  return(
+    <section className="hero">
+      <div className="hero-glow"/>
+      <div className="hero-dots"/>
+      {shapes.map(s=>(
+        <div key={s.id} className="fwrap" style={{...s.style,animation:`${s.anim} ${s.dur}s ${s.del}s ease-in-out infinite`,opacity:s.op}}>
+          <div className="finner" data-d={s.depth}>
+            {React.createElement(s.Comp,{c:s.c})}
+          </div>
+        </div>
+      ))}
+      <div className="w hero-inner">
+        <a href="Explore v2.html" className="announce-badge">
+          <span className="adot"/>
+          Now with 38,000+ problems
+          <span style={{opacity:.5,marginLeft:3}}>→</span>
+        </a>
+        <h1 className="hero-title">
+          Master <span className="acc">DSA.</span><br/>
+          <span className="dim">One pattern at a time.</span>
+        </h1>
+        <p className="hero-desc">Curated, deduplicated problems from 50+ platforms. Organized by topic, tagged by concept, ready for practice.</p>
+        <div className="hero-actions">
+          <a href="Learn.html" className="btn btn-primary">Start Learning →</a>
+          <a href="Explore v2.html" className="btn btn-outline">Explore Problems</a>
+        </div>
+        <div className="scroll-hint">
+          <div className="sline"/>
+          <span>scroll</span>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Marquee(){
+  const items=[...PLATFORMS,...PLATFORMS];
+  return(
+    <div className="marquee-shell">
+      <div className="marquee-track">
+        {items.map((p,i)=><span key={i} className="marquee-item"><span className="marquee-dot"/>{p}</span>)}
+      </div>
+    </div>
+  );
+}
+
+function StatCard({target,suffix,label,delay}){
+  const{val,ref}=useCountUp(target);
+  const display=target>=10000?(val>=1000?(val/1000).toFixed(0)+'k':val):val;
+  return(
+    <div className="stat-card reveal" ref={ref} style={{transitionDelay:delay+'s'}}>
+      <div className="stat-val">{display}{suffix}</div>
+      <div className="stat-lbl">{label}</div>
+    </div>
+  );
+}
+
+function Stats(){
+  return(
+    <div className="w">
+      <div className="stats-row">
+        <StatCard target={38124} suffix="+" label="Problems" delay={0}/>
+        <StatCard target={14}    suffix=""  label="Topics"   delay={.08}/>
+        <StatCard target={50}    suffix="+" label="Platforms" delay={.16}/>
+        <StatCard target={170}   suffix="+" label="Chapters"  delay={.24}/>
+      </div>
+    </div>
+  );
+}
+
+function TopicCard({t}){
+  const{ref,onMouseMove,onMouseLeave}=use3DTilt();
+  const SVGComp=M[t.id];
+  return(
+    <a href={'Explore v2.html?topic='+t.id} className="topic-card reveal"
+      ref={ref} onMouseMove={onMouseMove} onMouseLeave={onMouseLeave}
+      data-tc={t.c}
+      style={{'--tc':t.c,'--tc-glow':t.c+'2a'}}>
+      {SVGComp&&<div className="tsvg">{React.createElement(SVGComp,{c:t.c})}</div>}
+      <span className="tdot" style={{background:t.c}}/>
+      <div className="tname">{t.name}</div>
+      <div className="tdesc">{t.desc}</div>
+      <div className="tmeta"><span className="tcnt">{t.count}</span><span>·</span><span>{t.plats} platforms</span></div>
+    </a>
+  );
+}
+
+function Topics(){
+  return(
+    <section className="section w">
+      <div className="section-head reveal">
+        <div className="eyebrow">Browse by Topic</div>
+        <h2 className="section-title">14 Topics, Every Problem Tagged</h2>
+        <p className="section-sub">Find exactly what you need. Every problem organized by topic, concept, and difficulty.</p>
+      </div>
+      <div className="topics-grid">
+        {TOPICS.map(t=><TopicCard key={t.id} t={t}/>)}
+      </div>
+    </section>
+  );
+}
+
+function FeatureCard({f,delay}){
+  const{ref,onMouseMove,onMouseLeave}=use3DTilt();
+  return(
+    <div className="feature-card reveal" ref={ref} onMouseMove={onMouseMove} onMouseLeave={onMouseLeave}
+      style={{transitionDelay:delay+'s'}}>
+      <div className="ficon">{f.icon}</div>
+      <div className="fname">{f.label}</div>
+      <p className="fdesc">{f.desc}</p>
+    </div>
+  );
+}
+
+function Features(){
+  return(
+    <section className="section w">
+      <div className="section-head reveal">
+        <div className="eyebrow">What You Can Do</div>
+        <h2 className="section-title">Everything you need to master DSA</h2>
+      </div>
+      <div className="features-grid">
+        {FEATURES.map((f,i)=><FeatureCard key={f.label} f={f} delay={i*.08}/>)}
+      </div>
+    </section>
+  );
+}
+
+function CTA(){
+  return(
+    <section className="section w">
+      <div className="cta-block reveal">
+        <div className="cta-glow"/><div className="cta-glow2"/>
+        <h2 className="cta-title">Start your DSA journey today.</h2>
+        <p className="cta-desc">38,000+ problems · 170 chapters · One platform.</p>
+        <div className="cta-actions">
+          <a href="Learn.html" className="btn btn-primary">Learn Patterns →</a>
+          <a href="Explore v2.html" className="btn btn-outline">Browse Problems</a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function OpenBook(){
+  const toc=[
+    {n:'01',name:'Points & Lines',     pg:2},
+    {n:'02',name:'Triangles & Area',   pg:8},
+    {n:'03',name:'Circles & Arcs',     pg:14},
+    {n:'04',name:'Polygons',           pg:22},
+    {n:'05',name:'Convex Hull',        pg:30},
+    {n:'06',name:'Line Intersection',  pg:40},
+    {n:'07',name:'Coord. Geometry',    pg:48},
+    {n:'08',name:'Transformations',    pg:56},
+  ];
+  return(
+    <div className="ob-stage">
+      <div className="ob-glow"/>
+      <div className="ob-scene">
+        <div className="ob-book">
+          {/* ── LEFT PAGE ── */}
+          <div className="ob-left">
+            {/* Base TOC (always visible) */}
+            <div className="ob-ph">Table of Contents</div>
+            {toc.map(r=>(
+              <div key={r.n} className="ob-toc-row">
+                <span className="ob-toc-n">{r.n}</span>
+                <span className="ob-toc-t">{r.name}</span>
+                <span className="ob-toc-d"/>
+                <span className="ob-toc-p">{r.pg}</span>
+              </div>
+            ))}
+            <div className="ob-corner"/>
+
+            {/* ── TURNING PAGE LAYER ── */}
+            <div className="ob-flip-layer">
+              {/* FRONT — same TOC (seen when page is flat) */}
+              <div className="ob-flip-front">
+                <div className="ob-ph">Table of Contents</div>
+                {toc.map(r=>(
+                  <div key={r.n} className="ob-toc-row">
+                    <span className="ob-toc-n">{r.n}</span>
+                    <span className="ob-toc-t">{r.name}</span>
+                    <span className="ob-toc-d"/>
+                    <span className="ob-toc-p">{r.pg}</span>
+                  </div>
+                ))}
+                <div className="ob-corner"/>
+              </div>
+              {/* BACK — revealed mid-flip */}
+              <div className="ob-flip-back">
+                <div className="ob-ph">Chapter 04</div>
+                <div className="ob-st">Polygons</div>
+                <div className="ob-body">A polygon is a plane figure bounded by straight edges. Its signed area is computed with the Shoelace formula:</div>
+                <div className="ob-formula-box">
+                  <div className="ob-fml">A = ½|Σ(xᵢyᵢ₊₁ − xᵢ₊₁yᵢ)|</div>
+                  <div className="ob-fml-cap">Shoelace / Gauss Area Formula</div>
+                </div>
+                <div className="ob-body">Works for any simple polygon, convex or concave, vertices listed in order.</div>
+                <div className="ob-body" style={{marginTop:8,fontSize:'7px',color:'rgba(30,10,56,.38)'}}>64 problems · Difficulty: Easy–Hard</div>
+                <div className="ob-corner"/>
+              </div>
+            </div>
+          </div>
+
+          {/* ── SPINE ── */}
+          <div className="ob-spine"/>
+
+          {/* ── RIGHT PAGE ── */}
+          <div className="ob-right">
+            <div className="ob-ph">Chapter 01</div>
+            <div className="ob-st">Points, Lines &amp; Distances</div>
+            <div className="ob-body">Two points in a plane define a unique segment. The straight-line distance between A(x₁,y₁) and B(x₂,y₂):</div>
+            <div className="ob-formula-box">
+              <div className="ob-fml">d = √(Δx² + Δy²)</div>
+              <div className="ob-fml-cap">Euclidean Distance</div>
+            </div>
+            <div className="ob-st">Manhattan Distance</div>
+            <div className="ob-formula-box">
+              <div className="ob-fml">d = |x₂−x₁| + |y₂−y₁|</div>
+              <div className="ob-fml-cap">L¹ / Taxicab Metric</div>
+            </div>
+            <div className="ob-body" style={{fontSize:'7.5px',color:'rgba(30,10,56,.42)',marginTop:6}}>
+              142 problems · Difficulty: Easy–Medium
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Codex(){
+  const chapters=[
+    {n:'01',name:'Points & Lines',           probs:142},
+    {n:'02',name:'Triangles & Area',         probs:98},
+    {n:'03',name:'Circles & Arcs',           probs:87},
+    {n:'04',name:'Polygons & Shoelace',      probs:64},
+    {n:'05',name:'Convex Hull',              probs:52},
+    {n:'06',name:'Line Intersection',        probs:48},
+    {n:'07',name:'Coordinate Geometry',      probs:38},
+    {n:'08',name:'Geometric Transformations',probs:44},
+    {n:'09',name:'DSA Applications',         probs:120},
+  ];
+  return(
+    <section className="section">
+      <div className="w">
+        <div className="codex-grid">
+          {/* ── BOOK SIDE ── */}
+          <OpenBook/>
+          {/* ── INFO SIDE ── */}
+          <div className="codex-info reveal">
+            <div className="codex-vol-badge">◆ &nbsp;THE SHAPE CODEX · Vol. I</div>
+            <h2 className="codex-main-title">Geometry<br/>&amp; <span className="acc">Shapes</span></h2>
+            <p className="codex-desc">From the distance formula to convex hull — master every geometric structure with visual explanations, worked formulas, and 1,200+ curated DSA problems with full solutions.</p>
+            <div className="codex-rule"/>
+            <div className="codex-ch-label">Chapters</div>
+            <div className="codex-chapters">
+              {chapters.map((ch,i)=>(
+                <div key={ch.n} className="codex-ch" style={{transitionDelay:i*.04+'s'}}>
+                  <span className="codex-ch-num">{ch.n}</span>
+                  <span className="codex-ch-name">{ch.name}</span>
+                  <span className="codex-ch-probs">{ch.probs} problems</span>
+                </div>
+              ))}
+            </div>
+            <div className="codex-rule"/>
+            <div className="codex-stats-row">
+              {[['1,200+','Problems'],['18','Chapters'],['340','Formulas']].map(([v,l])=>(
+                <div key={l}>
+                  <div className="codex-stat-v">{v}</div>
+                  <div className="codex-stat-l">{l}</div>
+                </div>
+              ))}
+            </div>
+            <div className="codex-actions">
+              <a href="#" className="btn-codex">Start Exploring →</a>
+              <a href="#" className="btn-codex-out">Join Waitlist</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Footer(){
+  const cols=[
+    {title:'Explore',  links:[['All Topics','Landing v2.html'],['Problem Explorer','Explore v2.html'],['Learn DSA','Learn.html']]},
+    {title:'Topics',   links:[['Dynamic Programming','#'],['Binary Search','#'],['Graph','#'],['Tree','#'],['Math','#']]},
+    {title:'Resources',links:[['Patterns Cheat Sheet','#'],['GitHub ↗','https://github.com/rashidtvmr/dsa-inventory']]},
+  ];
+  return(
+    <footer className="footer">
+      <div className="w footer-inner">
+        <div>
+          <div className="footer-logo"><span className="logo-mark sm">fx</span><span className="footer-bn">DSA Mastery</span></div>
+          <p className="footer-tag">38k+ curated DSA problems from 50+ platforms. Organized by topic, tagged by concept, ready for practice.</p>
+          <div className="footer-chips">{['38k+ Problems','50+ Platforms','14 Topics'].map(c=><span key={c} className="chip">{c}</span>)}</div>
+        </div>
+        {cols.map(col=>(
+          <div key={col.title}>
+            <div className="fcol-title">{col.title}</div>
+            <div className="flinks">{col.links.map(([text,href])=><a key={text} href={href} className="flink">{text}</a>)}</div>
+          </div>
+        ))}
+      </div>
+      <div className="w footer-btm">
+        <span>© 2026 frontendx. Built for DSA practice.</span>
+        <a href="https://github.com/rashidtvmr/dsa-inventory" target="_blank" rel="noreferrer" className="footer-gh"><GH/></a>
+      </div>
+    </footer>
+  );
+}
+
+function App(){
+  const[dark,setDark]=useState(()=>{try{return localStorage.getItem('dsam-theme')!=='light'}catch{return true}});
+  useEffect(()=>{
+    document.documentElement.setAttribute('data-theme',dark?'dark':'light');
+    try{localStorage.setItem('dsam-theme',dark?'dark':'light')}catch{}
+  },[dark]);
+  useEffect(()=>{
+    const io=new IntersectionObserver(entries=>{
+      entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+    },{threshold:.08});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+    return()=>io.disconnect();
+  },[]);
+  return(
+    <>
+      <Nav dark={dark} setDark={setDark}/>
+      <Hero/>
+      <Marquee/>
+      <Stats/>
+      <div className="sep"/>
+      <Topics/>
+      <div className="sep"/>
+      <Codex/>
+      <div className="sep"/>
+      <Features/>
+      <CTA/>
+      <Footer/>
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script>
+</body>
+</html>

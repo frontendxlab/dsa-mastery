@@ -1,0 +1,1002 @@
+{
+  "chapter": 8,
+  "slug": "lines-and-slopes",
+  "title": "Lines and Slopes",
+  "icon": "╱",
+  "color": "#f97316",
+  "problemCount": 204,
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Chapter 8: Lines and Slopes"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "1. INTRODUCTION"
+    },
+    {
+      "type": "text",
+      "content": "A **line** in a 2D plane is the set of points (x, y) satisfying a linear equation. The **slope** of a line measures its steepness. Lines and slopes are the most basic building blocks of geometry, yet they power everything from collision detection to machine learning (linear regression)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Real-World Intuition"
+    },
+    {
+      "type": "text",
+      "content": "Think of a ramp: the slope tells you how steep it is. A line represents a straight path — the shortest distance between two points. In computer graphics, lines define edges of shapes. In physics, they represent trajectories."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Why It Matters"
+    },
+    {
+      "type": "text",
+      "content": "Lines and slopes teach you:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Linear equations**: the mathematical backbone of geometry",
+        "**Intersection**: where two paths cross",
+        "**Orientation**: clockwise vs counter-clockwise ordering",
+        "**Sweep line algorithm**: processing events in order of x-coordinate",
+        "**Convex hull**: all points are to one side of each edge line"
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2. CORE CONCEPTS"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2.1 Line Equations"
+    },
+    {
+      "type": "text",
+      "content": "**Slope-Intercept Form**:"
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "y = mx + b\nm = slope = Δy / Δx = (y2 - y1) / (x2 - x1)\nb = y-intercept",
+      "caption": null
+    },
+    {
+      "type": "text",
+      "content": "**General Form** (no division, handles vertical lines):"
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "Ax + By + C = 0\n\nGiven two points (x1,y1), (x2,y2):\nA = y1 - y2\nB = x2 - x1\nC = x1*y2 - x2*y1",
+      "caption": null
+    },
+    {
+      "type": "text",
+      "content": "**Two-Point Form**:"
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "(y - y1) / (x - x1) = (y2 - y1) / (x2 - x1)",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2.2 Slope"
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "m = (y2 - y1) / (x2 - x1)",
+      "caption": null
+    },
+    {
+      "type": "list",
+      "items": [
+        "m > 0: line rises (increasing)",
+        "m < 0: line falls (decreasing)",
+        "m = 0: horizontal line (y = constant)",
+        "m = ∞ (undefined): vertical line (x = constant)"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**Storing slopes in code**: Use reduced fraction `(dy/g, dx/g)` to avoid floating point."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2.3 Parallel and Perpendicular Lines"
+    },
+    {
+      "type": "text",
+      "content": "**Parallel**: same slope ($m_1 = m_2$) **Perpendicular**: product of slopes = -1 ($m_1 \\times m_2 = -1$) or $A_1A_2 + B_1B_2 = 0$"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2.4 Line-Line Intersection"
+    },
+    {
+      "type": "text",
+      "content": "Two lines A_1x + B_1y + C_1 = 0 and A_2x + B_2y + C_2 = 0 intersect at:"
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "denom = A₁*B₂ - A₂*B₁\nif denom == 0: lines are parallel (or coincident)\n\nx = (B₁*C₂ - B₂*C₁) / denom\ny = (C₁*A₂ - C₂*A₁) / denom",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2.5 Line Segment Intersection"
+    },
+    {
+      "type": "text",
+      "content": "Two line segments AB and CD intersect if and only if:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "The orientations of (A, B, C) and (A, B, D) are different, AND",
+        "The orientations of (C, D, A) and (C, D, B) are different"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**Special case**: Collinear overlapping segments (orientation = 0 for all four)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2.6 Orientation Test (Cross Product)"
+    },
+    {
+      "type": "text",
+      "content": "Given three points A(ax, ay), B(bx, by), C(cx, cy):"
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "cross = (bx - ax)(cy - ay) - (by - ay)(cx - ax)",
+      "caption": null
+    },
+    {
+      "type": "list",
+      "items": [
+        "cross > 0: counter-clockwise turn (A → B → C)",
+        "cross < 0: clockwise turn",
+        "cross = 0: collinear"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "This is the single most important operation in computational geometry."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2.7 Distance from Point to Line"
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "distance = |Ax₀ + By₀ + C| / sqrt(A² + B²)",
+      "caption": null
+    },
+    {
+      "type": "text",
+      "content": "Where (x₀, y₀) is the point and Ax + By + C = 0 is the line."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2.8 Sweep Line Algorithm"
+    },
+    {
+      "type": "text",
+      "content": "A technique where a vertical line sweeps from left to right across the plane, processing events at each x-coordinate. Used for:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Counting intersections between line segments",
+        "Computing union area of rectangles",
+        "Skyline problems",
+        "Finding closest pair of points"
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3. PROBLEM RECOGNITION"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Keyword",
+        "Problem Type"
+      ],
+      "rows": [
+        [
+          "\"slope\"",
+          "Slope computation, collinearity"
+        ],
+        [
+          "\"line through points\"",
+          "Line equation from two points"
+        ],
+        [
+          "\"intersection / crossing\"",
+          "Line or segment intersection"
+        ],
+        [
+          "\"perpendicular / parallel\"",
+          "Line relationships"
+        ],
+        [
+          "\"collinear\"",
+          "Same line check"
+        ],
+        [
+          "\"sweep line\"",
+          "Event-based processing"
+        ],
+        [
+          "\"skyline\"",
+          "Building outlines via sweep"
+        ],
+        [
+          "\"line of sight\"",
+          "Ray casting / geometry"
+        ],
+        [
+          "\"segment\"",
+          "Line segment operations"
+        ],
+        [
+          "\"polyline\"",
+          "Sequence of connected segments"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Hidden Line Problems"
+    },
+    {
+      "type": "list",
+      "items": [
+        "\"Uncrossed lines\" → DP (LCS variant)",
+        "\"Number of lines in chart\" → Slope changes",
+        "\"Maximal intersection\" → Interval intersection on a line",
+        "\"Reflection\" → Line as mirror",
+        "\"Linear regression\" → Best-fit line"
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "4. PATTERN ANALYSIS"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Pattern 1: Orientation (Cross Product)"
+    },
+    {
+      "type": "text",
+      "content": "**When to use**: Any problem asking about turn direction, intersection, or collinearity **Why it works**: The cross product sign tells you orientation without computing angles **Complexity**: $O(1)$ **Key insight**: Once you know the cross product, you can solve intersection, convex hull, point in polygon"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Pattern 2: Slope Hashing"
+    },
+    {
+      "type": "text",
+      "content": "**When to use**: Counting maximum collinear points, counting parallel lines **Why it works**: Use reduced fraction (dy/g, dx/g) as dictionary key **Complexity**: $O(N^2)$ **Key insight**: Always normalize by gcd and handle vertical/horizontal separately"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Pattern 3: Sweep Line"
+    },
+    {
+      "type": "text",
+      "content": "**When to use**: Interval overlapping, skyline, counting intersections **Why it works**: Sort events by x, maintain active set as line sweeps right **Complexity**: $O(N \\log N)$ **Common data structures**: Segment tree, Fenwick tree, priority queue"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Pattern 4: Line Segment Intersection (via Orientation)"
+    },
+    {
+      "type": "text",
+      "content": "**When to use**: Checking if two segments cross **Why it works**: The orientation test gives all the information needed **Complexity**: $O(1)$ per pair **Edge cases**: Collinear overlapping, touching at endpoints"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Pattern 5: Li Chao Segment Tree"
+    },
+    {
+      "type": "text",
+      "content": "**When to use**: Dynamic line insertion, query max/min at a given x **Why it works**: Each node stores a line; compare at midpoint to decide which dominates **Complexity**: $O(log C)$ per query/insert where C is coordinate range"
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "5. REUSABLE CODING TEMPLATES"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "5.1 Orientation (Cross Product)"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def orientation(a, b, c):\n    # Returns: 1 = CW, -1 = CCW, 0 = collinear\n    cross = (b[0]-a[0])*(c[1]-a[1]) - (b[1]-a[1])*(c[0]-a[0])\n    if cross > 0: return 1   # clockwise\n    if cross < 0: return -1  # counter-clockwise\n    return 0                  # collinear",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "int orientation(pair<int,int> a, pair<int,int> b, pair<int,int> c) {\n    long long cross = (b.first - a.first) * (c.second - a.second)\n                    - (b.second - a.second) * (c.first - a.first);\n    if (cross > 0) return 1;   // CW\n    if (cross < 0) return -1;  // CCW\n    return 0;                   // collinear\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "int orientation(int[] a, int[] b, int[] c) {\n    long cross = (long)(b[0]-a[0]) * (c[1]-a[1]) - (long)(b[1]-a[1]) * (c[0]-a[0]);\n    if (cross > 0) return 1;\n    if (cross < 0) return -1;\n    return 0;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function orientation(a, b, c) {\n    const cross = (b[0] - a[0]) * (c[1] - a[1]) - (b[1] - a[1]) * (c[0] - a[0]);\n    if (cross > 0) return 1;   // CW\n    if (cross < 0) return -1;  // CCW\n    return 0;                  // collinear\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "5.2 Line Segment Intersection"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def on_segment(a, b, c):\n    # Check if c lies on segment ab (assumes collinear)\n    return (min(a[0], b[0]) <= c[0] <= max(a[0], b[0]) and\n            min(a[1], b[1]) <= c[1] <= max(a[1], b[1]))\n\ndef segments_intersect(p1, p2, p3, p4):\n    o1 = orientation(p1, p2, p3)\n    o2 = orientation(p1, p2, p4)\n    o3 = orientation(p3, p4, p1)\n    o4 = orientation(p3, p4, p2)\n    \n    # General case: different orientations\n    if o1 != o2 and o3 != o4:\n        return True\n    # Special collinear cases\n    if o1 == 0 and on_segment(p1, p2, p3): return True\n    if o2 == 0 and on_segment(p1, p2, p4): return True\n    if o3 == 0 and on_segment(p3, p4, p1): return True\n    if o4 == 0 and on_segment(p3, p4, p2): return True\n    return False",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "bool onSegment(vector<int> a, vector<int> b, vector<int> c) {\n    return min(a[0], b[0]) <= c[0] && c[0] <= max(a[0], b[0]) &&\n           min(a[1], b[1]) <= c[1] && c[1] <= max(a[1], b[1]);\n}\n\nbool segmentsIntersect(vector<int> p1, vector<int> p2, vector<int> p3, vector<int> p4) {\n    int o1 = orientation(p1, p2, p3);\n    int o2 = orientation(p1, p2, p4);\n    int o3 = orientation(p3, p4, p1);\n    int o4 = orientation(p3, p4, p2);\n    if (o1 != o2 && o3 != o4) return true;\n    if (o1 == 0 && onSegment(p1, p2, p3)) return true;\n    if (o2 == 0 && onSegment(p1, p2, p4)) return true;\n    if (o3 == 0 && onSegment(p3, p4, p1)) return true;\n    if (o4 == 0 && onSegment(p3, p4, p2)) return true;\n    return false;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public static boolean onSegment(int[] a, int[] b, int[] c) {\n    return Math.min(a[0], b[0]) <= c[0] && c[0] <= Math.max(a[0], b[0]) &&\n           Math.min(a[1], b[1]) <= c[1] && c[1] <= Math.max(a[1], b[1]);\n}\n\npublic static boolean segmentsIntersect(int[] p1, int[] p2, int[] p3, int[] p4) {\n    int o1 = orientation(p1, p2, p3);\n    int o2 = orientation(p1, p2, p4);\n    int o3 = orientation(p3, p4, p1);\n    int o4 = orientation(p3, p4, p2);\n    if (o1 != o2 && o3 != o4) return true;\n    if (o1 == 0 && onSegment(p1, p2, p3)) return true;\n    if (o2 == 0 && onSegment(p1, p2, p4)) return true;\n    if (o3 == 0 && onSegment(p3, p4, p1)) return true;\n    if (o4 == 0 && onSegment(p3, p4, p2)) return true;\n    return false;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function onSegment(a, b, c) {\n    return Math.min(a[0], b[0]) <= c[0] && c[0] <= Math.max(a[0], b[0]) &&\n           Math.min(a[1], b[1]) <= c[1] && c[1] <= Math.max(a[1], b[1]);\n}\n\nfunction segmentsIntersect(p1, p2, p3, p4) {\n    const o1 = orientation(p1, p2, p3);\n    const o2 = orientation(p1, p2, p4);\n    const o3 = orientation(p3, p4, p1);\n    const o4 = orientation(p3, p4, p2);\n    if (o1 !== o2 && o3 !== o4) return true;\n    if (o1 === 0 && onSegment(p1, p2, p3)) return true;\n    if (o2 === 0 && onSegment(p1, p2, p4)) return true;\n    if (o3 === 0 && onSegment(p3, p4, p1)) return true;\n    if (o4 === 0 && onSegment(p3, p4, p2)) return true;\n    return false;\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "5.3 Line from Two Points (General Form)"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def line_from_points(p1, p2):\n    # Returns (A, B, C) for Ax + By + C = 0\n    A = p1[1] - p2[1]\n    B = p2[0] - p1[0]\n    C = p1[0]*p2[1] - p2[0]*p1[1]\n    return (A, B, C)",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "tuple<int,int,int> lineFromPoints(vector<int> p1, vector<int> p2) {\n    int A = p1[1] - p2[1];\n    int B = p2[0] - p1[0];\n    int C = p1[0]*p2[1] - p2[0]*p1[1];\n    return {A, B, C};\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public static int[] lineFromPoints(int[] p1, int[] p2) {\n    int A = p1[1] - p2[1];\n    int B = p2[0] - p1[0];\n    int C = p1[0]*p2[1] - p2[0]*p1[1];\n    return new int[]{A, B, C};\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function lineFromPoints(p1, p2) {\n    const A = p1[1] - p2[1];\n    const B = p2[0] - p1[0];\n    const C = p1[0] * p2[1] - p2[0] * p1[1];\n    return [A, B, C];\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "5.4 Line-Line Intersection"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def line_intersection(l1, l2):\n    # l = (A, B, C) for Ax + By + C = 0\n    A1, B1, C1 = l1\n    A2, B2, C2 = l2\n    denom = A1*B2 - A2*B1\n    if abs(denom) < 1e-12:\n        return None  # parallel or coincident\n    x = (B1*C2 - B2*C1) / denom\n    y = (C1*A2 - C2*A1) / denom\n    return (x, y)",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "pair<double,double> lineIntersection(tuple<int,int,int> l1, tuple<int,int,int> l2) {\n    auto [A1, B1, C1] = l1;\n    auto [A2, B2, C2] = l2;\n    double denom = A1*B2 - A2*B1;\n    if (abs(denom) < 1e-12) return {INFINITY, INFINITY};\n    double x = (B1*C2 - B2*C1) / denom;\n    double y = (C1*A2 - C2*A1) / denom;\n    return {x, y};\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public static double[] lineIntersection(int[] l1, int[] l2) {\n    int A1 = l1[0], B1 = l1[1], C1 = l1[2];\n    int A2 = l2[0], B2 = l2[1], C2 = l2[2];\n    double denom = A1*B2 - A2*B1;\n    if (Math.abs(denom) < 1e-12) return null;\n    double x = (double)(B1*C2 - B2*C1) / denom;\n    double y = (double)(C1*A2 - C2*A1) / denom;\n    return new double[]{x, y};\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function lineIntersection(l1, l2) {\n    const [A1, B1, C1] = l1;\n    const [A2, B2, C2] = l2;\n    const denom = A1 * B2 - A2 * B1;\n    if (Math.abs(denom) < 1e-12) return null;\n    const x = (B1 * C2 - B2 * C1) / denom;\n    const y = (C1 * A2 - C2 * A1) / denom;\n    return [x, y];\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "5.5 Point-to-Line Distance"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def point_line_distance(px, py, line):\n    # line = (A, B, C)\n    A, B, C = line\n    return abs(A*px + B*py + C) / math.sqrt(A*A + B*B)",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "double pointLineDistance(int px, int py, tuple<int,int,int> line) {\n    auto [A, B, C] = line;\n    return abs(A*px + B*py + C) / sqrt(A*A + B*B);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public static double pointLineDistance(int px, int py, int[] line) {\n    int A = line[0], B = line[1], C = line[2];\n    return Math.abs(A*px + B*py + C) / Math.sqrt(A*A + B*B);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function pointLineDistance(px, py, line) {\n    const [A, B, C] = line;\n    return Math.abs(A * px + B * py + C) / Math.sqrt(A * A + B * B);\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "5.6 Li Chao Segment Tree (Line Container)"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "class LiChaoTree:\n    def __init__(self, xs):\n        # xs: sorted list of x-coordinates where we query\n        self.xs = xs\n        n = len(xs)\n        size = 1\n        while size < n: size <<= 1\n        self.size = size\n        self.lines = [(0, -float('inf'))] * (2 * size)  # (m, b)\n    \n    def f(self, line, x):\n        m, b = line\n        return m * x + b\n    \n    def add_line(self, new_line, node=1, l=0, r=None):\n        if r is None: r = self.size - 1\n        m = (l + r) // 2\n        x_mid = self.xs[m] if m < len(self.xs) else self.xs[-1]\n        x_l = self.xs[l] if l < len(self.xs) else self.xs[-1]\n        \n        left = self.f(new_line, x_l) > self.f(self.lines[node], x_l)\n        mid = self.f(new_line, x_mid) > self.f(self.lines[node], x_mid)\n        \n        if mid:\n            self.lines[node], new_line = new_line, self.lines[node]\n        \n        if l == r: return\n        if left != mid:\n            self.add_line(new_line, node*2, l, m)\n        else:\n            self.add_line(new_line, node*2+1, m+1, r)\n    \n    def query(self, idx):\n        # idx: index into self.xs\n        x = self.xs[idx]\n        node = 1\n        l, r = 0, self.size - 1\n        ans = -float('inf')\n        while True:\n            ans = max(ans, self.f(self.lines[node], x))\n            if l == r: break\n            m = (l + r) // 2\n            if idx <= m:\n                node = node * 2\n                r = m\n            else:\n                node = node * 2 + 1\n                l = m + 1\n        return ans",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "#include <bits/stdc++.h>\nusing namespace std;\nusing ll = long long;\n\nstruct LiChaoTree {\n    vector<ll> xs;\n    int size;\n    vector<pair<ll,ll>> lines;  // (m, b)\n    \n    LiChaoTree(vector<ll> xs_) : xs(xs_) {\n        int n = xs.size();\n        size = 1;\n        while (size < n) size <<= 1;\n        lines.assign(2 * size, {0, LLONG_MIN});\n    }\n    \n    ll f(pair<ll,ll> line, ll x) {\n        return line.first * x + line.second;\n    }\n    \n    void addLine(pair<ll,ll> newLine, int node = 1, int l = 0, int r = -1) {\n        if (r == -1) r = size - 1;\n        int m = (l + r) / 2;\n        ll x_mid = (m < xs.size()) ? xs[m] : xs.back();\n        ll x_l = (l < xs.size()) ? xs[l] : xs.back();\n        \n        bool left = f(newLine, x_l) > f(lines[node], x_l);\n        bool mid = f(newLine, x_mid) > f(lines[node], x_mid);\n        \n        if (mid) swap(lines[node], newLine);\n        if (l == r) return;\n        if (left != mid) addLine(newLine, node*2, l, m);\n        else addLine(newLine, node*2+1, m+1, r);\n    }\n    \n    ll query(int idx) {\n        ll x = xs[idx];\n        ll ans = LLONG_MIN;\n        int node = 1, l = 0, r = size - 1;\n        while (true) {\n            ans = max(ans, f(lines[node], x));\n            if (l == r) break;\n            int m = (l + r) / 2;\n            if (idx <= m) { node = node*2; r = m; }\n            else { node = node*2+1; l = m+1; }\n        }\n        return ans;\n    }\n};",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "import java.util.*;\n\npublic class LiChaoTree {\n    long[] xs;\n    int size;\n    long[][] lines; // {m, b}\n    \n    public LiChaoTree(List<Long> xs) {\n        this.xs = xs.stream().mapToLong(Long::longValue).toArray();\n        int n = xs.size();\n        size = 1;\n        while (size < n) size <<= 1;\n        lines = new long[2 * size][2];\n        for (int i = 0; i < 2 * size; i++) { lines[i][0] = 0; lines[i][1] = Long.MIN_VALUE; }\n    }\n    \n    long f(long[] line, long x) {\n        return line[0] * x + line[1];\n    }\n    \n    void addLine(long[] newLine) { addLine(newLine, 1, 0, size - 1); }\n    \n    void addLine(long[] newLine, int node, int l, int r) {\n        int m = (l + r) / 2;\n        long xMid = (m < xs.length) ? xs[m] : xs[xs.length - 1];\n        long xL = (l < xs.length) ? xs[l] : xs[xs.length - 1];\n        \n        boolean left = f(newLine, xL) > f(lines[node], xL);\n        boolean mid = f(newLine, xMid) > f(lines[node], xMid);\n        \n        if (mid) { long[] tmp = lines[node]; lines[node] = newLine; newLine = tmp; }\n        if (l == r) return;\n        if (left != mid) addLine(newLine, node*2, l, m);\n        else addLine(newLine, node*2+1, m+1, r);\n    }\n    \n    long query(int idx) {\n        long x = xs[idx];\n        long ans = Long.MIN_VALUE;\n        int node = 1, l = 0, r = size - 1;\n        while (true) {\n            ans = Math.max(ans, f(lines[node], x));\n            if (l == r) break;\n            int m = (l + r) / 2;\n            if (idx <= m) { node = node*2; r = m; }\n            else { node = node*2+1; l = m+1; }\n        }\n        return ans;\n    }\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "class LiChaoTree {\n    constructor(xs) {\n        this.xs = xs;\n        let n = xs.length;\n        let size = 1;\n        while (size < n) size <<= 1;\n        this.size = size;\n        this.lines = new Array(2 * size).fill(null).map(() => [0, -Infinity]);\n    }\n\n    f(line, x) {\n        return line[0] * x + line[1];\n    }\n\n    addLine(newLine, node = 1, l = 0, r = null) {\n        if (r === null) r = this.size - 1;\n        const m = Math.floor((l + r) / 2);\n        const xMid = m < this.xs.length ? this.xs[m] : this.xs[this.xs.length - 1];\n        const xL = l < this.xs.length ? this.xs[l] : this.xs[this.xs.length - 1];\n\n        const left = this.f(newLine, xL) > this.f(this.lines[node], xL);\n        const mid = this.f(newLine, xMid) > this.f(this.lines[node], xMid);\n\n        if (mid) [this.lines[node], newLine] = [newLine, this.lines[node]];\n        if (l === r) return;\n        if (left !== mid) this.addLine(newLine, node * 2, l, m);\n        else this.addLine(newLine, node * 2 + 1, m + 1, r);\n    }\n\n    query(idx) {\n        const x = this.xs[idx];\n        let ans = -Infinity;\n        let node = 1, l = 0, r = this.size - 1;\n        while (true) {\n            ans = Math.max(ans, this.f(this.lines[node], x));\n            if (l === r) break;\n            const m = Math.floor((l + r) / 2);\n            if (idx <= m) { node = node * 2; r = m; }\n            else { node = node * 2 + 1; l = m + 1; }\n        }\n        return ans;\n    }\n}",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "6. CURATED REAL PROBLEMS"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "#",
+        "Problem",
+        "Platform",
+        "Difficulty",
+        "Concepts",
+        "Pattern"
+      ],
+      "rows": [
+        [
+          "1",
+          "Check If It Is a Straight Line",
+          "LeetCode (Easy)",
+          "Easy",
+          "Collinearity",
+          "Orientation check"
+        ],
+        [
+          "2",
+          "Parallelogram is Back",
+          "Codeforces (1200)",
+          "Easy",
+          "Lines from points",
+          "Coordinate geometry"
+        ],
+        [
+          "3",
+          "B. Gentle Pairs",
+          "AtCoder (Easy)",
+          "Easy",
+          "Slope counting",
+          "Slope filtering"
+        ],
+        [
+          "4",
+          "Anton and Lines",
+          "Codeforces (1600)",
+          "Medium",
+          "Line intersection",
+          "Sweep / Sort"
+        ],
+        [
+          "5",
+          "Maximal Intersection",
+          "Codeforces (1600)",
+          "Medium",
+          "Interval intersection",
+          "Greedy / line"
+        ],
+        [
+          "6",
+          "Number of Parallelograms",
+          "Codeforces (1900)",
+          "Medium",
+          "Midpoint matching",
+          "Slope/hash grouping"
+        ],
+        [
+          "7",
+          "Pair Of Lines",
+          "Codeforces (2000)",
+          "Hard",
+          "Multiple lines collinear",
+          "Slope hashing"
+        ],
+        [
+          "8",
+          "Check Intersection of Segments",
+          "GFG",
+          "Medium",
+          "Line segment intersect",
+          "Orientation"
+        ],
+        [
+          "9",
+          "Minimum Lines to Represent Line Chart",
+          "LeetCode (Medium)",
+          "Medium",
+          "Slope tracking",
+          "Slope change detection"
+        ],
+        [
+          "10",
+          "The Skyline Problem",
+          "LeetCode (Hard)",
+          "Hard",
+          "Sweep line",
+          "Event priority queue"
+        ],
+        [
+          "11",
+          "Line Intersection (Baekjoon 17387)",
+          "Baekjoon (Gold 1)",
+          "Hard",
+          "Segment intersection",
+          "Orientation + collinear"
+        ],
+        [
+          "12",
+          "Max Number of Intersections",
+          "LeetCode (Hard)",
+          "Hard",
+          "Sweep line + BIT",
+          "Line interval counting"
+        ]
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "7. GENERATED PRACTICE PROBLEMS"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Easy — Is This a Straight Line?"
+    },
+    {
+      "type": "text",
+      "content": "Given N points, determine if all points lie on a single straight line."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Easy — Slope Between Points"
+    },
+    {
+      "type": "text",
+      "content": "Given N points, count how many pairs form a line with positive slope."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Medium — Line That Covers Most Points"
+    },
+    {
+      "type": "text",
+      "content": "Given N points, find the line that passes through the maximum number of points. Return the count."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Medium — Segment Intersection Counter"
+    },
+    {
+      "type": "text",
+      "content": "Given N line segments, count how many pairs intersect (including at endpoints)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Hard — City Skyline"
+    },
+    {
+      "type": "text",
+      "content": "Given the positions and heights of N buildings, compute the skyline outline as a list of (x, height) switches."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Hard — Maximum Non-Intersecting Lines"
+    },
+    {
+      "type": "text",
+      "content": "Given N lines of the form y = m_ix + b_i, select the maximum subset such that no two lines intersect within the range x \\in  [0, X]."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Interview — Laser Beam"
+    },
+    {
+      "type": "text",
+      "content": "Given N points, a laser starts at (0, 0) and travels in a straight line. Find the first point it hits. The laser direction is given by an angle \\theta ."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "8. COMPLETE SOLUTION SECTION"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Problem 1: Check If It Is a Straight Line (LeetCode 1232)"
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition**: All points lie on the same line if the slope between every consecutive point is the same. Use cross product to avoid division."
+    },
+    {
+      "type": "text",
+      "content": "**B. Approach**: Check that the cross product (determinant) of vectors from point 0 to every other pair is zero."
+    },
+    {
+      "type": "text",
+      "content": "**C. Complexity**: $O(N)$ time, $O(1)$ space"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def checkStraightLine(coordinates):\n    x0, y0 = coordinates[0]\n    x1, y1 = coordinates[1]\n    for x, y in coordinates[2:]:\n        if (x1 - x0) * (y - y0) != (y1 - y0) * (x - x0):\n            return False\n    return True",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "bool checkStraightLine(vector<vector<int>>& coord) {\n    int x0 = coord[0][0], y0 = coord[0][1];\n    int x1 = coord[1][0], y1 = coord[1][1];\n    for (int i = 2; i < coord.size(); i++) {\n        int x = coord[i][0], y = coord[i][1];\n        if ((x1 - x0) * (y - y0) != (y1 - y0) * (x - x0))\n            return false;\n    }\n    return true;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public boolean checkStraightLine(int[][] coord) {\n    int x0 = coord[0][0], y0 = coord[0][1];\n    int x1 = coord[1][0], y1 = coord[1][1];\n    for (int i = 2; i < coord.length; i++) {\n        int x = coord[i][0], y = coord[i][1];\n        if ((x1 - x0) * (y - y0) != (y1 - y0) * (x - x0))\n            return false;\n    }\n    return true;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function checkStraightLine(coordinates) {\n    const [x0, y0] = coordinates[0];\n    const [x1, y1] = coordinates[1];\n    for (let i = 2; i < coordinates.length; i++) {\n        const [x, y] = coordinates[i];\n        if ((x1 - x0) * (y - y0) !== (y1 - y0) * (x - x0))\n            return false;\n    }\n    return true;\n}",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Problem 2: Line Segment Intersection (Baekjoon 17387)"
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition**: Two segments AB and CD intersect if the endpoints of each are on opposite sides of the other segment, OR if all four are collinear and the segments overlap."
+    },
+    {
+      "type": "text",
+      "content": "**B. Approach**: Use the orientation function for both checks."
+    },
+    {
+      "type": "text",
+      "content": "**C. Complexity**: $O(1)$"
+    },
+    {
+      "type": "text",
+      "content": "**D. Edge Cases**: One endpoint touches the other segment; collinear overlapping; collinear non-overlapping"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def intersect(p1, p2, p3, p4):\n    o1 = orientation(p1, p2, p3)\n    o2 = orientation(p1, p2, p4)\n    o3 = orientation(p3, p4, p1)\n    o4 = orientation(p3, p4, p2)\n    \n    if o1 != o2 and o3 != o4:\n        return True\n    if o1 == 0 and on_segment(p1, p2, p3): return True\n    if o2 == 0 and on_segment(p1, p2, p4): return True\n    if o3 == 0 and on_segment(p3, p4, p1): return True\n    if o4 == 0 and on_segment(p3, p4, p2): return True\n    return False",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "bool intersect(vector<int> p1, vector<int> p2, vector<int> p3, vector<int> p4) {\n    int o1 = orientation(p1, p2, p3);\n    int o2 = orientation(p1, p2, p4);\n    int o3 = orientation(p3, p4, p1);\n    int o4 = orientation(p3, p4, p2);\n    if (o1 != o2 && o3 != o4) return true;\n    if (o1 == 0 && onSegment(p1, p2, p3)) return true;\n    if (o2 == 0 && onSegment(p1, p2, p4)) return true;\n    if (o3 == 0 && onSegment(p3, p4, p1)) return true;\n    if (o4 == 0 && onSegment(p3, p4, p2)) return true;\n    return false;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public static boolean intersect(int[] p1, int[] p2, int[] p3, int[] p4) {\n    int o1 = orientation(p1, p2, p3);\n    int o2 = orientation(p1, p2, p4);\n    int o3 = orientation(p3, p4, p1);\n    int o4 = orientation(p3, p4, p2);\n    if (o1 != o2 && o3 != o4) return true;\n    if (o1 == 0 && onSegment(p1, p2, p3)) return true;\n    if (o2 == 0 && onSegment(p1, p2, p4)) return true;\n    if (o3 == 0 && onSegment(p3, p4, p1)) return true;\n    if (o4 == 0 && onSegment(p3, p4, p2)) return true;\n    return false;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function intersect(p1, p2, p3, p4) {\n    const o1 = orientation(p1, p2, p3);\n    const o2 = orientation(p1, p2, p4);\n    const o3 = orientation(p3, p4, p1);\n    const o4 = orientation(p3, p4, p2);\n    if (o1 !== o2 && o3 !== o4) return true;\n    if (o1 === 0 && onSegment(p1, p2, p3)) return true;\n    if (o2 === 0 && onSegment(p1, p2, p4)) return true;\n    if (o3 === 0 && onSegment(p3, p4, p1)) return true;\n    if (o4 === 0 && onSegment(p3, p4, p2)) return true;\n    return false;\n}",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Problem 3: The Skyline Problem (LeetCode 218)"
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition**: As our sweep line moves right, we want to know the current tallest building at any x. When the tallest building ends, we need the next tallest."
+    },
+    {
+      "type": "text",
+      "content": "**B. Approach**:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Create events: (x, -height) for start, (x, height) for end",
+        "Sort by x (start before end at same x)",
+        "Maintain a max-heap of heights",
+        "When max height changes, record that x and the new height"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**C. Complexity**: $O(N \\log N)$"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def getSkyline(buildings):\n    events = []\n    for l, r, h in buildings:\n        events.append((l, -h, r))  # start\n        events.append((r, 0, None)) # end marker\n    \n    events.sort()\n    heap = [(0, float('inf'))]  # (height, right_end)\n    result = [[0, 0]]\n    \n    for x, neg_h, r in events:\n        if neg_h != 0:\n            heapq.heappush(heap, (neg_h, r))\n        \n        # Remove expired buildings\n        while heap and heap[0][1] <= x:\n            heapq.heappop(heap)\n        \n        cur_h = -heap[0][0]\n        if result[-1][1] != cur_h:\n            if result[-1][0] == x:\n                result[-1][1] = cur_h\n            else:\n                result.append([x, cur_h])\n    \n    return result[1:]  # remove the dummy start",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "vector<vector<int>> getSkyline(vector<vector<int>>& buildings) {\n    vector<tuple<int,int,int>> events;\n    for (auto& b : buildings) {\n        events.push_back({b[0], -b[2], b[1]});\n        events.push_back({b[1], 0, 0});\n    }\n    sort(events.begin(), events.end());\n    \n    priority_queue<pair<int,int>> pq; // (height, right)\n    pq.push({0, INT_MAX});\n    vector<vector<int>> result = {{0, 0}};\n    \n    for (auto [x, neg_h, r] : events) {\n        if (neg_h != 0) pq.push({-neg_h, r});\n        while (!pq.empty() && pq.top().second <= x) pq.pop();\n        int curH = pq.top().first;\n        if (result.back()[1] != curH) {\n            if (result.back()[0] == x) result.back()[1] = curH;\n            else result.push_back({x, curH});\n        }\n    }\n    return vector<vector<int>>(result.begin() + 1, result.end());\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public List<List<Integer>> getSkyline(int[][] buildings) {\n    List<int[]> events = new ArrayList<>();\n    for (int[] b : buildings) {\n        events.add(new int[]{b[0], -b[2], b[1]});\n        events.add(new int[]{b[1], 0, 0});\n    }\n    events.sort((a,b) -> Integer.compare(a[0], b[0]));\n    \n    PriorityQueue<int[]> pq = new PriorityQueue<>((a,b) -> Integer.compare(b[0], a[0]));\n    pq.offer(new int[]{0, Integer.MAX_VALUE});\n    List<List<Integer>> result = new ArrayList<>();\n    result.add(Arrays.asList(0, 0));\n    \n    for (int[] ev : events) {\n        int x = ev[0], negH = ev[1], r = ev[2];\n        if (negH != 0) pq.offer(new int[]{-negH, r});\n        while (!pq.isEmpty() && pq.peek()[1] <= x) pq.poll();\n        int curH = pq.peek()[0];\n        List<Integer> last = result.get(result.size() - 1);\n        if (last.get(1) != curH) {\n            if (last.get(0) == x) last.set(1, curH);\n            else result.add(Arrays.asList(x, curH));\n        }\n    }\n    return result.subList(1, result.size());\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function getSkyline(buildings) {\n    const events = [];\n    for (const [l, r, h] of buildings) {\n        events.push([l, -h, r]);\n        events.push([r, 0, null]);\n    }\n    events.sort((a, b) => a[0] - b[0]);\n    \n    const heap = [[0, Infinity]];\n    const result = [[0, 0]];\n    \n    for (const [x, negH, r] of events) {\n        if (negH !== 0) heap.push([negH, r]);\n        heap.sort((a, b) => a[0] - b[0]);\n        while (heap.length > 0 && heap[0][1] <= x) heap.shift();\n        const curH = -heap[0][0];\n        const last = result[result.length - 1];\n        if (last[1] !== curH) {\n            if (last[0] === x) last[1] = curH;\n            else result.push([x, curH]);\n        }\n    }\n    return result.slice(1);\n}",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Problem 4: Minimum Lines to Represent a Line Chart (LeetCode 2280)"
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition**: A line segment is needed when the slope between consecutive points changes. Track the slope as a reduced fraction (dy, dx)."
+    },
+    {
+      "type": "text",
+      "content": "**B. Complexity**: $O(N \\log N)$ for sorting, $O(N)$ for slope comparison"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def minimumLines(points):\n    points.sort()\n    if len(points) < 2: return 0\n    lines = 1\n    dx, dy = points[1][0] - points[0][0], points[1][1] - points[0][1]\n    g = math.gcd(dx, dy)\n    prev = (dx // g, dy // g)\n    \n    for i in range(2, len(points)):\n        dx = points[i][0] - points[i-1][0]\n        dy = points[i][1] - points[i-1][1]\n        g = math.gcd(dx, dy)\n        cur = (dx // g, dy // g)\n        if cur != prev:\n            lines += 1\n            prev = cur\n    return lines",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "int minimumLines(vector<vector<int>>& points) {\n    sort(points.begin(), points.end());\n    int n = points.size();\n    if (n < 2) return 0;\n    int lines = 1;\n    int dx = points[1][0] - points[0][0], dy = points[1][1] - points[0][1];\n    int g = gcd(dx, dy);\n    pair<int,int> prev = {dx/g, dy/g};\n    for (int i = 2; i < n; i++) {\n        dx = points[i][0] - points[i-1][0];\n        dy = points[i][1] - points[i-1][1];\n        g = gcd(dx, dy);\n        pair<int,int> cur = {dx/g, dy/g};\n        if (cur != prev) { lines++; prev = cur; }\n    }\n    return lines;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public int minimumLines(int[][] points) {\n    Arrays.sort(points, (a,b) -> Integer.compare(a[0], b[0]));\n    int n = points.length;\n    if (n < 2) return 0;\n    int lines = 1;\n    int dx = points[1][0] - points[0][0], dy = points[1][1] - points[0][1];\n    int g = gcd(Math.abs(dx), Math.abs(dy));\n    String prev = (dx/g) + \"/\" + (dy/g);\n    for (int i = 2; i < n; i++) {\n        dx = points[i][0] - points[i-1][0];\n        dy = points[i][1] - points[i-1][1];\n        g = gcd(Math.abs(dx), Math.abs(dy));\n        String cur = (dx/g) + \"/\" + (dy/g);\n        if (!cur.equals(prev)) { lines++; prev = cur; }\n    }\n    return lines;\n}\n\nstatic int gcd(int a, int b) { return b == 0 ? a : gcd(b, a % b); }",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function gcd(a, b) {\n    return b === 0 ? Math.abs(a) : gcd(b, a % b);\n}\n\nfunction minimumLines(points) {\n    points.sort((a, b) => a[0] - b[0]);\n    const n = points.length;\n    if (n < 2) return 0;\n    let lines = 1;\n    let dx = points[1][0] - points[0][0], dy = points[1][1] - points[0][1];\n    let g = gcd(dx, dy);\n    let prevX = dx / g, prevY = dy / g;\n    for (let i = 2; i < n; i++) {\n        dx = points[i][0] - points[i - 1][0];\n        dy = points[i][1] - points[i - 1][1];\n        g = gcd(dx, dy);\n        const curX = dx / g, curY = dy / g;\n        if (curX !== prevX || curY !== prevY) { lines++; prevX = curX; prevY = curY; }\n    }\n    return lines;\n}",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Problem 5: Number of Parallelograms (Codeforces 660D)"
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition**: In a parallelogram, the diagonals bisect each other. Therefore, the midpoints of the two diagonals coincide. For any pair of points, compute their midpoint; for each distinct midpoint, k pairs form kC2 parallelograms."
+    },
+    {
+      "type": "text",
+      "content": "**B. Complexity**: $O(N^2)$"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def count_parallelograms(points):\n    mid_counts = {}\n    n = len(points)\n    for i in range(n):\n        for j in range(i+1, n):\n            mx = points[i][0] + points[j][0]  # store 2x to avoid fractions\n            my = points[i][1] + points[j][1]\n            mid_counts[(mx, my)] = mid_counts.get((mx, my), 0) + 1\n    \n    ans = 0\n    for k in mid_counts.values():\n        ans += k * (k - 1) // 2\n    return ans",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "long long countParallelograms(vector<pair<int,int>>& points) {\n    map<pair<int,int>, long long> midCounts;\n    int n = points.size();\n    for (int i = 0; i < n; i++)\n        for (int j = i+1; j < n; j++) {\n            int mx = points[i].first + points[j].first;\n            int my = points[i].second + points[j].second;\n            midCounts[{mx, my}]++;\n        }\n    long long ans = 0;\n    for (auto& [_, k] : midCounts) ans += k * (k - 1) / 2;\n    return ans;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public long countParallelograms(int[][] points) {\n    Map<String, Long> midCounts = new HashMap<>();\n    int n = points.length;\n    for (int i = 0; i < n; i++)\n        for (int j = i+1; j < n; j++) {\n            int mx = points[i][0] + points[j][0];\n            int my = points[i][1] + points[j][1];\n            String key = mx + \",\" + my;\n            midCounts.put(key, midCounts.getOrDefault(key, 0L) + 1);\n        }\n    long ans = 0;\n    for (long k : midCounts.values()) ans += k * (k - 1) / 2;\n    return ans;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function countParallelograms(points) {\n    const midCounts = new Map();\n    const n = points.length;\n    for (let i = 0; i < n; i++)\n        for (let j = i + 1; j < n; j++) {\n            const mx = points[i][0] + points[j][0];\n            const my = points[i][1] + points[j][1];\n            const key = mx + ',' + my;\n            midCounts.set(key, (midCounts.get(key) || 0) + 1);\n        }\n    let ans = 0;\n    for (const k of midCounts.values()) ans += k * (k - 1) / 2;\n    return ans;\n}",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Problem 6: Pair Of Lines (Codeforces 961D)"
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition**: You need at most 2 lines to cover all N points. There are at most N^2 possible lines. If a pair of lines exists, then among the first 3 points, at least 2 must lie on one of the lines."
+    },
+    {
+      "type": "text",
+      "content": "**B. Approach**:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Consider the line through points 0 and 1. Remove all points on this line. Check if remaining points are collinear.",
+        "Same for line through points 0 and 2.",
+        "Same for line through points 1 and 2.",
+        "If any succeeds, answer is YES."
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**C. Complexity**: $O(N)$"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def check_line(points, a, b):\n    line_points = []\n    for p in points:\n        if orientation(points[a], points[b], p) != 0:\n            line_points.append(p)\n    return len(line_points) <= 2 or all(\n        orientation(line_points[0], line_points[1], p) == 0\n        for p in line_points[2:]\n    )\n\ndef two_lines(points):\n    n = len(points)\n    if n <= 4: return True\n    return (check_line(points, 0, 1) or\n            check_line(points, 0, 2) or\n            check_line(points, 1, 2))",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "bool checkLine(vector<pair<int,int>>& points, int a, int b) {\n    vector<pair<int,int>> off;\n    for (auto& p : points)\n        if (orientation(points[a], points[b], p) != 0)\n            off.push_back(p);\n    if (off.size() <= 2) return true;\n    for (int i = 2; i < off.size(); i++)\n        if (orientation(off[0], off[1], off[i]) != 0) return false;\n    return true;\n}\n\nbool twoLines(vector<pair<int,int>>& points) {\n    int n = points.size();\n    if (n <= 4) return true;\n    return checkLine(points, 0, 1) ||\n           checkLine(points, 0, 2) ||\n           checkLine(points, 1, 2);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public static boolean checkLine(int[][] points, int a, int b) {\n    List<int[]> off = new ArrayList<>();\n    for (int[] p : points)\n        if (orientation(points[a], points[b], p) != 0)\n            off.add(p);\n    if (off.size() <= 2) return true;\n    for (int i = 2; i < off.size(); i++)\n        if (orientation(off.get(0), off.get(1), off.get(i)) != 0) return false;\n    return true;\n}\n\npublic static boolean twoLines(int[][] points) {\n    int n = points.length;\n    if (n <= 4) return true;\n    return checkLine(points, 0, 1) ||\n           checkLine(points, 0, 2) ||\n           checkLine(points, 1, 2);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function checkLine(points, a, b) {\n    const off = [];\n    for (const p of points)\n        if (orientation(points[a], points[b], p) !== 0)\n            off.push(p);\n    if (off.length <= 2) return true;\n    for (let i = 2; i < off.length; i++)\n        if (orientation(off[0], off[1], off[i]) !== 0) return false;\n    return true;\n}\n\nfunction twoLines(points) {\n    const n = points.length;\n    if (n <= 4) return true;\n    return checkLine(points, 0, 1) ||\n           checkLine(points, 0, 2) ||\n           checkLine(points, 1, 2);\n}",
+      "caption": null
+    }
+  ],
+  "difficulty": "Intermediate"
+}

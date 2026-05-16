@@ -1,0 +1,2445 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: fx
+        - generic [ref=e7]: DSA Mastery
+      - generic [ref=e8]:
+        - link "Learn" [ref=e9] [cursor=pointer]:
+          - /url: /learn
+        - link "Explore" [ref=e10] [cursor=pointer]:
+          - /url: /explore
+        - link "Patterns" [ref=e11] [cursor=pointer]:
+          - /url: /patterns
+      - generic [ref=e12]:
+        - 'button "Theme mode: auto (system). Click to switch to light mode." [ref=e13]': Auto
+        - link "GitHub" [ref=e14] [cursor=pointer]:
+          - /url: https://github.com/rashidtvmr/dsa-inventory
+          - img [ref=e15]
+  - main [ref=e19]:
+    - generic [ref=e20]:
+      - paragraph [ref=e21]: DSA Course — Complete Textbook
+      - heading "Mastering DSA Through Patterns" [level=1] [ref=e22]:
+        - text: Mastering DSA
+        - text: Through Patterns
+      - paragraph [ref=e23]: "8 parts · 194 chapters · 38k+ practice problems. Each chapter: brute force first, then the insight, then the optimal."
+      - generic [ref=e24]:
+        - link "Quick Patterns" [ref=e25] [cursor=pointer]:
+          - /url: /learn/patterns
+          - img [ref=e26]
+          - text: Quick Patterns
+        - link "Browse 38k+ Problems" [ref=e28] [cursor=pointer]:
+          - /url: /explore
+          - text: Browse 38k+ Problems
+          - img [ref=e29]
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - generic [ref=e33]:
+          - heading "Part I — Arrays & Pointers" [level=2] [ref=e35]
+          - generic [ref=e36]: 17 chapters
+        - generic [ref=e37]:
+          - link "1 Two Pointers Prune half the search space at every step. 14 min" [ref=e38] [cursor=pointer]:
+            - /url: /learn/two-pointers
+            - generic [ref=e40]:
+              - generic [ref=e41]: "1"
+              - generic [ref=e42]:
+                - generic [ref=e43]:
+                  - img [ref=e44]
+                  - heading "Two Pointers" [level=3] [ref=e47]
+                - paragraph [ref=e48]: Prune half the search space at every step.
+                - generic [ref=e49]:
+                  - generic [ref=e50]: 14 min
+                  - img [ref=e51]
+          - link "2 Sliding Window Turn O(n²) subarray loops into O(n) with a moving window. 18 min" [ref=e54] [cursor=pointer]:
+            - /url: /learn/sliding-window
+            - generic [ref=e56]:
+              - generic [ref=e57]: "2"
+              - generic [ref=e58]:
+                - generic [ref=e59]:
+                  - img [ref=e60]
+                  - heading "Sliding Window" [level=3] [ref=e63]
+                - paragraph [ref=e64]: Turn O(n²) subarray loops into O(n) with a moving window.
+                - generic [ref=e65]:
+                  - generic [ref=e66]: 18 min
+                  - img [ref=e67]
+          - link "3 Binary Search Eliminate half the search space every step. 16 min" [ref=e70] [cursor=pointer]:
+            - /url: /learn/binary-search
+            - generic [ref=e72]:
+              - generic [ref=e73]: "3"
+              - generic [ref=e74]:
+                - generic [ref=e75]:
+                  - img [ref=e76]
+                  - heading "Binary Search" [level=3] [ref=e79]
+                - paragraph [ref=e80]: Eliminate half the search space every step.
+                - generic [ref=e81]:
+                  - generic [ref=e82]: 16 min
+                  - img [ref=e83]
+          - link "4 Prefix Sum & Difference Array Precompute prefix sums. Any range query becomes O(1). 14 min" [ref=e86] [cursor=pointer]:
+            - /url: /learn/prefix-sum
+            - generic [ref=e88]:
+              - generic [ref=e89]: "4"
+              - generic [ref=e90]:
+                - generic [ref=e91]:
+                  - img [ref=e92]
+                  - heading "Prefix Sum & Difference Array" [level=3] [ref=e96]
+                - paragraph [ref=e97]: Precompute prefix sums. Any range query becomes O(1).
+                - generic [ref=e98]:
+                  - generic [ref=e99]: 14 min
+                  - img [ref=e100]
+          - link "5 Two Sum Family One element + its complement. HashMap stores what you've seen. O(n) beats O(n²). 16 min" [ref=e103] [cursor=pointer]:
+            - /url: /learn/two-sum-family
+            - generic [ref=e105]:
+              - generic [ref=e106]: "5"
+              - generic [ref=e107]:
+                - generic [ref=e108]:
+                  - img [ref=e109]
+                  - heading "Two Sum Family" [level=3] [ref=e113]
+                - paragraph [ref=e114]: One element + its complement. HashMap stores what you've seen. O(n) beats O(n²).
+                - generic [ref=e115]:
+                  - generic [ref=e116]: 16 min
+                  - img [ref=e117]
+          - link "6 Array Manipulation Tricks Rotate with 3 reverses. Mark visited in-place. Rearrange with index encoding. 14 min" [ref=e120] [cursor=pointer]:
+            - /url: /learn/array-tricks
+            - generic [ref=e122]:
+              - generic [ref=e123]: "6"
+              - generic [ref=e124]:
+                - generic [ref=e125]:
+                  - img [ref=e126]
+                  - heading "Array Manipulation Tricks" [level=3] [ref=e130]
+                - paragraph [ref=e131]: Rotate with 3 reverses. Mark visited in-place. Rearrange with index encoding.
+                - generic [ref=e132]:
+                  - generic [ref=e133]: 14 min
+                  - img [ref=e134]
+          - link "7 Difference Array & Range Updates Add delta to range [l,r] in O(1). Prefix sum to recover. Sweep line in 1D. 12 min" [ref=e137] [cursor=pointer]:
+            - /url: /learn/difference-array
+            - generic [ref=e139]:
+              - generic [ref=e140]: "7"
+              - generic [ref=e141]:
+                - generic [ref=e142]:
+                  - img [ref=e143]
+                  - heading "Difference Array & Range Updates" [level=3] [ref=e147]
+                - paragraph [ref=e148]: Add delta to range [l,r] in O(1). Prefix sum to recover. Sweep line in 1D.
+                - generic [ref=e149]:
+                  - generic [ref=e150]: 12 min
+                  - img [ref=e151]
+          - link "8 Contribution Technique Count how many times each element contributes to the answer. Reverse the summation. 14 min" [ref=e154] [cursor=pointer]:
+            - /url: /learn/contribution-technique
+            - generic [ref=e156]:
+              - generic [ref=e157]: "8"
+              - generic [ref=e158]:
+                - generic [ref=e159]:
+                  - img [ref=e160]
+                  - heading "Contribution Technique" [level=3] [ref=e164]
+                - paragraph [ref=e165]: Count how many times each element contributes to the answer. Reverse the summation.
+                - generic [ref=e166]:
+                  - generic [ref=e167]: 14 min
+                  - img [ref=e168]
+          - link "9 Binary Search on Answer When you can check \"is X achievable?\" in O(f(n)), find optimal X in O(f(n) log range). 16 min" [ref=e171] [cursor=pointer]:
+            - /url: /learn/binary-search-answer
+            - generic [ref=e173]:
+              - generic [ref=e174]: "9"
+              - generic [ref=e175]:
+                - generic [ref=e176]:
+                  - img [ref=e177]
+                  - heading "Binary Search on Answer" [level=3] [ref=e181]
+                - paragraph [ref=e182]: When you can check "is X achievable?" in O(f(n)), find optimal X in O(f(n) log range).
+                - generic [ref=e183]:
+                  - generic [ref=e184]: 16 min
+                  - img [ref=e185]
+          - link "10 Permutation Patterns Next permutation, cycle decomposition, inversions, k-th permutation in O(n). 15 min" [ref=e188] [cursor=pointer]:
+            - /url: /learn/permutation-patterns
+            - generic [ref=e190]:
+              - generic [ref=e191]: "10"
+              - generic [ref=e192]:
+                - generic [ref=e193]:
+                  - img [ref=e194]
+                  - heading "Permutation Patterns" [level=3] [ref=e198]
+                - paragraph [ref=e199]: Next permutation, cycle decomposition, inversions, k-th permutation in O(n).
+                - generic [ref=e200]:
+                  - generic [ref=e201]: 15 min
+                  - img [ref=e202]
+          - link "11 Word Break & String Segmentation Can we split a string into valid words? DP with trie or set lookup. 15 min" [ref=e205] [cursor=pointer]:
+            - /url: /learn/word-break-variants
+            - generic [ref=e207]:
+              - generic [ref=e208]: "11"
+              - generic [ref=e209]:
+                - generic [ref=e210]:
+                  - img [ref=e211]
+                  - heading "Word Break & String Segmentation" [level=3] [ref=e215]
+                - paragraph [ref=e216]: Can we split a string into valid words? DP with trie or set lookup.
+                - generic [ref=e217]:
+                  - generic [ref=e218]: 15 min
+                  - img [ref=e219]
+          - link "12 Shortest Supersequence & LCS Duality SCS(s,t) = |s| + |t| - LCS(s,t). Find minimum string containing both as subsequences. 13 min" [ref=e222] [cursor=pointer]:
+            - /url: /learn/shortest-supersequence
+            - generic [ref=e224]:
+              - generic [ref=e225]: "12"
+              - generic [ref=e226]:
+                - generic [ref=e227]:
+                  - img [ref=e228]
+                  - heading "Shortest Supersequence & LCS Duality" [level=3] [ref=e232]
+                - paragraph [ref=e233]: SCS(s,t) = |s| + |t| - LCS(s,t). Find minimum string containing both as subsequences.
+                - generic [ref=e234]:
+                  - generic [ref=e235]: 13 min
+                  - img [ref=e236]
+          - link "13 Kadane's Algorithm & Subarray Variants Max subarray sum in O(n). Circular variant, k disjoint subarrays, submatrix. 15 min" [ref=e239] [cursor=pointer]:
+            - /url: /learn/kadane-variants
+            - generic [ref=e241]:
+              - generic [ref=e242]: "13"
+              - generic [ref=e243]:
+                - generic [ref=e244]:
+                  - img [ref=e245]
+                  - heading "Kadane's Algorithm & Subarray Variants" [level=3] [ref=e249]
+                - paragraph [ref=e250]: Max subarray sum in O(n). Circular variant, k disjoint subarrays, submatrix.
+                - generic [ref=e251]:
+                  - generic [ref=e252]: 15 min
+                  - img [ref=e253]
+          - link "14 Two Pointer — Advanced Patterns 3Sum, 4Sum, remove duplicates, partition. Multiple pointer coordination. 14 min" [ref=e256] [cursor=pointer]:
+            - /url: /learn/two-pointer-advanced
+            - generic [ref=e258]:
+              - generic [ref=e259]: "14"
+              - generic [ref=e260]:
+                - generic [ref=e261]:
+                  - img [ref=e262]
+                  - heading "Two Pointer — Advanced Patterns" [level=3] [ref=e266]
+                - paragraph [ref=e267]: 3Sum, 4Sum, remove duplicates, partition. Multiple pointer coordination.
+                - generic [ref=e268]:
+                  - generic [ref=e269]: 14 min
+                  - img [ref=e270]
+          - link "15 Cyclic Sort & Missing Numbers Place each number at its correct index. Find missing/duplicate in O(n) O(1). 11 min" [ref=e273] [cursor=pointer]:
+            - /url: /learn/cyclic-sort
+            - generic [ref=e275]:
+              - generic [ref=e276]: "15"
+              - generic [ref=e277]:
+                - generic [ref=e278]:
+                  - img [ref=e279]
+                  - heading "Cyclic Sort & Missing Numbers" [level=3] [ref=e283]
+                - paragraph [ref=e284]: Place each number at its correct index. Find missing/duplicate in O(n) O(1).
+                - generic [ref=e285]:
+                  - generic [ref=e286]: 11 min
+                  - img [ref=e287]
+          - link "16 Array Rotation & Circular Problems Rotate by k, search in rotated array, circular queue/buffer problems. 12 min" [ref=e290] [cursor=pointer]:
+            - /url: /learn/array-rotation
+            - generic [ref=e292]:
+              - generic [ref=e293]: "16"
+              - generic [ref=e294]:
+                - generic [ref=e295]:
+                  - img [ref=e296]
+                  - heading "Array Rotation & Circular Problems" [level=3] [ref=e300]
+                - paragraph [ref=e301]: Rotate by k, search in rotated array, circular queue/buffer problems.
+                - generic [ref=e302]:
+                  - generic [ref=e303]: 12 min
+                  - img [ref=e304]
+          - link "17 Next Permutation & Lexicographic Order Find next/previous permutation in-place. Kth permutation, all permutations in order. 12 min" [ref=e307] [cursor=pointer]:
+            - /url: /learn/next-permutation
+            - generic [ref=e309]:
+              - generic [ref=e310]: "17"
+              - generic [ref=e311]:
+                - generic [ref=e312]:
+                  - img [ref=e313]
+                  - heading "Next Permutation & Lexicographic Order" [level=3] [ref=e317]
+                - paragraph [ref=e318]: Find next/previous permutation in-place. Kth permutation, all permutations in order.
+                - generic [ref=e319]:
+                  - generic [ref=e320]: 12 min
+                  - img [ref=e321]
+      - generic [ref=e324]:
+        - generic [ref=e325]:
+          - heading "Part II — Linked Structures" [level=2] [ref=e327]
+          - generic [ref=e328]: 20 chapters
+        - generic [ref=e329]:
+          - link "18 Linked List Dummy node. Slow/fast pointers. Reverse in-place. 18 min" [ref=e330] [cursor=pointer]:
+            - /url: /learn/linked-list
+            - generic [ref=e332]:
+              - generic [ref=e333]: "18"
+              - generic [ref=e334]:
+                - generic [ref=e335]:
+                  - img [ref=e336]
+                  - heading "Linked List" [level=3] [ref=e339]
+                - paragraph [ref=e340]: Dummy node. Slow/fast pointers. Reverse in-place.
+                - generic [ref=e341]:
+                  - generic [ref=e342]: 18 min
+                  - img [ref=e343]
+          - link "20 Advanced Tree Structures Segment tree for range queries. Fenwick for prefix sums. O(log n) both. 20 min" [ref=e346] [cursor=pointer]:
+            - /url: /learn/advanced-trees
+            - generic [ref=e348]:
+              - generic [ref=e349]: "20"
+              - generic [ref=e350]:
+                - generic [ref=e351]:
+                  - img [ref=e352]
+                  - heading "Advanced Tree Structures" [level=3] [ref=e356]
+                - paragraph [ref=e357]: Segment tree for range queries. Fenwick for prefix sums. O(log n) both.
+                - generic [ref=e358]:
+                  - generic [ref=e359]: 20 min
+                  - img [ref=e360]
+          - link "21 Sparse Table & Binary Lifting Precompute powers of 2. Answer range min/max in O(1). 18 min" [ref=e363] [cursor=pointer]:
+            - /url: /learn/sparse-table
+            - generic [ref=e365]:
+              - generic [ref=e366]: "21"
+              - generic [ref=e367]:
+                - generic [ref=e368]:
+                  - img [ref=e369]
+                  - heading "Sparse Table & Binary Lifting" [level=3] [ref=e373]
+                - paragraph [ref=e374]: Precompute powers of 2. Answer range min/max in O(1).
+                - generic [ref=e375]:
+                  - generic [ref=e376]: 18 min
+                  - img [ref=e377]
+          - 'link "22 Segment Tree: Lazy Propagation Range update in O(log n). Defer the work until you actually need it. 20 min" [ref=e380] [cursor=pointer]':
+            - /url: /learn/segment-tree-lazy
+            - generic [ref=e382]:
+              - generic [ref=e383]: "22"
+              - generic [ref=e384]:
+                - generic [ref=e385]:
+                  - img [ref=e386]
+                  - 'heading "Segment Tree: Lazy Propagation" [level=3] [ref=e390]'
+                - paragraph [ref=e391]: Range update in O(log n). Defer the work until you actually need it.
+                - generic [ref=e392]:
+                  - generic [ref=e393]: 20 min
+                  - img [ref=e394]
+          - link "23 Cycle Detection Floyd's tortoise and hare. O(n) time, O(1) space. Detects AND finds the cycle. 14 min" [ref=e397] [cursor=pointer]:
+            - /url: /learn/cycle-detection
+            - generic [ref=e399]:
+              - generic [ref=e400]: "23"
+              - generic [ref=e401]:
+                - generic [ref=e402]:
+                  - img [ref=e403]
+                  - heading "Cycle Detection" [level=3] [ref=e406]
+                - paragraph [ref=e407]: Floyd's tortoise and hare. O(n) time, O(1) space. Detects AND finds the cycle.
+                - generic [ref=e408]:
+                  - generic [ref=e409]: 14 min
+                  - img [ref=e410]
+          - link "24 Tree Construction from Traversals Preorder[0] = root. Inorder splits left/right. Find the split, recurse. 16 min" [ref=e413] [cursor=pointer]:
+            - /url: /learn/tree-construction
+            - generic [ref=e415]:
+              - generic [ref=e416]: "24"
+              - generic [ref=e417]:
+                - generic [ref=e418]:
+                  - img [ref=e419]
+                  - heading "Tree Construction from Traversals" [level=3] [ref=e421]
+                - paragraph [ref=e422]: Preorder[0] = root. Inorder splits left/right. Find the split, recurse.
+                - generic [ref=e423]:
+                  - generic [ref=e424]: 16 min
+                  - img [ref=e425]
+          - link "25 Lowest Common Ancestor (LCA) Find common ancestor of two nodes. Binary lifting O(n log n). Euler tour + RMQ O(n). 16 min" [ref=e428] [cursor=pointer]:
+            - /url: /learn/lca
+            - generic [ref=e430]:
+              - generic [ref=e431]: "25"
+              - generic [ref=e432]:
+                - generic [ref=e433]:
+                  - img [ref=e434]
+                  - heading "Lowest Common Ancestor (LCA)" [level=3] [ref=e440]
+                - paragraph [ref=e441]: Find common ancestor of two nodes. Binary lifting O(n log n). Euler tour + RMQ O(n).
+                - generic [ref=e442]:
+                  - generic [ref=e443]: 16 min
+                  - img [ref=e444]
+          - link "26 DSU on Tree (Small-to-Large) Heavy child inherits parent's data. Light children merged small-to-large. O(n log n). 15 min" [ref=e447] [cursor=pointer]:
+            - /url: /learn/dsu-on-tree
+            - generic [ref=e449]:
+              - generic [ref=e450]: "26"
+              - generic [ref=e451]:
+                - generic [ref=e452]:
+                  - img [ref=e453]
+                  - heading "DSU on Tree (Small-to-Large)" [level=3] [ref=e459]
+                - paragraph [ref=e460]: Heavy child inherits parent's data. Light children merged small-to-large. O(n log n).
+                - generic [ref=e461]:
+                  - generic [ref=e462]: 15 min
+                  - img [ref=e463]
+          - link "27 Tree Diameter & Path Queries Diameter via two BFS. Rerooting DP for all-root path queries. Longest path in O(n). 14 min" [ref=e466] [cursor=pointer]:
+            - /url: /learn/tree-diameter
+            - generic [ref=e468]:
+              - generic [ref=e469]: "27"
+              - generic [ref=e470]:
+                - generic [ref=e471]:
+                  - img [ref=e472]
+                  - heading "Tree Diameter & Path Queries" [level=3] [ref=e478]
+                - paragraph [ref=e479]: Diameter via two BFS. Rerooting DP for all-root path queries. Longest path in O(n).
+                - generic [ref=e480]:
+                  - generic [ref=e481]: 14 min
+                  - img [ref=e482]
+          - link "28 Offline LCA (Tarjan's) Answer all LCA queries in O(n + q) using Union-Find. Process queries offline. 13 min" [ref=e485] [cursor=pointer]:
+            - /url: /learn/offline-lca
+            - generic [ref=e487]:
+              - generic [ref=e488]: "28"
+              - generic [ref=e489]:
+                - generic [ref=e490]:
+                  - img [ref=e491]
+                  - heading "Offline LCA (Tarjan's)" [level=3] [ref=e497]
+                - paragraph [ref=e498]: Answer all LCA queries in O(n + q) using Union-Find. Process queries offline.
+                - generic [ref=e499]:
+                  - generic [ref=e500]: 13 min
+                  - img [ref=e501]
+          - link "29 Tree Isomorphism & Canonical Forms Two trees are isomorphic iff they have the same canonical form. AHU in O(n log n). 13 min" [ref=e504] [cursor=pointer]:
+            - /url: /learn/tree-isomorphism
+            - generic [ref=e506]:
+              - generic [ref=e507]: "29"
+              - generic [ref=e508]:
+                - generic [ref=e509]:
+                  - img [ref=e510]
+                  - heading "Tree Isomorphism & Canonical Forms" [level=3] [ref=e516]
+                - paragraph [ref=e517]: Two trees are isomorphic iff they have the same canonical form. AHU in O(n log n).
+                - generic [ref=e518]:
+                  - generic [ref=e519]: 13 min
+                  - img [ref=e520]
+          - link "30 Persistent Union-Find (DSU with Rollback) Undo union operations. Offline dynamic connectivity with O(n log²n). 14 min" [ref=e523] [cursor=pointer]:
+            - /url: /learn/persistent-union-find
+            - generic [ref=e525]:
+              - generic [ref=e526]: "30"
+              - generic [ref=e527]:
+                - generic [ref=e528]:
+                  - img [ref=e529]
+                  - heading "Persistent Union-Find (DSU with Rollback)" [level=3] [ref=e535]
+                - paragraph [ref=e536]: Undo union operations. Offline dynamic connectivity with O(n log²n).
+                - generic [ref=e537]:
+                  - generic [ref=e538]: 14 min
+                  - img [ref=e539]
+          - link "31 Binary Lifting Jump 2^k ancestors in O(log n). LCA, kth ancestor, path queries on trees. 14 min" [ref=e542] [cursor=pointer]:
+            - /url: /learn/binary-lifting
+            - generic [ref=e544]:
+              - generic [ref=e545]: "31"
+              - generic [ref=e546]:
+                - generic [ref=e547]:
+                  - img [ref=e548]
+                  - heading "Binary Lifting" [level=3] [ref=e550]
+                - paragraph [ref=e551]: Jump 2^k ancestors in O(log n). LCA, kth ancestor, path queries on trees.
+                - generic [ref=e552]:
+                  - generic [ref=e553]: 14 min
+                  - img [ref=e554]
+          - link "32 Segment Tree Basics Point updates and range queries in O(log n). Build, query, update. 14 min" [ref=e557] [cursor=pointer]:
+            - /url: /learn/segment-tree-basics
+            - generic [ref=e559]:
+              - generic [ref=e560]: "32"
+              - generic [ref=e561]:
+                - generic [ref=e562]:
+                  - img [ref=e563]
+                  - heading "Segment Tree Basics" [level=3] [ref=e565]
+                - paragraph [ref=e566]: Point updates and range queries in O(log n). Build, query, update.
+                - generic [ref=e567]:
+                  - generic [ref=e568]: 14 min
+                  - img [ref=e569]
+          - link "33 Tree Path Problems Root-to-leaf paths, path sums, max path through any nodes. 13 min" [ref=e572] [cursor=pointer]:
+            - /url: /learn/tree-path-problems
+            - generic [ref=e574]:
+              - generic [ref=e575]: "33"
+              - generic [ref=e576]:
+                - generic [ref=e577]:
+                  - img [ref=e578]
+                  - heading "Tree Path Problems" [level=3] [ref=e580]
+                - paragraph [ref=e581]: Root-to-leaf paths, path sums, max path through any nodes.
+                - generic [ref=e582]:
+                  - generic [ref=e583]: 13 min
+                  - img [ref=e584]
+          - link "34 Iterative Tree & Graph Traversal DFS without recursion. Explicit stack for inorder, preorder, postorder, Morris. 13 min" [ref=e587] [cursor=pointer]:
+            - /url: /learn/iterative-traversal
+            - generic [ref=e589]:
+              - generic [ref=e590]: "34"
+              - generic [ref=e591]:
+                - generic [ref=e592]:
+                  - img [ref=e593]
+                  - heading "Iterative Tree & Graph Traversal" [level=3] [ref=e595]
+                - paragraph [ref=e596]: DFS without recursion. Explicit stack for inorder, preorder, postorder, Morris.
+                - generic [ref=e597]:
+                  - generic [ref=e598]: 13 min
+                  - img [ref=e599]
+          - link "35 BST Operations & Properties BST insert, delete, validate, floor/ceiling, kth element, convert to/from sorted. 14 min" [ref=e602] [cursor=pointer]:
+            - /url: /learn/bst-operations
+            - generic [ref=e604]:
+              - generic [ref=e605]: "35"
+              - generic [ref=e606]:
+                - generic [ref=e607]:
+                  - img [ref=e608]
+                  - heading "BST Operations & Properties" [level=3] [ref=e610]
+                - paragraph [ref=e611]: BST insert, delete, validate, floor/ceiling, kth element, convert to/from sorted.
+                - generic [ref=e612]:
+                  - generic [ref=e613]: 14 min
+                  - img [ref=e614]
+          - link "36 Linked List Reversal Patterns Reverse full list, reverse k-groups, reverse between positions, copy with random. 13 min" [ref=e617] [cursor=pointer]:
+            - /url: /learn/linked-list-reversal
+            - generic [ref=e619]:
+              - generic [ref=e620]: "36"
+              - generic [ref=e621]:
+                - generic [ref=e622]:
+                  - img [ref=e623]
+                  - heading "Linked List Reversal Patterns" [level=3] [ref=e626]
+                - paragraph [ref=e627]: Reverse full list, reverse k-groups, reverse between positions, copy with random.
+                - generic [ref=e628]:
+                  - generic [ref=e629]: 13 min
+                  - img [ref=e630]
+          - 'link "37 Tree Level-Order Variants BFS tree traversals: zigzag, right side view, level averages, cousins. 12 min" [ref=e633] [cursor=pointer]':
+            - /url: /learn/tree-level-order
+            - generic [ref=e635]:
+              - generic [ref=e636]: "37"
+              - generic [ref=e637]:
+                - generic [ref=e638]:
+                  - img [ref=e639]
+                  - heading "Tree Level-Order Variants" [level=3] [ref=e641]
+                - paragraph [ref=e642]: "BFS tree traversals: zigzag, right side view, level averages, cousins."
+                - generic [ref=e643]:
+                  - generic [ref=e644]: 12 min
+                  - img [ref=e645]
+          - link "38 Tree DP on General Trees DP on trees with arbitrary number of children. Subtree properties, rerooting. 14 min" [ref=e648] [cursor=pointer]:
+            - /url: /learn/tree-general-dp
+            - generic [ref=e650]:
+              - generic [ref=e651]: "38"
+              - generic [ref=e652]:
+                - generic [ref=e653]:
+                  - img [ref=e654]
+                  - heading "Tree DP on General Trees" [level=3] [ref=e656]
+                - paragraph [ref=e657]: DP on trees with arbitrary number of children. Subtree properties, rerooting.
+                - generic [ref=e658]:
+                  - generic [ref=e659]: 14 min
+                  - img [ref=e660]
+      - generic [ref=e663]:
+        - generic [ref=e664]:
+          - heading "Part III — Hashing & Auxiliary Structures" [level=2] [ref=e666]
+          - generic [ref=e667]: 14 chapters
+        - generic [ref=e668]:
+          - link "39 Heap & Priority Queue O(log n) access to the min or max. Always. 14 min" [ref=e669] [cursor=pointer]:
+            - /url: /learn/heap
+            - generic [ref=e671]:
+              - generic [ref=e672]: "39"
+              - generic [ref=e673]:
+                - generic [ref=e674]:
+                  - img [ref=e675]
+                  - heading "Heap & Priority Queue" [level=3] [ref=e677]
+                - paragraph [ref=e678]: O(log n) access to the min or max. Always.
+                - generic [ref=e679]:
+                  - generic [ref=e680]: 14 min
+                  - img [ref=e681]
+          - link "40 Trie (Prefix Tree) Fast prefix lookup. One character per level. 12 min" [ref=e684] [cursor=pointer]:
+            - /url: /learn/trie
+            - generic [ref=e686]:
+              - generic [ref=e687]: "40"
+              - generic [ref=e688]:
+                - generic [ref=e689]:
+                  - img [ref=e690]
+                  - heading "Trie (Prefix Tree)" [level=3] [ref=e695]
+                - paragraph [ref=e696]: Fast prefix lookup. One character per level.
+                - generic [ref=e697]:
+                  - generic [ref=e698]: 12 min
+                  - img [ref=e699]
+          - link "41 Monotonic Stack & Queue Next greater element in O(n). Sliding window max in O(n). 15 min" [ref=e702] [cursor=pointer]:
+            - /url: /learn/monotonic-stack
+            - generic [ref=e704]:
+              - generic [ref=e705]: "41"
+              - generic [ref=e706]:
+                - generic [ref=e707]:
+                  - img [ref=e708]
+                  - heading "Monotonic Stack & Queue" [level=3] [ref=e710]
+                - paragraph [ref=e711]: Next greater element in O(n). Sliding window max in O(n).
+                - generic [ref=e712]:
+                  - generic [ref=e713]: 15 min
+                  - img [ref=e714]
+          - link "42 HashMap & Counting Patterns Trading time for space. One pass with a map beats two nested loops. 16 min" [ref=e717] [cursor=pointer]:
+            - /url: /learn/hashmap-patterns
+            - generic [ref=e719]:
+              - generic [ref=e720]: "42"
+              - generic [ref=e721]:
+                - generic [ref=e722]:
+                  - img [ref=e723]
+                  - heading "HashMap & Counting Patterns" [level=3] [ref=e727]
+                - paragraph [ref=e728]: Trading time for space. One pass with a map beats two nested loops.
+                - generic [ref=e729]:
+                  - generic [ref=e730]: 16 min
+                  - img [ref=e731]
+          - link "43 Stack & Queue Patterns LIFO for matching/nesting. FIFO for BFS/order. Deque for sliding extremes. 18 min" [ref=e734] [cursor=pointer]:
+            - /url: /learn/stack-queue
+            - generic [ref=e736]:
+              - generic [ref=e737]: "43"
+              - generic [ref=e738]:
+                - generic [ref=e739]:
+                  - img [ref=e740]
+                  - heading "Stack & Queue Patterns" [level=3] [ref=e746]
+                - paragraph [ref=e747]: LIFO for matching/nesting. FIFO for BFS/order. Deque for sliding extremes.
+                - generic [ref=e748]:
+                  - generic [ref=e749]: 18 min
+                  - img [ref=e750]
+          - 'link "44 Counting Patterns Count pairs, subarrays, paths. Always ask: what structure enables efficient counting? 18 min" [ref=e753] [cursor=pointer]':
+            - /url: /learn/counting-patterns
+            - generic [ref=e755]:
+              - generic [ref=e756]: "44"
+              - generic [ref=e757]:
+                - generic [ref=e758]:
+                  - img [ref=e759]
+                  - heading "Counting Patterns" [level=3] [ref=e763]
+                - paragraph [ref=e764]: "Count pairs, subarrays, paths. Always ask: what structure enables efficient counting?"
+                - generic [ref=e765]:
+                  - generic [ref=e766]: 18 min
+                  - img [ref=e767]
+          - link "45 K-th Element Patterns QuickSelect for O(n), heap for O(n log k), binary search for implicit structures. 16 min" [ref=e770] [cursor=pointer]:
+            - /url: /learn/kth-element
+            - generic [ref=e772]:
+              - generic [ref=e773]: "45"
+              - generic [ref=e774]:
+                - generic [ref=e775]:
+                  - img [ref=e776]
+                  - heading "K-th Element Patterns" [level=3] [ref=e778]
+                - paragraph [ref=e779]: QuickSelect for O(n), heap for O(n log k), binary search for implicit structures.
+                - generic [ref=e780]:
+                  - generic [ref=e781]: 16 min
+                  - img [ref=e782]
+          - link "46 Monotonic Queue Sliding window max/min in O(1). Deque keeps candidates in sorted order. 15 min" [ref=e785] [cursor=pointer]:
+            - /url: /learn/monotonic-queue
+            - generic [ref=e787]:
+              - generic [ref=e788]: "46"
+              - generic [ref=e789]:
+                - generic [ref=e790]:
+                  - img [ref=e791]
+                  - heading "Monotonic Queue" [level=3] [ref=e795]
+                - paragraph [ref=e796]: Sliding window max/min in O(1). Deque keeps candidates in sorted order.
+                - generic [ref=e797]:
+                  - generic [ref=e798]: 15 min
+                  - img [ref=e799]
+          - link "47 Two Heaps Pattern Balance a max-heap and min-heap to maintain median in O(log n). 14 min" [ref=e802] [cursor=pointer]:
+            - /url: /learn/two-heaps
+            - generic [ref=e804]:
+              - generic [ref=e805]: "47"
+              - generic [ref=e806]:
+                - generic [ref=e807]:
+                  - img [ref=e808]
+                  - heading "Two Heaps Pattern" [level=3] [ref=e810]
+                - paragraph [ref=e811]: Balance a max-heap and min-heap to maintain median in O(log n).
+                - generic [ref=e812]:
+                  - generic [ref=e813]: 14 min
+                  - img [ref=e814]
+          - link "48 Bracket Sequences Stack for matching. Count valid sequences. DP for generation. Min removals. 15 min" [ref=e817] [cursor=pointer]:
+            - /url: /learn/bracket-sequences
+            - generic [ref=e819]:
+              - generic [ref=e820]: "48"
+              - generic [ref=e821]:
+                - generic [ref=e822]:
+                  - img [ref=e823]
+                  - heading "Bracket Sequences" [level=3] [ref=e827]
+                - paragraph [ref=e828]: Stack for matching. Count valid sequences. DP for generation. Min removals.
+                - generic [ref=e829]:
+                  - generic [ref=e830]: 15 min
+                  - img [ref=e831]
+          - link "49 Amortized O(1) Patterns O(1) average via \"charge\" analysis. Two stacks, stack with min, queue from stacks. 13 min" [ref=e834] [cursor=pointer]:
+            - /url: /learn/amortized-patterns
+            - generic [ref=e836]:
+              - generic [ref=e837]: "49"
+              - generic [ref=e838]:
+                - generic [ref=e839]:
+                  - img [ref=e840]
+                  - heading "Amortized O(1) Patterns" [level=3] [ref=e844]
+                - paragraph [ref=e845]: O(1) average via "charge" analysis. Two stacks, stack with min, queue from stacks.
+                - generic [ref=e846]:
+                  - generic [ref=e847]: 13 min
+                  - img [ref=e848]
+          - link "50 Expression Parsing & Evaluation Stack-based evaluation. Shunting-Yard for precedence. Recursive descent parser. 15 min" [ref=e851] [cursor=pointer]:
+            - /url: /learn/expression-parsing
+            - generic [ref=e853]:
+              - generic [ref=e854]: "50"
+              - generic [ref=e855]:
+                - generic [ref=e856]:
+                  - img [ref=e857]
+                  - heading "Expression Parsing & Evaluation" [level=3] [ref=e861]
+                - paragraph [ref=e862]: Stack-based evaluation. Shunting-Yard for precedence. Recursive descent parser.
+                - generic [ref=e863]:
+                  - generic [ref=e864]: 15 min
+                  - img [ref=e865]
+          - link "51 Bitwise Trie (XOR Trie) Binary trie on bit representation. Find max XOR pair in O(n log MAX). 13 min" [ref=e868] [cursor=pointer]:
+            - /url: /learn/trie-xor
+            - generic [ref=e870]:
+              - generic [ref=e871]: "51"
+              - generic [ref=e872]:
+                - generic [ref=e873]:
+                  - img [ref=e874]
+                  - heading "Bitwise Trie (XOR Trie)" [level=3] [ref=e878]
+                - paragraph [ref=e879]: Binary trie on bit representation. Find max XOR pair in O(n log MAX).
+                - generic [ref=e880]:
+                  - generic [ref=e881]: 13 min
+                  - img [ref=e882]
+          - link "52 K-Way Merge Merge k sorted structures with a min-heap. Find smallest range, kth smallest. 13 min" [ref=e885] [cursor=pointer]:
+            - /url: /learn/k-way-merge
+            - generic [ref=e887]:
+              - generic [ref=e888]: "52"
+              - generic [ref=e889]:
+                - generic [ref=e890]:
+                  - img [ref=e891]
+                  - heading "K-Way Merge" [level=3] [ref=e895]
+                - paragraph [ref=e896]: Merge k sorted structures with a min-heap. Find smallest range, kth smallest.
+                - generic [ref=e897]:
+                  - generic [ref=e898]: 13 min
+                  - img [ref=e899]
+      - generic [ref=e902]:
+        - generic [ref=e903]:
+          - heading "Part IV — Core Algorithms" [level=2] [ref=e905]
+          - generic [ref=e906]: 41 chapters
+        - generic [ref=e907]:
+          - link "53 Dynamic Programming Overlapping subproblems + optimal substructure = DP. 24 min" [ref=e908] [cursor=pointer]:
+            - /url: /learn/dynamic-programming
+            - generic [ref=e910]:
+              - generic [ref=e911]: "53"
+              - generic [ref=e912]:
+                - generic [ref=e913]:
+                  - img [ref=e914]
+                  - heading "Dynamic Programming" [level=3] [ref=e918]
+                - paragraph [ref=e919]: Overlapping subproblems + optimal substructure = DP.
+                - generic [ref=e920]:
+                  - generic [ref=e921]: 24 min
+                  - img [ref=e922]
+          - link "54 Backtracking Try every option. Undo. Move on. 16 min" [ref=e925] [cursor=pointer]:
+            - /url: /learn/backtracking
+            - generic [ref=e927]:
+              - generic [ref=e928]: "54"
+              - generic [ref=e929]:
+                - generic [ref=e930]:
+                  - img [ref=e931]
+                  - heading "Backtracking" [level=3] [ref=e934]
+                - paragraph [ref=e935]: Try every option. Undo. Move on.
+                - generic [ref=e936]:
+                  - generic [ref=e937]: 16 min
+                  - img [ref=e938]
+          - link "55 Greedy Algorithms Make the locally optimal choice. Hope it's globally optimal. 14 min" [ref=e941] [cursor=pointer]:
+            - /url: /learn/greedy
+            - generic [ref=e943]:
+              - generic [ref=e944]: "55"
+              - generic [ref=e945]:
+                - generic [ref=e946]:
+                  - img [ref=e947]
+                  - heading "Greedy Algorithms" [level=3] [ref=e949]
+                - paragraph [ref=e950]: Make the locally optimal choice. Hope it's globally optimal.
+                - generic [ref=e951]:
+                  - generic [ref=e952]: 14 min
+                  - img [ref=e953]
+          - link "57 Shortest Path Algorithms Dijkstra for non-negative weights. Bellman-Ford for negatives. Floyd for all pairs. 22 min" [ref=e956] [cursor=pointer]:
+            - /url: /learn/shortest-path
+            - generic [ref=e958]:
+              - generic [ref=e959]: "57"
+              - generic [ref=e960]:
+                - generic [ref=e961]:
+                  - img [ref=e962]
+                  - heading "Shortest Path Algorithms" [level=3] [ref=e968]
+                - paragraph [ref=e969]: Dijkstra for non-negative weights. Bellman-Ford for negatives. Floyd for all pairs.
+                - generic [ref=e970]:
+                  - generic [ref=e971]: 22 min
+                  - img [ref=e972]
+          - link "58 Bitmask DP Subsets as integers. 2^n states where n ≤ 20. 18 min" [ref=e975] [cursor=pointer]:
+            - /url: /learn/bitmask-dp
+            - generic [ref=e977]:
+              - generic [ref=e978]: "58"
+              - generic [ref=e979]:
+                - generic [ref=e980]:
+                  - img [ref=e981]
+                  - heading "Bitmask DP" [level=3] [ref=e985]
+                - paragraph [ref=e986]: Subsets as integers. 2^n states where n ≤ 20.
+                - generic [ref=e987]:
+                  - generic [ref=e988]: 18 min
+                  - img [ref=e989]
+          - link "59 Divide and Conquer Split. Solve each half. Merge. Repeat until trivial. 18 min" [ref=e992] [cursor=pointer]:
+            - /url: /learn/divide-conquer
+            - generic [ref=e994]:
+              - generic [ref=e995]: "59"
+              - generic [ref=e996]:
+                - generic [ref=e997]:
+                  - img [ref=e998]
+                  - heading "Divide and Conquer" [level=3] [ref=e1004]
+                - paragraph [ref=e1005]: Split. Solve each half. Merge. Repeat until trivial.
+                - generic [ref=e1006]:
+                  - generic [ref=e1007]: 18 min
+                  - img [ref=e1008]
+          - link "60 Knapsack DP Iterate backwards for 0/1. Forwards for unbounded. Know the difference. 18 min" [ref=e1011] [cursor=pointer]:
+            - /url: /learn/knapsack-dp
+            - generic [ref=e1013]:
+              - generic [ref=e1014]: "60"
+              - generic [ref=e1015]:
+                - generic [ref=e1016]:
+                  - img [ref=e1017]
+                  - heading "Knapsack DP" [level=3] [ref=e1021]
+                - paragraph [ref=e1022]: Iterate backwards for 0/1. Forwards for unbounded. Know the difference.
+                - generic [ref=e1023]:
+                  - generic [ref=e1024]: 18 min
+                  - img [ref=e1025]
+          - 'link "61 Advanced Graph: SCC, Bridges & 2-SAT Tarjan finds everything: SCCs, bridges, articulation points — one DFS. 22 min" [ref=e1028] [cursor=pointer]':
+            - /url: /learn/graph-advanced
+            - generic [ref=e1030]:
+              - generic [ref=e1031]: "61"
+              - generic [ref=e1032]:
+                - generic [ref=e1033]:
+                  - img [ref=e1034]
+                  - 'heading "Advanced Graph: SCC, Bridges & 2-SAT" [level=3] [ref=e1040]'
+                - paragraph [ref=e1041]: "Tarjan finds everything: SCCs, bridges, articulation points — one DFS."
+                - generic [ref=e1042]:
+                  - generic [ref=e1043]: 22 min
+                  - img [ref=e1044]
+          - link "62 Bipartite Graphs & Matching 2-colorable = bipartite. BFS/DFS detects it. Matching pairs them up optimally. 16 min" [ref=e1047] [cursor=pointer]:
+            - /url: /learn/bipartite
+            - generic [ref=e1049]:
+              - generic [ref=e1050]: "62"
+              - generic [ref=e1051]:
+                - generic [ref=e1052]:
+                  - img [ref=e1053]
+                  - heading "Bipartite Graphs & Matching" [level=3] [ref=e1059]
+                - paragraph [ref=e1060]: 2-colorable = bipartite. BFS/DFS detects it. Matching pairs them up optimally.
+                - generic [ref=e1061]:
+                  - generic [ref=e1062]: 16 min
+                  - img [ref=e1063]
+          - link "63 Coordinate Compression Map large values to small ranks. Enables Fenwick/SegTree on value-based problems. 14 min" [ref=e1066] [cursor=pointer]:
+            - /url: /learn/coordinate-compression
+            - generic [ref=e1068]:
+              - generic [ref=e1069]: "63"
+              - generic [ref=e1070]:
+                - generic [ref=e1071]:
+                  - img [ref=e1072]
+                  - heading "Coordinate Compression" [level=3] [ref=e1076]
+                - paragraph [ref=e1077]: Map large values to small ranks. Enables Fenwick/SegTree on value-based problems.
+                - generic [ref=e1078]:
+                  - generic [ref=e1079]: 14 min
+                  - img [ref=e1080]
+          - link "64 Topological Sort Order nodes so all edges point forward. BFS (Kahn's) or DFS post-order. 16 min" [ref=e1083] [cursor=pointer]:
+            - /url: /learn/topological-sort
+            - generic [ref=e1085]:
+              - generic [ref=e1086]: "64"
+              - generic [ref=e1087]:
+                - generic [ref=e1088]:
+                  - img [ref=e1089]
+                  - heading "Topological Sort" [level=3] [ref=e1095]
+                - paragraph [ref=e1096]: Order nodes so all edges point forward. BFS (Kahn's) or DFS post-order.
+                - generic [ref=e1097]:
+                  - generic [ref=e1098]: 16 min
+                  - img [ref=e1099]
+          - link "65 Minimum Spanning Tree Connect all nodes with minimum total edge weight. Kruskal or Prim. 16 min" [ref=e1102] [cursor=pointer]:
+            - /url: /learn/minimum-spanning-tree
+            - generic [ref=e1104]:
+              - generic [ref=e1105]: "65"
+              - generic [ref=e1106]:
+                - generic [ref=e1107]:
+                  - img [ref=e1108]
+                  - heading "Minimum Spanning Tree" [level=3] [ref=e1114]
+                - paragraph [ref=e1115]: Connect all nodes with minimum total edge weight. Kruskal or Prim.
+                - generic [ref=e1116]:
+                  - generic [ref=e1117]: 16 min
+                  - img [ref=e1118]
+          - link "66 Network Flow Max flow = min cut. Dinic's runs in O(V²E). Models matching, assignment, feasibility. 18 min" [ref=e1121] [cursor=pointer]:
+            - /url: /learn/network-flow
+            - generic [ref=e1123]:
+              - generic [ref=e1124]: "66"
+              - generic [ref=e1125]:
+                - generic [ref=e1126]:
+                  - img [ref=e1127]
+                  - heading "Network Flow" [level=3] [ref=e1133]
+                - paragraph [ref=e1134]: Max flow = min cut. Dinic's runs in O(V²E). Models matching, assignment, feasibility.
+                - generic [ref=e1135]:
+                  - generic [ref=e1136]: 18 min
+                  - img [ref=e1137]
+          - link "67 Meet in the Middle Split problem in half. Enumerate each half independently. Combine in O(n log n). 14 min" [ref=e1140] [cursor=pointer]:
+            - /url: /learn/meet-in-middle
+            - generic [ref=e1142]:
+              - generic [ref=e1143]: "67"
+              - generic [ref=e1144]:
+                - generic [ref=e1145]:
+                  - img [ref=e1146]
+                  - heading "Meet in the Middle" [level=3] [ref=e1150]
+                - paragraph [ref=e1151]: Split problem in half. Enumerate each half independently. Combine in O(n log n).
+                - generic [ref=e1152]:
+                  - generic [ref=e1153]: 14 min
+                  - img [ref=e1154]
+          - link "68 Convex Hull Trick Optimize DP with min/max of linear functions. Maintains a convex hull of lines. 16 min" [ref=e1157] [cursor=pointer]:
+            - /url: /learn/convex-hull-trick
+            - generic [ref=e1159]:
+              - generic [ref=e1160]: "68"
+              - generic [ref=e1161]:
+                - generic [ref=e1162]:
+                  - img [ref=e1163]
+                  - heading "Convex Hull Trick" [level=3] [ref=e1167]
+                - paragraph [ref=e1168]: Optimize DP with min/max of linear functions. Maintains a convex hull of lines.
+                - generic [ref=e1169]:
+                  - generic [ref=e1170]: 16 min
+                  - img [ref=e1171]
+          - link "69 Centroid Decomposition Divide tree at centroid. Every path passes through O(log n) centroids. 16 min" [ref=e1174] [cursor=pointer]:
+            - /url: /learn/centroid-decomposition
+            - generic [ref=e1176]:
+              - generic [ref=e1177]: "69"
+              - generic [ref=e1178]:
+                - generic [ref=e1179]:
+                  - img [ref=e1180]
+                  - heading "Centroid Decomposition" [level=3] [ref=e1186]
+                - paragraph [ref=e1187]: Divide tree at centroid. Every path passes through O(log n) centroids.
+                - generic [ref=e1188]:
+                  - generic [ref=e1189]: 16 min
+                  - img [ref=e1190]
+          - link "70 Line Sweep Sweep a line across events. Sort by x, process events with a sorted structure. 16 min" [ref=e1193] [cursor=pointer]:
+            - /url: /learn/line-sweep
+            - generic [ref=e1195]:
+              - generic [ref=e1196]: "70"
+              - generic [ref=e1197]:
+                - generic [ref=e1198]:
+                  - img [ref=e1199]
+                  - heading "Line Sweep" [level=3] [ref=e1205]
+                - paragraph [ref=e1206]: Sweep a line across events. Sort by x, process events with a sorted structure.
+                - generic [ref=e1207]:
+                  - generic [ref=e1208]: 16 min
+                  - img [ref=e1209]
+          - link "71 2-SAT Solve boolean formulas with 2-literal clauses in O(V+E) via SCC. 16 min" [ref=e1212] [cursor=pointer]:
+            - /url: /learn/two-sat
+            - generic [ref=e1214]:
+              - generic [ref=e1215]: "71"
+              - generic [ref=e1216]:
+                - generic [ref=e1217]:
+                  - img [ref=e1218]
+                  - heading "2-SAT" [level=3] [ref=e1224]
+                - paragraph [ref=e1225]: Solve boolean formulas with 2-literal clauses in O(V+E) via SCC.
+                - generic [ref=e1226]:
+                  - generic [ref=e1227]: 16 min
+                  - img [ref=e1228]
+          - link "72 Bridges & Articulation Points Find critical edges and vertices. DFS with low[] array. O(V+E). 15 min" [ref=e1231] [cursor=pointer]:
+            - /url: /learn/bridges-articulation
+            - generic [ref=e1233]:
+              - generic [ref=e1234]: "72"
+              - generic [ref=e1235]:
+                - generic [ref=e1236]:
+                  - img [ref=e1237]
+                  - heading "Bridges & Articulation Points" [level=3] [ref=e1243]
+                - paragraph [ref=e1244]: Find critical edges and vertices. DFS with low[] array. O(V+E).
+                - generic [ref=e1245]:
+                  - generic [ref=e1246]: 15 min
+                  - img [ref=e1247]
+          - link "73 Min-Cost Max-Flow Find max flow with minimum total cost. SPFA/Bellman-Ford on residual graph. 17 min" [ref=e1250] [cursor=pointer]:
+            - /url: /learn/min-cost-flow
+            - generic [ref=e1252]:
+              - generic [ref=e1253]: "73"
+              - generic [ref=e1254]:
+                - generic [ref=e1255]:
+                  - img [ref=e1256]
+                  - heading "Min-Cost Max-Flow" [level=3] [ref=e1262]
+                - paragraph [ref=e1263]: Find max flow with minimum total cost. SPFA/Bellman-Ford on residual graph.
+                - generic [ref=e1264]:
+                  - generic [ref=e1265]: 17 min
+                  - img [ref=e1266]
+          - link "74 Circulation & Flow with Lower Bounds Edge has both minimum and maximum flow. Reduce to standard max-flow via supply/demand. 16 min" [ref=e1269] [cursor=pointer]:
+            - /url: /learn/flow-lower-bounds
+            - generic [ref=e1271]:
+              - generic [ref=e1272]: "74"
+              - generic [ref=e1273]:
+                - generic [ref=e1274]:
+                  - img [ref=e1275]
+                  - heading "Circulation & Flow with Lower Bounds" [level=3] [ref=e1281]
+                - paragraph [ref=e1282]: Edge has both minimum and maximum flow. Reduce to standard max-flow via supply/demand.
+                - generic [ref=e1283]:
+                  - generic [ref=e1284]: 16 min
+                  - img [ref=e1285]
+          - link "75 Bidirectional BFS BFS from both source and target. Meet in the middle. Reduces O(b^d) to O(b^(d/2)). 13 min" [ref=e1288] [cursor=pointer]:
+            - /url: /learn/bidirectional-bfs
+            - generic [ref=e1290]:
+              - generic [ref=e1291]: "75"
+              - generic [ref=e1292]:
+                - generic [ref=e1293]:
+                  - img [ref=e1294]
+                  - heading "Bidirectional BFS" [level=3] [ref=e1300]
+                - paragraph [ref=e1301]: BFS from both source and target. Meet in the middle. Reduces O(b^d) to O(b^(d/2)).
+                - generic [ref=e1302]:
+                  - generic [ref=e1303]: 13 min
+                  - img [ref=e1304]
+          - link "76 A* Search Dijkstra guided by a heuristic. Finds optimal path faster when heuristic is good. 14 min" [ref=e1307] [cursor=pointer]:
+            - /url: /learn/a-star-search
+            - generic [ref=e1309]:
+              - generic [ref=e1310]: "76"
+              - generic [ref=e1311]:
+                - generic [ref=e1312]:
+                  - img [ref=e1313]
+                  - heading "A* Search" [level=3] [ref=e1319]
+                - paragraph [ref=e1320]: Dijkstra guided by a heuristic. Finds optimal path faster when heuristic is good.
+                - generic [ref=e1321]:
+                  - generic [ref=e1322]: 14 min
+                  - img [ref=e1323]
+          - link "77 Difference Constraints x_j - x_i ≤ w → edge i→j with weight w. SSSP gives feasible solution. 13 min" [ref=e1326] [cursor=pointer]:
+            - /url: /learn/difference-constraints
+            - generic [ref=e1328]:
+              - generic [ref=e1329]: "77"
+              - generic [ref=e1330]:
+                - generic [ref=e1331]:
+                  - img [ref=e1332]
+                  - heading "Difference Constraints" [level=3] [ref=e1338]
+                - paragraph [ref=e1339]: x_j - x_i ≤ w → edge i→j with weight w. SSSP gives feasible solution.
+                - generic [ref=e1340]:
+                  - generic [ref=e1341]: 13 min
+                  - img [ref=e1342]
+          - 'link "78 Functional Graphs Every node has exactly one outgoing edge. Each component = rho (ρ) shape: tail + cycle. 13 min" [ref=e1345] [cursor=pointer]':
+            - /url: /learn/functional-graphs
+            - generic [ref=e1347]:
+              - generic [ref=e1348]: "78"
+              - generic [ref=e1349]:
+                - generic [ref=e1350]:
+                  - img [ref=e1351]
+                  - heading "Functional Graphs" [level=3] [ref=e1357]
+                - paragraph [ref=e1358]: "Every node has exactly one outgoing edge. Each component = rho (ρ) shape: tail + cycle."
+                - generic [ref=e1359]:
+                  - generic [ref=e1360]: 13 min
+                  - img [ref=e1361]
+          - link "79 Matching via Maximum Flow Bipartite matching = max flow in O(E√V). General matching = Blossom algorithm. 16 min" [ref=e1364] [cursor=pointer]:
+            - /url: /learn/matching-flow
+            - generic [ref=e1366]:
+              - generic [ref=e1367]: "79"
+              - generic [ref=e1368]:
+                - generic [ref=e1369]:
+                  - img [ref=e1370]
+                  - heading "Matching via Maximum Flow" [level=3] [ref=e1376]
+                - paragraph [ref=e1377]: Bipartite matching = max flow in O(E√V). General matching = Blossom algorithm.
+                - generic [ref=e1378]:
+                  - generic [ref=e1379]: 16 min
+                  - img [ref=e1380]
+          - link "80 Graph Coloring Assign colors so no adjacent vertices share a color. Greedy gives ≤ Δ+1 colors. 14 min" [ref=e1383] [cursor=pointer]:
+            - /url: /learn/graph-coloring
+            - generic [ref=e1385]:
+              - generic [ref=e1386]: "80"
+              - generic [ref=e1387]:
+                - generic [ref=e1388]:
+                  - img [ref=e1389]
+                  - heading "Graph Coloring" [level=3] [ref=e1395]
+                - paragraph [ref=e1396]: Assign colors so no adjacent vertices share a color. Greedy gives ≤ Δ+1 colors.
+                - generic [ref=e1397]:
+                  - generic [ref=e1398]: 14 min
+                  - img [ref=e1399]
+          - link "81 Top-K & Streaming Algorithms Maintain top-K elements in streams. Heap-based selection, frequency tracking. 14 min" [ref=e1402] [cursor=pointer]:
+            - /url: /learn/topk-streaming
+            - generic [ref=e1404]:
+              - generic [ref=e1405]: "81"
+              - generic [ref=e1406]:
+                - generic [ref=e1407]:
+                  - img [ref=e1408]
+                  - heading "Top-K & Streaming Algorithms" [level=3] [ref=e1412]
+                - paragraph [ref=e1413]: Maintain top-K elements in streams. Heap-based selection, frequency tracking.
+                - generic [ref=e1414]:
+                  - generic [ref=e1415]: 14 min
+                  - img [ref=e1416]
+          - link "82 Strongly Connected Components Tarjan's and Kosaraju's algorithms. Condense cycles into DAG of SCCs. 15 min" [ref=e1419] [cursor=pointer]:
+            - /url: /learn/strongly-connected-components
+            - generic [ref=e1421]:
+              - generic [ref=e1422]: "82"
+              - generic [ref=e1423]:
+                - generic [ref=e1424]:
+                  - img [ref=e1425]
+                  - heading "Strongly Connected Components" [level=3] [ref=e1431]
+                - paragraph [ref=e1432]: Tarjan's and Kosaraju's algorithms. Condense cycles into DAG of SCCs.
+                - generic [ref=e1433]:
+                  - generic [ref=e1434]: 15 min
+                  - img [ref=e1435]
+          - link "83 Graph State Space Search BFS/Dijkstra on augmented states. (node, extra_state) as graph vertices. 14 min" [ref=e1438] [cursor=pointer]:
+            - /url: /learn/graph-state-space
+            - generic [ref=e1440]:
+              - generic [ref=e1441]: "83"
+              - generic [ref=e1442]:
+                - generic [ref=e1443]:
+                  - img [ref=e1444]
+                  - heading "Graph State Space Search" [level=3] [ref=e1450]
+                - paragraph [ref=e1451]: BFS/Dijkstra on augmented states. (node, extra_state) as graph vertices.
+                - generic [ref=e1452]:
+                  - generic [ref=e1453]: 14 min
+                  - img [ref=e1454]
+          - link "84 Greedy Interval Problems Activity selection, meeting rooms, interval scheduling. Sort + greedy sweep. 14 min" [ref=e1457] [cursor=pointer]:
+            - /url: /learn/greedy-intervals
+            - generic [ref=e1459]:
+              - generic [ref=e1460]: "84"
+              - generic [ref=e1461]:
+                - generic [ref=e1462]:
+                  - img [ref=e1463]
+                  - heading "Greedy Interval Problems" [level=3] [ref=e1469]
+                - paragraph [ref=e1470]: Activity selection, meeting rooms, interval scheduling. Sort + greedy sweep.
+                - generic [ref=e1471]:
+                  - generic [ref=e1472]: 14 min
+                  - img [ref=e1473]
+          - link "85 Constructive Algorithms Build a valid answer from constraints. Greedy construction, invariant maintenance. 13 min" [ref=e1476] [cursor=pointer]:
+            - /url: /learn/constructive-algorithms
+            - generic [ref=e1478]:
+              - generic [ref=e1479]: "85"
+              - generic [ref=e1480]:
+                - generic [ref=e1481]:
+                  - img [ref=e1482]
+                  - heading "Constructive Algorithms" [level=3] [ref=e1488]
+                - paragraph [ref=e1489]: Build a valid answer from constraints. Greedy construction, invariant maintenance.
+                - generic [ref=e1490]:
+                  - generic [ref=e1491]: 13 min
+                  - img [ref=e1492]
+          - link "86 Backtracking with Pruning Prune search space early. Bound functions, symmetry breaking, feasibility checks. 14 min" [ref=e1495] [cursor=pointer]:
+            - /url: /learn/backtracking-pruning
+            - generic [ref=e1497]:
+              - generic [ref=e1498]: "86"
+              - generic [ref=e1499]:
+                - generic [ref=e1500]:
+                  - img [ref=e1501]
+                  - heading "Backtracking with Pruning" [level=3] [ref=e1507]
+                - paragraph [ref=e1508]: Prune search space early. Bound functions, symmetry breaking, feasibility checks.
+                - generic [ref=e1509]:
+                  - generic [ref=e1510]: 14 min
+                  - img [ref=e1511]
+          - link "87 Multi-Source BFS & 0-1 BFS BFS from multiple sources simultaneously. 0-1 BFS with deque for mixed weights. 12 min" [ref=e1514] [cursor=pointer]:
+            - /url: /learn/multi-source-bfs
+            - generic [ref=e1516]:
+              - generic [ref=e1517]: "87"
+              - generic [ref=e1518]:
+                - generic [ref=e1519]:
+                  - img [ref=e1520]
+                  - heading "Multi-Source BFS & 0-1 BFS" [level=3] [ref=e1526]
+                - paragraph [ref=e1527]: BFS from multiple sources simultaneously. 0-1 BFS with deque for mixed weights.
+                - generic [ref=e1528]:
+                  - generic [ref=e1529]: 12 min
+                  - img [ref=e1530]
+          - link "88 Grid Island Problems Connected components in grids. BFS/DFS flood fill, area, perimeter, enclosure. 13 min" [ref=e1533] [cursor=pointer]:
+            - /url: /learn/grid-islands
+            - generic [ref=e1535]:
+              - generic [ref=e1536]: "88"
+              - generic [ref=e1537]:
+                - generic [ref=e1538]:
+                  - img [ref=e1539]
+                  - heading "Grid Island Problems" [level=3] [ref=e1545]
+                - paragraph [ref=e1546]: Connected components in grids. BFS/DFS flood fill, area, perimeter, enclosure.
+                - generic [ref=e1547]:
+                  - generic [ref=e1548]: 13 min
+                  - img [ref=e1549]
+          - link "89 Bellman-Ford & Negative Cycles Shortest paths with negative edges. Detect negative cycles. SPFA optimization. 13 min" [ref=e1552] [cursor=pointer]:
+            - /url: /learn/graph-bellman-ford
+            - generic [ref=e1554]:
+              - generic [ref=e1555]: "89"
+              - generic [ref=e1556]:
+                - generic [ref=e1557]:
+                  - img [ref=e1558]
+                  - heading "Bellman-Ford & Negative Cycles" [level=3] [ref=e1564]
+                - paragraph [ref=e1565]: Shortest paths with negative edges. Detect negative cycles. SPFA optimization.
+                - generic [ref=e1566]:
+                  - generic [ref=e1567]: 13 min
+                  - img [ref=e1568]
+          - link "90 Jump Game Variants Reachability and minimum jumps. BFS, greedy, DP on jump range problems. 13 min" [ref=e1571] [cursor=pointer]:
+            - /url: /learn/jump-game-variants
+            - generic [ref=e1573]:
+              - generic [ref=e1574]: "90"
+              - generic [ref=e1575]:
+                - generic [ref=e1576]:
+                  - img [ref=e1577]
+                  - heading "Jump Game Variants" [level=3] [ref=e1583]
+                - paragraph [ref=e1584]: Reachability and minimum jumps. BFS, greedy, DP on jump range problems.
+                - generic [ref=e1585]:
+                  - generic [ref=e1586]: 13 min
+                  - img [ref=e1587]
+          - link "91 Union-Find Applications Connect components dynamically. Detect cycles, count components, earliest connection. 13 min" [ref=e1590] [cursor=pointer]:
+            - /url: /learn/union-find-applications
+            - generic [ref=e1592]:
+              - generic [ref=e1593]: "91"
+              - generic [ref=e1594]:
+                - generic [ref=e1595]:
+                  - img [ref=e1596]
+                  - heading "Union-Find Applications" [level=3] [ref=e1602]
+                - paragraph [ref=e1603]: Connect components dynamically. Detect cycles, count components, earliest connection.
+                - generic [ref=e1604]:
+                  - generic [ref=e1605]: 13 min
+                  - img [ref=e1606]
+          - link "92 Greedy String Problems Remove k digits, largest number, reorganize string. Monotone stack for ordering. 13 min" [ref=e1609] [cursor=pointer]:
+            - /url: /learn/greedy-strings
+            - generic [ref=e1611]:
+              - generic [ref=e1612]: "92"
+              - generic [ref=e1613]:
+                - generic [ref=e1614]:
+                  - img [ref=e1615]
+                  - heading "Greedy String Problems" [level=3] [ref=e1621]
+                - paragraph [ref=e1622]: Remove k digits, largest number, reorganize string. Monotone stack for ordering.
+                - generic [ref=e1623]:
+                  - generic [ref=e1624]: 13 min
+                  - img [ref=e1625]
+          - link "93 Graph Coloring & Bipartite Checking Two-color graphs to find odd cycles. Divide into two groups satisfying constraints. 12 min" [ref=e1628] [cursor=pointer]:
+            - /url: /learn/graph-coloring-bipartite
+            - generic [ref=e1630]:
+              - generic [ref=e1631]: "93"
+              - generic [ref=e1632]:
+                - generic [ref=e1633]:
+                  - img [ref=e1634]
+                  - heading "Graph Coloring & Bipartite Checking" [level=3] [ref=e1640]
+                - paragraph [ref=e1641]: Two-color graphs to find odd cycles. Divide into two groups satisfying constraints.
+                - generic [ref=e1642]:
+                  - generic [ref=e1643]: 12 min
+                  - img [ref=e1644]
+          - link "94 Floyd-Warshall All-Pairs Shortest Paths O(V³) all-pairs shortest paths. Transitive closure, detect negative cycles. 12 min" [ref=e1647] [cursor=pointer]:
+            - /url: /learn/floyd-warshall
+            - generic [ref=e1649]:
+              - generic [ref=e1650]: "94"
+              - generic [ref=e1651]:
+                - generic [ref=e1652]:
+                  - img [ref=e1653]
+                  - heading "Floyd-Warshall All-Pairs Shortest Paths" [level=3] [ref=e1659]
+                - paragraph [ref=e1660]: O(V³) all-pairs shortest paths. Transitive closure, detect negative cycles.
+                - generic [ref=e1661]:
+                  - generic [ref=e1662]: 12 min
+                  - img [ref=e1663]
+      - generic [ref=e1666]:
+        - generic [ref=e1667]:
+          - heading "Part V — Strings, Sequences & Grid" [level=2] [ref=e1669]
+          - generic [ref=e1670]: 18 chapters
+        - generic [ref=e1671]:
+          - link "95 String Algorithms KMP, Z-algo, rolling hash — pattern matching in O(n). 20 min" [ref=e1672] [cursor=pointer]:
+            - /url: /learn/string-algorithms
+            - generic [ref=e1674]:
+              - generic [ref=e1675]: "95"
+              - generic [ref=e1676]:
+                - generic [ref=e1677]:
+                  - img [ref=e1678]
+                  - heading "String Algorithms" [level=3] [ref=e1680]
+                - paragraph [ref=e1681]: KMP, Z-algo, rolling hash — pattern matching in O(n).
+                - generic [ref=e1682]:
+                  - generic [ref=e1683]: 20 min
+                  - img [ref=e1684]
+          - 'link "96 String Matching Algorithms KMP: O(n+m) search using failure function. Rabin-Karp: hash-based. Z-algorithm: substring in O(n). 20 min" [ref=e1687] [cursor=pointer]':
+            - /url: /learn/string-matching
+            - generic [ref=e1689]:
+              - generic [ref=e1690]: "96"
+              - generic [ref=e1691]:
+                - generic [ref=e1692]:
+                  - img [ref=e1693]
+                  - heading "String Matching Algorithms" [level=3] [ref=e1695]
+                - paragraph [ref=e1696]: "KMP: O(n+m) search using failure function. Rabin-Karp: hash-based. Z-algorithm: substring in O(n)."
+                - generic [ref=e1697]:
+                  - generic [ref=e1698]: 20 min
+                  - img [ref=e1699]
+          - link "97 Sequences — LIS, LCS & More LIS in O(n log n). LCS from DP. Every sequence has a structure. 18 min" [ref=e1702] [cursor=pointer]:
+            - /url: /learn/sequences
+            - generic [ref=e1704]:
+              - generic [ref=e1705]: "97"
+              - generic [ref=e1706]:
+                - generic [ref=e1707]:
+                  - img [ref=e1708]
+                  - heading "Sequences — LIS, LCS & More" [level=3] [ref=e1709]
+                - paragraph [ref=e1710]: LIS in O(n log n). LCS from DP. Every sequence has a structure.
+                - generic [ref=e1711]:
+                  - generic [ref=e1712]: 18 min
+                  - img [ref=e1713]
+          - link "98 Matrix & Shape Problems Spiral traversal, rotation, 2D prefix sums — grids have patterns. 16 min" [ref=e1716] [cursor=pointer]:
+            - /url: /learn/matrix
+            - generic [ref=e1718]:
+              - generic [ref=e1719]: "98"
+              - generic [ref=e1720]:
+                - generic [ref=e1721]:
+                  - img [ref=e1722]
+                  - heading "Matrix & Shape Problems" [level=3] [ref=e1726]
+                - paragraph [ref=e1727]: Spiral traversal, rotation, 2D prefix sums — grids have patterns.
+                - generic [ref=e1728]:
+                  - generic [ref=e1729]: 16 min
+                  - img [ref=e1730]
+          - link "99 String DP dp[i][j] = answer for s1[0..i-1] and s2[0..j-1]. Match or skip. 20 min" [ref=e1733] [cursor=pointer]:
+            - /url: /learn/string-dp
+            - generic [ref=e1735]:
+              - generic [ref=e1736]: "99"
+              - generic [ref=e1737]:
+                - generic [ref=e1738]:
+                  - img [ref=e1739]
+                  - heading "String DP" [level=3] [ref=e1743]
+                - paragraph [ref=e1744]: dp[i][j] = answer for s1[0..i-1] and s2[0..j-1]. Match or skip.
+                - generic [ref=e1745]:
+                  - generic [ref=e1746]: 20 min
+                  - img [ref=e1747]
+          - link "100 Palindrome Patterns Expand from center, or DP on intervals. Two approaches cover every palindrome problem. 16 min" [ref=e1750] [cursor=pointer]:
+            - /url: /learn/palindrome-patterns
+            - generic [ref=e1752]:
+              - generic [ref=e1753]: "100"
+              - generic [ref=e1754]:
+                - generic [ref=e1755]:
+                  - img [ref=e1756]
+                  - heading "Palindrome Patterns" [level=3] [ref=e1760]
+                - paragraph [ref=e1761]: Expand from center, or DP on intervals. Two approaches cover every palindrome problem.
+                - generic [ref=e1762]:
+                  - generic [ref=e1763]: 16 min
+                  - img [ref=e1764]
+          - link "101 String Hashing & Rolling Hash Compare substrings in O(1) after O(n) preprocessing. Rabin-Karp for pattern matching. 14 min" [ref=e1767] [cursor=pointer]:
+            - /url: /learn/string-hashing
+            - generic [ref=e1769]:
+              - generic [ref=e1770]: "101"
+              - generic [ref=e1771]:
+                - generic [ref=e1772]:
+                  - img [ref=e1773]
+                  - heading "String Hashing & Rolling Hash" [level=3] [ref=e1777]
+                - paragraph [ref=e1778]: Compare substrings in O(1) after O(n) preprocessing. Rabin-Karp for pattern matching.
+                - generic [ref=e1779]:
+                  - generic [ref=e1780]: 14 min
+                  - img [ref=e1781]
+          - link "102 Suffix Array & LCP Array Sort all suffixes. Build LCP array. Enables O(n log n) solutions for hard string problems. 16 min" [ref=e1784] [cursor=pointer]:
+            - /url: /learn/suffix-array
+            - generic [ref=e1786]:
+              - generic [ref=e1787]: "102"
+              - generic [ref=e1788]:
+                - generic [ref=e1789]:
+                  - img [ref=e1790]
+                  - heading "Suffix Array & LCP Array" [level=3] [ref=e1794]
+                - paragraph [ref=e1795]: Sort all suffixes. Build LCP array. Enables O(n log n) solutions for hard string problems.
+                - generic [ref=e1796]:
+                  - generic [ref=e1797]: 16 min
+                  - img [ref=e1798]
+          - link "103 Aho-Corasick Automaton Multi-pattern string matching in O(n + m + k). KMP generalized to many patterns. 16 min" [ref=e1801] [cursor=pointer]:
+            - /url: /learn/aho-corasick
+            - generic [ref=e1803]:
+              - generic [ref=e1804]: "103"
+              - generic [ref=e1805]:
+                - generic [ref=e1806]:
+                  - img [ref=e1807]
+                  - heading "Aho-Corasick Automaton" [level=3] [ref=e1811]
+                - paragraph [ref=e1812]: Multi-pattern string matching in O(n + m + k). KMP generalized to many patterns.
+                - generic [ref=e1813]:
+                  - generic [ref=e1814]: 16 min
+                  - img [ref=e1815]
+          - link "104 Z-Function & String Matching z[i] = length of longest string starting at i that matches a prefix. O(n) pattern matching. 13 min" [ref=e1818] [cursor=pointer]:
+            - /url: /learn/z-function
+            - generic [ref=e1820]:
+              - generic [ref=e1821]: "104"
+              - generic [ref=e1822]:
+                - generic [ref=e1823]:
+                  - img [ref=e1824]
+                  - heading "Z-Function & String Matching" [level=3] [ref=e1828]
+                - paragraph [ref=e1829]: z[i] = length of longest string starting at i that matches a prefix. O(n) pattern matching.
+                - generic [ref=e1830]:
+                  - generic [ref=e1831]: 13 min
+                  - img [ref=e1832]
+          - link "105 Manacher's Algorithm Find all palindromic substrings in O(n). Extends each palindrome using previous results. 14 min" [ref=e1835] [cursor=pointer]:
+            - /url: /learn/manachers
+            - generic [ref=e1837]:
+              - generic [ref=e1838]: "105"
+              - generic [ref=e1839]:
+                - generic [ref=e1840]:
+                  - img [ref=e1841]
+                  - heading "Manacher's Algorithm" [level=3] [ref=e1845]
+                - paragraph [ref=e1846]: Find all palindromic substrings in O(n). Extends each palindrome using previous results.
+                - generic [ref=e1847]:
+                  - generic [ref=e1848]: 14 min
+                  - img [ref=e1849]
+          - link "106 Suffix Automaton (SAM) Compact structure for all substrings. O(n) build. All substring queries in O(n). 18 min" [ref=e1852] [cursor=pointer]:
+            - /url: /learn/suffix-automaton
+            - generic [ref=e1854]:
+              - generic [ref=e1855]: "106"
+              - generic [ref=e1856]:
+                - generic [ref=e1857]:
+                  - img [ref=e1858]
+                  - heading "Suffix Automaton (SAM)" [level=3] [ref=e1862]
+                - paragraph [ref=e1863]: Compact structure for all substrings. O(n) build. All substring queries in O(n).
+                - generic [ref=e1864]:
+                  - generic [ref=e1865]: 18 min
+                  - img [ref=e1866]
+          - link "107 Palindrome Automaton (Eertree) Build all distinct palindromic substrings in O(n). Count occurrences in O(n). 16 min" [ref=e1869] [cursor=pointer]:
+            - /url: /learn/palindrome-automaton
+            - generic [ref=e1871]:
+              - generic [ref=e1872]: "107"
+              - generic [ref=e1873]:
+                - generic [ref=e1874]:
+                  - img [ref=e1875]
+                  - heading "Palindrome Automaton (Eertree)" [level=3] [ref=e1879]
+                - paragraph [ref=e1880]: Build all distinct palindromic substrings in O(n). Count occurrences in O(n).
+                - generic [ref=e1881]:
+                  - generic [ref=e1882]: 16 min
+                  - img [ref=e1883]
+          - link "108 String Rotations & Booth's Algorithm Lexicographically minimum rotation in O(n). Check rotation in O(n) via concatenation. 12 min" [ref=e1886] [cursor=pointer]:
+            - /url: /learn/string-rotations
+            - generic [ref=e1888]:
+              - generic [ref=e1889]: "108"
+              - generic [ref=e1890]:
+                - generic [ref=e1891]:
+                  - img [ref=e1892]
+                  - heading "String Rotations & Booth's Algorithm" [level=3] [ref=e1896]
+                - paragraph [ref=e1897]: Lexicographically minimum rotation in O(n). Check rotation in O(n) via concatenation.
+                - generic [ref=e1898]:
+                  - generic [ref=e1899]: 12 min
+                  - img [ref=e1900]
+          - link "109 Lyndon Factorization Every string = unique product of decreasing Lyndon words. Duval's algorithm O(n). 12 min" [ref=e1903] [cursor=pointer]:
+            - /url: /learn/lyndon-factorization
+            - generic [ref=e1905]:
+              - generic [ref=e1906]: "109"
+              - generic [ref=e1907]:
+                - generic [ref=e1908]:
+                  - img [ref=e1909]
+                  - heading "Lyndon Factorization" [level=3] [ref=e1913]
+                - paragraph [ref=e1914]: Every string = unique product of decreasing Lyndon words. Duval's algorithm O(n).
+                - generic [ref=e1915]:
+                  - generic [ref=e1916]: 12 min
+                  - img [ref=e1917]
+          - link "110 String Construction & Transformation Build target strings via DP. Edit distance, word ladder, minimum operations. 15 min" [ref=e1920] [cursor=pointer]:
+            - /url: /learn/string-construction
+            - generic [ref=e1922]:
+              - generic [ref=e1923]: "110"
+              - generic [ref=e1924]:
+                - generic [ref=e1925]:
+                  - img [ref=e1926]
+                  - heading "String Construction & Transformation" [level=3] [ref=e1930]
+                - paragraph [ref=e1931]: Build target strings via DP. Edit distance, word ladder, minimum operations.
+                - generic [ref=e1932]:
+                  - generic [ref=e1933]: 15 min
+                  - img [ref=e1934]
+          - link "111 String Decode & Transform Patterns Decode encoded strings, run-length encoding, parenthesis-based nesting. 12 min" [ref=e1937] [cursor=pointer]:
+            - /url: /learn/string-decode-patterns
+            - generic [ref=e1939]:
+              - generic [ref=e1940]: "111"
+              - generic [ref=e1941]:
+                - generic [ref=e1942]:
+                  - img [ref=e1943]
+                  - heading "String Decode & Transform Patterns" [level=3] [ref=e1947]
+                - paragraph [ref=e1948]: Decode encoded strings, run-length encoding, parenthesis-based nesting.
+                - generic [ref=e1949]:
+                  - generic [ref=e1950]: 12 min
+                  - img [ref=e1951]
+          - link "112 String Parsing & Integer Conversion atoi, add binary/strings, multiply strings, number to/from base. 11 min" [ref=e1954] [cursor=pointer]:
+            - /url: /learn/string-parsing
+            - generic [ref=e1956]:
+              - generic [ref=e1957]: "112"
+              - generic [ref=e1958]:
+                - generic [ref=e1959]:
+                  - img [ref=e1960]
+                  - heading "String Parsing & Integer Conversion" [level=3] [ref=e1964]
+                - paragraph [ref=e1965]: atoi, add binary/strings, multiply strings, number to/from base.
+                - generic [ref=e1966]:
+                  - generic [ref=e1967]: 11 min
+                  - img [ref=e1968]
+      - generic [ref=e1971]:
+        - generic [ref=e1972]:
+          - heading "Part VI — Math & Discrete" [level=2] [ref=e1974]
+          - generic [ref=e1975]: 27 chapters
+        - generic [ref=e1976]:
+          - link "113 Math & Number Theory GCD, primes, modular arithmetic — the engine behind CP. 20 min" [ref=e1977] [cursor=pointer]:
+            - /url: /learn/math
+            - generic [ref=e1979]:
+              - generic [ref=e1980]: "113"
+              - generic [ref=e1981]:
+                - generic [ref=e1982]:
+                  - img [ref=e1983]
+                  - heading "Math & Number Theory" [level=3] [ref=e1986]
+                - paragraph [ref=e1987]: GCD, primes, modular arithmetic — the engine behind CP.
+                - generic [ref=e1988]:
+                  - generic [ref=e1989]: 20 min
+                  - img [ref=e1990]
+          - link "114 Bit Manipulation XOR is your best friend. Masks are your toolkit. 15 min" [ref=e1993] [cursor=pointer]:
+            - /url: /learn/bit-manipulation
+            - generic [ref=e1995]:
+              - generic [ref=e1996]: "114"
+              - generic [ref=e1997]:
+                - generic [ref=e1998]:
+                  - img [ref=e1999]
+                  - heading "Bit Manipulation" [level=3] [ref=e2004]
+                - paragraph [ref=e2005]: XOR is your best friend. Masks are your toolkit.
+                - generic [ref=e2006]:
+                  - generic [ref=e2007]: 15 min
+                  - img [ref=e2008]
+          - link "115 Combinatorics & Counting nCr, inclusion-exclusion, Catalan numbers — count without listing. 16 min" [ref=e2011] [cursor=pointer]:
+            - /url: /learn/combinatorics
+            - generic [ref=e2013]:
+              - generic [ref=e2014]: "115"
+              - generic [ref=e2015]:
+                - generic [ref=e2016]:
+                  - img [ref=e2017]
+                  - heading "Combinatorics & Counting" [level=3] [ref=e2023]
+                - paragraph [ref=e2024]: nCr, inclusion-exclusion, Catalan numbers — count without listing.
+                - generic [ref=e2025]:
+                  - generic [ref=e2026]: 16 min
+                  - img [ref=e2027]
+          - link "116 Game Theory — Nim & Sprague-Grundy XOR determines the winner. Grundy values generalize everything. 14 min" [ref=e2030] [cursor=pointer]:
+            - /url: /learn/game-theory
+            - generic [ref=e2032]:
+              - generic [ref=e2033]: "116"
+              - generic [ref=e2034]:
+                - generic [ref=e2035]:
+                  - img [ref=e2036]
+                  - heading "Game Theory — Nim & Sprague-Grundy" [level=3] [ref=e2038]
+                - paragraph [ref=e2039]: XOR determines the winner. Grundy values generalize everything.
+                - generic [ref=e2040]:
+                  - generic [ref=e2041]: 14 min
+                  - img [ref=e2042]
+          - link "117 Computational Geometry Cross products determine orientation. Convex hull wraps everything. 16 min" [ref=e2045] [cursor=pointer]:
+            - /url: /learn/geometry
+            - generic [ref=e2047]:
+              - generic [ref=e2048]: "117"
+              - generic [ref=e2049]:
+                - generic [ref=e2050]:
+                  - img [ref=e2051]
+                  - heading "Computational Geometry" [level=3] [ref=e2053]
+                - paragraph [ref=e2054]: Cross products determine orientation. Convex hull wraps everything.
+                - generic [ref=e2055]:
+                  - generic [ref=e2056]: 16 min
+                  - img [ref=e2057]
+          - link "118 Number Theory GCD, primes, modular arithmetic — the math behind the tricks. 20 min" [ref=e2060] [cursor=pointer]:
+            - /url: /learn/number-theory
+            - generic [ref=e2062]:
+              - generic [ref=e2063]: "118"
+              - generic [ref=e2064]:
+                - generic [ref=e2065]:
+                  - img [ref=e2066]
+                  - heading "Number Theory" [level=3] [ref=e2069]
+                - paragraph [ref=e2070]: GCD, primes, modular arithmetic — the math behind the tricks.
+                - generic [ref=e2071]:
+                  - generic [ref=e2072]: 20 min
+                  - img [ref=e2073]
+          - link "119 Probability & Expected Value DP E[X] = Σ p(outcome) × value(outcome). DP builds it up iteratively. 16 min" [ref=e2076] [cursor=pointer]:
+            - /url: /learn/probability-dp
+            - generic [ref=e2078]:
+              - generic [ref=e2079]: "119"
+              - generic [ref=e2080]:
+                - generic [ref=e2081]:
+                  - img [ref=e2082]
+                  - heading "Probability & Expected Value DP" [level=3] [ref=e2086]
+                - paragraph [ref=e2087]: E[X] = Σ p(outcome) × value(outcome). DP builds it up iteratively.
+                - generic [ref=e2088]:
+                  - generic [ref=e2089]: 16 min
+                  - img [ref=e2090]
+          - link "120 Ternary Search Find minimum of unimodal function in O(log n). Divide range into thirds. 12 min" [ref=e2093] [cursor=pointer]:
+            - /url: /learn/ternary-search
+            - generic [ref=e2095]:
+              - generic [ref=e2096]: "120"
+              - generic [ref=e2097]:
+                - generic [ref=e2098]:
+                  - img [ref=e2099]
+                  - heading "Ternary Search" [level=3] [ref=e2102]
+                - paragraph [ref=e2103]: Find minimum of unimodal function in O(log n). Divide range into thirds.
+                - generic [ref=e2104]:
+                  - generic [ref=e2105]: 12 min
+                  - img [ref=e2106]
+          - link "121 FFT & Polynomial Multiplication Multiply polynomials in O(n log n). Convolution. Count pairs summing to k. 18 min" [ref=e2109] [cursor=pointer]:
+            - /url: /learn/fft
+            - generic [ref=e2111]:
+              - generic [ref=e2112]: "121"
+              - generic [ref=e2113]:
+                - generic [ref=e2114]:
+                  - img [ref=e2115]
+                  - heading "FFT & Polynomial Multiplication" [level=3] [ref=e2118]
+                - paragraph [ref=e2119]: Multiply polynomials in O(n log n). Convolution. Count pairs summing to k.
+                - generic [ref=e2120]:
+                  - generic [ref=e2121]: 18 min
+                  - img [ref=e2122]
+          - link "122 Sprague-Grundy Theorem Every impartial game = Nim pile. Grundy value = mex of reachable states. 15 min" [ref=e2125] [cursor=pointer]:
+            - /url: /learn/sprague-grundy
+            - generic [ref=e2127]:
+              - generic [ref=e2128]: "122"
+              - generic [ref=e2129]:
+                - generic [ref=e2130]:
+                  - img [ref=e2131]
+                  - heading "Sprague-Grundy Theorem" [level=3] [ref=e2134]
+                - paragraph [ref=e2135]: Every impartial game = Nim pile. Grundy value = mex of reachable states.
+                - generic [ref=e2136]:
+                  - generic [ref=e2137]: 15 min
+                  - img [ref=e2138]
+          - link "123 Chinese Remainder Theorem Solve x ≡ a1 (mod m1), x ≡ a2 (mod m2), ... in one shot. Extended Euclidean key. 14 min" [ref=e2141] [cursor=pointer]:
+            - /url: /learn/chinese-remainder
+            - generic [ref=e2143]:
+              - generic [ref=e2144]: "123"
+              - generic [ref=e2145]:
+                - generic [ref=e2146]:
+                  - img [ref=e2147]
+                  - heading "Chinese Remainder Theorem" [level=3] [ref=e2150]
+                - paragraph [ref=e2151]: Solve x ≡ a1 (mod m1), x ≡ a2 (mod m2), ... in one shot. Extended Euclidean key.
+                - generic [ref=e2152]:
+                  - generic [ref=e2153]: 14 min
+                  - img [ref=e2154]
+          - link "124 Convex Hull Smallest convex polygon enclosing all points. Graham scan O(n log n). Andrew's monotone chain. 14 min" [ref=e2157] [cursor=pointer]:
+            - /url: /learn/convex-hull
+            - generic [ref=e2159]:
+              - generic [ref=e2160]: "124"
+              - generic [ref=e2161]:
+                - generic [ref=e2162]:
+                  - img [ref=e2163]
+                  - heading "Convex Hull" [level=3] [ref=e2166]
+                - paragraph [ref=e2167]: Smallest convex polygon enclosing all points. Graham scan O(n log n). Andrew's monotone chain.
+                - generic [ref=e2168]:
+                  - generic [ref=e2169]: 14 min
+                  - img [ref=e2170]
+          - link "125 Inclusion-Exclusion Principle |A∪B| = |A| + |B| - |A∩B|. Generalize to n sets. Count with constraints. 14 min" [ref=e2173] [cursor=pointer]:
+            - /url: /learn/inclusion-exclusion
+            - generic [ref=e2175]:
+              - generic [ref=e2176]: "125"
+              - generic [ref=e2177]:
+                - generic [ref=e2178]:
+                  - img [ref=e2179]
+                  - heading "Inclusion-Exclusion Principle" [level=3] [ref=e2182]
+                - paragraph [ref=e2183]: "|A∪B| = |A| + |B| - |A∩B|. Generalize to n sets. Count with constraints."
+                - generic [ref=e2184]:
+                  - generic [ref=e2185]: 14 min
+                  - img [ref=e2186]
+          - link "126 Catalan Numbers C(n) counts balanced parentheses, BST shapes, polygon triangulations, and more. 13 min" [ref=e2189] [cursor=pointer]:
+            - /url: /learn/catalan-numbers
+            - generic [ref=e2191]:
+              - generic [ref=e2192]: "126"
+              - generic [ref=e2193]:
+                - generic [ref=e2194]:
+                  - img [ref=e2195]
+                  - heading "Catalan Numbers" [level=3] [ref=e2198]
+                - paragraph [ref=e2199]: C(n) counts balanced parentheses, BST shapes, polygon triangulations, and more.
+                - generic [ref=e2200]:
+                  - generic [ref=e2201]: 13 min
+                  - img [ref=e2202]
+          - link "127 Josephus Problem & Circular Elimination n people in a circle, every k-th eliminated. Find survivor's position in O(n). 12 min" [ref=e2205] [cursor=pointer]:
+            - /url: /learn/josephus
+            - generic [ref=e2207]:
+              - generic [ref=e2208]: "127"
+              - generic [ref=e2209]:
+                - generic [ref=e2210]:
+                  - img [ref=e2211]
+                  - heading "Josephus Problem & Circular Elimination" [level=3] [ref=e2214]
+                - paragraph [ref=e2215]: n people in a circle, every k-th eliminated. Find survivor's position in O(n).
+                - generic [ref=e2216]:
+                  - generic [ref=e2217]: 12 min
+                  - img [ref=e2218]
+          - link "128 Sieve Variants & Multiplicative Functions Linear sieve, Euler's totient sieve, Möbius function. Each number factored once. 15 min" [ref=e2221] [cursor=pointer]:
+            - /url: /learn/sieve-variants
+            - generic [ref=e2223]:
+              - generic [ref=e2224]: "128"
+              - generic [ref=e2225]:
+                - generic [ref=e2226]:
+                  - img [ref=e2227]
+                  - heading "Sieve Variants & Multiplicative Functions" [level=3] [ref=e2230]
+                - paragraph [ref=e2231]: Linear sieve, Euler's totient sieve, Möbius function. Each number factored once.
+                - generic [ref=e2232]:
+                  - generic [ref=e2233]: 15 min
+                  - img [ref=e2234]
+          - link "129 Burnside's Lemma Count distinct objects under symmetry. Average fixed points over group actions. 14 min" [ref=e2237] [cursor=pointer]:
+            - /url: /learn/burnside-lemma
+            - generic [ref=e2239]:
+              - generic [ref=e2240]: "129"
+              - generic [ref=e2241]:
+                - generic [ref=e2242]:
+                  - img [ref=e2243]
+                  - heading "Burnside's Lemma" [level=3] [ref=e2246]
+                - paragraph [ref=e2247]: Count distinct objects under symmetry. Average fixed points over group actions.
+                - generic [ref=e2248]:
+                  - generic [ref=e2249]: 14 min
+                  - img [ref=e2250]
+          - 'link "130 Gray Code & Bit Tricks Adjacent Gray codes differ by one bit. Bit tricks: lowbit, popcount, bit pairs. 13 min" [ref=e2253] [cursor=pointer]':
+            - /url: /learn/gray-code
+            - generic [ref=e2255]:
+              - generic [ref=e2256]: "130"
+              - generic [ref=e2257]:
+                - generic [ref=e2258]:
+                  - img [ref=e2259]
+                  - heading "Gray Code & Bit Tricks" [level=3] [ref=e2262]
+                - paragraph [ref=e2263]: "Adjacent Gray codes differ by one bit. Bit tricks: lowbit, popcount, bit pairs."
+                - generic [ref=e2264]:
+                  - generic [ref=e2265]: 13 min
+                  - img [ref=e2266]
+          - link "131 Gaussian Elimination over GF(2) Solve XOR linear systems. Find XOR basis rank. Determine reachability by XOR. 14 min" [ref=e2269] [cursor=pointer]:
+            - /url: /learn/gaussian-gf2
+            - generic [ref=e2271]:
+              - generic [ref=e2272]: "131"
+              - generic [ref=e2273]:
+                - generic [ref=e2274]:
+                  - img [ref=e2275]
+                  - heading "Gaussian Elimination over GF(2)" [level=3] [ref=e2278]
+                - paragraph [ref=e2279]: Solve XOR linear systems. Find XOR basis rank. Determine reachability by XOR.
+                - generic [ref=e2280]:
+                  - generic [ref=e2281]: 14 min
+                  - img [ref=e2282]
+          - link "132 Lucas Theorem & Combinatorics Mod p C(n,k) mod prime p in O(log_p n). Pascal mod p has fractal structure. 14 min" [ref=e2285] [cursor=pointer]:
+            - /url: /learn/lucas-theorem
+            - generic [ref=e2287]:
+              - generic [ref=e2288]: "132"
+              - generic [ref=e2289]:
+                - generic [ref=e2290]:
+                  - img [ref=e2291]
+                  - heading "Lucas Theorem & Combinatorics Mod p" [level=3] [ref=e2294]
+                - paragraph [ref=e2295]: C(n,k) mod prime p in O(log_p n). Pascal mod p has fractal structure.
+                - generic [ref=e2296]:
+                  - generic [ref=e2297]: 14 min
+                  - img [ref=e2298]
+          - link "133 Lattice Paths & Ballot Problems Count paths on a grid with constraints. Reflection principle. Catalan structures. 13 min" [ref=e2301] [cursor=pointer]:
+            - /url: /learn/lattice-paths
+            - generic [ref=e2303]:
+              - generic [ref=e2304]: "133"
+              - generic [ref=e2305]:
+                - generic [ref=e2306]:
+                  - img [ref=e2307]
+                  - heading "Lattice Paths & Ballot Problems" [level=3] [ref=e2310]
+                - paragraph [ref=e2311]: Count paths on a grid with constraints. Reflection principle. Catalan structures.
+                - generic [ref=e2312]:
+                  - generic [ref=e2313]: 13 min
+                  - img [ref=e2314]
+          - link "134 Advanced Counting DP Partition numbers, Bell numbers, Stirling numbers. DP on combinatorial structures. 15 min" [ref=e2317] [cursor=pointer]:
+            - /url: /learn/advanced-counting-dp
+            - generic [ref=e2319]:
+              - generic [ref=e2320]: "134"
+              - generic [ref=e2321]:
+                - generic [ref=e2322]:
+                  - img [ref=e2323]
+                  - heading "Advanced Counting DP" [level=3] [ref=e2326]
+                - paragraph [ref=e2327]: Partition numbers, Bell numbers, Stirling numbers. DP on combinatorial structures.
+                - generic [ref=e2328]:
+                  - generic [ref=e2329]: 15 min
+                  - img [ref=e2330]
+          - link "135 Rotating Calipers & Convex Polygon Queries Farthest pair, diameter, closest parallel edges in O(n) after O(n log n) hull. 14 min" [ref=e2333] [cursor=pointer]:
+            - /url: /learn/rotating-calipers
+            - generic [ref=e2335]:
+              - generic [ref=e2336]: "135"
+              - generic [ref=e2337]:
+                - generic [ref=e2338]:
+                  - img [ref=e2339]
+                  - heading "Rotating Calipers & Convex Polygon Queries" [level=3] [ref=e2342]
+                - paragraph [ref=e2343]: Farthest pair, diameter, closest parallel edges in O(n) after O(n log n) hull.
+                - generic [ref=e2344]:
+                  - generic [ref=e2345]: 14 min
+                  - img [ref=e2346]
+          - link "136 Carry & Digit Manipulation DP DP tracking carries in arithmetic operations. Count valid assignments with constraints. 14 min" [ref=e2349] [cursor=pointer]:
+            - /url: /learn/carry-dp
+            - generic [ref=e2351]:
+              - generic [ref=e2352]: "136"
+              - generic [ref=e2353]:
+                - generic [ref=e2354]:
+                  - img [ref=e2355]
+                  - heading "Carry & Digit Manipulation DP" [level=3] [ref=e2358]
+                - paragraph [ref=e2359]: DP tracking carries in arithmetic operations. Count valid assignments with constraints.
+                - generic [ref=e2360]:
+                  - generic [ref=e2361]: 14 min
+                  - img [ref=e2362]
+          - link "137 Random Walk & Expected Value Expected number of steps in random processes. Linear system or DP on states. 13 min" [ref=e2365] [cursor=pointer]:
+            - /url: /learn/random-walk
+            - generic [ref=e2367]:
+              - generic [ref=e2368]: "137"
+              - generic [ref=e2369]:
+                - generic [ref=e2370]:
+                  - img [ref=e2371]
+                  - heading "Random Walk & Expected Value" [level=3] [ref=e2374]
+                - paragraph [ref=e2375]: Expected number of steps in random processes. Linear system or DP on states.
+                - generic [ref=e2376]:
+                  - generic [ref=e2377]: 13 min
+                  - img [ref=e2378]
+          - link "138 Number Manipulation Tricks Reverse digits, Roman numerals, palindrome numbers, Excel column mapping. 11 min" [ref=e2381] [cursor=pointer]:
+            - /url: /learn/number-tricks
+            - generic [ref=e2383]:
+              - generic [ref=e2384]: "138"
+              - generic [ref=e2385]:
+                - generic [ref=e2386]:
+                  - img [ref=e2387]
+                  - heading "Number Manipulation Tricks" [level=3] [ref=e2390]
+                - paragraph [ref=e2391]: Reverse digits, Roman numerals, palindrome numbers, Excel column mapping.
+                - generic [ref=e2392]:
+                  - generic [ref=e2393]: 11 min
+                  - img [ref=e2394]
+          - link "139 Bit Counting & Manipulation Tricks Count set bits, Hamming distance, Brian Kernighan's trick, DP counting bits. 11 min" [ref=e2397] [cursor=pointer]:
+            - /url: /learn/bit-counting
+            - generic [ref=e2399]:
+              - generic [ref=e2400]: "139"
+              - generic [ref=e2401]:
+                - generic [ref=e2402]:
+                  - img [ref=e2403]
+                  - heading "Bit Counting & Manipulation Tricks" [level=3] [ref=e2406]
+                - paragraph [ref=e2407]: Count set bits, Hamming distance, Brian Kernighan's trick, DP counting bits.
+                - generic [ref=e2408]:
+                  - generic [ref=e2409]: 11 min
+                  - img [ref=e2410]
+      - generic [ref=e2413]:
+        - generic [ref=e2414]:
+          - heading "Part VII — Advanced Topics" [level=2] [ref=e2416]
+          - generic [ref=e2417]: 13 chapters
+        - generic [ref=e2418]:
+          - link "140 Linear Algebra & Matrix Exponentiation Speed up any linear recurrence from O(n) to O(log n) with matrix power. 18 min" [ref=e2419] [cursor=pointer]:
+            - /url: /learn/linear-algebra
+            - generic [ref=e2421]:
+              - generic [ref=e2422]: "140"
+              - generic [ref=e2423]:
+                - generic [ref=e2424]:
+                  - img [ref=e2425]
+                  - heading "Linear Algebra & Matrix Exponentiation" [level=3] [ref=e2427]
+                - paragraph [ref=e2428]: Speed up any linear recurrence from O(n) to O(log n) with matrix power.
+                - generic [ref=e2429]:
+                  - generic [ref=e2430]: 18 min
+                  - img [ref=e2431]
+          - link "141 Numerical Methods & Optimization Binary search on reals. Ternary search on unimodal functions. Simulated annealing for hard optimizations. 14 min" [ref=e2434] [cursor=pointer]:
+            - /url: /learn/numerical-methods
+            - generic [ref=e2436]:
+              - generic [ref=e2437]: "141"
+              - generic [ref=e2438]:
+                - generic [ref=e2439]:
+                  - img [ref=e2440]
+                  - heading "Numerical Methods & Optimization" [level=3] [ref=e2443]
+                - paragraph [ref=e2444]: Binary search on reals. Ternary search on unimodal functions. Simulated annealing for hard optimizations.
+                - generic [ref=e2445]:
+                  - generic [ref=e2446]: 14 min
+                  - img [ref=e2447]
+          - link "142 Scheduling & Interval Problems Sort by deadline. Greedy + heap beats brute force every time. 15 min" [ref=e2450] [cursor=pointer]:
+            - /url: /learn/scheduling
+            - generic [ref=e2452]:
+              - generic [ref=e2453]: "142"
+              - generic [ref=e2454]:
+                - generic [ref=e2455]:
+                  - img [ref=e2456]
+                  - heading "Scheduling & Interval Problems" [level=3] [ref=e2458]
+                - paragraph [ref=e2459]: Sort by deadline. Greedy + heap beats brute force every time.
+                - generic [ref=e2460]:
+                  - generic [ref=e2461]: 15 min
+                  - img [ref=e2462]
+          - link "143 Shapes & 2D Geometry Triangles, rectangles, circles — every shape reduces to distance + area math. 14 min" [ref=e2465] [cursor=pointer]:
+            - /url: /learn/shapes
+            - generic [ref=e2467]:
+              - generic [ref=e2468]: "143"
+              - generic [ref=e2469]:
+                - generic [ref=e2470]:
+                  - img [ref=e2471]
+                  - heading "Shapes & 2D Geometry" [level=3] [ref=e2475]
+                - paragraph [ref=e2476]: Triangles, rectangles, circles — every shape reduces to distance + area math.
+                - generic [ref=e2477]:
+                  - generic [ref=e2478]: 14 min
+                  - img [ref=e2479]
+          - link "144 Miscellaneous Algorithms BFS on state space, majority vote, puzzle inversions — the patterns that don't fit elsewhere. 12 min" [ref=e2482] [cursor=pointer]:
+            - /url: /learn/miscellaneous
+            - generic [ref=e2484]:
+              - generic [ref=e2485]: "144"
+              - generic [ref=e2486]:
+                - generic [ref=e2487]:
+                  - img [ref=e2488]
+                  - heading "Miscellaneous Algorithms" [level=3] [ref=e2492]
+                - paragraph [ref=e2493]: BFS on state space, majority vote, puzzle inversions — the patterns that don't fit elsewhere.
+                - generic [ref=e2494]:
+                  - generic [ref=e2495]: 12 min
+                  - img [ref=e2496]
+          - link "145 Design Data Structures LRU, LFU, iterators — combine primitives for O(1) every operation. 20 min" [ref=e2499] [cursor=pointer]:
+            - /url: /learn/design-patterns
+            - generic [ref=e2501]:
+              - generic [ref=e2502]: "145"
+              - generic [ref=e2503]:
+                - generic [ref=e2504]:
+                  - img [ref=e2505]
+                  - heading "Design Data Structures" [level=3] [ref=e2509]
+                - paragraph [ref=e2510]: LRU, LFU, iterators — combine primitives for O(1) every operation.
+                - generic [ref=e2511]:
+                  - generic [ref=e2512]: 20 min
+                  - img [ref=e2513]
+          - 'link "146 Sorting Algorithms & Applications Non-comparison sorts beat O(n log n). Sorting enables patterns: binary search, two pointers. 16 min" [ref=e2516] [cursor=pointer]':
+            - /url: /learn/sorting-algorithms
+            - generic [ref=e2518]:
+              - generic [ref=e2519]: "146"
+              - generic [ref=e2520]:
+                - generic [ref=e2521]:
+                  - img [ref=e2522]
+                  - heading "Sorting Algorithms & Applications" [level=3] [ref=e2526]
+                - paragraph [ref=e2527]: "Non-comparison sorts beat O(n log n). Sorting enables patterns: binary search, two pointers."
+                - generic [ref=e2528]:
+                  - generic [ref=e2529]: 16 min
+                  - img [ref=e2530]
+          - link "147 Simulation & Implementation Do exactly what the problem says. Edge cases are the challenge. 14 min" [ref=e2533] [cursor=pointer]:
+            - /url: /learn/simulation
+            - generic [ref=e2535]:
+              - generic [ref=e2536]: "147"
+              - generic [ref=e2537]:
+                - generic [ref=e2538]:
+                  - img [ref=e2539]
+                  - heading "Simulation & Implementation" [level=3] [ref=e2543]
+                - paragraph [ref=e2544]: Do exactly what the problem says. Edge cases are the challenge.
+                - generic [ref=e2545]:
+                  - generic [ref=e2546]: 14 min
+                  - img [ref=e2547]
+          - link "148 Matrix Exponentiation Compute linear recurrences in O(k³ log n). Fibonacci in O(log n). 15 min" [ref=e2550] [cursor=pointer]:
+            - /url: /learn/matrix-exponentiation
+            - generic [ref=e2552]:
+              - generic [ref=e2553]: "148"
+              - generic [ref=e2554]:
+                - generic [ref=e2555]:
+                  - img [ref=e2556]
+                  - heading "Matrix Exponentiation" [level=3] [ref=e2559]
+                - paragraph [ref=e2560]: Compute linear recurrences in O(k³ log n). Fibonacci in O(log n).
+                - generic [ref=e2561]:
+                  - generic [ref=e2562]: 15 min
+                  - img [ref=e2563]
+          - link "149 Randomized Algorithms Random choices eliminate worst cases. Reservoir sampling, random pivot, shuffle. 13 min" [ref=e2566] [cursor=pointer]:
+            - /url: /learn/randomized-algorithms
+            - generic [ref=e2568]:
+              - generic [ref=e2569]: "149"
+              - generic [ref=e2570]:
+                - generic [ref=e2571]:
+                  - img [ref=e2572]
+                  - heading "Randomized Algorithms" [level=3] [ref=e2576]
+                - paragraph [ref=e2577]: Random choices eliminate worst cases. Reservoir sampling, random pivot, shuffle.
+                - generic [ref=e2578]:
+                  - generic [ref=e2579]: 13 min
+                  - img [ref=e2580]
+          - link "150 Multiset & Ordered Set Patterns Maintain sorted collections dynamically. Order statistics, rank queries, range operations. 13 min" [ref=e2583] [cursor=pointer]:
+            - /url: /learn/multiset-ordered-set
+            - generic [ref=e2585]:
+              - generic [ref=e2586]: "150"
+              - generic [ref=e2587]:
+                - generic [ref=e2588]:
+                  - img [ref=e2589]
+                  - heading "Multiset & Ordered Set Patterns" [level=3] [ref=e2593]
+                - paragraph [ref=e2594]: Maintain sorted collections dynamically. Order statistics, rank queries, range operations.
+                - generic [ref=e2595]:
+                  - generic [ref=e2596]: 13 min
+                  - img [ref=e2597]
+          - link "151 LRU & LFU Cache Design O(1) get/put with HashMap + doubly linked list. LFU with frequency buckets. 15 min" [ref=e2600] [cursor=pointer]:
+            - /url: /learn/lru-lfu-cache
+            - generic [ref=e2602]:
+              - generic [ref=e2603]: "151"
+              - generic [ref=e2604]:
+                - generic [ref=e2605]:
+                  - img [ref=e2606]
+                  - heading "LRU & LFU Cache Design" [level=3] [ref=e2610]
+                - paragraph [ref=e2611]: O(1) get/put with HashMap + doubly linked list. LFU with frequency buckets.
+                - generic [ref=e2612]:
+                  - generic [ref=e2613]: 15 min
+                  - img [ref=e2614]
+          - link "152 Matrix Operations & Transformations Rotate 90°, transpose, spiral traversal, search in sorted matrix. 13 min" [ref=e2617] [cursor=pointer]:
+            - /url: /learn/matrix-operations
+            - generic [ref=e2619]:
+              - generic [ref=e2620]: "152"
+              - generic [ref=e2621]:
+                - generic [ref=e2622]:
+                  - img [ref=e2623]
+                  - heading "Matrix Operations & Transformations" [level=3] [ref=e2629]
+                - paragraph [ref=e2630]: Rotate 90°, transpose, spiral traversal, search in sorted matrix.
+                - generic [ref=e2631]:
+                  - generic [ref=e2632]: 13 min
+                  - img [ref=e2633]
+      - generic [ref=e2636]:
+        - generic [ref=e2637]:
+          - heading "Part VIII — Cross-Topic Deep Dives" [level=2] [ref=e2639]
+          - generic [ref=e2640]: 42 chapters
+        - generic [ref=e2641]:
+          - link "153 BFS vs DFS — When to Use Each Shortest path → BFS. Connected components → DFS. Know which in 10 seconds. 20 min" [ref=e2642] [cursor=pointer]:
+            - /url: /learn/bfs-vs-dfs
+            - generic [ref=e2644]:
+              - generic [ref=e2645]: "153"
+              - generic [ref=e2646]:
+                - generic [ref=e2647]:
+                  - img [ref=e2648]
+                  - heading "BFS vs DFS — When to Use Each" [level=3] [ref=e2654]
+                - paragraph [ref=e2655]: Shortest path → BFS. Connected components → DFS. Know which in 10 seconds.
+                - generic [ref=e2656]:
+                  - generic [ref=e2657]: 20 min
+                  - img [ref=e2658]
+          - link "154 Interval Problems — The Complete Guide Sort by start. Merge overlaps. Sweep with a heap. All interval problems reduce to three patterns. 22 min" [ref=e2661] [cursor=pointer]:
+            - /url: /learn/interval-problems
+            - generic [ref=e2663]:
+              - generic [ref=e2664]: "154"
+              - generic [ref=e2665]:
+                - generic [ref=e2666]:
+                  - img [ref=e2667]
+                  - heading "Interval Problems — The Complete Guide" [level=3] [ref=e2669]
+                - paragraph [ref=e2670]: Sort by start. Merge overlaps. Sweep with a heap. All interval problems reduce to three patterns.
+                - generic [ref=e2671]:
+                  - generic [ref=e2672]: 22 min
+                  - img [ref=e2673]
+          - link "155 DP on Trees Postorder + return value = tree DP. Same template solves diameter, max path, subtree counts. 18 min" [ref=e2676] [cursor=pointer]:
+            - /url: /learn/dp-on-trees
+            - generic [ref=e2678]:
+              - generic [ref=e2679]: "155"
+              - generic [ref=e2680]:
+                - generic [ref=e2681]:
+                  - img [ref=e2682]
+                  - heading "DP on Trees" [level=3] [ref=e2684]
+                - paragraph [ref=e2685]: Postorder + return value = tree DP. Same template solves diameter, max path, subtree counts.
+                - generic [ref=e2686]:
+                  - generic [ref=e2687]: 18 min
+                  - img [ref=e2688]
+          - link "156 Union-Find (Disjoint Set Union) Find the root. Union the sets. Near-constant time with path compression. 16 min" [ref=e2691] [cursor=pointer]:
+            - /url: /learn/union-find
+            - generic [ref=e2693]:
+              - generic [ref=e2694]: "156"
+              - generic [ref=e2695]:
+                - generic [ref=e2696]:
+                  - img [ref=e2697]
+                  - heading "Union-Find (Disjoint Set Union)" [level=3] [ref=e2703]
+                - paragraph [ref=e2704]: Find the root. Union the sets. Near-constant time with path compression.
+                - generic [ref=e2705]:
+                  - generic [ref=e2706]: 16 min
+                  - img [ref=e2707]
+          - link "157 Digit DP Count integers in [0, N] satisfying a digit property. 18 min" [ref=e2710] [cursor=pointer]:
+            - /url: /learn/digit-dp
+            - generic [ref=e2712]:
+              - generic [ref=e2713]: "157"
+              - generic [ref=e2714]:
+                - generic [ref=e2715]:
+                  - img [ref=e2716]
+                  - heading "Digit DP" [level=3] [ref=e2720]
+                - paragraph [ref=e2721]: Count integers in [0, N] satisfying a digit property.
+                - generic [ref=e2722]:
+                  - generic [ref=e2723]: 18 min
+                  - img [ref=e2724]
+          - link "158 Interval DP dp[i][j] = best answer for subproblem on range [i..j]. 18 min" [ref=e2727] [cursor=pointer]:
+            - /url: /learn/interval-dp
+            - generic [ref=e2729]:
+              - generic [ref=e2730]: "158"
+              - generic [ref=e2731]:
+                - generic [ref=e2732]:
+                  - img [ref=e2733]
+                  - heading "Interval DP" [level=3] [ref=e2737]
+                - paragraph [ref=e2738]: dp[i][j] = best answer for subproblem on range [i..j].
+                - generic [ref=e2739]:
+                  - generic [ref=e2740]: 18 min
+                  - img [ref=e2741]
+          - link "159 Grid DP dp[i][j] depends on neighbors. Fill row by row. 18 min" [ref=e2744] [cursor=pointer]:
+            - /url: /learn/grid-dp
+            - generic [ref=e2746]:
+              - generic [ref=e2747]: "159"
+              - generic [ref=e2748]:
+                - generic [ref=e2749]:
+                  - img [ref=e2750]
+                  - heading "Grid DP" [level=3] [ref=e2754]
+                - paragraph [ref=e2755]: dp[i][j] depends on neighbors. Fill row by row.
+                - generic [ref=e2756]:
+                  - generic [ref=e2757]: 18 min
+                  - img [ref=e2758]
+          - link "160 State Machine DP Model transitions between states. Stock problems are the canonical example. 18 min" [ref=e2761] [cursor=pointer]:
+            - /url: /learn/state-machine-dp
+            - generic [ref=e2763]:
+              - generic [ref=e2764]: "160"
+              - generic [ref=e2765]:
+                - generic [ref=e2766]:
+                  - img [ref=e2767]
+                  - heading "State Machine DP" [level=3] [ref=e2771]
+                - paragraph [ref=e2772]: Model transitions between states. Stock problems are the canonical example.
+                - generic [ref=e2773]:
+                  - generic [ref=e2774]: 18 min
+                  - img [ref=e2775]
+          - link "161 Recursion & Memoization Top-down DP. Cache the result of each subproblem. Never recompute. 16 min" [ref=e2778] [cursor=pointer]:
+            - /url: /learn/recursion-memoization
+            - generic [ref=e2780]:
+              - generic [ref=e2781]: "161"
+              - generic [ref=e2782]:
+                - generic [ref=e2783]:
+                  - img [ref=e2784]
+                  - heading "Recursion & Memoization" [level=3] [ref=e2788]
+                - paragraph [ref=e2789]: Top-down DP. Cache the result of each subproblem. Never recompute.
+                - generic [ref=e2790]:
+                  - generic [ref=e2791]: 16 min
+                  - img [ref=e2792]
+          - link "162 Grid BFS/DFS Patterns Mark visited. BFS for shortest. DFS for components. Multi-source for distances from all. 18 min" [ref=e2795] [cursor=pointer]:
+            - /url: /learn/grid-patterns
+            - generic [ref=e2797]:
+              - generic [ref=e2798]: "162"
+              - generic [ref=e2799]:
+                - generic [ref=e2800]:
+                  - img [ref=e2801]
+                  - heading "Grid BFS/DFS Patterns" [level=3] [ref=e2807]
+                - paragraph [ref=e2808]: Mark visited. BFS for shortest. DFS for components. Multi-source for distances from all.
+                - generic [ref=e2809]:
+                  - generic [ref=e2810]: 18 min
+                  - img [ref=e2811]
+          - link "163 Fenwick Tree (BIT) Range sum and point update in O(log n). Simpler than segment tree for prefix queries. 14 min" [ref=e2814] [cursor=pointer]:
+            - /url: /learn/fenwick-tree
+            - generic [ref=e2816]:
+              - generic [ref=e2817]: "163"
+              - generic [ref=e2818]:
+                - generic [ref=e2819]:
+                  - img [ref=e2820]
+                  - heading "Fenwick Tree (BIT)" [level=3] [ref=e2824]
+                - paragraph [ref=e2825]: Range sum and point update in O(log n). Simpler than segment tree for prefix queries.
+                - generic [ref=e2826]:
+                  - generic [ref=e2827]: 14 min
+                  - img [ref=e2828]
+          - link "164 Heavy-Light Decomposition Decompose tree into O(log n) chains. Enables range queries on any tree path. 18 min" [ref=e2831] [cursor=pointer]:
+            - /url: /learn/heavy-light-decomposition
+            - generic [ref=e2833]:
+              - generic [ref=e2834]: "164"
+              - generic [ref=e2835]:
+                - generic [ref=e2836]:
+                  - img [ref=e2837]
+                  - heading "Heavy-Light Decomposition" [level=3] [ref=e2843]
+                - paragraph [ref=e2844]: Decompose tree into O(log n) chains. Enables range queries on any tree path.
+                - generic [ref=e2845]:
+                  - generic [ref=e2846]: 18 min
+                  - img [ref=e2847]
+          - link "165 Euler Tour (DFS Order) Flatten a tree into an array. Subtree queries become range queries. 14 min" [ref=e2850] [cursor=pointer]:
+            - /url: /learn/euler-tour
+            - generic [ref=e2852]:
+              - generic [ref=e2853]: "165"
+              - generic [ref=e2854]:
+                - generic [ref=e2855]:
+                  - img [ref=e2856]
+                  - heading "Euler Tour (DFS Order)" [level=3] [ref=e2862]
+                - paragraph [ref=e2863]: Flatten a tree into an array. Subtree queries become range queries.
+                - generic [ref=e2864]:
+                  - generic [ref=e2865]: 14 min
+                  - img [ref=e2866]
+          - link "166 Mo's Algorithm Sort offline queries to minimize total movement. O((n+q)√n) for range queries. 15 min" [ref=e2869] [cursor=pointer]:
+            - /url: /learn/mo-algorithm
+            - generic [ref=e2871]:
+              - generic [ref=e2872]: "166"
+              - generic [ref=e2873]:
+                - generic [ref=e2874]:
+                  - img [ref=e2875]
+                  - heading "Mo's Algorithm" [level=3] [ref=e2879]
+                - paragraph [ref=e2880]: Sort offline queries to minimize total movement. O((n+q)√n) for range queries.
+                - generic [ref=e2881]:
+                  - generic [ref=e2882]: 15 min
+                  - img [ref=e2883]
+          - link "167 XOR Basis (Linear Basis) Gaussian elimination on XOR. Find max XOR, k-th XOR value, XOR spanning set. 13 min" [ref=e2886] [cursor=pointer]:
+            - /url: /learn/xor-basis
+            - generic [ref=e2888]:
+              - generic [ref=e2889]: "167"
+              - generic [ref=e2890]:
+                - generic [ref=e2891]:
+                  - img [ref=e2892]
+                  - heading "XOR Basis (Linear Basis)" [level=3] [ref=e2896]
+                - paragraph [ref=e2897]: Gaussian elimination on XOR. Find max XOR, k-th XOR value, XOR spanning set.
+                - generic [ref=e2898]:
+                  - generic [ref=e2899]: 13 min
+                  - img [ref=e2900]
+          - link "168 Euler Path & Circuit Visit every EDGE exactly once. Hierholzer's algorithm. Degree condition check. 13 min" [ref=e2903] [cursor=pointer]:
+            - /url: /learn/euler-path
+            - generic [ref=e2905]:
+              - generic [ref=e2906]: "168"
+              - generic [ref=e2907]:
+                - generic [ref=e2908]:
+                  - img [ref=e2909]
+                  - heading "Euler Path & Circuit" [level=3] [ref=e2915]
+                - paragraph [ref=e2916]: Visit every EDGE exactly once. Hierholzer's algorithm. Degree condition check.
+                - generic [ref=e2917]:
+                  - generic [ref=e2918]: 13 min
+                  - img [ref=e2919]
+          - link "169 Divide & Conquer DP Optimization Reduce O(n²k) DP to O(nk log n) when optimal split point is monotone. 16 min" [ref=e2922] [cursor=pointer]:
+            - /url: /learn/divide-conquer-dp
+            - generic [ref=e2924]:
+              - generic [ref=e2925]: "169"
+              - generic [ref=e2926]:
+                - generic [ref=e2927]:
+                  - img [ref=e2928]
+                  - heading "Divide & Conquer DP Optimization" [level=3] [ref=e2932]
+                - paragraph [ref=e2933]: Reduce O(n²k) DP to O(nk log n) when optimal split point is monotone.
+                - generic [ref=e2934]:
+                  - generic [ref=e2935]: 16 min
+                  - img [ref=e2936]
+          - link "170 Sqrt Decomposition Divide array into √n blocks. O(√n) per query/update. No preprocessing needed. 14 min" [ref=e2939] [cursor=pointer]:
+            - /url: /learn/sqrt-decomposition
+            - generic [ref=e2941]:
+              - generic [ref=e2942]: "170"
+              - generic [ref=e2943]:
+                - generic [ref=e2944]:
+                  - img [ref=e2945]
+                  - heading "Sqrt Decomposition" [level=3] [ref=e2949]
+                - paragraph [ref=e2950]: Divide array into √n blocks. O(√n) per query/update. No preprocessing needed.
+                - generic [ref=e2951]:
+                  - generic [ref=e2952]: 14 min
+                  - img [ref=e2953]
+          - link "171 Persistent Segment Tree Keep all historical versions. Query any past state in O(log n). Share nodes across versions. 16 min" [ref=e2956] [cursor=pointer]:
+            - /url: /learn/persistent-segment-tree
+            - generic [ref=e2958]:
+              - generic [ref=e2959]: "171"
+              - generic [ref=e2960]:
+                - generic [ref=e2961]:
+                  - img [ref=e2962]
+                  - heading "Persistent Segment Tree" [level=3] [ref=e2966]
+                - paragraph [ref=e2967]: Keep all historical versions. Query any past state in O(log n). Share nodes across versions.
+                - generic [ref=e2968]:
+                  - generic [ref=e2969]: 16 min
+                  - img [ref=e2970]
+          - link "172 Treap & Ordered Set BST + heap priorities. Split and merge in O(log n). Dynamic order statistics. 15 min" [ref=e2973] [cursor=pointer]:
+            - /url: /learn/treap
+            - generic [ref=e2975]:
+              - generic [ref=e2976]: "172"
+              - generic [ref=e2977]:
+                - generic [ref=e2978]:
+                  - img [ref=e2979]
+                  - heading "Treap & Ordered Set" [level=3] [ref=e2983]
+                - paragraph [ref=e2984]: BST + heap priorities. Split and merge in O(log n). Dynamic order statistics.
+                - generic [ref=e2985]:
+                  - generic [ref=e2986]: 15 min
+                  - img [ref=e2987]
+          - link "173 CDQ Divide and Conquer Solve 3D partial order problems offline. Process left half, measure cross contributions. 16 min" [ref=e2990] [cursor=pointer]:
+            - /url: /learn/offline-cdq
+            - generic [ref=e2992]:
+              - generic [ref=e2993]: "173"
+              - generic [ref=e2994]:
+                - generic [ref=e2995]:
+                  - img [ref=e2996]
+                  - heading "CDQ Divide and Conquer" [level=3] [ref=e3000]
+                - paragraph [ref=e3001]: Solve 3D partial order problems offline. Process left half, measure cross contributions.
+                - generic [ref=e3002]:
+                  - generic [ref=e3003]: 16 min
+                  - img [ref=e3004]
+          - link "174 Bitset & Bit-Parallel Algorithms Process 64 elements at once with uint64 bitmasks. DP optimized by 64x. 13 min" [ref=e3007] [cursor=pointer]:
+            - /url: /learn/bitset-operations
+            - generic [ref=e3009]:
+              - generic [ref=e3010]: "174"
+              - generic [ref=e3011]:
+                - generic [ref=e3012]:
+                  - img [ref=e3013]
+                  - heading "Bitset & Bit-Parallel Algorithms" [level=3] [ref=e3017]
+                - paragraph [ref=e3018]: Process 64 elements at once with uint64 bitmasks. DP optimized by 64x.
+                - generic [ref=e3019]:
+                  - generic [ref=e3020]: 13 min
+                  - img [ref=e3021]
+          - link "175 Slope Trick Maintain the piecewise-linear convex function via two heaps. DP in O(n log n). 15 min" [ref=e3024] [cursor=pointer]:
+            - /url: /learn/slope-trick
+            - generic [ref=e3026]:
+              - generic [ref=e3027]: "175"
+              - generic [ref=e3028]:
+                - generic [ref=e3029]:
+                  - img [ref=e3030]
+                  - heading "Slope Trick" [level=3] [ref=e3034]
+                - paragraph [ref=e3035]: Maintain the piecewise-linear convex function via two heaps. DP in O(n log n).
+                - generic [ref=e3036]:
+                  - generic [ref=e3037]: 15 min
+                  - img [ref=e3038]
+          - link "176 Segment Tree Beats (Ji Driver) Range chmin/chmax in O(n log²n). Tags break only when strictly better value exists. 17 min" [ref=e3041] [cursor=pointer]:
+            - /url: /learn/segment-tree-beats
+            - generic [ref=e3043]:
+              - generic [ref=e3044]: "176"
+              - generic [ref=e3045]:
+                - generic [ref=e3046]:
+                  - img [ref=e3047]
+                  - heading "Segment Tree Beats (Ji Driver)" [level=3] [ref=e3051]
+                - paragraph [ref=e3052]: Range chmin/chmax in O(n log²n). Tags break only when strictly better value exists.
+                - generic [ref=e3053]:
+                  - generic [ref=e3054]: 17 min
+                  - img [ref=e3055]
+          - link "177 Balanced Partition DP Split array into groups with balanced sums. Fairness DP, multiway partition. 14 min" [ref=e3058] [cursor=pointer]:
+            - /url: /learn/balanced-dp
+            - generic [ref=e3060]:
+              - generic [ref=e3061]: "177"
+              - generic [ref=e3062]:
+                - generic [ref=e3063]:
+                  - img [ref=e3064]
+                  - heading "Balanced Partition DP" [level=3] [ref=e3068]
+                - paragraph [ref=e3069]: Split array into groups with balanced sums. Fairness DP, multiway partition.
+                - generic [ref=e3070]:
+                  - generic [ref=e3071]: 14 min
+                  - img [ref=e3072]
+          - link "178 Profile DP (Broken Profile) Count tilings column by column. State = which cells in current column are filled. 15 min" [ref=e3075] [cursor=pointer]:
+            - /url: /learn/profile-dp
+            - generic [ref=e3077]:
+              - generic [ref=e3078]: "178"
+              - generic [ref=e3079]:
+                - generic [ref=e3080]:
+                  - img [ref=e3081]
+                  - heading "Profile DP (Broken Profile)" [level=3] [ref=e3085]
+                - paragraph [ref=e3086]: Count tilings column by column. State = which cells in current column are filled.
+                - generic [ref=e3087]:
+                  - generic [ref=e3088]: 15 min
+                  - img [ref=e3089]
+          - link "179 Aliens Trick (WQS Binary Search) DP with \"exactly k\" constraint → binary search on cost penalty λ. 16 min" [ref=e3092] [cursor=pointer]:
+            - /url: /learn/aliens-trick
+            - generic [ref=e3094]:
+              - generic [ref=e3095]: "179"
+              - generic [ref=e3096]:
+                - generic [ref=e3097]:
+                  - img [ref=e3098]
+                  - heading "Aliens Trick (WQS Binary Search)" [level=3] [ref=e3102]
+                - paragraph [ref=e3103]: DP with "exactly k" constraint → binary search on cost penalty λ.
+                - generic [ref=e3104]:
+                  - generic [ref=e3105]: 16 min
+                  - img [ref=e3106]
+          - 'link "180 Arithmetic Progression DP Count/find longest AP subsequences. State = (last, diff). Key: hash by difference. 14 min" [ref=e3109] [cursor=pointer]':
+            - /url: /learn/arithmetic-dp
+            - generic [ref=e3111]:
+              - generic [ref=e3112]: "180"
+              - generic [ref=e3113]:
+                - generic [ref=e3114]:
+                  - img [ref=e3115]
+                  - heading "Arithmetic Progression DP" [level=3] [ref=e3119]
+                - paragraph [ref=e3120]: "Count/find longest AP subsequences. State = (last, diff). Key: hash by difference."
+                - generic [ref=e3121]:
+                  - generic [ref=e3122]: 14 min
+                  - img [ref=e3123]
+          - 'link "181 Subsequence Counting Count subsequences with constraints. DP on choices: include or exclude each element. 14 min" [ref=e3126] [cursor=pointer]':
+            - /url: /learn/subsequence-counting
+            - generic [ref=e3128]:
+              - generic [ref=e3129]: "181"
+              - generic [ref=e3130]:
+                - generic [ref=e3131]:
+                  - img [ref=e3132]
+                  - heading "Subsequence Counting" [level=3] [ref=e3136]
+                - paragraph [ref=e3137]: "Count subsequences with constraints. DP on choices: include or exclude each element."
+                - generic [ref=e3138]:
+                  - generic [ref=e3139]: 14 min
+                  - img [ref=e3140]
+          - 'link "182 Sliding Window — Advanced Patterns At-most-k trick: exactly-k = at-most-k minus at-most-(k-1). Frequency-based windows. 14 min" [ref=e3143] [cursor=pointer]':
+            - /url: /learn/sliding-window-advanced
+            - generic [ref=e3145]:
+              - generic [ref=e3146]: "182"
+              - generic [ref=e3147]:
+                - generic [ref=e3148]:
+                  - img [ref=e3149]
+                  - heading "Sliding Window — Advanced Patterns" [level=3] [ref=e3153]
+                - paragraph [ref=e3154]: "At-most-k trick: exactly-k = at-most-k minus at-most-(k-1). Frequency-based windows."
+                - generic [ref=e3155]:
+                  - generic [ref=e3156]: 14 min
+                  - img [ref=e3157]
+          - link "183 2D Prefix Sums & Difference Arrays O(1) rectangle sum queries. 2D range updates with difference arrays. 12 min" [ref=e3160] [cursor=pointer]:
+            - /url: /learn/two-d-prefix-sum
+            - generic [ref=e3162]:
+              - generic [ref=e3163]: "183"
+              - generic [ref=e3164]:
+                - generic [ref=e3165]:
+                  - img [ref=e3166]
+                  - heading "2D Prefix Sums & Difference Arrays" [level=3] [ref=e3170]
+                - paragraph [ref=e3171]: O(1) rectangle sum queries. 2D range updates with difference arrays.
+                - generic [ref=e3172]:
+                  - generic [ref=e3173]: 12 min
+                  - img [ref=e3174]
+          - 'link "184 DP Optimized with Deque Sliding window DP: O(n²) → O(n). Deque maintains useful transitions. 13 min" [ref=e3177] [cursor=pointer]':
+            - /url: /learn/dp-with-deque
+            - generic [ref=e3179]:
+              - generic [ref=e3180]: "184"
+              - generic [ref=e3181]:
+                - generic [ref=e3182]:
+                  - img [ref=e3183]
+                  - heading "DP Optimized with Deque" [level=3] [ref=e3187]
+                - paragraph [ref=e3188]: "Sliding window DP: O(n²) → O(n). Deque maintains useful transitions."
+                - generic [ref=e3189]:
+                  - generic [ref=e3190]: 13 min
+                  - img [ref=e3191]
+          - link "185 Stock Trading DP Buy/sell with cooldown, fees, k transactions. State machine DP on market states. 14 min" [ref=e3194] [cursor=pointer]:
+            - /url: /learn/stock-trading
+            - generic [ref=e3196]:
+              - generic [ref=e3197]: "185"
+              - generic [ref=e3198]:
+                - generic [ref=e3199]:
+                  - img [ref=e3200]
+                  - heading "Stock Trading DP" [level=3] [ref=e3204]
+                - paragraph [ref=e3205]: Buy/sell with cooldown, fees, k transactions. State machine DP on market states.
+                - generic [ref=e3206]:
+                  - generic [ref=e3207]: 14 min
+                  - img [ref=e3208]
+          - 'link "186 DP Space Optimization Rolling array: reduce O(n²) DP space to O(n) or O(1). Fill order matters. 12 min" [ref=e3211] [cursor=pointer]':
+            - /url: /learn/dp-space-optimization
+            - generic [ref=e3213]:
+              - generic [ref=e3214]: "186"
+              - generic [ref=e3215]:
+                - generic [ref=e3216]:
+                  - img [ref=e3217]
+                  - heading "DP Space Optimization" [level=3] [ref=e3221]
+                - paragraph [ref=e3222]: "Rolling array: reduce O(n²) DP space to O(n) or O(1). Fill order matters."
+                - generic [ref=e3223]:
+                  - generic [ref=e3224]: 12 min
+                  - img [ref=e3225]
+          - link "187 String Window Patterns Minimum window substring, anagram in string, longest with K distinct chars. 13 min" [ref=e3228] [cursor=pointer]:
+            - /url: /learn/string-window-patterns
+            - generic [ref=e3230]:
+              - generic [ref=e3231]: "187"
+              - generic [ref=e3232]:
+                - generic [ref=e3233]:
+                  - img [ref=e3234]
+                  - heading "String Window Patterns" [level=3] [ref=e3238]
+                - paragraph [ref=e3239]: Minimum window substring, anagram in string, longest with K distinct chars.
+                - generic [ref=e3240]:
+                  - generic [ref=e3241]: 13 min
+                  - img [ref=e3242]
+          - link "188 Wildcard & Regex Matching DP for pattern matching. Wildcard '?' and '*', regex '.' and '*'. 14 min" [ref=e3245] [cursor=pointer]:
+            - /url: /learn/wildcard-regex
+            - generic [ref=e3247]:
+              - generic [ref=e3248]: "188"
+              - generic [ref=e3249]:
+                - generic [ref=e3250]:
+                  - img [ref=e3251]
+                  - heading "Wildcard & Regex Matching" [level=3] [ref=e3255]
+                - paragraph [ref=e3256]: DP for pattern matching. Wildcard '?' and '*', regex '.' and '*'.
+                - generic [ref=e3257]:
+                  - generic [ref=e3258]: 14 min
+                  - img [ref=e3259]
+          - link "189 Counting Subarrays & Substrings Count subarrays satisfying constraints. Prefix sums, two pointers, \"at most K\" trick. 13 min" [ref=e3262] [cursor=pointer]:
+            - /url: /learn/counting-subarrays
+            - generic [ref=e3264]:
+              - generic [ref=e3265]: "189"
+              - generic [ref=e3266]:
+                - generic [ref=e3267]:
+                  - img [ref=e3268]
+                  - heading "Counting Subarrays & Substrings" [level=3] [ref=e3272]
+                - paragraph [ref=e3273]: Count subarrays satisfying constraints. Prefix sums, two pointers, "at most K" trick.
+                - generic [ref=e3274]:
+                  - generic [ref=e3275]: 13 min
+                  - img [ref=e3276]
+          - link "190 Palindrome DP Problems Minimum cuts, minimum insertions, count palindromic substrings. Interval DP. 14 min" [ref=e3279] [cursor=pointer]:
+            - /url: /learn/dp-palindromes
+            - generic [ref=e3281]:
+              - generic [ref=e3282]: "190"
+              - generic [ref=e3283]:
+                - generic [ref=e3284]:
+                  - img [ref=e3285]
+                  - heading "Palindrome DP Problems" [level=3] [ref=e3289]
+                - paragraph [ref=e3290]: Minimum cuts, minimum insertions, count palindromic substrings. Interval DP.
+                - generic [ref=e3291]:
+                  - generic [ref=e3292]: 14 min
+                  - img [ref=e3293]
+          - link "191 Trapping Rain Water Water trapped between heights. Two pointers, stack, 2D BFS variants. 13 min" [ref=e3296] [cursor=pointer]:
+            - /url: /learn/trapping-rainwater
+            - generic [ref=e3298]:
+              - generic [ref=e3299]: "191"
+              - generic [ref=e3300]:
+                - generic [ref=e3301]:
+                  - img [ref=e3302]
+                  - heading "Trapping Rain Water" [level=3] [ref=e3306]
+                - paragraph [ref=e3307]: Water trapped between heights. Two pointers, stack, 2D BFS variants.
+                - generic [ref=e3308]:
+                  - generic [ref=e3309]: 13 min
+                  - img [ref=e3310]
+          - link "192 Matrix Chain & Generalized Interval DP Optimal parenthesization, burst balloons, stone merging. O(n³) interval DP. 14 min" [ref=e3313] [cursor=pointer]:
+            - /url: /learn/matrix-chain
+            - generic [ref=e3315]:
+              - generic [ref=e3316]: "192"
+              - generic [ref=e3317]:
+                - generic [ref=e3318]:
+                  - img [ref=e3319]
+                  - heading "Matrix Chain & Generalized Interval DP" [level=3] [ref=e3323]
+                - paragraph [ref=e3324]: Optimal parenthesization, burst balloons, stone merging. O(n³) interval DP.
+                - generic [ref=e3325]:
+                  - generic [ref=e3326]: 14 min
+                  - img [ref=e3327]
+          - link "193 Stone Game & Minimax DP Both players play optimally. DP for competitive game results and optimal values. 13 min" [ref=e3330] [cursor=pointer]:
+            - /url: /learn/stone-game-dp
+            - generic [ref=e3332]:
+              - generic [ref=e3333]: "193"
+              - generic [ref=e3334]:
+                - generic [ref=e3335]:
+                  - img [ref=e3336]
+                  - heading "Stone Game & Minimax DP" [level=3] [ref=e3340]
+                - paragraph [ref=e3341]: Both players play optimally. DP for competitive game results and optimal values.
+                - generic [ref=e3342]:
+                  - generic [ref=e3343]: 13 min
+                  - img [ref=e3344]
+          - link "194 HashMap + Prefix Sum Patterns Count subarrays with target sum, equal 0s and 1s, balanced strings. 12 min" [ref=e3347] [cursor=pointer]:
+            - /url: /learn/hash-prefix-problems
+            - generic [ref=e3349]:
+              - generic [ref=e3350]: "194"
+              - generic [ref=e3351]:
+                - generic [ref=e3352]:
+                  - img [ref=e3353]
+                  - heading "HashMap + Prefix Sum Patterns" [level=3] [ref=e3357]
+                - paragraph [ref=e3358]: Count subarrays with target sum, equal 0s and 1s, balanced strings.
+                - generic [ref=e3359]:
+                  - generic [ref=e3360]: 12 min
+                  - img [ref=e3361]
+    - generic [ref=e3364]:
+      - paragraph [ref=e3365]: More chapters coming
+      - paragraph [ref=e3366]: Segment Trees, Network Flow, Number Theory deep dives — next up.
+  - contentinfo [ref=e3367]:
+    - generic [ref=e3368]:
+      - generic [ref=e3369]:
+        - generic [ref=e3370]:
+          - link "fx DSA Mastery by frontendx" [ref=e3371] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e3373]: fx
+            - generic [ref=e3374]:
+              - paragraph [ref=e3375]: DSA Mastery
+              - paragraph [ref=e3376]: by frontendx
+          - paragraph [ref=e3377]: 38,000+ curated DSA problems from 50+ platforms. Organized by topic, tagged by concept, ready for practice.
+          - generic [ref=e3378]:
+            - generic [ref=e3379]: 38k+ Problems
+            - generic [ref=e3380]: 50+ Platforms
+            - generic [ref=e3381]: 14 Topics
+        - generic [ref=e3382]:
+          - heading "Explore" [level=3] [ref=e3383]
+          - list [ref=e3384]:
+            - listitem [ref=e3385]:
+              - link "All Topics" [ref=e3386] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e3387]:
+              - link "Problem Explorer" [ref=e3388] [cursor=pointer]:
+                - /url: /explore
+            - listitem [ref=e3389]:
+              - link "Learn DSA" [ref=e3390] [cursor=pointer]:
+                - /url: /learn
+        - generic [ref=e3391]:
+          - heading "Topics" [level=3] [ref=e3392]
+          - list [ref=e3393]:
+            - listitem [ref=e3394]:
+              - link "Dynamic Programming" [ref=e3395] [cursor=pointer]:
+                - /url: /problems/dp
+            - listitem [ref=e3396]:
+              - link "Binary Search" [ref=e3397] [cursor=pointer]:
+                - /url: /problems/binary_search
+            - listitem [ref=e3398]:
+              - link "Graph" [ref=e3399] [cursor=pointer]:
+                - /url: /problems/graph
+            - listitem [ref=e3400]:
+              - link "Tree" [ref=e3401] [cursor=pointer]:
+                - /url: /problems/tree
+            - listitem [ref=e3402]:
+              - link "Math" [ref=e3403] [cursor=pointer]:
+                - /url: /problems/math
+        - generic [ref=e3404]:
+          - heading "Resources" [level=3] [ref=e3405]
+          - list [ref=e3406]:
+            - listitem [ref=e3407]:
+              - link "Patterns Cheat Sheet" [ref=e3408] [cursor=pointer]:
+                - /url: /learn/patterns
+            - listitem [ref=e3409]:
+              - link "GitHub ↗" [ref=e3410] [cursor=pointer]:
+                - /url: https://github.com/rashidtvmr/dsa-inventory
+                - text: GitHub
+                - generic [ref=e3411]: ↗
+      - generic [ref=e3412]:
+        - paragraph [ref=e3413]: © 2026 DSA Mastery. Built for DSA practice.
+        - link "GitHub" [ref=e3415] [cursor=pointer]:
+          - /url: https://github.com/rashidtvmr/dsa-inventory
+          - generic [ref=e3416]: GitHub
+          - img [ref=e3417]

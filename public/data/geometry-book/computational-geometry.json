@@ -1,0 +1,902 @@
+{
+  "chapter": 14,
+  "slug": "computational-geometry",
+  "title": "Computational Geometry",
+  "icon": "⌂",
+  "color": "#0ea5e9",
+  "problemCount": 107,
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Chapter 14: Computational Geometry"
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "1. INTRODUCTION"
+    },
+    {
+      "type": "text",
+      "content": "Computational geometry is the branch of computer science that deals with algorithms for geometric problems. It powers:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**GPS navigation:** shortest routes around geographic features",
+        "**Computer graphics:** rendering, collision detection",
+        "**CAD software:** precise object design",
+        "**Robotics:** path planning around obstacles",
+        "**Game development:** hit detection, visibility checks"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "The unifying theme: **we solve geometric problems efficiently by exploiting mathematical structure** rather than brute force."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2. CORE CONCEPTS"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.1 Convex Hull"
+    },
+    {
+      "type": "text",
+      "content": "The convex hull of a set of points is the smallest convex polygon containing all points — the shape of a rubber band stretched around the outermost points."
+    },
+    {
+      "type": "text",
+      "content": "**Graham Scan:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Find the point with lowest y (leftmost if tie) — the pivot",
+        "Sort other points by polar angle around pivot",
+        "Maintain stack; pop while last two points + new point make a clockwise turn",
+        "Stack = convex hull"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**Monotone Chain (Andrew's Algorithm):**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Sort points by x, then y",
+        "Build lower hull: iterate, maintain convexity with cross product",
+        "Build upper hull: iterate reversed",
+        "Merge (remove duplicates at ends)"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "Both: $O(N \\log N)$"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.2 Line Segment Intersection"
+    },
+    {
+      "type": "text",
+      "content": "Two segments (p_1, q_1) and (p_2, q_2) intersect if orientations differ AND the same for the other pair, or if collinear and overlapping."
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "orient(p₁, q₁, p₂) × orient(p₁, q₁, q₂) < 0  AND\norient(p₂, q₂, p₁) × orient(p₂, q₂, q₁) < 0",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.3 Point in Polygon (Ray Casting)"
+    },
+    {
+      "type": "text",
+      "content": "Shoot a horizontal ray to the right. Count edge intersections. Odd = inside, even = outside."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.4 Closest Pair of Points (Divide and Conquer)"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Sort by x; divide into left/right halves",
+        "Recurse on each half (min distance d)",
+        "Strip: points within d of dividing line, sorted by y",
+        "Check each point against next 7 in strip",
+        "Return minimum"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "$O(N \\log N)$"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.5 Line Sweep"
+    },
+    {
+      "type": "text",
+      "content": "Process elements sorted by one coordinate, maintain \"active\" elements in a BST/segment tree. Reduces 2D problems to 1D."
+    },
+    {
+      "type": "text",
+      "content": "Applications: rectangle union area, segment intersection, closest pair."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.6 Rotating Calipers"
+    },
+    {
+      "type": "text",
+      "content": "Two parallel lines \"rotate\" around a convex polygon, maintaining contact. $O(N)$ after hull construction."
+    },
+    {
+      "type": "text",
+      "content": "Applications: diameter (farthest pair), minimum width, max distance between polygons."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "2.7 Convex Hull Trick (CHT)"
+    },
+    {
+      "type": "text",
+      "content": "DP optimization for `dp[i] = min/max(dp[j] + cost(j,i))` where cost involves a product of prefix[i] and prefix[j]. Maintain lines y = m·x + c in a deque or Li Chao tree."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "3. PROBLEM RECOGNITION"
+    },
+    {
+      "type": "text",
+      "content": "**Keywords:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "\"convex hull\", \"convex polygon\"",
+        "\"intersection\", \"collision\"",
+        "\"closest pair\", \"nearest neighbor\"",
+        "\"point in polygon\", \"inside/outside\"",
+        "\"sweep line\", \"line sweep\"",
+        "\"minimum distance\", \"maximum distance\"",
+        "\"diameter\", \"width\", \"calipers\"",
+        "\"visibility\", \"line of sight\"",
+        "\"union\" / \"intersection\" of shapes"
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "4. PATTERN ANALYSIS"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Pattern 1: Convex Hull"
+    },
+    {
+      "type": "text",
+      "content": "**When to use:** \"Smallest polygon containing all points,\" \"outer boundary.\""
+    },
+    {
+      "type": "text",
+      "content": "**Complexity:** $O(N \\log N)$ for Monotone Chain."
+    },
+    {
+      "type": "text",
+      "content": "**Common mistakes:** Not handling collinear points; forgetting last point connects to first; integer overflow in cross product."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Pattern 2: Segment Intersection"
+    },
+    {
+      "type": "text",
+      "content": "**When to use:** \"Do these segments cross?\""
+    },
+    {
+      "type": "text",
+      "content": "**Complexity:** $O(1)$ per pair; O((N+K) log N) sweep for all intersections."
+    },
+    {
+      "type": "text",
+      "content": "**Common mistakes:** Collinear overlapping segments; endpoint handling."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Pattern 3: Closest Pair"
+    },
+    {
+      "type": "text",
+      "content": "**When to use:** \"Minimum distance between any two points.\""
+    },
+    {
+      "type": "text",
+      "content": "**Complexity:** $O(N \\log N)$."
+    },
+    {
+      "type": "text",
+      "content": "**Common mistakes:** Not checking enough points in strip (need at least 7); sorting strip by y each recursion adds log factor."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Pattern 4: Line Sweep"
+    },
+    {
+      "type": "text",
+      "content": "**When to use:** Intervals, overlapping shapes, event-based geometry."
+    },
+    {
+      "type": "text",
+      "content": "**Complexity:** $O(N \\log N)$."
+    },
+    {
+      "type": "text",
+      "content": "**Common mistakes:** Events at same x — start vs end order matters."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Pattern 5: Convex Hull Trick"
+    },
+    {
+      "type": "text",
+      "content": "**When to use:** DP with quadratic time that involves prefix products."
+    },
+    {
+      "type": "text",
+      "content": "**Complexity:** $O(N)$ (monotonic slopes) or $O(N \\log N)$ (Li Chao tree)."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "5. REUSABLE CODING TEMPLATES"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Template 1: Convex Hull — Monotone Chain"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def convex_hull(points):\n    points = sorted(set(points))\n    if len(points) <= 1:\n        return points\n    \n    def cross(o, a, b):\n        return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0])\n    \n    lower = []\n    for p in points:\n        while len(lower) >= 2 and cross(lower[-2], lower[-1], p) <= 0:\n            lower.pop()\n        lower.append(p)\n    \n    upper = []\n    for p in reversed(points):\n        while len(upper) >= 2 and cross(upper[-2], upper[-1], p) <= 0:\n            upper.pop()\n        upper.append(p)\n    \n    return lower[:-1] + upper[:-1]",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "using Point = pair<long long, long long>;\n\nlong long cross(Point o, Point a, Point b) {\n    return (a.first - o.first) * (b.second - o.second)\n         - (a.second - o.second) * (b.first - o.first);\n}\n\nvector<Point> convex_hull(vector<Point> points) {\n    sort(points.begin(), points.end());\n    points.erase(unique(points.begin(), points.end()), points.end());\n    if (points.size() <= 1) return points;\n    \n    vector<Point> lower, upper;\n    for (auto& p : points) {\n        while (lower.size() >= 2 && cross(lower[lower.size()-2], lower.back(), p) <= 0)\n            lower.pop_back();\n        lower.push_back(p);\n    }\n    for (int i = points.size()-1; i >= 0; i--) {\n        auto& p = points[i];\n        while (upper.size() >= 2 && cross(upper[upper.size()-2], upper.back(), p) <= 0)\n            upper.pop_back();\n        upper.push_back(p);\n    }\n    lower.pop_back(); upper.pop_back();\n    lower.insert(lower.end(), upper.begin(), upper.end());\n    return lower;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public static List<int[]> convexHull(int[][] points) {\n    Arrays.sort(points, (a,b) -> a[0]!=b[0] ? a[0]-b[0] : a[1]-b[1]);\n    int n = points.length;\n    if (n <= 1) return Arrays.asList(points);\n    \n    List<int[]> lower = new ArrayList<>();\n    for (int[] p : points) {\n        while (lower.size() >= 2 && cross(lower.get(lower.size()-2), lower.get(lower.size()-1), p) <= 0)\n            lower.remove(lower.size()-1);\n        lower.add(p);\n    }\n    List<int[]> upper = new ArrayList<>();\n    for (int i = n-1; i >= 0; i--) {\n        int[] p = points[i];\n        while (upper.size() >= 2 && cross(upper.get(upper.size()-2), upper.get(upper.size()-1), p) <= 0)\n            upper.remove(upper.size()-1);\n        upper.add(p);\n    }\n    lower.remove(lower.size()-1);\n    upper.remove(upper.size()-1);\n    lower.addAll(upper);\n    return lower;\n}\n\nstatic long cross(int[] o, int[] a, int[] b) {\n    return (long)(a[0]-o[0]) * (b[1]-o[1]) - (long)(a[1]-o[1]) * (b[0]-o[0]);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function convexHull(points) {\n    points = [...new Set(points.map(p => p[0] + ',' + p[1]))].map(s => s.split(',').map(Number));\n    points.sort((a, b) => a[0] !== b[0] ? a[0] - b[0] : a[1] - b[1]);\n    if (points.length <= 1) return points;\n    function cross(o, a, b) {\n        return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);\n    }\n    const lower = [];\n    for (const p of points) {\n        while (lower.length >= 2 && cross(lower[lower.length-2], lower[lower.length-1], p) <= 0)\n            lower.pop();\n        lower.push(p);\n    }\n    const upper = [];\n    for (const p of points.reverse()) {\n        while (upper.length >= 2 && cross(upper[upper.length-2], upper[upper.length-1], p) <= 0)\n            upper.pop();\n        upper.push(p);\n    }\n    lower.pop();\n    upper.pop();\n    return lower.concat(upper);\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Template 2: Segment Intersection Test"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def on_segment(p, q, r):\n    return (min(p[0], r[0]) <= q[0] <= max(p[0], r[0]) and\n            min(p[1], r[1]) <= q[1] <= max(p[1], r[1]))\n\ndef segments_intersect(p1, q1, p2, q2):\n    o1 = orientation(p1, q1, p2)\n    o2 = orientation(p1, q1, q2)\n    o3 = orientation(p2, q2, p1)\n    o4 = orientation(p2, q2, q1)\n    \n    if o1 * o2 < 0 and o3 * o4 < 0:\n        return True\n    if o1 == 0 and on_segment(p1, p2, q1): return True\n    if o2 == 0 and on_segment(p1, q2, q1): return True\n    if o3 == 0 and on_segment(p2, p1, q2): return True\n    if o4 == 0 and on_segment(p2, q1, q2): return True\n    return False",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "bool onSegment(vector<int> p, vector<int> q, vector<int> r) {\n    return min(p[0], r[0]) <= q[0] && q[0] <= max(p[0], r[0]) &&\n           min(p[1], r[1]) <= q[1] && q[1] <= max(p[1], r[1]);\n}\n\nbool segmentsIntersect(vector<int> p1, vector<int> q1, vector<int> p2, vector<int> q2) {\n    int o1 = orientation(p1, q1, p2);\n    int o2 = orientation(p1, q1, q2);\n    int o3 = orientation(p2, q2, p1);\n    int o4 = orientation(p2, q2, q1);\n    if (o1 * o2 < 0 && o3 * o4 < 0) return true;\n    if (o1 == 0 && onSegment(p1, p2, q1)) return true;\n    if (o2 == 0 && onSegment(p1, q2, q1)) return true;\n    if (o3 == 0 && onSegment(p2, p1, q2)) return true;\n    if (o4 == 0 && onSegment(p2, q1, q2)) return true;\n    return false;\n}\n\nint orientation(vector<int> p, vector<int> q, vector<int> r) {\n    return (q[0] - p[0]) * (r[1] - p[1]) - (q[1] - p[1]) * (r[0] - p[0]);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public static boolean segmentsIntersect(int[] p1, int[] q1, int[] p2, int[] q2) {\n    int o1 = orientation(p1, q1, p2);\n    int o2 = orientation(p1, q1, q2);\n    int o3 = orientation(p2, q2, p1);\n    int o4 = orientation(p2, q2, q1);\n    if (o1 * o2 < 0 && o3 * o4 < 0) return true;\n    if (o1 == 0 && onSegment(p1, p2, q1)) return true;\n    if (o2 == 0 && onSegment(p1, q2, q1)) return true;\n    if (o3 == 0 && onSegment(p2, p1, q2)) return true;\n    if (o4 == 0 && onSegment(p2, q1, q2)) return true;\n    return false;\n}\nstatic boolean onSegment(int[] p, int[] q, int[] r) {\n    return Math.min(p[0], r[0]) <= q[0] && q[0] <= Math.max(p[0], r[0]) &&\n           Math.min(p[1], r[1]) <= q[1] && q[1] <= Math.max(p[1], r[1]);\n}\nstatic int orientation(int[] p, int[] q, int[] r) {\n    return (q[0] - p[0]) * (r[1] - p[1]) - (q[1] - p[1]) * (r[0] - p[0]);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function onSegment(p, q, r) {\n    return Math.min(p[0], r[0]) <= q[0] && q[0] <= Math.max(p[0], r[0]) &&\n           Math.min(p[1], r[1]) <= q[1] && q[1] <= Math.max(p[1], r[1]);\n}\nfunction segmentsIntersect(p1, q1, p2, q2) {\n    const o1 = orientation(p1, q1, p2);\n    const o2 = orientation(p1, q1, q2);\n    const o3 = orientation(p2, q2, p1);\n    const o4 = orientation(p2, q2, q1);\n    if (o1 * o2 < 0 && o3 * o4 < 0) return true;\n    if (o1 === 0 && onSegment(p1, p2, q1)) return true;\n    if (o2 === 0 && onSegment(p1, q2, q1)) return true;\n    if (o3 === 0 && onSegment(p2, p1, q2)) return true;\n    if (o4 === 0 && onSegment(p2, q1, q2)) return true;\n    return false;\n}\nfunction orientation(p, q, r) {\n    return (q[0] - p[0]) * (r[1] - p[1]) - (q[1] - p[1]) * (r[0] - p[0]);\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Template 3: Point in Polygon (Ray Casting)"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def point_in_polygon(point, polygon):\n    x, y = point\n    inside = False\n    n = len(polygon)\n    \n    for i in range(n):\n        x1, y1 = polygon[i]\n        x2, y2 = polygon[(i + 1) % n]\n        \n        if orientation((x1, y1), (x2, y2), point) == 0 and \\\n           on_segment((x1, y1), point, (x2, y2)):\n            return -1  # on boundary\n        \n        if (y1 > y) != (y2 > y):\n            x_intersect = x1 + (x2 - x1) * (y - y1) / (y2 - y1)\n            if x < x_intersect:\n                inside = not inside\n    \n    return 1 if inside else 0",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "int pointInPolygon(vector<int> point, vector<vector<int>>& polygon) {\n    int x = point[0], y = point[1];\n    bool inside = false;\n    int n = polygon.size();\n    for (int i = 0; i < n; i++) {\n        int x1 = polygon[i][0], y1 = polygon[i][1];\n        int x2 = polygon[(i+1)%n][0], y2 = polygon[(i+1)%n][1];\n        auto orient = [&](int a1, int b1, int a2, int b2, int a3, int b3) {\n            return (a2 - a1) * (b3 - b1) - (b2 - b1) * (a3 - a1);\n        };\n        auto onSeg = [&](int a1, int b1, int a2, int b2, int a3, int b3) {\n            return min(a1, a3) <= a2 && a2 <= max(a1, a3) &&\n                   min(b1, b3) <= b2 && b2 <= max(b1, b3);\n        };\n        if (orient(x1, y1, x2, y2, x, y) == 0 && onSeg(x1, y1, x, y, x2, y2))\n            return -1;\n        if ((y1 > y) != (y2 > y)) {\n            double xInt = x1 + (double)(x2 - x1) * (y - y1) / (y2 - y1);\n            if (x < xInt) inside = !inside;\n        }\n    }\n    return inside ? 1 : 0;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public static int pointInPolygon(int[] point, int[][] polygon) {\n    int x = point[0], y = point[1];\n    boolean inside = false;\n    int n = polygon.length;\n    for (int i = 0; i < n; i++) {\n        int x1 = polygon[i][0], y1 = polygon[i][1];\n        int x2 = polygon[(i+1)%n][0], y2 = polygon[(i+1)%n][1];\n        if (orientation(new int[]{x1,y1}, new int[]{x2,y2}, point) == 0 &&\n            onSegment(new int[]{x1,y1}, point, new int[]{x2,y2}))\n            return -1;\n        if ((y1 > y) != (y2 > y)) {\n            double xInt = x1 + (double)(x2 - x1) * (y - y1) / (y2 - y1);\n            if (x < xInt) inside = !inside;\n        }\n    }\n    return inside ? 1 : 0;\n}\nstatic boolean onSegment(int[] p, int[] q, int[] r) {\n    return Math.min(p[0], r[0]) <= q[0] && q[0] <= Math.max(p[0], r[0]) &&\n           Math.min(p[1], r[1]) <= q[1] && q[1] <= Math.max(p[1], r[1]);\n}\nstatic int orientation(int[] p, int[] q, int[] r) {\n    return (q[0] - p[0]) * (r[1] - p[1]) - (q[1] - p[1]) * (r[0] - p[0]);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function pointInPolygon(point, polygon) {\n    const [x, y] = point;\n    let inside = false;\n    const n = polygon.length;\n    for (let i = 0; i < n; i++) {\n        const [x1, y1] = polygon[i];\n        const [x2, y2] = polygon[(i + 1) % n];\n        if (orientation([x1, y1], [x2, y2], point) === 0 &&\n            onSegment([x1, y1], point, [x2, y2]))\n            return -1;\n        if ((y1 > y) !== (y2 > y)) {\n            const xInt = x1 + (x2 - x1) * (y - y1) / (y2 - y1);\n            if (x < xInt) inside = !inside;\n        }\n    }\n    return inside ? 1 : 0;\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Template 4: Closest Pair of Points (Divide and Conquer)"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "import math\n\ndef closest_pair(points):\n    points.sort()\n    \n    def dist2(p, q):\n        return (p[0]-q[0])**2 + (p[1]-q[1])**2\n    \n    def solve(pts):\n        n = len(pts)\n        if n <= 3:\n            md = float('inf')\n            pair = None\n            for i in range(n):\n                for j in range(i+1, n):\n                    d = dist2(pts[i], pts[j])\n                    if d < md:\n                        md, pair = d, (pts[i], pts[j])\n            return md, pair, sorted(pts, key=lambda p: p[1])\n        \n        mid = n // 2\n        mid_x = pts[mid][0]\n        dl, pair_l, y_left = solve(pts[:mid])\n        dr, pair_r, y_right = solve(pts[mid:])\n        \n        d = min(dl, dr)\n        best_pair = pair_l if dl <= dr else pair_r\n        \n        i = j = 0\n        y_merged = []\n        while i < len(y_left) and j < len(y_right):\n            if y_left[i][1] <= y_right[j][1]:\n                y_merged.append(y_left[i]); i += 1\n            else:\n                y_merged.append(y_right[j]); j += 1\n        y_merged.extend(y_left[i:])\n        y_merged.extend(y_right[j:])\n        \n        strip = [p for p in y_merged if abs(p[0] - mid_x) < math.sqrt(d)]\n        for i in range(len(strip)):\n            for j in range(i+1, min(i+7, len(strip))):\n                if (strip[j][1] - strip[i][1])**2 >= d:\n                    break\n                dd = dist2(strip[i], strip[j])\n                if dd < d:\n                    d = dd\n                    best_pair = (strip[i], strip[j])\n        \n        return d, best_pair, y_merged\n    \n    _, pair, _ = solve(points)\n    return pair",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "double closestPair(vector<pair<int,int>>& points) {\n    sort(points.begin(), points.end());\n    auto dist2 = [](pair<int,int> p, pair<int,int> q) {\n        return (long long)(p.first-q.first)*(p.first-q.first) + (long long)(p.second-q.second)*(p.second-q.second);\n    };\n    function<double(vector<pair<int,int>>&)> solve = [&](vector<pair<int,int>>& pts) -> double {\n        int n = pts.size();\n        if (n <= 3) {\n            double md = 1e18;\n            for (int i = 0; i < n; i++)\n                for (int j = i+1; j < n; j++)\n                    md = min(md, (double)dist2(pts[i], pts[j]));\n            return md;\n        }\n        int mid = n / 2;\n        double midX = pts[mid].first;\n        vector<pair<int,int>> left(pts.begin(), pts.begin()+mid);\n        vector<pair<int,int>> right(pts.begin()+mid, pts.end());\n        double dl = solve(left), dr = solve(right);\n        double d = min(dl, dr);\n        vector<pair<int,int>> yMerged;\n        merge(left.begin(), left.end(), right.begin(), right.end(), back_inserter(yMerged),\n              [](auto& a, auto& b) { return a.second < b.second; });\n        vector<pair<int,int>> strip;\n        for (auto& p : yMerged)\n            if (abs(p.first - midX) < sqrt(d))\n                strip.push_back(p);\n        for (int i = 0; i < (int)strip.size(); i++)\n            for (int j = i+1; j < min(i+7, (int)strip.size()); j++) {\n                if ((strip[j].second - strip[i].second)*(strip[j].second - strip[i].second) >= d) break;\n                d = min(d, (double)dist2(strip[i], strip[j]));\n            }\n        return d;\n    };\n    return sqrt(solve(points));\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public static double closestPair(int[][] points) {\n    Arrays.sort(points, (a,b) -> a[0] != b[0] ? a[0]-b[0] : a[1]-b[1]);\n    return sqrt(solve(points, 0, points.length-1));\n}\nstatic double solve(int[][] pts, int l, int r) {\n    int n = r - l + 1;\n    if (n <= 3) {\n        double md = Double.MAX_VALUE;\n        for (int i = l; i <= r; i++)\n            for (int j = i+1; j <= r; j++)\n                md = Math.min(md, dist2(pts[i], pts[j]));\n        return md;\n    }\n    int mid = (l + r) / 2;\n    double midX = pts[mid][0];\n    double dl = solve(pts, l, mid);\n    double dr = solve(pts, mid+1, r);\n    double d = Math.min(dl, dr);\n    List<int[]> strip = new ArrayList<>();\n    for (int i = l; i <= r; i++)\n        if (Math.abs(pts[i][0] - midX) < Math.sqrt(d))\n            strip.add(pts[i]);\n    strip.sort((a,b) -> a[1] - b[1]);\n    for (int i = 0; i < strip.size(); i++)\n        for (int j = i+1; j < Math.min(i+7, strip.size()); j++) {\n            if (Math.pow(strip.get(j)[1] - strip.get(i)[1], 2) >= d) break;\n            d = Math.min(d, dist2(strip.get(i), strip.get(j)));\n        }\n    return d;\n}\nstatic long dist2(int[] a, int[] b) {\n    return (long)(a[0]-b[0])*(a[0]-b[0]) + (long)(a[1]-b[1])*(a[1]-b[1]);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function closestPair(points) {\n    points.sort((a, b) => a[0] - b[0] || a[1] - b[1]);\n    function dist2(p, q) {\n        return (p[0]-q[0])**2 + (p[1]-q[1])**2;\n    }\n    function solve(pts) {\n        const n = pts.length;\n        if (n <= 3) {\n            let md = Infinity;\n            let pair = null;\n            for (let i = 0; i < n; i++)\n                for (let j = i+1; j < n; j++) {\n                    const d = dist2(pts[i], pts[j]);\n                    if (d < md) { md = d; pair = [pts[i], pts[j]]; }\n                }\n            return {d: md, pair, ySorted: [...pts].sort((a,b) => a[1] - b[1])};\n        }\n        const mid = Math.floor(n / 2);\n        const midX = pts[mid][0];\n        const left = pts.slice(0, mid);\n        const right = pts.slice(mid);\n        const {d: dl, pair: pairL, ySorted: yL} = solve(left);\n        const {d: dr, pair: pairR, ySorted: yR} = solve(right);\n        let d = Math.min(dl, dr);\n        let bestPair = dl <= dr ? pairL : pairR;\n        let i = 0, j = 0;\n        const yMerged = [];\n        while (i < yL.length && j < yR.length)\n            yMerged.push(yL[i][1] <= yR[j][1] ? yL[i++] : yR[j++]);\n        yMerged.push(...yL.slice(i), ...yR.slice(j));\n        const strip = yMerged.filter(p => Math.abs(p[0] - midX) < Math.sqrt(d));\n        for (let i = 0; i < strip.length; i++)\n            for (let j = i+1; j < Math.min(i+7, strip.length); j++) {\n                if ((strip[j][1] - strip[i][1])**2 >= d) break;\n                const dd = dist2(strip[i], strip[j]);\n                if (dd < d) { d = dd; bestPair = [strip[i], strip[j]]; }\n            }\n        return {d, pair: bestPair, ySorted: yMerged};\n    }\n    return solve(points).pair;\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Template 5: Rotating Calipers (Diameter)"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def polygon_diameter(hull):\n    n = len(hull)\n    if n <= 2:\n        return 0 if n <= 1 else math.hypot(hull[0][0]-hull[1][0], hull[0][1]-hull[1][1])\n    \n    def dist2(p, q):\n        return (p[0]-q[0])**2 + (p[1]-q[1])**2\n    \n    k = 1\n    max_d = 0\n    for i in range(n):\n        while True:\n            x1 = hull[(i+1)%n][0] - hull[i][0]\n            y1 = hull[(i+1)%n][1] - hull[i][1]\n            x2 = hull[(k+1)%n][0] - hull[k][0]\n            y2 = hull[(k+1)%n][1] - hull[k][1]\n            if x1 * y2 - y1 * x2 <= 0:\n                break\n            k = (k + 1) % n\n        max_d = max(max_d, dist2(hull[i], hull[k]))\n    \n    return math.sqrt(max_d)",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "double polygonDiameter(vector<pair<int,int>>& hull) {\n    int n = hull.size();\n    if (n <= 2) return n <= 1 ? 0 : hypot(hull[0].first-hull[1].first, hull[0].second-hull[1].second);\n    auto dist2 = [](auto& p, auto& q) {\n        return (long long)(p.first-q.first)*(p.first-q.first) + (long long)(p.second-q.second)*(p.second-q.second);\n    };\n    int k = 1;\n    long long maxD = 0;\n    for (int i = 0; i < n; i++) {\n        while (true) {\n            long long x1 = hull[(i+1)%n].first - hull[i].first;\n            long long y1 = hull[(i+1)%n].second - hull[i].second;\n            long long x2 = hull[(k+1)%n].first - hull[k].first;\n            long long y2 = hull[(k+1)%n].second - hull[k].second;\n            if (x1 * y2 - y1 * x2 <= 0) break;\n            k = (k + 1) % n;\n        }\n        maxD = max(maxD, dist2(hull[i], hull[k]));\n    }\n    return sqrt(maxD);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public static double polygonDiameter(int[][] hull) {\n    int n = hull.length;\n    if (n <= 2) return n <= 1 ? 0 : Math.hypot(hull[0][0]-hull[1][0], hull[0][1]-hull[1][1]);\n    int k = 1;\n    long maxD = 0;\n    for (int i = 0; i < n; i++) {\n        while (true) {\n            long x1 = hull[(i+1)%n][0] - hull[i][0];\n            long y1 = hull[(i+1)%n][1] - hull[i][1];\n            long x2 = hull[(k+1)%n][0] - hull[k][0];\n            long y2 = hull[(k+1)%n][1] - hull[k][1];\n            if (x1 * y2 - y1 * x2 <= 0) break;\n            k = (k + 1) % n;\n        }\n        maxD = Math.max(maxD, (long)(hull[i][0]-hull[k][0])*(hull[i][0]-hull[k][0]) +\n                              (long)(hull[i][1]-hull[k][1])*(hull[i][1]-hull[k][1]));\n    }\n    return Math.sqrt(maxD);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function polygonDiameter(hull) {\n    const n = hull.length;\n    if (n <= 2) return n <= 1 ? 0 : Math.hypot(hull[0][0]-hull[1][0], hull[0][1]-hull[1][1]);\n    function dist2(p, q) {\n        return (p[0]-q[0])**2 + (p[1]-q[1])**2;\n    }\n    let k = 1;\n    let maxD = 0;\n    for (let i = 0; i < n; i++) {\n        while (true) {\n            const x1 = hull[(i+1)%n][0] - hull[i][0];\n            const y1 = hull[(i+1)%n][1] - hull[i][1];\n            const x2 = hull[(k+1)%n][0] - hull[k][0];\n            const y2 = hull[(k+1)%n][1] - hull[k][1];\n            if (x1 * y2 - y1 * x2 <= 0) break;\n            k = (k + 1) % n;\n        }\n        maxD = Math.max(maxD, dist2(hull[i], hull[k]));\n    }\n    return Math.sqrt(maxD);\n}",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "6. CURATED REAL PROBLEMS"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "#",
+        "Problem",
+        "Platform",
+        "Difficulty",
+        "Concepts",
+        "Pattern"
+      ],
+      "rows": [
+        [
+          "1",
+          "Convex Hull (1708)",
+          "Baekjoon",
+          "Gold 1",
+          "Graham Scan",
+          "Convex Hull"
+        ],
+        [
+          "2",
+          "Convex Hull",
+          "GeeksforGeeks",
+          "Medium",
+          "Monotone Chain",
+          "Convex Hull"
+        ],
+        [
+          "3",
+          "Convex Hull Trick",
+          "HackerRank",
+          "Hard",
+          "CHT DP Optimization",
+          "DP + Hull"
+        ],
+        [
+          "4",
+          "Convex Hull",
+          "Kattis",
+          "Medium",
+          "Convex Hull Algorithm",
+          "Hull"
+        ],
+        [
+          "5",
+          "DP Z - Frog 3",
+          "AtCoder (2000)",
+          "Hard",
+          "Li Chao / CHT",
+          "DP Optimization"
+        ],
+        [
+          "6",
+          "APIO_10_COMMANDO",
+          "SPOJ",
+          "APIO 2010",
+          "Classic CHT",
+          "DP Optimization"
+        ],
+        [
+          "7",
+          "Robot protection",
+          "Kattis",
+          "Medium",
+          "Convex Hull",
+          "Enclosure"
+        ],
+        [
+          "8",
+          "Cow Steeplechase",
+          "USACO Gold",
+          "Gold",
+          "Convex Hull",
+          "Hull Intersection"
+        ],
+        [
+          "9",
+          "Minimum Bounding Box",
+          "AtCoder (2240)",
+          "Very Hard",
+          "Geometry",
+          "Bounding Box"
+        ],
+        [
+          "10",
+          "2087 - Houses and Schools",
+          "CSES (1900)",
+          "Hard",
+          "CHT, DP",
+          "DP + Hull"
+        ],
+        [
+          "11",
+          "Convex Hull and Farmers",
+          "CodeAbbey",
+          "Hard",
+          "Geometry",
+          "Hull Perimeter"
+        ],
+        [
+          "12",
+          "Box in Box (ABC 309 F)",
+          "AtCoder",
+          "Hard",
+          "3D BIT, Segment Tree",
+          "3D Geometry"
+        ],
+        [
+          "13",
+          "Integer Convex Hull",
+          "AtCoder",
+          "Very Hard",
+          "Integer Points",
+          "Advanced Hull"
+        ],
+        [
+          "14",
+          "1437G - Death DBMS",
+          "Codeforces (2200)",
+          "Hard",
+          "CHT on Tree",
+          "DP + Hull"
+        ],
+        [
+          "15",
+          "Nearest Convex Hull",
+          "Baekjoon",
+          "Gold 1",
+          "Closest Pair",
+          "Hull + Distance"
+        ]
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "7. GENERATED PRACTICE PROBLEMS"
+    },
+    {
+      "type": "text",
+      "content": "**Easy 1: Simple Hull** Given N \\le  100 points, compute the perimeter of their convex hull."
+    },
+    {
+      "type": "text",
+      "content": "**Easy 2: Line Crossing** Given two line segments AB and CD, determine if they intersect."
+    },
+    {
+      "type": "text",
+      "content": "**Medium 1: Parking Lot** An irregular polygon parking lot has N vertices. A car at point P — is it inside? Answer Q queries."
+    },
+    {
+      "type": "text",
+      "content": "**Medium 2: Rectangle Union** Given N axis-aligned rectangles, compute the union area using sweep line. N \\le  10⁵."
+    },
+    {
+      "type": "text",
+      "content": "**Hard 1: Farthest Pair in a Forest** You have K convex polygons. Find the maximum Euclidean distance between any point in one polygon and any point in another. HINT: farthest pair lies on hull vertices."
+    },
+    {
+      "type": "text",
+      "content": "**Hard 2: Minimum Enclosing Circle** Given N points, find the smallest circle that encloses all points. Use Welzl's algorithm (expected $O(N)$)."
+    },
+    {
+      "type": "text",
+      "content": "**Interview-Style: Max Points on a Line** Given N points, find the max number of points on the same line. (LeetCode 149)"
+    },
+    {
+      "type": "text",
+      "content": "**Contest-Style: Voronoi Neighbors** Given N points, for each find its nearest neighbor. N \\le  2×10⁵. Must be faster than $O(N^2)$."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "8. COMPLETE SOLUTION SECTION"
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Problem 1: Convex Hull — Monotone Chain"
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition** Build hull in two parts: lower (left→right, keep left turns) and upper (right→left, same rule)."
+    },
+    {
+      "type": "text",
+      "content": "**B. Brute Force** Jarvis March (Gift Wrapping): $O(N^2)$. Start from leftmost, repeatedly find point with smallest polar angle."
+    },
+    {
+      "type": "text",
+      "content": "**C. Optimized Approach** Monotone Chain. Sort once, build in $O(N)$."
+    },
+    {
+      "type": "text",
+      "content": "**D. Step-by-Step**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Sort by x then y, remove duplicates",
+        "Lower hull: iterate; while last 2 + new make CW/collinear turn, pop; add new",
+        "Upper hull: iterate reversed; same logic",
+        "Remove endpoint duplicates, merge"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**E. Complexity** $O(N \\log N)$."
+    },
+    {
+      "type": "text",
+      "content": "**F. Edge Cases**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "1 point: hull = that point",
+        "All collinear: hull = two extremes",
+        "Integer overflow: use 64-bit cross product"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**G. Code**"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def convex_hull(points):\n    points = sorted(set(points))\n    if len(points) <= 1:\n        return points\n    \n    def cross(o, a, b):\n        return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0])\n    \n    lower = []\n    for p in points:\n        while len(lower) >= 2 and cross(lower[-2], lower[-1], p) <= 0:\n            lower.pop()\n        lower.append(p)\n    \n    upper = []\n    for p in reversed(points):\n        while len(upper) >= 2 and cross(upper[-2], upper[-1], p) <= 0:\n            upper.pop()\n        upper.append(p)\n    \n    return lower[:-1] + upper[:-1]",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "vector<Point> convex_hull(vector<Point> points) {\n    sort(points.begin(), points.end());\n    points.erase(unique(points.begin(), points.end()), points.end());\n    if (points.size() <= 1) return points;\n    \n    vector<Point> lower, upper;\n    for (auto& p : points) {\n        while (lower.size() >= 2 && cross(lower[lower.size()-2], lower.back(), p) <= 0)\n            lower.pop_back();\n        lower.push_back(p);\n    }\n    for (int i = points.size()-1; i >= 0; i--) {\n        auto& p = points[i];\n        while (upper.size() >= 2 && cross(upper[upper.size()-2], upper.back(), p) <= 0)\n            upper.pop_back();\n        upper.push_back(p);\n    }\n    lower.pop_back(); upper.pop_back();\n    lower.insert(lower.end(), upper.begin(), upper.end());\n    return lower;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public static List<int[]> convexHull(int[][] points) {\n    Arrays.sort(points, (a,b) -> a[0]!=b[0] ? a[0]-b[0] : a[1]-b[1]);\n    int n = points.length;\n    if (n <= 1) return Arrays.asList(points);\n    \n    List<int[]> lower = new ArrayList<>();\n    for (int[] p : points) {\n        while (lower.size() >= 2 && cross(lower.get(lower.size()-2), lower.get(lower.size()-1), p) <= 0)\n            lower.remove(lower.size()-1);\n        lower.add(p);\n    }\n    List<int[]> upper = new ArrayList<>();\n    for (int i = n-1; i >= 0; i--) {\n        int[] p = points[i];\n        while (upper.size() >= 2 && cross(upper.get(upper.size()-2), upper.get(upper.size()-1), p) <= 0)\n            upper.remove(upper.size()-1);\n        upper.add(p);\n    }\n    lower.remove(lower.size()-1);\n    upper.remove(upper.size()-1);\n    lower.addAll(upper);\n    return lower;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function convexHull(points) {\n    points = [...new Set(points.map(p => p[0] + ',' + p[1]))].map(s => s.split(',').map(Number));\n    points.sort((a, b) => a[0] !== b[0] ? a[0] - b[0] : a[1] - b[1]);\n    if (points.length <= 1) return points;\n    function cross(o, a, b) {\n        return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);\n    }\n    const lower = [];\n    for (const p of points) {\n        while (lower.length >= 2 && cross(lower[lower.length-2], lower[lower.length-1], p) <= 0)\n            lower.pop();\n        lower.push(p);\n    }\n    const upper = [];\n    for (const p of points.reverse()) {\n        while (upper.length >= 2 && cross(upper[upper.length-2], upper[upper.length-1], p) <= 0)\n            upper.pop();\n        upper.push(p);\n    }\n    lower.pop();\n    upper.pop();\n    return lower.concat(upper);\n}",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Problem 2: Point in Polygon (Ray Casting)"
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition** Shoot a ray to the right. Count edge crossings. Odd = inside."
+    },
+    {
+      "type": "text",
+      "content": "For convex polygons: binary search over fan of triangles from first vertex, $O(log N)$."
+    },
+    {
+      "type": "text",
+      "content": "**B. Brute Force** Sum of signed angles method: $O(N)$ with expensive trig."
+    },
+    {
+      "type": "text",
+      "content": "**C. Optimized Approach** Ray casting with orientation tests. $O(N)$ per query, no trig."
+    },
+    {
+      "type": "text",
+      "content": "**D. Step-by-Step (Ray Casting)**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "For each edge:"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Check if point is on edge → boundary",
+        "If edge's y-range straddles point's y, compute x-intersection",
+        "If x_intersect > point's x, toggle inside"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Return inside flag"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**E. Complexity** $O(N)$ per query (general). $O(log N)$ (convex with preprocessing)."
+    },
+    {
+      "type": "text",
+      "content": "**F. Edge Cases**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Point on vertex → boundary",
+        "Ray through vertex: count only if other endpoint is above",
+        "Degenerate polygon"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**G. Code (Convex Polygon, $O(log N)$)**"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def point_in_convex_polygon(point, hull):\n    \"\"\"hull in CCW order. O(log N).\"\"\"\n    n = len(hull)\n    if n < 3: return False\n    \n    o = orientation(hull[0], hull[1], point)\n    if o < 0: return False\n    if o == 0: return on_segment(hull[0], point, hull[1])\n    \n    lo, hi = 1, n\n    while hi - lo > 1:\n        mid = (lo + hi) // 2\n        if orientation(hull[0], hull[mid], point) >= 0:\n            lo = mid\n        else:\n            hi = mid\n    \n    if lo == n - 1:\n        return on_segment(hull[0], point, hull[n-1])\n    \n    return orientation(hull[lo], hull[lo+1], point) >= 0",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "bool pointInConvexPolygon(vector<int> point, vector<vector<int>>& hull) {\n    int n = hull.size();\n    if (n < 3) return false;\n    long long o = orientation(hull[0], hull[1], point);\n    if (o < 0) return false;\n    if (o == 0) return onSegment(hull[0], point, hull[1]);\n    int lo = 1, hi = n;\n    while (hi - lo > 1) {\n        int mid = (lo + hi) / 2;\n        if (orientation(hull[0], hull[mid], point) >= 0) lo = mid;\n        else hi = mid;\n    }\n    if (lo == n - 1) return onSegment(hull[0], point, hull[n-1]);\n    return orientation(hull[lo], hull[lo+1], point) >= 0;\n}\n\nlong long orientation(vector<int> p, vector<int> q, vector<int> r) {\n    return (long long)(q[0]-p[0]) * (r[1]-p[1]) - (long long)(q[1]-p[1]) * (r[0]-p[0]);\n}\n\nbool onSegment(vector<int> p, vector<int> q, vector<int> r) {\n    return min(p[0], r[0]) <= q[0] && q[0] <= max(p[0], r[0]) &&\n           min(p[1], r[1]) <= q[1] && q[1] <= max(p[1], r[1]);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public static boolean pointInConvexPolygon(int[] point, int[][] hull) {\n    int n = hull.length;\n    if (n < 3) return false;\n    long o = orientation(hull[0], hull[1], point);\n    if (o < 0) return false;\n    if (o == 0) return onSegment(hull[0], point, hull[1]);\n    int lo = 1, hi = n;\n    while (hi - lo > 1) {\n        int mid = (lo + hi) / 2;\n        if (orientation(hull[0], hull[mid], point) >= 0) lo = mid;\n        else hi = mid;\n    }\n    if (lo == n - 1) return onSegment(hull[0], point, hull[n-1]);\n    return orientation(hull[lo], hull[lo+1], point) >= 0;\n}\nstatic long orientation(int[] p, int[] q, int[] r) {\n    return (long)(q[0]-p[0]) * (r[1]-p[1]) - (long)(q[1]-p[1]) * (r[0]-p[0]);\n}\nstatic boolean onSegment(int[] p, int[] q, int[] r) {\n    return Math.min(p[0], r[0]) <= q[0] && q[0] <= Math.max(p[0], r[0]) &&\n           Math.min(p[1], r[1]) <= q[1] && q[1] <= Math.max(p[1], r[1]);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function pointInConvexPolygon(point, hull) {\n    const n = hull.length;\n    if (n < 3) return false;\n    const o = orientation(hull[0], hull[1], point);\n    if (o < 0) return false;\n    if (o === 0) return onSegment(hull[0], point, hull[1]);\n    let lo = 1, hi = n;\n    while (hi - lo > 1) {\n        const mid = Math.floor((lo + hi) / 2);\n        if (orientation(hull[0], hull[mid], point) >= 0) lo = mid;\n        else hi = mid;\n    }\n    if (lo === n - 1) return onSegment(hull[0], point, hull[n-1]);\n    return orientation(hull[lo], hull[lo+1], point) >= 0;\n}",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Problem 3: Closest Pair of Points (Divide and Conquer)"
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition** Divide by x, solve halves, check strip. Key insight: only need to check 7 next points in strip sorted by y."
+    },
+    {
+      "type": "text",
+      "content": "**B. Brute Force** $O(N^2)$. Too slow for N > 10⁴."
+    },
+    {
+      "type": "text",
+      "content": "**C. Optimized Approach** Divide and conquer, $O(N \\log N)$. Pre-sort all points by y to avoid repeated sorting."
+    },
+    {
+      "type": "text",
+      "content": "**D. Step-by-Step**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Sort by x",
+        "Recursively find closest in left/right halves → d",
+        "Build strip within d of dividing line",
+        "Check each point vs next 7",
+        "Return closest pair"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**E. Complexity** $O(N \\log N)$."
+    },
+    {
+      "type": "text",
+      "content": "**F. Edge Cases**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "N < 2: no pair",
+        "Duplicate points: distance 0",
+        "Use squared distance to avoid sqrt"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**G. Code** (See Template 4 above for full implementation)"
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Problem 4: APIO_10_COMMANDO — Convex Hull Trick"
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition** DP recurrence: dp[i] = max(dp[j] + a·(sum[i]-sum[j])^2 + b·(sum[i]-sum[j]) + c). Expand to: dp[i] = max(intercept[j] + slope[j]·sum[i]). This is the classic CHT form."
+    },
+    {
+      "type": "text",
+      "content": "**B. Brute Force** $O(N^2)$ — check all j for each i."
+    },
+    {
+      "type": "text",
+      "content": "**C. Optimized Approach** Maintain lines (slope, intercept) in a deque. Since slopes are monotonic (increasing prefix sums), pop from front when line is no longer optimal; pop from back when new line makes previous redundant."
+    },
+    {
+      "type": "text",
+      "content": "**D. Complexity** $O(N)$."
+    },
+    {
+      "type": "text",
+      "content": "**E. Code**"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def commando(N, a, b, c, xs):\n    prefix = [0] * (N + 1)\n    for i in range(N):\n        prefix[i+1] = prefix[i] + xs[i]\n    \n    dp = [0] * (N + 1)\n    from collections import deque\n    dq = deque([0])\n    \n    def value(j, x):\n        return (-2*a*prefix[j]) * x + (a*prefix[j]**2 - b*prefix[j] + dp[j])\n    \n    def cross(l1, l2, l3):\n        a1 = -2*a*prefix[l1]; b1 = a*prefix[l1]**2 - b*prefix[l1] + dp[l1]\n        a2 = -2*a*prefix[l2]; b2 = a*prefix[l2]**2 - b*prefix[l2] + dp[l2]\n        a3 = -2*a*prefix[l3]; b3 = a*prefix[l3]**2 - b*prefix[l3] + dp[l3]\n        return (b2 - b1) * (a3 - a2) >= (b3 - b2) * (a2 - a1)\n    \n    for i in range(1, N + 1):\n        while len(dq) >= 2 and value(dq[0], prefix[i]) <= value(dq[1], prefix[i]):\n            dq.popleft()\n        j = dq[0]\n        x = prefix[i] - prefix[j]\n        dp[i] = dp[j] + a*x*x + b*x + c\n        \n        while len(dq) >= 2 and cross(dq[-2], dq[-1], i):\n            dq.pop()\n        dq.append(i)\n    \n    return dp[N]",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "long long commando(int N, long long a, long long b, long long c, vector<long long>& xs) {\n    vector<long long> prefix(N+1, 0);\n    for (int i = 0; i < N; i++) prefix[i+1] = prefix[i] + xs[i];\n    vector<long long> dp(N+1, 0);\n    deque<int> dq;\n    dq.push_back(0);\n    auto value = [&](int j, long long x) {\n        return (-2*a*prefix[j]) * x + (a*prefix[j]*prefix[j] - b*prefix[j] + dp[j]);\n    };\n    auto cross = [&](int l1, int l2, int l3) {\n        __int128 a1 = -2*a*prefix[l1]; __int128 b1 = a*prefix[l1]*prefix[l1] - b*prefix[l1] + dp[l1];\n        __int128 a2 = -2*a*prefix[l2]; __int128 b2 = a*prefix[l2]*prefix[l2] - b*prefix[l2] + dp[l2];\n        __int128 a3 = -2*a*prefix[l3]; __int128 b3 = a*prefix[l3]*prefix[l3] - b*prefix[l3] + dp[l3];\n        return (b2 - b1) * (a3 - a2) >= (b3 - b2) * (a2 - a1);\n    };\n    for (int i = 1; i <= N; i++) {\n        while (dq.size() >= 2 && value(dq[0], prefix[i]) <= value(dq[1], prefix[i]))\n            dq.pop_front();\n        int j = dq[0];\n        long long x = prefix[i] - prefix[j];\n        dp[i] = dp[j] + a*x*x + b*x + c;\n        while (dq.size() >= 2 && cross(dq[dq.size()-2], dq.back(), i))\n            dq.pop_back();\n        dq.push_back(i);\n    }\n    return dp[N];\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public static long commando(int N, long a, long b, long c, int[] xs) {\n    long[] prefix = new long[N+1];\n    for (int i = 0; i < N; i++) prefix[i+1] = prefix[i] + xs[i];\n    long[] dp = new long[N+1];\n    Deque<Integer> dq = new ArrayDeque<>();\n    dq.addLast(0);\n    for (int i = 1; i <= N; i++) {\n        while (dq.size() >= 2 && value(dq.peekFirst(), dq.peekFirst()+1, prefix[i], prefix, dp, a, b))\n            dq.pollFirst();\n        int j = dq.peekFirst();\n        long x = prefix[i] - prefix[j];\n        dp[i] = dp[j] + a*x*x + b*x + c;\n        while (dq.size() >= 2 && cross(dq.get(dq.size()-2), dq.getLast(), i, prefix, dp, a))\n            dq.pollLast();\n        dq.addLast(i);\n    }\n    return dp[N];\n}\nstatic boolean value(int j1, int j2, long x, long[] prefix, long[] dp, long a, long b) {\n    return (-2*a*prefix[j1])*x + (a*prefix[j1]*prefix[j1] - b*prefix[j1] + dp[j1]) <=\n           (-2*a*prefix[j2])*x + (a*prefix[j2]*prefix[j2] - b*prefix[j2] + dp[j2]);\n}\nstatic boolean cross(int l1, int l2, int l3, long[] prefix, long[] dp, long a) {\n    long a1 = -2*a*prefix[l1], b1 = a*prefix[l1]*prefix[l1] + dp[l1];\n    long a2 = -2*a*prefix[l2], b2 = a*prefix[l2]*prefix[l2] + dp[l2];\n    long a3 = -2*a*prefix[l3], b3 = a*prefix[l3]*prefix[l3] + dp[l3];\n    return (b2 - b1) * (a3 - a2) >= (b3 - b2) * (a2 - a1);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function commando(N, a, b, c, xs) {\n    const prefix = new Array(N+1).fill(0);\n    for (let i = 0; i < N; i++) prefix[i+1] = prefix[i] + xs[i];\n    const dp = new Array(N+1).fill(0);\n    const dq = [0];\n    function value(j, x) {\n        return (-2*a*prefix[j]) * x + (a*prefix[j]**2 - b*prefix[j] + dp[j]);\n    }\n    function cross(l1, l2, l3) {\n        const a1 = -2*a*prefix[l1], b1 = a*prefix[l1]**2 - b*prefix[l1] + dp[l1];\n        const a2 = -2*a*prefix[l2], b2 = a*prefix[l2]**2 - b*prefix[l2] + dp[l2];\n        const a3 = -2*a*prefix[l3], b3 = a*prefix[l3]**2 - b*prefix[l3] + dp[l3];\n        return (b2 - b1) * (a3 - a2) >= (b3 - b2) * (a2 - a1);\n    }\n    for (let i = 1; i <= N; i++) {\n        while (dq.length >= 2 && value(dq[0], prefix[i]) <= value(dq[1], prefix[i]))\n            dq.shift();\n        const j = dq[0];\n        const x = prefix[i] - prefix[j];\n        dp[i] = dp[j] + a*x*x + b*x + c;\n        while (dq.length >= 2 && cross(dq[dq.length-2], dq[dq.length-1], i))\n            dq.pop();\n        dq.push(i);\n    }\n    return dp[N];\n}",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    }
+  ],
+  "difficulty": "Expert"
+}

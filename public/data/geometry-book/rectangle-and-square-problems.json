@@ -1,0 +1,919 @@
+{
+  "chapter": 5,
+  "slug": "rectangle-and-square-problems",
+  "title": "Rectangle and Square Problems",
+  "icon": "\u25ac",
+  "color": "#eab308",
+  "problemCount": 450,
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Chapter 5: Rectangle and Square Problems"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "1. INTRODUCTION"
+    },
+    {
+      "type": "text",
+      "content": "A **rectangle** is a four-sided polygon (quadrilateral) with four right angles (90\u00b0). A **square** is a special rectangle where all four sides are equal. These are the most fundamental shapes in computational geometry and appear constantly in coding interviews and competitive programming."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Real-World Intuition"
+    },
+    {
+      "type": "text",
+      "content": "Think of a rectangle as any rectangular box \u2014 a phone screen, a piece of paper, a room floor. In programming, rectangles define bounding areas: the region a character occupies, the clickable area of a button, the visible viewport of a camera."
+    },
+    {
+      "type": "text",
+      "content": "Squares are rectangles where width = height. They appear in grid-based games (each tile is a square), image processing (pixel neighborhoods), and optimization problems (fitting the largest square into an area)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Why It Matters"
+    },
+    {
+      "type": "text",
+      "content": "Rectangle and square problems teach you:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Coordinate systems**: how (x, y) pairs define regions",
+        "**Intersection logic**: whether two rectangles overlap",
+        "**Area and perimeter computation**: fundamental to any geometric computation",
+        "**Grid reasoning**: rectangles within matrices",
+        "**Greedy and DP patterns**: optimal rectangle placement, largest rectangle in histogram"
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2. CORE CONCEPTS"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2.1 Rectangles in Coordinate Geometry"
+    },
+    {
+      "type": "text",
+      "content": "An **axis-aligned rectangle** (the most common type in coding problems) is defined by two points:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Bottom-left: `(x1, y1)`",
+        "Top-right: `(x2, y2)`"
+      ]
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "Properties:\n  Width  = x2 - x1\n  Height = y2 - y1\n  Area   = Width \u00d7 Height = (x2 - x1)(y2 - y1)\n  Perimeter = 2 \u00d7 (Width + Height)",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2.2 Rectangle Representation"
+    },
+    {
+      "type": "text",
+      "content": "In code, rectangles are typically represented in one of these forms:"
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "// Form 1: Two corners\n(x1, y1) = bottom-left, (x2, y2) = top-right\n\n// Form 2: Center + half-dimensions\n(cx, cy, half_w, half_h)\n\n// Form 3: Bottom-left + dimensions\n(x, y, width, height)",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2.3 Rectangle Intersection"
+    },
+    {
+      "type": "text",
+      "content": "**Two axis-aligned rectangles overlap if and only if:**"
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "overlap_x = max(r1.x1, r2.x1) < min(r1.x2, r2.x2)\noverlap_y = max(r1.y1, r2.y1) < min(r1.y2, r2.y2)",
+      "caption": null
+    },
+    {
+      "type": "text",
+      "content": "The **intersection rectangle** (if it exists):"
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "ix1 = max(r1.x1, r2.x1)\niy1 = max(r1.y1, r2.y1)\nix2 = min(r1.x2, r2.x2)\niy2 = min(r1.y2, r2.y2)",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2.4 Point-in-Rectangle"
+    },
+    {
+      "type": "text",
+      "content": "A point `(px, py)` lies inside a rectangle iff:"
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "x1 <= px <= x2 AND y1 <= py <= y2",
+      "caption": null
+    },
+    {
+      "type": "text",
+      "content": "For exclusive boundaries (strict interior), use `<` instead of `<=`."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2.5 Square-Specific Properties"
+    },
+    {
+      "type": "text",
+      "content": "A square has all four sides equal. Given any two properties, you can derive the rest:"
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "Side = s\nDiagonal = s\u221a2\nArea = s\u00b2\nPerimeter = 4s",
+      "caption": null
+    },
+    {
+      "type": "text",
+      "content": "To check if four points form a square:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Compute all six pairwise distances",
+        "Sort them",
+        "The four smallest should be equal (sides), and the two largest should be equal (diagonals)"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2.6 Largest Rectangle in Histogram"
+    },
+    {
+      "type": "text",
+      "content": "The classic algorithmic pattern: given an array of heights, find the largest rectangle that can be formed. Solved with a **monotonic stack** in $O(n)$."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2.7 Number of Squares in a Grid"
+    },
+    {
+      "type": "text",
+      "content": "An `N \u00d7 M` grid contains:"
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "Total squares = \u03a3(k=1 to min(N,M)) (N-k+1)(M-k+1)",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3. PROBLEM RECOGNITION"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Common Keywords"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Keyword",
+        "Likely Problem Type"
+      ],
+      "rows": [
+        [
+          "\"rectangle overlap / intersection\"",
+          "Axis-aligned rectangle intersection"
+        ],
+        [
+          "\"largest rectangle\"",
+          "Monotonic stack / histogram"
+        ],
+        [
+          "\"containing rectangle\"",
+          "Bounding box computation"
+        ],
+        [
+          "\"rectangle area\"",
+          "Union area (sweep line)"
+        ],
+        [
+          "\"fitting rectangles\"",
+          "Greedy / bin packing"
+        ],
+        [
+          "\"perfect square / square number\"",
+          "Number theory with geometry"
+        ],
+        [
+          "\"grid squares\"",
+          "Combinatorial counting"
+        ],
+        [
+          "\"form a square\"",
+          "Point set square detection"
+        ],
+        [
+          "\"rectangle cutting / cutting a rectangle\"",
+          "GCD-based optimization"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Hidden Geometry Indicators"
+    },
+    {
+      "type": "text",
+      "content": "Some problems don't mention \"rectangle\" but are rectangle problems:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Manufacturing/flattening/arranging boxes",
+        "Billboard/poster fitting",
+        "Painting/wall area",
+        "Farm/crop/land division",
+        "Matrix submatrix problems"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "How Interviewers Frame These"
+    },
+    {
+      "type": "list",
+      "items": [
+        "\"Given N rectangles, find total area covered\"",
+        "\"Find the largest rectangle of 1s in a binary matrix\"",
+        "\"Can you fit all these rectangles into a container?\"",
+        "\"Count number of squares in a chessboard\"",
+        "\"Do these rectangles overlap?\""
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "4. PATTERN ANALYSIS"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Pattern 1: Rectangle Intersection Checking"
+    },
+    {
+      "type": "text",
+      "content": "**When to use**: Two or more axis-aligned rectangles need comparison **Why it works**: The overlap condition is simple \u2014 project onto x and y axes independently **Complexity**: $O(1)$ per pair **Common mistakes**: Off-by-one on inclusive vs exclusive boundaries, assuming rectangles are sorted"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Pattern 2: Binary Search on Rectangle Area"
+    },
+    {
+      "type": "text",
+      "content": "**When to use**: A \"cut\" or \"fit\" problem where you need to find the minimal/maximal dimension **Why it works**: Area/width/height are monotonic with respect to feasibility **Complexity**: $O(N \\log MAX)$ **Common mistakes**: Not handling integer vs real-valued dimensions"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Pattern 3: Monotonic Stack (Largest Rectangle in Histogram)"
+    },
+    {
+      "type": "text",
+      "content": "**When to use**: Finding maximal rectangle area in a 2D grid of 1s and 0s **Why it works**: Treat each row as a histogram of consecutive 1s **Complexity**: O(N \u00d7 M) **Common mistakes**: Forgetting to reset heights per row"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Pattern 4: Sweep Line with Coordinate Compression"
+    },
+    {
+      "type": "text",
+      "content": "**When to use**: Multiple rectangle union/intersection, counting covered cells **Why it works**: Events at x-start and x-end allow processing only at changes **Complexity**: $O(N \\log N)$ **Common mistakes**: Not handling overlapping edges correctly"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Pattern 5: Rectangle Counting in Grids"
+    },
+    {
+      "type": "text",
+      "content": "**When to use**: Matrix problems counting subrectangles meeting a condition **Why it works**: Often uses prefix sums + enumeration of top/bottom rows **Complexity**: O(N^2 \u00d7 M) or O(N \u00d7 M^2) depending on enumeration direction"
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "5. REUSABLE CODING TEMPLATES"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "5.1 Rectangle Intersection"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def intersect_rect(r1, r2):\n    # r = (x1, y1, x2, y2) where (x1,y1) bottom-left, (x2,y2) top-right\n    x1 = max(r1[0], r2[0])\n    y1 = max(r1[1], r2[1])\n    x2 = min(r1[2], r2[2])\n    y2 = min(r1[3], r2[3])\n    if x1 < x2 and y1 < y2:\n        return (x1, y1, x2, y2)\n    return None",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "struct Rect { int x1, y1, x2, y2; };\nRect intersect(const Rect& a, const Rect& b) {\n    int x1 = max(a.x1, b.x1);\n    int y1 = max(a.y1, b.y1);\n    int x2 = min(a.x2, b.x2);\n    int y2 = min(a.y2, b.y2);\n    if (x1 < x2 && y1 < y2) return {x1, y1, x2, y2};\n    return {};  // no intersection\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "class Rect { int x1, y1, x2, y2; }\nRect intersect(Rect a, Rect b) {\n    int x1 = Math.max(a.x1, b.x1);\n    int y1 = Math.max(a.y1, b.y1);\n    int x2 = Math.min(a.x2, b.x2);\n    int y2 = Math.min(a.y2, b.y2);\n    if (x1 < x2 && y1 < y2) return new Rect(x1, y1, x2, y2);\n    return null;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function intersectRect(r1, r2) {\n    const x1 = Math.max(r1[0], r2[0]), y1 = Math.max(r1[1], r2[1]);\n    const x2 = Math.min(r1[2], r2[2]), y2 = Math.min(r1[3], r2[3]);\n    if (x1 < x2 && y1 < y2) return [x1, y1, x2, y2];\n    return null;\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "5.2 Point-in-Rectangle Test"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def point_in_rect(px, py, r):\n    return r[0] <= px <= r[2] and r[1] <= py <= r[3]",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "bool pointInRect(int px, int py, vector<int>& r) {\n    return r[0] <= px && px <= r[2] && r[1] <= py && py <= r[3];\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public boolean pointInRect(int px, int py, int[] r) {\n    return r[0] <= px && px <= r[2] && r[1] <= py && py <= r[3];\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function pointInRect(px, py, r) {\n    return r[0] <= px && px <= r[2] && r[1] <= py && py <= r[3];\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "5.3 Union Area of Rectangles (Sweep Line)"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def rect_union_area(rects):\n    # rects: list of (x1, y1, x2, y2)\n    events = []\n    for x1, y1, x2, y2 in rects:\n        events.append((x1, y1, y2, 1))   # start\n        events.append((x2, y1, y2, -1))  # end\n    events.sort()\n    \n    active = []\n    prev_x = events[0][0]\n    area = 0\n    \n    for x, y1, y2, typ in events:\n        # compute covered y-length\n        covered = 0\n        cur = -1e9\n        for ly, ry in sorted(active):\n            if ly > cur:\n                covered += ry - ly\n                cur = ry\n            else:\n                covered += max(0, ry - cur)\n                cur = max(cur, ry)\n        \n        area += covered * (x - prev_x)\n        \n        if typ == 1:\n            active.append((y1, y2))\n        else:\n            active.remove((y1, y2))\n        prev_x = x\n    \n    return area",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "#include <vector>\n#include <algorithm>\n#include <set>\nusing namespace std;\n\nlong long rectUnionArea(vector<vector<int>>& rects) {\n    vector<tuple<int,int,int,int>> events;\n    for (auto& r : rects) {\n        events.push_back({r[0], r[1], r[2], 1});\n        events.push_back({r[2], r[1], r[3], -1});\n    }\n    sort(events.begin(), events.end());\n    \n    vector<pair<int,int>> active;\n    int prev_x = get<0>(events[0]);\n    long long area = 0;\n    \n    for (auto& [x, y1, y2, typ] : events) {\n        long long covered = 0;\n        sort(active.begin(), active.end());\n        int cur = -1e9;\n        for (auto& [ly, ry] : active) {\n            if (ly > cur) {\n                covered += ry - ly;\n                cur = ry;\n            } else {\n                covered += max(0, ry - cur);\n                cur = max(cur, ry);\n            }\n        }\n        area += covered * (x - prev_x);\n        \n        if (typ == 1) active.push_back({y1, y2});\n        else active.erase(find(active.begin(), active.end(), make_pair(y1, y2)));\n        prev_x = x;\n    }\n    return area;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "import java.util.*;\n\npublic class RectUtils {\n    static long rectUnionArea(int[][] rects) {\n        List<int[]> events = new ArrayList<>();\n        for (int[] r : rects) {\n            events.add(new int[]{r[0], r[1], r[2], 1});\n            events.add(new int[]{r[2], r[1], r[3], -1});\n        }\n        events.sort((a, b) -> a[0] - b[0]);\n        \n        List<int[]> active = new ArrayList<>();\n        int prevX = events.get(0)[0];\n        long area = 0;\n        \n        for (int[] e : events) {\n            int x = e[0], y1 = e[1], y2 = e[2], typ = e[3];\n            long covered = 0;\n            active.sort((a, b) -> a[0] - b[0]);\n            int cur = Integer.MIN_VALUE;\n            for (int[] seg : active) {\n                if (seg[0] > cur) {\n                    covered += seg[1] - seg[0];\n                    cur = seg[1];\n                } else {\n                    covered += Math.max(0, seg[1] - cur);\n                    cur = Math.max(cur, seg[1]);\n                }\n            }\n            area += covered * (x - prevX);\n            \n            if (typ == 1) active.add(new int[]{y1, y2});\n            else active.removeIf(a -> a[0] == y1 && a[1] == y2);\n            prevX = x;\n        }\n        return area;\n    }\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function rectUnionArea(rects) {\n    const events = [];\n    for (const [x1, y1, x2, y2] of rects) {\n        events.push([x1, y1, y2, 1]);\n        events.push([x2, y1, y2, -1]);\n    }\n    events.sort((a, b) => a[0] - b[0]);\n    \n    let active = [];\n    let prevX = events[0][0];\n    let area = 0;\n    \n    for (const [x, y1, y2, typ] of events) {\n        active.sort((a, b) => a[0] - b[0]);\n        let covered = 0;\n        let cur = -Infinity;\n        for (const [ly, ry] of active) {\n            if (ly > cur) {\n                covered += ry - ly;\n                cur = ry;\n            } else {\n                covered += Math.max(0, ry - cur);\n                cur = Math.max(cur, ry);\n            }\n        }\n        area += covered * (x - prevX);\n        \n        if (typ === 1) active.push([y1, y2]);\n        else {\n            const idx = active.findIndex(a => a[0] === y1 && a[1] === y2);\n            if (idx >= 0) active.splice(idx, 1);\n        }\n        prevX = x;\n    }\n    return area;\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "5.4 Largest Rectangle in Binary Matrix"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def largest_rectangle(matrix):\n    if not matrix or not matrix[0]:\n        return 0\n    heights = [0] * len(matrix[0])\n    max_area = 0\n    \n    for row in matrix:\n        for i, val in enumerate(row):\n            heights[i] = heights[i] + 1 if val == 1 else 0\n        \n        stack = []\n        for i, h in enumerate(heights + [0]):\n            while stack and heights[stack[-1]] > h:\n                height = heights[stack.pop()]\n                left = stack[-1] if stack else -1\n                width = i - left - 1\n                max_area = max(max_area, height * width)\n            stack.append(i)\n    \n    return max_area",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "#include <vector>\n#include <stack>\n#include <algorithm>\nusing namespace std;\n\nint largestRectangle(vector<vector<int>>& matrix) {\n    if (matrix.empty() || matrix[0].empty()) return 0;\n    int n = matrix[0].size();\n    vector<int> heights(n, 0);\n    int maxArea = 0;\n    \n    for (auto& row : matrix) {\n        for (int i = 0; i < n; i++)\n            heights[i] = row[i] == 1 ? heights[i] + 1 : 0;\n        \n        stack<int> st;\n        for (int i = 0; i <= n; i++) {\n            int h = (i < n) ? heights[i] : 0;\n            while (!st.empty() && heights[st.top()] > h) {\n                int height = heights[st.top()]; st.pop();\n                int left = st.empty() ? -1 : st.top();\n                maxArea = max(maxArea, height * (i - left - 1));\n            }\n            st.push(i);\n        }\n    }\n    return maxArea;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "import java.util.*;\n\npublic class RectUtils {\n    public int largestRectangle(int[][] matrix) {\n        if (matrix.length == 0 || matrix[0].length == 0) return 0;\n        int n = matrix[0].length;\n        int[] heights = new int[n];\n        int maxArea = 0;\n        \n        for (int[] row : matrix) {\n            for (int i = 0; i < n; i++)\n                heights[i] = row[i] == 1 ? heights[i] + 1 : 0;\n            \n            Stack<Integer> st = new Stack<>();\n            for (int i = 0; i <= n; i++) {\n                int h = (i < n) ? heights[i] : 0;\n                while (!st.isEmpty() && heights[st.peek()] > h) {\n                    int height = heights[st.pop()];\n                    int left = st.isEmpty() ? -1 : st.peek();\n                    maxArea = Math.max(maxArea, height * (i - left - 1));\n                }\n                st.push(i);\n            }\n        }\n        return maxArea;\n    }\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function largestRectangle(matrix) {\n    if (!matrix.length || !matrix[0].length) return 0;\n    const n = matrix[0].length;\n    const heights = Array(n).fill(0);\n    let maxArea = 0;\n    \n    for (const row of matrix) {\n        for (let i = 0; i < n; i++)\n            heights[i] = row[i] === 1 ? heights[i] + 1 : 0;\n        \n        const stack = [];\n        for (let i = 0; i <= n; i++) {\n            const h = i < n ? heights[i] : 0;\n            while (stack.length && heights[stack[stack.length - 1]] > h) {\n                const height = heights[stack.pop()];\n                const left = stack.length ? stack[stack.length - 1] : -1;\n                maxArea = Math.max(maxArea, height * (i - left - 1));\n            }\n            stack.push(i);\n        }\n    }\n    return maxArea;\n}",
+      "caption": null
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "5.5 Square Detection from Points"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def is_square(p1, p2, p3, p4):\n    def dist(a, b):\n        return (a[0]-b[0])**2 + (a[1]-b[1])**2\n    \n    d = [\n        dist(p1, p2), dist(p1, p3), dist(p1, p4),\n        dist(p2, p3), dist(p2, p4), dist(p3, p4)\n    ]\n    d.sort()\n    # four equal smallest (sides), two equal largest (diagonals)\n    return (d[0] == d[1] == d[2] == d[3] and d[4] == d[5]\n            and d[0] > 0 and d[4] > d[0])",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "#include <vector>\n#include <algorithm>\nusing namespace std;\n\nint dist2(vector<int>& a, vector<int>& b) {\n    int dx = a[0] - b[0], dy = a[1] - b[1];\n    return dx*dx + dy*dy;\n}\n\nbool isSquare(vector<int>& p1, vector<int>& p2, vector<int>& p3, vector<int>& p4) {\n    int d[] = {\n        dist2(p1, p2), dist2(p1, p3), dist2(p1, p4),\n        dist2(p2, p3), dist2(p2, p4), dist2(p3, p4)\n    };\n    sort(d, d + 6);\n    return d[0] == d[1] && d[1] == d[2] && d[2] == d[3] && d[4] == d[5]\n           && d[0] > 0 && d[4] > d[0];\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "import java.util.*;\n\nclass SquareUtils {\n    static int dist2(int[] a, int[] b) {\n        int dx = a[0] - b[0], dy = a[1] - b[1];\n        return dx*dx + dy*dy;\n    }\n    \n    static boolean isSquare(int[] p1, int[] p2, int[] p3, int[] p4) {\n        int[] d = {\n            dist2(p1, p2), dist2(p1, p3), dist2(p1, p4),\n            dist2(p2, p3), dist2(p2, p4), dist2(p3, p4)\n        };\n        Arrays.sort(d);\n        return d[0] == d[1] && d[1] == d[2] && d[2] == d[3] && d[4] == d[5]\n               && d[0] > 0 && d[4] > d[0];\n    }\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function dist2(a, b) {\n    const dx = a[0] - b[0], dy = a[1] - b[1];\n    return dx*dx + dy*dy;\n}\n\nfunction isSquare(p1, p2, p3, p4) {\n    const d = [\n        dist2(p1, p2), dist2(p1, p3), dist2(p1, p4),\n        dist2(p2, p3), dist2(p2, p4), dist2(p3, p4)\n    ].sort((a, b) => a - b);\n    return d[0] === d[1] && d[1] === d[2] && d[2] === d[3] && d[4] === d[5]\n           && d[0] > 0 && d[4] > d[0];\n}",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "6. CURATED REAL PROBLEMS"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "#",
+        "Problem",
+        "Platform",
+        "Difficulty",
+        "Concepts",
+        "Pattern"
+      ],
+      "rows": [
+        [
+          "1",
+          "Rectangle Overlap",
+          "BinarySearch",
+          "Easy",
+          "Axis-aligned intersection",
+          "Overlap check"
+        ],
+        [
+          "2",
+          "Rectangle Cutting",
+          "Codeforces (800)",
+          "Easy",
+          "GCD, area division",
+          "Greedy division"
+        ],
+        [
+          "3",
+          "Draw a Square",
+          "Codeforces (800)",
+          "Easy",
+          "Coordinate square",
+          "Geometry basics"
+        ],
+        [
+          "4",
+          "Construct a Rectangle",
+          "Codeforces (800)",
+          "Easy",
+          "Side length logic",
+          "Feasibility check"
+        ],
+        [
+          "5",
+          "Rectangle Arrangement",
+          "Codeforces (800)",
+          "Easy",
+          "Bounding box",
+          "Area computation"
+        ],
+        [
+          "6",
+          "Maximal Square",
+          "LeetCode (Medium)",
+          "Medium",
+          "Largest square of 1s",
+          "DP on matrix"
+        ],
+        [
+          "7",
+          "Rectangle Area",
+          "LeetCode (Medium)",
+          "Medium",
+          "Union/intersection",
+          "Overlap computation"
+        ],
+        [
+          "8",
+          "Largest Rectangle in Histogram",
+          "LeetCode (Hard)",
+          "Hard",
+          "Monotonic stack",
+          "Stack pattern"
+        ],
+        [
+          "9",
+          "Divide Square",
+          "Codeforces (2400)",
+          "Hard",
+          "Segment intersection",
+          "Sweep line"
+        ],
+        [
+          "10",
+          "Count The Rectangles",
+          "Codeforces (2200)",
+          "Hard",
+          "Combinatorial counting",
+          "Tree / BIT"
+        ],
+        [
+          "11",
+          "Rectangle Painting",
+          "Codeforces (2300)",
+          "Hard",
+          "DP on rectangles",
+          "Divide and conquer DP"
+        ],
+        [
+          "12",
+          "Largest Submatrix With Rearrangements",
+          "LeetCode (Medium)",
+          "Medium",
+          "Histogram + sorting",
+          "Column sorting"
+        ]
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "7. GENERATED PRACTICE PROBLEMS"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Easy \u2014 Rectangle Checker"
+    },
+    {
+      "type": "text",
+      "content": "Given four integer coordinates (x, y), determine if they form a rectangle with sides parallel to axes."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Easy \u2014 Minimum Bounding Square"
+    },
+    {
+      "type": "text",
+      "content": "Given N points in a 2D plane, find the side length of the smallest axis-aligned square that encloses all points."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Medium \u2014 Maximum White Rectangle"
+    },
+    {
+      "type": "text",
+      "content": "Given an N \u00d7 M binary grid (0 = white, 1 = black), find the area of the largest rectangle containing only white cells."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Medium \u2014 Non-Overlapping Rectangles"
+    },
+    {
+      "type": "text",
+      "content": "Given N rectangles, find the maximum number of rectangles you can select such that no two overlap."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Hard \u2014 Rectangle Filling"
+    },
+    {
+      "type": "text",
+      "content": "Given an N \u00d7 N grid where you can paint any axis-aligned rectangle in one operation, find the minimum operations to reach a target pattern."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Contest \u2014 Rectangular Islands"
+    },
+    {
+      "type": "text",
+      "content": "Given N axis-aligned rectangles in a 2D plane, count the number of connected components (islands) formed by overlapping or touching rectangles."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Interview \u2014 Max Sum Rectangle"
+    },
+    {
+      "type": "text",
+      "content": "Given an N \u00d7 M matrix of integers (positive and negative), find the submatrix with maximum sum."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "8. COMPLETE SOLUTION SECTION"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Problem 1: Rectangle Overlap (Easy)"
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition**: An axis-aligned rectangle is a product of two intervals: [x1, x2] on the x-axis and [y1, y2] on the y-axis. Two rectangles overlap exactly when both intervals overlap on both axes."
+    },
+    {
+      "type": "text",
+      "content": "**B. Brute Force**: Check all possible relative positions (left, right, above, below) \u2014 4 cases. Not needed."
+    },
+    {
+      "type": "text",
+      "content": "**C. Optimized Approach**: Direct overlap formula: project onto x and y axes independently."
+    },
+    {
+      "type": "text",
+      "content": "**D. Step-by-Step**:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Compute x-overlap: `max(r1.x1, r2.x1) < min(r1.x2, r2.x2)`",
+        "Compute y-overlap: `max(r1.y1, r2.y1) < min(r1.y2, r2.y2)`",
+        "Return true if both conditions hold"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**E. Complexity**: $O(1)$ time, $O(1)$ space"
+    },
+    {
+      "type": "text",
+      "content": "**F. Edge Cases**:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Touching at edges (depends on inclusive/exclusive)",
+        "One rectangle entirely inside another",
+        "Zero-area rectangles"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**G. Code**:"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def is_rectangle_overlap(rec1, rec2):\n    # rec = [x1, y1, x2, y2]\n    return (rec1[0] < rec2[2] and rec2[0] < rec1[2]\n            and rec1[1] < rec2[3] and rec2[1] < rec1[3])",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "bool isRectangleOverlap(vector<int>& r1, vector<int>& r2) {\n    return (r1[0] < r2[2] && r2[0] < r1[2] &&\n            r1[1] < r2[3] && r2[1] < r1[3]);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public boolean isRectangleOverlap(int[] r1, int[] r2) {\n    return (r1[0] < r2[2] && r2[0] < r1[2] &&\n            r1[1] < r2[3] && r2[1] < r1[3]);\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function isRectangleOverlap(rec1, rec2) {\n    return (rec1[0] < rec2[2] && rec2[0] < rec1[2] &&\n            rec1[1] < rec2[3] && rec2[1] < rec1[3]);\n}",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Problem 2: Largest Rectangle in Histogram (Hard)"
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition**: For each bar, find how far the rectangle can extend left and right while staying at the bar's height. This means finding the nearest smaller element on each side \u2014 a classic monotonic stack application."
+    },
+    {
+      "type": "text",
+      "content": "**B. Brute Force**: For each bar, expand left and right until hitting a smaller bar. $O(N^2)$."
+    },
+    {
+      "type": "text",
+      "content": "**C. Optimized (Monotonic Stack)**:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Maintain a stack of indices with strictly increasing heights",
+        "When a bar is lower than the stack top, pop and compute area using the popped height",
+        "The popped bar's width extends from the new stack top (left bound) to the current index (right bound)"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**D. Step-by-Step**:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Append 0 to heights (sentinel)",
+        "For each index i, while stack not empty and heights[stack[-1]] > heights[i]:"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Pop top index h_idx",
+        "Height = heights[h_idx]",
+        "Left = stack[-1] if stack else -1",
+        "Right = i",
+        "Width = right - left - 1",
+        "Area = height \u00d7 width"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Push i onto stack"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**E. Complexity**: $O(N)$ time, $O(N)$ stack space"
+    },
+    {
+      "type": "text",
+      "content": "**F. Edge Cases**:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Decreasing heights (every bar pops the next)",
+        "Increasing heights (nothing pops until sentinel)",
+        "All equal heights"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**G. Code**:"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def largest_rectangle_area(heights):\n    heights.append(0)  # sentinel\n    stack = []\n    max_area = 0\n    \n    for i, h in enumerate(heights):\n        while stack and heights[stack[-1]] > h:\n            height = heights[stack.pop()]\n            left = stack[-1] if stack else -1\n            width = i - left - 1\n            max_area = max(max_area, height * width)\n        stack.append(i)\n    \n    return max_area",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "int largestRectangleArea(vector<int>& heights) {\n    heights.push_back(0);\n    stack<int> st;\n    int maxArea = 0;\n    for (int i = 0; i < heights.size(); i++) {\n        while (!st.empty() && heights[st.top()] > heights[i]) {\n            int h = heights[st.top()]; st.pop();\n            int left = st.empty() ? -1 : st.top();\n            maxArea = max(maxArea, h * (i - left - 1));\n        }\n        st.push(i);\n    }\n    return maxArea;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public int largestRectangleArea(int[] heights) {\n    int n = heights.length;\n    int[] h = Arrays.copyOf(heights, n + 1);\n    Stack<Integer> st = new Stack<>();\n    int maxArea = 0;\n    for (int i = 0; i <= n; i++) {\n        while (!st.isEmpty() && h[st.peek()] > h[i]) {\n            int height = h[st.pop()];\n            int left = st.isEmpty() ? -1 : st.peek();\n            maxArea = Math.max(maxArea, height * (i - left - 1));\n        }\n        st.push(i);\n    }\n    return maxArea;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function largestRectangleArea(heights) {\n    heights.push(0);\n    const stack = [];\n    let maxArea = 0;\n    \n    for (let i = 0; i < heights.length; i++) {\n        while (stack.length && heights[stack[stack.length - 1]] > heights[i]) {\n            const height = heights[stack.pop()];\n            const left = stack.length ? stack[stack.length - 1] : -1;\n            maxArea = Math.max(maxArea, height * (i - left - 1));\n        }\n        stack.push(i);\n    }\n    \n    return maxArea;\n}",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Problem 3: Maximal Square (Medium)"
+    },
+    {
+      "type": "text",
+      "content": "**A. Intuition**: A square of side k can only exist at cell (i, j) if the cells above, to the left, and diagonally above-left support a square of side k-1."
+    },
+    {
+      "type": "text",
+      "content": "**B. DP State**: `dp[i][j]` = side length of the largest square ending at (i, j)."
+    },
+    {
+      "type": "text",
+      "content": "**C. Recurrence**: `dp[i][j] = 1 + min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1])` if matrix[i][j] = 1, else 0."
+    },
+    {
+      "type": "text",
+      "content": "**D. Complexity**: O(N \u00d7 M) time, O(N \u00d7 M) space (can be $O(M)$ with rolling array)"
+    },
+    {
+      "type": "text",
+      "content": "**E. Edge Cases**: Single row, single column, all zeros, all ones"
+    },
+    {
+      "type": "code",
+      "lang": "python",
+      "code": "def maximal_square(matrix):\n    if not matrix or not matrix[0]:\n        return 0\n    m, n = len(matrix), len(matrix[0])\n    dp = [[0] * n for _ in range(m)]\n    max_side = 0\n    for i in range(m):\n        for j in range(n):\n            if matrix[i][j] == 1:\n                if i == 0 or j == 0:\n                    dp[i][j] = 1\n                else:\n                    dp[i][j] = 1 + min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1])\n                max_side = max(max_side, dp[i][j])\n    return max_side * max_side",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "cpp",
+      "code": "#include <vector>\n#include <algorithm>\nusing namespace std;\n\nint maximalSquare(vector<vector<int>>& matrix) {\n    if (matrix.empty() || matrix[0].empty()) return 0;\n    int m = matrix.size(), n = matrix[0].size();\n    vector<vector<int>> dp(m, vector<int>(n, 0));\n    int maxSide = 0;\n    for (int i = 0; i < m; i++) {\n        for (int j = 0; j < n; j++) {\n            if (matrix[i][j] == 1) {\n                if (i == 0 || j == 0) dp[i][j] = 1;\n                else {\n                    dp[i][j] = 1 + min({dp[i-1][j], dp[i][j-1], dp[i-1][j-1]});\n                }\n                maxSide = max(maxSide, dp[i][j]);\n            }\n        }\n    }\n    return maxSide * maxSide;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "java",
+      "code": "public int maximalSquare(int[][] matrix) {\n    if (matrix.length == 0 || matrix[0].length == 0) return 0;\n    int m = matrix.length, n = matrix[0].length;\n    int[][] dp = new int[m][n];\n    int maxSide = 0;\n    for (int i = 0; i < m; i++) {\n        for (int j = 0; j < n; j++) {\n            if (matrix[i][j] == 1) {\n                if (i == 0 || j == 0) dp[i][j] = 1;\n                else {\n                    dp[i][j] = 1 + Math.min(dp[i-1][j], Math.min(dp[i][j-1], dp[i-1][j-1]));\n                }\n                maxSide = Math.max(maxSide, dp[i][j]);\n            }\n        }\n    }\n    return maxSide * maxSide;\n}",
+      "caption": null
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "code": "function maximalSquare(matrix) {\n    if (!matrix.length || !matrix[0].length) return 0;\n    const m = matrix.length, n = matrix[0].length;\n    const dp = Array.from({ length: m }, () => Array(n).fill(0));\n    let maxSide = 0;\n    for (let i = 0; i < m; i++) {\n        for (let j = 0; j < n; j++) {\n            if (matrix[i][j] === 1) {\n                if (i === 0 || j === 0) dp[i][j] = 1;\n                else {\n                    dp[i][j] = 1 + Math.min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]);\n                }\n                maxSide = Math.max(maxSide, dp[i][j]);\n            }\n        }\n    }\n    return maxSide * maxSide;\n}",
+      "caption": null
+    },
+    {
+      "type": "divider"
+    }
+  ],
+  "difficulty": "Beginner"
+}

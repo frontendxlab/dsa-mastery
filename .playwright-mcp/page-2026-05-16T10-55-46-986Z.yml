@@ -1,0 +1,379 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: fx
+        - generic [ref=e7]: DSA Mastery
+      - generic [ref=e8]:
+        - link "Learn" [ref=e9] [cursor=pointer]:
+          - /url: /learn
+        - link "Explore" [ref=e10] [cursor=pointer]:
+          - /url: /explore
+        - link "Patterns" [ref=e11] [cursor=pointer]:
+          - /url: /patterns
+      - generic [ref=e12]:
+        - 'button "Theme mode: auto (system). Click to switch to light mode." [ref=e13]': Auto
+        - link "GitHub" [ref=e14] [cursor=pointer]:
+          - /url: https://github.com/rashidtvmr/dsa-inventory
+          - img [ref=e15]
+  - generic [ref=e19]:
+    - generic:
+      - generic:
+        - img
+    - generic:
+      - generic:
+        - img
+    - generic:
+      - generic:
+        - img
+    - generic:
+      - generic:
+        - img
+    - generic:
+      - generic:
+        - img
+    - generic [ref=e20]:
+      - link "Now with 31,931+ curated problems →" [ref=e21] [cursor=pointer]:
+        - /url: /explore
+        - text: Now with 31,931+ curated problems
+        - generic [ref=e23]: →
+      - heading "Master the Art of DSA." [level=1] [ref=e24]:
+        - text: Master the Art of
+        - text: DSA.
+      - paragraph [ref=e25]: Curated, deduplicated problems from 50+ platforms. Organized by topic, tagged by concept, ready for systematic practice.
+      - generic [ref=e26]:
+        - link "Start Learning →" [ref=e27] [cursor=pointer]:
+          - /url: /learn
+        - link "Explore Problems" [ref=e28] [cursor=pointer]:
+          - /url: /explore
+      - generic [ref=e31]: scroll
+  - generic [ref=e33]:
+    - generic [ref=e34]: LeetCode
+    - generic [ref=e36]: Codeforces
+    - generic [ref=e38]: AtCoder
+    - generic [ref=e40]: GeeksforGeeks
+    - generic [ref=e42]: CSES
+    - generic [ref=e44]: Baekjoon
+    - generic [ref=e46]: SPOJ
+    - generic [ref=e48]: UVa
+    - generic [ref=e50]: HackerRank
+    - generic [ref=e52]: CodeChef
+    - generic [ref=e54]: Kattis
+    - generic [ref=e56]: TopCoder
+    - generic [ref=e58]: LeetCode
+    - generic [ref=e60]: Codeforces
+    - generic [ref=e62]: AtCoder
+    - generic [ref=e64]: GeeksforGeeks
+    - generic [ref=e66]: CSES
+    - generic [ref=e68]: Baekjoon
+    - generic [ref=e70]: SPOJ
+    - generic [ref=e72]: UVa
+    - generic [ref=e74]: HackerRank
+    - generic [ref=e76]: CodeChef
+    - generic [ref=e78]: Kattis
+    - generic [ref=e80]: TopCoder
+  - generic [ref=e83]:
+    - generic [ref=e84]:
+      - generic [ref=e85]: 0+
+      - generic [ref=e86]: Problems
+    - generic [ref=e87]:
+      - generic [ref=e88]: "0"
+      - generic [ref=e89]: Topics
+    - generic [ref=e90]:
+      - generic [ref=e91]: 0+
+      - generic [ref=e92]: Platforms
+    - generic [ref=e93]:
+      - generic [ref=e94]: 0+
+      - generic [ref=e95]: Chapters
+  - generic [ref=e97]:
+    - generic [ref=e98]:
+      - generic [ref=e99]: Browse by Topic
+      - heading "14 Topics" [level=2] [ref=e100]
+      - paragraph [ref=e101]: Every problem tagged, every concept linked. Find exactly what you need.
+    - generic [ref=e102]:
+      - link "Math Number theory, combinatorics, geometry, probability 9,632 · 31 platforms" [ref=e103] [cursor=pointer]:
+        - /url: /explore?topics=math&q=&platform=all&diff=tier&tiers=&rmin=800&rmax=3500&sort=name&dir=asc&page=1
+        - generic [ref=e104]:
+          - generic:
+            - img:
+              - generic: ∑
+          - generic [ref=e106]: Math
+          - generic [ref=e107]: Number theory, combinatorics, geometry, probability
+          - generic [ref=e108]:
+            - generic [ref=e109]: 9,632
+            - generic [ref=e110]: ·
+            - generic [ref=e111]: 31 platforms
+      - link "Dynamic Programming Knapsack, LIS, LCS, tree DP, digit DP, DP on graphs 4,313 · 30 platforms" [ref=e112] [cursor=pointer]:
+        - /url: /explore?topics=dp&q=&platform=all&diff=tier&tiers=&rmin=800&rmax=3500&sort=name&dir=asc&page=1
+        - generic [ref=e113]:
+          - generic:
+            - img
+          - generic [ref=e115]: Dynamic Programming
+          - generic [ref=e116]: Knapsack, LIS, LCS, tree DP, digit DP, DP on graphs
+          - generic [ref=e117]:
+            - generic [ref=e118]: 4,313
+            - generic [ref=e119]: ·
+            - generic [ref=e120]: 30 platforms
+      - link "Binary Search Classic BS, BS on answer, ternary search, bitonic arrays 3,709 · 26 platforms" [ref=e121] [cursor=pointer]:
+        - /url: /explore?topics=binary_search&q=&platform=all&diff=tier&tiers=&rmin=800&rmax=3500&sort=name&dir=asc&page=1
+        - generic [ref=e122]:
+          - generic:
+            - img
+          - generic [ref=e124]: Binary Search
+          - generic [ref=e125]: Classic BS, BS on answer, ternary search, bitonic arrays
+          - generic [ref=e126]:
+            - generic [ref=e127]: 3,709
+            - generic [ref=e128]: ·
+            - generic [ref=e129]: 26 platforms
+      - link "String KMP, Z-algo, suffix array, palindrome, pattern matching, LCS 3,426 · 36 platforms" [ref=e130] [cursor=pointer]:
+        - /url: /explore?topics=string&q=&platform=all&diff=tier&tiers=&rmin=800&rmax=3500&sort=name&dir=asc&page=1
+        - generic [ref=e131]:
+          - generic:
+            - img:
+              - generic: abc
+          - generic [ref=e133]: String
+          - generic [ref=e134]: KMP, Z-algo, suffix array, palindrome, pattern matching, LCS
+          - generic [ref=e135]:
+            - generic [ref=e136]: 3,426
+            - generic [ref=e137]: ·
+            - generic [ref=e138]: 36 platforms
+      - link "Bit Manipulation XOR tricks, bitmask DP, subsets, bit hacks, gray code 2,868 · 28 platforms" [ref=e139] [cursor=pointer]:
+        - /url: /explore?topics=bit&q=&platform=all&diff=tier&tiers=&rmin=800&rmax=3500&sort=name&dir=asc&page=1
+        - generic [ref=e140]:
+          - generic:
+            - img:
+              - generic: "101"
+          - generic [ref=e142]: Bit Manipulation
+          - generic [ref=e143]: XOR tricks, bitmask DP, subsets, bit hacks, gray code
+          - generic [ref=e144]:
+            - generic [ref=e145]: 2,868
+            - generic [ref=e146]: ·
+            - generic [ref=e147]: 28 platforms
+      - link "Tree Binary tree, BST, traversal, LCA, diameter, n-ary trees 2,714 · 25 platforms" [ref=e148] [cursor=pointer]:
+        - /url: /explore?topics=tree&q=&platform=all&diff=tier&tiers=&rmin=800&rmax=3500&sort=name&dir=asc&page=1
+        - generic [ref=e149]:
+          - generic:
+            - img
+          - generic [ref=e151]: Tree
+          - generic [ref=e152]: Binary tree, BST, traversal, LCA, diameter, n-ary trees
+          - generic [ref=e153]:
+            - generic [ref=e154]: 2,714
+            - generic [ref=e155]: ·
+            - generic [ref=e156]: 25 platforms
+      - link "Graph BFS, DFS, Dijkstra, MST, topological sort, SCC, flow 1,290 · 24 platforms" [ref=e157] [cursor=pointer]:
+        - /url: /explore?topics=graph&q=&platform=all&diff=tier&tiers=&rmin=800&rmax=3500&sort=name&dir=asc&page=1
+        - generic [ref=e158]:
+          - generic:
+            - img
+          - generic [ref=e160]: Graph
+          - generic [ref=e161]: BFS, DFS, Dijkstra, MST, topological sort, SCC, flow
+          - generic [ref=e162]:
+            - generic [ref=e163]: 1,290
+            - generic [ref=e164]: ·
+            - generic [ref=e165]: 24 platforms
+      - link "Linked List Singly/doubly LL, cycle detection, merge, reverse, sort 1,135 · 20 platforms" [ref=e166] [cursor=pointer]:
+        - /url: /explore?topics=linked_list&q=&platform=all&diff=tier&tiers=&rmin=800&rmax=3500&sort=name&dir=asc&page=1
+        - generic [ref=e167]:
+          - generic:
+            - img
+          - generic [ref=e169]: Linked List
+          - generic [ref=e170]: Singly/doubly LL, cycle detection, merge, reverse, sort
+          - generic [ref=e171]:
+            - generic [ref=e172]: 1,135
+            - generic [ref=e173]: ·
+            - generic [ref=e174]: 20 platforms
+      - link "Advanced Tree Fenwick/BIT, segment tree, sqrt decomp, Mo's algo, treap 924 · 24 platforms" [ref=e175] [cursor=pointer]:
+        - /url: /explore?topics=advanced_tree&q=&platform=all&diff=tier&tiers=&rmin=800&rmax=3500&sort=name&dir=asc&page=1
+        - generic [ref=e176]:
+          - generic:
+            - img
+          - generic [ref=e178]: Advanced Tree
+          - generic [ref=e179]: Fenwick/BIT, segment tree, sqrt decomp, Mo's algo, treap
+          - generic [ref=e180]:
+            - generic [ref=e181]: "924"
+            - generic [ref=e182]: ·
+            - generic [ref=e183]: 24 platforms
+      - link "Sliding Window Fixed/variable size windows, two pointers, deque optimization 610 · 37 platforms" [ref=e184] [cursor=pointer]:
+        - /url: /explore?topics=sliding_window&q=&platform=all&diff=tier&tiers=&rmin=800&rmax=3500&sort=name&dir=asc&page=1
+        - generic [ref=e185]:
+          - generic:
+            - img
+          - generic [ref=e187]: Sliding Window
+          - generic [ref=e188]: Fixed/variable size windows, two pointers, deque optimization
+          - generic [ref=e189]:
+            - generic [ref=e190]: "610"
+            - generic [ref=e191]: ·
+            - generic [ref=e192]: 37 platforms
+      - link "Heap / Priority Queue Min/max heap, top K, median, merge K sorted, Huffman 496 · 29 platforms" [ref=e193] [cursor=pointer]:
+        - /url: /explore?topics=heap&q=&platform=all&diff=tier&tiers=&rmin=800&rmax=3500&sort=name&dir=asc&page=1
+        - generic [ref=e194]:
+          - generic:
+            - img
+          - generic [ref=e196]: Heap / Priority Queue
+          - generic [ref=e197]: Min/max heap, top K, median, merge K sorted, Huffman
+          - generic [ref=e198]:
+            - generic [ref=e199]: "496"
+            - generic [ref=e200]: ·
+            - generic [ref=e201]: 29 platforms
+      - link "Shape / Matrix Matrix traversal, rotation, spiral, 2D arrays, grid geometry 331 · 14 platforms" [ref=e202] [cursor=pointer]:
+        - /url: /explore?topics=shape&q=&platform=all&diff=tier&tiers=&rmin=800&rmax=3500&sort=name&dir=asc&page=1
+        - generic [ref=e203]:
+          - generic:
+            - img
+          - generic [ref=e205]: Shape / Matrix
+          - generic [ref=e206]: Matrix traversal, rotation, spiral, 2D arrays, grid geometry
+          - generic [ref=e207]:
+            - generic [ref=e208]: "331"
+            - generic [ref=e209]: ·
+            - generic [ref=e210]: 14 platforms
+      - link "Backtracking Permutations, combinations, subsets, N-queens, constraint SAT 325 · 18 platforms" [ref=e211] [cursor=pointer]:
+        - /url: /explore?topics=backtrack&q=&platform=all&diff=tier&tiers=&rmin=800&rmax=3500&sort=name&dir=asc&page=1
+        - generic [ref=e212]:
+          - generic:
+            - img
+          - generic [ref=e214]: Backtracking
+          - generic [ref=e215]: Permutations, combinations, subsets, N-queens, constraint SAT
+          - generic [ref=e216]:
+            - generic [ref=e217]: "325"
+            - generic [ref=e218]: ·
+            - generic [ref=e219]: 18 platforms
+      - link "Trie Prefix tree, dictionary, auto-complete, XOR max pair 158 · 17 platforms" [ref=e220] [cursor=pointer]:
+        - /url: /explore?topics=trie&q=&platform=all&diff=tier&tiers=&rmin=800&rmax=3500&sort=name&dir=asc&page=1
+        - generic [ref=e221]:
+          - generic:
+            - img
+          - generic [ref=e223]: Trie
+          - generic [ref=e224]: Prefix tree, dictionary, auto-complete, XOR max pair
+          - generic [ref=e225]:
+            - generic [ref=e226]: "158"
+            - generic [ref=e227]: ·
+            - generic [ref=e228]: 17 platforms
+  - generic [ref=e231]:
+    - generic [ref=e234] [cursor=pointer]:
+      - generic [ref=e236]:
+        - generic [ref=e237]:
+          - text: Shape
+          - text: Codex
+        - generic [ref=e239]: DSA Patterns
+      - generic [ref=e250]:
+        - text: Learn the Pattern.
+        - text: Solve the Problem.
+    - generic [ref=e252]:
+      - generic [ref=e253]: The Shape Codex
+      - heading "Pattern-first learning" [level=2] [ref=e254]
+      - paragraph [ref=e255]: "Every chapter follows the same ritual: brute-force first, then the key insight, then the optimal solution. Build intuition — not just memorization."
+      - list [ref=e256]:
+        - listitem [ref=e257]:
+          - generic [ref=e258]: ✓
+          - text: 194 curated chapters
+        - listitem [ref=e259]:
+          - generic [ref=e260]: ✓
+          - text: Brute → optimal walkthroughs
+        - listitem [ref=e261]:
+          - generic [ref=e262]: ✓
+          - text: Real interview problems
+        - listitem [ref=e263]:
+          - generic [ref=e264]: ✓
+          - text: Pattern recognition drills
+      - link "Open the Codex →" [ref=e265] [cursor=pointer]:
+        - /url: /learn
+  - generic [ref=e267]:
+    - generic [ref=e268]:
+      - generic [ref=e269]: What You Can Do
+      - heading "Everything you need to master DSA" [level=2] [ref=e270]
+    - generic [ref=e271]:
+      - generic [ref=e273]:
+        - generic [ref=e274]: ⌕
+        - generic [ref=e275]: Explore Problems
+        - paragraph [ref=e276]: 38,000+ problems across 50+ platforms. Filter by difficulty, platform, topic, and rating range.
+      - generic [ref=e278]:
+        - generic [ref=e279]: ◈
+        - generic [ref=e280]: Learn Patterns
+        - paragraph [ref=e281]: 194 chapters of pattern-based learning. Brute force first, then the insight, then optimal.
+      - generic [ref=e283]:
+        - generic [ref=e284]: ▦
+        - generic [ref=e285]: Curated Collections
+        - paragraph [ref=e286]: "14 core topics: DP, Graphs, Trees, Binary Search, Sliding Window, and more. Practice systematically."
+      - generic [ref=e288]:
+        - generic [ref=e289]: ⚡
+        - generic [ref=e290]: Instant Search
+        - paragraph [ref=e291]: Full-text search across problem names, concepts, topics, and platforms. Find what you need instantly.
+      - generic [ref=e293]:
+        - generic [ref=e294]: ◎
+        - generic [ref=e295]: Track Progress
+        - paragraph [ref=e296]: Mark problems as solved, track per-topic completion. Personal collections — no account needed.
+      - generic [ref=e298]:
+        - generic [ref=e299]: ✓
+        - generic [ref=e300]: Deduplicated
+        - paragraph [ref=e301]: Every problem carefully deduplicated across platforms. No more solving the same problem twice.
+  - generic [ref=e303]:
+    - heading "Start your DSA journey today." [level=2] [ref=e304]
+    - paragraph [ref=e305]: 31,931+ problems. 194 chapters. One platform.
+    - generic [ref=e306]:
+      - link "Learn Patterns →" [ref=e307] [cursor=pointer]:
+        - /url: /learn
+      - link "Browse Problems" [ref=e308] [cursor=pointer]:
+        - /url: /explore
+  - contentinfo [ref=e309]:
+    - generic [ref=e310]:
+      - generic [ref=e311]:
+        - generic [ref=e312]:
+          - link "fx DSA Mastery by frontendx" [ref=e313] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e315]: fx
+            - generic [ref=e316]:
+              - paragraph [ref=e317]: DSA Mastery
+              - paragraph [ref=e318]: by frontendx
+          - paragraph [ref=e319]: 38,000+ curated DSA problems from 50+ platforms. Organized by topic, tagged by concept, ready for practice.
+          - generic [ref=e320]:
+            - generic [ref=e321]: 38k+ Problems
+            - generic [ref=e322]: 50+ Platforms
+            - generic [ref=e323]: 14 Topics
+        - generic [ref=e324]:
+          - heading "Explore" [level=3] [ref=e325]
+          - list [ref=e326]:
+            - listitem [ref=e327]:
+              - link "All Topics" [ref=e328] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e329]:
+              - link "Problem Explorer" [ref=e330] [cursor=pointer]:
+                - /url: /explore
+            - listitem [ref=e331]:
+              - link "Learn DSA" [ref=e332] [cursor=pointer]:
+                - /url: /learn
+        - generic [ref=e333]:
+          - heading "Topics" [level=3] [ref=e334]
+          - list [ref=e335]:
+            - listitem [ref=e336]:
+              - link "Dynamic Programming" [ref=e337] [cursor=pointer]:
+                - /url: /problems/dp
+            - listitem [ref=e338]:
+              - link "Binary Search" [ref=e339] [cursor=pointer]:
+                - /url: /problems/binary_search
+            - listitem [ref=e340]:
+              - link "Graph" [ref=e341] [cursor=pointer]:
+                - /url: /problems/graph
+            - listitem [ref=e342]:
+              - link "Tree" [ref=e343] [cursor=pointer]:
+                - /url: /problems/tree
+            - listitem [ref=e344]:
+              - link "Math" [ref=e345] [cursor=pointer]:
+                - /url: /problems/math
+        - generic [ref=e346]:
+          - heading "Resources" [level=3] [ref=e347]
+          - list [ref=e348]:
+            - listitem [ref=e349]:
+              - link "Patterns Cheat Sheet" [ref=e350] [cursor=pointer]:
+                - /url: /learn/patterns
+            - listitem [ref=e351]:
+              - link "GitHub ↗" [ref=e352] [cursor=pointer]:
+                - /url: https://github.com/rashidtvmr/dsa-inventory
+                - text: GitHub
+                - generic [ref=e353]: ↗
+      - generic [ref=e354]:
+        - paragraph [ref=e355]: © 2026 DSA Mastery. Built for DSA practice.
+        - link "GitHub" [ref=e357] [cursor=pointer]:
+          - /url: https://github.com/rashidtvmr/dsa-inventory
+          - generic [ref=e358]: GitHub
+          - img [ref=e359]
