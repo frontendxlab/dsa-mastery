@@ -1,18 +1,5 @@
 import { createFileRoute, useNavigate, useSearch } from '@tanstack/react-router'
 import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
-import { Search } from 'lucide-react'
-
-function useIsMobile(breakpoint = 640) {
-  const [isMobile, setIsMobile] = useState(false)
-  useEffect(() => {
-    const mq = window.matchMedia(`(max-width: ${breakpoint - 1}px)`)
-    setIsMobile(mq.matches)
-    const h = (e: MediaQueryListEvent) => setIsMobile(e.matches)
-    mq.addEventListener('change', h)
-    return () => mq.removeEventListener('change', h)
-  }, [breakpoint])
-  return isMobile
-}
 import { topics } from '#/data/topics'
 import { z } from 'zod'
 
@@ -27,6 +14,7 @@ const searchSchema = z.object({
   rmax:     z.number().optional().default(3500),
   sort:     z.enum(['name', 'difficulty', 'platform', 'topic']).optional().default('name'),
   dir:      z.enum(['asc', 'desc']).optional().default('asc'),
+  page:     z.number().optional().default(1),
 })
 
 export const Route = createFileRoute('/explore')({
@@ -34,30 +22,7 @@ export const Route = createFileRoute('/explore')({
   component: ExplorePage,
 })
 
-// ─── Virtualizer ──────────────────────────────────────────────────────────
-function useSimpleVirtual(count: number, itemH: number, ref: React.RefObject<HTMLDivElement>, overscan = 20) {
-  const [scrollTop, setScrollTop] = useState(0)
-  const [containerH, setContainerH] = useState(600)
-  useEffect(() => {
-    const el = ref.current
-    if (!el) return
-    setContainerH(el.clientHeight)
-    const ro = new ResizeObserver(() => setContainerH(el.clientHeight))
-    ro.observe(el)
-    const onScroll = () => setScrollTop(el.scrollTop)
-    el.addEventListener('scroll', onScroll, { passive: true })
-    return () => { ro.disconnect(); el.removeEventListener('scroll', onScroll) }
-  }, [ref])
-  const start = Math.max(0, Math.floor(scrollTop / itemH) - overscan)
-  const end   = Math.min(count - 1, Math.ceil((scrollTop + containerH) / itemH) + overscan)
-  return {
-    totalH: count * itemH,
-    items: Array.from({ length: Math.max(0, end - start + 1) }, (_, i) => ({
-      index: start + i,
-      top: (start + i) * itemH,
-    })),
-  }
-}
+const PAGE_SIZE = 50
 
 // ─── Types ────────────────────────────────────────────────────────────────
 interface Problem {
@@ -65,8 +30,8 @@ interface Problem {
   difficulty: string; keyConcept: string; topic: string; topicSlug: string
 }
 
-// ─── Difficulty helpers ───────────────────────────────────────────────────
 type Tier = 'easy' | 'medium' | 'hard' | 'rating' | 'unknown'
+
 function diffTier(d: string): Tier {
   const l = d.toLowerCase()
   if (l === 'easy'   || l === '1' || l === 'school') return 'easy'
@@ -79,18 +44,178 @@ function diffRating(d: string): number | null {
   const n = parseInt(d, 10); return !isNaN(n) && n >= 800 ? n : null
 }
 
-function DiffBadge({ d }: { d: string }) {
-  const tier = diffTier(d)
-  const cls =
-    tier === 'easy'   ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300' :
-    tier === 'medium' ? 'bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-300' :
-    tier === 'hard'   ? 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300' :
-    tier === 'rating' ? 'bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200' :
-                        'bg-[var(--chip-bg)] text-[var(--sea-ink-soft)]'
+function ratingColor(r: number) {
+  if (r < 1000) return '#34d399'
+  if (r < 1500) return '#fbbf24'
+  if (r < 2000) return '#f97316'
+  return '#f87171'
+}
+
+const PLATFORM_COLORS: Record<string, string> = {
+  LeetCode: '#FFA116', Codeforces: '#1F8ACB', AtCoder: '#808080',
+  CSES: '#4CAF50', GeeksforGeeks: '#2F8D46', CodeChef: '#5B4638',
+  HackerRank: '#00EA64', SPOJ: '#E60000', Kattis: '#F9A825', Baekjoon: '#0070C0',
+}
+
+// ─── Background canvas ───────────────────────────────────────────────────
+function BackgroundCanvas() {
+  const ref = useRef<HTMLCanvasElement>(null)
+  useEffect(() => {
+    const canvas = ref.current
+    if (!canvas) return
+    const ctx = canvas.getContext('2d')!
+    let W = 0, H = 0, raf = 0
+    interface Node { x:number; y:number; vx:number; vy:number; r:number; phase:number }
+    let nodes: Node[] = []
+
+    function resize() {
+      W = canvas.width  = window.innerWidth
+      H = canvas.height = window.innerHeight
+      nodes = []
+      const count = Math.min(55, Math.floor(W * H / 16000))
+      for (let i = 0; i < count; i++) nodes.push({
+        x: Math.random() * W, y: Math.random() * H * 0.62,
+        vx: (Math.random() - 0.5) * 0.22, vy: (Math.random() - 0.5) * 0.22,
+        r: Math.random() * 1.6 + 0.6, phase: Math.random() * Math.PI * 2,
+      })
+    }
+
+    function draw(ts: number) {
+      ctx.clearRect(0, 0, W, H)
+      const c = '59,158,255'
+      const vx = W / 2, horizon = H * 0.60
+      const speed = (ts * 0.000038) % 1
+
+      for (let i = 0; i <= 18; i++) {
+        const xb = (i / 18) * W
+        ctx.beginPath()
+        ctx.strokeStyle = `rgba(${c},${i === 9 ? 0.035 : 0.02})`
+        ctx.lineWidth = 0.5
+        ctx.moveTo(xb, H); ctx.lineTo(vx, horizon); ctx.stroke()
+      }
+      for (let j = 0; j < 18; j++) {
+        const raw = (j / 18 + speed) % 1, pT = raw * raw
+        const y = horizon + (H - horizon) * pT
+        if (y > H + 1) continue
+        const xl = vx - vx * pT, xr = vx + (W - vx) * pT
+        ctx.beginPath()
+        ctx.strokeStyle = `rgba(${c},${0.007 + pT * 0.038})`
+        ctx.lineWidth = 0.4; ctx.moveTo(xl, y); ctx.lineTo(xr, y); ctx.stroke()
+      }
+      const grd = ctx.createLinearGradient(0, horizon - 30, 0, horizon + 60)
+      grd.addColorStop(0, `rgba(${c},0)`); grd.addColorStop(0.5, `rgba(${c},0.03)`); grd.addColorStop(1, `rgba(${c},0)`)
+      ctx.fillStyle = grd; ctx.fillRect(0, horizon - 30, W, 90)
+
+      nodes.forEach(n => {
+        n.x += n.vx; n.y += n.vy
+        if (n.x < -60) n.x = W + 60; if (n.x > W + 60) n.x = -60
+        if (n.y < -60) n.y = H * 0.64; if (n.y > H * 0.64) n.y = -60
+      })
+      for (let i = 0; i < nodes.length; i++) for (let j = i + 1; j < nodes.length; j++) {
+        const dx = nodes[i].x - nodes[j].x, dy = nodes[i].y - nodes[j].y
+        const d = Math.sqrt(dx * dx + dy * dy)
+        if (d < 145) {
+          ctx.beginPath(); ctx.strokeStyle = `rgba(${c},${(1 - d / 145) * 0.072})`
+          ctx.lineWidth = 0.55; ctx.moveTo(nodes[i].x, nodes[i].y); ctx.lineTo(nodes[j].x, nodes[j].y); ctx.stroke()
+        }
+      }
+      nodes.forEach(n => {
+        const p2 = 0.68 + 0.32 * Math.sin(ts * 0.0009 + n.phase)
+        ctx.beginPath(); ctx.arc(n.x, n.y, n.r * p2, 0, Math.PI * 2)
+        ctx.fillStyle = `rgba(${c},${0.28 * p2})`; ctx.fill()
+      })
+      raf = requestAnimationFrame(draw)
+    }
+
+    resize()
+    raf = requestAnimationFrame(draw)
+    window.addEventListener('resize', resize)
+    return () => { cancelAnimationFrame(raf); window.removeEventListener('resize', resize) }
+  }, [])
+
+  return <canvas ref={ref} style={{ position:'fixed', top:0, left:0, width:'100%', height:'100%', zIndex:0, pointerEvents:'none' }} />
+}
+
+// ─── Stat card ───────────────────────────────────────────────────────────
+function StatCard({ value, label }: { value: string | number; label: string }) {
+  const ref = useRef<HTMLDivElement>(null)
+  const [tilt, setTilt] = useState<React.CSSProperties | null>(null)
+
+  const onMove = useCallback((e: React.MouseEvent) => {
+    const el = ref.current; if (!el) return
+    const r = el.getBoundingClientRect()
+    const x = ((e.clientX - r.left) / r.width - 0.5) * 2
+    const y = ((e.clientY - r.top) / r.height - 0.5) * 2
+    setTilt({ transform: `perspective(400px) rotateX(${-y * 5}deg) rotateY(${x * 3}deg) translateY(-5px) translateZ(10px)`, boxShadow: '0 20px 40px rgba(0,0,0,0.45), 0 0 0 1px rgba(59,158,255,0.22), 0 0 28px rgba(59,158,255,0.10)', borderColor: 'rgba(59,158,255,0.22)' })
+  }, [])
+  const onLeave = useCallback(() => setTilt(null), [])
+
   return (
-    <span className={`inline-block shrink-0 rounded-full px-2 py-0.5 text-[10px] font-bold ${cls}`}>
-      {d || '—'}
-    </span>
+    <div
+      ref={ref}
+      onMouseMove={onMove}
+      onMouseLeave={onLeave}
+      style={{ ...tilt, transition: tilt ? 'none' : 'transform .28s cubic-bezier(0.23,1,0.32,1), box-shadow .28s ease, border-color .28s ease' }}
+      className="ex-stat-card"
+    >
+      <div className="ex-stat-value">{typeof value === 'number' ? value.toLocaleString() : value}</div>
+      <div className="ex-stat-label">{label}</div>
+    </div>
+  )
+}
+
+// ─── Problem row with 3D tilt ────────────────────────────────────────────
+function ProbRow({ p, idx }: { p: Problem; idx: number }) {
+  const ref = useRef<HTMLDivElement>(null)
+  const [tilt, setTilt] = useState<React.CSSProperties | null>(null)
+  const tier = diffTier(p.difficulty)
+  const rating = diffRating(p.difficulty)
+  const rPct = rating ? Math.round(((rating - 800) / (3500 - 800)) * 100) : 0
+  const platColor = PLATFORM_COLORS[p.platform] ?? '#888'
+
+  const onMove = useCallback((e: React.MouseEvent) => {
+    const el = ref.current; if (!el) return
+    const r = el.getBoundingClientRect()
+    const x = ((e.clientX - r.left) / r.width - 0.5) * 2
+    const y = ((e.clientY - r.top) / r.height - 0.5) * 2
+    setTilt({ transform: `perspective(650px) rotateX(${-y * 3.5}deg) rotateY(${x * 2}deg) translateZ(10px) scale(1.004)`, boxShadow: `${-x * 8}px ${5 + y * 3}px 22px rgba(0,0,0,0.38), 0 0 0 1px rgba(59,158,255,0.20)` })
+  }, [])
+  const onLeave = useCallback(() => setTilt(null), [])
+
+  const diffCls = tier === 'easy' ? 'ex-diff-easy' : tier === 'medium' ? 'ex-diff-med' : tier === 'hard' ? 'ex-diff-hard' : 'ex-diff-rating'
+
+  return (
+    <div
+      ref={ref}
+      className="ex-row"
+      style={tilt ?? undefined}
+      onMouseMove={onMove}
+      onMouseLeave={onLeave}
+    >
+      <div className="ex-cell ex-cell-num">{idx + 1}</div>
+      <div className="ex-cell ex-cell-name">
+        {p.url
+          ? <a href={p.url} target="_blank" rel="noopener noreferrer" className="ex-prob-name">{p.name}</a>
+          : <span className="ex-prob-name">{p.name}</span>
+        }
+        {p.keyConcept && <div className="ex-prob-tag">{p.keyConcept.slice(0, 40)}</div>}
+      </div>
+      <div className="ex-cell">
+        <span className="ex-plat-badge" style={{ background: `${platColor}18`, color: platColor }}>{p.platform}</span>
+      </div>
+      <div className="ex-cell">
+        <span className={`ex-diff-badge ${diffCls}`}>
+          {(rating ?? p.difficulty) || '—'}
+        </span>
+      </div>
+      {rating ? (
+        <div className="ex-cell ex-cell-rating">
+          <span className="ex-rating-num" style={{ color: ratingColor(rating) }}>{rating}</span>
+          <div className="ex-rating-track"><div className="ex-rating-fill" style={{ width: `${rPct}%`, background: ratingColor(rating) }} /></div>
+        </div>
+      ) : <div className="ex-cell" />}
+      <div className="ex-cell ex-cell-topic">{p.topic}</div>
+    </div>
   )
 }
 
@@ -99,7 +224,6 @@ function ExplorePage() {
   const search   = useSearch({ from: '/explore' })
   const navigate = useNavigate({ from: '/explore' })
 
-  // derive state from URL
   const q           = search.q ?? ''
   const topicFilter = useMemo(() => search.topics ? search.topics.split(',').filter(Boolean) : [], [search.topics])
   const platform    = search.platform ?? 'all'
@@ -109,12 +233,13 @@ function ExplorePage() {
   const rMax        = search.rmax ?? 3500
   const sortCol     = search.sort ?? 'name'
   const sortDir     = search.dir  ?? 'asc'
+  const page        = search.page ?? 1
 
   const patch = useCallback((updates: Partial<z.infer<typeof searchSchema>>) => {
     navigate({ search: (prev) => ({ ...prev, ...updates }), replace: true })
   }, [navigate])
 
-  // ── Data loading ─────────────────────────────────────────────────────────
+  // ── Data loading ──────────────────────────────────────────────────────
   const [problems, setProblems] = useState<Problem[]>([])
   const [loadedCount, setLoadedCount] = useState(0)
   const totalTopics = topics.length
@@ -134,66 +259,35 @@ function ExplorePage() {
         const data: { problems: { platform: string; name: string; url: string; difficulty: string; keyConcept: string }[] } = await res.json()
         const topicInfo = topics.find(t => t.slug === slug)
         const mapped = (data.problems ?? []).map((p, j) => ({
-          id: `${slug}-${j}`,
-          platform: p.platform ?? '',
-          name: p.name ?? '',
-          url: p.url ?? '',
-          difficulty: p.difficulty ?? '',
-          keyConcept: p.keyConcept ?? '',
-          topic: topicInfo?.name ?? slug,
-          topicSlug: slug,
+          id: `${slug}-${j}`, platform: p.platform ?? '', name: p.name ?? '',
+          url: p.url ?? '', difficulty: p.difficulty ?? '', keyConcept: p.keyConcept ?? '',
+          topic: topicInfo?.name ?? slug, topicSlug: slug,
         }))
-        if (!cancelled) {
-          acc.push(...mapped)
-          loaded++
-          setProblems([...acc])
-          setLoadedCount(loaded)
-        }
-      } catch { /* skip */ }
+        if (!cancelled) { acc.push(...mapped); loaded++; setProblems([...acc]); setLoadedCount(loaded) }
+      } catch { /**/ }
     }
 
-    // first 6 parallel, rest staggered
     Promise.all(order.slice(0, 6).map(loadOne)).then(() => {
       order.slice(6).reduce((p, slug, i) =>
         p.then(() => new Promise<void>(r => setTimeout(() => { if (!cancelled) loadOne(slug).then(r) }, i * 80))),
         Promise.resolve()
       )
     })
-
     return () => { cancelled = true }
   }, [])
 
-  // ── Topic counts ──────────────────────────────────────────────────────────
-  const topicCounts = useMemo(() => {
-    const m: Record<string, number> = {}
-    for (const p of problems) m[p.topicSlug] = (m[p.topicSlug] ?? 0) + 1
-    return m
-  }, [problems])
+  const platforms = useMemo(() => [...new Set(problems.map(p => p.platform).filter(Boolean))].sort(), [problems])
 
-  // ── Platforms ─────────────────────────────────────────────────────────────
-  const platforms = useMemo(
-    () => [...new Set(problems.map(p => p.platform).filter(Boolean))].sort(),
-    [problems],
-  )
-
-  // ── Filter + sort ─────────────────────────────────────────────────────────
   const filtered = useMemo(() => {
     let res = problems
     if (q.trim()) {
       const lq = q.toLowerCase()
-      res = res.filter(p =>
-        p.name.toLowerCase().includes(lq) ||
-        p.keyConcept.toLowerCase().includes(lq) ||
-        p.topic.toLowerCase().includes(lq) ||
-        p.platform.toLowerCase().includes(lq),
-      )
+      res = res.filter(p => p.name.toLowerCase().includes(lq) || p.keyConcept.toLowerCase().includes(lq) || p.topic.toLowerCase().includes(lq) || p.platform.toLowerCase().includes(lq))
     }
-    if (topicFilter.length)  res = res.filter(p => topicFilter.includes(p.topicSlug))
-    if (platform !== 'all')  res = res.filter(p => p.platform === platform)
-    if (diffMode === 'tier' && tierFilter.length)
-      res = res.filter(p => tierFilter.includes(diffTier(p.difficulty)))
-    if (diffMode === 'range')
-      res = res.filter(p => { const r = diffRating(p.difficulty); return r !== null && r >= rMin && r <= rMax })
+    if (topicFilter.length) res = res.filter(p => topicFilter.includes(p.topicSlug))
+    if (platform !== 'all') res = res.filter(p => p.platform === platform)
+    if (diffMode === 'tier' && tierFilter.length) res = res.filter(p => tierFilter.includes(diffTier(p.difficulty)))
+    if (diffMode === 'range') res = res.filter(p => { const r = diffRating(p.difficulty); return r !== null && r >= rMin && r <= rMax })
 
     return [...res].sort((a, b) => {
       let cmp = 0
@@ -209,254 +303,219 @@ function ExplorePage() {
     })
   }, [problems, q, topicFilter, platform, diffMode, tierFilter, rMin, rMax, sortCol, sortDir])
 
-  // ── Virtualizer ───────────────────────────────────────────────────────────
-  const parentRef = useRef<HTMLDivElement>(null)
-  const virt = useSimpleVirtual(filtered.length, 44, parentRef)
-
-  // ── Sort toggle ───────────────────────────────────────────────────────────
-  const toggleSort = (col: typeof sortCol) => {
-    if (sortCol === col) patch({ dir: sortDir === 'asc' ? 'desc' : 'asc' })
-    else patch({ sort: col, dir: 'asc' })
-  }
-  const sortIcon = (col: typeof sortCol) =>
-    sortCol !== col ? ' ↕' : sortDir === 'asc' ? ' ↑' : ' ↓'
-
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE))
+  const pageData   = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
   const loading    = loadedCount < totalTopics
-  const hasFilters = q || topicFilter.length || platform !== 'all' || tierFilter.length || diffMode === 'range'
 
-  const clearAll = () => patch({ q: '', topics: '', platform: 'all', diff: 'tier', tiers: '', rmin: 800, rmax: 3500, sort: 'name', dir: 'asc' })
+  const toggleSort = (col: typeof sortCol) => {
+    if (sortCol === col) patch({ dir: sortDir === 'asc' ? 'desc' : 'asc', page: 1 })
+    else patch({ sort: col, dir: 'asc', page: 1 })
+  }
 
-  const isMobile = useIsMobile()
-  const COLS = isMobile ? '2rem 1fr 5rem' : '2.5rem 1fr 8rem 8rem 6rem 10rem'
+  const clearAll = () => patch({ q: '', topics: '', platform: 'all', diff: 'tier', tiers: '', rmin: 800, rmax: 3500, sort: 'name', dir: 'asc', page: 1 })
+
+  const activePills = [
+    platform !== 'all' && { label: platform, clear: () => patch({ platform: 'all', page: 1 }) },
+    tierFilter.length  && { label: tierFilter.join(', '), clear: () => patch({ tiers: '', page: 1 }) },
+    topicFilter.length && { label: topicFilter.join(', '), clear: () => patch({ topics: '', page: 1 }) },
+    diffMode === 'range' && { label: `Rating ${rMin}–${rMax}`, clear: () => patch({ diff: 'tier', rmin: 800, rmax: 3500, page: 1 }) },
+  ].filter(Boolean) as { label: string; clear: () => void }[]
+
+  const SortHdr = ({ label, col }: { label: string; col: typeof sortCol }) => (
+    <div className={`ex-hdr-cell${sortCol === col ? ' ex-sort-active' : ''}`} onClick={() => toggleSort(col)}>
+      {label}
+      <span className="ex-sort-icon" style={{ transform: sortCol === col && sortDir === 'desc' ? 'rotate(180deg)' : undefined }}>
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+      </span>
+    </div>
+  )
+
+  // page numbers to show
+  const pageNums = useMemo(() => {
+    const nums: number[] = []
+    if (totalPages <= 7) { for (let i = 1; i <= totalPages; i++) nums.push(i) }
+    else {
+      nums.push(1)
+      if (page > 3) nums.push(-1)
+      for (let i = Math.max(2, page - 1); i <= Math.min(totalPages - 1, page + 1); i++) nums.push(i)
+      if (page < totalPages - 2) nums.push(-1)
+      nums.push(totalPages)
+    }
+    return nums
+  }, [page, totalPages])
 
   return (
-    <main className="page-wrap px-4 pb-16 pt-8 sm:pt-12">
+    <>
+      {/* animated background — client only */}
+      {typeof window !== 'undefined' && <BackgroundCanvas />}
+      <div className="ex-orb ex-orb-1" />
+      <div className="ex-orb ex-orb-2" />
+      <div className="ex-orb ex-orb-3" />
 
-      {/* ── Hero ──────────────────────────────────────────────────────────── */}
-      <section className="island-shell rise-in mb-6 rounded-2xl px-6 py-7 sm:px-10">
-        <p className="island-kicker mb-1 text-xs">Problem Explorer</p>
-        <h1 className="display-title mb-1 text-2xl font-bold tracking-tight text-[var(--sea-ink)] sm:text-3xl">
-          {loading
-            ? <><span className="tabular-nums">{problems.length.toLocaleString()}</span> problems loaded…</>
-            : <><span className="text-[var(--lagoon-deep)] tabular-nums">{problems.length.toLocaleString()}</span> problems</>
-          }
-        </h1>
-        <div className="mt-2 flex flex-wrap gap-x-5 gap-y-1 text-sm text-[var(--sea-ink-soft)]">
-          <span>{totalTopics} topics</span>
-          <span>{platforms.length || '…'} platforms</span>
-          {loading && (
-            <span className="inline-flex items-center gap-1.5">
-              <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-[var(--lagoon)]" />
-              Loading {loadedCount}/{totalTopics}
-            </span>
-          )}
-          {filtered.length !== problems.length && (
-            <span className="font-semibold text-[var(--lagoon-deep)]">
-              {filtered.length.toLocaleString()} matching
-            </span>
-          )}
-        </div>
-        {loading && (
-          <div className="mt-3 h-1 w-full max-w-xs overflow-hidden rounded-full bg-[var(--line)]">
-            <div
-              className="h-full rounded-full bg-[var(--lagoon)] transition-all duration-300"
-              style={{ width: `${(loadedCount / totalTopics) * 100}%` }}
-            />
-          </div>
-        )}
-      </section>
+      <main style={{ position: 'relative', zIndex: 1, paddingTop: 80, paddingBottom: 80 }}>
+        <div className="ex-w">
 
-      {/* ── Filters ──────────────────────────────────────────────────────── */}
-      <section className="rise-in mb-3 space-y-2.5" style={{ animationDelay: '60ms' }}>
-
-        {/* Search bar */}
-        <div className="relative">
-          <input
-            value={q}
-            onChange={e => patch({ q: e.target.value })}
-            placeholder="Search by name, concept, topic, platform…"
-            className="w-full rounded-xl border border-[var(--chip-line)] bg-[var(--chip-bg)] px-5 py-3 pl-11 text-sm text-[var(--sea-ink)] outline-none transition placeholder:text-[var(--sea-ink-soft)] focus:border-[var(--lagoon)] focus:ring-2 focus:ring-[rgba(79,184,178,0.2)]"
-          />
-          <svg className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[var(--sea-ink-soft)]" width="15" height="15" viewBox="0 0 16 16" fill="none">
-            <circle cx="7" cy="7" r="5.5" stroke="currentColor" strokeWidth="1.5"/>
-            <path d="M11 11L14.5 14.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-          </svg>
-          {q && (
-            <button onClick={() => patch({ q: '' })} className="absolute right-4 top-1/2 -translate-y-1/2 text-lg leading-none text-[var(--sea-ink-soft)] hover:text-[var(--sea-ink)]">×</button>
-          )}
-        </div>
-
-        {/* Platform + difficulty mode */}
-        <div className="flex flex-wrap items-center gap-2">
-          <select
-            value={platform}
-            onChange={e => patch({ platform: e.target.value })}
-            aria-label="Filter by platform"
-            className="rounded-lg border border-[var(--chip-line)] bg-[var(--chip-bg)] px-3 py-2 text-xs font-medium text-[var(--sea-ink)] outline-none"
-          >
-            <option value="all">All platforms</option>
-            {platforms.map(p => <option key={p} value={p}>{p}</option>)}
-          </select>
-
-          <div className="flex overflow-hidden rounded-lg border border-[var(--chip-line)]">
-            {(['tier', 'range'] as const).map(m => (
-              <button key={m} onClick={() => patch({ diff: m })}
-                className={`px-3 py-2 text-xs font-semibold transition-colors ${diffMode === m ? 'bg-[var(--lagoon)] text-[var(--sand)]' : 'bg-[var(--chip-bg)] text-[var(--sea-ink-soft)]'}`}>
-                {m === 'tier' ? 'Tier filter' : 'Rating range'}
-              </button>
-            ))}
+          {/* ── Page header ─────────────────────────────────────── */}
+          <div className="ex-page-header">
+            <div className="ex-eyebrow">Problem Explorer</div>
+            <h1 className="ex-title">
+              Explore <span className="ex-title-accent">
+                {loading ? `${problems.length.toLocaleString()}…` : `${problems.length.toLocaleString()}`}
+              </span> Problems
+            </h1>
+            <p className="ex-subtitle">Every DSA problem in one place. Filter, sort, find patterns.</p>
+            <div className="ex-stat-cards">
+              <StatCard value={problems.length || '38,000+'} label="Total problems" />
+              <StatCard value={topics.length} label="Topics" />
+              <StatCard value={platforms.length || '50+'} label="Platforms" />
+              <StatCard value={filtered.length} label="Matching" />
+              {loading && <StatCard value={`${loadedCount}/${totalTopics}`} label="Loading…" />}
+            </div>
           </div>
 
-          {diffMode === 'tier' && (
-            <div className="flex flex-wrap gap-1.5">
-              {(['easy', 'medium', 'hard'] as Tier[]).filter(t => t !== 'rating' && t !== 'unknown').map(t => (
-                <button key={t} onClick={() => {
-                  const next = tierFilter.includes(t) ? tierFilter.filter(x => x !== t) : [...tierFilter, t]
-                  patch({ tiers: next.join(',') })
-                }}
-                  className={`capitalize rounded-full px-3 py-1 text-xs font-bold transition-colors ${
-                    tierFilter.includes(t) ? 'bg-[var(--lagoon)] text-white' : 'bg-[var(--chip-bg)] text-[var(--sea-ink)]'
-                  }`}>
-                  {t}
+          {/* ── Filter bar ──────────────────────────────────────── */}
+          <div className="ex-filter-bar">
+            {/* Search */}
+            <div className="ex-search-wrap">
+              <span className="ex-search-icon">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </span>
+              <input
+                className="ex-search-input"
+                placeholder="Search problems, concepts, topics…"
+                value={q}
+                onChange={e => patch({ q: e.target.value, page: 1 })}
+                aria-label="Search problems"
+              />
+              {q && <button className="ex-search-clear" onClick={() => patch({ q: '', page: 1 })}>✕</button>}
+            </div>
+
+            {/* Platform */}
+            <select
+              className="ex-filter-select"
+              value={platform}
+              onChange={e => patch({ platform: e.target.value, page: 1 })}
+              aria-label="Filter by platform"
+            >
+              <option value="all">All platforms</option>
+              {platforms.map(p => <option key={p} value={p}>{p}</option>)}
+            </select>
+
+            {/* Difficulty tier buttons */}
+            <div className="ex-tier-btns">
+              {(['easy', 'medium', 'hard'] as const).map(t => (
+                <button
+                  key={t}
+                  className={`ex-tier-btn ex-tier-${t}${tierFilter.includes(t) ? ' active' : ''}`}
+                  onClick={() => {
+                    const next = tierFilter.includes(t) ? tierFilter.filter(x => x !== t) : [...tierFilter, t]
+                    patch({ tiers: next.join(','), diff: 'tier', page: 1 })
+                  }}
+                >
+                  {t.charAt(0).toUpperCase() + t.slice(1)}
                 </button>
               ))}
             </div>
-          )}
 
-          {diffMode === 'range' && (
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="text-xs font-bold text-[var(--sea-ink-soft)]">Rating</span>
-              <input type="range" min={800} max={3500} step={100} value={rMin}
-                onChange={e => patch({ rmin: Math.min(+e.target.value, rMax - 100) })}
-                className="w-24 accent-[var(--lagoon)]"/>
-              <span className="w-10 text-xs font-bold text-[var(--sea-ink)]">{rMin}</span>
-              <span className="text-xs text-[var(--sea-ink-soft)]">–</span>
-              <input type="range" min={800} max={3500} step={100} value={rMax}
-                onChange={e => patch({ rmax: Math.max(+e.target.value, rMin + 100) })}
-                className="w-24 accent-[var(--lagoon)]"/>
-              <span className="w-10 text-xs font-bold text-[var(--sea-ink)]">{rMax}</span>
+            {/* Topic filter */}
+            <select
+              className="ex-filter-select"
+              value={topicFilter[0] ?? ''}
+              onChange={e => patch({ topics: e.target.value, page: 1 })}
+              aria-label="Filter by topic"
+            >
+              <option value="">All topics</option>
+              {topics.map(t => <option key={t.slug} value={t.slug}>{t.name}</option>)}
+            </select>
+
+            {/* Rating range */}
+            <div className="ex-rating-range">
+              <span className="ex-rating-label">Rating</span>
+              <span className="ex-rating-val">{rMin}</span>
+              <input type="range" className="ex-range-input" min={800} max={3500} step={100} value={rMin}
+                onChange={e => { const v = +e.target.value; if (v < rMax) patch({ rmin: v, diff: 'range', page: 1 }) }}
+                aria-label="Minimum rating"
+              />
+              <input type="range" className="ex-range-input" min={800} max={3500} step={100} value={rMax}
+                onChange={e => { const v = +e.target.value; if (v > rMin) patch({ rmax: v, diff: 'range', page: 1 }) }}
+                aria-label="Maximum rating"
+              />
+              <span className="ex-rating-val">{rMax}</span>
+            </div>
+          </div>
+
+          {/* ── Active pills ────────────────────────────────────── */}
+          {activePills.length > 0 && (
+            <div className="ex-pills">
+              <span className="ex-pills-label">Active filters:</span>
+              {activePills.map((p, i) => (
+                <span key={i} className="ex-pill">
+                  {p.label}
+                  <span className="ex-pill-x" onClick={p.clear} role="button" aria-label={`Remove ${p.label} filter`}>✕</span>
+                </span>
+              ))}
+              <button className="ex-clear-btn" onClick={clearAll}>Clear all</button>
             </div>
           )}
 
-          {hasFilters && (
-            <button onClick={clearAll}
-              className="ml-auto rounded-lg border border-[var(--chip-line)] px-3 py-2 text-xs font-semibold text-[var(--sea-ink-soft)] transition hover:border-red-300 hover:text-red-500">
-              Clear all ×
-            </button>
-          )}
-        </div>
+          {/* ── Toolbar ─────────────────────────────────────────── */}
+          <div className="ex-toolbar">
+            <span className="ex-result-count">
+              <strong>{filtered.length.toLocaleString()}</strong> problems
+              {loading && <span className="ex-loading-dot" />}
+            </span>
+            <span className="ex-page-info">
+              Page {page} of {totalPages}
+            </span>
+          </div>
 
-        {/* Topic chips with counts */}
-        <div className="flex max-h-24 flex-wrap gap-1.5 overflow-y-auto">
-          {topics.map(t => {
-            const cnt = topicCounts[t.slug]
-            const active = topicFilter.includes(t.slug)
-            return (
-              <button key={t.slug}
-                onClick={() => {
-                  const next = active ? topicFilter.filter(x => x !== t.slug) : [...topicFilter, t.slug]
-                  patch({ topics: next.join(',') })
-                }}
-                className={`inline-flex items-center gap-1 rounded-full border px-2.5 py-1 text-[11px] font-semibold transition-colors ${
-                  active
-                    ? 'border-[var(--lagoon)] bg-[var(--lagoon)] text-white'
-                    : 'border-[var(--chip-line)] bg-[var(--chip-bg)] text-[var(--sea-ink-soft)]'
-                }`}>
-                {t.name}
-                {cnt != null && (
-                  <span className={`rounded-full px-1 text-[10px] ${active ? 'bg-white/20' : 'bg-[var(--line)]'}`}>
-                    {cnt >= 1000 ? `${(cnt/1000).toFixed(1)}k` : cnt}
-                  </span>
+          {/* ── Table ───────────────────────────────────────────── */}
+          <div className="ex-table-wrap">
+            <div className="ex-scanline" />
+
+            {/* Header */}
+            <div className="ex-header">
+              <div className="ex-hdr-cell ex-hdr-num">#</div>
+              <SortHdr label="Problem" col="name" />
+              <SortHdr label="Platform" col="platform" />
+              <SortHdr label="Difficulty" col="difficulty" />
+              <div className="ex-hdr-cell">Rating</div>
+              <SortHdr label="Topic" col="topic" />
+            </div>
+
+            {/* Rows */}
+            <div className="ex-body">
+              {pageData.map((p, i) => (
+                <ProbRow key={p.id} p={p} idx={(page - 1) * PAGE_SIZE + i} />
+              ))}
+              {pageData.length === 0 && (
+                <div className="ex-empty">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity={0.3}><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                  <p>No problems match your filters.</p>
+                  <button className="ex-clear-link" onClick={clearAll}>Clear filters</button>
+                </div>
+              )}
+            </div>
+
+            {/* Pagination */}
+            <div className="ex-pagination">
+              <span className="ex-page-range">
+                {Math.min((page - 1) * PAGE_SIZE + 1, filtered.length)}–{Math.min(page * PAGE_SIZE, filtered.length)} of {filtered.length.toLocaleString()}
+              </span>
+              <div className="ex-page-btns">
+                <button className="ex-page-btn" disabled={page <= 1} onClick={() => patch({ page: page - 1 })}>←</button>
+                {pageNums.map((n, i) =>
+                  n === -1
+                    ? <span key={`e${i}`} className="ex-page-ellipsis">…</span>
+                    : <button key={n} className={`ex-page-btn${page === n ? ' ex-page-current' : ''}`} onClick={() => patch({ page: n })}>{n}</button>
                 )}
-              </button>
-            )
-          })}
-        </div>
-
-        <p className="text-xs text-[var(--sea-ink-soft)]">
-          <span className="font-semibold text-[var(--sea-ink)]">{filtered.length.toLocaleString()}</span> of {problems.length.toLocaleString()} problems
-          {filtered.length !== problems.length && hasFilters && ' · filtered'}
-        </p>
-      </section>
-
-      {/* ── Table ─────────────────────────────────────────────────────────── */}
-      <section className="rise-in overflow-hidden rounded-2xl border border-[var(--line)]" style={{ animationDelay: '130ms' }}>
-
-        {/* Sticky header */}
-        <div className="sticky top-0 z-10 grid border-b border-[var(--line)] bg-[var(--surface-strong)] text-[11px] font-bold uppercase tracking-wider text-[var(--sea-ink-soft)] backdrop-blur"
-          style={{ gridTemplateColumns: COLS }}>
-          <div className="px-3 py-3">#</div>
-          <button onClick={() => toggleSort('name')} className="px-3 py-3 text-left capitalize transition-colors hover:text-[var(--sea-ink)]">
-            Problem{sortIcon('name')}
-          </button>
-          {!isMobile && <>
-            <button onClick={() => toggleSort('topic')} className="px-3 py-3 text-left capitalize transition-colors hover:text-[var(--sea-ink)]">
-              Topic{sortIcon('topic')}
-            </button>
-            <button onClick={() => toggleSort('platform')} className="px-3 py-3 text-left capitalize transition-colors hover:text-[var(--sea-ink)]">
-              Platform{sortIcon('platform')}
-            </button>
-          </>}
-          <button onClick={() => toggleSort('difficulty')} className="px-3 py-3 text-left capitalize transition-colors hover:text-[var(--sea-ink)]">
-            Diff{sortIcon('difficulty')}
-          </button>
-          {!isMobile && <div className="px-3 py-3">Concept</div>}
-        </div>
-
-        {/* Virtual rows */}
-        <div ref={parentRef} className="overflow-auto" style={{ height: '62vh' }}>
-          {problems.length === 0 ? (
-            <div className="flex flex-col items-center justify-center py-20 text-center">
-              <div className="mb-3 h-6 w-6 animate-spin rounded-full border-2 border-[var(--lagoon)] border-t-transparent" />
-              <p className="text-sm text-[var(--sea-ink-soft)]">Loading problems…</p>
+                <button className="ex-page-btn" disabled={page >= totalPages} onClick={() => patch({ page: page + 1 })}>→</button>
+              </div>
             </div>
-          ) : filtered.length === 0 ? (
-            <div className="py-20 text-center">
-              <Search size={28} className="mx-auto mb-2 opacity-30" />
-              <p className="mt-2 text-sm font-medium text-[var(--sea-ink)]">No problems match</p>
-              <p className="mt-1 text-xs text-[var(--sea-ink-soft)]">Try a different search or clear filters</p>
-              <button onClick={clearAll} className="mt-3 rounded-lg bg-[var(--lagoon)] px-4 py-2 text-xs font-bold text-white">
-                Clear filters
-              </button>
-            </div>
-          ) : (
-            <div style={{ height: virt.totalH, position: 'relative' }}>
-              {virt.items.map(({ index, top }) => {
-                const p = filtered[index]
-                if (!p) return null
-                return (
-                  <div key={p.id}
-                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', transform: `translateY(${top}px)`, height: 44, display: 'grid', gridTemplateColumns: COLS, alignItems: 'center' }}
-                    className="border-b border-[var(--line)] text-sm hover:bg-[rgba(79,184,178,0.04)]">
-                    <div className="px-3 text-[11px] tabular-nums text-[var(--sea-ink-soft)]">{index + 1}</div>
-                    <div className="min-w-0 px-3">
-                      {p.url
-                        ? <a href={p.url} target="_blank" rel="noopener noreferrer"
-                            className="block truncate font-medium text-[var(--sea-ink)] no-underline hover:text-[var(--lagoon-deep)]">
-                            {p.name}
-                          </a>
-                        : <span className="block truncate font-medium text-[var(--sea-ink)]">{p.name}</span>
-                      }
-                    </div>
-                    {!isMobile && <div className="px-3">
-                      <span className="block truncate rounded-md bg-[var(--chip-bg)] px-2 py-0.5 text-[10px] font-medium text-[var(--sea-ink-soft)]">
-                        {p.topic}
-                      </span>
-                    </div>}
-                    {!isMobile && <div className="px-3">
-                      <span className="block truncate rounded-md bg-[var(--chip-bg)] px-2 py-0.5 text-[10px] font-medium text-[var(--sea-ink-soft)]">
-                        {p.platform}
-                      </span>
-                    </div>}
-                    <div className="px-3"><DiffBadge d={p.difficulty} /></div>
-                    {!isMobile && <div className="truncate px-3 text-[11px] text-[var(--sea-ink-soft)]">{p.keyConcept}</div>}
-                  </div>
-                )
-              })}
-            </div>
-          )}
+          </div>
+
         </div>
-      </section>
-    </main>
+      </main>
+    </>
   )
 }
