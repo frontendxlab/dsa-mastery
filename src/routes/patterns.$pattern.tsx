@@ -1,5 +1,7 @@
 import { createFileRoute, Link, notFound } from '@tanstack/react-router'
 import { useState, useEffect, useMemo, useCallback } from 'react'
+import { useCollection } from '#/components/CollectionProvider'
+import type { CollectionItem } from '#/lib/collections'
 import { getPattern, PATTERN_PARTS, getPatternVariations } from '#/data/patterns-inventory'
 import { articles, getArticle } from '#/data/articles'
 import { ShikiCodeBlock } from '#/components/ShikiCodeBlock'
@@ -680,18 +682,43 @@ function AllProblemsSimple({
   problems: RawProblem[]
   loading: boolean
 }) {
-  const [search, setSearch] = useState('')
-  const [openGroups, setOpenGroups] = useState<Set<string>>(new Set())
+  const { toggleSelect, isSelected } = useCollection()
+  const [search, setSearch]   = useState('')
+  const [platFilter, setPlat] = useState('all')
+  const [diffFilter, setDiff] = useState('all')
+  const [sort, setSort]       = useState<'name' | 'platform' | 'difficulty'>('name')
+  const [sortDir, setSortDir] = useState<'asc' | 'desc'>('asc')
+
+  const platforms = useMemo(() =>
+    ['all', ...new Set(problems.map(p => p.platform).filter(Boolean))].sort()
+  , [problems])
 
   const filtered = useMemo(() => {
-    if (!search.trim()) return problems
-    const q = search.toLowerCase()
-    return problems.filter(p =>
-      p.name.toLowerCase().includes(q) ||
-      p.keyConcept.toLowerCase().includes(q) ||
-      p.platform.toLowerCase().includes(q),
-    )
-  }, [problems, search])
+    let res = problems
+    if (search.trim()) {
+      const q = search.toLowerCase()
+      res = res.filter(p => p.name.toLowerCase().includes(q) || p.keyConcept.toLowerCase().includes(q) || p.platform.toLowerCase().includes(q))
+    }
+    if (platFilter !== 'all') res = res.filter(p => p.platform === platFilter)
+    if (diffFilter !== 'all') {
+      const d = diffFilter.toLowerCase()
+      res = res.filter(p => {
+        const l = p.difficulty.toLowerCase()
+        if (d === 'easy') return l === 'easy' || l === '1'
+        if (d === 'medium') return l === 'medium' || l === '2'
+        if (d === 'hard') return l === 'hard' || l === '3'
+        if (d === 'rating') return !isNaN(parseInt(p.difficulty)) && parseInt(p.difficulty) >= 800
+        return true
+      })
+    }
+    return [...res].sort((a, b) => {
+      let cmp = 0
+      if (sort === 'name') cmp = a.name.localeCompare(b.name)
+      else if (sort === 'platform') cmp = a.platform.localeCompare(b.platform)
+      else if (sort === 'difficulty') cmp = (a.difficulty || '').localeCompare(b.difficulty || '')
+      return sortDir === 'asc' ? cmp : -cmp
+    })
+  }, [problems, search, platFilter, diffFilter, sort, sortDir])
 
   const groups = useMemo(() => {
     const map = new Map<string, RawProblem[]>()
@@ -703,89 +730,137 @@ function AllProblemsSimple({
     return [...map.entries()].sort((a, b) => b[1].length - a[1].length)
   }, [filtered])
 
-  const toggleGroup = useCallback((key: string) => {
-    setOpenGroups(prev => {
-      const next = new Set(prev)
-      if (next.has(key)) next.delete(key)
-      else next.add(key)
-      return next
-    })
-  }, [])
+  const toggleSortDir = (col: typeof sort) => {
+    if (sort === col) setSortDir(d => d === 'asc' ? 'desc' : 'asc')
+    else { setSort(col); setSortDir('asc') }
+  }
+
+  const clearFilters = () => { setSearch(''); setPlat('all'); setDiff('all') }
+  const hasFilters = search || platFilter !== 'all' || diffFilter !== 'all'
 
   if (!loading && problems.length === 0) return null
 
   return (
     <div>
-      <div className="mb-6 flex flex-wrap items-end gap-4">
+      {/* ── Toolbar ─────────────────────────────────── */}
+      <div className="mb-5 flex flex-wrap items-center gap-3">
         <div>
           <h2 className="text-xl font-bold text-[var(--foreground)]">All {topicName} Problems</h2>
-          <p className="mt-1 text-sm text-[var(--sea-ink-soft)]">
-            {loading ? 'Loading…' : `${problems.length.toLocaleString()} problems · ${groups.length} concept groups`}
+          <p className="mt-0.5 text-xs text-[var(--muted)]">
+            {loading ? 'Loading…' : `${filtered.length.toLocaleString()} / ${problems.length.toLocaleString()} problems · ${groups.length} categories`}
           </p>
         </div>
+
         {!loading && (
-          <div className="relative ml-auto w-full sm:w-72">
-            <input
-              value={search}
-              onChange={e => setSearch(e.target.value)}
-              placeholder="Search problems…"
-              className="w-full rounded-xl border border-[var(--chip-line)] bg-[var(--chip-bg)] px-4 py-2 pl-9 text-sm text-[var(--sea-ink)] outline-none focus:border-[var(--lagoon)]"
-            />
-            <svg className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[var(--sea-ink-soft)]" width="13" height="13" viewBox="0 0 16 16" fill="none">
-              <circle cx="7" cy="7" r="5.5" stroke="currentColor" strokeWidth="1.5"/>
-              <path d="M11 11L14.5 14.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-            </svg>
+          <div className="ml-auto flex flex-wrap items-center gap-2">
+            {/* Search */}
+            <div className="relative">
+              <svg className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[var(--muted)]" width="13" height="13" viewBox="0 0 16 16" fill="none">
+                <circle cx="7" cy="7" r="5.5" stroke="currentColor" strokeWidth="1.5"/>
+                <path d="M11 11L14.5 14.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+              </svg>
+              <input
+                value={search}
+                onChange={e => setSearch(e.target.value)}
+                placeholder="Search…"
+                className="w-48 rounded-lg border border-[var(--border)] bg-[var(--surface)] px-3 py-1.5 pl-8 text-sm text-[var(--foreground)] outline-none focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent)]/20"
+              />
+            </div>
+            {/* Platform */}
+            <select
+              value={platFilter}
+              onChange={e => setPlat(e.target.value)}
+              aria-label="Filter by platform"
+              className="rounded-lg border border-[var(--border)] bg-[var(--surface)] px-2 py-1.5 text-xs text-[var(--muted)] outline-none focus:border-[var(--accent)]"
+            >
+              {platforms.map(p => <option key={p} value={p}>{p === 'all' ? 'All platforms' : p}</option>)}
+            </select>
+            {/* Difficulty */}
+            <select
+              value={diffFilter}
+              onChange={e => setDiff(e.target.value)}
+              aria-label="Filter by difficulty"
+              className="rounded-lg border border-[var(--border)] bg-[var(--surface)] px-2 py-1.5 text-xs text-[var(--muted)] outline-none focus:border-[var(--accent)]"
+            >
+              <option value="all">All difficulties</option>
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+              <option value="rating">Rating</option>
+            </select>
+            {/* Sort */}
+            <div className="flex items-center gap-1 text-xs text-[var(--muted)]">
+              <span>Sort:</span>
+              {(['name', 'platform', 'difficulty'] as const).map(col => (
+                <button key={col} onClick={() => toggleSortDir(col)}
+                  className={`rounded px-2 py-1 capitalize transition-colors ${sort === col ? 'bg-[var(--accent)] text-white' : 'hover:bg-[var(--default)]'}`}>
+                  {col}{sort === col ? (sortDir === 'asc' ? ' ↑' : ' ↓') : ''}
+                </button>
+              ))}
+            </div>
+            {hasFilters && (
+              <button onClick={clearFilters} className="rounded px-2 py-1 text-xs text-[var(--muted)] hover:text-red-400 transition-colors">
+                Clear ✕
+              </button>
+            )}
           </div>
         )}
       </div>
 
+      {/* ── Content ─────────────────────────────────── */}
       {loading ? (
-        <div className="flex items-center gap-2 py-8 text-sm text-[var(--sea-ink-soft)]">
-          <span className="h-4 w-4 animate-spin rounded-full border-2 border-[var(--lagoon)] border-t-transparent" />
+        <div className="flex items-center gap-2 py-8 text-sm text-[var(--muted)]">
+          <span className="h-4 w-4 animate-spin rounded-full border-2 border-[var(--accent)] border-t-transparent" />
           Loading problems…
         </div>
       ) : groups.length === 0 ? (
-        <p className="py-8 text-center text-sm text-[var(--sea-ink-soft)]">No problems match "{search}"</p>
+        <div className="py-8 text-center">
+          <p className="text-sm text-[var(--muted)]">No problems match your filters.</p>
+          <button onClick={clearFilters} className="mt-2 text-sm text-[var(--accent)] hover:underline">Clear filters</button>
+        </div>
       ) : (
-        <div className="space-y-2">
-          {groups.map(([concept, probs]) => {
-            const isOpen = openGroups.has(concept)
-            return (
-              <div key={concept} className="overflow-hidden rounded-xl border border-[var(--border)]">
-                <button
-                  onClick={() => toggleGroup(concept)}
-                  className="flex w-full items-center gap-3 bg-[var(--surface)] px-4 py-3 text-left transition-colors hover:bg-[var(--default)]"
-                >
-                  <span className="text-xs font-bold text-[var(--sea-ink-soft)]">{isOpen ? '▼' : '▶'}</span>
-                  <span className="flex-1 font-semibold text-[var(--foreground)]">{concept}</span>
-                  <span className="rounded-full bg-[var(--chip-bg)] px-2 py-0.5 text-[10px] font-bold text-[var(--sea-ink-soft)] border border-[var(--chip-line)]">
-                    {probs.length}
-                  </span>
-                </button>
-
-                {isOpen && (
-                  <div className="divide-y divide-[var(--line)] border-t border-[var(--border)] bg-[var(--chip-bg)]">
-                    {probs.map((p, i) => (
-                      <div key={i} className="flex items-center gap-3 px-4 py-2.5">
-                        <span className="w-5 shrink-0 text-center text-[10px] tabular-nums text-[var(--sea-ink-soft)]">{i + 1}</span>
-                        <div className="min-w-0 flex-1">
-                          {p.url
-                            ? <a href={p.url} target="_blank" rel="noopener noreferrer"
-                                className="block truncate text-sm font-medium text-[var(--sea-ink)] no-underline hover:text-[var(--lagoon-deep)]">
-                                {p.name}
-                              </a>
-                            : <span className="block truncate text-sm font-medium text-[var(--sea-ink)]">{p.name}</span>
-                          }
-                        </div>
-                        <span className="shrink-0 text-[10px] font-bold text-[var(--sea-ink-soft)] hidden sm:inline">{p.platform}</span>
-                        <span className={`shrink-0 text-[10px] font-bold ${diffColor(p.difficulty)}`}>{p.difficulty || '—'}</span>
-                      </div>
-                    ))}
-                  </div>
-                )}
+        <div className="rounded-xl border border-[var(--border)] overflow-hidden">
+          {groups.map(([concept, probs], gi) => (
+            <div key={concept}>
+              {/* Category header */}
+              <div className={`flex items-center gap-3 px-4 py-2.5 ${gi > 0 ? 'border-t border-[var(--border)]' : ''} bg-[var(--surface)]`}>
+                <span className="flex-1 text-xs font-bold uppercase tracking-wider text-[var(--foreground)]">{concept}</span>
+                <span className="rounded-full border border-[var(--border)] px-2 py-0.5 text-[10px] font-bold text-[var(--muted)]">{probs.length}</span>
               </div>
-            )
-          })}
+              {/* Problems */}
+              {probs.map((p, i) => {
+                const itemId = `${p.platform}::${p.name}`
+                const selected = isSelected(itemId)
+                const item: CollectionItem = {
+                  id: itemId, name: p.name, url: p.url, platform: p.platform,
+                  difficulty: p.difficulty, keyConcept: p.keyConcept,
+                  topic: topicName, addedAt: Date.now(),
+                }
+                return (
+                  <div key={i} className={`flex items-center gap-3 border-t border-[var(--border)] px-4 py-2.5 transition-colors ${selected ? 'bg-[var(--accent)]/8' : 'hover:bg-[var(--default)]'}`}>
+                    {/* Checkbox */}
+                    <button
+                      type="button"
+                      onClick={() => toggleSelect(item)}
+                      className={`h-4 w-4 shrink-0 rounded border transition-colors ${selected ? 'border-[var(--accent)] bg-[var(--accent)]' : 'border-[var(--border)] hover:border-[var(--accent)]'}`}
+                      aria-label={selected ? 'Deselect' : 'Select'}
+                    >
+                      {selected && <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="2,6 5,9 10,3"/></svg>}
+                    </button>
+                    <span className="w-6 shrink-0 text-center text-[10px] tabular-nums text-[var(--muted)]">{i + 1}</span>
+                    <div className="min-w-0 flex-1">
+                      {p.url
+                        ? <a href={p.url} target="_blank" rel="noopener noreferrer" className="block truncate text-sm font-medium text-[var(--foreground)] no-underline hover:text-[var(--accent)]">{p.name}</a>
+                        : <span className="block truncate text-sm font-medium text-[var(--foreground)]">{p.name}</span>
+                      }
+                    </div>
+                    <span className="hidden sm:inline shrink-0 text-[10px] text-[var(--muted)]">{p.platform}</span>
+                    <span className={`shrink-0 text-[10px] font-bold ${diffColor(p.difficulty)}`}>{p.difficulty || '—'}</span>
+                  </div>
+                )
+              })}
+            </div>
+          ))}
         </div>
       )}
     </div>
