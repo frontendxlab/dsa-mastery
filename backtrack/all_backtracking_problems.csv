@@ -150,7 +150,6 @@ UVa,Graph,Max Independent Set,https://onlinejudge.org/external/110/11065.pdf,Har
 UVa,Graph,Fire,https://onlinejudge.org/external/2/208.pdf,Hard,Dijkstra + backtracking
 UVa,Graph,Hamiltonian Path,https://onlinejudge.org/external/7/775.pdf,Easy,Hamiltonian backtracking
 UVa,Graph,Longest Path,https://onlinejudge.org/external/5/539.pdf,Medium,Longest path backtracking
-UVa,Graph,Max Independent Set,https://onlinejudge.org/external/1/193.pdf,Medium,NP-hard backtracking
 UVa,Classic,Roman Numerals,https://onlinejudge.org/external/1/185.pdf,N/A,Roman numeral backtracking
 UVa,Classic,All Walks of Length n,https://onlinejudge.org/external/6/677.pdf,N/A,Path enumeration
 SPOJ,Classic,MKJUMPS - Making Jumps,https://www.spoj.com/problems/MKJUMPS/,Level 1,Knight path cover
@@ -282,7 +281,6 @@ TopCoder,Search,TreeTraversals,https://archive.topcoder.com/ProblemStatement/pm/
 TopCoder,Search,BinaryTreeAutomaton,https://archive.topcoder.com/ProblemStatement,SRM 819 Div 2,Recursion on trees
 Toph,Backtracking,Alice in Candyland,https://toph.co/p/alice-in-candyland,Normal,Row/col selection backtracking
 Toph,Backtracking,Brain Fold (Easy),https://toph.co/p/brain-fold-easy,Easy,Puzzle backtracking
-Toph,Backtracking,Brain Fold (Hard),https://toph.co/p/brain-fold-hard,Hard,Puzzle backtracking
 Project Euler,Combinatorics,96 - Su Doku,https://projecteuler.net/problem=96,10%,Sudoku solver backtracking
 SPOJ,Classic,CLEANRBT - Cleaning Robot,https://www.spoj.com/problems/CLEANRBT/,Hard,TSP with BFS backtracking
 USACO,Search,Checker Challenge,http://train.usaco.org/usacoprob2?a=S3zlegK3l3k&S=checker,Normal,N-Queens variant
@@ -348,13 +346,10 @@ GeeksforGeeks,Backtracking,Introduction To Backtracking 2,https://www.geeksforge
 GeeksforGeeks,Backtracking,Difference Between Backtracking And Branch N Bound Technique,https://www.geeksforgeeks.org/dsa/difference-between-backtracking-and-branch-n-bound-technique/,N/A,GFG Problem
 GeeksforGeeks,Backtracking,Write A C Program To Print All Permutations Of A Given String,https://www.geeksforgeeks.org/dsa/write-a-c-program-to-print-all-permutations-of-a-given-string/,N/A,GFG Problem
 GeeksforGeeks,Backtracking,The Knights Tour,https://www.geeksforgeeks.org/dsa/the-knights-tour-problem/,N/A,GFG Problem
-GeeksforGeeks,Backtracking,Rat In A Maze,https://www.geeksforgeeks.org/dsa/rat-in-a-maze/,N/A,GFG Problem
 GeeksforGeeks,Backtracking,N Queen  Backtracking 3,https://www.geeksforgeeks.org/dsa/n-queen-problem-backtracking-3/,N/A,GFG Problem
-GeeksforGeeks,Backtracking,Subset Sum,https://www.geeksforgeeks.org/dsa/subset-sum-problem/,N/A,GFG Problem
 GeeksforGeeks,Backtracking,Sudoku Backtracking 7,https://www.geeksforgeeks.org/dsa/sudoku-backtracking-7/,N/A,GFG Problem
 GeeksforGeeks,Backtracking,Backtracking To Find All Subsets,https://www.geeksforgeeks.org/dsa/backtracking-to-find-all-subsets/,N/A,GFG Problem
 GeeksforGeeks,Backtracking,Find Distinct Subsets Given Set,https://www.geeksforgeeks.org/dsa/find-distinct-subsets-given-set/,N/A,GFG Problem
-GeeksforGeeks,Backtracking,Combinational Sum,https://www.geeksforgeeks.org/dsa/combinational-sum/,N/A,GFG Problem
 GeeksforGeeks,Backtracking,Warnsdorffs Algorithm Knights Tour,https://www.geeksforgeeks.org/dsa/warnsdorffs-algorithm-knights-tour-problem/,N/A,GFG Problem
 GeeksforGeeks,Backtracking,Rat In A Maze With Multiple Steps Jump Allowed,https://www.geeksforgeeks.org/dsa/rat-in-a-maze-with-multiple-steps-jump-allowed/,N/A,GFG Problem
 GeeksforGeeks,Backtracking,N Queen In On Space,https://www.geeksforgeeks.org/dsa/n-queen-in-on-space/,N/A,GFG Problem
@@ -447,12 +442,10 @@ Codeforces,Backtracking,Twin Permutations,https://codeforces.com/problemset/prob
 Codeforces,Backtracking,Permutation Swap,https://codeforces.com/problemset/problem/1828/B,900,Backtracking
 Codeforces,Backtracking,Copium Permutation,https://codeforces.com/problemset/problem/1827/F,3500,Backtracking
 Codeforces,Backtracking,Super-Permutation,https://codeforces.com/problemset/problem/1822/D,1200,Backtracking
-Codeforces,Backtracking,Make It Permutation,https://codeforces.com/problemset/problem/1810/C,1300,Backtracking
 Codeforces,Backtracking,Fixed Prefix Permutations,https://codeforces.com/problemset/problem/1792/D,1700,Backtracking
 Codeforces,Backtracking,The Forbidden Permutation,https://codeforces.com/problemset/problem/1778/B,1300,Backtracking
 Codeforces,Backtracking,Count Permutations,https://codeforces.com/problemset/problem/1776/N,3500,Backtracking
 Codeforces,Backtracking,Maximum Permutation,https://codeforces.com/problemset/problem/1774/H,3500,Backtracking
-Codeforces,Backtracking,Permutation Game,https://codeforces.com/problemset/problem/1772/E,1700,Backtracking
 Codeforces,Backtracking,Hossam and Combinatorics,https://codeforces.com/problemset/problem/1771/A,900,Backtracking
 Codeforces,Backtracking,Koxia and Permutation,https://codeforces.com/problemset/problem/1770/B,1000,Backtracking
 Codeforces,Backtracking,Lucky Permutation,https://codeforces.com/problemset/problem/1768/D,1800,Backtracking
@@ -460,7 +453,6 @@ Codeforces,Backtracking,Valid Bitonic Permutations,https://codeforces.com/proble
 Codeforces,Backtracking,Two Permutations,https://codeforces.com/problemset/problem/1761/A,800,Backtracking
 Codeforces,Backtracking,Restore the Permutation,https://codeforces.com/problemset/problem/1759/G,1900,Backtracking
 Codeforces,Backtracking,Lost Permutation,https://codeforces.com/problemset/problem/1759/B,800,Backtracking
-Codeforces,Backtracking,Kevin and Permutation,https://codeforces.com/problemset/problem/1754/B,800,Backtracking
 Codeforces,Backtracking,Permutation Operations,https://codeforces.com/problemset/problem/1746/C,1300,Backtracking
 Codeforces,Backtracking,Permutation Value,https://codeforces.com/problemset/problem/1743/B,800,Backtracking
 Codeforces,Backtracking,Funny Permutation,https://codeforces.com/problemset/problem/1741/B,800,Backtracking
@@ -482,7 +474,6 @@ Codeforces,Backtracking,Permutation Weight (Hard Version),https://codeforces.com
 Codeforces,Backtracking,Permutation Weight (Easy Version),https://codeforces.com/problemset/problem/1685/D1,2800,Backtracking
 Codeforces,Backtracking,Tokitsukaze and Permutations,https://codeforces.com/problemset/problem/1677/D,2500,Backtracking
 Codeforces,Backtracking,PermutationForces,https://codeforces.com/problemset/problem/1672/I,3000,Backtracking
-Codeforces,Backtracking,Permutation Counting,https://codeforces.com/problemset/problem/1671/F,2700,Backtracking
 Codeforces,Backtracking,Tree and Permutation Game,https://codeforces.com/problemset/problem/1659/F,3000,Backtracking
 Codeforces,Backtracking,Shinju and the Lost Permutation,https://codeforces.com/problemset/problem/1658/C,1700,Backtracking
 Codeforces,Backtracking,Marin and Anti-coprime Permutation,https://codeforces.com/problemset/problem/1658/B,800,Backtracking
@@ -516,7 +507,6 @@ Codeforces,Backtracking,Subset Trick,https://codeforces.com/problemset/problem/1
 Codeforces,Backtracking,Permutation Transformation,https://codeforces.com/problemset/problem/1490/D,1200,Backtracking
 Codeforces,Backtracking,Nezzar and Hidden Permutations,https://codeforces.com/problemset/problem/1477/D,2800,Backtracking
 Codeforces,Backtracking,Strange Permutation,https://codeforces.com/problemset/problem/1470/E,3200,Backtracking
-Codeforces,Backtracking,Special Permutation,https://codeforces.com/problemset/problem/1454/A,800,Backtracking
 Codeforces,Backtracking,Long Permutation,https://codeforces.com/problemset/problem/1443/E,2400,Backtracking
 Codeforces,Backtracking,Graph Subset Problem,https://codeforces.com/problemset/problem/1439/B,2600,Backtracking
 Codeforces,Backtracking,Sum Over Subsets,https://codeforces.com/problemset/problem/1436/F,2800,Backtracking
@@ -525,7 +515,6 @@ Codeforces,Backtracking,Permutation Forgery,https://codeforces.com/problemset/pr
 Codeforces,Backtracking,Yet Another Segments Subset,https://codeforces.com/problemset/problem/1399/F,2300,Backtracking
 Codeforces,Backtracking,Cyclic Permutations ,https://codeforces.com/problemset/problem/1391/C,1500,Backtracking
 Codeforces,Backtracking,Restore the Permutation by Merger,https://codeforces.com/problemset/problem/1385/B,800,Backtracking
-Codeforces,Backtracking,Special Permutation,https://codeforces.com/problemset/problem/1352/G,1600,Backtracking
 Codeforces,Backtracking,Restore the Permutation by Sorted Segments,https://codeforces.com/problemset/problem/1343/F,2400,Backtracking
 Codeforces,Backtracking,Dreamoon Likes Permutations,https://codeforces.com/problemset/problem/1330/B,1400,Backtracking
 Codeforces,Backtracking,Permutation Partitions,https://codeforces.com/problemset/problem/1326/C,1300,Backtracking
@@ -555,7 +544,6 @@ Codeforces,Backtracking,(Zero XOR Subset)-less,https://codeforces.com/problemset
 Codeforces,Backtracking,Intersection of Permutations,https://codeforces.com/problemset/problem/1093/E,2400,Backtracking
 Codeforces,Backtracking,New Year and the Permutation Concatenation,https://codeforces.com/problemset/problem/1091/D,1700,Backtracking
 Codeforces,Backtracking,Interval-Free Permutations,https://codeforces.com/problemset/problem/1089/I,2600,Backtracking
-Codeforces,Backtracking,Permutation Game,https://codeforces.com/problemset/problem/1033/C,1600,Backtracking
 Codeforces,Backtracking,Median on Segments (Permutations Edition),https://codeforces.com/problemset/problem/1005/E1,1800,Backtracking
 Codeforces,Backtracking,Petr and Permutations,https://codeforces.com/problemset/problem/986/B,1800,Backtracking
 Codeforces,Backtracking,Permutation Cycle,https://codeforces.com/problemset/problem/932/C,1600,Backtracking
@@ -566,7 +554,6 @@ Codeforces,Backtracking,Almost Identity Permutations,https://codeforces.com/prob
 Codeforces,Backtracking,Make a Permutation!,https://codeforces.com/problemset/problem/864/D,1500,Backtracking
 Codeforces,Backtracking,Almost Permutation,https://codeforces.com/problemset/problem/863/F,2200,Backtracking
 Codeforces,Backtracking,Round Subset,https://codeforces.com/problemset/problem/837/D,2100,Backtracking
-Codeforces,Backtracking,Permutation Game,https://codeforces.com/problemset/problem/818/B,1600,Backtracking
 Codeforces,Backtracking,The same permutation ,https://codeforces.com/problemset/problem/804/E,3100,Backtracking
 Codeforces,Backtracking,Mike and code of a permutation,https://codeforces.com/problemset/problem/798/E,3000,Backtracking
 Codeforces,Backtracking,Anton and Permutation,https://codeforces.com/problemset/problem/785/E,2200,Backtracking
@@ -578,53 +565,30 @@ Codeforces,Backtracking,Nicholas and Permutation,https://codeforces.com/problems
 Codeforces,Backtracking,Simple Subset,https://codeforces.com/problemset/problem/665/D,1800,Backtracking
 Codeforces,Backtracking,Different Subsets For All Tuples,https://codeforces.com/problemset/problem/660/E,2300,Backtracking
 Codeforces,Backtracking,Optimal Number Permutation,https://codeforces.com/problemset/problem/622/D,1900,Backtracking
-Codeforces,Backtracking,Guess the Permutation,https://codeforces.com/problemset/problem/618/B,1100,Backtracking
 Codeforces,Backtracking,Square Root of Permutation,https://codeforces.com/problemset/problem/612/E,2200,Backtracking
 Codeforces,Backtracking,Alphabet Permutations,https://codeforces.com/problemset/problem/610/E,2500,Backtracking
 Codeforces,Backtracking,Kyoya and Permutation,https://codeforces.com/problemset/problem/553/B,1900,Backtracking
-Codeforces,Backtracking,Permutations,https://codeforces.com/problemset/problem/513/B2,1800,Backtracking
-Codeforces,Backtracking,Permutations,https://codeforces.com/problemset/problem/513/B1,1400,Backtracking
 Codeforces,Backtracking,Misha and Permutations Summation,https://codeforces.com/problemset/problem/501/D,2000,Backtracking
 Codeforces,Backtracking,New Year Permutation,https://codeforces.com/problemset/problem/500/B,1600,Backtracking
 Codeforces,Backtracking,Diverse Permutation,https://codeforces.com/problemset/problem/482/A,1200,Backtracking
-Codeforces,Backtracking,Permutation,https://codeforces.com/problemset/problem/452/F,2700,Backtracking
 Codeforces,Backtracking,Sorting Permutations,https://codeforces.com/problemset/problem/398/E,N/A,Backtracking
 Codeforces,Backtracking,On Sum of Number of Inversions in Permutations,https://codeforces.com/problemset/problem/396/D,N/A,Backtracking
 Codeforces,Backtracking,Ksenia and Combinatorics,https://codeforces.com/problemset/problem/382/E,2600,Backtracking
 Codeforces,Backtracking,Levko and Permutation,https://codeforces.com/problemset/problem/361/B,1200,Backtracking
-Codeforces,Backtracking,Permutation,https://codeforces.com/problemset/problem/359/B,1400,Backtracking
 Codeforces,Backtracking,Jeff and Permutation,https://codeforces.com/problemset/problem/351/E,2200,Backtracking
 Codeforces,Backtracking,Subset Sums,https://codeforces.com/problemset/problem/348/C,2500,Backtracking
 Codeforces,Backtracking,Iahub and Permutations,https://codeforces.com/problemset/problem/340/E,2000,Backtracking
-Codeforces,Backtracking,Two permutations,https://codeforces.com/problemset/problem/323/C,2400,Backtracking
 Codeforces,Backtracking,Lucky Permutation Triple,https://codeforces.com/problemset/problem/303/A,1300,Backtracking
 Codeforces,Backtracking,Yaroslav and Permutations,https://codeforces.com/problemset/problem/296/A,1100,Backtracking
-Codeforces,Backtracking,Lucky Permutation,https://codeforces.com/problemset/problem/286/A,1400,Backtracking
 Codeforces,Backtracking,Positions in Permutations,https://codeforces.com/problemset/problem/285/E,2600,Backtracking
 Codeforces,Backtracking,Building Permutation,https://codeforces.com/problemset/problem/285/C,1200,Backtracking
 Codeforces,Backtracking,Slightly Decreasing Permutations,https://codeforces.com/problemset/problem/285/A,1100,Backtracking
 Codeforces,Backtracking,Playing with Permutations,https://codeforces.com/problemset/problem/251/B,1800,Backtracking
-Codeforces,Backtracking,Perfect Permutation,https://codeforces.com/problemset/problem/233/A,800,Backtracking
-Codeforces,Backtracking,Two Permutations,https://codeforces.com/problemset/problem/213/E,2700,Backtracking
-Codeforces,Backtracking,Permutations,https://codeforces.com/problemset/problem/187/A,1500,Backtracking
 Codeforces,Backtracking,Digits Permutations,https://codeforces.com/problemset/problem/138/B,1900,Backtracking
-Codeforces,Backtracking,Permutation,https://codeforces.com/problemset/problem/137/B,1000,Backtracking
-Codeforces,Backtracking,Permutations,https://codeforces.com/problemset/problem/124/B,1400,Backtracking
 Codeforces,Backtracking,Prime Permutation,https://codeforces.com/problemset/problem/123/A,1300,Backtracking
-Codeforces,Backtracking,Lucky Permutation,https://codeforces.com/problemset/problem/121/C,1900,Backtracking
 Codeforces,Backtracking,Restoration of the Permutation,https://codeforces.com/problemset/problem/67/B,1800,Backtracking
 Codeforces,Backtracking,Spoilt Permutation,https://codeforces.com/problemset/problem/56/B,1300,Backtracking
-Codeforces,Backtracking,Permutations,https://codeforces.com/problemset/problem/48/D,1500,Backtracking
 HackerRank,Backtracking,Problem?Isfullscreen=True,https://www.hackerrank.com/challenges/the-power-sum/problem?isFullScreen=true,N/A,HackerRank Problem
-HackerRank,Backtracking,Problem?Isfullscreen=True,https://www.hackerrank.com/challenges/crossword-puzzle/problem?isFullScreen=true,N/A,HackerRank Problem
-HackerRank,Backtracking,Problem?Isfullscreen=True,https://www.hackerrank.com/challenges/recursive-digit-sum/problem?isFullScreen=true,N/A,HackerRank Problem
-HackerRank,Backtracking,Problem?Isfullscreen=True,https://www.hackerrank.com/challenges/simplified-chess-engine/problem?isFullScreen=true,N/A,HackerRank Problem
-HackerRank,Backtracking,Problem?Isfullscreen=True,https://www.hackerrank.com/challenges/password-cracker/problem?isFullScreen=true,N/A,HackerRank Problem
-HackerRank,Backtracking,Problem?Isfullscreen=True,https://www.hackerrank.com/challenges/arithmetic-expressions/problem?isFullScreen=true,N/A,HackerRank Problem
-HackerRank,Backtracking,Problem?Isfullscreen=True,https://www.hackerrank.com/challenges/stone-division-2/problem?isFullScreen=true,N/A,HackerRank Problem
-HackerRank,Backtracking,Problem?Isfullscreen=True,https://www.hackerrank.com/challenges/k-factorization/problem?isFullScreen=true,N/A,HackerRank Problem
-HackerRank,Backtracking,Problem?Isfullscreen=True,https://www.hackerrank.com/challenges/bowling-pins/problem?isFullScreen=true,N/A,HackerRank Problem
-HackerRank,Backtracking,Problem?Isfullscreen=True,https://www.hackerrank.com/challenges/simplified-chess-engine-ii/problem?isFullScreen=true,N/A,HackerRank Problem
 LeetCode,Backtracking,757. Pyramid Transition Matrix,https://leetcode.com/problems/pyramid-transition-matrix/,Medium,LeetCode Problem
 LeetCode,Backtracking,2754. Maximum Strength of a Group,https://leetcode.com/problems/maximum-strength-of-a-group/,Medium,LeetCode Problem
 LeetCode,Backtracking,2802. Find the Punishment Number of an Integer,https://leetcode.com/problems/find-the-punishment-number-of-an-integer/,Medium,LeetCode Problem
@@ -641,48 +605,14 @@ USACO,Backtracking,Angry Cows,http://www.usaco.org/index.php?page=viewproblem2&c
 AOJ,Backtracking,Exhaustive Search,https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_5_A,Easy,Recursion / Backtrack
 POJ,Backtracking,Chessboard Problem,http://poj.org/problem?id=1321,Easy,Backtrack / N-Queens
 Baekjoon,Backtracking,감소하는 수,https://www.acmicpc.net/problem/1038,Hard,Backtracking
-Baekjoon,Backtracking,가르침,https://www.acmicpc.net/problem/1062,Hard,Backtracking
-Baekjoon,Backtracking,줄어드는 수,https://www.acmicpc.net/problem/1174,Hard,Backtracking
-Baekjoon,Backtracking,부분수열의 합,https://www.acmicpc.net/problem/1182,Medium,Backtracking
-Baekjoon,Backtracking,컴백홈,https://www.acmicpc.net/problem/1189,Medium,Backtracking
 Baekjoon,Backtracking,Guess,https://www.acmicpc.net/problem/1248,Hard,Backtracking
-Baekjoon,Backtracking,행운의 문자열,https://www.acmicpc.net/problem/1342,Medium,Backtracking
-Baekjoon,Backtracking,미친 로봇,https://www.acmicpc.net/problem/1405,Hard,Backtracking
-Baekjoon,Backtracking,숌 사이 수열,https://www.acmicpc.net/problem/1469,Hard,Backtracking
-Baekjoon,Backtracking,기타콘서트,https://www.acmicpc.net/problem/1497,Medium,Backtracking
-Baekjoon,Backtracking,도미노 찾기,https://www.acmicpc.net/problem/1553,Hard,Backtracking
-Baekjoon,Backtracking,이차원 배열의 합,https://www.acmicpc.net/problem/1729,Hard,Backtracking
-Baekjoon,Backtracking,암호 만들기,https://www.acmicpc.net/problem/1759,Hard,Backtracking
-Baekjoon,Backtracking,비숍,https://www.acmicpc.net/problem/1799,Hard,Backtracking
-Baekjoon,Backtracking,소문난 칠공주,https://www.acmicpc.net/problem/1941,Hard,Backtracking
-Baekjoon,Backtracking,알파벳,https://www.acmicpc.net/problem/1987,Hard,Backtracking
-Baekjoon,Backtracking,신기한 소수,https://www.acmicpc.net/problem/2023,Hard,Backtracking
-Baekjoon,Backtracking,소풍,https://www.acmicpc.net/problem/2026,Hard,Backtracking
-Baekjoon,Backtracking,스도쿠,https://www.acmicpc.net/problem/2239,Hard,Backtracking
-Baekjoon,Backtracking,부등호,https://www.acmicpc.net/problem/2529,Medium,Backtracking
-Baekjoon,Backtracking,스도쿠,https://www.acmicpc.net/problem/2580,Hard,Backtracking
-Baekjoon,Backtracking,좋은수열,https://www.acmicpc.net/problem/2661,Hard,Backtracking
-Baekjoon,Backtracking,즐거운 단어,https://www.acmicpc.net/problem/2922,Hard,Backtracking
 Baekjoon,Backtracking,5,https://www.acmicpc.net/problem/3165,Hard,Backtracking
-Baekjoon,Backtracking,선발 명단,https://www.acmicpc.net/problem/3980,Hard,Backtracking
-Baekjoon,Backtracking,애너그램,https://www.acmicpc.net/problem/6443,Hard,Backtracking
-Baekjoon,Backtracking,로또,https://www.acmicpc.net/problem/6603,Medium,Backtracking
-Baekjoon,Backtracking,월드컵,https://www.acmicpc.net/problem/6987,Hard,Backtracking
 Baekjoon,Backtracking,0 만들기,https://www.acmicpc.net/problem/7490,Hard,Backtracking
-Baekjoon,Backtracking,틱택토,https://www.acmicpc.net/problem/7682,Hard,Backtracking
 Baekjoon,Backtracking,N-Queen,https://www.acmicpc.net/problem/9663,Hard,Backtracking
 Baekjoon,Backtracking,NxM 보드 완주하기,https://www.acmicpc.net/problem/9944,Hard,Backtracking
-Baekjoon,Backtracking,수식 완성하기,https://www.acmicpc.net/problem/10421,Hard,Backtracking
-Baekjoon,Backtracking,순열장난,https://www.acmicpc.net/problem/10597,Hard,Backtracking
-Baekjoon,Backtracking,차이를 최대로,https://www.acmicpc.net/problem/10819,Medium,Backtracking
 Baekjoon,Backtracking,외판원 순회 2,https://www.acmicpc.net/problem/10971,Medium,Backtracking
-Baekjoon,Backtracking,모든 순열,https://www.acmicpc.net/problem/10974,Medium,Backtracking
 Baekjoon,Backtracking,"1, 2, 3 더하기 2",https://www.acmicpc.net/problem/12101,Medium,Backtracking
 Baekjoon,Backtracking,텔레포트 3,https://www.acmicpc.net/problem/12908,Hard,Backtracking
-Baekjoon,Backtracking,비밀번호,https://www.acmicpc.net/problem/13908,Medium,Backtracking
-Baekjoon,Backtracking,넴모넴모 (Easy),https://www.acmicpc.net/problem/14712,Hard,Backtracking
-Baekjoon,Backtracking,연산자 끼워넣기,https://www.acmicpc.net/problem/14888,Medium,Backtracking
-Baekjoon,Backtracking,스타트와 링크,https://www.acmicpc.net/problem/14889,Medium,Backtracking
 Baekjoon,Backtracking,개구리 1,https://www.acmicpc.net/problem/15566,Medium,Backtracking
 Baekjoon,Backtracking,N과 M (1),https://www.acmicpc.net/problem/15649,Medium,Backtracking
 Baekjoon,Backtracking,N과 M (2),https://www.acmicpc.net/problem/15650,Medium,Backtracking
@@ -692,42 +622,12 @@ Baekjoon,Backtracking,N과 M (5),https://www.acmicpc.net/problem/15654,Medium,Ba
 Baekjoon,Backtracking,N과 M (6),https://www.acmicpc.net/problem/15655,Medium,Backtracking
 Baekjoon,Backtracking,N과 M (7),https://www.acmicpc.net/problem/15656,Medium,Backtracking
 Baekjoon,Backtracking,N과 M (8),https://www.acmicpc.net/problem/15657,Medium,Backtracking
-Baekjoon,Backtracking,연산자 끼워넣기 (2),https://www.acmicpc.net/problem/15658,Medium,Backtracking
-Baekjoon,Backtracking,연산자 끼워넣기 (3),https://www.acmicpc.net/problem/15659,Hard,Backtracking
 Baekjoon,Backtracking,N과 M (9),https://www.acmicpc.net/problem/15663,Medium,Backtracking
 Baekjoon,Backtracking,N과 M (10),https://www.acmicpc.net/problem/15664,Medium,Backtracking
 Baekjoon,Backtracking,N과 M (11),https://www.acmicpc.net/problem/15665,Medium,Backtracking
 Baekjoon,Backtracking,N과 M (12),https://www.acmicpc.net/problem/15666,Medium,Backtracking
-Baekjoon,Backtracking,사다리 조작,https://www.acmicpc.net/problem/15684,Hard,Backtracking
-Baekjoon,Backtracking,랭퍼든 수열쟁이야!!,https://www.acmicpc.net/problem/15918,Hard,Backtracking
-Baekjoon,Backtracking,에너지 모으기,https://www.acmicpc.net/problem/16198,Medium,Backtracking
-Baekjoon,Backtracking,알파 틱택토,https://www.acmicpc.net/problem/16571,Hard,Backtracking
-Baekjoon,Backtracking,로마 숫자 만들기,https://www.acmicpc.net/problem/16922,Medium,Backtracking
-Baekjoon,Backtracking,캠프 준비,https://www.acmicpc.net/problem/16938,Hard,Backtracking
-Baekjoon,Backtracking,계란으로 계란치기,https://www.acmicpc.net/problem/16987,Hard,Backtracking
-Baekjoon,Backtracking,색종이 붙이기,https://www.acmicpc.net/problem/17136,Hard,Backtracking
 Baekjoon,Backtracking,NM과 K (1),https://www.acmicpc.net/problem/18290,Medium,Backtracking
-Baekjoon,Backtracking,근손실,https://www.acmicpc.net/problem/18429,Medium,Backtracking
-Baekjoon,Backtracking,무기 공학,https://www.acmicpc.net/problem/18430,Hard,Backtracking
-Baekjoon,Backtracking,소-난다!,https://www.acmicpc.net/problem/19699,Medium,Backtracking
-Baekjoon,Backtracking,다이어트,https://www.acmicpc.net/problem/19942,Hard,Backtracking
-Baekjoon,Backtracking,영재의 시험,https://www.acmicpc.net/problem/19949,Medium,Backtracking
-Baekjoon,Backtracking,진우의 민트초코우유,https://www.acmicpc.net/problem/20208,Hard,Backtracking
-Baekjoon,Backtracking,미술가 미미,https://www.acmicpc.net/problem/20950,Medium,Backtracking
-Baekjoon,Backtracking,죽음의 비,https://www.acmicpc.net/problem/22944,Hard,Backtracking
-Baekjoon,Backtracking,카드 놓기,https://www.acmicpc.net/problem/5568,Medium,Backtracking
-Baekjoon,Backtracking,친구 팰린드롬,https://www.acmicpc.net/problem/15270,Medium,Backtracking
-Baekjoon,Backtracking,꽃길,https://www.acmicpc.net/problem/14620,Medium,Backtracking
-Baekjoon,Backtracking,도영이가 만든 맛있는 음식,https://www.acmicpc.net/problem/2961,Medium,Backtracking
-Baekjoon,Backtracking,링크와 스타트,https://www.acmicpc.net/problem/15661,Hard,Backtracking
-Baekjoon,Backtracking,숫자 재배치,https://www.acmicpc.net/problem/16943,Medium,Backtracking
-Baekjoon,Backtracking,치킨 배달,https://www.acmicpc.net/problem/15686,Hard,Backtracking
-Baekjoon,Backtracking,인싸들의 가위바위보,https://www.acmicpc.net/problem/16986,Hard,Backtracking
-Baekjoon,Backtracking,연산 최대로,https://www.acmicpc.net/problem/21943,Hard,Backtracking
 Baekjoon,Backtracking,N으로 만들기,https://www.acmicpc.net/problem/17255,Hard,Backtracking
 Baekjoon,Backtracking,ABCDE,https://www.acmicpc.net/problem/13023,Hard,Backtracking
 Baekjoon,Backtracking,배열 돌리기 4,https://www.acmicpc.net/problem/17406,Hard,Backtracking
-Baekjoon,Backtracking,골목 대장 호석 - 기능성,https://www.acmicpc.net/problem/20168,Hard,Backtracking
-Baekjoon,Backtracking,감시,https://www.acmicpc.net/problem/15683,Hard,Backtracking
-Baekjoon,Backtracking,청소년 상어,https://www.acmicpc.net/problem/19236,Hard,Backtracking
 Baekjoon,Backtracking,Boggle,https://www.acmicpc.net/problem/9202,Hard,Backtracking
