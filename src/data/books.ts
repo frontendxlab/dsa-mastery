@@ -1,0 +1,510 @@
+export interface BookProblem {
+  id: string
+  title: string
+  page?: number
+  difficulty?: 'Easy' | 'Medium' | 'Hard' | 'Classic' | 'Puzzle'
+  hint?: string
+  tags?: string[]
+  lcNum?: number  // LeetCode problem number if known
+}
+
+export interface BookChapter {
+  num: string
+  title: string
+  page?: number
+  summary?: string
+  problems: BookProblem[]
+}
+
+export interface Book {
+  slug: string
+  title: string
+  shortTitle: string
+  author: string
+  edition?: string
+  year?: number
+  color: string
+  accentColor: string
+  description: string
+  amazonUrl?: string
+  pdfUrl?: string
+  totalProblems: number
+  tags: string[]
+  chapters: BookChapter[]
+}
+
+// ─── CTCI ──────────────────────────────────────────────────────────────────────
+const ctci: Book = {
+  slug: 'ctci',
+  title: 'Cracking the Coding Interview',
+  shortTitle: 'CTCI',
+  author: 'Gayle Laakmann McDowell',
+  edition: '6th',
+  year: 2015,
+  color: '#1e40af',
+  accentColor: '#3b82f6',
+  description: '189 programming questions and solutions spanning arrays, trees, recursion, system design, and more. The definitive interview prep book.',
+  amazonUrl: 'https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850',
+  totalProblems: 189,
+  tags: ['Interviews', 'Arrays', 'Trees', 'DP', 'System Design'],
+  chapters: [
+    {
+      num: '1', title: 'Arrays and Strings', page: 88,
+      summary: 'Hash tables, ArrayList, StringBuilder, string manipulation',
+      problems: [
+        { id: '1.1', title: 'Is Unique', page: 90, difficulty: 'Easy', hint: 'Try a hash set. Can you solve it without extra data structures?', tags: ['Hash', 'Arrays'] },
+        { id: '1.2', title: 'Check Permutation', page: 90, difficulty: 'Easy', hint: 'Sort both strings. Or compare character counts.', tags: ['Hash', 'Sorting'] },
+        { id: '1.3', title: 'URLify', page: 90, difficulty: 'Easy', hint: 'Use character array. Count spaces first, then work backwards.', tags: ['Strings'] },
+        { id: '1.4', title: 'Palindrome Permutation', page: 91, difficulty: 'Easy', hint: 'At most one character can have odd count.', tags: ['Hash', 'Strings'] },
+        { id: '1.5', title: 'One Away', page: 91, difficulty: 'Medium', hint: 'Three possible edits. Check which is applicable.', tags: ['Strings'] },
+        { id: '1.6', title: 'String Compression', page: 91, difficulty: 'Easy', hint: 'Beware return original if compressed is longer.', tags: ['Strings'] },
+        { id: '1.7', title: 'Rotate Matrix', page: 91, difficulty: 'Medium', hint: 'Rotate layer by layer from outside in.', tags: ['Arrays', 'Matrix'], lcNum: 48 },
+        { id: '1.8', title: 'Zero Matrix', page: 91, difficulty: 'Easy', hint: 'First pass: record zero positions. Second pass: zero rows/cols.', tags: ['Arrays', 'Matrix'], lcNum: 73 },
+        { id: '1.9', title: 'String Rotation', page: 91, difficulty: 'Easy', hint: 'Check if s2 is substring of s1+s1.', tags: ['Strings'] },
+      ],
+    },
+    {
+      num: '2', title: 'Linked Lists', page: 94,
+      summary: 'Linked list operations, two-pointer technique, runner technique',
+      problems: [
+        { id: '2.1', title: 'Remove Dups', page: 94, difficulty: 'Easy', tags: ['LinkedList', 'Hash'] },
+        { id: '2.2', title: 'Return Kth to Last', page: 94, difficulty: 'Easy', hint: 'Two pointers k nodes apart.', tags: ['LinkedList', 'TwoPointers'] },
+        { id: '2.3', title: 'Delete Middle Node', page: 94, difficulty: 'Easy', hint: 'Copy next node data, delete next.', tags: ['LinkedList'] },
+        { id: '2.4', title: 'Partition', page: 94, difficulty: 'Medium', tags: ['LinkedList'] },
+        { id: '2.5', title: 'Sum Lists', page: 95, difficulty: 'Medium', hint: 'Two variants: forward and reverse order.', tags: ['LinkedList', 'Math'] },
+        { id: '2.6', title: 'Palindrome', page: 95, difficulty: 'Medium', hint: 'Push first half to stack, compare second half.', tags: ['LinkedList', 'Stack'] },
+        { id: '2.7', title: 'Intersection', page: 95, difficulty: 'Medium', hint: 'Compare tail nodes. Use length difference.', tags: ['LinkedList'] },
+        { id: '2.8', title: 'Loop Detection', page: 95, difficulty: 'Hard', hint: 'Floyd\'s cycle detection algorithm.', tags: ['LinkedList', 'TwoPointers'] },
+      ],
+    },
+    {
+      num: '3', title: 'Stacks and Queues', page: 98,
+      summary: 'Stack/queue implementation, monotonic stack, queue via stacks',
+      problems: [
+        { id: '3.1', title: 'Three in One', page: 98, difficulty: 'Medium', hint: 'Divide array into 3 equal parts or use flexible division.', tags: ['Stack', 'Arrays'] },
+        { id: '3.2', title: 'Stack Min', page: 98, difficulty: 'Easy', hint: 'Each stack node stores current min.', tags: ['Stack'], lcNum: 155 },
+        { id: '3.3', title: 'Stack of Plates', page: 99, difficulty: 'Medium', hint: 'popAt(index) may leave partial stacks.', tags: ['Stack'] },
+        { id: '3.4', title: 'Queue via Stacks', page: 99, difficulty: 'Easy', hint: 'Two stacks. Lazy transfer.', tags: ['Stack', 'Queue'], lcNum: 232 },
+        { id: '3.5', title: 'Sort Stack', page: 99, difficulty: 'Medium', hint: 'Use a second stack as buffer.', tags: ['Stack', 'Sorting'] },
+        { id: '3.6', title: 'Animal Shelter', page: 99, difficulty: 'Easy', hint: 'Two queues: cats and dogs. Order by timestamp.', tags: ['Queue'] },
+      ],
+    },
+    {
+      num: '4', title: 'Trees and Graphs', page: 100,
+      summary: 'BFS, DFS, balanced trees, BST properties, graph traversal',
+      problems: [
+        { id: '4.1', title: 'Route Between Nodes', page: 100, difficulty: 'Easy', hint: 'BFS or DFS from either node.', tags: ['Graph', 'BFS', 'DFS'] },
+        { id: '4.2', title: 'Minimal Tree', page: 100, difficulty: 'Easy', hint: 'Middle of sorted array becomes root.', tags: ['Tree', 'BST'], lcNum: 108 },
+        { id: '4.3', title: 'List of Depths', page: 100, difficulty: 'Easy', hint: 'BFS level by level.', tags: ['Tree', 'BFS'] },
+        { id: '4.4', title: 'Check Balanced', page: 100, difficulty: 'Easy', hint: 'Return -1 for unbalanced in recursive call.', tags: ['Tree'], lcNum: 110 },
+        { id: '4.5', title: 'Validate BST', page: 101, difficulty: 'Medium', hint: 'Pass min/max bounds down.', tags: ['Tree', 'BST'], lcNum: 98 },
+        { id: '4.6', title: 'Successor', page: 101, difficulty: 'Medium', hint: 'If right child exists, find leftmost of right subtree.', tags: ['Tree', 'BST'] },
+        { id: '4.7', title: 'Build Order', page: 101, difficulty: 'Medium', hint: 'Topological sort.', tags: ['Graph', 'TopSort'] },
+        { id: '4.8', title: 'First Common Ancestor', page: 101, difficulty: 'Medium', hint: 'Check if target is in left or right subtree.', tags: ['Tree'], lcNum: 236 },
+        { id: '4.9', title: 'BST Sequences', page: 101, difficulty: 'Hard', hint: 'Weave lists together preserving relative order.', tags: ['Tree', 'BST', 'Backtracking'] },
+        { id: '4.10', title: 'Check Subtree', page: 101, difficulty: 'Medium', hint: 'String serialization approach or recursive match.', tags: ['Tree'], lcNum: 572 },
+        { id: '4.11', title: 'Random Node', page: 101, difficulty: 'Medium', hint: 'Each node stores subtree size. Use random selection.', tags: ['Tree', 'Design'] },
+        { id: '4.12', title: 'Paths with Sum', page: 101, difficulty: 'Medium', hint: 'Prefix sum hash map.', tags: ['Tree', 'Hash'], lcNum: 437 },
+      ],
+    },
+    {
+      num: '5', title: 'Bit Manipulation', page: 116,
+      summary: 'Bit tricks, XOR patterns, two\'s complement, bit shifting',
+      problems: [
+        { id: '5.1', title: 'Insertion', page: 116, difficulty: 'Medium', hint: 'Clear bits in N, then OR with shifted M.', tags: ['Bit'] },
+        { id: '5.2', title: 'Binary to String', page: 116, difficulty: 'Medium', hint: 'Multiply by 2, check integer part.', tags: ['Bit', 'Strings'] },
+        { id: '5.3', title: 'Flip Bit to Win', page: 116, difficulty: 'Medium', hint: 'Track two windows of 1s separated by one 0.', tags: ['Bit', 'SlidingWindow'] },
+        { id: '5.4', title: 'Next Number', page: 116, difficulty: 'Hard', hint: 'Find rightmost non-trailing 0 bit and flip it.', tags: ['Bit'] },
+        { id: '5.5', title: 'Debugger', page: 117, difficulty: 'Easy', hint: '(n & (n-1)) == 0 iff n is power of 2.', tags: ['Bit'] },
+        { id: '5.6', title: 'Conversion', page: 117, difficulty: 'Easy', hint: 'XOR then count set bits.', tags: ['Bit'] },
+        { id: '5.7', title: 'Pairwise Swap', page: 117, difficulty: 'Easy', hint: 'Use masks 0xAAAAAAAA and 0x55555555.', tags: ['Bit'] },
+        { id: '5.8', title: 'Draw Line', page: 117, difficulty: 'Medium', hint: 'Set full bytes first, then handle partial start/end.', tags: ['Bit', 'Arrays'] },
+      ],
+    },
+    {
+      num: '6', title: 'Math and Logic Puzzles', page: 120,
+      summary: 'Prime numbers, probability, brain teasers, logic puzzles',
+      problems: [
+        { id: '6.1', title: 'The Heavy Pill', page: 120, difficulty: 'Puzzle', tags: ['Math'] },
+        { id: '6.2', title: 'Basketball', page: 121, difficulty: 'Puzzle', tags: ['Probability'] },
+        { id: '6.3', title: 'Dominos', page: 121, difficulty: 'Puzzle', tags: ['Math'] },
+        { id: '6.4', title: 'Ants on a Triangle', page: 122, difficulty: 'Puzzle', tags: ['Probability'] },
+        { id: '6.5', title: 'Jugs of Water', page: 122, difficulty: 'Puzzle', tags: ['Math'] },
+        { id: '6.6', title: 'Blue-Eyed Island', page: 123, difficulty: 'Puzzle', hint: 'Common knowledge induction puzzle.', tags: ['Logic'] },
+        { id: '6.7', title: 'The Apocalypse', page: 123, difficulty: 'Puzzle', tags: ['Probability'] },
+        { id: '6.8', title: 'The Egg Drop Problem', page: 124, difficulty: 'Hard', hint: 'n*sqrt(n) or DP solution.', tags: ['DP', 'Math'] },
+        { id: '6.9', title: '100 Lockers', page: 125, difficulty: 'Puzzle', tags: ['Math'] },
+        { id: '6.10', title: 'Poison', page: 125, difficulty: 'Puzzle', tags: ['Bit', 'Math'] },
+      ],
+    },
+    {
+      num: '7', title: 'Object-Oriented Design', page: 127,
+      summary: 'Design patterns, class hierarchies, system design at OOP level',
+      problems: [
+        { id: '7.1', title: 'Deck of Cards', page: 127, difficulty: 'Medium', tags: ['OOD'] },
+        { id: '7.2', title: 'Call Center', page: 127, difficulty: 'Medium', tags: ['OOD', 'Design'] },
+        { id: '7.3', title: 'Jukebox', page: 127, difficulty: 'Medium', tags: ['OOD'] },
+        { id: '7.4', title: 'Parking Lot', page: 127, difficulty: 'Medium', tags: ['OOD'] },
+        { id: '7.5', title: 'Online Book Reader', page: 127, difficulty: 'Medium', tags: ['OOD', 'Design'] },
+        { id: '7.6', title: 'Jigsaw', page: 127, difficulty: 'Hard', tags: ['OOD'] },
+        { id: '7.7', title: 'Chat Server', page: 128, difficulty: 'Medium', tags: ['OOD', 'Design'] },
+        { id: '7.8', title: 'Othello', page: 128, difficulty: 'Medium', tags: ['OOD', 'Games'] },
+        { id: '7.9', title: 'Circular Array', page: 128, difficulty: 'Medium', tags: ['OOD', 'Generics'] },
+        { id: '7.10', title: 'Minesweeper', page: 128, difficulty: 'Medium', tags: ['OOD', 'Games'] },
+        { id: '7.11', title: 'File System', page: 128, difficulty: 'Medium', tags: ['OOD', 'Design'] },
+        { id: '7.12', title: 'Hash Table', page: 128, difficulty: 'Medium', tags: ['OOD', 'Hash'] },
+      ],
+    },
+    {
+      num: '8', title: 'Recursion and Dynamic Programming', page: 131,
+      summary: 'Memoization, tabulation, divide and conquer, recursive thinking',
+      problems: [
+        { id: '8.1', title: 'Triple Step', page: 131, difficulty: 'Easy', hint: 'f(n) = f(n-1)+f(n-2)+f(n-3)', tags: ['DP', 'Recursion'] },
+        { id: '8.2', title: 'Robot in a Grid', page: 131, difficulty: 'Medium', hint: 'Memoize failed paths to avoid reprocessing.', tags: ['DP', 'Grid'] },
+        { id: '8.3', title: 'Magic Index', page: 131, difficulty: 'Medium', hint: 'Binary search variant. Handle duplicates.', tags: ['BinarySearch', 'Recursion'] },
+        { id: '8.4', title: 'Power Set', page: 131, difficulty: 'Medium', hint: 'Build iteratively: add each element to all existing subsets.', tags: ['Backtracking'] },
+        { id: '8.5', title: 'Recursive Multiply', page: 131, difficulty: 'Medium', hint: 'Halve the smaller number recursively.', tags: ['Recursion', 'Math'] },
+        { id: '8.6', title: 'Towers of Hanoi', page: 132, difficulty: 'Medium', hint: '3 pegs, n disks. Move n-1 to buffer, move n to dest.', tags: ['Recursion'] },
+        { id: '8.7', title: 'Permutations without Dups', page: 132, difficulty: 'Medium', tags: ['Backtracking'] },
+        { id: '8.8', title: 'Permutations with Dups', page: 132, difficulty: 'Medium', hint: 'Use character counts to avoid duplicates.', tags: ['Backtracking', 'Hash'] },
+        { id: '8.9', title: 'Parens', page: 132, difficulty: 'Medium', hint: 'Count open and close remaining.', tags: ['Backtracking'], lcNum: 22 },
+        { id: '8.10', title: 'Paint Fill', page: 132, difficulty: 'Easy', hint: 'Flood fill via DFS/BFS.', tags: ['DFS', 'Grid'] },
+        { id: '8.11', title: 'Coins', page: 132, difficulty: 'Medium', hint: 'DP: number of ways to make n cents.', tags: ['DP'] },
+        { id: '8.12', title: 'Eight Queens', page: 132, difficulty: 'Hard', hint: 'Backtracking. Track column, diagonal occupation.', tags: ['Backtracking'] },
+        { id: '8.13', title: 'Stack Boxes', page: 132, difficulty: 'Hard', hint: 'DP + sorting. Longest increasing subsequence variant.', tags: ['DP', 'Sorting'] },
+        { id: '8.14', title: 'Boolean Evaluation', page: 132, difficulty: 'Hard', hint: 'DP: count ways to evaluate each subexpression to true/false.', tags: ['DP'] },
+      ],
+    },
+    {
+      num: '9', title: 'System Design and Scalability', page: 136,
+      summary: 'Distributed systems, caching, sharding, database design',
+      problems: [
+        { id: '9.1', title: 'Stock Data', page: 136, difficulty: 'Medium', tags: ['SystemDesign'] },
+        { id: '9.2', title: 'Social Network', page: 136, difficulty: 'Hard', tags: ['SystemDesign', 'Graph'] },
+        { id: '9.3', title: 'Web Crawler', page: 136, difficulty: 'Hard', tags: ['SystemDesign', 'BFS'] },
+        { id: '9.4', title: 'Duplicate URLs', page: 136, difficulty: 'Medium', tags: ['SystemDesign'] },
+        { id: '9.5', title: 'Cache', page: 136, difficulty: 'Hard', tags: ['SystemDesign', 'LRU'] },
+        { id: '9.6', title: 'Sales Rank', page: 136, difficulty: 'Medium', tags: ['SystemDesign', 'Database'] },
+        { id: '9.7', title: 'Personal Financial Manager', page: 136, difficulty: 'Hard', tags: ['SystemDesign'] },
+        { id: '9.8', title: 'Pastebin', page: 136, difficulty: 'Medium', tags: ['SystemDesign'] },
+      ],
+    },
+    {
+      num: '10', title: 'Sorting and Searching', page: 140,
+      summary: 'Merge sort, quick sort, binary search, modified searches',
+      problems: [
+        { id: '10.1', title: 'Sorted Merge', page: 140, difficulty: 'Easy', hint: 'Start from the end of the merged array.', tags: ['Sorting', 'Arrays'] },
+        { id: '10.2', title: 'Group Anagrams', page: 140, difficulty: 'Medium', hint: 'Sort each string as key, group by key.', tags: ['Sorting', 'Hash'] },
+        { id: '10.3', title: 'Search in Rotated Array', page: 140, difficulty: 'Medium', hint: 'Modified binary search.', tags: ['BinarySearch'], lcNum: 33 },
+        { id: '10.4', title: 'Sorted Search, No Size', page: 140, difficulty: 'Medium', hint: 'Double index until out of bounds, then binary search.', tags: ['BinarySearch'] },
+        { id: '10.5', title: 'Sparse Search', page: 140, difficulty: 'Medium', hint: 'Find nearest non-empty, then binary search.', tags: ['BinarySearch', 'Strings'] },
+        { id: '10.6', title: 'Sort Big File', page: 140, difficulty: 'Medium', hint: 'External sort with merge.', tags: ['Sorting', 'SystemDesign'] },
+        { id: '10.7', title: 'Missing Int', page: 141, difficulty: 'Medium', hint: 'Bit vector to track presence.', tags: ['Bit', 'Arrays'] },
+        { id: '10.8', title: 'Find Duplicates', page: 141, difficulty: 'Medium', hint: 'Bit vector approach.', tags: ['Bit', 'Arrays'] },
+        { id: '10.9', title: 'Sorted Matrix Search', page: 141, difficulty: 'Medium', hint: 'Binary search on rows + diagonal elimination.', tags: ['BinarySearch', 'Matrix'], lcNum: 240 },
+        { id: '10.10', title: 'Rank from Stream', page: 141, difficulty: 'Hard', hint: 'BST where each node stores left subtree size.', tags: ['BST', 'Design'] },
+        { id: '10.11', title: 'Peaks and Valleys', page: 141, difficulty: 'Medium', hint: 'Sort then swap every pair. Or in-place O(n).', tags: ['Sorting', 'Arrays'] },
+      ],
+    },
+    {
+      num: '11', title: 'Testing', page: 145,
+      summary: 'Test case design, software testing, real-world object testing',
+      problems: [
+        { id: '11.1', title: 'Mistake', page: 145, difficulty: 'Easy', tags: ['Testing'] },
+        { id: '11.2', title: 'Random Crashes', page: 145, difficulty: 'Medium', tags: ['Testing'] },
+        { id: '11.3', title: 'Chess Test', page: 145, difficulty: 'Medium', tags: ['Testing'] },
+        { id: '11.4', title: 'No Test Tools', page: 145, difficulty: 'Medium', tags: ['Testing'] },
+        { id: '11.5', title: 'Test a Pen', page: 145, difficulty: 'Easy', tags: ['Testing'] },
+        { id: '11.6', title: 'ATM', page: 145, difficulty: 'Medium', tags: ['Testing', 'SystemDesign'] },
+      ],
+    },
+    {
+      num: '16', title: 'Moderate (Hard Problems)', page: 182,
+      summary: 'Moderate difficulty problems covering varied topics',
+      problems: [
+        { id: '16.1', title: 'Number Swapper', page: 182, difficulty: 'Easy', tags: ['Bit'] },
+        { id: '16.2', title: 'Word Frequencies', page: 182, difficulty: 'Easy', tags: ['Hash', 'Strings'] },
+        { id: '16.3', title: 'Intersection', page: 182, difficulty: 'Medium', tags: ['Math', 'Geometry'] },
+        { id: '16.4', title: 'Tic Tac Win', page: 183, difficulty: 'Medium', tags: ['Arrays'] },
+        { id: '16.5', title: 'Factorial Zeros', page: 183, difficulty: 'Medium', hint: 'Count factors of 5.', tags: ['Math'] },
+        { id: '16.6', title: 'Smallest Difference', page: 183, difficulty: 'Medium', tags: ['Sorting', 'TwoPointers'] },
+        { id: '16.7', title: 'Number Max', page: 183, difficulty: 'Easy', hint: 'Bit manipulation, no if/else.', tags: ['Bit'] },
+        { id: '16.8', title: 'English Int', page: 183, difficulty: 'Medium', tags: ['Strings', 'Math'] },
+        { id: '16.9', title: 'Operations', page: 183, difficulty: 'Medium', tags: ['Math', 'Bit'] },
+        { id: '16.10', title: 'Living People', page: 184, difficulty: 'Medium', tags: ['Arrays', 'Math'] },
+        { id: '16.11', title: 'Diving Board', page: 184, difficulty: 'Easy', tags: ['Math'] },
+        { id: '16.12', title: 'XML Encoding', page: 184, difficulty: 'Medium', tags: ['Strings', 'Trees'] },
+        { id: '16.13', title: 'Bisect Squares', page: 184, difficulty: 'Medium', tags: ['Math', 'Geometry'] },
+        { id: '16.14', title: 'Best Line', page: 185, difficulty: 'Medium', tags: ['Math', 'Geometry'] },
+        { id: '16.15', title: 'Master Mind', page: 185, difficulty: 'Easy', tags: ['Arrays'] },
+        { id: '16.16', title: 'Sub Sort', page: 185, difficulty: 'Medium', hint: 'Find min/max in unsorted middle.', tags: ['Sorting', 'Arrays'] },
+        { id: '16.17', title: 'Contiguous Sequence', page: 185, difficulty: 'Easy', hint: 'Kadane\'s algorithm.', tags: ['DP', 'Arrays'], lcNum: 53 },
+        { id: '16.18', title: 'Pattern Matching', page: 185, difficulty: 'Hard', tags: ['Strings'] },
+        { id: '16.19', title: 'Pond Sizes', page: 185, difficulty: 'Medium', tags: ['DFS', 'Grid'] },
+        { id: '16.20', title: 'T9', page: 186, difficulty: 'Medium', tags: ['Hash', 'Strings'] },
+        { id: '16.21', title: 'Sum Swap', page: 186, difficulty: 'Medium', tags: ['Math', 'Arrays'] },
+        { id: '16.22', title: 'Langton\'s Ant', page: 186, difficulty: 'Medium', tags: ['Simulation'] },
+        { id: '16.23', title: 'Rand7 from Rand5', page: 186, difficulty: 'Hard', tags: ['Math', 'Probability'] },
+        { id: '16.24', title: 'Pairs with Sum', page: 186, difficulty: 'Medium', tags: ['Hash', 'Arrays'] },
+        { id: '16.25', title: 'LRU Cache', page: 186, difficulty: 'Hard', tags: ['Design', 'Hash'], lcNum: 146 },
+        { id: '16.26', title: 'Calculator', page: 187, difficulty: 'Hard', tags: ['Stack', 'Strings'] },
+      ],
+    },
+    {
+      num: '17', title: 'Hard Problems', page: 211,
+      summary: 'Challenging problems requiring deep algorithmic insight',
+      problems: [
+        { id: '17.1', title: 'Add Without Plus', page: 211, difficulty: 'Hard', tags: ['Bit'] },
+        { id: '17.2', title: 'Shuffle', page: 211, difficulty: 'Hard', hint: 'Fisher-Yates shuffle.', tags: ['Math', 'Arrays'] },
+        { id: '17.3', title: 'Random Set', page: 211, difficulty: 'Hard', tags: ['Math'] },
+        { id: '17.4', title: 'Missing Number', page: 211, difficulty: 'Hard', tags: ['Bit'] },
+        { id: '17.5', title: 'Letters and Numbers', page: 211, difficulty: 'Hard', hint: 'Convert to +1/-1 array, find subarray with sum 0.', tags: ['Arrays', 'Hash'] },
+        { id: '17.6', title: 'Count of 2s', page: 211, difficulty: 'Hard', tags: ['Math'] },
+        { id: '17.7', title: 'Baby Names', page: 212, difficulty: 'Hard', tags: ['Graph', 'UnionFind'] },
+        { id: '17.8', title: 'Circus Tower', page: 212, difficulty: 'Hard', hint: 'Sort by one dimension, LIS on other.', tags: ['DP', 'Sorting'] },
+        { id: '17.9', title: 'Kth Multiple', page: 212, difficulty: 'Hard', tags: ['Heap', 'Math'] },
+        { id: '17.10', title: 'Majority Element', page: 212, difficulty: 'Medium', hint: 'Boyer-Moore voting algorithm.', tags: ['Arrays'], lcNum: 169 },
+        { id: '17.11', title: 'Word Distance', page: 212, difficulty: 'Medium', hint: 'Preprocess into hash map of word→positions list.', tags: ['Hash', 'Strings'] },
+        { id: '17.12', title: 'BiNode', page: 212, difficulty: 'Hard', tags: ['Tree', 'LinkedList'] },
+        { id: '17.13', title: 'Re-Space', page: 212, difficulty: 'Hard', hint: 'DP with trie for word lookup.', tags: ['DP', 'Trie', 'Strings'] },
+        { id: '17.14', title: 'Smallest K', page: 212, difficulty: 'Medium', hint: 'QuickSelect or min-heap.', tags: ['Heap', 'Sorting'] },
+        { id: '17.15', title: 'Longest Word', page: 212, difficulty: 'Medium', tags: ['Trie', 'Strings'] },
+        { id: '17.16', title: 'The Masseuse', page: 213, difficulty: 'Medium', hint: 'House robber DP.', tags: ['DP'], lcNum: 198 },
+        { id: '17.17', title: 'Multi Search', page: 213, difficulty: 'Hard', hint: 'Aho-Corasick or suffix tree.', tags: ['Trie', 'Strings'] },
+        { id: '17.18', title: 'Shortest Supersequence', page: 213, difficulty: 'Hard', tags: ['Arrays', 'TwoPointers'] },
+        { id: '17.19', title: 'Missing Two', page: 213, difficulty: 'Hard', tags: ['Math', 'Arrays'] },
+        { id: '17.20', title: 'Continuous Median', page: 213, difficulty: 'Hard', hint: 'Two heaps: max-heap left, min-heap right.', tags: ['Heap'], lcNum: 295 },
+        { id: '17.21', title: 'Volume of Histogram', page: 213, difficulty: 'Hard', hint: 'Two-pointer with left/right max arrays.', tags: ['Stack', 'Arrays'], lcNum: 42 },
+        { id: '17.22', title: 'Word Transformer', page: 213, difficulty: 'Hard', hint: 'BFS with precomputed wildcard neighbors.', tags: ['BFS', 'Strings'] },
+        { id: '17.23', title: 'Max Black Square', page: 214, difficulty: 'Hard', tags: ['DP', 'Matrix'] },
+        { id: '17.24', title: 'Max Submatrix', page: 214, difficulty: 'Hard', hint: 'Reduce to 1D Kadane using prefix sums.', tags: ['DP', 'Matrix'] },
+        { id: '17.25', title: 'Word Rectangle', page: 214, difficulty: 'Hard', tags: ['Trie', 'Backtracking'] },
+        { id: '17.26', title: 'Sparse Similarity', page: 214, difficulty: 'Hard', tags: ['Hash', 'Arrays'] },
+      ],
+    },
+  ],
+}
+
+// ─── CP4 ───────────────────────────────────────────────────────────────────────
+const cp4: Book = {
+  slug: 'cp4',
+  title: 'Competitive Programming 4',
+  shortTitle: 'CP4',
+  author: 'Steven & Felix Halim',
+  edition: '4th',
+  year: 2020,
+  color: '#065f46',
+  accentColor: '#10b981',
+  description: 'The de-facto competitive programming textbook covering data structures, algorithms, and problem solving strategies with 5000+ referenced OJ problems.',
+  pdfUrl: 'https://github.com/QKnot/Competitive-Programming/blob/main/cpResources/cpBooks/CompetitiveProgramming4Book1.pdf',
+  totalProblems: 5000,
+  tags: ['Competitive', 'Algorithms', 'Data Structures', 'Math', 'Graphs'],
+  chapters: [
+    {
+      num: '1', title: 'Introduction', page: 1,
+      summary: 'Competitive programming overview, I/O techniques, algorithm analysis, ad-hoc problems',
+      problems: [
+        { id: '1-A', title: 'Army Strength (Easy)', difficulty: 'Easy', tags: ['AdHoc'] },
+        { id: '1-B', title: 'Codeforces 439A — Devu and Dishes', difficulty: 'Easy', tags: ['AdHoc'] },
+        { id: '1-C', title: 'UVa 10055 — Hashmat the Brave Warrior', difficulty: 'Easy', tags: ['AdHoc', 'Math'] },
+        { id: '1-D', title: 'UVa 11044 — Searching for Nessy', difficulty: 'Easy', tags: ['AdHoc'] },
+        { id: '1-E', title: 'UVa 11172 — Relational Operator', difficulty: 'Easy', tags: ['AdHoc'] },
+        { id: '1-F', title: 'Kattis 3nplus1 — 3n+1', difficulty: 'Easy', tags: ['AdHoc', 'Math'] },
+        { id: '1-G', title: 'UVa 10424 — Love Calculator', difficulty: 'Easy', tags: ['AdHoc', 'Strings'] },
+        { id: '1-H', title: 'UVa 10878 — Decode the Tape', difficulty: 'Easy', tags: ['AdHoc', 'Bit'] },
+        { id: '1-I', title: 'UVa 12468 — Zapping', difficulty: 'Easy', tags: ['AdHoc'] },
+        { id: '1-J', title: 'Kattis stringmatching — String Matching', difficulty: 'Easy', tags: ['Strings'] },
+      ],
+    },
+    {
+      num: '2', title: 'Data Structures and Libraries', page: 31,
+      summary: 'Arrays, linked lists, stacks, queues, trees, priority queues, hash maps, sets, Union-Find',
+      problems: [
+        { id: '2-A', title: 'UVa 11988 — Broken Keyboard', difficulty: 'Easy', tags: ['LinkedList', 'Strings'] },
+        { id: '2-B', title: 'UVa 10954 — Add All', difficulty: 'Easy', tags: ['Heap', 'Greedy'] },
+        { id: '2-C', title: 'UVa 11572 — Unique Snowflakes', difficulty: 'Medium', tags: ['SlidingWindow', 'Hash'] },
+        { id: '2-D', title: 'UVa 11235 — Frequent Values', difficulty: 'Medium', tags: ['SegTree', 'RMQ'] },
+        { id: '2-E', title: 'UVa 11136 — Hoax or what', difficulty: 'Easy', tags: ['Heap', 'MultiSet'] },
+        { id: '2-F', title: 'Kattis avoidingavoidance — Avoiding Avoidance', difficulty: 'Medium', tags: ['Graph', 'BFS'] },
+        { id: '2-G', title: 'UVa 10158 — War', difficulty: 'Medium', tags: ['UnionFind'] },
+        { id: '2-H', title: 'UVa 11503 — Virtual Friends', difficulty: 'Easy', tags: ['UnionFind'] },
+        { id: '2-I', title: 'Kattis fenwick — Fenwick Tree', difficulty: 'Medium', tags: ['FenwickTree', 'BIT'] },
+        { id: '2-J', title: 'UVa 11402 — Ahoy, Pirates!', difficulty: 'Hard', tags: ['SegTree', 'LazyProp'] },
+        { id: '2-K', title: 'CF 380C — Sereja and Brackets', difficulty: 'Medium', tags: ['SegTree', 'Stack'] },
+        { id: '2-L', title: 'Kattis stringmultimatching', difficulty: 'Hard', tags: ['Strings', 'AhoCorasick'] },
+      ],
+    },
+    {
+      num: '3', title: 'Problem Solving Paradigms', page: 91,
+      summary: 'Complete search, greedy, divide & conquer, dynamic programming',
+      problems: [
+        { id: '3-A', title: 'UVa 725 — Division', difficulty: 'Easy', tags: ['BruteForce'] },
+        { id: '3-B', title: 'UVa 11565 — Simple Equations', difficulty: 'Medium', tags: ['BruteForce'] },
+        { id: '3-C', title: 'UVa 11553 — Grid Game', difficulty: 'Medium', tags: ['Backtracking', 'Permutation'] },
+        { id: '3-D', title: 'UVa 10276 — Hanoi Tower Troubles Again!', difficulty: 'Medium', tags: ['Greedy'] },
+        { id: '3-E', title: 'UVa 10570 — Meeting with Aliens', difficulty: 'Medium', tags: ['Greedy', 'Sorting'] },
+        { id: '3-F', title: 'UVa 11292 — Dragon of Loowater', difficulty: 'Easy', tags: ['Greedy', 'Sorting'] },
+        { id: '3-G', title: 'UVa 10341 — Solve It', difficulty: 'Easy', tags: ['BinarySearch', 'Math'] },
+        { id: '3-H', title: 'UVa 11057 — Exact Sum', difficulty: 'Easy', tags: ['BinarySearch', 'TwoPointers'] },
+        { id: '3-I', title: 'UVa 10003 — Cutting Sticks', difficulty: 'Medium', tags: ['DP', 'IntervalDP'] },
+        { id: '3-J', title: 'UVa 10943 — How do you Add?', difficulty: 'Easy', tags: ['DP', 'Counting'] },
+        { id: '3-K', title: 'UVa 10131 — Is Bigger Smarter?', difficulty: 'Medium', tags: ['DP', 'LIS'] },
+        { id: '3-L', title: 'UVa 10154 — Weights and Measures', difficulty: 'Medium', tags: ['DP', 'Greedy'] },
+        { id: '3-M', title: 'UVa 10616 — Divisible Group Sums', difficulty: 'Medium', tags: ['DP', 'Knapsack'] },
+        { id: '3-N', title: 'CF 67C — Pythagorean Triples', difficulty: 'Medium', tags: ['Math', 'DP'] },
+        { id: '3-O', title: 'Kattis thehardway — The Hard Way', difficulty: 'Hard', tags: ['DP', 'BitmaskDP'] },
+        { id: '3-P', title: 'UVa 10465 — Homer Simpson', difficulty: 'Easy', tags: ['DP', 'Knapsack'] },
+      ],
+    },
+    {
+      num: '4', title: 'Graph', page: 156,
+      summary: 'BFS, DFS, Dijkstra, Bellman-Ford, Floyd-Warshall, MST, max flow, APSP',
+      problems: [
+        { id: '4-A', title: 'UVa 336 — A Node Too Far', difficulty: 'Easy', tags: ['BFS'] },
+        { id: '4-B', title: 'UVa 10004 — Bicoloring', difficulty: 'Easy', tags: ['BFS', 'Bipartite'] },
+        { id: '4-C', title: 'UVa 11902 — Dominator', difficulty: 'Medium', tags: ['DFS', 'Graph'] },
+        { id: '4-D', title: 'UVa 10305 — Ordering Tasks', difficulty: 'Easy', tags: ['TopSort', 'DAG'] },
+        { id: '4-E', title: 'UVa 11504 — Dominos', difficulty: 'Medium', tags: ['SCC', 'Kosaraju'] },
+        { id: '4-F', title: 'UVa 315 — Network', difficulty: 'Medium', tags: ['ArticulationPoint'] },
+        { id: '4-G', title: 'UVa 10099 — The Tourist Guide', difficulty: 'Medium', tags: ['Dijkstra', 'MST'] },
+        { id: '4-H', title: 'UVa 10986 — Sending email', difficulty: 'Easy', tags: ['Dijkstra', 'SSSP'] },
+        { id: '4-I', title: 'UVa 11280 — Flying to Fredericton', difficulty: 'Medium', tags: ['Dijkstra', 'SSSP'] },
+        { id: '4-J', title: 'UVa 10048 — Audiophobia', difficulty: 'Medium', tags: ['FloydWarshall', 'APSP'] },
+        { id: '4-K', title: 'UVa 1108 — Mining Your Own Business', difficulty: 'Hard', tags: ['Graph', 'BridgesAP'] },
+        { id: '4-L', title: 'UVa 10369 — Arctic Network', difficulty: 'Medium', tags: ['MST', 'Kruskal'] },
+        { id: '4-M', title: 'UVa 10034 — Freckles', difficulty: 'Easy', tags: ['MST', 'Prim'] },
+        { id: '4-N', title: 'UVa 820 — Internet Bandwidth', difficulty: 'Medium', tags: ['MaxFlow'] },
+        { id: '4-O', title: 'UVa 10080 — Gopher II', difficulty: 'Medium', tags: ['BipartiteMatching'] },
+        { id: '4-P', title: 'CF 237E — Build a Graph', difficulty: 'Hard', tags: ['Graph', 'Construction'] },
+      ],
+    },
+    {
+      num: '5', title: 'Mathematics', page: 246,
+      summary: 'Number theory, combinatorics, probability, matrix exponentiation, big numbers',
+      problems: [
+        { id: '5-A', title: 'UVa 10050 — Hartals', difficulty: 'Easy', tags: ['Math', 'Simulation'] },
+        { id: '5-B', title: 'UVa 10090 — Marbles', difficulty: 'Medium', tags: ['Math', 'ExtendedGCD'] },
+        { id: '5-C', title: 'UVa 10139 — Factovisors', difficulty: 'Easy', tags: ['Math', 'NumberTheory'] },
+        { id: '5-D', title: 'UVa 10168 — Summation of Four Primes', difficulty: 'Medium', tags: ['Math', 'Sieve'] },
+        { id: '5-E', title: 'UVa 10717 — Mint', difficulty: 'Medium', tags: ['Math', 'LCM'] },
+        { id: '5-F', title: 'UVa 10407 — Simple division', difficulty: 'Easy', tags: ['Math', 'GCD'] },
+        { id: '5-G', title: 'UVa 11428 — Cubes', difficulty: 'Medium', tags: ['Math', 'BinarySearch'] },
+        { id: '5-H', title: 'UVa 10925 — Krakovia', difficulty: 'Easy', tags: ['Math', 'BigNum'] },
+        { id: '5-I', title: 'UVa 11169 — Nice Patterns Strike Back', difficulty: 'Hard', tags: ['MatrixExp', 'DP'] },
+        { id: '5-J', title: 'UVa 10518 — How Many Calls?', difficulty: 'Medium', tags: ['MatrixExp', 'Fibonacci'] },
+        { id: '5-K', title: 'CF 55D — Beautiful numbers', difficulty: 'Hard', tags: ['DP', 'DigitDP'] },
+        { id: '5-L', title: 'UVa 10491 — Cows and Cars', difficulty: 'Medium', tags: ['Probability', 'Math'] },
+        { id: '5-M', title: 'Kattis combinatoric — Combination', difficulty: 'Medium', tags: ['Combinatorics'] },
+        { id: '5-N', title: 'UVa 10519 — !! Really Strange!!', difficulty: 'Hard', tags: ['Combinatorics', 'BigNum'] },
+        { id: '5-O', title: 'UVa 10228 — A Star not a Tree?', difficulty: 'Medium', tags: ['Geometry', 'Math'] },
+      ],
+    },
+    {
+      num: '6', title: 'String Processing', page: 1,
+      summary: 'KMP, Z-algorithm, suffix arrays, Aho-Corasick, Manacher, string hashing',
+      problems: [
+        { id: '6-A', title: 'UVa 10340 — All in All', difficulty: 'Easy', tags: ['Strings', 'TwoPointers'] },
+        { id: '6-B', title: 'UVa 10298 — Power Strings', difficulty: 'Medium', hint: 'KMP failure function.', tags: ['Strings', 'KMP'] },
+        { id: '6-C', title: 'UVa 11475 — Extend to Palindrome', difficulty: 'Medium', tags: ['Strings', 'KMP'] },
+        { id: '6-D', title: 'UVa 11826 — BBST', difficulty: 'Medium', tags: ['Strings', 'SuffixArray'] },
+        { id: '6-E', title: 'UVa 12206 — Stammering Aliens', difficulty: 'Hard', tags: ['Strings', 'SuffixArray'] },
+        { id: '6-F', title: 'Kattis ahocorasick — Aho-Corasick', difficulty: 'Hard', tags: ['Strings', 'AhoCorasick'] },
+        { id: '6-G', title: 'UVa 11584 — Partitioning by Palindromes', difficulty: 'Hard', tags: ['Strings', 'DP', 'Palindrome'] },
+        { id: '6-H', title: 'UVa 10310 — Dog and Gopher', difficulty: 'Easy', tags: ['Strings', 'Regex'] },
+        { id: '6-I', title: 'CF 31E — TV Game', difficulty: 'Hard', tags: ['Strings', 'DP', 'GameTheory'] },
+        { id: '6-J', title: 'UVa 10350 — Liftless EME', difficulty: 'Medium', tags: ['Strings', 'Hashing'] },
+      ],
+    },
+    {
+      num: '7', title: 'Computational Geometry', page: 61,
+      summary: 'Points, lines, polygons, circles, convex hull, intersection tests',
+      problems: [
+        { id: '7-A', title: 'UVa 587 — There\'s treasure everywhere!', difficulty: 'Easy', tags: ['Geometry', 'Distance'] },
+        { id: '7-B', title: 'UVa 11624 — Fire!', difficulty: 'Medium', tags: ['BFS', 'Geometry'] },
+        { id: '7-C', title: 'UVa 10084 — Hotter Colder', difficulty: 'Medium', tags: ['Geometry', 'Polygon'] },
+        { id: '7-D', title: 'UVa 11265 — The Sultan\'s Problem', difficulty: 'Hard', tags: ['Geometry', 'HalfPlane'] },
+        { id: '7-E', title: 'UVa 109 — Scud Busters', difficulty: 'Medium', tags: ['Geometry', 'ConvexHull'] },
+        { id: '7-F', title: 'UVa 10652 — Board Wrapping', difficulty: 'Medium', tags: ['Geometry', 'ConvexHull'] },
+        { id: '7-G', title: 'UVa 11447 — Reservoir Logs', difficulty: 'Medium', tags: ['Geometry', 'Polygon'] },
+        { id: '7-H', title: 'UVa 11718 — Fantasy of a Summation', difficulty: 'Hard', tags: ['Math', 'MatrixExp'] },
+        { id: '7-I', title: 'Kattis pointinpolygon — Point in Polygon', difficulty: 'Easy', tags: ['Geometry'] },
+        { id: '7-J', title: 'UVa 12578 — 10:6:2', difficulty: 'Hard', tags: ['Geometry', 'SegTree'] },
+      ],
+    },
+    {
+      num: '8', title: 'More Advanced Topics', page: 121,
+      summary: 'Square root decomposition, treap, heavy-light decomposition, advanced DP, flow',
+      problems: [
+        { id: '8-A', title: 'CF 340E — Xenia and Tree', difficulty: 'Hard', tags: ['HLD', 'SegTree'] },
+        { id: '8-B', title: 'CF 343D — Water Tree', difficulty: 'Hard', tags: ['HLD', 'DFS'] },
+        { id: '8-C', title: 'UVa 11380 — Down Went The Titanic', difficulty: 'Hard', tags: ['MaxFlow', 'Graph'] },
+        { id: '8-D', title: 'UVa 11765 — Component Placement', difficulty: 'Hard', tags: ['MinCut', 'MaxFlow'] },
+        { id: '8-E', title: 'CF 101B — Buses', difficulty: 'Hard', tags: ['DP', 'SegTree'] },
+        { id: '8-F', title: 'UVa 10746 — Crime Wave — The Sequel', difficulty: 'Hard', tags: ['MinCostFlow'] },
+        { id: '8-G', title: 'CF 521E — Cycling City', difficulty: 'Hard', tags: ['Graph', 'TwoSAT'] },
+        { id: '8-H', title: 'CF 228E — The Road to Berland is Paved With…', difficulty: 'Hard', tags: ['TwoSAT'] },
+        { id: '8-I', title: 'Kattis cdq — CDQ Divide and Conquer', difficulty: 'Hard', tags: ['DivideConquer', 'CDQ'] },
+        { id: '8-J', title: 'CF 280C — Game on Tree', difficulty: 'Hard', tags: ['EulerTour', 'Mo'] },
+      ],
+    },
+  ],
+}
+
+// ─── CPH ───────────────────────────────────────────────────────────────────────
+const cph: Book = {
+  slug: 'cph',
+  title: 'Competitive Programmer\'s Handbook',
+  shortTitle: 'CPH',
+  author: 'Antti Laaksonen',
+  edition: 'Draft, Jan 2018',
+  year: 2018,
+  color: '#7c2d12',
+  accentColor: '#f97316',
+  description: 'A free, comprehensive guide to competitive programming covering all major algorithms and data structures with clear explanations and CSES Practice problems.',
+  pdfUrl: 'https://github.com/QKnot/Competitive-Programming/blob/main/cpResources/cpBooks/CompetitiveProgrammersHandbook.pdf',
+  amazonUrl: 'https://cses.fi/book/book.pdf',
+  totalProblems: 307,
+  tags: ['Competitive', 'Free', 'CSES', 'Algorithms', 'Mathematics'],
+  chapters: [
+    { num: '1', title: 'Introduction', page: 9, summary: 'C++ basics, I/O, time/memory, mathematics review', problems: [{ id: 'E1.1', title: 'CSES — Weird Algorithm', difficulty: 'Easy', tags: ['Simulation'] }, { id: 'E1.2', title: 'CSES — Missing Number', difficulty: 'Easy', tags: ['Math'] }, { id: 'E1.3', title: 'CSES — Repetitions', difficulty: 'Easy', tags: ['Strings'] }, { id: 'E1.4', title: 'CSES — Increasing Array', difficulty: 'Easy', tags: ['Greedy'] }, { id: 'E1.5', title: 'CSES — Permutations', difficulty: 'Easy', tags: ['Construction'] }] },
+    { num: '2', title: 'Time Complexity', page: 27, summary: 'Big-O notation, common complexities, algorithm analysis', problems: [{ id: 'E2.1', title: 'CSES — Apple Division', difficulty: 'Easy', tags: ['BruteForce'] }, { id: 'E2.2', title: 'CSES — Chessboard and Queens', difficulty: 'Medium', tags: ['Backtracking'] }, { id: 'E2.3', title: 'CSES — Bit Strings', difficulty: 'Easy', tags: ['Math', 'Modular'] }, { id: 'E2.4', title: 'CSES — Trailing Zeros', difficulty: 'Easy', tags: ['Math'] }, { id: 'E2.5', title: 'CSES — Coin Piles', difficulty: 'Easy', tags: ['Math'] }] },
+    { num: '3', title: 'Sorting', page: 37, summary: 'Sorting algorithms, STL sort, custom comparators, inversion count', problems: [{ id: 'E3.1', title: 'CSES — Apartments', difficulty: 'Easy', tags: ['Sorting', 'Greedy'] }, { id: 'E3.2', title: 'CSES — Ferris Wheel', difficulty: 'Easy', tags: ['Sorting', 'TwoPointers'] }, { id: 'E3.3', title: 'CSES — Concert Tickets', difficulty: 'Medium', tags: ['Sorting', 'BinarySearch'] }, { id: 'E3.4', title: 'CSES — Restaurant Customers', difficulty: 'Medium', tags: ['Sorting', 'SweepLine'] }, { id: 'E3.5', title: 'CSES — Movie Festival', difficulty: 'Easy', tags: ['Sorting', 'Greedy'] }, { id: 'E3.6', title: 'CSES — Sum of Two Values', difficulty: 'Easy', tags: ['TwoPointers', 'Hash'] }] },
+    { num: '4', title: 'Data Structures', page: 53, summary: 'Stacks, queues, sets, maps, priority queues, policy-based DS', problems: [{ id: 'E4.1', title: 'CSES — Distinct Numbers', difficulty: 'Easy', tags: ['Set'] }, { id: 'E4.2', title: 'CSES — Collecting Numbers', difficulty: 'Easy', tags: ['Set'] }, { id: 'E4.3', title: 'CSES — Collecting Numbers II', difficulty: 'Medium', tags: ['Set', 'Simulation'] }, { id: 'E4.4', title: 'CSES — Playlist', difficulty: 'Easy', tags: ['SlidingWindow', 'Set'] }, { id: 'E4.5', title: 'CSES — Towers', difficulty: 'Easy', tags: ['Greedy', 'MultiSet'] }, { id: 'E4.6', title: 'CSES — Traffic Lights', difficulty: 'Medium', tags: ['Set', 'BinarySearch'] }, { id: 'E4.7', title: 'CSES — Josephus I', difficulty: 'Easy', tags: ['Simulation'] }, { id: 'E4.8', title: 'CSES — Josephus II', difficulty: 'Medium', tags: ['Set', 'OrderedSet'] }] },
+    { num: '5', title: 'Complete Search', page: 69, summary: 'Brute force, backtracking, pruning, iterating subsets & permutations', problems: [{ id: 'E5.1', title: 'CSES — Increasing Subsequence', difficulty: 'Easy', tags: ['BinarySearch', 'DP'] }, { id: 'E5.2', title: 'CSES — Two Knights', difficulty: 'Medium', tags: ['Math', 'Counting'] }, { id: 'E5.3', title: 'CSES — Grid Paths', difficulty: 'Medium', tags: ['Backtracking', 'Pruning'] }] },
+    { num: '6', title: 'Greedy Algorithms', page: 79, summary: 'Activity selection, scheduling, exchange arguments, Huffman coding', problems: [{ id: 'E6.1', title: 'CSES — Coin Problem', difficulty: 'Easy', tags: ['Greedy'] }, { id: 'E6.2', title: 'CSES — Stick Lengths', difficulty: 'Medium', tags: ['Greedy', 'Math'] }, { id: 'E6.3', title: 'CSES — Polygon Lattice Points', difficulty: 'Medium', tags: ['Greedy', 'Math'] }, { id: 'E6.4', title: 'CSES — Missing Coin Sum', difficulty: 'Easy', tags: ['Greedy', 'Sorting'] }, { id: 'E6.5', title: 'CSES — Collecting Numbers II', difficulty: 'Medium', tags: ['Greedy'] }, { id: 'E6.6', title: 'CSES — Tasks and Deadlines', difficulty: 'Medium', tags: ['Greedy', 'Scheduling'] }] },
+    { num: '7', title: 'Dynamic Programming', page: 87, summary: 'Memoization, tabulation, coin problem, LIS, knapsack, edit distance', problems: [{ id: 'E7.1', title: 'CSES — Dice Combinations', difficulty: 'Easy', tags: ['DP'] }, { id: 'E7.2', title: 'CSES — Minimizing Coins', difficulty: 'Easy', tags: ['DP', 'Knapsack'] }, { id: 'E7.3', title: 'CSES — Coin Combinations I', difficulty: 'Easy', tags: ['DP', 'Counting'] }, { id: 'E7.4', title: 'CSES — Coin Combinations II', difficulty: 'Easy', tags: ['DP', 'Counting'] }, { id: 'E7.5', title: 'CSES — Removing Digits', difficulty: 'Easy', tags: ['DP', 'Greedy'] }, { id: 'E7.6', title: 'CSES — Grid Paths', difficulty: 'Medium', tags: ['DP', 'Grid'] }, { id: 'E7.7', title: 'CSES — Book Shop', difficulty: 'Medium', tags: ['DP', 'Knapsack'] }, { id: 'E7.8', title: 'CSES — Array Description', difficulty: 'Medium', tags: ['DP'] }, { id: 'E7.9', title: 'CSES — Coin Problem (Path)', difficulty: 'Medium', tags: ['DP'] }, { id: 'E7.10', title: 'CSES — Edit Distance', difficulty: 'Medium', tags: ['DP', 'Strings'] }, { id: 'E7.11', title: 'CSES — Rectangle Cutting', difficulty: 'Medium', tags: ['DP', 'IntervalDP'] }, { id: 'E7.12', title: 'CSES — Money Sums', difficulty: 'Medium', tags: ['DP', 'Knapsack'] }, { id: 'E7.13', title: 'CSES — Removal Game', difficulty: 'Hard', tags: ['DP', 'GameTheory'] }, { id: 'E7.14', title: 'CSES — Two Sets II', difficulty: 'Hard', tags: ['DP', 'Counting'] }] },
+    { num: '8', title: 'Amortized Analysis', page: 105, summary: 'Aggregate method, accounting method, potential method', problems: [{ id: 'E8.1', title: 'CSES — Sliding Median', difficulty: 'Hard', tags: ['SlidingWindow', 'Heap'] }, { id: 'E8.2', title: 'CSES — Sliding Cost', difficulty: 'Hard', tags: ['SlidingWindow', 'Heap'] }, { id: 'E8.3', title: 'CSES — Range Queries and Copies', difficulty: 'Hard', tags: ['PersistentSegTree'] }] },
+    { num: '9', title: 'Range Queries', page: 109, summary: 'Sum and minimum queries, sparse table, Fenwick tree, segment tree', problems: [{ id: 'E9.1', title: 'CSES — Static Range Sum Queries', difficulty: 'Easy', tags: ['PrefixSum'] }, { id: 'E9.2', title: 'CSES — Static Range Minimum Queries', difficulty: 'Easy', tags: ['SparseTable'] }, { id: 'E9.3', title: 'CSES — Dynamic Range Sum Queries', difficulty: 'Easy', tags: ['FenwickTree'] }, { id: 'E9.4', title: 'CSES — Dynamic Range Minimum Queries', difficulty: 'Medium', tags: ['SegTree'] }, { id: 'E9.5', title: 'CSES — Range Xor Queries', difficulty: 'Easy', tags: ['PrefixSum', 'Bit'] }, { id: 'E9.6', title: 'CSES — Range Update Queries', difficulty: 'Medium', tags: ['FenwickTree', 'DiffArray'] }, { id: 'E9.7', title: 'CSES — Forest Queries', difficulty: 'Medium', tags: ['PrefixSum2D'] }, { id: 'E9.8', title: 'CSES — Hotel Queries', difficulty: 'Medium', tags: ['SegTree', 'BinarySearch'] }] },
+    { num: '10', title: 'Bit Manipulation', page: 121, summary: 'Bit tricks, sets represented as integers, bit DP', problems: [{ id: 'E10.1', title: 'CSES — Flag Arrangements', difficulty: 'Medium', tags: ['BitmaskDP'] }, { id: 'E10.2', title: 'CSES — Counting Tilings', difficulty: 'Hard', tags: ['BitmaskDP', 'ProfileDP'] }, { id: 'E10.3', title: 'CSES — Counting Numbers', difficulty: 'Hard', tags: ['DigitDP'] }] },
+    { num: '11', title: 'Graph Basics', page: 129, summary: 'Graph representation, BFS, DFS, connectivity', problems: [{ id: 'E11.1', title: 'CSES — Counting Rooms', difficulty: 'Easy', tags: ['DFS', 'Grid'] }, { id: 'E11.2', title: 'CSES — Labyrinth', difficulty: 'Easy', tags: ['BFS', 'Grid'] }, { id: 'E11.3', title: 'CSES — Building Roads', difficulty: 'Easy', tags: ['BFS', 'UnionFind'] }, { id: 'E11.4', title: 'CSES — Message Route', difficulty: 'Easy', tags: ['BFS'] }, { id: 'E11.5', title: 'CSES — Building Teams', difficulty: 'Easy', tags: ['BFS', 'Bipartite'] }, { id: 'E11.6', title: 'CSES — Round Trip', difficulty: 'Medium', tags: ['DFS', 'Cycle'] }, { id: 'E11.7', title: 'CSES — Monsters', difficulty: 'Medium', tags: ['BFS', 'MultiSource'] }] },
+    { num: '12', title: 'Graph Traversal', page: 141, summary: 'Bipartiteness, cycle detection, topological sort, strongly connected components', problems: [{ id: 'E12.1', title: 'CSES — Course Schedule', difficulty: 'Easy', tags: ['TopSort', 'DAG'] }, { id: 'E12.2', title: 'CSES — Longest Flight Route', difficulty: 'Medium', tags: ['DAG', 'DP'] }, { id: 'E12.3', title: 'CSES — Game Routes', difficulty: 'Medium', tags: ['DAG', 'DP', 'Counting'] }, { id: 'E12.4', title: 'CSES — Investigation', difficulty: 'Hard', tags: ['Dijkstra', 'DAG', 'DP'] }, { id: 'E12.5', title: 'CSES — Planets Queries I', difficulty: 'Medium', tags: ['FunctionalGraph', 'BinaryLifting'] }, { id: 'E12.6', title: 'CSES — Planets Queries II', difficulty: 'Hard', tags: ['FunctionalGraph', 'SCC'] }] },
+    { num: '13', title: 'Shortest Paths', page: 153, summary: 'Dijkstra, Bellman-Ford, SPFA, Floyd-Warshall, SSSP, APSP', problems: [{ id: 'E13.1', title: 'CSES — Shortest Routes I', difficulty: 'Easy', tags: ['Dijkstra'] }, { id: 'E13.2', title: 'CSES — Shortest Routes II', difficulty: 'Easy', tags: ['FloydWarshall'] }, { id: 'E13.3', title: 'CSES — High Score', difficulty: 'Medium', tags: ['BellmanFord', 'NegCycle'] }, { id: 'E13.4', title: 'CSES — Flight Discount', difficulty: 'Medium', tags: ['Dijkstra', 'DP'] }, { id: 'E13.5', title: 'CSES — Cycle Finding', difficulty: 'Medium', tags: ['BellmanFord', 'NegCycle'] }, { id: 'E13.6', title: 'CSES — Flight Routes', difficulty: 'Hard', tags: ['KShortestPaths'] }, { id: 'E13.7', title: 'CSES — Round Trip II', difficulty: 'Hard', tags: ['Dijkstra', 'Cycle'] }] },
+    { num: '14', title: 'Tree Algorithms', page: 163, summary: 'Tree traversal, subtree sizes, LCA, distances, tree diameter, centroid', problems: [{ id: 'E14.1', title: 'CSES — Subordinates', difficulty: 'Easy', tags: ['Tree', 'DFS'] }, { id: 'E14.2', title: 'CSES — Tree Matching', difficulty: 'Medium', tags: ['Tree', 'DP'] }, { id: 'E14.3', title: 'CSES — Tree Diameter', difficulty: 'Easy', tags: ['Tree', 'BFS'] }, { id: 'E14.4', title: 'CSES — Tree Distances I', difficulty: 'Medium', tags: ['Tree', 'ReRooting'] }, { id: 'E14.5', title: 'CSES — Tree Distances II', difficulty: 'Hard', tags: ['Tree', 'ReRooting', 'DFS'] }, { id: 'E14.6', title: 'CSES — Company Queries I', difficulty: 'Medium', tags: ['LCA', 'BinaryLifting'] }, { id: 'E14.7', title: 'CSES — Company Queries II', difficulty: 'Hard', tags: ['LCA'] }, { id: 'E14.8', title: 'CSES — Distance Queries', difficulty: 'Hard', tags: ['LCA', 'Tree'] }] },
+    { num: '15', title: 'Spanning Trees', page: 177, summary: 'Kruskal\'s algorithm, Prim\'s algorithm, minimum spanning tree properties', problems: [{ id: 'E15.1', title: 'CSES — Road Reparation', difficulty: 'Easy', tags: ['MST', 'Kruskal'] }, { id: 'E15.2', title: 'CSES — Road Construction', difficulty: 'Medium', tags: ['UnionFind', 'MST'] }] },
+    { num: '16', title: 'Directed Graphs', page: 183, summary: 'Topological sort, DFS order, SCC, condensation graph', problems: [{ id: 'E16.1', title: 'CSES — Planets and Kingdoms', difficulty: 'Medium', tags: ['SCC', 'Kosaraju'] }, { id: 'E16.2', title: 'CSES — Giant Pizza', difficulty: 'Hard', tags: ['TwoSAT', 'SCC'] }, { id: 'E16.3', title: 'CSES — Coin Collector', difficulty: 'Hard', tags: ['SCC', 'DAG', 'DP'] }, { id: 'E16.4', title: 'CSES — Mail Delivery', difficulty: 'Hard', tags: ['EulerPath', 'Graph'] }, { id: 'E16.5', title: 'CSES — Teleporters Path', difficulty: 'Hard', tags: ['EulerPath', 'DAG'] }] },
+    { num: '17', title: 'Strong Connectivity', page: 191, summary: 'Bridges, articulation points, SCC applications, 2-SAT', problems: [{ id: 'E17.1', title: 'CSES — Distinct Routes', difficulty: 'Hard', tags: ['MaxFlow', 'BFS'] }, { id: 'E17.2', title: 'CSES — School Dance', difficulty: 'Hard', tags: ['BipartiteMatching'] }, { id: 'E17.3', title: 'CSES — Forbidden Cities', difficulty: 'Hard', tags: ['Dijkstra', 'Bipartite'] }] },
+    { num: '18', title: 'Tree Queries', page: 199, summary: 'Euler tour, HLD, centroid decomposition, tree flattening', problems: [{ id: 'E18.1', title: 'CSES — Path Queries', difficulty: 'Hard', tags: ['HLD', 'SegTree'] }, { id: 'E18.2', title: 'CSES — Path Queries II', difficulty: 'Hard', tags: ['HLD', 'SegTree', 'LazyProp'] }, { id: 'E18.3', title: 'CSES — Distinct Colors', difficulty: 'Hard', tags: ['DFS', 'SmallToLarge'] }, { id: 'E18.4', title: 'CSES — Finding a Centroid', difficulty: 'Medium', tags: ['Tree', 'Centroid'] }] },
+    { num: '19', title: 'Paths and Circuits', page: 211, summary: 'Eulerian paths/circuits, Hamiltonian paths, de Bruijn sequences', problems: [{ id: 'E19.1', title: 'CSES — Eulerian Path', difficulty: 'Medium', tags: ['EulerPath', 'Graph'] }, { id: 'E19.2', title: 'CSES — Hamiltonian Flights', difficulty: 'Hard', tags: ['BitmaskDP', 'Hamiltonian'] }, { id: 'E19.3', title: 'CSES — Knight\'s Tour', difficulty: 'Hard', tags: ['Backtracking', 'Warnsdorff'] }] },
+    { num: '20', title: 'Flows and Cuts', page: 221, summary: 'Max flow, min cut, max bipartite matching, min path cover', problems: [{ id: 'E20.1', title: 'CSES — Download Speed', difficulty: 'Medium', tags: ['MaxFlow'] }, { id: 'E20.2', title: 'CSES — Police Chase', difficulty: 'Medium', tags: ['MinCut', 'MaxFlow'] }, { id: 'E20.3', title: 'CSES — School Dance', difficulty: 'Hard', tags: ['BipartiteMatching'] }, { id: 'E20.4', title: 'CSES — Distinct Routes', difficulty: 'Hard', tags: ['EdgeDisjointPaths'] }] },
+    { num: '21', title: 'Number Theory', page: 233, summary: 'Divisibility, primes, sieves, modular arithmetic, Euler\'s theorem', problems: [{ id: 'E21.1', title: 'CSES — Counting Divisors', difficulty: 'Easy', tags: ['Math', 'Sieve'] }, { id: 'E21.2', title: 'CSES — Common Divisors', difficulty: 'Easy', tags: ['Math', 'GCD'] }, { id: 'E21.3', title: 'CSES — Sum of Divisors', difficulty: 'Medium', tags: ['Math', 'NumberTheory'] }, { id: 'E21.4', title: 'CSES — Divisor Analysis', difficulty: 'Medium', tags: ['Math', 'PrimeFactorization'] }, { id: 'E21.5', title: 'CSES — Prime Multiples', difficulty: 'Medium', tags: ['Math', 'InclusionExclusion'] }, { id: 'E21.6', title: 'CSES — Counting Coprime Pairs', difficulty: 'Hard', tags: ['Math', 'Mobius'] }] },
+    { num: '22', title: 'Combinatorics', page: 247, summary: 'Binomial coefficients, Catalan numbers, inclusion-exclusion, Burnside\'s lemma', problems: [{ id: 'E22.1', title: 'CSES — Counting Necklaces', difficulty: 'Hard', tags: ['Combinatorics', 'Burnside'] }, { id: 'E22.2', title: 'CSES — Counting Grids', difficulty: 'Hard', tags: ['Combinatorics', 'Burnside'] }, { id: 'E22.3', title: 'CSES — Binomial Coefficients', difficulty: 'Easy', tags: ['Math', 'ModularArithmetic'] }, { id: 'E22.4', title: 'CSES — Creating Strings II', difficulty: 'Medium', tags: ['Combinatorics', 'Math'] }, { id: 'E22.5', title: 'CSES — Distributing Apples', difficulty: 'Medium', tags: ['Combinatorics', 'Stars&Bars'] }, { id: 'E22.6', title: 'CSES — Christmas Party', difficulty: 'Medium', tags: ['Combinatorics', 'Derangement'] }] },
+    { num: '23', title: 'Matrices', page: 259, summary: 'Matrix operations, matrix exponentiation, Gaussian elimination, graph matrices', problems: [{ id: 'E23.1', title: 'CSES — Fibonacci', difficulty: 'Easy', tags: ['MatrixExp'] }, { id: 'E23.2', title: 'CSES — Counting Paths', difficulty: 'Medium', tags: ['MatrixExp', 'Graph'] }, { id: 'E23.3', title: 'CSES — Ermitteln Fibonacci Numbers', difficulty: 'Medium', tags: ['MatrixExp', 'NumberTheory'] }] },
+    { num: '24', title: 'Probability', page: 267, summary: 'Probability calculation, expected value, Markov chains, random algorithms', problems: [{ id: 'E24.1', title: 'CSES — Dice Probability', difficulty: 'Easy', tags: ['Probability', 'DP'] }, { id: 'E24.2', title: 'CSES — Moving Robots', difficulty: 'Hard', tags: ['Probability', 'DP', 'Matrix'] }, { id: 'E24.3', title: 'CSES — Candies', difficulty: 'Hard', tags: ['Probability', 'DP'] }, { id: 'E24.4', title: 'CSES — Sightseeing', difficulty: 'Hard', tags: ['Probability', 'Dijkstra'] }] },
+    { num: '25', title: 'Game Theory', page: 275, summary: 'Game states, Nim game, Sprague-Grundy theorem, Nim sum', problems: [{ id: 'E25.1', title: 'CSES — Nim Game I', difficulty: 'Easy', tags: ['GameTheory', 'Nim'] }, { id: 'E25.2', title: 'CSES — Nim Game II', difficulty: 'Medium', tags: ['GameTheory', 'Grundy'] }, { id: 'E25.3', title: 'CSES — Staircase Nim', difficulty: 'Medium', tags: ['GameTheory', 'Nim'] }, { id: 'E25.4', title: 'CSES — Grundy\'s Game', difficulty: 'Hard', tags: ['GameTheory', 'Memoization'] }, { id: 'E25.5', title: 'CSES — Another Game', difficulty: 'Hard', tags: ['GameTheory', 'Grundy'] }] },
+    { num: '26', title: 'String Algorithms', page: 283, summary: 'String hashing, Z-algorithm, KMP, Aho-Corasick, suffix arrays/automata', problems: [{ id: 'E26.1', title: 'CSES — Word Combinations', difficulty: 'Medium', tags: ['Strings', 'DP', 'Hashing'] }, { id: 'E26.2', title: 'CSES — String Matching', difficulty: 'Easy', tags: ['Strings', 'KMP'] }, { id: 'E26.3', title: 'CSES — Finding Borders', difficulty: 'Medium', tags: ['Strings', 'KMP'] }, { id: 'E26.4', title: 'CSES — Finding Periods', difficulty: 'Medium', tags: ['Strings', 'KMP'] }, { id: 'E26.5', title: 'CSES — Minimal Rotation', difficulty: 'Hard', tags: ['Strings', 'Booth'] }, { id: 'E26.6', title: 'CSES — Longest Palindrome', difficulty: 'Medium', tags: ['Strings', 'Manacher'] }, { id: 'E26.7', title: 'CSES — Palindrome Queries', difficulty: 'Hard', tags: ['Strings', 'Hashing', 'SegTree'] }] },
+    { num: '27', title: 'Square Root Algorithms', page: 295, summary: 'Sqrt decomposition, Mo\'s algorithm, batch processing', problems: [{ id: 'E27.1', title: 'CSES — Increasing Array II', difficulty: 'Hard', tags: ['Mo', 'SqrtDecomp'] }, { id: 'E27.2', title: 'CSES — List Removals', difficulty: 'Hard', tags: ['SqrtDecomp', 'OrderedSet'] }, { id: 'E27.3', title: 'CSES — Salary Queries', difficulty: 'Hard', tags: ['Mo', 'FenwickTree'] }] },
+    { num: '28', title: 'Segment Trees Revisited', page: 303, summary: 'Lazy propagation, persistent segment trees, offline queries, merge sort tree', problems: [{ id: 'E28.1', title: 'CSES — Range Queries and Copies', difficulty: 'Hard', tags: ['PersistentSegTree'] }, { id: 'E28.2', title: 'CSES — New Road Queries', difficulty: 'Hard', tags: ['SegTree', 'LCA'] }, { id: 'E28.3', title: 'CSES — Dynamic Range Queries', difficulty: 'Hard', tags: ['MergeSortTree'] }] },
+    { num: '29', title: 'Geometry', page: 311, summary: 'Computational geometry, convex hull, line sweep, closest pair', problems: [{ id: 'E29.1', title: 'CSES — Point Location Test', difficulty: 'Easy', tags: ['Geometry', 'CrossProduct'] }, { id: 'E29.2', title: 'CSES — Line Segment Intersection', difficulty: 'Medium', tags: ['Geometry', 'Segments'] }, { id: 'E29.3', title: 'CSES — Polygon Area', difficulty: 'Easy', tags: ['Geometry', 'Shoelace'] }, { id: 'E29.4', title: 'CSES — Point in Polygon', difficulty: 'Medium', tags: ['Geometry', 'RayCasting'] }, { id: 'E29.5', title: 'CSES — Minimum Euclidean Distance', difficulty: 'Hard', tags: ['Geometry', 'ClosestPair'] }, { id: 'E29.6', title: 'CSES — Convex Hull', difficulty: 'Medium', tags: ['Geometry', 'ConvexHull'] }] },
+    { num: '30', title: 'Sweep Line Algorithms', page: 325, summary: 'Sweep line technique, event processing, interval problems', problems: [{ id: 'E30.1', title: 'CSES — Tasks and Deadlines', difficulty: 'Medium', tags: ['SweepLine', 'Greedy'] }, { id: 'E30.2', title: 'CSES — Concert Tickets', difficulty: 'Medium', tags: ['SweepLine', 'BinarySearch'] }, { id: 'E30.3', title: 'CSES — Sum of Three Values', difficulty: 'Medium', tags: ['SweepLine', 'TwoPointers'] }] },
+  ],
+}
+
+export const BOOKS: Book[] = [ctci, cp4, cph]
+
+export function getBook(slug: string): Book | undefined {
+  return BOOKS.find(b => b.slug === slug)
+}
+
+export function getTotalProblems(book: Book): number {
+  return book.chapters.reduce((sum, ch) => sum + ch.problems.length, 0)
+}

@@ -3,6 +3,7 @@ import { useEffect, useState, useMemo } from 'react'
 import { CHAPTER_DIAGRAMS } from '#/components/GeometryDiagrams'
 import {
   GridBuilder, ShapeRotationViewer, PerimeterExplorer, ProjectionViewer,
+  CoordinatePlane, SlopeExplorer, OrientationExplorer,
 } from '#/components/InteractiveDiagrams'
 import CodeTabs from '#/components/CodeTabs'
 import { SolvedCheckbox, SolvedProvider } from '#/components/SolvedTracker'
@@ -54,14 +55,18 @@ const INTERACTIVE_DIAGRAMS: Record<string, React.FC> = {
   'shape-rotation': ShapeRotationViewer,
   'perimeter-explorer': PerimeterExplorer,
   'projection-viewer': ProjectionViewer,
+  'coordinate-plane': CoordinatePlane,
+  'slope-explorer': SlopeExplorer,
+  'orientation-explorer': OrientationExplorer,
 }
 
 const PROBLEM_URLS: Record<string, string> = {
-  'Problem 1': 'https://codeforces.com/problemset/problem/1926/b',
-  'Problem 2': 'https://leetcode.com/problems/projection-area-of-3d-shapes/',
-  'Problem 3': 'https://atcoder.jp/contests/abc218/tasks/abc218_c',
-  'Problem 4': 'https://leetcode.com/problems/largest-triangle-area/',
-  'Problem 5': 'https://codeforces.com/problemset/problem/1512/B',
+  'Problem 1': 'https://leetcode.com/problems/valid-boomerang/',
+  'Problem 2': 'https://codeforces.com/problemset/problem/498/A',
+  'Problem 3': 'https://codeforces.com/problemset/problem/1466/A',
+  'Problem 4': 'https://codeforces.com/problemset/problem/227/A',
+  'Problem 5': 'https://codeforces.com/problemset/problem/1216/C',
+  'Problem 6': 'https://codeforces.com/problemset/problem/849/B',
 }
 
 const CALLOUT_CONFIG: { label: string; emoji: string; cls: string; desc: string }[] = [
@@ -102,6 +107,10 @@ function renderCallouts(text: string): string {
 }
 
 function inlineMarkdown(text: string): string {
+  if (typeof text !== 'string') {
+    console.error('inlineMarkdown non-string:', typeof text, JSON.stringify(text).slice(0,200))
+    return String(text ?? '')
+  }
   return text
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
     .replace(/`([^`]+)`/g, '<code class="gb-inline-code">$1</code>')
@@ -296,6 +305,10 @@ function ChapterPage() {
             if (block.type === 'code_tabs') {
               return <CodeTabs key={i} blocks={block.blocks} />
             }
+            // Debug: log any unexpected types
+            if (['code_tabs','badge_card','heading','text','code','table','list','divider','interactive_diagram','hint_card','keyword_badges'].indexOf(block.type) === -1) {
+              console.warn('Unknown block type:', block.type, block)
+            }
             if (block.type === 'badge_card') {
               const label = block.header.replace(/^\*\*(.+?)\*\*:?\s*$/, '$1')
               return (
@@ -347,6 +360,53 @@ function ChapterPage() {
                 const Diagram = INTERACTIVE_DIAGRAMS[diagramName]
                 if (Diagram) return <div key={i} className="gb-interactive-wrap"><Diagram /></div>
                 return null
+              }
+              case 'hint_card': {
+                const question = (b as any).question ?? ''
+                return (
+                  <div key={i} className="gb-hint-card">
+                    <div className="gb-hint-card-inner">
+                      <span className="gb-hint-icon">💡</span>
+                      <p className="gb-hint-text">{question}</p>
+                    </div>
+                  </div>
+                )
+              }
+              case 'keyword_badges': {
+                const groups = (b as any).groups ?? []
+                const items = (b as any).items ?? []
+                const COLORS = ['#e74c3c','#3498db','#2ecc71','#f39c12','#9b59b6','#1abc9c','#e67e22','#2c3e50','#d35400','#16a085','#c0392b','#2980b9','#8e44ad','#27ae60','#f1c40f']
+                const COLOR_MAP: Record<string,string> = {
+                  indigo:'#6366f1', rose:'#e11d48', emerald:'#10b981', amber:'#f59e0b',
+                  sky:'#0ea5e9', violet:'#8b5cf6', teal:'#14b8a6', orange:'#f97316',
+                  pink:'#ec4899', cyan:'#06b6d4', slate:'#64748b', red:'#ef4444',
+                  green:'#22c55e', yellow:'#eab308', blue:'#3b82f6', purple:'#a855f7',
+                }
+                const pills: { text: string; color: string }[] = []
+                if (groups.length > 0) {
+                  for (const g of groups) {
+                    const color = COLOR_MAP[g.color] ?? '#6366f1'
+                    pills.push({ text: g.label, color })
+                  }
+                } else {
+                  for (const item of items) {
+                    const parts = String(item).split(',').map(s => s.replace(/["""']/g, '').trim()).filter(Boolean)
+                    for (const p of parts) {
+                      pills.push({ text: p, color: COLORS[pills.length % COLORS.length] })
+                    }
+                  }
+                }
+                return (
+                  <div key={i} className="gb-keyword-card">
+                    <div className="gb-keyword-items">
+                      {pills.map((pill, j) => (
+                        <span key={j} className="gb-keyword-pill" style={{ background: pill.color + '18', color: pill.color, borderColor: pill.color + '35' }}>
+                          {pill.text}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )
               }
               case 'text': {
                 const html = (b.content ?? '').split(/(\$\$[^$]+\$\$)/g).map((part, j) => {

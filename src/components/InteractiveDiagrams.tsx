@@ -560,3 +560,315 @@ export function ProjectionViewer() {
     </div>
   )
 }
+
+/* ── Coordinate Plane Explorer ────────────────────── */
+
+function fmt(n: number): string {
+  return Number.isInteger(n) ? String(n) : n.toFixed(2)
+}
+
+export function CoordinatePlane() {
+  const S = 300, M = 20, G = S + M * 2
+  const CELL = S / 6
+  const [pts, setPts] = useState<{ x: number; y: number }[]>([{ x: -1, y: 2 }, { x: 3, y: -1 }])
+  const [nextIdx, setNextIdx] = useState(0)
+
+  const handleClick = useCallback((e: React.MouseEvent<SVGSVGElement>) => {
+    const svg = e.currentTarget
+    const r = svg.getBoundingClientRect()
+    const px = ((e.clientX - r.left) / r.width) * G
+    const py = ((e.clientY - r.top) / r.height) * G
+    const cx = Math.round(((px - M) / CELL - 3) * 2) / 2
+    const cy = Math.round((3 - (py - M) / CELL) * 2) / 2
+    if (cx < -3 || cx > 3 || cy < -3 || cy > 3) return
+    setPts(prev => {
+      const next = [...prev]
+      next[nextIdx] = { x: cx, y: cy }
+      return next
+    })
+    setNextIdx(prev => (prev + 1) % 2)
+  }, [nextIdx])
+
+  function gridToSvg(x: number, y: number): [number, number] {
+    return [M + (x + 3) * CELL, M + (3 - y) * CELL]
+  }
+
+  const dist = pts.length === 2 ? Math.sqrt((pts[0].x - pts[1].x) ** 2 + (pts[0].y - pts[1].y) ** 2) : 0
+  const mid = pts.length === 2 ? { x: (pts[0].x + pts[1].x) / 2, y: (pts[0].y + pts[1].y) / 2 } : null
+  const slope = pts.length === 2 && pts[1].x !== pts[0].x ? (pts[1].y - pts[0].y) / (pts[1].x - pts[0].x) : null
+
+  return (
+    <div className="gb-interactive">
+      <div className="gb-interactive-header">
+        <span className="gb-interactive-icon">📐</span>
+        <span className="gb-interactive-title">Coordinate Plane — Click to place two points</span>
+      </div>
+      <div className="gb-interactive-body" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+        <svg viewBox={`0 0 ${G} ${G + 80}`} style={{ maxWidth: G, height: 'auto' }} onClick={handleClick} className="gb-interactive-svg" role="img" aria-label="Coordinate plane">
+          {Array.from({ length: 7 }, (_, i) => (
+            <g key={`g-${i}`}>
+              <line x1={M + i * CELL} y1={M} x2={M + i * CELL} y2={M + S} stroke="rgba(255,255,255,.08)" strokeWidth={.5} />
+              <line x1={M} y1={M + i * CELL} x2={M + S} y2={M + i * CELL} stroke="rgba(255,255,255,.08)" strokeWidth={.5} />
+            </g>
+          ))}
+          <line x1={M} y1={M + S / 2} x2={M + S} y2={M + S / 2} stroke="rgba(255,255,255,.3)" strokeWidth={1.5} />
+          <line x1={M + S / 2} y1={M} x2={M + S / 2} y2={M + S} stroke="rgba(255,255,255,.3)" strokeWidth={1.5} />
+          <text x={M + S + 6} y={M + S / 2 + 3} fill="rgba(255,255,255,.3)" fontSize={9} fontFamily="monospace">x</text>
+          <text x={M + S / 2 + 4} y={M - 6} fill="rgba(255,255,255,.3)" fontSize={9} fontFamily="monospace">y</text>
+          <text x={M + S / 2 - 12} y={M + S / 2 + 14} fill="rgba(255,255,255,.15)" fontSize={8} fontFamily="monospace">O</text>
+          {pts.length === 2 && (
+            <>
+              <line
+                x1={gridToSvg(pts[0].x, pts[0].y)[0]} y1={gridToSvg(pts[0].x, pts[0].y)[1]}
+                x2={gridToSvg(pts[1].x, pts[1].y)[0]} y2={gridToSvg(pts[1].x, pts[1].y)[1]}
+                stroke="#3b9eff" strokeWidth={2} strokeOpacity={.6}
+              />
+              {mid && (() => {
+                const [mx, my] = gridToSvg(mid.x, mid.y)
+                return (
+                  <g>
+                    <circle cx={mx} cy={my} r={4} fill="#eab308" />
+                    <rect x={mx + 8} y={my - 10} width={40} height={16} rx={4} fill="rgba(0,0,0,.6)" />
+                    <text x={mx + 12} y={my + 2} fill="#eab308" fontSize={8} fontFamily="monospace">M ({fmt(mid.x)}, {fmt(mid.y)})</text>
+                  </g>
+                )
+              })()}
+            </>
+          )}
+          {pts.map((p, i) => {
+            const [sx, sy] = gridToSvg(p.x, p.y)
+            return (
+              <g key={i}>
+                <circle cx={sx} cy={sy} r={6} fill={i === 0 ? '#22c55e' : '#ef4444'} stroke="#fff" strokeWidth={1.5} style={{ cursor: 'pointer' }} />
+                <rect x={sx + 10} y={sy - 8} width={50} height={16} rx={4} fill="rgba(0,0,0,.6)" />
+                <text x={sx + 14} y={sy + 2} fill={i === 0 ? '#22c55e' : '#ef4444'} fontSize={8} fontFamily="monospace">P{i + 1} ({fmt(p.x)}, {fmt(p.y)})</text>
+              </g>
+            )
+          })}
+          <rect x={M} y={G + 8} width={S} height={60} rx={8} fill="rgba(16,18,31,.5)" stroke="rgba(59,158,255,.08)" strokeWidth={1} />
+          <text x={M + 10} y={G + 26} fill="#3b9eff" fontSize={10} fontFamily="monospace" fontWeight={600}>Metrics</text>
+          <text x={M + 10} y={G + 44} fill="#c8cad6" fontSize={9} fontFamily="monospace">
+            Distance: {fmt(dist)} {slope !== null ? `·  Slope: ${fmt(slope)}` : ''}
+          </text>
+          {(pts[0].x === pts[1].x) && <text x={M + 10} y={G + 58} fill="#eab308" fontSize={9} fontFamily="monospace">Vertical line — slope is undefined</text>}
+        </svg>
+      </div>
+    </div>
+  )
+}
+
+/* ── Slope Explorer ───────────────────────────────── */
+
+export function SlopeExplorer() {
+  const S = 300, M = 20, G = S + M * 2
+  const CELL = S / 6
+  const [p1, setP1] = useState({ x: -2, y: 1 })
+  const [p2, setP2] = useState({ x: 2, y: 2.5 })
+  const [active, setActive] = useState<'p1' | 'p2'>('p1')
+
+  const handleClick = useCallback((e: React.MouseEvent<SVGSVGElement>) => {
+    const svg = e.currentTarget
+    const r = svg.getBoundingClientRect()
+    const px = ((e.clientX - r.left) / r.width) * G
+    const py = ((e.clientY - r.top) / r.height) * G
+    const cx = Math.round(((px - M) / CELL - 3) * 2) / 2
+    const cy = Math.round((3 - (py - M) / CELL) * 2) / 2
+    if (cx < -3 || cx > 3 || cy < -3 || cy > 3) return
+    const pt = { x: cx, y: cy }
+    if (cx === p1.x && cy === p1.y) return
+    if (cx === p2.x && cy === p2.y) return
+    setActive(prev => { if (prev === 'p1') { setP1(pt); return 'p2' } else { setP2(pt); return 'p1' } })
+  }, [p1, p2])
+
+  function gridToSvg(x: number, y: number): [number, number] {
+    return [M + (x + 3) * CELL, M + (3 - y) * CELL]
+  }
+
+  const dx = p2.x - p1.x
+  const dy = p2.y - p1.y
+  const slope = dx !== 0 ? dy / dx : null
+  const angle = Math.atan2(dy, dx) * 180 / Math.PI
+
+  const [s1x, s1y] = gridToSvg(p1.x, p1.y)
+  const [s2x, s2y] = gridToSvg(p2.x, p2.y)
+  const runEndX = p2.x
+  const runEndY = p1.y
+  const [rex, rey] = gridToSvg(runEndX, runEndY)
+
+  return (
+    <div className="gb-interactive">
+      <div className="gb-interactive-header">
+        <span className="gb-interactive-icon">📈</span>
+        <span className="gb-interactive-title">Slope Explorer — Click to place two points</span>
+      </div>
+      <div className="gb-interactive-body" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+        <svg viewBox={`0 0 ${G} ${G + 80}`} style={{ maxWidth: G, height: 'auto' }} onClick={handleClick} className="gb-interactive-svg" role="img" aria-label="Slope explorer">
+          {Array.from({ length: 7 }, (_, i) => (
+            <g key={`g-${i}`}>
+              <line x1={M + i * CELL} y1={M} x2={M + i * CELL} y2={M + S} stroke="rgba(255,255,255,.08)" strokeWidth={.5} />
+              <line x1={M} y1={M + i * CELL} x2={M + S} y2={M + i * CELL} stroke="rgba(255,255,255,.08)" strokeWidth={.5} />
+            </g>
+          ))}
+          <line x1={M} y1={M + S / 2} x2={M + S} y2={M + S / 2} stroke="rgba(255,255,255,.3)" strokeWidth={1.5} />
+          <line x1={M + S / 2} y1={M} x2={M + S / 2} y2={M + S} stroke="rgba(255,255,255,.3)" strokeWidth={1.5} />
+
+          <polygon
+            points={`${s1x},${s1y} ${rex},${rey} ${s2x},${s2y}`}
+            fill="rgba(59,158,255,.1)"
+            stroke="rgba(59,158,255,.3)"
+            strokeWidth={1}
+            strokeDasharray="4,3"
+          />
+          {dx !== 0 && (
+            <>
+              <text x={(s1x + rex) / 2} y={s1y + 14} fill="#22c55e" fontSize={8} fontFamily="monospace" textAnchor="middle">run = {fmt(dx)}</text>
+              <text x={rex + 8} y={(rey + s2y) / 2 + 3} fill="#ef4444" fontSize={8} fontFamily="monospace" textAnchor="start">rise = {fmt(dy)}</text>
+            </>
+          )}
+
+          <line x1={s1x} y1={s1y} x2={s2x} y2={s2y} stroke="#3b9eff" strokeWidth={2.5} strokeLinecap="round" />
+
+          {[
+            { p: p1, sx: s1x, sy: s1y, color: '#22c55e', label: 'P\u2081' },
+            { p: p2, sx: s2x, sy: s2y, color: '#ef4444', label: 'P\u2082' },
+          ].map(({ p, sx, sy, color, label }) => (
+            <g key={label}>
+              <circle cx={sx} cy={sy} r={6} fill={color} stroke="#fff" strokeWidth={1.5} style={{ cursor: 'pointer' }} />
+              <rect x={sx + 10} y={sy - 8} rx={4} fill="rgba(0,0,0,.6)" />
+              <text x={sx + 14} y={sy + 2} fill={color} fontSize={8} fontFamily="monospace">{label} ({fmt(p.x)}, {fmt(p.y)})</text>
+            </g>
+          ))}
+
+          <rect x={M} y={G + 8} width={S} height={60} rx={8} fill="rgba(16,18,31,.5)" stroke="rgba(59,158,255,.08)" strokeWidth={1} />
+          <text x={M + 10} y={G + 26} fill="#3b9eff" fontSize={10} fontFamily="monospace" fontWeight={600}>Slope Analysis</text>
+          {slope !== null ? (
+            <text x={M + 10} y={G + 44} fill="#c8cad6" fontSize={9} fontFamily="monospace">
+              Rise {fmt(dy)} / Run {fmt(dx)} = slope <tspan fill="#22c55e">{fmt(slope)}</tspan> · Angle {fmt(angle)}°
+            </text>
+          ) : (
+            <text x={M + 10} y={G + 44} fill="#eab308" fontSize={9} fontFamily="monospace">Vertical line — slope is undefined (dx = 0)</text>
+          )}
+          <text x={M + 10} y={G + 58} fill="#7d8299" fontSize={8} fontFamily="monospace">
+            {slope === 0 ? 'Horizontal line · slope = 0' : slope !== null && slope > 0 ? 'Increasing line · positive slope' : slope !== null && slope < 0 ? 'Decreasing line · negative slope' : ''}
+          </text>
+        </svg>
+      </div>
+    </div>
+  )
+}
+
+/* ── Orientation Explorer ─────────────────────────── */
+
+export function OrientationExplorer() {
+  const S = 300, M = 20, G = S + M * 2
+  const CELL = S / 6
+  const [points, setPoints] = useState([
+    { x: -1.5, y: -1 },
+    { x: 1.5, y: -0.5 },
+    { x: 0.5, y: 2 },
+  ])
+  const [activeIdx, setActiveIdx] = useState(0)
+
+  const handleClick = useCallback((e: React.MouseEvent<SVGSVGElement>) => {
+    const svg = e.currentTarget
+    const r = svg.getBoundingClientRect()
+    const px = ((e.clientX - r.left) / r.width) * G
+    const py = ((e.clientY - r.top) / r.height) * G
+    const cx = Math.round(((px - M) / CELL - 3) * 2) / 2
+    const cy = Math.round((3 - (py - M) / CELL) * 2) / 2
+    if (cx < -3 || cx > 3 || cy < -3 || cy > 3) return
+    setPoints(prev => {
+      const next = [...prev]
+      next[activeIdx] = { x: cx, y: cy }
+      return next
+    })
+    setActiveIdx(prev => (prev + 1) % 3)
+  }, [activeIdx])
+
+  function gridToSvg(x: number, y: number): [number, number] {
+    return [M + (x + 3) * CELL, M + (3 - y) * CELL]
+  }
+
+  const orient = (() => {
+    const [A, B, C] = points
+    const val = (B.x - A.x) * (C.y - A.y) - (B.y - A.y) * (C.x - A.x)
+    return { val, type: val > 0.001 ? 'left' : val < -0.001 ? 'right' : 'collinear' } as const
+  })()
+
+  const LABELS = ['A', 'B', 'C']
+  const COLORS = ['#22c55e', '#3b9eff', '#ef4444']
+
+  return (
+    <div className="gb-interactive">
+      <div className="gb-interactive-header">
+        <span className="gb-interactive-icon">🧭</span>
+        <span className="gb-interactive-title">Orientation Explorer — Click to place A → B → C</span>
+      </div>
+      <div className="gb-interactive-body" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+        <svg viewBox={`0 0 ${G} ${G + 80}`} style={{ maxWidth: G, height: 'auto' }} onClick={handleClick} className="gb-interactive-svg" role="img" aria-label="Orientation explorer">
+          {Array.from({ length: 7 }, (_, i) => (
+            <g key={`g-${i}`}>
+              <line x1={M + i * CELL} y1={M} x2={M + i * CELL} y2={M + S} stroke="rgba(255,255,255,.06)" strokeWidth={.5} />
+              <line x1={M} y1={M + i * CELL} x2={M + S} y2={M + i * CELL} stroke="rgba(255,255,255,.06)" strokeWidth={.5} />
+            </g>
+          ))}
+          <line x1={M} y1={M + S / 2} x2={M + S} y2={M + S / 2} stroke="rgba(255,255,255,.2)" strokeWidth={1.5} />
+          <line x1={M + S / 2} y1={M} x2={M + S / 2} y2={M + S} stroke="rgba(255,255,255,.2)" strokeWidth={1.5} />
+
+          {(() => {
+            const [A, B, C] = points
+            const [ax, ay] = gridToSvg(A.x, A.y)
+            const [bx, by] = gridToSvg(B.x, B.y)
+            const [cx, cy] = gridToSvg(C.x, C.y)
+            const orientationColor = orient.type === 'left' ? '#22c55e' : orient.type === 'right' ? '#ef4444' : '#eab308'
+            return (
+              <>
+                <line x1={ax} y1={ay} x2={bx} y2={by} stroke="#3b9eff" strokeWidth={2.5} strokeLinecap="round" />
+                <line x1={ax} y1={ay} x2={cx} y2={cy} stroke="#a855f7" strokeWidth={2} strokeDasharray="6,3" strokeLinecap="round" />
+                {orient.type !== 'collinear' && (
+                  <path
+                    d={`M ${ax + 20} ${ay} A 20 20 0 0 ${orient.type === 'left' ? '0' : '1'} ${ax + 20 * Math.cos(orient.type === 'left' ? .6 : -.6)} ${ay + 20 * Math.sin(orient.type === 'left' ? .6 : -.6)}`}
+                    fill="none"
+                    stroke={orientationColor}
+                    strokeWidth={2}
+                    strokeOpacity={.6}
+                  />
+                )}
+                {orient.type !== 'collinear' && (
+                  <text x={ax + 26} y={ay + (orient.type === 'left' ? 16 : -8)} fill={orientationColor} fontSize={9} fontFamily="monospace">{orient.type === 'left' ? '\u2190 left turn' : '\u2192 right turn'}</text>
+                )}
+                {orient.type === 'collinear' && (
+                  <text x={ax + 26} y={ay + 2} fill="#eab308" fontSize={8} fontFamily="monospace">\u2195 collinear</text>
+                )}
+              </>
+            )
+          })()}
+
+          {points.map((p, i) => {
+            const [sx, sy] = gridToSvg(p.x, p.y)
+            return (
+              <g key={i}>
+                <circle cx={sx} cy={sy} r={6} fill={COLORS[i]} stroke="#fff" strokeWidth={1.5} style={{ cursor: 'pointer' }}
+                  opacity={activeIdx === i ? .7 : 1} />
+                {activeIdx === i && <circle cx={sx} cy={sy} r={10} fill="none" stroke={COLORS[i]} strokeWidth={1} strokeOpacity={.4} />}
+                <rect x={sx + 10} y={sy - 8} rx={4} fill="rgba(0,0,0,.6)" />
+                <text x={sx + 14} y={sy + 2} fill={COLORS[i]} fontSize={8} fontFamily="monospace">{LABELS[i]} ({fmt(p.x)}, {fmt(p.y)})</text>
+              </g>
+            )
+          })}
+
+          <rect x={M} y={G + 8} width={S} height={60} rx={8} fill="rgba(16,18,31,.5)" stroke="rgba(59,158,255,.08)" strokeWidth={1} />
+          <text x={M + 10} y={G + 26} fill="#3b9eff" fontSize={10} fontFamily="monospace" fontWeight={600}>Cross Product</text>
+          <text x={M + 10} y={G + 44} fill="#c8cad6" fontSize={9} fontFamily="monospace">
+            AB × AC = {fmt(orient.val)}
+          </text>
+          <text x={M + 10} y={G + 58} fill={
+            orient.type === 'left' ? '#22c55e' : orient.type === 'right' ? '#ef4444' : '#eab308'
+          } fontSize={9} fontFamily="monospace" fontWeight={600}>
+            {orient.type === 'left' ? '\u2190 Counter-clockwise (left turn)' : orient.type === 'right' ? '\u2192 Clockwise (right turn)' : '\u2014 Collinear (no turn)'}
+          </text>
+        </svg>
+      </div>
+    </div>
+  )
+}
