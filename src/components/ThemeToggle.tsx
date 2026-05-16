@@ -12,7 +12,7 @@ function getInitialMode(): ThemeMode {
     return stored
   }
 
-  return 'auto'
+  return 'dark'
 }
 
 function applyThemeMode(mode: ThemeMode) {
