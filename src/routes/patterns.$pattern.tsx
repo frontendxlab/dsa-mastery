@@ -15,11 +15,11 @@ export const Route = createFileRoute('/patterns/$pattern')({
   },
   component: PatternDetailPage,
   notFoundComponent: () => (
-    <main className="nb-page-wrap px-4 py-20 text-center">
-      <div className="nb-card mx-auto max-w-md bg-[var(--nb-pink)] p-8">
-        <p className="nb-display text-4xl">404</p>
-        <p className="mt-2 font-bold">Pattern not found</p>
-        <Link to="/patterns" className="nb-btn mt-4 inline-block no-underline">← Back to Patterns</Link>
+    <main className="mx-auto max-w-5xl px-4 py-20 text-center">
+      <div className="mx-auto max-w-md rounded-xl border border-[var(--border)] bg-[var(--secondary)] p-8">
+        <p className="text-4xl font-bold text-[var(--foreground)]">404</p>
+        <p className="mt-2 font-bold text-[var(--foreground)]">Pattern not found</p>
+        <Link to="/patterns" className="mt-4 inline-flex items-center gap-2 rounded-lg bg-[var(--primary)] px-4 py-2 text-sm font-medium text-[var(--primary-foreground)] no-underline transition-opacity hover:opacity-90">← Back to Patterns</Link>
       </div>
     </main>
   ),
@@ -36,7 +36,7 @@ interface RawProblem {
 function md(text: string) {
   return text
     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-    .replace(/`([^`]+)`/g, '<code class="nb-inline-code">$1</code>')
+    .replace(/`([^`]+)`/g, '<code class="inline-code">$1</code>')
     .replace(/\n/g, '<br/>')
 }
 
@@ -54,17 +54,17 @@ function diffColor(d: string) {
 
 function RecognitionTable({ headers, rows }: { headers: string[]; rows: string[][] }) {
   return (
-    <div className="nb-table-wrap my-6 overflow-x-auto">
+    <div className="my-6 overflow-x-auto">
       <table className="w-full border-collapse text-sm">
         <thead>
           <tr>
-            {headers.map(h => <th key={h} className="nb-th">{h}</th>)}
+            {headers.map(h => <th key={h} className="text-left text-xs font-semibold text-[var(--muted-foreground)] px-3 py-2 border-b border-[var(--border)]">{h}</th>)}
           </tr>
         </thead>
         <tbody>
           {rows.map((row, i) => (
-            <tr key={i} className={i % 2 === 0 ? 'bg-[var(--nb-surface)]' : 'bg-[var(--nb-surface-strong)]'}>
-              {row.map((cell, j) => <td key={j} className="nb-td font-medium">{cell}</td>)}
+            <tr key={i} className={i % 2 === 0 ? 'bg-[var(--background)]' : 'bg-[var(--secondary)]'}>
+              {row.map((cell, j) => <td key={j} className="px-3 py-2 text-sm text-[var(--foreground)] border-b border-[var(--border)] font-medium">{cell}</td>)}
             </tr>
           ))}
         </tbody>
@@ -76,29 +76,29 @@ function RecognitionTable({ headers, rows }: { headers: string[]; rows: string[]
 function IntuitionBlock({ intuition, idx }: { intuition: Intuition; idx: number }) {
   const [open, setOpen] = useState(false)
   const colors = [
-    'bg-[var(--nb-yellow)]',
-    'bg-[var(--nb-blue)]',
-    'bg-[var(--nb-green)]',
-    'bg-[var(--nb-pink)]',
+    'bg-[var(--warning,#fcd34d)]/20',
+    'bg-[var(--primary,#3b82f6)]/10',
+    'bg-[var(--success,#86efac)]/20',
+    'bg-[var(--destructive,#fca5a5)]/10',
   ]
   return (
-    <div className={`nb-card ${colors[idx % colors.length]} mb-3`}>
+    <div className={`rounded-xl border border-[var(--border)] ${colors[idx % colors.length]} mb-3`}>
       <button className="w-full text-left" onClick={() => setOpen(o => !o)}>
         <div className="flex items-start gap-3 p-4">
-          <span className="nb-intuition-badge mt-0.5 shrink-0">{idx + 1}</span>
+          <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--primary)] text-[10px] font-bold text-white mt-0.5">{idx + 1}</span>
           <div className="flex-1 min-w-0">
-            <p className="font-bold text-sm leading-snug">{intuition.label}</p>
-            <p className="mt-1 text-sm leading-relaxed" style={{ opacity: 0.8 }}>{intuition.explanation}</p>
+            <p className="font-bold text-sm leading-snug text-[var(--foreground)]">{intuition.label}</p>
+            <p className="mt-1 text-sm leading-relaxed text-[var(--muted-foreground)]">{intuition.explanation}</p>
           </div>
-          <span className="shrink-0 font-bold text-lg" style={{ transform: open ? 'rotate(90deg)' : 'none', display: 'inline-block', transition: 'transform 150ms' }}>
+          <span className="shrink-0 font-bold text-lg text-[var(--muted-foreground)]" style={{ transform: open ? 'rotate(90deg)' : 'none', display: 'inline-block', transition: 'transform 150ms' }}>
             ›
           </span>
         </div>
       </button>
       {open && intuition.code && (
-        <div className="border-t-2 border-[var(--nb-border-color)]">
+        <div className="border-t border-[var(--border)]">
           {intuition.codeCaption && (
-            <p className="px-4 pt-3 text-xs font-bold uppercase tracking-wider opacity-60">{intuition.codeCaption}</p>
+            <p className="px-4 pt-3 text-xs font-bold uppercase tracking-wider opacity-60 text-[var(--foreground)]">{intuition.codeCaption}</p>
           )}
           <ShikiCodeBlock code={intuition.code} lang={intuition.lang || 'javascript'} />
         </div>
@@ -109,18 +109,18 @@ function IntuitionBlock({ intuition, idx }: { intuition: Intuition; idx: number 
 
 function ProblemCard({ section }: { section: Extract<Section, { type: 'problem' }> }) {
   const diffClass: Record<string, string> = {
-    easy: 'nb-diff-easy', medium: 'nb-diff-medium', hard: 'nb-diff-hard', 'n/a': '',
+    easy: 'diff-easy', medium: 'diff-medium', hard: 'diff-hard', 'n/a': '',
   }
   return (
-    <div className="nb-problem-card my-6">
-      <div className="nb-problem-header">
-        <span className="nb-problem-num">{section.num}</span>
+    <div className="my-6 rounded-xl border border-[var(--border)] bg-[var(--card)] overflow-hidden shadow-sm">
+      <div className="flex items-start gap-3 p-4 border-b border-[var(--border)] bg-[var(--secondary)]">
+        <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[var(--primary)] text-xs font-bold text-[var(--primary-foreground)]">{section.num}</span>
         <div className="flex-1 min-w-0">
-          <a href={section.url} target="_blank" rel="noopener noreferrer" className="nb-problem-title">
+          <a href={section.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[var(--foreground)] no-underline hover:text-[var(--primary)]">
             {section.title}
           </a>
           <div className="flex items-center gap-2 mt-1 flex-wrap">
-            <span className={`nb-diff-badge ${diffClass[section.difficulty.toLowerCase()] ?? ''}`}>
+            <span className={`inline-flex items-center rounded border px-1.5 py-0.5 text-[10px] font-bold ${diffClass[section.difficulty.toLowerCase()] ?? ''}`}>
               {section.difficulty}
             </span>
           </div>
@@ -129,30 +129,15 @@ function ProblemCard({ section }: { section: Extract<Section, { type: 'problem' 
           href={section.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="shrink-0 inline-flex items-center gap-1 px-3 py-1.5 text-xs font-800 font-bold border-2 rounded"
-          style={{
-            borderColor: 'var(--nb-yellow)',
-            color: 'var(--nb-yellow)',
-            background: 'transparent',
-            textDecoration: 'none',
-            whiteSpace: 'nowrap',
-            transition: 'background 120ms',
-          }}
-          onMouseEnter={e => {
-            (e.currentTarget as HTMLAnchorElement).style.background = 'var(--nb-yellow)'
-            ;(e.currentTarget as HTMLAnchorElement).style.color = 'var(--nb-ink)'
-          }}
-          onMouseLeave={e => {
-            (e.currentTarget as HTMLAnchorElement).style.background = 'transparent'
-            ;(e.currentTarget as HTMLAnchorElement).style.color = 'var(--nb-yellow)'
-          }}
+          className="shrink-0 inline-flex items-center gap-1 px-3 py-1.5 text-xs font-bold border rounded-lg text-[var(--primary)] border-[var(--primary)] no-underline transition-colors hover:bg-[var(--primary)] hover:text-[var(--primary-foreground)]"
+          style={{ whiteSpace: 'nowrap' }}
         >
           Solve ↗
         </a>
       </div>
 
       {section.note && (
-        <p className="px-4 py-2 text-xs font-bold uppercase tracking-wider border-b-2 border-[var(--nb-border-color)] opacity-70" style={{ background: 'var(--nb-surface)' }}>
+        <p className="px-4 py-2 text-xs font-bold uppercase tracking-wider border-b border-[var(--border)] opacity-70 text-[var(--foreground)] bg-[var(--secondary)]">
           💬 {section.note}
         </p>
       )}
@@ -170,17 +155,26 @@ function renderSection(section: Section, i: number) {
   switch (section.type) {
     case 'heading':
       return section.level === 2
-        ? <h2 key={i} className="nb-heading mt-10 mb-4">{section.text}</h2>
-        : <h3 key={i} className="nb-heading-sm mt-7 mb-3">{section.text}</h3>
+        ? <h2 key={i} className="text-2xl font-bold text-[var(--foreground)] mt-10 mb-4 border-b border-[var(--border)] pb-2">{section.text}</h2>
+        : <h3 key={i} className="text-base font-semibold text-[var(--foreground)] mt-7 mb-3">{section.text}</h3>
     case 'text':
-      return <p key={i} className="my-4 text-base leading-relaxed">{section.content}</p>
-    case 'callout':
+      return <p key={i} className="my-4 text-base leading-relaxed text-[var(--foreground)]">{section.content}</p>
+    case 'callout': {
+      const bgMap: Record<string, string> = {
+        teal:  'bg-[var(--success,#86efac)]/10 border-[var(--success,#86efac)]/20',
+        green: 'bg-[var(--success,#86efac)]/10 border-[var(--success,#86efac)]/20',
+        amber: 'bg-[var(--warning,#fcd34d)]/10 border-[var(--warning,#fcd34d)]/20',
+        red:   'bg-[var(--destructive,#fca5a5)]/10 border-[var(--destructive,#fca5a5)]/20',
+        blue:  'bg-[var(--primary,#3b82f6)]/10 border-[var(--primary,#3b82f6)]/20',
+        gray:  'bg-[var(--secondary)] border-[var(--border)]',
+      }
       return (
-        <div key={i} className={`nb-sticky-note my-6`} style={{ backgroundColor: section.color === 'teal' ? 'var(--nb-teal)' : section.color === 'amber' ? 'var(--nb-yellow)' : section.color === 'gray' ? 'var(--nb-surface-strong)' : section.color === 'green' ? 'var(--nb-green)' : 'var(--nb-pink)' }}>
+        <div key={i} className={`flex gap-3 rounded-xl border p-4 my-6 ${bgMap[section.color] ?? bgMap.gray}`}>
           <span className="mr-2 text-xl flex-shrink-0">{section.icon}</span>
-          <div className="flex-1 text-sm font-medium leading-relaxed whitespace-pre-wrap" dangerouslySetInnerHTML={{ __html: md(section.content) }} />
+          <div className="flex-1 text-sm font-medium leading-relaxed whitespace-pre-wrap text-[var(--foreground)]" dangerouslySetInnerHTML={{ __html: md(section.content) }} />
         </div>
       )
+    }
     case 'code':
       return <ShikiCodeBlock key={i} lang={section.lang || 'javascript'} code={section.code} caption={section.caption} />
     case 'table':
@@ -188,13 +182,13 @@ function renderSection(section: Section, i: number) {
     case 'problem':
       return <ProblemCard key={i} section={section} />
     case 'divider':
-      return <hr key={i} className="my-8 border-t-2 border-[var(--nb-border-color)]" />
+      return <hr key={i} className="my-8 border-t border-[var(--border)]" />
     case 'list':
       return (
         <ul key={i} className="my-4 space-y-2">
           {section.items.map((item, j) => (
-            <li key={j} className="flex items-start gap-2 text-sm">
-              <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[var(--nb-ink)] opacity-60" />
+            <li key={j} className="flex items-start gap-2 text-sm text-[var(--foreground)]">
+              <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[var(--primary)] opacity-60" />
               {item}
             </li>
           ))}
@@ -203,22 +197,22 @@ function renderSection(section: Section, i: number) {
     case 'variation':
       return (
         <div key={i} className="my-8">
-          <h3 className="nb-heading-sm mb-4">{section.title}</h3>
+          <h3 className="text-base font-semibold text-[var(--foreground)] mb-4">{section.title}</h3>
           <ShikiCodeBlock code={section.baseCode} lang="javascript" />
           <div className="mt-6 space-y-4">
             {section.variants.map((v, j) => (
-              <div key={j} className="nb-card bg-[var(--nb-yellow)]">
+              <div key={j} className="rounded-xl border border-[var(--border)] bg-[var(--warning,#fcd34d)]/10">
                 <div className="p-4">
                   <p className="font-bold text-sm">
-                    <a href={v.url} target="_blank" rel="noopener noreferrer" className="text-[var(--nb-ink)] hover:underline">
+                    <a href={v.url} target="_blank" rel="noopener noreferrer" className="text-[var(--foreground)] hover:underline no-underline">
                       {v.problem}
                     </a>
                   </p>
-                  <p className="mt-2 text-xs font-bold uppercase tracking-wider opacity-60">One-line Change:</p>
-                  <div className="mt-1 font-mono text-sm bg-[var(--nb-surface)] p-3 rounded border-2 border-[var(--nb-border-color)]">
+                  <p className="mt-2 text-xs font-bold uppercase tracking-wider opacity-60 text-[var(--foreground)]">One-line Change:</p>
+                  <div className="mt-1 font-mono text-sm bg-[var(--secondary)] p-3 rounded border border-[var(--border)] text-[var(--foreground)]">
                     {v.change}
                   </div>
-                  <p className="mt-2 text-sm opacity-75">{v.why}</p>
+                  <p className="mt-2 text-sm opacity-75 text-[var(--foreground)]">{v.why}</p>
                 </div>
               </div>
             ))}
@@ -243,15 +237,15 @@ function PatternSidebarNav({ currentSlug }: { currentSlug: string }) {
 
   return (
     <nav className="hidden xl:block w-56 shrink-0">
-      <div className="sticky top-24 nb-card bg-[var(--nb-surface)] p-4">
-        <p className="nb-kicker text-xs mb-3">All Patterns</p>
+      <div className="sticky top-24 rounded-xl border border-[var(--border)] bg-[var(--card)] p-4">
+        <p className="text-xs font-bold uppercase tracking-widest text-[var(--primary)] mb-3">All Patterns</p>
         <ul className="space-y-0.5 max-h-96 overflow-y-auto">
           {patterns.map(p => (
             <li key={p.slug}>
               <Link
                 to="/patterns/$pattern"
                 params={{ pattern: p.slug }}
-                className={`flex items-center gap-2 rounded px-2 py-1.5 text-xs font-semibold no-underline transition-colors hover:bg-[var(--nb-yellow)] ${p.slug === currentSlug ? 'bg-[var(--nb-yellow)] font-black' : ''}`}
+                className={`flex items-center gap-2 rounded px-2 py-1.5 text-xs font-semibold no-underline transition-colors hover:bg-[var(--secondary)] hover:text-[var(--foreground)] text-[var(--muted-foreground)] ${p.slug === currentSlug ? 'bg-[var(--secondary)] text-[var(--foreground)] font-black' : ''}`}
               >
                 <span>{p.emoji}</span>
                 <span className="truncate">{p.title}</span>
@@ -268,33 +262,33 @@ function ConceptGroup({ concept, problems }: { concept: string; problems: RawPro
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className="overflow-hidden rounded-xl border border-[var(--nb-border-color)]">
+    <div className="overflow-hidden rounded-xl border border-[var(--border)]">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex w-full items-center gap-3 bg-[var(--nb-surface)] px-4 py-3 text-left transition-colors hover:bg-[var(--nb-surface-strong)]"
+        className="flex w-full items-center gap-3 bg-[var(--secondary)] px-4 py-3 text-left transition-colors hover:bg-[var(--card)]"
       >
-        <span className="text-xs font-bold text-[var(--sea-ink-soft)]">{isOpen ? '▼' : '▶'}</span>
-        <span className="flex-1 font-semibold text-[var(--nb-ink)]">{concept}</span>
-        <span className="rounded-full bg-[var(--chip-bg)] px-2 py-0.5 text-[10px] font-bold text-[var(--sea-ink-soft)] border border-[var(--chip-line)]">
+        <span className="text-xs font-bold text-[var(--muted-foreground)]">{isOpen ? '▼' : '▶'}</span>
+        <span className="flex-1 font-semibold text-[var(--foreground)]">{concept}</span>
+        <span className="rounded-full bg-[var(--card)] px-2 py-0.5 text-[10px] font-bold text-[var(--muted-foreground)] border border-[var(--border)]">
           {problems.length}
         </span>
       </button>
 
       {isOpen && (
-        <div className="divide-y divide-[var(--line)] border-t border-[var(--nb-border-color)] bg-[var(--chip-bg)]">
+        <div className="divide-y divide-[var(--border)] border-t border-[var(--border)] bg-[var(--background)]">
           {problems.map((p, i) => (
             <div key={i} className="flex items-center gap-3 px-4 py-2.5">
-              <span className="w-5 shrink-0 text-center text-[10px] tabular-nums text-[var(--sea-ink-soft)]">{i + 1}</span>
+              <span className="w-5 shrink-0 text-center text-[10px] tabular-nums text-[var(--muted-foreground)]">{i + 1}</span>
               <div className="min-w-0 flex-1">
                 {p.url
                   ? <a href={p.url} target="_blank" rel="noopener noreferrer"
-                      className="block truncate text-sm font-medium text-[var(--sea-ink)] no-underline hover:text-[var(--lagoon-deep)]">
+                      className="block truncate text-sm font-medium text-[var(--foreground)] no-underline hover:text-[var(--primary)]">
                       {p.name}
                     </a>
-                  : <span className="block truncate text-sm font-medium text-[var(--sea-ink)]">{p.name}</span>
+                  : <span className="block truncate text-sm font-medium text-[var(--foreground)]">{p.name}</span>
                 }
               </div>
-              <span className="shrink-0 text-[10px] font-bold text-[var(--sea-ink-soft)] hidden sm:inline">{p.platform}</span>
+              <span className="shrink-0 text-[10px] font-bold text-[var(--muted-foreground)] hidden sm:inline">{p.platform}</span>
               <span className={`shrink-0 text-[10px] font-bold ${diffColor(p.difficulty)}`}>{p.difficulty || '—'}</span>
             </div>
           ))}
@@ -351,31 +345,28 @@ function VariationBlogSection({
     <section className="mb-12">
       {/* Variation Header */}
       <div className="mb-6 flex items-center gap-4">
-        <span
-          className="nb-intuition-badge flex h-10 w-10 items-center justify-center text-lg font-black"
-          style={{ background: 'var(--nb-yellow)', color: 'var(--nb-ink)' }}
-        >
+        <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--primary)] text-lg font-black text-[var(--primary-foreground)]">
           {index + 1}
         </span>
         <div>
-          <h2 className="nb-heading text-xl mb-1">{variation.name}</h2>
-          <p className="text-sm text-[var(--sea-ink-soft)]">{variation.description}</p>
+          <h2 className="text-xl font-bold text-[var(--foreground)] border-b border-[var(--border)] pb-2 mb-1">{variation.name}</h2>
+          <p className="text-sm text-[var(--muted-foreground)]">{variation.description}</p>
         </div>
       </div>
 
       {/* Detailed Explanation */}
-      <div className="nb-card bg-[var(--nb-teal)] mb-6 p-6">
-        <p className="nb-kicker text-xs mb-2">How This Variation Works</p>
-        <p className="text-sm font-medium leading-relaxed">{variation.description}</p>
-        <div className="mt-4 pt-4 border-t-2 border-[var(--nb-border-color)]">
-          <p className="nb-kicker text-xs mb-2">What Changes Across Problems</p>
-          <p className="text-sm font-bold">{variation.minChange}</p>
+      <div className="rounded-xl border border-[var(--border)] bg-[var(--secondary)] mb-6 p-6">
+        <p className="text-xs font-bold uppercase tracking-widest text-[var(--primary)] mb-2">How This Variation Works</p>
+        <p className="text-sm font-medium leading-relaxed text-[var(--foreground)]">{variation.description}</p>
+        <div className="mt-4 pt-4 border-t border-[var(--border)]">
+          <p className="text-xs font-bold uppercase tracking-widest text-[var(--primary)] mb-2">What Changes Across Problems</p>
+          <p className="text-sm font-bold text-[var(--foreground)]">{variation.minChange}</p>
         </div>
       </div>
 
       {/* Code Template */}
       <div className="mb-6">
-        <p className="nb-kicker text-xs mb-3">The Template</p>
+        <p className="text-xs font-bold uppercase tracking-widest text-[var(--muted-foreground)] mb-3">The Template</p>
         <ShikiCodeBlock
           code={variation.templateSnippet}
           lang="javascript"
@@ -388,17 +379,17 @@ function VariationBlogSection({
         <div>
           <div className="mb-4 flex items-center justify-between">
             <div>
-              <h3 className="nb-heading-sm text-base mb-1">
+              <h3 className="text-base font-semibold text-[var(--foreground)] mb-1">
                 {matchingProblems.length} Problems Using This Variation
               </h3>
-              <p className="text-xs text-[var(--sea-ink-soft)]">
+              <p className="text-xs text-[var(--muted-foreground)]">
                 These problems all follow the template above — only the details change.
               </p>
             </div>
             <button
               type="button"
               onClick={() => setShowProblems(!showProblems)}
-              className="nb-chip bg-[var(--nb-teal)] text-xs font-bold"
+              className="inline-flex items-center rounded-full border border-[var(--border)] bg-[var(--secondary)] px-3 py-1 text-xs font-bold text-[var(--foreground)] transition-colors hover:bg-[var(--card)]"
             >
               {showProblems ? '▲ Hide Problems' : `▼ Show ${matchingProblems.length} Problems`}
             </button>
@@ -416,14 +407,14 @@ function VariationBlogSection({
 
       {/* Transition to next variation */}
       {matchingProblems.length === 0 && (
-        <div className="nb-card bg-[var(--nb-surface-strong)] p-6 text-center">
-          <p className="text-sm text-[var(--sea-ink-soft)]">
+        <div className="rounded-xl border border-[var(--border)] bg-[var(--secondary)] p-6 text-center">
+          <p className="text-sm text-[var(--muted-foreground)]">
             Problems for this variation are being categorized. Check back soon!
           </p>
         </div>
       )}
 
-      <hr className="my-10 border-t-2 border-[var(--nb-border-color)]" />
+      <hr className="my-10 border-t border-[var(--border)]" />
     </section>
   )
 }
@@ -479,15 +470,15 @@ function UncategorizedProblems({
     <section className="mt-12">
       <div className="mb-6 flex items-center justify-between">
         <div>
-          <h2 className="nb-heading text-lg mb-1">More Problems (Not Yet Categorized)</h2>
-          <p className="text-sm text-[var(--sea-ink-soft)]">
+          <h2 className="text-lg font-bold text-[var(--foreground)] border-b border-[var(--border)] pb-2 mb-1">More Problems (Not Yet Categorized)</h2>
+          <p className="text-sm text-[var(--muted-foreground)]">
             These problems use this pattern but haven't been mapped to a specific variation yet.
           </p>
         </div>
         <button
           type="button"
           onClick={() => setShowProblems(!showProblems)}
-          className="nb-chip bg-[var(--nb-surface)] text-xs font-bold border border-[var(--nb-border-color)]"
+          className="inline-flex items-center rounded-full border border-[var(--border)] bg-[var(--secondary)] px-3 py-1 text-xs font-bold text-[var(--foreground)] transition-colors hover:bg-[var(--card)]"
         >
           {showProblems ? '▲ Hide' : `▼ Show ${uncategorized.length}`}
         </button>
@@ -543,9 +534,9 @@ function PatternDetailPage() {
   }, [problems, variations])
 
   return (
-    <main className="nb-page-wrap px-4 pb-20 pt-8">
+    <main className="mx-auto max-w-5xl px-4 pb-20 pt-8">
       {/* Breadcrumb */}
-      <div className="mb-6 flex items-center gap-2 text-xs font-bold uppercase tracking-wider opacity-60">
+      <div className="mb-6 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[var(--muted-foreground)]">
         <Link to="/patterns" className="no-underline hover:opacity-100">Patterns</Link>
         <span>/</span>
         {part && (
@@ -562,28 +553,28 @@ function PatternDetailPage() {
 
         <div className="min-w-0 flex-1">
           {/* Hero */}
-          <div className="nb-card bg-[var(--nb-teal)] mb-10 p-7 sm:p-10">
+          <div className="rounded-xl border border-[var(--border)] bg-[var(--secondary)] mb-10 p-7 sm:p-10">
             <div className="flex items-start gap-4 flex-wrap sm:flex-nowrap">
               <span className="text-5xl flex-shrink-0">{pattern.emoji}</span>
               <div className="flex-1 min-w-0">
-                <p className="nb-kicker mb-1">Pattern Reference</p>
-                <h1 className="nb-display text-[clamp(1.6rem,4vw,2.8rem)] leading-tight mb-2">
+                <p className="text-xs font-bold uppercase tracking-widest text-[var(--primary)] mb-1">Pattern Reference</p>
+                <h1 className="text-[clamp(1.6rem,4vw,2.8rem)] font-bold leading-tight mb-2 text-[var(--foreground)]">
                   {pattern.title}
                 </h1>
-                <p className="text-sm font-bold italic mb-3" style={{ opacity: 0.7 }}>
+                <p className="text-sm font-bold italic mb-3 text-[var(--muted-foreground)]">
                   "{pattern.tagline}"
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2 items-center">
-                  <span className="nb-chip bg-[var(--nb-surface)]">
+                  <span className="inline-flex items-center rounded-full border border-[var(--border)] bg-[var(--card)] px-3 py-1 text-sm font-medium text-[var(--foreground)]">
                     {loading ? 'Loading...' : `${problems.length.toLocaleString()} problems`}
                   </span>
                   {variations && variations.length > 0 && (
-                    <span className="nb-chip bg-[var(--nb-yellow)]">
+                    <span className="inline-flex items-center rounded-full border border-[var(--border)] bg-[var(--warning,#fcd34d)]/20 px-3 py-1 text-sm font-medium text-[var(--foreground)]">
                       {variations.length} variations
                     </span>
                   )}
                   {variations && totalCategorized > 0 && (
-                    <span className="nb-chip bg-[var(--nb-green)]">
+                    <span className="inline-flex items-center rounded-full border border-[var(--border)] bg-[var(--success,#86efac)]/20 px-3 py-1 text-sm font-medium text-[var(--foreground)]">
                       {totalCategorized} mapped to variations
                     </span>
                   )}
@@ -597,8 +588,8 @@ function PatternDetailPage() {
             <div className="mb-8">
               <div className="mb-8 flex flex-wrap items-end gap-4">
                 <div>
-                  <h2 className="nb-heading">Variations</h2>
-                  <p className="mt-1 text-sm text-[var(--sea-ink-soft)]">
+                  <h2 className="text-2xl font-bold text-[var(--foreground)] border-b border-[var(--border)] pb-2">Variations</h2>
+                  <p className="mt-1 text-sm text-[var(--muted-foreground)]">
                     One core pattern — multiple approaches. Each variation solves a different set of problems.
                   </p>
                 </div>
@@ -608,9 +599,9 @@ function PatternDetailPage() {
                       value={search}
                       onChange={e => setSearch(e.target.value)}
                       placeholder="Search across all problems…"
-                      className="w-full rounded-xl border border-[var(--chip-line)] bg-[var(--chip-bg)] px-4 py-2 pl-9 text-sm text-[var(--sea-ink)] outline-none focus:border-[var(--lagoon)]"
+                      className="w-full rounded-xl border border-[var(--border)] bg-[var(--secondary)] px-4 py-2 pl-9 text-sm text-[var(--foreground)] outline-none focus:border-[var(--primary)]"
                     />
-                    <svg className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[var(--sea-ink-soft)]" width="13" height="13" viewBox="0 0 16 16" fill="none">
+                    <svg className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[var(--muted-foreground)]" width="13" height="13" viewBox="0 0 16 16" fill="none">
                       <circle cx="7" cy="7" r="5.5" stroke="currentColor" strokeWidth="1.5"/>
                       <path d="M11 11L14.5 14.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
                     </svg>
@@ -649,9 +640,9 @@ function PatternDetailPage() {
 
           {/* Deep Dive Article (if exists) */}
           {article && article.sections.length > 0 && (
-            <div className="mt-16 border-t-2 border-[var(--nb-border-color)] pt-10">
-              <h2 className="nb-heading mb-6">Deep Dive Tutorial</h2>
-              <div className="nb-article-body">
+            <div className="mt-16 border-t border-[var(--border)] pt-10">
+              <h2 className="text-xl font-bold text-[var(--foreground)] mb-6">Deep Dive Tutorial</h2>
+              <div className="prose prose-sm max-w-none">
                 {article.sections.map((section, i) => renderSection(section, i))}
               </div>
             </div>
@@ -669,8 +660,8 @@ function PatternDetailPage() {
           )}
 
           {/* Footer Navigation */}
-          <div className="mt-12 flex gap-4 flex-wrap border-t-2 border-[var(--nb-border-color)] pt-8">
-            <Link to="/patterns" className="nb-btn nb-btn-outline no-underline">
+          <div className="mt-12 flex gap-4 flex-wrap border-t border-[var(--border)] pt-8">
+            <Link to="/patterns" className="inline-flex items-center rounded-lg border border-[var(--border)] bg-[var(--default)] px-4 py-2 text-sm font-medium text-[var(--foreground)] no-underline transition-colors hover:bg-[var(--default)]">
               ← All Patterns
             </Link>
           </div>
@@ -727,7 +718,7 @@ function AllProblemsSimple({
     <div>
       <div className="mb-6 flex flex-wrap items-end gap-4">
         <div>
-          <h2 className="nb-heading">All {topicName} Problems</h2>
+          <h2 className="text-xl font-bold text-[var(--foreground)]">All {topicName} Problems</h2>
           <p className="mt-1 text-sm text-[var(--sea-ink-soft)]">
             {loading ? 'Loading…' : `${problems.length.toLocaleString()} problems · ${groups.length} concept groups`}
           </p>
@@ -760,20 +751,20 @@ function AllProblemsSimple({
           {groups.map(([concept, probs]) => {
             const isOpen = openGroups.has(concept)
             return (
-              <div key={concept} className="overflow-hidden rounded-xl border border-[var(--nb-border-color)]">
+              <div key={concept} className="overflow-hidden rounded-xl border border-[var(--border)]">
                 <button
                   onClick={() => toggleGroup(concept)}
-                  className="flex w-full items-center gap-3 bg-[var(--nb-surface)] px-4 py-3 text-left transition-colors hover:bg-[var(--nb-surface-strong)]"
+                  className="flex w-full items-center gap-3 bg-[var(--surface)] px-4 py-3 text-left transition-colors hover:bg-[var(--default)]"
                 >
                   <span className="text-xs font-bold text-[var(--sea-ink-soft)]">{isOpen ? '▼' : '▶'}</span>
-                  <span className="flex-1 font-semibold text-[var(--nb-ink)]">{concept}</span>
+                  <span className="flex-1 font-semibold text-[var(--foreground)]">{concept}</span>
                   <span className="rounded-full bg-[var(--chip-bg)] px-2 py-0.5 text-[10px] font-bold text-[var(--sea-ink-soft)] border border-[var(--chip-line)]">
                     {probs.length}
                   </span>
                 </button>
 
                 {isOpen && (
-                  <div className="divide-y divide-[var(--line)] border-t border-[var(--nb-border-color)] bg-[var(--chip-bg)]">
+                  <div className="divide-y divide-[var(--line)] border-t border-[var(--border)] bg-[var(--chip-bg)]">
                     {probs.map((p, i) => (
                       <div key={i} className="flex items-center gap-3 px-4 py-2.5">
                         <span className="w-5 shrink-0 text-center text-[10px] tabular-nums text-[var(--sea-ink-soft)]">{i + 1}</span>

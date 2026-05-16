@@ -544,16 +544,16 @@ const PATTERNS: PatternEntry[] = [
 ]
 
 const LEVEL_COLORS: Record<string, string> = {
-  Beginner: "var(--nb-green)",
-  Intermediate: "var(--nb-yellow)",
-  Advanced: "var(--nb-pink)",
+  Beginner: "oklch(0.75 0.15 145)",
+  Intermediate: "oklch(0.88 0.15 90)",
+  Advanced: "oklch(0.80 0.15 345)",
 }
 
 const STATUS_BADGES: Record<string, { bg: string; label: string }> = {
-  "ready": { bg: "var(--nb-green)", label: "Ready" },
-  "needs mapping": { bg: "var(--nb-yellow)", label: "Needs Mapping" },
-  "needs review": { bg: "var(--nb-orange)", label: "Needs Review" },
-  "advanced / later": { bg: "var(--nb-purple)", label: "Advanced / Later" },
+  "ready": { bg: "oklch(0.75 0.15 145)", label: "Ready" },
+  "needs mapping": { bg: "oklch(0.88 0.15 90)", label: "Needs Mapping" },
+  "needs review": { bg: "oklch(0.80 0.15 60)", label: "Needs Review" },
+  "advanced / later": { bg: "oklch(0.70 0.15 290)", label: "Advanced / Later" },
 }
 
 const DIFFICULTY_ORDER = { Beginner: 0, Intermediate: 1, Advanced: 2 }
@@ -572,33 +572,33 @@ function PatternCard({ pattern, index }: { pattern: PatternEntry; index: number 
       style={{ animationDelay: `${delay}ms` }}
     >
       <article
-        className="relative h-full rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] p-5 shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)] transition-all duration-200 hover:shadow-[6px_6px_0px_var(--nb-border-color,#0f0f0f)] hover:-translate-x-[2px] hover:-translate-y-[2px]"
+        className="relative h-full rounded-xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-md transition-all duration-200 hover:shadow-lg"
       >
-        <div className="absolute -right-3 -top-3 flex h-10 w-10 items-center justify-center rounded-lg border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] text-xl shadow-[3px_3px_0px_var(--nb-border-color,#0f0f0f)] transition-all duration-200 group-hover:rotate-12">
+        <div className="absolute -right-3 -top-3 flex h-10 w-10 items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--surface)] text-xl shadow-sm transition-all duration-200 group-hover:rotate-12">
           {pattern.emoji}
         </div>
 
         <div className="flex items-start gap-3 mb-3">
           <span
-            className="inline-flex items-center rounded-full border-2 border-[var(--nb-border-color,#0f0f0f)] px-2.5 py-0.5 text-[10px] font-black uppercase tracking-wider shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)]"
-            style={{ backgroundColor: LEVEL_COLORS[pattern.level], color: "var(--nb-on-accent,#111)" }}
+            className="inline-flex items-center rounded-full border border-[var(--border)] px-2.5 py-0.5 text-[10px] font-black uppercase tracking-wider shadow-sm"
+            style={{ backgroundColor: LEVEL_COLORS[pattern.level], color: "white" }}
           >
             {pattern.level}
           </span>
           {statusBadge && (
             <span
-              className="inline-flex items-center rounded-full border-2 border-[var(--nb-border-color,#0f0f0f)] px-2.5 py-0.5 text-[10px] font-black uppercase tracking-wider shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)]"
-              style={{ backgroundColor: statusBadge.bg, color: "var(--nb-on-accent,#111)" }}
+              className="inline-flex items-center rounded-full border border-[var(--border)] px-2.5 py-0.5 text-[10px] font-black uppercase tracking-wider shadow-sm"
+              style={{ backgroundColor: statusBadge.bg, color: "white" }}
             >
               {statusBadge.label}
             </span>
           )}
         </div>
 
-        <h3 className="nb-heading-sm text-sm font-black text-[var(--nb-ink,#111)] tracking-tight">
+        <h3 className="text-sm font-semibold text-[var(--foreground)] tracking-tight">
           {pattern.name}
         </h3>
-        <p className="mt-1 text-xs leading-relaxed text-[var(--nb-ink,#111)] opacity-75 line-clamp-2">
+        <p className="mt-1 text-xs leading-relaxed text-[var(--foreground)] opacity-75 line-clamp-2">
           {pattern.description}
         </p>
 
@@ -606,23 +606,23 @@ function PatternCard({ pattern, index }: { pattern: PatternEntry; index: number 
           {pattern.dataStructures.slice(0, 3).map((ds) => (
             <span
               key={ds}
-              className="inline-flex items-center rounded-md border border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface-strong,#f0ece6)] px-1.5 py-0.5 text-[9px] font-bold"
+              className="inline-flex items-center rounded-md border border-[var(--border)] bg-[var(--default)] px-1.5 py-0.5 text-[9px] font-bold"
             >
               {ds}
             </span>
           ))}
         </div>
 
-        <div className="mt-4 flex items-center justify-between border-t-2 border-[var(--nb-border-color,#0f0f0f)] pt-3">
+        <div className="mt-4 flex items-center justify-between border-t border-[var(--border)] pt-3">
           <div className="flex items-baseline gap-1">
-            <span className="nb-display text-xl font-black tabular-nums text-[var(--nb-ink,#111)]">
+            <span className="text-xl font-black tabular-nums text-[var(--foreground)]">
               {pattern.problemCount.toLocaleString()}
             </span>
-            <span className="text-[9px] font-bold uppercase tracking-wider text-[var(--nb-ink,#111)] opacity-60">
+            <span className="text-[9px] font-bold uppercase tracking-wider text-[var(--foreground)] opacity-60">
               problems
             </span>
           </div>
-          <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--nb-ink,#111)] opacity-50 transition-opacity group-hover:opacity-100">
+          <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--foreground)] opacity-50 transition-opacity group-hover:opacity-100">
             {pattern.complexity}
           </span>
         </div>
@@ -634,14 +634,14 @@ function PatternCard({ pattern, index }: { pattern: PatternEntry; index: number 
 function SectionHeader({ text, color }: { text: string; color: string }) {
   return (
     <div className="mb-6 flex items-center gap-3">
-      <div className="h-1 flex-1 border-t-2 border-[var(--nb-border-color,#0f0f0f)]" />
+      <div className="h-1 flex-1 border-t border-[var(--border)]" />
       <span
-        className="nb-heading-sm inline-flex items-center gap-2 rounded-full border-2 border-[var(--nb-border-color,#0f0f0f)] px-4 py-1.5 text-xs font-black uppercase tracking-widest shadow-[3px_3px_0px_var(--nb-border-color,#0f0f0f)]"
+        className="text-sm font-semibold text-[var(--foreground)] inline-flex items-center gap-2 rounded-full border border-[var(--border)] px-4 py-1.5 text-xs font-black uppercase tracking-widest shadow-sm"
         style={{ backgroundColor: color }}
       >
         {text}
       </span>
-      <div className="h-1 flex-1 border-t-2 border-[var(--nb-border-color,#0f0f0f)]" />
+      <div className="h-1 flex-1 border-t border-[var(--border)]" />
     </div>
   )
 }
@@ -657,7 +657,7 @@ function Callout({
 }) {
   return (
     <div
-      className="my-6 flex items-start gap-3 rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] p-4 shadow-[3px_3px_0px_var(--nb-border-color,#0f0f0f)]"
+      className="my-6 flex items-start gap-3 rounded-xl border border-[var(--border)] p-4 shadow-sm"
       style={{ backgroundColor: color }}
     >
       <span className="mt-0.5 shrink-0 text-lg">{icon}</span>
@@ -694,19 +694,19 @@ function PatternOverviewPage() {
   const advancedPatterns = filtered.filter((p) => p.level === "Advanced")
 
   return (
-    <main className="nb-page-wrap px-4 pb-20 pt-10 sm:pt-14">
+    <main className="mx-auto max-w-7xl px-4 pb-20 pt-10 sm:pt-14">
       {/* ── Hero ─────────────────────────────────────── */}
-      <section className="mb-10 rounded-2xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-yellow,#ffe566)] p-8 sm:p-10 shadow-[8px_8px_0px_var(--nb-border-color,#0f0f0f)]">
+      <section className="mb-10 rounded-2xl border border-[var(--border)] bg-[oklch(0.88_0.15_90)] p-8 sm:p-10 shadow-lg">
         <div className="flex items-start gap-6 flex-wrap sm:flex-nowrap">
-          <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] text-4xl shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)]">
+          <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-xl border border-[var(--border)] bg-[var(--surface)] text-4xl shadow-md">
             🧩
           </div>
           <div className="flex-1 min-w-0">
-            <p className="nb-kicker mb-2 text-xs">Pattern-Based Problem Solving</p>
-            <h1 className="nb-display text-[clamp(2rem,6vw,3.5rem)] leading-tight text-[var(--nb-on-accent,#111)]">
+            <p className="text-xs font-bold uppercase tracking-widest text-[var(--accent)] mb-2">Pattern-Based Problem Solving</p>
+            <h1 className="text-[clamp(2rem,6vw,3.5rem)] leading-tight text-white">
               DSA Pattern Guide
             </h1>
-            <p className="mt-3 text-sm leading-relaxed text-[var(--nb-on-accent,#111)] opacity-80 max-w-2xl">
+            <p className="mt-3 text-sm leading-relaxed text-white opacity-80 max-w-2xl">
               Patterns are the skeleton of every algorithm. Learn the skeleton once, and you can
               apply it to hundreds of problems. This guide maps every pattern to the problems in this
               repository — 38,000+ problems, organized by the shape of their solution.
@@ -717,13 +717,13 @@ function PatternOverviewPage() {
 
       {/* ── Introduction ──────────────────────────────── */}
       <section className="mb-12">
-        <SectionHeader text="What Are DSA Patterns?" color="var(--nb-teal)" />
+        <SectionHeader text="What Are DSA Patterns?" color="oklch(0.75 0.12 185)" />
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <div
-            className="rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] p-6 shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)]"
+            className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6 shadow-md"
           >
-            <h3 className="nb-heading-sm text-sm font-black mb-2">Why Patterns Matter</h3>
+            <h3 className="text-sm font-semibold text-[var(--foreground)] mb-2">Why Patterns Matter</h3>
             <p className="text-sm leading-relaxed opacity-80">
               Most DSA problems are not truly unique. They are variations of a smaller set of
               structural patterns. When you recognise the pattern behind a problem, you already know
@@ -731,9 +731,9 @@ function PatternOverviewPage() {
             </p>
           </div>
           <div
-            className="rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] p-6 shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)]"
+            className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6 shadow-md"
           >
-            <h3 className="nb-heading-sm text-sm font-black mb-2">Patterns &gt; Memorisation</h3>
+            <h3 className="text-sm font-semibold text-[var(--foreground)] mb-2">Patterns &gt; Memorisation</h3>
             <p className="text-sm leading-relaxed opacity-80">
               Nobody remembers 38,000 solutions. But you can remember 40 patterns and derive the
               rest. This is how strong engineers think: they don't brute-force recall solutions, they
@@ -741,9 +741,9 @@ function PatternOverviewPage() {
             </p>
           </div>
           <div
-            className="rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] p-6 shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)]"
+            className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6 shadow-md"
           >
-            <h3 className="nb-heading-sm text-sm font-black mb-2">One Problem, Multiple Patterns</h3>
+            <h3 className="text-sm font-semibold text-[var(--foreground)] mb-2">One Problem, Multiple Patterns</h3>
             <p className="text-sm leading-relaxed opacity-80">
               Many problems sit at the intersection of multiple patterns. A problem might use
               sliding window for the outer loop and a hash map for the inner state. This guide
@@ -752,7 +752,7 @@ function PatternOverviewPage() {
           </div>
         </div>
 
-        <Callout icon="📌" color="var(--nb-teal)">
+        <Callout icon="📌" color="oklch(0.75 0.12 185)">
           <strong>Built from real data.</strong> Every pattern in this guide is mapped against the
           repository's actual problem list — 38,000+ problems across 50+ platforms. This is not a
           generic internet list. If a problem doesn't fit a pattern, the guide says so.
@@ -761,9 +761,9 @@ function PatternOverviewPage() {
 
       {/* ── What This Page Is Not ─────────────────────── */}
       <section className="mb-12">
-        <SectionHeader text="What This Page Is Not" color="var(--nb-pink)" />
+        <SectionHeader text="What This Page Is Not" color="oklch(0.80 0.15 345)" />
 
-        <div className="rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface-strong,#f0ece6)] p-6 shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)]">
+        <div className="rounded-xl border border-[var(--border)] bg-[var(--default)] p-6 shadow-md">
           <ul className="space-y-3 text-sm">
             {[
               "This is not the /learn section. /learn is a separate learning path. /pattern is a structural reference map.",
@@ -773,7 +773,7 @@ function PatternOverviewPage() {
               "This is not a solved puzzle guide that gives away answers. It teaches you how to think so you can solve unseen problems.",
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-2">
-                <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[var(--nb-pink,#ff9ec4)]" />
+                <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[var(--accent)]" />
                 <span className="leading-relaxed">{item}</span>
               </li>
             ))}
@@ -783,7 +783,7 @@ function PatternOverviewPage() {
 
       {/* ── Pattern Taxonomy ─────────────────────────── */}
       <section className="mb-12">
-        <SectionHeader text="Pattern Taxonomy" color="var(--nb-green)" />
+        <SectionHeader text="Pattern Taxonomy" color="oklch(0.75 0.15 145)" />
 
         <p className="mb-6 text-sm leading-relaxed opacity-80">
           The patterns below are grouped by experience level — not by data structure or topic.
@@ -798,10 +798,10 @@ function PatternOverviewPage() {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search patterns by name, description, or signals..."
-              className="w-full rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] px-5 py-3 pl-11 text-sm font-semibold text-[var(--nb-ink,#111)] outline-none shadow-[3px_3px_0px_var(--nb-border-color,#0f0f0f)] transition-all placeholder:text-[var(--nb-ink-soft,#3a3a3a)] placeholder:opacity-60 focus:ring-2 focus:ring-[var(--nb-pink,#ff9ec4)]"
+              className="w-full rounded-xl border border-[var(--border)] bg-[var(--surface)] px-5 py-3 pl-11 text-sm text-[var(--foreground)] outline-none transition-all placeholder:text-[var(--muted)] focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent)]/20"
             />
             <svg
-              className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[var(--nb-ink-soft,#3a3a3a)]"
+              className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[var(--muted)]"
               width="16"
               height="16"
               viewBox="0 0 16 16"
@@ -817,7 +817,7 @@ function PatternOverviewPage() {
             <button
               type="button"
               onClick={() => setSearch("")}
-              className="rounded-lg border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-pink,#ff9ec4)] px-3 py-2 text-[10px] font-black shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)] transition-all hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px]"
+              className="rounded-lg border border-[var(--border)] bg-[var(--default)] px-3 py-2 text-[10px] font-semibold text-[var(--foreground)] transition-colors hover:bg-[var(--accent)] hover:text-white hover:border-[var(--accent)]"
             >
               ✕ Clear
             </button>
@@ -826,7 +826,7 @@ function PatternOverviewPage() {
           <button
             type="button"
             onClick={() => setShowAdvanced((v) => !v)}
-            className={`rounded-lg border-2 border-[var(--nb-border-color,#0f0f0f)] px-3 py-2 text-[10px] font-black uppercase tracking-wider shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)] transition-all hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] ${showAdvanced ? "bg-[var(--nb-pink,#ff9ec4)]" : "bg-[var(--nb-surface,#fff9f0)]"}`}
+            className={`rounded-lg border border-[var(--border)] px-3 py-2 text-[10px] font-semibold uppercase tracking-wider transition-colors ${showAdvanced ? "bg-[var(--accent)] text-white border-[var(--accent)]" : "bg-[var(--default)] text-[var(--foreground)]"}`}
           >
             {showAdvanced ? "Hide Advanced" : "Show Advanced"}
           </button>
@@ -834,9 +834,9 @@ function PatternOverviewPage() {
 
         {/* Pattern Grids */}
         {search && filtered.length === 0 ? (
-          <div className="rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] p-12 text-center shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)]">
+          <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-12 text-center">
             <p className="text-4xl">🔍</p>
-            <p className="mt-4 text-base font-bold text-[var(--nb-ink,#111)]">
+            <p className="mt-4 text-base font-bold text-[var(--foreground)]">
               No patterns match "{search}"
             </p>
           </div>
@@ -846,7 +846,8 @@ function PatternOverviewPage() {
               <div className="mb-8">
                 <div className="mb-3 flex items-center gap-2">
                   <span
-                    className="inline-flex items-center rounded-full border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-green,#a8f0b8)] px-3 py-0.5 text-[11px] font-black uppercase tracking-wider shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)]"
+                    className="inline-flex items-center rounded-full border border-[var(--border)] px-3 py-0.5 text-[11px] font-semibold uppercase tracking-wider"
+                  style={{ backgroundColor: 'oklch(0.75 0.15 145)', color: 'white' }}
                   >
                     Beginner Foundation
                   </span>
@@ -864,7 +865,8 @@ function PatternOverviewPage() {
               <div className="mb-8">
                 <div className="mb-3 flex items-center gap-2">
                   <span
-                    className="inline-flex items-center rounded-full border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-yellow,#ffe566)] px-3 py-0.5 text-[11px] font-black uppercase tracking-wider shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)]"
+                    className="inline-flex items-center rounded-full border border-[var(--border)] px-3 py-0.5 text-[11px] font-semibold uppercase tracking-wider"
+                  style={{ backgroundColor: 'oklch(0.88 0.15 90)', color: '#111' }}
                   >
                     Core Intermediate
                   </span>
@@ -882,7 +884,8 @@ function PatternOverviewPage() {
               <div className="mb-8">
                 <div className="mb-3 flex items-center gap-2">
                   <span
-                    className="inline-flex items-center rounded-full border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-pink,#ff9ec4)] px-3 py-0.5 text-[11px] font-black uppercase tracking-wider shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)]"
+                    className="inline-flex items-center rounded-full border border-[var(--border)] px-3 py-0.5 text-[11px] font-semibold uppercase tracking-wider"
+                  style={{ backgroundColor: 'oklch(0.70 0.15 290)', color: 'white' }}
                   >
                     Advanced
                   </span>
@@ -901,10 +904,10 @@ function PatternOverviewPage() {
 
       {/* ── Visual Guide ──────────────────────────────── */}
       <section className="mb-12">
-        <SectionHeader text="Pattern Decision Tree" color="var(--nb-purple)" />
+        <SectionHeader text="Pattern Decision Tree" color="oklch(0.70 0.15 290)" />
 
-        <div className="rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] p-6 shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)] overflow-x-auto">
-          <pre className="text-xs leading-relaxed font-mono text-[var(--nb-ink,#111)]" style={{ whiteSpace: "pre" }}>
+        <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6 overflow-x-auto">
+          <pre className="text-xs leading-relaxed font-mono text-[var(--foreground)]" style={{ whiteSpace: "pre" }}>
 {`Start with a problem...
 
 ├── Is it about counting or looking up something fast?
@@ -978,7 +981,7 @@ function PatternOverviewPage() {
           </pre>
         </div>
 
-        <Callout icon="💡" color="var(--nb-yellow)">
+        <Callout icon="💡" color="oklch(0.88 0.15 90 / 40%)">
           <strong>Visualisation todo:</strong> Each pattern page should eventually have an animated
           diagram showing how the algorithm moves through data — sliding window movement, pointer
           traversal, recursion tree, graph BFS expansion, DP state transitions, etc. These will be
@@ -988,7 +991,7 @@ function PatternOverviewPage() {
 
       {/* ── How to Use This Guide ─────────────────────── */}
       <section className="mb-12">
-        <SectionHeader text="How to Use This Guide" color="var(--nb-blue)" />
+        <SectionHeader text="How to Use This Guide" color="oklch(0.65 0.15 240)" />
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {[
@@ -1001,12 +1004,12 @@ function PatternOverviewPage() {
           ].map(({ num, title, desc }) => (
             <div
               key={num}
-              className="rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] p-5 shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)]"
+              className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-5"
             >
-              <span className="inline-flex items-center justify-center h-8 w-8 rounded-lg border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-yellow,#ffe566)] text-xs font-black shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)]">
+              <span className="inline-flex items-center justify-center h-8 w-8 rounded-lg border border-[var(--border)] bg-[var(--default)] text-xs font-bold text-[var(--foreground)]">
                 {num}
               </span>
-              <h3 className="nb-heading-sm text-sm font-black mt-3">{title}</h3>
+              <h3 className="text-sm font-semibold text-[var(--foreground)] mt-3">{title}</h3>
               <p className="mt-1 text-xs leading-relaxed opacity-75">{desc}</p>
             </div>
           ))}
@@ -1015,13 +1018,13 @@ function PatternOverviewPage() {
 
       {/* ── Recommended Learning Roadmap ──────────────── */}
       <section className="mb-12">
-        <SectionHeader text="Recommended Learning Roadmap" color="var(--nb-orange)" />
+        <SectionHeader text="Recommended Learning Roadmap" color="oklch(0.80 0.15 60)" />
 
-        <div className="rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] p-6 shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)]">
+        <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6">
           {[
             {
               level: "Beginner Foundation",
-              color: "var(--nb-green)",
+              color: "oklch(0.75 0.15 145)",
               patterns: [
                 "Hash Map / Frequency Counting",
                 "Two Pointers",
@@ -1036,7 +1039,7 @@ function PatternOverviewPage() {
             },
             {
               level: "Core Intermediate",
-              color: "var(--nb-yellow)",
+              color: "oklch(0.88 0.15 90)",
               patterns: [
                 "Linked List Patterns",
                 "Recursion",
@@ -1054,7 +1057,7 @@ function PatternOverviewPage() {
             },
             {
               level: "Advanced Intermediate",
-              color: "var(--nb-pink)",
+              color: "oklch(0.80 0.15 345)",
               patterns: [
                 "Monotonic Stack",
                 "Monotonic Queue / Deque",
@@ -1069,7 +1072,7 @@ function PatternOverviewPage() {
             },
             {
               level: "Advanced",
-              color: "var(--nb-purple)",
+              color: "oklch(0.70 0.15 290)",
               patterns: [
                 "Knapsack DP",
                 "Interval DP",
@@ -1094,8 +1097,8 @@ function PatternOverviewPage() {
             <div key={level} className="mb-6 last:mb-0">
               <div className="flex items-center gap-2 mb-2">
                 <span
-                  className="inline-flex items-center rounded-full border-2 border-[var(--nb-border-color,#0f0f0f)] px-3 py-0.5 text-[11px] font-black uppercase tracking-wider shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)]"
-                  style={{ backgroundColor: color, color: "var(--nb-on-accent,#111)" }}
+                  className="inline-flex items-center rounded-full border border-[var(--border)] px-3 py-0.5 text-[11px] font-semibold uppercase tracking-wider"
+                  style={{ backgroundColor: color, color: color === "oklch(0.88 0.15 90)" ? "#111" : "white" }}
                 >
                   {level}
                 </span>
@@ -1105,7 +1108,7 @@ function PatternOverviewPage() {
                 {patterns.map((p) => (
                   <span
                     key={p}
-                    className="inline-flex items-center rounded-lg border border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface-strong,#f0ece6)] px-2.5 py-1 text-[11px] font-semibold"
+                    className="inline-flex items-center rounded-lg border border-[var(--border)] bg-[var(--default)] px-2.5 py-1 text-[11px] font-medium text-[var(--foreground)]"
                   >
                     {p}
                   </span>
@@ -1119,9 +1122,9 @@ function PatternOverviewPage() {
 
       {/* ── Coverage Tracker Plan ──────────────────────── */}
       <section className="mb-12">
-        <SectionHeader text="Coverage Tracker Plan" color="var(--nb-red)" />
+        <SectionHeader text="Coverage Tracker Plan" color="oklch(0.65 0.15 15)" />
 
-        <div className="rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] p-6 shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)]">
+        <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6">
           <p className="text-sm leading-relaxed mb-4">
             Every pattern page in this guide maps problems from the repository's 38,000+ problem
             list. The mapping is done incrementally — each pattern article adds its own mappings.
@@ -1132,11 +1135,11 @@ function PatternOverviewPage() {
             <table className="w-full border-collapse text-xs">
               <thead>
                 <tr>
-                  <th className="text-left font-black uppercase tracking-wider p-2 border-b-2 border-[var(--nb-border-color,#0f0f0f)]">Pattern</th>
-                  <th className="text-left font-black uppercase tracking-wider p-2 border-b-2 border-[var(--nb-border-color,#0f0f0f)]">Problems</th>
-                  <th className="text-left font-black uppercase tracking-wider p-2 border-b-2 border-[var(--nb-border-color,#0f0f0f)]">Level</th>
-                  <th className="text-left font-black uppercase tracking-wider p-2 border-b-2 border-[var(--nb-border-color,#0f0f0f)]">Status</th>
-                  <th className="text-left font-black uppercase tracking-wider p-2 border-b-2 border-[var(--nb-border-color,#0f0f0f)]">Complexity</th>
+                  <th className="text-left font-black uppercase tracking-wider p-2 border-b border-[var(--border)]">Pattern</th>
+                  <th className="text-left font-semibold uppercase tracking-wider p-2 border-b border-[var(--border)]">Problems</th>
+                  <th className="text-left font-semibold uppercase tracking-wider p-2 border-b border-[var(--border)]">Level</th>
+                  <th className="text-left font-semibold uppercase tracking-wider p-2 border-b border-[var(--border)]">Status</th>
+                  <th className="text-left font-semibold uppercase tracking-wider p-2 border-b border-[var(--border)]">Complexity</th>
                 </tr>
               </thead>
               <tbody>
@@ -1147,12 +1150,12 @@ function PatternOverviewPage() {
                 }).map((p) => {
                   const badge = STATUS_BADGES[p.status]
                   return (
-                    <tr key={p.slug} className="border-b border-[var(--nb-border-color,#0f0f0f)] last:border-0 hover:bg-[var(--nb-surface-strong,#f0ece6)]">
+                    <tr key={p.slug} className="border-b border-[var(--border)] last:border-0 hover:bg-[var(--default)]">
                       <td className="p-2">
                         <Link
                           to="/pattern/$slug"
                           params={{ slug: p.slug }}
-                          className="font-bold text-[var(--nb-ink,#111)] no-underline hover:underline"
+                          className="font-semibold text-[var(--foreground)] no-underline hover:underline"
                         >
                           {p.emoji} {p.name}
                         </Link>
@@ -1160,8 +1163,8 @@ function PatternOverviewPage() {
                       <td className="p-2 tabular-nums font-semibold">{p.problemCount.toLocaleString()}</td>
                       <td className="p-2">
                         <span
-                          className="inline-flex items-center rounded-full border border-[var(--nb-border-color,#0f0f0f)] px-2 py-0.5 text-[9px] font-bold"
-                          style={{ backgroundColor: LEVEL_COLORS[p.level], color: "var(--nb-on-accent,#111)" }}
+                          className="inline-flex items-center rounded-full border border-[var(--border)] px-2 py-0.5 text-[9px] font-bold text-white"
+                          style={{ backgroundColor: LEVEL_COLORS[p.level] }}
                         >
                           {p.level}
                         </span>
@@ -1169,8 +1172,8 @@ function PatternOverviewPage() {
                       <td className="p-2">
                         {badge && (
                           <span
-                            className="inline-flex items-center rounded-full border border-[var(--nb-border-color,#0f0f0f)] px-2 py-0.5 text-[9px] font-bold"
-                            style={{ backgroundColor: badge.bg, color: "var(--nb-on-accent,#111)" }}
+                            className="inline-flex items-center rounded-full border border-[var(--border)] px-2 py-0.5 text-[9px] font-bold text-white"
+                            style={{ backgroundColor: badge.bg }}
                           >
                             {badge.label}
                           </span>
@@ -1184,7 +1187,7 @@ function PatternOverviewPage() {
             </table>
           </div>
 
-          <div className="mt-4 rounded-lg border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-yellow,#ffe566)] p-4 text-xs leading-relaxed">
+          <div className="mt-4 rounded-lg border border-[var(--border)] bg-[oklch(0.88_0.15_90_/_30%)] p-4 text-xs leading-relaxed">
             <strong>How tracking works:</strong> Each pattern article maps problems incrementally.
             A problem is tracked by its URL, primary pattern, secondary patterns, template variant,
             and last-reviewed date. The goal is not to map all 38,000+ problems instantly — it is to
@@ -1197,19 +1200,19 @@ function PatternOverviewPage() {
 
       {/* ── Understanding Pattern Statuses ─────────────── */}
       <section className="mb-12">
-        <SectionHeader text="Pattern Status Guide" color="var(--nb-purple)" />
+        <SectionHeader text="Pattern Status Guide" color="oklch(0.70 0.15 290)" />
 
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {[
-            { badge: "Ready", bg: "var(--nb-green)", desc: "Pattern article is written with templates, variants, and problem mappings. Ready to study." },
-            { badge: "Needs Mapping", bg: "var(--nb-yellow)", desc: "Pattern article structure exists but problem-to-pattern mapping from the repository is not yet done." },
-            { badge: "Needs Review", bg: "var(--nb-orange)", desc: "Pattern has initial mapping but needs verification. Some problems may be incorrectly assigned." },
-            { badge: "Advanced / Later", bg: "var(--nb-purple)", desc: "Pattern is advanced and planned for a later pass. Not a priority for the current phase." },
+            { badge: "Ready", bg: "oklch(0.75 0.15 145)", desc: "Pattern article is written with templates, variants, and problem mappings. Ready to study." },
+            { badge: "Needs Mapping", bg: "oklch(0.88 0.15 90)", desc: "Pattern article structure exists but problem-to-pattern mapping from the repository is not yet done." },
+            { badge: "Needs Review", bg: "oklch(0.80 0.15 60)", desc: "Pattern has initial mapping but needs verification. Some problems may be incorrectly assigned." },
+            { badge: "Advanced / Later", bg: "oklch(0.70 0.15 290)", desc: "Pattern is advanced and planned for a later pass. Not a priority for the current phase." },
           ].map(({ badge, bg, desc }) => (
             <div
               key={badge}
-              className="rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] p-4 shadow-[3px_3px_0px_var(--nb-border-color,#0f0f0f)]"
-              style={{ backgroundColor: bg }}
+              className="rounded-xl border border-[var(--border)] p-4"
+              style={{ backgroundColor: bg, color: bg === "oklch(0.88 0.15 90)" ? "#111" : "white" }}
             >
               <span className="text-[10px] font-black uppercase tracking-wider">{badge}</span>
               <p className="mt-1 text-xs leading-relaxed opacity-80">{desc}</p>
@@ -1219,9 +1222,9 @@ function PatternOverviewPage() {
       </section>
 
       {/* ── Next Step ──────────────────────────────────── */}
-      <section className="rounded-2xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-teal,#7ee8e2)] p-8 sm:p-10 shadow-[8px_8px_0px_var(--nb-border-color,#0f0f0f)]">
+      <section className="rounded-2xl border border-[var(--border)] bg-gradient-to-br from-[var(--surface)] to-[var(--surface-secondary)] p-8 sm:p-10">
         <div className="max-w-2xl">
-          <h2 className="nb-display text-2xl font-black mb-3 text-[var(--nb-on-accent,#111)]">
+          <h2 className="text-2xl font-bold mb-3 text-[var(--foreground)]">
             Ready to Start?
           </h2>
           <p className="text-sm leading-relaxed opacity-80 mb-6">
@@ -1234,7 +1237,7 @@ function PatternOverviewPage() {
             <Link
               to="/pattern/$slug"
               params={{ slug: "two-pointers" }}
-              className="inline-flex items-center gap-2 rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-surface,#fff9f0)] px-6 py-3 text-sm font-black shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)] transition-all duration-150 hover:shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)] hover:translate-x-[2px] hover:translate-y-[2px] active:shadow-none active:translate-x-[4px] active:translate-y-[4px]"
+              className="inline-flex items-center gap-2 rounded-xl border border-[var(--border)] bg-[var(--default)] px-6 py-3 text-sm font-semibold text-[var(--foreground)] transition-colors hover:bg-[var(--accent)] hover:text-white hover:border-[var(--accent)]"
             >
               <span>👆</span>
               <span>Start with Two Pointers</span>
@@ -1242,14 +1245,14 @@ function PatternOverviewPage() {
             <Link
               to="/pattern/$slug"
               params={{ slug: "sliding-window" }}
-              className="inline-flex items-center gap-2 rounded-xl border-2 border-[var(--nb-border-color,#0f0f0f)] bg-[var(--nb-yellow,#ffe566)] px-6 py-3 text-sm font-black shadow-[4px_4px_0px_var(--nb-border-color,#0f0f0f)] transition-all duration-150 hover:shadow-[2px_2px_0px_var(--nb-border-color,#0f0f0f)] hover:translate-x-[2px] hover:translate-y-[2px] active:shadow-none active:translate-x-[4px] active:translate-y-[4px]"
+              className="inline-flex items-center gap-2 rounded-xl border border-[var(--border)] bg-[var(--surface)] px-6 py-3 text-sm font-semibold text-[var(--foreground)] transition-colors hover:border-[var(--accent)]/50"
             >
               <span>🪟</span>
               <span>Or Sliding Window</span>
             </Link>
           </div>
           <p className="mt-4 text-xs leading-relaxed opacity-60">
-            The next pattern article will be written under <code className="nb-inline-code">/pattern/&lt;slug&gt;</code>.
+            The next pattern article will be written under <code className="rounded bg-[var(--default)] px-1 py-0.5 font-mono text-[11px]">/pattern/&lt;slug&gt;</code>.
             Each article one at a time, starting with the pattern you choose above.
           </p>
         </div>
