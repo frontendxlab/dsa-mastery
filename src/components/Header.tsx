@@ -44,8 +44,8 @@ export default function Header() {
 
 				{/* Logo */}
 				<RouterLink to="/" className="flex items-center gap-2.5 no-underline shrink-0">
-					<div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[var(--accent)] shadow-sm">
-						<span className="text-sm font-black text-white">fx</span>
+					<div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[var(--foreground)] shadow-sm">
+						<span className="text-sm font-black text-[var(--background)]">fx</span>
 					</div>
 					<span className="hidden sm:block text-sm font-bold text-[var(--foreground)]">
 						frontendx<span className="text-[var(--muted)] font-normal"> · DSA</span>

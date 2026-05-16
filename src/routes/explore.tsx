@@ -291,6 +291,7 @@ function ExplorePage() {
           <select
             value={platform}
             onChange={e => patch({ platform: e.target.value })}
+            aria-label="Filter by platform"
             className="rounded-lg border border-[var(--chip-line)] bg-[var(--chip-bg)] px-3 py-2 text-xs font-medium text-[var(--sea-ink)] outline-none"
           >
             <option value="all">All platforms</option>
@@ -300,7 +301,7 @@ function ExplorePage() {
           <div className="flex overflow-hidden rounded-lg border border-[var(--chip-line)]">
             {(['tier', 'range'] as const).map(m => (
               <button key={m} onClick={() => patch({ diff: m })}
-                className={`px-3 py-2 text-xs font-semibold transition-colors ${diffMode === m ? 'bg-[var(--lagoon)] text-white' : 'bg-[var(--chip-bg)] text-[var(--sea-ink-soft)]'}`}>
+                className={`px-3 py-2 text-xs font-semibold transition-colors ${diffMode === m ? 'bg-[var(--lagoon)] text-[var(--sand)]' : 'bg-[var(--chip-bg)] text-[var(--sea-ink-soft)]'}`}>
                 {m === 'tier' ? 'Tier filter' : 'Rating range'}
               </button>
             ))}
