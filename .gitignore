@@ -12,6 +12,7 @@ dist-ssr
 __unconfig*
 todos.json
 public/data/*.json
+public/data/books/
 
 # repowise API keys (local)
 .repowise/.env

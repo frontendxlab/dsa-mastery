@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
+import { motion } from 'framer-motion'
 import { BOOKS, getTotalProblems } from '#/data/books'
 
 export const Route = createFileRoute('/books/')({ component: BooksPage })
@@ -12,51 +13,60 @@ const BOOK_ICONS: Record<string, string> = {
 function BookCard({ book }: { book: typeof BOOKS[0] }) {
   const count = getTotalProblems(book)
   return (
-    <Link to="/books/$bookSlug" params={{ bookSlug: book.slug }} className="book-card group no-underline block">
-      <div className="book-card-inner" style={{ '--book-color': book.accentColor } as React.CSSProperties}>
-        {/* Color bar top */}
-        <div className="book-card-bar" style={{ background: `linear-gradient(90deg, ${book.color}, ${book.accentColor})` }} />
-
-        {/* Header */}
-        <div className="book-card-head">
-          <div className="book-card-icon">{BOOK_ICONS[book.slug]}</div>
-          <div className="book-card-badge">{book.shortTitle}</div>
-        </div>
-
-        {/* Title + author */}
-        <h3 className="book-card-title">{book.title}</h3>
-        <p className="book-card-author">by {book.author}{book.edition ? ` · ${book.edition} Ed.` : ''}{book.year ? ` · ${book.year}` : ''}</p>
-        <p className="book-card-desc">{book.description}</p>
-
-        {/* Stats */}
-        <div className="book-card-stats">
-          <div className="book-stat">
-            <span className="book-stat-val" style={{ color: book.accentColor }}>{count}</span>
-            <span className="book-stat-lbl">Problems</span>
+    <Link to="/books/$bookSlug" params={{ bookSlug: book.slug }} className="book-card no-underline block">
+      <motion.div
+        className="book-card-inner"
+        data-focusable
+        whileHover={{ borderRadius: 0 }}
+        transition={{ type: 'spring', stiffness: 400, damping: 30 }}
+      >
+        {/* Cover background image */}
+        {book.coverUrl ? (
+          <div className="bk-cover-bg">
+            <img src={book.coverUrl} alt="" className="bk-cover-bg-img" />
           </div>
-          <div className="book-stat">
-            <span className="book-stat-val" style={{ color: book.accentColor }}>{book.chapters.length}</span>
-            <span className="book-stat-lbl">Chapters</span>
+        ) : (
+          <div className="bk-cover-fallback">
+            <span className="bk-cover-fallback-text">{book.shortTitle}</span>
           </div>
-          <div className="book-stat">
-            <span className="book-stat-val" style={{ color: book.accentColor }}>{book.totalProblems.toLocaleString()}</span>
-            <span className="book-stat-lbl">Book Total</span>
+        )}
+
+        {/* Card content — above cover bg */}
+        <div className="bk-card-body">
+          {/* Header */}
+          <div className="book-card-head">
+            <div className="book-card-icon">{BOOK_ICONS[book.slug]}</div>
+            <div className="book-card-badge">{book.shortTitle}</div>
+          </div>
+
+          {/* Title + author */}
+          <h3 className="book-card-title">{book.title}</h3>
+          <p className="book-card-author">by {book.author}{book.edition ? ` · ${book.edition} Ed.` : ''}{book.year ? ` · ${book.year}` : ''}</p>
+          <p className="book-card-desc">{book.description}</p>
+
+          {/* Stats */}
+          <div className="book-card-stats">
+            <div className="book-stat">
+              <span className="book-stat-val">{count}</span>
+              <span className="book-stat-lbl">Problems</span>
+            </div>
+            <div className="book-stat">
+              <span className="book-stat-val">{book.chapters.length}</span>
+              <span className="book-stat-lbl">Chapters</span>
+            </div>
+            <div className="book-stat">
+              <span className="book-stat-val">{book.totalProblems.toLocaleString()}</span>
+              <span className="book-stat-lbl">Book Total</span>
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div className="book-card-cta">
+            <span>Explore Problems</span>
+            <span className="book-cta-arrow">→</span>
           </div>
         </div>
-
-        {/* Tags */}
-        <div className="book-card-tags">
-          {book.tags.slice(0, 4).map(t => (
-            <span key={t} className="book-tag">{t}</span>
-          ))}
-        </div>
-
-        {/* CTA */}
-        <div className="book-card-cta">
-          <span>Explore Problems</span>
-          <span className="book-cta-arrow">→</span>
-        </div>
-      </div>
+      </motion.div>
     </Link>
   )
 }
@@ -84,7 +94,11 @@ function BooksPage() {
         {/* Coming soon */}
         <div className="books-coming">
           <p className="books-coming-title">More books coming</p>
-          <p className="books-coming-sub">Introduction to Algorithms (CLRS) · Elements of Programming Interviews · Algorithm Design Manual</p>
+          <div className="books-coming-list">
+            <span className="books-coming-item">Introduction to Algorithms (CLRS)</span>
+            <span className="books-coming-item">Elements of Programming Interviews</span>
+            <span className="books-coming-item">Algorithm Design Manual</span>
+          </div>
         </div>
       </div>
     </main>

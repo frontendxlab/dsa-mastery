@@ -1,145 +1,117 @@
 import { createFileRoute, Link, notFound } from '@tanstack/react-router'
 import { getBook, getTotalProblems } from '#/data/books'
-import type { BookChapter, BookProblem } from '#/data/books'
+import type { BookChapter } from '#/data/books'
 import { useState } from 'react'
+import { ChapterAccordion } from '#/components/chapter-accordion'
 
 export const Route = createFileRoute('/books/$bookSlug')({
-  loader: ({ params }) => {
-    const book = getBook(params.bookSlug)
-    if (!book) throw notFound()
-    return { book }
+  loader: async ({ params }) => {
+    const meta = getBook(params.bookSlug)
+    if (!meta) throw notFound()
+
+    try {
+      const res = await fetch(`/data/books/${params.bookSlug}.json`)
+      if (res.ok) {
+        const full = await res.json() as { chapters: BookChapter[]; totalExtracted?: number; matchedToDb?: number }
+        return {
+          book: { ...meta, chapters: full.chapters },
+          totalExtracted: full.totalExtracted ?? getTotalProblems(meta),
+          matchedToDb: full.matchedToDb ?? 0,
+        }
+      }
+    } catch { /* fall through */ }
+
+    return { book: meta, totalExtracted: getTotalProblems(meta), matchedToDb: 0 }
   },
   component: BookDetailPage,
 })
 
-const DIFF_COLOR: Record<string, string> = {
-  Easy: '#34d399',
-  Medium: '#fbbf24',
-  Hard: '#f87171',
-  Classic: '#a78bfa',
-  Puzzle: '#60a5fa',
-}
-
-function ProblemRow({ p }: { p: BookProblem }) {
-  const dColor = p.difficulty ? (DIFF_COLOR[p.difficulty] ?? '#7d8299') : '#7d8299'
-  return (
-    <div className="bp-row">
-      <span className="bp-id">{p.id}</span>
-      <span className="bp-title">{p.title}</span>
-      {p.hint && (
-        <span className="bp-hint" title={p.hint}>💡</span>
-      )}
-      <div className="bp-tags">
-        {(p.tags ?? []).slice(0, 3).map(t => <span key={t} className="bp-tag">{t}</span>)}
-      </div>
-      {p.difficulty && (
-        <span className="bp-diff" style={{ color: dColor, borderColor: dColor + '44', background: dColor + '12' }}>
-          {p.difficulty}
-        </span>
-      )}
-      {p.lcNum && (
-        <a
-          href={`https://leetcode.com/problems/`}
-          target="_blank" rel="noreferrer"
-          className="bp-lc"
-          title={`LC #${p.lcNum}`}
-        >
-          LC #{p.lcNum}
-        </a>
-      )}
-    </div>
-  )
-}
-
-function ChapterBlock({ chapter, accent }: { chapter: BookChapter; accent: string }) {
-  const [open, setOpen] = useState(false)
-  return (
-    <div className="bk-chapter">
-      <button
-        className="bk-ch-head"
-        onClick={() => setOpen(o => !o)}
-        aria-expanded={open}
-      >
-        <span className="bk-ch-num" style={{ color: accent }}>{chapter.num}</span>
-        <span className="bk-ch-title">{chapter.title}</span>
-        {chapter.page && <span className="bk-ch-page">p.{chapter.page}</span>}
-        <span className="bk-ch-count">{chapter.problems.length} problems</span>
-        <span className="bk-ch-chevron" style={{ transform: open ? 'rotate(180deg)' : 'rotate(0deg)' }}>▾</span>
-      </button>
-
-      {chapter.summary && !open && (
-        <p className="bk-ch-summary">{chapter.summary}</p>
-      )}
-
-      {open && (
-        <div className="bk-ch-body">
-          {chapter.summary && <p className="bk-ch-summary-open">{chapter.summary}</p>}
-          <div className="bp-list">
-            {chapter.problems.map(p => <ProblemRow key={p.id} p={p} />)}
-          </div>
-        </div>
-      )}
-    </div>
-  )
-}
-
 function BookDetailPage() {
-  const { book } = Route.useLoaderData()
+  const { book, totalExtracted, matchedToDb } = Route.useLoaderData()
   const [search, setSearch] = useState('')
   const [diffFilter, setDiffFilter] = useState<string>('all')
+  const [platformFilter, setPlatformFilter] = useState<string>('all')
 
   const filteredChapters = book.chapters.map(ch => ({
     ...ch,
     problems: ch.problems.filter(p => {
-      const matchSearch = !search || p.title.toLowerCase().includes(search.toLowerCase()) || p.id.toLowerCase().includes(search.toLowerCase()) || (p.tags ?? []).some(t => t.toLowerCase().includes(search.toLowerCase()))
+      const q = search.toLowerCase()
+      const matchSearch = !search
+        || p.title.toLowerCase().includes(q)
+        || p.id.toLowerCase().includes(q)
+        || (p.tags ?? []).some(t => t.toLowerCase().includes(q))
       const matchDiff = diffFilter === 'all' || p.difficulty === diffFilter
-      return matchSearch && matchDiff
+      const matchPlatform = platformFilter === 'all' || p.platform === platformFilter || (p.matchPlatform === platformFilter)
+      return matchSearch && matchDiff && matchPlatform
     }),
   })).filter(ch => ch.problems.length > 0)
 
   const totalShown = filteredChapters.reduce((s, c) => s + c.problems.length, 0)
-  const allProblems = getTotalProblems(book)
 
   return (
     <main className="book-detail-page">
       <div className="page-wrap">
-        {/* Breadcrumb */}
         <nav className="bk-breadcrumb">
           <Link to="/books" className="bk-bc-link">Books</Link>
           <span className="bk-bc-sep">›</span>
           <span className="bk-bc-cur">{book.shortTitle}</span>
         </nav>
 
-        {/* Book header */}
-        <div className="bk-header" style={{ '--book-accent': book.accentColor } as React.CSSProperties}>
-          <div className="bk-header-bar" style={{ background: `linear-gradient(90deg, ${book.color}, ${book.accentColor})` }} />
+        <div className="bk-header">
+          <div className="bk-header-bar" />
           <div className="bk-header-body">
+            {book.coverUrl ? (
+              <div className="bk-header-cover">
+                <img src={book.coverUrl} alt="" className="bk-header-cover-img" />
+              </div>
+            ) : (
+              <div className="bk-header-cover-fallback" style={{ background: `linear-gradient(135deg, ${book.accentColor}22, ${book.color}44)` }}>
+                <span className="bk-cover-fallback-text-lg" style={{ color: book.accentColor }}>{book.shortTitle}</span>
+              </div>
+            )}
             <div className="bk-header-meta">
               <h1 className="bk-header-title">{book.title}</h1>
               <p className="bk-header-author">by {book.author}{book.edition ? ` · ${book.edition} Edition` : ''}{book.year ? ` · ${book.year}` : ''}</p>
               <p className="bk-header-desc">{book.description}</p>
               <div className="bk-header-stats">
                 <div className="bk-hstat">
-                  <span className="bk-hstat-val" style={{ color: book.accentColor }}>{allProblems}</span>
-                  <span className="bk-hstat-lbl">Listed Problems</span>
+                  <span className="bk-hstat-val">{totalExtracted}</span>
+                  <span className="bk-hstat-lbl">Extracted Problems</span>
                 </div>
                 <div className="bk-hstat">
-                  <span className="bk-hstat-val" style={{ color: book.accentColor }}>{book.chapters.length}</span>
+                  <span className="bk-hstat-val">{book.chapters.length}</span>
                   <span className="bk-hstat-lbl">Chapters</span>
                 </div>
                 <div className="bk-hstat">
-                  <span className="bk-hstat-val" style={{ color: book.accentColor }}>{book.totalProblems.toLocaleString()}</span>
+                  <span className="bk-hstat-val">{matchedToDb}</span>
+                  <span className="bk-hstat-lbl">Linked to DB</span>
+                </div>
+                <div className="bk-hstat">
+                  <span className="bk-hstat-val">{book.totalProblems.toLocaleString()}</span>
                   <span className="bk-hstat-lbl">Book Total</span>
                 </div>
               </div>
               <div className="bk-header-tags">
                 {book.tags.map(t => <span key={t} className="bk-htag" style={{ borderColor: book.accentColor + '44', color: book.accentColor }}>{t}</span>)}
               </div>
+              {(book.sources ?? []).length > 0 && (
+                <div className="bk-sources">
+                  <span className="bk-sources-label">Get the book:</span>
+                  <div className="bk-sources-list">
+                    {(book.sources ?? []).map((s, i) => (
+                      <a key={i} href={s.url} target="_blank" rel="noreferrer"
+                        className="bk-source-link"
+                        style={{ borderColor: book.accentColor + '33', color: book.accentColor }}>
+                        {s.type === 'free' && '📖 '}{s.type === 'amazon' && '🛒 '}{s.type === 'lulu' && '📗 '}{s.type === 'oreilly' && '📘 '}{s.type === 'github' && '💻 '}{s.type === 'official' && '🌐 '}{s.label}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
 
-        {/* Filter bar */}
         <div className="bk-filters">
           <input
             type="text"
@@ -163,11 +135,12 @@ function BookDetailPage() {
           <span className="bk-count-badge">{totalShown} shown</span>
         </div>
 
-        {/* Chapters */}
         <div className="bk-chapters">
-          {filteredChapters.map(ch => (
-            <ChapterBlock key={ch.num} chapter={ch} accent={book.accentColor} />
-          ))}
+          <ChapterAccordion
+            chapters={filteredChapters}
+            accent={book.accentColor}
+            parts={book.parts}
+          />
           {filteredChapters.length === 0 && (
             <div className="bk-empty">No problems match your filter.</div>
           )}
