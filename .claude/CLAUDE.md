@@ -41,7 +41,7 @@ style: <UI/CSS changes>
 > (documentation, ownership, history, decisions). **Always verify against
 > actual source files before making changes** — the index may be stale.
 
-Last indexed: 2026-05-19 (commit e5fc49b). Confidence: 100%.
+Last indexed: 2026-05-19 (commit fdaa55e). Confidence: 100%.
 ### Key Modules
 | Module | Purpose | Owner |
 |--------|---------|-------|
@@ -59,7 +59,7 @@ Last indexed: 2026-05-19 (commit e5fc49b). Confidence: 100%.
 **Infra:** Vite### Hotspots (High Churn)
 | File | Churn | 90d Commits | Owner |
 |------|-------|-------------|-------|
-| `src/styles.css` | 100.0th %ile | 18 | rashidtvmr |
+| `src/styles.css` | 100.0th %ile | 19 | rashidtvmr |
 | `src/routes/index.tsx` | 99.9th %ile | 13 | rashidtvmr |
 | `pnpm-lock.yaml` | 99.9th %ile | 7 | rashidtvmr |
 | `math/all_math_problems.csv` | 99.8th %ile | 4 | rashidtvmr |

@@ -8,7 +8,7 @@
   "scripts": {
     "preprocess": "node scripts/build-db.mjs && node --experimental-strip-types scripts/build-book-db.mjs",
     "dev": "node scripts/build-db.mjs && node --experimental-strip-types scripts/build-book-db.mjs && vite dev --port 3000",
-    "build": "node scripts/build-db.mjs && node --experimental-strip-types scripts/build-book-db.mjs && vite build",
+    "build": "node scripts/build-db.mjs && node --experimental-strip-types scripts/build-book-db.mjs && python3 scripts/expand_books.py && python3 scripts/generate_books_ts.py && node --experimental-strip-types scripts/build-book-db.mjs && vite build",
     "preview": "vite preview",
     "test": "vitest run",
     "format": "biome format",

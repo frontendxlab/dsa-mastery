@@ -46,30 +46,30 @@ function ProblemRow({ p, accent }: { p: BookProblem; accent: string }) {
   const pColor = platformLabel ? (PLATFORM_COLOR[platformLabel] ?? 'var(--muted-foreground)') : 'var(--muted-foreground)'
 
   return (
-    <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '4px 0', fontSize: 13, flexWrap: 'wrap' }}>
-      <span style={{ color: 'var(--muted-foreground)', fontFamily: 'ui-monospace,monospace', minWidth: 32, fontSize: 11 }}>{p.id}</span>
+    <div style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '10px 0', fontSize: 14, flexWrap: 'wrap' }}>
+      <span style={{ color: 'var(--muted-foreground)', fontFamily: 'ui-monospace,monospace', minWidth: 36, fontSize: 12 }}>{p.id}</span>
       {practiceUrl ? (
         <a href={practiceUrl} target="_blank" rel="noreferrer"
-          style={{ color: 'var(--foreground)', textDecoration: 'none', fontWeight: 500 }}>
+          style={{ color: 'var(--foreground)', textDecoration: 'none', fontWeight: 500, lineHeight: 1.4 }}>
           {p.title}
         </a>
       ) : (
-        <span style={{ color: 'var(--foreground)', fontWeight: 500 }}>{p.title}</span>
+        <span style={{ color: 'var(--foreground)', fontWeight: 500, lineHeight: 1.4 }}>{p.title}</span>
       )}
-      {p.hint && <span title={p.hint} style={{ cursor: 'help', fontSize: 12, opacity: 0.4 }}>💡</span>}
-      <div style={{ display: 'flex', gap: 4, flexWrap: 'wrap' }}>
+      {p.hint && <span title={p.hint} style={{ cursor: 'help', fontSize: 13, opacity: 0.4 }}>💡</span>}
+      <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
         {(p.tags ?? []).slice(0, 2).map(t => (
-          <span key={t} style={{ fontSize: 10, color: 'var(--muted-foreground)', opacity: 0.6 }}>{t}</span>
+          <span key={t} style={{ fontSize: 11, color: 'var(--muted-foreground)', opacity: 0.6 }}>{t}</span>
         ))}
       </div>
       {p.difficulty && (
-        <span style={{ fontSize: 10, padding: '1px 6px', borderRadius: 4, border: '1px solid', color: dColor, borderColor: dColor + '44', background: dColor + '12' }}>
+        <span style={{ fontSize: 11, padding: '2px 8px', borderRadius: 4, border: '1px solid', color: dColor, borderColor: dColor + '44', background: dColor + '12' }}>
           {p.difficulty}
         </span>
       )}
       {practiceUrl && platformLabel && (
         <a href={practiceUrl} target="_blank" rel="noreferrer"
-          style={{ fontSize: 10, padding: '1px 6px', borderRadius: 4, border: '1px solid', color: pColor, borderColor: pColor + '40', background: pColor + '10', textDecoration: 'none' }}>
+          style={{ fontSize: 11, padding: '2px 8px', borderRadius: 4, border: '1px solid', color: pColor, borderColor: pColor + '40', background: pColor + '10', textDecoration: 'none', fontWeight: 500 }}>
           {platformLabel} ↗
         </a>
       )}
@@ -152,7 +152,7 @@ function ChapterItem({ item, setOpenId, index, total, openIndex }: ChapterItemPr
               cursor: 'pointer',
               alignItems: 'center',
               justifyContent: 'space-between',
-              padding: '10px 12px',
+              padding: '14px 16px',
               border: 'none',
               background: 'none',
               color: 'inherit',

@@ -33,8 +33,8 @@ def read_json(slug):
 
 # ── Book definitions ──────────────────────────────────────────────────────────
 
-# All 6 JSON books will be read from existing JSON data
-JSON_BOOKS = ['ctci', 'cp4', 'cph', 'ai', 'clrs', 'hd']
+# All books will be read from JSON data
+JSON_BOOKS = ['ctci', 'cp4', 'cph', 'ai', 'clrs', 'hd', 'dsamadeasy', 'grokking', 'progchal', 'math4cs', 'setslogic', 'algodaily', 'guidetocp', 'gamam', 'progintervexp', 'advdsalgo']
 
 # 11 remaining books — define realistic data
 REMAINING_BOOKS = [
@@ -811,8 +811,13 @@ def main():
         else:
             print(f"  ⚠ Missing JSON: {slug}")
     
-    # Generated books order: JSON books first, then remaining
-    generated_order = JSON_BOOKS + [b['slug'] for b in REMAINING_BOOKS]
+    # Generated books order: JSON books first, then remaining (deduplicated)
+    seen = set()
+    generated_order = []
+    for slug in JSON_BOOKS + [b['slug'] for b in REMAINING_BOOKS]:
+        if slug not in seen:
+            seen.add(slug)
+            generated_order.append(slug)
     
     # ── Generate TS ──────────────────────────────────────────────────────
     ts = '''export interface BookProblem {
