@@ -2682,11 +2682,11 @@ a.ex-prob-name:hover { color: #3b9eff; }
   background: var(--card); border: 1px solid var(--border);
   color: var(--foreground);
 }
-.book-card-title { font-size: 14px; font-weight: 700; color: #e8eaf0; padding: 0 16px; margin-bottom: 2px; line-height: 1.3; }
-.book-card-author { font-size: 10px; color: rgba(232,234,240,.4); padding: 0 16px; margin-bottom: 8px; font-family: ui-monospace, monospace; }
-.book-card-desc { font-size: 12.5px; color: var(--muted); padding: 0 20px; line-height: 1.6; margin-bottom: 16px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.book-card-title { font-size: 14px; font-weight: 700; color: #e8eaf0; padding: 0 16px; margin-bottom: 2px; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.book-card-author { font-size: 10px; color: rgba(232,234,240,.4); padding: 0 16px; margin-bottom: 8px; font-family: ui-monospace, monospace; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.book-card-desc { font-size: 12.5px; color: var(--muted); padding: 0 16px; line-height: 1.55; margin-bottom: 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 
-.book-card-stats { display: flex; gap: 0; border-top: 1px solid rgba(214,235,253,.06); border-bottom: 1px solid rgba(214,235,253,.06); margin-bottom: 14px; }
+.book-card-stats { display: flex; gap: 0; border-top: 1px solid rgba(214,235,253,.06); border-bottom: 1px solid rgba(214,235,253,.06); margin-left: 16px; margin-right: 16px; margin-bottom: 10px; }
 .book-stat { flex: 1; padding: 10px 0; text-align: center; border-right: 1px solid rgba(214,235,253,.06); }
 .book-stat:last-child { border-right: none; }
 .book-stat-val { display: block; font-size: 17px; font-weight: 800; font-family: ui-monospace, monospace; letter-spacing: -.03em; color: var(--accent); }
@@ -2697,7 +2697,8 @@ a.ex-prob-name:hover { color: #3b9eff; }
 
 .book-card-cta {
   display: flex; align-items: center; justify-content: space-between;
-  margin: 0 20px 0; padding: 8px 12px;
+  margin-top: auto;
+  margin-left: 16px; margin-right: 16px; padding: 8px 12px;
   border-radius: 8px; background: rgba(255,255,255,.04);
   border: 1px solid rgba(255,255,255,.07);
   font-size: 12px; font-weight: 600; color: var(--accent);

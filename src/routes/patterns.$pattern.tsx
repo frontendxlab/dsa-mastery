@@ -114,7 +114,7 @@ function ProblemCard({ section }: { section: Extract<Section, { type: 'problem' 
     easy: 'diff-easy', medium: 'diff-medium', hard: 'diff-hard', 'n/a': '',
   }
   return (
-    <div className="my-6 rounded-xl border border-[var(--border)] bg-[var(--card)] overflow-hidden shadow-sm">
+    <div data-focusable="card" className="my-6 rounded-xl border border-[var(--border)] bg-[var(--card)] overflow-hidden shadow-sm">
       <div className="flex items-start gap-3 p-4 border-b border-[var(--border)] bg-[var(--secondary)]">
         <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[var(--foreground)] text-xs font-bold text-[var(--background)]">{section.num}</span>
         <div className="flex-1 min-w-0">
@@ -239,7 +239,7 @@ function PatternSidebarNav({ currentSlug }: { currentSlug: string }) {
 
   return (
     <nav className="hidden xl:block w-56 shrink-0">
-      <div className="sticky top-24 rounded-xl border border-[var(--border)] bg-[var(--card)] p-4">
+      <div data-focusable="card" className="sticky top-24 rounded-xl border border-[var(--border)] bg-[var(--card)] p-4">
         <p className="text-xs font-bold uppercase tracking-widest text-[var(--primary)] mb-3">All Patterns</p>
         <ul className="space-y-0.5 max-h-96 overflow-y-auto">
           {patterns.map(p => (

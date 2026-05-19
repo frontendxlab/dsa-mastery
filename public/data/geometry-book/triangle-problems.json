@@ -21,6 +21,11 @@
       "content": "If rectangles are the workhorses of geometry, triangles are its magic wands. Triangles are the simplest rigid shape \u2014 the only polygon that cannot be deformed without changing side lengths. This makes them fundamental to everything from bridge construction to computer graphics."
     },
     {
+      "type": "hint_card",
+      "question": "Why does triangle inequality matter in code?",
+      "answer": "It is the cheapest validity check you will ever write \u2014 O(1), no floating point, no edge cases. Sort the three sides (if unsorted), check that the sum of the two smaller ones exceeds the largest. That is it. This single check is the heart of problems like \"Valid Triangle Number\" and \"Largest Perimeter Triangle.\""
+    },
+    {
       "type": "text",
       "content": "**What makes triangles special?**"
     },
@@ -66,14 +71,16 @@
       "content": "For any valid triangle with side lengths `a, b, c`:"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "a + b > c\na + c > b\nb + c > a",
-      "caption": null
+      "type": "text",
+      "content": "$$a + b > c$$\n$$a + c > b$$\n$$b + c > a$$"
     },
     {
       "type": "text",
       "content": "All three must hold. If any is violated, the triangle is **degenerate** (three collinear points)."
+    },
+    {
+      "type": "interactive_diagram",
+      "diagram": "triangle-inequality"
     },
     {
       "type": "text",
@@ -85,24 +92,24 @@
       "text": "2.2 Types of Triangles"
     },
     {
+      "type": "interactive_diagram",
+      "diagram": "triangle-type"
+    },
+    {
       "type": "text",
       "content": "**By sides:**"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "Equilateral:  a == b == c\nIsosceles:   a == b or b == c or a == c\nScalene:     all sides different",
-      "caption": null
+      "type": "text",
+      "content": "**Equilateral:** $$a = b = c$$\n**Isosceles:** $$a = b$$ or $$b = c$$ or $$a = c$$\n**Scalene:** all sides different"
     },
     {
       "type": "text",
       "content": "**By angles (using law of cosines, with sides a <= b <= c):**"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "Acute:   c^2 < a^2 + b^2    (all angles < 90\u00b0)\nRight:   c^2 == a^2 + b^2   (one angle = 90\u00b0)\nObtuse:  c^2 > a^2 + b^2    (one angle > 90\u00b0)",
-      "caption": null
+      "type": "text",
+      "content": "**Acute:** $$c^2 < a^2 + b^2$$ (all angles < 90\u00b0)\n**Right:** $$c^2 = a^2 + b^2$$ (one angle = 90\u00b0)\n**Obtuse:** $$c^2 > a^2 + b^2$$ (one angle > 90\u00b0)"
     },
     {
       "type": "heading",
@@ -114,40 +121,36 @@
       "content": "**Base-height:**"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "Area = (1/2) * base * height",
-      "caption": null
+      "type": "text",
+      "content": "$$\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height}$$"
     },
     {
       "type": "text",
       "content": "**Heron's formula** (when all three sides are known):"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "s = (a + b + c) / 2            (semi-perimeter)\nArea = sqrt(s * (s-a) * (s-b) * (s-c))",
-      "caption": null
+      "type": "text",
+      "content": "$$s = \\frac{a + b + c}{2}$$ (semi-perimeter)\n\n$$\\text{Area} = \\sqrt{s(s-a)(s-b)(s-c)}$$"
+    },
+    {
+      "type": "interactive_diagram",
+      "diagram": "triangle-area"
     },
     {
       "type": "text",
       "content": "**Coordinate formula** (shoelace for 3 points):"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "Area = (1/2) * |x1*(y2-y3) + x2*(y3-y1) + x3*(y1-y2)|",
-      "caption": null
+      "type": "text",
+      "content": "$$\\text{Area} = \\frac{1}{2} \\left| x_1(y_2-y_3) + x_2(y_3-y_1) + x_3(y_1-y_2) \\right|$$"
     },
     {
       "type": "text",
       "content": "**Using cross product:**"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "vectors AB = B - A, AC = C - A\nArea = |cross(AB, AC)| / 2",
-      "caption": null
+      "type": "text",
+      "content": "Vectors $$\\vec{AB} = B - A$$, $$\\vec{AC} = C - A$$\n\n$$\\text{Area} = \\frac{|\\text{cross}(AB, AC)|}{2}$$"
     },
     {
       "type": "heading",
@@ -198,10 +201,8 @@
       "content": "**Area from medians** (m_a, m_b, m_c are median lengths):"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "s_m = (m_a + m_b + m_c) / 2\nArea = (4/3) * sqrt(s_m * (s_m - m_a) * (s_m - m_b) * (s_m - m_c))",
-      "caption": null
+      "type": "text",
+      "content": "$$s_m = \\frac{m_a + m_b + m_c}{2}$$\n\n$$\\text{Area} = \\frac{4}{3} \\sqrt{s_m(s_m - m_a)(s_m - m_b)(s_m - m_c)}$$"
     },
     {
       "type": "heading",
@@ -213,10 +214,13 @@
       "content": "Given sides a, b, c:"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "cos(A) = (b^2 + c^2 - a^2) / (2*b*c)\ncos(B) = (a^2 + c^2 - b^2) / (2*a*c)\ncos(C) = (a^2 + b^2 - c^2) / (2*a*b)",
-      "caption": null
+      "type": "hint_card",
+      "question": "Is the law of cosines actually useful in coding interviews?",
+      "answer": "Yes, but mostly indirectly. You rarely code the law of cosines itself. Instead, you use dot products to find angles (same formula, different form). The key insight: if the dot product of two edges is zero, the angle is 90\u00b0 \u2014 no arccos needed. This trick identifies right triangles in O(1) without trigonometry."
+    },
+    {
+      "type": "text",
+      "content": "$$\\cos(A) = \\frac{b^2 + c^2 - a^2}{2bc}$$\n$$\\cos(B) = \\frac{a^2 + c^2 - b^2}{2ac}$$\n$$\\cos(C) = \\frac{a^2 + b^2 - c^2}{2ab}$$"
     },
     {
       "type": "text",
@@ -232,20 +236,16 @@
       "content": "**Circumradius** (radius of circumscribed circle):"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "R = (a * b * c) / (4 * Area)",
-      "caption": null
+      "type": "text",
+      "content": "$$R = \\frac{a \\cdot b \\cdot c}{4 \\cdot \\text{Area}}$$"
     },
     {
       "type": "text",
       "content": "**Inradius** (radius of inscribed circle):"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "r = (2 * Area) / perimeter",
-      "caption": null
+      "type": "text",
+      "content": "$$r = \\frac{2 \\cdot \\text{Area}}{\\text{perimeter}}$$"
     },
     {
       "type": "heading",
@@ -284,10 +284,73 @@
       "content": "Triangle path problems (like LeetCode 120 \u2014 Triangle) use bottom-up DP:"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "dp[i][j] = triangle[i][j] + min(dp[i+1][j], dp[i+1][j+1])",
-      "caption": null
+      "type": "text",
+      "content": "$$dp[i][j] = \\text{triangle}[i][j] + \\min(dp[i+1][j], dp[i+1][j+1])$$"
+    },
+    {
+      "type": "text",
+      "content": "**Common keywords \u2014 know these on sight:**"
+    },
+    {
+      "type": "keyword_badges",
+      "groups": [
+        {
+          "label": "triangle / triangular / triple",
+          "color": "green"
+        },
+        {
+          "label": "valid triangle / triangle inequality",
+          "color": "green"
+        },
+        {
+          "label": "equilateral / isosceles / scalene",
+          "color": "green"
+        },
+        {
+          "label": "right / acute / obtuse",
+          "color": "green"
+        },
+        {
+          "label": "hypotenuse / leg / base",
+          "color": "indigo"
+        },
+        {
+          "label": "perimeter / area / semi-perimeter",
+          "color": "indigo"
+        },
+        {
+          "label": "Pythagorean / Pythagoras",
+          "color": "indigo"
+        },
+        {
+          "label": "Heron / shoelace",
+          "color": "indigo"
+        },
+        {
+          "label": "circumcenter / incenter / centroid",
+          "color": "indigo"
+        },
+        {
+          "label": "law of cosines / law of sines",
+          "color": "indigo"
+        },
+        {
+          "label": "triangle path sum",
+          "color": "rose"
+        },
+        {
+          "label": "triangulation / polygon triangulation",
+          "color": "rose"
+        },
+        {
+          "label": "point in triangle",
+          "color": "rose"
+        },
+        {
+          "label": "triangle counting",
+          "color": "rose"
+        }
+      ]
     },
     {
       "type": "heading",
@@ -809,6 +872,11 @@
     {
       "type": "text",
       "content": "**A. Intuition:** For the maximum perimeter, we want the three largest sides that satisfy the triangle inequality. Since the triangle inequality requires `a + b > c` for the largest side `c`, we can sort and check consecutive triples from the largest end."
+    },
+    {
+      "type": "hint_card",
+      "question": "Why sort first for triangle problems?",
+      "answer": "Sorting turns O(n\u00b3) brute force into O(n log n) with a two-pointer sweep. For \"Largest Perimeter Triangle,\" sorting guarantees the maximal perimeter comes from three consecutive elements \u2014 no need to check all combinations. For \"Valid Triangle Number,\" the sorted two-pointer pattern counts valid triples in O(n\u00b2) instead of O(n\u00b3). Almost every triangle-counting problem benefits from sorting."
     },
     {
       "type": "text",

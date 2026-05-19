@@ -2,9 +2,9 @@
   "chapter": 8,
   "slug": "lines-and-slopes",
   "title": "Lines and Slopes",
-  "icon": "╱",
+  "icon": "\u2571",
   "color": "#f97316",
-  "problemCount": 204,
+  "problemCount": 456,
   "blocks": [
     {
       "type": "heading",
@@ -27,7 +27,7 @@
     },
     {
       "type": "text",
-      "content": "Think of a ramp: the slope tells you how steep it is. A line represents a straight path — the shortest distance between two points. In computer graphics, lines define edges of shapes. In physics, they represent trajectories."
+      "content": "Think of a ramp: the slope tells you how steep it is. A line represents a straight path \u2014 the shortest distance between two points. In computer graphics, lines define edges of shapes. In physics, they represent trajectories."
     },
     {
       "type": "heading",
@@ -66,30 +66,24 @@
       "content": "**Slope-Intercept Form**:"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "y = mx + b\nm = slope = Δy / Δx = (y2 - y1) / (x2 - x1)\nb = y-intercept",
-      "caption": null
+      "type": "text",
+      "content": "$$y = mx + b \\quad \\text{where} \\quad m = \\frac{\\Delta y}{\\Delta x} = \\frac{y_2 - y_1}{x_2 - x_1}, \\quad b = y\\text{-intercept}$$"
     },
     {
       "type": "text",
       "content": "**General Form** (no division, handles vertical lines):"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "Ax + By + C = 0\n\nGiven two points (x1,y1), (x2,y2):\nA = y1 - y2\nB = x2 - x1\nC = x1*y2 - x2*y1",
-      "caption": null
+      "type": "text",
+      "content": "$$Ax + By + C = 0 \\quad \\text{where} \\quad A = y_1 - y_2, \\; B = x_2 - x_1, \\; C = x_1 y_2 - x_2 y_1$$"
     },
     {
       "type": "text",
       "content": "**Two-Point Form**:"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "(y - y1) / (x - x1) = (y2 - y1) / (x2 - x1)",
-      "caption": null
+      "type": "text",
+      "content": "$$\\frac{y - y_1}{x - x_1} = \\frac{y_2 - y_1}{x_2 - x_1}$$"
     },
     {
       "type": "heading",
@@ -97,10 +91,8 @@
       "text": "2.2 Slope"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "m = (y2 - y1) / (x2 - x1)",
-      "caption": null
+      "type": "text",
+      "content": "$$m = \\frac{y_2 - y_1}{x_2 - x_1}$$"
     },
     {
       "type": "list",
@@ -108,7 +100,7 @@
         "m > 0: line rises (increasing)",
         "m < 0: line falls (decreasing)",
         "m = 0: horizontal line (y = constant)",
-        "m = ∞ (undefined): vertical line (x = constant)"
+        "m = \u221e (undefined): vertical line (x = constant)"
       ]
     },
     {
@@ -121,6 +113,11 @@
       "text": "2.3 Parallel and Perpendicular Lines"
     },
     {
+      "type": "hint_card",
+      "question": "How do you remember the parallel and perpendicular slope relationships?",
+      "answer": "Parallel: $m_1 = m_2$ (same slope, different intercept). Perpendicular: $m_1 \\cdot m_2 = -1$ (negative reciprocal). A vertical line ($x = c$) has undefined slope \u2014 its perpendicular is horizontal ($y = c$)."
+    },
+    {
       "type": "text",
       "content": "**Parallel**: same slope ($m_1 = m_2$) **Perpendicular**: product of slopes = -1 ($m_1 \\times m_2 = -1$) or $A_1A_2 + B_1B_2 = 0$"
     },
@@ -130,14 +127,17 @@
       "text": "2.4 Line-Line Intersection"
     },
     {
+      "type": "interactive_diagram",
+      "diagram": "line-intersection-explorer",
+      "caption": "Drag the sliders to adjust two lines and see where they intersect."
+    },
+    {
       "type": "text",
       "content": "Two lines A_1x + B_1y + C_1 = 0 and A_2x + B_2y + C_2 = 0 intersect at:"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "denom = A₁*B₂ - A₂*B₁\nif denom == 0: lines are parallel (or coincident)\n\nx = (B₁*C₂ - B₂*C₁) / denom\ny = (C₁*A₂ - C₂*A₁) / denom",
-      "caption": null
+      "type": "text",
+      "content": "$$\\text{denom} = A_1 B_2 - A_2 B_1 \\\\\n\\text{If denom} = 0: \\text{parallel or coincident} \\\\\nx = \\frac{B_1 C_2 - B_2 C_1}{\\text{denom}}, \\quad y = \\frac{C_1 A_2 - C_2 A_1}{\\text{denom}}$$"
     },
     {
       "type": "heading",
@@ -165,19 +165,22 @@
       "text": "2.6 Orientation Test (Cross Product)"
     },
     {
+      "type": "hint_card",
+      "question": "Why does cross product tell us orientation?",
+      "answer": "The cross product $\\overrightarrow{AB} \\times \\overrightarrow{BC}$ equals $|AB| \\cdot |BC| \\cdot \\sin\\theta$. The sign of $\\sin\\theta$ tells us whether B is to the left ($+$) or right ($-$) of the line AC. This is the foundation of all line segment intersection tests \u2014 two segments intersect if their orientations test \"straddles\" each other."
+    },
+    {
       "type": "text",
       "content": "Given three points A(ax, ay), B(bx, by), C(cx, cy):"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "cross = (bx - ax)(cy - ay) - (by - ay)(cx - ax)",
-      "caption": null
+      "type": "text",
+      "content": "$$\\text{cross} = (b_x - a_x)(c_y - a_y) - (b_y - a_y)(c_x - a_x)$$"
     },
     {
       "type": "list",
       "items": [
-        "cross > 0: counter-clockwise turn (A → B → C)",
+        "cross > 0: counter-clockwise turn (A \u2192 B \u2192 C)",
         "cross < 0: clockwise turn",
         "cross = 0: collinear"
       ]
@@ -192,14 +195,12 @@
       "text": "2.7 Distance from Point to Line"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "distance = |Ax₀ + By₀ + C| / sqrt(A² + B²)",
-      "caption": null
+      "type": "text",
+      "content": "$$\\text{distance} = \\frac{|Ax_0 + By_0 + C|}{\\sqrt{A^2 + B^2}}$$"
     },
     {
       "type": "text",
-      "content": "Where (x₀, y₀) is the point and Ax + By + C = 0 is the line."
+      "content": "Where (x\u2080, y\u2080) is the point and Ax + By + C = 0 is the line."
     },
     {
       "type": "heading",
@@ -228,52 +229,48 @@
       "text": "3. PROBLEM RECOGNITION"
     },
     {
-      "type": "table",
-      "headers": [
-        "Keyword",
-        "Problem Type"
-      ],
-      "rows": [
-        [
-          "\"slope\"",
-          "Slope computation, collinearity"
-        ],
-        [
-          "\"line through points\"",
-          "Line equation from two points"
-        ],
-        [
-          "\"intersection / crossing\"",
-          "Line or segment intersection"
-        ],
-        [
-          "\"perpendicular / parallel\"",
-          "Line relationships"
-        ],
-        [
-          "\"collinear\"",
-          "Same line check"
-        ],
-        [
-          "\"sweep line\"",
-          "Event-based processing"
-        ],
-        [
-          "\"skyline\"",
-          "Building outlines via sweep"
-        ],
-        [
-          "\"line of sight\"",
-          "Ray casting / geometry"
-        ],
-        [
-          "\"segment\"",
-          "Line segment operations"
-        ],
-        [
-          "\"polyline\"",
-          "Sequence of connected segments"
-        ]
+      "type": "keyword_badges",
+      "groups": [
+        {
+          "label": "slope / gradient",
+          "color": "indigo"
+        },
+        {
+          "label": "line equation",
+          "color": "emerald"
+        },
+        {
+          "label": "parallel / perpendicular",
+          "color": "amber"
+        },
+        {
+          "label": "line intersection",
+          "color": "rose"
+        },
+        {
+          "label": "segment intersection",
+          "color": "cyan"
+        },
+        {
+          "label": "orientation / cross product",
+          "color": "violet"
+        },
+        {
+          "label": "sweep line",
+          "color": "orange"
+        },
+        {
+          "label": "collinearity",
+          "color": "sky"
+        },
+        {
+          "label": "point to line distance",
+          "color": "pink"
+        },
+        {
+          "label": "Li Chao tree",
+          "color": "red"
+        }
       ]
     },
     {
@@ -284,11 +281,11 @@
     {
       "type": "list",
       "items": [
-        "\"Uncrossed lines\" → DP (LCS variant)",
-        "\"Number of lines in chart\" → Slope changes",
-        "\"Maximal intersection\" → Interval intersection on a line",
-        "\"Reflection\" → Line as mirror",
-        "\"Linear regression\" → Best-fit line"
+        "\"Uncrossed lines\" \u2192 DP (LCS variant)",
+        "\"Number of lines in chart\" \u2192 Slope changes",
+        "\"Maximal intersection\" \u2192 Interval intersection on a line",
+        "\"Reflection\" \u2192 Line as mirror",
+        "\"Linear regression\" \u2192 Best-fit line"
       ]
     },
     {
@@ -303,6 +300,11 @@
       "type": "heading",
       "level": 3,
       "text": "Pattern 1: Orientation (Cross Product)"
+    },
+    {
+      "type": "hint_card",
+      "question": "What do positive, negative, and zero cross products mean for orientation?",
+      "answer": "Given three points A, B, C in order: cross $> 0$ means counter-clockwise (left turn), cross $< 0$ means clockwise (right turn), cross $= 0$ means collinear. The cross product of $\\overrightarrow{AB}$ and $\\overrightarrow{BC}$ gives twice the signed area of triangle ABC."
     },
     {
       "type": "text",
@@ -321,6 +323,11 @@
       "type": "heading",
       "level": 3,
       "text": "Pattern 3: Sweep Line"
+    },
+    {
+      "type": "hint_card",
+      "question": "What's the trickiest part of sweep line algorithms?",
+      "answer": "Event ordering. When two events share the same x-coordinate, process all \"start\" events before \"query\" before \"end\" events. For line segment intersection, use a balanced BST (like `set` in C++) to maintain active segments sorted by current y, and only check neighbors for intersections when a segment is added or removed."
     },
     {
       "type": "text",
@@ -654,7 +661,7 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Easy — Is This a Straight Line?"
+      "text": "Easy \u2014 Is This a Straight Line?"
     },
     {
       "type": "text",
@@ -663,7 +670,7 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Easy — Slope Between Points"
+      "text": "Easy \u2014 Slope Between Points"
     },
     {
       "type": "text",
@@ -672,7 +679,7 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Medium — Line That Covers Most Points"
+      "text": "Medium \u2014 Line That Covers Most Points"
     },
     {
       "type": "text",
@@ -681,7 +688,7 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Medium — Segment Intersection Counter"
+      "text": "Medium \u2014 Segment Intersection Counter"
     },
     {
       "type": "text",
@@ -690,7 +697,7 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Hard — City Skyline"
+      "text": "Hard \u2014 City Skyline"
     },
     {
       "type": "text",
@@ -699,7 +706,7 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Hard — Maximum Non-Intersecting Lines"
+      "text": "Hard \u2014 Maximum Non-Intersecting Lines"
     },
     {
       "type": "text",
@@ -708,7 +715,7 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Interview — Laser Beam"
+      "text": "Interview \u2014 Laser Beam"
     },
     {
       "type": "text",
@@ -998,5 +1005,13 @@
       "caption": null
     }
   ],
-  "difficulty": "Intermediate"
+  "difficulty": "Intermediate",
+  "problem_urls": {
+    "Problem 1": "https://leetcode.com/problems/check-if-it-is-a-straight-line/",
+    "Problem 2": "https://www.acmicpc.net/problem/17387",
+    "Problem 3": "https://leetcode.com/problems/the-skyline-problem/",
+    "Problem 4": "https://leetcode.com/problems/minimum-lines-to-represent-a-line-chart/",
+    "Problem 5": "https://codeforces.com/problemset/problem/660/D",
+    "Problem 6": "https://codeforces.com/problemset/problem/961/D"
+  }
 }

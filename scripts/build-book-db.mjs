@@ -37,6 +37,83 @@ if (coreDbExists) {
   console.log(`  Core DB: ${coreIndex.size} problems loaded for cross-referencing`)
 }
 
+// ── Fuzzy title matcher ─────────────────────────────────────
+function normalizeForMatch(s) {
+  return s.toLowerCase()
+    .replace(/^\d+[\.\)]\s*/, '')
+    .replace(/[^a-z0-9\s]/g, '')
+    .replace(/\s+/g, ' ').trim()
+}
+
+function tokenize(s) {
+  return s.split(/\s+/).filter(t => t.length > 2)
+}
+
+function buildMatchIndex(coreIndex) {
+  const titleIndex = new Map()
+  const tokenIndex = new Map()
+  for (const [url, { name, platform }] of coreIndex) {
+    const norm = normalizeForMatch(name)
+    titleIndex.set(norm, { url, name, platform })
+    const tokens = tokenize(norm)
+    for (const token of tokens) {
+      if (!tokenIndex.has(token)) tokenIndex.set(token, [])
+      tokenIndex.get(token).push({ url, name, platform, norm })
+    }
+  }
+  return { titleIndex, tokenIndex }
+}
+
+function fuzzyMatchBookProblem(problemTitle, titleIndex, tokenIndex, coreIndex) {
+  const norm = normalizeForMatch(problemTitle)
+
+  if (titleIndex.has(norm)) return titleIndex.get(norm)
+
+  const tokens = tokenize(norm)
+  if (tokens.length === 0) return null
+
+  const candidates = new Map()
+  for (const token of tokens) {
+    const matches = tokenIndex.get(token) || []
+    for (const m of matches) {
+      if (!candidates.has(m.url)) {
+        candidates.set(m.url, { ...m, count: 0, total: tokens.length })
+      }
+      candidates.get(m.url).count++
+    }
+  }
+
+  let best = null
+  let bestScore = 0
+  for (const [, c] of candidates) {
+    const score = c.count / c.total
+    if (score > bestScore) {
+      bestScore = score
+      best = c
+    }
+  }
+
+  if (best && bestScore >= 0.5) return { url: best.url, name: best.name, platform: best.platform }
+
+  const numMatch = problemTitle.match(/(\d{3,})/)
+  if (numMatch) {
+    const num = numMatch[1]
+    for (const [url, { name, platform }] of coreIndex) {
+      if (name.startsWith(num + '.') || name.startsWith(num + ')')) {
+        return { url, name, platform }
+      }
+    }
+  }
+
+  return null
+}
+
+let matchIndex = null
+if (coreIndex.size > 0) {
+  matchIndex = buildMatchIndex(coreIndex)
+  console.log(`  Match index built: ${matchIndex.titleIndex.size} unique titles, ${matchIndex.tokenIndex.size} unique tokens`)
+}
+
 // ── Helpers ──────────────────────────────────────────────────────────────
 function ensureDir(dir) {
   fs.mkdirSync(dir, { recursive: true })
@@ -132,6 +209,15 @@ for (const book of BOOKS) {
         } else {
           matchUrl = lcUrl
           matchPlatform = 'LeetCode'
+        }
+      }
+
+      if (!matchUrl && matchIndex) {
+        const fuzzy = fuzzyMatchBookProblem(p.title, matchIndex.titleIndex, matchIndex.tokenIndex, coreIndex)
+        if (fuzzy) {
+          matchUrl = fuzzy.url
+          matchTitle = fuzzy.name
+          matchPlatform = fuzzy.platform
         }
       }
 

@@ -335,7 +335,8 @@ function PatternCard({ pattern: p, delay }: { pattern: Pattern; delay: number })
 
   return (
     <article
-      className="rise-in flex flex-col overflow-hidden rounded-2xl border border-[var(--line)] bg-[var(--surface)] transition hover:border-[var(--lagoon)]"
+      data-focusable="card"
+      className="card-base rise-in flex flex-col overflow-hidden transition"
       style={{ animationDelay: `${delay}ms` }}
     >
       {/* Header */}

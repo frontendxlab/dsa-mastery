@@ -18,15 +18,15 @@
     },
     {
       "type": "text",
-      "content": "Geometry in programming is about describing and manipulating objects in space using numbers. If you can put it on a graph, you can compute with it."
+      "content": "Basic geometry is the foundation of computational geometry — and in coding interviews, it tests whether you can translate math into clean code. If you've ever computed distance between two coordinates or checked if a point lies inside a circle, you've already done basic geometry in code."
     },
     {
       "type": "text",
-      "content": "**What is basic geometry in DSA?**"
+      "content": "**So what is basic geometry in DSA?**"
     },
     {
       "type": "text",
-      "content": "At its core, computational geometry answers questions like:"
+      "content": "It's a set of primitives — distance, orientation, area — that act as building blocks for harder problems. Think of them like the four operations of arithmetic: you don't solve every problem with just addition, but every problem uses addition somewhere. Same deal here."
     },
     {
       "type": "list",
@@ -40,20 +40,12 @@
     },
     {
       "type": "text",
-      "content": "**Real-world intuition:** GPS navigation computes distances between coordinates. Video games detect collisions between shapes. Computer graphics render 3D objects on 2D screens. Every one of these applications uses the same geometric primitives we will learn here."
+      "content": "GPS navigation computes distances between coordinates. Video games detect collisions between shapes. Computer graphics render 3D objects on 2D screens. Every one of these applications uses the same geometric primitives we are about to learn."
     },
     {
-      "type": "text",
-      "content": "**Why it matters for interviews:**"
-    },
-    {
-      "type": "list",
-      "items": [
-        "Geometry appears in ~5-10% of coding interviews at top companies",
-        "It tests your ability to translate math into clean code",
-        "It reveals whether you understand floating-point precision",
-        "Many \"hard\" problems hide a simple geometric insight"
-      ]
+      "type": "hint_card",
+      "question": "Why do interviewers keep asking geometry problems?",
+      "answer": "First, it tests your ability to translate math into clean, bug-free code. Second, it reveals whether you understand floating-point precision and edge cases (vertical lines, collinear points, degenerate triangles). Third — and this is the one most people miss — many \"hard\" problems hide a simple geometric insight. Spot the geometry, and the solution writes itself."
     },
     {
       "type": "text",
@@ -62,14 +54,14 @@
     {
       "type": "list",
       "items": [
-        "**Distance formula** (Pythagorean theorem)",
-        "**Cross product** (orientation, area, direction)",
-        "**Dot product** (angle, projection)"
+        "**Distance formula** (Pythagorean theorem) — measuring separation",
+        "**Cross product** — orientation, area, turn direction, collinearity",
+        "**Dot product** — angle, projection, \"how aligned are these vectors\""
       ]
     },
     {
       "type": "text",
-      "content": "Master these three, and you can solve 80% of basic geometry problems."
+      "content": "Master these three, and you can solve 80% of basic geometry problems. Not exaggerating."
     },
     {
       "type": "heading",
@@ -83,14 +75,23 @@
     },
     {
       "type": "text",
-      "content": "A point in 2D space is defined by an ordered pair `(x, y)` where:"
+      "content": "A point in 2D space is an ordered pair **`(x, y)`**. The x-coordinate says \"how far right\" and the y-coordinate says \"how far up\" — or down, if it's negative. That is literally all there is to it."
     },
     {
-      "type": "list",
-      "items": [
-        "`x` = horizontal position (positive = right)",
-        "`y` = vertical position (positive = up, in math; positive = down, in computer graphics)"
-      ]
+      "type": "text",
+      "content": "**Why this matters for code:** Every point becomes a tiny data structure. In Python, you might use a tuple `(x, y)`. In C++ or Java, you probably define a `Point` class. The representation choice affects everything that follows: distance, slope, intersection — they all operate on these pairs of numbers."
+    },
+    {
+      "type": "text",
+      "content": "Here is a quick interactive playground. Click anywhere on the grid to place points and see their coordinates, distance, midpoint, and slope update in real time."
+    },
+    {
+      "type": "interactive_diagram",
+      "name": "coordinate-plane"
+    },
+    {
+      "type": "text",
+      "content": "**Key idea:** A point is a vector from the origin `(0, 0)`. Once you start thinking of points as vectors, the cross product and dot product become natural operations — not magic formulas."
     },
     {
       "type": "code",
@@ -117,19 +118,26 @@
       "caption": null
     },
     {
+      "type": "hint_card",
+      "question": "A vector IS a point, and a point IS a vector. Wait — how?",
+      "answer": "In 2D space, a point at `(x, y)` can be thought of as the vector from the origin to that point. This means you can add points together, subtract them, and compute cross/dot products. The difference between two points gives you a direction vector. This shift in thinking — from \"coordinates\" to \"vectors\" — is the single biggest unlock in computational geometry."
+    },
+    {
       "type": "heading",
       "level": 4,
       "text": "2.2 Distance Formula"
     },
     {
       "type": "text",
-      "content": "The Euclidean distance between two points `(x1, y1)` and `(x2, y2)` is:"
+      "content": "The Euclidean distance between `(x1, y1)` and `(x2, y2)` answers a simple question: *if I drew a straight line between these two points, how long would it be?*"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "d = sqrt((x2 - x1)^2 + (y2 - y1)^2)",
-      "caption": null
+      "type": "text",
+      "content": "**Draw a right triangle.** The horizontal leg is `|x2 - x1|`. The vertical leg is `|y2 - y1|`. The distance is the hypotenuse. That's where the formula comes from — it is literally just the Pythagorean theorem dressed up in coordinates."
+    },
+    {
+      "type": "text",
+      "content": "$$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$"
     },
     {
       "type": "text",
@@ -161,13 +169,15 @@
     },
     {
       "type": "text",
-      "content": "**Manhattan distance** (taxicab geometry) is an alternative metric:"
+      "content": "**Manhattan distance** (taxicab geometry) is a different metric: instead of going straight, you move only along grid lines — like a taxi driving city blocks."
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "d_manhattan = |x2 - x1| + |y2 - y1|",
-      "caption": null
+      "type": "text",
+      "content": "$$d_{manhattan} = |x_2 - x_1| + |y_2 - y_1|$$"
+    },
+    {
+      "type": "text",
+      "content": "**When do you use which?** Euclidean for shortest path in continuous space. Manhattan for grid-based movement where diagonal steps aren't allowed. Many problems explicitly tell you which metric to use — but some hide it in the problem description (\"you can only move up/down/left/right\")."
     },
     {
       "type": "heading",
@@ -179,10 +189,12 @@
       "content": "The midpoint between two points:"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "M = ((x1 + x2)/2, (y1 + y2)/2)",
-      "caption": null
+      "type": "text",
+      "content": "$$M = \\left( \\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2} \\right)$$"
+    },
+    {
+      "type": "text",
+      "content": "Simple average of the coordinates. The midpoint is just the arithmetic mean of each dimension independently. If this feels familiar, that is because it is — same idea as finding the middle of two numbers on a number line, just done twice: once for x, once for y."
     },
     {
       "type": "heading",
@@ -190,10 +202,24 @@
       "text": "2.4 Slope of a Line"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "slope = (y2 - y1) / (x2 - x1)",
-      "caption": null
+      "type": "text",
+      "content": "Slope is *rise over run* — how much `y` changes when `x` increases by 1. The formula is dead simple:"
+    },
+    {
+      "type": "text",
+      "content": "$$m = \\frac{y_2 - y_1}{x_2 - x_1}$$"
+    },
+    {
+      "type": "text",
+      "content": "**Heads up:** Vertical lines have undefined slope — you would be dividing by zero. Always check `x2 == x1` before computing slope, or better yet, use the cross-product formulation (which avoids division entirely). We'll get to that in a moment."
+    },
+    {
+      "type": "text",
+      "content": "Here is an interactive slope explorer. Drag the points to see how rise, run, and the slope change. Notice what happens when the line goes vertical."
+    },
+    {
+      "type": "interactive_diagram",
+      "name": "slope-explorer"
     },
     {
       "type": "text",
@@ -209,10 +235,28 @@
       "content": "A line can be represented as:"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "y = mx + b         (slope-intercept form)\nax + by + c = 0    (general form)",
-      "caption": null
+      "type": "text",
+      "content": "**Slope-intercept form:**"
+    },
+    {
+      "type": "text",
+      "content": "$$y = mx + b$$"
+    },
+    {
+      "type": "text",
+      "content": "Where $m$ is the slope and $b$ is the y-intercept. Clean and intuitive, but breaks on vertical lines (infinite slope)."
+    },
+    {
+      "type": "text",
+      "content": "**General form (better for code):**"
+    },
+    {
+      "type": "text",
+      "content": "$$ax + by + c = 0$$"
+    },
+    {
+      "type": "text",
+      "content": "No division, no special cases. The line $2x + 3y - 6 = 0$ is the same line regardless of whether the slope is defined. For code, this is almost always the form you want."
     },
     {
       "type": "text",
@@ -225,13 +269,23 @@
     },
     {
       "type": "text",
-      "content": "Three points are collinear if they lie on the same line. Check using area:"
+      "content": "Three points are collinear if they lie on the same straight line. The most common way to check: compute the area of the triangle they form. If the area is zero, they are collinear."
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "area = x1*(y2 - y3) + x2*(y3 - y1) + x3*(y1 - y2)",
-      "caption": null
+      "type": "text",
+      "content": "$$\\text{area} = \\frac{1}{2} \\,|\\, x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2) \\,|$$"
+    },
+    {
+      "type": "text",
+      "content": "But here is the trick that comes up in almost every interview problem: **never divide when checking collinearity.** Instead of computing the slope and comparing (which requires division and introduces floating-point drift), cross-multiply:"
+    },
+    {
+      "type": "text",
+      "content": "$$(y_2 - y_1) \\cdot (x_3 - x_2) = (y_3 - y_2) \\cdot (x_2 - x_1)$$"
+    },
+    {
+      "type": "text",
+      "content": "If these two products are equal, the slopes match. No division, no infinity for vertical lines, no precision loss. This is the single most useful trick in the geometry interview bag."
     },
     {
       "type": "text",
@@ -244,23 +298,39 @@
     },
     {
       "type": "text",
-      "content": "The cross product of two vectors tells us the signed area of the parallelogram they form:"
-    },
-    {
-      "type": "code",
-      "lang": "",
-      "code": "cross(v1, v2) = v1.x * v2.y - v1.y * v2.x",
-      "caption": null
+      "content": "The cross product of two 2D vectors `a` and `b` is defined as `a.x * b.y - a.y * b.x`. It gives you the **signed area** of the parallelogram they form. The sign tells you the turning direction:"
     },
     {
       "type": "text",
-      "content": "Given three points A, B, C, the orientation (counter-clockwise, clockwise, collinear) is:"
+      "content": "$$\\text{cross}(a, b) = a_x \\cdot b_y - a_y \\cdot b_x$$"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "orientation(A, B, C) = cross(B - A, C - A)\n                     = (B.x - A.x)*(C.y - A.y) - (B.y - A.y)*(C.x - A.x)",
-      "caption": null
+      "type": "text",
+      "content": "The sign of this value tells you the direction:"
+    },
+    {
+      "type": "text",
+      "content": "- Positive → `b` is to the **left** of `a` (counter-clockwise turn)"
+    },
+    {
+      "type": "text",
+      "content": "- Negative → `b` is to the **right** of `a` (clockwise turn)"
+    },
+    {
+      "type": "text",
+      "content": "- Zero → `a` and `b` are **collinear** (no turn — they point in the same or opposite direction)"
+    },
+    {
+      "type": "text",
+      "content": "Given three points A, B, C, the orientation tells you which way you turn when walking from A to B to C. This is the Codeforces `ccw` (counter-clockwise) function, and it is everywhere:"
+    },
+    {
+      "type": "text",
+      "content": "$$\\text{orientation}(A, B, C) = \\text{cross}(B - A, C - A)$$"
+    },
+    {
+      "type": "text",
+      "content": "$$= (B_x - A_x)(C_y - A_y) - (B_y - A_y)(C_x - A_x)$$"
     },
     {
       "type": "list",
@@ -272,7 +342,30 @@
     },
     {
       "type": "text",
-      "content": "This is the single most useful operation in computational geometry. Memorize it."
+      "content": "**Memorize this function.** It is the single most useful operation in computational geometry. You will use it for:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Checking if three points are collinear",
+        "Determining left/right turn direction",
+        "Testing if a point is inside a polygon",
+        "Checking if two line segments intersect",
+        "Building convex hull (Monotone Chain / Graham Scan)"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "Here is an interactive orientation explorer. Place three points and see whether you turn left, right, or go straight."
+    },
+    {
+      "type": "interactive_diagram",
+      "name": "orientation-explorer"
+    },
+    {
+      "type": "hint_card",
+      "question": "Cross product sign is ALL you need. The magnitude is usually irrelevant.",
+      "answer": "In most geometry problems, you only care about the sign of the cross product — positive, negative, or zero. The actual numerical value almost never matters. This is why the `ccw` / `orient` function returns -1, 0, or 1 instead of the raw value."
     },
     {
       "type": "heading",
@@ -343,10 +436,24 @@
       "content": "For a polygon with vertices `(x0, y0), (x1, y1), ..., (xn-1, yn-1)`:"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "Area = 0.5 * |sum_{i=0}^{n-1} (xi * y_{i+1} - x_{i+1} * yi)|",
-      "caption": null
+      "type": "text",
+      "content": "$$\\text{Area} = \\frac{1}{2} \\left| \\sum_{i=0}^{n-1} (x_i \\cdot y_{i+1} - x_{i+1} \\cdot y_i) \\right|$$"
+    },
+    {
+      "type": "text",
+      "content": "Where $(x_n, y_n) = (x_0, y_0)$ to close the polygon. This is called the \"shoelace formula\" because you can visualize the terms as lacing a shoelace across the coordinates:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Multiply x_i by y_{i+1} (lace down-right)",
+        "Multiply x_{i+1} by y_i (lace up-left)",
+        "Subtract, sum, take half, take absolute value"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**Why does this work?** Each term computes the signed area of a trapezoid formed by one edge and the x-axis. When you sum them, everything outside the polygon cancels out — Brent Yorgey calls it \"a magical inclusion-exclusion thing.\""
     },
     {
       "type": "text",
@@ -368,22 +475,55 @@
     },
     {
       "type": "text",
-      "content": "**Common keywords:**"
+      "content": "**Common keywords — know these on sight:**"
     },
     {
-      "type": "list",
-      "items": [
-        "\"distance\", \"midpoint\", \"slope\"",
-        "\"collinear\", \"colinear\"",
-        "\"orientation\", \"clockwise\", \"counterclockwise\"",
-        "\"intersect\", \"intersection\"",
-        "\"inside\", \"contained within\", \"lies within\"",
-        "\"area\", \"perimeter\", \"circumference\"",
-        "\"circle\", \"rectangle\", \"triangle\", \"polygon\"",
-        "\"reflection\", \"mirror\", \"symmetric\"",
-        "\"rotate\", \"translation\"",
-        "\"minimum enclosing circle\"",
-        "\"closest pair\""
+      "type": "keyword_badges",
+      "groups": [
+        {
+          "label": "distance / midpoint / slope",
+          "color": "indigo"
+        },
+        {
+          "label": "collinear / colinear",
+          "color": "indigo"
+        },
+        {
+          "label": "orientation / clockwise",
+          "color": "indigo"
+        },
+        {
+          "label": "intersect / intersection",
+          "color": "indigo"
+        },
+        {
+          "label": "inside / contained / lies within",
+          "color": "indigo"
+        },
+        {
+          "label": "area / perimeter / circumference",
+          "color": "indigo"
+        },
+        {
+          "label": "circle / rectangle / triangle / polygon",
+          "color": "indigo"
+        },
+        {
+          "label": "reflection / mirror / symmetric",
+          "color": "indigo"
+        },
+        {
+          "label": "rotate / translation",
+          "color": "indigo"
+        },
+        {
+          "label": "minimum enclosing circle",
+          "color": "indigo"
+        },
+        {
+          "label": "closest pair",
+          "color": "indigo"
+        }
       ]
     },
     {
@@ -403,7 +543,7 @@
     },
     {
       "type": "text",
-      "content": "**Hidden geometry:**"
+      "content": "**Hidden geometry — problems that look like something else:**"
     },
     {
       "type": "list",
@@ -860,15 +1000,15 @@
     },
     {
       "type": "text",
-      "content": "**A. Intuition:** A boomerang is three non-collinear points. Three points are collinear if the area of the triangle they form (cross product) is zero."
+      "content": "**A. Intuition:** A boomerang is three points that are NOT collinear — they form a triangle, not a straight line. \"Valid boomerang?\" really means \"are these three points in a straight line, or not?\" The cross product (signed area) tells you instantly: if zero, they are collinear → invalid. If non-zero, they form a triangle → valid boomerang."
     },
     {
       "type": "text",
-      "content": "**B. Brute Force:** Compute cross product. That is the solution."
+      "content": "**B. The entire approach:** Compute the cross product. If it is zero → False. Otherwise → True. That is the complete solution."
     },
     {
       "type": "text",
-      "content": "**C. Optimized Approach:** Single cross product."
+      "content": "**C. Wait, that is it?** Yes. This is one of those rare problems where the intuitive approach IS the optimal approach. No tricks, no hidden complexity."
     },
     {
       "type": "text",
@@ -877,18 +1017,18 @@
     {
       "type": "list",
       "items": [
-        "Let points be (x1,y1), (x2,y2), (x3,y3)",
-        "Compute area = (x2-x1)*(y3-y1) - (x3-x1)*(y2-y1)",
-        "Return area != 0"
+        "Unpack the three points into (x1,y1), (x2,y2), (x3,y3)",
+        "Compute cross = (x2 - x1)*(y3 - y1) - (y2 - y1)*(x3 - x1)",
+        "Return cross != 0"
       ]
     },
     {
       "type": "text",
-      "content": "**E. Complexity:** $O(1)$ time, $O(1)$ space."
+      "content": "**E. Complexity:** $O(1)$ time, $O(1)$ space. Two subtractions, two multiplications, one comparison."
     },
     {
       "type": "text",
-      "content": "**F. Edge Cases:** Floating point — use exact integer comparison if coordinates are integers (they are here)."
+      "content": "**F. Edge Cases:** All coordinates are integers, so cross product gives exact integer result. No floating-point worries. Duplicate points? Well, if any two points coincide, cross will be zero → correct (you cannot form a triangle with only 2 distinct points)."
     },
     {
       "type": "text",
@@ -925,39 +1065,36 @@
     },
     {
       "type": "text",
-      "content": "**A. Intuition:** Each line divides the plane into two half-planes. If the start and end points are on opposite sides of a line, the walker must cross that line. Count such lines."
+      "content": "**A. Intuition:** Each line divides the plane into two half-planes. The start and end points of your path might be on the same side of a line or on opposite sides. You cross a line only when the two points are on opposite sides. Simple spatial reasoning."
     },
     {
       "type": "text",
-      "content": "**B. Brute Force:** For each line, compute the orientation of the start and end points relative to the line. If the signs differ, increment counter."
+      "content": "**B. How do we check which side?** Plug the point into the line equation and look at the sign of the result. Positive → one side, negative → the other. This is exactly the cross product / orientation test."
     },
     {
       "type": "text",
-      "content": "**C. Optimized Approach:** Use cross product sign to determine which side of a line a point is on."
-    },
-    {
-      "type": "text",
-      "content": "**D. Step-by-Step:**"
+      "content": "**C. Step-by-Step:**"
     },
     {
       "type": "list",
       "items": [
-        "For each line (a, b, c): ax + by + c = 0",
-        "Compute f(x, y) = a*x + b*y + c",
-        "If f(x1, y1) * f(x2, y2) < 0 → sign differs → must cross → count++"
+        "For each line defined by (x1,y1), (x2,y2):",
+        "Compute side_start = (x2-x1)*(sy-y1) - (y2-y1)*(sx-x1)",
+        "Compute side_end = (x2-x1)*(ey-y1) - (y2-y1)*(ex-x1)",
+        "If side_start * side_end < 0 → opposite signs → increment crossing count"
       ]
     },
     {
       "type": "text",
-      "content": "**E. Complexity:** $O(n)$ time, $O(1)$ space."
+      "content": "**D. Complexity:** $O(n)$ time, $O(1)$ space — one cross product per line, no extra storage."
     },
     {
       "type": "text",
-      "content": "**F. Edge Cases:** Points exactly on a line (f=0). Problem guarantees start and end are not on any line."
+      "content": "**E. Edge Cases:** What if a point lies exactly ON a line (cross = 0)? The problem guarantees start and end are not on any line. If they were, the answer would be undefined (do you count that crossing or not?), so the guarantee removes ambiguity."
     },
     {
       "type": "text",
-      "content": "**G. Code:**"
+      "content": "**F. Code:**"
     },
     {
       "type": "code",
@@ -990,51 +1127,31 @@
     },
     {
       "type": "text",
-      "content": "**A. Intuition:** With N points on the x-axis, choose two distinct points as base vertices of a triangle, and a third fixed point `(0, 1)` as the apex. The area of each such triangle is `base_length / 2`. Count distinct base lengths."
+      "content": "**A. Intuition:** With N points on the x-axis, pick any two distinct points as the base of a triangle, and use a fixed point `(0, 1)` as the third vertex. The base length determines the triangle's area uniquely (since height is fixed at 1). So: how many distinct base lengths can you make? That equals the number of distinct triangle areas."
     },
     {
       "type": "text",
-      "content": "**B. Brute Force:** Compute all pairwise distances (base lengths). Count unique values."
-    },
-    {
-      "type": "text",
-      "content": "**C. Optimized Approach:** Use a set to track unique distances."
-    },
-    {
-      "type": "text",
-      "content": "**D. Step-by-Step:**"
+      "content": "**B. Approach:**"
     },
     {
       "type": "list",
       "items": [
-        "Read N points (all on x-axis, so only x-coordinates matter)",
-        "For each pair i < j:"
-      ]
-    },
-    {
-      "type": "list",
-      "items": [
-        "Compute base = |x_i - x_j|",
-        "Add to set"
-      ]
-    },
-    {
-      "type": "list",
-      "items": [
-        "Print size of set"
+        "Compute all pairwise distances between the N points on the x-axis",
+        "Insert each distance into a set (automatic deduplication)",
+        "Return the size of the set"
       ]
     },
     {
       "type": "text",
-      "content": "**E. Complexity:** O(n^2) time, O(n^2) space for the set."
+      "content": "**C. Complexity:** $O(n^2)$ time, $O(n^2)$ space for the set — but N is tiny (max 50), so this is instant."
     },
     {
       "type": "text",
-      "content": "**F. Edge Cases:** N=1 → no pairs → answer 0."
+      "content": "**D. Edge Cases:** N = 1 gives zero pairwise distances → answer 0. Multiple points at the same x coordinate produce zero-length bases → those contribute area 0, which is not a \"distinct triangle area\" — and the zero-distance gets deduplicated by the set anyway."
     },
     {
       "type": "text",
-      "content": "**G. Code:**"
+      "content": "**E. Code:**"
     },
     {
       "type": "code",
@@ -1067,15 +1184,15 @@
     },
     {
       "type": "text",
-      "content": "**A. Intuition:** Given three points A, B, C in order, determine whether the turn at B is left, right, or straight (collinear). Use the cross product of vectors AB and BC."
+      "content": "**A. Intuition:** You are standing at point A, walking towards point B. At point B, you need to turn to head towards point C. The question: do you turn left, right, or keep going straight? This is exactly what the cross product of vectors BA and BC tells you."
     },
     {
       "type": "text",
-      "content": "**B. Brute Force:** Compute cross product at B."
+      "content": "**B. The entire solution:** Compute cross = (B.x - A.x)*(C.y - B.y) - (B.y - A.y)*(C.x - B.x). Positive → LEFT (counter-clockwise), Negative → RIGHT (clockwise), Zero → STRAIGHT (collinear)."
     },
     {
       "type": "text",
-      "content": "**C. Optimized Approach:** Direct cross product formula."
+      "content": "**C. Wait — is this problem really just one cross product?** Yes. The entire problem — rated 1300 on Codeforces — is a single cross product. This is a beautiful example of how knowing one geometric primitive unlocks whole classes of problems."
     },
     {
       "type": "text",
@@ -1084,10 +1201,9 @@
     {
       "type": "list",
       "items": [
+        "Read A, B, C as three coordinate pairs",
         "Compute cross = (B.x - A.x)*(C.y - B.y) - (B.y - A.y)*(C.x - B.x)",
-        "If cross > 0 → LEFT",
-        "If cross < 0 → RIGHT",
-        "If cross == 0 → TOWARDS (collinear)"
+        "If cross > 0 → print \"LEFT\"; if cross < 0 → print \"RIGHT\"; else → print \"TOWARDS\""
       ]
     },
     {
@@ -1096,7 +1212,7 @@
     },
     {
       "type": "text",
-      "content": "**F. Edge Cases:** Large coordinates, but within 64-bit integer range."
+      "content": "**F. Edge Cases:** Coordinates fit in 64-bit integers, so no overflow concerns. No division, no floating point."
     },
     {
       "type": "text",
@@ -1133,41 +1249,39 @@
     },
     {
       "type": "text",
-      "content": "**A. Intuition:** Determine if a white rectangle is fully covered by two black rectangles. The white rectangle is visible if any part of it is not covered by the black rectangles. Compute the union of the black rectangles covering the white rectangle, and check if it equals the white rectangle's area."
+      "content": "**A. Intuition:** We have a white rectangle and two black rectangles. If any part of the white rectangle is NOT covered by black, the white is visible. Rather than checking pixel-by-pixel (infeasible for coordinates up to $10^6$), we can use rectangle intersection math."
     },
     {
       "type": "text",
-      "content": "**B. Brute Force:** For each cell in the white rectangle (not feasible for large coordinates)."
+      "content": "**B. Approach:** Compute the intersection of the white rectangle with each black rectangle. The union of these intersections tells us which parts of the white rectangle are covered. If the covered area equals the white rectangle's area, it is fully hidden. Otherwise, some part is visible."
     },
     {
       "type": "text",
-      "content": "**C. Optimized Approach:** Use rectangle intersection. Compute the overlapping area between the white rectangle and each black rectangle. Also check if the two black rectangles together cover the white rectangle entirely."
+      "content": "**C. The trick:** Rectangle intersection is simpler than it sounds. For two axis-aligned rectangles, the overlap region is:"
     },
     {
       "type": "text",
-      "content": "**D. Step-by-Step:**"
-    },
-    {
-      "type": "list",
-      "items": [
-        "Define a function `intersect(r1, r2)` that returns the intersection rectangle (or None)",
-        "Compute intersection of white with black1, white with black2",
-        "If these cover the entire white rectangle → NO (fully covered)",
-        "If the two black rectangles overlap, subtract the overlap from the union area",
-        "If union area == white area → NO, else → YES"
-      ]
+      "content": "$$x_{overlap} = [\\max(x_{11}, x_{21}), \\, \\min(x_{12}, x_{22})]$$"
     },
     {
       "type": "text",
-      "content": "**E. Complexity:** $O(1)$."
+      "content": "$$y_{overlap} = [\\max(y_{11}, y_{21}), \\, \\min(y_{12}, y_{22})]$$"
     },
     {
       "type": "text",
-      "content": "**F. Edge Cases:** Large coordinates up to 10^6, but still fits in 64-bit integers."
+      "content": "If `x_left < x_right && y_bottom < y_top`, there IS an overlap. The area is width × height."
     },
     {
       "type": "text",
-      "content": "**G. Code:**"
+      "content": "**D. Complexity:** $O(1)$ — a handful of min/max operations."
+    },
+    {
+      "type": "text",
+      "content": "**E. Edge Cases:** Black rectangles may overlap each other. When they do, the union of their coverage is smaller than the sum of their individual areas. You must account for this by computing the intersection of the two black rectangles and subtracting it or by decomposing the problem more carefully."
+    },
+    {
+      "type": "text",
+      "content": "**F. Code:**"
     },
     {
       "type": "code",
@@ -1200,64 +1314,44 @@
     },
     {
       "type": "text",
-      "content": "**A. Intuition:** Given N points, determine if they can be split into two non-empty groups, each lying on a distinct line (both lines parallel). Use the fact that the first point must belong to one of the two lines."
+      "content": "**A. Intuition:** We have N points and need to split them into two groups, each lying on its own line. Both lines must be distinct and parallel. The key insight: there are only 3 possible lines through the first point that could be one of the two lines."
     },
     {
       "type": "text",
-      "content": "**B. Brute Force:** Try assigning each point to line 1 or line 2. That's O(2^n) — infeasible."
+      "content": "**B. Why just 3 candidates?** The first point `P1` must belong to one of the two lines. Its partner on that line must be some other point `Pi`. The line through `P1` and `Pi` defines one of the two lines. Try `i = 2`, `i = 3`, and `i = 4` — if none works, no valid split exists."
     },
     {
       "type": "text",
-      "content": "**C. Optimized Approach:** There are only three candidate lines through the first point (connecting it to i=1, 2, 3). For each candidate, try to build two parallel lines."
-    },
-    {
-      "type": "text",
-      "content": "**D. Step-by-Step:**"
+      "content": "**C. Approach:**"
     },
     {
       "type": "list",
       "items": [
-        "Check 3 candidates for the slope through point 0:"
-      ]
-    },
-    {
-      "type": "list",
-      "items": [
-        "Line through points 0 and 1",
-        "Line through points 0 and 2",
-        "Line through points 1 and 2 (if point 0 is alone on a line)"
-      ]
-    },
-    {
-      "type": "list",
-      "items": [
-        "For each slope candidate:"
-      ]
-    },
-    {
-      "type": "list",
-      "items": [
-        "First line: all points on this slope from the chosen pair",
-        "Second line: all remaining points, check if they share one common slope (parallel to first)"
-      ]
-    },
-    {
-      "type": "list",
-      "items": [
-        "If any candidate works → YES"
+        "For each candidate partner Pi (i=2,3,4):",
+        {
+          "type": "list",
+          "items": [
+            "Derive line L from P1 and Pi (slope from these two points)",
+            "Scan all remaining points: if a point lies on L, add it to group 1; otherwise, collect it into a temporary list.",
+            "If the temporary list is empty → all points on L → NO (need two non-empty groups)",
+            "Otherwise, check whether all points in the temporary list lie on a SINGLE second line parallel to L",
+            "If yes → YES. If no → try next candidate."
+          ]
+        },
+        "If no candidate works → NO"
       ]
     },
     {
       "type": "text",
-      "content": "**E. Complexity:** $O(n)$ time, $O(1)$ space."
+      "content": "**D. Complexity:** $O(n)$ time, $O(1)$ space per candidate (3 candidates → $O(n)$ total)."
     },
     {
       "type": "text",
-      "content": "**F. Edge Cases:** All points collinear → NO (need two non-empty groups). All but one point collinear → YES if that point alone on the second line."
+      "content": "**E. Edge Cases:** All points collinear → NO (need two non-empty groups). All but one point collinear → YES if the lone point sits on a parallel line (which it always does — a single point is trivially collinear with itself)."
     },
     {
       "type": "text",
-      "content": "**G. Code:**"
+      "content": "**F. Code:**"
     },
     {
       "type": "code",

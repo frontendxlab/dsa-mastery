@@ -37,6 +37,7 @@ export default function Header() {
                 to={item.to}
                 className="hdr-link"
                 activeProps={{ className: "hdr-link hdr-link-active" }}
+                data-focusable="button"
               >
                 {item.label}
               </RouterLink>

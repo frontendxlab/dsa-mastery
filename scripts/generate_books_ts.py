@@ -822,7 +822,12 @@ def main():
   difficulty?: 'Easy' | 'Medium' | 'Hard' | 'Classic' | 'Puzzle'
   hint?: string
   tags?: string[]
-  lcNum?: number  // LeetCode problem number if known
+  lcNum?: number
+  url?: string
+  platform?: string
+  matchUrl?: string
+  matchPlatform?: string
+  matchTitle?: string
 }
 
 export interface BookChapter {

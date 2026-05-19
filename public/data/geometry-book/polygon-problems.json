@@ -2,7 +2,7 @@
   "chapter": 10,
   "slug": "polygon-problems",
   "title": "Polygon Problems",
-  "icon": "⬠",
+  "icon": "\u2b20",
   "color": "#8b5cf6",
   "problemCount": 123,
   "blocks": [
@@ -18,7 +18,7 @@
     },
     {
       "type": "text",
-      "content": "A polygon is a closed shape formed by connecting line segments end-to-end. From triangles to hexagons to complex irregular shapes, polygons are everywhere in computational geometry — they represent the boundaries of regions, the shapes of objects, and the zones of influence in spatial problems."
+      "content": "A polygon is a closed shape formed by connecting line segments end-to-end. From triangles to hexagons to complex irregular shapes, polygons are everywhere in computational geometry \u2014 they represent the boundaries of regions, the shapes of objects, and the zones of influence in spatial problems."
     },
     {
       "type": "text",
@@ -52,6 +52,16 @@
       "text": "2.2 Shoelace Formula (Area of Polygon)"
     },
     {
+      "type": "interactive_diagram",
+      "diagram": "shoelace-explorer",
+      "caption": "Click to add vertices and see the shoelace area calculation step by step."
+    },
+    {
+      "type": "hint_card",
+      "question": "Why does vertex ordering matter in the shoelace formula?",
+      "answer": "The shoelace formula computes signed area. If vertices are counterclockwise, the result is positive; clockwise gives negative. Always use absolute value. Joining vertices out of order produces a self-intersecting polygon with incorrect (or unpredictable) area."
+    },
+    {
       "type": "text",
       "content": "For a polygon with vertices (x0, y0), (x1, y1), ..., (x_{n-1}, y_{n-1}):"
     },
@@ -82,7 +92,7 @@
     },
     {
       "type": "text",
-      "content": "A polygon is convex iff for every three consecutive vertices A, B, C, the cross product (B - A) × (C - B) has the same sign (all positive for CCW, all negative for CW)."
+      "content": "A polygon is convex iff for every three consecutive vertices A, B, C, the cross product (B - A) \u00d7 (C - B) has the same sign (all positive for CCW, all negative for CW)."
     },
     {
       "type": "text",
@@ -93,6 +103,11 @@
       "content": "If all cross products have the same sign (or zero for collinear), the polygon is convex."
     },
     {
+      "type": "hint_card",
+      "question": "What if all cross products are zero?",
+      "answer": "That means every three consecutive vertices are collinear \u2014 your polygon is a straight line or single point (degenerate). You need at least one non-zero cross product to determine the expected orientation."
+    },
+    {
       "type": "heading",
       "level": 4,
       "text": "2.4 Point-in-Polygon (PIP)"
@@ -100,6 +115,16 @@
     {
       "type": "text",
       "content": "**Ray casting algorithm:**"
+    },
+    {
+      "type": "interactive_diagram",
+      "diagram": "point-in-polygon",
+      "caption": "Cast rays from a point to determine if it lies inside or outside a polygon."
+    },
+    {
+      "type": "hint_card",
+      "question": "When a ray passes exactly through a vertex, does it count as 1 crossing or 2?",
+      "answer": "It should count as 1 or 2 depending on whether the two incident edges are on opposite sides of the ray. Standard implementations handle this by using a half-open interval \u2014 if the ray intersects an edge at its upper endpoint, count it; if at the lower endpoint, skip it. This avoids double-counting."
     },
     {
       "type": "list",
@@ -168,6 +193,51 @@
       "content": "**Common keywords and phrases:**"
     },
     {
+      "type": "keyword_badges",
+      "groups": [
+        {
+          "label": "shoelace formula",
+          "color": "indigo"
+        },
+        {
+          "label": "convex polygon",
+          "color": "emerald"
+        },
+        {
+          "label": "concave polygon",
+          "color": "amber"
+        },
+        {
+          "label": "point in polygon (PIP)",
+          "color": "rose"
+        },
+        {
+          "label": "ray casting",
+          "color": "cyan"
+        },
+        {
+          "label": "regular polygon",
+          "color": "violet"
+        },
+        {
+          "label": "centroid / center of mass",
+          "color": "orange"
+        },
+        {
+          "label": "polygon perimeter",
+          "color": "pink"
+        },
+        {
+          "label": "convex hull",
+          "color": "sky"
+        },
+        {
+          "label": "signed area / cross product",
+          "color": "red"
+        }
+      ]
+    },
+    {
       "type": "list",
       "items": [
         "\"Polygon\" / \"regular polygon\" / \"convex polygon\"",
@@ -187,10 +257,10 @@
     {
       "type": "list",
       "items": [
-        "Problems with many points where you need to find the smallest enclosing shape → convex hull",
-        "Problems about \"inside\" or \"covering\" → point-in-polygon",
-        "Area ratio problems → shoelace + convex hull",
-        "Problems about \"reflection\" or \"symmetry\" in a shape → regular polygon properties"
+        "Problems with many points where you need to find the smallest enclosing shape \u2192 convex hull",
+        "Problems about \"inside\" or \"covering\" \u2192 point-in-polygon",
+        "Area ratio problems \u2192 shoelace + convex hull",
+        "Problems about \"reflection\" or \"symmetry\" in a shape \u2192 regular polygon properties"
       ]
     },
     {
@@ -594,6 +664,11 @@
       "content": "**A. Intuition:** Interior angle of regular n-gon = (n-2)*180/n. For a given A, n must be an integer >= 3."
     },
     {
+      "type": "hint_card",
+      "question": "Interior vs exterior angle: which is the complement of the other?",
+      "answer": "For any polygon, interior + exterior = 180\u00b0 (they are supplementary). Exterior angle = 360\u00b0/n is often simpler because it only depends on n, not on the polygon's shape."
+    },
+    {
       "type": "text",
       "content": "**B. Brute Force:** Try n from 3 upward until the interior angle matches A."
     },
@@ -608,7 +683,7 @@
     {
       "type": "list",
       "items": [
-        "If A < 60 or A >= 180: impossible (minimum interior angle of regular polygon is 60 for equilateral triangle, max approaches 180 as n→∞).",
+        "If A < 60 or A >= 180: impossible (minimum interior angle of regular polygon is 60 for equilateral triangle, max approaches 180 as n\u2192\u221e).",
         "Compute n = 360 / (180 - A).",
         "Check if n is an integer (using floating point epsilon or integer arithmetic)."
       ]
@@ -781,7 +856,7 @@
     },
     {
       "type": "text",
-      "content": "**B. Brute Force:** Check all combinations of 3 vertices for convexity — overkill."
+      "content": "**B. Brute Force:** Check all combinations of 3 vertices for convexity \u2014 overkill."
     },
     {
       "type": "text",
@@ -856,5 +931,10 @@
       "type": "divider"
     }
   ],
-  "difficulty": "Intermediate"
+  "difficulty": "Intermediate",
+  "problem_urls": {
+    "Problem 1": "https://codeforces.com/problemset/problem/270/A",
+    "Problem 2": "https://cses.fi/problemset/task/2191",
+    "Problem 3": "https://leetcode.com/problems/convex-polygon/"
+  }
 }

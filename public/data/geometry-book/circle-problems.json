@@ -2,7 +2,7 @@
   "chapter": 6,
   "slug": "circle-problems",
   "title": "Circle Problems",
-  "icon": "○",
+  "icon": "\u25cb",
   "color": "#a855f7",
   "problemCount": 4116,
   "blocks": [
@@ -18,7 +18,7 @@
     },
     {
       "type": "text",
-      "content": "A **circle** is the set of all points at a fixed distance (radius) from a center point. Circles introduce curved geometry into a world of discrete grids and straight lines — and they force us to think in terms of distances, angles, and continuous space."
+      "content": "A **circle** is the set of all points at a fixed distance (radius) from a center point. Circles introduce curved geometry into a world of discrete grids and straight lines \u2014 and they force us to think in terms of distances, angles, and continuous space."
     },
     {
       "type": "heading",
@@ -62,14 +62,22 @@
       "text": "2.1 Circle Equation"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "Center: (cx, cy)\nRadius: r\nEquation: (x - cx)² + (y - cy)² = r²",
-      "caption": null
+      "type": "text",
+      "content": "$$ Center: (cx, cy) $$\n$$ Radius: r $$\n$$ Equation: (x - cx)^2 + (y - cy)^2 = r^2 $$"
     },
     {
       "type": "text",
       "content": "A point (px, py) lies:"
+    },
+    {
+      "type": "hint_card",
+      "id": "geo-hint-precision",
+      "question": "Avoid Square Roots",
+      "answer": "Always compare squared distances: $$\\text{dist}^2 = (x_1 - x_2)^2 + (y_1 - y_2)^2$$ vs $$r^2$$. This avoids floating-point sqrt entirely and works flawlessly with integers. Only take sqrt when you absolutely need the actual distance value."
+    },
+    {
+      "type": "interactive_diagram",
+      "diagram": "circle-point-test"
     },
     {
       "type": "list",
@@ -89,10 +97,18 @@
       "content": "Two circles intersect if the distance between centers $\\le$ sum of radii AND $\\ge |r_1 - r_2|$."
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "d = sqrt((cx1 - cx2)² + (cy1 - cy2)²)\n\nConditions:\n  d > r1 + r2      → no intersection (separate)\n  d == r1 + r2     → tangent externally\n  d < |r1 - r2|    → one inside the other\n  d == |r1 - r2|   → tangent internally\n  otherwise        → two intersection points",
-      "caption": null
+      "type": "interactive_diagram",
+      "diagram": "circle-intersection"
+    },
+    {
+      "type": "hint_card",
+      "id": "geo-hint-tangent",
+      "question": "Tangent vs Intersection",
+      "answer": "Two circles that just touch (tangent) have exactly one point in common. In integer problems, tangent circles are often considered 'not overlapping' (no area overlap). Read the problem statement carefully \u2014 some count tangent as intersection, others don't."
+    },
+    {
+      "type": "text",
+      "content": "$$ d = sqrt((cx1 - cx2)^2 + (cy1 - cy2)^2) $$\n$$ Conditions: $$\n$$ d > r1 + r2      \\to  no intersection (separate) $$\n$$ d == r1 + r2     \\to  tangent externally $$\n$$ d < |r1 - r2|    \\to  one inside the other $$\n$$ d == |r1 - r2|   \\to  tangent internally $$\n$$ otherwise        \\to  two intersection points $$"
     },
     {
       "type": "heading",
@@ -100,10 +116,8 @@
       "text": "2.3 Circle Area and Circumference"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "Area = πr²\nCircumference = 2πr",
-      "caption": null
+      "type": "text",
+      "content": "$$ Area = \u03c0r^2 $$\n$$ Circumference = 2\u03c0r $$"
     },
     {
       "type": "heading",
@@ -115,14 +129,18 @@
       "content": "Any point on a circle can be represented as:"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "x = cx + r × cos(θ)\ny = cy + r × sin(θ)",
-      "caption": null
+      "type": "text",
+      "content": "$$ x = cx + r \\times  cos(\u03b8) $$\n$$ y = cy + r \\times  sin(\u03b8) $$"
     },
     {
       "type": "text",
       "content": "This is essential for angular sweep algorithms and constructing polygons from circles."
+    },
+    {
+      "type": "hint_card",
+      "id": "geo-hint-atan2",
+      "question": "Use atan2, Not atan",
+      "answer": "Always use $$\\text{atan2}(y, x)$$ instead of $$\\text{atan}(y/x)$$. atan2 returns the correct quadrant, handles $$x=0$$ gracefully, and returns values in $$[-\\pi, \\pi]$$. For angular sweep, remember to add $$2\\pi$$ offset to handle circularity."
     },
     {
       "type": "heading",
@@ -134,10 +152,8 @@
       "content": "Three non-collinear points uniquely determine a circle. The center is the circumcenter of the triangle formed by the points."
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "Given points A, B, C:\n- Midpoint of AB → perpendicular bisector\n- Midpoint of BC → perpendicular bisector\n- Intersection of bisectors = center\n- Radius = distance from center to any point",
-      "caption": null
+      "type": "text",
+      "content": "$$ Given points A, B, C: $$\n$$ - Midpoint of AB \\to  perpendicular bisector $$\n$$ - Midpoint of BC \\to  perpendicular bisector $$\n$$ - Intersection of bisectors = center $$\n$$ - Radius = distance from center to any point $$"
     },
     {
       "type": "heading",
@@ -157,6 +173,57 @@
         "If point is inside, return circle",
         "Otherwise, it must be on boundary: fix the point and recurse"
       ]
+    },
+    {
+      "type": "keyword_badges",
+      "keyword_groups": [
+        {
+          "label": "point in circle / within radius",
+          "color": "blue"
+        },
+        {
+          "label": "circle intersection / overlap",
+          "color": "red"
+        },
+        {
+          "label": "minimum enclosing circle",
+          "color": "green"
+        },
+        {
+          "label": "circle union area",
+          "color": "purple"
+        },
+        {
+          "label": "angular sweep / max points",
+          "color": "amber"
+        },
+        {
+          "label": "lattice points / integer points",
+          "color": "pink"
+        },
+        {
+          "label": "tangent / circle-line",
+          "color": "teal"
+        },
+        {
+          "label": "circumcircle / three points",
+          "color": "indigo"
+        },
+        {
+          "label": "sector / arc / ring",
+          "color": "orange"
+        },
+        {
+          "label": "circle packing / covering",
+          "color": "cyan"
+        }
+      ]
+    },
+    {
+      "type": "hint_card",
+      "id": "geo-hint-welzl",
+      "question": "Leave-One-Out Intuition",
+      "answer": "Welzl's algorithm works because a point outside the current circle must be on the boundary of the minimal enclosing circle. The randomization ensures expected $$O(n)$$ runtime."
     },
     {
       "type": "divider"
@@ -236,7 +303,7 @@
     },
     {
       "type": "text",
-      "content": "**When to use**: \"Minimum radius to cover all points\" **Why it works**: Coverage is monotonic — if radius R works, any larger radius works **Complexity**: O(N × log(PRECISION)) per check **Common pitfalls**: Using squared distance to avoid sqrt, integer vs double precision"
+      "content": "**When to use**: \"Minimum radius to cover all points\" **Why it works**: Coverage is monotonic \u2014 if radius R works, any larger radius works **Complexity**: O(N \u00d7 log(PRECISION)) per check **Common pitfalls**: Using squared distance to avoid sqrt, integer vs double precision"
     },
     {
       "type": "heading",
@@ -339,7 +406,7 @@
     {
       "type": "code",
       "lang": "python",
-      "code": "import random, math\n\ndef welzl(P):\n    def trivial(R):\n        if len(R) == 0: return (0, 0, 0)\n        if len(R) == 1: return (R[0][0], R[0][1], 0)\n        if len(R) == 2:\n            x1, y1 = R[0]; x2, y2 = R[1]\n            cx, cy = (x1+x2)/2, (y1+y2)/2\n            d = math.hypot(x2-x1, y2-y1)\n            return (cx, cy, d/2)\n        # 3 points → circumcircle\n        (x1,y1),(x2,y2),(x3,y3) = R[0],R[1],R[2]\n        d = 2*(x1*(y2-y3) + x2*(y3-y1) + x3*(y1-y2))\n        if abs(d) < 1e-12: return (0, 0, float('inf'))\n        ux = ((x1*x1+y1*y1)*(y2-y3) + (x2*x2+y2*y2)*(y3-y1) + (x3*x3+y3*y3)*(y1-y2))/d\n        uy = ((x1*x1+y1*y1)*(x3-x2) + (x2*x2+y2*y2)*(x1-x3) + (x3*x3+y3*y3)*(x2-x1))/d\n        r = math.hypot(ux-x1, uy-y1)\n        return (ux, uy, r)\n    \n    def solve(P, R):\n        if not P or len(R) == 3:\n            return trivial(R)\n        p = P[-1]\n        P = P[:-1]\n        c = solve(P, R)\n        if point_in_circle(p[0], p[1], c[0], c[1], c[2] + 1e-9):\n            return c\n        return solve(P, R + [p])\n    \n    random.shuffle(P)\n    cx, cy, r = solve(P, [])\n    return (cx, cy, r)",
+      "code": "import random, math\n\ndef welzl(P):\n    def trivial(R):\n        if len(R) == 0: return (0, 0, 0)\n        if len(R) == 1: return (R[0][0], R[0][1], 0)\n        if len(R) == 2:\n            x1, y1 = R[0]; x2, y2 = R[1]\n            cx, cy = (x1+x2)/2, (y1+y2)/2\n            d = math.hypot(x2-x1, y2-y1)\n            return (cx, cy, d/2)\n        # 3 points \u2192 circumcircle\n        (x1,y1),(x2,y2),(x3,y3) = R[0],R[1],R[2]\n        d = 2*(x1*(y2-y3) + x2*(y3-y1) + x3*(y1-y2))\n        if abs(d) < 1e-12: return (0, 0, float('inf'))\n        ux = ((x1*x1+y1*y1)*(y2-y3) + (x2*x2+y2*y2)*(y3-y1) + (x3*x3+y3*y3)*(y1-y2))/d\n        uy = ((x1*x1+y1*y1)*(x3-x2) + (x2*x2+y2*y2)*(x1-x3) + (x3*x3+y3*y3)*(x2-x1))/d\n        r = math.hypot(ux-x1, uy-y1)\n        return (ux, uy, r)\n    \n    def solve(P, R):\n        if not P or len(R) == 3:\n            return trivial(R)\n        p = P[-1]\n        P = P[:-1]\n        c = solve(P, R)\n        if point_in_circle(p[0], p[1], c[0], c[1], c[2] + 1e-9):\n            return c\n        return solve(P, R + [p])\n    \n    random.shuffle(P)\n    cx, cy, r = solve(P, [])\n    return (cx, cy, r)",
       "caption": null
     },
     {
@@ -363,7 +430,7 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "5.4 Angular Sweep — Max Points in Circle"
+      "text": "5.4 Angular Sweep \u2014 Max Points in Circle"
     },
     {
       "type": "code",
@@ -413,7 +480,7 @@
           "Circle Area",
           "CodeChef",
           "Easy",
-          "πr² formula",
+          "\u03c0r\u00b2 formula",
           "Basic computation"
         ],
         [
@@ -517,7 +584,7 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Easy — Circle Area Comparator"
+      "text": "Easy \u2014 Circle Area Comparator"
     },
     {
       "type": "text",
@@ -526,7 +593,7 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Easy — How Many Inside?"
+      "text": "Easy \u2014 How Many Inside?"
     },
     {
       "type": "text",
@@ -535,7 +602,7 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Medium — Concentric Rings"
+      "text": "Medium \u2014 Concentric Rings"
     },
     {
       "type": "text",
@@ -544,7 +611,7 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Medium — Minimum Covering Radius"
+      "text": "Medium \u2014 Minimum Covering Radius"
     },
     {
       "type": "text",
@@ -553,16 +620,16 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Hard — Circle Packing"
+      "text": "Hard \u2014 Circle Packing"
     },
     {
       "type": "text",
-      "content": "Given a rectangular box of dimensions W × H, find the maximum number of circles of radius r that can be packed without overlapping."
+      "content": "Given a rectangular box of dimensions W \u00d7 H, find the maximum number of circles of radius r that can be packed without overlapping."
     },
     {
       "type": "heading",
       "level": 3,
-      "text": "Hard — Overlap Area"
+      "text": "Hard \u2014 Overlap Area"
     },
     {
       "type": "text",
@@ -571,7 +638,7 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Interview — Radar Stations"
+      "text": "Interview \u2014 Radar Stations"
     },
     {
       "type": "text",
@@ -588,7 +655,7 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Problem 1: Point in Circle — Water Lily (Codeforces 1199B)"
+      "text": "Problem 1: Point in Circle \u2014 Water Lily (Codeforces 1199B)"
     },
     {
       "type": "text",
@@ -726,5 +793,10 @@
       "type": "divider"
     }
   ],
-  "difficulty": "Intermediate"
+  "difficulty": "Intermediate",
+  "problem_urls": {
+    "Problem 1": "https://codeforces.com/problemset/problem/1199/B",
+    "Problem 2": "https://atcoder.jp/contests/abc191/tasks/abc191_d",
+    "Problem 3": "https://leetcode.com/problems/maximum-number-of-darts-inside-of-a-circular-dartboard/"
+  }
 }

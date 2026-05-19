@@ -2,7 +2,7 @@
   "chapter": 11,
   "slug": "grid-based-geometry",
   "title": "Grid-Based Geometry",
-  "icon": "⊞",
+  "icon": "\u229e",
   "color": "#ec4899",
   "problemCount": 402,
   "blocks": [
@@ -18,7 +18,7 @@
     },
     {
       "type": "text",
-      "content": "A grid is one of the most fundamental structures in computer science. Think of a chessboard, a city map with blocks, a spreadsheet, or a pixelated image — these are all grids. In a grid, the world is divided into discrete cells arranged in rows and columns, and movement is restricted to these cells."
+      "content": "A grid is one of the most fundamental structures in computer science. Think of a chessboard, a city map with blocks, a spreadsheet, or a pixelated image \u2014 these are all grids. In a grid, the world is divided into discrete cells arranged in rows and columns, and movement is restricted to these cells."
     },
     {
       "type": "text",
@@ -40,7 +40,7 @@
     },
     {
       "type": "text",
-      "content": "A grid of size R × C can be represented as:"
+      "content": "A grid of size R \u00d7 C can be represented as:"
     },
     {
       "type": "list",
@@ -69,6 +69,11 @@
       "text": "2.3 Grid BFS and DFS"
     },
     {
+      "type": "interactive_diagram",
+      "diagram": "grid-bfs-explorer",
+      "caption": "Visualise BFS and DFS traversal on a grid. Click cells to toggle obstacles, then step through the search."
+    },
+    {
       "type": "text",
       "content": "**BFS (Breadth-First Search):**"
     },
@@ -77,7 +82,7 @@
       "items": [
         "Uses a queue",
         "Finds shortest path in unweighted grid (4-dir or 8-dir)",
-        "O(R × C) time and space"
+        "O(R \u00d7 C) time and space"
       ]
     },
     {
@@ -89,7 +94,7 @@
       "items": [
         "Uses recursion or stack",
         "Good for connectivity, component finding, maze solving",
-        "O(R × C) time and space"
+        "O(R \u00d7 C) time and space"
       ]
     },
     {
@@ -108,7 +113,7 @@
     },
     {
       "type": "text",
-      "content": "**90° Rotation (clockwise):** new_grid[c][R-1-r] = grid[r][c] Or equivalently: transpose then reverse each row."
+      "content": "**90\u00b0 Rotation (clockwise):** new_grid[c][R-1-r] = grid[r][c] Or equivalently: transpose then reverse each row."
     },
     {
       "type": "text",
@@ -157,6 +162,16 @@
       "text": "2.7 Multi-source BFS"
     },
     {
+      "type": "interactive_diagram",
+      "diagram": "multi-source-bfs",
+      "caption": "Watch how multiple sources expand simultaneously in a multi-source BFS flood fill."
+    },
+    {
+      "type": "hint_card",
+      "question": "When should I use multi-source BFS instead of running BFS from each source?",
+      "answer": "Multi-source BFS guarantees each cell gets its distance to the nearest source in a single O(R\u00d7C) pass. Running BFS from each source separately would take O(K\u00d7R\u00d7C). The trick: initialise the queue with all sources at distance 0 \u2014 the BFS frontier naturally expands from all of them at once, like ripples from multiple stones dropped into a pond."
+    },
+    {
       "type": "text",
       "content": "Initialize the queue with ALL starting cells simultaneously. The BFS frontier expands from all sources at once, giving each cell its distance to the nearest source."
     },
@@ -194,16 +209,48 @@
       "content": "**Common keywords and phrases:**"
     },
     {
-      "type": "list",
-      "items": [
-        "\"Grid\" / \"matrix\" / \"2D array\"",
-        "\"Maze\" / \"labyrinth\"",
-        "\"Shortest path in grid\"",
-        "\"Island\" / \"connected components\"",
-        "\"Flood fill\"",
-        "\"Number of paths in a grid\"",
-        "\"Rotate the matrix\" / \"spiral traversal\"",
-        "\"Obstacle\" / \"blocked cells\""
+      "type": "keyword_badges",
+      "groups": [
+        {
+          "label": "grid / matrix",
+          "color": "indigo"
+        },
+        {
+          "label": "BFS shortest path",
+          "color": "emerald"
+        },
+        {
+          "label": "DFS connected components",
+          "color": "rose"
+        },
+        {
+          "label": "flood fill",
+          "color": "cyan"
+        },
+        {
+          "label": "multi-source BFS",
+          "color": "violet"
+        },
+        {
+          "label": "grid DP / path counting",
+          "color": "amber"
+        },
+        {
+          "label": "grid rotation / transformation",
+          "color": "orange"
+        },
+        {
+          "label": "2D prefix sum",
+          "color": "sky"
+        },
+        {
+          "label": "island counting",
+          "color": "pink"
+        },
+        {
+          "label": "spiral traversal",
+          "color": "red"
+        }
       ]
     },
     {
@@ -213,11 +260,11 @@
     {
       "type": "list",
       "items": [
-        "\"Robot moving on a board\" → grid movement simulation",
-        "\"Only move right and down\" → DP on grid (unique paths)",
-        "\"4-directional\" or \"8-directional\" → BFS or DFS",
-        "\"Minimum steps\" in a grid → BFS (unweighted) or Dijkstra (weighted)",
-        "\"Number of ways to reach\" → combinatorial DP"
+        "\"Robot moving on a board\" \u2192 grid movement simulation",
+        "\"Only move right and down\" \u2192 DP on grid (unique paths)",
+        "\"4-directional\" or \"8-directional\" \u2192 BFS or DFS",
+        "\"Minimum steps\" in a grid \u2192 BFS (unweighted) or Dijkstra (weighted)",
+        "\"Number of ways to reach\" \u2192 combinatorial DP"
       ]
     },
     {
@@ -240,7 +287,7 @@
     },
     {
       "type": "text",
-      "content": "**Complexity:** O(R × C)."
+      "content": "**Complexity:** O(R \u00d7 C)."
     },
     {
       "type": "text",
@@ -256,12 +303,17 @@
       "content": "**When to use:** Count the number of ways to go from top-left to bottom-right, moving only right/down."
     },
     {
+      "type": "hint_card",
+      "question": "Why does the DP formula dp[r][c] = dp[r-1][c] + dp[r][c-1] work for counting grid paths?",
+      "answer": "You can only reach cell (r,c) from above (r-1,c) or from the left (r,c-1). So the number of ways to reach (r,c) is the sum of ways to reach those two predecessors. Base case: dp[0][0] = 1 (one way to start). Obstacles reset dp to 0 \u2014 no path can go through a blocked cell."
+    },
+    {
       "type": "text",
       "content": "**Why it works:** dp[r][c] = dp[r-1][c] + dp[r][c-1] (with obstacles: set dp = 0 at obstacles)."
     },
     {
       "type": "text",
-      "content": "**Complexity:** O(R × C)."
+      "content": "**Complexity:** O(R \u00d7 C)."
     },
     {
       "type": "text",
@@ -282,7 +334,7 @@
     },
     {
       "type": "text",
-      "content": "**Complexity:** O(R × C)."
+      "content": "**Complexity:** O(R \u00d7 C)."
     },
     {
       "type": "text",
@@ -298,12 +350,17 @@
       "content": "**When to use:** Count distinct connected regions in a binary grid."
     },
     {
+      "type": "hint_card",
+      "question": "Should I use BFS or DFS for grid problems?",
+      "answer": "DFS is simpler for connectivity/island counting (just recurse). BFS is better for shortest path (queue guarantees minimum steps). For large grids, BFS uses more memory (queue can grow) but avoids recursion depth limits. In practice: use BFS for distance, DFS for connectivity. Both are O(R\u00d7C)."
+    },
+    {
       "type": "text",
       "content": "**Why it works:** DFS or BFS from each unvisited land cell, marking all cells in that component."
     },
     {
       "type": "text",
-      "content": "**Complexity:** O(R × C)."
+      "content": "**Complexity:** O(R \u00d7 C)."
     },
     {
       "type": "text",
@@ -324,7 +381,7 @@
     },
     {
       "type": "text",
-      "content": "**Complexity:** O(R × C)."
+      "content": "**Complexity:** O(R \u00d7 C)."
     },
     {
       "type": "text",
@@ -396,7 +453,7 @@
     {
       "type": "heading",
       "level": 4,
-      "text": "Grid Rotation (90° Clockwise)"
+      "text": "Grid Rotation (90\u00b0 Clockwise)"
     },
     {
       "type": "code",
@@ -596,7 +653,7 @@
     },
     {
       "type": "text",
-      "content": "**Problem 1: Spiral Walk (Easy)** Given an R × C grid, start at (0, 0) and walk in a clockwise spiral pattern visiting every cell exactly once. Return the list of coordinates visited in order."
+      "content": "**Problem 1: Spiral Walk (Easy)** Given an R \u00d7 C grid, start at (0, 0) and walk in a clockwise spiral pattern visiting every cell exactly once. Return the list of coordinates visited in order."
     },
     {
       "type": "text",
@@ -608,19 +665,19 @@
     },
     {
       "type": "text",
-      "content": "**Problem 4: Grid Transformation Matching (Medium)** Given two binary grids A and B of the same size, determine if A can be transformed into B using any combination of: 90° rotation, horizontal reflection, vertical reflection, and translation (shifting)."
+      "content": "**Problem 4: Grid Transformation Matching (Medium)** Given two binary grids A and B of the same size, determine if A can be transformed into B using any combination of: 90\u00b0 rotation, horizontal reflection, vertical reflection, and translation (shifting)."
     },
     {
       "type": "text",
-      "content": "**Problem 5: Maximum Submatrix with Sum Zero (Hard)** Given an R × C grid of integers, find the largest rectangular submatrix whose sum is zero."
+      "content": "**Problem 5: Maximum Submatrix with Sum Zero (Hard)** Given an R \u00d7 C grid of integers, find the largest rectangular submatrix whose sum is zero."
     },
     {
       "type": "text",
-      "content": "**Problem 6: Knight's Minimum Moves (Hard)** Given a chessboard of size N × N, find the minimum number of knight moves to go from (r1, c1) to (r2, c2). A knight moves in an L-shape: (±1, ±2) or (±2, ±1). N up to 10^5."
+      "content": "**Problem 6: Knight's Minimum Moves (Hard)** Given a chessboard of size N \u00d7 N, find the minimum number of knight moves to go from (r1, c1) to (r2, c2). A knight moves in an L-shape: (\u00b11, \u00b12) or (\u00b12, \u00b11). N up to 10^5."
     },
     {
       "type": "text",
-      "content": "**Problem 7: Grid Teleportation (Contest-Style)** You are on an R × C grid. Cells contain letters 'a'-'z'. When you step on a cell, you can optionally teleport to any other cell with the same letter. Find the minimum steps from start to target."
+      "content": "**Problem 7: Grid Teleportation (Contest-Style)** You are on an R \u00d7 C grid. Cells contain letters 'a'-'z'. When you step on a cell, you can optionally teleport to any other cell with the same letter. Find the minimum steps from start to target."
     },
     {
       "type": "heading",
@@ -642,7 +699,7 @@
     },
     {
       "type": "text",
-      "content": "**B. Brute Force:** Same as DFS/BFS approach — no truly brute force alternative for counting components."
+      "content": "**B. Brute Force:** Same as DFS/BFS approach \u2014 no truly brute force alternative for counting components."
     },
     {
       "type": "text",
@@ -680,8 +737,8 @@
     {
       "type": "list",
       "items": [
-        "Time: O(R × C) — each cell visited at most once.",
-        "Space: O(R × C) worst case for recursion stack (or visited array)."
+        "Time: O(R \u00d7 C) \u2014 each cell visited at most once.",
+        "Space: O(R \u00d7 C) worst case for recursion stack (or visited array)."
       ]
     },
     {
@@ -770,8 +827,8 @@
     {
       "type": "list",
       "items": [
-        "Time: O(R × C) — each cell exactly once.",
-        "Space: O(R × C) for queue and dist matrix."
+        "Time: O(R \u00d7 C) \u2014 each cell exactly once.",
+        "Space: O(R \u00d7 C) for queue and dist matrix."
       ]
     },
     {
@@ -824,7 +881,7 @@
     },
     {
       "type": "text",
-      "content": "**Given:** An R × C grid of non-negative integers. Find the path from top-left to bottom-right that minimizes the sum of numbers along the path. You can only move right or down."
+      "content": "**Given:** An R \u00d7 C grid of non-negative integers. Find the path from top-left to bottom-right that minimizes the sum of numbers along the path. You can only move right or down."
     },
     {
       "type": "text",
@@ -859,8 +916,8 @@
     {
       "type": "list",
       "items": [
-        "Time: O(R × C).",
-        "Space: O(R × C) or O(C) with space optimization."
+        "Time: O(R \u00d7 C).",
+        "Space: O(R \u00d7 C) or O(C) with space optimization."
       ]
     },
     {
@@ -914,7 +971,7 @@
     },
     {
       "type": "text",
-      "content": "**Given:** An R × C grid representing an image. Start at (sr, sc) and change all cells connected 4-directionally with the same starting color to a new color."
+      "content": "**Given:** An R \u00d7 C grid representing an image. Start at (sr, sc) and change all cells connected 4-directionally with the same starting color to a new color."
     },
     {
       "type": "text",
@@ -922,7 +979,7 @@
     },
     {
       "type": "text",
-      "content": "**B. Brute Force:** Same as DFS/BFS — this is the canonical solution."
+      "content": "**B. Brute Force:** Same as DFS/BFS \u2014 this is the canonical solution."
     },
     {
       "type": "text",
@@ -948,8 +1005,8 @@
     {
       "type": "list",
       "items": [
-        "Time: O(R × C) — each cell visited at most once.",
-        "Space: O(R × C) worst-case recursion depth."
+        "Time: O(R \u00d7 C) \u2014 each cell visited at most once.",
+        "Space: O(R \u00d7 C) worst-case recursion depth."
       ]
     },
     {
@@ -1036,7 +1093,7 @@
     {
       "type": "list",
       "items": [
-        "Time: O(R + C) — iterate over rows and columns traversed.",
+        "Time: O(R + C) \u2014 iterate over rows and columns traversed.",
         "Space: O(1)."
       ]
     },
@@ -1089,11 +1146,11 @@
     },
     {
       "type": "text",
-      "content": "**Given:** An R × C grid with 0 = empty, 1 = obstacle. You can eliminate at most k obstacles. Find the minimum steps from (0,0) to (R-1,C-1)."
+      "content": "**Given:** An R \u00d7 C grid with 0 = empty, 1 = obstacle. You can eliminate at most k obstacles. Find the minimum steps from (0,0) to (R-1,C-1)."
     },
     {
       "type": "text",
-      "content": "**A. Intuition:** This is BFS with state (r, c, k_remaining). The state space is R × C × (k+1)."
+      "content": "**A. Intuition:** This is BFS with state (r, c, k_remaining). The state space is R \u00d7 C \u00d7 (k+1)."
     },
     {
       "type": "text",
@@ -1136,8 +1193,8 @@
     {
       "type": "list",
       "items": [
-        "Time: O(R × C × k).",
-        "Space: O(R × C × k)."
+        "Time: O(R \u00d7 C \u00d7 k).",
+        "Space: O(R \u00d7 C \u00d7 k)."
       ]
     },
     {
@@ -1181,5 +1238,13 @@
       "caption": null
     }
   ],
-  "difficulty": "Advanced"
+  "difficulty": "Advanced",
+  "problem_urls": {
+    "Problem 1": "https://leetcode.com/problems/number-of-islands/",
+    "Problem 2": "https://leetcode.com/problems/01-matrix/",
+    "Problem 3": "https://leetcode.com/problems/minimum-path-sum/",
+    "Problem 4": "https://leetcode.com/problems/flood-fill/",
+    "Problem 5": "https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/",
+    "Problem 6": "https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/"
+  }
 }

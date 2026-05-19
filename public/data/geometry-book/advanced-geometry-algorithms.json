@@ -2,9 +2,9 @@
   "chapter": 15,
   "slug": "advanced-geometry-algorithms",
   "title": "Advanced Geometry Algorithms",
-  "icon": "✦",
+  "icon": "\u2726",
   "color": "#84cc16",
-  "problemCount": 172,
+  "problemCount": 198,
   "blocks": [
     {
       "type": "heading",
@@ -74,6 +74,16 @@
       "text": "2.2 3D Geometry"
     },
     {
+      "type": "hint_card",
+      "question": "How do cross and dot products behave differently in 3D vs 2D?",
+      "answer": "In 3D the cross product returns a vector (perpendicular to both inputs), not a scalar. Its magnitude equals the area of the parallelogram. The dot product is the same in any dimension: a\u00b7b = |a||b|cos\u03b8. For 3D geometry: dot product tests alignment (parallel if |dot| = |a||b|), cross product magnitude tests perpendicularity and gives surface normals."
+    },
+    {
+      "type": "hint_card",
+      "question": "How do cross and dot products behave differently in 3D vs 2D?",
+      "answer": "In 3D the cross product returns a vector (perpendicular to both inputs), not a scalar. Its magnitude equals the area of the parallelogram. The dot product is the same in any dimension: a\u00b7b = |a||b|cos\u03b8. For 3D geometry: dot product tests alignment (parallel if |dot| = |a||b|), cross product magnitude tests perpendicularity and gives surface normals."
+    },
+    {
       "type": "text",
       "content": "**Distance:** `$d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2}$`"
     },
@@ -91,6 +101,26 @@
       "text": "2.3 Bezier Curves"
     },
     {
+      "type": "interactive_diagram",
+      "diagram": "bezier-curve",
+      "caption": "Drag control points to shape the B\u00e9zier curve. Observe how the curve stays within the convex hull of points."
+    },
+    {
+      "type": "hint_card",
+      "question": "How does de Casteljau's algorithm evaluate a B\u00e9zier curve?",
+      "answer": "It recursively interpolates between control points. For a degree-n curve with points P\u2080,...,P\u2099, at parameter t: linearly interpolate each adjacent pair (P\u1d62,P\u1d62\u208a\u2081) to get n-1 points, repeat until 1 point remains. That point is B(t). Numerically stable and works for any degree."
+    },
+    {
+      "type": "interactive_diagram",
+      "diagram": "bezier-curve",
+      "caption": "Drag control points to shape the B\u00e9zier curve. Observe how the curve stays within the convex hull of points."
+    },
+    {
+      "type": "hint_card",
+      "question": "How does de Casteljau's algorithm evaluate a B\u00e9zier curve?",
+      "answer": "It recursively interpolates between control points. For a degree-n curve with points P\u2080,...,P\u2099, at parameter t: linearly interpolate each adjacent pair (P\u1d62,P\u1d62\u208a\u2081) to get n-1 points, repeat until 1 point remains. That point is B(t). Numerically stable and works for any degree."
+    },
+    {
       "type": "text",
       "content": "**Cubic:** `$B(t) = (1-t)^3P_0 + 3(1-t)^2 t P_1 + 3(1-t) t^2 P_2 + t^3 P_3$`"
     },
@@ -104,11 +134,111 @@
       "text": "2.4 Voronoi / Delaunay"
     },
     {
+      "type": "hint_card",
+      "question": "What makes Fortune's algorithm efficient for Voronoi diagrams?",
+      "answer": "Fortune's algorithm uses a sweep line with a beach line state. As the sweep line moves top-to-bottom, the beach line (set of parabolic arcs) represents points equidistant from the sweep line and seed points. Events: site events (new arc) and circle events (arc removed). Implemented with a balanced BST for the beach line and a priority queue. O(N log N)."
+    },
+    {
+      "type": "hint_card",
+      "question": "What makes Fortune's algorithm efficient for Voronoi diagrams?",
+      "answer": "Fortune's algorithm uses a sweep line with a beach line state. As the sweep line moves top-to-bottom, the beach line (set of parabolic arcs) represents points equidistant from the sweep line and seed points. Events: site events (new arc) and circle events (arc removed). Implemented with a balanced BST for the beach line and a priority queue. O(N log N)."
+    },
+    {
       "type": "text",
-      "content": "**Voronoi:** Partition by nearest seed point. **Delaunay:** Dual graph — connects seeds whose Voronoi cells touch. Maximizes minimum angle. $O(N \\log N)$ via Fortune's algorithm."
+      "content": "**Voronoi:** Partition by nearest seed point. **Delaunay:** Dual graph \u2014 connects seeds whose Voronoi cells touch. Maximizes minimum angle. $O(N \\log N)$ via Fortune's algorithm."
     },
     {
       "type": "divider"
+    },
+    {
+      "type": "keyword_badges",
+      "groups": [
+        {
+          "label": "3d-geometry",
+          "color": "indigo"
+        },
+        {
+          "label": "fractal",
+          "color": "emerald"
+        },
+        {
+          "label": "bezier-curve",
+          "color": "amber"
+        },
+        {
+          "label": "quadtree",
+          "color": "rose"
+        },
+        {
+          "label": "spatial-hashing",
+          "color": "cyan"
+        },
+        {
+          "label": "kd-tree",
+          "color": "violet"
+        },
+        {
+          "label": "minkowski-sum",
+          "color": "orange"
+        },
+        {
+          "label": "half-plane-intersection",
+          "color": "sky"
+        },
+        {
+          "label": "randomized-algorithm",
+          "color": "pink"
+        },
+        {
+          "label": "bsp-tree",
+          "color": "red"
+        }
+      ]
+    },
+    {
+      "type": "keyword_badges",
+      "groups": [
+        {
+          "label": "3d-geometry",
+          "color": "indigo"
+        },
+        {
+          "label": "fractal",
+          "color": "emerald"
+        },
+        {
+          "label": "bezier-curve",
+          "color": "amber"
+        },
+        {
+          "label": "quadtree",
+          "color": "rose"
+        },
+        {
+          "label": "spatial-hashing",
+          "color": "cyan"
+        },
+        {
+          "label": "kd-tree",
+          "color": "violet"
+        },
+        {
+          "label": "minkowski-sum",
+          "color": "orange"
+        },
+        {
+          "label": "half-plane-intersection",
+          "color": "sky"
+        },
+        {
+          "label": "randomized-algorithm",
+          "color": "pink"
+        },
+        {
+          "label": "bsp-tree",
+          "color": "red"
+        }
+      ]
     },
     {
       "type": "heading",
@@ -486,7 +616,7 @@
     },
     {
       "type": "text",
-      "content": "**Medium 2: Sphere Overlap** Two spheres with centers and radii — do they intersect? Compute intersection volume if yes."
+      "content": "**Medium 2: Sphere Overlap** Two spheres with centers and radii \u2014 do they intersect? Compute intersection volume if yes."
     },
     {
       "type": "text",
@@ -715,5 +845,12 @@
       "type": "divider"
     }
   ],
-  "difficulty": "Expert"
+  "difficulty": "Expert",
+  "problem_urls": {
+    "Problem 1": "https://leetcode.com/problems/k-closest-points-to-origin/",
+    "Problem 2": "https://www.geeksforgeeks.org/quadtree-in-data-structure/",
+    "Problem 3": "https://codeforces.com/problemset/problem/543/A",
+    "Problem 4": "https://codeforces.com/problemset/problem/669/E",
+    "Problem 5": "https://leetcode.com/problems/maximum-number-of-visible-points/"
+  }
 }

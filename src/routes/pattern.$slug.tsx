@@ -17,7 +17,7 @@ export const Route = createFileRoute("/pattern/$slug")({
         </p>
         <Link
           to="/pattern"
-          className="inline-flex items-center gap-2 rounded-lg border border-[var(--border)] bg-[var(--card)] px-4 py-2 text-xs font-black text-[var(--foreground)] shadow-sm transition-all no-underline hover:shadow-md hover:-translate-y-0.5"
+          data-focusable="button" className="inline-flex items-center gap-2 rounded-lg border border-[var(--border)] bg-[var(--card)] px-4 py-2 text-xs font-black text-[var(--foreground)] shadow-sm transition-all no-underline hover:shadow-md hover:-translate-y-0.5"
         >
           ← Back to Pattern Guide
         </Link>
@@ -359,7 +359,7 @@ function PatternDetailPage() {
           <div className="mt-4">
             <Link
               to="/pattern"
-              className="inline-flex items-center gap-2 rounded-lg border border-[var(--border)] bg-[var(--card)] px-4 py-2 text-xs font-black text-[var(--foreground)] shadow-sm transition-all no-underline hover:shadow-md hover:-translate-y-0.5"
+              data-focusable="button" className="inline-flex items-center gap-2 rounded-lg border border-[var(--border)] bg-[var(--card)] px-4 py-2 text-xs font-black text-[var(--foreground)] shadow-sm transition-all no-underline hover:shadow-md hover:-translate-y-0.5"
             >
               ← Back to Pattern Guide
             </Link>
@@ -369,7 +369,7 @@ function PatternDetailPage() {
 
       {/* Ready notice */}
       {entry.status === "ready" && entry.sections.length === 0 && (
-        <div className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-6 shadow-sm">
+        <div data-focusable="card" className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-6 shadow-sm">
           <h2 className="text-base font-black mb-2 text-[var(--foreground)]">Article Coming</h2>
           <p className="text-sm leading-relaxed opacity-80 text-[var(--foreground)]">
             This pattern is marked as ready but the detailed article content is being migrated.

@@ -2,7 +2,7 @@
   "chapter": 7,
   "slug": "coordinate-geometry",
   "title": "Coordinate Geometry",
-  "icon": "⌖",
+  "icon": "\u2316",
   "color": "#06b6d4",
   "problemCount": 422,
   "blocks": [
@@ -18,7 +18,7 @@
     },
     {
       "type": "text",
-      "content": "**Coordinate geometry** (also called analytic geometry) is the study of geometry using a coordinate system. It bridges algebra and geometry — every geometric shape corresponds to an equation, and every equation corresponds to a geometric shape."
+      "content": "**Coordinate geometry** (also called analytic geometry) is the study of geometry using a coordinate system. It bridges algebra and geometry \u2014 every geometric shape corresponds to an equation, and every equation corresponds to a geometric shape."
     },
     {
       "type": "heading",
@@ -27,7 +27,7 @@
     },
     {
       "type": "text",
-      "content": "GPS coordinates define positions on Earth. Every location has a latitude and longitude — a pair of numbers. When you look up \"restaurants near me\", you are solving a coordinate geometry problem: which points are within a certain distance of my current point?"
+      "content": "GPS coordinates define positions on Earth. Every location has a latitude and longitude \u2014 a pair of numbers. When you look up \"restaurants near me\", you are solving a coordinate geometry problem: which points are within a certain distance of my current point?"
     },
     {
       "type": "heading",
@@ -66,10 +66,8 @@
       "content": "The Cartesian coordinate system uses two perpendicular axes (x and y) to define any point in the plane as an ordered pair (x, y)."
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "Quadrants:\n  Q2 (-x, +y)  |  Q1 (+x, +y)\n  --------------+--------------\n  Q3 (-x, -y)  |  Q4 (+x, -y)",
-      "caption": null
+      "type": "text",
+      "content": "$$\\begin{array}{c|c}\n\\text{Q2 } (-x, +y) & \\text{Q1 } (+x, +y) \\\\\n\\hline\n\\text{Q3 } (-x, -y) & \\text{Q4 } (+x, -y)\n\\end{array}$$"
     },
     {
       "type": "heading",
@@ -81,30 +79,34 @@
       "content": "**Euclidean distance** (straight-line):"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "d = sqrt((x2 - x1)² + (y2 - y1)²)",
-      "caption": null
+      "type": "interactive_diagram",
+      "diagram": "distance-explorer",
+      "caption": "Explore how Euclidean, Manhattan, and Chebyshev distances differ for any two points."
+    },
+    {
+      "type": "hint_card",
+      "question": "When should you compare squared distances instead of actual distances?",
+      "answer": "When you only need relative ordering (which point is closer), avoid the costly sqrt operation. Compare $d^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2$ directly \u2014 it's monotonic with $d$."
+    },
+    {
+      "type": "text",
+      "content": "$$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$"
     },
     {
       "type": "text",
       "content": "**Manhattan distance** (grid movement, no diagonals):"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "d = |x2 - x1| + |y2 - y1|",
-      "caption": null
+      "type": "text",
+      "content": "$$d = |x_2 - x_1| + |y_2 - y_1|$$"
     },
     {
       "type": "text",
       "content": "**Chebyshev distance** (king moves in chess):"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "d = max(|x2 - x1|, |y2 - y1|)",
-      "caption": null
+      "type": "text",
+      "content": "$$d = \\max(|x_2 - x_1|, |y_2 - y_1|)$$"
     },
     {
       "type": "heading",
@@ -112,10 +114,8 @@
       "text": "2.3 Midpoint Formula"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "Midpoint = ((x1 + x2)/2, (y1 + y2)/2)",
-      "caption": null
+      "type": "text",
+      "content": "$$\\text{Midpoint} = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)$$"
     },
     {
       "type": "heading",
@@ -127,10 +127,8 @@
       "content": "A point P dividing AB in ratio m:n:"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "Px = (m*x2 + n*x1) / (m + n)\nPy = (m*y2 + n*y1) / (m + n)",
-      "caption": null
+      "type": "text",
+      "content": "$$P_x = \\frac{m \\cdot x_2 + n \\cdot x_1}{m + n}, \\quad P_y = \\frac{m \\cdot y_2 + n \\cdot y_1}{m + n}$$"
     },
     {
       "type": "heading",
@@ -142,30 +140,24 @@
       "content": "**Translation**: shift by (dx, dy)"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "x' = x + dx\ny' = y + dy",
-      "caption": null
+      "type": "text",
+      "content": "$$x' = x + d_x, \\quad y' = y + d_y$$"
     },
     {
       "type": "text",
       "content": "**Rotation** about origin by angle $\\theta$:"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "x' = x*cos(θ) - y*sin(θ)\ny' = x*sin(θ) + y*cos(θ)",
-      "caption": null
+      "type": "text",
+      "content": "$$x' = x \\cos\\theta - y \\sin\\theta, \\quad y' = x \\sin\\theta + y \\cos\\theta$$"
     },
     {
       "type": "text",
       "content": "**Reflection** across x-axis:"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "x' = x,  y' = -y",
-      "caption": null
+      "type": "text",
+      "content": "$$x' = x, \\quad y' = -y$$"
     },
     {
       "type": "heading",
@@ -173,14 +165,17 @@
       "text": "2.6 Collinearity"
     },
     {
+      "type": "interactive_diagram",
+      "diagram": "collinearity-checker",
+      "caption": "Drag three points to see whether they lie on a straight line using the cross-product test."
+    },
+    {
       "type": "text",
       "content": "Three points A, B, C are collinear (lie on the same line) if:"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "Area of triangle ABC = 0\n→ x1(y2 - y3) + x2(y3 - y1) + x3(y1 - y2) = 0",
-      "caption": null
+      "type": "text",
+      "content": "$$x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2) = 0$$"
     },
     {
       "type": "text",
@@ -196,10 +191,8 @@
       "content": "Points with integer coordinates are called **lattice points**. The number of lattice points on the line segment between (x1, y1) and (x2, y2), inclusive, is:"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "gcd(|x2 - x1|, |y2 - y1|) + 1",
-      "caption": null
+      "type": "text",
+      "content": "$$\\gcd(|x_2 - x_1|, |y_2 - y_1|) + 1$$"
     },
     {
       "type": "divider"
@@ -210,60 +203,48 @@
       "text": "3. PROBLEM RECOGNITION"
     },
     {
-      "type": "table",
-      "headers": [
-        "Keyword",
-        "Problem Type"
-      ],
-      "rows": [
-        [
-          "\"distance between\"",
-          "Euclidean/Manhattan distance"
-        ],
-        [
-          "\"nearest / closest\"",
-          "Nearest neighbor search"
-        ],
-        [
-          "\"collinear\"",
-          "Slope/cross product check"
-        ],
-        [
-          "\"coordinate / point\"",
-          "General coordinate geometry"
-        ],
-        [
-          "\"rotation\"",
-          "Coordinate transformation"
-        ],
-        [
-          "\"midpoint\"",
-          "Midpoint formula"
-        ],
-        [
-          "\"quadrant\"",
-          "Coordinate sign classification"
-        ],
-        [
-          "\"manhattan / taxi\"",
-          "Manhattan distance"
-        ],
-        [
-          "\"reflection / mirror\"",
-          "Point reflection/transformation"
-        ],
-        [
-          "\"lattice\"",
-          "Integer coordinate points"
-        ],
-        [
-          "\"points on the same line\"",
-          "Collinearity"
-        ],
-        [
-          "\"point in polygon\"",
-          "Ray casting / winding number"
-        ]
+      "type": "keyword_badges",
+      "groups": [
+        {
+          "label": "euclidean distance",
+          "color": "indigo"
+        },
+        {
+          "label": "manhattan distance",
+          "color": "emerald"
+        },
+        {
+          "label": "chebyshev distance",
+          "color": "amber"
+        },
+        {
+          "label": "collinearity / slope",
+          "color": "rose"
+        },
+        {
+          "label": "midpoint formula",
+          "color": "cyan"
+        },
+        {
+          "label": "coordinate transformation",
+          "color": "violet"
+        },
+        {
+          "label": "quadrant classification",
+          "color": "orange"
+        },
+        {
+          "label": "lattice points",
+          "color": "pink"
+        },
+        {
+          "label": "point in polygon",
+          "color": "sky"
+        },
+        {
+          "label": "manhattan median",
+          "color": "red"
+        }
       ]
     },
     {
@@ -274,10 +255,10 @@
     {
       "type": "list",
       "items": [
-        "\"Best meeting point\" → Manhattan median",
-        "\"Minimum time to visit all points\" → Chebyshev distance",
-        "\"Count pairs with distance k\" → Coordinate hashing",
-        "\"K closest points to origin\" → Euclidean distance sorting"
+        "\"Best meeting point\" \u2192 Manhattan median",
+        "\"Minimum time to visit all points\" \u2192 Chebyshev distance",
+        "\"Count pairs with distance k\" \u2192 Coordinate hashing",
+        "\"K closest points to origin\" \u2192 Euclidean distance sorting"
       ]
     },
     {
@@ -316,6 +297,11 @@
       "content": "**When to use**: \"Minimum sum of distances to a point\" (meeting point) **Why it works**: Manhattan distance separates into independent x and y problems **Complexity**: $O(N \\log N)$ after sorting **Key insight**: The median minimizes sum of absolute deviations"
     },
     {
+      "type": "hint_card",
+      "question": "Why does Manhattan distance separate into independent x and y problems?",
+      "answer": "Because $|x_1 - x_2| + |y_1 - y_2|$ contains no cross terms. The $x$ and $y$ contributions are purely additive, so the point that minimises sum of $x$-distances is simply the median $x$, and similarly for $y$."
+    },
+    {
       "type": "heading",
       "level": 3,
       "text": "Pattern 4: Coordinate Compression"
@@ -331,7 +317,7 @@
     },
     {
       "type": "text",
-      "content": "**When to use**: Movement on a grid with obstacles **Why it works**: Each cell is a coordinate; movement = transition to adjacent coordinates **Complexity**: O(N × M) **Distance trick**: For unweighted grid, BFS gives shortest path in Manhattan steps"
+      "content": "**When to use**: Movement on a grid with obstacles **Why it works**: Each cell is a coordinate; movement = transition to adjacent coordinates **Complexity**: O(N \u00d7 M) **Distance trick**: For unweighted grid, BFS gives shortest path in Manhattan steps"
     },
     {
       "type": "divider"
@@ -604,7 +590,7 @@
           "LeetCode (Medium)",
           "Medium",
           "Two-pointer",
-          "Area = width × height"
+          "Area = width \u00d7 height"
         ],
         [
           "10",
@@ -643,7 +629,7 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Easy — Quadrant Finder"
+      "text": "Easy \u2014 Quadrant Finder"
     },
     {
       "type": "text",
@@ -652,7 +638,7 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Easy — Closest Point"
+      "text": "Easy \u2014 Closest Point"
     },
     {
       "type": "text",
@@ -661,7 +647,7 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Medium — Minimum Manhattan Spanning Tree"
+      "text": "Medium \u2014 Minimum Manhattan Spanning Tree"
     },
     {
       "type": "text",
@@ -670,7 +656,7 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Medium — Symmetric Points"
+      "text": "Medium \u2014 Symmetric Points"
     },
     {
       "type": "text",
@@ -679,7 +665,7 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Hard — Counting Rectangles from Points"
+      "text": "Hard \u2014 Counting Rectangles from Points"
     },
     {
       "type": "text",
@@ -688,7 +674,7 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Hard — Maximum Points You Can Destroy"
+      "text": "Hard \u2014 Maximum Points You Can Destroy"
     },
     {
       "type": "text",
@@ -697,11 +683,11 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Interview — Nearest Restaurant"
+      "text": "Interview \u2014 Nearest Restaurant"
     },
     {
       "type": "text",
-      "content": "Given N restaurants with coordinates (x_i, y_i), answer Q queries: \"Which restaurant is closest to (qx, qy)?\" with N, Q up to 10⁵."
+      "content": "Given N restaurants with coordinates (x_i, y_i), answer Q queries: \"Which restaurant is closest to (qx, qy)?\" with N, Q up to 10\u2075."
     },
     {
       "type": "divider"
@@ -719,6 +705,11 @@
     {
       "type": "text",
       "content": "**A. Intuition**: Distance from origin is sqrt(x^2 + y^2). Since sqrt is monotonic, we can compare using squared distance."
+    },
+    {
+      "type": "hint_card",
+      "question": "Why does comparing squared distances work the same as comparing actual distances?",
+      "answer": "The square root function $f(x) = \\sqrt{x}$ is strictly increasing for $x \\ge 0$. So $d_1 < d_2$ if and only if $d_1^2 < d_2^2$. By comparing squared distances we avoid floating-point sqrt entirely."
     },
     {
       "type": "text",
@@ -739,8 +730,8 @@
     {
       "type": "list",
       "items": [
-        "Build a max-heap of size K containing (distance², point)",
-        "For each point, if heap size < K, push. Else if distance² < heap's max, pop and push.",
+        "Build a max-heap of size K containing (distance\u00b2, point)",
+        "For each point, if heap size < K, push. Else if distance\u00b2 < heap's max, pop and push.",
         "Extract all points from heap"
       ]
     },
@@ -786,7 +777,7 @@
     },
     {
       "type": "text",
-      "content": "**B. Brute Force**: Try every point in the grid → O(N × M × K). Inefficient."
+      "content": "**B. Brute Force**: Try every point in the grid \u2192 O(N \u00d7 M \u00d7 K). Inefficient."
     },
     {
       "type": "text",
@@ -853,7 +844,12 @@
     },
     {
       "type": "text",
-      "content": "**D. Key Insight**: Only 6 points need to be checked per point in the strip — the d × 2d rectangle can contain at most 6 points with mutual distance \\ge  d."
+      "content": "**D. Key Insight**: Only 6 points need to be checked per point in the strip \u2014 the d \u00d7 2d rectangle can contain at most 6 points with mutual distance \\ge  d."
+    },
+    {
+      "type": "hint_card",
+      "question": "Why only 6 points in the strip check for closest pair?",
+      "answer": "The $d \\times 2d$ rectangle (width = $d$, height = $2d$) can contain at most 6 points that are mutually at distance $\\ge d$. Since points in the same half are already $\\ge d$ apart, and the strip width is $d$, any closer cross-pair must lie in adjacent $d \\times d$ sub-squares \u2014 at most 6 per grid theorem."
     },
     {
       "type": "code",
@@ -883,5 +879,10 @@
       "type": "divider"
     }
   ],
-  "difficulty": "Intermediate"
+  "difficulty": "Intermediate",
+  "problem_urls": {
+    "Problem 1": "https://leetcode.com/problems/k-closest-points-to-origin/",
+    "Problem 2": "https://leetcode.com/problems/best-meeting-point/",
+    "Problem 3": "https://www.geeksforgeeks.org/closest-pair-of-points-using-divide-and-conquer-algorithm/"
+  }
 }

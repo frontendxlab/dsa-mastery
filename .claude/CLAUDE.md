@@ -40,7 +40,7 @@ style: <UI/CSS changes>
 > (documentation, ownership, history, decisions). **Always verify against
 > actual source files before making changes** — the index may be stale.
 
-Last indexed: 2026-05-16 (commit fe35339). Confidence: 100%.
+Last indexed: 2026-05-19 (commit 144a68e). Confidence: 100%.
 ### Key Modules
 | Module | Purpose | Owner |
 |--------|---------|-------|
@@ -58,11 +58,11 @@ Last indexed: 2026-05-16 (commit fe35339). Confidence: 100%.
 **Infra:** Vite### Hotspots (High Churn)
 | File | Churn | 90d Commits | Owner |
 |------|-------|-------------|-------|
-| `src/styles.css` | 100.0th %ile | 13 | rashidtvmr |
-| `src/routes/index.tsx` | 99.9th %ile | 11 | rashidtvmr |
-| `src/components/Header.tsx` | 99.7th %ile | 12 | rashidtvmr |
-| `math/all_math_problems.csv` | 99.6th %ile | 4 | rashidtvmr |
-| `pnpm-lock.yaml` | 99.4th %ile | 5 | rashidtvmr |
+| `src/styles.css` | 100.0th %ile | 16 | rashidtvmr |
+| `src/routes/index.tsx` | 99.9th %ile | 13 | rashidtvmr |
+| `src/components/Header.tsx` | 99.8th %ile | 13 | rashidtvmr |
+| `math/all_math_problems.csv` | 99.8th %ile | 4 | rashidtvmr |
+| `pnpm-lock.yaml` | 99.7th %ile | 6 | rashidtvmr |
 
 ### Repowise MCP Tools
 

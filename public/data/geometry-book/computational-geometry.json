@@ -2,9 +2,9 @@
   "chapter": 14,
   "slug": "computational-geometry",
   "title": "Computational Geometry",
-  "icon": "⌂",
+  "icon": "\u2302",
   "color": "#0ea5e9",
-  "problemCount": 107,
+  "problemCount": 214,
   "blocks": [
     {
       "type": "heading",
@@ -51,8 +51,18 @@
       "text": "2.1 Convex Hull"
     },
     {
+      "type": "interactive_diagram",
+      "diagram": "convex-hull",
+      "caption": "Click to add points and visualize the convex hull being built using Monotone Chain."
+    },
+    {
+      "type": "interactive_diagram",
+      "diagram": "convex-hull",
+      "caption": "Click to add points and visualize the convex hull being built using Monotone Chain."
+    },
+    {
       "type": "text",
-      "content": "The convex hull of a set of points is the smallest convex polygon containing all points — the shape of a rubber band stretched around the outermost points."
+      "content": "The convex hull of a set of points is the smallest convex polygon containing all points \u2014 the shape of a rubber band stretched around the outermost points."
     },
     {
       "type": "text",
@@ -61,7 +71,7 @@
     {
       "type": "list",
       "items": [
-        "Find the point with lowest y (leftmost if tie) — the pivot",
+        "Find the point with lowest y (leftmost if tie) \u2014 the pivot",
         "Sort other points by polar angle around pivot",
         "Maintain stack; pop while last two points + new point make a clockwise turn",
         "Stack = convex hull"
@@ -85,19 +95,37 @@
       "content": "Both: $O(N \\log N)$"
     },
     {
+      "type": "hint_card",
+      "question": "Monotone Chain vs Graham Scan: which should you use?",
+      "answer": "Monotone Chain (Andrew's algorithm) is generally preferred: it sorts by x then y (no trig or floating-point angles), uses only cross products, handles collinear points cleanly, and builds upper/lower hull separately. Graham Scan requires computing polar angles (atan2), which is slower and introduces floating-point error. Both are O(N log N), but Monotone Chain is simpler to implement correctly."
+    },
+    {
+      "type": "hint_card",
+      "question": "Monotone Chain vs Graham Scan: which should you use?",
+      "answer": "Monotone Chain (Andrew's algorithm) is generally preferred: it sorts by x then y (no trig or floating-point angles), uses only cross products, handles collinear points cleanly, and builds upper/lower hull separately. Graham Scan requires computing polar angles (atan2), which is slower and introduces floating-point error. Both are O(N log N), but Monotone Chain is simpler to implement correctly."
+    },
+    {
       "type": "heading",
       "level": 4,
       "text": "2.2 Line Segment Intersection"
+    },
+    {
+      "type": "interactive_diagram",
+      "diagram": "segment-intersection",
+      "caption": "Drag endpoints to test whether two line segments intersect."
+    },
+    {
+      "type": "interactive_diagram",
+      "diagram": "segment-intersection",
+      "caption": "Drag endpoints to test whether two line segments intersect."
     },
     {
       "type": "text",
       "content": "Two segments (p_1, q_1) and (p_2, q_2) intersect if orientations differ AND the same for the other pair, or if collinear and overlapping."
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "orient(p₁, q₁, p₂) × orient(p₁, q₁, q₂) < 0  AND\norient(p₂, q₂, p₁) × orient(p₂, q₂, q₁) < 0",
-      "caption": null
+      "type": "text",
+      "content": "Two segments $(p_1, q_1)$ and $(p_2, q_2)$ intersect iff $\\text{orient}(p_1, q_1, p_2) \\times \\text{orient}(p_1, q_1, q_2) < 0$ and $\\text{orient}(p_2, q_2, p_1) \\times \\text{orient}(p_2, q_2, q_1) < 0$."
     },
     {
       "type": "heading",
@@ -128,6 +156,16 @@
       "content": "$O(N \\log N)$"
     },
     {
+      "type": "hint_card",
+      "question": "Why does the strip check only need 7 points in closest pair?",
+      "answer": "The proof divides the strip into d/2 x d/2 squares (cells). Each cell can contain at most 1 point (otherwise those two would be closer than d). The 7-point bound comes from checking adjacent cells \u2014 at most 8 cells x 1 point, minus the point itself, giving 7. This constant is independent of N, so the strip check is O(N) total."
+    },
+    {
+      "type": "hint_card",
+      "question": "Why does the strip check only need 7 points in closest pair?",
+      "answer": "The proof divides the strip into d/2 x d/2 squares (cells). Each cell can contain at most 1 point (otherwise those two would be closer than d). The 7-point bound comes from checking adjacent cells \u2014 at most 8 cells x 1 point, minus the point itself, giving 7. This constant is independent of N, so the strip check is O(N) total."
+    },
+    {
       "type": "heading",
       "level": 4,
       "text": "2.5 Line Sweep"
@@ -139,6 +177,16 @@
     {
       "type": "text",
       "content": "Applications: rectangle union area, segment intersection, closest pair."
+    },
+    {
+      "type": "hint_card",
+      "question": "Why does event ordering matter in sweep line?",
+      "answer": "When multiple events share the same x-coordinate, processing order determines correctness. For rectangle union, process start events before end events at the same x to avoid counting zero-width regions. For segment intersection, process endpoints before intersection points. Always define a strict total order for events."
+    },
+    {
+      "type": "hint_card",
+      "question": "Why does event ordering matter in sweep line?",
+      "answer": "When multiple events share the same x-coordinate, processing order determines correctness. For rectangle union, process start events before end events at the same x to avoid counting zero-width regions. For segment intersection, process endpoints before intersection points. Always define a strict total order for events."
     },
     {
       "type": "heading",
@@ -154,16 +202,116 @@
       "content": "Applications: diameter (farthest pair), minimum width, max distance between polygons."
     },
     {
+      "type": "hint_card",
+      "question": "How do antipodal points help find the diameter of a convex polygon?",
+      "answer": "Rotating calipers maintains a pair of parallel lines (antipodal points) that rotate around the hull. The farthest pair of points on a convex polygon must be a pair of antipodal points. The algorithm advances whichever line's next edge has a smaller angle, achieving O(N) total work after the convex hull is built."
+    },
+    {
+      "type": "hint_card",
+      "question": "How do antipodal points help find the diameter of a convex polygon?",
+      "answer": "Rotating calipers maintains a pair of parallel lines (antipodal points) that rotate around the hull. The farthest pair of points on a convex polygon must be a pair of antipodal points. The algorithm advances whichever line's next edge has a smaller angle, achieving O(N) total work after the convex hull is built."
+    },
+    {
       "type": "heading",
       "level": 4,
       "text": "2.7 Convex Hull Trick (CHT)"
     },
     {
       "type": "text",
-      "content": "DP optimization for `dp[i] = min/max(dp[j] + cost(j,i))` where cost involves a product of prefix[i] and prefix[j]. Maintain lines y = m·x + c in a deque or Li Chao tree."
+      "content": "DP optimization for `dp[i] = min/max(dp[j] + cost(j,i))` where cost involves a product of prefix[i] and prefix[j]. Maintain lines y = m\u00b7x + c in a deque or Li Chao tree."
     },
     {
       "type": "divider"
+    },
+    {
+      "type": "keyword_badges",
+      "groups": [
+        {
+          "label": "convex-hull",
+          "color": "sky"
+        },
+        {
+          "label": "sweep-line",
+          "color": "indigo"
+        },
+        {
+          "label": "voronoi-diagram",
+          "color": "violet"
+        },
+        {
+          "label": "gift-wrapping",
+          "color": "emerald"
+        },
+        {
+          "label": "graham-scan",
+          "color": "amber"
+        },
+        {
+          "label": "monotone-chain",
+          "color": "cyan"
+        },
+        {
+          "label": "segment-intersection",
+          "color": "rose"
+        },
+        {
+          "label": "closest-pair",
+          "color": "orange"
+        },
+        {
+          "label": "rotating-calipers",
+          "color": "pink"
+        },
+        {
+          "label": "delaunay-triangulation",
+          "color": "red"
+        }
+      ]
+    },
+    {
+      "type": "keyword_badges",
+      "groups": [
+        {
+          "label": "convex-hull",
+          "color": "sky"
+        },
+        {
+          "label": "sweep-line",
+          "color": "indigo"
+        },
+        {
+          "label": "voronoi-diagram",
+          "color": "violet"
+        },
+        {
+          "label": "gift-wrapping",
+          "color": "emerald"
+        },
+        {
+          "label": "graham-scan",
+          "color": "amber"
+        },
+        {
+          "label": "monotone-chain",
+          "color": "cyan"
+        },
+        {
+          "label": "segment-intersection",
+          "color": "rose"
+        },
+        {
+          "label": "closest-pair",
+          "color": "orange"
+        },
+        {
+          "label": "rotating-calipers",
+          "color": "pink"
+        },
+        {
+          "label": "delaunay-triangulation",
+          "color": "red"
+        }
+      ]
     },
     {
       "type": "heading",
@@ -262,7 +410,7 @@
     },
     {
       "type": "text",
-      "content": "**Common mistakes:** Events at same x — start vs end order matters."
+      "content": "**Common mistakes:** Events at same x \u2014 start vs end order matters."
     },
     {
       "type": "heading",
@@ -288,7 +436,7 @@
     {
       "type": "heading",
       "level": 4,
-      "text": "Template 1: Convex Hull — Monotone Chain"
+      "text": "Template 1: Convex Hull \u2014 Monotone Chain"
     },
     {
       "type": "code",
@@ -589,11 +737,11 @@
     },
     {
       "type": "text",
-      "content": "**Medium 1: Parking Lot** An irregular polygon parking lot has N vertices. A car at point P — is it inside? Answer Q queries."
+      "content": "**Medium 1: Parking Lot** An irregular polygon parking lot has N vertices. A car at point P \u2014 is it inside? Answer Q queries."
     },
     {
       "type": "text",
-      "content": "**Medium 2: Rectangle Union** Given N axis-aligned rectangles, compute the union area using sweep line. N \\le  10⁵."
+      "content": "**Medium 2: Rectangle Union** Given N axis-aligned rectangles, compute the union area using sweep line. N \\le  10\u2075."
     },
     {
       "type": "text",
@@ -609,7 +757,7 @@
     },
     {
       "type": "text",
-      "content": "**Contest-Style: Voronoi Neighbors** Given N points, for each find its nearest neighbor. N \\le  2×10⁵. Must be faster than $O(N^2)$."
+      "content": "**Contest-Style: Voronoi Neighbors** Given N points, for each find its nearest neighbor. N \\le  2\u00d710\u2075. Must be faster than $O(N^2)$."
     },
     {
       "type": "divider"
@@ -625,11 +773,11 @@
     {
       "type": "heading",
       "level": 4,
-      "text": "Problem 1: Convex Hull — Monotone Chain"
+      "text": "Problem 1: Convex Hull \u2014 Monotone Chain"
     },
     {
       "type": "text",
-      "content": "**A. Intuition** Build hull in two parts: lower (left→right, keep left turns) and upper (right→left, same rule)."
+      "content": "**A. Intuition** Build hull in two parts: lower (left\u2192right, keep left turns) and upper (right\u2192left, same rule)."
     },
     {
       "type": "text",
@@ -733,7 +881,7 @@
     {
       "type": "list",
       "items": [
-        "Check if point is on edge → boundary",
+        "Check if point is on edge \u2192 boundary",
         "If edge's y-range straddles point's y, compute x-intersection",
         "If x_intersect > point's x, toggle inside"
       ]
@@ -755,7 +903,7 @@
     {
       "type": "list",
       "items": [
-        "Point on vertex → boundary",
+        "Point on vertex \u2192 boundary",
         "Ray through vertex: count only if other endpoint is above",
         "Degenerate polygon"
       ]
@@ -802,7 +950,7 @@
     },
     {
       "type": "text",
-      "content": "**B. Brute Force** $O(N^2)$. Too slow for N > 10⁴."
+      "content": "**B. Brute Force** $O(N^2)$. Too slow for N > 10\u2074."
     },
     {
       "type": "text",
@@ -816,7 +964,7 @@
       "type": "list",
       "items": [
         "Sort by x",
-        "Recursively find closest in left/right halves → d",
+        "Recursively find closest in left/right halves \u2192 d",
         "Build strip within d of dividing line",
         "Check each point vs next 7",
         "Return closest pair"
@@ -848,15 +996,15 @@
     {
       "type": "heading",
       "level": 4,
-      "text": "Problem 4: APIO_10_COMMANDO — Convex Hull Trick"
+      "text": "Problem 4: APIO_10_COMMANDO \u2014 Convex Hull Trick"
     },
     {
       "type": "text",
-      "content": "**A. Intuition** DP recurrence: dp[i] = max(dp[j] + a·(sum[i]-sum[j])^2 + b·(sum[i]-sum[j]) + c). Expand to: dp[i] = max(intercept[j] + slope[j]·sum[i]). This is the classic CHT form."
+      "content": "**A. Intuition** DP recurrence: dp[i] = max(dp[j] + a\u00b7(sum[i]-sum[j])^2 + b\u00b7(sum[i]-sum[j]) + c). Expand to: dp[i] = max(intercept[j] + slope[j]\u00b7sum[i]). This is the classic CHT form."
     },
     {
       "type": "text",
-      "content": "**B. Brute Force** $O(N^2)$ — check all j for each i."
+      "content": "**B. Brute Force** $O(N^2)$ \u2014 check all j for each i."
     },
     {
       "type": "text",
@@ -898,5 +1046,12 @@
       "type": "divider"
     }
   ],
-  "difficulty": "Expert"
+  "difficulty": "Expert",
+  "problem_urls": {
+    "Problem 1": "https://leetcode.com/problems/erect-the-fence/",
+    "Problem 2": "https://codeforces.com/problemset/problem/166/B",
+    "Problem 3": "https://www.spoj.com/problems/CONVEX/",
+    "Problem 4": "https://codeforces.com/problemset/problem/245/H",
+    "Problem 5": "https://www.geeksforgeeks.org/convex-hull-using-divide-and-conquer-algorithm/"
+  }
 }

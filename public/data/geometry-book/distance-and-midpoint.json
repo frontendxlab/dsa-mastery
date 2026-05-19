@@ -2,9 +2,9 @@
   "chapter": 9,
   "slug": "distance-and-midpoint",
   "title": "Distance and Midpoint",
-  "icon": "↔",
+  "icon": "\u2194",
   "color": "#10b981",
-  "problemCount": 217,
+  "problemCount": 225,
   "blocks": [
     {
       "type": "heading",
@@ -235,18 +235,48 @@
       "content": "**Common keywords and phrases:**"
     },
     {
-      "type": "list",
-      "items": [
-        "\"Distance between\" / \"shortest distance\"",
-        "\"Manhattan distance\" / \"taxicab geometry\"",
-        "\"Euclidean distance\" / \"straight line distance\"",
-        "\"Chebyshev distance\" / \"king's move\"",
-        "\"Midpoint\" / \"halfway\"",
-        "\"Minimum sum of distances\" / \"meeting point\"",
-        "\"Farthest pair\" / \"closest pair\"",
-        "\"Edit distance\" / \"Levenshtein distance\" (string distance variant)",
-        "\"Hamming distance\" (bit/string distance)",
-        "\"Tree distance\" / \"distance between nodes\""
+      "type": "keyword_badges",
+      "groups": [
+        {
+          "label": "euclidean distance",
+          "color": "indigo"
+        },
+        {
+          "label": "manhattan distance",
+          "color": "emerald"
+        },
+        {
+          "label": "chebyshev distance",
+          "color": "amber"
+        },
+        {
+          "label": "midpoint formula",
+          "color": "cyan"
+        },
+        {
+          "label": "point-to-line distance",
+          "color": "rose"
+        },
+        {
+          "label": "manhattan median / minimax",
+          "color": "violet"
+        },
+        {
+          "label": "closest pair",
+          "color": "orange"
+        },
+        {
+          "label": "tree distance / LCA",
+          "color": "pink"
+        },
+        {
+          "label": "45-degree transform",
+          "color": "sky"
+        },
+        {
+          "label": "hamming distance",
+          "color": "red"
+        }
       ]
     },
     {
@@ -260,7 +290,7 @@
         "\"Minimize the maximum distance\" suggests binary search on answer",
         "\"Meeting point\" / \"optimal location\" suggests median for Manhattan, mean for squared Euclidean",
         "Problems about time = distance / speed (where agents meet)",
-        "Pathfinding in grids with 4-directional movement → Manhattan; 8-directional → Chebyshev"
+        "Pathfinding in grids with 4-directional movement \u2192 Manhattan; 8-directional \u2192 Chebyshev"
       ]
     },
     {
@@ -288,6 +318,16 @@
       "text": "Pattern 1: Manhattan Distance Separation"
     },
     {
+      "type": "interactive_diagram",
+      "diagram": "manhattan-median",
+      "caption": "See why the median, not the mean, minimizes the sum of absolute distances."
+    },
+    {
+      "type": "hint_card",
+      "question": "Why does Manhattan distance minimization use the median while squared distance uses the mean?",
+      "answer": "Manhattan distance uses $|x_i - c|$ \u2014 absolute deviation. The function $f(c) = \\sum |x_i - c|$ is piecewise linear with slope changing at each data point. The minimum occurs where the slope crosses zero, which is at the median. Squared distance $(x_i - c)^2$ is smooth and differentiable, giving the mean $(\\sum x_i)/n$."
+    },
+    {
       "type": "text",
       "content": "**When to use:** The objective function involves |x1-x2| + |y1-y2|."
     },
@@ -306,7 +346,12 @@
     {
       "type": "heading",
       "level": 4,
-      "text": "Pattern 2: 45-Degree Rotation (Chebyshev ↔ Manhattan)"
+      "text": "Pattern 2: 45-Degree Rotation (Chebyshev \u2194 Manhattan)"
+    },
+    {
+      "type": "interactive_diagram",
+      "diagram": "distance-transform",
+      "caption": "Watch how the 45\u00b0 rotation transforms Manhattan distance into Chebyshev distance."
     },
     {
       "type": "text",
@@ -319,6 +364,11 @@
     {
       "type": "text",
       "content": "**Transformation:** Let u = x + y, v = x - y. Then Manhattan(x,y) = Chebyshev(u,v)."
+    },
+    {
+      "type": "hint_card",
+      "question": "How do you transform Manhattan distance to Chebyshev (and back)?",
+      "answer": "Forward: $u = x + y,\\; v = x - y$. Then $\\text{Manhattan}((x_1,y_1), (x_2,y_2)) = \\text{Chebyshev}((u_1,v_1), (u_2,v_2))$. Inverse: $x = (u+v)/2,\\; y = (u-v)/2$. The 1/2 scaling is critical when transforming back!"
     },
     {
       "type": "text",
@@ -365,6 +415,11 @@
     {
       "type": "text",
       "content": "**Common mistakes:** Forgetting that the strip check must be done carefully; points within strip need to be sorted by y and checked only against a bounded number of neighbors."
+    },
+    {
+      "type": "hint_card",
+      "question": "Why does the strip width matter in the closest pair algorithm?",
+      "answer": "After finding minimum distance $d$ in left and right halves, candidates for a closer cross-pair must lie within $d$ of the dividing line (any point further away would already have distance $\\ge d$ to any point on the other side). Within this strip, sorting by $y$ and checking only 6-7 next points per point is sufficient because a $d \\times 2d$ rectangle can contain at most 6-7 points with mutual distance $\\ge d$."
     },
     {
       "type": "heading",
@@ -778,7 +833,7 @@
     },
     {
       "type": "text",
-      "content": "**Given:** N integers A1, A2, ..., AN. Compute Σ Σ |Ai - Aj| for all i < j."
+      "content": "**Given:** N integers A1, A2, ..., AN. Compute \u03a3 \u03a3 |Ai - Aj| for all i < j."
     },
     {
       "type": "text",
@@ -1110,7 +1165,7 @@
     },
     {
       "type": "text",
-      "content": "**C. Optimized Approach:** Sliding window with constraint that good subarrays have length <= 4 (since any 5 points in 1D will contain a bad triple by the Erdős–Szekeres theorem). Check lengths 3 and 4 explicitly."
+      "content": "**C. Optimized Approach:** Sliding window with constraint that good subarrays have length <= 4 (since any 5 points in 1D will contain a bad triple by the Erd\u0151s\u2013Szekeres theorem). Check lengths 3 and 4 explicitly."
     },
     {
       "type": "text",
@@ -1265,5 +1320,12 @@
       "type": "divider"
     }
   ],
-  "difficulty": "Intermediate"
+  "difficulty": "Intermediate",
+  "problem_urls": {
+    "Problem 1": "https://atcoder.jp/contests/abc186/tasks/abc186_d",
+    "Problem 2": "https://leetcode.com/problems/minimize-manhattan-distances/",
+    "Problem 3": "https://cses.fi/problemset/task/1133",
+    "Problem 4": "https://codeforces.com/problemset/problem/1550/C",
+    "Problem 5": "https://leetcode.com/problems/hamming-distance/"
+  }
 }

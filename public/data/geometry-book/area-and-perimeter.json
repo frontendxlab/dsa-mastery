@@ -2,9 +2,9 @@
   "chapter": 12,
   "slug": "area-and-perimeter",
   "title": "Area and Perimeter",
-  "icon": "▣",
+  "icon": "\u25a3",
   "color": "#14b8a6",
-  "problemCount": 37,
+  "problemCount": 483,
   "blocks": [
     {
       "type": "heading",
@@ -121,14 +121,22 @@
       "text": "2.3 The Shoelace Formula (Surveyor's Formula)"
     },
     {
+      "type": "interactive_diagram",
+      "diagram": "shoelace-visualizer",
+      "caption": "Drag polygon vertices and watch the shoelace formula compute the area in real time."
+    },
+    {
+      "type": "interactive_diagram",
+      "diagram": "shoelace-visualizer",
+      "caption": "Drag polygon vertices and watch the shoelace formula compute the area in real time."
+    },
+    {
       "type": "text",
       "content": "Given a polygon with vertices `(x_1, y_1), (x_2, y_2), ..., (x_n, y_n)` in order:"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "Area = ½ × | Σ(xᵢ × yᵢ₊₁ - xᵢ₊₁ × yᵢ) |",
-      "caption": null
+      "type": "text",
+      "content": "$$\\text{Area} = \\frac{1}{2} \\left| \\sum (x_i y_{i+1} - x_{i+1} y_i) \\right|$$"
     },
     {
       "type": "text",
@@ -136,7 +144,17 @@
     },
     {
       "type": "text",
-      "content": "**Why it works:** The formula computes the sum of cross products of consecutive edge vectors. Geometrically, each term `x_i·y_i_+_1 - x_i_+_1·y_i` represents twice the signed area of the triangle formed by the origin and the edge from vertex i to vertex i+1. When summed around the polygon, interior contributions cancel, leaving exactly twice the polygon's area."
+      "content": "**Why it works:** The formula computes the sum of cross products of consecutive edge vectors. Geometrically, each term `x_i\u00b7y_i_+_1 - x_i_+_1\u00b7y_i` represents twice the signed area of the triangle formed by the origin and the edge from vertex i to vertex i+1. When summed around the polygon, interior contributions cancel, leaving exactly twice the polygon's area."
+    },
+    {
+      "type": "hint_card",
+      "question": "Why does the shoelace formula use absolute value?",
+      "answer": "The shoelace formula computes signed area. A clockwise vertex order gives a negative result. The absolute value makes the area positive regardless of vertex order."
+    },
+    {
+      "type": "hint_card",
+      "question": "Why does the shoelace formula use absolute value?",
+      "answer": "The shoelace formula computes signed area. A clockwise vertex order gives a negative result. The absolute value makes the area positive regardless of vertex order."
     },
     {
       "type": "text",
@@ -152,10 +170,8 @@
       "content": "Given three side lengths a, b, c:"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "s = (a + b + c) / 2\nArea = √(s × (s - a) × (s - b) × (s - c))",
-      "caption": null
+      "type": "text",
+      "content": "$$\\begin{aligned}\ns &= \\frac{a + b + c}{2} \\\\\n\\text{Area} &= \\sqrt{s(s - a)(s - b)(s - c)}\n\\end{aligned}$$"
     },
     {
       "type": "heading",
@@ -163,14 +179,22 @@
       "text": "2.5 Area of Intersecting Rectangles"
     },
     {
+      "type": "hint_card",
+      "question": "What if rectangles don't overlap?",
+      "answer": "The overlap formula naturally returns 0. If max(x\u2081,x\u2083) >= min(x\u2082,x\u2084), then overlap_x will be negative and max(0, ...) gives 0. No special case needed."
+    },
+    {
+      "type": "hint_card",
+      "question": "What if rectangles don't overlap?",
+      "answer": "The overlap formula naturally returns 0. If max(x\u2081,x\u2083) >= min(x\u2082,x\u2084), then overlap_x will be negative and max(0, ...) gives 0. No special case needed."
+    },
+    {
       "type": "text",
       "content": "Given two axis-aligned rectangles `(x_1, y_1, x_2, y_2)` and `(x_3, y_3, x_4, y_4)`:"
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "overlap_x = max(0, min(x₂, x₄) - max(x₁, x₃))\noverlap_y = max(0, min(y₂, y₄) - max(y₁, y₃))\noverlap_area = overlap_x × overlap_y",
-      "caption": null
+      "type": "text",
+      "content": "$$\\begin{aligned}\n\\text{overlap}_x &= \\max(0, \\min(x_2, x_4) - \\max(x_1, x_3)) \\\\\n\\text{overlap}_y &= \\max(0, \\min(y_2, y_4) - \\max(y_1, y_3)) \\\\\n\\text{overlap\\_area} &= \\text{overlap}_x \\times \\text{overlap}_y\n\\end{aligned}$$"
     },
     {
       "type": "text",
@@ -182,14 +206,22 @@
       "text": "2.6 Island Perimeter in Grids"
     },
     {
+      "type": "interactive_diagram",
+      "diagram": "island-explorer",
+      "caption": "Explore island perimeter calculation on a grid. Each land cell contributes 4 edges minus shared edges with neighbors."
+    },
+    {
+      "type": "interactive_diagram",
+      "diagram": "island-explorer",
+      "caption": "Explore island perimeter calculation on a grid. Each land cell contributes 4 edges minus shared edges with neighbors."
+    },
+    {
       "type": "text",
       "content": "For a grid of 1s (land) and 0s (water), the perimeter of each land cell starts at 4 and loses 1 for each adjacent land cell (up, down, left, right)."
     },
     {
-      "type": "code",
-      "lang": "",
-      "code": "perimeter = Σ(4 - adjacent_land_count) for each land cell",
-      "caption": null
+      "type": "text",
+      "content": "$$\\text{perimeter} = \\sum_{\\text{each land cell}} \\big(4 - \\text{adjacent\\_land\\_count}\\big)$$"
     },
     {
       "type": "heading",
@@ -205,7 +237,7 @@
       "items": [
         "**Sweep line** approach: sort events by x-coordinate",
         "Maintain active y-intervals using a segment tree",
-        "At each x-step: `area += (x_next - x_current) × total_active_y_length`"
+        "At each x-step: `area += (x_next - x_current) \u00d7 total_active_y_length`"
       ]
     },
     {
@@ -278,6 +310,16 @@
       "text": "Pattern 1: Grid-Based Perimeter/Area"
     },
     {
+      "type": "hint_card",
+      "question": "Why does each land cell contribute 4 minus adjacent land cells?",
+      "answer": "A cell has 4 edges. Each edge shared with a neighbor is interior and doesn't count toward perimeter. Subtract shared edges (counted twice in grid adjacency). Formula: each cell contributes 4 - (land neighbors)."
+    },
+    {
+      "type": "hint_card",
+      "question": "Why does each land cell contribute 4 minus adjacent land cells?",
+      "answer": "A cell has 4 edges. Each edge shared with a neighbor is interior and doesn't count toward perimeter. Subtract shared edges (counted twice in grid adjacency). Formula: each cell contributes 4 - (land neighbors)."
+    },
+    {
       "type": "text",
       "content": "**When to use:** Binary matrix with connected components or isolated 1s."
     },
@@ -346,7 +388,7 @@
     },
     {
       "type": "text",
-      "content": "**Why it works:** Each column contributes `4 × height + 2` (top and bottom) minus `2 × min(h1, h2)` for each shared face with a neighbor."
+      "content": "**Why it works:** Each column contributes `4 \u00d7 height + 2` (top and bottom) minus `2 \u00d7 min(h1, h2)` for each shared face with a neighbor."
     },
     {
       "type": "text",
@@ -367,7 +409,7 @@
     },
     {
       "type": "text",
-      "content": "**Why it works:** The largest piece after cuts is determined by the largest gap between consecutive horizontal cuts × largest gap between consecutive vertical cuts."
+      "content": "**Why it works:** The largest piece after cuts is determined by the largest gap between consecutive horizontal cuts \u00d7 largest gap between consecutive vertical cuts."
     },
     {
       "type": "text",
@@ -478,6 +520,16 @@
       "text": "Template 4: Max Area of Island (Grid DFS)"
     },
     {
+      "type": "hint_card",
+      "question": "How does DFS find connected components in a grid?",
+      "answer": "DFS treats each land cell as a graph node. From any unvisited land cell, DFS visits all 4-directionally connected cells, marking them visited and counting area. The max area across all connected components is the answer."
+    },
+    {
+      "type": "hint_card",
+      "question": "How does DFS find connected components in a grid?",
+      "answer": "DFS treats each land cell as a graph node. From any unvisited land cell, DFS visits all 4-directionally connected cells, marking them visited and counting area. The max area across all connected components is the answer."
+    },
+    {
       "type": "code",
       "lang": "python",
       "code": "def max_area_of_island(grid):\n    rows, cols = len(grid), len(grid[0])\n    \n    def dfs(r, c):\n        if r < 0 or r >= rows or c < 0 or c >= cols or grid[r][c] == 0:\n            return 0\n        grid[r][c] = 0  # mark visited\n        return 1 + dfs(r+1, c) + dfs(r-1, c) + dfs(r, c+1) + dfs(r, c-1)\n    \n    max_area = 0\n    for r in range(rows):\n        for c in range(cols):\n            if grid[r][c] == 1:\n                max_area = max(max_area, dfs(r, c))\n    return max_area",
@@ -539,136 +591,48 @@
       "text": "6. CURATED REAL PROBLEMS"
     },
     {
-      "type": "table",
-      "headers": [
-        "#",
-        "Problem",
-        "Platform",
-        "Difficulty",
-        "Concepts",
-        "Pattern"
-      ],
-      "rows": [
-        [
-          "1",
-          "463. Island Perimeter",
-          "LeetCode",
-          "Easy",
-          "Grid, Adjacency",
-          "Grid Perimeter"
-        ],
-        [
-          "2",
-          "695. Max Area of Island",
-          "LeetCode",
-          "Medium",
-          "DFS, Connected Components",
-          "Grid Area"
-        ],
-        [
-          "3",
-          "130. Surrounded Regions",
-          "LeetCode",
-          "Medium",
-          "BFS/DFS, Boundary",
-          "Region Fill"
-        ],
-        [
-          "4",
-          "1465. Max Area of Piece of Cake",
-          "LeetCode",
-          "Medium",
-          "Sorting, Max Gap",
-          "Cut-Based Area"
-        ],
-        [
-          "5",
-          "999. Regions Cut By Slashes",
-          "LeetCode",
-          "Medium",
-          "Union-Find, Grid Upscaling",
-          "Connected Area"
-        ],
-        [
-          "6",
-          "Grass Seed Inc",
-          "Kattis",
-          "Easy",
-          "Basic Arithmetic",
-          "Simple Area"
-        ],
-        [
-          "7",
-          "3461. Min Area to Cover All Ones I",
-          "LeetCode",
-          "Medium",
-          "Bounding Box",
-          "Enclosing Area"
-        ],
-        [
-          "8",
-          "BSHEEP",
-          "SPOJ",
-          "Medium",
-          "Convex Hull, Perimeter",
-          "Hull Perimeter"
-        ],
-        [
-          "9",
-          "PIR - Tetrahedron Volume",
-          "SPOJ",
-          "Medium",
-          "Heron's 3D, Volume",
-          "3D Volume"
-        ],
-        [
-          "10",
-          "Area of a Star",
-          "Codeforces",
-          "Hard (2100)",
-          "Polygon, Shoelace",
-          "Complex Area"
-        ],
-        [
-          "11",
-          "3459. Min Area to Cover All Ones II",
-          "LeetCode",
-          "Hard",
-          "Enumeration, Partition",
-          "Min Enclosing"
-        ],
-        [
-          "12",
-          "Visible Black Areas",
-          "Codeforces",
-          "Hard (2800)",
-          "Sweep Line, DSU",
-          "Union Area"
-        ],
-        [
-          "13",
-          "2158. Amount of New Area Painted Each Day",
-          "LeetCode",
-          "Hard",
-          "Segment Tree, Lazy",
-          "Union Area"
-        ],
-        [
-          "14",
-          "Combined Volume of Cuboids",
-          "Project Euler",
-          "Very Hard",
-          "Inclusion-Exclusion",
-          "3D Union"
-        ],
-        [
-          "15",
-          "MMAXPER - Maximum Perimeter",
-          "SPOJ",
-          "Easy",
-          "DP, Interval",
-          "Max Perimeter"
-        ]
+      "type": "keyword_badges",
+      "groups": [
+        {
+          "label": "polygon-area",
+          "color": "indigo"
+        },
+        {
+          "label": "shoelace-formula",
+          "color": "emerald"
+        },
+        {
+          "label": "perimeter",
+          "color": "amber"
+        },
+        {
+          "label": "grid-island",
+          "color": "rose"
+        },
+        {
+          "label": "rectangle-overlap",
+          "color": "cyan"
+        },
+        {
+          "label": "union-area",
+          "color": "violet"
+        },
+        {
+          "label": "surface-area",
+          "color": "orange"
+        },
+        {
+          "label": "maximum-area",
+          "color": "sky"
+        },
+        {
+          "label": "heron-formula",
+          "color": "pink"
+        },
+        {
+          "label": "cake-cutting",
+          "color": "red"
+        }
       ]
     },
     {
@@ -685,7 +649,7 @@
     },
     {
       "type": "text",
-      "content": "**Easy 2: Paint the Wall** You have a wall of size W×H. You paint K rectangles on it (axis-aligned). Some may overlap. What is the total painted area?"
+      "content": "**Easy 2: Paint the Wall** You have a wall of size W\u00d7H. You paint K rectangles on it (axis-aligned). Some may overlap. What is the total painted area?"
     },
     {
       "type": "text",
@@ -697,7 +661,7 @@
     },
     {
       "type": "text",
-      "content": "**Hard 1: City Blocks** You are given N rectangles representing buildings in a city (viewed from above). Compute the total ground area covered by buildings, accounting for overlaps. If a building completely covers another, the smaller one doesn't count. But if they partially overlap, the union counts once. N \\le  10⁵."
+      "content": "**Hard 1: City Blocks** You are given N rectangles representing buildings in a city (viewed from above). Compute the total ground area covered by buildings, accounting for overlaps. If a building completely covers another, the smaller one doesn't count. But if they partially overlap, the union counts once. N \\le  10\u2075."
     },
     {
       "type": "text",
@@ -709,7 +673,7 @@
     },
     {
       "type": "text",
-      "content": "**Contest-Style: Area of Union of Rotated Rectangles** Given N rectangles (axis-aligned), randomly rotate each by a small angle \\theta  (same for all). Compute the union area with 10⁻⁶ precision."
+      "content": "**Contest-Style: Area of Union of Rotated Rectangles** Given N rectangles (axis-aligned), randomly rotate each by a small angle \\theta  (same for all). Compute the union area with 10\u207b\u2076 precision."
     },
     {
       "type": "divider"
@@ -777,7 +741,7 @@
       "items": [
         "Single cell: perimeter = 4",
         "No land: perimeter = 0",
-        "Full grid of land: perimeter = 2×(R+C) (if no holes)"
+        "Full grid of land: perimeter = 2\u00d7(R+C) (if no holes)"
       ]
     },
     {
@@ -826,7 +790,7 @@
     },
     {
       "type": "text",
-      "content": "**C. Optimized Approach** Same as brute force — this is already $$O(R \\times C)$$. The key optimization is in-place marking: set `grid[r][c] = 0` when visiting to avoid using a separate visited array."
+      "content": "**C. Optimized Approach** Same as brute force \u2014 this is already $$O(R \\times C)$$. The key optimization is in-place marking: set `grid[r][c] = 0` when visiting to avoid using a separate visited array."
     },
     {
       "type": "text",
@@ -907,11 +871,11 @@
     },
     {
       "type": "text",
-      "content": "**A. Intuition** When you cut a rectangle horizontally and vertically, the area of each piece is (horizontal gap) × (vertical gap). The largest piece will use the largest horizontal gap and the largest vertical gap."
+      "content": "**A. Intuition** When you cut a rectangle horizontally and vertically, the area of each piece is (horizontal gap) \u00d7 (vertical gap). The largest piece will use the largest horizontal gap and the largest vertical gap."
     },
     {
       "type": "text",
-      "content": "**B. Brute Force** Generate all possible piece dimensions: $O(H \\times V)$ — too slow."
+      "content": "**B. Brute Force** Generate all possible piece dimensions: $O(H \\times V)$ \u2014 too slow."
     },
     {
       "type": "text",
@@ -928,7 +892,7 @@
         "Sort both arrays",
         "Find max gap in horizontalCuts: max(horizontalCuts[i+1] - horizontalCuts[i])",
         "Find max gap in verticalCuts: max(verticalCuts[i+1] - verticalCuts[i])",
-        "Return (max_h_gap × max_v_gap) % (10⁹ + 7)"
+        "Return (max_h_gap \u00d7 max_v_gap) % (10\u2079 + 7)"
       ]
     },
     {
@@ -942,7 +906,7 @@
     {
       "type": "list",
       "items": [
-        "No cuts: area = h × w",
+        "No cuts: area = h \u00d7 w",
         "Single horizontal cut: max horizontal gap = max(cut, h - cut)",
         "Large numbers: use modulo and 64-bit integers"
       ]
@@ -989,7 +953,7 @@
     },
     {
       "type": "text",
-      "content": "**B. Brute Force** For each 'O', BFS to see if it reaches the border. Extremely slow: O((R×C)^2)."
+      "content": "**B. Brute Force** For each 'O', BFS to see if it reaches the border. Extremely slow: O((R\u00d7C)^2)."
     },
     {
       "type": "text",
@@ -1010,8 +974,8 @@
     {
       "type": "list",
       "items": [
-        "'S' → 'O' (border-connected, keep)",
-        "'O' → 'X' (surrounded, flip)"
+        "'S' \u2192 'O' (border-connected, keep)",
+        "'O' \u2192 'X' (surrounded, flip)"
       ]
     },
     {
@@ -1091,7 +1055,7 @@
     {
       "type": "list",
       "items": [
-        "Create a 3N × 3N grid of 0s",
+        "Create a 3N \u00d7 3N grid of 0s",
         "For each cell (r, c) in original grid:"
       ]
     },
@@ -1157,5 +1121,12 @@
       "type": "divider"
     }
   ],
-  "difficulty": "Advanced"
+  "difficulty": "Advanced",
+  "problem_urls": {
+    "Problem 1": "https://leetcode.com/problems/island-perimeter/",
+    "Problem 2": "https://leetcode.com/problems/max-area-of-island/",
+    "Problem 3": "https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/",
+    "Problem 4": "https://leetcode.com/problems/surrounded-regions/",
+    "Problem 5": "https://leetcode.com/problems/regions-cut-by-slashes/"
+  }
 }
