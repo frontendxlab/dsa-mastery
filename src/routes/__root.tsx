@@ -67,15 +67,32 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'WebSite',
-            name: 'DSA Mastery',
-            url: 'https://learn-dsa.frontendx.dev',
-            description: 'Master Data Structures & Algorithms with 38,000+ curated problems across 14 topics and 25+ platforms.',
-            potentialAction: {
-              '@type': 'SearchAction',
-              target: 'https://learn-dsa.frontendx.dev/explore?q={search_term_string}',
-              'query-input': 'required name=search_term_string',
-            },
+            '@graph': [
+              {
+                '@type': 'WebSite',
+                name: 'DSA Mastery',
+                url: 'https://learn-dsa.frontendx.dev',
+                description: 'Master Data Structures & Algorithms with 38,000+ curated problems across 14 topics and 25+ platforms.',
+                potentialAction: {
+                  '@type': 'SearchAction',
+                  target: 'https://learn-dsa.frontendx.dev/explore?q={search_term_string}',
+                  'query-input': 'required name=search_term_string',
+                },
+              },
+              {
+                '@type': 'CollectionPage',
+                name: 'DSA Mastery',
+                description: 'A curated collection of 38,000+ Data Structures & Algorithms problems from 25+ coding platforms.',
+                mainEntity: {
+                  '@type': 'ItemList',
+                  itemListElement: [
+                    { '@type': 'ListItem', position: 1, name: 'Problems', url: 'https://learn-dsa.frontendx.dev/explore' },
+                    { '@type': 'ListItem', position: 2, name: 'Learn Patterns', url: 'https://learn-dsa.frontendx.dev/learn' },
+                    { '@type': 'ListItem', position: 3, name: 'Books', url: 'https://learn-dsa.frontendx.dev/books' },
+                  ],
+                },
+              },
+            ],
           }),
         }} />
       </head>

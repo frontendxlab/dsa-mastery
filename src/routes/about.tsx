@@ -1,7 +1,13 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/about")({
-	component: About,
+  head: () => ({
+    meta: [
+      { title: 'About \u2014 DSA Mastery' },
+      { name: 'description', content: 'DSA Mastery helps developers master Data Structures & Algorithms with 38,000+ curated problems across 25+ platforms. Learn by topic, book, or pattern.' },
+    ],
+  }),
+  component: About,
 });
 
 function About() {
