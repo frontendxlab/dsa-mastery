@@ -114,6 +114,23 @@ if (coreIndex.size > 0) {
   console.log(`  Match index built: ${matchIndex.titleIndex.size} unique titles, ${matchIndex.tokenIndex.size} unique tokens`)
 }
 
+// ── Load curated problem matches ───────────────────────────
+const curatedMatchesPath = path.join(root, 'src', 'data', 'book_matches.json')
+let curatedMatches = []
+if (fs.existsSync(curatedMatchesPath)) {
+  try {
+    curatedMatches = JSON.parse(fs.readFileSync(curatedMatchesPath, 'utf-8'))
+    console.log(`  Curated matches loaded: ${curatedMatches.length}`)
+  } catch (e) {
+    console.error(`  Failed to load curated matches: ${e.message}`)
+  }
+}
+const curatedByBook = new Map() // book -> Map<problem_id -> match>
+for (const m of curatedMatches) {
+  if (!curatedByBook.has(m.book)) curatedByBook.set(m.book, new Map())
+  curatedByBook.get(m.book).set(m.problem_id, m)
+}
+
 // ── Helpers ──────────────────────────────────────────────────────────────
 function ensureDir(dir) {
   fs.mkdirSync(dir, { recursive: true })
@@ -219,6 +236,13 @@ for (const book of BOOKS) {
           matchTitle = fuzzy.name
           matchPlatform = fuzzy.platform
         }
+      }
+
+      if (!matchUrl && curatedByBook.has(slug) && curatedByBook.get(slug).has(p.id)) {
+        const curated = curatedByBook.get(slug).get(p.id)
+        matchUrl = curated.matchUrl
+        matchTitle = curated.matchTitle || null
+        matchPlatform = curated.matchPlatform || null
       }
 
       if (matchUrl) bookMatched++

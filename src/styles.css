@@ -812,6 +812,8 @@ a {
 /* Page header */
 .ex-page-header { padding: 40px 0 32px; border-bottom: 1px solid rgba(214,235,253,0.07); margin-bottom: 28px; }
 .ex-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: #3b9eff; margin-bottom: 12px; animation: exFadeUp .5s ease forwards .05s; opacity: 0; }
+.ex-title { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; letter-spacing: -.04em; margin-bottom: 10px; color: var(--foreground); }
+.ex-subtitle { font-size: 14px; color: var(--muted); max-width: 640px; line-height: 1.7; margin-bottom: 0; font-weight: 400; }
 .ex-title { font-size: clamp(28px,4vw,42px); font-weight: 700; letter-spacing: -.04em; color: #e8eaf0; margin-bottom: 8px; animation: exRise3d .7s cubic-bezier(0.23,1,0.32,1) forwards .12s; opacity: 0; }
 .ex-title-accent { color: #3b9eff; }
 .ex-subtitle { font-size: 15px; color: #7d8299; animation: exFadeUp .5s ease forwards .22s; opacity: 0; }
@@ -2571,6 +2573,7 @@ a.ex-prob-name:hover { color: #3b9eff; }
 .books-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
 .books-title { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; letter-spacing: -.04em; margin-bottom: 12px; }
 .books-subtitle { font-size: 15px; color: var(--muted); max-width: 520px; margin: 0 auto; line-height: 1.7; }
+.books-section-title { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 12px; }
 
 .books-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 48px; }
 @media (max-width: 800px) { .books-grid { grid-template-columns: 1fr; } }

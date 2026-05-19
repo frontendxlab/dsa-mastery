@@ -357,6 +357,8 @@ function ExplorePage() {
           {/* ── Page header ─────────────────────────────────────── */}
           <div className="ex-page-header">
             <div className="ex-eyebrow">Problem Explorer</div>
+            <h1 className="ex-title">Explore 38,000+ DSA Problems</h1>
+            <h2 className="ex-subtitle">Browse curated problems from 25+ platforms including LeetCode, Codeforces, AtCoder, and CSES. Filter by topic, difficulty, and platform to find the perfect practice problem. Track your solved progress across all platforms.</h2>
             <h1 className="ex-title">
               Explore <span className="ex-title-accent">
                 {`${problems.length.toLocaleString()}`}

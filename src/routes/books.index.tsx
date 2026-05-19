@@ -95,6 +95,7 @@ function BooksPage() {
         </div>
 
         {/* Book grid */}
+        <h2 className="books-section-title">Available Books</h2>
         <div className="books-grid">
           {BOOKS.map(b => <BookCard key={b.slug} book={b} />)}
         </div>
