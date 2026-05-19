@@ -11,8 +11,13 @@ dist-ssr
 .vinxi
 __unconfig*
 todos.json
-public/data/*.json
-public/data/books/
+
+# Book PDF sources (large, not needed in repo)
+docs/books/
+
+# Playwright MCP screenshots & logs
+.playwright-mcp/
+docs/design/new-design/.playwright-mcp/
 
 # repowise API keys (local)
 .repowise/.env

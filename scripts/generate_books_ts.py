@@ -700,6 +700,8 @@ def generate_book_ts(book_data):
         code += f"    year: {book_data['year']},\n"
     if book_data.get('coverUrl'):
         code += f"    coverUrl: '{escape(book_data['coverUrl'])}',\n"
+    elif book_data.get('slug') in COVER_MAP:
+        code += f"    coverUrl: '{escape(COVER_MAP[book_data['slug']])}',\n"
     
     code += f'''    color: '{escape(book_data["color"])}',
     accentColor: '{escape(book_data["accentColor"])}',
@@ -751,6 +753,24 @@ def generate_book_ts(book_data):
     return code
 
 
+COVER_MAP = {
+    'ctci': '/assets/books/cover-ctci.jpg',
+    'cp4': '/assets/books/cover-cp4.jpg',
+    'cph': '/assets/books/cover-cph.jpg',
+    'ai': '/assets/books/cover-ai.jpg',
+    'clrs': '/assets/books/cover-clrs.jpg',
+    'hd': '/assets/books/cover-hd.jpg',
+    'dsamadeasy': '/assets/books/cover-dsamadeasy.jpg',
+    'grokking': '/assets/books/cover-grokking.jpg',
+    'progchal': '/assets/books/cover-progchal.jpg',
+    'math4cs': '/assets/books/cover-math4cs.jpg',
+    'setslogic': '/assets/books/cover-setslogic.jpg',
+    'guidetocp': '/assets/books/cover-guidetocp.jpg',
+    'progintervexp': '/assets/books/cover-progintervexp.jpg',
+    'advdsalgo': '/assets/books/cover-advdsalgo.jpg',
+}
+
+
 def json_to_book_data(json_data):
     """Convert JSON book data to the format needed for TS generation."""
     data = {
@@ -765,6 +785,8 @@ def json_to_book_data(json_data):
         data['year'] = json_data['year']
     if json_data.get('coverUrl'):
         data['coverUrl'] = json_data['coverUrl']
+    if json_data.get('slug') in COVER_MAP:
+        data['coverUrl'] = COVER_MAP[json_data['slug']]
     data['color'] = json_data['color']
     data['accentColor'] = json_data['accentColor']
     data['description'] = json_data['description']
