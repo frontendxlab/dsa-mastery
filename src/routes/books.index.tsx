@@ -2,7 +2,15 @@ import { createFileRoute, Link } from '@tanstack/react-router'
 import { motion } from 'framer-motion'
 import { BOOKS, getTotalProblems } from '#/data/books'
 
-export const Route = createFileRoute('/books/')({ component: BooksPage })
+export const Route = createFileRoute('/books/')({
+  head: () => ({
+    meta: [
+      { title: 'Problems by Book — DSA Mastery' },
+      { name: 'description', content: 'Browse 1,000+ DSA problems organized by popular textbooks like CTCI, CP4, CLRS, and Grokking Algorithms. Practice by book chapter.' },
+    ],
+  }),
+  component: BooksPage,
+})
 
 const BOOK_ICONS: Record<string, string> = {
   ctci: '💡',

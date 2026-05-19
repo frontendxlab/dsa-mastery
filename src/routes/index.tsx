@@ -1,10 +1,21 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
-import { topics, totalProblems, uniquePlatforms } from "#/data/topics";
+import { topics } from "#/data/topics";
+import { totalProblems, uniquePlatforms } from "#/data/problem-stats";
 import { articles } from "#/data/articles";
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-export const Route = createFileRoute("/")({ component: HomePage });
+export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: 'DSA Mastery — Master Data Structures & Algorithms' },
+      { name: 'description', content: 'Explore 38,000+ DSA problems across 14 topics. Interactive learning, curated book collections, and progress tracking for coding interview prep.' },
+      { property: 'og:title', content: 'DSA Mastery — Master Data Structures & Algorithms' },
+      { property: 'og:url', content: 'https://learn-dsa.frontendx.dev' },
+    ],
+  }),
+  component: HomePage,
+});
 
 // ── Color palette ──────────────────────────────────────────────────────────────
 const TOPIC_COLORS: Record<string, string> = {
@@ -197,26 +208,26 @@ function BinarySearchCard({ c, hovered }: SVGProps) {
   }, [hovered])
   const mid = Math.floor((lo+hi)/2)
   return (
-    <svg viewBox="0 0 58 28" fill="none" width="56" height="28">
+    <svg viewBox="0 0 58 20" fill="none" width="56" height="20">
       {VALS.map((v, i) => {
         const active = i>=lo && i<=hi
         const isMid = hovered && i===mid
         return (
           <g key={i}>
-            <rect x={2+i*8} y="4" width="7" height="20" rx="1.5" stroke={c}
+            <rect x={2+i*8} y="7" width="7" height="7" rx="0" stroke={c}
               strokeWidth={isMid?2:1}
               fill={isMid?c:active?c:'none'}
               fillOpacity={isMid?.35:active?.1:0}
               opacity={active?1:.22}
               style={{transition:'all .3s'}}/>
-            <text x={5.5+i*8} y="17" textAnchor="middle" fill={c} fontSize="6" fontFamily="monospace"
+            <text x={5.5+i*8} y="12" textAnchor="middle" fill={c} fontSize="6" fontFamily="monospace"
               opacity={active?.85:.2} style={{transition:'opacity .3s'}}>{v}</text>
           </g>
         )
       })}
       {hovered && <g style={{transition:'transform .35s cubic-bezier(.23,1,.32,1)', transform:`translateX(${(mid-3)*8}px)`}}>
-        <line x1="28" y1="0" x2="28" y2="4" stroke={c} strokeWidth="1.5" opacity=".8"/>
-        <polyline points="25,3 28,0 31,3" stroke={c} strokeWidth="1.3" fill="none" opacity=".8"/>
+        <line x1="28" y1="2" x2="28" y2="6" stroke={c} strokeWidth="1.5" opacity=".8"/>
+        <polyline points="25,5 28,2 31,5" stroke={c} strokeWidth="1.3" fill="none" opacity=".8"/>
       </g>}
     </svg>
   )
@@ -232,30 +243,30 @@ function StringCard({ c, hovered }: SVGProps) {
     return () => { clearInterval(id); setPos(0) }
   }, [hovered])
   return (
-    <svg viewBox="0 0 58 28" fill="none" width="56" height="28">
+    <svg viewBox="0 0 58 22" fill="none" width="56" height="22">
       {CHARS.map((ch, i) => {
         const inWin = hovered && i>=pos && i<pos+3
         return (
           <g key={i}>
-            <rect x={2+i*10} y="4" width="9" height="20" rx="2" stroke={c}
+            <rect x={2+i*10} y="7" width="9" height="9" rx="0" stroke={c}
               strokeWidth={inWin?1.6:1}
               fill={inWin?c:'none'} fillOpacity={inWin?.2:0}
               opacity={inWin?1:.5} style={{transition:'all .25s'}}/>
-            <text x={6.5+i*10} y="17.5" textAnchor="middle" fill={c} fontSize="8"
+            <text x={6.5+i*10} y="13.5" textAnchor="middle" fill={c} fontSize="8"
               fontFamily="monospace" opacity={inWin?.95:.55} style={{transition:'opacity .2s'}}>{ch}</text>
           </g>
         )
       })}
       {hovered && (
         <g style={{transform:`translateX(${pos*10}px)`, transition:'transform .4s cubic-bezier(.23,1,.32,1)'}}>
-          <rect x="1" y="2" width="30" height="24" rx="3" stroke={c} strokeWidth="1.5" fill="none" opacity=".55"/>
+          <rect x="1" y="5" width="30" height="13" rx="2" stroke={'#fbbf24'} strokeWidth="1.5" fill="none" opacity=".55"/>
         </g>
       )}
     </svg>
   )
 }
 
-// 5. Bit Manipulation — bits flip L→R with green for 1
+// 5. Bit Manipulation — bits flip L→R with highlight for 1
 function BitCard({ c, hovered }: SVGProps) {
   const [active, setActive] = useState(-1)
   const BASE = [1,0,1,1,0,1,0,0]
@@ -266,17 +277,16 @@ function BitCard({ c, hovered }: SVGProps) {
     return () => { clearInterval(id); setActive(-1) }
   }, [hovered])
   return (
-    <svg viewBox="0 0 68 22" fill="none" width="66" height="22">
+    <svg viewBox="0 0 68 16" fill="none" width="66" height="16">
       {BASE.map((b, i) => {
         const isFlipping = i === active
         const val = isFlipping ? 1-b : b
-        const col = val===1 ? '#34d399' : c
         return (
           <g key={i}>
-            <rect x={2+i*8} y="1" width="7" height="20" rx="1.5" stroke={col}
-              strokeWidth={isFlipping?2:1} fill={col} fillOpacity={val===1?.22:.05}
+            <rect x={2+i*8} y="5" width="7" height="7" rx="0" stroke={c}
+              strokeWidth={isFlipping?2:1} fill={c} fillOpacity={val===1?.25:.05}
               style={{transition:'all .15s'}}/>
-            <text x={5.5+i*8} y="14.5" textAnchor="middle" fill={col} fontSize="7.5"
+            <text x={5.5+i*8} y="10.5" textAnchor="middle" fill={c} fontSize="7"
               fontFamily="monospace" opacity={isFlipping?1:.8}
               style={{transition:'all .15s'}}>{val}</text>
           </g>
@@ -394,20 +404,20 @@ function SlidingWindowCard({ c, hovered }: SVGProps) {
     return () => { clearInterval(id); setPos(0) }
   }, [hovered])
   return (
-    <svg viewBox="0 0 64 26" fill="none" width="62" height="26">
+    <svg viewBox="0 0 64 20" fill="none" width="62" height="20">
       {VALS.map((v, i) => {
         const inWin = i>=pos && i<pos+3
         return (
           <g key={i}>
-            <rect x={2+i*9} y="4" width="7" height="18" rx="1.5" stroke={c} strokeWidth="1"
+            <rect x={2+i*9} y="7" width="7" height="7" rx="0" stroke={c} strokeWidth="1"
               fill={inWin?c:'none'} fillOpacity={inWin?.18:0} opacity={inWin?1:.4} style={{transition:'all .35s'}}/>
-            <text x={5.5+i*9} y="16.5" textAnchor="middle" fill={c} fontSize="6.5"
+            <text x={5.5+i*9} y="12" textAnchor="middle" fill={c} fontSize="6.5"
               fontFamily="monospace" opacity={inWin?.9:.45} style={{transition:'opacity .3s'}}>{v}</text>
           </g>
         )
       })}
       <g style={{transform:`translateX(${pos*9}px)`, transition:'transform .42s cubic-bezier(.23,1,.32,1)'}}>
-        <rect x="1" y="2" width="27" height="22" rx="3" stroke={c} strokeWidth="1.6" fill="none" opacity=".65"/>
+        <rect x="1" y="5" width="27" height="11" rx="2" stroke={'#fbbf24'} strokeWidth="1.6" fill="none" opacity=".65"/>
       </g>
     </svg>
   )
@@ -547,6 +557,147 @@ function TrieCard({ c, hovered }: SVGProps) {
   )
 }
 
+// ── Feature card interactive SVGs ──────────────────────────────────────────────
+
+// 15. Explore — radar network: 8 satellite nodes pulse in sequence
+function ExploreFeature({ c, hovered }: SVGProps) {
+  const [p, setP] = useState(-1)
+  useEffect(() => {
+    if (!hovered) { setP(-1); return }
+    let i = 0
+    const id = setInterval(() => { setP(i%8); i++ }, 350)
+    return () => { clearInterval(id); setP(-1) }
+  }, [hovered])
+  const SATS = [[30,12],[41,17],[48,30],[41,43],[30,48],[19,43],[12,30],[19,17]]
+  return (
+    <svg viewBox="0 0 60 60" fill="none" width="58" height="58">
+      <circle cx="30" cy="30" r="20" stroke={c} strokeWidth=".6" opacity=".25"/>
+      <circle cx="30" cy="30" r="7" stroke={c} strokeWidth="1.3" fill={c} fillOpacity=".12"/>
+      {SATS.map(([cx,cy],i) => (
+        <g key={i}>
+          <circle cx={cx} cy={cy} r={p===i?3.5:2} stroke={c} strokeWidth={p===i?1.5:1}
+            fill={c} fillOpacity={p===i?.4:.06} style={{transition:'all .25s'}}/>
+          <line x1="30" y1="30" x2={cx} y2={cy} stroke={c} strokeWidth=".7" opacity={p===i?.5:.18} style={{transition:'opacity .25s'}}/>
+        </g>
+      ))}
+    </svg>
+  )
+}
+
+// 16. Learn — stacked diamond layers fade in
+function LearnFeature({ c, hovered }: SVGProps) {
+  const [p, setP] = useState(0)
+  useEffect(() => {
+    if (!hovered) { setP(0); return }
+    let i = 0
+    const id = setInterval(() => { setP(i%3+1); i++ }, 700)
+    return () => { clearInterval(id); setP(0) }
+  }, [hovered])
+  const DIAMONDS = [[30,6,42,24,30,42,18,24],[30,12,36,24,30,36,24,24],[30,18,33,24,30,30,27,24]]
+  return (
+    <svg viewBox="0 0 60 60" fill="none" width="58" height="58">
+      {DIAMONDS.map((d,i) => (
+        <polygon key={i} points={`${d[0]},${d[1]} ${d[2]},${d[3]} ${d[4]},${d[5]} ${d[6]},${d[7]}`}
+          stroke={c} strokeWidth=".9" fill={c} fillOpacity={p>i?.08:0}
+          opacity={p>i?.5:.1} style={{transition:'all .45s'}}/>
+      ))}
+      <circle cx="30" cy="30" r="3" fill={c} opacity={p>=2?.6:.15} style={{transition:'opacity .4s'}}/>
+    </svg>
+  )
+}
+
+// 17. Curated — 4×4 grid fills cell by cell
+function CuratedFeature({ c, hovered }: SVGProps) {
+  const [p, setP] = useState(0)
+  useEffect(() => {
+    if (!hovered) { setP(0); return }
+    let i = 0
+    const id = setInterval(() => { setP(i%17); i++ }, 80)
+    return () => { clearInterval(id); setP(0) }
+  }, [hovered])
+  return (
+    <svg viewBox="0 0 56 56" fill="none" width="54" height="54">
+      {Array.from({length:4}, (_,r) => Array.from({length:4}, (_,cc) => {
+        const idx = r*4+cc
+        return <rect key={idx} x={2+cc*13} y={2+r*13} width="11" height="11" rx="1.5"
+          stroke={c} strokeWidth=".9" fill={c} fillOpacity={p>idx?.22:0} opacity={p>idx?.7:.12}
+          style={{transition:'all .06s'}}/>
+      }))}
+    </svg>
+  )
+}
+
+// 18. Instant — concentric rings ripple outward
+function InstantFeature({ c, hovered }: SVGProps) {
+  const [p, setP] = useState(-1)
+  useEffect(() => {
+    if (!hovered) { setP(-1); return }
+    let i = 0
+    const id = setInterval(() => { setP(i%9); i++ }, 120)
+    return () => { clearInterval(id); setP(-1) }
+  }, [hovered])
+  const RADII = [7,13,20]
+  return (
+    <svg viewBox="0 0 60 60" fill="none" width="58" height="58">
+      {RADII.map((r,i) => (
+        <circle key={i} cx="30" cy="30" r={r} stroke={c} strokeWidth={p>=i*3?1.2:.6}
+          opacity={p>=i*3?.5-.1*i:.08} fill="none" style={{transition:'all .12s'}}/>
+      ))}
+      <circle cx="30" cy="30" r="3.5" stroke={c} strokeWidth="1.5" fill={c} fillOpacity=".18"/>
+    </svg>
+  )
+}
+
+// 19. Progress — arc sweeps around circle
+function ProgressFeature({ c, hovered }: SVGProps) {
+  const [p, setP] = useState(0)
+  useEffect(() => {
+    if (!hovered) { setP(0); return }
+    let i = 0
+    const id = setInterval(() => { setP(i%101); i++ }, 30)
+    return () => { clearInterval(id); setP(0) }
+  }, [hovered])
+  const r = 18, cx = 30, cy = 30
+  const ang = (p/100)*2*Math.PI - Math.PI/2
+  const x = cx + r * Math.cos(ang)
+  const y = cy + r * Math.sin(ang)
+  return (
+    <svg viewBox="0 0 60 60" fill="none" width="58" height="58">
+      <circle cx={cx} cy={cy} r={r} stroke={c} strokeWidth="1.2" opacity=".15"/>
+      <path d={`M${cx},${cy-r} A${r},${r} 0 ${p>50?1:0},1 ${x},${y}`} stroke={c} strokeWidth="2" strokeLinecap="round"
+        fill="none" opacity={hovered?.75:.1} style={{transition:'all .03s'}}/>
+      <circle cx={cx} cy={cy} r="4" stroke={c} strokeWidth=".9" fill={c} fillOpacity=".12"/>
+    </svg>
+  )
+}
+
+// 20. Dedup — two circles merge into one with checkmark
+function DedupFeature({ c, hovered }: SVGProps) {
+  const [p, setP] = useState(0)
+  useEffect(() => {
+    if (!hovered) { setP(0); return }
+    let i = 0
+    const id = setInterval(() => { setP(i%2); i++ }, 800)
+    return () => { clearInterval(id); setP(0) }
+  }, [hovered])
+  const offset = p===0?8:0
+  return (
+    <svg viewBox="0 0 60 60" fill="none" width="58" height="58">
+      <circle cx={22-offset} cy="30" r="12" stroke={c} strokeWidth="1.2" fill={c} fillOpacity=".08" opacity=".7"
+        style={{transition:'all .6s cubic-bezier(.23,1,.32,1)'}}/>
+      <circle cx={38+offset} cy="30" r="12" stroke={c} strokeWidth="1.2" fill={c} fillOpacity=".08" opacity=".7"
+        style={{transition:'all .6s cubic-bezier(.23,1,.32,1)'}}/>
+      {p===1 && <circle cx="30" cy="30" r="12" stroke={c} strokeWidth="1.5" fill={c} fillOpacity=".18"
+        style={{transition:'all .6s cubic-bezier(.23,1,.32,1)'}}/>}
+      <text x="30" y="34" textAnchor="middle" fill={c} fontSize="11" fontFamily="monospace" fontWeight="700"
+        opacity={p===1?.8:.25} style={{transition:'opacity .4s'}}>✓</text>
+    </svg>
+  )
+}
+
+const FEATURE_SVGS = [ExploreFeature, LearnFeature, CuratedFeature, InstantFeature, ProgressFeature, DedupFeature]
+const FEATURE_COLORS = ['#6366f1', '#3b9eff', '#06b6d4', '#f59e0b', '#10b981', '#a855f7']
+
 // ── Per-topic SVG map ──────────────────────────────────────────────────────────
 const TOPIC_SVGS: Record<string, React.FC<SVGProps>> = {
   math: MathCard,
@@ -565,28 +716,6 @@ const TOPIC_SVGS: Record<string, React.FC<SVGProps>> = {
   trie: TrieCard,
 }
 
-
-// ── 3D tilt hook ───────────────────────────────────────────────────────────────
-function use3DTilt() {
-  const ref = useRef<HTMLDivElement>(null)
-  const onMouseMove = (e: React.MouseEvent) => {
-    const el = ref.current
-    if (!el) return
-    const r = el.getBoundingClientRect()
-    const x = ((e.clientX - r.left) / r.width - 0.5) * 2
-    const y = ((e.clientY - r.top) / r.height - 0.5) * 2
-    const color = (el.dataset as Record<string, string>).tc || 'rgba(59,158,255,0.3)'
-    el.style.transform = `perspective(560px) rotateX(${-y * 6}deg) rotateY(${x * 4.5}deg) translateZ(8px) scale(1.015)`
-    el.style.boxShadow = `${-x * 12}px ${6 + y * 4}px 32px rgba(0,0,0,.44),0 0 0 1px ${color}44`
-  }
-  const onMouseLeave = () => {
-    const el = ref.current
-    if (!el) return
-    el.style.transform = ''
-    el.style.boxShadow = ''
-  }
-  return { ref, onMouseMove, onMouseLeave }
-}
 
 // ── Count-up hook ──────────────────────────────────────────────────────────────
 function useCountUp(target: number, duration = 1200) {
@@ -623,7 +752,7 @@ function useCountUp(target: number, duration = 1200) {
 function StatCell({ target, suffix, label }: { target: number; suffix: string; label: string }) {
   const { val, ref } = useCountUp(target)
   return (
-    <div className="ld2-stat-cell reveal">
+    <div className="ld2-stat-cell reveal" data-focusable="card">
       <div className="ld2-stat-value">
         <span ref={ref}>{val.toLocaleString()}</span>{suffix}
       </div>
@@ -633,8 +762,7 @@ function StatCell({ target, suffix, label }: { target: number; suffix: string; l
 }
 
 // ── TopicCard ──────────────────────────────────────────────────────────────────
-function TopicCard({ t }: { t: typeof topics[0] }) {
-  const { ref, onMouseMove, onMouseLeave: tiltLeave } = use3DTilt()
+function TopicCard({ t, index }: { t: typeof topics[0]; index: number }) {
   const [hovered, setHovered] = useState(false)
   const color = TOPIC_COLORS[t.slug] ?? '#3b9eff'
   const SVGComp = TOPIC_SVGS[t.slug]
@@ -644,24 +772,23 @@ function TopicCard({ t }: { t: typeof topics[0] }) {
       to="/explore"
       search={{ topics: t.slug, q: '', platform: 'all', diff: 'tier', tiers: '', rmin: 800, rmax: 3500, sort: 'name', dir: 'asc', page: 1 }}
       className="ld2-topic-card reveal"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
     >
-      <div
-        ref={ref}
-        className="ld2-topic-inner"
-        data-tc={color}
-        style={{ '--tc': color, '--tc-glow': color + '2a' } as React.CSSProperties}
-        onMouseMove={onMouseMove}
-        onMouseEnter={() => setHovered(true)}
-        onMouseLeave={() => { tiltLeave(); setHovered(false) }}
-      >
-        {SVGComp && <div className="ld2-tsvg"><SVGComp c={color} hovered={hovered} /></div>}
-        <span className="ld2-tdot" style={{ background: color }} />
-        <div className="ld2-tname">{t.name}</div>
-        <div className="ld2-tdesc">{t.description}</div>
-        <div className="ld2-tmeta">
-          <span className="ld2-tcnt">{(t.count ?? 0).toLocaleString()}</span>
-          <span>·</span>
-          <span>{t.platforms} platforms</span>
+      <div className="ld2-topic-inner" data-focusable="card">
+        {SVGComp && (
+          <div className="ld2-topic-bg" data-hover={hovered}>
+            <SVGComp c={color} hovered={hovered} />
+          </div>
+        )}
+        <div className="ld2-topic-header">{t.name}</div>
+        <div className="ld2-topic-body">
+          <div className="ld2-tdesc">{t.description}</div>
+          <div className="ld2-tmeta">
+            <span className="ld2-tcnt">{(t.count ?? 0).toLocaleString()}</span>
+            <span>·</span>
+            <span>{t.platforms} platforms</span>
+          </div>
         </div>
       </div>
     </Link>
@@ -669,11 +796,18 @@ function TopicCard({ t }: { t: typeof topics[0] }) {
 }
 
 // ── FeatureCard ────────────────────────────────────────────────────────────────
-function FeatureCard({ f }: { f: typeof FEATURES[0] }) {
-  const { ref, onMouseMove, onMouseLeave } = use3DTilt()
+function FeatureCard({ f, index }: { f: typeof FEATURES[0]; index: number }) {
+  const [hovered, setHovered] = useState(false)
+  const SVGComp = FEATURE_SVGS[index]
+  const color = FEATURE_COLORS[index]
   return (
-    <div className="ld2-feature-card reveal">
-      <div ref={ref} className="ld2-feature-inner" onMouseMove={onMouseMove} onMouseLeave={onMouseLeave}>
+    <div className="ld2-feature-card reveal" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
+      <div className="ld2-feature-inner" data-focusable="card">
+        {SVGComp && (
+          <div className="ld2-feature-bg" data-hover={hovered}>
+            <SVGComp c={color} hovered={hovered} />
+          </div>
+        )}
         <div className="ld2-feature-icon">{f.icon}</div>
         <div className="ld2-feature-name">{f.label}</div>
         <p className="ld2-feature-desc">{f.desc}</p>
@@ -808,7 +942,7 @@ function HomePage() {
 
           <h1 className="ld2-hero-title">
             Master the Art of<br />
-            <span className="ld2-hero-gradient">DSA.</span>
+            <span className="ld2-hero-gradient" data-idle-target>DSA</span>
           </h1>
 
           <p className="ld2-hero-desc">
@@ -817,8 +951,8 @@ function HomePage() {
           </p>
 
           <div className="ld2-hero-actions">
-            <Link to="/learn" className="ld2-btn ld2-btn-primary">Start Learning →</Link>
-            <Link to="/explore" className="ld2-btn ld2-btn-outline">Explore Problems</Link>
+            <Link to="/learn" className="ld2-btn ld2-btn-primary" data-focusable="button">Start Learning →</Link>
+            <Link to="/explore" className="ld2-btn ld2-btn-outline" data-focusable="button">Explore Problems</Link>
           </div>
 
           <div className="ld2-scroll-hint">
@@ -858,8 +992,8 @@ function HomePage() {
           <h2 className="ld2-section-title">{topics.length} Topics</h2>
           <p className="ld2-section-sub">Every problem tagged, every concept linked. Find exactly what you need.</p>
         </div>
-        <div className="ld2-topics-grid">
-          {topics.map(t => <TopicCard key={t.slug} t={t} />)}
+        <div className="ld2-topics-grid relative">
+          {topics.map((t, i) => <TopicCard key={t.slug} t={t} index={i} />)}
         </div>
       </section>
 
@@ -888,7 +1022,7 @@ function HomePage() {
                   { n: '08', name: 'Geometric Transformations', probs: 44  },
                   { n: '09', name: 'DSA Applications',          probs: 120 },
                 ].map(ch => (
-                  <div key={ch.n} className="codex-ch">
+                  <div key={ch.n} className="codex-ch" data-focusable="card">
                     <span className="codex-ch-num">{ch.n}</span>
                     <span className="codex-ch-name">{ch.name}</span>
                     <span className="codex-ch-probs">{ch.probs} problems</span>
@@ -905,8 +1039,8 @@ function HomePage() {
                 ))}
               </div>
               <div className="codex-actions">
-                <Link to="/geometry-book" className="btn-codex">Start Exploring →</Link>
-                <Link to="/learn" className="btn-codex-out">All Chapters</Link>
+                <Link to="/geometry-book" className="btn-codex" data-focusable="button">Start Exploring →</Link>
+                <Link to="/learn" className="btn-codex-out" data-focusable="button">All Chapters</Link>
               </div>
             </div>
           </div>
@@ -921,8 +1055,8 @@ function HomePage() {
           <div className="ld2-eyebrow">What You Can Do</div>
           <h2 className="ld2-section-title">Everything you need to master DSA</h2>
         </div>
-        <div className="ld2-features-grid">
-          {FEATURES.map(f => <FeatureCard key={f.label} f={f} />)}
+        <div className="ld2-features-grid relative">
+          {FEATURES.map((f, i) => <FeatureCard key={f.label} f={f} index={i} />)}
         </div>
       </section>
 
@@ -934,8 +1068,8 @@ function HomePage() {
           <h2 className="ld2-cta-title">Start your DSA journey today.</h2>
           <p className="ld2-cta-desc">{totalProblems.toLocaleString()}+ problems. {articles.length} chapters. One platform.</p>
           <div className="ld2-cta-actions">
-            <Link to="/learn" className="ld2-btn ld2-btn-primary">Learn Patterns →</Link>
-            <Link to="/explore" className="ld2-btn ld2-btn-outline">Browse Problems</Link>
+            <Link to="/learn" className="ld2-btn ld2-btn-primary" data-focusable="button">Learn Patterns →</Link>
+            <Link to="/explore" className="ld2-btn ld2-btn-outline" data-focusable="button">Browse Problems</Link>
           </div>
         </div>
       </section>

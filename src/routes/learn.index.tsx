@@ -35,7 +35,15 @@ const TOPIC_ICON: Record<string, LucideIcon> = {
   shape: Package,
 }
 
-export const Route = createFileRoute('/learn/')({ component: LearnPage })
+export const Route = createFileRoute('/learn/')({
+  head: () => ({
+    meta: [
+      { title: 'Learn DSA Patterns \u2014 DSA Mastery' },
+      { name: 'description', content: 'Master algorithm patterns with interactive learning paths. Sliding Window, Two Pointers, Dynamic Programming, and more.' },
+    ],
+  }),
+  component: LearnPage,
+})
 
 // ─── Book structure ───────────────────────────────────────────────────────────
 const BOOK: { part: string; color: string; chapters: string[] }[] = [

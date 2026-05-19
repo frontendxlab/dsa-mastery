@@ -5,6 +5,12 @@ import { useState } from 'react'
 import { ChapterAccordion } from '#/components/chapter-accordion'
 
 export const Route = createFileRoute('/books/$bookSlug')({
+  head: () => ({
+    meta: [
+      { title: 'Book Detail \u2014 DSA Mastery' },
+      { name: 'description', content: 'Browse DSA problems organized by textbook chapter. Practice problems from popular coding interview books.' },
+    ],
+  }),
   loader: async ({ params }) => {
     const meta = getBook(params.bookSlug)
     if (!meta) throw notFound()

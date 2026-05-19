@@ -18,6 +18,12 @@ const searchSchema = z.object({
 })
 
 export const Route = createFileRoute('/explore')({
+  head: () => ({
+    meta: [
+      { title: 'Explore Topics — DSA Mastery' },
+      { name: 'description', content: 'Browse 38,000+ curated DSA problems across 14 topics. Filter by difficulty, platform, and key concepts. Track your solved progress.' },
+    ],
+  }),
   validateSearch: searchSchema,
   component: ExplorePage,
 })
@@ -157,6 +163,7 @@ function StatCard({ value, label }: { value: string | number; label: string }) {
       onMouseLeave={onLeave}
       style={{ ...tilt, transition: tilt ? 'none' : 'transform .28s cubic-bezier(0.23,1,0.32,1), box-shadow .28s ease, border-color .28s ease' }}
       className="ex-stat-card"
+      data-focusable="card"
     >
       <div className="ex-stat-value">{typeof value === 'number' ? value.toLocaleString() : value}</div>
       <div className="ex-stat-label">{label}</div>
@@ -239,40 +246,33 @@ function ExplorePage() {
     navigate({ search: (prev) => ({ ...prev, ...updates }), replace: true })
   }, [navigate])
 
-  // ── Data loading ──────────────────────────────────────────────────────
+  // ── Data loading (single deduplicated source) ──────────────────────────
   const [problems, setProblems] = useState<Problem[]>([])
-  const [loadedCount, setLoadedCount] = useState(0)
-  const totalTopics = topics.length
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    const PRIORITY = ['dp', 'binary_search', 'graph', 'tree', 'string', 'bit', 'math']
-    const rest  = topics.map(t => t.slug).filter(s => !PRIORITY.includes(s))
-    const order = [...PRIORITY.filter(s => topics.some(t => t.slug === s)), ...rest]
     let cancelled = false
-    const acc: Problem[] = []
-    let loaded = 0
-
-    async function loadOne(slug: string) {
-      try {
-        const res = await fetch(`/data/${slug}.json`)
-        if (!res.ok) return
-        const data: { problems: { platform: string; name: string; url: string; difficulty: string; keyConcept: string }[] } = await res.json()
-        const topicInfo = topics.find(t => t.slug === slug)
-        const mapped = (data.problems ?? []).map((p, j) => ({
-          id: `${slug}-${j}`, platform: p.platform ?? '', name: p.name ?? '',
-          url: p.url ?? '', difficulty: p.difficulty ?? '', keyConcept: p.keyConcept ?? '',
-          topic: topicInfo?.name ?? slug, topicSlug: slug,
-        }))
-        if (!cancelled) { acc.push(...mapped); loaded++; setProblems([...acc]); setLoadedCount(loaded) }
-      } catch { /**/ }
-    }
-
-    Promise.all(order.slice(0, 6).map(loadOne)).then(() => {
-      order.slice(6).reduce((p, slug, i) =>
-        p.then(() => new Promise<void>(r => setTimeout(() => { if (!cancelled) loadOne(slug).then(r) }, i * 80))),
-        Promise.resolve()
-      )
-    })
+    fetch('/data/all-problems.json')
+      .then(res => res.json())
+      .then(data => {
+        if (cancelled) return
+        const mapped: Problem[] = (data.problems ?? []).map((p: any, j: number) => {
+          const topicInfo = topics.find(t => t.slug === p.topic_slug)
+          return {
+            id: p.id ?? `${p.topic_slug}-${j}`,
+            platform: p.platform ?? '',
+            name: p.name ?? '',
+            url: p.url ?? '',
+            difficulty: p.difficulty ?? '',
+            keyConcept: p.keyConcept ?? '',
+            topic: topicInfo?.name ?? p.topic_slug,
+            topicSlug: p.topic_slug,
+          }
+        })
+        setProblems(mapped)
+        setLoading(false)
+      })
+      .catch(() => setLoading(false))
     return () => { cancelled = true }
   }, [])
 
@@ -305,7 +305,6 @@ function ExplorePage() {
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE))
   const pageData   = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
-  const loading    = loadedCount < totalTopics
 
   const toggleSort = (col: typeof sortCol) => {
     if (sortCol === col) patch({ dir: sortDir === 'asc' ? 'desc' : 'asc', page: 1 })
@@ -360,7 +359,7 @@ function ExplorePage() {
             <div className="ex-eyebrow">Problem Explorer</div>
             <h1 className="ex-title">
               Explore <span className="ex-title-accent">
-                {loading ? `${problems.length.toLocaleString()}…` : `${problems.length.toLocaleString()}`}
+                {`${problems.length.toLocaleString()}`}
               </span> Problems
             </h1>
             <p className="ex-subtitle">Every DSA problem in one place. Filter, sort, find patterns.</p>
@@ -369,7 +368,7 @@ function ExplorePage() {
               <StatCard value={topics.length} label="Topics" />
               <StatCard value={platforms.length || '50+'} label="Platforms" />
               <StatCard value={filtered.length} label="Matching" />
-              {loading && <StatCard value={`${loadedCount}/${totalTopics}`} label="Loading…" />}
+              {loading && <StatCard value={''} label="Loading…" />}
             </div>
           </div>
 
