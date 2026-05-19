@@ -23,9 +23,10 @@ style: <UI/CSS changes>
 ```
 
 ### Deploy target:
-- URL: https://learn-dsa.frontendx.dev
-- Command: `wrangler deploy`
-- Cloudflare worker name: tanstack-start-app
+- URL: https://learn-dsa.frontendx.dev (Workers) / https://dsa-mastery.pages.dev (Pages static)
+- Pages command: `wrangler pages deploy dist/client --project-name dsa-mastery --branch production`
+- Workers command: `wrangler deploy`
+- **For static builds:** Just deploy `dist/client/` — it's now a fully static site with `_redirects` for SPA routing
 
 ### Known issues to avoid:
 - NEVER put `'use client'` or `"use client"` in route files — breaks SSR with 500
@@ -40,7 +41,7 @@ style: <UI/CSS changes>
 > (documentation, ownership, history, decisions). **Always verify against
 > actual source files before making changes** — the index may be stale.
 
-Last indexed: 2026-05-19 (commit b8e8cfb). Confidence: 100%.
+Last indexed: 2026-05-19 (commit e5fc49b). Confidence: 100%.
 ### Key Modules
 | Module | Purpose | Owner |
 |--------|---------|-------|
