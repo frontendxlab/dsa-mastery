@@ -21,3 +21,9 @@ docs/design/new-design/.playwright-mcp/
 
 # repowise API keys (local)
 .repowise/.env
+books/
+data/
+docs/design/new-design/*.png
+public/data/*.json
+public/data/books/*.json
+public/data/books/*.csv
