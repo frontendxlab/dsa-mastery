@@ -303,9 +303,9 @@ for (const book of BOOKS) {
       )
       if (rowIndex !== -1) {
         const row = insertBatch[rowIndex]
-        const mUrl = row[13] // match_url
-        const mTitle = row[14] // match_title
-        const mPlatform = row[15] // match_platform
+        const mUrl = row[14] // match_url (index 14)
+        const mTitle = row[15] // match_title (index 15)
+        const mPlatform = row[16] // match_platform (index 16)
         if (mUrl && mUrl !== p.url) entry.matchUrl = mUrl
         if (mTitle) entry.matchTitle = mTitle
         if (mPlatform && mPlatform !== p.platform) entry.matchPlatform = mPlatform

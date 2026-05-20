@@ -60,7 +60,7 @@ function ratingColor(r: number) {
 const PLATFORM_COLORS: Record<string, string> = {
   LeetCode: '#FFA116', Codeforces: '#1F8ACB', AtCoder: '#808080',
   CSES: '#4CAF50', GeeksforGeeks: '#2F8D46', CodeChef: '#5B4638',
-  HackerRank: '#00EA64', SPOJ: '#E60000', Kattis: '#F9A825', Baekjoon: '#0070C0',
+  HackerRank: '#00EA64', SPOJ: '#E60000', Kattis: '#F9A825', Baekjoon: '#0070C0', FrontendCore: '#6366f1',
 }
 
 // ─── Background canvas ───────────────────────────────────────────────────

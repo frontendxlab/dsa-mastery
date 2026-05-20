@@ -51,7 +51,7 @@ const ctci: Book = {
     color: '#1e40af',
     accentColor: '#3b82f6',
     description: '189 programming questions and solutions spanning arrays, trees, recursion, system design, and more. The definitive interview prep book.',
-    totalProblems: 231,
+    totalProblems: 351,
     tags: [
           'Interviews',
           'Arrays',
@@ -2068,7 +2068,6 @@ const ctci: Book = {
         {
             num: '20',
             title: 'Object Oriented Design',
-            summary: 'Object Oriented Design concepts and practice',
             problems: [
                 {
                     id: '20-1',
@@ -2115,7 +2114,6 @@ const ctci: Book = {
         {
             num: '21',
             title: 'System Design',
-            summary: 'System Design concepts and practice',
             problems: [
                 {
                     id: '21-1',
@@ -2152,7 +2150,6 @@ const ctci: Book = {
         {
             num: '22',
             title: 'Threads and Locks',
-            summary: 'Threads and Locks concepts and practice',
             problems: [
                 {
                     id: '22-1',
@@ -2186,6 +2183,717 @@ const ctci: Book = {
                 },
             ],
         },
+        {
+            num: '23',
+            title: 'Object Oriented Design',
+            problems: [
+                {
+                    id: '23-1',
+                    title: 'Object Oriented Design Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '23-2',
+                    title: 'Object Oriented Design Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '23-3',
+                    title: 'Object Oriented Design Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '23-4',
+                    title: 'Object Oriented Design Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '23-5',
+                    title: 'Object Oriented Design Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '23-6',
+                    title: 'Object Oriented Design Problem 6',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '23-7',
+                    title: 'Object Oriented Design Problem 7',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '23-8',
+                    title: 'Object Oriented Design Problem 8',
+                    difficulty: 'Medium',
+                },
+            ],
+        },
+        {
+            num: '24',
+            title: 'System Design',
+            problems: [
+                {
+                    id: '24-1',
+                    title: 'System Design Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '24-2',
+                    title: 'System Design Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '24-3',
+                    title: 'System Design Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '24-4',
+                    title: 'System Design Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '24-5',
+                    title: 'System Design Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '24-6',
+                    title: 'System Design Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '25',
+            title: 'Threads and Locks',
+            problems: [
+                {
+                    id: '25-1',
+                    title: 'Threads and Locks Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '25-2',
+                    title: 'Threads and Locks Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '25-3',
+                    title: 'Threads and Locks Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '25-4',
+                    title: 'Threads and Locks Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '25-5',
+                    title: 'Threads and Locks Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '25-6',
+                    title: 'Threads and Locks Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '26',
+            title: 'Object Oriented Design',
+            problems: [
+                {
+                    id: '26-1',
+                    title: 'Object Oriented Design Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '26-2',
+                    title: 'Object Oriented Design Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '26-3',
+                    title: 'Object Oriented Design Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '26-4',
+                    title: 'Object Oriented Design Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '26-5',
+                    title: 'Object Oriented Design Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '26-6',
+                    title: 'Object Oriented Design Problem 6',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '26-7',
+                    title: 'Object Oriented Design Problem 7',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '26-8',
+                    title: 'Object Oriented Design Problem 8',
+                    difficulty: 'Medium',
+                },
+            ],
+        },
+        {
+            num: '27',
+            title: 'System Design',
+            problems: [
+                {
+                    id: '27-1',
+                    title: 'System Design Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '27-2',
+                    title: 'System Design Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '27-3',
+                    title: 'System Design Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '27-4',
+                    title: 'System Design Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '27-5',
+                    title: 'System Design Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '27-6',
+                    title: 'System Design Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '28',
+            title: 'Threads and Locks',
+            problems: [
+                {
+                    id: '28-1',
+                    title: 'Threads and Locks Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '28-2',
+                    title: 'Threads and Locks Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '28-3',
+                    title: 'Threads and Locks Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '28-4',
+                    title: 'Threads and Locks Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '28-5',
+                    title: 'Threads and Locks Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '28-6',
+                    title: 'Threads and Locks Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '29',
+            title: 'Object Oriented Design',
+            problems: [
+                {
+                    id: '29-1',
+                    title: 'Object Oriented Design Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '29-2',
+                    title: 'Object Oriented Design Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '29-3',
+                    title: 'Object Oriented Design Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '29-4',
+                    title: 'Object Oriented Design Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '29-5',
+                    title: 'Object Oriented Design Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '29-6',
+                    title: 'Object Oriented Design Problem 6',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '29-7',
+                    title: 'Object Oriented Design Problem 7',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '29-8',
+                    title: 'Object Oriented Design Problem 8',
+                    difficulty: 'Medium',
+                },
+            ],
+        },
+        {
+            num: '30',
+            title: 'System Design',
+            problems: [
+                {
+                    id: '30-1',
+                    title: 'System Design Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '30-2',
+                    title: 'System Design Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '30-3',
+                    title: 'System Design Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '30-4',
+                    title: 'System Design Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '30-5',
+                    title: 'System Design Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '30-6',
+                    title: 'System Design Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '31',
+            title: 'Threads and Locks',
+            problems: [
+                {
+                    id: '31-1',
+                    title: 'Threads and Locks Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '31-2',
+                    title: 'Threads and Locks Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '31-3',
+                    title: 'Threads and Locks Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '31-4',
+                    title: 'Threads and Locks Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '31-5',
+                    title: 'Threads and Locks Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '31-6',
+                    title: 'Threads and Locks Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '32',
+            title: 'Object Oriented Design',
+            problems: [
+                {
+                    id: '32-1',
+                    title: 'Object Oriented Design Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '32-2',
+                    title: 'Object Oriented Design Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '32-3',
+                    title: 'Object Oriented Design Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '32-4',
+                    title: 'Object Oriented Design Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '32-5',
+                    title: 'Object Oriented Design Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '32-6',
+                    title: 'Object Oriented Design Problem 6',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '32-7',
+                    title: 'Object Oriented Design Problem 7',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '32-8',
+                    title: 'Object Oriented Design Problem 8',
+                    difficulty: 'Medium',
+                },
+            ],
+        },
+        {
+            num: '33',
+            title: 'System Design',
+            problems: [
+                {
+                    id: '33-1',
+                    title: 'System Design Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '33-2',
+                    title: 'System Design Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '33-3',
+                    title: 'System Design Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '33-4',
+                    title: 'System Design Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '33-5',
+                    title: 'System Design Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '33-6',
+                    title: 'System Design Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '34',
+            title: 'Threads and Locks',
+            problems: [
+                {
+                    id: '34-1',
+                    title: 'Threads and Locks Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '34-2',
+                    title: 'Threads and Locks Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '34-3',
+                    title: 'Threads and Locks Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '34-4',
+                    title: 'Threads and Locks Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '34-5',
+                    title: 'Threads and Locks Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '34-6',
+                    title: 'Threads and Locks Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '35',
+            title: 'Object Oriented Design',
+            problems: [
+                {
+                    id: '35-1',
+                    title: 'Object Oriented Design Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '35-2',
+                    title: 'Object Oriented Design Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '35-3',
+                    title: 'Object Oriented Design Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '35-4',
+                    title: 'Object Oriented Design Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '35-5',
+                    title: 'Object Oriented Design Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '35-6',
+                    title: 'Object Oriented Design Problem 6',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '35-7',
+                    title: 'Object Oriented Design Problem 7',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '35-8',
+                    title: 'Object Oriented Design Problem 8',
+                    difficulty: 'Medium',
+                },
+            ],
+        },
+        {
+            num: '36',
+            title: 'System Design',
+            problems: [
+                {
+                    id: '36-1',
+                    title: 'System Design Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '36-2',
+                    title: 'System Design Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '36-3',
+                    title: 'System Design Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '36-4',
+                    title: 'System Design Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '36-5',
+                    title: 'System Design Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '36-6',
+                    title: 'System Design Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '37',
+            title: 'Threads and Locks',
+            problems: [
+                {
+                    id: '37-1',
+                    title: 'Threads and Locks Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '37-2',
+                    title: 'Threads and Locks Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '37-3',
+                    title: 'Threads and Locks Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '37-4',
+                    title: 'Threads and Locks Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '37-5',
+                    title: 'Threads and Locks Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '37-6',
+                    title: 'Threads and Locks Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '38',
+            title: 'Object Oriented Design',
+            summary: 'Object Oriented Design concepts and practice',
+            problems: [
+                {
+                    id: '38-1',
+                    title: 'Object Oriented Design Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '38-2',
+                    title: 'Object Oriented Design Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '38-3',
+                    title: 'Object Oriented Design Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '38-4',
+                    title: 'Object Oriented Design Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '38-5',
+                    title: 'Object Oriented Design Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '38-6',
+                    title: 'Object Oriented Design Problem 6',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '38-7',
+                    title: 'Object Oriented Design Problem 7',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '38-8',
+                    title: 'Object Oriented Design Problem 8',
+                    difficulty: 'Medium',
+                },
+            ],
+        },
+        {
+            num: '39',
+            title: 'System Design',
+            summary: 'System Design concepts and practice',
+            problems: [
+                {
+                    id: '39-1',
+                    title: 'System Design Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '39-2',
+                    title: 'System Design Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '39-3',
+                    title: 'System Design Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '39-4',
+                    title: 'System Design Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '39-5',
+                    title: 'System Design Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '39-6',
+                    title: 'System Design Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '40',
+            title: 'Threads and Locks',
+            summary: 'Threads and Locks concepts and practice',
+            problems: [
+                {
+                    id: '40-1',
+                    title: 'Threads and Locks Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '40-2',
+                    title: 'Threads and Locks Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '40-3',
+                    title: 'Threads and Locks Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '40-4',
+                    title: 'Threads and Locks Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '40-5',
+                    title: 'Threads and Locks Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '40-6',
+                    title: 'Threads and Locks Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
     ],
 }
 
@@ -2201,7 +2909,7 @@ const cp4: Book = {
     color: '#065f46',
     accentColor: '#10b981',
     description: 'The de-facto competitive programming textbook covering data structures, algorithms, and problem solving strategies with 5000+ referenced OJ problems.',
-    totalProblems: 177,
+    totalProblems: 333,
     tags: [
           'Competitive',
           'Algorithms',
@@ -3452,7 +4160,6 @@ const cp4: Book = {
         {
             num: '17',
             title: 'Mathematics',
-            summary: 'Mathematics concepts and practice',
             problems: [
                 {
                     id: '17-1',
@@ -3499,7 +4206,6 @@ const cp4: Book = {
         {
             num: '18',
             title: 'Game Theory',
-            summary: 'Game Theory concepts and practice',
             problems: [
                 {
                     id: '18-1',
@@ -3536,7 +4242,6 @@ const cp4: Book = {
         {
             num: '19',
             title: 'Advanced Data Structures',
-            summary: 'Advanced Data Structures concepts and practice',
             problems: [
                 {
                     id: '19-1',
@@ -3573,7 +4278,6 @@ const cp4: Book = {
         {
             num: '20',
             title: 'String Algorithms',
-            summary: 'String Algorithms concepts and practice',
             problems: [
                 {
                     id: '20-1',
@@ -3602,6 +4306,934 @@ const cp4: Book = {
                 },
                 {
                     id: '20-6',
+                    title: 'String Algorithms Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '21',
+            title: 'Mathematics',
+            problems: [
+                {
+                    id: '21-1',
+                    title: 'Mathematics Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '21-2',
+                    title: 'Mathematics Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '21-3',
+                    title: 'Mathematics Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '21-4',
+                    title: 'Mathematics Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '21-5',
+                    title: 'Mathematics Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '21-6',
+                    title: 'Mathematics Problem 6',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '21-7',
+                    title: 'Mathematics Problem 7',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '21-8',
+                    title: 'Mathematics Problem 8',
+                    difficulty: 'Medium',
+                },
+            ],
+        },
+        {
+            num: '22',
+            title: 'Game Theory',
+            problems: [
+                {
+                    id: '22-1',
+                    title: 'Game Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '22-2',
+                    title: 'Game Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '22-3',
+                    title: 'Game Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '22-4',
+                    title: 'Game Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '22-5',
+                    title: 'Game Theory Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '22-6',
+                    title: 'Game Theory Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '23',
+            title: 'Advanced Data Structures',
+            problems: [
+                {
+                    id: '23-1',
+                    title: 'Advanced Data Structures Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '23-2',
+                    title: 'Advanced Data Structures Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '23-3',
+                    title: 'Advanced Data Structures Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '23-4',
+                    title: 'Advanced Data Structures Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '23-5',
+                    title: 'Advanced Data Structures Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '23-6',
+                    title: 'Advanced Data Structures Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '24',
+            title: 'String Algorithms',
+            problems: [
+                {
+                    id: '24-1',
+                    title: 'String Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '24-2',
+                    title: 'String Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '24-3',
+                    title: 'String Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '24-4',
+                    title: 'String Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '24-5',
+                    title: 'String Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '24-6',
+                    title: 'String Algorithms Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '25',
+            title: 'Mathematics',
+            problems: [
+                {
+                    id: '25-1',
+                    title: 'Mathematics Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '25-2',
+                    title: 'Mathematics Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '25-3',
+                    title: 'Mathematics Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '25-4',
+                    title: 'Mathematics Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '25-5',
+                    title: 'Mathematics Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '25-6',
+                    title: 'Mathematics Problem 6',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '25-7',
+                    title: 'Mathematics Problem 7',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '25-8',
+                    title: 'Mathematics Problem 8',
+                    difficulty: 'Medium',
+                },
+            ],
+        },
+        {
+            num: '26',
+            title: 'Game Theory',
+            problems: [
+                {
+                    id: '26-1',
+                    title: 'Game Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '26-2',
+                    title: 'Game Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '26-3',
+                    title: 'Game Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '26-4',
+                    title: 'Game Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '26-5',
+                    title: 'Game Theory Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '26-6',
+                    title: 'Game Theory Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '27',
+            title: 'Advanced Data Structures',
+            problems: [
+                {
+                    id: '27-1',
+                    title: 'Advanced Data Structures Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '27-2',
+                    title: 'Advanced Data Structures Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '27-3',
+                    title: 'Advanced Data Structures Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '27-4',
+                    title: 'Advanced Data Structures Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '27-5',
+                    title: 'Advanced Data Structures Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '27-6',
+                    title: 'Advanced Data Structures Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '28',
+            title: 'String Algorithms',
+            problems: [
+                {
+                    id: '28-1',
+                    title: 'String Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '28-2',
+                    title: 'String Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '28-3',
+                    title: 'String Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '28-4',
+                    title: 'String Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '28-5',
+                    title: 'String Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '28-6',
+                    title: 'String Algorithms Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '29',
+            title: 'Mathematics',
+            problems: [
+                {
+                    id: '29-1',
+                    title: 'Mathematics Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '29-2',
+                    title: 'Mathematics Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '29-3',
+                    title: 'Mathematics Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '29-4',
+                    title: 'Mathematics Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '29-5',
+                    title: 'Mathematics Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '29-6',
+                    title: 'Mathematics Problem 6',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '29-7',
+                    title: 'Mathematics Problem 7',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '29-8',
+                    title: 'Mathematics Problem 8',
+                    difficulty: 'Medium',
+                },
+            ],
+        },
+        {
+            num: '30',
+            title: 'Game Theory',
+            problems: [
+                {
+                    id: '30-1',
+                    title: 'Game Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '30-2',
+                    title: 'Game Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '30-3',
+                    title: 'Game Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '30-4',
+                    title: 'Game Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '30-5',
+                    title: 'Game Theory Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '30-6',
+                    title: 'Game Theory Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '31',
+            title: 'Advanced Data Structures',
+            problems: [
+                {
+                    id: '31-1',
+                    title: 'Advanced Data Structures Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '31-2',
+                    title: 'Advanced Data Structures Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '31-3',
+                    title: 'Advanced Data Structures Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '31-4',
+                    title: 'Advanced Data Structures Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '31-5',
+                    title: 'Advanced Data Structures Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '31-6',
+                    title: 'Advanced Data Structures Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '32',
+            title: 'String Algorithms',
+            problems: [
+                {
+                    id: '32-1',
+                    title: 'String Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '32-2',
+                    title: 'String Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '32-3',
+                    title: 'String Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '32-4',
+                    title: 'String Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '32-5',
+                    title: 'String Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '32-6',
+                    title: 'String Algorithms Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '33',
+            title: 'Mathematics',
+            problems: [
+                {
+                    id: '33-1',
+                    title: 'Mathematics Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '33-2',
+                    title: 'Mathematics Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '33-3',
+                    title: 'Mathematics Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '33-4',
+                    title: 'Mathematics Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '33-5',
+                    title: 'Mathematics Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '33-6',
+                    title: 'Mathematics Problem 6',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '33-7',
+                    title: 'Mathematics Problem 7',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '33-8',
+                    title: 'Mathematics Problem 8',
+                    difficulty: 'Medium',
+                },
+            ],
+        },
+        {
+            num: '34',
+            title: 'Game Theory',
+            problems: [
+                {
+                    id: '34-1',
+                    title: 'Game Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '34-2',
+                    title: 'Game Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '34-3',
+                    title: 'Game Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '34-4',
+                    title: 'Game Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '34-5',
+                    title: 'Game Theory Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '34-6',
+                    title: 'Game Theory Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '35',
+            title: 'Advanced Data Structures',
+            problems: [
+                {
+                    id: '35-1',
+                    title: 'Advanced Data Structures Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '35-2',
+                    title: 'Advanced Data Structures Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '35-3',
+                    title: 'Advanced Data Structures Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '35-4',
+                    title: 'Advanced Data Structures Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '35-5',
+                    title: 'Advanced Data Structures Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '35-6',
+                    title: 'Advanced Data Structures Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '36',
+            title: 'String Algorithms',
+            problems: [
+                {
+                    id: '36-1',
+                    title: 'String Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '36-2',
+                    title: 'String Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '36-3',
+                    title: 'String Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '36-4',
+                    title: 'String Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '36-5',
+                    title: 'String Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '36-6',
+                    title: 'String Algorithms Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '37',
+            title: 'Mathematics',
+            problems: [
+                {
+                    id: '37-1',
+                    title: 'Mathematics Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '37-2',
+                    title: 'Mathematics Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '37-3',
+                    title: 'Mathematics Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '37-4',
+                    title: 'Mathematics Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '37-5',
+                    title: 'Mathematics Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '37-6',
+                    title: 'Mathematics Problem 6',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '37-7',
+                    title: 'Mathematics Problem 7',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '37-8',
+                    title: 'Mathematics Problem 8',
+                    difficulty: 'Medium',
+                },
+            ],
+        },
+        {
+            num: '38',
+            title: 'Game Theory',
+            problems: [
+                {
+                    id: '38-1',
+                    title: 'Game Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '38-2',
+                    title: 'Game Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '38-3',
+                    title: 'Game Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '38-4',
+                    title: 'Game Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '38-5',
+                    title: 'Game Theory Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '38-6',
+                    title: 'Game Theory Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '39',
+            title: 'Advanced Data Structures',
+            problems: [
+                {
+                    id: '39-1',
+                    title: 'Advanced Data Structures Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '39-2',
+                    title: 'Advanced Data Structures Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '39-3',
+                    title: 'Advanced Data Structures Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '39-4',
+                    title: 'Advanced Data Structures Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '39-5',
+                    title: 'Advanced Data Structures Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '39-6',
+                    title: 'Advanced Data Structures Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '40',
+            title: 'String Algorithms',
+            problems: [
+                {
+                    id: '40-1',
+                    title: 'String Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '40-2',
+                    title: 'String Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '40-3',
+                    title: 'String Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '40-4',
+                    title: 'String Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '40-5',
+                    title: 'String Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '40-6',
+                    title: 'String Algorithms Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '41',
+            title: 'Mathematics',
+            summary: 'Mathematics concepts and practice',
+            problems: [
+                {
+                    id: '41-1',
+                    title: 'Mathematics Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '41-2',
+                    title: 'Mathematics Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '41-3',
+                    title: 'Mathematics Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '41-4',
+                    title: 'Mathematics Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '41-5',
+                    title: 'Mathematics Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '41-6',
+                    title: 'Mathematics Problem 6',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '41-7',
+                    title: 'Mathematics Problem 7',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '41-8',
+                    title: 'Mathematics Problem 8',
+                    difficulty: 'Medium',
+                },
+            ],
+        },
+        {
+            num: '42',
+            title: 'Game Theory',
+            summary: 'Game Theory concepts and practice',
+            problems: [
+                {
+                    id: '42-1',
+                    title: 'Game Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '42-2',
+                    title: 'Game Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '42-3',
+                    title: 'Game Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '42-4',
+                    title: 'Game Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '42-5',
+                    title: 'Game Theory Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '42-6',
+                    title: 'Game Theory Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '43',
+            title: 'Advanced Data Structures',
+            summary: 'Advanced Data Structures concepts and practice',
+            problems: [
+                {
+                    id: '43-1',
+                    title: 'Advanced Data Structures Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '43-2',
+                    title: 'Advanced Data Structures Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '43-3',
+                    title: 'Advanced Data Structures Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '43-4',
+                    title: 'Advanced Data Structures Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '43-5',
+                    title: 'Advanced Data Structures Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '43-6',
+                    title: 'Advanced Data Structures Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '44',
+            title: 'String Algorithms',
+            summary: 'String Algorithms concepts and practice',
+            problems: [
+                {
+                    id: '44-1',
+                    title: 'String Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '44-2',
+                    title: 'String Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '44-3',
+                    title: 'String Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '44-4',
+                    title: 'String Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '44-5',
+                    title: 'String Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '44-6',
                     title: 'String Algorithms Problem 6',
                     difficulty: 'Easy',
                 },
@@ -8562,7 +10194,7 @@ const hd: Book = {
     color: '#6b21a8',
     accentColor: '#a855f7',
     description: 'A collection of bitwise tricks and optimizations for low-level programming. Covers bit manipulation, arithmetic bounds, integer division, Gray codes, CRC, error-correcting codes, and Hilbert curves.',
-    totalProblems: 176,
+    totalProblems: 284,
     tags: [
           'Bit Manipulation',
           'Low-Level',
@@ -9449,7 +11081,6 @@ const hd: Book = {
         {
             num: '25',
             title: 'Arithmetic',
-            summary: 'Arithmetic concepts and practice',
             problems: [
                 {
                     id: '25-1',
@@ -9486,7 +11117,6 @@ const hd: Book = {
         {
             num: '26',
             title: 'Division',
-            summary: 'Division concepts and practice',
             problems: [
                 {
                     id: '26-1',
@@ -9513,12 +11143,16 @@ const hd: Book = {
                     title: 'Division Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '26-6',
+                    title: 'Exercise 26.6',
+                    difficulty: 'Easy',
+                },
             ],
         },
         {
             num: '27',
             title: 'Double Precision',
-            summary: 'Double Precision concepts and practice',
             problems: [
                 {
                     id: '27-1',
@@ -9545,6 +11179,652 @@ const hd: Book = {
                     title: 'Double Precision Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '27-6',
+                    title: 'Exercise 27.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '28',
+            title: 'Arithmetic',
+            problems: [
+                {
+                    id: '28-1',
+                    title: 'Arithmetic Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '28-2',
+                    title: 'Arithmetic Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '28-3',
+                    title: 'Arithmetic Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '28-4',
+                    title: 'Arithmetic Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '28-5',
+                    title: 'Arithmetic Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '28-6',
+                    title: 'Arithmetic Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '29',
+            title: 'Division',
+            problems: [
+                {
+                    id: '29-1',
+                    title: 'Division Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '29-2',
+                    title: 'Division Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '29-3',
+                    title: 'Division Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '29-4',
+                    title: 'Division Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '29-5',
+                    title: 'Division Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '29-6',
+                    title: 'Exercise 29.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '30',
+            title: 'Double Precision',
+            problems: [
+                {
+                    id: '30-1',
+                    title: 'Double Precision Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '30-2',
+                    title: 'Double Precision Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '30-3',
+                    title: 'Double Precision Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '30-4',
+                    title: 'Double Precision Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '30-5',
+                    title: 'Double Precision Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '30-6',
+                    title: 'Exercise 30.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '31',
+            title: 'Arithmetic',
+            problems: [
+                {
+                    id: '31-1',
+                    title: 'Arithmetic Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '31-2',
+                    title: 'Arithmetic Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '31-3',
+                    title: 'Arithmetic Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '31-4',
+                    title: 'Arithmetic Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '31-5',
+                    title: 'Arithmetic Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '31-6',
+                    title: 'Arithmetic Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '32',
+            title: 'Division',
+            problems: [
+                {
+                    id: '32-1',
+                    title: 'Division Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '32-2',
+                    title: 'Division Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '32-3',
+                    title: 'Division Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '32-4',
+                    title: 'Division Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '32-5',
+                    title: 'Division Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '32-6',
+                    title: 'Exercise 32.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '33',
+            title: 'Double Precision',
+            problems: [
+                {
+                    id: '33-1',
+                    title: 'Double Precision Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '33-2',
+                    title: 'Double Precision Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '33-3',
+                    title: 'Double Precision Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '33-4',
+                    title: 'Double Precision Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '33-5',
+                    title: 'Double Precision Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '33-6',
+                    title: 'Exercise 33.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '34',
+            title: 'Arithmetic',
+            problems: [
+                {
+                    id: '34-1',
+                    title: 'Arithmetic Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '34-2',
+                    title: 'Arithmetic Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '34-3',
+                    title: 'Arithmetic Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '34-4',
+                    title: 'Arithmetic Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '34-5',
+                    title: 'Arithmetic Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '34-6',
+                    title: 'Arithmetic Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '35',
+            title: 'Division',
+            problems: [
+                {
+                    id: '35-1',
+                    title: 'Division Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '35-2',
+                    title: 'Division Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '35-3',
+                    title: 'Division Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '35-4',
+                    title: 'Division Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '35-5',
+                    title: 'Division Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '35-6',
+                    title: 'Exercise 35.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '36',
+            title: 'Double Precision',
+            problems: [
+                {
+                    id: '36-1',
+                    title: 'Double Precision Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '36-2',
+                    title: 'Double Precision Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '36-3',
+                    title: 'Double Precision Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '36-4',
+                    title: 'Double Precision Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '36-5',
+                    title: 'Double Precision Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '36-6',
+                    title: 'Exercise 36.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '37',
+            title: 'Arithmetic',
+            problems: [
+                {
+                    id: '37-1',
+                    title: 'Arithmetic Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '37-2',
+                    title: 'Arithmetic Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '37-3',
+                    title: 'Arithmetic Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '37-4',
+                    title: 'Arithmetic Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '37-5',
+                    title: 'Arithmetic Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '37-6',
+                    title: 'Arithmetic Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '38',
+            title: 'Division',
+            problems: [
+                {
+                    id: '38-1',
+                    title: 'Division Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '38-2',
+                    title: 'Division Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '38-3',
+                    title: 'Division Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '38-4',
+                    title: 'Division Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '38-5',
+                    title: 'Division Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '38-6',
+                    title: 'Exercise 38.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '39',
+            title: 'Double Precision',
+            problems: [
+                {
+                    id: '39-1',
+                    title: 'Double Precision Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '39-2',
+                    title: 'Double Precision Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '39-3',
+                    title: 'Double Precision Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '39-4',
+                    title: 'Double Precision Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '39-5',
+                    title: 'Double Precision Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '39-6',
+                    title: 'Exercise 39.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '40',
+            title: 'Arithmetic',
+            problems: [
+                {
+                    id: '40-1',
+                    title: 'Arithmetic Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '40-2',
+                    title: 'Arithmetic Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '40-3',
+                    title: 'Arithmetic Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '40-4',
+                    title: 'Arithmetic Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '40-5',
+                    title: 'Arithmetic Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '40-6',
+                    title: 'Arithmetic Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '41',
+            title: 'Division',
+            problems: [
+                {
+                    id: '41-1',
+                    title: 'Division Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '41-2',
+                    title: 'Division Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '41-3',
+                    title: 'Division Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '41-4',
+                    title: 'Division Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '41-5',
+                    title: 'Division Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '41-6',
+                    title: 'Exercise 41.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '42',
+            title: 'Double Precision',
+            problems: [
+                {
+                    id: '42-1',
+                    title: 'Double Precision Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '42-2',
+                    title: 'Double Precision Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '42-3',
+                    title: 'Double Precision Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '42-4',
+                    title: 'Double Precision Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '42-5',
+                    title: 'Double Precision Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '42-6',
+                    title: 'Exercise 42.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '43',
+            title: 'Arithmetic',
+            summary: 'Arithmetic concepts and practice',
+            problems: [
+                {
+                    id: '43-1',
+                    title: 'Arithmetic Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '43-2',
+                    title: 'Arithmetic Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '43-3',
+                    title: 'Arithmetic Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '43-4',
+                    title: 'Arithmetic Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '43-5',
+                    title: 'Arithmetic Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '43-6',
+                    title: 'Arithmetic Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '44',
+            title: 'Division',
+            summary: 'Division concepts and practice',
+            problems: [
+                {
+                    id: '44-1',
+                    title: 'Division Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '44-2',
+                    title: 'Division Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '44-3',
+                    title: 'Division Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '44-4',
+                    title: 'Division Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '44-5',
+                    title: 'Division Problem 5',
+                    difficulty: 'Hard',
+                },
+            ],
+        },
+        {
+            num: '45',
+            title: 'Double Precision',
+            summary: 'Double Precision concepts and practice',
+            problems: [
+                {
+                    id: '45-1',
+                    title: 'Double Precision Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '45-2',
+                    title: 'Double Precision Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '45-3',
+                    title: 'Double Precision Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '45-4',
+                    title: 'Double Precision Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '45-5',
+                    title: 'Double Precision Problem 5',
+                    difficulty: 'Hard',
+                },
             ],
         },
     ],
@@ -9562,7 +11842,7 @@ const dsamadeasy: Book = {
     color: '#0d9488',
     accentColor: '#14b8a6',
     description: 'A practical guide to data structures and algorithms with 700+ problems organized by topic. Great for interview preparation.',
-    totalProblems: 95,
+    totalProblems: 239,
     tags: [
           'Interviews',
           'DSA',
@@ -10145,7 +12425,6 @@ const dsamadeasy: Book = {
         {
             num: '13',
             title: 'Hashing',
-            summary: 'Hashing concepts and practice',
             problems: [
                 {
                     id: '13-1',
@@ -10182,7 +12461,6 @@ const dsamadeasy: Book = {
         {
             num: '14',
             title: 'String Algorithms',
-            summary: 'String Algorithms concepts and practice',
             problems: [
                 {
                     id: '14-1',
@@ -10219,7 +12497,6 @@ const dsamadeasy: Book = {
         {
             num: '15',
             title: 'Divide and Conquer',
-            summary: 'Divide and Conquer concepts and practice',
             problems: [
                 {
                     id: '15-1',
@@ -10246,12 +12523,16 @@ const dsamadeasy: Book = {
                     title: 'Divide and Conquer Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '15-6',
+                    title: 'Exercise 15.6',
+                    difficulty: 'Easy',
+                },
             ],
         },
         {
             num: '16',
             title: 'Greedy Algorithms',
-            summary: 'Greedy Algorithms concepts and practice',
             problems: [
                 {
                     id: '16-1',
@@ -10285,6 +12566,869 @@ const dsamadeasy: Book = {
                 },
             ],
         },
+        {
+            num: '17',
+            title: 'Hashing',
+            problems: [
+                {
+                    id: '17-1',
+                    title: 'Hashing Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '17-2',
+                    title: 'Hashing Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '17-3',
+                    title: 'Hashing Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '17-4',
+                    title: 'Hashing Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '17-5',
+                    title: 'Hashing Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '17-6',
+                    title: 'Hashing Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '18',
+            title: 'String Algorithms',
+            problems: [
+                {
+                    id: '18-1',
+                    title: 'String Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '18-2',
+                    title: 'String Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '18-3',
+                    title: 'String Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '18-4',
+                    title: 'String Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '18-5',
+                    title: 'String Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '18-6',
+                    title: 'String Algorithms Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '19',
+            title: 'Divide and Conquer',
+            problems: [
+                {
+                    id: '19-1',
+                    title: 'Divide and Conquer Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '19-2',
+                    title: 'Divide and Conquer Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '19-3',
+                    title: 'Divide and Conquer Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '19-4',
+                    title: 'Divide and Conquer Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '19-5',
+                    title: 'Divide and Conquer Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '19-6',
+                    title: 'Exercise 19.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '20',
+            title: 'Greedy Algorithms',
+            problems: [
+                {
+                    id: '20-1',
+                    title: 'Greedy Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '20-2',
+                    title: 'Greedy Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '20-3',
+                    title: 'Greedy Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '20-4',
+                    title: 'Greedy Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '20-5',
+                    title: 'Greedy Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '20-6',
+                    title: 'Greedy Algorithms Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '21',
+            title: 'Hashing',
+            problems: [
+                {
+                    id: '21-1',
+                    title: 'Hashing Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '21-2',
+                    title: 'Hashing Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '21-3',
+                    title: 'Hashing Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '21-4',
+                    title: 'Hashing Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '21-5',
+                    title: 'Hashing Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '21-6',
+                    title: 'Hashing Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '22',
+            title: 'String Algorithms',
+            problems: [
+                {
+                    id: '22-1',
+                    title: 'String Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '22-2',
+                    title: 'String Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '22-3',
+                    title: 'String Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '22-4',
+                    title: 'String Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '22-5',
+                    title: 'String Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '22-6',
+                    title: 'String Algorithms Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '23',
+            title: 'Divide and Conquer',
+            problems: [
+                {
+                    id: '23-1',
+                    title: 'Divide and Conquer Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '23-2',
+                    title: 'Divide and Conquer Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '23-3',
+                    title: 'Divide and Conquer Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '23-4',
+                    title: 'Divide and Conquer Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '23-5',
+                    title: 'Divide and Conquer Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '23-6',
+                    title: 'Exercise 23.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '24',
+            title: 'Greedy Algorithms',
+            problems: [
+                {
+                    id: '24-1',
+                    title: 'Greedy Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '24-2',
+                    title: 'Greedy Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '24-3',
+                    title: 'Greedy Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '24-4',
+                    title: 'Greedy Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '24-5',
+                    title: 'Greedy Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '24-6',
+                    title: 'Greedy Algorithms Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '25',
+            title: 'Hashing',
+            problems: [
+                {
+                    id: '25-1',
+                    title: 'Hashing Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '25-2',
+                    title: 'Hashing Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '25-3',
+                    title: 'Hashing Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '25-4',
+                    title: 'Hashing Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '25-5',
+                    title: 'Hashing Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '25-6',
+                    title: 'Hashing Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '26',
+            title: 'String Algorithms',
+            problems: [
+                {
+                    id: '26-1',
+                    title: 'String Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '26-2',
+                    title: 'String Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '26-3',
+                    title: 'String Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '26-4',
+                    title: 'String Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '26-5',
+                    title: 'String Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '26-6',
+                    title: 'String Algorithms Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '27',
+            title: 'Divide and Conquer',
+            problems: [
+                {
+                    id: '27-1',
+                    title: 'Divide and Conquer Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '27-2',
+                    title: 'Divide and Conquer Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '27-3',
+                    title: 'Divide and Conquer Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '27-4',
+                    title: 'Divide and Conquer Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '27-5',
+                    title: 'Divide and Conquer Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '27-6',
+                    title: 'Exercise 27.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '28',
+            title: 'Greedy Algorithms',
+            problems: [
+                {
+                    id: '28-1',
+                    title: 'Greedy Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '28-2',
+                    title: 'Greedy Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '28-3',
+                    title: 'Greedy Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '28-4',
+                    title: 'Greedy Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '28-5',
+                    title: 'Greedy Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '28-6',
+                    title: 'Greedy Algorithms Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '29',
+            title: 'Hashing',
+            problems: [
+                {
+                    id: '29-1',
+                    title: 'Hashing Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '29-2',
+                    title: 'Hashing Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '29-3',
+                    title: 'Hashing Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '29-4',
+                    title: 'Hashing Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '29-5',
+                    title: 'Hashing Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '29-6',
+                    title: 'Hashing Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '30',
+            title: 'String Algorithms',
+            problems: [
+                {
+                    id: '30-1',
+                    title: 'String Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '30-2',
+                    title: 'String Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '30-3',
+                    title: 'String Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '30-4',
+                    title: 'String Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '30-5',
+                    title: 'String Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '30-6',
+                    title: 'String Algorithms Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '31',
+            title: 'Divide and Conquer',
+            problems: [
+                {
+                    id: '31-1',
+                    title: 'Divide and Conquer Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '31-2',
+                    title: 'Divide and Conquer Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '31-3',
+                    title: 'Divide and Conquer Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '31-4',
+                    title: 'Divide and Conquer Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '31-5',
+                    title: 'Divide and Conquer Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '31-6',
+                    title: 'Exercise 31.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '32',
+            title: 'Greedy Algorithms',
+            problems: [
+                {
+                    id: '32-1',
+                    title: 'Greedy Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '32-2',
+                    title: 'Greedy Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '32-3',
+                    title: 'Greedy Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '32-4',
+                    title: 'Greedy Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '32-5',
+                    title: 'Greedy Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '32-6',
+                    title: 'Greedy Algorithms Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '33',
+            title: 'Hashing',
+            problems: [
+                {
+                    id: '33-1',
+                    title: 'Hashing Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '33-2',
+                    title: 'Hashing Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '33-3',
+                    title: 'Hashing Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '33-4',
+                    title: 'Hashing Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '33-5',
+                    title: 'Hashing Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '33-6',
+                    title: 'Hashing Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '34',
+            title: 'String Algorithms',
+            problems: [
+                {
+                    id: '34-1',
+                    title: 'String Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '34-2',
+                    title: 'String Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '34-3',
+                    title: 'String Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '34-4',
+                    title: 'String Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '34-5',
+                    title: 'String Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '34-6',
+                    title: 'String Algorithms Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '35',
+            title: 'Divide and Conquer',
+            problems: [
+                {
+                    id: '35-1',
+                    title: 'Divide and Conquer Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '35-2',
+                    title: 'Divide and Conquer Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '35-3',
+                    title: 'Divide and Conquer Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '35-4',
+                    title: 'Divide and Conquer Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '35-5',
+                    title: 'Divide and Conquer Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '35-6',
+                    title: 'Exercise 35.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '36',
+            title: 'Greedy Algorithms',
+            problems: [
+                {
+                    id: '36-1',
+                    title: 'Greedy Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '36-2',
+                    title: 'Greedy Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '36-3',
+                    title: 'Greedy Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '36-4',
+                    title: 'Greedy Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '36-5',
+                    title: 'Greedy Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '36-6',
+                    title: 'Greedy Algorithms Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '37',
+            title: 'Hashing',
+            summary: 'Hashing concepts and practice',
+            problems: [
+                {
+                    id: '37-1',
+                    title: 'Hashing Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '37-2',
+                    title: 'Hashing Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '37-3',
+                    title: 'Hashing Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '37-4',
+                    title: 'Hashing Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '37-5',
+                    title: 'Hashing Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '37-6',
+                    title: 'Hashing Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '38',
+            title: 'String Algorithms',
+            summary: 'String Algorithms concepts and practice',
+            problems: [
+                {
+                    id: '38-1',
+                    title: 'String Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '38-2',
+                    title: 'String Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '38-3',
+                    title: 'String Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '38-4',
+                    title: 'String Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '38-5',
+                    title: 'String Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '38-6',
+                    title: 'String Algorithms Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '39',
+            title: 'Divide and Conquer',
+            summary: 'Divide and Conquer concepts and practice',
+            problems: [
+                {
+                    id: '39-1',
+                    title: 'Divide and Conquer Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '39-2',
+                    title: 'Divide and Conquer Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '39-3',
+                    title: 'Divide and Conquer Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '39-4',
+                    title: 'Divide and Conquer Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '39-5',
+                    title: 'Divide and Conquer Problem 5',
+                    difficulty: 'Hard',
+                },
+            ],
+        },
+        {
+            num: '40',
+            title: 'Greedy Algorithms',
+            summary: 'Greedy Algorithms concepts and practice',
+            problems: [
+                {
+                    id: '40-1',
+                    title: 'Greedy Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '40-2',
+                    title: 'Greedy Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '40-3',
+                    title: 'Greedy Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '40-4',
+                    title: 'Greedy Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '40-5',
+                    title: 'Greedy Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '40-6',
+                    title: 'Greedy Algorithms Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
     ],
 }
 
@@ -10300,7 +13444,7 @@ const grokking: Book = {
     color: '#059669',
     accentColor: '#34d399',
     description: 'A friendly, illustrated guide to algorithms that makes complex topics approachable with visual examples.',
-    totalProblems: 106,
+    totalProblems: 250,
     tags: [
           'Algorithms',
           'Beginners',
@@ -10907,7 +14051,6 @@ const grokking: Book = {
         {
             num: '15',
             title: 'Arrays',
-            summary: 'Arrays concepts and practice',
             problems: [
                 {
                     id: '15-1',
@@ -10944,7 +14087,6 @@ const grokking: Book = {
         {
             num: '16',
             title: 'Sorting and Searching',
-            summary: 'Sorting and Searching concepts and practice',
             problems: [
                 {
                     id: '16-1',
@@ -10981,7 +14123,6 @@ const grokking: Book = {
         {
             num: '17',
             title: 'Greedy Algorithms',
-            summary: 'Greedy Algorithms concepts and practice',
             problems: [
                 {
                     id: '17-1',
@@ -11008,12 +14149,16 @@ const grokking: Book = {
                     title: 'Greedy Algorithms Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '17-6',
+                    title: 'Exercise 17.6',
+                    difficulty: 'Easy',
+                },
             ],
         },
         {
             num: '18',
             title: 'NP Complete Problems',
-            summary: 'NP Complete Problems concepts and practice',
             problems: [
                 {
                     id: '18-1',
@@ -11040,6 +14185,869 @@ const grokking: Book = {
                     title: 'NP Complete Problems Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '18-6',
+                    title: 'Exercise 18.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '19',
+            title: 'Arrays',
+            problems: [
+                {
+                    id: '19-1',
+                    title: 'Arrays Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '19-2',
+                    title: 'Arrays Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '19-3',
+                    title: 'Arrays Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '19-4',
+                    title: 'Arrays Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '19-5',
+                    title: 'Arrays Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '19-6',
+                    title: 'Arrays Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '20',
+            title: 'Sorting and Searching',
+            problems: [
+                {
+                    id: '20-1',
+                    title: 'Sorting and Searching Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '20-2',
+                    title: 'Sorting and Searching Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '20-3',
+                    title: 'Sorting and Searching Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '20-4',
+                    title: 'Sorting and Searching Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '20-5',
+                    title: 'Sorting and Searching Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '20-6',
+                    title: 'Sorting and Searching Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '21',
+            title: 'Greedy Algorithms',
+            problems: [
+                {
+                    id: '21-1',
+                    title: 'Greedy Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '21-2',
+                    title: 'Greedy Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '21-3',
+                    title: 'Greedy Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '21-4',
+                    title: 'Greedy Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '21-5',
+                    title: 'Greedy Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '21-6',
+                    title: 'Exercise 21.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '22',
+            title: 'NP Complete Problems',
+            problems: [
+                {
+                    id: '22-1',
+                    title: 'NP Complete Problems Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '22-2',
+                    title: 'NP Complete Problems Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '22-3',
+                    title: 'NP Complete Problems Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '22-4',
+                    title: 'NP Complete Problems Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '22-5',
+                    title: 'NP Complete Problems Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '22-6',
+                    title: 'Exercise 22.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '23',
+            title: 'Arrays',
+            problems: [
+                {
+                    id: '23-1',
+                    title: 'Arrays Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '23-2',
+                    title: 'Arrays Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '23-3',
+                    title: 'Arrays Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '23-4',
+                    title: 'Arrays Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '23-5',
+                    title: 'Arrays Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '23-6',
+                    title: 'Arrays Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '24',
+            title: 'Sorting and Searching',
+            problems: [
+                {
+                    id: '24-1',
+                    title: 'Sorting and Searching Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '24-2',
+                    title: 'Sorting and Searching Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '24-3',
+                    title: 'Sorting and Searching Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '24-4',
+                    title: 'Sorting and Searching Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '24-5',
+                    title: 'Sorting and Searching Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '24-6',
+                    title: 'Sorting and Searching Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '25',
+            title: 'Greedy Algorithms',
+            problems: [
+                {
+                    id: '25-1',
+                    title: 'Greedy Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '25-2',
+                    title: 'Greedy Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '25-3',
+                    title: 'Greedy Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '25-4',
+                    title: 'Greedy Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '25-5',
+                    title: 'Greedy Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '25-6',
+                    title: 'Exercise 25.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '26',
+            title: 'NP Complete Problems',
+            problems: [
+                {
+                    id: '26-1',
+                    title: 'NP Complete Problems Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '26-2',
+                    title: 'NP Complete Problems Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '26-3',
+                    title: 'NP Complete Problems Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '26-4',
+                    title: 'NP Complete Problems Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '26-5',
+                    title: 'NP Complete Problems Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '26-6',
+                    title: 'Exercise 26.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '27',
+            title: 'Arrays',
+            problems: [
+                {
+                    id: '27-1',
+                    title: 'Arrays Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '27-2',
+                    title: 'Arrays Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '27-3',
+                    title: 'Arrays Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '27-4',
+                    title: 'Arrays Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '27-5',
+                    title: 'Arrays Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '27-6',
+                    title: 'Arrays Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '28',
+            title: 'Sorting and Searching',
+            problems: [
+                {
+                    id: '28-1',
+                    title: 'Sorting and Searching Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '28-2',
+                    title: 'Sorting and Searching Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '28-3',
+                    title: 'Sorting and Searching Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '28-4',
+                    title: 'Sorting and Searching Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '28-5',
+                    title: 'Sorting and Searching Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '28-6',
+                    title: 'Sorting and Searching Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '29',
+            title: 'Greedy Algorithms',
+            problems: [
+                {
+                    id: '29-1',
+                    title: 'Greedy Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '29-2',
+                    title: 'Greedy Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '29-3',
+                    title: 'Greedy Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '29-4',
+                    title: 'Greedy Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '29-5',
+                    title: 'Greedy Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '29-6',
+                    title: 'Exercise 29.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '30',
+            title: 'NP Complete Problems',
+            problems: [
+                {
+                    id: '30-1',
+                    title: 'NP Complete Problems Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '30-2',
+                    title: 'NP Complete Problems Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '30-3',
+                    title: 'NP Complete Problems Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '30-4',
+                    title: 'NP Complete Problems Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '30-5',
+                    title: 'NP Complete Problems Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '30-6',
+                    title: 'Exercise 30.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '31',
+            title: 'Arrays',
+            problems: [
+                {
+                    id: '31-1',
+                    title: 'Arrays Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '31-2',
+                    title: 'Arrays Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '31-3',
+                    title: 'Arrays Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '31-4',
+                    title: 'Arrays Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '31-5',
+                    title: 'Arrays Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '31-6',
+                    title: 'Arrays Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '32',
+            title: 'Sorting and Searching',
+            problems: [
+                {
+                    id: '32-1',
+                    title: 'Sorting and Searching Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '32-2',
+                    title: 'Sorting and Searching Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '32-3',
+                    title: 'Sorting and Searching Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '32-4',
+                    title: 'Sorting and Searching Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '32-5',
+                    title: 'Sorting and Searching Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '32-6',
+                    title: 'Sorting and Searching Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '33',
+            title: 'Greedy Algorithms',
+            problems: [
+                {
+                    id: '33-1',
+                    title: 'Greedy Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '33-2',
+                    title: 'Greedy Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '33-3',
+                    title: 'Greedy Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '33-4',
+                    title: 'Greedy Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '33-5',
+                    title: 'Greedy Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '33-6',
+                    title: 'Exercise 33.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '34',
+            title: 'NP Complete Problems',
+            problems: [
+                {
+                    id: '34-1',
+                    title: 'NP Complete Problems Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '34-2',
+                    title: 'NP Complete Problems Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '34-3',
+                    title: 'NP Complete Problems Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '34-4',
+                    title: 'NP Complete Problems Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '34-5',
+                    title: 'NP Complete Problems Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '34-6',
+                    title: 'Exercise 34.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '35',
+            title: 'Arrays',
+            problems: [
+                {
+                    id: '35-1',
+                    title: 'Arrays Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '35-2',
+                    title: 'Arrays Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '35-3',
+                    title: 'Arrays Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '35-4',
+                    title: 'Arrays Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '35-5',
+                    title: 'Arrays Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '35-6',
+                    title: 'Arrays Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '36',
+            title: 'Sorting and Searching',
+            problems: [
+                {
+                    id: '36-1',
+                    title: 'Sorting and Searching Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '36-2',
+                    title: 'Sorting and Searching Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '36-3',
+                    title: 'Sorting and Searching Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '36-4',
+                    title: 'Sorting and Searching Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '36-5',
+                    title: 'Sorting and Searching Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '36-6',
+                    title: 'Sorting and Searching Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '37',
+            title: 'Greedy Algorithms',
+            problems: [
+                {
+                    id: '37-1',
+                    title: 'Greedy Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '37-2',
+                    title: 'Greedy Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '37-3',
+                    title: 'Greedy Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '37-4',
+                    title: 'Greedy Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '37-5',
+                    title: 'Greedy Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '37-6',
+                    title: 'Exercise 37.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '38',
+            title: 'NP Complete Problems',
+            problems: [
+                {
+                    id: '38-1',
+                    title: 'NP Complete Problems Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '38-2',
+                    title: 'NP Complete Problems Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '38-3',
+                    title: 'NP Complete Problems Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '38-4',
+                    title: 'NP Complete Problems Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '38-5',
+                    title: 'NP Complete Problems Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '38-6',
+                    title: 'Exercise 38.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '39',
+            title: 'Arrays',
+            summary: 'Arrays concepts and practice',
+            problems: [
+                {
+                    id: '39-1',
+                    title: 'Arrays Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '39-2',
+                    title: 'Arrays Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '39-3',
+                    title: 'Arrays Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '39-4',
+                    title: 'Arrays Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '39-5',
+                    title: 'Arrays Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '39-6',
+                    title: 'Arrays Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '40',
+            title: 'Sorting and Searching',
+            summary: 'Sorting and Searching concepts and practice',
+            problems: [
+                {
+                    id: '40-1',
+                    title: 'Sorting and Searching Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '40-2',
+                    title: 'Sorting and Searching Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '40-3',
+                    title: 'Sorting and Searching Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '40-4',
+                    title: 'Sorting and Searching Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '40-5',
+                    title: 'Sorting and Searching Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '40-6',
+                    title: 'Sorting and Searching Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '41',
+            title: 'Greedy Algorithms',
+            summary: 'Greedy Algorithms concepts and practice',
+            problems: [
+                {
+                    id: '41-1',
+                    title: 'Greedy Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '41-2',
+                    title: 'Greedy Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '41-3',
+                    title: 'Greedy Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '41-4',
+                    title: 'Greedy Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '41-5',
+                    title: 'Greedy Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+            ],
+        },
+        {
+            num: '42',
+            title: 'NP Complete Problems',
+            summary: 'NP Complete Problems concepts and practice',
+            problems: [
+                {
+                    id: '42-1',
+                    title: 'NP Complete Problems Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '42-2',
+                    title: 'NP Complete Problems Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '42-3',
+                    title: 'NP Complete Problems Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '42-4',
+                    title: 'NP Complete Problems Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '42-5',
+                    title: 'NP Complete Problems Problem 5',
+                    difficulty: 'Hard',
+                },
             ],
         },
     ],
@@ -11057,7 +15065,7 @@ const progchal: Book = {
     color: '#d97706',
     accentColor: '#fbbf24',
     description: 'A programming contest training book with 100+ problems from UVa and other OJs covering data structures, graph theory, geometry, and more.',
-    totalProblems: 65,
+    totalProblems: 101,
     tags: [
           'Competitive',
           'UVa',
@@ -11527,7 +15535,6 @@ const progchal: Book = {
         {
             num: '11',
             title: 'Sorting',
-            summary: 'Sorting concepts and practice',
             problems: [
                 {
                     id: '11-1',
@@ -11554,6 +15561,223 @@ const progchal: Book = {
                     title: 'Sorting Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '11-6',
+                    title: 'Exercise 11.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '12',
+            title: 'Sorting',
+            problems: [
+                {
+                    id: '12-1',
+                    title: 'Sorting Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '12-2',
+                    title: 'Sorting Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '12-3',
+                    title: 'Sorting Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '12-4',
+                    title: 'Sorting Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '12-5',
+                    title: 'Sorting Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '12-6',
+                    title: 'Exercise 12.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '13',
+            title: 'Sorting',
+            problems: [
+                {
+                    id: '13-1',
+                    title: 'Sorting Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '13-2',
+                    title: 'Sorting Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '13-3',
+                    title: 'Sorting Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '13-4',
+                    title: 'Sorting Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '13-5',
+                    title: 'Sorting Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '13-6',
+                    title: 'Exercise 13.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '14',
+            title: 'Sorting',
+            problems: [
+                {
+                    id: '14-1',
+                    title: 'Sorting Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '14-2',
+                    title: 'Sorting Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '14-3',
+                    title: 'Sorting Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '14-4',
+                    title: 'Sorting Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '14-5',
+                    title: 'Sorting Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '14-6',
+                    title: 'Exercise 14.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '15',
+            title: 'Sorting',
+            problems: [
+                {
+                    id: '15-1',
+                    title: 'Sorting Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '15-2',
+                    title: 'Sorting Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '15-3',
+                    title: 'Sorting Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '15-4',
+                    title: 'Sorting Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '15-5',
+                    title: 'Sorting Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '15-6',
+                    title: 'Exercise 15.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '16',
+            title: 'Sorting',
+            problems: [
+                {
+                    id: '16-1',
+                    title: 'Sorting Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '16-2',
+                    title: 'Sorting Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '16-3',
+                    title: 'Sorting Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '16-4',
+                    title: 'Sorting Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '16-5',
+                    title: 'Sorting Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '16-6',
+                    title: 'Exercise 16.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '17',
+            title: 'Sorting',
+            summary: 'Sorting concepts and practice',
+            problems: [
+                {
+                    id: '17-1',
+                    title: 'Sorting Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '17-2',
+                    title: 'Sorting Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '17-3',
+                    title: 'Sorting Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '17-4',
+                    title: 'Sorting Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '17-5',
+                    title: 'Sorting Problem 5',
+                    difficulty: 'Hard',
+                },
             ],
         },
     ],
@@ -11571,7 +15795,7 @@ const math4cs: Book = {
     color: '#e11d48',
     accentColor: '#fb7185',
     description: 'A comprehensive introduction to discrete mathematics for computer science. Covers proofs, number theory, graph theory, counting, and probability.',
-    totalProblems: 75,
+    totalProblems: 183,
     tags: [
           'Math',
           'Discrete Math',
@@ -12018,7 +16242,6 @@ const math4cs: Book = {
         {
             num: '11',
             title: 'Counting',
-            summary: 'Counting concepts and practice',
             problems: [
                 {
                     id: '11-1',
@@ -12045,12 +16268,16 @@ const math4cs: Book = {
                     title: 'Counting Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '11-6',
+                    title: 'Exercise 11.6',
+                    difficulty: 'Easy',
+                },
             ],
         },
         {
             num: '12',
             title: 'Discrete Probability',
-            summary: 'Discrete Probability concepts and practice',
             problems: [
                 {
                     id: '12-1',
@@ -12077,12 +16304,16 @@ const math4cs: Book = {
                     title: 'Discrete Probability Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '12-6',
+                    title: 'Exercise 12.6',
+                    difficulty: 'Easy',
+                },
             ],
         },
         {
             num: '13',
             title: 'Number Theory',
-            summary: 'Number Theory concepts and practice',
             problems: [
                 {
                     id: '13-1',
@@ -12109,6 +16340,647 @@ const math4cs: Book = {
                     title: 'Number Theory Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '13-6',
+                    title: 'Exercise 13.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '14',
+            title: 'Counting',
+            problems: [
+                {
+                    id: '14-1',
+                    title: 'Counting Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '14-2',
+                    title: 'Counting Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '14-3',
+                    title: 'Counting Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '14-4',
+                    title: 'Counting Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '14-5',
+                    title: 'Counting Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '14-6',
+                    title: 'Exercise 14.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '15',
+            title: 'Discrete Probability',
+            problems: [
+                {
+                    id: '15-1',
+                    title: 'Discrete Probability Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '15-2',
+                    title: 'Discrete Probability Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '15-3',
+                    title: 'Discrete Probability Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '15-4',
+                    title: 'Discrete Probability Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '15-5',
+                    title: 'Discrete Probability Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '15-6',
+                    title: 'Exercise 15.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '16',
+            title: 'Number Theory',
+            problems: [
+                {
+                    id: '16-1',
+                    title: 'Number Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '16-2',
+                    title: 'Number Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '16-3',
+                    title: 'Number Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '16-4',
+                    title: 'Number Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '16-5',
+                    title: 'Number Theory Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '16-6',
+                    title: 'Exercise 16.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '17',
+            title: 'Counting',
+            problems: [
+                {
+                    id: '17-1',
+                    title: 'Counting Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '17-2',
+                    title: 'Counting Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '17-3',
+                    title: 'Counting Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '17-4',
+                    title: 'Counting Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '17-5',
+                    title: 'Counting Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '17-6',
+                    title: 'Exercise 17.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '18',
+            title: 'Discrete Probability',
+            problems: [
+                {
+                    id: '18-1',
+                    title: 'Discrete Probability Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '18-2',
+                    title: 'Discrete Probability Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '18-3',
+                    title: 'Discrete Probability Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '18-4',
+                    title: 'Discrete Probability Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '18-5',
+                    title: 'Discrete Probability Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '18-6',
+                    title: 'Exercise 18.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '19',
+            title: 'Number Theory',
+            problems: [
+                {
+                    id: '19-1',
+                    title: 'Number Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '19-2',
+                    title: 'Number Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '19-3',
+                    title: 'Number Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '19-4',
+                    title: 'Number Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '19-5',
+                    title: 'Number Theory Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '19-6',
+                    title: 'Exercise 19.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '20',
+            title: 'Counting',
+            problems: [
+                {
+                    id: '20-1',
+                    title: 'Counting Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '20-2',
+                    title: 'Counting Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '20-3',
+                    title: 'Counting Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '20-4',
+                    title: 'Counting Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '20-5',
+                    title: 'Counting Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '20-6',
+                    title: 'Exercise 20.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '21',
+            title: 'Discrete Probability',
+            problems: [
+                {
+                    id: '21-1',
+                    title: 'Discrete Probability Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '21-2',
+                    title: 'Discrete Probability Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '21-3',
+                    title: 'Discrete Probability Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '21-4',
+                    title: 'Discrete Probability Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '21-5',
+                    title: 'Discrete Probability Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '21-6',
+                    title: 'Exercise 21.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '22',
+            title: 'Number Theory',
+            problems: [
+                {
+                    id: '22-1',
+                    title: 'Number Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '22-2',
+                    title: 'Number Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '22-3',
+                    title: 'Number Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '22-4',
+                    title: 'Number Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '22-5',
+                    title: 'Number Theory Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '22-6',
+                    title: 'Exercise 22.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '23',
+            title: 'Counting',
+            problems: [
+                {
+                    id: '23-1',
+                    title: 'Counting Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '23-2',
+                    title: 'Counting Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '23-3',
+                    title: 'Counting Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '23-4',
+                    title: 'Counting Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '23-5',
+                    title: 'Counting Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '23-6',
+                    title: 'Exercise 23.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '24',
+            title: 'Discrete Probability',
+            problems: [
+                {
+                    id: '24-1',
+                    title: 'Discrete Probability Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '24-2',
+                    title: 'Discrete Probability Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '24-3',
+                    title: 'Discrete Probability Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '24-4',
+                    title: 'Discrete Probability Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '24-5',
+                    title: 'Discrete Probability Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '24-6',
+                    title: 'Exercise 24.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '25',
+            title: 'Number Theory',
+            problems: [
+                {
+                    id: '25-1',
+                    title: 'Number Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '25-2',
+                    title: 'Number Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '25-3',
+                    title: 'Number Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '25-4',
+                    title: 'Number Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '25-5',
+                    title: 'Number Theory Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '25-6',
+                    title: 'Exercise 25.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '26',
+            title: 'Counting',
+            problems: [
+                {
+                    id: '26-1',
+                    title: 'Counting Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '26-2',
+                    title: 'Counting Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '26-3',
+                    title: 'Counting Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '26-4',
+                    title: 'Counting Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '26-5',
+                    title: 'Counting Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '26-6',
+                    title: 'Exercise 26.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '27',
+            title: 'Discrete Probability',
+            problems: [
+                {
+                    id: '27-1',
+                    title: 'Discrete Probability Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '27-2',
+                    title: 'Discrete Probability Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '27-3',
+                    title: 'Discrete Probability Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '27-4',
+                    title: 'Discrete Probability Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '27-5',
+                    title: 'Discrete Probability Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '27-6',
+                    title: 'Exercise 27.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '28',
+            title: 'Number Theory',
+            problems: [
+                {
+                    id: '28-1',
+                    title: 'Number Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '28-2',
+                    title: 'Number Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '28-3',
+                    title: 'Number Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '28-4',
+                    title: 'Number Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '28-5',
+                    title: 'Number Theory Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '28-6',
+                    title: 'Exercise 28.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '29',
+            title: 'Counting',
+            summary: 'Counting concepts and practice',
+            problems: [
+                {
+                    id: '29-1',
+                    title: 'Counting Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '29-2',
+                    title: 'Counting Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '29-3',
+                    title: 'Counting Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '29-4',
+                    title: 'Counting Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '29-5',
+                    title: 'Counting Problem 5',
+                    difficulty: 'Hard',
+                },
+            ],
+        },
+        {
+            num: '30',
+            title: 'Discrete Probability',
+            summary: 'Discrete Probability concepts and practice',
+            problems: [
+                {
+                    id: '30-1',
+                    title: 'Discrete Probability Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '30-2',
+                    title: 'Discrete Probability Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '30-3',
+                    title: 'Discrete Probability Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '30-4',
+                    title: 'Discrete Probability Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '30-5',
+                    title: 'Discrete Probability Problem 5',
+                    difficulty: 'Hard',
+                },
+            ],
+        },
+        {
+            num: '31',
+            title: 'Number Theory',
+            summary: 'Number Theory concepts and practice',
+            problems: [
+                {
+                    id: '31-1',
+                    title: 'Number Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '31-2',
+                    title: 'Number Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '31-3',
+                    title: 'Number Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '31-4',
+                    title: 'Number Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '31-5',
+                    title: 'Number Theory Problem 5',
+                    difficulty: 'Hard',
+                },
             ],
         },
     ],
@@ -12126,7 +16998,7 @@ const setslogic: Book = {
     color: '#0284c7',
     accentColor: '#38bdf8',
     description: 'An accessible introduction to the mathematical foundations of computing: set theory, logic, induction, relations, functions, and counting.',
-    totalProblems: 58,
+    totalProblems: 130,
     tags: [
           'Math',
           'Logic',
@@ -12487,7 +17359,6 @@ const setslogic: Book = {
         {
             num: '9',
             title: 'Functions',
-            summary: 'Functions concepts and practice',
             problems: [
                 {
                     id: '9-1',
@@ -12514,12 +17385,16 @@ const setslogic: Book = {
                     title: 'Functions Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '9-6',
+                    title: 'Exercise 9.6',
+                    difficulty: 'Easy',
+                },
             ],
         },
         {
             num: '10',
             title: 'Mathematical Induction',
-            summary: 'Mathematical Induction concepts and practice',
             problems: [
                 {
                     id: '10-1',
@@ -12546,6 +17421,435 @@ const setslogic: Book = {
                     title: 'Mathematical Induction Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '10-6',
+                    title: 'Exercise 10.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '11',
+            title: 'Functions',
+            problems: [
+                {
+                    id: '11-1',
+                    title: 'Functions Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '11-2',
+                    title: 'Functions Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '11-3',
+                    title: 'Functions Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '11-4',
+                    title: 'Functions Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '11-5',
+                    title: 'Functions Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '11-6',
+                    title: 'Exercise 11.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '12',
+            title: 'Mathematical Induction',
+            problems: [
+                {
+                    id: '12-1',
+                    title: 'Mathematical Induction Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '12-2',
+                    title: 'Mathematical Induction Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '12-3',
+                    title: 'Mathematical Induction Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '12-4',
+                    title: 'Mathematical Induction Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '12-5',
+                    title: 'Mathematical Induction Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '12-6',
+                    title: 'Exercise 12.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '13',
+            title: 'Functions',
+            problems: [
+                {
+                    id: '13-1',
+                    title: 'Functions Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '13-2',
+                    title: 'Functions Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '13-3',
+                    title: 'Functions Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '13-4',
+                    title: 'Functions Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '13-5',
+                    title: 'Functions Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '13-6',
+                    title: 'Exercise 13.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '14',
+            title: 'Mathematical Induction',
+            problems: [
+                {
+                    id: '14-1',
+                    title: 'Mathematical Induction Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '14-2',
+                    title: 'Mathematical Induction Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '14-3',
+                    title: 'Mathematical Induction Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '14-4',
+                    title: 'Mathematical Induction Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '14-5',
+                    title: 'Mathematical Induction Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '14-6',
+                    title: 'Exercise 14.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '15',
+            title: 'Functions',
+            problems: [
+                {
+                    id: '15-1',
+                    title: 'Functions Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '15-2',
+                    title: 'Functions Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '15-3',
+                    title: 'Functions Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '15-4',
+                    title: 'Functions Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '15-5',
+                    title: 'Functions Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '15-6',
+                    title: 'Exercise 15.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '16',
+            title: 'Mathematical Induction',
+            problems: [
+                {
+                    id: '16-1',
+                    title: 'Mathematical Induction Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '16-2',
+                    title: 'Mathematical Induction Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '16-3',
+                    title: 'Mathematical Induction Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '16-4',
+                    title: 'Mathematical Induction Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '16-5',
+                    title: 'Mathematical Induction Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '16-6',
+                    title: 'Exercise 16.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '17',
+            title: 'Functions',
+            problems: [
+                {
+                    id: '17-1',
+                    title: 'Functions Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '17-2',
+                    title: 'Functions Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '17-3',
+                    title: 'Functions Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '17-4',
+                    title: 'Functions Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '17-5',
+                    title: 'Functions Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '17-6',
+                    title: 'Exercise 17.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '18',
+            title: 'Mathematical Induction',
+            problems: [
+                {
+                    id: '18-1',
+                    title: 'Mathematical Induction Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '18-2',
+                    title: 'Mathematical Induction Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '18-3',
+                    title: 'Mathematical Induction Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '18-4',
+                    title: 'Mathematical Induction Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '18-5',
+                    title: 'Mathematical Induction Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '18-6',
+                    title: 'Exercise 18.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '19',
+            title: 'Functions',
+            problems: [
+                {
+                    id: '19-1',
+                    title: 'Functions Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '19-2',
+                    title: 'Functions Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '19-3',
+                    title: 'Functions Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '19-4',
+                    title: 'Functions Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '19-5',
+                    title: 'Functions Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '19-6',
+                    title: 'Exercise 19.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '20',
+            title: 'Mathematical Induction',
+            problems: [
+                {
+                    id: '20-1',
+                    title: 'Mathematical Induction Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '20-2',
+                    title: 'Mathematical Induction Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '20-3',
+                    title: 'Mathematical Induction Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '20-4',
+                    title: 'Mathematical Induction Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '20-5',
+                    title: 'Mathematical Induction Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '20-6',
+                    title: 'Exercise 20.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '21',
+            title: 'Functions',
+            summary: 'Functions concepts and practice',
+            problems: [
+                {
+                    id: '21-1',
+                    title: 'Functions Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '21-2',
+                    title: 'Functions Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '21-3',
+                    title: 'Functions Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '21-4',
+                    title: 'Functions Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '21-5',
+                    title: 'Functions Problem 5',
+                    difficulty: 'Hard',
+                },
+            ],
+        },
+        {
+            num: '22',
+            title: 'Mathematical Induction',
+            summary: 'Mathematical Induction concepts and practice',
+            problems: [
+                {
+                    id: '22-1',
+                    title: 'Mathematical Induction Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '22-2',
+                    title: 'Mathematical Induction Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '22-3',
+                    title: 'Mathematical Induction Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '22-4',
+                    title: 'Mathematical Induction Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '22-5',
+                    title: 'Mathematical Induction Problem 5',
+                    difficulty: 'Hard',
+                },
             ],
         },
     ],
@@ -12561,7 +17865,7 @@ const algodaily: Book = {
     color: '#7c3aed',
     accentColor: '#a78bfa',
     description: 'A curated collection of algorithmic and data structure problems with comprehensive explanations. Covers arrays, strings, trees, dynamic programming, and more.',
-    totalProblems: 71,
+    totalProblems: 143,
     tags: [
           'Interviews',
           'Algorithms',
@@ -13034,7 +18338,6 @@ const algodaily: Book = {
         {
             num: '11',
             title: 'Advanced Sorting',
-            summary: 'Advanced Sorting concepts and practice',
             problems: [
                 {
                     id: '11-1',
@@ -13061,12 +18364,16 @@ const algodaily: Book = {
                     title: 'Advanced Sorting Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '11-6',
+                    title: 'Exercise 11.6',
+                    difficulty: 'Easy',
+                },
             ],
         },
         {
             num: '12',
             title: 'Dynamic Programming',
-            summary: 'Dynamic Programming concepts and practice',
             problems: [
                 {
                     id: '12-1',
@@ -13100,6 +18407,435 @@ const algodaily: Book = {
                 },
             ],
         },
+        {
+            num: '13',
+            title: 'Advanced Sorting',
+            problems: [
+                {
+                    id: '13-1',
+                    title: 'Advanced Sorting Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '13-2',
+                    title: 'Advanced Sorting Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '13-3',
+                    title: 'Advanced Sorting Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '13-4',
+                    title: 'Advanced Sorting Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '13-5',
+                    title: 'Advanced Sorting Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '13-6',
+                    title: 'Exercise 13.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '14',
+            title: 'Dynamic Programming',
+            problems: [
+                {
+                    id: '14-1',
+                    title: 'Dynamic Programming Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '14-2',
+                    title: 'Dynamic Programming Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '14-3',
+                    title: 'Dynamic Programming Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '14-4',
+                    title: 'Dynamic Programming Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '14-5',
+                    title: 'Dynamic Programming Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '14-6',
+                    title: 'Dynamic Programming Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '15',
+            title: 'Advanced Sorting',
+            problems: [
+                {
+                    id: '15-1',
+                    title: 'Advanced Sorting Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '15-2',
+                    title: 'Advanced Sorting Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '15-3',
+                    title: 'Advanced Sorting Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '15-4',
+                    title: 'Advanced Sorting Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '15-5',
+                    title: 'Advanced Sorting Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '15-6',
+                    title: 'Exercise 15.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '16',
+            title: 'Dynamic Programming',
+            problems: [
+                {
+                    id: '16-1',
+                    title: 'Dynamic Programming Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '16-2',
+                    title: 'Dynamic Programming Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '16-3',
+                    title: 'Dynamic Programming Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '16-4',
+                    title: 'Dynamic Programming Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '16-5',
+                    title: 'Dynamic Programming Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '16-6',
+                    title: 'Dynamic Programming Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '17',
+            title: 'Advanced Sorting',
+            problems: [
+                {
+                    id: '17-1',
+                    title: 'Advanced Sorting Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '17-2',
+                    title: 'Advanced Sorting Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '17-3',
+                    title: 'Advanced Sorting Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '17-4',
+                    title: 'Advanced Sorting Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '17-5',
+                    title: 'Advanced Sorting Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '17-6',
+                    title: 'Exercise 17.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '18',
+            title: 'Dynamic Programming',
+            problems: [
+                {
+                    id: '18-1',
+                    title: 'Dynamic Programming Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '18-2',
+                    title: 'Dynamic Programming Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '18-3',
+                    title: 'Dynamic Programming Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '18-4',
+                    title: 'Dynamic Programming Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '18-5',
+                    title: 'Dynamic Programming Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '18-6',
+                    title: 'Dynamic Programming Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '19',
+            title: 'Advanced Sorting',
+            problems: [
+                {
+                    id: '19-1',
+                    title: 'Advanced Sorting Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '19-2',
+                    title: 'Advanced Sorting Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '19-3',
+                    title: 'Advanced Sorting Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '19-4',
+                    title: 'Advanced Sorting Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '19-5',
+                    title: 'Advanced Sorting Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '19-6',
+                    title: 'Exercise 19.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '20',
+            title: 'Dynamic Programming',
+            problems: [
+                {
+                    id: '20-1',
+                    title: 'Dynamic Programming Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '20-2',
+                    title: 'Dynamic Programming Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '20-3',
+                    title: 'Dynamic Programming Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '20-4',
+                    title: 'Dynamic Programming Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '20-5',
+                    title: 'Dynamic Programming Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '20-6',
+                    title: 'Dynamic Programming Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '21',
+            title: 'Advanced Sorting',
+            problems: [
+                {
+                    id: '21-1',
+                    title: 'Advanced Sorting Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '21-2',
+                    title: 'Advanced Sorting Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '21-3',
+                    title: 'Advanced Sorting Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '21-4',
+                    title: 'Advanced Sorting Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '21-5',
+                    title: 'Advanced Sorting Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '21-6',
+                    title: 'Exercise 21.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '22',
+            title: 'Dynamic Programming',
+            problems: [
+                {
+                    id: '22-1',
+                    title: 'Dynamic Programming Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '22-2',
+                    title: 'Dynamic Programming Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '22-3',
+                    title: 'Dynamic Programming Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '22-4',
+                    title: 'Dynamic Programming Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '22-5',
+                    title: 'Dynamic Programming Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '22-6',
+                    title: 'Dynamic Programming Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '23',
+            title: 'Advanced Sorting',
+            summary: 'Advanced Sorting concepts and practice',
+            problems: [
+                {
+                    id: '23-1',
+                    title: 'Advanced Sorting Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '23-2',
+                    title: 'Advanced Sorting Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '23-3',
+                    title: 'Advanced Sorting Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '23-4',
+                    title: 'Advanced Sorting Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '23-5',
+                    title: 'Advanced Sorting Problem 5',
+                    difficulty: 'Hard',
+                },
+            ],
+        },
+        {
+            num: '24',
+            title: 'Dynamic Programming',
+            summary: 'Dynamic Programming concepts and practice',
+            problems: [
+                {
+                    id: '24-1',
+                    title: 'Dynamic Programming Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '24-2',
+                    title: 'Dynamic Programming Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '24-3',
+                    title: 'Dynamic Programming Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '24-4',
+                    title: 'Dynamic Programming Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '24-5',
+                    title: 'Dynamic Programming Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '24-6',
+                    title: 'Dynamic Programming Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
     ],
 }
 
@@ -13115,7 +18851,7 @@ const guidetocp: Book = {
     color: '#4d7c0f',
     accentColor: '#84cc16',
     description: 'A concise yet comprehensive guide to competitive programming. Covers essential algorithms, optimization techniques, and contest strategies.',
-    totalProblems: 71,
+    totalProblems: 143,
     tags: [
           'Competitive',
           'Algorithms',
@@ -13561,7 +19297,6 @@ const guidetocp: Book = {
         {
             num: '11',
             title: 'Number Theory',
-            summary: 'Number Theory concepts and practice',
             problems: [
                 {
                     id: '11-1',
@@ -13598,7 +19333,6 @@ const guidetocp: Book = {
         {
             num: '12',
             title: 'Game Theory',
-            summary: 'Game Theory concepts and practice',
             problems: [
                 {
                     id: '12-1',
@@ -13625,6 +19359,440 @@ const guidetocp: Book = {
                     title: 'Game Theory Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '12-6',
+                    title: 'Exercise 12.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '13',
+            title: 'Number Theory',
+            problems: [
+                {
+                    id: '13-1',
+                    title: 'Number Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '13-2',
+                    title: 'Number Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '13-3',
+                    title: 'Number Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '13-4',
+                    title: 'Number Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '13-5',
+                    title: 'Number Theory Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '13-6',
+                    title: 'Number Theory Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '14',
+            title: 'Game Theory',
+            problems: [
+                {
+                    id: '14-1',
+                    title: 'Game Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '14-2',
+                    title: 'Game Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '14-3',
+                    title: 'Game Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '14-4',
+                    title: 'Game Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '14-5',
+                    title: 'Game Theory Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '14-6',
+                    title: 'Exercise 14.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '15',
+            title: 'Number Theory',
+            problems: [
+                {
+                    id: '15-1',
+                    title: 'Number Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '15-2',
+                    title: 'Number Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '15-3',
+                    title: 'Number Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '15-4',
+                    title: 'Number Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '15-5',
+                    title: 'Number Theory Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '15-6',
+                    title: 'Number Theory Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '16',
+            title: 'Game Theory',
+            problems: [
+                {
+                    id: '16-1',
+                    title: 'Game Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '16-2',
+                    title: 'Game Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '16-3',
+                    title: 'Game Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '16-4',
+                    title: 'Game Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '16-5',
+                    title: 'Game Theory Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '16-6',
+                    title: 'Exercise 16.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '17',
+            title: 'Number Theory',
+            problems: [
+                {
+                    id: '17-1',
+                    title: 'Number Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '17-2',
+                    title: 'Number Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '17-3',
+                    title: 'Number Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '17-4',
+                    title: 'Number Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '17-5',
+                    title: 'Number Theory Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '17-6',
+                    title: 'Number Theory Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '18',
+            title: 'Game Theory',
+            problems: [
+                {
+                    id: '18-1',
+                    title: 'Game Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '18-2',
+                    title: 'Game Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '18-3',
+                    title: 'Game Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '18-4',
+                    title: 'Game Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '18-5',
+                    title: 'Game Theory Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '18-6',
+                    title: 'Exercise 18.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '19',
+            title: 'Number Theory',
+            problems: [
+                {
+                    id: '19-1',
+                    title: 'Number Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '19-2',
+                    title: 'Number Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '19-3',
+                    title: 'Number Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '19-4',
+                    title: 'Number Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '19-5',
+                    title: 'Number Theory Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '19-6',
+                    title: 'Number Theory Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '20',
+            title: 'Game Theory',
+            problems: [
+                {
+                    id: '20-1',
+                    title: 'Game Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '20-2',
+                    title: 'Game Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '20-3',
+                    title: 'Game Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '20-4',
+                    title: 'Game Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '20-5',
+                    title: 'Game Theory Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '20-6',
+                    title: 'Exercise 20.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '21',
+            title: 'Number Theory',
+            problems: [
+                {
+                    id: '21-1',
+                    title: 'Number Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '21-2',
+                    title: 'Number Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '21-3',
+                    title: 'Number Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '21-4',
+                    title: 'Number Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '21-5',
+                    title: 'Number Theory Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '21-6',
+                    title: 'Number Theory Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '22',
+            title: 'Game Theory',
+            problems: [
+                {
+                    id: '22-1',
+                    title: 'Game Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '22-2',
+                    title: 'Game Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '22-3',
+                    title: 'Game Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '22-4',
+                    title: 'Game Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '22-5',
+                    title: 'Game Theory Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '22-6',
+                    title: 'Exercise 22.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '23',
+            title: 'Number Theory',
+            summary: 'Number Theory concepts and practice',
+            problems: [
+                {
+                    id: '23-1',
+                    title: 'Number Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '23-2',
+                    title: 'Number Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '23-3',
+                    title: 'Number Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '23-4',
+                    title: 'Number Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '23-5',
+                    title: 'Number Theory Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '23-6',
+                    title: 'Number Theory Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '24',
+            title: 'Game Theory',
+            summary: 'Game Theory concepts and practice',
+            problems: [
+                {
+                    id: '24-1',
+                    title: 'Game Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '24-2',
+                    title: 'Game Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '24-3',
+                    title: 'Game Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '24-4',
+                    title: 'Game Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '24-5',
+                    title: 'Game Theory Problem 5',
+                    difficulty: 'Hard',
+                },
             ],
         },
     ],
@@ -13640,7 +19808,7 @@ const gamam: Book = {
     color: '#be185d',
     accentColor: '#f43f5e',
     description: 'A focused preparation guide for technical interviews at Google, Apple, Meta, Amazon, and Microsoft. Features curated problems and problem-solving frameworks.',
-    totalProblems: 54,
+    totalProblems: 90,
     tags: [
           'Interviews',
           'FAANG',
@@ -14005,7 +20173,6 @@ const gamam: Book = {
         {
             num: '9',
             title: 'Behavioral Questions',
-            summary: 'Behavioral Questions concepts and practice',
             problems: [
                 {
                     id: '9-1',
@@ -14039,6 +20206,223 @@ const gamam: Book = {
                 },
             ],
         },
+        {
+            num: '10',
+            title: 'Behavioral Questions',
+            problems: [
+                {
+                    id: '10-1',
+                    title: 'Behavioral Questions Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '10-2',
+                    title: 'Behavioral Questions Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '10-3',
+                    title: 'Behavioral Questions Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '10-4',
+                    title: 'Behavioral Questions Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '10-5',
+                    title: 'Behavioral Questions Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '10-6',
+                    title: 'Behavioral Questions Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '11',
+            title: 'Behavioral Questions',
+            problems: [
+                {
+                    id: '11-1',
+                    title: 'Behavioral Questions Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '11-2',
+                    title: 'Behavioral Questions Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '11-3',
+                    title: 'Behavioral Questions Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '11-4',
+                    title: 'Behavioral Questions Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '11-5',
+                    title: 'Behavioral Questions Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '11-6',
+                    title: 'Behavioral Questions Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '12',
+            title: 'Behavioral Questions',
+            problems: [
+                {
+                    id: '12-1',
+                    title: 'Behavioral Questions Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '12-2',
+                    title: 'Behavioral Questions Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '12-3',
+                    title: 'Behavioral Questions Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '12-4',
+                    title: 'Behavioral Questions Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '12-5',
+                    title: 'Behavioral Questions Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '12-6',
+                    title: 'Behavioral Questions Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '13',
+            title: 'Behavioral Questions',
+            problems: [
+                {
+                    id: '13-1',
+                    title: 'Behavioral Questions Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '13-2',
+                    title: 'Behavioral Questions Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '13-3',
+                    title: 'Behavioral Questions Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '13-4',
+                    title: 'Behavioral Questions Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '13-5',
+                    title: 'Behavioral Questions Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '13-6',
+                    title: 'Behavioral Questions Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '14',
+            title: 'Behavioral Questions',
+            problems: [
+                {
+                    id: '14-1',
+                    title: 'Behavioral Questions Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '14-2',
+                    title: 'Behavioral Questions Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '14-3',
+                    title: 'Behavioral Questions Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '14-4',
+                    title: 'Behavioral Questions Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '14-5',
+                    title: 'Behavioral Questions Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '14-6',
+                    title: 'Behavioral Questions Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '15',
+            title: 'Behavioral Questions',
+            summary: 'Behavioral Questions concepts and practice',
+            problems: [
+                {
+                    id: '15-1',
+                    title: 'Behavioral Questions Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '15-2',
+                    title: 'Behavioral Questions Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '15-3',
+                    title: 'Behavioral Questions Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '15-4',
+                    title: 'Behavioral Questions Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '15-5',
+                    title: 'Behavioral Questions Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '15-6',
+                    title: 'Behavioral Questions Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
     ],
 }
 
@@ -14054,7 +20438,7 @@ const progintervexp: Book = {
     color: '#4338ca',
     accentColor: '#818cf8',
     description: 'A classic guide to programming interviews covering preparation strategies, problem-solving techniques, and fundamental CS topics with realistic interview problems.',
-    totalProblems: 70,
+    totalProblems: 142,
     tags: [
           'Interviews',
           'Fundamentals',
@@ -14502,7 +20886,6 @@ const progintervexp: Book = {
         {
             num: '11',
             title: 'Databases',
-            summary: 'Databases concepts and practice',
             problems: [
                 {
                     id: '11-1',
@@ -14529,12 +20912,16 @@ const progintervexp: Book = {
                     title: 'Databases Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '11-6',
+                    title: 'Exercise 11.6',
+                    difficulty: 'Easy',
+                },
             ],
         },
         {
             num: '12',
             title: 'Networking',
-            summary: 'Networking concepts and practice',
             problems: [
                 {
                     id: '12-1',
@@ -14561,6 +20948,435 @@ const progintervexp: Book = {
                     title: 'Networking Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '12-6',
+                    title: 'Exercise 12.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '13',
+            title: 'Databases',
+            problems: [
+                {
+                    id: '13-1',
+                    title: 'Databases Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '13-2',
+                    title: 'Databases Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '13-3',
+                    title: 'Databases Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '13-4',
+                    title: 'Databases Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '13-5',
+                    title: 'Databases Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '13-6',
+                    title: 'Exercise 13.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '14',
+            title: 'Networking',
+            problems: [
+                {
+                    id: '14-1',
+                    title: 'Networking Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '14-2',
+                    title: 'Networking Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '14-3',
+                    title: 'Networking Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '14-4',
+                    title: 'Networking Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '14-5',
+                    title: 'Networking Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '14-6',
+                    title: 'Exercise 14.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '15',
+            title: 'Databases',
+            problems: [
+                {
+                    id: '15-1',
+                    title: 'Databases Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '15-2',
+                    title: 'Databases Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '15-3',
+                    title: 'Databases Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '15-4',
+                    title: 'Databases Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '15-5',
+                    title: 'Databases Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '15-6',
+                    title: 'Exercise 15.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '16',
+            title: 'Networking',
+            problems: [
+                {
+                    id: '16-1',
+                    title: 'Networking Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '16-2',
+                    title: 'Networking Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '16-3',
+                    title: 'Networking Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '16-4',
+                    title: 'Networking Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '16-5',
+                    title: 'Networking Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '16-6',
+                    title: 'Exercise 16.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '17',
+            title: 'Databases',
+            problems: [
+                {
+                    id: '17-1',
+                    title: 'Databases Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '17-2',
+                    title: 'Databases Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '17-3',
+                    title: 'Databases Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '17-4',
+                    title: 'Databases Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '17-5',
+                    title: 'Databases Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '17-6',
+                    title: 'Exercise 17.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '18',
+            title: 'Networking',
+            problems: [
+                {
+                    id: '18-1',
+                    title: 'Networking Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '18-2',
+                    title: 'Networking Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '18-3',
+                    title: 'Networking Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '18-4',
+                    title: 'Networking Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '18-5',
+                    title: 'Networking Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '18-6',
+                    title: 'Exercise 18.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '19',
+            title: 'Databases',
+            problems: [
+                {
+                    id: '19-1',
+                    title: 'Databases Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '19-2',
+                    title: 'Databases Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '19-3',
+                    title: 'Databases Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '19-4',
+                    title: 'Databases Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '19-5',
+                    title: 'Databases Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '19-6',
+                    title: 'Exercise 19.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '20',
+            title: 'Networking',
+            problems: [
+                {
+                    id: '20-1',
+                    title: 'Networking Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '20-2',
+                    title: 'Networking Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '20-3',
+                    title: 'Networking Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '20-4',
+                    title: 'Networking Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '20-5',
+                    title: 'Networking Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '20-6',
+                    title: 'Exercise 20.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '21',
+            title: 'Databases',
+            problems: [
+                {
+                    id: '21-1',
+                    title: 'Databases Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '21-2',
+                    title: 'Databases Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '21-3',
+                    title: 'Databases Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '21-4',
+                    title: 'Databases Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '21-5',
+                    title: 'Databases Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '21-6',
+                    title: 'Exercise 21.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '22',
+            title: 'Networking',
+            problems: [
+                {
+                    id: '22-1',
+                    title: 'Networking Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '22-2',
+                    title: 'Networking Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '22-3',
+                    title: 'Networking Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '22-4',
+                    title: 'Networking Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '22-5',
+                    title: 'Networking Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '22-6',
+                    title: 'Exercise 22.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '23',
+            title: 'Databases',
+            summary: 'Databases concepts and practice',
+            problems: [
+                {
+                    id: '23-1',
+                    title: 'Databases Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '23-2',
+                    title: 'Databases Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '23-3',
+                    title: 'Databases Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '23-4',
+                    title: 'Databases Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '23-5',
+                    title: 'Databases Problem 5',
+                    difficulty: 'Hard',
+                },
+            ],
+        },
+        {
+            num: '24',
+            title: 'Networking',
+            summary: 'Networking concepts and practice',
+            problems: [
+                {
+                    id: '24-1',
+                    title: 'Networking Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '24-2',
+                    title: 'Networking Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '24-3',
+                    title: 'Networking Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '24-4',
+                    title: 'Networking Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '24-5',
+                    title: 'Networking Problem 5',
+                    difficulty: 'Hard',
+                },
             ],
         },
     ],
@@ -14578,7 +21394,7 @@ const advdsalgo: Book = {
     color: '#ea580c',
     accentColor: '#fb923c',
     description: 'An in-depth exploration of advanced data structures and algorithms: spatial data structures, heuristics, optimization, and specialized DS.',
-    totalProblems: 58,
+    totalProblems: 130,
     tags: [
           'Advanced',
           'Spatial',
@@ -14944,7 +21760,6 @@ const advdsalgo: Book = {
         {
             num: '9',
             title: 'Approximation',
-            summary: 'Approximation concepts and practice',
             problems: [
                 {
                     id: '9-1',
@@ -14971,12 +21786,16 @@ const advdsalgo: Book = {
                     title: 'Approximation Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '9-6',
+                    title: 'Exercise 9.6',
+                    difficulty: 'Easy',
+                },
             ],
         },
         {
             num: '10',
             title: 'Randomized Algorithms',
-            summary: 'Randomized Algorithms concepts and practice',
             problems: [
                 {
                     id: '10-1',
@@ -15000,6 +21819,435 @@ const advdsalgo: Book = {
                 },
                 {
                     id: '10-5',
+                    title: 'Randomized Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '10-6',
+                    title: 'Exercise 10.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '11',
+            title: 'Approximation',
+            problems: [
+                {
+                    id: '11-1',
+                    title: 'Approximation Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '11-2',
+                    title: 'Approximation Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '11-3',
+                    title: 'Approximation Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '11-4',
+                    title: 'Approximation Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '11-5',
+                    title: 'Approximation Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '11-6',
+                    title: 'Exercise 11.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '12',
+            title: 'Randomized Algorithms',
+            problems: [
+                {
+                    id: '12-1',
+                    title: 'Randomized Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '12-2',
+                    title: 'Randomized Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '12-3',
+                    title: 'Randomized Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '12-4',
+                    title: 'Randomized Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '12-5',
+                    title: 'Randomized Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '12-6',
+                    title: 'Exercise 12.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '13',
+            title: 'Approximation',
+            problems: [
+                {
+                    id: '13-1',
+                    title: 'Approximation Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '13-2',
+                    title: 'Approximation Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '13-3',
+                    title: 'Approximation Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '13-4',
+                    title: 'Approximation Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '13-5',
+                    title: 'Approximation Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '13-6',
+                    title: 'Exercise 13.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '14',
+            title: 'Randomized Algorithms',
+            problems: [
+                {
+                    id: '14-1',
+                    title: 'Randomized Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '14-2',
+                    title: 'Randomized Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '14-3',
+                    title: 'Randomized Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '14-4',
+                    title: 'Randomized Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '14-5',
+                    title: 'Randomized Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '14-6',
+                    title: 'Exercise 14.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '15',
+            title: 'Approximation',
+            problems: [
+                {
+                    id: '15-1',
+                    title: 'Approximation Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '15-2',
+                    title: 'Approximation Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '15-3',
+                    title: 'Approximation Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '15-4',
+                    title: 'Approximation Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '15-5',
+                    title: 'Approximation Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '15-6',
+                    title: 'Exercise 15.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '16',
+            title: 'Randomized Algorithms',
+            problems: [
+                {
+                    id: '16-1',
+                    title: 'Randomized Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '16-2',
+                    title: 'Randomized Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '16-3',
+                    title: 'Randomized Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '16-4',
+                    title: 'Randomized Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '16-5',
+                    title: 'Randomized Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '16-6',
+                    title: 'Exercise 16.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '17',
+            title: 'Approximation',
+            problems: [
+                {
+                    id: '17-1',
+                    title: 'Approximation Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '17-2',
+                    title: 'Approximation Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '17-3',
+                    title: 'Approximation Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '17-4',
+                    title: 'Approximation Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '17-5',
+                    title: 'Approximation Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '17-6',
+                    title: 'Exercise 17.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '18',
+            title: 'Randomized Algorithms',
+            problems: [
+                {
+                    id: '18-1',
+                    title: 'Randomized Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '18-2',
+                    title: 'Randomized Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '18-3',
+                    title: 'Randomized Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '18-4',
+                    title: 'Randomized Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '18-5',
+                    title: 'Randomized Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '18-6',
+                    title: 'Exercise 18.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '19',
+            title: 'Approximation',
+            problems: [
+                {
+                    id: '19-1',
+                    title: 'Approximation Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '19-2',
+                    title: 'Approximation Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '19-3',
+                    title: 'Approximation Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '19-4',
+                    title: 'Approximation Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '19-5',
+                    title: 'Approximation Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '19-6',
+                    title: 'Exercise 19.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '20',
+            title: 'Randomized Algorithms',
+            problems: [
+                {
+                    id: '20-1',
+                    title: 'Randomized Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '20-2',
+                    title: 'Randomized Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '20-3',
+                    title: 'Randomized Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '20-4',
+                    title: 'Randomized Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '20-5',
+                    title: 'Randomized Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '20-6',
+                    title: 'Exercise 20.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '21',
+            title: 'Approximation',
+            summary: 'Approximation concepts and practice',
+            problems: [
+                {
+                    id: '21-1',
+                    title: 'Approximation Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '21-2',
+                    title: 'Approximation Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '21-3',
+                    title: 'Approximation Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '21-4',
+                    title: 'Approximation Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '21-5',
+                    title: 'Approximation Problem 5',
+                    difficulty: 'Hard',
+                },
+            ],
+        },
+        {
+            num: '22',
+            title: 'Randomized Algorithms',
+            summary: 'Randomized Algorithms concepts and practice',
+            problems: [
+                {
+                    id: '22-1',
+                    title: 'Randomized Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '22-2',
+                    title: 'Randomized Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '22-3',
+                    title: 'Randomized Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '22-4',
+                    title: 'Randomized Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '22-5',
                     title: 'Randomized Algorithms Problem 5',
                     difficulty: 'Hard',
                 },

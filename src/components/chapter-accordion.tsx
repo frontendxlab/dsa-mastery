@@ -22,7 +22,7 @@ const DIFF_COLOR: Record<string, string> = {
 const PLATFORM_COLOR: Record<string, string> = {
   LeetCode: '#f97316', Codeforces: '#3b82f6', CSES: '#10b981',
   UVa: '#8b5cf6', Kattis: '#06b6d4', SPOJ: '#ec4899',
-  AtCoder: '#f59e0b', HackerRank: '#22c55e',
+  AtCoder: '#f59e0b', HackerRank: '#22c55e', FrontendCore: '#6366f1',
 }
 
 interface ChapterItemData {
