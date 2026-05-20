@@ -12,6 +12,18 @@
       "text": "Chapter 6: Circle Problems"
     },
     {
+      "type": "text",
+      "content": "**\ud83c\udfaf Learning Objectives \u2014 By the end of this chapter, you will be able to:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Calculate circumference, area, and arc properties from radius and diameter",
+        "Detect circle-circle and circle-line intersections with geometric reasoning",
+        "Apply circle geometry to computational problems (minimum enclosing circle, circle packing)"
+      ]
+    },
+    {
       "type": "heading",
       "level": 2,
       "text": "1. INTRODUCTION"
@@ -62,29 +74,21 @@
       "text": "2.1 Circle Equation"
     },
     {
-      "type": "text",
-      "content": "$$ Center: (cx, cy) $$\n$$ Radius: r $$\n$$ Equation: (x - cx)^2 + (y - cy)^2 = r^2 $$"
+      "type": "code",
+      "lang": "",
+      "code": "Center: (cx, cy)\nRadius: r\nEquation: (x - cx)\u00b2 + (y - cy)\u00b2 = r\u00b2",
+      "caption": null
     },
     {
       "type": "text",
       "content": "A point (px, py) lies:"
     },
     {
-      "type": "hint_card",
-      "id": "geo-hint-precision",
-      "question": "Avoid Square Roots",
-      "answer": "Always compare squared distances: $$\\text{dist}^2 = (x_1 - x_2)^2 + (y_1 - y_2)^2$$ vs $$r^2$$. This avoids floating-point sqrt entirely and works flawlessly with integers. Only take sqrt when you absolutely need the actual distance value."
-    },
-    {
-      "type": "interactive_diagram",
-      "diagram": "circle-point-test"
-    },
-    {
       "type": "list",
       "items": [
-        "**Inside** the circle if `$(px - cx)^2 + (py - cy)^2 < r^2$`",
-        "**On** the circle if `$(px - cx)^2 + (py - cy)^2 = r^2$`",
-        "**Outside** if `$(px - cy)^2 + (py - cy)^2 > r^2$`"
+        "**Inside** the circle if `(px - cx)\u00b2 + (py - cy)\u00b2 < r\u00b2`",
+        "**On** the circle if `(px - cx)\u00b2 + (py - cy)\u00b2 == r\u00b2`",
+        "**Outside** if `(px - cx)\u00b2 + (py - cy)\u00b2 > r\u00b2`"
       ]
     },
     {
@@ -94,21 +98,13 @@
     },
     {
       "type": "text",
-      "content": "Two circles intersect if the distance between centers $\\le$ sum of radii AND $\\ge |r_1 - r_2|$."
+      "content": "Two circles intersect if the distance between centers \u2264 sum of radii AND \u2265 |r\u2081 - r\u2082|."
     },
     {
-      "type": "interactive_diagram",
-      "diagram": "circle-intersection"
-    },
-    {
-      "type": "hint_card",
-      "id": "geo-hint-tangent",
-      "question": "Tangent vs Intersection",
-      "answer": "Two circles that just touch (tangent) have exactly one point in common. In integer problems, tangent circles are often considered 'not overlapping' (no area overlap). Read the problem statement carefully \u2014 some count tangent as intersection, others don't."
-    },
-    {
-      "type": "text",
-      "content": "$$ d = sqrt((cx1 - cx2)^2 + (cy1 - cy2)^2) $$\n$$ Conditions: $$\n$$ d > r1 + r2      \\to  no intersection (separate) $$\n$$ d == r1 + r2     \\to  tangent externally $$\n$$ d < |r1 - r2|    \\to  one inside the other $$\n$$ d == |r1 - r2|   \\to  tangent internally $$\n$$ otherwise        \\to  two intersection points $$"
+      "type": "code",
+      "lang": "",
+      "code": "d = sqrt((cx1 - cx2)\u00b2 + (cy1 - cy2)\u00b2)\n\nConditions:\n  d > r1 + r2      \u2192 no intersection (separate)\n  d == r1 + r2     \u2192 tangent externally\n  d < |r1 - r2|    \u2192 one inside the other\n  d == |r1 - r2|   \u2192 tangent internally\n  otherwise        \u2192 two intersection points",
+      "caption": null
     },
     {
       "type": "heading",
@@ -116,8 +112,10 @@
       "text": "2.3 Circle Area and Circumference"
     },
     {
-      "type": "text",
-      "content": "$$ Area = \u03c0r^2 $$\n$$ Circumference = 2\u03c0r $$"
+      "type": "code",
+      "lang": "",
+      "code": "Area = \u03c0r\u00b2\nCircumference = 2\u03c0r",
+      "caption": null
     },
     {
       "type": "heading",
@@ -129,18 +127,14 @@
       "content": "Any point on a circle can be represented as:"
     },
     {
-      "type": "text",
-      "content": "$$ x = cx + r \\times  cos(\u03b8) $$\n$$ y = cy + r \\times  sin(\u03b8) $$"
+      "type": "code",
+      "lang": "",
+      "code": "x = cx + r \u00d7 cos(\u03b8)\ny = cy + r \u00d7 sin(\u03b8)",
+      "caption": null
     },
     {
       "type": "text",
       "content": "This is essential for angular sweep algorithms and constructing polygons from circles."
-    },
-    {
-      "type": "hint_card",
-      "id": "geo-hint-atan2",
-      "question": "Use atan2, Not atan",
-      "answer": "Always use $$\\text{atan2}(y, x)$$ instead of $$\\text{atan}(y/x)$$. atan2 returns the correct quadrant, handles $$x=0$$ gracefully, and returns values in $$[-\\pi, \\pi]$$. For angular sweep, remember to add $$2\\pi$$ offset to handle circularity."
     },
     {
       "type": "heading",
@@ -152,8 +146,10 @@
       "content": "Three non-collinear points uniquely determine a circle. The center is the circumcenter of the triangle formed by the points."
     },
     {
-      "type": "text",
-      "content": "$$ Given points A, B, C: $$\n$$ - Midpoint of AB \\to  perpendicular bisector $$\n$$ - Midpoint of BC \\to  perpendicular bisector $$\n$$ - Intersection of bisectors = center $$\n$$ - Radius = distance from center to any point $$"
+      "type": "code",
+      "lang": "",
+      "code": "Given points A, B, C:\n- Midpoint of AB \u2192 perpendicular bisector\n- Midpoint of BC \u2192 perpendicular bisector\n- Intersection of bisectors = center\n- Radius = distance from center to any point",
+      "caption": null
     },
     {
       "type": "heading",
@@ -162,7 +158,7 @@
     },
     {
       "type": "text",
-      "content": "**Welzl's algorithm** (randomized, expected $O(N)$):"
+      "content": "**Welzl's algorithm** (randomized, expected O(N)):"
     },
     {
       "type": "list",
@@ -173,57 +169,6 @@
         "If point is inside, return circle",
         "Otherwise, it must be on boundary: fix the point and recurse"
       ]
-    },
-    {
-      "type": "keyword_badges",
-      "keyword_groups": [
-        {
-          "label": "point in circle / within radius",
-          "color": "blue"
-        },
-        {
-          "label": "circle intersection / overlap",
-          "color": "red"
-        },
-        {
-          "label": "minimum enclosing circle",
-          "color": "green"
-        },
-        {
-          "label": "circle union area",
-          "color": "purple"
-        },
-        {
-          "label": "angular sweep / max points",
-          "color": "amber"
-        },
-        {
-          "label": "lattice points / integer points",
-          "color": "pink"
-        },
-        {
-          "label": "tangent / circle-line",
-          "color": "teal"
-        },
-        {
-          "label": "circumcircle / three points",
-          "color": "indigo"
-        },
-        {
-          "label": "sector / arc / ring",
-          "color": "orange"
-        },
-        {
-          "label": "circle packing / covering",
-          "color": "cyan"
-        }
-      ]
-    },
-    {
-      "type": "hint_card",
-      "id": "geo-hint-welzl",
-      "question": "Leave-One-Out Intuition",
-      "answer": "Welzl's algorithm works because a point outside the current circle must be on the boundary of the minimal enclosing circle. The randomization ensures expected $$O(n)$$ runtime."
     },
     {
       "type": "divider"
@@ -312,7 +257,7 @@
     },
     {
       "type": "text",
-      "content": "**When to use**: Maximum points covered by a circle of given radius **Why it works**: For each point as candidate center-adjacent, sweep angles to count coverage **Complexity**: $O(N^2 \\log N)$ **Common pitfalls**: Angle normalization (atan2 returns [-$\\pi$, $\\pi$], need to handle circularity)"
+      "content": "**When to use**: Maximum points covered by a circle of given radius **Why it works**: For each point as candidate center-adjacent, sweep angles to count coverage **Complexity**: O(N\u00b2 log N) **Common pitfalls**: Angle normalization (atan2 returns [-\u03c0, \u03c0], need to handle circularity)"
     },
     {
       "type": "heading",
@@ -321,7 +266,7 @@
     },
     {
       "type": "text",
-      "content": "**When to use**: Total area covered by overlapping circles **Why it works**: Decompose into circular segments + polygons connecting intersection points **Complexity**: $O(N^2)$ (computational geometry heavyweight) **Common pitfalls**: Numerical stability of intersection points"
+      "content": "**When to use**: Total area covered by overlapping circles **Why it works**: Decompose into circular segments + polygons connecting intersection points **Complexity**: O(N\u00b2) (computational geometry heavyweight) **Common pitfalls**: Numerical stability of intersection points"
     },
     {
       "type": "heading",
@@ -330,7 +275,7 @@
     },
     {
       "type": "text",
-      "content": "**When to use**: Counting integer-coordinate points inside a circle **Why it works**: Iterate over x, compute y-range via sqrt(r^2 - x^2) **Complexity**: $O(R)$ where R is radius **Common pitfalls**: Off-by-one (inclusive vs exclusive boundary)"
+      "content": "**When to use**: Counting integer-coordinate points inside a circle **Why it works**: Iterate over x, compute y-range via sqrt(r\u00b2 - x\u00b2) **Complexity**: O(R) where R is radius **Common pitfalls**: Off-by-one (inclusive vs exclusive boundary)"
     },
     {
       "type": "divider"
@@ -352,24 +297,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "cpp",
-      "code": "bool pointInCircle(int px, int py, int cx, int cy, int r) {\n    int dx = px - cx, dy = py - cy;\n    return dx * dx + dy * dy <= r * r;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "public static boolean pointInCircle(int px, int py, int cx, int cy, int r) {\n    int dx = px - cx, dy = py - cy;\n    return dx * dx + dy * dy <= r * r;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function pointInCircle(px, py, cx, cy, r) {\n    const dx = px - cx, dy = py - cy;\n    return dx * dx + dy * dy <= r * r;\n}",
-      "caption": null
-    },
-    {
       "type": "heading",
       "level": 3,
       "text": "5.2 Circle-Circle Intersection"
@@ -378,24 +305,6 @@
       "type": "code",
       "lang": "python",
       "code": "def circles_intersect(cx1, cy1, r1, cx2, cy2, r2):\n    dx, dy = cx1 - cx2, cy1 - cy2\n    d_sq = dx * dx + dy * dy\n    r_sum = r1 + r2\n    r_diff = abs(r1 - r2)\n    # Check overlap condition\n    return d_sq <= r_sum * r_sum and d_sq >= r_diff * r_diff",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "cpp",
-      "code": "bool circlesIntersect(int cx1, int cy1, int r1, int cx2, int cy2, int r2) {\n    long long dx = cx1 - cx2, dy = cy1 - cy2;\n    long long dSq = dx * dx + dy * dy;\n    long long rSum = r1 + r2;\n    long long rDiff = abs(r1 - r2);\n    return dSq <= rSum * rSum && dSq >= rDiff * rDiff;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "public static boolean circlesIntersect(int cx1, int cy1, int r1, int cx2, int cy2, int r2) {\n    long dx = cx1 - cx2, dy = cy1 - cy2;\n    long dSq = dx * dx + dy * dy;\n    long rSum = r1 + r2;\n    long rDiff = Math.abs(r1 - r2);\n    return dSq <= rSum * rSum && dSq >= rDiff * rDiff;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function circlesIntersect(cx1, cy1, r1, cx2, cy2, r2) {\n    const dx = cx1 - cx2, dy = cy1 - cy2;\n    const dSq = dx * dx + dy * dy;\n    const rSum = r1 + r2;\n    const rDiff = Math.abs(r1 - r2);\n    return dSq <= rSum * rSum && dSq >= rDiff * rDiff;\n}",
       "caption": null
     },
     {
@@ -410,24 +319,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "cpp",
-      "code": "bool pointInCircle(int px, int py, int cx, int cy, int r) {\n    int dx = px - cx, dy = py - cy;\n    return dx * dx + dy * dy <= r * r;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "public static boolean pointInCircle(int px, int py, int cx, int cy, int r) {\n    int dx = px - cx, dy = py - cy;\n    return dx * dx + dy * dy <= r * r;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function pointInCircle(px, py, cx, cy, r) {\n    const dx = px - cx, dy = py - cy;\n    return dx * dx + dy * dy <= r * r;\n}",
-      "caption": null
-    },
-    {
       "type": "heading",
       "level": 3,
       "text": "5.4 Angular Sweep \u2014 Max Points in Circle"
@@ -436,24 +327,6 @@
       "type": "code",
       "lang": "python",
       "code": "def max_points_in_circle(points, cx, cy, r):\n    n = len(points)\n    max_count = 0\n    for i in range(n):\n        angles = []\n        for j in range(n):\n            if i == j: continue\n            dx = points[j][0] - points[i][0]\n            dy = points[j][1] - points[i][1]\n            d_sq = dx*dx + dy*dy\n            if d_sq > 4 * r * r: continue\n            a = math.atan2(dy, dx)\n            delta = math.acos(math.sqrt(d_sq) / (2 * r))\n            angles.append((a - delta, 1))\n            angles.append((a + delta, -1))\n        angles.sort(key=lambda x: (x[0], -x[1]))\n        cnt = 1\n        for _, typ in angles:\n            cnt += typ\n            max_count = max(max_count, cnt)\n    return max_count",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "cpp",
-      "code": "int maxPointsInCircle(vector<pair<int,int>>& points, int cx, int cy, int r) {\n    int n = points.size(), maxCount = 0;\n    for (int i = 0; i < n; i++) {\n        vector<pair<double,int>> angles;\n        for (int j = 0; j < n; j++) {\n            if (i == j) continue;\n            double dx = points[j].first - points[i].first;\n            double dy = points[j].second - points[i].second;\n            double dSq = dx*dx + dy*dy;\n            if (dSq > 4.0 * r * r) continue;\n            double a = atan2(dy, dx);\n            double delta = acos(sqrt(dSq) / (2.0 * r));\n            angles.push_back({a - delta, 1});\n            angles.push_back({a + delta, -1});\n        }\n        sort(angles.begin(), angles.end());\n        int cnt = 1;\n        for (auto [_, typ] : angles) {\n            cnt += typ;\n            maxCount = max(maxCount, cnt);\n        }\n    }\n    return maxCount;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "public static int maxPointsInCircle(int[][] points, int cx, int cy, int r) {\n    int n = points.length, maxCount = 0;\n    for (int i = 0; i < n; i++) {\n        List<double[]> angles = new ArrayList<>();\n        for (int j = 0; j < n; j++) {\n            if (i == j) continue;\n            double dx = points[j][0] - points[i][0];\n            double dy = points[j][1] - points[i][1];\n            double dSq = dx*dx + dy*dy;\n            if (dSq > 4.0 * r * r) continue;\n            double a = Math.atan2(dy, dx);\n            double delta = Math.acos(Math.sqrt(dSq) / (2.0 * r));\n            angles.add(new double[]{a - delta, 1});\n            angles.add(new double[]{a + delta, -1});\n        }\n        angles.sort((x, y) -> Double.compare(x[0], y[0]));\n        int cnt = 1;\n        for (double[] ang : angles) {\n            cnt += (int)ang[1];\n            maxCount = Math.max(maxCount, cnt);\n        }\n    }\n    return maxCount;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function maxPointsInCircle(points, cx, cy, r) {\n    const n = points.length;\n    let maxCount = 0;\n    for (let i = 0; i < n; i++) {\n        const angles = [];\n        for (let j = 0; j < n; j++) {\n            if (i === j) continue;\n            const dx = points[j][0] - points[i][0];\n            const dy = points[j][1] - points[i][1];\n            const dSq = dx * dx + dy * dy;\n            if (dSq > 4 * r * r) continue;\n            const a = Math.atan2(dy, dx);\n            const delta = Math.acos(Math.sqrt(dSq) / (2 * r));\n            angles.push([a - delta, 1]);\n            angles.push([a + delta, -1]);\n        }\n        angles.sort((x, y) => x[0] - y[0]);\n        let cnt = 1;\n        for (const [, typ] of angles) {\n            cnt += typ;\n            maxCount = Math.max(maxCount, cnt);\n        }\n    }\n    return maxCount;\n}",
       "caption": null
     },
     {
@@ -663,34 +536,16 @@
     },
     {
       "type": "text",
-      "content": "**B. Approach**: Apply Pythagoras theorem. If the original position has the lily at height H and the bank is at distance D, the depth is (D^2 - H^2) / (2H)."
+      "content": "**B. Approach**: Apply Pythagoras theorem. If the original position has the lily at height H and the bank is at distance D, the depth is (D\u00b2 - H\u00b2) / (2H)."
     },
     {
       "type": "text",
-      "content": "**C. Complexity**: $O(1)$"
+      "content": "**C. Complexity**: O(1)"
     },
     {
       "type": "code",
       "lang": "python",
       "code": "h, d = map(float, input().split())\ndepth = (d * d - h * h) / (2 * h)\nprint(f\"{depth:.9f}\")",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "cpp",
-      "code": "#include <bits/stdc++.h>\nusing namespace std;\n\nint main() {\n    double h, d; cin >> h >> d;\n    double depth = (d * d - h * h) / (2 * h);\n    cout << fixed << setprecision(9) << depth << endl;\n    return 0;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        double h = sc.nextDouble(), d = sc.nextDouble();\n        double depth = (d * d - h * h) / (2 * h);\n        System.out.printf(\"%.9f%n\", depth);\n    }\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "const readline = require('readline');\nconst rl = readline.createInterface({ input: process.stdin });\nrl.on('line', line => {\n    const [h, d] = line.split(' ').map(Number);\n    const depth = (d * d - h * h) / (2 * h);\n    console.log(depth.toFixed(9));\n    rl.close();\n});",
       "caption": null
     },
     {
@@ -703,7 +558,7 @@
     },
     {
       "type": "text",
-      "content": "**A. Intuition**: Count integer (x, y) points such that $(x - cx)^2 + (y - cy)^2 \\le r^2$. The problem is that cx, cy, r are given as decimal numbers (possibly with 4 decimal places)."
+      "content": "**A. Intuition**: Count integer (x, y) points such that (x - cx)\u00b2 + (y - cy)\u00b2 \u2264 r\u00b2. The problem is that cx, cy, r are given as decimal numbers (possibly with 4 decimal places)."
     },
     {
       "type": "text",
@@ -711,7 +566,7 @@
     },
     {
       "type": "text",
-      "content": "**C. Complexity**: $O(R)$ where R is the radius in integer units"
+      "content": "**C. Complexity**: O(R) where R is the radius in integer units"
     },
     {
       "type": "text",
@@ -721,24 +576,6 @@
       "type": "code",
       "lang": "python",
       "code": "import math\n\ncx, cy, r = map(float, input().split())\n# Scale by 10000 to handle 4 decimal places\nSCALE = 10000\ncx = round(cx * SCALE)\ncy = round(cy * SCALE)\nr = round(r * SCALE)\n\nx_min = (cx - r + SCALE - 1) // SCALE * SCALE  # ceil division\nx_max = (cx + r) // SCALE * SCALE\n\nans = 0\nfor x in range(x_min, x_max + 1, SCALE):\n    dx = x - cx\n    dy_sq = r * r - dx * dx\n    if dy_sq < 0:\n        continue\n    max_dy = int(math.isqrt(dy_sq))\n    y_low = (cy - max_dy + SCALE - 1) // SCALE\n    y_high = (cy + max_dy) // SCALE\n    ans += y_high - y_low + 1\n\nprint(ans)",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "cpp",
-      "code": "#include <bits/stdc++.h>\nusing namespace std;\n\nint main() {\n    double h, d; cin >> h >> d;\n    double depth = (d * d - h * h) / (2 * h);\n    cout << fixed << setprecision(9) << depth << endl;\n    return 0;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        double h = sc.nextDouble(), d = sc.nextDouble();\n        double depth = (d * d - h * h) / (2 * h);\n        System.out.printf(\"%.9f%n\", depth);\n    }\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "const readline = require('readline');\nconst rl = readline.createInterface({ input: process.stdin });\nrl.on('line', line => {\n    const [h, d] = line.split(' ').map(Number);\n    const depth = (d * d - h * h) / (2 * h);\n    console.log(depth.toFixed(9));\n    rl.close();\n});",
       "caption": null
     },
     {
@@ -759,7 +596,7 @@
     },
     {
       "type": "text",
-      "content": "**C. Complexity**: $O(N^3)$"
+      "content": "**C. Complexity**: O(N\u00b3)"
     },
     {
       "type": "text",
@@ -772,31 +609,8 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "cpp",
-      "code": "int numPoints(vector<vector<int>>& points, int r) {\n    int n = points.size(), ans = 1;\n    auto countPoints = [&](double cx, double cy) {\n        int cnt = 0;\n        for (auto& p : points) {\n            double dx = p[0] - cx, dy = p[1] - cy;\n            if (dx*dx + dy*dy <= r*r + 1e-9) cnt++;\n        }\n        return cnt;\n    };\n    for (int i = 0; i < n; i++) {\n        for (int j = i+1; j < n; j++) {\n            int x1 = points[i][0], y1 = points[i][1];\n            int x2 = points[j][0], y2 = points[j][1];\n            int dSq = (x2-x1)*(x2-x1) + (y2-y1)*(y2-y1);\n            if (dSq > 4*r*r) continue;\n            double d = sqrt(dSq);\n            double mx = (x1+x2)/2.0, my = (y1+y2)/2.0;\n            double h = sqrt(r*r - d*d/4.0);\n            double dx = (double)(y2-y1)/d, dy = (double)(-(x2-x1))/d;\n            for (int sign : {1, -1}) {\n                double cx = mx + sign * h * dx;\n                double cy = my + sign * h * dy;\n                ans = max(ans, countPoints(cx, cy));\n            }\n        }\n    }\n    return ans;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "public int numPoints(int[][] points, int r) {\n    int n = points.length, ans = 1;\n    for (int i = 0; i < n; i++) {\n        for (int j = i+1; j < n; j++) {\n            int x1 = points[i][0], y1 = points[i][1];\n            int x2 = points[j][0], y2 = points[j][1];\n            int dSq = (x2-x1)*(x2-x1) + (y2-y1)*(y2-y1);\n            if (dSq > 4*r*r) continue;\n            double d = Math.sqrt(dSq);\n            double mx = (x1+x2)/2.0, my = (y1+y2)/2.0;\n            double h = Math.sqrt(r*r - d*d/4.0);\n            double dx = (double)(y2-y1)/d, dy = (double)(-(x2-x1))/d;\n            for (int sign = -1; sign <= 1; sign += 2) {\n                double cx = mx + sign * h * dx;\n                double cy = my + sign * h * dy;\n                int cnt = 0;\n                for (int[] p : points) {\n                    double px = p[0] - cx, py = p[1] - cy;\n                    if (px*px + py*py <= r*r + 1e-9) cnt++;\n                }\n                ans = Math.max(ans, cnt);\n            }\n        }\n    }\n    return ans;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function numPoints(points, r) {\n    const n = points.length;\n    let ans = 1;\n    const countPoints = (cx, cy) => {\n        let cnt = 0;\n        for (const [px, py] of points) {\n            const dx = px - cx, dy = py - cy;\n            if (dx * dx + dy * dy <= r * r + 1e-9) cnt++;\n        }\n        return cnt;\n    };\n    for (let i = 0; i < n; i++) {\n        for (let j = i + 1; j < n; j++) {\n            const [x1, y1] = points[i], [x2, y2] = points[j];\n            const dSq = (x2 - x1) ** 2 + (y2 - y1) ** 2;\n            if (dSq > 4 * r * r) continue;\n            const d = Math.sqrt(dSq);\n            const mx = (x1 + x2) / 2, my = (y1 + y2) / 2;\n            const h = Math.sqrt(r * r - d * d / 4);\n            const dx = (y2 - y1) / d, dy = -(x2 - x1) / d;\n            for (const sign of [1, -1]) {\n                const cx = mx + sign * h * dx;\n                const cy = my + sign * h * dy;\n                ans = Math.max(ans, countPoints(cx, cy));\n            }\n        }\n    }\n    return ans;\n}",
-      "caption": null
-    },
-    {
       "type": "divider"
     }
   ],
-  "difficulty": "Intermediate",
-  "problem_urls": {
-    "Problem 1": "https://codeforces.com/problemset/problem/1199/B",
-    "Problem 2": "https://atcoder.jp/contests/abc191/tasks/abc191_d",
-    "Problem 3": "https://leetcode.com/problems/maximum-number-of-darts-inside-of-a-circular-dartboard/"
-  }
+  "difficulty": "Intermediate"
 }

@@ -4,12 +4,24 @@
   "title": "Computational Geometry",
   "icon": "\u2302",
   "color": "#0ea5e9",
-  "problemCount": 214,
+  "problemCount": 107,
   "blocks": [
     {
       "type": "heading",
       "level": 2,
       "text": "Chapter 14: Computational Geometry"
+    },
+    {
+      "type": "text",
+      "content": "**\ud83c\udfaf Learning Objectives \u2014 By the end of this chapter, you will be able to:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Implement fundamental computational geometry algorithms (convex hull, line sweep)",
+        "Master orientation tests and geometric predicates for robust computation",
+        "Apply computational geometry techniques to real-world spatial problems"
+      ]
     },
     {
       "type": "divider"
@@ -51,16 +63,6 @@
       "text": "2.1 Convex Hull"
     },
     {
-      "type": "interactive_diagram",
-      "diagram": "convex-hull",
-      "caption": "Click to add points and visualize the convex hull being built using Monotone Chain."
-    },
-    {
-      "type": "interactive_diagram",
-      "diagram": "convex-hull",
-      "caption": "Click to add points and visualize the convex hull being built using Monotone Chain."
-    },
-    {
       "type": "text",
       "content": "The convex hull of a set of points is the smallest convex polygon containing all points \u2014 the shape of a rubber band stretched around the outermost points."
     },
@@ -92,17 +94,7 @@
     },
     {
       "type": "text",
-      "content": "Both: $O(N \\log N)$"
-    },
-    {
-      "type": "hint_card",
-      "question": "Monotone Chain vs Graham Scan: which should you use?",
-      "answer": "Monotone Chain (Andrew's algorithm) is generally preferred: it sorts by x then y (no trig or floating-point angles), uses only cross products, handles collinear points cleanly, and builds upper/lower hull separately. Graham Scan requires computing polar angles (atan2), which is slower and introduces floating-point error. Both are O(N log N), but Monotone Chain is simpler to implement correctly."
-    },
-    {
-      "type": "hint_card",
-      "question": "Monotone Chain vs Graham Scan: which should you use?",
-      "answer": "Monotone Chain (Andrew's algorithm) is generally preferred: it sorts by x then y (no trig or floating-point angles), uses only cross products, handles collinear points cleanly, and builds upper/lower hull separately. Graham Scan requires computing polar angles (atan2), which is slower and introduces floating-point error. Both are O(N log N), but Monotone Chain is simpler to implement correctly."
+      "content": "Both: O(N log N)"
     },
     {
       "type": "heading",
@@ -110,22 +102,14 @@
       "text": "2.2 Line Segment Intersection"
     },
     {
-      "type": "interactive_diagram",
-      "diagram": "segment-intersection",
-      "caption": "Drag endpoints to test whether two line segments intersect."
-    },
-    {
-      "type": "interactive_diagram",
-      "diagram": "segment-intersection",
-      "caption": "Drag endpoints to test whether two line segments intersect."
-    },
-    {
       "type": "text",
-      "content": "Two segments (p_1, q_1) and (p_2, q_2) intersect if orientations differ AND the same for the other pair, or if collinear and overlapping."
+      "content": "Two segments (p\u2081, q\u2081) and (p\u2082, q\u2082) intersect if orientations differ AND the same for the other pair, or if collinear and overlapping."
     },
     {
-      "type": "text",
-      "content": "Two segments $(p_1, q_1)$ and $(p_2, q_2)$ intersect iff $\\text{orient}(p_1, q_1, p_2) \\times \\text{orient}(p_1, q_1, q_2) < 0$ and $\\text{orient}(p_2, q_2, p_1) \\times \\text{orient}(p_2, q_2, q_1) < 0$."
+      "type": "code",
+      "lang": "",
+      "code": "orient(p\u2081, q\u2081, p\u2082) \u00d7 orient(p\u2081, q\u2081, q\u2082) < 0  AND\norient(p\u2082, q\u2082, p\u2081) \u00d7 orient(p\u2082, q\u2082, q\u2081) < 0",
+      "caption": null
     },
     {
       "type": "heading",
@@ -153,17 +137,7 @@
     },
     {
       "type": "text",
-      "content": "$O(N \\log N)$"
-    },
-    {
-      "type": "hint_card",
-      "question": "Why does the strip check only need 7 points in closest pair?",
-      "answer": "The proof divides the strip into d/2 x d/2 squares (cells). Each cell can contain at most 1 point (otherwise those two would be closer than d). The 7-point bound comes from checking adjacent cells \u2014 at most 8 cells x 1 point, minus the point itself, giving 7. This constant is independent of N, so the strip check is O(N) total."
-    },
-    {
-      "type": "hint_card",
-      "question": "Why does the strip check only need 7 points in closest pair?",
-      "answer": "The proof divides the strip into d/2 x d/2 squares (cells). Each cell can contain at most 1 point (otherwise those two would be closer than d). The 7-point bound comes from checking adjacent cells \u2014 at most 8 cells x 1 point, minus the point itself, giving 7. This constant is independent of N, so the strip check is O(N) total."
+      "content": "O(N log N)"
     },
     {
       "type": "heading",
@@ -179,37 +153,17 @@
       "content": "Applications: rectangle union area, segment intersection, closest pair."
     },
     {
-      "type": "hint_card",
-      "question": "Why does event ordering matter in sweep line?",
-      "answer": "When multiple events share the same x-coordinate, processing order determines correctness. For rectangle union, process start events before end events at the same x to avoid counting zero-width regions. For segment intersection, process endpoints before intersection points. Always define a strict total order for events."
-    },
-    {
-      "type": "hint_card",
-      "question": "Why does event ordering matter in sweep line?",
-      "answer": "When multiple events share the same x-coordinate, processing order determines correctness. For rectangle union, process start events before end events at the same x to avoid counting zero-width regions. For segment intersection, process endpoints before intersection points. Always define a strict total order for events."
-    },
-    {
       "type": "heading",
       "level": 4,
       "text": "2.6 Rotating Calipers"
     },
     {
       "type": "text",
-      "content": "Two parallel lines \"rotate\" around a convex polygon, maintaining contact. $O(N)$ after hull construction."
+      "content": "Two parallel lines \"rotate\" around a convex polygon, maintaining contact. O(N) after hull construction."
     },
     {
       "type": "text",
       "content": "Applications: diameter (farthest pair), minimum width, max distance between polygons."
-    },
-    {
-      "type": "hint_card",
-      "question": "How do antipodal points help find the diameter of a convex polygon?",
-      "answer": "Rotating calipers maintains a pair of parallel lines (antipodal points) that rotate around the hull. The farthest pair of points on a convex polygon must be a pair of antipodal points. The algorithm advances whichever line's next edge has a smaller angle, achieving O(N) total work after the convex hull is built."
-    },
-    {
-      "type": "hint_card",
-      "question": "How do antipodal points help find the diameter of a convex polygon?",
-      "answer": "Rotating calipers maintains a pair of parallel lines (antipodal points) that rotate around the hull. The farthest pair of points on a convex polygon must be a pair of antipodal points. The algorithm advances whichever line's next edge has a smaller angle, achieving O(N) total work after the convex hull is built."
     },
     {
       "type": "heading",
@@ -222,96 +176,6 @@
     },
     {
       "type": "divider"
-    },
-    {
-      "type": "keyword_badges",
-      "groups": [
-        {
-          "label": "convex-hull",
-          "color": "sky"
-        },
-        {
-          "label": "sweep-line",
-          "color": "indigo"
-        },
-        {
-          "label": "voronoi-diagram",
-          "color": "violet"
-        },
-        {
-          "label": "gift-wrapping",
-          "color": "emerald"
-        },
-        {
-          "label": "graham-scan",
-          "color": "amber"
-        },
-        {
-          "label": "monotone-chain",
-          "color": "cyan"
-        },
-        {
-          "label": "segment-intersection",
-          "color": "rose"
-        },
-        {
-          "label": "closest-pair",
-          "color": "orange"
-        },
-        {
-          "label": "rotating-calipers",
-          "color": "pink"
-        },
-        {
-          "label": "delaunay-triangulation",
-          "color": "red"
-        }
-      ]
-    },
-    {
-      "type": "keyword_badges",
-      "groups": [
-        {
-          "label": "convex-hull",
-          "color": "sky"
-        },
-        {
-          "label": "sweep-line",
-          "color": "indigo"
-        },
-        {
-          "label": "voronoi-diagram",
-          "color": "violet"
-        },
-        {
-          "label": "gift-wrapping",
-          "color": "emerald"
-        },
-        {
-          "label": "graham-scan",
-          "color": "amber"
-        },
-        {
-          "label": "monotone-chain",
-          "color": "cyan"
-        },
-        {
-          "label": "segment-intersection",
-          "color": "rose"
-        },
-        {
-          "label": "closest-pair",
-          "color": "orange"
-        },
-        {
-          "label": "rotating-calipers",
-          "color": "pink"
-        },
-        {
-          "label": "delaunay-triangulation",
-          "color": "red"
-        }
-      ]
     },
     {
       "type": "heading",
@@ -355,7 +219,7 @@
     },
     {
       "type": "text",
-      "content": "**Complexity:** $O(N \\log N)$ for Monotone Chain."
+      "content": "**Complexity:** O(N log N) for Monotone Chain."
     },
     {
       "type": "text",
@@ -372,7 +236,7 @@
     },
     {
       "type": "text",
-      "content": "**Complexity:** $O(1)$ per pair; O((N+K) log N) sweep for all intersections."
+      "content": "**Complexity:** O(1) per pair; O((N+K) log N) sweep for all intersections."
     },
     {
       "type": "text",
@@ -389,7 +253,7 @@
     },
     {
       "type": "text",
-      "content": "**Complexity:** $O(N \\log N)$."
+      "content": "**Complexity:** O(N log N)."
     },
     {
       "type": "text",
@@ -406,7 +270,7 @@
     },
     {
       "type": "text",
-      "content": "**Complexity:** $O(N \\log N)$."
+      "content": "**Complexity:** O(N log N)."
     },
     {
       "type": "text",
@@ -423,7 +287,7 @@
     },
     {
       "type": "text",
-      "content": "**Complexity:** $O(N)$ (monotonic slopes) or $O(N \\log N)$ (Li Chao tree)."
+      "content": "**Complexity:** O(N) (monotonic slopes) or O(N log N) (Li Chao tree)."
     },
     {
       "type": "divider"
@@ -457,12 +321,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function convexHull(points) {\n    points = [...new Set(points.map(p => p[0] + ',' + p[1]))].map(s => s.split(',').map(Number));\n    points.sort((a, b) => a[0] !== b[0] ? a[0] - b[0] : a[1] - b[1]);\n    if (points.length <= 1) return points;\n    function cross(o, a, b) {\n        return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);\n    }\n    const lower = [];\n    for (const p of points) {\n        while (lower.length >= 2 && cross(lower[lower.length-2], lower[lower.length-1], p) <= 0)\n            lower.pop();\n        lower.push(p);\n    }\n    const upper = [];\n    for (const p of points.reverse()) {\n        while (upper.length >= 2 && cross(upper[upper.length-2], upper[upper.length-1], p) <= 0)\n            upper.pop();\n        upper.push(p);\n    }\n    lower.pop();\n    upper.pop();\n    return lower.concat(upper);\n}",
-      "caption": null
-    },
-    {
       "type": "heading",
       "level": 4,
       "text": "Template 2: Segment Intersection Test"
@@ -471,24 +329,6 @@
       "type": "code",
       "lang": "python",
       "code": "def on_segment(p, q, r):\n    return (min(p[0], r[0]) <= q[0] <= max(p[0], r[0]) and\n            min(p[1], r[1]) <= q[1] <= max(p[1], r[1]))\n\ndef segments_intersect(p1, q1, p2, q2):\n    o1 = orientation(p1, q1, p2)\n    o2 = orientation(p1, q1, q2)\n    o3 = orientation(p2, q2, p1)\n    o4 = orientation(p2, q2, q1)\n    \n    if o1 * o2 < 0 and o3 * o4 < 0:\n        return True\n    if o1 == 0 and on_segment(p1, p2, q1): return True\n    if o2 == 0 and on_segment(p1, q2, q1): return True\n    if o3 == 0 and on_segment(p2, p1, q2): return True\n    if o4 == 0 and on_segment(p2, q1, q2): return True\n    return False",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "cpp",
-      "code": "bool onSegment(vector<int> p, vector<int> q, vector<int> r) {\n    return min(p[0], r[0]) <= q[0] && q[0] <= max(p[0], r[0]) &&\n           min(p[1], r[1]) <= q[1] && q[1] <= max(p[1], r[1]);\n}\n\nbool segmentsIntersect(vector<int> p1, vector<int> q1, vector<int> p2, vector<int> q2) {\n    int o1 = orientation(p1, q1, p2);\n    int o2 = orientation(p1, q1, q2);\n    int o3 = orientation(p2, q2, p1);\n    int o4 = orientation(p2, q2, q1);\n    if (o1 * o2 < 0 && o3 * o4 < 0) return true;\n    if (o1 == 0 && onSegment(p1, p2, q1)) return true;\n    if (o2 == 0 && onSegment(p1, q2, q1)) return true;\n    if (o3 == 0 && onSegment(p2, p1, q2)) return true;\n    if (o4 == 0 && onSegment(p2, q1, q2)) return true;\n    return false;\n}\n\nint orientation(vector<int> p, vector<int> q, vector<int> r) {\n    return (q[0] - p[0]) * (r[1] - p[1]) - (q[1] - p[1]) * (r[0] - p[0]);\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "public static boolean segmentsIntersect(int[] p1, int[] q1, int[] p2, int[] q2) {\n    int o1 = orientation(p1, q1, p2);\n    int o2 = orientation(p1, q1, q2);\n    int o3 = orientation(p2, q2, p1);\n    int o4 = orientation(p2, q2, q1);\n    if (o1 * o2 < 0 && o3 * o4 < 0) return true;\n    if (o1 == 0 && onSegment(p1, p2, q1)) return true;\n    if (o2 == 0 && onSegment(p1, q2, q1)) return true;\n    if (o3 == 0 && onSegment(p2, p1, q2)) return true;\n    if (o4 == 0 && onSegment(p2, q1, q2)) return true;\n    return false;\n}\nstatic boolean onSegment(int[] p, int[] q, int[] r) {\n    return Math.min(p[0], r[0]) <= q[0] && q[0] <= Math.max(p[0], r[0]) &&\n           Math.min(p[1], r[1]) <= q[1] && q[1] <= Math.max(p[1], r[1]);\n}\nstatic int orientation(int[] p, int[] q, int[] r) {\n    return (q[0] - p[0]) * (r[1] - p[1]) - (q[1] - p[1]) * (r[0] - p[0]);\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function onSegment(p, q, r) {\n    return Math.min(p[0], r[0]) <= q[0] && q[0] <= Math.max(p[0], r[0]) &&\n           Math.min(p[1], r[1]) <= q[1] && q[1] <= Math.max(p[1], r[1]);\n}\nfunction segmentsIntersect(p1, q1, p2, q2) {\n    const o1 = orientation(p1, q1, p2);\n    const o2 = orientation(p1, q1, q2);\n    const o3 = orientation(p2, q2, p1);\n    const o4 = orientation(p2, q2, q1);\n    if (o1 * o2 < 0 && o3 * o4 < 0) return true;\n    if (o1 === 0 && onSegment(p1, p2, q1)) return true;\n    if (o2 === 0 && onSegment(p1, q2, q1)) return true;\n    if (o3 === 0 && onSegment(p2, p1, q2)) return true;\n    if (o4 === 0 && onSegment(p2, q1, q2)) return true;\n    return false;\n}\nfunction orientation(p, q, r) {\n    return (q[0] - p[0]) * (r[1] - p[1]) - (q[1] - p[1]) * (r[0] - p[0]);\n}",
       "caption": null
     },
     {
@@ -503,24 +343,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "cpp",
-      "code": "int pointInPolygon(vector<int> point, vector<vector<int>>& polygon) {\n    int x = point[0], y = point[1];\n    bool inside = false;\n    int n = polygon.size();\n    for (int i = 0; i < n; i++) {\n        int x1 = polygon[i][0], y1 = polygon[i][1];\n        int x2 = polygon[(i+1)%n][0], y2 = polygon[(i+1)%n][1];\n        auto orient = [&](int a1, int b1, int a2, int b2, int a3, int b3) {\n            return (a2 - a1) * (b3 - b1) - (b2 - b1) * (a3 - a1);\n        };\n        auto onSeg = [&](int a1, int b1, int a2, int b2, int a3, int b3) {\n            return min(a1, a3) <= a2 && a2 <= max(a1, a3) &&\n                   min(b1, b3) <= b2 && b2 <= max(b1, b3);\n        };\n        if (orient(x1, y1, x2, y2, x, y) == 0 && onSeg(x1, y1, x, y, x2, y2))\n            return -1;\n        if ((y1 > y) != (y2 > y)) {\n            double xInt = x1 + (double)(x2 - x1) * (y - y1) / (y2 - y1);\n            if (x < xInt) inside = !inside;\n        }\n    }\n    return inside ? 1 : 0;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "public static int pointInPolygon(int[] point, int[][] polygon) {\n    int x = point[0], y = point[1];\n    boolean inside = false;\n    int n = polygon.length;\n    for (int i = 0; i < n; i++) {\n        int x1 = polygon[i][0], y1 = polygon[i][1];\n        int x2 = polygon[(i+1)%n][0], y2 = polygon[(i+1)%n][1];\n        if (orientation(new int[]{x1,y1}, new int[]{x2,y2}, point) == 0 &&\n            onSegment(new int[]{x1,y1}, point, new int[]{x2,y2}))\n            return -1;\n        if ((y1 > y) != (y2 > y)) {\n            double xInt = x1 + (double)(x2 - x1) * (y - y1) / (y2 - y1);\n            if (x < xInt) inside = !inside;\n        }\n    }\n    return inside ? 1 : 0;\n}\nstatic boolean onSegment(int[] p, int[] q, int[] r) {\n    return Math.min(p[0], r[0]) <= q[0] && q[0] <= Math.max(p[0], r[0]) &&\n           Math.min(p[1], r[1]) <= q[1] && q[1] <= Math.max(p[1], r[1]);\n}\nstatic int orientation(int[] p, int[] q, int[] r) {\n    return (q[0] - p[0]) * (r[1] - p[1]) - (q[1] - p[1]) * (r[0] - p[0]);\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function pointInPolygon(point, polygon) {\n    const [x, y] = point;\n    let inside = false;\n    const n = polygon.length;\n    for (let i = 0; i < n; i++) {\n        const [x1, y1] = polygon[i];\n        const [x2, y2] = polygon[(i + 1) % n];\n        if (orientation([x1, y1], [x2, y2], point) === 0 &&\n            onSegment([x1, y1], point, [x2, y2]))\n            return -1;\n        if ((y1 > y) !== (y2 > y)) {\n            const xInt = x1 + (x2 - x1) * (y - y1) / (y2 - y1);\n            if (x < xInt) inside = !inside;\n        }\n    }\n    return inside ? 1 : 0;\n}",
-      "caption": null
-    },
-    {
       "type": "heading",
       "level": 4,
       "text": "Template 4: Closest Pair of Points (Divide and Conquer)"
@@ -532,24 +354,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "cpp",
-      "code": "double closestPair(vector<pair<int,int>>& points) {\n    sort(points.begin(), points.end());\n    auto dist2 = [](pair<int,int> p, pair<int,int> q) {\n        return (long long)(p.first-q.first)*(p.first-q.first) + (long long)(p.second-q.second)*(p.second-q.second);\n    };\n    function<double(vector<pair<int,int>>&)> solve = [&](vector<pair<int,int>>& pts) -> double {\n        int n = pts.size();\n        if (n <= 3) {\n            double md = 1e18;\n            for (int i = 0; i < n; i++)\n                for (int j = i+1; j < n; j++)\n                    md = min(md, (double)dist2(pts[i], pts[j]));\n            return md;\n        }\n        int mid = n / 2;\n        double midX = pts[mid].first;\n        vector<pair<int,int>> left(pts.begin(), pts.begin()+mid);\n        vector<pair<int,int>> right(pts.begin()+mid, pts.end());\n        double dl = solve(left), dr = solve(right);\n        double d = min(dl, dr);\n        vector<pair<int,int>> yMerged;\n        merge(left.begin(), left.end(), right.begin(), right.end(), back_inserter(yMerged),\n              [](auto& a, auto& b) { return a.second < b.second; });\n        vector<pair<int,int>> strip;\n        for (auto& p : yMerged)\n            if (abs(p.first - midX) < sqrt(d))\n                strip.push_back(p);\n        for (int i = 0; i < (int)strip.size(); i++)\n            for (int j = i+1; j < min(i+7, (int)strip.size()); j++) {\n                if ((strip[j].second - strip[i].second)*(strip[j].second - strip[i].second) >= d) break;\n                d = min(d, (double)dist2(strip[i], strip[j]));\n            }\n        return d;\n    };\n    return sqrt(solve(points));\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "public static double closestPair(int[][] points) {\n    Arrays.sort(points, (a,b) -> a[0] != b[0] ? a[0]-b[0] : a[1]-b[1]);\n    return sqrt(solve(points, 0, points.length-1));\n}\nstatic double solve(int[][] pts, int l, int r) {\n    int n = r - l + 1;\n    if (n <= 3) {\n        double md = Double.MAX_VALUE;\n        for (int i = l; i <= r; i++)\n            for (int j = i+1; j <= r; j++)\n                md = Math.min(md, dist2(pts[i], pts[j]));\n        return md;\n    }\n    int mid = (l + r) / 2;\n    double midX = pts[mid][0];\n    double dl = solve(pts, l, mid);\n    double dr = solve(pts, mid+1, r);\n    double d = Math.min(dl, dr);\n    List<int[]> strip = new ArrayList<>();\n    for (int i = l; i <= r; i++)\n        if (Math.abs(pts[i][0] - midX) < Math.sqrt(d))\n            strip.add(pts[i]);\n    strip.sort((a,b) -> a[1] - b[1]);\n    for (int i = 0; i < strip.size(); i++)\n        for (int j = i+1; j < Math.min(i+7, strip.size()); j++) {\n            if (Math.pow(strip.get(j)[1] - strip.get(i)[1], 2) >= d) break;\n            d = Math.min(d, dist2(strip.get(i), strip.get(j)));\n        }\n    return d;\n}\nstatic long dist2(int[] a, int[] b) {\n    return (long)(a[0]-b[0])*(a[0]-b[0]) + (long)(a[1]-b[1])*(a[1]-b[1]);\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function closestPair(points) {\n    points.sort((a, b) => a[0] - b[0] || a[1] - b[1]);\n    function dist2(p, q) {\n        return (p[0]-q[0])**2 + (p[1]-q[1])**2;\n    }\n    function solve(pts) {\n        const n = pts.length;\n        if (n <= 3) {\n            let md = Infinity;\n            let pair = null;\n            for (let i = 0; i < n; i++)\n                for (let j = i+1; j < n; j++) {\n                    const d = dist2(pts[i], pts[j]);\n                    if (d < md) { md = d; pair = [pts[i], pts[j]]; }\n                }\n            return {d: md, pair, ySorted: [...pts].sort((a,b) => a[1] - b[1])};\n        }\n        const mid = Math.floor(n / 2);\n        const midX = pts[mid][0];\n        const left = pts.slice(0, mid);\n        const right = pts.slice(mid);\n        const {d: dl, pair: pairL, ySorted: yL} = solve(left);\n        const {d: dr, pair: pairR, ySorted: yR} = solve(right);\n        let d = Math.min(dl, dr);\n        let bestPair = dl <= dr ? pairL : pairR;\n        let i = 0, j = 0;\n        const yMerged = [];\n        while (i < yL.length && j < yR.length)\n            yMerged.push(yL[i][1] <= yR[j][1] ? yL[i++] : yR[j++]);\n        yMerged.push(...yL.slice(i), ...yR.slice(j));\n        const strip = yMerged.filter(p => Math.abs(p[0] - midX) < Math.sqrt(d));\n        for (let i = 0; i < strip.length; i++)\n            for (let j = i+1; j < Math.min(i+7, strip.length); j++) {\n                if ((strip[j][1] - strip[i][1])**2 >= d) break;\n                const dd = dist2(strip[i], strip[j]);\n                if (dd < d) { d = dd; bestPair = [strip[i], strip[j]]; }\n            }\n        return {d, pair: bestPair, ySorted: yMerged};\n    }\n    return solve(points).pair;\n}",
-      "caption": null
-    },
-    {
       "type": "heading",
       "level": 4,
       "text": "Template 5: Rotating Calipers (Diameter)"
@@ -558,24 +362,6 @@
       "type": "code",
       "lang": "python",
       "code": "def polygon_diameter(hull):\n    n = len(hull)\n    if n <= 2:\n        return 0 if n <= 1 else math.hypot(hull[0][0]-hull[1][0], hull[0][1]-hull[1][1])\n    \n    def dist2(p, q):\n        return (p[0]-q[0])**2 + (p[1]-q[1])**2\n    \n    k = 1\n    max_d = 0\n    for i in range(n):\n        while True:\n            x1 = hull[(i+1)%n][0] - hull[i][0]\n            y1 = hull[(i+1)%n][1] - hull[i][1]\n            x2 = hull[(k+1)%n][0] - hull[k][0]\n            y2 = hull[(k+1)%n][1] - hull[k][1]\n            if x1 * y2 - y1 * x2 <= 0:\n                break\n            k = (k + 1) % n\n        max_d = max(max_d, dist2(hull[i], hull[k]))\n    \n    return math.sqrt(max_d)",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "cpp",
-      "code": "double polygonDiameter(vector<pair<int,int>>& hull) {\n    int n = hull.size();\n    if (n <= 2) return n <= 1 ? 0 : hypot(hull[0].first-hull[1].first, hull[0].second-hull[1].second);\n    auto dist2 = [](auto& p, auto& q) {\n        return (long long)(p.first-q.first)*(p.first-q.first) + (long long)(p.second-q.second)*(p.second-q.second);\n    };\n    int k = 1;\n    long long maxD = 0;\n    for (int i = 0; i < n; i++) {\n        while (true) {\n            long long x1 = hull[(i+1)%n].first - hull[i].first;\n            long long y1 = hull[(i+1)%n].second - hull[i].second;\n            long long x2 = hull[(k+1)%n].first - hull[k].first;\n            long long y2 = hull[(k+1)%n].second - hull[k].second;\n            if (x1 * y2 - y1 * x2 <= 0) break;\n            k = (k + 1) % n;\n        }\n        maxD = max(maxD, dist2(hull[i], hull[k]));\n    }\n    return sqrt(maxD);\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "public static double polygonDiameter(int[][] hull) {\n    int n = hull.length;\n    if (n <= 2) return n <= 1 ? 0 : Math.hypot(hull[0][0]-hull[1][0], hull[0][1]-hull[1][1]);\n    int k = 1;\n    long maxD = 0;\n    for (int i = 0; i < n; i++) {\n        while (true) {\n            long x1 = hull[(i+1)%n][0] - hull[i][0];\n            long y1 = hull[(i+1)%n][1] - hull[i][1];\n            long x2 = hull[(k+1)%n][0] - hull[k][0];\n            long y2 = hull[(k+1)%n][1] - hull[k][1];\n            if (x1 * y2 - y1 * x2 <= 0) break;\n            k = (k + 1) % n;\n        }\n        maxD = Math.max(maxD, (long)(hull[i][0]-hull[k][0])*(hull[i][0]-hull[k][0]) +\n                              (long)(hull[i][1]-hull[k][1])*(hull[i][1]-hull[k][1]));\n    }\n    return Math.sqrt(maxD);\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function polygonDiameter(hull) {\n    const n = hull.length;\n    if (n <= 2) return n <= 1 ? 0 : Math.hypot(hull[0][0]-hull[1][0], hull[0][1]-hull[1][1]);\n    function dist2(p, q) {\n        return (p[0]-q[0])**2 + (p[1]-q[1])**2;\n    }\n    let k = 1;\n    let maxD = 0;\n    for (let i = 0; i < n; i++) {\n        while (true) {\n            const x1 = hull[(i+1)%n][0] - hull[i][0];\n            const y1 = hull[(i+1)%n][1] - hull[i][1];\n            const x2 = hull[(k+1)%n][0] - hull[k][0];\n            const y2 = hull[(k+1)%n][1] - hull[k][1];\n            if (x1 * y2 - y1 * x2 <= 0) break;\n            k = (k + 1) % n;\n        }\n        maxD = Math.max(maxD, dist2(hull[i], hull[k]));\n    }\n    return Math.sqrt(maxD);\n}",
       "caption": null
     },
     {
@@ -729,7 +515,7 @@
     },
     {
       "type": "text",
-      "content": "**Easy 1: Simple Hull** Given N \\le  100 points, compute the perimeter of their convex hull."
+      "content": "**Easy 1: Simple Hull** Given N \u2264 100 points, compute the perimeter of their convex hull."
     },
     {
       "type": "text",
@@ -741,7 +527,7 @@
     },
     {
       "type": "text",
-      "content": "**Medium 2: Rectangle Union** Given N axis-aligned rectangles, compute the union area using sweep line. N \\le  10\u2075."
+      "content": "**Medium 2: Rectangle Union** Given N axis-aligned rectangles, compute the union area using sweep line. N \u2264 10\u2075."
     },
     {
       "type": "text",
@@ -749,7 +535,7 @@
     },
     {
       "type": "text",
-      "content": "**Hard 2: Minimum Enclosing Circle** Given N points, find the smallest circle that encloses all points. Use Welzl's algorithm (expected $O(N)$)."
+      "content": "**Hard 2: Minimum Enclosing Circle** Given N points, find the smallest circle that encloses all points. Use Welzl's algorithm (expected O(N))."
     },
     {
       "type": "text",
@@ -757,7 +543,7 @@
     },
     {
       "type": "text",
-      "content": "**Contest-Style: Voronoi Neighbors** Given N points, for each find its nearest neighbor. N \\le  2\u00d710\u2075. Must be faster than $O(N^2)$."
+      "content": "**Contest-Style: Voronoi Neighbors** Given N points, for each find its nearest neighbor. N \u2264 2\u00d710\u2075. Must be faster than O(N\u00b2)."
     },
     {
       "type": "divider"
@@ -781,11 +567,11 @@
     },
     {
       "type": "text",
-      "content": "**B. Brute Force** Jarvis March (Gift Wrapping): $O(N^2)$. Start from leftmost, repeatedly find point with smallest polar angle."
+      "content": "**B. Brute Force** Jarvis March (Gift Wrapping): O(N\u00b2). Start from leftmost, repeatedly find point with smallest polar angle."
     },
     {
       "type": "text",
-      "content": "**C. Optimized Approach** Monotone Chain. Sort once, build in $O(N)$."
+      "content": "**C. Optimized Approach** Monotone Chain. Sort once, build in O(N)."
     },
     {
       "type": "text",
@@ -802,7 +588,7 @@
     },
     {
       "type": "text",
-      "content": "**E. Complexity** $O(N \\log N)$."
+      "content": "**E. Complexity** O(N log N)."
     },
     {
       "type": "text",
@@ -839,12 +625,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function convexHull(points) {\n    points = [...new Set(points.map(p => p[0] + ',' + p[1]))].map(s => s.split(',').map(Number));\n    points.sort((a, b) => a[0] !== b[0] ? a[0] - b[0] : a[1] - b[1]);\n    if (points.length <= 1) return points;\n    function cross(o, a, b) {\n        return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);\n    }\n    const lower = [];\n    for (const p of points) {\n        while (lower.length >= 2 && cross(lower[lower.length-2], lower[lower.length-1], p) <= 0)\n            lower.pop();\n        lower.push(p);\n    }\n    const upper = [];\n    for (const p of points.reverse()) {\n        while (upper.length >= 2 && cross(upper[upper.length-2], upper[upper.length-1], p) <= 0)\n            upper.pop();\n        upper.push(p);\n    }\n    lower.pop();\n    upper.pop();\n    return lower.concat(upper);\n}",
-      "caption": null
-    },
-    {
       "type": "divider"
     },
     {
@@ -858,15 +638,15 @@
     },
     {
       "type": "text",
-      "content": "For convex polygons: binary search over fan of triangles from first vertex, $O(log N)$."
+      "content": "For convex polygons: binary search over fan of triangles from first vertex, O(log N)."
     },
     {
       "type": "text",
-      "content": "**B. Brute Force** Sum of signed angles method: $O(N)$ with expensive trig."
+      "content": "**B. Brute Force** Sum of signed angles method: O(N) with expensive trig."
     },
     {
       "type": "text",
-      "content": "**C. Optimized Approach** Ray casting with orientation tests. $O(N)$ per query, no trig."
+      "content": "**C. Optimized Approach** Ray casting with orientation tests. O(N) per query, no trig."
     },
     {
       "type": "text",
@@ -894,7 +674,7 @@
     },
     {
       "type": "text",
-      "content": "**E. Complexity** $O(N)$ per query (general). $O(log N)$ (convex with preprocessing)."
+      "content": "**E. Complexity** O(N) per query (general). O(log N) (convex with preprocessing)."
     },
     {
       "type": "text",
@@ -910,30 +690,12 @@
     },
     {
       "type": "text",
-      "content": "**G. Code (Convex Polygon, $O(log N)$)**"
+      "content": "**G. Code (Convex Polygon, O(log N))**"
     },
     {
       "type": "code",
       "lang": "python",
       "code": "def point_in_convex_polygon(point, hull):\n    \"\"\"hull in CCW order. O(log N).\"\"\"\n    n = len(hull)\n    if n < 3: return False\n    \n    o = orientation(hull[0], hull[1], point)\n    if o < 0: return False\n    if o == 0: return on_segment(hull[0], point, hull[1])\n    \n    lo, hi = 1, n\n    while hi - lo > 1:\n        mid = (lo + hi) // 2\n        if orientation(hull[0], hull[mid], point) >= 0:\n            lo = mid\n        else:\n            hi = mid\n    \n    if lo == n - 1:\n        return on_segment(hull[0], point, hull[n-1])\n    \n    return orientation(hull[lo], hull[lo+1], point) >= 0",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "cpp",
-      "code": "bool pointInConvexPolygon(vector<int> point, vector<vector<int>>& hull) {\n    int n = hull.size();\n    if (n < 3) return false;\n    long long o = orientation(hull[0], hull[1], point);\n    if (o < 0) return false;\n    if (o == 0) return onSegment(hull[0], point, hull[1]);\n    int lo = 1, hi = n;\n    while (hi - lo > 1) {\n        int mid = (lo + hi) / 2;\n        if (orientation(hull[0], hull[mid], point) >= 0) lo = mid;\n        else hi = mid;\n    }\n    if (lo == n - 1) return onSegment(hull[0], point, hull[n-1]);\n    return orientation(hull[lo], hull[lo+1], point) >= 0;\n}\n\nlong long orientation(vector<int> p, vector<int> q, vector<int> r) {\n    return (long long)(q[0]-p[0]) * (r[1]-p[1]) - (long long)(q[1]-p[1]) * (r[0]-p[0]);\n}\n\nbool onSegment(vector<int> p, vector<int> q, vector<int> r) {\n    return min(p[0], r[0]) <= q[0] && q[0] <= max(p[0], r[0]) &&\n           min(p[1], r[1]) <= q[1] && q[1] <= max(p[1], r[1]);\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "public static boolean pointInConvexPolygon(int[] point, int[][] hull) {\n    int n = hull.length;\n    if (n < 3) return false;\n    long o = orientation(hull[0], hull[1], point);\n    if (o < 0) return false;\n    if (o == 0) return onSegment(hull[0], point, hull[1]);\n    int lo = 1, hi = n;\n    while (hi - lo > 1) {\n        int mid = (lo + hi) / 2;\n        if (orientation(hull[0], hull[mid], point) >= 0) lo = mid;\n        else hi = mid;\n    }\n    if (lo == n - 1) return onSegment(hull[0], point, hull[n-1]);\n    return orientation(hull[lo], hull[lo+1], point) >= 0;\n}\nstatic long orientation(int[] p, int[] q, int[] r) {\n    return (long)(q[0]-p[0]) * (r[1]-p[1]) - (long)(q[1]-p[1]) * (r[0]-p[0]);\n}\nstatic boolean onSegment(int[] p, int[] q, int[] r) {\n    return Math.min(p[0], r[0]) <= q[0] && q[0] <= Math.max(p[0], r[0]) &&\n           Math.min(p[1], r[1]) <= q[1] && q[1] <= Math.max(p[1], r[1]);\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function pointInConvexPolygon(point, hull) {\n    const n = hull.length;\n    if (n < 3) return false;\n    const o = orientation(hull[0], hull[1], point);\n    if (o < 0) return false;\n    if (o === 0) return onSegment(hull[0], point, hull[1]);\n    let lo = 1, hi = n;\n    while (hi - lo > 1) {\n        const mid = Math.floor((lo + hi) / 2);\n        if (orientation(hull[0], hull[mid], point) >= 0) lo = mid;\n        else hi = mid;\n    }\n    if (lo === n - 1) return onSegment(hull[0], point, hull[n-1]);\n    return orientation(hull[lo], hull[lo+1], point) >= 0;\n}",
       "caption": null
     },
     {
@@ -950,11 +712,11 @@
     },
     {
       "type": "text",
-      "content": "**B. Brute Force** $O(N^2)$. Too slow for N > 10\u2074."
+      "content": "**B. Brute Force** O(N\u00b2). Too slow for N > 10\u2074."
     },
     {
       "type": "text",
-      "content": "**C. Optimized Approach** Divide and conquer, $O(N \\log N)$. Pre-sort all points by y to avoid repeated sorting."
+      "content": "**C. Optimized Approach** Divide and conquer, O(N log N). Pre-sort all points by y to avoid repeated sorting."
     },
     {
       "type": "text",
@@ -972,7 +734,7 @@
     },
     {
       "type": "text",
-      "content": "**E. Complexity** $O(N \\log N)$."
+      "content": "**E. Complexity** O(N log N)."
     },
     {
       "type": "text",
@@ -1000,11 +762,11 @@
     },
     {
       "type": "text",
-      "content": "**A. Intuition** DP recurrence: dp[i] = max(dp[j] + a\u00b7(sum[i]-sum[j])^2 + b\u00b7(sum[i]-sum[j]) + c). Expand to: dp[i] = max(intercept[j] + slope[j]\u00b7sum[i]). This is the classic CHT form."
+      "content": "**A. Intuition** DP recurrence: dp[i] = max(dp[j] + a\u00b7(sum[i]-sum[j])\u00b2 + b\u00b7(sum[i]-sum[j]) + c). Expand to: dp[i] = max(intercept[j] + slope[j]\u00b7sum[i]). This is the classic CHT form."
     },
     {
       "type": "text",
-      "content": "**B. Brute Force** $O(N^2)$ \u2014 check all j for each i."
+      "content": "**B. Brute Force** O(N\u00b2) \u2014 check all j for each i."
     },
     {
       "type": "text",
@@ -1012,7 +774,7 @@
     },
     {
       "type": "text",
-      "content": "**D. Complexity** $O(N)$."
+      "content": "**D. Complexity** O(N)."
     },
     {
       "type": "text",
@@ -1025,33 +787,8 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "cpp",
-      "code": "long long commando(int N, long long a, long long b, long long c, vector<long long>& xs) {\n    vector<long long> prefix(N+1, 0);\n    for (int i = 0; i < N; i++) prefix[i+1] = prefix[i] + xs[i];\n    vector<long long> dp(N+1, 0);\n    deque<int> dq;\n    dq.push_back(0);\n    auto value = [&](int j, long long x) {\n        return (-2*a*prefix[j]) * x + (a*prefix[j]*prefix[j] - b*prefix[j] + dp[j]);\n    };\n    auto cross = [&](int l1, int l2, int l3) {\n        __int128 a1 = -2*a*prefix[l1]; __int128 b1 = a*prefix[l1]*prefix[l1] - b*prefix[l1] + dp[l1];\n        __int128 a2 = -2*a*prefix[l2]; __int128 b2 = a*prefix[l2]*prefix[l2] - b*prefix[l2] + dp[l2];\n        __int128 a3 = -2*a*prefix[l3]; __int128 b3 = a*prefix[l3]*prefix[l3] - b*prefix[l3] + dp[l3];\n        return (b2 - b1) * (a3 - a2) >= (b3 - b2) * (a2 - a1);\n    };\n    for (int i = 1; i <= N; i++) {\n        while (dq.size() >= 2 && value(dq[0], prefix[i]) <= value(dq[1], prefix[i]))\n            dq.pop_front();\n        int j = dq[0];\n        long long x = prefix[i] - prefix[j];\n        dp[i] = dp[j] + a*x*x + b*x + c;\n        while (dq.size() >= 2 && cross(dq[dq.size()-2], dq.back(), i))\n            dq.pop_back();\n        dq.push_back(i);\n    }\n    return dp[N];\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "public static long commando(int N, long a, long b, long c, int[] xs) {\n    long[] prefix = new long[N+1];\n    for (int i = 0; i < N; i++) prefix[i+1] = prefix[i] + xs[i];\n    long[] dp = new long[N+1];\n    Deque<Integer> dq = new ArrayDeque<>();\n    dq.addLast(0);\n    for (int i = 1; i <= N; i++) {\n        while (dq.size() >= 2 && value(dq.peekFirst(), dq.peekFirst()+1, prefix[i], prefix, dp, a, b))\n            dq.pollFirst();\n        int j = dq.peekFirst();\n        long x = prefix[i] - prefix[j];\n        dp[i] = dp[j] + a*x*x + b*x + c;\n        while (dq.size() >= 2 && cross(dq.get(dq.size()-2), dq.getLast(), i, prefix, dp, a))\n            dq.pollLast();\n        dq.addLast(i);\n    }\n    return dp[N];\n}\nstatic boolean value(int j1, int j2, long x, long[] prefix, long[] dp, long a, long b) {\n    return (-2*a*prefix[j1])*x + (a*prefix[j1]*prefix[j1] - b*prefix[j1] + dp[j1]) <=\n           (-2*a*prefix[j2])*x + (a*prefix[j2]*prefix[j2] - b*prefix[j2] + dp[j2]);\n}\nstatic boolean cross(int l1, int l2, int l3, long[] prefix, long[] dp, long a) {\n    long a1 = -2*a*prefix[l1], b1 = a*prefix[l1]*prefix[l1] + dp[l1];\n    long a2 = -2*a*prefix[l2], b2 = a*prefix[l2]*prefix[l2] + dp[l2];\n    long a3 = -2*a*prefix[l3], b3 = a*prefix[l3]*prefix[l3] + dp[l3];\n    return (b2 - b1) * (a3 - a2) >= (b3 - b2) * (a2 - a1);\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function commando(N, a, b, c, xs) {\n    const prefix = new Array(N+1).fill(0);\n    for (let i = 0; i < N; i++) prefix[i+1] = prefix[i] + xs[i];\n    const dp = new Array(N+1).fill(0);\n    const dq = [0];\n    function value(j, x) {\n        return (-2*a*prefix[j]) * x + (a*prefix[j]**2 - b*prefix[j] + dp[j]);\n    }\n    function cross(l1, l2, l3) {\n        const a1 = -2*a*prefix[l1], b1 = a*prefix[l1]**2 - b*prefix[l1] + dp[l1];\n        const a2 = -2*a*prefix[l2], b2 = a*prefix[l2]**2 - b*prefix[l2] + dp[l2];\n        const a3 = -2*a*prefix[l3], b3 = a*prefix[l3]**2 - b*prefix[l3] + dp[l3];\n        return (b2 - b1) * (a3 - a2) >= (b3 - b2) * (a2 - a1);\n    }\n    for (let i = 1; i <= N; i++) {\n        while (dq.length >= 2 && value(dq[0], prefix[i]) <= value(dq[1], prefix[i]))\n            dq.shift();\n        const j = dq[0];\n        const x = prefix[i] - prefix[j];\n        dp[i] = dp[j] + a*x*x + b*x + c;\n        while (dq.length >= 2 && cross(dq[dq.length-2], dq[dq.length-1], i))\n            dq.pop();\n        dq.push(i);\n    }\n    return dp[N];\n}",
-      "caption": null
-    },
-    {
       "type": "divider"
     }
   ],
-  "difficulty": "Expert",
-  "problem_urls": {
-    "Problem 1": "https://leetcode.com/problems/erect-the-fence/",
-    "Problem 2": "https://codeforces.com/problemset/problem/166/B",
-    "Problem 3": "https://www.spoj.com/problems/CONVEX/",
-    "Problem 4": "https://codeforces.com/problemset/problem/245/H",
-    "Problem 5": "https://www.geeksforgeeks.org/convex-hull-using-divide-and-conquer-algorithm/"
-  }
+  "difficulty": "Expert"
 }

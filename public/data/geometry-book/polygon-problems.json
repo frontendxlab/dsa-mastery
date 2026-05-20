@@ -12,6 +12,18 @@
       "text": "Chapter 10: Polygon Problems"
     },
     {
+      "type": "text",
+      "content": "**\ud83c\udfaf Learning Objectives \u2014 By the end of this chapter, you will be able to:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Classify polygons as convex/concave and regular/irregular",
+        "Compute polygon area using the shoelace formula and understand why it works",
+        "Solve point-in-polygon, polygon union, and polygon intersection problems"
+      ]
+    },
+    {
       "type": "heading",
       "level": 3,
       "text": "1. INTRODUCTION"
@@ -52,22 +64,12 @@
       "text": "2.2 Shoelace Formula (Area of Polygon)"
     },
     {
-      "type": "interactive_diagram",
-      "diagram": "shoelace-explorer",
-      "caption": "Click to add vertices and see the shoelace area calculation step by step."
-    },
-    {
-      "type": "hint_card",
-      "question": "Why does vertex ordering matter in the shoelace formula?",
-      "answer": "The shoelace formula computes signed area. If vertices are counterclockwise, the result is positive; clockwise gives negative. Always use absolute value. Joining vertices out of order produces a self-intersecting polygon with incorrect (or unpredictable) area."
-    },
-    {
       "type": "text",
       "content": "For a polygon with vertices (x0, y0), (x1, y1), ..., (x_{n-1}, y_{n-1}):"
     },
     {
       "type": "text",
-      "content": "$\\text{Area} = 0.5 \\times |\\sum (x_i \\times y_{i+1} - x_{i+1} \\times y_i)|$"
+      "content": "Area = 0.5 * |\u03a3 (xi * y_{i+1} - x_{i+1} * yi)|"
     },
     {
       "type": "text",
@@ -96,16 +98,11 @@
     },
     {
       "type": "text",
-      "content": "$\\text{cross} = (B.x - A.x) \\times (C.y - B.y) - (B.y - A.y) \\times (C.x - B.x)$"
+      "content": "cross = (B.x - A.x) * (C.y - B.y) - (B.y - A.y) * (C.x - B.x)"
     },
     {
       "type": "text",
       "content": "If all cross products have the same sign (or zero for collinear), the polygon is convex."
-    },
-    {
-      "type": "hint_card",
-      "question": "What if all cross products are zero?",
-      "answer": "That means every three consecutive vertices are collinear \u2014 your polygon is a straight line or single point (degenerate). You need at least one non-zero cross product to determine the expected orientation."
     },
     {
       "type": "heading",
@@ -115,16 +112,6 @@
     {
       "type": "text",
       "content": "**Ray casting algorithm:**"
-    },
-    {
-      "type": "interactive_diagram",
-      "diagram": "point-in-polygon",
-      "caption": "Cast rays from a point to determine if it lies inside or outside a polygon."
-    },
-    {
-      "type": "hint_card",
-      "question": "When a ray passes exactly through a vertex, does it count as 1 crossing or 2?",
-      "answer": "It should count as 1 or 2 depending on whether the two incident edges are on opposite sides of the ray. Standard implementations handle this by using a half-open interval \u2014 if the ray intersects an edge at its upper endpoint, count it; if at the lower endpoint, skip it. This avoids double-counting."
     },
     {
       "type": "list",
@@ -142,7 +129,7 @@
       "type": "list",
       "items": [
         "Sum the signed angles subtended by each edge as seen from the point.",
-        "If the sum is $2\\pi$ (or 360 degrees), the point is inside."
+        "If the sum is 2\u03c0 (or 360 degrees), the point is inside."
       ]
     },
     {
@@ -156,7 +143,7 @@
     },
     {
       "type": "text",
-      "content": "$\\text{Perimeter} = \\sum \\sqrt{(x_{i+1} - x_i)^2 + (y_{i+1} - y_i)^2}$"
+      "content": "Perimeter = \u03a3 sqrt((x_{i+1} - xi)^2 + (y_{i+1} - yi)^2)"
     },
     {
       "type": "heading",
@@ -165,7 +152,7 @@
     },
     {
       "type": "text",
-      "content": "$C_x = \\frac{1}{6 \\cdot \\text{Area}} \\sum (x_i + x_{i+1})(x_i y_{i+1} - x_{i+1} y_i)$ $C_y = \\frac{1}{6 \\cdot \\text{Area}} \\sum (y_i + y_{i+1})(x_i y_{i+1} - x_{i+1} y_i)$"
+      "content": "Cx = (1 / (6 * Area)) * \u03a3 (xi + x_{i+1}) * (xi * y_{i+1} - x_{i+1} * yi) Cy = (1 / (6 * Area)) * \u03a3 (yi + y_{i+1}) * (xi * y_{i+1} - x_{i+1} * yi)"
     },
     {
       "type": "heading",
@@ -175,12 +162,12 @@
     {
       "type": "list",
       "items": [
-        "$n$ sides, each of length $s$",
-        "Interior angle = $(n-2) \\times 180 / n$ degrees",
-        "Exterior angle = $360 / n$ degrees",
-        "Circumradius $R = s / (2 \\times \\sin(\\pi / n))$",
-        "Inradius $r = s / (2 \\times \\tan(\\pi / n))$",
-        "Area = $(n \\times s^2) / (4 \\times \\tan(\\pi / n))$"
+        "n sides, each of length s",
+        "Interior angle = (n-2) * 180 / n degrees",
+        "Exterior angle = 360 / n degrees",
+        "Circumradius R = s / (2 * sin(\u03c0 / n))",
+        "Inradius r = s / (2 * tan(\u03c0 / n))",
+        "Area = (n * s^2) / (4 * tan(\u03c0 / n))"
       ]
     },
     {
@@ -191,51 +178,6 @@
     {
       "type": "text",
       "content": "**Common keywords and phrases:**"
-    },
-    {
-      "type": "keyword_badges",
-      "groups": [
-        {
-          "label": "shoelace formula",
-          "color": "indigo"
-        },
-        {
-          "label": "convex polygon",
-          "color": "emerald"
-        },
-        {
-          "label": "concave polygon",
-          "color": "amber"
-        },
-        {
-          "label": "point in polygon (PIP)",
-          "color": "rose"
-        },
-        {
-          "label": "ray casting",
-          "color": "cyan"
-        },
-        {
-          "label": "regular polygon",
-          "color": "violet"
-        },
-        {
-          "label": "centroid / center of mass",
-          "color": "orange"
-        },
-        {
-          "label": "polygon perimeter",
-          "color": "pink"
-        },
-        {
-          "label": "convex hull",
-          "color": "sky"
-        },
-        {
-          "label": "signed area / cross product",
-          "color": "red"
-        }
-      ]
     },
     {
       "type": "list",
@@ -292,11 +234,11 @@
     },
     {
       "type": "text",
-      "content": "**Why it works:** Simple $O(N)$ computation, no complex math needed."
+      "content": "**Why it works:** Simple O(N) computation, no complex math needed."
     },
     {
       "type": "text",
-      "content": "**Complexity:** $O(N)$."
+      "content": "**Complexity:** O(N)."
     },
     {
       "type": "text",
@@ -330,7 +272,7 @@
     },
     {
       "type": "text",
-      "content": "**Why it works:** The ray casting algorithm is simple, $O(N)$ per query, and handles convex and concave polygons."
+      "content": "**Why it works:** The ray casting algorithm is simple, O(N) per query, and handles convex and concave polygons."
     },
     {
       "type": "text",
@@ -382,12 +324,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function polygonArea(vertices) {\n    const n = vertices.length;\n    let area = 0;\n    for (let i = 0; i < n; i++) {\n        const [x1, y1] = vertices[i];\n        const [x2, y2] = vertices[(i + 1) % n];\n        area += x1 * y2 - x2 * y1;\n    }\n    return Math.abs(area) / 2;\n}",
-      "caption": null
-    },
-    {
       "type": "heading",
       "level": 4,
       "text": "Convex Polygon Check"
@@ -408,12 +344,6 @@
       "type": "code",
       "lang": "java",
       "code": "public static long cross(int[] o, int[] a, int[] b) {\n    return (long)(a[0] - o[0]) * (b[1] - o[1]) -\n           (long)(a[1] - o[1]) * (b[0] - o[0]);\n}\n\npublic static boolean isConvex(int[][] vertices) {\n    int n = vertices.length;\n    if (n < 3) return false;\n    Boolean sign = null;\n    for (int i = 0; i < n; i++) {\n        long c = cross(vertices[i], vertices[(i+1)%n], vertices[(i+2)%n]);\n        if (c != 0) {\n            if (sign == null) sign = c > 0;\n            else if ((c > 0) != sign) return false;\n        }\n    }\n    return true;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function cross(o, a, b) {\n    return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);\n}\n\nfunction isConvex(vertices) {\n    const n = vertices.length;\n    if (n < 3) return false;\n    let sign = null;\n    for (let i = 0; i < n; i++) {\n        const c = cross(vertices[i], vertices[(i + 1) % n], vertices[(i + 2) % n]);\n        if (c !== 0) {\n            if (sign === null) sign = c > 0;\n            else if ((c > 0) !== sign) return false;\n        }\n    }\n    return true;\n}",
       "caption": null
     },
     {
@@ -440,12 +370,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function pointInPolygon(point, vertices) {\n    const [x, y] = point;\n    const n = vertices.length;\n    let inside = false;\n    for (let i = 0; i < n; i++) {\n        const [x1, y1] = vertices[i];\n        const [x2, y2] = vertices[(i + 1) % n];\n        if ((y1 > y) !== (y2 > y)) {\n            const xIntersect = x1 + (x2 - x1) * (y - y1) / (y2 - y1);\n            if (x < xIntersect) inside = !inside;\n        }\n    }\n    return inside;\n}",
-      "caption": null
-    },
-    {
       "type": "heading",
       "level": 4,
       "text": "Polygon Perimeter"
@@ -466,12 +390,6 @@
       "type": "code",
       "lang": "java",
       "code": "public static double polygonPerimeter(int[][] vertices) {\n    int n = vertices.length;\n    double perim = 0;\n    for (int i = 0; i < n; i++) {\n        double dx = vertices[i][0] - vertices[(i+1)%n][0];\n        double dy = vertices[i][1] - vertices[(i+1)%n][1];\n        perim += Math.sqrt(dx*dx + dy*dy);\n    }\n    return perim;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function polygonPerimeter(vertices) {\n    const n = vertices.length;\n    let perim = 0;\n    for (let i = 0; i < n; i++) {\n        const [x1, y1] = vertices[i];\n        const [x2, y2] = vertices[(i + 1) % n];\n        perim += Math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2);\n    }\n    return perim;\n}",
       "caption": null
     },
     {
@@ -664,11 +582,6 @@
       "content": "**A. Intuition:** Interior angle of regular n-gon = (n-2)*180/n. For a given A, n must be an integer >= 3."
     },
     {
-      "type": "hint_card",
-      "question": "Interior vs exterior angle: which is the complement of the other?",
-      "answer": "For any polygon, interior + exterior = 180\u00b0 (they are supplementary). Exterior angle = 360\u00b0/n is often simpler because it only depends on n, not on the polygon's shape."
-    },
-    {
       "type": "text",
       "content": "**B. Brute Force:** Try n from 3 upward until the interior angle matches A."
     },
@@ -695,8 +608,8 @@
     {
       "type": "list",
       "items": [
-        "Time: $O(1)$.",
-        "Space: $O(1)$."
+        "Time: O(1).",
+        "Space: O(1)."
       ]
     },
     {
@@ -734,12 +647,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function fancyFence(angle) {\n    if (360 % (180 - angle) === 0) {\n        const n = 360 / (180 - angle);\n        return n >= 3;\n    }\n    return false;\n}",
-      "caption": null
-    },
-    {
       "type": "divider"
     },
     {
@@ -761,7 +668,7 @@
     },
     {
       "type": "text",
-      "content": "**C. Optimized Approach:** Use the shoelace formula directly in $O(N)$."
+      "content": "**C. Optimized Approach:** Use the shoelace formula directly in O(N)."
     },
     {
       "type": "text",
@@ -794,8 +701,8 @@
     {
       "type": "list",
       "items": [
-        "Time: $O(N)$.",
-        "Space: $O(1)$."
+        "Time: O(N).",
+        "Space: O(1)."
       ]
     },
     {
@@ -830,12 +737,6 @@
       "type": "code",
       "lang": "java",
       "code": "import java.util.*;\n\npublic class PolygonArea {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        long[] x = new long[n], y = new long[n];\n        for (int i = 0; i < n; i++) { x[i] = sc.nextLong(); y[i] = sc.nextLong(); }\n        \n        long area = 0;\n        for (int i = 0; i < n; i++) {\n            int j = (i + 1) % n;\n            area += x[i] * y[j] - x[j] * y[i];\n        }\n        \n        area = Math.abs(area);\n        System.out.print(area / 2);\n        if (area % 2 != 0) System.out.print(\".5\");\n        System.out.println();\n    }\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function polygonArea(vertices) {\n    const n = vertices.length;\n    let area = 0;\n    for (let i = 0; i < n; i++) {\n        const [x1, y1] = vertices[i];\n        const [x2, y2] = vertices[(i + 1) % n];\n        area += x1 * y2 - x2 * y1;\n    }\n    return Math.abs(area) / 2;\n}",
       "caption": null
     },
     {
@@ -883,8 +784,8 @@
     {
       "type": "list",
       "items": [
-        "Time: $O(N)$.",
-        "Space: $O(1)$."
+        "Time: O(N).",
+        "Space: O(1)."
       ]
     },
     {
@@ -910,31 +811,8 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "cpp",
-      "code": "bool isConvex(vector<vector<int>>& points) {\n    int n = points.size();\n    if (n < 3) return false;\n    auto cross = [&](int oi, int ai, int bi) {\n        int ox = points[oi][0], oy = points[oi][1];\n        int ax = points[ai][0], ay = points[ai][1];\n        int bx = points[bi][0], by = points[bi][1];\n        return (long long)(ax - ox) * (by - oy) - (long long)(ay - oy) * (bx - ox);\n    };\n    bool sign = false;\n    bool set = false;\n    for (int i = 0; i < n; i++) {\n        long long c = cross(i, (i+1)%n, (i+2)%n);\n        if (c != 0) {\n            if (!set) { sign = c > 0; set = true; }\n            else if ((c > 0) != sign) return false;\n        }\n    }\n    return true;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "public boolean isConvex(int[][] points) {\n    int n = points.length;\n    if (n < 3) return false;\n    Boolean sign = null;\n    for (int i = 0; i < n; i++) {\n        long c = cross(points[i], points[(i+1)%n], points[(i+2)%n]);\n        if (c != 0) {\n            if (sign == null) sign = c > 0;\n            else if ((c > 0) != sign) return false;\n        }\n    }\n    return true;\n}\n\nstatic long cross(int[] o, int[] a, int[] b) {\n    return (long)(a[0] - o[0]) * (b[1] - o[1]) - (long)(a[1] - o[1]) * (b[0] - o[0]);\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function cross(o, a, b) {\n    return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);\n}\n\nfunction isConvex(vertices) {\n    const n = vertices.length;\n    if (n < 3) return false;\n    let sign = null;\n    for (let i = 0; i < n; i++) {\n        const c = cross(vertices[i], vertices[(i + 1) % n], vertices[(i + 2) % n]);\n        if (c !== 0) {\n            if (sign === null) sign = c > 0;\n            else if ((c > 0) !== sign) return false;\n        }\n    }\n    return true;\n}",
-      "caption": null
-    },
-    {
       "type": "divider"
     }
   ],
-  "difficulty": "Intermediate",
-  "problem_urls": {
-    "Problem 1": "https://codeforces.com/problemset/problem/270/A",
-    "Problem 2": "https://cses.fi/problemset/task/2191",
-    "Problem 3": "https://leetcode.com/problems/convex-polygon/"
-  }
+  "difficulty": "Intermediate"
 }

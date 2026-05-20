@@ -1,5 +1,8 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
-import { useEffect, useState, useMemo } from 'react'
+import { useEffect, useState, useMemo, useRef, useCallback } from 'react'
+import useMeasure from 'react-use-measure'
+import { motion } from 'framer-motion'
+import { ChevronRight, Folder, FolderOpen, FileText, BookOpen } from 'lucide-react'
 import { CHAPTER_DIAGRAMS } from '#/components/GeometryDiagrams'
 import {
   GridBuilder, ShapeRotationViewer, PerimeterExplorer, ProjectionViewer,
@@ -60,6 +63,13 @@ const INTERACTIVE_DIAGRAMS: Record<string, React.FC> = {
   'orientation-explorer': OrientationExplorer,
 }
 
+const PARTS = [
+  { name: 'Part I — Foundations', range: [1, 2, 3, 4], description: 'Core concepts, shapes, triangles, and right triangles.' },
+  { name: 'Part II — Planar Shapes', range: [5, 6, 7, 8], description: 'Rectangles, circles, coordinate geometry, and lines.' },
+  { name: 'Part III — Spatial Reasoning', range: [9, 10, 11], description: 'Distance, polygons, and grid-based geometry.' },
+  { name: 'Part IV — Computation & Analysis', range: [12, 13, 14, 15], description: 'Area, angles, computational geometry, and advanced algorithms.' },
+]
+
 const PROBLEM_URLS: Record<string, string> = {
   'Problem 1': 'https://leetcode.com/problems/valid-boomerang/',
   'Problem 2': 'https://codeforces.com/problemset/problem/498/A',
@@ -88,6 +98,69 @@ const CALLOUT_CONFIG: { label: string; emoji: string; cls: string; desc: string 
   { label: 'What makes right triangles special?', emoji: '❓', cls: 'callout-what', desc: 'What makes right triangles special' },
   { label: 'What makes triangles special?', emoji: '❓', cls: 'callout-what', desc: 'What makes triangles special' },
 ]
+
+// ── Section metadata for visual containers ──────────────────────
+interface SectionMeta {
+  slug: string
+  label: string
+  num: number
+  icon: string
+  color: string
+  desc: string
+}
+
+const SECTION_META: SectionMeta[] = [
+  { slug: 'introduction', label: 'Introduction', num: 1, icon: '🎯', color: '#3b82f6', desc: 'What this chapter covers and why it matters' },
+  { slug: 'core-concepts', label: 'Core Concepts', num: 2, icon: '📖', color: '#8b5cf6', desc: 'Foundational ideas, formulas, and algorithms' },
+  { slug: 'problem-recognition', label: 'Problem Recognition', num: 3, icon: '🔍', color: '#06b6d4', desc: 'How to spot this type of problem in interviews' },
+  { slug: 'pattern-analysis', label: 'Pattern Analysis', num: 4, icon: '🧩', color: '#10b981', desc: 'Reusable solution patterns with complexity analysis' },
+  { slug: 'reusable-coding-templates', label: 'Coding Templates', num: 5, icon: '⚡', color: '#f59e0b', desc: 'Production-ready code templates you can adapt' },
+  { slug: 'curated-real-problems', label: 'Curated Problems', num: 6, icon: '🏆', color: '#ef4444', desc: 'Hand-picked problems from top coding platforms' },
+  { slug: 'generated-practice-problems', label: 'Practice Problems', num: 7, icon: '✏️', color: '#ec4899', desc: 'Original problems to test your understanding' },
+  { slug: 'complete-solution-section', label: 'Solutions', num: 8, icon: '✅', color: '#14b8a6', desc: 'Step-by-step solutions with intuition and code' },
+]
+
+function detectSection(headingText: string): SectionMeta | null {
+  const lower = headingText.toLowerCase()
+  for (const meta of SECTION_META) {
+    if (lower.includes(meta.slug.replace(/-/g, ' '))) return meta
+  }
+  // Fallback patterns
+  if (/^introduction/i.test(headingText)) return SECTION_META[0]
+  if (/^core concept/i.test(headingText)) return SECTION_META[1]
+  if (/^problem recogni/i.test(headingText)) return SECTION_META[2]
+  if (/^pattern/i.test(headingText)) return SECTION_META[3]
+  if (/^template|reusable coding/i.test(headingText)) return SECTION_META[4]
+  if (/^curated|real problem/i.test(headingText)) return SECTION_META[5]
+  if (/^practice|generated problem/i.test(headingText)) return SECTION_META[6]
+  if (/^solution|complete solution/i.test(headingText)) return SECTION_META[7]
+  return null
+}
+
+interface SectionGroup {
+  meta: SectionMeta
+  headingText: string
+  blocks: any[]
+}
+
+function groupSections(blocks: any[]): SectionGroup[] {
+  const sections: SectionGroup[] = []
+  let current: SectionGroup | null = null
+  for (const block of blocks) {
+    if (block.type === 'heading' && block.level === 2) {
+      const meta = detectSection(block.text ?? '')
+      if (meta) {
+        current = { meta, headingText: block.text ?? '', blocks: [] }
+        sections.push(current)
+        continue
+      }
+    }
+    if (current) {
+      current.blocks.push(block)
+    }
+  }
+  return sections
+}
 
 function escapeHtml(text: string): string {
   return text.replace(/</g, '&lt;').replace(/>/g, '&gt;')
@@ -164,8 +237,91 @@ function TldrCard({ chapter }: { chapter: number }) {
   )
 }
 
+function PartFolder({ part, chapters, currentSlug, color, isOpen, onToggle, onNav }: {
+  part: typeof PARTS[0]
+  chapters: { chapter: number; slug: string; title: string }[]
+  currentSlug: string
+  color: string
+  isOpen: boolean
+  onToggle: () => void
+  onNav: () => void
+}) {
+  const [contentRef, contentBounds] = useMeasure()
+
+  return (
+    <div className="gb-sidebar-part">
+      <button className="gb-sidebar-part-trigger" onClick={onToggle}>
+        <motion.span
+          className="gb-sidebar-part-chevron"
+          animate={{ rotate: isOpen ? 90 : 0 }}
+          transition={{ duration: 0.2 }}
+        >
+          <ChevronRight size={14} />
+        </motion.span>
+        <span className="gb-sidebar-part-folder-icon">
+          {isOpen ? <FolderOpen size={15} /> : <Folder size={15} />}
+        </span>
+        <span className="gb-sidebar-part-name">{part.name}</span>
+      </button>
+      <motion.div
+        className="gb-sidebar-part-content"
+        initial={false}
+        animate={{
+          height: isOpen ? contentBounds.height : 0,
+          opacity: isOpen ? 1 : 0,
+        }}
+        transition={{ duration: 0.22, ease: [0.23, 1, 0.32, 1] }}
+        style={{ overflow: 'hidden' }}
+      >
+        <div ref={contentRef}>
+          <div className="gb-sidebar-part-inner">
+            {chapters.map(ch => {
+              const isActive = ch.slug === currentSlug
+              return (
+                <Link
+                  key={ch.chapter}
+                  to="/geometry-book/$chapterSlug"
+                  params={{ chapterSlug: ch.slug }}
+                  className={`gb-sidebar-file${isActive ? ' gb-sidebar-file-active' : ''}`}
+                  onClick={onNav}
+                  style={isActive ? {
+                    background: `${color}10`,
+                    borderLeftColor: color,
+                  } : undefined}
+                >
+                  {isActive ? (
+                    <BookOpen size={13} className="gb-sidebar-file-icon gb-sidebar-file-icon-active" />
+                  ) : (
+                    <FileText size={13} className="gb-sidebar-file-icon" />
+                  )}
+                  <span className="gb-sidebar-file-title">{ch.title}</span>
+                </Link>
+              )
+            })}
+          </div>
+        </div>
+      </motion.div>
+    </div>
+  )
+}
+
 function Sidebar({ chapters, currentSlug, color }: { chapters: { chapter: number; slug: string; title: string }[]; currentSlug: string; color: string }) {
   const [open, setOpen] = useState(false)
+  const [openParts, setOpenParts] = useState<string[]>(() => {
+    const currentCh = chapters.find(c => c.slug === currentSlug)
+    if (currentCh) {
+      const partName = PARTS.find(p => p.range.includes(currentCh.chapter))?.name
+      return partName ? [partName] : []
+    }
+    return []
+  })
+
+  const togglePart = (name: string) => {
+    setOpenParts(prev =>
+      prev.includes(name) ? prev.filter(n => n !== name) : [...prev, name]
+    )
+  }
+
   return (
     <>
       <button className="gb-sidebar-toggle" onClick={() => setOpen(o => !o)}>
@@ -175,25 +331,106 @@ function Sidebar({ chapters, currentSlug, color }: { chapters: { chapter: number
       {open && <div className="gb-sidebar-overlay" onClick={() => setOpen(false)} />}
       <aside className={`gb-sidebar${open ? ' gb-sidebar-open' : ''}`}>
         <div className="gb-sidebar-header">
-          <h3 className="gb-sidebar-title">Chapters</h3>
+          <div className="gb-sidebar-header-left">
+            <BookOpen size={16} className="gb-sidebar-header-icon" />
+            <h3 className="gb-sidebar-title">Chapters</h3>
+          </div>
+          <span className="gb-sidebar-count">{chapters.length}</span>
           <button className="gb-sidebar-close" onClick={() => setOpen(false)}>✕</button>
         </div>
         <nav className="gb-sidebar-nav">
-          {chapters.map(ch => (
-            <Link key={ch.chapter} to="/geometry-book/$chapterSlug" params={{ chapterSlug: ch.slug }}
-              className={`gb-sidebar-link${ch.slug === currentSlug ? ' gb-sidebar-link-active' : ''}`}
-              onClick={() => setOpen(false)}
-              style={ch.slug === currentSlug ? { borderLeftColor: color, background: `${color}10` } : undefined}>
-              <span className="gb-sidebar-ch-num" style={ch.slug === currentSlug ? { background: color } : undefined}>{ch.chapter}</span>
-              <span className="gb-sidebar-ch-title">{ch.title}</span>
-            </Link>
-          ))}
+          {PARTS.map((part) => {
+            const partChapters = chapters.filter(c => part.range.includes(c.chapter))
+            if (partChapters.length === 0) return null
+            return (
+              <PartFolder
+                key={part.name}
+                part={part}
+                chapters={partChapters}
+                currentSlug={currentSlug}
+                color={color}
+                isOpen={openParts.includes(part.name)}
+                onToggle={() => togglePart(part.name)}
+                onNav={() => setOpen(false)}
+              />
+            )
+          })}
         </nav>
         <div className="gb-sidebar-footer">
           <Link to="/geometry-book" className="gb-sidebar-back">← TOC</Link>
         </div>
       </aside>
     </>
+  )
+}
+
+// ── In-Page Section TOC ───────────────────────────────────────────
+function SectionTOC({ sections, chColor }: { sections: SectionGroup[]; chColor: string }) {
+  const [activeId, setActiveId] = useState<string>('')
+  const [open, setOpen] = useState(false)
+  const observerRef = useRef<IntersectionObserver | null>(null)
+
+  useEffect(() => {
+    if (sections.length === 0) return
+    const ids = sections.map((_, i) => `gb-section-${i}`)
+    const elements = ids.map(id => document.getElementById(id)).filter(Boolean)
+    if (elements.length === 0) return
+
+    observerRef.current?.disconnect()
+    observerRef.current = new IntersectionObserver(
+      (entries) => {
+        // Find the first visible section
+        const visible = entries
+          .filter(e => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)
+        if (visible.length > 0) {
+          setActiveId(visible[0].target.id)
+        }
+      },
+      { rootMargin: '-96px 0px -60% 0px', threshold: 0 }
+    )
+    elements.forEach(el => observerRef.current?.observe(el!))
+    return () => observerRef.current?.disconnect()
+  }, [sections])
+
+  if (sections.length <= 1) return null
+
+  return (
+    <nav className="gb-section-toc">
+      <button className="gb-section-toc-toggle" onClick={() => setOpen(o => !o)}>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <line x1="4" y1="6" x2="20" y2="6" /><line x1="4" y1="12" x2="20" y2="12" /><line x1="4" y1="18" x2="20" y2="18" />
+        </svg>
+        <span className="gb-section-toc-toggle-label">Sections</span>
+        <span className="gb-section-toc-count">{sections.length}</span>
+      </button>
+      {open && (
+        <div className="gb-section-toc-dropdown">
+          <div className="gb-section-toc-header">On this page</div>
+          {sections.map((sec, i) => {
+            const id = `gb-section-${i}`
+            const isActive = id === activeId
+            return (
+              <a
+                key={i}
+                href={`#${id}`}
+                className={`gb-section-toc-link${isActive ? ' active' : ''}`}
+                style={isActive ? { color: sec.meta.color, borderLeftColor: sec.meta.color } : undefined}
+                onClick={(e) => {
+                  e.preventDefault()
+                  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+                  setOpen(false)
+                }}
+              >
+                <span className="gb-section-toc-num" style={{ color: sec.meta.color }}>{sec.meta.num}</span>
+                <span className="gb-section-toc-icon">{sec.meta.icon}</span>
+                <span className="gb-section-toc-label">{sec.meta.label}</span>
+              </a>
+            )
+          })}
+        </div>
+      )}
+    </nav>
   )
 }
 
@@ -268,6 +505,8 @@ function ChapterPage() {
     return result
   }, [ch])
 
+  const sections = useMemo(() => groupSections(processedBlocks), [processedBlocks])
+
   if (loading) return (
     <main className="mx-auto max-w-7xl px-4 pb-20 pt-24 sm:pt-28">
       <div className="flex items-center justify-center py-32"><div className="gb-loader" /></div>
@@ -299,149 +538,178 @@ function ChapterPage() {
         {/* Chapter diagram */}
         {ChapterDiagram && <div className="gb-diagram-wrap"><ChapterDiagram /></div>}
 
-        {/* Content blocks */}
+        {/* In-page Section TOC */}
+        <SectionTOC sections={sections} chColor={chColor} />
+
+        {/* Content blocks — grouped by sections */}
         <div className="gb-content">
-          {processedBlocks.map((block: any, i: number) => {
-            if (block.type === 'code_tabs') {
-              return <CodeTabs key={i} blocks={block.blocks} />
-            }
-            // Debug: log any unexpected types
-            if (['code_tabs','badge_card','heading','text','code','table','list','divider','interactive_diagram','hint_card','keyword_badges'].indexOf(block.type) === -1) {
-              console.warn('Unknown block type:', block.type, block)
-            }
-            if (block.type === 'badge_card') {
-              const label = block.header.replace(/^\*\*(.+?)\*\*:?\s*$/, '$1')
-              return (
-                <div key={i} className="gb-badge-card">
-                  <div className="gb-badge-card-header">{escapeHtml(label)}</div>
-                  <div className="gb-badge-card-items">
-                    {block.items.map((item: string, j: number) => (
-                      <span key={j} className="gb-badge-item" dangerouslySetInnerHTML={{ __html: renderInlineMath(inlineMarkdown(item)) }} />
-                    ))}
+          {sections.map((sec, si) => {
+            const secId = `gb-section-${si}`
+            const secColor = sec.meta.color
+            return (
+              <section
+                key={si}
+                id={secId}
+                className="gb-section-wrap"
+                style={{ borderLeftColor: secColor }}
+              >
+                <div className="gb-section-header">
+                  <div className="gb-section-badge" style={{ background: `${secColor}14`, color: secColor, borderColor: `${secColor}30` }}>
+                    <span className="gb-section-badge-num">{sec.meta.num}</span>
+                    <span className="gb-section-badge-icon">{sec.meta.icon}</span>
+                    <span className="gb-section-badge-label">{sec.meta.label}</span>
                   </div>
                 </div>
-              )
-            }
-
-            const b = block as Block
-            switch (b.type) {
-              case 'heading': {
-                const text = b.text ?? ''
-                const isProblem = /^Problem \d+:/.test(text)
-                const problemKey = isProblem ? `ch${chNum}-${text.match(/\d+/)?.[0] || '0'}` : null
-                const problemUrl = isProblem ? PROBLEM_URLS[text.match(/^Problem \d+/)?.[0] || ''] : null
-                const headingEl = b.level === 2
-                  ? <h2 key={i} className="gb-heading-2" id={text.toLowerCase().replace(/[^\w]+/g, '-')}>{text}</h2>
-                  : b.level === 3
-                    ? <h3 key={i} className="gb-heading-3" id={text.toLowerCase().replace(/[^\w]+/g, '-')}>{text}</h3>
-                    : <h4 key={i} className="gb-heading-4">{text}</h4>
-                if (isProblem) {
-                  return (
-                    <div key={i} className="gb-problem-header">
-                      <div className="gb-problem-heading-wrap">
-                        {headingEl}
-                        <div className="gb-problem-actions">
-                          {problemUrl && (
-                            <a href={problemUrl} target="_blank" rel="noopener noreferrer" className="gb-problem-link">
-                              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                              Solve
-                            </a>
-                          )}
-                          {problemKey && <SolvedCheckbox problemKey={problemKey} />}
-                        </div>
-                      </div>
-                    </div>
-                  )
-                }
-                return headingEl
-              }
-              case 'interactive_diagram': {
-                const diagramName = (b as any).diagram as string
-                const Diagram = INTERACTIVE_DIAGRAMS[diagramName]
-                if (Diagram) return <div key={i} className="gb-interactive-wrap"><Diagram /></div>
-                return null
-              }
-              case 'hint_card': {
-                const question = (b as any).question ?? ''
-                return (
-                  <div key={i} className="gb-hint-card">
-                    <div className="gb-hint-card-inner">
-                      <span className="gb-hint-icon">💡</span>
-                      <p className="gb-hint-text">{question}</p>
-                    </div>
-                  </div>
-                )
-              }
-              case 'keyword_badges': {
-                const groups = (b as any).groups ?? []
-                const items = (b as any).items ?? []
-                const COLORS = ['#e74c3c','#3498db','#2ecc71','#f39c12','#9b59b6','#1abc9c','#e67e22','#2c3e50','#d35400','#16a085','#c0392b','#2980b9','#8e44ad','#27ae60','#f1c40f']
-                const COLOR_MAP: Record<string,string> = {
-                  indigo:'#6366f1', rose:'#e11d48', emerald:'#10b981', amber:'#f59e0b',
-                  sky:'#0ea5e9', violet:'#8b5cf6', teal:'#14b8a6', orange:'#f97316',
-                  pink:'#ec4899', cyan:'#06b6d4', slate:'#64748b', red:'#ef4444',
-                  green:'#22c55e', yellow:'#eab308', blue:'#3b82f6', purple:'#a855f7',
-                }
-                const pills: { text: string; color: string }[] = []
-                if (groups.length > 0) {
-                  for (const g of groups) {
-                    const color = COLOR_MAP[g.color] ?? '#6366f1'
-                    pills.push({ text: g.label, color })
-                  }
-                } else {
-                  for (const item of items) {
-                    const parts = String(item).split(',').map(s => s.replace(/["""']/g, '').trim()).filter(Boolean)
-                    for (const p of parts) {
-                      pills.push({ text: p, color: COLORS[pills.length % COLORS.length] })
+                <div className="gb-section-body">
+                  {sec.blocks.map((block: any, i: number) => {
+                    if (block.type === 'code_tabs') {
+                      return <CodeTabs key={i} blocks={block.blocks} />
                     }
-                  }
-                }
-                return (
-                  <div key={i} className="gb-keyword-card">
-                    <div className="gb-keyword-items">
-                      {pills.map((pill, j) => (
-                        <span key={j} className="gb-keyword-pill" style={{ background: pill.color + '18', color: pill.color, borderColor: pill.color + '35' }}>
-                          {pill.text}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                )
-              }
-              case 'text': {
-                const html = (b.content ?? '').split(/(\$\$[^$]+\$\$)/g).map((part, j) => {
-                  if (part.startsWith('$$') && part.endsWith('$$')) {
-                    return renderBlockMath(part.slice(2, -2).trim())
-                  }
-                  const safe = escapeHtml(part)
-                  const withBadges = renderCallouts(safe)
-                  const withMd = inlineMarkdown(withBadges)
-                  const withMath = renderInlineMath(withMd)
-                  return `<span>${withMath}</span>`
-                }).join('')
-                return <p key={i} className="gb-text" dangerouslySetInnerHTML={{ __html: html }} />
-              }
-              case 'code': {
-                // Single code block (no tab grouping)
-                const codes = [{ lang: b.lang ?? '', code: b.code ?? '', caption: b.caption }]
-                return <CodeTabs key={i} blocks={codes} />
-              }
-              case 'table':
-                return (
-                  <div key={i} className="gb-table-wrap">
-                    <table className="gb-table">
-                      {b.headers && b.headers.length > 0 && <thead><tr>{b.headers.map((h, j) => <th key={j} dangerouslySetInnerHTML={{ __html: inlineMarkdown(h) }} />)}</tr></thead>}
-                      <tbody>{b.rows?.map((row, ri) => <tr key={ri}>{row.map((cell, ci) => <td key={ci} dangerouslySetInnerHTML={{ __html: inlineMarkdown(cell) }} />)}</tr>)}</tbody>
-                    </table>
-                  </div>
-                )
-              case 'list':
-                return <ul key={i} className="gb-list">{b.items?.map((item, j) => <li key={j} dangerouslySetInnerHTML={{ __html: renderInlineMath(inlineMarkdown(item)) }} />)}</ul>
-              case 'divider':
-                return <hr key={i} className="gb-divider" />
-              default:
-                return null
-            }
+                    // Debug: log any unexpected types
+                    if (['code_tabs','badge_card','heading','text','code','table','list','divider','interactive_diagram','hint_card','keyword_badges'].indexOf(block.type) === -1) {
+                      console.warn('Unknown block type:', block.type, block)
+                    }
+                    if (block.type === 'badge_card') {
+                      const label = block.header.replace(/^\*\*(.+?)\*\*:?\s*$/, '$1')
+                      return (
+                        <div key={i} className="gb-badge-card">
+                          <div className="gb-badge-card-header">{escapeHtml(label)}</div>
+                          <div className="gb-badge-card-items">
+                            {block.items.map((item: string, j: number) => (
+                              <span key={j} className="gb-badge-item" dangerouslySetInnerHTML={{ __html: renderInlineMath(inlineMarkdown(item)) }} />
+                            ))}
+                          </div>
+                        </div>
+                      )
+                    }
+
+                    const b = block as Block
+                    switch (b.type) {
+                      case 'heading': {
+                        const text = b.text ?? ''
+                        const isProblem = /^Problem \d+:/.test(text)
+                        const problemKey = isProblem ? `ch${chNum}-${text.match(/\d+/)?.[0] || '0'}` : null
+                        const problemUrl = isProblem ? PROBLEM_URLS[text.match(/^Problem \d+/)?.[0] || ''] : null
+                        // h2 headings within sections become visual only (section already identified)
+                        const headingEl = b.level === 2
+                          ? (sec.meta.slug === 'reusable-coding-templates' || sec.meta.slug === 'curated-real-problems' || sec.meta.slug === 'complete-solution-section')
+                            ? <h2 key={i} className="gb-heading-2 gb-heading-2-inside" id={text.toLowerCase().replace(/[^\w]+/g, '-')}>{text}</h2>
+                            : null  // skip h2 that was already used as section header
+                          : b.level === 3
+                            ? <h3 key={i} className="gb-heading-3" id={text.toLowerCase().replace(/[^\w]+/g, '-')}>{text}</h3>
+                            : <h4 key={i} className="gb-heading-4">{text}</h4>
+                        if (isProblem) {
+                          return (
+                            <div key={i} className="gb-problem-header">
+                              <div className="gb-problem-heading-wrap">
+                                {headingEl}
+                                <div className="gb-problem-actions">
+                                  {problemUrl && (
+                                    <a href={problemUrl} target="_blank" rel="noopener noreferrer" className="gb-problem-link">
+                                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                      Solve
+                                    </a>
+                                  )}
+                                  {problemKey && <SolvedCheckbox problemKey={problemKey} />}
+                                </div>
+                              </div>
+                            </div>
+                          )
+                        }
+                        if (headingEl === null) return null
+                        return headingEl
+                      }
+                      case 'interactive_diagram': {
+                        const diagramName = (b as any).diagram as string
+                        const Diagram = INTERACTIVE_DIAGRAMS[diagramName]
+                        if (Diagram) return <div key={i} className="gb-interactive-wrap"><Diagram /></div>
+                        return null
+                      }
+                      case 'hint_card': {
+                        const question = (b as any).question ?? ''
+                        return (
+                          <div key={i} className="gb-hint-card">
+                            <div className="gb-hint-card-inner">
+                              <span className="gb-hint-icon">💡</span>
+                              <p className="gb-hint-text">{question}</p>
+                            </div>
+                          </div>
+                        )
+                      }
+                      case 'keyword_badges': {
+                        const groups = (b as any).groups ?? []
+                        const items = (b as any).items ?? []
+                        const COLORS = ['#e74c3c','#3498db','#2ecc71','#f39c12','#9b59b6','#1abc9c','#e67e22','#2c3e50','#d35400','#16a085','#c0392b','#2980b9','#8e44ad','#27ae60','#f1c40f']
+                        const COLOR_MAP: Record<string,string> = {
+                          indigo:'#6366f1', rose:'#e11d48', emerald:'#10b981', amber:'#f59e0b',
+                          sky:'#0ea5e9', violet:'#8b5cf6', teal:'#14b8a6', orange:'#f97316',
+                          pink:'#ec4899', cyan:'#06b6d4', slate:'#64748b', red:'#ef4444',
+                          green:'#22c55e', yellow:'#eab308', blue:'#3b82f6', purple:'#a855f7',
+                        }
+                        const pills: { text: string; color: string }[] = []
+                        if (groups.length > 0) {
+                          for (const g of groups) {
+                            const color = COLOR_MAP[g.color] ?? '#6366f1'
+                            pills.push({ text: g.label, color })
+                          }
+                        } else {
+                          for (const item of items) {
+                            const parts = String(item).split(',').map(s => s.replace(/["""']/g, '').trim()).filter(Boolean)
+                            for (const p of parts) {
+                              pills.push({ text: p, color: COLORS[pills.length % COLORS.length] })
+                            }
+                          }
+                        }
+                        return (
+                          <div key={i} className="gb-keyword-card">
+                            <div className="gb-keyword-items">
+                              {pills.map((pill, j) => (
+                                <span key={j} className="gb-keyword-pill" style={{ background: pill.color + '18', color: pill.color, borderColor: pill.color + '35' }}>
+                                  {pill.text}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        )
+                      }
+                      case 'text': {
+                        const html = (b.content ?? '').split(/(\$\$[^$]+\$\$)/g).map((part, j) => {
+                          if (part.startsWith('$$') && part.endsWith('$$')) {
+                            return renderBlockMath(part.slice(2, -2).trim())
+                          }
+                          const safe = escapeHtml(part)
+                          const withBadges = renderCallouts(safe)
+                          const withMd = inlineMarkdown(withBadges)
+                          const withMath = renderInlineMath(withMd)
+                          return `<span>${withMath}</span>`
+                        }).join('')
+                        return <p key={i} className="gb-text" dangerouslySetInnerHTML={{ __html: html }} />
+                      }
+                      case 'code': {
+                        // Single code block (no tab grouping)
+                        const codes = [{ lang: b.lang ?? '', code: b.code ?? '', caption: b.caption }]
+                        return <CodeTabs key={i} blocks={codes} />
+                      }
+                      case 'table':
+                        return (
+                          <div key={i} className="gb-table-wrap">
+                            <table className="gb-table">
+                              {b.headers && b.headers.length > 0 && <thead><tr>{b.headers.map((h, j) => <th key={j} dangerouslySetInnerHTML={{ __html: inlineMarkdown(h) }} />)}</tr></thead>}
+                              <tbody>{b.rows?.map((row, ri) => <tr key={ri}>{row.map((cell, ci) => <td key={ci} dangerouslySetInnerHTML={{ __html: inlineMarkdown(cell) }} />)}</tr>)}</tbody>
+                            </table>
+                          </div>
+                        )
+                      case 'list':
+                        return <ul key={i} className="gb-list">{b.items?.map((item, j) => <li key={j} dangerouslySetInnerHTML={{ __html: renderInlineMath(inlineMarkdown(item)) }} />)}</ul>
+                      case 'divider':
+                        return <hr key={i} className="gb-divider" />
+                      default:
+                        return null
+                    }
+                  })}
+                </div>
+              </section>
+            )
           })}
         </div>
 

@@ -12,6 +12,21 @@
       "text": "Chapter 3: Triangle Problems"
     },
     {
+      "type": "text",
+      "content": "**\ud83c\udfaf Learning Objectives \u2014 By the end of this chapter, you will be able to:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Apply the triangle inequality theorem to validate whether three sides form a triangle",
+        "Classify triangles by side lengths (equilateral, isosceles, scalene) and by angles (acute, right, obtuse)",
+        "Count the number of valid triangles from an array of side lengths in O(n\u00b2) time",
+        "Compute triangle area using coordinates, Heron's formula, and cross product",
+        "Use the law of cosines to find angles from side lengths",
+        "Understand polygon triangulation DP for optimal triangulation problems"
+      ]
+    },
+    {
       "type": "heading",
       "level": 3,
       "text": "1. INTRODUCTION"
@@ -19,11 +34,6 @@
     {
       "type": "text",
       "content": "If rectangles are the workhorses of geometry, triangles are its magic wands. Triangles are the simplest rigid shape \u2014 the only polygon that cannot be deformed without changing side lengths. This makes them fundamental to everything from bridge construction to computer graphics."
-    },
-    {
-      "type": "hint_card",
-      "question": "Why does triangle inequality matter in code?",
-      "answer": "It is the cheapest validity check you will ever write \u2014 O(1), no floating point, no edge cases. Sort the three sides (if unsorted), check that the sum of the two smaller ones exceeds the largest. That is it. This single check is the heart of problems like \"Valid Triangle Number\" and \"Largest Perimeter Triangle.\""
     },
     {
       "type": "text",
@@ -71,16 +81,14 @@
       "content": "For any valid triangle with side lengths `a, b, c`:"
     },
     {
-      "type": "text",
-      "content": "$$a + b > c$$\n$$a + c > b$$\n$$b + c > a$$"
+      "type": "code",
+      "lang": "",
+      "code": "a + b > c\na + c > b\nb + c > a",
+      "caption": null
     },
     {
       "type": "text",
       "content": "All three must hold. If any is violated, the triangle is **degenerate** (three collinear points)."
-    },
-    {
-      "type": "interactive_diagram",
-      "diagram": "triangle-inequality"
     },
     {
       "type": "text",
@@ -92,24 +100,24 @@
       "text": "2.2 Types of Triangles"
     },
     {
-      "type": "interactive_diagram",
-      "diagram": "triangle-type"
-    },
-    {
       "type": "text",
       "content": "**By sides:**"
     },
     {
-      "type": "text",
-      "content": "**Equilateral:** $$a = b = c$$\n**Isosceles:** $$a = b$$ or $$b = c$$ or $$a = c$$\n**Scalene:** all sides different"
+      "type": "code",
+      "lang": "",
+      "code": "Equilateral:  a == b == c\nIsosceles:   a == b or b == c or a == c\nScalene:     all sides different",
+      "caption": null
     },
     {
       "type": "text",
       "content": "**By angles (using law of cosines, with sides a <= b <= c):**"
     },
     {
-      "type": "text",
-      "content": "**Acute:** $$c^2 < a^2 + b^2$$ (all angles < 90\u00b0)\n**Right:** $$c^2 = a^2 + b^2$$ (one angle = 90\u00b0)\n**Obtuse:** $$c^2 > a^2 + b^2$$ (one angle > 90\u00b0)"
+      "type": "code",
+      "lang": "",
+      "code": "Acute:   c^2 < a^2 + b^2    (all angles < 90\u00b0)\nRight:   c^2 == a^2 + b^2   (one angle = 90\u00b0)\nObtuse:  c^2 > a^2 + b^2    (one angle > 90\u00b0)",
+      "caption": null
     },
     {
       "type": "heading",
@@ -121,36 +129,40 @@
       "content": "**Base-height:**"
     },
     {
-      "type": "text",
-      "content": "$$\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height}$$"
+      "type": "code",
+      "lang": "",
+      "code": "Area = (1/2) * base * height",
+      "caption": null
     },
     {
       "type": "text",
       "content": "**Heron's formula** (when all three sides are known):"
     },
     {
-      "type": "text",
-      "content": "$$s = \\frac{a + b + c}{2}$$ (semi-perimeter)\n\n$$\\text{Area} = \\sqrt{s(s-a)(s-b)(s-c)}$$"
-    },
-    {
-      "type": "interactive_diagram",
-      "diagram": "triangle-area"
+      "type": "code",
+      "lang": "",
+      "code": "s = (a + b + c) / 2            (semi-perimeter)\nArea = sqrt(s * (s-a) * (s-b) * (s-c))",
+      "caption": null
     },
     {
       "type": "text",
       "content": "**Coordinate formula** (shoelace for 3 points):"
     },
     {
-      "type": "text",
-      "content": "$$\\text{Area} = \\frac{1}{2} \\left| x_1(y_2-y_3) + x_2(y_3-y_1) + x_3(y_1-y_2) \\right|$$"
+      "type": "code",
+      "lang": "",
+      "code": "Area = (1/2) * |x1*(y2-y3) + x2*(y3-y1) + x3*(y1-y2)|",
+      "caption": null
     },
     {
       "type": "text",
       "content": "**Using cross product:**"
     },
     {
-      "type": "text",
-      "content": "Vectors $$\\vec{AB} = B - A$$, $$\\vec{AC} = C - A$$\n\n$$\\text{Area} = \\frac{|\\text{cross}(AB, AC)|}{2}$$"
+      "type": "code",
+      "lang": "",
+      "code": "vectors AB = B - A, AC = C - A\nArea = |cross(AB, AC)| / 2",
+      "caption": null
     },
     {
       "type": "heading",
@@ -201,8 +213,10 @@
       "content": "**Area from medians** (m_a, m_b, m_c are median lengths):"
     },
     {
-      "type": "text",
-      "content": "$$s_m = \\frac{m_a + m_b + m_c}{2}$$\n\n$$\\text{Area} = \\frac{4}{3} \\sqrt{s_m(s_m - m_a)(s_m - m_b)(s_m - m_c)}$$"
+      "type": "code",
+      "lang": "",
+      "code": "s_m = (m_a + m_b + m_c) / 2\nArea = (4/3) * sqrt(s_m * (s_m - m_a) * (s_m - m_b) * (s_m - m_c))",
+      "caption": null
     },
     {
       "type": "heading",
@@ -214,13 +228,10 @@
       "content": "Given sides a, b, c:"
     },
     {
-      "type": "hint_card",
-      "question": "Is the law of cosines actually useful in coding interviews?",
-      "answer": "Yes, but mostly indirectly. You rarely code the law of cosines itself. Instead, you use dot products to find angles (same formula, different form). The key insight: if the dot product of two edges is zero, the angle is 90\u00b0 \u2014 no arccos needed. This trick identifies right triangles in O(1) without trigonometry."
-    },
-    {
-      "type": "text",
-      "content": "$$\\cos(A) = \\frac{b^2 + c^2 - a^2}{2bc}$$\n$$\\cos(B) = \\frac{a^2 + c^2 - b^2}{2ac}$$\n$$\\cos(C) = \\frac{a^2 + b^2 - c^2}{2ab}$$"
+      "type": "code",
+      "lang": "",
+      "code": "cos(A) = (b^2 + c^2 - a^2) / (2*b*c)\ncos(B) = (a^2 + c^2 - b^2) / (2*a*c)\ncos(C) = (a^2 + b^2 - c^2) / (2*a*b)",
+      "caption": null
     },
     {
       "type": "text",
@@ -236,16 +247,20 @@
       "content": "**Circumradius** (radius of circumscribed circle):"
     },
     {
-      "type": "text",
-      "content": "$$R = \\frac{a \\cdot b \\cdot c}{4 \\cdot \\text{Area}}$$"
+      "type": "code",
+      "lang": "",
+      "code": "R = (a * b * c) / (4 * Area)",
+      "caption": null
     },
     {
       "type": "text",
       "content": "**Inradius** (radius of inscribed circle):"
     },
     {
-      "type": "text",
-      "content": "$$r = \\frac{2 \\cdot \\text{Area}}{\\text{perimeter}}$$"
+      "type": "code",
+      "lang": "",
+      "code": "r = (2 * Area) / perimeter",
+      "caption": null
     },
     {
       "type": "heading",
@@ -284,73 +299,10 @@
       "content": "Triangle path problems (like LeetCode 120 \u2014 Triangle) use bottom-up DP:"
     },
     {
-      "type": "text",
-      "content": "$$dp[i][j] = \\text{triangle}[i][j] + \\min(dp[i+1][j], dp[i+1][j+1])$$"
-    },
-    {
-      "type": "text",
-      "content": "**Common keywords \u2014 know these on sight:**"
-    },
-    {
-      "type": "keyword_badges",
-      "groups": [
-        {
-          "label": "triangle / triangular / triple",
-          "color": "green"
-        },
-        {
-          "label": "valid triangle / triangle inequality",
-          "color": "green"
-        },
-        {
-          "label": "equilateral / isosceles / scalene",
-          "color": "green"
-        },
-        {
-          "label": "right / acute / obtuse",
-          "color": "green"
-        },
-        {
-          "label": "hypotenuse / leg / base",
-          "color": "indigo"
-        },
-        {
-          "label": "perimeter / area / semi-perimeter",
-          "color": "indigo"
-        },
-        {
-          "label": "Pythagorean / Pythagoras",
-          "color": "indigo"
-        },
-        {
-          "label": "Heron / shoelace",
-          "color": "indigo"
-        },
-        {
-          "label": "circumcenter / incenter / centroid",
-          "color": "indigo"
-        },
-        {
-          "label": "law of cosines / law of sines",
-          "color": "indigo"
-        },
-        {
-          "label": "triangle path sum",
-          "color": "rose"
-        },
-        {
-          "label": "triangulation / polygon triangulation",
-          "color": "rose"
-        },
-        {
-          "label": "point in triangle",
-          "color": "rose"
-        },
-        {
-          "label": "triangle counting",
-          "color": "rose"
-        }
-      ]
+      "type": "code",
+      "lang": "",
+      "code": "dp[i][j] = triangle[i][j] + min(dp[i+1][j], dp[i+1][j+1])",
+      "caption": null
     },
     {
       "type": "heading",
@@ -426,7 +378,7 @@
       "items": [
         "**When to use:** Given an array of side lengths, count valid triangles",
         "**Why it works:** Sorting lets us use the two-pointer technique \u2014 for each pair (i, j), find the largest k such that `arr[i] + arr[j] > arr[k]`",
-        "**Complexity:** O(n^2) time, $O(1)$ space",
+        "**Complexity:** O(n^2) time, O(1) space",
         "**Common mistake:** Forgetting to check all three inequalities (but sorting ensures `arr[i] <= arr[j] <= arr[k]`, so only one check needed)"
       ]
     },
@@ -440,7 +392,7 @@
       "items": [
         "**When to use:** Given 3 points, compute area or check collinearity",
         "**Why it works:** Cross product = 2 * area, sign indicates orientation",
-        "**Complexity:** $O(1)$",
+        "**Complexity:** O(1)",
         "**Key insight:** Area = 0 iff points are collinear"
       ]
     },
@@ -502,24 +454,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "cpp",
-      "code": "#include <algorithm>\nusing namespace std;\n\nbool isValidTriangle(double a, double b, double c) {\n    double sides[] = {a, b, c};\n    sort(sides, sides + 3);\n    return sides[0] + sides[1] > sides[2];\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "import java.util.Arrays;\n\npublic class TriangleUtils {\n    public static boolean isValidTriangle(double a, double b, double c) {\n        double[] sides = {a, b, c};\n        Arrays.sort(sides);\n        return sides[0] + sides[1] > sides[2];\n    }\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function isValidTriangle(a, b, c) {\n    const sides = [a, b, c].sort((x, y) => x - y);\n    return sides[0] + sides[1] > sides[2];\n}",
-      "caption": null
-    },
-    {
       "type": "heading",
       "level": 4,
       "text": "Template 2: Count Possible Triangles (from array of lengths)"
@@ -543,12 +477,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function countTriangles(arr) {\n    arr.sort((a, b) => a - b);\n    const n = arr.length;\n    let count = 0;\n    for (let i = 0; i < n - 2; i++) {\n        let k = i + 2;\n        for (let j = i + 1; j < n - 1; j++) {\n            while (k < n && arr[i] + arr[j] > arr[k]) k++;\n            count += k - j - 1;\n        }\n    }\n    return count;\n}",
-      "caption": null
-    },
-    {
       "type": "heading",
       "level": 4,
       "text": "Template 3: Triangle Area from Coordinates"
@@ -557,24 +485,6 @@
       "type": "code",
       "lang": "python",
       "code": "def triangle_area(p1, p2, p3):\n    \"\"\"Area of triangle formed by 3 points (absolute shoelace / 2).\"\"\"\n    return 0.5 * abs(p1[0]*(p2[1]-p3[1]) + p2[0]*(p3[1]-p1[1]) + p3[0]*(p1[1]-p2[1]))",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "cpp",
-      "code": "double triangleArea(vector<int>& p1, vector<int>& p2, vector<int>& p3) {\n    return 0.5 * abs(p1[0]*(p2[1]-p3[1]) + p2[0]*(p3[1]-p1[1]) + p3[0]*(p1[1]-p2[1]));\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "public double triangleArea(int[] p1, int[] p2, int[] p3) {\n    return 0.5 * Math.abs(p1[0]*(p2[1]-p3[1]) + p2[0]*(p3[1]-p1[1]) + p3[0]*(p1[1]-p2[1]));\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function triangleArea(p1, p2, p3) {\n    return 0.5 * Math.abs(p1[0]*(p2[1]-p3[1]) + p2[0]*(p3[1]-p1[1]) + p3[0]*(p1[1]-p2[1]));\n}",
       "caption": null
     },
     {
@@ -589,24 +499,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "cpp",
-      "code": "#include <string>\n#include <algorithm>\nusing namespace std;\n\nstring classifyTriangle(double a, double b, double c) {\n    double sides[] = {a, b, c};\n    sort(sides, sides + 3);\n    a = sides[0]; b = sides[1]; c = sides[2];\n    \n    if (!(a + b > c)) return \"Invalid\";\n    \n    string sideType;\n    if (a == b && b == c) sideType = \"Equilateral\";\n    else if (a == b || b == c || a == c) sideType = \"Isosceles\";\n    else sideType = \"Scalene\";\n    \n    string angleType;\n    if (c*c < a*a + b*b) angleType = \"Acute\";\n    else if (c*c == a*a + b*b) angleType = \"Right\";\n    else angleType = \"Obtuse\";\n    \n    return sideType + \" \" + angleType;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "import java.util.Arrays;\n\npublic class TriangleUtils {\n    public static String classifyTriangle(double a, double b, double c) {\n        double[] sides = {a, b, c};\n        Arrays.sort(sides);\n        a = sides[0]; b = sides[1]; c = sides[2];\n        \n        if (!(a + b > c)) return \"Invalid\";\n        \n        String sideType;\n        if (a == b && b == c) sideType = \"Equilateral\";\n        else if (a == b || b == c || a == c) sideType = \"Isosceles\";\n        else sideType = \"Scalene\";\n        \n        String angleType;\n        if (c*c < a*a + b*b) angleType = \"Acute\";\n        else if (c*c == a*a + b*b) angleType = \"Right\";\n        else angleType = \"Obtuse\";\n        \n        return sideType + \" \" + angleType;\n    }\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function classifyTriangle(a, b, c) {\n    const sides = [a, b, c].sort((x, y) => x - y);\n    a = sides[0]; b = sides[1]; c = sides[2];\n    \n    if (!(a + b > c)) return \"Invalid\";\n    \n    let sideType;\n    if (a === b && b === c) sideType = \"Equilateral\";\n    else if (a === b || b === c || a === c) sideType = \"Isosceles\";\n    else sideType = \"Scalene\";\n    \n    let angleType;\n    if (c*c < a*a + b*b) angleType = \"Acute\";\n    else if (c*c === a*a + b*b) angleType = \"Right\";\n    else angleType = \"Obtuse\";\n    \n    return sideType + \" \" + angleType;\n}",
-      "caption": null
-    },
-    {
       "type": "heading",
       "level": 4,
       "text": "Template 5: Triangle Path Sum DP"
@@ -618,24 +510,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "cpp",
-      "code": "#include <vector>\n#include <algorithm>\nusing namespace std;\n\nint minimumTotal(vector<vector<int>>& triangle) {\n    int n = triangle.size();\n    vector<int> dp = triangle[n-1];\n    for (int i = n - 2; i >= 0; i--) {\n        for (int j = 0; j < triangle[i].size(); j++) {\n            dp[j] = triangle[i][j] + min(dp[j], dp[j+1]);\n        }\n    }\n    return dp[0];\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "import java.util.*;\n\npublic class TriangleUtils {\n    public int minimumTotal(List<List<Integer>> triangle) {\n        int n = triangle.size();\n        int[] dp = new int[triangle.get(n-1).size()];\n        for (int i = 0; i < triangle.get(n-1).size(); i++)\n            dp[i] = triangle.get(n-1).get(i);\n        for (int i = n - 2; i >= 0; i--) {\n            for (int j = 0; j < triangle.get(i).size(); j++) {\n                dp[j] = triangle.get(i).get(j) + Math.min(dp[j], dp[j+1]);\n            }\n        }\n        return dp[0];\n    }\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function minimumTotal(triangle) {\n    const n = triangle.length;\n    const dp = [...triangle[n - 1]];\n    for (let i = n - 2; i >= 0; i--) {\n        for (let j = 0; j < triangle[i].length; j++) {\n            dp[j] = triangle[i][j] + Math.min(dp[j], dp[j + 1]);\n        }\n    }\n    return dp[0];\n}",
-      "caption": null
-    },
-    {
       "type": "heading",
       "level": 4,
       "text": "Template 6: Maximum Perimeter Triangle"
@@ -644,24 +518,6 @@
       "type": "code",
       "lang": "python",
       "code": "def largest_perimeter(nums):\n    nums.sort(reverse=True)\n    for i in range(len(nums) - 2):\n        if nums[i] < nums[i+1] + nums[i+2]:\n            return nums[i] + nums[i+1] + nums[i+2]\n    return 0",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "cpp",
-      "code": "int largestPerimeter(vector<int>& nums) {\n    sort(nums.begin(), nums.end(), greater<int>());\n    for (int i = 0; i < (int)nums.size() - 2; i++) {\n        if (nums[i] < nums[i+1] + nums[i+2])\n            return nums[i] + nums[i+1] + nums[i+2];\n    }\n    return 0;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "import java.util.*;\n\npublic int largestPerimeter(int[] nums) {\n    Arrays.sort(nums);\n    for (int i = nums.length - 1; i >= 2; i--) {\n        if (nums[i] < nums[i-1] + nums[i-2])\n            return nums[i] + nums[i-1] + nums[i-2];\n    }\n    return 0;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function largestPerimeter(nums) {\n    nums.sort((a, b) => b - a);\n    for (let i = 0; i < nums.length - 2; i++) {\n        if (nums[i] < nums[i+1] + nums[i+2])\n            return nums[i] + nums[i+1] + nums[i+2];\n    }\n    return 0;\n}",
       "caption": null
     },
     {
@@ -874,11 +730,6 @@
       "content": "**A. Intuition:** For the maximum perimeter, we want the three largest sides that satisfy the triangle inequality. Since the triangle inequality requires `a + b > c` for the largest side `c`, we can sort and check consecutive triples from the largest end."
     },
     {
-      "type": "hint_card",
-      "question": "Why sort first for triangle problems?",
-      "answer": "Sorting turns O(n\u00b3) brute force into O(n log n) with a two-pointer sweep. For \"Largest Perimeter Triangle,\" sorting guarantees the maximal perimeter comes from three consecutive elements \u2014 no need to check all combinations. For \"Valid Triangle Number,\" the sorted two-pointer pattern counts valid triples in O(n\u00b2) instead of O(n\u00b3). Almost every triangle-counting problem benefits from sorting."
-    },
-    {
       "type": "text",
       "content": "**B. Brute Force:** O(n^3) \u2014 check all triples."
     },
@@ -911,7 +762,7 @@
     },
     {
       "type": "text",
-      "content": "**E. Complexity:** $O(n \\log n)$ time, $O(1)$ space."
+      "content": "**E. Complexity:** O(n log n) time, O(1) space."
     },
     {
       "type": "text",
@@ -937,12 +788,6 @@
       "type": "code",
       "lang": "java",
       "code": "public int largestPerimeter(int[] nums) {\n    Arrays.sort(nums);\n    for (int i = nums.length - 1; i >= 2; i--) {\n        if (nums[i] < nums[i-1] + nums[i-2])\n            return nums[i] + nums[i-1] + nums[i-2];\n    }\n    return 0;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function largestPerimeter(nums) {\n    nums.sort((a, b) => b - a);\n    for (let i = 0; i < nums.length - 2; i++) {\n        if (nums[i] < nums[i+1] + nums[i+2])\n            return nums[i] + nums[i+1] + nums[i+2];\n    }\n    return 0;\n}",
       "caption": null
     },
     {
@@ -990,7 +835,7 @@
     },
     {
       "type": "text",
-      "content": "**E. Complexity:** O(n^2) time, $O(1)$ space."
+      "content": "**E. Complexity:** O(n^2) time, O(1) space."
     },
     {
       "type": "text",
@@ -1004,24 +849,6 @@
       "type": "code",
       "lang": "python",
       "code": "def triangle_number(nums):\n    nums.sort()\n    n = len(nums)\n    count = 0\n    for i in range(n - 2):\n        k = i + 2\n        for j in range(i + 1, n - 1):\n            while k < n and nums[i] + nums[j] > nums[k]:\n                k += 1\n            count += k - j - 1\n    return count",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "cpp",
-      "code": "int triangleNumber(vector<int>& nums) {\n    sort(nums.begin(), nums.end());\n    int n = nums.size(), count = 0;\n    for (int i = 0; i < n - 2; i++) {\n        int k = i + 2;\n        for (int j = i + 1; j < n - 1; j++) {\n            while (k < n && nums[i] + nums[j] > nums[k]) k++;\n            count += k - j - 1;\n        }\n    }\n    return count;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "public int triangleNumber(int[] nums) {\n    Arrays.sort(nums);\n    int n = nums.length, count = 0;\n    for (int i = 0; i < n - 2; i++) {\n        int k = i + 2;\n        for (int j = i + 1; j < n - 1; j++) {\n            while (k < n && nums[i] + nums[j] > nums[k]) k++;\n            count += k - j - 1;\n        }\n    }\n    return count;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function triangleNumber(nums) {\n    nums.sort((a, b) => a - b);\n    const n = nums.length;\n    let count = 0;\n    for (let i = 0; i < n - 2; i++) {\n        let k = i + 2;\n        for (let j = i + 1; j < n - 1; j++) {\n            while (k < n && nums[i] + nums[j] > nums[k]) k++;\n            count += k - j - 1;\n        }\n    }\n    return count;\n}",
       "caption": null
     },
     {
@@ -1055,7 +882,7 @@
     },
     {
       "type": "text",
-      "content": "**E. Complexity:** $O(1)$."
+      "content": "**E. Complexity:** O(1)."
     },
     {
       "type": "text",
@@ -1069,24 +896,6 @@
       "type": "code",
       "lang": "python",
       "code": "a, b, c = map(int, input().split())\nsides = sorted([a, b, c])\na, b, c = sides\nif a + b > c:\n    print(0)\nelse:\n    print(c - (a + b) + 1)",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "cpp",
-      "code": "#include <iostream>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    int a, b, c;\n    cin >> a >> b >> c;\n    int sides[] = {a, b, c};\n    sort(sides, sides + 3);\n    a = sides[0]; b = sides[1]; c = sides[2];\n    if (a + b > c) cout << 0 << endl;\n    else cout << c - (a + b) + 1 << endl;\n    return 0;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int[] sides = {sc.nextInt(), sc.nextInt(), sc.nextInt()};\n        Arrays.sort(sides);\n        int a = sides[0], b = sides[1], c = sides[2];\n        if (a + b > c) System.out.println(0);\n        else System.out.println(c - (a + b) + 1);\n    }\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function solve(input) {\n    const [a, b, c] = input.trim().split(' ').map(Number);\n    const sides = [a, b, c].sort((x, y) => x - y);\n    if (sides[0] + sides[1] > sides[2]) console.log(0);\n    else console.log(sides[2] - (sides[0] + sides[1]) + 1);\n}",
       "caption": null
     },
     {
@@ -1132,7 +941,7 @@
     },
     {
       "type": "text",
-      "content": "**E. Complexity:** O(n^2) time, $O(n)$ space."
+      "content": "**E. Complexity:** O(n^2) time, O(n) space."
     },
     {
       "type": "text",
@@ -1146,24 +955,6 @@
       "type": "code",
       "lang": "python",
       "code": "def minimum_total(triangle):\n    n = len(triangle)\n    dp = triangle[-1][:]\n    for i in range(n - 2, -1, -1):\n        for j in range(len(triangle[i])):\n            dp[j] = triangle[i][j] + min(dp[j], dp[j + 1])\n    return dp[0]",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "cpp",
-      "code": "#include <vector>\n#include <algorithm>\nusing namespace std;\n\nint minimumTotal(vector<vector<int>>& triangle) {\n    int n = triangle.size();\n    vector<int> dp = triangle[n-1];\n    for (int i = n - 2; i >= 0; i--) {\n        for (int j = 0; j < triangle[i].size(); j++) {\n            dp[j] = triangle[i][j] + min(dp[j], dp[j+1]);\n        }\n    }\n    return dp[0];\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "import java.util.*;\n\npublic class TriangleUtils {\n    public int minimumTotal(List<List<Integer>> triangle) {\n        int n = triangle.size();\n        int[] dp = new int[triangle.get(n-1).size()];\n        for (int i = 0; i < triangle.get(n-1).size(); i++)\n            dp[i] = triangle.get(n-1).get(i);\n        for (int i = n - 2; i >= 0; i--) {\n            for (int j = 0; j < triangle.get(i).size(); j++) {\n                dp[j] = triangle.get(i).get(j) + Math.min(dp[j], dp[j+1]);\n            }\n        }\n        return dp[0];\n    }\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function minimumTotal(triangle) {\n    const n = triangle.length;\n    const dp = [...triangle[n - 1]];\n    for (let i = n - 2; i >= 0; i--) {\n        for (let j = 0; j < triangle[i].length; j++) {\n            dp[j] = triangle[i][j] + Math.min(dp[j], dp[j + 1]);\n        }\n    }\n    return dp[0];\n}",
       "caption": null
     },
     {
@@ -1226,24 +1017,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "cpp",
-      "code": "#include <vector>\n#include <algorithm>\n#include <climits>\nusing namespace std;\n\nint minScoreTriangulation(vector<int>& values) {\n    int n = values.size();\n    vector<vector<int>> dp(n, vector<int>(n, 0));\n    for (int len = 3; len <= n; len++) {\n        for (int i = 0; i + len - 1 < n; i++) {\n            int j = i + len - 1;\n            dp[i][j] = INT_MAX;\n            for (int k = i + 1; k < j; k++) {\n                int score = dp[i][k] + dp[k][j] + values[i] * values[j] * values[k];\n                dp[i][j] = min(dp[i][j], score);\n            }\n        }\n    }\n    return dp[0][n-1];\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "public int minScoreTriangulation(int[] values) {\n    int n = values.length;\n    int[][] dp = new int[n][n];\n    for (int len = 3; len <= n; len++) {\n        for (int i = 0; i + len - 1 < n; i++) {\n            int j = i + len - 1;\n            dp[i][j] = Integer.MAX_VALUE;\n            for (int k = i + 1; k < j; k++) {\n                int score = dp[i][k] + dp[k][j] + values[i] * values[j] * values[k];\n                dp[i][j] = Math.min(dp[i][j], score);\n            }\n        }\n    }\n    return dp[0][n-1];\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function minScoreTriangulation(values) {\n    const n = values.length;\n    const dp = Array.from({ length: n }, () => Array(n).fill(0));\n    for (let len = 3; len <= n; len++) {\n        for (let i = 0; i + len - 1 < n; i++) {\n            const j = i + len - 1;\n            dp[i][j] = Infinity;\n            for (let k = i + 1; k < j; k++) {\n                const score = dp[i][k] + dp[k][j] + values[i] * values[j] * values[k];\n                dp[i][j] = Math.min(dp[i][j], score);\n            }\n        }\n    }\n    return dp[0][n - 1];\n}",
-      "caption": null
-    },
-    {
       "type": "heading",
       "level": 4,
       "text": "Problem 6: Cut the Triangle (Codeforces 1767A)"
@@ -1274,7 +1047,7 @@
     },
     {
       "type": "text",
-      "content": "**E. Complexity:** $O(1)$."
+      "content": "**E. Complexity:** O(1)."
     },
     {
       "type": "text",
@@ -1288,24 +1061,6 @@
       "type": "code",
       "lang": "python",
       "code": "def solve():\n    t = int(input())\n    for _ in range(t):\n        input()  # blank line\n        pts = [tuple(map(int, input().split())) for _ in range(3)]\n        xs = [p[0] for p in pts]\n        ys = [p[1] for p in pts]\n        \n        same_x = len(set(xs)) < 3\n        same_y = len(set(ys)) < 3\n        \n        if same_x and same_y:\n            print(\"NO\")\n        else:\n            print(\"YES\")",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "cpp",
-      "code": "#include <iostream>\n#include <set>\n#include <vector>\nusing namespace std;\n\nint main() {\n    int t; cin >> t;\n    while (t--) {\n        cin.ignore();\n        vector<pair<int,int>> pts(3);\n        for (int i = 0; i < 3; i++)\n            cin >> pts[i].first >> pts[i].second;\n        \n        set<int> xs, ys;\n        for (auto& p : pts) {\n            xs.insert(p.first);\n            ys.insert(p.second);\n        }\n        \n        if (xs.size() < 3 && ys.size() < 3)\n            cout << \"NO\" << endl;\n        else\n            cout << \"YES\" << endl;\n    }\n    return 0;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int t = sc.nextInt();\n        while (t-- > 0) {\n            int[] xs = new int[3], ys = new int[3];\n            for (int i = 0; i < 3; i++) {\n                xs[i] = sc.nextInt();\n                ys[i] = sc.nextInt();\n            }\n            Set<Integer> xSet = new HashSet<>(), ySet = new HashSet<>();\n            for (int x : xs) xSet.add(x);\n            for (int y : ys) ySet.add(y);\n            System.out.println(xSet.size() < 3 && ySet.size() < 3 ? \"NO\" : \"YES\");\n        }\n    }\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function solve(input) {\n    const lines = input.trim().split('\\n');\n    let idx = 0;\n    const t = parseInt(lines[idx++]);\n    for (let _ = 0; _ < t; _++) {\n        if (lines[idx] === '') idx++;\n        const pts = [];\n        for (let i = 0; i < 3; i++)\n            pts.push(lines[idx++].split(' ').map(Number));\n        const xs = new Set(pts.map(p => p[0]));\n        const ys = new Set(pts.map(p => p[1]));\n        console.log(xs.size < 3 && ys.size < 3 ? \"NO\" : \"YES\");\n    }\n}",
       "caption": null
     },
     {

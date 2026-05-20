@@ -4,12 +4,24 @@
   "title": "Distance and Midpoint",
   "icon": "\u2194",
   "color": "#10b981",
-  "problemCount": 225,
+  "problemCount": 217,
   "blocks": [
     {
       "type": "heading",
       "level": 2,
       "text": "Chapter 9: Distance and Midpoint"
+    },
+    {
+      "type": "text",
+      "content": "**\ud83c\udfaf Learning Objectives \u2014 By the end of this chapter, you will be able to:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Distinguish between Euclidean, Manhattan, and Chebyshev distance metrics and when to use each",
+        "Find midpoints and reflect points across axes and lines",
+        "Choose the right distance metric for different problem contexts (grid, continuous, weighted)"
+      ]
     },
     {
       "type": "heading",
@@ -48,7 +60,7 @@
     },
     {
       "type": "text",
-      "content": "$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$"
+      "content": "d = sqrt((x2 - x1)^2 + (y2 - y1)^2)"
     },
     {
       "type": "text",
@@ -60,7 +72,7 @@
     },
     {
       "type": "text",
-      "content": "$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}$"
+      "content": "d = sqrt((x2 - x1)^2 + (y2 - y1)^2 + (z2 - z1)^2)"
     },
     {
       "type": "text",
@@ -72,7 +84,7 @@
     },
     {
       "type": "text",
-      "content": "$d_1 < d_2 \\iff d_1^2 < d_2^2$"
+      "content": "d1 < d2  <=>  d1^2 < d2^2"
     },
     {
       "type": "heading",
@@ -85,7 +97,7 @@
     },
     {
       "type": "text",
-      "content": "$d = |x_2 - x_1| + |y_2 - y_1|$"
+      "content": "d = |x2 - x1| + |y2 - y1|"
     },
     {
       "type": "text",
@@ -101,7 +113,7 @@
     },
     {
       "type": "text",
-      "content": "$\\max(|x_1 - x_2|, |y_1 - y_2|)$ (Chebyshev)"
+      "content": "max(|x1 - x2|, |y1 - y2|)  (Chebyshev)"
     },
     {
       "type": "text",
@@ -126,7 +138,7 @@
     },
     {
       "type": "text",
-      "content": "$d = \\max(|x_2 - x_1|, |y_2 - y_1|)$"
+      "content": "d = max(|x2 - x1|, |y2 - y1|)"
     },
     {
       "type": "text",
@@ -155,7 +167,7 @@
     },
     {
       "type": "text",
-      "content": "$M = ((x_1 + x_2) / 2, (y_1 + y_2) / 2)$"
+      "content": "M = ((x1 + x2) / 2, (y1 + y2) / 2)"
     },
     {
       "type": "text",
@@ -181,7 +193,7 @@
     },
     {
       "type": "text",
-      "content": "$d = |A\\cdot x_0 + B\\cdot y_0 + C| / \\sqrt{A^2 + B^2}$"
+      "content": "d = |A*x0 + B*y0 + C| / sqrt(A^2 + B^2)"
     },
     {
       "type": "text",
@@ -198,7 +210,7 @@
     },
     {
       "type": "text",
-      "content": "$\\text{Sum} = \\sum|x_i - x_c| + \\sum|y_i - y_c|$"
+      "content": "Sum = \u03a3|x_i - x_c| + \u03a3|y_i - y_c|"
     },
     {
       "type": "text",
@@ -219,7 +231,7 @@
     },
     {
       "type": "text",
-      "content": "$\\text{Sum} = \\sum((x_i - x_c)^2 + (y_i - y_c)^2)$"
+      "content": "Sum = \u03a3((x_i - x_c)^2 + (y_i - y_c)^2)"
     },
     {
       "type": "text",
@@ -235,48 +247,18 @@
       "content": "**Common keywords and phrases:**"
     },
     {
-      "type": "keyword_badges",
-      "groups": [
-        {
-          "label": "euclidean distance",
-          "color": "indigo"
-        },
-        {
-          "label": "manhattan distance",
-          "color": "emerald"
-        },
-        {
-          "label": "chebyshev distance",
-          "color": "amber"
-        },
-        {
-          "label": "midpoint formula",
-          "color": "cyan"
-        },
-        {
-          "label": "point-to-line distance",
-          "color": "rose"
-        },
-        {
-          "label": "manhattan median / minimax",
-          "color": "violet"
-        },
-        {
-          "label": "closest pair",
-          "color": "orange"
-        },
-        {
-          "label": "tree distance / LCA",
-          "color": "pink"
-        },
-        {
-          "label": "45-degree transform",
-          "color": "sky"
-        },
-        {
-          "label": "hamming distance",
-          "color": "red"
-        }
+      "type": "list",
+      "items": [
+        "\"Distance between\" / \"shortest distance\"",
+        "\"Manhattan distance\" / \"taxicab geometry\"",
+        "\"Euclidean distance\" / \"straight line distance\"",
+        "\"Chebyshev distance\" / \"king's move\"",
+        "\"Midpoint\" / \"halfway\"",
+        "\"Minimum sum of distances\" / \"meeting point\"",
+        "\"Farthest pair\" / \"closest pair\"",
+        "\"Edit distance\" / \"Levenshtein distance\" (string distance variant)",
+        "\"Hamming distance\" (bit/string distance)",
+        "\"Tree distance\" / \"distance between nodes\""
       ]
     },
     {
@@ -318,16 +300,6 @@
       "text": "Pattern 1: Manhattan Distance Separation"
     },
     {
-      "type": "interactive_diagram",
-      "diagram": "manhattan-median",
-      "caption": "See why the median, not the mean, minimizes the sum of absolute distances."
-    },
-    {
-      "type": "hint_card",
-      "question": "Why does Manhattan distance minimization use the median while squared distance uses the mean?",
-      "answer": "Manhattan distance uses $|x_i - c|$ \u2014 absolute deviation. The function $f(c) = \\sum |x_i - c|$ is piecewise linear with slope changing at each data point. The minimum occurs where the slope crosses zero, which is at the median. Squared distance $(x_i - c)^2$ is smooth and differentiable, giving the mean $(\\sum x_i)/n$."
-    },
-    {
       "type": "text",
       "content": "**When to use:** The objective function involves |x1-x2| + |y1-y2|."
     },
@@ -337,7 +309,7 @@
     },
     {
       "type": "text",
-      "content": "**Complexity:** $O(N \\log N)$ for median-based problems, $O(N)$ for linear scanning."
+      "content": "**Complexity:** O(N log N) for median-based problems, O(N) for linear scanning."
     },
     {
       "type": "text",
@@ -347,11 +319,6 @@
       "type": "heading",
       "level": 4,
       "text": "Pattern 2: 45-Degree Rotation (Chebyshev \u2194 Manhattan)"
-    },
-    {
-      "type": "interactive_diagram",
-      "diagram": "distance-transform",
-      "caption": "Watch how the 45\u00b0 rotation transforms Manhattan distance into Chebyshev distance."
     },
     {
       "type": "text",
@@ -364,11 +331,6 @@
     {
       "type": "text",
       "content": "**Transformation:** Let u = x + y, v = x - y. Then Manhattan(x,y) = Chebyshev(u,v)."
-    },
-    {
-      "type": "hint_card",
-      "question": "How do you transform Manhattan distance to Chebyshev (and back)?",
-      "answer": "Forward: $u = x + y,\\; v = x - y$. Then $\\text{Manhattan}((x_1,y_1), (x_2,y_2)) = \\text{Chebyshev}((u_1,v_1), (u_2,v_2))$. Inverse: $x = (u+v)/2,\\; y = (u-v)/2$. The 1/2 scaling is critical when transforming back!"
     },
     {
       "type": "text",
@@ -389,7 +351,7 @@
     },
     {
       "type": "text",
-      "content": "**Complexity:** $O(\\log(\\text{range}) \\times \\text{check\\_complexity})$."
+      "content": "**Complexity:** O(log(range) * check_complexity)."
     },
     {
       "type": "text",
@@ -410,16 +372,11 @@
     },
     {
       "type": "text",
-      "content": "**Complexity:** $O(N \\log N)$."
+      "content": "**Complexity:** O(N log N)."
     },
     {
       "type": "text",
       "content": "**Common mistakes:** Forgetting that the strip check must be done carefully; points within strip need to be sorted by y and checked only against a bounded number of neighbors."
-    },
-    {
-      "type": "hint_card",
-      "question": "Why does the strip width matter in the closest pair algorithm?",
-      "answer": "After finding minimum distance $d$ in left and right halves, candidates for a closer cross-pair must lie within $d$ of the dividing line (any point further away would already have distance $\\ge d$ to any point on the other side). Within this strip, sorting by $y$ and checking only 6-7 next points per point is sufficient because a $d \\times 2d$ rectangle can contain at most 6-7 points with mutual distance $\\ge d$."
     },
     {
       "type": "heading",
@@ -436,7 +393,7 @@
     },
     {
       "type": "text",
-      "content": "**Complexity:** $O(N \\log N)$ preprocessing, $O(log N)$ per query."
+      "content": "**Complexity:** O(N log N) preprocessing, O(log N) per query."
     },
     {
       "type": "text",
@@ -471,12 +428,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function euclideanDistance(p1, p2) {\n    return Math.sqrt((p1[0] - p2[0])**2 + (p1[1] - p2[1])**2);\n}\n\nfunction euclideanDistanceSquared(p1, p2) {\n    return (p1[0] - p2[0])**2 + (p1[1] - p2[1])**2;\n}",
-      "caption": null
-    },
-    {
       "type": "heading",
       "level": 4,
       "text": "Manhattan Distance"
@@ -497,12 +448,6 @@
       "type": "code",
       "lang": "java",
       "code": "public static int manhattanDistance(int[] p1, int[] p2) {\n    return Math.abs(p1[0] - p2[0]) + Math.abs(p1[1] - p2[1]);\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function manhattanDistance(p1, p2) {\n    return Math.abs(p1[0] - p2[0]) + Math.abs(p1[1] - p2[1]);\n}",
       "caption": null
     },
     {
@@ -529,12 +474,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function chebyshevDistance(p1, p2) {\n    return Math.max(Math.abs(p1[0] - p2[0]), Math.abs(p1[1] - p2[1]));\n}",
-      "caption": null
-    },
-    {
       "type": "heading",
       "level": 4,
       "text": "Manhattan to Chebyshev / Chebyshev to Manhattan Transformation"
@@ -555,12 +494,6 @@
       "type": "code",
       "lang": "java",
       "code": "public static long[] manhattanToChebyshev(long x, long y) {\n    return new long[]{x + y, x - y};\n}\n\npublic static long manhattanViaChebyshev(long[] p1, long[] p2) {\n    long[] t1 = manhattanToChebyshev(p1[0], p1[1]);\n    long[] t2 = manhattanToChebyshev(p2[0], p2[1]);\n    return Math.max(Math.abs(t1[0] - t2[0]), Math.abs(t1[1] - t2[1]));\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function manhattanToChebyshev(x, y) {\n    return [x + y, x - y];\n}\n\nfunction manhattanViaChebyshev(p1, p2) {\n    const [u1, v1] = manhattanToChebyshev(p1[0], p1[1]);\n    const [u2, v2] = manhattanToChebyshev(p2[0], p2[1]);\n    return Math.max(Math.abs(u1 - u2), Math.abs(v1 - v2));\n}",
       "caption": null
     },
     {
@@ -587,12 +520,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function midpoint(p1, p2) {\n    return [(p1[0] + p2[0]) / 2, (p1[1] + p2[1]) / 2];\n}",
-      "caption": null
-    },
-    {
       "type": "heading",
       "level": 4,
       "text": "Point-to-Line Distance"
@@ -616,12 +543,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function pointToLineDistance(p, p1, p2) {\n    const [x0, y0] = p;\n    const [x1, y1] = p1;\n    const [x2, y2] = p2;\n    const area = Math.abs((x2 - x1) * (y1 - y0) - (x1 - x0) * (y2 - y1));\n    const base = Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);\n    if (base === 0) return Math.sqrt((x0 - x1) ** 2 + (y0 - y1) ** 2);\n    return area / base;\n}",
-      "caption": null
-    },
-    {
       "type": "heading",
       "level": 4,
       "text": "Power of 2D Prefix Sum for Sum of Manhattan Distances"
@@ -630,24 +551,6 @@
       "type": "code",
       "lang": "python",
       "code": "# Sum of Manhattan distances from a center point to all points in a grid\ndef sum_manhattan_to_center(grid):\n    rows, cols = len(grid), len(grid[0])\n    row_sum = [sum(row) for row in grid]\n    col_sum = [sum(grid[r][c] for r in range(rows)) for c in range(cols)]\n    \n    # Find median row and col (weighted by values)\n    total = sum(row_sum)\n    running = 0\n    med_row = 0\n    for r in range(rows):\n        running += row_sum[r]\n        if running * 2 >= total:\n            med_row = r\n            break\n    \n    total = sum(col_sum)\n    running = 0\n    med_col = 0\n    for c in range(cols):\n        running += col_sum[c]\n        if running * 2 >= total:\n            med_col = c\n            break\n    \n    # Sum distances = sum of row distances + sum of col distances (Manhattan separation property!)\n    row_dist = sum(abs(r - med_row) * row_sum[r] for r in range(rows))\n    col_dist = sum(abs(c - med_col) * col_sum[c] for c in range(cols))\n    \n    return row_dist + col_dist",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "cpp",
-      "code": "int sumManhattanToCenter(vector<vector<int>>& grid) {\n    int rows = grid.size(), cols = grid[0].size();\n    vector<int> rowSum(rows, 0), colSum(cols, 0);\n    for (int r = 0; r < rows; r++)\n        for (int c = 0; c < cols; c++) {\n            rowSum[r] += grid[r][c];\n            colSum[c] += grid[r][c];\n        }\n    \n    int total = accumulate(rowSum.begin(), rowSum.end(), 0);\n    int running = 0, medRow = 0;\n    for (int r = 0; r < rows; r++) {\n        running += rowSum[r];\n        if (running * 2 >= total) { medRow = r; break; }\n    }\n    \n    total = accumulate(colSum.begin(), colSum.end(), 0);\n    running = 0;\n    int medCol = 0;\n    for (int c = 0; c < cols; c++) {\n        running += colSum[c];\n        if (running * 2 >= total) { medCol = c; break; }\n    }\n    \n    int rowDist = 0, colDist = 0;\n    for (int r = 0; r < rows; r++) rowDist += abs(r - medRow) * rowSum[r];\n    for (int c = 0; c < cols; c++) colDist += abs(c - medCol) * colSum[c];\n    return rowDist + colDist;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "public static int sumManhattanToCenter(int[][] grid) {\n    int rows = grid.length, cols = grid[0].length;\n    int[] rowSum = new int[rows], colSum = new int[cols];\n    for (int r = 0; r < rows; r++)\n        for (int c = 0; c < cols; c++) {\n            rowSum[r] += grid[r][c];\n            colSum[c] += grid[r][c];\n        }\n    \n    int total = 0;\n    for (int v : rowSum) total += v;\n    int running = 0, medRow = 0;\n    for (int r = 0; r < rows; r++) {\n        running += rowSum[r];\n        if (running * 2 >= total) { medRow = r; break; }\n    }\n    \n    total = 0;\n    for (int v : colSum) total += v;\n    running = 0;\n    int medCol = 0;\n    for (int c = 0; c < cols; c++) {\n        running += colSum[c];\n        if (running * 2 >= total) { medCol = c; break; }\n    }\n    \n    int rowDist = 0, colDist = 0;\n    for (int r = 0; r < rows; r++) rowDist += Math.abs(r - medRow) * rowSum[r];\n    for (int c = 0; c < cols; c++) colDist += Math.abs(c - medCol) * colSum[c];\n    return rowDist + colDist;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function sumManhattanToCenter(grid) {\n    const rows = grid.length, cols = grid[0].length;\n    const rowSum = new Array(rows).fill(0);\n    const colSum = new Array(cols).fill(0);\n    for (let r = 0; r < rows; r++)\n        for (let c = 0; c < cols; c++) {\n            rowSum[r] += grid[r][c];\n            colSum[c] += grid[r][c];\n        }\n    \n    let total = rowSum.reduce((a, b) => a + b, 0);\n    let running = 0, medRow = 0;\n    for (let r = 0; r < rows; r++) {\n        running += rowSum[r];\n        if (running * 2 >= total) { medRow = r; break; }\n    }\n    \n    total = colSum.reduce((a, b) => a + b, 0);\n    running = 0;\n    let medCol = 0;\n    for (let c = 0; c < cols; c++) {\n        running += colSum[c];\n        if (running * 2 >= total) { medCol = c; break; }\n    }\n    \n    let rowDist = 0, colDist = 0;\n    for (let r = 0; r < rows; r++) rowDist += Math.abs(r - medRow) * rowSum[r];\n    for (let c = 0; c < cols; c++) colDist += Math.abs(c - medCol) * colSum[c];\n    return rowDist + colDist;\n}",
       "caption": null
     },
     {
@@ -811,7 +714,7 @@
     },
     {
       "type": "text",
-      "content": "**Problem 5: Tree Distance Sum (Hard)** Given a tree with N nodes, each edge has weight 1. For each node, compute the sum of distances from that node to all other nodes. Solve in $O(N)$ time."
+      "content": "**Problem 5: Tree Distance Sum (Hard)** Given a tree with N nodes, each edge has weight 1. For each node, compute the sum of distances from that node to all other nodes. Solve in O(N) time."
     },
     {
       "type": "text",
@@ -850,24 +753,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "cpp",
-      "code": "long long bruteForce(vector<long long>& arr) {\n    int n = arr.size();\n    long long total = 0;\n    for (int i = 0; i < n; i++)\n        for (int j = i+1; j < n; j++)\n            total += abs(arr[i] - arr[j]);\n    return total;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "public static long bruteForce(long[] arr) {\n    int n = arr.length;\n    long total = 0;\n    for (int i = 0; i < n; i++)\n        for (int j = i+1; j < n; j++)\n            total += Math.abs(arr[i] - arr[j]);\n    return total;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function bruteForce(arr) {\n    const n = arr.length;\n    let total = 0;\n    for (let i = 0; i < n; i++)\n        for (let j = i + 1; j < n; j++)\n            total += Math.abs(arr[i] - arr[j]);\n    return total;\n}",
-      "caption": null
-    },
-    {
       "type": "text",
       "content": "**C. Optimized Approach:** Sort the array. For each element arr[i], its contribution to the sum is: arr[i] * i - prefix_sum[i-1]. This counts arr[i] as positive when paired with smaller elements and negative when paired with larger elements."
     },
@@ -891,8 +776,8 @@
     {
       "type": "list",
       "items": [
-        "Time: $O(N \\log N)$ for sorting, $O(N)$ for the linear pass = $O(N \\log N)$.",
-        "Space: $O(1)$ extra."
+        "Time: O(N log N) for sorting, O(N) for the linear pass = O(N log N).",
+        "Space: O(1) extra."
       ]
     },
     {
@@ -927,12 +812,6 @@
       "type": "code",
       "lang": "java",
       "code": "import java.util.*;\n\npublic class Solution {\n    public static long sumOfAbsDiff(long[] arr) {\n        Arrays.sort(arr);\n        long total = 0, prefix = 0;\n        for (int i = 0; i < arr.length; i++) {\n            total += arr[i] * i - prefix;\n            prefix += arr[i];\n        }\n        return total;\n    }\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function sumOfAbsDiff(arr) {\n    arr.sort((a, b) => a - b);\n    let total = 0, prefix = 0;\n    for (let i = 0; i < arr.length; i++) {\n        total += arr[i] * i - prefix;\n        prefix += arr[i];\n    }\n    return total;\n}",
       "caption": null
     },
     {
@@ -979,8 +858,8 @@
     {
       "type": "list",
       "items": [
-        "Time: $O(N)$ for scanning all points.",
-        "Space: $O(1)$."
+        "Time: O(N) for scanning all points.",
+        "Space: O(1)."
       ]
     },
     {
@@ -1015,12 +894,6 @@
       "type": "code",
       "lang": "java",
       "code": "public int minimizeMaxManhattan(int[][] points) {\n    int n = points.length;\n    if (n <= 2) return 0;\n    \n    long[][] transformed = new long[n][2];\n    for (int i = 0; i < n; i++) {\n        transformed[i][0] = (long)points[i][0] + points[i][1];\n        transformed[i][1] = (long)points[i][0] - points[i][1];\n    }\n    \n    // Build sorted arrays with indices\n    long[][] maxU = new long[n][2];\n    long[][] minU = new long[n][2];\n    long[][] maxV = new long[n][2];\n    long[][] minV = new long[n][2];\n    \n    for (int i = 0; i < n; i++) {\n        maxU[i] = new long[]{transformed[i][0], i};\n        minU[i] = new long[]{transformed[i][0], i};\n        maxV[i] = new long[]{transformed[i][1], i};\n        minV[i] = new long[]{transformed[i][1], i};\n    }\n    \n    Arrays.sort(maxU, (a,b) -> Long.compare(b[0], a[0]));\n    Arrays.sort(minU, (a,b) -> Long.compare(a[0], b[0]));\n    Arrays.sort(maxV, (a,b) -> Long.compare(b[0], a[0]));\n    Arrays.sort(minV, (a,b) -> Long.compare(a[0], b[0]));\n    \n    long ans = Long.MAX_VALUE;\n    for (int rem = 0; rem < n; rem++) {\n        long mu = (maxU[0][1] != rem) ? maxU[0][0] : maxU[1][0];\n        long nu = (minU[0][1] != rem) ? minU[0][0] : minU[1][0];\n        long mv = (maxV[0][1] != rem) ? maxV[0][0] : maxV[1][0];\n        long nv = (minV[0][1] != rem) ? minV[0][0] : minV[1][0];\n        \n        ans = Math.min(ans, Math.max(mu - nu, mv - nv));\n    }\n    return (int)ans;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function minimizeMaxManhattan(points) {\n    const n = points.length;\n    if (n <= 2) return 0;\n    \n    const transformed = points.map(([x, y]) => [x + y, x - y]);\n    \n    const maxU = transformed.map(([u, v], i) => [u, i]).sort((a, b) => b[0] - a[0]);\n    const minU = transformed.map(([u, v], i) => [u, i]).sort((a, b) => a[0] - b[0]);\n    const maxV = transformed.map(([u, v], i) => [v, i]).sort((a, b) => b[0] - a[0]);\n    const minV = transformed.map(([u, v], i) => [v, i]).sort((a, b) => a[0] - b[0]);\n    \n    let ans = Infinity;\n    for (let rem = 0; rem < n; rem++) {\n        const mu = maxU[0][1] !== rem ? maxU[0][0] : maxU[1][0];\n        const nu = minU[0][1] !== rem ? minU[0][0] : minU[1][0];\n        const mv = maxV[0][1] !== rem ? maxV[0][0] : maxV[1][0];\n        const nv = minV[0][1] !== rem ? minV[0][0] : minV[1][0];\n        ans = Math.min(ans, Math.max(mu - nu, mv - nv));\n    }\n    return ans;\n}",
       "caption": null
     },
     {
@@ -1099,8 +972,8 @@
     {
       "type": "list",
       "items": [
-        "Time: $O(N)$ for two DFS passes.",
-        "Space: $O(N)$ for adjacency, subtree sizes, answers."
+        "Time: O(N) for two DFS passes.",
+        "Space: O(N) for adjacency, subtree sizes, answers."
       ]
     },
     {
@@ -1135,12 +1008,6 @@
       "type": "code",
       "lang": "java",
       "code": "import java.util.*;\n\npublic class TreeDistancesII {\n    static int n;\n    static List<Integer>[] adj;\n    static long[] subtree, sumDown, ans;\n    \n    static void dfs1(int u, int p) {\n        subtree[u] = 1;\n        for (int v : adj[u]) {\n            if (v == p) continue;\n            dfs1(v, u);\n            subtree[u] += subtree[v];\n            sumDown[u] += sumDown[v] + subtree[v];\n        }\n    }\n    \n    static void dfs2(int u, int p) {\n        for (int v : adj[u]) {\n            if (v == p) continue;\n            ans[v] = ans[u] - subtree[v] + (n - subtree[v]);\n            dfs2(v, u);\n        }\n    }\n    \n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        n = sc.nextInt();\n        adj = new ArrayList[n];\n        for (int i = 0; i < n; i++) adj[i] = new ArrayList<>();\n        \n        for (int i = 0; i < n-1; i++) {\n            int u = sc.nextInt() - 1;\n            int v = sc.nextInt() - 1;\n            adj[u].add(v);\n            adj[v].add(u);\n        }\n        \n        subtree = new long[n];\n        sumDown = new long[n];\n        ans = new long[n];\n        \n        dfs1(0, -1);\n        ans[0] = sumDown[0];\n        dfs2(0, -1);\n        \n        for (long x : ans) System.out.print(x + \" \");\n    }\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function treeDistances(n, edges) {\n    const adj = Array.from({length: n}, () => []);\n    for (const [u, v] of edges) {\n        adj[u - 1].push(v - 1);\n        adj[v - 1].push(u - 1);\n    }\n    \n    const subtree = new Array(n).fill(0);\n    const sumDown = new Array(n).fill(0);\n    const ans = new Array(n).fill(0);\n    \n    function dfs1(u, parent) {\n        subtree[u] = 1;\n        for (const v of adj[u]) {\n            if (v !== parent) {\n                dfs1(v, u);\n                subtree[u] += subtree[v];\n                sumDown[u] += sumDown[v] + subtree[v];\n            }\n        }\n    }\n    \n    function dfs2(u, parent) {\n        for (const v of adj[u]) {\n            if (v !== parent) {\n                ans[v] = ans[u] - subtree[v] + (n - subtree[v]);\n                dfs2(v, u);\n            }\n        }\n    }\n    \n    dfs1(0, -1);\n    ans[0] = sumDown[0];\n    dfs2(0, -1);\n    return ans;\n}",
       "caption": null
     },
     {
@@ -1187,8 +1054,8 @@
     {
       "type": "list",
       "items": [
-        "Time: $O(N)$.",
-        "Space: $O(1)$."
+        "Time: O(N).",
+        "Space: O(1)."
       ]
     },
     {
@@ -1211,24 +1078,6 @@
       "type": "code",
       "lang": "python",
       "code": "def count_good_subarrays(arr):\n    n = len(arr)\n    ans = n + (n - 1)  # length 1 and 2 subarrays\n    \n    for i in range(n - 2):\n        # Length 3\n        a, b, c = arr[i], arr[i+1], arr[i+2]\n        if not (a <= b <= c or a >= b >= c):\n            ans += 1\n        \n        # Length 4\n        if i + 3 < n:\n            a, b, c, d = arr[i], arr[i+1], arr[i+2], arr[i+3]\n            if (not (a <= b <= c or a >= b >= c) and\n                not (b <= c <= d or b >= c >= d) and\n                not (a <= b <= d and a <= c <= d and a <= ... )):\n                pass  # Full check\n            # Simpler: check all 3-element subarrays of this 4-element window\n            ok = True\n            for x in range(i, i+2):\n                for y in range(x+1, i+3):\n                    for z in range(y+1, i+4):\n                        p,q,r = arr[x], arr[y], arr[z]\n                        if p <= q <= r or p >= q >= r:\n                            ok = False\n            if ok:\n                ans += 1\n    \n    return ans",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "cpp",
-      "code": "int countGoodSubarrays(vector<int>& arr) {\n    int n = arr.size();\n    int ans = n + (n - 1);\n    for (int i = 0; i < n - 2; i++) {\n        int a = arr[i], b = arr[i+1], c = arr[i+2];\n        if (!(a <= b && b <= c) && !(a >= b && b >= c)) ans++;\n        if (i + 3 < n) {\n            int d = arr[i+3];\n            bool ok = true;\n            for (int x = i; x < i+2 && ok; x++)\n                for (int y = x+1; y < i+3 && ok; y++)\n                    for (int z = y+1; z < i+4; z++) {\n                        int p = arr[x], q = arr[y], r = arr[z];\n                        if ((p <= q && q <= r) || (p >= q && q >= r)) { ok = false; break; }\n                    }\n            if (ok) ans++;\n        }\n    }\n    return ans;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "public static int countGoodSubarrays(int[] arr) {\n    int n = arr.length;\n    int ans = n + (n - 1);\n    for (int i = 0; i < n - 2; i++) {\n        int a = arr[i], b = arr[i+1], c = arr[i+2];\n        if (!(a <= b && b <= c) && !(a >= b && b >= c)) ans++;\n        if (i + 3 < n) {\n            boolean ok = true;\n            for (int x = i; x < i+2 && ok; x++)\n                for (int y = x+1; y < i+3 && ok; y++)\n                    for (int z = y+1; z < i+4; z++) {\n                        int p = arr[x], q = arr[y], r = arr[z];\n                        if ((p <= q && q <= r) || (p >= q && q >= r)) { ok = false; break; }\n                    }\n            if (ok) ans++;\n        }\n    }\n    return ans;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function countGoodSubarrays(arr) {\n    const n = arr.length;\n    let ans = n + (n - 1);\n    for (let i = 0; i < n - 2; i++) {\n        const a = arr[i], b = arr[i+1], c = arr[i+2];\n        if (!(a <= b && b <= c) && !(a >= b && b >= c)) ans++;\n        if (i + 3 < n) {\n            let ok = true;\n            for (let x = i; x < i+2 && ok; x++)\n                for (let y = x+1; y < i+3 && ok; y++)\n                    for (let z = y+1; z < i+4; z++) {\n                        const p = arr[x], q = arr[y], r = arr[z];\n                        if ((p <= q && q <= r) || (p >= q && q >= r)) { ok = false; break; }\n                    }\n            if (ok) ans++;\n        }\n    }\n    return ans;\n}",
       "caption": null
     },
     {
@@ -1273,8 +1122,8 @@
     {
       "type": "list",
       "items": [
-        "Time: $O(1)$ (or O(number of bits) in languages without popcount).",
-        "Space: $O(1)$."
+        "Time: O(1) (or O(number of bits) in languages without popcount).",
+        "Space: O(1)."
       ]
     },
     {
@@ -1311,21 +1160,8 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function hammingDistance(x, y) {\n    const xor = x ^ y;\n    return (xor >>> 0).toString(2).split('1').length - 1;\n}",
-      "caption": null
-    },
-    {
       "type": "divider"
     }
   ],
-  "difficulty": "Intermediate",
-  "problem_urls": {
-    "Problem 1": "https://atcoder.jp/contests/abc186/tasks/abc186_d",
-    "Problem 2": "https://leetcode.com/problems/minimize-manhattan-distances/",
-    "Problem 3": "https://cses.fi/problemset/task/1133",
-    "Problem 4": "https://codeforces.com/problemset/problem/1550/C",
-    "Problem 5": "https://leetcode.com/problems/hamming-distance/"
-  }
+  "difficulty": "Intermediate"
 }

@@ -12,58 +12,77 @@
       "text": "Chapter 1: Introduction to Shapes"
     },
     {
+      "type": "text",
+      "content": "**\ud83c\udfaf Learning Objectives \u2014 By the end of this chapter, you will be able to:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Read a binary matrix and detect connected shapes using BFS/DFS grid traversal",
+        "Compute the perimeter, bounding box, and surface area of a shape on a grid",
+        "Normalize a shape to make translation-invariant comparisons",
+        "Generate all 90-degree rotations of a shape for rotational matching",
+        "Identify common shape problems: flood fill, projection area, surface area, L-shapes"
+      ]
+    },
+    {
       "type": "heading",
       "level": 3,
       "text": "1. INTRODUCTION"
     },
     {
       "type": "text",
-      "content": "Let's start with a simple question: **what is a shape in the world of programming?**"
+      "content": "Welcome to the world of shapes in programming. If you have never written a geometry algorithm before, do not worry \u2014 we will start from the absolute ground floor."
     },
     {
       "type": "text",
-      "content": "When you look at a digital photo, what you're really seeing is a grid of colored dots \u2014 pixels. An algorithm doesn't \"see\" a circle or a triangle the way you do. It sees numbers in a grid. And those numbers either follow a pattern (a shape!) or they don't."
+      "content": "**What is a \"shape\" in computing?**"
     },
     {
       "type": "text",
-      "content": "**Real-world hook:** Imagine you're organizing chairs in a room. You might arrange them in a perfect square grid, in a circle, or in a rectangular block. The shape of your arrangement determines what fits where. Now imagine you're the one writing code that needs to *detect* that arrangement \u2014 given nothing but a grid of \"chair present\" and \"chair absent\" values."
-    },
-    {
-      "type": "text",
-      "content": "That's what this chapter is about: teaching a computer to recognize, measure, and compare shapes."
-    },
-    {
-      "type": "text",
-      "content": "**So what is a \"shape,\" exactly?** In DSA problem terms, a shape is any structured arrangement of points, lines, or cells that forms a recognizable pattern. This could be:"
+      "content": "When we say \"shape\" in the context of DSA problems, we mean any structured arrangement of points, lines, or cells that forms a recognizable pattern. This could be:"
     },
     {
       "type": "list",
       "items": [
-        "A triangle drawn on a grid of 1s and 0s",
+        "A triangle drawn on a grid of `1`s and `0`s",
         "A rectangle formed by four corners in 2D space",
         "A polygon defined by a sequence of vertices",
-        "A pattern of 1-cells that looks like an \"L\" in a binary matrix"
+        "A pattern of `1` cells that looks like an \"L\" shape in binary matrix"
       ]
     },
     {
       "type": "text",
-      "content": "**The core skill you'll learn:** To \"see\" shapes hidden inside grids of numbers. Every shape problem teaches you some combination of grid traversal, pattern recognition, and geometric measurement."
+      "content": "**Real-world intuition:** Think of organizing chairs in a room. You might arrange them in a perfect square grid, in a circle, or in a rectangular block. The shape of your arrangement determines what fits where. Similarly, in coding problems, we often need to detect, count, or transform shapes."
     },
     {
       "type": "text",
-      "content": "**What makes a shape distinct?** Three things:"
+      "content": "**Why does it matter?** Shape problems teach you:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "How to traverse 2D space systematically",
+        "How to identify patterns in noisy data",
+        "How grid coordinates work (row = y, column = x)",
+        "How to measure geometric properties (area, perimeter, symmetry)"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "**The fundamental mental model:** Everything on a computer screen is ultimately a grid of pixels. In algorithmic problems, we typically work with much smaller grids or coordinate systems. The core skill is learning to \"see\" shapes within these grids."
+    },
+    {
+      "type": "text",
+      "content": "**A shape is defined by its boundaries.** Whether you have a triangle, a square, or a circle, what makes a shape distinct is:"
     },
     {
       "type": "list",
       "items": [
         "Its set of boundary points",
-        "The relationship between those points (angles, distances)",
+        "The relationship between those points",
         "The area it encloses"
       ]
-    },
-    {
-      "type": "text",
-      "content": "Think of it this way: if someone scribbled a figure on graph paper, you'd immediately know whether it's a triangle or a square just by looking. Your brain does this automatically. We need to teach the computer to do the same thing \u2014 but with math instead of eyeballs."
     },
     {
       "type": "heading",
@@ -77,46 +96,23 @@
     },
     {
       "type": "text",
-      "content": "A 2D grid is just an `m \u00d7 n` array of cells. Each cell lives at coordinates `(r, c)` where:"
-    },
-    {
-      "type": "list",
-      "items": [
-        "`r` is the row (0 at the top, going down)",
-        "`c` is the column (0 on the left, going right)"
-      ]
-    },
-    {
-      "type": "text",
-      "content": "Here's what a `4 \u00d7 5` grid looks like:"
+      "content": "A 2D grid (or matrix) is an `m x n` array of cells. Each cell has coordinates `(r, c)` where `r` is the row index (0 to m-1, top to bottom) and `c` is the column index (0 to n-1, left to right)."
     },
     {
       "type": "code",
       "lang": "",
-      "code": "    c0  c1  c2  c3  c4\nr0  [ ] [ ] [ ] [ ] [ ]\nr1  [ ] [ ] [ ] [ ] [ ]\nr2  [ ] [ ] [ ] [ ] [ ]\nr3  [ ] [ ] [ ] [ ] [ ]",
+      "code": "Grid (4 x 5):\n    c0  c1  c2  c3  c4\nr0  [ ] [ ] [ ] [ ] [ ]\nr1  [ ] [ ] [ ] [ ] [ ]\nr2  [ ] [ ] [ ] [ ] [ ]\nr3  [ ] [ ] [ ] [ ] [ ]",
       "caption": null
     },
     {
       "type": "text",
-      "content": "**Neighbors matter.** Each cell touches up to 4 orthogonal neighbors (up, down, left, right):"
+      "content": "**Neighbors:** Each cell has up to 4 orthogonal neighbors (up, down, left, right) and up to 4 diagonal neighbors:"
     },
     {
       "type": "code",
       "lang": "",
-      "code": "         (r-1, c)\n(r, c-1)  [r, c]  (r, c+1)\n         (r+1, c)",
+      "code": "(r-1, c-1)  (r-1, c)  (r-1, c+1)\n(r,   c-1)  [r,   c]  (r,   c+1)\n(r+1, c-1)  (r+1, c)  (r+1, c+1)",
       "caption": null
-    },
-    {
-      "type": "text",
-      "content": "Some problems also consider diagonal neighbors (8-directional). Getting this distinction right is half the battle in grid problems."
-    },
-    {
-      "type": "text",
-      "content": "**The key insight:** A grid IS a graph \u2014 each cell is a node, and adjacency defines the edges. You never need to build an explicit adjacency list; neighbors are computed on the fly with a direction array. This is the \"one weird trick\" that makes grid problems solvable."
-    },
-    {
-      "type": "interactive_diagram",
-      "diagram": "grid-builder"
     },
     {
       "type": "heading",
@@ -125,37 +121,20 @@
     },
     {
       "type": "text",
-      "content": "Here's a classic problem: **given a binary grid where 1s form a shape, find its perimeter.**"
+      "content": "When shapes are formed by `1`s in a binary matrix, the perimeter can be computed cell by cell:"
     },
     {
-      "type": "text",
-      "content": "The trick is beautifully simple. Every 1-cell starts with 4 exposed sides. For each neighboring 1-cell, two sides become hidden (one from each cell). So:"
-    },
-    {
-      "type": "text",
-      "content": "**The formula:** `perimeter = (count of 1s \u00d7 4) \u2212 (shared edges \u00d7 2)`"
-    },
-    {
-      "type": "text",
-      "content": "Or equivalently \u2014 and more intuitively \u2014 count exposed edges cell by cell. A cell's edge is \"exposed\" if the neighbor in that direction is either out of bounds or a 0."
-    },
-    {
-      "type": "text",
-      "content": "Let's see it on an example:"
+      "type": "list",
+      "items": [
+        "Each cell with value `1` contributes 4 to the potential perimeter",
+        "Subtract 1 for each orthogonal neighbor that is also `1`"
+      ]
     },
     {
       "type": "code",
       "lang": "",
-      "code": "0 1 0\n1 1 1\n0 1 0\n\nStep through each 1-cell:\n- Center (1,1): has 4 neighbors \u2192 contributes 0\n- Top (0,1): has 2 neighbors \u2192 contributes 2\n- Left (1,0): has 2 neighbors \u2192 contributes 2\n- Right (1,2): has 2 neighbors \u2192 contributes 2\n- Bottom (2,1): has 2 neighbors \u2192 contributes 2\nTotal = 8",
+      "code": "Example:\n0 1 0\n1 1 1\n0 1 0\n\nPerimeter: \n- Center cell has 4 neighbors -> contributes 0\n- Top, left, right, bottom cells each have 2 neighbors -> contribute 2 each\n- Total = 4 * 2 = 8",
       "caption": null
-    },
-    {
-      "type": "text",
-      "content": "**Common gotcha:** Only check 4 directions, not 8. Diagonal adjacency doesn't hide edges. And you only need to check the top and left neighbors if you're using the subtract-2 approach \u2014 shared edges are counted twice naturally."
-    },
-    {
-      "type": "interactive_diagram",
-      "diagram": "perimeter-explorer"
     },
     {
       "type": "heading",
@@ -164,31 +143,27 @@
     },
     {
       "type": "text",
-      "content": "Now imagine stacking unit cubes on a grid. Each cell `(i, j)` has a height `grid[i][j]`. This turns your 2D grid into a 3D city skyline."
-    },
-    {
-      "type": "text",
-      "content": "**Projection area** (LeetCode 883) takes three \"photos\" of your city:"
+      "content": "For 3D shapes built from unit cubes on a grid:"
     },
     {
       "type": "list",
       "items": [
-        "**Top view (xy-plane):** Count every cell with height > 0 \u2014 each casts a 1\u00d71 shadow downward",
-        "**Front view (xz-plane):** For each column, only the tallest building casts a shadow; shorter ones hide behind it",
-        "**Side view (yz-plane):** Same idea, but for each row"
+        "Each cube has 6 faces",
+        "A face is exposed if no adjacent cube occupies that side",
+        "Projection area: count of non-zero cells when viewed from top, front, side"
       ]
     },
     {
       "type": "text",
-      "content": "**Surface area** (LeetCode 892) counts *every exposed face* of every cube. Each tower of height `h` starts with `4h + 2` faces. Then subtract faces hidden by adjacent towers: `2 \u00d7 min(h\u2081, h\u2082)` for each shared wall."
+      "content": "**Projection rules:**"
     },
     {
-      "type": "text",
-      "content": "**The intuition:** Think of it as wrapping each cube in gift paper. Two cubes pressed together share a wall \u2014 that wall doesn't need wrapping. The total paper needed = all cube faces \u2212 shared faces."
-    },
-    {
-      "type": "interactive_diagram",
-      "diagram": "projection-viewer"
+      "type": "list",
+      "items": [
+        "**Top view (xy-plane):** Count every cell with height > 0",
+        "**Front view (xz-plane):** For each column, the maximum height",
+        "**Side view (yz-plane):** For each row, the maximum height"
+      ]
     },
     {
       "type": "heading",
@@ -197,43 +172,33 @@
     },
     {
       "type": "text",
-      "content": "**Translation** is the easy part: just add an offset to every coordinate."
+      "content": "**Translation:** Moving a shape by adding a constant offset to all coordinates:"
     },
     {
       "type": "code",
       "lang": "",
-      "code": "New coordinates = (x + dx, y + dy)",
+      "code": "New point = (x + dx, y + dy)",
       "caption": null
     },
     {
       "type": "text",
-      "content": "**Rotation** is where it gets interesting. A 90\u00b0 clockwise rotation on a grid uses a clean formula:"
+      "content": "**90-degree rotation on grid:** Rotating a shape by 90 degrees clockwise:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "New coordinates: `(r, c) -> (c, rows-1-r)`"
+      ]
     },
     {
       "type": "text",
-      "content": "`(r, c) \u2192 (c, rows \u2212 1 \u2212 r)`"
-    },
-    {
-      "type": "text",
-      "content": "Why does this work? Imagine the top-left corner as the pivot. The new row becomes the old column \u2014 you're essentially tipping the shape on its side. The `rows \u2212 1 \u2212 r` part handles the flipping."
-    },
-    {
-      "type": "text",
-      "content": "**Normalization** is the real trick for shape matching. To compare two shapes regardless of where they sit on the grid, translate them both so their top-left cell is at `(0, 0)`."
+      "content": "**Normalization for shape matching:** To compare shapes regardless of position, translate so the top-left point is at `(0, 0)`:"
     },
     {
       "type": "code",
       "lang": "",
-      "code": "min_r = min(r_i); min_c = min(c_i)\nnormalized = [(r_i \u2212 min_r, c_i \u2212 min_c) for each point i]",
+      "code": "min_r = min(r_i); min_c = min(c_i)\nnormalized = [(r_i - min_r, c_i - min_c) for each point]",
       "caption": null
-    },
-    {
-      "type": "text",
-      "content": "After normalization, two identical shapes look exactly the same in coordinate space \u2014 position no longer matters. The shape IS the set of its relative coordinates."
-    },
-    {
-      "type": "interactive_diagram",
-      "diagram": "shape-rotation"
     },
     {
       "type": "heading",
@@ -242,19 +207,15 @@
     },
     {
       "type": "text",
-      "content": "Given a point `(x, y)` and a shape, is the point inside? The answer depends on the shape type:"
+      "content": "For a point `(x, y)`, determine if it lies inside a shape:"
     },
     {
       "type": "list",
       "items": [
-        "**Rectangle:** Check if `x` lies between the rectangle's x-bounds AND `y` lies between its y-bounds. Both conditions must be true simultaneously.",
-        "**Circle:** Check if `distance\u00b2 \u2264 r\u00b2`. We use the squared distance to avoid an expensive square root.",
-        "**Triangle:** Use the area method \u2014 compute the area of triangles formed by the point with each edge. If the sum equals the triangle's total area, the point is inside."
+        "**Rectangle:** Check if `x` is between rectangle bounds and `y` is between rectangle bounds",
+        "**Circle:** Check if distance from center `<= radius`",
+        "**Triangle:** Use barycentric coordinates or area method"
       ]
-    },
-    {
-      "type": "text",
-      "content": "**The unifying idea:** For any convex shape, a point is inside if it's on the same side of every edge. This is the cross-product approach, and it's the same 3-line function that powers 80% of computational geometry."
     },
     {
       "type": "heading",
@@ -262,23 +223,11 @@
       "text": "2.6 Convex vs Concave Shapes"
     },
     {
-      "type": "text",
-      "content": "Here's a distinction that shows up more than you'd expect:"
-    },
-    {
       "type": "list",
       "items": [
-        "**Convex:** Every interior angle \u2264 180\u00b0. No \"dents.\" Any line between two points stays entirely inside the shape. Think of a rubber band stretched around the shape \u2014 if the rubber band doesn't cross any interior void, the shape is convex.",
-        "**Concave:** At least one interior angle > 180\u00b0. Has an indentation \u2014 literally a \"cave\" in the shape."
+        "**Convex shape:** All interior angles are <= 180 degrees. Any line segment between two points lies entirely inside the shape.",
+        "**Concave shape:** At least one interior angle > 180 degrees. Has \"indentations.\""
       ]
-    },
-    {
-      "type": "text",
-      "content": "**How to check convexity in code:** Walk around the polygon and check the cross product of consecutive edges. If the sign ever flips (left turn becoming right turn), you've found a concave vertex."
-    },
-    {
-      "type": "text",
-      "content": "It's surprisingly simple: the cross product tells you the orientation of three consecutive points. For a convex polygon, all turns are in the same direction \u2014 all clockwise or all counterclockwise."
     },
     {
       "type": "heading",
@@ -286,11 +235,11 @@
       "text": "3. PROBLEM RECOGNITION"
     },
     {
-      "type": "hint_card",
-      "question": "How do you know a problem is about shape identification?"
+      "type": "text",
+      "content": "**Keywords that signal shape identification problems:**"
     },
     {
-      "type": "keyword_badges",
+      "type": "list",
       "items": [
         "\"shape\", \"pattern\", \"figure\"",
         "\"grid\", \"matrix\", \"board\"",
@@ -299,17 +248,14 @@
         "\"connected 1s\", \"island\", \"blob\"",
         "\"perimeter\", \"boundary\", \"contour\"",
         "\"projection\", \"surface area\"",
+        "\"projection area\" (3D shapes)",
         "\"minimum rectangle covering\"",
         "\"transform\", \"normalize\" (shape matching)"
       ]
     },
     {
       "type": "text",
-      "content": "**But here's a subtler signal:** Any problem about \"painting\" or \"coloring\" contiguous regions, \"Game of Life\" style transformations, \"puzzle piece\" fitting, or \"find the pattern\" in a matrix is likely a shape problem in disguise."
-    },
-    {
-      "type": "text",
-      "content": "**The interviewer's framing often follows these templates:**"
+      "content": "**How interviewers frame these:**"
     },
     {
       "type": "list",
@@ -324,7 +270,16 @@
     },
     {
       "type": "text",
-      "content": "**If you see these, stop and think:** What's the basic unit here? A cell? A point? A line segment? Once you identify the primitive, the algorithm usually follows the same pattern."
+      "content": "**Hidden geometry indicators:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Problems about \"painting\", \"coloring\" contiguous regions",
+        "\"Game of Life\" style grid transformations",
+        "\"Puzzle piece\" fitting problems",
+        "\"Find the pattern\" in a matrix"
+      ]
     },
     {
       "type": "heading",
@@ -341,8 +296,8 @@
       "items": [
         "**When to use:** Matrix/grid with 0/1s; need to identify or count shapes",
         "**Why it works:** BFS/DFS from each unvisited 1-cell collects all connected cells forming the shape",
-        "**Complexity:** O(m \u00d7 n) time, O(m \u00d7 n) space for the visited array",
-        "**Common mistake:** Forgetting that diagonal connections don't count in 4-directional problems \u2014 always check the problem statement carefully"
+        "**Complexity:** O(m * n) time, O(m * n) space",
+        "**Common mistake:** Forgetting that diagonal connections in some problems don't count as connected (4-directional vs 8-directional)"
       ]
     },
     {
@@ -354,9 +309,9 @@
       "type": "list",
       "items": [
         "**When to use:** Two shapes need to be compared for rotational/translational equality",
-        "**Why it works:** Normalizing to a canonical position makes equivalent shapes produce identical representations",
+        "**Why it works:** By normalizing to a canonical position, equivalent shapes produce identical representations",
         "**Complexity:** O(k) where k is the number of cells in the shape",
-        "**Common mistake:** Only checking one rotation \u2014 a shape might match after 90\u00b0, 180\u00b0, or 270\u00b0 rotation"
+        "**Common mistake:** Not generating all rotations \u2014 a shape may match after 90, 180, 270 degrees"
       ]
     },
     {
@@ -368,9 +323,9 @@
       "type": "list",
       "items": [
         "**When to use:** Need the perimeter of a shape formed by 1s in a binary matrix",
-        "**Why it works:** Each 1-cell contributes 4 \u2212 (number of 1-neighbors) to the perimeter",
-        "**Complexity:** O(m \u00d7 n) with a single pass",
-        "**Common mistake:** Subtracting 1 per shared edge instead of 2 \u2014 each shared edge reduces the total perimeter by 2 because it hides one edge from each of the two cells involved"
+        "**Why it works:** Each 1-cell contributes 4 - (number of 1-neighbors) to the perimeter",
+        "**Complexity:** O(m * n)",
+        "**Common mistake:** Only checking 4 directions, not 8 (depends on problem definition)"
       ]
     },
     {
@@ -383,8 +338,8 @@
       "items": [
         "**When to use:** Need to enclose a shape, check alignment, or detect rectangles",
         "**Why it works:** The min/max row and column of shape cells define the tightest enclosing rectangle",
-        "**Complexity:** O(m \u00d7 n) to find boundaries, O(1) to compute area",
-        "**Common mistake:** Off-by-one on inclusive coordinates \u2014 width = max_c \u2212 min_c + 1 (not max_c \u2212 min_c)"
+        "**Complexity:** O(m * n) to find boundaries",
+        "**Common mistake:** Assuming the shape is aligned with grid axes"
       ]
     },
     {
@@ -416,12 +371,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function getCells(grid, r, c, visited) {\n    const m = grid.length, n = grid[0].length;\n    const stack = [[r, c]];\n    visited[r][c] = true;\n    const cells = [];\n    const dirs = [[1, 0], [-1, 0], [0, 1], [0, -1]];\n    while (stack.length) {\n        const [cr, cc] = stack.pop();\n        cells.push([cr, cc]);\n        for (const [dr, dc] of dirs) {\n            const nr = cr + dr, nc = cc + dc;\n            if (nr >= 0 && nr < m && nc >= 0 && nc < n && !visited[nr][nc] && grid[nr][nc] === 1) {\n                visited[nr][nc] = true;\n                stack.push([nr, nc]);\n            }\n        }\n    }\n    return cells;\n}\n\nfunction findShapes(grid) {\n    const m = grid.length, n = grid[0].length;\n    const visited = Array.from({ length: m }, () => Array(n).fill(false));\n    const shapes = [];\n    for (let i = 0; i < m; i++) {\n        for (let j = 0; j < n; j++) {\n            if (grid[i][j] === 1 && !visited[i][j]) {\n                shapes.push(getCells(grid, i, j, visited));\n            }\n        }\n    }\n    return shapes;\n}",
-      "caption": null
-    },
-    {
       "type": "heading",
       "level": 4,
       "text": "Template 2: Shape Normalization"
@@ -430,24 +379,6 @@
       "type": "code",
       "lang": "python",
       "code": "def normalize(cells):\n    \"\"\"Translate shape so top-left point is at (0,0).\"\"\"\n    if not cells:\n        return []\n    min_r = min(r for r, c in cells)\n    min_c = min(c for r, c in cells)\n    return sorted([(r - min_r, c - min_c) for r, c in cells])\n\ndef rotate_90(cells, max_r=None, max_c=None):\n    \"\"\"Rotate shape 90 degrees clockwise.\"\"\"\n    if not cells:\n        return []\n    if max_r is None:\n        max_r = max(r for r, c in cells)\n    if max_c is None:\n        max_c = max(c for r, c in cells)\n    rotated = [(c, max_r - r) for r, c in cells]\n    return normalize(rotated)",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "cpp",
-      "code": "#include <vector>\n#include <algorithm>\n#include <set>\nusing namespace std;\n\nvector<pair<int,int>> normalize(vector<pair<int,int>>& cells) {\n    if (cells.empty()) return {};\n    int min_r = cells[0].first, min_c = cells[0].second;\n    for (auto& p : cells) {\n        min_r = min(min_r, p.first);\n        min_c = min(min_c, p.second);\n    }\n    vector<pair<int,int>> res;\n    for (auto& p : cells)\n        res.push_back({p.first - min_r, p.second - min_c});\n    sort(res.begin(), res.end());\n    return res;\n}\n\nvector<pair<int,int>> rotate_90(vector<pair<int,int>>& cells, int max_r = -1, int max_c = -1) {\n    if (cells.empty()) return {};\n    if (max_r < 0) for (auto& p : cells) max_r = max(max_r, p.first);\n    if (max_c < 0) for (auto& p : cells) max_c = max(max_c, p.second);\n    vector<pair<int,int>> rotated;\n    for (auto& p : cells)\n        rotated.push_back({p.second, max_r - p.first});\n    return normalize(rotated);\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "import java.util.*;\n\nclass ShapeUtils {\n    static List<int[]> normalize(List<int[]> cells) {\n        if (cells.isEmpty()) return new ArrayList<>();\n        int minR = Integer.MAX_VALUE, minC = Integer.MAX_VALUE;\n        for (int[] p : cells) {\n            minR = Math.min(minR, p[0]);\n            minC = Math.min(minC, p[1]);\n        }\n        List<int[]> res = new ArrayList<>();\n        for (int[] p : cells)\n            res.add(new int[]{p[0] - minR, p[1] - minC});\n        res.sort((a, b) -> a[0] != b[0] ? a[0] - b[0] : a[1] - b[1]);\n        return res;\n    }\n    \n    static List<int[]> rotate90(List<int[]> cells, int maxR, int maxC) {\n        if (cells.isEmpty()) return new ArrayList<>();\n        List<int[]> rotated = new ArrayList<>();\n        for (int[] p : cells)\n            rotated.add(new int[]{p[1], maxR - p[0]});\n        return normalize(rotated);\n    }\n    \n    static List<int[]> rotate90(List<int[]> cells) {\n        int maxR = 0, maxC = 0;\n        for (int[] p : cells) {\n            maxR = Math.max(maxR, p[0]);\n            maxC = Math.max(maxC, p[1]);\n        }\n        return rotate90(cells, maxR, maxC);\n    }\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function normalize(cells) {\n    if (!cells.length) return [];\n    const minR = Math.min(...cells.map(p => p[0]));\n    const minC = Math.min(...cells.map(p => p[1]));\n    return cells.map(p => [p[0] - minR, p[1] - minC]).sort((a, b) => a[0] - b[0] || a[1] - b[1]);\n}\n\nfunction rotate90(cells, maxR, maxC) {\n    if (!cells.length) return [];\n    if (maxR === undefined) maxR = Math.max(...cells.map(p => p[0]));\n    if (maxC === undefined) maxC = Math.max(...cells.map(p => p[1]));\n    return normalize(cells.map(p => [p[1], maxR - p[0]]));\n}",
       "caption": null
     },
     {
@@ -462,24 +393,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "cpp",
-      "code": "int perimeter(vector<vector<int>>& grid) {\n    int m = grid.size(), n = grid[0].size(), total = 0;\n    for (int i = 0; i < m; i++) {\n        for (int j = 0; j < n; j++) {\n            if (grid[i][j] == 1) {\n                total += 4;\n                if (i > 0 && grid[i-1][j] == 1) total -= 2;\n                if (j > 0 && grid[i][j-1] == 1) total -= 2;\n            }\n        }\n    }\n    return total;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "public int perimeter(int[][] grid) {\n    int m = grid.length, n = grid[0].length, total = 0;\n    for (int i = 0; i < m; i++) {\n        for (int j = 0; j < n; j++) {\n            if (grid[i][j] == 1) {\n                total += 4;\n                if (i > 0 && grid[i-1][j] == 1) total -= 2;\n                if (j > 0 && grid[i][j-1] == 1) total -= 2;\n            }\n        }\n    }\n    return total;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function perimeter(grid) {\n    const m = grid.length, n = grid[0].length;\n    let total = 0;\n    for (let i = 0; i < m; i++) {\n        for (let j = 0; j < n; j++) {\n            if (grid[i][j] === 1) {\n                total += 4;\n                if (i > 0 && grid[i-1][j] === 1) total -= 2;\n                if (j > 0 && grid[i][j-1] === 1) total -= 2;\n            }\n        }\n    }\n    return total;\n}",
-      "caption": null
-    },
-    {
       "type": "heading",
       "level": 4,
       "text": "Template 4: Bounding Box"
@@ -488,24 +401,6 @@
       "type": "code",
       "lang": "python",
       "code": "def bounding_box(cells):\n    if not cells:\n        return None\n    min_r = min(r for r, c in cells)\n    max_r = max(r for r, c in cells)\n    min_c = min(c for r, c in cells)\n    max_c = max(c for r, c in cells)\n    return (min_r, min_c, max_r, max_c)",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "cpp",
-      "code": "#include <vector>\n#include <algorithm>\nusing namespace std;\n\nvector<int> bounding_box(vector<pair<int,int>>& cells) {\n    if (cells.empty()) return {};\n    int min_r = cells[0].first, max_r = cells[0].first;\n    int min_c = cells[0].second, max_c = cells[0].second;\n    for (auto& p : cells) {\n        min_r = min(min_r, p.first);\n        max_r = max(max_r, p.first);\n        min_c = min(min_c, p.second);\n        max_c = max(max_c, p.second);\n    }\n    return {min_r, min_c, max_r, max_c};\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "import java.util.*;\n\nclass BoundingBox {\n    static int[] boundingBox(List<int[]> cells) {\n        if (cells.isEmpty()) return null;\n        int minR = Integer.MAX_VALUE, maxR = Integer.MIN_VALUE;\n        int minC = Integer.MAX_VALUE, maxC = Integer.MIN_VALUE;\n        for (int[] p : cells) {\n            minR = Math.min(minR, p[0]);\n            maxR = Math.max(maxR, p[0]);\n            minC = Math.min(minC, p[1]);\n            maxC = Math.max(maxC, p[1]);\n        }\n        return new int[]{minR, minC, maxR, maxC};\n    }\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function boundingBox(cells) {\n    if (!cells.length) return null;\n    let minR = Infinity, maxR = -Infinity, minC = Infinity, maxC = -Infinity;\n    for (const [r, c] of cells) {\n        minR = Math.min(minR, r);\n        maxR = Math.max(maxR, r);\n        minC = Math.min(minC, c);\n        maxC = Math.max(maxC, c);\n    }\n    return [minR, minC, maxR, maxC];\n}",
       "caption": null
     },
     {
@@ -520,24 +415,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "cpp",
-      "code": "int projectionArea(vector<vector<int>>& grid) {\n    int m = grid.size(), n = grid[0].size();\n    int top = 0;\n    vector<int> front(n, 0), side(m, 0);\n    for (int i = 0; i < m; i++) {\n        for (int j = 0; j < n; j++) {\n            int h = grid[i][j];\n            if (h) top++;\n            side[i] = max(side[i], h);\n            front[j] = max(front[j], h);\n        }\n    }\n    int total = top;\n    for (int x : front) total += x;\n    for (int x : side) total += x;\n    return total;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "public int projectionArea(int[][] grid) {\n    int m = grid.length, n = grid[0].length;\n    int top = 0;\n    int[] front = new int[n], side = new int[m];\n    for (int i = 0; i < m; i++) {\n        for (int j = 0; j < n; j++) {\n            int h = grid[i][j];\n            if (h > 0) top++;\n            side[i] = Math.max(side[i], h);\n            front[j] = Math.max(front[j], h);\n        }\n    }\n    int total = top;\n    for (int x : front) total += x;\n    for (int x : side) total += x;\n    return total;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function projectionArea(grid) {\n    const m = grid.length, n = grid[0].length;\n    let top = 0;\n    const front = Array(n).fill(0), side = Array(m).fill(0);\n    for (let i = 0; i < m; i++) {\n        for (let j = 0; j < n; j++) {\n            const h = grid[i][j];\n            if (h) top++;\n            side[i] = Math.max(side[i], h);\n            front[j] = Math.max(front[j], h);\n        }\n    }\n    return top + front.reduce((a, b) => a + b, 0) + side.reduce((a, b) => a + b, 0);\n}",
-      "caption": null
-    },
-    {
       "type": "heading",
       "level": 4,
       "text": "Template 6: Surface Area of 3D Shapes"
@@ -546,24 +423,6 @@
       "type": "code",
       "lang": "python",
       "code": "def surface_area(grid):\n    m, n = len(grid), len(grid[0])\n    area = 0\n    for i in range(m):\n        for j in range(n):\n            if grid[i][j]:\n                area += 4 * grid[i][j] + 2  # sides + top/bottom\n                if i > 0:\n                    area -= 2 * min(grid[i][j], grid[i-1][j])\n                if j > 0:\n                    area -= 2 * min(grid[i][j], grid[i][j-1])\n    return area",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "cpp",
-      "code": "int surfaceArea(vector<vector<int>>& grid) {\n    int m = grid.size(), n = grid[0].size(), area = 0;\n    for (int i = 0; i < m; i++) {\n        for (int j = 0; j < n; j++) {\n            if (grid[i][j]) {\n                area += 4 * grid[i][j] + 2;\n                if (i > 0) area -= 2 * min(grid[i][j], grid[i-1][j]);\n                if (j > 0) area -= 2 * min(grid[i][j], grid[i][j-1]);\n            }\n        }\n    }\n    return area;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "public int surfaceArea(int[][] grid) {\n    int m = grid.length, n = grid[0].length, area = 0;\n    for (int i = 0; i < m; i++) {\n        for (int j = 0; j < n; j++) {\n            if (grid[i][j] > 0) {\n                area += 4 * grid[i][j] + 2;\n                if (i > 0) area -= 2 * Math.min(grid[i][j], grid[i-1][j]);\n                if (j > 0) area -= 2 * Math.min(grid[i][j], grid[i][j-1]);\n            }\n        }\n    }\n    return area;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function surfaceArea(grid) {\n    const m = grid.length, n = grid[0].length;\n    let area = 0;\n    for (let i = 0; i < m; i++) {\n        for (let j = 0; j < n; j++) {\n            if (grid[i][j]) {\n                area += 4 * grid[i][j] + 2;\n                if (i > 0) area -= 2 * Math.min(grid[i][j], grid[i-1][j]);\n                if (j > 0) area -= 2 * Math.min(grid[i][j], grid[i][j-1]);\n            }\n        }\n    }\n    return area;\n}",
       "caption": null
     },
     {
@@ -727,39 +586,39 @@
     },
     {
       "type": "text",
-      "content": "**Easy 1: Count the Squares** You're given an `m \u00d7 n` binary matrix. Count the number of 2\u00d72 squares of all 1s \u2014 that's four cells at `(r,c)`, `(r,c+1)`, `(r+1,c)`, `(r+1,c+1)`, all filled. This is simpler than it sounds: just check every 2\u00d72 window."
+      "content": "**Easy 1: Count the Squares** You are given an `m x n` binary matrix. Count the number of 2x2 squares of all `1`s in the matrix. A 2x2 square is defined as four cells at positions `(r,c)`, `(r,c+1)`, `(r+1,c)`, `(r+1,c+1)`, all with value 1."
     },
     {
       "type": "text",
-      "content": "**Easy 2: Find the Missing Corner** You're given three corners of an axis-aligned rectangle. Find the fourth corner. The missing coordinate is the one that appears exactly once among the three points."
+      "content": "**Easy 2: Find the Missing Corner** You are given three corners of a rectangle aligned with the grid axes. Find the fourth corner."
     },
     {
       "type": "text",
-      "content": "**Medium 3: Shape Equivalence** Two shapes are defined as sets of cells in two binary matrices. Determine if they represent the same shape (allowing translation and 90\u00b0 rotation). Matrices can be up to 100\u00d7100. Normalize both, try all 4 rotations."
+      "content": "**Medium 3: Shape Equivalence** Two shapes are defined as sets of cells in two binary matrices. Determine if they represent the same shape (allowing translation and 90-degree rotation). Matrices can be up to 100x100."
     },
     {
       "type": "text",
-      "content": "**Medium 4: Hollow Square Detection** Given an `m \u00d7 n` binary matrix, find all hollow squares \u2014 squares where the border is all 1s and the interior is all 0s. Return the count."
+      "content": "**Medium 4: Hollow Square Detection** Given an `m x n` binary matrix, find all hollow squares \u2014 squares where the border cells are all `1`s and the interior is all `0`s. Return the number of such squares."
     },
     {
       "type": "text",
-      "content": "**Medium 5: Shape Perimeter with Holes** Given a binary matrix where 1s form a shape that may have holes, compute the total perimeter (external boundary + hole boundaries). Hint: holes are just shapes inside shapes."
+      "content": "**Medium 5: Shape Perimeter with Holes** Given a binary matrix where `1`s form a shape that may have holes, compute the total perimeter (external + internal hole boundaries)."
     },
     {
       "type": "text",
-      "content": "**Hard 6: Minimum Convex Cover** Given scattered 1s in a large matrix, find the minimum number of unit squares you need to add to make the shape convex. Allowed operation: flip a 0 to 1."
+      "content": "**Hard 6: Minimum Bounding Shape** Given scattered `1`s in a large matrix, find the minimum number of unit squares you need to add to make the shape convex. Allowed additions: flip `0` to `1`."
     },
     {
       "type": "text",
-      "content": "**Hard 7: 3D Layer Stacking** You have `n` layers, each an `m \u00d7 m` binary matrix. When stacked, 1s become cubes in 3D. Compute the total exposed surface area of the combined shape."
+      "content": "**Hard 7: 3D Layer Stacking** You have `n` layers, each represented by an `m x m` binary matrix. When stacked, `1`s become cubes in 3D. Compute the total exposed surface area of the combined 3D shape."
     },
     {
       "type": "text",
-      "content": "**Interview-style 8: Shape Registration** Given two sets of points in 2D, determine if one can be transformed into the other by translation + rotation + reflection (no scaling). Points are integer coordinates. Return the transformation if it exists."
+      "content": "**Interview-style 8: Shape Registration** Given two sets of points in 2D, determine if one can be transformed into the other by a combination of translation, rotation, and reflection (no scaling). Points are integer coordinates. Return the transformation parameters if they exist."
     },
     {
       "type": "text",
-      "content": "**Contest-style 9: Maximal L-Shapes** In an `n \u00d7 n` binary matrix, an L-shape is a horizontal and vertical segment of 1s meeting at a corner, forming a right angle. Each segment must have length \u2265 2. Find the L-shape with the most 1s."
+      "content": "**Contest-style 9: Maximal L-Shapes** In an `n x n` binary matrix, an L-shape consists of a horizontal segment and a vertical segment of `1`s meeting at a corner cell, forming a right angle. Each segment must have length at least 2. Find the L-shape with the maximum total number of `1`s."
     },
     {
       "type": "heading",
@@ -773,15 +632,15 @@
     },
     {
       "type": "text",
-      "content": "**A. Intuition:** This is a Div. 4 problem, so the solution should be straightforward. You're given a binary matrix and need to determine if the 1s form a square or a triangle. Here's the trick: a square has equal width and height in its bounding box, and contains exactly width \u00d7 height 1s. A triangle doesn't fill its bounding box completely. But the simplest way? Check if any row has exactly one 1 \u2014 if so, it's a triangle (the tip). Otherwise, it's a square."
+      "content": "**A. Intuition:** Given a binary matrix, determine if the `1`s form a square or a triangle. A square will have equal width and height in its bounding box. A triangle will have either width or height = 1, or the pattern of `1`s will not fill the bounding box."
     },
     {
       "type": "text",
-      "content": "**B. Brute Force:** Find all 1s, compute bounding box. Count total 1s. If count == width \u00d7 height \u2192 square, else triangle."
+      "content": "**B. Brute Force:** Find all `1` cells, compute their bounding box. Check if the number of `1`s equals the area of the bounding box (for a square) or half of it (for a right triangle)."
     },
     {
       "type": "text",
-      "content": "**C. Optimized Approach:** Same as brute force \u2014 the grid is at most 10\u00d710."
+      "content": "**C. Optimized Approach:** Same as brute force \u2014 the problem is small enough."
     },
     {
       "type": "text",
@@ -791,19 +650,20 @@
       "type": "list",
       "items": [
         "Read the matrix",
-        "Find min/max row and col with 1s",
-        "Count total 1s",
-        "Compute width = max_c \u2212 min_c + 1, height = max_r \u2212 min_r + 1",
-        "If total == width \u00d7 height \u2192 SQUARE, else \u2192 TRIANGLE"
+        "Find min/max row and col with `1`s",
+        "Count total `1`s",
+        "Compute bounding box width = max_c - min_c + 1, height = max_r - min_r + 1",
+        "If total `1`s == width * height \u2192 \"SQUARE\"",
+        "Else \u2192 \"TRIANGLE\""
       ]
     },
     {
       "type": "text",
-      "content": "**E. Complexity:** O(n\u00b2) time, O(1) space."
+      "content": "**E. Complexity:** O(n^2) time, O(1) space."
     },
     {
       "type": "text",
-      "content": "**F. Edge Cases:** A single 1 would be both a 1\u00d71 square and a triangle, but the problem guarantees this won't happen."
+      "content": "**F. Edge Cases:** Single `1` \u2014 both square and triangle are valid, problem guarantees unambiguous."
     },
     {
       "type": "text",
@@ -812,43 +672,37 @@
     {
       "type": "code",
       "lang": "python",
-      "code": "def solve():\n    t = int(input())\n    for _ in range(t):\n        n = int(input())\n        grid = [input().strip() for _ in range(n)]\n        cells = []\n        for i in range(n):\n            for j in range(n):\n                if grid[i][j] == '1':\n                    cells.append((i, j))\n        min_r = min(r for r, c in cells)\n        max_r = max(r for r, c in cells)\n        min_c = min(c for r, c in cells)\n        max_c = max(c for r, c in cells)\n        w = max_c - min_c + 1\n        h = max_r - min_r + 1\n        if len(cells) == w * h:\n            print(\"SQUARE\")\n        else:\n            print(\"TRIANGLE\")",
+      "code": "def solve():\n    t = int(input())\n    for _ in range(t):\n        n = int(input())\n        grid = [input().strip() for _ in range(n)]\n        \n        cells = []\n        for i in range(n):\n            for j in range(n):\n                if grid[i][j] == '1':\n                    cells.append((i, j))\n        \n        min_r = min(r for r, c in cells)\n        max_r = max(r for r, c in cells)\n        min_c = min(c for r, c in cells)\n        max_c = max(c for r, c in cells)\n        \n        w = max_c - min_c + 1\n        h = max_r - min_r + 1\n        \n        if len(cells) == w * h:\n            print(\"SQUARE\")\n        else:\n            print(\"TRIANGLE\")\n\nif __name__ == \"__main__\":\n    solve()",
       "caption": null
     },
     {
       "type": "code",
       "lang": "cpp",
-      "code": "#include <iostream>\n#include <vector>\n#include <string>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    int t; cin >> t;\n    while (t--) {\n        int n; cin >> n;\n        vector<string> grid(n);\n        for (int i = 0; i < n; i++) cin >> grid[i];\n        int min_r = n, max_r = -1, min_c = n, max_c = -1, cnt = 0;\n        for (int i = 0; i < n; i++) {\n            for (int j = 0; j < n; j++) {\n                if (grid[i][j] == '1') {\n                    cnt++; min_r = min(min_r, i); max_r = max(max_r, i);\n                    min_c = min(min_c, j); max_c = max(max_c, j);\n                }\n            }\n        }\n        int w = max_c - min_c + 1, h = max_r - min_r + 1;\n        cout << (cnt == w * h ? \"SQUARE\" : \"TRIANGLE\") << \"\\n\";\n    }\n    return 0;\n}",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    int t; cin >> t;\n    while (t--) {\n        int n; cin >> n;\n        vector<string> grid(n);\n        for (int i = 0; i < n; i++) cin >> grid[i];\n        \n        int min_r = n, max_r = -1, min_c = n, max_c = -1;\n        int cnt = 0;\n        for (int i = 0; i < n; i++) {\n            for (int j = 0; j < n; j++) {\n                if (grid[i][j] == '1') {\n                    cnt++;\n                    min_r = min(min_r, i);\n                    max_r = max(max_r, i);\n                    min_c = min(min_c, j);\n                    max_c = max(max_c, j);\n                }\n            }\n        }\n        int w = max_c - min_c + 1;\n        int h = max_r - min_r + 1;\n        cout << (cnt == w * h ? \"SQUARE\" : \"TRIANGLE\") << \"\\n\";\n    }\n    return 0;\n}",
       "caption": null
     },
     {
       "type": "code",
       "lang": "java",
-      "code": "import java.util.*;\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int t = sc.nextInt();\n        while (t-- > 0) {\n            int n = sc.nextInt();\n            char[][] grid = new char[n][n];\n            for (int i = 0; i < n; i++) grid[i] = sc.next().toCharArray();\n            int minR = n, maxR = -1, minC = n, maxC = -1, cnt = 0;\n            for (int i = 0; i < n; i++)\n                for (int j = 0; j < n; j++)\n                    if (grid[i][j] == '1') { cnt++; minR = Math.min(minR, i); maxR = Math.max(maxR, i); minC = Math.min(minC, j); maxC = Math.max(maxC, j); }\n            int w = maxC - minC + 1, h = maxR - minR + 1;\n            System.out.println(cnt == w * h ? \"SQUARE\" : \"TRIANGLE\");\n        }\n    }\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function solve(input) {\n    const lines = input.trim().split('\\n');\n    let idx = 0;\n    const t = parseInt(lines[idx++]);\n    for (let _ = 0; _ < t; _++) {\n        const n = parseInt(lines[idx++]);\n        const grid = lines.slice(idx, idx + n); idx += n;\n        let minR = n, maxR = -1, minC = n, maxC = -1, cnt = 0;\n        for (let i = 0; i < n; i++)\n            for (let j = 0; j < n; j++)\n                if (grid[i][j] === '1') { cnt++; minR = Math.min(minR, i); maxR = Math.max(maxR, i); minC = Math.min(minC, j); maxC = Math.max(maxC, j); }\n        const w = maxC - minC + 1, h = maxR - minR + 1;\n        console.log(cnt === w * h ? \"SQUARE\" : \"TRIANGLE\");\n    }\n}",
+      "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int t = sc.nextInt();\n        while (t-- > 0) {\n            int n = sc.nextInt();\n            char[][] grid = new char[n][n];\n            for (int i = 0; i < n; i++) {\n                grid[i] = sc.next().toCharArray();\n            }\n            \n            int minR = n, maxR = -1, minC = n, maxC = -1;\n            int cnt = 0;\n            for (int i = 0; i < n; i++) {\n                for (int j = 0; j < n; j++) {\n                    if (grid[i][j] == '1') {\n                        cnt++;\n                        minR = Math.min(minR, i);\n                        maxR = Math.max(maxR, i);\n                        minC = Math.min(minC, j);\n                        maxC = Math.max(maxC, j);\n                    }\n                }\n            }\n            int w = maxC - minC + 1;\n            int h = maxR - minR + 1;\n            System.out.println(cnt == w * h ? \"SQUARE\" : \"TRIANGLE\");\n        }\n    }\n}",
       "caption": null
     },
     {
       "type": "heading",
       "level": 4,
-      "text": "Problem 2: Projection Area of 3D Shapes (LeetCode 883)"
+      "text": "Problem 2: Projection Area of 3D Shapes (LeetCode 919)"
     },
     {
       "type": "text",
-      "content": "**A. Intuition:** Shine a flashlight on your 3D city from three angles. From the top, every non-empty cell casts a shadow. From the front, only the tallest building in each column casts one \u2014 shorter ones hide behind it. From the side, same idea for rows. Add them up."
+      "content": "**A. Intuition:** Think of the 3D shape as a city skyline. The top view counts all buildings. The front view is the tallest building in each column. The side view is the tallest in each row."
     },
     {
       "type": "text",
-      "content": "**B. Brute Force:** Not applicable \u2014 the problem definition IS the solution."
+      "content": "**B. Brute Force:** Not applicable \u2014 the problem definition is the solution."
     },
     {
       "type": "text",
-      "content": "**C. Optimized Approach:** One pass through the grid tracking row maxima, column maxima, and counting non-zero cells."
+      "content": "**C. Optimized Approach:** Single pass: track max per row, max per column, and count non-zero cells."
     },
     {
       "type": "text",
@@ -857,14 +711,27 @@
     {
       "type": "list",
       "items": [
-        "Initialize top = 0, front[n] = 0, side[m] = 0",
-        "For each cell (i, j) with height h: if h > 0: top++; side[i] = max(side[i], h); front[j] = max(front[j], h)",
-        "Return top + sum(front) + sum(side)"
+        "Initialize `top = 0`, `front = [0]*n`, `side = [0]*m`",
+        "For each cell `(i, j)` with height `h`:"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "If `h > 0: top++`",
+        "`side[i] = max(side[i], h)`",
+        "`front[j] = max(front[j], h)`"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Sum `top + sum(front) + sum(side)`"
       ]
     },
     {
       "type": "text",
-      "content": "**E. Complexity:** O(m \u00d7 n) time, O(m + n) space."
+      "content": "**E. Complexity:** O(m*n) time, O(m+n) space."
     },
     {
       "type": "text",
@@ -877,25 +744,19 @@
     {
       "type": "code",
       "lang": "python",
-      "code": "def projection_area(grid):\n    m, n = len(grid), len(grid[0])\n    top = 0\n    front = [0] * n\n    side = [0] * m\n    for i in range(m):\n        for j in range(n):\n            h = grid[i][j]\n            if h:\n                top += 1\n                side[i] = max(side[i], h)\n                front[j] = max(front[j], h)\n    return top + sum(front) + sum(side)",
+      "code": "def projection_area(grid):\n    m, n = len(grid), len(grid[0])\n    top = 0\n    front = [0] * n\n    side = [0] * m\n    \n    for i in range(m):\n        for j in range(n):\n            h = grid[i][j]\n            if h:\n                top += 1\n                side[i] = max(side[i], h)\n                front[j] = max(front[j], h)\n    \n    return top + sum(front) + sum(side)",
       "caption": null
     },
     {
       "type": "code",
       "lang": "cpp",
-      "code": "int projectionArea(vector<vector<int>>& grid) {\n    int m = grid.size(), n = grid[0].size();\n    int top = 0;\n    vector<int> front(n, 0), side(m, 0);\n    for (int i = 0; i < m; i++)\n        for (int j = 0; j < n; j++) {\n            int h = grid[i][j];\n            if (h) top++;\n            side[i] = max(side[i], h);\n            front[j] = max(front[j], h);\n        }\n    for (int x : front) top += x;\n    for (int x : side) top += x;\n    return top;\n}",
+      "code": "int projectionArea(vector<vector<int>>& grid) {\n    int m = grid.size(), n = grid[0].size();\n    int top = 0;\n    vector<int> front(n, 0), side(m, 0);\n    for (int i = 0; i < m; i++) {\n        for (int j = 0; j < n; j++) {\n            int h = grid[i][j];\n            if (h) top++;\n            side[i] = max(side[i], h);\n            front[j] = max(front[j], h);\n        }\n    }\n    int total = top;\n    for (int x : front) total += x;\n    for (int x : side) total += x;\n    return total;\n}",
       "caption": null
     },
     {
       "type": "code",
       "lang": "java",
-      "code": "public int projectionArea(int[][] grid) {\n    int m = grid.length, n = grid[0].length;\n    int top = 0;\n    int[] front = new int[n], side = new int[m];\n    for (int i = 0; i < m; i++)\n        for (int j = 0; j < n; j++) {\n            int h = grid[i][j];\n            if (h > 0) top++;\n            side[i] = Math.max(side[i], h);\n            front[j] = Math.max(front[j], h);\n        }\n    for (int x : front) top += x;\n    for (int x : side) top += x;\n    return top;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function projectionArea(grid) {\n    const m = grid.length, n = grid[0].length;\n    let top = 0;\n    const front = Array(n).fill(0), side = Array(m).fill(0);\n    for (let i = 0; i < m; i++)\n        for (let j = 0; j < n; j++) {\n            const h = grid[i][j];\n            if (h) top++;\n            side[i] = Math.max(side[i], h);\n            front[j] = Math.max(front[j], h);\n        }\n    return top + front.reduce((a, b) => a + b, 0) + side.reduce((a, b) => a + b, 0);\n}",
+      "code": "public int projectionArea(int[][] grid) {\n    int m = grid.length, n = grid[0].length;\n    int top = 0;\n    int[] front = new int[n], side = new int[m];\n    for (int i = 0; i < m; i++) {\n        for (int j = 0; j < n; j++) {\n            int h = grid[i][j];\n            if (h > 0) top++;\n            side[i] = Math.max(side[i], h);\n            front[j] = Math.max(front[j], h);\n        }\n    }\n    int total = top;\n    for (int x : front) total += x;\n    for (int x : side) total += x;\n    return total;\n}",
       "caption": null
     },
     {
@@ -905,7 +766,7 @@
     },
     {
       "type": "text",
-      "content": "**A. Intuition:** You have two grids S and T, each with some # marks forming a shape. Can you rotate S (by 0\u00b0, 90\u00b0, 180\u00b0, or 270\u00b0) and then slide it so it matches T exactly? The trick: normalize both shapes by sliding them to the origin (top-left corner at (0,0)), then compare."
+      "content": "**A. Intuition:** Two shapes are the same if their normalized (translated to origin) cell sets match after some rotation. Generate all 4 rotations of shape S, normalize each to origin, and compare to the normalized T."
     },
     {
       "type": "text",
@@ -913,7 +774,7 @@
     },
     {
       "type": "text",
-      "content": "**C. Optimized Approach:** Grid is at most 200\u00d7200, so generating all 4 rotations is perfectly fine."
+      "content": "**C. Optimized Approach:** The grid is small (n <= 200), so generating all rotations is fine."
     },
     {
       "type": "text",
@@ -922,19 +783,31 @@
     {
       "type": "list",
       "items": [
-        "Collect all # cells in S and T",
-        "If counts differ \u2192 No (immediate)",
-        "For each of 4 rotations: rotate S by 90\u00b0 clockwise, normalize to origin, compare with normalized T",
-        "If any rotation matches \u2192 Yes, else \u2192 No"
+        "Find all `#` cells in S and T",
+        "For each of the 4 rotations of S:"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Rotate by 90 degrees clockwise",
+        "Normalize to origin",
+        "Check if equal to normalized T"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "If any match \u2192 Yes, else \u2192 No"
       ]
     },
     {
       "type": "text",
-      "content": "**E. Complexity:** O(n\u00b2) per rotation, O(n\u00b2) total."
+      "content": "**E. Complexity:** O(n^2) per rotation, O(n^2) total."
     },
     {
       "type": "text",
-      "content": "**F. Edge Cases:** Different # counts \u2192 immediate No. The rotation formula is `(r,c) \u2192 (c, n\u22121\u2212r)` for 90\u00b0 clockwise."
+      "content": "**F. Edge Cases:** Different number of `#` \u2192 immediate No. Empty shapes? Not in this problem."
     },
     {
       "type": "text",
@@ -943,43 +816,25 @@
     {
       "type": "code",
       "lang": "python",
-      "code": "def normalize(cells):\n    min_r = min(r for r, c in cells)\n    min_c = min(c for r, c in cells)\n    return frozenset((r - min_r, c - min_c) for r, c in cells)\n\ndef rotate(cells, n):\n    return [(c, n - 1 - r) for r, c in cells]\n\ndef solve():\n    n = int(input())\n    s = [input().strip() for _ in range(n)]\n    t = [input().strip() for _ in range(n)]\n    s_cells = [(i, j) for i in range(n) for j in range(n) if s[i][j] == '#']\n    t_cells = [(i, j) for i in range(n) for j in range(n) if t[i][j] == '#']\n    if len(s_cells) != len(t_cells):\n        print(\"No\"); return\n    t_norm = normalize(t_cells)\n    cur = s_cells[:]\n    for _ in range(4):\n        if normalize(cur) == t_norm:\n            print(\"Yes\"); return\n        cur = rotate(cur, n)\n    print(\"No\")",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "cpp",
-      "code": "#include <iostream>\n#include <vector>\n#include <set>\n#include <string>\nusing namespace std;\n\nset<pair<int,int>> normalize(vector<pair<int,int>>& cells) {\n    int min_r = cells[0].first, min_c = cells[0].second;\n    for (auto& p : cells) { min_r = min(min_r, p.first); min_c = min(min_c, p.second); }\n    set<pair<int,int>> norm;\n    for (auto& p : cells) norm.insert({p.first - min_r, p.second - min_c});\n    return norm;\n}\n\nvector<pair<int,int>> rotate(vector<pair<int,int>>& cells, int n) {\n    vector<pair<int,int>> res;\n    for (auto& p : cells) res.push_back({p.second, n - 1 - p.first});\n    return res;\n}\n\nint main() {\n    int n; cin >> n;\n    vector<string> s(n), t(n);\n    for (int i = 0; i < n; i++) cin >> s[i];\n    for (int i = 0; i < n; i++) cin >> t[i];\n    vector<pair<int,int>> s_cells, t_cells;\n    for (int i = 0; i < n; i++) for (int j = 0; j < n; j++) {\n        if (s[i][j] == '#') s_cells.push_back({i, j});\n        if (t[i][j] == '#') t_cells.push_back({i, j});\n    }\n    if (s_cells.size() != t_cells.size()) { cout << \"No\" << endl; return 0; }\n    auto t_norm = normalize(t_cells);\n    for (int rot = 0; rot < 4; rot++) {\n        if (normalize(s_cells) == t_norm) { cout << \"Yes\" << endl; return 0; }\n        s_cells = rotate(s_cells, n);\n    }\n    cout << \"No\" << endl; return 0;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "import java.util.*;\npublic class Main {\n    static Set<List<Integer>> normalize(List<int[]> cells) {\n        int minR = Integer.MAX_VALUE, minC = Integer.MAX_VALUE;\n        for (int[] p : cells) { minR = Math.min(minR, p[0]); minC = Math.min(minC, p[1]); }\n        Set<List<Integer>> norm = new HashSet<>();\n        for (int[] p : cells) norm.add(Arrays.asList(p[0] - minR, p[1] - minC));\n        return norm;\n    }\n    static List<int[]> rotate(List<int[]> cells, int n) {\n        List<int[]> res = new ArrayList<>();\n        for (int[] p : cells) res.add(new int[]{p[1], n - 1 - p[0]});\n        return res;\n    }\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        char[][] s = new char[n][n], t = new char[n][n];\n        for (int i = 0; i < n; i++) s[i] = sc.next().toCharArray();\n        for (int i = 0; i < n; i++) t[i] = sc.next().toCharArray();\n        List<int[]> sCells = new ArrayList<>(), tCells = new ArrayList<>();\n        for (int i = 0; i < n; i++) for (int j = 0; j < n; j++) {\n            if (s[i][j] == '#') sCells.add(new int[]{i, j});\n            if (t[i][j] == '#') tCells.add(new int[]{i, j});\n        }\n        if (sCells.size() != tCells.size()) { System.out.println(\"No\"); return; }\n        Set<List<Integer>> tNorm = normalize(tCells);\n        for (int rot = 0; rot < 4; rot++) {\n            if (normalize(sCells).equals(tNorm)) { System.out.println(\"Yes\"); return; }\n            sCells = rotate(sCells, n);\n        }\n        System.out.println(\"No\");\n    }\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function normalize(cells) {\n    const minR = Math.min(...cells.map(p => p[0]));\n    const minC = Math.min(...cells.map(p => p[1]));\n    return new Set(cells.map(p => `${p[0] - minR},${p[1] - minC}`));\n}\nfunction rotate(cells, n) { return cells.map(p => [p[1], n - 1 - p[0]]); }\nfunction solve(input) {\n    const lines = input.trim().split('\\n'); let idx = 0;\n    const n = parseInt(lines[idx++]);\n    const s = lines.slice(idx, idx + n); idx += n;\n    const t = lines.slice(idx, idx + n);\n    const sCells = [], tCells = [];\n    for (let i = 0; i < n; i++) for (let j = 0; j < n; j++) {\n        if (s[i][j] === '#') sCells.push([i, j]);\n        if (t[i][j] === '#') tCells.push([i, j]);\n    }\n    if (sCells.length !== tCells.length) { console.log(\"No\"); return; }\n    const tNorm = normalize(tCells);\n    let cur = [...sCells];\n    for (let rot = 0; rot < 4; rot++) {\n        const cNorm = normalize(cur);\n        if (cNorm.size === tNorm.size && [...cNorm].every(v => tNorm.has(v))) { console.log(\"Yes\"); return; }\n        cur = rotate(cur, n);\n    }\n    console.log(\"No\");\n}",
+      "code": "def normalize(cells):\n    min_r = min(r for r, c in cells)\n    min_c = min(c for r, c in cells)\n    return frozenset((r - min_r, c - min_c) for r, c in cells)\n\ndef rotate(cells, n):\n    return [(c, n - 1 - r) for r, c in cells]\n\ndef solve():\n    n = int(input())\n    s = [input().strip() for _ in range(n)]\n    t = [input().strip() for _ in range(n)]\n    \n    s_cells = [(i, j) for i in range(n) for j in range(n) if s[i][j] == '#']\n    t_cells = [(i, j) for i in range(n) for j in range(n) if t[i][j] == '#']\n    \n    if len(s_cells) != len(t_cells):\n        print(\"No\")\n        return\n    \n    t_norm = normalize(t_cells)\n    cur = s_cells[:]\n    for _ in range(4):\n        if normalize(cur) == t_norm:\n            print(\"Yes\")\n            return\n        cur = rotate(cur, n)\n    print(\"No\")\n\nif __name__ == \"__main__\":\n    solve()",
       "caption": null
     },
     {
       "type": "heading",
       "level": 4,
-      "text": "Problem 4: Largest Triangle Area (LeetCode 812)"
+      "text": "Problem 4: Largest Triangle Area (LeetCode 830)"
     },
     {
       "type": "text",
-      "content": "**A. Intuition:** Given up to 50 points, find the largest area triangle you can form. The constraints (n \u2264 50) mean O(n\u00b3) is fine \u2014 just try every triple. The area comes from the shoelace formula."
+      "content": "**A. Intuition:** Given a set of points, the maximum area triangle can be found by trying all combinations of 3 points and using the shoelace formula to compute the area."
     },
     {
       "type": "text",
-      "content": "**B. Brute Force:** Try all O(n\u00b3) triples, compute area with the cross-product (shoelace) formula."
+      "content": "**B. Brute Force:** Try all O(n^3) triples. For n <= 50 (as in this problem), this is acceptable."
     },
     {
       "type": "text",
-      "content": "**C. Optimized Approach:** Same as brute \u2014 convex hull optimization exists but is overkill for n \u2264 50."
+      "content": "**C. Optimized Approach:** Same as brute force for this constraint."
     },
     {
       "type": "text",
@@ -988,18 +843,28 @@
     {
       "type": "list",
       "items": [
-        "Triple loop: for i in range(n), for j in range(i+1,n), for k in range(j+1,n)",
-        "Area = 0.5 \u00d7 |x\u2081(y\u2082\u2212y\u2083) + x\u2082(y\u2083\u2212y\u2081) + x\u2083(y\u2081\u2212y\u2082)|",
-        "Track the maximum"
+        "For each triple (i, j, k):"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Compute area using formula: `0.5 * abs(x1*(y2-y3) + x2*(y3-y1) + x3*(y1-y2))`"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Track maximum"
       ]
     },
     {
       "type": "text",
-      "content": "**E. Complexity:** O(n\u00b3) time, O(1) space."
+      "content": "**E. Complexity:** O(n^3) time, O(1) space."
     },
     {
       "type": "text",
-      "content": "**F. Edge Cases:** Collinear points \u2192 area 0. Minimum 3 points guaranteed."
+      "content": "**F. Edge Cases:** Collinear points \u2192 area = 0. Minimum 3 points guaranteed."
     },
     {
       "type": "text",
@@ -1012,39 +877,21 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "cpp",
-      "code": "double largestTriangleArea(vector<vector<int>>& points) {\n    int n = points.size();\n    double maxArea = 0.0;\n    for (int i = 0; i < n; i++) {\n        int x1 = points[i][0], y1 = points[i][1];\n        for (int j = i+1; j < n; j++) {\n            int x2 = points[j][0], y2 = points[j][1];\n            for (int k = j+1; k < n; k++) {\n                int x3 = points[k][0], y3 = points[k][1];\n                double area = 0.5 * abs(x1*(y2-y3) + x2*(y3-y1) + x3*(y1-y2));\n                maxArea = max(maxArea, area);\n            }\n        }\n    }\n    return maxArea;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "public double largestTriangleArea(int[][] points) {\n    int n = points.length;\n    double maxArea = 0.0;\n    for (int i = 0; i < n; i++) {\n        int x1 = points[i][0], y1 = points[i][1];\n        for (int j = i+1; j < n; j++) {\n            int x2 = points[j][0], y2 = points[j][1];\n            for (int k = j+1; k < n; k++) {\n                int x3 = points[k][0], y3 = points[k][1];\n                double area = 0.5 * Math.abs(x1*(y2-y3) + x2*(y3-y1) + x3*(y1-y2));\n                maxArea = Math.max(maxArea, area);\n            }\n        }\n    }\n    return maxArea;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function largestTriangleArea(points) {\n    const n = points.length;\n    let maxArea = 0.0;\n    for (let i = 0; i < n; i++) {\n        const [x1, y1] = points[i];\n        for (let j = i+1; j < n; j++) {\n            const [x2, y2] = points[j];\n            for (let k = j+1; k < n; k++) {\n                const [x3, y3] = points[k];\n                const area = 0.5 * Math.abs(x1*(y2-y3) + x2*(y3-y1) + x3*(y1-y2));\n                maxArea = Math.max(maxArea, area);\n            }\n        }\n    }\n    return maxArea;\n}",
-      "caption": null
-    },
-    {
       "type": "heading",
       "level": 4,
       "text": "Problem 5: Almost Rectangle (Codeforces 1512B)"
     },
     {
       "type": "text",
-      "content": "**A. Intuition:** You have exactly two `*` marks in an n\u00d7n grid. They're two corners of an axis-aligned rectangle. Find the other two corners and mark them. If the two `*`s share a row or column, you need to \"push out\" to a different row/column (any one works, so use the next one, wrapping around)."
+      "content": "**A. Intuition:** Given a grid with exactly two `*`s, find the other two corners of the axis-aligned rectangle. The missing corners are determined by taking the row of one `*` and the column of the other."
     },
     {
       "type": "text",
-      "content": "**B. Brute Force:** Find both `*` cells. The other two corners are `(r\u2081, c\u2082)` and `(r\u2082, c\u2081)`, unless those are out of bounds (same row/column case)."
+      "content": "**B. Brute Force:** Find both `*` cells. The other two corners of the rectangle are `(r1, c2)` and `(r2, c1)`, unless those fall outside the grid, in which case we need to adjust."
     },
     {
       "type": "text",
-      "content": "**C. Optimized Approach:** Find the two `*`s. Three cases: same row, same column, or diagonal. Handle each."
+      "content": "**C. Optimized Approach:** Identify the two `*` cells. Compute the missing corners. If a computed corner is out of bounds, swap the rows/columns to the opposite side."
     },
     {
       "type": "text",
@@ -1053,19 +900,20 @@
     {
       "type": "list",
       "items": [
-        "Find the two `*` positions (r\u2081, c\u2081) and (r\u2082, c\u2082)",
-        "If r\u2081 == r\u2082: place new `*`s at ((r\u2081+1) % n, c\u2081) and ((r\u2082+1) % n, c\u2082)",
-        "If c\u2081 == c\u2082: place at (r\u2081, (c\u2081+1) % n) and (r\u2082, (c\u2082+1) % n)",
-        "Else: place at (r\u2081, c\u2082) and (r\u2082, c\u2081)"
+        "Find the two asterisks at (r1, c1) and (r2, c2)",
+        "The rectangle corners are (r1, c1), (r1, c2), (r2, c1), (r2, c2)",
+        "We already have two; the missing two are (r1, c2) and (r2, c1)",
+        "If r1 == r2, the missing rows must be the row above (r1-1) or below (r1+1), whichever is in bounds",
+        "Similarly if c1 == c2"
       ]
     },
     {
       "type": "text",
-      "content": "**E. Complexity:** O(n\u00b2) to find the `*`s, or O(1) if tracked during input."
+      "content": "**E. Complexity:** O(n^2) or O(1) if coordinates tracked during input."
     },
     {
       "type": "text",
-      "content": "**F. Edge Cases:** Same row or same column \u2014 use `% n` to wrap around."
+      "content": "**F. Edge Cases:** `*` on same row or same column."
     },
     {
       "type": "text",
@@ -1074,25 +922,7 @@
     {
       "type": "code",
       "lang": "python",
-      "code": "def solve():\n    t = int(input())\n    for _ in range(t):\n        n = int(input())\n        grid = [list(input().strip()) for _ in range(n)]\n        pts = [(i, j) for i in range(n) for j in range(n) if grid[i][j] == '*']\n        r1, c1 = pts[0]; r2, c2 = pts[1]\n        if r1 == r2:\n            r3 = (r1 + 1) % n; r4 = r3; c3, c4 = c1, c2\n        elif c1 == c2:\n            c3 = (c1 + 1) % n; c4 = c3; r3, r4 = r1, r2\n        else:\n            r3, c3 = r1, c2; r4, c4 = r2, c1\n        grid[r3][c3] = '*'; grid[r4][c4] = '*'\n        for row in grid: print(''.join(row))",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "cpp",
-      "code": "#include <iostream>\n#include <vector>\n#include <string>\nusing namespace std;\nint main() {\n    int t; cin >> t;\n    while (t--) {\n        int n; cin >> n;\n        vector<string> grid(n);\n        for (int i = 0; i < n; i++) cin >> grid[i];\n        vector<pair<int,int>> pts;\n        for (int i = 0; i < n; i++) for (int j = 0; j < n; j++)\n            if (grid[i][j] == '*') pts.push_back({i, j});\n        int r1 = pts[0].first, c1 = pts[0].second;\n        int r2 = pts[1].first, c2 = pts[1].second;\n        int r3, c3, r4, c4;\n        if (r1 == r2) { r3 = (r1 + 1) % n; r4 = r3; c3 = c1; c4 = c2; }\n        else if (c1 == c2) { c3 = (c1 + 1) % n; c4 = c3; r3 = r1; r4 = r2; }\n        else { r3 = r1; c3 = c2; r4 = r2; c4 = c1; }\n        grid[r3][c3] = '*'; grid[r4][c4] = '*';\n        for (auto& row : grid) cout << row << '\\n';\n    }\n    return 0;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "import java.util.*;\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int t = sc.nextInt();\n        while (t-- > 0) {\n            int n = sc.nextInt();\n            char[][] grid = new char[n][n];\n            for (int i = 0; i < n; i++) grid[i] = sc.next().toCharArray();\n            List<int[]> pts = new ArrayList<>();\n            for (int i = 0; i < n; i++) for (int j = 0; j < n; j++)\n                if (grid[i][j] == '*') pts.add(new int[]{i, j});\n            int r1 = pts.get(0)[0], c1 = pts.get(0)[1];\n            int r2 = pts.get(1)[0], c2 = pts.get(1)[1];\n            int r3, c3, r4, c4;\n            if (r1 == r2) { r3 = (r1 + 1) % n; r4 = r3; c3 = c1; c4 = c2; }\n            else if (c1 == c2) { c3 = (c1 + 1) % n; c4 = c3; r3 = r1; r4 = r2; }\n            else { r3 = r1; c3 = c2; r4 = r2; c4 = c1; }\n            grid[r3][c3] = '*'; grid[r4][c4] = '*';\n            for (char[] row : grid) System.out.println(new String(row));\n        }\n    }\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function solve(input) {\n    const lines = input.trim().split('\\n'); let idx = 0;\n    const t = parseInt(lines[idx++]);\n    for (let _ = 0; _ < t; _++) {\n        const n = parseInt(lines[idx++]);\n        const grid = lines.slice(idx, idx + n).map(r => r.split('')); idx += n;\n        const pts = [];\n        for (let i = 0; i < n; i++) for (let j = 0; j < n; j++)\n            if (grid[i][j] === '*') pts.push([i, j]);\n        let [r1, c1] = pts[0], [r2, c2] = pts[1];\n        let r3, c3, r4, c4;\n        if (r1 === r2) { r3 = (r1 + 1) % n; r4 = r3; c3 = c1; c4 = c2; }\n        else if (c1 === c2) { c3 = (c1 + 1) % n; c4 = c3; r3 = r1; r4 = r2; }\n        else { r3 = r1; c3 = c2; r4 = r2; c4 = c1; }\n        grid[r3][c3] = '*'; grid[r4][c4] = '*';\n        for (const row of grid) console.log(row.join(''));\n    }\n}",
+      "code": "def solve():\n    t = int(input())\n    for _ in range(t):\n        n = int(input())\n        grid = [list(input().strip()) for _ in range(n)]\n        \n        pts = []\n        for i in range(n):\n            for j in range(n):\n                if grid[i][j] == '*':\n                    pts.append((i, j))\n        \n        r1, c1 = pts[0]\n        r2, c2 = pts[1]\n        \n        if r1 == r2:\n            r3 = (r1 + 1) % n\n            r4 = r3\n            c3, c4 = c1, c2\n        elif c1 == c2:\n            c3 = (c1 + 1) % n\n            c4 = c3\n            r3, r4 = r1, r2\n        else:\n            r3, c3 = r1, c2\n            r4, c4 = r2, c1\n        \n        grid[r3][c3] = '*'\n        grid[r4][c4] = '*'\n        \n        for row in grid:\n            print(''.join(row))\n\nif __name__ == \"__main__\":\n    solve()",
       "caption": null
     },
     {

@@ -4,12 +4,24 @@
   "title": "Angles and Rotation",
   "icon": "\u27f3",
   "color": "#f43f5e",
-  "problemCount": 512,
+  "problemCount": 72,
   "blocks": [
     {
       "type": "heading",
       "level": 2,
       "text": "Chapter 13: Angles and Rotation"
+    },
+    {
+      "type": "text",
+      "content": "**\ud83c\udfaf Learning Objectives \u2014 By the end of this chapter, you will be able to:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Understand angle units (degrees vs radians) and how to convert between them",
+        "Compute angles between lines and vectors using dot and cross products",
+        "Apply rotation matrices to transform coordinates in 2D space"
+      ]
     },
     {
       "type": "divider"
@@ -68,22 +80,12 @@
       "text": "2.1 Angle Basics"
     },
     {
-      "type": "interactive_diagram",
-      "diagram": "angle-explorer",
-      "caption": "Adjust the angle slider to explore acute, right, obtuse, and reflex angles with real-time degree and radian display."
-    },
-    {
-      "type": "interactive_diagram",
-      "diagram": "angle-explorer",
-      "caption": "Adjust the angle slider to explore acute, right, obtuse, and reflex angles with real-time degree and radian display."
+      "type": "text",
+      "content": "**Units:** degrees (0-360) or radians (0 to 2\u03c0). Radians are standard in programming."
     },
     {
       "type": "text",
-      "content": "**Units:** degrees (0-360) or radians (0 to $2\\pi$). Radians are standard in programming."
-    },
-    {
-      "type": "text",
-      "content": "**Conversion:** `radians = degrees \u00d7 $\\pi$ / 180`, `degrees = radians \u00d7 180 / $\\pi$`"
+      "content": "**Conversion:** `radians = degrees \u00d7 \u03c0 / 180`, `degrees = radians \u00d7 180 / \u03c0`"
     },
     {
       "type": "text",
@@ -92,22 +94,12 @@
     {
       "type": "list",
       "items": [
-        "Acute: $0^\\circ < \\theta < 90^\\circ$",
-        "Right: $\\theta = 90^\\circ$",
-        "Obtuse: $90^\\circ < \\theta < 180^\\circ$",
-        "Straight: $\\theta = 180^\\circ$",
-        "Reflex: $180^\\circ < \\theta < 360^\\circ$"
+        "Acute: 0\u00b0 < \u03b8 < 90\u00b0",
+        "Right: \u03b8 = 90\u00b0",
+        "Obtuse: 90\u00b0 < \u03b8 < 180\u00b0",
+        "Straight: \u03b8 = 180\u00b0",
+        "Reflex: 180\u00b0 < \u03b8 < 360\u00b0"
       ]
-    },
-    {
-      "type": "hint_card",
-      "question": "How do you find the interior angle of a regular pentagon?",
-      "answer": "Sum of interior angles = (n \u2212 2) \u00d7 180\u00b0 = (5 \u2212 2) \u00d7 180\u00b0 = 540\u00b0. Each interior angle = 540\u00b0 / 5 = 108\u00b0. Each exterior angle = 360\u00b0 / 5 = 72\u00b0. Quick check: interior (108\u00b0) + exterior (72\u00b0) = 180\u00b0, confirming they are supplementary."
-    },
-    {
-      "type": "hint_card",
-      "question": "How do you find the interior angle of a regular pentagon?",
-      "answer": "Sum of interior angles = (n \u2212 2) \u00d7 180\u00b0 = (5 \u2212 2) \u00d7 180\u00b0 = 540\u00b0. Each interior angle = 540\u00b0 / 5 = 108\u00b0. Each exterior angle = 360\u00b0 / 5 = 72\u00b0. Quick check: interior (108\u00b0) + exterior (72\u00b0) = 180\u00b0, confirming they are supplementary."
     },
     {
       "type": "heading",
@@ -119,20 +111,24 @@
       "content": "Given vectors **a** and **b**:"
     },
     {
-      "type": "text",
-      "content": "$$\\cos \\theta = \\frac{\\mathbf{a} \\cdot \\mathbf{b}}{|\\mathbf{a}| \\cdot |\\mathbf{b}|}$$ $$\\theta = \\arccos\\left(\\frac{\\mathbf{a} \\cdot \\mathbf{b}}{|\\mathbf{a}| \\cdot |\\mathbf{b}|}\\right)$$"
+      "type": "code",
+      "lang": "",
+      "code": "cos \u03b8 = (a\u00b7b) / (|a| \u00d7 |b|)\n\u03b8 = arccos((a\u00b7b) / (|a| \u00d7 |b|))",
+      "caption": null
     },
     {
       "type": "text",
-      "content": "This always gives the smaller angle (0 to $\\pi$). For signed angle (direction matters):"
+      "content": "This always gives the smaller angle (0 to \u03c0). For signed angle (direction matters):"
+    },
+    {
+      "type": "code",
+      "lang": "",
+      "code": "sin \u03b8 = (a \u00d7 b) / (|a| \u00d7 |b|)",
+      "caption": null
     },
     {
       "type": "text",
-      "content": "$$\\sin \\theta = \\frac{|\\mathbf{a} \\times \\mathbf{b}|}{|\\mathbf{a}| \\cdot |\\mathbf{b}|}$$"
-    },
-    {
-      "type": "text",
-      "content": "where `$a \\times b = a.x \\cdot b.y - a.y \\cdot b.x$` is the 2D cross product."
+      "content": "where `a \u00d7 b = a.x\u00b7b.y - a.y\u00b7b.x` is the 2D cross product."
     },
     {
       "type": "heading",
@@ -141,11 +137,13 @@
     },
     {
       "type": "text",
-      "content": "The function `$\\operatorname{atan2}(y, x)$` returns the angle from the positive x-axis to the point (x, y), in the range (-$\\pi$, $\\pi$]."
+      "content": "The function `atan2(y, x)` returns the angle from the positive x-axis to the point (x, y), in the range (-\u03c0, \u03c0]."
     },
     {
-      "type": "text",
-      "content": "$$\\theta = \\operatorname{atan2}(y, x)$$"
+      "type": "code",
+      "lang": "",
+      "code": "\u03b8 = atan2(y, x)",
+      "caption": null
     },
     {
       "type": "text",
@@ -177,63 +175,39 @@
       ]
     },
     {
-      "type": "hint_card",
-      "question": "What\u2019s the difference between atan and atan2?",
-      "answer": "atan(y/x) returns values in [\u2212\u03c0/2, \u03c0/2] \u2014 it cannot distinguish quadrants because x\u2019s sign is lost in the division. atan2(y, x) uses both signs separately, returning the full range (\u2212\u03c0, \u03c0]. Use atan2 whenever direction matters: polar coordinates, vector angles, and navigation bearings."
-    },
-    {
-      "type": "hint_card",
-      "question": "What\u2019s the difference between atan and atan2?",
-      "answer": "atan(y/x) returns values in [\u2212\u03c0/2, \u03c0/2] \u2014 it cannot distinguish quadrants because x\u2019s sign is lost in the division. atan2(y, x) uses both signs separately, returning the full range (\u2212\u03c0, \u03c0]. Use atan2 whenever direction matters: polar coordinates, vector angles, and navigation bearings."
-    },
-    {
       "type": "heading",
       "level": 4,
       "text": "2.3 Rotation Matrix (2D)"
     },
     {
-      "type": "interactive_diagram",
-      "diagram": "rotation-visualizer",
-      "caption": "Drag the point and watch how the 2D rotation matrix transforms its coordinates step by step."
-    },
-    {
-      "type": "interactive_diagram",
-      "diagram": "rotation-visualizer",
-      "caption": "Drag the point and watch how the 2D rotation matrix transforms its coordinates step by step."
-    },
-    {
       "type": "text",
-      "content": "To rotate a point (x, y) by angle $\\theta$ counterclockwise around the origin:"
+      "content": "To rotate a point (x, y) by angle \u03b8 counterclockwise around the origin:"
     },
     {
-      "type": "text",
-      "content": "$$x' = x \\cos \\theta - y \\sin \\theta$$ $$y' = x \\sin \\theta + y \\cos \\theta$$"
+      "type": "code",
+      "lang": "",
+      "code": "x' = x\u00b7cos \u03b8 - y\u00b7sin \u03b8\ny' = x\u00b7sin \u03b8 + y\u00b7cos \u03b8",
+      "caption": null
     },
     {
       "type": "text",
       "content": "In matrix form:"
     },
     {
-      "type": "text",
-      "content": "$$\\begin{bmatrix} x' \\\\ y' \\end{bmatrix} = \\begin{bmatrix} \\cos \\theta & -\\sin \\theta \\\\ \\sin \\theta & \\cos \\theta \\end{bmatrix} \\begin{bmatrix} x \\\\ y \\end{bmatrix}$$"
+      "type": "code",
+      "lang": "",
+      "code": "[x']   [cos \u03b8  -sin \u03b8] [x]\n[y'] = [sin \u03b8   cos \u03b8] [y]",
+      "caption": null
     },
     {
       "type": "text",
-      "content": "**Clockwise rotation** (by \\theta ):"
+      "content": "**Clockwise rotation** (by \u03b8):"
     },
     {
-      "type": "text",
-      "content": "$$x' = x \\cos \\theta + y \\sin \\theta$$ $$y' = -x \\sin \\theta + y \\cos \\theta$$"
-    },
-    {
-      "type": "hint_card",
-      "question": "Why do 2D rotation matrices use cos \u03b8 and sin \u03b8?",
-      "answer": "A rotation matrix comes from the unit circle: (cos \u03b8, sin \u03b8) is the point at angle \u03b8. When rotating a vector (x, y), the first column [cos \u03b8; sin \u03b8] is where (1, 0) lands after rotation. The second column [\u2212sin \u03b8; cos \u03b8] is where (0, 1) lands. Together they form the linear transformation that rotates any vector by \u03b8 counterclockwise."
-    },
-    {
-      "type": "hint_card",
-      "question": "Why do 2D rotation matrices use cos \u03b8 and sin \u03b8?",
-      "answer": "A rotation matrix comes from the unit circle: (cos \u03b8, sin \u03b8) is the point at angle \u03b8. When rotating a vector (x, y), the first column [cos \u03b8; sin \u03b8] is where (1, 0) lands after rotation. The second column [\u2212sin \u03b8; cos \u03b8] is where (0, 1) lands. Together they form the linear transformation that rotates any vector by \u03b8 counterclockwise."
+      "type": "code",
+      "lang": "",
+      "code": "x' = x\u00b7cos \u03b8 + y\u00b7sin \u03b8\ny' = -x\u00b7sin \u03b8 + y\u00b7cos \u03b8",
+      "caption": null
     },
     {
       "type": "heading",
@@ -242,7 +216,7 @@
     },
     {
       "type": "text",
-      "content": "To rotate point P around point C by angle $\\theta$:"
+      "content": "To rotate point P around point C by angle \u03b8:"
     },
     {
       "type": "list",
@@ -253,8 +227,10 @@
       ]
     },
     {
-      "type": "text",
-      "content": "$$\\begin{aligned}\n\\text{local}_x &= P_x - C_x \\\\\n\\text{local}_y &= P_y - C_y \\\\\n\\text{rotated}_x &= \\text{local}_x \\cos \\theta - \\text{local}_y \\sin \\theta + C_x \\\\\n\\text{rotated}_y &= \\text{local}_x \\sin \\theta + \\text{local}_y \\cos \\theta + C_y\n\\end{aligned}$$"
+      "type": "code",
+      "lang": "",
+      "code": "local_x = P.x - C.x\nlocal_y = P.y - C.y\nrotated_x = local_x\u00b7cos \u03b8 - local_y\u00b7sin \u03b8 + C.x\nrotated_y = local_x\u00b7sin \u03b8 + local_y\u00b7cos \u03b8 + C.y",
+      "caption": null
     },
     {
       "type": "heading",
@@ -263,11 +239,13 @@
     },
     {
       "type": "text",
-      "content": "Reflection across a line through the origin with direction angle \\theta :"
+      "content": "Reflection across a line through the origin with direction angle \u03b8:"
     },
     {
-      "type": "text",
-      "content": "$$x' = x \\cos(2\\theta) + y \\sin(2\\theta)$$ $$y' = x \\sin(2\\theta) - y \\cos(2\\theta)$$"
+      "type": "code",
+      "lang": "",
+      "code": "x' = x\u00b7cos(2\u03b8) + y\u00b7sin(2\u03b8)\ny' = x\u00b7sin(2\u03b8) - y\u00b7cos(2\u03b8)",
+      "caption": null
     },
     {
       "type": "text",
@@ -283,18 +261,10 @@
       "content": "Given time H:M, the angle between hour and minute hands:"
     },
     {
-      "type": "text",
-      "content": "$$\\text{minute angle} = M \\times 6^\\circ \\qquad (360^\\circ / 60 = 6^\\circ \\text{ per minute})$$ $$\\text{hour angle} = (H \\bmod 12) \\times 30^\\circ + M \\times 0.5^\\circ \\qquad (360^\\circ / 12 = 30^\\circ \\text{ per hour, } 0.5^\\circ \\text{ per minute})$$ $$\\text{angle} = \\min(|\\text{hour angle} - \\text{minute angle}|, 360^\\circ - |\\text{hour angle} - \\text{minute angle}|)$$"
-    },
-    {
-      "type": "hint_card",
-      "question": "Why does the hour hand move 0.5\u00b0 per minute?",
-      "answer": "The hour hand completes a full 360\u00b0 rotation in 12 hours = 720 minutes. Its angular speed is 360\u00b0 / 720 min = 0.5\u00b0 per minute. The minute hand, completing 360\u00b0 in 60 minutes, moves at 6\u00b0 per minute \u2014 12 times faster. At 3:15 the hour hand has moved 15 \u00d7 0.5\u00b0 = 7.5\u00b0 past the 3-hour mark, giving 97.5\u00b0 total."
-    },
-    {
-      "type": "hint_card",
-      "question": "Why does the hour hand move 0.5\u00b0 per minute?",
-      "answer": "The hour hand completes a full 360\u00b0 rotation in 12 hours = 720 minutes. Its angular speed is 360\u00b0 / 720 min = 0.5\u00b0 per minute. The minute hand, completing 360\u00b0 in 60 minutes, moves at 6\u00b0 per minute \u2014 12 times faster. At 3:15 the hour hand has moved 15 \u00d7 0.5\u00b0 = 7.5\u00b0 past the 3-hour mark, giving 97.5\u00b0 total."
+      "type": "code",
+      "lang": "",
+      "code": "minute_angle = M \u00d7 6          (360\u00b0 / 60 = 6\u00b0 per minute)\nhour_angle = (H % 12) \u00d7 30 + M \u00d7 0.5   (360\u00b0 / 12 = 30\u00b0 per hour, 0.5\u00b0 per minute)\nangle = |hour_angle - minute_angle|\nresult = min(angle, 360 - angle)",
+      "caption": null
     },
     {
       "type": "heading",
@@ -306,101 +276,13 @@
       "content": "Given three points A, B, C, the orientation tells us if the turn from A\u2192B to B\u2192C is counterclockwise, clockwise, or collinear:"
     },
     {
-      "type": "text",
-      "content": "$$\\text{cross} = (B_x - A_x)(C_y - A_y) - (B_y - A_y)(C_x - A_x)$$\n\n**cross** > 0 \u2192 counterclockwise (left turn)\n\n**cross** < 0 \u2192 clockwise (right turn)\n\n**cross** = 0 \u2192 collinear"
+      "type": "code",
+      "lang": "",
+      "code": "cross = (B.x - A.x) \u00d7 (C.y - A.y) - (B.y - A.y) \u00d7 (C.x - A.x)\n\ncross > 0 \u2192 counterclockwise (left turn)\ncross < 0 \u2192 clockwise (right turn)\ncross = 0 \u2192 collinear",
+      "caption": null
     },
     {
       "type": "divider"
-    },
-    {
-      "type": "keyword_badges",
-      "groups": [
-        {
-          "label": "clock-angle",
-          "color": "rose"
-        },
-        {
-          "label": "rotation-matrix",
-          "color": "indigo"
-        },
-        {
-          "label": "radian",
-          "color": "sky"
-        },
-        {
-          "label": "sum-of-angles",
-          "color": "amber"
-        },
-        {
-          "label": "interior-angle",
-          "color": "emerald"
-        },
-        {
-          "label": "exterior-angle",
-          "color": "cyan"
-        },
-        {
-          "label": "polar-coordinates",
-          "color": "violet"
-        },
-        {
-          "label": "trigonometric-ratios",
-          "color": "orange"
-        },
-        {
-          "label": "atan2",
-          "color": "pink"
-        },
-        {
-          "label": "complementary-angles",
-          "color": "red"
-        }
-      ]
-    },
-    {
-      "type": "keyword_badges",
-      "groups": [
-        {
-          "label": "clock-angle",
-          "color": "rose"
-        },
-        {
-          "label": "rotation-matrix",
-          "color": "indigo"
-        },
-        {
-          "label": "radian",
-          "color": "sky"
-        },
-        {
-          "label": "sum-of-angles",
-          "color": "amber"
-        },
-        {
-          "label": "interior-angle",
-          "color": "emerald"
-        },
-        {
-          "label": "exterior-angle",
-          "color": "cyan"
-        },
-        {
-          "label": "polar-coordinates",
-          "color": "violet"
-        },
-        {
-          "label": "trigonometric-ratios",
-          "color": "orange"
-        },
-        {
-          "label": "atan2",
-          "color": "pink"
-        },
-        {
-          "label": "complementary-angles",
-          "color": "red"
-        }
-      ]
     },
     {
       "type": "heading",
@@ -473,7 +355,7 @@
     },
     {
       "type": "text",
-      "content": "**Complexity:** $O(1)$."
+      "content": "**Complexity:** O(1)."
     },
     {
       "type": "text",
@@ -490,11 +372,11 @@
     },
     {
       "type": "text",
-      "content": "**Why it works:** For 90\u00b0 clockwise: `$\\mathrm{new}[j][n-1-i] = \\mathrm{old}[i][j]$`. In-place: reverse rows then transpose (or transpose then reverse columns)."
+      "content": "**Why it works:** For 90\u00b0 clockwise: `new[j][n-1-i] = old[i][j]`. In-place: reverse rows then transpose (or transpose then reverse columns)."
     },
     {
       "type": "text",
-      "content": "**Complexity:** $O(N^2)$."
+      "content": "**Complexity:** O(N\u00b2)."
     },
     {
       "type": "text",
@@ -515,7 +397,7 @@
     },
     {
       "type": "text",
-      "content": "**Complexity:** $O(N)$."
+      "content": "**Complexity:** O(N)."
     },
     {
       "type": "text",
@@ -536,7 +418,7 @@
     },
     {
       "type": "text",
-      "content": "**Complexity:** Varies. Some are $O(1)$, others need simulation."
+      "content": "**Complexity:** Varies. Some are O(1), others need simulation."
     },
     {
       "type": "heading",
@@ -553,7 +435,7 @@
     },
     {
       "type": "text",
-      "content": "**Complexity:** $O(1)$ per test."
+      "content": "**Complexity:** O(1) per test."
     },
     {
       "type": "divider"
@@ -587,12 +469,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function angleBetween(v1, v2) {\n    const dot = v1[0] * v2[0] + v1[1] * v2[1];\n    const mag1 = Math.hypot(v1[0], v1[1]);\n    const mag2 = Math.hypot(v2[0], v2[1]);\n    const cosAngle = Math.max(-1, Math.min(1, dot / (mag1 * mag2)));\n    return Math.acos(cosAngle);\n}\nfunction signedAngle(v1, v2) {\n    const dot = v1[0] * v2[0] + v1[1] * v2[1];\n    const cross = v1[0] * v2[1] - v1[1] * v2[0];\n    const mag1 = Math.hypot(v1[0], v1[1]);\n    const mag2 = Math.hypot(v2[0], v2[1]);\n    const cosAngle = Math.max(-1, Math.min(1, dot / (mag1 * mag2)));\n    const angle = Math.acos(cosAngle);\n    return cross >= 0 ? angle : -angle;\n}",
-      "caption": null
-    },
-    {
       "type": "heading",
       "level": 4,
       "text": "Template 2: 2D Rotation"
@@ -613,12 +489,6 @@
       "type": "code",
       "lang": "java",
       "code": "public static double[] rotatePoint(int px, int py, int cx, int cy, double deg) {\n    double rad = Math.toRadians(deg);\n    double c = Math.cos(rad), s = Math.sin(rad);\n    double dx = px - cx, dy = py - cy;\n    return new double[]{dx * c - dy * s + cx, dx * s + dy * c + cy};\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function rotatePoint(px, py, cx, cy, angleDeg) {\n    const rad = angleDeg * Math.PI / 180;\n    const cosA = Math.cos(rad), sinA = Math.sin(rad);\n    const dx = px - cx, dy = py - cy;\n    return [dx * cosA - dy * sinA + cx, dx * sinA + dy * cosA + cy];\n}",
       "caption": null
     },
     {
@@ -645,12 +515,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function rotateMatrix(matrix) {\n    matrix.reverse();\n    const n = matrix.length;\n    for (let i = 0; i < n; i++)\n        for (let j = i + 1; j < n; j++)\n            [matrix[i][j], matrix[j][i]] = [matrix[j][i], matrix[i][j]];\n}",
-      "caption": null
-    },
-    {
       "type": "heading",
       "level": 4,
       "text": "Template 4: Orientation (Cross Product)"
@@ -671,12 +535,6 @@
       "type": "code",
       "lang": "java",
       "code": "public static long orientation(int[] p, int[] q, int[] r) {\n    return (long)(q[0] - p[0]) * (r[1] - p[1])\n         - (long)(q[1] - p[1]) * (r[0] - p[0]);\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function orientation(p, q, r) {\n    return (q[0] - p[0]) * (r[1] - p[1]) - (q[1] - p[1]) * (r[0] - p[0]);\n}",
       "caption": null
     },
     {
@@ -703,12 +561,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function clockAngle(hours, minutes) {\n    const minuteAngle = minutes * 6;\n    const hourAngle = (hours % 12) * 30 + minutes * 0.5;\n    const angle = Math.abs(hourAngle - minuteAngle);\n    return Math.min(angle, 360 - angle);\n}",
-      "caption": null
-    },
-    {
       "type": "heading",
       "level": 4,
       "text": "Template 6: Polar Angle Sorting"
@@ -729,12 +581,6 @@
       "type": "code",
       "lang": "java",
       "code": "public static int[][] polarSort(int[][] points) {\n    Arrays.sort(points, (a, b) -> {\n        double aa = Math.atan2(a[1], a[0]);\n        double ab = Math.atan2(b[1], b[0]);\n        if (aa != ab) return Double.compare(aa, ab);\n        return Integer.compare(a[0]*a[0]+a[1]*a[1], b[0]*b[0]+b[1]*b[1]);\n    });\n    return points;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function polarAngleSort(points) {\n    return [...points].sort((a, b) => {\n        const angleA = Math.atan2(a[1], a[0]);\n        const angleB = Math.atan2(b[1], b[0]);\n        if (angleA !== angleB) return angleA - angleB;\n        return (a[0]*a[0] + a[1]*a[1]) - (b[0]*b[0] + b[1]*b[1]);\n    });\n}",
       "caption": null
     },
     {
@@ -892,7 +738,7 @@
     },
     {
       "type": "text",
-      "content": "**Easy 2: Arrow Direction** A character is at (x_1, y_1) and points toward (x_2, y_2). Compute the angle from the positive x-axis, in degrees [0, 360)."
+      "content": "**Easy 2: Arrow Direction** A character is at (x\u2081, y\u2081) and points toward (x\u2082, y\u2082). Compute the angle from the positive x-axis, in degrees [0, 360)."
     },
     {
       "type": "text",
@@ -904,7 +750,7 @@
     },
     {
       "type": "text",
-      "content": "**Hard 1: Reflected Laser** A laser starts at (x_1, y_1) heading at angle \\theta . A circular mirror of radius R is centered at (0,0). Does the laser hit the mirror? If so, at what point does it reflect, and in what direction does it leave?"
+      "content": "**Hard 1: Reflected Laser** A laser starts at (x\u2081, y\u2081) heading at angle \u03b8. A circular mirror of radius R is centered at (0,0). Does the laser hit the mirror? If so, at what point does it reflect, and in what direction does it leave?"
     },
     {
       "type": "text",
@@ -912,7 +758,7 @@
     },
     {
       "type": "text",
-      "content": "**Interview-Style: Spiral Matrix Rotation** Given an $M \\times N$ matrix, rotate the matrix by 180 degrees in-place (minimum extra space $O(1)$)."
+      "content": "**Interview-Style: Spiral Matrix Rotation** Given an M\u00d7N matrix, rotate the matrix by 180 degrees in-place (minimum extra space O(1))."
     },
     {
       "type": "text",
@@ -940,7 +786,7 @@
     },
     {
       "type": "text",
-      "content": "**B. Brute Force** Create a new matrix: `$\\mathrm{new}[j][n-1-i] = \\mathrm{old}[i][j]$`. $O(N^2)$ time, $O(N^2)$ space."
+      "content": "**B. Brute Force** Create a new matrix: `new[j][n-1-i] = old[i][j]`. O(N\u00b2) time, O(N\u00b2) space."
     },
     {
       "type": "text",
@@ -960,7 +806,7 @@
     },
     {
       "type": "text",
-      "content": "**E. Complexity** $O(N^2)$ time, $O(1)$ extra space."
+      "content": "**E. Complexity** O(N\u00b2) time, O(1) extra space."
     },
     {
       "type": "text",
@@ -969,8 +815,8 @@
     {
       "type": "list",
       "items": [
-        "$1 \\times 1$ matrix: nothing to do",
-        "Must be square ($N\\times N$) per problem statement"
+        "1\u00d71 matrix: nothing to do",
+        "Must be square (N\u00d7N) per problem statement"
       ]
     },
     {
@@ -993,12 +839,6 @@
       "type": "code",
       "lang": "java",
       "code": "class Solution {\n    public void rotate(int[][] matrix) {\n        int n = matrix.length;\n        for (int i = 0; i < n / 2; i++) {\n            int[] tmp = matrix[i];\n            matrix[i] = matrix[n-1-i];\n            matrix[n-1-i] = tmp;\n        }\n        for (int i = 0; i < n; i++)\n            for (int j = i + 1; j < n; j++) {\n                int tmp = matrix[i][j];\n                matrix[i][j] = matrix[j][i];\n                matrix[j][i] = tmp;\n            }\n    }\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "var rotate = function(matrix) {\n    matrix.reverse();\n    const n = matrix.length;\n    for (let i = 0; i < n; i++)\n        for (let j = i + 1; j < n; j++)\n            [matrix[i][j], matrix[j][i]] = [matrix[j][i], matrix[i][j]];\n};",
       "caption": null
     },
     {
@@ -1037,7 +877,7 @@
     },
     {
       "type": "text",
-      "content": "**E. Complexity** $O(1)$ time, $O(1)$ space."
+      "content": "**E. Complexity** O(1) time, O(1) space."
     },
     {
       "type": "text",
@@ -1071,12 +911,6 @@
       "type": "code",
       "lang": "java",
       "code": "class Solution {\n    public double angleClock(int hour, int minutes) {\n        hour %= 12;\n        double ma = minutes * 6.0;\n        double ha = hour * 30.0 + minutes * 0.5;\n        double diff = Math.abs(ha - ma);\n        return Math.min(diff, 360 - diff);\n    }\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "var angleClock = function(hour, minutes) {\n    hour %= 12;\n    const ma = minutes * 6;\n    const ha = hour * 30 + minutes * 0.5;\n    const diff = Math.abs(ha - ma);\n    return Math.min(diff, 360 - diff);\n};",
       "caption": null
     },
     {
@@ -1124,7 +958,7 @@
     },
     {
       "type": "text",
-      "content": "**E. Complexity** $O(N^2)$ time, $O(1)$ space."
+      "content": "**E. Complexity** O(N\u00b2) time, O(1) space."
     },
     {
       "type": "text",
@@ -1133,7 +967,7 @@
     {
       "type": "list",
       "items": [
-        "$1 \\times 1$: always true",
+        "1\u00d71: always true",
         "Already matching: works"
       ]
     },
@@ -1157,12 +991,6 @@
       "type": "code",
       "lang": "java",
       "code": "class Solution {\n    public boolean findRotation(int[][] mat, int[][] target) {\n        int n = mat.length;\n        for (int r = 0; r < 4; r++) {\n            if (Arrays.deepEquals(mat, target)) return true;\n            int[][] rot = new int[n][n];\n            for (int i = 0; i < n; i++)\n                for (int j = 0; j < n; j++)\n                    rot[j][n-1-i] = mat[i][j];\n            mat = rot;\n        }\n        return false;\n    }\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "var findRotation = function(mat, target) {\n    let n = mat.length;\n    for (let r = 0; r < 4; r++) {\n        if (JSON.stringify(mat) === JSON.stringify(target)) return true;\n        const rot = Array.from({length: n}, () => new Array(n).fill(0));\n        for (let i = 0; i < n; i++)\n            for (let j = 0; j < n; j++)\n                rot[j][n-1-i] = mat[i][j];\n        mat = rot;\n    }\n    return false;\n};",
       "caption": null
     },
     {
@@ -1246,12 +1074,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "javascript",
-      "code": "var mirrorReflection = function(p, q) {\n    const g = gcd(p, q);\n    const k = q / g, m = p / g;\n    if (k % 2 === 0) return 2;\n    if (m % 2 === 0) return 0;\n    return 1;\n};\nfunction gcd(a, b) {\n    return b === 0 ? a : gcd(b, a % b);\n}",
-      "caption": null
-    },
-    {
       "type": "divider"
     },
     {
@@ -1265,11 +1087,11 @@
     },
     {
       "type": "text",
-      "content": "**B. Brute Force** Try all pairs as boundaries. $O(N^2)$."
+      "content": "**B. Brute Force** Try all pairs as boundaries. O(N\u00b2)."
     },
     {
       "type": "text",
-      "content": "**C. Optimized Approach** Use atan2, sort, duplicate with +$2\\pi$, find max gap."
+      "content": "**C. Optimized Approach** Use atan2, sort, duplicate with +2\u03c0, find max gap."
     },
     {
       "type": "text",
@@ -1278,7 +1100,7 @@
     {
       "type": "list",
       "items": [
-        "Compute angle = $\\text{atan2}(y, x)$ in degrees for each point",
+        "Compute angle = atan2(y, x) in degrees for each point",
         "Sort angles",
         "Find max gap (handling wrap-around)",
         "Answer = 360 - max_gap"
@@ -1286,7 +1108,7 @@
     },
     {
       "type": "text",
-      "content": "**E. Complexity** $O(N \\log N)$."
+      "content": "**E. Complexity** O(N log N)."
     },
     {
       "type": "text",
@@ -1322,21 +1144,8 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function minViewAngle(points) {\n    const angles = points.map(([x, y]) => Math.atan2(y, x) * 180 / Math.PI);\n    angles.sort((a, b) => a - b);\n    let maxGap = 0;\n    const n = angles.length;\n    for (let i = 0; i < n; i++) {\n        let gap = angles[(i + 1) % n] - angles[i];\n        if (i === n - 1) gap += 360;\n        maxGap = Math.max(maxGap, gap);\n    }\n    return 360 - maxGap;\n}",
-      "caption": null
-    },
-    {
       "type": "divider"
     }
   ],
-  "difficulty": "Advanced",
-  "problem_urls": {
-    "Problem 1": "https://leetcode.com/problems/angle-between-hands-of-a-clock/",
-    "Problem 2": "https://leetcode.com/problems/rotate-image/",
-    "Problem 3": "https://leetcode.com/problems/minimum-time-difference/",
-    "Problem 4": "https://codeforces.com/problemset/problem/231/A",
-    "Problem 5": "https://www.codechef.com/problems/ANGLE"
-  }
+  "difficulty": "Advanced"
 }

@@ -4,12 +4,24 @@
   "title": "Advanced Geometry Algorithms",
   "icon": "\u2726",
   "color": "#84cc16",
-  "problemCount": 198,
+  "problemCount": 172,
   "blocks": [
     {
       "type": "heading",
       "level": 2,
       "text": "Chapter 15: Advanced Geometry Algorithms"
+    },
+    {
+      "type": "text",
+      "content": "**\ud83c\udfaf Learning Objectives \u2014 By the end of this chapter, you will be able to:**"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Understand Voronoi diagrams, Delaunay triangulation, and their applications",
+        "Implement rotating calipers for width, diameter, and bounding box problems",
+        "Combine multiple geometry techniques to solve complex multi-step problems"
+      ]
     },
     {
       "type": "divider"
@@ -58,7 +70,7 @@
     },
     {
       "type": "text",
-      "content": "**Mandelbrot Set:** For each complex number c, iterate $z = z^2 + c$ from z = 0. If bounded, c is in the set."
+      "content": "**Mandelbrot Set:** For each complex number c, iterate `z = z\u00b2 + c` from z = 0. If bounded, c is in the set."
     },
     {
       "type": "text",
@@ -74,26 +86,16 @@
       "text": "2.2 3D Geometry"
     },
     {
-      "type": "hint_card",
-      "question": "How do cross and dot products behave differently in 3D vs 2D?",
-      "answer": "In 3D the cross product returns a vector (perpendicular to both inputs), not a scalar. Its magnitude equals the area of the parallelogram. The dot product is the same in any dimension: a\u00b7b = |a||b|cos\u03b8. For 3D geometry: dot product tests alignment (parallel if |dot| = |a||b|), cross product magnitude tests perpendicularity and gives surface normals."
-    },
-    {
-      "type": "hint_card",
-      "question": "How do cross and dot products behave differently in 3D vs 2D?",
-      "answer": "In 3D the cross product returns a vector (perpendicular to both inputs), not a scalar. Its magnitude equals the area of the parallelogram. The dot product is the same in any dimension: a\u00b7b = |a||b|cos\u03b8. For 3D geometry: dot product tests alignment (parallel if |dot| = |a||b|), cross product magnitude tests perpendicularity and gives surface normals."
+      "type": "text",
+      "content": "**Distance:** `d = \u221a((x\u2082-x\u2081)\u00b2 + (y\u2082-y\u2081)\u00b2 + (z\u2082-z\u2081)\u00b2)`"
     },
     {
       "type": "text",
-      "content": "**Distance:** `$d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2}$`"
+      "content": "**Point-plane distance:** `dist = |ax\u2080+by\u2080+cz\u2080+d| / \u221a(a\u00b2+b\u00b2+c\u00b2)`"
     },
     {
       "type": "text",
-      "content": "**Point-plane distance:** `dist = $|ax_0+by_0+cz_0+d| / \\sqrt{a^2+b^2+c^2}$`"
-    },
-    {
-      "type": "text",
-      "content": "**Tetrahedron volume:** `$V = |AB \\cdot (AC \\times AD)| / 6$`"
+      "content": "**Tetrahedron volume:** `V = |AB \u00b7 (AC \u00d7 AD)| / 6`"
     },
     {
       "type": "heading",
@@ -101,32 +103,12 @@
       "text": "2.3 Bezier Curves"
     },
     {
-      "type": "interactive_diagram",
-      "diagram": "bezier-curve",
-      "caption": "Drag control points to shape the B\u00e9zier curve. Observe how the curve stays within the convex hull of points."
-    },
-    {
-      "type": "hint_card",
-      "question": "How does de Casteljau's algorithm evaluate a B\u00e9zier curve?",
-      "answer": "It recursively interpolates between control points. For a degree-n curve with points P\u2080,...,P\u2099, at parameter t: linearly interpolate each adjacent pair (P\u1d62,P\u1d62\u208a\u2081) to get n-1 points, repeat until 1 point remains. That point is B(t). Numerically stable and works for any degree."
-    },
-    {
-      "type": "interactive_diagram",
-      "diagram": "bezier-curve",
-      "caption": "Drag control points to shape the B\u00e9zier curve. Observe how the curve stays within the convex hull of points."
-    },
-    {
-      "type": "hint_card",
-      "question": "How does de Casteljau's algorithm evaluate a B\u00e9zier curve?",
-      "answer": "It recursively interpolates between control points. For a degree-n curve with points P\u2080,...,P\u2099, at parameter t: linearly interpolate each adjacent pair (P\u1d62,P\u1d62\u208a\u2081) to get n-1 points, repeat until 1 point remains. That point is B(t). Numerically stable and works for any degree."
+      "type": "text",
+      "content": "**Cubic:** `B(t) = (1-t)\u00b3P\u2080 + 3(1-t)\u00b2tP\u2081 + 3(1-t)t\u00b2P\u2082 + t\u00b3P\u2083`"
     },
     {
       "type": "text",
-      "content": "**Cubic:** `$B(t) = (1-t)^3P_0 + 3(1-t)^2 t P_1 + 3(1-t) t^2 P_2 + t^3 P_3$`"
-    },
-    {
-      "type": "text",
-      "content": "Properties: passes through $P_0$, $P_3$; tangent at ends points to $P_1$, $P_2$; lies in convex hull of control points."
+      "content": "Properties: passes through P\u2080, P\u2083; tangent at ends points to P\u2081, P\u2082; lies in convex hull of control points."
     },
     {
       "type": "heading",
@@ -134,111 +116,11 @@
       "text": "2.4 Voronoi / Delaunay"
     },
     {
-      "type": "hint_card",
-      "question": "What makes Fortune's algorithm efficient for Voronoi diagrams?",
-      "answer": "Fortune's algorithm uses a sweep line with a beach line state. As the sweep line moves top-to-bottom, the beach line (set of parabolic arcs) represents points equidistant from the sweep line and seed points. Events: site events (new arc) and circle events (arc removed). Implemented with a balanced BST for the beach line and a priority queue. O(N log N)."
-    },
-    {
-      "type": "hint_card",
-      "question": "What makes Fortune's algorithm efficient for Voronoi diagrams?",
-      "answer": "Fortune's algorithm uses a sweep line with a beach line state. As the sweep line moves top-to-bottom, the beach line (set of parabolic arcs) represents points equidistant from the sweep line and seed points. Events: site events (new arc) and circle events (arc removed). Implemented with a balanced BST for the beach line and a priority queue. O(N log N)."
-    },
-    {
       "type": "text",
-      "content": "**Voronoi:** Partition by nearest seed point. **Delaunay:** Dual graph \u2014 connects seeds whose Voronoi cells touch. Maximizes minimum angle. $O(N \\log N)$ via Fortune's algorithm."
+      "content": "**Voronoi:** Partition by nearest seed point. **Delaunay:** Dual graph \u2014 connects seeds whose Voronoi cells touch. Maximizes minimum angle. O(N log N) via Fortune's algorithm."
     },
     {
       "type": "divider"
-    },
-    {
-      "type": "keyword_badges",
-      "groups": [
-        {
-          "label": "3d-geometry",
-          "color": "indigo"
-        },
-        {
-          "label": "fractal",
-          "color": "emerald"
-        },
-        {
-          "label": "bezier-curve",
-          "color": "amber"
-        },
-        {
-          "label": "quadtree",
-          "color": "rose"
-        },
-        {
-          "label": "spatial-hashing",
-          "color": "cyan"
-        },
-        {
-          "label": "kd-tree",
-          "color": "violet"
-        },
-        {
-          "label": "minkowski-sum",
-          "color": "orange"
-        },
-        {
-          "label": "half-plane-intersection",
-          "color": "sky"
-        },
-        {
-          "label": "randomized-algorithm",
-          "color": "pink"
-        },
-        {
-          "label": "bsp-tree",
-          "color": "red"
-        }
-      ]
-    },
-    {
-      "type": "keyword_badges",
-      "groups": [
-        {
-          "label": "3d-geometry",
-          "color": "indigo"
-        },
-        {
-          "label": "fractal",
-          "color": "emerald"
-        },
-        {
-          "label": "bezier-curve",
-          "color": "amber"
-        },
-        {
-          "label": "quadtree",
-          "color": "rose"
-        },
-        {
-          "label": "spatial-hashing",
-          "color": "cyan"
-        },
-        {
-          "label": "kd-tree",
-          "color": "violet"
-        },
-        {
-          "label": "minkowski-sum",
-          "color": "orange"
-        },
-        {
-          "label": "half-plane-intersection",
-          "color": "sky"
-        },
-        {
-          "label": "randomized-algorithm",
-          "color": "pink"
-        },
-        {
-          "label": "bsp-tree",
-          "color": "red"
-        }
-      ]
     },
     {
       "type": "heading",
@@ -281,7 +163,7 @@
     },
     {
       "type": "text",
-      "content": "**Complexity:** $O(1)$ for formulas, $O(N)$ for multiple objects."
+      "content": "**Complexity:** O(1) for formulas, O(N) for multiple objects."
     },
     {
       "type": "heading",
@@ -298,7 +180,7 @@
     },
     {
       "type": "text",
-      "content": "**Complexity:** $O(1)$ per evaluation."
+      "content": "**Complexity:** O(1) per evaluation."
     },
     {
       "type": "divider"
@@ -320,24 +202,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "cpp",
-      "code": "int mandelbrot(double cx, double cy, int maxIter = 100) {\n    double x = 0, y = 0;\n    for (int i = 0; i < maxIter; i++) {\n        double x2 = x*x - y*y + cx;\n        double y2 = 2*x*y + cy;\n        x = x2; y = y2;\n        if (x*x + y*y > 4) return i;\n    }\n    return maxIter;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "public static int mandelbrot(double cx, double cy, int maxIter) {\n    double x = 0, y = 0;\n    for (int i = 0; i < maxIter; i++) {\n        double x2 = x*x - y*y + cx;\n        double y2 = 2*x*y + cy;\n        x = x2; y = y2;\n        if (x*x + y*y > 4) return i;\n    }\n    return maxIter;\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function mandelbrot(cx, cy, maxIter = 100) {\n    let x = 0, y = 0;\n    for (let i = 0; i < maxIter; i++) {\n        const x2 = x*x - y*y + cx;\n        const y2 = 2*x*y + cy;\n        x = x2; y = y2;\n        if (x*x + y*y > 4) return i;\n    }\n    return maxIter;\n}",
-      "caption": null
-    },
-    {
       "type": "heading",
       "level": 4,
       "text": "Template 2: H-Tree"
@@ -349,24 +213,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "cpp",
-      "code": "void hTree(double x, double y, double length, int depth) {\n    if (depth == 0) return;\n    drawLine(x-length/2, y, x+length/2, y);\n    drawLine(x-length/2, y-length/2, x-length/2, y+length/2);\n    drawLine(x+length/2, y-length/2, x+length/2, y+length/2);\n    double newLen = length / sqrt(2);\n    hTree(x-length/2, y-length/2, newLen, depth-1);\n    hTree(x-length/2, y+length/2, newLen, depth-1);\n    hTree(x+length/2, y-length/2, newLen, depth-1);\n    hTree(x+length/2, y+length/2, newLen, depth-1);\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "public static void hTree(double x, double y, double length, int depth) {\n    if (depth == 0) return;\n    drawLine(x-length/2, y, x+length/2, y);\n    drawLine(x-length/2, y-length/2, x-length/2, y+length/2);\n    drawLine(x+length/2, y-length/2, x+length/2, y+length/2);\n    double newLen = length / Math.sqrt(2);\n    hTree(x-length/2, y-length/2, newLen, depth-1);\n    hTree(x-length/2, y+length/2, newLen, depth-1);\n    hTree(x+length/2, y-length/2, newLen, depth-1);\n    hTree(x+length/2, y+length/2, newLen, depth-1);\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function hTree(x, y, length, depth) {\n    if (depth === 0) return;\n    drawLine(x-length/2, y, x+length/2, y);\n    drawLine(x-length/2, y-length/2, x-length/2, y+length/2);\n    drawLine(x+length/2, y-length/2, x+length/2, y+length/2);\n    const newLen = length / Math.sqrt(2);\n    hTree(x-length/2, y-length/2, newLen, depth-1);\n    hTree(x-length/2, y+length/2, newLen, depth-1);\n    hTree(x+length/2, y-length/2, newLen, depth-1);\n    hTree(x+length/2, y+length/2, newLen, depth-1);\n}",
-      "caption": null
-    },
-    {
       "type": "heading",
       "level": 4,
       "text": "Template 3: 3D Vector Math"
@@ -375,24 +221,6 @@
       "type": "code",
       "lang": "python",
       "code": "import math\n\nclass Vec3:\n    def __init__(self, x=0, y=0, z=0):\n        self.x, self.y, self.z = x, y, z\n    \n    def dot(self, other):\n        return self.x*other.x + self.y*other.y + self.z*other.z\n    \n    def cross(self, other):\n        return Vec3(\n            self.y*other.z - self.z*other.y,\n            self.z*other.x - self.x*other.z,\n            self.x*other.y - self.y*other.x\n        )\n    \n    def length(self):\n        return math.sqrt(self.x**2 + self.y**2 + self.z**2)\n    \n    def dist_to(self, other):\n        return math.sqrt((self.x-other.x)**2 + (self.y-other.y)**2 + (self.z-other.z)**2)",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "cpp",
-      "code": "#include <cmath>\nstruct Vec3 {\n    double x, y, z;\n    Vec3(double x=0, double y=0, double z=0) : x(x), y(y), z(z) {}\n    double dot(const Vec3& other) const {\n        return x*other.x + y*other.y + z*other.z;\n    }\n    Vec3 cross(const Vec3& other) const {\n        return {y*other.z - z*other.y, z*other.x - x*other.z, x*other.y - y*other.x};\n    }\n    double length() const { return sqrt(x*x + y*y + z*z); }\n    double distTo(const Vec3& other) const {\n        return sqrt((x-other.x)*(x-other.x) + (y-other.y)*(y-other.y) + (z-other.z)*(z-other.z));\n    }\n};",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "public class Vec3 {\n    double x, y, z;\n    public Vec3(double x, double y, double z) { this.x = x; this.y = y; this.z = z; }\n    public double dot(Vec3 other) { return x*other.x + y*other.y + z*other.z; }\n    public Vec3 cross(Vec3 other) {\n        return new Vec3(y*other.z - z*other.y, z*other.x - x*other.z, x*other.y - y*other.x);\n    }\n    public double length() { return Math.sqrt(x*x + y*y + z*z); }\n    public double distTo(Vec3 other) {\n        return Math.sqrt((x-other.x)*(x-other.x) + (y-other.y)*(y-other.y) + (z-other.z)*(z-other.z));\n    }\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "class Vec3 {\n    constructor(x = 0, y = 0, z = 0) { this.x = x; this.y = y; this.z = z; }\n    dot(other) { return this.x*other.x + this.y*other.y + this.z*other.z; }\n    cross(other) {\n        return new Vec3(\n            this.y*other.z - this.z*other.y,\n            this.z*other.x - this.x*other.z,\n            this.x*other.y - this.y*other.x\n        );\n    }\n    length() { return Math.sqrt(this.x**2 + this.y**2 + this.z**2); }\n    distTo(other) {\n        return Math.sqrt((this.x-other.x)**2 + (this.y-other.y)**2 + (this.z-other.z)**2);\n    }\n}",
       "caption": null
     },
     {
@@ -413,18 +241,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "java",
-      "code": "public static double[] bezierPoint(int[][] points, double t) {\n    int n = points.length;\n    double[][] cur = new double[n][2];\n    for (int i = 0; i < n; i++) { cur[i][0] = points[i][0]; cur[i][1] = points[i][1]; }\n    while (n > 1) {\n        for (int i = 0; i < n-1; i++) {\n            cur[i][0] = (1-t) * cur[i][0] + t * cur[i+1][0];\n            cur[i][1] = (1-t) * cur[i][1] + t * cur[i+1][1];\n        }\n        n--;\n    }\n    return cur[0];\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function bezierPoint(points, t) {\n    const pts = points.map(p => [...p]);\n    let n = pts.length;\n    while (n > 1) {\n        for (let i = 0; i < n-1; i++) {\n            pts[i][0] = (1-t) * pts[i][0] + t * pts[i+1][0];\n            pts[i][1] = (1-t) * pts[i][1] + t * pts[i+1][1];\n        }\n        n--;\n    }\n    return pts[0];\n}",
-      "caption": null
-    },
-    {
       "type": "heading",
       "level": 4,
       "text": "Template 5: 3D Rotation Matrices"
@@ -433,24 +249,6 @@
       "type": "code",
       "lang": "python",
       "code": "def rotate_x(point, angle_rad):\n    x, y, z = point\n    return (x, y*math.cos(angle_rad) - z*math.sin(angle_rad),\n            y*math.sin(angle_rad) + z*math.cos(angle_rad))\n\ndef rotate_y(point, angle_rad):\n    x, y, z = point\n    return (x*math.cos(angle_rad) + z*math.sin(angle_rad), y,\n            -x*math.sin(angle_rad) + z*math.cos(angle_rad))\n\ndef rotate_z(point, angle_rad):\n    x, y, z = point\n    return (x*math.cos(angle_rad) - y*math.sin(angle_rad),\n            x*math.sin(angle_rad) + y*math.cos(angle_rad), z)",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "cpp",
-      "code": "tuple<double,double,double> rotateX(tuple<double,double,double> point, double rad) {\n    auto [x, y, z] = point;\n    return {x, y*cos(rad) - z*sin(rad), y*sin(rad) + z*cos(rad)};\n}\ntuple<double,double,double> rotateY(tuple<double,double,double> point, double rad) {\n    auto [x, y, z] = point;\n    return {x*cos(rad) + z*sin(rad), y, -x*sin(rad) + z*cos(rad)};\n}\ntuple<double,double,double> rotateZ(tuple<double,double,double> point, double rad) {\n    auto [x, y, z] = point;\n    return {x*cos(rad) - y*sin(rad), x*sin(rad) + y*cos(rad), z};\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "java",
-      "code": "public static double[] rotateX(double[] point, double rad) {\n    double x = point[0], y = point[1], z = point[2];\n    return new double[]{x, y*Math.cos(rad) - z*Math.sin(rad), y*Math.sin(rad) + z*Math.cos(rad)};\n}\npublic static double[] rotateY(double[] point, double rad) {\n    double x = point[0], y = point[1], z = point[2];\n    return new double[]{x*Math.cos(rad) + z*Math.sin(rad), y, -x*Math.sin(rad) + z*Math.cos(rad)};\n}\npublic static double[] rotateZ(double[] point, double rad) {\n    double x = point[0], y = point[1], z = point[2];\n    return new double[]{x*Math.cos(rad) - y*Math.sin(rad), x*Math.sin(rad) + y*Math.cos(rad), z};\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function rotateX(point, rad) {\n    const [x, y, z] = point;\n    return [x, y*Math.cos(rad) - z*Math.sin(rad), y*Math.sin(rad) + z*Math.cos(rad)];\n}\nfunction rotateY(point, rad) {\n    const [x, y, z] = point;\n    return [x*Math.cos(rad) + z*Math.sin(rad), y, -x*Math.sin(rad) + z*Math.cos(rad)];\n}\nfunction rotateZ(point, rad) {\n    const [x, y, z] = point;\n    return [x*Math.cos(rad) - y*Math.sin(rad), x*Math.sin(rad) + y*Math.cos(rad), z];\n}",
       "caption": null
     },
     {
@@ -620,7 +418,7 @@
     },
     {
       "type": "text",
-      "content": "**Hard 1: 3D Convex Hull** Given N points in 3D, compute the faces of their convex hull. $N \\le 2000$."
+      "content": "**Hard 1: 3D Convex Hull** Given N points in 3D, compute the faces of their convex hull. N \u2264 2000."
     },
     {
       "type": "text",
@@ -628,7 +426,7 @@
     },
     {
       "type": "text",
-      "content": "**Interview-Style: Line of Sight in 3D** Can you see point $P_2$ from $P_1$ with a blocking sphere of radius R? Compute visibility."
+      "content": "**Interview-Style: Line of Sight in 3D** Can you see point P\u2082 from P\u2081 with a blocking sphere of radius R? Compute visibility."
     },
     {
       "type": "text",
@@ -676,7 +474,7 @@
       "type": "list",
       "items": [
         "len[0] = 1, pat[0] = 1",
-        "$\\text{len}[N] = 3 + 2\\cdot\\text{len}[N-1]$, $\\text{pat}[N] = 1 + 2\\cdot\\text{pat}[N-1]$"
+        "len[N] = 3 + 2\u00b7len[N-1], pat[N] = 1 + 2\u00b7pat[N-1]"
       ]
     },
     {
@@ -688,17 +486,17 @@
     {
       "type": "list",
       "items": [
-        "$X \\le 0$: 0",
+        "X \u2264 0: 0",
         "N = 0: 1",
-        "$X \\le 1$: 0 (just bun)",
-        "$X \\le 1 + \\text{len}[N-1]$: $\\text{count}(N-1, X-1)$",
+        "X \u2264 1: 0 (just bun)",
+        "X \u2264 1 + len[N-1]: count(N-1, X-1)",
         "X = 1 + len[N-1] + 1: pat[N-1] + 1",
         "else: pat[N-1] + 1 + count(N-1, X - 2 - len[N-1])"
       ]
     },
     {
       "type": "text",
-      "content": "**E. Complexity** $O(N)$."
+      "content": "**E. Complexity** O(N)."
     },
     {
       "type": "text",
@@ -708,7 +506,7 @@
       "type": "list",
       "items": [
         "X = 0: 0",
-        "$X \\ge \\text{total\\_len}[N]$: full patty count"
+        "X \u2265 total_len[N]: full patty count"
       ]
     },
     {
@@ -731,12 +529,6 @@
       "type": "code",
       "lang": "java",
       "code": "public class Main {\n    static long[] len, pat;\n    \n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int N = sc.nextInt();\n        long X = sc.nextLong();\n        \n        len = new long[N+1];\n        pat = new long[N+1];\n        len[0] = 1; pat[0] = 1;\n        for (int i = 1; i <= N; i++) {\n            len[i] = 3 + 2 * len[i-1];\n            pat[i] = 1 + 2 * pat[i-1];\n        }\n        \n        System.out.println(count(N, X));\n    }\n    \n    static long count(int n, long x) {\n        if (x <= 0) return 0;\n        if (n == 0) return 1;\n        if (x <= 1) return 0;\n        if (x <= 1 + len[n-1]) return count(n-1, x-1);\n        if (x == 1 + len[n-1] + 1) return pat[n-1] + 1;\n        return pat[n-1] + 1 + count(n-1, x - 2 - len[n-1]);\n    }\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function christmasBurger(N, X) {\n    const totalLen = new Array(N+1).fill(0);\n    const patties = new Array(N+1).fill(0);\n    totalLen[0] = 1;\n    patties[0] = 1;\n    for (let i = 1; i <= N; i++) {\n        totalLen[i] = 3 + 2 * totalLen[i-1];\n        patties[i] = 1 + 2 * patties[i-1];\n    }\n    function count(n, x) {\n        if (x <= 0) return 0;\n        if (n === 0) return 1;\n        if (x <= 1) return 0;\n        if (x <= 1 + totalLen[n-1]) return count(n-1, x - 1);\n        if (x === 1 + totalLen[n-1] + 1) return patties[n-1] + 1;\n        return patties[n-1] + 1 + count(n-1, x - 2 - totalLen[n-1]);\n    }\n    return count(N, X);\n}",
       "caption": null
     },
     {
@@ -775,7 +567,7 @@
     },
     {
       "type": "text",
-      "content": "**E. Complexity** $$O(L \\times R \\times C)$$ time and space."
+      "content": "**E. Complexity** O(L\u00d7R\u00d7C) time and space."
     },
     {
       "type": "text",
@@ -806,18 +598,6 @@
       "caption": null
     },
     {
-      "type": "code",
-      "lang": "java",
-      "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        while (true) {\n            int L = sc.nextInt(), R = sc.nextInt(), C = sc.nextInt();\n            if (L == 0 && R == 0 && C == 0) break;\n            char[][][] grid = new char[L][R][C];\n            int sl = 0, sr = 0, sc2 = 0;\n            for (int l = 0; l < L; l++)\n                for (int r = 0; r < R; r++) {\n                    String line = sc.next();\n                    for (int c = 0; c < C; c++) {\n                        grid[l][r][c] = line.charAt(c);\n                        if (grid[l][r][c] == 'S') { sl = l; sr = r; sc2 = c; }\n                    }\n                }\n            int result = bfs(L, R, C, grid, sl, sr, sc2);\n            if (result == -1) System.out.println(\"Trapped!\");\n            else System.out.println(\"Escaped in \" + result + \" minute(s).\");\n        }\n    }\n    static int bfs(int L, int R, int C, char[][][] grid, int sl, int sr, int sc) {\n        Queue<int[]> q = new LinkedList<>();\n        boolean[][][] visited = new boolean[L][R][C];\n        q.offer(new int[]{sr, sc, sl, 0});\n        visited[sl][sr][sc] = true;\n        int[] dr = {0,0,0,0,1,-1};\n        int[] dc = {0,0,1,-1,0,0};\n        int[] dl = {1,-1,0,0,0,0};\n        while (!q.isEmpty()) {\n            int[] cur = q.poll();\n            int r = cur[0], c = cur[1], l = cur[2], d = cur[3];\n            if (grid[l][r][c] == 'E') return d;\n            for (int i = 0; i < 6; i++) {\n                int nr = r+dr[i], nc = c+dc[i], nl = l+dl[i];\n                if (nl >= 0 && nl < L && nr >= 0 && nr < R && nc >= 0 && nc < C &&\n                    !visited[nl][nr][nc] && grid[nl][nr][nc] != '#') {\n                    visited[nl][nr][nc] = true;\n                    q.offer(new int[]{nr, nc, nl, d+1});\n                }\n            }\n        }\n        return -1;\n    }\n}",
-      "caption": null
-    },
-    {
-      "type": "code",
-      "lang": "javascript",
-      "code": "function dungeonMaster(L, R, C, grid) {\n    let sr = 0, sc = 0, sl = 0;\n    for (let l = 0; l < L; l++)\n        for (let r = 0; r < R; r++)\n            for (let c = 0; c < C; c++)\n                if (grid[l][r][c] === 'S') { sr = r; sc = c; sl = l; }\n    const q = [[sr, sc, sl, 0]];\n    const visited = Array.from({length: L}, () =>\n        Array.from({length: R}, () => new Array(C).fill(false)));\n    visited[sl][sr][sc] = true;\n    const dirs = [[0,0,1],[0,0,-1],[0,1,0],[0,-1,0],[1,0,0],[-1,0,0]];\n    while (q.length) {\n        const [r, c, l, dist] = q.shift();\n        if (grid[l][r][c] === 'E') return `Escaped in ${dist} minute(s).`;\n        for (const [dr, dc, dl] of dirs) {\n            const nr = r+dr, nc = c+dc, nl = l+dl;\n            if (nl >= 0 && nl < L && nr >= 0 && nr < R && nc >= 0 && nc < C &&\n                !visited[nl][nr][nc] && grid[nl][nr][nc] !== '#') {\n                visited[nl][nr][nc] = true;\n                q.push([nr, nc, nl, dist+1]);\n            }\n        }\n    }\n    return \"Trapped!\";\n}",
-      "caption": null
-    },
-    {
       "type": "divider"
     },
     {
@@ -845,12 +625,5 @@
       "type": "divider"
     }
   ],
-  "difficulty": "Expert",
-  "problem_urls": {
-    "Problem 1": "https://leetcode.com/problems/k-closest-points-to-origin/",
-    "Problem 2": "https://www.geeksforgeeks.org/quadtree-in-data-structure/",
-    "Problem 3": "https://codeforces.com/problemset/problem/543/A",
-    "Problem 4": "https://codeforces.com/problemset/problem/669/E",
-    "Problem 5": "https://leetcode.com/problems/maximum-number-of-visible-points/"
-  }
+  "difficulty": "Expert"
 }

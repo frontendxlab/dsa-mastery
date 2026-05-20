@@ -41,7 +41,7 @@ style: <UI/CSS changes>
 > (documentation, ownership, history, decisions). **Always verify against
 > actual source files before making changes** — the index may be stale.
 
-Last indexed: 2026-05-20 (commit de23dfd). Confidence: 100%.
+Last indexed: 2026-05-20 (commit a468615). Confidence: 100%.
 ### Architecture
 repo is a modern, high-performance monorepo project built primarily with TypeScript and optimized for rapid development. With a codebase spanning over 270,000 lines, the project leverages a robust ecosystem of UI and utility libraries to deliver a scalable web experience. The architecture is designed for modularity, utilizing a component-driven approach to manage complex data structures like collections, topics, and articles. The project utilizes a modern web stack focused on type safety, efficient styling, and fast build times:
 
@@ -60,9 +60,9 @@ repo is a modern, high-performance monorepo project built primarily with TypeScr
 | File | Churn | 90d Commits | Owner |
 |------|-------|-------------|-------|
 | `src/data/books.ts` | 100.0th %ile | 6 | rashidtvmr |
-| `src/routes/explore.tsx` | 91.7th %ile | 9 | rashidtvmr |
-| `src/data/book_matches.json` | 83.3th %ile | 2 | rashidtvmr |
-| `.claude/CLAUDE.md` | 75.0th %ile | 45 | rashidtvmr |
+| `src/routes/explore.tsx` | 92.3th %ile | 9 | rashidtvmr |
+| `src/data/book_matches.json` | 84.6th %ile | 3 | rashidtvmr |
+| `.claude/CLAUDE.md` | 76.9th %ile | 46 | rashidtvmr |
 
 ### Repowise MCP Tools
 

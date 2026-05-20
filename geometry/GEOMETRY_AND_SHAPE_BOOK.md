@@ -14,6 +14,60 @@
 
 ---
 
+## Before You Begin
+
+### Who This Book Is For
+
+This book is designed for **three audiences**:
+
+- **DSA Interview Candidates** — Prepping for coding interviews at top tech companies
+- **Competitive Programmers** — Building geometry problem-solving skills for contests
+- **Self-Learners** — Mastering computational geometry from scratch
+
+### Prerequisites
+
+To get the most from this book, you should be comfortable with:
+
+**Programming basics:**
+- Variables, loops, arrays, functions in Python, C++, or Java
+- Basic recursion and the concept of stacks and queues
+- Reading and understanding code in at least one programming language
+
+**Math foundations:**
+- Basic algebra: coordinates, equations, variables
+- The concept of √ (square root), ² (squaring), and absolute value |x|
+- Basic geometry: what points, lines, and shapes are on a coordinate plane
+
+> **Not ready yet?** We recommend brushing up with these free resources:
+> - [Khan Academy: Basic Geometry](https://www.khanacademy.org/math/basic-geo) (~3 hours)
+> - [Khan Academy: Coordinate Geometry](https://www.khanacademy.org/math/geometry-home/analytic-geometry-topic) (~2 hours)
+> - Any introductory programming course covering arrays, loops, and functions
+
+### How This Book Is Structured
+
+Each chapter follows the same format:
+1. **Introduction** — What, why, and a mental model for the topic
+2. **Core Concepts** — The formulas, algorithms, and visual intuition you need
+3. **Problem Recognition** — Keywords and signals to identify problem types in interviews
+4. **Pattern Analysis** — Reusable problem-solving patterns with complexity analysis
+5. **Reusable Coding Templates** — Code in Python, C++, and Java you can adapt immediately
+6. **Curated Real Problems** — Hand-picked problems from LeetCode, Codeforces, and more
+7. **Generated Practice Problems** — Original problems to test your understanding
+8. **Complete Solution Sections** — Step-by-step solutions with intuition, edge cases, and code
+
+---
+
+### 💡 How to Read This Book
+
+> **New to geometry?** Read chapters 1–5 **in order**. Each builds on the last. Focus on the "Core Concepts" sections and the mental models in "Introduction." Try the Easy practice problems before looking at solutions.
+>
+> **Prepping for interviews?** Skim chapters 1–2 for fundamentals, then focus on "Problem Recognition" and "Pattern Analysis" in chapters 2–10. Do the Curated Real Problems first.
+>
+> **Competitive programmer?** Head straight to chapters 10–15 for advanced topics like computational geometry and convex hull. Use the "Reusable Coding Templates" as your quick-reference cheat sheet.
+>
+> **Everyone:** The **Summary of Key Formulas** at the end of chapter 4 makes a great quick-reference bookmark.
+
+---
 
 ## Table of Contents
 
@@ -39,6 +93,13 @@
 
 
 ## Chapter 1: Introduction to Shapes
+
+**🎯 Learning Objectives — By the end of this chapter, you will be able to:**
+- Read a binary matrix and detect connected shapes using BFS/DFS grid traversal
+- Compute the perimeter, bounding box, and surface area of a shape on a grid
+- Normalize a shape to make translation-invariant comparisons
+- Generate all 90-degree rotations of a shape for rotational matching
+- Identify common shape problems: flood fill, projection area, surface area, L-shapes
 
 ### 1. INTRODUCTION
 
@@ -780,6 +841,14 @@ if __name__ == "__main__":
 
 ## Chapter 2: Basic Geometry
 
+**🎯 Learning Objectives — By the end of this chapter, you will be able to:**
+- Compute Euclidean, Manhattan, and Chebyshev distances between points
+- Use the cross product to determine orientation (clockwise, counter-clockwise, collinear)
+- Check if three points are collinear using the area method
+- Compute polygon area using the shoelace formula
+- Determine if two line segments intersect
+- Identify hidden geometry in non-obvious problems (e.g., boomerangs, watchmen)
+
 ### 1. INTRODUCTION
 
 Geometry in programming is about describing and manipulating objects in space using numbers. If you can put it on a graph, you can compute with it.
@@ -847,6 +916,12 @@ def distance(p1, p2):
 d_manhattan = |x2 - x1| + |y2 - y1|
 ```
 
+> **💡 Why it works (intuition):** Imagine you're a taxicab driver in Manhattan. The streets form a perfect grid. You can't drive through buildings — you must go along the blocks. The distance you travel is the total horizontal blocks plus the total vertical blocks. That's exactly |Δx| + |Δy|. This is why it's also called "taxicab geometry."
+>
+> **Key insight:** Manhattan distance separates the x and y dimensions. This means you can optimize them independently — a property that powers the "median minimizes absolute deviation" trick in meeting point problems.
+>
+> **Common misconception:** Manhattan distance is NOT Pythagorean with different path. In Euclidean distance, you go in a straight line. In Manhattan, you can take any path — as long as it only moves horizontally and vertically, the total distance is the same (|Δx| + |Δy|).
+
 #### 2.3 Midpoint Formula
 
 The midpoint between two points:
@@ -899,7 +974,19 @@ orientation(A, B, C) = cross(B - A, C - A)
 - **orientation < 0:** Clockwise (right turn)
 - **orientation = 0:** Collinear
 
-This is the single most useful operation in computational geometry. Memorize it.
+> **💡 Why it works (intuition):** Imagine two vectors from the origin: the cross product is the **signed area of the parallelogram they span**. If vector B is counter-clockwise from vector A, the area is positive (they sweep in the "opening" direction). If B is clockwise from A, the area is negative. If they're on the same line, the parallelogram has zero area.
+>
+> **Geometric mental model:** Hold your right hand flat. Point your fingers along vector AB from point A to point B. Now curl them toward vector AC. If your thumb points up (out of the page), the cross product is positive (counter-clockwise turn). If your thumb points down, it's negative.
+>
+> **Why this powers 80% of computational geometry:** Once you can compute which side of a line a point is on, you can:
+> - Check if a polygon is convex (all turns must be the same direction)
+> - Test if two line segments intersect (endpoints on opposite sides)
+> - Check if a point is inside a convex polygon (always on the same side of every edge)
+> - Compute the convex hull (keep only left turns)
+>
+> This single operation is why the cross product is the **most important formula** in computational geometry.
+
+This is the single most useful operation in computational geometry — make it second nature.
 
 #### 2.8 Circle Geometry
 
@@ -938,6 +1025,19 @@ Area = 0.5 * |sum_{i=0}^{n-1} (xi * y_{i+1} - x_{i+1} * yi)|
 ```
 
 Where `(xn, yn) = (x0, y0)` to close the polygon.
+
+> **💡 Why it works (intuition):** Each term `xi * y_{i+1} - x_{i+1} * yi` is actually the **cross product** of two consecutive vertex vectors from the origin — it's twice the signed area of the triangle formed by the origin and the edge from vertex i to vertex i+1. When you sum these around the entire polygon, the areas of triangles *outside* the polygon cancel out (positive and negative), leaving exactly twice the polygon's area.
+>
+> **Analogy:** Think of the shoelace formula like measuring the area of an irregular field by walking around its boundary with a GPS. Each step you take, you compute the area swept by your position, and by the time you return to where you started, everything cancels except the true area inside.
+>
+> **Why the name?** The formula is called "shoelace" because the terms are written in a criss-cross pattern that looks like lacing a shoe:
+> ```
+> x0*y1 + x1*y2 + ... + xn-1*y0
+> y0*x1 + y1*x2 + ... + yn-1*x0
+> ```
+> Cross-multiplying diagonals, just like laces.
+>
+> **Key insight:** The sign of the result tells you the vertex ordering. Positive = counter-clockwise. Negative = clockwise. For area, take the absolute value.
 
 #### 2.12 Line Segment Intersection
 
@@ -1453,6 +1553,14 @@ def solve():
 ---
 
 ## Chapter 3: Triangle Problems
+
+**🎯 Learning Objectives — By the end of this chapter, you will be able to:**
+- Apply the triangle inequality theorem to validate whether three sides form a triangle
+- Classify triangles by side lengths (equilateral, isosceles, scalene) and by angles (acute, right, obtuse)
+- Count the number of valid triangles from an array of side lengths in O(n²) time
+- Compute triangle area using coordinates, Heron's formula, and cross product
+- Use the law of cosines to find angles from side lengths
+- Understand polygon triangulation DP for optimal triangulation problems
 
 ### 1. INTRODUCTION
 
@@ -2045,6 +2153,14 @@ def solve():
 ---
 
 ## Chapter 4: Right Triangle Problems
+
+**🎯 Learning Objectives — By the end of this chapter, you will be able to:**
+- Detect right triangles from side lengths and from coordinates using squared distances
+- Generate Pythagorean triples using Euclid's formula
+- Find Pythagorean triples with a given sum or given one side
+- Count right triangles formed by N points on a plane
+- Recognize hidden right triangle patterns in distance-based problems
+- Compute right triangle properties: hypotenuse, legs, area, circumradius, inradius
 
 ### 1. INTRODUCTION
 
@@ -2660,6 +2776,14 @@ def number_of_right_triangles(grid):
 
 ## Chapter 5: Rectangle and Square Problems
 
+**🎯 Learning Objectives — By the end of this chapter, you will be able to:**
+- Check if two axis-aligned rectangles overlap and compute their intersection
+- Count the number of squares and rectangles in an N×M grid
+- Determine if four points form a square (using distance-based checks)
+- Find the largest rectangle of 1s in a binary matrix using a monotonic stack
+- Compute rectangle union area using sweep line and coordinate compression
+- Fit rectangles into containers and solve cutting/partitioning problems
+
 ## 1. INTRODUCTION
 
 A **rectangle** is a four-sided polygon (quadrilateral) with four right angles (90°). A **square** is a special rectangle where all four sides are equal. These are the most fundamental shapes in computational geometry and appear constantly in coding interviews and competitive programming.
@@ -3181,6 +3305,11 @@ def maximal_square(matrix):
 ---
 
 ## Chapter 6: Circle Problems
+**🎯 Learning Objectives — By the end of this chapter, you will be able to:**
+- Calculate circumference, area, and arc properties from radius and diameter
+- Detect circle-circle and circle-line intersections with geometric reasoning
+- Apply circle geometry to computational problems (minimum enclosing circle, circle packing)
+
 
 ## 1. INTRODUCTION
 
@@ -3558,6 +3687,11 @@ def numPoints(points, r):
 ---
 
 ## Chapter 7: Coordinate Geometry
+**🎯 Learning Objectives — By the end of this chapter, you will be able to:**
+- Master the coordinate system and understand how points map to positions in 2D space
+- Translate between geometric shapes and their algebraic equations
+- Apply coordinate geometry to solve distance, midpoint, and locus problems
+
 
 ## 1. INTRODUCTION
 
@@ -4001,6 +4135,11 @@ def closest_pair(points):
 ---
 
 ## Chapter 8: Lines and Slopes
+**🎯 Learning Objectives — By the end of this chapter, you will be able to:**
+- Compute slope, intercept, and line equations from any two points
+- Determine parallel, perpendicular, and intersecting line relationships
+- Apply line geometry to solve collision detection and intersection problems
+
 
 ## 1. INTRODUCTION
 
@@ -4576,6 +4715,11 @@ def two_lines(points):
 
 
 ## Chapter 9: Distance and Midpoint
+**🎯 Learning Objectives — By the end of this chapter, you will be able to:**
+- Distinguish between Euclidean, Manhattan, and Chebyshev distance metrics and when to use each
+- Find midpoints and reflect points across axes and lines
+- Choose the right distance metric for different problem contexts (grid, continuous, weighted)
+
 
 ### 1. INTRODUCTION
 
@@ -5519,6 +5663,11 @@ public int hammingDistance(int x, int y) {
 ---
 
 ## Chapter 10: Polygon Problems
+**🎯 Learning Objectives — By the end of this chapter, you will be able to:**
+- Classify polygons as convex/concave and regular/irregular
+- Compute polygon area using the shoelace formula and understand why it works
+- Solve point-in-polygon, polygon union, and polygon intersection problems
+
 
 ### 1. INTRODUCTION
 
@@ -6104,6 +6253,11 @@ def is_convex(points):
 ---
 
 ## Chapter 11: Grid-Based Geometry
+**🎯 Learning Objectives — By the end of this chapter, you will be able to:**
+- Model 2D grids as graphs for traversal and search problems
+- Implement flood fill, BFS, and DFS for connected component analysis
+- Solve perimeter, island counting, and pathfinding problems on grids
+
 
 ### 1. INTRODUCTION
 
@@ -7019,6 +7173,11 @@ def shortest_path_with_elimination(grid, k):
 
 
 ## Chapter 12: Area and Perimeter
+**🎯 Learning Objectives — By the end of this chapter, you will be able to:**
+- Compute area of any polygon using the shoelace formula and triangulation
+- Distinguish between perimeter, circumference, and arc length in context
+- Apply area formulas to real-world optimization and containment problems
+
 
 ---
 
@@ -7886,6 +8045,11 @@ class Solution {
 ---
 
 ## Chapter 13: Angles and Rotation
+**🎯 Learning Objectives — By the end of this chapter, you will be able to:**
+- Understand angle units (degrees vs radians) and how to convert between them
+- Compute angles between lines and vectors using dot and cross products
+- Apply rotation matrices to transform coordinates in 2D space
+
 
 ---
 
@@ -8736,6 +8900,11 @@ public class Main {
 ---
 
 ## Chapter 14: Computational Geometry
+**🎯 Learning Objectives — By the end of this chapter, you will be able to:**
+- Implement fundamental computational geometry algorithms (convex hull, line sweep)
+- Master orientation tests and geometric predicates for robust computation
+- Apply computational geometry techniques to real-world spatial problems
+
 
 ---
 
@@ -9383,6 +9552,11 @@ def commando(N, a, b, c, xs):
 ---
 
 ## Chapter 15: Advanced Geometry Algorithms
+**🎯 Learning Objectives — By the end of this chapter, you will be able to:**
+- Understand Voronoi diagrams, Delaunay triangulation, and their applications
+- Implement rotating calipers for width, diameter, and bounding box problems
+- Combine multiple geometry techniques to solve complex multi-step problems
+
 
 ---
 
@@ -9970,6 +10144,83 @@ All implementations assume you have already read the input and are working on th
 | Point-in-Polygon | Is point inside shape | O(n) |
 | BFS/DFS on Grid | Shortest path, connected components | O(mn) |
 | 2D Prefix Sum | Sub-rectangle sum queries | O(1) query |
+
+---
+
+## Appendix E: Geometry Glossary
+
+A quick-reference glossary of key geometry terms used throughout this book.
+
+**Angle** — The figure formed by two rays sharing a common endpoint (vertex). Measured in degrees (°) or radians (rad).
+
+**Arc** — A portion of the circumference of a circle.
+
+**Area** — The measure of the region enclosed by a shape. Expressed in square units.
+
+**BFS (Breadth-First Search)** — A graph traversal algorithm that explores neighbors level by level. Used on grids to find shortest paths in unweighted graphs.
+
+**Centroid** — The geometric center of a shape. For a polygon, the average of all vertex coordinates.
+
+**Chebyshev Distance** — Distance measured as max(|x₂-x₁|, |y₂-y₁|). In a grid, it's the number of steps a king needs in chess.
+
+**Circumference** — The perimeter (total boundary length) of a circle. C = 2πr.
+
+**Collinear** — Three or more points that lie on the same straight line.
+
+**Computational Geometry (CG)** — The branch of computer science that studies algorithms for solving geometric problems.
+
+**Concave Polygon** — A polygon with at least one interior angle > 180°, creating a "dent."
+
+**Convex Hull** — The smallest convex polygon that contains all given points. Like stretching a rubber band around the points.
+
+**Convex Polygon** — A polygon where all interior angles are ≤ 180°, and every line segment between two points inside lies entirely inside.
+
+**Coordinate** — A pair of numbers (x, y) that defines a point's position in 2D space.
+
+**Cross Product** — A binary operation on two vectors that produces a scalar representing the signed area of the parallelogram they span. Used for orientation tests.
+
+**Delaunay Triangulation** — A triangulation of points that maximizes the minimum angle, avoiding skinny triangles.
+
+**DFS (Depth-First Search)** — A graph traversal that explores as far as possible along each branch before backtracking.
+
+**Dot Product** — A binary operation on two vectors that produces a scalar representing their alignment. A · B = |A||B|cos(θ).
+
+**Euclidean Distance** — Straight-line distance between two points: d = √((x₂-x₁)² + (y₂-y₁)²).
+
+**Flood Fill** — An algorithm that finds all connected cells of the same value in a grid, starting from a seed point.
+
+**Graham Scan** — An algorithm for computing the convex hull of a set of points in O(n log n) time.
+
+**Grid** — A 2D array of cells arranged in rows and columns. Each cell is addressed by (row, col) coordinates.
+
+**Line Sweep** — A computational geometry technique where a vertical line sweeps across the plane, processing events as it goes.
+
+**Manhattan Distance** — Distance measured as |x₂-x₁| + |y₂-y₁|. The distance a taxi would drive on a rectangular grid of streets.
+
+**Midpoint** — The point exactly halfway between two given points: ((x₁+x₂)/2, (y₁+y₂)/2).
+
+**Orientation Test** — Determining whether three points make a clockwise turn, counter-clockwise turn, or are collinear. Computed via cross product.
+
+**Perimeter** — The total length of the boundary of a shape.
+
+**Point-in-Polygon (PIP)** — The problem of determining whether a given point lies inside, outside, or on the boundary of a polygon.
+
+**Polygon** — A closed planar shape formed by a finite chain of straight line segments.
+
+**Rotating Calipers** — A technique for solving geometric optimization problems (width, diameter, bounding boxes) by rotating two parallel lines around a convex polygon.
+
+**Shoelace Formula** — A formula for computing the area of a simple polygon from its vertex coordinates. Also called Gauss's area formula.
+
+**Slope** — The steepness of a line, computed as (y₂-y₁)/(x₂-x₁).
+
+**Triangle Inequality** — For any triangle, the sum of any two side lengths must exceed the length of the third side.
+
+**Vector** — A quantity with both magnitude and direction. In 2D, represented as (dx, dy).
+
+**Voronoi Diagram** — A partition of the plane into regions where each region contains all points closest to a given seed point.
+
+
+
 | Rotating Calipers | Width, diameter of convex polygon | O(n) |
 | Closest Pair D&C | Minimum distance among points | O(n log n) |
 
