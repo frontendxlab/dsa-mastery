@@ -51,7 +51,7 @@ const ctci: Book = {
     color: '#1e40af',
     accentColor: '#3b82f6',
     description: '189 programming questions and solutions spanning arrays, trees, recursion, system design, and more. The definitive interview prep book.',
-    totalProblems: 491,
+    totalProblems: 511,
     tags: [
           'Interviews',
           'Arrays',
@@ -3602,7 +3602,6 @@ const ctci: Book = {
         {
             num: '59',
             title: 'Object Oriented Design',
-            summary: 'Object Oriented Design concepts and practice',
             problems: [
                 {
                     id: '59-1',
@@ -3649,7 +3648,6 @@ const ctci: Book = {
         {
             num: '60',
             title: 'System Design',
-            summary: 'System Design concepts and practice',
             problems: [
                 {
                     id: '60-1',
@@ -3686,7 +3684,6 @@ const ctci: Book = {
         {
             num: '61',
             title: 'Threads and Locks',
-            summary: 'Threads and Locks concepts and practice',
             problems: [
                 {
                     id: '61-1',
@@ -3720,6 +3717,127 @@ const ctci: Book = {
                 },
             ],
         },
+        {
+            num: '62',
+            title: 'Object Oriented Design',
+            summary: 'Object Oriented Design concepts and practice',
+            problems: [
+                {
+                    id: '62-1',
+                    title: 'Object Oriented Design Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '62-2',
+                    title: 'Object Oriented Design Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '62-3',
+                    title: 'Object Oriented Design Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '62-4',
+                    title: 'Object Oriented Design Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '62-5',
+                    title: 'Object Oriented Design Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '62-6',
+                    title: 'Object Oriented Design Problem 6',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '62-7',
+                    title: 'Object Oriented Design Problem 7',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '62-8',
+                    title: 'Object Oriented Design Problem 8',
+                    difficulty: 'Medium',
+                },
+            ],
+        },
+        {
+            num: '63',
+            title: 'System Design',
+            summary: 'System Design concepts and practice',
+            problems: [
+                {
+                    id: '63-1',
+                    title: 'System Design Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '63-2',
+                    title: 'System Design Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '63-3',
+                    title: 'System Design Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '63-4',
+                    title: 'System Design Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '63-5',
+                    title: 'System Design Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '63-6',
+                    title: 'System Design Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '64',
+            title: 'Threads and Locks',
+            summary: 'Threads and Locks concepts and practice',
+            problems: [
+                {
+                    id: '64-1',
+                    title: 'Threads and Locks Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '64-2',
+                    title: 'Threads and Locks Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '64-3',
+                    title: 'Threads and Locks Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '64-4',
+                    title: 'Threads and Locks Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '64-5',
+                    title: 'Threads and Locks Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '64-6',
+                    title: 'Threads and Locks Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
     ],
 }
 
@@ -3735,7 +3853,7 @@ const cp4: Book = {
     color: '#065f46',
     accentColor: '#10b981',
     description: 'The de-facto competitive programming textbook covering data structures, algorithms, and problem solving strategies with 5000+ referenced OJ problems.',
-    totalProblems: 515,
+    totalProblems: 541,
     tags: [
           'Competitive',
           'Algorithms',
@@ -6988,7 +7106,6 @@ const cp4: Book = {
         {
             num: '69',
             title: 'Mathematics',
-            summary: 'Mathematics concepts and practice',
             problems: [
                 {
                     id: '69-1',
@@ -7035,7 +7152,6 @@ const cp4: Book = {
         {
             num: '70',
             title: 'Game Theory',
-            summary: 'Game Theory concepts and practice',
             problems: [
                 {
                     id: '70-1',
@@ -7072,7 +7188,6 @@ const cp4: Book = {
         {
             num: '71',
             title: 'Advanced Data Structures',
-            summary: 'Advanced Data Structures concepts and practice',
             problems: [
                 {
                     id: '71-1',
@@ -7109,7 +7224,6 @@ const cp4: Book = {
         {
             num: '72',
             title: 'String Algorithms',
-            summary: 'String Algorithms concepts and practice',
             problems: [
                 {
                     id: '72-1',
@@ -7138,6 +7252,164 @@ const cp4: Book = {
                 },
                 {
                     id: '72-6',
+                    title: 'String Algorithms Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '73',
+            title: 'Mathematics',
+            summary: 'Mathematics concepts and practice',
+            problems: [
+                {
+                    id: '73-1',
+                    title: 'Mathematics Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '73-2',
+                    title: 'Mathematics Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '73-3',
+                    title: 'Mathematics Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '73-4',
+                    title: 'Mathematics Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '73-5',
+                    title: 'Mathematics Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '73-6',
+                    title: 'Mathematics Problem 6',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '73-7',
+                    title: 'Mathematics Problem 7',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '73-8',
+                    title: 'Mathematics Problem 8',
+                    difficulty: 'Medium',
+                },
+            ],
+        },
+        {
+            num: '74',
+            title: 'Game Theory',
+            summary: 'Game Theory concepts and practice',
+            problems: [
+                {
+                    id: '74-1',
+                    title: 'Game Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '74-2',
+                    title: 'Game Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '74-3',
+                    title: 'Game Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '74-4',
+                    title: 'Game Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '74-5',
+                    title: 'Game Theory Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '74-6',
+                    title: 'Game Theory Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '75',
+            title: 'Advanced Data Structures',
+            summary: 'Advanced Data Structures concepts and practice',
+            problems: [
+                {
+                    id: '75-1',
+                    title: 'Advanced Data Structures Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '75-2',
+                    title: 'Advanced Data Structures Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '75-3',
+                    title: 'Advanced Data Structures Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '75-4',
+                    title: 'Advanced Data Structures Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '75-5',
+                    title: 'Advanced Data Structures Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '75-6',
+                    title: 'Advanced Data Structures Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '76',
+            title: 'String Algorithms',
+            summary: 'String Algorithms concepts and practice',
+            problems: [
+                {
+                    id: '76-1',
+                    title: 'String Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '76-2',
+                    title: 'String Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '76-3',
+                    title: 'String Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '76-4',
+                    title: 'String Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '76-5',
+                    title: 'String Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '76-6',
                     title: 'String Algorithms Problem 6',
                     difficulty: 'Easy',
                 },
@@ -12098,7 +12370,7 @@ const hd: Book = {
     color: '#6b21a8',
     accentColor: '#a855f7',
     description: 'A collection of bitwise tricks and optimizations for low-level programming. Covers bit manipulation, arithmetic bounds, integer division, Gray codes, CRC, error-correcting codes, and Hilbert curves.',
-    totalProblems: 410,
+    totalProblems: 428,
     tags: [
           'Bit Manipulation',
           'Low-Level',
@@ -14389,7 +14661,6 @@ const hd: Book = {
         {
             num: '64',
             title: 'Arithmetic',
-            summary: 'Arithmetic concepts and practice',
             problems: [
                 {
                     id: '64-1',
@@ -14426,7 +14697,6 @@ const hd: Book = {
         {
             num: '65',
             title: 'Division',
-            summary: 'Division concepts and practice',
             problems: [
                 {
                     id: '65-1',
@@ -14453,12 +14723,16 @@ const hd: Book = {
                     title: 'Division Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '65-6',
+                    title: 'Exercise 65.6',
+                    difficulty: 'Easy',
+                },
             ],
         },
         {
             num: '66',
             title: 'Double Precision',
-            summary: 'Double Precision concepts and practice',
             problems: [
                 {
                     id: '66-1',
@@ -14485,6 +14759,112 @@ const hd: Book = {
                     title: 'Double Precision Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '66-6',
+                    title: 'Exercise 66.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '67',
+            title: 'Arithmetic',
+            summary: 'Arithmetic concepts and practice',
+            problems: [
+                {
+                    id: '67-1',
+                    title: 'Arithmetic Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '67-2',
+                    title: 'Arithmetic Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '67-3',
+                    title: 'Arithmetic Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '67-4',
+                    title: 'Arithmetic Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '67-5',
+                    title: 'Arithmetic Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '67-6',
+                    title: 'Arithmetic Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '68',
+            title: 'Division',
+            summary: 'Division concepts and practice',
+            problems: [
+                {
+                    id: '68-1',
+                    title: 'Division Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '68-2',
+                    title: 'Division Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '68-3',
+                    title: 'Division Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '68-4',
+                    title: 'Division Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '68-5',
+                    title: 'Division Problem 5',
+                    difficulty: 'Hard',
+                },
+            ],
+        },
+        {
+            num: '69',
+            title: 'Double Precision',
+            summary: 'Double Precision concepts and practice',
+            problems: [
+                {
+                    id: '69-1',
+                    title: 'Double Precision Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '69-2',
+                    title: 'Double Precision Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '69-3',
+                    title: 'Double Precision Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '69-4',
+                    title: 'Double Precision Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '69-5',
+                    title: 'Double Precision Problem 5',
+                    difficulty: 'Hard',
+                },
             ],
         },
     ],
@@ -14502,7 +14882,7 @@ const dsamadeasy: Book = {
     color: '#0d9488',
     accentColor: '#14b8a6',
     description: 'A practical guide to data structures and algorithms with 700+ problems organized by topic. Great for interview preparation.',
-    totalProblems: 407,
+    totalProblems: 431,
     tags: [
           'Interviews',
           'DSA',
@@ -16957,7 +17337,6 @@ const dsamadeasy: Book = {
         {
             num: '65',
             title: 'Hashing',
-            summary: 'Hashing concepts and practice',
             problems: [
                 {
                     id: '65-1',
@@ -16994,7 +17373,6 @@ const dsamadeasy: Book = {
         {
             num: '66',
             title: 'String Algorithms',
-            summary: 'String Algorithms concepts and practice',
             problems: [
                 {
                     id: '66-1',
@@ -17031,7 +17409,6 @@ const dsamadeasy: Book = {
         {
             num: '67',
             title: 'Divide and Conquer',
-            summary: 'Divide and Conquer concepts and practice',
             problems: [
                 {
                     id: '67-1',
@@ -17058,12 +17435,16 @@ const dsamadeasy: Book = {
                     title: 'Divide and Conquer Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '67-6',
+                    title: 'Exercise 67.6',
+                    difficulty: 'Easy',
+                },
             ],
         },
         {
             num: '68',
             title: 'Greedy Algorithms',
-            summary: 'Greedy Algorithms concepts and practice',
             problems: [
                 {
                     id: '68-1',
@@ -17097,6 +17478,149 @@ const dsamadeasy: Book = {
                 },
             ],
         },
+        {
+            num: '69',
+            title: 'Hashing',
+            summary: 'Hashing concepts and practice',
+            problems: [
+                {
+                    id: '69-1',
+                    title: 'Hashing Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '69-2',
+                    title: 'Hashing Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '69-3',
+                    title: 'Hashing Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '69-4',
+                    title: 'Hashing Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '69-5',
+                    title: 'Hashing Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '69-6',
+                    title: 'Hashing Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '70',
+            title: 'String Algorithms',
+            summary: 'String Algorithms concepts and practice',
+            problems: [
+                {
+                    id: '70-1',
+                    title: 'String Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '70-2',
+                    title: 'String Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '70-3',
+                    title: 'String Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '70-4',
+                    title: 'String Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '70-5',
+                    title: 'String Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '70-6',
+                    title: 'String Algorithms Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '71',
+            title: 'Divide and Conquer',
+            summary: 'Divide and Conquer concepts and practice',
+            problems: [
+                {
+                    id: '71-1',
+                    title: 'Divide and Conquer Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '71-2',
+                    title: 'Divide and Conquer Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '71-3',
+                    title: 'Divide and Conquer Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '71-4',
+                    title: 'Divide and Conquer Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '71-5',
+                    title: 'Divide and Conquer Problem 5',
+                    difficulty: 'Hard',
+                },
+            ],
+        },
+        {
+            num: '72',
+            title: 'Greedy Algorithms',
+            summary: 'Greedy Algorithms concepts and practice',
+            problems: [
+                {
+                    id: '72-1',
+                    title: 'Greedy Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '72-2',
+                    title: 'Greedy Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '72-3',
+                    title: 'Greedy Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '72-4',
+                    title: 'Greedy Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '72-5',
+                    title: 'Greedy Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '72-6',
+                    title: 'Greedy Algorithms Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
     ],
 }
 
@@ -17112,7 +17636,7 @@ const grokking: Book = {
     color: '#059669',
     accentColor: '#34d399',
     description: 'A friendly, illustrated guide to algorithms that makes complex topics approachable with visual examples.',
-    totalProblems: 418,
+    totalProblems: 442,
     tags: [
           'Algorithms',
           'Beginners',
@@ -19591,7 +20115,6 @@ const grokking: Book = {
         {
             num: '67',
             title: 'Arrays',
-            summary: 'Arrays concepts and practice',
             problems: [
                 {
                     id: '67-1',
@@ -19628,7 +20151,6 @@ const grokking: Book = {
         {
             num: '68',
             title: 'Sorting and Searching',
-            summary: 'Sorting and Searching concepts and practice',
             problems: [
                 {
                     id: '68-1',
@@ -19665,7 +20187,6 @@ const grokking: Book = {
         {
             num: '69',
             title: 'Greedy Algorithms',
-            summary: 'Greedy Algorithms concepts and practice',
             problems: [
                 {
                     id: '69-1',
@@ -19692,12 +20213,16 @@ const grokking: Book = {
                     title: 'Greedy Algorithms Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '69-6',
+                    title: 'Exercise 69.6',
+                    difficulty: 'Easy',
+                },
             ],
         },
         {
             num: '70',
             title: 'NP Complete Problems',
-            summary: 'NP Complete Problems concepts and practice',
             problems: [
                 {
                     id: '70-1',
@@ -19724,6 +20249,149 @@ const grokking: Book = {
                     title: 'NP Complete Problems Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '70-6',
+                    title: 'Exercise 70.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '71',
+            title: 'Arrays',
+            summary: 'Arrays concepts and practice',
+            problems: [
+                {
+                    id: '71-1',
+                    title: 'Arrays Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '71-2',
+                    title: 'Arrays Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '71-3',
+                    title: 'Arrays Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '71-4',
+                    title: 'Arrays Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '71-5',
+                    title: 'Arrays Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '71-6',
+                    title: 'Arrays Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '72',
+            title: 'Sorting and Searching',
+            summary: 'Sorting and Searching concepts and practice',
+            problems: [
+                {
+                    id: '72-1',
+                    title: 'Sorting and Searching Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '72-2',
+                    title: 'Sorting and Searching Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '72-3',
+                    title: 'Sorting and Searching Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '72-4',
+                    title: 'Sorting and Searching Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '72-5',
+                    title: 'Sorting and Searching Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '72-6',
+                    title: 'Sorting and Searching Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '73',
+            title: 'Greedy Algorithms',
+            summary: 'Greedy Algorithms concepts and practice',
+            problems: [
+                {
+                    id: '73-1',
+                    title: 'Greedy Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '73-2',
+                    title: 'Greedy Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '73-3',
+                    title: 'Greedy Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '73-4',
+                    title: 'Greedy Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '73-5',
+                    title: 'Greedy Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+            ],
+        },
+        {
+            num: '74',
+            title: 'NP Complete Problems',
+            summary: 'NP Complete Problems concepts and practice',
+            problems: [
+                {
+                    id: '74-1',
+                    title: 'NP Complete Problems Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '74-2',
+                    title: 'NP Complete Problems Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '74-3',
+                    title: 'NP Complete Problems Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '74-4',
+                    title: 'NP Complete Problems Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '74-5',
+                    title: 'NP Complete Problems Problem 5',
+                    difficulty: 'Hard',
+                },
             ],
         },
     ],
@@ -19741,7 +20409,7 @@ const progchal: Book = {
     color: '#d97706',
     accentColor: '#fbbf24',
     description: 'A programming contest training book with 100+ problems from UVa and other OJs covering data structures, graph theory, geometry, and more.',
-    totalProblems: 143,
+    totalProblems: 149,
     tags: [
           'Competitive',
           'UVa',
@@ -20679,7 +21347,6 @@ const progchal: Book = {
         {
             num: '24',
             title: 'Sorting',
-            summary: 'Sorting concepts and practice',
             problems: [
                 {
                     id: '24-1',
@@ -20706,6 +21373,43 @@ const progchal: Book = {
                     title: 'Sorting Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '24-6',
+                    title: 'Exercise 24.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '25',
+            title: 'Sorting',
+            summary: 'Sorting concepts and practice',
+            problems: [
+                {
+                    id: '25-1',
+                    title: 'Sorting Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '25-2',
+                    title: 'Sorting Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '25-3',
+                    title: 'Sorting Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '25-4',
+                    title: 'Sorting Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '25-5',
+                    title: 'Sorting Problem 5',
+                    difficulty: 'Hard',
+                },
             ],
         },
     ],
@@ -20723,7 +21427,7 @@ const math4cs: Book = {
     color: '#e11d48',
     accentColor: '#fb7185',
     description: 'A comprehensive introduction to discrete mathematics for computer science. Covers proofs, number theory, graph theory, counting, and probability.',
-    totalProblems: 309,
+    totalProblems: 327,
     tags: [
           'Math',
           'Discrete Math',
@@ -22574,7 +23278,6 @@ const math4cs: Book = {
         {
             num: '50',
             title: 'Counting',
-            summary: 'Counting concepts and practice',
             problems: [
                 {
                     id: '50-1',
@@ -22601,12 +23304,16 @@ const math4cs: Book = {
                     title: 'Counting Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '50-6',
+                    title: 'Exercise 50.6',
+                    difficulty: 'Easy',
+                },
             ],
         },
         {
             num: '51',
             title: 'Discrete Probability',
-            summary: 'Discrete Probability concepts and practice',
             problems: [
                 {
                     id: '51-1',
@@ -22633,12 +23340,16 @@ const math4cs: Book = {
                     title: 'Discrete Probability Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '51-6',
+                    title: 'Exercise 51.6',
+                    difficulty: 'Easy',
+                },
             ],
         },
         {
             num: '52',
             title: 'Number Theory',
-            summary: 'Number Theory concepts and practice',
             problems: [
                 {
                     id: '52-1',
@@ -22665,6 +23376,107 @@ const math4cs: Book = {
                     title: 'Number Theory Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '52-6',
+                    title: 'Exercise 52.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '53',
+            title: 'Counting',
+            summary: 'Counting concepts and practice',
+            problems: [
+                {
+                    id: '53-1',
+                    title: 'Counting Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '53-2',
+                    title: 'Counting Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '53-3',
+                    title: 'Counting Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '53-4',
+                    title: 'Counting Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '53-5',
+                    title: 'Counting Problem 5',
+                    difficulty: 'Hard',
+                },
+            ],
+        },
+        {
+            num: '54',
+            title: 'Discrete Probability',
+            summary: 'Discrete Probability concepts and practice',
+            problems: [
+                {
+                    id: '54-1',
+                    title: 'Discrete Probability Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '54-2',
+                    title: 'Discrete Probability Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '54-3',
+                    title: 'Discrete Probability Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '54-4',
+                    title: 'Discrete Probability Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '54-5',
+                    title: 'Discrete Probability Problem 5',
+                    difficulty: 'Hard',
+                },
+            ],
+        },
+        {
+            num: '55',
+            title: 'Number Theory',
+            summary: 'Number Theory concepts and practice',
+            problems: [
+                {
+                    id: '55-1',
+                    title: 'Number Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '55-2',
+                    title: 'Number Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '55-3',
+                    title: 'Number Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '55-4',
+                    title: 'Number Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '55-5',
+                    title: 'Number Theory Problem 5',
+                    difficulty: 'Hard',
+                },
             ],
         },
     ],
@@ -22682,7 +23494,7 @@ const setslogic: Book = {
     color: '#0284c7',
     accentColor: '#38bdf8',
     description: 'An accessible introduction to the mathematical foundations of computing: set theory, logic, induction, relations, functions, and counting.',
-    totalProblems: 214,
+    totalProblems: 226,
     tags: [
           'Math',
           'Logic',
@@ -23979,7 +24791,6 @@ const setslogic: Book = {
         {
             num: '35',
             title: 'Functions',
-            summary: 'Functions concepts and practice',
             problems: [
                 {
                     id: '35-1',
@@ -24006,12 +24817,16 @@ const setslogic: Book = {
                     title: 'Functions Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '35-6',
+                    title: 'Exercise 35.6',
+                    difficulty: 'Easy',
+                },
             ],
         },
         {
             num: '36',
             title: 'Mathematical Induction',
-            summary: 'Mathematical Induction concepts and practice',
             problems: [
                 {
                     id: '36-1',
@@ -24038,6 +24853,75 @@ const setslogic: Book = {
                     title: 'Mathematical Induction Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '36-6',
+                    title: 'Exercise 36.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '37',
+            title: 'Functions',
+            summary: 'Functions concepts and practice',
+            problems: [
+                {
+                    id: '37-1',
+                    title: 'Functions Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '37-2',
+                    title: 'Functions Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '37-3',
+                    title: 'Functions Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '37-4',
+                    title: 'Functions Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '37-5',
+                    title: 'Functions Problem 5',
+                    difficulty: 'Hard',
+                },
+            ],
+        },
+        {
+            num: '38',
+            title: 'Mathematical Induction',
+            summary: 'Mathematical Induction concepts and practice',
+            problems: [
+                {
+                    id: '38-1',
+                    title: 'Mathematical Induction Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '38-2',
+                    title: 'Mathematical Induction Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '38-3',
+                    title: 'Mathematical Induction Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '38-4',
+                    title: 'Mathematical Induction Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '38-5',
+                    title: 'Mathematical Induction Problem 5',
+                    difficulty: 'Hard',
+                },
             ],
         },
     ],
@@ -24053,7 +24937,7 @@ const algodaily: Book = {
     color: '#7c3aed',
     accentColor: '#a78bfa',
     description: 'A curated collection of algorithmic and data structure problems with comprehensive explanations. Covers arrays, strings, trees, dynamic programming, and more.',
-    totalProblems: 227,
+    totalProblems: 239,
     tags: [
           'Interviews',
           'Algorithms',
@@ -25462,7 +26346,6 @@ const algodaily: Book = {
         {
             num: '37',
             title: 'Advanced Sorting',
-            summary: 'Advanced Sorting concepts and practice',
             problems: [
                 {
                     id: '37-1',
@@ -25489,12 +26372,16 @@ const algodaily: Book = {
                     title: 'Advanced Sorting Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '37-6',
+                    title: 'Exercise 37.6',
+                    difficulty: 'Easy',
+                },
             ],
         },
         {
             num: '38',
             title: 'Dynamic Programming',
-            summary: 'Dynamic Programming concepts and practice',
             problems: [
                 {
                     id: '38-1',
@@ -25528,6 +26415,75 @@ const algodaily: Book = {
                 },
             ],
         },
+        {
+            num: '39',
+            title: 'Advanced Sorting',
+            summary: 'Advanced Sorting concepts and practice',
+            problems: [
+                {
+                    id: '39-1',
+                    title: 'Advanced Sorting Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '39-2',
+                    title: 'Advanced Sorting Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '39-3',
+                    title: 'Advanced Sorting Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '39-4',
+                    title: 'Advanced Sorting Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '39-5',
+                    title: 'Advanced Sorting Problem 5',
+                    difficulty: 'Hard',
+                },
+            ],
+        },
+        {
+            num: '40',
+            title: 'Dynamic Programming',
+            summary: 'Dynamic Programming concepts and practice',
+            problems: [
+                {
+                    id: '40-1',
+                    title: 'Dynamic Programming Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '40-2',
+                    title: 'Dynamic Programming Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '40-3',
+                    title: 'Dynamic Programming Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '40-4',
+                    title: 'Dynamic Programming Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '40-5',
+                    title: 'Dynamic Programming Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '40-6',
+                    title: 'Dynamic Programming Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
     ],
 }
 
@@ -25543,7 +26499,7 @@ const guidetocp: Book = {
     color: '#4d7c0f',
     accentColor: '#84cc16',
     description: 'A concise yet comprehensive guide to competitive programming. Covers essential algorithms, optimization techniques, and contest strategies.',
-    totalProblems: 227,
+    totalProblems: 239,
     tags: [
           'Competitive',
           'Algorithms',
@@ -26925,7 +27881,6 @@ const guidetocp: Book = {
         {
             num: '37',
             title: 'Number Theory',
-            summary: 'Number Theory concepts and practice',
             problems: [
                 {
                     id: '37-1',
@@ -26962,7 +27917,6 @@ const guidetocp: Book = {
         {
             num: '38',
             title: 'Game Theory',
-            summary: 'Game Theory concepts and practice',
             problems: [
                 {
                     id: '38-1',
@@ -26989,6 +27943,80 @@ const guidetocp: Book = {
                     title: 'Game Theory Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '38-6',
+                    title: 'Exercise 38.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '39',
+            title: 'Number Theory',
+            summary: 'Number Theory concepts and practice',
+            problems: [
+                {
+                    id: '39-1',
+                    title: 'Number Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '39-2',
+                    title: 'Number Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '39-3',
+                    title: 'Number Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '39-4',
+                    title: 'Number Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '39-5',
+                    title: 'Number Theory Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '39-6',
+                    title: 'Number Theory Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '40',
+            title: 'Game Theory',
+            summary: 'Game Theory concepts and practice',
+            problems: [
+                {
+                    id: '40-1',
+                    title: 'Game Theory Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '40-2',
+                    title: 'Game Theory Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '40-3',
+                    title: 'Game Theory Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '40-4',
+                    title: 'Game Theory Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '40-5',
+                    title: 'Game Theory Problem 5',
+                    difficulty: 'Hard',
+                },
             ],
         },
     ],
@@ -27004,7 +28032,7 @@ const gamam: Book = {
     color: '#be185d',
     accentColor: '#f43f5e',
     description: 'A focused preparation guide for technical interviews at Google, Apple, Meta, Amazon, and Microsoft. Features curated problems and problem-solving frameworks.',
-    totalProblems: 132,
+    totalProblems: 138,
     tags: [
           'Interviews',
           'FAANG',
@@ -27837,7 +28865,6 @@ const gamam: Book = {
         {
             num: '22',
             title: 'Behavioral Questions',
-            summary: 'Behavioral Questions concepts and practice',
             problems: [
                 {
                     id: '22-1',
@@ -27871,6 +28898,43 @@ const gamam: Book = {
                 },
             ],
         },
+        {
+            num: '23',
+            title: 'Behavioral Questions',
+            summary: 'Behavioral Questions concepts and practice',
+            problems: [
+                {
+                    id: '23-1',
+                    title: 'Behavioral Questions Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '23-2',
+                    title: 'Behavioral Questions Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '23-3',
+                    title: 'Behavioral Questions Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '23-4',
+                    title: 'Behavioral Questions Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '23-5',
+                    title: 'Behavioral Questions Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '23-6',
+                    title: 'Behavioral Questions Problem 6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
     ],
 }
 
@@ -27886,7 +28950,7 @@ const progintervexp: Book = {
     color: '#4338ca',
     accentColor: '#818cf8',
     description: 'A classic guide to programming interviews covering preparation strategies, problem-solving techniques, and fundamental CS topics with realistic interview problems.',
-    totalProblems: 226,
+    totalProblems: 238,
     tags: [
           'Interviews',
           'Fundamentals',
@@ -29270,7 +30334,6 @@ const progintervexp: Book = {
         {
             num: '37',
             title: 'Databases',
-            summary: 'Databases concepts and practice',
             problems: [
                 {
                     id: '37-1',
@@ -29297,12 +30360,16 @@ const progintervexp: Book = {
                     title: 'Databases Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '37-6',
+                    title: 'Exercise 37.6',
+                    difficulty: 'Easy',
+                },
             ],
         },
         {
             num: '38',
             title: 'Networking',
-            summary: 'Networking concepts and practice',
             problems: [
                 {
                     id: '38-1',
@@ -29329,6 +30396,75 @@ const progintervexp: Book = {
                     title: 'Networking Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '38-6',
+                    title: 'Exercise 38.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '39',
+            title: 'Databases',
+            summary: 'Databases concepts and practice',
+            problems: [
+                {
+                    id: '39-1',
+                    title: 'Databases Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '39-2',
+                    title: 'Databases Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '39-3',
+                    title: 'Databases Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '39-4',
+                    title: 'Databases Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '39-5',
+                    title: 'Databases Problem 5',
+                    difficulty: 'Hard',
+                },
+            ],
+        },
+        {
+            num: '40',
+            title: 'Networking',
+            summary: 'Networking concepts and practice',
+            problems: [
+                {
+                    id: '40-1',
+                    title: 'Networking Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '40-2',
+                    title: 'Networking Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '40-3',
+                    title: 'Networking Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '40-4',
+                    title: 'Networking Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '40-5',
+                    title: 'Networking Problem 5',
+                    difficulty: 'Hard',
+                },
             ],
         },
     ],
@@ -29346,7 +30482,7 @@ const advdsalgo: Book = {
     color: '#ea580c',
     accentColor: '#fb923c',
     description: 'An in-depth exploration of advanced data structures and algorithms: spatial data structures, heuristics, optimization, and specialized DS.',
-    totalProblems: 214,
+    totalProblems: 226,
     tags: [
           'Advanced',
           'Spatial',
@@ -30648,7 +31784,6 @@ const advdsalgo: Book = {
         {
             num: '35',
             title: 'Approximation',
-            summary: 'Approximation concepts and practice',
             problems: [
                 {
                     id: '35-1',
@@ -30675,12 +31810,16 @@ const advdsalgo: Book = {
                     title: 'Approximation Problem 5',
                     difficulty: 'Hard',
                 },
+                {
+                    id: '35-6',
+                    title: 'Exercise 35.6',
+                    difficulty: 'Easy',
+                },
             ],
         },
         {
             num: '36',
             title: 'Randomized Algorithms',
-            summary: 'Randomized Algorithms concepts and practice',
             problems: [
                 {
                     id: '36-1',
@@ -30704,6 +31843,75 @@ const advdsalgo: Book = {
                 },
                 {
                     id: '36-5',
+                    title: 'Randomized Algorithms Problem 5',
+                    difficulty: 'Hard',
+                },
+                {
+                    id: '36-6',
+                    title: 'Exercise 36.6',
+                    difficulty: 'Easy',
+                },
+            ],
+        },
+        {
+            num: '37',
+            title: 'Approximation',
+            summary: 'Approximation concepts and practice',
+            problems: [
+                {
+                    id: '37-1',
+                    title: 'Approximation Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '37-2',
+                    title: 'Approximation Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '37-3',
+                    title: 'Approximation Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '37-4',
+                    title: 'Approximation Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '37-5',
+                    title: 'Approximation Problem 5',
+                    difficulty: 'Hard',
+                },
+            ],
+        },
+        {
+            num: '38',
+            title: 'Randomized Algorithms',
+            summary: 'Randomized Algorithms concepts and practice',
+            problems: [
+                {
+                    id: '38-1',
+                    title: 'Randomized Algorithms Problem 1',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '38-2',
+                    title: 'Randomized Algorithms Problem 2',
+                    difficulty: 'Easy',
+                },
+                {
+                    id: '38-3',
+                    title: 'Randomized Algorithms Problem 3',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '38-4',
+                    title: 'Randomized Algorithms Problem 4',
+                    difficulty: 'Medium',
+                },
+                {
+                    id: '38-5',
                     title: 'Randomized Algorithms Problem 5',
                     difficulty: 'Hard',
                 },

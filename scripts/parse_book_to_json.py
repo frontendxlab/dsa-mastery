@@ -14,33 +14,33 @@ OUTPUT_DIR = os.path.join(BASE, 'public', 'data', 'geometry-book')
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 CHAPTER_META = {
-    1:  {'slug': 'introduction-to-shapes', 'title': 'Introduction to Shapes', 'problem_count': 225},
-    2:  {'slug': 'basic-geometry', 'title': 'Basic Geometry', 'problem_count': 3856},
-    3:  {'slug': 'triangle-problems', 'title': 'Triangle Problems', 'problem_count': 269},
-    4:  {'slug': 'right-triangle-problems', 'title': 'Right Triangle Problems', 'problem_count': 20},
-    5:  {'slug': 'rectangle-and-square-problems', 'title': 'Rectangle and Square Problems', 'problem_count': 450},
-    6:  {'slug': 'circle-problems', 'title': 'Circle Problems', 'problem_count': 4116},
-    7:  {'slug': 'coordinate-geometry', 'title': 'Coordinate Geometry', 'problem_count': 422},
-    8:  {'slug': 'lines-and-slopes', 'title': 'Lines and Slopes', 'problem_count': 204},
-    9:  {'slug': 'distance-and-midpoint', 'title': 'Distance and Midpoint', 'problem_count': 217},
-    10: {'slug': 'polygon-problems', 'title': 'Polygon Problems', 'problem_count': 123},
-    11: {'slug': 'grid-based-geometry', 'title': 'Grid-Based Geometry', 'problem_count': 402},
-    12: {'slug': 'area-and-perimeter', 'title': 'Area and Perimeter', 'problem_count': 37},
-    13: {'slug': 'angles-and-rotation', 'title': 'Angles and Rotation', 'problem_count': 72},
-    14: {'slug': 'computational-geometry', 'title': 'Computational Geometry', 'problem_count': 107},
-    15: {'slug': 'advanced-geometry-algorithms', 'title': 'Advanced Geometry Algorithms', 'problem_count': 172},
+    1:  {'slug': 'points-lines-coordinate-plane', 'title': 'Points, Lines & the Coordinate Plane', 'problem_count': 225},
+    2:  {'slug': 'distance-midpoint', 'title': 'Distance & Midpoint', 'problem_count': 217},
+    3:  {'slug': 'angles-slope-orientation', 'title': 'Angles, Slope & Orientation', 'problem_count': 204},
+    4:  {'slug': 'triangles-classification-properties', 'title': 'Triangles — Classification & Properties', 'problem_count': 269},
+    5:  {'slug': 'triangles-area-counting-dp', 'title': 'Triangles — Area, Counting & DP', 'problem_count': 150},
+    6:  {'slug': 'right-triangles-pythagorean', 'title': 'Right Triangles & Pythagorean Theorem', 'problem_count': 20},
+    7:  {'slug': 'rectangles-squares-detection', 'title': 'Rectangles & Squares — Detection & Properties', 'problem_count': 450},
+    8:  {'slug': 'rectangles-area-union-sweep', 'title': 'Rectangles — Area, Union & Sweep Line', 'problem_count': 200},
+    9:  {'slug': 'circles-basics-containment', 'title': 'Circles — Basics & Point Containment', 'problem_count': 4116},
+    10: {'slug': 'circles-intersection-angular-sweep', 'title': 'Circles — Intersection & Angular Sweep', 'problem_count': 200},
+    11: {'slug': 'polygons-classification-area', 'title': 'Polygons — Classification & Area', 'problem_count': 123},
+    12: {'slug': 'grid-based-shapes-flood-fill', 'title': 'Grid-Based Shapes & Flood Fill', 'problem_count': 402},
+    13: {'slug': 'shape-matching-rotation-translation', 'title': 'Shape Matching — Rotation & Translation', 'problem_count': 100},
+    14: {'slug': 'convex-hull-computational-geometry', 'title': 'Convex Hull & Computational Geometry', 'problem_count': 107},
+    15: {'slug': 'advanced-geometry-cp', 'title': 'Advanced Geometry (CP Level)', 'problem_count': 172},
 }
 
 CHAPTER_ICONS = {
-    1: '◇', 2: '●', 3: '△', 4: '⊿', 5: '▬',
-    6: '○', 7: '⌖', 8: '╱', 9: '↔', 10: '⬠',
-    11: '⊞', 12: '▣', 13: '⟳', 14: '⌂', 15: '✦',
+    1: '◆', 2: '↔', 3: '∠', 4: '△', 5: '▵',
+    6: '⊿', 7: '▬', 8: '⊞', 9: '○', 10: '◎',
+    11: '⬠', 12: '⊡', 13: '⟳', 14: '⌂', 15: '✦',
 }
 
 CHAPTER_COLORS = {
-    1: '#3b82f6', 2: '#6366f1', 3: '#22c55e', 4: '#ef4444', 5: '#eab308',
-    6: '#a855f7', 7: '#06b6d4', 8: '#f97316', 9: '#10b981', 10: '#8b5cf6',
-    11: '#ec4899', 12: '#14b8a6', 13: '#f43f5e', 14: '#0ea5e9', 15: '#84cc16',
+    1: '#3b82f6', 2: '#10b981', 3: '#f97316', 4: '#22c55e', 5: '#14b8a6',
+    6: '#ef4444', 7: '#eab308', 8: '#f59e0b', 9: '#a855f7', 10: '#8b5cf6',
+    11: '#06b6d4', 12: '#ec4899', 13: '#6366f1', 14: '#0ea5e9', 15: '#84cc16',
 }
 
 def parse_blocks(markdown_text):

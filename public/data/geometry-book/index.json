@@ -1,123 +1,123 @@
 {
   "totalChapters": 15,
-  "totalProblems": 10692,
+  "totalProblems": 6955,
   "chapters": [
     {
       "chapter": 1,
-      "slug": "introduction-to-shapes",
-      "title": "Introduction to Shapes",
-      "icon": "\u25c7",
+      "slug": "points-lines-coordinate-plane",
+      "title": "Points, Lines & the Coordinate Plane",
+      "icon": "\u25c6",
       "color": "#3b82f6",
       "problemCount": 225
     },
     {
       "chapter": 2,
-      "slug": "basic-geometry",
-      "title": "Basic Geometry",
-      "icon": "\u25cf",
-      "color": "#6366f1",
-      "problemCount": 3856
-    },
-    {
-      "chapter": 3,
-      "slug": "triangle-problems",
-      "title": "Triangle Problems",
-      "icon": "\u25b3",
-      "color": "#22c55e",
-      "problemCount": 269
-    },
-    {
-      "chapter": 4,
-      "slug": "right-triangle-problems",
-      "title": "Right Triangle Problems",
-      "icon": "\u22bf",
-      "color": "#ef4444",
-      "problemCount": 20
-    },
-    {
-      "chapter": 5,
-      "slug": "rectangle-and-square-problems",
-      "title": "Rectangle and Square Problems",
-      "icon": "\u25ac",
-      "color": "#eab308",
-      "problemCount": 450
-    },
-    {
-      "chapter": 6,
-      "slug": "circle-problems",
-      "title": "Circle Problems",
-      "icon": "\u25cb",
-      "color": "#a855f7",
-      "problemCount": 4116
-    },
-    {
-      "chapter": 7,
-      "slug": "coordinate-geometry",
-      "title": "Coordinate Geometry",
-      "icon": "\u2316",
-      "color": "#06b6d4",
-      "problemCount": 422
-    },
-    {
-      "chapter": 8,
-      "slug": "lines-and-slopes",
-      "title": "Lines and Slopes",
-      "icon": "\u2571",
-      "color": "#f97316",
-      "problemCount": 204
-    },
-    {
-      "chapter": 9,
-      "slug": "distance-and-midpoint",
-      "title": "Distance and Midpoint",
+      "slug": "distance-midpoint",
+      "title": "Distance & Midpoint",
       "icon": "\u2194",
       "color": "#10b981",
       "problemCount": 217
     },
     {
+      "chapter": 3,
+      "slug": "angles-slope-orientation",
+      "title": "Angles, Slope & Orientation",
+      "icon": "\u2220",
+      "color": "#f97316",
+      "problemCount": 204
+    },
+    {
+      "chapter": 4,
+      "slug": "triangles-classification-properties",
+      "title": "Triangles \u2014 Classification & Properties",
+      "icon": "\u25b3",
+      "color": "#22c55e",
+      "problemCount": 269
+    },
+    {
+      "chapter": 5,
+      "slug": "triangles-area-counting-dp",
+      "title": "Triangles \u2014 Area, Counting & DP",
+      "icon": "\u25b5",
+      "color": "#14b8a6",
+      "problemCount": 150
+    },
+    {
+      "chapter": 6,
+      "slug": "right-triangles-pythagorean",
+      "title": "Right Triangles & Pythagorean Theorem",
+      "icon": "\u22bf",
+      "color": "#ef4444",
+      "problemCount": 20
+    },
+    {
+      "chapter": 7,
+      "slug": "rectangles-squares-detection",
+      "title": "Rectangles & Squares \u2014 Detection & Properties",
+      "icon": "\u25ac",
+      "color": "#eab308",
+      "problemCount": 450
+    },
+    {
+      "chapter": 8,
+      "slug": "rectangles-area-union-sweep",
+      "title": "Rectangles \u2014 Area, Union & Sweep Line",
+      "icon": "\u229e",
+      "color": "#f59e0b",
+      "problemCount": 200
+    },
+    {
+      "chapter": 9,
+      "slug": "circles-basics-containment",
+      "title": "Circles \u2014 Basics & Point Containment",
+      "icon": "\u25cb",
+      "color": "#a855f7",
+      "problemCount": 4116
+    },
+    {
       "chapter": 10,
-      "slug": "polygon-problems",
-      "title": "Polygon Problems",
-      "icon": "\u2b20",
+      "slug": "circles-intersection-angular-sweep",
+      "title": "Circles \u2014 Intersection & Angular Sweep",
+      "icon": "\u25ce",
       "color": "#8b5cf6",
-      "problemCount": 123
+      "problemCount": 200
     },
     {
       "chapter": 11,
-      "slug": "grid-based-geometry",
-      "title": "Grid-Based Geometry",
-      "icon": "\u229e",
+      "slug": "polygons-classification-area",
+      "title": "Polygons \u2014 Classification & Area",
+      "icon": "\u2b20",
+      "color": "#06b6d4",
+      "problemCount": 123
+    },
+    {
+      "chapter": 12,
+      "slug": "grid-based-shapes-flood-fill",
+      "title": "Grid-Based Shapes & Flood Fill",
+      "icon": "\u22a1",
       "color": "#ec4899",
       "problemCount": 402
     },
     {
-      "chapter": 12,
-      "slug": "area-and-perimeter",
-      "title": "Area and Perimeter",
-      "icon": "\u25a3",
-      "color": "#14b8a6",
-      "problemCount": 37
-    },
-    {
       "chapter": 13,
-      "slug": "angles-and-rotation",
-      "title": "Angles and Rotation",
+      "slug": "shape-matching-rotation-translation",
+      "title": "Shape Matching \u2014 Rotation & Translation",
       "icon": "\u27f3",
-      "color": "#f43f5e",
-      "problemCount": 72
+      "color": "#6366f1",
+      "problemCount": 100
     },
     {
       "chapter": 14,
-      "slug": "computational-geometry",
-      "title": "Computational Geometry",
+      "slug": "convex-hull-computational-geometry",
+      "title": "Convex Hull & Computational Geometry",
       "icon": "\u2302",
       "color": "#0ea5e9",
       "problemCount": 107
     },
     {
       "chapter": 15,
-      "slug": "advanced-geometry-algorithms",
-      "title": "Advanced Geometry Algorithms",
+      "slug": "advanced-geometry-cp",
+      "title": "Advanced Geometry (CP Level)",
       "icon": "\u2726",
       "color": "#84cc16",
       "problemCount": 172
